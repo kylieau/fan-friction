@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "metroName": "Tampa",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T06:30:27.897Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 4
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-12-mlb-849820",
+      "broadcast": "TBS/HBO MAX",
+      "starters": {
+        "home": "Drew Rasmussen",
+        "away": "Foster Griffin"
+      },
+      "metroId": "tampa",
+      "date": "2026-10-12",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Rays vs. Guardians",
+      "stakes": {
+        "round": "ALCS",
+        "game": 1
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "guardians"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-mlb-849813",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "tampa",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Rays vs. Guardians",
+      "stakes": {
+        "round": "ALCS",
+        "game": 2
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "guardians"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-espn-lightning-401892509",
+      "metroId": "tampa",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lightning vs. Kraken",
+      "broadcast": "The Spot - MTN",
+      "place": {
+        "type": "venue",
+        "venueId": "benchmark-international-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "lightning",
+        "away": "kraken"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-lightning-401892521",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Lightning vs. Canucks",
+      "broadcast": "The Spot - MTN",
+      "place": {
+        "type": "venue",
+        "venueId": "benchmark-international-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "lightning",
+        "away": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-usf-football-401862806",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "South Florida vs. Kent State",
+      "place": {
+        "type": "venue",
+        "venueId": "raymond-james-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "usf-football",
+        "away": "kent-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-rowdies-401842293",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rowdies vs. Detroit",
+      "place": {
+        "type": "venue",
+        "venueId": "al-lang-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rowdies",
+        "away": "detroit"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-espn-buccaneers-401873002",
+      "metroId": "tampa",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Buccaneers vs. Steelers",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "raymond-james-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "buccaneers",
+        "away": "steelers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-19-mlb-849815",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "tampa",
+      "date": "2026-10-19",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Rays vs. Guardians",
+      "stakes": {
+        "round": "ALCS",
+        "game": 6,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "guardians"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-mlb-849814",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "tampa",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Rays vs. Guardians",
+      "stakes": {
+        "round": "ALCS",
+        "game": 7,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "guardians"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-rowdies-401842305",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rowdies vs. Sporting JAX",
+      "place": {
+        "type": "venue",
+        "venueId": "al-lang-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rowdies",
+        "away": "sporting-jax"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-12-mlb-849820",
+      "date": "2026-10-12",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025
+      }
+    },
+    {
+      "eventId": "2026-10-13-mlb-849813",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-lightning-401892509",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-lightning-401892521",
+      "date": "2026-10-17",
+      "start": "16:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "South Florida vs. Kent State 3.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-usf-football-401862806",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 7:00 pm start.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-rowdies-401842293",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "South Florida vs. Kent State and Lightning vs. Canucks 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-buccaneers-401873002",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-19-mlb-849815",
+      "date": "2026-10-19",
+      "start": "17:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025
+      }
+    },
+    {
+      "eventId": "2026-10-20-mlb-849814",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "86° feels-like at a 8:00 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 25025,
+        "low": 25025,
+        "high": 25025
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-rowdies-401842305",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    }
+  ]
+}

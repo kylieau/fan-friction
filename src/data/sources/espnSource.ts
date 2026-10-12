@@ -52,6 +52,13 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '2349', metroId: 'boston', teamId: 'uml-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '2349', metroId: 'boston', teamId: 'uml-wbb', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '111', metroId: 'boston', teamId: 'northeastern-mbb', sport: 'basketball' },
+  // Tampa Bay (docs/research/city-builds/tampa/); every id and home venue checked against the feed Oct 12, 2026.
+  { path: 'football/nfl', espnId: '27', metroId: 'tampa', teamId: 'buccaneers', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '20', metroId: 'tampa', teamId: 'lightning', sport: 'hockey' },
+  { path: 'football/college-football', espnId: '58', metroId: 'tampa', teamId: 'usf-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '58', metroId: 'tampa', teamId: 'usf-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '58', metroId: 'tampa', teamId: 'usf-wbb', sport: 'basketball' },
+  { path: 'soccer/usa.usl.1', espnId: '17361', metroId: 'tampa', teamId: 'rowdies', sport: 'soccer' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -180,6 +187,8 @@ const ESPN_MLB_IDS: Record<string, string> = {
   'white-sox': '4',
   rangers: '13',
   phillies: '22',
+  brewers: '8',
+  rays: '30',
 };
 
 /**
@@ -221,6 +230,14 @@ const VENUE_BY_NAME: Record<string, string> = {
   'uwm panther arena': 'uwm-panther-arena',
   'klotsche center': 'klotsche-center',
   'al mcguire center': 'al-mcguire-center',
+  'raymond james stadium': 'raymond-james-stadium',
+  'benchmark international arena': 'benchmark-international-arena',
+  'amalie arena': 'benchmark-international-arena',
+  'tropicana field': 'tropicana-field',
+  'yuengling center': 'yuengling-center',
+  'al lang stadium': 'al-lang-stadium',
+  'george m. steinbrenner field': 'george-m-steinbrenner-field',
+  'george m steinbrenner field': 'george-m-steinbrenner-field',
 
   'fenway park': 'fenway-park',
   'td garden': 'td-garden',

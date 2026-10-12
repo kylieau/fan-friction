@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -141,12 +141,14 @@ export const METROS: Record<string, Metro> = {
     center: [-122.335, 47.615],
     zoom: 12,
   },
+  // Covered Oct 12, 2026 (docs/research/city-builds/tampa/tampa-venue-table-answer.md): Hillsborough and Pinellas
+  // counties (venue core). One frame holds Tampa, St. Petersburg and Clearwater; Steinbrenner and the fairgrounds sit off-center.
   tampa: {
     id: 'tampa', code: 'TPA',
     name: 'Tampa',
     timeZone: 'America/New_York',
-    center: [-82.4518, 27.9427],
-    zoom: 12,
+    center: [-82.55, 27.92],
+    zoom: 10.2,
   },
 };
 

@@ -55,7 +55,10 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ## Next
 
-### Milwaukee follow-up (approved initial build, Kylie, Oct 11, 2026)
+### Tampa Bay follow-up (city build, Oct 12, 2026; not yet approved like K14)
+Research folded per `docs/research/city-builds/tampa/tampa-implementation-register.md`. **Sprawl** provisional; Hillsborough + Pinellas core. Open: ESPN attendance collect returned no announced counts for Bucs/Lightning/Rowdies/USF football or MBB (schedules work); Ticketmaster room ids mostly unverified; open-site events (Gasparilla, Grand Prix, fairs) not hand-listed; USF on-campus stadium and proposed Rays ballpark deferred; Sun FC and UpShot have no feed. Re-check Tropicana and Strawberry Festival capacities when 2027 seasons publish.
+
+## Milwaukee follow-up (approved initial build, Kylie, Oct 11, 2026)
 The four unchanged original answers, [comparison](docs/research/city-builds/milwaukee/milwaukee-research-comparison.md) and [implementation register](docs/research/city-builds/milwaukee/milwaukee-implementation-register.md) are saved together. Kylie approved the four-county first build and provisional `sprawl` on Oct 11. No venue travel overrides or formula constants changed. `hub` and `sprawl` have identical current fallback/spill settings.
 
 **Research prompt added Oct 11:** [Milwaukee coverage gaps: open sites and school gyms](docs/research/city-builds/milwaukee/milwaukee-coverage-gaps-prompt.md). The [Codex report](docs/research/city-builds/milwaukee/milwaukee-coverage-gaps-answer-codex.md) is the only answer planned; Kylie does not need a model comparison for this prompt. Its contents are preserved unchanged. The three researched school rooms (St. Thomas More, Whitnall and Catholic Memorial) are added as selectable manual-log venues with basketball seating only; schedules, attendance and sports adapters remain unknown. Potawatomi Event Center is deferred because Ticketmaster's combined casino/Northern Lights/Event Center location could misassign another casino event. The research report omitted the local Claude venue answer from its comparison, but that does not block the current additions. PrideFest and Night Market evidence is retained for dated-event research; historical daily/estimated totals are not treated as peak concurrent crowds.

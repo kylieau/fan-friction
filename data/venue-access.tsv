@@ -162,7 +162,6 @@ percival-molson-stadium	montreal	25012	0	14	6	1650	122	0	Molson Stadium
 iga-stadium	montreal	11991	0	21	4	1450	6	0	IGA Stadium
 cepsum-stadium	montreal	5000	0	20	6	3300	99	0	CEPSUM Stadium
 claude-robillard	montreal	6375	0	18	4	350	10	0	Claude-Robillard Sports Complex
-amalie-arena	tampa	19420	0	38	10	150	15	0	Amalie Arena
 mortgage-matchup-center	phoenix	16795	0	30	9	1750	26	0	Mortgage Matchup Center
 golden-1-center	sacramento	17600	0	21	8	350	13	0	Golden 1 Center
 empire-polo-club	la	125000	0	1	0	>1500	4	0	Empire Polo Club
@@ -206,3 +205,16 @@ bill-graham-civic	bay-area	8500	0	39	14	200	28	0	Bill Graham Civic Auditorium
 frost-amphitheater	bay-area	8000	0	12	5	2750	13	0	Frost Amphitheater
 maples-pavilion	bay-area	7233	0	10	2	2600	9	0	Maples Pavilion
 provident-event-center	bay-area	6000	0	15	6	750	6	0	Provident Credit Union Event Center
+raymond-james-stadium	tampa	69218	0	13	6	2200	6	0	Raymond James Stadium
+tropicana-field	tampa	25025	0	22	3	200	11	0	Tropicana Field
+benchmark-international-arena	tampa	21500	0	39	10	150	15	0	Benchmark International Arena
+midflorida-amphitheatre	tampa	20000	0	9	0	500	6	0	Florida State Fairgrounds Amphitheatre
+george-m-steinbrenner-field	tampa	11026	0	10	5	2700	12	0	George M. Steinbrenner Field
+yuengling-center	tampa	10411	0	8	4	>1500	4	0	Yuengling Center
+wish-farms-soundstage	tampa	9200	0	37	11	1400	9	0	Florida Strawberry Festival Grandstands
+baycare-sound	tampa	9000	0	18	5	>1500	12	0	The BayCare Sound
+baycare-ballpark	tampa	8500	0	6	2	150	8	0	BayCare Ballpark
+td-ballpark	tampa	8500	0	34	9	>1500	7	0	TD Ballpark
+al-lang-stadium	tampa	7227	0	24	8	550	18	0	Al Lang Stadium
+suncoast-credit-union-field	tampa	5248	0	20	5	350	17	0	Suncoast Credit Union Field
+tampa-bay-downs	tampa	5000	0	8	3	>1500	11	0	Tampa Bay Downs

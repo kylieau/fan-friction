@@ -1148,6 +1148,297 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
   },
 
+  // Tampa Bay (docs/research/city-builds/tampa/tampa-venue-table-answer.md, Oct 12, 2026). Hillsborough + Pinellas
+  // venue core; no unsupported carShare overrides (city-type estimates stay in research). Coordinates from
+  // OpenStreetMap by name where found; others take the research approximation, noted below.
+  'raymond-james-stadium': {
+    id: 'raymond-james-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Raymond James Stadium' }],
+    location: [-82.5033545, 27.9759793],
+    capacity: [
+      {
+        seats: 69218,
+        setup: 'football',
+        note: 'Reported. 69,218 since 2022, expandable to ~75,000; conflicts with 65,000–65,890 on bowl-operator pages. Source: https://en.wikipedia.org/wiki/Raymond_James_Stadium',
+        fromYear: 2022,
+      },
+      {
+        seats: 69218,
+        setup: 'concert',
+        note: 'Same bowl; temporary end-zone seating can reach ~75,000. Source: https://populous.com/?p=28635',
+      },
+    ],
+    roof: 'open',
+  },
+  'tropicana-field': {
+    id: 'tropicana-field',
+    metroId: 'tampa',
+    names: [{ name: 'Tropicana Field' }],
+    location: [-82.6532755, 27.7680559],
+    capacity: [
+      {
+        seats: 25025,
+        setup: 'baseball',
+        note: 'Reported. Regular-season tarped configuration; conflicts with 20,025 (2026 visit). Postseason expands past 42,000. Source: https://3ddigitalvenue.com/3dmap/clients/mlb/tropicana-field/',
+      },
+    ],
+    roof: 'covered',
+  },
+  'benchmark-international-arena': {
+    id: 'benchmark-international-arena',
+    metroId: 'tampa',
+    names: [
+      { name: 'Amalie Arena' },
+      { name: 'Benchmark International Arena', from: '2025-08-13' },
+    ],
+    location: [-82.4518903, 27.942704],
+    ticketmasterIds: ['Za5ju3rKuqZDduhSs3K_AaWBzwROtKPBXy'],
+    capacity: [
+      {
+        seats: 19092,
+        setup: 'hockey',
+        note: 'Reported. Conflicts with 19,500 on a fan wiki. Source: https://blog.ticketmaster.com/step-inside-benchmark-international-arena-tampa-fl/',
+      },
+      {
+        seats: 20500,
+        setup: 'basketball',
+        note: 'Reported. Source: https://blog.ticketmaster.com/step-inside-benchmark-international-arena-tampa-fl/',
+      },
+      {
+        seats: 21500,
+        setup: 'concert',
+        note: 'Reported. End-stage maximum; varies by production. Source: https://blog.ticketmaster.com/step-inside-benchmark-international-arena-tampa-fl/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'midflorida-amphitheatre': {
+    id: 'midflorida-amphitheatre',
+    metroId: 'tampa',
+    names: [
+      { name: 'MIDFLORIDA Credit Union Amphitheatre' },
+      { name: 'Florida State Fairgrounds Amphitheatre' },
+    ],
+    // Approximate; OSM did not resolve the fairgrounds pavilion by name (research §A06).
+    location: [-82.368, 27.988],
+    capacity: [
+      {
+        seats: 9900,
+        setup: 'concert',
+        note: 'Reported. ~9,900 reserved under canopy; total with lawn ~20,000. Seated-only setup still ≥5,000. Source: https://news.pollstar.com/?p=173294',
+      },
+      {
+        seats: 20000,
+        setup: 'concert',
+        note: 'Reported. ~9,900 reserved + ~10,000 lawn. Source: https://en.wikipedia.org/wiki/Florida_State_Fairgrounds',
+      },
+    ],
+    roof: 'covered',
+  },
+  'george-m-steinbrenner-field': {
+    id: 'george-m-steinbrenner-field',
+    metroId: 'tampa',
+    names: [{ name: 'George M. Steinbrenner Field' }],
+    location: [-82.5066542, 27.9801645],
+    capacity: [
+      {
+        seats: 11026,
+        setup: 'baseball',
+        note: 'Official (MLB.com). 11,026 seats + 13 suites. Source: https://www.mlb.com/news/featured/steinbrenner-field-guide-capacity-seating-chart-parking-and-more',
+      },
+    ],
+    roof: 'open',
+  },
+  'yuengling-center': {
+    id: 'yuengling-center',
+    metroId: 'tampa',
+    names: [
+      { name: 'USF Sun Dome' },
+      { name: 'Yuengling Center', from: '2018-07-01' },
+    ],
+    location: [-82.4066241, 28.0592444],
+    capacity: [
+      {
+        seats: 10411,
+        setup: 'basketball',
+        note: 'Reported. 2018 renovation figure; conflicts with 10,500 elsewhere. Source: https://www.usforacle.com/?p=1464',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'wish-farms-soundstage': {
+    id: 'wish-farms-soundstage',
+    metroId: 'tampa',
+    names: [
+      { name: 'GT Grandstands at the Wish Farms Soundstage' },
+      { name: 'Florida Strawberry Festival Grandstands' },
+    ],
+    // Approximate; OSM did not resolve the 2018 soundstage row (research §A09).
+    location: [-82.141, 28.016],
+    capacity: [
+      {
+        seats: 9200,
+        setup: 'concert',
+        note: 'Reported. 2018 build figure; stage rebuilt 2025 — seat count after rebuild unverified. Source: https://www.wusf.org/news/2018-02-27/2018-strawberry-festival-aims-to-build-new-memories',
+      },
+    ],
+    roof: 'open',
+  },
+  'baycare-sound': {
+    id: 'baycare-sound',
+    metroId: 'tampa',
+    names: [
+      { name: 'The Sound' },
+      { name: 'The BayCare Sound', from: '2024-07-01' },
+    ],
+    location: [-82.802783, 27.9674955],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'concert',
+        note: 'Official (tourism). Removable covered seats only; sub-5,000 seated setup. Source: https://www.visitstpeteclearwater.com/profile/coachman-park/139272',
+      },
+      {
+        seats: 9000,
+        setup: 'concert',
+        note: 'Official (tourism). 4,000 covered + 5,000 lawn. Source: https://www.visitstpeteclearwater.com/profile/coachman-park/139272',
+      },
+    ],
+    roof: 'covered',
+  },
+  'baycare-ballpark': {
+    id: 'baycare-ballpark',
+    metroId: 'tampa',
+    names: [
+      { name: 'Bright House Field' },
+      { name: 'Spectrum Field', from: '2017-01-01' },
+      { name: 'BayCare Ballpark', from: '2021-01-01' },
+    ],
+    location: [-82.7316413, 27.9717307],
+    capacity: [
+      {
+        seats: 8500,
+        setup: 'baseball',
+        note: 'Official (MiLB). Includes berm; seats-only figures 7,300–8,272. Source: https://www.mlb.com/milb/news/featured/explore-baycare-ballpark-home-of-the-clearwater-threshers',
+      },
+    ],
+    roof: 'open',
+  },
+  'td-ballpark': {
+    id: 'td-ballpark',
+    metroId: 'tampa',
+    names: [{ name: 'TD Ballpark' }],
+    location: [-82.786662, 28.0038021],
+    capacity: [
+      {
+        seats: 8500,
+        setup: 'baseball',
+        note: 'Official (tourism). Post-renovation spring-training capacity. Source: https://www.visitstpeteclearwater.com/things-to-do/sports/baseball-spring-training',
+      },
+    ],
+    roof: 'open',
+  },
+  'al-lang-stadium': {
+    id: 'al-lang-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Al Lang Stadium' }],
+    location: [-82.6330913, 27.7683643],
+    capacity: [
+      {
+        seats: 7227,
+        setup: 'soccer',
+        note: 'Reported. Club sometimes exceeds listed capacity. Source: https://stpetecatalyst.com/rowdies-gain-another-year-at-al-lang/',
+      },
+    ],
+    roof: 'open',
+  },
+  'suncoast-credit-union-field': {
+    id: 'suncoast-credit-union-field',
+    metroId: 'tampa',
+    names: [
+      { name: 'Riverfront Stadium' },
+      { name: 'Suncoast Credit Union Field', from: '2026-01-01' },
+    ],
+    // Approximate; OSM did not resolve the downtown riverfront soccer stadium (research §A14).
+    location: [-82.4666, 27.9592],
+    capacity: [
+      {
+        seats: 5248,
+        setup: 'soccer',
+        note: 'Reported (data site). Threshold-sensitive; verify with the club. Source: https://es.soccerway.com/equipo/tampa-bay-sun/xAR9r0l1',
+      },
+    ],
+    roof: 'open',
+  },
+  'tampa-bay-downs': {
+    id: 'tampa-bay-downs',
+    metroId: 'tampa',
+    names: [{ name: 'Tampa Bay Downs' }],
+    // Approximate; no public seat count (research §A15).
+    location: [-82.659, 28.044],
+    capacity: [],
+    roof: 'open',
+  },
+  'carol-morsani-hall': {
+    id: 'carol-morsani-hall',
+    metroId: 'tampa',
+    names: [{ name: 'Carol Morsani Hall' }, { name: 'Morsani Hall' }],
+    location: [-82.4667931, 27.9486867],
+    capacity: [{ seats: 2610, setup: 'concert', note: 'Official (Straz Center). Source: https://admin.strazcenter.org/about-us' }],
+    roof: 'indoor',
+  },
+  'ruth-eckerd-hall': {
+    id: 'ruth-eckerd-hall',
+    metroId: 'tampa',
+    names: [{ name: 'Ruth Eckerd Hall' }],
+    location: [-82.7046899, 27.9760792],
+    capacity: [{ seats: 2180, setup: 'concert', note: 'Reported. Source: https://en.wikipedia.org/wiki/Ruth_Eckerd_Hall' }],
+    roof: 'indoor',
+  },
+  'mahaffey-theater': {
+    id: 'mahaffey-theater',
+    metroId: 'tampa',
+    names: [{ name: 'The Mahaffey Theater' }, { name: 'Duke Energy Center for the Arts' }],
+    // Approximate; OSM did not resolve the waterfront theater name (research §A20).
+    location: [-82.6318, 27.7656],
+    capacity: [{ seats: 2031, setup: 'concert', note: 'Official (tourism). Source: https://www.visitstpeteclearwater.com/list/best-area-theaters-performing-arts-halls' }],
+    roof: 'indoor',
+  },
+  'jannus-live': {
+    id: 'jannus-live',
+    metroId: 'tampa',
+    names: [{ name: 'Jannus Live' }],
+    location: [-82.6360699, 27.7719217],
+    capacity: [{ seats: 2000, setup: 'concert', note: 'Official. Mostly standing courtyard. Source: https://www.jannuslive.com/live-music-st-pete/' }],
+    roof: 'open',
+  },
+  'hard-rock-event-center': {
+    id: 'hard-rock-event-center',
+    metroId: 'tampa',
+    names: [{ name: 'Hard Rock Event Center' }],
+    // Approximate; casino complex (research §A21b).
+    location: [-82.371, 27.995],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Reported. Source: https://tbaytoday.6amcity.com/live-music-venues-tampa-fl' }],
+    roof: 'indoor',
+  },
+  'tampa-theatre': {
+    id: 'tampa-theatre',
+    metroId: 'tampa',
+    names: [{ name: 'Tampa Theatre' }],
+    location: [-82.4588074, 27.9503814],
+    capacity: [{ seats: 1238, setup: 'concert', note: 'Reported (secondary; verify with venue). Source: https://getmorestreams.com/?p=11019' }],
+    roof: 'indoor',
+  },
+  'ferguson-hall-straz': {
+    id: 'ferguson-hall-straz',
+    metroId: 'tampa',
+    names: [{ name: 'Louise Lykes Ferguson Hall' }, { name: 'Ferguson Hall' }],
+    // Straz campus; interior room approximate (research §A22).
+    location: [-82.4612, 27.9505],
+    capacity: [{ seats: 1042, setup: 'concert', note: 'Official (Straz Center). Near the 1,000 pre-list line. Source: https://admin.strazcenter.org/about-us' }],
+    roof: 'indoor',
+  },
   'dodger-stadium': {
     id: 'dodger-stadium',
     metroId: 'la',
@@ -3210,15 +3501,6 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 6375, setup: 'soccer', note: "Official (Tourisme Montréal): the outdoor track stadium's bleachers; ticketed meets only. Renovations through 2029; stays open." },
     ],
     roof: 'open',
-  },
-  'amalie-arena': {
-    id: 'amalie-arena',
-    metroId: 'tampa',
-    names: [{ name: 'Amalie Arena' }],
-    location: [-82.4518, 27.9427],
-    ticketmasterIds: ['Za5ju3rKuqZDduhSs3K_AaWBzwROtKPBXy'],
-    capacity: [{ seats: 19420, setup: 'basketball', note: 'NCAA figure for the 2025 Women’s Final Four' }],
-    roof: 'indoor',
   },
   'mortgage-matchup-center': {
     id: 'mortgage-matchup-center',

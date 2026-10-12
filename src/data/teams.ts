@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|lake country|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|lake country|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -94,6 +94,18 @@ const LIST: Team[] = [
   team("delaware-mbb", "Delaware Fightin' Blue Hens Men's Basketball", "Delaware MBB", "College men's basketball", "basketball", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
   team("delaware-wbb", "Delaware Fightin' Blue Hens Women's Basketball", "Delaware WBB", "College women's basketball", "basketball", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
   team("wilmington-blue-rocks", "Wilmington Blue Rocks", "Blue Rocks", "MiLB", "baseball", "philadelphia", "WIL"),
+  // Tampa Bay (Oct 12, 2026; docs/research/city-builds/tampa/). Feed ids checked against live schedules.
+  team("rays", "Tampa Bay Rays", "Rays", "MLB", "baseball", "tampa", "TB"),
+  team("buccaneers", "Tampa Bay Buccaneers", "Buccaneers", "NFL", "football", "tampa", "TB"),
+  team("lightning", "Tampa Bay Lightning", "Lightning", "NHL", "hockey", "tampa", "TB"),
+  team("usf-football", "South Florida Bulls Football", "USF", "College football", "football", "tampa", "USF", ["Bulls"]),
+  team("usf-mbb", "South Florida Bulls Men's Basketball", "USF MBB", "College men's basketball", "basketball", "tampa", "USF", ["Bulls"]),
+  team("usf-wbb", "South Florida Bulls Women's Basketball", "USF WBB", "College women's basketball", "basketball", "tampa", "USF", ["Bulls"]),
+  team("rowdies", "Tampa Bay Rowdies", "Rowdies", "USL Championship", "soccer", "tampa", "ROW"),
+  team("clearwater-threshers", "Clearwater Threshers", "Threshers", "Single-A baseball", "baseball", "tampa", "CLW"),
+  team("tampa-tarpons", "Tampa Tarpons", "Tarpons", "Single-A baseball", "baseball", "tampa", "TAR"),
+  team("dunedin-blue-jays", "Dunedin Blue Jays", "Dunedin Blue Jays", "Single-A baseball", "baseball", "tampa", "DUN"),
+  team("tampa-bay-sun", "Tampa Bay Sun FC", "Sun FC", "USL Super League", "soccer", "tampa", "SUN"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

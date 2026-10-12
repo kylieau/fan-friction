@@ -1,0 +1,7173 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "teamId": "rays",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "15:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 15615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 14100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-11",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 9139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 7588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 8954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 8287,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 16902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 19137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 20993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 9257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 7290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 6749,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 9928,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "16:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 18846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 14830,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 10169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "18:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 15195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 20986,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-16",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 11532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 8475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 9706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 9006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 7520,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 14610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 19018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "16:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 8930,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "16:10",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 19452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 11162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 10905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 12906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 14892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-20",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 16504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 20688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 12264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 10542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 15203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:40",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 13364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:10",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 13742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "12:10",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 15481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-11",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 11998,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 13917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 19886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 13813,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 14671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 22756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "13:40",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 18023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 16433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": "12:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 14253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 12380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 16823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 18093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 8168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 10049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 19800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 12940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-22",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 9942,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 8810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 9763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 10733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 17886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 21754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-05",
+      "start": "16:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 8069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 8696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 14127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "18:10",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 14094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 12835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-19",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 10390,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 8992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 9293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-22",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-23",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 17407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "18:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 22169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 16394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-03-30",
+      "start": "15:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "16:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 20204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 19425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 15980,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "16:10",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 15880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 11159,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-10",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 13470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 17136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 21175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 17973,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "16:05",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 22333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 22702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-24",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 10611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 9916,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 14168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 10325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 15247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 12418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 25007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "16:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 27078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 32142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 18961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "16:10",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 19954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:40",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 20193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-22",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 11906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8699,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 10736,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "tropicana-field",
+      "attendance": 19715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "16:10",
+      "opponent": "Dodgers",
+      "venueId": "tropicana-field",
+      "attendance": 23443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "11:35",
+      "opponent": "Dodgers",
+      "venueId": "tropicana-field",
+      "attendance": 21043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 14689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 10846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 12584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 17447,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "16:10",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 18932,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:40",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 23069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 20906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "12:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 19493,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 10436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 16189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 20884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 18442,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "16:10",
+      "opponent": "Phillies",
+      "venueId": "tropicana-field",
+      "attendance": 22665,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "tropicana-field",
+      "attendance": 18208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "tropicana-field",
+      "attendance": 17060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:40",
+      "opponent": "Braves",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 20203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 19703,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 23440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 20508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "12:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 20971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 15522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 11203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 11990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 19625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "16:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:40",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 22163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "tropicana-field",
+      "attendance": 10235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "tropicana-field",
+      "attendance": 12001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "tropicana-field",
+      "attendance": 9972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 22679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "16:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 22943,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 22624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-04",
+      "start": "16:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 18302,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 9119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 10060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 21243,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "16:05",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 18008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 18230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 15176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 15145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 12966,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 18538,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 22655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 22472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 95,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-10-03",
+      "start": "15:08",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 19704,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Wild Card Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2023,
+      "date": "2023-10-04",
+      "start": "15:08",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 20198,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Wild Card Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-03-28",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 25025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-03-29",
+      "start": "18:50",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 18653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-03-30",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 18905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-03-31",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 14875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-01",
+      "start": "18:50",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 14144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:50",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 11697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 18881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:50",
+      "opponent": "Giants",
+      "venueId": "tropicana-field",
+      "attendance": 15146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "16:10",
+      "opponent": "Giants",
+      "venueId": "tropicana-field",
+      "attendance": 17411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:40",
+      "opponent": "Giants",
+      "venueId": "tropicana-field",
+      "attendance": 19470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "18:50",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 12267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:50",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 12160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "18:50",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 10844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 10648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-22",
+      "start": "18:50",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 13522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:50",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 13648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:50",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 13754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:50",
+      "opponent": "Mets",
+      "venueId": "tropicana-field",
+      "attendance": 19077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "tropicana-field",
+      "attendance": 18968,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:40",
+      "opponent": "Mets",
+      "venueId": "tropicana-field",
+      "attendance": 19310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-06",
+      "start": "18:50",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "18:50",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "18:50",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "18:50",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 18041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "16:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 21308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 20694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-20",
+      "start": "18:50",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 13489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:50",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "18:50",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 13095,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:50",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 16368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 20309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 20789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:50",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 13889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "18:50",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 13167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 15264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "18:50",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 17882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 20485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 20386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-10",
+      "start": "18:50",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 14686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:50",
+      "opponent": "Cubs",
+      "venueId": "tropicana-field",
+      "attendance": 15192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "18:50",
+      "opponent": "Cubs",
+      "venueId": "tropicana-field",
+      "attendance": 16927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "18:50",
+      "opponent": "Cubs",
+      "venueId": "tropicana-field",
+      "attendance": 19679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "18:50",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 14482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "18:50",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 14034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "12:10",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 18286,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "18:50",
+      "opponent": "Nationals",
+      "venueId": "tropicana-field",
+      "attendance": 14959,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "tropicana-field",
+      "attendance": 17501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:40",
+      "opponent": "Nationals",
+      "venueId": "tropicana-field",
+      "attendance": 18259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "18:50",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 20436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "18:50",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 19246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "18:50",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 23438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "18:50",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 17290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "16:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 19946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:40",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 21875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:50",
+      "opponent": "Reds",
+      "venueId": "tropicana-field",
+      "attendance": 20441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "16:10",
+      "opponent": "Reds",
+      "venueId": "tropicana-field",
+      "attendance": 23464,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "11:35",
+      "opponent": "Reds",
+      "venueId": "tropicana-field",
+      "attendance": 19873,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "18:50",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 17931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "12:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 14484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "18:50",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 20673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "19:15",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 23898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 16848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-12",
+      "start": "18:50",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 10540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:50",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 12275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:50",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 12493,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "18:50",
+      "opponent": "D-backs",
+      "venueId": "tropicana-field",
+      "attendance": 21613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "16:10",
+      "opponent": "D-backs",
+      "venueId": "tropicana-field",
+      "attendance": 17708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "13:40",
+      "opponent": "D-backs",
+      "venueId": "tropicana-field",
+      "attendance": 18636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "18:50",
+      "opponent": "Padres",
+      "venueId": "tropicana-field",
+      "attendance": 17547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "16:10",
+      "opponent": "Padres",
+      "venueId": "tropicana-field",
+      "attendance": 16600,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:40",
+      "opponent": "Padres",
+      "venueId": "tropicana-field",
+      "attendance": 17494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-02",
+      "start": "18:50",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 11636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:50",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 10531,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:50",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 11513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 10584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-17",
+      "start": "18:50",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-18",
+      "start": "18:50",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 12153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-19",
+      "start": "18:50",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 13120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-20",
+      "start": "18:50",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 14372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 20704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 20567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-03-28",
+      "start": "16:10",
+      "opponent": "Rockies",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "name": "Schedule Magnet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "16:10",
+      "opponent": "Rockies",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "13:40",
+      "opponent": "Rockies",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-03-31",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "16:10",
+      "opponent": "Braves",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "13:40",
+      "opponent": "Braves",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-14",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "19:05",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "19:05",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "16:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 8794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "name": "Star Wars"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "name": "Healthcare Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "16:10",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:40",
+      "opponent": "Brewers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-19",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 8596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays 90s Hat"
+        },
+        {
+          "name": "Pickleball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "19:05",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "19:05",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        },
+        {
+          "name": "A MINECRAFT MOVIE"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 8759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "name": "Salute to Veterans"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Tropical Shirt"
+        },
+        {
+          "name": "City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 8372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "name": "Margaritaville"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "19:35",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 9131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "19:35",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 8994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Dominican Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "19:35",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Steinbrenner Field Bobble Series: Junior Caminero"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 8448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Cuban Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "16:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Evan Longoria T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "12:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 9014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "name": "Cooling Towel"
+        },
+        {
+          "name": "Irish Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-16",
+      "start": "19:35",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "name": "Greek Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "19:35",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "name": "Postgame Drone Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "19:35",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "Mexican Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "19:35",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "Steinbrenner Field Bobble Series: Shane Baz"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        },
+        {
+          "name": "Pride"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "12:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "12:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "name": "Shane McClanahan Player Pin"
+        },
+        {
+          "name": "Florida State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-06-30",
+      "start": "19:35",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "name": "Italian Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "name": "Canada Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "12:10",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "name": "Steinbrenner Field Bobble Series: Taj Bradley"
+        },
+        {
+          "name": "Venezuelan Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "19:35",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "12:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 9195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "name": "Rope Hat"
+        },
+        {
+          "name": "Pokemon Go"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "19:35",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Stranger Things"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        },
+        {
+          "name": "Josh Lowe City Connect Bobblehead"
+        },
+        {
+          "name": "Law Enforcement"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "19:35",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "name": "Colombian Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "19:35",
+      "opponent": "Dodgers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        },
+        {
+          "name": "Japanese Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "12:10",
+      "opponent": "Dodgers",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "19:35",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "19:35",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "19:35",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 9182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "19:35",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        },
+        {
+          "name": "FAMU"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "12:10",
+      "opponent": "Cardinals",
+      "venueId": "tropicana-field",
+      "attendance": 8809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "name": "Sunglasses"
+        },
+        {
+          "name": "University of Florida"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "19:35",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "name": "Rays Football Jersey"
+        },
+        {
+          "name": "Peanuts"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "19:35",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 7883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "19:35",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 8589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "name": "Jewish Community"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-04",
+      "start": "19:35",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 8306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "name": "Rays Invasion"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "19:35",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 8836,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        },
+        {
+          "name": "Bravo"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        },
+        {
+          "name": "Christian Faith"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "12:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 8155,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "name": "First Responders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-15",
+      "start": "19:35",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "name": "Puerto Rican Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "19:35",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8908,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "19:05",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8959,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 8042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-19",
+      "start": "19:35",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "name": "City Connect"
+        },
+        {
+          "name": "Postgame Drone Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "name": "Devil Rays Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "19:35",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 10046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "name": "University of Tampa"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-06",
+      "start": "16:10",
+      "opponent": "Cubs",
+      "venueId": "tropicana-field",
+      "attendance": 25114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Schedule Magnet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "tropicana-field",
+      "attendance": 21377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "tropicana-field",
+      "attendance": 20483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 20511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 21620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "Pickleball"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 20796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-20",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "tropicana-field",
+      "attendance": 15962,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "tropicana-field",
+      "attendance": 14749,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "tropicana-field",
+      "attendance": 15546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 14476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "name": "Jackie Robinson"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "16:10",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 17014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tropicana Field Tour Tee"
+        },
+        {
+          "name": "Greek Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:40",
+      "opponent": "Twins",
+      "venueId": "tropicana-field",
+      "attendance": 17618,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "tropicana-field",
+      "attendance": 13330,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "name": "Hello Kitty"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "18:10",
+      "opponent": "Giants",
+      "venueId": "tropicana-field",
+      "attendance": 21973,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tropicana Field Light-Up Replica"
+        },
+        {
+          "name": "Mexican Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        },
+        {
+          "name": "Chase Rice Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:40",
+      "opponent": "Giants",
+      "venueId": "tropicana-field",
+      "attendance": 20108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "name": "AAPI Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-04",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 11263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "name": "Star Wars"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 11217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 11275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 14919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "16:10",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 19673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jonathan Aranda Bobble"
+        },
+        {
+          "name": "Salute to Veterans"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "12:15",
+      "opponent": "Marlins",
+      "venueId": "tropicana-field",
+      "attendance": 16788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 13633,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 13956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 11846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 18706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "name": "Colombian Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "16:10",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 22480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Junior Caminero City Connect Bobble"
+        },
+        {
+          "name": "Healthcare Appreciation"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        },
+        {
+          "name": "Cole Swindell Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:40",
+      "opponent": "Angels",
+      "venueId": "tropicana-field",
+      "attendance": 16589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-01",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 13695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 14010,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "tropicana-field",
+      "attendance": 12585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-08",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 14579,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 15503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "name": "Irish Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 16504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "tropicana-field",
+      "attendance": 17134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "name": "Negro League Baseball Tribute"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "tropicana-field",
+      "attendance": 20996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jersey Jacket"
+        },
+        {
+          "name": "Pride"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:40",
+      "opponent": "Nationals",
+      "venueId": "tropicana-field",
+      "attendance": 21054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "name": "Backyard Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-22",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 11298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 11171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 11857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "12:10",
+      "opponent": "Royals",
+      "venueId": "tropicana-field",
+      "attendance": 14276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "tropicana-field",
+      "attendance": 12972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "Dominican Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "18:10",
+      "opponent": "D-backs",
+      "venueId": "tropicana-field",
+      "attendance": 17562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chandler Simpson Bobblelegs"
+        },
+        {
+          "name": "Law Enforcement Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:40",
+      "opponent": "D-backs",
+      "venueId": "tropicana-field",
+      "attendance": 17195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "Toy Story 5"
+        },
+        {
+          "name": "Dog Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-06",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 18129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Venezuelan Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 18115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "name": "NASCAR Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 19373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jewish Community"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 18255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "KISS"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 15568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "16:10",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 22597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Evan Longoria Snapback"
+        },
+        {
+          "name": "Longo's Legacy Weekend- Rays Hall of Fame Induction Ceremony"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:40",
+      "opponent": "Mariners",
+      "venueId": "tropicana-field",
+      "attendance": 24297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Evan Longoria Bobblecard"
+        },
+        {
+          "name": "Longo's Legacy Weekend - Evan's Final Walkup and Jersey Number Retirement"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 19099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "name": "Cuban Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "National Baseball Hall of Fame Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "18:10",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 24100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Devil Rays Retro Snapback"
+        },
+        {
+          "name": "University of Florida"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "National Baseball Hall of Fame Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "12:15",
+      "opponent": "Guardians",
+      "venueId": "tropicana-field",
+      "attendance": 20562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Raymond Shoulder Plush"
+        },
+        {
+          "name": "Disability Pride and Awareness"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "National Baseball Hall of Fame Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 14502,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 14200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "12:10",
+      "opponent": "Rangers",
+      "venueId": "tropicana-field",
+      "attendance": 15322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 20661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "name": "FAMU"
+        },
+        {
+          "name": "Harry Potter"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "16:10",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 23309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Patch Button-Up"
+        },
+        {
+          "name": "Christian Faith"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "tropicana-field",
+      "attendance": 23559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "name": "Peanuts"
+        },
+        {
+          "name": "University of South Florida"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 18343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        },
+        {
+          "name": "Hillsborough College"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "18:10",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 28055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "name": "Jordan Davis Postgame Concert"
+        },
+        {
+          "name": "Rays Invasion"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Flappy Boi Bobble"
+        },
+        {
+          "name": "Country"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "12:15",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 18598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Margaritaville"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-17",
+      "start": "18:05",
+      "opponent": "Orioles",
+      "venueId": "tropicana-field",
+      "attendance": 10159,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 12387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 13015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "tropicana-field",
+      "attendance": 12857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "tropicana-field",
+      "attendance": 16470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "name": "SpongeBob SquarePants"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "16:10",
+      "opponent": "Padres",
+      "venueId": "tropicana-field",
+      "attendance": 25621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Devil Rays Windbreaker"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Saturdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:40",
+      "opponent": "Padres",
+      "venueId": "tropicana-field",
+      "attendance": 19576,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "name": "RMS Mystery Squishy Dumpling"
+        },
+        {
+          "name": "Florida State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "tropicana-field",
+      "attendance": 13618,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "tropicana-field",
+      "attendance": 16850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "tropicana-field",
+      "attendance": 14431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "name": "St. Petersburg College"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 16217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "name": "First Responders"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        },
+        {
+          "name": "Wear Home Whites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 24642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Rays Hockey Jersey"
+        },
+        {
+          "name": "Yoga"
+        },
+        {
+          "name": "Wear Home Whites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:40",
+      "opponent": "Astros",
+      "venueId": "tropicana-field",
+      "attendance": 18718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "name": "Dog Day"
+        },
+        {
+          "name": "Pokémon GO"
+        },
+        {
+          "name": "Wear Home Whites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 16102,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "name": "Puerto Rican Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 14552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "name": "Workforce Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-17",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "tropicana-field",
+      "attendance": 12305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-18",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 23342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "name": "Italian Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Devil Rays Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "16:10",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 27402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "name": "University of Tampa"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:40",
+      "opponent": "Red Sox",
+      "venueId": "tropicana-field",
+      "attendance": 24654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "18:30",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 40542,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "rays",
+      "season": 2026,
+      "date": "2026-10-05",
+      "start": "20:00",
+      "opponent": "Yankees",
+      "venueId": "tropicana-field",
+      "attendance": 40226,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    }
+  ]
+}
