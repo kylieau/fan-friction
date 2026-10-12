@@ -126,6 +126,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   // CEBL, CPL, NSL, MLS Next Pro and U Sports have no adapter). A feed game at the same building and date still wins.
   'bc-place', 'rogers-arena', 'pacific-coliseum', 'langley-events-centre', 'langley-centre-gym',
   'willoughby-stadium', 'swangard-stadium', 'thunderbird-arena', 'thunderbird-stadium', 'war-memorial-gym',
+  // Mexico City rooms with no league feed. Liga MX and Capitanes stay on ESPN, so Banorte, CU and Arena CDMX are not swept.
+  'estadio-alfredo-harp-helu', 'gimnasio-juan-de-la-barrera', 'arena-mexico', 'estadio-wilfrido-massieu', 'estadio-ciudad-de-los-deportes',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {

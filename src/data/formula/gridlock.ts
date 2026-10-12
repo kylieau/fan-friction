@@ -65,7 +65,10 @@ const SCALE = 7.5;
 // No venue override is wired (same rule as Milwaukee and Tampa). The transit spill stays 0.10; Hastings Park has no rapid transit.
 // Sacramento is a hub (research, Oct 12, 2026, docs/research/city-builds/sacramento/sacramento-city-type-answer.md):
 // downtown/riverfront and Cal Expo share bridges, ramps and lots. No venue carShare is wired; every split in that answer is estimated or a fallback.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub' };
+// Mexico City is transit (research, Oct 11, 2026, docs/research/city-builds/mexico-city/mexico-city-city-type-answer.md):
+// the only quantified event split is about 0.35 car-involved at Banorte during the World Cup, and the capacity-weighted
+// estimates sit nearer 0.4 than 0.85. Low-confidence venue overrides stay in the research and are not wired.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -168,6 +171,13 @@ const ZONE_NAMES: Record<string, string> = {
   'sac-state-nest': 'Sacramento State',
   'uc-davis-health-stadium': 'UC Davis',
   'university-credit-union-center': 'UC Davis',
+  // Mexico City: Magdalena Mixhuca shares Metro Line 9; Nápoles is the stadium, bullring and WTC within about 2 km.
+  'estadio-gnp-seguros': 'Magdalena Mixhuca',
+  'palacio-de-los-deportes': 'Magdalena Mixhuca',
+  'estadio-alfredo-harp-helu': 'Magdalena Mixhuca',
+  'estadio-ciudad-de-los-deportes': 'Nápoles',
+  'plaza-de-toros-mexico': 'Nápoles',
+  'pepsi-center-wtc': 'Nápoles',
 };
 
 export interface Zone {
