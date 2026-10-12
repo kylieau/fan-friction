@@ -112,7 +112,8 @@ jobs:
             echo "No schedule change to commit."
             exit 0
           fi
-          day=$(git diff --cached --name-only | sed -n 's|.*/\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\)\.json|\1|p' | head -n 1)
+          # The label is the schedule file's own date (build notes 3, D06), never the first dated file that happened to be staged.
+          day=$(git diff --cached --name-only -- data/schedule-archive | sed -n 's|.*/\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\)\.json|\1|p' | sort | tail -n 1)
           git commit -m "Save the schedule for ${day:-the coming days}"
           # main may have moved while the job ran; rebase the one data commit onto it and try again.
           for attempt in 1 2 3; do
