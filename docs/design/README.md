@@ -34,4 +34,19 @@ Kylie's approved mockups from the Oct 9–10, 2026 Mock Mosaic, saved from her O
 | [call5-ticket-line.png](call5-ticket-line.png) | The ticket line: A link only, B all-in price or blank, C live minimum price with +fees | C: "Prices from $48+fees ›", else "See tickets on Ticketmaster ›" |
 | [call6-overlap.png](call6-overlap.png) | Local competition: A on the event page, B/C the date page with the timeline, D the read box and summary line on top | D on top, then the list, then the B/C timeline, on the date page |
 
+## Oct 11, 2026: build 3, the nav and screens pack (Mock Mosaic with Kylie; decisions in `build3/DECISIONS.md`, the build plan in `docs/reviews/build-notes-3-oct11.md`)
+
+| Mock | Shows | Section in build notes 3 |
+|---|---|---|
+| [build3/1-read-boxes-date.png](build3/1-read-boxes-date.png) | The Explore header: the date as plain text, the read box with its word | 4.1 |
+| [build3/2a-explore-activity-chip.png](build3/2a-explore-activity-chip.png) | The Explore sheet's icon-only activity chip, on and off | 4.2 |
+| [build3/2b-explore-sheet-layout.png](build3/2b-explore-sheet-layout.png) | The Explore sheet: tighter top, rows by time, activity lines; the rejected filter-menu switch | 4.2 |
+| [build3/3-date-page.png](build3/3-date-page.png) | The read popup with "See the whole day ›", the date page rows (time over venue, by crowd), the event page's "This day" card | 4.3 |
+| [build3/4-stubs.png](build3/4-stubs.png) | Stubs: Recent then Upcoming, month bands, the floating "+ Stub it", the empty state | 4.4 |
+| [build3/5-favorites.png](build3/5-favorites.png) | Following › Faves: a schedule by date with two tap zones and a city code over the read box | 4.5 |
+| [build3/6-friends.png](build3/6-friends.png) | Following › Friends: grouped cards, the Earlier band (A, chosen), the Feed view, the segment labels | 4.6 |
+| [build3/7-stub-it-sheet.png](build3/7-stub-it-sheet.png) | The "+ Stub it" sheet: Attending / Watching / Interested, Private / Friends, Where? with the Home preset | 4.7 |
+| [build3/call11b-crowd-hybrid.png](build3/call11b-crowd-hybrid.png) | The crowd block: Estimated, Announced and Final, the highlighted figure on top | 1, D04 |
+| [build3/call12-up-against.png](build3/call12-up-against.png) | Up against on the event page: A with distance (chosen), B without, C a "This day" card | 3.3 |
+
 Older mockups: `docs/reviews/assets/build-notes-oct9/` (Oct 9) and `design/wireframes/` (pre-rating-model boards; follow the decisions docs, not those).
