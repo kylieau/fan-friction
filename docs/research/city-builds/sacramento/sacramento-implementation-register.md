@@ -101,6 +101,8 @@ OpenStreetMap via Nominatim, one request a second. Rooms OSM does not separate a
 
 ## Open questions for the next review
 
+**Golden 1 car share was removed.** The stub already on main had `carShare: 0.87`, an estimate by subtraction (walking, biking, and transit put at 10–15% before opening). This build took that number off, because the Oct 12 city-type answer has no measured split. The hub default (0.85) applies instead. The coordinate and the capacity figures on that same stub were also replaced with the researched ones (17,608 basketball, 19,000 concert, OpenStreetMap pin). Open question: put 0.87 back, or leave it off?
+
 1. **City type.** Research recommends `hub` because downtown/riverfront and Cal Expo share bridges, ramps, and lots. The strongest contrary case is `sprawl`: commuting is about 92% by car, and more than half of the 5,000+ capacity sits on sites with their own lots and little transit. `transit` (0.40) is not supported. Nothing here is a measured mode split. Confirm `hub`, or switch to `sprawl`.
 2. **Car share.** No measured split for any room. Should any estimated exception be wired later (Toyota / Thunder Valley / Hard Rock ~0.97, Heart Health Park ~0.93, UC Davis Health Stadium ~0.77), or should they stay on the city default?
 3. **Sutter Health Park capacity.** Stored 13,416 (2025 team-official total, lawn included) rather than Wikipedia 14,014, a May 2026 report of 13,800, or 10,624 fixed seats.
