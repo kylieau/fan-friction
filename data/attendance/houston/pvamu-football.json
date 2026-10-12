@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "teamId": "pvamu-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "pvamu-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "18:00",
+      "opponent": "Texas Southern",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 13233,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "18:00",
+      "opponent": "Miss Valley St",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 1120,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "14:00",
+      "opponent": "AR-Pine Bluff",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 14224,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "14:00",
+      "opponent": "Alabama St",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 1350,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "18:00",
+      "opponent": "Southern",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 9880,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "14:00",
+      "opponent": "East Texas A&M",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 13937,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "14:00",
+      "opponent": "Florida A&M",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 3091,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "14:00",
+      "opponent": "Alcorn St",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 4869,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "18:52",
+      "opponent": "UT Rio Grande",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 6326,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:00",
+      "opponent": "N'Western St",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 4559,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "18:00",
+      "opponent": "Grambling",
+      "venueId": "cotton-bowl",
+      "attendance": 56210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "14:00",
+      "opponent": "Lincoln (CA)",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 11427,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "14:00",
+      "opponent": "Alabama St",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 5962,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "14:00",
+      "opponent": "AR-Pine Bluff",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 7069,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "14:00",
+      "opponent": "Miss Valley St",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 4688,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2025,
+      "date": "2025-12-13",
+      "start": "11:00",
+      "opponent": "SC State",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 26703,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Cricket Celebration Bowl",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "11:00",
+      "opponent": "Texas Southern",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 12546,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "19:00",
+      "opponent": "SF Austin",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 6794,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pvamu-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "15:00",
+      "opponent": "Southern",
+      "venueId": "pvamu-panther-stadium",
+      "attendance": 9410,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

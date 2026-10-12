@@ -122,6 +122,19 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/nfl', espnId: '12', metroId: 'kansas-city', teamId: 'chiefs', sport: 'football' },
   { path: 'soccer/usa.1', espnId: '186', metroId: 'kansas-city', teamId: 'sporting-kc', sport: 'soccer' },
   { path: 'soccer/usa.nwsl', espnId: '20907', metroId: 'kansas-city', teamId: 'kc-current', sport: 'soccer' },
+  // Houston (docs/research/city-builds/houston/); every id and home venue checked against the feed Oct 12, 2026.
+  { path: 'football/nfl', espnId: '34', metroId: 'houston', teamId: 'texans', sport: 'football' },
+  { path: 'basketball/nba', espnId: '10', metroId: 'houston', teamId: 'rockets', sport: 'basketball' },
+  { path: 'soccer/usa.1', espnId: '6077', metroId: 'houston', teamId: 'dynamo', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '17346', metroId: 'houston', teamId: 'dash', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '248', metroId: 'houston', teamId: 'uh-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '248', metroId: 'houston', teamId: 'uh-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '248', metroId: 'houston', teamId: 'uh-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '242', metroId: 'houston', teamId: 'rice-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '242', metroId: 'houston', teamId: 'rice-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '242', metroId: 'houston', teamId: 'rice-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2640', metroId: 'houston', teamId: 'texas-southern-football', sport: 'football' },
+  { path: 'football/college-football', espnId: '2504', metroId: 'houston', teamId: 'pvamu-football', sport: 'football' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -269,6 +282,7 @@ const ESPN_MLB_IDS: Record<string, string> = {
   phillies: '22',
   brewers: '8',
   rays: '30',
+  astros: '18',
 };
 
 /**
@@ -522,6 +536,21 @@ const VENUE_BY_NAME: Record<string, string> = {
   "children's mercy park": 'sporting-park',
   'sporting park': 'sporting-park',
   'cpkc stadium': 'cpkc-stadium',
+  // Houston, as ESPN writes them on each team's own schedule (checked Oct 12, 2026).
+  'reliant stadium': 'reliant-stadium',
+  'nrg stadium': 'reliant-stadium',
+  'houston stadium': 'reliant-stadium',
+  'toyota center (houston)': 'toyota-center',
+  'shell energy stadium': 'shell-energy-stadium',
+  'bbva stadium': 'shell-energy-stadium',
+  'bbva compass stadium': 'shell-energy-stadium',
+  'tdecu stadium': 'tdecu-stadium',
+  'fertitta center': 'fertitta-center',
+  'hofheinz pavilion': 'fertitta-center',
+  'first community stadium': 'first-community-stadium',
+  'tudor fieldhouse': 'tudor-fieldhouse',
+  'minute maid park': 'daikin-park',
+  'daikin park': 'daikin-park',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
@@ -540,6 +569,13 @@ const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
     'university credit union center': 'university-credit-union-center',
     'the pavilion': 'university-credit-union-center',
     'pavilion at arc': 'university-credit-union-center',
+  },
+  // Atlanta already uses panther-stadium for Clark Atlanta. Prairie View's bowl is a different building.
+  houston: {
+    'panther stadium': 'pvamu-panther-stadium',
+    'toyota center': 'toyota-center',
+    // Rice–Totten Stadium in Mississippi is a different building. Keep this name on Houston only.
+    'rice stadium': 'first-community-stadium',
   },
 };
 

@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -216,6 +216,28 @@ const LIST: Team[] = [
   team("kc-mavericks", "Kansas City Mavericks", "KC Mavericks", "ECHL", "hockey", "kansas-city", "MVS"),
   team("kc-comets", "Kansas City Comets", "Comets", "MASL", "soccer", "kansas-city", "KCO"),
   team("kc-outlaws", "Kansas City Outlaws", "Outlaws", "PBR", "rodeo", "kansas-city", "OUT"),
+  // Houston (Oct 12, 2026; docs/research/city-builds/houston/). Feed ids checked against live schedules.
+  // Comets have a team record only: the WNBA feed had no Houston club on Oct 12. Baseball and softball
+  // programs are records only; this app has no college baseball or softball adapter.
+  team("astros", "Houston Astros", "Astros", "MLB", "baseball", "houston", "HOU"),
+  team("texans", "Houston Texans", "Texans", "NFL", "football", "houston", "HOU"),
+  team("rockets", "Houston Rockets", "Rockets", "NBA", "basketball", "houston", "HOU"),
+  team("houston-comets", "Houston Comets", "Comets", "WNBA", "basketball", "houston", "HOU"),
+  team("dynamo", "Houston Dynamo FC", "Dynamo", "MLS", "soccer", "houston", "HOU"),
+  team("dash", "Houston Dash", "Dash", "NWSL", "soccer", "houston", "HOU"),
+  team("space-cowboys", "Sugar Land Space Cowboys", "Space Cowboys", "Triple-A baseball", "baseball", "houston", "SUG"),
+  team("uh-football", "Houston Cougars Football", "UH", "College football", "football", "houston", "UH", ["Cougars"]),
+  team("uh-mbb", "Houston Cougars Men's Basketball", "UH MBB", "College men's basketball", "basketball", "houston", "UH", ["Cougars"]),
+  team("uh-wbb", "Houston Cougars Women's Basketball", "UH WBB", "College women's basketball", "basketball", "houston", "UH", ["Cougars"]),
+  team("uh-baseball", "Houston Cougars Baseball", "UH Baseball", "College baseball", "baseball", "houston", "UH", ["Cougars"]),
+  team("uh-softball", "Houston Cougars Softball", "UH Softball", "College softball", "softball", "houston", "UH", ["Cougars"]),
+  team("rice-football", "Rice Owls Football", "Rice", "College football", "football", "houston", "RICE", ["Owls"]),
+  team("rice-mbb", "Rice Owls Men's Basketball", "Rice MBB", "College men's basketball", "basketball", "houston", "RICE", ["Owls"]),
+  team("rice-wbb", "Rice Owls Women's Basketball", "Rice WBB", "College women's basketball", "basketball", "houston", "RICE", ["Owls"]),
+  team("rice-baseball", "Rice Owls Baseball", "Rice Baseball", "College baseball", "baseball", "houston", "RICE", ["Owls"]),
+  // texas-southern-football: Nashville already uses tsu-football for Tennessee State.
+  team("texas-southern-football", "Texas Southern Tigers Football", "TSU", "College football", "football", "houston", "TSU", ["Tigers"]),
+  team("pvamu-football", "Prairie View A&M Panthers Football", "PVAMU", "College football", "football", "houston", "PVAM", ["Panthers"]),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

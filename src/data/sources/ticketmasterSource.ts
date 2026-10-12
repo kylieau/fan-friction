@@ -112,6 +112,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'desert-diamond-arena', 'phoenix-raceway', 'firebird-motorsports-park',
   // Sacramento rooms with no league feed: community-college football, racing, rodeo, and Sac State volleyball.
   'hughes-stadium', 'all-american-speedway', 'dan-russell-rodeo-arena', 'sac-state-nest',
+  // Reliant Stadium also has the Texans on ESPN; a same-day feed game still wins. Rodeo and bowl listings are not NFL games.
+  'reliant-stadium', 'reliant-arena', 'sam-houston-race-park',
   'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
   'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',

@@ -7129,6 +7129,390 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+
+  // Houston (Oct 12, 2026; docs/research/city-builds/houston/). Coordinates are OpenStreetMap.
+  // No carShare overrides: the city-type answer has derived and estimated shares, not a measured mode split.
+  // Order seeds gridlock zones (the zone center is the first room). Rooms under 5,000 stay on the map, muted.
+  'reliant-stadium': {
+    id: 'reliant-stadium',
+    metroId: 'houston',
+    names: [
+      { name: 'Reliant Stadium' },
+      { name: 'NRG Stadium', from: '2014-03-19' },
+      { name: 'Houston Stadium', from: '2026-06-11' },
+      { name: 'Reliant Stadium', from: '2026-08-01' },
+    ],
+    location: [-95.410802, 29.684858],
+    capacity: [
+      { seats: 72220, setup: 'football', note: 'Official current. Reported steps: 69,500 (2002), 71,054 (2003–13), 71,795 (2014–17), 72,220 (2018–). Conflict: 71,995 on a Titans media guide. Source: https://www.reliantpark.com/reliant-stadium/' },
+      { seats: 80000, setup: 'concert', note: 'Official upper of "72,000 to 80,000" for special events. An 80,203 concert is attendance, not a seat count. Source: https://www.reliantpark.com/reliant-stadium/' },
+    ],
+    roof: 'covered',
+  },
+  'reliant-arena': {
+    id: 'reliant-arena',
+    metroId: 'houston',
+    names: [
+      { name: 'Astroarena' },
+      { name: 'Reliant Arena' },
+      { name: 'NRG Arena', from: '2014-03-12' },
+      { name: 'Reliant Arena', from: '2026-08-01' },
+    ],
+    location: [-95.405969, 29.681173],
+    capacity: [
+      { seats: 5700, setup: 'concert', note: 'Official "5,700+" seats, not an exact count. Wikipedia cites 5,800. Source: https://www.reliantpark.com/reliant-park-facilities/' },
+    ],
+    roof: 'indoor',
+  },
+  'reliant-arena-pavilion': {
+    id: 'reliant-arena-pavilion',
+    metroId: 'houston',
+    names: [
+      { name: 'NRG Pavilion' },
+      { name: 'Reliant Arena Pavilion' },
+    ],
+    // Same building as Reliant Arena. OSM has one arena point. The pavilion rename is inferred from the facility rename.
+    location: [-95.405969, 29.681173],
+    capacity: [
+      { seats: 1500, setup: 'concert', note: 'Official "1,500+" seats. Source: https://www.reliantpark.com/reliant-park-facilities/' },
+    ],
+    roof: 'indoor',
+  },
+  'daikin-park': {
+    id: 'daikin-park',
+    metroId: 'houston',
+    names: [
+      { name: 'Minute Maid Park' },
+      { name: 'Daikin Park', from: '2025-01-01' },
+    ],
+    location: [-95.355234, 29.757232],
+    capacity: [
+      { seats: 41168, setup: 'baseball', note: 'Reported (SportCal / Wikipedia). Conflicts: 40,950 Baseball-Reference, 40,963 AP. The Astros\' own figure was not fetched. Source: https://www.sportcal.com/newsletters/astros-to-rename-minute-maid-park-as-daikin-secures-stadium-naming-rights' },
+    ],
+    roof: 'covered',
+  },
+  'toyota-center': {
+    id: 'toyota-center',
+    metroId: 'houston',
+    names: [{ name: 'Toyota Center' }],
+    location: [-95.362231, 29.750747],
+    capacity: [
+      { seats: 18104, setup: 'basketball', note: 'Reported. Conflict: about 18,055 (3D Digital Venue). Official Rockets figure was not fetched. 2026–27 renovation capacity effect unknown. Source: https://en.wikipedia.org/wiki/Toyota_Center' },
+      { seats: 19000, setup: 'concert', note: 'Reported "up to about 19,000". Source: https://www.thestadiumbusiness.com/2026/04/09/toyota-center-set-for-major-revamp/' },
+    ],
+    roof: 'indoor',
+  },
+  'shell-energy-stadium': {
+    id: 'shell-energy-stadium',
+    metroId: 'houston',
+    names: [
+      { name: 'BBVA Compass Stadium' },
+      { name: 'BBVA Stadium' },
+      { name: 'Shell Energy Stadium' },
+    ],
+    location: [-95.352341, 29.752026],
+    capacity: [
+      { seats: 22039, setup: 'soccer', note: 'Reported. Conflicts: 20,656 (KHOU) and 20,039 (Stadium Journey). Football and concert configurations unknown. Rename dates were not verified. Source: https://en.wikipedia.org/wiki/Shell_Energy_Stadium' },
+    ],
+    roof: 'open',
+  },
+  '713-music-hall': {
+    id: '713-music-hall',
+    metroId: 'houston',
+    names: [
+      { name: 'The Terminal' },
+      { name: '713 Music Hall' },
+    ],
+    location: [-95.364025, 29.765919],
+    capacity: [
+      { seats: 5000, setup: 'concert', note: 'Official city listing: 5,000 occupancy, mostly a flat GA floor. Not 5,000 seats. Threshold case. Source: https://www.houstontx.gov/events/713-music-hall.html' },
+    ],
+    roof: 'indoor',
+  },
+  'jones-hall': {
+    id: 'jones-hall',
+    metroId: 'houston',
+    names: [{ name: 'Jones Hall' }, { name: 'Jones Hall for the Performing Arts' }],
+    location: [-95.365028, 29.760873],
+    capacity: [
+      { seats: 2912, setup: 'concert', note: 'Official Houston Symphony. Can shrink to 2,300. Conflict: 2,883 in a secondary roundup. Source: https://houstonsymphony.org/visit/seating-charts' },
+    ],
+    roof: 'indoor',
+  },
+  'sarofim-hall': {
+    id: 'sarofim-hall',
+    metroId: 'houston',
+    names: [{ name: 'Sarofim Hall' }],
+    location: [-95.369706, 29.761658],
+    capacity: [
+      { seats: 2650, setup: 'concert', note: 'Reported. Hobby Center\'s other room, Zilkha Hall (500), is below the pre-list line and is not a row. Source: https://catastrophictheatre.com/press/citys-theater-district-among-the-best/' },
+    ],
+    roof: 'indoor',
+  },
+  'wortham-brown-theater': {
+    id: 'wortham-brown-theater',
+    metroId: 'houston',
+    names: [{ name: 'Brown Theater' }],
+    location: [-95.365622, 29.763351],
+    capacity: [
+      { seats: 2423, setup: 'concert', note: 'Reported. Conflict: 2,405. Wortham\'s two rooms are separate. Source: https://catastrophictheatre.com/press/citys-theater-district-among-the-best/' },
+    ],
+    roof: 'indoor',
+  },
+  'wortham-cullen-theater': {
+    id: 'wortham-cullen-theater',
+    metroId: 'houston',
+    names: [{ name: 'Cullen Theater' }],
+    location: [-95.365622, 29.763351],
+    capacity: [
+      { seats: 1100, setup: 'concert', note: 'Reported. Source: https://catastrophictheatre.com/press/citys-theater-district-among-the-best/' },
+    ],
+    roof: 'indoor',
+  },
+  'tdecu-stadium': {
+    id: 'tdecu-stadium',
+    metroId: 'houston',
+    names: [{ name: 'John O\'Quinn Field at TDECU Stadium' }, { name: 'TDECU Stadium' }],
+    // OSM names the pitch John O'Quinn Field and has no separate stadium node.
+    location: [-95.349184, 29.721997],
+    capacity: [
+      { seats: 40000, setup: 'football', note: 'Reported (architect and concessionaire). Conflict: 39,700 plus standing room (Wikipedia, current). Post-2024 renovation effect unverified. Source: https://walterpmoore.com/projects/university-houston-tdecu-stadium' },
+    ],
+    roof: 'open',
+  },
+  'fertitta-center': {
+    id: 'fertitta-center',
+    metroId: 'houston',
+    names: [
+      { name: 'Hofheinz Pavilion' },
+      { name: 'Fertitta Center', from: '2018-12-01' },
+    ],
+    location: [-95.346961, 29.724737],
+    capacity: [
+      { seats: 7035, setup: 'basketball', fromYear: 2018, note: 'Reported. Conflict: 7,100 (concessionaire). Earlier reported layouts: 10,000 (1969–98), 8,479 (1998–2017). Source: https://en.wikipedia.org/wiki/Fertitta_Center' },
+    ],
+    roof: 'indoor',
+  },
+  'schroeder-park': {
+    id: 'schroeder-park',
+    metroId: 'houston',
+    names: [{ name: 'Schroeder Park' }, { name: 'Darryl & Lori Schroeder Park' }],
+    location: [-95.34536, 29.726957],
+    capacity: [
+      { seats: 3500, setup: 'baseball', note: 'Reported (concessionaire). Source: https://media.delawarenorth.com/delaware-north-sportservice-named-food-and-beverage-partner-for-university-houston-athletics-facilities/' },
+    ],
+    roof: 'open',
+  },
+  'cougar-softball-stadium': {
+    id: 'cougar-softball-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Cougar Softball Stadium' }],
+    location: [-95.349056, 29.727193],
+    capacity: [
+      { seats: 1200, setup: 'baseball', note: 'Reported (concessionaire). Source: https://media.delawarenorth.com/delaware-north-sportservice-named-food-and-beverage-partner-for-university-houston-athletics-facilities/' },
+    ],
+    roof: 'open',
+  },
+  'first-community-stadium': {
+    id: 'first-community-stadium',
+    metroId: 'houston',
+    names: [
+      { name: 'Rice Stadium' },
+      { name: 'First Community Stadium', from: '2026-10-03' },
+    ],
+    location: [-95.409324, 29.716323],
+    capacity: [
+      { seats: 47000, setup: 'football', note: 'Official Rice 2020 rental page. Conflict: 37,000 (Stadium Journey). Post-renovation capacity is unknown and not applied. Not Rice–Totten Stadium in Mississippi. Source: https://riceowls.com/sports/2020/6/11/outside-event-facility-rentals.aspx' },
+    ],
+    roof: 'open',
+  },
+  'tudor-fieldhouse': {
+    id: 'tudor-fieldhouse',
+    metroId: 'houston',
+    names: [{ name: 'Tudor Fieldhouse' }],
+    location: [-95.403987, 29.714983],
+    capacity: [
+      { seats: 5208, setup: 'basketball', note: 'Reported, single secondary source, just over 5,000. Source: https://stadiumjourney.com/stadiums/tudor-fieldhouse-s571' },
+    ],
+    roof: 'indoor',
+  },
+  'reckling-park': {
+    id: 'reckling-park',
+    metroId: 'houston',
+    names: [{ name: 'Reckling Park' }],
+    location: [-95.403988, 29.713426],
+    capacity: [
+      { seats: 6193, setup: 'baseball', note: 'Official Rice facility page. Conflict: 7,000 on the 2020 rental page. Includes 3,700+ chairbacks; the rest is general admission. Source: https://riceowls.com/facilities/reckling-park/5' },
+    ],
+    roof: 'open',
+  },
+  'cy-fair-fcu-stadium': {
+    id: 'cy-fair-fcu-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Berry Center stadium' }, { name: 'Cy-Fair FCU Stadium' }],
+    location: [-95.68874, 29.905959],
+    capacity: [
+      { seats: 11000, setup: 'football', note: 'Reported. High-school room with no public ticket feed. Source: https://kiiitv.com/article/sports/high-school/hs-football/texas-high-school-football-stadiums-most-expensive/287-616a4f40-ba9a-4f19-98d9-4585838950d3' },
+    ],
+    roof: 'open',
+  },
+  'berry-center-arena': {
+    id: 'berry-center-arena',
+    metroId: 'houston',
+    names: [{ name: 'Berry Center Arena' }],
+    location: [-95.688464, 29.904942],
+    capacity: [
+      { seats: 9500, setup: 'basketball', note: 'Reported, one secondary source. Verify with Cy-Fair ISD before treating the friction line as settled. Source: https://kiiitv.com/article/sports/high-school/hs-football/texas-high-school-football-stadiums-most-expensive/287-616a4f40-ba9a-4f19-98d9-4585838950d3' },
+    ],
+    roof: 'indoor',
+  },
+  'cynthia-woods-mitchell-pavilion': {
+    id: 'cynthia-woods-mitchell-pavilion',
+    metroId: 'houston',
+    names: [
+      { name: 'Cynthia Woods Mitchell Pavilion' },
+      { name: 'The Cynthia Woods Mitchell Pavilion presented by Huntsman' },
+    ],
+    location: [-95.464202, 30.161401],
+    capacity: [
+      { seats: 16500, setup: 'concert', note: 'Official operator listing: 6,500 covered seats plus about 10,000 lawn. The lawn is GA, not seats. Source: https://blog.ticketmaster.com/venue-faq-cynthia-woods-mitchell-pavilion-woodlands-tx/' },
+    ],
+    roof: 'covered',
+  },
+  'pvamu-panther-stadium': {
+    id: 'pvamu-panther-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Panther Stadium' }, { name: 'Panther Stadium at Blackshear Field' }],
+    location: [-95.994275, 30.091196],
+    capacity: [
+      { seats: 15000, setup: 'football', note: 'Official. Architect says up to 15,510. Edge room in Waller County; crowd is campus-centered. Not Atlanta\'s Panther Stadium. Source: https://pvpanthers.com/facilities/blackshear-field/1' },
+    ],
+    roof: 'open',
+  },
+  'legacy-stadium': {
+    id: 'legacy-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Mike Johnston Field' }, { name: 'Legacy Stadium' }],
+    location: [-95.805478, 29.800052],
+    capacity: [
+      { seats: 12000, setup: 'football', note: 'Reported. Katy ISD room with no public ticket feed. Source: https://www.asumag.com/planning-design/new-construction/article/20855703/katy-texas-district-opens-h' },
+    ],
+    roof: 'open',
+  },
+  'woodforest-bank-stadium': {
+    id: 'woodforest-bank-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Woodforest Bank Stadium' }],
+    location: [-95.446885, 30.185793],
+    capacity: [
+      { seats: 10000, setup: 'football', note: 'Reported. Conroe ISD room with no public ticket feed. Source: https://kiiitv.com/article/sports/high-school/hs-football/texas-high-school-football-stadiums-most-expensive/287-616a4f40-ba9a-4f19-98d9-4585838950d3' },
+    ],
+    roof: 'open',
+  },
+  'tomball-isd-stadium': {
+    id: 'tomball-isd-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Tomball ISD Stadium' }],
+    location: [-95.625704, 30.111654],
+    capacity: [
+      { seats: 10000, setup: 'football', note: 'Reported. No public ticket feed. Source: https://kiiitv.com/article/sports/high-school/hs-football/texas-high-school-football-stadiums-most-expensive/287-616a4f40-ba9a-4f19-98d9-4585838950d3' },
+    ],
+    roof: 'open',
+  },
+  'challenger-columbia-stadium': {
+    id: 'challenger-columbia-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Challenger Columbia Stadium' }],
+    location: [-95.135475, 29.5183],
+    capacity: [
+      { seats: 10000, setup: 'football', note: 'Reported. Clear Creek ISD room with no public ticket feed. Source: https://www.cbssports.com/high-school/football/news/top-10-most-expensive-high-school-football-stadiums-in-texas' },
+    ],
+    roof: 'open',
+  },
+  'planet-ford-stadium': {
+    id: 'planet-ford-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Planet Ford Stadium' }],
+    location: [-95.352316, 30.05841],
+    capacity: [
+      { seats: 8000, setup: 'football', note: 'Reported. Spring ISD room with no public ticket feed. Source: https://www.cbssports.com/high-school/football/news/top-10-most-expensive-high-school-football-stadiums-in-texas' },
+    ],
+    roof: 'open',
+  },
+  'constellation-field': {
+    id: 'constellation-field',
+    metroId: 'houston',
+    names: [{ name: 'Constellation Field' }],
+    location: [-95.64696, 29.62258],
+    capacity: [
+      { seats: 7500, standing: 8606, setup: 'baseball', note: 'Official MLB.com seat count. Reported stated capacity including berm and standing is 8,606. 2025 average attendance was 3,706, which is not the capacity. Source: https://www.mlb.com/news/featured/constellation-field-home-of-the-sugar-land-space-cowboys' },
+      { seats: 9500, setup: 'concert', note: 'Reported. Source: https://www.baseball-reference.com/bullpen/Constellation_Field' },
+    ],
+    roof: 'open',
+  },
+  // Official range is 1,900 to 6,400 by movable walls (ATG). A 3,300 intermediate is reported.
+  // The venue-table answer says not to assume 6,400 when the show's configuration is unpublished, so capacity stays unknown.
+  'smart-financial-centre': {
+    id: 'smart-financial-centre',
+    metroId: 'houston',
+    names: [{ name: 'Smart Financial Centre' }, { name: 'Smart Financial Centre at Sugar Land' }],
+    location: [-95.643362, 29.577051],
+    capacity: [],
+    roof: 'indoor',
+  },
+  'sabercats-stadium': {
+    id: 'sabercats-stadium',
+    metroId: 'houston',
+    names: [
+      { name: 'AVEVA Stadium' },
+      { name: 'SaberCats Stadium' },
+    ],
+    // City note: map apps misplace this at 2055 Mowery Rd. OSM point is Houston Sports Park, 12131 Kirby Dr.
+    location: [-95.395005, 29.638065],
+    capacity: [
+      { seats: 3000, standing: 4000, setup: 'soccer', note: 'Official city page: 3,000+ seats, 4,000 maximum including standing. Anchor tenant left before 2026. Under 5,000. Source: https://houstontx.gov/abouthouston/sabercats-stadium.html' },
+    ],
+    roof: 'open',
+  },
+  'white-oak-music-hall-lawn': {
+    id: 'white-oak-music-hall-lawn',
+    metroId: 'houston',
+    names: [{ name: 'White Oak Music Hall Lawn' }],
+    // Campus point. The lawn and the downstairs room are not separate OSM nodes.
+    location: [-95.366809, 29.785793],
+    capacity: [
+      { seats: 3000, setup: 'concert', note: 'Reported, low-quality secondary, about 3,000. Verify with the venue. Source: https://getmorestreams.com/?p=10491' },
+    ],
+    roof: 'open',
+  },
+  'white-oak-music-hall-downstairs': {
+    id: 'white-oak-music-hall-downstairs',
+    metroId: 'houston',
+    names: [{ name: 'White Oak Music Hall Downstairs' }],
+    location: [-95.366809, 29.785793],
+    capacity: [
+      { seats: 1000, setup: 'concert', note: 'Reported, low-quality secondary, about 1,000. At the pre-list line. Verify with the venue. Source: https://getmorestreams.com/?p=10491' },
+    ],
+    roof: 'indoor',
+  },
+  // No sourced capacity. Research says pre-list it as Texas Southern's 2026 home; ESPN's 2026 schedule still places those home games at Shell Energy Stadium.
+  'ww-thorne-stadium': {
+    id: 'ww-thorne-stadium',
+    metroId: 'houston',
+    names: [{ name: 'W.W. Thorne Stadium' }],
+    location: [-95.359986, 29.933616],
+    capacity: [],
+    roof: 'open',
+  },
+  'sam-houston-race-park': {
+    id: 'sam-houston-race-park',
+    metroId: 'houston',
+    names: [{ name: 'Sam Houston Race Park' }],
+    // OSM commercial-area point. The grandstand itself was not a separate node.
+    location: [-95.530219, 29.930121],
+    capacity: [],
+    roof: 'open',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

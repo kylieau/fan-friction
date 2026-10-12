@@ -13416,6 +13416,215 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "houston",
+    "eventId": "2026-10-15-espn-rockets-401908622",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15890,
+      "low": 15592,
+      "high": 16317
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-17-espn-dynamo-761883",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.1,
+      "friction": "Moderate",
+      "why": "Houston vs. Oklahoma St 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 17849,
+      "low": 17367,
+      "high": 18785
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-17-espn-pvamu-football-401868361",
+    "date": "2026-10-17",
+    "start": "14:00",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.1,
+      "friction": "Heavy",
+      "why": "Houston vs. Oklahoma St and Rice Owls vs. Tulsa 46 mi away, back to back."
+    },
+    "draw": {
+      "count": 9408,
+      "low": 7975,
+      "high": 17957
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-17-espn-rice-football-401862805",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.1,
+      "friction": "Heavy",
+      "why": "Houston vs. Oklahoma St 3.6 mi away, same hours."
+    },
+    "draw": {
+      "count": 16729,
+      "low": 16185,
+      "high": 16796
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-17-espn-uh-football-401856831",
+    "date": "2026-10-17",
+    "start": "18:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.1,
+      "friction": "Moderate",
+      "why": "Rice Owls vs. Tulsa 3.6 mi away, same hours."
+    },
+    "draw": {
+      "count": 32461,
+      "low": 25902,
+      "high": 38955
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-18-espn-dash-401854024",
+    "date": "2026-10-18",
+    "start": "12:00",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 5986,
+      "low": 5434,
+      "high": 6886
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-21-espn-rockets-401909840",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18236,
+      "low": 18236,
+      "high": 18236
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-24-espn-dynamo-761896",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.2,
+      "friction": "Low",
+      "why": "Texas Southern vs. Southern next door, back to back."
+    },
+    "draw": {
+      "count": 17849,
+      "low": 17367,
+      "high": 18785
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-24-espn-texas-southern-football-401868972",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.2,
+      "friction": "Moderate",
+      "why": "95° feels-like at a 2:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 8956,
+      "low": 7000,
+      "high": 10029
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-25-espn-texans-401873016",
+    "date": "2026-10-25",
+    "start": "12:00",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.6,
+      "friction": "Heavy",
+      "why": "95° feels-like at a 12:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 71256,
+      "low": 71237,
+      "high": 71284
+    }
+  },
+  {
+    "metroId": "houston",
+    "eventId": "2026-10-26-espn-rockets-401909874",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:19:42.332Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17947,
+      "low": 16689,
+      "high": 17947
+    }
+  },
+  {
     "metroId": "kansas-city",
     "eventId": "2026-10-17-espn-sporting-kc-761884",
     "date": "2026-10-17",

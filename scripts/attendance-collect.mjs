@@ -14,13 +14,15 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
 const MLB_TEAMS = [
   { teamId: 'red-sox', metroId: 'boston', mlbId: 111, venueId: 'fenway-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'phillies', metroId: 'philadelphia', mlbId: 143, venueId: 'citizens-bank-park', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'astros', metroId: 'houston', mlbId: 117, venueId: 'daikin-park', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'space-cowboys', metroId: 'houston', mlbId: 5434, sportId: 11, venueId: 'constellation-field', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'rays', metroId: 'tampa', mlbId: 139, venueId: 'tropicana-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'columbus-clippers', metroId: 'columbus', mlbId: 445, sportId: 11, venueId: 'huntington-park', seasons: [2023, 2024, 2025, 2026] },
   // Regular-season home games only at Chase Field. 2026 had two "home" games in Mexico City (venue 5340).
@@ -152,6 +154,18 @@ const ESPN_TEAMS = [
   { teamId: 'chiefs', metroId: 'kansas-city', path: 'football/nfl', espnId: '12', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'sporting-kc', metroId: 'kansas-city', path: 'soccer/usa.1', espnId: '186', seasons: [2022, 2023, 2024, 2025] },
   { teamId: 'kc-current', metroId: 'kansas-city', path: 'soccer/usa.nwsl', espnId: '20907', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'texans', metroId: 'houston', path: 'football/nfl', espnId: '34', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'rockets', metroId: 'houston', path: 'basketball/nba', espnId: '10', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'dynamo', metroId: 'houston', path: 'soccer/usa.1', espnId: '6077', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'dash', metroId: 'houston', path: 'soccer/usa.nwsl', espnId: '17346', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'uh-football', metroId: 'houston', path: 'football/college-football', espnId: '248', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'uh-mbb', metroId: 'houston', path: 'basketball/mens-college-basketball', espnId: '248', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uh-wbb', metroId: 'houston', path: 'basketball/womens-college-basketball', espnId: '248', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'rice-football', metroId: 'houston', path: 'football/college-football', espnId: '242', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'rice-mbb', metroId: 'houston', path: 'basketball/mens-college-basketball', espnId: '242', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'rice-wbb', metroId: 'houston', path: 'basketball/womens-college-basketball', espnId: '242', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'texas-southern-football', metroId: 'houston', path: 'football/college-football', espnId: '2640', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'pvamu-football', metroId: 'houston', path: 'football/college-football', espnId: '2504', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -506,6 +520,21 @@ const VENUE_BY_NAME = {
   "children's mercy park": 'sporting-park',
   'sporting park': 'sporting-park',
   'cpkc stadium': 'cpkc-stadium',
+  // Houston, as ESPN writes them (checked Oct 12, 2026). Keep in step with espnSource.ts.
+  'reliant stadium': 'reliant-stadium',
+  'nrg stadium': 'reliant-stadium',
+  'houston stadium': 'reliant-stadium',
+  'toyota center (houston)': 'toyota-center',
+  'shell energy stadium': 'shell-energy-stadium',
+  'bbva stadium': 'shell-energy-stadium',
+  'bbva compass stadium': 'shell-energy-stadium',
+  'tdecu stadium': 'tdecu-stadium',
+  'fertitta center': 'fertitta-center',
+  'hofheinz pavilion': 'fertitta-center',
+  'first community stadium': 'first-community-stadium',
+  'tudor fieldhouse': 'tudor-fieldhouse',
+  'minute maid park': 'daikin-park',
+  'daikin park': 'daikin-park',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -524,6 +553,7 @@ const METRO_VENUE_BY_NAME = {
     'the pavilion': 'university-credit-union-center',
     'pavilion at arc': 'university-credit-union-center',
   },
+  houston: { 'panther stadium': 'pvamu-panther-stadium', 'toyota center': 'toyota-center', 'rice stadium': 'first-community-stadium' },
 };
 
 function venueIdForEspnName(name, metroId) {

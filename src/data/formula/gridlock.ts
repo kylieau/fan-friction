@@ -74,7 +74,10 @@ const SCALE = 7.5;
 // Kansas City is sprawl (research, Oct 12, 2026, docs/research/city-builds/kansas-city/kansas-city-city-type-answer.md):
 // recurring large rooms are mostly estimates at 0.93–0.97 car-involved, and the downtown spine is still about 0.80.
 // No measured recurring mode split, so no venue carShare is wired; the 0.85 fallback stands.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl' };
+// Houston is driving sprawl (research, Oct 12, 2026, docs/research/city-builds/houston/houston-city-type-answer.md):
+// recurring Reliant Park events derive to about 0.90 car-involved and the suburbs estimate 0.96–0.97.
+// No venue carShare is set. None of those figures is a measured mode split. Downtown spill is the contrary case for hub.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -204,6 +207,27 @@ const ZONE_NAMES: Record<string, string> = {
   'legends-field': 'Village West',
   'hy-vee-arena': 'West Bottoms',
   'hale-arena': 'West Bottoms',
+  // Houston clusters that share approaches (research city-type §7). Zone membership is still the 2 km rule.
+  'reliant-stadium': 'Reliant Park',
+  'reliant-arena': 'Reliant Park',
+  'reliant-arena-pavilion': 'Reliant Park',
+  'daikin-park': 'Downtown / EaDo',
+  'toyota-center': 'Downtown / EaDo',
+  'shell-energy-stadium': 'Downtown / EaDo',
+  '713-music-hall': 'Downtown / EaDo',
+  'jones-hall': 'Downtown / EaDo',
+  'sarofim-hall': 'Downtown / EaDo',
+  'wortham-brown-theater': 'Downtown / EaDo',
+  'wortham-cullen-theater': 'Downtown / EaDo',
+  'tdecu-stadium': 'University of Houston',
+  'fertitta-center': 'University of Houston',
+  'schroeder-park': 'University of Houston',
+  'cougar-softball-stadium': 'University of Houston',
+  'first-community-stadium': 'Rice University',
+  'tudor-fieldhouse': 'Rice University',
+  'reckling-park': 'Rice University',
+  'cy-fair-fcu-stadium': 'Berry Center',
+  'berry-center-arena': 'Berry Center',
 };
 
 export interface Zone {

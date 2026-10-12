@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -218,6 +218,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-94.62, 39.08],
     zoom: 9.4,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/houston/). Harris, Fort Bend and Montgomery counties,
+  // plus Prairie View as an edge room. One frame holds downtown, EaDo, Reliant Park, UH and Rice;
+  // The Woodlands, Sugar Land and Prairie View sit off the first view.
+  houston: {
+    id: 'houston', code: 'HOU',
+    name: 'Houston',
+    timeZone: 'America/Chicago',
+    center: [-95.39, 29.73],
+    zoom: 10.6,
   },
 };
 
