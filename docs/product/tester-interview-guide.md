@@ -3,10 +3,10 @@
 For Kylie, in person or on a call, about 20–30 minutes, with the tester's phone and the app open. The paste-into-Claude version is `docs/product/tester-brief.md`; this is the same interview for when a tester would rather just talk. A tester's own setup (their nights, what's left out, any open items) lives in `private/testers/<name>/` and never in the repo.
 
 ## Before the interview
-- [ ] The tester's nights are in their account (You tab shows them).
-- [ ] The reads show on their nights in covered cities. Open one yourself first.
-- [ ] Any games you left out on purpose: they've logged them with **Log an event** (the + on You), or plan to during the interview.
-- [ ] You've picked 2–3 of their nights to compare (one busy, one quiet, if the log has both). **Don't look up the app's read for them in front of the tester.**
+- [ ] The tester's events are in their account (the Stubs tab shows them).
+- [ ] The reads show on their events in covered cities. Open one yourself first.
+- [ ] Any games you left out on purpose: they've logged them with **+ Stub it** (the button on Stubs, or on the event), or plan to during the interview.
+- [ ] You've picked 2–3 of their events to compare (one busy, one quiet, if the log has both). **Don't look up the app's read for them in front of the tester.**
 - [ ] Something to take notes on. Write their words, not your summary.
 
 ## Ground rules (you know the formula; they don't)
@@ -19,19 +19,19 @@ For Kylie, in person or on a call, about 20–30 minutes, with the tester's phon
 
 ## The interview
 
-**1. Their nights (5 min)**
-- "Open the You tab. Do these look like your nights?"
+**1. Their events (5 min)**
+- "Open the Stubs tab. Do these look like your events?"
 - "Anything missing, wrong, or named the way you wouldn't say it?" (titles, venues, dates, who they were rooting for)
-- "Anything you'd want to see on a night that isn't there?"
+- "Anything you'd want to see on an event that isn't there?"
 
 **2. Logging (5 min)**
-- "Log an event you went to that isn't here." Watch; don't help unless they're stuck for more than a minute. Note where they hesitate (the form asks what, when, city and where first; the rest is optional).
+- "Add an event you went to that isn't here." Watch; don't help unless they're stuck for more than a minute. Note where they hesitate (**+ Stub it** on Stubs opens search; a listed event opens its date, where each row has its own + Stub it; anything else is typed in, what, when, city and where first, the rest optional).
 - "Would you bother doing that after a game? What would make you, or stop you?"
 
-**3. Their read vs. the app's (10 min).** For each of the 2–3 nights you picked:
-1. Before they open it: "Thinking back, how hard was that night? Getting there, the crowds, other stuff going on, the heat. Anything." Write their words.
+**3. Their read vs. the app's (10 min).** For each of the 2–3 events you picked:
+1. Before they open it: "Thinking back, how hard was that day? Getting there, the crowds, other stuff going on, the heat. Anything." Write their words.
 2. "If you had to put it on a scale: Chill, Mild, Spicy, Brutal, Cooked, and 1 to 10?" (Show the five words on paper if it helps; don't explain them.)
-3. Now: "Open that night." Let them read it.
+3. Now: "Open that event." Let them read it.
 4. "Does that match? What's it counting that you weren't, or the other way round?" Write down both what they were counting (the game, the drive, parking, crowds, weather, mood) and what the app's reason says.
 
 **4. Looking ahead (3 min)**
@@ -46,7 +46,7 @@ For Kylie, in person or on a call, about 20–30 minutes, with the tester's phon
 - "What one thing would change your answer?"
 
 ## Notes sheet
-| Night | Their words | Their word + number | App's word + number | What they counted | What the app's reason said |
+| Event | Their words | Their word + number | App's word + number | What they counted | What the app's reason said |
 |---|---|---|---|---|---|
 | | | | | | |
 | | | | | | |
