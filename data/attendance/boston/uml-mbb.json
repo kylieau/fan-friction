@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "uml-mbb",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "uml-mbb",
+      "season": 2023,
+      "date": "2022-11-19",
+      "start": "17:00",
+      "opponent": "Emerson",
+      "venueId": "tsongas-center",
+      "attendance": 547,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-mbb",
+      "season": 2023,
+      "date": "2022-11-27",
+      "start": "13:00",
+      "opponent": "Stonehill",
+      "venueId": "tsongas-center",
+      "attendance": 410,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-mbb",
+      "season": 2023,
+      "date": "2022-12-10",
+      "start": "17:00",
+      "opponent": "St Francis BK",
+      "venueId": "tsongas-center",
+      "attendance": 2025,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-mbb",
+      "season": 2023,
+      "date": "2023-01-18",
+      "start": "18:00",
+      "opponent": "UMBC",
+      "venueId": "tsongas-center",
+      "attendance": 641,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-mbb",
+      "season": 2023,
+      "date": "2023-01-22",
+      "start": "13:00",
+      "opponent": "Bryant",
+      "venueId": "tsongas-center",
+      "attendance": 850,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-mbb",
+      "season": 2023,
+      "date": "2023-02-25",
+      "start": "17:00",
+      "opponent": "New Hampshire",
+      "venueId": "tsongas-center",
+      "attendance": 4114,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-mbb",
+      "season": 2024,
+      "date": "2024-02-03",
+      "start": "17:00",
+      "opponent": "New Hampshire",
+      "venueId": "tsongas-center",
+      "attendance": 3583,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

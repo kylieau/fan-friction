@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "harvard-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "harvard-football",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:00",
+      "opponent": "Merrimack",
+      "venueId": "harvard-stadium",
+      "attendance": 10946,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:00",
+      "opponent": "Holy Cross",
+      "venueId": "harvard-stadium",
+      "attendance": 7726,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2022,
+      "date": "2022-10-21",
+      "start": "19:00",
+      "opponent": "Princeton",
+      "venueId": "harvard-stadium",
+      "attendance": 10793,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "13:00",
+      "opponent": "Columbia",
+      "venueId": "harvard-stadium",
+      "attendance": 13972,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2022,
+      "date": "2022-11-19",
+      "start": "12:00",
+      "opponent": "Yale",
+      "venueId": "harvard-stadium",
+      "attendance": 30006,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "13:00",
+      "opponent": "St Thomas (MN)",
+      "venueId": "harvard-stadium",
+      "attendance": 6217,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:00",
+      "opponent": "Brown",
+      "venueId": "harvard-stadium",
+      "attendance": 15838,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2023,
+      "date": "2023-10-06",
+      "start": "19:00",
+      "opponent": "Cornell",
+      "venueId": "harvard-stadium",
+      "attendance": 10050,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "13:00",
+      "opponent": "Howard",
+      "venueId": "harvard-stadium",
+      "attendance": 7678,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "16:00",
+      "opponent": "Dartmouth",
+      "venueId": "harvard-stadium",
+      "attendance": 22515,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "13:00",
+      "opponent": "Penn",
+      "venueId": "harvard-stadium",
+      "attendance": 7032,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "12:00",
+      "opponent": "Stetson",
+      "venueId": "harvard-stadium",
+      "attendance": 4488,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2024,
+      "date": "2024-10-04",
+      "start": "19:00",
+      "opponent": "New Hampshire",
+      "venueId": "harvard-stadium",
+      "attendance": 8676,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "12:00",
+      "opponent": "Holy Cross",
+      "venueId": "harvard-stadium",
+      "attendance": 6950,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "15:00",
+      "opponent": "Princeton",
+      "venueId": "harvard-stadium",
+      "attendance": 12244,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "12:00",
+      "opponent": "Columbia",
+      "venueId": "harvard-stadium",
+      "attendance": 7011,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "12:00",
+      "opponent": "Yale",
+      "venueId": "harvard-stadium",
+      "attendance": 27105,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "18:00",
+      "opponent": "Brown",
+      "venueId": "harvard-stadium",
+      "attendance": 16283,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2025,
+      "date": "2025-10-10",
+      "start": "19:00",
+      "opponent": "Cornell",
+      "venueId": "harvard-stadium",
+      "attendance": 6644,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "12:00",
+      "opponent": "Merrimack",
+      "venueId": "harvard-stadium",
+      "attendance": 5661,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "15:00",
+      "opponent": "Dartmouth",
+      "venueId": "harvard-stadium",
+      "attendance": 11334,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "12:00",
+      "opponent": "Penn",
+      "venueId": "harvard-stadium",
+      "attendance": 8256,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "harvard-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "19:00",
+      "opponent": "Colgate",
+      "venueId": "harvard-stadium",
+      "attendance": 9100,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

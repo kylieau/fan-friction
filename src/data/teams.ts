@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|lake country|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|lake country|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -56,6 +56,24 @@ const LIST: Team[] = [
   team("uwm-volleyball", "Milwaukee Panthers Women's Volleyball", "Milwaukee VB", "College volleyball", "volleyball", "milwaukee", "UWM"),
   team("milwaukee-torrent-men", "Milwaukee Torrent Men", "Torrent Men", "NPSL", "soccer", "milwaukee", "MIL"),
   team("milwaukee-torrent-women", "Milwaukee Torrent Women", "Torrent Women", "WPSL", "soccer", "milwaukee", "MIL"),
+  // Boston (Oct 12, 2026; docs/research/city-builds/boston/). Legacy home rooms change by season; Cannons/Guard are tour weekends.
+  team("red-sox", "Boston Red Sox", "Red Sox", "MLB", "baseball", "boston", "BOS"),
+  team("celtics", "Boston Celtics", "Celtics", "NBA", "basketball", "boston", "BOS"),
+  team("bruins", "Boston Bruins", "Bruins", "NHL", "hockey", "boston", "BOS"),
+  team("patriots", "New England Patriots", "Patriots", "NFL", "football", "boston", "NE"),
+  team("revolution", "New England Revolution", "Revolution", "MLS", "soccer", "boston", "NE"),
+  team("boston-legacy-fc", "Boston Legacy FC", "Legacy FC", "NWSL", "soccer", "boston", "LEG"),
+  team("boston-fleet", "Boston Fleet", "Fleet", "PWHL", "hockey", "boston", "BOS"),
+  team("bc-football", "Boston College Eagles Football", "BC Football", "College football", "football", "boston", "BC"),
+  team("bc-mbb", "Boston College Eagles Men's Basketball", "BC MBB", "College men's basketball", "basketball", "boston", "BC"),
+  team("bc-wbb", "Boston College Eagles Women's Basketball", "BC WBB", "College women's basketball", "basketball", "boston", "BC"),
+  team("bu-mbb", "Boston University Terriers Men's Basketball", "BU MBB", "College men's basketball", "basketball", "boston", "BU"),
+  team("bu-wbb", "Boston University Terriers Women's Basketball", "BU WBB", "College women's basketball", "basketball", "boston", "BU"),
+  team("harvard-football", "Harvard Crimson Football", "Harvard Football", "College football", "football", "boston", "HAR"),
+  team("uml-mbb", "UMass Lowell River Hawks Men's Basketball", "UML MBB", "College men's basketball", "basketball", "boston", "UML"),
+  team("uml-wbb", "UMass Lowell River Hawks Women's Basketball", "UML WBB", "College women's basketball", "basketball", "boston", "UML"),
+  team("boston-cannons", "Boston Cannons", "Cannons", "PLL", "lacrosse", "boston", "CAN"),
+  team("northeastern-mbb", "Northeastern Huskies Men's Basketball", "Northeastern MBB", "College men's basketball", "basketball", "boston", "NEU"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

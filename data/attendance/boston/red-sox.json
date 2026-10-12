@@ -1,0 +1,7260 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "red-sox",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "14:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 36266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "16:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 34990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "13:35",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 28858,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-18",
+      "start": "11:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 32514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 31640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 33354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-04-21",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 35792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 29793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 27679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-05",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 29476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 30944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "16:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 33026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": "11:35",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 28602,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-16",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 29706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 27328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 31717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-19",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 29783,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 30842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "16:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 34832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 33896,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 29251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "12:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 26912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "18:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 28491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 35715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 24809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 28577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 30219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 32617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 31877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 30779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 35251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 36141,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 35989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-20",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 34811,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 29168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 35180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 36473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 31113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 33735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "19:08",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 37291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 36796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 35821,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 34404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 32529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 32483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 32919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-28",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 32122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:10",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 34193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "16:10",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 35867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 35231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 34972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 35406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 33927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "19:08",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 30963,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 31840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 30527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 30095,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 34036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 29116,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 31340,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 31628,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "16:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 31474,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:35",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 32422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 34250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 33181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 34925,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:35",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 31199,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-26",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 25634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 30765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 33073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-09-29",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 29779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-10-03",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 26633,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-10-04",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 26477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2022,
+      "date": "2022-10-05",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 26695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-03-30",
+      "start": "14:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 36049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 29062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 27886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-03",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "fenway-park",
+      "attendance": 28369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-04",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "fenway-park",
+      "attendance": 28842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-05",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "fenway-park",
+      "attendance": 24477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 36680,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "16:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 36594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 34790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-17",
+      "start": "11:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 34942,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 28132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 30027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "13:35",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 34427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 30578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "16:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 31717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 29395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-01",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 27438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 27721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 27963,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "18:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 30173,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 34553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "16:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 35935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 27732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-15",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 31744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 31476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 32209,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 31642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 32593,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 31204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 30860,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 31303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 30784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 34192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-05",
+      "start": "16:05",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 30860,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-12",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "fenway-park",
+      "attendance": 32227,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "fenway-park",
+      "attendance": 31400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "fenway-park",
+      "attendance": 31977,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 37086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "fenway-park",
+      "attendance": 35327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "fenway-park",
+      "attendance": 34261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "18:10",
+      "opponent": "Marlins",
+      "venueId": "fenway-park",
+      "attendance": 36559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "13:35",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 36136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 31568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 33847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 31157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "16:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 34087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 35460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 37035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "14:10",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 37035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 36505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 35619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 36663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 37457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 36376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 36732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 36162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-07",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 32732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 30997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 35495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 31952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 32647,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "16:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 35927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "12:05",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 35145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "fenway-park",
+      "attendance": 35653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "16:10",
+      "opponent": "Dodgers",
+      "venueId": "fenway-park",
+      "attendance": 35986,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "fenway-park",
+      "attendance": 33954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 33771,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 30267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "16:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 31045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 33852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 34615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 31295,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 30029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 30029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 30392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 30228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 30228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 35507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 37102,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "16:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 33392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:35",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 33399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 34094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 34559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "14:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 36093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 27936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 26230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 26106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "16:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 31878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 30792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "11:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 33008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 30133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 32024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 35494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "fenway-park",
+      "attendance": 31801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "16:10",
+      "opponent": "Cubs",
+      "venueId": "fenway-park",
+      "attendance": 35169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "fenway-park",
+      "attendance": 32052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "fenway-park",
+      "attendance": 30027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "fenway-park",
+      "attendance": 30787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "13:35",
+      "opponent": "Giants",
+      "venueId": "fenway-park",
+      "attendance": 30065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "fenway-park",
+      "attendance": 31313,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "fenway-park",
+      "attendance": 30995,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "fenway-park",
+      "attendance": 29250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 28663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 32893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 30016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 31704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "19:10",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 30992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "16:10",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 34822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 34078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 31077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 31231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "16:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 33806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:35",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 34662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 34628,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 33760,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "fenway-park",
+      "attendance": 35004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "fenway-park",
+      "attendance": 33236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "fenway-park",
+      "attendance": 34007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "18:30",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 35024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 35856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 34546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 34756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "fenway-park",
+      "attendance": 33540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "16:10",
+      "opponent": "Padres",
+      "venueId": "fenway-park",
+      "attendance": 33003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:35",
+      "opponent": "Padres",
+      "venueId": "fenway-park",
+      "attendance": 30665,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 31826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 32935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 33512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 34894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 32378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:35",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 35351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36410,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-29",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 35007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 36592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "16:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 34643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 32898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "16:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 35443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 31762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-12",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 35715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 34522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 35366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "fenway-park",
+      "attendance": 32016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "16:10",
+      "opponent": "D-backs",
+      "venueId": "fenway-park",
+      "attendance": 35528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "fenway-park",
+      "attendance": 31453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-26",
+      "start": "14:05",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 34756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-26",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 29097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 29634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 32809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 31712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 32625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 31691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:35",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 29110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-09",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 30600,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 30898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 32448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-20",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 33052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "16:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 31941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "12:35",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 32307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "17:35",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 31941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 33694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 35333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "15:05",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 34862,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "14:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 36462,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "16:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 31495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 31495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "fenway-park",
+      "attendance": 28276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "A MINECRAFT MOVIE Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Next Up: Red Sox Prospects T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 25788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Duran All-Star Game MVP Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 25575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 29441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bruins Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 25128,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 35620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Grateful Dead 60th Anniversary"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "16:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 36559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:35",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 32632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "On-Field Photo Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-21",
+      "start": "11:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 34721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Patriots' Day Puffy Vest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 33027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 31904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kristian Campbell \"Rookie Tee\" T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 35655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wally or Tessie Squishy Pillow"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 35914,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "AAPI Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "16:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 36250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:35",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 33539,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:45",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 29858,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Rafaela CF or SS Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Country Music Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "18:45",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 31437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "13:35",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 27800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 34648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 34594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 35012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-19",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 33548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 33208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "fenway-park",
+      "attendance": 31661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 31150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 31150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 30958,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "13:05",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 30958,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "18:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 34604,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 36824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Charm Hat with City Connect Charms"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-02",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 31688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Marcelo Mayer \"Rookie Tee\" T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 33003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Disability Pride Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 33073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-09",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 31422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 31917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Greek American Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 36003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Beach Towel"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Polish Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 35719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 34927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 35214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "On-Field Photo Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-06-30",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 35691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Roman Anthony \"Rookie Tee\" T-shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Superman™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 32355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Resumption of Suspended Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "14:30",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 32355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Resumption of Suspended Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "fenway-park",
+      "attendance": 35845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1975 Replica Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "1975 AL Championship Ring"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Roman Anthony \"Rookie Tee\" T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-07",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "fenway-park",
+      "attendance": 32441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Nigerian Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "fenway-park",
+      "attendance": 30169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "India Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "fenway-park",
+      "attendance": 31691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 31884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Black & African American Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 35452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dropkick Murphys Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 36453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 36497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "fenway-park",
+      "attendance": 36369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "fenway-park",
+      "attendance": 36687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "fenway-park",
+      "attendance": 35465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 36881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bravo Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "16:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 36215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "11:35",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 36081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Boston Common Golf"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-04",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 37585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dominican Republic Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 37013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 37012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Native American & American Indian Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "fenway-park",
+      "attendance": 36854,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Big Al's Block Party - Jersey Collab Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "16:10",
+      "opponent": "Marlins",
+      "venueId": "fenway-park",
+      "attendance": 36192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Sling Bag"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Make-A-Wish Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "fenway-park",
+      "attendance": 35931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "On-Field Photo Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Irish Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 36961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 37435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "fenway-park",
+      "attendance": 36344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pokémon GO Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Brazilian Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "16:10",
+      "opponent": "Pirates",
+      "venueId": "fenway-park",
+      "attendance": 36391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Cabo Verde Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "fenway-park",
+      "attendance": 36583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 36021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Garrett Crochet City Connect Pennant"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 34902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 36658,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36760,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "16:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36315,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 35437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 35886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 36404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 32838,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 37052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "16:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 36478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "IT: Welcome to Derry Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hispanic Heritage Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "15:05",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 35503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "14:10",
+      "opponent": "Padres",
+      "venueId": "fenway-park",
+      "attendance": 36233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "16:10",
+      "opponent": "Padres",
+      "venueId": "fenway-park",
+      "attendance": 36405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:35",
+      "opponent": "Padres",
+      "venueId": "fenway-park",
+      "attendance": 29240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-06",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 35107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Roman Anthony Rookie Card Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 33193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "fenway-park",
+      "attendance": 28660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "19:15",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 34866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bravo Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "16:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 36527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Diary of a Wimpy Kid Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "16:35",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 34650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-20",
+      "start": "11:10",
+      "opponent": "Tigers",
+      "venueId": "fenway-park",
+      "attendance": 34880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Patriots' Day Windbreaker"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 34391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 34049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 34630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "AAPI Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "16:10",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 34158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "fenway-park",
+      "attendance": 35406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 33961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Garrett Crochet Jersey Variant Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Country Music Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Support Mental Health Awareness & Initiatives"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 35052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Support Mental Health Awareness & Initiatives"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 36774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 33489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Moms and Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Support Mental Health Awareness & Initiatives"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "fenway-park",
+      "attendance": 36795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "fenway-park",
+      "attendance": 35451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "fenway-park",
+      "attendance": 31046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "The Housemaid Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "The Housemaid Night - VIP Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 34740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Roger Clemens 20-Strikeout Double Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Haitian Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "16:10",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 37105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Survivor 50th Season Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:35",
+      "opponent": "Twins",
+      "venueId": "fenway-park",
+      "attendance": 31050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Red Sox Camo Jersey Special Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 34126,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Disability Pride Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 34093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "16:10",
+      "opponent": "Braves",
+      "venueId": "fenway-park",
+      "attendance": 30901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Red Sox X Dunkin' Iced Coffee Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 35004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Greek American Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 36872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 33180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 33919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Red Sox Soccer Scarf"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "16:10",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 34556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Dog Bag Special Ticket Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "19:20",
+      "opponent": "Rangers",
+      "venueId": "fenway-park",
+      "attendance": 32006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Dog Bag Special Ticket Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 32392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 35817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "John Williams Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 32027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 33353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 36026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "VIP Packages Available"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "19:20",
+      "opponent": "Yankees",
+      "venueId": "fenway-park",
+      "attendance": 34573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "German Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "fenway-park",
+      "attendance": 32000,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "fenway-park",
+      "attendance": 33669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "fenway-park",
+      "attendance": 32574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Red Sox USA Soccer Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 36774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 34255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 33077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "fenway-park",
+      "attendance": 32950,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "On-Field Photo Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 37659,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 35039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 35039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "fenway-park",
+      "attendance": 38005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Venezuelan Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "19:15",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 37405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 36902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "VIP Packages Available"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "fenway-park",
+      "attendance": 36795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 37669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dominican Republic Celebration"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Dominican Republic Celebration - VIP Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 37517,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "fenway-park",
+      "attendance": 37082,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 37227,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "16:10",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 36696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "fenway-park",
+      "attendance": 36817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-17",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "fenway-park",
+      "attendance": 36511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "The Original Viral Mystery Squishy Dumpling Ticket Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "fenway-park",
+      "attendance": 36592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Yacht Rock Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "The Original Viral Mystery Squishy Dumpling Ticket Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "16:10",
+      "opponent": "D-backs",
+      "venueId": "fenway-park",
+      "attendance": 36540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wally or Tessie Shoulder Pal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Native American & American Indian Celebration"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "The Original Viral Mystery Squishy Dumpling Ticket Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "fenway-park",
+      "attendance": 37007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mel Robbins presents 'Let Them' Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "19:15",
+      "opponent": "Giants",
+      "venueId": "fenway-park",
+      "attendance": 36478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "VIP Packages Available"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "15:15",
+      "opponent": "Giants",
+      "venueId": "fenway-park",
+      "attendance": 36278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 37487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 35758,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Baseball Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "16:10",
+      "opponent": "Mariners",
+      "venueId": "fenway-park",
+      "attendance": 33922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 36787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "David Ortiz Football Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "KPop Demon Hunters Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:45",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 36028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Section 10 Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "'Tini Hat Ticket Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:45",
+      "opponent": "Angels",
+      "venueId": "fenway-park",
+      "attendance": 35428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "'Tini Hat Ticket Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 36890,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 36877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "15:05",
+      "opponent": "Royals",
+      "venueId": "fenway-park",
+      "attendance": 34966,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Nigerian Celebration"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Boston Common Golf"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 37416,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 36360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-24",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "fenway-park",
+      "attendance": 36711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "fenway-park",
+      "attendance": 33506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Iron Flame Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "17:35",
+      "opponent": "Cubs",
+      "venueId": "fenway-park",
+      "attendance": 36449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Reusable Tote Bag"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "red-sox",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "15:05",
+      "opponent": "Cubs",
+      "venueId": "fenway-park",
+      "attendance": 20411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game to be played at Tropicana Field in St. Petersburg, FL"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

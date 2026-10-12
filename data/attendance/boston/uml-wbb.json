@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "uml-wbb",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "uml-wbb",
+      "season": 2023,
+      "date": "2022-11-16",
+      "start": "19:00",
+      "opponent": "Boston U",
+      "venueId": "tsongas-center",
+      "attendance": 582,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-wbb",
+      "season": 2023,
+      "date": "2022-11-19",
+      "start": "14:00",
+      "opponent": "Brown",
+      "venueId": "tsongas-center",
+      "attendance": 252,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-wbb",
+      "season": 2023,
+      "date": "2023-01-14",
+      "start": "13:00",
+      "opponent": "Binghamton",
+      "venueId": "tsongas-center",
+      "attendance": 275,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-wbb",
+      "season": 2023,
+      "date": "2023-01-25",
+      "start": "11:00",
+      "opponent": "Maine",
+      "venueId": "tsongas-center",
+      "attendance": 3247,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-wbb",
+      "season": 2023,
+      "date": "2023-01-28",
+      "start": "17:00",
+      "opponent": "New Hampshire",
+      "venueId": "tsongas-center",
+      "attendance": 1241,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uml-wbb",
+      "season": 2023,
+      "date": "2023-02-22",
+      "start": "19:00",
+      "opponent": "UMBC",
+      "venueId": "tsongas-center",
+      "attendance": 470,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

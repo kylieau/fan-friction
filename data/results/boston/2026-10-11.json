@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-patriots-401872986",
+      "metroId": "boston",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gillette-stadium",
+      "homeTeamId": "patriots",
+      "home": {
+        "name": "Patriots",
+        "score": 45
+      },
+      "away": {
+        "name": "Raiders",
+        "score": 17
+      },
+      "attendance": 64628,
+      "capturedAt": "2026-10-12T06:27:56.243Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

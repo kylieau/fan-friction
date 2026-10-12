@@ -404,6 +404,96 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:23"
   },
   {
+    "eventId": "2026-10-10-espn-bruins-401892469",
+    "metroId": "boston",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "td-garden",
+    "homeTeamId": "bruins",
+    "home": {
+      "name": "Bruins",
+      "score": 5
+    },
+    "away": {
+      "name": "Flyers",
+      "score": 1
+    },
+    "attendance": 17850,
+    "capturedAt": "2026-10-12T06:27:56.243Z",
+    "duration": {
+      "minutes": 143,
+      "kind": "estimated"
+    },
+    "startedAt": "13:08"
+  },
+  {
+    "eventId": "2026-10-10-espn-celtics-401898398",
+    "metroId": "boston",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "td-garden",
+    "homeTeamId": "celtics",
+    "home": {
+      "name": "Celtics",
+      "score": 144
+    },
+    "away": {
+      "name": "76ers",
+      "score": 106
+    },
+    "attendance": 19156,
+    "capturedAt": "2026-10-12T06:27:56.243Z",
+    "duration": {
+      "minutes": 159,
+      "kind": "estimated"
+    },
+    "startedAt": "18:51"
+  },
+  {
+    "eventId": "2026-10-10-espn-revolution-761851",
+    "metroId": "boston",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "gillette-stadium",
+    "homeTeamId": "revolution",
+    "home": {
+      "name": "Revolution",
+      "score": 0
+    },
+    "away": {
+      "name": "Sounders",
+      "score": 3
+    },
+    "capturedAt": "2026-10-12T06:27:56.243Z"
+  },
+  {
+    "eventId": "2026-10-11-espn-patriots-401872986",
+    "metroId": "boston",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "gillette-stadium",
+    "homeTeamId": "patriots",
+    "home": {
+      "name": "Patriots",
+      "score": 45
+    },
+    "away": {
+      "name": "Raiders",
+      "score": 17
+    },
+    "attendance": 64628,
+    "capturedAt": "2026-10-12T06:27:56.243Z",
+    "duration": {
+      "minutes": 182,
+      "kind": "estimated"
+    },
+    "startedAt": "13:03"
+  },
+  {
     "eventId": "2026-10-04-espn-bears-401872972",
     "metroId": "chicago",
     "date": "2026-10-04",

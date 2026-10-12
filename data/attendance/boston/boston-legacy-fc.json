@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "boston-legacy-fc",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "12:30",
+      "opponent": "Gotham",
+      "venueId": "gillette-stadium",
+      "attendance": 30207,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "12:00",
+      "opponent": "Utah",
+      "venueId": "gillette-stadium",
+      "attendance": 10012,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "19:00",
+      "opponent": "San Diego",
+      "venueId": "gillette-stadium",
+      "attendance": 10213,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "19:00",
+      "opponent": "North Carolina",
+      "venueId": "gillette-stadium",
+      "attendance": 3804,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "15:00",
+      "opponent": "Denver",
+      "venueId": "gillette-stadium",
+      "attendance": 12524,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "19:00",
+      "opponent": "Orlando",
+      "venueId": "gillette-stadium",
+      "attendance": 8182,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "boston-legacy-fc",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "20:00",
+      "opponent": "Angel City",
+      "venueId": "gillette-stadium",
+      "attendance": 9681,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

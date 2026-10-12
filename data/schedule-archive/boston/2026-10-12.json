@@ -1,0 +1,574 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "metroName": "Boston",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T06:27:57.880Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 11
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-14-espn-celtics-401898405",
+      "metroId": "boston",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Hornets",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "hornets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 5 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-boston-legacy-fc-401854091",
+      "metroId": "boston",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Legacy FC vs. Louisville",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "boston-legacy-fc",
+        "away": "louisville"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9847,
+        "low": 8557,
+        "high": 10163,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 6 games, 2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-bc-football-401858267",
+      "metroId": "boston",
+      "date": "2026-10-17",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Boston College vs. Pitt",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "alumni-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "bc-football",
+        "away": "pitt"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 33274,
+        "low": 32413,
+        "high": 34705,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-harvard-football-401867841",
+      "metroId": "boston",
+      "date": "2026-10-17",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Harvard vs. Holy Cross",
+      "place": {
+        "type": "venue",
+        "venueId": "harvard-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "harvard-football",
+        "away": "holy-cross"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7678,
+        "low": 6950,
+        "high": 12244,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-revolution-761879",
+      "metroId": "boston",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Revolution vs. Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "revolution",
+        "away": "chicago"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21037,
+        "low": 18203,
+        "high": 24718,
+        "fromCrowds": true,
+        "games": 26,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 26 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-patriots-401873001",
+      "metroId": "boston",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Patriots vs. Jets",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "patriots",
+        "away": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 64628,
+        "low": 64628,
+        "high": 64628,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-bruins-401892552",
+      "metroId": "boston",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Predators",
+      "broadcast": "NESN",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-celtics-401909095",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Celtics vs. Knicks",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "knicks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-harvard-football-401867842",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Harvard vs. Princeton",
+      "place": {
+        "type": "venue",
+        "venueId": "harvard-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "harvard-football",
+        "away": "princeton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7678,
+        "low": 6950,
+        "high": 12244,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-bruins-401892568",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-celtics-401909870",
+      "metroId": "boston",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 38,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 38 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-14-espn-celtics-401898405",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-boston-legacy-fc-401854091",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9847,
+        "low": 8557,
+        "high": 10163
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-bc-football-401858267",
+      "date": "2026-10-17",
+      "start": "12:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Harvard vs. Holy Cross 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33274,
+        "low": 32413,
+        "high": 34705
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-harvard-football-401867841",
+      "date": "2026-10-17",
+      "start": "13:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Boston College vs. Pitt 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7678,
+        "low": 6950,
+        "high": 12244
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-revolution-761879",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21037,
+        "low": 18203,
+        "high": 24718
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-patriots-401873001",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 64628,
+        "low": 64628,
+        "high": 64628
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-bruins-401892552",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-celtics-401909095",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-harvard-football-401867842",
+      "date": "2026-10-24",
+      "start": "15:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Bruins vs. Sharks 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7678,
+        "low": 6950,
+        "high": 12244
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-bruins-401892568",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Harvard vs. Princeton 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-celtics-401909870",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    }
+  ]
+}

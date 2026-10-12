@@ -73,6 +73,10 @@ Each entry: the decision, why, and what was rejected. Where no reason was record
 
 Kylie approved execution of the five-point proposal in `../research/city-builds/milwaukee/milwaukee-research-comparison.md`: Milwaukee, Waukesha, Ozaukee and Washington counties; verified active public rooms around 1,000+ from both answers; provisional driving city type with no unsupported venue overrides; existing supported feeds and properly sourced event-specific listings; the existing new-city checklist. Racine/Kenosha and Alpine Valley stay outside this initial addition. No formula changes. Original model answers stay separate.
 
+## Boston addition (research build, Oct 12, 2026)
+
+Built from `../research/city-builds/boston/boston-city-type-answer.md` and `boston-venue-table-answer.md` following the Milwaukee checklist pattern: `boston` on `COVERED_METRO_IDS`, 20 verified active rooms, 15 team records, historical attendance and nightly data paths, hub city type with three documented car-share overrides. No formula constant changes. UI and account migrations untouched. Kylie has not yet signed off on this scope the way she did Milwaukee (K14); the [implementation register](../research/city-builds/boston/boston-implementation-register.md) lists gaps for her review.
+
 ## Product psychology rules
 One gold primary button per screen with a plain verb. Default to Today. _(The three-tip first-run guide was removed Oct 9, 2026.)_ Always label scores (no bare numbers). End the event screen on a shareable card. Curiosity-gap copy. Don't make the user think.
 
