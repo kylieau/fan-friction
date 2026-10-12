@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { ACTIVITY_WORDS, activityOrder, placeClause, type ActivityGroups, type ActivityKind } from '../lib/activity';
 import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
 
@@ -35,7 +36,7 @@ export function ActivityLines({ groups }: { groups: ActivityGroups }) {
  * Your own answer as one line (build notes 3, 4.4 and 4.7): "[ticket] Attending", "[TV] Watching · [lock] Private",
  * "[TV] Watched · [people] Friends · Home". A private watch never names its place (8.1, item 14).
  */
-export function StatusLine({ kind, share, place, crowd }: { kind: ActivityKind; share?: 'private' | 'friends'; place?: string; crowd?: string }) {
+export function StatusLine({ kind, share, place, crowd }: { kind: ActivityKind; share?: 'private' | 'friends'; place?: string; crowd?: ReactNode }) {
   const watch = kind === 'watching' || kind === 'watched';
   return (
     <span className={`status-line status-${kind}`}>

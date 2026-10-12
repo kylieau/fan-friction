@@ -2842,6 +2842,159 @@ button {
   text-underline-offset: 2px;
 }
 
+/* ---------- Stubs (build notes 3, 4.4) ---------- */
+
+.stubs-page {
+  position: relative;
+}
+
+/* Room under the list so the floating button never covers a read box. */
+.stubs-list {
+  padding-bottom: 70px;
+}
+
+.month-band {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(15, 27, 45, 0.06);
+}
+
+.stub-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px 9px 10px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.log-list li:last-child .stub-row {
+  border-bottom: none;
+}
+
+.stub-date {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px #76869b;
+  background: var(--card);
+  line-height: 1;
+}
+
+.stub-date-wd {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.stub-date-num {
+  margin-top: 3px;
+  font-size: 17px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.stub-date.rough {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--ink2);
+}
+
+.stub-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stub-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.stub-venue {
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.stub-tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 1px;
+}
+
+.stub-main .status-line {
+  font-size: 12.5px;
+  margin-top: 1px;
+}
+
+.stub-main .status-line .crowd-mark {
+  width: 12px;
+  height: 12px;
+  color: #b98500;
+}
+
+.stub-fab {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 48px;
+  padding: 0 18px 0 14px;
+  border-radius: 24px;
+  background: var(--dodger);
+  color: var(--card);
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(15, 27, 45, 0.25);
+  transition: padding 160ms ease;
+}
+
+.stub-fab svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.stub-fab.small {
+  width: 48px;
+  padding: 0;
+  justify-content: center;
+}
+
+.stub-fab.small .stub-fab-label {
+  display: none;
+}
+
+.stubs-empty {
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px 16px;
+}
+
+.stubs-empty .gold-button {
+  width: 100%;
+}
+
+.stubs-empty-mark {
+  color: var(--dodger);
+}
+
 /* ---------- Your layer on an attended night ---------- */
 .entry-layer {
   display: flex;
