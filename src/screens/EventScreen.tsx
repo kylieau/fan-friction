@@ -3,15 +3,14 @@ import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'reac
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
 import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
-import { WatchedWhere } from '../components/WatchedWhere';
+import { StubSheet } from '../components/StubSheet';
+import { ActivityLines, StatusLine } from '../components/ActivityLines';
+import { activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
   feelsLikeLabel,
   isOpenAir,
-  isWatched,
-  markWasThere,
-  markWatched,
   priceLine,
   sizeTier,
   ticketPrice,
@@ -31,14 +30,11 @@ import {
   roundEstimate,
   getCityDate,
   getPersonalLog,
-  plannedKind,
   isStampLocked,
   asMetroDate,
-  isWasThere,
   subscribePersonalLog,
   todayIn,
-  togglePlan,
-  toggleWasThere,
+  watchShareOf,
   yourEntries,
   subscribeAccount,
   getAccount,
@@ -48,10 +44,10 @@ import {
   type CrowdEvent,
 } from '../data';
 import { crowdPoints, showsOnMap } from '../map/crowdPoints';
-import { EntryLayer, RemoveConfirm, RemoveFromLog } from '../components/EntryLayer';
+import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
-import { ArrowRight, ChevronDown, TvIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
@@ -74,7 +70,7 @@ export function EventScreen() {
   const [day, setDay] = useState<CityDate | null>(null);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [showHow, setShowHow] = useState(false);
-  const [unmarking, setUnmarking] = useState(false);
+  const [sheet, setSheet] = useState(false);
 
   useEffect(() => {
     let current = true;
@@ -166,6 +162,10 @@ export function EventScreen() {
   const shown = highlightedCrowd(e);
   const stakesLine = quietStakes(e, day.events);
   const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
+  // Your own answer, for the status line under the button.
+  const you = yourActivity(e.id, log);
+  const youRow = log.plans.find((p) => p.eventId === e.id) ?? logged;
+  const youShare = youRow && (you?.kind === 'watching' || you?.kind === 'watched') ? watchShareOf(youRow) : undefined;
   const ahead = e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
   // "Stamped" only once the stamp has locked, 24 hours after the night's last start (C041).
   const stampLocked = !ahead && isStampLocked(asMetroDate(e.metroId, date, day.events), (METROS[e.metroId] ?? DEFAULT_METRO).timeZone);
@@ -222,84 +222,15 @@ export function EventScreen() {
         )}
       </header>
 
+      {/* One "+ Stub it" opens one sheet (build notes 3, 4.7); your answer sits under it as a status line. */}
       <div className="event-marks">
-        {ahead ? (
-          plannedKind(e.id, log) === 'watch' ? (
-            <>
-              <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => togglePlan(e, 'watch')}>
-                <TvIcon /> Watching
-              </button>
-              <button type="button" className="mark-button small" onClick={() => togglePlan(e)}>
-                Attending?
-              </button>
-            </>
-          ) : plannedKind(e.id, log) === 'interested' ? (
-            <>
-              {/* Interested (Kylie, Oct 11): the third answer. It lapses with the date and never makes a stub. */}
-              <button type="button" className="mark-button on" aria-pressed onClick={() => togglePlan(e, 'interested')}>
-                Interested
-              </button>
-              <div className="quiet-actions">
-                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e)}>
-                  Attending?
-                </button>
-                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, 'watch')}>
-                  <TvIcon /> Watching?
-                </button>
-              </div>
-            </>
-          ) : plannedKind(e.id, log) === 'attend' ? (
-            <button type="button" className="mark-button on" aria-pressed onClick={() => togglePlan(e)}>
-              Attending
-            </button>
-          ) : (
-            <>
-              {/* Before the event, all three are questions, a call to action rather than a status (Kylie, Oct 11). */}
-              <button type="button" className="gold-button" onClick={() => togglePlan(e)}>
-                Attending?
-              </button>
-              <div className="quiet-actions">
-                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, 'watch')}>
-                  <TvIcon /> Watching?
-                </button>
-                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, 'interested')}>
-                  Interested?
-                </button>
-              </div>
-            </>
-          )
-        ) : isWasThere(e.id, log) ? (
-          unmarking ? (
-            <RemoveConfirm stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)} onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />
-          ) : isWatched(e.id, log) ? (
-            <>
-              {/* Done states are Attended / Watched on every page (Kylie, Oct 11, call 2); a smaller "I was there" switches. */}
-              <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => setUnmarking(true)}>
-                <TvIcon /> Watched
-              </button>
-              {logged && <WatchedWhere entry={logged} />}
-              <button type="button" className="mark-button small" onClick={() => markWasThere(e)}>
-                I was there
-              </button>
-            </>
-          ) : (
-            <button type="button" className="mark-button on" aria-pressed onClick={() => setUnmarking(true)}>
-              Attended
-            </button>
-          )
-        ) : (
-          <>
-            {/* The hero is in person; watching is the quieter action under it, one label for games and shows (8.2). */}
-            <button type="button" className="gold-button" onClick={() => markWasThere(e)}>
-              I was there
-            </button>
-            <button type="button" className="link-button watched-action" onClick={() => markWatched(e)}>
-              <TvIcon /> I watched it
-            </button>
-          </>
-        )}
+        <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
+          + Stub it
+        </button>
+        {you && <StatusLine kind={you.kind} share={youShare} place={you.place} />}
         {logged && <EntryLayer entry={logged} />}
       </div>
+      {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
 
       {/* This day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page. */}
       <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This day">
@@ -321,15 +252,8 @@ export function EventScreen() {
           <h2 id="friends-event" className="you-heading">
             Following
           </h2>
-          <ul className="log-list">
-            {friends.map((item) => (
-              <li key={`${item.friend.id}-${item.kind}`} className="log-row">
-                <span className="log-main">
-                  <span className="log-friend">{friendLine(item)}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
+          {/* Grouped like the Friends cards (Kylie, Oct 11): "Attending · Sam, Priya", "Watching · Jo at Tom's Bar", "Interested · Lee". */}
+          <ActivityLines groups={activityGroups(friends, null)} />
         </section>
       )}
 
@@ -629,13 +553,6 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
  * Back to the map she left. From the map, that is the same city, zoom, and
  * selection. A refresh still has that memory. Any other visit keeps the date link.
  */
-/** A friend's line on the event page (Kylie, Oct 11): the event is the page, so the sentence ends without it. */
-function friendLine(item: FeedItem): string {
-  const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-  if (item.kind === 'planning') return item.interested ? `${name} is interested` : item.watched ? `${name} is going to watch` : `${name} is going`;
-  return item.watched ? `${name} watched` : `${name} was there`;
-}
-
 function MapBack({
   date,
   metroId,

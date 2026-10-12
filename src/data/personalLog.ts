@@ -17,6 +17,7 @@ import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLoc
 import { seedEventsOn } from './sources/seedSource';
 import { drawSize } from './read';
 import { crowdFigures, entryCrowd } from './crowdFigures';
+import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
@@ -652,19 +653,64 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
   commit({ ...snapshot, added: snapshot.added.map((entry) => (updates.has(entry.id) ? { ...entry, ...updates.get(entry.id) } : entry)) });
 }
 
-/** Where a watched entry was watched (call 3). Home clears any place; a public place may be kept private. */
-export function setWatchedWhere(entryId: string, where: 'home' | 'public', place?: string, keepPrivate?: boolean) {
-  const added = snapshot.added.map((entry) => {
-    if (entry.id !== entryId) return entry;
-    const next: Entry = { ...entry, watchedWhere: where };
-    const clean = place?.trim().replace(/\s+/g, ' ');
-    if (where === 'public' && clean) next.watchedPlace = clean;
+/** The Private / Friends choice on a watch, older copies included ("Only you" read as Private; the old Home as Private). */
+export function watchShareOf(row: Pick<Entry, 'watchShare' | 'watchedPlacePrivate' | 'watchedWhere' | 'watchedPlace'>): 'private' | 'friends' | undefined {
+  if (row.watchShare) return row.watchShare;
+  if (row.watchedPlacePrivate) return 'private';
+  if (row.watchedWhere === 'public' && row.watchedPlace) return 'friends';
+  if (row.watchedWhere === 'home') return 'private';
+  return undefined;
+}
+
+/** The watch place on a plan or entry, "Home" for the preset; older copies' Home chip reads the same. */
+export function watchPlaceOf(row: Pick<Entry, 'watchedPlace' | 'watchedWhere'>): string | undefined {
+  return row.watchedPlace ?? (row.watchedWhere === 'home' ? 'Home' : undefined);
+}
+
+/**
+ * The Stub it sheet's watching details (build notes 3, 4.7): Private or Friends, and an optional
+ * place ("Home" is the preset). Written on the plan ahead of the date, or the watched entry after
+ * it; a plan's details carry into its stub. Friends shares the place with your approved followers
+ * through the database; Private keeps it on this log only. Resolves to an error line when the share
+ * could not be saved (D01), else null.
+ */
+export async function setWatchDetails(eventId: string, share: 'private' | 'friends' | undefined, place: string | undefined): Promise<string | null> {
+  const clean = place?.trim().replace(/\s+/g, ' ').slice(0, 80) || undefined;
+  const apply = <T extends Pick<Entry, 'watchShare' | 'watchedPlace' | 'watchedWhere' | 'watchedPlacePrivate'>>(row: T): T => {
+    const next = { ...row };
+    if (share) next.watchShare = share;
+    else delete next.watchShare;
+    if (clean) next.watchedPlace = clean;
     else delete next.watchedPlace;
-    if (where === 'public' && keepPrivate) next.watchedPlacePrivate = true;
-    else delete next.watchedPlacePrivate;
+    // The older fields follow, so a phone on the previous build still reads the right thing.
+    delete next.watchedPlacePrivate;
+    if (clean && /^home$/i.test(clean)) next.watchedWhere = 'home';
+    else if (clean) next.watchedWhere = 'public';
+    else delete next.watchedWhere;
+    if (share === 'private' && clean && next.watchedWhere === 'public') next.watchedPlacePrivate = true;
     return next;
+  };
+  commit({
+    ...snapshot,
+    plans: snapshot.plans.map((plan) => (plan.eventId === eventId && plan.watch ? apply(plan) : plan)),
+    added: snapshot.added.map((entry) => (entry.eventId === eventId && entry.watched ? apply(entry) : entry)),
   });
-  commit({ ...snapshot, added });
+  if (share === 'friends' && clean) return saveWatchPlace(eventId, clean, true);
+  return clearWatchPlace(eventId);
+}
+
+/** The places typed on other watches, newest first, for the sheet's chips. The Home preset is not one. */
+export function recentWatchPlaces(log: PersonalLog = snapshot, limit = 2): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const row of [...log.plans, ...yourEntries(log)]) {
+    const place = watchPlaceOf(row);
+    if (!place || /^home$/i.test(place) || seen.has(place.toLowerCase())) continue;
+    seen.add(place.toLowerCase());
+    out.push(place);
+    if (out.length >= limit) break;
+  }
+  return out;
 }
 
 /** "I was there": a new entry, or a watched one becoming in person (build notes 2, 8.2). */
@@ -796,7 +842,13 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       if (!event) continue;
       const entry = entryFromEvent(event);
       // A Watching? answer becomes a Watched stub (Kylie, Oct 11); the friction stamp still applies.
-      if (plan.watch) entry.watched = true;
+      // Its Private / Friends choice and place come along (build notes 3, 4.7).
+      if (plan.watch) {
+        entry.watched = true;
+        if (plan.watchShare) entry.watchShare = plan.watchShare;
+        if (plan.watchedPlace) entry.watchedPlace = plan.watchedPlace;
+        if (plan.watchedPlace) entry.watchedWhere = /^home$/i.test(plan.watchedPlace) ? 'home' : 'public';
+      }
       const stamp = stampNow(event, now);
       if (!added.some((row) => row.id === entry.id)) added.push(stamp ? { ...entry, stamp } : entry);
       settledIds.add(plan.id);

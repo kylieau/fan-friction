@@ -79,6 +79,25 @@ export function PeopleIcon({ size = 24 }: { size?: number }) {
   );
 }
 
+/** A bookmark, for Interested. */
+export function BookmarkIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M6 3.5h12v17l-6-4-6 4z" />
+    </svg>
+  );
+}
+
+/** A lock, for Private; plain (no label) beside its word. */
+export function LockMark({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <rect x="4" y="11" width="16" height="10" rx="2" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </svg>
+  );
+}
+
 export function PersonIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" {...base} aria-hidden>

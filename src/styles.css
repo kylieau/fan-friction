@@ -5672,6 +5672,145 @@ button.back-link {
   color: var(--ink);
 }
 
+/* The Stub it sheet (build notes 3, 4.7) */
+.stub-sheet {
+  gap: 10px;
+}
+
+.stub-sheet-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stub-sheet-sub {
+  margin: -6px 0 2px;
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.stub-choices {
+  display: flex;
+  gap: 8px;
+}
+
+.stub-choice {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
+  color: var(--dodger);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.stub-choice.on {
+  background: var(--dodger);
+  color: var(--card);
+  box-shadow: none;
+}
+
+.stub-choice svg {
+  width: 18px;
+  height: 18px;
+}
+
+.stub-helper {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.stub-where {
+  margin: 2px 0 0;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.stub-where-optional {
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+.stub-places {
+  flex-wrap: wrap;
+}
+
+.stub-done {
+  margin-top: 6px;
+}
+
+/* Your answer under "+ Stub it", and grouped friend lines (build notes 3, 4.4, 8.1 item 12). */
+.status-line {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.status-line svg {
+  width: 16px;
+  height: 16px;
+}
+
+.stub-it-small {
+  align-self: flex-start;
+}
+
+.activity-lines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.08);
+  overflow: hidden;
+}
+
+.activity-line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.activity-line:last-child {
+  border-bottom: none;
+}
+
+.activity-word {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  min-width: 96px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.activity-word svg {
+  width: 15px;
+  height: 15px;
+  color: var(--dodger);
+}
+
+.activity-names {
+  color: var(--ink2);
+  font-weight: 600;
+}
+
 /* Where you watched (call 3) */
 .watched-where {
   display: flex;
