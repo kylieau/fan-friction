@@ -1985,87 +1985,6 @@ button {
   cursor: pointer;
 }
 
-.beaten {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.axis {
-  position: relative;
-  height: 14px;
-  font-size: 11px;
-  color: var(--muted);
-}
-
-.axis span {
-  position: absolute;
-  transform: translateX(-50%);
-}
-
-.bars {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.bar-label {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.bar-dist {
-  flex-shrink: 0;
-  font-weight: 500;
-  color: var(--ink2);
-}
-
-.bar-track {
-  position: relative;
-  height: 8px;
-  margin-top: 4px;
-  background: var(--track);
-  border-radius: 4px;
-}
-
-.bar {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  border-radius: 4px;
-}
-
-.bar-self {
-  background: var(--gold);
-  box-shadow: inset 0 0 0 1.5px var(--dodger);
-}
-
-.bar-overlap {
-  background: var(--ucla);
-}
-
-.bar-other {
-  background: var(--paleBlue);
-}
-
-.bar-legend {
-  font-size: 12px;
-  color: var(--ink2);
-}
-
-.source-note {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.4;
-  color: var(--muted);
-}
-
 /* ---------- Share card and wordmark ---------- */
 
 .ff-wordmark {
@@ -5390,12 +5309,75 @@ button.back-link {
   flex-shrink: 0;
 }
 
-.rival-name {
+.rival-main {
   flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 6px 0;
+}
+
+.rival-name {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.rival-dist {
+  font-size: 12px;
+  color: var(--ink2);
+}
+
+.up-against-count {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.up-against-link {
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+/* This day (build notes 3, 4.3): the date's read, the count and the biggest draw; opens the date page. */
+.this-day {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.this-day-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.this-day-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--dodger);
+}
+
+.this-day-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.this-day-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.this-day-chevron {
+  font-size: 20px;
+  color: var(--dodger);
 }
 
 .rival-crowd {

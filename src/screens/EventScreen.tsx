@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
-import { ByLine, CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
+import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
 import { WatchedWhere } from '../components/WatchedWhere';
 import { crowdThousands } from '../map/crowdPoints';
 import {
@@ -47,11 +47,12 @@ import {
   type CityDate,
   type CrowdEvent,
 } from '../data';
-import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
+import { crowdPoints, showsOnMap } from '../map/crowdPoints';
 import { EntryLayer, RemoveConfirm, RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown, TvIcon } from '../components/Icons';
+import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle, mapTitle } from '../lib/eventTitle';
@@ -59,7 +60,7 @@ import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapRetu
 import { comparePath, datePath, openedMetroId, eventPath } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
-import { hoursOf, milesBetween, runningHours } from '../lib/windows';
+import { milesBetween } from '../lib/windows';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -177,6 +178,12 @@ export function EventScreen() {
     .sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))
     .slice(0, 5);
   const rivalVenue = (r: CrowdEvent) => (r.place.type === 'venue' ? (VENUES[r.place.venueId] ? venueNameOn(VENUES[r.place.venueId], r.date) : null) : r.place.name);
+  // Straight-line miles from this venue to a rival's (build notes 3, 3.3: distance helps explain the pull).
+  const rivalMiles = (r: CrowdEvent) => (r.place.type === 'venue' && VENUES[r.place.venueId] ? milesBetween(me.location, VENUES[r.place.venueId].location) : null);
+  // The day's events on the map and its biggest draw, for the This day card.
+  const dayEvents = day.events.filter(showsOnMap);
+  const dayCount = dayEvents.length;
+  const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
 
   return (
     <div className="screen page event-page">
@@ -294,6 +301,21 @@ export function EventScreen() {
         {logged && <EntryLayer entry={logged} />}
       </div>
 
+      {/* This day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page. */}
+      <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This day">
+        <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
+        <span className="this-day-main">
+          <span className="this-day-label">This day</span>
+          <span className="this-day-title">
+            {shortLocalDate(date)} · {dayCount} {dayCount === 1 ? 'event' : 'events'}
+          </span>
+          {biggest && <span className="this-day-sub">Biggest: {mapTitle(biggest, day.events)}</span>}
+        </span>
+        <span className="this-day-chevron" aria-hidden>
+          ›
+        </span>
+      </Link>
+
       {friends.length > 0 && (
         <section className="you-block" aria-labelledby="friends-event">
           <h2 id="friends-event" className="you-heading">
@@ -313,35 +335,46 @@ export function EventScreen() {
 
       {a && (
         <section className="card up-against" aria-label="Up against">
-          {/* "Up against" (build notes 2, 7.4): violet label and rule; the pill starts the sentence; the rivals under it with gold crowd marks. */}
+          {/* Up against (build notes 3, 3.3; mock call12-up-against, A): this event's rivals over the floor within an hour,
+              each with its venue, start and distance; the whole day is one tap away. The old timeline is gone. */}
           <div className="up-against-label">Up against</div>
           <div className="up-against-line">
             {/* A room under the floor gets no pill (build notes 2); Unopposed shows here, and only here. */}
             {sizeTier(e) === 'feeds-friction' ? <FrictionPill level={a.friction} /> : null}
-            <ByLine event={e} />
+            <span className="up-against-count">{rivals.length > 0 ? `${rivals.length} big ${rivals.length === 1 ? 'draw' : 'draws'} within an hour` : a.why}</span>
           </div>
-          <div className="verdict-why">{a.why}</div>
           {rivals.length > 0 && (
             <ul className="rival-list">
-              {rivals.map((r) => (
-                <li key={r.id}>
-                  <Link to={eventPath(r.id, r.metroId)} className="rival-row">
-                    <span className="rival-dot" aria-hidden />
-                    <span className="rival-name">
-                      {mapTitle(r, day.events)}
-                      {rivalVenue(r) ? ` · ${rivalVenue(r)}` : ''}
-                    </span>
-                    {drawSize(r) ? (
-                      <span className="rival-crowd">
-                        <CrowdMark />
-                        {crowdThousands(drawSize(r)!)}
+              {rivals.map((r) => {
+                const where = rivalVenue(r);
+                const miles = rivalMiles(r);
+                return (
+                  <li key={r.id}>
+                    <Link to={eventPath(r.id, r.metroId)} className="rival-row">
+                      <span className="rival-dot" aria-hidden />
+                      <span className="rival-main">
+                        <span className="rival-name">
+                          {mapTitle(r, day.events)}
+                          {where ? ` · ${where}` : ''}
+                          {r.start ? ` · ${clockTime(r.start)}` : ''}
+                        </span>
+                        {miles !== null && <span className="rival-dist">{miles < 0.5 ? 'Next door' : `${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi away`}</span>}
                       </span>
-                    ) : null}
-                  </Link>
-                </li>
-              ))}
+                      {drawSize(r) ? (
+                        <span className="rival-crowd">
+                          <CrowdMark />
+                          {crowdThousands(drawSize(r)!)}
+                        </span>
+                      ) : null}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           )}
+          <Link to={datePath(date, e.metroId, e.id)} className="text-link up-against-link">
+            See the whole day ›
+          </Link>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
           {a.status === 'formula' && !stampLocked && <div className="draft-note">Forecast</div>}
         </section>
@@ -409,12 +442,7 @@ export function EventScreen() {
 
       <WeatherDetail event={e} />
 
-      <Beaten me={me} all={points} date={date} />
-
-      <p className="source-note">
-        Counts are labeled by kind: announced, reported or estimated. Run times are rough defaults and distances are
-        straight-line.
-      </p>
+      <p className="source-note">Counts are labeled by kind: announced, reported or estimated. Distances are straight-line.</p>
 
       <ShareCard
         dateLabel={longLocalDate(date)}
@@ -645,81 +673,5 @@ function MapBack({
     >
       {children}
     </Link>
-  );
-}
-
-/** "Local competition": every event that day as a bar on a shared clock. */
-function Beaten({ me, all, date }: { me: CrowdPoint; all: CrowdPoint[]; date: string }) {
-  const timed = all.filter((p) => p.event.start);
-  const untimed = all.filter((p) => !p.event.start);
-  if (!me.event.start || all.length < 2) return null;
-
-  const span = (p: CrowdPoint) => {
-    const s = hoursOf(p.event.start as string);
-    return [s, s + runningHours(p.event)] as const;
-  };
-  const lo = Math.floor(Math.min(...timed.map((p) => span(p)[0])) - 0.5);
-  const hi = Math.ceil(Math.max(...timed.map((p) => span(p)[1])) + 0.5);
-  const pct = (h: number) => `${((h - lo) / (hi - lo)) * 100}%`;
-  const [ms, me2] = span(me);
-  const overlaps = (p: CrowdPoint) => {
-    const [s, e] = span(p);
-    return s < me2 && e > ms;
-  };
-  const ticks: number[] = [];
-  for (let h = Math.ceil(lo / 2) * 2; h <= hi; h += 2) ticks.push(h);
-  const label = (h: number) => (h % 24 === 0 ? '12a' : h % 24 === 12 ? '12p' : h % 24 < 12 ? `${h % 24}a` : `${(h % 24) - 12}p`);
-
-  const rows = [...timed].sort((x, y) => (x === me ? -1 : y === me ? 1 : span(x)[0] - span(y)[0]));
-
-  return (
-    <section className="card beaten">
-      <h2 className="section-title">Local competition</h2>
-      <div className="axis">
-        {ticks.map((h) => (
-          <span key={h} style={{ left: pct(h) }}>
-            {label(h)}
-          </span>
-        ))}
-      </div>
-      <ul className="bars">
-        {rows.map((p) => {
-          const [s, e] = span(p);
-          const self = p === me;
-          const miles = milesBetween(me.location, p.location);
-          return (
-            <li key={p.event.id} className="bar-row">
-              <div className="bar-label">
-                <span>
-                  {self ? '★ ' : ''}
-                  {listTitle(p.event)}
-                  {p.count !== undefined ? (
-                    <>
-                      {' · '}
-                      <CrowdMark /> {fmt(p.count)} {crowdKind(p.event)}
-                    </>
-                  ) : p.soldOut ? (
-                    ' · sold out'
-                  ) : (
-                    ''
-                  )}
-                </span>
-                <span className="bar-dist">{self ? 'This event' : `${miles < 0.3 ? '<0.3' : miles.toFixed(1)} mi`}</span>
-              </div>
-              <div className="bar-track">
-                <span
-                  className={`bar ${self ? 'bar-self' : overlaps(p) ? 'bar-overlap' : 'bar-other'}`}
-                  style={{ left: pct(s), width: `calc(${pct(e)} - ${pct(s)})` }}
-                />
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-      <div className="bar-legend">Blue band = on at the same time as this event · {shortLocalDate(date)}</div>
-      {untimed.length > 0 && (
-        <div className="bar-legend">Start time not found: {untimed.map((p) => p.event.title).join(', ')}</div>
-      )}
-    </section>
   );
 }
