@@ -10,6 +10,1494 @@ export type { DayClass, ExpectedDrawRow, OpponentRatioRow, PostseasonRow, Season
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 10415,
+    "low": 10290,
+    "high": 10435,
+    "games": 36,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10361,
+    "low": 10240,
+    "high": 10420,
+    "games": 17,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 10356,
+    "low": 10279,
+    "high": 10425,
+    "games": 6,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 10361,
+    "low": 10301,
+    "high": 10431,
+    "games": 3,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 10224,
+    "low": 10217,
+    "high": 10419,
+    "games": 7,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 10428,
+    "low": 10428,
+    "high": 10504,
+    "games": 5,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10386,
+    "low": 10326,
+    "high": 10441,
+    "games": 7,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 10418,
+    "low": 10379,
+    "high": 10471,
+    "games": 7,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "michelob-ultra-arena",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 10418,
+    "low": 10413,
+    "high": 10432,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "t-mobile-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 16572,
+    "low": 15689,
+    "high": 17674,
+    "games": 6,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "venueId": "t-mobile-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17796,
+    "low": 17551,
+    "high": 18172,
+    "games": 3,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 17961,
+    "low": 17848,
+    "high": 18154,
+    "games": 120,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18393,
+    "low": 18391,
+    "high": 18559,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17464,
+    "low": 17417,
+    "high": 17511,
+    "games": 12,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17911,
+    "low": 17791,
+    "high": 18081,
+    "games": 62,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17899,
+    "low": 17790,
+    "high": 18027,
+    "games": 10,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18188,
+    "low": 17874,
+    "high": 18249,
+    "games": 7,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17893,
+    "low": 17819,
+    "high": 18012,
+    "games": 10,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18090,
+    "low": 17971,
+    "high": 18222,
+    "games": 9,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 17717,
+    "low": 17647,
+    "high": 17779,
+    "games": 7,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17878,
+    "low": 17791,
+    "high": 18008,
+    "games": 9,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17916,
+    "low": 17835,
+    "high": 18071,
+    "games": 10,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18026,
+    "low": 17882,
+    "high": 18249,
+    "games": 12,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 17875,
+    "low": 17787,
+    "high": 18001,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18044,
+    "low": 17892,
+    "high": 18234,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18111,
+    "low": 17919,
+    "high": 18309,
+    "games": 33,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17988,
+    "low": 17873,
+    "high": 18143,
+    "games": 11,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18225,
+    "low": 18128,
+    "high": 18348,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17811,
+    "low": 17749,
+    "high": 17922,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18097,
+    "low": 17934,
+    "high": 18438,
+    "games": 6,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17970,
+    "low": 17925,
+    "high": 18140,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17941,
+    "low": 17892,
+    "high": 18027,
+    "games": 13,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 17960,
+    "low": 17941,
+    "high": 18019,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 17892,
+    "low": 17871,
+    "high": 18081,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "all",
+    "month": null,
+    "count": 3165,
+    "low": 2809,
+    "high": 4017,
+    "games": 74,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3881,
+    "low": 3794,
+    "high": 3947,
+    "games": 3,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2887,
+    "low": 2416,
+    "high": 3016,
+    "games": 15,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3044,
+    "low": 2966,
+    "high": 3085,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3172,
+    "low": 2702,
+    "high": 3642,
+    "games": 17,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 2543,
+    "low": 2415,
+    "high": 3093,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 3258,
+    "low": 2913,
+    "high": 3828,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 3197,
+    "low": 3130,
+    "high": 3419,
+    "games": 4,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4019,
+    "low": 3277,
+    "high": 4255,
+    "games": 29,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4602,
+    "low": 4379,
+    "high": 4617,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 4167,
+    "low": 4076,
+    "high": 4255,
+    "games": 5,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 4020,
+    "low": 3855,
+    "high": 4205,
+    "games": 4,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 3934,
+    "low": 3610,
+    "high": 4201,
+    "games": 6,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 3650,
+    "low": 3213,
+    "high": 3828,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 3032,
+    "low": 3023,
+    "high": 3053,
+    "games": 4,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 3554,
+    "low": 2814,
+    "high": 4334,
+    "games": 4,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3102,
+    "low": 2798,
+    "high": 3830,
+    "games": 13,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 3102,
+    "low": 2622,
+    "high": 3130,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 2560,
+    "low": 2304,
+    "high": 3056,
+    "games": 4,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "venueId": "lees-family-forum",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 2915,
+    "low": 2859,
+    "high": 3079,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "all",
+    "month": null,
+    "count": 5947,
+    "low": 5042,
+    "high": 7367,
+    "games": 223,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "opener",
+    "month": null,
+    "count": 9167,
+    "low": 8759,
+    "high": 9455,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5293,
+    "low": 4557,
+    "high": 6141,
+    "games": 108,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 5350,
+    "low": 4474,
+    "high": 5939,
+    "games": 20,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 5690,
+    "low": 5147,
+    "high": 6224,
+    "games": 21,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 5025,
+    "low": 4580,
+    "high": 5719,
+    "games": 18,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 5070,
+    "low": 4543,
+    "high": 5700,
+    "games": 17,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 4846,
+    "low": 4460,
+    "high": 5487,
+    "games": 19,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 6569,
+    "low": 5526,
+    "high": 6963,
+    "games": 12,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7360,
+    "low": 6729,
+    "high": 8172,
+    "games": 35,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 7699,
+    "low": 7329,
+    "high": 8055,
+    "games": 6,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 7866,
+    "low": 7224,
+    "high": 8082,
+    "games": 8,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 6952,
+    "low": 6693,
+    "high": 7659,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 7715,
+    "low": 6764,
+    "high": 8836,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 6522,
+    "low": 6027,
+    "high": 7073,
+    "games": 8,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 9609,
+    "low": 8942,
+    "high": 9897,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7117,
+    "low": 6674,
+    "high": 8025,
+    "games": 41,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 6834,
+    "low": 5644,
+    "high": 7076,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 7254,
+    "low": 7107,
+    "high": 10209,
+    "games": 6,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 7978,
+    "low": 7409,
+    "high": 8164,
+    "games": 7,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 7033,
+    "low": 6669,
+    "high": 7260,
+    "games": 8,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 6729,
+    "low": 6492,
+    "high": 7057,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 6659,
+    "low": 6163,
+    "high": 7654,
+    "games": 9,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 9402,
+    "low": 9237,
+    "high": 9752,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5549,
+    "low": 4988,
+    "high": 7405,
+    "games": 39,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 5517,
+    "low": 5463,
+    "high": 5614,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 7446,
+    "low": 5975,
+    "high": 8031,
+    "games": 6,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 5600,
+    "low": 5226,
+    "high": 6101,
+    "games": 6,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4772,
+    "low": 4674,
+    "high": 5201,
+    "games": 8,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 5229,
+    "low": 4776,
+    "high": 5530,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 5932,
+    "low": 5271,
+    "high": 7787,
+    "games": 8,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "venueId": "las-vegas-ballpark",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 9459,
+    "low": 8974,
+    "high": 9552,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 2078,
+    "low": 1673,
+    "high": 2698,
+    "games": 38,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2300,
+    "low": 1988,
+    "high": 2779,
+    "games": 3,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2090,
+    "low": 1704,
+    "high": 2743,
+    "games": 36,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 2148,
+    "low": 1816,
+    "high": 2468,
+    "games": 4,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 2189,
+    "low": 1061,
+    "high": 2396,
+    "games": 5,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 1748,
+    "low": 1720,
+    "high": 1893,
+    "games": 5,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 1894,
+    "low": 1697,
+    "high": 2431,
+    "games": 6,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 2612,
+    "low": 2181,
+    "high": 2813,
+    "games": 8,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 2240,
+    "low": 1934,
+    "high": 2908,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "venueId": "cashman-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 2878,
+    "low": 2353,
+    "high": 3724,
+    "games": 3,
+    "seasons": "2024\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 62364,
+    "low": 61983,
+    "high": 62497,
+    "games": 23,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 62526,
+    "low": 62472,
+    "high": 62534,
+    "games": 3,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 62084,
+    "low": 62017,
+    "high": 62167,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 62468,
+    "low": 62187,
+    "high": 62585,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 62244,
+    "low": 61983,
+    "high": 62451,
+    "games": 19,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 61429,
+    "low": 61391,
+    "high": 61605,
+    "games": 3,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 62259,
+    "low": 61984,
+    "high": 62538,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 62314,
+    "low": 62123,
+    "high": 62427,
+    "games": 6,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "venueId": "allegiant-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 62232,
+    "low": 61847,
+    "high": 62488,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "venueId": "allegiant-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 30858,
+    "low": 25498,
+    "high": 33728,
+    "games": 16,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "venueId": "allegiant-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 24512,
+    "low": 22430,
+    "high": 25118,
+    "games": 3,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "venueId": "allegiant-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 34218,
+    "low": 29889,
+    "high": 38387,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "venueId": "allegiant-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 28179,
+    "low": 25156,
+    "high": 31995,
+    "games": 12,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "venueId": "allegiant-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 24983,
+    "low": 24124,
+    "high": 28025,
+    "games": 4,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "venueId": "allegiant-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 30386,
+    "low": 25972,
+    "high": 31682,
+    "games": 5,
+    "seasons": "2023\u20132025"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 5553,
+    "low": 4885,
+    "high": 6240,
+    "games": 43,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5235,
+    "low": 4922,
+    "high": 5404,
+    "games": 3,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5081,
+    "low": 4760,
+    "high": 5657,
+    "games": 23,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 5370,
+    "low": 4679,
+    "high": 5815,
+    "games": 8,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5043,
+    "low": 4916,
+    "high": 5139,
+    "games": 4,
+    "seasons": "2025\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 6792,
+    "low": 5602,
+    "high": 8175,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4817,
+    "low": 4702,
+    "high": 5006,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5992,
+    "low": 5093,
+    "high": 6457,
+    "games": 19,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6158,
+    "low": 5992,
+    "high": 6321,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6639,
+    "low": 5963,
+    "high": 8591,
+    "games": 5,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4950,
+    "low": 4885,
+    "high": 5380,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 4982,
+    "low": 4307,
+    "high": 5721,
+    "games": 4,
+    "seasons": "2024\u20132026"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-wbb",
+    "venueId": "thomas-mack-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 908,
+    "low": 824,
+    "high": 916,
+    "games": 4,
+    "seasons": "2025\u20132026"
+  },
+  {
     "metroId": "phoenix",
     "teamId": "asu-football",
     "venueId": "mountain-america-stadium",
@@ -38091,6 +39579,20 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
 export const SEASON_LEVELS: SeasonLevelRow[] = [
   {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "season": 2026,
+    "level": 1.388,
+    "games": 10
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "season": 2026,
+    "level": 1.114,
+    "games": 3
+  },
+  {
     "metroId": "phoenix",
     "teamId": "asu-football",
     "season": 2026,
@@ -38339,6 +39841,685 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
 
 /** How each opponent has drawn at each team's games (expectedDrawBuild.ts opponentRatio). */
 export const OPPONENT_RATIOS: OpponentRatioRow[] = [
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "dream",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "fever",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "liberty",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "lynx",
+    "ratio": 0.989,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "mercury",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "mystics",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "sky",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "sparks",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "storm",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "sun",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "valkyries",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "aces",
+    "opponent": "wings",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "avalanche",
+    "ratio": 1.008,
+    "games": 5
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "blackhawks",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "blue-jackets",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "blues",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "bruins",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "canadiens",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "canucks",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "capitals",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "ducks",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "flames",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "flyers",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "hurricanes",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "islanders",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "jets",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "kings",
+    "ratio": 0.998,
+    "games": 7
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "kraken",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "lightning",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "maple-leafs",
+    "ratio": 0.979,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "oilers",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "panthers",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "penguins",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "predators",
+    "ratio": 0.999,
+    "games": 5
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "rangers",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "red-wings",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "senators",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "stars",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "utah-hc",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "opponent": "wild",
+    "ratio": 1.004,
+    "games": 5
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "admirals",
+    "ratio": 1.015,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "barracuda",
+    "ratio": 0.978,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "canucks",
+    "ratio": 1.015,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "condors",
+    "ratio": 0.928,
+    "games": 11
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "eagles",
+    "ratio": 1.001,
+    "games": 10
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "firebirds",
+    "ratio": 0.937,
+    "games": 8
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "gulls",
+    "ratio": 1.029,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "reign",
+    "ratio": 0.902,
+    "games": 10
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "roadrunners",
+    "ratio": 0.962,
+    "games": 8
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "stars",
+    "ratio": 1.036,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "henderson-silver-knights",
+    "opponent": "wranglers",
+    "ratio": 1.097,
+    "games": 6
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "aces",
+    "ratio": 1.046,
+    "games": 24
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "baseball-club",
+    "ratio": 1.101,
+    "games": 9
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "bees",
+    "ratio": 1.069,
+    "games": 36
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "chihuahuas",
+    "ratio": 0.977,
+    "games": 24
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "comets",
+    "ratio": 1.042,
+    "games": 15
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "express",
+    "ratio": 0.928,
+    "games": 15
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "isotopes",
+    "ratio": 0.997,
+    "games": 18
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "rainiers",
+    "ratio": 0.951,
+    "games": 30
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "river-cats",
+    "ratio": 0.943,
+    "games": 25
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-aviators",
+    "opponent": "space-cowboys",
+    "ratio": 1.064,
+    "games": 18
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "el-paso",
+    "ratio": 1.094,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "lexington",
+    "ratio": 0.964,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "loudoun",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "miami-fc",
+    "ratio": 1.133,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "monterey-bay",
+    "ratio": 1.203,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "new-mexico",
+    "ratio": 0.927,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "oakland",
+    "ratio": 1.112,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "orange-county",
+    "ratio": 1.069,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "phoenix",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "sacramento",
+    "ratio": 1.229,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "san-antonio",
+    "ratio": 0.966,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "switchbacks-fc",
+    "ratio": 1.114,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "tampa-bay",
+    "ratio": 1.182,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "las-vegas-lights",
+    "opponent": "tulsa",
+    "ratio": 1.095,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "broncos",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "browns",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "chargers",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "chiefs",
+    "ratio": 1.003,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "giants",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "jaguars",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "raiders",
+    "opponent": "steelers",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "opponent": "boise-st",
+    "ratio": 1.073,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-football",
+    "opponent": "hawai-i",
+    "ratio": 1.027,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "air-force",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "boise-st",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "colorado-st",
+    "ratio": 1.014,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "fresno-st",
+    "ratio": 1.086,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "nevada",
+    "ratio": 1.135,
+    "games": 2
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "new-mexico",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "san-diego-st",
+    "ratio": 1.044,
+    "games": 4
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "san-jos-st",
+    "ratio": 0.958,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "utah-state",
+    "ratio": 0.929,
+    "games": 3
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "unlv-mbb",
+    "opponent": "wyoming",
+    "ratio": 0.951,
+    "games": 2
+  },
   {
     "metroId": "phoenix",
     "teamId": "asu-football",

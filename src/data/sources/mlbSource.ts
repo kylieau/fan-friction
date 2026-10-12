@@ -24,6 +24,7 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   // Athletics: no home-venue fallback, so Las Vegas games (unmapped) are skipped. Sutter Health Park is venue 2529.
   133: { metroId: 'sacramento', teamId: 'athletics' },
   105: { metroId: 'sacramento', teamId: 'river-cats', sportId: 11, venueId: 'sutter-health-park' },
+  400: { metroId: 'las-vegas', teamId: 'las-vegas-aviators', sportId: 11, venueId: 'las-vegas-ballpark' },
   158: { metroId: 'milwaukee', teamId: 'brewers' },
   5548: { metroId: 'milwaukee', teamId: 'milwaukee-milkmen', sportId: 23, venueId: 'franklin-field' },
   6488: { metroId: 'milwaukee', teamId: 'lake-country-dockhounds', sportId: 23, venueId: 'dockhounds-ballpark' },
@@ -52,7 +53,7 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   // Vancouver Canadians (High-A). Team 435 and venue 2817 checked against the feed Oct 12, 2026.
   435: { metroId: 'vancouver', teamId: 'vancouver-canadians', sportId: 13, venueId: 'nat-bailey-stadium' },
 };
-const MLB_VENUES: Record<number, string> = { 3: 'fenway-park', 2681: 'citizens-bank-park', 15: 'chase-field', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 2529: 'sutter-health-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium' };
+const MLB_VENUES: Record<number, string> = { 3: 'fenway-park', 2681: 'citizens-bank-park', 15: 'chase-field', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 2529: 'sutter-health-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium', 5355: 'las-vegas-ballpark' };
 
 /** The feed's team ids for a metro, grouped by sport id (one schedule call per sport). */
 function teamIdsBySport(metroId: string): Map<number, string[]> {

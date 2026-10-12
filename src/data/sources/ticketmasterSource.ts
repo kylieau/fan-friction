@@ -128,6 +128,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'willoughby-stadium', 'swangard-stadium', 'thunderbird-arena', 'thunderbird-stadium', 'war-memorial-gym',
   // Mexico City rooms with no league feed. Liga MX and Capitanes stay on ESPN, so Banorte, CU and Arena CDMX are not swept.
   'estadio-alfredo-harp-helu', 'gimnasio-juan-de-la-barrera', 'arena-mexico', 'estadio-wilfrido-massieu', 'estadio-ciudad-de-los-deportes',
+  // Las Vegas rooms whose tenants have no league feed (NASCAR, indoor football, lacrosse, rodeo). Feed games at the same building still win.
+  'las-vegas-motor-speedway', 'lvms-dirt-track', 'lvms-bullring', 'lees-family-forum', 'orleans-arena', 'thomas-mack-center', 'cashman-field',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {
