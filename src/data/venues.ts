@@ -8114,11 +8114,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.93,
     names: [{ name: 'Indianapolis Motor Speedway' }, { name: 'IMS' }],
     location: [-86.2336932, 39.7903186],
-    capacity: [{
-      seats: 275000,
-      setup: 'racing',
-      note: 'Estimated (AP, 2026): about 275,000 reserved grandstand seats; conflicts with 250,000 and 257,325 reported elsewhere. Infield GA is extra with no official cap. Race-day crowd is an open-site event, not concurrent with every other IMS booking. Source: https://www.ajc.com/news/2026/05/indianapolis-500-officials-are-expecting-a-2nd-straight-race-day-sellout-and-3rd-time-in-10-years/',
-    }],
+    // Round-2 rule: conflicting estimates (AP 275,000 vs 250,000 vs 257,325) are not stored; blank until one official figure (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'lucas-oil-stadium': {
@@ -8130,7 +8127,6 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 67000, setup: 'football', note: 'Official. Conflicts with 63,000 reported (IBJ 2012). Expanded basketball and major events exceed 70,000 in a separate configuration. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
       { seats: 70000, setup: 'basketball', note: 'Official: expandable to over 70,000 for basketball. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
-      { seats: 70000, setup: 'concert', note: 'Estimated from the same official expandable figure; concert configuration not published separately. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
     ],
     roof: 'covered',
   },
@@ -8231,9 +8227,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Indiana Farmers Coliseum', from: '2014-01-01' },
     ],
     location: [-86.1292603, 39.8302975],
-    capacity: [
-      { seats: 6800, setup: 'basketball', note: 'Reported. Conflicts with 6,200 hockey, 8,200 and 6,500 in other sources. Livestock setup 4,800 is not stored. Source: https://en.wikipedia.org/wiki/Corteva_Coliseum' },
-    ],
+    // Round-2 rule: conflicting reported figures (6,800 / 6,200 hockey / 8,200 / 6,500); blank until one official figure (BACKLOG).
+    capacity: [],
     roof: 'indoor',
   },
   'everwise-amphitheater': {
