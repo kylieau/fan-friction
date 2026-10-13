@@ -517,7 +517,6 @@ const LIST: Team[] = [
   team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball'),
   team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball'),
   team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball'),
-  team('utah-hc', 'Utah Hockey Club', 'Utah', 'NHL', 'hockey'),
   team('jets', 'Winnipeg Jets', 'Jets', 'NHL', 'hockey'),
   team('panthers', 'Florida Panthers', 'Panthers', 'NHL', 'hockey'),
   team('rapids', 'Colorado Rapids', 'Rapids', 'MLS', 'soccer'),

@@ -53292,7 +53292,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "chicago",
     "teamId": "blackhawks",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 0.999,
     "games": 2
   },
@@ -55245,7 +55245,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "dallas-fort-worth",
     "teamId": "dallas-stars",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 1,
     "games": 2
   },
@@ -58731,7 +58731,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "la",
     "teamId": "kings",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 0.964,
     "games": 2
   },
@@ -59410,7 +59410,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "las-vegas",
     "teamId": "golden-knights",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 0.996,
     "games": 2
   },
@@ -61986,7 +61986,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "minneapolis",
     "teamId": "wild",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 0.993,
     "games": 2
   },
@@ -63176,7 +63176,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "nashville",
     "teamId": "predators",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 0.998,
     "games": 2
   },
@@ -70022,7 +70022,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "seattle",
     "teamId": "kraken",
-    "opponent": "utah-hc",
+    "opponent": "utah-mammoth",
     "ratio": 1,
     "games": 2
   },

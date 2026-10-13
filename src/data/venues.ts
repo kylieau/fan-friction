@@ -8807,7 +8807,7 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 17867, setup: 'basketball', fromYear: 2026, note: 'Official, 2026-27 Jazz layout. Was 18,206 pre-renovation. Source: https://www.deseret.com/sports/2026/09/25/delta-center-renovations-revealed-for-2026-2027-utah-jazz-season/' },
       { seats: 14111, setup: 'hockey', fromYear: 2026, note: 'Official, 2026-27 Mammoth layout excluding obstructed-view seats; obstructed seats may still be sold. Source: https://www.deseret.com/sports/2026/09/25/delta-center-renovations-2026-27-utah-mammoth/' },
-      { seats: 20000, setup: 'concert', note: 'Reported pre-renovation concert maximum; re-verify after phase 3. Source: https://en.wikipedia.org/wiki/Delta_Center' },
+      // Concert capacity left blank: only a pre-renovation 20,000 is sourced; re-verify after phase 3 (BACKLOG).
     ],
     roof: 'indoor',
   },
