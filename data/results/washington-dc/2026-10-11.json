@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-capitals-401892482",
+      "metroId": "washington-dc",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 3
+      },
+      "away": {
+        "name": "Kraken",
+        "score": 5
+      },
+      "attendance": 18107,
+      "capturedAt": "2026-10-13T07:19:55.309Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "17:09"
+    },
+    {
+      "eventId": "2026-10-11-espn-washington-401872988",
+      "metroId": "washington-dc",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "northwest-stadium",
+      "homeTeamId": "washington",
+      "home": {
+        "name": "Commanders",
+        "score": 27
+      },
+      "away": {
+        "name": "Giants",
+        "score": 27
+      },
+      "attendance": 64195,
+      "note": "OT",
+      "capturedAt": "2026-10-13T07:19:55.309Z",
+      "duration": {
+        "minutes": 222,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

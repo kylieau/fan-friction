@@ -1,0 +1,445 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "metroName": "Cleveland",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:22:49.125Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 3
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-15-mlb-849818",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "cleveland",
+      "date": "2026-10-15",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Guardians vs. Rays",
+      "stakes": {
+        "round": "ALCS",
+        "game": 3
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "progressive-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "guardians",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "league, 2022, 2023, 2024, 2025",
+        "basis": "league",
+        "note": "Playoff crowds as a share of the building, the league's past 39 games (league, 2022, 2023, 2024, 2025). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-mlb-849817",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "cleveland",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Guardians vs. Rays",
+      "stakes": {
+        "round": "ALCS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "progressive-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "guardians",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "league, 2022, 2023, 2024, 2025",
+        "basis": "league",
+        "note": "Playoff crowds as a share of the building, the league's past 39 games (league, 2022, 2023, 2024, 2025). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-ht-cleveland-monsters-1029139",
+      "metroId": "cleveland",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Monsters vs. Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 9909,
+        "low": 8368,
+        "high": 11056,
+        "fromCrowds": true,
+        "games": 16,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 16 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-ht-cleveland-monsters-1029152",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Monsters vs. Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 10177,
+        "low": 9712,
+        "high": 10465,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-mlb-849816",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Guardians vs. Rays",
+      "stakes": {
+        "round": "ALCS",
+        "game": 5,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "progressive-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "guardians",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "league, 2022, 2023, 2024, 2025",
+        "basis": "league",
+        "note": "Playoff crowds as a share of the building, the league's past 39 games (league, 2022, 2023, 2024, 2025). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-browns-401872997",
+      "metroId": "cleveland",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Browns vs. Ravens",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-bank-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "browns",
+        "away": "ravens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66554,
+        "low": 66554,
+        "high": 67036,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-cavaliers-401909854",
+      "metroId": "cleveland",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Cavaliers vs. Nets",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "nets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-cavaliers-401909869",
+      "metroId": "cleveland",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cavaliers vs. Timberwolves",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 30,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 30 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-15-mlb-849818",
+      "date": "2026-10-15",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530
+      }
+    },
+    {
+      "eventId": "2026-10-16-mlb-849817",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530
+      }
+    },
+    {
+      "eventId": "2026-10-16-ht-cleveland-monsters-1029139",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Guardians vs. Rays next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9909,
+        "low": 8368,
+        "high": 11056
+      }
+    },
+    {
+      "eventId": "2026-10-17-ht-cleveland-monsters-1029152",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10177,
+        "low": 9712,
+        "high": 10465
+      }
+    },
+    {
+      "eventId": "2026-10-17-mlb-849816",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-browns-401872997",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66554,
+        "low": 66554,
+        "high": 67036
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-cavaliers-401909854",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-cavaliers-401909869",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    }
+  ]
+}

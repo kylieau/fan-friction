@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "metroName": "Indianapolis",
+  "timeZone": "America/Indiana/Indianapolis",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:18:54.994Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-16-espn-pacers-401914126",
+      "metroId": "indianapolis",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pacers vs. Bucks",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "bucks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-butler-football-401868213",
+      "metroId": "indianapolis",
+      "date": "2026-10-17",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Butler vs. Dayton",
+      "place": {
+        "type": "venue",
+        "venueId": "sellick-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "butler-football",
+        "away": "dayton"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-espn-colts-401873003",
+      "metroId": "indianapolis",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Colts vs. Titans",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "lucas-oil-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "colts",
+        "away": "titans"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-espn-pacers-401909844",
+      "metroId": "indianapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pacers vs. Mavericks",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "mavericks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-16-espn-pacers-401914126",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-butler-football-401868213",
+      "date": "2026-10-17",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-colts-401873003",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-pacers-401909844",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    }
+  ]
+}

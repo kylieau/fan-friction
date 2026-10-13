@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "teamId": "iu-indy-mbb",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "iu-indy-mbb",
+      "season": 2023,
+      "date": "2022-11-23",
+      "start": "17:35",
+      "opponent": "Denver",
+      "venueId": "lakefront-arena",
+      "attendance": 545,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
