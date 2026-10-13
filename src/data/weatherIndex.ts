@@ -29474,6 +29474,24 @@ export const WEATHER_ROWS: WeatherRow[] = [
   },
   {
     "metroId": "chicago",
+    "venueId": "city",
+    "date": "2026-10-13",
+    "hour": 19,
+    "basis": "forecast",
+    "capturedAt": "2026-10-13T15:48:10.351Z",
+    "feelsLikeF": 74.5,
+    "tempF": 72.8,
+    "humidity": 63,
+    "windMph": 3.6,
+    "uvIndex": 0,
+    "precipProbability": 2,
+    "precipMm": 0,
+    "shortwave": 0,
+    "cloudCover": 12,
+    "code": 0
+  },
+  {
+    "metroId": "chicago",
     "venueId": "soldier-field",
     "date": "2026-10-14",
     "hour": 19,
@@ -159881,6 +159899,18 @@ export const WEATHER_DAYS: WeatherDay[] = [
   {
     "metroId": "chicago",
     "venueId": "city",
+    "date": "2026-10-13",
+    "basis": "forecast",
+    "capturedAt": "2026-10-13T15:48:10.351Z",
+    "feelsLikeHighF": 80.6,
+    "feelsLikeLowF": 68.2,
+    "code": 3,
+    "precipProbability": 25,
+    "precipMm": 0
+  },
+  {
+    "metroId": "chicago",
+    "venueId": "city",
     "date": "2026-10-14",
     "basis": "forecast",
     "capturedAt": "2026-10-07T23:35:35.364Z",
@@ -159985,6 +160015,18 @@ export const WEATHER_DAYS: WeatherDay[] = [
     "code": 53,
     "precipProbability": 45,
     "precipMm": 1.1
+  },
+  {
+    "metroId": "chicago",
+    "venueId": "city",
+    "date": "2026-10-14",
+    "basis": "forecast",
+    "capturedAt": "2026-10-13T15:48:10.351Z",
+    "feelsLikeHighF": 66.5,
+    "feelsLikeLowF": 53,
+    "code": 53,
+    "precipProbability": 45,
+    "precipMm": 0.7
   },
   {
     "metroId": "chicago",

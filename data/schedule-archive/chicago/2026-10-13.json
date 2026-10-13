@@ -4,7 +4,7 @@
   "metroName": "Chicago",
   "timeZone": "America/Chicago",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T15:37:06.076Z",
+  "capturedAt": "2026-10-13T15:48:21.607Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -57,7 +57,8 @@
       },
       "teams": {
         "home": "blackhawks",
-        "away": "penguins"
+        "away": "penguins",
+        "awayOpponent": "penguins"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -114,7 +115,8 @@
       },
       "teams": {
         "home": "chicago-fire",
-        "away": "philadelphia"
+        "away": "philadelphia-union",
+        "awayOpponent": "philadelphia"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -172,7 +174,8 @@
       },
       "teams": {
         "home": "blackhawks",
-        "away": "jets"
+        "away": "jets",
+        "awayOpponent": "jets"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -205,7 +208,8 @@
       },
       "teams": {
         "home": "bulls",
-        "away": "timberwolves"
+        "away": "timberwolves",
+        "awayOpponent": "timberwolves"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -287,7 +291,8 @@
       },
       "teams": {
         "home": "blackhawks",
-        "away": "stars"
+        "away": "dallas-stars",
+        "awayOpponent": "stars"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -454,7 +459,8 @@
       },
       "teams": {
         "home": "chicago-stars",
-        "away": "seattle"
+        "away": "reign",
+        "awayOpponent": "seattle"
       },
       "crowd": [],
       "sourceId": "espn"
@@ -607,7 +613,8 @@
       },
       "teams": {
         "home": "bears",
-        "away": "patriots"
+        "away": "patriots",
+        "awayOpponent": "patriots"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -690,7 +697,8 @@
       },
       "teams": {
         "home": "blackhawks",
-        "away": "canadiens"
+        "away": "canadiens",
+        "awayOpponent": "canadiens"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -722,7 +730,8 @@
       },
       "teams": {
         "home": "chicago-stars",
-        "away": "houston"
+        "away": "dash",
+        "awayOpponent": "houston"
       },
       "crowd": [],
       "sourceId": "espn"
@@ -794,7 +803,8 @@
       },
       "teams": {
         "home": "northwestern-football",
-        "away": "rutgers"
+        "away": "rutgers",
+        "awayOpponent": "rutgers"
       },
       "crowd": [],
       "sourceId": "espn"
@@ -817,7 +827,8 @@
       },
       "teams": {
         "home": "bulls",
-        "away": "wizards"
+        "away": "wizards",
+        "awayOpponent": "wizards"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -932,7 +943,8 @@
       },
       "teams": {
         "home": "blackhawks",
-        "away": "panthers"
+        "away": "panthers",
+        "awayOpponent": "panthers"
       },
       "crowd": [],
       "sourceId": "espn",
@@ -1022,7 +1034,8 @@
       },
       "teams": {
         "home": "blackhawks",
-        "away": "kings"
+        "away": "kings",
+        "awayOpponent": "kings"
       },
       "crowd": [],
       "sourceId": "espn",
