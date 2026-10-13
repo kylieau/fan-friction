@@ -42542,6 +42542,214 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-13-espn-hurricanes-401892491",
+    "date": "2026-10-13",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18681,
+      "low": 18281,
+      "high": 18681
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-14-tm-G5eVZ_eJP-tDn",
+    "date": "2026-10-14",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 20601
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-17-espn-duke-football-401858266",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Courage vs. Wave 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 24223,
+      "low": 23264,
+      "high": 24861
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-17-espn-nc-courage-401854023",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Duke vs. North Carolina 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 7126,
+      "low": 7016,
+      "high": 8545
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-21-tm-G5eVZ_6BPBl--",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11115
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-23-tm-G5eVZ_7nDU416",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "North Carolina Tar Heels Womens Volleyball vs. California Golden Bears Womens Volleyball and Steve Lacy 28 mi away, same hours."
+    },
+    "draw": {
+      "count": 20601
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-23-tm-G5eVZ_8CI0_um",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin 4.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-23-tm-Z7r9jZ1AAZabO",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin 28 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-24-espn-unc-football-401858275",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 50500,
+      "low": 48267,
+      "high": 50500
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-25-tm-Z7r9jZ1AAZab4",
+    "date": "2026-10-25",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-27-espn-hurricanes-401892586",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Victoria Monét 4.9 mi away, same hours."
+    },
+    "draw": {
+      "count": 18681,
+      "low": 18281,
+      "high": 18681
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-27-tm-G5eVZ_3NPNcOA",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Hurricanes vs. Bruins 4.9 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
     "metroId": "sacramento",
     "eventId": "2026-10-13-espn-sacramento-kings-401901826",
     "date": "2026-10-13",
@@ -52486,76 +52694,6 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     },
     "draw": {
       "count": 11603
-    }
-  },
-  {
-    "metroId": "raleigh-durham",
-    "eventId": "2026-10-13-espn-hurricanes-401892491",
-    "date": "2026-10-13",
-    "start": "18:45",
-    "capturedAt": "2026-10-13T07:26:31.134Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1,
-      "friction": "Low",
-      "why": "The biggest event around."
-    }
-  },
-  {
-    "metroId": "raleigh-durham",
-    "eventId": "2026-10-17-espn-duke-football-401858266",
-    "date": "2026-10-17",
-    "start": "15:30",
-    "capturedAt": "2026-10-13T07:26:31.134Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1.8,
-      "friction": "Low",
-      "why": "Courage vs. Wave 18 mi away, same hours."
-    }
-  },
-  {
-    "metroId": "raleigh-durham",
-    "eventId": "2026-10-17-espn-nc-courage-401854023",
-    "date": "2026-10-17",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:26:31.134Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1.8,
-      "friction": "Low",
-      "why": "Duke vs. North Carolina 18 mi away, same hours."
-    }
-  },
-  {
-    "metroId": "raleigh-durham",
-    "eventId": "2026-10-24-espn-unc-football-401858275",
-    "date": "2026-10-24",
-    "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:31.134Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1,
-      "friction": "Low",
-      "why": "The biggest event around."
-    }
-  },
-  {
-    "metroId": "raleigh-durham",
-    "eventId": "2026-10-27-espn-hurricanes-401892586",
-    "date": "2026-10-27",
-    "start": "20:00",
-    "capturedAt": "2026-10-13T07:26:31.134Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1,
-      "friction": "Low",
-      "why": "The biggest event around."
     }
   }
 ];

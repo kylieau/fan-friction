@@ -44158,6 +44158,1878 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 1656,
+    "low": 1402,
+    "high": 2487,
+    "games": 11,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1522,
+    "low": 1215,
+    "high": 1693,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1656,
+    "low": 1402,
+    "high": 2487,
+    "games": 11,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 2961,
+    "low": 2484,
+    "high": 2987,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1654,
+    "low": 1653,
+    "high": 1656,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 2341,
+    "low": 2108,
+    "high": 2555,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2274,
+    "low": 2204,
+    "high": 2319,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2266,
+    "low": 2118,
+    "high": 2489,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2476,
+    "low": 2360,
+    "high": 2632,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2261,
+    "low": 2192,
+    "high": 2436,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2112,
+    "low": 2057,
+    "high": 2179,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2082,
+    "low": 2065,
+    "high": 2096,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2100,
+    "low": 2047,
+    "high": 2143,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 2033,
+    "low": 2027,
+    "high": 2061,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2535,
+    "low": 2291,
+    "high": 2830,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 3027,
+    "low": 2835,
+    "high": 3066,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2556,
+    "low": 2500,
+    "high": 2687,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 2581,
+    "low": 2552,
+    "high": 2858,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 2104,
+    "low": 2010,
+    "high": 2188,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 878,
+    "low": 762,
+    "high": 1067,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 878,
+    "low": 722,
+    "high": 984,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 788,
+    "low": 676,
+    "high": 878,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3005,
+    "low": 2086,
+    "high": 3060,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 814,
+    "low": 735,
+    "high": 912,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 843,
+    "low": 815,
+    "high": 1050,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 988,
+    "low": 893,
+    "high": 1128,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 895,
+    "low": 747,
+    "high": 1154,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "venueId": "upmc-cooper-fieldhouse",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 762,
+    "low": 702,
+    "high": 1067,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 17543,
+    "low": 16299,
+    "high": 18223,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18190,
+    "low": 17149,
+    "high": 18301,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 12999,
+    "low": 11573,
+    "high": 14111,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17072,
+    "low": 15838,
+    "high": 18190,
+    "games": 59,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 16715,
+    "low": 16125,
+    "high": 17963,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 17564,
+    "low": 16972,
+    "high": 17979,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17484,
+    "low": 17050,
+    "high": 18052,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18246,
+    "low": 17406,
+    "high": 18308,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 16274,
+    "low": 14630,
+    "high": 17168,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17035,
+    "low": 16053,
+    "high": 18268,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 15632,
+    "low": 15225,
+    "high": 17634,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17222,
+    "low": 17074,
+    "high": 17527,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18207,
+    "low": 17320,
+    "high": 18336,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18276,
+    "low": 18162,
+    "high": 18334,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18077,
+    "low": 17443,
+    "high": 18356,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 18388,
+    "low": 18371,
+    "high": 18397,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17174,
+    "low": 16352,
+    "high": 17632,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17573,
+    "low": 17064,
+    "high": 18203,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18216,
+    "low": 17290,
+    "high": 18303,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17724,
+    "low": 17068,
+    "high": 18176,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 18212,
+    "low": 17699,
+    "high": 18317,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 17753,
+    "low": 16738,
+    "high": 18039,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 17695,
+    "low": 16691,
+    "high": 18026,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 19358,
+    "low": 13623,
+    "high": 24724,
+    "games": 242,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 38400,
+    "low": 37647,
+    "high": 38693,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 14005,
+    "low": 10818,
+    "high": 18750,
+    "games": 117,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 9611,
+    "low": 8586,
+    "high": 10479,
+    "games": 26,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 13516,
+    "low": 10842,
+    "high": 15213,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 17815,
+    "low": 14822,
+    "high": 24317,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 19379,
+    "low": 17257,
+    "high": 20091,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 17477,
+    "low": 14005,
+    "high": 19952,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 13332,
+    "low": 11380,
+    "high": 15793,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 23721,
+    "low": 20102,
+    "high": 28649,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 24198,
+    "low": 21079,
+    "high": 26049,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 20646,
+    "low": 16454,
+    "high": 27107,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 25186,
+    "low": 21415,
+    "high": 27828,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 31246,
+    "low": 24088,
+    "high": 36176,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 22886,
+    "low": 22463,
+    "high": 29547,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 21474,
+    "low": 15738,
+    "high": 24152,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 27858,
+    "low": 22773,
+    "high": 32578,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 29260,
+    "low": 26506,
+    "high": 35927,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 24462,
+    "low": 23860,
+    "high": 30414,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 30363,
+    "low": 28230,
+    "high": 31632,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 32545,
+    "low": 26190,
+    "high": 38307,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 30274,
+    "low": 26724,
+    "high": 36826,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 18209,
+    "low": 16707,
+    "high": 19971,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20341,
+    "low": 17845,
+    "high": 24903,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 16127,
+    "low": 12685,
+    "high": 20193,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 18554,
+    "low": 17184,
+    "high": 19358,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 24463,
+    "low": 22182,
+    "high": 25080,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 28034,
+    "low": 21371,
+    "high": 33796,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 22753,
+    "low": 20770,
+    "high": 25239,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 15543,
+    "low": 13077,
+    "high": 19085,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "venueId": "acrisure-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 49398,
+    "low": 47266,
+    "high": 56693,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "venueId": "acrisure-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 45096,
+    "low": 44856,
+    "high": 49051,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "venueId": "acrisure-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 49773,
+    "low": 48431,
+    "high": 57125,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "venueId": "acrisure-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 48491,
+    "low": 48427,
+    "high": 49185,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "venueId": "acrisure-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 48307,
+    "low": 46704,
+    "high": 50105,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "venueId": "acrisure-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 57557,
+    "low": 56693,
+    "high": 58667,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 7464,
+    "low": 6247,
+    "high": 8526,
+    "games": 50,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6579,
+    "low": 5815,
+    "high": 6688,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6914,
+    "low": 5319,
+    "high": 7837,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 8770,
+    "low": 7723,
+    "high": 10900,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 8168,
+    "low": 7034,
+    "high": 9507,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 6310,
+    "low": 5063,
+    "high": 6523,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5447,
+    "low": 4881,
+    "high": 6371,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7642,
+    "low": 6609,
+    "high": 7818,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 7642,
+    "low": 6609,
+    "high": 7818,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7884,
+    "low": 6666,
+    "high": 9825,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6915,
+    "low": 6286,
+    "high": 8332,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 9721,
+    "low": 7155,
+    "high": 11280,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7808,
+    "low": 7486,
+    "high": 8089,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4721,
+    "low": 4691,
+    "high": 6217,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 633,
+    "low": 355,
+    "high": 760,
+    "games": 32,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 562,
+    "low": 486,
+    "high": 674,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 357,
+    "low": 277,
+    "high": 550,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 658,
+    "low": 571,
+    "high": 722,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 610,
+    "low": 576,
+    "high": 1126,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 546,
+    "low": 445,
+    "high": 551,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 715,
+    "low": 437,
+    "high": 810,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 528,
+    "low": 315,
+    "high": 741,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 723,
+    "low": 415,
+    "high": 981,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 746,
+    "low": 518,
+    "high": 773,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "venueId": "petersen-events-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 1041,
+    "low": 871,
+    "high": 1077,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 5110,
+    "low": 4969,
+    "high": 5619,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4118,
+    "low": 4072,
+    "high": 4622,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5150,
+    "low": 5005,
+    "high": 5623,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 3946,
+    "low": 3528,
+    "high": 5023,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 4439,
+    "low": 4172,
+    "high": 5113,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 5028,
+    "low": 5007,
+    "high": 5084,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 5608,
+    "low": 4998,
+    "high": 5723,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 5320,
+    "low": 5136,
+    "high": 5901,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 5345,
+    "low": 5152,
+    "high": 5558,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "venueId": "fnb-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 5110,
+    "low": 5067,
+    "high": 5618,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "venueId": "joe-walton-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 2221,
+    "low": 1660,
+    "high": 2392,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "venueId": "joe-walton-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3412,
+    "low": 2994,
+    "high": 3497,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "venueId": "joe-walton-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2221,
+    "low": 1660,
+    "high": 2392,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "venueId": "joe-walton-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 2370,
+    "low": 2315,
+    "high": 2390,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "venueId": "joe-walton-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 2446,
+    "low": 2107,
+    "high": 2690,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "venueId": "joe-walton-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1453,
+    "low": 1135,
+    "high": 1998,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1023,
+    "low": 832,
+    "high": 1397,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1016,
+    "low": 585,
+    "high": 1303,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1023,
+    "low": 922,
+    "high": 1407,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 954,
+    "low": 777,
+    "high": 1064,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1261,
+    "low": 930,
+    "high": 1574,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1010,
+    "low": 953,
+    "high": 1387,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 838,
+    "low": 678,
+    "high": 972,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1268,
+    "low": 1157,
+    "high": 1412,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1336,
+    "low": 1210,
+    "high": 1558,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 914,
+    "low": 794,
+    "high": 1495,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 1611,
+    "low": 1583,
+    "high": 1630,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 822,
+    "low": 514,
+    "high": 913,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 321,
+    "low": 217,
+    "high": 472,
+    "games": 27,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 420,
+    "low": 257,
+    "high": 842,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 515,
+    "low": 281,
+    "high": 873,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 412,
+    "low": 319,
+    "high": 851,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 357,
+    "low": 303,
+    "high": 393,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 221,
+    "low": 166,
+    "high": 271,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 213,
+    "low": 207,
+    "high": 412,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "venueId": "upmc-events-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 213,
+    "low": 146,
+    "high": 220,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 66708,
+    "low": 66193,
+    "high": 67301,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 66734,
+    "low": 66541,
+    "high": 67207,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 64135,
+    "low": 63833,
+    "high": 64350,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 66376,
+    "low": 65969,
+    "high": 66637,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 66646,
+    "low": 66139,
+    "high": 66979,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 66901,
+    "low": 66496,
+    "high": 67353,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 67249,
+    "low": 67023,
+    "high": 67353,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "venueId": "acrisure-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 66677,
+    "low": 66132,
+    "high": 67551,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
     "metroId": "portland",
     "teamId": "blazers",
     "venueId": "moda-center",
@@ -45980,6 +47852,2082 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 1149,
     "games": 4,
     "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 25554,
+    "low": 19700,
+    "high": 30365,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18466,
+    "low": 17072,
+    "high": 25052,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 25554,
+    "low": 20392,
+    "high": 30186,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 23893,
+    "low": 19158,
+    "high": 32520,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 30241,
+    "low": 29044,
+    "high": 31037,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 21754,
+    "low": 20194,
+    "high": 23650,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "madison-square-garden",
+    "dayClass": "all",
+    "month": null,
+    "count": 19327,
+    "low": 18920,
+    "high": 19570,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 2550,
+    "low": 2328,
+    "high": 3664,
+    "games": 25,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2471,
+    "low": 2147,
+    "high": 3020,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3020,
+    "low": 2471,
+    "high": 4951,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2140,
+    "low": 2058,
+    "high": 2144,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2493,
+    "low": 2131,
+    "high": 3682,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3078,
+    "low": 2526,
+    "high": 3954,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 3722,
+    "low": 3038,
+    "high": 4358,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 3078,
+    "low": 3003,
+    "high": 3664,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 6374,
+    "low": 4915,
+    "high": 7672,
+    "games": 224,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7375,
+    "low": 7347,
+    "high": 7660,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4863,
+    "low": 4076,
+    "high": 5931,
+    "games": 103,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 5638,
+    "low": 4053,
+    "high": 6984,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 5192,
+    "low": 3984,
+    "high": 5814,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 4914,
+    "low": 4308,
+    "high": 6098,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 4433,
+    "low": 3799,
+    "high": 4889,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 4582,
+    "low": 4032,
+    "high": 5290,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 5149,
+    "low": 4410,
+    "high": 6745,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7553,
+    "low": 7137,
+    "high": 8121,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 7786,
+    "low": 7180,
+    "high": 8372,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 7154,
+    "low": 6865,
+    "high": 7806,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 7343,
+    "low": 7146,
+    "high": 7530,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 7780,
+    "low": 7402,
+    "high": 8145,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 7634,
+    "low": 7282,
+    "high": 7995,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 9119,
+    "low": 8363,
+    "high": 9144,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8401,
+    "low": 7390,
+    "high": 9060,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 7484,
+    "low": 6971,
+    "high": 8312,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 8394,
+    "low": 6682,
+    "high": 8947,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 8491,
+    "low": 8119,
+    "high": 9019,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 8509,
+    "low": 8145,
+    "high": 10184,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 8181,
+    "low": 7694,
+    "high": 8868,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 8876,
+    "low": 6637,
+    "high": 9115,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6472,
+    "low": 5591,
+    "high": 7272,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 5971,
+    "low": 5591,
+    "high": 6489,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 6573,
+    "low": 5758,
+    "high": 7011,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 7141,
+    "low": 6627,
+    "high": 7582,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 5620,
+    "low": 5105,
+    "high": 5714,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 6820,
+    "low": 5910,
+    "high": 7137,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 7410,
+    "low": 6584,
+    "high": 7969,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18700,
+    "low": 18503,
+    "high": 18825,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18817,
+    "low": 18611,
+    "high": 18855,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 14875,
+    "low": 14068,
+    "high": 16593,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18700,
+    "low": 18498,
+    "high": 18758,
+    "games": 56,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18700,
+    "low": 18302,
+    "high": 18750,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18700,
+    "low": 18599,
+    "high": 18715,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18700,
+    "low": 18641,
+    "high": 18780,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18712,
+    "low": 18567,
+    "high": 18867,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18700,
+    "low": 18299,
+    "high": 18700,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18700,
+    "low": 18500,
+    "high": 18753,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18700,
+    "low": 18311,
+    "high": 18700,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18747,
+    "low": 18700,
+    "high": 18819,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18763,
+    "low": 18605,
+    "high": 18829,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18557,
+    "low": 18309,
+    "high": 18832,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18803,
+    "low": 18353,
+    "high": 18908,
+    "games": 30,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18718,
+    "low": 18321,
+    "high": 18903,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18965,
+    "low": 18920,
+    "high": 18992,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18876,
+    "low": 18728,
+    "high": 18935,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18500,
+    "low": 18299,
+    "high": 18727,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18797,
+    "low": 18321,
+    "high": 18825,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18700,
+    "low": 18663,
+    "high": 18796,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18891,
+    "low": 18820,
+    "high": 18894,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18700,
+    "low": 18700,
+    "high": 18717,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18748,
+    "low": 18600,
+    "high": 18796,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18503,
+    "low": 18304,
+    "high": 18700,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 7130,
+    "low": 7021,
+    "high": 8569,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7126,
+    "low": 7016,
+    "high": 8545,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 7018,
+    "low": 6627,
+    "high": 7034,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 9695,
+    "low": 9173,
+    "high": 10025,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 7133,
+    "low": 7130,
+    "high": 7930,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 7122,
+    "low": 7116,
+    "high": 7586,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 14516,
+    "low": 12594,
+    "high": 16105,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 12949,
+    "low": 12719,
+    "high": 16034,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 13456,
+    "low": 12069,
+    "high": 15013,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 13836,
+    "low": 13515,
+    "high": 15636,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 12066,
+    "low": 11032,
+    "high": 14416,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19367,
+    "low": 15453,
+    "high": 19434,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 13471,
+    "low": 12242,
+    "high": 14588,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 12976,
+    "low": 12248,
+    "high": 13676,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12887,
+    "low": 12498,
+    "high": 13894,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 12887,
+    "low": 12498,
+    "high": 13894,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15411,
+    "low": 14279,
+    "high": 16886,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 15850,
+    "low": 13851,
+    "high": 16261,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 15299,
+    "low": 14880,
+    "high": 16967,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 14862,
+    "low": 12594,
+    "high": 16105,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 5500,
+    "low": 4927,
+    "high": 5500,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5500,
+    "low": 4582,
+    "high": 5500,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4368,
+    "low": 4287,
+    "high": 4441,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5145,
+    "low": 4700,
+    "high": 5500,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 5500,
+    "low": 5145,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 7225,
+    "low": 5465,
+    "high": 9462,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 12800,
+    "low": 9828,
+    "high": 13600,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7225,
+    "low": 5500,
+    "high": 11632,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 5500,
+    "low": 3818,
+    "high": 8618,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1263,
+    "low": 391,
+    "high": 2162,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1471,
+    "low": 954,
+    "high": 1507,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1264,
+    "low": 362,
+    "high": 2057,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2162,
+    "low": 1389,
+    "high": 2370,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1900,
+    "low": 1397,
+    "high": 2128,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 1362,
+    "low": 1194,
+    "high": 1996,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1264,
+    "low": 704,
+    "high": 1276,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 195,
+    "low": 158,
+    "high": 364,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1286,
+    "low": 742,
+    "high": 2469,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1850,
+    "low": 1328,
+    "high": 2318,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2143,
+    "low": 1322,
+    "high": 2754,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 704,
+    "low": 363,
+    "high": 1421,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 592,
+    "low": 343,
+    "high": 953,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 587,
+    "low": 225,
+    "high": 898,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 537,
+    "low": 228,
+    "high": 867,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 378,
+    "low": 145,
+    "high": 685,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 382,
+    "low": 278,
+    "high": 725,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 749,
+    "low": 498,
+    "high": 1048,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1113,
+    "low": 845,
+    "high": 1463,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 521,
+    "low": 431,
+    "high": 580,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 50500,
+    "low": 47667,
+    "high": 50500,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 50500,
+    "low": 49466,
+    "high": 50500,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 50500,
+    "low": 47667,
+    "high": 50500,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 47996,
+    "low": 45406,
+    "high": 50500,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 50500,
+    "low": 48267,
+    "high": 50500,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 50500,
+    "low": 48898,
+    "high": 50500,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 20753,
+    "low": 19594,
+    "high": 21750,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17242,
+    "low": 16661,
+    "high": 17287,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20577,
+    "low": 19859,
+    "high": 20892,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 20031,
+    "low": 19686,
+    "high": 20298,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 20689,
+    "low": 20577,
+    "high": 21027,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16869,
+    "low": 16741,
+    "high": 18813,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 20549,
+    "low": 19496,
+    "high": 20901,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19555,
+    "low": 18226,
+    "high": 21750,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18891,
+    "low": 18050,
+    "high": 20104,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18720,
+    "low": 18255,
+    "high": 19336,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18608,
+    "low": 18596,
+    "high": 19284,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 2920,
+    "low": 2417,
+    "high": 3681,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2659,
+    "low": 2453,
+    "high": 3089,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3320,
+    "low": 2892,
+    "high": 3808,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2502,
+    "low": 2476,
+    "high": 2763,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2249,
+    "low": 2037,
+    "high": 2533,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3139,
+    "low": 2417,
+    "high": 4600,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 3476,
+    "low": 3076,
+    "high": 4313,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 2415,
+    "low": 2381,
+    "high": 2622,
+    "games": 5,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "sacramento",
@@ -60514,3954 +64462,6 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "venueId": "arthur-j-rooney-athletic-field",
-    "dayClass": "all",
-    "month": null,
-    "count": 1656,
-    "low": 1402,
-    "high": 2487,
-    "games": 11,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "venueId": "arthur-j-rooney-athletic-field",
-    "dayClass": "opener",
-    "month": null,
-    "count": 1522,
-    "low": 1215,
-    "high": 1693,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "venueId": "arthur-j-rooney-athletic-field",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 1656,
-    "low": 1402,
-    "high": 2487,
-    "games": 11,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "venueId": "arthur-j-rooney-athletic-field",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 2961,
-    "low": 2484,
-    "high": 2987,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "venueId": "arthur-j-rooney-athletic-field",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 1654,
-    "low": 1653,
-    "high": 1656,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "all",
-    "month": null,
-    "count": 2341,
-    "low": 2108,
-    "high": 2555,
-    "games": 47,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "opener",
-    "month": null,
-    "count": 2274,
-    "low": 2204,
-    "high": 2319,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 2266,
-    "low": 2118,
-    "high": 2489,
-    "games": 25,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 2476,
-    "low": 2360,
-    "high": 2632,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 2261,
-    "low": 2192,
-    "high": 2436,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 2112,
-    "low": 2057,
-    "high": 2179,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 2082,
-    "low": 2065,
-    "high": 2096,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "friday",
-    "month": null,
-    "count": 2100,
-    "low": 2047,
-    "high": 2143,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "friday",
-    "month": 12,
-    "count": 2033,
-    "low": 2027,
-    "high": 2061,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 2535,
-    "low": 2291,
-    "high": 2830,
-    "games": 15,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 3027,
-    "low": 2835,
-    "high": 3066,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 2556,
-    "low": 2500,
-    "high": 2687,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 2581,
-    "low": 2552,
-    "high": 2858,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 2104,
-    "low": 2010,
-    "high": 2188,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "all",
-    "month": null,
-    "count": 878,
-    "low": 762,
-    "high": 1067,
-    "games": 29,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 878,
-    "low": 722,
-    "high": 984,
-    "games": 13,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 788,
-    "low": 676,
-    "high": 878,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 3005,
-    "low": 2086,
-    "high": 3060,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 814,
-    "low": 735,
-    "high": 912,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 843,
-    "low": 815,
-    "high": 1050,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 988,
-    "low": 893,
-    "high": 1128,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 895,
-    "low": 747,
-    "high": 1154,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "venueId": "upmc-cooper-fieldhouse",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 762,
-    "low": 702,
-    "high": 1067,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "all",
-    "month": null,
-    "count": 17543,
-    "low": 16299,
-    "high": 18223,
-    "games": 119,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "opener",
-    "month": null,
-    "count": 18190,
-    "low": 17149,
-    "high": 18301,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "preseason",
-    "month": null,
-    "count": 12999,
-    "low": 11573,
-    "high": 14111,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 17072,
-    "low": 15838,
-    "high": 18190,
-    "games": 59,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 16715,
-    "low": 16125,
-    "high": 17963,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 17564,
-    "low": 16972,
-    "high": 17979,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 17484,
-    "low": 17050,
-    "high": 18052,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 18246,
-    "low": 17406,
-    "high": 18308,
-    "games": 4,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 10,
-    "count": 16274,
-    "low": 14630,
-    "high": 17168,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 17035,
-    "low": 16053,
-    "high": 18268,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 15632,
-    "low": 15225,
-    "high": 17634,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "friday",
-    "month": null,
-    "count": 17222,
-    "low": 17074,
-    "high": 17527,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 18207,
-    "low": 17320,
-    "high": 18336,
-    "games": 37,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 18276,
-    "low": 18162,
-    "high": 18334,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 18077,
-    "low": 17443,
-    "high": 18356,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 18388,
-    "low": 18371,
-    "high": 18397,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 17174,
-    "low": 16352,
-    "high": 17632,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 17573,
-    "low": 17064,
-    "high": 18203,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 18216,
-    "low": 17290,
-    "high": 18303,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 17724,
-    "low": 17068,
-    "high": 18176,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 18212,
-    "low": 17699,
-    "high": 18317,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "sunday",
-    "month": 3,
-    "count": 17753,
-    "low": 16738,
-    "high": 18039,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "venueId": "ppg-paints-arena",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 17695,
-    "low": 16691,
-    "high": 18026,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "all",
-    "month": null,
-    "count": 19358,
-    "low": 13623,
-    "high": 24724,
-    "games": 242,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "opener",
-    "month": null,
-    "count": 38400,
-    "low": 37647,
-    "high": 38693,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 14005,
-    "low": 10818,
-    "high": 18750,
-    "games": 117,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 9611,
-    "low": 8586,
-    "high": 10479,
-    "games": 26,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": 5,
-    "count": 13516,
-    "low": 10842,
-    "high": 15213,
-    "games": 17,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": 6,
-    "count": 17815,
-    "low": 14822,
-    "high": 24317,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": 7,
-    "count": 19379,
-    "low": 17257,
-    "high": 20091,
-    "games": 17,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": 8,
-    "count": 17477,
-    "low": 14005,
-    "high": 19952,
-    "games": 17,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "weekday",
-    "month": 9,
-    "count": 13332,
-    "low": 11380,
-    "high": 15793,
-    "games": 22,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": null,
-    "count": 23721,
-    "low": 20102,
-    "high": 28649,
-    "games": 38,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": 4,
-    "count": 24198,
-    "low": 21079,
-    "high": 26049,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": 5,
-    "count": 20646,
-    "low": 16454,
-    "high": 27107,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": 6,
-    "count": 25186,
-    "low": 21415,
-    "high": 27828,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": 7,
-    "count": 31246,
-    "low": 24088,
-    "high": 36176,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": 8,
-    "count": 22886,
-    "low": 22463,
-    "high": 29547,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "friday",
-    "month": 9,
-    "count": 21474,
-    "low": 15738,
-    "high": 24152,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 27858,
-    "low": 22773,
-    "high": 32578,
-    "games": 46,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 29260,
-    "low": 26506,
-    "high": 35927,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 24462,
-    "low": 23860,
-    "high": 30414,
-    "games": 10,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": 6,
-    "count": 30363,
-    "low": 28230,
-    "high": 31632,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 32545,
-    "low": 26190,
-    "high": 38307,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 30274,
-    "low": 26724,
-    "high": 36826,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 18209,
-    "low": 16707,
-    "high": 19971,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 20341,
-    "low": 17845,
-    "high": 24903,
-    "games": 41,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": 4,
-    "count": 16127,
-    "low": 12685,
-    "high": 20193,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": 5,
-    "count": 18554,
-    "low": 17184,
-    "high": 19358,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": 6,
-    "count": 24463,
-    "low": 22182,
-    "high": 25080,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": 7,
-    "count": 28034,
-    "low": 21371,
-    "high": 33796,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": 8,
-    "count": 22753,
-    "low": 20770,
-    "high": 25239,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "venueId": "pnc-park",
-    "dayClass": "sunday",
-    "month": 9,
-    "count": 15543,
-    "low": 13077,
-    "high": 19085,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "venueId": "acrisure-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 49398,
-    "low": 47266,
-    "high": 56693,
-    "games": 17,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "venueId": "acrisure-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 45096,
-    "low": 44856,
-    "high": 49051,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "venueId": "acrisure-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 49773,
-    "low": 48431,
-    "high": 57125,
-    "games": 15,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "venueId": "acrisure-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 48491,
-    "low": 48427,
-    "high": 49185,
-    "games": 6,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "venueId": "acrisure-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 48307,
-    "low": 46704,
-    "high": 50105,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "venueId": "acrisure-stadium",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 57557,
-    "low": 56693,
-    "high": 58667,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 7464,
-    "low": 6247,
-    "high": 8526,
-    "games": 50,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 6579,
-    "low": 5815,
-    "high": 6688,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 6914,
-    "low": 5319,
-    "high": 7837,
-    "games": 22,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 8770,
-    "low": 7723,
-    "high": 10900,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 8168,
-    "low": 7034,
-    "high": 9507,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 6310,
-    "low": 5063,
-    "high": 6523,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 5447,
-    "low": 4881,
-    "high": 6371,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 7642,
-    "low": 6609,
-    "high": 7818,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 7642,
-    "low": 6609,
-    "high": 7818,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 7884,
-    "low": 6666,
-    "high": 9825,
-    "games": 19,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 6915,
-    "low": 6286,
-    "high": 8332,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 9721,
-    "low": 7155,
-    "high": 11280,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 7808,
-    "low": 7486,
-    "high": 8089,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 4721,
-    "low": 4691,
-    "high": 6217,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 633,
-    "low": 355,
-    "high": 760,
-    "games": 32,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 562,
-    "low": 486,
-    "high": 674,
-    "games": 16,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 357,
-    "low": 277,
-    "high": 550,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 658,
-    "low": 571,
-    "high": 722,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 610,
-    "low": 576,
-    "high": 1126,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 546,
-    "low": 445,
-    "high": 551,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 715,
-    "low": 437,
-    "high": 810,
-    "games": 6,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 528,
-    "low": 315,
-    "high": 741,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 723,
-    "low": 415,
-    "high": 981,
-    "games": 10,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "sunday",
-    "month": 1,
-    "count": 746,
-    "low": 518,
-    "high": 773,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "venueId": "petersen-events-center",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 1041,
-    "low": 871,
-    "high": 1077,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 5110,
-    "low": 4969,
-    "high": 5619,
-    "games": 43,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 4118,
-    "low": 4072,
-    "high": 4622,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 5150,
-    "low": 5005,
-    "high": 5623,
-    "games": 39,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 3946,
-    "low": 3528,
-    "high": 5023,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 4439,
-    "low": 4172,
-    "high": 5113,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 6,
-    "count": 5028,
-    "low": 5007,
-    "high": 5084,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 5608,
-    "low": 4998,
-    "high": 5723,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 5320,
-    "low": 5136,
-    "high": 5901,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 5345,
-    "low": 5152,
-    "high": 5558,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "venueId": "fnb-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 5110,
-    "low": 5067,
-    "high": 5618,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "venueId": "joe-walton-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 2221,
-    "low": 1660,
-    "high": 2392,
-    "games": 14,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "venueId": "joe-walton-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 3412,
-    "low": 2994,
-    "high": 3497,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "venueId": "joe-walton-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 2221,
-    "low": 1660,
-    "high": 2392,
-    "games": 14,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "venueId": "joe-walton-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 2370,
-    "low": 2315,
-    "high": 2390,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "venueId": "joe-walton-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 2446,
-    "low": 2107,
-    "high": 2690,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "venueId": "joe-walton-stadium",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 1453,
-    "low": 1135,
-    "high": 1998,
-    "games": 6,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 1023,
-    "low": 832,
-    "high": 1397,
-    "games": 43,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 1016,
-    "low": 585,
-    "high": 1303,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 1023,
-    "low": 922,
-    "high": 1407,
-    "games": 21,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 954,
-    "low": 777,
-    "high": 1064,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 1261,
-    "low": 930,
-    "high": 1574,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 1010,
-    "low": 953,
-    "high": 1387,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 838,
-    "low": 678,
-    "high": 972,
-    "games": 5,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 1268,
-    "low": 1157,
-    "high": 1412,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 1336,
-    "low": 1210,
-    "high": 1558,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 914,
-    "low": 794,
-    "high": 1495,
-    "games": 10,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 1611,
-    "low": 1583,
-    "high": 1630,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "sunday",
-    "month": 11,
-    "count": 822,
-    "low": 514,
-    "high": 913,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 321,
-    "low": 217,
-    "high": 472,
-    "games": 27,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 420,
-    "low": 257,
-    "high": 842,
-    "games": 14,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 515,
-    "low": 281,
-    "high": 873,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 412,
-    "low": 319,
-    "high": 851,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 357,
-    "low": 303,
-    "high": 393,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 221,
-    "low": 166,
-    "high": 271,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 213,
-    "low": 207,
-    "high": 412,
-    "games": 9,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "venueId": "upmc-events-center",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 213,
-    "low": 146,
-    "high": 220,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 66708,
-    "low": 66193,
-    "high": 67301,
-    "games": 22,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 66734,
-    "low": 66541,
-    "high": 67207,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "preseason",
-    "month": null,
-    "count": 64135,
-    "low": 63833,
-    "high": 64350,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 66376,
-    "low": 65969,
-    "high": 66637,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 66646,
-    "low": 66139,
-    "high": 66979,
-    "games": 3,
-    "seasons": "2023–2024"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 66901,
-    "low": 66496,
-    "high": 67353,
-    "games": 14,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "sunday",
-    "month": 10,
-    "count": 67249,
-    "low": 67023,
-    "high": 67353,
-    "games": 6,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "venueId": "acrisure-stadium",
-    "dayClass": "sunday",
-    "month": 11,
-    "count": 66677,
-    "low": 66132,
-    "high": 67551,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "venueId": "wallace-wade-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 25554,
-    "low": 19700,
-    "high": 30365,
-    "games": 16,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "venueId": "wallace-wade-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 18466,
-    "low": 17072,
-    "high": 25052,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "venueId": "wallace-wade-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 25554,
-    "low": 20392,
-    "high": 30186,
-    "games": 14,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "venueId": "wallace-wade-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 23893,
-    "low": 19158,
-    "high": 32520,
-    "games": 7,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "venueId": "wallace-wade-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 30241,
-    "low": 29044,
-    "high": 31037,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "venueId": "wallace-wade-stadium",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 21754,
-    "low": 20194,
-    "high": 23650,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 46,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "friday",
-    "month": null,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 21,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 9314,
-    "low": 9314,
-    "high": 9314,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "venueId": "madison-square-garden",
-    "dayClass": "all",
-    "month": null,
-    "count": 19327,
-    "low": 18920,
-    "high": 19570,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 2550,
-    "low": 2328,
-    "high": 3664,
-    "games": 25,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 2471,
-    "low": 2147,
-    "high": 3020,
-    "games": 13,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 3020,
-    "low": 2471,
-    "high": 4951,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 2140,
-    "low": 2058,
-    "high": 2144,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 2493,
-    "low": 2131,
-    "high": 3682,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 3078,
-    "low": 2526,
-    "high": 3954,
-    "games": 11,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "sunday",
-    "month": 1,
-    "count": 3722,
-    "low": 3038,
-    "high": 4358,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "venueId": "cameron-indoor-stadium",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 3078,
-    "low": 3003,
-    "high": 3664,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "all",
-    "month": null,
-    "count": 6374,
-    "low": 4915,
-    "high": 7672,
-    "games": 224,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "opener",
-    "month": null,
-    "count": 7375,
-    "low": 7347,
-    "high": 7660,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 4863,
-    "low": 4076,
-    "high": 5931,
-    "games": 103,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 5638,
-    "low": 4053,
-    "high": 6984,
-    "games": 20,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": 5,
-    "count": 5192,
-    "low": 3984,
-    "high": 5814,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": 6,
-    "count": 4914,
-    "low": 4308,
-    "high": 6098,
-    "games": 22,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": 7,
-    "count": 4433,
-    "low": 3799,
-    "high": 4889,
-    "games": 16,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": 8,
-    "count": 4582,
-    "low": 4032,
-    "high": 5290,
-    "games": 19,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "weekday",
-    "month": 9,
-    "count": 5149,
-    "low": 4410,
-    "high": 6745,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": null,
-    "count": 7553,
-    "low": 7137,
-    "high": 8121,
-    "games": 37,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": 4,
-    "count": 7786,
-    "low": 7180,
-    "high": 8372,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": 5,
-    "count": 7154,
-    "low": 6865,
-    "high": 7806,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": 6,
-    "count": 7343,
-    "low": 7146,
-    "high": 7530,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": 7,
-    "count": 7780,
-    "low": 7402,
-    "high": 8145,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": 8,
-    "count": 7634,
-    "low": 7282,
-    "high": 7995,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "friday",
-    "month": 9,
-    "count": 9119,
-    "low": 8363,
-    "high": 9144,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 8401,
-    "low": 7390,
-    "high": 9060,
-    "games": 46,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 7484,
-    "low": 6971,
-    "high": 8312,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 8394,
-    "low": 6682,
-    "high": 8947,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": 6,
-    "count": 8491,
-    "low": 8119,
-    "high": 9019,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 8509,
-    "low": 8145,
-    "high": 10184,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 8181,
-    "low": 7694,
-    "high": 8868,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 8876,
-    "low": 6637,
-    "high": 9115,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 6472,
-    "low": 5591,
-    "high": 7272,
-    "games": 38,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": 4,
-    "count": 5971,
-    "low": 5591,
-    "high": 6489,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": 5,
-    "count": 6573,
-    "low": 5758,
-    "high": 7011,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": 6,
-    "count": 7141,
-    "low": 6627,
-    "high": 7582,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": 7,
-    "count": 5620,
-    "low": 5105,
-    "high": 5714,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": 8,
-    "count": 6820,
-    "low": 5910,
-    "high": 7137,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "venueId": "durham-bulls-athletic-park",
-    "dayClass": "sunday",
-    "month": 9,
-    "count": 7410,
-    "low": 6584,
-    "high": 7969,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 18700,
-    "low": 18503,
-    "high": 18825,
-    "games": 120,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 18817,
-    "low": 18611,
-    "high": 18855,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "preseason",
-    "month": null,
-    "count": 14875,
-    "low": 14068,
-    "high": 16593,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 18700,
-    "low": 18498,
-    "high": 18758,
-    "games": 56,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 18700,
-    "low": 18302,
-    "high": 18750,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 18700,
-    "low": 18599,
-    "high": 18715,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 18700,
-    "low": 18641,
-    "high": 18780,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 18712,
-    "low": 18567,
-    "high": 18867,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 10,
-    "count": 18700,
-    "low": 18299,
-    "high": 18700,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 18700,
-    "low": 18500,
-    "high": 18753,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 18700,
-    "low": 18311,
-    "high": 18700,
-    "games": 10,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 18747,
-    "low": 18700,
-    "high": 18819,
-    "games": 14,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "friday",
-    "month": 1,
-    "count": 18763,
-    "low": 18605,
-    "high": 18829,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 18557,
-    "low": 18309,
-    "high": 18832,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 18803,
-    "low": 18353,
-    "high": 18908,
-    "games": 30,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 18718,
-    "low": 18321,
-    "high": 18903,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 18965,
-    "low": 18920,
-    "high": 18992,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 18876,
-    "low": 18728,
-    "high": 18935,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 18500,
-    "low": 18299,
-    "high": 18727,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 18797,
-    "low": 18321,
-    "high": 18825,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 18700,
-    "low": 18663,
-    "high": 18796,
-    "games": 20,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "sunday",
-    "month": 1,
-    "count": 18891,
-    "low": 18820,
-    "high": 18894,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "sunday",
-    "month": 3,
-    "count": 18700,
-    "low": 18700,
-    "high": 18717,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "sunday",
-    "month": 11,
-    "count": 18748,
-    "low": 18600,
-    "high": 18796,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "venueId": "lenovo-center",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 18503,
-    "low": 18304,
-    "high": 18700,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "venueId": "first-horizon-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 7130,
-    "low": 7021,
-    "high": 8569,
-    "games": 22,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "venueId": "first-horizon-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 7126,
-    "low": 7016,
-    "high": 8545,
-    "games": 19,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "venueId": "first-horizon-stadium",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 7018,
-    "low": 6627,
-    "high": 7034,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "venueId": "first-horizon-stadium",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 9695,
-    "low": 9173,
-    "high": 10025,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "venueId": "first-horizon-stadium",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 7133,
-    "low": 7130,
-    "high": 7930,
-    "games": 3,
-    "seasons": "2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "venueId": "first-horizon-stadium",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 7122,
-    "low": 7116,
-    "high": 7586,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "venueId": "carter-finley-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 56919,
-    "low": 56919,
-    "high": 56919,
-    "games": 17,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "venueId": "carter-finley-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 56919,
-    "low": 56919,
-    "high": 56919,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "venueId": "carter-finley-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 56919,
-    "low": 56919,
-    "high": 56919,
-    "games": 15,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "venueId": "carter-finley-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 56919,
-    "low": 56919,
-    "high": 56919,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "venueId": "carter-finley-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 56919,
-    "low": 56919,
-    "high": 56919,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "venueId": "carter-finley-stadium",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 56919,
-    "low": 56919,
-    "high": 56919,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 14516,
-    "low": 12594,
-    "high": 16105,
-    "games": 45,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 12949,
-    "low": 12719,
-    "high": 16034,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 13456,
-    "low": 12069,
-    "high": 15013,
-    "games": 20,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 13836,
-    "low": 13515,
-    "high": 15636,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 12066,
-    "low": 11032,
-    "high": 14416,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 19367,
-    "low": 15453,
-    "high": 19434,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 13471,
-    "low": 12242,
-    "high": 14588,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 12976,
-    "low": 12248,
-    "high": 13676,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 12887,
-    "low": 12498,
-    "high": 13894,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 12887,
-    "low": 12498,
-    "high": 13894,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 15411,
-    "low": 14279,
-    "high": 16886,
-    "games": 20,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 15850,
-    "low": 13851,
-    "high": 16261,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 15299,
-    "low": 14880,
-    "high": 16967,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "lenovo-center",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 14862,
-    "low": 12594,
-    "high": 16105,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "all",
-    "month": null,
-    "count": 5500,
-    "low": 5500,
-    "high": 5500,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 5500,
-    "low": 5500,
-    "high": 5500,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 5500,
-    "low": 5500,
-    "high": 5500,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "all",
-    "month": null,
-    "count": 5500,
-    "low": 4927,
-    "high": 5500,
-    "games": 28,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 5500,
-    "low": 4582,
-    "high": 5500,
-    "games": 14,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 5500,
-    "low": 5500,
-    "high": 5500,
-    "games": 6,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 4368,
-    "low": 4287,
-    "high": 4441,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 5145,
-    "low": 4700,
-    "high": 5500,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 5500,
-    "low": 5500,
-    "high": 5500,
-    "games": 13,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "sunday",
-    "month": 1,
-    "count": 5500,
-    "low": 5500,
-    "high": 5500,
-    "games": 6,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "venueId": "reynolds-coliseum",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 5500,
-    "low": 5145,
-    "high": 5500,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-football",
-    "venueId": "o-kelly-riddick-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 7225,
-    "low": 5465,
-    "high": 9462,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-football",
-    "venueId": "o-kelly-riddick-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 12800,
-    "low": 9828,
-    "high": 13600,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-football",
-    "venueId": "o-kelly-riddick-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 7225,
-    "low": 5500,
-    "high": 11632,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-football",
-    "venueId": "o-kelly-riddick-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 5500,
-    "low": 3818,
-    "high": 8618,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "all",
-    "month": null,
-    "count": 1263,
-    "low": 391,
-    "high": 2162,
-    "games": 37,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "opener",
-    "month": null,
-    "count": 1471,
-    "low": 954,
-    "high": 1507,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 1264,
-    "low": 362,
-    "high": 2057,
-    "games": 17,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 2162,
-    "low": 1389,
-    "high": 2370,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 1900,
-    "low": 1397,
-    "high": 2128,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 1362,
-    "low": 1194,
-    "high": 1996,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 1264,
-    "low": 704,
-    "high": 1276,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 195,
-    "low": 158,
-    "high": 364,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 1286,
-    "low": 742,
-    "high": 2469,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 1850,
-    "low": 1328,
-    "high": 2318,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 2143,
-    "low": 1322,
-    "high": 2754,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 704,
-    "low": 363,
-    "high": 1421,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "all",
-    "month": null,
-    "count": 592,
-    "low": 343,
-    "high": 953,
-    "games": 23,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 587,
-    "low": 225,
-    "high": 898,
-    "games": 15,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 537,
-    "low": 228,
-    "high": 867,
-    "games": 4,
-    "seasons": "2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 378,
-    "low": 145,
-    "high": 685,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 382,
-    "low": 278,
-    "high": 725,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 749,
-    "low": 498,
-    "high": 1048,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 1113,
-    "low": 845,
-    "high": 1463,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "venueId": "mcdougald-mclendon-arena",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 521,
-    "low": 431,
-    "high": 580,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "venueId": "kenan-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 50500,
-    "low": 47667,
-    "high": 50500,
-    "games": 17,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "venueId": "kenan-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 50500,
-    "low": 49466,
-    "high": 50500,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "venueId": "kenan-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 50500,
-    "low": 47667,
-    "high": 50500,
-    "games": 17,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "venueId": "kenan-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 47996,
-    "low": 45406,
-    "high": 50500,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "venueId": "kenan-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 50500,
-    "low": 48267,
-    "high": 50500,
-    "games": 7,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "venueId": "kenan-stadium",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 50500,
-    "low": 48898,
-    "high": 50500,
-    "games": 6,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 20753,
-    "low": 19594,
-    "high": 21750,
-    "games": 45,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 17242,
-    "low": 16661,
-    "high": 17287,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 20577,
-    "low": 19859,
-    "high": 20892,
-    "games": 19,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 20031,
-    "low": 19686,
-    "high": 20298,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 20689,
-    "low": 20577,
-    "high": 21027,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 16869,
-    "low": 16741,
-    "high": 18813,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 20549,
-    "low": 19496,
-    "high": 20901,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 19555,
-    "low": 18226,
-    "high": 21750,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 18891,
-    "low": 18050,
-    "high": 20104,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 21750,
-    "low": 21750,
-    "high": 21750,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 21750,
-    "low": 21750,
-    "high": 21750,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 21750,
-    "low": 21750,
-    "high": 21750,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 21750,
-    "low": 21750,
-    "high": 21750,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 18720,
-    "low": 18255,
-    "high": 19336,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "venueId": "dean-smith-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 18608,
-    "low": 18596,
-    "high": 19284,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "all",
-    "month": null,
-    "count": 2920,
-    "low": 2417,
-    "high": 3681,
-    "games": 28,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 2659,
-    "low": 2453,
-    "high": 3089,
-    "games": 10,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 3320,
-    "low": 2892,
-    "high": 3808,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 2502,
-    "low": 2476,
-    "high": 2763,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 2249,
-    "low": 2037,
-    "high": 2533,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 3139,
-    "low": 2417,
-    "high": 4600,
-    "games": 15,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "sunday",
-    "month": 1,
-    "count": 3476,
-    "low": 3076,
-    "high": 4313,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "venueId": "carmichael-arena",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 2415,
-    "low": 2381,
-    "high": 2622,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
     "metroId": "st-louis",
     "teamId": "blues",
     "venueId": "enterprise-center",
@@ -65838,11 +65838,39 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 3
   },
   {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "season": 2026,
+    "level": 0.906,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "season": 2026,
+    "level": 0.989,
+    "games": 3
+  },
+  {
     "metroId": "portland",
     "teamId": "psu-football",
     "season": 2026,
     "level": 0.742,
     "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "season": 2026,
+    "level": 0.801,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "season": 2026,
+    "level": 1,
+    "games": 4
   },
   {
     "metroId": "sacramento",
@@ -65941,34 +65969,6 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.25,
     "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "season": 2026,
-    "level": 0.906,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "season": 2026,
-    "level": 0.989,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "season": 2026,
-    "level": 0.801,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "season": 2026,
-    "level": 1,
-    "games": 4
   }
 ];
 
@@ -87878,6 +87878,916 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 2
   },
   {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "opponent": "c-connecticut",
+    "ratio": 0.81,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "opponent": "long-island",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "opponent": "saint-francis",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-football",
+    "opponent": "stonehill",
+    "ratio": 0.722,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "cleary",
+    "ratio": 0.979,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "davidson",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "dayton",
+    "ratio": 1.138,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "fordham",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "g-washington",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "la-salle",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "rhode-island",
+    "ratio": 1.042,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "richmond",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "saint-joseph-s",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "saint-louis",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "saint-peter-s",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "st-bonaventure",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "uc-irvine",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-mbb",
+    "opponent": "vcu",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "opponent": "dayton",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "opponent": "saint-francis",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "opponent": "saint-louis",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "opponent": "st-bonaventure",
+    "ratio": 0.958,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "opponent": "vcu",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "avalanche",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "blackhawks",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "blue-jackets",
+    "ratio": 0.975,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "blues",
+    "ratio": 0.925,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "bruins",
+    "ratio": 0.985,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "canadiens",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "canucks",
+    "ratio": 0.949,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "capitals",
+    "ratio": 1.018,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "devils",
+    "ratio": 0.98,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "ducks",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "flames",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "flyers",
+    "ratio": 1.027,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "golden-knights",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "hurricanes",
+    "ratio": 1.017,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "islanders",
+    "ratio": 1.004,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "jets",
+    "ratio": 1.007,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "kings",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "kraken",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "lightning",
+    "ratio": 0.956,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "maple-leafs",
+    "ratio": 0.981,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "oilers",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "panthers",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "predators",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "rangers",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "red-wings",
+    "ratio": 0.964,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "sabres",
+    "ratio": 1.005,
+    "games": 5
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "senators",
+    "ratio": 0.993,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "sharks",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "stars",
+    "ratio": 1.015,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "opponent": "wild",
+    "ratio": 1.032,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "angels",
+    "ratio": 1.145,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "braves",
+    "ratio": 1.069,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "brewers",
+    "ratio": 0.956,
+    "games": 21
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "cardinals",
+    "ratio": 0.974,
+    "games": 19
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "cubs",
+    "ratio": 1.047,
+    "games": 19
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "d-backs",
+    "ratio": 0.927,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "dodgers",
+    "ratio": 1.379,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "giants",
+    "ratio": 0.936,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "mariners",
+    "ratio": 1.047,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "marlins",
+    "ratio": 0.845,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "mets",
+    "ratio": 1.063,
+    "games": 10
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "nationals",
+    "ratio": 1.018,
+    "games": 13
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "orioles",
+    "ratio": 1.047,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "padres",
+    "ratio": 0.93,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "phillies",
+    "ratio": 1.245,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "rays",
+    "ratio": 1.027,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "red-sox",
+    "ratio": 1.118,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "reds",
+    "ratio": 0.939,
+    "games": 20
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "rockies",
+    "ratio": 0.972,
+    "games": 9
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "royals",
+    "ratio": 1.061,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "tigers",
+    "ratio": 1.047,
+    "games": 8
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "opponent": "twins",
+    "ratio": 1.043,
+    "games": 6
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "opponent": "boston-college",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "opponent": "louisville",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "opponent": "north-carolina",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-football",
+    "opponent": "syracuse",
+    "ratio": 0.953,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "binghamton",
+    "ratio": 0.954,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "clemson",
+    "ratio": 1.088,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "duke",
+    "ratio": 1.117,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "florida-st",
+    "ratio": 0.917,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "louisville",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "nc-state",
+    "ratio": 0.956,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1.085,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "notre-dame",
+    "ratio": 0.883,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "syracuse",
+    "ratio": 0.951,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-mbb",
+    "opponent": "wake-forest",
+    "ratio": 0.826,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "opponent": "robert-morris",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "opponent": "smu",
+    "ratio": 0.882,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "birmingham",
+    "ratio": 0.962,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "charleston",
+    "ratio": 1.056,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "detroit",
+    "ratio": 1.031,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "hartford",
+    "ratio": 0.965,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "indy-xi",
+    "ratio": 1.065,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "loudoun",
+    "ratio": 0.967,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "louisville",
+    "ratio": 0.95,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "miami-fc",
+    "ratio": 1.087,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "north-carolina",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "orange-county",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "phoenix",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "rhode-island",
+    "ratio": 1.016,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "riverhounds",
+    "opponent": "tampa-bay",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-football",
+    "opponent": "saint-francis",
+    "ratio": 1.073,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "cleveland-st",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "detroit-mercy",
+    "ratio": 1.093,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "green-bay",
+    "ratio": 1.065,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "iu-indy",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "milwaukee",
+    "ratio": 1.089,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "n-kentucky",
+    "ratio": 1.05,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "oakland",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "purdue-fw",
+    "ratio": 1.121,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "wright-st",
+    "ratio": 1.288,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-mbb",
+    "opponent": "youngstown-st",
+    "ratio": 1.384,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "cleveland-st",
+    "ratio": 1.279,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "detroit-mercy",
+    "ratio": 0.951,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "green-bay",
+    "ratio": 1.35,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "iu-indy",
+    "ratio": 0.923,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "milwaukee",
+    "ratio": 1.193,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "n-kentucky",
+    "ratio": 1.075,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "oakland",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "point-park",
+    "ratio": 0.707,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "purdue-fw",
+    "ratio": 0.894,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "robert-morris-wbb",
+    "opponent": "youngstown-st",
+    "ratio": 1.151,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "opponent": "bengals",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "opponent": "browns",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "opponent": "colts",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "opponent": "packers",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "steelers",
+    "opponent": "ravens",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
     "metroId": "portland",
     "teamId": "blazers",
     "opponent": "76ers",
@@ -88681,6 +89591,804 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "willamette",
     "ratio": 1.008,
     "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "opponent": "elon",
+    "ratio": 0.841,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "opponent": "nc-state",
+    "ratio": 1.08,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "opponent": "wake-forest",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "boston-college",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "clemson",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "georgia-tech",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "louisville",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "notre-dame",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "pitt",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "syracuse",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "virginia",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "opponent": "north-carolina",
+    "ratio": 1.503,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "ironpigs",
+    "ratio": 0.923,
+    "games": 12
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "jumbo-shrimp",
+    "ratio": 0.992,
+    "games": 30
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "knights",
+    "ratio": 0.992,
+    "games": 21
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "railriders",
+    "ratio": 1.081,
+    "games": 12
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "redbirds",
+    "ratio": 0.948,
+    "games": 30
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "sounds",
+    "ratio": 0.957,
+    "games": 36
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "stripers",
+    "ratio": 0.971,
+    "games": 31
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "tides",
+    "ratio": 1.006,
+    "games": 31
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "avalanche",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "blackhawks",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "blue-jackets",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "blues",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "bruins",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "canadiens",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "canucks",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "capitals",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "devils",
+    "ratio": 0.994,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "ducks",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "flames",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "flyers",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "golden-knights",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "islanders",
+    "ratio": 0.994,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "jets",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "kings",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "kraken",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "lightning",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "maple-leafs",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "oilers",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "panthers",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "penguins",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "predators",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "rangers",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "red-wings",
+    "ratio": 0.992,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "sabres",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "senators",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "sharks",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "stars",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "wild",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "bay",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "chicago",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "houston",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "kansas-city",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "louisville",
+    "ratio": 1.038,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "orlando",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "portland",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "seattle",
+    "ratio": 1.018,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "utah",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "washington",
+    "ratio": 1.08,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "opponent": "louisville",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "opponent": "wake-forest",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "boston-college",
+    "ratio": 0.956,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "duke",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "georgia-tech",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "miami",
+    "ratio": 1.05,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1.208,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "pitt",
+    "ratio": 0.864,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "syracuse",
+    "ratio": 1.045,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "virginia",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "virginia-tech",
+    "ratio": 1.074,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1.021,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "opponent": "coastal",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "opponent": "wake-forest",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "opponent": "nc-a-t",
+    "ratio": 1.231,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "carolina-u",
+    "ratio": 0.44,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "coppin-st",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "delaware-st",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "howard",
+    "ratio": 1.021,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "longwood",
+    "ratio": 0.747,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "md-eastern",
+    "ratio": 0.605,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "mid-atl-chrstn",
+    "ratio": 0.907,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "morgan-st",
+    "ratio": 0.778,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "norfolk-st",
+    "ratio": 0.818,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "sc-state",
+    "ratio": 1.261,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "st-andrews",
+    "ratio": 0.781,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "va-lynchburg",
+    "ratio": 0.57,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "coppin-st",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "delaware-st",
+    "ratio": 1.262,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "howard",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "md-eastern",
+    "ratio": 0.81,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "morgan-st",
+    "ratio": 1.162,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "norfolk-st",
+    "ratio": 0.776,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "sc-state",
+    "ratio": 1.204,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "opponent": "duke",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "opponent": "virginia",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "clemson",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "duke",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "florida-st",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "louisville",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "miami",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "nc-state",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "notre-dame",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "pitt",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "radford",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "syracuse",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "virginia-tech",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "duke",
+    "ratio": 1.247,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "nc-central",
+    "ratio": 1.235,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "unc-greensboro",
+    "ratio": 0.933,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "unc-wilmington",
+    "ratio": 0.935,
+    "games": 2
   },
   {
     "metroId": "sacramento",
@@ -95291,1714 +96999,6 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 2
   },
   {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "opponent": "c-connecticut",
-    "ratio": 0.81,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "opponent": "long-island",
-    "ratio": 0.963,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "opponent": "saint-francis",
-    "ratio": 1.003,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-football",
-    "opponent": "stonehill",
-    "ratio": 0.722,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "cleary",
-    "ratio": 0.979,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "davidson",
-    "ratio": 0.995,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "dayton",
-    "ratio": 1.138,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "fordham",
-    "ratio": 1.026,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "g-washington",
-    "ratio": 0.994,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "la-salle",
-    "ratio": 1.003,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "rhode-island",
-    "ratio": 1.042,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "richmond",
-    "ratio": 0.992,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "saint-joseph-s",
-    "ratio": 1.028,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "saint-louis",
-    "ratio": 0.969,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "saint-peter-s",
-    "ratio": 1.008,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "st-bonaventure",
-    "ratio": 0.988,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "uc-irvine",
-    "ratio": 0.993,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-mbb",
-    "opponent": "vcu",
-    "ratio": 0.981,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "opponent": "dayton",
-    "ratio": 1.029,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "opponent": "saint-francis",
-    "ratio": 0.939,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "opponent": "saint-louis",
-    "ratio": 1.026,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "opponent": "st-bonaventure",
-    "ratio": 0.958,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "duquesne-wbb",
-    "opponent": "vcu",
-    "ratio": 1.015,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "avalanche",
-    "ratio": 1.017,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "blackhawks",
-    "ratio": 0.981,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "blue-jackets",
-    "ratio": 0.975,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "blues",
-    "ratio": 0.925,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "bruins",
-    "ratio": 0.985,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "canadiens",
-    "ratio": 1.001,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "canucks",
-    "ratio": 0.949,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "capitals",
-    "ratio": 1.018,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "devils",
-    "ratio": 0.98,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "ducks",
-    "ratio": 0.982,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "flames",
-    "ratio": 0.99,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "flyers",
-    "ratio": 1.027,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "golden-knights",
-    "ratio": 0.994,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "hurricanes",
-    "ratio": 1.017,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "islanders",
-    "ratio": 1.004,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "jets",
-    "ratio": 1.007,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "kings",
-    "ratio": 1.005,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "kraken",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "lightning",
-    "ratio": 0.956,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "maple-leafs",
-    "ratio": 0.981,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "oilers",
-    "ratio": 0.996,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "panthers",
-    "ratio": 0.994,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "predators",
-    "ratio": 1.001,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "rangers",
-    "ratio": 1.003,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "red-wings",
-    "ratio": 0.964,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "sabres",
-    "ratio": 1.005,
-    "games": 5
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "senators",
-    "ratio": 0.993,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "sharks",
-    "ratio": 0.984,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "stars",
-    "ratio": 1.015,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "penguins",
-    "opponent": "wild",
-    "ratio": 1.032,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "angels",
-    "ratio": 1.145,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "braves",
-    "ratio": 1.069,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "brewers",
-    "ratio": 0.956,
-    "games": 21
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "cardinals",
-    "ratio": 0.974,
-    "games": 19
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "cubs",
-    "ratio": 1.047,
-    "games": 19
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "d-backs",
-    "ratio": 0.927,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "dodgers",
-    "ratio": 1.379,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "giants",
-    "ratio": 0.936,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "mariners",
-    "ratio": 1.047,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "marlins",
-    "ratio": 0.845,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "mets",
-    "ratio": 1.063,
-    "games": 10
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "nationals",
-    "ratio": 1.018,
-    "games": 13
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "orioles",
-    "ratio": 1.047,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "padres",
-    "ratio": 0.93,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "phillies",
-    "ratio": 1.245,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "rays",
-    "ratio": 1.027,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "red-sox",
-    "ratio": 1.118,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "reds",
-    "ratio": 0.939,
-    "games": 20
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "rockies",
-    "ratio": 0.972,
-    "games": 9
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "royals",
-    "ratio": 1.061,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "tigers",
-    "ratio": 1.047,
-    "games": 8
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pirates",
-    "opponent": "twins",
-    "ratio": 1.043,
-    "games": 6
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "opponent": "boston-college",
-    "ratio": 1.005,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "opponent": "louisville",
-    "ratio": 0.975,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "opponent": "north-carolina",
-    "ratio": 1.02,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-football",
-    "opponent": "syracuse",
-    "ratio": 0.953,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "binghamton",
-    "ratio": 0.954,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "clemson",
-    "ratio": 1.088,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "duke",
-    "ratio": 1.117,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "florida-st",
-    "ratio": 0.917,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "louisville",
-    "ratio": 1.013,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "nc-state",
-    "ratio": 0.956,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "north-carolina",
-    "ratio": 1.085,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "notre-dame",
-    "ratio": 0.883,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "syracuse",
-    "ratio": 0.951,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-mbb",
-    "opponent": "wake-forest",
-    "ratio": 0.826,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "opponent": "robert-morris",
-    "ratio": 1.006,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "pitt-wbb",
-    "opponent": "smu",
-    "ratio": 0.882,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "birmingham",
-    "ratio": 0.962,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "charleston",
-    "ratio": 1.056,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "detroit",
-    "ratio": 1.031,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "hartford",
-    "ratio": 0.965,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "indy-xi",
-    "ratio": 1.065,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "loudoun",
-    "ratio": 0.967,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "louisville",
-    "ratio": 0.95,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "miami-fc",
-    "ratio": 1.087,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "north-carolina",
-    "ratio": 0.978,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "orange-county",
-    "ratio": 0.992,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "phoenix",
-    "ratio": 0.999,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "rhode-island",
-    "ratio": 1.016,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "riverhounds",
-    "opponent": "tampa-bay",
-    "ratio": 1.011,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-football",
-    "opponent": "saint-francis",
-    "ratio": 1.073,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "cleveland-st",
-    "ratio": 1.024,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "detroit-mercy",
-    "ratio": 1.093,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "green-bay",
-    "ratio": 1.065,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "iu-indy",
-    "ratio": 1.036,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "milwaukee",
-    "ratio": 1.089,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "n-kentucky",
-    "ratio": 1.05,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "oakland",
-    "ratio": 0.984,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "purdue-fw",
-    "ratio": 1.121,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "wright-st",
-    "ratio": 1.288,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-mbb",
-    "opponent": "youngstown-st",
-    "ratio": 1.384,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "cleveland-st",
-    "ratio": 1.279,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "detroit-mercy",
-    "ratio": 0.951,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "green-bay",
-    "ratio": 1.35,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "iu-indy",
-    "ratio": 0.923,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "milwaukee",
-    "ratio": 1.193,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "n-kentucky",
-    "ratio": 1.075,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "oakland",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "point-park",
-    "ratio": 0.707,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "purdue-fw",
-    "ratio": 0.894,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "robert-morris-wbb",
-    "opponent": "youngstown-st",
-    "ratio": 1.151,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "opponent": "bengals",
-    "ratio": 0.996,
-    "games": 4
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "opponent": "browns",
-    "ratio": 0.999,
-    "games": 3
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "opponent": "colts",
-    "ratio": 0.998,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "opponent": "packers",
-    "ratio": 1.002,
-    "games": 2
-  },
-  {
-    "metroId": "pittsburgh",
-    "teamId": "steelers",
-    "opponent": "ravens",
-    "ratio": 0.995,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "opponent": "elon",
-    "ratio": 0.841,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "opponent": "nc-state",
-    "ratio": 1.08,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-football",
-    "opponent": "wake-forest",
-    "ratio": 0.963,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "boston-college",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "clemson",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "georgia-tech",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "louisville",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "north-carolina",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "notre-dame",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "pitt",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "syracuse",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "virginia",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-mbb",
-    "opponent": "wake-forest",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "duke-wbb",
-    "opponent": "north-carolina",
-    "ratio": 1.503,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "ironpigs",
-    "ratio": 0.923,
-    "games": 12
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "jumbo-shrimp",
-    "ratio": 0.992,
-    "games": 30
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "knights",
-    "ratio": 0.992,
-    "games": 21
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "railriders",
-    "ratio": 1.081,
-    "games": 12
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "redbirds",
-    "ratio": 0.948,
-    "games": 30
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "sounds",
-    "ratio": 0.957,
-    "games": 36
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "stripers",
-    "ratio": 0.971,
-    "games": 31
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "durham-bulls",
-    "opponent": "tides",
-    "ratio": 1.006,
-    "games": 31
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "avalanche",
-    "ratio": 0.994,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "blackhawks",
-    "ratio": 0.995,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "blue-jackets",
-    "ratio": 0.996,
-    "games": 6
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "blues",
-    "ratio": 0.999,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "bruins",
-    "ratio": 0.999,
-    "games": 4
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "canadiens",
-    "ratio": 0.995,
-    "games": 5
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "canucks",
-    "ratio": 0.998,
-    "games": 4
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "capitals",
-    "ratio": 0.999,
-    "games": 6
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "devils",
-    "ratio": 0.994,
-    "games": 6
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "ducks",
-    "ratio": 0.994,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "flames",
-    "ratio": 0.993,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "flyers",
-    "ratio": 0.993,
-    "games": 5
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "golden-knights",
-    "ratio": 0.995,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "islanders",
-    "ratio": 0.994,
-    "games": 6
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "jets",
-    "ratio": 0.996,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "kings",
-    "ratio": 0.994,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "kraken",
-    "ratio": 0.994,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "lightning",
-    "ratio": 0.999,
-    "games": 4
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "maple-leafs",
-    "ratio": 0.996,
-    "games": 4
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "oilers",
-    "ratio": 0.998,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "panthers",
-    "ratio": 0.999,
-    "games": 6
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "penguins",
-    "ratio": 0.998,
-    "games": 6
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "predators",
-    "ratio": 0.992,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "rangers",
-    "ratio": 0.994,
-    "games": 5
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "red-wings",
-    "ratio": 0.992,
-    "games": 5
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "sabres",
-    "ratio": 0.994,
-    "games": 5
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "senators",
-    "ratio": 0.997,
-    "games": 4
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "sharks",
-    "ratio": 0.997,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "stars",
-    "ratio": 0.995,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "hurricanes",
-    "opponent": "wild",
-    "ratio": 0.995,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "bay",
-    "ratio": 0.996,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "chicago",
-    "ratio": 0.993,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "houston",
-    "ratio": 0.987,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "kansas-city",
-    "ratio": 0.993,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "louisville",
-    "ratio": 1.038,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "orlando",
-    "ratio": 0.999,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "portland",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "seattle",
-    "ratio": 1.018,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "utah",
-    "ratio": 0.985,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-courage",
-    "opponent": "washington",
-    "ratio": 1.08,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "opponent": "louisville",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-football",
-    "opponent": "wake-forest",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "boston-college",
-    "ratio": 0.956,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "duke",
-    "ratio": 1.001,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "georgia-tech",
-    "ratio": 1.012,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "miami",
-    "ratio": 1.05,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "north-carolina",
-    "ratio": 1.208,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "pitt",
-    "ratio": 0.864,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "syracuse",
-    "ratio": 1.045,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "virginia",
-    "ratio": 1.001,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "virginia-tech",
-    "ratio": 1.074,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-mbb",
-    "opponent": "wake-forest",
-    "ratio": 1.021,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "opponent": "coastal",
-    "ratio": 1.004,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nc-state-wbb",
-    "opponent": "wake-forest",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-football",
-    "opponent": "nc-a-t",
-    "ratio": 1.231,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "carolina-u",
-    "ratio": 0.44,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "coppin-st",
-    "ratio": 1.013,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "delaware-st",
-    "ratio": 1.015,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "howard",
-    "ratio": 1.021,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "longwood",
-    "ratio": 0.747,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "md-eastern",
-    "ratio": 0.605,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "mid-atl-chrstn",
-    "ratio": 0.907,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "morgan-st",
-    "ratio": 0.778,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "norfolk-st",
-    "ratio": 0.818,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "sc-state",
-    "ratio": 1.261,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "st-andrews",
-    "ratio": 0.781,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-mbb",
-    "opponent": "va-lynchburg",
-    "ratio": 0.57,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "coppin-st",
-    "ratio": 0.998,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "delaware-st",
-    "ratio": 1.262,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "howard",
-    "ratio": 0.985,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "md-eastern",
-    "ratio": 0.81,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "morgan-st",
-    "ratio": 1.162,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "norfolk-st",
-    "ratio": 0.776,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "nccu-wbb",
-    "opponent": "sc-state",
-    "ratio": 1.204,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "opponent": "duke",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-football",
-    "opponent": "virginia",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "clemson",
-    "ratio": 1.003,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "duke",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "florida-st",
-    "ratio": 1.008,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "louisville",
-    "ratio": 0.999,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "miami",
-    "ratio": 1.002,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "nc-state",
-    "ratio": 1.013,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "notre-dame",
-    "ratio": 0.999,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "pitt",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "radford",
-    "ratio": 0.997,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "syracuse",
-    "ratio": 0.992,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "virginia-tech",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-mbb",
-    "opponent": "wake-forest",
-    "ratio": 1.004,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "opponent": "duke",
-    "ratio": 1.247,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "opponent": "nc-central",
-    "ratio": 1.235,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "opponent": "unc-greensboro",
-    "ratio": 0.933,
-    "games": 2
-  },
-  {
-    "metroId": "raleigh-durham",
-    "teamId": "unc-wbb",
-    "opponent": "unc-wilmington",
-    "ratio": 0.935,
-    "games": 2
-  },
-  {
     "metroId": "st-louis",
     "teamId": "blues",
     "opponent": "avalanche",
@@ -97982,8 +97982,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -97992,10 +97992,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "sharks",
     "venueId": "sap-center",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98006,8 +98006,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98114,8 +98126,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98124,10 +98136,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "bruins",
     "venueId": "td-garden",
     "band": "second",
-    "occupancy": 1.001,
+    "occupancy": 1.002,
     "low": 0.992,
-    "high": 1.041,
-    "games": 73,
+    "high": 1.039,
+    "games": 83,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -98136,10 +98148,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "bruins",
     "venueId": "fenway-park",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98150,8 +98162,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98162,8 +98174,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "boston",
+    "teamId": "bruins",
+    "venueId": "td-garden",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "boston",
+    "teamId": "bruins",
+    "venueId": "fenway-park",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98306,8 +98342,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98318,8 +98354,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98328,10 +98364,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blackhawks",
     "venueId": "united-center",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98340,10 +98376,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blackhawks",
     "venueId": "wrigley-field",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98354,8 +98390,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98366,8 +98402,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "wrigley-field",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98738,8 +98798,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98750,8 +98810,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98760,10 +98820,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blue-jackets",
     "venueId": "nationwide-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98772,10 +98832,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blue-jackets",
     "venueId": "ohio-stadium",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98786,8 +98846,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98798,8 +98858,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "ohio-stadium",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -98886,6 +98970,18 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "games": 9,
     "seasons": "2023, 2024, 2025",
     "basis": "team"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-stars",
+    "venueId": "american-airlines-center",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "dallas-fort-worth",
@@ -99146,8 +99242,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99156,10 +99252,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "red-wings",
     "venueId": "little-caesars-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99170,8 +99266,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99242,8 +99350,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99264,10 +99372,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "oilers",
     "venueId": "commonwealth-stadium",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99278,8 +99386,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 0.995,
     "low": 0.992,
-    "high": 1.042,
-    "games": 36,
+    "high": 1.04,
+    "games": 44,
     "seasons": "2024, 2025 + league",
     "basis": "blend"
   },
@@ -99290,8 +99398,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "final",
+    "occupancy": 1.001,
+    "low": 0.988,
+    "high": 1.049,
+    "games": 30,
+    "seasons": "2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99746,8 +99878,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 0.992,
     "low": 0.992,
-    "high": 1.048,
-    "games": 137,
+    "high": 1.046,
+    "games": 151,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -99756,10 +99888,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ducks",
     "venueId": "honda-center",
     "band": "second",
-    "occupancy": 0.993,
+    "occupancy": 0.994,
     "low": 0.992,
-    "high": 1.041,
-    "games": 73,
+    "high": 1.039,
+    "games": 83,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -99770,8 +99902,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "venueId": "honda-center",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99888,10 +100032,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kings",
     "venueId": "crypto-com-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -99902,8 +100046,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "venueId": "crypto-com-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100118,8 +100274,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1.028,
     "low": 0.992,
-    "high": 1.047,
-    "games": 36,
+    "high": 1.044,
+    "games": 44,
+    "seasons": "2023, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "band": "final",
+    "occupancy": 1.045,
+    "low": 0.988,
+    "high": 1.061,
+    "games": 30,
     "seasons": "2023, 2026 + league",
     "basis": "blend"
   },
@@ -100322,8 +100490,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100344,10 +100512,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "panthers",
     "venueId": "loandepot-park",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100359,7 +100527,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1.028,
     "low": 0.992,
     "high": 1.042,
-    "games": 38,
+    "games": 46,
     "seasons": "2023, 2024, 2025 + league",
     "basis": "blend"
   },
@@ -100370,8 +100538,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100386,6 +100554,18 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "games": 9,
     "seasons": "2023, 2024, 2025",
     "basis": "team"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "milwaukee",
@@ -100644,10 +100824,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "wild",
     "venueId": "grand-casino-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100658,8 +100838,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100670,8 +100862,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 139,
+    "high": 1.046,
+    "games": 153,
     "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
@@ -100680,10 +100872,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "canadiens",
     "venueId": "bell-centre",
     "band": "second",
-    "occupancy": 1.001,
+    "occupancy": 1.002,
     "low": 0.992,
-    "high": 1.041,
-    "games": 73,
+    "high": 1.039,
+    "games": 83,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -100694,8 +100886,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "canadiens",
+    "venueId": "bell-centre",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100802,8 +101006,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.009,
     "low": 0.992,
-    "high": 1.048,
-    "games": 137,
+    "high": 1.046,
+    "games": 151,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -100812,10 +101016,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "predators",
     "venueId": "bridgestone-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100826,8 +101030,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100874,8 +101090,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.018,
     "low": 0.992,
-    "high": 1.048,
-    "games": 140,
+    "high": 1.046,
+    "games": 154,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
   },
@@ -100886,8 +101102,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100896,10 +101112,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "devils",
     "venueId": "prudential-center",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100908,10 +101124,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "devils",
     "venueId": "metlife-stadium",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100922,8 +101138,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100934,8 +101150,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "venueId": "prudential-center",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "venueId": "metlife-stadium",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100946,8 +101186,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 139,
+    "high": 1.046,
+    "games": 153,
     "seasons": "2023, 2024 + league",
     "basis": "blend"
   },
@@ -100958,8 +101198,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100968,10 +101208,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "islanders",
     "venueId": "ubs-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100980,10 +101220,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "islanders",
     "venueId": "metlife-stadium",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -100994,8 +101234,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -101006,8 +101246,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "venueId": "ubs-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "venueId": "metlife-stadium",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -101186,8 +101450,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 139,
+    "high": 1.046,
+    "games": 153,
     "seasons": "2023, 2024 + league",
     "basis": "blend"
   },
@@ -101196,10 +101460,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ny-rangers",
     "venueId": "madison-square-garden",
     "band": "second",
-    "occupancy": 1.001,
+    "occupancy": 1.002,
     "low": 0.992,
-    "high": 1.041,
-    "games": 73,
+    "high": 1.039,
+    "games": 83,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -101210,10 +101474,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 34,
+    "high": 1.041,
+    "games": 42,
     "seasons": "2024 + league",
     "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "venueId": "madison-square-garden",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "new-york",
@@ -101462,8 +101738,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 0.995,
     "low": 0.992,
-    "high": 1.048,
-    "games": 139,
+    "high": 1.046,
+    "games": 153,
     "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
@@ -101472,10 +101748,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ottawa-senators",
     "venueId": "canadian-tire-centre",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -101486,8 +101762,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -101498,8 +101786,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.016,
     "low": 0.992,
-    "high": 1.048,
-    "games": 137,
+    "high": 1.046,
+    "games": 151,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -101508,10 +101796,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "flyers",
     "venueId": "xfinity-mobile-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -101522,8 +101810,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -101768,6 +102068,102 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "basis": "league"
   },
   {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "band": "first",
+    "occupancy": 1.003,
+    "low": 0.992,
+    "high": 1.046,
+    "games": 151,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "band": "second",
+    "occupancy": 1.003,
+    "low": 0.992,
+    "high": 1.039,
+    "games": 80,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "penguins",
+    "venueId": "ppg-paints-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "band": "first",
+    "occupancy": 0.987,
+    "low": 0.855,
+    "high": 1.112,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "band": "second",
+    "occupancy": 1.029,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "band": "conference",
+    "occupancy": 1.029,
+    "low": 0.953,
+    "high": 1.127,
+    "games": 39,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pirates",
+    "venueId": "pnc-park",
+    "band": "final",
+    "occupancy": 1.043,
+    "low": 0.938,
+    "high": 1.14,
+    "games": 20,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
     "metroId": "portland",
     "teamId": "blazers",
     "venueId": "moda-center",
@@ -101873,6 +102269,102 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.031,
     "games": 78,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "band": "first",
+    "occupancy": 1.008,
+    "low": 0.948,
+    "high": 1.014,
+    "games": 11,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "carter-finley-stadium",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.047,
+    "games": 148,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "band": "second",
+    "occupancy": 1.016,
+    "low": 0.95,
+    "high": 1.026,
+    "games": 10,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "carter-finley-stadium",
+    "band": "second",
+    "occupancy": 1.003,
+    "low": 0.992,
+    "high": 1.039,
+    "games": 80,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "band": "conference",
+    "occupancy": 1.005,
+    "low": 0.955,
+    "high": 1.017,
+    "games": 8,
+    "seasons": "2023, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "carter-finley-stadium",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "band": "final",
+    "occupancy": 1.001,
+    "low": 0.956,
+    "high": 1.051,
+    "games": 27,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "carter-finley-stadium",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -102002,8 +102494,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 0.957,
     "low": 0.992,
-    "high": 1.048,
-    "games": 137,
+    "high": 1.046,
+    "games": 151,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -102012,10 +102504,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "utah-mammoth",
     "venueId": "delta-center",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102026,8 +102518,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102206,8 +102710,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.001,
     "low": 0.992,
-    "high": 1.048,
-    "games": 137,
+    "high": 1.046,
+    "games": 151,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -102218,8 +102722,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 134,
+    "high": 1.047,
+    "games": 148,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102228,10 +102732,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kraken",
     "venueId": "climate-pledge-arena",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.041,
-    "games": 73,
+    "high": 1.039,
+    "games": 83,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -102240,10 +102744,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kraken",
     "venueId": "t-mobile-park",
     "band": "second",
-    "occupancy": 1.002,
+    "occupancy": 1.003,
     "low": 0.992,
-    "high": 1.042,
-    "games": 70,
+    "high": 1.039,
+    "games": 80,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102254,8 +102758,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102266,8 +102770,32 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "venueId": "climate-pledge-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "venueId": "t-mobile-park",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102480,10 +103008,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "maple-leafs",
     "venueId": "scotiabank-arena",
     "band": "second",
-    "occupancy": 1.024,
+    "occupancy": 1.025,
     "low": 0.992,
-    "high": 1.04,
-    "games": 77,
+    "high": 1.038,
+    "games": 87,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
   },
@@ -102494,8 +103022,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102662,8 +103202,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.002,
     "low": 0.992,
-    "high": 1.048,
-    "games": 137,
+    "high": 1.046,
+    "games": 151,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -102674,8 +103214,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "second",
     "occupancy": 1.005,
     "low": 0.992,
-    "high": 1.041,
-    "games": 74,
+    "high": 1.039,
+    "games": 84,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -102686,8 +103226,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -102746,8 +103298,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.048,
-    "games": 139,
+    "high": 1.046,
+    "games": 153,
     "seasons": "2024, 2025 + league",
     "basis": "blend"
   },
@@ -102756,10 +103308,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "capitals",
     "venueId": "capital-one-arena",
     "band": "second",
-    "occupancy": 1.001,
+    "occupancy": 1.002,
     "low": 0.992,
-    "high": 1.041,
-    "games": 73,
+    "high": 1.039,
+    "games": 83,
     "seasons": "2025 + league",
     "basis": "blend"
   },
@@ -102770,8 +103322,20 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "conference",
     "occupancy": 1,
     "low": 0.992,
-    "high": 1.042,
-    "games": 31,
+    "high": 1.041,
+    "games": 39,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "band": "final",
+    "occupancy": 1.029,
+    "low": 0.967,
+    "high": 1.052,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
