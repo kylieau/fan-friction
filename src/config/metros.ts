@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans', 'denver'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'detroit', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'pittsburgh', 'tampa', 'miami', 'columbus', 'cleveland', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'salt-lake-city', 'ottawa-gatineau', 'edmonton', 'washington-dc', 'san-antonio', 'portland', 'raleigh-durham', 'st-louis', 'denver'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -51,6 +51,16 @@ export const METROS: Record<string, Metro> = {
     name: 'Columbus',
     timeZone: 'America/New_York',
     center: [-83.01, 39.985],
+    zoom: 11.2,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/cleveland/cleveland-venue-table-answer.md): five-county core
+  // (Cuyahoga, Geauga, Lake, Lorain, Medina) plus Blossom as an edge room. One frame holds downtown Gateway,
+  // the lakefront and Playhouse Square; Eastlake, Avon and Blossom sit off the first view.
+  cleveland: {
+    id: 'cleveland', code: 'CLE',
+    name: 'Cleveland',
+    timeZone: 'America/New_York',
+    center: [-81.69, 41.499],
     zoom: 11.2,
   },
   // Covered Oct 7, 2026 (docs/research/city-builds/new-york/new-york-venue-table-answer.md). The region runs from the
@@ -169,6 +179,15 @@ export const METROS: Record<string, Metro> = {
     center: [-82.55, 27.92],
     zoom: 10.2,
   },
+  // Covered Oct 13, 2026 (docs/research/city-builds/miami/miami-venue-table-answer.md): Miami-Dade + Broward core.
+  // One frame holds downtown, Little Havana, Miami Gardens and Sunrise; Homestead and Hollywood sit toward the edges.
+  miami: {
+    id: 'miami', code: 'MIA',
+    name: 'Miami',
+    timeZone: 'America/New_York',
+    center: [-80.22, 25.84],
+    zoom: 10.4,
+  },
   // Covered Oct 12, 2026 (docs/research/city-builds/nashville/nashville-venue-table-answer.md):
   // Nashville–Davidson–Murfreesboro–Franklin MSA. One frame holds downtown, Vanderbilt and the fairgrounds;
   // the Opry, Murfreesboro, Lebanon and Thompson's Station sit off the first view. Clarksville is a separate MSA and is not in this metro.
@@ -229,6 +248,16 @@ export const METROS: Record<string, Metro> = {
     center: [-95.39, 29.73],
     zoom: 10.6,
   },
+  // Covered Oct 13, 2026 (docs/research/city-builds/indianapolis/indianapolis-venue-table-answer.md): Marion County core plus
+  // Hamilton (Fishers, Noblesville) and Hendricks (Brownsburg). One frame holds downtown, Speedway and the Fairgrounds;
+  // Ruoff and Fishers Event Center sit northeast off the first view. Bloomington and West Lafayette stay out.
+  indianapolis: {
+    id: 'indianapolis', code: 'IND',
+    name: 'Indianapolis',
+    timeZone: 'America/Indiana/Indianapolis',
+    center: [-86.158, 39.768],
+    zoom: 10.4,
+  },
   // Covered Oct 12, 2026 (docs/research/city-builds/toronto/toronto-venue-table-answer.md): City of Toronto plus Peel, York, Halton and Durham through Oshawa.
   // Hamilton is a separate city. One frame holds downtown, the Union Station pair and Exhibition Place; North York, Mississauga, Brampton and Oshawa sit off the first view.
   toronto: {
@@ -248,6 +277,16 @@ export const METROS: Record<string, Metro> = {
     center: [-93.2, 44.96],
     zoom: 10.4,
   },
+  // Covered Oct 13, 2026 (docs/research/city-builds/detroit/). Six-county Detroit–Warren–Dearborn MSA plus Ann Arbor
+  // and Windsor edge rooms. One frame holds District Detroit (Ford Field, Comerica Park, Little Caesars Arena);
+  // Ann Arbor, the amphitheatres and Hamtramck sit off the first view.
+  detroit: {
+    id: 'detroit', code: 'DET',
+    name: 'Detroit',
+    timeZone: 'America/Detroit',
+    center: [-83.05, 42.34],
+    zoom: 11.2,
+  },
   // Covered Oct 12, 2026 (docs/research/city-builds/new-orleans/). Orleans Parish plus Jefferson Parish
   // (East Bank and West Bank). One frame holds the Superdome, Uptown, Gentilly, City Park and the Lakefront;
   // Kenner and Westwego sit off the first view. St. Tammany stays outside.
@@ -266,6 +305,95 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Denver',
     center: [-104.99, 39.744],
     zoom: 10.4,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/raleigh-durham/): Wake, Durham and Orange counties as one app metro
+  // (Raleigh, Durham, Chapel Hill, Cary and suburbs). One frame holds the UNC, Duke, NCCU, downtown Durham, West Raleigh,
+  // NC State and downtown Raleigh clusters plus Cary; Walnut Creek, Holly Springs and Zebulon sit off the first view.
+  // Johnston, Franklin, Chatham and Person are audience-origin counties with no verified room. Harnett, Lee and Vance are excluded.
+  'raleigh-durham': {
+    id: 'raleigh-durham', code: 'RDU',
+    name: 'Raleigh–Durham',
+    timeZone: 'America/New_York',
+    center: [-78.83, 35.87],
+    zoom: 9.2,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/pittsburgh/pittsburgh-venue-table-answer.md): eight-county MSA,
+  // Allegheny core. One frame holds the North Shore, Downtown and Oakland; Star Lake, Butler County and Washington County rooms sit off it.
+  pittsburgh: {
+    id: 'pittsburgh', code: 'PIT',
+    name: 'Pittsburgh',
+    timeZone: 'America/New_York',
+    center: [-79.99, 40.44],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/portland/portland-venue-table-answer.md): Multnomah, Washington,
+  // Clackamas and Clark counties. One frame holds downtown, Goose Hollow and the Rose Quarter; Hillsboro, Ridgefield
+  // and Troutdale sit off the first view.
+  portland: {
+    id: 'portland', code: 'PDX',
+    name: 'Portland',
+    timeZone: 'America/Los_Angeles',
+    center: [-122.65, 45.52],
+    zoom: 10.3,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/san-antonio/san-antonio-venue-table-answer.md): Bexar County core,
+  // plus Selma and New Braunfels edge rooms. One frame holds downtown and the Alamodome; the east-side grounds,
+  // Toyota Field, Wolff Stadium and Whitewater sit off the first view.
+  'san-antonio': {
+    id: 'san-antonio', code: 'SAT',
+    name: 'San Antonio',
+    timeZone: 'America/Chicago',
+    center: [-98.49, 29.43],
+    zoom: 10.4,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/washington-dc/washington-dc-venue-table-answer.md): DC plus Prince George's,
+  // Montgomery, Arlington, Alexandria, Fairfax and Loudoun; edge rooms in Prince William (Jiffy Lube Live) and Howard (Merriweather).
+  // One frame holds Penn Quarter, Navy Yard and Buzzard Point; Landover, College Park and the suburban amphitheatres sit off the first view.
+  'washington-dc': {
+    id: 'washington-dc', code: 'DC',
+    name: 'Washington, DC',
+    timeZone: 'America/New_York',
+    center: [-77.02, 38.90],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/edmonton/edmonton-venue-table-answer.md): Edmonton Metropolitan
+  // Region (13 municipalities). One frame holds downtown/ICE District, Commonwealth/EXPO Lands and the river valley;
+  // St. Albert, Sherwood Park, Spruce Grove and Century Mile sit off the first view.
+  edmonton: {
+    id: 'edmonton', code: 'EDM',
+    name: 'Edmonton',
+    timeZone: 'America/Edmonton',
+    center: [-113.49, 53.55],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/ottawa-gatineau/): City of Ottawa plus Ville de Gatineau.
+  // One frame holds downtown, Lansdowne and the Glebe; Kanata, the east-end ballpark and south Ottawa casino sit off it.
+  'ottawa-gatineau': {
+    id: 'ottawa-gatineau', code: 'OTT',
+    name: 'Ottawa–Gatineau',
+    timeZone: 'America/Toronto',
+    center: [-75.72, 45.42],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/st-louis/st-louis-venue-table-answer.md): St. Louis city and county,
+  // St. Charles, and Metro East (Madison and St. Clair). One frame holds downtown, Forest Park and Maryland Heights;
+  // WWTR, St. Charles, Edwardsville and O'Fallon sit off the first view.
+  'st-louis': {
+    id: 'st-louis', code: 'STL',
+    name: 'St. Louis',
+    timeZone: 'America/Chicago',
+    center: [-90.20, 38.63],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/salt-lake-city/). Salt Lake County core;
+  // Provo, Ogden and Park City stay separate. One frame holds downtown, the U campus and the Fairpark;
+  // Sandy, West Valley, South Jordan and Daybreak sit off the first view.
+  'salt-lake-city': {
+    id: 'salt-lake-city', code: 'SLC',
+    name: 'Salt Lake City',
+    timeZone: 'America/Denver',
+    center: [-111.92, 40.76],
+    zoom: 10.8,
   },
 };
 

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-10-23",
+  "rows": [
+    {
+      "metroId": "san-antonio",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:21:49.506Z",
+      "feelsLikeF": 85.5,
+      "tempF": 77.2,
+      "humidity": 85,
+      "windMph": 2.2,
+      "uvIndex": 0.15,
+      "precipProbability": 26,
+      "precipMm": 0.3,
+      "shortwave": 12,
+      "cloudCover": 100,
+      "code": 51
+    },
+    {
+      "metroId": "san-antonio",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:21:49.506Z",
+      "feelsLikeF": 84.5,
+      "tempF": 76.5,
+      "humidity": 86,
+      "windMph": 2.7,
+      "uvIndex": 0,
+      "precipProbability": 16,
+      "precipMm": 0.1,
+      "shortwave": 0,
+      "cloudCover": 97,
+      "code": 51
+    }
+  ],
+  "days": [
+    {
+      "metroId": "san-antonio",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:21:49.506Z",
+      "feelsLikeHighF": 87.8,
+      "feelsLikeLowF": 71,
+      "code": 82,
+      "precipProbability": 26,
+      "precipMm": 40
+    }
+  ]
+}

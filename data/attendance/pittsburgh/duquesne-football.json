@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "teamId": "duquesne-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "duquesne-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "12:00",
+      "opponent": "Thomas More",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1410,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "13:00",
+      "opponent": "Merrimack",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 2679,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2022,
+      "date": "2022-10-29",
+      "start": "12:00",
+      "opponent": "Long Island",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 818,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "12:00",
+      "opponent": "Sacred Heart",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 875,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2022,
+      "date": "2022-11-19",
+      "start": "12:00",
+      "opponent": "Wagner",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1006,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "12:00",
+      "opponent": "C Connecticut",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 908,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "13:00",
+      "opponent": "Saint Francis",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 3052,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "12:00",
+      "opponent": "Stonehill",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1656,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "12:00",
+      "opponent": "WV Wesleyan",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1864,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "13:00",
+      "opponent": "Long Island",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 2956,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2024,
+      "date": "2024-11-02",
+      "start": "12:00",
+      "opponent": "Mercyhurst",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1654,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "12:00",
+      "opponent": "Robert Morris",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 2018,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "12:00",
+      "opponent": "Wagner",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1653,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "12:00",
+      "opponent": "Lincoln (PA)",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1522,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "12:00",
+      "opponent": "Lehigh",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1703,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "12:00",
+      "opponent": "New Haven",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1078,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "12:00",
+      "opponent": "Stonehill",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1068,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "13:00",
+      "opponent": "Saint Francis",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 2965,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "12:00",
+      "opponent": "C Connecticut",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1150,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "12:00",
+      "opponent": "Rio Grande",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 1763,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "duquesne-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "13:00",
+      "opponent": "Long Island",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "attendance": 2572,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

@@ -10912,6 +10912,346 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "cleveland",
+    "eventId": "2026-10-15-mlb-849818",
+    "date": "2026-10-15",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 33530,
+      "low": 30278,
+      "high": 33530
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A7-kF_",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-16-ht-cleveland-monsters-1029139",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Guardians vs. Rays next door, same hours."
+    },
+    "draw": {
+      "count": 9909,
+      "low": 8368,
+      "high": 11056
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-16-mlb-849817",
+    "date": "2026-10-16",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 33530,
+      "low": 30278,
+      "high": 33530
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-16-tm-vv1AAZkftGkeX52Qz",
+    "date": "2026-10-16",
+    "start": "21:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.7
+    },
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-17-ht-cleveland-monsters-1029152",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10177,
+      "low": 9712,
+      "high": 10465
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-17-mlb-849816",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 33530,
+      "low": 30278,
+      "high": 33530
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-17-tm-Z7r9jZ1A70b7_",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-18-espn-browns-401872997",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 66554,
+      "low": 66554,
+      "high": 67036
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-18-tm-Z7r9jZ1A7-Vj-",
+    "date": "2026-10-18",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-19-tm-vv17fZ_8GkDpq2AZ",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10830
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-19-tm-vvG1fZ_GKq4Vw_",
+    "date": "2026-10-19",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-20-tm-vvG1fZ_5hbiTow",
+    "date": "2026-10-20",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-20-tm-Z7r9jZ1A7Pd4P",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-23-tm-vvG1fZ_5Kxxnka",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-24-espn-cavaliers-401909854",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19432,
+      "low": 19432,
+      "high": 19432
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-24-tm-vvG1fZ_Cr93y0c",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7x93a",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-25-tm-vvG1fZ_CxB1QbZ",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-25-tm-Z7r9jZ1AAZfv9",
+    "date": "2026-10-25",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-26-espn-cavaliers-401909869",
+    "date": "2026-10-26",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19432,
+      "low": 19432,
+      "high": 19432
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-27-tm-vvG1fZ_ukTsrLJ",
+    "date": "2026-10-27",
+    "start": "17:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
     "metroId": "columbus",
     "eventId": "2026-10-12-tm-Z7r9jZ1A70gPx",
     "date": "2026-10-12",
@@ -16861,238 +17201,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
-    "metroId": "denver",
-    "eventId": "2026-10-14-espn-avalanche-401892505",
-    "date": "2026-10-14",
-    "start": "18:30",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 5.5,
-      "friction": "Low",
-      "why": "Rapids vs. MNUFC 7.3 mi away, same hours."
-    },
-    "draw": {
-      "count": 18022,
-      "low": 18018,
-      "high": 18075
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-14-espn-rapids-761871",
-    "date": "2026-10-14",
-    "start": "19:30",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 5.5,
-      "friction": "Heavy",
-      "why": "Rain in the forecast at a 7:30 pm start."
-    },
-    "draw": {
-      "count": 15799,
-      "low": 15123,
-      "high": 16352
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-15-espn-broncos-401872995",
-    "date": "2026-10-15",
-    "start": "18:15",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1.1,
-      "friction": "Low",
-      "why": "The biggest event around."
-    },
-    "draw": {
-      "count": 74692,
-      "low": 71499,
-      "high": 75183
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-16-espn-avalanche-401892517",
-    "date": "2026-10-16",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 2,
-      "friction": "Low",
-      "why": "Denver vs. Michigan 5.2 mi away, same hours."
-    },
-    "draw": {
-      "count": 18108,
-      "low": 18085,
-      "high": 18133
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-16-espn-du-mhockey-401904862",
-    "date": "2026-10-16",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 2,
-      "friction": "Moderate",
-      "why": "Avalanche vs. Penguins 5.2 mi away, same hours."
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-17-espn-denver-summit-fc-401854092",
-    "date": "2026-10-17",
-    "start": "18:45",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1.4,
-      "friction": "Low",
-      "why": "Denver vs. Michigan 6.1 mi away, same hours."
-    },
-    "draw": {
-      "count": 12372,
-      "low": 12322,
-      "high": 12372
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-17-espn-du-mhockey-401904863",
-    "date": "2026-10-17",
+    "metroId": "detroit",
+    "eventId": "2026-10-13-espn-red-wings-401892488",
+    "date": "2026-10-13",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 1.4,
-      "friction": "Low",
-      "why": "Summit FC vs. Angel City 6.1 mi away, same hours."
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-23-espn-avalanche-401892565",
-    "date": "2026-10-23",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 2,
-      "friction": "Low",
-      "why": "Denver vs. Boston College 5.2 mi away, same hours."
-    },
-    "draw": {
-      "count": 18108,
-      "low": 18085,
-      "high": 18133
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-23-espn-du-mhockey-401904864",
-    "date": "2026-10-23",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 2,
-      "friction": "Moderate",
-      "why": "Avalanche vs. Lightning 5.2 mi away, same hours."
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
-    "date": "2026-10-24",
-    "start": "16:30",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 4,
-      "friction": "Moderate",
-      "why": "Rapids vs. Vancouver 15 mi away, same hours."
-    },
-    "draw": {
-      "count": 12372,
-      "low": 12322,
-      "high": 12372
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-24-espn-du-mhockey-401904865",
-    "date": "2026-10-24",
-    "start": "18:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 4,
-      "friction": "Moderate",
-      "why": "Nuggets vs. Pelicans and Rapids vs. Vancouver 5.2 mi away, same hours."
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-24-espn-nuggets-401909859",
-    "date": "2026-10-24",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 4,
-      "friction": "Moderate",
-      "why": "Rapids vs. Vancouver and Summit FC vs. Louisville 7.3 mi away, same hours."
-    },
-    "draw": {
-      "count": 19763,
-      "low": 19735,
-      "high": 19854
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-24-espn-rapids-761897",
-    "date": "2026-10-24",
-    "start": "18:30",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
-    "capturedOn": "2026-10-13",
-    "read": {
-      "method": "formula",
-      "rating": 4,
-      "friction": "Moderate",
-      "why": "Summit FC vs. Louisville 15 mi away, same hours."
-    },
-    "draw": {
-      "count": 15896,
-      "low": 15130,
-      "high": 16393
-    }
-  },
-  {
-    "metroId": "denver",
-    "eventId": "2026-10-26-espn-nuggets-401909876",
-    "date": "2026-10-26",
-    "start": "20:00",
-    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17101,9 +17214,939 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "why": "The biggest event around."
     },
     "draw": {
-      "count": 19671,
-      "low": 19616,
-      "high": 19840
+      "count": 18874,
+      "low": 18347,
+      "high": 19301
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-13-tm-vv1keZv0-OGAu9GKf",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-13-tm-vvG1OZ_uCt9USN",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-14-tm-vv17OZ_3GkT_qBEF",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-14-tm-vvG1OZ_GKFOyIU",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-14-tm-Z7r9jZ1A7PYkk",
+    "date": "2026-10-14",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-espn-red-wings-401892508",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18686,
+      "low": 18165,
+      "high": 19109
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-tm-vv17OZ_oGkM4trR5",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-tm-vvG1OZ_1SNeyyI",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A70U0b",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-espn-pistons-401908946",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10450,
+      "low": 9461,
+      "high": 11318
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vv17OZ_8GkDoyqGA",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vv17OZ_oGkM4nrR9",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vv1AFZk3pGkdpdHfx",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vvG1OZ_2UkK086",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1100
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vvG1OZ_uE1_1qO",
+    "date": "2026-10-16",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-espn-michigan-football-401858490",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 111440,
+      "low": 111256,
+      "high": 111569
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-espn-red-wings-401892525",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Low",
+      "why": "Michigan Wolverines vs. Penn State 36 mi away, same hours."
+    },
+    "draw": {
+      "count": 19515,
+      "low": 18180,
+      "high": 19515
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vv17OZ_8GkDoDuG9",
+    "date": "2026-10-17",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vv17OZ_oGkM4lmR-",
+    "date": "2026-10-17",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vvG1OZ_1QKkJyg",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    },
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vvG1OZ_51g5kEG",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    },
+    "draw": {
+      "count": 2405
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vvG1OZ_GKHpq9x",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-1F7Zv0o3fZZ7GFuu",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vv17OZ_8GkDoDWGL",
+    "date": "2026-10-18",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vv17OZ_oGkM4mmY8",
+    "date": "2026-10-18",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vv17OZ_oGknjZgnL",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2405
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vvG1OZ_uVNTYPU",
+    "date": "2026-10-18",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-20-espn-pistons-401909088",
+    "date": "2026-10-20",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19225,
+      "low": 18400,
+      "high": 20140
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-20-tm-Z7r9jZ1A70b7w",
+    "date": "2026-10-20",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-21-tm-vv17OZ_KGkiTjGc1",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-22-tm-vv17OZ_3GkT_L1E4",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-22-tm-vvG1OZ_5lEWyGa",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-22-tm-Z7r9jZ1A70o78",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-espn-michigan-mhockey-401905027",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-rZ7HnEZ1AfFx_0",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-vv17OZ_3GkT_O1E-",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-vv17OZ_3GkT2OysT",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-vv17OZ_3GkXlZJ-T",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-Z7r9jZ1A7xbZd",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-espn-michigan-football-401858496",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 111440,
+      "low": 111256,
+      "high": 111569
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-rZ7HnEZ1AfFtaf",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-vv17OZ_3GkT_-1EJ",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-vvG1OZ_5hLLQhl",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7O6qd",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-espn-lions-401873020",
+    "date": "2026-10-25",
+    "start": "16:25",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 64174,
+      "low": 63739,
+      "high": 64430
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-tm-vv17OZ_3GkT_0QEH",
+    "date": "2026-10-25",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-tm-vvG1OZ_26AhtkH",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2405
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-tm-vvG1OZ_Gmsn9ph",
+    "date": "2026-10-25",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-13-tm-1AoZk8gGkeSgBXJ",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-15-espn-oilers-401892515",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-16-tm-1778v0G6uhhbjIQ",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-17-tm-1778v0G61wdH03y",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-17-tm-1778v0G65KidlVW",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-18-ht-oil-kings-1023190",
+    "date": "2026-10-18",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 4888,
+      "low": 4380,
+      "high": 5306
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-20-espn-oilers-401892546",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18512,
+      "low": 18203,
+      "high": 18512
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-21-tm-1Av7Z_dGkBP6_Pc",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-22-espn-oilers-401892561",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-ht-oil-kings-1023201",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7251,
+      "low": 5984,
+      "high": 9221
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-tm-1AoZk38GkecQFf9",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-tm-1AoZkf_GkdP6m_0",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-espn-oilers-401892574",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18347,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-tm-1AoZk38GkecjIf0",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-tm-1AoZkoyGkenE6RU",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-25-ht-oil-kings-1023219",
+    "date": "2026-10-25",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 4888,
+      "low": 4380,
+      "high": 5306
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-26-espn-oilers-401892584",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-27-tm-1778v0G65hJ2nDa",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
     }
   },
   {
@@ -17644,6 +18687,62 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 17947,
       "low": 16689,
       "high": 17947
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-16-espn-pacers-401914126",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-17-espn-butler-football-401868213",
+    "date": "2026-10-17",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-18-espn-colts-401873003",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-23-espn-pacers-401909844",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
     }
   },
   {
@@ -28176,6 +29275,448 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     },
     "draw": {
       "count": 21000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-13-tm-vvG1VZ_1RmgCaZ",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Weezer 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-13-tm-vvG1VZ_6naZVWW",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "KATSEYE 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 13110
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-heat-401898404",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Low",
+      "why": "Inter Miami vs. NYCFC 4.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 19600,
+      "low": 19600,
+      "high": 19600
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-inter-miami-cf-761861",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Low",
+      "why": "Heat vs. Nets 4.5 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-tm-vvG1VZ_7msjEDz",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Moderate",
+      "why": "Inter Miami vs. NYCFC and Heat vs. Nets 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-15-espn-panthers-401892510",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Def Leppard 10 mi away, same hours."
+    },
+    "draw": {
+      "count": 18525,
+      "low": 17731,
+      "high": 19096
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-15-tm-vvG1VZ_5Sqbrak",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Panthers vs. Canucks 10 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-16-tm-vvG1VZ_8K_o6T-",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-miami-fc-401842298",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.3
+    },
+    "draw": {
+      "count": 1203,
+      "low": 1129,
+      "high": 1382
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-miami-hurricanes-football-401858263",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Low",
+      "why": "Panthers vs. Kraken 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 58503,
+      "low": 58045,
+      "high": 63892
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-panthers-401892522",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "Miami vs. Florida St 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 19343,
+      "low": 16804,
+      "high": 19357
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-tm-vvG1VZ_GpGY6iN",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "Miami vs. Florida St 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-18-tm-vvG1VZ_5G47K2b",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "$UICIDEBOY$ 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-18-tm-vvG1VZ_6XptkL5",
+    "date": "2026-10-18",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "TINI 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 13110
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-20-espn-fiu-football-401871055",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "The Doobie Brothers 23 mi away, same hours."
+    },
+    "draw": {
+      "count": 12436,
+      "low": 10891,
+      "high": 14426
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-20-tm-vvG1VZ_6xPlImM",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "FIU vs. MTSU 23 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-21-espn-heat-401909091",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19620,
+      "low": 19610,
+      "high": 19623
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-22-espn-fort-lauderdale-united-401878621",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1890,
+      "low": 1736,
+      "high": 2148
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-22-tm-vvG1VZ_GK4mdnE",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2700
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-23-espn-heat-401909847",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19690,
+      "low": 19657,
+      "high": 19788
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-24-espn-miami-hurricanes-football-401858274",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Moderate",
+      "why": "91° feels-like at a 12:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 58503,
+      "low": 58045,
+      "high": 63892
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-24-tm-vvG1VZ_1mQ_pYB",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Low",
+      "why": "Chayanne 19 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-24-tm-vvG1VZ_kt0YoDW",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Low",
+      "why": "Blake Shelton 19 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-25-tm-vvG1VZ_Gl6RGiu",
+    "date": "2026-10-25",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-26-espn-heat-401909871",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19620,
+      "low": 19610,
+      "high": 19623
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-26-tm-vvG1VZ_8pW-pfe",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
     }
   },
   {
@@ -38876,6 +40417,101 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-13-espn-ottawa-senators-401892494",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15273,
+      "low": 14654,
+      "high": 15952
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-15-espn-ottawa-senators-401892507",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15593,
+      "low": 14960,
+      "high": 16286
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-21-espn-ottawa-senators-401892551",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16216,
+      "low": 15558,
+      "high": 16936
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-22-espn-ottawa-senators-401892554",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16040,
+      "low": 15389,
+      "high": 16753
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-24-espn-ottawa-senators-401892569",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15832,
+      "low": 15706,
+      "high": 17126
+    }
+  },
+  {
     "metroId": "philadelphia",
     "eventId": "2026-10-12-tm-Z7r9jZ1A7OSuY",
     "date": "2026-10-12",
@@ -40437,6 +42073,683 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-17-espn-robert-morris-football-401867920",
+    "date": "2026-10-17",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2446,
+      "low": 2107,
+      "high": 2690
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-22-espn-penguins-401892556",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16176,
+      "low": 14542,
+      "high": 17065
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-duquesne-football-401867931",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2961,
+      "low": 2484,
+      "high": 2987
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-penguins-401892570",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17191,
+      "low": 16368,
+      "high": 17650
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-riverhounds-401842308",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 4916,
+      "low": 4874,
+      "high": 5405
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-robert-morris-football-401867921",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2446,
+      "low": 2107,
+      "high": 2690
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-13-tm-vvG1HZ_1xuGMaR",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1500
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-15-tm-vvG1HZ_G20GKwT",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A70Ao0",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-vvG1HZ_G20uSS1",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "MANÁ next door, same hours."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-vvG1HZbMKa2aYz",
+    "date": "2026-10-16",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Disney On Ice presents Jump In! next door, same hours."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-Z7r9jZ1A70s86",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.6
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-Z7r9jZ1AAvPp6",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.6
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-espn-timbers-761888",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Doja Cat 1.4 mi away, same hours."
+    },
+    "draw": {
+      "count": 24538,
+      "low": 22592,
+      "high": 24686
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-vvG1HZ_G202dSj",
+    "date": "2026-10-17",
+    "start": "11:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-vvG1HZbSnaneIS",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Timbers vs. Colorado 1.4 mi away, same hours."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-Z7r9jZ1A7JAoA",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.8
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-Z7r9jZ1AAvkAJ",
+    "date": "2026-10-17",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.8
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-18-tm-vvG1HZ_G20KdVO",
+    "date": "2026-10-18",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-18-tm-Z7r9jZ1A7JAok",
+    "date": "2026-10-18",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-19-tm-vvG1HZ_GQuJgGr",
+    "date": "2026-10-19",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-20-tm-vvG1HZ_apoDgUQ",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-21-espn-blazers-401909841",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16919,
+      "low": 16349,
+      "high": 17546
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-22-tm-Z7r9jZ1A7-EbU",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-23-espn-thorns-401854029",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18247,
+      "low": 16667,
+      "high": 20878
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-23-tm-Z7r9jZ1A7P9C7",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-24-espn-timbers-761902",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 24538,
+      "low": 22592,
+      "high": 24686
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7JA-M",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-25-tm-vvG1HZ_FDLdrxf",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-25-tm-Z7r9jZ1A7JAxd",
+    "date": "2026-10-25",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-27-tm-vvG1HZ_6heHUi_",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-13-espn-hurricanes-401892491",
+    "date": "2026-10-13",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18681,
+      "low": 18281,
+      "high": 18681
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-14-tm-G5eVZ_eJP-tDn",
+    "date": "2026-10-14",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 20601
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-17-espn-duke-football-401858266",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Courage vs. Wave 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 24223,
+      "low": 23264,
+      "high": 24861
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-17-espn-nc-courage-401854023",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Duke vs. North Carolina 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 7126,
+      "low": 7016,
+      "high": 8545
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-21-tm-G5eVZ_6BPBl--",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11115
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-23-tm-G5eVZ_7nDU416",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "North Carolina Tar Heels Womens Volleyball vs. California Golden Bears Womens Volleyball and Steve Lacy 28 mi away, same hours."
+    },
+    "draw": {
+      "count": 20601
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-23-tm-G5eVZ_8CI0_um",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin 4.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-23-tm-Z7r9jZ1AAZabO",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin 28 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-24-espn-unc-football-401858275",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 50500,
+      "low": 48267,
+      "high": 50500
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-25-tm-Z7r9jZ1AAZab4",
+    "date": "2026-10-25",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-27-espn-hurricanes-401892586",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Victoria Monét 4.9 mi away, same hours."
+    },
+    "draw": {
+      "count": 18681,
+      "low": 18281,
+      "high": 18681
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-27-tm-G5eVZ_3NPNcOA",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:55:58.099Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Hurricanes vs. Bruins 4.9 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
     "metroId": "sacramento",
     "eventId": "2026-10-13-espn-sacramento-kings-401901826",
     "date": "2026-10-13",
@@ -40933,6 +43246,904 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     },
     "draw": {
       "count": 2188
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-13-espn-utah-mammoth-401892500",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11298,
+      "low": 11298,
+      "high": 11298
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-14-espn-real-salt-lake-761870",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "Hocus Pocus Spooktacular 7.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-14-tm-LvZ18QQHnXSD4N8Z0wGYh",
+    "date": "2026-10-14",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "Real Salt Lake vs. Earthquakes 7.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A70k1k",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10184
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-16-tm-LvZ18QtESvV4V_Nigluzf",
+    "date": "2026-10-16",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-espn-utah-mammoth-401892531",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Royals vs. Current 13 mi away, back to back."
+    },
+    "draw": {
+      "count": 11521,
+      "low": 11521,
+      "high": 12915
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-espn-utah-royals-401854022",
+    "date": "2026-10-17",
+    "start": "16:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Mammoth vs. Oilers 13 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-tm-LvZ18QtESvV4V_Nigluz4",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Moderate",
+      "why": "Royals vs. Current and Mammoth vs. Oilers 7.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-19-espn-utah-mammoth-401892538",
+    "date": "2026-10-19",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11387,
+      "low": 11387,
+      "high": 11387
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-20-tm-G5vzZ_ARwxR5G",
+    "date": "2026-10-20",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10184
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-21-tm-Z7r9jZ1A7Pa_0",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10184
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-23-espn-utah-jazz-401909849",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Royals vs. Reign 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 18175,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-23-espn-utah-royals-401854028",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Jazz vs. Pelicans 13 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-real-salt-lake-761898",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Utah Utes vs. Houston and Mammoth vs. Lightning 12 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-utah-mammoth-401892575",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Moderate",
+      "why": "Real Salt Lake vs. St. Louis 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 11131,
+      "low": 11131,
+      "high": 12478
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-utah-utes-football-401856837",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 51125,
+      "low": 50962,
+      "high": 52286
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-25-espn-utah-jazz-401909861",
+    "date": "2026-10-25",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18181,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-26-espn-utah-jazz-401909875",
+    "date": "2026-10-26",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18181,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-27-espn-utah-mammoth-401892592",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11053,
+      "low": 11053,
+      "high": 11053
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-13-tm-G5dIZ_13XIs1Z",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10830
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-13-tm-G5dIZ_5Fghs5C",
+    "date": "2026-10-13",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-14-espn-spurs-401898722",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Phoenix Suns Post-Game Free Throw and San Antonio Spurs vs. Phoenix Suns Courtside Experience next door, same hours."
+    },
+    "draw": {
+      "count": 17635,
+      "low": 16473,
+      "high": 18091
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-14-tm-G5dIZ_ANj9ChV",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 10
+    },
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-14-tm-G5dIZ_opIxuO5",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Phoenix Suns Courtside Experience and San Antonio Spurs vs. Phoenix Suns Frost Club Level Access next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-14-tm-G5dIZ_opmrrmA",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Phoenix Suns Post-Game Free Throw and San Antonio Spurs vs. Phoenix Suns Frost Club Level Access next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-14-tm-G5dIZ_opRm2kK",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Phoenix Suns Post-Game Free Throw and San Antonio Spurs vs. Phoenix Suns Courtside Experience next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-espn-spurs-401898843",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacramento Kings Post-Game Free Throw and San Antonio Spurs vs. Sacramento Kings Courtside Experience next door, same hours."
+    },
+    "draw": {
+      "count": 17635,
+      "low": 16473,
+      "high": 18091
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-tm-G5dIZ_aQVkdKk",
+    "date": "2026-10-16",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 10
+    },
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-tm-G5dIZ_GRTPUUa",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 10
+    },
+    "draw": {
+      "count": 3100
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-tm-G5dIZ_opINcOS",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacramento Kings Courtside Experience and San Antonio Spurs vs. Sacramento Kings Frost Club Level Access next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-tm-G5dIZ_opmLmm2",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacramento Kings Post-Game Free Throw and San Antonio Spurs vs. Sacramento Kings Frost Club Level Access next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-tm-G5dIZ_opRRLki",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacramento Kings Post-Game Free Throw and San Antonio Spurs vs. Sacramento Kings Courtside Experience next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-espn-san-antonio-fc-401842297",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Moderate",
+      "why": "UTSA vs. Navy and Lil Wayne 9.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 7126,
+      "low": 7011,
+      "high": 7433
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-espn-uiw-football-401868250",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Heavy",
+      "why": "UTSA vs. Navy 3.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-espn-utsa-football-401862804",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Moderate",
+      "why": "Incarnate Word vs. UT Rio Grande 3.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 18456,
+      "low": 17961,
+      "high": 18935
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-tm-G5dIZ_a3Q5FYf",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.4
+    },
+    "draw": {
+      "count": 3100
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-tm-G5dIZ_CnRb_wn",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.4
+    },
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-tm-G5dIZ_kULhamF",
+    "date": "2026-10-17",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Moderate",
+      "why": "UTSA vs. Navy 2.6 mi away, same hours."
+    },
+    "draw": {
+      "count": 10830
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-18-tm-G5dIZ_CnR_twS",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-19-tm-G5dIZ_7nTbhpg",
+    "date": "2026-10-19",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-20-espn-spurs-401909090",
+    "date": "2026-10-20",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Oklahoma City Thunder Post-Game Free Throw and San Antonio Spurs vs. Oklahoma City Thunder Frost Club Level Access next door, same hours."
+    },
+    "draw": {
+      "count": 18336,
+      "low": 17919,
+      "high": 18509
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-20-tm-G5dIZ_opI0c-Q",
+    "date": "2026-10-20",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Oklahoma City Thunder Frost Club Level Access and Spurs vs. Thunder next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-20-tm-G5dIZ_opRYR6k",
+    "date": "2026-10-20",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Oklahoma City Thunder Post-Game Free Throw and Spurs vs. Thunder next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-21-tm-G5dIZ_GCIfa8i",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-22-tm-G5dIZ_1DG8uLn",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Young Miko next door, same hours."
+    },
+    "draw": {
+      "count": 10830
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-22-tm-G5dIZ_F5slxER",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Don Omar next door, same hours."
+    },
+    "draw": {
+      "count": 11700
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-23-espn-spurs-401909096",
+    "date": "2026-10-23",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-23-tm-G5dIZ_aB86yzH",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-24-espn-san-antonio-fc-401842310",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Incarnate Word vs. McNeese 6.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 7097,
+      "low": 6983,
+      "high": 7403
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-24-espn-uiw-football-401869138",
+    "date": "2026-10-24",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "SAFC vs. Orange County 6.5 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-24-tm-G5dIZ_1qq2S42",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.3
+    },
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-25-tm-G5dIZ_GCRLQr_",
+    "date": "2026-10-25",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1477
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-26-tm-G5dIZbUpq3nZc",
+    "date": "2026-10-26",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10830
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-27-espn-spurs-401909879",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacrament Kings Post-Game Free Throw and San Antonio Spurs vs. Sacramento Kings Courtside Experience next door, same hours."
+    },
+    "draw": {
+      "count": 18134,
+      "low": 17722,
+      "high": 18306
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-27-tm-G5dIZ_opIPWx7",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacramento Kings Courtside Experience and San Antonio Spurs vs. Sacramento Kings Frost Club Level Access next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-27-tm-G5dIZ_opmxCmV",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacrament Kings Post-Game Free Throw and San Antonio Spurs vs. Sacramento Kings Frost Club Level Access next door, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-27-tm-G5dIZ_opRsR6b",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:50:43.969Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "San Antonio Spurs vs. Sacrament Kings Post-Game Free Throw and San Antonio Spurs vs. Sacramento Kings Courtside Experience next door, same hours."
     }
   },
   {
@@ -46492,6 +49703,118 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "st-louis",
+    "eventId": "2026-10-14-espn-st-louis-city-sc-761868",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 22423,
+      "low": 22423,
+      "high": 22423
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-20-espn-blues-401892544",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16938,
+      "low": 16579,
+      "high": 17280
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-22-espn-blues-401892558",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17110,
+      "low": 16747,
+      "high": 17455
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-espn-blues-401892573",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18096,
+      "low": 18096,
+      "high": 18096
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-espn-lindenwood-football-401867689",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 3363,
+      "low": 2850,
+      "high": 3678
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-27-espn-blues-401892588",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17179,
+      "low": 16814,
+      "high": 17525
+    }
+  },
+  {
     "metroId": "tampa",
     "eventId": "2026-10-12-mlb-849820",
     "date": "2026-10-12",
@@ -48516,6 +51839,1107 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "capturedOn": "2026-10-12",
     "draw": {
       "count": 990
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-13-tm-16vfZ_F0SG7TPDk",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-13-tm-17A8v0G61kMvBXT",
+    "date": "2026-10-13",
+    "start": "21:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-13-tm-17A8v0G65mcFNVP",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-espn-capitals-401892504",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "D.C. United vs. Red Bull NY 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 16627,
+      "low": 16479,
+      "high": 16932
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-espn-dc-united-761863",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Capitals vs. Canadiens 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 11243,
+      "low": 10944,
+      "high": 12763
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-tm-17A8v0G6C64_z7Y",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-tm-17A8v0G6CBNBzFG",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-tm-1A4Zk8VGkd5Yyi3",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Moderate",
+      "why": "Capitals vs. Canadiens and D.C. United vs. Red Bull NY 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-17A8v0G61wBnb9B",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Morrissey 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-17A8v0G62NyEeP_",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-17A8v0G6CTLhCBo",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-1A4Zk34Gkd4iaqV",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Don Omar 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-16-tm-17A8v0G6GpHxucm",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-16-tm-17A8v0G6ueLkUwW",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "SOFI TUKKER 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-16-tm-1AvfZ_FGkD6rn_L",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Rod Wave 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-espn-capitals-401892519",
+    "date": "2026-10-17",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Moderate",
+      "why": "Maryland vs. Rutgers 7.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 18443,
+      "low": 18219,
+      "high": 18443
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-espn-maryland-football-401858489",
+    "date": "2026-10-17",
+    "start": "12:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Low",
+      "why": "Spirit vs. Gotham and Capitals vs. Devils 9.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 48797,
+      "low": 45601,
+      "high": 51735
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-espn-spirit-401854021",
+    "date": "2026-10-17",
+    "start": "12:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Moderate",
+      "why": "Maryland vs. Rutgers 9.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 19497,
+      "low": 18816,
+      "high": 21051
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-tm-17A8v0G659ZIQyq",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.6
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-tm-1AvfZ_aGkUn915f",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.6
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-18-tm-17A8v0G6G2y3HhW",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-18-tm-1A4ZkfdGkeIyEAi",
+    "date": "2026-10-18",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Johnny Blue Skies 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-18-tm-1AvfZ_6GkcC96zB",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Steve Lacy 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-20-espn-capitals-401892542",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Rodrigo y Gabriela 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 16794,
+      "low": 16644,
+      "high": 17102
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-20-tm-17A8v0G6CJimMok",
+    "date": "2026-10-20",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-20-tm-17A8v0G6GCsQXu1",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Capitals vs. Kings 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-espn-wizards-401909835",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Jesse Welles and Arcángel 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 15413,
+      "low": 14393,
+      "high": 16620
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-tm-17A8v0G61UycyRN",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Wizards vs. Bucks 16 mi away, same hours."
+    },
+    "draw": {
+      "count": 5700
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-tm-17A8v0G6GYx-uta",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-tm-1AvfZ_AGknTIWC4",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Wizards vs. Bucks 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-22-tm-17A8v0G619llZUk",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-22-tm-1A4Zk3pGkesTF4n",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-22-tm-1A4Zk4FGkd4Vl81",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-espn-wizards-401909846",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
+      "friction": "Low",
+      "why": "Five Finger Death Punch 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 16789,
+      "low": 15352,
+      "high": 18639
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-17A8v0G65UwILk2",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 4.6
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-17A8v0G6GnQm9xb",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
+      "friction": "Moderate",
+      "why": "Five Finger Death Punch and Wizards vs. Raptors 31 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-1A4Zk3vGkd0IuF6",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 4.6
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-1AvfZ_eGki4tnxQ",
+    "date": "2026-10-23",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
+      "friction": "Low",
+      "why": "Wizards vs. Raptors 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 25262
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-capitals-401892571",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 18592,
+      "low": 18365,
+      "high": 18592
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-dc-united-761895",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin and Capitals vs. Sabres 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 16888,
+      "low": 16143,
+      "high": 18438
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-loudoun-united-401842304",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 3443,
+      "low": 2631,
+      "high": 4300
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G653EubXz",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G65UwITk4",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G6G3OU_FM",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G6GnQlMxv",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin and Capitals vs. Sabres 31 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-1AvfZ_7GkRimr_F",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Capitals vs. Sabres and D.C. United vs. Cincinnati 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 25262
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-17A8v0G61rRhGa5",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.9
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-17A8v0G65FKgixM",
+    "date": "2026-10-25",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.9
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-1A4Zku8GkeyBFx6",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Beck 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-1AvfZ_FGkDleutU",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Moderate",
+      "why": "RUSH 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-26-tm-1AvfZ_8GkmqCp9n",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-26-tm-Z7r9jZ1A7JZG7",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-27-tm-17A8v0G62MjYhB7",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-27-tm-1kA8vN4oGAGrHFw",
+    "date": "2026-10-27",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-14-espn-avalanche-401892505",
+    "date": "2026-10-14",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 5.5,
+      "friction": "Low",
+      "why": "Rapids vs. MNUFC 7.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 18022,
+      "low": 18018,
+      "high": 18075
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-14-espn-rapids-761871",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 5.5,
+      "friction": "Heavy",
+      "why": "Rain in the forecast at a 7:30 pm start."
+    },
+    "draw": {
+      "count": 15799,
+      "low": 15123,
+      "high": 16352
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-15-espn-broncos-401872995",
+    "date": "2026-10-15",
+    "start": "18:15",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 74692,
+      "low": 71499,
+      "high": 75183
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-16-espn-avalanche-401892517",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Denver vs. Michigan 5.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 18108,
+      "low": 18085,
+      "high": 18133
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-16-espn-du-mhockey-401904862",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Avalanche vs. Penguins 5.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-17-espn-denver-summit-fc-401854092",
+    "date": "2026-10-17",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Denver vs. Michigan 6.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 12372,
+      "low": 12322,
+      "high": 12372
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-17-espn-du-mhockey-401904863",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Summit FC vs. Angel City 6.1 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-23-espn-avalanche-401892565",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Denver vs. Boston College 5.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 18108,
+      "low": 18085,
+      "high": 18133
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-23-espn-du-mhockey-401904864",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Avalanche vs. Lightning 5.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
+    "date": "2026-10-24",
+    "start": "16:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Rapids vs. Vancouver 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 12372,
+      "low": 12322,
+      "high": 12372
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-du-mhockey-401904865",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Nuggets vs. Pelicans and Rapids vs. Vancouver 5.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-nuggets-401909859",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Rapids vs. Vancouver and Summit FC vs. Louisville 7.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 19763,
+      "low": 19735,
+      "high": 19854
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-rapids-761897",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Summit FC vs. Louisville 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 15896,
+      "low": 15130,
+      "high": 16393
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-26-espn-nuggets-401909876",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19671,
+      "low": 19616,
+      "high": 19840
     }
   }
 ];

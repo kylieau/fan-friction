@@ -1,0 +1,7339 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "teamId": "durham-bulls",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3678,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7531,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "17:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "11:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7982,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4854,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7534,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "17:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7316,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9032,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7587,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "17:05",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 10757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3934,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "17:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3908,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-28",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "17:05",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "17:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8855,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6207,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-05",
+      "start": "17:05",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-08",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-11",
+      "start": "17:05",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5986,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-22",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-23",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-03-31",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "17:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "11:05",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7286,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5728,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7988,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "17:05",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "11:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "17:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "17:30",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "17:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "17:05",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:35",
+      "opponent": "Mets",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "18:35",
+      "opponent": "Mets",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "18:35",
+      "opponent": "Mets",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "18:35",
+      "opponent": "Mets",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7350,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "17:05",
+      "opponent": "Mets",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 11090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "17:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "17:05",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5980,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3737,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "17:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": null,
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5324,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6516,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:05",
+      "opponent": "Bats",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 2742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-04",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "11:05",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7645,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:05",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "11:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6859,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8947,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8825,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "17:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "17:05",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7289,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "18:35",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "17:05",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 11183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "17:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8102,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5280,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:05",
+      "opponent": "Bisons",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "18:35",
+      "opponent": "Space Cowboys",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Night with Post-Game Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "18:35",
+      "opponent": "Space Cowboys",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-03",
+      "start": "18:35",
+      "opponent": "Space Cowboys",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:35",
+      "opponent": "Space Cowboys",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "18:35",
+      "opponent": "Space Cowboys",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bull Durham Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:05",
+      "opponent": "Space Cowboys",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Meet The Team"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "11:05",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7665,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6645,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversion"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "17:05",
+      "opponent": "RailRiders",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Easter Egg Shellebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Easter Picnic"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "11:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8928,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Duke Health All-Stars Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Healthcare Appreciation Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Nurse Wool E. Bull Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wool E. Bull's Birthday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "11:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5933,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversion"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "SpongeBob SquarePants Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mother's Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mother's Day Brunch"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Memorial Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mental Health Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Wizarding Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "LEGO® NINJAGO® Make N Take Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4863,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Whisker Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Nine: African American Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Outdoors Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "17:05",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Father's Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Father's Day Pre-Game Catch on the Field"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wednesday Night Baseball"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "ALS Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Dino Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8408,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6385,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversion"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 10943,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fourth of July Weekend Picnics"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8509,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Military Appreciation Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fourth of July Weekend Picnics"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "16:40",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Doubleheader (Game 1)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3722,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 2806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wednesday Night Baseball"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Educator Appreciation"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Crayons2Calculators Fill That Bus School Supply Drive"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Couch Oil Cares Fill 'er Up Backpack Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Margaritaville Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Margaritaville Night Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bull Sharks Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bull Shark Night Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wednesday Night Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Peanuts Night: A Christmas in July Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Outdoors Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "17:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "5,030 Sahlen's Hot Dogs Giveaway!"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4786,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wednesday Night Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5813,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Augtoberfest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Stranger Things Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Stranger Things Night Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7000,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Princess & Pirates Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wednesday Night Baseball"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pickleball Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Life Of A Show Bull"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8868,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:05",
+      "opponent": "Red Sox",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Truck Fest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4932,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "College Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies and Tallboys Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wednesday Night Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Thursday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "First Responders Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hockey Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Doubleheader (Game 1)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 9375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "State Fair Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7838,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:45",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "18:45",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "18:45",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Scooter's Coffee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:45",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión - Toros Bravos de Durham"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Rand Coca-Cola"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "18:45",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bull Durham Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by EmergeOrtho"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "17:05",
+      "opponent": "IronPigs",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3995,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Easter at the DBAP"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Braswell Family Farms"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "11:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6830,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented By Blue Cross NC"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jackie Robinson Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Ricci Law"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Golf Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7928,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by iTicket.Law"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Braswell Family Farms"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "11:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Eno Animal Hospital"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bull Dragons"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Kanki"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars™ Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Duke Children's"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:45",
+      "opponent": "Express",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión - Toros Bravos de Durham"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies & Tallboys"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Alpaca Chicken"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:45",
+      "opponent": "Express",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by RapidScale"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "18:45",
+      "opponent": "Express",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4238,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:45",
+      "opponent": "Express",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bull Dragons"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:45",
+      "opponent": "Express",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Peanuts Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:05",
+      "opponent": "Express",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mother's Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "11:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5968,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "STEM Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "9 Weddings, 9 Innings!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5456,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bull Dragons"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7358,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Wool E. Bull's Birthday!"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by EmergeOrtho"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies & Tallboys"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by FlexGen"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Labcorp"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by ViiV Healthcare"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Foothills Brewing"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "17:05",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies & Tallboys"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Avalara"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "12:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Small Business Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by PNC Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Hitachi"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Nine: African American Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "18:45",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Camp Out & Miracle League Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Towne Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "17:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Father's Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Youth Sports Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies & Tallboys"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Military Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Iconic American Food Specials!"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7780,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        },
+        {
+          "type": "Theme Days",
+          "name": "American Music & Arts Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 10184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Independence Day Celebration!"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City of Durham July 4th Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Light Up Wristbands"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "17:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Margaritaville Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "18:45",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7986,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bull Sharks Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "17:05",
+      "opponent": "Knights",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5703,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Community Hero Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": null,
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dino Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Revels Turf & Tractor"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Budweiser in Support of Folds of Honor"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "13:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Biogen"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "18:45",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Wizarding Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Scooter's Coffee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "17:05",
+      "opponent": "Stripers",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:45",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies & Tallboys"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:45",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Citrin Cooperman"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Raymond the Ray Visits the DBAP!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "18:45",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "18:45",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión - Toros Bravos de Durham"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "18:45",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Princess & Pirates Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tendies & Tallboys"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 3467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by Terracon"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "18:45",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 5793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "TruckFest"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "17:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game presented by Blue Cross NC"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 4497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "College Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 7607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "First Responders Appreciation Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Champ the Bat Dog"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Game Presented by CPI Security"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:45",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 8876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saturday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hockey Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "durham-bulls",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "durham-bulls-athletic-park",
+      "attendance": 6982,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-10-14",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "pittsburgh",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:56.904Z",
+      "feelsLikeHighF": 76.2,
+      "feelsLikeLowF": 61.1,
+      "code": 55,
+      "precipProbability": 62,
+      "precipMm": 2.45
+    }
+  ]
+}

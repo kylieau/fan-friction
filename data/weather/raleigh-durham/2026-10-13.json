@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-10-13",
+  "rows": [
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:26:13.665Z",
+      "feelsLikeF": 76.3,
+      "tempF": 75.5,
+      "humidity": 56,
+      "windMph": 5,
+      "uvIndex": 0.1,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:26:13.665Z",
+      "feelsLikeF": 80.9,
+      "tempF": 81,
+      "humidity": 43,
+      "windMph": 5.1,
+      "uvIndex": 0.95,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 138,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:26:13.665Z",
+      "feelsLikeHighF": 85.6,
+      "feelsLikeLowF": 58.7,
+      "code": 3,
+      "precipProbability": 2,
+      "precipMm": 0
+    }
+  ]
+}

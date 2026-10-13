@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "teamId": "nccu-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "nccu-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "18:00",
+      "opponent": "Winston-Salem",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 3731,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "16:00",
+      "opponent": "VA Lynchburg",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 6759,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2022,
+      "date": "2022-10-13",
+      "start": "19:30",
+      "opponent": "Morgan St",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 6319,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "14:00",
+      "opponent": "Howard",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 14322,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2022,
+      "date": "2022-12-17",
+      "start": "12:00",
+      "opponent": "Jackson St",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 49670,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Cricket Celebration Bowl",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "16:00",
+      "opponent": "Winston-Salem",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 9330,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "16:00",
+      "opponent": "Campbell",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 8410,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2023,
+      "date": "2023-10-26",
+      "start": "19:30",
+      "opponent": "SC State",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 7889,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "15:30",
+      "opponent": "Norfolk St",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 13626,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "14:00",
+      "opponent": "Delaware St",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 6018,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "19:00",
+      "opponent": "NC A&T",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 14400,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "14:00",
+      "opponent": "VA Lynchburg",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 5500,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2024,
+      "date": "2024-11-15",
+      "start": "20:00",
+      "opponent": "Howard",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 5429,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "13:00",
+      "opponent": "Delaware St",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 12800,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "14:00",
+      "opponent": "Norfolk St",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 7225,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2025,
+      "date": "2025-11-14",
+      "start": "17:30",
+      "opponent": "SC State",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 7291,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:00",
+      "opponent": "Elizabeth City",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 6855,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "12:00",
+      "opponent": "NC A&T",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 11632,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "18:00",
+      "opponent": "Campbell",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 2136,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nccu-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "13:00",
+      "opponent": "William & Mary",
+      "venueId": "o-kelly-riddick-stadium",
+      "attendance": 11735,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

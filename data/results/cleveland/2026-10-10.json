@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-mlb-849831",
+      "metroId": "cleveland",
+      "date": "2026-10-10",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "progressive-field",
+      "homeTeamId": "guardians",
+      "home": {
+        "name": "Guardians",
+        "score": 2
+      },
+      "away": {
+        "name": "White Sox",
+        "score": 0
+      },
+      "capturedAt": "2026-10-13T07:22:20.951Z",
+      "attendance": 36889,
+      "duration": {
+        "minutes": 156,
+        "kind": "official"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}
