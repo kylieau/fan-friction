@@ -64,6 +64,10 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 - **Famous dates → Stats (V10, Kylie, Oct 12):** hidden from the month sheet and `?view=calendar` in build 4; the code and data stay. Rehome it in the Stats pass (Mock Mosaic).
 - **Type icons "option C":** closed. L1b (icon on line 1, hand-drawn) overrode build-notes-oct9 3.18 on Oct 9 and is live; nothing to build.
 - **Top tags (T11), "Went with", team colors on tags:** Stats pass or later.
+- **Hand-added plans can't be tagged:** a plan typed in by hand has no page with an editor; its tags can only be added once it is a stub. T02 allows tags before the event. Structural: propose a place first.
+- **LA data (Composer's):** today's LA list includes "Lakers vs. Warriors · T-Mobile Arena" (Las Vegas, 220 miles); it pulls the LA map out to Bakersfield and Mexicali. Seen on the live site Oct 13.
+- **Signed-in tags round-trip not run:** `userTags` rides in the plan and entry `data` column and no migration rewrites it; a one-minute phone check (add a tag, sign out and in) is still to do.
+- **Favorite cities on an older app copy:** a device still on an older build rewrites the settings row without `favoriteCities`; it returns when that copy updates. A server-side merge would need a migration.
 - **Seats storage:** open with Kylie. Plan rows are readable by approved followers (`0016_follow_states.sql`); a private seats column would be a migration she pastes.
 
 ### Miami follow-up (city build, Oct 13, 2026; not yet approved like K14)

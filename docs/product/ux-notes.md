@@ -119,3 +119,10 @@ The Map's date button and range dropdown are now one When control: Today, Next 7
 - Event page: "Up against" (violet) replaces the verdict card; "I was there" hero with "I watched it" under it; the ticket line on upcoming events.
 - Settled read: no "Stamped" label; ⓘ opens "About this read".
 - Polish still open: the sheet's drag handle stays visible when no chip is selected only as a thin bar (hidden entirely now); "Local competition" bars sit under "Up against" and may be redundant; the Favorites "By date" heading's read uses the first row's city when rows span cities.
+
+### Oct 13, 2026: build 4 (Claude Code slice; raised by the builder, for Kylie to sort)
+- **Structural: two different "+1"s on one Explore chip.** The older corner badge (an event hidden under this chip, C047) and the new friend line's "Sam +1" (one more friend, V06) can sit on the same chip and mean different things. Both are her decisions; neither was changed.
+- **Structural: a hand-added plan has no page**, so its tags can only be added after it becomes a stub (T02 allows tags before the event).
+- **Polish: Home's first-event sentence** ("Been to a game or show? Log your first event.") still uses "log"; the button now reads "+ Stub it".
+- **Polish: the Today pill floats over row text** in the List, as the board draws it; a row's crowd figure can sit under it for a moment.
+- **Polish: a Stubs row with a tag is 1 px taller** than a plain one (the chip sits in the status line).

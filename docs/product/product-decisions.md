@@ -184,3 +184,17 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **"The night" story (Q12):** an empty slot on the event page, hidden when there is no story; the label is "The night" for starts at 5 pm or later, otherwise "The day". The wording is the builder's, pending Kylie's.
 - **Weather (Q13):** the start-hour feels-like joins the compact card's venue line for open-air venues; the rich Forecast stays out.
 - **Pushing (Q14):** one commit per step on `main`; no push until Kylie clears it (the tester interview is Oct 13).
+
+### Builder's calls in the Oct 13 build 4 slice (Claude Code; not Kylie's decisions, change any she dislikes)
+- **Cooked in the calendar:** the List's calendar has no board treatment above Brutal, so Cooked takes Brutal's darkest blue.
+- **"EARLIER":** the board's "tap ↓ Today to jump back" is hint text the copy rule forbids; the line reads "EARLIER" only.
+- **Today pill (V07):** the Map's white Today button with a stronger shadow, plus an arrow for the direction; not the board's filled blue, per her note "as consistent as possible".
+- **"On this date":** stays visible on the calendar page and the month sheet; only Famous dates is hidden (V10). Compare's picker still lists famous dates.
+- **Soonest on top (V06):** among chips with a friend line, the earliest start keeps a contested spot; the tapped chip always wins; other chips keep the crowd ranking.
+- **Tag starters:** which §3 starters count as "after the fact" is the builder's reading: rain, comeback, overtime, walk-off, no-hitter, hat trick, foul ball, autograph, merch, surprise guest, live debut, deep cut, cover, great opener, acoustic. Hat trick is offered for hockey and soccer, walk-off, no-hitter and foul ball for baseball.
+- **No promo suggestions:** events carry no promo field today (only a stub's own `promo` note), so nothing is offered or invented.
+- **Row tags:** a Stubs row shows the tags that fit and counts the rest into +N; it stays one line.
+- **Seats:** only on Attending and Attended; until Kylie answers the storage question they are editable on Attended stubs only.
+- **"The day" / "The night":** "The night" for starts at 5 pm or later, otherwise "The day" (also with no start time).
+- **List Activity switch:** follows the Map sheet's stored Friends-activity setting; no second toggle.
+- **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).
