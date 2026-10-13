@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "metroName": "San Antonio",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:22:32.125Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-14-espn-spurs-401898722",
+      "metroId": "san-antonio",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Suns",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "suns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17635,
+        "low": 16473,
+        "high": 18091,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 7 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-spurs-401898843",
+      "metroId": "san-antonio",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Sac Kings",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17635,
+        "low": 16473,
+        "high": 18091,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 7 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-uiw-football-401868250",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. UT Rio Grande",
+      "place": {
+        "type": "venue",
+        "venueId": "benson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uiw-football",
+        "away": "ut-rio-grande"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-utsa-football-401862804",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UTSA vs. Navy",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utsa-football",
+        "away": "navy"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18456,
+        "low": 17961,
+        "high": 18935,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-san-antonio-fc-401842297",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "SAFC vs. New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "san-antonio-fc",
+        "away": "new-mexico"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7126,
+        "low": 7011,
+        "high": 7433,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-spurs-401909090",
+      "metroId": "san-antonio",
+      "date": "2026-10-20",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Spurs vs. Thunder",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 18336,
+        "low": 17919,
+        "high": 18509,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-spurs-401909096",
+      "metroId": "san-antonio",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Spurs vs. Rockets",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-uiw-football-401869138",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. McNeese",
+      "place": {
+        "type": "venue",
+        "venueId": "benson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uiw-football",
+        "away": "mcneese"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-san-antonio-fc-401842310",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "SAFC vs. Orange County",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "san-antonio-fc",
+        "away": "orange-county"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7097,
+        "low": 6983,
+        "high": 7403,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-spurs-401909879",
+      "metroId": "san-antonio",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Sac Kings",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18134,
+        "low": 17722,
+        "high": 18306,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-14-espn-spurs-401898722",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17635,
+        "low": 16473,
+        "high": 18091
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-spurs-401898843",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17635,
+        "low": 16473,
+        "high": 18091
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-uiw-football-401868250",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Heavy",
+        "why": "UTSA vs. Navy 3.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-utsa-football-401862804",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Incarnate Word vs. UT Rio Grande 3.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18456,
+        "low": 17961,
+        "high": 18935
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-san-antonio-fc-401842297",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "UTSA vs. Navy 9.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7126,
+        "low": 7011,
+        "high": 7433
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-spurs-401909090",
+      "date": "2026-10-20",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18336,
+        "low": 17919,
+        "high": 18509
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-spurs-401909096",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-uiw-football-401869138",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "SAFC vs. Orange County 6.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-san-antonio-fc-401842310",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Incarnate Word vs. McNeese 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7097,
+        "low": 6983,
+        "high": 7403
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-spurs-401909879",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18134,
+        "low": 17722,
+        "high": 18306
+      }
+    }
+  ]
+}

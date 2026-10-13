@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'san-antonio': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -324,6 +324,15 @@ const ESPN_TEAMS = [
   { teamId: 'lsuno-wbb', metroId: 'new-orleans', path: 'basketball/womens-college-basketball', espnId: '2443', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'lsuno-baseball', metroId: 'new-orleans', path: 'baseball/college-baseball', espnId: '184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'laketown-squadron', metroId: 'new-orleans', path: 'basketball/nba-development', espnId: '6', seasons: [2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'spurs', metroId: 'san-antonio', path: 'basketball/nba', espnId: '24', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'san-antonio-fc', metroId: 'san-antonio', path: 'soccer/usa.usl.1', espnId: '18265', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
+  { teamId: 'san-antonio-missions', metroId: 'san-antonio', mlbId: 510, sportId: 12, venueId: 'wolff-stadium', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'utsa-football', metroId: 'san-antonio', path: 'football/college-football', espnId: '2636', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utsa-mbb', metroId: 'san-antonio', path: 'basketball/mens-college-basketball', espnId: '2636', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'utsa-wbb', metroId: 'san-antonio', path: 'basketball/womens-college-basketball', espnId: '2636', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'uiw-football', metroId: 'san-antonio', path: 'football/college-football', espnId: '2916', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uiw-mbb', metroId: 'san-antonio', path: 'basketball/mens-college-basketball', espnId: '2916', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'uiw-wbb', metroId: 'san-antonio', path: 'basketball/womens-college-basketball', espnId: '2916', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -607,6 +616,21 @@ const VENUE_BY_NAME = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // San Antonio, as ESPN writes them (checked Oct 13, 2026). Keep in step with espnSource.ts.
+  alamodome: 'alamodome',
+  'frost bank center': 'frost-bank-center',
+  'at&t center': 'frost-bank-center',
+  'sbc center': 'frost-bank-center',
+  'toyota field': 'toyota-field',
+  'nelson w. wolff municipal stadium': 'wolff-stadium',
+  'nelson wolff stadium': 'wolff-stadium',
+  'wolff stadium': 'wolff-stadium',
+  'gayle and tom benson stadium': 'benson-stadium',
+  'benson stadium': 'benson-stadium',
+  'utsa convocation center': 'utsa-convocation-center',
+  'convocation center (university of texas at san antonio)': 'utsa-convocation-center',
+  'alice p. mcdermott convocation center': 'mcdermott-convocation-center',
+  'mcdermott convocation center': 'mcdermott-convocation-center',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -626,6 +650,7 @@ const METRO_VENUE_BY_NAME = {
     'pavilion at arc': 'university-credit-union-center',
   },
   houston: { 'panther stadium': 'pvamu-panther-stadium', 'toyota center': 'toyota-center', 'rice stadium': 'first-community-stadium' },
+  'san-antonio': { 'benson stadium': 'benson-stadium' },
 };
 
 function venueIdForEspnName(name, metroId) {

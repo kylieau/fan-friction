@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans', 'san-antonio'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -257,6 +257,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-90.09, 29.97],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/san-antonio/san-antonio-venue-table-answer.md): Bexar County core,
+  // plus Selma and New Braunfels edge rooms. One frame holds downtown and the Alamodome; the east-side grounds,
+  // Toyota Field, Wolff Stadium and Whitewater sit off the first view.
+  'san-antonio': {
+    id: 'san-antonio', code: 'SAT',
+    name: 'San Antonio',
+    timeZone: 'America/Chicago',
+    center: [-98.49, 29.43],
+    zoom: 10.4,
   },
 };
 
