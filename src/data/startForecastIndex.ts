@@ -16862,14 +16862,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "edmonton",
+    "eventId": "2026-10-13-tm-1AoZk8gGkeSgBXJ",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
     "eventId": "2026-10-15-espn-oilers-401892515",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.8,
       "friction": "Low",
       "why": "The biggest event around."
     },
@@ -16881,10 +16892,40 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "edmonton",
+    "eventId": "2026-10-16-tm-1778v0G6uhhbjIQ",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-17-tm-1778v0G61wdH03y",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-17-tm-1778v0G65KidlVW",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
     "eventId": "2026-10-18-ht-oil-kings-1023190",
     "date": "2026-10-18",
     "start": "16:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "draw": {
       "count": 4888,
@@ -16897,11 +16938,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-oilers-401892546",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.9,
       "friction": "Low",
       "why": "The biggest event around."
     },
@@ -16913,14 +16954,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "edmonton",
+    "eventId": "2026-10-21-tm-1Av7Z_dGkBP6_Pc",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
     "eventId": "2026-10-22-espn-oilers-401892561",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.8,
       "friction": "Low",
       "why": "The biggest event around."
     },
@@ -16935,7 +16987,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-ht-oil-kings-1023201",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -16951,10 +17003,37 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "edmonton",
+    "eventId": "2026-10-23-tm-1AoZk38GkecQFf9",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-tm-1AoZkf_GkdP6m_0",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
     "eventId": "2026-10-24-espn-oilers-401892574",
     "date": "2026-10-24",
     "start": "17:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -16970,10 +17049,37 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "edmonton",
+    "eventId": "2026-10-24-tm-1AoZk38GkecjIf0",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-tm-1AoZkoyGkenE6RU",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
     "eventId": "2026-10-25-ht-oil-kings-1023219",
     "date": "2026-10-25",
     "start": "16:00",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "draw": {
       "count": 4888,
@@ -16986,11 +17092,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-26-espn-oilers-401892584",
     "date": "2026-10-26",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.8,
       "friction": "Low",
       "why": "The biggest event around."
     },
@@ -16998,6 +17104,17 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 18347,
       "low": 18041,
       "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-27-tm-1778v0G65hJ2nDa",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
     }
   },
   {

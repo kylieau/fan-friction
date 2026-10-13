@@ -4,7 +4,7 @@
   "metroName": "Edmonton",
   "timeZone": "America/Edmonton",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:20:07.082Z",
+  "capturedAt": "2026-10-13T07:45:18.479Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -31,9 +31,39 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 10
     }
   ],
   "events": [
+    {
+      "id": "2026-10-13-tm-1AoZk8gGkeSgBXJ",
+      "metroId": "edmonton",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "UB40",
+      "officialTitle": "UB40 - THE UNSTOPPABLE TOUR 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "UB40",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZk8gGkeSgBXJ",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
     {
       "id": "2026-10-15-espn-oilers-401892515",
       "metroId": "edmonton",
@@ -66,6 +96,74 @@
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
       }
+    },
+    {
+      "id": "2026-10-16-tm-1778v0G6uhhbjIQ",
+      "metroId": "edmonton",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Paul Cauthen",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Paul Cauthen",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6uhhbjIQ",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1778v0G65KidlVW",
+      "metroId": "edmonton",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Moontricks",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Moontricks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G65KidlVW",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1778v0G61wdH03y",
+      "metroId": "edmonton",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Steph Tolev",
+      "place": {
+        "type": "venue",
+        "venueId": "winspear-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Steph Tolev",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G61wdH03y"
     },
     {
       "id": "2026-10-18-ht-oil-kings-1023190",
@@ -133,6 +231,31 @@
       }
     },
     {
+      "id": "2026-10-21-tm-1Av7Z_dGkBP6_Pc",
+      "metroId": "edmonton",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "W.A.S.P.",
+      "officialTitle": "W.A.S.P. - 1984 TO HEADLESS",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "W.A.S.P.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_dGkBP6_Pc",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-22-espn-oilers-401892561",
       "metroId": "edmonton",
       "date": "2026-10-22",
@@ -163,6 +286,31 @@
         "seasons": "2024–2026",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1AoZkf_GkdP6m_0",
+      "metroId": "edmonton",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Bingo Loco",
+      "officialTitle": "Bingo Loco presents Name That Song: Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bingo Loco",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkf_GkdP6m_0",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -198,6 +346,52 @@
       }
     },
     {
+      "id": "2026-10-23-tm-1AoZk38GkecQFf9",
+      "metroId": "edmonton",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Alberta Ballet in Peer Gynt",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Peer Gynt - Alberta Ballet",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZk38GkecQFf9",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AoZk38GkecjIf0",
+      "metroId": "edmonton",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Alberta Ballet in Peer Gynt",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Peer Gynt - Alberta Ballet",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZk38GkecjIf0",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
       "id": "2026-10-24-espn-oilers-401892574",
       "metroId": "edmonton",
       "date": "2026-10-24",
@@ -227,6 +421,31 @@
         "seasons": "2024–2026",
         "basis": "team",
         "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AoZkoyGkenE6RU",
+      "metroId": "edmonton",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Owen Riegling",
+      "officialTitle": "Owen Riegling: In The Feeling Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Owen Riegling",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkoyGkenE6RU",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -292,15 +511,48 @@
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
       }
+    },
+    {
+      "id": "2026-10-27-tm-1778v0G65hJ2nDa",
+      "metroId": "edmonton",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Digable Planets",
+      "officialTitle": "Digable Planets - 30 Years of Blowout Comb",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Digable Planets",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G65hJ2nDa",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
     }
   ],
   "forecasts": [
+    {
+      "eventId": "2026-10-13-tm-1AoZk8gGkeSgBXJ",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "draw": {
+        "count": 1450
+      }
+    },
     {
       "eventId": "2026-10-15-espn-oilers-401892515",
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 1.8,
         "friction": "Low",
         "why": "The biggest event around.",
         "method": "formula"
@@ -310,6 +562,27 @@
         "low": 18041,
         "high": 18347
       }
+    },
+    {
+      "eventId": "2026-10-16-tm-1778v0G6uhhbjIQ",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1778v0G65KidlVW",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1778v0G61wdH03y",
+      "date": "2026-10-17",
+      "start": "20:00"
     },
     {
       "eventId": "2026-10-18-ht-oil-kings-1023190",
@@ -326,7 +599,7 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 1.9,
         "friction": "Low",
         "why": "The biggest event around.",
         "method": "formula"
@@ -338,11 +611,19 @@
       }
     },
     {
+      "eventId": "2026-10-21-tm-1Av7Z_dGkBP6_Pc",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
       "eventId": "2026-10-22-espn-oilers-401892561",
       "date": "2026-10-22",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 1.8,
         "friction": "Low",
         "why": "The biggest event around.",
         "method": "formula"
@@ -351,6 +632,18 @@
         "count": 18347,
         "low": 18041,
         "high": 18347
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AoZkf_GkdP6m_0",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1450
       }
     },
     {
@@ -370,6 +663,24 @@
       }
     },
     {
+      "eventId": "2026-10-23-tm-1AoZk38GkecQFf9",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AoZk38GkecjIf0",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
       "eventId": "2026-10-24-espn-oilers-401892574",
       "date": "2026-10-24",
       "start": "17:00",
@@ -383,6 +694,18 @@
         "count": 18347,
         "low": 18347,
         "high": 18347
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AoZkoyGkenE6RU",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1450
       }
     },
     {
@@ -400,7 +723,7 @@
       "date": "2026-10-26",
       "start": "19:30",
       "read": {
-        "rating": 1,
+        "rating": 1.8,
         "friction": "Low",
         "why": "The biggest event around.",
         "method": "formula"
@@ -409,6 +732,14 @@
         "count": 18347,
         "low": 18041,
         "high": 18347
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-1778v0G65hJ2nDa",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "draw": {
+        "count": 1450
       }
     }
   ]
