@@ -9802,13 +9802,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'ForeFront Field', from: '2026-01-01' },
     ],
     location: [-82.0611959, 41.4597894],
-    capacity: [
-      {
-        seats: 5000,
-        setup: 'baseball',
-        note: 'Reported (2009 plan): 3,500 fixed seats + 1,500 berm. No current official figure found; 5,000 only with berm. Source: https://ballparkdigest.com/200903091529/independent-baseball/news/crushers-cutting-it-close-for-ballpark-opening',
-      },
-    ],
+    // Round-2 rule: only a 2009 plan figure (3,500 fixed + 1,500 berm); no current official capacity; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'jacobs-pavilion': {
