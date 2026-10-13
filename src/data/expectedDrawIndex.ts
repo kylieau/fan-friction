@@ -16426,6 +16426,1854 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 6242,
+    "low": 6013,
+    "high": 6558,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6231,
+    "low": 5895,
+    "high": 6437,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6244,
+    "low": 5649,
+    "high": 6705,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6240,
+    "low": 6004,
+    "high": 6538,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 5379,
+    "low": 5155,
+    "high": 5539,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6538,
+    "low": 6324,
+    "high": 6636,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 6456,
+    "low": 6192,
+    "high": 6524,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 6502,
+    "low": 6206,
+    "high": 6928,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 6123,
+    "low": 5705,
+    "high": 6264,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "venueId": "keyworth-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 6285,
+    "low": 6240,
+    "high": 6564,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "all",
+    "month": null,
+    "count": 1074,
+    "low": 887,
+    "high": 1213,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1001,
+    "low": 989,
+    "high": 1002,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 990,
+    "low": 808,
+    "high": 1091,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1003,
+    "low": 985,
+    "high": 1008,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 741,
+    "low": 563,
+    "high": 932,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 787,
+    "low": 760,
+    "high": 882,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1105,
+    "low": 1001,
+    "high": 1213,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 1105,
+    "low": 1002,
+    "high": 1274,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1098,
+    "low": 889,
+    "high": 1313,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 996,
+    "low": 883,
+    "high": 1811,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1142,
+    "low": 1006,
+    "high": 1285,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "venueId": "calihan-hall",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1112,
+    "low": 1035,
+    "high": 1307,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 64296,
+    "low": 63997,
+    "high": 64745,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 66434,
+    "low": 65318,
+    "high": 66482,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 48872,
+    "low": 47684,
+    "high": 49017,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 64656,
+    "low": 64028,
+    "high": 66658,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 65518,
+    "low": 64489,
+    "high": 66523,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 66476,
+    "low": 65376,
+    "high": 66569,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 64238,
+    "low": 63803,
+    "high": 64494,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 64160,
+    "low": 63982,
+    "high": 64327,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "venueId": "ford-field",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 64256,
+    "low": 64147,
+    "high": 64365,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "venueId": "michigan-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 110547,
+    "low": 110246,
+    "high": 110731,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "venueId": "michigan-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 110648,
+    "low": 110064,
+    "high": 110657,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "venueId": "michigan-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 110547,
+    "low": 110246,
+    "high": 110731,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "venueId": "michigan-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 110295,
+    "low": 109905,
+    "high": 110712,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "venueId": "michigan-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 110775,
+    "low": 110592,
+    "high": 110904,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "venueId": "michigan-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 110547,
+    "low": 110313,
+    "high": 110605,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 12707,
+    "low": 11615,
+    "high": 12707,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 10334,
+    "low": 10307,
+    "high": 11068,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 11934,
+    "low": 10986,
+    "high": 12707,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 12707,
+    "low": 10919,
+    "high": 12707,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 12380,
+    "low": 11874,
+    "high": 12707,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 9943,
+    "low": 9887,
+    "high": 10566,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 12707,
+    "low": 12052,
+    "high": 12707,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12707,
+    "low": 11984,
+    "high": 12707,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 11380,
+    "low": 11123,
+    "high": 12044,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12290,
+    "low": 11863,
+    "high": 12707,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 12202,
+    "low": 11977,
+    "high": 12455,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 12707,
+    "low": 12285,
+    "high": 12707,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 12290,
+    "low": 12026,
+    "high": 12499,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 12707,
+    "low": 12707,
+    "high": 12707,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 12707,
+    "low": 11857,
+    "high": 12707,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 12707,
+    "low": 12707,
+    "high": 12707,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "venueId": "united-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 17923,
+    "low": 17365,
+    "high": 18456,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 3566,
+    "low": 2768,
+    "high": 4707,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2773,
+    "low": 2617,
+    "high": 3077,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3077,
+    "low": 2956,
+    "high": 3609,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3039,
+    "low": 2858,
+    "high": 3551,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2423,
+    "low": 2218,
+    "high": 2490,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4721,
+    "low": 3792,
+    "high": 5099,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4306,
+    "low": 3492,
+    "high": 4722,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 6108,
+    "low": 5207,
+    "high": 8868,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 2753,
+    "low": 2698,
+    "high": 3051,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "venueId": "crisler-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 4055,
+    "low": 3846,
+    "high": 4404,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 973,
+    "low": 789,
+    "high": 1546,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1102,
+    "low": 1042,
+    "high": 1160,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 863,
+    "low": 723,
+    "high": 1037,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 681,
+    "low": 616,
+    "high": 822,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 973,
+    "low": 874,
+    "high": 1532,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 1846,
+    "low": 1353,
+    "high": 2227,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 723,
+    "low": 682,
+    "high": 858,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1128,
+    "low": 1121,
+    "high": 1220,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 1128,
+    "low": 1125,
+    "high": 1250,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1643,
+    "low": 1348,
+    "high": 2054,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1172,
+    "low": 1024,
+    "high": 1448,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 2054,
+    "low": 1528,
+    "high": 2084,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 789,
+    "low": 693,
+    "high": 1008,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 764,
+    "low": 730,
+    "high": 789,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "venueId": "wayne-state-fieldhouse",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 1234,
+    "low": 906,
+    "high": 1438,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19931,
+    "low": 18927,
+    "high": 20062,
+    "games": 79,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 10450,
+    "low": 9461,
+    "high": 11318,
+    "games": 4,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19129,
+    "low": 18308,
+    "high": 20040,
+    "games": 40,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19350,
+    "low": 17074,
+    "high": 19899,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19689,
+    "low": 18925,
+    "high": 20062,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19747,
+    "low": 18935,
+    "high": 20062,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 20030,
+    "low": 19800,
+    "high": 20062,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18412,
+    "low": 18015,
+    "high": 19032,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18005,
+    "low": 17944,
+    "high": 18269,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 20062,
+    "low": 19241,
+    "high": 20062,
+    "games": 17,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 20062,
+    "low": 19464,
+    "high": 20062,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 20062,
+    "low": 19857,
+    "high": 20105,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 20062,
+    "low": 20062,
+    "high": 20062,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18988,
+    "low": 17690,
+    "high": 20062,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 20062,
+    "low": 19980,
+    "high": 20062,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 20062,
+    "low": 19847,
+    "high": 20062,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 20062,
+    "low": 20062,
+    "high": 20062,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19322,
+    "low": 18741,
+    "high": 20021,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 19899,
+    "low": 19320,
+    "high": 19981,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19515,
+    "low": 18716,
+    "high": 19515,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 13850,
+    "low": 11113,
+    "high": 15925,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19515,
+    "low": 18809,
+    "high": 19515,
+    "games": 58,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19515,
+    "low": 18899,
+    "high": 19515,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19515,
+    "low": 18724,
+    "high": 19515,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18669,
+    "low": 18197,
+    "high": 19515,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18780,
+    "low": 18256,
+    "high": 19205,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19515,
+    "low": 18942,
+    "high": 19515,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 31,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 19515,
+    "low": 18180,
+    "high": 19515,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 19515,
+    "low": 19336,
+    "high": 19515,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 19515,
+    "low": 18704,
+    "high": 19515,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 19515,
+    "low": 18571,
+    "high": 19515,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 19515,
+    "low": 19515,
+    "high": 19515,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 27140,
+    "low": 21121,
+    "high": 33513,
+    "games": 241,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 44735,
+    "low": 44723,
+    "high": 44872,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 21931,
+    "low": 18770,
+    "high": 26386,
+    "games": 116,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 16290,
+    "low": 14150,
+    "high": 19801,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 21013,
+    "low": 19360,
+    "high": 22865,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 23542,
+    "low": 22076,
+    "high": 26634,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 23182,
+    "low": 21610,
+    "high": 28810,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 24018,
+    "low": 19442,
+    "high": 29204,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 22822,
+    "low": 20725,
+    "high": 28810,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 32120,
+    "low": 25253,
+    "high": 36315,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 20285,
+    "low": 17251,
+    "high": 21422,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 27784,
+    "low": 26816,
+    "high": 28568,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 32120,
+    "low": 27487,
+    "high": 36362,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 39229,
+    "low": 35018,
+    "high": 41420,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 35290,
+    "low": 29337,
+    "high": 37941,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 34385,
+    "low": 33322,
+    "high": 36040,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 33609,
+    "low": 30878,
+    "high": 38087,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 27529,
+    "low": 22734,
+    "high": 28708,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 35321,
+    "low": 32507,
+    "high": 37776,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 33368,
+    "low": 30801,
+    "high": 36446,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 35788,
+    "low": 34063,
+    "high": 39257,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 37709,
+    "low": 34783,
+    "high": 37926,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 35796,
+    "low": 32091,
+    "high": 39528,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 30169,
+    "low": 24489,
+    "high": 35216,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 19888,
+    "low": 17613,
+    "high": 27229,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 31883,
+    "low": 27160,
+    "high": 36808,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 37457,
+    "low": 31261,
+    "high": 40362,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 34868,
+    "low": 30785,
+    "high": 35136,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 31538,
+    "low": 30810,
+    "high": 34251,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 30165,
+    "low": 26009,
+    "high": 32108,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
     "metroId": "edmonton",
     "teamId": "oil-kings",
     "venueId": "rogers-place",
@@ -58664,1854 +60512,6 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 17518,
     "games": 4,
     "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 6242,
-    "low": 6013,
-    "high": 6558,
-    "games": 42,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 6231,
-    "low": 5895,
-    "high": 6437,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 6244,
-    "low": 5649,
-    "high": 6705,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 6240,
-    "low": 6004,
-    "high": 6538,
-    "games": 37,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 5379,
-    "low": 5155,
-    "high": 5539,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 6538,
-    "low": 6324,
-    "high": 6636,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 6456,
-    "low": 6192,
-    "high": 6524,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 6502,
-    "low": 6206,
-    "high": 6928,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 6123,
-    "low": 5705,
-    "high": 6264,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "venueId": "keyworth-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 6285,
-    "low": 6240,
-    "high": 6564,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "all",
-    "month": null,
-    "count": 1074,
-    "low": 887,
-    "high": 1213,
-    "games": 36,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "opener",
-    "month": null,
-    "count": 1001,
-    "low": 989,
-    "high": 1002,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 990,
-    "low": 808,
-    "high": 1091,
-    "games": 14,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 1003,
-    "low": 985,
-    "high": 1008,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 741,
-    "low": 563,
-    "high": 932,
-    "games": 4,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 787,
-    "low": 760,
-    "high": 882,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "friday",
-    "month": null,
-    "count": 1105,
-    "low": 1001,
-    "high": 1213,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "friday",
-    "month": 1,
-    "count": 1105,
-    "low": 1002,
-    "high": 1274,
-    "games": 3,
-    "seasons": "2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 1098,
-    "low": 889,
-    "high": 1313,
-    "games": 13,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 996,
-    "low": 883,
-    "high": 1811,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 1142,
-    "low": 1006,
-    "high": 1285,
-    "games": 4,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "venueId": "calihan-hall",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 1112,
-    "low": 1035,
-    "high": 1307,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "all",
-    "month": null,
-    "count": 64296,
-    "low": 63997,
-    "high": 64745,
-    "games": 22,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "opener",
-    "month": null,
-    "count": 66434,
-    "low": 65318,
-    "high": 66482,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "preseason",
-    "month": null,
-    "count": 48872,
-    "low": 47684,
-    "high": 49017,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 64656,
-    "low": 64028,
-    "high": 66658,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 65518,
-    "low": 64489,
-    "high": 66523,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 66476,
-    "low": 65376,
-    "high": 66569,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 64238,
-    "low": 63803,
-    "high": 64494,
-    "games": 13,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "sunday",
-    "month": 9,
-    "count": 64160,
-    "low": 63982,
-    "high": 64327,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "venueId": "ford-field",
-    "dayClass": "sunday",
-    "month": 11,
-    "count": 64256,
-    "low": 64147,
-    "high": 64365,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "venueId": "michigan-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 110547,
-    "low": 110246,
-    "high": 110731,
-    "games": 18,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "venueId": "michigan-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 110648,
-    "low": 110064,
-    "high": 110657,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "venueId": "michigan-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 110547,
-    "low": 110246,
-    "high": 110731,
-    "games": 18,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "venueId": "michigan-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 110295,
-    "low": 109905,
-    "high": 110712,
-    "games": 8,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "venueId": "michigan-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 110775,
-    "low": 110592,
-    "high": 110904,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "venueId": "michigan-stadium",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 110547,
-    "low": 110313,
-    "high": 110605,
-    "games": 6,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 12707,
-    "low": 11615,
-    "high": 12707,
-    "games": 43,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 10334,
-    "low": 10307,
-    "high": 11068,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 11934,
-    "low": 10986,
-    "high": 12707,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 12707,
-    "low": 10919,
-    "high": 12707,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 12380,
-    "low": 11874,
-    "high": 12707,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 9943,
-    "low": 9887,
-    "high": 10566,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 12707,
-    "low": 12052,
-    "high": 12707,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "friday",
-    "month": null,
-    "count": 12707,
-    "low": 11984,
-    "high": 12707,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 11380,
-    "low": 11123,
-    "high": 12044,
-    "games": 3,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 12290,
-    "low": 11863,
-    "high": 12707,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 12202,
-    "low": 11977,
-    "high": 12455,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 12707,
-    "low": 12285,
-    "high": 12707,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 12290,
-    "low": 12026,
-    "high": 12499,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 12707,
-    "low": 12707,
-    "high": 12707,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": 3,
-    "count": 12707,
-    "low": 11857,
-    "high": 12707,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 12707,
-    "low": 12707,
-    "high": 12707,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "venueId": "united-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 17923,
-    "low": 17365,
-    "high": 18456,
-    "games": 3,
-    "seasons": "2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "all",
-    "month": null,
-    "count": 3566,
-    "low": 2768,
-    "high": 4707,
-    "games": 28,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 2773,
-    "low": 2617,
-    "high": 3077,
-    "games": 11,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 3077,
-    "low": 2956,
-    "high": 3609,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 3039,
-    "low": 2858,
-    "high": 3551,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 2423,
-    "low": 2218,
-    "high": 2490,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 4721,
-    "low": 3792,
-    "high": 5099,
-    "games": 6,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 4306,
-    "low": 3492,
-    "high": 4722,
-    "games": 11,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 6108,
-    "low": 5207,
-    "high": 8868,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": 11,
-    "count": 2753,
-    "low": 2698,
-    "high": 3051,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "venueId": "crisler-center",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 4055,
-    "low": 3846,
-    "high": 4404,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "all",
-    "month": null,
-    "count": 973,
-    "low": 789,
-    "high": 1546,
-    "games": 43,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "opener",
-    "month": null,
-    "count": 1102,
-    "low": 1042,
-    "high": 1160,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 863,
-    "low": 723,
-    "high": 1037,
-    "games": 21,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 681,
-    "low": 616,
-    "high": 822,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 973,
-    "low": 874,
-    "high": 1532,
-    "games": 7,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 1846,
-    "low": 1353,
-    "high": 2227,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 723,
-    "low": 682,
-    "high": 858,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "friday",
-    "month": null,
-    "count": 1128,
-    "low": 1121,
-    "high": 1220,
-    "games": 5,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "friday",
-    "month": 3,
-    "count": 1128,
-    "low": 1125,
-    "high": 1250,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 1643,
-    "low": 1348,
-    "high": 2054,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 1172,
-    "low": 1024,
-    "high": 1448,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 2054,
-    "low": 1528,
-    "high": 2084,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 789,
-    "low": 693,
-    "high": 1008,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 764,
-    "low": 730,
-    "high": 789,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "venueId": "wayne-state-fieldhouse",
-    "dayClass": "sunday",
-    "month": 3,
-    "count": 1234,
-    "low": 906,
-    "high": 1438,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "all",
-    "month": null,
-    "count": 19931,
-    "low": 18927,
-    "high": 20062,
-    "games": 79,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "preseason",
-    "month": null,
-    "count": 10450,
-    "low": 9461,
-    "high": 11318,
-    "games": 4,
-    "seasons": "2025–2027"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 19129,
-    "low": 18308,
-    "high": 20040,
-    "games": 40,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 19350,
-    "low": 17074,
-    "high": 19899,
-    "games": 6,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 19689,
-    "low": 18925,
-    "high": 20062,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 19747,
-    "low": 18935,
-    "high": 20062,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 20030,
-    "low": 19800,
-    "high": 20062,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 18412,
-    "low": 18015,
-    "high": 19032,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 18005,
-    "low": 17944,
-    "high": 18269,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": null,
-    "count": 20062,
-    "low": 19241,
-    "high": 20062,
-    "games": 17,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": 1,
-    "count": 20062,
-    "low": 19464,
-    "high": 20062,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": 2,
-    "count": 20062,
-    "low": 19857,
-    "high": 20105,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": 3,
-    "count": 20062,
-    "low": 20062,
-    "high": 20062,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 18988,
-    "low": 17690,
-    "high": 20062,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 20062,
-    "low": 19980,
-    "high": 20062,
-    "games": 16,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 20062,
-    "low": 19847,
-    "high": 20062,
-    "games": 8,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 20062,
-    "low": 20062,
-    "high": 20062,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 19322,
-    "low": 18741,
-    "high": 20021,
-    "games": 6,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": 2,
-    "count": 19899,
-    "low": 19320,
-    "high": 19981,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "all",
-    "month": null,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 119,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "opener",
-    "month": null,
-    "count": 19515,
-    "low": 18716,
-    "high": 19515,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "preseason",
-    "month": null,
-    "count": 13850,
-    "low": 11113,
-    "high": 15925,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 19515,
-    "low": 18809,
-    "high": 19515,
-    "games": 58,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 1,
-    "count": 19515,
-    "low": 18899,
-    "high": 19515,
-    "games": 12,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 2,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 4,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 3,
-    "count": 19515,
-    "low": 18724,
-    "high": 19515,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 18669,
-    "low": 18197,
-    "high": 19515,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 10,
-    "count": 18780,
-    "low": 18256,
-    "high": 19205,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 11,
-    "count": 19515,
-    "low": 18942,
-    "high": 19515,
-    "games": 10,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "weekday",
-    "month": 12,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": null,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 13,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": 11,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "friday",
-    "month": 12,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 4,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 31,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 1,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 2,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 4,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 19515,
-    "low": 18180,
-    "high": 19515,
-    "games": 3,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 19515,
-    "low": 19336,
-    "high": 19515,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 17,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": 1,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": 4,
-    "count": 19515,
-    "low": 18704,
-    "high": 19515,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": 10,
-    "count": 19515,
-    "low": 18571,
-    "high": 19515,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "dayClass": "sunday",
-    "month": 12,
-    "count": 19515,
-    "low": 19515,
-    "high": 19515,
-    "games": 4,
-    "seasons": "2025–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "all",
-    "month": null,
-    "count": 27140,
-    "low": 21121,
-    "high": 33513,
-    "games": 241,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "opener",
-    "month": null,
-    "count": 44735,
-    "low": 44723,
-    "high": 44872,
-    "games": 3,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 21931,
-    "low": 18770,
-    "high": 26386,
-    "games": 116,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": 4,
-    "count": 16290,
-    "low": 14150,
-    "high": 19801,
-    "games": 20,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": 5,
-    "count": 21013,
-    "low": 19360,
-    "high": 22865,
-    "games": 23,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": 6,
-    "count": 23542,
-    "low": 22076,
-    "high": 26634,
-    "games": 18,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": 7,
-    "count": 23182,
-    "low": 21610,
-    "high": 28810,
-    "games": 20,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": 8,
-    "count": 24018,
-    "low": 19442,
-    "high": 29204,
-    "games": 19,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "weekday",
-    "month": 9,
-    "count": 22822,
-    "low": 20725,
-    "high": 28810,
-    "games": 16,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": null,
-    "count": 32120,
-    "low": 25253,
-    "high": 36315,
-    "games": 37,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": 4,
-    "count": 20285,
-    "low": 17251,
-    "high": 21422,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": 5,
-    "count": 27784,
-    "low": 26816,
-    "high": 28568,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": 6,
-    "count": 32120,
-    "low": 27487,
-    "high": 36362,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": 7,
-    "count": 39229,
-    "low": 35018,
-    "high": 41420,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": 8,
-    "count": 35290,
-    "low": 29337,
-    "high": 37941,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "friday",
-    "month": 9,
-    "count": 34385,
-    "low": 33322,
-    "high": 36040,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 33609,
-    "low": 30878,
-    "high": 38087,
-    "games": 48,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 27529,
-    "low": 22734,
-    "high": 28708,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 35321,
-    "low": 32507,
-    "high": 37776,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": 6,
-    "count": 33368,
-    "low": 30801,
-    "high": 36446,
-    "games": 11,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 35788,
-    "low": 34063,
-    "high": 39257,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 37709,
-    "low": 34783,
-    "high": 37926,
-    "games": 7,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 35796,
-    "low": 32091,
-    "high": 39528,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 30169,
-    "low": 24489,
-    "high": 35216,
-    "games": 40,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": 4,
-    "count": 19888,
-    "low": 17613,
-    "high": 27229,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": 5,
-    "count": 31883,
-    "low": 27160,
-    "high": 36808,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": 6,
-    "count": 37457,
-    "low": 31261,
-    "high": 40362,
-    "games": 8,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": 7,
-    "count": 34868,
-    "low": 30785,
-    "high": 35136,
-    "games": 6,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": 8,
-    "count": 31538,
-    "low": 30810,
-    "high": 34251,
-    "games": 5,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "dayClass": "sunday",
-    "month": 9,
-    "count": 30165,
-    "low": 26009,
-    "high": 32108,
-    "games": 7,
-    "seasons": "2024–2026"
   }
 ];
 
@@ -60642,6 +60642,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.946,
     "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "season": 2026,
+    "level": 1.006,
+    "games": 4
   },
   {
     "metroId": "houston",
@@ -60894,13 +60901,6 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.25,
     "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "season": 2026,
-    "level": 1.006,
-    "games": 4
   }
 ];
 
@@ -68360,6 +68360,958 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "valkyries",
     "ratio": 0.976,
     "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "birmingham",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "charleston",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "hartford",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "indy-xi",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "loudoun",
+    "ratio": 1.031,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "louisville",
+    "ratio": 0.983,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "miami-fc",
+    "ratio": 0.939,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "north-carolina",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "pittsburgh",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "rhode-island",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-city-fc",
+    "opponent": "tampa-bay",
+    "ratio": 1.03,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "cleary",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "cleveland-st",
+    "ratio": 0.947,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "e-michigan",
+    "ratio": 1.22,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "green-bay",
+    "ratio": 1.209,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "iu-indy",
+    "ratio": 1.045,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "milwaukee",
+    "ratio": 1.301,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "n-kentucky",
+    "ratio": 0.957,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "oakland",
+    "ratio": 1.516,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "purdue-fw",
+    "ratio": 1.036,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "robert-morris",
+    "ratio": 1.056,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "wright-st",
+    "ratio": 0.951,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "detroit-mercy-mbb",
+    "opponent": "youngstown-st",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "opponent": "bears",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "opponent": "buccaneers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "opponent": "packers",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "opponent": "seahawks",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "lions",
+    "opponent": "vikings",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "opponent": "ohio-state",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-football",
+    "opponent": "purdue",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "illinois",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "indiana",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "iowa",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "mcneese",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "michigan-st",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "minnesota",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "nebraska",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "ohio-state",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "penn-state",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "purdue",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "rutgers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-mbb",
+    "opponent": "wisconsin",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "opponent": "c-michigan",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "opponent": "michigan-st",
+    "ratio": 1.327,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "michigan-wbb",
+    "opponent": "oakland",
+    "ratio": 1.038,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "905",
+    "ratio": 1.021,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "blue-coats",
+    "ratio": 0.774,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "boom",
+    "ratio": 0.8,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "bulls",
+    "ratio": 0.959,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "gold",
+    "ratio": 1.029,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "knicks",
+    "ratio": 1.057,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "magic",
+    "ratio": 0.912,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "nets",
+    "ratio": 0.943,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "skyhawks",
+    "ratio": 1.016,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "squadron",
+    "ratio": 1.065,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "motor-city-cruise",
+    "opponent": "swarm",
+    "ratio": 1.037,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "76ers",
+    "ratio": 1.019,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "bucks",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "bulls",
+    "ratio": 1.006,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "cavaliers",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "celtics",
+    "ratio": 1.005,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "clippers",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "grizzlies",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "hawks",
+    "ratio": 0.973,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "heat",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "hornets",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "jazz",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "kings",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "knicks",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "lakers",
+    "ratio": 1.017,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "magic",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "nets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "nuggets",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "pacers",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "pelicans",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "raptors",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "rockets",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "spurs",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "suns",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "thunder",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "trail-blazers",
+    "ratio": 0.973,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "warriors",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "opponent": "wizards",
+    "ratio": 0.984,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "avalanche",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "blue-jackets",
+    "ratio": 0.983,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "bruins",
+    "ratio": 0.991,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "canadiens",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "canucks",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "capitals",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "devils",
+    "ratio": 1.005,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "ducks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "flames",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "flyers",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "hurricanes",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "islanders",
+    "ratio": 0.989,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "jets",
+    "ratio": 0.974,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "kings",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "kraken",
+    "ratio": 0.973,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "lightning",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "maple-leafs",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "oilers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "panthers",
+    "ratio": 0.992,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "penguins",
+    "ratio": 0.994,
+    "games": 4
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "predators",
+    "ratio": 0.979,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "rangers",
+    "ratio": 1.004,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "sabres",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "senators",
+    "ratio": 0.99,
+    "games": 7
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "stars",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "opponent": "wild",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "angels",
+    "ratio": 1.057,
+    "games": 9
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "astros",
+    "ratio": 0.975,
+    "games": 10
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "athletics",
+    "ratio": 1.072,
+    "games": 9
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "blue-jays",
+    "ratio": 1.061,
+    "games": 11
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "brewers",
+    "ratio": 1.137,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "cardinals",
+    "ratio": 1.225,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "dodgers",
+    "ratio": 1.069,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "guardians",
+    "ratio": 1.095,
+    "games": 20
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "mariners",
+    "ratio": 0.973,
+    "games": 9
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "marlins",
+    "ratio": 1.042,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "nationals",
+    "ratio": 0.975,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "orioles",
+    "ratio": 1.058,
+    "games": 10
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "phillies",
+    "ratio": 0.959,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "pirates",
+    "ratio": 1.049,
+    "games": 9
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "rangers",
+    "ratio": 0.925,
+    "games": 10
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "rays",
+    "ratio": 1.015,
+    "games": 9
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "red-sox",
+    "ratio": 0.958,
+    "games": 9
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "rockies",
+    "ratio": 0.903,
+    "games": 6
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "royals",
+    "ratio": 1.002,
+    "games": 21
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "twins",
+    "ratio": 0.96,
+    "games": 19
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "white-sox",
+    "ratio": 1.058,
+    "games": 18
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "opponent": "yankees",
+    "ratio": 0.998,
+    "games": 8
   },
   {
     "metroId": "edmonton",
@@ -89269,958 +90221,6 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "warriors",
     "ratio": 1.001,
     "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "birmingham",
-    "ratio": 1.022,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "charleston",
-    "ratio": 0.974,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "hartford",
-    "ratio": 1.012,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "indy-xi",
-    "ratio": 0.998,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "loudoun",
-    "ratio": 1.031,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "louisville",
-    "ratio": 0.983,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "miami-fc",
-    "ratio": 0.939,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "north-carolina",
-    "ratio": 0.988,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "pittsburgh",
-    "ratio": 0.991,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "rhode-island",
-    "ratio": 1.015,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-city-fc",
-    "opponent": "tampa-bay",
-    "ratio": 1.03,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "cleary",
-    "ratio": 1.001,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "cleveland-st",
-    "ratio": 0.947,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "e-michigan",
-    "ratio": 1.22,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "green-bay",
-    "ratio": 1.209,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "iu-indy",
-    "ratio": 1.045,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "milwaukee",
-    "ratio": 1.301,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "n-kentucky",
-    "ratio": 0.957,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "oakland",
-    "ratio": 1.516,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "purdue-fw",
-    "ratio": 1.036,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "robert-morris",
-    "ratio": 1.056,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "wright-st",
-    "ratio": 0.951,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "detroit-mercy-mbb",
-    "opponent": "youngstown-st",
-    "ratio": 0.982,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "opponent": "bears",
-    "ratio": 0.995,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "opponent": "buccaneers",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "opponent": "packers",
-    "ratio": 0.999,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "opponent": "seahawks",
-    "ratio": 1.013,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "lions",
-    "opponent": "vikings",
-    "ratio": 1.002,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "opponent": "ohio-state",
-    "ratio": 1.002,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-football",
-    "opponent": "purdue",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "illinois",
-    "ratio": 0.98,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "indiana",
-    "ratio": 0.991,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "iowa",
-    "ratio": 0.995,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "mcneese",
-    "ratio": 0.999,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "michigan-st",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "minnesota",
-    "ratio": 0.993,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "nebraska",
-    "ratio": 0.989,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "ohio-state",
-    "ratio": 1.013,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "penn-state",
-    "ratio": 1.007,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "purdue",
-    "ratio": 0.985,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "rutgers",
-    "ratio": 1.001,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-mbb",
-    "opponent": "wisconsin",
-    "ratio": 1.001,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "opponent": "c-michigan",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "opponent": "michigan-st",
-    "ratio": 1.327,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "michigan-wbb",
-    "opponent": "oakland",
-    "ratio": 1.038,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "905",
-    "ratio": 1.021,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "blue-coats",
-    "ratio": 0.774,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "boom",
-    "ratio": 0.8,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "bulls",
-    "ratio": 0.959,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "gold",
-    "ratio": 1.029,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "knicks",
-    "ratio": 1.057,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "magic",
-    "ratio": 0.912,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "nets",
-    "ratio": 0.943,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "skyhawks",
-    "ratio": 1.016,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "squadron",
-    "ratio": 1.065,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "motor-city-cruise",
-    "opponent": "swarm",
-    "ratio": 1.037,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "76ers",
-    "ratio": 1.019,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "bucks",
-    "ratio": 0.998,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "bulls",
-    "ratio": 1.006,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "cavaliers",
-    "ratio": 0.995,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "celtics",
-    "ratio": 1.005,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "clippers",
-    "ratio": 0.995,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "grizzlies",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "hawks",
-    "ratio": 0.973,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "heat",
-    "ratio": 0.994,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "hornets",
-    "ratio": 0.985,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "jazz",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "kings",
-    "ratio": 0.98,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "knicks",
-    "ratio": 0.996,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "lakers",
-    "ratio": 1.017,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "magic",
-    "ratio": 1.009,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "nets",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "nuggets",
-    "ratio": 1.004,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "pacers",
-    "ratio": 0.995,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "pelicans",
-    "ratio": 0.994,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "raptors",
-    "ratio": 0.996,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "rockets",
-    "ratio": 0.996,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "spurs",
-    "ratio": 1.003,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "suns",
-    "ratio": 0.998,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "thunder",
-    "ratio": 1.005,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "timberwolves",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "trail-blazers",
-    "ratio": 0.973,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "warriors",
-    "ratio": 1.005,
-    "games": 2
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "opponent": "wizards",
-    "ratio": 0.984,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "avalanche",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "blackhawks",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "blue-jackets",
-    "ratio": 0.983,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "blues",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "bruins",
-    "ratio": 0.991,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "canadiens",
-    "ratio": 1.003,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "canucks",
-    "ratio": 0.984,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "capitals",
-    "ratio": 1.002,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "devils",
-    "ratio": 1.005,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "ducks",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "flames",
-    "ratio": 0.993,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "flyers",
-    "ratio": 0.995,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "golden-knights",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "hurricanes",
-    "ratio": 0.99,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "islanders",
-    "ratio": 0.989,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "jets",
-    "ratio": 0.974,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "kings",
-    "ratio": 0.984,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "kraken",
-    "ratio": 0.973,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "lightning",
-    "ratio": 1,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "maple-leafs",
-    "ratio": 1,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "oilers",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "panthers",
-    "ratio": 0.992,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "penguins",
-    "ratio": 0.994,
-    "games": 4
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "predators",
-    "ratio": 0.979,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "rangers",
-    "ratio": 1.004,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "sabres",
-    "ratio": 0.996,
-    "games": 5
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "senators",
-    "ratio": 0.99,
-    "games": 7
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "sharks",
-    "ratio": 1,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "stars",
-    "ratio": 0.998,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "opponent": "wild",
-    "ratio": 0.973,
-    "games": 3
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "angels",
-    "ratio": 1.057,
-    "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "astros",
-    "ratio": 0.975,
-    "games": 10
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "athletics",
-    "ratio": 1.072,
-    "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "blue-jays",
-    "ratio": 1.061,
-    "games": 11
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "brewers",
-    "ratio": 1.137,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "cardinals",
-    "ratio": 1.225,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "dodgers",
-    "ratio": 1.069,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "guardians",
-    "ratio": 1.095,
-    "games": 20
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "mariners",
-    "ratio": 0.973,
-    "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "marlins",
-    "ratio": 1.042,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "nationals",
-    "ratio": 0.975,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "orioles",
-    "ratio": 1.058,
-    "games": 10
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "phillies",
-    "ratio": 0.959,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "pirates",
-    "ratio": 1.049,
-    "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "rangers",
-    "ratio": 0.925,
-    "games": 10
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "rays",
-    "ratio": 1.015,
-    "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "red-sox",
-    "ratio": 0.958,
-    "games": 9
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "rockies",
-    "ratio": 0.903,
-    "games": 6
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "royals",
-    "ratio": 1.002,
-    "games": 21
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "twins",
-    "ratio": 0.96,
-    "games": 19
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "white-sox",
-    "ratio": 1.058,
-    "games": 18
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "opponent": "yankees",
-    "ratio": 0.998,
-    "games": 8
   }
 ];
 
@@ -90292,9 +90292,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "truist-park",
     "band": "second",
     "occupancy": 1.037,
-    "low": 0.957,
-    "high": 1.137,
-    "games": 75,
+    "low": 0.955,
+    "high": 1.134,
+    "games": 79,
     "seasons": "2022, 2023, 2026 + league",
     "basis": "blend"
   },
@@ -90376,9 +90376,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "state-farm-arena",
     "band": "first",
     "occupancy": 1.069,
-    "low": 1,
-    "high": 1.052,
-    "games": 138,
+    "low": 0.997,
+    "high": 1.051,
+    "games": 145,
     "seasons": "2023, 2026 + league",
     "basis": "blend"
   },
@@ -90390,7 +90390,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -90616,9 +90616,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "oracle-park",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -90736,9 +90736,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "chase-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.041,
-    "games": 138,
+    "low": 0.997,
+    "high": 1.038,
+    "games": 145,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
   },
@@ -90749,8 +90749,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "second",
     "occupancy": 1,
     "low": 1,
-    "high": 1.042,
-    "games": 71,
+    "high": 1.041,
+    "games": 75,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
   },
@@ -90892,9 +90892,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "fenway-park",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91048,9 +91048,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "united-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91062,7 +91062,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91192,9 +91192,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "wrigley-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91288,9 +91288,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "rate-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91372,9 +91372,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "progressive-field",
     "band": "second",
     "occupancy": 1.027,
-    "low": 0.956,
-    "high": 1.14,
-    "games": 72,
+    "low": 0.953,
+    "high": 1.137,
+    "games": 76,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -91612,9 +91612,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "american-airlines-center",
     "band": "first",
     "occupancy": 1.024,
-    "low": 1,
-    "high": 1.051,
-    "games": 135,
+    "low": 0.997,
+    "high": 1.05,
+    "games": 142,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -91625,8 +91625,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "second",
     "occupancy": 1.026,
     "low": 1,
-    "high": 1.05,
-    "games": 69,
+    "high": 1.048,
+    "games": 73,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -91660,9 +91660,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "globe-life-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91736,6 +91736,162 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 0.957,
     "games": 27,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "band": "first",
+    "occupancy": 0.988,
+    "low": 0.987,
+    "high": 1.038,
+    "games": 146,
+    "seasons": "2025, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "arena-cdmx",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "band": "second",
+    "occupancy": 0.993,
+    "low": 0.987,
+    "high": 1.041,
+    "games": 74,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "arena-cdmx",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.042,
+    "games": 70,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "little-caesars-arena",
+    "band": "final",
+    "occupancy": 1.011,
+    "low": 1,
+    "high": 1.054,
+    "games": 40,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "pistons",
+    "venueId": "arena-cdmx",
+    "band": "final",
+    "occupancy": 1.011,
+    "low": 1,
+    "high": 1.054,
+    "games": 40,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.048,
+    "games": 134,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "band": "second",
+    "occupancy": 1.002,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 70,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "red-wings",
+    "venueId": "little-caesars-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 31,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "band": "first",
+    "occupancy": 0.987,
+    "low": 0.855,
+    "high": 1.112,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "band": "second",
+    "occupancy": 1.04,
+    "low": 0.949,
+    "high": 1.136,
+    "games": 77,
+    "seasons": "2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "band": "conference",
+    "occupancy": 1.029,
+    "low": 0.953,
+    "high": 1.127,
+    "games": 39,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "detroit",
+    "teamId": "tigers",
+    "venueId": "comerica-park",
+    "band": "final",
+    "occupancy": 1.043,
+    "low": 0.938,
+    "high": 1.14,
+    "games": 20,
+    "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
   {
@@ -91828,9 +91984,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "daikin-park",
     "band": "second",
     "occupancy": 1.03,
-    "low": 0.956,
-    "high": 1.139,
-    "games": 73,
+    "low": 0.953,
+    "high": 1.136,
+    "games": 77,
     "seasons": "2022, 2023 + league",
     "basis": "blend"
   },
@@ -91913,8 +92069,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 0.998,
     "low": 0.997,
-    "high": 1.04,
-    "games": 139,
+    "high": 1.038,
+    "games": 146,
     "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
@@ -91926,7 +92082,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -91960,9 +92116,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "kauffman-stadium",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -92104,9 +92260,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "angel-stadium",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -92140,9 +92296,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "crypto-com-arena",
     "band": "first",
     "occupancy": 1.015,
-    "low": 1,
-    "high": 1.041,
-    "games": 137,
+    "low": 0.997,
+    "high": 1.038,
+    "games": 144,
     "seasons": "2023, 2024 + league",
     "basis": "blend"
   },
@@ -92152,9 +92308,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "intuit-dome",
     "band": "first",
     "occupancy": 0.998,
-    "low": 0.997,
-    "high": 1.042,
-    "games": 135,
+    "low": 0.996,
+    "high": 1.039,
+    "games": 142,
     "seasons": "2025 + league",
     "basis": "blend"
   },
@@ -92166,7 +92322,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -92178,7 +92334,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -92537,8 +92693,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "second",
     "occupancy": 1.003,
     "low": 1,
-    "high": 1.042,
-    "games": 71,
+    "high": 1.041,
+    "games": 75,
     "seasons": "2023, 2026 + league",
     "basis": "blend"
   },
@@ -92644,9 +92800,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "kaseya-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.041,
-    "games": 138,
+    "low": 0.997,
+    "high": 1.038,
+    "games": 145,
     "seasons": "2023, 2024, 2025 + league",
     "basis": "blend"
   },
@@ -92657,8 +92813,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "second",
     "occupancy": 1.003,
     "low": 1,
-    "high": 1.042,
-    "games": 69,
+    "high": 1.041,
+    "games": 73,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -92788,9 +92944,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "loandepot-park",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -92920,9 +93076,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "american-family-field",
     "band": "second",
     "occupancy": 1.024,
-    "low": 0.957,
-    "high": 1.138,
-    "games": 74,
+    "low": 0.954,
+    "high": 1.135,
+    "games": 78,
     "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
@@ -92970,7 +93126,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -93112,9 +93268,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "target-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -93352,9 +93508,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "smoothie-king-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -93366,7 +93522,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -93628,9 +93784,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "citi-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -93664,9 +93820,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "barclays-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -93678,7 +93834,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94108,9 +94264,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "citizens-bank-park",
     "band": "second",
     "occupancy": 1.057,
-    "low": 0.957,
-    "high": 1.137,
-    "games": 75,
+    "low": 0.955,
+    "high": 1.134,
+    "games": 79,
     "seasons": "2023, 2024, 2025 + league",
     "basis": "blend"
   },
@@ -94156,9 +94312,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "xfinity-mobile-arena",
     "band": "second",
     "occupancy": 1.024,
-    "low": 1,
+    "low": 0.992,
     "high": 1.042,
-    "games": 71,
+    "games": 75,
     "seasons": "2023, 2026 + league",
     "basis": "blend"
   },
@@ -94192,9 +94348,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "chase-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94252,9 +94408,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "mortgage-matchup-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.04,
-    "games": 139,
+    "low": 0.997,
+    "high": 1.038,
+    "games": 146,
     "seasons": "2023, 2024, 2026 + league",
     "basis": "blend"
   },
@@ -94265,8 +94421,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "second",
     "occupancy": 1,
     "low": 1,
-    "high": 1.042,
-    "games": 69,
+    "high": 1.041,
+    "games": 73,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -94288,9 +94444,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "moda-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94302,7 +94458,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94408,9 +94564,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "sutter-health-park",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94444,9 +94600,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "golden-1-center",
     "band": "first",
     "occupancy": 1.018,
-    "low": 1,
-    "high": 1.042,
-    "games": 136,
+    "low": 0.997,
+    "high": 1.039,
+    "games": 143,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -94458,7 +94614,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94480,9 +94636,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "delta-center",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94494,7 +94650,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94552,9 +94708,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "frost-bank-center",
     "band": "first",
     "occupancy": 1.019,
-    "low": 1,
-    "high": 1.049,
-    "games": 135,
+    "low": 0.997,
+    "high": 1.048,
+    "games": 142,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -94564,9 +94720,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "alamodome",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94578,7 +94734,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1.016,
     "low": 1,
     "high": 1.042,
-    "games": 69,
+    "games": 73,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -94590,7 +94746,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94636,9 +94792,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "petco-park",
     "band": "second",
     "occupancy": 1.155,
-    "low": 0.957,
+    "low": 0.955,
     "high": 1.197,
-    "games": 75,
+    "games": 79,
     "seasons": "2022, 2024, 2026 + league",
     "basis": "blend"
   },
@@ -94804,9 +94960,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "t-mobile-park",
     "band": "second",
     "occupancy": 1.008,
-    "low": 0.956,
-    "high": 1.139,
-    "games": 73,
+    "low": 0.953,
+    "high": 1.136,
+    "games": 77,
     "seasons": "2022, 2025 + league",
     "basis": "blend"
   },
@@ -94900,9 +95056,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "tropicana-field",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -94948,9 +95104,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "rogers-centre",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -95020,9 +95176,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "scotiabank-arena",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.042,
-    "games": 135,
+    "low": 0.997,
+    "high": 1.039,
+    "games": 142,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -95034,7 +95190,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1,
     "low": 1,
     "high": 1.042,
-    "games": 66,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -95428,9 +95584,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "nationals-park",
     "band": "second",
     "occupancy": 1.029,
-    "low": 0.955,
-    "high": 1.141,
-    "games": 69,
+    "low": 0.951,
+    "high": 1.139,
+    "games": 73,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -95464,214 +95620,70 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "capital-one-arena",
     "band": "first",
     "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "washington-dc",
-    "teamId": "wizards",
-    "venueId": "arena-cdmx",
-    "band": "first",
-    "occupancy": 1,
-    "low": 1,
-    "high": 1.044,
-    "games": 132,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "washington-dc",
-    "teamId": "wizards",
-    "venueId": "capital-one-arena",
-    "band": "second",
-    "occupancy": 1,
-    "low": 1,
-    "high": 1.042,
-    "games": 66,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "washington-dc",
-    "teamId": "wizards",
-    "venueId": "arena-cdmx",
-    "band": "second",
-    "occupancy": 1,
-    "low": 1,
-    "high": 1.042,
-    "games": 66,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "washington-dc",
-    "teamId": "wizards",
-    "venueId": "capital-one-arena",
-    "band": "final",
-    "occupancy": 1.011,
-    "low": 1,
-    "high": 1.054,
-    "games": 40,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "washington-dc",
-    "teamId": "wizards",
-    "venueId": "arena-cdmx",
-    "band": "final",
-    "occupancy": 1.011,
-    "low": 1,
-    "high": 1.054,
-    "games": 40,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "band": "first",
-    "occupancy": 0.988,
-    "low": 0.987,
-    "high": 1.037,
-    "games": 122,
-    "seasons": "2025, 2026 + league",
-    "basis": "blend"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "arena-cdmx",
-    "band": "first",
-    "occupancy": 1,
-    "low": 0.996,
-    "high": 1.038,
-    "games": 115,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "band": "second",
-    "occupancy": 0.993,
-    "low": 0.987,
+    "low": 0.997,
     "high": 1.04,
-    "games": 60,
-    "seasons": "2026 + league",
-    "basis": "blend"
+    "games": 139,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
-    "metroId": "detroit",
-    "teamId": "pistons",
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "arena-cdmx",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.997,
+    "high": 1.04,
+    "games": 139,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.042,
+    "games": 70,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
     "venueId": "arena-cdmx",
     "band": "second",
     "occupancy": 1,
-    "low": 0.993,
-    "high": 1.041,
-    "games": 56,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "pistons",
-    "venueId": "little-caesars-arena",
-    "band": "final",
-    "occupancy": 1,
     "low": 1,
-    "high": 1.057,
-    "games": 27,
+    "high": 1.042,
+    "games": 70,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
-    "metroId": "detroit",
-    "teamId": "pistons",
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "band": "final",
+    "occupancy": 1.011,
+    "low": 1,
+    "high": 1.054,
+    "games": 40,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
     "venueId": "arena-cdmx",
     "band": "final",
-    "occupancy": 1,
+    "occupancy": 1.011,
     "low": 1,
-    "high": 1.057,
-    "games": 27,
+    "high": 1.054,
+    "games": 40,
     "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "red-wings",
-    "venueId": "little-caesars-arena",
-    "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
-    "seasons": "league, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "band": "first",
-    "occupancy": 0.987,
-    "low": 0.855,
-    "high": 1.112,
-    "games": 37,
-    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "band": "second",
-    "occupancy": 1.041,
-    "low": 0.948,
-    "high": 1.138,
-    "games": 74,
-    "seasons": "2024, 2025 + league",
-    "basis": "blend"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "band": "conference",
-    "occupancy": 1.029,
-    "low": 0.953,
-    "high": 1.127,
-    "games": 39,
-    "seasons": "league, 2022, 2023, 2024, 2025",
-    "basis": "league"
-  },
-  {
-    "metroId": "detroit",
-    "teamId": "tigers",
-    "venueId": "comerica-park",
-    "band": "final",
-    "occupancy": 1.043,
-    "low": 0.938,
-    "high": 1.14,
-    "games": 20,
-    "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   }
 ];
