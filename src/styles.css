@@ -6879,3 +6879,204 @@ button.back-link {
 .today-pill.is-up {
   top: 8px;
 }
+
+/* ---------- Stub tags (build notes 4; mock tags-luggage.png) ---------- */
+/* The luggage tag: a pointed left end with an open punched hole, thin violet outline and text, no "#". */
+.tag-chip {
+  --tag-ink: var(--fight);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  min-width: 0;
+  height: 24px;
+  color: var(--tag-ink);
+  background: var(--tag-ink);
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0 50%);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.tag-chip::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: var(--card);
+  clip-path: polygon(9.5px 0, 100% 0, 100% 100%, 9.5px 100%, 0 50%);
+}
+
+.tag-chip-body {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  height: 100%;
+  padding: 0 9px 0 13px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.tag-chip-hole {
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--tag-ink);
+}
+
+.tag-chip-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag-chip-x {
+  position: relative;
+  height: 100%;
+  margin-left: -6px;
+  padding: 0 8px 0 2px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* The sheet's Tags row (board 1). */
+.stub-tags-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+
+.stub-tags-label {
+  font-size: 15px;
+  font-weight: 800;
+  margin-right: 4px;
+}
+
+.stub-tags-add {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 22px;
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--fight);
+  color: var(--fight);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* The add-tags panel, inside the sheet (board 2). */
+.tags-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tags-panel-head {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.tags-panel-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.tags-panel-back,
+.tags-panel-done {
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--dodger);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.tags-panel-back {
+  justify-self: start;
+}
+
+.tags-panel-done {
+  justify-self: end;
+}
+
+.tags-panel-field {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 48px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
+}
+
+.tags-panel-field input {
+  flex: 1;
+  min-width: 90px;
+  min-height: 32px;
+  border: 0;
+  outline: none;
+  background: none;
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.tags-panel-matches {
+  margin: -4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags-panel-matches button {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  color: var(--fight);
+  font-weight: 700;
+}
+
+.tags-panel-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.tags-panel-suggest {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags-panel-chip {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 18px;
+  background: #ece6f8;
+  color: var(--fight);
+  font-size: 14px;
+  font-weight: 700;
+}

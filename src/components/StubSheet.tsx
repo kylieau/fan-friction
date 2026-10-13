@@ -8,6 +8,8 @@ import {
   placesForEvent,
   recentWatchPlaces,
   setWatchDetails,
+  setStubTags,
+  tagSummaries,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
@@ -25,6 +27,8 @@ import { listTitle } from '../lib/eventTitle';
 import type { ActivityKind } from '../lib/activity';
 import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
 import { RemoveConfirm } from './EntryLayer';
+import { TagChip } from './TagChip';
+import { TagsPanel } from './TagsPanel';
 
 /**
  * The "+ Stub it" sheet (build notes 3, 4.7; mock docs/design/build3/7-stub-it-sheet.png): one sheet for
@@ -39,7 +43,19 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
   const ahead = event.date >= todayIn(METROS[event.metroId] ?? DEFAULT_METRO);
   const plan = log.plans.find((p) => p.eventId === event.id);
   const entry = log.added.find((e) => e.eventId === event.id);
-  const kind: ActivityKind | null = ahead ? (plan ? (plan.interested ? 'interested' : plan.watch ? 'watching' : 'attending') : null) : entry ? (entry.watched ? 'watched' : 'attended') : null;
+  const kind: ActivityKind | null = ahead
+    ? plan
+      ? plan.interested
+        ? 'interested'
+        : plan.watch
+          ? 'watching'
+          : 'attending'
+      : null
+    : entry
+      ? entry.watched
+        ? 'watched'
+        : 'attended'
+      : null;
   const watch = kind === 'watching' || kind === 'watched';
   const row = ahead ? plan : entry;
   const share = row && watch ? watchShareOf(row) : undefined;
@@ -49,6 +65,17 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
   const [failed, setFailed] = useState<string | null>(null);
   const [removing, setRemoving] = useState(false);
   const [others, setOthers] = useState<EventPlace[]>([]);
+  // Your tags (build notes 4, T02): only on an answer you logged, never on Interested.
+  const [tagging, setTagging] = useState(false);
+  const canTag = kind !== null && kind !== 'interested';
+  const myTags = row?.userTags ?? [];
+  const known = tagSummaries(log.added, log.plans);
+  const tagContext = {
+    domain:
+      event.audience.domain === 'sports' ? ('sports' as const) : event.kind === 'show' || event.kind === 'festival' ? ('concert' as const) : ('other' as const),
+    sport: event.audience.domain === 'sports' ? event.audience.sport : undefined,
+    ahead,
+  };
   const recent = recentWatchPlaces(log).filter((p) => p.toLowerCase() !== (place ?? '').toLowerCase());
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
 
@@ -103,104 +130,145 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
     <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Stub it" onClick={onClose}>
       <div className="action-sheet stub-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
-        <h2 className="stub-sheet-title">+ Stub it</h2>
-        <p className="stub-sheet-sub">{[listTitle(event), shortLocalDate(event.date), venue].filter(Boolean).join(' · ')}</p>
-        <div className="stub-choices" role="group" aria-label={ahead ? 'Your plan' : 'Your stub'}>
-          {ahead ? (
-            <>
-              {choice('attending', 'Attending', <TicketIcon size={18} />)}
-              {choice('watching', 'Watching', <TvIcon />)}
-              {choice('interested', 'Interested', <BookmarkIcon />)}
-            </>
-          ) : (
-            <>
-              {choice('attended', 'Attended', <TicketIcon size={18} />)}
-              {choice('watched', 'Watched', <TvIcon />)}
-            </>
-          )}
-        </div>
-        {removing && (
-          <RemoveConfirm
-            compact
-            stamped={Boolean(entry?.stamp)}
-            onKeep={() => setRemoving(false)}
-            onRemove={() => {
-              setRemoving(false);
-              toggleWasThere(event);
-            }}
-          />
-        )}
-        {watch && (
+        {tagging && canTag ? (
+          <TagsPanel tags={myTags} onChange={(next) => setStubTags(event.id, next)} onDone={() => setTagging(false)} context={tagContext} known={known} />
+        ) : (
           <>
-            <div className="stub-choices" role="group" aria-label="Who sees it">
-              <button type="button" className={`stub-choice${share === 'private' ? ' on' : ''}`} aria-pressed={share === 'private'} onClick={() => void details('private', place)}>
-                <LockMark />
-                Private
-              </button>
-              <button type="button" className={`stub-choice${share === 'friends' ? ' on' : ''}`} aria-pressed={share === 'friends'} onClick={() => void details('friends', place)}>
-                <PeopleIcon size={18} />
-                Friends
-              </button>
+            <h2 className="stub-sheet-title">+ Stub it</h2>
+            <p className="stub-sheet-sub">{[listTitle(event), shortLocalDate(event.date), venue].filter(Boolean).join(' · ')}</p>
+            <div className="stub-choices" role="group" aria-label={ahead ? 'Your plan' : 'Your stub'}>
+              {ahead ? (
+                <>
+                  {choice('attending', 'Attending', <TicketIcon size={18} />)}
+                  {choice('watching', 'Watching', <TvIcon />)}
+                  {choice('interested', 'Interested', <BookmarkIcon />)}
+                </>
+              ) : (
+                <>
+                  {choice('attended', 'Attended', <TicketIcon size={18} />)}
+                  {choice('watched', 'Watched', <TvIcon />)}
+                </>
+              )}
             </div>
-            {share === 'friends' && <p className="stub-helper">Approved friends will see where you're watching</p>}
-            {share && (
+            {removing && (
+              <RemoveConfirm
+                compact
+                stamped={Boolean(entry?.stamp)}
+                onKeep={() => setRemoving(false)}
+                onRemove={() => {
+                  setRemoving(false);
+                  toggleWasThere(event);
+                }}
+              />
+            )}
+            {watch && (
               <>
-                <p className="stub-where">
-                  Where? <span className="stub-where-optional">optional</span>
-                </p>
-                <div className="filter-row stub-places" role="group" aria-label="Where">
-                  <button type="button" className="filter-chip" aria-pressed={Boolean(place && /^home$/i.test(place))} onClick={() => void details(share, place && /^home$/i.test(place) ? undefined : 'Home')}>
-                    Home
+                <div className="stub-choices" role="group" aria-label="Who sees it">
+                  <button
+                    type="button"
+                    className={`stub-choice${share === 'private' ? ' on' : ''}`}
+                    aria-pressed={share === 'private'}
+                    onClick={() => void details('private', place)}
+                  >
+                    <LockMark />
+                    Private
                   </button>
-                  {place && !/^home$/i.test(place) && (
-                    <button type="button" className="filter-chip" aria-pressed onClick={() => void details(share, undefined)}>
-                      {place}
-                    </button>
-                  )}
-                  {recent.map((p) => (
-                    <button key={p} type="button" className="filter-chip" onClick={() => void details(share, p)}>
-                      {p} · recent
-                    </button>
-                  ))}
-                  {others.map((p) => (
-                    <button key={`o-${p.place}`} type="button" className="filter-chip" onClick={() => void details(share, p.place)}>
-                      {p.place} · {p.people} here
-                    </button>
-                  ))}
-                  {!typing && (
-                    <button type="button" className="filter-chip" onClick={() => setTyping(true)}>
-                      Search places
-                    </button>
-                  )}
+                  <button
+                    type="button"
+                    className={`stub-choice${share === 'friends' ? ' on' : ''}`}
+                    aria-pressed={share === 'friends'}
+                    onClick={() => void details('friends', place)}
+                  >
+                    <PeopleIcon size={18} />
+                    Friends
+                  </button>
                 </div>
-                {typing && (
-                  <input
-                    className="account-input"
-                    value={typed}
-                    placeholder="Where"
-                    maxLength={80}
-                    autoFocus
-                    onChange={(ev) => setTyped(ev.target.value)}
-                    onBlur={() => {
-                      setTyping(false);
-                      if (typed.trim() && typed.trim() !== place) void details(share, typed);
-                    }}
-                    onKeyDown={(ev) => ev.key === 'Enter' && (ev.target as HTMLInputElement).blur()}
-                    aria-label="Where you're watching"
-                  />
+                {share === 'friends' && <p className="stub-helper">Approved friends will see where you're watching</p>}
+                {share && (
+                  <>
+                    <p className="stub-where">
+                      Where? <span className="stub-where-optional">optional</span>
+                    </p>
+                    <div className="filter-row stub-places" role="group" aria-label="Where">
+                      <button
+                        type="button"
+                        className="filter-chip"
+                        aria-pressed={Boolean(place && /^home$/i.test(place))}
+                        onClick={() => void details(share, place && /^home$/i.test(place) ? undefined : 'Home')}
+                      >
+                        Home
+                      </button>
+                      {place && !/^home$/i.test(place) && (
+                        <button type="button" className="filter-chip" aria-pressed onClick={() => void details(share, undefined)}>
+                          {place}
+                        </button>
+                      )}
+                      {recent.map((p) => (
+                        <button key={p} type="button" className="filter-chip" onClick={() => void details(share, p)}>
+                          {p} · recent
+                        </button>
+                      ))}
+                      {others.map((p) => (
+                        <button key={`o-${p.place}`} type="button" className="filter-chip" onClick={() => void details(share, p.place)}>
+                          {p.place} · {p.people} here
+                        </button>
+                      ))}
+                      {!typing && (
+                        <button type="button" className="filter-chip" onClick={() => setTyping(true)}>
+                          Search places
+                        </button>
+                      )}
+                    </div>
+                    {typing && (
+                      <input
+                        className="account-input"
+                        value={typed}
+                        placeholder="Where"
+                        maxLength={80}
+                        autoFocus
+                        onChange={(ev) => setTyped(ev.target.value)}
+                        onBlur={() => {
+                          setTyping(false);
+                          if (typed.trim() && typed.trim() !== place) void details(share, typed);
+                        }}
+                        onKeyDown={(ev) => ev.key === 'Enter' && (ev.target as HTMLInputElement).blur()}
+                        aria-label="Where you're watching"
+                      />
+                    )}
+                  </>
+                )}
+                {failed && (
+                  <p className="field-error" role="alert">
+                    {failed}
+                  </p>
                 )}
               </>
             )}
-            {failed && (
-              <p className="field-error" role="alert">
-                {failed}
-              </p>
+            {canTag && (
+              <div className="stub-tags-row" role="group" aria-label="Tags">
+                <span className="stub-tags-label">Tags</span>
+                {myTags.map((tag) => (
+                  <TagChip
+                    key={tag}
+                    tag={tag}
+                    onRemove={() =>
+                      setStubTags(
+                        event.id,
+                        myTags.filter((t) => t !== tag),
+                      )
+                    }
+                  />
+                ))}
+                <button type="button" className="stub-tags-add" onClick={() => setTagging(true)}>
+                  + Add tag
+                </button>
+              </div>
             )}
+            <button type="button" className="gold-button stub-done" onClick={onClose}>
+              Done
+            </button>
           </>
         )}
-        <button type="button" className="gold-button stub-done" onClick={onClose}>
-          Done
-        </button>
       </div>
     </div>
   );
