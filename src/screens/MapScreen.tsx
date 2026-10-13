@@ -29,6 +29,7 @@ import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdThousands, showsOnMap } from '../map/crowdPoints';
 import { MapSettle, type ViewBounds } from '../map/viewBounds';
 import { ExploreHeader } from '../components/ExploreHeader';
+import { ExploreModeSwitch } from '../components/ExploreModeSwitch';
 import { DateScore } from '../components/DateScore';
 import { ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
 import { listTitle } from '../lib/eventTitle';
@@ -263,7 +264,9 @@ export function MapScreen() {
 
       <header className="map-header">
         {/* The shared title row (build notes 4, 1.2): the city left at the page-title size, search at the right. */}
-        <ExploreHeader metro={metro} areaOpen={menu === 'area'} onAreaOpenChange={(next) => setMenu(next ? 'area' : null)} areaRef={areaRef} />
+        <ExploreHeader metro={metro} areaOpen={menu === 'area'} onAreaOpenChange={(next) => setMenu(next ? 'area' : null)} areaRef={areaRef}>
+          <ExploreModeSwitch view="map" />
+        </ExploreHeader>
         {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
           {/* The read box and the date both open that day's date page (build notes 4, 1.7; Kylie V02). */}
