@@ -16,6 +16,12 @@ import { datePath, useView } from '../lib/view';
 import type { Metro } from '../config/metros';
 import { AreaSwitcher } from '../components/AreaSwitcher';
 
+/**
+ * Famous dates are hidden until they land in Stats (Kylie, V10, Oct 12). The list, its data
+ * and this section stay; flip this to bring it back here. Compare's picker still uses the list.
+ */
+const SHOW_FAMOUS_DATES = false;
+
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
 function dayLabel(day: CalendarDay) {
   const when = longLocalDate(day.date);
@@ -180,7 +186,7 @@ export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; t
             </section>
           )}
 
-          {famous && famous.length > 0 && (
+          {SHOW_FAMOUS_DATES && famous && famous.length > 0 && (
             <section className="famous">
               <h2 className="section-title">
                 Famous dates <span className="section-note">Newest first</span>

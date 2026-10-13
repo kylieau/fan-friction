@@ -5781,6 +5781,8 @@ button.back-link {
   border: 0;
   background: none;
   display: flex;
+  color: inherit;
+  text-decoration: none;
 }
 
 .sheet-none {

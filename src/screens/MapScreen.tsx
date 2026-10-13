@@ -41,7 +41,6 @@ import { datePath, eventPath, mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
-import { WhyCard } from '../components/WhyCard';
 import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
 import { displayedCrowdCount, drawSize, sizeTier } from '../data';
 
@@ -55,7 +54,6 @@ const TRAFFIC_BUILT = false;
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
-  const [why, setWhy] = useState(false);
   const location = useLocation();
   const href = `${location.pathname}${location.search}`;
   const restored = useRef<MapMemory | null | undefined>(undefined);
@@ -265,10 +263,10 @@ export function MapScreen() {
         <ExploreHeader metro={metro} areaOpen={menu === 'area'} onAreaOpenChange={(next) => setMenu(next ? 'area' : null)} areaRef={areaRef} />
         {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
-          {/* Tapping the read opens "Why 4.7 today" (build notes 2, P3; never "night", build notes 3, 3.1). */}
-          <button type="button" className="datescore-button" aria-label="Why this read" onClick={() => setWhy(true)} disabled={!shown}>
+          {/* The read box and the date both open that day's date page (build notes 4, 1.7; Kylie V02). */}
+          <Link to={datePath(date, metro.id)} className="datescore-button" aria-label="Open this day">
             <DateScore rating={headerRating} empty={showScore ? shown?.empty : undefined} showScore={showScore} />
-          </button>
+          </Link>
           <div className="map-header-dateblock">
             {/* The date is plain text that opens the date page (build notes 3, 4.1); Pick a date lives in search. */}
             <h1 className="map-header-date">
@@ -459,8 +457,6 @@ export function MapScreen() {
           )}
         </div>
       </section>
-
-      {why && shown && <WhyCard events={dayEvents} rating={headerRating} empty={shown.empty} dayHref={datePath(date, metro.id)} onClose={() => setWhy(false)} />}
 
       {monthOpen && (
         <MonthSheet
