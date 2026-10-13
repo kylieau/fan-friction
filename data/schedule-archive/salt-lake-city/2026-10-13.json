@@ -4,7 +4,7 @@
   "metroName": "Salt Lake City",
   "timeZone": "America/Denver",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:26:43.547Z",
+  "capturedAt": "2026-10-13T08:00:00.634Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -384,7 +384,7 @@
       "date": "2026-10-24",
       "start": "18:30",
       "kind": "game",
-      "title": "Real Salt Lake vs. St. Louis",
+      "title": "Real Salt Lake vs. CITY SC",
       "place": {
         "type": "venue",
         "venueId": "america-first-field"
@@ -503,7 +503,7 @@
       "date": "2026-10-26",
       "start": "19:00",
       "kind": "game",
-      "title": "Jazz vs. Grizzlies",
+      "title": "Jazz vs. Memphis Grizzlies",
       "place": {
         "type": "venue",
         "venueId": "delta-center"
@@ -754,7 +754,7 @@
       "read": {
         "rating": 2.6,
         "friction": "Moderate",
-        "why": "Real Salt Lake vs. St. Louis 13 mi away, same hours.",
+        "why": "Real Salt Lake vs. CITY SC 13 mi away, same hours.",
         "method": "formula"
       },
       "draw": {

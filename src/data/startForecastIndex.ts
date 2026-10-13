@@ -44143,7 +44143,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-utah-mammoth-401892500",
     "date": "2026-10-13",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44162,7 +44162,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-real-salt-lake-761870",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44176,7 +44176,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-tm-LvZ18QQHnXSD4N8Z0wGYh",
     "date": "2026-10-14",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44190,7 +44190,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-Z7r9jZ1A70k1k",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44207,7 +44207,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-LvZ18QtESvV4V_Nigluzf",
     "date": "2026-10-16",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44221,7 +44221,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-utah-mammoth-401892531",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44240,7 +44240,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-utah-royals-401854022",
     "date": "2026-10-17",
     "start": "16:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44254,7 +44254,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-LvZ18QtESvV4V_Nigluz4",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44268,7 +44268,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-espn-utah-mammoth-401892538",
     "date": "2026-10-19",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44287,7 +44287,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-G5vzZ_ARwxR5G",
     "date": "2026-10-20",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44304,7 +44304,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-Z7r9jZ1A7Pa_0",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44321,7 +44321,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-espn-utah-jazz-401909849",
     "date": "2026-10-23",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44340,7 +44340,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-espn-utah-royals-401854028",
     "date": "2026-10-23",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44354,7 +44354,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-real-salt-lake-761898",
     "date": "2026-10-24",
     "start": "18:30",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44368,13 +44368,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-utah-mammoth-401892575",
     "date": "2026-10-24",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
       "rating": 2.6,
       "friction": "Moderate",
-      "why": "Real Salt Lake vs. St. Louis 13 mi away, same hours."
+      "why": "Real Salt Lake vs. CITY SC 13 mi away, same hours."
     },
     "draw": {
       "count": 11131,
@@ -44387,7 +44387,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-utah-utes-football-401856837",
     "date": "2026-10-24",
     "start": null,
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44406,7 +44406,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-utah-jazz-401909861",
     "date": "2026-10-25",
     "start": "15:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44425,7 +44425,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-26-espn-utah-jazz-401909875",
     "date": "2026-10-26",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -44444,7 +44444,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-27-espn-utah-mammoth-401892592",
     "date": "2026-10-27",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedAt": "2026-10-13T08:00:00.634Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
