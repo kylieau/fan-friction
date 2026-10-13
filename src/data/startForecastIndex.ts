@@ -10916,7 +10916,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-mlb-849818",
     "date": "2026-10-15",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -10932,10 +10932,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "cleveland",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A7-kF_",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
     "eventId": "2026-10-16-ht-cleveland-monsters-1029139",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -10954,7 +10969,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-mlb-849817",
     "date": "2026-10-16",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -10970,10 +10985,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "cleveland",
+    "eventId": "2026-10-16-tm-vv1AAZkftGkeX52Qz",
+    "date": "2026-10-16",
+    "start": "21:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.7
+    },
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
     "eventId": "2026-10-17-ht-cleveland-monsters-1029152",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -10992,7 +11022,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-mlb-849816",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -11008,10 +11038,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "cleveland",
+    "eventId": "2026-10-17-tm-Z7r9jZ1A70b7_",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
     "eventId": "2026-10-18-espn-browns-401872997",
     "date": "2026-10-18",
     "start": "13:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -11027,10 +11072,90 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "cleveland",
+    "eventId": "2026-10-18-tm-Z7r9jZ1A7-Vj-",
+    "date": "2026-10-18",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-19-tm-vv17fZ_8GkDpq2AZ",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10830
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-19-tm-vvG1fZ_GKq4Vw_",
+    "date": "2026-10-19",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-20-tm-vvG1fZ_5hbiTow",
+    "date": "2026-10-20",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-20-tm-Z7r9jZ1A7Pd4P",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-23-tm-vvG1fZ_5Kxxnka",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
     "eventId": "2026-10-24-espn-cavaliers-401909854",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -11046,10 +11171,62 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "cleveland",
+    "eventId": "2026-10-24-tm-vvG1fZ_Cr93y0c",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7x93a",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-25-tm-vvG1fZ_CxB1QbZ",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-25-tm-Z7r9jZ1AAZfv9",
+    "date": "2026-10-25",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "cleveland",
     "eventId": "2026-10-26-espn-cavaliers-401909869",
     "date": "2026-10-26",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -11061,6 +11238,17 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 19432,
       "low": 19432,
       "high": 19432
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-27-tm-vvG1fZ_ukTsrLJ",
+    "date": "2026-10-27",
+    "start": "17:30",
+    "capturedAt": "2026-10-13T07:49:20.279Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1240
     }
   },
   {
