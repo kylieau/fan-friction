@@ -38690,7 +38690,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-ottawa-senators-401892494",
     "date": "2026-10-13",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -38709,7 +38709,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-espn-ottawa-senators-401892507",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -38728,7 +38728,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-espn-ottawa-senators-401892551",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -38747,7 +38747,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-espn-ottawa-senators-401892554",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -38766,7 +38766,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-ottawa-senators-401892569",
     "date": "2026-10-24",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
