@@ -2214,6 +2214,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "16:25"
   },
   {
+    "eventId": "2026-10-10-espn-psu-football-401868156",
+    "metroId": "portland",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hillsboro-stadium",
+    "homeTeamId": "psu-football",
+    "home": {
+      "name": "Portland St",
+      "score": 30
+    },
+    "away": {
+      "name": "Utah Tech",
+      "score": 14
+    },
+    "attendance": 1964,
+    "capturedAt": "2026-10-13T07:22:29.085Z",
+    "duration": {
+      "minutes": 209,
+      "kind": "estimated"
+    },
+    "startedAt": "16:05"
+  },
+  {
+    "eventId": "2026-10-12-espn-blazers-401914130",
+    "metroId": "portland",
+    "date": "2026-10-12",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "moda-center",
+    "homeTeamId": "blazers",
+    "home": {
+      "name": "Blazers",
+      "score": 119
+    },
+    "away": {
+      "name": "London Lions",
+      "score": 66
+    },
+    "attendance": 5397,
+    "capturedAt": "2026-10-13T07:22:29.085Z",
+    "duration": {
+      "minutes": 143,
+      "kind": "estimated"
+    },
+    "startedAt": "15:50"
+  },
+  {
     "eventId": "2026-10-10-espn-sacramento-republic-401842277",
     "metroId": "sacramento",
     "date": "2026-10-10",

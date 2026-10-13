@@ -377,4 +377,11 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'fair-grounds-race-course', reliefM: 3, streets250: 5 },
   { venueId: 'lakefront-arena', reliefM: 2, streets250: 1 },
   { venueId: 'turchin-stadium', reliefM: 4, streets250: 10 },
+  { venueId: 'providence-park', reliefM: 77, streets250: 17 },
+  { venueId: 'moda-center', reliefM: 39, streets250: 15 },
+  { venueId: 'veterans-memorial-coliseum', reliefM: 38, streets250: 11 },
+  { venueId: 'cascades-amphitheater', reliefM: 29, streets250: 0 },
+  { venueId: 'hillsboro-stadium', reliefM: 5, streets250: 2 },
+  { venueId: 'mcmenamins-edgefield', reliefM: 75, streets250: 5 },
+  { venueId: 'hillsboro-hops-ballpark', reliefM: 7, streets250: 2 },
 ];

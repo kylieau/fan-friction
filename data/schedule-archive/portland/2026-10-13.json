@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "metroName": "Portland",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:22:31.734Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-17-espn-timbers-761888",
+      "metroId": "portland",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Timbers vs. Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "providence-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "timbers",
+        "away": "colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 24538,
+        "low": 22592,
+        "high": 24686,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-blazers-401909841",
+      "metroId": "portland",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blazers vs. Suns",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "blazers",
+        "away": "suns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 16919,
+        "low": 16349,
+        "high": 17546,
+        "fromCrowds": true,
+        "games": 37,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 37 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-thorns-401854029",
+      "metroId": "portland",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Thorns vs. North Carolina",
+      "place": {
+        "type": "venue",
+        "venueId": "providence-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "thorns",
+        "away": "north-carolina"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18247,
+        "low": 16667,
+        "high": 20878,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 23 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-timbers-761902",
+      "metroId": "portland",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Timbers vs. Charlotte",
+      "place": {
+        "type": "venue",
+        "venueId": "providence-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "timbers",
+        "away": "charlotte"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 24538,
+        "low": 22592,
+        "high": 24686,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-17-espn-timbers-761888",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 24538,
+        "low": 22592,
+        "high": 24686
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-blazers-401909841",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16919,
+        "low": 16349,
+        "high": 17546
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-thorns-401854029",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18247,
+        "low": 16667,
+        "high": 20878
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-timbers-761902",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 24538,
+        "low": 22592,
+        "high": 24686
+      }
+    }
+  ]
+}
