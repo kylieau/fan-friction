@@ -17201,6 +17201,172 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "detroit",
+    "eventId": "2026-10-13-espn-red-wings-401892488",
+    "date": "2026-10-13",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18874,
+      "low": 18347,
+      "high": 19301
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-espn-red-wings-401892508",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18686,
+      "low": 18165,
+      "high": 19109
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-espn-pistons-401908946",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10450,
+      "low": 9461,
+      "high": 11318
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-espn-michigan-football-401858490",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 111440,
+      "low": 111256,
+      "high": 111569
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-espn-red-wings-401892525",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Low",
+      "why": "Michigan Wolverines vs. Penn State 36 mi away, same hours."
+    },
+    "draw": {
+      "count": 19515,
+      "low": 18180,
+      "high": 19515
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-20-espn-pistons-401909088",
+    "date": "2026-10-20",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19225,
+      "low": 18400,
+      "high": 20140
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-espn-michigan-mhockey-401905027",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-espn-michigan-football-401858496",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 111440,
+      "low": 111256,
+      "high": 111569
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-espn-lions-401873020",
+    "date": "2026-10-25",
+    "start": "16:25",
+    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 64174,
+      "low": 63739,
+      "high": 64430
+    }
+  },
+  {
     "metroId": "edmonton",
     "eventId": "2026-10-13-tm-1AoZk8gGkeSgBXJ",
     "date": "2026-10-13",

@@ -106,6 +106,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'al-lang-stadium', 'tampa-bay-downs', 'wish-farms-soundstage',
   // Columbus: UFL and MLS Next Pro have no league feed. Mid-Ohio stays off this list (edge circuit, not the metro default).
   'historic-crew-stadium',
+  // Detroit: USL Championship has no separate league feed in the app; Keyworth is DCFC home through 2027.
+  'keyworth-stadium',
   // Cleveland: G League, Frontier League and indoor soccer have no league feed; Crushers/Charge/Crunch/Wolstein public events may list here.
   'public-hall-cleveland', 'wolstein-center', 'forefront-field',
   // Austin rooms whose primary tenants have no league feed (Stars hockey still comes from HockeyTech and wins on the same date).

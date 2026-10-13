@@ -104,7 +104,7 @@ const SCALE = 7.5;
 // Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
 // downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
 // values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl', portland: 'hub' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', detroit: 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl', portland: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -325,6 +325,14 @@ const ZONE_NAMES: Record<string, string> = {
   'providence-park': 'Goose Hollow',
   'cascades-amphitheater': 'Ridgefield',
   'anderson-arena': 'St. Thomas',
+  // Detroit District Detroit cluster (city-type answer §5b). Ann Arbor campus is a separate named cluster.
+  'ford-field': 'District Detroit',
+  'comerica-park': 'District Detroit',
+  'little-caesars-arena': 'District Detroit',
+  'fox-theatre-detroit': 'District Detroit',
+  'michigan-stadium': 'Michigan campus',
+  'crisler-center': 'Michigan campus',
+  'yost-ice-arena': 'Michigan campus',
   // San Antonio clusters (city-type answer §8): downtown / Alamodome; east-side grounds; isolated singles.
   alamodome: 'Downtown',
   'frost-bank-center': 'East Side',

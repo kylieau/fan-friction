@@ -972,6 +972,42 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "15:30"
   },
   {
+    "eventId": "2026-10-10-espn-detroit-city-fc-401842285",
+    "metroId": "detroit",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "keyworth-stadium",
+    "homeTeamId": "detroit-city-fc",
+    "home": {
+      "name": "DCFC",
+      "score": 1
+    },
+    "away": {
+      "name": "Rhode Island",
+      "score": 0
+    },
+    "capturedAt": "2026-10-13T07:23:41.624Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-michigan-mhockey-401905083",
+    "metroId": "detroit",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "yost-ice-arena",
+    "homeTeamId": "michigan-mhockey",
+    "home": {
+      "name": "Michigan Wolverines",
+      "score": 7
+    },
+    "away": {
+      "name": "Alaska Anchorage",
+      "score": 2
+    },
+    "capturedAt": "2026-10-13T07:23:41.624Z"
+  },
+  {
     "eventId": "2026-10-10-espn-pvamu-football-401868968",
     "metroId": "houston",
     "date": "2026-10-10",
