@@ -17205,7 +17205,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-red-wings-401892488",
     "date": "2026-10-13",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17221,10 +17221,70 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-13-tm-vv1keZv0-OGAu9GKf",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-13-tm-vvG1OZ_uCt9USN",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-14-tm-vv17OZ_3GkT_qBEF",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-14-tm-vvG1OZ_GKFOyIU",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-14-tm-Z7r9jZ1A7PYkk",
+    "date": "2026-10-14",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-15-espn-red-wings-401892508",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17240,10 +17300,52 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-15-tm-vv17OZ_oGkM4trR5",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-tm-vvG1OZ_1SNeyyI",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A70U0b",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-16-espn-pistons-401908946",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17259,10 +17361,79 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vv17OZ_8GkDoyqGA",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vv17OZ_oGkM4nrR9",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vv1AFZk3pGkdpdHfx",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vvG1OZ_2UkK086",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1100
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-16-tm-vvG1OZ_uE1_1qO",
+    "date": "2026-10-16",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-17-espn-michigan-football-401858490",
     "date": "2026-10-17",
     "start": "15:30",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17281,7 +17452,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-red-wings-401892525",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17297,10 +17468,150 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vv17OZ_8GkDoDuG9",
+    "date": "2026-10-17",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vv17OZ_oGkM4lmR-",
+    "date": "2026-10-17",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vvG1OZ_1QKkJyg",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    },
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vvG1OZ_51g5kEG",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    },
+    "draw": {
+      "count": 2405
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-17-tm-vvG1OZ_GKHpq9x",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.5
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-1F7Zv0o3fZZ7GFuu",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vv17OZ_8GkDoDWGL",
+    "date": "2026-10-18",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vv17OZ_oGkM4mmY8",
+    "date": "2026-10-18",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vv17OZ_oGknjZgnL",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2405
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-18-tm-vvG1OZ_uVNTYPU",
+    "date": "2026-10-18",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-20-espn-pistons-401909088",
     "date": "2026-10-20",
     "start": "15:00",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17316,10 +17627,63 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-20-tm-Z7r9jZ1A70b7w",
+    "date": "2026-10-20",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-21-tm-vv17OZ_KGkiTjGc1",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-22-tm-vv17OZ_3GkT_L1E4",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-22-tm-vvG1OZ_5lEWyGa",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2888
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-22-tm-Z7r9jZ1A70o78",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-23-espn-michigan-mhockey-401905027",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17330,10 +17694,76 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-23-tm-rZ7HnEZ1AfFx_0",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-vv17OZ_3GkT_O1E-",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-vv17OZ_3GkT2OysT",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-vv17OZ_3GkXlZJ-T",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-23-tm-Z7r9jZ1A7xbZd",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-24-espn-michigan-football-401858496",
     "date": "2026-10-24",
     "start": null,
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17349,10 +17779,64 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "detroit",
+    "eventId": "2026-10-24-tm-rZ7HnEZ1AfFtaf",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-vv17OZ_3GkT_-1EJ",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-vvG1OZ_5hLLQhl",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7O6qd",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1700
+    }
+  },
+  {
+    "metroId": "detroit",
     "eventId": "2026-10-25-espn-lions-401873020",
     "date": "2026-10-25",
     "start": "16:25",
-    "capturedAt": "2026-10-13T07:23:44.120Z",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -17364,6 +17848,48 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 64174,
       "low": 63739,
       "high": 64430
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-tm-vv17OZ_3GkT_0QEH",
+    "date": "2026-10-25",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-tm-vvG1OZ_26AhtkH",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2405
+    }
+  },
+  {
+    "metroId": "detroit",
+    "eventId": "2026-10-25-tm-vvG1OZ_Gmsn9ph",
+    "date": "2026-10-25",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:53:37.913Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1000
     }
   },
   {
