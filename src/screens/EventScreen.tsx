@@ -231,7 +231,7 @@ export function EventScreen() {
         </button>
         {you && (
           <span className="event-status">
-            <StatusLine kind={you.kind} share={youShare} place={you.place} tags={youRow?.userTags} tagsShown={3} />
+            <StatusLine kind={you.kind} share={youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} />
             {you.kind !== 'interested' && (youRow?.userTags?.length ?? 0) > 0 && (
               <button type="button" className="link-button" onClick={() => setSheet(true)}>
                 Edit

@@ -75,7 +75,7 @@ export function StatusLine({
       {tags && tags.length > 0 && kind !== 'interested' && (
         <span className="status-tags">
           {tags.slice(0, tagsShown).map((tag) => (
-            <TagChip key={tag} tag={tag} />
+            <TagChip key={tag} tag={tag} size="row" />
           ))}
           {tags.length > tagsShown && <span className="status-tags-more">+{tags.length - tagsShown}</span>}
         </span>

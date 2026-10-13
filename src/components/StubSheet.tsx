@@ -8,7 +8,7 @@ import {
   placesForEvent,
   recentWatchPlaces,
   setWatchDetails,
-  setStubTags,
+  setRowTags,
   tagSummaries,
   subscribeAccount,
   subscribePersonalLog,
@@ -131,7 +131,7 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
       <div className="action-sheet stub-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         {tagging && canTag ? (
-          <TagsPanel tags={myTags} onChange={(next) => setStubTags(event.id, next)} onDone={() => setTagging(false)} context={tagContext} known={known} />
+          <TagsPanel tags={myTags} onChange={(next) => row && setRowTags(ahead ? 'plan' : 'entry', row.id, next)} onDone={() => setTagging(false)} context={tagContext} known={known} />
         ) : (
           <>
             <h2 className="stub-sheet-title">+ Stub it</h2>
@@ -252,8 +252,10 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                     key={tag}
                     tag={tag}
                     onRemove={() =>
-                      setStubTags(
-                        event.id,
+                      row &&
+                      setRowTags(
+                        ahead ? 'plan' : 'entry',
+                        row.id,
                         myTags.filter((t) => t !== tag),
                       )
                     }
