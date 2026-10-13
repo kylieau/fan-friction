@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'ottawa-gatineau': 'America/Toronto' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'salt-lake-city': 'America/Denver', 'ottawa-gatineau': 'America/Toronto' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -67,6 +67,7 @@ const MLB_TEAMS = [
   { teamId: 'vancouver-canadians', mlbId: 435, sportId: 13, venueId: 'nat-bailey-stadium', metroId: 'vancouver', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'royals', mlbId: 118, venueId: 'kauffman-stadium', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'kc-monarchs', mlbId: 1885, sportId: 23, venueId: 'legends-field', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'salt-lake-bees', metroId: 'salt-lake-city', mlbId: 561, sportId: 11, venueId: 'ballpark-at-america-first-square', mlbVenueId: 6135, seasons: [2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'maple-leafs', metroId: 'toronto', path: 'hockey/nhl', espnId: '21', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -336,6 +337,14 @@ const ESPN_TEAMS = [
   // Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/). Ids checked Oct 13, 2026.
   { teamId: 'ottawa-senators', metroId: 'ottawa-gatineau', path: 'hockey/nhl', espnId: '14', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'ottawa-redblacks', metroId: 'ottawa-gatineau', path: 'football/cfl', espnId: '87', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utah-jazz', metroId: 'salt-lake-city', path: 'basketball/nba', espnId: '26', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utah-mammoth', metroId: 'salt-lake-city', path: 'hockey/nhl', espnId: '129764', seasons: [2025, 2026], seasontype: 2 },
+  { teamId: 'real-salt-lake', metroId: 'salt-lake-city', path: 'soccer/usa.1', espnId: '4771', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utah-royals', metroId: 'salt-lake-city', path: 'soccer/usa.nwsl', espnId: '19141', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utah-utes-football', metroId: 'salt-lake-city', path: 'football/college-football', espnId: '254', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utah-mbb', metroId: 'salt-lake-city', path: 'basketball/mens-college-basketball', espnId: '254', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'utah-wbb', metroId: 'salt-lake-city', path: 'basketball/womens-college-basketball', espnId: '254', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'salt-lake-city-stars', metroId: 'salt-lake-city', path: 'basketball/nba-development', espnId: '19', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -626,6 +635,14 @@ const VENUE_BY_NAME = {
   'the arena at td place': 'arena-at-td-place',
   'td place arena': 'arena-at-td-place',
   'td place': 'arena-at-td-place',
+  // Salt Lake City, as ESPN writes them (Oct 13, 2026).
+  'delta center': 'delta-center',
+  'vivint arena': 'delta-center',
+  'rice-eccles stadium': 'rice-eccles-stadium',
+  'america first field': 'america-first-field',
+  'rio tinto stadium': 'america-first-field',
+  'jon m. huntsman center': 'jon-m-huntsman-center',
+  'maverik center': 'maverik-center',
 };
 
 const METRO_VENUE_BY_NAME = {

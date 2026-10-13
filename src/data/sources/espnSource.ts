@@ -307,6 +307,15 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   // Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/). Ids and home venues checked against the feed Oct 13, 2026.
   { path: 'hockey/nhl', espnId: '14', metroId: 'ottawa-gatineau', teamId: 'ottawa-senators', sport: 'hockey' },
   { path: 'football/cfl', espnId: '87', metroId: 'ottawa-gatineau', teamId: 'ottawa-redblacks', sport: 'football' },
+  // Salt Lake City (docs/research/city-builds/salt-lake-city/); ids and home venues checked Oct 13, 2026.
+  { path: 'basketball/nba', espnId: '26', metroId: 'salt-lake-city', teamId: 'utah-jazz', sport: 'basketball' },
+  { path: 'hockey/nhl', espnId: '129764', metroId: 'salt-lake-city', teamId: 'utah-mammoth', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '4771', metroId: 'salt-lake-city', teamId: 'real-salt-lake', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '19141', metroId: 'salt-lake-city', teamId: 'utah-royals', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '254', metroId: 'salt-lake-city', teamId: 'utah-utes-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '254', metroId: 'salt-lake-city', teamId: 'utah-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '254', metroId: 'salt-lake-city', teamId: 'utah-wbb', sport: 'basketball' },
+  { path: 'basketball/nba-development', espnId: '19', metroId: 'salt-lake-city', teamId: 'salt-lake-city-stars', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -655,6 +664,16 @@ const VENUE_BY_NAME: Record<string, string> = {
   'victory field': 'victory-field',
   'bud and jackie sellick bowl': 'sellick-bowl',
   'the jungle': 'iu-indy-jungle',
+  // Salt Lake City, as ESPN writes them (checked Oct 13, 2026).
+  'delta center': 'delta-center',
+  'vivint arena': 'delta-center',
+  'vivint smart home arena': 'delta-center',
+  'rice-eccles stadium': 'rice-eccles-stadium',
+  'america first field': 'america-first-field',
+  'rio tinto stadium': 'america-first-field',
+  'jon m. huntsman center': 'jon-m-huntsman-center',
+  'maverik center': 'maverik-center',
+  'e center': 'maverik-center',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

@@ -2306,6 +2306,54 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-12T08:18:46.808Z"
   },
   {
+    "eventId": "2026-10-10-espn-utah-utes-football-401856827",
+    "metroId": "salt-lake-city",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "rice-eccles-stadium",
+    "homeTeamId": "utah-utes-football",
+    "home": {
+      "name": "Utah Utes",
+      "score": 41
+    },
+    "away": {
+      "name": "Kansas",
+      "score": 24
+    },
+    "attendance": 51467,
+    "capturedAt": "2026-10-13T07:19:10.988Z",
+    "duration": {
+      "minutes": 228,
+      "kind": "estimated"
+    },
+    "startedAt": "20:00"
+  },
+  {
+    "eventId": "2026-10-12-espn-utah-jazz-401898721",
+    "metroId": "salt-lake-city",
+    "date": "2026-10-12",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "delta-center",
+    "homeTeamId": "utah-jazz",
+    "home": {
+      "name": "Jazz",
+      "score": 119
+    },
+    "away": {
+      "name": "Spurs",
+      "score": 109
+    },
+    "attendance": 15495,
+    "capturedAt": "2026-10-13T07:19:10.988Z",
+    "duration": {
+      "minutes": 135,
+      "kind": "estimated"
+    },
+    "startedAt": "21:11"
+  },
+  {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
     "metroId": "san-diego",
     "date": "2026-10-03",
