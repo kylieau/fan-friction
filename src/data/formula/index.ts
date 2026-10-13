@@ -2,6 +2,7 @@
 // `rateDate` already combines whatever reasons exist with the v4 rule.
 // Screens never call this directly; the read pipeline in `read.ts` will.
 
+import { degreesFor } from '../../config/metros';
 import { formatScore } from '../../config/scoreLabels';
 import { listedCapacity } from '../read';
 import type { CrowdEvent } from '../types';
@@ -76,9 +77,9 @@ function conditionsWhy(rows: { event: CrowdEvent; conditions: EventConditions }[
   if (!worst || worst.conditions.w === 0) return 'Nothing in the weather.';
   const c = worst.conditions;
   const start = worst.event.start ? ` at a ${clock(worst.event.start)} start` : '';
-  if (c.cause === 'heat') return `${Math.round(c.effectiveF)}° feels-like${start}, no roof (${worst.event.title}).`;
+  if (c.cause === 'heat') return `${degreesFor(c.effectiveF, worst.event.metroId)} feels-like${start}, no roof (${worst.event.title}).`;
   if (c.cause === 'rain') return `${weatherGlyph(c.row)} Rain in the forecast${start} (${worst.event.title}).`;
-  return `${Math.round(c.row.feelsLikeF)}° feels-like${start}, no roof (${worst.event.title}).`;
+  return `${degreesFor(c.row.feelsLikeF, worst.event.metroId)} feels-like${start}, no roof (${worst.event.title}).`;
 }
 
 function clock(time: string): string {

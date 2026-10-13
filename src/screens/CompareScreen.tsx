@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO, METROS } from '../config/metros';
+import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { scoreLabel } from '../config/scoreLabels';
 import {
   cityDayRange,
@@ -192,7 +192,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
   };
   const weather = (c: Column) => {
     const range = cityDayRange(c.key.metroId, c.key.date);
-    return range ? `H ${Math.round(range.feelsLikeHighF)}° L ${Math.round(range.feelsLikeLowF)}°` : null;
+    return range ? `H ${degreesFor(range.feelsLikeHighF, c.key.metroId)} L ${degreesFor(range.feelsLikeLowF, c.key.metroId)}` : null;
   };
   const score = (c: Column) => (c.day.rating ? `${c.day.rating.rating} ${scoreLabel(c.day.rating.rating)}` : 'No read');
   const part = (pick: (p: NonNullable<Column['parts']>) => number | null) => (c: Column) => {

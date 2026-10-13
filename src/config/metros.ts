@@ -16,6 +16,37 @@ export interface Metro {
  */
 export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'detroit', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'pittsburgh', 'tampa', 'miami', 'columbus', 'cleveland', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'salt-lake-city', 'ottawa-gatineau', 'edmonton', 'washington-dc', 'san-antonio', 'portland', 'raleigh-durham', 'st-louis', 'denver'] as const;
 
+/**
+ * Cities that read temperatures in Celsius: Canada and Mexico. Their IANA zones all begin "America/",
+ * so the zone alone cannot say; the zone is the key and this is the list (a new city in either country
+ * adds its zone here, or nothing if the zone is already listed).
+ */
+const CELSIUS_ZONES = new Set([
+  'America/Toronto',
+  'America/Montreal',
+  'America/Vancouver',
+  'America/Edmonton',
+  'America/Winnipeg',
+  'America/Halifax',
+  'America/Regina',
+  'America/St_Johns',
+  'America/Mexico_City',
+  'America/Monterrey',
+  'America/Tijuana',
+]);
+
+/** Does this city show temperatures in °C? The data and the formula stay in °F; only the words change. */
+export function usesCelsius(metroId: string): boolean {
+  const zone = METROS[metroId]?.timeZone;
+  return zone !== undefined && CELSIUS_ZONES.has(zone);
+}
+
+/** A feels-like or air temperature (given in °F) as the city reads it: "84°" in the US, "29°" in Canada and Mexico. */
+export function degreesFor(fahrenheit: number, metroId: string): string {
+  const value = usesCelsius(metroId) ? ((fahrenheit - 32) * 5) / 9 : fahrenheit;
+  return `${Math.round(value)}°`;
+}
+
 export const METROS: Record<string, Metro> = {
   la: {
     id: 'la', code: 'LA',

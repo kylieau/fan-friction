@@ -4,7 +4,7 @@
 // The nightly job fetches and stores rows; the app only reads stored rows.
 // The headline number everywhere is feels-like (apparent temperature).
 
-import { METROS } from '../../config/metros';
+import { degreesFor, METROS } from '../../config/metros';
 import { VENUES } from '../venues';
 import type { CrowdEvent, LocalDate } from '../types';
 
@@ -54,18 +54,13 @@ export interface WeatherDay {
 
 /** "H:88° L:62°", the way Apple Weather writes a day (Kylie, Oct 6: a bare range read like a loose estimate). */
 export function rangeLabel(day: Pick<WeatherDay, 'feelsLikeLowF' | 'feelsLikeHighF'>, metroId: string): string {
-  const metro = METROS[metroId];
-  const celsius = metro && !metro.timeZone.startsWith('America/');
-  const convert = (f: number) => Math.round(celsius ? ((f - 32) * 5) / 9 : f);
-  return `H:${convert(day.feelsLikeHighF)}° L:${convert(day.feelsLikeLowF)}°`;
+  return `H:${degreesFor(day.feelsLikeHighF, metroId)} L:${degreesFor(day.feelsLikeLowF, metroId)}`;
 }
 
 /** The same range for a screen reader: "feels like a high of 88 and a low of 62". */
 export function rangeSpoken(day: Pick<WeatherDay, 'feelsLikeLowF' | 'feelsLikeHighF'>, metroId: string): string {
-  const metro = METROS[metroId];
-  const celsius = metro && !metro.timeZone.startsWith('America/');
-  const convert = (f: number) => Math.round(celsius ? ((f - 32) * 5) / 9 : f);
-  return `feels like a high of ${convert(day.feelsLikeHighF)} and a low of ${convert(day.feelsLikeLowF)} degrees`;
+  const plain = (f: number) => degreesFor(f, metroId).replace('°', '');
+  return `feels like a high of ${plain(day.feelsLikeHighF)} and a low of ${plain(day.feelsLikeLowF)} degrees`;
 }
 
 /** The glyph beside the headline number. */
@@ -80,12 +75,9 @@ export function weatherGlyph(row: Pick<WeatherRow, 'code' | 'precipMm' | 'precip
   return '☀️';
 }
 
-/** Rounded degrees for display: "84°". Units follow the metro (°F in the US). */
+/** Rounded degrees for display: "84°". Units follow the metro (°F in the US, °C in Canada and Mexico). */
 export function feelsLikeLabel(row: Pick<WeatherRow, 'feelsLikeF'>, metroId: string): string {
-  const metro = METROS[metroId];
-  const celsius = metro && !metro.timeZone.startsWith('America/');
-  const value = celsius ? ((row.feelsLikeF - 32) * 5) / 9 : row.feelsLikeF;
-  return `${Math.round(value)}°`;
+  return degreesFor(row.feelsLikeF, metroId);
 }
 
 // ---------- The Conditions reason ----------

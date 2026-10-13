@@ -1,6 +1,6 @@
 import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO, METROS } from '../config/metros';
+import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
 import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
@@ -569,7 +569,7 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
   const range = weatherRangeForEvent(event);
   const rows: [string, string][] = [
     ['Feels like', feelsLikeLabel(row, event.metroId)],
-    ['Air', `${Math.round(row.tempF)}°`],
+    ['Air', degreesFor(row.tempF, event.metroId)],
   ];
   if (range && range.high.feelsLikeF !== range.low.feelsLikeF) {
     rows.push(['During', `${feelsLikeLabel(range.low, event.metroId)}–${feelsLikeLabel(range.high, event.metroId)}`]);
