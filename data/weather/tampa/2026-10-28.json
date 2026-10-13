@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-28",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "tampa",
+      "venueId": "city",
+      "date": "2026-10-28",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:00.642Z",
+      "feelsLikeHighF": 88.3,
+      "feelsLikeLowF": 75.8,
+      "code": 3,
+      "precipProbability": 23,
+      "precipMm": 0
+    }
+  ]
+}

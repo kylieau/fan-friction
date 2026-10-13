@@ -4,7 +4,7 @@
   "metroName": "Portland",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:52:11.427Z",
+  "capturedAt": "2026-10-13T15:40:22.989Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -249,7 +249,7 @@
       "date": "2026-10-17",
       "start": "19:30",
       "kind": "game",
-      "title": "Timbers vs. Colorado",
+      "title": "Timbers vs. Rapids",
       "place": {
         "type": "venue",
         "venueId": "providence-park"
@@ -512,7 +512,7 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Thorns vs. North Carolina",
+      "title": "Thorns vs. Courage",
       "place": {
         "type": "venue",
         "venueId": "providence-park"
@@ -795,7 +795,7 @@
       "read": {
         "rating": 1.8,
         "friction": "Low",
-        "why": "Timbers vs. Colorado 1.4 mi away, same hours.",
+        "why": "Timbers vs. Rapids 1.4 mi away, same hours.",
         "method": "formula"
       },
       "draw": {

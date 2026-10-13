@@ -20,7 +20,7 @@
         "score": 125
       },
       "attendance": 19600,
-      "capturedAt": "2026-10-13T07:19:49.048Z",
+      "capturedAt": "2026-10-13T15:40:52.420Z",
       "duration": {
         "minutes": 145,
         "kind": "estimated"
@@ -43,7 +43,7 @@
         "name": "D.C. United",
         "score": 0
       },
-      "capturedAt": "2026-10-13T07:19:49.048Z"
+      "capturedAt": "2026-10-13T15:40:52.420Z"
     },
     {
       "eventId": "2026-10-10-espn-miami-fc-401842282",
@@ -58,10 +58,10 @@
         "score": 0
       },
       "away": {
-        "name": "Loudoun",
+        "name": "Loudoun United",
         "score": 2
       },
-      "capturedAt": "2026-10-13T07:19:49.048Z"
+      "capturedAt": "2026-10-13T15:40:52.420Z"
     },
     {
       "eventId": "2026-10-10-espn-panthers-401891805",
@@ -80,7 +80,7 @@
         "score": 4
       },
       "attendance": 19856,
-      "capturedAt": "2026-10-13T07:19:49.048Z",
+      "capturedAt": "2026-10-13T15:40:52.420Z",
       "duration": {
         "minutes": 160,
         "kind": "estimated"

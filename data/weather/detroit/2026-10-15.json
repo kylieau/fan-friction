@@ -20,6 +20,24 @@
       "shortwave": 2,
       "cloudCover": 100,
       "code": 63
+    },
+    {
+      "metroId": "detroit",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:34:23.025Z",
+      "feelsLikeF": 52.6,
+      "tempF": 56.2,
+      "humidity": 84,
+      "windMph": 9.7,
+      "uvIndex": 0,
+      "precipProbability": 51,
+      "precipMm": 0.3,
+      "shortwave": 1,
+      "cloudCover": 100,
+      "code": 51
     }
   ],
   "days": [
@@ -34,6 +52,18 @@
       "code": 63,
       "precipProbability": 63,
       "precipMm": 11
+    },
+    {
+      "metroId": "detroit",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:34:23.025Z",
+      "feelsLikeHighF": 60.9,
+      "feelsLikeLowF": 47.4,
+      "code": 61,
+      "precipProbability": 81,
+      "precipMm": 3.7
     }
   ]
 }

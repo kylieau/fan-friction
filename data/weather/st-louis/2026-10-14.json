@@ -74,6 +74,78 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "st-louis",
+      "venueId": "energizer-park",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:35.036Z",
+      "feelsLikeF": 75.4,
+      "tempF": 70.7,
+      "humidity": 90,
+      "windMph": 4.9,
+      "uvIndex": 0,
+      "precipProbability": 25,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "st-louis",
+      "venueId": "energizer-park",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:35.036Z",
+      "feelsLikeF": 72.9,
+      "tempF": 69.6,
+      "humidity": 90,
+      "windMph": 6.9,
+      "uvIndex": 0,
+      "precipProbability": 27,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "st-louis",
+      "venueId": "energizer-park",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:35.036Z",
+      "feelsLikeF": 72.4,
+      "tempF": 69.1,
+      "humidity": 90,
+      "windMph": 6.5,
+      "uvIndex": 0,
+      "precipProbability": 25,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "st-louis",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:35.036Z",
+      "feelsLikeF": 75.3,
+      "tempF": 70.7,
+      "humidity": 90,
+      "windMph": 4.9,
+      "uvIndex": 0,
+      "precipProbability": 25,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -88,6 +160,18 @@
       "code": 61,
       "precipProbability": 67,
       "precipMm": 3.43
+    },
+    {
+      "metroId": "st-louis",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:35.036Z",
+      "feelsLikeHighF": 81.8,
+      "feelsLikeLowF": 69.5,
+      "code": 65,
+      "precipProbability": 52,
+      "precipMm": 10.5
     }
   ]
 }

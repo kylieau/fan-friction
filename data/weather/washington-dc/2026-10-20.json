@@ -20,6 +20,24 @@
       "shortwave": 2,
       "cloudCover": 44,
       "code": 1
+    },
+    {
+      "metroId": "washington-dc",
+      "venueId": "city",
+      "date": "2026-10-20",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:22.934Z",
+      "feelsLikeF": 66.4,
+      "tempF": 67.4,
+      "humidity": 54,
+      "windMph": 2.8,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -33,6 +51,18 @@
       "feelsLikeLowF": 53.7,
       "code": 3,
       "precipProbability": 2,
+      "precipMm": 0
+    },
+    {
+      "metroId": "washington-dc",
+      "venueId": "city",
+      "date": "2026-10-20",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:22.934Z",
+      "feelsLikeHighF": 71.7,
+      "feelsLikeLowF": 54.3,
+      "code": 3,
+      "precipProbability": 1,
       "precipMm": 0
     }
   ]

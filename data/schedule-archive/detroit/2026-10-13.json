@@ -4,7 +4,7 @@
   "metroName": "Detroit",
   "timeZone": "America/Detroit",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:53:37.913Z",
+  "capturedAt": "2026-10-13T15:37:13.815Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -1046,6 +1046,39 @@
       }
     },
     {
+      "id": "2026-10-24-espn-michigan-football-401858496",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Indiana",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "michigan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "michigan-football",
+        "away": "indiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
       "id": "2026-10-24-tm-vv17OZ_3GkT_-1EJ",
       "metroId": "detroit",
       "date": "2026-10-24",
@@ -1135,38 +1168,6 @@
       "expectedDraw": {
         "count": 1700,
         "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-24-espn-michigan-football-401858496",
-      "metroId": "detroit",
-      "date": "2026-10-24",
-      "start": null,
-      "kind": "game",
-      "title": "Michigan Wolverines vs. Indiana",
-      "place": {
-        "type": "venue",
-        "venueId": "michigan-stadium"
-      },
-      "audience": {
-        "domain": "sports",
-        "sport": "football"
-      },
-      "teams": {
-        "home": "michigan-football",
-        "away": "indiana"
-      },
-      "crowd": [],
-      "sourceId": "espn",
-      "expectedDraw": {
-        "count": 111440,
-        "low": 111256,
-        "high": 111569,
-        "fromCrowds": true,
-        "games": 4,
-        "seasons": "2023–2025",
-        "basis": "team",
-        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
       }
     },
     {
@@ -1714,6 +1715,22 @@
       }
     },
     {
+      "eventId": "2026-10-24-espn-michigan-football-401858496",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569
+      }
+    },
+    {
       "eventId": "2026-10-24-tm-vv17OZ_3GkT_-1EJ",
       "date": "2026-10-24",
       "start": "12:00",
@@ -1753,22 +1770,6 @@
       },
       "draw": {
         "count": 1700
-      }
-    },
-    {
-      "eventId": "2026-10-24-espn-michigan-football-401858496",
-      "date": "2026-10-24",
-      "start": null,
-      "read": {
-        "rating": 1,
-        "friction": "Low",
-        "why": "The biggest event around.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 111440,
-        "low": 111256,
-        "high": 111569
       }
     },
     {

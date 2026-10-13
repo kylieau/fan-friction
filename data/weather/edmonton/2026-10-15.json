@@ -20,6 +20,24 @@
       "shortwave": 10,
       "cloudCover": 94,
       "code": 3
+    },
+    {
+      "metroId": "edmonton",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:20.336Z",
+      "feelsLikeF": 37.2,
+      "tempF": 45.4,
+      "humidity": 53,
+      "windMph": 9.4,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 10,
+      "cloudCover": 98,
+      "code": 3
     }
   ],
   "days": [
@@ -31,6 +49,18 @@
       "capturedAt": "2026-10-13T07:19:59.845Z",
       "feelsLikeHighF": 42.6,
       "feelsLikeLowF": 26.2,
+      "code": 3,
+      "precipProbability": 0,
+      "precipMm": 0
+    },
+    {
+      "metroId": "edmonton",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:20.336Z",
+      "feelsLikeHighF": 41.7,
+      "feelsLikeLowF": 26,
       "code": 3,
       "precipProbability": 0,
       "precipMm": 0

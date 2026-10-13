@@ -38,6 +38,24 @@
       "shortwave": 22,
       "cloudCover": 97,
       "code": 3
+    },
+    {
+      "metroId": "houston",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:44.435Z",
+      "feelsLikeF": 85.5,
+      "tempF": 82.9,
+      "humidity": 59,
+      "windMph": 9.2,
+      "uvIndex": 0.15,
+      "precipProbability": 8,
+      "precipMm": 0,
+      "shortwave": 21,
+      "cloudCover": 71,
+      "code": 2
     }
   ],
   "days": [
@@ -63,6 +81,18 @@
       "feelsLikeLowF": 80.7,
       "code": 3,
       "precipProbability": 4,
+      "precipMm": 0
+    },
+    {
+      "metroId": "houston",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:44.435Z",
+      "feelsLikeHighF": 92.5,
+      "feelsLikeLowF": 79.4,
+      "code": 3,
+      "precipProbability": 8,
       "precipMm": 0
     }
   ]

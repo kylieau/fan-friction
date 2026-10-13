@@ -20,6 +20,24 @@
       "shortwave": 4,
       "cloudCover": 77,
       "code": 2
+    },
+    {
+      "metroId": "pittsburgh",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:34:58.019Z",
+      "feelsLikeF": 66.9,
+      "tempF": 67.5,
+      "humidity": 65,
+      "windMph": 5.5,
+      "uvIndex": 0.05,
+      "precipProbability": 5,
+      "precipMm": 0,
+      "shortwave": 5,
+      "cloudCover": 1,
+      "code": 0
     }
   ],
   "days": [
@@ -33,6 +51,18 @@
       "feelsLikeLowF": 52.8,
       "code": 3,
       "precipProbability": 17,
+      "precipMm": 0
+    },
+    {
+      "metroId": "pittsburgh",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:34:58.019Z",
+      "feelsLikeHighF": 72.1,
+      "feelsLikeLowF": 54.8,
+      "code": 1,
+      "precipProbability": 5,
       "precipMm": 0
     }
   ]

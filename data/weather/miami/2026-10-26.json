@@ -20,6 +20,24 @@
       "shortwave": 7,
       "cloudCover": 100,
       "code": 51
+    },
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:04.911Z",
+      "feelsLikeF": 83.1,
+      "tempF": 80.3,
+      "humidity": 68,
+      "windMph": 10.6,
+      "uvIndex": 0.15,
+      "precipProbability": 40,
+      "precipMm": 0.2,
+      "shortwave": 22,
+      "cloudCover": 68,
+      "code": 51
     }
   ],
   "days": [
@@ -34,6 +52,18 @@
       "code": 95,
       "precipProbability": 45,
       "precipMm": 44.7
+    },
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:04.911Z",
+      "feelsLikeHighF": 88,
+      "feelsLikeLowF": 81.7,
+      "code": 80,
+      "precipProbability": 48,
+      "precipMm": 12.5
     }
   ]
 }

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-12",
+  "results": [
+    {
+      "eventId": "2026-10-12-espn-devils-401892486",
+      "metroId": "new-york",
+      "date": "2026-10-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 1
+      },
+      "away": {
+        "name": "Senators",
+        "score": 4
+      },
+      "attendance": 15085,
+      "capturedAt": "2026-10-13T15:40:49.544Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    },
+    {
+      "eventId": "2026-10-12-espn-knicks-401914124",
+      "metroId": "new-york",
+      "date": "2026-10-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 104
+      },
+      "away": {
+        "name": "Timberwolves",
+        "score": 122
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-10-13T15:40:49.544Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "19:22"
+    }
+  ]
+}

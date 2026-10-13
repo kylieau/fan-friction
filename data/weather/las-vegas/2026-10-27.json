@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "las-vegas",
   "date": "2026-10-27",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-27",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:38.293Z",
+      "feelsLikeF": 68.1,
+      "tempF": 73.5,
+      "humidity": 25,
+      "windMph": 5,
+      "uvIndex": 0,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
   "days": [
     {
       "metroId": "las-vegas",
@@ -13,6 +32,18 @@
       "feelsLikeHighF": 72.2,
       "feelsLikeLowF": 61.4,
       "code": 2,
+      "precipProbability": 3,
+      "precipMm": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-27",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:38.293Z",
+      "feelsLikeHighF": 69,
+      "feelsLikeLowF": 61.1,
+      "code": 0,
       "precipProbability": 3,
       "precipMm": 0
     }

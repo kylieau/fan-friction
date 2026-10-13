@@ -38,6 +38,24 @@
       "shortwave": 2,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "minneapolis",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:09.215Z",
+      "feelsLikeF": 46.4,
+      "tempF": 52.4,
+      "humidity": 78,
+      "windMph": 11.6,
+      "uvIndex": 0,
+      "precipProbability": 49,
+      "precipMm": 0.1,
+      "shortwave": 3,
+      "cloudCover": 100,
+      "code": 51
     }
   ],
   "days": [
@@ -64,6 +82,18 @@
       "code": 53,
       "precipProbability": 44,
       "precipMm": 0.8
+    },
+    {
+      "metroId": "minneapolis",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:09.215Z",
+      "feelsLikeHighF": 49.1,
+      "feelsLikeLowF": 37.8,
+      "code": 63,
+      "precipProbability": 58,
+      "precipMm": 16.1
     }
   ]
 }

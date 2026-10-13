@@ -20,7 +20,7 @@
         "score": 20
       },
       "attendance": 5342,
-      "capturedAt": "2026-10-12T17:25:05.537Z",
+      "capturedAt": "2026-10-13T15:40:51.731Z",
       "duration": {
         "minutes": 198,
         "kind": "estimated"
@@ -40,10 +40,10 @@
         "score": 2
       },
       "away": {
-        "name": "Salt Lake",
+        "name": "Real Salt Lake",
         "score": 1
       },
-      "capturedAt": "2026-10-12T17:25:05.537Z"
+      "capturedAt": "2026-10-13T15:40:51.731Z"
     },
     {
       "eventId": "2026-10-10-espn-temple-football-401861964",
@@ -62,7 +62,7 @@
         "score": 34
       },
       "attendance": 21112,
-      "capturedAt": "2026-10-12T17:25:05.537Z",
+      "capturedAt": "2026-10-13T15:40:51.731Z",
       "duration": {
         "minutes": 200,
         "kind": "estimated"

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-12",
+  "results": [
+    {
+      "eventId": "2026-10-12-espn-wild-401892487",
+      "metroId": "minneapolis",
+      "date": "2026-10-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 4
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "attendance": 17566,
+      "capturedAt": "2026-10-13T15:40:57.186Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

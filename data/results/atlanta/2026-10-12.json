@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-12",
+  "results": [
+    {
+      "eventId": "2026-10-12-espn-hawks-401898402",
+      "metroId": "atlanta",
+      "date": "2026-10-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 113
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 110
+      },
+      "attendance": 15446,
+      "capturedAt": "2026-10-13T15:40:49.915Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "18:51"
+    }
+  ]
+}

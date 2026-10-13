@@ -74,6 +74,78 @@
       "shortwave": 1,
       "cloudCover": 1,
       "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "providence-park",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:29.910Z",
+      "feelsLikeF": 53.6,
+      "tempF": 58.9,
+      "humidity": 51,
+      "windMph": 7.3,
+      "uvIndex": 0,
+      "precipProbability": 4,
+      "precipMm": 0,
+      "shortwave": 3,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "providence-park",
+      "date": "2026-10-17",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:29.910Z",
+      "feelsLikeF": 52.4,
+      "tempF": 57.1,
+      "humidity": 55,
+      "windMph": 5.8,
+      "uvIndex": 0,
+      "precipProbability": 4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "providence-park",
+      "date": "2026-10-17",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:29.910Z",
+      "feelsLikeF": 51.4,
+      "tempF": 55.4,
+      "humidity": 60,
+      "windMph": 4.7,
+      "uvIndex": 0,
+      "precipProbability": 4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:29.910Z",
+      "feelsLikeF": 53.5,
+      "tempF": 58.8,
+      "humidity": 51,
+      "windMph": 7.3,
+      "uvIndex": 0,
+      "precipProbability": 4,
+      "precipMm": 0,
+      "shortwave": 3,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -88,6 +160,18 @@
       "code": 61,
       "precipProbability": 30,
       "precipMm": 4.6
+    },
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:29.910Z",
+      "feelsLikeHighF": 61.4,
+      "feelsLikeLowF": 49.8,
+      "code": 53,
+      "precipProbability": 56,
+      "precipMm": 2.9
     }
   ]
 }

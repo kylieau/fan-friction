@@ -15,6 +15,18 @@
       "code": 3,
       "precipProbability": 4,
       "precipMm": 0
+    },
+    {
+      "metroId": "st-louis",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:35.036Z",
+      "feelsLikeHighF": 95.7,
+      "feelsLikeLowF": 65.3,
+      "code": 0,
+      "precipProbability": 7,
+      "precipMm": 0
     }
   ]
 }

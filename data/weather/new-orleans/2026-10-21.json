@@ -38,6 +38,24 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 51
+    },
+    {
+      "metroId": "new-orleans",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:12.438Z",
+      "feelsLikeF": 80.2,
+      "tempF": 78.7,
+      "humidity": 68,
+      "windMph": 12.2,
+      "uvIndex": 0,
+      "precipProbability": 12,
+      "precipMm": 0,
+      "shortwave": 3,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -64,6 +82,18 @@
       "code": 55,
       "precipProbability": 23,
       "precipMm": 9.5
+    },
+    {
+      "metroId": "new-orleans",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:12.438Z",
+      "feelsLikeHighF": 89,
+      "feelsLikeLowF": 79.8,
+      "code": 3,
+      "precipProbability": 12,
+      "precipMm": 0
     }
   ]
 }

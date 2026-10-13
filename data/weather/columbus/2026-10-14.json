@@ -146,6 +146,78 @@
       "shortwave": 6,
       "cloudCover": 100,
       "code": 53
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "scottsmiracle-gro-field",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:09.721Z",
+      "feelsLikeF": 65.3,
+      "tempF": 64.9,
+      "humidity": 89,
+      "windMph": 8.6,
+      "uvIndex": 0,
+      "precipProbability": 29,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "scottsmiracle-gro-field",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:09.721Z",
+      "feelsLikeF": 64.4,
+      "tempF": 63.9,
+      "humidity": 88,
+      "windMph": 7.1,
+      "uvIndex": 0,
+      "precipProbability": 32,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "scottsmiracle-gro-field",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:09.721Z",
+      "feelsLikeF": 63.6,
+      "tempF": 63.3,
+      "humidity": 88,
+      "windMph": 6.8,
+      "uvIndex": 0,
+      "precipProbability": 24,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:09.721Z",
+      "feelsLikeF": 65,
+      "tempF": 64.7,
+      "humidity": 89,
+      "windMph": 8.6,
+      "uvIndex": 0,
+      "precipProbability": 28,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -172,6 +244,18 @@
       "code": 80,
       "precipProbability": 68,
       "precipMm": 10
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:09.721Z",
+      "feelsLikeHighF": 84.9,
+      "feelsLikeLowF": 59.4,
+      "code": 55,
+      "precipProbability": 43,
+      "precipMm": 1.8
     }
   ]
 }

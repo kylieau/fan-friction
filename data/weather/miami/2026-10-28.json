@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-28",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-28",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:04.911Z",
+      "feelsLikeHighF": 85.7,
+      "feelsLikeLowF": 80.9,
+      "code": 95,
+      "precipProbability": 26,
+      "precipMm": 20
+    }
+  ]
+}

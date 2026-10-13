@@ -38,6 +38,42 @@
       "shortwave": 42,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:38.293Z",
+      "feelsLikeF": 56.1,
+      "tempF": 69,
+      "humidity": 12,
+      "windMph": 16.5,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:38.293Z",
+      "feelsLikeF": 56.6,
+      "tempF": 70.5,
+      "humidity": 11,
+      "windMph": 18.9,
+      "uvIndex": 0.15,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 45,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -51,6 +87,18 @@
       "feelsLikeLowF": 54.7,
       "code": 0,
       "precipProbability": 0,
+      "precipMm": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:38.293Z",
+      "feelsLikeHighF": 56.7,
+      "feelsLikeLowF": 44.7,
+      "code": 0,
+      "precipProbability": 3,
       "precipMm": 0
     }
   ]

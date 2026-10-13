@@ -74,6 +74,24 @@
       "shortwave": 0,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:33:50.646Z",
+      "feelsLikeF": 46.7,
+      "tempF": 50.9,
+      "humidity": 73,
+      "windMph": 5.4,
+      "uvIndex": 0,
+      "precipProbability": 8,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 36,
+      "code": 1
     }
   ],
   "days": [
@@ -135,6 +153,18 @@
       "feelsLikeLowF": 46.4,
       "code": 3,
       "precipProbability": 13,
+      "precipMm": 0
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:33:50.646Z",
+      "feelsLikeHighF": 53.9,
+      "feelsLikeLowF": 40.3,
+      "code": 3,
+      "precipProbability": 18,
       "precipMm": 0
     }
   ]

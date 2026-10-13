@@ -20,6 +20,24 @@
       "shortwave": 0,
       "cloudCover": 52,
       "code": 2
+    },
+    {
+      "metroId": "denver",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:37.433Z",
+      "feelsLikeF": 44.2,
+      "tempF": 54,
+      "humidity": 34,
+      "windMph": 12.2,
+      "uvIndex": 0,
+      "precipProbability": 13,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 52,
+      "code": 2
     }
   ],
   "days": [
@@ -34,6 +52,18 @@
       "code": 3,
       "precipProbability": 16,
       "precipMm": 0
+    },
+    {
+      "metroId": "denver",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:37.433Z",
+      "feelsLikeHighF": 52.8,
+      "feelsLikeLowF": 32.6,
+      "code": 85,
+      "precipProbability": 16,
+      "precipMm": 3.9
     }
   ]
 }

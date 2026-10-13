@@ -20,6 +20,24 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "ottawa-gatineau",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:18.367Z",
+      "feelsLikeF": 50.4,
+      "tempF": 53.8,
+      "humidity": 69,
+      "windMph": 4.5,
+      "uvIndex": 0,
+      "precipProbability": 14,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 94,
+      "code": 3
     }
   ],
   "days": [
@@ -34,6 +52,18 @@
       "code": 3,
       "precipProbability": 24,
       "precipMm": 0
+    },
+    {
+      "metroId": "ottawa-gatineau",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:18.367Z",
+      "feelsLikeHighF": 53.1,
+      "feelsLikeLowF": 32.9,
+      "code": 3,
+      "precipProbability": 18,
+      "precipMm": 0.5
     }
   ]
 }

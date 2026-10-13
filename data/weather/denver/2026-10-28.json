@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-28",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "denver",
+      "venueId": "city",
+      "date": "2026-10-28",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:37.433Z",
+      "feelsLikeHighF": 47,
+      "feelsLikeLowF": 32.6,
+      "code": 85,
+      "precipProbability": 26,
+      "precipMm": 3.6
+    }
+  ]
+}

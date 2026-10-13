@@ -74,6 +74,78 @@
       "shortwave": 9,
       "cloudCover": 46,
       "code": 1
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "america-first-field",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:14.172Z",
+      "feelsLikeF": 38.9,
+      "tempF": 43.7,
+      "humidity": 60,
+      "windMph": 1.7,
+      "uvIndex": 0.05,
+      "precipProbability": 15,
+      "precipMm": 0,
+      "shortwave": 11,
+      "cloudCover": 52,
+      "code": 2
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "america-first-field",
+      "date": "2026-10-23",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:14.172Z",
+      "feelsLikeF": 38.1,
+      "tempF": 42.8,
+      "humidity": 65,
+      "windMph": 1.9,
+      "uvIndex": 0,
+      "precipProbability": 15,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 31,
+      "code": 1
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "america-first-field",
+      "date": "2026-10-23",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:14.172Z",
+      "feelsLikeF": 37.4,
+      "tempF": 42,
+      "humidity": 69,
+      "windMph": 2,
+      "uvIndex": 0,
+      "precipProbability": 15,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 16,
+      "code": 0
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:14.172Z",
+      "feelsLikeF": 39.3,
+      "tempF": 44.3,
+      "humidity": 61,
+      "windMph": 2.7,
+      "uvIndex": 0.05,
+      "precipProbability": 16,
+      "precipMm": 0,
+      "shortwave": 10,
+      "cloudCover": 78,
+      "code": 2
     }
   ],
   "days": [
@@ -88,6 +160,18 @@
       "code": 55,
       "precipProbability": 20,
       "precipMm": 4.5
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:36:14.172Z",
+      "feelsLikeHighF": 41.1,
+      "feelsLikeLowF": 31.6,
+      "code": 81,
+      "precipProbability": 22,
+      "precipMm": 13.8
     }
   ]
 }

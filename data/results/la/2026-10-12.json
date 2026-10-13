@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-12",
+  "results": [
+    {
+      "eventId": "2026-10-12-espn-rams-401872994",
+      "metroId": "la",
+      "date": "2026-10-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sofi-stadium",
+      "homeTeamId": "rams",
+      "home": {
+        "name": "Rams",
+        "score": 34
+      },
+      "away": {
+        "name": "Bills",
+        "score": 37
+      },
+      "attendance": 73882,
+      "note": "OT",
+      "capturedAt": "2026-10-13T15:40:48.404Z",
+      "duration": {
+        "minutes": 211,
+        "kind": "estimated"
+      },
+      "startedAt": "20:15"
+    }
+  ]
+}

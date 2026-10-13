@@ -2,7 +2,44 @@
   "schema": 1,
   "metroId": "new-york",
   "date": "2026-10-27",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-27",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:33:53.630Z",
+      "feelsLikeF": 40.6,
+      "tempF": 50.8,
+      "humidity": 36,
+      "windMph": 12.8,
+      "uvIndex": 0,
+      "precipProbability": 12,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-27",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:33:53.630Z",
+      "feelsLikeF": 40.1,
+      "tempF": 49.6,
+      "humidity": 38,
+      "windMph": 11.3,
+      "uvIndex": 0,
+      "precipProbability": 13,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
   "days": [
     {
       "metroId": "new-york",
@@ -14,6 +51,18 @@
       "feelsLikeLowF": 37.3,
       "code": 3,
       "precipProbability": 13,
+      "precipMm": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-27",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:33:53.630Z",
+      "feelsLikeHighF": 45.9,
+      "feelsLikeLowF": 36.6,
+      "code": 0,
+      "precipProbability": 15,
       "precipMm": 0
     }
   ]

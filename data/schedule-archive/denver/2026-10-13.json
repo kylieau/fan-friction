@@ -4,7 +4,7 @@
   "metroName": "Denver",
   "timeZone": "America/Denver",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:59:12.413Z",
+  "capturedAt": "2026-10-13T15:40:40.831Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -1677,8 +1677,8 @@
       "start": "19:30",
       "read": {
         "rating": 10,
-        "friction": "Heavy",
-        "why": "Rain in the forecast at a 7:30 pm start.",
+        "friction": "Low",
+        "why": "Avalanche vs. Stars 7.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {

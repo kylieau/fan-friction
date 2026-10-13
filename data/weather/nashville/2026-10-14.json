@@ -146,6 +146,78 @@
       "shortwave": 0,
       "cloudCover": 99,
       "code": 3
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "geodis-park",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:16.067Z",
+      "feelsLikeF": 89.6,
+      "tempF": 83.2,
+      "humidity": 64,
+      "windMph": 3.5,
+      "uvIndex": 0,
+      "precipProbability": 14,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "geodis-park",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:16.067Z",
+      "feelsLikeF": 89.2,
+      "tempF": 81.6,
+      "humidity": 72,
+      "windMph": 3,
+      "uvIndex": 0,
+      "precipProbability": 19,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "geodis-park",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:16.067Z",
+      "feelsLikeF": 88.8,
+      "tempF": 79.4,
+      "humidity": 83,
+      "windMph": 1.7,
+      "uvIndex": 0,
+      "precipProbability": 14,
+      "precipMm": 0.4,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 51
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:16.067Z",
+      "feelsLikeF": 89,
+      "tempF": 82.9,
+      "humidity": 65,
+      "windMph": 4.3,
+      "uvIndex": 0,
+      "precipProbability": 17,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -172,6 +244,18 @@
       "code": 3,
       "precipProbability": 11,
       "precipMm": 0
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T15:35:16.067Z",
+      "feelsLikeHighF": 96.4,
+      "feelsLikeLowF": 69.2,
+      "code": 81,
+      "precipProbability": 27,
+      "precipMm": 5
     }
   ]
 }
