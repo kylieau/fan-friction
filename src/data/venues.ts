@@ -8790,6 +8790,349 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+// St. Louis (Oct 13, 2026; docs/research/city-builds/st-louis/). Car shares are estimates from
+  // st-louis-city-type-answer.md (no measured split). Coordinates: OpenStreetMap unless noted.
+  'dome-at-americas-center': {
+    id: 'dome-at-americas-center',
+    metroId: 'st-louis',
+    carShare: 0.87,
+    names: [
+      { name: 'Trans World Dome' },
+      { name: 'Edward Jones Dome', from: '2002-01-01' },
+      { name: "The Dome at America's Center", from: '2016-01-01' },
+    ],
+    location: [-90.188551, 38.632785],
+    capacity: [
+      {
+        seats: 67277,
+        setup: 'football',
+        note: 'Reported full stadium. Operator rounds to 67,000; half-stadium basketball about 40,000 and higher concert configs reported but not stored separately. Source: https://en.wikipedia.org/wiki/The_Dome_at_America%27s_Center',
+      },
+    ],
+    roof: 'covered',
+  },
+  'world-wide-technology-raceway': {
+    id: 'world-wide-technology-raceway',
+    metroId: 'st-louis',
+    carShare: 0.97,
+    names: [
+      { name: 'Gateway Motorsports Park' },
+      { name: 'World Wide Technology Raceway', from: '2018-01-01' },
+    ],
+    location: [-90.135888, 38.6522],
+    capacity: [
+      {
+        seats: 58000,
+        setup: 'racing',
+        note: 'Reported grandstand (tourism bureau). Track press release cites 57,000; nearly 80,000 appears in low-reliability listings — conflict preserved. Sellout does not imply a published headcount. Source: https://www.riversandroutes.com/directory/world-wide-technology-raceway-sports-venues/',
+      },
+    ],
+    roof: 'open',
+  },
+  'busch-stadium': {
+    id: 'busch-stadium',
+    metroId: 'st-louis',
+    carShare: 0.88,
+    names: [{ name: 'Busch Stadium' }],
+    location: [-90.193921, 38.622554],
+    capacity: [
+      {
+        seats: 43769,
+        setup: 'baseball',
+        note: 'Official (Cardinals ballpark guide). Conflicts: 44,383 Wikipedia, 45,494 Ticketmaster blog, 43,975 ballparks site. Concert capacity unknown. Source: https://www.mlb.com/cardinals/ballpark/information/guide',
+      },
+    ],
+    roof: 'open',
+  },
+  'energizer-park': {
+    id: 'energizer-park',
+    metroId: 'st-louis',
+    carShare: 0.79,
+    names: [
+      { name: 'CITYPARK' },
+      { name: 'Energizer Park', from: '2025-01-01' },
+    ],
+    location: [-90.210307, 38.631318],
+    capacity: [
+      {
+        seats: 22423,
+        setup: 'soccer',
+        note: 'Reported. 22,500 rounding also published. SeatGeek is the ticketing partner; Ticketmaster feed may miss MLS nights. Source: https://www.stlmag.com/news/sports/st-louis-city-sc-renames-stadium-energizer-park/',
+      },
+    ],
+    roof: 'covered',
+  },
+  'enterprise-center': {
+    id: 'enterprise-center',
+    metroId: 'st-louis',
+    carShare: 0.85,
+    names: [
+      { name: 'Scottrade Center' },
+      { name: 'Enterprise Center', from: '2018-07-01' },
+      { name: 'Kiel Center' },
+    ],
+    location: [-90.20262, 38.626801],
+    capacity: [
+      { seats: 18096, setup: 'hockey', note: 'Reported (Wikipedia, 2019 renovation). Stadium Journey lists 19,022 — conflict preserved. Source: https://en.wikipedia.org/wiki/Enterprise_Center' },
+      { seats: 22000, setup: 'concert', note: 'Reported. Pollstar cited 21,000 in 2018. Source: https://en.wikipedia.org/wiki/Enterprise_Center' },
+    ],
+    roof: 'indoor',
+  },
+  'hollywood-casino-amphitheatre-stl': {
+    id: 'hollywood-casino-amphitheatre-stl',
+    metroId: 'st-louis',
+    carShare: 0.96,
+    names: [
+      { name: 'Riverport Amphitheatre' },
+      { name: 'UMB Bank Pavilion' },
+      { name: 'Verizon Wireless Amphitheater' },
+      { name: 'Hollywood Casino Amphitheatre', from: '2014-01-01' },
+      { name: 'Hollywood Casino Amphitheater' },
+    ],
+    location: [-90.470094, 38.74481],
+    capacity: [
+      {
+        seats: 20000,
+        setup: 'concert',
+        note: 'Estimated total incl. lawn (Ticketmaster). Seated pavilion 6,805 and standing 19,000 also reported. Parking bundled with tickets. Source: https://blog.ticketmaster.com/step-inside-hollywood-casino-amphitheater-st-louis-mo/',
+      },
+    ],
+    roof: 'covered',
+  },
+  'the-muny': {
+    id: 'the-muny',
+    metroId: 'st-louis',
+    carShare: 0.86,
+    names: [{ name: 'The Muny' }, { name: 'Municipal Opera' }],
+    location: [-90.280229, 38.640171],
+    capacity: [
+      {
+        seats: 10700,
+        setup: 'concert',
+        note: 'Reported after 2026 seat replacement (about 10,700 flip seats; historic 11,000 incl. free seats). Returns summer 2027 during renovation. Source: https://hoodline.com/2026/09/the-muny-rips-out-11-000-rusted-seats-in-9-5m-forest-park-overhaul/',
+      },
+    ],
+    roof: 'open',
+  },
+  'chaifetz-arena': {
+    id: 'chaifetz-arena',
+    metroId: 'st-louis',
+    carShare: 0.88,
+    names: [{ name: 'Chaifetz Arena' }],
+    location: [-90.228177, 38.632526],
+    capacity: [
+      { seats: 10600, setup: 'basketball', note: 'Reported (SLU / Clayco). Source: https://claycorp.com/project/chaifetz-arena-at-saint-louis-university' },
+      { seats: 11600, setup: 'concert', note: 'Estimated (SeatGeek blog). Source: https://seatgeek.com/blog/chaifetz-arena-seatgeeks-complete-guide-to-the-home-of-st-louis-billikens-basketball' },
+    ],
+    roof: 'indoor',
+  },
+  'family-arena': {
+    id: 'family-arena',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'Family Arena' }],
+    location: [-90.509347, 38.747782],
+    capacity: [
+      {
+        seats: 11522,
+        setup: 'concert',
+        note: 'Reported in-the-round maximum. Hockey 9,643; lower-bowl Ambush setups can fall below friction. Naming rights marketed May 2026. Source: https://en.wikipedia.org/wiki/Family_Arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'harlen-c-hunter-stadium': {
+    id: 'harlen-c-hunter-stadium',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'Harlen C. Hunter Stadium' }],
+    location: [-90.501903, 38.787735],
+    capacity: [
+      {
+        seats: 6000,
+        setup: 'football',
+        note: 'Official (Lindenwood). Wikipedia reports 7,450 — conflict preserved. Source: https://lindenwoodlions.com/sports/2020/9/10/Hunter-stadium.aspx',
+      },
+    ],
+    roof: 'open',
+  },
+  'hermann-stadium': {
+    id: 'hermann-stadium',
+    metroId: 'st-louis',
+    carShare: 0.88,
+    names: [{ name: 'Robert R. Hermann Stadium' }, { name: 'Hermann Stadium' }],
+    // OSM miss; SLU athletics places the stadium one block east of Grand on Laclede (approximate).
+    location: [-90.2358, 38.6369],
+    capacity: [
+      {
+        seats: 6050,
+        setup: 'soccer',
+        note: 'Official total; main grandstand 2,400. Source: https://slubillikens.com/sports/2011/8/22/205246207.aspx',
+      },
+    ],
+    roof: 'open',
+  },
+  'arsenal-bg-ballpark': {
+    id: 'arsenal-bg-ballpark',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [
+      { name: 'GCS Credit Union Ballpark' },
+      { name: 'Grizzlies Ballpark', from: '2023-01-01' },
+      { name: 'Arsenal BG Ballpark', from: '2025-01-01' },
+    ],
+    // OSM miss; coordinates from reference-work infobox (Gateway Grizzlies).
+    location: [-90.16389, 38.58972],
+    capacity: [
+      {
+        seats: 6000,
+        setup: 'baseball',
+        note: 'Official (team). Special events up to 8,000 not stored as baseball seats. Source: https://gatewaygrizzlies.com/Information',
+      },
+    ],
+    roof: 'open',
+  },
+  'carshield-field': {
+    id: 'carshield-field',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'T.R. Hughes Ballpark' }, { name: 'CarShield Field' }],
+    location: [-90.680582, 38.816864],
+    capacity: [
+      {
+        seats: 3500,
+        setup: 'baseball',
+        note: 'Reported fixed seats; 1,600 lawn/picnic and 5,150 totals exist but lawn is not counted as seats per brief. Source: https://websterathletics.com/news/2019/12/24/sliac-baseball-tournament-moves-to-carshield-field.aspx',
+      },
+    ],
+    roof: 'open',
+  },
+  'fabulous-fox-theatre-stl': {
+    id: 'fabulous-fox-theatre-stl',
+    metroId: 'st-louis',
+    carShare: 0.85,
+    names: [{ name: 'The Fabulous Fox' }, { name: 'Fabulous Fox Theatre' }],
+    location: [-90.232384, 38.639122],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'concert',
+        note: 'Official reopening capacity; 4,192 seats plus Fox Club reported. Below friction line. Source: https://www.fabulousfox.com/theatre-info',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'saint-louis-music-park': {
+    id: 'saint-louis-music-park',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'Saint Louis Music Park' }, { name: 'St. Louis Music Park' }],
+    // OSM miss; approximate point at Centene Community Ice Center address (research).
+    location: [-90.468, 38.748],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'concert',
+        note: 'Estimated (Music Gateway — low confidence; wrongly placed the room on the old amphitheatre site). Source: https://www.musicgateway.com/blog/live-music/st-louis-music-park-review',
+      },
+    ],
+    roof: 'open',
+  },
+  'siue-vadalabene-arena': {
+    id: 'siue-vadalabene-arena',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [
+      { name: 'Vadalabene Center' },
+      { name: 'First Community Arena at the Vadalabene Center' },
+    ],
+    // OSM miss; campus centroid from reference coordinates.
+    location: [-89.99722, 38.79083],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'basketball',
+        note: 'Official "slightly above 4,000". Record crowd 4,157 (2012). Source: https://siuecougars.com/facilities/first-community-arena/1',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'ralph-korte-stadium': {
+    id: 'ralph-korte-stadium',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'Ralph Korte Stadium' }],
+    location: [-90.011116, 38.782332],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'soccer',
+        note: 'Reported (Enjoy Illinois). Source: https://it.enjoyillinois.com/explore/listing/ralph-korte-stadium-and-sports-complex',
+      },
+    ],
+    roof: 'open',
+  },
+  'stifel-theatre': {
+    id: 'stifel-theatre',
+    metroId: 'st-louis',
+    carShare: 0.85,
+    names: [{ name: 'Peabody Opera House' }, { name: 'Stifel Theatre', from: '2018-01-01' }],
+    location: [-90.202049, 38.62752],
+    capacity: [
+      {
+        seats: 3100,
+        setup: 'concert',
+        note: 'Official PDF; contractors cite 3,200 and 3,500. Adjacent to Enterprise Center — do not merge listings. Source: https://www.stifeltheatre.com/assets/doc/Corporate-Printable-Stifel-2022-59ed3bb74a.pdf',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hyland-performance-arena': {
+    id: 'hyland-performance-arena',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'Robert F. Hyland Performance Arena' }, { name: 'Hyland Performance Arena' }],
+    location: [-90.50352, 38.78912],
+    capacity: [
+      {
+        seats: 3270,
+        setup: 'basketball',
+        note: 'Reported incl. 270 box seats. Source: https://en.wikipedia.org/wiki/Robert_F._Hyland_Performance_Arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'the-factory-stl': {
+    id: 'the-factory-stl',
+    metroId: 'st-louis',
+    carShare: 0.95,
+    names: [{ name: 'The Factory' }],
+    location: [-90.593594, 38.671742],
+    capacity: [
+      {
+        seats: 3000,
+        setup: 'concert',
+        note: 'Official maximum; seated shows 2,350. Movable partitions — standing max is not seated capacity. Source: https://www.thefactorystl.com/?p=103',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'ferrara-theatre': {
+    id: 'ferrara-theatre',
+    metroId: 'st-louis',
+    carShare: 0.85,
+    names: [{ name: 'Ferrara Theatre' }, { name: "America's Center Ferrara Theatre" }],
+    location: [-90.188551, 38.632785],
+    capacity: [
+      {
+        seats: 1411,
+        setup: 'concert',
+        note: 'Reported. Child room of the Dome complex; 1,400 also cited. Source: https://www-eur.cvent.com/venues/st-louis/9/america-s-center/venue-e3ce2326-ade2-4706-96a9-854fc3ad122f',
+      },
+    ],
+    roof: 'indoor',
+  },
+
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

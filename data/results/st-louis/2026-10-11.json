@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-st-louis-city-sc-761859",
+      "metroId": "st-louis",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "energizer-park",
+      "homeTeamId": "st-louis-city-sc",
+      "home": {
+        "name": "CITY SC",
+        "score": 6
+      },
+      "away": {
+        "name": "Galaxy",
+        "score": 2
+      },
+      "capturedAt": "2026-10-13T07:22:11.107Z"
+    }
+  ]
+}

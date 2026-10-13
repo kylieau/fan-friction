@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'ottawa-gatineau': 'America/Toronto' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'ottawa-gatineau': 'America/Toronto', 'st-louis': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -66,6 +66,7 @@ const MLB_TEAMS = [
   { teamId: 'sounds', metroId: 'nashville', mlbId: 556, sportId: 11, venueId: 'first-horizon-park', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'vancouver-canadians', mlbId: 435, sportId: 13, venueId: 'nat-bailey-stadium', metroId: 'vancouver', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'royals', mlbId: 118, venueId: 'kauffman-stadium', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'cardinals', metroId: 'st-louis', mlbId: 138, venueId: 'busch-stadium', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'kc-monarchs', mlbId: 1885, sportId: 23, venueId: 'legends-field', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
@@ -336,6 +337,16 @@ const ESPN_TEAMS = [
   // Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/). Ids checked Oct 13, 2026.
   { teamId: 'ottawa-senators', metroId: 'ottawa-gatineau', path: 'hockey/nhl', espnId: '14', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'ottawa-redblacks', metroId: 'ottawa-gatineau', path: 'football/cfl', espnId: '87', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'blues', metroId: 'st-louis', path: 'hockey/nhl', espnId: '19', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'st-louis-city-sc', metroId: 'st-louis', path: 'soccer/usa.1', espnId: '21812', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'st-louis-battlehawks', metroId: 'st-louis', path: 'football/ufl', espnId: '112651', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'slu-mbb', metroId: 'st-louis', path: 'basketball/mens-college-basketball', espnId: '139', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'slu-wbb', metroId: 'st-louis', path: 'basketball/womens-college-basketball', espnId: '139', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'siue-mbb', metroId: 'st-louis', path: 'basketball/mens-college-basketball', espnId: '2565', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'siue-wbb', metroId: 'st-louis', path: 'basketball/womens-college-basketball', espnId: '2565', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'lindenwood-football', metroId: 'st-louis', path: 'football/college-football', espnId: '2815', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'lindenwood-mbb', metroId: 'st-louis', path: 'basketball/mens-college-basketball', espnId: '2815', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'lindenwood-wbb', metroId: 'st-louis', path: 'basketball/womens-college-basketball', espnId: '2815', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -626,6 +637,27 @@ const VENUE_BY_NAME = {
   'the arena at td place': 'arena-at-td-place',
   'td place arena': 'arena-at-td-place',
   'td place': 'arena-at-td-place',
+  'ottawa stadium': 'ottawa-stadium',
+  'lucas oil stadium': 'lucas-oil-stadium',
+  'gainbridge fieldhouse': 'gainbridge-fieldhouse',
+  'bankers life fieldhouse': 'gainbridge-fieldhouse',
+  'hinkle fieldhouse': 'hinkle-fieldhouse',
+  'victory field': 'victory-field',
+  'bud and jackie sellick bowl': 'sellick-bowl',
+  'the jungle': 'iu-indy-jungle',
+  // St. Louis, as ESPN writes them. Keep in step with espnSource.ts.
+  'busch stadium': 'busch-stadium',
+  'enterprise center': 'enterprise-center',
+  'energizer park': 'energizer-park',
+  "the dome at america's center": 'dome-at-americas-center',
+  'dome at americas center': 'dome-at-americas-center',
+  'chaifetz arena': 'chaifetz-arena',
+  'harlen c. hunter stadium': 'harlen-c-hunter-stadium',
+  'hunter stadium': 'harlen-c-hunter-stadium',
+  'hermann stadium': 'hermann-stadium',
+  'robert r. hermann stadium': 'hermann-stadium',
+  'first community arena at the vadalabene center': 'siue-vadalabene-arena',
+  'vadalabene center': 'siue-vadalabene-arena',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -645,6 +677,11 @@ const METRO_VENUE_BY_NAME = {
     'pavilion at arc': 'university-credit-union-center',
   },
   houston: { 'panther stadium': 'pvamu-panther-stadium', 'toyota center': 'toyota-center', 'rice stadium': 'first-community-stadium' },
+  'st-louis': {
+    'hollywood casino amphitheatre': 'hollywood-casino-amphitheatre-stl',
+    'hollywood casino amphitheater': 'hollywood-casino-amphitheatre-stl',
+    'family arena': 'family-arena',
+  },
 };
 
 function venueIdForEspnName(name, metroId) {

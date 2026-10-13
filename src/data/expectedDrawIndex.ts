@@ -47961,7 +47961,1100 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "games": 5,
     "seasons": "2024–2025"
   }
-];
+,
+
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18096,
+    "low": 18024,
+    "high": 18096,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 16314,
+    "low": 15922,
+    "high": 17154,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18096,
+    "low": 17471,
+    "high": 18096,
+    "games": 67,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18096,
+    "low": 17441,
+    "high": 18096,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18096,
+    "low": 17638,
+    "high": 18096,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 17179,
+    "low": 16814,
+    "high": 17525,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18096,
+    "low": 17401,
+    "high": 18096,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 33,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18096,
+    "low": 17714,
+    "high": 18096,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18096,
+    "low": 17480,
+    "high": 18096,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18096,
+    "low": 18096,
+    "high": 18096,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18096,
+    "low": 17788,
+    "high": 18096,
+    "games": 8,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "venueId": "enterprise-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18096,
+    "low": 17916,
+    "high": 18096,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 30274,
+    "low": 25699,
+    "high": 34323,
+    "games": 249,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 47273,
+    "low": 46155,
+    "high": 47334,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 27223,
+    "low": 21802,
+    "high": 32074,
+    "games": 130,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 21307,
+    "low": 21257,
+    "high": 22065,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 22642,
+    "low": 21495,
+    "high": 32748,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 27705,
+    "low": 25062,
+    "high": 32582,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 29604,
+    "low": 24210,
+    "high": 33063,
+    "games": 31,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 27028,
+    "low": 20885,
+    "high": 31804,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 26890,
+    "low": 20786,
+    "high": 29691,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 26666,
+    "low": 22655,
+    "high": 30265,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 31237,
+    "low": 27871,
+    "high": 37498,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 31304,
+    "low": 27125,
+    "high": 32309,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 34112,
+    "low": 28223,
+    "high": 37663,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 35282,
+    "low": 31351,
+    "high": 38887,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 29763,
+    "low": 29379,
+    "high": 37975,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 31169,
+    "low": 26481,
+    "high": 33453,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 30013,
+    "low": 26829,
+    "high": 33044,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 34450,
+    "low": 29347,
+    "high": 39320,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 33490,
+    "low": 31009,
+    "high": 36825,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 37970,
+    "low": 33837,
+    "high": 40283,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 34577,
+    "low": 27094,
+    "high": 38315,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 33975,
+    "low": 30465,
+    "high": 39251,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 33800,
+    "low": 29204,
+    "high": 40048,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 36212,
+    "low": 27930,
+    "high": 39460,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 34609,
+    "low": 27814,
+    "high": 39314,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 32456,
+    "low": 31186,
+    "high": 37767,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 37735,
+    "low": 36423,
+    "high": 39316,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 37779,
+    "low": 34414,
+    "high": 40585,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 28597,
+    "low": 26300,
+    "high": 35828,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 25589,
+    "low": 25365,
+    "high": 30540,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "venueId": "busch-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 33666,
+    "low": 30623,
+    "high": 37977,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "venueId": "harlen-c-hunter-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 3660,
+    "low": 2803,
+    "high": 3994,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "venueId": "harlen-c-hunter-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4668,
+    "low": 4248,
+    "high": 4692,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "venueId": "harlen-c-hunter-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3660,
+    "low": 2803,
+    "high": 3994,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "venueId": "harlen-c-hunter-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 3363,
+    "low": 2850,
+    "high": 3678,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "venueId": "harlen-c-hunter-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4378,
+    "low": 3428,
+    "high": 5003,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 5731,
+    "low": 4809,
+    "high": 7285,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4989,
+    "low": 4957,
+    "high": 5177,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5318,
+    "low": 4025,
+    "high": 6273,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 6433,
+    "low": 5622,
+    "high": 6839,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 3968,
+    "low": 3569,
+    "high": 4597,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 3810,
+    "low": 3745,
+    "high": 3954,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 8186,
+    "low": 5675,
+    "high": 10122,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 9819,
+    "low": 8186,
+    "high": 10048,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7093,
+    "low": 5216,
+    "high": 8337,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 7993,
+    "low": 7239,
+    "high": 9874,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 5221,
+    "low": 5038,
+    "high": 5450,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5139,
+    "low": 5127,
+    "high": 5814,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5045,
+    "low": 4723,
+    "high": 5433,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 5045,
+    "low": 4723,
+    "high": 5433,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 636,
+    "low": 449,
+    "high": 936,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 532,
+    "low": 428,
+    "high": 913,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 688,
+    "low": 618,
+    "high": 1391,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 913,
+    "low": 450,
+    "high": 1003,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 257,
+    "low": 214,
+    "high": 287,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 885,
+    "low": 675,
+    "high": 1217,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 866,
+    "low": 571,
+    "high": 885,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1374,
+    "low": 1270,
+    "high": 1438,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 595,
+    "low": 523,
+    "high": 758,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "venueId": "chaifetz-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 610,
+    "low": 566,
+    "high": 845,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "venueId": "energizer-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 22423,
+    "low": 22423,
+    "high": 22423,
+    "games": 3,
+    "seasons": "2025"
+  }];
 
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
 export const SEASON_LEVELS: SeasonLevelRow[] = [
@@ -71265,7 +72358,561 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "ratio": 1.03,
     "games": 2
   }
-];
+,
+
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "avalanche",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "blackhawks",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "blue-jackets",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "canucks",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "capitals",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "coyotes",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "ducks",
+    "ratio": 0.964,
+    "games": 4
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "flames",
+    "ratio": 0.988,
+    "games": 4
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "flyers",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "golden-knights",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "hurricanes",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "islanders",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "jets",
+    "ratio": 0.986,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "kings",
+    "ratio": 0.982,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "kraken",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "lightning",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "mammoth",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "maple-leafs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "oilers",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "panthers",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "rangers",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "red-wings",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "sharks",
+    "ratio": 1.006,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "stars",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "utah-hc",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "blues",
+    "opponent": "wild",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "braves",
+    "ratio": 0.983,
+    "games": 10
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "brewers",
+    "ratio": 0.921,
+    "games": 20
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "cubs",
+    "ratio": 1.065,
+    "games": 21
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "d-backs",
+    "ratio": 0.973,
+    "games": 11
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "dodgers",
+    "ratio": 1.008,
+    "games": 9
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "giants",
+    "ratio": 0.906,
+    "games": 9
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "guardians",
+    "ratio": 0.962,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "mariners",
+    "ratio": 0.976,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "marlins",
+    "ratio": 0.907,
+    "games": 9
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "mets",
+    "ratio": 0.987,
+    "games": 11
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "nationals",
+    "ratio": 0.901,
+    "games": 9
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "orioles",
+    "ratio": 0.947,
+    "games": 7
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "padres",
+    "ratio": 0.979,
+    "games": 11
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "phillies",
+    "ratio": 1.012,
+    "games": 9
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "pirates",
+    "ratio": 0.893,
+    "games": 20
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "rangers",
+    "ratio": 0.889,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "rays",
+    "ratio": 1.073,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "red-sox",
+    "ratio": 0.931,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "reds",
+    "ratio": 0.906,
+    "games": 19
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "rockies",
+    "ratio": 0.912,
+    "games": 10
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "royals",
+    "ratio": 0.928,
+    "games": 10
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "cardinals",
+    "opponent": "white-sox",
+    "ratio": 1.033,
+    "games": 6
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "opponent": "charleston-so",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "opponent": "e-illinois",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "opponent": "se-missouri",
+    "ratio": 1.135,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "lindenwood-football",
+    "opponent": "tennessee-tech",
+    "ratio": 0.942,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "chicago-st",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "dayton",
+    "ratio": 1.026,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "duquesne",
+    "ratio": 1.084,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "fordham",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "g-washington",
+    "ratio": 1.041,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "la-salle",
+    "ratio": 1.037,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "loyola-chicago",
+    "ratio": 1.049,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "richmond",
+    "ratio": 1.09,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "saint-joseph-s",
+    "ratio": 1.113,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-mbb",
+    "opponent": "vcu",
+    "ratio": 1.042,
+    "games": 3
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "opponent": "davidson",
+    "ratio": 0.813,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "opponent": "dayton",
+    "ratio": 1.127,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "opponent": "fordham",
+    "ratio": 1.745,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "opponent": "loyola-chicago",
+    "ratio": 0.741,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "opponent": "austin",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "opponent": "kansas-city",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "opponent": "lafc",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "opponent": "salt-lake",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "opponent": "san-jose",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
+    "teamId": "st-louis-city-sc",
+    "opponent": "seattle",
+    "ratio": 1,
+    "games": 2
+  }];
 
 /** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */
 export const POSTSEASON_DRAWS: PostseasonRow[] = [

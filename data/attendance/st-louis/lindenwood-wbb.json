@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "teamId": "lindenwood-wbb",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "lindenwood-wbb",
+      "season": 2023,
+      "date": "2022-11-25",
+      "start": "13:00",
+      "opponent": "Manhattan",
+      "venueId": "global-credit-union-arena",
+      "attendance": 100,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

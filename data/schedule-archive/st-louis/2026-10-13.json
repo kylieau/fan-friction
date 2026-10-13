@@ -1,0 +1,327 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "metroName": "St. Louis",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:22:14.782Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-14-espn-st-louis-city-sc-761868",
+      "metroId": "st-louis",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "CITY SC vs. Vancouver",
+      "place": {
+        "type": "venue",
+        "venueId": "energizer-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "st-louis-city-sc",
+        "away": "vancouver"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22423,
+        "low": 22423,
+        "high": 22423,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-blues-401892544",
+      "metroId": "st-louis",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blues vs. Winnipeg Jets",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16938,
+        "low": 16579,
+        "high": 17280,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-blues-401892558",
+      "metroId": "st-louis",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blues vs. Golden Knights",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17110,
+        "low": 16747,
+        "high": 17455,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-lindenwood-football-401867689",
+      "metroId": "st-louis",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Lindenwood vs. Chicago St",
+      "place": {
+        "type": "venue",
+        "venueId": "harlen-c-hunter-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "lindenwood-football",
+        "away": "chicago-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3363,
+        "low": 2850,
+        "high": 3678,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-blues-401892573",
+      "metroId": "st-louis",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Blues vs. Hurricanes",
+      "broadcast": "CARNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "hurricanes"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18096,
+        "low": 18096,
+        "high": 18096,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-blues-401892588",
+      "metroId": "st-louis",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blues vs. Canadiens",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "canadiens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17179,
+        "low": 16814,
+        "high": 17525,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 8 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-14-espn-st-louis-city-sc-761868",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22423,
+        "low": 22423,
+        "high": 22423
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-blues-401892544",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16938,
+        "low": 16579,
+        "high": 17280
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-blues-401892558",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17110,
+        "low": 16747,
+        "high": 17455
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-lindenwood-football-401867689",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3363,
+        "low": 2850,
+        "high": 3678
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-blues-401892573",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18096,
+        "low": 18096,
+        "high": 18096
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-blues-401892588",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17179,
+        "low": 16814,
+        "high": 17525
+      }
+    }
+  ]
+}

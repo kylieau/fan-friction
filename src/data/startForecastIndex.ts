@@ -46397,6 +46397,118 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "st-louis",
+    "eventId": "2026-10-14-espn-st-louis-city-sc-761868",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 22423,
+      "low": 22423,
+      "high": 22423
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-20-espn-blues-401892544",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16938,
+      "low": 16579,
+      "high": 17280
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-22-espn-blues-401892558",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17110,
+      "low": 16747,
+      "high": 17455
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-espn-blues-401892573",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18096,
+      "low": 18096,
+      "high": 18096
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-espn-lindenwood-football-401867689",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 3363,
+      "low": 2850,
+      "high": 3678
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-27-espn-blues-401892588",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17179,
+      "low": 16814,
+      "high": 17525
+    }
+  },
+  {
     "metroId": "tampa",
     "eventId": "2026-10-12-mlb-849820",
     "date": "2026-10-12",

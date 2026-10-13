@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'ottawa-gatineau'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'ottawa-gatineau', 'st-louis'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -275,6 +275,16 @@ export const METROS: Record<string, Metro> = {
     name: 'Ottawa–Gatineau',
     timeZone: 'America/Toronto',
     center: [-75.72, 45.42],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/st-louis/st-louis-venue-table-answer.md): St. Louis city and county,
+  // St. Charles, and Metro East (Madison and St. Clair). One frame holds downtown, Forest Park and Maryland Heights;
+  // WWTR, St. Charles, Edwardsville and O'Fallon sit off the first view.
+  'st-louis': {
+    id: 'st-louis', code: 'STL',
+    name: 'St. Louis',
+    timeZone: 'America/Chicago',
+    center: [-90.20, 38.63],
     zoom: 10.5,
   },
 };

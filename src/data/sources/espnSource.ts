@@ -307,6 +307,17 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   // Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/). Ids and home venues checked against the feed Oct 13, 2026.
   { path: 'hockey/nhl', espnId: '14', metroId: 'ottawa-gatineau', teamId: 'ottawa-senators', sport: 'hockey' },
   { path: 'football/cfl', espnId: '87', metroId: 'ottawa-gatineau', teamId: 'ottawa-redblacks', sport: 'football' },
+  // St. Louis (docs/research/city-builds/st-louis/); ids checked against each team's schedule Oct 13, 2026.
+  { path: 'hockey/nhl', espnId: '19', metroId: 'st-louis', teamId: 'blues', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '21812', metroId: 'st-louis', teamId: 'st-louis-city-sc', sport: 'soccer' },
+  { path: 'football/ufl', espnId: '112651', metroId: 'st-louis', teamId: 'st-louis-battlehawks', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '139', metroId: 'st-louis', teamId: 'slu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '139', metroId: 'st-louis', teamId: 'slu-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '2565', metroId: 'st-louis', teamId: 'siue-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2565', metroId: 'st-louis', teamId: 'siue-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2815', metroId: 'st-louis', teamId: 'lindenwood-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2815', metroId: 'st-louis', teamId: 'lindenwood-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2815', metroId: 'st-louis', teamId: 'lindenwood-wbb', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -325,6 +336,7 @@ const ESPN_MLB_IDS: Record<string, string> = {
   rangers: '13',
   phillies: '22',
   brewers: '8',
+  cardinals: '138',
   rays: '30',
   astros: '18',
   'blue-jays': '14',
@@ -655,6 +667,18 @@ const VENUE_BY_NAME: Record<string, string> = {
   'victory field': 'victory-field',
   'bud and jackie sellick bowl': 'sellick-bowl',
   'the jungle': 'iu-indy-jungle',
+  'busch stadium': 'busch-stadium',
+  'enterprise center': 'enterprise-center',
+  'energizer park': 'energizer-park',
+  "the dome at america's center": 'dome-at-americas-center',
+  'dome at americas center': 'dome-at-americas-center',
+  'chaifetz arena': 'chaifetz-arena',
+  'harlen c. hunter stadium': 'harlen-c-hunter-stadium',
+  'hunter stadium': 'harlen-c-hunter-stadium',
+  'hermann stadium': 'hermann-stadium',
+  'robert r. hermann stadium': 'hermann-stadium',
+  'first community arena at the vadalabene center': 'siue-vadalabene-arena',
+  'vadalabene center': 'siue-vadalabene-arena',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
@@ -680,6 +704,11 @@ const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
     'toyota center': 'toyota-center',
     // Rice–Totten Stadium in Mississippi is a different building. Keep this name on Houston only.
     'rice stadium': 'first-community-stadium',
+  },
+  'st-louis': {
+    'hollywood casino amphitheatre': 'hollywood-casino-amphitheatre-stl',
+    'hollywood casino amphitheater': 'hollywood-casino-amphitheatre-stl',
+    'family arena': 'family-arena',
   },
 };
 

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-10-22",
+  "rows": [
+    {
+      "metroId": "st-louis",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:10.697Z",
+      "feelsLikeF": 73.2,
+      "tempF": 77.3,
+      "humidity": 43,
+      "windMph": 11.9,
+      "uvIndex": 0,
+      "precipProbability": 23,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 72,
+      "code": 2
+    }
+  ],
+  "days": [
+    {
+      "metroId": "st-louis",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:10.697Z",
+      "feelsLikeHighF": 78.8,
+      "feelsLikeLowF": 65.6,
+      "code": 3,
+      "precipProbability": 27,
+      "precipMm": 0
+    }
+  ]
+}

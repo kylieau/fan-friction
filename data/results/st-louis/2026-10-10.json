@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-blues-401892477",
+      "metroId": "st-louis",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 5
+      },
+      "away": {
+        "name": "Blue Jackets",
+        "score": 3
+      },
+      "attendance": 18096,
+      "capturedAt": "2026-10-13T07:22:11.107Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-10-10-espn-lindenwood-football-401871473",
+      "metroId": "st-louis",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "harlen-c-hunter-stadium",
+      "homeTeamId": "lindenwood-football",
+      "home": {
+        "name": "Lindenwood",
+        "score": 27
+      },
+      "away": {
+        "name": "SE Missouri",
+        "score": 38
+      },
+      "attendance": 5008,
+      "capturedAt": "2026-10-13T07:22:11.107Z",
+      "duration": {
+        "minutes": 220,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    }
+  ]
+}
