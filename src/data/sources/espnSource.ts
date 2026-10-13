@@ -59,6 +59,17 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '194', metroId: 'columbus', teamId: 'osu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '194', metroId: 'columbus', teamId: 'osu-wbb', sport: 'basketball' },
   { path: 'hockey/mens-college-hockey', espnId: '194', metroId: 'columbus', teamId: 'osu-mhockey', sport: 'hockey' },
+  // Detroit (docs/research/city-builds/detroit/); every id and home venue checked against the feed Oct 13, 2026.
+  { path: 'football/nfl', espnId: '8', metroId: 'detroit', teamId: 'lions', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '5', metroId: 'detroit', teamId: 'red-wings', sport: 'hockey' },
+  { path: 'basketball/nba', espnId: '8', metroId: 'detroit', teamId: 'pistons', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '130', metroId: 'detroit', teamId: 'michigan-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '130', metroId: 'detroit', teamId: 'michigan-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '130', metroId: 'detroit', teamId: 'michigan-wbb', sport: 'basketball' },
+  { path: 'hockey/mens-college-hockey', espnId: '130', metroId: 'detroit', teamId: 'michigan-mhockey', sport: 'hockey' },
+  { path: 'basketball/mens-college-basketball', espnId: '2174', metroId: 'detroit', teamId: 'detroit-mercy-mbb', sport: 'basketball' },
+  { path: 'soccer/usa.usl.1', espnId: '19179', metroId: 'detroit', teamId: 'detroit-city-fc', sport: 'soccer' },
+  { path: 'basketball/nba-development', espnId: '15', metroId: 'detroit', teamId: 'motor-city-cruise', sport: 'basketball' },
   // Tampa Bay (docs/research/city-builds/tampa/); every id and home venue checked against the feed Oct 12, 2026.
   { path: 'football/nfl', espnId: '27', metroId: 'tampa', teamId: 'buccaneers', sport: 'football' },
   { path: 'hockey/nhl', espnId: '20', metroId: 'tampa', teamId: 'lightning', sport: 'hockey' },
@@ -316,6 +327,7 @@ const ESPN_MLB_IDS: Record<string, string> = {
   rays: '30',
   astros: '18',
   'blue-jays': '14',
+  tigers: '6',
 };
 
 /**
@@ -627,6 +639,16 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Detroit (docs/research/city-builds/detroit/), as ESPN writes them on each team's own schedule (checked Oct 13, 2026).
+  'ford field': 'ford-field',
+  'comerica park': 'comerica-park',
+  'little caesars arena': 'little-caesars-arena',
+  'michigan stadium': 'michigan-stadium',
+  'crisler center': 'crisler-center',
+  'yost ice arena': 'yost-ice-arena',
+  'calihan hall': 'calihan-hall',
+  'keyworth stadium': 'keyworth-stadium',
+  'wayne state fieldhouse': 'wayne-state-fieldhouse',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

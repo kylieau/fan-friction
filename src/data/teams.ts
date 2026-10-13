@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|detroit|michigan|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -273,6 +273,19 @@ const LIST: Team[] = [
   team("lsuno-baseball", "LSU New Orleans Privateers Baseball", "LSUNO Baseball", "College baseball", "baseball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
   team("laketown-squadron", "Laketown Squadron", "Squadron", "NBA G League", "basketball", "new-orleans", "LKT"),
   team("new-orleans-jesters", "New Orleans Jesters", "Jesters", "NPSL", "soccer", "new-orleans", "JES"),
+  // Detroit (Oct 13, 2026; docs/research/city-builds/detroit/). ESPN/MLB ids checked against live schedules.
+  team("lions", "Detroit Lions", "Lions", "NFL", "football", "detroit", "DET"),
+  team("tigers", "Detroit Tigers", "Tigers", "MLB", "baseball", "detroit", "DET"),
+  team("red-wings", "Detroit Red Wings", "Red Wings", "NHL", "hockey", "detroit", "DET"),
+  team("pistons", "Detroit Pistons", "Pistons", "NBA", "basketball", "detroit", "DET"),
+  team("michigan-football", "Michigan Wolverines Football", "Michigan", "College football", "football", "detroit", "MICH", ["Wolverines"]),
+  team("michigan-mbb", "Michigan Wolverines Men's Basketball", "Michigan MBB", "College men's basketball", "basketball", "detroit", "MICH", ["Wolverines"]),
+  team("michigan-wbb", "Michigan Wolverines Women's Basketball", "Michigan WBB", "College women's basketball", "basketball", "detroit", "MICH", ["Wolverines"]),
+  team("michigan-mhockey", "Michigan Wolverines Men's Hockey", "Michigan Hockey", "College men's hockey", "hockey", "detroit", "MICH", ["Wolverines"]),
+  team("detroit-mercy-mbb", "Detroit Mercy Titans Men's Basketball", "Detroit Mercy MBB", "College men's basketball", "basketball", "detroit", "UDM", ["Titans", "Detroit Mercy"]),
+  team("detroit-city-fc", "Detroit City FC", "DCFC", "USL Championship", "soccer", "detroit", "DCFC"),
+  team("motor-city-cruise", "Motor City Cruise", "Cruise", "NBA G League", "basketball", "detroit", "MC"),
+  team("pwhl-detroit", "PWHL Detroit", "PWHL Detroit", "PWHL", "hockey", "detroit", "PWHL"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

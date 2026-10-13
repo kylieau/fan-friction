@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'detroit', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -247,6 +247,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-93.2, 44.96],
     zoom: 10.4,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/detroit/). Six-county Detroit–Warren–Dearborn MSA plus Ann Arbor
+  // and Windsor edge rooms. One frame holds District Detroit (Ford Field, Comerica Park, Little Caesars Arena);
+  // Ann Arbor, the amphitheatres and Hamtramck sit off the first view.
+  detroit: {
+    id: 'detroit', code: 'DET',
+    name: 'Detroit',
+    timeZone: 'America/Detroit',
+    center: [-83.05, 42.34],
+    zoom: 11.2,
   },
   // Covered Oct 12, 2026 (docs/research/city-builds/new-orleans/). Orleans Parish plus Jefferson Parish
   // (East Bank and West Bank). One frame holds the Superdome, Uptown, Gentilly, City Park and the Lakefront;
