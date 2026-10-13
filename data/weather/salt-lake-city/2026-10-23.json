@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-23",
+  "rows": [
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "america-first-field",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeF": 38.5,
+      "tempF": 45.4,
+      "humidity": 50,
+      "windMph": 5.9,
+      "uvIndex": 0.05,
+      "precipProbability": 17,
+      "precipMm": 0,
+      "shortwave": 8,
+      "cloudCover": 72,
+      "code": 2
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "america-first-field",
+      "date": "2026-10-23",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeF": 38.6,
+      "tempF": 44.7,
+      "humidity": 53,
+      "windMph": 4.1,
+      "uvIndex": 0,
+      "precipProbability": 17,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 32,
+      "code": 1
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "america-first-field",
+      "date": "2026-10-23",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeF": 38.4,
+      "tempF": 43.9,
+      "humidity": 55,
+      "windMph": 3,
+      "uvIndex": 0,
+      "precipProbability": 17,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 2,
+      "code": 0
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeF": 39.8,
+      "tempF": 46.1,
+      "humidity": 48,
+      "windMph": 4.4,
+      "uvIndex": 0.05,
+      "precipProbability": 18,
+      "precipMm": 0,
+      "shortwave": 9,
+      "cloudCover": 46,
+      "code": 1
+    }
+  ],
+  "days": [
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeHighF": 42,
+      "feelsLikeLowF": 34.6,
+      "code": 55,
+      "precipProbability": 20,
+      "precipMm": 4.5
+    }
+  ]
+}

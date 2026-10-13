@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-22",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "washington-dc",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:49.872Z",
+      "feelsLikeHighF": 73.6,
+      "feelsLikeLowF": 56.8,
+      "code": 3,
+      "precipProbability": 10,
+      "precipMm": 0
+    }
+  ]
+}

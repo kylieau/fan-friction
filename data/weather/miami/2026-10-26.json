@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-26",
+  "rows": [
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 84.1,
+      "tempF": 79.4,
+      "humidity": 79,
+      "windMph": 10.9,
+      "uvIndex": 0.05,
+      "precipProbability": 45,
+      "precipMm": 0.1,
+      "shortwave": 7,
+      "cloudCover": 100,
+      "code": 51
+    }
+  ],
+  "days": [
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeHighF": 84.3,
+      "feelsLikeLowF": 81.1,
+      "code": 95,
+      "precipProbability": 45,
+      "precipMm": 44.7
+    }
+  ]
+}

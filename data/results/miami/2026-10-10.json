@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-heat-401898397",
+      "metroId": "miami",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 124
+      },
+      "away": {
+        "name": "Timberwolves",
+        "score": 125
+      },
+      "attendance": 19600,
+      "capturedAt": "2026-10-13T07:19:49.048Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    },
+    {
+      "eventId": "2026-10-10-espn-inter-miami-cf-761847",
+      "metroId": "miami",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nu-stadium",
+      "homeTeamId": "inter-miami-cf",
+      "home": {
+        "name": "Inter Miami",
+        "score": 4
+      },
+      "away": {
+        "name": "D.C. United",
+        "score": 0
+      },
+      "capturedAt": "2026-10-13T07:19:49.048Z"
+    },
+    {
+      "eventId": "2026-10-10-espn-miami-fc-401842282",
+      "metroId": "miami",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pitbull-stadium",
+      "homeTeamId": "miami-fc",
+      "home": {
+        "name": "Miami FC",
+        "score": 0
+      },
+      "away": {
+        "name": "Loudoun",
+        "score": 2
+      },
+      "capturedAt": "2026-10-13T07:19:49.048Z"
+    },
+    {
+      "eventId": "2026-10-10-espn-panthers-401891805",
+      "metroId": "miami",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 1
+      },
+      "away": {
+        "name": "Wild",
+        "score": 4
+      },
+      "attendance": 19856,
+      "capturedAt": "2026-10-13T07:19:49.048Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "18:08"
+    }
+  ]
+}
