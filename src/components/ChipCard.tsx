@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ByLine, CrowdMark, EventFrictionPill, OccasionTag } from './EventTags';
-import { displayedCrowdCount, VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { displayedCrowdCount, feelsLikeLabel, isOpenAir, VENUES, venueNameOn, weatherForEvent, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
@@ -18,6 +18,9 @@ import type { FeedItem } from '../data';
 export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Friends with a status here, when Activity is on; never you. */ friends?: FeedItem[]; onOpen?: () => void }) {
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
   const size = displayedCrowdCount(event);
+  // The start-hour feels-like, a raw number, on open-air venues only; only on this card and the event page (Kylie, Oct 4).
+  const row = isOpenAir(event) ? weatherForEvent(event) : undefined;
+  const degrees = row ? feelsLikeLabel(row, event.metroId) : null;
   const segments = friends ? cardSegments(friends) : [];
   return (
     <Link to={eventPath(event.id, event.metroId)} state={{ fromMap: true }} className="chip-card" onClick={onOpen}>
@@ -26,7 +29,7 @@ export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Fr
           {event.assessment && <OccasionTag occasion={event.assessment.occasion} />}
           <span className="log-title">{listTitle(event)}</span>
         </span>
-        <span className="log-facts">{[venue, event.start ? clockTime(event.start) : 'Time TBA'].filter(Boolean).join(' · ')}</span>
+        <span className="log-facts">{[venue, event.start ? clockTime(event.start) : 'Time TBA', degrees].filter(Boolean).join(' · ')}</span>
         <span className="chip-card-tags">
           <EventFrictionPill event={event} />
           <ByLine event={event} />
