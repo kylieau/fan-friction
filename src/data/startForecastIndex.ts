@@ -17401,6 +17401,62 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-16-espn-pacers-401914126",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-17-espn-butler-football-401868213",
+    "date": "2026-10-17",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-18-espn-colts-401873003",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-23-espn-pacers-401909844",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
     "metroId": "kansas-city",
     "eventId": "2026-10-16-tm-vvG1bZ_2Txyttj",
     "date": "2026-10-16",
