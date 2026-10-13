@@ -64460,9 +64460,7 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 2622,
     "games": 5,
     "seasons": "2025–2026"
-  }
-,
-
+  },
   {
     "metroId": "st-louis",
     "teamId": "blues",
@@ -65554,7 +65552,8 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 22423,
     "games": 3,
     "seasons": "2025"
-  }];
+  }
+];
 
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
 export const SEASON_LEVELS: SeasonLevelRow[] = [
@@ -96998,9 +96997,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "unc-wilmington",
     "ratio": 0.935,
     "games": 2
-  }
-,
-
+  },
   {
     "metroId": "st-louis",
     "teamId": "blues",
@@ -97553,7 +97550,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "seattle",
     "ratio": 1,
     "games": 2
-  }];
+  }
+];
 
 /** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */
 export const POSTSEASON_DRAWS: PostseasonRow[] = [
