@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "teamId": "robert-morris-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "robert-morris-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "12:00",
+      "opponent": "Dayton",
+      "venueId": "joe-walton-stadium",
+      "attendance": 3207,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "12:00",
+      "opponent": "ETSU",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2629,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "12:00",
+      "opponent": "Gardner-Webb",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2416,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "12:00",
+      "opponent": "NC A&T",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2123,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2022,
+      "date": "2022-11-19",
+      "start": "12:00",
+      "opponent": "Bryant",
+      "venueId": "joe-walton-stadium",
+      "attendance": 1076,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:00",
+      "opponent": "Saint Francis",
+      "venueId": "joe-walton-stadium",
+      "attendance": 3412,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "15:00",
+      "opponent": "VA Lynchburg",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2351,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "12:00",
+      "opponent": "Howard",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2207,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "12:00",
+      "opponent": "Tennessee Tech",
+      "venueId": "joe-walton-stadium",
+      "attendance": 1727,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "12:00",
+      "opponent": "Charleston So",
+      "venueId": "joe-walton-stadium",
+      "attendance": 1638,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "12:00",
+      "opponent": "E Illinois",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2118,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:00",
+      "opponent": "Edinboro",
+      "venueId": "joe-walton-stadium",
+      "attendance": 3581,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "12:00",
+      "opponent": "Mercyhurst",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2393,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "15:00",
+      "opponent": "Delaware St",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2234,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "14:00",
+      "opponent": "Saint Francis",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2657,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2024,
+      "date": "2024-11-02",
+      "start": "12:00",
+      "opponent": "Merrimack",
+      "venueId": "joe-walton-stadium",
+      "attendance": 1091,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "12:00",
+      "opponent": "Stonehill",
+      "venueId": "joe-walton-stadium",
+      "attendance": 862,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:00",
+      "opponent": "West Liberty",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2575,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "14:00",
+      "opponent": "Dayton",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2389,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "14:00",
+      "opponent": "C Connecticut",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2789,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "12:00",
+      "opponent": "Wagner",
+      "venueId": "joe-walton-stadium",
+      "attendance": 1267,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "14:00",
+      "opponent": "Duquesne",
+      "venueId": "joe-walton-stadium",
+      "attendance": 2716,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:00",
+      "opponent": "W Virginia St",
+      "venueId": "joe-walton-stadium",
+      "attendance": 1583,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "robert-morris-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "14:00",
+      "opponent": "Norfolk St",
+      "venueId": "joe-walton-stadium",
+      "attendance": 3001,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

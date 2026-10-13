@@ -357,6 +357,16 @@ const VENUE_BY_NAME = {
   'xfinity mobile arena': 'xfinity-mobile-arena',
   'wells fargo center': 'xfinity-mobile-arena',
   'subaru park': 'subaru-park',
+  'acrisure stadium': 'acrisure-stadium',
+  'heinz field': 'acrisure-stadium',
+  'pnc park': 'pnc-park',
+  'ppg paints arena': 'ppg-paints-arena',
+  'consol energy center': 'ppg-paints-arena',
+  'petersen events center': 'petersen-events-center',
+  'upmc cooper fieldhouse': 'upmc-cooper-fieldhouse',
+  'upmc events center': 'upmc-events-center',
+  'arthur j. rooney athletic field': 'arthur-j-rooney-athletic-field',
+  'joe walton stadium': 'joe-walton-stadium',
   'liacouras center': 'liacouras-center',
   'finneran pavilion': 'finneran-pavilion',
   'the palestra': 'the-palestra',
@@ -624,6 +634,10 @@ const VENUE_BY_NAME = {
 };
 
 const METRO_VENUE_BY_NAME = {
+  pittsburgh: {
+    'highmark stadium': 'fnb-stadium',
+    'f.n.b. stadium': 'fnb-stadium',
+  },
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
   nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },
