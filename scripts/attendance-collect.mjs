@@ -618,6 +618,16 @@ const VENUE_BY_NAME = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Detroit (docs/research/city-builds/detroit/). Keep in step with espnSource.ts.
+  'ford field': 'ford-field',
+  'comerica park': 'comerica-park',
+  'little caesars arena': 'little-caesars-arena',
+  'michigan stadium': 'michigan-stadium',
+  'crisler center': 'crisler-center',
+  'yost ice arena': 'yost-ice-arena',
+  'calihan hall': 'calihan-hall',
+  'keyworth stadium': 'keyworth-stadium',
+  'wayne state fieldhouse': 'wayne-state-fieldhouse',
 };
 
 const METRO_VENUE_BY_NAME = {

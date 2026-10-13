@@ -91,6 +91,28 @@ Zones (gridlock): **District Detroit** — Ford Field, Comerica Park, Little Cae
 11. **PWHL Detroit** 2026–27 LCA schedule — wire when league feed exists?
 12. Ann Arbor and Windsor edge labels on the map vs one “Detroit” frame?
 
-## Checks
+## Feeds and collected files (Oct 13, 2026)
 
-Filled in after `npm run build`, `npm run city-build-check`, attendance collect/calibrate, venue-access, weather, archive, results, and `node scripts/storage-check.mjs` on Oct 13, 2026.
+| Source | Result |
+|---|---|
+| MLB | Tigers 116, venue 2394 → `tigers.json` 414 home games with counts |
+| ESPN NFL | Lions 8 → 46 games (sparse attendance field) |
+| ESPN NHL | Red Wings 5 → 184 games at Little Caesars Arena |
+| ESPN NBA | Pistons 8 → 180 games at LCA |
+| ESPN Michigan | Football 36, MBB 71, WBB 63, men's hockey 1 (ESPN attendance mostly empty for hockey) |
+| ESPN Detroit Mercy | 52 games at Calihan Hall |
+| ESPN USL | DCFC 19179 → 79 games at Keyworth Stadium |
+| ESPN G League | Motor City Cruise 15 → 59 games at Wayne State Fieldhouse |
+| Ticketmaster | No key in this environment; archive used ESPN only (9 events Oct 13–27) |
+
+Expected draws after calibrate: **154** draw rows, **1** season level, **136** opponent ratios, **12** postseason rows for Detroit only. `EXPECTED_DRAWS`, `SEASON_LEVELS`, and `OPPONENT_RATIOS` for other metros match `origin/main` byte-for-byte in parsed form; `POSTSEASON_DRAWS` for other metros was restored from `main` after calibrate rewrote playoff pools (Detroit rows prepended).
+
+## Checks (Oct 13, 2026)
+
+- `npm run build` passed.
+- `npm run city-build-check` passed (Detroit included).
+- `node scripts/storage-check.mjs` passed.
+- `node scripts/venue-access.mjs --metro=detroit` — 15 rooms at or above 5,000 measured; none meet strained rule.
+- Weather: 15 Detroit day files added; global `weatherIndex.ts` row count updated.
+- Results: 2 finals Oct 10–13 written to `resultsIndex.ts`.
+- Schedule archive: `data/schedule-archive/detroit/2026-10-13.json` (9 events).

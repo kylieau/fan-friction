@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "metroName": "Detroit",
+  "timeZone": "America/Detroit",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:23:44.120Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-red-wings-401892488",
+      "metroId": "detroit",
+      "date": "2026-10-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Red Wings vs. Devils",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18874,
+        "low": 18347,
+        "high": 19301,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-15-espn-red-wings-401892508",
+      "metroId": "detroit",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Red Wings vs. Flyers",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "flyers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18686,
+        "low": 18165,
+        "high": 19109,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-pistons-401908946",
+      "metroId": "detroit",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pistons vs. Raptors",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 10450,
+        "low": 9461,
+        "high": 11318,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 4 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-michigan-football-401858490",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Penn State",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "michigan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "michigan-football",
+        "away": "penn-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-red-wings-401892525",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Wings vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19515,
+        "low": 18180,
+        "high": 19515,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-pistons-401909088",
+      "metroId": "detroit",
+      "date": "2026-10-20",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Pistons vs. Celtics",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "celtics"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19225,
+        "low": 18400,
+        "high": 20140,
+        "fromCrowds": true,
+        "games": 40,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 40 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-michigan-mhockey-401905027",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Western Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "yost-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "michigan-mhockey",
+        "away": "western-michigan"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-michigan-football-401858496",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "michigan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "michigan-football",
+        "away": "indiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-lions-401873020",
+      "metroId": "detroit",
+      "date": "2026-10-25",
+      "start": "16:25",
+      "kind": "game",
+      "title": "Lions vs. Packers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "lions",
+        "away": "packers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 64174,
+        "low": 63739,
+        "high": 64430,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 13 games, 2023–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-red-wings-401892488",
+      "date": "2026-10-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18874,
+        "low": 18347,
+        "high": 19301
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-red-wings-401892508",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18686,
+        "low": 18165,
+        "high": 19109
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-pistons-401908946",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10450,
+        "low": 9461,
+        "high": 11318
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-michigan-football-401858490",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-red-wings-401892525",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Michigan Wolverines vs. Penn State 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19515,
+        "low": 18180,
+        "high": 19515
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-pistons-401909088",
+      "date": "2026-10-20",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19225,
+        "low": 18400,
+        "high": 20140
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-michigan-mhockey-401905027",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-michigan-football-401858496",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-lions-401873020",
+      "date": "2026-10-25",
+      "start": "16:25",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 64174,
+        "low": 63739,
+        "high": 64430
+      }
+    }
+  ]
+}
