@@ -7475,3 +7475,8 @@ button.back-link {
   left: 0;
   transform: none;
 }
+
+/* A row's chip does not count toward the status line's height, so a tagged row is as tall as a plain one. */
+.status-line .tag-chip.is-row {
+  margin: -4px 0;
+}

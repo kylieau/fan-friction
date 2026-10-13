@@ -197,4 +197,6 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Seats:** only on Attending and Attended; until Kylie answers the storage question they are editable on Attended stubs only.
 - **"The day" / "The night":** "The night" for starts at 5 pm or later, otherwise "The day" (also with no start time). Kylie accepted this under "everything else as recommended" (Oct 13); the wording stays the builder's.
 - **List Activity switch:** follows the Map sheet's stored Friends-activity setting; no second toggle.
+- **Home's first-event sentence:** "Been to a game or show? Stub your first event." (was "Log your first event."): build 3 §4.4 makes "+ Stub it" the logging copy everywhere, later than her Oct 9 line.
+- **Seats caps:** a generous sanity limit (40 / 20 / 20), not a fit to a form; "Sec" is added only when the section is a bare number.
 - **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).

@@ -214,8 +214,8 @@ export function HomeScreen() {
 
       {/* A new user (nothing saved or logged): one line and the Log button (Kylie, Oct 9, 6.4, V3). */}
       {newUser && (
-        <section className="card home-first" aria-label="Log your first event">
-          <div className="card-title">Been to a game or show? Log your first event.</div>
+        <section className="card home-first" aria-label="Stub your first event">
+          <div className="card-title">Been to a game or show? Stub your first event.</div>
           <Link to="/you/add" className="gold-button small">
             + Stub it
           </Link>

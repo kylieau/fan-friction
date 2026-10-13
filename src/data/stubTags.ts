@@ -84,8 +84,8 @@ export function retag<T extends { userTags?: string[] }>(rows: readonly T[], ren
 // ---------- Seats (build notes 4, "Stub tags: suggestions" 7) ----------
 
 
-/** Longest section, row and seat: "Loge 132", "AA", "4–5". */
-export const SEAT_LIMITS = { section: 16, row: 6, seat: 6 } as const;
+/** A generous sanity cap per part, not a fit to a form: "UPPER RESERVED 31", "101-102", "Pavilion Lawn Terrace". */
+export const SEAT_LIMITS = { section: 40, row: 20, seat: 20 } as const;
 
 /** Seats as they are stored: trimmed, capitals, capped; undefined when every part is empty. */
 export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
@@ -108,5 +108,7 @@ export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
 /** "Sec 112 · Row 8 · Seat 4", "Floor · Row 3", "GA". */
 export function seatsLine(seats: Seats | undefined): string {
   if (!seats) return '';
-  return [seats.area, seats.section && `Sec ${seats.section}`, seats.row && `Row ${seats.row}`, seats.seat && `Seat ${seats.seat}`].filter(Boolean).join(' · ');
+  // "Sec" only for a bare number; a name ("Lawn", "Suite 42", "Loge Box 12") reads as it is.
+  const section = seats.section ? (/^\d+[A-Z]?$/.test(seats.section) ? `Sec ${seats.section}` : seats.section) : undefined;
+  return [seats.area, section, seats.row && `Row ${seats.row}`, seats.seat && `Seat ${seats.seat}`].filter(Boolean).join(' · ');
 }
