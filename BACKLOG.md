@@ -64,7 +64,7 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 - **Famous dates → Stats (V10, Kylie, Oct 12):** hidden from the month sheet and `?view=calendar` in build 4; the code and data stay. Rehome it in the Stats pass (Mock Mosaic).
 - **A setting to keep small rooms out of the Explore List (Kylie, Oct 13):** the List shows every event at a known venue, small rooms muted, like the Map. She may want a setting (not just an on-page filter) that keeps rooms under the friction floor out. Open; needs a decision on where it lives and whether it also applies to the Map.
 - **Seats fit across venues (Kylie, Oct 13):** research prompt written, `docs/research/topics/seat-fields-prompt.md`; run it, then adjust the field set (GA / Floor / Pit plus Section / Row / Seat, caps lifted to 40 / 20 / 20 meanwhile).
-- **Two "+N"s on one Map chip:** the corner badge (events hidden under the chip) and the friend line ("Sam +1"). Options sent to Kylie (Oct 13); waiting for her pick.
+- **Two "+N"s on one Map chip: closed (Kylie, Oct 13): keep today's look.** The corner badge (events hidden under the chip) and the friend line ("Sam +1") both stay "+N"; no change built.
 - **Top tags (T11), "Went with", team colors on tags:** Stats pass or later.
 - **Seats storage:** option (a) accepted by Kylie (Oct 13): seats only on Attended stubs. Past seats sit in the stub's `data`, readable by approved followers' apps though nothing shows them; a private column would need a migration.
 - **Signed-in tags round-trip not run:** `userTags`, `seats` and `favoriteCities` ride in the existing `data` columns and no migration rewrites them; a one-minute phone check (add a tag, star a city, enter seats, sign out and in) is still to do.

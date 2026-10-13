@@ -34,13 +34,13 @@ All of `src/` named under Current state, `scripts/catalog-write.mjs` (rows filed
 
 ## Kylie's manual steps
 1. **Phone check after the deploy (one minute):** add a tag, star a city, enter seats on an Attended stub, then sign out and back in; confirm each is still there (the signed-in round-trip was never run; the private test session was blocked).
-2. **Pick the "+N" option** on a chip with both a hidden-event badge and a friend count (screenshot sent Oct 13).
+2. ~~Pick the "+N" option~~ Closed (Kylie, Oct 13): keep today's look.
 3. **Run the seat-fields research** (`docs/research/topics/seat-fields-prompt.md`) so GA / Floor / Pit plus Section / Row / Seat can be checked against every room.
 4. Where-watched privacy check, the tester interview follow-ups (C034), the phone checklist (K17): as listed in BACKLOG.
 
 ## Open (details in BACKLOG)
 1. **Sol's check-only pass** (`docs/build-4/SOL-CHECK-PROMPT.md`) can run now that both slices are merged.
-2. **Kylie's open items:** the "+N" pick; seats research; a setting (not just a filter) to keep small rooms out of the List (BACKLOG); K23 Home's place and K24 Faves cards (deferred); build 5 (city names and codes, team colors) and the next formula pass (open-site Tier A, scoring cap, car-share defaults).
+2. **Kylie's open items:** seats research (running); a setting (not just a filter) to keep small rooms out of the List (BACKLOG); K23 Home's place and K24 Faves cards (deferred); build 5 (city names and codes, team colors) and the next formula pass (open-site Tier A, scoring cap, car-share defaults).
 3. **Build 3 flags (section F)** and the city follow-ups under BACKLOG › Next.
 
 **Next command to run:**

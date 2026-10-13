@@ -121,7 +121,7 @@ The Map's date button and range dropdown are now one When control: Today, Next 7
 - Polish still open: the sheet's drag handle stays visible when no chip is selected only as a thin bar (hidden entirely now); "Local competition" bars sit under "Up against" and may be redundant; the Favorites "By date" heading's read uses the first row's city when rows span cities.
 
 ### Oct 13, 2026: build 4 (Claude Code slice; raised by the builder, for Kylie to sort)
-- **Structural: two different "+N"s on one Explore chip.** The corner badge (events hidden under the chip, C047) and the friend line's "Sam +1" (one more friend, V06). Three options were sent as a screenshot (Oct 13): badge says "N more here", badge as a stack with a count, or the friend line says "Sam & 1". Waiting for her pick.
+- **Structural: two different "+N"s on one Explore chip.** The corner badge (events hidden under the chip, C047) and the friend line's "Sam +1" (one more friend, V06). Three options were sent as a screenshot (Oct 13); **Kylie chose to keep today's look** (both stay "+N"). Closed, nothing built.
 - **Structural: a setting to keep small rooms out of the List** (and maybe the Map): see BACKLOG.
 - **Polish: the Today pill floats over row text** in the List, as the board draws it.
 - **Fixed, for the record:** hand-added plans have a page (tags, Remove); Home's first-event sentence reads "Stub your first event"; a tagged Stubs row is as tall as a plain one.
