@@ -32,7 +32,7 @@ export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
   { metroId: 'chicago', capturedOn: '2026-10-10', from: '2026-10-10', through: '2026-10-24', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'chicago', capturedOn: '2026-10-11', from: '2026-10-11', through: '2026-10-25', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'chicago', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
-  { metroId: 'cleveland', capturedOn: '2026-10-13', from: '2026-10-13', through: '2026-10-27', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
+  { metroId: 'cleveland', capturedOn: '2026-10-13', from: '2026-10-13', through: '2026-10-27', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'columbus', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'dallas-fort-worth', capturedOn: '2026-10-07', from: '2026-10-07', through: '2026-10-21', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'dallas-fort-worth', capturedOn: '2026-10-08', from: '2026-10-08', through: '2026-10-22', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
