@@ -2214,6 +2214,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "16:25"
   },
   {
+    "eventId": "2026-10-10-espn-nc-state-football-401858260",
+    "metroId": "raleigh-durham",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "carter-finley-stadium",
+    "homeTeamId": "nc-state-football",
+    "home": {
+      "name": "NC State",
+      "score": 14
+    },
+    "away": {
+      "name": "Wake Forest",
+      "score": 38
+    },
+    "attendance": 56919,
+    "capturedAt": "2026-10-13T07:26:37.075Z",
+    "duration": {
+      "minutes": 190,
+      "kind": "estimated"
+    },
+    "startedAt": "12:09"
+  },
+  {
+    "eventId": "2026-10-10-espn-nccu-football-401867980",
+    "metroId": "raleigh-durham",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "o-kelly-riddick-stadium",
+    "homeTeamId": "nccu-football",
+    "home": {
+      "name": "NC Central",
+      "score": 14
+    },
+    "away": {
+      "name": "William & Mary",
+      "score": 17
+    },
+    "attendance": 11735,
+    "capturedAt": "2026-10-13T07:26:37.075Z",
+    "duration": {
+      "minutes": 196,
+      "kind": "estimated"
+    },
+    "startedAt": "13:01"
+  },
+  {
     "eventId": "2026-10-10-espn-sacramento-republic-401842277",
     "metroId": "sacramento",
     "date": "2026-10-10",

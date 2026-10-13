@@ -40191,6 +40191,76 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-13-espn-hurricanes-401892491",
+    "date": "2026-10-13",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:26:31.134Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-17-espn-duke-football-401858266",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-13T07:26:31.134Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Courage vs. Wave 18 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-17-espn-nc-courage-401854023",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:31.134Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Duke vs. North Carolina 18 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-24-espn-unc-football-401858275",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:31.134Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "raleigh-durham",
+    "eventId": "2026-10-27-espn-hurricanes-401892586",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:26:31.134Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
     "metroId": "sacramento",
     "eventId": "2026-10-13-espn-sacramento-kings-401901826",
     "date": "2026-10-13",
