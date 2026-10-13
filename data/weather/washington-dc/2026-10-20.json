@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-20",
+  "rows": [
+    {
+      "metroId": "washington-dc",
+      "venueId": "city",
+      "date": "2026-10-20",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:49.872Z",
+      "feelsLikeF": 65.5,
+      "tempF": 65.6,
+      "humidity": 62,
+      "windMph": 1.7,
+      "uvIndex": 0,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 2,
+      "cloudCover": 44,
+      "code": 1
+    }
+  ],
+  "days": [
+    {
+      "metroId": "washington-dc",
+      "venueId": "city",
+      "date": "2026-10-20",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:49.872Z",
+      "feelsLikeHighF": 70,
+      "feelsLikeLowF": 53.7,
+      "code": 3,
+      "precipProbability": 2,
+      "precipMm": 0
+    }
+  ]
+}

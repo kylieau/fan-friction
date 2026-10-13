@@ -84,12 +84,27 @@ const SCALE = 7.5;
 // downtown and campus stadiums share a rail spine. Estimated car shares, including Allianz,
 // Mystic Lake and the State Fair grandstand, stay in the research.
 // No venue override is wired (same rule as Milwaukee and Tampa).
+// Cleveland is a hub (research, Oct 12, 2026, docs/research/city-builds/cleveland/cleveland-city-type-answer.md):
+// capacity-weighted core about 0.89 car-involved; downtown clusters share approaches. Estimated car shares are wired
+// on the venues the answer numbered; none is a measured mode split.
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
 // Portland is a hub (research, Oct 12, 2026, docs/research/city-builds/portland/portland-city-type-answer.md):
 // measured Providence Park splits and estimated Rose Quarter, Ridgefield and Hillsboro overrides; Theater of the Clouds is not a room.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', portland: 'hub' };
+// San Antonio is sprawl (research, Oct 12, 2026, docs/research/city-builds/san-antonio/san-antonio-city-type-answer.md):
+// no rail, event transit is mostly park-and-ride (car-involved), and outlying rooms estimate 0.95+ car.
+// Estimated venue car shares are wired on each room (C04, Oct 12); Alamodome P&R bounds are measured rides, not a full split.
+// Edmonton is a hub (research, Oct 12, 2026, docs/research/city-builds/edmonton/edmonton-city-type-answer.md): LRT-linked
+// downtown and Commonwealth/EXPO clusters. Estimated car shares for Rogers Place and Commonwealth are wired on those rooms (C04, Oct 12).
+// Ottawa–Gatineau is a hub (research, Oct 12, 2026, docs/research/city-builds/ottawa-gatineau/ottawa-gatineau-city-type-answer.md):
+// Kanata is car-dominant while Lansdowne and LeBreton run much lower; venue carShare overrides carry the sourced estimates.
+// Indianapolis is sprawl (research, Oct 12, 2026, docs/research/city-builds/indianapolis/indianapolis-city-type-answer.md):
+// event transit use is tiny where bounded; suburban rooms are parking-led. Estimated car shares are wired on venues (C04, Oct 12).
+// Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
+// downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
+// values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl', portland: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -124,6 +139,20 @@ const ZONE_NAMES: Record<string, string> = {
   'lincoln-financial-field': 'South Philadelphia Sports Complex',
   'citizens-bank-park': 'South Philadelphia Sports Complex',
   'xfinity-mobile-arena': 'South Philadelphia Sports Complex',
+  // Cleveland Gateway cluster (city-type answer §7).
+  'progressive-field': 'Gateway District',
+  'rocket-arena': 'Gateway District',
+  'wolstein-center': 'Gateway District',
+  'huntington-bank-field': 'Lakefront',
+  'public-hall-cleveland': 'Lakefront',
+  'jacobs-pavilion': 'Flats West Bank',
+  'keybank-state-theatre': 'Playhouse Square',
+  'connor-palace': 'Playhouse Square',
+  'mimi-ohio-theatre': 'Playhouse Square',
+  // Navy Yard / Buzzard Point / Wharf (city-type answer §7.5): South Capitol, M St SE/SW, Navy Yard and Waterfront stations.
+  'nationals-park': 'Navy Yard',
+  'audi-field': 'Navy Yard',
+  'the-anthem-dc': 'Navy Yard',
   // Columbus clusters that share approaches (city-type answer §5b). Distance still forms the zone.
   'nationwide-arena': 'Arena District',
   'scottsmiracle-gro-field': 'Arena District',
@@ -143,6 +172,15 @@ const ZONE_NAMES: Record<string, string> = {
   'celeste-center': 'Ohio Expo Center',
   // Nashville. Downtown rooms share the East Bank lots and the river bridges; the fairgrounds rooms share one campus.
   'nissan-stadium': 'Downtown',
+  // Indianapolis
+  'lucas-oil-stadium': 'Downtown',
+  'gainbridge-fieldhouse': 'Downtown',
+  'victory-field': 'White River State Park',
+  'everwise-amphitheater': 'White River State Park',
+  'indianapolis-motor-speedway': 'Speedway',
+  'ruoff-music-center': 'Noblesville',
+  'fishers-event-center': 'Fishers',
+  'corteva-coliseum': 'Fairgrounds',
   'geodis-park': 'Fairgrounds',
   'firstbank-stadium': 'Vanderbilt',
   'floyd-stadium': 'MTSU',
@@ -287,6 +325,38 @@ const ZONE_NAMES: Record<string, string> = {
   'providence-park': 'Goose Hollow',
   'cascades-amphitheater': 'Ridgefield',
   'anderson-arena': 'St. Thomas',
+  // San Antonio clusters (city-type answer §8): downtown / Alamodome; east-side grounds; isolated singles.
+  alamodome: 'Downtown',
+  'frost-bank-center': 'East Side',
+  'freeman-coliseum': 'East Side',
+  'tobin-center': 'Downtown',
+  'majestic-theatre-sa': 'Downtown',
+  'lila-cockrell-theatre': 'Downtown',
+  'the-espee': 'Downtown',
+  'toyota-field': 'Northeast',
+  'wolff-stadium': 'West Side',
+  'boeing-center-tech-port': 'Port San Antonio',
+  'whitewater-amphitheater': 'Comal County',
+  'benson-stadium': 'UIW',
+  'utsa-convocation-center': 'UTSA',
+  'rogers-place': 'ICE District',
+  'downtown-community-arena': 'ICE District',
+  'commonwealth-stadium': 'Exhibition Lands',
+  'clarke-stadium': 'Exhibition Lands',
+  'edmonton-expo-arena': 'Exhibition Lands',
+  // Salt Lake City clusters (city-type answer §5c): downtown arena district, Fairpark, university campus.
+  'delta-center': 'Downtown',
+  'conference-center-slc': 'Downtown',
+  'abravanel-hall': 'Downtown',
+  'eccles-theater-slc': 'Downtown',
+  'capitol-theatre-slc': 'Downtown',
+  'days-of-47-arena': 'Fairpark',
+  'rice-eccles-stadium': 'University of Utah',
+  'jon-m-huntsman-center': 'University of Utah',
+  'utah-first-credit-union-amphitheatre': 'West Valley City',
+  'maverik-center': 'West Valley City',
+  'america-first-field': 'Sandy',
+  'ballpark-at-america-first-square': 'Daybreak',
 };
 
 export interface Zone {

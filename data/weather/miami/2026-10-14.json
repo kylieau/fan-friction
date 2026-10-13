@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-14",
+  "rows": [
+    {
+      "metroId": "miami",
+      "venueId": "nu-stadium",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 86,
+      "tempF": 82.2,
+      "humidity": 66,
+      "windMph": 9.2,
+      "uvIndex": 0.25,
+      "precipProbability": 18,
+      "precipMm": 0,
+      "shortwave": 19,
+      "cloudCover": 55,
+      "code": 2
+    },
+    {
+      "metroId": "miami",
+      "venueId": "nu-stadium",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 86.1,
+      "tempF": 82.2,
+      "humidity": 70,
+      "windMph": 11.1,
+      "uvIndex": 0,
+      "precipProbability": 18,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 42,
+      "code": 0
+    },
+    {
+      "metroId": "miami",
+      "venueId": "nu-stadium",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 86.8,
+      "tempF": 83.1,
+      "humidity": 70,
+      "windMph": 13.1,
+      "uvIndex": 0,
+      "precipProbability": 13,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 42,
+      "code": 1
+    },
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 85.5,
+      "tempF": 81.7,
+      "humidity": 67,
+      "windMph": 9.4,
+      "uvIndex": 0.25,
+      "precipProbability": 16,
+      "precipMm": 0,
+      "shortwave": 19,
+      "cloudCover": 27,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeHighF": 92.8,
+      "feelsLikeLowF": 76.5,
+      "code": 1,
+      "precipProbability": 16,
+      "precipMm": 0
+    }
+  ]
+}

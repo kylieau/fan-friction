@@ -1,0 +1,6488 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "teamId": "indianapolis-indians",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-03-31",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 8095,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 4012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 4240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 3791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "11:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 6211,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 5239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 5034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 6288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 3445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 3993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 3078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "11:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6973,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 5254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 8245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 5814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 4968,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "11:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 13186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 12362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": null,
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 12362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 10234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "18:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 9403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 5364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8350,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 5770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6925,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 9454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 8562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": null,
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 8245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 13312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 10166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 14130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 6033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 6685,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 13360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 9408,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:35",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 8794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 10610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 6627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8736,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 11533,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 11006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 10739,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 5895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 6705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": null,
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 6705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 10048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 10457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:35",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 7239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 5670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 5733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 9990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 10218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 10773,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 4612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 4338,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6058,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 11321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 6530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "13:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 6167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "18:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 6018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:05",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 8810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "18:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 9414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 8061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 9439,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 5111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-04",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 2113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 4376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": null,
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 5111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:35",
+      "opponent": "Redbirds",
+      "venueId": "victory-field",
+      "attendance": 4134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 4135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "12:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 4066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 6528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 5242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 5960,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 11918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "18:05",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 6237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "11:05",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 10991,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 3854,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 5197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 9541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 9367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 13311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": null,
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 13311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": null,
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-27",
+      "start": "18:15",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 7614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "17:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 4904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 9629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 8924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 7318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6082,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 8278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 11287,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 11162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 10384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 10303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6988,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 13321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 11049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 12298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 13323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 10794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 10453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 10850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 8362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": null,
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 10850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": null,
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 10850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 12029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 9781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 5007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 10619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 11630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 11810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 7779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 6921,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 4729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 9581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 10792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 9629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 7536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "17:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 5012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 6378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 9626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 7582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 9489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "13:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 7292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "18:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 8292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "19:05",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 11501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 13951,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:35",
+      "opponent": "Red Wings",
+      "venueId": "victory-field",
+      "attendance": 10756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 9700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "60 Degree Weather Guarantee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 2523,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-03",
+      "start": "12:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 2523,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-03",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 2386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "12:15",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 2809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 3794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Characters with Princesses"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "18:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 3793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jackie Robinson Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "11:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 5076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball in Education"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 4371,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tour Schedule T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "18:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 4879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Indy 500 Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rowdie Racecar Bobblehead Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Alexander Rossi Autograph Session"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 4546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Easter Celebration at Victory Field"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 4750,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 4542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "11:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 12553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball in Education"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 8769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Weekend with Bluey"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 4282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 4260,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "11:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 13346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball in Education"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": null,
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 6288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Experience"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 7732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dollar Menu Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Memorial Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Memorial Day Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 7208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Clinic"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 5500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "All Abilities Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 8215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chick-fil-A® Nights"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 8852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Star Wars™ Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Star Wars™ Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:35",
+      "opponent": "Sounds",
+      "venueId": "victory-field",
+      "attendance": 6995,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Characters with Peppa Pig and George"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 8880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Donate Life Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 9503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "18:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 6804,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Let's Play Two!"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with My Yellow Rickshaw"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 7942,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Play Ball Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 8953,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Paul Skenes Rookie of the Year Bobblehead Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Team Autographs"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Play Ball Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 10465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Experience"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Young Bucs Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Play Ball Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sign the World's Most Autographed Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 7228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "LEGO® NINJAGO® We Rise as Ninja Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 8304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Beach Towel Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Tropicool Duo"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 10554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Native American Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 9264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jurassic Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Girl Scouts Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 7922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jurassic Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 13972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "July Fourth Celebration"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "July Fourth Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 7690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pilates in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 7026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Game Day with Blippi and Meekah"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "19:05",
+      "opponent": "Stripers",
+      "venueId": "victory-field",
+      "attendance": 7676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jewish Community Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "13:35",
+      "opponent": "Stripers",
+      "venueId": "victory-field",
+      "attendance": 7014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "19:05",
+      "opponent": "Stripers",
+      "venueId": "victory-field",
+      "attendance": 7280,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Country Music Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Cowboy Hat Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Cowboy Co."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:05",
+      "opponent": "Stripers",
+      "venueId": "victory-field",
+      "attendance": 9983,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Negro Leagues Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Poster Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Indianapolis ABCs Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "19:05",
+      "opponent": "Stripers",
+      "venueId": "victory-field",
+      "attendance": 9829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter™ Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hogwarts™ Scarf Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:35",
+      "opponent": "Stripers",
+      "venueId": "victory-field",
+      "attendance": 7692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter™ Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hogwarts™ Scarf Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter™ Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Library Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bottle Exception"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 7306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brickyard 400 Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bottle Exception"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 6354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bottle Exception"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Dude!"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pickleball Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Malmö Oat Milkers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bottle Exception"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chick-fil-A® Nights"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 12889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Stranger Things Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bottle Exception"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stranger Things Jersey Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Wine Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 7312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Scout Days"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bottle Exception"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 5677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "NHRA Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 7297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Indy Eleven Player Appearance"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-07",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Irish Community Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Beautiful Day - U2 Tribute"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 10205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Circus at the Ballpark"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stand Up to Cancer (SU2C) Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 10201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Circus at the Ballpark"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ashlynn Shade Autograph Session"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 9375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mascot Mania"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 7657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "STEAM Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 8745,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "TJ McConnell Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 7259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Pride of Indy Bands"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pride Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 12610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "MARVEL Super Hero™ Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "MARVEL Comic Book Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Faith and Fellowship Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chick-fil-A® Nights"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Scout Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 9689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Game Night with Rafael Sánchez"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pickleball Ticket Package"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fastest Fan Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:35",
+      "opponent": "Bisons",
+      "venueId": "victory-field",
+      "attendance": 8414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Girl Scouts Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "ZOOperstars!"
+        },
+        {
+          "type": "Giveaway",
+          "name": "IU Football Player Autograph Session"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Clark the Cub Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 7336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 8205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "First Responders Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 11853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Game Night with Marc Summers"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Foam Finger Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 12830,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Scratch-Off Card Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 10477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pirates Mystery Card Set Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knot Hole Kids Club Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-03-27",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 8996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "16:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 3431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 4333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Opening Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 3001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "11:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 5971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball in Education"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-09",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 4415,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 4066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 5866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bubba Chandler Bobblehead Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Team Autographs"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 5064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 5300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Sports Community Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 3976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "11:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 9202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball in Education"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 5181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "First Responders Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Challenge Coin Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "16:05",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 7271,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Indy 500 Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "IMS Flag Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Indy 500 Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Nolan Siegel Autograph Session"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:35",
+      "opponent": "Saints",
+      "venueId": "victory-field",
+      "attendance": 6340,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Backyard Baseball"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pablo Sanchez Appearance"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Backyard Baseball Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 4840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": null,
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 4840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "11:05",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 13675,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball in Education"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 9391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": null,
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 9391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 5711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hometown Hero Game brought to you by T-Mobile"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 7156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Memorial Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Memorial Day Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Clinic"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mental Health Awareness Community Celebration"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Reggie Wayne First Pitch"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "ALS Awareness / Live Like Lou Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Wine Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 9621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Opening Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chick-fil-A® Night Ticket Package"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Paul Skenes Cy Young Bobblehead Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 8992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Opening Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rowdie Bobblehead Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Paul Skenes Cy Young Bobblehead Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 9059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kids Opening Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Paul Skenes Cy Young Bobblehead Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 7149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Little Town x Annie D"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9739,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 8740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Konnor Griffin Bobblehead Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Team Autographs"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 7706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Prospects Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Young Bucs Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Experience"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Little League Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "19:05",
+      "opponent": "RailRiders",
+      "venueId": "victory-field",
+      "attendance": 9706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "All Abilities Community Celebration"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "13:35",
+      "opponent": "RailRiders",
+      "venueId": "victory-field",
+      "attendance": 9137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "19:05",
+      "opponent": "RailRiders",
+      "venueId": "victory-field",
+      "attendance": 7523,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "IU Hoosiers Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hoosier Hootenanny"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Belt Buckle Ticket Package"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Clayton Anderson"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "19:05",
+      "opponent": "RailRiders",
+      "venueId": "victory-field",
+      "attendance": 8437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Victory Field Paper Co. Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kate Flannery Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "19:05",
+      "opponent": "RailRiders",
+      "venueId": "victory-field",
+      "attendance": 10324,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter™ Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hogwarts™ Trucker Hat Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter™ Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:35",
+      "opponent": "RailRiders",
+      "venueId": "victory-field",
+      "attendance": 6548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "ZOOperstars!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Irish Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 7453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jewish Community Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Shirt Ticket Package"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Tropicool Duo"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 8472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Girl Scout Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "19:05",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 12719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Victory Field 30th Anniversary"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Replica Victory Field Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Our Biggest Fireworks Show of the Season"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with My Yellow Rickshaw"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:35",
+      "opponent": "Mud Hens",
+      "venueId": "victory-field",
+      "attendance": 7194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mascot Mania"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "victory-field",
+      "attendance": 7777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Literacy and Learning Community Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "13:35",
+      "opponent": "IronPigs",
+      "venueId": "victory-field",
+      "attendance": 7612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brickyard Race Week at Victory Field"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "victory-field",
+      "attendance": 8457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Groovy Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Hyryder"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brickyard Race Week at Victory Field"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Spencer Boyd Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "victory-field",
+      "attendance": 11279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chick-fil-A® Night Ticket Package"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brickyard Race Week at Victory Field"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Joey Logano Appearance"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Garrett Smithley Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "victory-field",
+      "attendance": 9727,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "MARVEL Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Spider-Man Hat Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "MARVEL Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brickyard Race Week at Victory Field"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Michael McDowell Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:35",
+      "opponent": "IronPigs",
+      "venueId": "victory-field",
+      "attendance": 6934,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Characters with Paw Patrol™"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 5821,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 5562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pop Star Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Bejeweled Band"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 10429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Faith and Fellowship Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 9026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Video Game Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "8-Bit Hat Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "victory-field",
+      "attendance": 6314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Characters with Good Witch, Bad Witch"
+        },
+        {
+          "type": "Giveaway",
+          "name": "State Fair Foods Week"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 5724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 4939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 5369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8316,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Negro Leagues Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Negro Leagues Theater Performance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 8467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Negro Leagues Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "ABC's Tote Bag Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Indianapolis ABCs Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Live Music with Native Sun"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:35",
+      "opponent": "Bats",
+      "venueId": "victory-field",
+      "attendance": 7793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Characters with Princesses"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 7245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "STEAM Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wednesday Day Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 6087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Lexie Hull Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9855,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Native American Heritage Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Scouting Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 10114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "WWE Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "WWE Bobblehead Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Akira Tozawa Appearance"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chick-fil-A® Night Ticket Package"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Colts Ticket Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:35",
+      "opponent": "Clippers",
+      "venueId": "victory-field",
+      "attendance": 9245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunday Characters with Bluey and Bingo"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 6576,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Dollar Menu"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Girls and Women in Sports Community Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 5489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Half-Off Wednesday Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Purr in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Cats the Musical Characters Meet-and-Greet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 8422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Thirsty Thursday™"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "German Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 10662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Purdue Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Braden Smith, Luke Ertel and Jack Benter Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 10659,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Scratch-Off Card Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "indianapolis-indians",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:35",
+      "opponent": "Storm Chasers",
+      "venueId": "victory-field",
+      "attendance": 10688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Eat Free Sunday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Victory Field 30th Anniversary Card Set Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}
