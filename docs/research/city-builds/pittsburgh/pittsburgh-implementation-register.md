@@ -7,7 +7,7 @@ Oct 13, 2026 · Cursor Cloud Agent. Research sources, unchanged: `pittsburgh-cit
 - New-city checklist (`docs/reference/new-city-checklist.md`). City type **`hub`** from the city-type answer (estimated core sports car-involved shares 0.76–0.86).
 - Never invent capacity; conflicts stay in notes with the official or preferred figure stored.
 - Table A rooms A01–A30 active rows only (no P1/P2). Thirty venue ids at the end of `src/data/venues.ts`.
-- `expectedDrawIndex.ts`: Pittsburgh draw, season-level and opponent rows **prepended** after `attendance-collect` and `attendance-calibrate`; non-Pittsburgh rows byte-identical to pre-calibrate `main`. `POSTSEASON_DRAWS` unchanged.
+- `expectedDrawIndex.ts`: Pittsburgh draw, season-level and opponent rows **prepended** after `attendance-collect` and `attendance-calibrate`. A full calibrate rewrite was reverted for other metros: non-Pittsburgh `EXPECTED_DRAWS`, `SEASON_LEVELS`, and `OPPONENT_RATIOS` rows match `main` byte-for-byte; `POSTSEASON_DRAWS` unchanged.
 - `MEMORY_HANDOFF.md`, `BACKLOG.md`, `package-lock.json`, and product decision docs not edited.
 
 ## Boundary and city type
