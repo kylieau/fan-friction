@@ -18,6 +18,10 @@ You are planning build 4 of Fan/Friction (repo kylieau/fan-friction). **Do not w
 - Stub tags, T01–T13, plus the tag suggestions. How the T13 filters combine is **open on purpose**: build the Tag filter alongside the existing chips, and don't invent the rules for combining filters.
 - Seats as an optional structured field (if the notes have it in this build).
 - BACKLOG and docs-only items listed in the notes.
+- **Parked backlog moved into build 4 (Kylie, Oct 13):** P1–P6 in the notes' last section, "Parked backlog moved into build 4". Put each one in `docs/build-4-plan.md` as its own step, and assign it to **Opus/Claude** or **Composer**. Plan only what that section marks as settled. List its open questions as questions, and mark each one blocking or not blocking. Specifically:
+  - P2 Supabase is blocked on Kylie's project URL and anon key. Plan the schema and client code behind config (off by default, with no network calls until both are set), and resolve the conflict with the Supabase already live since Oct 5. Don't invent the account spec.
+  - P5: the metro temp chip and the per-event degrees (selected venue and event page only) are locked. The rich outdoor Forecast needs Kylie's lock. Mark it blocking and don't plan its UI.
+  - P6 "Change home…": settle the Oct 7 vs Oct 9 conflict as a question for Kylie.
 
 ## Your output: `docs/build-4-plan.md`
 Save it as a downloadable .md. It must contain:
