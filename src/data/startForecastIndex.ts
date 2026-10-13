@@ -49704,10 +49704,21 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "st-louis",
+    "eventId": "2026-10-13-tm-1Ae7Z_aGkM31pCB",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "st-louis",
     "eventId": "2026-10-14-espn-st-louis-city-sc-761868",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -49723,10 +49734,109 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "st-louis",
+    "eventId": "2026-10-14-tm-17F8v0G65RzQfQ3",
+    "date": "2026-10-14",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-16-tm-17F8v0G61SfYN-n",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-17-tm-1A-ZkfbGkdPvbfW",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-17-tm-vv1kbZ_AO8G7cXHq",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 3100
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-17-tm-vvG1bZ_uliXLIe",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11522
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-18-tm-17F8v0G654z-oNr",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-18-tm-vv1AkZku8GkdJlCRM",
+    "date": "2026-10-18",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "st-louis",
     "eventId": "2026-10-20-espn-blues-401892544",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -49742,16 +49852,27 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "st-louis",
+    "eventId": "2026-10-21-tm-17F8v0G65E8CSOJ",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "st-louis",
     "eventId": "2026-10-22-espn-blues-401892558",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2.9,
       "friction": "Low",
-      "why": "The biggest event around."
+      "why": "Parkway School District All-District Choir Concert 19 mi away, same hours."
     },
     "draw": {
       "count": 17110,
@@ -49761,16 +49882,91 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "st-louis",
-    "eventId": "2026-10-24-espn-blues-401892573",
-    "date": "2026-10-24",
-    "start": "18:00",
-    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "eventId": "2026-10-22-tm-vv17bZ_8GkI-z4mR",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.9
+    },
+    "draw": {
+      "count": 3100
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-22-tm-vv1AkZkfxGkd21Wuj",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2.9,
+      "friction": "Low",
+      "why": "Blues vs. Golden Knights 19 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-23-tm-vvG1bZ_2UK1ME8",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.7
+    },
+    "draw": {
+      "count": 3100
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-23-tm-vvG1bZ_2z_DFWA",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
       "friction": "Low",
       "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11522
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-23-tm-vvG1bZ_Gnm9uJj",
+    "date": "2026-10-23",
+    "start": "10:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-espn-blues-401892573",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Moderate",
+      "why": "Bands Of America - Saturday Finals Reserved and Bands Of America - Saturday Finals General Admission 0.9 mi away, same hours."
     },
     "draw": {
       "count": 18096,
@@ -49783,11 +49979,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-lindenwood-football-401867689",
     "date": "2026-10-24",
     "start": "14:00",
-    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "nearby",
-      "rating": 1
+      "rating": 10
     },
     "draw": {
       "count": 3363,
@@ -49797,10 +49993,121 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vv1kbZ_3GdG7Mpk3",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Heavy",
+      "why": "Bands Of America - Saturday Finals Reserved and Bands Of America - Saturday Finals General Admission 19 mi away, same hours."
+    },
+    "draw": {
+      "count": 11522
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vv1kbZ_6k9G7S_Hk",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 10
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vv1kvOvPAFGAC-MAb",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Heavy",
+      "why": "Bands Of America - Saturday Finals Reserved and Bands Of America - Saturday Finals General Admission 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 6042
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vvG1bZ_1UDxNRk",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 10
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vvG1bZ_GngZrqx",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "Bands Of America - Saturday Finals General Admission next door, same hours."
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vvG1bZ_GnwuXaL",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "Bands Of America - Saturday Finals Reserved next door, same hours."
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-24-tm-vvG1bZ_GnYZuVq",
+    "date": "2026-10-24",
+    "start": "10:00",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-25-tm-17F8v0G62BBjUy9",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "st-louis",
     "eventId": "2026-10-27-espn-blues-401892588",
     "date": "2026-10-27",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:14.782Z",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -49812,6 +50119,21 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 17179,
       "low": 16814,
       "high": 17525
+    }
+  },
+  {
+    "metroId": "st-louis",
+    "eventId": "2026-10-27-tm-1ae7Z_obpCpZd275",
+    "date": "2026-10-27",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:57:35.171Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 3000
     }
   },
   {
