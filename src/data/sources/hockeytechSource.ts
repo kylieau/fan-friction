@@ -49,6 +49,7 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   // Ottawa Charge. HockeyTech id 5; primary home Canadian Tire Centre from 2026-27 (PWHL release). TD Place stays mapped for 2025-26 homes.
   { client: 'pwhl', htId: '5', metroId: 'ottawa-gatineau', teamId: 'ottawa-charge', venueId: 'canadian-tire-centre' },
   { client: 'whl', htId: '223', metroId: 'vancouver', teamId: 'vancouver-giants', venueId: 'langley-events-centre' },
+  { client: 'whl', htId: '208', metroId: 'portland', teamId: 'portland-winterhawks', venueId: 'veterans-memorial-coliseum' },
   // Edmonton Oil Kings. Id checked Oct 13, 2026. Neutral-site listings are not mapped.
   { client: 'whl', htId: '228', metroId: 'edmonton', teamId: 'oil-kings', venueId: 'rogers-place' },
 ];
@@ -87,6 +88,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'aréna scotiabank': 'scotiabank-arena',
   'grand casino arena': 'grand-casino-arena',
   'xcel energy center': 'grand-casino-arena',
+  'veterans memorial coliseum': 'veterans-memorial-coliseum',
+  'memorial coliseum': 'veterans-memorial-coliseum',
   'rocket arena': 'rocket-arena',
   'rocket mortgage fieldhouse': 'rocket-arena',
   'quicken loans arena': 'rocket-arena',

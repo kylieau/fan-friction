@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', miami: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'salt-lake-city': 'America/Denver', 'ottawa-gatineau': 'America/Toronto', edmonton: 'America/Edmonton', 'washington-dc': 'America/New_York', 'san-antonio': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', miami: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago', 'new-orleans': 'America/Chicago', 'salt-lake-city': 'America/Denver', 'ottawa-gatineau': 'America/Toronto', edmonton: 'America/Edmonton', 'washington-dc': 'America/New_York', 'san-antonio': 'America/Chicago', portland: 'America/Los_Angeles' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -72,6 +72,7 @@ const MLB_TEAMS = [
   { teamId: 'vancouver-canadians', mlbId: 435, sportId: 13, venueId: 'nat-bailey-stadium', metroId: 'vancouver', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'royals', mlbId: 118, venueId: 'kauffman-stadium', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'kc-monarchs', mlbId: 1885, sportId: 23, venueId: 'legends-field', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'hillsboro-hops', metroId: 'portland', mlbId: 419, sportId: 13, venueId: 'hillsboro-hops-ballpark', venueByMlbId: { 4429: 'hillsboro-ballpark', 7256: 'hillsboro-hops-ballpark' }, seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'salt-lake-bees', metroId: 'salt-lake-city', mlbId: 561, sportId: 11, venueId: 'ballpark-at-america-first-square', mlbVenueId: 6135, seasons: [2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
@@ -353,6 +354,15 @@ const ESPN_TEAMS = [
   { teamId: 'lsuno-wbb', metroId: 'new-orleans', path: 'basketball/womens-college-basketball', espnId: '2443', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'lsuno-baseball', metroId: 'new-orleans', path: 'baseball/college-baseball', espnId: '184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'laketown-squadron', metroId: 'new-orleans', path: 'basketball/nba-development', espnId: '6', seasons: [2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'blazers', metroId: 'portland', path: 'basketball/nba', espnId: '22', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'timbers', metroId: 'portland', path: 'soccer/usa.1', espnId: '9723', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'thorns', metroId: 'portland', path: 'soccer/usa.nwsl', espnId: '15362', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'portland-fire', metroId: 'portland', path: 'basketball/wnba', espnId: '132052', seasons: [2026], seasontype: 2 },
+  { teamId: 'psu-football', metroId: 'portland', path: 'football/college-football', espnId: '2502', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'psu-mbb', metroId: 'portland', path: 'basketball/mens-college-basketball', espnId: '2502', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'psu-wbb', metroId: 'portland', path: 'basketball/womens-college-basketball', espnId: '2502', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'up-pilots-mbb', metroId: 'portland', path: 'basketball/mens-college-basketball', espnId: '2501', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'rip-city-remix', metroId: 'portland', path: 'basketball/nba-development', espnId: '128019', seasons: [2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'spurs', metroId: 'san-antonio', path: 'basketball/nba', espnId: '24', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'san-antonio-fc', metroId: 'san-antonio', path: 'soccer/usa.usl.1', espnId: '18265', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
   { teamId: 'san-antonio-missions', metroId: 'san-antonio', mlbId: 510, sportId: 12, venueId: 'wolff-stadium', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -695,6 +705,17 @@ const VENUE_BY_NAME = {
   'segra field': 'segra-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  'providence park': 'providence-park',
+  'moda center': 'moda-center',
+  'rose garden': 'moda-center',
+  'veterans memorial coliseum': 'veterans-memorial-coliseum',
+  'memorial coliseum': 'veterans-memorial-coliseum',
+  'hillsboro stadium': 'hillsboro-stadium',
+  'viking pavilion': 'viking-pavilion',
+  'peter w. stott center': 'viking-pavilion',
+  'peter w stott center': 'viking-pavilion',
+  'chiles center': 'chiles-center',
+  'earle a. & virginia h. chiles center': 'chiles-center',
   // San Antonio, as ESPN writes them (checked Oct 13, 2026). Keep in step with espnSource.ts.
   alamodome: 'alamodome',
   'frost bank center': 'frost-bank-center',
@@ -890,9 +911,10 @@ const HOCKEYTECH_TEAMS = [
   { teamId: 'oil-kings', metroId: 'edmonton', client: 'whl', htId: '228', venueId: 'rogers-place' },
   { teamId: 'henderson-silver-knights', metroId: 'las-vegas', client: 'ahl', htId: '437', venueId: 'lees-family-forum' },
   { teamId: 'pwhl-las-vegas', metroId: 'las-vegas', client: 'pwhl', htId: '12', venueId: 't-mobile-arena', skipUnknownVenue: true },
+  { teamId: 'portland-winterhawks', metroId: 'portland', client: 'whl', htId: '208', venueId: 'veterans-memorial-coliseum' },
   { teamId: 'cleveland-monsters', metroId: 'cleveland', client: 'ahl', htId: '373', venueId: 'rocket-arena' },
 ];
-const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'rogers place': 'rogers-place', 'rogers place - edmonton, ab': 'rogers-place', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre', 't-mobile arena': 't-mobile-arena', 'lee\u2019s family forum': 'lees-family-forum', 'orleans arena': 'orleans-arena', 'coca-cola coliseum': 'coca-cola-coliseum', 'ricoh coliseum': 'coca-cola-coliseum', 'scotiabank arena': 'scotiabank-arena', 'aréna scotiabank': 'scotiabank-arena', 'grand casino arena': 'grand-casino-arena', 'xcel energy center': 'grand-casino-arena', 'canadian tire centre': 'canadian-tire-centre', 'centre canadian tire': 'canadian-tire-centre', 'td place': 'arena-at-td-place', 'the arena at td place': 'arena-at-td-place', 'rocket arena': 'rocket-arena', 'rocket mortgage fieldhouse': 'rocket-arena', 'quicken loans arena': 'rocket-arena' };
+const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'rogers place': 'rogers-place', 'rogers place - edmonton, ab': 'rogers-place', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre', 't-mobile arena': 't-mobile-arena', 'lee\u2019s family forum': 'lees-family-forum', 'orleans arena': 'orleans-arena', 'coca-cola coliseum': 'coca-cola-coliseum', 'ricoh coliseum': 'coca-cola-coliseum', 'scotiabank arena': 'scotiabank-arena', 'aréna scotiabank': 'scotiabank-arena', 'grand casino arena': 'grand-casino-arena', 'xcel energy center': 'grand-casino-arena', 'canadian tire centre': 'canadian-tire-centre', 'centre canadian tire': 'canadian-tire-centre', 'td place': 'arena-at-td-place', 'the arena at td place': 'arena-at-td-place', 'rocket arena': 'rocket-arena', 'rocket mortgage fieldhouse': 'rocket-arena', 'quicken loans arena': 'rocket-arena', 'veterans memorial coliseum': 'veterans-memorial-coliseum', 'memorial coliseum': 'veterans-memorial-coliseum' };
 
 const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
 const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;

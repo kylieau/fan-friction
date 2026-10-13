@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|san antonio|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|san antonio|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|portland|psu|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -536,6 +536,19 @@ const LIST: Team[] = [
   team('carleton-ravens-mbb', "Carleton Ravens Men's Basketball", 'Ravens MBB', 'U Sports basketball', 'basketball', 'ottawa-gatineau', 'CAR'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball', 'miami', 'MIA'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
+  team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball', 'portland', 'POR'),
+  // Portland (Oct 13, 2026; docs/research/city-builds/portland/). ESPN, MLB and HockeyTech ids checked against live schedules.
+  team('timbers', 'Portland Timbers', 'Timbers', 'MLS', 'soccer', 'portland', 'TIM'),
+  team('thorns', 'Portland Thorns FC', 'Thorns', 'NWSL', 'soccer', 'portland', 'THO'),
+  team('portland-fire', 'Portland Fire', 'Fire', 'WNBA', 'basketball', 'portland', 'FIRE'),
+  team('portland-winterhawks', 'Portland Winterhawks', 'Winterhawks', 'WHL', 'hockey', 'portland', 'HAW'),
+  team('hillsboro-hops', 'Hillsboro Hops', 'Hops', 'High-A baseball', 'baseball', 'portland', 'HOP'),
+  team('portland-cascade', 'Portland Cascade', 'Cascade', 'AUSL', 'softball', 'portland', 'CAS'),
+  team('psu-football', 'Portland State Vikings Football', 'PSU Football', 'College football', 'football', 'portland', 'PSU', ['Portland State']),
+  team('psu-mbb', "Portland State Vikings Men's Basketball", 'PSU MBB', "College men's basketball", 'basketball', 'portland', 'PSU', ['Portland State']),
+  team('psu-wbb', "Portland State Vikings Women's Basketball", 'PSU WBB', "College women's basketball", 'basketball', 'portland', 'PSU', ['Portland State']),
+  team('rip-city-remix', 'Rip City Remix', 'Remix', 'NBA G League', 'basketball', 'portland', 'REM'),
+  team('up-pilots-mbb', "Portland Pilots Men's Basketball", 'Pilots MBB', "College men's basketball", 'basketball', 'portland', 'UP'),
   // San Antonio (Oct 13, 2026; docs/research/city-builds/san-antonio/). Spurs were a visitor record; same id, now home.
   team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball', 'san-antonio', 'SA'),
   team('san-antonio-fc', 'San Antonio FC', 'SAFC', 'USL Championship', 'soccer', 'san-antonio', 'SAFC'),
@@ -546,7 +559,6 @@ const LIST: Team[] = [
   team('uiw-football', 'Incarnate Word Cardinals Football', 'UIW FB', 'College football', 'football', 'san-antonio', 'UIW'),
   team('uiw-mbb', "Incarnate Word Cardinals Men's Basketball", 'UIW MBB', "College men's basketball", 'basketball', 'san-antonio', 'UIW'),
   team('uiw-wbb', "Incarnate Word Cardinals Women's Basketball", 'UIW WBB', "College women's basketball", 'basketball', 'san-antonio', 'UIW'),
-  team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball'),
   team('jets', 'Winnipeg Jets', 'Jets', 'NHL', 'hockey'),
   team('panthers', 'Florida Panthers', 'Panthers', 'NHL', 'hockey', 'miami', 'FLA'),
   team('rapids', 'Colorado Rapids', 'Rapids', 'MLS', 'soccer'),

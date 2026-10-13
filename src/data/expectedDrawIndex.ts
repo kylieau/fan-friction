@@ -56840,6 +56840,1830 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 17518,
     "games": 4,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 17353,
+    "low": 16823,
+    "high": 18079,
+    "games": 79,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 15323,
+    "low": 11627,
+    "high": 15806,
+    "games": 5,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16953,
+    "low": 16382,
+    "high": 17581,
+    "games": 37,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 16296,
+    "low": 16183,
+    "high": 16795,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 16205,
+    "low": 16059,
+    "high": 17267,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17919,
+    "low": 17285,
+    "high": 18312,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17083,
+    "low": 16966,
+    "high": 17574,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 16934,
+    "low": 16737,
+    "high": 17570,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17438,
+    "low": 17012,
+    "high": 17839,
+    "games": 17,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 17410,
+    "low": 17381,
+    "high": 17556,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 16382,
+    "low": 16286,
+    "high": 17236,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 17025,
+    "low": 16736,
+    "high": 17432,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17505,
+    "low": 17249,
+    "high": 18918,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17505,
+    "low": 17291,
+    "high": 18420,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 17421,
+    "low": 16847,
+    "high": 17961,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17774,
+    "low": 17276,
+    "high": 18403,
+    "games": 18,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18154,
+    "low": 17400,
+    "high": 18181,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 19335,
+    "low": 18632,
+    "high": 19445,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 17597,
+    "low": 17491,
+    "high": 18037,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 17949,
+    "low": 17077,
+    "high": 18507,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "all",
+    "month": null,
+    "count": 2382,
+    "low": 1800,
+    "high": 3147,
+    "games": 129,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1851,
+    "low": 1452,
+    "high": 2263,
+    "games": 63,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 1268,
+    "low": 1196,
+    "high": 1453,
+    "games": 9,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 1461,
+    "low": 1193,
+    "high": 1803,
+    "games": 15,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 1851,
+    "low": 1639,
+    "high": 1878,
+    "games": 9,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 2043,
+    "low": 1691,
+    "high": 2260,
+    "games": 15,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 2337,
+    "low": 2161,
+    "high": 2550,
+    "games": 15,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3270,
+    "low": 2529,
+    "high": 3706,
+    "games": 20,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 2336,
+    "low": 2270,
+    "high": 2352,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 2580,
+    "low": 2374,
+    "high": 2920,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 3575,
+    "low": 3406,
+    "high": 3655,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 3748,
+    "low": 3485,
+    "high": 3815,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 3438,
+    "low": 3311,
+    "high": 3740,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3198,
+    "low": 2791,
+    "high": 3484,
+    "games": 24,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 2190,
+    "low": 1987,
+    "high": 2806,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 3074,
+    "low": 2815,
+    "high": 3477,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 3242,
+    "low": 2929,
+    "high": 3749,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 3479,
+    "low": 3101,
+    "high": 4016,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 3257,
+    "low": 3147,
+    "high": 3426,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2705,
+    "low": 2244,
+    "high": 2967,
+    "games": 22,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 1833,
+    "low": 1622,
+    "high": 2013,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 2502,
+    "low": 2386,
+    "high": 2746,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4144,
+    "low": 3414,
+    "high": 4340,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 2717,
+    "low": 2274,
+    "high": 2893,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-ballpark",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 2940,
+    "low": 2933,
+    "high": 3165,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "all",
+    "month": null,
+    "count": 2615,
+    "low": 1929,
+    "high": 3167,
+    "games": 65,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1906,
+    "low": 1553,
+    "high": 2438,
+    "games": 32,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 1505,
+    "low": 1413,
+    "high": 2072,
+    "games": 5,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 1609,
+    "low": 1555,
+    "high": 1679,
+    "games": 6,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 1619,
+    "low": 1512,
+    "high": 2203,
+    "games": 7,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 2013,
+    "low": 1752,
+    "high": 2519,
+    "games": 8,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 2548,
+    "low": 2352,
+    "high": 3032,
+    "games": 6,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2799,
+    "low": 2626,
+    "high": 3496,
+    "games": 11,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 3719,
+    "low": 3496,
+    "high": 4452,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3811,
+    "low": 3088,
+    "high": 4080,
+    "games": 11,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "venueId": "hillsboro-hops-ballpark",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2929,
+    "low": 2508,
+    "high": 3190,
+    "games": 11,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 13620,
+    "low": 12910,
+    "high": 14932,
+    "games": 20,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 13087,
+    "low": 12383,
+    "high": 13456,
+    "games": 11,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 12198,
+    "low": 11994,
+    "high": 12561,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 13602,
+    "low": 12824,
+    "high": 16781,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15294,
+    "low": 14953,
+    "high": 17321,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 14860,
+    "low": 14249,
+    "high": 15003,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 14860,
+    "low": 14249,
+    "high": 15003,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 4725,
+    "low": 3716,
+    "high": 6282,
+    "games": 99,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4312,
+    "low": 4162,
+    "high": 5646,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2896,
+    "low": 2520,
+    "high": 3374,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2896,
+    "low": 2705,
+    "high": 3463,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3419,
+    "low": 3077,
+    "high": 3739,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2520,
+    "low": 2283,
+    "high": 3007,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 3374,
+    "low": 2949,
+    "high": 4919,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4585,
+    "low": 3958,
+    "high": 5802,
+    "games": 23,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 4806,
+    "low": 4437,
+    "high": 6105,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 5847,
+    "low": 5307,
+    "high": 6033,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 4009,
+    "low": 3952,
+    "high": 4451,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 3299,
+    "low": 3256,
+    "high": 4953,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6083,
+    "low": 4705,
+    "high": 6996,
+    "games": 39,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 5784,
+    "low": 5600,
+    "high": 6389,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6587,
+    "low": 6200,
+    "high": 6996,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 7625,
+    "low": 6537,
+    "high": 8355,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 3756,
+    "low": 3722,
+    "high": 3850,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4725,
+    "low": 4685,
+    "high": 4800,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5678,
+    "low": 4599,
+    "high": 7548,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4561,
+    "low": 3428,
+    "high": 5856,
+    "games": 20,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 6343,
+    "low": 6018,
+    "high": 6836,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 5088,
+    "low": 4761,
+    "high": 5430,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 3232,
+    "low": 3091,
+    "high": 3245,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 3485,
+    "low": 3119,
+    "high": 3868,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "venueId": "veterans-memorial-coliseum",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 6986,
+    "low": 3943,
+    "high": 8588,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "venueId": "hillsboro-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 1983,
+    "low": 1575,
+    "high": 3172,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "venueId": "hillsboro-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1890,
+    "low": 1651,
+    "high": 2205,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "venueId": "hillsboro-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1983,
+    "low": 1575,
+    "high": 3172,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "venueId": "hillsboro-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 2648,
+    "low": 2003,
+    "high": 3138,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "venueId": "hillsboro-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 3185,
+    "low": 1664,
+    "high": 5702,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 922,
+    "low": 643,
+    "high": 1167,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "opener",
+    "month": null,
+    "count": 617,
+    "low": 523,
+    "high": 659,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 986,
+    "low": 716,
+    "high": 1125,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 998,
+    "low": 804,
+    "high": 1069,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 982,
+    "low": 727,
+    "high": 1014,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 1167,
+    "low": 1087,
+    "high": 1408,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 685,
+    "low": 568,
+    "high": 1084,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 802,
+    "low": 571,
+    "high": 1154,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 922,
+    "low": 766,
+    "high": 1251,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 926,
+    "low": 815,
+    "high": 1168,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 547,
+    "low": 541,
+    "high": 572,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 385,
+    "low": 327,
+    "high": 507,
+    "games": 27,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 344,
+    "low": 310,
+    "high": 472,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 472,
+    "low": 472,
+    "high": 479,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 344,
+    "low": 314,
+    "high": 394,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 305,
+    "low": 303,
+    "high": 315,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 475,
+    "low": 372,
+    "high": 554,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 436,
+    "low": 332,
+    "high": 530,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 558,
+    "low": 439,
+    "high": 602,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "venueId": "viking-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 385,
+    "low": 348,
+    "high": 518,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1234,
+    "low": 801,
+    "high": 1502,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1572,
+    "low": 1470,
+    "high": 1590,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 793,
+    "low": 642,
+    "high": 886,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 704,
+    "low": 642,
+    "high": 814,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 801,
+    "low": 732,
+    "high": 905,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 876,
+    "low": 666,
+    "high": 1010,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1254,
+    "low": 1139,
+    "high": 1281,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 1234,
+    "low": 1044,
+    "high": 1254,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1427,
+    "low": 1289,
+    "high": 1714,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1262,
+    "low": 986,
+    "high": 1724,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 1531,
+    "low": 1344,
+    "high": 1895,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1990,
+    "low": 1502,
+    "high": 2102,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "venueId": "chiles-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 1587,
+    "low": 1502,
+    "high": 2062,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "venueId": "providence-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 18247,
+    "low": 16667,
+    "high": 20878,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "venueId": "providence-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 15683,
+    "low": 15528,
+    "high": 17745,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "venueId": "providence-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18247,
+    "low": 17255,
+    "high": 19580,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "venueId": "providence-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 19106,
+    "low": 17901,
+    "high": 20562,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "venueId": "providence-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20652,
+    "low": 16852,
+    "high": 21540,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 22710,
+    "low": 21491,
+    "high": 24649,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20184,
+    "low": 20098,
+    "high": 20978,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 24538,
+    "low": 22592,
+    "high": 24686,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 23535,
+    "low": 22110,
+    "high": 24819,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20951,
+    "low": 20193,
+    "high": 22040,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 20206,
+    "low": 20180,
+    "high": 21641,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1104,
+    "low": 1000,
+    "high": 1517,
+    "games": 44,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1008,
+    "low": 1007,
+    "high": 1041,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1012,
+    "low": 853,
+    "high": 1122,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1053,
+    "low": 1013,
+    "high": 1101,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1291,
+    "low": 1055,
+    "high": 2882,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 876,
+    "low": 820,
+    "high": 944,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 757,
+    "low": 725,
+    "high": 966,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1076,
+    "low": 773,
+    "high": 1097,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1597,
+    "low": 1221,
+    "high": 1935,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1679,
+    "low": 1678,
+    "high": 1894,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1751,
+    "low": 1516,
+    "high": 2059,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1116,
+    "low": 969,
+    "high": 1210,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1043,
+    "low": 1008,
+    "high": 1118,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 983,
+    "low": 966,
+    "high": 1085,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "venueId": "chiles-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1046,
+    "low": 1041,
+    "high": 1149,
+    "games": 4,
+    "seasons": "2024–2026"
   }
 ];
 
@@ -57215,6 +59039,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.25,
     "games": 9
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "season": 2026,
+    "level": 0.742,
+    "games": 3
   }
 ];
 
@@ -84778,6 +86609,811 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "warriors",
     "ratio": 1.001,
     "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "76ers",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "bucks",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "bulls",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "cavaliers",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "clippers",
+    "ratio": 1.033,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "grizzlies",
+    "ratio": 0.989,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "hawks",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "heat",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "hornets",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "jazz",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "kings",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "lakers",
+    "ratio": 1.037,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "magic",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "mavericks",
+    "ratio": 1.015,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "nets",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "nuggets",
+    "ratio": 1.011,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "pacers",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "pelicans",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "pistons",
+    "ratio": 1.047,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "rockets",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "spurs",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "suns",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "thunder",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "timberwolves",
+    "ratio": 1.042,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "warriors",
+    "ratio": 1.055,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "opponent": "wizards",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "opponent": "aquasox",
+    "ratio": 1.052,
+    "games": 33
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "opponent": "canadians",
+    "ratio": 1.023,
+    "games": 42
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "opponent": "dust-devils",
+    "ratio": 1.048,
+    "games": 42
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "opponent": "emeralds",
+    "ratio": 1.083,
+    "games": 38
+  },
+  {
+    "metroId": "portland",
+    "teamId": "hillsboro-hops",
+    "opponent": "indians",
+    "ratio": 0.997,
+    "games": 42
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "opponent": "fever",
+    "ratio": 1.132,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "opponent": "mercury",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "opponent": "storm",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "opponent": "sun",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "opponent": "valkyries",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "opponent": "wings",
+    "ratio": 1.047,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "americans",
+    "ratio": 1.051,
+    "games": 9
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "blades",
+    "ratio": 1.225,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "blazers",
+    "ratio": 0.951,
+    "games": 6
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "chiefs",
+    "ratio": 0.972,
+    "games": 11
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "cougars",
+    "ratio": 0.818,
+    "games": 6
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "giants",
+    "ratio": 0.919,
+    "games": 8
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "pats",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "raiders",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "rockets",
+    "ratio": 0.97,
+    "games": 6
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "royals",
+    "ratio": 1.018,
+    "games": 6
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "silvertips",
+    "ratio": 1.06,
+    "games": 11
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "thunderbirds",
+    "ratio": 1.089,
+    "games": 14
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "wheat-kings",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-winterhawks",
+    "opponent": "wild",
+    "ratio": 0.96,
+    "games": 11
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "opponent": "montana",
+    "ratio": 1.439,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-football",
+    "opponent": "uc-davis",
+    "ratio": 1.041,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "e-washington",
+    "ratio": 1.163,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "evergreen",
+    "ratio": 0.84,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "george-fox",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "idaho",
+    "ratio": 1.225,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "idaho-st",
+    "ratio": 0.952,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "montana",
+    "ratio": 1.218,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "montana-st",
+    "ratio": 1.233,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "n-arizona",
+    "ratio": 0.802,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "n-colorado",
+    "ratio": 0.871,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "nw-indian",
+    "ratio": 0.88,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "sacramento-st",
+    "ratio": 1.095,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-mbb",
+    "opponent": "weber-st",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "e-washington",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "idaho",
+    "ratio": 1.064,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "idaho-st",
+    "ratio": 0.924,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "montana",
+    "ratio": 1.025,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "montana-st",
+    "ratio": 1.116,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "n-arizona",
+    "ratio": 0.935,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "n-colorado",
+    "ratio": 0.923,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "sacramento-st",
+    "ratio": 1.047,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "psu-wbb",
+    "opponent": "weber-st",
+    "ratio": 0.867,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "905",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "blue",
+    "ratio": 0.961,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "clippers",
+    "ratio": 1.156,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "hustle",
+    "ratio": 0.92,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "lakers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "legends",
+    "ratio": 0.934,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "skyforce",
+    "ratio": 1.203,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "warriors",
+    "ratio": 0.988,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "rip-city-remix",
+    "opponent": "wolves",
+    "ratio": 0.793,
+    "games": 4
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "angel-city",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "bay",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "chicago",
+    "ratio": 0.947,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "gotham",
+    "ratio": 1.045,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "houston",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "kansas-city",
+    "ratio": 0.96,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "louisville",
+    "ratio": 0.914,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "orlando",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "san-diego",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "seattle",
+    "ratio": 1.05,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "thorns",
+    "opponent": "utah",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "dallas",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "kansas-city",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "la-galaxy",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "lafc",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "san-jose",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "seattle",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "opponent": "vancouver",
+    "ratio": 0.971,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "gonzaga",
+    "ratio": 1.612,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "lewis-clark",
+    "ratio": 0.813,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "lmu",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "long-beach-st",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "pacific",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "pepperdine",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "saint-mary-s",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "san-diego",
+    "ratio": 0.898,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "santa-clara",
+    "ratio": 1.17,
+    "games": 3
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "washington-st",
+    "ratio": 1.14,
+    "games": 2
+  },
+  {
+    "metroId": "portland",
+    "teamId": "up-pilots-mbb",
+    "opponent": "willamette",
+    "ratio": 1.008,
+    "games": 3
   }
 ];
 
@@ -89977,6 +92613,114 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.054,
     "games": 40,
     "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "band": "first",
+    "occupancy": 1.003,
+    "low": 0.997,
+    "high": 1.045,
+    "games": 110,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.042,
+    "games": 52,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "blazers",
+    "venueId": "moda-center",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.057,
+    "games": 27,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "band": "first",
+    "occupancy": 0.747,
+    "low": 0.472,
+    "high": 1,
+    "games": 32,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "portland-fire",
+    "venueId": "moda-center",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.507,
+    "high": 0.957,
+    "games": 27,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "band": "first",
+    "occupancy": 0.94,
+    "low": 0.694,
+    "high": 1.037,
+    "games": 72,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "band": "second",
+    "occupancy": 0.94,
+    "low": 0.694,
+    "high": 1.037,
+    "games": 72,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "band": "conference",
+    "occupancy": 0.94,
+    "low": 0.694,
+    "high": 1.037,
+    "games": 72,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "portland",
+    "teamId": "timbers",
+    "venueId": "providence-park",
+    "band": "final",
+    "occupancy": 0.94,
+    "low": 0.694,
+    "high": 1.037,
+    "games": 72,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
   }
 ];

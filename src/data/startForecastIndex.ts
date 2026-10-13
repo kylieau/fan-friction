@@ -41381,6 +41381,82 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "portland",
+    "eventId": "2026-10-17-espn-timbers-761888",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 24538,
+      "low": 22592,
+      "high": 24686
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-21-espn-blazers-401909841",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16919,
+      "low": 16349,
+      "high": 17546
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-23-espn-thorns-401854029",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18247,
+      "low": 16667,
+      "high": 20878
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-24-espn-timbers-761902",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 24538,
+      "low": 22592,
+      "high": 24686
+    }
+  },
+  {
     "metroId": "sacramento",
     "eventId": "2026-10-13-espn-sacramento-kings-401901826",
     "date": "2026-10-13",

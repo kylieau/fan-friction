@@ -90,6 +90,8 @@ const SCALE = 7.5;
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
+// Portland is a hub (research, Oct 12, 2026, docs/research/city-builds/portland/portland-city-type-answer.md):
+// measured Providence Park splits and estimated Rose Quarter, Ridgefield and Hillsboro overrides; Theater of the Clouds is not a room.
 // San Antonio is sprawl (research, Oct 12, 2026, docs/research/city-builds/san-antonio/san-antonio-city-type-answer.md):
 // no rail, event transit is mostly park-and-ride (car-involved), and outlying rooms estimate 0.95+ car.
 // Estimated venue car shares are wired on each room (C04, Oct 12); Alamodome P&R bounds are measured rides, not a full split.
@@ -102,7 +104,7 @@ const SCALE = 7.5;
 // Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
 // downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
 // values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl', portland: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -318,6 +320,10 @@ const ZONE_NAMES: Record<string, string> = {
   // New Orleans LSED complex: Superdome and Smoothie King Center share the garage set and Poydras approach.
   'caesars-superdome': 'Superdome complex',
   'smoothie-king-center': 'Superdome complex',
+  'moda-center': 'Rose Quarter',
+  'veterans-memorial-coliseum': 'Rose Quarter',
+  'providence-park': 'Goose Hollow',
+  'cascades-amphitheater': 'Ridgefield',
   'anderson-arena': 'St. Thomas',
   // San Antonio clusters (city-type answer §8): downtown / Alamodome; east-side grounds; isolated singles.
   alamodome: 'Downtown',

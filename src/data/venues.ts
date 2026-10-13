@@ -10230,6 +10230,257 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // Portland (docs/research/city-builds/portland/, Oct 13, 2026). Four-county core. Theater of the Clouds is not a separate room.
+  // Coordinates from OpenStreetMap Nominatim unless noted. Car shares: measured or city-type §3b estimates as marked.
+  'providence-park': {
+    id: 'providence-park',
+    metroId: 'portland',
+    // Measured car-involved share (2019 Timbers CTMP survey). Thorns measured 0.69 same building.
+    carShare: 0.685,
+    names: [
+      { name: 'PGE Park' },
+      { name: 'Jeld-Wen Field', from: '2011-03-01' },
+      { name: 'Providence Park', from: '2014-01-01' },
+    ],
+    location: [-122.6918185, 45.5215291],
+    capacity: [
+      {
+        seats: 25218,
+        setup: 'soccer',
+        note: 'Official (City of Portland), post-2019 expansion. Wikipedia infobox lists 24,686; concert and football setups are not stored as separate counts. Thorns 2019 measured car-involved share was 0.69 in the same bowl. Source: https://www.portland.gov/omf/news/2021/10/28/providence-park-turns-95',
+      },
+    ],
+    roof: 'open',
+  },
+  'moda-center': {
+    id: 'moda-center',
+    metroId: 'portland',
+    // Estimated (city-type answer §3b), low confidence. Concerts estimated 0.75 on the same bowl.
+    carShare: 0.72,
+    names: [
+      { name: 'Rose Garden' },
+      { name: 'Moda Center', from: '2013-08-13' },
+    ],
+    // Nominatim: 1 North Center Court Street (Rose Quarter campus point; building name not returned).
+    location: [-122.667657, 45.532929],
+    capacity: [
+      {
+        seats: 19393,
+        setup: 'basketball',
+        note: 'Reported (ticketing), NBA seated. City page rounds to over 19,000; Wikipedia lists 19,980. Source: https://www.portland.gov/venues/moda-center/about-moda-center',
+      },
+      {
+        seats: 20500,
+        setup: 'concert',
+        note: 'Reported (Ticketmaster blog), center-stage with standing room. Source: https://blog.ticketmaster.com/step-inside-moda-center-portland-oregon/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'veterans-memorial-coliseum': {
+    id: 'veterans-memorial-coliseum',
+    metroId: 'portland',
+    carShare: 0.78,
+    names: [{ name: 'Memorial Coliseum' }, { name: 'Veterans Memorial Coliseum' }],
+    location: [-122.6694032, 45.5321443],
+    capacity: [
+      {
+        seats: 8600,
+        setup: 'hockey',
+        note: 'Reported (KATU, 2026), post-renovation hockey configuration. City and architect also publish 10,000 bowl seats; historic NBA figures are not current. Source: https://katu.com/news/local/winterhawks-return-to-a-revamped-veterans-memorial-coliseum-for-new-season-hockey-sports-minor-league-local-community-entertainment-junior',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'cascades-amphitheater': {
+    id: 'cascades-amphitheater',
+    metroId: 'portland',
+    carShare: 0.96,
+    names: [
+      { name: 'Sunlight Supply Amphitheater' },
+      { name: 'RV Inn Style Resorts Amphitheater', from: '2021-08-01' },
+      { name: 'Cascades Amphitheater', from: '2025-01-01' },
+    ],
+    location: [-122.6670094, 45.7425261],
+    // Round-2 rule: stored 18,000 was not a sourced figure (official 7,810 covered + lawn ~10,000; Bandsintown 17,884); blank (BACKLOG).
+    capacity: [],
+    roof: 'covered',
+  },
+  'hillsboro-stadium': {
+    id: 'hillsboro-stadium',
+    metroId: 'portland',
+    names: [{ name: 'Hillsboro Stadium' }],
+    location: [-122.9069884, 45.5543855],
+    capacity: [
+      {
+        seats: 7600,
+        setup: 'football',
+        note: 'Reported (Wikipedia), expandable to 10,000 in a temporary setup; the expandable figure is not stored. Portland State football tenant. Source: https://en.wikipedia.org/wiki/Hillsboro_Stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'mcmenamins-edgefield': {
+    id: 'mcmenamins-edgefield',
+    metroId: 'portland',
+    names: [
+      { name: 'McMenamins Edgefield' },
+      { name: 'Edgefield Concerts on the Lawn' },
+      { name: 'McMenamins Historic Edgefield Manor' },
+    ],
+    location: [-122.4053047, 45.535264],
+    // Round-2 rule: 7,000 vs ~5,000 conflict, none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'hillsboro-hops-ballpark': {
+    id: 'hillsboro-hops-ballpark',
+    metroId: 'portland',
+    carShare: 0.92,
+    names: [{ name: 'Hillsboro Hops Ballpark', from: '2026-04-07' }],
+    location: [-122.9088316, 45.5556149],
+    // Round-2 rule: 7,000 (MiLB) vs 4,700 fixed / 6,000 baseball (city, Mortenson) conflict; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'hillsboro-ballpark': {
+    id: 'hillsboro-ballpark',
+    metroId: 'portland',
+    names: [
+      { name: 'Ron Tonkin Field' },
+      { name: 'Hillsboro Ballpark', from: '2024-03-01' },
+    ],
+    location: [-122.9087495, 45.5537602],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'baseball',
+        note: 'Reported (Wikipedia): 4,500 total, 3,534 seats. Former Hops home; Portland Cascade (AUSL) from 2026. Same address as the new ballpark — match by tenant, not proximity. Source: https://en.wikipedia.org/wiki/Hillsboro_Ballpark',
+      },
+    ],
+    roof: 'open',
+  },
+  'merlo-field': {
+    id: 'merlo-field',
+    metroId: 'portland',
+    names: [{ name: 'Merlo Field' }, { name: 'Merlo Field at the Clive Charles Soccer Complex' }],
+    location: [-122.7272286, 45.5747221],
+    capacity: [
+      {
+        seats: 4892,
+        setup: 'soccer',
+        note: 'Official (UP Athletics). Below the friction line; observed 4,932 in 2012 does not reclassify. Source: https://portlandpilots.com/news/2012/9/26/WSOC_0926125045.aspx',
+      },
+    ],
+    roof: 'open',
+  },
+  'chiles-center': {
+    id: 'chiles-center',
+    metroId: 'portland',
+    names: [
+      { name: 'Chiles Center' },
+      { name: 'Earle A. & Virginia H. Chiles Center' },
+    ],
+    location: [-122.7285328, 45.5750984],
+    capacity: [
+      {
+        seats: 4852,
+        setup: 'basketball',
+        note: 'Official (UP Athletics). Rip City Remix (G League) also plays here. Source: https://portlandpilots.com/sports/2008/8/11/MBB_0811084643.aspx',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'viking-pavilion': {
+    id: 'viking-pavilion',
+    metroId: 'portland',
+    names: [
+      { name: 'Peter W. Stott Center' },
+      { name: 'Viking Pavilion', from: '2018-01-01' },
+    ],
+    location: [-122.6868266, 45.5109662],
+    capacity: [
+      {
+        seats: 3000,
+        setup: 'basketball',
+        note: 'Official (PSU), full bowl. Wikipedia lists 3,094; upper-bowl-only and floor setups are not stored. Source: https://www.pdx.edu/conferences/viking-pavilion-peter-w-stott-center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'keller-auditorium': {
+    id: 'keller-auditorium',
+    metroId: 'portland',
+    names: [{ name: 'Keller Auditorium' }],
+    location: [-122.6781501, 45.5124158],
+    capacity: [
+      {
+        seats: 2992,
+        setup: 'concert',
+        note: 'Official (Portland\'5 tech specs), 3,034 including 42 pit seats. Proposed downsizing after a future PSU venue is not stored. Source: https://www.portland5.com/node/191',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'arlene-schnitzer-concert-hall': {
+    id: 'arlene-schnitzer-concert-hall',
+    metroId: 'portland',
+    names: [
+      { name: 'Arlene Schnitzer Concert Hall' },
+      { name: 'Arlene Schnitzer Hall' },
+    ],
+    location: [-122.6815601, 45.5171493],
+    capacity: [
+      {
+        seats: 2776,
+        setup: 'concert',
+        note: 'Official (Portland\'5), without pit; 32 pit seats extra. Source: https://www.portland5.com/node/191',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'roseland-theater': {
+    id: 'roseland-theater',
+    metroId: 'portland',
+    names: [{ name: 'Roseland Theater' }, { name: "Roseland Theatre" }],
+    location: [-122.6761422, 45.5233734],
+    capacity: [
+      {
+        seats: 1400,
+        setup: 'concert',
+        note: 'Reported (Wikipedia), standing main floor plus 21+ balcony. Peter\'s Room (400) is a separate room in the same building, not stored. Source: https://en.wikipedia.org/wiki/Roseland_Theater',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'crystal-ballroom-portland': {
+    id: 'crystal-ballroom-portland',
+    metroId: 'portland',
+    names: [{ name: 'Crystal Ballroom' }],
+    location: [-122.6847689, 45.5226821],
+    capacity: [
+      {
+        seats: 1500,
+        setup: 'concert',
+        note: 'Reported standing capacity (AXS). Source: https://www.axs.com/category/cities/5746545/portland-or',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'mcmenamins-grand-lodge': {
+    id: 'mcmenamins-grand-lodge',
+    metroId: 'portland',
+    names: [{ name: 'McMenamins Grand Lodge' }, { name: 'Concerts in the Grove' }],
+    location: [-123.0856822, 45.5217518],
+    capacity: [
+      {
+        seats: 3300,
+        setup: 'concert',
+        note: 'Reported (PDX Monthly, 2022), lawn max. Western Washington County edge. Source: https://www.pdxmonthly.com/arts-and-culture/2022/06/mcmenamins-grand-lodge-summer-concert-series-forest-grove',
+      },
+    ],
+    roof: 'open',
+  },
 };
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
 export function venueNameOn(venue: Venue, date: LocalDate): string {
