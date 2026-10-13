@@ -68,6 +68,8 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 - **LA data (Composer's):** today's LA list includes "Lakers vs. Warriors · T-Mobile Arena" (Las Vegas, 220 miles); it pulls the LA map out to Bakersfield and Mexicali. Seen on the live site Oct 13.
 - **Signed-in tags round-trip not run:** `userTags` rides in the plan and entry `data` column and no migration rewrites it; a one-minute phone check (add a tag, sign out and in) is still to do.
 - **Favorite cities on an older app copy:** a device still on an older build rewrites the settings row without `favoriteCities`; it returns when that copy updates. A server-side merge would need a migration.
+- **Temperatures are °F in Canadian and Mexican cities:** `feelsLikeLabel` switches to Celsius only when the time zone does not start with `America/`, so Toronto, Montréal, Vancouver, Ottawa, Edmonton and Mexico City (all `America/...`) show °F in the header, the event page and the Map card. App-wide; the helper is outside build 4's slice.
+- **Un-starring a city on one device can come back from another:** favorite cities merge by union, like team favorites, so a stale copy re-adds it. Removal marks would need a migration.
 - **Seats storage:** open with Kylie. Plan rows are readable by approved followers (`0016_follow_states.sql`); a private seats column would be a migration she pastes.
 
 ### Miami follow-up (city build, Oct 13, 2026; not yet approved like K14)

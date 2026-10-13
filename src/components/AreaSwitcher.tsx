@@ -86,7 +86,7 @@ export function AreaSwitcher({
             const isStar = starred.includes(item.id);
             return (
               <div className="area-row" key={item.id}>
-                {index === ordered.length && ordered.length > 0 && rest.length > 0 && <div className="area-divider" role="separator" />}
+                {index === ordered.length && pinned.length > 0 && rest.length > 0 && <div className="area-divider" role="separator" />}
                 <button type="button" role="option" aria-selected={item.id === metro.id} onClick={() => pick(item.id)}>
                   {isHome && <HomeMark />}
                   <span>{item.name}</span>
@@ -97,7 +97,7 @@ export function AreaSwitcher({
                     type="button"
                     className={`area-star${isStar ? ' on' : ''}`}
                     aria-pressed={isStar}
-                    aria-label={`${isStar ? 'Unstar' : 'Star'} ${item.name}`}
+                    aria-label={`Star ${item.name}`}
                     onClick={() => toggleFavoriteCity(item.id)}
                   >
                     <StarIcon />
