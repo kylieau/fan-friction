@@ -9277,13 +9277,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'World Wide Technology Raceway', from: '2018-01-01' },
     ],
     location: [-90.135888, 38.6522],
-    capacity: [
-      {
-        seats: 58000,
-        setup: 'racing',
-        note: 'Reported grandstand (tourism bureau). Track press release cites 57,000; nearly 80,000 appears in low-reliability listings — conflict preserved. Sellout does not imply a published headcount. Source: https://www.riversandroutes.com/directory/world-wide-technology-raceway-sports-venues/',
-      },
-    ],
+    // Round-2 rule: 58,000 (tourism) vs 57,000 (track) vs ~80,000 listings, none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'busch-stadium': {
@@ -9331,7 +9326,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-90.20262, 38.626801],
     capacity: [
       { seats: 18096, setup: 'hockey', note: 'Reported (Wikipedia, 2019 renovation). Stadium Journey lists 19,022 — conflict preserved. Source: https://en.wikipedia.org/wiki/Enterprise_Center' },
-      { seats: 22000, setup: 'concert', note: 'Reported. Pollstar cited 21,000 in 2018. Source: https://en.wikipedia.org/wiki/Enterprise_Center' },
+      // Concert capacity left blank: 22,000 vs 21,000 (Pollstar 2018), none official (BACKLOG).
     ],
     roof: 'indoor',
   },
@@ -9347,13 +9342,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Hollywood Casino Amphitheater' },
     ],
     location: [-90.470094, 38.74481],
-    capacity: [
-      {
-        seats: 20000,
-        setup: 'concert',
-        note: 'Estimated total incl. lawn (Ticketmaster). Seated pavilion 6,805 and standing 19,000 also reported. Parking bundled with tickets. Source: https://blog.ticketmaster.com/step-inside-hollywood-casino-amphitheater-st-louis-mo/',
-      },
-    ],
+    // Round-2 rule: 20,000 is labelled estimated (Ticketmaster); 6,805 pavilion / 19,000 standing also reported; blank (BACKLOG).
+    capacity: [],
     roof: 'covered',
   },
   'the-muny': {
@@ -9379,7 +9369,6 @@ export const VENUES: Record<string, Venue> = {
     location: [-90.228177, 38.632526],
     capacity: [
       { seats: 10600, setup: 'basketball', note: 'Reported (SLU / Clayco). Source: https://claycorp.com/project/chaifetz-arena-at-saint-louis-university' },
-      { seats: 11600, setup: 'concert', note: 'Estimated (SeatGeek blog). Source: https://seatgeek.com/blog/chaifetz-arena-seatgeeks-complete-guide-to-the-home-of-st-louis-billikens-basketball' },
     ],
     roof: 'indoor',
   },
@@ -9401,7 +9390,6 @@ export const VENUES: Record<string, Venue> = {
   'harlen-c-hunter-stadium': {
     id: 'harlen-c-hunter-stadium',
     metroId: 'st-louis',
-    carShare: 0.95,
     names: [{ name: 'Harlen C. Hunter Stadium' }],
     location: [-90.501903, 38.787735],
     capacity: [
@@ -9416,7 +9404,6 @@ export const VENUES: Record<string, Venue> = {
   'hermann-stadium': {
     id: 'hermann-stadium',
     metroId: 'st-louis',
-    carShare: 0.88,
     names: [{ name: 'Robert R. Hermann Stadium' }, { name: 'Hermann Stadium' }],
     // OSM miss; SLU athletics places the stadium one block east of Grand on Laclede (approximate).
     location: [-90.2358, 38.6369],
@@ -9432,7 +9419,6 @@ export const VENUES: Record<string, Venue> = {
   'arsenal-bg-ballpark': {
     id: 'arsenal-bg-ballpark',
     metroId: 'st-louis',
-    carShare: 0.95,
     names: [
       { name: 'GCS Credit Union Ballpark' },
       { name: 'Grizzlies Ballpark', from: '2023-01-01' },
@@ -9452,7 +9438,6 @@ export const VENUES: Record<string, Venue> = {
   'carshield-field': {
     id: 'carshield-field',
     metroId: 'st-louis',
-    carShare: 0.95,
     names: [{ name: 'T.R. Hughes Ballpark' }, { name: 'CarShield Field' }],
     location: [-90.680582, 38.816864],
     capacity: [
@@ -9467,7 +9452,6 @@ export const VENUES: Record<string, Venue> = {
   'fabulous-fox-theatre-stl': {
     id: 'fabulous-fox-theatre-stl',
     metroId: 'st-louis',
-    carShare: 0.85,
     names: [{ name: 'The Fabulous Fox' }, { name: 'Fabulous Fox Theatre' }],
     location: [-90.232384, 38.639122],
     capacity: [
@@ -9486,13 +9470,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Saint Louis Music Park' }, { name: 'St. Louis Music Park' }],
     // OSM miss; approximate point at Centene Community Ice Center address (research).
     location: [-90.468, 38.748],
-    capacity: [
-      {
-        seats: 4500,
-        setup: 'concert',
-        note: 'Estimated (Music Gateway — low confidence; wrongly placed the room on the old amphitheatre site). Source: https://www.musicgateway.com/blog/live-music/st-louis-music-park-review',
-      },
-    ],
+    // Round-2 rule: only a low-confidence estimate (4,500); blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'siue-vadalabene-arena': {
@@ -9517,7 +9496,6 @@ export const VENUES: Record<string, Venue> = {
   'ralph-korte-stadium': {
     id: 'ralph-korte-stadium',
     metroId: 'st-louis',
-    carShare: 0.95,
     names: [{ name: 'Ralph Korte Stadium' }],
     location: [-90.011116, 38.782332],
     capacity: [
@@ -9532,7 +9510,6 @@ export const VENUES: Record<string, Venue> = {
   'stifel-theatre': {
     id: 'stifel-theatre',
     metroId: 'st-louis',
-    carShare: 0.85,
     names: [{ name: 'Peabody Opera House' }, { name: 'Stifel Theatre', from: '2018-01-01' }],
     location: [-90.202049, 38.62752],
     capacity: [
@@ -9547,7 +9524,6 @@ export const VENUES: Record<string, Venue> = {
   'hyland-performance-arena': {
     id: 'hyland-performance-arena',
     metroId: 'st-louis',
-    carShare: 0.95,
     names: [{ name: 'Robert F. Hyland Performance Arena' }, { name: 'Hyland Performance Arena' }],
     location: [-90.50352, 38.78912],
     capacity: [
@@ -9562,7 +9538,6 @@ export const VENUES: Record<string, Venue> = {
   'the-factory-stl': {
     id: 'the-factory-stl',
     metroId: 'st-louis',
-    carShare: 0.95,
     names: [{ name: 'The Factory' }],
     location: [-90.593594, 38.671742],
     capacity: [
@@ -9577,7 +9552,6 @@ export const VENUES: Record<string, Venue> = {
   'ferrara-theatre': {
     id: 'ferrara-theatre',
     metroId: 'st-louis',
-    carShare: 0.85,
     names: [{ name: 'Ferrara Theatre' }, { name: "America's Center Ferrara Theatre" }],
     location: [-90.188551, 38.632785],
     capacity: [
