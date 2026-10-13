@@ -48,9 +48,10 @@ export interface Venue {
    */
   strained?: boolean;
   /**
-   * Share of fans who drive to this venue (0–1), when a measured figure exists
-   * (Yankee Stadium about 0.55, Nationals Park about 0.66). Scales the
-   * hard-access penalty. Without one, the city type supplies a default.
+   * Share of fans who drive to this venue (0–1). Measured splits are labeled as such on
+   * the venue row; research estimates are wired when Kylie approved (Oct 12, C04) and
+   * marked estimated in the venue comment, not in this field. Scales the hard-access
+   * penalty. Without an override, the city type supplies a default.
    */
   carShare?: number;
   /** Ticketmaster's ids for this building, when known; a listing matches by id before by name. */
@@ -299,7 +300,7 @@ export interface GameResult {
   capturedAt: string;
 }
 
-// ---------- The date's rating ----------
+// ---------- The date's rating (date verdict: internal name for this read, build 4 R11; UI copy unchanged until tester interview) ----------
 
 export interface DateRating {
   metroId: string;

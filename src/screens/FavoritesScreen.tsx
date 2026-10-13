@@ -295,7 +295,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
     if (embedded) {
       return (
         <>
-          <h2 className="you-heading">{favorites.length === 0 ? 'Pick your favorites' : 'Favorites'}</h2>
+          <h1 className="page-title">{favorites.length === 0 ? 'Pick your favorites' : 'Favorites'}</h1>
           {picker}
         </>
       );

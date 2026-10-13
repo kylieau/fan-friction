@@ -44,7 +44,7 @@ import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { WhyCard } from '../components/WhyCard';
 import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
-import { drawSize, sizeTier } from '../data';
+import { displayedCrowdCount, drawSize, sizeTier } from '../data';
 
 type Mode = 'crowds' | 'traffic';
 /** No traffic layer exists yet; the switch stays off the map until one does (C079). */
@@ -160,7 +160,9 @@ export function MapScreen() {
 
   const headerRating = rating ? rating.rating : null;
   // The day's crowd, over the friction floor, for the count line and the Why card.
-  const crowdTotal = dayEvents.filter((e) => sizeTier(e) === 'feeds-friction').reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
+  const crowdTotal = dayEvents
+    .filter((e) => sizeTier(e) === 'feeds-friction')
+    .reduce((sum, e) => sum + (displayedCrowdCount(e) ?? 0), 0);
   const showScore = true;
 
   const caption = !shown

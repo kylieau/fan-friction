@@ -45,10 +45,33 @@ export function highlightedCrowd(event: CrowdEvent): CrowdFigureShown | null {
   return null;
 }
 
+/** The crowd count shown on the map, chip card and sheet total (build 4 §0: Final > Announced > Estimated). */
+export function displayedCrowdCount(event: CrowdEvent): number | undefined {
+  return highlightedCrowd(event)?.count;
+}
+
+/** Source line for the event page's Announced row only (Kylie, Oct 12, build 4 R05). */
+export function announcedSourceLabel(event: CrowdEvent): string | undefined {
+  if (!crowdFigures(event).announced) return undefined;
+  return event.audience.domain === 'sports' ? 'from the team' : 'per organizers';
+}
+
 /**
- * The one figure to show for a stub. An older stub's single `crowd` (locked before Oct 12,
- * 2026) is shown as it was, without a kind, until Kylie says how to tag it (build notes 3, ⚑3).
+ * Moves a pre-build-4 single `crowd` into Announced or Estimated (R04, ⚑3). Never overwrites
+ * a filled figure field. Safe to rerun; clears `crowd` once migrated.
  */
+export function backfillEntryCrowd(entry: Entry, event?: CrowdEvent): Partial<Entry> | null {
+  if (entry.crowd == null) return null;
+  if (entry.crowdAnnounced != null || entry.crowdEstimated != null || entry.crowdFinal != null) return null;
+  const hasBoxScore = Boolean(event?.result?.attendance != null && event.result.attendance > 0);
+  const hasAnnouncedOnEvent = Boolean(event && crowdFigures(event).announced != null);
+  if (hasBoxScore || hasAnnouncedOnEvent) {
+    return { crowdAnnounced: entry.crowd, crowd: undefined };
+  }
+  return { crowdEstimated: entry.crowd, crowd: undefined };
+}
+
+/** The one figure to show for a stub (R04: legacy `crowd` is migrated on open). */
 export function entryCrowd(entry: Entry): { count: number; kind?: CrowdFigureShown['kind'] } | null {
   if (entry.crowdFinal) return { count: entry.crowdFinal, kind: 'final' };
   if (entry.crowdAnnounced) return { count: entry.crowdAnnounced, kind: 'announced' };

@@ -19,7 +19,7 @@ import { StubsScreen } from './screens/StubsScreen';
 import { FollowingScreen } from './screens/FollowingScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
-import { getCityDate, lockCrowds, settlePassedPlans, subscribeLogLoaded } from './data';
+import { backfillLegacyCrowds, getCityDate, lockCrowds, settlePassedPlans, subscribeLogLoaded } from './data';
 import { useEffect } from 'react';
 
 /** /night/<date> was the date page's first address. */
@@ -34,8 +34,14 @@ function Shell() {
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   useEffect(() => {
-    void settlePassedPlans(getCityDate, getHomeId()).then(() => lockCrowds(getCityDate));
-    return subscribeLogLoaded(() => void settlePassedPlans(getCityDate, getHomeId()).then(() => lockCrowds(getCityDate)));
+    void settlePassedPlans(getCityDate, getHomeId())
+      .then(() => backfillLegacyCrowds(getCityDate))
+      .then(() => lockCrowds(getCityDate));
+    return subscribeLogLoaded(() =>
+      void settlePassedPlans(getCityDate, getHomeId())
+        .then(() => backfillLegacyCrowds(getCityDate))
+        .then(() => lockCrowds(getCityDate)),
+    );
   }, []);
 
   return (

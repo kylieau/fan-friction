@@ -1,7 +1,7 @@
 // Turns a date's events into the dots the Crowds map draws. Kept apart from
 // the drawing so the Event screen and share cards can reuse it.
 
-import { VENUES, capacityOn, roundEstimate, sizeTier, todayIn, venueNameOn } from '../data';
+import { VENUES, capacityOn, highlightedCrowd, roundEstimate, sizeTier, todayIn, venueNameOn } from '../data';
 import { DEFAULT_METRO } from '../config/metros';
 import { shortLocalDate } from '../lib/dates';
 import type { CrowdEvent, LngLat } from '../data';
@@ -106,11 +106,11 @@ export function crowdShort(
   withSold = true,
   withDraw = true,
 ): string {
-  const figure = event.crowd.find((c) => c.count !== undefined);
+  const highlighted = highlightedCrowd(event);
   const sold = withSold && event.crowd.some((c) => c.soldOut);
-  if (figure?.count !== undefined) {
-    const est = withEst && figure.kind === 'estimated' ? ' est' : '';
-    return `${crowdThousands(figure.count)}${est}${sold ? ' (sold out)' : ''}`;
+  if (highlighted) {
+    const est = withEst && highlighted.kind === 'estimated' ? ' est' : '';
+    return `${crowdThousands(highlighted.count)}${est}${sold ? ' (sold out)' : ''}`;
   }
   if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
   if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);

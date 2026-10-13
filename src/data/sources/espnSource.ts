@@ -1021,6 +1021,13 @@ function nameOf(team: EspnSide['team']): string {
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
+/** Visitor team id for favorites and draws; uses our registry when ESPN's id matches (C11: Arizona ≠ St. Louis). */
+function awayTeamId(away: EspnSide['team'], home: (typeof ESPN_TEAMS)[number]): string {
+  const match = ESPN_TEAMS.find((row) => row.espnId === away.id && row.path === home.path);
+  if (match) return match.teamId;
+  return slug(away.shortDisplayName ?? nameOf(away));
+}
+
 function localParts(iso: string, timeZone: string): { date: LocalDate; time: string } {
   const parts = new Intl.DateTimeFormat('en-CA', {
     timeZone, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
@@ -1066,8 +1073,8 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     ...(broadcast ? { broadcast } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: t.sport },
-    // The away key is ESPN's own short name, the one data/attendance stores, so opponent ratios line up (C012).
-    teams: { home: t.teamId, away: slug(away.team.shortDisplayName ?? nameOf(away.team)) },
+    // Away id matches TEAMS when we cover the visitor; otherwise the slug for opponent ratios (C11).
+    teams: { home: t.teamId, away: awayTeamId(away.team, t) },
     ...(c.neutralSite ? { neutralSite: true } : {}),
     crowd: [],
     sourceId: 'espn',

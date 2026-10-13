@@ -341,7 +341,17 @@ export {
   drawSavedAhead,
 } from './read';
 export { CONCERT_FILL, roundEstimate } from './expectedDrawBuild';
-export { crowdFigures, highlightedCrowd, entryCrowd, crowdKindWord, type CrowdFigures, type CrowdFigureShown } from './crowdFigures';
+export {
+  crowdFigures,
+  highlightedCrowd,
+  displayedCrowdCount,
+  announcedSourceLabel,
+  backfillEntryCrowd,
+  entryCrowd,
+  crowdKindWord,
+  type CrowdFigures,
+  type CrowdFigureShown,
+} from './crowdFigures';
 export type { ScheduleCoverage, SizeTier } from './read';
 export {
   eventFacts,
@@ -380,6 +390,7 @@ export {
   isWatched,
   biggestCrowd,
   toughestFights,
+  backfillLegacyCrowds,
   lockCrowds,
   setWatchDetails,
   watchShareOf,

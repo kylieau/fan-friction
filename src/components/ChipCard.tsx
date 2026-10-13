@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ByLine, CrowdMark, EventFrictionPill, OccasionTag } from './EventTags';
-import { drawSize, VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { displayedCrowdCount, VENUES, venueNameOn, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
@@ -14,7 +14,7 @@ import { crowdThousands } from '../map/crowdPoints';
  */
 export function ChipCard({ event, onOpen }: { event: CrowdEvent; onOpen?: () => void }) {
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
-  const size = drawSize(event);
+  const size = displayedCrowdCount(event);
   return (
     <Link to={eventPath(event.id, event.metroId)} state={{ fromMap: true }} className="chip-card" onClick={onOpen}>
       <span className="chip-card-main">
