@@ -106,6 +106,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'al-lang-stadium', 'tampa-bay-downs', 'wish-farms-soundstage',
   // Columbus: UFL and MLS Next Pro have no league feed. Mid-Ohio stays off this list (edge circuit, not the metro default).
   'historic-crew-stadium',
+  // Pittsburgh: weekly dirt racing has no league feed (docs/research/city-builds/pittsburgh/pittsburgh-venue-table-answer.md A06).
+  'lernerville-speedway',
   // Austin rooms whose primary tenants have no league feed (Stars hockey still comes from HockeyTech and wins on the same date).
   'heb-center-cedar-park', 'luedecke-arena', 'house-park', 'moody-center', 'myers-stadium', 'disch-falk-field',
   'gregory-gym', 'mccombs-field', 'bobcat-soccer-complex', 'bobcat-softball-stadium',

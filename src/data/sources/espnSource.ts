@@ -31,6 +31,19 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '48', metroId: 'philadelphia', teamId: 'delaware-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '48', metroId: 'philadelphia', teamId: 'delaware-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '48', metroId: 'philadelphia', teamId: 'delaware-wbb', sport: 'basketball' },
+  // Pittsburgh (docs/research/city-builds/pittsburgh/); ids and home venue names checked against the feed Oct 13, 2026.
+  { path: 'football/nfl', espnId: '23', metroId: 'pittsburgh', teamId: 'steelers', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '16', metroId: 'pittsburgh', teamId: 'penguins', sport: 'hockey' },
+  { path: 'football/college-football', espnId: '221', metroId: 'pittsburgh', teamId: 'pitt-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '221', metroId: 'pittsburgh', teamId: 'pitt-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '221', metroId: 'pittsburgh', teamId: 'pitt-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2184', metroId: 'pittsburgh', teamId: 'duquesne-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2184', metroId: 'pittsburgh', teamId: 'duquesne-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2184', metroId: 'pittsburgh', teamId: 'duquesne-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2523', metroId: 'pittsburgh', teamId: 'robert-morris-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2523', metroId: 'pittsburgh', teamId: 'robert-morris-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2523', metroId: 'pittsburgh', teamId: 'robert-morris-wbb', sport: 'basketball' },
+  { path: 'soccer/usa.usl.1', espnId: '17827', metroId: 'pittsburgh', teamId: 'riverhounds', sport: 'soccer' },
   // Each Milwaukee id and actual home venue checked against the feed Oct 11, 2026.
   { path: 'basketball/nba', espnId: '15', metroId: 'milwaukee', teamId: 'bucks', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '269', metroId: 'milwaukee', teamId: 'marquette-mbb', sport: 'basketball' },
@@ -343,6 +356,16 @@ const VENUE_BY_NAME: Record<string, string> = {
   'xfinity mobile arena': 'xfinity-mobile-arena',
   'wells fargo center': 'xfinity-mobile-arena',
   'subaru park': 'subaru-park',
+  'acrisure stadium': 'acrisure-stadium',
+  'heinz field': 'acrisure-stadium',
+  'pnc park': 'pnc-park',
+  'ppg paints arena': 'ppg-paints-arena',
+  'consol energy center': 'ppg-paints-arena',
+  'petersen events center': 'petersen-events-center',
+  'upmc cooper fieldhouse': 'upmc-cooper-fieldhouse',
+  'upmc events center': 'upmc-events-center',
+  'arthur j. rooney athletic field': 'arthur-j-rooney-athletic-field',
+  'joe walton stadium': 'joe-walton-stadium',
   'liacouras center': 'liacouras-center',
   'finneran pavilion': 'finneran-pavilion',
   'the palestra': 'the-palestra',
@@ -631,6 +654,10 @@ const VENUE_BY_NAME: Record<string, string> = {
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
 const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
+  pittsburgh: {
+    'highmark stadium': 'fnb-stadium',
+    'f.n.b. stadium': 'fnb-stadium',
+  },
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
   nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },

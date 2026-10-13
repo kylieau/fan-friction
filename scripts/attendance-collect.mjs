@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', pittsburgh: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -22,6 +22,8 @@ const MLB_TEAMS = [
   { teamId: 'blue-jays', metroId: 'toronto', mlbId: 141, venueId: 'rogers-centre', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'red-sox', metroId: 'boston', mlbId: 111, venueId: 'fenway-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'phillies', metroId: 'philadelphia', mlbId: 143, venueId: 'citizens-bank-park', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'pirates', metroId: 'pittsburgh', mlbId: 134, venueId: 'pnc-park', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'wild-things', metroId: 'pittsburgh', mlbId: 1978, sportId: 23, venueId: 'eqt-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'astros', metroId: 'houston', mlbId: 117, venueId: 'daikin-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'space-cowboys', metroId: 'houston', mlbId: 5434, sportId: 11, venueId: 'constellation-field', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'rays', metroId: 'tampa', mlbId: 139, venueId: 'tropicana-field', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -103,6 +105,18 @@ const ESPN_TEAMS = [
   { teamId: 'delaware-football', metroId: 'philadelphia', path: 'football/college-football', espnId: '48', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'delaware-mbb', metroId: 'philadelphia', path: 'basketball/mens-college-basketball', espnId: '48', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'delaware-wbb', metroId: 'philadelphia', path: 'basketball/womens-college-basketball', espnId: '48', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'steelers', metroId: 'pittsburgh', path: 'football/nfl', espnId: '23', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'penguins', metroId: 'pittsburgh', path: 'hockey/nhl', espnId: '16', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'pitt-football', metroId: 'pittsburgh', path: 'football/college-football', espnId: '221', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'pitt-mbb', metroId: 'pittsburgh', path: 'basketball/mens-college-basketball', espnId: '221', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'pitt-wbb', metroId: 'pittsburgh', path: 'basketball/womens-college-basketball', espnId: '221', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'duquesne-football', metroId: 'pittsburgh', path: 'football/college-football', espnId: '2184', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'duquesne-mbb', metroId: 'pittsburgh', path: 'basketball/mens-college-basketball', espnId: '2184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'duquesne-wbb', metroId: 'pittsburgh', path: 'basketball/womens-college-basketball', espnId: '2184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'robert-morris-football', metroId: 'pittsburgh', path: 'football/college-football', espnId: '2523', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'robert-morris-mbb', metroId: 'pittsburgh', path: 'basketball/mens-college-basketball', espnId: '2523', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'robert-morris-wbb', metroId: 'pittsburgh', path: 'basketball/womens-college-basketball', espnId: '2523', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'riverhounds', metroId: 'pittsburgh', path: 'soccer/usa.usl.1', espnId: '17827', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
   { teamId: 'buccaneers', metroId: 'tampa', path: 'football/nfl', espnId: '27', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'lightning', metroId: 'tampa', path: 'hockey/nhl', espnId: '20', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'usf-football', metroId: 'tampa', path: 'football/college-football', espnId: '58', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
