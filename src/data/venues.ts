@@ -10302,13 +10302,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Cascades Amphitheater', from: '2025-01-01' },
     ],
     location: [-122.6670094, 45.7425261],
-    capacity: [
-      {
-        seats: 18000,
-        setup: 'concert',
-        note: 'Official tourism listing: 7,810 covered seats plus lawn for nearly 10,000. Bandsintown lists 17,884. Clark County, WA. Source: https://www.visitvancouverwa.com/listing/cascades-amphitheater/2201/',
-      },
-    ],
+    // Round-2 rule: stored 18,000 was not a sourced figure (official 7,810 covered + lawn ~10,000; Bandsintown 17,884); blank (BACKLOG).
+    capacity: [],
     roof: 'covered',
   },
   'hillsboro-stadium': {
@@ -10328,21 +10323,14 @@ export const VENUES: Record<string, Venue> = {
   'mcmenamins-edgefield': {
     id: 'mcmenamins-edgefield',
     metroId: 'portland',
-    // Hub fallback (city-type answer); Edgefield lawn has no measured split.
-    carShare: 0.85,
     names: [
       { name: 'McMenamins Edgefield' },
       { name: 'Edgefield Concerts on the Lawn' },
       { name: 'McMenamins Historic Edgefield Manor' },
     ],
     location: [-122.4053047, 45.535264],
-    capacity: [
-      {
-        seats: 7000,
-        setup: 'concert',
-        note: 'Reported (Travel Portland tourism). Conflict: crowds of about 5,000 cited elsewhere (Vortex, 2014). Lawn GA; reserved rows on some shows. Source: https://www.travelportland.com/events/edgefield-concerts-on-the-lawn/',
-      },
-    ],
+    // Round-2 rule: 7,000 vs ~5,000 conflict, none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'hillsboro-hops-ballpark': {
@@ -10351,13 +10339,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Hillsboro Hops Ballpark', from: '2026-04-07' }],
     location: [-122.9088316, 45.5556149],
-    capacity: [
-      {
-        seats: 7000,
-        setup: 'baseball',
-        note: 'MiLB team figure for Hops games (about 7,000 total). Conflict: 4,700 fixed seats and 6,000 baseball figure from the city/builder (Mortenson). Stored total follows research judgment for game-night friction. Opened Apr 7, 2026. Source: https://www.milb.com/hillsboro/news/new-hops-ballpark-reaches-substantial-completion-mark',
-      },
-    ],
+    // Round-2 rule: 7,000 (MiLB) vs 4,700 fixed / 6,000 baseball (city, Mortenson) conflict; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'hillsboro-ballpark': {
