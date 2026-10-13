@@ -31,11 +31,32 @@ For each major event without a meaningful fixed-room capacity: event name, organ
 ## Evidence rules
 Prefer venue, team, league, government, university, organizer and planning sources. Link each figure to the supporting page and date it. Reconcile small differences by stating what is being measured; preserve conflicts that change classification. If a page cannot be fetched normally, flag it and continue without bypassing access. Treat Ticketmaster/feed matches as verified only when exact room identity is supported; proximity alone may be ambiguous. For international markets, state local naming, time zone, event-calendar, and data-rights issues as factual coverage findings.
 
+## Gaps from the first 26 city builds (answer every item)
+
+These came out of the first 26 city builds (Oct 2026). Each one cost a city something when the research skipped it. Give a source link for every fact. If you can't find a source, write "gap" and say what you searched. Never make up a number.
+
+1. **Name and code.** The display name for Cleveland, a short form, and a three-letter code (lead: CLE; verify against what local teams and media use). List which cities and suburbs it covers (Cuyahoga County and suburbs; say whether Akron and Blossom (Summit County) are in). Tampa Bay is the precedent: locals and every team say "Tampa Bay" and it covers St. Pete and Clearwater, so the name changed while the code stayed TPA.
+2. **Capacity: one sourced figure per setup.** A range on its own ("1,300–3,000") or a figure from a resale site isn't enough. Mark it as a gap. When sources disagree, list them side by side with links and say what each one measures. Never invent a figure.
+3. **Rooms around 5,000.** For each room between about 4,500 and 5,500, give its sourced figure. Each room counts on that figure alone, so 4,774 stays under the line and 5,000 counts.
+4. **Ticketmaster venue ID for every concert room**, checked against the Ticketmaster venue page or Discovery API (give the link). If a room has no ID, the city ships with no concerts there. Say which rooms you couldn't verify.
+5. **Every team** (Guardians (MLB), Browns (NFL), Cavaliers (NBA), Monsters (AHL), Charge (G League), Cleveland State, any NWSL/USL club; verify, and add any missed): league, home venue by date, and whether a free schedule feed covers it (ESPN, MLB Stats API, or a league site). List the teams that have no feed.
+6. **Games away from the home venue.** Neutral-site, international and relocated home games (leads: Browns' stadium move (Brook Park plan vs. actual home by date); any relocated or neutral-site games), with dates and the actual site, so none get placed at the home venue.
+7. **Postseason and past crowds.** Postseason games and announced attendance per team for recent seasons, plus past announced crowds for each team's regular season (box scores or league pages). Tampa Bay is the precedent: the feeds returned no counts, so the city had no crowd history.
+8. **Open-site events** (Air show, Cleveland Marathon, lakefront festivals, parades): dates, place, and any sizing source with the count type. If nobody publishes a size, list the event for the unsized list. Don't estimate one.
+9. **Team colors.** Primary and secondary hex colors for every team, from an official team or league brand source.
+
+**Build rules (for whoever turns this answer into app data; put these in the answer as notes):**
+- Every venue ID and team ID must be unique across all cities. Check for collisions: `giants`, `jets`, `rangers`, `kings` and `cardinals` were already taken, so add a city prefix.
+- Don't make a separate per-city opponents file. Opponent draws go into `expectedDrawIndex` like every other city.
+- Never guess a capacity. A missing or range-only figure stays blank and goes on the city gaps list.
+- Car shares: wire measured ones; wire sourced estimates marked estimated; leave the rest on the city default.
+
 ## End with
 1. Recommended boundary and uncertain edge venues.
 2. Complete table, plus rooms around the 1,000/5,000 thresholds whose treatment needs care.
 3. Teams/programs, their actual dated home venues, and verified schedule/attendance/ticketing feed coverage and gaps.
 4. Open sites/events needing manual dates or a separate crowd record; no invented totals.
 5. Conflicting sources, duplicate/matching risks, inaccessible sources, and confirmed changes through 2028 with re-check dates.
+6. Every item under "Gaps from the first 26 city builds", answered or marked as a gap.
 
 Use public data only. Do not supply app code, hand-access flags, new formula constants, personal ratings, or cost commitments. Mark proposals separately from confirmed or scheduled changes.

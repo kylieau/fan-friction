@@ -32,11 +32,27 @@ Where a measured split is absent, give a transparent estimate only when local pu
 ## Regional conclusion
 Recommend one existing city type and explain the strongest contrary evidence and venue exceptions. Where evidence permits, show capacity-weighted and typical-attendance-weighted car shares, naming the exact events, configurations, weights and missing coverage. Never add mutually exclusive configurations or count a multi-day total as one simultaneous crowd. Explain whether a few huge outlying venues obscure the downtown pattern. Identify venue clusters, shared roads and shared audiences as separate findings; do not invent a new distance rule or manual hard-access flags.
 
+## Gaps from the first 26 city builds (answer every item)
+
+These came out of the first 26 city builds (Oct 2026). Each one cost a city something when the research skipped it. Give a source link for every fact. If you can't find a source, write "gap" and say what you searched. Never make up a number.
+
+1. **Name and code.** The display name for Miami, a short form, and a three-letter code (lead: MIA; verify against what local teams and media use). List which cities and suburbs it covers (Miami-Dade and Broward; say whether Palm Beach is in). Tampa Bay is the precedent: locals and every team say "Tampa Bay" and it covers St. Pete and Clearwater, so the name changed while the code stayed TPA.
+2. **City type.** Transit hub, mixed, or car-first, based on measured fan mode splits at each major venue. For every split give the year, venue, event type and source.
+3. **Car share per venue.** Measured if possible. If not, give a sourced estimate and label it **estimated**. Estimates now go into the app marked as estimated. Never give a number without a source.
+4. **Hand-off.** Key every car share to the venue rows in the companion venue answer, so a builder can wire them without guessing which room you meant.
+
+**Build rules (for whoever turns this answer into app data; put these in the answer as notes):**
+- Every venue ID and team ID must be unique across all cities. Check for collisions: `giants`, `jets`, `rangers`, `kings` and `cardinals` were already taken, so add a city prefix.
+- Don't make a separate per-city opponents file. Opponent draws go into `expectedDrawIndex` like every other city.
+- Never guess a capacity. A missing or range-only figure stays blank and goes on the city gaps list.
+- Car shares: wire measured ones; wire sourced estimates marked estimated; leave the rest on the city default.
+
 ## End with
 1. Recommended existing city type and rationale; strongest contrary evidence.
 2. Car-share values keyed to the exact venue rows in the companion answer; separate measured, projected and estimated values.
 3. Boundary recommendation and inconsistencies between briefs.
 4. Important data gaps, model limitations, source conflicts and inaccessible sources.
 5. Confirmed transport or venue changes through 2028, with dates and suggested re-check dates; distinguish scheduled/funded changes from proposals.
+6. Every item under "Gaps from the first 26 city builds", answered or marked as a gap.
 
 Use public data only. Do not provide app code, hand flags, personal ratings, or cost commitments. Flag a source that cannot be accessed normally; do not bypass access controls.
