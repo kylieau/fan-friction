@@ -2498,6 +2498,122 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "16:25"
   },
   {
+    "eventId": "2026-10-10-espn-duquesne-football-401867911",
+    "metroId": "pittsburgh",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "homeTeamId": "duquesne-football",
+    "home": {
+      "name": "Duquesne",
+      "score": 14
+    },
+    "away": {
+      "name": "Long Island",
+      "score": 17
+    },
+    "attendance": 2572,
+    "capturedAt": "2026-10-13T07:23:06.254Z",
+    "duration": {
+      "minutes": 183,
+      "kind": "estimated"
+    },
+    "startedAt": "13:05"
+  },
+  {
+    "eventId": "2026-10-10-espn-penguins-401892475",
+    "metroId": "pittsburgh",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ppg-paints-arena",
+    "homeTeamId": "penguins",
+    "home": {
+      "name": "Penguins",
+      "score": 2
+    },
+    "away": {
+      "name": "Stars",
+      "score": 1
+    },
+    "attendance": 18192,
+    "note": "SO",
+    "capturedAt": "2026-10-13T07:23:06.254Z",
+    "duration": {
+      "minutes": 167,
+      "kind": "estimated"
+    },
+    "startedAt": "19:08"
+  },
+  {
+    "eventId": "2026-10-10-espn-pitt-football-401858256",
+    "metroId": "pittsburgh",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "acrisure-stadium",
+    "homeTeamId": "pitt-football",
+    "home": {
+      "name": "Pitt",
+      "score": 17
+    },
+    "away": {
+      "name": "North Carolina",
+      "score": 21
+    },
+    "attendance": 51416,
+    "capturedAt": "2026-10-13T07:23:06.254Z",
+    "duration": {
+      "minutes": 198,
+      "kind": "estimated"
+    },
+    "startedAt": "12:05"
+  },
+  {
+    "eventId": "2026-10-10-espn-riverhounds-401842278",
+    "metroId": "pittsburgh",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "fnb-stadium",
+    "homeTeamId": "riverhounds",
+    "home": {
+      "name": "Pittsburgh",
+      "score": 2
+    },
+    "away": {
+      "name": "Hartford",
+      "score": 1
+    },
+    "attendance": 5110,
+    "capturedAt": "2026-10-13T07:23:06.254Z"
+  },
+  {
+    "eventId": "2026-10-11-espn-steelers-401872985",
+    "metroId": "pittsburgh",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "acrisure-stadium",
+    "homeTeamId": "steelers",
+    "home": {
+      "name": "Steelers",
+      "score": 34
+    },
+    "away": {
+      "name": "Colts",
+      "score": 22
+    },
+    "attendance": 66503,
+    "capturedAt": "2026-10-13T07:23:06.254Z",
+    "duration": {
+      "minutes": 186,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
     "eventId": "2026-10-10-espn-psu-football-401868156",
     "metroId": "portland",
     "date": "2026-10-10",

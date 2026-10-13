@@ -42073,6 +42073,108 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-17-espn-robert-morris-football-401867920",
+    "date": "2026-10-17",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2446,
+      "low": 2107,
+      "high": 2690
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-22-espn-penguins-401892556",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16176,
+      "low": 14542,
+      "high": 17065
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-duquesne-football-401867931",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2961,
+      "low": 2484,
+      "high": 2987
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-penguins-401892570",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17191,
+      "low": 16368,
+      "high": 17650
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-riverhounds-401842308",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 4916,
+      "low": 4874,
+      "high": 5405
+    }
+  },
+  {
+    "metroId": "pittsburgh",
+    "eventId": "2026-10-24-espn-robert-morris-football-401867921",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:23:04.639Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2446,
+      "low": 2107,
+      "high": 2690
+    }
+  },
+  {
     "metroId": "portland",
     "eventId": "2026-10-13-tm-vvG1HZ_1xuGMaR",
     "date": "2026-10-13",

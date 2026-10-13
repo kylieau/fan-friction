@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'detroit', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'miami', 'columbus', 'cleveland', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'salt-lake-city', 'ottawa-gatineau', 'edmonton', 'washington-dc', 'san-antonio', 'portland'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'detroit', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'pittsburgh', 'tampa', 'miami', 'columbus', 'cleveland', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'salt-lake-city', 'ottawa-gatineau', 'edmonton', 'washington-dc', 'san-antonio', 'portland'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -296,6 +296,15 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-90.09, 29.97],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/pittsburgh/pittsburgh-venue-table-answer.md): eight-county MSA,
+  // Allegheny core. One frame holds the North Shore, Downtown and Oakland; Star Lake, Butler County and Washington County rooms sit off it.
+  pittsburgh: {
+    id: 'pittsburgh', code: 'PIT',
+    name: 'Pittsburgh',
+    timeZone: 'America/New_York',
+    center: [-79.99, 40.44],
+    zoom: 10.5,
   },
   // Covered Oct 13, 2026 (docs/research/city-builds/portland/portland-venue-table-answer.md): Multnomah, Washington,
   // Clackamas and Clark counties. One frame holds downtown, Goose Hollow and the Rose Quarter; Hillsboro, Ridgefield
