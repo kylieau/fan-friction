@@ -543,8 +543,8 @@ function EventRow({
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
         <span className="event-tagline">
-          <EventTags event={e} />
           {venue && <span className="event-venue">{venue}</span>}
+          <EventTags event={e} />
         </span>
         {stakes && <span className="event-stakes">{stakes}</span>}
       </span>

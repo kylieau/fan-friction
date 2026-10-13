@@ -79,21 +79,45 @@ export function WeekCalendar({
 
   // The list moved to another week: follow it, unless a finger was just on the calendar.
   useEffect(() => {
-    if (Date.now() < holdUntil.current) return;
+    if (Date.now() < holdUntil.current) {
+      scheduleSync();
+      return;
+    }
     scrollToRow(leadIndex, true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [leadIndex]);
+
+  // A hold is the calendar being scrolled by hand (not a tap). When it ends, the calendar catches up with
+  // the list's week if that row is not on screen, so the bar marker is never left off screen.
+  const syncTimer = useRef<number | undefined>(undefined);
+  const leadRef = useRef(leadIndex);
+  leadRef.current = leadIndex;
+  const firstRowRef = useRef(firstRow);
+  firstRowRef.current = firstRow;
+  const scheduleSync = () => {
+    window.clearTimeout(syncTimer.current);
+    syncTimer.current = window.setTimeout(() => {
+      if (Date.now() < holdUntil.current) return scheduleSync();
+      const lead = leadRef.current;
+      if (lead < firstRowRef.current || lead > firstRowRef.current + 2) scrollToRow(lead, true);
+    }, Math.max(60, holdUntil.current - Date.now() + 60));
+  };
+  useEffect(() => () => window.clearTimeout(syncTimer.current), []);
 
   const onScroll = () => {
     const el = scroller.current;
     if (!el) return;
     const index = Math.max(0, Math.round(el.scrollTop / rowHeight()));
-    if (Date.now() > programmatic.current) holdUntil.current = Date.now() + HOLD_MS;
+    if (Date.now() > programmatic.current) {
+      holdUntil.current = Date.now() + HOLD_MS;
+      scheduleSync();
+    }
     setFirstRow((cur) => (cur === index ? cur : index));
     onNeed(mondays.slice(index, index + AHEAD_ROWS));
   };
   const hold = () => {
     holdUntil.current = Date.now() + HOLD_MS;
+    scheduleSync();
   };
 
   // The month label follows this calendar's own rows, not the list.
@@ -110,7 +134,7 @@ export function WeekCalendar({
         ))}
       </div>
       <div className="week-calendar-viewport">
-        <div className="week-calendar-scroll" ref={scroller} onScroll={onScroll} onPointerDown={hold} onWheel={hold} onTouchStart={hold}>
+        <div className="week-calendar-scroll" ref={scroller} onScroll={onScroll} onWheel={hold} onTouchMove={hold}>
           {mondays.map((monday) => (
             <div className="week-calendar-row" key={monday}>
               {weekOf(monday).map((date) => {

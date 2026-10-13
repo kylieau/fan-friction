@@ -195,8 +195,8 @@ export function HomeScreen() {
                   <span className="log-main">
                     <span className="log-title">{mapTitle(e, tonight)}</span>
                     <span className="event-tagline">
-                      <EventTags event={e} />
                       {venueOf(e) && <span className="event-venue">{venueOf(e)}</span>}
+                      <EventTags event={e} />
                     </span>
                   </span>
                   {/* Time on the right under the crowd, matching Explore (build notes 2, two tags). */}

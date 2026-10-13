@@ -14,6 +14,7 @@ Every doc lives in a sub-folder: `docs/product/`, `docs/reference/`, `docs/check
   - **New stub** page title, event · date line, first-visit "Saved to your Stubs", "Edit stub".
   - **Favorite cities** (star in the switcher, pinned under home, newer-wins sync in `settings.data`); **weather** on the Map's tapped card (open-air only); **seats** (Attended only; a Where dropdown: Seat (Section · Row · Seat free text) or GA, Floor, Pit, Lawn, Standing room); the **story slot** (empty seed file).
   - **Fixes from the flags:** a game played in another covered city belongs to that city (`src/data/sources/venueMetro.ts`; the nightly writer files rows under the fetching pass and `data.metroId` carries the venue's city); °C in Canada and Mexico (`usesCelsius`, `degreesFor`); hand-added plans have a page; Home says "Stub your first event".
+- **Density pass (Kylie, Oct 13):** every tab's controls shrank together (titles 22 pt, 36 px round buttons, 40 px main buttons, 18 px badges at 11 pt, tap areas kept via invisible extensions); the List's day bands use a one-line read; the venue and badges share a line on every event list; the calendar is its own scroller of squares with a half-row peek (see product-decisions, "Explore density and calendar").
 - **40 covered metros** (`COVERED_METRO_IDS`); each city build has a follow-up under BACKLOG › Next. Kylie approved the Oct 12–13 city builds' scope (Oct 13).
 - **Nightly job:** the next run re-files the Lakers (Las Vegas) and Spurs (Austin) rows under their venue's city.
 

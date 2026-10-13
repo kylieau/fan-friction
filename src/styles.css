@@ -7550,12 +7550,38 @@ button.back-link {
 .day-nav-today::after,
 .filter-chip::after,
 .stub-tags-add::after,
-.activity-chip::after,
 .today-pill::after,
 .segmented button::after {
   content: '';
   position: absolute;
-  inset: -7px -4px;
+  inset: -7px 0;
+}
+
+/* The Friends-activity chip draws its slash on ::after, so its tap area uses ::before. */
+.activity-chip::before {
+  content: '';
+  position: absolute;
+  inset: -7px 0;
+}
+
+.gold-button,
+.stub-choice,
+.gold-button.small,
+.stub-it-small {
+  position: relative;
+}
+
+.gold-button::after,
+.stub-choice::after {
+  content: '';
+  position: absolute;
+  inset: -2px 0;
+}
+
+/* The chip rows scroll sideways, which also clips up and down: room above and below keeps the extended taps whole. */
+.filter-row {
+  padding-block: 7px;
+  margin-block: -7px;
 }
 
 .day-nav-step,
@@ -7823,4 +7849,45 @@ button.back-link {
   margin-left: -7px;
   border-radius: 2px;
   background: var(--dodger);
+}
+
+/* Badges everywhere (Kylie, Oct 13: "shrink everywhere so that it's consistent"): 18 px tall, 11 pt text. */
+.tag-occasion {
+  height: 18px;
+  padding: 0 5px;
+  font-size: 11px;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+}
+
+.chip.chip-f {
+  height: 18px;
+  padding: 0 7px;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+/* The venue and the badges share one line wherever events are listed. */
+.event-tagline {
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+.event-tagline .event-venue {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-tagline .event-tags {
+  flex: 0 0 auto;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+/* A segment's words stay on one line (the You tab's "This year" wrapped under the new sizes). */
+.segmented button {
+  white-space: nowrap;
 }
