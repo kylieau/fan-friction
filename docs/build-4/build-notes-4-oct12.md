@@ -520,3 +520,66 @@ Words used below: **sprawl** = most fans drive; **hub** = in between (some trans
 ### Open points
 - A11 vs the follow-up prompts: the 14 follow-up prompts already ask for name and code, but say "three-letter code". Either treat those answers as the A11 research (reading codes as A1's 2–4 letter fan label), or write a separate prompt. Not settled.
 - F doesn't place B1, B3, B5, B8, C3–C8; they're tagged by group above.
+
+## Parked backlog moved into build 4 (Kylie, Oct 13, ~8:32 AM PT)
+
+Kylie decided on Oct 13 that the parked backlog moves into build 4. The six items are below. Each one quotes earlier decisions and names their source. If an item has no settled spec, the section says what is settled and lists the open questions. Nothing here is a new spec. Builders: if it isn't settled here or in the plan, stop and ask.
+
+### P1. Favorite cities on the metro switcher
+**Prior decisions:**
+- `BACKLOG.md` (Next, "Parked"): "favorite cities on the metro switcher (one home city is separate, and it is stored on this device)".
+- `AGENTS.md` (Home): "Home is one city on this device. … Looking at another city does not change home. The city switcher shows a house icon on that city."
+- `docs/reviews/build-notes-oct9.md` 3.20: remove "Set as home" from the city rows; the house icon stays on the home city; changing home moves to Settings.
+
+**Settled:** favorites are a separate thing from home. There is one home city, and it keeps its house icon.
+
+**Open questions:** Where do favorites show in the switcher (pinned at the top, or a separate group)? How do you add or remove a favorite (a star on the row, or Settings)? Is there a limit? Are favorites stored on the device or in the account (see P2)? Does a favorite change anything other than the switcher's order?
+
+### P2. Supabase: shared catalog and seed events, You tab local until sync is needed, accounts
+**Prior decisions:**
+- `BACKLOG.md` (Saving and accounts), Kylie, Oct 4: "catalog and seed events should live in Supabase as shared truth, not only repo JSON. Schedules and crowd figures are shared … You-tab personal logs (I was there, notes, plans) should also move to Supabase eventually".
+- Same section: "Catalog events first, then You, only after she pastes a project URL, the public anon key, and the spec." "The adapter must not call the network until those keys exist. Do not invent the account contents before she writes them."
+- `AGENTS.md` and `BACKLOG.md` step 4: "Accounts will also hold home city, favorite teams, and artists. The spec comes from Kylie."
+- `BACKLOG.md` (Accounts): "Still to move into the account: home city, 'tips seen'. Following's 'favorite teams/artists' waits." 🚩 The free plan allows 2 active projects, and a project pauses when idle.
+
+**Kylie, Oct 13:** this is blocked until she sends the Supabase project URL and the anon key. Build the schema and client code behind config, so it can be switched on later.
+
+**Settled:** catalog and seed events are shared truth. The You tab stays on the device until sync is needed. Accounts hold home city, favorite teams and favorite artists. Nothing calls the network until the URL and key are set (`VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `src/data/storage/supabaseClient.ts`). With the config off, the app works exactly as it does now.
+
+**Conflict to resolve first:** the repo already shows a connected Supabase. `BACKLOG.md` says "Accounts are live (Oct 5)". There are 25 migrations in `supabase/migrations/`, including `0007_catalog.sql`, and saving signed in already uses `supabaseStore`. Sol must check: is the Oct 13 URL and key for a new project, or for the one already in use? Do "You tab stays local" and the existing account sync conflict?
+
+**Open questions:** Which tables and columns hold home city, favorite teams and favorite artists? Is that the existing `profiles` table or a new one? Are favorite cities (P1) in the account too? Which RLS rules apply? What counts as "sync is needed" for the You tab? Is the catalog table in `0007` the shared truth, or does it need to be redone? Kylie writes the account spec. Do not invent it.
+
+### P3. Nights tab per city or area
+**Prior decision:** `BACKLOG.md`, Kylie, Oct 4: "Nights tab is per city/area. Same metro scope as the Map switcher. Needs a backend/data mechanism (nights filtered by metro) and visual chrome later."
+
+**Settled:** the scope is the same metro scope as the Map switcher, and nights are filtered by metro.
+
+**Open questions:** The tabs are now Home · Explore · Favorites · You (`BACKLOG.md`, Oct 5). Which screen is "Nights" today: You's Your nights, or Explore? How does the city get picked (follows the switcher, or has its own control)? What does a night spanning two metros do? Is there an "All cities" view? The visual chrome isn't designed yet.
+
+### P4. Event page "The night" story, plus the Step 7 leftovers after Traffic
+**Prior decisions:**
+- `BACKLOG.md` Step 7, Kylie, Oct 4: Night story is "event page only, under Crowds/Traffic, not on You; section label 'The night'; a short paragraph then a few text links (source names); no screenshots or embedded posts; white content card and ink type; omit the whole block when there is no story (no empty state); Save this night / I was there stay above it; hand-seed early nights first."
+- Same item: "Still to do, after Traffic: results and attendance after games, BMO Stadium/LAFC and Angel City, UCLA basketball, concerts, and Night story. Concerts come from Ticketmaster first (🚩 needs a free developer key; ask Kylie before signing up)."
+- `BACKLOG.md` Step 6: Traffic is parked ("Do not start it").
+
+**Settled:** the Night story layout and copy rules above are settled.
+
+**Open questions:** Traffic is still parked, but these items were "after Traffic". Does build 4 skip Traffic, or does Traffic move in too? Who writes the hand-seeded stories, and for which nights? Where do results and attendance come from for each league? Is Ticketmaster already in use (the code has `ticketmasterSource.ts`), so the 🚩 about the key is closed? Do BMO/LAFC, Angel City and UCLA basketball need their own sources?
+
+### P5. Weather UI (locked) and the rich outdoor Forecast (not locked)
+**Prior decisions:**
+- `docs/product/product-decisions.md`, Kylie, Oct 4: "Today can show one metro feels-like. … That number is not copied onto venue lines. The chip shows the degrees, not a city prefix. A per-event degree on the selected venue line and the event page is not built. A rich outdoor Forecast is parked."
+- `BACKLOG.md` (Weather, Oct 5): "Weather at the start hour is the headline; the event page also shows the feels-like range across the event. The date page shows start-hour only." Also: "Map and date headers show the city's feels-like low and high every day" (Oct 6).
+
+**Locked (Kylie):** a metro temperature chip on the city. Per-event degrees only on the selected venue and the event page, never on every venue line.
+
+**Not locked: the rich outdoor event-page Forecast.** It was parked as a Mock Mosaic recommendation. **It needs Kylie's lock before anyone builds it.**
+
+**Open questions:** Does the metro chip replace or sit next to the header's feels-like low/high? What does the rich Forecast show (hourly, rain, wind, roof note)? Is it outdoor venues only? The retractable-roof note is also unbuilt (`BACKLOG.md` Weather).
+
+### P6. Queued notes
+- **Hide add-on listings.** Kylie, Oct 7 (gap review K1): "hide add-ons (pre-game passes, parking, VIP/premium/club/experience, 'Not an Event Ticket') from display, ideally by filtering them rather than deleting them from the data." `docs/reviews/build-notes-oct9.md` C001: "add 'Premium', 'Pass', 'Club' and 'Not an Event Ticket' to the add-on filter, and apply the filter to shows." The code already has that filter (`src/data/sources/ticketmasterSource.ts`, about line 78). Spec settled. Sol checks what is left, such as the add-on lists in the city research (Austin, Raleigh–Durham, Cleveland, Mexico City).
+- **"Change home…".** Kylie liked it (gap review K3): "one 'Change home…' item at the bottom, under a divider … reopens the first-run 'Where's home?' picker." **Conflict:** `docs/reviews/build-notes-oct9.md` 3.20 later superseded it: "no 'Change home…' item in the switcher; changing home moves to Settings". Settings already has it (`src/screens/SettingsScreen.tsx`). Open question: should the switcher row come back as well, or does Settings stay the only place?
+- **Type icons option C plus 20k rounding.** `docs/reviews/build-notes-oct9.md` 3.18: "a one-color Material Symbols Rounded type icon in #005A9C at the start of chip line 2, before the time. Round the crowd ('20k') so line 2 fits." C073: compact ("20k") on small surfaces and full numbers where there's room. `src/map/typeIcons.ts` exists. Spec settled. Sol checks it against the 1.9 chip activity line in this file, which says "no restyle".
+- **Playoff estimate research.** Gap review K2/A6: college postseason has no estimate. WNBA, NFL and NWSL fall back to the building's capacity. A research prompt asks for "per-league sellout rates by round … a simple rule with a range". Settled: a playoff with no history falls back to building size (lock, Oct 7). Open: run the research, then decide the rule. This is research, not a build step. "If necessary" games (B3) are still open too.
