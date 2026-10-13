@@ -50,7 +50,8 @@ export function StubsScreen() {
   const [picked, setPicked] = useState<string[]>([]);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [tagQuery, setTagQuery] = useState('');
-  const known = useMemo(() => tagSummaries(log.added, log.plans), [log]);
+  // The picker filters Recent, so it lists the tags on your stubs; plans carry theirs into a stub later.
+  const known = useMemo(() => tagSummaries(log.added, []), [log]);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     clearOpenedFromMap();

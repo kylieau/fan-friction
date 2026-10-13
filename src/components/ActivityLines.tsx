@@ -132,9 +132,15 @@ function RowTags({ tags, max, onTag }: { tags: string[]; max: number; onTag?: (t
       }
     };
     measure();
+    // The web fonts can arrive after first paint and change every width.
+    let live = true;
+    void document.fonts?.ready.then(() => live && measure());
     const watch = new ResizeObserver(measure);
     watch.observe(el);
-    return () => watch.disconnect();
+    return () => {
+      live = false;
+      watch.disconnect();
+    };
   }, [key, max]);
   const hidden = tags.length - fit;
   return (

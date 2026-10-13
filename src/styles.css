@@ -7294,3 +7294,35 @@ button.back-link {
 .tag-chip.is-row::after {
   clip-path: polygon(8.5px 0, 100% 0, 100% 100%, 8.5px 100%, 0 50%);
 }
+
+/* A tag on a row takes taps in a strip around the 18 px chip (44 pt via padding, build notes 4);
+   the rest of the row still opens the event. */
+.stub-row .tag-chip.is-row .tag-chip-body {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin: -13px 0;
+  height: auto;
+  box-sizing: content-box;
+  align-items: center;
+}
+
+/* A Stubs row is a div with one link laid over it, so a tag on it can be its own button (build notes 4, tags 4). */
+.stub-row {
+  position: relative;
+}
+
+.stub-row-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.stub-row > :not(.stub-row-link) {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.stub-row .tag-chip-body {
+  pointer-events: auto;
+}

@@ -54,7 +54,7 @@ import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
-import { comparePath, datePath, openedMetroId, eventPath } from '../lib/view';
+import { comparePath, datePath, openedMetroId, eventPath, tagPath } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
@@ -65,6 +65,7 @@ const fmt = (n: number) => n.toLocaleString('en-US');
 // the crowd as labeled evidence, and what else was on at the same time.
 export function EventScreen() {
   const { id = '' } = useParams();
+  const navigate = useNavigate();
   const [params] = useSearchParams();
   const date = id.slice(0, 10);
   const requestedMetro = params.get('metro');
@@ -231,7 +232,7 @@ export function EventScreen() {
         </button>
         {you && (
           <span className="event-status">
-            <StatusLine kind={you.kind} share={youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} />
+            <StatusLine kind={you.kind} share={youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} onTag={(tag) => navigate(tagPath(tag))} />
             {you.kind !== 'interested' && (youRow?.userTags?.length ?? 0) > 0 && (
               <button type="button" className="link-button" onClick={() => setSheet(true)}>
                 Edit

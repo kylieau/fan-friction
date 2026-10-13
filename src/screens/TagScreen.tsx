@@ -29,7 +29,7 @@ import { TagChip } from '../components/TagChip';
  */
 export function TagScreen() {
   const { tag: raw = '' } = useParams();
-  const tag = decodeURIComponent(raw);
+  const tag = raw;
   const navigate = useNavigate();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [menu, setMenu] = useState<'closed' | 'open' | 'rename' | 'merge' | 'delete'>('closed');
@@ -87,7 +87,7 @@ export function TagScreen() {
           …
         </button>
       </div>
-      <p className="you-fine tag-page-summary">{summary}</p>
+      {stubs.length > 0 && <p className="you-fine tag-page-summary">{summary}</p>}
 
       {menu === 'open' && (
         <div className="card tag-menu" role="menu">
