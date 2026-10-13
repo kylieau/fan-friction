@@ -9948,34 +9948,22 @@ export const VENUES: Record<string, Venue> = {
   'real-life-amphitheater': {
     id: 'real-life-amphitheater',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [
       { name: 'Verizon Wireless Amphitheater' },
       { name: 'Real Life Amphitheater', from: '2009-01-01' },
     ],
     location: [-98.3150192, 29.5925988],
-    capacity: [
-      {
-        seats: 6000,
-        setup: 'concert',
-        note: 'Reported seated; 8,000 covered vs 6,000 seated conflict in KSAT 2021. Lawn 12,000–14,000 standing is not added to seats. 2026 concert calendar not verified. Source: https://en.wikipedia.org/wiki/Real_Life_Amphitheater',
-      },
-    ],
+    // Round-2 rule: seated 6,000 vs 8,000 covered conflict (KSAT 2021), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'retama-park': {
     id: 'retama-park',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [{ name: 'Retama Park' }],
     location: [-98.3260978, 29.5902467],
-    capacity: [
-      {
-        seats: 15000,
-        setup: 'racing',
-        note: 'Reported (Stadium Journey, undated). Configuration split unknown. No per-night attendance published. Source: https://www.stadiumjourney.com/stadiums/retama-park-s2893',
-      },
-    ],
+    // Round-2 rule: single undated Stadium Journey figure (15,000), configuration unknown; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'wolff-stadium': {
@@ -10019,7 +10007,6 @@ export const VENUES: Record<string, Venue> = {
   'benson-stadium': {
     id: 'benson-stadium',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [
       { name: 'Gayle and Tom Benson Stadium' },
       { name: 'Benson Stadium' },
@@ -10037,7 +10024,6 @@ export const VENUES: Record<string, Venue> = {
   'cowboys-dancehall': {
     id: 'cowboys-dancehall',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [{ name: 'Cowboys Dancehall' }],
     location: [-98.398163, 29.5175871],
     capacity: [
@@ -10067,7 +10053,6 @@ export const VENUES: Record<string, Venue> = {
   'rj-music-pavilion': {
     id: 'rj-music-pavilion',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [{ name: 'R&J Music Pavilion' }],
     location: [-98.498286, 29.244676],
     capacity: [
@@ -10096,7 +10081,6 @@ export const VENUES: Record<string, Venue> = {
   'utsa-convocation-center': {
     id: 'utsa-convocation-center',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [{ name: 'UTSA Convocation Center' }, { name: 'The Convo' }],
     location: [-98.6173074, 29.5856342],
     capacity: [
@@ -10111,7 +10095,6 @@ export const VENUES: Record<string, Venue> = {
   'flores-country-store-outdoor': {
     id: 'flores-country-store-outdoor',
     metroId: 'san-antonio',
-    carShare: 0.95,
     names: [
       { name: "John T. Floore's Country Store — outdoor stage" },
       { name: "Floore's Country Store" },
@@ -10129,7 +10112,6 @@ export const VENUES: Record<string, Venue> = {
   'the-espee': {
     id: 'the-espee',
     metroId: 'san-antonio',
-    carShare: 0.87,
     names: [{ name: 'The Espee' }, { name: 'Lonestar Pavilion at Sunset Station' }],
     location: [-98.4781511, 29.4215033],
     capacity: [
@@ -10176,7 +10158,6 @@ export const VENUES: Record<string, Venue> = {
   'lila-cockrell-theatre': {
     id: 'lila-cockrell-theatre',
     metroId: 'san-antonio',
-    carShare: 0.87,
     names: [{ name: 'Lila Cockrell Theatre' }],
     location: [-98.4845254, 29.4215304],
     capacity: [
@@ -10191,7 +10172,6 @@ export const VENUES: Record<string, Venue> = {
   'majestic-theatre-sa': {
     id: 'majestic-theatre-sa',
     metroId: 'san-antonio',
-    carShare: 0.87,
     names: [{ name: 'Majestic Theatre' }],
     location: [-98.4908675, 29.4263837],
     capacity: [
@@ -10206,7 +10186,6 @@ export const VENUES: Record<string, Venue> = {
   'tobin-center': {
     id: 'tobin-center',
     metroId: 'san-antonio',
-    carShare: 0.87,
     names: [{ name: 'H-E-B Performance Hall at the Tobin Center' }, { name: 'Tobin Center' }],
     location: [-98.4887624, 29.430651],
     capacity: [
