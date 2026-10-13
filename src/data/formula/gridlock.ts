@@ -91,7 +91,10 @@ const SCALE = 7.5;
 // Kanata is car-dominant while Lansdowne and LeBreton run much lower; venue carShare overrides carry the sourced estimates.
 // Indianapolis is sprawl (research, Oct 12, 2026, docs/research/city-builds/indianapolis/indianapolis-city-type-answer.md):
 // event transit use is tiny where bounded; suburban rooms are parking-led. Estimated car shares are wired on venues (C04, Oct 12).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub' };
+// Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
+// downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
+// values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -294,6 +297,19 @@ const ZONE_NAMES: Record<string, string> = {
   'caesars-superdome': 'Superdome complex',
   'smoothie-king-center': 'Superdome complex',
   'anderson-arena': 'St. Thomas',
+  // Salt Lake City clusters (city-type answer §5c): downtown arena district, Fairpark, university campus.
+  'delta-center': 'Downtown',
+  'conference-center-slc': 'Downtown',
+  'abravanel-hall': 'Downtown',
+  'eccles-theater-slc': 'Downtown',
+  'capitol-theatre-slc': 'Downtown',
+  'days-of-47-arena': 'Fairpark',
+  'rice-eccles-stadium': 'University of Utah',
+  'jon-m-huntsman-center': 'University of Utah',
+  'utah-first-credit-union-amphitheatre': 'West Valley City',
+  'maverik-center': 'West Valley City',
+  'america-first-field': 'Sandy',
+  'ballpark-at-america-first-square': 'Daybreak',
 };
 
 export interface Zone {

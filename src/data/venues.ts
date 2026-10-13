@@ -8790,6 +8790,195 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+
+  // Salt Lake City (docs/research/city-builds/salt-lake-city/, Oct 13, 2026). Salt Lake County core.
+  // carShare values are from the city-type answer (estimated, or agency-derived for Rice-Eccles football).
+  // Coordinates: OpenStreetMap Nominatim by building name, Oct 13, 2026.
+  'delta-center': {
+    id: 'delta-center',
+    metroId: 'salt-lake-city',
+    carShare: 0.8,
+    names: [
+      { name: 'Vivint Smart Home Arena' },
+      { name: 'Vivint Arena' },
+      { name: 'Delta Center', from: '2023-07-01' },
+    ],
+    location: [-111.9010551, 40.7683274],
+    capacity: [
+      { seats: 17867, setup: 'basketball', fromYear: 2026, note: 'Official, 2026-27 Jazz layout. Was 18,206 pre-renovation. Source: https://www.deseret.com/sports/2026/09/25/delta-center-renovations-revealed-for-2026-2027-utah-jazz-season/' },
+      { seats: 14111, setup: 'hockey', fromYear: 2026, note: 'Official, 2026-27 Mammoth layout excluding obstructed-view seats; obstructed seats may still be sold. Source: https://www.deseret.com/sports/2026/09/25/delta-center-renovations-2026-27-utah-mammoth/' },
+      { seats: 20000, setup: 'concert', note: 'Reported pre-renovation concert maximum; re-verify after phase 3. Source: https://en.wikipedia.org/wiki/Delta_Center' },
+    ],
+    roof: 'indoor',
+  },
+  'rice-eccles-stadium': {
+    id: 'rice-eccles-stadium',
+    metroId: 'salt-lake-city',
+    // Agency estimate anchor (~20% TRAX at BYU–Utah 2024); car share derived (city-type V04).
+    carShare: 0.75,
+    names: [{ name: 'Rice-Eccles Stadium' }, { name: 'Rice Stadium' }],
+    location: [-111.8489131, 40.7598165],
+    capacity: [
+      { seats: 51444, setup: 'football', fromYear: 2021, note: 'Official seated capacity since Ken Garff Red Zone (2021). Record crowds have exceeded listed seats. Source: https://utahutes.com/facilities/detail/3' },
+    ],
+    roof: 'open',
+  },
+  'america-first-field': {
+    id: 'america-first-field',
+    metroId: 'salt-lake-city',
+    carShare: 0.88,
+    names: [{ name: 'Rio Tinto Stadium' }, { name: 'America First Field', from: '2022-09-10' }],
+    location: [-111.8932933, 40.5829593],
+    capacity: [
+      { seats: 20213, setup: 'soccer', note: 'Official sports-commission listing for MLS/NWSL soccer. Concert capacity not verified. Source: https://utahsportscommission.com/venues/america-first-field/' },
+      { seats: 25000, setup: 'concert', note: 'Reported concert total with field standing; not seated capacity. Source: https://en.wikipedia.org/wiki/America_First_Field' },
+    ],
+    roof: 'open',
+  },
+  'utah-first-credit-union-amphitheatre': {
+    id: 'utah-first-credit-union-amphitheatre',
+    metroId: 'salt-lake-city',
+    carShare: 0.95,
+    names: [{ name: 'USANA Amphitheatre' }, { name: 'Utah First Credit Union Amphitheatre', from: '2024-01-23' }],
+    location: [-112.0354658, 40.6575928],
+    capacity: [
+      { seats: 7000, setup: 'concert', note: 'Reported fixed pavilion seats. Lawn is general admission (18,000 reported) and is not added to this seated figure. Capacity total conflicts 25,000 vs 20,000 — seated row uses 7,000. Source: https://en.wikipedia.org/wiki/Utah_First_Credit_Union_Amphitheatre' },
+    ],
+    roof: 'open',
+  },
+  'jon-m-huntsman-center': {
+    id: 'jon-m-huntsman-center',
+    metroId: 'salt-lake-city',
+    carShare: 0.82,
+    names: [{ name: 'Jon M. Huntsman Center' }, { name: 'University of Utah Special Events Center' }],
+    location: [-111.8387946, 40.7620351],
+    capacity: [
+      { seats: 15000, note: 'Official full-bowl figure; Red Rocks gymnastics is the largest regular draw. Source: https://utahutes.com/news/2026/6/29/general-university-of-utah-exploring-options-to-upgrade-and-modernize-jon-m-huntsman-center' },
+      { seats: 8500, setup: 'basketball', fromYear: 2020, note: 'Reported lower-bowl basketball with upper bowl curtained since 2020-21. Source: https://kslsports.com/?p=432692' },
+    ],
+    roof: 'indoor',
+  },
+  'maverik-center': {
+    id: 'maverik-center',
+    metroId: 'salt-lake-city',
+    carShare: 0.92,
+    names: [{ name: 'E Center' }, { name: 'Maverik Center', from: '2010-01-01' }],
+    location: [-111.9505424, 40.7027870],
+    capacity: [
+      { seats: 10100, setup: 'hockey', note: 'Reported hockey capacity. Utah Grizzlies departed after 2025-26; G League Stars remain. Source: https://en.wikipedia.org/wiki/Maverik_Center' },
+      { seats: 12000, setup: 'concert', note: 'Reported concert maximum. Source: https://utahsportscommission.com/venues/maverik-center/' },
+    ],
+    roof: 'indoor',
+  },
+  'days-of-47-arena': {
+    id: 'days-of-47-arena',
+    metroId: 'salt-lake-city',
+    carShare: 0.88,
+    names: [{ name: "Days of '47 Arena" }, { name: 'Utah State Fairpark Arena' }],
+    location: [-111.9248087, 40.7745295],
+    capacity: [
+      { seats: 10000, setup: 'concert', note: 'Official state legislature presentation (stadium-style seats). Listing 10,240 not used. Rodeo and concerts share the bowl. Source: https://le.utah.gov/interim/2025/pdf/00000313.pdf' },
+    ],
+    roof: 'open',
+  },
+  'ballpark-at-america-first-square': {
+    id: 'ballpark-at-america-first-square',
+    metroId: 'salt-lake-city',
+    carShare: 0.88,
+    names: [
+      { name: 'Daybreak Field at America First Square' },
+      { name: 'The Ballpark at America First Square', from: '2025-04-08' },
+    ],
+    location: [-112.0223733, 40.5496424],
+    capacity: [
+      { seats: 6500, setup: 'baseball', note: 'Official announcement: 6,500 fixed seats plus 1,500 lawn (8,000 total). Fan-site 8,500 conflict preserved in research. Source: https://www.kpcw.org/state-regional/2024-05-30/new-salt-lake-bees-stadium-in-daybreak-has-new-renderings-and-a-new-name' },
+    ],
+    roof: 'open',
+  },
+  'conference-center-slc': {
+    id: 'conference-center-slc',
+    metroId: 'salt-lake-city',
+    carShare: 0.75,
+    names: [{ name: 'Conference Center' }],
+    location: [-111.8923229, 40.7725907],
+    capacity: [
+      { seats: 21000, setup: 'concert', note: 'Official room capacity for Tabernacle Choir Christmas concerts and similar ticketed performances. General Conference sessions are religious programming, not commercial shows. Source: https://newsroom.churchofjesuschrist.org/article/thousands-gather-for-tabernacle-choir-2024-christmas-concert' },
+    ],
+    roof: 'indoor',
+  },
+  'smiths-ballpark': {
+    id: 'smiths-ballpark',
+    metroId: 'salt-lake-city',
+    names: [
+      { name: 'Franklin Covey Field' },
+      { name: "Smith's Ballpark", from: '2015-01-01' },
+    ],
+    location: [-111.8935155, 40.7407084],
+    capacity: [
+      { seats: 14511, setup: 'baseball', note: 'Official U of U page. No tenant since Bees left after 2024; one-off events only. Do not match Bees feeds here after 2024. Source: https://ballpark.utah.edu/' },
+    ],
+    roof: 'open',
+  },
+  'abravanel-hall': {
+    id: 'abravanel-hall',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Maurice Abravanel Hall' }, { name: 'Abravanel Hall' }],
+    location: [-111.8952847, 40.7684652],
+    capacity: [
+      { seats: 2811, setup: 'concert', note: 'Reported (Preservation Utah). Conflicts 2,766 / 2,768 in other sources. Renovation could start 2027. Source: https://www.preservationutah.org/properties/abravanel-hall' },
+    ],
+    roof: 'indoor',
+  },
+  'eccles-theater-slc': {
+    id: 'eccles-theater-slc',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Eccles Theater' }, { name: 'George S. and Dolores Doré Eccles Theater' }],
+    location: [-111.8903599, 40.7663242],
+    capacity: [
+      { seats: 2468, setup: 'concert', note: 'Reported (Salt Lake Tribune arts venues comparison). Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'salt-lake-tabernacle': {
+    id: 'salt-lake-tabernacle',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Salt Lake Tabernacle' }],
+    location: [-111.8940, 40.7704],
+    capacity: [
+      { seats: 3500, setup: 'concert', note: 'Reported (Salt Lake Tribune). Choir/organ programming. Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'capitol-theatre-slc': {
+    id: 'capitol-theatre-slc',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Capitol Theatre' }],
+    location: [-111.8938, 40.7674],
+    capacity: [
+      { seats: 1876, setup: 'concert', note: 'Reported (Salt Lake Tribune). County-owned; Ballet West and Utah Opera. Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'kingsbury-hall': {
+    id: 'kingsbury-hall',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Kingsbury Hall' }],
+    location: [-111.8475, 40.7648],
+    capacity: [
+      { seats: 1992, setup: 'concert', note: 'Reported (Salt Lake Tribune). Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'utah-first-ballpark': {
+    id: 'utah-first-ballpark',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'America First Ballpark' }, { name: 'Charlie Monfort Field at America First Ballpark' }],
+    location: [-111.8455, 40.7610],
+    capacity: [
+      { seats: 1200, setup: 'baseball', note: 'Reported Utes baseball home (opened Jan 2026). Name collides with America First Field and the Bees ballpark — match exact strings. Source: https://www.sltrib.com/sports/utah-utes/2025/05/19/utah-baseball-plays-last-game/' },
+    ],
+    roof: 'open',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|ottawa|gatineau|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -288,6 +288,17 @@ const LIST: Team[] = [
   team("lsuno-baseball", "LSU New Orleans Privateers Baseball", "LSUNO Baseball", "College baseball", "baseball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
   team("laketown-squadron", "Laketown Squadron", "Squadron", "NBA G League", "basketball", "new-orleans", "LKT"),
   team("new-orleans-jesters", "New Orleans Jesters", "Jesters", "NPSL", "soccer", "new-orleans", "JES"),
+  // Salt Lake City (Oct 13, 2026; docs/research/city-builds/salt-lake-city/). Feed ids checked against live schedules.
+  team("utah-jazz", "Utah Jazz", "Jazz", "NBA", "basketball", "salt-lake-city", "UTA"),
+  team("utah-mammoth", "Utah Mammoth", "Mammoth", "NHL", "hockey", "salt-lake-city", "UTA", ["Utah Hockey Club"]),
+  team("real-salt-lake", "Real Salt Lake", "Real Salt Lake", "MLS", "soccer", "salt-lake-city", "RSL"),
+  team("utah-royals", "Utah Royals", "Royals", "NWSL", "soccer", "salt-lake-city", "UTAH", ["Utah Royals FC"]),
+  team("salt-lake-bees", "Salt Lake Bees", "Bees", "Triple-A baseball", "baseball", "salt-lake-city", "SLC"),
+  team("utah-utes-football", "Utah Utes Football", "Utah", "College football", "football", "salt-lake-city", "UTAH", ["Utes"]),
+  team("utah-mbb", "Utah Utes Men's Basketball", "Utah MBB", "College men's basketball", "basketball", "salt-lake-city", "UTAH", ["Utes"]),
+  team("utah-wbb", "Utah Utes Women's Basketball", "Utah WBB", "College women's basketball", "basketball", "salt-lake-city", "UTAH", ["Utes"]),
+  team("salt-lake-city-stars", "Salt Lake City Stars", "Stars", "NBA G League", "basketball", "salt-lake-city", "SLC"),
+  team("real-monarchs", "Real Monarchs", "Monarchs", "MLS NEXT Pro", "soccer", "salt-lake-city", "RSL"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

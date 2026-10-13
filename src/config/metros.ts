@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'ottawa-gatineau'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'salt-lake-city', 'ottawa-gatineau'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -276,6 +276,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Toronto',
     center: [-75.72, 45.42],
     zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/salt-lake-city/). Salt Lake County core;
+  // Provo, Ogden and Park City stay separate. One frame holds downtown, the U campus and the Fairpark;
+  // Sandy, West Valley, South Jordan and Daybreak sit off the first view.
+  'salt-lake-city': {
+    id: 'salt-lake-city', code: 'SLC',
+    name: 'Salt Lake City',
+    timeZone: 'America/Denver',
+    center: [-111.92, 40.76],
+    zoom: 10.8,
   },
 };
 
