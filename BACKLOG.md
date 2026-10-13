@@ -59,6 +59,13 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ## Next
 
+### Build 4 follow-ups (Claude Code slice, Oct 13, 2026)
+- **Tags on a follower's view (Kylie, Oct 13):** in build 4 tags show only on your own screens. Showing them on your public stubs for approved followers is a separate step (T01: tags follow the stub's privacy).
+- **Famous dates → Stats (V10, Kylie, Oct 12):** hidden from the month sheet and `?view=calendar` in build 4; the code and data stay. Rehome it in the Stats pass (Mock Mosaic).
+- **Type icons "option C":** closed. L1b (icon on line 1, hand-drawn) overrode build-notes-oct9 3.18 on Oct 9 and is live; nothing to build.
+- **Top tags (T11), "Went with", team colors on tags:** Stats pass or later.
+- **Seats storage:** open with Kylie. Plan rows are readable by approved followers (`0016_follow_states.sql`); a private seats column would be a migration she pastes.
+
 ### Miami follow-up (city build, Oct 13, 2026; not yet approved like K14)
 Research folded per `docs/research/city-builds/miami/miami-implementation-register.md`. **Sprawl** provisional; Miami-Dade + Broward core; metro code **MIA**. Estimated car shares wired on Hard Rock Stadium, loanDepot park, Nu Stadium, Amerant Bank Arena, Kaseya Center and FPL Solar Amphitheater. Open: no Ticketmaster venue ids verified (concert coverage thin); Table B open sites (Ultra, FIFA Fan Fest, F1 weekend, Calle Ocho, Art Basel, boat shows, Youth Fair) not hand-listed; Palm Beach edge (FAU, iTHINK) excluded; Miami Marine Stadium closed; James L. Knight Center sub-5,000/replacement; Inter Miami 2026 home venue strings on ESPN; Hard Rock concert capacity unknown; gaps follow-up answers pending (`miami-gaps-followup-prompt.md`); `MONTHLY_NORMAL_F` not filled. **Capacities left blank (conflicting, none official):** Homestead-Miami Speedway (46,000 / 45,000 / 65,000), FPL Solar Amphitheater (8,500 / 5,000 / 1,646), Pitbull Stadium (20,000 / 22,682).
 

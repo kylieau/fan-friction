@@ -166,3 +166,21 @@ Each entry: the decision, why, and what was rejected where the build notes recor
 - **Boston opponent ratios (C03):** merged `expectedDrawIndexBostonOpponents.ts` into `expectedDrawIndex.ts`; draw values unchanged. Why: one pattern per city.
 - **Arizona Cardinals away id (C11):** ESPN home schedules store the visitor's `teamId` when it is in `ESPN_TEAMS` (e.g. `arizona-cardinals`), not the nickname slug `cardinals`. Why: St. Louis keeps `cardinals` for MLB. Rejected: leave wrong slug.
 - **Car shares (C04):** venue `carShare` comment in types: measured vs estimated; wired estimates stay labeled in venue comments per Oct 12 decision. Ticketmaster lookup step already in `docs/reference/new-city-checklist.md` (C12). Why: use research estimates, marked estimated. Rejected: city default only.
+
+## Oct 13, 2026 — build 4 (Claude Code slice: Kylie's answers)
+Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/city/` and `docs/build-4/mockups/tags/` (all board data is EXAMPLE). Where a board and the decision text disagree the text wins, then the newest board.
+
+- **Map chips never name you (Kylie, Oct 13: "do not name user status in map chip"):** the activity line and the tapped chip's card list friends only, ordered Attending > Watching > Interested. Your own status stays on sheet rows, List rows and the event page. Rejected: "You" first (r5 board), you on the card.
+- **List rows (Q1):** the same set as the Map sheet (rooms under about 5,000 excluded), so "36 events" matches the Map's count. Rejected: including small rooms.
+- **Soonest on top (Q2):** applies only among chips that carry an activity line; the Map's crowd ranking is unchanged.
+- **Tag filter (Q4, T13):** Tag is one more chip beside Recent · Sports · Concerts · Watched · Attended. Several tags widen (any of them); Tag plus another chip narrows; Recent resets. This is Kylie's Oct 12 lean, still not locked ("how filters combine stays open").
+- **Suggestions (Q5):** starters from the starter-tags research §3, split by concert and sport; sport-specific only when the sport is known; the event's promo text is offered first; promo and starters are suggestions, never auto-applied. Which starters count as after-the-fact is a builder's judgment, flagged in the plan.
+- **Seats (Q6):** built as a structured optional field, not a tag. Opus consulted on the UX; the storage question (plan rows are readable by approved followers) is open with Kylie.
+- **Tags on your own screens only (Q7):** a followers' view of tags is a separate later step.
+- **"New stub" (Q8):** the search page is titled "New stub"; the event · date line appears once an event is picked or typed; the first visit adds "Saved to your Stubs". Rejected: the subline on the empty search.
+- **Type icons (Q9):** nothing to build. L1b (icon on line 1, hand-drawn) overrode 3.18 on Oct 9; the 20k rounding is Composer's.
+- **Favorite cities (Q10):** a star on each switcher row, starred cities pinned under home with a divider, no limit, saved with home in the account. No "Change home…" in the switcher (Settings only, Oct 9).
+- **Nights (Q11):** the Explore List is the per-city, by-date view. Nothing else is built under that name.
+- **"The night" story (Q12):** an empty slot on the event page, hidden when there is no story; the label is "The night" for starts at 5 pm or later, otherwise "The day". The wording is the builder's, pending Kylie's.
+- **Weather (Q13):** the start-hour feels-like joins the compact card's venue line for open-air venues; the rich Forecast stays out.
+- **Pushing (Q14):** one commit per step on `main`; no push until Kylie clears it (the tester interview is Oct 13).
