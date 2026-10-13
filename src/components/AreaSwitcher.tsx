@@ -1,10 +1,10 @@
-import { useId } from 'react';
+import { useEffect, useId, useRef, useSyncExternalStore } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { type Metro } from '../config/metros';
-import { metrosWithEvents } from '../data';
+import { favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
 import { getHomeId } from '../lib/homeCity';
 import { openedMetroId } from '../lib/view';
-import { ChevronDown, HomeIcon } from './Icons';
+import { ChevronDown, HomeIcon, StarIcon } from './Icons';
 
 /**
  * Closed chip for the current metro. The list floats under the chip and does
@@ -32,6 +32,31 @@ export function AreaSwitcher({
   const metros = covered.some((city) => city.id === metro.id) ? covered : [...covered, metro];
   const homeId = openedMetroId();
   const viewingHome = metro.id === getHomeId();
+  // Home first, then the cities you starred, a divider, then the rest (build notes 4, P1; Kylie Oct 13).
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const starred = favoriteCitiesOf(log);
+  const home = getHomeId();
+  const top = metros.filter((city) => city.id === home);
+  const pinned = metros.filter((city) => city.id !== home && starred.includes(city.id));
+  const rest = metros.filter((city) => city.id !== home && !starred.includes(city.id));
+  const ordered = [...top, ...pinned];
+  // The list closes on a tap outside it or Escape, wherever the switcher sits (Map, List, calendar page).
+  const root = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const onPointer = (event: PointerEvent) => {
+      if (root.current && !root.current.contains(event.target as Node)) onOpenChange(false);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onOpenChange(false);
+    };
+    document.addEventListener('pointerdown', onPointer);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointer);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open, onOpenChange]);
   const pick = (id: string) => {
     const next = new URLSearchParams(params);
     if (id === homeId) next.delete('metro');
@@ -40,7 +65,7 @@ export function AreaSwitcher({
     onOpenChange(false);
   };
   return (
-    <div className={`area-switcher${variant === 'title' ? ' is-title' : ''}`}>
+    <div ref={root} className={`area-switcher${variant === 'title' ? ' is-title' : ''}`}>
       <button
         type="button"
         className="area-chip"
@@ -56,20 +81,28 @@ export function AreaSwitcher({
       </button>
       {open && (
         <div className="area-menu" id={menuId} role="listbox" aria-label="Area">
-          {metros.map((item) => {
-            const isHome = item.id === getHomeId();
+          {[...ordered, ...rest].map((item, index) => {
+            const isHome = item.id === home;
+            const isStar = starred.includes(item.id);
             return (
               <div className="area-row" key={item.id}>
-                <button
-                  type="button"
-                  role="option"
-                  aria-selected={item.id === metro.id}
-                  onClick={() => pick(item.id)}
-                >
+                {index === ordered.length && ordered.length > 0 && rest.length > 0 && <div className="area-divider" role="separator" />}
+                <button type="button" role="option" aria-selected={item.id === metro.id} onClick={() => pick(item.id)}>
                   {isHome && <HomeMark />}
                   <span>{item.name}</span>
                 </button>
-                {/* Changing home lives in Settings (Kylie, Oct 9); the house marks it here. */}
+                {/* Changing home lives in Settings (Kylie, Oct 9); the house marks it here. A star pins any other city. */}
+                {!isHome && (
+                  <button
+                    type="button"
+                    className={`area-star${isStar ? ' on' : ''}`}
+                    aria-pressed={isStar}
+                    aria-label={`${isStar ? 'Unstar' : 'Star'} ${item.name}`}
+                    onClick={() => toggleFavoriteCity(item.id)}
+                  >
+                    <StarIcon />
+                  </button>
+                )}
               </div>
             );
           })}

@@ -7340,3 +7340,37 @@ button.back-link {
   font-size: 18px;
   font-weight: 800;
 }
+
+/* Starred cities in the switcher (build notes 4, P1): a 44 pt star on every row but home; a divider under the pinned ones. */
+.area-menu .area-star {
+  flex: 0 0 44px;
+  width: 44px;
+  min-width: 44px;
+  justify-content: center;
+  padding: 0;
+  color: var(--muted);
+}
+
+.area-menu .area-star svg {
+  width: 20px;
+  height: 20px;
+}
+
+.area-menu .area-star.on {
+  color: var(--dodger);
+}
+
+.area-menu .area-star.on svg {
+  fill: currentColor;
+}
+
+.area-row {
+  flex-wrap: wrap;
+}
+
+.area-divider {
+  flex: 1 0 100%;
+  height: 1px;
+  margin: 4px 12px;
+  background: var(--line);
+}

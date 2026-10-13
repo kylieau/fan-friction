@@ -177,6 +177,7 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     before.order !== after.order ||
     !sameList(before.hiddenSeedIds, after.hiddenSeedIds) ||
     !sameList(before.favorites, after.favorites) ||
+    !sameList(before.favoriteCities, after.favoriteCities) ||
     JSON.stringify(before.removed ?? {}) !== JSON.stringify(removed);
   return { entries, plans, settings, log };
 }
@@ -207,8 +208,15 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     plans: newerWins(account.plans, phone.plans, removed),
     order: account.order,
     favorites: mergeFavorites(account.favorites, phone.favorites),
+    ...(unionCities(account.favoriteCities, phone.favoriteCities) ? { favoriteCities: unionCities(account.favoriteCities, phone.favoriteCities) } : {}),
     removed,
   };
+}
+
+/** Starred cities from both copies, the account's order first. */
+function unionCities(a?: string[], b?: string[]): string[] | undefined {
+  const out = [...new Set([...(a ?? []), ...(b ?? [])])];
+  return out.length > 0 ? out : undefined;
 }
 
 function mergeFavorites(a?: PersonalLog['favorites'], b?: PersonalLog['favorites']) {

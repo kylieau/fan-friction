@@ -605,6 +605,11 @@ export interface PersonalLog {
    */
   favorites?: Favorite[];
   /**
+   * Cities starred in the city switcher (build notes 4, P1; Kylie Oct 13). Separate from home: one home
+   * keeps its house; these are pinned under it. Saved with the settings, on the phone and the account.
+   */
+  favoriteCities?: string[];
+  /**
    * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
    * another device cannot put them back; pruned after half a year.
    */

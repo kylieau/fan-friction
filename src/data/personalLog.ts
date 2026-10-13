@@ -1017,6 +1017,21 @@ export function toggleFavorite(fav: Favorite) {
   commit({ ...snapshot, favorites: next });
 }
 
+/** The cities you starred in the switcher, in the order you starred them. */
+export function favoriteCitiesOf(log: PersonalLog = snapshot): string[] {
+  return log.favoriteCities ?? [];
+}
+
+/** Star or un-star a city. Home is not starred: it is pinned on its own. */
+export function toggleFavoriteCity(metroId: string) {
+  if (!METROS[metroId]) return;
+  const current = favoriteCitiesOf(snapshot);
+  const next = current.includes(metroId) ? current.filter((id) => id !== metroId) : [...current, metroId];
+  const { favoriteCities: _old, ...rest } = snapshot;
+  void _old;
+  commit(next.length > 0 ? { ...rest, favoriteCities: next } : rest);
+}
+
 export function logBackup(log: PersonalLog = snapshot): LogBackup {
   return {
     app: 'Fan/Friction',

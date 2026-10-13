@@ -2,6 +2,7 @@
 // The seeded nights are not stored here; they ship with the app.
 
 import { APP } from '../../config/app';
+import { METROS } from '../../config/metros';
 import { parseStamp } from '../read';
 import type { DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder } from '../types';
 import type { EntryStore } from './types';
@@ -75,6 +76,13 @@ export function readRemoved(value: unknown): Record<string, string> {
   return out;
 }
 
+/** Starred cities as saved: ids of cities the app knows, no repeats. Undefined when there are none. */
+export function readFavoriteCities(value: unknown): string[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const ids = [...new Set(value.filter((id): id is string => typeof id === 'string' && Boolean(METROS[id])))];
+  return ids.length > 0 ? ids : undefined;
+}
+
 /** Favorites as saved, or undefined when this log has never had any (so they get derived once). */
 export function readFavorites(value: unknown): Favorite[] | undefined {
   if (!Array.isArray(value)) return undefined;
@@ -99,6 +107,7 @@ export function readLocalLog(): PersonalLog {
       plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
       favorites: readFavorites(parsed.favorites),
+      ...(readFavoriteCities(parsed.favoriteCities) ? { favoriteCities: readFavoriteCities(parsed.favoriteCities) } : {}),
       ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {
