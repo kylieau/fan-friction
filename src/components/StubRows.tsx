@@ -76,7 +76,7 @@ export function PlanRow({ plan, rating }: { plan: Plan; rating: number | null })
   const city = plan.metroId !== DEFAULT_METRO.id ? METROS[plan.metroId]?.name : null;
   return (
     <div className="stub-row">
-      <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row-link" aria-label={plan.title} />
+      <Link to={plan.manual && !plan.eventId ? entryPath(plan.id) : datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row-link" aria-label={plan.title} />
       <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
       <span className="stub-main">
         <span className="stub-title">{plan.title}</span>

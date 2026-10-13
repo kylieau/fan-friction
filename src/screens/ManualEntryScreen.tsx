@@ -4,6 +4,9 @@ import { METROS } from '../config/metros';
 import {
   cityDayRange,
   entryFacts,
+  removePlan,
+  setRowTags,
+  tagSummaries,
   getPersonalLog,
   nightsOf,
   rangeLabel,
@@ -16,6 +19,9 @@ import {
 import { comparePath, datePath } from '../lib/view';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { FactList } from '../components/FactList';
+import { StatusLine } from '../components/ActivityLines';
+import { TagChip } from '../components/TagChip';
+import { TagsPanel } from '../components/TagsPanel';
 import { ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { loggedDateLabel } from '../lib/dates';
@@ -27,6 +33,87 @@ import { loggedDateLabel } from '../lib/dates';
  * Compare with…, and your layer.
  */
 export function ManualEntryScreen() {
+  const { id = '' } = useParams();
+  const plan = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog).plans.find((p) => p.id === id);
+  if (plan) return <ManualPlanPage planId={plan.id} />;
+  return <ManualEntryPage />;
+}
+
+/**
+ * A plan typed in by hand (an event not in the catalog, still ahead): it has no event page, so this is
+ * its page: the title, when and where, your tags, and Remove. It becomes a stub when the date passes.
+ */
+function ManualPlanPage({ planId }: { planId: string }) {
+  const navigate = useNavigate();
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const plan = log.plans.find((p) => p.id === planId);
+  const [tagging, setTagging] = useState(false);
+  const [asking, setAsking] = useState(false);
+  if (!plan) return null;
+  const kind = plan.manual?.kind;
+  const sub = [loggedDateLabel({ sort: plan.date, label: '', precision: 'day' }), plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ');
+  return (
+    <div className="screen page event-page">
+      <Link to="/stubs" className="back-link">
+        <ChevronDown /> Stubs
+      </Link>
+      <header className="event-head">
+        <h1 className="page-title">{plan.title}</h1>
+        <div className="event-sub">{sub}</div>
+      </header>
+      <div className="event-marks">
+        <StatusLine kind={plan.watch ? 'watching' : 'attending'} />
+      </div>
+      <section className="card entry-layer" aria-label="Your tags">
+        {tagging ? (
+          <TagsPanel
+            tags={plan.userTags ?? []}
+            onChange={(next) => setRowTags('plan', plan.id, next)}
+            onDone={() => setTagging(false)}
+            context={{ domain: kind === 'game' ? 'sports' : kind === 'show' || kind === 'festival' ? 'concert' : 'other', sport: plan.manual?.sport?.toLowerCase(), ahead: true }}
+            known={tagSummaries(log.added, log.plans)}
+          />
+        ) : (
+          <div className="stub-tags-row" role="group" aria-label="Tags">
+            <span className="stub-tags-label">Tags</span>
+            {(plan.userTags ?? []).map((tag) => (
+              <TagChip key={tag} tag={tag} onRemove={() => setRowTags('plan', plan.id, (plan.userTags ?? []).filter((t) => t !== tag))} />
+            ))}
+            <button type="button" className="stub-tags-add" onClick={() => setTagging(true)}>
+              + Add tag
+            </button>
+          </div>
+        )}
+      </section>
+      {asking ? (
+        <div className="card tag-menu" role="alertdialog" aria-label="Remove plan">
+          <div className="tag-menu-title">Remove this plan?</div>
+          <div className="entry-form-actions">
+            <button type="button" className="link-button" onClick={() => setAsking(false)}>
+              Keep
+            </button>
+            <button
+              type="button"
+              className="gold-button small"
+              onClick={() => {
+                removePlan(plan.id);
+                navigate('/stubs', { replace: true });
+              }}
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+      ) : (
+        <button type="button" className="link-button remove-entry" onClick={() => setAsking(true)}>
+          Remove plan
+        </button>
+      )}
+    </div>
+  );
+}
+
+function ManualEntryPage() {
   const { id = '' } = useParams();
   const navigate = useNavigate();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
