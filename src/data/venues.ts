@@ -8899,13 +8899,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Northwest Stadium', from: '2024-08-27' },
     ],
     location: [-76.864533, 38.9076694],
-    capacity: [
-      {
-        seats: 64000,
-        setup: 'football',
-        note: 'Reported after 1,500 seats re-added in 2025. Conflicts with 62,000 and 65,000 in other sources; 82,000 total is a different configuration. Source: venue table A1.',
-      },
-    ],
+    // Round-2 rule: conflicting figures (64,000 / 62,000 / 65,000), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'secu-stadium': {
@@ -9033,9 +9028,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'washington-dc',
     names: [{ name: 'William H. Greene Stadium' }],
     location: [-77.020737, 38.925662],
-    capacity: [
-      { seats: 7086, setup: 'football', note: 'Reported seats; same source lists 10,000 for football configuration. Conflict preserved. Source: venue table A1.' },
-    ],
+    // Round-2 rule: same source gives 7,086 seats and 10,000 football; blank until settled (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'wolf-trap-filene-center': {
