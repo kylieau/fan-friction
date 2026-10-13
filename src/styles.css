@@ -7469,3 +7469,9 @@ button.back-link {
 .night-story-links a {
   color: var(--dodger);
 }
+
+/* The old calendar page keeps the chip at the left edge, so its list opens from there, not centered under it. */
+.explore-top .area-menu {
+  left: 0;
+  transform: none;
+}
