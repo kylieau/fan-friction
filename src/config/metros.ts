@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'miami', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'miami', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'salt-lake-city', 'ottawa-gatineau', 'edmonton'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -238,6 +238,16 @@ export const METROS: Record<string, Metro> = {
     center: [-95.39, 29.73],
     zoom: 10.6,
   },
+  // Covered Oct 13, 2026 (docs/research/city-builds/indianapolis/indianapolis-venue-table-answer.md): Marion County core plus
+  // Hamilton (Fishers, Noblesville) and Hendricks (Brownsburg). One frame holds downtown, Speedway and the Fairgrounds;
+  // Ruoff and Fishers Event Center sit northeast off the first view. Bloomington and West Lafayette stay out.
+  indianapolis: {
+    id: 'indianapolis', code: 'IND',
+    name: 'Indianapolis',
+    timeZone: 'America/Indiana/Indianapolis',
+    center: [-86.158, 39.768],
+    zoom: 10.4,
+  },
   // Covered Oct 12, 2026 (docs/research/city-builds/toronto/toronto-venue-table-answer.md): City of Toronto plus Peel, York, Halton and Durham through Oshawa.
   // Hamilton is a separate city. One frame holds downtown, the Union Station pair and Exhibition Place; North York, Mississauga, Brampton and Oshawa sit off the first view.
   toronto: {
@@ -266,6 +276,35 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-90.09, 29.97],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/edmonton/edmonton-venue-table-answer.md): Edmonton Metropolitan
+  // Region (13 municipalities). One frame holds downtown/ICE District, Commonwealth/EXPO Lands and the river valley;
+  // St. Albert, Sherwood Park, Spruce Grove and Century Mile sit off the first view.
+  edmonton: {
+    id: 'edmonton', code: 'EDM',
+    name: 'Edmonton',
+    timeZone: 'America/Edmonton',
+    center: [-113.49, 53.55],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/ottawa-gatineau/): City of Ottawa plus Ville de Gatineau.
+  // One frame holds downtown, Lansdowne and the Glebe; Kanata, the east-end ballpark and south Ottawa casino sit off it.
+  'ottawa-gatineau': {
+    id: 'ottawa-gatineau', code: 'OTT',
+    name: 'Ottawa–Gatineau',
+    timeZone: 'America/Toronto',
+    center: [-75.72, 45.42],
+    zoom: 10.5,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/salt-lake-city/). Salt Lake County core;
+  // Provo, Ogden and Park City stay separate. One frame holds downtown, the U campus and the Fairpark;
+  // Sandy, West Valley, South Jordan and Daybreak sit off the first view.
+  'salt-lake-city': {
+    id: 'salt-lake-city', code: 'SLC',
+    name: 'Salt Lake City',
+    timeZone: 'America/Denver',
+    center: [-111.92, 40.76],
+    zoom: 10.8,
   },
 };
 

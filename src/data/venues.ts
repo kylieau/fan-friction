@@ -8319,6 +8319,237 @@ export const VENUES: Record<string, Venue> = {
     roof: 'indoor',
   },
 
+  // Indianapolis (docs/research/city-builds/indianapolis/, Oct 13, 2026). Marion + Hamilton + Hendricks core.
+  // carShare values are estimated from indianapolis-city-type-answer.md (C04, Oct 12); none is measured.
+  'indianapolis-motor-speedway': {
+    id: 'indianapolis-motor-speedway',
+    metroId: 'indianapolis',
+    carShare: 0.93,
+    names: [{ name: 'Indianapolis Motor Speedway' }, { name: 'IMS' }],
+    location: [-86.2336932, 39.7903186],
+    // Round-2 rule: conflicting estimates (AP 275,000 vs 250,000 vs 257,325) are not stored; blank until one official figure (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'lucas-oil-stadium': {
+    id: 'lucas-oil-stadium',
+    metroId: 'indianapolis',
+    carShare: 0.85,
+    names: [{ name: 'Lucas Oil Stadium' }],
+    location: [-86.1637947, 39.7600777],
+    capacity: [
+      { seats: 67000, setup: 'football', note: 'Official. Conflicts with 63,000 reported (IBJ 2012). Expanded basketball and major events exceed 70,000 in a separate configuration. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
+      { seats: 70000, setup: 'basketball', note: 'Official: expandable to over 70,000 for basketball. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
+    ],
+    roof: 'covered',
+  },
+  'lucas-oil-indianapolis-raceway-park': {
+    id: 'lucas-oil-indianapolis-raceway-park',
+    metroId: 'indianapolis',
+    carShare: 0.93,
+    names: [
+      { name: 'Lucas Oil Indianapolis Raceway Park' },
+      { name: 'Lucas Oil Raceway at Indianapolis', from: '2011-01-01' },
+    ],
+    location: [-86.3424077, 39.8136285],
+    capacity: [{ seats: 30000, setup: 'racing', note: 'Reported (Wikipedia). Not split by configuration. Resale listings may say "Indianapolis" while the track is in Brownsburg. Source: https://en.wikipedia.org/wiki/Lucas_Oil_Indianapolis_Raceway_Park' }],
+    roof: 'open',
+  },
+  'ruoff-music-center': {
+    id: 'ruoff-music-center',
+    metroId: 'indianapolis',
+    carShare: 0.96,
+    names: [
+      { name: 'Ruoff Music Center' },
+      { name: 'Ruoff Home Mortgage Music Center', from: '2017-01-01' },
+      { name: 'Klipsch Music Center', from: '2011-01-01' },
+    ],
+    location: [-85.9284362, 40.0044065],
+    capacity: [
+      { seats: 6147, setup: 'concert', note: 'Reported pavilion seats; lawn is general admission. Source: https://musewiki.org/Noblesville_Ruoff_Music_Center' },
+      { seats: 24790, setup: 'concert', note: 'Reported total; conflicts with 24,400 (Songkick). Source: https://en.wikipedia.org/wiki/Ruoff_Music_Center' },
+    ],
+    roof: 'covered',
+  },
+  'gainbridge-fieldhouse': {
+    id: 'gainbridge-fieldhouse',
+    metroId: 'indianapolis',
+    carShare: 0.85,
+    names: [
+      { name: 'Gainbridge Fieldhouse' },
+      { name: 'Bankers Life Fieldhouse', from: '2011-01-01' },
+      { name: 'Conseco Fieldhouse' },
+    ],
+    location: [-86.1555024, 39.7639331],
+    capacity: [
+      { seats: 17274, setup: 'basketball', note: 'Reported (Ticketmaster). Conflicts with 17,923 and a claimed 20,000 post-renovation. Source: https://blog.ticketmaster.com/step-inside-gainbridge-fieldhouse-indianapolis-in/' },
+      { seats: 18274, setup: 'concert', note: 'Reported concert record. Source: https://en.wikipedia.org/wiki/Gainbridge_Fieldhouse' },
+      { seats: 11651, setup: 'hockey', note: 'Reported. Source: https://blog.ticketmaster.com/step-inside-gainbridge-fieldhouse-indianapolis-in/' },
+    ],
+    roof: 'indoor',
+  },
+  'victory-field': {
+    id: 'victory-field',
+    metroId: 'indianapolis',
+    carShare: 0.85,
+    names: [{ name: 'Victory Field' }],
+    location: [-86.1693652, 39.7648386],
+    capacity: [
+      { seats: 12230, setup: 'baseball', note: 'Official (MLB): fixed seats. About 2,000 lawn and 14,230 total with lawn per reported figures. Source: https://www.mlb.com/astros/news/featured/explore-victory-field-home-of-the-indianapolis-indians' },
+    ],
+    roof: 'open',
+  },
+  'carroll-stadium': {
+    id: 'carroll-stadium',
+    metroId: 'indianapolis',
+    carShare: 0.85,
+    names: [
+      { name: 'IU Michael A. Carroll Track & Soccer Stadium' },
+      { name: 'Carroll Stadium' },
+    ],
+    location: [-86.1789666, 39.7710116],
+    capacity: [
+      { seats: 12111, setup: 'soccer', note: 'Official (stadium site). Conflicts with 10,000 (IU Indy athletics) and 10,524 soccer limit (reported). Source: https://carrollstadium.indianapolis.iu.edu' },
+    ],
+    roof: 'open',
+  },
+  'hinkle-fieldhouse': {
+    id: 'hinkle-fieldhouse',
+    metroId: 'indianapolis',
+    carShare: 0.8,
+    names: [{ name: 'Hinkle Fieldhouse' }],
+    location: [-86.1674277, 39.8435958],
+    capacity: [{ seats: 9100, setup: 'basketball', note: 'Official since 2014. Before that 10,000. Source: https://butlersports.com/sports/2016/5/19/information-facilities-hinkle-fieldhouse.aspx' }],
+    roof: 'indoor',
+  },
+  'fishers-event-center': {
+    id: 'fishers-event-center',
+    metroId: 'indianapolis',
+    carShare: 0.95,
+    names: [{ name: 'Fishers Event Center' }],
+    location: [-86.0038734, 39.9474838],
+    capacity: [{ seats: 7500, note: 'Official (Visit Indy / city). Planned 8,500 at groundbreaking not stored as current. Source: https://www.visitindy.com/directory/fishers-event-center/' }],
+    roof: 'indoor',
+  },
+  'corteva-coliseum': {
+    id: 'corteva-coliseum',
+    metroId: 'indianapolis',
+    carShare: 0.92,
+    names: [
+      { name: 'Corteva Coliseum' },
+      { name: 'Indiana Farmers Coliseum', from: '2014-01-01' },
+    ],
+    location: [-86.1292603, 39.8302975],
+    // Round-2 rule: conflicting reported figures (6,800 / 6,200 hockey / 8,200 / 6,500); blank until one official figure (BACKLOG).
+    capacity: [],
+    roof: 'indoor',
+  },
+  'everwise-amphitheater': {
+    id: 'everwise-amphitheater',
+    metroId: 'indianapolis',
+    carShare: 0.85,
+    names: [
+      { name: 'Everwise Amphitheater at White River State Park' },
+      { name: 'TCU Amphitheater', from: '2021-01-01' },
+      { name: 'Farm Bureau Insurance Lawn', from: '2012-01-01' },
+    ],
+    location: [-86.1717927, 39.7659312],
+    capacity: [
+      { seats: 2500, setup: 'concert', note: 'Official reserved seats. Total with lawn 6,000. Songkick 3,000 not stored. Source: https://whiteriverstatepark.org/venue/everwise-amphitheater-at-white-river-state-park/' },
+      { seats: 6000, setup: 'concert', note: 'Official total = 2,500 reserved + 3,500 GA lawn. Source: https://whiteriverstatepark.org/venue/everwise-amphitheater-at-white-river-state-park/' },
+    ],
+    roof: 'covered',
+  },
+  'sellick-bowl': {
+    id: 'sellick-bowl',
+    metroId: 'indianapolis',
+    names: [
+      { name: 'Bud and Jackie Sellick Bowl' },
+      { name: 'Sellick Bowl' },
+    ],
+    // Butler campus; OSM did not separate the bowl from Hinkle. Point is approximate east of Hinkle.
+    location: [-86.1652, 39.841],
+    capacity: [{ seats: 5647, setup: 'football', note: 'Official after 2010 renovation. Just above the 5,000 friction line. Source: https://butlersports.com/facilities/?id=2' }],
+    roof: 'open',
+  },
+  'kiesel-field-key-stadium': {
+    id: 'kiesel-field-key-stadium',
+    metroId: 'indianapolis',
+    names: [{ name: 'Kiesel Field at Key Stadium' }, { name: 'Key Stadium' }],
+    location: [-86.1302054, 39.7113913],
+    capacity: [{ seats: 5500, setup: 'football', note: 'Official (UIndy). Unofficial standing-room add-on not stored. Source: https://athletics.uindy.edu/facilities/?id=2' }],
+    roof: 'open',
+  },
+  'riverview-health-arena': {
+    id: 'riverview-health-arena',
+    metroId: 'indianapolis',
+    names: [
+      { name: 'Riverview Health Arena at Innovation Mile' },
+      { name: 'The Arena at Innovation Mile', from: '2025-01-01' },
+    ],
+    location: [-85.912343, 39.992404],
+    capacity: [{ seats: 3400, setup: 'basketball', note: 'Reported fixed seats plus 100 suites; every setup in research is below 5,000. Source: https://youarecurrent.com/2025/07/31/a-boom-for-noblesville-the-arena-at-innovation-mile-to-open-aug-8/' }],
+    roof: 'indoor',
+  },
+  'james-t-morris-arena': {
+    id: 'james-t-morris-arena',
+    metroId: 'indianapolis',
+    names: [{ name: 'James T. Morris Arena' }, { name: 'The Jim' }],
+    location: [-86.1785, 39.7712],
+    capacity: [{ seats: 4500, setup: 'basketball', note: 'Official (IU capital projects). Conflicts with 4,200 and 4,000 reported. Under construction / opening fall 2026; re-check. Source: https://cpf.iu.edu/capital-projects/projects/athletics/james-t-morris-arena.html' }],
+    roof: 'indoor',
+  },
+  'murat-theatre': {
+    id: 'murat-theatre',
+    metroId: 'indianapolis',
+    names: [
+      { name: 'Murat Theatre at Old National Centre' },
+      { name: 'Old National Centre' },
+    ],
+    location: [-86.1510753, 39.7745828],
+    capacity: [{ seats: 2500, setup: 'concert', note: 'Reported. Conflicts with 2,515 (venue spec). Source: https://en.wikipedia.org/wiki/Old_National_Centre' }],
+    roof: 'indoor',
+  },
+  'clowes-memorial-hall': {
+    id: 'clowes-memorial-hall',
+    metroId: 'indianapolis',
+    names: [{ name: 'Clowes Memorial Hall' }],
+    location: [-86.169984, 39.840453],
+    capacity: [{ seats: 2148, setup: 'concert', note: 'Official. Source: https://www.butlerartscenter.org/venues/clowes-memorial-hall/' }],
+    roof: 'indoor',
+  },
+  'egyptian-room-old-national-centre': {
+    id: 'egyptian-room-old-national-centre',
+    metroId: 'indianapolis',
+    names: [{ name: 'Egyptian Room at Old National Centre' }],
+    location: [-86.1510753, 39.7745828],
+    capacity: [{ seats: 2000, setup: 'concert', note: 'Official theatre/standing layout. Cabaret seated 1,000 is a different setup. Source: https://assets.dam.simpleviewinc.com/asset/6374363dfc6a030011203543' }],
+    roof: 'indoor',
+  },
+  'hilbert-circle-theatre': {
+    id: 'hilbert-circle-theatre',
+    metroId: 'indianapolis',
+    names: [{ name: 'Hilbert Circle Theatre' }],
+    location: [-86.1571193, 39.7678147],
+    capacity: [{ seats: 1660, setup: 'concert', note: 'Official (ISO). Conflicts with 1,781 older reported. Source: https://www.indianapolissymphony.org/visit/hilbert-circle-theatre/history/' }],
+    roof: 'indoor',
+  },
+  'palladium-carmel': {
+    id: 'palladium-carmel',
+    metroId: 'indianapolis',
+    names: [{ name: 'The Palladium' }, { name: 'Center for the Performing Arts' }],
+    location: [-86.1303436, 39.9699101],
+    capacity: [{ seats: 1600, setup: 'concert', note: 'Reported at naming. Source: https://www.ibj.com/articles/16351-carmel-performing-arts-center-raises-curtain-on-new-name' }],
+    roof: 'indoor',
+  },
+  'iu-indy-jungle': {
+    id: 'iu-indy-jungle',
+    metroId: 'indianapolis',
+    names: [{ name: 'The Jungle' }, { name: 'IU Indy Gymnasium' }, { name: 'IUPUI Gymnasium' }],
+    location: [-86.1749711, 39.7708552],
+    capacity: [{ seats: 1215, setup: 'basketball', note: 'Reported. Final season for basketball tenants in 2025–26 before Morris Arena. Source: https://en.wikipedia.org/wiki/The_Jungle_(Indianapolis)' }],
+    roof: 'indoor',
+  },
 
   // New Orleans (docs/research/city-builds/new-orleans/, Oct 12, 2026). Orleans + Jefferson core.
   // No carShare overrides: the city-type answer's shares are estimates, none measured.
@@ -8658,6 +8889,561 @@ export const VENUES: Record<string, Venue> = {
         note: 'Reported. At the pre-list line. Source: https://www.theadvocate.com/gambit/new_orleans/news/the_latest/fillmore-music-venue-at-harrahs-to-open-in-2019/article_a3c96f60-7586-11e8-b9d5-3fb6b231230d.html',
       },
     ],
+    roof: 'indoor',
+  },
+  // ---------- Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/; car shares from ottawa-gatineau-city-type-answer.md), Oct 13, 2026 ----------
+  // LeBreton Flats Park (Bluesfest, Canada Day), Winterlude sites, Race Weekend and FMG are not rows — point events when a count exists.
+  // Lansdowne Event Centre (A6) opens ~Jul 2028; Cohere Centre (A4) and Rogers Centre Ottawa hall (A7) have no sourced concert/sport capacity.
+  'td-place-stadium': {
+    id: 'td-place-stadium',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.52, measured 2014 bus+shuttle aggregate for Redblacks ticket holders).
+    carShare: 0.52,
+    names: [{ name: 'TD Place Stadium' }, { name: 'Stade Place TD' }, { name: 'Frank Clair Stadium' }],
+    location: [-75.6835457, 45.3984326],
+    capacity: [
+      { seats: 24000, setup: 'football', note: 'Reported fixed seating for CFL/soccer. Temporary Grey Cup expansion to nearly 36,000 (2017) is not stored. Field rental 10,200 is a setup, not seats. Source: venue table A1.' },
+      { seats: 24000, setup: 'soccer', note: 'Same bowl for Atlético Ottawa and Ottawa Rapid FC.' },
+    ],
+    roof: 'open',
+  },
+  'arena-at-td-place': {
+    id: 'arena-at-td-place',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.60): comparison to Lansdowne transit access; no measured split.
+    carShare: 0.6,
+    names: [
+      { name: 'The Arena at TD Place' },
+      { name: 'TD Place Arena' },
+      { name: 'Ottawa Civic Centre' },
+    ],
+    location: [-75.6835457, 45.3984326],
+    ticketmasterIds: ['401513'],
+    // Sourced only as a range (5,500–8,585 by configuration); round-2 rule: range capacities stay blank (BACKLOG).
+    capacity: [],
+    roof: 'indoor',
+  },
+  'canadian-tire-centre': {
+    id: 'canadian-tire-centre',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.92): derived from measured 1999–2000 transit share (~3.2% of hockey attendance).
+    carShare: 0.92,
+    names: [{ name: 'Canadian Tire Centre' }, { name: 'Centre Canadian Tire' }, { name: 'Scotiabank Place' }, { name: 'Corel Centre' }],
+    location: [-75.9268973, 45.2969069],
+    capacity: [
+      { seats: 19153, setup: 'hockey', note: 'Official (venue rental sheet). Reported 20,500 including standing room; Ticketmaster and Wikipedia conflicts preserved in research. Source: venue table A2.' },
+      { seats: 16888, setup: 'concert', note: 'Official 360° concert capacity (rental sheet). Smaller concert arcs are separate configurations.' },
+    ],
+    roof: 'indoor',
+  },
+  'ottawa-stadium': {
+    id: 'ottawa-stadium',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Ottawa Stadium' }, { name: 'Raymond Chabot Grant Thornton Park' }, { name: 'RCGT Park' }],
+    location: [-75.6532522, 45.4202454],
+    capacity: [
+      { seats: 10278, setup: 'baseball', note: 'Reported since 2015 (10,332 before). Concert 15,000 is a separate configuration. Source: venue table A3.' },
+    ],
+    roof: 'open',
+  },
+  'centre-slush-puppie': {
+    id: 'centre-slush-puppie',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Centre Slush Puppie' }, { name: 'Slush Puppie Centre' }],
+    location: [-75.6792802, 45.4832163],
+    capacity: [{ seats: 4000, setup: 'hockey', note: 'Reported (Architecture49). Meeting-room capacity is not event seating. Source: venue table A8.' }],
+    roof: 'indoor',
+  },
+  'taag-park': {
+    id: 'taag-park',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'TAAG Park' }, { name: 'MNP Park' }, { name: "Ravens' Perch" }],
+    location: [-75.6950041, 45.3858581],
+    capacity: [{ seats: 3500, setup: 'football', note: 'Reported: 3,044 seats plus about 500 on the Perch hill. One 2016 crowd reported at 5,000 is unverified. Source: venue table A9.' }],
+    roof: 'open',
+  },
+  'southam-hall': {
+    id: 'southam-hall',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Southam Hall' }, { name: 'NAC Southam Hall' }],
+    location: [-75.6935599, 45.4234119],
+    capacity: [{ seats: 2065, setup: 'concert', note: 'Reported (Fisher Dachs). CanDance lists 1,975; difference not explained. Source: venue table A10.' }],
+    roof: 'indoor',
+  },
+  'hard-rock-live-ottawa': {
+    id: 'hard-rock-live-ottawa',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.93): rural-edge site; no event transit found in research.
+    carShare: 0.93,
+    names: [{ name: 'Hard Rock Live Ottawa' }, { name: 'Hard Rock LIVE Ottawa' }],
+    location: [-75.6056353, 45.2946063],
+    capacity: [
+      { seats: 1900, setup: 'concert', note: 'Official (Hard Rock newsroom). Total capacity 2,200 including standing; OBJ pre-opening listed 1,800 seats. Source: venue table A11.' },
+    ],
+    roof: 'indoor',
+  },
+  'ravens-nest': {
+    id: 'ravens-nest',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: "Ravens' Nest" }],
+    location: [-75.6950041, 45.3858581],
+    capacity: [{ seats: 1500, setup: 'basketball', note: 'Reported (Stadium Journey, undated). Campus point; gym interior not separately geocoded. Source: venue table A12.' }],
+    roof: 'indoor',
+  },
+  'theatre-casino-lac-leamy': {
+    id: 'theatre-casino-lac-leamy',
+    metroId: 'ottawa-gatineau',
+    names: [
+      { name: 'Théâtre du Casino du Lac-Leamy' },
+      { name: "Théâtre de l'Hôtel-Casino Lac-Leamy" },
+    ],
+    location: [-75.7252302, 45.4461345],
+    capacity: [
+      { seats: 1068, setup: 'concert', note: 'Official tourism listing maximum (650–1,068 by configuration). Scéno Plus designer figures differ. Source: venue table A13.' },
+    ],
+    roof: 'indoor',
+  },
+
+  // Salt Lake City (docs/research/city-builds/salt-lake-city/, Oct 13, 2026). Salt Lake County core.
+  // carShare values are from the city-type answer (estimated, or agency-derived for Rice-Eccles football).
+  // Coordinates: OpenStreetMap Nominatim by building name, Oct 13, 2026.
+  'delta-center': {
+    id: 'delta-center',
+    metroId: 'salt-lake-city',
+    carShare: 0.8,
+    names: [
+      { name: 'Vivint Smart Home Arena' },
+      { name: 'Vivint Arena' },
+      { name: 'Delta Center', from: '2023-07-01' },
+    ],
+    location: [-111.9010551, 40.7683274],
+    capacity: [
+      { seats: 17867, setup: 'basketball', fromYear: 2026, note: 'Official, 2026-27 Jazz layout. Was 18,206 pre-renovation. Source: https://www.deseret.com/sports/2026/09/25/delta-center-renovations-revealed-for-2026-2027-utah-jazz-season/' },
+      { seats: 14111, setup: 'hockey', fromYear: 2026, note: 'Official, 2026-27 Mammoth layout excluding obstructed-view seats; obstructed seats may still be sold. Source: https://www.deseret.com/sports/2026/09/25/delta-center-renovations-2026-27-utah-mammoth/' },
+      // Concert capacity left blank: only a pre-renovation 20,000 is sourced; re-verify after phase 3 (BACKLOG).
+    ],
+    roof: 'indoor',
+  },
+  'rice-eccles-stadium': {
+    id: 'rice-eccles-stadium',
+    metroId: 'salt-lake-city',
+    // Agency estimate anchor (~20% TRAX at BYU–Utah 2024); car share derived (city-type V04).
+    carShare: 0.75,
+    names: [{ name: 'Rice-Eccles Stadium' }, { name: 'Rice Stadium' }],
+    location: [-111.8489131, 40.7598165],
+    capacity: [
+      { seats: 51444, setup: 'football', fromYear: 2021, note: 'Official seated capacity since Ken Garff Red Zone (2021). Record crowds have exceeded listed seats. Source: https://utahutes.com/facilities/detail/3' },
+    ],
+    roof: 'open',
+  },
+  'america-first-field': {
+    id: 'america-first-field',
+    metroId: 'salt-lake-city',
+    carShare: 0.88,
+    names: [{ name: 'Rio Tinto Stadium' }, { name: 'America First Field', from: '2022-09-10' }],
+    location: [-111.8932933, 40.5829593],
+    capacity: [
+      { seats: 20213, setup: 'soccer', note: 'Official sports-commission listing for MLS/NWSL soccer. Concert capacity not verified. Source: https://utahsportscommission.com/venues/america-first-field/' },
+      { seats: 25000, setup: 'concert', note: 'Reported concert total with field standing; not seated capacity. Source: https://en.wikipedia.org/wiki/America_First_Field' },
+    ],
+    roof: 'open',
+  },
+  'utah-first-credit-union-amphitheatre': {
+    id: 'utah-first-credit-union-amphitheatre',
+    metroId: 'salt-lake-city',
+    carShare: 0.95,
+    names: [{ name: 'USANA Amphitheatre' }, { name: 'Utah First Credit Union Amphitheatre', from: '2024-01-23' }],
+    location: [-112.0354658, 40.6575928],
+    capacity: [
+      { seats: 7000, setup: 'concert', note: 'Reported fixed pavilion seats. Lawn is general admission (18,000 reported) and is not added to this seated figure. Capacity total conflicts 25,000 vs 20,000 — seated row uses 7,000. Source: https://en.wikipedia.org/wiki/Utah_First_Credit_Union_Amphitheatre' },
+    ],
+    roof: 'open',
+  },
+  'jon-m-huntsman-center': {
+    id: 'jon-m-huntsman-center',
+    metroId: 'salt-lake-city',
+    carShare: 0.82,
+    names: [{ name: 'Jon M. Huntsman Center' }, { name: 'University of Utah Special Events Center' }],
+    location: [-111.8387946, 40.7620351],
+    capacity: [
+      { seats: 15000, note: 'Official full-bowl figure; Red Rocks gymnastics is the largest regular draw. Source: https://utahutes.com/news/2026/6/29/general-university-of-utah-exploring-options-to-upgrade-and-modernize-jon-m-huntsman-center' },
+      { seats: 8500, setup: 'basketball', fromYear: 2020, note: 'Reported lower-bowl basketball with upper bowl curtained since 2020-21. Source: https://kslsports.com/?p=432692' },
+    ],
+    roof: 'indoor',
+  },
+  'maverik-center': {
+    id: 'maverik-center',
+    metroId: 'salt-lake-city',
+    carShare: 0.92,
+    names: [{ name: 'E Center' }, { name: 'Maverik Center', from: '2010-01-01' }],
+    location: [-111.9505424, 40.7027870],
+    capacity: [
+      { seats: 10100, setup: 'hockey', note: 'Reported hockey capacity. Utah Grizzlies departed after 2025-26; G League Stars remain. Source: https://en.wikipedia.org/wiki/Maverik_Center' },
+      { seats: 12000, setup: 'concert', note: 'Reported concert maximum. Source: https://utahsportscommission.com/venues/maverik-center/' },
+    ],
+    roof: 'indoor',
+  },
+  'days-of-47-arena': {
+    id: 'days-of-47-arena',
+    metroId: 'salt-lake-city',
+    carShare: 0.88,
+    names: [{ name: "Days of '47 Arena" }, { name: 'Utah State Fairpark Arena' }],
+    location: [-111.9248087, 40.7745295],
+    capacity: [
+      { seats: 10000, setup: 'concert', note: 'Official state legislature presentation (stadium-style seats). Listing 10,240 not used. Rodeo and concerts share the bowl. Source: https://le.utah.gov/interim/2025/pdf/00000313.pdf' },
+    ],
+    roof: 'open',
+  },
+  'ballpark-at-america-first-square': {
+    id: 'ballpark-at-america-first-square',
+    metroId: 'salt-lake-city',
+    carShare: 0.88,
+    names: [
+      { name: 'Daybreak Field at America First Square' },
+      { name: 'The Ballpark at America First Square', from: '2025-04-08' },
+    ],
+    location: [-112.0223733, 40.5496424],
+    capacity: [
+      { seats: 6500, setup: 'baseball', note: 'Official announcement: 6,500 fixed seats plus 1,500 lawn (8,000 total). Fan-site 8,500 conflict preserved in research. Source: https://www.kpcw.org/state-regional/2024-05-30/new-salt-lake-bees-stadium-in-daybreak-has-new-renderings-and-a-new-name' },
+    ],
+    roof: 'open',
+  },
+  'conference-center-slc': {
+    id: 'conference-center-slc',
+    metroId: 'salt-lake-city',
+    carShare: 0.75,
+    names: [{ name: 'Conference Center' }],
+    location: [-111.8923229, 40.7725907],
+    capacity: [
+      { seats: 21000, setup: 'concert', note: 'Official room capacity for Tabernacle Choir Christmas concerts and similar ticketed performances. General Conference sessions are religious programming, not commercial shows. Source: https://newsroom.churchofjesuschrist.org/article/thousands-gather-for-tabernacle-choir-2024-christmas-concert' },
+    ],
+    roof: 'indoor',
+  },
+  'smiths-ballpark': {
+    id: 'smiths-ballpark',
+    metroId: 'salt-lake-city',
+    names: [
+      { name: 'Franklin Covey Field' },
+      { name: "Smith's Ballpark", from: '2015-01-01' },
+    ],
+    location: [-111.8935155, 40.7407084],
+    capacity: [
+      { seats: 14511, setup: 'baseball', note: 'Official U of U page. No tenant since Bees left after 2024; one-off events only. Do not match Bees feeds here after 2024. Source: https://ballpark.utah.edu/' },
+    ],
+    roof: 'open',
+  },
+  'abravanel-hall': {
+    id: 'abravanel-hall',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Maurice Abravanel Hall' }, { name: 'Abravanel Hall' }],
+    location: [-111.8952847, 40.7684652],
+    capacity: [
+      { seats: 2811, setup: 'concert', note: 'Reported (Preservation Utah). Conflicts 2,766 / 2,768 in other sources. Renovation could start 2027. Source: https://www.preservationutah.org/properties/abravanel-hall' },
+    ],
+    roof: 'indoor',
+  },
+  'eccles-theater-slc': {
+    id: 'eccles-theater-slc',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Eccles Theater' }, { name: 'George S. and Dolores Doré Eccles Theater' }],
+    location: [-111.8903599, 40.7663242],
+    capacity: [
+      { seats: 2468, setup: 'concert', note: 'Reported (Salt Lake Tribune arts venues comparison). Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'salt-lake-tabernacle': {
+    id: 'salt-lake-tabernacle',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Salt Lake Tabernacle' }],
+    location: [-111.8940, 40.7704],
+    capacity: [
+      { seats: 3500, setup: 'concert', note: 'Reported (Salt Lake Tribune). Choir/organ programming. Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'capitol-theatre-slc': {
+    id: 'capitol-theatre-slc',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Capitol Theatre' }],
+    location: [-111.8938, 40.7674],
+    capacity: [
+      { seats: 1876, setup: 'concert', note: 'Reported (Salt Lake Tribune). County-owned; Ballet West and Utah Opera. Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'kingsbury-hall': {
+    id: 'kingsbury-hall',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Kingsbury Hall' }],
+    location: [-111.8475, 40.7648],
+    capacity: [
+      { seats: 1992, setup: 'concert', note: 'Reported (Salt Lake Tribune). Source: https://www.sltrib.com/artsliving/2024/07/06/where-might-utah-symphony-go-if/' },
+    ],
+    roof: 'indoor',
+  },
+  'utah-first-ballpark': {
+    id: 'utah-first-ballpark',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'America First Ballpark' }, { name: 'Charlie Monfort Field at America First Ballpark' }],
+    location: [-111.8455, 40.7610],
+    capacity: [
+      { seats: 1200, setup: 'baseball', note: 'Reported Utes baseball home (opened Jan 2026). Name collides with America First Field and the Bees ballpark — match exact strings. Source: https://www.sltrib.com/sports/utah-utes/2025/05/19/utah-baseball-plays-last-game/' },
+    ],
+    roof: 'open',
+  },
+  // ---------- Edmonton (docs/research/city-builds/edmonton/; register Oct 13, 2026) ----------
+  // Hub city type. carShare values are estimated from edmonton-city-type-answer.md (not measured).
+  'commonwealth-stadium': {
+    id: 'commonwealth-stadium',
+    metroId: 'edmonton',
+    carShare: 0.62,
+    names: [{ name: 'Commonwealth Stadium' }, { name: 'The Brick Field at Commonwealth Stadium' }],
+    location: [-113.4764233, 53.5596586],
+    // Round-2 rule: conflicting reported figures (56,302 / 56,400 / 55,000) and no official total; blank until one official figure (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'rogers-place': {
+    id: 'rogers-place',
+    metroId: 'edmonton',
+    carShare: 0.75,
+    names: [{ name: 'Rogers Place' }],
+    location: [-113.49778, 53.54694],
+    capacity: [
+      {
+        seats: 18500,
+        setup: 'hockey',
+        note: 'Official (Rogers Place fun facts). Widely reported 18,347 also noted. Source: https://www.rogersplace.com/fun-facts/',
+      },
+      {
+        seats: 20030,
+        setup: 'concert',
+        note: 'Official centre-stage concert figure. Conflicts: 20,734 and 20,147 in secondary sources. Source: https://www.rogersplace.com/fun-facts/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'remax-field': {
+    id: 'remax-field',
+    metroId: 'edmonton',
+    names: [
+      { name: 'Telus Field' },
+      { name: 'Edmonton Ballpark', from: '2016-01-01' },
+      { name: 'RE/MAX Field', from: '2017-05-01' },
+    ],
+    location: [-113.49667, 53.53167],
+    capacity: [
+      {
+        seats: 9200,
+        setup: 'baseball',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/RE/MAX_Field',
+      },
+    ],
+    roof: 'open',
+  },
+  'rad-torque-raceway': {
+    id: 'rad-torque-raceway',
+    metroId: 'edmonton',
+    names: [{ name: 'Castrol Raceway' }, { name: 'RAD Torque Raceway', from: '2021-11-01' }],
+    location: [-113.5912, 53.3338],
+    capacity: [
+      {
+        seats: 8500,
+        setup: 'racing',
+        note: 'Reported drag-strip figure; seating type not stated. Clay oval 4,500 is a separate configuration. Source: https://en.wikipedia.org/wiki/RAD_Torque_Raceway',
+      },
+    ],
+    roof: 'open',
+  },
+  'clarke-stadium': {
+    id: 'clarke-stadium',
+    metroId: 'edmonton',
+    names: [{ name: 'Clarke Stadium' }],
+    location: [-113.4782849, 53.5572795],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'football',
+        note: 'Official permanent seats (City sports fields). Wikipedia cites 6,000 from 2026 retrofit; not stored without an official total. Source: https://www.edmonton.ca/activities_parks_recreation/sports-fields-staffed',
+      },
+    ],
+    roof: 'open',
+  },
+  'edmonton-expo-arena': {
+    id: 'edmonton-expo-arena',
+    metroId: 'edmonton',
+    names: [
+      { name: 'Edmonton EXPO Centre Arena' },
+      { name: 'Hall D' },
+      { name: 'Flair Airlines Hangar' },
+    ],
+    location: [-113.4580962, 53.5687097],
+    capacity: [
+      {
+        seats: 4200,
+        setup: 'basketball',
+        note: 'Official tiered arena (EXPO sporting events). Below 5,000 friction line. Source: https://edmontonexpocentre.com/plan-your-event/sporting-events',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'edmonton-convention-centre': {
+    id: 'edmonton-convention-centre',
+    metroId: 'edmonton',
+    names: [{ name: 'Edmonton Convention Centre' }, { name: 'Shaw Conference Centre' }],
+    location: [-113.4858137, 53.5411497],
+    capacity: [
+      {
+        seats: 5254,
+        setup: 'concert',
+        note: 'Official listing for Hall ABC theatre chairs; movable chairs in a convention hall, not a fixed bowl. Source: https://exploreedmonton.com/industry/offsite/edmonton-convention-centre',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'foote-field': {
+    id: 'foote-field',
+    metroId: 'edmonton',
+    names: [{ name: 'Foote Field' }],
+    location: [-113.5319577, 53.5036629],
+    capacity: [
+      {
+        seats: 3500,
+        setup: 'football',
+        note: 'Official U of A (2,500 west + 1,000 east bleachers). Source: https://bearsandpandas.ca/sports/2020/11/15/foote-field%20ll.aspx',
+      },
+    ],
+    roof: 'open',
+  },
+  'clare-drake-arena': {
+    id: 'clare-drake-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Clare Drake Arena' }],
+    location: [-113.5284011, 53.524505],
+    capacity: [
+      {
+        seats: 2600,
+        setup: 'hockey',
+        note: 'Official U of A. Conflicts 2,700 and 2,800 in secondary sources. Source: https://www.ualberta.ca/kinesiology-sport-recreation/facilities/north-campus/clare-drake-arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'northern-alberta-jubilee': {
+    id: 'northern-alberta-jubilee',
+    metroId: 'edmonton',
+    names: [{ name: 'Northern Alberta Jubilee Auditorium' }],
+    location: [-113.5289, 53.5219],
+    capacity: [
+      {
+        seats: 2538,
+        setup: 'concert',
+        note: 'Reported without pit. With pit 2,416 also cited. Source: https://en.wikipedia.org/wiki/Northern_Alberta_Jubilee_Auditorium',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'servus-credit-union-place': {
+    id: 'servus-credit-union-place',
+    metroId: 'edmonton',
+    names: [{ name: 'Servus Credit Union Place' }, { name: 'Servus Place' }],
+    location: [-113.57435, 53.6445697],
+    capacity: [
+      {
+        seats: 2023,
+        setup: 'hockey',
+        note: 'Official City of St. Albert performance arena, excluding standing room. Source: https://stalbert.ca/rec/facilities/servus/amenities/arenas/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'winspear-centre': {
+    id: 'winspear-centre',
+    metroId: 'edmonton',
+    names: [{ name: 'Francis Winspear Centre for Music' }, { name: 'Winspear Centre' }],
+    location: [-113.4870899, 53.5442417],
+    capacity: [
+      {
+        seats: 1668,
+        setup: 'concert',
+        note: 'Reported main hall. With choir loft 1,884 also cited. Source: https://en.wikipedia.org/wiki/Winspear_Centre',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'sherwood-park-arena': {
+    id: 'sherwood-park-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Sherwood Park Arena & Sports Centre' }, { name: 'Randy Rosen Rink' }],
+    location: [-113.3064224, 53.5269535],
+    capacity: [
+      {
+        seats: 1500,
+        setup: 'hockey',
+        note: 'Official Strathcona County. Source: https://www.strathcona.ca/recreation-events/recreation-centres/sherwood-park-arena-and-sports-centre/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'midway-music-hall': {
+    id: 'midway-music-hall',
+    metroId: 'edmonton',
+    names: [{ name: 'Midway Music Hall' }],
+    location: [-113.49652, 53.4985],
+    capacity: [
+      {
+        seats: 1450,
+        setup: 'concert',
+        note: 'Official general admission. Source: https://midwaymusichall.com/booking',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'thompson-family-arena': {
+    id: 'thompson-family-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Thompson Family Arena at Heavy Metal Place' }, { name: 'Heavy Metal Place' }],
+    location: [-113.8780428, 53.5682568],
+    capacity: [
+      {
+        seats: 1400,
+        setup: 'hockey',
+        note: 'Reported by architect. Facility total up to 1,700 may include the second rink. Source: https://gecarchitecture.com/work/heavy-metal-place',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'downtown-community-arena': {
+    id: 'downtown-community-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Downtown Community Arena' }, { name: 'Edmonton Downtown Community Arena' }],
+    location: [-113.4961925, 53.5473618],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'hockey',
+        note: 'Reported pre-opening blog figure; needs official confirmation. Source: https://blog.mastermaq.ca/2016/01/16/rogers-place-sneak-peek-january-2016/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'century-mile-racetrack': {
+    id: 'century-mile-racetrack',
+    metroId: 'edmonton',
+    carShare: 0.9,
+    names: [{ name: 'Century Mile Racetrack and Casino' }],
+    location: [-113.5599812, 53.3146194],
+    capacity: [],
+    roof: 'open',
+  },
+  'river-cree-resort': {
+    id: 'river-cree-resort',
+    metroId: 'edmonton',
+    names: [{ name: 'River Cree Resort & Casino' }, { name: 'The Venue' }],
+    // Research aggregator point, low precision; Enoch Cree Nation edge scope.
+    location: [-113.696, 53.51],
+    capacity: [],
     roof: 'indoor',
   },
 };

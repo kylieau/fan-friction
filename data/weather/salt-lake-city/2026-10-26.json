@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-26",
+  "rows": [
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeF": 46.2,
+      "tempF": 52.1,
+      "humidity": 44,
+      "windMph": 4.5,
+      "uvIndex": 0.05,
+      "precipProbability": 9,
+      "precipMm": 0,
+      "shortwave": 4,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:04.844Z",
+      "feelsLikeHighF": 47.4,
+      "feelsLikeLowF": 37.5,
+      "code": 3,
+      "precipProbability": 11,
+      "precipMm": 0
+    }
+  ]
+}
