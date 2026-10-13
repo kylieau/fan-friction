@@ -10533,7 +10533,7 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 19515, setup: 'hockey', note: 'Reported. Source: https://en.wikipedia.org/wiki/Little_Caesars_Arena' },
       { seats: 20332, setup: 'basketball', note: 'Reported. Source: https://en.wikipedia.org/wiki/Little_Caesars_Arena' },
-      { seats: 22000, setup: 'concert', note: 'Reported range top; concerts 15,000–22,000 by setup. Source: https://en.wikipedia.org/wiki/Little_Caesars_Arena' },
+      // Concert capacity left blank: sourced only as a 15,000–22,000 range (BACKLOG).
     ],
     roof: 'indoor',
   },
@@ -10546,11 +10546,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Pine Knob Music Theatre', from: '2022-01-14' },
     ],
     location: [-83.3847, 42.7639],
-    capacity: [{
-      seats: 15040,
-      setup: 'concert',
-      note: 'Reported conflict: 15,000 (Pollstar), 15,300 (Crain\'s), 15,040 = 6,968 pavilion + 8,072 lawn (Wikipedia). Stored sum with conflict preserved. Source: https://en.wikipedia.org/wiki/Pine_Knob_Music_Theatre',
-    }],
+    // Round-2 rule: 15,040 (Wikipedia sum) vs 15,000 (Pollstar) vs 15,300 (Crain's), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'crisler-center': {
@@ -10583,11 +10580,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.78,
     names: [{ name: 'Keyworth Stadium' }],
     location: [-83.055, 42.3928],
-    capacity: [{
-      seats: 7933,
-      setup: 'soccer',
-      note: 'Reported. 7,933 (Crain\'s/Metro Times) vs "can seat 7,000" (FOX 2). Conflict preserved. DCFC home through 2027. Source: https://prod.crainsdetroit.com/node/899936',
-    }],
+    // Round-2 rule: 7,933 vs 'can seat 7,000', none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'meadow-brook-amphitheatre': {
@@ -10617,11 +10611,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Michigan Lottery Amphitheatre' },
     ],
     location: [-82.9761577, 42.5641485],
-    capacity: [{
-      seats: 7200,
-      setup: 'concert',
-      note: 'Reported. 7,200 total incl. ~3,000 lawn (DBusiness); pavilion 4,200 (StubHub). 313 Presents also lists 7,300 — conflict preserved; 7,200 stored per research judgment. Source: https://www.dbusiness.com/people/freedom-reigns/',
-    }],
+    // Round-2 rule: 7,200 vs 7,300 vs 4,200 pavilion, none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'yost-ice-arena': {
@@ -10656,11 +10647,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'The Aretha' },
     ],
     location: [-83.0216925, 42.3340217],
-    capacity: [{
-      seats: 6000,
-      setup: 'concert',
-      note: 'Reported "over 6,000" seats; exact count not verified. Rename date not verified. Ticketmaster lists venue 65540; KovZp id not verified this pass. Source: https://www.hamilton-anderson.com/project/aretha-franklin-amphitheatre/',
-    }],
+    // Round-2 rule: only 'over 6,000' reported, no exact figure; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'fox-theatre-detroit': {
