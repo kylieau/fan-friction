@@ -252,7 +252,7 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
   la('2026-04-12', 'dodgers', 'Dodgers vs Rangers', 'baseball', { home: 'dodgers', away: 'rangers' }, {
     start: '13:10', venue: 'dodger-stadium', crowd: [announced(48530)],
   }),
-  la('2026-04-12', 'lakers', 'Lakers vs Jazz', 'basketball', { home: 'lakers', away: 'utah-hc' }, {
+  la('2026-04-12', 'lakers', 'Lakers vs Jazz', 'basketball', { home: 'lakers', away: 'utah-mammoth' }, {
     start: '17:30', venue: 'crypto-com-arena', crowd: [announced(18791)],
     facts: { storyline: true /* Regular-season finale */ },
   }),

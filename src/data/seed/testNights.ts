@@ -138,7 +138,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Marquee', ['Game 2'], 'Low', 'Nothing bigger was on'],
   }),
   game(D2, {
-    title: 'Kings vs. Utah', home: 'kings', away: 'utah-hc', sport: 'hockey', venue: 'crypto-com-arena', start: '13:00',
+    title: 'Kings vs. Utah', home: 'kings', away: 'utah-mammoth', sport: 'hockey', venue: 'crypto-com-arena', start: '13:00',
     a: ['Routine', [], 'Moderate', 'Done before first pitch, but in World Series traffic'],
   }),
   game(D2, {
