@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', miami: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -25,6 +25,7 @@ const MLB_TEAMS = [
   { teamId: 'astros', metroId: 'houston', mlbId: 117, venueId: 'daikin-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'space-cowboys', metroId: 'houston', mlbId: 5434, sportId: 11, venueId: 'constellation-field', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'rays', metroId: 'tampa', mlbId: 139, venueId: 'tropicana-field', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'marlins', metroId: 'miami', mlbId: 146, mlbVenueId: 4169, venueId: 'loandepot-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'columbus-clippers', metroId: 'columbus', mlbId: 445, sportId: 11, venueId: 'huntington-park', seasons: [2023, 2024, 2025, 2026] },
   // Regular-season home games only at Chase Field. 2026 had two "home" games in Mexico City (venue 5340).
   { teamId: 'diamondbacks', metroId: 'phoenix', mlbId: 109, venueId: 'chase-field', mlbVenueId: 15, seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -109,6 +110,16 @@ const ESPN_TEAMS = [
   { teamId: 'usf-mbb', metroId: 'tampa', path: 'basketball/mens-college-basketball', espnId: '58', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'usf-wbb', metroId: 'tampa', path: 'basketball/womens-college-basketball', espnId: '58', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'rowdies', metroId: 'tampa', path: 'soccer/usa.usl.1', espnId: '17361', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
+  { teamId: 'dolphins', metroId: 'miami', path: 'football/nfl', espnId: '15', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'heat', metroId: 'miami', path: 'basketball/nba', espnId: '14', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'panthers', metroId: 'miami', path: 'hockey/nhl', espnId: '26', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'inter-miami-cf', metroId: 'miami', path: 'soccer/usa.1', espnId: '20232', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'miami-hurricanes-football', metroId: 'miami', path: 'football/college-football', espnId: '2390', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'miami-hurricanes-mbb', metroId: 'miami', path: 'basketball/mens-college-basketball', espnId: '2390', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'fiu-football', metroId: 'miami', path: 'football/college-football', espnId: '2229', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'fiu-mbb', metroId: 'miami', path: 'basketball/mens-college-basketball', espnId: '2229', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'miami-fc', metroId: 'miami', path: 'soccer/usa.usl.1', espnId: '18159', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
+  { teamId: 'fort-lauderdale-united', metroId: 'miami', path: 'soccer/usa.w.usl.1', espnId: '131449', seasons: [2025, 2026] },
   { teamId: 'blue-jackets', metroId: 'columbus', path: 'hockey/nhl', espnId: '29', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'columbus-crew', metroId: 'columbus', path: 'soccer/usa.1', espnId: '183', seasons: [2022, 2023, 2024, 2025] },
   { teamId: 'osu-football', metroId: 'columbus', path: 'football/college-football', espnId: '194', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
@@ -607,6 +618,22 @@ const VENUE_BY_NAME = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Miami (docs/research/city-builds/miami/), as ESPN writes them (checked Oct 13, 2026).
+  'hard rock stadium': 'hard-rock-stadium',
+  'loandepot park': 'loandepot-park',
+  'kaseya center': 'kaseya-center',
+  'amerant bank arena': 'amerant-bank-arena',
+  'bb&t center': 'amerant-bank-arena',
+  'fla live arena': 'amerant-bank-arena',
+  'chase stadium': 'inter-miami-cf-stadium',
+  'drv pnk stadium': 'inter-miami-cf-stadium',
+  'inter miami cf stadium': 'inter-miami-cf-stadium',
+  'nu stadium': 'nu-stadium',
+  'pitbull stadium': 'pitbull-stadium',
+  'riccardo silva stadium': 'pitbull-stadium',
+  'watsco center': 'watsco-center',
+  'beyond bancard field': 'beyond-bancard-field',
+  'ocean bank convocation center': 'ocean-bank-convocation-center',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -626,6 +653,7 @@ const METRO_VENUE_BY_NAME = {
     'pavilion at arc': 'university-credit-union-center',
   },
   houston: { 'panther stadium': 'pvamu-panther-stadium', 'toyota center': 'toyota-center', 'rice stadium': 'first-community-stadium' },
+  miami: { 'americanairlines arena': 'kaseya-center', 'ftx arena': 'kaseya-center', 'miami-dade arena': 'kaseya-center' },
 };
 
 function venueIdForEspnName(name, metroId) {

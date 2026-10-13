@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'miami', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -168,6 +168,15 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/New_York',
     center: [-82.55, 27.92],
     zoom: 10.2,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/miami/miami-venue-table-answer.md): Miami-Dade + Broward core.
+  // One frame holds downtown, Little Havana, Miami Gardens and Sunrise; Homestead and Hollywood sit toward the edges.
+  miami: {
+    id: 'miami', code: 'MIA',
+    name: 'Miami',
+    timeZone: 'America/New_York',
+    center: [-80.22, 25.84],
+    zoom: 10.4,
   },
   // Covered Oct 12, 2026 (docs/research/city-builds/nashville/nashville-venue-table-answer.md):
   // Nashville–Davidson–Murfreesboro–Franklin MSA. One frame holds downtown, Vanderbilt and the fairgrounds;
