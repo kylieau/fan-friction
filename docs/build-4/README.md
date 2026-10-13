@@ -2,7 +2,8 @@
 
 Handoff docs for Fan/Friction build 4. Images are original PNGs, unmodified.
 
-- `SOL-PLAN-PROMPT.md` — planning prompt for build 4 (plan only, no code).
+- `SOL-CHECK-PROMPT.md` — Codex Sol's check-only pass at the end of build 4 (no planning).
+- `docs/build-4-plan.md`, if present — optional reference only.
 - `build-notes-4-oct12.md` — build 4 notes; source of truth.
 - `build3-review-form-decisions-oct12.md` — rationale behind each decision.
 - `model-hierarchy-chart.md` — which model does what.
