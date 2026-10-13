@@ -200,3 +200,9 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Home's first-event sentence:** "Been to a game or show? Stub your first event." (was "Log your first event."): build 3 §4.4 makes "+ Stub it" the logging copy everywhere, later than her Oct 9 line.
 - **Seats caps:** a generous sanity limit (40 / 20 / 20), not a fit to a form; "Sec" is added only when the section is a bare number.
 - **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).
+
+### Seats, from the seat-fields research (Oct 13; builder's call, Kylie can overrule)
+- **Field set:** "No assigned seat" toggle, Area (free text with chips Floor, Pit, Lawn, Standing room, Suite, Box), Section or block, Row, Seat, Anything else. All optional, all free text as typed (no forced capitals). Replaces GA / Floor / Pit, which mixed "assigned seat or not" with "which part of the venue". Caps 80 / 40 / 24 / 40 / 140 from the longest values seen (Section's 40 is not from the research).
+- **Existing stubs:** an old Area of GA becomes the toggle; Floor and Pit are already Area text. No SQL migration.
+- **Display:** "GA · Lawn · Sec 112 · Row 8 · Seat 4"; "Sec" only for a bare number or number and letter ("Suite 42", "Loggia Box 23", "Q1" read as typed). Anything else sits on its own quiet line on the event page. Per the research's display rules, still to check against the full file.
+- **Privacy:** Anything else sits in the same stub data as seats, readable by approved followers' apps though nothing shows it (Kylie accepted this for seats, Oct 13).

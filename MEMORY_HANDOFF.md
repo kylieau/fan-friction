@@ -12,7 +12,7 @@ Every doc lives in a sub-folder: `docs/product/`, `docs/reference/`, `docs/check
   - **Explore:** Map and List behind an icon switch that remembers the view; the city is the 24 pt page title (shared `ExploreHeader`); the read box and date open the date page (WhyCard unmounted, file kept); sheet top 56 px; friend lines on chips (friends only, never you) and on the tapped card; the List with the calm calendar, day bands, EARLIER, the Today pill, back to the first captured day and forward to the last event; Back restores the day at the top.
   - **Stub tags:** `userTags` on entries and plans (not `tags`, which is the system labels); luggage chip; Tags row and panel in the sheet; tags on Stubs rows (measured, +N), the event page and a hand-added plan or entry; tag page with rename / merge / delete; the Tag filter (several tags = any of them; Tag plus a chip narrows; All resets).
   - **New stub** page title, event · date line, first-visit "Saved to your Stubs", "Edit stub".
-  - **Favorite cities** (star in the switcher, pinned under home, newer-wins sync in `settings.data`); **weather** on the Map's tapped card (open-air only); **seats** (Attended only); the **story slot** (empty seed file).
+  - **Favorite cities** (star in the switcher, pinned under home, newer-wins sync in `settings.data`); **weather** on the Map's tapped card (open-air only); **seats** (Attended only; No assigned seat, Area, Section or block, Row, Seat, Anything else, per the Oct 13 research); the **story slot** (empty seed file).
   - **Fixes from the flags:** a game played in another covered city belongs to that city (`src/data/sources/venueMetro.ts`; the nightly writer files rows under the fetching pass and `data.metroId` carries the venue's city); °C in Canada and Mexico (`usesCelsius`, `degreesFor`); hand-added plans have a page; Home says "Stub your first event".
 - **40 covered metros** (`COVERED_METRO_IDS`); each city build has a follow-up under BACKLOG › Next. Kylie approved the Oct 12–13 city builds' scope (Oct 13).
 - **Nightly job:** the next run re-files the Lakers (Las Vegas) and Spurs (Austin) rows under their venue's city.
@@ -35,12 +35,12 @@ All of `src/` named under Current state, `scripts/catalog-write.mjs` (rows filed
 ## Kylie's manual steps
 1. **Phone check after the deploy (one minute):** add a tag, star a city, enter seats on an Attended stub, then sign out and back in; confirm each is still there (the signed-in round-trip was never run; the private test session was blocked).
 2. ~~Pick the "+N" option~~ Closed (Kylie, Oct 13): keep today's look.
-3. **Run the seat-fields research** (`docs/research/topics/seat-fields-prompt.md`) so GA / Floor / Pit plus Section / Row / Seat can be checked against every room.
+3. **Add the full seat-fields answer file** to `docs/research/topics/` (only her pasted summary is saved; it is in her other session).
 4. Where-watched privacy check, the tester interview follow-ups (C034), the phone checklist (K17): as listed in BACKLOG.
 
 ## Open (details in BACKLOG)
 1. **Sol's check-only pass** (`docs/build-4/SOL-CHECK-PROMPT.md`) can run now that both slices are merged.
-2. **Kylie's open items:** seats research (running); a setting (not just a filter) to keep small rooms out of the List (BACKLOG); K23 Home's place and K24 Faves cards (deferred); build 5 (city names and codes, team colors) and the next formula pass (open-site Tier A, scoring cap, car-share defaults).
+2. **Kylie's open items:** the full seat-fields file; a setting (not just a filter) to keep small rooms out of the List (BACKLOG); K23 Home's place and K24 Faves cards (deferred); build 5 (city names and codes, team colors) and the next formula pass (open-site Tier A, scoring cap, car-share defaults).
 3. **Build 3 flags (section F)** and the city follow-ups under BACKLOG › Next.
 
 **Next command to run:**

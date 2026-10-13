@@ -7408,7 +7408,7 @@ button.back-link {
 
 .seat-fields {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 1.7fr 1fr 1fr;
   gap: 8px;
 }
 
@@ -7427,7 +7427,6 @@ button.back-link {
 
 .seat-field .account-input {
   min-height: 44px;
-  text-transform: uppercase;
 }
 
 .event-seats {
@@ -7479,4 +7478,9 @@ button.back-link {
 /* A row's chip does not count toward the status line's height, so a tagged row is as tall as a plain one. */
 .status-line .tag-chip.is-row {
   margin: -4px 0;
+}
+
+.seat-field-area,
+.seat-field-details {
+  width: 100%;
 }

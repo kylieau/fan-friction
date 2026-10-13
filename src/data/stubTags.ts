@@ -84,31 +84,47 @@ export function retag<T extends { userTags?: string[] }>(rows: readonly T[], ren
 // ---------- Seats (build notes 4, "Stub tags: suggestions" 7) ----------
 
 
-/** A generous sanity cap per part, not a fit to a form: "UPPER RESERVED 31", "101-102", "Pavilion Lawn Terrace". */
-export const SEAT_LIMITS = { section: 40, row: 20, seat: 20 } as const;
+/** Sanity caps per part, set from the longest values seen (the Fenway roof deck is 45), never a fit to a form. */
+export const SEAT_LIMITS = { area: 80, section: 40, row: 24, seat: 40, details: 140 } as const;
 
-/** Seats as they are stored: trimmed, capitals, capped; undefined when every part is empty. */
+/**
+ * Seats as they are stored: each part as typed (trimmed, spaces collapsed, capped); undefined when every
+ * part is empty. A seat saved before the Oct 13 research has area "GA", "Floor" or "Pit": GA becomes the
+ * "No assigned seat" toggle, Floor and Pit are already Area text.
+ */
 export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
   if (!raw) return undefined;
   const clean = (value: string | undefined, max: number) => {
-    const text = (value ?? '').trim().replace(/\s+/g, ' ').toUpperCase().slice(0, max).trim();
+    const text = (value ?? '').trim().replace(/\s+/g, ' ').slice(0, max).trim();
     return text.length > 0 ? text : undefined;
   };
   const out: Seats = {};
-  if (raw.area === 'GA' || raw.area === 'Floor' || raw.area === 'Pit') out.area = raw.area;
+  let area = clean(raw.area, SEAT_LIMITS.area);
+  let noSeat = raw.noSeat === true;
+  if (area === 'GA') {
+    noSeat = true;
+    area = undefined;
+  }
+  if (noSeat) out.noSeat = true;
+  if (area) out.area = area;
   const section = clean(raw.section, SEAT_LIMITS.section);
   const row = clean(raw.row, SEAT_LIMITS.row);
   const seat = clean(raw.seat, SEAT_LIMITS.seat);
+  const details = clean(raw.details, SEAT_LIMITS.details);
   if (section) out.section = section;
   if (row) out.row = row;
   if (seat) out.seat = seat;
+  if (details) out.details = details;
   return Object.keys(out).length > 0 ? out : undefined;
 }
 
-/** "Sec 112 · Row 8 · Seat 4", "Floor · Row 3", "GA". */
+/**
+ * "GA · Lawn · Sec 112 · Row 8 · Seat 4", "Floor · Row 3", "Suite 42". The one line, without Details
+ * (that sits on its own line). "Sec" only when the section is a bare number or number and letter.
+ */
 export function seatsLine(seats: Seats | undefined): string {
-  if (!seats) return '';
-  // "Sec" only for a bare number; a name ("Lawn", "Suite 42", "Loge Box 12") reads as it is.
-  const section = seats.section ? (/^\d+[A-Z]?$/.test(seats.section) ? `Sec ${seats.section}` : seats.section) : undefined;
-  return [seats.area, section, seats.row && `Row ${seats.row}`, seats.seat && `Seat ${seats.seat}`].filter(Boolean).join(' · ');
+  const s = normalizeSeats(seats);
+  if (!s) return '';
+  const section = s.section ? (/^\d+[A-Za-z]?$/.test(s.section) ? `Sec ${s.section}` : s.section) : undefined;
+  return [s.noSeat ? 'GA' : undefined, s.area, section, s.row && `Row ${s.row}`, s.seat && `Seat ${s.seat}`].filter(Boolean).join(' · ');
 }
