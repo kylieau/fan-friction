@@ -274,6 +274,7 @@ export async function searchAllDates(homeId: string | null, query: string): Prom
 
 export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
+export { storyFor, type NightStory } from './seed/stories';
 export { weatherAt, weatherForEvent, weatherRangeForEvent, cityWeather, cityDayRange } from './weather';
 export { weatherGlyph, feelsLikeLabel, rangeLabel, rangeSpoken, isOpenAir, type WeatherRow, type WeatherDay } from './formula/weather';
 export {

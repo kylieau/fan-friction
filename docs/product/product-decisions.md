@@ -195,6 +195,6 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **No promo suggestions:** events carry no promo field today (only a stub's own `promo` note), so nothing is offered or invented.
 - **Row tags:** a Stubs row shows the tags that fit and counts the rest into +N; it stays one line.
 - **Seats:** only on Attending and Attended; until Kylie answers the storage question they are editable on Attended stubs only.
-- **"The day" / "The night":** "The night" for starts at 5 pm or later, otherwise "The day" (also with no start time).
+- **"The day" / "The night":** "The night" for starts at 5 pm or later, otherwise "The day" (also with no start time). Kylie accepted this under "everything else as recommended" (Oct 13); the wording stays the builder's.
 - **List Activity switch:** follows the Map sheet's stored Friends-activity setting; no second toggle.
 - **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).

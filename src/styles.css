@@ -7436,3 +7436,36 @@ button.back-link {
   font-weight: 600;
   color: var(--ink2);
 }
+
+/* "The night" story on the event page (build notes 4, P4): white card, ink type. */
+.night-story {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--ink);
+}
+
+.night-story-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.night-story-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.night-story-links {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.night-story-links a {
+  color: var(--dodger);
+}

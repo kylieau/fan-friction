@@ -12,6 +12,7 @@ import {
   feelsLikeLabel,
   isOpenAir,
   seatsLine,
+  storyFor,
   priceLine,
   sizeTier,
   ticketPrice,
@@ -384,6 +385,8 @@ export function EventScreen() {
       </section>
       {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} event={e} seats={me.capacity} />}
 
+      <StorySlot event={e} />
+
       <WeatherDetail event={e} />
 
       <p className="source-note">Counts are labeled by kind: announced, reported or estimated. Distances are straight-line.</p>
@@ -408,6 +411,35 @@ export function EventScreen() {
       )}
       {logged && <RemoveFromLog entry={logged} />}
     </div>
+  );
+}
+
+/**
+ * "The night" story (build notes 4, P4): a short paragraph and its source links, under the crowd, in a
+ * white card. The whole block is left out when there is no story. The label follows the words rule
+ * (Kylie, Oct 9): "night" only for a start at 5 pm or later, otherwise, or with no start, "The day".
+ */
+function StorySlot({ event }: { event: CrowdEvent }) {
+  const story = storyFor(event.id);
+  if (!story) return null;
+  const evening = event.start ? event.start >= '17:00' : false;
+  return (
+    <section className="card night-story" aria-label={evening ? 'The night' : 'The day'}>
+      <h2 className="night-story-label">{evening ? 'The night' : 'The day'}</h2>
+      <p className="night-story-text">{story.text}</p>
+      {story.links.length > 0 && (
+        <p className="night-story-links">
+          {story.links.map((link, i) => (
+            <span key={link.url}>
+              {i > 0 && ' · '}
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.label}
+              </a>
+            </span>
+          ))}
+        </p>
+      )}
+    </section>
   );
 }
 
