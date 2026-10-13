@@ -41880,6 +41880,181 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-14-espn-spurs-401898722",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17635,
+      "low": 16473,
+      "high": 18091
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-16-espn-spurs-401898843",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17635,
+      "low": 16473,
+      "high": 18091
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-espn-san-antonio-fc-401842297",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Moderate",
+      "why": "UTSA vs. Navy 9.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 7126,
+      "low": 7011,
+      "high": 7433
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-espn-uiw-football-401868250",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Heavy",
+      "why": "UTSA vs. Navy 3.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-17-espn-utsa-football-401862804",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Incarnate Word vs. UT Rio Grande 3.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 18456,
+      "low": 17961,
+      "high": 18935
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-20-espn-spurs-401909090",
+    "date": "2026-10-20",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18336,
+      "low": 17919,
+      "high": 18509
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-23-espn-spurs-401909096",
+    "date": "2026-10-23",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-24-espn-san-antonio-fc-401842310",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Incarnate Word vs. McNeese 6.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 7097,
+      "low": 6983,
+      "high": 7403
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-24-espn-uiw-football-401869138",
+    "date": "2026-10-24",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "SAFC vs. Orange County 6.5 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "san-antonio",
+    "eventId": "2026-10-27-espn-spurs-401909879",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:32.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18134,
+      "low": 17722,
+      "high": 18306
+    }
+  },
+  {
     "metroId": "salt-lake-city",
     "eventId": "2026-10-13-espn-utah-mammoth-401892500",
     "date": "2026-10-13",

@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|san antonio|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -536,7 +536,16 @@ const LIST: Team[] = [
   team('carleton-ravens-mbb', "Carleton Ravens Men's Basketball", 'Ravens MBB', 'U Sports basketball', 'basketball', 'ottawa-gatineau', 'CAR'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball', 'miami', 'MIA'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
-  team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball'),
+  // San Antonio (Oct 13, 2026; docs/research/city-builds/san-antonio/). Spurs were a visitor record; same id, now home.
+  team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball', 'san-antonio', 'SA'),
+  team('san-antonio-fc', 'San Antonio FC', 'SAFC', 'USL Championship', 'soccer', 'san-antonio', 'SAFC'),
+  team('san-antonio-missions', 'San Antonio Missions', 'Missions', 'Texas League', 'baseball', 'san-antonio', 'MIS'),
+  team('utsa-football', 'UTSA Roadrunners Football', 'UTSA FB', 'College football', 'football', 'san-antonio', 'UTSA'),
+  team('utsa-mbb', "UTSA Roadrunners Men's Basketball", 'UTSA MBB', "College men's basketball", 'basketball', 'san-antonio', 'UTSA'),
+  team('utsa-wbb', "UTSA Roadrunners Women's Basketball", 'UTSA WBB', "College women's basketball", 'basketball', 'san-antonio', 'UTSA'),
+  team('uiw-football', 'Incarnate Word Cardinals Football', 'UIW FB', 'College football', 'football', 'san-antonio', 'UIW'),
+  team('uiw-mbb', "Incarnate Word Cardinals Men's Basketball", 'UIW MBB', "College men's basketball", 'basketball', 'san-antonio', 'UIW'),
+  team('uiw-wbb', "Incarnate Word Cardinals Women's Basketball", 'UIW WBB', "College women's basketball", 'basketball', 'san-antonio', 'UIW'),
   team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball'),
   team('jets', 'Winnipeg Jets', 'Jets', 'NHL', 'hockey'),
   team('panthers', 'Florida Panthers', 'Panthers', 'NHL', 'hockey', 'miami', 'FLA'),

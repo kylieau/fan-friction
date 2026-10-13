@@ -9883,6 +9883,353 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'open',
   },
+  // ---------- San Antonio (docs/research/city-builds/san-antonio/san-antonio-venue-table-answer.md; car shares from
+  // docs/research/city-builds/san-antonio/san-antonio-city-type-answer.md), Oct 13, 2026 ----------
+  alamodome: {
+    id: 'alamodome',
+    metroId: 'san-antonio',
+    // Estimated from measured VIA park-and-ride shares on mega-events (city-type answer rows 1–1b); not a full mode split.
+    carShare: 0.87,
+    names: [{ name: 'Alamodome' }],
+    location: [-98.4788949, 29.4168923],
+    capacity: [
+      {
+        seats: 65427,
+        setup: 'football',
+        note: 'Official (2015 event guide). Wikipedia lists 64,000 expandable to 72,000; city music study 73,100 is a concert maximum, not football. UTSA uses a curtained upper level (~34,984 reported); do not size a Roadrunners game by the full-bowl figure alone. Source: https://www.alamodome.com/assets/doc/Event_Guide_11-20-15.pdf',
+      },
+      {
+        seats: 20662,
+        setup: 'basketball',
+        note: 'Reported arena configuration. Source: https://en.wikipedia.org/wiki/Alamodome',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'frost-bank-center': {
+    id: 'frost-bank-center',
+    metroId: 'san-antonio',
+    carShare: 0.95,
+    names: [
+      { name: 'SBC Center' },
+      { name: 'AT&T Center', from: '2006-01-01' },
+      { name: 'Frost Bank Center', from: '2023-09-22' },
+    ],
+    location: [-98.4375058, 29.4269205],
+    capacity: [
+      {
+        seats: 18418,
+        setup: 'basketball',
+        note: 'Reported current basketball layout (2015–present). Source: https://en.wikipedia.org/wiki/Frost_Bank_Center',
+      },
+      {
+        seats: 19000,
+        setup: 'concert',
+        note: 'Reported concert maximum. Rodeo configuration unknown. Source: https://en.wikipedia.org/wiki/Frost_Bank_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'freeman-coliseum': {
+    id: 'freeman-coliseum',
+    metroId: 'san-antonio',
+    carShare: 0.95,
+    names: [{ name: 'Freeman Coliseum' }],
+    location: [-98.4393948, 29.4269468],
+    capacity: [
+      {
+        seats: 11700,
+        setup: 'concert',
+        note: 'Reported concerts/boxing/wrestling. Basketball 9,800; rodeo/bull riding 9,500; city study 10,150. Shares east-side lots with Frost Bank Center and rodeo grounds. Source: https://en.wikipedia.org/wiki/Freeman_Coliseum',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'real-life-amphitheater': {
+    id: 'real-life-amphitheater',
+    metroId: 'san-antonio',
+    names: [
+      { name: 'Verizon Wireless Amphitheater' },
+      { name: 'Real Life Amphitheater', from: '2009-01-01' },
+    ],
+    location: [-98.3150192, 29.5925988],
+    // Round-2 rule: seated 6,000 vs 8,000 covered conflict (KSAT 2021), none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'retama-park': {
+    id: 'retama-park',
+    metroId: 'san-antonio',
+    names: [{ name: 'Retama Park' }],
+    location: [-98.3260978, 29.5902467],
+    // Round-2 rule: single undated Stadium Journey figure (15,000), configuration unknown; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'wolff-stadium': {
+    id: 'wolff-stadium',
+    metroId: 'san-antonio',
+    carShare: 0.95,
+    names: [
+      { name: 'Nelson W. Wolff Municipal Stadium' },
+      { name: 'Wolff Stadium' },
+    ],
+    location: [-98.5547105, 29.508818],
+    capacity: [
+      {
+        seats: 9200,
+        setup: 'baseball',
+        note: 'Reported total including grass berm (6,200 fixed + ~3,000). Missions home through 2028; downtown ballpark opens 2029. Source: https://www.ksat.com/news/local/2024/08/06/downtown-baseball-stadium-for-san-antonio-missions-expected-to-open-by-2028-letter-to-mlb-says/',
+      },
+    ],
+    roof: 'open',
+  },
+  'toyota-field': {
+    id: 'toyota-field',
+    metroId: 'san-antonio',
+    carShare: 0.96,
+    names: [{ name: 'Toyota Field' }],
+    location: [-98.3985276, 29.5355302],
+    capacity: [
+      {
+        seats: 8296,
+        setup: 'soccer',
+        note: 'Reported soccer capacity; concerts/festivals up to 13,000. Source: https://en.wikipedia.org/wiki/Toyota_Field',
+      },
+      {
+        seats: 13000,
+        setup: 'concert',
+        note: 'Reported festival/concert configuration. Source: https://en.wikipedia.org/wiki/Toyota_Field',
+      },
+    ],
+    roof: 'open',
+  },
+  'benson-stadium': {
+    id: 'benson-stadium',
+    metroId: 'san-antonio',
+    names: [
+      { name: 'Gayle and Tom Benson Stadium' },
+      { name: 'Benson Stadium' },
+    ],
+    location: [-98.4655092, 29.4623935],
+    capacity: [
+      {
+        seats: 6000,
+        setup: 'football',
+        note: 'Official UIW (2010 expansion). Typical crowds reported just under 2,500. Source: https://uiwcardinals.com/facilities/mcdermott-center/1',
+      },
+    ],
+    roof: 'open',
+  },
+  'cowboys-dancehall': {
+    id: 'cowboys-dancehall',
+    metroId: 'san-antonio',
+    names: [{ name: 'Cowboys Dancehall' }],
+    location: [-98.398163, 29.5175871],
+    capacity: [
+      {
+        seats: 5772,
+        setup: 'concert',
+        note: 'Official city music-venue study (Aug 2025). Standing-heavy club; seated split unknown. Source: https://www.sa.gov/files/assets/main/v/1/initiatives/sports-amp-entertainment-district/music-venue-study-final-report-draft-8.15.2025.pdf',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'whitewater-amphitheater': {
+    id: 'whitewater-amphitheater',
+    metroId: 'san-antonio',
+    carShare: 0.98,
+    names: [{ name: 'Whitewater Amphitheater' }],
+    location: [-98.0988318, 29.7449765],
+    capacity: [
+      {
+        seats: 5600,
+        setup: 'concert',
+        note: 'Official venue site. Comal County edge; shared catchment with Austin—list here only. Chapter 11 sale pending (2026). Source: https://www.whitewaterrocks.com/venue-info/',
+      },
+    ],
+    roof: 'open',
+  },
+  'rj-music-pavilion': {
+    id: 'rj-music-pavilion',
+    metroId: 'san-antonio',
+    names: [{ name: 'R&J Music Pavilion' }],
+    location: [-98.498286, 29.244676],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'concert',
+        note: 'Official city study; Crexi listing says 5,200 (fire department). Property listed for sale; 2026 activity unverified. Source: https://www.sa.gov/files/assets/main/v/1/initiatives/sports-amp-entertainment-district/music-venue-study-final-report-draft-8.15.2025.pdf',
+      },
+    ],
+    roof: 'open',
+  },
+  'sunken-garden-theater': {
+    id: 'sunken-garden-theater',
+    metroId: 'san-antonio',
+    names: [{ name: 'Sunken Garden Theater' }],
+    location: [-98.478372, 29.4609178],
+    capacity: [
+      {
+        seats: 4800,
+        setup: 'concert',
+        note: 'Official city study. Just under the 5,000 friction line. Source: https://www.sa.gov/files/assets/main/v/1/initiatives/sports-amp-entertainment-district/music-venue-study-final-report-draft-8.15.2025.pdf',
+      },
+    ],
+    roof: 'open',
+  },
+  'utsa-convocation-center': {
+    id: 'utsa-convocation-center',
+    metroId: 'san-antonio',
+    names: [{ name: 'UTSA Convocation Center' }, { name: 'The Convo' }],
+    location: [-98.6173074, 29.5856342],
+    capacity: [
+      {
+        seats: 4080,
+        setup: 'basketball',
+        note: 'Reported. Volleyball listing 2,650 is a different configuration. Source: https://en.wikipedia.org/wiki/Convocation_Center_(University_of_Texas_at_San_Antonio)',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'flores-country-store-outdoor': {
+    id: 'flores-country-store-outdoor',
+    metroId: 'san-antonio',
+    names: [
+      { name: "John T. Floore's Country Store — outdoor stage" },
+      { name: "Floore's Country Store" },
+    ],
+    location: [-98.6905158, 29.5779359],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'concert',
+        note: 'Reported outdoor stage. Indoor hall is 800 seats—a separate room, not merged. Source: https://news.pollstar.com/2017/04/04/john-t-floores-celebrates-75/',
+      },
+    ],
+    roof: 'open',
+  },
+  'the-espee': {
+    id: 'the-espee',
+    metroId: 'san-antonio',
+    names: [{ name: 'The Espee' }, { name: 'Lonestar Pavilion at Sunset Station' }],
+    location: [-98.4781511, 29.4215033],
+    capacity: [
+      {
+        seats: 3175,
+        setup: 'concert',
+        note: 'Official city study GA figure; Express-News ~3,200 mostly plaza standing. Source: https://www.sa.gov/files/assets/main/v/1/initiatives/sports-amp-entertainment-district/music-venue-study-final-report-draft-8.15.2025.pdf',
+      },
+    ],
+    roof: 'open',
+  },
+  'boeing-center-tech-port': {
+    id: 'boeing-center-tech-port',
+    metroId: 'san-antonio',
+    carShare: 0.95,
+    names: [
+      { name: 'Tech Port Center + Arena' },
+      { name: 'Boeing Center at Tech Port', from: '2023-01-24' },
+    ],
+    location: [-98.5510254, 29.3867009],
+    capacity: [
+      {
+        seats: 3100,
+        setup: 'concert',
+        note: 'Reported standing; city study 3,150. Source: https://thevendry.com/venue/168715/boeing-center-at-tech-port-san-antonio-tx/space/62610',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'laurie-auditorium': {
+    id: 'laurie-auditorium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Laurie Auditorium' }],
+    location: [-98.4835083, 29.4616913],
+    capacity: [
+      {
+        seats: 2479,
+        setup: 'concert',
+        note: 'Official city study (Trinity University). Source: https://www.sa.gov/files/assets/main/v/1/initiatives/sports-amp-entertainment-district/music-venue-study-final-report-draft-8.15.2025.pdf',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'lila-cockrell-theatre': {
+    id: 'lila-cockrell-theatre',
+    metroId: 'san-antonio',
+    names: [{ name: 'Lila Cockrell Theatre' }],
+    location: [-98.4845254, 29.4215304],
+    capacity: [
+      {
+        seats: 2319,
+        setup: 'concert',
+        note: 'Reported fixed orchestra and balconies; city study 2,300. Convention center expansion may affect the room after 2028. Source: https://venuecoalition.com/lila-cockrell-theatre/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'majestic-theatre-sa': {
+    id: 'majestic-theatre-sa',
+    metroId: 'san-antonio',
+    names: [{ name: 'Majestic Theatre' }],
+    location: [-98.4908675, 29.4263837],
+    capacity: [
+      {
+        seats: 2264,
+        setup: 'concert',
+        note: 'Official ATG fixed seats. Source: https://us.atgtickets.com/venues/majestic-theatre/join-us/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'tobin-center': {
+    id: 'tobin-center',
+    metroId: 'san-antonio',
+    names: [{ name: 'H-E-B Performance Hall at the Tobin Center' }, { name: 'Tobin Center' }],
+    location: [-98.4887624, 29.430651],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'concert',
+        note: 'Official city study seated; flat-floor 2,039 is a different configuration. Source: https://www.sa.gov/files/assets/main/v/1/initiatives/sports-amp-entertainment-district/music-venue-study-final-report-draft-8.15.2025.pdf',
+      },
+      {
+        seats: 2039,
+        setup: 'concert',
+        note: 'Reported flat-floor configuration. Source: https://cdn.fodors.com/world/north-america/usa/texas/san-antonio/neighborhoods/downtown-and-the-river-walk/things-to-do/performing-arts',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'mcdermott-convocation-center': {
+    id: 'mcdermott-convocation-center',
+    metroId: 'san-antonio',
+    names: [{ name: 'McDermott Convocation Center' }, { name: 'Alice P. McDermott Convocation Center' }],
+    location: [-98.4655092, 29.4623935],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'basketball',
+        note: 'Reported UIW basketball and volleyball. Same campus point as Benson Stadium. Source: https://stadiumjourney.com/stadiums/alice-p-mcdermott-convocation-center-s1894',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'aztec-theatre-sa': {
+    id: 'aztec-theatre-sa',
+    metroId: 'san-antonio',
+    names: [{ name: 'Aztec Theatre' }],
+    location: [-98.4912458, 29.4247609],
+    capacity: [
+      {
+        seats: 1477,
+        setup: 'concert',
+        note: 'Reported. Live Nation-operated. Source: https://en.wikipedia.org/wiki/Aztec_Theatre_(San_Antonio)',
+      },
+    ],
+    roof: 'indoor',
+  },
 };
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
 export function venueNameOn(venue: Venue, date: LocalDate): string {

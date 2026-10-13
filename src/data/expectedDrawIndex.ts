@@ -55772,6 +55772,1074 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 17518,
     "games": 4,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 6178,
+    "low": 5855,
+    "high": 6996,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7263,
+    "low": 6888,
+    "high": 7714,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5659,
+    "low": 4697,
+    "high": 5732,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6362,
+    "low": 5946,
+    "high": 7023,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 6007,
+    "low": 5856,
+    "high": 6490,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 6957,
+    "low": 6358,
+    "high": 7018,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6507,
+    "low": 5676,
+    "high": 7218,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 6094,
+    "low": 5744,
+    "high": 6360,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 5997,
+    "low": 5980,
+    "high": 6277,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 6367,
+    "low": 6229,
+    "high": 6748,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 6090,
+    "low": 5879,
+    "high": 6518,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "venueId": "toyota-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 7133,
+    "low": 7018,
+    "high": 7440,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 3565,
+    "low": 2981,
+    "high": 4485,
+    "games": 204,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4569,
+    "low": 4564,
+    "high": 4916,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3344,
+    "low": 2832,
+    "high": 4181,
+    "games": 96,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 3273,
+    "low": 2681,
+    "high": 4064,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 3598,
+    "low": 3033,
+    "high": 4348,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 3870,
+    "low": 2992,
+    "high": 4754,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 4038,
+    "low": 3262,
+    "high": 4778,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 3030,
+    "low": 2513,
+    "high": 3190,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 3240,
+    "low": 3111,
+    "high": 3527,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4304,
+    "low": 3630,
+    "high": 4766,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 4389,
+    "low": 4097,
+    "high": 5570,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 4716,
+    "low": 4274,
+    "high": 5048,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 4231,
+    "low": 4230,
+    "high": 4304,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 4480,
+    "low": 3537,
+    "high": 5070,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 3491,
+    "low": 3194,
+    "high": 4057,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 4154,
+    "low": 3827,
+    "high": 4385,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4671,
+    "low": 4053,
+    "high": 5654,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 4675,
+    "low": 4518,
+    "high": 5451,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 4765,
+    "low": 4516,
+    "high": 5284,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 4476,
+    "low": 4133,
+    "high": 5128,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 5346,
+    "low": 3947,
+    "high": 6467,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 3748,
+    "low": 3522,
+    "high": 3954,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 5744,
+    "low": 5479,
+    "high": 6259,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2522,
+    "low": 2181,
+    "high": 3265,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 2418,
+    "low": 2135,
+    "high": 2931,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 2942,
+    "low": 2239,
+    "high": 3496,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 2637,
+    "low": 2390,
+    "high": 2867,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 2182,
+    "low": 2068,
+    "high": 2380,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 2322,
+    "low": 2079,
+    "high": 2524,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "venueId": "wolff-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 3847,
+    "low": 3652,
+    "high": 3927,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18437,
+    "low": 18281,
+    "high": 18739,
+    "games": 74,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17635,
+    "low": 16473,
+    "high": 18091,
+    "games": 7,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18354,
+    "low": 17753,
+    "high": 18725,
+    "games": 35,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18483,
+    "low": 18354,
+    "high": 18791,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18648,
+    "low": 18354,
+    "high": 18904,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18354,
+    "low": 18062,
+    "high": 18354,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18354,
+    "low": 17937,
+    "high": 18528,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17163,
+    "low": 17087,
+    "high": 18354,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18554,
+    "low": 17978,
+    "high": 18946,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18510,
+    "low": 17812,
+    "high": 18814,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 18510,
+    "low": 18157,
+    "high": 18611,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 19035,
+    "low": 18976,
+    "high": 19047,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18614,
+    "low": 18397,
+    "high": 18781,
+    "games": 18,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18590,
+    "low": 18484,
+    "high": 18749,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18743,
+    "low": 18643,
+    "high": 18824,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18483,
+    "low": 18330,
+    "high": 18670,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18646,
+    "low": 18540,
+    "high": 18783,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18359,
+    "low": 17897,
+    "high": 18644,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "venueId": "frost-bank-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18558,
+    "low": 18152,
+    "high": 18781,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "all",
+    "month": null,
+    "count": 21350,
+    "low": 20271,
+    "high": 22625,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "opener",
+    "month": null,
+    "count": 45778,
+    "low": 35845,
+    "high": 47560,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "friday",
+    "month": null,
+    "count": 21723,
+    "low": 21043,
+    "high": 23357,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 21350,
+    "low": 20736,
+    "high": 21723,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 21516,
+    "low": 20516,
+    "high": 22627,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 22344,
+    "low": 21744,
+    "high": 22924,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "venueId": "alamodome",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 20597,
+    "low": 18229,
+    "high": 24026,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1058,
+    "low": 907,
+    "high": 1263,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 975,
+    "low": 862,
+    "high": 1271,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1058,
+    "low": 842,
+    "high": 1260,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 884,
+    "low": 707,
+    "high": 1041,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1236,
+    "low": 1102,
+    "high": 1495,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1008,
+    "low": 888,
+    "high": 1110,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 783,
+    "low": 730,
+    "high": 812,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1189,
+    "low": 916,
+    "high": 1387,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1233,
+    "low": 1071,
+    "high": 1365,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1288,
+    "low": 1170,
+    "high": 1424,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 858,
+    "low": 843,
+    "high": 887,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1061,
+    "low": 976,
+    "high": 1117,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 1096,
+    "low": 1061,
+    "high": 1110,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 887,
+    "low": 767,
+    "high": 1172,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 850,
+    "low": 775,
+    "high": 1000,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 803,
+    "low": 749,
+    "high": 951,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1000,
+    "low": 971,
+    "high": 1209,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 813,
+    "low": 753,
+    "high": 852,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 959,
+    "low": 761,
+    "high": 1352,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 959,
+    "low": 872,
+    "high": 1043,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "venueId": "utsa-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1412,
+    "low": 1053,
+    "high": 1468,
+    "games": 3,
+    "seasons": "2025–2026"
   }
 ];
 
@@ -56140,6 +57208,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.25,
     "games": 9
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "season": 2026,
+    "level": 0.826,
+    "games": 3
   }
 ];
 
@@ -83226,6 +84301,482 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "wizards",
     "opponent": "warriors",
     "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "el-paso",
+    "ratio": 1.08,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "las-vegas",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "lexington",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "miami-fc",
+    "ratio": 0.953,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "monterey-bay",
+    "ratio": 1.113,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "new-mexico",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "oakland",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "orange-county",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "phoenix",
+    "ratio": 1.052,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "sacramento",
+    "ratio": 0.939,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "switchbacks-fc",
+    "ratio": 0.903,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "tampa-bay",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-fc",
+    "opponent": "tulsa",
+    "ratio": 0.954,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "cardinals",
+    "ratio": 1.012,
+    "games": 18
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "hooks",
+    "ratio": 0.986,
+    "games": 45
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "naturals",
+    "ratio": 0.943,
+    "games": 18
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "rockhounds",
+    "ratio": 1.007,
+    "games": 36
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "roughriders",
+    "ratio": 0.954,
+    "games": 36
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "sod-poodles",
+    "ratio": 1.023,
+    "games": 36
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "san-antonio-missions",
+    "opponent": "wind-surge",
+    "ratio": 0.894,
+    "games": 18
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "76ers",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "bucks",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "bulls",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "cavaliers",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "celtics",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "clippers",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "grizzlies",
+    "ratio": 1.009,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "hawks",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "heat",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "hornets",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "jazz",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "kings",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "knicks",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "lakers",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "magic",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "mavericks",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "nets",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "nuggets",
+    "ratio": 1.014,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "pelicans",
+    "ratio": 0.992,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "raptors",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "rockets",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "thunder",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "timberwolves",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "trail-blazers",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "warriors",
+    "ratio": 1.017,
+    "games": 4
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "spurs",
+    "opponent": "wizards",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "opponent": "army",
+    "ratio": 1.049,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "opponent": "east-carolina",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "opponent": "rice",
+    "ratio": 1.021,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "opponent": "south-florida",
+    "ratio": 0.943,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-football",
+    "opponent": "texas-st",
+    "ratio": 1.361,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "charlotte",
+    "ratio": 0.892,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "east-carolina",
+    "ratio": 0.943,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "fau",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "north-texas",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "rice",
+    "ratio": 0.942,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "south-florida",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "temple",
+    "ratio": 0.952,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "tulane",
+    "ratio": 0.975,
+    "games": 3
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "tulsa",
+    "ratio": 1.046,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "uab",
+    "ratio": 1.034,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-mbb",
+    "opponent": "wichita-st",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "opponent": "east-carolina",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "opponent": "memphis",
+    "ratio": 1.049,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "opponent": "north-texas",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "opponent": "rice",
+    "ratio": 1.058,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "opponent": "temple",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "san-antonio",
+    "teamId": "utsa-wbb",
+    "opponent": "tulsa",
+    "ratio": 1.167,
     "games": 2
   }
 ];
