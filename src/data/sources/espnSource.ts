@@ -283,6 +283,16 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-wbb', sport: 'basketball' },
+  // Denver (docs/research/city-builds/denver/); every id and home venue checked against the feed Oct 13, 2026.
+  { path: 'football/nfl', espnId: '7', metroId: 'denver', teamId: 'broncos', sport: 'football' },
+  { path: 'basketball/nba', espnId: '7', metroId: 'denver', teamId: 'nuggets', sport: 'basketball' },
+  { path: 'hockey/nhl', espnId: '17', metroId: 'denver', teamId: 'avalanche', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '184', metroId: 'denver', teamId: 'rapids', sport: 'soccer' },
+  { path: 'lacrosse/nll', espnId: '125422', metroId: 'denver', teamId: 'colorado-mammoth', sport: 'lacrosse' },
+  { path: 'soccer/usa.nwsl', espnId: '131563', metroId: 'denver', teamId: 'denver-summit-fc', sport: 'soccer' },
+  { path: 'hockey/mens-college-hockey', espnId: '2172', metroId: 'denver', teamId: 'du-mhockey', sport: 'hockey' },
+  { path: 'basketball/mens-college-basketball', espnId: '2172', metroId: 'denver', teamId: 'du-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2172', metroId: 'denver', teamId: 'du-wbb', sport: 'basketball' },
   // New Orleans (docs/research/city-builds/new-orleans/); every id and home venue checked against the feed Oct 12, 2026.
   // Tulane football is 2655, not 265 (265 is Washington State).
   { path: 'football/nfl', espnId: '18', metroId: 'new-orleans', teamId: 'saints', sport: 'football' },
@@ -627,6 +637,20 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Denver, as ESPN writes them on each team's own schedule (Oct 13, 2026).
+  'empower field at mile high': 'empower-field',
+  'sports authority field at mile high': 'empower-field',
+  'invesco field at mile high': 'empower-field',
+  'coors field': 'coors-field',
+  'ball arena': 'ball-arena',
+  'pepsi center': 'ball-arena',
+  "dick's sporting goods park": 'dicks-sporting-goods-park',
+  'dicks sporting goods park': 'dicks-sporting-goods-park',
+  "fiddler's green amphitheatre": 'fiddlers-green-amphitheatre',
+  'fiddlers green amphitheatre': 'fiddlers-green-amphitheatre',
+  'centennial stadium': 'centennial-stadium',
+  'magness arena': 'magness-arena',
+  'hamilton gymnasium': 'hamilton-gymnasium',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
@@ -652,6 +676,15 @@ const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
     'toyota center': 'toyota-center',
     // Rice–Totten Stadium in Mississippi is a different building. Keep this name on Houston only.
     'rice stadium': 'first-community-stadium',
+  },
+  denver: {
+    'empower field at mile high': 'empower-field',
+    'coors field': 'coors-field',
+    'ball arena': 'ball-arena',
+    "dick's sporting goods park": 'dicks-sporting-goods-park',
+    'centennial stadium': 'centennial-stadium',
+    'magness arena': 'magness-arena',
+    'hamilton gymnasium': 'hamilton-gymnasium',
   },
 };
 

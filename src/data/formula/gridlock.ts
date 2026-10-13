@@ -87,7 +87,9 @@ const SCALE = 7.5;
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub' };
+// Denver is a hub (research, Oct 12, 2026, docs/research/city-builds/denver/denver-city-type-answer.md): downtown cluster
+// spill between Empower Field, Ball Arena and Coors Field; outlying rooms are sprawl-like. Venue carShare values are estimates (C04 Oct 12).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', denver: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -281,6 +283,10 @@ const ZONE_NAMES: Record<string, string> = {
   'caesars-superdome': 'Superdome complex',
   'smoothie-king-center': 'Superdome complex',
   'anderson-arena': 'St. Thomas',
+  // Denver downtown cluster (city-type answer §3.4): shared I-25, Union Station rail and downtown garages.
+  'empower-field': 'Downtown cluster',
+  'coors-field': 'Downtown cluster',
+  'ball-arena': 'Downtown cluster',
 };
 
 export interface Zone {

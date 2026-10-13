@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans', 'denver'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -257,6 +257,15 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-90.09, 29.97],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/denver/denver-venue-table-answer.md): Denver–Aurora–Centennial MSA core.
+  // One frame holds the downtown cluster (Empower Field, Coors Field, Ball Arena); Red Rocks, DSG Park and Centennial sit off the first view.
+  denver: {
+    id: 'denver', code: 'DEN',
+    name: 'Denver',
+    timeZone: 'America/Denver',
+    center: [-104.99, 39.744],
+    zoom: 10.4,
   },
 };
 
