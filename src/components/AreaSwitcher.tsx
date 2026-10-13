@@ -16,10 +16,13 @@ export function AreaSwitcher({
   metro,
   open,
   onOpenChange,
+  variant = 'chip',
 }: {
   metro: Metro;
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  /** "title" is Explore's left-aligned page title (build notes 4, 1.2); "chip" is the centered chip. */
+  variant?: 'chip' | 'title';
 }) {
   const [params, setParams] = useSearchParams();
   const menuId = useId();
@@ -37,7 +40,7 @@ export function AreaSwitcher({
     onOpenChange(false);
   };
   return (
-    <div className="area-switcher">
+    <div className={`area-switcher${variant === 'title' ? ' is-title' : ''}`}>
       <button
         type="button"
         className="area-chip"
@@ -48,7 +51,7 @@ export function AreaSwitcher({
         onClick={() => onOpenChange(!open)}
       >
         {viewingHome && <HomeMark />}
-        {metro.name}
+        <span className="area-chip-name">{metro.name}</span>
         <ChevronDown />
       </button>
       {open && (

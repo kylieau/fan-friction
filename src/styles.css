@@ -6501,3 +6501,64 @@ button.back-link {
   color: var(--crowdOnInk);
   vertical-align: -1px;
 }
+
+/* ---------- Explore title row (build notes 4, 1.2) ---------- */
+.explore-title-row {
+  min-height: 56px;
+}
+
+.explore-title-area {
+  flex: 1;
+  min-width: 0;
+}
+
+.area-switcher.is-title {
+  min-height: 56px;
+  justify-content: center;
+}
+
+.area-switcher.is-title .area-chip {
+  font-size: 24px;
+  font-weight: 800;
+  min-height: 56px;
+  gap: 6px;
+  max-width: 100%;
+}
+
+.area-switcher.is-title .area-chip svg {
+  width: 18px;
+  height: 18px;
+}
+
+.area-switcher.is-title .home-mark svg,
+.map-header .area-switcher.is-title .area-chip .home-mark svg {
+  width: 20px;
+  height: 20px;
+}
+
+.area-switcher.is-title .area-menu {
+  left: 0;
+  top: 100%;
+  transform: none;
+}
+
+.map-header .explore-title-row {
+  margin-top: -4px;
+}
+
+/* A long city name ends in an ellipsis; the house and the chevron are never cut. */
+.area-chip-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.area-chip .home-mark,
+.area-chip svg {
+  flex-shrink: 0;
+}
+
+.explore-title-row .explore-title-area {
+  flex: 1 1 0;
+}

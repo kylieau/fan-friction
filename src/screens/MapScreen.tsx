@@ -29,10 +29,9 @@ import { CrowdLayer } from '../map/CrowdLayer';
 import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdThousands, showsOnMap } from '../map/crowdPoints';
 import { MapSettle, type ViewBounds } from '../map/viewBounds';
-import { AreaSwitcher } from '../components/AreaSwitcher';
+import { ExploreHeader } from '../components/ExploreHeader';
 import { DateScore } from '../components/DateScore';
 import { ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
-import { SearchButton } from '../components/SearchButton';
 import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
@@ -262,13 +261,8 @@ export function MapScreen() {
       </div>
 
       <header className="map-header">
-        {/* The city switcher centered on the top row, the one search button at its right (build notes 2, global search). */}
-        <div className="map-header-top centered">
-          <div ref={areaRef}>
-            <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
-          </div>
-          <SearchButton metroId={metro.id} className="map-header-search" />
-        </div>
+        {/* The shared title row (build notes 4, 1.2): the city left at the page-title size, search at the right. */}
+        <ExploreHeader metro={metro} areaOpen={menu === 'area'} onAreaOpenChange={(next) => setMenu(next ? 'area' : null)} areaRef={areaRef} />
         {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
           {/* Tapping the read opens "Why 4.7 today" (build notes 2, P3; never "night", build notes 3, 3.1). */}
