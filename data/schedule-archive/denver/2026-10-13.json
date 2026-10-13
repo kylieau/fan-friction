@@ -4,7 +4,7 @@
   "metroName": "Denver",
   "timeZone": "America/Denver",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:38:07.026Z",
+  "capturedAt": "2026-10-13T07:59:12.413Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -31,9 +31,109 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 54
     }
   ],
   "events": [
+    {
+      "id": "2026-10-13-tm-Z7r9jZ1A7JK_0",
+      "metroId": "denver",
+      "date": "2026-10-13",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Highly Suspect",
+      "officialTitle": "Highly Suspect and Yelawolf (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Highly Suspect",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JK_0"
+    },
+    {
+      "id": "2026-10-13-tm-G5vzZ_1KA-2Fh",
+      "metroId": "denver",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "officialTitle": "Club Level Seating: Kacey Musgraves",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1KA-2Fh",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-G5vzZ_5SF0Tm_",
+      "metroId": "denver",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gary Clark Jr.",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gary Clark Jr.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_5SF0Tm_",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-Z7r9jZ1A70gq4",
+      "metroId": "denver",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Death From Above 1979",
+      "officialTitle": "Death From Above 1979 (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Death From Above 1979",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70gq4",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
     {
       "id": "2026-10-14-espn-avalanche-401892505",
       "metroId": "denver",
@@ -68,6 +168,51 @@
       }
     },
     {
+      "id": "2026-10-14-tm-G5vzZ_aRQ0Ogf",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Taking Back Sunday",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Taking Back Sunday",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_aRQ0Ogf",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-Z7r9jZ1A70tee",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "Movements (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Movements",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tee"
+    },
+    {
       "id": "2026-10-14-espn-rapids-761871",
       "metroId": "denver",
       "date": "2026-10-14",
@@ -100,6 +245,75 @@
       }
     },
     {
+      "id": "2026-10-14-tm-G5vzZ_aUNKGmh",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Punch Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Punch Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_aUNKGmh",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-Z7r9jZ1A7xZ8M",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Kishi Bashi",
+      "officialTitle": "Kishi Bashi (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Kishi Bashi",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xZ8M",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vzZ_1hPGKee",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "start": "15:15",
+      "kind": "special",
+      "title": "VIP Tailgate: Broncos v Seahawks",
+      "place": {
+        "type": "venue",
+        "venueId": "empower-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "VIP Tailgate: Broncos v Seahawks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1hPGKee"
+    },
+    {
       "id": "2026-10-15-espn-broncos-401872995",
       "metroId": "denver",
       "date": "2026-10-15",
@@ -129,6 +343,102 @@
         "seasons": "2024–2025",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vzZ_FJwkQO8",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Club Level Seating: Disney Descendants Zombies & Camp Rock",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_FJwkQO8",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A709oK",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "SWITCHFOOT",
+      "officialTitle": "Switchfoot w/ Anberlin",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "SWITCHFOOT",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A709oK",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A70oe_",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "DJ Shadow",
+      "officialTitle": "DJ Shadow - Ages 16+",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Shadow",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oe_"
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A70yZa",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Watsky",
+      "officialTitle": "Watsky x Infinity (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Watsky",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70yZa",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -170,7 +480,7 @@
       "date": "2026-10-16",
       "start": "19:00",
       "kind": "game",
-      "title": "Denver vs. Michigan",
+      "title": "Denver vs. Michigan Wolverines",
       "place": {
         "type": "venue",
         "venueId": "magness-arena"
@@ -188,12 +498,147 @@
       "homeOpener": true
     },
     {
+      "id": "2026-10-16-tm-Z7r9jZ1A70If-",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Who's Tommy (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Who's Tommy (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70If-",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7PtaE",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ott",
+      "officialTitle": "Ott. (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Ott",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PtaE",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7PtJF",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Afrojack",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Afrojack",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PtJF"
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1AAvA4s",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Nineteen Minutes Later",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Nineteen Minutes Later",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvA4s"
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1AAZ9fe",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BEAT",
+      "place": {
+        "type": "venue",
+        "venueId": "bellco-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "BEAT",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ9fe",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A70Ifx",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Who's Tommy (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Who's Tommy (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Ifx",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
       "id": "2026-10-17-espn-du-mhockey-401904863",
       "metroId": "denver",
       "date": "2026-10-17",
       "start": "18:00",
       "kind": "game",
-      "title": "Denver vs. Michigan",
+      "title": "Denver vs. Michigan Wolverines",
       "place": {
         "type": "venue",
         "venueId": "magness-arena"
@@ -240,6 +685,353 @@
         "seasons": "2026",
         "basis": "team",
         "note": "Typical announced crowd here for a Saturday: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5vzZ_6tcJe45",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dermot Kennedy",
+      "officialTitle": "Dermot Kennedy: The Weight of the Woods Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dermot Kennedy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_6tcJe45",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7-z8p",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fruit Bats",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Fruit Bats",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-z8p"
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7xZ-_",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sammy Rae",
+      "officialTitle": "Sammy Rae and The Friends (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Sammy Rae",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xZ-_",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A70If0",
+      "metroId": "denver",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Who's Tommy (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Who's Tommy (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70If0",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5vzZ_Amqia8M",
+      "metroId": "denver",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_Amqia8M",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1AAv7Az",
+      "metroId": "denver",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Cortex",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Cortex",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7Az",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1AAZA1b",
+      "metroId": "denver",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mariachi El Bronx",
+      "officialTitle": "Mariachi El Bronx w/ Max Diaz",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Mariachi El Bronx",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZA1b",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-G5vzZ_G5e32h3",
+      "metroId": "denver",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers: The Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_G5e32h3",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-Z7r9jZ1A70tup",
+      "metroId": "denver",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "officialTitle": "Slow Pulp (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Slow Pulp",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tup",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A70Sqp",
+      "metroId": "denver",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sqp",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A7Jbx6",
+      "metroId": "denver",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Knox w/ Emi Grace",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Knox",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Jbx6"
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A70Zf8",
+      "metroId": "denver",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Palace",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Zf8"
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A70SqN",
+      "metroId": "denver",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70SqN",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1AAZp7Z",
+      "metroId": "denver",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Shyne",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Shyne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZp7Z"
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A70Sq0",
+      "metroId": "denver",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sq0",
+      "occasionFacts": {
+        "run": 9
       }
     },
     {
@@ -296,6 +1088,118 @@
       },
       "crowd": [],
       "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70Sq9",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sq9",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7-Yas",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Odd Mob",
+      "officialTitle": "Odd Mob (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Odd Mob",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Yas"
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7PV4N",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Medium Build",
+      "officialTitle": "Medium Build w/ Bella White",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Medium Build",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PV4N",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7xKpa",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "kind": "special",
+      "title": "Congreso de Metanoia",
+      "place": {
+        "type": "venue",
+        "venueId": "denver-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Congreso de Metanoia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xKpa"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A70JZg",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70JZg",
+      "occasionFacts": {
+        "run": 11
+      }
     },
     {
       "id": "2026-10-24-espn-denver-summit-fc-401854093",
@@ -418,6 +1322,143 @@
       }
     },
     {
+      "id": "2026-10-24-tm-Z7r9jZ1A70tPI",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Kettama (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Kettama",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tPI"
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A70Sqb",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sqb",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vzZ_7YHqj28",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Leonid & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Leonid & Friends",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_7YHqj28",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7PgGN",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Blasting Company plays \"Over The Garden Wall\" (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The Blasting Company",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PgGN"
+    },
+    {
+      "id": "2026-10-26-tm-G5vzZbzAVheD4",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Evanescence",
+      "officialTitle": "Evanescence 2026 World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Evanescence",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZbzAVheD4",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-G5vzZ_5RYtE-2",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dweezil Zappa",
+      "officialTitle": "Dweezil Zappa DZ20: Like Father, Like Son",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dweezil Zappa",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_5RYtE-2",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-26-espn-nuggets-401909876",
       "metroId": "denver",
       "date": "2026-10-26",
@@ -449,15 +1490,154 @@
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight: 63 games, 2024–2026."
       }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZ8PF",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rebecca Black",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Rebecca Black",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ8PF",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7PE_E",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE_E",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vzZ_1XQVIWV",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1XQVIWV",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AAvaO6",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Speed w/ God's Hate",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Speed",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvaO6"
     }
   ],
   "forecasts": [
+    {
+      "eventId": "2026-10-13-tm-Z7r9jZ1A7JK_0",
+      "date": "2026-10-13",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-G5vzZ_1KA-2Fh",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-G5vzZ_5SF0Tm_",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-Z7r9jZ1A70gq4",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
     {
       "eventId": "2026-10-14-espn-avalanche-401892505",
       "date": "2026-10-14",
       "start": "18:30",
       "read": {
-        "rating": 5.5,
+        "rating": 10,
         "friction": "Low",
         "why": "Rapids vs. MNUFC 7.3 mi away, same hours.",
         "method": "formula"
@@ -469,11 +1649,34 @@
       }
     },
     {
+      "eventId": "2026-10-14-tm-G5vzZ_aRQ0Ogf",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "read": {
+        "rating": 10,
+        "friction": "Moderate",
+        "why": "Avalanche vs. Stars and Rapids vs. MNUFC 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-Z7r9jZ1A70tee",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "read": {
+        "rating": 10,
+        "method": "nearby"
+      }
+    },
+    {
       "eventId": "2026-10-14-espn-rapids-761871",
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 5.5,
+        "rating": 10,
         "friction": "Heavy",
         "why": "Rain in the forecast at a 7:30 pm start.",
         "method": "formula"
@@ -485,13 +1688,48 @@
       }
     },
     {
+      "eventId": "2026-10-14-tm-G5vzZ_aUNKGmh",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "read": {
+        "rating": 10,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-Z7r9jZ1A7xZ8M",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "read": {
+        "rating": 10,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5vzZ_1hPGKee",
+      "date": "2026-10-15",
+      "start": "15:15",
+      "read": {
+        "rating": 5,
+        "friction": "Low",
+        "why": "Broncos vs. Seahawks next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-15-espn-broncos-401872995",
       "date": "2026-10-15",
       "start": "18:15",
       "read": {
-        "rating": 1.1,
+        "rating": 5,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "VIP Tailgate: Broncos v Seahawks next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -501,13 +1739,60 @@
       }
     },
     {
+      "eventId": "2026-10-15-tm-G5vzZ_FJwkQO8",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "VIP Tailgate: Broncos v Seahawks and Broncos vs. Seahawks 0.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A709oK",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A70oe_",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A70yZa",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
       "eventId": "2026-10-16-espn-avalanche-401892517",
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 2,
+        "rating": 2.5,
         "friction": "Low",
-        "why": "Denver vs. Michigan 5.2 mi away, same hours.",
+        "why": "Denver vs. Michigan Wolverines 5.2 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -521,10 +1806,72 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 2,
+        "rating": 2.5,
         "friction": "Moderate",
         "why": "Avalanche vs. Penguins 5.2 mi away, same hours.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A70If-",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7PtaE",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7PtJF",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1AAvA4s",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1AAZ9fe",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Avalanche vs. Penguins 0.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A70Ifx",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
       }
     },
     {
@@ -532,9 +1879,9 @@
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Summit FC vs. Angel City 6.1 mi away, same hours.",
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Summit FC vs. Angel City and Dermot Kennedy 6.1 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -543,9 +1890,9 @@
       "date": "2026-10-17",
       "start": "18:45",
       "read": {
-        "rating": 1.4,
+        "rating": 3.5,
         "friction": "Low",
-        "why": "Denver vs. Michigan 6.1 mi away, same hours.",
+        "why": "Dermot Kennedy 15 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -553,6 +1900,144 @@
         "low": 12322,
         "high": 12372
       }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5vzZ_6tcJe45",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Summit FC vs. Angel City 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7-z8p",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7xZ-_",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A70If0",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5vzZ_Amqia8M",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1AAv7Az",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1AAZA1b",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-G5vzZ_G5e32h3",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-Z7r9jZ1A70tup",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A70Sqp",
+      "date": "2026-10-20",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A7Jbx6",
+      "date": "2026-10-20",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A70Zf8",
+      "date": "2026-10-20",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A70SqN",
+      "date": "2026-10-21",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1AAZp7Z",
+      "date": "2026-10-21",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A70Sq0",
+      "date": "2026-10-22",
+      "start": "19:30"
     },
     {
       "eventId": "2026-10-23-espn-avalanche-401892565",
@@ -582,11 +2067,59 @@
       }
     },
     {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70Sq9",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7-Yas",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7PV4N",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7xKpa",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "read": {
+        "rating": 10,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A70JZg",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 10,
+        "method": "nearby"
+      }
+    },
+    {
       "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
       "date": "2026-10-24",
       "start": "16:30",
       "read": {
-        "rating": 4,
+        "rating": 10,
         "friction": "Moderate",
         "why": "Rapids vs. Vancouver 15 mi away, same hours.",
         "method": "formula"
@@ -602,7 +2135,7 @@
       "date": "2026-10-24",
       "start": "18:00",
       "read": {
-        "rating": 4,
+        "rating": 10,
         "friction": "Moderate",
         "why": "Nuggets vs. Pelicans and Rapids vs. Vancouver 5.2 mi away, same hours.",
         "method": "formula"
@@ -613,7 +2146,7 @@
       "date": "2026-10-24",
       "start": "18:30",
       "read": {
-        "rating": 4,
+        "rating": 10,
         "friction": "Moderate",
         "why": "Summit FC vs. Louisville 15 mi away, same hours.",
         "method": "formula"
@@ -629,7 +2162,7 @@
       "date": "2026-10-24",
       "start": "19:00",
       "read": {
-        "rating": 4,
+        "rating": 10,
         "friction": "Moderate",
         "why": "Rapids vs. Vancouver and Summit FC vs. Louisville 7.3 mi away, same hours.",
         "method": "formula"
@@ -641,8 +2174,98 @@
       }
     },
     {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A70tPI",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 10,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A70Sqb",
+      "date": "2026-10-25",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vzZ_7YHqj28",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7PgGN",
+      "date": "2026-10-25",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vzZbzAVheD4",
+      "date": "2026-10-26",
+      "start": "18:30",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Nuggets vs. Warriors 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vzZ_5RYtE-2",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
       "eventId": "2026-10-26-espn-nuggets-401909876",
       "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Evanescence 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19671,
+        "low": 19616,
+        "high": 19840
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZ8PF",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7PE_E",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vzZ_1XQVIWV",
+      "date": "2026-10-27",
       "start": "20:00",
       "read": {
         "rating": 1,
@@ -651,9 +2274,16 @@
         "method": "formula"
       },
       "draw": {
-        "count": 19671,
-        "low": 19616,
-        "high": 19840
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AAvaO6",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
       }
     }
   ]
