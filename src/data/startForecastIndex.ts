@@ -38630,6 +38630,101 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-13-espn-ottawa-senators-401892494",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15273,
+      "low": 14654,
+      "high": 15952
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-15-espn-ottawa-senators-401892507",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15593,
+      "low": 14960,
+      "high": 16286
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-21-espn-ottawa-senators-401892551",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16216,
+      "low": 15558,
+      "high": 16936
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-22-espn-ottawa-senators-401892554",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16040,
+      "low": 15389,
+      "high": 16753
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-24-espn-ottawa-senators-401892569",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:16:56.748Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15832,
+      "low": 15706,
+      "high": 17126
+    }
+  },
+  {
     "metroId": "philadelphia",
     "eventId": "2026-10-12-tm-Z7r9jZ1A7OSuY",
     "date": "2026-10-12",

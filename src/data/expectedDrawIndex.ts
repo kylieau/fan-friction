@@ -33898,6 +33898,414 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2026"
   },
   {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 6997,
+    "low": 5779,
+    "high": 8357,
+    "games": 35,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5851,
+    "low": 5501,
+    "high": 6585,
+    "games": 19,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 5973,
+    "low": 5614,
+    "high": 6474,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5656,
+    "low": 5345,
+    "high": 6113,
+    "games": 4,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 5851,
+    "low": 5779,
+    "high": 6424,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 6644,
+    "low": 6069,
+    "high": 7165,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8436,
+    "low": 8298,
+    "high": 8486,
+    "games": 14,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 8424,
+    "low": 8416,
+    "high": 8498,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 8447,
+    "low": 8272,
+    "high": 8448,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 8452,
+    "low": 8306,
+    "high": 8576,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "all",
+    "month": null,
+    "count": 17251,
+    "low": 16278,
+    "high": 18592,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19346,
+    "low": 18923,
+    "high": 19679,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 15331,
+    "low": 13660,
+    "high": 16263,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16788,
+    "low": 16139,
+    "high": 17447,
+    "games": 63,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 16994,
+    "low": 16278,
+    "high": 18352,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 16297,
+    "low": 16118,
+    "high": 17190,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17545,
+    "low": 17229,
+    "high": 18561,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 16446,
+    "low": 15919,
+    "high": 17086,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 15976,
+    "low": 15328,
+    "high": 16686,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16598,
+    "low": 16091,
+    "high": 17077,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17077,
+    "low": 16774,
+    "high": 17655,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18210,
+    "low": 17724,
+    "high": 19019,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18482,
+    "low": 17573,
+    "high": 18883,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18433,
+    "low": 17588,
+    "high": 18793,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19019,
+    "low": 18836,
+    "high": 19318,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18224,
+    "low": 17758,
+    "high": 18381,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 18879,
+    "low": 18579,
+    "high": 19194,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 16188,
+    "low": 16059,
+    "high": 17511,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17772,
+    "low": 17387,
+    "high": 18874,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18254,
+    "low": 17450,
+    "high": 19089,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 16877,
+    "low": 16014,
+    "high": 17516,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 17025,
+    "low": 16961,
+    "high": 17339,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18764,
+    "low": 17519,
+    "high": 19054,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 16059,
+    "low": 15838,
+    "high": 16458,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "philadelphia",
     "teamId": "delaware-mbb",
     "venueId": "bob-carpenter-center",
@@ -64226,6 +64634,300 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 9
   },
   {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "boston",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "fleet",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "frost",
+    "ratio": 0.961,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "goldeneyes",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "minnesota",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "montreal",
+    "ratio": 1.068,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "new-york",
+    "ratio": 1.07,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "sceptres",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "sirens",
+    "ratio": 0.961,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "toronto",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "torrent",
+    "ratio": 1.052,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "victoire",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "avalanche",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "blackhawks",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "blue-jackets",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "blues",
+    "ratio": 0.956,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "bruins",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "canadiens",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "canucks",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "capitals",
+    "ratio": 1.011,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "devils",
+    "ratio": 0.988,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "ducks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "flames",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "flyers",
+    "ratio": 1.036,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "golden-knights",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "hurricanes",
+    "ratio": 0.986,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "islanders",
+    "ratio": 0.976,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "jets",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "kings",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "kraken",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "lightning",
+    "ratio": 0.986,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "maple-leafs",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "oilers",
+    "ratio": 1.045,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "panthers",
+    "ratio": 1.015,
+    "games": 6
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "penguins",
+    "ratio": 1.014,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "predators",
+    "ratio": 1.004,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "rangers",
+    "ratio": 0.978,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "red-wings",
+    "ratio": 1.021,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "sabres",
+    "ratio": 1.008,
+    "games": 6
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "sharks",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "stars",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "wild",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
     "metroId": "philadelphia",
     "teamId": "delaware-mbb",
     "opponent": "drexel",
@@ -74200,6 +74902,30 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.039,
     "games": 70,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "band": "first",
+    "occupancy": 0.996,
+    "low": 0.997,
+    "high": 1.054,
+    "games": 111,
+    "seasons": "2025, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "band": "second",
+    "occupancy": 1.003,
+    "low": 1,
+    "high": 1.045,
+    "games": 51,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   }
 ];

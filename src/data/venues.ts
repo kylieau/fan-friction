@@ -8447,6 +8447,118 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // ---------- Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/; car shares from ottawa-gatineau-city-type-answer.md), Oct 13, 2026 ----------
+  // LeBreton Flats Park (Bluesfest, Canada Day), Winterlude sites, Race Weekend and FMG are not rows — point events when a count exists.
+  // Lansdowne Event Centre (A6) opens ~Jul 2028; Cohere Centre (A4) and Rogers Centre Ottawa hall (A7) have no sourced concert/sport capacity.
+  'td-place-stadium': {
+    id: 'td-place-stadium',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.52, measured 2014 bus+shuttle aggregate for Redblacks ticket holders).
+    carShare: 0.52,
+    names: [{ name: 'TD Place Stadium' }, { name: 'Stade Place TD' }, { name: 'Frank Clair Stadium' }],
+    location: [-75.6835457, 45.3984326],
+    capacity: [
+      { seats: 24000, setup: 'football', note: 'Reported fixed seating for CFL/soccer. Temporary Grey Cup expansion to nearly 36,000 (2017) is not stored. Field rental 10,200 is a setup, not seats. Source: venue table A1.' },
+      { seats: 24000, setup: 'soccer', note: 'Same bowl for Atlético Ottawa and Ottawa Rapid FC.' },
+    ],
+    roof: 'open',
+  },
+  'arena-at-td-place': {
+    id: 'arena-at-td-place',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.60): comparison to Lansdowne transit access; no measured split.
+    carShare: 0.6,
+    names: [
+      { name: 'The Arena at TD Place' },
+      { name: 'TD Place Arena' },
+      { name: 'Ottawa Civic Centre' },
+    ],
+    location: [-75.6835457, 45.3984326],
+    ticketmasterIds: ['401513'],
+    // Sourced only as a range (5,500–8,585 by configuration); round-2 rule: range capacities stay blank (BACKLOG).
+    capacity: [],
+    roof: 'indoor',
+  },
+  'canadian-tire-centre': {
+    id: 'canadian-tire-centre',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.92): derived from measured 1999–2000 transit share (~3.2% of hockey attendance).
+    carShare: 0.92,
+    names: [{ name: 'Canadian Tire Centre' }, { name: 'Centre Canadian Tire' }, { name: 'Scotiabank Place' }, { name: 'Corel Centre' }],
+    location: [-75.9268973, 45.2969069],
+    capacity: [
+      { seats: 19153, setup: 'hockey', note: 'Official (venue rental sheet). Reported 20,500 including standing room; Ticketmaster and Wikipedia conflicts preserved in research. Source: venue table A2.' },
+      { seats: 16888, setup: 'concert', note: 'Official 360° concert capacity (rental sheet). Smaller concert arcs are separate configurations.' },
+    ],
+    roof: 'indoor',
+  },
+  'ottawa-stadium': {
+    id: 'ottawa-stadium',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Ottawa Stadium' }, { name: 'Raymond Chabot Grant Thornton Park' }, { name: 'RCGT Park' }],
+    location: [-75.6532522, 45.4202454],
+    capacity: [
+      { seats: 10278, setup: 'baseball', note: 'Reported since 2015 (10,332 before). Concert 15,000 is a separate configuration. Source: venue table A3.' },
+    ],
+    roof: 'open',
+  },
+  'centre-slush-puppie': {
+    id: 'centre-slush-puppie',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Centre Slush Puppie' }, { name: 'Slush Puppie Centre' }],
+    location: [-75.6792802, 45.4832163],
+    capacity: [{ seats: 4000, setup: 'hockey', note: 'Reported (Architecture49). Meeting-room capacity is not event seating. Source: venue table A8.' }],
+    roof: 'indoor',
+  },
+  'taag-park': {
+    id: 'taag-park',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'TAAG Park' }, { name: 'MNP Park' }, { name: "Ravens' Perch" }],
+    location: [-75.6950041, 45.3858581],
+    capacity: [{ seats: 3500, setup: 'football', note: 'Reported: 3,044 seats plus about 500 on the Perch hill. One 2016 crowd reported at 5,000 is unverified. Source: venue table A9.' }],
+    roof: 'open',
+  },
+  'southam-hall': {
+    id: 'southam-hall',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Southam Hall' }, { name: 'NAC Southam Hall' }],
+    location: [-75.6935599, 45.4234119],
+    capacity: [{ seats: 2065, setup: 'concert', note: 'Reported (Fisher Dachs). CanDance lists 1,975; difference not explained. Source: venue table A10.' }],
+    roof: 'indoor',
+  },
+  'hard-rock-live-ottawa': {
+    id: 'hard-rock-live-ottawa',
+    metroId: 'ottawa-gatineau',
+    // Estimated (0.93): rural-edge site; no event transit found in research.
+    carShare: 0.93,
+    names: [{ name: 'Hard Rock Live Ottawa' }, { name: 'Hard Rock LIVE Ottawa' }],
+    location: [-75.6056353, 45.2946063],
+    capacity: [
+      { seats: 1900, setup: 'concert', note: 'Official (Hard Rock newsroom). Total capacity 2,200 including standing; OBJ pre-opening listed 1,800 seats. Source: venue table A11.' },
+    ],
+    roof: 'indoor',
+  },
+  'ravens-nest': {
+    id: 'ravens-nest',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: "Ravens' Nest" }],
+    location: [-75.6950041, 45.3858581],
+    capacity: [{ seats: 1500, setup: 'basketball', note: 'Reported (Stadium Journey, undated). Campus point; gym interior not separately geocoded. Source: venue table A12.' }],
+    roof: 'indoor',
+  },
+  'theatre-casino-lac-leamy': {
+    id: 'theatre-casino-lac-leamy',
+    metroId: 'ottawa-gatineau',
+    names: [
+      { name: 'Théâtre du Casino du Lac-Leamy' },
+      { name: "Théâtre de l'Hôtel-Casino Lac-Leamy" },
+    ],
+    location: [-75.7252302, 45.4461345],
+    capacity: [
+      { seats: 1068, setup: 'concert', note: 'Official tourism listing maximum (650–1,068 by configuration). Scéno Plus designer figures differ. Source: venue table A13.' },
+    ],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

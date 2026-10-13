@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans', 'ottawa-gatineau'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -257,6 +257,15 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-90.09, 29.97],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/ottawa-gatineau/): City of Ottawa plus Ville de Gatineau.
+  // One frame holds downtown, Lansdowne and the Glebe; Kanata, the east-end ballpark and south Ottawa casino sit off it.
+  'ottawa-gatineau': {
+    id: 'ottawa-gatineau', code: 'OTT',
+    name: 'Ottawa–Gatineau',
+    timeZone: 'America/Toronto',
+    center: [-75.72, 45.42],
+    zoom: 10.5,
   },
 };
 

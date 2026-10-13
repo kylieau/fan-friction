@@ -295,6 +295,9 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '2443', metroId: 'new-orleans', teamId: 'lsuno-wbb', sport: 'basketball' },
   { path: 'baseball/college-baseball', espnId: '184', metroId: 'new-orleans', teamId: 'lsuno-baseball', sport: 'baseball' },
   { path: 'basketball/nba-development', espnId: '6', metroId: 'new-orleans', teamId: 'laketown-squadron', sport: 'basketball' },
+  // Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/). Ids and home venues checked against the feed Oct 13, 2026.
+  { path: 'hockey/nhl', espnId: '14', metroId: 'ottawa-gatineau', teamId: 'ottawa-senators', sport: 'hockey' },
+  { path: 'football/cfl', espnId: '87', metroId: 'ottawa-gatineau', teamId: 'ottawa-redblacks', sport: 'football' },
 ];
 
 /** Cities this feed can list games for. */
@@ -627,6 +630,14 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  'canadian tire centre': 'canadian-tire-centre',
+  'centre canadian tire': 'canadian-tire-centre',
+  'td place stadium': 'td-place-stadium',
+  'stade place td': 'td-place-stadium',
+  'the arena at td place': 'arena-at-td-place',
+  'td place arena': 'arena-at-td-place',
+  'td place': 'arena-at-td-place',
+  'ottawa stadium': 'ottawa-stadium',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

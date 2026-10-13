@@ -1997,6 +1997,31 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:08"
   },
   {
+    "eventId": "2026-10-10-espn-ottawa-senators-401892474",
+    "metroId": "ottawa-gatineau",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "canadian-tire-centre",
+    "homeTeamId": "ottawa-senators",
+    "home": {
+      "name": "Senators",
+      "score": 3
+    },
+    "away": {
+      "name": "Predators",
+      "score": 2
+    },
+    "attendance": 15025,
+    "note": "SO",
+    "capturedAt": "2026-10-13T07:16:57.403Z",
+    "duration": {
+      "minutes": 167,
+      "kind": "estimated"
+    },
+    "startedAt": "19:15"
+  },
+  {
     "eventId": "2026-10-10-espn-penn-football-401867960",
     "metroId": "philadelphia",
     "date": "2026-10-10",
