@@ -36,9 +36,9 @@ const SCALE = 7.5;
 // downtown sites sit at or under a third by car; Laval's Place Bell (65%) carries its own figure. No venue reaches 80%.
 // Dallas–Fort Worth is a driving region (research, Oct 7, 2026, docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-city-type-answer.md): no large
 // venue clears 20% transit; Arlington has none at all.
-// Chicago is in between, leaning driving (research, Oct 7, 2026, docs/research/city-builds/chicago/chicago-city-type-answer.md): Wrigley and the
-// downtown festivals run majority non-car, the United Center is 87% car, the suburban ring near-total. It was
-// 'transit' before any research; hub keeps the 0.85 default for venues with no figure of their own.
+// Chicago is hub (Kylie, Oct 13, B2; research Oct 7–13, chicago-city-type-answer.md and chicago-city-type-answer-astra.md):
+// in between regionally; only Wrigley (36.7% driving, 2013 gameday plan) and United Center (86.9% car, 2023 patron survey)
+// have sourced venue carShare wired (B7). Other rooms use the hub 0.85 default.
 // The Bay Area is driving, leaning (research, Oct 7, 2026, docs/research/city-builds/bay-area/bay-area-city-type-answer.md): Oracle Park and
 // Chase Center are about half by car, nearly every other big crowd 80–95%; the research picks a 0.85 default.
 // Atlanta is a driving region (research, Oct 7, 2026, docs/research/city-builds/atlanta/atlanta-city-type-answer.md): no regular-season

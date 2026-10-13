@@ -636,6 +636,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'jones convocation center': 'jones-convocation-center',
   'wrigley field': 'wrigley-field',
   'rate field': 'rate-field',
+  'allstate arena': 'allstate-arena',
+  'impact field': 'impact-field',
   'seatgeek stadium': 'seatgeek-stadium',
   'toyota park': 'seatgeek-stadium',
   // Dallas–Fort Worth (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
