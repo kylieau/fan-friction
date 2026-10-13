@@ -266,6 +266,15 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '338', metroId: 'atlanta', teamId: 'ksu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-wbb', sport: 'basketball' },
+  // Indianapolis (docs/research/city-builds/indianapolis/). Ids checked against each team's schedule Oct 13, 2026.
+  { path: 'football/nfl', espnId: '11', metroId: 'indianapolis', teamId: 'colts', sport: 'football' },
+  { path: 'basketball/nba', espnId: '11', metroId: 'indianapolis', teamId: 'pacers', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '5', metroId: 'indianapolis', teamId: 'fever', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2086', metroId: 'indianapolis', teamId: 'butler-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2086', metroId: 'indianapolis', teamId: 'butler-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2086', metroId: 'indianapolis', teamId: 'butler-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '85', metroId: 'indianapolis', teamId: 'iu-indy-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '85', metroId: 'indianapolis', teamId: 'iu-indy-wbb', sport: 'basketball' },
   // Nashville (docs/research/city-builds/nashville/). Ids checked against each team's schedule Oct 12, 2026.
   { path: 'football/nfl', espnId: '10', metroId: 'nashville', teamId: 'titans', sport: 'football' },
   { path: 'hockey/nhl', espnId: '27', metroId: 'nashville', teamId: 'predators', sport: 'hockey' },
@@ -298,6 +307,18 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   // Edmonton (docs/research/city-builds/edmonton/). Ids checked against each team's schedule Oct 13, 2026.
   { path: 'hockey/nhl', espnId: '6', metroId: 'edmonton', teamId: 'oilers', sport: 'hockey' },
   { path: 'football/cfl', espnId: '81', metroId: 'edmonton', teamId: 'elks', sport: 'football' },
+  // Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/). Ids and home venues checked against the feed Oct 13, 2026.
+  { path: 'hockey/nhl', espnId: '14', metroId: 'ottawa-gatineau', teamId: 'ottawa-senators', sport: 'hockey' },
+  { path: 'football/cfl', espnId: '87', metroId: 'ottawa-gatineau', teamId: 'ottawa-redblacks', sport: 'football' },
+  // Salt Lake City (docs/research/city-builds/salt-lake-city/); ids and home venues checked Oct 13, 2026.
+  { path: 'basketball/nba', espnId: '26', metroId: 'salt-lake-city', teamId: 'utah-jazz', sport: 'basketball' },
+  { path: 'hockey/nhl', espnId: '129764', metroId: 'salt-lake-city', teamId: 'utah-mammoth', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '4771', metroId: 'salt-lake-city', teamId: 'real-salt-lake', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '19141', metroId: 'salt-lake-city', teamId: 'utah-royals', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '254', metroId: 'salt-lake-city', teamId: 'utah-utes-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '254', metroId: 'salt-lake-city', teamId: 'utah-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '254', metroId: 'salt-lake-city', teamId: 'utah-wbb', sport: 'basketball' },
+  { path: 'basketball/nba-development', espnId: '19', metroId: 'salt-lake-city', teamId: 'salt-lake-city-stars', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -635,6 +656,32 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  'canadian tire centre': 'canadian-tire-centre',
+  'centre canadian tire': 'canadian-tire-centre',
+  'td place stadium': 'td-place-stadium',
+  'stade place td': 'td-place-stadium',
+  'the arena at td place': 'arena-at-td-place',
+  'td place arena': 'arena-at-td-place',
+  'td place': 'arena-at-td-place',
+  'ottawa stadium': 'ottawa-stadium',
+  // Indianapolis, as ESPN writes them on each team's schedule (Oct 13, 2026).
+  'lucas oil stadium': 'lucas-oil-stadium',
+  'gainbridge fieldhouse': 'gainbridge-fieldhouse',
+  'bankers life fieldhouse': 'gainbridge-fieldhouse',
+  'hinkle fieldhouse': 'hinkle-fieldhouse',
+  'victory field': 'victory-field',
+  'bud and jackie sellick bowl': 'sellick-bowl',
+  'the jungle': 'iu-indy-jungle',
+  // Salt Lake City, as ESPN writes them (checked Oct 13, 2026).
+  'delta center': 'delta-center',
+  'vivint arena': 'delta-center',
+  'vivint smart home arena': 'delta-center',
+  'rice-eccles stadium': 'rice-eccles-stadium',
+  'america first field': 'america-first-field',
+  'rio tinto stadium': 'america-first-field',
+  'jon m. huntsman center': 'jon-m-huntsman-center',
+  'maverik center': 'maverik-center',
+  'e center': 'maverik-center',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

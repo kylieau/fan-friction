@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-10-21",
+  "rows": [
+    {
+      "metroId": "ottawa-gatineau",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:16:51.244Z",
+      "feelsLikeF": 56,
+      "tempF": 56.9,
+      "humidity": 77,
+      "windMph": 2.1,
+      "uvIndex": 0,
+      "precipProbability": 3,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 19,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "ottawa-gatineau",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:16:51.244Z",
+      "feelsLikeHighF": 62,
+      "feelsLikeLowF": 44.3,
+      "code": 3,
+      "precipProbability": 7,
+      "precipMm": 0
+    }
+  ]
+}
