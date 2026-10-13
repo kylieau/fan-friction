@@ -11164,7 +11164,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 19500, setup: 'concert', note: 'Reported (Arena Network), in-the-round maximum before 2026. 180° 13,000, 270° 14,000, 360° 19,000. Source: city-type answer section 4.' },
       { seats: 19606, fromYear: 2026, setup: 'hockey', note: 'Reported (board figure via CBS17 and WRAL), 2026–27 after +694 seats. Reopened Sept 15, 2026; confirm the official count after reopening. Source: venue table R05.' },
       { seats: 20450, fromYear: 2026, setup: 'basketball', note: 'Reported (CBS17), 2026–27 NC State men\'s basketball. Source: venue table R05.' },
-      { seats: 21000, fromYear: 2026, setup: 'concert', note: 'Reported (Pollstar): "more than 21,000", so 21,000 is a floor, not an exact count. Source: venue table R05.' },
+      // 2026 concert capacity left blank: only "more than 21,000" reported (BACKLOG).
     ],
     roof: 'indoor',
   },
@@ -11246,7 +11246,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-78.7103734, 35.7939506],
     capacity: [
       { seats: 5000, note: 'Official (NCDA): permanent seats, exactly at the friction line. Cable-roof arena, not air-conditioned. Source: venue table R12.' },
-      { seats: 7000, setup: 'concert', note: 'Official (NCDA): stage set with portable floor seats. The same agency\'s history page says 6,500; Visit Raleigh says 7,610 and NCpedia 9,150. Fair concerts happen inside fair-gate admission: log the concert here and the fair separately, never summed. Source: venue table R12.' },
+      // Concert setup left blank: 7,000 (NCDA) vs 6,500 (same agency) vs 7,610 vs 9,150 (BACKLOG).
     ],
     roof: 'indoor',
   },
@@ -11291,9 +11291,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Red Hat Amphitheater', from: '2027-04-01' }],
     // Approximate: under construction about one block south of the original (OpenStreetMap does not have it yet). Same zone either way.
     location: [-78.6431, 35.7727],
-    capacity: [
-      { seats: 6500, fromYear: 2027, setup: 'concert', note: 'Reported, planned floor: the convention center said the new room must stay above 6,500 (current + 500 to 1,000). Not an opened figure; exact capacity unpublished. Opens spring 2027 (steel topped out May 26, 2026); the 2027-04-01 name date is a placeholder for "spring 2027". Re-check Feb–Apr 2027. Source: venue table R17.' },
-    ],
+    // Round-2 rule: 6,500 is a planned floor for a room not yet open; blank until an opened official figure (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'reynolds-coliseum': {
