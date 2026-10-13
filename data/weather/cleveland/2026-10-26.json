@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-26",
+  "rows": [
+    {
+      "metroId": "cleveland",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:06.193Z",
+      "feelsLikeF": 46,
+      "tempF": 53.6,
+      "humidity": 42,
+      "windMph": 8.6,
+      "uvIndex": 0,
+      "precipProbability": 16,
+      "precipMm": 0,
+      "shortwave": 5,
+      "cloudCover": 3,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "cleveland",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:06.193Z",
+      "feelsLikeHighF": 46.4,
+      "feelsLikeLowF": 40.9,
+      "code": 3,
+      "precipProbability": 23,
+      "precipMm": 0
+    }
+  ]
+}

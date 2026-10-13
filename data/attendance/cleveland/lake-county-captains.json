@@ -1,0 +1,6153 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "teamId": "lake-county-captains",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": null,
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": null,
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": null,
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "15:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "22:05",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "15:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4151,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "16:05",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "17:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-06-30",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": null,
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "21:15",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "15:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-04",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1161,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3683,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "22:35",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "22:35",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "22:35",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "22:35",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "22:35",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "17:00",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "22:05",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "16:05",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-08",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1535,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2432,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Championship Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1250,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Championship Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "17:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": null,
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": null,
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": null,
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "16:05",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": null,
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1320,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": null,
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1916,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "22:05",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1871,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "15:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2666,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-11",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1563,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "23:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "23:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1914,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "23:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "23:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4587,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "23:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "17:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "22:05",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "15:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3862,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "20:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": null,
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3862,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "20:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 7024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": null,
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 7024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "20:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 7266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": null,
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "22:05",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "15:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6955,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "20:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5085,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "16:05",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 7599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "20:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 7599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "22:46",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": null,
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 8809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": null,
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "17:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6804,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2576,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "16:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3947,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": null,
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "16:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1164,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "16:05",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "20:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1921,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "22:05",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1316,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "15:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": null,
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "16:05",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2639,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 7146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "20:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "22:05",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "15:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6296,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "22:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "15:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "20:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "23:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "17:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "16:05",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": null,
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 8546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "22:35",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "16:05",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "23:00",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3229,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "23:00",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "23:00",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "17:00",
+      "opponent": "Kernels",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "22:35",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3643,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-09-17",
+      "start": "22:35",
+      "opponent": "Timber Rattlers",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3705,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Championship Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2024,
+      "date": "2024-09-18",
+      "start": "22:35",
+      "opponent": "Timber Rattlers",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3987,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Championship Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day + Championship Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1317,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Cleveland Small Business Partners Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Great Danes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hat Fest with Official League"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: Plumbers"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Bernese Mountain Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": null,
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "22:35",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: Educators"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "16:05",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Senior Day presented by Medical Mutual"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Diaper Dash & Senior Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "22:35",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Doodles"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "22:35",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Picantes Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "22:35",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Girls Night Out (Luncheon)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "17:00",
+      "opponent": "River Bandits",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mother's Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "22:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: Military"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "15:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Education Day: STEM"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "College ID Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": null,
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: First Responders"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "16:05",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Picantes & Senior Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Senior Day presented by Medical Mutual"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2191,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Corgis"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Science is Cool Night, presented by NOPEC, Fireworks Friday & '90s Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Celebrating the Magic: '95 Tribe Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sandy Alomar Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "20:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Father's Day & Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "22:05",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Nurses"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "15:05",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6287,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Splash Zone Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Wieners"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday & Harry Potter Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "NEO Wrestling Night & Beer Fest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Salute to Service + Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday & Independence Weekend Extravaganza"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Forest City Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "17:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mascot Olympics + Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday + Women in Sports Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4645,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Christmas in July"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jhonkensy Noel Big Christmas Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Cleveland Monsters Hockey Day + Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: Electrical Linemen"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Boxers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday & ERAS Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Malmö Oat Milkers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3953,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "All Around the World Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "The First-Ever Travis Bazzana Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Steven Kwan Superman Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: City Workers"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "16:05",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Senior Day presented by Medical Mutual"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ditch Work Day & Senior Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - Retrievers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday & State Fair Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "23:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Celebrating the Magic: '95 Tribe Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jim Thome Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "17:00",
+      "opponent": "Chiefs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Weekend & Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1335,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Picantes Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": null,
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1335,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday & Star Wars Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3741,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Random Jersey Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Championship Jersey Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Fun Sunday presented by Classic Auto Group + Crunch Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night: Construction Workers"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "FREE Captains 9-Hole Mini Golf!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "16:05",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Senior Day presented by Medical Mutual"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "We Heart Art & Senior Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-04",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dawg Night - All Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Cleveland Sports History (10-Cent Beer)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Celebrating the Magic: '95 Tribe Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Carlos Baerga Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Fun Sunday presented by Classic Auto Group + Cavs Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2241,
+      "kind": "announced",
+      "postseason": true,
+      "round": "MWL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2289,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Home Opener - Labrador Retrievers"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "22:35",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 937,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Lake County Fish Fry's Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "17:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Egg Hunt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Skipper's 70 Degree Guarantee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night: Huskies"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": null,
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "22:35",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "First Responders Night Honoring Jim Hogan"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Earth Day Celebration"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "22:35",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 934,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Educators Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "22:35",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": null,
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "22:35",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Trading Card Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "22:35",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 966,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Derby Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "17:00",
+      "opponent": "Sky Carp",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "16:05",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1199,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Ditch Work Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": null,
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Star Wars Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mother's Day Celebration"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "22:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Police - National Police Week"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "15:05",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Education Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ditch Work Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "22:35",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night: Corgis"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "In Our Baseball Era Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "2016 AL Champions Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2016 AL Champions Bobblecard: Corey Kluber"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 5016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Major League Day presented by Lake Erie Distillery"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jobu Bobblehead & Shot Glass"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "22:05",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Honoring High School Baseball"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "15:05",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2313,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Camp Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ditch Work Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night: Boxers"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4602,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "America 250 Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "23:00",
+      "opponent": "Whitecaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tyler Naquin Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "America 250 Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "22:05",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Non-Profits"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "15:05",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Camp Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ditch Work Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Swipe Right Night / DAWG Night: Labradoodles (2+ Dog Night)"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Glow Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "23:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2601,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Picantes Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "2016 AL Champions Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2016 AL Champions Bobblecard: José Ramírez"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "17:00",
+      "opponent": "TinCaps",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "RedStixx Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Giveaway",
+          "name": "C.C. Sabathia RedStixx Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Military Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "ISTEM Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "DAWG Night: Weiner (Dachshund) Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hockey Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "23:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Lake County Fish Fry's Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fish Fry Festival"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Benny the Blue Pike Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "17:00",
+      "opponent": "Lugnuts",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mascot Olympics"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanuts Night presented by Akron Children's"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Christmas in July Peanuts Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "17:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "National Ice Cream Day presented by 3 Daughters Construction"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1951,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Coaches Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "16:05",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Day / Ditch Work Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ditch Work Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night: Great Danes"
+        },
+        {
+          "type": "Theme Days",
+          "name": "DAWG Night presented by Thirsty Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Weekend presented by Ohio Mobile Gaming"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "23:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Weekend & Women in Sports Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mokoro Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Weekend presented by Ohio Mobile Gaming"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Joe Torre Safe at Home"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "17:00",
+      "opponent": "Cubs",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Parker Messick Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "State Fair Weekend presented by Ohio Mobile Gaming"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Utility Workers / 811 Call Before You Dig Night presented by Northeast Ohio Natural Gas"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "16:05",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Day / Ditch Work Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ditch Work Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": null,
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 6174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Stand Up to Cancer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "23:00",
+      "opponent": "Dragons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 4205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Random Jersey Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fleece Blanket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Community Champions: Firefighters Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Community Champions Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "22:35",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 1650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Picantes Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "20:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": null,
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "23:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 3997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "9 Innings of Winnings Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Skipper Cavs Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "lake-county-captains",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "17:00",
+      "opponent": "Loons",
+      "venueId": "classic-auto-group-park",
+      "attendance": 2575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Family Fun Sunday presented by Classic Auto Group"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

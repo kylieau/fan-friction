@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-psu-football-401868156",
+      "metroId": "portland",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hillsboro-stadium",
+      "homeTeamId": "psu-football",
+      "home": {
+        "name": "Portland St",
+        "score": 30
+      },
+      "away": {
+        "name": "Utah Tech",
+        "score": 14
+      },
+      "attendance": 1964,
+      "capturedAt": "2026-10-13T07:22:29.085Z",
+      "duration": {
+        "minutes": 209,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    }
+  ]
+}

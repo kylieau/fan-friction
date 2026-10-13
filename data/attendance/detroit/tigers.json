@@ -1,0 +1,7843 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "teamId": "tigers",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 43480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 17469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 15712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-11",
+      "start": "17:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 11840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 15781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 10522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 15498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 17268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-21",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 21529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 28635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 37566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 28635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 20088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 15150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": null,
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 15150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-09",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 12674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": null,
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 13844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 15375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 17565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 23941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 28016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 20080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 12764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 24395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "16:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 26134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 19990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 15191,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 11756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 12122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 13211,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 17972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 26226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "16:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 30738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 29399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 16634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 16450,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 20726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 17448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 21996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "16:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 28179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "13:40",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 25919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 24349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "16:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 23502,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "12:05",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 21625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 19737,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 24395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 16662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 17829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 34205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 23570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 21647,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 24213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 24669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-04",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 16595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 21547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 40101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "13:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 18395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 16359,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 16560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 19036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 28197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 23581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 23064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 21123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 17400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 12536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 13666,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 14393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 16067,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "18:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 15259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 15206,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-12",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 13054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 13820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 13947,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 88
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 16335,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 17579,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "12:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 14435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 13334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 12610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-29",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 13137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 18505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 18307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 93
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "12:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 20105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 93
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 44650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "16:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 21835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 14885,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 15289,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 18344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 16907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-17",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 10099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": null,
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 10099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 11230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 11599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 11048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "12:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 17974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "17:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 11048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 13626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 11363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "13:40",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 11363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 16734,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 18369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 22116,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 23511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "13:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 20160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 16484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 14542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 15003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 21701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 24685,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 22644,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 19021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 14616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 20968,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "comerica-park",
+      "attendance": 19664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "comerica-park",
+      "attendance": 31607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "11:35",
+      "opponent": "D-backs",
+      "venueId": "comerica-park",
+      "attendance": 17956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-12",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "comerica-park",
+      "attendance": 18742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "comerica-park",
+      "attendance": 24186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": null,
+      "opponent": "Braves",
+      "venueId": "comerica-park",
+      "attendance": 24186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-19",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 18438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 18409,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 20195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 19782,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "19:15",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 24403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "12:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 21585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 26749,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 15149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 15133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 30029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 30621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 30077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 28834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "18:10",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 31974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "12:05",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 24523,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-24",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 16907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 24856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 30238,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": null,
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 30238,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 26050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 30939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "13:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 21824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-07",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 13779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 16588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 16570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 18709,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-21",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "comerica-park",
+      "attendance": 20560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "comerica-park",
+      "attendance": 21211,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "comerica-park",
+      "attendance": 21965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 23832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 27103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 28496,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 16772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 17236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 15731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 19630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 18483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 20159,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 18223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "comerica-park",
+      "attendance": 15080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "comerica-park",
+      "attendance": 15507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "comerica-park",
+      "attendance": 16945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 13903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-28",
+      "start": "15:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 13326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 30053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 40224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 41425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 44711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 27529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 15174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 22548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 12434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": null,
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 22548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 17317,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 12005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 10377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 10259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 11339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 17251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 22734,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 18794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-29",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "comerica-park",
+      "attendance": 16290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": null,
+      "opponent": "Cardinals",
+      "venueId": "comerica-park",
+      "attendance": 16290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "comerica-park",
+      "attendance": 16035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 21215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 27140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 27004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "comerica-park",
+      "attendance": 12901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "comerica-park",
+      "attendance": 16498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "comerica-park",
+      "attendance": 19806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 17049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 27160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 35321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "11:35",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 27627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 23408,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": null,
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 23408,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "comerica-park",
+      "attendance": 24512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "16:10",
+      "opponent": "Brewers",
+      "venueId": "comerica-park",
+      "attendance": 32333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "13:40",
+      "opponent": "Brewers",
+      "venueId": "comerica-park",
+      "attendance": 24077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "comerica-park",
+      "attendance": 18368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "comerica-park",
+      "attendance": 20645,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "comerica-park",
+      "attendance": 21925,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 24938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 29269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 22975,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "comerica-park",
+      "attendance": 20108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "comerica-park",
+      "attendance": 24345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "comerica-park",
+      "attendance": 22530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-08",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 17677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 17111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 16862,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 22399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "comerica-park",
+      "attendance": 42060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "comerica-park",
+      "attendance": 40196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:40",
+      "opponent": "Dodgers",
+      "venueId": "comerica-park",
+      "attendance": 35159,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 27778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 35138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 24624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-29",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 18387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 23239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 15743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 21035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "18:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 35210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 25990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 20170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 18714,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 20429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 36244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 38110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 18258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 16303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 16119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 25207,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 34355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 30173,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 18120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 18847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 19538,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 25253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 33513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "12:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 20643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 22770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 32463,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-26",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 27867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 44435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 41933,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "15:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 41740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-10-09",
+      "start": "15:08",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 44885,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2024,
+      "date": "2024-10-10",
+      "start": "18:08",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 44923,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 44735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Detroit Tigers Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 26098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Tigers Flannel"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 20981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Hockey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "15:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 14132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 14156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 14616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 15769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Middle Eastern Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 25754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Harry Potter"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 32043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Retro Windbreaker"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Pickleball Paddle Cover"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 17712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-21",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 17581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Michigan State University"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Special Ticket Package: Bark in the Park #1"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 19321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Grand Valley State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "comerica-park",
+      "attendance": 21016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Gibby's Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 21422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 28509,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Kerry Carpenter Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Union"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "18:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 21422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 28613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 28407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Star Wars"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "18:10",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 40844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Tarik Skubal Mystery Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: HOME PLATE"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:40",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 36138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-12",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 20136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Eastern Michigan University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 20115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 21013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 21937,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 26701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "19:15",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 37256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Pink Seersucker Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Pink Out the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "11:35",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 37031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 31640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 21092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Jewish Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "comerica-park",
+      "attendance": 31602,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "comerica-park",
+      "attendance": 40132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "comerica-park",
+      "attendance": 41034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Baseball Bat Sling Cooler"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "13:40",
+      "opponent": "Cubs",
+      "venueId": "comerica-park",
+      "attendance": 40343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "comerica-park",
+      "attendance": 40413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black in Baseball"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Hip Hop"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Ashley Sip N' Paint"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "comerica-park",
+      "attendance": 38199,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black in Baseball"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Detroit Stars Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Black in Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "12:05",
+      "opponent": "Reds",
+      "venueId": "comerica-park",
+      "attendance": 40418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black in Baseball"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 27449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Filipino Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 28540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 33368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Juneteenth"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "18:10",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 28540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 22929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 21872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Pride"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 27676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 32120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Golf"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Country Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Country"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Burgers and Bourbon"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 33780,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Tyler Holton Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Tyler Holton"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 40718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Loaded Value Offer"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-07",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 22657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 25198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Western Michigan University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "17:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 22019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 41681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Comerica Park 25th Anniversary"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: City Connect"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 36438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Comerica Park 25th Anniversary"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Comerica Park Replica"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Saginaw Valley State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 34671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Comerica Park 25th Anniversary"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Boy Scout"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Engineered By Dré"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 30051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Canadian Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 37820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Margaritaville"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Margaritaville"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 40528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Hawaiian Shirt and Shorts Set"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 36053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: St. Clair College"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Christmas in July"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-28",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "comerica-park",
+      "attendance": 23124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "comerica-park",
+      "attendance": 27697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Grateful Dead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "comerica-park",
+      "attendance": 29033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-04",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 24018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Taiwanese Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 26313,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Book Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 29192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 35290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Northern Michigan University"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Stranger Things"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Stranger Things"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "18:10",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 37741,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Ferris State University"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Bucket Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 30810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Girl Scout"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 27008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Italian Heritage"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Greyson"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 30770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Lawrence Tech University"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bike Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Greyson"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 29216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Greyson"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 33467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Central Michigan University"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 37709,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: Parker Meadows-Designed Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 31538,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 38912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Kiloh + Co."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 24733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Wayne State University"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bark in the Park #3"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "comerica-park",
+      "attendance": 21775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 35216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: University of Michigan"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: '80s Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: 80s"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 32115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: El Mago Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 29292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: First Responders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 31639,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bark in the Park #4"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 34415,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Irish Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 34267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-19",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "comerica-park",
+      "attendance": 33554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "¡Fiesta Tigres!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Hispanic Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park: Fiesta Tigres"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "comerica-park",
+      "attendance": 38079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "¡Fiesta Tigres!"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Giveaways on Saturdays: ¡Fiesta Tigres! Rope Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "comerica-park",
+      "attendance": 34042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-10-07",
+      "start": "16:08",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 41525,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2025,
+      "date": "2025-10-08",
+      "start": "15:08",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 37069,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "comerica-park",
+      "attendance": 45008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Detroit Tigers Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "comerica-park",
+      "attendance": 28708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Rugby Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "comerica-park",
+      "attendance": 28823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Verlander Homecoming"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "comerica-park",
+      "attendance": 20285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "comerica-park",
+      "attendance": 31414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Hockey Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:40",
+      "opponent": "Marlins",
+      "venueId": "comerica-park",
+      "attendance": 26768,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Jewish Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 16655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 19609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Sisterhood"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 15034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "comerica-park",
+      "attendance": 20847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bark in the Park #1"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Macedonian Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Tee Drops"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "comerica-park",
+      "attendance": 20378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Michigan State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "comerica-park",
+      "attendance": 25224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Gibby's Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 28622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Polish American Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "19:15",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 33373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Caricature Crewneck"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "19:20",
+      "opponent": "Rangers",
+      "venueId": "comerica-park",
+      "attendance": 24083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-04",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 22321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 20674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bark in the Park #2"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Greek Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Cinco De Mayo"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "comerica-park",
+      "attendance": 17334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Euchre"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 31038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Strike Out Cancer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 38295,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Strike Out Cancer"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Pink Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:40",
+      "opponent": "Blue Jays",
+      "venueId": "comerica-park",
+      "attendance": 37486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Canadian Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Strike Out Cancer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 18913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Motor City Monday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 21239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 20450,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Law Enforcement"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 25687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 21954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Harry Potter"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Tee Drops"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 27692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Fourth Wing"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "comerica-park",
+      "attendance": 29670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 32591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Margaritaville"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Printed Sunhat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 32606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Home Plate"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "13:40",
+      "opponent": "Mariners",
+      "venueId": "comerica-park",
+      "attendance": 34893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Pilates"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 22641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Military"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 23517,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Filipino Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 30714,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Hank Greenberg 125th Anniversary"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 41353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert - Nelly"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Northern Michigan University"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Juneteenth"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black in Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 34692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black in Baseball"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Detroit Stars Inspired Windbreaker"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 40021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black in Baseball"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Father's Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Dad Gang"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Pack of 2026 Series 2 - 75 Years of Topps Baseball Cards"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-22",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 24284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 27157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Western Michigan University"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Pride Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Tee Drops"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "comerica-park",
+      "attendance": 23567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 25066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Educator Appreciation"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: MENA Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 30036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: PAWS Tiki Mug"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Grateful Dead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 27232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:40",
+      "opponent": "Astros",
+      "venueId": "comerica-park",
+      "attendance": 33655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Toy Story"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 28736,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Tarik Skubal Back2Back Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 29049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Ty Cobb 125th Anniversary"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Albanian Heritage"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Tarik Skubal Back2Back Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "comerica-park",
+      "attendance": 20699,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "comerica-park",
+      "attendance": 34084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "18:10",
+      "opponent": "Phillies",
+      "venueId": "comerica-park",
+      "attendance": 33705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:40",
+      "opponent": "Phillies",
+      "venueId": "comerica-park",
+      "attendance": 35065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Boy Scout"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 35548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Michigan Tech University"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Chaldean Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 40638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert - Flo Rida"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 32867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: 1901 Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:40",
+      "opponent": "Royals",
+      "venueId": "comerica-park",
+      "attendance": 29489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Saginaw Valley State University"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Willie Horton 125th Anniversary"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-27",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 21913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Greyson"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 27453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Tee Drops"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Hello Kitty"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "comerica-park",
+      "attendance": 34406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 30709,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Eastern Michigan University"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Taiwanese Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 31400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Italian Heritage"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Hal Newhouser 125th Anniversary"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "comerica-park",
+      "attendance": 31777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 39638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Central Michigan University"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Special Ticket Package: Kiloh + Co."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 33119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Ferris State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "13:40",
+      "opponent": "White Sox",
+      "venueId": "comerica-park",
+      "attendance": 34251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Girl Scout"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Kids Hot Dog Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-24",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 23265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Lawrence Tech University"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Disc Golf"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Motor City Monday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 26605,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bark in the Park #3"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Tee Drops"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Book Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "comerica-park",
+      "attendance": 21482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Dad Gang"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "comerica-park",
+      "attendance": 41012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "comerica-park",
+      "attendance": 40022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:40",
+      "opponent": "Dodgers",
+      "venueId": "comerica-park",
+      "attendance": 35387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 23314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: USA 250"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Motor City Monday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 22874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bark in the Park #4"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Wayne State University"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Indian Heritage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "comerica-park",
+      "attendance": 18788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 33245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Oakland University"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: First Responders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 32019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Hispanic Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "¡Fiesta Tigres!"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Sugar Skull Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "12:10",
+      "opponent": "Rockies",
+      "venueId": "comerica-park",
+      "attendance": 22726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: St. Clair College"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "¡Fiesta Tigres!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Bad Day to Be a Coney Dog"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-21",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "comerica-park",
+      "attendance": 21121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Scottish Heritage"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Run Club"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Motor City Monday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "comerica-park",
+      "attendance": 25608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Irish Heritage"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "313 Value Game"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Charlie Gehringer 125th Anniversary"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tuesday Tee Drops"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "comerica-park",
+      "attendance": 21373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Destination Stars Hollow"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 36315,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Party in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Armenian Heritage"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Justin Verlander Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Justin Verlander Career Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 41377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Michigan Union Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gate Giveaway: Hooded Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Justin Verlander Career Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tigers",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "15:10",
+      "opponent": "Pirates",
+      "venueId": "comerica-park",
+      "attendance": 30165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chevy Sunday Kids Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Ticket Package: Al Kaline 125th Anniversary"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

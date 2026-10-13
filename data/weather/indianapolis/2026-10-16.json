@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-10-16",
+  "rows": [
+    {
+      "metroId": "indianapolis",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:09.179Z",
+      "feelsLikeF": 42.1,
+      "tempF": 51,
+      "humidity": 50,
+      "windMph": 12.5,
+      "uvIndex": 0.25,
+      "precipProbability": 3,
+      "precipMm": 0,
+      "shortwave": 56,
+      "cloudCover": 6,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "indianapolis",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:18:09.179Z",
+      "feelsLikeHighF": 74.7,
+      "feelsLikeLowF": 40.7,
+      "code": 53,
+      "precipProbability": 63,
+      "precipMm": 1
+    }
+  ]
+}

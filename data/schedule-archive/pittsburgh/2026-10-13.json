@@ -1,0 +1,316 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "metroName": "Pittsburgh",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:23:04.639Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-17-espn-robert-morris-football-401867920",
+      "metroId": "pittsburgh",
+      "date": "2026-10-17",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Robert Morris vs. New Haven",
+      "place": {
+        "type": "venue",
+        "venueId": "joe-walton-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "robert-morris-football",
+        "away": "new-haven"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2446,
+        "low": 2107,
+        "high": 2690,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-penguins-401892556",
+      "metroId": "pittsburgh",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Panthers",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16176,
+        "low": 14542,
+        "high": 17065,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-duquesne-football-401867931",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Duquesne vs. Wagner",
+      "place": {
+        "type": "venue",
+        "venueId": "arthur-j-rooney-athletic-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "duquesne-football",
+        "away": "wagner"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2961,
+        "low": 2484,
+        "high": 2987,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-robert-morris-football-401867921",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Mercyhurst",
+      "place": {
+        "type": "venue",
+        "venueId": "joe-walton-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "robert-morris-football",
+        "away": "mercyhurst"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2446,
+        "low": 2107,
+        "high": 2690,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-penguins-401892570",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Predators",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17191,
+        "low": 16368,
+        "high": 17650,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-riverhounds-401842308",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pittsburgh vs. Birmingham",
+      "place": {
+        "type": "venue",
+        "venueId": "fnb-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "riverhounds",
+        "away": "birmingham"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4916,
+        "low": 4874,
+        "high": 5405,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-17-espn-robert-morris-football-401867920",
+      "date": "2026-10-17",
+      "start": "12:00",
+      "draw": {
+        "count": 2446,
+        "low": 2107,
+        "high": 2690
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-penguins-401892556",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16176,
+        "low": 14542,
+        "high": 17065
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-duquesne-football-401867931",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2961,
+        "low": 2484,
+        "high": 2987
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-robert-morris-football-401867921",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2446,
+        "low": 2107,
+        "high": 2690
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-penguins-401892570",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17191,
+        "low": 16368,
+        "high": 17650
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-riverhounds-401842308",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4916,
+        "low": 4874,
+        "high": 5405
+      }
+    }
+  ]
+}

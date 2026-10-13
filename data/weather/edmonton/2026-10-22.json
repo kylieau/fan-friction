@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-22",
+  "rows": [
+    {
+      "metroId": "edmonton",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:59.845Z",
+      "feelsLikeF": 39.3,
+      "tempF": 44.9,
+      "humidity": 64,
+      "windMph": 4.5,
+      "uvIndex": 0,
+      "precipProbability": 11,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 12,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "edmonton",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:59.845Z",
+      "feelsLikeHighF": 39.8,
+      "feelsLikeLowF": 27.5,
+      "code": 3,
+      "precipProbability": 14,
+      "precipMm": 0
+    }
+  ]
+}

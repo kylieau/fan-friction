@@ -106,6 +106,12 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'al-lang-stadium', 'tampa-bay-downs', 'wish-farms-soundstage',
   // Columbus: UFL and MLS Next Pro have no league feed. Mid-Ohio stays off this list (edge circuit, not the metro default).
   'historic-crew-stadium',
+  // Pittsburgh: weekly dirt racing has no league feed (docs/research/city-builds/pittsburgh/pittsburgh-venue-table-answer.md A06).
+  'lernerville-speedway',
+  // Detroit: USL Championship has no separate league feed in the app; Keyworth is DCFC home through 2027.
+  'keyworth-stadium',
+  // Cleveland: G League, Frontier League and indoor soccer have no league feed; Crushers/Charge/Crunch/Wolstein public events may list here.
+  'public-hall-cleveland', 'wolstein-center', 'forefront-field',
   // Austin rooms whose primary tenants have no league feed (Stars hockey still comes from HockeyTech and wins on the same date).
   'heb-center-cedar-park', 'luedecke-arena', 'house-park', 'moody-center', 'myers-stadium', 'disch-falk-field',
   'gregory-gym', 'mccombs-field', 'bobcat-soccer-complex', 'bobcat-softball-stadium',
@@ -140,6 +146,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'bmo-field', 'caa-centre-brampton', 'tribute-communities-centre', 'uoft-varsity-stadium', 'uoft-varsity-arena', 'york-lions-stadium', 'mattamy-athletic-centre', 'kimel-field-house',
   // Raleigh–Durham rooms whose tenants have no league feed (CPL and USL2 clubs, UFA, Shaw, Duke and UNC soccer and lacrosse, fair rodeos). Feed games at the same building still win.
   'north-main-athletic-complex-stadium', 'nomaco-park', 'durham-county-memorial-stadium', 'koskinen-stadium', 'dorrance-field', 'dorton-arena',
+  // Ottawa–Gatineau rooms with no league feed (Frontier League, OHL, QMJHL, CEBL, CPL, U Sports, USL Super League).
+  'ottawa-stadium', 'centre-slush-puppie', 'hard-rock-live-ottawa', 'arena-at-td-place', 'theatre-casino-lac-leamy',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {
