@@ -242,12 +242,7 @@ export function EventScreen() {
             )}
           </span>
         )}
-        {logged?.seats && !logged.watched && (
-          <>
-            {seatsLine(logged.seats) && <span className="event-seats">{seatsLine(logged.seats)}</span>}
-            {logged.seats.details && <span className="event-seats">{logged.seats.details}</span>}
-          </>
-        )}
+        {logged?.seats && !logged.watched && seatsLine(logged.seats) && <span className="event-seats">{seatsLine(logged.seats)}</span>}
         {logged && <EntryLayer entry={logged} />}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}

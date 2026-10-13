@@ -451,21 +451,14 @@ export interface LoggedWhen {
 }
 
 /**
- * Where you were in the room (build notes 4; research: seat-fields-answer-claude). "Was there an assigned
- * seat" and "which part of the venue" are separate questions, so they are separate fields. Every part is
- * optional free text as typed; nothing is forced into a box.
+ * Where you were in the room (build notes 4): one row of three boxes, all optional, all free text as
+ * typed. Section holds whatever names the place ("112", "Lawn", "Floor", "GA", "Suite 42").
+ * (Kylie, Oct 13: "it has to be incredibly simple".)
  */
 export interface Seats {
-  /** No assigned seat: general admission, standing, a lawn. Rows and seats can still be filled (a GA ticket with a section). */
-  noSeat?: boolean;
-  /** Which part of the venue: Floor, Pit, Lawn, Standing room, Suite, Box, "Budweiser Right Field Roof Deck Standing Room". */
-  area?: string;
-  /** Section or block. */
   section?: string;
   row?: string;
   seat?: string;
-  /** Anything else: a gate, an aisle, a table. */
-  details?: string;
 }
 
 /** One night she went to. Not a map dot, and not limited to events over 5k. */

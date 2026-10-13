@@ -201,8 +201,8 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Seats caps:** a generous sanity limit (40 / 20 / 20), not a fit to a form; "Sec" is added only when the section is a bare number.
 - **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).
 
-### Seats, from the seat-fields research (Oct 13; builder's call, Kylie can overrule)
-- **Field set:** "No assigned seat" toggle, Area (free text with chips Floor, Pit, Lawn, Standing room, Suite, Box), Section or block, Row, Seat, Anything else. All optional, all free text as typed (no forced capitals). Replaces GA / Floor / Pit, which mixed "assigned seat or not" with "which part of the venue". Caps 80 / 40 / 24 / 40 / 140 from the longest values seen (Section's 40 is not from the research).
-- **Existing stubs:** an old Area of GA becomes the toggle; Floor and Pit are already Area text. No SQL migration.
-- **Display:** "GA · Lawn · Sec 112 · Row 8 · Seat 4"; "Sec" only for a bare number or number and letter ("Suite 42", "Loggia Box 23", "Q1" read as typed). Anything else sits on its own quiet line on the event page. Per the research's display rules, still to check against the full file.
-- **Privacy:** Anything else sits in the same stub data as seats, readable by approved followers' apps though nothing shows it (Kylie accepted this for seats, Oct 13).
+### Seats: one row of three (Kylie, Oct 13: "it has to be incredibly simple")
+- **One row, three optional boxes: Section, Row, Seat**, free text as typed (caps 80 / 24 / 40), placeholders "112 or Lawn", "8", "4". Section takes whatever names the place: "112", "Lawn", "Floor", "GA", "Suite 42". "Sec" is added only for a bare number ("Sec 112 · Row 8 · Seat 4"; "Lawn" alone). No toggle, no Area field, no chips, no extra line; no Done of its own (saves as you leave a box).
+- **Why:** the research answered "does it fit every venue", not "will people fill it in". Free text in Section is what stops it being restrictive; more fields would have made it a form nobody uses. Rejected: the six-field editor shipped earlier on Oct 13 (No assigned seat, Area with chips, Section or block, Row, Seat, Anything else).
+- **Migration on read:** a seat saved by the six-field editor folds into Section (GA, Area, section and details joined with " · "); no SQL.
+- **Privacy:** seats sit in the stub's data, readable by approved followers' apps though nothing shows them (accepted, Oct 13). The research file (`docs/research/topics/seat-fields-answer-claude.md`) stays as background.
