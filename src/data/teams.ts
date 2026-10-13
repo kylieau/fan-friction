@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -523,13 +523,12 @@ const LIST: Team[] = [
   team('ottawa-rapid-fc', 'Ottawa Rapid FC', 'Rapid FC', "USL Super League", 'soccer', 'ottawa-gatineau', 'RFC'),
   team('carleton-ravens-football', 'Carleton Ravens Football', 'Ravens FB', 'U Sports football', 'football', 'ottawa-gatineau', 'CAR'),
   team('carleton-ravens-mbb', "Carleton Ravens Men's Basketball", 'Ravens MBB', 'U Sports basketball', 'basketball', 'ottawa-gatineau', 'CAR'),
-  team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),
+  team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball', 'miami', 'MIA'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
-  team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball'),
   team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball'),
   team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball'),
   team('jets', 'Winnipeg Jets', 'Jets', 'NHL', 'hockey'),
-  team('panthers', 'Florida Panthers', 'Panthers', 'NHL', 'hockey'),
+  team('panthers', 'Florida Panthers', 'Panthers', 'NHL', 'hockey', 'miami', 'FLA'),
   team('rapids', 'Colorado Rapids', 'Rapids', 'MLS', 'soccer'),
   // Mexico City (Oct 12, 2026; docs/research/city-builds/mexico-city/). ESPN ids checked Oct 12, 2026.
   // Cruz Azul was a visitor record; same id, now the home club. Puebla's Estadio Cuauhtémoc stays outside this metro.
@@ -546,7 +545,16 @@ const LIST: Team[] = [
   team('diablos-rojos-basketball', 'Diablos Rojos de Básquetbol', 'Diablos Básquet', 'LNBP', 'basketball', 'mexico-city', 'DRB'),
   team('aguilas-blancas', 'Águilas Blancas', 'Águilas Blancas', 'ONEFA', 'football', 'mexico-city', 'AGB', ['Aguilas Blancas']),
   team('burros-blancos', 'Burros Blancos', 'Burros Blancos', 'ONEFA', 'football', 'mexico-city', 'BUB'),
-  team('dolphins', 'Miami Dolphins', 'Dolphins', 'NFL', 'football'),
+  team('dolphins', 'Miami Dolphins', 'Dolphins', 'NFL', 'football', 'miami', 'MIA'),
+  // Miami (Oct 13, 2026; docs/research/city-builds/miami/). ESPN ids checked Oct 13, 2026.
+  team('heat', 'Miami Heat', 'Heat', 'NBA', 'basketball', 'miami', 'MIA'),
+  team('inter-miami-cf', 'Inter Miami CF', 'Inter Miami', 'MLS', 'soccer', 'miami', 'MIA', ['Inter Miami CF']),
+  team('miami-hurricanes-football', 'Miami Hurricanes Football', 'Hurricanes FB', 'College football', 'football', 'miami', 'UM', ['Miami', 'Hurricanes']),
+  team('miami-hurricanes-mbb', "Miami Hurricanes Men's Basketball", 'Hurricanes MBB', "College men's basketball", 'basketball', 'miami', 'UM', ['Miami', 'Hurricanes']),
+  team('fiu-football', 'FIU Panthers Football', 'FIU FB', 'College football', 'football', 'miami', 'FIU', ['FIU']),
+  team('fiu-mbb', "FIU Panthers Men's Basketball", 'FIU MBB', "College men's basketball", 'basketball', 'miami', 'FIU', ['FIU']),
+  team('miami-fc', 'Miami FC', 'Miami FC', 'USL Championship', 'soccer', 'miami', 'MFC'),
+  team('fort-lauderdale-united', 'Fort Lauderdale United FC', 'Fort Lauderdale Utd', 'USL Super League', 'soccer', 'miami', 'FTL'),
   team('washington', 'Washington', 'Washington', 'NFL', 'football'),
   team('rutgers', 'Rutgers Scarlet Knights', 'Rutgers', 'College football', 'football'),
   team('washington-huskies', 'Washington Huskies', 'Huskies', 'College football', 'football'),

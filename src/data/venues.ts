@@ -1439,6 +1439,215 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 1042, setup: 'concert', note: 'Official (Straz Center). Near the 1,000 pre-list line. Source: https://admin.strazcenter.org/about-us' }],
     roof: 'indoor',
   },
+
+  // ---------- Miami (docs/research/city-builds/miami/; register Oct 13, 2026) ----------
+  // Miami-Dade + Broward core. Palm Beach edge venues stay out. Bayfront park festivals and F1 grounds are point events, not rooms.
+  // carShare values are estimated/derived from docs/research/city-builds/miami/miami-city-type-answer.md (not measured).
+  'hard-rock-stadium': {
+    id: 'hard-rock-stadium',
+    metroId: 'miami',
+    carShare: 0.93,
+    names: [
+      { name: 'New Miami Stadium' },
+      { name: 'Hard Rock Stadium', from: '2016-08-01' },
+      { name: 'Miami Stadium', from: '2026-06-01' },
+    ],
+    location: [-80.2388497, 25.9579032],
+    capacity: [
+      { seats: 64767, setup: 'football', note: 'Reported. NFL seated; conflicts with 65,326 permanent seats on Ticketmaster blog. Source: venue table A01.' },
+      { seats: 64478, setup: 'soccer', note: 'Reported. 2026 FIFA World Cup configuration. Source: venue table A01.' },
+    ],
+    roof: 'open',
+  },
+  'homestead-miami-speedway': {
+    id: 'homestead-miami-speedway',
+    metroId: 'miami',
+    names: [{ name: 'Homestead-Miami Speedway' }],
+    location: [-80.4094304, 25.4517516],
+    // Round-2 rule: conflicting figures (46,000 / 45,000 / 65,000), none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'loandepot-park': {
+    id: 'loandepot-park',
+    metroId: 'miami',
+    carShare: 0.85,
+    names: [{ name: 'Marlins Park' }, { name: 'loanDepot park', from: '2021-04-01' }],
+    location: [-80.219554, 25.7780733],
+    capacity: [
+      { seats: 36742, setup: 'baseball', note: 'Reported. Seated baseball; 37,442 with standing room not used as seated. Source: venue table A03.' },
+    ],
+    roof: 'covered',
+  },
+  'nu-stadium': {
+    id: 'nu-stadium',
+    metroId: 'miami',
+    carShare: 0.86,
+    names: [
+      { name: 'Miami Freedom Park' },
+      { name: 'Nu Stadium at Miami Freedom Park', from: '2026-04-04' },
+    ],
+    location: [-80.2595069, 25.7924775],
+    capacity: [
+      { seats: 26700, setup: 'soccer', note: 'Reported. Conflicts with earlier 25,000 plan. Source: venue table A04.' },
+    ],
+    roof: 'open',
+  },
+  'amerant-bank-arena': {
+    id: 'amerant-bank-arena',
+    metroId: 'miami',
+    carShare: 0.95,
+    names: [
+      { name: 'BB&T Center' },
+      { name: 'FLA Live Arena', from: '2021-01-01' },
+      { name: 'Amerant Bank Arena', from: '2023-09-19' },
+    ],
+    location: [-80.3254289, 26.1583702],
+    capacity: [
+      { seats: 19250, setup: 'hockey', note: 'Reported. Source: venue table A05.' },
+      { seats: 23000, setup: 'concert', note: 'Reported. Max concert configuration; stage-type figures vary. Source: venue table A05.' },
+    ],
+    roof: 'indoor',
+  },
+  'inter-miami-cf-stadium': {
+    id: 'inter-miami-cf-stadium',
+    metroId: 'miami',
+    names: [
+      { name: 'Inter Miami CF Stadium' },
+      { name: 'DRV PNK Stadium', from: '2021-01-01' },
+      { name: 'Chase Stadium', from: '2024-01-01' },
+    ],
+    location: [-80.16068, 26.1932426],
+    capacity: [
+      { seats: 21550, setup: 'soccer', note: 'Reported. Inter Miami II and occasional first-team matches after 2026 move to Nu Stadium. Source: venue table A06.' },
+    ],
+    roof: 'open',
+  },
+  'kaseya-center': {
+    id: 'kaseya-center',
+    metroId: 'miami',
+    carShare: 0.78,
+    names: [
+      { name: 'American Airlines Arena' },
+      { name: 'FTX Arena', from: '2021-06-01' },
+      { name: 'Miami-Dade Arena', from: '2023-02-01' },
+      { name: 'Kaseya Center', from: '2023-05-01' },
+    ],
+    location: [-80.1879435, 25.7813595],
+    capacity: [
+      { seats: 19600, setup: 'basketball', note: 'Reported. Source: venue table A07.' },
+      { seats: 19146, setup: 'concert', note: 'Reported. Center-stage concert configuration. Source: city-type V06 / venue table A07.' },
+    ],
+    roof: 'indoor',
+  },
+  'pitbull-stadium': {
+    id: 'pitbull-stadium',
+    metroId: 'miami',
+    names: [
+      { name: 'FIU Stadium' },
+      { name: 'Riccardo Silva Stadium', from: '2017-01-01' },
+      { name: 'Pitbull Stadium', from: '2024-08-01' },
+    ],
+    location: [-80.3778903, 25.7524884],
+    // Round-2 rule: conflicting figures (20,000 / 22,682), none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'fpl-solar-amphitheater': {
+    id: 'fpl-solar-amphitheater',
+    metroId: 'miami',
+    carShare: 0.78,
+    names: [
+      { name: 'Bayfront Park Amphitheater' },
+      { name: 'FPL Solar Amphitheater at Bayfront Park', from: '2020-01-01' },
+    ],
+    location: [-80.1860601, 25.7762049],
+    // Round-2 rule: conflicting figures (8,500 / 5,000 / 1,646); blank until one official current figure (BACKLOG).
+    capacity: [],
+    roof: 'covered',
+  },
+  'watsco-center': {
+    id: 'watsco-center',
+    metroId: 'miami',
+    names: [{ name: 'BankUnited Center' }, { name: 'Watsco Center', from: '2016-10-10' }],
+    location: [-80.2793844, 25.7153095],
+    capacity: [
+      { seats: 7972, setup: 'basketball', note: 'Official (UM Athletics). Source: venue table A11.' },
+    ],
+    roof: 'indoor',
+  },
+  'hard-rock-live-hollywood': {
+    id: 'hard-rock-live-hollywood',
+    metroId: 'miami',
+    names: [{ name: 'Hard Rock Live' }],
+    location: [-80.2116126, 26.0523004],
+    capacity: [
+      { seats: 7000, setup: 'concert', note: 'Official (Seminole Hard Rock). Hollywood reservation room; not Hard Rock Stadium. Source: venue table A12.' },
+    ],
+    roof: 'indoor',
+  },
+  'beyond-bancard-field': {
+    id: 'beyond-bancard-field',
+    metroId: 'miami',
+    names: [{ name: 'Beyond Bancard Field at NSU' }],
+    // Approximate; NSU campus point (research §A13).
+    location: [-80.24, 26.08],
+    capacity: [
+      { seats: 7000, setup: 'soccer', note: 'Official (team match notes). Source: venue table A13.' },
+    ],
+    roof: 'open',
+  },
+  'ocean-bank-convocation-center': {
+    id: 'ocean-bank-convocation-center',
+    metroId: 'miami',
+    names: [{ name: 'Ocean Bank Convocation Center' }, { name: 'FIU Arena' }],
+    location: [-80.3798026, 25.7569394],
+    capacity: [
+      { seats: 5000, setup: 'basketball', note: 'Reported. Threshold case at exactly 5,000. Source: venue table A15.' },
+    ],
+    roof: 'indoor',
+  },
+  'fillmore-miami-beach': {
+    id: 'fillmore-miami-beach',
+    metroId: 'miami',
+    names: [{ name: 'The Fillmore Miami Beach at the Jackie Gleason Theater' }],
+    location: [-80.133107, 25.7929298],
+    capacity: [
+      { seats: 2700, setup: 'concert', note: 'Reported (CVB). Sub-5,000 pre-list room. Source: venue table A18.' },
+    ],
+    roof: 'indoor',
+  },
+  'broward-center-au-rene': {
+    id: 'broward-center-au-rene',
+    metroId: 'miami',
+    names: [{ name: 'Au-Rene Theater' }, { name: 'Broward Center for the Performing Arts' }],
+    // Approximate; OSM did not resolve the performing-arts building by name (research §A19).
+    location: [-80.142, 26.119],
+    capacity: [
+      { seats: 2658, setup: 'concert', note: 'Reported. Source: venue table A19.' },
+    ],
+    roof: 'indoor',
+  },
+  'arsht-ziff-opera-house': {
+    id: 'arsht-ziff-opera-house',
+    metroId: 'miami',
+    names: [{ name: 'Ziff Ballet Opera House' }, { name: 'Adrienne Arsht Center — Ziff Ballet Opera House' }],
+    location: [-80.1900593, 25.7876286],
+    capacity: [
+      { seats: 2400, setup: 'concert', note: 'Official (Arsht Center). Source: venue table A20.' },
+    ],
+    roof: 'indoor',
+  },
+  'arsht-knight-concert-hall': {
+    id: 'arsht-knight-concert-hall',
+    metroId: 'miami',
+    names: [{ name: 'Knight Concert Hall' }],
+    location: [-80.1900593, 25.7876286],
+    capacity: [
+      { seats: 2200, setup: 'concert', note: 'Official (Arsht Center). Not James L. Knight Center downtown. Source: venue table A21.' },
+    ],
+    roof: 'indoor',
+  },
   'dodger-stadium': {
     id: 'dodger-stadium',
     metroId: 'la',

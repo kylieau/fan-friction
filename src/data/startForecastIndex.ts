@@ -28246,6 +28246,221 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-heat-401898404",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.1,
+      "friction": "Low",
+      "why": "Inter Miami vs. NYCFC 4.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 19600,
+      "low": 19600,
+      "high": 19600
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-inter-miami-cf-761861",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.1,
+      "friction": "Low",
+      "why": "Heat vs. Nets 4.5 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-15-espn-panthers-401892510",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18525,
+      "low": 17731,
+      "high": 19096
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-miami-fc-401842298",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    },
+    "draw": {
+      "count": 1203,
+      "low": 1129,
+      "high": 1382
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-miami-hurricanes-football-401858263",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "86° feels-like at a 7:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 58503,
+      "low": 58045,
+      "high": 63892
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-panthers-401892522",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Miami vs. Florida St 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 19343,
+      "low": 16804,
+      "high": 19357
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-20-espn-fiu-football-401871055",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 12436,
+      "low": 10891,
+      "high": 14426
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-21-espn-heat-401909091",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19620,
+      "low": 19610,
+      "high": 19623
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-22-espn-fort-lauderdale-united-401878621",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1890,
+      "low": 1736,
+      "high": 2148
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-23-espn-heat-401909847",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19690,
+      "low": 19657,
+      "high": 19788
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-24-espn-miami-hurricanes-football-401858274",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Moderate",
+      "why": "91° feels-like at a 12:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 58503,
+      "low": 58045,
+      "high": 63892
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-26-espn-heat-401909871",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19620,
+      "low": 19610,
+      "high": 19623
+    }
+  },
+  {
     "metroId": "milwaukee",
     "eventId": "2026-10-11-mlb-849809",
     "date": "2026-10-11",

@@ -49676,6 +49676,1698 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 26031,
     "games": 5,
     "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 65842,
+    "low": 65594,
+    "high": 66059,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 65582,
+    "low": 65552,
+    "high": 65588,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 64788,
+    "low": 64736,
+    "high": 64808,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 65848,
+    "low": 65601,
+    "high": 66068,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 65601,
+    "low": 65446,
+    "high": 65725,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 65812,
+    "low": 65576,
+    "high": 66027,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 65629,
+    "low": 65592,
+    "high": 65654,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 65479,
+    "low": 65440,
+    "high": 66026,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 65967,
+    "low": 65885,
+    "high": 66341,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 12724,
+    "low": 11165,
+    "high": 15313,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17852,
+    "low": 17365,
+    "high": 17943,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 12133,
+    "low": 10625,
+    "high": 14074,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 12133,
+    "low": 10625,
+    "high": 14074,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 13446,
+    "low": 11885,
+    "high": 17016,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 16596,
+    "low": 13257,
+    "high": 17588,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 11114,
+    "low": 9369,
+    "high": 13085,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 668,
+    "low": 574,
+    "high": 1015,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1242,
+    "low": 1095,
+    "high": 1424,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 883,
+    "low": 610,
+    "high": 1206,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1209,
+    "low": 983,
+    "high": 1354,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1002,
+    "low": 668,
+    "high": 1008,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 971,
+    "low": 655,
+    "high": 1224,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 623,
+    "low": 605,
+    "high": 690,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 648,
+    "low": 588,
+    "high": 822,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 649,
+    "low": 580,
+    "high": 1021,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 745,
+    "low": 647,
+    "high": 828,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 804,
+    "low": 708,
+    "high": 897,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 586,
+    "low": 338,
+    "high": 595,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 399,
+    "low": 361,
+    "high": 577,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "venueId": "beyond-bancard-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 1641,
+    "low": 1507,
+    "high": 1865,
+    "games": 13,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "venueId": "beyond-bancard-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1608,
+    "low": 1480,
+    "high": 1806,
+    "games": 12,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 19700,
+    "low": 19600,
+    "high": 19736,
+    "games": 80,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 19600,
+    "low": 19600,
+    "high": 19600,
+    "games": 8,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19679,
+    "low": 19600,
+    "high": 19700,
+    "games": 46,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19700,
+    "low": 19600,
+    "high": 19700,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19700,
+    "low": 19675,
+    "high": 19765,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19700,
+    "low": 19700,
+    "high": 19742,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19700,
+    "low": 19700,
+    "high": 19791,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 19620,
+    "low": 19610,
+    "high": 19623,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19600,
+    "low": 19600,
+    "high": 19604,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19657,
+    "low": 19600,
+    "high": 19817,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19710,
+    "low": 19677,
+    "high": 19808,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 19700,
+    "low": 19700,
+    "high": 19710,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19700,
+    "low": 19700,
+    "high": 19740,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19893,
+    "low": 19704,
+    "high": 19934,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19700,
+    "low": 19650,
+    "high": 19708,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19707,
+    "low": 19700,
+    "high": 19802,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19700,
+    "low": 19700,
+    "high": 19713,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 20853,
+    "low": 20195,
+    "high": 21320,
+    "games": 32,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20005,
+    "low": 19934,
+    "high": 20120,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 20892,
+    "low": 20603,
+    "high": 21369,
+    "games": 22,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 21352,
+    "low": 20985,
+    "high": 21451,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 21090,
+    "low": 20795,
+    "high": 21361,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 21044,
+    "low": 20681,
+    "high": 21076,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 20915,
+    "low": 20425,
+    "high": 21145,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 21429,
+    "low": 19159,
+    "high": 21490,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20727,
+    "low": 20436,
+    "high": 20859,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 12448,
+    "low": 8820,
+    "high": 17106,
+    "games": 240,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 32459,
+    "low": 32076,
+    "high": 32512,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8666,
+    "low": 7798,
+    "high": 10770,
+    "games": 114,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 6667,
+    "low": 6591,
+    "high": 9810,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 8304,
+    "low": 7633,
+    "high": 8738,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 8255,
+    "low": 7502,
+    "high": 9592,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 8814,
+    "low": 8157,
+    "high": 9652,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 11725,
+    "low": 9870,
+    "high": 14030,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 8693,
+    "low": 8139,
+    "high": 10639,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 9413,
+    "low": 8474,
+    "high": 12501,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 14200,
+    "low": 11694,
+    "high": 16417,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 10652,
+    "low": 9924,
+    "high": 11929,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 12070,
+    "low": 11687,
+    "high": 15119,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 11256,
+    "low": 10617,
+    "high": 11882,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 15605,
+    "low": 14442,
+    "high": 16151,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 14458,
+    "low": 13954,
+    "high": 16110,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 17305,
+    "low": 16685,
+    "high": 30664,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16715,
+    "low": 13313,
+    "high": 22111,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 10207,
+    "low": 10184,
+    "high": 12205,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 16998,
+    "low": 14758,
+    "high": 19494,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 14335,
+    "low": 13004,
+    "high": 16524,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 13217,
+    "low": 11830,
+    "high": 21198,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 16393,
+    "low": 14071,
+    "high": 20880,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 19348,
+    "low": 18222,
+    "high": 23763,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 25227,
+    "low": 23189,
+    "high": 34814,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17355,
+    "low": 14074,
+    "high": 21662,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 15915,
+    "low": 15703,
+    "high": 16635,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18326,
+    "low": 15439,
+    "high": 21706,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 17690,
+    "low": 12425,
+    "high": 20804,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 13540,
+    "low": 13387,
+    "high": 15506,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 17683,
+    "low": 13672,
+    "high": 19118,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 17551,
+    "low": 16093,
+    "high": 19922,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 29875,
+    "low": 23601,
+    "high": 32667,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 1043,
+    "low": 1006,
+    "high": 1225,
+    "games": 34,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1289,
+    "low": 1206,
+    "high": 1342,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 638,
+    "low": 599,
+    "high": 731,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1078,
+    "low": 1012,
+    "high": 1238,
+    "games": 29,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 1027,
+    "low": 1012,
+    "high": 1044,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 1091,
+    "low": 1060,
+    "high": 1147,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 1257,
+    "low": 1134,
+    "high": 1348,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 1077,
+    "low": 962,
+    "high": 1088,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 1041,
+    "low": 1014,
+    "high": 1238,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 1013,
+    "low": 656,
+    "high": 1233,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 59864,
+    "low": 53184,
+    "high": 64131,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 57886,
+    "low": 53455,
+    "high": 62340,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 60189,
+    "low": 54805,
+    "high": 64051,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 60617,
+    "low": 51564,
+    "high": 66591,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 58503,
+    "low": 58045,
+    "high": 63892,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 60189,
+    "low": 59157,
+    "high": 60337,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 5752,
+    "low": 4930,
+    "high": 7234,
+    "games": 49,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5633,
+    "low": 5592,
+    "high": 6247,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6104,
+    "low": 5118,
+    "high": 7249,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 6597,
+    "low": 5587,
+    "high": 6865,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7639,
+    "low": 7355,
+    "high": 7801,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4320,
+    "low": 4125,
+    "high": 5036,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5616,
+    "low": 4930,
+    "high": 5818,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5811,
+    "low": 3918,
+    "high": 7370,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6420,
+    "low": 5328,
+    "high": 6513,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6637,
+    "low": 5478,
+    "high": 7738,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5561,
+    "low": 4315,
+    "high": 6201,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5214,
+    "low": 4126,
+    "high": 5361,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 5361,
+    "low": 4744,
+    "high": 5531,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19362,
+    "low": 18687,
+    "high": 19546,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19655,
+    "low": 19472,
+    "high": 19734,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 13897,
+    "low": 8671,
+    "high": 15000,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19261,
+    "low": 18534,
+    "high": 19465,
+    "games": 63,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19434,
+    "low": 18287,
+    "high": 19501,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18918,
+    "low": 18243,
+    "high": 19372,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19043,
+    "low": 18753,
+    "high": 19422,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19403,
+    "low": 18451,
+    "high": 19453,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18769,
+    "low": 17965,
+    "high": 19348,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18969,
+    "low": 18548,
+    "high": 19512,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19421,
+    "low": 19268,
+    "high": 19556,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19543,
+    "low": 18721,
+    "high": 19630,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18801,
+    "low": 18323,
+    "high": 19233,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 18929,
+    "low": 18611,
+    "high": 19344,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19396,
+    "low": 19211,
+    "high": 19569,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19461,
+    "low": 19242,
+    "high": 19647,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19628,
+    "low": 19457,
+    "high": 19660,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19396,
+    "low": 19358,
+    "high": 19416,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 19558,
+    "low": 16991,
+    "high": 19572,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 19386,
+    "low": 18903,
+    "high": 19541,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19317,
+    "low": 18991,
+    "high": 19525,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19479,
+    "low": 19377,
+    "high": 19622,
+    "games": 6,
+    "seasons": "2024–2026"
   }
 ];
 
@@ -50023,6 +51715,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.063,
     "games": 11
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "season": 2026,
+    "level": 1.025,
+    "games": 3
   }
 ];
 
@@ -73939,6 +75638,1035 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "toronto",
     "ratio": 1.03,
     "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "bengals",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "bills",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "jets",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "patriots",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "raiders",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "titans",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "opponent": "jax-state",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "opponent": "liberty",
+    "ratio": 1.085,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "opponent": "new-mexico-st",
+    "ratio": 0.914,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "fgcu",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "fl-national",
+    "ratio": 1.14,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "jax-state",
+    "ratio": 0.949,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "kennesaw-st",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "liberty",
+    "ratio": 1.089,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "long-island",
+    "ratio": 0.818,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "louisiana-tech",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "mtsu",
+    "ratio": 1.075,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "new-mexico-st",
+    "ratio": 0.917,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "sam-houston",
+    "ratio": 0.92,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "utep",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "western-ky",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "brooklyn",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "carolina",
+    "ratio": 1.152,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "dallas",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "lexington",
+    "ratio": 1.139,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "sporting-jax",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "tampa-bay",
+    "ratio": 1.098,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "76ers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "bulls",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "cavaliers",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "celtics",
+    "ratio": 1.003,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "clippers",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "grizzlies",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "hawks",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "hornets",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "jazz",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "knicks",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "lakers",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "nets",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "nuggets",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "pacers",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "pelicans",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "pistons",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "spurs",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "suns",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "thunder",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "trail-blazers",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "warriors",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "wizards",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "atlanta",
+    "ratio": 0.947,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "cf-montr-al",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "charlotte",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "chicago",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "cincinnati",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "columbus",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "d-c-united",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "nashville",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "new-england",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "nycfc",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "orlando",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "philadelphia",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "red-bull-ny",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "toronto",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "angels",
+    "ratio": 0.952,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "braves",
+    "ratio": 1.164,
+    "games": 19
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "brewers",
+    "ratio": 0.976,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "cardinals",
+    "ratio": 0.982,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "cubs",
+    "ratio": 1.018,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "d-backs",
+    "ratio": 0.949,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "dodgers",
+    "ratio": 1.393,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "giants",
+    "ratio": 1.086,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "guardians",
+    "ratio": 0.994,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "mariners",
+    "ratio": 0.867,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "mets",
+    "ratio": 1.194,
+    "games": 19
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "nationals",
+    "ratio": 0.941,
+    "games": 19
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "orioles",
+    "ratio": 0.944,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "padres",
+    "ratio": 1.093,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "phillies",
+    "ratio": 1.015,
+    "games": 21
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "pirates",
+    "ratio": 1.127,
+    "games": 11
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "rangers",
+    "ratio": 1.304,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "rays",
+    "ratio": 0.94,
+    "games": 8
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "red-sox",
+    "ratio": 1.487,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "reds",
+    "ratio": 1.035,
+    "games": 11
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "rockies",
+    "ratio": 1.051,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "white-sox",
+    "ratio": 0.912,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "birmingham",
+    "ratio": 0.84,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "charleston",
+    "ratio": 1.116,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "detroit",
+    "ratio": 0.923,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "hartford",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "indy-xi",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "loudoun",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "louisville",
+    "ratio": 1.057,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "pittsburgh",
+    "ratio": 1.27,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "rhode-island",
+    "ratio": 1.09,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "tampa-bay",
+    "ratio": 1.048,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "opponent": "bethune",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "opponent": "florida-a-m",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "opponent": "louisville",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "boston-college",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "clemson",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "duke",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "fiu",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "florida-st",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "georgia-tech",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "louisville",
+    "ratio": 1.111,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "north-florida",
+    "ratio": 0.917,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "notre-dame",
+    "ratio": 0.894,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "pitt",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "virginia-tech",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "avalanche",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "blackhawks",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "blue-jackets",
+    "ratio": 0.99,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "blues",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "bruins",
+    "ratio": 1.01,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "canadiens",
+    "ratio": 1.005,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "canucks",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "capitals",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "devils",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "ducks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "flames",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "flyers",
+    "ratio": 1.011,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "hurricanes",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "islanders",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "jets",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "kraken",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "lightning",
+    "ratio": 1.011,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "maple-leafs",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "oilers",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "penguins",
+    "ratio": 1.007,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "predators",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "rangers",
+    "ratio": 1.008,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "red-wings",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "sabres",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "senators",
+    "ratio": 0.982,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "sharks",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "stars",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "wild",
+    "ratio": 1,
+    "games": 4
   }
 ];
 
@@ -78443,5 +81171,269 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "games": 70,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.997,
+    "high": 1.037,
+    "games": 120,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "band": "second",
+    "occupancy": 1.003,
+    "low": 1,
+    "high": 1.04,
+    "games": 58,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "band": "final",
+    "occupancy": 1.018,
+    "low": 1,
+    "high": 1.049,
+    "games": 37,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "first",
+    "occupancy": 0.96,
+    "low": 0.742,
+    "high": 1.029,
+    "games": 80,
+    "seasons": "2024, 2025 + league, any round",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "first",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "second",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "second",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "conference",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "conference",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "final",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "final",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "first",
+    "occupancy": 0.987,
+    "low": 0.855,
+    "high": 1.112,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "second",
+    "occupancy": 1.031,
+    "low": 0.954,
+    "high": 1.142,
+    "games": 66,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "conference",
+    "occupancy": 1.029,
+    "low": 0.953,
+    "high": 1.127,
+    "games": 39,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "final",
+    "occupancy": 1.043,
+    "low": 0.938,
+    "high": 1.14,
+    "games": 20,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "first",
+    "occupancy": 1.017,
+    "low": 0.982,
+    "high": 1.034,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "first",
+    "occupancy": 1.005,
+    "low": 1,
+    "high": 1.054,
+    "games": 109,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "second",
+    "occupancy": 1.031,
+    "low": 1.001,
+    "high": 1.039,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "second",
+    "occupancy": 1.01,
+    "low": 1,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "conference",
+    "occupancy": 1.028,
+    "low": 1,
+    "high": 1.042,
+    "games": 33,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.043,
+    "games": 26,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "final",
+    "occupancy": 1.036,
+    "low": 1.015,
+    "high": 1.039,
+    "games": 9,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
   }
 ];

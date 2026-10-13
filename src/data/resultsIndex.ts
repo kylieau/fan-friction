@@ -1358,6 +1358,133 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-12T17:25:07.394Z"
   },
   {
+    "eventId": "2026-10-10-espn-heat-401898397",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "kaseya-center",
+    "homeTeamId": "heat",
+    "home": {
+      "name": "Heat",
+      "score": 124
+    },
+    "away": {
+      "name": "Timberwolves",
+      "score": 125
+    },
+    "attendance": 19600,
+    "capturedAt": "2026-10-13T07:19:49.048Z",
+    "duration": {
+      "minutes": 145,
+      "kind": "estimated"
+    },
+    "startedAt": "20:11"
+  },
+  {
+    "eventId": "2026-10-10-espn-inter-miami-cf-761847",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nu-stadium",
+    "homeTeamId": "inter-miami-cf",
+    "home": {
+      "name": "Inter Miami",
+      "score": 4
+    },
+    "away": {
+      "name": "D.C. United",
+      "score": 0
+    },
+    "capturedAt": "2026-10-13T07:19:49.048Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-miami-fc-401842282",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "pitbull-stadium",
+    "homeTeamId": "miami-fc",
+    "home": {
+      "name": "Miami FC",
+      "score": 0
+    },
+    "away": {
+      "name": "Loudoun",
+      "score": 2
+    },
+    "capturedAt": "2026-10-13T07:19:49.048Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-panthers-401891805",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "amerant-bank-arena",
+    "homeTeamId": "panthers",
+    "home": {
+      "name": "Panthers",
+      "score": 1
+    },
+    "away": {
+      "name": "Wild",
+      "score": 4
+    },
+    "attendance": 19856,
+    "capturedAt": "2026-10-13T07:19:49.048Z",
+    "duration": {
+      "minutes": 160,
+      "kind": "estimated"
+    },
+    "startedAt": "18:08"
+  },
+  {
+    "eventId": "2026-10-11-espn-dolphins-401872982",
+    "metroId": "miami",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hard-rock-stadium",
+    "homeTeamId": "dolphins",
+    "home": {
+      "name": "Dolphins",
+      "score": 24
+    },
+    "away": {
+      "name": "Bengals",
+      "score": 31
+    },
+    "attendance": 58223,
+    "capturedAt": "2026-10-13T07:19:49.048Z",
+    "duration": {
+      "minutes": 190,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
+    "eventId": "2026-10-11-espn-fort-lauderdale-united-401878625",
+    "metroId": "miami",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "beyond-bancard-field",
+    "homeTeamId": "fort-lauderdale-united",
+    "home": {
+      "name": "Fort Lauderdale Utd",
+      "score": 2
+    },
+    "away": {
+      "name": "Lexington",
+      "score": 1
+    },
+    "attendance": 918,
+    "capturedAt": "2026-10-13T07:19:49.048Z"
+  },
+  {
     "eventId": "2026-10-10-ht-milwaukee-admirals-1029116",
     "metroId": "milwaukee",
     "date": "2026-10-10",
