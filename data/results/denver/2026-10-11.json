@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-nuggets-401908941",
+      "metroId": "denver",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 133
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 128
+      },
+      "capturedAt": "2026-10-13T07:38:07.898Z",
+      "duration": {
+        "minutes": 173,
+        "kind": "estimated"
+      },
+      "startedAt": "20:53"
+    }
+  ]
+}

@@ -3250,5 +3250,70 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:10"
+  },
+  {
+    "eventId": "2026-10-10-espn-avalanche-401892478",
+    "metroId": "denver",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ball-arena",
+    "homeTeamId": "avalanche",
+    "home": {
+      "name": "Avalanche",
+      "score": 3
+    },
+    "away": {
+      "name": "Maple Leafs",
+      "score": 6
+    },
+    "attendance": 18091,
+    "capturedAt": "2026-10-13T07:38:07.898Z",
+    "duration": {
+      "minutes": 153,
+      "kind": "estimated"
+    },
+    "startedAt": "19:16"
+  },
+  {
+    "eventId": "2026-10-10-espn-rapids-761857",
+    "metroId": "denver",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "dicks-sporting-goods-park",
+    "homeTeamId": "rapids",
+    "home": {
+      "name": "Rapids",
+      "score": 1
+    },
+    "away": {
+      "name": "Earthquakes",
+      "score": 1
+    },
+    "capturedAt": "2026-10-13T07:38:07.898Z"
+  },
+  {
+    "eventId": "2026-10-11-espn-nuggets-401908941",
+    "metroId": "denver",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ball-arena",
+    "homeTeamId": "nuggets",
+    "home": {
+      "name": "Nuggets",
+      "score": 133
+    },
+    "away": {
+      "name": "Bulls",
+      "score": 128
+    },
+    "capturedAt": "2026-10-13T07:38:07.898Z",
+    "duration": {
+      "minutes": 173,
+      "kind": "estimated"
+    },
+    "startedAt": "20:53"
   }
 ];

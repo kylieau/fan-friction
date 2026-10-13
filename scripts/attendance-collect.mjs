@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', miami: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago', 'new-orleans': 'America/Chicago', 'salt-lake-city': 'America/Denver', 'ottawa-gatineau': 'America/Toronto', edmonton: 'America/Edmonton', 'washington-dc': 'America/New_York', 'san-antonio': 'America/Chicago', portland: 'America/Los_Angeles', detroit: 'America/Detroit', pittsburgh: 'America/New_York', 'raleigh-durham': 'America/New_York', 'st-louis': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', miami: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', indianapolis: 'America/Indiana/Indianapolis', toronto: 'America/Toronto', minneapolis: 'America/Chicago', 'new-orleans': 'America/Chicago', 'salt-lake-city': 'America/Denver', 'ottawa-gatineau': 'America/Toronto', edmonton: 'America/Edmonton', 'washington-dc': 'America/New_York', 'san-antonio': 'America/Chicago', portland: 'America/Los_Angeles', detroit: 'America/Detroit', pittsburgh: 'America/New_York', 'raleigh-durham': 'America/New_York', 'st-louis': 'America/Chicago', denver: 'America/Denver' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -46,6 +46,7 @@ const MLB_TEAMS = [
   { teamId: 'las-vegas-aviators', metroId: 'las-vegas', mlbId: 400, sportId: 11, venueId: 'las-vegas-ballpark', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'twins', metroId: 'minneapolis', mlbId: 142, venueId: 'target-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'st-paul-saints', metroId: 'minneapolis', mlbId: 1960, sportId: 11, venueId: 'chs-field', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'rockies', metroId: 'denver', mlbId: 115, venueId: 'coors-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'brewers', metroId: 'milwaukee', mlbId: 158, venueId: 'american-family-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'milwaukee-milkmen', metroId: 'milwaukee', mlbId: 5548, sportId: 23, venueId: 'franklin-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'lake-country-dockhounds', metroId: 'milwaukee', mlbId: 6488, sportId: 23, venueId: 'dockhounds-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -381,6 +382,14 @@ const ESPN_TEAMS = [
   { teamId: 'lsuno-wbb', metroId: 'new-orleans', path: 'basketball/womens-college-basketball', espnId: '2443', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'lsuno-baseball', metroId: 'new-orleans', path: 'baseball/college-baseball', espnId: '184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'laketown-squadron', metroId: 'new-orleans', path: 'basketball/nba-development', espnId: '6', seasons: [2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'broncos', metroId: 'denver', path: 'football/nfl', espnId: '7', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'nuggets', metroId: 'denver', path: 'basketball/nba', espnId: '7', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'avalanche', metroId: 'denver', path: 'hockey/nhl', espnId: '17', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'rapids', metroId: 'denver', path: 'soccer/usa.1', espnId: '184', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'denver-summit-fc', metroId: 'denver', path: 'soccer/usa.nwsl', espnId: '131563', seasons: [2026, 2027] },
+  { teamId: 'du-mhockey', metroId: 'denver', path: 'hockey/mens-college-hockey', espnId: '2172', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'du-mbb', metroId: 'denver', path: 'basketball/mens-college-basketball', espnId: '2172', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'du-wbb', metroId: 'denver', path: 'basketball/womens-college-basketball', espnId: '2172', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'hurricanes', metroId: 'raleigh-durham', path: 'hockey/nhl', espnId: '7', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'nc-state-football', metroId: 'raleigh-durham', path: 'football/college-football', espnId: '152', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'nc-state-mbb', metroId: 'raleigh-durham', path: 'basketball/mens-college-basketball', espnId: '152', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
@@ -726,6 +735,17 @@ const VENUE_BY_NAME = {
   'mariucci arena': 'mariucci-arena',
   'lee & penny anderson arena': 'anderson-arena',
   // New Orleans, as ESPN writes them Keep in step with espnSource.ts.
+  'empower field at mile high': 'empower-field',
+  'sports authority field at mile high': 'empower-field',
+  'coors field': 'coors-field',
+  'ball arena': 'ball-arena',
+  'pepsi center': 'ball-arena',
+  "dick's sporting goods park": 'dicks-sporting-goods-park',
+  'dicks sporting goods park': 'dicks-sporting-goods-park',
+  "fiddler's green amphitheatre": 'fiddlers-green-amphitheatre',
+  'centennial stadium': 'centennial-stadium',
+  'magness arena': 'magness-arena',
+  'hamilton gymnasium': 'hamilton-gymnasium',
   'caesars superdome': 'caesars-superdome',
   'mercedes-benz superdome': 'caesars-superdome',
   'smoothie king center': 'smoothie-king-center',

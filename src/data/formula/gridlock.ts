@@ -90,6 +90,8 @@ const SCALE = 7.5;
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
+// Denver is a hub (research, Oct 12, 2026, docs/research/city-builds/denver/denver-city-type-answer.md): downtown cluster
+// spill between Empower Field, Ball Arena and Coors Field; outlying rooms are sprawl-like. Venue carShare values are estimates (C04 Oct 12).
 // Raleigh–Durham is sprawl (research, Oct 12, 2026, docs/research/city-builds/raleigh-durham/raleigh-durham-city-type-answer.md):
 // every large room but the UNC and Duke campus rooms sits on surface lots by a freeway, no venue has rail, and event transit is
 // park-and-ride that starts with a car trip. No share is measured; the venue carShare values wired in venues.ts are the answer's
@@ -111,7 +113,7 @@ const SCALE = 7.5;
 // Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
 // downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
 // values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', detroit: 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', pittsburgh: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl', portland: 'hub', 'raleigh-durham': 'sprawl', 'st-louis': 'hub' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', detroit: 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', pittsburgh: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', cleveland: 'hub', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit', 'san-antonio': 'sprawl', portland: 'hub', 'raleigh-durham': 'sprawl', 'st-louis': 'hub', denver: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -346,6 +348,10 @@ const ZONE_NAMES: Record<string, string> = {
   'providence-park': 'Goose Hollow',
   'cascades-amphitheater': 'Ridgefield',
   'anderson-arena': 'St. Thomas',
+  // Denver downtown cluster (city-type answer §3.4): shared I-25, Union Station rail and downtown garages.
+  'empower-field': 'Downtown cluster',
+  'coors-field': 'Downtown cluster',
+  'ball-arena': 'Downtown cluster',
   // Raleigh–Durham clusters that share lots, roads and police traffic operations (city-type answer section 6).
   'lenovo-center': 'West Raleigh',
   'carter-finley-stadium': 'West Raleigh',

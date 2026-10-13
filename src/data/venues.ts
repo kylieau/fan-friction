@@ -11704,6 +11704,268 @@ export const VENUES: Record<string, Venue> = {
     capacity: [],
     roof: 'open',
   },
+  // Denver (Oct 13, 2026). Rooms and figures: docs/research/city-builds/denver/denver-venue-table-answer.md.
+  // Car shares are estimated, not measured (city-type answer, C04 Oct 12). Coordinates from the city-build prompt unless noted.
+  'empower-field': {
+    id: 'empower-field',
+    metroId: 'denver',
+    carShare: 0.72,
+    names: [
+      { name: 'Mile High Stadium' },
+      { name: 'Invesco Field at Mile High', from: '2001-09-01' },
+      { name: 'Sports Authority Field at Mile High', from: '2011-08-01' },
+      { name: 'Broncos Stadium at Mile High', from: '2018-01-01' },
+      { name: 'Empower Field at Mile High', from: '2019-09-04' },
+    ],
+    location: [-105.0192228, 39.7439520],
+    capacity: [
+      // Football capacity left blank: 76,125 (structural engineer) vs 75,000 (RTD), none official (BACKLOG).
+      { seats: 85000, setup: 'concert', note: 'Reported. Source: https://en.wikipedia.org/wiki/Empower_Field_at_Mile_High' },
+    ],
+    roof: 'open',
+  },
+  'coors-field': {
+    id: 'coors-field',
+    metroId: 'denver',
+    carShare: 0.75,
+    names: [{ name: 'Coors Field' }],
+    location: [-104.9929286, 39.7560314],
+    capacity: [
+      {
+        seats: 46891,
+        setup: 'baseball',
+        standing: 50144,
+        note: 'Official (MLB.com): 46,891 seats; 50,144 with standing room. Alternate reported figures (50,398; 50,445) in the venue answer. Source: https://www.mlb.com/reds/news/coors-field-guide-capacity-seating-chart-parking-and-more',
+      },
+    ],
+    roof: 'open',
+  },
+  'ball-arena': {
+    id: 'ball-arena',
+    metroId: 'denver',
+    carShare: 0.78,
+    names: [
+      { name: 'Pepsi Center' },
+      { name: 'Ball Arena', from: '2020-10-22' },
+    ],
+    location: [-105.0075440, 39.7486838],
+    capacity: [
+      { seats: 19520, setup: 'basketball', note: 'Reported. Older basketball 19,155 in the venue answer. Source: https://en.wikipedia.org/wiki/Ball_Arena' },
+      { seats: 18007, setup: 'hockey', note: 'Reported. Source: https://en.wikipedia.org/wiki/Ball_Arena' },
+      { seats: 21000, setup: 'concert', note: 'Reported. Source: https://en.wikipedia.org/wiki/Ball_Arena' },
+    ],
+    roof: 'indoor',
+  },
+  'dicks-sporting-goods-park': {
+    id: 'dicks-sporting-goods-park',
+    metroId: 'denver',
+    carShare: 0.93,
+    names: [{ name: "Dick's Sporting Goods Park" }, { name: 'DSG Park' }],
+    location: [-104.8919219, 39.8059455],
+    // Round-2 rule: 18,061 (Wikipedia) vs 17,305 permanent / 18,581 expanded (2025), none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'covered',
+  },
+  'fiddlers-green-amphitheatre': {
+    id: 'fiddlers-green-amphitheatre',
+    metroId: 'denver',
+    carShare: 0.83,
+    names: [
+      { name: 'Coors Amphitheatre' },
+      { name: 'Comfort Dental Amphitheatre', from: '2010-01-01' },
+      { name: "Fiddler's Green Amphitheatre", from: '2013-01-01' },
+    ],
+    location: [-104.8947501, 39.6013959],
+    capacity: [
+      {
+        seats: 18000,
+        setup: 'concert',
+        note: 'Reported: 7,500 fixed seats + 10,500 lawn = 18,000 total. Do not treat 18,000 as all seated. Source: https://www.nbcnews.com/id/wbna3783020',
+      },
+    ],
+    roof: 'open',
+  },
+  'centennial-stadium': {
+    id: 'centennial-stadium',
+    metroId: 'denver',
+    carShare: 0.90,
+    names: [{ name: 'Centennial Stadium' }],
+    location: [-104.9402559, 39.5960013],
+    capacity: [
+      {
+        seats: 12000,
+        setup: 'soccer',
+        note: 'Official (club) 12,000; Denver Gazette reported 12,372. Planned reduction to about 4,000 after Summit FC moves (2028). Source: https://www.denvergazette.com/2026/07/18/fans-turn-up-the-heat-for-summit-fcs-first-home-game-at-new-stadium/',
+      },
+    ],
+    roof: 'open',
+  },
+  'denver-coliseum': {
+    id: 'denver-coliseum',
+    metroId: 'denver',
+    carShare: 0.90,
+    names: [{ name: 'Denver Coliseum' }],
+    location: [-104.9705743, 39.7791138],
+    // Round-2 rule: 10,200 (ColoradoBiz) vs 8,140 seats (Construction Equipment Guide), none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'indoor',
+  },
+  'red-rocks-amphitheatre': {
+    id: 'red-rocks-amphitheatre',
+    metroId: 'denver',
+    carShare: 0.88,
+    names: [{ name: 'Red Rocks Amphitheatre' }],
+    location: [-105.2057171, 39.6653917],
+    capacity: [
+      {
+        seats: 9525,
+        setup: 'concert',
+        note: 'Reported (CBS Colorado, citing venue). Older guide ~9,600 GA or ~8,700 reserved in the venue answer. Source: https://www.cbsnews.com/colorado/news/colorado-red-rocks-amphitheatre-2025-attendance-records',
+      },
+    ],
+    roof: 'open',
+  },
+  'levitt-pavilion-denver': {
+    id: 'levitt-pavilion-denver',
+    metroId: 'denver',
+    names: [{ name: 'Levitt Pavilion Denver' }],
+    location: [-105.0035678, 39.6867297],
+    capacity: [
+      {
+        seats: 7500,
+        setup: 'concert',
+        note: 'Official (Visit Denver): 7,500 lawn. Typical turnout often far lower. Only about 2,500 in the alcohol area (reported). Source: https://visitdenver.com/blog/post/levitt-pavilion-denver/',
+      },
+    ],
+    roof: 'open',
+  },
+  'magness-arena': {
+    id: 'magness-arena',
+    metroId: 'denver',
+    names: [{ name: 'Magness Arena' }, { name: 'Magness Arena at the Ritchie Center' }],
+    location: [-104.9616851, 39.6822661],
+    capacity: [
+      { seats: 6315, setup: 'hockey', note: 'Official (DU). Reported hockey 6,026 conflict in venue answer. Source: https://www.du.edu/du-events/auditoriums-gyms' },
+      { seats: 7200, setup: 'basketball', note: 'Reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Magness_Arena' },
+      // Concert capacity left blank: official range 6,500–7,200 only (BACKLOG).
+    ],
+    roof: 'indoor',
+  },
+  'bellco-theatre': {
+    id: 'bellco-theatre',
+    metroId: 'denver',
+    names: [
+      { name: 'Wells Fargo Theatre' },
+      { name: 'Bellco Theatre', from: '2012-12-01' },
+    ],
+    location: [-104.9978068, 39.7411728],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'concert',
+        note: 'Official (Visit Denver): 5,000 seats, divisible into thirds; a sectioned event may be well under 5,000. Source: https://visitdenver.com/meetings/convention-center/floor-plans/bellco-theatre/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'ccc-mile-high-ballroom': {
+    id: 'ccc-mile-high-ballroom',
+    metroId: 'denver',
+    names: [{ name: 'Mile High Ballroom' }, { name: 'Colorado Convention Center — Mile High Ballroom' }],
+    location: [-104.9976, 39.744],
+    // Convention room, not a performance room; reported 5,452 is not stored so it does not size friction (venue answer §2d).
+    capacity: [],
+    roof: 'indoor',
+  },
+  'mission-ballroom': {
+    id: 'mission-ballroom',
+    metroId: 'denver',
+    names: [{ name: 'Mission Ballroom' }],
+    location: [-104.9775, 39.7765],
+    // Round-2 rule: sourced only as a 2,200–3,950 range; blank (BACKLOG).
+    capacity: [],
+    roof: 'indoor',
+  },
+  'fillmore-auditorium-denver': {
+    id: 'fillmore-auditorium-denver',
+    metroId: 'denver',
+    names: [{ name: 'Fillmore Auditorium' }],
+    location: [-104.9771824, 39.7406349],
+    capacity: [
+      { seats: 3700, setup: 'concert', note: 'Reported 3,700 (CPR 2019); ~3,900 in a low-quality source. Both below 5,000. Source: https://www.cpr.org/2019/08/08/lumineers-burn-bright-on-opening-night-at-denvers-new-mission-ballroom/' },
+    ],
+    roof: 'indoor',
+  },
+  'paramount-theatre-denver': {
+    id: 'paramount-theatre-denver',
+    metroId: 'denver',
+    names: [{ name: 'Paramount Theatre' }],
+    location: [-104.9901606, 39.7442523],
+    capacity: [{ seats: 1870, setup: 'concert', note: 'Reported (Westword, 2018). Source: https://www.westword.com/music/denvers-biggest-venues-red-rocks-fiddlers-green-and-more-10218122/' }],
+    roof: 'indoor',
+  },
+  'ogden-theatre': {
+    id: 'ogden-theatre',
+    metroId: 'denver',
+    names: [{ name: 'Ogden Theatre' }],
+    location: [-104.9753154, 39.7403115],
+    capacity: [{ seats: 1600, setup: 'concert', note: 'Reported (Westword, 2018). Source: https://www.westword.com/music/denvers-biggest-venues-red-rocks-fiddlers-green-and-more-10218122/' }],
+    roof: 'indoor',
+  },
+  'gothic-theatre': {
+    id: 'gothic-theatre',
+    metroId: 'denver',
+    names: [{ name: 'Gothic Theatre' }],
+    location: [-104.9880211, 39.6576702],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Reported (Westword, 2018). Englewood. Source: https://www.westword.com/music/denvers-biggest-venues-red-rocks-fiddlers-green-and-more-10218122/' }],
+    roof: 'indoor',
+  },
+  'buell-theatre': {
+    id: 'buell-theatre',
+    metroId: 'denver',
+    names: [{ name: 'Buell Theatre' }],
+    location: [-104.9976, 39.744],
+    capacity: [{ seats: 2884, setup: 'concert', note: 'Reported. Denver Performing Arts Complex. Source: https://www.wikipedia.com/wiki/Buell_Theatre' }],
+    roof: 'indoor',
+  },
+  'boettcher-concert-hall': {
+    id: 'boettcher-concert-hall',
+    metroId: 'denver',
+    names: [{ name: 'Boettcher Concert Hall' }],
+    location: [-104.9976, 39.744],
+    capacity: [{ seats: 2679, setup: 'concert', note: 'Reported (~2,679). Renovation RFP Jul 2026; closure dates unknown. Source: https://news.nationgraph.com/articles/denver-finally-moving-to-renovate-boettcher-concert-hall-after-50-years' }],
+    roof: 'indoor',
+  },
+  'ellie-caulkins-opera-house': {
+    id: 'ellie-caulkins-opera-house',
+    metroId: 'denver',
+    names: [{ name: 'Ellie Caulkins Opera House' }],
+    location: [-104.9976, 39.744],
+    capacity: [{ seats: 2225, setup: 'concert', note: 'Reported. Source: https://www.wikipedia.com/wiki/Buell_Theatre' }],
+    roof: 'indoor',
+  },
+  'hamilton-gymnasium': {
+    id: 'hamilton-gymnasium',
+    metroId: 'denver',
+    names: [{ name: 'Hamilton Gymnasium' }, { name: 'Hamilton Gymnasium at the Ritchie Center' }],
+    location: [-104.9623912, 39.6824183],
+    capacity: [{ seats: 2000, setup: 'basketball', note: 'Official (DU). Source: https://www.du.edu/du-events/auditoriums-gyms' }],
+    roof: 'indoor',
+  },
+  'peter-barton-lacrosse-stadium': {
+    id: 'peter-barton-lacrosse-stadium',
+    metroId: 'denver',
+    names: [{ name: 'Peter Barton Lacrosse Stadium' }, { name: 'Peter Barton Stadium' }],
+    location: [-104.9620, 39.6815],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'soccer',
+        note: 'Reported (~2,000); PLL use may close sections. Coordinate approximate near DU lacrosse. Source: https://en.wikipedia.org/wiki/2026_Premier_Lacrosse_League_season',
+      },
+    ],
+    roof: 'open',
+  },
 };
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
 export function venueNameOn(venue: Venue, date: LocalDate): string {

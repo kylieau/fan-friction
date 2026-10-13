@@ -583,6 +583,18 @@ const LIST: Team[] = [
   team('varsity-blues-mbb', "Toronto Varsity Blues Men's Basketball", 'Varsity Blues MBB', 'U Sports basketball', 'basketball', 'toronto', 'VBB'),
   team('york-lions-football', 'York Lions Football', 'York Lions FB', 'U Sports football', 'football', 'toronto', 'YFB'),
   team('tmu-bold', 'TMU Bold', 'TMU Bold', 'U Sports', 'basketball', 'toronto', 'TMU'),
+  // Denver, covered Oct 13, 2026 (docs/research/city-builds/denver/). Feed ids checked against ESPN Oct 13, 2026.
+  // The Rockies and Rapids were visitor records; same ids, now home clubs.
+  team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball', 'denver', 'COL'),
+  team('rapids', 'Colorado Rapids', 'Rapids', 'MLS', 'soccer', 'denver', 'COL'),
+  team('broncos', 'Denver Broncos', 'Broncos', 'NFL', 'football', 'denver', 'DEN'),
+  team('nuggets', 'Denver Nuggets', 'Nuggets', 'NBA', 'basketball', 'denver', 'DEN'),
+  team('avalanche', 'Colorado Avalanche', 'Avalanche', 'NHL', 'hockey', 'denver', 'COL'),
+  team('colorado-mammoth', 'Colorado Mammoth', 'Mammoth', 'NLL', 'lacrosse', 'denver', 'COL', ['Mammoth']),
+  team('denver-summit-fc', 'Denver Summit FC', 'Summit FC', 'NWSL', 'soccer', 'denver', 'DEN', ['Denver Summit']),
+  team('du-mhockey', 'Denver Pioneers Hockey', 'DU Hockey', "College men's hockey", 'hockey', 'denver', 'DU', ['Denver', 'Pioneers']),
+  team('du-mbb', "Denver Pioneers Men's Basketball", 'DU MBB', "College men's basketball", 'basketball', 'denver', 'DU', ['Denver', 'Pioneers']),
+  team('du-wbb', "Denver Pioneers Women's Basketball", 'DU WBB', "College women's basketball", 'basketball', 'denver', 'DU', ['Denver', 'Pioneers']),
   // Ottawa–Gatineau (Oct 13, 2026; docs/research/city-builds/ottawa-gatineau/). Black Bears discontinued Sep 2026 — no record.
   team('ottawa-senators', 'Ottawa Senators', 'Senators', 'NHL', 'hockey', 'ottawa-gatineau', 'OTT', ['Centre Canadian Tire']),
   team('ottawa-redblacks', 'Ottawa Redblacks', 'Redblacks', 'CFL', 'football', 'ottawa-gatineau', 'REB'),
@@ -596,7 +608,6 @@ const LIST: Team[] = [
   team('carleton-ravens-football', 'Carleton Ravens Football', 'Ravens FB', 'U Sports football', 'football', 'ottawa-gatineau', 'CAR'),
   team('carleton-ravens-mbb', "Carleton Ravens Men's Basketball", 'Ravens MBB', 'U Sports basketball', 'basketball', 'ottawa-gatineau', 'CAR'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball', 'miami', 'MIA'),
-  team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
   team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball', 'portland', 'POR'),
   // Portland (Oct 13, 2026; docs/research/city-builds/portland/). ESPN, MLB and HockeyTech ids checked against live schedules.
   team('timbers', 'Portland Timbers', 'Timbers', 'MLS', 'soccer', 'portland', 'TIM'),
@@ -622,7 +633,6 @@ const LIST: Team[] = [
   team('uiw-wbb', "Incarnate Word Cardinals Women's Basketball", 'UIW WBB', "College women's basketball", 'basketball', 'san-antonio', 'UIW'),
   team('jets', 'Winnipeg Jets', 'Jets', 'NHL', 'hockey'),
   team('panthers', 'Florida Panthers', 'Panthers', 'NHL', 'hockey', 'miami', 'FLA'),
-  team('rapids', 'Colorado Rapids', 'Rapids', 'MLS', 'soccer'),
   // Mexico City (Oct 12, 2026; docs/research/city-builds/mexico-city/). ESPN ids checked Oct 12, 2026.
   // Cruz Azul was a visitor record; same id, now the home club. Puebla's Estadio Cuauhtémoc stays outside this metro.
   team('club-america', 'Club América', 'América', 'Liga MX', 'soccer', 'mexico-city', 'AME', ['Club America', 'America']),

@@ -1,0 +1,660 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "metroName": "Denver",
+  "timeZone": "America/Denver",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:38:07.026Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 14
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-14-espn-avalanche-401892505",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Avalanche vs. Stars",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18022,
+        "low": 18018,
+        "high": 18075,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-rapids-761871",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rapids vs. MNUFC",
+      "place": {
+        "type": "venue",
+        "venueId": "dicks-sporting-goods-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rapids",
+        "away": "minnesota"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15799,
+        "low": 15123,
+        "high": 16352,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 20 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-15-espn-broncos-401872995",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "start": "18:15",
+      "kind": "game",
+      "title": "Broncos vs. Seahawks",
+      "place": {
+        "type": "venue",
+        "venueId": "empower-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "broncos",
+        "away": "seahawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 74692,
+        "low": 71499,
+        "high": 75183,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-avalanche-401892517",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Avalanche vs. Penguins",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18108,
+        "low": 18085,
+        "high": 18133,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-du-mhockey-401904862",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Denver vs. Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "michigan"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-10-17-espn-du-mhockey-401904863",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "michigan"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-denver-summit-fc-401854092",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "start": "18:45",
+      "kind": "game",
+      "title": "Summit FC vs. Angel City",
+      "broadcast": "ION",
+      "place": {
+        "type": "venue",
+        "venueId": "centennial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "denver-summit-fc",
+        "away": "angel-city"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12372,
+        "low": 12322,
+        "high": 12372,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-avalanche-401892565",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Avalanche vs. Lightning",
+      "broadcast": "The Spot - MTN",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18108,
+        "low": 18085,
+        "high": 18133,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-du-mhockey-401904864",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Denver vs. Boston College",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "boston-college"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-denver-summit-fc-401854093",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Summit FC vs. Louisville",
+      "broadcast": "ION",
+      "place": {
+        "type": "venue",
+        "venueId": "centennial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "denver-summit-fc",
+        "away": "louisville"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12372,
+        "low": 12322,
+        "high": 12372,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-du-mhockey-401904865",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Boston College",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "boston-college"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-rapids-761897",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Rapids vs. Vancouver",
+      "place": {
+        "type": "venue",
+        "venueId": "dicks-sporting-goods-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rapids",
+        "away": "vancouver"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15896,
+        "low": 15130,
+        "high": 16393,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-nuggets-401909859",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Nuggets vs. Pelicans",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19763,
+        "low": 19735,
+        "high": 19854,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-nuggets-401909876",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Nuggets vs. Warriors",
+      "broadcast": "NBCSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19671,
+        "low": 19616,
+        "high": 19840,
+        "fromCrowds": true,
+        "games": 63,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 63 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-14-espn-avalanche-401892505",
+      "date": "2026-10-14",
+      "start": "18:30",
+      "read": {
+        "rating": 5.5,
+        "friction": "Low",
+        "why": "Rapids vs. MNUFC 7.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18022,
+        "low": 18018,
+        "high": 18075
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-rapids-761871",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 5.5,
+        "friction": "Heavy",
+        "why": "Rain in the forecast at a 7:30 pm start.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15799,
+        "low": 15123,
+        "high": 16352
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-broncos-401872995",
+      "date": "2026-10-15",
+      "start": "18:15",
+      "read": {
+        "rating": 1.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 74692,
+        "low": 71499,
+        "high": 75183
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-avalanche-401892517",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Denver vs. Michigan 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18108,
+        "low": 18085,
+        "high": 18133
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-du-mhockey-401904862",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Avalanche vs. Penguins 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-du-mhockey-401904863",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Summit FC vs. Angel City 6.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-denver-summit-fc-401854092",
+      "date": "2026-10-17",
+      "start": "18:45",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Denver vs. Michigan 6.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12372,
+        "low": 12322,
+        "high": 12372
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-avalanche-401892565",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Denver vs. Boston College 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18108,
+        "low": 18085,
+        "high": 18133
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-du-mhockey-401904864",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Avalanche vs. Lightning 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
+      "date": "2026-10-24",
+      "start": "16:30",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Rapids vs. Vancouver 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12372,
+        "low": 12322,
+        "high": 12372
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-du-mhockey-401904865",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Nuggets vs. Pelicans and Rapids vs. Vancouver 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-rapids-761897",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Summit FC vs. Louisville 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15896,
+        "low": 15130,
+        "high": 16393
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-nuggets-401909859",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Rapids vs. Vancouver and Summit FC vs. Louisville 7.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19763,
+        "low": 19735,
+        "high": 19854
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-nuggets-401909876",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19671,
+        "low": 19616,
+        "high": 19840
+      }
+    }
+  ]
+}

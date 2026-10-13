@@ -53017,5 +53017,251 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "draw": {
       "count": 11603
     }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-14-espn-avalanche-401892505",
+    "date": "2026-10-14",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 5.5,
+      "friction": "Low",
+      "why": "Rapids vs. MNUFC 7.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 18022,
+      "low": 18018,
+      "high": 18075
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-14-espn-rapids-761871",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 5.5,
+      "friction": "Heavy",
+      "why": "Rain in the forecast at a 7:30 pm start."
+    },
+    "draw": {
+      "count": 15799,
+      "low": 15123,
+      "high": 16352
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-15-espn-broncos-401872995",
+    "date": "2026-10-15",
+    "start": "18:15",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 74692,
+      "low": 71499,
+      "high": 75183
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-16-espn-avalanche-401892517",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Denver vs. Michigan 5.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 18108,
+      "low": 18085,
+      "high": 18133
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-16-espn-du-mhockey-401904862",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Avalanche vs. Penguins 5.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-17-espn-denver-summit-fc-401854092",
+    "date": "2026-10-17",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Denver vs. Michigan 6.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 12372,
+      "low": 12322,
+      "high": 12372
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-17-espn-du-mhockey-401904863",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Summit FC vs. Angel City 6.1 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-23-espn-avalanche-401892565",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Denver vs. Boston College 5.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 18108,
+      "low": 18085,
+      "high": 18133
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-23-espn-du-mhockey-401904864",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Avalanche vs. Lightning 5.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
+    "date": "2026-10-24",
+    "start": "16:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Rapids vs. Vancouver 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 12372,
+      "low": 12322,
+      "high": 12372
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-du-mhockey-401904865",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Nuggets vs. Pelicans and Rapids vs. Vancouver 5.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-nuggets-401909859",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Rapids vs. Vancouver and Summit FC vs. Louisville 7.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 19763,
+      "low": 19735,
+      "high": 19854
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-24-espn-rapids-761897",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Summit FC vs. Louisville 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 15896,
+      "low": 15130,
+      "high": 16393
+    }
+  },
+  {
+    "metroId": "denver",
+    "eventId": "2026-10-26-espn-nuggets-401909876",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:38:07.026Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19671,
+      "low": 19616,
+      "high": 19840
+    }
   }
 ];

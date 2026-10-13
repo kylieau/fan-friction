@@ -65552,6 +65552,1326 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 17518,
     "games": 4,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18102,
+    "low": 18077,
+    "high": 18130,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18087,
+    "low": 18084,
+    "high": 18114,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 15298,
+    "low": 15157,
+    "high": 15474,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18092,
+    "low": 18051,
+    "high": 18121,
+    "games": 70,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18083,
+    "low": 18047,
+    "high": 18112,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18129,
+    "low": 18118,
+    "high": 18143,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18110,
+    "low": 18080,
+    "high": 18124,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18103,
+    "low": 18095,
+    "high": 18138,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18022,
+    "low": 18018,
+    "high": 18075,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18080,
+    "low": 18044,
+    "high": 18100,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18069,
+    "low": 18024,
+    "high": 18111,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18108,
+    "low": 18085,
+    "high": 18133,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18136,
+    "low": 18117,
+    "high": 18142,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18129,
+    "low": 18094,
+    "high": 18135,
+    "games": 29,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18107,
+    "low": 18076,
+    "high": 18131,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18125,
+    "low": 18114,
+    "high": 18134,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18131,
+    "low": 18130,
+    "high": 18131,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18112,
+    "low": 18089,
+    "high": 18132,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18119,
+    "low": 18106,
+    "high": 18135,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18109,
+    "low": 18091,
+    "high": 18130,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18131,
+    "low": 18130,
+    "high": 18140,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 76108,
+    "low": 75408,
+    "high": 76337,
+    "games": 23,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 74215,
+    "low": 73981,
+    "high": 75257,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 69510,
+    "low": 63653,
+    "high": 75361,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 74692,
+    "low": 71499,
+    "high": 75183,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 76122,
+    "low": 75613,
+    "high": 76464,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 76006,
+    "low": 75047,
+    "high": 76311,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 76403,
+    "low": 76174,
+    "high": 76621,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "venueId": "empower-field",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 75555,
+    "low": 75408,
+    "high": 76026,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "denver-summit-fc",
+    "venueId": "centennial-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 12322,
+    "low": 11746,
+    "high": 12372,
+    "games": 6,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "denver-summit-fc",
+    "venueId": "centennial-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12372,
+    "low": 12322,
+    "high": 12372,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "denver-summit-fc",
+    "venueId": "dicks-sporting-goods-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 16883,
+    "low": 16408,
+    "high": 16943,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "all",
+    "month": null,
+    "count": 897,
+    "low": 586,
+    "high": 1054,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 818,
+    "low": 760,
+    "high": 1137,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 656,
+    "low": 535,
+    "high": 1031,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1008,
+    "low": 666,
+    "high": 1146,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 950,
+    "low": 809,
+    "high": 1057,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 525,
+    "low": 465,
+    "high": 589,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1028,
+    "low": 926,
+    "high": 1143,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1037,
+    "low": 954,
+    "high": 1137,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1033,
+    "low": 1015,
+    "high": 1177,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 897,
+    "low": 861,
+    "high": 984,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "all",
+    "month": null,
+    "count": 395,
+    "low": 340,
+    "high": 465,
+    "games": 30,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 371,
+    "low": 353,
+    "high": 392,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 372,
+    "low": 328,
+    "high": 381,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 363,
+    "low": 356,
+    "high": 380,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 392,
+    "low": 322,
+    "high": 429,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 324,
+    "low": 314,
+    "high": 504,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 465,
+    "low": 440,
+    "high": 553,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 450,
+    "low": 449,
+    "high": 553,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 479,
+    "low": 459,
+    "high": 528,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 504,
+    "low": 361,
+    "high": 726,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "venueId": "hamilton-gymnasium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 343,
+    "low": 301,
+    "high": 378,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19739,
+    "low": 19630,
+    "high": 19904,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19842,
+    "low": 19814,
+    "high": 19934,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17154,
+    "low": 16908,
+    "high": 17292,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19671,
+    "low": 19616,
+    "high": 19840,
+    "games": 63,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19734,
+    "low": 19676,
+    "high": 19837,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19628,
+    "low": 19616,
+    "high": 19651,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19814,
+    "low": 19624,
+    "high": 19836,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19793,
+    "low": 19647,
+    "high": 19907,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19657,
+    "low": 19556,
+    "high": 19816,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19731,
+    "low": 19636,
+    "high": 19887,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19844,
+    "low": 19659,
+    "high": 19946,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 19791,
+    "low": 19652,
+    "high": 19950,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 19844,
+    "low": 19808,
+    "high": 19915,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 19923,
+    "low": 19729,
+    "high": 19936,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 19794,
+    "low": 19720,
+    "high": 19844,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19833,
+    "low": 19665,
+    "high": 19955,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19854,
+    "low": 19760,
+    "high": 19919,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 19798,
+    "low": 19679,
+    "high": 19908,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19876,
+    "low": 19811,
+    "high": 19955,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19715,
+    "low": 19631,
+    "high": 19908,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 19638,
+    "low": 19629,
+    "high": 19727,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19758,
+    "low": 19613,
+    "high": 19902,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 15799,
+    "low": 15123,
+    "high": 16352,
+    "games": 20,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15896,
+    "low": 15130,
+    "high": 16393,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 15131,
+    "low": 14850,
+    "high": 15171,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 15694,
+    "low": 15398,
+    "high": 16003,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 15896,
+    "low": 15109,
+    "high": 16028,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 28516,
+    "low": 21755,
+    "high": 35115,
+    "games": 243,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 48366,
+    "low": 48191,
+    "high": 48383,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 22970,
+    "low": 18886,
+    "high": 27350,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18837,
+    "low": 18262,
+    "high": 19357,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 21009,
+    "low": 16021,
+    "high": 23169,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 28735,
+    "low": 25271,
+    "high": 34125,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 27707,
+    "low": 24273,
+    "high": 30545,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 24106,
+    "low": 20987,
+    "high": 29500,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 20112,
+    "low": 16773,
+    "high": 22024,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 32693,
+    "low": 28682,
+    "high": 38862,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 20750,
+    "low": 19493,
+    "high": 23503,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 30490,
+    "low": 28063,
+    "high": 33850,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 31851,
+    "low": 31717,
+    "high": 31935,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 40236,
+    "low": 39517,
+    "high": 45830,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 33028,
+    "low": 28622,
+    "high": 33401,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 39305,
+    "low": 32156,
+    "high": 45741,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 38166,
+    "low": 33672,
+    "high": 43324,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 28419,
+    "low": 25184,
+    "high": 35452,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 37531,
+    "low": 34943,
+    "high": 38460,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 36006,
+    "low": 33956,
+    "high": 38718,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 45765,
+    "low": 40035,
+    "high": 48207,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 39772,
+    "low": 36886,
+    "high": 46475,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 39768,
+    "low": 35432,
+    "high": 45477,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 30819,
+    "low": 26117,
+    "high": 36536,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 25887,
+    "low": 20925,
+    "high": 29420,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 35107,
+    "low": 33708,
+    "high": 38172,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 35591,
+    "low": 30873,
+    "high": 40045,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 26729,
+    "low": 25577,
+    "high": 29829,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 32226,
+    "low": 27431,
+    "high": 36329,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 32961,
+    "low": 29668,
+    "high": 37229,
+    "games": 7,
+    "seasons": "2024–2026"
   }
 ];
 
@@ -97550,6 +98870,797 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "warriors",
     "ratio": 1.001,
     "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "blue-jackets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 7
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "capitals",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "coyotes",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "devils",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "ducks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "flyers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "hurricanes",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "islanders",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "jets",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "kings",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "kraken",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "lightning",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "mammoth",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "maple-leafs",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "oilers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "panthers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "predators",
+    "ratio": 0.999,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "rangers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "red-wings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "stars",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "opponent": "wild",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "opponent": "browns",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "opponent": "chargers",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "opponent": "chiefs",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "opponent": "jaguars",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "opponent": "packers",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "broncos",
+    "opponent": "raiders",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "co-christian",
+    "ratio": 0.897,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "kansas-city",
+    "ratio": 1.036,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "n-dakota-st",
+    "ratio": 1.174,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "north-dakota",
+    "ratio": 0.967,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "omaha",
+    "ratio": 0.92,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "oral-roberts",
+    "ratio": 0.926,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "s-dakota-st",
+    "ratio": 0.93,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "south-dakota",
+    "ratio": 1.053,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "st-thomas",
+    "ratio": 1.123,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-mbb",
+    "opponent": "uc-col-springs",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "co-christian",
+    "ratio": 1.03,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "kansas-city",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "n-dakota-st",
+    "ratio": 0.966,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "north-dakota",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "omaha",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "oral-roberts",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "s-dakota-st",
+    "ratio": 1.107,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "south-dakota",
+    "ratio": 1.042,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "st-thomas",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "76ers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "bucks",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "bulls",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "cavaliers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "celtics",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "clippers",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "grizzlies",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "hawks",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "heat",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "hornets",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "jazz",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "knicks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "lakers",
+    "ratio": 1.005,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "magic",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "mavericks",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "nets",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "pacers",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "pelicans",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "pistons",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "rockets",
+    "ratio": 0.997,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "spurs",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "suns",
+    "ratio": 1.003,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "thunder",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "timberwolves",
+    "ratio": 1.004,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "trail-blazers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "opponent": "wizards",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "opponent": "dallas",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "opponent": "houston",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "opponent": "la-galaxy",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "opponent": "portland",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "opponent": "st-louis",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "astros",
+    "ratio": 0.923,
+    "games": 8
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "braves",
+    "ratio": 1.005,
+    "games": 9
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "brewers",
+    "ratio": 0.964,
+    "games": 10
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "cardinals",
+    "ratio": 0.979,
+    "games": 9
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "cubs",
+    "ratio": 1.093,
+    "games": 9
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "d-backs",
+    "ratio": 0.921,
+    "games": 19
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "dodgers",
+    "ratio": 1.313,
+    "games": 21
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "giants",
+    "ratio": 0.974,
+    "games": 18
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "guardians",
+    "ratio": 0.941,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "mariners",
+    "ratio": 0.975,
+    "games": 7
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "marlins",
+    "ratio": 0.853,
+    "games": 11
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "mets",
+    "ratio": 0.826,
+    "games": 10
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "nationals",
+    "ratio": 0.874,
+    "games": 10
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "orioles",
+    "ratio": 0.864,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "padres",
+    "ratio": 0.932,
+    "games": 20
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "phillies",
+    "ratio": 1.25,
+    "games": 10
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "pirates",
+    "ratio": 1.021,
+    "games": 9
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "rangers",
+    "ratio": 0.892,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "rays",
+    "ratio": 0.971,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "red-sox",
+    "ratio": 1.023,
+    "games": 6
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "reds",
+    "ratio": 0.922,
+    "games": 9
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "opponent": "royals",
+    "ratio": 1.001,
+    "games": 6
   }
 ];
 
@@ -103721,6 +105832,222 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.054,
     "games": 40,
     "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "band": "first",
+    "occupancy": 1.007,
+    "low": 1.005,
+    "high": 1.008,
+    "games": 11,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "band": "second",
+    "occupancy": 1.007,
+    "low": 1,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "2024, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "avalanche",
+    "venueId": "ball-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.044,
+    "games": 21,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "band": "first",
+    "occupancy": 1.014,
+    "low": 1.006,
+    "high": 1.025,
+    "games": 13,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "band": "second",
+    "occupancy": 1.023,
+    "low": 1.004,
+    "high": 1.026,
+    "games": 10,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "nuggets",
+    "venueId": "ball-arena",
+    "band": "final",
+    "occupancy": 1.001,
+    "low": 1,
+    "high": 1.049,
+    "games": 37,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "band": "first",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "empower-field",
+    "band": "first",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "band": "second",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "empower-field",
+    "band": "second",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "band": "conference",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "empower-field",
+    "band": "conference",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "dicks-sporting-goods-park",
+    "band": "final",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rapids",
+    "venueId": "empower-field",
+    "band": "final",
+    "occupancy": 0.944,
+    "low": 0.734,
+    "high": 1.038,
+    "games": 71,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "band": "first",
+    "occupancy": 0.987,
+    "low": 0.855,
+    "high": 1.112,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "band": "second",
+    "occupancy": 1.031,
+    "low": 0.954,
+    "high": 1.142,
+    "games": 66,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "band": "conference",
+    "occupancy": 1.026,
+    "low": 0.957,
+    "high": 1.135,
+    "games": 42,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "denver",
+    "teamId": "rockies",
+    "venueId": "coors-field",
+    "band": "final",
+    "occupancy": 1.043,
+    "low": 0.938,
+    "high": 1.14,
+    "games": 20,
+    "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   }
 ];

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-16",
+  "rows": [
+    {
+      "metroId": "denver",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:37:53.358Z",
+      "feelsLikeF": 53.7,
+      "tempF": 59.4,
+      "humidity": 28,
+      "windMph": 2.6,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 3,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "denver",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:37:53.358Z",
+      "feelsLikeHighF": 59.3,
+      "feelsLikeLowF": 37,
+      "code": 0,
+      "precipProbability": 38,
+      "precipMm": 0
+    }
+  ]
+}
