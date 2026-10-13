@@ -3400,7 +3400,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'chicago',
     names: [{ name: 'Impact Field' }],
     location: [-87.8711, 41.9781],
-    capacity: [{ seats: 6300, setup: 'baseball', note: 'Reported (a ballpark trade site), 5,526 fixed seats; Wikipedia says 8,300. A ~10,000 concert figure is unverified and not kept.' }],
+    capacity: [],
     roof: 'open',
   },
   'wintrust-field': {

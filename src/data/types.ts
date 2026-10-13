@@ -189,7 +189,7 @@ export interface CrowdEvent {
   place: Place;
   audience: Audience;
   /** For games. Ids point at Team records. */
-  teams?: { home: string; away: string };
+  teams?: { home: string; away: string; /** Listing slug for OPPONENT_RATIOS; ESPN sets this when away is our team id. */ awayOpponent?: string };
   /** For shows. */
   performer?: string;
   /** Pre-event facts for the occasion rule. Playoff round and game live in `stakes`. */

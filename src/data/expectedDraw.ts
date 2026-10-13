@@ -5,7 +5,7 @@
 
 import { EXPECTED_DRAWS, OPPONENT_RATIOS, POSTSEASON_DRAWS, SEASON_LEVELS } from './expectedDrawIndex';
 import { TEAMS } from './teams';
-import { CONCERT_FILL, VENUE_SHOW_AVERAGE, isHoliday, opponentKey, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow } from './expectedDrawBuild';
+import { CONCERT_FILL, VENUE_SHOW_AVERAGE, isHoliday, opponentKeyForVisitor, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow } from './expectedDrawBuild';
 import { VENUES, capacityOn } from './venues';
 import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
@@ -40,7 +40,8 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   // the event page, not per event (Kylie, Oct 7).
   const level = event.preseason ? undefined : SEASON_LEVELS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home);
   const away = event.teams.away;
-  const opp = event.preseason || !away ? undefined : OPPONENT_RATIOS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.opponent === opponentKey(away));
+  const oppKey = away ? opponentKeyForVisitor(away, event.teams.awayOpponent) : undefined;
+  const opp = event.preseason || !away ? undefined : OPPONENT_RATIOS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.opponent === oppKey);
   const k = (level?.level ?? 1) * (opp?.ratio ?? 1);
   return {
     count: Math.round(row.count * k),

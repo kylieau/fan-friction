@@ -1075,8 +1075,12 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     ...(broadcast ? { broadcast } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: t.sport },
-    // Away id matches TEAMS when we cover the visitor; otherwise the slug for opponent ratios (C11).
-    teams: { home: t.teamId, away: awayTeamId(away.team, t) },
+    // Away id matches TEAMS when we cover the visitor (C11); awayOpponent keeps draw ratios on listing slugs.
+    teams: {
+      home: t.teamId,
+      away: awayTeamId(away.team, t),
+      awayOpponent: slug(away.team.shortDisplayName ?? nameOf(away.team)),
+    },
     ...(c.neutralSite ? { neutralSite: true } : {}),
     crowd: [],
     sourceId: 'espn',
