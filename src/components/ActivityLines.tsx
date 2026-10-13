@@ -1,3 +1,4 @@
+import { TagChip } from './TagChip';
 import type { ReactNode } from 'react';
 import { ACTIVITY_WORDS, activityOrder, placeClause, type ActivityGroups, type ActivityKind } from '../lib/activity';
 import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
@@ -36,7 +37,22 @@ export function ActivityLines({ groups }: { groups: ActivityGroups }) {
  * Your own answer as one line (build notes 3, 4.4 and 4.7): "[ticket] Attending", "[TV] Watching · [lock] Private",
  * "[TV] Watched · [people] Friends · Home". A private watch never names its place (8.1, item 14).
  */
-export function StatusLine({ kind, share, place, crowd }: { kind: ActivityKind; share?: 'private' | 'friends'; place?: string; crowd?: ReactNode }) {
+export function StatusLine({
+  kind,
+  share,
+  place,
+  crowd,
+  tags,
+  tagsShown = 2,
+}: {
+  kind: ActivityKind;
+  share?: 'private' | 'friends';
+  place?: string;
+  crowd?: ReactNode;
+  /** Your own tags (build notes 4, T05): the first few as luggage chips, then "+N". Not on Interested. */
+  tags?: string[];
+  tagsShown?: number;
+}) {
   const watch = kind === 'watching' || kind === 'watched';
   return (
     <span className={`status-line status-${kind}`}>
@@ -56,6 +72,14 @@ export function StatusLine({ kind, share, place, crowd }: { kind: ActivityKind; 
         </>
       )}
       {crowd && !watch && <> · {crowd}</>}
+      {tags && tags.length > 0 && kind !== 'interested' && (
+        <span className="status-tags">
+          {tags.slice(0, tagsShown).map((tag) => (
+            <TagChip key={tag} tag={tag} />
+          ))}
+          {tags.length > tagsShown && <span className="status-tags-more">+{tags.length - tagsShown}</span>}
+        </span>
+      )}
     </span>
   );
 }

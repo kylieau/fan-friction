@@ -239,6 +239,7 @@ function StubRow({ entry, rating }: { entry: Entry; rating: number | null }) {
           kind={entry.watched ? 'watched' : 'attended'}
           share={share}
           place={place}
+          tags={entry.userTags}
           crowd={
             crowd && !entry.watched ? (
               <>
@@ -266,7 +267,7 @@ function PlanRow({ plan, rating }: { plan: Plan; rating: number | null }) {
       <span className="stub-main">
         <span className="stub-title">{plan.title}</span>
         {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
-        <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} />
+        <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} />
       </span>
       <ReadTile rating={rating} />
     </Link>

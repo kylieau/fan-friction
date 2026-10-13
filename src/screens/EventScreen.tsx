@@ -229,7 +229,16 @@ export function EventScreen() {
         <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
           + Stub it
         </button>
-        {you && <StatusLine kind={you.kind} share={youShare} place={you.place} />}
+        {you && (
+          <span className="event-status">
+            <StatusLine kind={you.kind} share={youShare} place={you.place} tags={youRow?.userTags} tagsShown={3} />
+            {you.kind !== 'interested' && (youRow?.userTags?.length ?? 0) > 0 && (
+              <button type="button" className="link-button" onClick={() => setSheet(true)}>
+                Edit
+              </button>
+            )}
+          </span>
+        )}
         {logged && <EntryLayer entry={logged} />}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}

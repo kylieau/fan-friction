@@ -6934,6 +6934,7 @@ button.back-link {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.35;
 }
 
 .tag-chip-x {
@@ -7079,4 +7080,27 @@ button.back-link {
   color: var(--fight);
   font-size: 14px;
   font-weight: 700;
+}
+
+/* Tags on a status line (build notes 4, T05): the first two, then +N; the row does not grow. */
+.status-tags {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  max-width: 100%;
+  margin-left: 4px;
+}
+
+.status-tags-more {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--fight);
+}
+
+.event-status {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 12px;
 }

@@ -1,8 +1,25 @@
-import { useState } from 'react';
-import { entryFieldsFor, isManualEntry, ownEntryFacts, removeEntry, setEntryPrivate, todayIn, updateEntry, updateManualEntry, type Entry, type EntryEdit } from '../data';
+import { useState, useSyncExternalStore } from 'react';
+import {
+  entryFieldsFor,
+  getPersonalLog,
+  isManualEntry,
+  ownEntryFacts,
+  removeEntry,
+  setEntryPrivate,
+  setRowTags,
+  subscribePersonalLog,
+  tagSummaries,
+  todayIn,
+  updateEntry,
+  updateManualEntry,
+  type Entry,
+  type EntryEdit,
+} from '../data';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { FactList } from './FactList';
+import { TagChip } from './TagChip';
+import { TagsPanel } from './TagsPanel';
 
 const LABELS: Record<keyof EntryEdit, string> = {
   review: 'Review',
@@ -19,7 +36,26 @@ const PRIVATE: (keyof EntryEdit)[] = ['with'];
  */
 export function EntryLayer({ entry }: { entry: Entry }) {
   const [editing, setEditing] = useState(false);
+  const [tagging, setTagging] = useState(false);
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   if (editing) return <EntryForm entry={entry} onDone={() => setEditing(false)} />;
+  if (tagging) {
+    return (
+      <section className="card entry-layer" aria-label="Your tags">
+        <TagsPanel
+          tags={entry.userTags ?? []}
+          onChange={(next) => setRowTags('entry', entry.id, next)}
+          onDone={() => setTagging(false)}
+          context={{
+            domain: entry.kind === 'game' ? 'sports' : entry.kind === 'show' || entry.kind === 'festival' ? 'concert' : 'other',
+            sport: entry.kind === 'game' ? entry.sport.toLowerCase() : undefined,
+            ahead: false,
+          }}
+          known={tagSummaries(log.added, log.plans)}
+        />
+      </section>
+    );
+  }
 
   const facts = ownEntryFacts(entry);
   const empty = !entry.review && facts.length === 0;
@@ -27,12 +63,40 @@ export function EntryLayer({ entry }: { entry: Entry }) {
     <section className="card entry-layer" aria-label="Your entry">
       {entry.review && <p className="entry-review">{entry.review}</p>}
       <FactList facts={facts} />
+      {/* A listed event edits its tags in the + Stub it sheet; a hand-added entry has no sheet, so its page carries the row. */}
+      {isManualEntry(entry) && (
+        <div className="stub-tags-row" role="group" aria-label="Tags">
+          <span className="stub-tags-label">Tags</span>
+          {(entry.userTags ?? []).map((tag) => (
+            <TagChip
+              key={tag}
+              tag={tag}
+              onRemove={() =>
+                setRowTags(
+                  'entry',
+                  entry.id,
+                  (entry.userTags ?? []).filter((t) => t !== tag),
+                )
+              }
+            />
+          ))}
+          <button type="button" className="stub-tags-add" onClick={() => setTagging(true)}>
+            + Add tag
+          </button>
+        </div>
+      )}
       <span className="entry-layer-actions">
         <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
           {empty ? 'Add a review, who you went with…' : 'Edit'}
         </button>
         {/* One entry can stay private whatever the visibility switch says (build notes 2, section 4). */}
-        <button type="button" className="link-button entry-private" role="switch" aria-checked={Boolean(entry.private)} onClick={() => setEntryPrivate(entry.id, !entry.private)}>
+        <button
+          type="button"
+          className="link-button entry-private"
+          role="switch"
+          aria-checked={Boolean(entry.private)}
+          onClick={() => setEntryPrivate(entry.id, !entry.private)}
+        >
           {entry.private ? 'Private · only you' : 'Keep this one private'}
         </button>
       </span>
@@ -42,9 +106,7 @@ export function EntryLayer({ entry }: { entry: Entry }) {
 
 function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
   const fields = entryFieldsFor(entry.kind);
-  const [draft, setDraft] = useState<EntryEdit>(() =>
-    Object.fromEntries(fields.map((key) => [key, entry[key] ?? ''])) as EntryEdit,
-  );
+  const [draft, setDraft] = useState<EntryEdit>(() => Object.fromEntries(fields.map((key) => [key, entry[key] ?? ''])) as EntryEdit);
   const set = (key: keyof EntryEdit, value: string) => setDraft((d) => ({ ...d, [key]: value }));
   // A hand-typed entry's facts open too (3.14); a catalog entry's stay locked.
   const manual = isManualEntry(entry);
@@ -69,11 +131,24 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
         <>
           <label className="field">
             <span className="field-label">What</span>
-            <input className="account-input" value={facts.title} onChange={(e) => setFacts((f) => ({ ...f, title: e.target.value }))} maxLength={120} required />
+            <input
+              className="account-input"
+              value={facts.title}
+              onChange={(e) => setFacts((f) => ({ ...f, title: e.target.value }))}
+              maxLength={120}
+              required
+            />
           </label>
           <label className="field">
             <span className="field-label">When</span>
-            <input className="account-input" type="date" value={facts.date} max={latest} onChange={(e) => setFacts((f) => ({ ...f, date: e.target.value }))} required />
+            <input
+              className="account-input"
+              type="date"
+              value={facts.date}
+              max={latest}
+              onChange={(e) => setFacts((f) => ({ ...f, date: e.target.value }))}
+              required
+            />
             {dateAhead && <span className="field-error">A date ahead is a plan, not an entry.</span>}
           </label>
           <label className="field">
@@ -119,7 +194,17 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
 }
 
 /** "Remove from log?" with Keep and Remove. The one confirm before an entry leaves the log (C054). */
-export function RemoveConfirm({ onKeep, onRemove, compact = false, stamped = false }: { onKeep: () => void; onRemove: () => void; compact?: boolean; stamped?: boolean }) {
+export function RemoveConfirm({
+  onKeep,
+  onRemove,
+  compact = false,
+  stamped = false,
+}: {
+  onKeep: () => void;
+  onRemove: () => void;
+  compact?: boolean;
+  stamped?: boolean;
+}) {
   // One line says the stamped read leaves with the entry (R16); a new mark later gets whatever reads then.
   return (
     <div className={`remove-confirm${compact ? ' compact' : ''}`} role="group" aria-label="Remove from log?">
