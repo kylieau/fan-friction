@@ -7,6 +7,7 @@ import {
   removeEntry,
   setEntryPrivate,
   setRowTags,
+  setEntrySeats,
   subscribePersonalLog,
   tagSummaries,
   todayIn,
@@ -20,6 +21,7 @@ import { getHomeId } from '../lib/homeCity';
 import { FactList } from './FactList';
 import { TagChip } from './TagChip';
 import { TagsPanel } from './TagsPanel';
+import { SeatsRow } from './SeatsRow';
 
 const LABELS: Record<keyof EntryEdit, string> = {
   review: 'Review',
@@ -85,6 +87,7 @@ export function EntryLayer({ entry }: { entry: Entry }) {
           </button>
         </div>
       )}
+      {isManualEntry(entry) && !entry.watched && entry.kind !== 'live-broadcast' && <SeatsRow seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
       <span className="entry-layer-actions">
         <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
           {empty ? 'Add a review, who you went with…' : 'Edit'}

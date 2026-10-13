@@ -450,6 +450,14 @@ export interface LoggedWhen {
   precision: DatePrecision;
 }
 
+/** Where you were in the room: a general-admission area, or a section, row and seat. Every part is optional. */
+export interface Seats {
+  area?: 'GA' | 'Floor' | 'Pit';
+  section?: string;
+  row?: string;
+  seat?: string;
+}
+
 /** One night she went to. Not a map dot, and not limited to events over 5k. */
 export interface Entry {
   id: string;
@@ -461,6 +469,8 @@ export interface Entry {
   tags: string[];
   /** Your own free-form tags (build notes 4, T01–T13): lowercase, up to 24 characters. Follow this stub's privacy. */
   userTags?: string[];
+  /** Where you sat or stood (build notes 4, "Seats are a separate optional structured field"). Attended stubs only. */
+  seats?: Seats;
   /**
    * Type name used for filters. A game uses the sport (Baseball, Women's basketball).
    * A show uses "Concerts". This is not a sports-only field.

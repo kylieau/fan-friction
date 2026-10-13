@@ -12,7 +12,8 @@ import { onAccountChange, tookDeliberateSignOut } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
-import { normalizeTags, retag } from './stubTags';
+import { normalizeSeats, normalizeTags, retag } from './stubTags';
+import type { Seats } from './types';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
@@ -771,7 +772,16 @@ export function markWatched(event: CrowdEvent) {
   const existing = snapshot.added.find((entry) => entry.eventId === event.id);
   if (existing) {
     if (existing.watched) return;
-    commit({ ...snapshot, added: snapshot.added.map((entry) => (entry.id === existing.id ? { ...entry, watched: true } : entry)) });
+    // Watched is not in person: seats do not go with it.
+    commit({
+      ...snapshot,
+      added: snapshot.added.map((entry) => {
+        if (entry.id !== existing.id) return entry;
+        const { seats: _seats, ...rest } = entry;
+        void _seats;
+        return { ...rest, watched: true };
+      }),
+    });
     return;
   }
   commit({ ...snapshot, added: [...snapshot.added, freshEntry(event, true)] });
@@ -1097,5 +1107,22 @@ export function deleteTag(tag: string) {
     ...snapshot,
     added: retag(snapshot.added, (t) => (t === tag ? null : t)),
     plans: retag(snapshot.plans, (t) => (t === tag ? null : t)),
+  });
+}
+
+/**
+ * Where you sat, on an Attended stub (build notes 4). Never on a watched entry or a live broadcast:
+ * those are not in person. Empty parts are dropped; an empty set removes the field.
+ */
+export function setEntrySeats(entryId: string, seats: Seats | undefined) {
+  const next = normalizeSeats(seats);
+  commit({
+    ...snapshot,
+    added: snapshot.added.map((entry) => {
+      if (entry.id !== entryId || entry.watched || entry.kind === 'live-broadcast') return entry;
+      const { seats: _old, ...rest } = entry;
+      void _old;
+      return next ? { ...rest, seats: next } : rest;
+    }),
   });
 }

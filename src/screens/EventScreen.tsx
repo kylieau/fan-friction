@@ -11,6 +11,7 @@ import {
   drawSize,
   feelsLikeLabel,
   isOpenAir,
+  seatsLine,
   priceLine,
   sizeTier,
   ticketPrice,
@@ -240,6 +241,7 @@ export function EventScreen() {
             )}
           </span>
         )}
+        {logged?.seats && !logged.watched && <span className="event-seats">{seatsLine(logged.seats)}</span>}
         {logged && <EntryLayer entry={logged} />}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}

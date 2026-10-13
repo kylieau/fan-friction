@@ -7374,3 +7374,65 @@ button.back-link {
   margin: 4px 12px;
   background: var(--line);
 }
+
+/* Seats (build notes 4): a quiet row, then an inline editor; labels above equal fields. */
+.stub-seats-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+}
+
+.stub-seats-line {
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.stub-seats-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stub-seats-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seat-fields {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 8px;
+}
+
+.seat-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.seat-field-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+
+.seat-field .account-input {
+  min-height: 44px;
+  text-transform: uppercase;
+}
+
+.event-seats {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+}

@@ -2,7 +2,7 @@
 // Kept on the stub's own row as `userTags`, so they follow that stub's privacy (T01). Not `tags`: that
 // field holds the system labels (team, side, "Concerts") that Stats and the Stubs filter read.
 
-import type { Entry, Plan } from './types';
+import type { Entry, Plan, Seats } from './types';
 
 /** Longest tag, in characters (T04). Rows end a long one in an ellipsis; the tag page shows it in full. */
 export const TAG_MAX = 24;
@@ -79,4 +79,34 @@ export function retag<T extends { userTags?: string[] }>(rows: readonly T[], ren
     void _old;
     return (next.length > 0 ? { ...rest, userTags: next } : rest) as T;
   });
+}
+
+// ---------- Seats (build notes 4, "Stub tags: suggestions" 7) ----------
+
+
+/** Longest section, row and seat: "Loge 132", "AA", "4–5". */
+export const SEAT_LIMITS = { section: 16, row: 6, seat: 6 } as const;
+
+/** Seats as they are stored: trimmed, capitals, capped; undefined when every part is empty. */
+export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
+  if (!raw) return undefined;
+  const clean = (value: string | undefined, max: number) => {
+    const text = (value ?? '').trim().replace(/\s+/g, ' ').toUpperCase().slice(0, max).trim();
+    return text.length > 0 ? text : undefined;
+  };
+  const out: Seats = {};
+  if (raw.area === 'GA' || raw.area === 'Floor' || raw.area === 'Pit') out.area = raw.area;
+  const section = clean(raw.section, SEAT_LIMITS.section);
+  const row = clean(raw.row, SEAT_LIMITS.row);
+  const seat = clean(raw.seat, SEAT_LIMITS.seat);
+  if (section) out.section = section;
+  if (row) out.row = row;
+  if (seat) out.seat = seat;
+  return Object.keys(out).length > 0 ? out : undefined;
+}
+
+/** "Sec 112 · Row 8 · Seat 4", "Floor · Row 3", "GA". */
+export function seatsLine(seats: Seats | undefined): string {
+  if (!seats) return '';
+  return [seats.area, seats.section && `Sec ${seats.section}`, seats.row && `Row ${seats.row}`, seats.seat && `Seat ${seats.seat}`].filter(Boolean).join(' · ');
 }

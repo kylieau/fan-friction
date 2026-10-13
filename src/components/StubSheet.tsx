@@ -9,6 +9,7 @@ import {
   recentWatchPlaces,
   setWatchDetails,
   setRowTags,
+  setEntrySeats,
   tagSummaries,
   subscribeAccount,
   subscribePersonalLog,
@@ -29,6 +30,7 @@ import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons'
 import { RemoveConfirm } from './EntryLayer';
 import { TagChip } from './TagChip';
 import { TagsPanel } from './TagsPanel';
+import { SeatsRow } from './SeatsRow';
 
 /**
  * The "+ Stub it" sheet (build notes 3, 4.7; mock docs/design/build3/7-stub-it-sheet.png): one sheet for
@@ -266,7 +268,8 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                 </button>
               </div>
             )}
-            <button type="button" className="gold-button stub-done" onClick={onClose}>
+            {kind === 'attended' && entry && entry.kind !== 'live-broadcast' && <SeatsRow seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
+        <button type="button" className="gold-button stub-done" onClick={onClose}>
               Done
             </button>
           </>
