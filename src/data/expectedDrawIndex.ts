@@ -47192,6 +47192,2082 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 26031,
     "games": 5,
     "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 25554,
+    "low": 19700,
+    "high": 30365,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18466,
+    "low": 17072,
+    "high": 25052,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 25554,
+    "low": 20392,
+    "high": 30186,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 23893,
+    "low": 19158,
+    "high": 32520,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 30241,
+    "low": 29044,
+    "high": 31037,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "venueId": "wallace-wade-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 21754,
+    "low": 20194,
+    "high": 23650,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 9314,
+    "low": 9314,
+    "high": 9314,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "venueId": "madison-square-garden",
+    "dayClass": "all",
+    "month": null,
+    "count": 19327,
+    "low": 18920,
+    "high": 19570,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 2550,
+    "low": 2328,
+    "high": 3664,
+    "games": 25,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2471,
+    "low": 2147,
+    "high": 3020,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3020,
+    "low": 2471,
+    "high": 4951,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2140,
+    "low": 2058,
+    "high": 2144,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2493,
+    "low": 2131,
+    "high": 3682,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3078,
+    "low": 2526,
+    "high": 3954,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 3722,
+    "low": 3038,
+    "high": 4358,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "venueId": "cameron-indoor-stadium",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 3078,
+    "low": 3003,
+    "high": 3664,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 6374,
+    "low": 4915,
+    "high": 7672,
+    "games": 224,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7375,
+    "low": 7347,
+    "high": 7660,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4863,
+    "low": 4076,
+    "high": 5931,
+    "games": 103,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 5638,
+    "low": 4053,
+    "high": 6984,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 5192,
+    "low": 3984,
+    "high": 5814,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 4914,
+    "low": 4308,
+    "high": 6098,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 4433,
+    "low": 3799,
+    "high": 4889,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 4582,
+    "low": 4032,
+    "high": 5290,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 5149,
+    "low": 4410,
+    "high": 6745,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7553,
+    "low": 7137,
+    "high": 8121,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 7786,
+    "low": 7180,
+    "high": 8372,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 7154,
+    "low": 6865,
+    "high": 7806,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 7343,
+    "low": 7146,
+    "high": 7530,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 7780,
+    "low": 7402,
+    "high": 8145,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 7634,
+    "low": 7282,
+    "high": 7995,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 9119,
+    "low": 8363,
+    "high": 9144,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8401,
+    "low": 7390,
+    "high": 9060,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 7484,
+    "low": 6971,
+    "high": 8312,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 8394,
+    "low": 6682,
+    "high": 8947,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 8491,
+    "low": 8119,
+    "high": 9019,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 8509,
+    "low": 8145,
+    "high": 10184,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 8181,
+    "low": 7694,
+    "high": 8868,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 8876,
+    "low": 6637,
+    "high": 9115,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6472,
+    "low": 5591,
+    "high": 7272,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 5971,
+    "low": 5591,
+    "high": 6489,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 6573,
+    "low": 5758,
+    "high": 7011,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 7141,
+    "low": 6627,
+    "high": 7582,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 5620,
+    "low": 5105,
+    "high": 5714,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 6820,
+    "low": 5910,
+    "high": 7137,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "venueId": "durham-bulls-athletic-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 7410,
+    "low": 6584,
+    "high": 7969,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18700,
+    "low": 18503,
+    "high": 18825,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18817,
+    "low": 18611,
+    "high": 18855,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 14875,
+    "low": 14068,
+    "high": 16593,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18700,
+    "low": 18498,
+    "high": 18758,
+    "games": 56,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18700,
+    "low": 18302,
+    "high": 18750,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18700,
+    "low": 18599,
+    "high": 18715,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18700,
+    "low": 18641,
+    "high": 18780,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18712,
+    "low": 18567,
+    "high": 18867,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18700,
+    "low": 18299,
+    "high": 18700,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18700,
+    "low": 18500,
+    "high": 18753,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18700,
+    "low": 18311,
+    "high": 18700,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18747,
+    "low": 18700,
+    "high": 18819,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18763,
+    "low": 18605,
+    "high": 18829,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18557,
+    "low": 18309,
+    "high": 18832,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18803,
+    "low": 18353,
+    "high": 18908,
+    "games": 30,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18718,
+    "low": 18321,
+    "high": 18903,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18965,
+    "low": 18920,
+    "high": 18992,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18876,
+    "low": 18728,
+    "high": 18935,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18500,
+    "low": 18299,
+    "high": 18727,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18797,
+    "low": 18321,
+    "high": 18825,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18700,
+    "low": 18663,
+    "high": 18796,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18891,
+    "low": 18820,
+    "high": 18894,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18700,
+    "low": 18700,
+    "high": 18717,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18748,
+    "low": 18600,
+    "high": 18796,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "venueId": "lenovo-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18503,
+    "low": 18304,
+    "high": 18700,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 7130,
+    "low": 7021,
+    "high": 8569,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7126,
+    "low": 7016,
+    "high": 8545,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 7018,
+    "low": 6627,
+    "high": 7034,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 9695,
+    "low": 9173,
+    "high": 10025,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 7133,
+    "low": 7130,
+    "high": 7930,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "venueId": "first-horizon-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 7122,
+    "low": 7116,
+    "high": 7586,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "venueId": "carter-finley-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 56919,
+    "low": 56919,
+    "high": 56919,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 14516,
+    "low": 12594,
+    "high": 16105,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 12949,
+    "low": 12719,
+    "high": 16034,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 13456,
+    "low": 12069,
+    "high": 15013,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 13836,
+    "low": 13515,
+    "high": 15636,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 12066,
+    "low": 11032,
+    "high": 14416,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19367,
+    "low": 15453,
+    "high": 19434,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 13471,
+    "low": 12242,
+    "high": 14588,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 12976,
+    "low": 12248,
+    "high": 13676,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12887,
+    "low": 12498,
+    "high": 13894,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 12887,
+    "low": 12498,
+    "high": 13894,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15411,
+    "low": 14279,
+    "high": 16886,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 15850,
+    "low": 13851,
+    "high": 16261,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 15299,
+    "low": 14880,
+    "high": 16967,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "lenovo-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 14862,
+    "low": 12594,
+    "high": 16105,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 5500,
+    "low": 4927,
+    "high": 5500,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5500,
+    "low": 4582,
+    "high": 5500,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4368,
+    "low": 4287,
+    "high": 4441,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5145,
+    "low": 4700,
+    "high": 5500,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 5500,
+    "low": 5500,
+    "high": 5500,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "venueId": "reynolds-coliseum",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 5500,
+    "low": 5145,
+    "high": 5500,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 7225,
+    "low": 5465,
+    "high": 9462,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 12800,
+    "low": 9828,
+    "high": 13600,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7225,
+    "low": 5500,
+    "high": 11632,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "venueId": "o-kelly-riddick-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 5500,
+    "low": 3818,
+    "high": 8618,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1263,
+    "low": 391,
+    "high": 2162,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1471,
+    "low": 954,
+    "high": 1507,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1264,
+    "low": 362,
+    "high": 2057,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2162,
+    "low": 1389,
+    "high": 2370,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1900,
+    "low": 1397,
+    "high": 2128,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 1362,
+    "low": 1194,
+    "high": 1996,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1264,
+    "low": 704,
+    "high": 1276,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 195,
+    "low": 158,
+    "high": 364,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1286,
+    "low": 742,
+    "high": 2469,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1850,
+    "low": 1328,
+    "high": 2318,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2143,
+    "low": 1322,
+    "high": 2754,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 704,
+    "low": 363,
+    "high": 1421,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 592,
+    "low": 343,
+    "high": 953,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 587,
+    "low": 225,
+    "high": 898,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 537,
+    "low": 228,
+    "high": 867,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 378,
+    "low": 145,
+    "high": 685,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 382,
+    "low": 278,
+    "high": 725,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 749,
+    "low": 498,
+    "high": 1048,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1113,
+    "low": 845,
+    "high": 1463,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "venueId": "mcdougald-mclendon-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 521,
+    "low": 431,
+    "high": 580,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 50500,
+    "low": 47667,
+    "high": 50500,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 50500,
+    "low": 49466,
+    "high": 50500,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 50500,
+    "low": 47667,
+    "high": 50500,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 47996,
+    "low": 45406,
+    "high": 50500,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 50500,
+    "low": 48267,
+    "high": 50500,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "venueId": "kenan-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 50500,
+    "low": 48898,
+    "high": 50500,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 20753,
+    "low": 19594,
+    "high": 21750,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17242,
+    "low": 16661,
+    "high": 17287,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20577,
+    "low": 19859,
+    "high": 20892,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 20031,
+    "low": 19686,
+    "high": 20298,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 20689,
+    "low": 20577,
+    "high": 21027,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16869,
+    "low": 16741,
+    "high": 18813,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 20549,
+    "low": 19496,
+    "high": 20901,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19555,
+    "low": 18226,
+    "high": 21750,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18891,
+    "low": 18050,
+    "high": 20104,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 21750,
+    "low": 21750,
+    "high": 21750,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18720,
+    "low": 18255,
+    "high": 19336,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "venueId": "dean-smith-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18608,
+    "low": 18596,
+    "high": 19284,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 2920,
+    "low": 2417,
+    "high": 3681,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2659,
+    "low": 2453,
+    "high": 3089,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3320,
+    "low": 2892,
+    "high": 3808,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2502,
+    "low": 2476,
+    "high": 2763,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2249,
+    "low": 2037,
+    "high": 2533,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3139,
+    "low": 2417,
+    "high": 4600,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 3476,
+    "low": 3076,
+    "high": 4313,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "venueId": "carmichael-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 2415,
+    "low": 2381,
+    "high": 2622,
+    "games": 5,
+    "seasons": "2025–2026"
   }
 ];
 
@@ -47532,6 +49608,20 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.063,
     "games": 11
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "season": 2026,
+    "level": 0.801,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "season": 2026,
+    "level": 1,
+    "games": 4
   }
 ];
 
@@ -70152,6 +72242,804 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "vancouver-whitecaps",
     "opponent": "toronto",
     "ratio": 1.03,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "opponent": "elon",
+    "ratio": 0.841,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "opponent": "nc-state",
+    "ratio": 1.08,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
+    "opponent": "wake-forest",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "boston-college",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "clemson",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "georgia-tech",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "louisville",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "notre-dame",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "pitt",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "syracuse",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "virginia",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-wbb",
+    "opponent": "north-carolina",
+    "ratio": 1.503,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "ironpigs",
+    "ratio": 0.923,
+    "games": 12
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "jumbo-shrimp",
+    "ratio": 0.992,
+    "games": 30
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "knights",
+    "ratio": 0.992,
+    "games": 21
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "railriders",
+    "ratio": 1.081,
+    "games": 12
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "redbirds",
+    "ratio": 0.948,
+    "games": 30
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "sounds",
+    "ratio": 0.957,
+    "games": 36
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "stripers",
+    "ratio": 0.971,
+    "games": 31
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "durham-bulls",
+    "opponent": "tides",
+    "ratio": 1.006,
+    "games": 31
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "avalanche",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "blackhawks",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "blue-jackets",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "blues",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "bruins",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "canadiens",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "canucks",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "capitals",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "devils",
+    "ratio": 0.994,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "ducks",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "flames",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "flyers",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "golden-knights",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "islanders",
+    "ratio": 0.994,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "jets",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "kings",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "kraken",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "lightning",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "maple-leafs",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "oilers",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "panthers",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "penguins",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "predators",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "rangers",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "red-wings",
+    "ratio": 0.992,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "sabres",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "senators",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "sharks",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "stars",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "hurricanes",
+    "opponent": "wild",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "bay",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "chicago",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "houston",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "kansas-city",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "louisville",
+    "ratio": 1.038,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "orlando",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "portland",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "seattle",
+    "ratio": 1.018,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "utah",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-courage",
+    "opponent": "washington",
+    "ratio": 1.08,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "opponent": "louisville",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-football",
+    "opponent": "wake-forest",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "boston-college",
+    "ratio": 0.956,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "duke",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "georgia-tech",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "miami",
+    "ratio": 1.05,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1.208,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "pitt",
+    "ratio": 0.864,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "syracuse",
+    "ratio": 1.045,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "virginia",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "virginia-tech",
+    "ratio": 1.074,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1.021,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "opponent": "coastal",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nc-state-wbb",
+    "opponent": "wake-forest",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-football",
+    "opponent": "nc-a-t",
+    "ratio": 1.231,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "carolina-u",
+    "ratio": 0.44,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "coppin-st",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "delaware-st",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "howard",
+    "ratio": 1.021,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "longwood",
+    "ratio": 0.747,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "md-eastern",
+    "ratio": 0.605,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "mid-atl-chrstn",
+    "ratio": 0.907,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "morgan-st",
+    "ratio": 0.778,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "norfolk-st",
+    "ratio": 0.818,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "sc-state",
+    "ratio": 1.261,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "st-andrews",
+    "ratio": 0.781,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-mbb",
+    "opponent": "va-lynchburg",
+    "ratio": 0.57,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "coppin-st",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "delaware-st",
+    "ratio": 1.262,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "howard",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "md-eastern",
+    "ratio": 0.81,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "morgan-st",
+    "ratio": 1.162,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "norfolk-st",
+    "ratio": 0.776,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "nccu-wbb",
+    "opponent": "sc-state",
+    "ratio": 1.204,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "opponent": "duke",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-football",
+    "opponent": "virginia",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "clemson",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "duke",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "florida-st",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "louisville",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "miami",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "nc-state",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "notre-dame",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "pitt",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "radford",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "syracuse",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "virginia-tech",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "duke",
+    "ratio": 1.247,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "nc-central",
+    "ratio": 1.235,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "unc-greensboro",
+    "ratio": 0.933,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-wbb",
+    "opponent": "unc-wilmington",
+    "ratio": 0.935,
     "games": 2
   }
 ];
