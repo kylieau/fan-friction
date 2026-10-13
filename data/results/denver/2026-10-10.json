@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-avalanche-401892478",
+      "metroId": "denver",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 3
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 6
+      },
+      "attendance": 18091,
+      "capturedAt": "2026-10-13T07:38:07.898Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:16"
+    },
+    {
+      "eventId": "2026-10-10-espn-rapids-761857",
+      "metroId": "denver",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dicks-sporting-goods-park",
+      "homeTeamId": "rapids",
+      "home": {
+        "name": "Rapids",
+        "score": 1
+      },
+      "away": {
+        "name": "Earthquakes",
+        "score": 1
+      },
+      "capturedAt": "2026-10-13T07:38:07.898Z"
+    }
+  ]
+}

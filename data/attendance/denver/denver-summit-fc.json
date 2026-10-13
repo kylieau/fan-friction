@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "teamId": "denver-summit-fc",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "12:00",
+      "opponent": "Washington",
+      "venueId": "empower-field",
+      "attendance": 63004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "18:45",
+      "opponent": "San Diego",
+      "venueId": "dicks-sporting-goods-park",
+      "attendance": 16932,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:45",
+      "opponent": "Orlando",
+      "venueId": "dicks-sporting-goods-park",
+      "attendance": 16974,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "19:30",
+      "opponent": "Kansas City",
+      "venueId": "dicks-sporting-goods-park",
+      "attendance": 16833,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "17:00",
+      "opponent": "Houston",
+      "venueId": "dicks-sporting-goods-park",
+      "attendance": 15131,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "12:15",
+      "opponent": "Portland",
+      "venueId": "centennial-stadium",
+      "attendance": 12372,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "19:00",
+      "opponent": "Boston",
+      "venueId": "centennial-stadium",
+      "attendance": 12380,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "20:00",
+      "opponent": "North Carolina",
+      "venueId": "centennial-stadium",
+      "attendance": 11008,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "18:55",
+      "opponent": "Chicago",
+      "venueId": "centennial-stadium",
+      "attendance": 12372,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "19:30",
+      "opponent": "Bay",
+      "venueId": "centennial-stadium",
+      "attendance": 11571,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "denver-summit-fc",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "18:45",
+      "opponent": "Seattle",
+      "venueId": "centennial-stadium",
+      "attendance": 12272,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
