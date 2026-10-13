@@ -87,6 +87,8 @@ const SCALE = 7.5;
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
+// Edmonton is a hub (research, Oct 12, 2026, docs/research/city-builds/edmonton/edmonton-city-type-answer.md): LRT-linked
+// downtown and Commonwealth/EXPO clusters. Estimated car shares for Rogers Place and Commonwealth are wired on those rooms (C04, Oct 12).
 // Ottawa–Gatineau is a hub (research, Oct 12, 2026, docs/research/city-builds/ottawa-gatineau/ottawa-gatineau-city-type-answer.md):
 // Kanata is car-dominant while Lansdowne and LeBreton run much lower; venue carShare overrides carry the sourced estimates.
 // Indianapolis is sprawl (research, Oct 12, 2026, docs/research/city-builds/indianapolis/indianapolis-city-type-answer.md):
@@ -94,7 +96,7 @@ const SCALE = 7.5;
 // Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
 // downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
 // values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -297,6 +299,11 @@ const ZONE_NAMES: Record<string, string> = {
   'caesars-superdome': 'Superdome complex',
   'smoothie-king-center': 'Superdome complex',
   'anderson-arena': 'St. Thomas',
+  'rogers-place': 'ICE District',
+  'downtown-community-arena': 'ICE District',
+  'commonwealth-stadium': 'Exhibition Lands',
+  'clarke-stadium': 'Exhibition Lands',
+  'edmonton-expo-arena': 'Exhibition Lands',
   // Salt Lake City clusters (city-type answer §5c): downtown arena district, Fairpark, university campus.
   'delta-center': 'Downtown',
   'conference-center-slc': 'Downtown',

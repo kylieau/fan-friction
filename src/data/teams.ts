@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -288,6 +288,17 @@ const LIST: Team[] = [
   team("lsuno-baseball", "LSU New Orleans Privateers Baseball", "LSUNO Baseball", "College baseball", "baseball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
   team("laketown-squadron", "Laketown Squadron", "Squadron", "NBA G League", "basketball", "new-orleans", "LKT"),
   team("new-orleans-jesters", "New Orleans Jesters", "Jesters", "NPSL", "soccer", "new-orleans", "JES"),
+  // Edmonton (Oct 13, 2026; docs/research/city-builds/edmonton/). Feed ids checked against live schedules.
+  team('oilers', 'Edmonton Oilers', 'Oilers', 'NHL', 'hockey', 'edmonton', 'EDM'),
+  team('oil-kings', 'Edmonton Oil Kings', 'Oil Kings', 'WHL', 'hockey', 'edmonton', 'EDM'),
+  team('elks', 'Edmonton Elks', 'Elks', 'CFL', 'football', 'edmonton', 'EDM', ['Edmonton Eskimos']),
+  team('edmonton-stingers', 'Edmonton Stingers', 'Stingers', 'CEBL', 'basketball', 'edmonton', 'EDM'),
+  team('edmonton-riverhawks', 'Edmonton Riverhawks', 'Riverhawks', 'WCL', 'baseball', 'edmonton', 'EDM'),
+  team('ualberta-football', 'Alberta Golden Bears Football', 'Bears FB', 'U Sports football', 'football', 'edmonton', 'UAB', ['Golden Bears']),
+  team('ualberta-hockey', 'Alberta Golden Bears Hockey', 'Bears Hockey', 'U Sports hockey', 'hockey', 'edmonton', 'UAB', ['Golden Bears']),
+  team('ualberta-mbb', 'Alberta Golden Bears Men\'s Basketball', 'Bears MBB', 'U Sports basketball', 'basketball', 'edmonton', 'UAB', ['Golden Bears']),
+  team('spruce-grove-saints', 'Spruce Grove Saints', 'Saints', 'BCHL', 'hockey', 'edmonton', 'SGS'),
+  team('sherwood-park-crusaders', 'Sherwood Park Crusaders', 'Crusaders', 'BCHL', 'hockey', 'edmonton', 'SPC'),
   // Salt Lake City (Oct 13, 2026; docs/research/city-builds/salt-lake-city/). Feed ids checked against live schedules.
   team("utah-jazz", "Utah Jazz", "Jazz", "NBA", "basketball", "salt-lake-city", "UTA"),
   team("utah-mammoth", "Utah Mammoth", "Mammoth", "NHL", "hockey", "salt-lake-city", "UTA", ["Utah Hockey Club"]),

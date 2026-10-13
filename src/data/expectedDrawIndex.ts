@@ -49136,6 +49136,546 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 26031,
     "games": 5,
     "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 6616,
+    "low": 5053,
+    "high": 8843,
+    "games": 99,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4877,
+    "low": 4518,
+    "high": 5911,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4816,
+    "low": 4273,
+    "high": 5254,
+    "games": 25,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4961,
+    "low": 4671,
+    "high": 5117,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5771,
+    "low": 5490,
+    "high": 8251,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 11745,
+    "low": 5683,
+    "high": 17709,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 4245,
+    "low": 3944,
+    "high": 4359,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4599,
+    "low": 4259,
+    "high": 4886,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7026,
+    "low": 5798,
+    "high": 8935,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 6994,
+    "low": 6642,
+    "high": 7165,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 5912,
+    "low": 5744,
+    "high": 6165,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 7684,
+    "low": 6519,
+    "high": 12455,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7617,
+    "low": 5642,
+    "high": 9823,
+    "games": 26,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7420,
+    "low": 7410,
+    "high": 8723,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 10463,
+    "low": 9794,
+    "high": 11076,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 9826,
+    "low": 9424,
+    "high": 10407,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 4464,
+    "low": 4461,
+    "high": 5599,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 6616,
+    "low": 5761,
+    "high": 7001,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7347,
+    "low": 5757,
+    "high": 8588,
+    "games": 33,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 7245,
+    "low": 6148,
+    "high": 7612,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 10898,
+    "low": 10374,
+    "high": 12164,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 4888,
+    "low": 4380,
+    "high": 5306,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 6803,
+    "low": 5297,
+    "high": 10348,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 7131,
+    "low": 6574,
+    "high": 7677,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 16147,
+    "low": 14480,
+    "high": 16678,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 70,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18347,
+    "low": 18041,
+    "high": 18347,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18347,
+    "low": 18173,
+    "high": 18347,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18347,
+    "low": 18275,
+    "high": 18347,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 32,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18347,
+    "low": 18347,
+    "high": 18349,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2026"
   }
 ];
 
@@ -73070,6 +73610,335 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "toronto",
     "ratio": 1.03,
     "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "americans",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "blades",
+    "ratio": 1.032,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "broncos",
+    "ratio": 0.857,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "chiefs",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "hitmen",
+    "ratio": 0.972,
+    "games": 13
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "hurricanes",
+    "ratio": 0.908,
+    "games": 11
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "pats",
+    "ratio": 0.944,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "raiders",
+    "ratio": 1.135,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "rebels",
+    "ratio": 1.059,
+    "games": 13
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "silvertips",
+    "ratio": 1.073,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "thunderbirds",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "tigers",
+    "ratio": 0.9,
+    "games": 12
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "warriors",
+    "ratio": 1.085,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "wheat-kings",
+    "ratio": 0.899,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "wild",
+    "ratio": 1.152,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "winterhawks",
+    "ratio": 1.069,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "avalanche",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "blue-jackets",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "capitals",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "ducks",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "flyers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "golden-knights",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "hurricanes",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "islanders",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "jets",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "kraken",
+    "ratio": 0.99,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "lightning",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "maple-leafs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "panthers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "rangers",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "red-wings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "sabres",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "stars",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "utah-hc",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "wild",
+    "ratio": 1.009,
+    "games": 5
   }
 ];
 
@@ -77201,6 +78070,78 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.039,
     "games": 70,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "first",
+    "occupancy": 0.992,
+    "low": 0.992,
+    "high": 0.992,
+    "games": 12,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.054,
+    "games": 113,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "second",
+    "occupancy": 0.992,
+    "low": 0.992,
+    "high": 0.992,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "second",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "conference",
+    "occupancy": 0.995,
+    "low": 0.992,
+    "high": 1.041,
+    "games": 29,
+    "seasons": "2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   }
 ];

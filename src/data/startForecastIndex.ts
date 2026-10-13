@@ -16861,6 +16861,146 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "edmonton",
+    "eventId": "2026-10-15-espn-oilers-401892515",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-18-ht-oil-kings-1023190",
+    "date": "2026-10-18",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 4888,
+      "low": 4380,
+      "high": 5306
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-20-espn-oilers-401892546",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18512,
+      "low": 18203,
+      "high": 18512
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-22-espn-oilers-401892561",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-ht-oil-kings-1023201",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7251,
+      "low": 5984,
+      "high": 9221
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-espn-oilers-401892574",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18347,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-25-ht-oil-kings-1023219",
+    "date": "2026-10-25",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 4888,
+      "low": 4380,
+      "high": 5306
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-26-espn-oilers-401892584",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:20:07.082Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
     "metroId": "houston",
     "eventId": "2026-10-13-tm-Z7r9jZ1A7PvkA",
     "date": "2026-10-13",
