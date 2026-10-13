@@ -917,7 +917,7 @@ button {
   height: auto;
   max-height: 54%;
   overflow: hidden;
-  padding: 8px 20px 0;
+  padding: 4px 20px 0;
   will-change: transform;
   background: var(--chrome);
   color: var(--ink);
@@ -928,9 +928,9 @@ button {
 .sheet-top {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
   flex-shrink: 0;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   touch-action: none;
 }
 
@@ -938,7 +938,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding-top: 4px;
+  /* A 44 pt tap target around the grabber without moving the layout (build notes 4, 1.8). */
+  align-self: center;
+  width: 120px;
+  padding: 0 0 40px;
+  margin: 0 0 -40px;
+  position: relative;
   cursor: grab;
   outline: none;
 }
