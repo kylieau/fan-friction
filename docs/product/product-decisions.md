@@ -201,8 +201,10 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Seats caps:** a generous sanity limit (40 / 20 / 20), not a fit to a form; "Sec" is added only when the section is a bare number.
 - **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).
 
-### Seats: one row of three (Kylie, Oct 13: "it has to be incredibly simple")
-- **One row, three optional boxes: Section, Row, Seat**, free text as typed (caps 80 / 24 / 40), placeholders "112 or Lawn", "8", "4". Section takes whatever names the place: "112", "Lawn", "Floor", "GA", "Suite 42". "Sec" is added only for a bare number ("Sec 112 · Row 8 · Seat 4"; "Lawn" alone). No toggle, no Area field, no chips, no extra line; no Done of its own (saves as you leave a box).
-- **Why:** the research answered "does it fit every venue", not "will people fill it in". Free text in Section is what stops it being restrictive; more fields would have made it a form nobody uses. Rejected: the six-field editor shipped earlier on Oct 13 (No assigned seat, Area with chips, Section or block, Row, Seat, Anything else).
-- **Migration on read:** a seat saved by the six-field editor folds into Section (GA, Area, section and details joined with " · "); no SQL.
-- **Privacy:** seats sit in the stub's data, readable by approved followers' apps though nothing shows them (accepted, Oct 13). The research file (`docs/research/topics/seat-fields-answer-claude.md`) stays as background.
+### Seats: a "Where" dropdown, then three boxes (Kylie, Oct 13: "incredibly simple", then "GA should have its own dropdown"; mock approved, "Yes")
+- **One "Where" dropdown first: Seat, GA, Floor, Pit, Lawn, Standing room.** A place with no seat is one tap and done; the stub reads "GA" or "Lawn". **Seat** shows three optional free-text boxes: Section, Row, Seat (placeholders "112 or Suite 42", "8", "4"; caps 80 / 24 / 40). A reserved lawn with a section, a GA ticket with rows, or "Suite 42" go in Seat, so free text still catches every case the research found. No Done of its own (saves as you change or leave a field).
+- **Display:** "GA", "Standing room", or "Sec 112 · Row 8 · Seat 4" ("Sec" only for a bare number or number and letter; "Suite 42", "Q1" read as typed).
+- **Switching to a place with no seat clears Section, Row and Seat,** so nothing hidden is stored and the export matches the screen. Watched still clears seats.
+- **Old saves fold in on read, no SQL:** a Section that is exactly GA, Floor, Pit, Lawn or Standing room (any case), with no row or seat, becomes that place; the six-field editor's toggle, Area and details join into Section.
+- **Rejected:** three boxes only (nobody types "GA" into a box called Section), the six-field editor, and chips (six did not fit a phone row). Suite is not on the list: suites have numbers and fit Seat.
+- **Privacy:** seats sit in the stub's data, readable by approved followers' apps though nothing shows them (accepted, Oct 13). The research file stays as background.

@@ -2,7 +2,7 @@
 // Kept on the stub's own row as `userTags`, so they follow that stub's privacy (T01). Not `tags`: that
 // field holds the system labels (team, side, "Concerts") that Stats and the Stubs filter read.
 
-import type { Entry, Plan, Seats } from './types';
+import type { Entry, Plan, SeatSpot, Seats } from './types';
 
 /** Longest tag, in characters (T04). Rows end a long one in an ellipsis; the tag page shows it in full. */
 export const TAG_MAX = 24;
@@ -87,12 +87,22 @@ export function retag<T extends { userTags?: string[] }>(rows: readonly T[], ren
 /** Sanity caps per box, from the longest values seen in the seat research, never a fit to a form. */
 export const SEAT_LIMITS = { section: 80, row: 24, seat: 40 } as const;
 
+/** The places with no seat, in the order the dropdown lists them, and the words shown. */
+export const SEAT_SPOTS: { id: SeatSpot; label: string }[] = [
+  { id: 'ga', label: 'GA' },
+  { id: 'floor', label: 'Floor' },
+  { id: 'pit', label: 'Pit' },
+  { id: 'lawn', label: 'Lawn' },
+  { id: 'standing', label: 'Standing room' },
+];
+
 type SavedSeats = Seats & { noSeat?: boolean; area?: string; details?: string };
 
 /**
- * Seats as they are stored: each box as typed (trimmed, spaces collapsed, capped); undefined when all are
- * empty. A seat saved by the six-field editor earlier on Oct 13 folds in on read: GA (the toggle), the
- * Area and the section join into Section, " · " between; Anything else goes on the end when it fits.
+ * Seats as they are stored: each box as typed (trimmed, spaces collapsed, capped); undefined when empty.
+ * A place with no seat keeps only the place. Older saves fold in on read: the six-field editor's GA toggle,
+ * Area and details join into Section (" · "); a Section that is exactly GA, Floor, Pit, Lawn or Standing
+ * room, with no row or seat, becomes that place.
  */
 export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
   if (!raw) return undefined;
@@ -101,13 +111,17 @@ export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
     const text = (value ?? '').trim().replace(/\s+/g, ' ').slice(0, max).trim();
     return text.length > 0 ? text : undefined;
   };
+  if (old.spot && SEAT_SPOTS.some((s) => s.id === old.spot)) return { spot: old.spot };
   const place = [old.noSeat ? 'GA' : undefined, clean(old.area, 80), clean(old.section, 80), clean(old.details, 140)].filter(Boolean) as string[];
-  // Never "GA · GA": an old area of GA is the toggle already.
   const parts = place.filter((p, i) => place.indexOf(p) === i);
-  const out: Seats = {};
   const section = clean(parts.join(' · '), SEAT_LIMITS.section);
   const row = clean(old.row, SEAT_LIMITS.row);
   const seat = clean(old.seat, SEAT_LIMITS.seat);
+  if (section && !row && !seat) {
+    const match = SEAT_SPOTS.find((s) => s.label.toLowerCase() === section.toLowerCase());
+    if (match) return { spot: match.id };
+  }
+  const out: Seats = {};
   if (section) out.section = section;
   if (row) out.row = row;
   if (seat) out.seat = seat;
@@ -115,12 +129,13 @@ export function normalizeSeats(raw: Seats | undefined): Seats | undefined {
 }
 
 /**
- * "Sec 112 · Row 8 · Seat 4", or "Lawn" when only Section is set. "Sec" only for a bare number or a
- * number and a letter; a name ("Lawn", "Suite 42", "Q1") reads as typed.
+ * "GA", "Standing room", or "Sec 112 · Row 8 · Seat 4" ("Lawn" alone when only Section is set). "Sec" only
+ * for a bare number or a number and a letter; a name ("Suite 42", "Q1") reads as typed.
  */
 export function seatsLine(seats: Seats | undefined): string {
   const s = normalizeSeats(seats);
   if (!s) return '';
+  if (s.spot) return SEAT_SPOTS.find((p) => p.id === s.spot)?.label ?? '';
   const section = s.section ? (/^\d+[A-Za-z]?$/.test(s.section) ? `Sec ${s.section}` : s.section) : undefined;
   return [section, s.row && `Row ${s.row}`, s.seat && `Seat ${s.seat}`].filter(Boolean).join(' · ');
 }

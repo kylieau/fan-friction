@@ -7484,3 +7484,9 @@ button.back-link {
 .seat-field-details {
   width: 100%;
 }
+
+/* The seats "Where" dropdown: a native select, one tap on a phone. */
+.seat-where {
+  min-height: 44px;
+  font-size: 16px;
+}

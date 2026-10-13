@@ -451,11 +451,16 @@ export interface LoggedWhen {
 }
 
 /**
- * Where you were in the room (build notes 4): one row of three boxes, all optional, all free text as
- * typed. Section holds whatever names the place ("112", "Lawn", "Floor", "GA", "Suite 42").
- * (Kylie, Oct 13: "it has to be incredibly simple".)
+ * Where you were in the room (build notes 4; Kylie, Oct 13: "incredibly simple", then "GA should have its
+ * own dropdown"). One "Where" choice first: a seat (three optional free-text boxes) or one of the places
+ * that have no seat. A reserved lawn with a section, a GA ticket with rows or "Suite 42" are a seat:
+ * type them in Section.
  */
+export type SeatSpot = 'ga' | 'floor' | 'pit' | 'lawn' | 'standing';
+
 export interface Seats {
+  /** A place with no seat. Absent means a seat. When set, section, row and seat are not kept. */
+  spot?: SeatSpot;
   section?: string;
   row?: string;
   seat?: string;
