@@ -1464,9 +1464,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'miami',
     names: [{ name: 'Homestead-Miami Speedway' }],
     location: [-80.4094304, 25.4517516],
-    capacity: [
-      { seats: 46000, setup: 'racing', note: 'Reported. Conflicts with 45,000 and 65,000 in other sources; all remain above 5,000. Source: venue table A02.' },
-    ],
+    // Round-2 rule: conflicting figures (46,000 / 45,000 / 65,000), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'loandepot-park': {
@@ -1550,10 +1549,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Pitbull Stadium', from: '2024-08-01' },
     ],
     location: [-80.3778903, 25.7524884],
-    capacity: [
-      { seats: 20000, setup: 'football', note: 'Reported. Conflicts with 22,682 on FotMob. Source: venue table A08.' },
-      { seats: 20000, setup: 'soccer', note: 'Same bowl; Miami FC USL home. Source: venue table A08 / team schedule.' },
-    ],
+    // Round-2 rule: conflicting figures (20,000 / 22,682), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'fpl-solar-amphitheater': {
@@ -1565,9 +1562,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'FPL Solar Amphitheater at Bayfront Park', from: '2020-01-01' },
     ],
     location: [-80.1860601, 25.7762049],
-    capacity: [
-      { seats: 8500, setup: 'concert', note: 'Official/reported. Full venue incl. lawn; conflicts with 5,000 and 1,646 listings — classification held at 8,500 per city/CVB. Source: venue table A10.' },
-    ],
+    // Round-2 rule: conflicting figures (8,500 / 5,000 / 1,646); blank until one official current figure (BACKLOG).
+    capacity: [],
     roof: 'covered',
   },
   'watsco-center': {

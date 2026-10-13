@@ -525,7 +525,6 @@ const LIST: Team[] = [
   team('carleton-ravens-mbb', "Carleton Ravens Men's Basketball", 'Ravens MBB', 'U Sports basketball', 'basketball', 'ottawa-gatineau', 'CAR'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball', 'miami', 'MIA'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
-  team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball'),
   team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball'),
   team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball'),
   team('jets', 'Winnipeg Jets', 'Jets', 'NHL', 'hockey'),
