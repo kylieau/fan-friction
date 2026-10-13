@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "teamId": "fiu-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "fiu-football",
+      "season": 2022,
+      "date": "2022-10-14",
+      "start": "20:00",
+      "opponent": "UTSA",
+      "venueId": "pitbull-stadium",
+      "attendance": 14122,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2022,
+      "date": "2022-10-28",
+      "start": "20:00",
+      "opponent": "Louisiana Tech",
+      "venueId": "pitbull-stadium",
+      "attendance": 12478,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2022,
+      "date": "2022-11-26",
+      "start": "18:00",
+      "opponent": "MTSU",
+      "venueId": "pitbull-stadium",
+      "attendance": 14768,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:30",
+      "opponent": "Maine",
+      "venueId": "pitbull-stadium",
+      "attendance": 16878,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:30",
+      "opponent": "North Texas",
+      "venueId": "pitbull-stadium",
+      "attendance": 15754,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "18:30",
+      "opponent": "Liberty",
+      "venueId": "pitbull-stadium",
+      "attendance": 17437,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2023,
+      "date": "2023-10-11",
+      "start": "19:30",
+      "opponent": "UTEP",
+      "venueId": "pitbull-stadium",
+      "attendance": 14872,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2023,
+      "date": "2023-10-25",
+      "start": "19:00",
+      "opponent": "Jax State",
+      "venueId": "pitbull-stadium",
+      "attendance": 14074,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "15:00",
+      "opponent": "Western KY",
+      "venueId": "pitbull-stadium",
+      "attendance": 12724,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:00",
+      "opponent": "C Michigan",
+      "venueId": "pitbull-stadium",
+      "attendance": 17852,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "18:00",
+      "opponent": "Monmouth",
+      "venueId": "pitbull-stadium",
+      "attendance": 17922,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "18:00",
+      "opponent": "Louisiana Tech",
+      "venueId": "pitbull-stadium",
+      "attendance": 12425,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2024,
+      "date": "2024-10-22",
+      "start": "19:30",
+      "opponent": "Sam Houston",
+      "venueId": "pitbull-stadium",
+      "attendance": 10625,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2024,
+      "date": "2024-10-29",
+      "start": "19:00",
+      "opponent": "New Mexico St",
+      "venueId": "pitbull-stadium",
+      "attendance": 9103,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2024,
+      "date": "2024-11-30",
+      "start": "14:00",
+      "opponent": "MTSU",
+      "venueId": "pitbull-stadium",
+      "attendance": 8962,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "20:15",
+      "opponent": "Bethune",
+      "venueId": "pitbull-stadium",
+      "attendance": 18034,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "20:30",
+      "opponent": "FAU",
+      "venueId": "pitbull-stadium",
+      "attendance": 17638,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:00",
+      "opponent": "Delaware",
+      "venueId": "pitbull-stadium",
+      "attendance": 11705,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2025,
+      "date": "2025-10-21",
+      "start": "19:00",
+      "opponent": "Kennesaw St",
+      "venueId": "pitbull-stadium",
+      "attendance": 12133,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "17:00",
+      "opponent": "Liberty",
+      "venueId": "pitbull-stadium",
+      "attendance": 14167,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "15:30",
+      "opponent": "Jax State",
+      "venueId": "pitbull-stadium",
+      "attendance": 9504,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:00",
+      "opponent": "Buffalo",
+      "venueId": "pitbull-stadium",
+      "attendance": 18202,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:00",
+      "opponent": "Long Island",
+      "venueId": "pitbull-stadium",
+      "attendance": 17003,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fiu-football",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "20:04",
+      "opponent": "New Mexico St",
+      "venueId": "pitbull-stadium",
+      "attendance": 10013,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

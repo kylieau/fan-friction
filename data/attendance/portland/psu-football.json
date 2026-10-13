@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "teamId": "psu-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "psu-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "14:00",
+      "opponent": "N Arizona",
+      "venueId": "hillsboro-stadium",
+      "attendance": 3595,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "14:00",
+      "opponent": "Lincoln (CA)",
+      "venueId": "hillsboro-stadium",
+      "attendance": 2921,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "14:00",
+      "opponent": "Weber St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 4067,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "14:00",
+      "opponent": "N Colorado",
+      "venueId": "hillsboro-stadium",
+      "attendance": 2771,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2022,
+      "date": "2022-11-11",
+      "start": "18:00",
+      "opponent": "Sacramento St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 2891,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "13:00",
+      "opponent": "North American",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1411,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "13:00",
+      "opponent": "Cal Poly",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1672,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "13:00",
+      "opponent": "Idaho St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 2174,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "13:00",
+      "opponent": "E Washington",
+      "venueId": "hillsboro-stadium",
+      "attendance": 3189,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "18:00",
+      "opponent": "Montana",
+      "venueId": "hillsboro-stadium",
+      "attendance": 4578,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "13:00",
+      "opponent": "UC Davis",
+      "venueId": "hillsboro-stadium",
+      "attendance": 2519,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "13:00",
+      "opponent": "Montana St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 3121,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "13:00",
+      "opponent": "N Colorado",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1791,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "13:30",
+      "opponent": "Tarleton St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1890,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "14:00",
+      "opponent": "N Arizona",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1542,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "14:00",
+      "opponent": "Weber St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1489,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "14:00",
+      "opponent": "Sacramento St",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1284,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "14:00",
+      "opponent": "Montana",
+      "venueId": "hillsboro-stadium",
+      "attendance": 9075,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "12:00",
+      "opponent": "UC Davis",
+      "venueId": "hillsboro-stadium",
+      "attendance": 2367,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "19:00",
+      "opponent": "North Dakota",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1455,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "psu-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "13:00",
+      "opponent": "Utah Tech",
+      "venueId": "hillsboro-stadium",
+      "attendance": 1964,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

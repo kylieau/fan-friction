@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-12",
+  "results": [
+    {
+      "eventId": "2026-10-12-espn-blazers-401914130",
+      "metroId": "portland",
+      "date": "2026-10-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moda-center",
+      "homeTeamId": "blazers",
+      "home": {
+        "name": "Blazers",
+        "score": 119
+      },
+      "away": {
+        "name": "London Lions",
+        "score": 66
+      },
+      "attendance": 5397,
+      "capturedAt": "2026-10-13T07:22:29.085Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "15:50"
+    }
+  ]
+}

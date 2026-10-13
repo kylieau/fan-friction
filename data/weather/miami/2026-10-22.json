@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-22",
+  "rows": [
+    {
+      "metroId": "miami",
+      "venueId": "beyond-bancard-field",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 79.8,
+      "tempF": 81.4,
+      "humidity": 57,
+      "windMph": 16.4,
+      "uvIndex": 0.2,
+      "precipProbability": 47,
+      "precipMm": 0.3,
+      "shortwave": 30,
+      "cloudCover": 68,
+      "code": 51
+    },
+    {
+      "metroId": "miami",
+      "venueId": "beyond-bancard-field",
+      "date": "2026-10-22",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 79.6,
+      "tempF": 81.1,
+      "humidity": 57,
+      "windMph": 15.9,
+      "uvIndex": 0,
+      "precipProbability": 47,
+      "precipMm": 0.3,
+      "shortwave": 0,
+      "cloudCover": 74,
+      "code": 51
+    },
+    {
+      "metroId": "miami",
+      "venueId": "beyond-bancard-field",
+      "date": "2026-10-22",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 79.5,
+      "tempF": 80.6,
+      "humidity": 59,
+      "windMph": 15.4,
+      "uvIndex": 0,
+      "precipProbability": 25,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 56,
+      "code": 2
+    },
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeF": 79.6,
+      "tempF": 81.3,
+      "humidity": 58,
+      "windMph": 17.2,
+      "uvIndex": 0.2,
+      "precipProbability": 46,
+      "precipMm": 0.3,
+      "shortwave": 31,
+      "cloudCover": 52,
+      "code": 51
+    }
+  ],
+  "days": [
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:19:38.751Z",
+      "feelsLikeHighF": 85.1,
+      "feelsLikeLowF": 79.1,
+      "code": 53,
+      "precipProbability": 46,
+      "precipMm": 4.2
+    }
+  ]
+}

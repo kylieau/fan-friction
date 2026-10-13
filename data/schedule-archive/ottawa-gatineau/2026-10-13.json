@@ -4,7 +4,7 @@
   "metroName": "Ottawa–Gatineau",
   "timeZone": "America/Toronto",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:16:56.748Z",
+  "capturedAt": "2026-10-13T07:25:55.846Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -30,6 +30,11 @@
     {
       "id": "seed",
       "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
       "inWindow": 0
     }
   ],

@@ -1,0 +1,5902 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "teamId": "hillsboro-hops",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1439,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 921,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": null,
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "11:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": null,
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1942,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1523,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2199,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-23",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 5137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 5273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2370,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 5110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3651,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "16:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 998,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "11:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2818,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "16:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2651,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "16:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1604,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2286,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "16:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3352,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2985,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1456,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 5024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 5200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1600,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1631,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3782,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2750,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3499,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2371,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2923,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2980,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3447,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "16:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "16:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 982,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "16:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1833,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "11:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "16:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "16:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1371,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "16:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2746,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-01",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 5272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1646,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2975,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2962,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3147,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2928,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1776,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "16:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Tacos y Cervezas"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "16:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Easter"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "11:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "16:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "18:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "11:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "STEM Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3302,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "16:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Mother's Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1805,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "College Info Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sport Business Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Ferris Barley's Day Off"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2920,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "16:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Memorial Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1639,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Juneteenth Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Smile Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Father's Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hops Trading Card Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Makers and Growers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Barley's Birthday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2683,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Croc Charm Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "19:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 4195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 1628,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Ziply Green Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Wine Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Malmo Oat Milkers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Marvel's Defenders of the Diamond Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hops x X-Men Comic Book Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Healthy Hillsboro Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Croc Charm Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2382,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Rip City Remix Takeover"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Explore Tualatin Valley Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fairy Tale Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Healthy Hillsboro Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Croc Charm Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Through Hops History: A Celebration of the '13 and '14 Seasons"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Through Hops History: A Celebration of the '15 and '16 Seasons"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 2654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hillsboro Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": " Through Hops History: A Celebration of the '17 and '18 Seasons"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend: Soñadores Dia de los Muertos"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Saturday Poster Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-ballpark",
+      "attendance": 3823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Commemorative Ticket Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 4674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Commemorative Ticket Keepsake"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Week - Civic Org Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Commemorative Coin Keepsake"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-09",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Week - Trades and Crafts Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Opening Week Pennant Keepsake"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "17:03",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Weekend - Celebrating Baseball's Future"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blanket Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blanket Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jackie Robinson Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Scappoose High School Takeover"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "11:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "STEM Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "First Fireworks in the New Ballpark"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "17:03",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Wine & Nine"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Dia de los Libros"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hillsboro High School Takeover"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Asian American and Pacific Islander (AAPI) Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Educator Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "17:03",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Halfway to Halloween"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Classic Animation Night with Mickey & Friends Cobranded Merchandise"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Liberty High School Takeover"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Indigenous Culture Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "17:03",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Dia de la Mujer"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Healthy Hillsboro Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Craft Beer Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Root Beer Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Spanglish Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "School's Out Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "17:03",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3860,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Youth Sports Weekend"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3332,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Youth Sports Weekend"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Good Grades Nights"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Good Grades Nights"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hops Honky Tonk"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "To Infinity and the Ballpark with Toy Story Cobranded Merchandise"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "17:03",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3811,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Fútbol Meets Béisbol and Fan Appreciation Weekend"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1555,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Girls and Women in Sports Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "True Crime Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 5184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "All American Weekend - Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 5740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fourth of July Celebration - Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2026 Collectible Beer Stein Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Friendship Bracelet Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "18:35",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Heroes and Villains Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "17:03",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 4239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Christmas in July"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:05",
+      "opponent": "Canadians",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Bachata Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Innovation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 1759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "18:35",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Princess Night with Disney Princess Cobranded Merchandise"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "17:03",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Local Heroes Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "13:05",
+      "opponent": "AquaSox",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 4112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Healthy Hillsboro Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pickleball Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Viva La Raza"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 4328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Craft Beer Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Root Beer Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Strikeout Cancer Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:35",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Back to School Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "17:03",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 4166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Trail Blazers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:05",
+      "opponent": "Dust Devils",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Smile Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:35",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 2740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pet Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "17:03",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Soñadores Béisbol Fiesta"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "hillsboro-hops",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "13:05",
+      "opponent": "Emeralds",
+      "venueId": "hillsboro-hops-ballpark",
+      "attendance": 3090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

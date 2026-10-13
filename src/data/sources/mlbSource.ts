@@ -13,11 +13,18 @@ const DAYS_AHEAD = 120;
 /** MLB's own ids, mapped to our records. Add a metro's teams and ballparks here. */
 const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's sport id: 1 the majors, 11–14 the affiliated minors, 23 the partner leagues. */ sportId?: number; /** The club's home building when the feed's venue is not on file (the partner leagues list "TBD"). */ venueId?: string }> = {
   111: { metroId: 'boston', teamId: 'red-sox' },
+  120: { metroId: 'washington-dc', teamId: 'nationals' },
+  418: { metroId: 'washington-dc', teamId: 'chesapeake-baysox', sportId: 12, venueId: 'prince-georges-stadium' },
   143: { metroId: 'philadelphia', teamId: 'phillies' },
+  134: { metroId: 'pittsburgh', teamId: 'pirates' },
+  1978: { metroId: 'pittsburgh', teamId: 'wild-things', sportId: 23, venueId: 'eqt-park' },
   117: { metroId: 'houston', teamId: 'astros' },
   5434: { metroId: 'houston', teamId: 'space-cowboys', sportId: 11, venueId: 'constellation-field' },
   139: { metroId: 'tampa', teamId: 'rays' },
+  146: { metroId: 'miami', teamId: 'marlins' },
   445: { metroId: 'columbus', teamId: 'columbus-clippers', sportId: 11, venueId: 'huntington-park' },
+  114: { metroId: 'cleveland', teamId: 'guardians' },
+  437: { metroId: 'cleveland', teamId: 'lake-county-captains', sportId: 13, venueId: 'classic-auto-group-park' },
   109: { metroId: 'phoenix', teamId: 'diamondbacks' },
   566: { metroId: 'tampa', teamId: 'clearwater-threshers', sportId: 14, venueId: 'baycare-ballpark' },
   587: { metroId: 'tampa', teamId: 'tampa-tarpons', sportId: 14, venueId: 'george-m-steinbrenner-field' },
@@ -57,13 +64,19 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   556: { metroId: 'nashville', teamId: 'sounds', sportId: 11, venueId: 'first-horizon-park' },
   // Vancouver Canadians (High-A). Team 435 and venue 2817 checked against the feed Oct 12, 2026.
   435: { metroId: 'vancouver', teamId: 'vancouver-canadians', sportId: 13, venueId: 'nat-bailey-stadium' },
+  // Durham Bulls (Triple-A). Team 234 and venue 2541 checked against the feed Oct 13, 2026.
+  234: { metroId: 'raleigh-durham', teamId: 'durham-bulls', sportId: 11, venueId: 'durham-bulls-athletic-park' },
   484: { metroId: 'indianapolis', teamId: 'indianapolis-indians', sportId: 11, venueId: 'victory-field' },
   118: { metroId: 'kansas-city', teamId: 'royals' },
   138: { metroId: 'st-louis', teamId: 'cardinals' },
   // Partner-league schedule calls returned no games on Oct 12, 2026. The venue id is ours; the feed lists TBD.
   1885: { metroId: 'kansas-city', teamId: 'kc-monarchs', sportId: 23, venueId: 'legends-field' },
+  419: { metroId: 'portland', teamId: 'hillsboro-hops', sportId: 13, venueId: 'hillsboro-hops-ballpark' },
+  // San Antonio Missions (Double-A). Team 510 and venue 2818 checked against the feed Oct 13, 2026.
+  510: { metroId: 'san-antonio', teamId: 'san-antonio-missions', sportId: 12, venueId: 'wolff-stadium' },
+  561: { metroId: 'salt-lake-city', teamId: 'salt-lake-bees', sportId: 11, venueId: 'ballpark-at-america-first-square' },
 };
-const MLB_VENUES: Record<number, string> = { 14: 'rogers-centre', 3: 'fenway-park', 2681: 'citizens-bank-park', 15: 'chase-field', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 2529: 'sutter-health-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium', 5355: 'las-vegas-ballpark', 7: 'kauffman-stadium', 2392: 'daikin-park', 5421: 'constellation-field', 3312: 'target-field', 5472: 'chs-field', 2858: 'victory-field', 2889: 'busch-stadium' };
+const MLB_VENUES: Record<number, string> = { 14: 'rogers-centre', 3: 'fenway-park', 31: 'pnc-park', 3309: 'nationals-park', 2832: 'prince-georges-stadium', 2681: 'citizens-bank-park', 5: 'progressive-field', 2759: 'classic-auto-group-park', 15: 'chase-field', 4169: 'loandepot-park', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 2529: 'sutter-health-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium', 5355: 'las-vegas-ballpark', 7: 'kauffman-stadium', 2392: 'daikin-park', 5421: 'constellation-field', 3312: 'target-field', 5472: 'chs-field', 6135: 'ballpark-at-america-first-square', 2858: 'victory-field', 2818: 'wolff-stadium', 7256: 'hillsboro-hops-ballpark', 4429: 'hillsboro-ballpark', 2541: 'durham-bulls-athletic-park', 2889: 'busch-stadium' };
 /** The feed's team ids for a metro, grouped by sport id (one schedule call per sport). */
 function teamIdsBySport(metroId: string): Map<number, string[]> {
   const out = new Map<number, string[]>();
