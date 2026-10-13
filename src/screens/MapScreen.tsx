@@ -10,8 +10,6 @@ import {
   weatherGlyph,
   getCityDate,
   todayIn,
-  VENUES,
-  venueNameOn,
   followingFeed,
   getAccount,
   getPersonalLog,
@@ -38,11 +36,12 @@ import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, ty
 import { quietStakes } from '../lib/stakes';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { datePath, eventPath, mapPath, useView } from '../lib/view';
+import { datePath, mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
+import { DayRow, sheetVenue } from '../components/DayRow';
 import { displayedCrowdCount, drawSize, sizeTier } from '../data';
 
 type Mode = 'crowds' | 'traffic';
@@ -107,7 +106,7 @@ export function MapScreen() {
 
   const shown = day && day.date === date ? day : null;
   const rating = shown?.rating ?? null;
-  // Under-floor rooms stay in the day's catalog. They are not pins, sheet rows, or part of this count.
+  // Every event at a known venue is a pin and a sheet row; a room under the friction floor is drawn muted (Kylie, Oct 9, 3.4).
   const dayEvents = (shown?.events ?? []).filter(showsOnMap);
 
   // The map shows one day (Kylie, Oct 6). An empty day stays empty: the strip
@@ -516,37 +515,6 @@ function RememberMap({
 }
 
 
-
-/**
- * One of the day's rows (build notes 3, 4.2; mock 2b): the time on the left, the title over the venue,
- * the crowd with its tags on the right, and one small activity line under it. Opens the event page.
- */
-function DayRow({ event: e, line }: { event: CrowdEvent; line: string | null }) {
-  const venue = sheetVenue(e);
-  return (
-    <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" onClick={() => markOpenedFromMap()}>
-      <span className="day-row-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
-      <span className="day-row-main">
-        <span className="day-row-title">{listTitle(e)}</span>
-        {venue && <span className="day-row-venue">{venue}</span>}
-        {line && <span className="day-row-activity">{line}</span>}
-      </span>
-      <span className="day-row-side">
-        <CrowdFigure event={e} />
-        <EventTags event={e} />
-      </span>
-    </Link>
-  );
-}
-
-/** Same venue name the event page uses. Every On-the-map row shows it. */
-function sheetVenue(event: CrowdEvent): string | null {
-  if (event.place.type === 'venue') {
-    const venue = VENUES[event.place.venueId];
-    return venue ? venueNameOn(venue, event.date) : null;
-  }
-  return event.place.name;
-}
 
 function EventRow({
   event: e,

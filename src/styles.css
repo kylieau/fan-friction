@@ -6632,3 +6632,104 @@ button.back-link {
   width: 13px;
   height: 13px;
 }
+
+/* ---------- Explore List: the calm calendar (build notes 4, 1.4; Kylie V05) ---------- */
+.week-calendar {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 12px 12px 8px;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+.week-calendar-month {
+  margin: 0 0 6px 4px;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.week-calendar-head,
+.week-calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.week-calendar-head span {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink2);
+  padding-bottom: 2px;
+}
+
+.week-calendar-day {
+  width: 100%;
+  height: 44px;
+  border: 0;
+  padding: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  color: var(--ink2);
+}
+
+.week-calendar-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.week-calendar-day:disabled {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.week-calendar-day.band-chill .week-calendar-num {
+  background: #e4eef6;
+  color: var(--ink);
+}
+
+.week-calendar-day.band-mild .week-calendar-num {
+  background: var(--water);
+  color: var(--ink);
+}
+
+.week-calendar-day.band-spicy .week-calendar-num {
+  background: var(--paleBlue);
+  color: var(--ink);
+}
+
+.week-calendar-day.band-brutal .week-calendar-num,
+.week-calendar-day.band-cooked .week-calendar-num {
+  background: var(--dodger);
+  color: #fff;
+}
+
+.week-calendar-day.is-today .week-calendar-num {
+  box-shadow: inset 0 0 0 2px var(--dodger);
+  color: var(--ink);
+}
+
+.week-calendar-day.is-today.band-brutal .week-calendar-num,
+.week-calendar-day.is-today.band-cooked .week-calendar-num {
+  color: #fff;
+  box-shadow: 0 0 0 2px var(--card), 0 0 0 4px var(--dodger);
+}
+
+.week-calendar-day.is-past {
+  color: var(--ink2);
+}
+
+.week-calendar-day:focus-visible .week-calendar-num {
+  outline: 2px solid var(--dodger);
+  outline-offset: 2px;
+}
