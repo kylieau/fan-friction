@@ -28247,14 +28247,48 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "miami",
-    "eventId": "2026-10-14-espn-heat-401898404",
-    "date": "2026-10-14",
-    "start": "19:30",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "eventId": "2026-10-13-tm-vvG1VZ_1RmgCaZ",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 2.1,
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Weezer 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-13-tm-vvG1VZ_6naZVWW",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "KATSEYE 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 13110
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-heat-401898404",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
       "friction": "Low",
       "why": "Inter Miami vs. NYCFC 4.5 mi away, same hours."
     },
@@ -28269,13 +28303,30 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-inter-miami-cf-761861",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 2.1,
+      "rating": 2.8,
       "friction": "Low",
       "why": "Heat vs. Nets 4.5 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-tm-vvG1VZ_7msjEDz",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Moderate",
+      "why": "Inter Miami vs. NYCFC and Heat vs. Nets 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
     }
   },
   {
@@ -28283,13 +28334,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-espn-panthers-401892510",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1.3,
+      "rating": 1.5,
       "friction": "Low",
-      "why": "The biggest event around."
+      "why": "Def Leppard 10 mi away, same hours."
     },
     "draw": {
       "count": 18525,
@@ -28299,14 +28350,48 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "miami",
+    "eventId": "2026-10-15-tm-vvG1VZ_5Sqbrak",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Panthers vs. Canucks 10 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-16-tm-vvG1VZ_8K_o6T-",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
     "eventId": "2026-10-17-espn-miami-fc-401842298",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "nearby",
-      "rating": 2.3
+      "rating": 3.3
     },
     "draw": {
       "count": 1203,
@@ -28319,13 +28404,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-miami-hurricanes-football-401858263",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 2.3,
+      "rating": 3.3,
       "friction": "Low",
-      "why": "86° feels-like at a 7:00 pm start, no roof."
+      "why": "Panthers vs. Kraken 15 mi away, same hours."
     },
     "draw": {
       "count": 58503,
@@ -28338,12 +28423,12 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-panthers-401892522",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 2.3,
-      "friction": "Low",
+      "rating": 3.3,
+      "friction": "Moderate",
       "why": "Miami vs. Florida St 15 mi away, same hours."
     },
     "draw": {
@@ -28354,16 +28439,67 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "miami",
-    "eventId": "2026-10-20-espn-fiu-football-401871055",
-    "date": "2026-10-20",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "eventId": "2026-10-17-tm-vvG1VZ_GpGY6iN",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "Miami vs. Florida St 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-18-tm-vvG1VZ_5G47K2b",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
       "friction": "Low",
-      "why": "The biggest event around."
+      "why": "$UICIDEBOY$ 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-18-tm-vvG1VZ_6XptkL5",
+    "date": "2026-10-18",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "TINI 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 13110
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-20-espn-fiu-football-401871055",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "The Doobie Brothers 23 mi away, same hours."
     },
     "draw": {
       "count": 12436,
@@ -28373,10 +28509,27 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "miami",
+    "eventId": "2026-10-20-tm-vvG1VZ_6xPlImM",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 10,
+      "friction": "Low",
+      "why": "FIU vs. MTSU 23 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
     "eventId": "2026-10-21-espn-heat-401909091",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -28395,7 +28548,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-espn-fort-lauderdale-united-401878621",
     "date": "2026-10-22",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "draw": {
       "count": 1890,
@@ -28405,10 +28558,21 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "miami",
+    "eventId": "2026-10-22-tm-vvG1VZ_GK4mdnE",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2700
+    }
+  },
+  {
+    "metroId": "miami",
     "eventId": "2026-10-23-espn-heat-401909847",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -28427,7 +28591,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-miami-hurricanes-football-401858274",
     "date": "2026-10-24",
     "start": "12:00",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -28443,10 +28607,61 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "miami",
+    "eventId": "2026-10-24-tm-vvG1VZ_1mQ_pYB",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Low",
+      "why": "Chayanne 19 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-24-tm-vvG1VZ_kt0YoDW",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Low",
+      "why": "Blake Shelton 19 mi away, same hours."
+    },
+    "draw": {
+      "count": 10913
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-25-tm-vvG1VZ_Gl6RGiu",
+    "date": "2026-10-25",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "miami",
     "eventId": "2026-10-26-espn-heat-401909871",
     "date": "2026-10-26",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -28458,6 +28673,18 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 19620,
       "low": 19610,
       "high": 19623
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-26-tm-vvG1VZ_8pW-pfe",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:46:44.275Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
     }
   },
   {
