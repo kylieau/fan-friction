@@ -28,6 +28,7 @@ import { ChevronDown, SearchIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { getHomeId } from '../lib/homeCity';
 import { longLocalDate } from '../lib/dates';
+import { getPref, setPref } from '../lib/prefs';
 import { datePath, entryPath } from '../lib/view';
 
 const KINDS: { kind: EventKind; label: string }[] = [
@@ -52,6 +53,11 @@ export function AddEntryScreen() {
   const [hits, setHits] = useState<DateSearchHit[] | null>(null);
   const [typing, setTyping] = useState(false);
   const trimmed = query.trim();
+  // "Saved to your Stubs" is said once, on the first visit (Kylie, Oct 12, 11:42 PM PT): marked seen on open.
+  const [firstVisit] = useState(() => !getPref<boolean>('new-stub-seen', false));
+  useEffect(() => {
+    setPref('new-stub-seen', true);
+  }, []);
 
   useEffect(() => {
     if (trimmed.length < 2) {
@@ -71,7 +77,8 @@ export function AddEntryScreen() {
       <Link to="/stubs" className="back-link">
         <ChevronDown /> Stubs
       </Link>
-      <h1 className="page-title">Log an event</h1>
+      <h1 className="page-title">New stub</h1>
+      {firstVisit && <p className="you-fine">Saved to your Stubs</p>}
 
       {!typing && (
         <>
@@ -155,6 +162,9 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
   const askDivision = kind === 'game' && level !== '' && level !== 'lower' && (level !== 'pro' || !known);
   const sportChips = moreSports || (sport && !SPORTS_SHOWN.includes(sport)) ? [...SPORTS_SHOWN, ...SPORTS_MORE] : SPORTS_SHOWN;
   const ahead = validDay && day >= todayIn(METROS[city] ?? DEFAULT_METRO);
+  // Under the title once there is something to name: "Braves at Mets · Sat" (Kylie, Oct 12, 11:42 PM PT).
+  const weekday = validDay ? new Date(`${day}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' }) : '';
+  const named = title.trim() && weekday ? `${title.trim()} · ${weekday}` : null;
   // A warning, not a block (C059): something on the same date with the same or a similar title.
   const duplicate = useMemo(() => {
     if (!validDay || title.trim().length < 2) return null;
@@ -211,6 +221,7 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
         void save();
       }}
     >
+      {named && <p className="new-stub-sub">{named}</p>}
       <label className="field">
         <span className="field-label">What</span>
         <input className="account-input" value={title} onChange={(e) => setTitle(e.target.value)} maxLength={120} autoFocus autoComplete="off" required />

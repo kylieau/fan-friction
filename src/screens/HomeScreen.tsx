@@ -217,7 +217,7 @@ export function HomeScreen() {
         <section className="card home-first" aria-label="Log your first event">
           <div className="card-title">Been to a game or show? Log your first event.</div>
           <Link to="/you/add" className="gold-button small">
-            Log an event
+            + Stub it
           </Link>
         </section>
       )}

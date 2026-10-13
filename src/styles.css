@@ -7326,3 +7326,17 @@ button.back-link {
 .stub-row .tag-chip-body {
   pointer-events: auto;
 }
+
+/* The New stub page and the Edit stub form (build notes 4, "+ Stub it" page title). */
+.new-stub-sub {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+
+.entry-form-title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 800;
+}
