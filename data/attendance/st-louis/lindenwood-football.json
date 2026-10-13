@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "teamId": "lindenwood-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "lindenwood-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "18:00",
+      "opponent": "Keiser",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 4111,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:00",
+      "opponent": "SE Missouri St",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 5036,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "13:00",
+      "opponent": "Murray St",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3851,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2022,
+      "date": "2022-10-29",
+      "start": "13:00",
+      "opponent": "William Jewell",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 2872,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "13:00",
+      "opponent": "McKendree",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 2777,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "19:00",
+      "opponent": "UW-Stevens Pt",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3827,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "13:00",
+      "opponent": "Austin Peay",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 2816,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "13:00",
+      "opponent": "Tennessee Tech",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3622,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "14:00",
+      "opponent": "E Illinois",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3788,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "13:00",
+      "opponent": "Bryant",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 2347,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:00",
+      "opponent": "C Arkansas",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 4668,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "13:00",
+      "opponent": "St Thomas",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3825,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "13:00",
+      "opponent": "Tennessee St",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3103,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "13:00",
+      "opponent": "Charleston So",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 2765,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "14:00",
+      "opponent": "W Illinois",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 3697,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "13:00",
+      "opponent": "SE Missouri",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 5108,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:00",
+      "opponent": "Stony Brook",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 4716,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "13:00",
+      "opponent": "Tennessee Tech",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 2737,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "14:00",
+      "opponent": "Gardner-Webb",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 4502,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "14:00",
+      "opponent": "E Illinois",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 4968,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "18:00",
+      "opponent": "Charleston So",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 4116,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lindenwood-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "13:00",
+      "opponent": "SE Missouri",
+      "venueId": "harlen-c-hunter-stadium",
+      "attendance": 5008,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
