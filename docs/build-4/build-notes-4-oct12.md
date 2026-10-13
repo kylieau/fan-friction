@@ -344,3 +344,179 @@ Docs: add /workspace/ff-gap-review/research/starter-tags-research-prompt.md and 
 - On the first visit only: a one-line helper, "Saved to your Stubs".
 - Why: follows the platform pattern for creation sheets ("New Event"), keeps the stub vocabulary, and works for both past and upcoming events. Rejected: "Stub it" (repeats the button and reads like a second button), "Log an event" (generic, and implies the past), "Add a stub" (fallback; a bit wordier).
 - T13 follow-up (Kylie, Oct 12, 11:43 PM PT): how the filters combine stays OPEN on purpose, because event types and different sports still need work first. Lean on record for later: different groups narrow, the same group widens, Recent resets. Build 4: the filters stay as they are, adding only the Tag filter.
+
+---
+
+## Research answers decided (Kylie's form, Oct 13, ~8:25 AM PT)
+
+Kylie's answers to the 35 questions on the four research answers (`docs/research/topics/{city-names-codes,city-types,open-site-crowds,team-colors}-answer.md`). Her notes are quoted as written; where a note disagrees with the option she ticked, the note wins.
+
+**Where each item goes (F):** names/codes and team colors go to **build 5**. Open-site Tier A, the scoring cap and the car-share defaults go to the **next formula pass**. F names nothing for build 4; the only build-4 tie is B2, because the Chicago rebuild (C15) is already in build 4. **BACKLOG:** A10, B6, C4 (her note), D5's gap list. Items F doesn't name are tagged with the group they travel with, marked "(not named in F)".
+
+Words used below: **sprawl** = most fans drive; **hub** = in between (some transit, mostly driving); **transit** = most fans take trains or buses. **Tier A / B / C** = the three levels for putting open-site events (festivals, parades) on the map; see C1.
+
+### A. City names and codes (build 5)
+
+**A1. Codes are a short fan label, 2–4 letters.**
+- Why: what's built already reads well ("LA", "NOLA", "CBUS") and the slot is tiny.
+- Rejected: exactly 3 letters everywhere (would break LA, SD, KC, CBUS, NOLA for no gain); airport codes (LAX is the airport, not what fans say).
+
+**A2. Keep all current codes; only Milwaukee was in question (A3).**
+- Kylie's note: "that research prompt should not have limited to 3 letter codes—why would we have such a restriction when LA is my home city. also, i don't want airport codes? so lmk if you think we will need to rerun this"
+- Resolution: she's right; our prompt was wrong. It asked for "a three-letter code" and said to prefer the main airport code. Codes are a 2–4 letter fan label, **not** airport codes. The prompt (`docs/research/topics/city-names-codes-prompt.md`) is fixed on main, with a note at the top saying it was corrected Oct 13.
+- No rerun needed: A2 keeps every current code (LA, CBUS, BAY, MIL, PHI, SAC, SD, ATX, VAN, KC, NOLA), so the wrong code advice in the answer isn't used. The answer's names, cities covered and confusion notes are still usable.
+- Rejected: taking the answer's codes wholesale (they're airport codes from a wrong prompt; it never saw ours); going row by row (not needed once all are kept).
+
+**A3. Keep MIL for Milwaukee.**
+- Why: already in decided boards and copy; the MKE evidence was "from memory".
+- Rejected: MKE.
+
+**A4. Bay Area stays "Bay Area"; code stays BAY.** (She picked Something else.)
+- Kylie's words: "wtf man idk this is why i put it up for research. closest would be SF/OAK/Berkeley or something but idk idk idk what other areas. i'm annoyed, is there not an easy shorthand? Bay Area is ideal, esp if we're doing twin cities"
+- Resolution: display name stays "Bay Area" (already the repo name), and the switcher shows just "Bay Area", with no second line. Code stays BAY; Tampa Bay's code is TPA, so the codes don't collide. (Kylie's correction, Oct 13, 8:27 AM PT.)
+- Why: "Bay Area" is what locals and teams say for the whole region; no single city name covers SF, Oakland and San Jose.
+- Rejected: SFO (airport code, and leaves out Oakland and San Jose); SF (only one city of several); a switcher second line "SF · Oakland · San Jose" like Twin Cities' (Kylie wants Bay Area to stay Bay Area).
+
+**A5. "Twin Cities" in the title; "Minneapolis–St. Paul" as the switcher second line and a search alias.**
+- Why: fits the 24pt title row and is what locals say.
+- Rejected: keeping "Minneapolis–St. Paul" and letting it shrink or cut off; "Minneapolis" alone (drops St. Paul).
+
+**A6. Dallas–Fort Worth: full name; switch to "DFW" only when it doesn't fit, by measured width.**
+- Why: no loss when it fits; measuring the real width beats a fixed character count.
+- Rejected: always "DFW" in the title; always the full name, cut off.
+
+**A7. "Montréal" with the accent; city search ignores accents.**
+- Why: the correct local spelling at no layout cost. The metro id stays `montreal` (no data move).
+- Rejected: keep "Montreal".
+
+**A9. Do both now: venue renames and search nicknames.** (Changed from the lean.)
+- Kylie's note: "i also want to include former names stored in venues (eg Staples Center for Crypto.com Arena)"
+- Resolution: check the venue renames against the repo (Daikin Park, Benchmark International Arena, Estadio Banorte, Sports Illustrated Stadium), add the city nicknames from the answer (CDMX, Foxboro/Foxborough, Saint/St. Paul, Minnesota, Arizona, the Metroplex, New Jersey towns, "BC"), **and** store each venue's former names as search aliases (e.g. "Staples Center" finds Crypto.com Arena).
+- Rejected: venue names now, nicknames later (the lean; she wants both now); both later.
+
+**A10. Teams moving later (A's to Las Vegas 2028, Chiefs to KCK 2031, Rays 2029, Bears site open): BACKLOG watch list, no code.**
+- Why: all future and only announced.
+- Rejected: adding end dates to venue data now.
+
+**A11. New research prompt for the 14 round-2 cities' names and codes.** (Changed from the lean.)
+- Why: she wants these researched, not picked by builders.
+- Note: the 14 city gaps follow-up prompts (Oct 13) already ask for name, short form and code (item 1), but they say "a three-letter code". That should be read as A1's 2–4 letter fan label, not an airport code (see open points).
+- Rejected: builders apply the A1/A2 rule and list picks for approval (the lean); Kylie picks each now.
+
+### B. City types
+
+**B1. Read the answer with our meaning of the type words; keep our three words.** (not named in F)
+- The answer read "hub" as transit-heavy. Ours means "in between". Mapping: car-first = sprawl, mixed = hub, transit hub = transit.
+- Kylie's note: "just make sure if we use those terms externally, we explain (or even internally)"
+- Resolution: wherever sprawl / hub / transit shows up in user-facing text or in docs, explain it in plain words (as at the top of this section).
+- Rejected: renaming to car-first / mixed / transit (touches code, notes and 40 cities for no gain).
+
+**B2. Chicago stays hub; before wiring Wrigley 36.7%, the builder must find its source, or leave it out and say so.** (build 4: the Chicago rebuild, C15)
+- Why: 36.7% matches a UW Husky Stadium figure exactly, so it may be crossed; wiring a possibly-wrong number breaks "never invent".
+- Rejected: wire 36.7% anyway; drop it now without checking.
+
+**B3. Keep repo types where the city has its own research; log the answer's view as a second opinion.** (not named in F)
+- The 7: Atlanta, Austin, Bay Area, New York, Sacramento, San Diego, Vancouver.
+- Why: per-city research goes venue by venue; the general answer is one paragraph per city.
+- Rejected: taking the answer's types for all 7; deciding each one.
+
+**B4. Per-city default car share = midpoint of the answer's range, only where the city has no value of its own; venue figures still win; marked estimated.** (next formula pass)
+- Why: fits C04 and is more precise than one number per type. Midpoint, not low end (low end is the crowd rule, not the car rule).
+- Rejected: keep per-type defaults and use the ranges only in notes; per-city defaults for all 26, overriding per-city research.
+
+**B5. Tie types to drive-share bands (under 40% / 40–74% / 75%+) as a check for new cities in the checklist, not a recode.** (not named in F)
+- Why: makes "research it, don't assume it" testable.
+- Rejected: no band check.
+
+**B6. New parking-pattern field: BACKLOG for the next formula pass; no field now.**
+- Why: nothing uses it yet, and it would change the spill model.
+- Rejected: add the field now, use later; skip it.
+
+**B7. Venue exceptions: wire a venue car share only where a figure exists and the venue has none yet; skip ones with no source (e.g. Gillette, Truist).** (travels with the car-share work, next formula pass)
+- Why: matches C04 and "never invent".
+- Rejected: wire all, including ones with no source; notes only.
+
+**B8. Round-2 cities: no change; builders keep using each city's own type answer, plus the B5 band check.** (not named in F)
+- Why: nothing new to apply.
+- Rejected: a general second-opinion run for the 14.
+
+### C. Open-site and free events (next formula pass)
+
+**C1. Tier A on the map now; Tier B later; Tier C = today's rule.**
+- Tier A = fenced, ticketed, with an announced daily cap. Tier B = unfenced, needs a footprint and an estimate. Tier C = no cap or footprint, stays off the map.
+- Why: Tier A uses figures we already accept; Tier B is new math. Partly replaces C14's "leave off the map".
+- Rejected: A and B now; keep everything off the map.
+
+**C2. Keep the display order everywhere; for unfenced events only, score on the capped figure and show why on the event page.**
+- Why: one display rule stays; friction isn't driven by inflated claims.
+- Rejected: show Estimated above Announced for unfenced events; no cap.
+
+**C3. Per-day figures only; divide published totals by days and label it "estimated".**
+- Kylie's note: "instead of "estimated (app)" i think "estimated" is fine—but don't we have a helper/info that provides more information? if yes, brief explanation there."
+- Resolution: the label is just "estimated". Yes, the helper exists: the (i) next to an estimated crowd on the event page opens **"How estimates work"** (`HowEstimatesWork` in `src/screens/EventScreen.tsx`). Add a short line there: a festival's published total is split evenly across its days.
+- Rejected: only use figures published per day (would skip events that only publish totals).
+
+**C4. Marathons stay unsized; finisher count logged as info only.**
+- Kylie's note: "add to backlog that i might want to spend more time on this later"
+- BACKLOG: she may spend more time on marathons later.
+- Rejected: size by runners (runners aren't a traffic crowd); size by spectators capped by route (spectator counts are guesses).
+
+**C5. A finisher count is not "Final"; finishers are participants, stored as Announced.**
+- Why: keeps "Final" for real headcounts (R05).
+- Rejected: Final for participant counts.
+
+**C6. Crowd density numbers: only needed for Tier B; decide with Tier B.**
+- Rejected: adopt 2.4 / 4.3 people per m² now.
+
+**C7. The events in the answer, as listed.**
+- Hardly Strictly Bluegrass → Tier C, add to `unsized-events.md`. Outside Lands, ACL, Lollapalooza, Summerfest → Tier A (check each isn't already a venue row). Eagles parade, NYC Pride, Shakira Zócalo → off the map until Tier B.
+- Rejected: a different list.
+
+**C8. Round-2 open-site events: builders apply the C1 tiers and list each event with its tier; unsized ones go to the unsized list.**
+- Kylie's note: "i think this is included in follow up research prompt, given to me by push pilot, no?"
+- Resolution: partly. The 14 gaps follow-up prompts don't re-ask it; they point to each city's venue answer, which already lists open-site events with unknown sizes left blank. Neither asks for the C1 tiers. So builders apply the C1 tiers when wiring those answers.
+- Rejected: a new research prompt for round 2.
+
+### D. Team colors (Faves; build 5)
+
+**D1. Build with aggregator colors, labeled third-party, after a spot-check of the flagged rows.**
+- Why: good enough for a small accent; the spot-check fixes the known bad ones (Bucs, Ducks, Kraken, the rebranded MLS clubs, Atlanta/Minnesota United order, Sparks, Yankees, the 9 mismatches).
+- Rejected: wait for official values (none were found); only the 4 big leagues now.
+
+**D2. Fill the existing team tile with the team color; nothing else changes.**
+- Why: fits the decided layout and keeps color a small accent.
+- Rejected: tint rows or cards; a small dot only.
+
+**D3. Use the answer's contrast rule against our real card color; ignore dark mode.**
+- Why: the app is light-only. If text sits on the tile, it needs stronger contrast (4.5:1).
+- Rejected: always primary plus an outline.
+
+**D4. Two-color tile (primary + secondary) for every team.**
+- Why: one rule fixes every same-city look-alike (Timberwolves/Lynx, Yankees/Islanders, Kings/LAFC).
+- Rejected: two colors only for clashing pairs; ignore it.
+
+**D5. Gray tile until a color exists; BACKLOG the gap list.**
+- Why: never invent a color.
+- Rejected: builder picks a color from logos; hide those tiles.
+
+**D6. Lead with the color fans expect (Yankees navy, Sparks purple, Atlanta United red/black).**
+- Why: matches what fans see, and separates Yankees from Islanders.
+- Rejected: keep the source order.
+
+**D7. Round-2 teams: colors come from the 14 follow-up research answers; aggregators only as a fallback.**
+- Kylie's note: "this might be included in follow up research"
+- Resolution: it is. Each of the 14 gaps follow-up prompts asks for primary and secondary colors for every team from an official team or league source (item 6). So the 14 get colors from those answers; fall back to the aggregators (same third-party label, spot-check) only where a color is missing.
+- Rejected: aggregators first with no new research (her ticked option, overridden by her note since the research is already asked for); a separate new prompt.
+
+**D8. One "Not affiliated with or endorsed by any team or league" line on the You/About screen; store listing later.**
+- Why: cheap risk reduction, kept off the main screens.
+- Rejected: skip for now.
+
+### F. Order of work
+**Names/codes + team colors in build 5; Tier A, the scoring cap and car-share defaults in the next formula pass.**
+- Why: the first two are data and screens; the rest change the read math, which §0 ⚑A says not to touch casually.
+- Rejected: everything in one build (mixes math changes with screen work); names/codes only now (holds back colors, which are ready).
+
+### Open points
+- A11 vs the follow-up prompts: the 14 follow-up prompts already ask for name and code, but say "three-letter code". Either treat those answers as the A11 research (reading codes as A1's 2–4 letter fan label), or write a separate prompt. Not settled.
+- F doesn't place B1, B3, B5, B8, C3–C8; they're tagged by group above.
