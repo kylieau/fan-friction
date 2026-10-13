@@ -17,6 +17,8 @@ import { withExpectedDraws } from './expectedDraw';
 import './homeSync';
 import { primeDate } from './catalogCache';
 import { checkedFor, entryMetroId, nightKey, rememberNearby } from './read';
+import { listRange, weekOf } from './cityList';
+import { addDays } from '../lib/dates';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
 const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
@@ -103,6 +105,21 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
   return uniqueById(lists.flat())
     .filter((e) => e.date > afterDate && e.date <= throughDate)
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
+}
+
+/**
+ * The days the Explore List can show for a city (build notes 4, V09): back to the first day the
+ * nightly catalog saved, forward to the last event it has. A city with no capture starts today.
+ */
+export async function getListRange(metroId: string, today: LocalDate): Promise<{ from: LocalDate; through: LocalDate }> {
+  const ahead = await getEventsBetween(metroId, addDays(today, -1), addDays(today, 500));
+  const last = ahead.reduce<LocalDate | null>((max, e) => (max === null || e.date > max ? e.date : max), null);
+  return listRange(metroId, today, last);
+}
+
+/** One Monday-to-Sunday week of a city's days, each with its events and read, for the List and its calendar. */
+export async function getListWeek(metroId: string, monday: LocalDate): Promise<CityDate[]> {
+  return Promise.all(weekOf(monday).map((date) => getCityDate(metroId, date)));
 }
 
 /**
