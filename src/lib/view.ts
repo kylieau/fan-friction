@@ -87,6 +87,11 @@ export function comparePath(a: NightKey, b?: NightKey): string {
   return `/compare?${params.toString()}`;
 }
 
+/** Your tag's page under Stubs. Tags hold spaces, ' and &, so the word is encoded. */
+export function tagPath(tag: string): string {
+  return `/stubs/tag/${encodeURIComponent(tag)}`;
+}
+
 /** A night typed in by hand, with no catalog event behind it. */
 export function entryPath(entryId: string): string {
   return `/entry/${encodeURIComponent(entryId)}`;

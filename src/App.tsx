@@ -16,6 +16,7 @@ import { SettingsScreen } from './screens/SettingsScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
 import { StubsScreen } from './screens/StubsScreen';
+import { TagScreen } from './screens/TagScreen';
 import { FollowingScreen } from './screens/FollowingScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
@@ -53,6 +54,7 @@ function Shell() {
           <Route path="/home" element={<HomeScreen />} />
           <Route path="/explore" element={<ExploreScreen />} />
           <Route path="/stubs" element={<StubsScreen />} />
+          <Route path="/stubs/tag/:tag" element={<TagScreen />} />
           <Route path="/following" element={<FollowingScreen />} />
           <Route path="/calendar" element={<Navigate to="/explore?view=calendar" replace />} />
           <Route path="/date/:date" element={<DateScreen />} />

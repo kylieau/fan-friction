@@ -1,15 +1,11 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO, METROS } from '../config/metros';
-import { ReadTile } from '../components/ReadTile';
+import { DEFAULT_METRO } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
-import { FrictionPill } from '../components/EventTags';
-import { StatusLine } from '../components/ActivityLines';
-import { CrowdMark } from '../components/EventTags';
+import { PlanRow, StubRow } from '../components/StubRows';
 import { PlusIcon } from '../components/Icons';
 import {
   canSignIn,
-  entryCrowd,
   getAccount,
   getPersonalLog,
   getSaveWarning,
@@ -21,16 +17,14 @@ import {
   subscribePersonalLog,
   todayIn,
   upcomingPlans,
-  watchPlaceOf,
-  watchShareOf,
   yourEntries,
+  tagSummaries,
   type Entry,
-  type Plan,
 } from '../data';
-import { crowdThousands } from '../map/crowdPoints';
 import { timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
-import { datePath, entryPath, eventPath } from '../lib/view';
+import { TagChip } from '../components/TagChip';
+import { ChevronDown } from '../components/Icons';
 
 type Tab = 'recent' | 'upcoming';
 type Chip = 'all' | 'sports' | 'concerts' | 'watched' | 'attended';
@@ -52,6 +46,11 @@ export function StubsScreen() {
   const [tab, setTab] = useState<Tab>('recent');
   // The Oct 11 chips (Kylie, call 8) stay under Recent; the first one is "All" now that Recent names the tab.
   const [chip, setChip] = useState<Chip>('all');
+  // Your own tags as a filter (T10, T13): several at once match any of them, and the type chip narrows that.
+  const [picked, setPicked] = useState<string[]>([]);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [tagQuery, setTagQuery] = useState('');
+  const known = useMemo(() => tagSummaries(log.added, log.plans), [log]);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     clearOpenedFromMap();
@@ -73,10 +72,11 @@ export function StubsScreen() {
     () =>
       entries
         .filter((entry) => !filter || entry.tags.includes(filter))
+        .filter((entry) => picked.length === 0 || picked.some((tag) => entry.userTags?.includes(tag)))
         .filter((entry) =>
           chip === 'all' ? true : chip === 'watched' ? Boolean(entry.watched) : chip === 'attended' ? !entry.watched : chip === 'sports' ? entry.kind === 'game' : entry.kind === 'show' || entry.kind === 'festival',
         ),
-    [entries, chip, filter],
+    [entries, chip, filter, picked],
   );
 
   const emptyUpcoming = tab === 'upcoming' && plansAhead.length === 0;
@@ -113,11 +113,51 @@ export function StubsScreen() {
                 ['attended', 'Attended'],
               ] as const
             ).map(([id, label]) => (
-              <button key={id} type="button" className="filter-chip" aria-pressed={chip === id} onClick={() => setChip(id)}>
+              <button
+                key={id}
+                type="button"
+                className="filter-chip"
+                aria-pressed={chip === id}
+                onClick={() => {
+                  setChip(id);
+                  // "All" is Recent's reset (T13 lean): it clears the tag picks too.
+                  if (id === 'all') {
+                    setPicked([]);
+                    setPickerOpen(false);
+                  }
+                }}
+              >
                 {label}
               </button>
             ))}
+            {known.length > 0 && (
+              <button type="button" className="filter-chip" aria-pressed={picked.length > 0} aria-expanded={pickerOpen} onClick={() => setPickerOpen((v) => !v)}>
+                {picked.length > 0 ? `Tag · ${picked.length}` : 'Tag'} <ChevronDown />
+              </button>
+            )}
           </div>
+          {pickerOpen && (
+            <div className="card tag-picker" role="group" aria-label="Tags">
+              {known.length > 6 && (
+                <input className="account-input" type="search" value={tagQuery} placeholder="Search your tags" aria-label="Search your tags" onChange={(ev) => setTagQuery(ev.target.value)} />
+              )}
+              <div className="tag-picker-list">
+                {known
+                  .filter((k) => k.tag.includes(tagQuery.trim().toLowerCase()))
+                  .map((k) => (
+                    <label key={k.tag} className="tag-picker-row">
+                      <input
+                        type="checkbox"
+                        checked={picked.includes(k.tag)}
+                        onChange={() => setPicked((cur) => (cur.includes(k.tag) ? cur.filter((t) => t !== k.tag) : [...cur, k.tag]))}
+                      />
+                      <TagChip tag={k.tag} />
+                      <span className="tags-panel-count">{k.count}</span>
+                    </label>
+                  ))}
+              </div>
+            </div>
+          )}
           {recent.length === 0 ? (
             <div className="card empty-card">
               <div className="card-title">{entries.length > 0 ? 'Nothing here.' : canSignIn() && !account ? 'No stubs on this phone.' : 'No stubs yet.'}</div>
@@ -197,79 +237,4 @@ function groupByTime(entries: Entry[]): [string, Entry[]][] {
     else groups.push([label, [entry]]);
   }
   return groups;
-}
-
-/** The weekday over the day number, as on the carousel; a rough date shows its label instead. */
-function DateBox({ when }: { when: Entry['when'] }) {
-  if (when.precision !== 'day') {
-    return (
-      <span className="stub-date rough" aria-label={when.label || 'Date not written down'}>
-        {when.label.slice(0, 4) || '—'}
-      </span>
-    );
-  }
-  const [y, m, d] = when.sort.split('-').map(Number);
-  const day = new Date(Date.UTC(y, m - 1, d));
-  return (
-    <span className="stub-date">
-      <span className="stub-date-wd">{day.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' })}</span>
-      <span className="stub-date-num">{d}</span>
-    </span>
-  );
-}
-
-function StubRow({ entry, rating }: { entry: Entry; rating: number | null }) {
-  const crowd = entryCrowd(entry);
-  const share = entry.watched ? watchShareOf(entry) : undefined;
-  // A place shows on a Friends watch only (Kylie's answer, build notes 3, 8.1, item 14).
-  const place = entry.watched && share === 'friends' ? watchPlaceOf(entry) : undefined;
-  const to = entry.eventId ? eventPath(entry.eventId, entry.metroId ?? DEFAULT_METRO.id) : entryPath(entry.id);
-  return (
-    <Link to={to} className="stub-row" onClick={() => clearOpenedFromMap()}>
-      <DateBox when={entry.when} />
-      <span className="stub-main">
-        <span className="stub-title">{entry.title}</span>
-        {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
-        {entry.stamp?.friction && entry.stamp.friction !== 'Low' && (
-          <span className="stub-tags">
-            <FrictionPill level={entry.stamp.friction} />
-          </span>
-        )}
-        <StatusLine
-          kind={entry.watched ? 'watched' : 'attended'}
-          share={share}
-          place={place}
-          tags={entry.userTags}
-          crowd={
-            crowd && !entry.watched ? (
-              <>
-                <CrowdMark />
-                {crowdThousands(crowd.count)}
-              </>
-            ) : undefined
-          }
-        />
-        {entry.private && <span className="log-facts">Private</span>}
-      </span>
-      <ReadTile rating={rating} />
-    </Link>
-  );
-}
-
-/** A plan still ahead: Attending, or Watching with its Private / Friends choice and place. */
-function PlanRow({ plan, rating }: { plan: Plan; rating: number | null }) {
-  const share = plan.watch ? watchShareOf(plan) : undefined;
-  const place = plan.watch && share === 'friends' ? watchPlaceOf(plan) : undefined;
-  const city = plan.metroId !== DEFAULT_METRO.id ? METROS[plan.metroId]?.name : null;
-  return (
-    <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row">
-      <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
-      <span className="stub-main">
-        <span className="stub-title">{plan.title}</span>
-        {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
-        <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} />
-      </span>
-      <ReadTile rating={rating} />
-    </Link>
-  );
 }

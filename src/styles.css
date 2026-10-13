@@ -7135,6 +7135,8 @@ button.back-link {
 /* A Stubs row does not grow (build notes 4, T05): the status line stays on one line and the tags shrink
    with an ellipsis; the words and the +N never do. */
 .stub-main .status-line {
+  display: flex;
+  width: 100%;
   flex-wrap: nowrap;
   min-width: 0;
   max-width: 100%;
@@ -7162,27 +7164,133 @@ button.back-link {
   flex-wrap: wrap;
 }
 
-/* When the words leave little room (Watched · Friends · a place), a tag that cannot be read in full is left
-   out of the row rather than squeezed to a sliver; the tag page and the event page show all of them. */
-.stub-main .status-tags {
-  flex-wrap: wrap;
-  height: 24px;
-  overflow: hidden;
-  align-content: flex-start;
+/* The Tag filter's picker, under the filter row (build notes 4, T10, T12, T13). */
+.tag-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 12px;
 }
 
-.stub-main .status-tags .tag-chip {
-  min-width: 64px;
+.tag-picker-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 260px;
+  overflow-y: auto;
 }
 
-/* Too little room for even one readable tag: leave them all out of the row. */
-.stub-main .status-tags {
-  container-type: inline-size;
+.tag-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
 }
 
-@container (max-width: 72px) {
-  .tag-chip,
-  .status-tags-more {
-    display: none;
-  }
+.tag-picker-row .tags-panel-count {
+  margin-left: auto;
+}
+
+/* The tag page. */
+.tag-page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tag-page-title {
+  margin: 0;
+  min-width: 0;
+}
+
+.tag-page-title .tag-chip {
+  height: 36px;
+  font-size: 18px;
+}
+
+.tag-page-title .tag-chip::before {
+  clip-path: polygon(16px 0, 100% 0, 100% 100%, 16px 100%, 0 50%);
+}
+
+.tag-page-title .tag-chip::after {
+  clip-path: polygon(15.5px 0, 100% 0, 100% 100%, 15.5px 100%, 0 50%);
+}
+
+.tag-page-title .tag-chip-body {
+  padding-left: 22px;
+  padding-right: 14px;
+}
+
+.tag-page-title .tag-chip-hole {
+  width: 8px;
+  height: 8px;
+}
+
+.tag-page-summary {
+  margin: -4px 0 4px;
+}
+
+.tag-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+}
+
+.tag-menu > button:not(.link-button):not(.gold-button) {
+  min-height: 44px;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tag-menu > button:disabled {
+  color: var(--muted);
+}
+
+.tag-menu-title {
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* The measuring copy of a row's tags: same chips, natural width, never seen. */
+.status-tags-ruler {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  display: inline-flex;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.status-tags-ruler .tag-chip {
+  flex: none;
+  max-width: none;
+}
+
+.status-tags {
+  position: relative;
+}
+
+.status-tags.is-capped > .tag-chip:nth-child(2) {
+  max-width: var(--cap);
+}
+
+/* On a row the chip sits inside the status line's own height, so a tagged row is as tall as a plain one. */
+.tag-chip.is-row {
+  height: 18px;
+}
+
+.tag-chip.is-row::before {
+  clip-path: polygon(9px 0, 100% 0, 100% 100%, 9px 100%, 0 50%);
+}
+
+.tag-chip.is-row::after {
+  clip-path: polygon(8.5px 0, 100% 0, 100% 100%, 8.5px 100%, 0 50%);
 }

@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { TagChip } from './TagChip';
 import type { ReactNode } from 'react';
 import { ACTIVITY_WORDS, activityOrder, placeClause, type ActivityGroups, type ActivityKind } from '../lib/activity';
@@ -44,6 +45,7 @@ export function StatusLine({
   crowd,
   tags,
   tagsShown = 2,
+  onTag,
 }: {
   kind: ActivityKind;
   share?: 'private' | 'friends';
@@ -52,6 +54,8 @@ export function StatusLine({
   /** Your own tags (build notes 4, T05): the first few as luggage chips, then "+N". Not on Interested. */
   tags?: string[];
   tagsShown?: number;
+  /** Tapping a tag opens its page. */
+  onTag?: (tag: string) => void;
 }) {
   const watch = kind === 'watching' || kind === 'watched';
   return (
@@ -73,13 +77,77 @@ export function StatusLine({
       )}
       {crowd && !watch && <> · {crowd}</>}
       {tags && tags.length > 0 && kind !== 'interested' && (
-        <span className="status-tags">
-          {tags.slice(0, tagsShown).map((tag) => (
-            <TagChip key={tag} tag={tag} size="row" />
-          ))}
-          {tags.length > tagsShown && <span className="status-tags-more">+{tags.length - tagsShown}</span>}
-        </span>
+        <>
+          {tagsShown >= 99 ? (
+            <span className="status-tags">
+              {tags.map((tag) => (
+                <TagChip key={tag} tag={tag} size="row" onClick={onTag ? () => onTag(tag) : undefined} />
+              ))}
+            </span>
+          ) : (
+            <RowTags tags={tags} max={tagsShown} onTag={onTag} />
+          )}
+        </>
       )}
+    </span>
+  );
+}
+
+/**
+ * A row's tags (build notes 4, T05): the first two as luggage chips and "+N" for the rest, one line, never
+ * growing the row. The chips are measured at their natural width; those that do not fit in what the words
+ * leave are counted into the "+N" instead of being squeezed or cut.
+ */
+function RowTags({ tags, max, onTag }: { tags: string[]; max: number; onTag?: (tag: string) => void }) {
+  const box = useRef<HTMLSpanElement>(null);
+  const probe = useRef<HTMLSpanElement>(null);
+  const [fit, setFit] = useState(Math.min(tags.length, max));
+  /** When not even one whole tag fits, the first is shortened to this many px with an ellipsis. */
+  const [cap, setCap] = useState<number | null>(null);
+  const key = tags.join('|');
+  useLayoutEffect(() => {
+    const el = box.current;
+    const ruler = probe.current;
+    if (!el || !ruler) return;
+    const measure = () => {
+      const room = el.clientWidth;
+      const widths = [...ruler.querySelectorAll<HTMLElement>('.tag-chip')].map((chip) => chip.offsetWidth);
+      const MORE = 30;
+      const GAP = 4;
+      let used = 0;
+      let n = 0;
+      for (let i = 0; i < Math.min(widths.length, max); i++) {
+        const next = used + widths[i] + (i > 0 ? GAP : 0);
+        const reserve = i < widths.length - 1 ? MORE + GAP : 0;
+        if (next + reserve > room) break;
+        used = next;
+        n += 1;
+      }
+      if (n === 0 && widths.length > 0 && room - MORE - GAP >= 44) {
+        setFit(1);
+        setCap(room - MORE - GAP);
+      } else {
+        setFit(n);
+        setCap(null);
+      }
+    };
+    measure();
+    const watch = new ResizeObserver(measure);
+    watch.observe(el);
+    return () => watch.disconnect();
+  }, [key, max]);
+  const hidden = tags.length - fit;
+  return (
+    <span className={`status-tags${cap !== null ? ' is-capped' : ''}`} ref={box} style={cap !== null ? ({ '--cap': `${cap}px` } as CSSProperties) : undefined}>
+      <span className="status-tags-ruler" ref={probe} aria-hidden>
+        {tags.slice(0, max).map((tag) => (
+          <TagChip key={tag} tag={tag} size="row" />
+        ))}
+      </span>
+      {tags.slice(0, fit).map((tag) => (
+        <TagChip key={tag} tag={tag} size="row" onClick={onTag ? () => onTag(tag) : undefined} />
+      ))}
+      {hidden > 0 && <span className="status-tags-more">+{hidden}</span>}
     </span>
   );
 }
