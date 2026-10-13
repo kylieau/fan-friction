@@ -373,9 +373,9 @@ Words used below: **sprawl** = most fans drive; **hub** = in between (some trans
 
 **A4. Bay Area stays "Bay Area"; code stays BAY.** (She picked Something else.)
 - Kylie's words: "wtf man idk this is why i put it up for research. closest would be SF/OAK/Berkeley or something but idk idk idk what other areas. i'm annoyed, is there not an easy shorthand? Bay Area is ideal, esp if we're doing twin cities"
-- Resolution: display name stays "Bay Area" (already the repo name). Code stays BAY; Tampa Bay's code is TPA, so the codes don't collide. The city switcher's second line can read "SF · Oakland · San Jose", the same way Twin Cities gets "Minneapolis–St. Paul" (A5). **The second line is Push Pilot's lean; confirm with Kylie.**
+- Resolution: display name stays "Bay Area" (already the repo name), and the switcher shows just "Bay Area", with no second line. Code stays BAY; Tampa Bay's code is TPA, so the codes don't collide. (Kylie's correction, Oct 13, 8:27 AM PT.)
 - Why: "Bay Area" is what locals and teams say for the whole region; no single city name covers SF, Oakland and San Jose.
-- Rejected: SFO (airport code, and leaves out Oakland and San Jose); SF (only one city of several).
+- Rejected: SFO (airport code, and leaves out Oakland and San Jose); SF (only one city of several); a switcher second line "SF · Oakland · San Jose" like Twin Cities' (Kylie wants Bay Area to stay Bay Area).
 
 **A5. "Twin Cities" in the title; "Minneapolis–St. Paul" as the switcher second line and a search alias.**
 - Why: fits the 24pt title row and is what locals say.
@@ -518,6 +518,5 @@ Words used below: **sprawl** = most fans drive; **hub** = in between (some trans
 - Rejected: everything in one build (mixes math changes with screen work); names/codes only now (holds back colors, which are ready).
 
 ### Open points
-- A4: the "SF · Oakland · San Jose" second line is Push Pilot's lean; confirm.
 - A11 vs the follow-up prompts: the 14 follow-up prompts already ask for name and code, but say "three-letter code". Either treat those answers as the A11 research (reading codes as A1's 2–4 letter fan label), or write a separate prompt. Not settled.
 - F doesn't place B1, B3, B5, B8, C3–C8; they're tagged by group above.
