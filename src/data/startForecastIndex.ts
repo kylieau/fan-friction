@@ -41548,16 +41548,111 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "portland",
-    "eventId": "2026-10-17-espn-timbers-761888",
-    "date": "2026-10-17",
-    "start": "19:30",
-    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "eventId": "2026-10-13-tm-vvG1HZ_1xuGMaR",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1500
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-15-tm-vvG1HZ_G20GKwT",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
       "rating": 1,
       "friction": "Low",
       "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A70Ao0",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-vvG1HZ_G20uSS1",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "MANÁ next door, same hours."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-vvG1HZbMKa2aYz",
+    "date": "2026-10-16",
+    "start": "20:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Disney On Ice presents Jump In! next door, same hours."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-Z7r9jZ1A70s86",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.6
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-16-tm-Z7r9jZ1AAvPp6",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.6
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-espn-timbers-761888",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Doja Cat 1.4 mi away, same hours."
     },
     "draw": {
       "count": 24538,
@@ -41567,10 +41662,125 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "portland",
+    "eventId": "2026-10-17-tm-vvG1HZ_G202dSj",
+    "date": "2026-10-17",
+    "start": "11:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-vvG1HZbSnaneIS",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Timbers vs. Colorado 1.4 mi away, same hours."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-Z7r9jZ1A7JAoA",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.8
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-17-tm-Z7r9jZ1AAvkAJ",
+    "date": "2026-10-17",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.8
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-18-tm-vvG1HZ_G20KdVO",
+    "date": "2026-10-18",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-18-tm-Z7r9jZ1A7JAok",
+    "date": "2026-10-18",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-19-tm-vvG1HZ_GQuJgGr",
+    "date": "2026-10-19",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-20-tm-vvG1HZ_apoDgUQ",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
     "eventId": "2026-10-21-espn-blazers-401909841",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -41586,10 +41796,18 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "portland",
+    "eventId": "2026-10-22-tm-Z7r9jZ1A7-EbU",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "portland",
     "eventId": "2026-10-23-espn-thorns-401854029",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -41605,10 +41823,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "portland",
+    "eventId": "2026-10-23-tm-Z7r9jZ1A7P9C7",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
     "eventId": "2026-10-24-espn-timbers-761902",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:22:31.734Z",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -41620,6 +41853,64 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 24538,
       "low": 22592,
       "high": 24686
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7JA-M",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-25-tm-vvG1HZ_FDLdrxf",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11685
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-25-tm-Z7r9jZ1A7JAxd",
+    "date": "2026-10-25",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2776
+    }
+  },
+  {
+    "metroId": "portland",
+    "eventId": "2026-10-27-tm-vvG1HZ_6heHUi_",
+    "date": "2026-10-27",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:52:11.427Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2776
     }
   },
   {
