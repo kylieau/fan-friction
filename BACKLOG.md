@@ -53,6 +53,10 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
   - **Activity wording, settled (Kylie, Oct 12):** "attending" everywhere, as built; ignore the mock's "going".
 - **Polish, batch later:** the Log an event page (where "+ Stub it" on Stubs leads) still has that title, while 4.4 makes "+ Stub it" the logging copy; the read-box words are 8–9 px, under the 11 pt floor in 4.0 (they were before build 3); the empty Faves picker under Following uses a heading rather than a page title.
 
+### G. Build 4 coordination (noted Oct 13, 2026, Claude Code handoff sync)
+- **PRs or straight to main?** `docs/build-4/build-notes-4-oct12.md` ("How to build") and Kylie's Oct 9 standing instruction say one commit per step straight to `main`, no PRs or branches; the city builds (#17–#50), the build 4 docs (#36–#55) and Composer's open PR #54 use PRs, and `docs/build-4/SOL-CHECK-PROMPT.md` runs "after Composer's and Claude Code's PRs have merged". Which does Claude Code use for its build 4 parts?
+- **The Oct 13 city builds** (Miami, Ottawa–Gatineau, Indianapolis, Salt Lake City, Edmonton, Washington DC, Cleveland, San Antonio, Portland, Detroit, Pittsburgh, Raleigh–Durham, St. Louis, Denver, plus the Oct 12 ones) are live in `COVERED_METRO_IDS` (40 metros) but marked "not yet approved like K14" under Next. Each needs her approval of its scope.
+
 ## Next
 
 ### Miami follow-up (city build, Oct 13, 2026; not yet approved like K14)
