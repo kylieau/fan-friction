@@ -8678,267 +8678,6 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
-  // ---------- Edmonton (docs/research/city-builds/edmonton/; register Oct 13, 2026) ----------
-  // Hub city type. carShare values are estimated from edmonton-city-type-answer.md (not measured).
-  'commonwealth-stadium': {
-    id: 'commonwealth-stadium',
-    metroId: 'edmonton',
-    carShare: 0.62,
-    names: [{ name: 'Commonwealth Stadium' }, { name: 'The Brick Field at Commonwealth Stadium' }],
-    location: [-113.4764233, 53.5596586],
-    capacity: [
-      {
-        seats: 56302,
-        setup: 'football',
-        note: 'Reported. Wikipedia 56,302; also 56,400, over 55,000 and 55,000 in other sources. Lower-bowl-only Elks ticketing is a separate operational cap, not stored here. Source: https://en.wikipedia.org/wiki/Commonwealth_Stadium',
-      },
-    ],
-    roof: 'open',
-  },
-  'rogers-place': {
-    id: 'rogers-place',
-    metroId: 'edmonton',
-    carShare: 0.75,
-    names: [{ name: 'Rogers Place' }],
-    location: [-113.49778, 53.54694],
-    capacity: [
-      {
-        seats: 18500,
-        setup: 'hockey',
-        note: 'Official (Rogers Place fun facts). Widely reported 18,347 also noted. Source: https://www.rogersplace.com/fun-facts/',
-      },
-      {
-        seats: 20030,
-        setup: 'concert',
-        note: 'Official centre-stage concert figure. Conflicts: 20,734 and 20,147 in secondary sources. Source: https://www.rogersplace.com/fun-facts/',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'remax-field': {
-    id: 'remax-field',
-    metroId: 'edmonton',
-    carShare: 0.85,
-    names: [
-      { name: 'Telus Field' },
-      { name: 'Edmonton Ballpark', from: '2016-01-01' },
-      { name: 'RE/MAX Field', from: '2017-05-01' },
-    ],
-    location: [-113.49667, 53.53167],
-    capacity: [
-      {
-        seats: 9200,
-        setup: 'baseball',
-        note: 'Reported. Source: https://en.wikipedia.org/wiki/RE/MAX_Field',
-      },
-    ],
-    roof: 'open',
-  },
-  'rad-torque-raceway': {
-    id: 'rad-torque-raceway',
-    metroId: 'edmonton',
-    carShare: 0.85,
-    names: [{ name: 'Castrol Raceway' }, { name: 'RAD Torque Raceway', from: '2021-11-01' }],
-    location: [-113.5912, 53.3338],
-    capacity: [
-      {
-        seats: 8500,
-        setup: 'racing',
-        note: 'Reported drag-strip figure; seating type not stated. Clay oval 4,500 is a separate configuration. Source: https://en.wikipedia.org/wiki/RAD_Torque_Raceway',
-      },
-    ],
-    roof: 'open',
-  },
-  'clarke-stadium': {
-    id: 'clarke-stadium',
-    metroId: 'edmonton',
-    names: [{ name: 'Clarke Stadium' }],
-    location: [-113.4782849, 53.5572795],
-    capacity: [
-      {
-        seats: 5000,
-        setup: 'football',
-        note: 'Official permanent seats (City sports fields). Wikipedia cites 6,000 from 2026 retrofit; not stored without an official total. Source: https://www.edmonton.ca/activities_parks_recreation/sports-fields-staffed',
-      },
-    ],
-    roof: 'open',
-  },
-  'edmonton-expo-arena': {
-    id: 'edmonton-expo-arena',
-    metroId: 'edmonton',
-    names: [
-      { name: 'Edmonton EXPO Centre Arena' },
-      { name: 'Hall D' },
-      { name: 'Flair Airlines Hangar' },
-    ],
-    location: [-113.4580962, 53.5687097],
-    capacity: [
-      {
-        seats: 4200,
-        setup: 'basketball',
-        note: 'Official tiered arena (EXPO sporting events). Below 5,000 friction line. Source: https://edmontonexpocentre.com/plan-your-event/sporting-events',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'edmonton-convention-centre': {
-    id: 'edmonton-convention-centre',
-    metroId: 'edmonton',
-    names: [{ name: 'Edmonton Convention Centre' }, { name: 'Shaw Conference Centre' }],
-    location: [-113.4858137, 53.5411497],
-    capacity: [
-      {
-        seats: 5254,
-        setup: 'concert',
-        note: 'Official listing for Hall ABC theatre chairs; movable chairs in a convention hall, not a fixed bowl. Source: https://exploreedmonton.com/industry/offsite/edmonton-convention-centre',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'foote-field': {
-    id: 'foote-field',
-    metroId: 'edmonton',
-    names: [{ name: 'Foote Field' }],
-    location: [-113.5319577, 53.5036629],
-    capacity: [
-      {
-        seats: 3500,
-        setup: 'football',
-        note: 'Official U of A (2,500 west + 1,000 east bleachers). Source: https://bearsandpandas.ca/sports/2020/11/15/foote-field%20ll.aspx',
-      },
-    ],
-    roof: 'open',
-  },
-  'clare-drake-arena': {
-    id: 'clare-drake-arena',
-    metroId: 'edmonton',
-    names: [{ name: 'Clare Drake Arena' }],
-    location: [-113.5284011, 53.524505],
-    capacity: [
-      {
-        seats: 2600,
-        setup: 'hockey',
-        note: 'Official U of A. Conflicts 2,700 and 2,800 in secondary sources. Source: https://www.ualberta.ca/kinesiology-sport-recreation/facilities/north-campus/clare-drake-arena',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'northern-alberta-jubilee': {
-    id: 'northern-alberta-jubilee',
-    metroId: 'edmonton',
-    names: [{ name: 'Northern Alberta Jubilee Auditorium' }],
-    location: [-113.5289, 53.5219],
-    capacity: [
-      {
-        seats: 2538,
-        setup: 'concert',
-        note: 'Reported without pit. With pit 2,416 also cited. Source: https://en.wikipedia.org/wiki/Northern_Alberta_Jubilee_Auditorium',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'servus-credit-union-place': {
-    id: 'servus-credit-union-place',
-    metroId: 'edmonton',
-    names: [{ name: 'Servus Credit Union Place' }, { name: 'Servus Place' }],
-    location: [-113.57435, 53.6445697],
-    capacity: [
-      {
-        seats: 2023,
-        setup: 'hockey',
-        note: 'Official City of St. Albert performance arena, excluding standing room. Source: https://stalbert.ca/rec/facilities/servus/amenities/arenas/',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'winspear-centre': {
-    id: 'winspear-centre',
-    metroId: 'edmonton',
-    names: [{ name: 'Francis Winspear Centre for Music' }, { name: 'Winspear Centre' }],
-    location: [-113.4870899, 53.5442417],
-    capacity: [
-      {
-        seats: 1668,
-        setup: 'concert',
-        note: 'Reported main hall. With choir loft 1,884 also cited. Source: https://en.wikipedia.org/wiki/Winspear_Centre',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'sherwood-park-arena': {
-    id: 'sherwood-park-arena',
-    metroId: 'edmonton',
-    names: [{ name: 'Sherwood Park Arena & Sports Centre' }, { name: 'Randy Rosen Rink' }],
-    location: [-113.3064224, 53.5269535],
-    capacity: [
-      {
-        seats: 1500,
-        setup: 'hockey',
-        note: 'Official Strathcona County. Source: https://www.strathcona.ca/recreation-events/recreation-centres/sherwood-park-arena-and-sports-centre/',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'midway-music-hall': {
-    id: 'midway-music-hall',
-    metroId: 'edmonton',
-    names: [{ name: 'Midway Music Hall' }],
-    location: [-113.49652, 53.4985],
-    capacity: [
-      {
-        seats: 1450,
-        setup: 'concert',
-        note: 'Official general admission. Source: https://midwaymusichall.com/booking',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'thompson-family-arena': {
-    id: 'thompson-family-arena',
-    metroId: 'edmonton',
-    names: [{ name: 'Thompson Family Arena at Heavy Metal Place' }, { name: 'Heavy Metal Place' }],
-    location: [-113.8780428, 53.5682568],
-    capacity: [
-      {
-        seats: 1400,
-        setup: 'hockey',
-        note: 'Reported by architect. Facility total up to 1,700 may include the second rink. Source: https://gecarchitecture.com/work/heavy-metal-place',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'downtown-community-arena': {
-    id: 'downtown-community-arena',
-    metroId: 'edmonton',
-    names: [{ name: 'Downtown Community Arena' }, { name: 'Edmonton Downtown Community Arena' }],
-    location: [-113.4961925, 53.5473618],
-    capacity: [
-      {
-        seats: 1000,
-        setup: 'hockey',
-        note: 'Reported pre-opening blog figure; needs official confirmation. Source: https://blog.mastermaq.ca/2016/01/16/rogers-place-sneak-peek-january-2016/',
-      },
-    ],
-    roof: 'indoor',
-  },
-  'century-mile-racetrack': {
-    id: 'century-mile-racetrack',
-    metroId: 'edmonton',
-    carShare: 0.9,
-    names: [{ name: 'Century Mile Racetrack and Casino' }],
-    location: [-113.5599812, 53.3146194],
-    capacity: [],
-    roof: 'open',
-  },
-  'river-cree-resort': {
-    id: 'river-cree-resort',
-    metroId: 'edmonton',
-    names: [{ name: 'River Cree Resort & Casino' }, { name: 'The Venue' }],
-    // Research aggregator point, low precision; Enoch Cree Nation edge scope.
-    location: [-113.696, 53.51],
-    capacity: [],
-    roof: 'indoor',
-  },
   // ---------- Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/; car shares from ottawa-gatineau-city-type-answer.md), Oct 13, 2026 ----------
   // LeBreton Flats Park (Bluesfest, Canada Day), Winterlude sites, Race Weekend and FMG are not rows — point events when a count exists.
   // Lansdowne Event Centre (A6) opens ~Jul 2028; Cohere Centre (A4) and Rogers Centre Ottawa hall (A7) have no sourced concert/sport capacity.
@@ -9239,6 +8978,260 @@ export const VENUES: Record<string, Venue> = {
       { seats: 1200, setup: 'baseball', note: 'Reported Utes baseball home (opened Jan 2026). Name collides with America First Field and the Bees ballpark — match exact strings. Source: https://www.sltrib.com/sports/utah-utes/2025/05/19/utah-baseball-plays-last-game/' },
     ],
     roof: 'open',
+  },
+  // ---------- Edmonton (docs/research/city-builds/edmonton/; register Oct 13, 2026) ----------
+  // Hub city type. carShare values are estimated from edmonton-city-type-answer.md (not measured).
+  'commonwealth-stadium': {
+    id: 'commonwealth-stadium',
+    metroId: 'edmonton',
+    carShare: 0.62,
+    names: [{ name: 'Commonwealth Stadium' }, { name: 'The Brick Field at Commonwealth Stadium' }],
+    location: [-113.4764233, 53.5596586],
+    // Round-2 rule: conflicting reported figures (56,302 / 56,400 / 55,000) and no official total; blank until one official figure (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'rogers-place': {
+    id: 'rogers-place',
+    metroId: 'edmonton',
+    carShare: 0.75,
+    names: [{ name: 'Rogers Place' }],
+    location: [-113.49778, 53.54694],
+    capacity: [
+      {
+        seats: 18500,
+        setup: 'hockey',
+        note: 'Official (Rogers Place fun facts). Widely reported 18,347 also noted. Source: https://www.rogersplace.com/fun-facts/',
+      },
+      {
+        seats: 20030,
+        setup: 'concert',
+        note: 'Official centre-stage concert figure. Conflicts: 20,734 and 20,147 in secondary sources. Source: https://www.rogersplace.com/fun-facts/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'remax-field': {
+    id: 'remax-field',
+    metroId: 'edmonton',
+    names: [
+      { name: 'Telus Field' },
+      { name: 'Edmonton Ballpark', from: '2016-01-01' },
+      { name: 'RE/MAX Field', from: '2017-05-01' },
+    ],
+    location: [-113.49667, 53.53167],
+    capacity: [
+      {
+        seats: 9200,
+        setup: 'baseball',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/RE/MAX_Field',
+      },
+    ],
+    roof: 'open',
+  },
+  'rad-torque-raceway': {
+    id: 'rad-torque-raceway',
+    metroId: 'edmonton',
+    names: [{ name: 'Castrol Raceway' }, { name: 'RAD Torque Raceway', from: '2021-11-01' }],
+    location: [-113.5912, 53.3338],
+    capacity: [
+      {
+        seats: 8500,
+        setup: 'racing',
+        note: 'Reported drag-strip figure; seating type not stated. Clay oval 4,500 is a separate configuration. Source: https://en.wikipedia.org/wiki/RAD_Torque_Raceway',
+      },
+    ],
+    roof: 'open',
+  },
+  'clarke-stadium': {
+    id: 'clarke-stadium',
+    metroId: 'edmonton',
+    names: [{ name: 'Clarke Stadium' }],
+    location: [-113.4782849, 53.5572795],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'football',
+        note: 'Official permanent seats (City sports fields). Wikipedia cites 6,000 from 2026 retrofit; not stored without an official total. Source: https://www.edmonton.ca/activities_parks_recreation/sports-fields-staffed',
+      },
+    ],
+    roof: 'open',
+  },
+  'edmonton-expo-arena': {
+    id: 'edmonton-expo-arena',
+    metroId: 'edmonton',
+    names: [
+      { name: 'Edmonton EXPO Centre Arena' },
+      { name: 'Hall D' },
+      { name: 'Flair Airlines Hangar' },
+    ],
+    location: [-113.4580962, 53.5687097],
+    capacity: [
+      {
+        seats: 4200,
+        setup: 'basketball',
+        note: 'Official tiered arena (EXPO sporting events). Below 5,000 friction line. Source: https://edmontonexpocentre.com/plan-your-event/sporting-events',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'edmonton-convention-centre': {
+    id: 'edmonton-convention-centre',
+    metroId: 'edmonton',
+    names: [{ name: 'Edmonton Convention Centre' }, { name: 'Shaw Conference Centre' }],
+    location: [-113.4858137, 53.5411497],
+    capacity: [
+      {
+        seats: 5254,
+        setup: 'concert',
+        note: 'Official listing for Hall ABC theatre chairs; movable chairs in a convention hall, not a fixed bowl. Source: https://exploreedmonton.com/industry/offsite/edmonton-convention-centre',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'foote-field': {
+    id: 'foote-field',
+    metroId: 'edmonton',
+    names: [{ name: 'Foote Field' }],
+    location: [-113.5319577, 53.5036629],
+    capacity: [
+      {
+        seats: 3500,
+        setup: 'football',
+        note: 'Official U of A (2,500 west + 1,000 east bleachers). Source: https://bearsandpandas.ca/sports/2020/11/15/foote-field%20ll.aspx',
+      },
+    ],
+    roof: 'open',
+  },
+  'clare-drake-arena': {
+    id: 'clare-drake-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Clare Drake Arena' }],
+    location: [-113.5284011, 53.524505],
+    capacity: [
+      {
+        seats: 2600,
+        setup: 'hockey',
+        note: 'Official U of A. Conflicts 2,700 and 2,800 in secondary sources. Source: https://www.ualberta.ca/kinesiology-sport-recreation/facilities/north-campus/clare-drake-arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'northern-alberta-jubilee': {
+    id: 'northern-alberta-jubilee',
+    metroId: 'edmonton',
+    names: [{ name: 'Northern Alberta Jubilee Auditorium' }],
+    location: [-113.5289, 53.5219],
+    capacity: [
+      {
+        seats: 2538,
+        setup: 'concert',
+        note: 'Reported without pit. With pit 2,416 also cited. Source: https://en.wikipedia.org/wiki/Northern_Alberta_Jubilee_Auditorium',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'servus-credit-union-place': {
+    id: 'servus-credit-union-place',
+    metroId: 'edmonton',
+    names: [{ name: 'Servus Credit Union Place' }, { name: 'Servus Place' }],
+    location: [-113.57435, 53.6445697],
+    capacity: [
+      {
+        seats: 2023,
+        setup: 'hockey',
+        note: 'Official City of St. Albert performance arena, excluding standing room. Source: https://stalbert.ca/rec/facilities/servus/amenities/arenas/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'winspear-centre': {
+    id: 'winspear-centre',
+    metroId: 'edmonton',
+    names: [{ name: 'Francis Winspear Centre for Music' }, { name: 'Winspear Centre' }],
+    location: [-113.4870899, 53.5442417],
+    capacity: [
+      {
+        seats: 1668,
+        setup: 'concert',
+        note: 'Reported main hall. With choir loft 1,884 also cited. Source: https://en.wikipedia.org/wiki/Winspear_Centre',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'sherwood-park-arena': {
+    id: 'sherwood-park-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Sherwood Park Arena & Sports Centre' }, { name: 'Randy Rosen Rink' }],
+    location: [-113.3064224, 53.5269535],
+    capacity: [
+      {
+        seats: 1500,
+        setup: 'hockey',
+        note: 'Official Strathcona County. Source: https://www.strathcona.ca/recreation-events/recreation-centres/sherwood-park-arena-and-sports-centre/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'midway-music-hall': {
+    id: 'midway-music-hall',
+    metroId: 'edmonton',
+    names: [{ name: 'Midway Music Hall' }],
+    location: [-113.49652, 53.4985],
+    capacity: [
+      {
+        seats: 1450,
+        setup: 'concert',
+        note: 'Official general admission. Source: https://midwaymusichall.com/booking',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'thompson-family-arena': {
+    id: 'thompson-family-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Thompson Family Arena at Heavy Metal Place' }, { name: 'Heavy Metal Place' }],
+    location: [-113.8780428, 53.5682568],
+    capacity: [
+      {
+        seats: 1400,
+        setup: 'hockey',
+        note: 'Reported by architect. Facility total up to 1,700 may include the second rink. Source: https://gecarchitecture.com/work/heavy-metal-place',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'downtown-community-arena': {
+    id: 'downtown-community-arena',
+    metroId: 'edmonton',
+    names: [{ name: 'Downtown Community Arena' }, { name: 'Edmonton Downtown Community Arena' }],
+    location: [-113.4961925, 53.5473618],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'hockey',
+        note: 'Reported pre-opening blog figure; needs official confirmation. Source: https://blog.mastermaq.ca/2016/01/16/rogers-place-sneak-peek-january-2016/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'century-mile-racetrack': {
+    id: 'century-mile-racetrack',
+    metroId: 'edmonton',
+    carShare: 0.9,
+    names: [{ name: 'Century Mile Racetrack and Casino' }],
+    location: [-113.5599812, 53.3146194],
+    capacity: [],
+    roof: 'open',
+  },
+  'river-cree-resort': {
+    id: 'river-cree-resort',
+    metroId: 'edmonton',
+    names: [{ name: 'River Cree Resort & Casino' }, { name: 'The Venue' }],
+    // Research aggregator point, low precision; Enoch Cree Nation edge scope.
+    location: [-113.696, 53.51],
+    capacity: [],
+    roof: 'indoor',
   },
 };
 
