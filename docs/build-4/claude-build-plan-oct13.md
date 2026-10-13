@@ -1,6 +1,6 @@
 # Build 4, Claude Code's slice: plan (Oct 13, 2026)
 
-Status: LOCKED after advisor review (Oct 13). Source of truth is `build-notes-4-oct12.md`; this plan only orders and scopes it.
+Status: BUILT (Oct 13): steps 0–17 shipped to `main`, plus the Oct 13 follow-ups (a game in another city belongs to that city, Celsius in Canada and Mexico, favorite cities newer-wins, a hand-added plan's page). Open: Kylie's pick on the two "+N"s, the seats research, the signed-in phone check. LOCKED after advisor review (Oct 13). Source of truth is `build-notes-4-oct12.md`; this plan only orders and scopes it.
 Owner of every step: Claude Code (Sonnet), Opus as advisor. Composer's slice (PR #54) is merged and out of scope.
 
 ## Kylie's answers (Oct 13) this plan builds on
