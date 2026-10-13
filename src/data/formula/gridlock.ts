@@ -87,7 +87,11 @@ const SCALE = 7.5;
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub' };
+// Raleigh–Durham is sprawl (research, Oct 12, 2026, docs/research/city-builds/raleigh-durham/raleigh-durham-city-type-answer.md):
+// every large room but the UNC and Duke campus rooms sits on surface lots by a freeway, no venue has rail, and event transit is
+// park-and-ride that starts with a car trip. No share is measured; the venue carShare values wired in venues.ts are the answer's
+// labelled estimates (section 8.2), so only rooms with a row there carry one and the rest use the sprawl fallback.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'raleigh-durham': 'sprawl' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -281,6 +285,31 @@ const ZONE_NAMES: Record<string, string> = {
   'caesars-superdome': 'Superdome complex',
   'smoothie-king-center': 'Superdome complex',
   'anderson-arena': 'St. Thomas',
+  // Raleigh–Durham clusters that share lots, roads and police traffic operations (city-type answer section 6).
+  'lenovo-center': 'West Raleigh',
+  'carter-finley-stadium': 'West Raleigh',
+  'dorton-arena': 'West Raleigh',
+  'reynolds-coliseum': 'NC State campus',
+  'wallace-wade-stadium': 'Duke campus',
+  'cameron-indoor-stadium': 'Duke campus',
+  'koskinen-stadium': 'Duke campus',
+  'kenan-stadium': 'UNC campus',
+  'dean-smith-center': 'UNC campus',
+  'carmichael-arena': 'UNC campus',
+  'dorrance-field': 'UNC campus',
+  'durham-bulls-athletic-park': 'Downtown Durham',
+  'dpac': 'Downtown Durham',
+  'o-kelly-riddick-stadium': 'NCCU',
+  'mcdougald-mclendon-arena': 'NCCU',
+  'red-hat-amphitheater-raleigh': 'Downtown Raleigh',
+  'red-hat-amphitheater-raleigh-new': 'Downtown Raleigh',
+  'raleigh-memorial-auditorium': 'Downtown Raleigh',
+  'meymandi-concert-hall': 'Downtown Raleigh',
+  'first-horizon-stadium': 'Cary',
+  'koka-booth-amphitheatre': 'Cary',
+  'coastal-credit-union-music-park': 'Walnut Creek',
+  'north-main-athletic-complex-stadium': 'Holly Springs',
+  'nomaco-park': 'Zebulon',
 };
 
 export interface Zone {

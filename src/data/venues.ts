@@ -8447,6 +8447,293 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // ---------- Raleigh–Durham (docs/research/city-builds/raleigh-durham/raleigh-durham-venue-table-answer.md; car shares from raleigh-durham-city-type-answer.md section 8.2), Oct 13, 2026 ----------
+  // Wake, Durham and Orange counties. Coordinates are OpenStreetMap (Nominatim, Oct 13, 2026) unless a note says approximate.
+  // Every carShare below is the city-type answer's ESTIMATE, not a measured split (no Triangle row is measured or projected).
+  // A room with no row in section 8.2 carries no carShare and uses the sprawl fallback.
+  'carter-finley-stadium': {
+    id: 'carter-finley-stadium',
+    metroId: 'raleigh-durham',
+    carShare: 0.91, // estimate, city-type V02
+    names: [{ name: 'Carter-Finley Stadium' }],
+    location: [-78.7196045, 35.8008464],
+    capacity: [
+      { seats: 56919, setup: 'football', note: 'Official (NC State). Aggregators list 58,000 and Wikipedia 57,583; official used. NHL Stadium Series Feb 18, 2023 announced 56,961 in a temporary rink. Concert setup unknown. Field name Wayne Day Family Field. Source: venue table R01.' },
+    ],
+    roof: 'open',
+  },
+  'kenan-stadium': {
+    id: 'kenan-stadium',
+    metroId: 'raleigh-durham',
+    carShare: 0.75, // estimate, city-type V03
+    names: [{ name: 'Kenan Memorial Stadium' }, { name: 'Kenan Stadium' }],
+    location: [-79.0478199, 35.9069432],
+    capacity: [
+      { seats: 62980, fromYear: 2011, setup: 'football', note: 'Reported (Wikipedia): 62,980 for 2011–16. Source: venue table R02.' },
+      { seats: 62562, fromYear: 2017, setup: 'football', note: 'Reported (Wikipedia): 2017. Source: venue table R02.' },
+      { seats: 50500, fromYear: 2018, setup: 'football', note: 'Official (UNC). Bleachers replaced by seats for 2018. Field is Chris Smith Field. Source: venue table R02.' },
+    ],
+    roof: 'open',
+  },
+  'wallace-wade-stadium': {
+    id: 'wallace-wade-stadium',
+    metroId: 'raleigh-durham',
+    carShare: 0.87, // estimate, city-type V07
+    names: [{ name: 'Wallace Wade Stadium' }],
+    location: [-78.9418892, 35.9954458],
+    capacity: [
+      { seats: 40004, fromYear: 2016, setup: 'football', note: 'Reported: 40,004 for 2016–23. Source: venue table R03.' },
+      { seats: 35018, fromYear: 2024, setup: 'football', note: 'Official (Duke). Seated, after the 2024 Devils Deck. The Devils Deck (just over 1,500, standing, game ticket required) is not added. Field is Brooks Field. Source: venue table R03.' },
+    ],
+    roof: 'open',
+  },
+  'dean-smith-center': {
+    id: 'dean-smith-center',
+    metroId: 'raleigh-durham',
+    carShare: 0.8, // estimate, city-type V04
+    names: [{ name: 'Dean E. Smith Center' }],
+    location: [-79.0438119, 35.8994837],
+    capacity: [
+      { seats: 21750, setup: 'basketball', note: 'Official (UNC, Jan 2026). 2023–24 average announced 20,593. Concert setup unknown (last concert 2008). Replacement arena talks suspended Mar 30, 2026. Source: venue table R04.' },
+    ],
+    roof: 'indoor',
+  },
+  'lenovo-center': {
+    id: 'lenovo-center',
+    metroId: 'raleigh-durham',
+    carShare: 0.95, // estimate, city-type V01 (hockey 0.95; concerts 0.96)
+    names: [{ name: 'PNC Arena' }, { name: 'Lenovo Center', from: '2024-09-01' }],
+    location: [-78.7219166, 35.8033981],
+    capacity: [
+      { seats: 18680, setup: 'hockey', note: 'Reported (Stadium Journey, city-type V01), before the summer 2026 work. The venue table says prior bases conflict (18,299, 18,547 and an implied 18,912); all far above 5,000. Source: city-type answer section 4.' },
+      { seats: 19500, setup: 'concert', note: 'Reported (Arena Network), in-the-round maximum before 2026. 180° 13,000, 270° 14,000, 360° 19,000. Source: city-type answer section 4.' },
+      { seats: 19606, fromYear: 2026, setup: 'hockey', note: 'Reported (board figure via CBS17 and WRAL), 2026–27 after +694 seats. Reopened Sept 15, 2026; confirm the official count after reopening. Source: venue table R05.' },
+      { seats: 20450, fromYear: 2026, setup: 'basketball', note: 'Reported (CBS17), 2026–27 NC State men\'s basketball. Source: venue table R05.' },
+      { seats: 21000, fromYear: 2026, setup: 'concert', note: 'Reported (Pollstar): "more than 21,000", so 21,000 is a floor, not an exact count. Source: venue table R05.' },
+    ],
+    roof: 'indoor',
+  },
+  'coastal-credit-union-music-park': {
+    id: 'coastal-credit-union-music-park',
+    metroId: 'raleigh-durham',
+    carShare: 0.97, // estimate, city-type V10
+    names: [{ name: 'Walnut Creek Amphitheatre' }, { name: 'Coastal Credit Union Music Park at Walnut Creek', from: '2016-04-28' }],
+    location: [-78.5764675, 35.7493939],
+    capacity: [
+      { seats: 20601, setup: 'concert', note: 'Reported (Ticketmaster): 6,847 reserved seats plus 13,653 lawn (general admission, not chairs). The operator rounds to 20,000. Earlier names Time Warner Cable Music Pavilion, Alltel Pavilion and Hardee\'s Walnut Creek are undated in the research. Source: venue table R06.' },
+    ],
+    roof: 'open',
+  },
+  'o-kelly-riddick-stadium': {
+    id: 'o-kelly-riddick-stadium',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'O\'Kelly-Riddick Stadium' }],
+    location: [-78.8970335, 35.9738768],
+    capacity: [
+      { seats: 10000, setup: 'football', note: 'Official (NCCU). Wikipedia\'s list shows 11,500; official used. Source: venue table R07.' },
+    ],
+    roof: 'open',
+  },
+  'durham-bulls-athletic-park': {
+    id: 'durham-bulls-athletic-park',
+    metroId: 'raleigh-durham',
+    carShare: 0.85, // estimate, city-type V08
+    names: [{ name: 'Durham Bulls Athletic Park' }],
+    location: [-78.9039173, 35.9915839],
+    capacity: [
+      { seats: 10000, setup: 'baseball', note: 'Official (MiLB). About 9,000 fixed seats per BR Bullpen; record 12,000 on 6/15/2019 (reported). Goodmon Field is the field name. Adjacent to DPAC. Source: venue table R08.' },
+    ],
+    roof: 'open',
+  },
+  'first-horizon-stadium': {
+    id: 'first-horizon-stadium',
+    metroId: 'raleigh-durham',
+    carShare: 0.96, // estimate, city-type V14
+    names: [
+      { name: 'WakeMed Soccer Park' },
+      { name: 'Sahlen\'s Stadium', from: '2017-01-01' },
+      { name: 'WakeMed Soccer Park', from: '2022-01-01' },
+      { name: 'First Horizon Stadium', from: '2025-01-01' },
+    ],
+    // Approximate: OpenStreetMap has no node for the stadium itself, so this is the 101 Soccer Park Dr address point inside the complex.
+    location: [-78.757191, 35.787279],
+    capacity: [
+      { seats: 10000, setup: 'soccer', note: 'Official (NC Courage). An app listing shows 11,170 and the 2025 finale drew more than 11,000, so attendance can exceed the listed figure. The complex is WakeMed Soccer Park; the stadium is First Horizon Stadium (naming bought Dec 18, 2024, effective 2025). North Carolina FC (men) sits out 2026. Source: venue table R09.' },
+    ],
+    roof: 'open',
+  },
+  'cameron-indoor-stadium': {
+    id: 'cameron-indoor-stadium',
+    metroId: 'raleigh-durham',
+    carShare: 0.7, // estimate, city-type V06
+    names: [{ name: 'Cameron Indoor Stadium' }],
+    location: [-78.9422669, 35.9974496],
+    capacity: [
+      { seats: 9314, setup: 'basketball', note: 'Reported (Wikipedia, Garden & Gun), stable since 1988. Source: venue table R10.' },
+    ],
+    roof: 'indoor',
+  },
+  'durham-county-memorial-stadium': {
+    id: 'durham-county-memorial-stadium',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Durham County Memorial Stadium' }],
+    location: [-78.9028957, 36.0351406],
+    capacity: [
+      { seats: 8500, setup: 'football', note: 'Official (Durham County and Durham Sports Commission). Football, soccer and track. Hosts Shaw University (a Raleigh school) football, Carolina Flyers (UFA) and Tobacco Road FC; no league feed. Source: venue table R11.' },
+    ],
+    roof: 'open',
+  },
+  'dorton-arena': {
+    id: 'dorton-arena',
+    metroId: 'raleigh-durham',
+    carShare: 0.95, // estimate, city-type V15
+    names: [{ name: 'Dorton Arena' }, { name: 'J.S. Dorton Arena' }],
+    location: [-78.7103734, 35.7939506],
+    capacity: [
+      { seats: 5000, note: 'Official (NCDA): permanent seats, exactly at the friction line. Cable-roof arena, not air-conditioned. Source: venue table R12.' },
+      { seats: 7000, setup: 'concert', note: 'Official (NCDA): stage set with portable floor seats. The same agency\'s history page says 6,500; Visit Raleigh says 7,610 and NCpedia 9,150. Fair concerts happen inside fair-gate admission: log the concert here and the fair separately, never summed. Source: venue table R12.' },
+    ],
+    roof: 'indoor',
+  },
+  'koka-booth-amphitheatre': {
+    id: 'koka-booth-amphitheatre',
+    metroId: 'raleigh-durham',
+    carShare: 0.96, // estimate, city-type V13
+    names: [{ name: 'Amphitheatre at Regency Park' }, { name: 'Koka Booth Amphitheatre' }],
+    location: [-78.7953503, 35.7288197],
+    capacity: [
+      { seats: 7000, setup: 'concert', note: 'Official (venue deck): 1,048 reserved + 5,768 general admission + 184 covered VIP, or pit 1,500 + lawn 5,316 + 184. Lantern Festival and Diwali are events here, not separate venues. Source: venue table R13.' },
+    ],
+    roof: 'open',
+  },
+  'carmichael-arena': {
+    id: 'carmichael-arena',
+    metroId: 'raleigh-durham',
+    carShare: 0.75, // estimate, city-type V05
+    names: [{ name: 'Carmichael Arena' }],
+    location: [-79.0452125, 35.909539],
+    capacity: [
+      { seats: 6822, setup: 'basketball', note: 'Official (UNC). Wikipedia\'s list shows 8,010; official used. OpenStreetMap labels the building Carmichael Auditorium. Source: venue table R15.' },
+    ],
+    roof: 'indoor',
+  },
+  // Red Hat is two rooms keyed by site, not by name (venue table R16/R17): the original closes after the 2026 season.
+  'red-hat-amphitheater-raleigh': {
+    id: 'red-hat-amphitheater-raleigh',
+    metroId: 'raleigh-durham',
+    carShare: 0.85, // estimate, city-type V11
+    names: [{ name: 'Red Hat Amphitheater' }],
+    location: [-78.6430696, 35.773797],
+    capacity: [
+      { seats: 6000, setup: 'concert', note: 'Official (Visit Raleigh): about 6,000. 2026 is the final season at 500 S. McDowell St; the season ends in late October 2026 and demolition follows. Source: venue table R16.' },
+    ],
+    roof: 'open',
+  },
+  'red-hat-amphitheater-raleigh-new': {
+    id: 'red-hat-amphitheater-raleigh-new',
+    metroId: 'raleigh-durham',
+    carShare: 0.85, // estimate, provisional, city-type V12 (same downtown context as the original)
+    names: [{ name: 'Red Hat Amphitheater', from: '2027-04-01' }],
+    // Approximate: under construction about one block south of the original (OpenStreetMap does not have it yet). Same zone either way.
+    location: [-78.6431, 35.7727],
+    capacity: [
+      { seats: 6500, fromYear: 2027, setup: 'concert', note: 'Reported, planned floor: the convention center said the new room must stay above 6,500 (current + 500 to 1,000). Not an opened figure; exact capacity unpublished. Opens spring 2027 (steel topped out May 26, 2026); the 2027-04-01 name date is a placeholder for "spring 2027". Re-check Feb–Apr 2027. Source: venue table R17.' },
+    ],
+    roof: 'open',
+  },
+  'reynolds-coliseum': {
+    id: 'reynolds-coliseum',
+    metroId: 'raleigh-durham',
+    carShare: 0.75, // estimate, city-type V16
+    names: [{ name: 'James T. Valvano Arena at William Neal Reynolds Coliseum' }, { name: 'Reynolds Coliseum' }],
+    location: [-78.6699065, 35.7835138],
+    capacity: [
+      { seats: 5500, setup: 'basketball', note: 'Official (NC State), since the 2016 reopening (was 8,300). Up to 6,000 in an alternate configuration. NC State women\'s basketball plays here. Source: venue table R18.' },
+    ],
+    roof: 'indoor',
+  },
+  // Below the 5,000 floor or unresolved: on the map, muted, no friction label.
+  'koskinen-stadium': {
+    id: 'koskinen-stadium',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Koskinen Stadium' }, { name: 'Freeman Field at Koskinen Stadium', from: '2025-10-10' }],
+    location: [-78.9440126, 35.9957873],
+    capacity: [
+      { seats: 4500, setup: 'soccer', note: 'Reported (Wikipedia): 4,500 seated. The 7,000 total includes standing and is not stored as seats. Below the 5,000 floor. Source: venue table R14.' },
+    ],
+    roof: 'open',
+  },
+  'dorrance-field': {
+    id: 'dorrance-field',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Fetzer Field' }, { name: 'Dorrance Field' }],
+    location: [-79.044468, 35.9086907],
+    // Left blank: Visit Chapel Hill gives 4,200 chairback in one place and 5,025 in another, and the two sit on either side of the 5,000 floor.
+    capacity: [],
+    roof: 'open',
+  },
+  'mcdougald-mclendon-arena': {
+    id: 'mcdougald-mclendon-arena',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'McDougald-McLendon Arena' }],
+    location: [-78.8977424, 35.9759803],
+    capacity: [
+      { seats: 3116, setup: 'basketball', note: 'Official (NCCU): 3,116 seated, 3,500 total. Source: venue table R21.' },
+    ],
+    roof: 'indoor',
+  },
+  'dpac': {
+    id: 'dpac',
+    metroId: 'raleigh-durham',
+    carShare: 0.88, // estimate, city-type V09
+    names: [{ name: 'DPAC' }, { name: 'Durham Performing Arts Center' }],
+    location: [-78.9022327, 35.9932676],
+    capacity: [
+      { seats: 2712, setup: 'concert', note: 'Official (Discover Durham). Broadway setup 2,683; closed balcony 1,953 (Pollstar 2018). Adjacent to the Bulls park, so never match a listing by proximity alone. Source: venue table R23.' },
+    ],
+    roof: 'indoor',
+  },
+  'raleigh-memorial-auditorium': {
+    id: 'raleigh-memorial-auditorium',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Memorial Auditorium' }, { name: 'Raleigh Memorial Auditorium' }],
+    location: [-78.6395895, 35.7711073],
+    capacity: [
+      { seats: 2277, setup: 'concert', note: 'Reported (Wikipedia, citing the venue). Other listings say 2,354 and 2,369. One of four rooms in the Martin Marietta Center for the Performing Arts (was Duke Energy Center), with Meymandi, Fletcher Opera Theater and Kennedy Theatre; do not merge them. Source: venue table R24.' },
+    ],
+    roof: 'indoor',
+  },
+  'meymandi-concert-hall': {
+    id: 'meymandi-concert-hall',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Meymandi Concert Hall' }],
+    location: [-78.6401366, 35.7712286],
+    capacity: [
+      { seats: 1587, setup: 'concert', note: 'Reported (This Is Raleigh). North Carolina Symphony home, in the Martin Marietta Center. Source: venue table R25.' },
+    ],
+    roof: 'indoor',
+  },
+  'north-main-athletic-complex-stadium': {
+    id: 'north-main-athletic-complex-stadium',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Ting Stadium', from: '2017-01-01' }, { name: 'North Main Athletic Complex Stadium', from: '2026-01-01' }],
+    location: [-78.836174, 35.668101],
+    capacity: [
+      { seats: 1800, setup: 'baseball', note: 'Official (Holly Springs Salamanders, CPL). Ting sponsorship expired Dec 2025 but the team site still says Ting Stadium, so both names are kept for matching. Also Wake FC (USL2). Source: venue table R26.' },
+    ],
+    roof: 'open',
+  },
+  'nomaco-park': {
+    id: 'nomaco-park',
+    metroId: 'raleigh-durham',
+    carShare: 0.98, // estimate, city-type V17 (as Five County Stadium; tenant and capacity to re-verify)
+    names: [{ name: 'Five County Stadium' }, { name: 'Nomaco Park', from: '2026-05-01' }],
+    location: [-78.2709652, 35.8172274],
+    // Left blank: the research did not verify a capacity (city-type listed 6,500 from a Wikipedia list as "not re-verified"; the venue table says unknown).
+    // Carolina Mudcats left after Aug 31, 2025; Zebulon Devil Dogz (CPL) play here from 2026. Rename dated May 2026 (day not given).
+    capacity: [],
+    roof: 'open',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

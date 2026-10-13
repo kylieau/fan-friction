@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago', 'raleigh-durham': 'America/New_York' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -66,6 +66,7 @@ const MLB_TEAMS = [
   { teamId: 'vancouver-canadians', mlbId: 435, sportId: 13, venueId: 'nat-bailey-stadium', metroId: 'vancouver', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'royals', mlbId: 118, venueId: 'kauffman-stadium', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'kc-monarchs', mlbId: 1885, sportId: 23, venueId: 'legends-field', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'durham-bulls', mlbId: 234, sportId: 11, venueId: 'durham-bulls-athletic-park', metroId: 'raleigh-durham', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'maple-leafs', metroId: 'toronto', path: 'hockey/nhl', espnId: '21', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -324,6 +325,20 @@ const ESPN_TEAMS = [
   { teamId: 'lsuno-wbb', metroId: 'new-orleans', path: 'basketball/womens-college-basketball', espnId: '2443', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
   { teamId: 'lsuno-baseball', metroId: 'new-orleans', path: 'baseball/college-baseball', espnId: '184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'laketown-squadron', metroId: 'new-orleans', path: 'basketball/nba-development', espnId: '6', seasons: [2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'hurricanes', metroId: 'raleigh-durham', path: 'hockey/nhl', espnId: '7', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'nc-state-football', metroId: 'raleigh-durham', path: 'football/college-football', espnId: '152', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'nc-state-mbb', metroId: 'raleigh-durham', path: 'basketball/mens-college-basketball', espnId: '152', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'nc-state-wbb', metroId: 'raleigh-durham', path: 'basketball/womens-college-basketball', espnId: '152', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'unc-football', metroId: 'raleigh-durham', path: 'football/college-football', espnId: '153', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'unc-mbb', metroId: 'raleigh-durham', path: 'basketball/mens-college-basketball', espnId: '153', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'unc-wbb', metroId: 'raleigh-durham', path: 'basketball/womens-college-basketball', espnId: '153', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'duke-football', metroId: 'raleigh-durham', path: 'football/college-football', espnId: '150', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'duke-mbb', metroId: 'raleigh-durham', path: 'basketball/mens-college-basketball', espnId: '150', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'duke-wbb', metroId: 'raleigh-durham', path: 'basketball/womens-college-basketball', espnId: '150', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'nccu-football', metroId: 'raleigh-durham', path: 'football/college-football', espnId: '2428', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'nccu-mbb', metroId: 'raleigh-durham', path: 'basketball/mens-college-basketball', espnId: '2428', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'nccu-wbb', metroId: 'raleigh-durham', path: 'basketball/womens-college-basketball', espnId: '2428', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'nc-courage', metroId: 'raleigh-durham', path: 'soccer/usa.nwsl', espnId: '15366', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -607,6 +622,28 @@ const VENUE_BY_NAME = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Raleigh–Durham, as ESPN writes them on each team's own schedule (checked Oct 13, 2026). Keep in step with espnSource.ts.
+  'lenovo center': 'lenovo-center',
+  'pnc arena': 'lenovo-center',
+  'carter-finley stadium': 'carter-finley-stadium',
+  'wayne day family field at carter-finley stadium': 'carter-finley-stadium',
+  'kenan stadium': 'kenan-stadium',
+  'kenan memorial stadium': 'kenan-stadium',
+  'dean e. smith center': 'dean-smith-center',
+  'dean smith center': 'dean-smith-center',
+  'carmichael arena': 'carmichael-arena',
+  'wallace wade stadium': 'wallace-wade-stadium',
+  'brooks field at wallace wade stadium': 'wallace-wade-stadium',
+  'cameron indoor stadium': 'cameron-indoor-stadium',
+  'reynolds coliseum': 'reynolds-coliseum',
+  'james t. valvano arena at william neal reynolds coliseum': 'reynolds-coliseum',
+  'durham bulls athletic park': 'durham-bulls-athletic-park',
+  'wakemed soccer park': 'first-horizon-stadium',
+  'first horizon stadium': 'first-horizon-stadium',
+  'first horizon stadium at wakemed soccer park': 'first-horizon-stadium',
+  "sahlen's stadium": 'first-horizon-stadium',
+  "o'kelly-riddick stadium": 'o-kelly-riddick-stadium',
+  'mcdougald-mclendon arena': 'mcdougald-mclendon-arena',
 };
 
 const METRO_VENUE_BY_NAME = {

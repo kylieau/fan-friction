@@ -138,6 +138,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'cable-dahmer-arena', 'kansas-speedway', 't-mobile-center', 'municipal-auditorium-arena', 'legends-field',
   // Toronto rooms whose clubs are not on MLB/ESPN/HockeyTech (CFL feed is empty; OHL, NLL, CPL, NSL, U Sports).
   'bmo-field', 'caa-centre-brampton', 'tribute-communities-centre', 'uoft-varsity-stadium', 'uoft-varsity-arena', 'york-lions-stadium', 'mattamy-athletic-centre', 'kimel-field-house',
+  // Raleigh–Durham rooms whose tenants have no league feed (CPL and USL2 clubs, UFA, Shaw, Duke and UNC soccer and lacrosse, fair rodeos). Feed games at the same building still win.
+  'north-main-athletic-complex-stadium', 'nomaco-park', 'durham-county-memorial-stadium', 'koskinen-stadium', 'dorrance-field', 'dorton-arena',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {
