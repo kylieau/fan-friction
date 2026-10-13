@@ -1037,9 +1037,8 @@ export function toggleFavoriteCity(metroId: string) {
   if (!METROS[metroId]) return;
   const current = favoriteCitiesOf(snapshot);
   const next = current.includes(metroId) ? current.filter((id) => id !== metroId) : [...current, metroId];
-  const { favoriteCities: _old, ...rest } = snapshot;
-  void _old;
-  commit(next.length > 0 ? { ...rest, favoriteCities: next } : rest);
+  // Stamped, even when the list is now empty, so the un-star is the newer answer on every device.
+  commit({ ...snapshot, favoriteCities: next, favoriteCitiesAt: new Date().toISOString() });
 }
 
 export function logBackup(log: PersonalLog = snapshot): LogBackup {

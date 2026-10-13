@@ -619,6 +619,8 @@ export interface PersonalLog {
    * keeps its house; these are pinned under it. Saved with the settings, on the phone and the account.
    */
   favoriteCities?: string[];
+  /** When the starred list last changed (ISO). The newer copy wins when two devices disagree, so an un-star sticks. */
+  favoriteCitiesAt?: string;
   /**
    * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
    * another device cannot put them back; pruned after half a year.

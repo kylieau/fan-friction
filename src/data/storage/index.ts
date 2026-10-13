@@ -178,6 +178,7 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     !sameList(before.hiddenSeedIds, after.hiddenSeedIds) ||
     !sameList(before.favorites, after.favorites) ||
     !sameList(before.favoriteCities, after.favoriteCities) ||
+    before.favoriteCitiesAt !== after.favoriteCitiesAt ||
     JSON.stringify(before.removed ?? {}) !== JSON.stringify(removed);
   return { entries, plans, settings, log };
 }
@@ -208,15 +209,25 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     plans: newerWins(account.plans, phone.plans, removed),
     order: account.order,
     favorites: mergeFavorites(account.favorites, phone.favorites),
-    ...(unionCities(account.favoriteCities, phone.favoriteCities) ? { favoriteCities: unionCities(account.favoriteCities, phone.favoriteCities) } : {}),
+    ...mergeCities(account, phone),
     removed,
   };
 }
 
-/** Starred cities from both copies, the account's order first. */
-function unionCities(a?: string[], b?: string[]): string[] | undefined {
-  const out = [...new Set([...(a ?? []), ...(b ?? [])])];
-  return out.length > 0 ? out : undefined;
+/**
+ * Starred cities: the copy changed last wins, so an un-star on one device sticks on the other. A copy with
+ * no stamp (an older app, or never set) cannot be dated, so the lists are joined, as before.
+ */
+function mergeCities(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'favoriteCities' | 'favoriteCitiesAt'> {
+  const a = account.favoriteCitiesAt;
+  const b = phone.favoriteCitiesAt;
+  if (a && b) {
+    const mine = b > a ? phone : account;
+    return { ...(mine.favoriteCities ? { favoriteCities: mine.favoriteCities } : {}), favoriteCitiesAt: mine.favoriteCitiesAt };
+  }
+  const joined = [...new Set([...(account.favoriteCities ?? []), ...(phone.favoriteCities ?? [])])];
+  const stamp = a ?? b;
+  return { ...(joined.length > 0 || stamp ? { favoriteCities: joined } : {}), ...(stamp ? { favoriteCitiesAt: stamp } : {}) };
 }
 
 function mergeFavorites(a?: PersonalLog['favorites'], b?: PersonalLog['favorites']) {

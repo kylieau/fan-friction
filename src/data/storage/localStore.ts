@@ -77,10 +77,16 @@ export function readRemoved(value: unknown): Record<string, string> {
 }
 
 /** Starred cities as saved: ids of cities the app knows, no repeats. Undefined when there are none. */
-export function readFavoriteCities(value: unknown): string[] | undefined {
+export function readFavoriteCities(value: unknown, stamped = false): string[] | undefined {
   if (!Array.isArray(value)) return undefined;
   const ids = [...new Set(value.filter((id): id is string => typeof id === 'string' && Boolean(METROS[id])))];
-  return ids.length > 0 ? ids : undefined;
+  // An empty list means "none starred" only when it carries a stamp; older copies saved [] for "never set".
+  return ids.length > 0 || stamped ? ids : undefined;
+}
+
+/** The ISO time the starred list last changed, or undefined for a copy that never wrote one. */
+export function readStamp(value: unknown): string | undefined {
+  return typeof value === 'string' && Number.isFinite(Date.parse(value)) ? value : undefined;
 }
 
 /** Favorites as saved, or undefined when this log has never had any (so they get derived once). */
@@ -107,7 +113,8 @@ export function readLocalLog(): PersonalLog {
       plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
       favorites: readFavorites(parsed.favorites),
-      ...(readFavoriteCities(parsed.favoriteCities) ? { favoriteCities: readFavoriteCities(parsed.favoriteCities) } : {}),
+      ...(readFavoriteCities(parsed.favoriteCities, Boolean(readStamp(parsed.favoriteCitiesAt))) ? { favoriteCities: readFavoriteCities(parsed.favoriteCities, Boolean(readStamp(parsed.favoriteCitiesAt))) } : {}),
+      ...(readStamp(parsed.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(parsed.favoriteCitiesAt) } : {}),
       ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {

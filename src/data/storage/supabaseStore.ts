@@ -18,7 +18,7 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
-import { EMPTY_LOG, readFavoriteCities, readFavorites, readRemoved } from './localStore';
+import { EMPTY_LOG, readFavoriteCities, readFavorites, readRemoved, readStamp } from './localStore';
 import { notThereYet } from './dbErrors';
 import type { EntryStore, LogDiff } from './types';
 
@@ -57,7 +57,7 @@ interface SettingsRow {
   user_id: string;
   you_order: string;
   hidden_seed_ids: string[];
-  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown };
+  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown };
 }
 
 interface RemovedRow {
@@ -184,7 +184,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         }),
         order: asOrder(settings?.you_order ?? EMPTY_LOG.order),
         favorites: readFavorites(settings?.data?.favorites),
-        ...(readFavoriteCities(settings?.data?.favoriteCities) ? { favoriteCities: readFavoriteCities(settings?.data?.favoriteCities) } : {}),
+        ...(readFavoriteCities(settings?.data?.favoriteCities, Boolean(readStamp(settings?.data?.favoriteCitiesAt))) ? { favoriteCities: readFavoriteCities(settings?.data?.favoriteCities, Boolean(readStamp(settings?.data?.favoriteCitiesAt))) } : {}),
+        ...(readStamp(settings?.data?.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(settings?.data?.favoriteCitiesAt) } : {}),
         removed,
       };
     },
@@ -232,7 +233,12 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
             you_order: log.order,
             hidden_seed_ids: log.hiddenSeedIds,
             // The map is still written for older installs; `removed_rows` is what this build trusts.
-            data: { favorites: log.favorites ?? [], removed: log.removed ?? {}, favoriteCities: log.favoriteCities ?? [] },
+            data: {
+              favorites: log.favorites ?? [],
+              removed: log.removed ?? {},
+              favoriteCities: log.favoriteCities ?? [],
+              ...(log.favoriteCitiesAt ? { favoriteCitiesAt: log.favoriteCitiesAt } : {}),
+            },
           }),
         );
       }
