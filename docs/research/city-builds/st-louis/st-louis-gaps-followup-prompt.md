@@ -1,0 +1,39 @@
+# Research prompt: St. Louis follow-up on city-build gaps
+
+Drafted Oct 13, 2026 (America/Los_Angeles). This follows the two St. Louis answers saved Oct 12, 2026 ([city type](st-louis-city-type-answer.md), [venue table](st-louis-venue-table-answer.md)). Those answers came from the older prompts, before the "Gaps from the first 26 city builds" section was added. This prompt asks only for what they don't already cover. Research only: this does not approve a city build.
+
+Copy the brief below into a research model, and attach or paste both answers so it can see them. Save the full answer beside this prompt as `st-louis-gaps-followup-answer.md`. Keep prompts and answers together.
+
+---
+
+## Delivery
+Deliver a downloadable Markdown file named `st-louis-gaps-followup-answer.md`, using headings, pipe tables, and inline links. If unavailable, provide complete Markdown in chat. Do not provide a PDF or summary only. Date the answer and link every fact directly to a public source. If you can't find a source, write "gap" and say what you searched. Never make up a number.
+
+## Already covered (don't redo these)
+- City type, measured fan mode splits and a car share per venue (measured, projected or estimated, with ranges): [st-louis-city-type-answer.md](st-louis-city-type-answer.md).
+- Venue rows, capacity by setup with conflicting sources, rooms near the 1,000/5,000 lines, teams and their dated home venues, and open-site events with unknown sizes left blank: [st-louis-venue-table-answer.md](st-louis-venue-table-answer.md).
+- Use the venue row IDs from the venue answer in every table below so the two files join cleanly.
+
+## What to research
+
+1. **Name and code.** The display name for St. Louis, a short form, and a three-letter code (lead: STL; check what local teams and media use). List which cities and suburbs it covers (St. Louis City and County, St. Charles, Metro East (IL)). Tampa Bay is the precedent: locals and every team say "Tampa Bay" and it covers St. Pete and Clearwater, so the name changed while the code stayed TPA. Neither answer gives a name or code.
+2. **Ticketmaster venue ID for every concert room** in the venue answer, checked against the Ticketmaster venue page or Discovery API (give the link). The venue answer lists no verified IDs. If a room has no ID, the city ships with no concerts there. Say which rooms you couldn't verify.
+3. **Free schedule feed per team.** For each team in the venue answer (Cardinals (MLB), Blues (NHL), St. Louis City SC (MLS), Battlehawks (UFL), SLU, SIUE; add any missed): its league, and whether a free schedule feed covers it (ESPN, MLB Stats API, or a league site), with the team's feed ID or page. List the teams that have no feed. The venue answer covers ticketing feeds, not free schedule feeds.
+4. **Games away from the home venue.** Neutral-site, international and relocated home games from 2025 on, with dates and the actual site, so none get placed at the home venue (leads: Outdoor NHL games; Cardinals international games. Our team id `cardinals` is St. Louis; Arizona's NFL team uses `arizona-cardinals`, so name both clearly).
+5. **Postseason and past crowds.** For each team: postseason home games and their announced attendance for recent seasons, and announced regular-season crowds per season (box scores, league or team pages). The answers give a few observed crowds, not this history. Tampa Bay is the precedent: the feeds returned no counts, so the city had no crowd history.
+6. **Team colors.** Primary and secondary hex colors for every team, from an official team or league brand source.
+
+**Build rules (put these in the answer as notes for whoever turns it into app data):**
+- Every venue ID and team ID must be unique across all cities. `giants`, `jets`, `rangers`, `kings` and `cardinals` were already taken, so add a city prefix.
+- Don't make a separate per-city opponents file. Opponent draws go into `expectedDrawIndex` like every other city.
+- Never guess a capacity. A missing or range-only figure stays blank and goes on the city gaps list.
+- Car shares: wire measured ones; wire sourced estimates marked estimated; leave the rest on the city default.
+
+## End with
+1. Name, short form, code and covered area.
+2. A table: venue row ID, room, Ticketmaster venue ID, verification link (or "not verified").
+3. A table: team, league, home venue row ID, free feed and ID (or "no feed"), primary hex, secondary hex, color source.
+4. Games away from the home venue, with dates and sites.
+5. Postseason and past-crowd tables per team.
+
+Use public data only. Do not supply app code, personal ratings, or cost commitments. Flag a source that can't be accessed normally; do not bypass access controls.
