@@ -10849,7 +10849,6 @@ export const VENUES: Record<string, Venue> = {
   'ppg-paints-arena': {
     id: 'ppg-paints-arena',
     metroId: 'pittsburgh',
-    carShare: 0.85,
     names: [{ name: 'Consol Energy Center' }, { name: 'PPG Paints Arena', from: '2016-10-01' }],
     location: [-79.98917, 40.43944],
     capacity: [
@@ -10862,7 +10861,6 @@ export const VENUES: Record<string, Venue> = {
   'petersen-events-center': {
     id: 'petersen-events-center',
     metroId: 'pittsburgh',
-    carShare: 0.85,
     names: [{ name: 'Petersen Events Center' }, { name: 'The Pete' }],
     location: [-79.9621193, 40.4440003],
     capacity: [
@@ -10876,13 +10874,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'pittsburgh',
     names: [{ name: 'Lernerville Speedway' }],
     location: [-79.72361, 40.7375],
-    capacity: [
-      {
-        seats: 12000,
-        setup: 'racing',
-        note: 'Reported Butler County tourism; older source lists 10,000 permanent seats. Source: https://www.experiencebutler.com/directory/sarvar-racing-llc-lernerville-speedway-sports-venue/',
-      },
-    ],
+    // Round-2 rule: 12,000 (tourism) vs 10,000 permanent seats, none official; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'mihalik-thompson-stadium': {
@@ -10920,13 +10913,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'pittsburgh',
     names: [{ name: 'Reeves Field' }],
     location: [-80.32167, 40.76528],
-    capacity: [
-      {
-        seats: 6000,
-        setup: 'football',
-        note: 'Official lists over 6,000; wiki 5,500. Source: https://athletics.geneva.edu/facilities/reeves-field/1',
-      },
-    ],
+    // Round-2 rule: official says 'over 6,000', wiki 5,500; no exact figure; blank (BACKLOG).
+    capacity: [],
     roof: 'open',
   },
   'westmoreland-fair-grandstand': {
@@ -10934,19 +10922,13 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'pittsburgh',
     names: [{ name: 'Westmoreland Fairgrounds grandstand arena' }],
     location: [-79.528, 40.133],
-    capacity: [
-      {
-        seats: 5600,
-        setup: 'concert',
-        note: 'Reported 1990 build 5,600 expandable past 8,000; 2012 report 5,000 added — seated vs standing unclear. Source: https://local.aarp.org/place/westmoreland-fair-greensburg-pa.html',
-      },
-    ],
+    // Round-2 rule: 5,600 (1990) expandable past 8,000, 5,000 added 2012, seated vs standing unclear; blank (BACKLOG).
+    capacity: [],
     roof: 'covered',
   },
   'stage-ae-outdoor': {
     id: 'stage-ae-outdoor',
     metroId: 'pittsburgh',
-    carShare: 0.85,
     names: [{ name: 'Stage AE' }, { name: 'Stage AE Outdoor Amphitheater' }],
     location: [-80.0122886, 40.4461092],
     capacity: [{ seats: 5500, setup: 'concert', note: 'Outdoor lawn GA (reported tourism). Indoor hall is a separate room. Source: https://www.visitpittsburgh.com/directory/stage-ae/' }],
@@ -10955,7 +10937,6 @@ export const VENUES: Record<string, Venue> = {
   'fnb-stadium': {
     id: 'fnb-stadium',
     metroId: 'pittsburgh',
-    carShare: 0.85,
     names: [{ name: 'Highmark Stadium' }, { name: 'F.N.B. Stadium', from: '2026-04-23' }],
     location: [-80.00944, 40.43611],
     capacity: [
@@ -11054,7 +11035,6 @@ export const VENUES: Record<string, Venue> = {
   'benedum-center': {
     id: 'benedum-center',
     metroId: 'pittsburgh',
-    carShare: 0.85,
     names: [{ name: 'Benedum Center for the Performing Arts' }, { name: 'Benedum Center' }],
     location: [-79.9996284, 40.4430914],
     capacity: [{ seats: 2800, note: 'Official Cultural Trust 2,800; wiki 2,885. Source: https://trustarts.org/pct_home/visit/facilities/benedum' }],
@@ -11063,7 +11043,6 @@ export const VENUES: Record<string, Venue> = {
   'heinz-hall': {
     id: 'heinz-hall',
     metroId: 'pittsburgh',
-    carShare: 0.85,
     names: [{ name: 'Heinz Hall for the Performing Arts' }, { name: 'Heinz Hall' }],
     location: [-80.0017198, 40.4425692],
     capacity: [{ seats: 2676, note: 'Wiki. Source: https://en.wikipedia.org/wiki/Heinz_Hall' }],
