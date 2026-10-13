@@ -13,8 +13,9 @@ import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
  */
 export type EmptyKind = 'quiet' | 'no-data';
 
-export function ReadTile({ rating, size = 'row', quiet, empty }: { rating: number | null; size?: 'row' | 'big'; quiet?: boolean; empty?: EmptyKind }) {
-  const cls = size === 'big' ? 'read-big' : 'log-score';
+export function ReadTile({ rating, size = 'row', quiet, empty }: { rating: number | null; size?: 'row' | 'big' | 'inline'; quiet?: boolean; empty?: EmptyKind }) {
+  // "inline" is the one-line read, number and word side by side, for a day band (Kylie, Oct 13).
+  const cls = size === 'big' ? 'read-big' : size === 'inline' ? 'log-score inline' : 'log-score';
   const kind: EmptyKind | undefined = empty ?? (quiet ? 'quiet' : undefined);
   if (rating === null) {
     const word = kind === 'quiet' ? 'Quiet' : kind === 'no-data' ? 'No data' : null;

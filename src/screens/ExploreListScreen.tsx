@@ -14,7 +14,7 @@ import {
   type CrowdEvent,
   type FeedItem,
 } from '../data';
-import { addDays } from '../lib/dates';
+import { addDays, daysBetween } from '../lib/dates';
 import { mondayOf, weekOf } from '../data/cityList';
 import { activityGroups, activityLine, yourActivity } from '../lib/activity';
 import { getPref } from '../lib/prefs';
@@ -58,6 +58,15 @@ function dayLabel(date: string, today: string): string {
   });
   const lead = date === today ? 'Today' : date === addDays(today, 1) ? 'Tomorrow' : null;
   return lead ? `${lead} · ${base}` : base;
+}
+
+/** "This week", "Next week", "Last week", or the dates ("Oct 26–Nov 1") for any other (Kylie, Oct 13). */
+function weekWord(monday: string, thisMonday: string): string {
+  const weeks = Math.round(daysBetween(thisMonday, monday) / 7);
+  if (weeks === 0) return 'This week';
+  if (weeks === 1) return 'Next week';
+  if (weeks === -1) return 'Last week';
+  return weekSpan(monday);
 }
 
 /** "OCT 12–18", or "OCT 26–NOV 1" across months. */
@@ -412,9 +421,7 @@ export function ExploreListScreen() {
         {range && <WeekCalendar monday={calendarMonday} reads={reads} today={today} range={range} onPick={pickDay} />}
         {range && (
           <div className="explore-list-band">
-            {calendarMonday === thisMonday ? 'This week' : ''}
-            {calendarMonday === thisMonday ? ' · ' : ''}
-            {weekSpan(calendarMonday)} · {weekCount} {weekCount === 1 ? 'event' : 'events'}
+            {weekWord(calendarMonday, thisMonday)} · {weekCount} {weekCount === 1 ? 'event' : 'events'}
           </div>
         )}
       </div>
@@ -431,7 +438,7 @@ export function ExploreListScreen() {
             <section key={date} className="explore-list-day" data-day={date} aria-label={dayLabel(date, today)}>
               <Link to={datePath(date, metro.id)} className="explore-list-dayhead">
                 <span className="explore-list-daylabel">{dayLabel(date, today)}</span>
-                <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
+                <ReadTile size="inline" rating={day.rating?.rating ?? null} empty={day.empty} />
               </Link>
               <ul className="day-list" aria-label={dayLabel(date, today)}>
                 {[...events]

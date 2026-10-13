@@ -17,12 +17,15 @@ export function DayRow({ event: e, line }: { event: CrowdEvent; line: string | n
       <span className="day-row-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
       <span className="day-row-main">
         <span className="day-row-title">{listTitle(e)}</span>
-        {venue && <span className="day-row-venue">{venue}</span>}
+        {/* The venue and the badges share one line, so a title is never squeezed to three lines (Kylie, Oct 13). */}
+        <span className="day-row-sub">
+          {venue && <span className="day-row-venue">{venue}</span>}
+          <EventTags event={e} />
+        </span>
         {line && <span className="day-row-activity">{line}</span>}
       </span>
       <span className="day-row-side">
         <CrowdFigure event={e} />
-        <EventTags event={e} />
       </span>
     </Link>
   );
