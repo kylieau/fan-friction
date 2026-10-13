@@ -6569,3 +6569,66 @@ button.back-link {
 .explore-title-row .explore-title-area {
   flex: 1 1 0;
 }
+
+/* ---------- Map chip friend line (build notes 4, 1.9; Kylie V01, V06) ---------- */
+/* Only a chip with a friend line grows, to about 58 pt, upward from its pin; width and style are unchanged. */
+.crowd-label.has-activity {
+  height: 58px;
+}
+
+.crowd-activity {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  min-width: 0;
+  margin-top: 1px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--dodger);
+  white-space: nowrap;
+}
+
+.crowd-activity-icon {
+  flex-shrink: 0;
+}
+
+.crowd-activity-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.crowd-activity-more {
+  flex-shrink: 0;
+}
+
+.crowd-label.is-dim .crowd-activity {
+  color: rgba(0, 90, 156, 0.45);
+}
+
+.crowd-label.is-muted .crowd-activity {
+  color: var(--muted);
+}
+
+.chip-card-activity {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.chip-card-activity-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chip-card-activity-item svg {
+  width: 13px;
+  height: 13px;
+}

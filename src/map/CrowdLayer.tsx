@@ -14,6 +14,7 @@ import {
   type PlacedChip,
 } from './chipPlacement';
 import { typeIconSvg } from './typeIcons';
+import { applyChipActivity, type ChipActivity } from './chipActivity';
 
 /** People in the disc. A sold-out show with no separate count uses the room. A muted event has no glow. */
 function crowdForGlow(p: CrowdPoint): number | undefined {
@@ -35,6 +36,8 @@ interface Props {
   selectedId: string | null;
   /** An event id, or null when the empty map was tapped. */
   onSelect: (id: string | null) => void;
+  /** Friend lines by event id (build notes 4, 1.9). Absent or empty: the chips are exactly as before. */
+  activity?: Map<string, ChipActivity>;
 }
 
 /**
@@ -43,7 +46,7 @@ interface Props {
  * gold, or the controls are dropped. The mark stays, and tapping it brings
  * the card back.
  */
-export function CrowdLayer({ points, selectedId, onSelect }: Props) {
+export function CrowdLayer({ points, selectedId, onSelect, activity }: Props) {
   const map = useContext(MapContext);
   const selectRef = useRef(onSelect);
   selectRef.current = onSelect;
@@ -51,6 +54,8 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
   selectedRef.current = selectedId;
   const pointsRef = useRef(points);
   pointsRef.current = points;
+  const activityRef = useRef(activity);
+  activityRef.current = activity;
   const refreshRef = useRef<() => void>(() => {});
   /** The ids fanned out from a tapped "+N" badge; cleared on the next pick. */
   const fannedRef = useRef<Set<string>>(new Set());
@@ -149,6 +154,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
         `<span class="crowd-meta"><span>${escapeHtml(chipDetail(p))}</span></span>` +
         `</span>` +
         `<button type="button" class="crowd-more is-hidden" aria-label="More events here"></button>`;
+      applyChipActivity(el, activityRef.current?.get(p.event.id));
       el.addEventListener('click', (ev) => {
         ev.stopPropagation();
         const target = ev.target;
@@ -235,6 +241,22 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
         });
       }
 
+      // Soonest on top (V06), among the chips that carry a friend line only: they trade the rank slots they
+      // already hold so the earliest start is placed first. Every other chip keeps its order, and the
+      // tapped chip always keeps its own slot.
+      const withLine = candidates.filter((c) => !c.selected && activityRef.current?.has(c.id));
+      if (withLine.length > 1) {
+        const startOf = (id: string) => {
+          const ev = pointsRef.current.find((p) => p.event.id === id)?.event;
+          return ev ? `${ev.date}${ev.start ?? '99:99'}` : '';
+        };
+        const slots = withLine.map((c) => c.rank).sort((a, b) => b - a);
+        [...withLine]
+          .sort((a, b) => startOf(a.id).localeCompare(startOf(b.id)) || a.id.localeCompare(b.id))
+          .forEach((c, i) => {
+            c.rank = slots[i];
+          });
+      }
       const { placed, blockedBy } = placeChips(candidates, chromeBoxes(map), view, fannedRef.current);
       const groups = new Map<string, string[]>();
       for (const [hidden, under] of blockedBy) groups.set(under, [...(groups.get(under) ?? []), hidden]);
@@ -373,6 +395,15 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
   useEffect(() => {
     refreshRef.current();
   }, [selectedId]);
+
+  // Friends arrive after the chips exist: write or clear each chip's third line in place, then place
+  // again. The chips are not rebuilt, so their positions and "+N" fans stay.
+  useEffect(() => {
+    if (!map) return;
+    const chips = map.getContainer().querySelectorAll<HTMLElement>('.crowd-label[data-id]');
+    chips.forEach((el) => applyChipActivity(el, activity?.get(el.dataset.id ?? '')));
+    refreshRef.current();
+  }, [map, activity]);
 
   return null;
 }

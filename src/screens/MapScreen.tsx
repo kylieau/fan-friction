@@ -26,6 +26,7 @@ import { getPref, setPref } from '../lib/prefs';
 import { PeopleIcon } from '../components/Icons';
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
+import { chipActivities } from '../map/chipActivity';
 import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdThousands, showsOnMap } from '../map/crowdPoints';
 import { MapSettle, type ViewBounds } from '../map/viewBounds';
@@ -100,6 +101,9 @@ export function MapScreen() {
     };
   }, [account?.id, date, metro.id]);
   const lineFor = (e: CrowdEvent) => (activity ? activityLine(activityGroups(friends.filter((f) => f.eventId === e.id), yourActivity(e.id, log))) : null);
+
+  // The friend line on a chip (build notes 4, 1.9): friends only, never you; off with the Activity chip.
+  const chipActivity = useMemo(() => (activity ? chipActivities(friends) : undefined), [activity, friends]);
 
   const shown = day && day.date === date ? day : null;
   const rating = shown?.rating ?? null;
@@ -242,7 +246,7 @@ export function MapScreen() {
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro} camera={memory}>
-          <CrowdLayer points={points} selectedId={selectedId} onSelect={select} />
+          <CrowdLayer points={points} selectedId={selectedId} onSelect={select} activity={chipActivity} />
           <MapCamera
             points={points}
             selectedId={selectedId}
@@ -399,7 +403,7 @@ export function MapScreen() {
             <span className="sheet-handle" aria-hidden />
           </div>
           {selected ? (
-            <ChipCard event={selected} onOpen={() => markOpenedFromMap()} />
+            <ChipCard event={selected} friends={activity ? friends.filter((f) => f.eventId === selected.id) : undefined} onOpen={() => markOpenedFromMap()} />
           ) : (
             <div className="sheet-bar">
               <Link to={datePath(date, metro.id)} className="sheet-bar-link">

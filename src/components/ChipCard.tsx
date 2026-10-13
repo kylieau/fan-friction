@@ -5,6 +5,9 @@ import { clockTime } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { crowdThousands } from '../map/crowdPoints';
+import { cardSegments } from '../map/chipActivity';
+import { ActivityIcon } from './ActivityLines';
+import type { FeedItem } from '../data';
 
 /**
  * The compact card that rises when a chip is tapped (build notes 2, T1): occasion tag
@@ -12,9 +15,10 @@ import { crowdThousands } from '../map/crowdPoints';
  * a chevron. The whole card opens the event page. No read box: the read belongs to the
  * whole night, and the card is about this event.
  */
-export function ChipCard({ event, onOpen }: { event: CrowdEvent; onOpen?: () => void }) {
+export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Friends with a status here, when Activity is on; never you. */ friends?: FeedItem[]; onOpen?: () => void }) {
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
   const size = displayedCrowdCount(event);
+  const segments = friends ? cardSegments(friends) : [];
   return (
     <Link to={eventPath(event.id, event.metroId)} state={{ fromMap: true }} className="chip-card" onClick={onOpen}>
       <span className="chip-card-main">
@@ -27,6 +31,17 @@ export function ChipCard({ event, onOpen }: { event: CrowdEvent; onOpen?: () => 
           <EventFrictionPill event={event} />
           <ByLine event={event} />
         </span>
+        {segments.length > 0 && (
+          <span className="chip-card-activity">
+            {segments.map((seg, i) => (
+              <span key={seg.kind} className="chip-card-activity-item">
+                {i > 0 && <span aria-hidden>·</span>}
+                <ActivityIcon kind={seg.kind} />
+                {seg.text}
+              </span>
+            ))}
+          </span>
+        )}
       </span>
       <span className="chip-card-side">
         {size ? (
