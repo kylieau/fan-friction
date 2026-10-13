@@ -1,0 +1,575 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "metroName": "Washington, DC",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:20:05.541Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 11
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-14-espn-capitals-401892504",
+      "metroId": "washington-dc",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Capitals vs. Canadiens",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "canadiens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16627,
+        "low": 16479,
+        "high": 16932,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-dc-united-761863",
+      "metroId": "washington-dc",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "D.C. United vs. Red Bull NY",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "dc-united",
+        "away": "red-bull-ny"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11243,
+        "low": 10944,
+        "high": 12763,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-maryland-football-401858489",
+      "metroId": "washington-dc",
+      "date": "2026-10-17",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Maryland vs. Rutgers",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "secu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "maryland-football",
+        "away": "rutgers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 48797,
+        "low": 45601,
+        "high": 51735,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-spirit-401854021",
+      "metroId": "washington-dc",
+      "date": "2026-10-17",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Spirit vs. Gotham",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "spirit",
+        "away": "gotham"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19497,
+        "low": 18816,
+        "high": 21051,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 8 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-capitals-401892519",
+      "metroId": "washington-dc",
+      "date": "2026-10-17",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Capitals vs. Devils",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18443,
+        "low": 18219,
+        "high": 18443,
+        "fromCrowds": true,
+        "games": 28,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 28 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-capitals-401892542",
+      "metroId": "washington-dc",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Capitals vs. Kings",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16794,
+        "low": 16644,
+        "high": 17102,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-wizards-401909835",
+      "metroId": "washington-dc",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wizards vs. Bucks",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "wizards",
+        "away": "bucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 15413,
+        "low": 14393,
+        "high": 16620,
+        "fromCrowds": true,
+        "games": 43,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 43 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-wizards-401909846",
+      "metroId": "washington-dc",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wizards vs. Raptors",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "wizards",
+        "away": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16789,
+        "low": 15352,
+        "high": 18639,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-loudoun-united-401842304",
+      "metroId": "washington-dc",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Loudoun United vs. Brooklyn",
+      "place": {
+        "type": "venue",
+        "venueId": "segra-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "loudoun-united",
+        "away": "brooklyn"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3443,
+        "low": 2631,
+        "high": 4300,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-capitals-401892571",
+      "metroId": "washington-dc",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Capitals vs. Sabres",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18592,
+        "low": 18365,
+        "high": 18592,
+        "fromCrowds": true,
+        "games": 28,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 28 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-dc-united-761895",
+      "metroId": "washington-dc",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "D.C. United vs. Cincinnati",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "dc-united",
+        "away": "cincinnati"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16888,
+        "low": 16143,
+        "high": 18438,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-14-espn-capitals-401892504",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "D.C. United vs. Red Bull NY 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16627,
+        "low": 16479,
+        "high": 16932
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-dc-united-761863",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Capitals vs. Canadiens 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11243,
+        "low": 10944,
+        "high": 12763
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-maryland-football-401858489",
+      "date": "2026-10-17",
+      "start": "12:30",
+      "read": {
+        "rating": 3.6,
+        "friction": "Low",
+        "why": "Spirit vs. Gotham and Capitals vs. Devils 9.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 48797,
+        "low": 45601,
+        "high": 51735
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-spirit-401854021",
+      "date": "2026-10-17",
+      "start": "12:30",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Maryland vs. Rutgers 9.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19497,
+        "low": 18816,
+        "high": 21051
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-capitals-401892519",
+      "date": "2026-10-17",
+      "start": "13:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Maryland vs. Rutgers 7.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18443,
+        "low": 18219,
+        "high": 18443
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-capitals-401892542",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16794,
+        "low": 16644,
+        "high": 17102
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-wizards-401909835",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15413,
+        "low": 14393,
+        "high": 16620
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-wizards-401909846",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16789,
+        "low": 15352,
+        "high": 18639
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-loudoun-united-401842304",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3443,
+        "low": 2631,
+        "high": 4300
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-capitals-401892571",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "D.C. United vs. Cincinnati 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18592,
+        "low": 18365,
+        "high": 18592
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-dc-united-761895",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Capitals vs. Sabres 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16888,
+        "low": 16143,
+        "high": 18438
+      }
+    }
+  ]
+}

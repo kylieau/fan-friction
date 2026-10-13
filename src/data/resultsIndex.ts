@@ -2790,5 +2790,103 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 3423,
     "capturedAt": "2026-10-12T08:19:11.748Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-wizards-401906510",
+    "metroId": "washington-dc",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "capital-one-arena",
+    "homeTeamId": "wizards",
+    "home": {
+      "name": "Wizards",
+      "score": 114
+    },
+    "away": {
+      "name": "Pistons",
+      "score": 108
+    },
+    "attendance": 10791,
+    "note": "OT",
+    "capturedAt": "2026-10-13T07:19:55.309Z",
+    "duration": {
+      "minutes": 174,
+      "kind": "estimated"
+    },
+    "startedAt": "19:10"
+  },
+  {
+    "eventId": "2026-10-11-espn-capitals-401892482",
+    "metroId": "washington-dc",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "capital-one-arena",
+    "homeTeamId": "capitals",
+    "home": {
+      "name": "Capitals",
+      "score": 3
+    },
+    "away": {
+      "name": "Kraken",
+      "score": 5
+    },
+    "attendance": 18107,
+    "capturedAt": "2026-10-13T07:19:55.309Z",
+    "duration": {
+      "minutes": 152,
+      "kind": "estimated"
+    },
+    "startedAt": "17:09"
+  },
+  {
+    "eventId": "2026-10-11-espn-washington-401872988",
+    "metroId": "washington-dc",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "northwest-stadium",
+    "homeTeamId": "washington",
+    "home": {
+      "name": "Commanders",
+      "score": 27
+    },
+    "away": {
+      "name": "Giants",
+      "score": 27
+    },
+    "attendance": 64195,
+    "note": "OT",
+    "capturedAt": "2026-10-13T07:19:55.309Z",
+    "duration": {
+      "minutes": 222,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
+    "eventId": "2026-10-12-espn-wizards-401901824",
+    "metroId": "washington-dc",
+    "date": "2026-10-12",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "capital-one-arena",
+    "homeTeamId": "wizards",
+    "home": {
+      "name": "Wizards",
+      "score": 122
+    },
+    "away": {
+      "name": "Nets",
+      "score": 131
+    },
+    "attendance": 8033,
+    "capturedAt": "2026-10-13T07:19:55.309Z",
+    "duration": {
+      "minutes": 137,
+      "kind": "estimated"
+    },
+    "startedAt": "19:10"
   }
 ];

@@ -96,7 +96,7 @@ const SCALE = 7.5;
 // Salt Lake City is hub (research, Oct 12, 2026, docs/research/city-builds/salt-lake-city/salt-lake-city-city-type-answer.md):
 // downtown, Fairpark and the university share TRAX lines; suburban rooms are car-heavier. Venue carShare
 // values are wired from that answer (estimated, or agency-derived for Rice-Eccles football).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', miami: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub', 'salt-lake-city': 'hub', edmonton: 'hub', 'washington-dc': 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -131,6 +131,10 @@ const ZONE_NAMES: Record<string, string> = {
   'lincoln-financial-field': 'South Philadelphia Sports Complex',
   'citizens-bank-park': 'South Philadelphia Sports Complex',
   'xfinity-mobile-arena': 'South Philadelphia Sports Complex',
+  // Navy Yard / Buzzard Point / Wharf (city-type answer §7.5): South Capitol, M St SE/SW, Navy Yard and Waterfront stations.
+  'nationals-park': 'Navy Yard',
+  'audi-field': 'Navy Yard',
+  'the-anthem-dc': 'Navy Yard',
   // Columbus clusters that share approaches (city-type answer §5b). Distance still forms the zone.
   'nationwide-arena': 'Arena District',
   'scottsmiracle-gro-field': 'Arena District',

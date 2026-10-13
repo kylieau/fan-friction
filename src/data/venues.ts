@@ -8887,6 +8887,254 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // Washington, DC (docs/research/city-builds/washington-dc/, Oct 13, 2026). Car shares from the city-type answer
+  // (estimated unless noted); measured Metro share at Nationals Park is cited in the venue note, not stored as carShare.
+  'northwest-stadium': {
+    id: 'northwest-stadium',
+    metroId: 'washington-dc',
+    // Estimated 0.85 (city-type V-04): no measured split; suburban NFL bowl.
+    carShare: 0.85,
+    names: [
+      { name: 'FedExField' },
+      { name: 'Northwest Stadium', from: '2024-08-27' },
+    ],
+    location: [-76.864533, 38.9076694],
+    // Round-2 rule: conflicting figures (64,000 / 62,000 / 65,000), none official; blank (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'secu-stadium': {
+    id: 'secu-stadium',
+    metroId: 'washington-dc',
+    names: [
+      { name: 'Capital One Field at Maryland Stadium' },
+      { name: 'Maryland Stadium' },
+      { name: 'SECU Stadium', from: '2022-10-01' },
+    ],
+    location: [-76.9474534, 38.9902987],
+    capacity: [
+      { seats: 51802, setup: 'football', note: 'Official through 2024 (UMD athletics page, cited in research).' },
+      { seats: 46185, setup: 'football', fromYear: 2025, note: 'Official after lower-level seat widening. Stadium Journey 51,802 conflict preserved. Source: venue table A1.' },
+    ],
+    roof: 'open',
+  },
+  'nationals-park': {
+    id: 'nationals-park',
+    metroId: 'washington-dc',
+    // Estimated 0.50 (city-type V-02), anchored on measured Metrorail ~34% of announced attendance (2014).
+    carShare: 0.5,
+    names: [{ name: 'Nationals Park' }],
+    location: [-77.0074815, 38.8727332],
+    capacity: [
+      { seats: 41339, setup: 'baseball', note: 'Reported; standing-room areas can raise sellable total above this. Source: venue table A1.' },
+    ],
+    roof: 'open',
+  },
+  'jiffy-lube-live': {
+    id: 'jiffy-lube-live',
+    metroId: 'washington-dc',
+    // Estimated 0.97 (city-type V-11). Prince William County edge room.
+    carShare: 0.97,
+    names: [{ name: 'Nissan Pavilion' }, { name: 'Jiffy Lube Live', from: '2010-01-01' }],
+    location: [-77.5902804, 38.7855262],
+    capacity: [
+      {
+        seats: 25262,
+        setup: 'concert',
+        note: 'Reported 10,444 reserved + 14,818 lawn (Ticketmaster blog). Tourism office rounds to 25,000. Source: venue table A1.',
+      },
+    ],
+    roof: 'covered',
+  },
+  'capital-one-arena': {
+    id: 'capital-one-arena',
+    metroId: 'washington-dc',
+    // Estimated 0.35 (city-type V-01) from 2008 DDOT comparison; widened for rideshare in research.
+    carShare: 0.35,
+    names: [
+      { name: 'MCI Center' },
+      { name: 'Verizon Center' },
+      { name: 'Capital One Arena', from: '2017-01-01' },
+    ],
+    location: [-77.0209378, 38.8981883],
+    capacity: [
+      { seats: 20356, setup: 'basketball', note: 'Reported (Wikipedia). Hockey 18,573 and concert layouts differ. Post-renovation capacity unknown. Source: venue table A1.' },
+      { seats: 18573, setup: 'hockey', note: 'Reported. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'audi-field': {
+    id: 'audi-field',
+    metroId: 'washington-dc',
+    // Estimated 0.45 (city-type V-03) from 2016 CTR parking forecast.
+    carShare: 0.45,
+    names: [{ name: 'Audi Field' }],
+    location: [-77.0126092, 38.8682612],
+    capacity: [
+      { seats: 20000, setup: 'soccer', note: 'Reported. Partial-bowl use for DC Defenders noted in research. Source: venue table A1.' },
+    ],
+    roof: 'open',
+  },
+  'merriweather-post-pavilion': {
+    id: 'merriweather-post-pavilion',
+    metroId: 'washington-dc',
+    // Estimated 0.95 (city-type V-09). Howard County edge; assign to DC only (not Baltimore).
+    carShare: 0.95,
+    names: [{ name: 'Merriweather Post Pavilion' }],
+    location: [-76.8625061, 39.2088352],
+    capacity: [
+      {
+        seats: 19319,
+        setup: 'concert',
+        note: 'Reported pavilion + lawn total. Conflicts with ~15,000 on Bandsintown; seated/lawn split not verified. Source: venue table A1.',
+      },
+    ],
+    roof: 'covered',
+  },
+  'umd-xfinity-center': {
+    id: 'umd-xfinity-center',
+    metroId: 'washington-dc',
+    names: [{ name: 'Xfinity Center' }, { name: 'Comcast Center' }],
+    location: [-76.9413362, 38.9956239],
+    capacity: [
+      { seats: 17950, setup: 'basketball', note: 'Reported. Pavilion (~1,500) is a separate room. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'eaglebank-arena': {
+    id: 'eaglebank-arena',
+    metroId: 'washington-dc',
+    // Estimated 0.88 (city-type V-06).
+    carShare: 0.88,
+    names: [{ name: 'Patriot Center' }, { name: 'EagleBank Arena', from: '2015-07-01' }],
+    location: [-77.3047794, 38.8293072],
+    capacity: [
+      { seats: 10000, setup: 'basketball', note: 'Official maximum. Theatre setup 4,748 is below 5,000. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'prince-georges-stadium': {
+    id: 'prince-georges-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: "Prince George's Stadium" }],
+    location: [-76.7093649, 38.9455047],
+    capacity: [
+      { seats: 10000, setup: 'baseball', note: 'Official MiLB seats. Reported 14,000 including lawn/standing not stored as seats. Source: venue table A1.' },
+    ],
+    roof: 'open',
+  },
+  'greene-stadium': {
+    id: 'greene-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'William H. Greene Stadium' }],
+    location: [-77.020737, 38.925662],
+    // Round-2 rule: same source gives 7,086 seats and 10,000 football; blank until settled (BACKLOG).
+    capacity: [],
+    roof: 'open',
+  },
+  'wolf-trap-filene-center': {
+    id: 'wolf-trap-filene-center',
+    metroId: 'washington-dc',
+    // Estimated 0.90 (city-type V-10).
+    carShare: 0.9,
+    names: [{ name: 'Filene Center' }, { name: 'Wolf Trap Filene Center' }],
+    location: [-77.2646608, 38.9380076],
+    capacity: [
+      {
+        seats: 7028,
+        setup: 'concert',
+        note: 'Official NPS total = 3,800 house + 3,200 lawn + pit. Crosses 5,000 only with lawn GA. Source: venue table A1.',
+      },
+    ],
+    roof: 'covered',
+  },
+  'the-anthem-dc': {
+    id: 'the-anthem-dc',
+    metroId: 'washington-dc',
+    names: [{ name: 'The Anthem' }],
+    location: [-77.0258973, 38.8800652],
+    capacity: [
+      {
+        seats: 6000,
+        setup: 'concert',
+        note: 'Reported standing/GA maximum; seated layouts 2,300–3,200. Variable stage. Source: venue table A1.',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'charles-e-smith-center': {
+    id: 'charles-e-smith-center',
+    metroId: 'washington-dc',
+    names: [{ name: 'Charles E. Smith Center' }],
+    location: [-77.0493531, 38.8978142],
+    capacity: [
+      { seats: 5000, setup: 'basketball', note: 'Official GW maximum. Historic 5,454 pre-renovation noted in research. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'segra-field': {
+    id: 'segra-field',
+    metroId: 'washington-dc',
+    names: [{ name: 'Segra Field' }],
+    location: [-77.5455554, 39.069037],
+    capacity: [
+      { seats: 5000, setup: 'soccer', note: 'Reported only; sits on the 5,000 friction line. Loudoun County edge. Source: venue table A1.' },
+    ],
+    roof: 'open',
+  },
+  'carefirst-arena': {
+    id: 'carefirst-arena',
+    metroId: 'washington-dc',
+    names: [
+      { name: 'Entertainment and Sports Arena' },
+      { name: 'CareFirst Arena', from: '2025-02-06' },
+    ],
+    location: [-76.9913193, 38.8469919],
+    capacity: [
+      { seats: 4200, setup: 'basketball', note: 'Reported nominal; below 5,000 — pre-list, muted friction. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'fillmore-silver-spring': {
+    id: 'fillmore-silver-spring',
+    metroId: 'washington-dc',
+    names: [{ name: 'The Fillmore Silver Spring' }],
+    location: [-77.0276065, 38.9974455],
+    capacity: [
+      { seats: 2000, setup: 'concert', note: 'Reported approximate. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'music-center-strathmore': {
+    id: 'music-center-strathmore',
+    metroId: 'washington-dc',
+    names: [{ name: 'Music Center at Strathmore' }],
+    location: [-77.1029459, 39.0316783],
+    capacity: [
+      { seats: 1976, setup: 'concert', note: 'Official Strathmore concert hall. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'lincoln-theatre-dc': {
+    id: 'lincoln-theatre-dc',
+    metroId: 'washington-dc',
+    names: [{ name: 'Lincoln Theatre' }],
+    location: [-77.028986, 38.9173973],
+    capacity: [
+      { seats: 1225, setup: 'concert', note: 'Reported (2017). Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
+  'mgm-national-harbor-theater': {
+    id: 'mgm-national-harbor-theater',
+    metroId: 'washington-dc',
+    names: [{ name: 'The Theater at MGM National Harbor' }],
+    location: [-77.0079184, 38.796384],
+    capacity: [
+      { seats: 3000, setup: 'concert', note: 'Official designer seated; orchestra retracts for floor shows. Source: venue table A1.' },
+    ],
+    roof: 'indoor',
+  },
   // ---------- Ottawa–Gatineau (docs/research/city-builds/ottawa-gatineau/; car shares from ottawa-gatineau-city-type-answer.md), Oct 13, 2026 ----------
   // LeBreton Flats Park (Bluesfest, Canada Day), Winterlude sites, Race Weekend and FMG are not rows — point events when a count exists.
   // Lansdowne Event Centre (A6) opens ~Jul 2028; Cohere Centre (A4) and Rogers Centre Ottawa hall (A7) have no sourced concert/sport capacity.
@@ -9443,7 +9691,6 @@ export const VENUES: Record<string, Venue> = {
     roof: 'indoor',
   },
 };
-
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
 export function venueNameOn(venue: Venue, date: LocalDate): string {
   let current = venue.names[0].name;
