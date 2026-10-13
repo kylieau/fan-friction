@@ -1,0 +1,611 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "metroName": "Salt Lake City",
+  "timeZone": "America/Denver",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:18:57.979Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 13
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-utah-mammoth-401892500",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Maple Leafs",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "maple-leafs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11298,
+        "low": 11298,
+        "high": 11298,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-real-salt-lake-761870",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Real Salt Lake vs. Earthquakes",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "real-salt-lake",
+        "away": "san-jose"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-utah-royals-401854022",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-17",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Royals vs. Current",
+      "broadcast": "ION",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "utah-royals",
+        "away": "kansas-city"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-utah-mammoth-401892531",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Mammoth vs. Oilers",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11521,
+        "low": 11521,
+        "high": 12915,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-19-espn-utah-mammoth-401892538",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Penguins",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11387,
+        "low": 11387,
+        "high": 11387,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-utah-jazz-401909849",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Jazz vs. Pelicans",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-utah-royals-401854028",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Royals vs. Reign",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "utah-royals",
+        "away": "seattle"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-real-salt-lake-761898",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Real Salt Lake vs. St. Louis",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "real-salt-lake",
+        "away": "st-louis"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-utah-mammoth-401892575",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Lightning",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11131,
+        "low": 11131,
+        "high": 12478,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-utah-utes-football-401856837",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Utah Utes vs. Houston",
+      "place": {
+        "type": "venue",
+        "venueId": "rice-eccles-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utah-utes-football",
+        "away": "houston"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 51125,
+        "low": 50962,
+        "high": 52286,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-utah-jazz-401909861",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Jazz vs. Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-utah-jazz-401909875",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Jazz vs. Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-utah-mammoth-401892592",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Wild",
+      "broadcast": "MINNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "wild"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11053,
+        "low": 11053,
+        "high": 11053,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-utah-mammoth-401892500",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11298,
+        "low": 11298,
+        "high": 11298
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-real-salt-lake-761870",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-utah-royals-401854022",
+      "date": "2026-10-17",
+      "start": "16:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Mammoth vs. Oilers 13 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-utah-mammoth-401892531",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Royals vs. Current 13 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11521,
+        "low": 11521,
+        "high": 12915
+      }
+    },
+    {
+      "eventId": "2026-10-19-espn-utah-mammoth-401892538",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11387,
+        "low": 11387,
+        "high": 11387
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-utah-jazz-401909849",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Royals vs. Reign 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-utah-royals-401854028",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Jazz vs. Pelicans 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-real-salt-lake-761898",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Utah Utes vs. Houston and Mammoth vs. Lightning 12 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-utah-mammoth-401892575",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Real Salt Lake vs. St. Louis 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11131,
+        "low": 11131,
+        "high": 12478
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-utah-utes-football-401856837",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 51125,
+        "low": 50962,
+        "high": 52286
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-utah-jazz-401909861",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-utah-jazz-401909875",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-utah-mammoth-401892592",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11053,
+        "low": 11053,
+        "high": 11053
+      }
+    }
+  ]
+}

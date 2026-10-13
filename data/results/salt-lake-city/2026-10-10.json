@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-utah-utes-football-401856827",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rice-eccles-stadium",
+      "homeTeamId": "utah-utes-football",
+      "home": {
+        "name": "Utah Utes",
+        "score": 41
+      },
+      "away": {
+        "name": "Kansas",
+        "score": 24
+      },
+      "attendance": 51467,
+      "capturedAt": "2026-10-13T07:19:10.988Z",
+      "duration": {
+        "minutes": 228,
+        "kind": "estimated"
+      },
+      "startedAt": "20:00"
+    }
+  ]
+}

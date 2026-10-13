@@ -40841,6 +40841,233 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-13-espn-utah-mammoth-401892500",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11298,
+      "low": 11298,
+      "high": 11298
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-14-espn-real-salt-lake-761870",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-espn-utah-mammoth-401892531",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Royals vs. Current 13 mi away, back to back."
+    },
+    "draw": {
+      "count": 11521,
+      "low": 11521,
+      "high": 12915
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-espn-utah-royals-401854022",
+    "date": "2026-10-17",
+    "start": "16:30",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "Mammoth vs. Oilers 13 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-19-espn-utah-mammoth-401892538",
+    "date": "2026-10-19",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11387,
+      "low": 11387,
+      "high": 11387
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-23-espn-utah-jazz-401909849",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Royals vs. Reign 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 18175,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-23-espn-utah-royals-401854028",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Jazz vs. Pelicans 13 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-real-salt-lake-761898",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Utah Utes vs. Houston and Mammoth vs. Lightning 12 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-utah-mammoth-401892575",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Moderate",
+      "why": "Real Salt Lake vs. St. Louis 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 11131,
+      "low": 11131,
+      "high": 12478
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-utah-utes-football-401856837",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 51125,
+      "low": 50962,
+      "high": 52286
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-25-espn-utah-jazz-401909861",
+    "date": "2026-10-25",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18181,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-26-espn-utah-jazz-401909875",
+    "date": "2026-10-26",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18181,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-27-espn-utah-mammoth-401892592",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:57.979Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11053,
+      "low": 11053,
+      "high": 11053
+    }
+  },
+  {
     "metroId": "san-diego",
     "eventId": "2026-10-06-mlb-849826",
     "date": "2026-10-06",
