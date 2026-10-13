@@ -60,6 +60,11 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '194', metroId: 'columbus', teamId: 'osu-wbb', sport: 'basketball' },
   { path: 'hockey/mens-college-hockey', espnId: '194', metroId: 'columbus', teamId: 'osu-mhockey', sport: 'hockey' },
   // Tampa Bay (docs/research/city-builds/tampa/); every id and home venue checked against the feed Oct 12, 2026.
+  // Cleveland (docs/research/city-builds/cleveland/); ids and home venues checked against the feed Oct 13, 2026.
+  { path: 'football/nfl', espnId: '5', metroId: 'cleveland', teamId: 'browns', sport: 'football' },
+  { path: 'basketball/nba', espnId: '5', metroId: 'cleveland', teamId: 'cavaliers', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '325', metroId: 'cleveland', teamId: 'cleveland-state-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '325', metroId: 'cleveland', teamId: 'cleveland-state-wbb', sport: 'basketball' },
   { path: 'football/nfl', espnId: '27', metroId: 'tampa', teamId: 'buccaneers', sport: 'football' },
   { path: 'hockey/nhl', espnId: '20', metroId: 'tampa', teamId: 'lightning', sport: 'hockey' },
   { path: 'football/college-football', espnId: '58', metroId: 'tampa', teamId: 'usf-football', sport: 'football' },
@@ -670,6 +675,11 @@ const VENUE_BY_NAME: Record<string, string> = {
   'u.s. bank stadium': 'us-bank-stadium',
   'huntington bank stadium': 'huntington-bank-stadium',
   'tcf bank stadium': 'huntington-bank-stadium',
+  'huntington bank field': 'huntington-bank-field',
+  'progressive field': 'progressive-field',
+  'rocket arena': 'rocket-arena',
+  'rocket mortgage fieldhouse': 'rocket-arena',
+  'wolstein center': 'wolstein-center',
   'target center': 'target-center',
   'grand casino arena': 'grand-casino-arena',
   'xcel energy center': 'grand-casino-arena',

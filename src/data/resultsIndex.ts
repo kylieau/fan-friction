@@ -803,6 +803,54 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-12T17:25:04.590Z"
   },
   {
+    "eventId": "2026-10-10-mlb-849831",
+    "metroId": "cleveland",
+    "date": "2026-10-10",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "progressive-field",
+    "homeTeamId": "guardians",
+    "home": {
+      "name": "Guardians",
+      "score": 2
+    },
+    "away": {
+      "name": "White Sox",
+      "score": 0
+    },
+    "capturedAt": "2026-10-13T07:22:20.951Z",
+    "attendance": 36889,
+    "duration": {
+      "minutes": 156,
+      "kind": "official"
+    },
+    "startedAt": "20:08"
+  },
+  {
+    "eventId": "2026-10-11-espn-cavaliers-401898401",
+    "metroId": "cleveland",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "rocket-arena",
+    "homeTeamId": "cavaliers",
+    "home": {
+      "name": "Cavaliers",
+      "score": 119
+    },
+    "away": {
+      "name": "Magic",
+      "score": 105
+    },
+    "attendance": 14861,
+    "capturedAt": "2026-10-13T07:22:20.846Z",
+    "duration": {
+      "minutes": 138,
+      "kind": "estimated"
+    },
+    "startedAt": "18:43"
+  },
+  {
     "eventId": "2026-10-09-espn-blue-jackets-401892467",
     "metroId": "columbus",
     "date": "2026-10-09",

@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -120,6 +120,17 @@ const LIST: Team[] = [
   team("columbus-fury", "Columbus Fury", "Fury", "MLV", "volleyball", "columbus", "FURY"),
   team("owu-football", "Ohio Wesleyan Battling Bishops Football", "OWU Football", "College football", "football", "columbus", "OWU"),
   team("owu-mbb", "Ohio Wesleyan Battling Bishops Men's Basketball", "OWU MBB", "College men's basketball", "basketball", "columbus", "OWU"),
+  // Cleveland (Oct 13, 2026; docs/research/city-builds/cleveland/). Feed ids checked against live schedules Oct 13, 2026.
+  team("browns", "Cleveland Browns", "Browns", "NFL", "football", "cleveland", "CLE"),
+  team("guardians", "Cleveland Guardians", "Guardians", "MLB", "baseball", "cleveland", "CLE"),
+  team("cavaliers", "Cleveland Cavaliers", "Cavaliers", "NBA", "basketball", "cleveland", "CLE"),
+  team("cleveland-monsters", "Cleveland Monsters", "Monsters", "AHL", "hockey", "cleveland", "MON"),
+  team("lake-county-captains", "Lake County Captains", "Captains", "High-A baseball", "baseball", "cleveland", "CAP"),
+  team("cleveland-state-mbb", "Cleveland State Vikings Men's Basketball", "CSU MBB", "College men's basketball", "basketball", "cleveland", "CSU", ["Vikings"]),
+  team("cleveland-state-wbb", "Cleveland State Vikings Women's Basketball", "CSU WBB", "College women's basketball", "basketball", "cleveland", "CSU", ["Vikings"]),
+  team("cleveland-charge", "Cleveland Charge", "Charge", "NBA G League", "basketball", "cleveland", "CHG"),
+  team("lake-erie-crushers", "Lake Erie Crushers", "Crushers", "Frontier League", "baseball", "cleveland", "LEC"),
+  team("cleveland-crunch", "Cleveland Crunch", "Crunch", "MLIS", "soccer", "cleveland", "CRN"),
   // Indianapolis (Oct 13, 2026; docs/research/city-builds/indianapolis/). Bloomington and West Lafayette stay out.
   team("colts", "Indianapolis Colts", "Colts", "NFL", "football", "indianapolis", "IND"),
   team("pacers", "Indiana Pacers", "Pacers", "NBA", "basketball", "indianapolis", "IND"),
