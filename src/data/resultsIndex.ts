@@ -971,6 +971,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "15:04"
   },
   {
+    "eventId": "2026-10-10-espn-butler-football-401868212",
+    "metroId": "indianapolis",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "sellick-bowl",
+    "homeTeamId": "butler-football",
+    "home": {
+      "name": "Butler",
+      "score": 41
+    },
+    "away": {
+      "name": "San Diego",
+      "score": 10
+    },
+    "attendance": 3909,
+    "capturedAt": "2026-10-13T07:18:55.945Z",
+    "duration": {
+      "minutes": 184,
+      "kind": "estimated"
+    },
+    "startedAt": "13:00"
+  },
+  {
+    "eventId": "2026-10-10-espn-pacers-401898396",
+    "metroId": "indianapolis",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "gainbridge-fieldhouse",
+    "homeTeamId": "pacers",
+    "home": {
+      "name": "Pacers",
+      "score": 117
+    },
+    "away": {
+      "name": "Hawks",
+      "score": 119
+    },
+    "attendance": 11002,
+    "capturedAt": "2026-10-13T07:18:55.945Z",
+    "duration": {
+      "minutes": 143,
+      "kind": "estimated"
+    },
+    "startedAt": "19:10"
+  },
+  {
     "eventId": "2026-10-10-espn-sporting-kc-761855",
     "metroId": "kansas-city",
     "date": "2026-10-10",

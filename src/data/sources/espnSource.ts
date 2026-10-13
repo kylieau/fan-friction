@@ -266,6 +266,15 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '338', metroId: 'atlanta', teamId: 'ksu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-wbb', sport: 'basketball' },
+  // Indianapolis (docs/research/city-builds/indianapolis/). Ids checked against each team's schedule Oct 13, 2026.
+  { path: 'football/nfl', espnId: '11', metroId: 'indianapolis', teamId: 'colts', sport: 'football' },
+  { path: 'basketball/nba', espnId: '11', metroId: 'indianapolis', teamId: 'pacers', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '5', metroId: 'indianapolis', teamId: 'fever', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2086', metroId: 'indianapolis', teamId: 'butler-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2086', metroId: 'indianapolis', teamId: 'butler-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2086', metroId: 'indianapolis', teamId: 'butler-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '85', metroId: 'indianapolis', teamId: 'iu-indy-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '85', metroId: 'indianapolis', teamId: 'iu-indy-wbb', sport: 'basketball' },
   // Nashville (docs/research/city-builds/nashville/). Ids checked against each team's schedule Oct 12, 2026.
   { path: 'football/nfl', espnId: '10', metroId: 'nashville', teamId: 'titans', sport: 'football' },
   { path: 'hockey/nhl', espnId: '27', metroId: 'nashville', teamId: 'predators', sport: 'hockey' },
@@ -638,6 +647,14 @@ const VENUE_BY_NAME: Record<string, string> = {
   'td place arena': 'arena-at-td-place',
   'td place': 'arena-at-td-place',
   'ottawa stadium': 'ottawa-stadium',
+  // Indianapolis, as ESPN writes them on each team's schedule (Oct 13, 2026).
+  'lucas oil stadium': 'lucas-oil-stadium',
+  'gainbridge fieldhouse': 'gainbridge-fieldhouse',
+  'bankers life fieldhouse': 'gainbridge-fieldhouse',
+  'hinkle fieldhouse': 'hinkle-fieldhouse',
+  'victory field': 'victory-field',
+  'bud and jackie sellick bowl': 'sellick-bowl',
+  'the jungle': 'iu-indy-jungle',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

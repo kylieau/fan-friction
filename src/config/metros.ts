@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans', 'ottawa-gatineau'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'indianapolis', 'toronto', 'minneapolis', 'new-orleans', 'ottawa-gatineau'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -228,6 +228,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-95.39, 29.73],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/indianapolis/indianapolis-venue-table-answer.md): Marion County core plus
+  // Hamilton (Fishers, Noblesville) and Hendricks (Brownsburg). One frame holds downtown, Speedway and the Fairgrounds;
+  // Ruoff and Fishers Event Center sit northeast off the first view. Bloomington and West Lafayette stay out.
+  indianapolis: {
+    id: 'indianapolis', code: 'IND',
+    name: 'Indianapolis',
+    timeZone: 'America/Indiana/Indianapolis',
+    center: [-86.158, 39.768],
+    zoom: 10.4,
   },
   // Covered Oct 12, 2026 (docs/research/city-builds/toronto/toronto-venue-table-answer.md): City of Toronto plus Peel, York, Halton and Durham through Oshawa.
   // Hamilton is a separate city. One frame holds downtown, the Union Station pair and Exhibition Place; North York, Mississauga, Brampton and Oshawa sit off the first view.

@@ -90,6 +90,9 @@ const SCALE = 7.5;
 // Ottawa–Gatineau is a hub (research, Oct 12, 2026, docs/research/city-builds/ottawa-gatineau/ottawa-gatineau-city-type-answer.md):
 // Kanata is car-dominant while Lansdowne and LeBreton run much lower; venue carShare overrides carry the sourced estimates.
 const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'ottawa-gatineau': 'hub' };
+// Indianapolis is sprawl (research, Oct 12, 2026, docs/research/city-builds/indianapolis/indianapolis-city-type-answer.md):
+// event transit use is tiny where bounded; suburban rooms are parking-led. Estimated car shares are wired on venues (C04, Oct 12).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', indianapolis: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -143,6 +146,15 @@ const ZONE_NAMES: Record<string, string> = {
   'celeste-center': 'Ohio Expo Center',
   // Nashville. Downtown rooms share the East Bank lots and the river bridges; the fairgrounds rooms share one campus.
   'nissan-stadium': 'Downtown',
+  // Indianapolis
+  'lucas-oil-stadium': 'Downtown',
+  'gainbridge-fieldhouse': 'Downtown',
+  'victory-field': 'White River State Park',
+  'everwise-amphitheater': 'White River State Park',
+  'indianapolis-motor-speedway': 'Speedway',
+  'ruoff-music-center': 'Noblesville',
+  'fishers-event-center': 'Fishers',
+  'corteva-coliseum': 'Fairgrounds',
   'geodis-park': 'Fairgrounds',
   'firstbank-stadium': 'Vanderbilt',
   'floyd-stadium': 'MTSU',
