@@ -299,6 +299,23 @@ const LIST: Team[] = [
   team("lsuno-baseball", "LSU New Orleans Privateers Baseball", "LSUNO Baseball", "College baseball", "baseball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
   team("laketown-squadron", "Laketown Squadron", "Squadron", "NBA G League", "basketball", "new-orleans", "LKT"),
   team("new-orleans-jesters", "New Orleans Jesters", "Jesters", "NPSL", "soccer", "new-orleans", "JES"),
+  // Raleigh–Durham (Oct 13, 2026; docs/research/city-builds/raleigh-durham/). Feed ids checked against live schedules.
+  // North Carolina FC sits out 2026–27 (research: club suspended operations), so it has no record.
+  team("hurricanes", "Carolina Hurricanes", "Hurricanes", "NHL", "hockey", "raleigh-durham", "CAR", ["Canes"]),
+  team("nc-state-football", "NC State Wolfpack Football", "NC State FB", "College football", "football", "raleigh-durham", "NCSU", ["Wolfpack", "NC State"]),
+  team("nc-state-mbb", "NC State Wolfpack Men's Basketball", "NC State MBB", "College men's basketball", "basketball", "raleigh-durham", "NCSU", ["Wolfpack"]),
+  team("nc-state-wbb", "NC State Wolfpack Women's Basketball", "NC State WBB", "College women's basketball", "basketball", "raleigh-durham", "NCSU", ["Wolfpack"]),
+  team("unc-football", "North Carolina Tar Heels Football", "UNC FB", "College football", "football", "raleigh-durham", "UNC", ["Tar Heels", "North Carolina"]),
+  team("unc-mbb", "North Carolina Tar Heels Men's Basketball", "UNC MBB", "College men's basketball", "basketball", "raleigh-durham", "UNC", ["Tar Heels"]),
+  team("unc-wbb", "North Carolina Tar Heels Women's Basketball", "UNC WBB", "College women's basketball", "basketball", "raleigh-durham", "UNC", ["Tar Heels"]),
+  team("duke-football", "Duke Blue Devils Football", "Duke FB", "College football", "football", "raleigh-durham", "DUKE", ["Blue Devils", "Duke"]),
+  team("duke-mbb", "Duke Blue Devils Men's Basketball", "Duke MBB", "College men's basketball", "basketball", "raleigh-durham", "DUKE", ["Blue Devils"]),
+  team("duke-wbb", "Duke Blue Devils Women's Basketball", "Duke WBB", "College women's basketball", "basketball", "raleigh-durham", "DUKE", ["Blue Devils"]),
+  team("nccu-football", "North Carolina Central Eagles Football", "NCCU FB", "College football", "football", "raleigh-durham", "NCCU", ["Eagles", "NCCU"]),
+  team("nccu-mbb", "North Carolina Central Eagles Men's Basketball", "NCCU MBB", "College men's basketball", "basketball", "raleigh-durham", "NCCU", ["Eagles"]),
+  team("nccu-wbb", "North Carolina Central Eagles Women's Basketball", "NCCU WBB", "College women's basketball", "basketball", "raleigh-durham", "NCCU", ["Eagles"]),
+  team("durham-bulls", "Durham Bulls", "Bulls", "Triple-A baseball", "baseball", "raleigh-durham", "DUR"),
+  team("nc-courage", "North Carolina Courage", "Courage", "NWSL", "soccer", "raleigh-durham", "NC"),
   // Pittsburgh (Oct 13, 2026; docs/research/city-builds/pittsburgh/). Feed ids checked against live schedules.
   team("steelers", "Pittsburgh Steelers", "Steelers", "NFL", "football", "pittsburgh", "PIT"),
   team("pirates", "Pittsburgh Pirates", "Pirates", "MLB", "baseball", "pittsburgh", "PIT"),

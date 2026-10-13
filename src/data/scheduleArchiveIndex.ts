@@ -78,6 +78,7 @@ export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
   { metroId: 'ottawa-gatineau', capturedOn: '2026-10-13', from: '2026-10-13', through: '2026-10-27', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'philadelphia', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'phoenix', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
+  { metroId: 'raleigh-durham', capturedOn: '2026-10-13', from: '2026-10-13', through: '2026-10-27', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
   { metroId: 'pittsburgh', capturedOn: '2026-10-13', from: '2026-10-13', through: '2026-10-27', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
   { metroId: 'portland', capturedOn: '2026-10-13', from: '2026-10-13', through: '2026-10-27', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'sacramento', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },

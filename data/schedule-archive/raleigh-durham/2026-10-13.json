@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "metroName": "Raleigh–Durham",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-13",
+  "capturedAt": "2026-10-13T07:26:31.134Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-13",
+    "through": "2026-10-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-hurricanes-401892491",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-13",
+      "start": "18:45",
+      "kind": "game",
+      "title": "Hurricanes vs. Capitals",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "capitals"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-duke-football-401858266",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Duke vs. North Carolina",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "wallace-wade-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "duke-football",
+        "away": "north-carolina"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-nc-courage-401854023",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Courage vs. Wave",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nc-courage",
+        "away": "san-diego"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-unc-football-401858275",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "North Carolina vs. Syracuse",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "kenan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "unc-football",
+        "away": "syracuse"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-27-espn-hurricanes-401892586",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Bruins",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-hurricanes-401892491",
+      "date": "2026-10-13",
+      "start": "18:45",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-duke-football-401858266",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Courage vs. Wave 18 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-nc-courage-401854023",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Duke vs. North Carolina 18 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-unc-football-401858275",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-hurricanes-401892586",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    }
+  ]
+}
