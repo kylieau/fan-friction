@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-cavaliers-401898401",
+      "metroId": "cleveland",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 119
+      },
+      "away": {
+        "name": "Magic",
+        "score": 105
+      },
+      "attendance": 14861,
+      "capturedAt": "2026-10-13T07:22:20.846Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "18:43"
+    }
+  ]
+}

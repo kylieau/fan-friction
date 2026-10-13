@@ -43,6 +43,7 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
   { client: 'ahl', htId: '380', metroId: 'austin', teamId: 'texas-stars', venueId: 'heb-center-cedar-park' },
+  { client: 'ahl', htId: '373', metroId: 'cleveland', teamId: 'cleveland-monsters', venueId: 'rocket-arena' },
   // Vancouver. Ids checked Oct 12, 2026. Goldeneyes "home" games at Rogers Place (Edmonton) are not mapped.
   { client: 'pwhl', htId: '9', metroId: 'vancouver', teamId: 'vancouver-goldeneyes', venueId: 'pacific-coliseum' },
   { client: 'whl', htId: '223', metroId: 'vancouver', teamId: 'vancouver-giants', venueId: 'langley-events-centre' },
@@ -82,6 +83,9 @@ const VENUE_BY_NAME: Record<string, string> = {
   'aréna scotiabank': 'scotiabank-arena',
   'grand casino arena': 'grand-casino-arena',
   'xcel energy center': 'grand-casino-arena',
+  'rocket arena': 'rocket-arena',
+  'rocket mortgage fieldhouse': 'rocket-arena',
+  'quicken loans arena': 'rocket-arena',
 };
 
 export function hockeytechMetroIds(): string[] {

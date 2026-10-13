@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'cleveland', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -51,6 +51,16 @@ export const METROS: Record<string, Metro> = {
     name: 'Columbus',
     timeZone: 'America/New_York',
     center: [-83.01, 39.985],
+    zoom: 11.2,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/cleveland/cleveland-venue-table-answer.md): five-county core
+  // (Cuyahoga, Geauga, Lake, Lorain, Medina) plus Blossom as an edge room. One frame holds downtown Gateway,
+  // the lakefront and Playhouse Square; Eastlake, Avon and Blossom sit off the first view.
+  cleveland: {
+    id: 'cleveland', code: 'CLE',
+    name: 'Cleveland',
+    timeZone: 'America/New_York',
+    center: [-81.69, 41.499],
     zoom: 11.2,
   },
   // Covered Oct 7, 2026 (docs/research/city-builds/new-york/new-york-venue-table-answer.md). The region runs from the

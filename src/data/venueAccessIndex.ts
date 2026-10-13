@@ -377,4 +377,13 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'fair-grounds-race-course', reliefM: 3, streets250: 5 },
   { venueId: 'lakefront-arena', reliefM: 2, streets250: 1 },
   { venueId: 'turchin-stadium', reliefM: 4, streets250: 10 },
+  { venueId: 'huntington-bank-field', reliefM: 30, streets250: 3 },
+  { venueId: 'progressive-field', reliefM: 35, streets250: 8 },
+  { venueId: 'rocket-arena', reliefM: 47, streets250: 11 },
+  { venueId: 'wolstein-center', reliefM: 11, streets250: 6 },
+  { venueId: 'public-hall-cleveland', reliefM: 37, streets250: 5 },
+  { venueId: 'classic-auto-group-park', reliefM: 5, streets250: 5 },
+  { venueId: 'forefront-field', reliefM: 11, streets250: 3 },
+  { venueId: 'jacobs-pavilion', reliefM: 33, streets250: 13 },
+  { venueId: 'blossom-music-center', reliefM: 61, streets250: 0 },
 ];

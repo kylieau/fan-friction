@@ -10912,6 +10912,158 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "cleveland",
+    "eventId": "2026-10-15-mlb-849818",
+    "date": "2026-10-15",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 33530,
+      "low": 30278,
+      "high": 33530
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-16-ht-cleveland-monsters-1029139",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Guardians vs. Rays next door, same hours."
+    },
+    "draw": {
+      "count": 9909,
+      "low": 8368,
+      "high": 11056
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-16-mlb-849817",
+    "date": "2026-10-16",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 33530,
+      "low": 30278,
+      "high": 33530
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-17-ht-cleveland-monsters-1029152",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10177,
+      "low": 9712,
+      "high": 10465
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-17-mlb-849816",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 33530,
+      "low": 30278,
+      "high": 33530
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-18-espn-browns-401872997",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 66554,
+      "low": 66554,
+      "high": 67036
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-24-espn-cavaliers-401909854",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19432,
+      "low": 19432,
+      "high": 19432
+    }
+  },
+  {
+    "metroId": "cleveland",
+    "eventId": "2026-10-26-espn-cavaliers-401909869",
+    "date": "2026-10-26",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:22:49.125Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19432,
+      "low": 19432,
+      "high": 19432
+    }
+  },
+  {
     "metroId": "columbus",
     "eventId": "2026-10-12-tm-Z7r9jZ1A70gPx",
     "date": "2026-10-12",

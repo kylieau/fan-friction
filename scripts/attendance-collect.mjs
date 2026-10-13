@@ -26,6 +26,8 @@ const MLB_TEAMS = [
   { teamId: 'space-cowboys', metroId: 'houston', mlbId: 5434, sportId: 11, venueId: 'constellation-field', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'rays', metroId: 'tampa', mlbId: 139, venueId: 'tropicana-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'columbus-clippers', metroId: 'columbus', mlbId: 445, sportId: 11, venueId: 'huntington-park', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'guardians', metroId: 'cleveland', mlbId: 114, venueId: 'progressive-field', mlbVenueId: 5, seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'lake-county-captains', metroId: 'cleveland', mlbId: 437, sportId: 13, venueId: 'classic-auto-group-park', mlbVenueId: 2759, seasons: [2022, 2023, 2024, 2025, 2026] },
   // Regular-season home games only at Chase Field. 2026 had two "home" games in Mexico City (venue 5340).
   { teamId: 'diamondbacks', metroId: 'phoenix', mlbId: 109, venueId: 'chase-field', mlbVenueId: 15, seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'clearwater-threshers', metroId: 'tampa', mlbId: 566, sportId: 14, venueId: 'baycare-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -103,6 +105,10 @@ const ESPN_TEAMS = [
   { teamId: 'delaware-football', metroId: 'philadelphia', path: 'football/college-football', espnId: '48', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'delaware-mbb', metroId: 'philadelphia', path: 'basketball/mens-college-basketball', espnId: '48', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'delaware-wbb', metroId: 'philadelphia', path: 'basketball/womens-college-basketball', espnId: '48', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'browns', metroId: 'cleveland', path: 'football/nfl', espnId: '5', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'cavaliers', metroId: 'cleveland', path: 'basketball/nba', espnId: '5', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'cleveland-state-mbb', metroId: 'cleveland', path: 'basketball/mens-college-basketball', espnId: '325', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'cleveland-state-wbb', metroId: 'cleveland', path: 'basketball/womens-college-basketball', espnId: '325', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'buccaneers', metroId: 'tampa', path: 'football/nfl', espnId: '27', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'lightning', metroId: 'tampa', path: 'hockey/nhl', espnId: '20', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'usf-football', metroId: 'tampa', path: 'football/college-football', espnId: '58', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -607,6 +613,15 @@ const VENUE_BY_NAME = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Cleveland, as ESPN writes them (Oct 13, 2026). Keep in step with espnSource.ts.
+  'huntington bank field': 'huntington-bank-field',
+  'firstenergy stadium': 'huntington-bank-field',
+  'cleveland browns stadium': 'huntington-bank-field',
+  'progressive field': 'progressive-field',
+  'rocket arena': 'rocket-arena',
+  'rocket mortgage fieldhouse': 'rocket-arena',
+  'quicken loans arena': 'rocket-arena',
+  'wolstein center': 'wolstein-center',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -741,8 +756,9 @@ const HOCKEYTECH_TEAMS = [
   { teamId: 'vancouver-giants', metroId: 'vancouver', client: 'whl', htId: '223', venueId: 'langley-events-centre' },
   { teamId: 'henderson-silver-knights', metroId: 'las-vegas', client: 'ahl', htId: '437', venueId: 'lees-family-forum' },
   { teamId: 'pwhl-las-vegas', metroId: 'las-vegas', client: 'pwhl', htId: '12', venueId: 't-mobile-arena', skipUnknownVenue: true },
+  { teamId: 'cleveland-monsters', metroId: 'cleveland', client: 'ahl', htId: '373', venueId: 'rocket-arena' },
 ];
-const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre', 't-mobile arena': 't-mobile-arena', 'lee\u2019s family forum': 'lees-family-forum', 'orleans arena': 'orleans-arena', 'coca-cola coliseum': 'coca-cola-coliseum', 'ricoh coliseum': 'coca-cola-coliseum', 'scotiabank arena': 'scotiabank-arena', 'aréna scotiabank': 'scotiabank-arena', 'grand casino arena': 'grand-casino-arena', 'xcel energy center': 'grand-casino-arena' };
+const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre', 't-mobile arena': 't-mobile-arena', 'lee\u2019s family forum': 'lees-family-forum', 'orleans arena': 'orleans-arena', 'coca-cola coliseum': 'coca-cola-coliseum', 'ricoh coliseum': 'coca-cola-coliseum', 'scotiabank arena': 'scotiabank-arena', 'aréna scotiabank': 'scotiabank-arena', 'grand casino arena': 'grand-casino-arena', 'xcel energy center': 'grand-casino-arena', 'rocket arena': 'rocket-arena', 'rocket mortgage fieldhouse': 'rocket-arena', 'quicken loans arena': 'rocket-arena' };
 
 const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
 const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;
