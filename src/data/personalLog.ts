@@ -12,6 +12,7 @@ import { onAccountChange, tookDeliberateSignOut } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
+import { normalizeTags, retag } from './stubTags';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
@@ -273,6 +274,8 @@ export interface ManualNight {
   venue?: string;
   /** A metro id, or undefined for somewhere the app has no city for. */
   metroId?: string;
+  /** Your own tags, set on a hand-added plan so they carry into its stub. */
+  userTags?: string[];
 }
 
 /**
@@ -309,6 +312,7 @@ function manualEntryFrom(night: ManualNight, homeMetroId: string | null, id: str
     inMetro: Boolean(metroId),
     ...(metroId ? { metroId } : {}),
     ...(game && homeMetroId && metroId !== homeMetroId ? { away: true } : {}),
+    ...(night.userTags?.length ? { userTags: night.userTags } : {}),
   };
   return entry;
 }
@@ -354,6 +358,7 @@ function nightFromPlan(plan: Plan): ManualNight {
     when: { sort: plan.date, label: '', precision: 'day' },
     venue: plan.venue,
     metroId: m.elsewhere ? undefined : plan.metroId,
+    ...(plan.userTags?.length ? { userTags: plan.userTags } : {}),
   };
 }
 
@@ -819,6 +824,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
       return;
     }
   }
+  // Your tags stay with the stub when the answer changes (Attending to Watching and back).
+  const before = snapshot.plans.find((row) => row.eventId === event.id);
   const plan: Plan = {
     id: `plan-${event.id}`,
     date: event.date,
@@ -826,6 +833,7 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     eventId: event.id,
     title: listTitle(event),
     venue: venueLabel(event),
+    ...(before?.userTags?.length ? { userTags: before.userTags } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
   };
@@ -876,6 +884,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       const event = day.events.find((e) => e.id === plan.eventId);
       if (!event) continue;
       const entry = entryFromEvent(event);
+      if (plan.userTags?.length) entry.userTags = plan.userTags;
       // A Watching? answer becomes a Watched stub (Kylie, Oct 11); the friction stamp still applies.
       // Its Private / Friends choice and place come along (build notes 3, 4.7).
       if (plan.watch) {
@@ -1015,4 +1024,62 @@ export function logBackup(log: PersonalLog = snapshot): LogBackup {
     entries: yourEntries(log),
     plans: log.plans,
   };
+}
+
+
+// ---------- Tags on stubs (build notes 4, T01–T13) ----------
+
+/**
+ * Put your tags on the stub or plan for an event (an entry once the date has passed). Tags are
+ * optional and never on an Interested answer (T02); the editor does not offer them there.
+ */
+export function setStubTags(eventId: string, tags: string[]) {
+  const next = normalizeTags(tags);
+  const apply = <T extends { userTags?: string[] }>(row: T): T => {
+    const { userTags: _old, ...rest } = row;
+    void _old;
+    return (next.length > 0 ? { ...rest, userTags: next } : rest) as T;
+  };
+  const plan = snapshot.plans.find((row) => row.eventId === eventId);
+  if (plan) {
+    commit({ ...snapshot, plans: snapshot.plans.map((row) => (row.id === plan.id ? apply(row) : row)) });
+    return;
+  }
+  const entry = snapshot.added.find((row) => row.eventId === eventId);
+  if (entry) commit({ ...snapshot, added: snapshot.added.map((row) => (row.id === entry.id ? apply(row) : row)) });
+}
+
+/** The same for a hand-added entry or plan, which have no catalog event behind them. */
+export function setRowTags(kind: 'entry' | 'plan', id: string, tags: string[]) {
+  const next = normalizeTags(tags);
+  const apply = <T extends { userTags?: string[] }>(row: T): T => {
+    const { userTags: _old, ...rest } = row;
+    void _old;
+    return (next.length > 0 ? { ...rest, userTags: next } : rest) as T;
+  };
+  if (kind === 'plan') commit({ ...snapshot, plans: snapshot.plans.map((row) => (row.id === id ? apply(row) : row)) });
+  else commit({ ...snapshot, added: snapshot.added.map((row) => (row.id === id ? apply(row) : row)) });
+}
+
+/**
+ * Rename a tag everywhere, or merge it into another you already use (T07). One save for every stub
+ * and plan that carries it.
+ */
+export function renameTag(from: string, to: string) {
+  const target = normalizeTags([to])[0];
+  if (!target || target === from) return;
+  commit({
+    ...snapshot,
+    added: retag(snapshot.added, (tag) => (tag === from ? target : tag)),
+    plans: retag(snapshot.plans, (tag) => (tag === from ? target : tag)),
+  });
+}
+
+/** Take a tag off every stub and plan. Never deletes a stub (T07). */
+export function deleteTag(tag: string) {
+  commit({
+    ...snapshot,
+    added: retag(snapshot.added, (t) => (t === tag ? null : t)),
+    plans: retag(snapshot.plans, (t) => (t === tag ? null : t)),
+  });
 }

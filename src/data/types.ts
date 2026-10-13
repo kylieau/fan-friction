@@ -457,8 +457,10 @@ export interface Entry {
   eventId?: string;
   when: LoggedWhen;
   title: string;
-  /** Filter chips, such as "UCLA MBB" or "Dodgers". */
+  /** Filter chips, such as "UCLA MBB" or "Dodgers". System labels; your own words are `userTags`. */
   tags: string[];
+  /** Your own free-form tags (build notes 4, T01–T13): lowercase, up to 24 characters. Follow this stub's privacy. */
+  userTags?: string[];
   /**
    * Type name used for filters. A game uses the sport (Baseball, Women's basketball).
    * A show uses "Concerts". This is not a sports-only field.
@@ -561,6 +563,8 @@ export interface Plan {
   eventId?: string;
   title: string;
   venue?: string;
+  /** Your own free-form tags; they carry into the stub when the date passes. */
+  userTags?: string[];
   /** Watching?, not Attending? (Kylie, Oct 11): it settles into a watched stub, not an attended one. */
   watch?: boolean;
   /**
