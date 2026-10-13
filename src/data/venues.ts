@@ -11719,7 +11719,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     location: [-105.0192228, 39.7439520],
     capacity: [
-      { seats: 76125, setup: 'football', note: 'Reported (structural engineer). RTD lists 75,000; conflict preserved. Source: https://walterpmoore.com/projects/empower-field-mile-high' },
+      // Football capacity left blank: 76,125 (structural engineer) vs 75,000 (RTD), none official (BACKLOG).
       { seats: 85000, setup: 'concert', note: 'Reported. Source: https://en.wikipedia.org/wiki/Empower_Field_at_Mile_High' },
     ],
     roof: 'open',
@@ -11762,13 +11762,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.93,
     names: [{ name: "Dick's Sporting Goods Park" }, { name: 'DSG Park' }],
     location: [-104.8919219, 39.8059455],
-    capacity: [
-      {
-        seats: 18061,
-        setup: 'soccer',
-        note: 'Reported (Wikipedia): 18,061 soccer; 17,305 permanent in 2025 with expansion to 18,581 (burgundywave). Concert figure 27,000 is a separate setup, not stored. Source: https://en.wikipedia.org/wiki/Dick%27s_Sporting_Goods_Park',
-      },
-    ],
+    // Round-2 rule: 18,061 (Wikipedia) vs 17,305 permanent / 18,581 expanded (2025), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'covered',
   },
   'fiddlers-green-amphitheatre': {
@@ -11798,9 +11793,9 @@ export const VENUES: Record<string, Venue> = {
     location: [-104.9402559, 39.5960013],
     capacity: [
       {
-        seats: 12372,
+        seats: 12000,
         setup: 'soccer',
-        note: 'Reported (Denver Gazette). Club official 12,000. Planned reduction to about 4,000 after Summit FC moves (2028). Source: https://www.denvergazette.com/2026/07/18/fans-turn-up-the-heat-for-summit-fcs-first-home-game-at-new-stadium/',
+        note: 'Official (club) 12,000; Denver Gazette reported 12,372. Planned reduction to about 4,000 after Summit FC moves (2028). Source: https://www.denvergazette.com/2026/07/18/fans-turn-up-the-heat-for-summit-fcs-first-home-game-at-new-stadium/',
       },
     ],
     roof: 'open',
@@ -11811,13 +11806,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.90,
     names: [{ name: 'Denver Coliseum' }],
     location: [-104.9705743, 39.7791138],
-    capacity: [
-      {
-        seats: 10200,
-        setup: 'concert',
-        note: 'Conflict preserved: 10,200-person venue (ColoradoBiz) vs 8,140 seats (Construction Equipment Guide); likely different measures. The lower figure is in this note, not stored separately. Source: docs/research/city-builds/denver/denver-venue-table-answer.md §A7',
-      },
-    ],
+    // Round-2 rule: 10,200 (ColoradoBiz) vs 8,140 seats (Construction Equipment Guide), none official; blank (BACKLOG).
+    capacity: [],
     roof: 'indoor',
   },
   'red-rocks-amphitheatre': {
@@ -11838,7 +11828,6 @@ export const VENUES: Record<string, Venue> = {
   'levitt-pavilion-denver': {
     id: 'levitt-pavilion-denver',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Levitt Pavilion Denver' }],
     location: [-105.0035678, 39.6867297],
     capacity: [
@@ -11853,20 +11842,18 @@ export const VENUES: Record<string, Venue> = {
   'magness-arena': {
     id: 'magness-arena',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Magness Arena' }, { name: 'Magness Arena at the Ritchie Center' }],
     location: [-104.9616851, 39.6822661],
     capacity: [
       { seats: 6315, setup: 'hockey', note: 'Official (DU). Reported hockey 6,026 conflict in venue answer. Source: https://www.du.edu/du-events/auditoriums-gyms' },
       { seats: 7200, setup: 'basketball', note: 'Reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Magness_Arena' },
-      { seats: 7200, setup: 'concert', note: 'Official range 6,500–7,200 concerts; 7,200 upper reported figure stored. Source: https://www.du.edu/du-events/auditoriums-gyms' },
+      // Concert capacity left blank: official range 6,500–7,200 only (BACKLOG).
     ],
     roof: 'indoor',
   },
   'bellco-theatre': {
     id: 'bellco-theatre',
     metroId: 'denver',
-    carShare: 0.85,
     names: [
       { name: 'Wells Fargo Theatre' },
       { name: 'Bellco Theatre', from: '2012-12-01' },
@@ -11884,7 +11871,6 @@ export const VENUES: Record<string, Venue> = {
   'ccc-mile-high-ballroom': {
     id: 'ccc-mile-high-ballroom',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Mile High Ballroom' }, { name: 'Colorado Convention Center — Mile High Ballroom' }],
     location: [-104.9976, 39.744],
     // Convention room, not a performance room; reported 5,452 is not stored so it does not size friction (venue answer §2d).
@@ -11894,22 +11880,15 @@ export const VENUES: Record<string, Venue> = {
   'mission-ballroom': {
     id: 'mission-ballroom',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Mission Ballroom' }],
     location: [-104.9775, 39.7765],
-    capacity: [
-      {
-        seats: 3950,
-        setup: 'concert',
-        note: 'Reported movable-stage range about 2,200–3,950; upper bound stored. Standing/tiered layout. Source: https://en.wikipedia.org/wiki/Mission_Ballroom',
-      },
-    ],
+    // Round-2 rule: sourced only as a 2,200–3,950 range; blank (BACKLOG).
+    capacity: [],
     roof: 'indoor',
   },
   'fillmore-auditorium-denver': {
     id: 'fillmore-auditorium-denver',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Fillmore Auditorium' }],
     location: [-104.9771824, 39.7406349],
     capacity: [
@@ -11920,7 +11899,6 @@ export const VENUES: Record<string, Venue> = {
   'paramount-theatre-denver': {
     id: 'paramount-theatre-denver',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Paramount Theatre' }],
     location: [-104.9901606, 39.7442523],
     capacity: [{ seats: 1870, setup: 'concert', note: 'Reported (Westword, 2018). Source: https://www.westword.com/music/denvers-biggest-venues-red-rocks-fiddlers-green-and-more-10218122/' }],
@@ -11929,7 +11907,6 @@ export const VENUES: Record<string, Venue> = {
   'ogden-theatre': {
     id: 'ogden-theatre',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Ogden Theatre' }],
     location: [-104.9753154, 39.7403115],
     capacity: [{ seats: 1600, setup: 'concert', note: 'Reported (Westword, 2018). Source: https://www.westword.com/music/denvers-biggest-venues-red-rocks-fiddlers-green-and-more-10218122/' }],
@@ -11938,7 +11915,6 @@ export const VENUES: Record<string, Venue> = {
   'gothic-theatre': {
     id: 'gothic-theatre',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Gothic Theatre' }],
     location: [-104.9880211, 39.6576702],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Reported (Westword, 2018). Englewood. Source: https://www.westword.com/music/denvers-biggest-venues-red-rocks-fiddlers-green-and-more-10218122/' }],
@@ -11947,7 +11923,6 @@ export const VENUES: Record<string, Venue> = {
   'buell-theatre': {
     id: 'buell-theatre',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Buell Theatre' }],
     location: [-104.9976, 39.744],
     capacity: [{ seats: 2884, setup: 'concert', note: 'Reported. Denver Performing Arts Complex. Source: https://www.wikipedia.com/wiki/Buell_Theatre' }],
@@ -11956,7 +11931,6 @@ export const VENUES: Record<string, Venue> = {
   'boettcher-concert-hall': {
     id: 'boettcher-concert-hall',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Boettcher Concert Hall' }],
     location: [-104.9976, 39.744],
     capacity: [{ seats: 2679, setup: 'concert', note: 'Reported (~2,679). Renovation RFP Jul 2026; closure dates unknown. Source: https://news.nationgraph.com/articles/denver-finally-moving-to-renovate-boettcher-concert-hall-after-50-years' }],
@@ -11965,7 +11939,6 @@ export const VENUES: Record<string, Venue> = {
   'ellie-caulkins-opera-house': {
     id: 'ellie-caulkins-opera-house',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Ellie Caulkins Opera House' }],
     location: [-104.9976, 39.744],
     capacity: [{ seats: 2225, setup: 'concert', note: 'Reported. Source: https://www.wikipedia.com/wiki/Buell_Theatre' }],
@@ -11974,7 +11947,6 @@ export const VENUES: Record<string, Venue> = {
   'hamilton-gymnasium': {
     id: 'hamilton-gymnasium',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Hamilton Gymnasium' }, { name: 'Hamilton Gymnasium at the Ritchie Center' }],
     location: [-104.9623912, 39.6824183],
     capacity: [{ seats: 2000, setup: 'basketball', note: 'Official (DU). Source: https://www.du.edu/du-events/auditoriums-gyms' }],
@@ -11983,7 +11955,6 @@ export const VENUES: Record<string, Venue> = {
   'peter-barton-lacrosse-stadium': {
     id: 'peter-barton-lacrosse-stadium',
     metroId: 'denver',
-    carShare: 0.85,
     names: [{ name: 'Peter Barton Lacrosse Stadium' }, { name: 'Peter Barton Stadium' }],
     location: [-104.9620, 39.6815],
     capacity: [
