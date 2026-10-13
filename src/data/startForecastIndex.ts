@@ -16861,6 +16861,263 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "edmonton",
+    "eventId": "2026-10-13-tm-1AoZk8gGkeSgBXJ",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-15-espn-oilers-401892515",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-16-tm-1778v0G6uhhbjIQ",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-17-tm-1778v0G61wdH03y",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-17-tm-1778v0G65KidlVW",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-18-ht-oil-kings-1023190",
+    "date": "2026-10-18",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 4888,
+      "low": 4380,
+      "high": 5306
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-20-espn-oilers-401892546",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18512,
+      "low": 18203,
+      "high": 18512
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-21-tm-1Av7Z_dGkBP6_Pc",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-22-espn-oilers-401892561",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-ht-oil-kings-1023201",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 7251,
+      "low": 5984,
+      "high": 9221
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-tm-1AoZk38GkecQFf9",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-23-tm-1AoZkf_GkdP6m_0",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-espn-oilers-401892574",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18347,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-tm-1AoZk38GkecjIf0",
+    "date": "2026-10-24",
+    "start": "14:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-24-tm-1AoZkoyGkenE6RU",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-25-ht-oil-kings-1023219",
+    "date": "2026-10-25",
+    "start": "16:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 4888,
+      "low": 4380,
+      "high": 5306
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-26-espn-oilers-401892584",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18347,
+      "low": 18041,
+      "high": 18347
+    }
+  },
+  {
+    "metroId": "edmonton",
+    "eventId": "2026-10-27-tm-1778v0G65hJ2nDa",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:45:18.479Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1450
+    }
+  },
+  {
     "metroId": "houston",
     "eventId": "2026-10-13-tm-Z7r9jZ1A7PvkA",
     "date": "2026-10-13",
@@ -17398,6 +17655,62 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 17947,
       "low": 16689,
       "high": 17947
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-16-espn-pacers-401914126",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-17-espn-butler-football-401868213",
+    "date": "2026-10-17",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-18-espn-colts-401873003",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "indianapolis",
+    "eventId": "2026-10-23-espn-pacers-401909844",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:18:54.994Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
     }
   },
   {
@@ -27930,6 +28243,221 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     },
     "draw": {
       "count": 21000
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-heat-401898404",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.1,
+      "friction": "Low",
+      "why": "Inter Miami vs. NYCFC 4.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 19600,
+      "low": 19600,
+      "high": 19600
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-14-espn-inter-miami-cf-761861",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.1,
+      "friction": "Low",
+      "why": "Heat vs. Nets 4.5 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-15-espn-panthers-401892510",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18525,
+      "low": 17731,
+      "high": 19096
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-miami-fc-401842298",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    },
+    "draw": {
+      "count": 1203,
+      "low": 1129,
+      "high": 1382
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-miami-hurricanes-football-401858263",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "86° feels-like at a 7:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 58503,
+      "low": 58045,
+      "high": 63892
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-17-espn-panthers-401892522",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Miami vs. Florida St 15 mi away, same hours."
+    },
+    "draw": {
+      "count": 19343,
+      "low": 16804,
+      "high": 19357
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-20-espn-fiu-football-401871055",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 12436,
+      "low": 10891,
+      "high": 14426
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-21-espn-heat-401909091",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19620,
+      "low": 19610,
+      "high": 19623
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-22-espn-fort-lauderdale-united-401878621",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 1890,
+      "low": 1736,
+      "high": 2148
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-23-espn-heat-401909847",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19690,
+      "low": 19657,
+      "high": 19788
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-24-espn-miami-hurricanes-football-401858274",
+    "date": "2026-10-24",
+    "start": "12:00",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.9,
+      "friction": "Moderate",
+      "why": "91° feels-like at a 12:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 58503,
+      "low": 58045,
+      "high": 63892
+    }
+  },
+  {
+    "metroId": "miami",
+    "eventId": "2026-10-26-espn-heat-401909871",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:19:48.061Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19620,
+      "low": 19610,
+      "high": 19623
     }
   },
   {
@@ -38630,6 +39158,101 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-13-espn-ottawa-senators-401892494",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15273,
+      "low": 14654,
+      "high": 15952
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-15-espn-ottawa-senators-401892507",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15593,
+      "low": 14960,
+      "high": 16286
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-21-espn-ottawa-senators-401892551",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16216,
+      "low": 15558,
+      "high": 16936
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-22-espn-ottawa-senators-401892554",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16040,
+      "low": 15389,
+      "high": 16753
+    }
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "eventId": "2026-10-24-espn-ottawa-senators-401892569",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:25:55.846Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15832,
+      "low": 15706,
+      "high": 17126
+    }
+  },
+  {
     "metroId": "philadelphia",
     "eventId": "2026-10-12-tm-Z7r9jZ1A7OSuY",
     "date": "2026-10-12",
@@ -40687,6 +41310,326 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     },
     "draw": {
       "count": 2188
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-13-espn-utah-mammoth-401892500",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11298,
+      "low": 11298,
+      "high": 11298
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-14-espn-real-salt-lake-761870",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "Hocus Pocus Spooktacular 7.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-14-tm-LvZ18QQHnXSD4N8Z0wGYh",
+    "date": "2026-10-14",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "Real Salt Lake vs. Earthquakes 7.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A70k1k",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10184
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-16-tm-LvZ18QtESvV4V_Nigluzf",
+    "date": "2026-10-16",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-espn-utah-mammoth-401892531",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Royals vs. Current 13 mi away, back to back."
+    },
+    "draw": {
+      "count": 11521,
+      "low": 11521,
+      "high": 12915
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-espn-utah-royals-401854022",
+    "date": "2026-10-17",
+    "start": "16:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Mammoth vs. Oilers 13 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-17-tm-LvZ18QtESvV4V_Nigluz4",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Moderate",
+      "why": "Royals vs. Current and Mammoth vs. Oilers 7.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-19-espn-utah-mammoth-401892538",
+    "date": "2026-10-19",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11387,
+      "low": 11387,
+      "high": 11387
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-20-tm-G5vzZ_ARwxR5G",
+    "date": "2026-10-20",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10184
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-21-tm-Z7r9jZ1A7Pa_0",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 10184
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-23-espn-utah-jazz-401909849",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Royals vs. Reign 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 18175,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-23-espn-utah-royals-401854028",
+    "date": "2026-10-23",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Jazz vs. Pelicans 13 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-real-salt-lake-761898",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Utah Utes vs. Houston and Mammoth vs. Lightning 12 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-utah-mammoth-401892575",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Moderate",
+      "why": "Real Salt Lake vs. St. Louis 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 11131,
+      "low": 11131,
+      "high": 12478
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-24-espn-utah-utes-football-401856837",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 51125,
+      "low": 50962,
+      "high": 52286
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-25-espn-utah-jazz-401909861",
+    "date": "2026-10-25",
+    "start": "15:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18181,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-26-espn-utah-jazz-401909875",
+    "date": "2026-10-26",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18181,
+      "low": 18175,
+      "high": 18186
+    }
+  },
+  {
+    "metroId": "salt-lake-city",
+    "eventId": "2026-10-27-espn-utah-mammoth-401892592",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:26:43.547Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11053,
+      "low": 11053,
+      "high": 11053
     }
   },
   {

@@ -138,6 +138,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'cable-dahmer-arena', 'kansas-speedway', 't-mobile-center', 'municipal-auditorium-arena', 'legends-field',
   // Toronto rooms whose clubs are not on MLB/ESPN/HockeyTech (CFL feed is empty; OHL, NLL, CPL, NSL, U Sports).
   'bmo-field', 'caa-centre-brampton', 'tribute-communities-centre', 'uoft-varsity-stadium', 'uoft-varsity-arena', 'york-lions-stadium', 'mattamy-athletic-centre', 'kimel-field-house',
+  // Ottawa–Gatineau rooms with no league feed (Frontier League, OHL, QMJHL, CEBL, CPL, U Sports, USL Super League).
+  'ottawa-stadium', 'centre-slush-puppie', 'hard-rock-live-ottawa', 'arena-at-td-place', 'theatre-casino-lac-leamy',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {

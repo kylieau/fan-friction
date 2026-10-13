@@ -971,6 +971,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "15:04"
   },
   {
+    "eventId": "2026-10-10-espn-butler-football-401868212",
+    "metroId": "indianapolis",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "sellick-bowl",
+    "homeTeamId": "butler-football",
+    "home": {
+      "name": "Butler",
+      "score": 41
+    },
+    "away": {
+      "name": "San Diego",
+      "score": 10
+    },
+    "attendance": 3909,
+    "capturedAt": "2026-10-13T07:18:55.945Z",
+    "duration": {
+      "minutes": 184,
+      "kind": "estimated"
+    },
+    "startedAt": "13:00"
+  },
+  {
+    "eventId": "2026-10-10-espn-pacers-401898396",
+    "metroId": "indianapolis",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "gainbridge-fieldhouse",
+    "homeTeamId": "pacers",
+    "home": {
+      "name": "Pacers",
+      "score": 117
+    },
+    "away": {
+      "name": "Hawks",
+      "score": 119
+    },
+    "attendance": 11002,
+    "capturedAt": "2026-10-13T07:18:55.945Z",
+    "duration": {
+      "minutes": 143,
+      "kind": "estimated"
+    },
+    "startedAt": "19:10"
+  },
+  {
     "eventId": "2026-10-10-espn-sporting-kc-761855",
     "metroId": "kansas-city",
     "date": "2026-10-10",
@@ -1308,6 +1356,133 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 3
     },
     "capturedAt": "2026-10-12T17:25:07.394Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-heat-401898397",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "kaseya-center",
+    "homeTeamId": "heat",
+    "home": {
+      "name": "Heat",
+      "score": 124
+    },
+    "away": {
+      "name": "Timberwolves",
+      "score": 125
+    },
+    "attendance": 19600,
+    "capturedAt": "2026-10-13T07:19:49.048Z",
+    "duration": {
+      "minutes": 145,
+      "kind": "estimated"
+    },
+    "startedAt": "20:11"
+  },
+  {
+    "eventId": "2026-10-10-espn-inter-miami-cf-761847",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nu-stadium",
+    "homeTeamId": "inter-miami-cf",
+    "home": {
+      "name": "Inter Miami",
+      "score": 4
+    },
+    "away": {
+      "name": "D.C. United",
+      "score": 0
+    },
+    "capturedAt": "2026-10-13T07:19:49.048Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-miami-fc-401842282",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "pitbull-stadium",
+    "homeTeamId": "miami-fc",
+    "home": {
+      "name": "Miami FC",
+      "score": 0
+    },
+    "away": {
+      "name": "Loudoun",
+      "score": 2
+    },
+    "capturedAt": "2026-10-13T07:19:49.048Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-panthers-401891805",
+    "metroId": "miami",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "amerant-bank-arena",
+    "homeTeamId": "panthers",
+    "home": {
+      "name": "Panthers",
+      "score": 1
+    },
+    "away": {
+      "name": "Wild",
+      "score": 4
+    },
+    "attendance": 19856,
+    "capturedAt": "2026-10-13T07:19:49.048Z",
+    "duration": {
+      "minutes": 160,
+      "kind": "estimated"
+    },
+    "startedAt": "18:08"
+  },
+  {
+    "eventId": "2026-10-11-espn-dolphins-401872982",
+    "metroId": "miami",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hard-rock-stadium",
+    "homeTeamId": "dolphins",
+    "home": {
+      "name": "Dolphins",
+      "score": 24
+    },
+    "away": {
+      "name": "Bengals",
+      "score": 31
+    },
+    "attendance": 58223,
+    "capturedAt": "2026-10-13T07:19:49.048Z",
+    "duration": {
+      "minutes": 190,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
+    "eventId": "2026-10-11-espn-fort-lauderdale-united-401878625",
+    "metroId": "miami",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "beyond-bancard-field",
+    "homeTeamId": "fort-lauderdale-united",
+    "home": {
+      "name": "Fort Lauderdale Utd",
+      "score": 2
+    },
+    "away": {
+      "name": "Lexington",
+      "score": 1
+    },
+    "attendance": 918,
+    "capturedAt": "2026-10-13T07:19:49.048Z"
   },
   {
     "eventId": "2026-10-10-ht-milwaukee-admirals-1029116",
@@ -1997,6 +2172,31 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:08"
   },
   {
+    "eventId": "2026-10-10-espn-ottawa-senators-401892474",
+    "metroId": "ottawa-gatineau",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "canadian-tire-centre",
+    "homeTeamId": "ottawa-senators",
+    "home": {
+      "name": "Senators",
+      "score": 3
+    },
+    "away": {
+      "name": "Predators",
+      "score": 2
+    },
+    "attendance": 15025,
+    "note": "SO",
+    "capturedAt": "2026-10-13T07:16:57.403Z",
+    "duration": {
+      "minutes": 167,
+      "kind": "estimated"
+    },
+    "startedAt": "19:15"
+  },
+  {
     "eventId": "2026-10-10-espn-penn-football-401867960",
     "metroId": "philadelphia",
     "date": "2026-10-10",
@@ -2231,6 +2431,54 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 11569,
     "capturedAt": "2026-10-12T08:18:46.808Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-utah-utes-football-401856827",
+    "metroId": "salt-lake-city",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "rice-eccles-stadium",
+    "homeTeamId": "utah-utes-football",
+    "home": {
+      "name": "Utah Utes",
+      "score": 41
+    },
+    "away": {
+      "name": "Kansas",
+      "score": 24
+    },
+    "attendance": 51467,
+    "capturedAt": "2026-10-13T07:19:10.988Z",
+    "duration": {
+      "minutes": 228,
+      "kind": "estimated"
+    },
+    "startedAt": "20:00"
+  },
+  {
+    "eventId": "2026-10-12-espn-utah-jazz-401898721",
+    "metroId": "salt-lake-city",
+    "date": "2026-10-12",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "delta-center",
+    "homeTeamId": "utah-jazz",
+    "home": {
+      "name": "Jazz",
+      "score": 119
+    },
+    "away": {
+      "name": "Spurs",
+      "score": 109
+    },
+    "attendance": 15495,
+    "capturedAt": "2026-10-13T07:19:10.988Z",
+    "duration": {
+      "minutes": 135,
+      "kind": "estimated"
+    },
+    "startedAt": "21:11"
   },
   {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",

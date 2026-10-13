@@ -14806,6 +14806,546 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 6616,
+    "low": 5053,
+    "high": 8843,
+    "games": 99,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4877,
+    "low": 4518,
+    "high": 5911,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4816,
+    "low": 4273,
+    "high": 5254,
+    "games": 25,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4961,
+    "low": 4671,
+    "high": 5117,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5771,
+    "low": 5490,
+    "high": 8251,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 11745,
+    "low": 5683,
+    "high": 17709,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 4245,
+    "low": 3944,
+    "high": 4359,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4599,
+    "low": 4259,
+    "high": 4886,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7026,
+    "low": 5798,
+    "high": 8935,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 6994,
+    "low": 6642,
+    "high": 7165,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 5912,
+    "low": 5744,
+    "high": 6165,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 7684,
+    "low": 6519,
+    "high": 12455,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7617,
+    "low": 5642,
+    "high": 9823,
+    "games": 26,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7420,
+    "low": 7410,
+    "high": 8723,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 10463,
+    "low": 9794,
+    "high": 11076,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 9826,
+    "low": 9424,
+    "high": 10407,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 4464,
+    "low": 4461,
+    "high": 5599,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 6616,
+    "low": 5761,
+    "high": 7001,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7347,
+    "low": 5757,
+    "high": 8588,
+    "games": 33,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 7245,
+    "low": 6148,
+    "high": 7612,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 10898,
+    "low": 10374,
+    "high": 12164,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 4888,
+    "low": 4380,
+    "high": 5306,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 6803,
+    "low": 5297,
+    "high": 10348,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 7131,
+    "low": 6574,
+    "high": 7677,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 16147,
+    "low": 14480,
+    "high": 16678,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 70,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18347,
+    "low": 18041,
+    "high": 18347,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18347,
+    "low": 18173,
+    "high": 18347,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18347,
+    "low": 18275,
+    "high": 18347,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 32,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18347,
+    "low": 18347,
+    "high": 18349,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18347,
+    "low": 18347,
+    "high": 18347,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
     "metroId": "houston",
     "teamId": "astros",
     "venueId": "daikin-park",
@@ -16820,6 +17360,366 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 1045,
     "games": 3,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 7706,
+    "low": 6239,
+    "high": 9659,
+    "games": 223,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 9439,
+    "low": 9218,
+    "high": 9570,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6867,
+    "low": 5335,
+    "high": 8190,
+    "games": 103,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 4253,
+    "low": 3199,
+    "high": 5253,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 6491,
+    "low": 4818,
+    "high": 11382,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 7523,
+    "low": 6867,
+    "high": 9137,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 7777,
+    "low": 7306,
+    "high": 8362,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 6520,
+    "low": 5591,
+    "high": 7256,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 7336,
+    "low": 6857,
+    "high": 8292,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 9601,
+    "low": 8147,
+    "high": 10630,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 5181,
+    "low": 4376,
+    "high": 5242,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 8525,
+    "low": 6589,
+    "high": 9449,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 10147,
+    "low": 8763,
+    "high": 11104,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 10389,
+    "low": 9026,
+    "high": 10836,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 10030,
+    "low": 9265,
+    "high": 10477,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 11501,
+    "low": 11082,
+    "high": 11677,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 9264,
+    "low": 8244,
+    "high": 10659,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 5866,
+    "low": 5111,
+    "high": 5960,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 8843,
+    "low": 7878,
+    "high": 9143,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 9109,
+    "low": 8878,
+    "high": 10505,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 12029,
+    "low": 9829,
+    "high": 12889,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 9689,
+    "low": 9026,
+    "high": 10201,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 12830,
+    "low": 11745,
+    "high": 13391,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7692,
+    "low": 6444,
+    "high": 9502,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 4546,
+    "low": 3964,
+    "high": 5702,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 7819,
+    "low": 6433,
+    "high": 8987,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 7814,
+    "low": 7237,
+    "high": 10404,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 7253,
+    "low": 7068,
+    "high": 7597,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 9245,
+    "low": 8104,
+    "high": 9502,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "venueId": "victory-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 10583,
+    "low": 9753,
+    "high": 10705,
+    "games": 4,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "kansas-city",
@@ -33898,6 +34798,414 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2026"
   },
   {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 6997,
+    "low": 5779,
+    "high": 8357,
+    "games": 35,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5851,
+    "low": 5501,
+    "high": 6585,
+    "games": 19,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 5973,
+    "low": 5614,
+    "high": 6474,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5656,
+    "low": 5345,
+    "high": 6113,
+    "games": 4,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 5851,
+    "low": 5779,
+    "high": 6424,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 6644,
+    "low": 6069,
+    "high": 7165,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8436,
+    "low": 8298,
+    "high": 8486,
+    "games": 14,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 8424,
+    "low": 8416,
+    "high": 8498,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 8447,
+    "low": 8272,
+    "high": 8448,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "venueId": "arena-at-td-place",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 8452,
+    "low": 8306,
+    "high": 8576,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "all",
+    "month": null,
+    "count": 17251,
+    "low": 16278,
+    "high": 18592,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19346,
+    "low": 18923,
+    "high": 19679,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 15331,
+    "low": 13660,
+    "high": 16263,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16788,
+    "low": 16139,
+    "high": 17447,
+    "games": 63,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 16994,
+    "low": 16278,
+    "high": 18352,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 16297,
+    "low": 16118,
+    "high": 17190,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17545,
+    "low": 17229,
+    "high": 18561,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 16446,
+    "low": 15919,
+    "high": 17086,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 15976,
+    "low": 15328,
+    "high": 16686,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16598,
+    "low": 16091,
+    "high": 17077,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17077,
+    "low": 16774,
+    "high": 17655,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18210,
+    "low": 17724,
+    "high": 19019,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18482,
+    "low": 17573,
+    "high": 18883,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18433,
+    "low": 17588,
+    "high": 18793,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19019,
+    "low": 18836,
+    "high": 19318,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18224,
+    "low": 17758,
+    "high": 18381,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 18879,
+    "low": 18579,
+    "high": 19194,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 16188,
+    "low": 16059,
+    "high": 17511,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17772,
+    "low": 17387,
+    "high": 18874,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18254,
+    "low": 17450,
+    "high": 19089,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 16877,
+    "low": 16014,
+    "high": 17516,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 17025,
+    "low": 16961,
+    "high": 17339,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18764,
+    "low": 17519,
+    "high": 19054,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 16059,
+    "low": 15838,
+    "high": 16458,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "philadelphia",
     "teamId": "delaware-mbb",
     "venueId": "bob-carpenter-center",
@@ -39367,6 +40675,1182 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "low": 696,
     "high": 877,
     "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "all",
+    "month": null,
+    "count": 5415,
+    "low": 4317,
+    "high": 6739,
+    "games": 147,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5121,
+    "low": 3973,
+    "high": 5969,
+    "games": 69,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 3707,
+    "low": 3003,
+    "high": 4474,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 3568,
+    "low": 3407,
+    "high": 3914,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 5937,
+    "low": 5169,
+    "high": 6357,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 5735,
+    "low": 5404,
+    "high": 6168,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 5995,
+    "low": 4914,
+    "high": 6725,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 5121,
+    "low": 4720,
+    "high": 6574,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": null,
+    "count": 6133,
+    "low": 4849,
+    "high": 6905,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 4029,
+    "low": 3417,
+    "high": 4436,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 4872,
+    "low": 4494,
+    "high": 5101,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 6788,
+    "low": 5979,
+    "high": 6826,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 6795,
+    "low": 6653,
+    "high": 7717,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 7168,
+    "low": 6740,
+    "high": 7344,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 6512,
+    "low": 6024,
+    "high": 7161,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7159,
+    "low": 6546,
+    "high": 7664,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 4773,
+    "low": 4222,
+    "high": 5268,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6859,
+    "low": 6546,
+    "high": 7001,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 7144,
+    "low": 6668,
+    "high": 7544,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 7679,
+    "low": 7185,
+    "high": 7772,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 7687,
+    "low": 7458,
+    "high": 7819,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 7298,
+    "low": 6407,
+    "high": 7442,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4385,
+    "low": 3924,
+    "high": 5322,
+    "games": 25,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 4258,
+    "low": 4058,
+    "high": 4622,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 5205,
+    "low": 4887,
+    "high": 5446,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4359,
+    "low": 3709,
+    "high": 5236,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 4113,
+    "low": 3410,
+    "high": 4364,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 4346,
+    "low": 4253,
+    "high": 5052,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "venueId": "ballpark-at-america-first-square",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 5730,
+    "low": 4843,
+    "high": 6792,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "delta-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 3000,
+    "low": 2723,
+    "high": 4689,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3000,
+    "low": 2723,
+    "high": 4689,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 2750,
+    "low": 2504,
+    "high": 3750,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1294,
+    "low": 998,
+    "high": 1686,
+    "games": 25,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1342,
+    "low": 1006,
+    "high": 1659,
+    "games": 18,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1342,
+    "low": 947,
+    "high": 1549,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1118,
+    "low": 1006,
+    "high": 1350,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 2398,
+    "low": 2214,
+    "high": 2462,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1294,
+    "low": 1003,
+    "high": 2785,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "venueId": "maverik-center",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 2785,
+    "low": 2040,
+    "high": 4232,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18175,
+    "low": 18175,
+    "high": 18186,
+    "games": 79,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 14205,
+    "low": 13535,
+    "high": 14804,
+    "games": 6,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18186,
+    "low": 18175,
+    "high": 18186,
+    "games": 49,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18181,
+    "low": 18175,
+    "high": 18186,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18175,
+    "low": 18175,
+    "high": 18186,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18186,
+    "low": 18175,
+    "high": 18186,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18181,
+    "low": 18175,
+    "high": 18186,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18175,
+    "low": 18175,
+    "high": 18186,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18186,
+    "low": 18186,
+    "high": 18186,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18175,
+    "low": 18175,
+    "high": 18186,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18181,
+    "low": 18175,
+    "high": 18186,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18175,
+    "low": 18175,
+    "high": 18181,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18181,
+    "low": 18175,
+    "high": 18186,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18186,
+    "low": 18186,
+    "high": 18186,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 11805,
+    "low": 11131,
+    "high": 12478,
+    "games": 80,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 12478,
+    "low": 11805,
+    "high": 12478,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 11131,
+    "low": 11131,
+    "high": 12478,
+    "games": 47,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 11805,
+    "low": 11131,
+    "high": 12478,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 11805,
+    "low": 11131,
+    "high": 12478,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 11131,
+    "low": 11131,
+    "high": 12478,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 11805,
+    "low": 11131,
+    "high": 12478,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 11131,
+    "low": 11131,
+    "high": 11131,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 12478,
+    "low": 11468,
+    "high": 12478,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 11131,
+    "low": 11131,
+    "high": 12478,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12478,
+    "low": 11131,
+    "high": 12478,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 11131,
+    "low": 11131,
+    "high": 11805,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 11131,
+    "low": 11131,
+    "high": 11805,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 12478,
+    "low": 11805,
+    "high": 12478,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 11131,
+    "low": 11131,
+    "high": 12478,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 11131,
+    "low": 11131,
+    "high": 12478,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 11131,
+    "low": 11131,
+    "high": 11805,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 12478,
+    "low": 11131,
+    "high": 12478,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 7537,
+    "low": 6757,
+    "high": 8311,
+    "games": 49,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6785,
+    "low": 6359,
+    "high": 7209,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 7043,
+    "low": 6687,
+    "high": 7627,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 8063,
+    "low": 7817,
+    "high": 8499,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7346,
+    "low": 6928,
+    "high": 8520,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 6587,
+    "low": 6265,
+    "high": 6693,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 7161,
+    "low": 6930,
+    "high": 7236,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7565,
+    "low": 7267,
+    "high": 7900,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7798,
+    "low": 7293,
+    "high": 8760,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 8117,
+    "low": 7672,
+    "high": 10144,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 8235,
+    "low": 7686,
+    "high": 9294,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 6299,
+    "low": 6257,
+    "high": 6682,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7435,
+    "low": 6743,
+    "high": 7909,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "venueId": "rice-eccles-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 52134,
+    "low": 51653,
+    "high": 52903,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "venueId": "rice-eccles-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 52210,
+    "low": 51837,
+    "high": 52927,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "venueId": "rice-eccles-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 52134,
+    "low": 51653,
+    "high": 52903,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "venueId": "rice-eccles-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 52827,
+    "low": 52236,
+    "high": 52898,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "venueId": "rice-eccles-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 52115,
+    "low": 51949,
+    "high": 53299,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "venueId": "rice-eccles-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 51888,
+    "low": 51614,
+    "high": 52140,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 3243,
+    "low": 2697,
+    "high": 3977,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3129,
+    "low": 2267,
+    "high": 3819,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3197,
+    "low": 2735,
+    "high": 3835,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2182,
+    "low": 2154,
+    "high": 3066,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3378,
+    "low": 2822,
+    "high": 4145,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 3440,
+    "low": 3086,
+    "high": 3883,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 3315,
+    "low": 3170,
+    "high": 4085,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "venueId": "jon-m-huntsman-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3102,
+    "low": 2660,
+    "high": 3582,
+    "games": 3,
     "seasons": "2025–2026"
   },
   {
@@ -47194,6 +49678,1698 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2025"
   },
   {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 65842,
+    "low": 65594,
+    "high": 66059,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 65582,
+    "low": 65552,
+    "high": 65588,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 64788,
+    "low": 64736,
+    "high": 64808,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 65848,
+    "low": 65601,
+    "high": 66068,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 65601,
+    "low": 65446,
+    "high": 65725,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 65812,
+    "low": 65576,
+    "high": 66027,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 65629,
+    "low": 65592,
+    "high": 65654,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 65479,
+    "low": 65440,
+    "high": 66026,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 65967,
+    "low": 65885,
+    "high": 66341,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 12724,
+    "low": 11165,
+    "high": 15313,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17852,
+    "low": 17365,
+    "high": 17943,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 12133,
+    "low": 10625,
+    "high": 14074,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 12133,
+    "low": 10625,
+    "high": 14074,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 13446,
+    "low": 11885,
+    "high": 17016,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 16596,
+    "low": 13257,
+    "high": 17588,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 11114,
+    "low": 9369,
+    "high": 13085,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 668,
+    "low": 574,
+    "high": 1015,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1242,
+    "low": 1095,
+    "high": 1424,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 883,
+    "low": 610,
+    "high": 1206,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1209,
+    "low": 983,
+    "high": 1354,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1002,
+    "low": 668,
+    "high": 1008,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 971,
+    "low": 655,
+    "high": 1224,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 623,
+    "low": 605,
+    "high": 690,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 648,
+    "low": 588,
+    "high": 822,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 649,
+    "low": 580,
+    "high": 1021,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 745,
+    "low": 647,
+    "high": 828,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 804,
+    "low": 708,
+    "high": 897,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 586,
+    "low": 338,
+    "high": 595,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "venueId": "ocean-bank-convocation-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 399,
+    "low": 361,
+    "high": 577,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "venueId": "beyond-bancard-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 1641,
+    "low": 1507,
+    "high": 1865,
+    "games": 13,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "venueId": "beyond-bancard-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1608,
+    "low": 1480,
+    "high": 1806,
+    "games": 12,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 19700,
+    "low": 19600,
+    "high": 19736,
+    "games": 80,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 19600,
+    "low": 19600,
+    "high": 19600,
+    "games": 8,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19679,
+    "low": 19600,
+    "high": 19700,
+    "games": 46,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19700,
+    "low": 19600,
+    "high": 19700,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19700,
+    "low": 19675,
+    "high": 19765,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19700,
+    "low": 19700,
+    "high": 19742,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19700,
+    "low": 19700,
+    "high": 19791,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 19620,
+    "low": 19610,
+    "high": 19623,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19600,
+    "low": 19600,
+    "high": 19604,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19657,
+    "low": 19600,
+    "high": 19817,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19710,
+    "low": 19677,
+    "high": 19808,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 19700,
+    "low": 19700,
+    "high": 19710,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19700,
+    "low": 19700,
+    "high": 19740,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19893,
+    "low": 19704,
+    "high": 19934,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19700,
+    "low": 19650,
+    "high": 19708,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19707,
+    "low": 19700,
+    "high": 19802,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19700,
+    "low": 19700,
+    "high": 19713,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 20853,
+    "low": 20195,
+    "high": 21320,
+    "games": 32,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20005,
+    "low": 19934,
+    "high": 20120,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 20892,
+    "low": 20603,
+    "high": 21369,
+    "games": 22,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 21352,
+    "low": 20985,
+    "high": 21451,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 21090,
+    "low": 20795,
+    "high": 21361,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 21044,
+    "low": 20681,
+    "high": 21076,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 20915,
+    "low": 20425,
+    "high": 21145,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 21429,
+    "low": 19159,
+    "high": 21490,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20727,
+    "low": 20436,
+    "high": 20859,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 12448,
+    "low": 8820,
+    "high": 17106,
+    "games": 240,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 32459,
+    "low": 32076,
+    "high": 32512,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8666,
+    "low": 7798,
+    "high": 10770,
+    "games": 114,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 6667,
+    "low": 6591,
+    "high": 9810,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 8304,
+    "low": 7633,
+    "high": 8738,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 8255,
+    "low": 7502,
+    "high": 9592,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 8814,
+    "low": 8157,
+    "high": 9652,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 11725,
+    "low": 9870,
+    "high": 14030,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 8693,
+    "low": 8139,
+    "high": 10639,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 9413,
+    "low": 8474,
+    "high": 12501,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 14200,
+    "low": 11694,
+    "high": 16417,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 10652,
+    "low": 9924,
+    "high": 11929,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 12070,
+    "low": 11687,
+    "high": 15119,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 11256,
+    "low": 10617,
+    "high": 11882,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 15605,
+    "low": 14442,
+    "high": 16151,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 14458,
+    "low": 13954,
+    "high": 16110,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 17305,
+    "low": 16685,
+    "high": 30664,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16715,
+    "low": 13313,
+    "high": 22111,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 10207,
+    "low": 10184,
+    "high": 12205,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 16998,
+    "low": 14758,
+    "high": 19494,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 14335,
+    "low": 13004,
+    "high": 16524,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 13217,
+    "low": 11830,
+    "high": 21198,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 16393,
+    "low": 14071,
+    "high": 20880,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 19348,
+    "low": 18222,
+    "high": 23763,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 25227,
+    "low": 23189,
+    "high": 34814,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17355,
+    "low": 14074,
+    "high": 21662,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 15915,
+    "low": 15703,
+    "high": 16635,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18326,
+    "low": 15439,
+    "high": 21706,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 17690,
+    "low": 12425,
+    "high": 20804,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 13540,
+    "low": 13387,
+    "high": 15506,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 17683,
+    "low": 13672,
+    "high": 19118,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 17551,
+    "low": 16093,
+    "high": 19922,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 29875,
+    "low": 23601,
+    "high": 32667,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 1043,
+    "low": 1006,
+    "high": 1225,
+    "games": 34,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1289,
+    "low": 1206,
+    "high": 1342,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 638,
+    "low": 599,
+    "high": 731,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1078,
+    "low": 1012,
+    "high": 1238,
+    "games": 29,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 1027,
+    "low": 1012,
+    "high": 1044,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 1091,
+    "low": 1060,
+    "high": 1147,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 1257,
+    "low": 1134,
+    "high": 1348,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 1077,
+    "low": 962,
+    "high": 1088,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 1041,
+    "low": 1014,
+    "high": 1238,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "venueId": "pitbull-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 1013,
+    "low": 656,
+    "high": 1233,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 59864,
+    "low": 53184,
+    "high": 64131,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 57886,
+    "low": 53455,
+    "high": 62340,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 60189,
+    "low": 54805,
+    "high": 64051,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 60617,
+    "low": 51564,
+    "high": 66591,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 58503,
+    "low": 58045,
+    "high": 63892,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "venueId": "hard-rock-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 60189,
+    "low": 59157,
+    "high": 60337,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 5752,
+    "low": 4930,
+    "high": 7234,
+    "games": 49,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5633,
+    "low": 5592,
+    "high": 6247,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6104,
+    "low": 5118,
+    "high": 7249,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 6597,
+    "low": 5587,
+    "high": 6865,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7639,
+    "low": 7355,
+    "high": 7801,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4320,
+    "low": 4125,
+    "high": 5036,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5616,
+    "low": 4930,
+    "high": 5818,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5811,
+    "low": 3918,
+    "high": 7370,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6420,
+    "low": 5328,
+    "high": 6513,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6637,
+    "low": 5478,
+    "high": 7738,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5561,
+    "low": 4315,
+    "high": 6201,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5214,
+    "low": 4126,
+    "high": 5361,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "venueId": "watsco-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 5361,
+    "low": 4744,
+    "high": 5531,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19362,
+    "low": 18687,
+    "high": 19546,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19655,
+    "low": 19472,
+    "high": 19734,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 13897,
+    "low": 8671,
+    "high": 15000,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19261,
+    "low": 18534,
+    "high": 19465,
+    "games": 63,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19434,
+    "low": 18287,
+    "high": 19501,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18918,
+    "low": 18243,
+    "high": 19372,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19043,
+    "low": 18753,
+    "high": 19422,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19403,
+    "low": 18451,
+    "high": 19453,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18769,
+    "low": 17965,
+    "high": 19348,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18969,
+    "low": 18548,
+    "high": 19512,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19421,
+    "low": 19268,
+    "high": 19556,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19543,
+    "low": 18721,
+    "high": 19630,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18801,
+    "low": 18323,
+    "high": 19233,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 18929,
+    "low": 18611,
+    "high": 19344,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19396,
+    "low": 19211,
+    "high": 19569,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19461,
+    "low": 19242,
+    "high": 19647,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19628,
+    "low": 19457,
+    "high": 19660,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19396,
+    "low": 19358,
+    "high": 19416,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 19558,
+    "low": 16991,
+    "high": 19572,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 19386,
+    "low": 18903,
+    "high": 19541,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19317,
+    "low": 18991,
+    "high": 19525,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19479,
+    "low": 19377,
+    "high": 19622,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
     "metroId": "washington-dc",
     "teamId": "capital-city-go-go",
     "venueId": "carefirst-arena",
@@ -50262,6 +54438,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 3
   },
   {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "season": 2026,
+    "level": 0.981,
+    "games": 4
+  },
+  {
     "metroId": "san-diego",
     "teamId": "sdsu-football",
     "season": 2026,
@@ -50316,6 +54499,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.063,
     "games": 11
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "season": 2026,
+    "level": 1.025,
+    "games": 3
   },
   {
     "metroId": "washington-dc",
@@ -57105,6 +61295,335 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 3
   },
   {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "americans",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "blades",
+    "ratio": 1.032,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "broncos",
+    "ratio": 0.857,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "chiefs",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "hitmen",
+    "ratio": 0.972,
+    "games": 13
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "hurricanes",
+    "ratio": 0.908,
+    "games": 11
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "pats",
+    "ratio": 0.944,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "raiders",
+    "ratio": 1.135,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "rebels",
+    "ratio": 1.059,
+    "games": 13
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "silvertips",
+    "ratio": 1.073,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "thunderbirds",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "tigers",
+    "ratio": 0.9,
+    "games": 12
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "warriors",
+    "ratio": 1.085,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "wheat-kings",
+    "ratio": 0.899,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "wild",
+    "ratio": 1.152,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oil-kings",
+    "opponent": "winterhawks",
+    "ratio": 1.069,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "avalanche",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "blue-jackets",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "capitals",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "ducks",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "flyers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "golden-knights",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "hurricanes",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "islanders",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "jets",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "kraken",
+    "ratio": 0.99,
+    "games": 7
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "lightning",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "maple-leafs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "panthers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "rangers",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "red-wings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "sabres",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "stars",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "utah-hc",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "opponent": "wild",
+    "ratio": 1.009,
+    "games": 5
+  },
+  {
     "metroId": "houston",
     "teamId": "astros",
     "opponent": "angels",
@@ -57992,6 +62511,55 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "ucf",
     "ratio": 1.021,
     "games": 2
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "bats",
+    "ratio": 0.921,
+    "games": 31
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "bisons",
+    "ratio": 1.071,
+    "games": 12
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "clippers",
+    "ratio": 1.014,
+    "games": 30
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "cubs",
+    "ratio": 0.956,
+    "games": 30
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "mud-hens",
+    "ratio": 1.007,
+    "games": 30
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "saints",
+    "ratio": 1.021,
+    "games": 27
+  },
+  {
+    "metroId": "indianapolis",
+    "teamId": "indianapolis-indians",
+    "opponent": "storm-chasers",
+    "ratio": 0.975,
+    "games": 30
   },
   {
     "metroId": "kansas-city",
@@ -67024,6 +71592,300 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 9
   },
   {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "boston",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "fleet",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "frost",
+    "ratio": 0.961,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "goldeneyes",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "minnesota",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "montreal",
+    "ratio": 1.068,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "new-york",
+    "ratio": 1.07,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "sceptres",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "sirens",
+    "ratio": 0.961,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "toronto",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "torrent",
+    "ratio": 1.052,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-charge",
+    "opponent": "victoire",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "avalanche",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "blackhawks",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "blue-jackets",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "blues",
+    "ratio": 0.956,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "bruins",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "canadiens",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "canucks",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "capitals",
+    "ratio": 1.011,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "devils",
+    "ratio": 0.988,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "ducks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "flames",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "flyers",
+    "ratio": 1.036,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "golden-knights",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "hurricanes",
+    "ratio": 0.986,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "islanders",
+    "ratio": 0.976,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "jets",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "kings",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "kraken",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "lightning",
+    "ratio": 0.986,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "maple-leafs",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "oilers",
+    "ratio": 1.045,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "panthers",
+    "ratio": 1.015,
+    "games": 6
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "penguins",
+    "ratio": 1.014,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "predators",
+    "ratio": 1.004,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "rangers",
+    "ratio": 0.978,
+    "games": 4
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "red-wings",
+    "ratio": 1.021,
+    "games": 5
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "sabres",
+    "ratio": 1.008,
+    "games": 6
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "sharks",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "stars",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "opponent": "wild",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
     "metroId": "philadelphia",
     "teamId": "delaware-mbb",
     "opponent": "drexel",
@@ -69660,6 +74522,629 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "uc-davis-wbb",
     "opponent": "uc-san-diego",
     "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "aces",
+    "ratio": 0.938,
+    "games": 20
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "aviators",
+    "ratio": 1.065,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "chihuahuas",
+    "ratio": 0.986,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "comets",
+    "ratio": 1.049,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "express",
+    "ratio": 1.086,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "isotopes",
+    "ratio": 0.977,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "rainiers",
+    "ratio": 1.04,
+    "games": 21
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "river-cats",
+    "ratio": 1.016,
+    "games": 24
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "space-cowboys",
+    "ratio": 1,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-bees",
+    "opponent": "storm-chasers",
+    "ratio": 0.961,
+    "games": 12
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "blue",
+    "ratio": 1.053,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "capitanes",
+    "ratio": 1.149,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "clippers",
+    "ratio": 0.946,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "hustle",
+    "ratio": 0.885,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "lakers",
+    "ratio": 1.216,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "warriors",
+    "ratio": 1.058,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "salt-lake-city-stars",
+    "opponent": "wolves",
+    "ratio": 0.886,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "76ers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "bulls",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "clippers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "grizzlies",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "hawks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "heat",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "hornets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "knicks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "lakers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "nets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "nuggets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "pacers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "pelicans",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "pistons",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "spurs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "suns",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "thunder",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "trail-blazers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "opponent": "wizards",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "avalanche",
+    "ratio": 1.022,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "blackhawks",
+    "ratio": 1.052,
+    "games": 5
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "blue-jackets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "blues",
+    "ratio": 1.022,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "canadiens",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "capitals",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "ducks",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "flames",
+    "ratio": 1.021,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "flyers",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "hurricanes",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "islanders",
+    "ratio": 1.031,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "jets",
+    "ratio": 1.011,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "kings",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "kraken",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "lightning",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "maple-leafs",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "oilers",
+    "ratio": 1.035,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "panthers",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "penguins",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "predators",
+    "ratio": 1.028,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "rangers",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "red-wings",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "senators",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "stars",
+    "ratio": 1.033,
+    "games": 4
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "opponent": "wild",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "opponent": "arizona",
+    "ratio": 1.041,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "opponent": "arizona-st",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "opponent": "byu",
+    "ratio": 1.394,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "opponent": "colorado",
+    "ratio": 1.01,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "opponent": "e-washington",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mbb",
+    "opponent": "oklahoma-st",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "opponent": "arizona-st",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-utes-football",
+    "opponent": "colorado",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "opponent": "arizona",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "opponent": "arizona-st",
+    "ratio": 0.946,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "opponent": "byu",
+    "ratio": 1.191,
+    "games": 2
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "opponent": "weber-st",
+    "ratio": 0.892,
     "games": 2
   },
   {
@@ -72953,6 +78438,1035 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 2
   },
   {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "bengals",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "bills",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "jets",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "patriots",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "raiders",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "dolphins",
+    "opponent": "titans",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "opponent": "jax-state",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "opponent": "liberty",
+    "ratio": 1.085,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-football",
+    "opponent": "new-mexico-st",
+    "ratio": 0.914,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "fgcu",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "fl-national",
+    "ratio": 1.14,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "jax-state",
+    "ratio": 0.949,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "kennesaw-st",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "liberty",
+    "ratio": 1.089,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "long-island",
+    "ratio": 0.818,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "louisiana-tech",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "mtsu",
+    "ratio": 1.075,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "new-mexico-st",
+    "ratio": 0.917,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "sam-houston",
+    "ratio": 0.92,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "utep",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fiu-mbb",
+    "opponent": "western-ky",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "brooklyn",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "carolina",
+    "ratio": 1.152,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "dallas",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "lexington",
+    "ratio": 1.139,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "sporting-jax",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "fort-lauderdale-united",
+    "opponent": "tampa-bay",
+    "ratio": 1.098,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "76ers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "bulls",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "cavaliers",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "celtics",
+    "ratio": 1.003,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "clippers",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "grizzlies",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "hawks",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "hornets",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "jazz",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "knicks",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "lakers",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "nets",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "nuggets",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "pacers",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "pelicans",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "pistons",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "spurs",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "suns",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "thunder",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "trail-blazers",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "warriors",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "opponent": "wizards",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "atlanta",
+    "ratio": 0.947,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "cf-montr-al",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "charlotte",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "chicago",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "cincinnati",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "columbus",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "d-c-united",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "nashville",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "new-england",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "nycfc",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "orlando",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "philadelphia",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "red-bull-ny",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "opponent": "toronto",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "angels",
+    "ratio": 0.952,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "braves",
+    "ratio": 1.164,
+    "games": 19
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "brewers",
+    "ratio": 0.976,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "cardinals",
+    "ratio": 0.982,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "cubs",
+    "ratio": 1.018,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "d-backs",
+    "ratio": 0.949,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "dodgers",
+    "ratio": 1.393,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "giants",
+    "ratio": 1.086,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "guardians",
+    "ratio": 0.994,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "mariners",
+    "ratio": 0.867,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "mets",
+    "ratio": 1.194,
+    "games": 19
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "nationals",
+    "ratio": 0.941,
+    "games": 19
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "orioles",
+    "ratio": 0.944,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "padres",
+    "ratio": 1.093,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "phillies",
+    "ratio": 1.015,
+    "games": 21
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "pirates",
+    "ratio": 1.127,
+    "games": 11
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "rangers",
+    "ratio": 1.304,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "rays",
+    "ratio": 0.94,
+    "games": 8
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "red-sox",
+    "ratio": 1.487,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "reds",
+    "ratio": 1.035,
+    "games": 11
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "rockies",
+    "ratio": 1.051,
+    "games": 9
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "opponent": "white-sox",
+    "ratio": 0.912,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "birmingham",
+    "ratio": 0.84,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "charleston",
+    "ratio": 1.116,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "detroit",
+    "ratio": 0.923,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "hartford",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "indy-xi",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "loudoun",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "louisville",
+    "ratio": 1.057,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "pittsburgh",
+    "ratio": 1.27,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "rhode-island",
+    "ratio": 1.09,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-fc",
+    "opponent": "tampa-bay",
+    "ratio": 1.048,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "opponent": "bethune",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "opponent": "florida-a-m",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-football",
+    "opponent": "louisville",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "boston-college",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "clemson",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "duke",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "fiu",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "florida-st",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "georgia-tech",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "louisville",
+    "ratio": 1.111,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "north-florida",
+    "ratio": 0.917,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "notre-dame",
+    "ratio": 0.894,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "pitt",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "opponent": "virginia-tech",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "avalanche",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "blackhawks",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "blue-jackets",
+    "ratio": 0.99,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "blues",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "bruins",
+    "ratio": 1.01,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "canadiens",
+    "ratio": 1.005,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "canucks",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "capitals",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "devils",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "ducks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "flames",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "flyers",
+    "ratio": 1.011,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "hurricanes",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "islanders",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "jets",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "kraken",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "lightning",
+    "ratio": 1.011,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "maple-leafs",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "oilers",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "penguins",
+    "ratio": 1.007,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "predators",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "rangers",
+    "ratio": 1.008,
+    "games": 4
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "red-wings",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "sabres",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "senators",
+    "ratio": 0.982,
+    "games": 5
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "sharks",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "stars",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "opponent": "wild",
+    "ratio": 1,
+    "games": 4
+  },
+  {
     "metroId": "washington-dc",
     "teamId": "capital-city-go-go",
     "opponent": "905",
@@ -74837,10 +81351,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "sharks",
     "venueId": "sap-center",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -74849,10 +81363,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "sharks",
     "venueId": "sap-center",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -74957,10 +81483,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "bruins",
     "venueId": "fenway-park",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -74969,10 +81495,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "bruins",
     "venueId": "td-garden",
     "band": "second",
-    "occupancy": 1.002,
-    "low": 1,
-    "high": 1.044,
-    "games": 54,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 62,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -74981,10 +81507,34 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "bruins",
     "venueId": "fenway-park",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "boston",
+    "teamId": "bruins",
+    "venueId": "td-garden",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "boston",
+    "teamId": "bruins",
+    "venueId": "fenway-park",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75125,10 +81675,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blackhawks",
     "venueId": "united-center",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75137,10 +81687,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blackhawks",
     "venueId": "wrigley-field",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75149,10 +81699,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blackhawks",
     "venueId": "united-center",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75161,10 +81711,34 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blackhawks",
     "venueId": "wrigley-field",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "wrigley-field",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75449,10 +82023,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blue-jackets",
     "venueId": "nationwide-arena",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75461,10 +82035,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blue-jackets",
     "venueId": "ohio-stadium",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75473,10 +82047,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blue-jackets",
     "venueId": "nationwide-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75485,10 +82059,34 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "blue-jackets",
     "venueId": "ohio-stadium",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "ohio-stadium",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -75754,6 +82352,78 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 0.957,
     "games": 27,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "first",
+    "occupancy": 0.992,
+    "low": 0.992,
+    "high": 0.992,
+    "games": 12,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "second",
+    "occupancy": 0.992,
+    "low": 0.992,
+    "high": 0.992,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "second",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "rogers-place",
+    "band": "conference",
+    "occupancy": 0.995,
+    "low": 0.992,
+    "high": 1.041,
+    "games": 29,
+    "seasons": "2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "edmonton",
+    "teamId": "oilers",
+    "venueId": "commonwealth-stadium",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -76205,10 +82875,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ducks",
     "venueId": "honda-center",
     "band": "first",
-    "occupancy": 0.994,
-    "low": 1,
-    "high": 1.055,
-    "games": 104,
+    "occupancy": 0.992,
+    "low": 0.992,
+    "high": 1.052,
+    "games": 124,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -76217,12 +82887,24 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ducks",
     "venueId": "honda-center",
     "band": "second",
-    "occupancy": 0.994,
-    "low": 0.985,
-    "high": 1.044,
-    "games": 54,
+    "occupancy": 0.992,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 62,
     "seasons": "2026 + league",
     "basis": "blend"
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "venueId": "honda-center",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "la",
@@ -76337,10 +83019,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kings",
     "venueId": "crypto-com-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "venueId": "crypto-com-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -76547,6 +83241,18 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "games": 9,
     "seasons": "2023, 2025, 2026",
     "basis": "team"
+  },
+  {
+    "metroId": "las-vegas",
+    "teamId": "golden-knights",
+    "venueId": "t-mobile-arena",
+    "band": "conference",
+    "occupancy": 1.028,
+    "low": 0.992,
+    "high": 1.049,
+    "games": 29,
+    "seasons": "2023, 2026 + league",
+    "basis": "blend"
   },
   {
     "metroId": "milwaukee",
@@ -76805,10 +83511,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "wild",
     "venueId": "grand-casino-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -76817,10 +83535,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "canadiens",
     "venueId": "bell-centre",
     "band": "first",
-    "occupancy": 1.001,
-    "low": 1,
-    "high": 1.055,
-    "games": 106,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.05,
+    "games": 126,
     "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
@@ -76829,12 +83547,24 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "canadiens",
     "venueId": "bell-centre",
     "band": "second",
-    "occupancy": 1.002,
-    "low": 1,
-    "high": 1.044,
-    "games": 54,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 62,
     "seasons": "2026 + league",
     "basis": "blend"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "canadiens",
+    "venueId": "bell-centre",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "montreal",
@@ -76937,10 +83667,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "predators",
     "venueId": "bridgestone-arena",
     "band": "first",
-    "occupancy": 1.011,
-    "low": 1,
-    "high": 1.055,
-    "games": 104,
+    "occupancy": 1.009,
+    "low": 0.992,
+    "high": 1.052,
+    "games": 124,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -76949,10 +83679,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "predators",
     "venueId": "bridgestone-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -76997,10 +83739,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "devils",
     "venueId": "prudential-center",
     "band": "first",
-    "occupancy": 1.019,
-    "low": 1,
-    "high": 1.055,
-    "games": 107,
+    "occupancy": 1.018,
+    "low": 0.992,
+    "high": 1.05,
+    "games": 127,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
   },
@@ -77009,10 +83751,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "devils",
     "venueId": "metlife-stadium",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77021,10 +83763,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "devils",
     "venueId": "prudential-center",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77033,10 +83775,34 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "devils",
     "venueId": "metlife-stadium",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "venueId": "prudential-center",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "venueId": "metlife-stadium",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77045,10 +83811,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "islanders",
     "venueId": "ubs-arena",
     "band": "first",
-    "occupancy": 1.001,
-    "low": 1,
-    "high": 1.055,
-    "games": 106,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.05,
+    "games": 126,
     "seasons": "2023, 2024 + league",
     "basis": "blend"
   },
@@ -77057,10 +83823,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "islanders",
     "venueId": "metlife-stadium",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77069,10 +83835,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "islanders",
     "venueId": "ubs-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77081,10 +83847,34 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "islanders",
     "venueId": "metlife-stadium",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "venueId": "ubs-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "venueId": "metlife-stadium",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77261,10 +84051,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ny-rangers",
     "venueId": "madison-square-garden",
     "band": "first",
-    "occupancy": 1.001,
-    "low": 1,
-    "high": 1.055,
-    "games": 106,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.05,
+    "games": 126,
     "seasons": "2023, 2024 + league",
     "basis": "blend"
   },
@@ -77273,10 +84063,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "ny-rangers",
     "venueId": "madison-square-garden",
     "band": "second",
-    "occupancy": 1.002,
-    "low": 1,
-    "high": 1.044,
-    "games": 54,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 62,
+    "seasons": "2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "venueId": "madison-square-garden",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 27,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -77521,14 +84323,50 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "basis": "blend"
   },
   {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "band": "first",
+    "occupancy": 0.995,
+    "low": 0.992,
+    "high": 1.05,
+    "games": 126,
+    "seasons": "2025, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "band": "second",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "ottawa-gatineau",
+    "teamId": "ottawa-senators",
+    "venueId": "canadian-tire-centre",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
     "metroId": "philadelphia",
     "teamId": "flyers",
     "venueId": "xfinity-mobile-arena",
     "band": "first",
-    "occupancy": 1.018,
-    "low": 1,
-    "high": 1.055,
-    "games": 104,
+    "occupancy": 1.016,
+    "low": 0.992,
+    "high": 1.052,
+    "games": 124,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -77537,10 +84375,22 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "flyers",
     "venueId": "xfinity-mobile-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77869,6 +84719,78 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "basis": "league"
   },
   {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 0.997,
+    "high": 1.041,
+    "games": 108,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.042,
+    "games": 52,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-jazz",
+    "venueId": "delta-center",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.057,
+    "games": 27,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "band": "first",
+    "occupancy": 0.957,
+    "low": 0.992,
+    "high": 1.052,
+    "games": 124,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "band": "second",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "venueId": "delta-center",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
     "metroId": "san-diego",
     "teamId": "padres",
     "venueId": "petco-park",
@@ -77969,10 +84891,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kraken",
     "venueId": "climate-pledge-arena",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.055,
-    "games": 104,
+    "occupancy": 1.001,
+    "low": 0.992,
+    "high": 1.052,
+    "games": 124,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -77981,10 +84903,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kraken",
     "venueId": "t-mobile-park",
     "band": "first",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.056,
-    "games": 101,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.053,
+    "games": 121,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -77993,10 +84915,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kraken",
     "venueId": "climate-pledge-arena",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.044,
-    "games": 54,
+    "occupancy": 1.001,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 62,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -78005,10 +84927,34 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "kraken",
     "venueId": "t-mobile-park",
     "band": "second",
-    "occupancy": 1.003,
-    "low": 1,
-    "high": 1.045,
-    "games": 51,
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "venueId": "climate-pledge-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "venueId": "t-mobile-park",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -78221,12 +85167,24 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "maple-leafs",
     "venueId": "scotiabank-arena",
     "band": "second",
-    "occupancy": 1.025,
-    "low": 1,
-    "high": 1.043,
-    "games": 58,
+    "occupancy": 1.024,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 66,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "toronto",
@@ -78389,10 +85347,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "vancouver-canucks",
     "venueId": "rogers-arena",
     "band": "first",
-    "occupancy": 1.004,
-    "low": 1,
-    "high": 1.055,
-    "games": 104,
+    "occupancy": 1.002,
+    "low": 0.992,
+    "high": 1.052,
+    "games": 124,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -78401,12 +85359,24 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "vancouver-canucks",
     "venueId": "rogers-arena",
     "band": "second",
-    "occupancy": 1.005,
-    "low": 1,
-    "high": 1.044,
-    "games": 55,
+    "occupancy": 1.003,
+    "low": 0.992,
+    "high": 1.042,
+    "games": 63,
     "seasons": "2024 + league",
     "basis": "blend"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 0.992,
+    "high": 1.043,
+    "games": 24,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "vancouver",
@@ -78455,6 +85425,270 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "games": 70,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "band": "first",
+    "occupancy": 1,
+    "low": 0.997,
+    "high": 1.037,
+    "games": 120,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "band": "second",
+    "occupancy": 1.003,
+    "low": 1,
+    "high": 1.04,
+    "games": 58,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "heat",
+    "venueId": "kaseya-center",
+    "band": "final",
+    "occupancy": 1.018,
+    "low": 1,
+    "high": 1.049,
+    "games": 37,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "first",
+    "occupancy": 0.96,
+    "low": 0.742,
+    "high": 1.029,
+    "games": 80,
+    "seasons": "2024, 2025 + league, any round",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "first",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "second",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "second",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "conference",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "conference",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "inter-miami-cf-stadium",
+    "band": "final",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "inter-miami-cf",
+    "venueId": "nu-stadium",
+    "band": "final",
+    "occupancy": 0.958,
+    "low": 0.738,
+    "high": 1.033,
+    "games": 76,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "first",
+    "occupancy": 0.987,
+    "low": 0.855,
+    "high": 1.112,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "second",
+    "occupancy": 1.031,
+    "low": 0.954,
+    "high": 1.142,
+    "games": 66,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "conference",
+    "occupancy": 1.029,
+    "low": 0.953,
+    "high": 1.127,
+    "games": 39,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "marlins",
+    "venueId": "loandepot-park",
+    "band": "final",
+    "occupancy": 1.043,
+    "low": 0.938,
+    "high": 1.14,
+    "games": 20,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "first",
+    "occupancy": 1.017,
+    "low": 0.982,
+    "high": 1.034,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "first",
+    "occupancy": 1.005,
+    "low": 1,
+    "high": 1.054,
+    "games": 109,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "second",
+    "occupancy": 1.031,
+    "low": 1.001,
+    "high": 1.039,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "second",
+    "occupancy": 1.01,
+    "low": 1,
+    "high": 1.043,
+    "games": 59,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "conference",
+    "occupancy": 1.028,
+    "low": 1,
+    "high": 1.042,
+    "games": 33,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "loandepot-park",
+    "band": "conference",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.043,
+    "games": 26,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "miami",
+    "teamId": "panthers",
+    "venueId": "amerant-bank-arena",
+    "band": "final",
+    "occupancy": 1.036,
+    "low": 1.015,
+    "high": 1.039,
+    "games": 9,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
   },
   {
     "metroId": "washington-dc",
