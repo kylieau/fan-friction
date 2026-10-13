@@ -37,6 +37,23 @@ One line each: is Seattle, for a night out at these venues, a **driving region**
 - UW's Husky Stadium renovation (2013) had a SEPA review with game-day mode assumptions; the UW Link station opened in 2016, so re-check for post-2016 counts.
 - The Tacoma Dome sits on Tacoma Dome Station (Sounder, Link T Line, Amtrak); the City of Tacoma may have event mode data.
 
+## Gaps from the first 26 city builds (answer every item)
+
+These came out of the first 26 city builds (Oct 2026). Each one cost a city something when the research skipped it. Give a source link for every fact. If you can't find a source, write "gap" and say what you searched. Never make up a number.
+
+Fill in the city-specific leads in brackets when you copy this prompt for a new city.
+
+1. **Name and code.** The display name for [city], a short form, and a three-letter code. List which cities and suburbs it covers. Tampa Bay is the precedent: locals and every team say "Tampa Bay" and it covers St. Pete and Clearwater, so the name changed while the code stayed TPA.
+2. **City type.** Transit hub, mixed, or car-first, based on measured fan mode splits at each major venue. For every split give the year, venue, event type and source.
+3. **Car share per venue.** Measured if possible. If not, give a sourced estimate and label it **estimated**. Estimates now go into the app marked as estimated. Never give a number without a source.
+4. **Hand-off.** Key every car share to the venue rows in the companion venue answer, so a builder can wire them without guessing which room you meant.
+
+**Build rules (for whoever turns this answer into app data; put these in the answer as notes):**
+- Every venue ID and team ID must be unique across all cities. Check for collisions: `giants`, `jets`, `rangers`, `kings` and `cardinals` were already taken, so add a city prefix.
+- Don't make a separate per-city opponents file. Opponent draws go into `expectedDrawIndex` like every other city.
+- Never guess a capacity. A missing or range-only figure stays blank and goes on the city gaps list.
+- Car shares: wire measured ones; wire sourced estimates marked estimated; leave the rest on the city default.
+
 ## Rules
 - Prefer observed counts over projections, and official plans over news or blogs. Where two sources disagree, give both and say which you'd use.
 - Say which venues you could not find a figure for rather than guessing. For those, give the nearest comparable (another venue in the same area with data) and say so.

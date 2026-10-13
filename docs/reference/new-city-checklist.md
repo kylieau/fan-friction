@@ -18,6 +18,8 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 ## 3. Venues (the hand part, about an afternoon)
 - Run the venue research prompt for the city (`docs/research/city-builds/los-angeles/la-venue-table-prompt.md`, change the city and boundary). Fold the answer into `src/data/venues.ts`: names with rename dates, coordinates, capacity by setup and year, roof. Label every figure official, reported or estimated. Geocode coordinates against OpenStreetMap.
 - Save the answer under `docs/` and point `docs/reference/data-sources.md` at it. If it arrived as a PDF, save the PDF too and transcribe it with its links (`node scripts/pdf-text.mjs file.pdf`); a paste in the chat is not a saved source.
+- **Ticketmaster venue IDs (decided Oct 12, C12).** Look up and verify a Ticketmaster venue ID for every concert room (`node scripts/ticketmaster-venues.mjs --metro=<id>`, or the research answer's ID checked against the Ticketmaster venue page). A room without one gets no concerts, so a city with none ships with no concerts. List any room you couldn't verify in the city's BACKLOG follow-up. The cities built without IDs get one catch-up lookup pass at the end of the current build round.
+- **Research prompts.** A new city's city-type and venue-table prompts must include the "Gaps from the first 26 city builds" section, as the templates do (`docs/research/city-builds/los-angeles/la-venue-table-prompt.md`, `docs/research/city-builds/seattle/seattle-city-type-prompt.md`, `docs/research/city-builds/seattle/seattle-venue-table-prompt.md`). Don't run a prompt that leaves it out.
 
 ## 4. Run the scripts
 1. `npm run attendance-collect` then `npm run attendance-calibrate`: past crowds and expected draws per team.
