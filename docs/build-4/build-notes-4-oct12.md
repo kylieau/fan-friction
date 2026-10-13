@@ -523,7 +523,7 @@ Words used below: **sprawl** = most fans drive; **hub** = in between (some trans
 
 ## Parked backlog moved into build 4 (Kylie, Oct 13, ~8:32 AM PT)
 
-Kylie decided on Oct 13 that the parked backlog moves into build 4. The six items are below. Each one quotes earlier decisions and names their source. If an item has no settled spec, the section says what is settled and lists the open questions. Nothing here is a new spec. Builders: if it isn't settled here or in the plan, stop and ask.
+Kylie decided on Oct 13 that the parked backlog moves into build 4. The six items are below. Each one quotes earlier decisions and names their source. If an item has no settled spec, the section says what is settled and lists the open questions. Nothing here is a new spec. Builders: if it isn't settled here or in the plan, stop and ask. Owners: see "Model split final" below.
 
 ### P1. Favorite cities on the metro switcher
 **Prior decisions:**
@@ -546,7 +546,7 @@ Kylie decided on Oct 13 that the parked backlog moves into build 4. The six item
 
 **Settled:** catalog and seed events are shared truth. The You tab stays on the device until sync is needed. Accounts hold home city, favorite teams and favorite artists. Nothing calls the network until the URL and key are set (`VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `src/data/storage/supabaseClient.ts`). With the config off, the app works exactly as it does now.
 
-**Conflict to resolve first:** the repo already shows a connected Supabase. `BACKLOG.md` says "Accounts are live (Oct 5)". There are 25 migrations in `supabase/migrations/`, including `0007_catalog.sql`, and saving signed in already uses `supabaseStore`. Sol must check: is the Oct 13 URL and key for a new project, or for the one already in use? Do "You tab stays local" and the existing account sync conflict?
+**Conflict to resolve first:** the repo already shows a connected Supabase. `BACKLOG.md` says "Accounts are live (Oct 5)". There are 25 migrations in `supabase/migrations/`, including `0007_catalog.sql`, and saving signed in already uses `supabaseStore`. Claude must check (and confirm with Kylie): is the Oct 13 URL and key for a new project, or for the one already in use? Do "You tab stays local" and the existing account sync conflict?
 
 **Open questions:** Which tables and columns hold home city, favorite teams and favorite artists? Is that the existing `profiles` table or a new one? Are favorite cities (P1) in the account too? Which RLS rules apply? What counts as "sync is needed" for the You tab? Is the catalog table in `0007` the shared truth, or does it need to be redone? Kylie writes the account spec. Do not invent it.
 
@@ -579,7 +579,31 @@ Kylie decided on Oct 13 that the parked backlog moves into build 4. The six item
 **Open questions:** Does the metro chip replace or sit next to the header's feels-like low/high? What does the rich Forecast show (hourly, rain, wind, roof note)? Is it outdoor venues only? The retractable-roof note is also unbuilt (`BACKLOG.md` Weather).
 
 ### P6. Queued notes
-- **Hide add-on listings.** Kylie, Oct 7 (gap review K1): "hide add-ons (pre-game passes, parking, VIP/premium/club/experience, 'Not an Event Ticket') from display, ideally by filtering them rather than deleting them from the data." `docs/reviews/build-notes-oct9.md` C001: "add 'Premium', 'Pass', 'Club' and 'Not an Event Ticket' to the add-on filter, and apply the filter to shows." The code already has that filter (`src/data/sources/ticketmasterSource.ts`, about line 78). Spec settled. Sol checks what is left, such as the add-on lists in the city research (Austin, Raleigh–Durham, Cleveland, Mexico City).
+- **Hide add-on listings.** Kylie, Oct 7 (gap review K1): "hide add-ons (pre-game passes, parking, VIP/premium/club/experience, 'Not an Event Ticket') from display, ideally by filtering them rather than deleting them from the data." `docs/reviews/build-notes-oct9.md` C001: "add 'Premium', 'Pass', 'Club' and 'Not an Event Ticket' to the add-on filter, and apply the filter to shows." The code already has that filter (`src/data/sources/ticketmasterSource.ts`, about line 78). Spec settled. Composer checks what is left, such as the add-on lists in the city research (Austin, Raleigh–Durham, Cleveland, Mexico City).
 - **"Change home…".** Kylie liked it (gap review K3): "one 'Change home…' item at the bottom, under a divider … reopens the first-run 'Where's home?' picker." **Conflict:** `docs/reviews/build-notes-oct9.md` 3.20 later superseded it: "no 'Change home…' item in the switcher; changing home moves to Settings". Settings already has it (`src/screens/SettingsScreen.tsx`). Open question: should the switcher row come back as well, or does Settings stay the only place?
-- **Type icons option C plus 20k rounding.** `docs/reviews/build-notes-oct9.md` 3.18: "a one-color Material Symbols Rounded type icon in #005A9C at the start of chip line 2, before the time. Round the crowd ('20k') so line 2 fits." C073: compact ("20k") on small surfaces and full numbers where there's room. `src/map/typeIcons.ts` exists. Spec settled. Sol checks it against the 1.9 chip activity line in this file, which says "no restyle".
+- **Type icons option C plus 20k rounding.** `docs/reviews/build-notes-oct9.md` 3.18: "a one-color Material Symbols Rounded type icon in #005A9C at the start of chip line 2, before the time. Round the crowd ('20k') so line 2 fits." C073: compact ("20k") on small surfaces and full numbers where there's room. `src/map/typeIcons.ts` exists. Spec settled. Claude checks it against the 1.9 chip activity line in this file, which says "no restyle".
 - **Playoff estimate research.** Gap review K2/A6: college postseason has no estimate. WNBA, NFL and NWSL fall back to the building's capacity. A research prompt asks for "per-league sellout rates by round … a simple rule with a range". Settled: a playoff with no history falls back to building size (lock, Oct 7). Open: run the research, then decide the rule. This is research, not a build step. "If necessary" games (B3) are still open too.
+
+## Model split final: Sol planning dropped (Kylie, Oct 13, ~8:41 AM PT)
+
+Kylie decided on Oct 13, on Skill Stack's recommendation, to drop Codex Sol's planning step for build 4. This replaces the old Sol planning prompt (now `SOL-CHECK-PROMPT.md`, check only) and the "Sol plans" rows in `model-hierarchy-chart.md`.
+
+**Final split:**
+- **Composer (Cursor cloud agent):** §0 crowd-number fix, copy and data items, C01, C03, C11, C16, and the C15 Chicago rebuild. Already in PR #54.
+- **Claude Code (Sonnet, with Opus as advisor):** plans **and** builds the city view redesign (Map/List, calendar, friend-activity chips), stub tags, and the New stub sheet (including the R10 "New stub" title), from Kylie's own prompt. It asks questions and consults the Opus advisor before locking its plan.
+- **Codex Sol:** one check-only pass at the end (`docs/build-4/SOL-CHECK-PROMPT.md`). No planning.
+- `docs/build-4-plan.md`, if it exists, is an optional reference only, not a source of truth.
+
+**Why:** Sol planning was an extra handoff (Sol plans → Claude re-reads and builds), and it predated the change that only Fable is out, so Claude is available to plan its own work.
+
+**Rejected:** Sol plans and hands off to Claude (an extra handoff and extra Codex cost for no gain now that Claude can plan).
+
+**Parked backlog P1–P6 owners** (design → Claude; data and copy → Composer; Supabase-dependent → Claude, flagged ⚑ needs Kylie's confirmation):
+| Item | Owner | Notes |
+|---|---|---|
+| P1 Favorite cities on the switcher | Claude | Switcher design. ⚑ Device vs account storage depends on P2; needs confirmation. |
+| P2 Supabase (catalog, You tab, accounts) | Claude | ⚑ Needs confirmation: blocked on Kylie's URL, anon key and account spec; resolve the conflict with the Supabase live since Oct 5. Behind config, off by default. |
+| P3 Nights tab per city/area | Claude | Screen and chrome design. ⚑ Metro filtering may touch Supabase; needs confirmation. |
+| P4 "The night" story + Step 7 leftovers | Claude: story block layout · Composer: results/attendance data and hand-seeded story copy | Traffic stays parked unless Kylie says otherwise. |
+| P5 Weather UI | Claude | Metro chip and per-event degrees (locked). Rich outdoor Forecast blocked on Kylie's lock. |
+| P6 Queued notes | Composer: hide add-on listings, 20k crowd rounding, playoff estimate research (research only) · Claude: type icons option C (checked against 1.9 chip line), "Change home…" question | "Change home…" Oct 7 vs Oct 9 conflict is a question for Kylie. |
