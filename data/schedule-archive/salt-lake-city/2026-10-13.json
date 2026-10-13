@@ -4,7 +4,7 @@
   "metroName": "Salt Lake City",
   "timeZone": "America/Denver",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:18:57.979Z",
+  "capturedAt": "2026-10-13T07:26:43.547Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -31,6 +31,11 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 6
     }
   ],
   "events": [
@@ -68,6 +73,26 @@
       }
     },
     {
+      "id": "2026-10-14-tm-LvZ18QQHnXSD4N8Z0wGYh",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-14",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Hocus Pocus Spooktacular",
+      "place": {
+        "type": "venue",
+        "venueId": "ballpark-at-america-first-square"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Movie Night At The Ballpark",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QQHnXSD4N8Z0wGYh"
+    },
+    {
       "id": "2026-10-14-espn-real-salt-lake-761870",
       "metroId": "salt-lake-city",
       "date": "2026-10-14",
@@ -88,6 +113,53 @@
       },
       "crowd": [],
       "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A70k1k",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70k1k",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-LvZ18QtESvV4V_Nigluzf",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Bumble's Drone Spooktacular",
+      "place": {
+        "type": "venue",
+        "venueId": "ballpark-at-america-first-square"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Bumble's Drone Spooktacular",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QtESvV4V_Nigluzf",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-17-espn-utah-royals-401854022",
@@ -111,6 +183,29 @@
       },
       "crowd": [],
       "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-tm-LvZ18QtESvV4V_Nigluz4",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Bumble's Drone Spooktacular",
+      "place": {
+        "type": "venue",
+        "venueId": "ballpark-at-america-first-square"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Bumble's Drone Spooktacular",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QtESvV4V_Nigluz4",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-17-espn-utah-mammoth-401892531",
@@ -176,6 +271,56 @@
         "seasons": "2025–2026",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5vzZ_ARwxR5G",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_ARwxR5G",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A7Pa_0",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers w/ Alex G",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Phoebe Bridgers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pa_0",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -436,11 +581,47 @@
       }
     },
     {
+      "eventId": "2026-10-14-tm-LvZ18QQHnXSD4N8Z0wGYh",
+      "date": "2026-10-14",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Real Salt Lake vs. Earthquakes 7.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-14-espn-real-salt-lake-761870",
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Hocus Pocus Spooktacular 7.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A70k1k",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
         "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-LvZ18QtESvV4V_Nigluzf",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "read": {
+        "rating": 2.3,
         "friction": "Low",
         "why": "The biggest event around.",
         "method": "formula"
@@ -451,9 +632,20 @@
       "date": "2026-10-17",
       "start": "16:30",
       "read": {
-        "rating": 1.6,
+        "rating": 2.3,
         "friction": "Low",
         "why": "Mammoth vs. Oilers 13 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-LvZ18QtESvV4V_Nigluz4",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Royals vs. Current and Mammoth vs. Oilers 7.2 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -462,7 +654,7 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 1.6,
+        "rating": 2.3,
         "friction": "Low",
         "why": "Royals vs. Current 13 mi away, back to back.",
         "method": "formula"
@@ -487,6 +679,34 @@
         "count": 11387,
         "low": 11387,
         "high": 11387
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5vzZ_ARwxR5G",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A7Pa_0",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
       }
     },
     {
