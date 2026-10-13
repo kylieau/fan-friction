@@ -49444,14 +49444,61 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "washington-dc",
-    "eventId": "2026-10-14-espn-capitals-401892504",
-    "date": "2026-10-14",
-    "start": "19:30",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "eventId": "2026-10-13-tm-16vfZ_F0SG7TPDk",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1.7,
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-13-tm-17A8v0G61kMvBXT",
+    "date": "2026-10-13",
+    "start": "21:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-13-tm-17A8v0G65mcFNVP",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-espn-capitals-401892504",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
       "friction": "Low",
       "why": "D.C. United vs. Red Bull NY 2.1 mi away, same hours."
     },
@@ -49466,11 +49513,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-dc-united-761863",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1.7,
+      "rating": 2.3,
       "friction": "Low",
       "why": "Capitals vs. Canadiens 2.1 mi away, same hours."
     },
@@ -49482,10 +49529,164 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "washington-dc",
+    "eventId": "2026-10-14-tm-17A8v0G6C64_z7Y",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-tm-17A8v0G6CBNBzFG",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-tm-1A4Zk8VGkd5Yyi3",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Moderate",
+      "why": "Capitals vs. Canadiens and D.C. United vs. Red Bull NY 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-17A8v0G61wBnb9B",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Morrissey 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-17A8v0G62NyEeP_",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-17A8v0G6CTLhCBo",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-15-tm-1A4Zk34Gkd4iaqV",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Don Omar 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-16-tm-17A8v0G6GpHxucm",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-16-tm-17A8v0G6ueLkUwW",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "SOFI TUKKER 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-16-tm-1AvfZ_FGkD6rn_L",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Rod Wave 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
     "eventId": "2026-10-17-espn-capitals-401892519",
     "date": "2026-10-17",
     "start": "13:00",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -49504,7 +49705,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-maryland-football-401858489",
     "date": "2026-10-17",
     "start": "12:30",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -49523,7 +49724,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-spirit-401854021",
     "date": "2026-10-17",
     "start": "12:30",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
@@ -49539,16 +49740,92 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "washington-dc",
-    "eventId": "2026-10-20-espn-capitals-401892542",
-    "date": "2026-10-20",
+    "eventId": "2026-10-17-tm-17A8v0G659ZIQyq",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.6
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-tm-1AvfZ_aGkUn915f",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.6
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-18-tm-17A8v0G6G2y3HhW",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-18-tm-1A4ZkfdGkeIyEAi",
+    "date": "2026-10-18",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.4,
       "friction": "Low",
-      "why": "The biggest event around."
+      "why": "Johnny Blue Skies 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-18-tm-1AvfZ_6GkcC96zB",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Steve Lacy 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-20-espn-capitals-401892542",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Rodrigo y Gabriela 1.3 mi away, same hours."
     },
     "draw": {
       "count": 16794,
@@ -49558,16 +49835,48 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "washington-dc",
-    "eventId": "2026-10-21-espn-wizards-401909835",
-    "date": "2026-10-21",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "eventId": "2026-10-20-tm-17A8v0G6CJimMok",
+    "date": "2026-10-20",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-20-tm-17A8v0G6GCsQXu1",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.4,
       "friction": "Low",
-      "why": "The biggest event around."
+      "why": "Capitals vs. Kings 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-espn-wizards-401909835",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Jesse Welles and Arcángel 1.3 mi away, same hours."
     },
     "draw": {
       "count": 15413,
@@ -49577,16 +49886,109 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "washington-dc",
-    "eventId": "2026-10-23-espn-wizards-401909846",
-    "date": "2026-10-23",
-    "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "eventId": "2026-10-21-tm-17A8v0G61UycyRN",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Wizards vs. Bucks 16 mi away, same hours."
+    },
+    "draw": {
+      "count": 5700
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-tm-17A8v0G6GYx-uta",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 2
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-tm-1AvfZ_AGknTIWC4",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Moderate",
+      "why": "Wizards vs. Bucks 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-22-tm-17A8v0G619llZUk",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
       "rating": 1,
       "friction": "Low",
       "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-22-tm-1A4Zk3pGkesTF4n",
+    "date": "2026-10-22",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-22-tm-1A4Zk4FGkd4Vl81",
+    "date": "2026-10-22",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-espn-wizards-401909846",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
+      "friction": "Low",
+      "why": "Five Finger Death Punch 32 mi away, same hours."
     },
     "draw": {
       "count": 16789,
@@ -49596,16 +49998,77 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "washington-dc",
-    "eventId": "2026-10-24-espn-capitals-401892571",
-    "date": "2026-10-24",
+    "eventId": "2026-10-23-tm-17A8v0G65UwILk2",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 4.6
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-17A8v0G6GnQm9xb",
+    "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1.8,
+      "rating": 4.6,
+      "friction": "Moderate",
+      "why": "Five Finger Death Punch and Wizards vs. Raptors 31 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-1A4Zk3vGkd0IuF6",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 4.6
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-tm-1AvfZ_eGki4tnxQ",
+    "date": "2026-10-23",
+    "start": "18:45",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
       "friction": "Low",
-      "why": "D.C. United vs. Cincinnati 2.1 mi away, same hours."
+      "why": "Wizards vs. Raptors 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 25262
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-capitals-401892571",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin 32 mi away, same hours."
     },
     "draw": {
       "count": 18592,
@@ -49618,13 +50081,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-dc-united-761895",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "formula",
-      "rating": 1.8,
-      "friction": "Low",
-      "why": "Capitals vs. Sabres 2.1 mi away, same hours."
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin and Capitals vs. Sabres 32 mi away, same hours."
     },
     "draw": {
       "count": 16888,
@@ -49637,16 +50100,201 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-loudoun-united-401842304",
     "date": "2026-10-24",
     "start": "17:00",
-    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
     "capturedOn": "2026-10-13",
     "read": {
       "method": "nearby",
-      "rating": 1.8
+      "rating": 3.8
     },
     "draw": {
       "count": 3443,
       "low": 2631,
       "high": 4300
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G653EubXz",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G65UwITk4",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 1225
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G6G3OU_FM",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 3.8
+    },
+    "draw": {
+      "count": 3000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-17A8v0G6GnQlMxv",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Breaking Benjamin and Capitals vs. Sabres 31 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-tm-1AvfZ_7GkRimr_F",
+    "date": "2026-10-24",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Capitals vs. Sabres and D.C. United vs. Cincinnati 32 mi away, same hours."
+    },
+    "draw": {
+      "count": 25262
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-17A8v0G61rRhGa5",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.9
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-17A8v0G65FKgixM",
+    "date": "2026-10-25",
+    "start": "18:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.9
+    },
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-1A4Zku8GkeyBFx6",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "Beck 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11603
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-25-tm-1AvfZ_FGkDleutU",
+    "date": "2026-10-25",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.9,
+      "friction": "Moderate",
+      "why": "RUSH 1.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-26-tm-1AvfZ_8GkmqCp9n",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "draw": {
+      "count": 2000
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-26-tm-Z7r9jZ1A7JZG7",
+    "date": "2026-10-26",
+    "start": "20:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13"
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-27-tm-17A8v0G62MjYhB7",
+    "date": "2026-10-27",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-27-tm-1kA8vN4oGAGrHFw",
+    "date": "2026-10-27",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:48:26.462Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11603
     }
   }
 ];
