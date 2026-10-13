@@ -377,4 +377,10 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'fair-grounds-race-course', reliefM: 3, streets250: 5 },
   { venueId: 'lakefront-arena', reliefM: 2, streets250: 1 },
   { venueId: 'turchin-stadium', reliefM: 4, streets250: 10 },
+  { venueId: 'commonwealth-stadium', reliefM: 5, streets250: 8 },
+  { venueId: 'rogers-place', reliefM: 22, streets250: 7 },
+  { venueId: 'remax-field', reliefM: 38, streets250: 6 },
+  { venueId: 'rad-torque-raceway', reliefM: 6, streets250: 0 },
+  { venueId: 'clarke-stadium', reliefM: 5, streets250: 7 },
+  { venueId: 'edmonton-convention-centre', reliefM: 71, streets250: 9 },
 ];

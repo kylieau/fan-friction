@@ -295,6 +295,9 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '2443', metroId: 'new-orleans', teamId: 'lsuno-wbb', sport: 'basketball' },
   { path: 'baseball/college-baseball', espnId: '184', metroId: 'new-orleans', teamId: 'lsuno-baseball', sport: 'baseball' },
   { path: 'basketball/nba-development', espnId: '6', metroId: 'new-orleans', teamId: 'laketown-squadron', sport: 'basketball' },
+  // Edmonton (docs/research/city-builds/edmonton/). Ids checked against each team's schedule Oct 13, 2026.
+  { path: 'hockey/nhl', espnId: '6', metroId: 'edmonton', teamId: 'oilers', sport: 'hockey' },
+  { path: 'football/cfl', espnId: '81', metroId: 'edmonton', teamId: 'elks', sport: 'football' },
 ];
 
 /** Cities this feed can list games for. */
@@ -378,6 +381,11 @@ const VENUE_BY_NAME: Record<string, string> = {
   'wells fargo arena': 'desert-financial-arena',
   'mullett arena': 'mullett-arena',
   'global credit union arena': 'global-credit-union-arena',
+  'rogers place': 'rogers-place',
+  'commonwealth stadium': 'commonwealth-stadium',
+  'clarke stadium': 'clarke-stadium',
+  're/max field': 'remax-field',
+  'remax field': 'remax-field',
   'gcu arena': 'global-credit-union-arena',
   'desert diamond arena': 'desert-diamond-arena',
   'gila river arena': 'desert-diamond-arena',

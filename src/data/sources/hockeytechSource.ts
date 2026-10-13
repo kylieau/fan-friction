@@ -46,6 +46,8 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   // Vancouver. Ids checked Oct 12, 2026. Goldeneyes "home" games at Rogers Place (Edmonton) are not mapped.
   { client: 'pwhl', htId: '9', metroId: 'vancouver', teamId: 'vancouver-goldeneyes', venueId: 'pacific-coliseum' },
   { client: 'whl', htId: '223', metroId: 'vancouver', teamId: 'vancouver-giants', venueId: 'langley-events-centre' },
+  // Edmonton Oil Kings. Id checked Oct 13, 2026. Neutral-site listings are not mapped.
+  { client: 'whl', htId: '228', metroId: 'edmonton', teamId: 'oil-kings', venueId: 'rogers-place' },
 ];
 
 /** The feed's venue names for a few buildings, when a club plays away from its usual home ("Bell Centre" for a Victoire one-off). */
@@ -82,6 +84,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'aréna scotiabank': 'scotiabank-arena',
   'grand casino arena': 'grand-casino-arena',
   'xcel energy center': 'grand-casino-arena',
+  'rogers place': 'rogers-place',
+  'rogers place - edmonton, ab': 'rogers-place',
 };
 
 export function hockeytechMetroIds(): string[] {
