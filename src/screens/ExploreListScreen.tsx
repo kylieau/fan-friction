@@ -355,34 +355,51 @@ export function ExploreListScreen() {
     [],
   );
 
-  // The calendar follows the week at the top; every row it shows must have its week loaded.
-  const calendarMonday = mondayOf(topDate);
+  // The calendar loads its own weeks as its rows come into view, separate from the list's, so browsing ahead
+  // never adds weeks (or gaps) to the list. Anything the list already loaded is used first.
+  const [calWeeks, setCalWeeks] = useState<Map<string, CityDate[]>>(new Map());
+  const calLoading = useRef(new Set<string>());
   useEffect(() => {
-    if (!rangeLastMonday) return;
-    const need: string[] = [];
-    for (let i = 0; i < 3; i++) {
-      const m = addDays(calendarMonday, 7 * i);
-      if (m <= rangeLastMonday && (!rangeFirstMonday || m >= rangeFirstMonday) && !weeks.has(m)) need.push(m);
-    }
-    if (need.length > 0) void loadWeeks(need);
-  }, [calendarMonday, rangeFirstMonday, rangeLastMonday, weeks, loadWeeks]);
-
+    calLoading.current = new Set();
+    setCalWeeks(new Map());
+  }, [metro.id]);
+  const needWeeks = useCallback(
+    (list: string[]) => {
+      const forMetro = metro.id;
+      const need = list.filter((m) => !calLoading.current.has(m) && !weeks.has(m));
+      need.forEach((m) => calLoading.current.add(m));
+      if (need.length === 0) return;
+      void Promise.all(need.map((m) => getListWeek(forMetro, m).then((days) => [m, days] as const))).then((rows) => {
+        if (metroRef.current !== forMetro) return;
+        setCalWeeks((prev) => {
+          const next = new Map(prev);
+          for (const [m, days] of rows) next.set(m, days);
+          return next;
+        });
+      });
+    },
+    [metro.id, weeks],
+  );
   const reads = useMemo(() => {
     const out = new Map<string, CalendarRead>();
-    for (const monday of mondays) {
-      for (const day of weeks.get(monday) ?? []) {
-        out.set(day.date, {
-          rating: day.rating?.rating ?? null,
-          hasEvents: day.events.some(showsOnMap),
-        });
+    for (const source of [calWeeks, weeks]) {
+      for (const days of source.values()) {
+        for (const day of days) out.set(day.date, { rating: day.rating?.rating ?? null, hasEvents: day.events.some(showsOnMap) });
       }
     }
     return out;
-  }, [weeks, mondays]);
+  }, [weeks, calWeeks]);
+  const allMondays = useMemo(() => {
+    if (!rangeFirstMonday || !rangeLastMonday) return [] as string[];
+    const out: string[] = [];
+    for (let m = rangeFirstMonday; m <= rangeLastMonday; m = addDays(m, 7)) out.push(m);
+    return out;
+  }, [rangeFirstMonday, rangeLastMonday]);
 
   const pickDay = (date: string) => setPending({ date, smooth: true });
 
-  // The band under the calendar: the week at the top and how many rows it has.
+  // The band under the calendar: the week at the top of the list and how many rows it has.
+  const calendarMonday = mondayOf(topDate);
   const weekCount = useMemo(() => {
     if (!range) return 0;
     return weekOf(calendarMonday).reduce((sum, date) => {
@@ -418,7 +435,7 @@ export function ExploreListScreen() {
         <ExploreHeader metro={metro} areaOpen={areaOpen} onAreaOpenChange={setAreaOpen}>
           <ExploreModeSwitch view="list" />
         </ExploreHeader>
-        {range && <WeekCalendar monday={calendarMonday} reads={reads} today={today} range={range} onPick={pickDay} />}
+        {range && allMondays.length > 0 && <WeekCalendar mondays={allMondays} reads={reads} today={today} range={range} topDate={topDate} onPick={pickDay} onNeed={needWeeks} />}
         {range && (
           <div className="explore-list-band">
             {weekWord(calendarMonday, thisMonday)} · {weekCount} {weekCount === 1 ? 'event' : 'events'}

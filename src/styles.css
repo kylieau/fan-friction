@@ -7762,3 +7762,65 @@ button.back-link {
   font-size: 11px;
   line-height: 18px;
 }
+
+/* The calendar's own scroller: three rows and half of the next, snapping to week rows; squares (Kylie, Oct 13). */
+.week-calendar {
+  --cal-row: 43px;
+}
+
+.week-calendar-viewport {
+  position: relative;
+}
+
+.week-calendar-viewport::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--card));
+  pointer-events: none;
+}
+
+.week-calendar-scroll {
+  height: calc(var(--cal-row) * 3.5);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  touch-action: pan-y;
+}
+
+.week-calendar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.week-calendar-row {
+  height: var(--cal-row);
+  scroll-snap-align: start;
+}
+
+.week-calendar-day {
+  height: var(--cal-row);
+  position: relative;
+}
+
+.week-calendar-num {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.week-calendar-day.is-top::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  height: 3px;
+  margin-left: -7px;
+  border-radius: 2px;
+  background: var(--dodger);
+}
