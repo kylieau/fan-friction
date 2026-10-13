@@ -43,11 +43,12 @@ export function useView(): View {
   return { metro, date, today, isToday: date === today };
 }
 
-/** The map address for one place and one date. */
-export function mapPath(opts: { metroId: string; date: string; today: string }): string {
+/** The Explore address for one place and one date. `view` forces Map or List; without it the remembered view opens. */
+export function mapPath(opts: { metroId: string; date: string; today: string; view?: 'map' | 'list' }): string {
   const params = new URLSearchParams();
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   if (opts.date !== opts.today) params.set('date', opts.date);
+  if (opts.view) params.set('view', opts.view);
   const q = params.toString();
   return `/explore${q ? `?${q}` : ''}`;
 }
@@ -109,11 +110,17 @@ export function calendarPath(opts: { metroId: string; date: string }): string {
   return `/explore?${params.toString()}`;
 }
 
-export type ExploreView = 'map' | 'calendar';
+/** Explore's two views (build notes 4, 1.1). The old stand-alone calendar page is `?view=calendar`, unlinked. */
+export type ExploreView = 'map' | 'list';
 
-/** The view Explore last showed on this device (Kylie, Oct 5: a switch that remembers). */
+/**
+ * The view Explore last showed on this device (Kylie, Oct 5: a switch that remembers).
+ * Before the List existed the switch wrote "calendar"; that answer lands on the List now,
+ * the date view that replaced it.
+ */
 export function getExploreView(): ExploreView {
-  return getPref<ExploreView>('explore-view', 'map') === 'calendar' ? 'calendar' : 'map';
+  const saved = getPref<string>('explore-view', 'map');
+  return saved === 'list' || saved === 'calendar' ? 'list' : 'map';
 }
 
 export function setExploreView(view: ExploreView) {

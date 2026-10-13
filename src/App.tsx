@@ -68,7 +68,7 @@ function Shell() {
           <Route path="/you/people" element={<PeopleScreen />} />
           <Route path="/entry/:id" element={<ManualEntryScreen />} />
           <Route path="/you/settings" element={<SettingsScreen />} />
-          <Route path="/nights" element={<Navigate to="/calendar" replace />} />
+          <Route path="/nights" element={<Navigate to="/explore?view=list" replace />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

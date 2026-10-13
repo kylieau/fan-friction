@@ -167,7 +167,7 @@ export function HomeScreen() {
 
       {day && tonight.length > 0 && (
         <section className="you-block" aria-label={tonightTitle}>
-          <Link to={mapPath({ metroId: home.id, date: today, today })} className="mini-map" aria-label="Open the map">
+          <Link to={mapPath({ metroId: home.id, date: today, today, view: 'map' })} className="mini-map" aria-label="Open the map">
             <Suspense fallback={<div className="mini-map-loading" aria-hidden />}>
               <MiniMap metro={home} points={points} />
             </Suspense>
@@ -184,7 +184,7 @@ export function HomeScreen() {
           </Link>
           {/* The heading is the link (build notes 2, Home section links): no See all rows. */}
           <h2 className="you-heading heading-link-row">
-            <Link to={mapPath({ metroId: home.id, date: today, today })} className="heading-link">
+            <Link to={mapPath({ metroId: home.id, date: today, today, view: 'map' })} className="heading-link">
               Today ›
             </Link>
           </h2>
