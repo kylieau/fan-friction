@@ -833,7 +833,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     eventId: event.id,
     title: listTitle(event),
     venue: venueLabel(event),
-    ...(before?.userTags?.length ? { userTags: before.userTags } : {}),
+    // An Interested answer carries no tags (T02), so going through it drops them.
+    ...(before?.userTags?.length && answer !== 'interested' ? { userTags: before.userTags } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
   };

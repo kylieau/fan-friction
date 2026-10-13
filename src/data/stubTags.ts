@@ -64,7 +64,8 @@ export function tagSummaries(entries: readonly Entry[], plans: readonly Plan[]):
     }
   };
   for (const entry of entries) add(entry.userTags, entry.when.sort);
-  for (const plan of plans) add(plan.userTags, plan.date);
+  // An Interested plan carries no tags (T02), so whatever is stored there is not counted or suggested.
+  for (const plan of plans) if (!plan.interested) add(plan.userTags, plan.date);
   return [...map.values()].sort((a, b) => b.count - a.count || b.lastDate.localeCompare(a.lastDate) || a.tag.localeCompare(b.tag));
 }
 
