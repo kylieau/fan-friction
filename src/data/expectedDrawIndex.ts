@@ -47192,6 +47192,2790 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 26031,
     "games": 5,
     "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 548,
+    "low": 275,
+    "high": 848,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 896,
+    "low": 549,
+    "high": 1124,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 293,
+    "low": 181,
+    "high": 457,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 172,
+    "low": 148,
+    "high": 185,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 323,
+    "low": 230,
+    "high": 567,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 302,
+    "low": 273,
+    "high": 1726,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 721,
+    "low": 492,
+    "high": 1333,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 274,
+    "low": 194,
+    "high": 474,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 1037,
+    "low": 717,
+    "high": 1340,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 689,
+    "low": 608,
+    "high": 1018,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 759,
+    "low": 648,
+    "high": 897,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 876,
+    "low": 645,
+    "high": 1110,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 822,
+    "low": 745,
+    "high": 882,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "venueId": "carefirst-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 852,
+    "low": 706,
+    "high": 1179,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18347,
+    "low": 17556,
+    "high": 18573,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18573,
+    "low": 18460,
+    "high": 18573,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 12799,
+    "low": 11924,
+    "high": 12973,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17894,
+    "low": 17218,
+    "high": 18404,
+    "games": 60,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17941,
+    "low": 17735,
+    "high": 18347,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18113,
+    "low": 17358,
+    "high": 18517,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18347,
+    "low": 17727,
+    "high": 18573,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18573,
+    "low": 18573,
+    "high": 18573,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 16727,
+    "low": 16578,
+    "high": 17034,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17426,
+    "low": 17032,
+    "high": 18034,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18266,
+    "low": 17941,
+    "high": 18347,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18573,
+    "low": 18347,
+    "high": 18573,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 18573,
+    "low": 18517,
+    "high": 18573,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 16602,
+    "low": 16537,
+    "high": 17042,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18573,
+    "low": 18517,
+    "high": 18573,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18573,
+    "low": 18347,
+    "high": 18573,
+    "games": 28,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18460,
+    "low": 18347,
+    "high": 18573,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18573,
+    "low": 18573,
+    "high": 18573,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18460,
+    "low": 18347,
+    "high": 18573,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18573,
+    "low": 18460,
+    "high": 18573,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18573,
+    "low": 18236,
+    "high": 18573,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 18573,
+    "low": 18573,
+    "high": 18573,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18573,
+    "low": 18573,
+    "high": 18573,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18347,
+    "low": 18125,
+    "high": 18460,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 2480,
+    "low": 1448,
+    "high": 4542,
+    "games": 204,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2573,
+    "low": 2476,
+    "high": 5157,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1447,
+    "low": 1230,
+    "high": 1927,
+    "games": 96,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 1314,
+    "low": 1157,
+    "high": 2404,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 1447,
+    "low": 1226,
+    "high": 3336,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 1371,
+    "low": 1195,
+    "high": 1536,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 1764,
+    "low": 1416,
+    "high": 2988,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 1447,
+    "low": 1283,
+    "high": 1837,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 1584,
+    "low": 1265,
+    "high": 1643,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3475,
+    "low": 2528,
+    "high": 5839,
+    "games": 33,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 4895,
+    "low": 4521,
+    "high": 7159,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 5839,
+    "low": 3728,
+    "high": 6756,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 2971,
+    "low": 2636,
+    "high": 3620,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 3571,
+    "low": 2319,
+    "high": 5357,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 3037,
+    "low": 2418,
+    "high": 4463,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 2315,
+    "low": 2152,
+    "high": 2714,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4881,
+    "low": 3493,
+    "high": 6532,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 6476,
+    "low": 4098,
+    "high": 7735,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6694,
+    "low": 6123,
+    "high": 8056,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 3987,
+    "low": 2550,
+    "high": 4774,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 5023,
+    "low": 4798,
+    "high": 6524,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 3837,
+    "low": 3488,
+    "high": 5187,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 4696,
+    "low": 4621,
+    "high": 5475,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3468,
+    "low": 2372,
+    "high": 4196,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 3851,
+    "low": 3715,
+    "high": 4256,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 4816,
+    "low": 2693,
+    "high": 5136,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4009,
+    "low": 2827,
+    "high": 4565,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 2136,
+    "low": 2124,
+    "high": 2316,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 3414,
+    "low": 2973,
+    "high": 3726,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "venueId": "prince-georges-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 2945,
+    "low": 2380,
+    "high": 3234,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 16721,
+    "low": 16024,
+    "high": 17614,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 11243,
+    "low": 10944,
+    "high": 12763,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 11243,
+    "low": 10944,
+    "high": 12763,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16888,
+    "low": 16143,
+    "high": 18438,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 16133,
+    "low": 15658,
+    "high": 16591,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 16152,
+    "low": 15096,
+    "high": 17684,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 18438,
+    "low": 17468,
+    "high": 19234,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 5111,
+    "low": 4170,
+    "high": 7648,
+    "games": 52,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4208,
+    "low": 3108,
+    "high": 6772,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4380,
+    "low": 2924,
+    "high": 4839,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4625,
+    "low": 4386,
+    "high": 4980,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4519,
+    "low": 4456,
+    "high": 4839,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2750,
+    "low": 2427,
+    "high": 2915,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2924,
+    "low": 2788,
+    "high": 3436,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 6685,
+    "low": 6308,
+    "high": 7398,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 6640,
+    "low": 5976,
+    "high": 6685,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7319,
+    "low": 4755,
+    "high": 9151,
+    "games": 26,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 12699,
+    "low": 7567,
+    "high": 17341,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 11802,
+    "low": 10238,
+    "high": 13291,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 7016,
+    "low": 6662,
+    "high": 7373,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4648,
+    "low": 4184,
+    "high": 7621,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5188,
+    "low": 4639,
+    "high": 7257,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 3440,
+    "low": 2814,
+    "high": 4599,
+    "games": 50,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3145,
+    "low": 3077,
+    "high": 3176,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2976,
+    "low": 2443,
+    "high": 3604,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3514,
+    "low": 3165,
+    "high": 3703,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3388,
+    "low": 3177,
+    "high": 3879,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2481,
+    "low": 2367,
+    "high": 2747,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2427,
+    "low": 2384,
+    "high": 3030,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4584,
+    "low": 3288,
+    "high": 5775,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4506,
+    "low": 3929,
+    "high": 6386,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6040,
+    "low": 5107,
+    "high": 6980,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 5576,
+    "low": 5317,
+    "high": 6019,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 3268,
+    "low": 2887,
+    "high": 4265,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 3200,
+    "low": 2861,
+    "high": 4149,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2955,
+    "low": 2838,
+    "high": 3408,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "venueId": "eaglebank-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 2955,
+    "low": 2838,
+    "high": 3408,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1869,
+    "low": 1412,
+    "high": 2239,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2043,
+    "low": 1947,
+    "high": 2173,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1703,
+    "low": 1266,
+    "high": 1869,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1755,
+    "low": 1561,
+    "high": 1876,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1817,
+    "low": 1407,
+    "high": 2015,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1682,
+    "low": 1598,
+    "high": 1703,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1527,
+    "low": 1198,
+    "high": 1863,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2118,
+    "low": 2049,
+    "high": 3694,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2233,
+    "low": 1959,
+    "high": 2540,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 2508,
+    "low": 2124,
+    "high": 2557,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2520,
+    "low": 2377,
+    "high": 2681,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1754,
+    "low": 1382,
+    "high": 1967,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "venueId": "charles-e-smith-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1363,
+    "low": 1192,
+    "high": 1811,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 2400,
+    "low": 1524,
+    "high": 2948,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2244,
+    "low": 1970,
+    "high": 3027,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2512,
+    "low": 1787,
+    "high": 3789,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 3789,
+    "low": 3151,
+    "high": 3830,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1854,
+    "low": 1836,
+    "high": 3080,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2235,
+    "low": 1523,
+    "high": 2835,
+    "games": 32,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 2040,
+    "low": 1517,
+    "high": 2820,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 1912,
+    "low": 1525,
+    "high": 2400,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 1523,
+    "low": 1500,
+    "high": 3076,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 2152,
+    "low": 1811,
+    "high": 2488,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "venueId": "segra-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 3443,
+    "low": 2631,
+    "high": 4300,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 38094,
+    "low": 35393,
+    "high": 45392,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 35421,
+    "low": 35244,
+    "high": 36331,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 37041,
+    "low": 36186,
+    "high": 38206,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 38181,
+    "low": 35200,
+    "high": 46185,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 36780,
+    "low": 34819,
+    "high": 38006,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 41318,
+    "low": 38612,
+    "high": 43806,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "venueId": "secu-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 46185,
+    "low": 35121,
+    "high": 48706,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 12349,
+    "low": 10976,
+    "high": 15338,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 14044,
+    "low": 13598,
+    "high": 15319,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 12019,
+    "low": 10439,
+    "high": 13076,
+    "games": 26,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 12181,
+    "low": 12007,
+    "high": 14134,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 12358,
+    "low": 12198,
+    "high": 13764,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 10432,
+    "low": 10188,
+    "high": 10603,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 10891,
+    "low": 10355,
+    "high": 12399,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 13449,
+    "low": 11617,
+    "high": 15410,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15481,
+    "low": 12419,
+    "high": 17313,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 15103,
+    "low": 11902,
+    "high": 15854,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 11567,
+    "low": 11318,
+    "high": 13335,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 16026,
+    "low": 15854,
+    "high": 16548,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 15674,
+    "low": 13956,
+    "high": 16107,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 7020,
+    "low": 5455,
+    "high": 9035,
+    "games": 32,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5944,
+    "low": 5022,
+    "high": 7026,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 6425,
+    "low": 5434,
+    "high": 6514,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7025,
+    "low": 7020,
+    "high": 7027,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4940,
+    "low": 4930,
+    "high": 5201,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 5340,
+    "low": 4872,
+    "high": 7580,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 8068,
+    "low": 6600,
+    "high": 9042,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 8623,
+    "low": 7612,
+    "high": 11136,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "venueId": "umd-xfinity-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 6506,
+    "low": 5896,
+    "high": 7239,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 37,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 4200,
+    "low": 4200,
+    "high": 4200,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 22281,
+    "low": 18095,
+    "high": 28163,
+    "games": 242,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 41161,
+    "low": 40783,
+    "high": 41196,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18911,
+    "low": 14927,
+    "high": 22817,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 20036,
+    "low": 14017,
+    "high": 23622,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 19269,
+    "low": 17057,
+    "high": 22553,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 20867,
+    "low": 17792,
+    "high": 27568,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 20234,
+    "low": 16364,
+    "high": 22006,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 18349,
+    "low": 14519,
+    "high": 21609,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 15416,
+    "low": 14263,
+    "high": 17995,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 25194,
+    "low": 22226,
+    "high": 30331,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 22999,
+    "low": 21374,
+    "high": 25108,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 23789,
+    "low": 21310,
+    "high": 27189,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 27160,
+    "low": 23303,
+    "high": 31098,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 33198,
+    "low": 25637,
+    "high": 37580,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 25630,
+    "low": 22283,
+    "high": 27717,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 24612,
+    "low": 18662,
+    "high": 31007,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 30577,
+    "low": 25713,
+    "high": 34319,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 34238,
+    "low": 30755,
+    "high": 35297,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 30791,
+    "low": 28026,
+    "high": 37335,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 22670,
+    "low": 21490,
+    "high": 27821,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 32734,
+    "low": 30032,
+    "high": 34319,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 31316,
+    "low": 28189,
+    "high": 32700,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 27284,
+    "low": 25037,
+    "high": 29031,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 23860,
+    "low": 20173,
+    "high": 26740,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 23979,
+    "low": 20818,
+    "high": 24866,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 24050,
+    "low": 19474,
+    "high": 26325,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 27264,
+    "low": 27003,
+    "high": 28293,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 21996,
+    "low": 20562,
+    "high": 25369,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 20891,
+    "low": 19751,
+    "high": 23416,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 22473,
+    "low": 20485,
+    "high": 25241,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 14655,
+    "low": 12536,
+    "high": 16713,
+    "games": 24,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 11691,
+    "low": 11636,
+    "high": 12140,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15367,
+    "low": 14830,
+    "high": 16592,
+    "games": 8,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 16007,
+    "low": 12692,
+    "high": 17098,
+    "games": 11,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 16605,
+    "low": 16306,
+    "high": 16868,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 12668,
+    "low": 12230,
+    "high": 12692,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "venueId": "audi-field",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 17065,
+    "low": 15423,
+    "high": 17244,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 64244,
+    "low": 63464,
+    "high": 64527,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 64544,
+    "low": 63193,
+    "high": 64619,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 54404,
+    "low": 54281,
+    "high": 56789,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 64424,
+    "low": 64416,
+    "high": 64503,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 64424,
+    "low": 64416,
+    "high": 64503,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 64128,
+    "low": 63380,
+    "high": 64546,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 64017,
+    "low": 62293,
+    "high": 64666,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 64334,
+    "low": 63419,
+    "high": 64834,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "venueId": "northwest-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 63470,
+    "low": 63380,
+    "high": 63642,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 15921,
+    "low": 15015,
+    "high": 16942,
+    "games": 79,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 9403,
+    "low": 8033,
+    "high": 10791,
+    "games": 5,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 15522,
+    "low": 14494,
+    "high": 16737,
+    "games": 43,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 14386,
+    "low": 13724,
+    "high": 15792,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 14194,
+    "low": 13154,
+    "high": 16735,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 15922,
+    "low": 15296,
+    "high": 16901,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 15740,
+    "low": 15157,
+    "high": 16916,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 15598,
+    "low": 15408,
+    "high": 15736,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 16026,
+    "low": 15589,
+    "high": 17088,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17255,
+    "low": 15778,
+    "high": 19156,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 16563,
+    "low": 16525,
+    "high": 18296,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 18865,
+    "low": 17356,
+    "high": 19625,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16307,
+    "low": 16036,
+    "high": 16984,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 16182,
+    "low": 15889,
+    "high": 18284,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 15581,
+    "low": 14633,
+    "high": 16503,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 15711,
+    "low": 15581,
+    "high": 16220,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 14056,
+    "low": 13579,
+    "high": 15250,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 16454,
+    "low": 15923,
+    "high": 17518,
+    "games": 4,
+    "seasons": "2025–2026"
   }
 ];
 
@@ -47532,6 +50316,20 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.063,
     "games": 11
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "season": 2026,
+    "level": 1.181,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "season": 2026,
+    "level": 1.25,
+    "games": 9
   }
 ];
 
@@ -70153,6 +72951,1462 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "toronto",
     "ratio": 1.03,
     "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "905",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "blue-coats",
+    "ratio": 1.15,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "boom",
+    "ratio": 1.024,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "bulls",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "cruise",
+    "ratio": 0.977,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "gold",
+    "ratio": 0.859,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "herd",
+    "ratio": 1.058,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "magic",
+    "ratio": 1.098,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "nets",
+    "ratio": 0.857,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "skyhawks",
+    "ratio": 0.853,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "squadron",
+    "ratio": 0.936,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capital-city-go-go",
+    "opponent": "swarm",
+    "ratio": 1.419,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "avalanche",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "blackhawks",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "blue-jackets",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "blues",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "bruins",
+    "ratio": 1.017,
+    "games": 5
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "canadiens",
+    "ratio": 0.994,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "canucks",
+    "ratio": 0.975,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "devils",
+    "ratio": 0.993,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "ducks",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "flames",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "flyers",
+    "ratio": 1.007,
+    "games": 5
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "golden-knights",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "hurricanes",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "islanders",
+    "ratio": 0.989,
+    "games": 5
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "jets",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "kings",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "kraken",
+    "ratio": 0.993,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "lightning",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "maple-leafs",
+    "ratio": 1.003,
+    "games": 5
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "oilers",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "panthers",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "penguins",
+    "ratio": 1.024,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "predators",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "rangers",
+    "ratio": 1.015,
+    "games": 7
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "red-wings",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "sabres",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "senators",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "sharks",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "stars",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "opponent": "wild",
+    "ratio": 1.02,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "curve",
+    "ratio": 1.126,
+    "games": 30
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "fightin-phils",
+    "ratio": 0.975,
+    "games": 10
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "flying-squirrels",
+    "ratio": 1.03,
+    "games": 30
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "patriots",
+    "ratio": 0.822,
+    "games": 13
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "rubberducks",
+    "ratio": 1.161,
+    "games": 24
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "rumble-ponies",
+    "ratio": 1.08,
+    "games": 11
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "seawolves",
+    "ratio": 1.116,
+    "games": 35
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "senators",
+    "ratio": 0.947,
+    "games": 36
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "chesapeake-baysox",
+    "opponent": "yard-goats",
+    "ratio": 0.845,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "opponent": "cf-montr-al",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "opponent": "chicago",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "opponent": "nashville",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "opponent": "orlando",
+    "ratio": 0.958,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "opponent": "philadelphia",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "butler",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "coppin-st",
+    "ratio": 0.823,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "creighton",
+    "ratio": 1.044,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "depaul",
+    "ratio": 0.838,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "marquette",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "mount-st-marys",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "providence",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "seton-hall",
+    "ratio": 0.865,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "st-john-s",
+    "ratio": 0.957,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "uconn",
+    "ratio": 1.159,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "umbc",
+    "ratio": 1.037,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "villanova",
+    "ratio": 1.102,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "wagner",
+    "ratio": 0.895,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "georgetown-mbb",
+    "opponent": "xavier",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "cornell",
+    "ratio": 1.154,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "davidson",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "dayton",
+    "ratio": 1.096,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "duquesne",
+    "ratio": 0.965,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "g-washington",
+    "ratio": 1.103,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "loyola-chicago",
+    "ratio": 0.961,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "loyola-md",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "penn",
+    "ratio": 1.074,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "rhode-island",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "richmond",
+    "ratio": 0.902,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "saint-joseph-s",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "saint-louis",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "st-bonaventure",
+    "ratio": 0.929,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
+    "opponent": "vcu",
+    "ratio": 1.129,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "davidson",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "dayton",
+    "ratio": 1.191,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "fordham",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "george-mason",
+    "ratio": 1.223,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "la-salle",
+    "ratio": 0.958,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "loyola-chicago",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "rhode-island",
+    "ratio": 0.973,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "richmond",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "st-bonaventure",
+    "ratio": 1.03,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "umass",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "opponent": "william-mary",
+    "ratio": 1.175,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "birmingham",
+    "ratio": 0.843,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "charleston",
+    "ratio": 0.88,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "detroit",
+    "ratio": 0.84,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "hartford",
+    "ratio": 0.883,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "indy-xi",
+    "ratio": 0.903,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "louisville",
+    "ratio": 0.749,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "miami-fc",
+    "ratio": 0.8,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "north-carolina",
+    "ratio": 1.132,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "oakland",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "pittsburgh",
+    "ratio": 0.943,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "rhode-island",
+    "ratio": 1.042,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "loudoun-united",
+    "opponent": "tampa-bay",
+    "ratio": 0.87,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "opponent": "indiana",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "opponent": "michigan",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-football",
+    "opponent": "towson",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "alcorn-st",
+    "ratio": 0.931,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "illinois",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "indiana",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "iowa",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "michigan",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "michigan-st",
+    "ratio": 1.145,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "mount-st-marys",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "nebraska",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "northwestern",
+    "ratio": 1.04,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "ohio-state",
+    "ratio": 1.032,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "penn-state",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "purdue",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "rutgers",
+    "ratio": 0.943,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "opponent": "mount-st-marys",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "opponent": "ohio-state",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "opponent": "towson",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "aces",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "dream",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "fire",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "liberty",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "lynx",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "mercury",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "sky",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "sparks",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "storm",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "sun",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "tempo",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "valkyries",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "opponent": "wings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "angels",
+    "ratio": 0.903,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "astros",
+    "ratio": 0.879,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "blue-jays",
+    "ratio": 0.953,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "braves",
+    "ratio": 0.95,
+    "games": 19
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "brewers",
+    "ratio": 0.885,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "cardinals",
+    "ratio": 0.857,
+    "games": 10
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "cubs",
+    "ratio": 1.157,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "d-backs",
+    "ratio": 0.936,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "dodgers",
+    "ratio": 1.181,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "giants",
+    "ratio": 0.974,
+    "games": 10
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "mariners",
+    "ratio": 1.018,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "marlins",
+    "ratio": 0.837,
+    "games": 20
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "mets",
+    "ratio": 1.037,
+    "games": 21
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "orioles",
+    "ratio": 1.233,
+    "games": 8
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "padres",
+    "ratio": 0.99,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "phillies",
+    "ratio": 1.246,
+    "games": 19
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "pirates",
+    "ratio": 0.92,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "reds",
+    "ratio": 1.032,
+    "games": 9
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "rockies",
+    "ratio": 0.826,
+    "games": 11
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "royals",
+    "ratio": 0.937,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "twins",
+    "ratio": 0.918,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "opponent": "yankees",
+    "ratio": 1.201,
+    "games": 6
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "angel-city",
+    "ratio": 1.065,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "bay",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "chicago",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "gotham",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "houston",
+    "ratio": 1.055,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "kansas-city",
+    "ratio": 1.159,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "louisville",
+    "ratio": 0.917,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "north-carolina",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "orlando",
+    "ratio": 1.018,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "portland",
+    "ratio": 1.089,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "san-diego",
+    "ratio": 1.041,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "seattle",
+    "ratio": 1.046,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "spirit",
+    "opponent": "utah",
+    "ratio": 0.851,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "opponent": "bears",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "opponent": "cowboys",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "opponent": "eagles",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "opponent": "giants",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "washington",
+    "opponent": "seahawks",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "76ers",
+    "ratio": 1.036,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "bucks",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "bulls",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "cavaliers",
+    "ratio": 0.942,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "celtics",
+    "ratio": 1.039,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "clippers",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "grizzlies",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "hawks",
+    "ratio": 0.987,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "heat",
+    "ratio": 1.014,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "hornets",
+    "ratio": 1.041,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "jazz",
+    "ratio": 1.018,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "kings",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "knicks",
+    "ratio": 1.123,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "lakers",
+    "ratio": 1.08,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "magic",
+    "ratio": 0.977,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "mavericks",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "nets",
+    "ratio": 0.978,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "nuggets",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "pacers",
+    "ratio": 0.95,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "pelicans",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "pistons",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "raptors",
+    "ratio": 0.973,
+    "games": 4
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "rockets",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "spurs",
+    "ratio": 1.083,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "suns",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "thunder",
+    "ratio": 1.056,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "timberwolves",
+    "ratio": 1.017,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "trail-blazers",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "opponent": "warriors",
+    "ratio": 1.001,
+    "games": 2
   }
 ];
 
@@ -74200,6 +78454,270 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.039,
     "games": 70,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 1,
+    "high": 1.054,
+    "games": 111,
+    "seasons": "2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "capitals",
+    "venueId": "capital-one-arena",
+    "band": "second",
+    "occupancy": 1.002,
+    "low": 1,
+    "high": 1.043,
+    "games": 57,
+    "seasons": "2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "band": "first",
+    "occupancy": 0.951,
+    "low": 0.729,
+    "high": 1.039,
+    "games": 70,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "band": "second",
+    "occupancy": 0.951,
+    "low": 0.729,
+    "high": 1.039,
+    "games": 70,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "band": "conference",
+    "occupancy": 0.951,
+    "low": 0.729,
+    "high": 1.039,
+    "games": 70,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "dc-united",
+    "venueId": "audi-field",
+    "band": "final",
+    "occupancy": 0.951,
+    "low": 0.729,
+    "high": 1.039,
+    "games": 70,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "band": "first",
+    "occupancy": 0.75,
+    "low": 0.475,
+    "high": 1,
+    "games": 33,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "capital-one-arena",
+    "band": "first",
+    "occupancy": 0.75,
+    "low": 0.475,
+    "high": 1,
+    "games": 33,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "eaglebank-arena",
+    "band": "first",
+    "occupancy": 0.75,
+    "low": 0.475,
+    "high": 1,
+    "games": 33,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "carefirst-arena",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.507,
+    "high": 0.957,
+    "games": 27,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "capital-one-arena",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.507,
+    "high": 0.957,
+    "games": 27,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "mystics",
+    "venueId": "eaglebank-arena",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.507,
+    "high": 0.957,
+    "games": 27,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "band": "first",
+    "occupancy": 0.987,
+    "low": 0.855,
+    "high": 1.112,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "band": "second",
+    "occupancy": 1.031,
+    "low": 0.954,
+    "high": 1.142,
+    "games": 66,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "band": "conference",
+    "occupancy": 1.029,
+    "low": 0.953,
+    "high": 1.127,
+    "games": 39,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "nationals",
+    "venueId": "nationals-park",
+    "band": "final",
+    "occupancy": 1.043,
+    "low": 0.938,
+    "high": 1.14,
+    "games": 20,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 0.997,
+    "high": 1.041,
+    "games": 108,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "arena-cdmx",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 0.997,
+    "high": 1.041,
+    "games": 108,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.042,
+    "games": 52,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "arena-cdmx",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.042,
+    "games": 52,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "capital-one-arena",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.057,
+    "games": 27,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "wizards",
+    "venueId": "arena-cdmx",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.057,
+    "games": 27,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   }
 ];

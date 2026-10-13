@@ -87,7 +87,7 @@ const SCALE = 7.5;
 // New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
 // the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
 // is an estimate, none measured, so no venue override is stored; the hub fallback applies.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub', 'washington-dc': 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -122,6 +122,10 @@ const ZONE_NAMES: Record<string, string> = {
   'lincoln-financial-field': 'South Philadelphia Sports Complex',
   'citizens-bank-park': 'South Philadelphia Sports Complex',
   'xfinity-mobile-arena': 'South Philadelphia Sports Complex',
+  // Navy Yard / Buzzard Point / Wharf (city-type answer §7.5): South Capitol, M St SE/SW, Navy Yard and Waterfront stations.
+  'nationals-park': 'Navy Yard',
+  'audi-field': 'Navy Yard',
+  'the-anthem-dc': 'Navy Yard',
   // Columbus clusters that share approaches (city-type answer §5b). Distance still forms the zone.
   'nationwide-arena': 'Arena District',
   'scottsmiracle-gro-field': 'Arena District',

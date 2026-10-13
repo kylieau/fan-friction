@@ -295,6 +295,22 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '2443', metroId: 'new-orleans', teamId: 'lsuno-wbb', sport: 'basketball' },
   { path: 'baseball/college-baseball', espnId: '184', metroId: 'new-orleans', teamId: 'lsuno-baseball', sport: 'baseball' },
   { path: 'basketball/nba-development', espnId: '6', metroId: 'new-orleans', teamId: 'laketown-squadron', sport: 'basketball' },
+  // Washington, DC (docs/research/city-builds/washington-dc/); ids checked against each team's schedule Oct 13, 2026.
+  { path: 'football/nfl', espnId: '28', metroId: 'washington-dc', teamId: 'washington', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '23', metroId: 'washington-dc', teamId: 'capitals', sport: 'hockey' },
+  { path: 'basketball/nba', espnId: '27', metroId: 'washington-dc', teamId: 'wizards', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '16', metroId: 'washington-dc', teamId: 'mystics', sport: 'basketball' },
+  { path: 'soccer/usa.1', espnId: '193', metroId: 'washington-dc', teamId: 'dc-united', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '15365', metroId: 'washington-dc', teamId: 'spirit', sport: 'soccer' },
+  { path: 'basketball/nba-development', espnId: '4', metroId: 'washington-dc', teamId: 'capital-city-go-go', sport: 'basketball' },
+  { path: 'soccer/usa.usl.1', espnId: '19410', metroId: 'washington-dc', teamId: 'loudoun-united', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '120', metroId: 'washington-dc', teamId: 'maryland-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '120', metroId: 'washington-dc', teamId: 'maryland-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '120', metroId: 'washington-dc', teamId: 'maryland-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '2244', metroId: 'washington-dc', teamId: 'gmu-mbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '45', metroId: 'washington-dc', teamId: 'gw-mbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '46', metroId: 'washington-dc', teamId: 'georgetown-mbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '47', metroId: 'washington-dc', teamId: 'howard-football', sport: 'football' },
 ];
 
 /** Cities this feed can list games for. */
@@ -627,6 +643,25 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Washington, DC, as ESPN writes them (checked Oct 13, 2026).
+  'northwest stadium': 'northwest-stadium',
+  'fedexfield': 'northwest-stadium',
+  'nationals park': 'nationals-park',
+  'capital one arena': 'capital-one-arena',
+  'verizon center': 'capital-one-arena',
+  'audi field': 'audi-field',
+  'xfinity center': 'umd-xfinity-center',
+  'comcast center': 'umd-xfinity-center',
+  'secu stadium': 'secu-stadium',
+  'maryland stadium': 'secu-stadium',
+  'eaglebank arena': 'eaglebank-arena',
+  'patriot center': 'eaglebank-arena',
+  "prince george's stadium": 'prince-georges-stadium',
+  'william h. greene stadium': 'greene-stadium',
+  'carefirst arena': 'carefirst-arena',
+  'entertainment and sports arena': 'carefirst-arena',
+  'charles e. smith center': 'charles-e-smith-center',
+  'segra field': 'segra-field',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
@@ -634,6 +669,8 @@ const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
   nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },
+  boston: { 'xfinity center': 'xfinity-center' },
+  'washington-dc': { 'xfinity center': 'umd-xfinity-center' },
   sacramento: {
     'golden 1 center': 'golden-1-center',
     'hornet stadium': 'hornet-stadium',

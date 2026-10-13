@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "teamId": "howard-football",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "howard-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "15:00",
+      "opponent": "Morehouse",
+      "venueId": "metlife-stadium",
+      "attendance": 35042,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "howard-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "15:30",
+      "opponent": "Hampton",
+      "venueId": "audi-field",
+      "attendance": 16630,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "howard-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "16:00",
+      "opponent": "Hampton",
+      "venueId": "audi-field",
+      "attendance": 18672,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "howard-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "15:30",
+      "opponent": "Norfolk St",
+      "venueId": "audi-field",
+      "attendance": 1968,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

@@ -48271,5 +48271,212 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "draw": {
       "count": 990
     }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-espn-capitals-401892504",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "D.C. United vs. Red Bull NY 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 16627,
+      "low": 16479,
+      "high": 16932
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-14-espn-dc-united-761863",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Capitals vs. Canadiens 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 11243,
+      "low": 10944,
+      "high": 12763
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-espn-capitals-401892519",
+    "date": "2026-10-17",
+    "start": "13:00",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Moderate",
+      "why": "Maryland vs. Rutgers 7.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 18443,
+      "low": 18219,
+      "high": 18443
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-espn-maryland-football-401858489",
+    "date": "2026-10-17",
+    "start": "12:30",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Low",
+      "why": "Spirit vs. Gotham and Capitals vs. Devils 9.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 48797,
+      "low": 45601,
+      "high": 51735
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-17-espn-spirit-401854021",
+    "date": "2026-10-17",
+    "start": "12:30",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Moderate",
+      "why": "Maryland vs. Rutgers 9.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 19497,
+      "low": 18816,
+      "high": 21051
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-20-espn-capitals-401892542",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16794,
+      "low": 16644,
+      "high": 17102
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-21-espn-wizards-401909835",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15413,
+      "low": 14393,
+      "high": 16620
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-23-espn-wizards-401909846",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16789,
+      "low": 15352,
+      "high": 18639
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-capitals-401892571",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "D.C. United vs. Cincinnati 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 18592,
+      "low": 18365,
+      "high": 18592
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-dc-united-761895",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "Capitals vs. Sabres 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 16888,
+      "low": 16143,
+      "high": 18438
+    }
+  },
+  {
+    "metroId": "washington-dc",
+    "eventId": "2026-10-24-espn-loudoun-united-401842304",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-13T07:20:05.541Z",
+    "capturedOn": "2026-10-13",
+    "read": {
+      "method": "nearby",
+      "rating": 1.8
+    },
+    "draw": {
+      "count": 3443,
+      "low": 2631,
+      "high": 4300
+    }
   }
 ];

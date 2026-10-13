@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans', 'washington-dc'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -257,6 +257,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-90.09, 29.97],
     zoom: 10.6,
+  },
+  // Covered Oct 13, 2026 (docs/research/city-builds/washington-dc/washington-dc-venue-table-answer.md): DC plus Prince George's,
+  // Montgomery, Arlington, Alexandria, Fairfax and Loudoun; edge rooms in Prince William (Jiffy Lube Live) and Howard (Merriweather).
+  // One frame holds Penn Quarter, Navy Yard and Buzzard Point; Landover, College Park and the suburban amphitheatres sit off the first view.
+  'washington-dc': {
+    id: 'washington-dc', code: 'DC',
+    name: 'Washington, DC',
+    timeZone: 'America/New_York',
+    center: [-77.02, 38.90],
+    zoom: 10.5,
   },
 };
 
