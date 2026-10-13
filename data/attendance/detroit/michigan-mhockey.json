@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "teamId": "michigan-mhockey",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "michigan-mhockey",
+      "season": 2026,
+      "date": "2026-04-09",
+      "start": "20:30",
+      "opponent": "Denver",
+      "venueId": "t-mobile-arena",
+      "attendance": 17942,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Men's Hockey Championship - Frozen Four",
+      "sourceId": "espn"
+    }
+  ]
+}

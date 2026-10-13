@@ -1,0 +1,7683 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "teamId": "nationals",
+  "collectedOn": "2026-10-13",
+  "games": [
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-07",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 35052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 25677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 21369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 23158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-18",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 9261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 9261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 11720,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 15774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-21",
+      "start": "16:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 14424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 23751,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "13:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 27799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "13:35",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 26003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 12613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 13356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 12454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 21955,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 19715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 21213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 18433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 22949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 25915,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-23",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 22423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 22418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 23341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 16264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 20294,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "12:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 20294,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "18:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 26535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:35",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 25225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 26111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 25265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 22549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 20571,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 24490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 21153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 19944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "13:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 15501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 24785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "16:35",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 42730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "12:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 32261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-27",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 18213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 22575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "13:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 19870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "18:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 23794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 19674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 25385,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "11:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 25129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:05",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 19869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "12:05",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 16260,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "18:05",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 19869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 25577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 30409,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "16:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 37880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 26043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 30170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 34440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 28738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-01",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 29034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 29878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 27851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 35390,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 33661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "12:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 27498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-15",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 25467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 26362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 28302,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 31256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 30325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:35",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 31411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 26321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 26416,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "16:05",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 26877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 31679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 32497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 93
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 24931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 94
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 34179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 94
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 31638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 94
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-26",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 24684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 99
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 23281,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 100
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 24876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 101
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "13:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 24682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 101
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 36841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 102
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 29808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 103
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 36841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 102
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 32779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 103
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-03-30",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 35756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "16:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 27529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 21440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-03",
+      "start": "19:05",
+      "opponent": "Rays",
+      "venueId": "nationals-park",
+      "attendance": 10754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-04",
+      "start": "19:05",
+      "opponent": "Rays",
+      "venueId": "nationals-park",
+      "attendance": 15272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-05",
+      "start": "13:05",
+      "opponent": "Rays",
+      "venueId": "nationals-park",
+      "attendance": 13836,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "nationals-park",
+      "attendance": 21367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "16:05",
+      "opponent": "Guardians",
+      "venueId": "nationals-park",
+      "attendance": 24909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "nationals-park",
+      "attendance": 21929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 18747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 22598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 17482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "13:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 22090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 17482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 16898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-01",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 13722,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 12504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 15903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 18577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 31904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 24336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "12:35",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 24336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "16:35",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 21507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-15",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 15220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 19985,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "16:05",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 31721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:35",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 20580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 21438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 20388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "16:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 17524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 29827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 30959,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 29546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 24743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 18180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 13251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 22379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 33334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 25339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-19",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 19997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 22223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 16191,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 13251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "18:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 36290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "11:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 30434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 13252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 10064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:05",
+      "opponent": "Rangers",
+      "venueId": "nationals-park",
+      "attendance": 19322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "16:05",
+      "opponent": "Rangers",
+      "venueId": "nationals-park",
+      "attendance": 29402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "12:05",
+      "opponent": "Rangers",
+      "venueId": "nationals-park",
+      "attendance": 17547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 26062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 32504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "13:35",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 23404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-24",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 17194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 18182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "12:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 16893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-07-31",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 19290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 19847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "13:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 17312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 22651,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 28635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 19240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "nationals-park",
+      "attendance": 23516,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "nationals-park",
+      "attendance": 26507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "16:05",
+      "opponent": "Red Sox",
+      "venueId": "nationals-park",
+      "attendance": 25445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 26747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 38853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 2473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 17428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 27930,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 30389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 26196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 22897,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 24297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 32561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 34562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 27546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-18",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "nationals-park",
+      "attendance": 20977,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "nationals-park",
+      "attendance": 23936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "nationals-park",
+      "attendance": 23275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 28100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 36297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 34501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 31989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "18:35",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 34501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-01",
+      "start": "16:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 40405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 14022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-04",
+      "start": "16:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 11135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 21374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 29718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 24765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 22999,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "16:05",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 34608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 23193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 27806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 26298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 24185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "nationals-park",
+      "attendance": 22856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "16:05",
+      "opponent": "Blue Jays",
+      "venueId": "nationals-park",
+      "attendance": 22836,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "nationals-park",
+      "attendance": 18363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 29542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 34078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-20",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "nationals-park",
+      "attendance": 16979,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "nationals-park",
+      "attendance": 23597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "13:05",
+      "opponent": "Twins",
+      "venueId": "nationals-park",
+      "attendance": 21837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 23789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "16:05",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 30791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 25935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-03",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 20575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 21570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 18775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 27690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 39235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "16:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 33998,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 34282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 23303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 25637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 27003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 28230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "16:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 20853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 21158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-01",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 26719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 19844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 32391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "11:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 34394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 24072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 21838,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-07",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 19782,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-08",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 16454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 38402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 32734,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "13:35",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 23967,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 20749,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 23323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "12:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 20755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 22132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 30577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 18748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-05",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 14674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 17044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 13310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "12:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 12423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "18:45",
+      "opponent": "Angels",
+      "venueId": "nationals-park",
+      "attendance": 22333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:45",
+      "opponent": "Angels",
+      "venueId": "nationals-park",
+      "attendance": 22183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "11:35",
+      "opponent": "Angels",
+      "venueId": "nationals-park",
+      "attendance": 25456,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 16433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 18847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 18349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-26",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "nationals-park",
+      "attendance": 32812,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "nationals-park",
+      "attendance": 34334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "nationals-park",
+      "attendance": 30190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 28792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "16:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 32995,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 31086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 17668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 15585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 13299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 20584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 28175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 18265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "nationals-park",
+      "attendance": 14477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "nationals-park",
+      "attendance": 16670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 88
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-26",
+      "start": "13:05",
+      "opponent": "Royals",
+      "venueId": "nationals-park",
+      "attendance": 14357,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 31796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 38135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "15:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 26729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-03-27",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 41231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Day T-Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 38446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 28075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 18974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "NATS20 Replica Commemorative Ring"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "NATS20 Anniversary Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "16:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 25916,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "NATS20 2005 Replica Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "NATS20 Anniversary Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 14528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pups in the Park presented by PEDIGREE Foundation"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Youth Baseball and Softball Days presented by Inova Sports Medicine"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 22546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Japanese Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 24847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 21014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 29504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "James Wood Oversized Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Beltway Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 22246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "James Wood Oversized Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Beltway Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 23058,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "A MINECRAFT MOVIE Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Beltway Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 30277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Series presented by U.S. Steel: Military Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 33867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "NATS20 Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 30763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Opening Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Screech's Birthday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kids Designed Opening Day T-Shirt presented by Harris Teeter"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-04-28",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 14011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "nationals-park",
+      "attendance": 21948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": null,
+      "opponent": "Guardians",
+      "venueId": "nationals-park",
+      "attendance": 21948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "12:05",
+      "opponent": "Guardians",
+      "venueId": "nationals-park",
+      "attendance": 19896,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Weather Day presented by NBC4 & Telemundo 44"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 27849,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nats Postgame Summer Concert Series: O.A.R."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 37796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Harry Potter™ Day: Nationals Quidditch Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 20585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 26517,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park presented by PEDIGREE Foundation"
+        },
+        {
+          "type": "Theme Days",
+          "name": "AAPI Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 15584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Golf Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 16907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 89
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "University of North Carolina Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: National Guard"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 19195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "16:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 36873,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "NATS20 Mystery Moments Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "13:35",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 31581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Series presented by U.S. Steel: Memorial Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Korean Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 27702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 21965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: U.S. Marine Corps"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 30402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Night OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "18:45",
+      "opponent": "Rangers",
+      "venueId": "nationals-park",
+      "attendance": 27160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nats Postgame Summer Concert Series: Natasha Bedingfield"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "16:05",
+      "opponent": "Rangers",
+      "venueId": "nationals-park",
+      "attendance": 22670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Player Designed Series: CJ Abrams T-Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "University of Virginia Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "13:35",
+      "opponent": "Rangers",
+      "venueId": "nationals-park",
+      "attendance": 24897,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Mr. Potato Head presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Old Dominion University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 31098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nats Postgame Summer Concert Series: Nelly"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: U.S. Army"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 21129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pups in the Park presented by PEDIGREE Foundation"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Florida State University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 28293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "NATS20 Hawaiian Shirt presented by Kona Big Wave"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-16",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 11370,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 17232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 20366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Josh Gibson Homestead Grays Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Negro Leagues Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 21850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Juneteenth"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "18:45",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 13994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "13:05",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 13994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "18:45",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 16095,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brady House Rookie Season T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "18:45",
+      "opponent": "Tigers",
+      "venueId": "nationals-park",
+      "attendance": 31599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Freedom Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "11:05",
+      "opponent": "Red Sox",
+      "venueId": "nationals-park",
+      "attendance": 37355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Series presented by U.S. Steel: Independence Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "16:05",
+      "opponent": "Red Sox",
+      "venueId": "nationals-park",
+      "attendance": 34319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:35",
+      "opponent": "Red Sox",
+      "venueId": "nationals-park",
+      "attendance": 26771,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Batting Gloves presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Virginia Military Institute Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 22316,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "West Virginia University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 31136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nationals Basketball Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "William & Mary Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "13:35",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 21996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Virginia Tech Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 15558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 29071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: U.S. Space Force"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Intern Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "12:05",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 21567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 25194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Grateful Dead Day - SOLD OUT"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Syracuse University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 28869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jacob Young Bobblehead presented by PEDIGREE"
+        },
+        {
+          "type": "Theme Days",
+          "name": "James Madison University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 20066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids James Wood Growth Chart presented by Harris Teeter"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Scout Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 21636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: U.S. Coast Guard"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pokémon GO Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 14980,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Italian Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-07",
+      "start": "12:05",
+      "opponent": "Athletics",
+      "venueId": "nationals-park",
+      "attendance": 14519,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 21609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Ladies Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 35143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nats Postgame Summer Concert Series: Sam Hunt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Radford University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "16:05",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 36042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jacob Young Bobblehead presented by PEDIGREE"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Faith Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Cat-urday presented by Temptations"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "11:35",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 26243,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Filipino Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 23989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        },
+        {
+          "type": "Theme Days",
+          "name": "George Washington University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 19565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pups in the Park presented by PEDIGREE Foundation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 20127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: U.S. Navy"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:45",
+      "opponent": "Rays",
+      "venueId": "nationals-park",
+      "attendance": 27358,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nats Postgame Summer Concert Series: Ja Rule / Ashanti"
+        },
+        {
+          "type": "Theme Days",
+          "name": "HBCU Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "16:05",
+      "opponent": "Rays",
+      "venueId": "nationals-park",
+      "attendance": 26148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Player Designed Series: Cap"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Taiwanese Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "nationals-park",
+      "attendance": 19436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jewish Community Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Girl Scout Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 13835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 12372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 11190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Georgetown University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 18021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 86
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Series presented by U.S. Steel: Heroes Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "16:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 29887,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 86
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dylan Crews Bobblehead presented by MASN"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "11:35",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 20208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 87
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Curly W Oversized Chain presented by Harris Teeter"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Youth Baseball and Softball Days presented by Inova Sports Medicine"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-15",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 13979,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 87
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hispanic Heritage Day Pregame Panel"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hispanic Heritage Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 15584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Golf Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 19216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 89
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Golf Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "George Mason University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "16:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 14420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 90
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Catholic University Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "18:45",
+      "opponent": "White Sox",
+      "venueId": "nationals-park",
+      "attendance": 33938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 94
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nats Postgame Summer Concert Series: Riley Green"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Branch Appreciation Day presented by RTX: U.S. Air Force"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Country Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Schedule Magnet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "16:05",
+      "opponent": "White Sox",
+      "venueId": "nationals-park",
+      "attendance": 24360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 95
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "See You Later Day T-Shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hello Kitty™ Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "15:05",
+      "opponent": "White Sox",
+      "venueId": "nationals-park",
+      "attendance": 22473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 95
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Salvadoran Heritage Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pups in the Park presented by PEDIGREE Foundation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 41161,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Opener"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 40046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "nationals-park",
+      "attendance": 24899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-06",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 12319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 20036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Vintage Batting Practice Pullover"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park presented by PEDIGREE Foundation | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "nationals-park",
+      "attendance": 12686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 25108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "16:05",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 35527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Hockey Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Korean Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "13:35",
+      "opponent": "Giants",
+      "venueId": "nationals-park",
+      "attendance": 20026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Sleeveless Hoodie Presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Baseball and Softball Day presented by Inova Sports Medicine | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-20",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 12022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 16483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 16308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 14613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 19764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Grateful Dead Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Georgetown University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 25287,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "STAR WARS™ Grogu Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "STAR WARS™ Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "nationals-park",
+      "attendance": 17220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "nationals-park",
+      "attendance": 17844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Strike Out Senior Poverty with AARP Foundation"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park + Postgame Puppy Parade presented by PEDIGREE Foundation | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "nationals-park",
+      "attendance": 17444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "13:05",
+      "opponent": "Twins",
+      "venueId": "nationals-park",
+      "attendance": 13543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Weather Day presented by FOX5 | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 38912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hot Dog Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "University of Maryland Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Beltway Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "16:05",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 40559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Alex Ovechkin Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Salvadoran Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Beltway Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:35",
+      "opponent": "Orioles",
+      "venueId": "nationals-park",
+      "attendance": 26715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Novelty Sliding Mitt Presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Girl Scout Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Beltway Series"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 15901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 22754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jewish Community Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 18642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park presented by PEDIGREE Foundation | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AAPI Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 17291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 26529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "William & Mary Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Summer Concert Series presented by Harris Teeter and Coca-Cola: Taio Cruz"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "16:05",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 30765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "CJ Abrams Baseball Card Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:35",
+      "opponent": "Padres",
+      "venueId": "nationals-park",
+      "attendance": 24050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Racing Presidents Hat Presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Baseball and Softball Day presented by Inova Sports Medicine | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-01",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 11808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Caribbean Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 19751,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 16695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 22226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "16:05",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 30004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Daylen Lile Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "James Madison University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "nationals-park",
+      "attendance": 27264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Toy Story 5™ Day James \"Woody\" Kids T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-15",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "nationals-park",
+      "attendance": 14444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "nationals-park",
+      "attendance": 25053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Homestead Grays Jersey Presented by AARP"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Howard University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Negro Leagues Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "13:05",
+      "opponent": "Royals",
+      "venueId": "nationals-park",
+      "attendance": 17643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-22",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 18237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 29611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nationals Basketball Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park presented by PEDIGREE Foundation | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 27200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Night OUT presented by Team DC | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 28919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nationals Soccer Jersey Presented by Budweiser | Ages 21+"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 30331,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Freedom Fireworks presented by Budweiser"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "11:05",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 28125,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Series presented by Leidos: Independence Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "13:00",
+      "opponent": "Pirates",
+      "venueId": "nationals-park",
+      "attendance": 19587,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nationals Patriotic Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-06",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 11092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 20424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "nationals-park",
+      "attendance": 17760,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Naruto Day | SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "nationals-park",
+      "attendance": 38085,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Marvel's Captain America Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "16:05",
+      "opponent": "Yankees",
+      "venueId": "nationals-park",
+      "attendance": 34054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "nationals-park",
+      "attendance": 33699,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "All-Star T-Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Syracuse University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 36065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "HBCU Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Summer Concert Series presented by Harris Teeter and Coca-Cola: Jason Derulo"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "16:05",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 30032,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter™ Day Tank Top"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Harry Potter™ Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "University of Virginia Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "nationals-park",
+      "attendance": 21341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Plush Keychain Presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Virginia Tech Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-27",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "nationals-park",
+      "attendance": 17618,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "nationals-park",
+      "attendance": 20775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Intern Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Canada-US Friendship Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "13:05",
+      "opponent": "Blue Jays",
+      "venueId": "nationals-park",
+      "attendance": 20044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Camp Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 26065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Summer Concert Series presented by Harris Teeter and Coca-Cola: Jordan Davis"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Country Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Country Night Cowboy Hat | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Radford University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 32602,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hawaiian Shirt & Shorts Set"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hello Kitty® Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "12:15",
+      "opponent": "Reds",
+      "venueId": "nationals-park",
+      "attendance": 21375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Scout Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 23428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "George Washington University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 21116,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "16:05",
+      "opponent": "Cubs",
+      "venueId": "nationals-park",
+      "attendance": 21463,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-24",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 12105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for Four Straight Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 13876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park + Postgame Puppy Parade presented by PEDIGREE Foundation | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Natty's Half Birthday presented by Eukanuba"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for Four Straight Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 13845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "African American Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for Four Straight Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "nationals-park",
+      "attendance": 14768,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for Four Straight Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 18047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 32055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "James Wood Bobblehead Presented by PEDIGREE"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Faith Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Taiwanese Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Caturday presented by TEMPTATIONS | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "12:15",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 20891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pokémon GO Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "nationals-park",
+      "attendance": 10746,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "American University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Italian Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 18975,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Margaritaville® Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "nationals-park",
+      "attendance": 15248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:45",
+      "opponent": "Angels",
+      "venueId": "nationals-park",
+      "attendance": 17061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Series presented by Leidos: Heroes Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "16:05",
+      "opponent": "Angels",
+      "venueId": "nationals-park",
+      "attendance": 25713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Expos Replica Jersey Presented by AARP"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "nationals-park",
+      "attendance": 20761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Lunch Box Presented by Harris Teeter"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Girl Scout Day | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 23952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hispanic Heritage Day | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "nationals-park",
+      "attendance": 23007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "George Mason University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesdays for All Remaining Monday-Wednesday Games"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 28639,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nationals Football Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Catholic University Night | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "12:35",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 27284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "nationals",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "nationals-park",
+      "attendance": 23753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pups in the Park presented by PEDIGREE Foundation | SPECIAL TICKET PURCHASE REQUIRED"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

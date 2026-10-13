@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-17",
+  "rows": [
+    {
+      "metroId": "portland",
+      "venueId": "providence-park",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeF": 56.2,
+      "tempF": 61.1,
+      "humidity": 45,
+      "windMph": 5.8,
+      "uvIndex": 0,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 1,
+      "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "providence-park",
+      "date": "2026-10-17",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeF": 54.1,
+      "tempF": 58.5,
+      "humidity": 52,
+      "windMph": 5.3,
+      "uvIndex": 0,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 2,
+      "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "providence-park",
+      "date": "2026-10-17",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeF": 52.4,
+      "tempF": 56.6,
+      "humidity": 57,
+      "windMph": 5,
+      "uvIndex": 0,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 9,
+      "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeF": 56.1,
+      "tempF": 61.1,
+      "humidity": 45,
+      "windMph": 5.8,
+      "uvIndex": 0,
+      "precipProbability": 2,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 1,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeHighF": 62.6,
+      "feelsLikeLowF": 49.8,
+      "code": 61,
+      "precipProbability": 30,
+      "precipMm": 4.6
+    }
+  ]
+}

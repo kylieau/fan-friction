@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-21",
+  "rows": [
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeF": 50.3,
+      "tempF": 53.1,
+      "humidity": 78,
+      "windMph": 4.5,
+      "uvIndex": 0,
+      "precipProbability": 17,
+      "precipMm": 0.3,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 51
+    }
+  ],
+  "days": [
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-13T07:22:01.271Z",
+      "feelsLikeHighF": 51,
+      "feelsLikeLowF": 46.3,
+      "code": 61,
+      "precipProbability": 17,
+      "precipMm": 5.1
+    }
+  ]
+}
