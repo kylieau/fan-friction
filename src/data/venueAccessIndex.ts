@@ -377,4 +377,8 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'fair-grounds-race-course', reliefM: 3, streets250: 5 },
   { venueId: 'lakefront-arena', reliefM: 2, streets250: 1 },
   { venueId: 'turchin-stadium', reliefM: 4, streets250: 10 },
+  { venueId: 'td-place-stadium', reliefM: 9, streets250: 9 },
+  { venueId: 'arena-at-td-place', reliefM: 9, streets250: 9 },
+  { venueId: 'canadian-tire-centre', reliefM: 8, streets250: 5 },
+  { venueId: 'ottawa-stadium', reliefM: 4, streets250: 3 },
 ];

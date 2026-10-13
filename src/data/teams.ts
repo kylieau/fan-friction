@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|ottawa|gatineau|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -474,6 +474,18 @@ const LIST: Team[] = [
   team('varsity-blues-mbb', "Toronto Varsity Blues Men's Basketball", 'Varsity Blues MBB', 'U Sports basketball', 'basketball', 'toronto', 'VBB'),
   team('york-lions-football', 'York Lions Football', 'York Lions FB', 'U Sports football', 'football', 'toronto', 'YFB'),
   team('tmu-bold', 'TMU Bold', 'TMU Bold', 'U Sports', 'basketball', 'toronto', 'TMU'),
+  // Ottawa–Gatineau (Oct 13, 2026; docs/research/city-builds/ottawa-gatineau/). Black Bears discontinued Sep 2026 — no record.
+  team('ottawa-senators', 'Ottawa Senators', 'Senators', 'NHL', 'hockey', 'ottawa-gatineau', 'OTT', ['Centre Canadian Tire']),
+  team('ottawa-redblacks', 'Ottawa Redblacks', 'Redblacks', 'CFL', 'football', 'ottawa-gatineau', 'REB'),
+  team('ottawa-charge', 'Ottawa Charge', 'Charge', 'PWHL', 'hockey', 'ottawa-gatineau', 'CHG'),
+  team('atletico-ottawa', 'Atlético Ottawa', 'Atlético Ottawa', 'CPL', 'soccer', 'ottawa-gatineau', 'ATO'),
+  team('ottawa-67s', "Ottawa 67's", "67's", 'OHL', 'hockey', 'ottawa-gatineau', '67S'),
+  team('ottawa-blackjacks', 'Ottawa BlackJacks', 'BlackJacks', 'CEBL', 'basketball', 'ottawa-gatineau', 'OBJ'),
+  team('ottawa-titans', 'Ottawa Titans', 'Titans', 'Frontier League', 'baseball', 'ottawa-gatineau', 'TIT'),
+  team('gatineau-olympiques', 'Gatineau Olympiques', 'Olympiques', 'QMJHL', 'hockey', 'ottawa-gatineau', 'OLY'),
+  team('ottawa-rapid-fc', 'Ottawa Rapid FC', 'Rapid FC', "USL Super League", 'soccer', 'ottawa-gatineau', 'RFC'),
+  team('carleton-ravens-football', 'Carleton Ravens Football', 'Ravens FB', 'U Sports football', 'football', 'ottawa-gatineau', 'CAR'),
+  team('carleton-ravens-mbb', "Carleton Ravens Men's Basketball", 'Ravens MBB', 'U Sports basketball', 'basketball', 'ottawa-gatineau', 'CAR'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
   team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball'),
