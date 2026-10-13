@@ -21,7 +21,14 @@ function catalogFor(metroId: string): Promise<CrowdEvent[] | null> {
   const p = (async (): Promise<CrowdEvent[] | null> => {
     const client = supabase();
     if (!client) return null;
-    const { data, error } = await client.from('events').select('data').eq('metro_id', metroId).neq('source_id', 'seed');
+    // Rows filed under this city's pass, plus games another city's feed filed here because the room is here
+    // (the Lakers' home game in Las Vegas is the Las Vegas day; the row stays under the team's pass so the nightly
+    // cleanup of one city never deletes another's).
+    const { data, error } = await client
+      .from('events')
+      .select('data')
+      .or(`metro_id.eq.${metroId},data->>metroId.eq.${metroId}`)
+      .neq('source_id', 'seed');
     if (error || !data || data.length === 0) return null;
     return data.map((row) => row.data as CrowdEvent);
   })().catch(() => null);

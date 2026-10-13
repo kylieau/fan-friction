@@ -18,6 +18,7 @@ import './homeSync';
 import { primeDate } from './catalogCache';
 import { checkedFor, entryMetroId, nightKey, rememberNearby } from './read';
 import { listRange, weekOf } from './cityList';
+import { belongsToCity } from './sources/venueMetro';
 import { addDays } from '../lib/dates';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
@@ -53,7 +54,7 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
   const [answers] = await Promise.all([Promise.allSettled(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
   const lists = answers.map((a) => (a.status === 'fulfilled' ? a.value : []));
   const failed = EVENT_SOURCES.filter((_, i) => answers[i].status === 'rejected').map((s) => s.id);
-  const listed = withExpectedDraws(withResults(preferSeed(uniqueById(lists.flat())))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const listed = withExpectedDraws(withResults(preferSeed(uniqueById(lists.flat()).filter((e) => belongsToCity(e, metroId))))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
   const day: CityDate = { metroId, date, status, events, rating, ...(failed.length ? { failed } : {}) };
@@ -92,7 +93,7 @@ export async function getUpcoming(metroId: string, afterDate: LocalDate, limit =
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );
   return uniqueById(lists.flat())
-    .filter((e) => e.date > afterDate)
+    .filter((e) => e.date > afterDate && belongsToCity(e, metroId))
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')))
     .slice(0, limit);
 }
@@ -103,7 +104,7 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );
   return uniqueById(lists.flat())
-    .filter((e) => e.date > afterDate && e.date <= throughDate)
+    .filter((e) => e.date > afterDate && e.date <= throughDate && belongsToCity(e, metroId))
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
 }
 

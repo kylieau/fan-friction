@@ -4,6 +4,7 @@
 // today and later, and returns nothing if the feed is down.
 
 import { METROS } from '../../config/metros';
+import { metroForVenue } from './venueMetro';
 import { TEAMS } from '../teams';
 import type { CrowdEvent, GameResult, LocalDate, LocalTime, TeamGame } from '../types';
 import { espnStakes, leagueFromPath, otherPostseason } from './roundLabel';
@@ -1057,15 +1058,17 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
   // to Pacific lands on 9:00 pm the day before, so take the calendar date as
   // ESPN wrote it (Eastern) and leave the time blank rather than invent one.
   const timeSet = g.timeValid !== false && c.timeValid !== false;
+  // A home game played in another covered city belongs to that city's day (the venue's metro), in its time zone.
+  const eventMetro = metroForVenue(venueId, t.metroId);
   const { date, time } = timeSet
-    ? localParts(g.date, METROS[t.metroId].timeZone)
+    ? localParts(g.date, METROS[eventMetro].timeZone)
     : { date: localParts(g.date, 'America/New_York').date, time: null };
   const league = leagueFromPath(t.path);
   const stakes = league ? espnStakes(g, league) : otherPostseason(g);
   const broadcast = tvStation(c.broadcasts);
   return {
     id: `${date}-espn-${t.teamId}-${g.id}`,
-    metroId: t.metroId,
+    metroId: eventMetro,
     date,
     start: time,
     kind: 'game',

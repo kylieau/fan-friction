@@ -97,7 +97,9 @@ try {
   }
   const eventRow = (e) => ({
     id: e.id,
-    metro_id: e.metroId,
+    // Filed under the pass that fetched it, so one city's stale-row cleanup never deletes another's. A game
+    // played in another covered city carries that city in `data.metroId`, and the app reads it there.
+    metro_id: metroId,
     date: e.date,
     start: e.start ?? null,
     kind: e.kind,
