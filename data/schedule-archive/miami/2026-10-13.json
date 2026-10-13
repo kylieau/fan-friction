@@ -4,7 +4,7 @@
   "metroName": "Miami",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-13",
-  "capturedAt": "2026-10-13T07:19:48.061Z",
+  "capturedAt": "2026-10-13T07:46:44.275Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-13",
@@ -31,9 +31,64 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 14
     }
   ],
   "events": [
+    {
+      "id": "2026-10-13-tm-vvG1VZ_6naZVWW",
+      "metroId": "miami",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Weezer",
+      "officialTitle": "WEEZER- The Gathering",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Weezer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_6naZVWW",
+      "expectedDraw": {
+        "count": 13110,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-vvG1VZ_1RmgCaZ",
+      "metroId": "miami",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KATSEYE",
+      "officialTitle": "KATSEYE: THE WILDWORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "KATSEYE",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_1RmgCaZ",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
     {
       "id": "2026-10-14-espn-heat-401898404",
       "metroId": "miami",
@@ -90,6 +145,31 @@
       "sourceId": "espn"
     },
     {
+      "id": "2026-10-14-tm-vvG1VZ_7msjEDz",
+      "metroId": "miami",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Freya Skye",
+      "officialTitle": "Freya Skye - Stars Align Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Freya Skye",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_7msjEDz",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-15-espn-panthers-401892510",
       "metroId": "miami",
       "date": "2026-10-15",
@@ -119,6 +199,54 @@
         "seasons": "2024–2026",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG1VZ_5Sqbrak",
+      "metroId": "miami",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Def Leppard",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Def Leppard",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_5Sqbrak",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1VZ_8K_o6T-",
+      "metroId": "miami",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dalvin La Melodia",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Dalvin La Melodia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_8K_o6T-",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -220,6 +348,80 @@
       }
     },
     {
+      "id": "2026-10-17-tm-vvG1VZ_GpGY6iN",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "iHeartRadio Fiesta Latina",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "iHeartRadio Fiesta Latina",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GpGY6iN",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1VZ_6XptkL5",
+      "metroId": "miami",
+      "date": "2026-10-18",
+      "start": "18:30",
+      "kind": "show",
+      "title": "$UICIDEBOY$",
+      "officialTitle": "$uicideboy$ present Grey Day Tour 2026 w. Shakewell & more",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "$UICIDEBOY$",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_6XptkL5",
+      "expectedDraw": {
+        "count": 13110,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1VZ_5G47K2b",
+      "metroId": "miami",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "TINI",
+      "officialTitle": "TINI - FUTTTURA WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "TINI",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_5G47K2b",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
       "id": "2026-10-20-espn-fiu-football-401871055",
       "metroId": "miami",
       "date": "2026-10-20",
@@ -250,6 +452,31 @@
         "seasons": "2023–2025",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG1VZ_6xPlImM",
+      "metroId": "miami",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Doobie Brothers",
+      "officialTitle": "The Doobie Brothers: Walk This Road Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Doobie Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_6xPlImM",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -319,6 +546,31 @@
       }
     },
     {
+      "id": "2026-10-22-tm-vvG1VZ_GK4mdnE",
+      "metroId": "miami",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Alvaro Diaz",
+      "officialTitle": "ALVARO DIAZ - OMAKASE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-miami-beach"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Alvaro Diaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GK4mdnE",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-23-espn-heat-401909847",
       "metroId": "miami",
       "date": "2026-10-23",
@@ -383,6 +635,79 @@
       }
     },
     {
+      "id": "2026-10-24-tm-vvG1VZ_1mQ_pYB",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Blake Shelton",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Blake Shelton",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_1mQ_pYB",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1VZ_kt0YoDW",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Chayanne",
+      "officialTitle": "Chayanne - Bailemos Otra Vez Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Chayanne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_kt0YoDW",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_Gl6RGiu",
+      "metroId": "miami",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brand New",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brand New",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_Gl6RGiu",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-26-espn-heat-401909871",
       "metroId": "miami",
       "date": "2026-10-26",
@@ -414,15 +739,64 @@
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
       }
+    },
+    {
+      "id": "2026-10-26-tm-vvG1VZ_8pW-pfe",
+      "metroId": "miami",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fpl-solar-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_8pW-pfe"
     }
   ],
   "forecasts": [
+    {
+      "eventId": "2026-10-13-tm-vvG1VZ_6naZVWW",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "KATSEYE 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13110
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-vvG1VZ_1RmgCaZ",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Weezer 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
     {
       "eventId": "2026-10-14-espn-heat-401898404",
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 2.1,
+        "rating": 2.8,
         "friction": "Low",
         "why": "Inter Miami vs. NYCFC 4.5 mi away, same hours.",
         "method": "formula"
@@ -438,10 +812,24 @@
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 2.1,
+        "rating": 2.8,
         "friction": "Low",
         "why": "Heat vs. Nets 4.5 mi away, same hours.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-vvG1VZ_7msjEDz",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Inter Miami vs. NYCFC and Heat vs. Nets 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
       }
     },
     {
@@ -449,9 +837,9 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 1.3,
+        "rating": 1.5,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Def Leppard 10 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -461,12 +849,40 @@
       }
     },
     {
+      "eventId": "2026-10-15-tm-vvG1VZ_5Sqbrak",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Panthers vs. Canucks 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1VZ_8K_o6T-",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
       "eventId": "2026-10-17-espn-panthers-401892522",
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 2.3,
-        "friction": "Low",
+        "rating": 3.3,
+        "friction": "Moderate",
         "why": "Miami vs. Florida St 15 mi away, same hours.",
         "method": "formula"
       },
@@ -481,7 +897,7 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 2.3,
+        "rating": 3.3,
         "method": "nearby"
       },
       "draw": {
@@ -495,9 +911,9 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 2.3,
+        "rating": 3.3,
         "friction": "Low",
-        "why": "86° feels-like at a 7:00 pm start, no roof.",
+        "why": "Panthers vs. Kraken 15 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -507,19 +923,75 @@
       }
     },
     {
+      "eventId": "2026-10-17-tm-vvG1VZ_GpGY6iN",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Miami vs. Florida St 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1VZ_6XptkL5",
+      "date": "2026-10-18",
+      "start": "18:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "TINI 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13110
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1VZ_5G47K2b",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "$UICIDEBOY$ 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
       "eventId": "2026-10-20-espn-fiu-football-401871055",
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 10,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "The Doobie Brothers 23 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
         "count": 12436,
         "low": 10891,
         "high": 14426
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG1VZ_6xPlImM",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 10,
+        "friction": "Low",
+        "why": "FIU vs. MTSU 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
       }
     },
     {
@@ -546,6 +1018,14 @@
         "count": 1890,
         "low": 1736,
         "high": 2148
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1VZ_GK4mdnE",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "draw": {
+        "count": 2700
       }
     },
     {
@@ -581,6 +1061,48 @@
       }
     },
     {
+      "eventId": "2026-10-24-tm-vvG1VZ_1mQ_pYB",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Low",
+        "why": "Chayanne 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1VZ_kt0YoDW",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Low",
+        "why": "Blake Shelton 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_Gl6RGiu",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
       "eventId": "2026-10-26-espn-heat-401909871",
       "date": "2026-10-26",
       "start": "19:30",
@@ -594,6 +1116,15 @@
         "count": 19620,
         "low": 19610,
         "high": 19623
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-vvG1VZ_8pW-pfe",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
       }
     }
   ]
