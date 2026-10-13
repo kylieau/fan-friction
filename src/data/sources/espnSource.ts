@@ -295,6 +295,16 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '2443', metroId: 'new-orleans', teamId: 'lsuno-wbb', sport: 'basketball' },
   { path: 'baseball/college-baseball', espnId: '184', metroId: 'new-orleans', teamId: 'lsuno-baseball', sport: 'baseball' },
   { path: 'basketball/nba-development', espnId: '6', metroId: 'new-orleans', teamId: 'laketown-squadron', sport: 'basketball' },
+  // Portland (docs/research/city-builds/portland/); every id and home venue checked against the feed Oct 13, 2026.
+  { path: 'basketball/nba', espnId: '22', metroId: 'portland', teamId: 'blazers', sport: 'basketball' },
+  { path: 'soccer/usa.1', espnId: '9723', metroId: 'portland', teamId: 'timbers', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '15362', metroId: 'portland', teamId: 'thorns', sport: 'soccer' },
+  { path: 'basketball/wnba', espnId: '132052', metroId: 'portland', teamId: 'portland-fire', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2502', metroId: 'portland', teamId: 'psu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2502', metroId: 'portland', teamId: 'psu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2502', metroId: 'portland', teamId: 'psu-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '2501', metroId: 'portland', teamId: 'up-pilots-mbb', sport: 'basketball' },
+  { path: 'basketball/nba-development', espnId: '128019', metroId: 'portland', teamId: 'rip-city-remix', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -627,6 +637,18 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maestri field at privateer park': 'maestri-field',
   'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
+  // Portland, as ESPN writes them (checked Oct 13, 2026).
+  'providence park': 'providence-park',
+  'moda center': 'moda-center',
+  'rose garden': 'moda-center',
+  'veterans memorial coliseum': 'veterans-memorial-coliseum',
+  'memorial coliseum': 'veterans-memorial-coliseum',
+  'hillsboro stadium': 'hillsboro-stadium',
+  'viking pavilion': 'viking-pavilion',
+  'peter w. stott center': 'viking-pavilion',
+  'peter w stott center': 'viking-pavilion',
+  'chiles center': 'chiles-center',
+  'earle a. & virginia h. chiles center': 'chiles-center',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
