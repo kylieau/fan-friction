@@ -2060,6 +2060,11 @@ button {
   font-weight: 600;
 }
 
+.crowd-row-source {
+  font-weight: 500;
+  color: var(--muted);
+}
+
 /* The (i) card's per-event opening and the heading of the general explanation under it. */
 .how-about {
   margin: 0 0 14px;

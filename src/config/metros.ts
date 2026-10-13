@@ -174,7 +174,7 @@ export const METROS: Record<string, Metro> = {
   // counties (venue core). One frame holds Tampa, St. Petersburg and Clearwater; Steinbrenner and the fairgrounds sit off-center.
   tampa: {
     id: 'tampa', code: 'TPA',
-    name: 'Tampa',
+    name: 'Tampa Bay',
     timeZone: 'America/New_York',
     center: [-82.55, 27.92],
     zoom: 10.2,

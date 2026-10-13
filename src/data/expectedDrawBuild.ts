@@ -435,6 +435,12 @@ export function opponentKey(name: string): string {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
+/** OPPONENT_RATIOS keys: listing slugs, not always our visitor team id (C11). */
+export function opponentKeyForVisitor(awayTeamId: string, awayOpponent?: string): string {
+  if (awayOpponent) return awayOpponent;
+  return opponentKey(awayTeamId);
+}
+
 function seriesCount(dates: string[]): number {
   let n = 0;
   let last: number | null = null;

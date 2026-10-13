@@ -23,6 +23,7 @@ import {
 } from '../data';
 import {
   CONCERT_FILL,
+  announcedSourceLabel,
   crowdFigures,
   crowdKindWord,
   eventFacts,
@@ -160,6 +161,7 @@ export function EventScreen() {
   // The three crowd figures and the one to highlight (D04). A seeded estimate is a figure, never a ceiling.
   const figures = { ...crowdFigures(e), estimatedSeeded: e.crowd.some((f) => f.kind === 'estimated' && f.count != null) };
   const shown = highlightedCrowd(e);
+  const sourceLabel = announcedSourceLabel(e);
   const stakesLine = quietStakes(e, day.events);
   const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
   // Your own answer, for the status line under the button.
@@ -323,6 +325,9 @@ export function EventScreen() {
               </span>
               <span className="crowd-hero-kind">
                 {crowdKindWord(shown.kind)}
+                {(shown.kind === 'announced' || shown.kind === 'reported') && sourceLabel ? (
+                  <span className="crowd-row-source"> · {sourceLabel}</span>
+                ) : null}
                 {shown.kind === 'estimated' && <HowButton onOpen={() => setShowHow(true)} />}
               </span>
             </div>
@@ -336,7 +341,10 @@ export function EventScreen() {
                 )}
                 {figures.announced && (
                   <div className="crowd-row">
-                    <dt>{crowdKindWord(figures.announcedKind ?? 'announced')}</dt>
+                    <dt>
+                      {crowdKindWord(figures.announcedKind ?? 'announced')}
+                      {sourceLabel ? <span className="crowd-row-source"> · {sourceLabel}</span> : null}
+                    </dt>
                     <dd>{fmt(figures.announced)}</dd>
                   </div>
                 )}

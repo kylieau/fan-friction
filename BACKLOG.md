@@ -398,7 +398,8 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/product/expected-draw-decisions
 
 ## Chicago is covered (Oct 7) — follow-ons
 - **Astra's Chicago answers** (due ~5 hours after Oct 7 evening): compare with the Claude answers folded in here; tell Kylie whether Astra's are meaningfully better; fold in any correction.
-- **Ryan Field** (opened Oct 2, 2026): no estimate until crowds land; concerts from 2027 need a concert setup when published.
+- **Impact Field capacity (Oct 13, C16):** sources disagree — 5,526 fixed seats ([Baseballparks.com](https://baseballparks.com/indepth/impact-field/)), ~6,300 on the Dogs site, 8,300 on [Wikipedia](https://en.wikipedia.org/wiki/Impact_Field). Capacity left blank in `venues.ts` until one official figure is chosen; Chicago Dogs still on the MLB feed.
+- **Ryan Field** (opened Oct 2, 2026): no estimate until crowds land; concerts from 2027 need a concert setup when published. **Kimley-Horn 58% concert car share:** not wired — question for Kylie (C15/C16).
 - **Martin Stadium and the Stars' 2027 home:** re-check early 2027. **The Fire's stadium at The 78** opens before the 2028 season: new row. **Bears to Hammond** would move the boundary.
 - **Hand-list when dates are set:** Lollapalooza (115,000/day cap, Grant Park), Riot Fest (50,000/day, Douglass Park), the Auto Show and C2E2 at McCormick (per-day averages), Fan Expo in Rosemont, the Marathon (Oct 11, 2026 is this week; no building).
 - Nine car shares are mine (listed in the decisions doc); the Chicago Wolves have no feed.

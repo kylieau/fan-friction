@@ -3223,15 +3223,13 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
     strained: true,
   },
-  // ---------- Chicago (docs/research/city-builds/chicago/chicago-venue-table-answer.md; car shares from docs/research/city-builds/chicago/chicago-city-type-answer.md), Oct 7, 2026 ----------
+  // ---------- Chicago (docs/research/city-builds/chicago/chicago-venue-table-answer.md; city type hub per B2, Oct 13, 2026 rebuild) ----------
   // Not venue rows: Grant, Douglass, Union and Humboldt parks (festival grounds), McCormick Place and the Stephens
   // Convention Center (sized per event-day), Hawthorne (racing ended July 19, 2026) and Arlington Park (closed 2021).
-  // Car shares marked "ours" are not in the research; they come from the nearest comparable and are flagged for Kylie.
+  // carShare wired only where sourced (B7, Oct 13): Wrigley 36.7% (2013 gameday plan), United Center 86.9% (2023 patron survey).
   'soldier-field': {
     id: 'soldier-field',
     metroId: 'chicago',
-    // Estimated (research): Bears games toward 75–80% car, concerts toward 60–65%; CTA alone carried ~11% at the 2023 Swift shows.
-    carShare: 0.7,
     names: [{ name: 'Soldier Field' }],
     location: [-87.6176, 41.8623],
     ticketmasterIds: ['KovZpZAF6tIA', 'Za5ju3rKuqZDvOFjl5XkvAGDNWiF_6-ko-'],
@@ -3245,8 +3243,8 @@ export const VENUES: Record<string, Venue> = {
   'wrigley-field': {
     id: 'wrigley-field',
     metroId: 'chicago',
-    // Reported (the Cubs' own fan survey, March 2026): 37% drive, 63% other modes.
-    carShare: 0.37,
+    // Official (2013 Wrigley Gameday Traffic and Parking Management Plan): 36.7% driving; verified distinct from UW Husky Stadium 36.7% (Oct 13, 2026).
+    carShare: 0.367,
     names: [{ name: 'Wrigley Field' }],
     location: [-87.6556, 41.9481],
     ticketmasterIds: ['KovZpZAFlktA'],
@@ -3259,8 +3257,6 @@ export const VENUES: Record<string, Venue> = {
   'rate-field': {
     id: 'rate-field',
     metroId: 'chicago',
-    // Estimated (70–80%): ~17% rode the L by the team's older estimate; ~7,000 team spaces.
-    carShare: 0.75,
     names: [{ name: 'U.S. Cellular Field' }, { name: 'Guaranteed Rate Field', from: '2016-11-01' }, { name: 'Rate Field', from: '2025-01-01' }],
     location: [-87.6338, 41.8297],
     ticketmasterIds: ['KovZpaFPJe'],
@@ -3270,22 +3266,17 @@ export const VENUES: Record<string, Venue> = {
   'ryan-field': {
     id: 'ryan-field',
     metroId: 'chicago',
-    // Estimated: football ~60% car; the pre-opening concert plan projects 30–65% transit. Opened Oct 2, 2026.
-    carShare: 0.6,
     names: [{ name: 'Ryan Field' }],
     location: [-87.6908, 42.0669],
     ticketmasterIds: ['KovZpZAFdEdA'],
     capacity: [
-      { seats: 47130, setup: 'football', note: 'Reported: the old Ryan Field, closed after 2023. Northwestern played at Martin Stadium and Wrigley in 2024–25.' },
-      { seats: 35000, setup: 'football', fromYear: 2026, note: 'Official (Northwestern); sold out at the Oct 2, 2026 opener. Concerts (up to six a year) expected from 2027; capacity unpublished.' },
+      { seats: 35000, setup: 'football', fromYear: 2026, note: 'Official (Northwestern); opened Oct 2, 2026. Concerts (up to six a year) expected from 2027; capacity unpublished.' },
     ],
     roof: 'covered',
   },
   'huntington-bank-pavilion': {
     id: 'huntington-bank-pavilion',
     metroId: 'chicago',
-    // Estimated: the venue recommends transit or rideshare; patrons park in Soldier Field lots.
-    carShare: 0.6,
     names: [{ name: 'FirstMerit Bank Pavilion' }, { name: 'Huntington Bank Pavilion at Northerly Island', from: '2017-01-09' }],
     location: [-87.6085, 41.8634],
     ticketmasterIds: ['KovZpZAEA7IA'],
@@ -3295,8 +3286,6 @@ export const VENUES: Record<string, Venue> = {
   'credit-union-1-amphitheatre': {
     id: 'credit-union-1-amphitheatre',
     metroId: 'chicago',
-    // Estimated: one suburban site, one lot; hours-long approach jams documented in 2023.
-    carShare: 0.97,
     names: [{ name: 'Hollywood Casino Amphitheatre' }, { name: 'Credit Union 1 Amphitheatre', from: '2023-04-25' }],
     // Approximate (research); OpenStreetMap does not know the venue by name.
     location: [-87.785, 41.546],
@@ -3307,8 +3296,6 @@ export const VENUES: Record<string, Venue> = {
   'seatgeek-stadium': {
     id: 'seatgeek-stadium',
     metroId: 'chicago',
-    // Estimated: big lots on Harlem Ave; weak transit is the main fan complaint.
-    carShare: 0.93,
     names: [{ name: 'Toyota Park' }, { name: 'SeatGeek Stadium', from: '2018-11-01' }],
     location: [-87.8062, 41.7648],
     ticketmasterIds: ['Za5ju3rKuqZDvVoV_OqsqAKDLW-OEB0mP3', 'KovZpZA6keJA'],
@@ -3321,8 +3308,8 @@ export const VENUES: Record<string, Venue> = {
   'united-center': {
     id: 'united-center',
     metroId: 'chicago',
-    // Official (2023 patron survey in the 1901 Project TDM study): 86.9% car, 8.1% transit, 5.1% walk.
-    carShare: 0.87,
+    // Official (2023 patron survey, United Center TDM study on chicago.gov): 86.9% car.
+    carShare: 0.869,
     names: [{ name: 'United Center' }],
     location: [-87.6742, 41.8807],
     ticketmasterIds: ['KovZpa2M7e', 'KovZpa2zIe'],
@@ -3336,8 +3323,6 @@ export const VENUES: Record<string, Venue> = {
   'allstate-arena': {
     id: 'allstate-arena',
     metroId: 'chicago',
-    // Estimated: Blue Line Rosemont is not at the door; Pace bus or rideshare from the station.
-    carShare: 0.93,
     names: [{ name: 'Allstate Arena' }],
     location: [-87.8878, 42.0053],
     ticketmasterIds: ['KovZpa2MCe'],
@@ -3351,8 +3336,6 @@ export const VENUES: Record<string, Venue> = {
   ravinia: {
     id: 'ravinia',
     metroId: 'chicago',
-    // Estimated: no published share; Metra UP-N stops at the gate, free with a ticket; the only count is a 2021 monthly total.
-    carShare: 0.8,
     names: [{ name: 'Ravinia Festival' }, { name: 'Ravinia' }],
     location: [-87.7754, 42.1579],
     ticketmasterIds: ['KovZpZAanvEA'],
@@ -3362,8 +3345,6 @@ export const VENUES: Record<string, Venue> = {
   'martin-stadium': {
     id: 'martin-stadium',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): campus lakefill with limited parking; comparable to Welsh-Ryan.
-    carShare: 0.65,
     names: [{ name: 'Northwestern Medicine Field at Martin Stadium' }, { name: 'Martin Stadium' }],
     location: [-87.6708, 42.0584],
     ticketmasterIds: ['KovZ917AYhu', 'Z7r9jZaAnr'],
@@ -3376,8 +3357,6 @@ export const VENUES: Record<string, Venue> = {
   'now-arena': {
     id: 'now-arena',
     metroId: 'chicago',
-    // Estimated: 3,200 on-site spaces; no practical transit.
-    carShare: 0.98,
     names: [{ name: 'Sears Centre Arena' }, { name: 'NOW Arena', from: '2020-09-01' }],
     location: [-88.2128, 42.0693],
     ticketmasterIds: ['KovZpZAan6JA'],
@@ -3390,8 +3369,6 @@ export const VENUES: Record<string, Venue> = {
   'pritzker-pavilion': {
     id: 'pritzker-pavilion',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): the Loop, no parking of its own; comparable to the Grant Park festival figure.
-    carShare: 0.2,
     names: [{ name: 'Jay Pritzker Pavilion' }],
     location: [-87.6219, 41.8835],
     capacity: [{ seats: 11000, setup: 'concert', note: 'Official (City of Chicago): 4,000 fixed seats plus 7,000 lawn; mostly free events' }],
@@ -3400,8 +3377,6 @@ export const VENUES: Record<string, Venue> = {
   'wintrust-arena': {
     id: 'wintrust-arena',
     metroId: 'chicago',
-    // Estimated: Green Line station 0.15 mile away and McCormick Place garages adjacent; set between the United Center and Wrigley.
-    carShare: 0.65,
     names: [{ name: 'Wintrust Arena' }],
     location: [-87.6214, 41.8537],
     ticketmasterIds: ['KovZ917A2S0'],
@@ -3411,8 +3386,6 @@ export const VENUES: Record<string, Venue> = {
   'credit-union-1-arena': {
     id: 'credit-union-1-arena',
     metroId: 'chicago',
-    // Estimated: Blue and Pink Line stations a short walk; campus walk-ins.
-    carShare: 0.6,
     names: [{ name: 'UIC Pavilion' }, { name: 'Credit Union 1 Arena', from: '2018-11-01' }],
     location: [-87.6561, 41.8747],
     ticketmasterIds: ['Za5ju3rKuqZDea8OFFnJ-5byyCu1H5yLOV', 'KovZpa2Bpe'],
@@ -3425,18 +3398,14 @@ export const VENUES: Record<string, Venue> = {
   'impact-field': {
     id: 'impact-field',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): Rosemont, I-294 at Balmoral, adjacent garage; comparable to Allstate Arena.
-    carShare: 0.93,
     names: [{ name: 'Impact Field' }],
     location: [-87.8711, 41.9781],
-    capacity: [{ seats: 6300, setup: 'baseball', note: 'Reported (a ballpark trade site), 5,526 fixed seats; Wikipedia says 8,300. A ~10,000 concert figure is unverified and not kept.' }],
+    capacity: [],
     roof: 'open',
   },
   'wintrust-field': {
     id: 'wintrust-field',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): a suburban site with surface parking; comparable to NOW Arena.
-    carShare: 0.98,
     names: [{ name: 'Boomers Stadium' }, { name: 'Wintrust Field', from: '2020-01-01' }],
     location: [-88.1177, 41.9931],
     ticketmasterIds: ['KovZpZA7et1A'],
@@ -3446,8 +3415,6 @@ export const VENUES: Record<string, Venue> = {
   'welsh-ryan-arena': {
     id: 'welsh-ryan-arena',
     metroId: 'chicago',
-    // Estimated: the same Purple Line and Metra access as Ryan Field plus a large student walk-in share.
-    carShare: 0.65,
     names: [{ name: 'Welsh-Ryan Arena' }],
     location: [-87.6924, 42.0669],
     ticketmasterIds: ['KovZpaozFe'],
@@ -3460,8 +3427,6 @@ export const VENUES: Record<string, Venue> = {
   'jones-convocation-center': {
     id: 'jones-convocation-center',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): near the I-57/I-94 merge, campus lots.
-    carShare: 0.85,
     names: [{ name: 'Jones Convocation Center' }, { name: 'Emil and Patricia Jones Convocation Center' }],
     location: [-87.6084, 41.7165],
     ticketmasterIds: ['KovZpZAa1ltA'],
@@ -3471,8 +3436,6 @@ export const VENUES: Record<string, Venue> = {
   'salt-shed': {
     id: 'salt-shed',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): an industrial corridor with little parking, no rail at the door.
-    carShare: 0.55,
     names: [{ name: 'The Salt Shed' }],
     location: [-87.6592, 41.9067],
     ticketmasterIds: ['KovZ917AI5F', 'KovZ917Amf0'],
@@ -3482,8 +3445,6 @@ export const VENUES: Record<string, Venue> = {
   'aragon-ballroom': {
     id: 'aragon-ballroom',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): a block from the Red Line Lawrence stop; comparable to Wrigley.
-    carShare: 0.45,
     names: [{ name: 'Aragon Ballroom' }, { name: 'Byline Bank Aragon Ballroom', from: '2019-01-01' }],
     location: [-87.658, 41.9694],
     ticketmasterIds: ['KovZpZAFdJnA'],
@@ -3493,8 +3454,6 @@ export const VENUES: Record<string, Venue> = {
   'gately-stadium': {
     id: 'gately-stadium',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): a Public League stadium on the far South Side.
-    carShare: 0.8,
     names: [{ name: 'Gately Stadium' }],
     location: [-87.6026, 41.7085],
     capacity: [{ seats: 5000, setup: 'football', note: 'Reported (the CPS stadium list); renovated 2011' }],
@@ -3503,8 +3462,6 @@ export const VENUES: Record<string, Venue> = {
   'chicagoland-speedway': {
     id: 'chicagoland-speedway',
     metroId: 'chicago',
-    // Estimated, ours (not in the research): a speedway on I-55/I-80 with its own lots.
-    carShare: 0.98,
     names: [{ name: 'Chicagoland Speedway' }],
     location: [-88.0588, 41.4744],
     ticketmasterIds: ['KovZpZAa1laA'],

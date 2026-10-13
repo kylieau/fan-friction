@@ -152,3 +152,17 @@ Built in, not the main purpose. Lives in the You tab next to Your nights. Format
 
 ## Lessons from research
 Check claims against current sources. An agent wrongly said Aaron Donald was retired; he came out of retirement for 2026.
+
+## Oct 12, 2026 — build 4 (Composer slice, Oct 13)
+Each entry: the decision, why, and what was rejected where the build notes recorded them.
+
+- **One crowd number on the map (§0):** chip, chip card and sheet/header total all use the highlighted figure (Final > Announced > Estimated) via `displayedCrowdCount` / `highlightedCrowd`. Read math still uses `drawSize` and `knownSize`. Why: the same event cannot show two numbers (extends D04 to event figures on Explore). Rejected: changing friction sizing.
+- **Older stubs' crowd (R04, ⚑3):** on open, a legacy single `crowd` moves to `crowdAnnounced` when the linked event has a box-score or announced count, else `crowdEstimated`; never overwrites split fields; rerunnable. Why: Kylie's lean on the review form. Rejected: all Estimated; leave unlabeled.
+- **Announced source label (R05):** "from the team" on sports, "per organizers" on concerts/shows, only on the event page's Announced line (hero or small row). Why: detail stays on the event page; chips stay short. Rejected: labels on cards; no label.
+- **Date verdict (R11):** internal/docs name for the city-date read (`DateRating`); user-facing words unchanged until after the Oct 13 tester interview. Rejected: user-facing rename now.
+- **Read-box words at 8–9 px (R10):** kept as built; logged as the approved exception to the 11 pt minimum from build 3 §4.0. Why: Kylie accepted those two; other polish items in R10 were fixed or out of scope.
+- **Empty Faves picker title (R10):** embedded picker under Following uses `page-title` like other tabs. Skipped: "+ Stub it" / New stub sheet titles (other builder).
+- **Tampa Bay (C01):** display name `Tampa Bay`; metro id and code `TPA` unchanged. Why: locals and teams use Tampa Bay. Rejected: Tampa.
+- **Boston opponent ratios (C03):** merged `expectedDrawIndexBostonOpponents.ts` into `expectedDrawIndex.ts`; draw values unchanged. Why: one pattern per city.
+- **Arizona Cardinals away id (C11):** ESPN home schedules store the visitor's `teamId` when it is in `ESPN_TEAMS` (e.g. `arizona-cardinals`), not the nickname slug `cardinals`. Why: St. Louis keeps `cardinals` for MLB. Rejected: leave wrong slug.
+- **Car shares (C04):** venue `carShare` comment in types: measured vs estimated; wired estimates stay labeled in venue comments per Oct 12 decision. Ticketmaster lookup step already in `docs/reference/new-city-checklist.md` (C12). Why: use research estimates, marked estimated. Rejected: city default only.

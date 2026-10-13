@@ -16,7 +16,7 @@ import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
 import { drawSize } from './read';
-import { crowdFigures, entryCrowd } from './crowdFigures';
+import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
@@ -628,6 +628,30 @@ const ANNOUNCED_RETRY_DAYS = 30;
  * asks again on later opens, for a month (Kylie, Oct 12), after the first-time lookups. A date the
  * catalog cannot find (before the archive) stays blank. At most forty lookups a run.
  */
+/** Moves legacy single `crowd` on stubs into Announced or Estimated (build 4, R04). Rerunnable; never overwrites split fields. */
+export async function backfillLegacyCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+  const due = snapshot.added.filter(
+    (entry) => entry.crowd != null && entry.crowdAnnounced == null && entry.crowdEstimated == null && entry.crowdFinal == null,
+  );
+  if (due.length === 0) return;
+  const updates = new Map<string, Partial<Entry>>();
+  for (const entry of due.slice(0, 40)) {
+    let event: CrowdEvent | undefined;
+    if (entry.eventId && entry.metroId && entry.when.precision === 'day') {
+      try {
+        const day = await loadDate(entry.metroId, entry.when.sort);
+        event = day.events.find((e) => e.id === entry.eventId);
+      } catch {
+        /* estimated fallback */
+      }
+    }
+    const fill = backfillEntryCrowd(entry, event);
+    if (fill) updates.set(entry.id, fill);
+  }
+  if (updates.size === 0) return;
+  commit({ ...snapshot, added: snapshot.added.map((entry) => (updates.has(entry.id) ? { ...entry, ...updates.get(entry.id) } : entry)) });
+}
+
 export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
   const now = new Date();
   const past = (entry: Entry) => {
