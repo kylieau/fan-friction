@@ -1081,7 +1081,7 @@ Boards: `/workspace/ff-gap-review/mosaic/b5/v4/estimated-crowds.png`, `estimated
 
 ### On hold (Kylie working with Claude)
 
-- **ON HOLD:** Where crowds with no size show in Explore (beyond the blank rule above). Board: `/workspace/ff-gap-review/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
+- **CLOSED (Kylie, Oct 14):** Where crowds with no size show in Explore. Nothing beyond the blank rule above and the existing muted gray chips. Rejected: a "1 unsized not counted" footer and hollow gray pins (older board unsized.png). Board: `/workspace/ff-gap-review/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
 - Regional events: backlog next step (item 2). Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog. Nothing wired in build 5.
 
 ### CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug)
