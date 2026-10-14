@@ -8,7 +8,8 @@ import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { clearOfflineCatalog, clearPhoneCopy, diffLogs, isSavingToAccount, mergeLogs, entryStore, readSavedLog, setStoreAccount } from './storage';
-import { onAccountChange, tookDeliberateSignOut } from './account';
+import { getAccount, onAccountChange, tookDeliberateSignOut } from './account';
+import { getPref, setPref } from '../lib/prefs';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
@@ -718,6 +719,43 @@ export async function backfillLegacyCrowds(loadDate: (metroId: string, date: str
   }
   if (updates.size === 0) return;
   commit({ ...snapshot, added: snapshot.added.map((entry) => (updates.has(entry.id) ? { ...entry, ...updates.get(entry.id) } : entry)) });
+}
+
+/** Bump when the naming rules change, so every log takes the new names once. */
+const TITLE_VERSION = 'build-5';
+
+/**
+ * Stubs made from an event take that event's current short name (Kylie, Oct 14: old stubs read "NLCS G2 · Dodgers
+ * at Brewers"). Entries and plans with an event only; a hand-added stub keeps the name its owner typed, and a stub
+ * whose event can't be found keeps the name it has. Once per log on each device: done after a pass where every
+ * date loaded.
+ */
+export async function retitleStubs(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+  const scope = getAccount()?.id ?? 'phone';
+  const done = getPref<Record<string, string>>('stub-titles', {});
+  if (done[scope] === TITLE_VERSION) return;
+  const linked = [
+    ...snapshot.added.filter((entry) => entry.eventId && entry.metroId && entry.when.precision === 'day').map((entry) => ({ metroId: entry.metroId!, date: entry.when.sort })),
+    ...snapshot.plans.filter((plan) => plan.eventId).map((plan) => ({ metroId: plan.metroId, date: plan.date })),
+  ];
+  const dates = [...new Map(linked.map((d) => [`${d.metroId}|${d.date}`, d])).values()];
+  const names = new Map<string, string>();
+  let failed = false;
+  for (let i = 0; i < dates.length; i += 4) {
+    const days = await Promise.all(dates.slice(i, i + 4).map((d) => loadDate(d.metroId, d.date).catch(() => null)));
+    for (const day of days) {
+      if (!day) failed = true;
+      for (const event of day?.events ?? []) names.set(event.id, listTitle(event));
+    }
+  }
+  const renamed = <T extends { eventId?: string; title: string }>(row: T): T => {
+    const name = row.eventId ? names.get(row.eventId) : undefined;
+    return name && name !== row.title ? { ...row, title: name } : row;
+  };
+  const added = snapshot.added.map((entry) => (isManualEntry(entry) ? entry : renamed(entry)));
+  const plans = snapshot.plans.map(renamed);
+  if (added.some((e, i) => e !== snapshot.added[i]) || plans.some((p, i) => p !== snapshot.plans[i])) commit({ ...snapshot, added, plans });
+  if (!failed) setPref('stub-titles', { ...getPref<Record<string, string>>('stub-titles', {}), [scope]: TITLE_VERSION });
 }
 
 export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {

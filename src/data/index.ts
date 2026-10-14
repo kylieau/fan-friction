@@ -416,6 +416,7 @@ export {
   toughestFights,
   backfillLegacyCrowds,
   lockCrowds,
+  retitleStubs,
   setWatchDetails,
   watchShareOf,
   watchPlaceOf,

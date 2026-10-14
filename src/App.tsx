@@ -22,7 +22,7 @@ import { TagScreen } from './screens/TagScreen';
 import { FollowingScreen } from './screens/FollowingScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
-import { backfillLegacyCrowds, getCityDate, lockCrowds, settlePassedPlans, subscribeLogLoaded } from './data';
+import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, subscribeLogLoaded } from './data';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { getAccount, getMyProfile, setStubDefault, subscribeAccount } from './data';
 import { levelFor } from './screens/SettingsPrivacyScreen';
@@ -53,14 +53,17 @@ function Shell() {
   }, [account?.id]);
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
+  // Then stubs made from an event take its current name, once per log (Kylie, Oct 14).
   useEffect(() => {
     void settlePassedPlans(getCityDate, getHomeId())
       .then(() => backfillLegacyCrowds(getCityDate))
-      .then(() => lockCrowds(getCityDate));
+      .then(() => lockCrowds(getCityDate))
+      .then(() => retitleStubs(getCityDate));
     return subscribeLogLoaded(() =>
       void settlePassedPlans(getCityDate, getHomeId())
         .then(() => backfillLegacyCrowds(getCityDate))
-        .then(() => lockCrowds(getCityDate)),
+        .then(() => lockCrowds(getCityDate))
+        .then(() => retitleStubs(getCityDate)),
     );
   }, []);
 
