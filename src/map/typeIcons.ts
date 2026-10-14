@@ -21,7 +21,7 @@ export function typeIconSvg(event: CrowdEvent): string {
 }
 
 /** The type key a stub draws. */
-export function entryTypeKey(entry: Pick<Entry, 'kind' | 'sport' | 'title'>): string {
+export function entryTypeKey(entry: Pick<Entry, 'kind' | 'sport' | 'title'> & Partial<Pick<Entry, 'venue'>>): string {
   return entryType(entry).key;
 }
 

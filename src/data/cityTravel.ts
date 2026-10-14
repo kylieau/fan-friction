@@ -13,7 +13,7 @@ const PATTERN: Record<CityType, string> = {
 };
 
 /**
- * Cities whose sentence isn't their type's (Kylie, Oct 14, "change them"): Atlanta reads hub (about a third of Falcons
+ * Cities whose sentence isn't their type's (Kylie, Oct 14, dictated "Okay, cause them", read as "change their wording"): Atlanta reads hub (about a third of Falcons
  * fans by transit, 2014 survey), Ottawa–Gatineau reads sprawl (game buses cut for low ridership, 2018), Las Vegas
  * walks from the Strip (the stadium's own guidance; no share published).
  */

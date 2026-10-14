@@ -86,7 +86,7 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
       <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
       <span className="stub-main">
         <span className="stub-title">
-          <TypeIcon typeKey={typeKey ?? (plan.manual ? entryTypeKey({ kind: plan.manual.kind, sport: plan.manual.sport ?? '', title: plan.title }) : null)} size={16} className="stub-type-icon" />
+          <TypeIcon typeKey={typeKey ?? (plan.manual ? entryTypeKey({ kind: plan.manual.kind, sport: plan.manual.sport ?? '', title: plan.title, venue: plan.venue }) : null)} size={16} className="stub-type-icon" />
           {plan.title}
         </span>
         {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
