@@ -96,6 +96,11 @@ export function activityLine(groups: ActivityGroups): string | null {
   return parts.length > 0 ? parts.join(' · ') : null;
 }
 
+/** A row's friends-only activity line; your own answer shows on its own line in the row (build 5, item 4). */
+export function friendsLine(items: readonly FeedItem[]): string | null {
+  return activityLine(activityGroups(items, null));
+}
+
 /** The feed sentence's start (Kylie, Oct 11, call 1; build notes 3, 4.7): "Sam is going to", "Sam is watching", "Sam went to", "Sam watched". The event follows, then the place for a shared watch. */
 export function feedSentence(item: FeedItem): { lead: string; tail: string } {
   const name = friendName(item);

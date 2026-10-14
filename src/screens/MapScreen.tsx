@@ -19,7 +19,7 @@ import {
   type CrowdEvent,
   type FeedItem,
 } from '../data';
-import { activityGroups, activityLine, yourActivity } from '../lib/activity';
+import { friendsLine, yourActivity } from '../lib/activity';
 import { getPref, setPref } from '../lib/prefs';
 import { PeopleIcon } from '../components/Icons';
 import { BaseMap, MapContext } from '../map/BaseMap';
@@ -100,7 +100,8 @@ export function MapScreen() {
       current = false;
     };
   }, [account?.id, date, metro.id]);
-  const lineFor = (e: CrowdEvent) => (activity ? activityLine(activityGroups(friends.filter((f) => f.eventId === e.id), yourActivity(e.id, log))) : null);
+  const lineFor = (e: CrowdEvent) => (activity ? friendsLine(friends.filter((f) => f.eventId === e.id)) : null);
+  const youFor = (e: CrowdEvent) => (activity ? (yourActivity(e.id, log)?.kind ?? null) : null);
 
   // The friend line on a chip (build notes 4, 1.9): friends only, never you; off with the Activity chip.
   const chipActivity = useMemo(() => (activity ? chipActivities(friends) : undefined), [activity, friends]);
@@ -456,7 +457,7 @@ export function MapScreen() {
                 .sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'))
                 .map((e) => (
                   <li key={e.id}>
-                    <DayRow event={e} line={lineFor(e)} />
+                    <DayRow event={e} line={lineFor(e)} you={youFor(e)} />
                   </li>
                 ))}
             </ul>

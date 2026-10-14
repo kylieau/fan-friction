@@ -63,6 +63,7 @@ let exitCode = 0;
 try {
   const { fetchWeather, fetchWeatherDays, isOpenAir, weatherHourFor, weatherHoursFor } = await server.ssrLoadModule('/src/data/formula/weather.ts');
   const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
+  const { hoursOf, runningHours } = await server.ssrLoadModule('/src/lib/windows.ts');
   const { METROS, COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
   if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
   const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
@@ -102,6 +103,22 @@ try {
     const ask = asks.get(key) ?? { venueId: 'city', location: metro.center, date: event.date, hours: new Set([19]) };
     ask.hours.add(weatherHourFor(event));
     asks.set(key, ask);
+  }
+  // And every hour across the day's timed events, half an hour either side, through 11 pm: the date page's
+  // hourly strip over the timeline (build 5, item 4). Still one call per date; only the stored hours grow.
+  const windows = new Map();
+  for (const event of events) {
+    if (!event.start) continue;
+    const start = hoursOf(event.start);
+    const w = windows.get(event.date) ?? { lo: Infinity, hi: -Infinity };
+    w.lo = Math.min(w.lo, Math.floor(start - 0.5));
+    w.hi = Math.max(w.hi, Math.ceil(start + runningHours(event) + 0.5));
+    windows.set(event.date, w);
+  }
+  for (const [date, w] of windows) {
+    const ask = asks.get(`city|${date}`);
+    if (!ask) continue;
+    for (let h = Math.max(0, w.lo); h <= Math.min(23, w.hi); h += 1) ask.hours.add(h);
   }
 
   const byDate = new Map();

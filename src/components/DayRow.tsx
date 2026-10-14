@@ -6,12 +6,16 @@ import { listTitle } from '../lib/eventTitle';
 import { markOpenedFromMap } from '../lib/mapReturn';
 import { eventPath } from '../lib/view';
 import { CrowdFigure, EventTags } from './EventTags';
+import { ActivityIcon } from './ActivityLines';
+import { ACTIVITY_WORDS, type ActivityKind } from '../lib/activity';
 
 /**
  * The one row body every event list shares (Kylie, Oct 14: badges right-justified, "across the board").
  * The time at the left; line 1 the title and, at the right edge, the crowd; line 2 the venue and, at the
  * same right edge, the badges, so the badges line up with the crowd figure; then anything extra and the
  * activity line. A long title never meets the badges, and a long venue gives way to them.
+ * Your own answer is its own right-aligned line under the badges: its icon and word in link blue, no fill
+ * (build 5, item 4; board datepage-r3-lean). Friends stay in the activity line.
  */
 export function RowBody({
   event: e,
@@ -19,6 +23,7 @@ export function RowBody({
   time,
   venueText,
   line,
+  you,
   extra,
 }: {
   event: CrowdEvent;
@@ -26,6 +31,8 @@ export function RowBody({
   time: string;
   venueText?: string | null;
   line?: string | null;
+  /** Your own answer on this event, shown as "Attending" with its icon. */
+  you?: ActivityKind | null;
   extra?: ReactNode;
 }) {
   return (
@@ -40,6 +47,12 @@ export function RowBody({
           {venueText && <span className="day-row-venue">{venueText}</span>}
           <EventTags event={e} />
         </span>
+        {you && (
+          <span className="day-row-you">
+            <ActivityIcon kind={you} />
+            {ACTIVITY_WORDS[you]}
+          </span>
+        )}
         {extra}
         {line && <span className="day-row-activity">{line}</span>}
       </span>
@@ -50,10 +63,10 @@ export function RowBody({
 /**
  * One of the day's rows (build notes 3, 4.2; mock 2b). Opens the event page.
  */
-export function DayRow({ event: e, line }: { event: CrowdEvent; line: string | null }) {
+export function DayRow({ event: e, line, you }: { event: CrowdEvent; line: string | null; you?: ActivityKind | null }) {
   return (
     <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" onClick={() => markOpenedFromMap()}>
-      <RowBody event={e} time={e.start ? clockTime(e.start) : 'TBA'} venueText={sheetVenue(e)} line={line} />
+      <RowBody event={e} time={e.start ? clockTime(e.start) : 'TBA'} venueText={sheetVenue(e)} line={line} you={you} />
     </Link>
   );
 }

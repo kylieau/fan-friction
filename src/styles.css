@@ -2167,6 +2167,28 @@ button {
   transform: translateX(-50%);
 }
 
+/* The hourly weather strip over the timeline (build 5, item 4; board datepage-r3-lean): glyph over feels-like at each
+   hour tick, a rule under it. Shares the axis positions. */
+.hourly-strip {
+  position: relative;
+  height: 36px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hourly-strip > span {
+  position: absolute;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink2);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .bars {
   list-style: none;
   margin: 0;
@@ -3954,68 +3976,6 @@ button.back-link {
   gap: 3px;
   color: inherit;
   text-decoration: none;
-}
-
-.date-row-title {
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 1.15;
-}
-
-.date-row-line {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.date-row-line .crowd-figure {
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.date-row-side {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 2px;
-  flex-shrink: 0;
-  max-width: 44%;
-  text-align: right;
-}
-
-.date-row-time {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--ink);
-  font-variant-numeric: tabular-nums;
-}
-
-.date-row-venue {
-  font-size: 12.5px;
-  color: var(--ink2);
-}
-
-.stub-mini {
-  margin-top: 4px;
-  min-height: 28px;
-  padding: 0 10px;
-  border: none;
-  border-radius: 999px;
-  background: var(--card);
-  box-shadow: inset 0 0 0 1.5px var(--dodger);
-  color: var(--dodger);
-  font-size: 12.5px;
-  font-weight: 800;
-}
-
-.stub-mini.on {
-  background: var(--dodger);
-  color: var(--card);
-  box-shadow: none;
 }
 
 .date-friends-group {
@@ -7902,21 +7862,7 @@ button.back-link {
 }
 
 /* Date page rows: the badges sit at the right of the line, like every list (Kylie, Oct 14). */
-.date-row-line {
-  justify-content: space-between;
-}
-
 /* Date page: the crowd at the left of the line and the badges at the right of it, on one line. */
-.date-row-line {
-  flex-wrap: nowrap;
-}
-
-.date-row-line .event-tags {
-  flex-wrap: nowrap;
-  gap: 4px;
-  margin-left: auto;
-}
-
 /* The shared row body (Kylie, Oct 14: badges right-justified everywhere): time at the left; line 1 the title and,
    at the right edge, the crowd; line 2 the venue and, at the same right edge, the badges. */
 .day-row-body {
@@ -7978,6 +7924,18 @@ button.back-link {
   font-size: 11px;
 }
 
+/* Your own answer (build 5, item 4; board datepage-r3-lean): icon and word, link blue, no fill, right-aligned. */
+.day-row-you {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
 /* Rows that are not .day-row (Home, the date page, "Fighting today") carry the same time column. */
 .log-row .day-row-time,
 .date-row-main .day-row-time,
@@ -7991,23 +7949,16 @@ button.back-link {
   font-variant-numeric: tabular-nums;
 }
 
+/* The date page's lineup rows match the Explore row (build 5, item 4): same padding and gap, no room for a button. */
 .date-row-main {
   flex-direction: row;
   align-items: flex-start;
   gap: 8px;
-  padding-bottom: 26px;
 }
 
 .date-row {
   position: relative;
-  padding: 8px 12px 8px 10px;
-}
-
-.date-row .stub-mini {
-  position: absolute;
-  right: 12px;
-  bottom: 8px;
-  margin: 0;
+  padding: 6px 10px;
 }
 
 .event-row {

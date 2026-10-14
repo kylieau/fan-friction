@@ -16,7 +16,7 @@ import {
 } from '../data';
 import { addDays, daysBetween } from '../lib/dates';
 import { mondayOf, weekOf } from '../data/cityList';
-import { activityGroups, activityLine, yourActivity } from '../lib/activity';
+import { friendsLine, yourActivity } from '../lib/activity';
 import { getPref } from '../lib/prefs';
 import { datePath, mapPath, useView } from '../lib/view';
 import { showsOnMap } from '../map/crowdPoints';
@@ -446,15 +446,8 @@ export function ExploreListScreen() {
     setPending({ date: today, smooth: true });
   };
 
-  const lineFor = (event: CrowdEvent) =>
-    activityOn
-      ? activityLine(
-          activityGroups(
-            friends.filter((f) => f.eventId === event.id),
-            yourActivity(event.id, log),
-          ),
-        )
-      : null;
+  const lineFor = (event: CrowdEvent) => (activityOn ? friendsLine(friends.filter((f) => f.eventId === event.id)) : null);
+  const youFor = (event: CrowdEvent) => (activityOn ? (yourActivity(event.id, log)?.kind ?? null) : null);
 
   const firstIsPast = days.length > 0 && days[0].date < today;
 
@@ -505,7 +498,7 @@ export function ExploreListScreen() {
                   .sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'))
                   .map((e) => (
                     <li key={e.id}>
-                      <DayRow event={e} line={lineFor(e)} />
+                      <DayRow event={e} line={lineFor(e)} you={youFor(e)} />
                     </li>
                   ))}
               </ul>

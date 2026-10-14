@@ -3,11 +3,9 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
-import { StubSheet } from '../components/StubSheet';
 import { ActivityLines } from '../components/ActivityLines';
-import { activityGroups, activityLine, yourActivity, ACTIVITY_WORDS } from '../lib/activity';
+import { activityGroups, friendsLine, yourActivity } from '../lib/activity';
 import { DayTimeline } from '../components/DayTimeline';
-import { crowdThousands } from '../map/crowdPoints';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
@@ -17,8 +15,6 @@ import {
   rangeLabel,
   rangeSpoken,
   feelsLikeLabel,
-  isOpenAir,
-  weatherForEvent,
   weatherGlyph,
   followingFeed,
   getAccount,
@@ -27,7 +23,6 @@ import {
   firmPlan,
   isStampLocked,
   drawSize,
-  sizeTier,
   savedNightRead,
   scheduleCoverage,
   stampLocksAt,
@@ -42,8 +37,7 @@ import {
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
 import { getHomeId } from '../lib/homeCity';
-import { quietStakes } from '../lib/stakes';
-import { CrowdFigure, CrowdMark } from '../components/EventTags';
+import { CrowdFigure } from '../components/EventTags';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
@@ -72,8 +66,6 @@ export function DateScreen() {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [day, setDay] = useState<CityDate | null>(null);
   const [friends, setFriends] = useState<FeedItem[]>([]);
-  // The event whose "+ Stub it" sheet is open (Kylie's answer, build notes 3, 8.1, item 13).
-  const [stubbing, setStubbing] = useState<CrowdEvent | null>(null);
   const [shareNote, setShareNote] = useState('');
 
   const [tries, setTries] = useState(0);
@@ -108,8 +100,10 @@ export function DateScreen() {
   const today = todayIn(metro);
   // Today counts as ahead: an Attend today is a plan, and becomes Attended once the date passes (C039).
   const ahead = date >= today;
-  // By crowd (build notes 3, 4.3): the rows explain the score; Explore is the one by time.
-  const events = useMemo(() => (day ? [...day.events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0) || (a.start ?? '99').localeCompare(b.start ?? '99')) : []), [day]);
+  // By start time (build 5, item 4): the lineup reads like the evening. An event with no time goes last.
+  const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99') || (drawSize(b) ?? 0) - (drawSize(a) ?? 0)) : []), [day]);
+  // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
+  const biggest = useMemo(() => [...events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0))[0], [events]);
   const mine = useMemo(
     () => yourEntries(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
     [log, date, metro.id],
@@ -123,12 +117,12 @@ export function DateScreen() {
 
   // The event the share line names: the highlighted one, or the only one.
   const target = events.find((e) => e.id === highlight) ?? (events.length === 1 ? events[0] : undefined);
-  // Your answer and the people you follow, per event, for the row's one activity line (build notes 3, 4.2).
-  const lineFor = (e: CrowdEvent) => activityLine(activityGroups(friends.filter((f) => f.eventId === e.id), yourActivity(e.id, log)));
+  // The people you follow, per event, for the row's activity line; your own answer is its own line (build 5, item 4).
+  const lineFor = (e: CrowdEvent) => friendsLine(friends.filter((f) => f.eventId === e.id));
 
   const share = async () => {
     const line = shownRating !== null ? `${scoreLabel(shownRating)} · ${formatScore(shownRating)}/10` : '';
-    const title = mine[0]?.title ?? events[0]?.title ?? metro.name;
+    const title = mine[0]?.title ?? biggest?.title ?? metro.name;
     const text = `${title}, ${longLocalDate(date)}${line ? ` · ${line}` : ''}`;
     try {
       if (navigator.share) {
@@ -305,65 +299,37 @@ export function DateScreen() {
         </section>
       )}
 
+      {events.length > 0 && rating && shownRating !== null && (
+        <section className="card local-competition" aria-label="Local Competition">
+          {/* Build 5, item 4 (board datepage-r3-lean): above the lineup, the hourly weather strip over the timeline.
+              No summary line and no read tile: the read is in the card above. */}
+          <h2 className="you-heading">Local Competition</h2>
+          <DayTimeline events={events} weather={{ metroId: metro.id, date }} />
+        </section>
+      )}
+
       {events.length > 0 && (
-      <section className="you-block" aria-labelledby="that-date">
-        <h2 id="that-date" className="you-heading">
-          This day in {metro.name}
-        </h2>
-        {/* Rows (build notes 3, 4.3; mock 3-date-page): title, crowd and tags, one activity line; the time over the venue
-            on the right; a small "+ Stub it" on each row opens the one sheet (8.1, item 13). */}
-        <ul className="date-list">
-          {events.map((e) => {
-            const you = yourActivity(e.id, log);
-            const line = lineFor(e);
-            return (
-              <li key={e.id} className={`date-row${you || e.id === highlight ? ' yours' : ''}`}>
+        <section className="you-block" aria-labelledby="that-date">
+          <h2 id="that-date" className="you-heading">
+            {weekdayLong(date)}'s lineup
+          </h2>
+          {/* The shared Explore row (build 5, item 4), by start time. No per-row "+ Stub it": the event page has it.
+              Your own answer shows in the row as its icon and word; the deep-linked event keeps its tint. */}
+          <ul className="date-list">
+            {events.map((e) => (
+              <li key={e.id} className={`date-row${e.id === highlight ? ' yours' : ''}`}>
                 <Link to={eventPath(e.id, e.metroId)} className="date-row-main">
                   <RowBody
                     event={e}
                     time={e.start ? clockTime(e.start) : 'TBA'}
                     venueText={venueOf(e) ?? null}
-                    line={line}
-                    extra={
-                      <>
-                        {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
-                        <VenueWeather event={e} bare />
-                      </>
-                    }
+                    line={lineFor(e)}
+                    you={yourActivity(e.id, log)?.kind ?? null}
                   />
                 </Link>
-                <button type="button" className={`stub-mini${you ? ' on' : ''}`} onClick={() => setStubbing(e)}>
-                  {you ? ACTIVITY_WORDS[you.kind] : '+ Stub it'}
-                </button>
               </li>
-            );
-          })}
-        </ul>
-      </section>
-      )}
-
-      {events.length > 0 && rating && shownRating !== null && (
-        <section className="card local-competition" aria-label="Local competition">
-          {/* Local competition (Kylie, Oct 11, call 6; mock call6-overlap D on top, B/C timeline): the read, the summary line, the night's bars. No helper text. */}
-          <h2 className="you-heading">Local competition</h2>
-          <div className="local-head">
-            <ReadTile rating={shownRating} />
-            <span className="local-summary">
-              {/* The crowd icon sits beside the crowd total (build notes 3, D09). */}
-              {formatScore(shownRating)} {scoreLabel(shownRating)}
-              {summaryTotal(events) > 0 && (
-                <>
-                  {' · '}
-                  <CrowdMark />
-                  {crowdThousands(summaryTotal(events))} across
-                </>
-              )}
-              {summaryTotal(events) > 0 ? ' ' : ' · '}
-              {events.length} {events.length === 1 ? 'event' : 'events'}
-              {summaryStart(events) ? ` · ${summaryStart(events)}` : ''}
-            </span>
-          </div>
-          <DayTimeline events={events} />
+            ))}
+          </ul>
         </section>
       )}
 
@@ -394,7 +360,6 @@ export function DateScreen() {
           ))}
         </section>
       )}
-      {stubbing && <StubSheet event={stubbing} onClose={() => setStubbing(null)} />}
 
       {shareNote && (
         <p className="you-fine" role="status">
@@ -415,32 +380,6 @@ function groupByEvent(items: FeedItem[]): { key: string; title: string; items: F
     groups.set(key, group);
   }
   return [...groups.values()];
-}
-
-/** The venue's feels-like, inline, open-air venues only; `bare` makes it its own small line. */
-function VenueWeather({ event, bare = false }: { event: CrowdEvent; bare?: boolean }) {
-  if (!isOpenAir(event)) return null;
-  const row = weatherForEvent(event);
-  if (!row) return null;
-  if (bare) {
-    return (
-      <span className="log-facts">
-        <span className="weather-glyph" aria-hidden>
-          {weatherGlyph(row)}
-        </span>{' '}
-        {feelsLikeLabel(row, event.metroId)}
-      </span>
-    );
-  }
-  return (
-    <>
-      {' · '}
-      <span className="weather-glyph" aria-hidden>
-        {weatherGlyph(row)}
-      </span>{' '}
-      {feelsLikeLabel(row, event.metroId)}
-    </>
-  );
 }
 
 function venueOf(e: CrowdEvent): string | null {
@@ -475,17 +414,4 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
       </div>
     </div>
   );
-}
-
-/** The crowd over the floor that date, for "54k across 6 events" (Kylie, Oct 11, call 6). */
-function summaryTotal(events: readonly CrowdEvent[]): number {
-  return events.filter((e) => sizeTier(e) === 'feeds-friction').reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
-}
-
-/** "4 start at 7:00 pm" when several big events share a start (the clock in the app's one form), else null. */
-function summaryStart(events: readonly CrowdEvent[]): string | null {
-  const starts = new Map<string, number>();
-  for (const e of events) if (e.start && sizeTier(e) === 'feeds-friction') starts.set(e.start, (starts.get(e.start) ?? 0) + 1);
-  const top = [...starts.entries()].sort((a, b) => b[1] - a[1])[0];
-  return top && top[1] > 1 ? `${top[1]} start at ${clockTime(top[0])}` : null;
 }
