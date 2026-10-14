@@ -6,6 +6,7 @@ import { ReadTile } from '../components/ReadTile';
 import { ActivityLines } from '../components/ActivityLines';
 import { activityGroups, friendsLine, yourActivity } from '../lib/activity';
 import { DayTimeline } from '../components/DayTimeline';
+import { HiddenLine } from '../components/HiddenLine';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
@@ -29,6 +30,9 @@ import {
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
+  alwaysShownIds,
+  crowdRangeOf,
+  splitByRange,
   yourEntries,
   type CityDate,
   type CrowdEvent,
@@ -102,6 +106,12 @@ export function DateScreen() {
   const ahead = date >= today;
   // By start time (build 5, item 4): the lineup reads like the evening. An event with no time goes last.
   const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99') || (drawSize(b) ?? 0) - (drawSize(a) ?? 0)) : []), [day]);
+  // The crowd size range (build 5, item 6): the lineup shows what's in range, with one hidden-events line under it;
+  // Local Competition is not filtered (answer B). Show reveals the rest for this visit.
+  const [showAll, setShowAll] = useState(false);
+  useEffect(() => setShowAll(false), [metro.id, date]);
+  const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
+  const lineup = useMemo(() => (showAll ? { shown: events, hidden: [] as CrowdEvent[] } : splitByRange(events, crowdRangeOf(log), keep)), [events, showAll, log, keep]);
   // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
   const biggest = useMemo(() => [...events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0))[0], [events]);
   const mine = useMemo(
@@ -316,7 +326,7 @@ export function DateScreen() {
           {/* The shared Explore row (build 5, item 4), by start time. No per-row "+ Stub it": the event page has it.
               Your own answer shows in the row as its icon and word; the deep-linked event keeps its tint. */}
           <ul className="date-list">
-            {events.map((e) => (
+            {lineup.shown.map((e) => (
               <li key={e.id} className={`date-row${e.id === highlight ? ' yours' : ''}`}>
                 <Link to={eventPath(e.id, e.metroId)} className="date-row-main">
                   <RowBody
@@ -330,6 +340,7 @@ export function DateScreen() {
               </li>
             ))}
           </ul>
+          <HiddenLine count={lineup.hidden.length} onShow={() => setShowAll(true)} />
         </section>
       )}
 

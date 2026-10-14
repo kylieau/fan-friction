@@ -234,17 +234,18 @@ export async function getCalendarMonth(metroId: string, month: string): Promise<
  * Nights whose team, artist, or venue matches the query, newest first.
  * Fewer than two letters matches nothing, so an empty box can show Famous nights.
  */
-export async function searchDates(metroId: string, query: string): Promise<DateSearchHit[]> {
+export async function searchDates(metroId: string, query: string, visible?: (event: CrowdEvent) => boolean): Promise<DateSearchHit[]> {
   const q = query.trim();
   if (q.length < 2) return [];
   const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
   const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
-  const hits = new Map<string, { titles: string[]; matched: string[] }>();
+  const hits = new Map<string, { titles: string[]; matched: string[]; anyVisible: boolean }>();
 
   for (const event of events) {
     const names = matchingNames(event, q);
     if (!names) continue;
-    const row = hits.get(event.date) ?? { titles: [], matched: [] };
+    const row = hits.get(event.date) ?? { titles: [], matched: [], anyVisible: false };
+    if (!visible || visible(event)) row.anyVisible = true;
     if (!row.titles.includes(event.title)) row.titles.push(event.title);
     for (const name of names) {
       if (!row.matched.some((m) => m.toLowerCase() === name.toLowerCase())) row.matched.push(name);
@@ -262,14 +263,15 @@ export async function searchDates(metroId: string, query: string): Promise<DateS
         rating: rating?.rating ?? null,
         headline: rating?.headline ?? row.titles.slice(0, 2).join(' · '),
         matched: row.matched.slice(0, 3).join(' · '),
+        ...(row.anyVisible ? {} : { hidden: true }),
       };
     });
 }
 
 /** The same search over every covered city at once, the home city's hits first (Kylie, Oct 9, C058). */
-export async function searchAllDates(homeId: string | null, query: string): Promise<DateSearchHit[]> {
+export async function searchAllDates(homeId: string | null, query: string, visible?: (event: CrowdEvent) => boolean): Promise<DateSearchHit[]> {
   const ids = [...COVERED_METRO_IDS].sort((a, b) => (a === homeId ? -1 : b === homeId ? 1 : 0));
-  const lists = await Promise.all(ids.map((id) => searchDates(id, query)));
+  const lists = await Promise.all(ids.map((id) => searchDates(id, query, visible)));
   return lists.flat();
 }
 

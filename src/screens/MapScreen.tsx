@@ -43,7 +43,8 @@ import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { CrowdMark } from '../components/EventTags';
 import { DayRow, RowBody, sheetVenue } from '../components/DayRow';
-import { displayedCrowdCount, drawSize, sizeTier } from '../data';
+import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, sizeTier, splitByRange } from '../data';
+import { HiddenLine } from '../components/HiddenLine';
 
 type Mode = 'crowds' | 'traffic';
 /** No traffic layer exists yet; the switch stays off the map until one does (C079). */
@@ -109,7 +110,14 @@ export function MapScreen() {
   const shown = day && day.date === date ? day : null;
   const rating = shown?.rating ?? null;
   // Every event at a known venue is a pin and a sheet row; a room under the friction floor is drawn muted (Kylie, Oct 9, 3.4).
-  const dayEvents = (shown?.events ?? []).filter(showsOnMap);
+  const allDayEvents = useMemo(() => (shown?.events ?? []).filter(showsOnMap), [shown]);
+  // The crowd size range (build 5, item 6): chips, rows and both totals show only what's in range; Show reveals the rest
+  // for this view. Stubbed events and ones friends are attending always show. The read never sees this.
+  const [showAll, setShowAll] = useState(false);
+  const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
+  const split = useMemo(() => splitByRange(allDayEvents, crowdRangeOf(log), keep), [allDayEvents, log, keep]);
+  const dayEvents = showAll ? allDayEvents : split.shown;
+  const hiddenCount = showAll ? 0 : split.hidden.length;
 
   // The map shows one day (Kylie, Oct 6). An empty day stays empty: the strip
   // shows where the next reads are, and the sheet names the next event.
@@ -143,6 +151,7 @@ export function MapScreen() {
     setSelectedId(null);
     setOpen(false);
     setLegend(false);
+    setShowAll(false);
   }, [date]);
 
   const initialMetro = useRef(metro.id);
@@ -151,7 +160,12 @@ export function MapScreen() {
     setFreezeCamera(false);
     setMovedByHand(false);
     setLegend(false); // the key closes on a city switch (C048)
+    setShowAll(false);
   }, [metro.id]);
+  // A link or a remembered selection to an event the range hides counts as Show for this view.
+  useEffect(() => {
+    if (selectedId && split.hidden.some((e) => e.id === selectedId)) setShowAll(true);
+  }, [selectedId, split]);
 
   const select = useCallback((id: string | null) => {
     setFreezeCamera(false);
@@ -187,10 +201,11 @@ export function MapScreen() {
   const rivals = useMemo(() => {
     if (!selected) return [] as CrowdEvent[];
     const toMin = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));
-    return events
+    // Not filtered by the crowd size range, like Up against (answer B): the read uses them.
+    return allDayEvents
       .filter((e) => e.id !== selected.id && e.date === selected.date && sizeTier(e) === 'feeds-friction' && (!selected.start || !e.start || Math.abs(toMin(e.start) - toMin(selected.start)) <= 60))
       .sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
-  }, [events, selected]);
+  }, [allDayEvents, selected]);
   // The header already names the day (Kylie, Oct 6: say it once).
   const pastLabel = pastRelativeLabel(date, todayIn(DEFAULT_METRO));
 
@@ -392,7 +407,7 @@ export function MapScreen() {
       {/* The sheet (build notes 3, 4.2; Kylie's answer, 8.1 item 20): with no chip picked, its collapsed bar reads
           "4 events · 94k ›" and opens the date page, and the list under it is the day's rows by time. A tapped chip
           puts the compact card on top with the rivals it is fighting under it (build notes 2, T1). */}
-      <section className={`sheet${selected || dayEvents.length > 0 ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={selected ? listTitle(selected) : 'This day'} aria-hidden={!selected && dayEvents.length === 0}>
+      <section className={`sheet${selected || dayEvents.length > 0 || hiddenCount > 0 ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={selected ? listTitle(selected) : 'This day'} aria-hidden={!selected && dayEvents.length === 0 && hiddenCount === 0}>
         <div className="sheet-top" ref={topRef}>
           <div
             className="sheet-grab"
@@ -462,6 +477,7 @@ export function MapScreen() {
                 ))}
             </ul>
           )}
+          {!selected && <HiddenLine count={hiddenCount} onShow={() => setShowAll(true)} />}
         </div>
       </section>
 

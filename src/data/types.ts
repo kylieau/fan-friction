@@ -360,6 +360,8 @@ export interface DateSearchHit {
   headline: string;
   /** The names that matched, such as "Dodgers · SoFi Stadium". */
   matched: string;
+  /** Every matching event is outside your crowd size range (build 5, item 6): listed under the Show line. */
+  hidden?: boolean;
 }
 
 // ---------- A night (forecast, then stamp) ----------

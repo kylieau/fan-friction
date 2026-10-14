@@ -87,7 +87,7 @@ export function drawSize(event: CrowdEvent): number | undefined {
  * expected draw by the low end of its range (Kylie, Oct 7, S1: so a borderline
  * game does not make a quiet night look busy); else the building.
  */
-function knownSize(event: CrowdEvent): number | undefined {
+export function knownSize(event: CrowdEvent): number | undefined {
   const counted = knownCrowdCount(event);
   if (counted != null) return counted;
   // A Ticketmaster listing that is neither a concert nor a league game (Arts & Theatre,

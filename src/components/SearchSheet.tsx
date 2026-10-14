@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SearchIcon } from './Icons';
 import { ReadTile } from './ReadTile';
+import { HiddenLine } from './HiddenLine';
 import { METROS } from '../config/metros';
 import {
   favoriteFor,
@@ -23,6 +24,11 @@ import {
   type Favorite,
   type FollowStatus,
   type Profile,
+  alwaysShownIds,
+  crowdRangeOf,
+  followingFeed,
+  passesCrowdRange,
+  type FeedItem,
 } from '../data';
 import { longLocalDate } from '../lib/dates';
 import { parseTypedDate } from '../lib/searchDate';
@@ -57,6 +63,18 @@ export function SearchSheet({
   const typedDate = parseTypedDate(trimmed, today);
   const signedIn = Boolean(getAccount());
 
+  // The crowd size range applies here too (build 5, item 6, "everywhere"): a date whose matching events are all
+  // outside it sits under the Show line. Your stubs and events friends are attending always count.
+  const [friends, setFriends] = useState<FeedItem[]>([]);
+  const [showAll, setShowAll] = useState(false);
+  useEffect(() => {
+    let current = true;
+    if (signedIn) followingFeed(300).then((list) => current && setFriends(list));
+    return () => {
+      current = false;
+    };
+  }, [signedIn]);
+
   useEffect(() => {
     if (trimmed.length < 2) {
       setHits(null);
@@ -64,11 +82,17 @@ export function SearchSheet({
     }
     let current = true;
     setHits(null);
-    searchAllDates(homeId, trimmed).then((list) => current && setHits(list));
+    setShowAll(false);
+    const log = getPersonalLog();
+    const range = crowdRangeOf(log);
+    const keep = alwaysShownIds(log, friends);
+    searchAllDates(homeId, trimmed, (event) => passesCrowdRange(event, range, keep)).then((list) => current && setHits(list));
     return () => {
       current = false;
     };
-  }, [homeId, trimmed]);
+  }, [homeId, trimmed, friends]);
+  const shownHits = (hits ?? []).filter((hit) => showAll || !hit.hidden);
+  const hiddenHits = showAll ? 0 : (hits ?? []).filter((hit) => hit.hidden).length;
 
   useEffect(() => {
     if (!signedIn || trimmed.length < PEOPLE_SEARCH_MIN) {
@@ -213,7 +237,7 @@ export function SearchSheet({
           <section className="search-group" aria-label="Events">
             <h3 className="search-group-title">Events</h3>
             <ul className="famous-list search-results">
-              {hits.slice(0, 12).map((hit) => (
+              {shownHits.slice(0, 12).map((hit) => (
                 <li key={`${hit.metroId}-${hit.date}`}>
                   <button type="button" className="famous-row" onClick={() => onPick(hit.date, hit.metroId)}>
                     <ReadTile rating={hit.rating} />
@@ -227,6 +251,7 @@ export function SearchSheet({
                 </li>
               ))}
             </ul>
+            <HiddenLine count={hiddenHits} noun="date" onShow={() => setShowAll(true)} />
           </section>
         )}
         {group('Teams', 'team')}

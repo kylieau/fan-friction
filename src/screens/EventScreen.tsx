@@ -10,6 +10,9 @@ import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
   estimateMark,
+  alwaysShownIds,
+  crowdRangeOf,
+  splitByRange,
   feelsLikeLabel,
   isOpenAir,
   seatsLine,
@@ -121,13 +124,20 @@ export function EventScreen() {
   // The people you follow at this event (Kylie, Oct 11): their answers, Interested included, on the event page.
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [friends, setFriends] = useState<FeedItem[]>([]);
+  // The same feed for the whole date: events friends are attending always count on the This day card (build 5, item 6).
+  const [dayFriends, setDayFriends] = useState<FeedItem[]>([]);
   useEffect(() => {
     let current = true;
     if (!account || !liveEvent) {
       setFriends([]);
+      setDayFriends([]);
       return;
     }
-    followingFeed(300).then((list) => current && setFriends(list.filter((f) => f.eventId === liveEvent.id)));
+    followingFeed(300).then((list) => {
+      if (!current) return;
+      setFriends(list.filter((f) => f.eventId === liveEvent.id));
+      setDayFriends(list.filter((f) => f.date === liveEvent.date));
+    });
     return () => {
       current = false;
     };
@@ -186,8 +196,9 @@ export function EventScreen() {
   const rivalVenue = (r: CrowdEvent) => (r.place.type === 'venue' ? (VENUES[r.place.venueId] ? venueNameOn(VENUES[r.place.venueId], r.date) : null) : r.place.name);
   // Straight-line miles from this venue to a rival's (build notes 3, 3.3: distance helps explain the pull).
   const rivalMiles = (r: CrowdEvent) => (r.place.type === 'venue' && VENUES[r.place.venueId] ? milesBetween(me.location, VENUES[r.place.venueId].location) : null);
-  // The day's events on the map and its biggest draw, for the This day card.
-  const dayEvents = day.events.filter(showsOnMap);
+  // The day's events on the map and its biggest draw, for the This day card; inside the crowd size range only
+  // (build 5, item 6, answer A). Up against above stays unfiltered (answer B).
+  const dayEvents = splitByRange(day.events.filter(showsOnMap), crowdRangeOf(log), alwaysShownIds(log, dayFriends)).shown;
   const dayCount = dayEvents.length;
   const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
 
