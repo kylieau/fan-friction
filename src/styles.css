@@ -7904,3 +7904,14 @@ button.back-link {
 .date-row-line {
   justify-content: space-between;
 }
+
+/* Date page: the crowd at the left of the line and the badges at the right of it, on one line. */
+.date-row-line {
+  flex-wrap: nowrap;
+}
+
+.date-row-line .event-tags {
+  flex-wrap: nowrap;
+  gap: 4px;
+  margin-left: auto;
+}
