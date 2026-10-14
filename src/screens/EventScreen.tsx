@@ -5,6 +5,7 @@ import { frictionVerdictTitle } from '../config/scoreLabels';
 import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
 import { TypeIcon } from '../components/TypeIcon';
+import { LevelPill } from '../components/LevelPill';
 import { ActivityLines, StatusLine } from '../components/ActivityLines';
 import { activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
@@ -12,6 +13,9 @@ import {
   drawSize,
   estimateMark,
   eventType,
+  setStubVisibility,
+  stubDefault,
+  stubLevel,
   alwaysShownIds,
   crowdRangeOf,
   splitByRange,
@@ -251,7 +255,15 @@ export function EventScreen() {
         </button>
         {you && (
           <span className="event-status">
-            <StatusLine kind={you.kind} share={youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} onTag={(tag) => navigate(tagPath(tag))} />
+            {/* Signed in, the line carries the stub's level as a pill, before and after the event (build 5, stub privacy;
+                board privacy-r2 4a–4b): "Watching · Anyone ⌄". Signed out it keeps the old Private / Friends word. */}
+            <StatusLine kind={you.kind} share={account && youRow ? undefined : youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} onTag={(tag) => navigate(tagPath(tag))} />
+            {account && youRow && (
+              <>
+                <span aria-hidden>·</span>
+                <LevelPill value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
+              </>
+            )}
             {you.kind !== 'interested' && (youRow?.userTags?.length ?? 0) > 0 && (
               <button type="button" className="link-button" onClick={() => setSheet(true)}>
                 Edit
@@ -260,7 +272,7 @@ export function EventScreen() {
           </span>
         )}
         {logged?.seats && !logged.watched && seatsLine(logged.seats) && <span className="event-seats">{seatsLine(logged.seats)}</span>}
-        {logged && <EntryLayer entry={logged} />}
+        {logged && <EntryLayer entry={logged} showLevel={false} />}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
 

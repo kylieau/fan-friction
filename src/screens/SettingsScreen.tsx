@@ -152,7 +152,10 @@ export function SettingsScreen() {
             <span>Default for new stubs</span>
             {visibility && <span className="settings-value">{VISIBILITY_WORDS[visibility]}</span>}
           </Link>
-          <p className="you-fine">New users start Private. Applies to new stubs.</p>
+          <Link to="/you/settings/privacy" className="settings-row settings-link">
+            <span>Change past stubs…</span>
+          </Link>
+          <p className="you-fine">Applies to new stubs. You can still change any single stub when you stub it, or later from the event page.</p>
         </div>
       )}
 

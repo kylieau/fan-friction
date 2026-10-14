@@ -20,15 +20,19 @@ import {
   venueNameOn,
   watchPlaceOf,
   watchShareOf,
+  setStubVisibility,
+  stubDefault,
+  stubLevel,
   type CrowdEvent,
   type EventPlace,
 } from '../data';
 import { shortLocalDate } from '../lib/dates';
 import { fullTitle } from '../lib/eventTitle';
 import type { ActivityKind } from '../lib/activity';
-import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
+import { BookmarkIcon, TicketIcon, TvIcon } from './Icons';
 import { RemoveConfirm } from './EntryLayer';
 import { TagChip } from './TagChip';
+import { LevelPill } from './LevelPill';
 import { TagsPanel } from './TagsPanel';
 import { SeatsRow } from './SeatsRow';
 
@@ -61,6 +65,9 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
   const watch = kind === 'watching' || kind === 'watched';
   const row = ahead ? plan : entry;
   const share = row && watch ? watchShareOf(row) : undefined;
+  // The stub's level (build 5, stub privacy); a watch's place is shared with approved followers unless it is Private.
+  const level = row ? stubLevel(row) : stubDefault();
+  const placeShare: 'private' | 'friends' = level === 'private' ? 'private' : 'friends';
   const place = row && watch ? watchPlaceOf(row) : undefined;
   const [typed, setTyped] = useState(place && !/^home$/i.test(place) ? place : '');
   const [typing, setTyping] = useState(false);
@@ -163,30 +170,21 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                 }}
               />
             )}
-            {watch && (
+            {/* Who sees this (build 5, stub privacy; board privacy-r2 3a–3c): one pill for Attending, Watching and
+                Interested, starting at your default. Signed out, a stub reaches nobody, so there is no pill. */}
+            {row && ahead && account && (
               <>
-                <div className="stub-choices" role="group" aria-label="Who sees it">
-                  <button
-                    type="button"
-                    className={`stub-choice${share === 'private' ? ' on' : ''}`}
-                    aria-pressed={share === 'private'}
-                    onClick={() => void details('private', place)}
-                  >
-                    <LockMark />
-                    Private
-                  </button>
-                  <button
-                    type="button"
-                    className={`stub-choice${share === 'friends' ? ' on' : ''}`}
-                    aria-pressed={share === 'friends'}
-                    onClick={() => void details('friends', place)}
-                  >
-                    <PeopleIcon size={18} />
-                    Friends
-                  </button>
+                <div className="stub-level">
+                  <span className="stub-level-label">Who sees this</span>
+                  <LevelPill value={level} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(event.id, next).then(setFailed)} />
                 </div>
-                {share === 'friends' && <p className="stub-helper">Approved friends will see where you're watching</p>}
-                {share && (
+                {level === 'private' && <p className="stub-helper">Only you will see this</p>}
+                {level !== 'private' && watch && <p className="stub-helper">Approved friends will see where you're watching</p>}
+              </>
+            )}
+            {watch && row && (
+              <>
+                {(
                   <>
                     <p className="stub-where">
                       Where? <span className="stub-where-optional">optional</span>
@@ -196,22 +194,22 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                         type="button"
                         className="filter-chip"
                         aria-pressed={Boolean(place && /^home$/i.test(place))}
-                        onClick={() => void details(share, place && /^home$/i.test(place) ? undefined : 'Home')}
+                        onClick={() => void details(placeShare, place && /^home$/i.test(place) ? undefined : 'Home')}
                       >
                         Home
                       </button>
                       {place && !/^home$/i.test(place) && (
-                        <button type="button" className="filter-chip" aria-pressed onClick={() => void details(share, undefined)}>
+                        <button type="button" className="filter-chip" aria-pressed onClick={() => void details(placeShare, undefined)}>
                           {place}
                         </button>
                       )}
                       {recent.map((p) => (
-                        <button key={p} type="button" className="filter-chip" onClick={() => void details(share, p)}>
+                        <button key={p} type="button" className="filter-chip" onClick={() => void details(placeShare, p)}>
                           {p} · recent
                         </button>
                       ))}
                       {others.map((p) => (
-                        <button key={`o-${p.place}`} type="button" className="filter-chip" onClick={() => void details(share, p.place)}>
+                        <button key={`o-${p.place}`} type="button" className="filter-chip" onClick={() => void details(placeShare, p.place)}>
                           {p.place} · {p.people} here
                         </button>
                       ))}
@@ -231,7 +229,7 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                         onChange={(ev) => setTyped(ev.target.value)}
                         onBlur={() => {
                           setTyping(false);
-                          if (typed.trim() && typed.trim() !== place) void details(share, typed);
+                          if (typed.trim() && typed.trim() !== place) void details(placeShare, typed);
                         }}
                         onKeyDown={(ev) => ev.key === 'Enter' && (ev.target as HTMLInputElement).blur()}
                         aria-label="Where you're watching"

@@ -5,7 +5,11 @@ import {
   isManualEntry,
   ownEntryFacts,
   removeEntry,
-  setEntryPrivate,
+  setEntryVisibility,
+  stubDefault,
+  stubLevel,
+  getAccount,
+  subscribeAccount,
   setRowTags,
   setEntrySeats,
   subscribePersonalLog,
@@ -22,6 +26,7 @@ import { FactList } from './FactList';
 import { TagChip } from './TagChip';
 import { TagsPanel } from './TagsPanel';
 import { SeatsRow } from './SeatsRow';
+import { LevelPill } from './LevelPill';
 
 const LABELS: Record<keyof EntryEdit, string> = {
   review: 'Review',
@@ -36,7 +41,8 @@ const PRIVATE: (keyof EntryEdit)[] = ['with'];
  * quiet Edit. Nothing here touches the read; the no-results rule holds
  * because the formula never looks at these fields.
  */
-export function EntryLayer({ entry }: { entry: Entry }) {
+export function EntryLayer({ entry, showLevel = true }: { entry: Entry; /** Off on the event page, whose status line carries the pill. */ showLevel?: boolean }) {
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [editing, setEditing] = useState(false);
   const [tagging, setTagging] = useState(false);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
@@ -92,16 +98,8 @@ export function EntryLayer({ entry }: { entry: Entry }) {
         <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
           {empty ? 'Add a review, who you went with…' : 'Edit'}
         </button>
-        {/* One entry can stay private whatever the visibility switch says (build notes 2, section 4). */}
-        <button
-          type="button"
-          className="link-button entry-private"
-          role="switch"
-          aria-checked={Boolean(entry.private)}
-          onClick={() => setEntryPrivate(entry.id, !entry.private)}
-        >
-          {entry.private ? 'Private · only you' : 'Keep this one private'}
-        </button>
+        {/* "Keep this one private" grew into the stub's level (build 5, stub privacy): Anyone / Friends / Private. */}
+        {showLevel && account && <LevelPill value={stubLevel(entry)} defaultLevel={stubDefault()} onChange={(next) => setEntryVisibility(entry.id, next)} />}
       </span>
     </section>
   );
