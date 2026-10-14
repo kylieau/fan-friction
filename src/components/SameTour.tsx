@@ -33,8 +33,9 @@ export function SameTour({ event }: { event: CrowdEvent }) {
   }, [event]);
   if (!rows || rows.length === 0) return null;
   return (
-    <section className="same-tour" aria-label="Other dates">
-      <h2 className="you-heading">{event.performer ? 'Also on' : 'Same homestand'}</h2>
+    <section className="same-tour" aria-label="More dates">
+      {/* One heading for every kind of event (build 5, item 7, C2). */}
+      <h2 className="you-heading">More dates</h2>
       <div className="same-tour-row">
         {rows.map(({ event: other, rating }) => (
           <Link key={other.id} to={datePath(other.date, other.metroId, other.id)} className="same-tour-cell">
