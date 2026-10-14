@@ -60,7 +60,7 @@ import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
-import { listTitle, mapTitle } from '../lib/eventTitle';
+import { fullTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
 import { comparePath, datePath, openedMetroId, eventPath, tagPath } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
@@ -213,7 +213,7 @@ export function EventScreen() {
       <header className="event-head">
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(e).key} size={18} className="title-type-icon" />
-          {listTitle(e)}
+          {fullTitle(e)}
         </h1>
         {stakesLine && <p className="event-stakes">{stakesLine}</p>}
         <div className="event-sub">
@@ -412,7 +412,7 @@ export function EventScreen() {
 
       <ShareCard
         dateLabel={longLocalDate(date)}
-        title={listTitle(e)}
+        title={fullTitle(e)}
         line={a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : ''}
         friction={a?.friction ?? null}
         rating={day.rating ? day.rating.rating : null}

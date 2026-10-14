@@ -34,7 +34,7 @@ import {
 import { VENUES, venueNameOn } from '../data';
 import { crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
-import { mapTitle } from '../lib/eventTitle';
+import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
 import { FeedRow } from './FollowingScreen';
@@ -105,7 +105,7 @@ export function HomeScreen() {
     const seen = new Set(attending.map((row) => row.eventId));
     const theirs = sorted
       .filter((e) => !seen.has(e.id) && favorites.some((fav) => eventMatches(e, fav)))
-      .map((e) => ({ key: e.id, title: mapTitle(e, everywhere), date: e.date, metroId: e.metroId, eventId: e.id, venue: venueOf(e), start: e.start ?? undefined, attending: false }));
+      .map((e) => ({ key: e.id, title: listTitle(e), date: e.date, metroId: e.metroId, eventId: e.id, venue: venueOf(e), start: e.start ?? undefined, attending: false }));
     return [...attending, ...theirs].slice(0, ROWS);
   }, [log, everywhere, today]);
 
@@ -192,7 +192,7 @@ export function HomeScreen() {
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
                 <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link">
-                  <RowBody event={e} title={mapTitle(e, tonight)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
+                  <RowBody event={e} title={listTitle(e)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
                 </Link>
               </li>
             ))}

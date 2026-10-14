@@ -3,7 +3,9 @@
 // styling is unusual (kept here by hand) and acronyms of four letters or fewer.
 
 /** Names written exactly as the act writes them. Add to this list; never guess at one. */
-export const OFFICIAL_STYLING = ['for KING & COUNTRY', 'deadmau5', 'MØ', 'BAND-MAID', 'LANY', 'JPEGMAFIA', 'MGMT', 'AJR', 'BTS', 'TLC', 'LP', 'KISS', 'ABBA', 'RÜFÜS DU SOL'];
+// KATSEYE, $UICIDEBOY$ and UB40 are protected by name (build 5, item 15, N21: one styling per artist); BEND OVA is
+// written that way in Kylie's approved N27 example.
+export const OFFICIAL_STYLING = ['KATSEYE', '$UICIDEBOY$', 'UB40', 'BEND OVA', 'for KING & COUNTRY', 'deadmau5', 'MØ', 'BAND-MAID', 'LANY', 'JPEGMAFIA', 'MGMT', 'AJR', 'BTS', 'TLC', 'LP', 'KISS', 'ABBA', 'RÜFÜS DU SOL'];
 
 const OFFICIAL = new Map(OFFICIAL_STYLING.map((name) => [name.toLowerCase(), name]));
 

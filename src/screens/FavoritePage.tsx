@@ -47,7 +47,7 @@ import {
   type TeamGame,
 } from '../data';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
-import { mapTitle, teamRelativeTitle } from '../lib/eventTitle';
+import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
@@ -152,7 +152,6 @@ export function FavoritePage() {
   const nearHome = matching.filter((e) => e.metroId === metro.id);
   const elsewhere = matching.filter((e) => e.metroId !== metro.id);
   const byId = useMemo(() => new Map(everywhere.map((e) => [e.id, e])), [everywhere]);
-  const sameDate = (event: CrowdEvent) => everywhere.filter((e) => e.metroId === event.metroId && e.date === event.date);
 
   const toCome = useMemo(() => (schedule ?? []).filter((g) => g.date >= today && !g.score).sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))), [schedule, today]);
   const played = useMemo(() => (schedule ?? []).filter((g) => g.score).sort((a, b) => b.date.localeCompare(a.date)), [schedule]);
@@ -400,7 +399,7 @@ export function FavoritePage() {
                   <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
                     <Read rating={readAt(event.metroId, event.date)} />
                     <span className="log-main">
-                      <span className="log-title">{mapTitle(event, sameDate(event))}</span>
+                      <span className="log-title">{listTitle(event)}</span>
                       <span className="log-facts">
                         {shortLocalDate(event.date)}
                         {event.start ? ` · ${clockTime(event.start)}` : ''}

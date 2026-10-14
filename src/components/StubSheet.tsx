@@ -24,7 +24,7 @@ import {
   type EventPlace,
 } from '../data';
 import { shortLocalDate } from '../lib/dates';
-import { listTitle } from '../lib/eventTitle';
+import { fullTitle } from '../lib/eventTitle';
 import type { ActivityKind } from '../lib/activity';
 import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
 import { RemoveConfirm } from './EntryLayer';
@@ -137,7 +137,7 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
         ) : (
           <>
             <h2 className="stub-sheet-title">+ Stub it</h2>
-            <p className="stub-sheet-sub">{[listTitle(event), shortLocalDate(event.date), venue].filter(Boolean).join(' · ')}</p>
+            <p className="stub-sheet-sub">{[fullTitle(event), shortLocalDate(event.date), venue].filter(Boolean).join(' · ')}</p>
             <div className="stub-choices" role="group" aria-label={ahead ? 'Your plan' : 'Your stub'}>
               {ahead ? (
                 <>
