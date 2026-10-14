@@ -15,10 +15,13 @@ Each item gives what we do, why, and the options we turned down.
 - Unknown crowd size shows blank on rows, chips and the selected card, and "— Size unknown" on the event page (Mosaic, Oct 14).
 - Crowd size range setting in You › Settings › Events (Mosaic, Oct 14).
 - Kylie's city round 2 review form answers (Oct 14).
+- Starred cities in the home picker, reused as Settings › Home & cities (item 8; Mosaic v4, Oct 14).
+- Settings as one list: Account, Location, Events, Privacy, then Favorites, Your events, App (item 9; Mosaic v4, Oct 14).
+- "~" on every estimated crowd, and a POP-UPS section in About this estimate (item 10; Mosaic v4, Oct 14).
 
 Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). C2 ("More dates") and D2 ("WEEK OF OCT 26 · LINEUP") were also accepted on Oct 14. No open questions remain from this round.
 
-Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3.
+Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3. The "~" question is closed (item 10).
 
 ## 1. Concerts Ticketmaster misses
 
@@ -146,6 +149,7 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 - **Context:** Favorites are settled as separate from home (one home city, with its house icon). Still open: where they show, how you add one, any limit, and where they're stored.
 - **Why:** Same pattern as home today, so nothing waits on accounts. Starring a row is the quickest way to add one. Keeping it on the device matches how home works and avoids building into an account spec that isn't written yet.
 - **Rejected:** Same, but stored in the account from the start: Needs the account spec first, so it waits; Same as my lean, but capped at 5: Keeps the switcher short
+- **Adjusted (Oct 14, item 8):** you star cities in the home picker, on first open and in Settings › Home & cities. The switcher order and stars are already built (`AreaSwitcher.tsx:35-41`). UI copy says "starred".
 - **Her notes (verbatim):** "i want the setting/where you add a favorite to be in the same place you mark home (upon open and then in settings)"
 
 #### N3 · "Change home…": switcher row or Settings only?
@@ -854,7 +858,9 @@ Rejected: big buttons on the sheet; editing privacy only inside the sheet; a seg
 >
 > Write a migration; don't edit old ones.
 
-Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box; drawn with two levels, so add Anyone to the menu and the bulk sheet). The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
+Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box; drawn with two levels, so add Anyone to the menu and the bulk sheet).
+
+Board r2: `/workspace/ff-gap-review/mosaic/privacy/privacy-r2.png` (three levels). The live Stub it sheet's "Who sees it" control is two big buttons and only shows for Watching (`StubSheet.tsx:168-187`). Replace it with the pill for Attending, Watching and Interested. The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
 
 ### 2. Add to calendar: option B
 
@@ -1001,6 +1007,70 @@ Context: today concerts and other events with a performer, residencies included,
 Why: "homestand" is sports language and doesn't fit concerts, residencies or every team (Kylie). One plain heading works for every kind of event.
 
 Rejected: keeping "Same homestand" for sports and "Also on" for shows; "Other nights"; "Also on" for everything.
+
+### 8. Starred cities in the home picker (v4)
+
+**Build instruction:** Rework the existing home picker (`src/components/HomePicker.tsx`); don't build a new one.
+
+What it does today (main 635a164): `HomePicker.tsx:9-37` shows "Where's home?" (`:20`) and a plain list of every city with events (`metrosWithEvents()`, `:10`). Tapping a city sets home and closes (`choose`, `:12-15`). There's no search and no star. It opens on first launch (`src/App.tsx:80`) and, unchanged, from Settings › Home city (`src/screens/SettingsScreen.tsx:169-176`). Stars already exist on the city switcher: `src/components/AreaSwitcher.tsx:35-41` orders home, then starred cities, then the rest, with a star button on each non-home row (`:86-100`), stored on the device by `favoriteCitiesOf` / `toggleFavoriteCity` (`src/data/personalLog.ts:1031-1040`). **Done:** the switcher order and its stars; don't rebuild them.
+
+Changes:
+1. Add a **search field** at the top of the picker that filters the city list as you type.
+2. Add a **star on every row**, with a **44pt** tap target, using the existing `toggleFavoriteCity`. Tapping the star stars or unstars the city; it doesn't set home.
+3. **Tapping the row** (not the star) sets Home, as `choose` does today.
+4. **Order:** Home on top (house mark), starred cities pinned under it, then the rest. Same order as the switcher.
+5. **Reuse the same list as Settings › Home & cities** (item 9). There, it opens as a sub-page instead of the first-open dialog, and setting home doesn't close it.
+6. **Wording:** say **"starred"** in UI copy, never "favorites" for cities (the Favorites tab and section are about teams and artists).
+
+Why: Kylie's N2 note asks for cities to be starred in the same place you set home, on first open and in Settings. One list does both jobs, and its order matches the switcher, so nothing new has to be learned.
+
+Rejected: a separate "Any other cities?" step after picking home (`favorite-cities-d-alt-separate-step.png`). It adds a screen to first open for something a star on the same row already does.
+
+**Adjusts N2** (Review form answers): N2's "pinned group under home, star on each row, no limit, on the device" stands, and the switcher part is built. This item adds the part N2 left open: where you add stars (the home picker, on first open and in Settings).
+
+Boards: `/workspace/ff-gap-review/mosaic/b5/v4/favorite-cities.png`, `favorite-cities-a-first-open-lean.png`, `favorite-cities-b-home-set.png`, `favorite-cities-c-settings-home-cities.png`; live reference `favorite-cities-live-switcher.png`; rejected `favorite-cities-d-alt-separate-step.png` (on the box).
+
+### 9. Settings as one list (v4)
+
+**Build instruction:** Restructure `src/screens/SettingsScreen.tsx` into one list in the live row style (`.settings-row`, `src/styles.css:1394`). Don't restyle existing rows.
+
+What it does today: separate blocks, each with a `settings-heading` (13px / 800 uppercase, `src/styles.css:1386-1390`): Account (`SettingsScreen.tsx:80`), Profile (`:129`), Blocked (`:136`), Favorites (`:154`), Your events (`:161`), Home city (`:170-176`, opens `HomePicker`), App (`:179`). There's no Location, Events or Privacy section yet; the privacy default lives on the profile edit screen (`src/screens/ProfileEditScreen.tsx:14-26`).
+
+The list, in order:
+1. **Account** (the existing rows).
+2. **Location:** one row, **"Home & cities"**, showing the home city and the count starred (e.g. "Los Angeles · 3 starred ›"). It opens the item 8 list as a sub-page. Replaces the Home city block (`:169-176`).
+3. **Events:** **"Crowd size"** row (item 6), opening its sub-page.
+4. **Privacy:** the default for new stubs and **"Change past stubs…"**, using **Anyone / Friends / Private** as on `/workspace/ff-gap-review/mosaic/privacy/privacy-r2.png` (stub privacy item 1).
+5. Then the existing **Favorites**, **Your events** and **App** sections, unchanged.
+
+Detail controls (the city list, the crowd slider, the privacy pickers) go on **sub-pages**, which use the live 13px / 800 section headers.
+
+**Adjusts** item 6 (Events section) and stub privacy item 1 (Settings › Privacy): both now sit in this one list, and their controls move to sub-pages.
+
+Why: one scannable list matches the live screen, each row shows its current value, and the detail stays one tap away.
+
+Rejected: grouped cards (`settings-full-alt-grouped-cards.png`). They restyle the live screen and add visual weight for no gain.
+
+Boards: `/workspace/ff-gap-review/mosaic/b5/v4/settings-full.png`, `settings-full-lean-one-list.png`, `settings-full-privacy-subpage.png`; live reference `settings-full-live.png`; rejected `settings-full-alt-grouped-cards.png` (on the box).
+
+### 10. "~" on every estimated crowd (v4)
+
+**Build instruction:** Put **"~"** in front of every estimated crowd on compact surfaces, e.g. **"~55k"**.
+
+What it does today: compact surfaces show estimates with no marker. `crowdShort` (`src/map/crowdPoints.ts:102-120`) adds " est" only when `withEst` is true, and the row figure (`CrowdFigure`, `src/components/EventTags.tsx:68-77`) and map chip label (`src/map/CrowdLayer.tsx:506`) both pass `false`. The selected card prints `crowdThousands(size)` bare (`src/components/ChipCard.tsx:53`). The event page already shows "~" for estimates, but "Up to N" for playoff building estimates (`src/screens/EventScreen.tsx:337`). The "About this estimate" sheet (`EventScreen.tsx:536-560`) has Games, Playoff games, Shows and Counts sections; there's no pop-up section.
+
+Changes:
+1. **Compact surfaces** (map chips, list rows, the selected card): prefix **"~"** whenever the highlighted crowd is an estimate. Do it once in `crowdShort` (replace the " est" suffix with a "~" prefix) and in `ChipCard.tsx:53`. Announced and Final figures stay bare.
+2. **Event page:** **"~380 Estimated"**, plus an explainer line under it, e.g. **"Sold out · 95% of 400 capacity"**. Replace the "Up to" form at `EventScreen.tsx:337` with "~".
+3. **About this estimate sheet:** add a **POP-UPS** section: 80% of capacity, or 95% if sold out or waitlisted. Same rule as [Pop-up sizing](#pop-up-sizing) in item 1.
+
+Why: one short mark, the same everywhere, tells you a number is an estimate without crowding small rows. The event page has room to say how the number was made.
+
+Rejected: an "est." suffix (`estimated-crowds-alt-est-suffix-rows.png`); a separate label word; a different color; "Up to 400".
+
+This closes the open "~" question. It doesn't change the NLCS G3 flag below, which is about which figure is highlighted.
+
+Boards: `/workspace/ff-gap-review/mosaic/b5/v4/estimated-crowds.png`, `estimated-crowds-lean-map-chip.png`, `estimated-crowds-lean-list-row.png`, `estimated-crowds-lean-selected-card.png`, `estimated-crowds-lean-event-crowd.png`, `estimated-crowds-lean-about-estimate.png`; live references `estimated-crowds-live-map.png`, `estimated-crowds-live-event-crowd.png`; rejected `estimated-crowds-alt-est-suffix-rows.png` (on the box).
 
 ### On hold (Kylie working with Claude)
 
