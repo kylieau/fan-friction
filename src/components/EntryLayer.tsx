@@ -99,7 +99,7 @@ export function EntryLayer({ entry, showLevel = true }: { entry: Entry; /** Off 
           {empty ? 'Add a review, who you went with…' : 'Edit'}
         </button>
         {/* "Keep this one private" grew into the stub's level (build 5, stub privacy): Anyone / Friends / Private. */}
-        {showLevel && account && <LevelPill value={stubLevel(entry)} defaultLevel={stubDefault()} onChange={(next) => setEntryVisibility(entry.id, next)} />}
+        {showLevel && account && <LevelPill down value={stubLevel(entry)} defaultLevel={stubDefault()} onChange={(next) => setEntryVisibility(entry.id, next)} />}
       </span>
     </section>
   );

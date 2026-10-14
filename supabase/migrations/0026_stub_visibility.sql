@@ -17,7 +17,7 @@
 --
 -- The backfill never widens anyone's exposure: each existing row gets the level that matches who can
 -- read it today, or a narrower one where the build notes map an old choice ("Private" on a watch) to Private.
---   entries: kept private → Private; account "Only me" → Private; watch "Private" → Private; watch "Friends" →
+--   entries: a level the app already wrote → that level; kept private → Private; account "Only me" → Private; watch "Private" → Private; watch "Friends" →
 --            Friends; account "People I approve" → Friends; account "Anyone" → Anyone.
 --   plans:   kept private does not exist; account "Only me" → Private; watch "Private" → Private; else Friends
 --            (today only approved followers read plans, even on "Anyone").
@@ -25,11 +25,11 @@
 -- "Only me" account's Friends watch stays Private, as it is read today.
 --
 -- PREVIEW (read-only; run this first if you want the counts, then run the whole file):
---   select p.visibility as account, count(*) filter (where e.private) as kept_private,
+--   select p.visibility as account, e.data->>'visibility' as level_from_app, count(*) filter (where e.private) as kept_private,
 --          count(*) filter (where not e.private and e.data->>'watchShare' = 'friends') as friends_watch,
 --          count(*) as entries
 --   from public.entries e join public.profiles p on p.id = e.user_id
---   where e.visibility is null group by p.visibility;
+--   where e.visibility is null group by p.visibility, e.data->>'visibility';
 
 -- ---------- columns ----------
 alter table public.entries add column if not exists visibility text;
@@ -72,6 +72,7 @@ create trigger plans_visibility before insert or update on public.plans
 -- ---------- backfill (the column only; data is untouched, so 0020's keep-newest trigger lets it through) ----------
 update public.entries e
 set visibility = case
+  when e.data ->> 'visibility' in ('anyone', 'friends', 'private') then e.data ->> 'visibility'
   when e.private then 'private'
   when p.visibility = 'only_me' then 'private'
   when e.data ->> 'watchShare' = 'private' then 'private'
@@ -84,6 +85,7 @@ where p.id = e.user_id and e.visibility is null;
 
 update public.plans pl
 set visibility = case
+  when pl.data ->> 'visibility' in ('anyone', 'friends', 'private') then pl.data ->> 'visibility'
   when p.visibility = 'only_me' then 'private'
   when pl.data ->> 'watchShare' = 'private' then 'private'
   else 'friends'

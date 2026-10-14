@@ -261,7 +261,7 @@ export function EventScreen() {
             {account && youRow && (
               <>
                 <span aria-hidden>·</span>
-                <LevelPill value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
+                <LevelPill down value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
               </>
             )}
             {you.kind !== 'interested' && (youRow?.userTags?.length ?? 0) > 0 && (

@@ -17,7 +17,7 @@ export function levelWord(level: StubVisibility): string {
  * a menu of Anyone / Friends / Private with your default marked, and beside it "Your default", or a gold "Not your
  * default" when this stub differs. `bare` drops that side label (the event page's status line keeps it short).
  */
-export function LevelPill({ value, defaultLevel, onChange, bare = false }: { value: StubVisibility; defaultLevel: StubVisibility; onChange: (level: StubVisibility) => void; bare?: boolean }) {
+export function LevelPill({ value, defaultLevel, onChange, bare = false, down = false }: { value: StubVisibility; defaultLevel: StubVisibility; onChange: (level: StubVisibility) => void; bare?: boolean; /** Open the menu below (near the top of a page); above is for the bottom sheet. */ down?: boolean }) {
   const [open, setOpen] = useState(false);
   const root = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -45,7 +45,7 @@ export function LevelPill({ value, defaultLevel, onChange, bare = false }: { val
       </button>
       {!bare && <span className={`level-default${value === defaultLevel ? '' : ' differs'}`}>{value === defaultLevel ? 'Your default' : 'Not your default'}</span>}
       {open && (
-        <span className="level-menu" role="menu">
+        <span className={`level-menu${down ? ' down' : ''}`} role="menu">
           {LEVELS.map((l) => (
             <button
               key={l.level}

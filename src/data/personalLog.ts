@@ -312,7 +312,8 @@ function manualEntryFrom(night: ManualNight, homeMetroId: string | null, id: str
     ...(game && homeMetroId && metroId !== homeMetroId ? { away: true } : {}),
     ...(night.userTags?.length ? { userTags: night.userTags } : {}),
   };
-  return entry;
+  // A hand-added stub takes your default level like any other (build 5, stub privacy).
+  return withLevel(entry, stubDefault());
 }
 
 /**
@@ -338,6 +339,8 @@ export function addManualPlan(night: ManualNight, homeMetroId: string | null): P
       ...(night.competition ? { competition: night.competition } : {}),
       ...(metroId ? {} : { elsewhere: true }),
     },
+    // Your default level, like any other plan (build 5, stub privacy).
+    visibility: stubDefault(),
   };
   commit({ ...snapshot, plans: [...snapshot.plans, plan] });
   return plan;
@@ -476,7 +479,8 @@ export function stubLevel(row: Pick<Entry, 'visibility' | 'private' | 'watchShar
   if (row.private) return 'private';
   if (row.watchShare === 'private') return 'private';
   if (row.watchShare === 'friends') return 'friends';
-  return 'private';
+  // No level of its own: the profile's switch decides, which is what the database reads for it too.
+  return stubDefault();
 }
 
 /** The level on a row, with the older `private` flag kept in step for copies of the app that only read it. */
@@ -940,7 +944,8 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
         // Once only (R11): a plan that already became an entry (this run or an earlier one) is just cleared.
         const id = `manual-${plan.id.replace(/^plan-manual-/, '')}`;
         if (!snapshot.added.some((entry) => entry.id === id) && !added.some((entry) => entry.id === id)) {
-          added.push(manualEntryFrom(nightFromPlan(plan), homeMetroId, id));
+          const entry = manualEntryFrom(nightFromPlan(plan), homeMetroId, id);
+          added.push(plan.visibility ? withLevel(entry, plan.visibility) : entry);
         }
         settledIds.add(plan.id);
       }
