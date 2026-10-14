@@ -196,8 +196,8 @@
 | Fair (daily) | Hand list, one per day, same name every day. | `{title}` | State Fair of Texas | State Fair of Texas | 2026-10-13-state-fair-texas | OK (as coded) | ls:59-72 |
 | Convention (multi-day) | Day number written into the title by hand. | `{title}` = "{name} (day N of M)" | New York Comic Con (day 1 of 4) | New York Comic Con (day 1 of 4) | 2026-10-08-nycc | OK as hand-written; no general rule | ls:99-102 |
 | Pop-up | No kind, tag or rule. | — | — | — | no example in data | NO RULE YET | — |
-| Live broadcast / watch party | Same as Special: title as written. | `{title}` | Ohio State @ Michigan, at Cosm | Ohio State @ Michigan, at Cosm | Kylie's log entry 2025-11-29 (simulated as an event) | NO RULE YET | eT:184 |
-| Hand-added log entry | Logs use listTitle for feed events; hand entries keep the typed title. | `listTitle(event)` or typed title | — | e.g. "Pomona-Pitzer WBB vs. Babson" | kylieLog.ts | Mixed: hand titles still use "vs."/"@" | pL:531, 548, 563, 844 |
+| Live broadcast / watch party | Same as Special: title as written. | `{title}` | A game at a shared-screening venue | Same | Hand-added sample (details kept privately) | NO RULE YET | eT:184 |
+| Hand-added log entry | Logs use listTitle for feed events; hand entries keep the typed title. | `listTitle(event)` or typed title | — | A typed college game title | Private sample data (not included here) | Mixed: hand titles still use "vs."/"@" | pL:531, 548, 563, 844 |
 | Undefined (TM genre) | Not a naming case: TM's "Undefined" only changes the type, the name is still the title. | `{title}` | BVD Boston presents BEND OVA ( 21+ ) | same | TM Special/Undefined | OK (type issue, see Table 1) | — |
 
 ## Gaps and contradictions
@@ -218,4 +218,4 @@
 14. Genre spelling drift (Rock/rock, Hip-Hop/Rap/hip-hop/hip hop) quietly changes the audience-overlap score.
 15. Nothing in the database limits kind, sport, genre or tag. Any word can get in.
 
-<sub>File key: eT = src/lib/eventTitle.ts · rL = src/data/sources/roundLabel.ts · tm = src/data/sources/ticketmasterSource.ts · mlb = src/data/sources/mlbSource.ts · ht = src/data/sources/hockeytechSource.ts · espn = src/data/sources/espnSource.ts · pL = src/data/personalLog.ts · tI = src/map/typeIcons.ts · AE = src/screens/AddEntryScreen.tsx · cp = src/data/competitions.ts · ls = src/data/seed/listings2026.ts · kL = src/data/seed/kylieLog.ts · ov = src/data/formula/overlap.ts · rd = src/data/read.ts</sub>
+<sub>File key: eT = src/lib/eventTitle.ts · rL = src/data/sources/roundLabel.ts · tm = src/data/sources/ticketmasterSource.ts · mlb = src/data/sources/mlbSource.ts · ht = src/data/sources/hockeytechSource.ts · espn = src/data/sources/espnSource.ts · pL = src/data/personalLog.ts · tI = src/map/typeIcons.ts · AE = src/screens/AddEntryScreen.tsx · cp = src/data/competitions.ts · ls = src/data/seed/listings2026.ts · private sample data is excluded · ov = src/data/formula/overlap.ts · rd = src/data/read.ts</sub>

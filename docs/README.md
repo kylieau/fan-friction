@@ -2,8 +2,8 @@
 
 | Folder | What it holds |
 |---|---|
-| `product/` | What the app is and what Kylie has decided: `direction.md`, the decision logs, the build brief, proposals and plans, her logs, UX notes, the tester kit. |
-| `reference/` | How things work: `formula-v4.md` (the live formula), data sources, the new-city checklist, test nights and ratings, researched events, the schedule archive notes. |
+| `product/` | What the app is and what Kylie has decided: `direction.md`, the decision logs, the build brief, proposals and plans, UX notes, the tester kit. Personal logs are kept under ignored `private/`. |
+| `reference/` | How things work: `formula-v4.md` (the live formula), data sources, the new-city checklist, public test nights and ratings, the schedule archive notes. |
 | `checks/` | Files the scripts write or read at these exact paths: `expected-draw-check.md`, `postseason-check.md`, `distance-check.md`, `promo-history-rows.csv`. Don't rename them. |
 | `research/city-builds/<city>/` | Each city's city-type and venue-table prompts and answers. Two models' answers sit side by side with `-claude` and `-codex` suffixes. `los-angeles/` and `seattle/` also hold the prompts the new-city checklist uses as templates; `next-cities/` is the cross-city scan. |
 | `research/topics/` | Research that isn't one city's build: expected draws, hard access, postseason, venue egress, promo history, concert venue figures, teams with no feed, the Ticketmaster price research. |

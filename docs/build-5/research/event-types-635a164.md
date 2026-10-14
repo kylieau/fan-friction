@@ -33,7 +33,7 @@ An event's type lives in four separate places, which don't line up one-to-one:
 | `game` | the sport label (see §5) | "Game" | the sport's icon, else ticket | 427 | 1,444 |
 | `show` | "Concert" | "Show" | `concert` (music note) | 745 | 2,261 |
 | `festival` | "Festival" | "Festival" | `festival` (flag) | 0 | 1 (ComplexCon, hand seed in archive) |
-| `live-broadcast` | "Live Broadcast" | "Live broadcast" | ticket (`special` fallback) | 0 | 0 (1 hand seed in `src/data/seed/kylieLog.ts:288`) |
+| `live-broadcast` | "Live Broadcast" | "Live broadcast" | ticket (`special` fallback) | 0 | 0 (the historical personal example is retained privately) |
 | `special` | "Special" | "Special event" | `special` (ticket) | 303 | 738 |
 
 - Type fact labels come from `eventTypeLabel` (`src/data/personalLog.ts:214-221`). The event page adds them as the "Type" fact (`personalLog.ts:493-497`).

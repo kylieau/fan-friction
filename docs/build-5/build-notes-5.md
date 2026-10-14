@@ -1294,7 +1294,7 @@ Sources: the review `docs/build-5/research/naming-review-oct14.html` (29 issues;
 #### Types (item 11)
 
 **N01 · Cosm is a Watch party (review #05; lean).**
-- Today: `eventTypeLabel` returns "Live Broadcast" (`personalLog.ts:216`), other screens say "Live broadcast" (`personalLog.ts:558, 976`; Add form `src/screens/AddEntryScreen.tsx:38`). The seed title is "Ohio State @ Michigan, at Cosm" (`src/data/seed/kylieLog.ts:286`).
+- Today: `eventTypeLabel` returns "Live Broadcast" (`personalLog.ts:216`), other screens say "Live broadcast" (`personalLog.ts:558, 976`; Add form `src/screens/AddEntryScreen.tsx:38`). The personal log's shared-screening example is retained in the ignored private log source.
 - Change: type `watch.broadcast`, label **Watch party** on every screen and the Add form. Title "Ohio State at Michigan · Watch party", venue Cosm on the page. Fix the seed title. Check one Cosm listing first; if it's sold as a screening, raise it before shipping.
 - Why: fans go to Cosm to watch together; "broadcast" is the wrong word, and ", at Cosm" reads as a second location.
 - Rejected: Live screening; keeping "Live broadcast" with fixed casing.

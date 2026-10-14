@@ -112,7 +112,7 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 - `docs/product/build-brief.md`: what to build, decisions already made, open questions.
 - `docs/product/product-decisions.md`: the product rules behind each screen.
 - `docs/reference/test-nights-and-ratings.md`: the 13 seeded nights, the rating recipe and the ratings to hardcode.
-- `docs/product/kylie-logs.md` and `docs/reference/researched-events.md`: real sample data for Your nights and event screens.
+- Personal event history and its supporting research live only under the git-ignored `private/kylie-log/` folder; never add attended lists to `docs/` or source files.
 - `design/wireframes/`: the current mockups (HTML boards, example night Fri Oct 25, 2024). Match their layout and feel; the palette and fonts are in the brief.
 
 ## Working rules

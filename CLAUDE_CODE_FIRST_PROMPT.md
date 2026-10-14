@@ -17,7 +17,7 @@ Wait for my go-ahead on that plan. Then build in this order, committing after ea
 - Step 2: the data layer with the 13 seeded test nights (hardcoded ratings from `docs/reference/test-nights-and-ratings.md`), built so live sources can plug in later.
 - Step 3: the Map in Crowds mode (heat map, Squeeze tags, the star, SOLD OUT tags, night score) and the Event screen, matching the mockups.
 - Step 4: the Nights tab (shaded calendar, Famous nights).
-- Step 5: the You tab (Plans and Your nights) using my logs in `docs/product/kylie-logs.md` as sample data, with team + sport filters and rough dates.
+- Step 5: the You tab (Plans and Your nights) using the private sample log from `private/kylie-log/attended-events.md`, with team + sport filters and rough dates.
 - Step 6: Traffic mode (estimates only).
 - Step 7: plug in live MLB schedules and results so Tonight shows real October games. They show "Not rated yet" until the rating formula exists.
 - Step 8: build the rating formula from the six-factor recipe and check that it reproduces the 13-night table.
