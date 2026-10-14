@@ -1,6 +1,6 @@
 # Build 5 notes
 
-Grounded against main 635a164, Oct 14, 2026 (fetched 1:20 AM PT; main's last commit 12:23 AM PT). Each item below has **Today on main:** (what exists now, with file:line refs at that commit) and **Change:** (the exact delta).
+Grounded against main 635a164, Oct 14, 2026 (fetched 1:20 AM PT; main's last commit 12:23 AM PT). Written as instructions to the builder: each item leads with what to change, starting from the code as it is, followed by short context on what exists today (file:line refs at that commit).
 
 Each item gives what we do, why, and the options we turned down.
 
@@ -10,12 +10,12 @@ Each item gives what we do, why, and the options we turned down.
 - Add to calendar, option B: an icon button beside "+ Stub it" opens a chooser (item 3; Mosaic, Oct 13).
 - Stub privacy, Venmo-style (Mosaic, Oct 13).
 - Date page r3 (Mosaic, Oct 14).
-- "THIS WEEK'S LINEUP" label on the Explore List (Mosaic, Oct 14).
+- Lineup wording on every Explore List week: THIS / NEXT / LAST WEEK'S LINEUP (Mosaic Oct 14; every week per Kylie's answer D).
 - Unknown crowd size shows blank on rows, chips and the selected card, and "— Size unknown" on the event page (Mosaic, Oct 14).
 - Crowd size range setting in You › Settings › Events (Mosaic, Oct 14).
 - Kylie's city round 2 review form answers (Oct 14).
 
-Open questions A–E (crowd size range and privacy) are listed under item 6.
+Kylie answered A–D on Oct 14 (under item 6). Still open: C2 ("homestand" wording), D2 (weeks further out), E (profile "Anyone" vs stub privacy).
 
 Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3.
 
@@ -23,7 +23,7 @@ Not decided: regional events "further out" (now a research to-do, item 2). Open 
 
 Scope: shows of 5,000 or more people, any genre, that are not on Ticketmaster.
 
-**Today on main:** no AXS, SeatGeek, DICE or festival/promoter source exists. The event sources are `src/data/sources/ticketmasterSource.ts`, `espnSource.ts`, `mlbSource.ts`, `hockeytechSource.ts`, `seedSource.ts` and `catalogSource.ts`. Pop-ups with no size are seeded by hand as "unsized" (`src/data/seed/past2026.ts:90`). **Change:** add sources (a)–(c) below as new files in `src/data/sources/`, with the Ticketmaster dedupe; apply the pop-up sizing rules. Not started.
+**Build instruction:** Add sources (a)–(c) below as new files in `src/data/sources/`, next to the existing `ticketmasterSource.ts`, `espnSource.ts`, `mlbSource.ts`, `hockeytechSource.ts`, `seedSource.ts` and `catalogSource.ts`. Follow their shape and dedupe each new show against Ticketmaster, extending the existing one-show key (date + venue + performer, `ticketmasterSource.ts:287-294`) rather than writing a second dedupe. Apply the pop-up sizing rules below. Hand-seeded pop-ups with no size already use the internal `unsized` helper (`src/data/seed/past2026.ts:90`); reuse it. None of the new sources exist yet.
 
 ### Sources, in order
 
@@ -74,7 +74,7 @@ Rejected:
 
 **TO-DO: Research prompt: should apps like this show regional events further out?**
 
-**Today on main:** no regional list or distance rule exists (no match for "regional" in app code apart from comments). **Change:** none until decided.
+**Build instruction:** none. Don't build anything here until the research comes back and Kylie decides. Context: no regional list or distance rule exists on main.
 
 Not a build item. Nothing here should be built until the research comes back and Kylie decides. Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
 
@@ -111,7 +111,7 @@ Gillette Stadium is probably already in as the Patriots' venue. Check before add
 
 ## 3. Add to calendar
 
-**Today on main:** nothing exists (no .ics, Google Calendar link or Add to calendar code). **Change:** build option B from the Mosaic section (icon button beside "+ Stub it", chooser sheet).
+**Build instruction:** build option B (Mosaic item 2 below): an icon button beside "+ Stub it" that opens a chooser sheet. Context: nothing exists on main to extend (no .ics, Google Calendar or Add to calendar code).
 
 Let the user export an event to their own phone or computer calendar. This is not an in-app calendar.
 
@@ -124,7 +124,7 @@ Feasible with two pieces:
 
 Source: her exported city round 2 review form (87 of 87 answered, exported 2026-10-14T07:29:35.776Z UTC = Oct 14, 12:29 AM PT). Leans she left in place count as her decisions. Card context: `/workspace/ff-claims/city-round2-review-form.md` on the box. "My lean" in the option text means the form's suggested option.
 
-**Today on main:** the round-2 cities are live in `src/config/metros.ts:17` (COVERED_METRO_IDS) with codes and city types (`src/data/formula/gridlock.ts:116`). Most card answers are data or process decisions; their state on main is in the checklist at the end of this section. N2 (favorites) and N5 (no "Nights" label) aren't built. **Change:** apply the checklist and the call-outs below.
+**Build instruction:** Apply the "City data changes to apply" checklist at the end of this section. Skip rows marked [x] (already on main) and fix DC5, which contradicts main. Apply the call-outs below as written. The round-2 cities already exist: `src/config/metros.ts:17` (COVERED_METRO_IDS), codes in `metros.ts`, city types in `src/data/formula/gridlock.ts:116` (`CITY_TYPE`). Edit those entries; don't add new ones. N2 (favorites, added where home is set) and N5 (drop the "Nights" label) aren't built yet.
 
 Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 
@@ -791,133 +791,117 @@ Checked against main 635a164: items marked [x] are already on main; one contradi
 
 Changes the answers make to city data (capacities, codes, names, ids). File hints are from a search of this branch; rows marked "not found" belong to round-2 city data that hasn't merged here yet.
 
-- [ ] **N9** Ryan Field 58% concert car share: wire it?: Wire 58% when concerts are listed, marked estimated. File: not found in repo yet (new round-2 city data) Today on main: Ryan Field (`venues.ts:3266`) has a 35,000 football capacity and no concert car share. Not done.
-- [ ] **N10** Chicago (Composer, PR #54): Impact Field capacity: Keep 6,300 (reported). File: `src/data/venues.ts` Today on main: Impact Field (`venues.ts:3398`) has no capacity (blanked). Change: add 6,300 concert, reported.
+- [ ] **N9** Ryan Field 58% concert car share: wire it?: Wire 58% when concerts are listed, marked estimated. File: not found in repo yet (new round-2 city data) — Today on main: Ryan Field (`venues.ts:3266`) has a 35,000 football capacity and no concert car share. Not done.
+- [ ] **N10** Chicago (Composer, PR #54): Impact Field capacity: Keep 6,300 (reported). File: `src/data/venues.ts` — Today on main: Impact Field (`venues.ts:3398`) has no capacity (blanked). Change: add 6,300 concert, reported.
 - [ ] **X2** Old numeric Ticketmaster ids: switch to the new kind?: Swap them all for the new ids in the catch-up lookup pass. File: not found in repo yet (new round-2 city data)
-- [ ] **OTT1** TD Place Arena capacity: Store 8,585 as the full bowl. File: `src/data/venues.ts` Today on main: TD Place Arena (`venues.ts:9111`) has no capacity. Change: add 8,585.
+- [ ] **OTT1** TD Place Arena capacity: Store 8,585 as the full bowl. File: `src/data/venues.ts` — Today on main: TD Place Arena (`venues.ts:9111`) has no capacity. Change: add 8,585.
 - [ ] **OTT2** Ticketmaster id at TD Place (401513): Swap it for the new id in the catch-up pass. File: not found in repo yet (new round-2 city data)
 - [x] **OTT3** City code: OTT. File: `src/config/metros.ts` **Done on main** (`metros.ts:403`, code OTT).
 - [ ] **IND4** Lawn totals (Everwise, Ruoff, Victory Field): One rule for all: total including lawn. File: not found in repo yet (new round-2 city data)
 - [x] **IND5** City type: Sprawl. File: `src/data/venues.ts` **Done on main**, but the file is `src/data/formula/gridlock.ts:116` (`CITY_TYPE`), not venues.ts.
-- [ ] **EDM3** Convention Centre (5,254 movable chairs): Mute the room. File: `src/data/venues.ts` Today on main: Edmonton Convention Centre (`venues.ts:9808`) is not muted. Not done.
+- [ ] **EDM3** Convention Centre (5,254 movable chairs): Mute the room. File: `src/data/venues.ts` — Today on main: Edmonton Convention Centre (`venues.ts:9808`) is not muted. Not done.
 - [ ] **EDM4** Rogers Place Ticketmaster id (140602): Look up the new id in the catch-up pass. File: not found in repo yet (new round-2 city data)
 - [x] **DC1** City code: DC. File: `src/config/metros.ts` **Done on main** (`metros.ts:384`, code DC).
-- [ ] **DC3** Greene Stadium: Store 7,086 as seats, once confirmed. File: `src/data/venues.ts` Today on main: Greene Stadium (`venues.ts:8983`) has no capacity. Not done.
+- [ ] **DC3** Greene Stadium: Store 7,086 as seats, once confirmed. File: `src/data/venues.ts` — Today on main: Greene Stadium (`venues.ts:8983`) has no capacity. Not done.
 - [x] **DC4** Merriweather Post Pavilion: DC. File: `src/data/venues.ts` **Done on main** (Merriweather is in `washington-dc`, `venues.ts:8935`).
 - [ ] **DC5** City type: Hub. File: `src/data/venues.ts` **Contradicts main:** `src/data/formula/gridlock.ts:116` has `washington-dc: transit`. The answer says Hub. Builder: change to hub (and the note at gridlock.ts:110-ish), or check with Kylie if the transit call came from newer research.
 - [ ] **CLE1** Jacobs Pavilion: One rule for every standing-floor room: seated by default (4,100 here). File: `src/data/venues.ts` **Adjusted:** Jacobs Pavilion (`venues.ts:10082`) already has 4,100 concert, plus a second 5,000 concert row. Change: drop or demote the 5,000 row so 4,100 seated is the default.
 - [x] **CLE4** Public Hall: Match by tenant: Charge games at 5,100. File: `src/data/venues.ts` **Done on main** (Public Hall has 5,100 basketball, `venues.ts:10032`).
-- [ ] **PDX3** Cascades Amphitheater: Store 7,810 seated. File: `src/data/venues.ts` Today on main: Cascades Amphitheater (`venues.ts:10568`) has no capacity. Not done.
+- [ ] **PDX3** Cascades Amphitheater: Store 7,810 seated. File: `src/data/venues.ts` — Today on main: Cascades Amphitheater (`venues.ts:10568`) has no capacity. Not done.
 - [x] **RDU4** City code: RDU. File: `src/config/metros.ts` **Done on main** (`metros.ts:345`, code RDU).
 - [ ] **RDU5** Hurricanes/Duke postseason rows: Add them in the next full recalibration. File: not found in repo yet (new round-2 city data)
-- [ ] **STL2** Hollywood Casino Amphitheatre: Store 6,805 seated, if the operator confirms. File: `src/data/venues.ts` Today on main: `hollywood-casino-amphitheatre-stl` (`venues.ts:9290`) has no capacity. Not done (and not to be confused with the Chicago-area venue at `:3286`).
-- [ ] **DEN1** Empower Field football: Store 76,125. File: `src/data/venues.ts` Today on main: Empower Field (`venues.ts:11666`) only has 85,000 concert. Change: add 76,125 football.
+- [ ] **STL2** Hollywood Casino Amphitheatre: Store 6,805 seated, if the operator confirms. File: `src/data/venues.ts` — Today on main: `hollywood-casino-amphitheatre-stl` (`venues.ts:9290`) has no capacity. Not done (and not to be confused with the Chicago-area venue at `:3286`).
+- [ ] **DEN1** Empower Field football: Store 76,125. File: `src/data/venues.ts` — Today on main: Empower Field (`venues.ts:11666`) only has 85,000 concert. Change: add 76,125 football.
 - [ ] **DEN5** Colorado Mammoth alias "Mammoth": Drop the bare "Mammoth" alias. File: not found in repo yet (new round-2 city data)
 
 ## Approved with Mock Mosaic (Kylie, Oct 13)
 
 ### 1. Stub privacy, Venmo-style
 
-Applies to all three stub kinds: **Attending, Watching and Interested**.
+**Build instruction:** Stub privacy already works for **Watching** in `src/components/StubSheet.tsx:171-180`: two `stub-choice` buttons, Private / Friends, saved as `watchShare` by `setWatchDetails` (`src/data/personalLog.ts:712-720`). Extend that per-stub field to **Attending and Interested**, and replace the two buttons with the "Who sees this" pill. Then add what doesn't exist yet: a Settings › Privacy default, the bulk "Change past stubs…" sheet, and an editable status line on the event page. Keep the existing profile switch (`src/screens/ProfileEditScreen.tsx:14-26`) and don't duplicate it; how the two relate is open question E.
 
-**Today on main (adjusts this item):**
-- A per-stub Private / Friends choice already exists, but **only for Watching**: `src/components/StubSheet.tsx:171-180` (two `stub-choice` buttons), saved by `setWatchDetails` in `src/data/personalLog.ts:712-720` as `watchShare`. Friends shares the watch place with approved followers.
-- A separate **profile-wide** switch exists: Only me / approved followers / anyone (`src/screens/ProfileEditScreen.tsx:14-15`, type in `src/data/profiles.ts:16`; default Only me). It sits inside Settings.
-- There's no Settings › Privacy default for new stubs, no bulk "Change past stubs…", no pill, and no editable status line.
-
-**Change:** replace the Watching-only buttons with the "Who sees this" pill for all three kinds; add the per-stub field for Attending and Interested; add Settings › Privacy (default + helper + "Change past stubs…" bulk sheet); make the event page status line editable. **Open question for Kylie:** how the per-stub setting relates to the existing profile switch. In particular, "anyone" on the profile is effectively a Public option, which this item rejects for stubs. Lean: the profile switch decides who can see your profile at all, and the stub setting can only narrow it (a Friends stub is never shown to non-friends).
-
-- **Settings › Privacy** sets the default for new stubs: **Friends** or **Private**. A helper line under it explains that this is for new stubs. Below that is a **"Change past stubs…"** row.
-- **Change past stubs…** opens a bulk sheet: make all past stubs **Private**, or make all past stubs **Friends**. Both directions are offered. (Venmo only lets you go more private; we allow both.)
-- **Stub it sheet:** a small pill, "Who sees this [Friends ⌄]", labelled **"Your default"**. Tapping it opens a menu. When you pick something other than your default, the label changes to a gold **"Not your default"**.
-- **Event page status line** stays editable before and after the event, for example "Watching · 🔒 Private ⌄" and "Attended · 55k · Friends ⌄".
-- **Tags follow the stub's privacy** (T01).
+1. **Stub it sheet** (`StubSheet.tsx`): remove the Watching-only Private/Friends buttons (`:171-180`). Add a small pill, "Who sees this [Friends ⌄]", for all three kinds, labelled **"Your default"**. Tapping it opens a menu. When the pick differs from the default, the label becomes a gold **"Not your default"**.
+2. **Data:** store the choice on every plan and entry, not just watched ones. Today `watchShare` exists only for Watching (`personalLog.ts:712-720`). Generalize it (or add a field next to it) and migrate existing `watchShare` values unchanged.
+3. **Settings › Privacy (new):** the default for new stubs, **Friends** or **Private**, with a helper line saying it applies to new stubs, and a **"Change past stubs…"** row. Settings today has Account and other groups (`src/screens/SettingsScreen.tsx:79-128`) but no Privacy section. The existing profile switch sits inside Settings via ProfileEditScreen; leave it in place.
+4. **Change past stubs… (new):** a bulk sheet that makes all past stubs **Private** or all **Friends**. Both directions are offered (Venmo only goes more private).
+5. **Event page status line:** make it editable before and after the event ("Watching · 🔒 Private ⌄", "Attended · 55k · Friends ⌄").
+6. **Tags follow the stub's privacy** (T01).
 
 Why: one default set once, a quiet override where you stub, and a way to fix it later from the event page or in bulk.
 
 Rejected: a Public option; big buttons on the sheet; editing privacy only inside the sheet; a segmented row.
 
-Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box, not in the repo).
+Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box). The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
 
-Caveat for the builder: the Settings screen on the board isn't from a live capture. Match the live app's styles and don't restyle existing components.
+**Open question E (still pending Kylie's pick):** how the stub setting relates to the profile switch.
+- What exists: `ProfileEditScreen.tsx:14-26` offers **Only me** (default), **People I approve** and **Anyone**. "Anyone" lets non-followers and signed-out visitors see your events; following still needs approval, and only followers see plans.
+- Proposed rule: a stub's setting can only **narrow** the profile setting. A Friends stub is never shown beyond approved followers, even when the profile is Anyone, and a Private stub is never shown to anyone.
+- Still to decide: whether to keep the "Anyone" profile option at all, since stubs reject a Public option.
+- **Naming mismatch:** the profile says "People I approve" while stubs say "Friends", for the same audience (approved followers). Pick one word before building.
 
 ### 2. Add to calendar: option B
 
-An **icon button beside "+ Stub it"** opens a chooser sheet with two choices: **Apple / device calendar (.ics file)** or **Google Calendar (prefilled link)**. This updates item 3 above (Add to calendar).
+**Build instruction:** Add a new icon button beside "+ Stub it" on the event page that opens a chooser sheet: **Apple / device calendar** (download an .ics file) or **Google Calendar** (open a prefilled link). Nothing exists on main to reuse or remove: there's no .ics, Google Calendar or Add to calendar code. The "+ Stub it" button itself (`src/components/StubSheet.tsx`, opened from the event page) stays as is. This updates item 3 above.
 
 Board: `/workspace/ff-gap-review/mosaic/b5/v2/` (on the box).
 
 ### 3. Crowds with no size (updated Oct 14)
 
-Never show the word "unsized" in the app.
+**Build instruction:** Unknown sizes are already blank on most rows and chips, because `crowdThousands` is only drawn when a size exists (e.g. `src/components/ChipCard.tsx:53`, `src/components/DayTimeline.tsx:54`). Change the one place that shows a dash, `src/components/WhyCard.tsx:86` (`'—'` when the size is 0), to show nothing. Add "— Size unknown" to the event page's crowd area, which doesn't exist yet. Keep unknown-size events muted on the map: `isMuted` (`src/map/crowdPoints.ts:33`) already mutes them, because `sizeTier` returns `unknown` (`src/data/read.ts:117`); don't change that. Never show the word "unsized" in UI copy.
 
 - **Event page:** "— Size unknown".
-**Today on main:** unknown sizes already show blank on most rows and chips (`crowdThousands` is only drawn when a size exists, for example `src/components/ChipCard.tsx:53`, `DayTimeline.tsx:54`). The one dash is the Why card: `src/components/WhyCard.tsx:86` shows "—" when the size is 0. The event page has no "— Size unknown" line yet. Unknown-size events are drawn **muted** on the map, because `isMuted` (`src/map/crowdPoints.ts:33`) mutes anything that isn't `feeds-friction`, and `sizeTier` returns `unknown` for them (`src/data/read.ts:113-118`). **Change:** WhyCard "—" becomes blank; add "— Size unknown" to the event page; keep unknown events muted (they can't be scored).
+- **Rows, chips and the selected card:** nothing (blank). This replaces the Oct 13 bare "—" rule; ignore the dashes on the v3 boards.
 
-- **Rows, chips and the selected card:** nothing (blank). This replaces the Oct 13 bare "—" rule. Ignore the dashes on the v3 boards.
-
-Why: a dash in every row reads as noise; blank is quieter, and the event page is where the full explanation belongs.
+Why: a dash in every row reads as noise; blank is quieter, and the event page is where the explanation belongs.
 
 Rejected: the bare "—" on rows and chips (Oct 13 version); the word "unsized" anywhere in UI copy.
 
-The pop-up sizing item (item 1) is updated to match: "unsized" stays as the internal term in notes and code only.
+The pop-up sizing item (item 1) matches this: "unsized" stays an internal term in notes and code only (e.g. `src/data/seed/past2026.ts:90`).
 
 ## Approved with Mock Mosaic (Kylie, Oct 14)
 
 ### 4. Date page r3
 
-Boards: `/workspace/ff-gap-review/mosaic/datepage/datepage-r3.png` and the lean phone `datepage-r3-lean.png` (on the box).
+**Build instruction:** Rework the existing date page (`src/screens/DateScreen.tsx`); don't build a new one. In order:
+1. **Move** the Local competition card (`:346-364`) **above** the day list ("This day in …", `:311`).
+2. **Rename** its heading from "Local competition" (`:348`) to **"Local Competition"**.
+3. **Remove** its summary line (`:351-364`: "6.2 Busy · 108k across 5 events · 4 start at 7:00 pm"). Keep the read tile.
+4. **Add** an hourly weather strip above its timeline (`DayTimeline`, `src/components/DayTimeline.tsx`). Use the existing hourly forecast data (Open-Meteo, `src/data/formula/weather.ts:180-207`); the board's temperatures are only examples.
+5. **Rename** the day list to **"<Dayname>'s lineup"** (e.g. "Wednesday's lineup", following the date).
+6. **Change the sort** from crowd size then time (`:112`) to **start time**.
+7. **Replace** the custom rows with the shared Explore row, `DayRow` / `RowBody` (`src/components/DayRow.tsx:16, 53`): time leading and top-aligned, title, venue underneath, crowd and badges on the right.
+8. **Remove** the per-row "+ Stub it" button (`:314, 336`) and the per-row StubSheet trigger (`:75`). The event page keeps its own "+ Stub it".
+9. Show **Attending** as plain link-blue text with the ticket icon, no fill. Use the icons everywhere: ticket = Attending, TV = Watching, bookmark = Interested. These icons already exist (`TicketIcon`, `TvIcon`, `BookmarkIcon` in `src/components/Icons.tsx:61, 177, 83`).
 
-**Today on main (contradicts r3 in four places):**
-- The day list ("This day in …") comes **before** Local competition: `src/screens/DateScreen.tsx:311` vs `:346`.
-- The list is sorted by **crowd size**, then time: `DateScreen.tsx:112`.
-- Each row has a **"+ Stub it"** button: `DateScreen.tsx:314, 336`.
-- The heading is **"Local competition"** (lowercase c) with a summary line ("6.2 Busy · 108k across 5 events · 4 start at 7:00 pm"): `DateScreen.tsx:348-364`.
-- Its timeline (`src/components/DayTimeline.tsx:16`) only shows events of 5,000+ with a start time. There's no hourly weather strip, but hourly forecast data already exists (Open-Meteo, `src/data/formula/weather.ts:180-207`).
-- The shared Explore row is `src/components/DayRow.tsx:53` (`RowBody` at `:16`).
-
-**Change:** move Local Competition above the lineup and capitalize it; drop its summary line; add the hourly strip from `weather.ts`; rename the list "<Dayname>'s lineup"; sort by start time; render rows with `DayRow`; remove "+ Stub it" from rows; show Attending as link-blue text plus the ticket icon.
-
-Order, top to bottom:
-
-1. **Header and forecast card** stay on top, as now.
-2. **Local Competition** (capitalized). No duplicate summary line. An **hourly weather strip** sits above its timeline. The temperatures on the board are example values; use real hourly forecast data.
-3. **"<Dayname>'s lineup"**, for example "Wednesday's lineup". The day name changes with the date. Sorted by **time**. Rows use the **shared Explore row**: time leading and top-aligned, title, venue underneath, crowd and badges on the right.
-
-Row details:
-
-- **Attending** is plain link-blue text with the ticket icon. No fill.
-- **No "+ Stub it"** on date page rows.
-- **Icons everywhere:** ticket = Attending, TV = Watching, bookmark = Interested.
+The header and forecast card stay on top as now.
 
 Why: the day's situation (forecast, competition, weather by hour) comes first, then the events in the order you'd live them. Reusing the Explore row keeps one row design across the app.
 
 Rejected: sorting by crowd size; weather on every row; "+ Stub it" on rows; a filled Attending pill (filled navy is reserved for actions or selection); a "You're attending" text line.
 
-### 5. Lineup label
+Boards: `/workspace/ff-gap-review/mosaic/datepage/datepage-r3.png` and the lean phone `datepage-r3-lean.png` (on the box).
+
+### 5. Lineup label (updated Oct 14: every week)
+
+**Build instruction:** Change `weekWord` in `src/screens/ExploreListScreen.tsx:81-88`, which renders the Explore List header at `:481` (`{weekWord} · {N} events`, shown uppercase), so that every week carries "lineup":
+- This week → **"THIS WEEK'S LINEUP · N EVENTS"** (today "This week").
+- Next week → **"NEXT WEEK'S LINEUP · N EVENTS"** (today "Next week").
+- Last week → **"LAST WEEK'S LINEUP · N EVENTS"** (today "Last week").
+- Weeks further out: today `weekSpan` gives "OCT 26–NOV 1". **Lean: "WEEK OF OCT 26 · LINEUP · N EVENTS"** (open; see question D2).
+
+Why: one clear use of the word on Explore, at the top of the list. Kylie wants it on every week, not only this one (Oct 14, answer D).
+
+Rejected: "lineup" in every day band; using it as the Map sheet label; "lineup" on this week only (the earlier lean, D).
+
+Reconciling N16 ("Saturday's lineup" on a day's list): the day-name form is the **date page** heading (item 4). The Explore List uses the week forms above. Explore day bands don't use the word.
 
 Board: `/workspace/ff-gap-review/mosaic/b5/v3/lineup.png` (on the box).
 
-**Today on main:** `src/screens/ExploreListScreen.tsx:481` renders `{weekWord} · {N} events`, where `weekWord` (`:81-84`) gives "This week", "Next week", "Last week" or a date range (shown uppercase by style). **Change:** for the current week only, "This week" becomes "This week's lineup". Other weeks keep their wording (open question below).
-
-On the Explore List, "THIS WEEK · N EVENTS" becomes **"THIS WEEK'S LINEUP · N EVENTS"**.
-
-Why: one clear use of the word on Explore, at the top of the list, without repeating it.
-
-Rejected: "lineup" in every day band; using it as the Map sheet label.
-
-Reconciling N16 (which picked "Saturday's lineup" on a day's list): the day-name form lives on the **date page** heading ("Wednesday's lineup", item 4). The Explore List uses **THIS WEEK'S LINEUP**. Day bands on Explore don't use the word.
-
 ### 6. Crowd size range setting
 
-Boards: `/workspace/ff-gap-review/mosaic/minsize/minsize-r6.png` and phones `minsize-r6-1-settings.png` to `minsize-r6-5-datepage-filtered.png` (on the box).
-
-**Where:** a new **Events** section in You › Settings, with the row "Crowd size · 3,000 – No max ›" (the board's value is an example).
-
-**Scope:** applies everywhere (Explore map and list, date pages, search). No per-page exceptions.
+**Build instruction:** Add a new **Events** section to You › Settings (`src/screens/SettingsScreen.tsx`; today it has Account and other groups at `:79-128`, and no crowd setting), with the row "Crowd size · 3,000 – No max ›" (example value). Apply the range as **one shared display filter** across the existing lists (Explore map and list, date pages, search), applied **after** scoring. Do **not** change the existing 5,000 friction floor (`FRICTION_ATTENDEES`, `src/data/read.ts:33`) or the existing small-room muting (`isMuted`, `src/map/crowdPoints.ts:33-35`). They stay as is, and the new filter sits on top of them. The surface-by-surface changes are in the table below.
 
 **Picker:**
-
 - A two-handle slider from 0 to 80,000+ (0 = no min, 80,000+ = no max). It snaps in steps of 5,000 (17 stops).
 - Labels 0 / 20,000 / 40,000 / 60,000 / 80,000+, with light ticks at every 5,000.
 - Min and Max number-pad fields accept any whole thousand. Typed values snap to the nearest 1,000 and can sit between slider stops.
@@ -927,11 +911,10 @@ Boards: `/workspace/ff-gap-review/mosaic/minsize/minsize-r6.png` and phones `min
 **Hidden events:** a quiet link-blue 11pt line, "N events outside your crowd size · Show", in Explore day bands and at the bottom of the date page lineup. Counts on the boards are examples.
 
 **Rules:**
-
-- Stubbed events and events friends are attending always show.
-- Events with no listed size show by default. A toggle, "Show events with unknown size", controls them.
-- Show reveals the hidden events for that view only. It doesn't change the setting.
-- New users start with no min and no max.
+- Stubbed events and events friends are attending always show, even outside the range. They're muted if under 5,000.
+- Events with no listed size show by default (blank size). A toggle, "Show events with unknown size", controls them.
+- Show reveals the hidden events for the current view only. It doesn't change the setting.
+- New users start with no min and no max, so nothing changes from today.
 
 Why: one setting the user controls everywhere, with exact values possible but coarse dragging, and nothing silently lost (the Show line).
 
@@ -939,59 +922,62 @@ Rejected: min only; fixed-tier dropdowns; a stepper; free typing of any number; 
 
 Caveats: the Settings screen isn't from a live capture (match live styles, don't restyle existing components), and the counts are examples.
 
-> **Builder check:** this is a display filter only and doesn't change scoring. The existing 5,000 friction threshold (`FRICTION_ATTENDEES` in `src/data/read.ts`; small rooms muted on the map) stays as is. A user minimum below 5,000 shows small events but doesn't make them count toward friction; a maximum doesn't remove big events from the score. Confirm the map's muting and the filter don't conflict.
-
-**Today on main:** no crowd size setting and no Events section in Settings (`src/screens/SettingsScreen.tsx:79-128` has Account and the other existing groups). **Change:** everything in this item is new. The surfaces it touches are below.
+Boards: `/workspace/ff-gap-review/mosaic/minsize/minsize-r6.png` and phones `minsize-r6-1-settings.png` to `minsize-r6-5-datepage-filtered.png` (on the box).
 
 #### What the crowd size range touches
 
-Traced at main 635a164. The short version: **the setting is a display filter only.** Scores, the read box, the day strip and the friction math never change with it. Events under 5,000 stay out of scoring whatever the setting says.
+**The setting is a display filter only.** Scores, the read box, the day strip and the friction math never change with it. Events under 5,000 stay out of scoring whatever the setting says.
 
 **Muting vs hiding, in one sentence:** muted gray means "shown, but too small (or unsized) to count toward the score"; hidden means "outside the size range you chose, and tucked behind the 'N events outside your crowd size · Show' line".
 
-How the code decides today:
-- `FRICTION_ATTENDEES = 5000` (`src/data/read.ts:33`). `sizeTier` (`read.ts:113-118`) returns `feeds-friction` only at 5,000+ (and never for `belowFloor`). The size it uses is `knownSize` (`read.ts:89-106`): a counted crowd, else the low end of a sports expected draw, else the room's capacity. Ticketmaster "special" listings in rooms under 6,000 are held under the floor (`read.ts:95-99`).
-- `showsOnMap` (`src/map/crowdPoints.ts:28-30`) is true for every event at a known venue. `isMuted` (`crowdPoints.ts:33-35`) is "not feeds-friction", so small **and** unknown-size events are muted. That's why Patrick Droney at a ~1.5k room is gray (Q1 decision: small rooms included, muted; Kylie, Oct 9, 3.4).
-- Map styling: muted dots are gray `#7B8798`, smaller, with no glow (`src/map/CrowdLayer.tsx:21, 113-115`), muted labels (`:147`), and muted cards sort last (`:412`).
+Context, what the code does today:
+- `sizeTier` (`read.ts:113-118`) returns `feeds-friction` only at 5,000+ (never for `belowFloor`). It uses `knownSize` (`read.ts:89-106`): a counted crowd, else the low end of a sports expected draw, else room capacity. Ticketmaster "special" listings in rooms under 6,000 are held under the floor (`read.ts:95-99`).
+- `showsOnMap` (`crowdPoints.ts:28-30`) is true for every event at a known venue. `isMuted` mutes small and unknown-size events. That's why Patrick Droney (~1.5k room) is gray (Q1: small rooms included, muted; Oct 9, 3.4).
+- Muted styling: gray `#7B8798`, smaller, no glow (`src/map/CrowdLayer.tsx:21, 113-115`), muted labels (`:147`), cards last (`:412`).
 
-Builder instructions by surface. Implement the filter as one shared predicate (for example `passesCrowdRange(event, setting, log, friends)`), applied **after** scoring, at display time only.
+Instructions by surface. Implement one shared predicate, e.g. `passesCrowdRange(event, setting, log, friends)`.
 
-| Surface | Code today | Hidden by setting? | Changed by setting? | Expected behavior |
-|---|---|---|---|---|
-| Map chips and pins | `MapScreen.tsx:111` (`dayEvents = events.filter(showsOnMap)`), `CrowdLayer.tsx` | Yes | No | Filter `dayEvents` for display. Events in range keep today's muting (under 5,000 or unknown = gray). |
-| Map sheet rows | `MapScreen.tsx:111`, rows via `DayRow` | Yes | No | Same list as the chips. Add the hidden-events line at the bottom of the sheet list. |
-| Header and sheet totals ("5 events · 108k") | count = `caption` (all `showsOnMap` events); crowd = `crowdTotal`, 5,000+ only (`MapScreen.tsx:164-166, 283-291, 418`) | **Open question** | No | See open question A. Note the count and the crowd total already count different sets today. |
-| Explore List rows and day bands | `ExploreListScreen.tsx:264` | Yes | No | Filter rows; put "N events outside your crowd size · Show" in each affected day band. |
-| Explore week count ("This week's lineup · N events") | `ExploreListScreen.tsx:447, 481` | **Open question** | No | Follows the same answer as A. |
-| Day strip scores and day has-events flag | `src/components/DayStrip.tsx:38, 88` (rating from the day read); `ExploreListScreen.tsx:427` | No | No | Scores never change. The has-events dot stays based on all events. |
-| Day score / read box | `src/data/formulaRead.ts`, `dateCrowdFight` (`src/data/formula/crowdFight.ts:135-145`) | No | No | Untouched. |
-| crowdFight and read math | `crowdFight.ts:109-133`: competitors must pass `eventFeedsFriction` (`:117`) | No | No | Untouched. A min below 5,000 never makes small rooms count; a max never drops big events from the score. |
-| Home "Today" big-event count | `HomeScreen.tsx:136-137` (`showsOnMap && !isMuted`) | No (lean) | No | Lean: leave as is, since it describes the day's friction, not a list. Confirm with A. |
-| Date page lineup | `DateScreen.tsx:112, 311-340` | Yes | No | Filter rows; hidden-events line at the bottom of the lineup. |
-| Date page Local Competition (summary and timeline) | `DateScreen.tsx:346-364`, `summaryTotal` `:481-483` (5,000+ only); `DayTimeline.tsx:16` (5,000+ with start) | **Open question** | No | See open question B. Lean: not filtered; it shows the 5,000+ events the read uses. |
-| Event page Up against | `EventScreen.tsx:182` (5,000+ within an hour), `:276-305` | **Open question** | No | See B. Lean: still listed. |
-| Event page This day card | `EventScreen.tsx:188-191, 250-258` (count and biggest across all `showsOnMap`) | **Open question** | No | Follows A (it's a day count). The "Biggest" line is always 5,000+ in practice. Lean: unaffected. |
-| Event page Same homestand / Also on | `src/components/SameTour.tsx:17, 37` | Lean: no | No | It's a list of the same team's or tour's dates, not a crowd list. Lean: not filtered. Open question C. |
-| Event page itself | `EventScreen.tsx` | No | No | Opening an event directly (link, search, stub) always works. |
-| Selected card (chip card) | `src/components/ChipCard.tsx` | n/a | No | A hidden event can't be selected unless Show was tapped. |
-| Friends Activity layer | `chipActivities` `src/map/chipActivity.ts:23`; lines `ExploreListScreen.tsx:133, 465`, `DateScreen.tsx:127` | No | No | Any event a friend is attending always shows, even outside the range, and is muted if under 5,000. Applies only to events that friends have actually stubbed. |
-| Stubs (your log, You, Your year) | `src/components/StubRows.tsx`, `YourYear.tsx` | No | No | Your own stubs are never filtered. Stubbed events always show on the map, lists and date page, muted if under 5,000. |
-| Search | `src/components/SearchSheet.tsx` (date hits, `DateSearchHit` in `src/data/types.ts:354`) | Yes | No | Kylie's "everywhere" rule: apply the filter to matched events, with a Show line. Search returns **dates** with matched titles today, so filter which titles match; a date whose only matches are hidden shows under the Show line. |
-| Unknown-size events | `sizeTier` → `unknown` (`read.ts:117`) | Only if the toggle is off | No | Shown by default with a blank size (muted on the map). The "Show events with unknown size" toggle hides them. |
-| Hidden-events line | new | n/a | No | "N events outside your crowd size · Show": link-blue, 11pt. Show reveals them **for the current view only**; it doesn't change the setting and resets when you leave the view. Revealed events in range rules: muted if under 5,000. |
-| New users | new | No | No | Default no min, no max, so the app behaves exactly as it does today. |
+| Surface | Instruction | Code to change (today) |
+|---|---|---|
+| Map chips and pins | Filter for display. Events in range keep today's muting. | `MapScreen.tsx:111` (`dayEvents = events.filter(showsOnMap)`), `CrowdLayer.tsx` |
+| Map sheet rows | Same filtered list as the chips; hidden-events line at the bottom of the list. | `MapScreen.tsx:111`, rows via `DayRow` |
+| Header and sheet totals ("5 events · 108k") | **Count only visible events, for both numbers** (decided, A). The event count changes from all venue events to visible ones; the crowd total stays "5,000+ only", but of visible events. | count = `caption` (all `showsOnMap`); crowd = `crowdTotal` (`MapScreen.tsx:164-166, 283-291, 418`) |
+| Explore List rows and day bands | Filter rows; "N events outside your crowd size · Show" in each affected band. | `ExploreListScreen.tsx:264` |
+| Explore week count ("…'S LINEUP · N EVENTS") | Count only visible events (A). | `ExploreListScreen.tsx:447, 481` |
+| Event page This day card | Count only visible events (A). The "Biggest" line follows the visible set. | `EventScreen.tsx:188-191, 250-258` |
+| Day strip scores, has-events dot | No change: scores never change, and the dot stays based on all events. | `DayStrip.tsx:38, 88`; `ExploreListScreen.tsx:427` |
+| Day score / read box, crowdFight, read math | No change. A min below 5,000 never makes small rooms count; a max never drops big events from the score. | `formulaRead.ts`; `crowdFight.ts:109-145` (`eventFeedsFriction` at `:117`) |
+| Home "Today" big-event count | No change (it describes the day's friction, not a list). | `HomeScreen.tsx:136-137` |
+| Date page lineup | Filter rows; hidden-events line at the bottom. | `DateScreen.tsx:112, 311-340` |
+| Date page Local Competition (timeline) | **Not filtered** (decided, B): hidden events still appear if they're 5,000+, because the read uses them. The summary line is removed by item 4. | `DayTimeline.tsx:16` (already 5,000+ only) |
+| Event page Up against | **Not filtered** (B): hidden 5,000+ rivals still appear. | `EventScreen.tsx:182, 276-305` (already 5,000+ only) |
+| Event page Same homestand / Also on | **Not filtered** (decided, C). See the open question on the "homestand" wording. | `src/components/SameTour.tsx:17, 37` |
+| Event page itself | Always opens (link, search, stub). | `EventScreen.tsx` |
+| Selected chip card | A hidden event can't be selected unless Show was tapped. | `ChipCard.tsx` |
+| Friends Activity layer | Events friends are attending always show, muted if under 5,000. | `chipActivity.ts:23`; `ExploreListScreen.tsx:133, 465`; `DateScreen.tsx:127` |
+| Stubs (log, You, Your year) | Never filtered. Stubbed events always show everywhere, muted if under 5,000. | `StubRows.tsx`, `YourYear.tsx` |
+| Search | Apply the filter, with a Show line (Kylie's "everywhere" rule). Search returns dates with matched titles, so filter which titles match; a date whose only matches are hidden shows under the Show line. | `SearchSheet.tsx`; `DateSearchHit` (`types.ts:354`) |
+| Unknown-size events | Shown by default with a blank size (muted on the map); the toggle hides them. | `sizeTier` → `unknown` (`read.ts:117`) |
+| Hidden-events line (new) | Link-blue, 11pt. Show reveals for the current view only and resets on leaving. | new |
+| New users | Default no min, no max: no behavior change. | new |
 
 Builder checks:
-- The filter must never be passed into `rateDate`, `dateCrowdFight`, `eventCrowdFight`, `summaryTotal` or the day strip read. Add a test that changing the setting leaves the day's score identical.
-- Range compare: use the same number the row shows (the highlighted crowd, else `drawSize`). Flag any event where `knownSize` (which decides muting) and the displayed number disagree across 5,000, so an event isn't shown as "in range" and muted for different-looking reasons.
+- Never pass the filter into `rateDate`, `dateCrowdFight`, `eventCrowdFight` or the day strip read. Add a test that changing the setting leaves the day's score identical.
+- Compare the range against the number the row shows (highlighted crowd, else `drawSize`). Flag events where `knownSize` (which decides muting) and the displayed number fall on different sides of 5,000.
 
-### Open questions (crowd size range)
+### Answers to the open questions (Kylie, Oct 14)
 
-- **A. Header and sheet totals ("5 events · 108k"), and the other day counts (Explore week count, This day card):** count visible events only, or all events? Today the count includes every venue event while the "108k" only adds events of 5,000+ (`MapScreen.tsx:164-166`). **Lean: visible events only** for the count (it should match the rows you see, with the hidden line explaining the rest), and the crowd total stays 5,000+ of the visible events. Kylie to decide.
-- **B. Up against and Local Competition:** do hidden events still appear there? They're crowd competitors. **Lean: yes, they still appear**, because the read uses them, but only the 5,000+ ones (already the rule in `EventScreen.tsx:182` and `DayTimeline.tsx:16`). Kylie to decide.
-- **C. Same homestand / Also on:** filtered or not? Lean: not filtered (it's a schedule, not a crowd list).
-- **D. Lineup label on other weeks:** only "This week's lineup", or also "Next week's lineup"? Lean: this week only, as approved.
-- **E. Stub privacy vs the profile visibility switch:** see item 1 above (anyone on the profile vs no Public option for stubs).
+- **A. Day totals: count only visible events, for both the event count and the crowd total.** Why: the numbers should match the rows you see, and the hidden-events line accounts for the rest. Rejected: counting all events (numbers wouldn't match the list); a mixed rule (count all, total visible).
+- **B. Up against and Local Competition: hidden events still appear if they're 5,000+** (lean accepted). Why: they're real crowd competitors and the read uses them; hiding them would make the explanation disagree with the score. Rejected: filtering them like the lists.
+- **C. Same homestand / Also on: not filtered by the crowd range** (lean accepted). Why: it's a schedule of the same team's or performer's dates, not a crowd list. Rejected: filtering it.
+- **D. Lineup on every week, not just this week** (not the lean): "THIS WEEK'S LINEUP", "NEXT WEEK'S LINEUP", "LAST WEEK'S LINEUP". Rejected: this week only (the lean).
+- **E. Profile "Anyone" vs stub privacy:** still pending; see item 1.
+
+### Open questions
+
+- **C2. "Homestand" outside sports.** Kylie: "homestand" is sports language and may not fit non-sports events, or every team. Today `SameTour.tsx:37` shows **"Also on"** when the event has a `performer` (concerts and most Ticketmaster shows), and **"Same homestand"** otherwise. Matching (`:17-19`) is by performer, else by home team. A residency (a performer's run of nights) already reads "Also on". **Gap:** a non-sports event with no performer and no teams (theatre, comedy specials, fairs) matches nothing and the section hides, so the label never shows there. Open: what it should say for concerts and residencies ("Also on", "More dates", "Other nights"), and whether sports should keep "homestand" (it's wrong for a team's road games and neutral sites, which don't appear here anyway). Lean: "More dates" for everything, one word for all kinds.
+- **D2. Weeks further out:** lean "WEEK OF OCT 26 · LINEUP · N EVENTS" (replacing today's "OCT 26–NOV 1"). Kylie to confirm.
+- **E. Profile "Anyone" vs stub privacy:** see item 1 (narrow-only rule; "People I approve" vs "Friends" naming).
 
 ### On hold (Kylie working with Claude)
 
@@ -1000,7 +986,7 @@ Builder checks:
 
 ### Open flag: "~55,000 Estimated" on NLCS G3
 
-**Today on main:** unchanged at 635a164 (`src/data/crowdFigures.ts`, `src/data/results.ts`); finding below still holds. **Change:** none; recheck after the game.
+**Build instruction:** no code change. After the game, check that the nightly results pass writes LA's Oct 14 result and the page switches to Announced. Context: `src/data/crowdFigures.ts` and `src/data/results.ts` are unchanged at 635a164.
 
 The live event page shows "~55,000 Estimated" for NLCS G3 (Dodgers vs. Brewers, Dodger Stadium). Checked against Final > Announced > Estimated (D04). **Finding: the code is behaving correctly; no Announced or Final figure exists.**
 
