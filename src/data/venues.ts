@@ -8993,8 +8993,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'washington-dc',
     names: [{ name: 'William H. Greene Stadium' }],
     location: [-77.020737, 38.925662],
-    // Round-2 rule: same source gives 7,086 seats and 10,000 football; blank until settled (BACKLOG).
-    capacity: [],
+    // DC3 (Kylie, Oct 14, 2026): store the 7,086 seats as reported; the same source's 10,000 for football is not used.
+    capacity: [{ seats: 7086, setup: 'football', note: 'Reported (Wikipedia, https://en.wikipedia.org/wiki/William_H._Greene_Stadium); Howard publishes no figure.' }],
     roof: 'open',
   },
   'wolf-trap-filene-center': {
@@ -9308,8 +9308,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Hollywood Casino Amphitheater' },
     ],
     location: [-90.470094, 38.74481],
-    // Round-2 rule: 20,000 is labelled estimated (Ticketmaster); 6,805 pavilion / 19,000 standing also reported; blank (BACKLOG).
-    capacity: [],
+    // STL2 with the IND4 lawn rule (Kylie, Oct 14, 2026): the total with lawn, estimated. 6,805 pavilion / 19,000 standing also reported (The Vendry).
+    capacity: [{ seats: 20000, setup: 'concert', note: 'Estimated, total including lawn (Ticketmaster, https://blog.ticketmaster.com/step-inside-hollywood-casino-amphitheater-st-louis-mo/).' }],
     roof: 'covered',
   },
   'the-muny': {
