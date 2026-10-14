@@ -5,6 +5,7 @@
 // `sport`; the type is worked out on read, so feeds, the catalog and old stubs need no migration.
 
 import { TEAMS } from './teams';
+import { VENUES } from './venues';
 import type { CrowdEvent, Entry } from './types';
 
 export type TypeCategory = 'sports' | 'music' | 'arts' | 'family' | 'fairs' | 'popup' | 'watch' | 'other';
@@ -54,6 +55,7 @@ export const EVENT_TYPES: readonly TypeDef[] = [
   { key: 'fairs.market', category: 'fairs', label: 'Market', icon: 'storefront' },
   { key: 'popup', category: 'popup', label: 'Pop-up', icon: 'lightning' },
   { key: 'watch.broadcast', category: 'watch', label: 'Watch party', icon: 'television' },
+  { key: 'watch.screening', category: 'watch', label: 'Live screening', icon: 'projector-screen' },
   { key: 'other', category: 'other', label: 'Event', icon: 'ticket' },
 ];
 
@@ -213,10 +215,22 @@ function sportType(raw: string, title = ''): EventType {
   return make('sports.other');
 }
 
+/**
+ * A room whose business is screens: an immersive dome or a cinema (Live screening, Kylie, Oct 14, from
+ * docs/research/topics/cosm-immersive-venues-answer.md section 4a: what is shown first, then where). Brands and the
+ * word "cinema" only; "theatre"/"theater" stays out, since most concert rooms carry it.
+ */
+const SCREEN_VENUE = /\b(?:cosm|sphere|cinemas?|cineplex|cinemark|cin[eé]polis|amc|regal|imax|alamo drafthouse|harkins|marcus theatres?|landmark cinemas?)\b/i;
+
+/** A live event shown elsewhere: in a dome or cinema it's a Live screening; in an arena, bar or plaza a Watch party. */
+function watchType(venueName: string | undefined): EventType {
+  return make(venueName && SCREEN_VENUE.test(venueName) ? 'watch.screening' : 'watch.broadcast');
+}
+
 /** The type of a listed event (item 11). */
 export function eventType(event: CrowdEvent): EventType {
   const title = `${event.title} ${event.officialTitle ?? ''}`;
-  if (event.kind === 'live-broadcast') return make('watch.broadcast');
+  if (event.kind === 'live-broadcast') return watchType(event.place.type === 'venue' ? (VENUES[event.place.venueId]?.names.map((n) => n.name).join(' ') ?? event.place.venueId) : event.place.name);
   if (event.kind === 'festival') return make('music.festival');
   const audience = event.audience;
   if (audience.domain === 'sports') return sportType(audience.sport, title);
@@ -238,10 +252,10 @@ export function eventType(event: CrowdEvent): EventType {
 }
 
 /** The type of a stub (hand-typed or taken from a listing), from what it stored: `kind`, `sport`, the title. */
-export function entryType(entry: Pick<Entry, 'kind' | 'sport' | 'title'>): EventType {
+export function entryType(entry: Pick<Entry, 'kind' | 'sport' | 'title'> & Partial<Pick<Entry, 'venue'>>): EventType {
   const kind = entry.kind ?? 'game';
   const sport = entry.sport ?? '';
-  if (kind === 'live-broadcast') return make('watch.broadcast');
+  if (kind === 'live-broadcast') return watchType(entry.venue);
   if (kind === 'festival') return make('music.festival');
   if (kind === 'game') return sportType(sport, entry.title);
   // A hand-typed Event is stored with sport "Concerts" (manualEntryFrom), so the kind decides first.
