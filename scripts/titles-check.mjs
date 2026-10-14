@@ -62,6 +62,21 @@ try {
   if (mergeDuplicates([nets, addOn]).length !== 2) (failed += 1), console.log('FAIL step 0: an add-on merged into its game');
   else console.log('ok   Step 0: an add-on is not the game (different admission)');
 
+  // Item 1: pop-up sizing and one show counted once across sellers.
+  const { popupDraw, popupExplainer } = await server.ssrLoadModule('/src/data/sources/popupSizing.ts');
+  const sold = popupDraw({ capacity: 400, soldOut: true, source: 'test' });
+  const open = popupDraw({ capacity: 400, source: 'test' });
+  const none = popupDraw({ source: 'test' });
+  if (sold?.count !== 380 || popupExplainer(sold) !== 'Sold out · 95% of 400 capacity' || open?.count !== 320 || none !== undefined) (failed += 1), console.log(`FAIL pop-up sizing: ${sold?.count} ${popupExplainer(sold)} ${open?.count} ${none}`);
+  else console.log('ok   Pop-up sizing: 400 sold out → ~380 ("Sold out · 95% of 400 capacity"), not sold out → 320, nothing → unsized');
+  const { dropShowsTicketmasterHas } = await server.ssrLoadModule('/src/data/sources/seatgeekSource.ts');
+  const tmShow = { ...show('Hugel', { performer: 'Hugel', sourceId: 'ticketmaster' }), id: 'tm-s' };
+  const sgShow = { ...show('HUGEL', { performer: 'HUGEL', start: '21:00', sourceId: 'seatgeek' }), id: 'sg-s' };
+  const sgOther = { ...show('Pawsa', { performer: 'Pawsa', sourceId: 'seatgeek' }), id: 'sg-o' };
+  const kept = dropShowsTicketmasterHas([sgShow, sgOther], [tmShow]);
+  if (kept.length !== 1 || kept[0].id !== 'sg-o') (failed += 1), console.log(`FAIL seller dedupe: kept ${kept.map((e) => e.id).join(', ')}`);
+  else console.log('ok   Seller dedupe: a SeatGeek show Ticketmaster lists is dropped, the rest kept');
+
   const sched = scheduleGameTitle('Clippers', { home: true, opponent: 'Nuggets', preseason: true });
   if (sched !== 'Nuggets at Clippers · Preseason') (failed += 1), console.log(`FAIL schedule title: ${sched}`);
   const rel = teamRelativeTitle({ home: true, opponent: 'Padres' });

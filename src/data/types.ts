@@ -224,7 +224,9 @@ export interface CrowdEvent {
     games?: number;
     seasons?: string;
     /** Whose crowds: this team's here, this team's and the league's, the league's, or just the building (C031). */
-    basis?: 'team' | 'blend' | 'league' | 'building';
+    basis?: 'team' | 'blend' | 'league' | 'building' | 'popup';
+    /** A pop-up's sizing (build 5, item 1): the share of stated capacity used, the capacity, and why. */
+    popup?: { share: number; capacity: number; soldOut: boolean };
   };
   /** The feed lists a tracked team as home, but the site is neutral (a bowl game). Not sized from its usual crowd (C005). */
   neutralSite?: boolean;

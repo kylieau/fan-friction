@@ -73,6 +73,10 @@ try {
   const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
   const { dropTicketmasterGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
+  // SeatGeek (build 5, item 1): shows Ticketmaster misses. Off until Kylie adds the free client id as a secret.
+  const { loadSeatgeekEvents, dropShowsTicketmasterHas } = await server.ssrLoadModule('/src/data/sources/seatgeekSource.ts');
+  const sgKey = process.env.SEATGEEK_CLIENT_ID;
+  if (!sgKey) console.log('SeatGeek: no SEATGEEK_CLIENT_ID, skipped.');
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
   if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
   const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
@@ -91,6 +95,15 @@ try {
     seedEvents.catalog(metroId),
     tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], pages: 0 }),
   ]);
+  // A new source failing must not cost the city its night: log it and carry on without it.
+  const sgAll = sgKey
+    ? await loadSeatgeekEvents(metroId, sgKey).catch((error) => {
+        console.log(`${metroId}: SeatGeek failed (${error.message}); kept the rest.`);
+        return [];
+      })
+    : [];
+  const sg = dropShowsTicketmasterHas(sgAll, tm.events);
+  if (sgKey) console.log(`${metroId}: SeatGeek ${sg.length} shows Ticketmaster doesn't list (${sgAll.length - sg.length} it does).`);
   if (tmKey) {
     const top = tm.unknownVenues.slice(0, 8).map((v) => `${v.name} (${v.count})`).join(', ');
     console.log(`${metroId}: Ticketmaster ${tm.events.length} listings kept at known venues, ${tm.unknownVenues.reduce((n, v) => n + v.count, 0)} at rooms the table lacks${top ? `: ${top}` : ''}.`);
@@ -109,7 +122,7 @@ try {
     data: e,
   });
   const seen = new Set();
-  const events = dropTicketmasterGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...tm.events].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
+  const events = dropTicketmasterGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...tm.events, ...sg].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds and past dates stay.
   if (!dryRun) {

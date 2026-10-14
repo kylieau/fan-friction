@@ -13,6 +13,7 @@
 import { COVERED_METRO_IDS, METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
 import { VENUES } from '../venues';
+import { showKeys, venueByNameOrPlace } from './venueMatch';
 
 const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
@@ -54,23 +55,8 @@ function venueFor(metroId: string, v: TmVenue) {
   const ours = Object.values(VENUES).filter((venue) => venue.metroId === metroId);
   const byId = ours.find((venue) => venue.ticketmasterIds?.includes(v.id));
   if (byId) return byId;
-  const name = v.name.trim().toLowerCase();
-  const byName = ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === name));
-  if (byName || !v.location) return byName;
-  // Within 300 m of a venue we know: the same room under a name we have not stored (C016).
-  const lat = Number(v.location.latitude);
-  const lng = Number(v.location.longitude);
-  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return undefined;
-  const nearby = ours.filter((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
-  // Several rooms can share a campus/building. Without an id or name match, proximity is ambiguous.
-  return nearby.length === 1 ? nearby[0] : undefined;
-}
-
-function metersBetween([lng1, lat1]: readonly [number, number] | number[], [lng2, lat2]: readonly [number, number] | number[]): number {
-  const r = Math.PI / 180;
-  const x = (lng2 - lng1) * r * Math.cos(((lat1 + lat2) / 2) * r);
-  const y = (lat2 - lat1) * r;
-  return Math.sqrt(x * x + y * y) * 6_371_000;
+  // By name, else within 300 m of a room we know (C016); shared with the other sellers (venueMatch.ts).
+  return venueByNameOrPlace(metroId, v.name, v.location ? Number(v.location.latitude) : undefined, v.location ? Number(v.location.longitude) : undefined);
 }
 
 /** Listings that are not a night out: venue tours, parking, camping, VIP add-ons, premium seating, passes. */
@@ -287,11 +273,9 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
       const performer = (performers[0] ?? e.name).trim();
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
-      // One performer in one building on one date is one show, whatever time each listing carries (C014).
-      const show = [e.dates.start.localDate, venue.id, performer.toLowerCase()].join('|');
-      // One event can also be listed under two segments with two performer names (a festival
-      // as Music and as Miscellaneous), so the same name in the same building on the same date is one too.
-      const named = [e.dates.start.localDate, venue.id, e.name.toLowerCase().replace(/\s+/g, ' ').trim()].join('|');
+      // One performer in one building on one date is one show, whatever time each listing carries (C014); one event
+      // listed under two segments with two performer names is caught by its name (the shared key, venueMatch.ts).
+      const [show, named] = showKeys(e.dates.start.localDate, venue.id, performer, e.name);
       if (shows.has(show) || shows.has(named)) continue;
       shows.add(show);
       shows.add(named);

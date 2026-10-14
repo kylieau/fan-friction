@@ -14,6 +14,7 @@ import {
   drawSize,
   estimateMark,
   eventType,
+  popupExplainer,
   setStubVisibility,
   stubDefault,
   stubLevel,
@@ -405,6 +406,8 @@ export function EventScreen() {
               </>
             )}
             {shown.kind === 'estimated' && <DrawNote event={e} />}
+            {/* A pop-up's estimate says how it was made (build 5, item 10): "Sold out · 95% of 400 capacity". */}
+            {shown.kind === 'estimated' && popupExplainer(e.expectedDraw) && <p className="crowd-note">{popupExplainer(e.expectedDraw)}</p>}
           </>
         ) : me.soldOut ? (
           <span className="crowd-number small">Sold Out</span>
