@@ -20,13 +20,13 @@ Each item gives what we do, why, and the options we turned down.
 - "~" on every estimated crowd, and a POP-UPS section in About this estimate (item 10; Mosaic v4, Oct 14).
 - Event types: 8 categories, 36 types, "Special" retired (item 11; Mosaic, Oct 14).
 - Type icons: Phosphor plus six custom, at the start of every title, sized per surface (item 12; Mosaic, Oct 14).
-- Event names: chip / short / full lengths and the parsing fixes (item 13; Mosaic, Oct 14; adjusted Oct 14 by the naming review answers: Preseason is now a suffix, teams lead every title, "vs." with a period).
+- Event names: chip / short / full lengths and the parsing fixes (item 13; Mosaic, Oct 14; adjusted Oct 14 by the naming review answers: Preseason is now a suffix, teams lead every title, "vs." with a period; follow-up research Oct 14: "· Spring training" for MLB spring games, dedupe before naming, All-Star / tournament / pop-up / comedy / theatre / minor-league playoff names).
 - Naming review: all 30 answers (N01–N30, Kylie, Oct 14) recorded as change instructions (item 15). Copy of the answers: `docs/build-5/research/naming-review-answers-oct14.json`.
 - Commit the naming review and the types-and-naming table to docs/research/topics (item 14).
 
 Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). C2 ("More dates") and D2 ("WEEK OF OCT 26 · LINEUP") were also accepted on Oct 14. No open questions remain from this round.
 
-The naming review is closed (item 15): Cosm is a Watch party, the Add form says Concert, full playoff words on the event page (N03 follows her note, not her form choice; see item 15), artist before tour, co-bills and multi-day passes all decided. Three answers differ from the lean: N03 (note overrides choice), N08 (Preseason moves to a suffix) and N29 (note overrides choice: "vs." with a period). N16 adds a note: codes stay on chips. Item 13's "still open" list is mostly settled; what's left is listed there.
+The naming review is closed (item 15): Cosm is a Watch party, the Add form says Concert, full playoff words on the event page (N03 follows her note, not her form choice; see item 15), artist before tour, co-bills and multi-day passes all decided. Three answers differ from the lean: N03 (note overrides choice), N08 (Preseason moves to a suffix) and N29 (note overrides choice: "vs." with a period). N16 adds a note: codes stay on chips. Item 13's "still open" naming cases are now settled by Kylie's follow-up research (Oct 14; verbatim in `docs/build-5/research/naming-followup-oct14-verbatim.md`): MLB spring training uses "· Spring training", dedupe runs before naming, six new house rules. Only seed/feed duplicate clashes stay in backlog.
 
 Regional events (item 2): backlog next step — Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog; nothing wired in build 5. CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug; keep the no-code check after the game). CLOSED: where crowds with no size show in Explore (blank rule plus existing muted chips; see item 10's closed list). The "~" question is closed (item 10).
 
@@ -1184,7 +1184,7 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
 - **East LA Classic:** "East LA Classic (Garfield vs. Roosevelt)" becomes "Roosevelt) at East LA Classic (Garfield" because the vs match (`:36`) runs inside brackets. Don't split on a "vs" inside brackets; treat the outer name as the event name: "Garfield vs. Roosevelt · East LA Classic" (N18).
 - **Ticketmaster event names glued to a team:** the feed text "Copa Las Vegas: USA vs Mexico" becomes "Mexico at Copa Las Vegas: USA". Split off text before a colon as the event name and put it after the teams: "USA vs. Mexico · Copa Las Vegas" (N18). When the split is unclear, show the original title.
 - **Lost neutral flags:** "Florida vs. Georgia (neutral site)" (`src/data/seed/listings2026.ts:106`) has no `neutralSite` flag, so it reads "Georgia at Florida". Set the flag (the `neutralFootball` helper at `:42` should set it for every game it builds). The archived copy of the Red River game also lost its flag and reads "Oklahoma at Texas"; restore it in the archive.
-- **Spring training:** the MLB map feed (`src/data/sources/mlbSource.ts:228-240`, `toEvent` at `:138`) never sets `preseason`; only the team schedule does (`:213`). Set it when `gameType === 'S'` so the "· Preseason" rule applies. (The spring training wording itself is open, below.)
+- **Spring training (UPDATED Oct 14, follow-up research case 1):** the MLB map feed (`src/data/sources/mlbSource.ts:228-240`, `toEvent` at `:138`) never sets `preseason`; only the team schedule does (`:213`). Set a spring flag when `gameType === 'S'` on both paths, and title MLB spring games with the suffix "· Spring training", not "· Preseason" ("Cubs at Reds · Spring training"; see "Naming cases settled" below).
 - **World Series doubling:** old seeds with round "World Series" and title "World Series Game 1" read "World Series G1 · World Series Game 1". Strip the round text from the title when it repeats the label.
 - **College "FB" always shown:** college football short names already contain "FB", so the chip always shows it, though the docs show the tag only on a clash. Show the squad code on chips only when two chips clash. **Reconciled with N16:** short and full names drop the code for a readable sport label ("Duke at Georgia Tech · Football", "X at UCLA · Women's basketball"); the code (FB / MBB / WBB) stays on chips and wherever space is tight, and on chips still only on a clash ("Georgia Tech FB" only when another Georgia Tech chip that night would match).
 - **Lucha libre stored as boxing:** confirm the feed's genre text, then fix. On main, `sportOf` checks "wrestling" before "boxing" (`ticketmasterSource.ts:173`), so the order isn't the cause; the CMLL event's genre text likely says boxing (or not wrestling). Look at the raw Ticketmaster genre/subgenre for it first, then map lucha libre to wrestling (`sports.combat`, subtype wrestling), per item 11. Rejected: reordering the checks blind.
@@ -1206,7 +1206,52 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
 
 **Settled by the naming review (item 15):** bowl names (N20), festival weekends and days (N12), watch party names (N01), round wording (N03, N05: "Semifinals", full words on the page), the "· City" ending at neutral sites (N06, N17: venue and city on the page, not in the title), tour-first titles (N10).
 
-**Still open (pending follow-up research, Kylie running Oct 14; add the answers when they land):** spring training wording ("Spring Training" or "Spring", now as a suffix), All-Star and tournament names, pop-up names, comedy and theatre headliners, HockeyTech playoff games with no game number, and a hand seed and feed copy of the same game counting as a clash.
+**Naming cases settled by the follow-up research (Kylie, Oct 14).** Source, verbatim prompt and answer: [`docs/build-5/research/naming-followup-oct14-verbatim.md`](research/naming-followup-oct14-verbatim.md). Each case uses the research's recommended option; the alternative is rejected. Refs are at main 635a164.
+
+**Step 0 · Dedupe before naming (case 7).**
+- Today: duplicates are dropped only within one source: Ticketmaster's one-show key (`src/data/sources/ticketmasterSource.ts:287-294`) and an id check across sources (`uniqueById`, `src/data/index.ts:33-35`). Across sources, `preferSeed` (`src/data/index.ts:42-45`) keeps only seed events whenever any seed exists for the date, so there is no per-event merge.
+- Change: before any title is built, merge records that are the same occurrence and the same admission scope (a festival pass is not the same as a concert inside it), then generate one title from the merged facts. Authority order: editorial correction > official league/organizer > official venue or authorized seller > aggregator; within a tier, the latest confirmed info wins; an aggregator never overrides the organizer just because it is newer. Keep the original titles and sources internally. Example: "Chicago Cubs vs. Los Angeles Dodgers" and "Dodgers @ Cubs — Preseason" merge to "Dodgers at Cubs · Preseason" (chip "Cubs Preseason"); if it is an MLB spring game, the suffix is "· Spring training" per case 1.
+- Rejected: preserving the organizer's full title as the default (the research keeps it only as the fallback when teams or home/away can't be resolved; use that fallback, never parse an uncertain title into invented facts).
+
+**Case 1 · MLB spring training.**
+- Today: `mlbSource.ts:213` sets `preseason` for `gameType === 'S'` on the team schedule only; `eventTitle.ts:212` would print "Preseason".
+- Change: suffix "· Spring training". Chip "Reds Spring training"; short "Cubs at Reds · Spring training"; full "Cubs at Reds · Spring training (Cactus League)" (Grapefruit League likewise). Venue stays in metadata.
+- Rejected: Cactus/Grapefruit League as the chip designation (suits a spring-only view, not general discovery); "· Preseason" for MLB spring games.
+
+**Case 2 · All-Star games and skills events.**
+- Today: nothing names All-Star events; HockeyTech skips All-Star seasons (`src/data/sources/hockeytechSource.ts:161`), and `listTitle` (`eventTitle.ts:193-198`) would run any feed title through `gameName` as a matchup.
+- Change: lead with the league event name; never invent a two-team matchup. Chip "NBA All-Star Game"; short "NBA All-Star Game"; full "NBA All-Star Game 2027" (same for MLB, NHL, WNBA, MLS). Skills events use their real names, only those confirmed that edition: "MLB Home Run Derby"; "NBA 3-Point Contest" / "NBA Slam Dunk" / "NBA Shooting Stars" / "NBA Skills Challenge"; "NHL All-Star Skills"; "WNBA 3-Point Contest" / "WNBA Shooting Stars" / "WNBA Skills Challenge"; "MLS All-Star Skills Challenge". Sponsors go in metadata.
+- Rejected: teams first ("USA Stars vs. World · NBA All-Star Game 2026") as the default; only when a matchup is a separately selectable record, using that edition's real team names.
+
+**Case 3 · Tournaments, bowls, invitationals.**
+- Today: `gameName` (`eventTitle.ts:74-77`) puts the event name first at neutral sites (fixed by step 7); no session titles exist.
+- Change: a single game is teams first: "LSU vs. Florida · SEC semifinal" (full "LSU vs. Florida · SEC men's basketball semifinal"); "Indiana vs. Alabama · Rose Bowl Game 2026" with the CFP round in a separate round field (a bowl isn't automatically a final); "Duke vs. Kansas · Maui" (full "Duke vs. Kansas · Maui Invitational"; sponsor in metadata). A session or pass is tournament first: "SEC men's basketball tournament · Session 1", included games listed underneath.
+- Rejected: the session form as the title for a single game (never title a session as if it admits to one matchup, or vice versa).
+
+**Case 4 · Pop-ups with no venue name.**
+- Today: show titles pass through (`eventTitle.ts:194`); unsized pop-ups use `unsized` (`src/data/seed/past2026.ts:90`).
+- Change: chip "Jesse Welles Pop-up"; short "Jesse Welles · Pop-up"; full "Jesse Welles · Pop-up show". The venue never goes in the title; the location field gets a verified "Open lot at [address]", or "Location to be announced" only if the organizer hasn't said (a missing feed value isn't enough). Editorial rule, no official convention.
+- Rejected: "· Outdoor show" as the default (only when outdoors is confirmed and the organizer doesn't call it a pop-up).
+
+**Case 5 · Comedy and theatre.**
+- Today: feed titles pass through (`eventTitle.ts:194`; "Waitress (Touring)", N25).
+- Change: solo comedy leads with the performer ("Ali Wong", or "Ali Wong · {tour}" when the tour is verified); festivals, ensembles and branded recurring shows lead with the show name. Theatre is production first ("Waitress"; full "Waitress · Touring production" when it matters, consistent with N25).
+- Rejected: "Ali Wong · Live" (adds little); "Waitress · With {performer}" in the full title except when that cast member is confirmed for the performance (chip and short stay show-led).
+
+**Case 6 · Minor-league hockey playoffs with no game number.**
+- Today: HockeyTech playoffs set `stakes.round` to "{league} Playoffs" with no game number (`hockeytechSource.ts:212`, also `:325`); `stakesLabel` (`eventTitle.ts:55-61`) prints the round alone.
+- Change: omit the number; never guess or print "Game TBD". Chip "Gulls AHL playoffs"; short "Reign at Gulls · AHL playoffs"; full "Reign at Gulls · Calder Cup Playoffs". Use each league's own names (AHL Calder Cup Playoffs, ECHL Kelly Cup Playoffs), not NHL round names. Add "G2" / "Game 2" once confirmed.
+- Rejected: leading with the verified round as the default ("Reign at Gulls · Division SF"; full "Reign at Gulls · Calder Cup Playoffs, Division Semifinals"); use it only once the round is verified.
+
+**Backlog (not covered by the research):** a hand seed and feed copy of the same game counting as a clash (`preferSeed`, `src/data/index.ts:42-45`). Case 7's merge may resolve it, but the research doesn't address seed vs. feed; decide when step 0 is built.
+
+**Naming rules: six new house rules (Oct 14 follow-up research).**
+- Name the admission unit: matchup, session, pass, competition or production.
+- Spring training is its own suffix; Cactus/Grapefruit League is secondary context.
+- Omit unknown facts; never invent them. Add game numbers, opponents, rounds and locations once confirmed.
+- Use edition-specific All-Star names and formats; sponsor names go in metadata unless essential to recognition.
+- Deduplicate before naming; generate titles from verified facts.
+- Length limits apply to compact versions; full titles may wrap past 64 characters.
 
 ### 14. Commit the naming research docs
 
@@ -1306,7 +1351,7 @@ Sources: the review `docs/build-5/research/naming-review-oct14.html` (29 issues;
 
 **N08 · Preseason is a suffix (review #15; conflict). CHANGED FROM THE APPROVED DECISION.**
 - Today: preseason shows only on the team page as a label first (`eventTitle.ts:210-213, 222-223`).
-- Change: "Nuggets at Clippers · Preseason"; chip "Clippers Preseason". Item 13 step 5 is updated and marked adjusted. Applies to spring training too (item 13 MLB fix).
+- Change: "Nuggets at Clippers · Preseason"; chip "Clippers Preseason". Item 13 step 5 is updated and marked adjusted. MLB spring training now uses "· Spring training" instead (item 13, follow-up research Oct 14).
 - Why: Kylie chose the reviewer's version; it matches teams-first (N04). Step 2 still protects the designation from cuts.
 - Rejected: the earlier approved prefix "Preseason · Nuggets at Clippers" (the lean).
 
