@@ -30,6 +30,9 @@ const SCALE = 7.5;
 // New York is also a hub, not transit (research, Oct 6, 2026, docs/research/city-builds/new-york/new-york-city-type-answer.md): ~60% of a big crowd
 // arrives by car, weighted by seats. The ballparks broke the assumption — Citi Field ~60% car, Yankee Stadium ~50%.
 // Only the rail-hub buildings (MSG, Barclays, Radio City) are transit-tier; Long Island and the Meadowlands drive.
+// Kept hub after the Oct 14 arrival-share research (new-york-arrival-shares-answer-claude.md / -codex.md; Kylie, Oct 14): no
+// metro-wide majority either way, and the type only moves spillover here (every room has its own carShare). Its sentence is its
+// own (cityTravel.ts). A car share counts everyone arriving by car, taxi or rideshare: they use the same streets and curbs.
 // Boston is a hub (research, Oct 12, 2026, docs/research/city-builds/boston/boston-city-type-answer.md): downtown rooms are rail-adjacent
 // and parking-starved, but Gillette and Xfinity pull the capacity-weighted share toward driving. Overrides on Fenway, Gillette and Xfinity only where sourced.
 // Montreal is in between with a transit core (research, Oct 7, 2026, docs/research/city-builds/montreal/montreal-city-type-answer.md): the Bell Centre and the

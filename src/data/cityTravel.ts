@@ -21,6 +21,8 @@ const OWN_LINE: Record<string, string> = {
   atlanta: PATTERN.hub,
   'ottawa-gatineau': PATTERN.sprawl,
   'las-vegas': 'many fans walk over from the Strip; most others drive.',
+  // New York (Kylie, Oct 14, from new-york-arrival-shares-answer-codex.md): no metro-wide majority either way; it depends on the venue.
+  'new-york': 'fans ride trains or drive, depending on the venue.',
 };
 
 /** "Los Angeles: most fans drive to events." Null for a city the app doesn't know. */

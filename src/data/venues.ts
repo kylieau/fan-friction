@@ -2413,8 +2413,10 @@ export const VENUES: Record<string, Venue> = {
   'citi-field': {
     id: 'citi-field',
     metroId: 'new-york',
-    // Reported: MTA counted 25–30% by subway at an average game (2011); the research adds ~7% for the LIRR. Lots are shrinking for the casino build.
-    carShare: 0.6,
+    // Reported (Kylie, Oct 14, 2026): the Mets' 2024 figures (turnstile admissions, playoffs included): 55.7% Mets parking + 2.4% Skyview
+    // parking + 4.3% rideshare = 62.4% by car; subway 24.2%, LIRR 10.8%. Was 0.6 (2011 MTA). Lots shrink for the casino build from 2026:
+    // recheck. Source: new-york-arrival-shares-answer-codex.md.
+    carShare: 0.62,
     names: [{ name: 'Citi Field' }],
     location: [-73.8458, 40.7571],
     ticketmasterIds: ['KovZpZAalvtA', 'rZ7HnEZ17F44V'],
@@ -2466,8 +2468,10 @@ export const VENUES: Record<string, Venue> = {
   'madison-square-garden': {
     id: 'madison-square-garden',
     metroId: 'new-york',
-    // Estimated (range 15–30%): sits on Penn Station, no parking on site, inside the congestion zone. No count since 2003.
-    carShare: 0.2,
+    // Reported (Kylie, Oct 14, 2026): MSG's own surveys in the 2023 City Planning Commission report: private vehicles 23–38%,
+    // taxis/black cars 5–9%, transit 50–61%. Midpoints with taxis counted as cars: 37% (range 28–47%). Was 0.2 (estimated).
+    // Source: new-york-arrival-shares-answer-claude.md (a 2003 survey found 43% with taxis, per the Codex answer).
+    carShare: 0.37,
     names: [{ name: 'Madison Square Garden' }],
     location: [-73.9934, 40.7505],
     ticketmasterIds: ['KovZpZA7AAEA', 'Za5ju3rKuqZDv8mMivxUACKtKhT7rDXfsr'],
@@ -2481,8 +2485,10 @@ export const VENUES: Record<string, Venue> = {
   'ubs-arena': {
     id: 'ubs-arena',
     metroId: 'new-york',
-    // Official, LIRR observed: rail carried 8.8% of the gate at Islanders games and 5.3% at other events (2022). One value by Kylie's call.
-    carShare: 0.9,
+    // Reported (Kylie, Oct 14, 2026): 66% driving across 2024–25, from arena/LIRR monitoring shown to the Belmont advisory committee
+    // (63% for the partial 2025–26 season); LIRR 29% at Islanders games, 15% at other events. Was 0.9 (2022 LIRR counts).
+    // Source: new-york-arrival-shares-answer-codex.md; the driving definition (taxis included?) is unconfirmed.
+    carShare: 0.66,
     names: [{ name: 'UBS Arena' }],
     location: [-73.7259, 40.711],
     ticketmasterIds: ['KovZ917APye'],
@@ -2590,8 +2596,9 @@ export const VENUES: Record<string, Venue> = {
   'forest-hills-stadium': {
     id: 'forest-hills-stadium',
     metroId: 'new-york',
-    // Estimated: no parking at the venue or on nearby streets; the venue tells fans not to drive.
-    carShare: 0.15,
+    // Reported (Kylie, Oct 14, 2026): the operator's fan travel survey (over 10,000 responses, undated, via AEG): 25% driving or
+    // rideshare, 75% train. Concert audiences. Was 0.15 (estimated: no parking at the venue or nearby). Source: the Codex answer.
+    carShare: 0.25,
     names: [{ name: 'Forest Hills Stadium' }],
     location: [-73.8502, 40.7197],
     ticketmasterIds: ['KovZpZA777nA'],
@@ -2714,7 +2721,8 @@ export const VENUES: Record<string, Venue> = {
   'infosys-theater-msg': {
     id: 'infosys-theater-msg',
     metroId: 'new-york',
-    carShare: 0.2,
+    // Same building and entrances as the arena; MSG's 2023 survey figures cover arena and theater guests (Kylie, Oct 14, 2026).
+    carShare: 0.37,
     // Inside Madison Square Garden: a show here and a game upstairs stack on one night (the theater rule). The 2018 and 2023
     // rename months were not researched; the years are right.
     names: [
