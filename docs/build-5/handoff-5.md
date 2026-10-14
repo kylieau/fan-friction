@@ -2,7 +2,58 @@
 
 Builder: Claude Code (Opus 5.5, Fable 5.1 advisor), Oct 14, 2026. Source of truth: `docs/build-5/build-notes-5.md` (grounded at 635a164). Started from `main` at `d717cdc` (PR #57 merged first, after review and advisor sign-off).
 
-Status per notes item, file refs, judgment calls and open questions are below; the advisor log is at the end.
+Status per notes item, file refs, judgment calls and open questions are below; the advisor log is at the end. Everything is on `main` and pushed (one commit per step). Checks run at the end: `npm run build` (typecheck + build), `node scripts/city-build-check.mjs`, `node scripts/crowd-range-check.mjs`, `node scripts/event-types-check.mjs`, `node scripts/titles-check.mjs`: all pass. The repo has no test suite; the three new scripts are the tests for items 6, 11 and 13.
+
+## For Kylie (everything in one place)
+**Steps only you can do**
+1. **Run migration `supabase/migrations/0026_stub_visibility.sql`** in Supabase's SQL editor (run the PREVIEW query at its top first if you want the counts). Until you do, per-stub levels are saved but the database keeps the account-wide rule (an entry set Private is already hidden; a plan set Private and "Anyone" are not enforced). It never widens anyone's exposure.
+2. 🚩 **SeatGeek:** sign up for the free client id (check the API terms; no cost found), then add `SEATGEEK_CLIENT_ID` to the repo's Actions secrets. Until then the source stays off.
+3. **Paste terms:** the automated-access clause from AXS, DICE and Goldenvoice (each refused a normal fetch or hid the text). Insomniac's terms bar scrapers, so it isn't built.
+4. **Phone checks:** on the installed app, Add to calendar → Apple Calendar on an upcoming event; the level pill on the Stub it sheet and the event page (couldn't be screenshotted signed in here); the build 4 check still open (add a tag, star a city, enter seats, sign out and in).
+5. **Ticketmaster id catch-up** (X2, OTT2, EDM4, N12): `node scripts/ticketmaster-venues.mjs --all` needs the Ticketmaster key, which only the nightly job has.
+
+**Questions (one word each is enough)**
+1. **Read tile in Local Competition:** the notes said keep it, both boards dropped it; I followed the boards. Put it back?
+2. **First-open picker:** a row tap now sets home and leaves the picker open (board b), with Done to close. Or close on the row tap, as the notes' wording said?
+3. **Short-name budget:** the round and game ride outside the 32 characters, so "Brewers at Dodgers · NLCS, Game 3" keeps both teams. Or count them (it would read "Dodgers · NLCS, Game 3")?
+4. **Chip punctuation:** " · " before a playoff round ("Dodgers · NLCS G3"), a space before Preseason / DH1 / AHL playoffs, from your Oct 14 examples; the Oct 4 lock was parentheses. Unify?
+5. **Old stubs' titles** keep the old form ("NLCS G2 · Dodgers at Brewers"). Retitle them from their events?
+6. **STL2 Hollywood Casino Amphitheatre:** 6,805 seated, or a total with lawn (IND4)? **DC3 Greene Stadium 7,086:** the notes say "once confirmed"; Howard's page doesn't state it.
+7. **Cosm:** couldn't check how a Cosm listing is sold (the page renders nothing to a fetch). Shipped "Watch party" as you decided; say if it's sold as a screening.
+8. **Crowd size range:** Home's Today rows and favorite pages aren't in the notes' list and aren't filtered. Should they be?
+9. **Add-on filter:** Spurs free throws, Flyers "MUST HAVE TICKET TO GAME", Nets warm-ups, Scotiabank tours and BetMGM dinner reservations still list (as type "Event"). Tighten the filter?
+10. **N1 / B1** ("explain sprawl/hub/transit in plain words → build 5, with names and codes"): the notes give no build instruction or copy for it, and "names and codes" are a later research item, so nothing was built. Is it this build's?
+11. From Codex's PR #57: the Stubs tag-combining rule, and Wrigley's 0.367 vs 0.421 (below).
+
+**Notes-vs-board or notes-vs-notes calls I made** (each listed under its item): read tile (board), first-open row tap (board), STL2 (left blank), backfill order for "Only me" (no widening), short budget (advisor reading), Pop-ups section wording (board).
+
+## Status by notes item
+| Notes item | Status |
+|---|---|
+| 1. Concerts Ticketmaster misses | Partly: SeatGeek built and off (needs key); pop-up sizing built; festival registry built (no editions yet); AXS, DICE, Framework, Goldenvoice, Insomniac not built (terms / access); Pawsa not stored |
+| 2. Regional events | Backlog, as the notes say: research summarized into BACKLOG for your rule; nothing wired |
+| 3. Add to calendar (and Mosaic Oct 13 item 2) | Done |
+| Review form answers: city data checklist | Done except STL2, DC3 (conditional), N9 (when concerts list), the Ticketmaster id pass, RDU5 (next recalibration) |
+| Review form call-outs N2, N5, N6, N9, N10, OTT1 | N2 done (item 8); N5 already true (no "Nights" / "Your nights" label anywhere in the app; checked); N6 nothing to build (waits for Traffic; the empty story slot stays); N9 waits; N10, OTT1 done |
+| Mosaic Oct 13 item 1: stub privacy | Built; needs migration 0026 run |
+| Mosaic Oct 13 item 3: crowds with no size | Done |
+| Mosaic Oct 14 item 4: date page r3 | Done (read tile: see question 1) |
+| 5. Lineup label | Done |
+| 6. Crowd size range | Done |
+| 7. More dates | Done |
+| 8. Starred cities in the home picker | Done |
+| 9. Settings as one list | Done |
+| 10. "~" on estimates | Done (the pop-up explainer renders once a source sizes a pop-up) |
+| 11. Event types | Done |
+| 12. Type icons | Done (including the six custom icons) |
+| 13. Event names, three lengths, step 0 | Done, except openers, tournament sessions, pop-up names, official weekends (no data); the seed-vs-feed clash stays backlog |
+| 14. Commit naming research docs | Done |
+| 15. Naming review N01–N30 | Done (see items 11 and 13) |
+| CLOSED items (NLCS G3 "~55,000", unsized footer) | No code, as the notes say |
+
+**Notes refs that drifted** (all found by name, none guessed): venue rows moved by one line after PR #57's merge (`venues.ts`); `ExploreListScreen.tsx` header `:481` → `:479`, `weekWord` `:81-88` → `:81-92`, rows `:264` → `:261`; `MapScreen.tsx:111` → `:112`; `DateScreen.tsx` Local competition `:346-364` → `:345-368`; `App.tsx:80` → `:79`.
+
+**`/compact`:** you asked for /compact between items; it's a command only you can run, so I couldn't. I kept each advisor call to the item's own code instead.
 
 ## Before build 5: PR #57 (Codex, Build 4 check fixes)
 Reviewed, built merged onto `main`, advisor signed off, squash-merged as `d717cdc`. What it changes that Kylie will see: the Map's day total now counts a sold-out show with no published count at room size, as its chip already did. Caveat: the `backfillEntryCrowd` tightening only affects stubs not yet backfilled; a stub already tagged Announced from a reported-only figure stays that way (R04: never overwrite a filled field).
