@@ -29,9 +29,27 @@ All in `src/data/venues.ts` unless noted. Refs drifted by one line since 635a164
 ### Item 14: commit the naming research docs — done
 Copied to `docs/research/topics/`: `naming-review-oct14.html`, `event-types-and-naming-table.html`, `event-types-and-naming-table.md`, `naming-review-answers-oct14.json`. Originals in `docs/build-5/research/` untouched.
 
+### Mosaic Oct 14 item 7: "More dates" — done
+`src/components/SameTour.tsx:36-38`: one heading, "More dates"; the section's `aria-label` now matches ("More dates", was "Other dates"). Matching logic unchanged.
+
+### Mosaic Oct 14 item 5: lineup label — done
+`src/screens/ExploreListScreen.tsx:81-92` (`weekWord`; notes said `:81-88`): "This week's lineup", "Next week's lineup", "Last week's lineup", else "Week of Oct 26 · lineup" (shown uppercase by CSS, as before). `weekSpan` had no other user and was removed. Header render is at `:479` (notes said `:481`; PR #57 moved it).
+
+### Mosaic Oct 13 item 3: crowds with no size — done
+`src/components/WhyCard.tsx:84-91`: no size shows nothing (the crowd mark goes too, not only the dash). WhyCard is unmounted since build 4 but was changed as the notes say. Event page (`src/screens/EventScreen.tsx`, crowd block's last branch): "— Size unknown" replaces "No count found yet". Muting unchanged. The "Seats · no estimate yet" branch (room size known, no estimate) is unchanged: the size is known there.
+
+### Mosaic Oct 14 item 10: "~" on every estimated crowd — done, except the pop-up explainer (waits for item 1)
+- One rule, one helper: `estimateMark(event)` / `entryEstimateMark(entry)` in `src/data/crowdFigures.ts` ("~" when the highlighted crowd is an estimate). Used by `crowdShort` (`src/map/crowdPoints.ts`, which covers map chips and every `RowBody` row), the selected card (`ChipCard.tsx`), the timeline (`DayTimeline.tsx`), the event page's Up against rows, Stubs rows (`StubRows.tsx`) and Your year's Biggest crowd line (`YourYear.tsx`).
+- `crowdShort`'s `withEst` flag is gone (both callers passed false, so a "~" inside it would never show); the rarely reached expected-draw branch also leads with "~".
+- Event page: "Up to N" is gone; every estimate reads "~N Estimated". The About sheet's Playoff text drops `as "Up to"` and gains a **Pop-ups** section (80% of stated capacity, 95% when sold out or waitlisted; festivals per day). No event uses that rule until item 1's `popupSizing.ts` exists, so the explainer line ("Sold out · 95% of 400 capacity") is not built yet.
+- Judgment calls (advisor agreed): extended past the three named surfaces to Stubs rows, Your year, the timeline and Up against ("every estimated crowd"; rejected: the three named surfaces only). A sold-out room size with no count stays bare (it is the room, not an estimate; `highlightedCrowd` is null for it). Day totals (header, sheet, WhyCard) stay bare: they sum mixed kinds.
+- Measured at 390 px (Playwright): badge right edge vs crowd right edge, 0 rows off by more than 1 px on Explore List (105 rows), Map sheet, Home and two date pages; map chips checked by screenshot.
+
 ## Advisor log
 
 | When (PT, Oct 14) | Asked | Said | Did |
 |---|---|---|---|
 | Before merge | Sign off on PR #57 after my review and a merged build | Sign off; squash-merge; relay Codex's two questions; mention the day-total change; note the backfill caveat; expect line drift in the three files | Merged `d717cdc`; recorded above |
+| City data | EDM3 mute method, N9 Ryan Field, CLE1 drop vs demote, IND4 Victory Field, DC3/STL2 conditionals | Agreed on all; store N10 and OTT1 with no setup (the notes said concert for N10); fetch Howard once for DC3; STL2 contradicts itself, list it; check X1 rows; run city-build-check | Did all of that |
+| Item 10 | Sold-out room size, other compact surfaces, event-page explainer, About sheet, day totals | Agreed on all; one shared helper for the mark; drop the dead `withEst`; fix the stale "Up to" comment; measure badge edges and screenshot chips | Did all of that |
 | Plan | Overall build order and how to handle the missing boards, `icons.cjs`, the SeatGeek key, `/compact` | Data/docs first; small copy items; "~"; date page; home picker then Settings; crowd range; types → icons → names (dedupe last, own call); privacy with a migration that main tolerates unapplied; calendar; item 1 last. Build to the notes' text where boards are missing; never draw the six custom icons; SeatGeek behind an env var, no sign-up; check AXS/DICE terms before scraping; Ticketmaster id pass needs the job's key | Following this order |

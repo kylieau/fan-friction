@@ -66,7 +66,7 @@ export function CrowdMark() {
 
 /** "11k" with the crowd mark, the way the chips say it; nothing when there is no figure. */
 export function CrowdFigure({ event, className = '' }: { event: CrowdEvent; className?: string }) {
-  const text = crowdShort(event, undefined, false, false);
+  const text = crowdShort(event, undefined, false);
   if (text === 'No count yet') return null;
   return (
     <span className={`crowd-figure ${className}`.trim()}>

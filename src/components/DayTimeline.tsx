@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CrowdMark } from './EventTags';
 import { frictionClass } from '../config/scoreLabels';
-import { drawSize, sizeTier, type CrowdEvent } from '../data';
+import { drawSize, estimateMark, sizeTier, type CrowdEvent } from '../data';
 import { mapTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
@@ -51,6 +51,7 @@ export function DayTimeline({ events }: { events: readonly CrowdEvent[] }) {
                     {size ? (
                       <span className="bar-crowd">
                         <CrowdMark />
+                        {estimateMark(e)}
                         {crowdThousands(size)}
                       </span>
                     ) : null}

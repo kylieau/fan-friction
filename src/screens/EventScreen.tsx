@@ -9,6 +9,7 @@ import { activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
+  estimateMark,
   feelsLikeLabel,
   isOpenAir,
   seatsLine,
@@ -162,7 +163,7 @@ export function EventScreen() {
   const e = me.event;
   const a = e.assessment;
   // The three crowd figures and the one to highlight (D04). A seeded estimate is a figure, never a ceiling.
-  const figures = { ...crowdFigures(e), estimatedSeeded: e.crowd.some((f) => f.kind === 'estimated' && f.count != null) };
+  const figures = crowdFigures(e);
   const shown = highlightedCrowd(e);
   const sourceLabel = announcedSourceLabel(e);
   const stakesLine = quietStakes(e, day.events);
@@ -302,6 +303,7 @@ export function EventScreen() {
                       {drawSize(r) ? (
                         <span className="rival-crowd">
                           <CrowdMark />
+                          {estimateMark(r)}
                           {crowdThousands(drawSize(r)!)}
                         </span>
                       ) : null}
@@ -334,7 +336,7 @@ export function EventScreen() {
             <div className="crowd-hero">
               <span className="crowd-hero-num">
                 <CrowdMark />
-                {shown.kind === 'estimated' ? (e.expectedDraw?.basis === 'building' && !figures.estimatedSeeded ? `Up to ${fmt(shown.count)}` : `~${fmt(shown.count)}`) : fmt(shown.count)}
+                {shown.kind === 'estimated' ? `~${fmt(shown.count)}` : fmt(shown.count)}
               </span>
               <span className="crowd-hero-kind">
                 {crowdKindWord(shown.kind)}
@@ -546,12 +548,18 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
         <h2 className="how-sub">Playoff games</h2>
         <p className="home-helper">
           How full this building got at past playoff games in this round, the team's or the league's. With none on file, the
-          building itself, as "Up to". The range is a planning range; its low end counts toward friction.
+          building itself. The range is a planning range; its low end counts toward friction.
         </p>
         <h2 className="how-sub">Shows</h2>
         <p className="home-helper">
           The room's own published average when it has one; otherwise the full room for a venue built for shows, or{' '}
           {Math.round(CONCERT_FILL * 100)}% of an arena or stadium.
+        </p>
+        {/* Build 5, item 10: the pop-up rule (item 1). */}
+        <h2 className="how-sub">Pop-ups</h2>
+        <p className="home-helper">
+          A one-off site such as a lot or a field: 80% of its stated capacity, or 95% when sold out or waitlisted. Festivals
+          are sized per day.
         </p>
         <h2 className="how-sub">Counts</h2>
         <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates. An announced or reported count replaces the estimate when it lands.</p>

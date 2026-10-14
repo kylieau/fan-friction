@@ -25,7 +25,7 @@ export interface CrowdFigures {
   final?: number;
 }
 
-/** The figures on a listed event. A building-only estimate is a ceiling ("Up to"); the caller says so. */
+/** The figures on a listed event. Every estimate, a building-only one included, reads "~" (build 5, item 10). */
 export function crowdFigures(event: CrowdEvent): CrowdFigures {
   const firm = event.crowd.find((f) => f.count != null && f.kind !== 'estimated');
   const announced = event.result?.attendance ?? firm?.count;
@@ -44,6 +44,20 @@ export function highlightedCrowd(event: CrowdEvent): CrowdFigureShown | null {
   if (f.announced) return { count: f.announced, kind: f.announcedKind ?? 'announced' };
   if (f.estimated) return { count: f.estimated, kind: 'estimated' };
   return null;
+}
+
+/**
+ * The mark in front of an estimated crowd on compact surfaces: "~55k" (build 5, item 10). One rule for every surface:
+ * "~" when the event's highlighted crowd is an estimate, nothing for Announced, Reported or Final, and nothing for a
+ * sold-out room size with no count of its own (that is the room, not an estimate).
+ */
+export function estimateMark(event: CrowdEvent): string {
+  return highlightedCrowd(event)?.kind === 'estimated' ? '~' : '';
+}
+
+/** The same mark for a stub's own figure. */
+export function entryEstimateMark(entry: Entry): string {
+  return entryCrowd(entry)?.kind === 'estimated' ? '~' : '';
 }
 
 /** The crowd count shown on the map, chip card and sheet total (build 4 §0: Final > Announced > Estimated). */
