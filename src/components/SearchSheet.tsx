@@ -8,6 +8,7 @@ import { favoriteTypeKey } from '../map/typeIcons';
 import { METROS } from '../config/metros';
 import {
   favoriteFor,
+  favoriteForTeam,
   favoriteKey,
   favoriteMark,
   favoritesOf,
@@ -139,7 +140,7 @@ export function SearchSheet({
     for (const team of Object.values(TEAMS)) {
       if (!team.metroId) continue;
       const names = [team.shortName, team.name, ...(team.aliases ?? [])];
-      if (names.some((n) => n.toLowerCase().includes(q))) add(favoriteFor('team', team.shortName));
+      if (names.some((n) => n.toLowerCase().includes(q))) add(favoriteForTeam(team));
     }
     for (const venue of Object.values(VENUES)) {
       const name = venueNameOn(venue, today);

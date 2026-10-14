@@ -283,6 +283,7 @@ export { weatherGlyph, feelsLikeLabel, rangeLabel, rangeSpoken, isOpenAir, type 
 export {
   eventMatches,
   favoriteFor,
+  favoriteForTeam,
   favoriteKey,
   favoriteMark,
   kindLabel,

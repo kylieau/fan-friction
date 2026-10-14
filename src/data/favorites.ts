@@ -10,7 +10,7 @@
 import { METROS } from '../config/metros';
 import { TEAMS, teamBadge } from './teams';
 import { VENUES, venueNameOn } from './venues';
-import type { CrowdEvent, Favorite, FavoriteKind, Entry } from './types';
+import type { CrowdEvent, Favorite, FavoriteKind, Entry, Team } from './types';
 
 export type { Favorite, FavoriteKind } from './types';
 
@@ -30,8 +30,12 @@ export function kindLabel(kind: FavoriteKind): string {
   return { team: 'Team', artist: 'Artist', venue: 'Venue', festival: 'Festival' }[kind];
 }
 
+// Nineteen short names are shared ("Clippers" is LA's and Columbus's), so a team's own id wins
+// first; a bare name then takes the team whose id is that name (the LA Clippers, the SF Giants).
 function teamByShortName(name: string) {
   const lower = name.toLowerCase();
+  const own = TEAMS[lower] ?? TEAMS[slug(name)];
+  if (own) return own;
   return Object.values(TEAMS).find(
     (team) =>
       team.shortName.toLowerCase() === lower ||
@@ -57,6 +61,11 @@ export function favoriteFor(kind: FavoriteKind, label: string): Favorite {
     if (venue) return { kind, id: venue.id, label: venueNameOn(venue, today()), venueId: venue.id };
   }
   return { kind, id: slug(clean), label: clean };
+}
+
+/** A favorite for a team record already in hand, never looked up again by its shared short name. */
+export function favoriteForTeam(team: Team): Favorite {
+  return { kind: 'team', id: team.id, label: team.shortName, teamId: team.id };
 }
 
 function today(): string {
@@ -94,7 +103,7 @@ export function suggestionsFor(homeMetroId: string | null, have: readonly Favori
   const haveKeys = new Set(have.map(favoriteKey));
   const teams = Object.values(TEAMS)
     .filter((team) => team.metroId === homeMetroId)
-    .map((team) => favoriteFor('team', team.shortName));
+    .map(favoriteForTeam);
   const venues = Object.values(VENUES)
     .filter((venue) => venue.metroId === homeMetroId)
     .sort((a, b) => Math.max(...b.capacity.map((c) => c.seats)) - Math.max(...a.capacity.map((c) => c.seats)))
