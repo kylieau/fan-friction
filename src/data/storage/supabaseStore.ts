@@ -18,7 +18,7 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
-import { EMPTY_LOG, readFavoriteCities, readFavorites, readRemoved, readStamp } from './localStore';
+import { EMPTY_LOG, readCrowdRange, readFavoriteCities, readFavorites, readRemoved, readStamp } from './localStore';
 import { notThereYet } from './dbErrors';
 import type { EntryStore, LogDiff } from './types';
 
@@ -57,7 +57,7 @@ interface SettingsRow {
   user_id: string;
   you_order: string;
   hidden_seed_ids: string[];
-  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown };
+  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown; crowdRange?: unknown; crowdRangeAt?: unknown };
 }
 
 interface RemovedRow {
@@ -186,6 +186,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         favorites: readFavorites(settings?.data?.favorites),
         ...(readFavoriteCities(settings?.data?.favoriteCities, Boolean(readStamp(settings?.data?.favoriteCitiesAt))) ? { favoriteCities: readFavoriteCities(settings?.data?.favoriteCities, Boolean(readStamp(settings?.data?.favoriteCitiesAt))) } : {}),
         ...(readStamp(settings?.data?.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(settings?.data?.favoriteCitiesAt) } : {}),
+        ...(readCrowdRange(settings?.data?.crowdRange) ? { crowdRange: readCrowdRange(settings?.data?.crowdRange) } : {}),
+        ...(readStamp(settings?.data?.crowdRangeAt) ? { crowdRangeAt: readStamp(settings?.data?.crowdRangeAt) } : {}),
         removed,
       };
     },
@@ -238,6 +240,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
               removed: log.removed ?? {},
               favoriteCities: log.favoriteCities ?? [],
               ...(log.favoriteCitiesAt ? { favoriteCitiesAt: log.favoriteCitiesAt } : {}),
+              ...(log.crowdRange ? { crowdRange: log.crowdRange } : {}),
+              ...(log.crowdRangeAt ? { crowdRangeAt: log.crowdRangeAt } : {}),
             },
           }),
         );

@@ -14,6 +14,7 @@ import { PeopleScreen } from './screens/PeopleScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { SettingsCitiesScreen } from './screens/SettingsCitiesScreen';
 import { SettingsPrivacyScreen } from './screens/SettingsPrivacyScreen';
+import { SettingsCrowdScreen } from './screens/SettingsCrowdScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
 import { StubsScreen } from './screens/StubsScreen';
@@ -74,6 +75,7 @@ function Shell() {
           <Route path="/you/settings" element={<SettingsScreen />} />
           <Route path="/you/settings/cities" element={<SettingsCitiesScreen />} />
           <Route path="/you/settings/privacy" element={<SettingsPrivacyScreen />} />
+          <Route path="/you/settings/crowd" element={<SettingsCrowdScreen />} />
           <Route path="/nights" element={<Navigate to="/explore?view=list" replace />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />

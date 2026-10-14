@@ -179,6 +179,8 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     !sameList(before.favorites, after.favorites) ||
     !sameList(before.favoriteCities, after.favoriteCities) ||
     before.favoriteCitiesAt !== after.favoriteCitiesAt ||
+    JSON.stringify(before.crowdRange ?? null) !== JSON.stringify(after.crowdRange ?? null) ||
+    before.crowdRangeAt !== after.crowdRangeAt ||
     JSON.stringify(before.removed ?? {}) !== JSON.stringify(removed);
   return { entries, plans, settings, log };
 }
@@ -210,6 +212,7 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     order: account.order,
     favorites: mergeFavorites(account.favorites, phone.favorites),
     ...mergeCities(account, phone),
+    ...mergeCrowdRange(account, phone),
     removed,
   };
 }
@@ -228,6 +231,14 @@ function mergeCities(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog
   const joined = [...new Set([...(account.favoriteCities ?? []), ...(phone.favoriteCities ?? [])])];
   const stamp = a ?? b;
   return { ...(joined.length > 0 || stamp ? { favoriteCities: joined } : {}), ...(stamp ? { favoriteCitiesAt: stamp } : {}) };
+}
+
+/** The crowd range (build 5, item 6): the copy changed last wins, as with the starred cities; an unstamped copy yields. */
+function mergeCrowdRange(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'crowdRange' | 'crowdRangeAt'> {
+  const a = account.crowdRangeAt ?? '';
+  const b = phone.crowdRangeAt ?? '';
+  const mine = b > a ? phone : account;
+  return { ...(mine.crowdRange ? { crowdRange: mine.crowdRange } : {}), ...(mine.crowdRangeAt ? { crowdRangeAt: mine.crowdRangeAt } : {}) };
 }
 
 function mergeFavorites(a?: PersonalLog['favorites'], b?: PersonalLog['favorites']) {

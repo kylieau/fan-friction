@@ -8063,3 +8063,140 @@ button.back-link {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* ---------- Settings › Crowd size (build 5, item 6; board minsize-r6) ---------- */
+.crowd-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px 12px;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+.crowd-picker-value {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+/* Two native range inputs over one track: the track ignores taps, only the thumbs take them. */
+.range-slider {
+  position: relative;
+  height: 44px;
+  margin: 0 11px;
+}
+
+.range-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 4px;
+  margin-top: -2px;
+  border-radius: 2px;
+  background: var(--line);
+}
+
+.range-tick {
+  position: absolute;
+  top: -3px;
+  width: 1px;
+  height: 10px;
+  background: #c3cddb;
+}
+
+.range-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--lo);
+  right: calc(100% - var(--hi));
+  border-radius: 2px;
+  background: var(--dodger);
+}
+
+.range-slider input[type='range'] {
+  position: absolute;
+  inset: 0 -11px;
+  width: calc(100% + 22px);
+  height: 44px;
+  margin: 0;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.range-slider input[type='range']::-webkit-slider-runnable-track {
+  height: 44px;
+  background: none;
+}
+
+.range-slider input[type='range']::-webkit-slider-thumb {
+  width: 22px;
+  height: 22px;
+  margin-top: 11px;
+  border: 2px solid var(--dodger);
+  border-radius: 50%;
+  background: var(--card);
+  pointer-events: auto;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.range-slider input[type='range']::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--dodger);
+  border-radius: 50%;
+  background: var(--card);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.range-slider input[type='range']:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--dodger);
+  outline-offset: 2px;
+}
+
+.range-labels {
+  position: relative;
+  height: 14px;
+  margin: -6px 11px 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.range-labels span {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.range-labels span:first-child {
+  transform: none;
+}
+
+.range-labels span:last-child {
+  transform: translateX(-85%);
+}
+
+.range-fields {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.range-field {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.range-dash {
+  padding-bottom: 12px;
+  color: var(--ink2);
+}

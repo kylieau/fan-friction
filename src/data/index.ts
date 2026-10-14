@@ -427,7 +427,7 @@ export {
   yourEntries,
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
-export { favoriteCitiesOf, cityOrder, toggleFavoriteCity, setEntrySeats, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
+export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, toggleFavoriteCity, setEntrySeats, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
 export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
 export { hasUnsyncedChanges } from './storage';
 export { suggestEvent } from './suggestions';
@@ -440,3 +440,4 @@ export type * from './types';
 export { ticketPrice, priceLine, type TicketPrice } from './tickets';
 export { artistSite } from './artistSite';
 export { saveWatchPlace, clearWatchPlace, placesForEvent, placeKey, SAVE_FAILED, type EventPlace } from './watchPlaces';
+export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeIsOpen, rangeNumber, splitByRange } from './crowdRange';

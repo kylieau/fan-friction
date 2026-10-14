@@ -4,7 +4,7 @@
 import { APP } from '../../config/app';
 import { METROS } from '../../config/metros';
 import { parseStamp } from '../read';
-import type { DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder } from '../types';
+import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder } from '../types';
 import type { EntryStore } from './types';
 
 const KEY = `${APP.slug}:your-nights`;
@@ -84,6 +84,20 @@ export function readFavoriteCities(value: unknown, stamped = false): string[] | 
   return ids.length > 0 || stamped ? ids : undefined;
 }
 
+/** A saved crowd range, or undefined when it is missing or malformed (build 5, item 6). */
+export function readCrowdRange(value: unknown): CrowdRange | undefined {
+  if (!value || typeof value !== 'object') return undefined;
+  const v = value as Record<string, unknown>;
+  const num = (x: unknown) => (typeof x === 'number' && Number.isFinite(x) && x > 0 ? Math.round(x / 1000) * 1000 : undefined);
+  const min = num(v.min);
+  const max = num(v.max);
+  return {
+    ...(min ? { min } : {}),
+    ...(max ? { max } : {}),
+    ...(v.showUnknown === false ? { showUnknown: false } : {}),
+  };
+}
+
 /** The ISO time the starred list last changed, or undefined for a copy that never wrote one. */
 export function readStamp(value: unknown): string | undefined {
   return typeof value === 'string' && Number.isFinite(Date.parse(value)) ? value : undefined;
@@ -115,6 +129,8 @@ export function readLocalLog(): PersonalLog {
       favorites: readFavorites(parsed.favorites),
       ...(readFavoriteCities(parsed.favoriteCities, Boolean(readStamp(parsed.favoriteCitiesAt))) ? { favoriteCities: readFavoriteCities(parsed.favoriteCities, Boolean(readStamp(parsed.favoriteCitiesAt))) } : {}),
       ...(readStamp(parsed.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(parsed.favoriteCitiesAt) } : {}),
+      ...(readCrowdRange(parsed.crowdRange) ? { crowdRange: readCrowdRange(parsed.crowdRange) } : {}),
+      ...(readStamp(parsed.crowdRangeAt) ? { crowdRangeAt: readStamp(parsed.crowdRangeAt) } : {}),
       ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {

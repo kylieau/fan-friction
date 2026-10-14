@@ -607,6 +607,16 @@ export interface Plan {
 export type YouOrder = 'plans-first' | 'nights-first';
 
 /**
+ * Which crowd sizes the lists show (build 5, item 6). Whole thousands; no `min` means no minimum, no `max` no
+ * maximum. `showUnknown: false` hides events with no listed size; absent or true shows them. Never read by the score.
+ */
+export interface CrowdRange {
+  min?: number;
+  max?: number;
+  showUnknown?: boolean;
+}
+
+/**
  * What the phone saves (and, signed in, what the account saves). Since Oct 5, 2026 no log ships inside the app.
  * A browser clear drops marks, plans, and the order setting. Export is the backup.
  */
@@ -629,6 +639,10 @@ export interface PersonalLog {
   favoriteCities?: string[];
   /** When the starred list last changed (ISO). The newer copy wins when two devices disagree, so an un-star sticks. */
   favoriteCitiesAt?: string;
+  /** The crowd size range (build 5, item 6): a display filter only, saved with the settings. Absent means no filter. */
+  crowdRange?: CrowdRange;
+  /** When the range last changed (ISO). The newer copy wins, like the starred cities. */
+  crowdRangeAt?: string;
   /**
    * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
    * another device cannot put them back; pruned after half a year.

@@ -6,7 +6,7 @@ import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { blockedPeople, favoriteCitiesOf, getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, unblockUser, updateMyProfile, type Profile, type Visibility } from '../data';
+import { blockedPeople, crowdRangeLabel, crowdRangeOf, favoriteCitiesOf, getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, unblockUser, updateMyProfile, type Profile, type Visibility } from '../data';
 
 /**
  * Behind the gear on You, one list (build 5, item 9; board settings-full, lean): Account, Location, Privacy, then the
@@ -134,6 +134,15 @@ export function SettingsScreen() {
           <span>Home &amp; cities</span>
           <span className="settings-value">{homeCitiesValue(homeId, favoriteCitiesOf(log).filter((id) => id !== homeId).length)}</span>
         </Link>
+      </div>
+
+      <div className="settings">
+        <div className="settings-heading">Events</div>
+        <Link to="/you/settings/crowd" className="settings-row settings-link">
+          <span>Crowd size</span>
+          <span className="settings-value">{crowdRangeLabel(crowdRangeOf(log))}</span>
+        </Link>
+        <p className="you-fine">Applies everywhere in the app.</p>
       </div>
 
       {account && (

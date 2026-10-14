@@ -20,7 +20,7 @@ import { seedEventsOn } from './sources/seedSource';
 import { drawSize } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
-import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
+import type { CrowdEvent, CrowdRange, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -1051,6 +1051,21 @@ export function toggleFavoriteCity(metroId: string) {
   const next = current.includes(metroId) ? current.filter((id) => id !== metroId) : [...current, metroId];
   // Stamped, even when the list is now empty, so the un-star is the newer answer on every device.
   commit({ ...snapshot, favoriteCities: next, favoriteCitiesAt: new Date().toISOString() });
+}
+
+/** The crowd size range (build 5, item 6); no range means everything shows. */
+export function crowdRangeOf(log: PersonalLog = snapshot): CrowdRange {
+  return log.crowdRange ?? {};
+}
+
+/** Save the crowd size range, stamped so the newest copy wins across devices. A display filter only. */
+export function setCrowdRange(range: CrowdRange) {
+  const clean: CrowdRange = {
+    ...(range.min && range.min > 0 ? { min: Math.round(range.min / 1000) * 1000 } : {}),
+    ...(range.max && range.max > 0 ? { max: Math.round(range.max / 1000) * 1000 } : {}),
+    ...(range.showUnknown === false ? { showUnknown: false } : {}),
+  };
+  commit({ ...snapshot, crowdRange: clean, crowdRangeAt: new Date().toISOString() });
 }
 
 export function logBackup(log: PersonalLog = snapshot): LogBackup {
