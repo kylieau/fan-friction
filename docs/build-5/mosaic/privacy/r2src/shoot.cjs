@@ -1,0 +1,48 @@
+const {chromium}=require('/workspace/ff-gap-review/tools/node_modules/playwright-core');
+const O=__dirname+'/';
+const sv=(p,s=16)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden>${p}</svg>`;
+const GLOBE=s=>sv('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/>',s);
+const PEOPLE=s=>sv('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c1.2-3.6 3.6-5.5 6.5-5.5s5.3 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.8"/><path d="M16 14.6c2.6.2 4.6 2 5.5 5.4"/>',s);
+const LOCK=s=>sv('<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',s);
+const TICKET=s=>sv('<path d="M3 9V6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5V9a2.5 2.5 0 0 0 0 5v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2.5 2.5 0 0 0 0-5Z"/><path d="M14 5v14" stroke-dasharray="2 2.5"/>',s);
+const TV=()=>sv('<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 21h8M12 18v3M8 3l4 3 4-3"/>',16);
+const BOOK=()=>sv('<path d="M6 3.5h12v17l-6-4-6 4z"/>',18);
+const LV={anyone:['Anyone',GLOBE,"Anyone on Fan/Friction can see it"],friends:['Friends',PEOPLE,'Only people you approve'],private:['Private',LOCK,'Only you']};
+const EXTRA=`<style id="mockx">.mk-ex{display:inline-block;font-size:11px;font-weight:800;color:#5C4300;background:#FFF4C2;border:1px dashed #E3A600;border-radius:5px;padding:0 5px;margin-left:6px;letter-spacing:0;text-transform:none;vertical-align:1px}
+.mk-aud{display:flex;align-items:center;gap:10px;margin:12px 0 2px;position:relative}.mk-aud .lb{font-weight:800;font-size:15px;color:var(--ink)}
+.mk-pill{display:inline-flex;align-items:center;gap:5px;height:34px;padding:0 12px;border-radius:17px;border:1.5px solid var(--dodger);background:var(--card);color:var(--dodger);font:inherit;font-size:14px;font-weight:800}
+.mk-tag{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink2)}.mk-tag.gold{color:#B7791F;font-weight:800}
+.mk-menu{position:absolute;left:104px;bottom:44px;width:262px;background:var(--card);border-radius:14px;box-shadow:0 8px 28px rgba(15,27,45,.28);overflow:hidden;z-index:20}
+.mk-mi{display:flex;align-items:center;gap:10px;min-height:54px;padding:6px 14px;color:var(--ink)}.mk-mi+.mk-mi{border-top:1px solid var(--line)}.mk-mi b{display:block;font-size:14.5px}.mk-mi span{font-size:12px;color:var(--ink2)}.mk-mi .ck{margin-left:auto;color:var(--dodger);font-weight:800;font-size:15px}
+.mk-au{display:inline-flex;align-items:center;gap:4px;color:var(--dodger);font-weight:800;border:none;background:none;padding:0 2px;font:inherit;font-weight:800}
+.mk-note{display:inline-block;font-size:11.5px;font-weight:800;color:#5C4300;background:#FFF4C2;border:1px solid #E3A600;border-radius:8px;padding:2px 8px;margin-top:6px}
+.mk-opt{display:flex;justify-content:flex-start !important;gap:12px;align-items:center;text-align:left}.mk-opt b{display:block}.mk-opt small{display:block;font-size:12.5px;color:var(--ink2);font-weight:600}</style>`;
+const shots=[];const S=(name,url,js,opt={})=>shots.push({name,url,js,...opt});
+const strip=(title)=>`const s=document.querySelector('.screen.page');[...s.children].slice(2).forEach(e=>e.remove());s.querySelector('.back-link').lastChild.textContent=' Settings';s.querySelector('.page-title').textContent=${JSON.stringify(title)};`;
+const radio=(name,legend,items,on)=>`<fieldset class="field choices"><legend class="field-label">${legend}</legend>${items.map(([v,t,b,ic])=>`<label class="choice${v===on?' on':''}"><input type="radio" name="${name}" ${v===on?'checked':''}><span class="choice-text"><span class="choice-title">${ic?ic+' ':''}${t}</span><span class="choice-body">${b}</span></span></label>`).join('')}</fieldset>`;
+const lv3=['anyone','friends','private'].map(k=>[k,LV[k][0],LV[k][2],LV[k][1](15)]);
+const priv=`<div class="settings">${radio('def','Default for new stubs',lv3,'private')}<p class="you-fine">New users start Private. Applies to Attending, Watching and Interested. You can still change any single stub when you stub it, or later from the event page.</p></div><div class="settings"><div class="settings-heading">Past stubs</div><button type="button" class="settings-row settings-link"><span>Change past stubs…</span></button><p class="you-fine">Make all past stubs Anyone, Friends or Private at once.</p></div>`;
+S('r2-1-settings-privacy','/you/settings',strip('Privacy')+`s.insertAdjacentHTML('beforeend',${JSON.stringify(priv)})`);
+const bulk=`<div class="home-backdrop sheet-backdrop" role="dialog"><div class="action-sheet"><span class="sheet-handle"></span><h2 class="stub-sheet-title">Change past stubs</h2><p class="stub-sheet-sub">Applies to all 14 past stubs<span class="mk-ex">EXAMPLE</span>. New stubs keep your default (Private).</p>${['anyone','friends','private'].map(k=>`<button type="button" class="settings-row settings-link mk-opt" style="margin-top:8px;width:100%">${LV[k][1](20)}<span><b>Make all past stubs ${LV[k][0]}</b><small>${LV[k][2]}</small></span></button>`).join('')}<button type="button" class="link-button" style="display:block;margin:14px auto 4px;font-weight:800">Cancel</button></div></div>`;
+S('r2-2-bulk-sheet','/you/settings',strip('Privacy')+`s.insertAdjacentHTML('beforeend',${JSON.stringify(priv)});document.body.insertAdjacentHTML('beforeend',${JSON.stringify(bulk)})`);
+const EV='/event/2026-10-14-mlb-849811';
+const menu=(on)=>`<div class="mk-menu">${['anyone','friends','private'].map(k=>`<div class="mk-mi">${LV[k][1](18)}<div><b>${LV[k][0]}${k==='private'?' <span style="font-weight:700">· your default</span>':''}</b><span>${LV[k][2]}</span></div>${k===on?'<span class="ck">✓</span>':''}</div>`).join('')}</div>`;
+const sheet=(lvl,tag,helper,m)=>`<div class="home-backdrop sheet-backdrop" role="dialog"><div class="action-sheet stub-sheet"><span class="sheet-handle"></span><h2 class="stub-sheet-title">+ Stub it</h2><p class="stub-sheet-sub">Brewers at Dodgers · Wed, Oct 14 · Dodger Stadium</p><div class="stub-choices"><button type="button" class="stub-choice">${TICKET(18)}Attending</button><button type="button" class="stub-choice on">${TV()}Watching</button><button type="button" class="stub-choice">${BOOK()}Interested</button></div><div class="mk-aud"><span class="lb">Who sees this</span><button type="button" class="mk-pill">${LV[lvl][1](15)} ${LV[lvl][0]} ⌄</button>${tag}${m?menu(lvl):''}</div>${helper?`<p class="stub-helper">${helper}</p>`:''}<button type="button" class="gold-button stub-done">Done</button></div></div>`;
+const DEF='<span class="mk-tag">Your default</span>';const NOT='<span class="mk-tag gold">Not your default</span>';
+const ins=h=>`document.body.insertAdjacentHTML('beforeend',${JSON.stringify(h)})`;
+S('r2-3a-sheet-default',EV,ins(sheet('private',DEF,'Only you will see this')));
+S('r2-3b-sheet-menu',EV,ins(sheet('private',DEF,'Only you will see this',true)));
+S('r2-3c-sheet-override',EV,ins(sheet('friends',NOT,"Approved friends will see where you're watching. Your default stays Private.")));
+const stat=(kind,word,icon,lvl,tag,note)=>`const m=document.querySelector('.event-marks');const g=m.querySelector('.gold-button');g.classList.add('small','stub-it-small');m.insertAdjacentHTML('beforeend',${JSON.stringify(`<span class="event-status"><span class="status-line status-${kind}">${icon} ${word} · <button type="button" class="mk-au">${LV[lvl][1](14)} ${LV[lvl][0]} ⌄</button></span>${tag}</span>${note?`<div><span class="mk-note">${note}</span></div>`:''}`)});`;
+S('r2-4a-event-upcoming',EV,stat('watching','Watching',TV(),'anyone',' <span class="mk-tag gold" style="margin-left:6px">Not your default</span>','Override: this one stub is Anyone; default stays Private'));
+S('r2-4b-event-past',EV,stat('attended','Attended',TICKET(16),'private','','Past stub at your default (Private). Tap to change')+`[...document.querySelectorAll('*')].forEach(e=>{if(e.children.length==0&&/5:00 pm/.test(e.textContent))e.insertAdjacentHTML('beforeend','<span class="mk-ex">PAST EXAMPLE</span>')});`);
+const prof=`<form class="profile-form"><label class="field"><span class="field-label">Display name</span><input class="account-input" value="Kylie"></label><label class="field"><span class="field-label">Handle</span><span class="field-prefix"><span class="field-prefix-text">@</span><input class="account-input" value="kylie"></span></label>${radio('vis','Who can see your events',[['only_me','Only me','Your events are private. The default.'],['approved','Friends','Anyone can ask to follow you. Only people you approve see your events and plans.'],['anyone','Anyone','Anyone can see your events. Following still needs your OK, and only followers see your plans.']],'approved')}<button type="button" class="gold-button">Save</button></form>`;
+S('r2-5-profile-friends','/you/settings',strip('Profile')+`s.insertAdjacentHTML('beforeend',${JSON.stringify(prof)})`);
+(async()=>{const b=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:['--use-gl=swiftshader','--enable-unsafe-swiftshader']});
+for(const s of shots){const ctx=await b.newContext({viewport:{width:390,height:844},deviceScaleFactor:2});
+ await ctx.addInitScript(()=>{localStorage.setItem('fan-friction:home-metro',JSON.stringify('la'));});
+ const p=await ctx.newPage();await p.goto('http://127.0.0.1:3101'+s.url);await p.waitForTimeout(3500);
+ await p.evaluate(x=>document.head.insertAdjacentHTML('beforeend',x),EXTRA);
+ try{await p.evaluate(s.js)}catch(e){console.log(s.name,'ERR',e.message)}
+ await p.waitForTimeout(400);await p.screenshot({path:O+s.name+'.png'});console.log('ok',s.name);await ctx.close();}
+await b.close();})();

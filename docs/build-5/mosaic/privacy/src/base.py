@@ -1,0 +1,34 @@
+def I(p,s=16): return f'<svg class="ic" width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{p}</svg>'
+P_CAL='<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>'
+P_FAR='<path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2"/>'
+P_PP='<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.2c3 .2 5.5 2.4 5.5 5.8"/>'
+CROWD='<svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="#B7791F"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.8 2.9-6.5 6.5-6.5s6.5 2.7 6.5 6.5z"/><circle cx="17" cy="9" r="2.8"/><path d="M16 13.6c3.3.2 5.5 2.6 5.5 6.4H17c0-2.6-.4-4.6-1-6.4z"/></svg>'
+EX='<span class="ex">EXAMPLE</span>'
+CSS='''*{box-sizing:border-box}body{margin:0}.p{position:relative;width:390px;height:844px;overflow:hidden;font-family:Manrope;color:#0F1B2D;background:#DAEBFE}.bg{position:absolute;left:0;top:0;width:390px}
+.s{position:absolute;background-size:390px auto;background-repeat:no-repeat}.ic{vertical-align:-3px;flex:0 0 auto}
+.ex{display:inline-block;font-size:11px;font-weight:800;color:#5C4300;background:#FFF4C2;border:1px dashed #E3A600;border-radius:5px;padding:0 5px;margin-left:6px}
+.note{position:absolute;font-size:11.5px;font-weight:800;color:#5C4300;background:#FFF4C2;border:1px solid #E3A600;border-radius:8px;padding:3px 8px;z-index:9;white-space:nowrap}
+.card{position:absolute;left:16px;width:358px;background:#fff;border-radius:14px;overflow:hidden}
+.band{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 14px;font-size:14px;font-weight:800}.band .r{margin-left:auto;font-size:13px;color:#4A5568;font-weight:700}.band .k{font-size:11.5px;font-weight:800;color:#4A5568;letter-spacing:.06em}
+.frow{display:flex;align-items:center;gap:8px;min-height:52px;padding:6px 14px;border-top:1px solid #E2E8F0}.frow .m{flex:1}.frow b{display:block;font-size:15px;font-weight:800}.frow .v{font-size:13px;color:#4A5568}.frow .rt{text-align:right;font-size:13px;font-weight:800;white-space:nowrap}.frow .rt span{display:block;color:#4A5568;font-weight:600}
+.lrow{display:flex;padding:10px 12px;border-top:1px solid #E8EDF3;min-height:62px}.lrow .t{width:68px;font-size:13px;color:#4A5568;font-weight:600;padding-top:2px}.lrow .m{flex:1}.lrow b{display:block;font-size:16px;font-weight:800;line-height:1.2}.lrow .v{font-size:13px;color:#4A5568}.lrow .c{text-align:right;font-size:15px;font-weight:800;white-space:nowrap}.lrow .c .e{font-size:11.5px;color:#4A5568;font-weight:800;margin-left:2px}.lrow .c.u{color:#4A5568;font-size:13px}
+.lfoot{font-size:11.5px;color:#4A5568;font-weight:700;padding:6px 12px 8px;border-top:1px solid #E8EDF3}
+.bt{position:absolute;left:18px;font-size:13px;font-weight:800;letter-spacing:.06em;color:#0C182A}
+.chip{position:absolute;background:#fff;border:1px solid #ABAFB6;border-radius:6px;padding:3px 6px;font:700 10.5px/13px Roboto,Arial;color:#1A202C;white-space:nowrap;z-index:3}.chip span{display:block;font-weight:500;color:#4A5568}.chip.sel{box-shadow:0 0 0 3px #9CC3E4}
+.pin{position:absolute;width:9px;height:9px;border-radius:5px;background:#0F1B2D;box-shadow:0 0 0 7px rgba(255,214,90,.3)}.pin.u{background:#fff;box-shadow:0 0 0 1.5px #4A5568}
+.scard{position:absolute;left:14px;width:362px;background:#fff;border-radius:16px;padding:12px 14px}.scard .r{display:flex;justify-content:space-between;align-items:center}.scard b{font-size:16px;font-weight:800}.scard .v{font-size:14px;color:#4A5568;margin-top:4px}.uns{font-size:13px;font-weight:800;color:#4A5568;border:1px dashed #9AA5B4;border-radius:6px;padding:1px 7px}
+.btn2{position:absolute;left:14px;right:14px;height:44px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1.5px #005A9C;color:#005A9C;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:7px}
+.stub{position:absolute;height:45px;border-radius:12px;background:#005A9C;color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.dim{position:absolute;inset:0;background:rgba(15,27,45,.45)}.bs{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:18px 18px 0 0;padding:8px 16px 26px}.grab{width:36px;height:4px;border-radius:2px;background:#9AA5B4;margin:0 auto 6px}.bs h3{margin:4px 0 2px;font-size:18px}.bs .v{font-size:13px;color:#4A5568}.opt{display:flex;align-items:center;gap:12px;min-height:58px;border-bottom:1px solid #E2E8F0}.opt .lg{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px}.opt b{font-size:15px;display:block}.opt span{font-size:12.5px;color:#4A5568}.cnl{margin-top:12px;height:46px;border-radius:12px;background:#E8ECF2;display:flex;align-items:center;justify-content:center;font-weight:800;color:#2D3748}
+.hc{position:absolute;display:inline-flex;align-items:center;gap:4px;height:24px;padding:0 9px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px #A0AEC0;font-size:12px;font-weight:800;color:#2D3748}.hc:after{content:"";position:absolute;inset:-10px 0}
+.srow{position:absolute;left:0;right:0;display:flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;font-size:14px;font-weight:700;color:#0F1B2D;border-top:1px solid #C3D6EE}.srow .r{margin-left:auto;font-size:13px;color:#4A5568}
+.fig{display:flex;align-items:center;gap:10px}
+'''
+NAMES=[]
+def ph(n,base,body):
+    bg=f'<img class="bg" src="{base}">' if base else ''
+    open(n+'.html','w').write(f'<html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Roboto:wght@500;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head><body><div class="p">{bg}{body}</div></body></html>');NAMES.append(n)
+def S(base,sx,sy,w,h,dx,dy): return f'<div class="s" style="left:{dx}px;top:{dy}px;width:{w}px;height:{h}px;background-image:url({base});background-position:-{sx}px -{sy}px"></div>'
+def B(x,y,w,h,c='#DAEBFE'): return f'<div class="s" style="left:{x}px;top:{y}px;width:{w}px;height:{h}px;background:{c}"></div>'
+def T(x,y,html,style=''): return f'<div style="position:absolute;left:{x}px;top:{y}px;{style}">{html}</div>'
+#;M='explore-map-la.png';MS='map-chip-selected.png';D='date-page.png';E1='event-page-part1.png';E2='event-page-part2.png'

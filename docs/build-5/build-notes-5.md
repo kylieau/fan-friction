@@ -94,7 +94,7 @@ Rejected:
 
 **Build instruction:** none for build 5. Don't build anything here until Kylie sets the rule from the Oct 14 research. Context: no regional list or distance rule exists on main.
 
-Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
+Board for reference: `docs/build-5/mosaic/b5/v3/regional.png` (on the box).
 
 ### Background: the earlier 60-mile discussion (not decided)
 
@@ -131,7 +131,7 @@ Gillette Stadium is probably already in as the Patriots' venue. Check before add
 
 ## 3. Add to calendar
 
-**Build instruction:** build option B (Mosaic board, Oct 13, `/workspace/ff-gap-review/mosaic/b5/add-to-calendar.png`): a 52pt calendar icon button beside a narrower "+ Stub it" that opens a chooser sheet (Apple Calendar via an .ics file, "Device calendar" on Android; Google Calendar via a prefilled link). The event is written once; no sync. Context: nothing exists on main to extend (no .ics, Google Calendar or Add to calendar code).
+**Build instruction:** build option B (Mosaic board, Oct 13, `docs/build-5/mosaic/b5/add-to-calendar.png`): a 52pt calendar icon button beside a narrower "+ Stub it" that opens a chooser sheet (Apple Calendar via an .ics file, "Device calendar" on Android; Google Calendar via a prefilled link). The event is written once; no sync. Context: nothing exists on main to extend (no .ics, Google Calendar or Add to calendar code).
 
 Let the user export an event to their own phone or computer calendar. This is not an in-app calendar.
 
@@ -149,7 +149,7 @@ Feasible with two pieces:
 
 ## Review form answers (Kylie, Oct 14)
 
-Source: her exported city round 2 review form (87 of 87 answered, exported 2026-10-14T07:29:35.776Z UTC = Oct 14, 12:29 AM PT). Leans she left in place count as her decisions. Card context: `/workspace/ff-claims/city-round2-review-form.md` on the box. "My lean" in the option text means the form's suggested option.
+Source: her exported city round 2 review form (87 of 87 answered, exported 2026-10-14T07:29:35.776Z UTC = Oct 14, 12:29 AM PT). Leans she left in place count as her decisions. Card context: `docs/build-5/city-round2-review-form.md` on the box. "My lean" in the option text means the form's suggested option.
 
 **Build instruction:** Apply the "City data changes to apply" checklist at the end of this section. Skip rows marked [x] (already on main) and fix DC5, which contradicts main. Apply the call-outs below as written. The round-2 cities already exist: `src/config/metros.ts:17` (COVERED_METRO_IDS), codes in `metros.ts`, city types in `src/data/formula/gridlock.ts:116` (`CITY_TYPE`). Edit those entries; don't add new ones. N2 (favorites, added where home is set) and N5 (drop the "Nights" label) aren't built yet.
 
@@ -888,15 +888,15 @@ Rejected: big buttons on the sheet; editing privacy only inside the sheet; a seg
 >
 > Write a migration; don't edit old ones.
 
-Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box; drawn with two levels, so add Anyone to the menu and the bulk sheet).
+Board: `docs/build-5/mosaic/privacy/privacy-r1.png` (on the box; drawn with two levels, so add Anyone to the menu and the bulk sheet).
 
-Board r2: `/workspace/ff-gap-review/mosaic/privacy/privacy-r2.png` (three levels). The live Stub it sheet's "Who sees it" control is two big buttons and only shows for Watching (`StubSheet.tsx:168-187`). Replace it with the pill for Attending, Watching and Interested. The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
+Board r2: `docs/build-5/mosaic/privacy/privacy-r2.png` (three levels). The live Stub it sheet's "Who sees it" control is two big buttons and only shows for Watching (`StubSheet.tsx:168-187`). Replace it with the pill for Attending, Watching and Interested. The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
 
 ### 2. Add to calendar: option B
 
 **Build instruction:** Add a new icon button beside "+ Stub it" on the event page that opens a chooser sheet: **Apple / device calendar** (download an .ics file) or **Google Calendar** (open a prefilled link). Nothing exists on main to reuse or remove: there's no .ics, Google Calendar or Add to calendar code. The "+ Stub it" button itself (`src/components/StubSheet.tsx`, opened from the event page) stays as is. This updates item 3 above.
 
-Board: `/workspace/ff-gap-review/mosaic/b5/v2/` (on the box).
+Board: `docs/build-5/mosaic/b5/v2/` (on the box).
 
 ### 3. Crowds with no size (updated Oct 14)
 
@@ -932,7 +932,7 @@ Why: the day's situation (forecast, competition, weather by hour) comes first, t
 
 Rejected: sorting by crowd size; weather on every row; "+ Stub it" on rows; a filled Attending pill (filled navy is reserved for actions or selection); a "You're attending" text line.
 
-Boards: `/workspace/ff-gap-review/mosaic/datepage/datepage-r3.png` and the lean phone `datepage-r3-lean.png` (on the box).
+Boards: `docs/build-5/mosaic/datepage/datepage-r3.png` and the lean phone `datepage-r3-lean.png` (on the box).
 
 ### 5. Lineup label (updated Oct 14: every week)
 
@@ -948,7 +948,7 @@ Rejected: "lineup" in every day band; using it as the Map sheet label; "lineup" 
 
 Reconciling N16 ("Saturday's lineup" on a day's list): the day-name form is the **date page** heading (item 4). The Explore List uses the week forms above. Explore day bands don't use the word.
 
-Board: `/workspace/ff-gap-review/mosaic/b5/v3/lineup.png` (on the box).
+Board: `docs/build-5/mosaic/b5/v3/lineup.png` (on the box).
 
 ### 6. Crowd size range setting
 
@@ -975,7 +975,7 @@ Rejected: min only; fixed-tier dropdowns; a stepper; free typing of any number; 
 
 Caveats: the Settings screen isn't from a live capture (match live styles, don't restyle existing components), and the counts are examples.
 
-Boards: `/workspace/ff-gap-review/mosaic/minsize/minsize-r6.png` and phones `minsize-r6-1-settings.png` to `minsize-r6-5-datepage-filtered.png` (on the box).
+Boards: `docs/build-5/mosaic/minsize/minsize-r6.png` and phones `minsize-r6-1-settings.png` to `minsize-r6-5-datepage-filtered.png` (on the box).
 
 #### What the crowd size range touches
 
@@ -1058,7 +1058,7 @@ Rejected: a separate "Any other cities?" step after picking home (`favorite-citi
 
 **Adjusts N2** (Review form answers): N2's "pinned group under home, star on each row, no limit, on the device" stands, and the switcher part is built. This item adds the part N2 left open: where you add stars (the home picker, on first open and in Settings).
 
-Boards: `/workspace/ff-gap-review/mosaic/b5/v4/favorite-cities.png`, `favorite-cities-a-first-open-lean.png`, `favorite-cities-b-home-set.png`, `favorite-cities-c-settings-home-cities.png`; live reference `favorite-cities-live-switcher.png`; rejected `favorite-cities-d-alt-separate-step.png` (on the box).
+Boards: `docs/build-5/mosaic/b5/v4/favorite-cities.png`, `favorite-cities-a-first-open-lean.png`, `favorite-cities-b-home-set.png`, `favorite-cities-c-settings-home-cities.png`; live reference `favorite-cities-live-switcher.png`; rejected `favorite-cities-d-alt-separate-step.png` (on the box).
 
 ### 9. Settings as one list (v4)
 
@@ -1070,7 +1070,7 @@ The list, in order:
 1. **Account** (the existing rows).
 2. **Location:** one row, **"Home & cities"**, showing the home city and the count starred (e.g. "Los Angeles · 3 starred ›"). It opens the item 8 list as a sub-page. Replaces the Home city block (`:169-176`).
 3. **Events:** **"Crowd size"** row (item 6), opening its sub-page.
-4. **Privacy:** the default for new stubs and **"Change past stubs…"**, using **Anyone / Friends / Private** as on `/workspace/ff-gap-review/mosaic/privacy/privacy-r2.png` (stub privacy item 1).
+4. **Privacy:** the default for new stubs and **"Change past stubs…"**, using **Anyone / Friends / Private** as on `docs/build-5/mosaic/privacy/privacy-r2.png` (stub privacy item 1).
 5. Then the existing **Favorites**, **Your events** and **App** sections, unchanged.
 
 Detail controls (the city list, the crowd slider, the privacy pickers) go on **sub-pages**, which use the live 13px / 800 section headers.
@@ -1081,7 +1081,7 @@ Why: one scannable list matches the live screen, each row shows its current valu
 
 Rejected: grouped cards (`settings-full-alt-grouped-cards.png`). They restyle the live screen and add visual weight for no gain.
 
-Boards: `/workspace/ff-gap-review/mosaic/b5/v4/settings-full.png`, `settings-full-lean-one-list.png`, `settings-full-privacy-subpage.png`; live reference `settings-full-live.png`; rejected `settings-full-alt-grouped-cards.png` (on the box).
+Boards: `docs/build-5/mosaic/b5/v4/settings-full.png`, `settings-full-lean-one-list.png`, `settings-full-privacy-subpage.png`; live reference `settings-full-live.png`; rejected `settings-full-alt-grouped-cards.png` (on the box).
 
 ### 10. "~" on every estimated crowd (v4)
 
@@ -1100,11 +1100,11 @@ Rejected: an "est." suffix (`estimated-crowds-alt-est-suffix-rows.png`); a separ
 
 This closes the open "~" question. The NLCS G3 note below is CLOSED (not a bug); it was about which figure is highlighted.
 
-Boards: `/workspace/ff-gap-review/mosaic/b5/v4/estimated-crowds.png`, `estimated-crowds-lean-map-chip.png`, `estimated-crowds-lean-list-row.png`, `estimated-crowds-lean-selected-card.png`, `estimated-crowds-lean-event-crowd.png`, `estimated-crowds-lean-about-estimate.png`; live references `estimated-crowds-live-map.png`, `estimated-crowds-live-event-crowd.png`; rejected `estimated-crowds-alt-est-suffix-rows.png` (on the box).
+Boards: `docs/build-5/mosaic/b5/v4/estimated-crowds.png`, `estimated-crowds-lean-map-chip.png`, `estimated-crowds-lean-list-row.png`, `estimated-crowds-lean-selected-card.png`, `estimated-crowds-lean-event-crowd.png`, `estimated-crowds-lean-about-estimate.png`; live references `estimated-crowds-live-map.png`, `estimated-crowds-live-event-crowd.png`; rejected `estimated-crowds-alt-est-suffix-rows.png` (on the box).
 
 ### Closed and backlog (Kylie, Oct 14)
 
-- **CLOSED (Kylie, Oct 14):** Where crowds with no size show in Explore. Nothing beyond the blank rule above and the existing muted gray chips. Rejected: a "1 unsized not counted" footer and hollow gray pins (older board unsized.png). Board: `/workspace/ff-gap-review/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
+- **CLOSED (Kylie, Oct 14):** Where crowds with no size show in Explore. Nothing beyond the blank rule above and the existing muted gray chips. Rejected: a "1 unsized not counted" footer and hollow gray pins (older board unsized.png). Board: `docs/build-5/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
 - Regional events: backlog next step (item 2). Kylie ran the regional research herself (Oct 14); prompt and answer are filed verbatim below. Claude adds them to the backlog as the basis for one rule for every metro. Nothing wired in build 5.
 - **Research on file (verbatim, word for word; summaries in these notes always link here):**
   - Oct 13 concerts Ticketmaster misses: prompt [`research/concerts-ticketmaster-misses-oct13-prompt.md`](research/concerts-ticketmaster-misses-oct13-prompt.md); answer [`research/concerts-ticketmaster-misses-oct13-answer.pdf`](research/concerts-ticketmaster-misses-oct13-answer.pdf) (text copy [`.txt`](research/concerts-ticketmaster-misses-oct13-answer.txt)).
@@ -1151,7 +1151,7 @@ Sources: Mosaic's `research/event-types-table.md` (decisions at the top) and `do
 
 ### 12. Type icons (Oct 14, answers IN01, IN02, IN11, IN12, IN13)
 
-Boards: Mosaic's `mosaic/icons/icons-r3.png`, `sheet-r3.png` and `phones-r3/` (map chip, Explore list, date page lineup, timeline, event title, Stubs, Following, search). Custom icon paths: `mosaic/icons/src/icons.cjs`.
+Boards: Mosaic's `docs/build-5/mosaic/icons/icons-r3.png`, `sheet-r3.png` and `phones-r3/` (map chip, Explore list, date page lineup, timeline, event title, Stubs, Following, search). Custom icon paths: `docs/build-5/mosaic/icons/src/icons.cjs`.
 
 **Today:** `src/map/typeIcons.ts` (40 lines) has nine hand-drawn 10px icons in Dodger blue (`#005A9C`, `:7`). They show only on map chips (`src/map/CrowdLayer.tsx:153`). Everything without its own icon gets the ticket.
 
