@@ -1162,7 +1162,7 @@ Boards: Mosaic's `mosaic/icons/icons-r3.png`, `sheet-r3.png` and `phones-r3/` (m
 
 ### 13. Event names: three lengths (Oct 14, answers IN05–IN10, IN14; adjusted Oct 14 by naming review N04, N06, N08, N16, N17, N18, N29)
 
-Source: Mosaic's `research/event-naming-table.md`; current behavior and real examples in `docs/build-5/research/event-types-and-naming-table.md`.
+Source: Mosaic's `research/event-naming-table.md` (verbatim copy `docs/build-5/research/event-naming-table.md`, built on the code report `docs/build-5/research/event-naming-635a164.md`; types: `event-types-table.md`, `event-types-635a164.md`); current behavior and real examples in `docs/build-5/research/event-types-and-naming-table.md`.
 
 **Today:** `src/lib/eventTitle.ts` has two lengths. `mapTitle` (`:172-185`) is the short one, used on chips, the timeline, "Biggest:" (`src/screens/EventScreen.tsx:258`), Home rows (`src/screens/HomeScreen.tsx:195`) and favorite-page rows (`src/screens/FavoritePage.tsx:403`). `listTitle` (`:193-198`) is the full one, used on Explore rows, the event title (`EventScreen.tsx:200`), Stubs, Compare and Following (`src/screens/FavoritesScreen.tsx:149`). There are no character limits; cutting is CSS ellipsis, so the chip loses the round first ("Golden Knights (Conf Final G7)"). Doubleheaders get identical names. Preseason is stored (`:206, 212`) but only the team page shows it. Finals have no year. No opener field exists.
 
