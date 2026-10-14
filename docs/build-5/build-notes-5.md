@@ -1,6 +1,6 @@
 # Build 5 notes
 
-Grounded against main 635a164, Oct 14, 2026 (fetched again 1:55 AM PT, unchanged; main's last commit 12:23 AM PT). Written as instructions to the builder: each item leads with what to change, starting from the code as it is, followed by short context on what exists today (file:line refs at that commit).
+Grounded against main 635a164, Oct 14, 2026 (fetched again 2:05 AM PT, unchanged; main's last commit 12:23 AM PT). Written as instructions to the builder: each item leads with what to change, starting from the code as it is, followed by short context on what exists today (file:line refs at that commit).
 
 Each item gives what we do, why, and the options we turned down.
 
@@ -20,12 +20,13 @@ Each item gives what we do, why, and the options we turned down.
 - "~" on every estimated crowd, and a POP-UPS section in About this estimate (item 10; Mosaic v4, Oct 14).
 - Event types: 8 categories, 36 types, "Special" retired (item 11; Mosaic, Oct 14).
 - Type icons: Phosphor plus six custom, at the start of every title, sized per surface (item 12; Mosaic, Oct 14).
-- Event names: chip / short / full lengths and the parsing fixes (item 13; Mosaic, Oct 14).
+- Event names: chip / short / full lengths and the parsing fixes (item 13; Mosaic, Oct 14; adjusted Oct 14 by the naming review answers: Preseason is now a suffix, teams lead every title, "vs." with a period).
+- Naming review: all 30 answers (N01–N30, Kylie, Oct 14) recorded as change instructions (item 15). Copy of the answers: `docs/build-5/research/naming-review-answers-oct14.json`.
 - Commit the naming review and the types-and-naming table to docs/research/topics (item 14).
 
 Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). C2 ("More dates") and D2 ("WEEK OF OCT 26 · LINEUP") were also accepted on Oct 14. No open questions remain from this round.
 
-Open from the naming review (item 14): Cosm as Watch party vs Live screening, Concert vs Show on the Add form, full playoff wording, artist before tour, co-bills and multi-day passes. Naming cases not yet covered are listed at the end of item 13.
+The naming review is closed (item 15): Cosm is a Watch party, the Add form says Concert, full playoff words on the event page (N03 follows her note, not her form choice; see item 15), artist before tour, co-bills and multi-day passes all decided. Three answers differ from the lean: N03 (note overrides choice), N08 (Preseason moves to a suffix) and N29 (note overrides choice: "vs." with a period). N16 adds a note: codes stay on chips. Item 13's "still open" list is mostly settled; what's left is listed there.
 
 Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3. The "~" question is closed (item 10).
 
@@ -1131,21 +1132,22 @@ Boards: Mosaic's `mosaic/icons/icons-r3.png`, `sheet-r3.png` and `phones-r3/` (m
 2. The icon per type is the "Proposed icon" column in `event-types-table.md` section 2. Concert uses Phosphor `music-note`.
 3. Add six **custom icons** drawn on the same 256 grid and stroke: Comedy (`x-laugh`, laughing face), Film (`x-movie-camera`), Circus (`x-big-top`, big-top tent), Fair (`x-ferris-wheel`), Lacrosse (`x-lacrosse`) and Rugby (`x-rugby`). Copy the paths from `icons.cjs`. Lacrosse and the movie camera are **first drafts**; ship them, but expect a redraw.
 4. **Placement:** the icon sits at the very start of the event title on every surface: map chips, Explore rows, the date page lineup, the Local Competition timeline, the event page title, Stubs, Following and search.
-5. **Size**, the largest that keeps today's row heights (measured at 390pt wide against live rows): 18pt on Explore rows, the date page lineup, the event title, Following and search; 17pt on the timeline; 16pt on Stubs (baseline offset 3pt); 12pt on map chips. Vertical align −4px (Stubs −3px). **Do not change any row height.**
+5. **Size: aim for 20pt on every surface.** If 20pt makes a row taller than its live height, step down to the largest size that keeps the row height. Expected results (measured at 390pt wide against live rows): 18pt on Explore rows, the date page lineup, the event title, Following and search; 17pt on the timeline; 16pt on Stubs (baseline offset 3pt); 12pt on map chips. Vertical align −4px (Stubs −3px). **Do not change any row height.**
+   - IN11 resolved (Kylie, Oct 14): 20pt is the target, not a rejected option. The form's lean (20pt everywhere) and the measured step-downs no longer conflict: 20pt wherever it fits, the measured sizes where it doesn't.
 6. Caveats to check on device: a long one-line title may now wrap because the icon takes width; the Stubs size was measured on a stand-in row, so confirm it on the real Stubs list.
 
-**Why:** Phosphor covers 34 of the 36 types in one free, open style, so nothing is a placeholder. Lacrosse and rugby are real sports on the Add form, and a generic ball reads as soccer. At the start of the title the icon reads as part of the name and keeps the time column clean. Kylie found 20pt made rows taller, so each surface gets the largest size that doesn't.
+**Why:** Phosphor covers 34 of the 36 types in one free, open style, so nothing is a placeholder. Lacrosse and rugby are real sports on the Add form, and a generic ball reads as soccer. At the start of the title the icon reads as part of the name and keeps the time column clean. 20pt is the target size; where Kylie found it made rows taller, the surface steps down to the largest size that doesn't.
 
 **Rejected:**
 - Keeping and extending the hand-drawn set (would take 30+ new drawings).
 - Tabler icons (no hockey, lacrosse, circus or Ferris wheel).
 - An icon font.
 - A generic ball for lacrosse and rugby.
-- 20pt everywhere (the form's lean; it made rows taller), and 16pt everywhere (looked goofy).
+- 20pt forced everywhere even where it makes rows taller, and 16pt everywhere (looked goofy). (20pt itself is the target, step 5.)
 - The icon on line 2, or in the time column.
 - Swapping any other approved icon (IN13: none).
 
-### 13. Event names: three lengths (Oct 14, answers IN05–IN10, IN14)
+### 13. Event names: three lengths (Oct 14, answers IN05–IN10, IN14; adjusted Oct 14 by naming review N04, N06, N08, N16, N17, N18, N29)
 
 Source: Mosaic's `research/event-naming-table.md`; current behavior and real examples in `docs/build-5/research/event-types-and-naming-table.md`.
 
@@ -1157,24 +1159,24 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
    - **Short** (Explore and sheet rows, date page lineup, Stubs rows, Following, search, chip card): 32 characters, at most 2 lines.
    - **Full** (event page title, Stub sheet, share text): about 64 characters, wraps, **never cut**.
 2. **The designation (G7, DH1, Preseason, All-Star) is never cut first.** Drop order when a name is too long: year → tour, then openers → away team (then city, chip only) → tag (festival weekend, college tag) → nickname shortened to the shortName ("Golden Knights" → "Vegas") → truncate the name as a last resort.
-3. **Doubleheaders:** "Game 1" / "Game 2" in short and full names ("Game 1 · A's at Angels"); "DH1" / "DH2" on chips ("Angels DH1"). The game index is read but dropped today (`src/data/sources/roundLabel.ts:15-16`).
-4. **Finals get the year:** "Super Bowl 2027 · Chiefs vs. Eagles". The year is dropped on chips ("Super Bowl").
-5. **Preseason is a title prefix:** "Preseason · Raiders at Rams" (chip "Rams Preseason"). Not a tag.
+3. **Doubleheaders (kept, N09):** "Game 1" / "Game 2" in short and full names, after the teams ("A's at Angels · Game 1", per N04); "DH1" / "DH2" on chips ("Angels DH1"). The game index is read but dropped today (`src/data/sources/roundLabel.ts:15-16`).
+4. **Finals get the year (kept, N07):** "Chiefs vs. Rams · Super Bowl 2027" (teams first, N04; "vs." at the neutral site, N06). Add the year only when the feed gives the season. The year is dropped on chips ("Super Bowl").
+5. **Preseason is a title suffix (ADJUSTED Oct 14, N08):** "Nuggets at Clippers · Preseason" (chip "Clippers Preseason"). Not a tag. This replaces the earlier approved prefix ("Preseason · Raiders at Rams"); Kylie switched to the reviewer's version. The designation is still never cut (step 2), so the suffix can't be dropped.
 6. **No openers in short rows.** Openers go in the full name only, once there is an opener field.
-7. **Neutral sites: designated visitor first.** `gameName` (`eventTitle.ts:74-77`) puts the first-named side first ("Lakers vs. Warriors" comes out home-first); the comment at `:66` already says visitor first. Fix the code to match. Also fix `docs/product/product-decisions.md:38`, which still says titles stay "Home vs. Away"; it should say "{Away} at {Home}", with "{Visitor} vs. {Home}" at a neutral site.
+7. **Neutral sites: designated visitor first, teams before the event name (N17).** `gameName` (`eventTitle.ts:74-77`) puts the first-named side first ("Lakers vs. Warriors" comes out home-first) and puts the event name ahead ("Red River Showdown · Texas vs. Oklahoma", `:76`); the comment at `:66-67` already says visitor first. Fix the code to: "{Visitor} vs. {Home} · {Event name}", or "· Neutral site" when there is no event name ("Texas vs. Oklahoma · Red River Showdown", "Florida vs. Georgia · Neutral site"). Also fix `docs/product/product-decisions.md:38`, which still says titles stay "Home vs. Away"; it should say "{Away} at {Home}", with "{Visitor} vs. {Home}" at a neutral site.
 8. **Favorites rows use the short name:** switch `FavoritesScreen.tsx:149` off `listTitle`.
 
 **Parsing bugs to fix with this item** (from the research table, Gaps 5–11):
-- **Bracket text dropped:** `sidesOf` (`eventTitle.ts:47-50`) keeps a bracket after the visitor only as an event name, and `gameName` uses it only at neutral sites, so "(Red River Showdown)", "(SD)" and "(neutral site)" vanish. Keep it (as the event name, ahead of the matchup) on every game.
-- **East LA Classic:** "East LA Classic (Garfield vs. Roosevelt)" becomes "Roosevelt) at East LA Classic (Garfield" because the vs match (`:36`) runs inside brackets. Don't split on a "vs" inside brackets; treat the outer name as the event name: "East LA Classic · Garfield vs. Roosevelt".
-- **Ticketmaster event names glued to a team:** "Copa Las Vegas: USA vs Mexico" becomes "Mexico at Copa Las Vegas: USA". Split off text before a colon as the event name: "Copa Las Vegas · USA vs. Mexico".
+- **Bracket text dropped:** `sidesOf` (`eventTitle.ts:47-50`) keeps a bracket after the visitor only as an event name, and `gameName` uses it only at neutral sites, so "(Red River Showdown)", "(SD)" and "(neutral site)" vanish. Keep it (as the event name, after the matchup, N17/N18) on every game.
+- **East LA Classic:** "East LA Classic (Garfield vs. Roosevelt)" becomes "Roosevelt) at East LA Classic (Garfield" because the vs match (`:36`) runs inside brackets. Don't split on a "vs" inside brackets; treat the outer name as the event name: "Garfield vs. Roosevelt · East LA Classic" (N18).
+- **Ticketmaster event names glued to a team:** the feed text "Copa Las Vegas: USA vs Mexico" becomes "Mexico at Copa Las Vegas: USA". Split off text before a colon as the event name and put it after the teams: "USA vs. Mexico · Copa Las Vegas" (N18). When the split is unclear, show the original title.
 - **Lost neutral flags:** "Florida vs. Georgia (neutral site)" (`src/data/seed/listings2026.ts:106`) has no `neutralSite` flag, so it reads "Georgia at Florida". Set the flag (the `neutralFootball` helper at `:42` should set it for every game it builds). The archived copy of the Red River game also lost its flag and reads "Oklahoma at Texas"; restore it in the archive.
-- **Spring training:** the MLB map feed (`src/data/sources/mlbSource.ts:228-240`, `toEvent` at `:138`) never sets `preseason`; only the team schedule does (`:213`). Set it when `gameType === 'S'` so the "Preseason ·" rule applies. (The spring training wording itself is open, below.)
+- **Spring training:** the MLB map feed (`src/data/sources/mlbSource.ts:228-240`, `toEvent` at `:138`) never sets `preseason`; only the team schedule does (`:213`). Set it when `gameType === 'S'` so the "· Preseason" rule applies. (The spring training wording itself is open, below.)
 - **World Series doubling:** old seeds with round "World Series" and title "World Series Game 1" read "World Series G1 · World Series Game 1". Strip the round text from the title when it repeats the label.
-- **College "FB" always shown:** college football short names already contain "FB", so the chip always shows it, though the docs show the tag only on a clash. Show the squad tag on chips only when two chips clash (it stays on short and full names).
+- **College "FB" always shown:** college football short names already contain "FB", so the chip always shows it, though the docs show the tag only on a clash. Show the squad code on chips only when two chips clash. **Reconciled with N16:** short and full names drop the code for a readable sport label ("Duke at Georgia Tech · Football", "X at UCLA · Women's basketball"); the code (FB / MBB / WBB) stays on chips and wherever space is tight, and on chips still only on a clash ("Georgia Tech FB" only when another Georgia Tech chip that night would match).
 - **Lucha libre stored as boxing:** `sportOf` (`ticketmasterSource.ts:171-175`) checks "boxing" text before wrestling words. Map lucha libre to wrestling (`sports.combat`, subtype wrestling), per item 11.
 
-**Why:** chips and rows have fixed widths, so names need real limits, and the designation is what tells games apart. "DH1" fits a chip and doesn't clash with series "G1". Years read instantly; chips have no room and show the date anyway. A prefix travels with the name into shares and notifications, where tags don't render. Short rows are for scanning the headliner. Leagues list neutral-site games visitor first, as the spec does. Favorites rows are narrow.
+**Why:** chips and rows have fixed widths, so names need real limits, and the designation is what tells games apart. "DH1" fits a chip and doesn't clash with series "G1". Years read instantly; chips have no room and show the date anyway. A suffix in the title still travels into shares and notifications, where tags don't render, and reads team-first like every other title (N08). Short rows are for scanning the headliner. Leagues list neutral-site games visitor first, as the spec does. Favorites rows are narrow.
 
 **Rejected:**
 - Two lengths with character limits added (rows need the designation but not the tour).
@@ -1182,12 +1184,16 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
 - "G1/G2" for doubleheaders (clashes with series games).
 - Roman numerals or no year on finals.
 - Preseason as a small tag in `.event-tags`.
+- Preseason as a prefix ("Preseason · Nuggets at Clippers"; approved earlier, replaced by N08).
+- Event name ahead of the matchup at neutral sites ("Red River Showdown · Texas vs. Oklahoma").
 - Openers in short rows ("Phoebe Bridgers + Muna").
 - Home team first at neutral sites (what the code does now).
 - Keeping the full name in Favorites.
 - A 140px / 20-character chip; 40 characters on one line for short names.
 
-**Still open (not covered by the decisions):** spring training wording ("Spring Training ·" vs "Spring"), All-Star, tournament and bowl names, festival weekends and days, pop-up and watch party names, comedy and theatre headliners, round wording ("NLWC" vs "WC G1", "WS" vs "World Series", "Semis" vs "Semifinals"), HockeyTech playoff games with no game number, the "· City" ending at neutral sites, a hand seed and feed copy of the same game counting as a clash, and tour-first titles.
+**Settled by the naming review (item 15):** bowl names (N20), festival weekends and days (N12), watch party names (N01), round wording (N03, N05: "Semifinals", full words on the page), the "· City" ending at neutral sites (N06, N17: venue and city on the page, not in the title), tour-first titles (N10).
+
+**Still open:** spring training wording ("Spring Training" or "Spring", now as a suffix), All-Star and tournament names, pop-up names, comedy and theatre headliners, HockeyTech playoff games with no game number, and a hand seed and feed copy of the same game counting as a clash.
 
 ### 14. Commit the naming research docs
 
@@ -1197,9 +1203,149 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
 
 Copies of all three are in this PR under `docs/build-5/research/`. Items 11–13 cover the review's decided points.
 
-**Open for Kylie (don't decide these):**
-- Cosm-style screenings: "Watch party" or "Live screening".
-- "Concert" or "Show" on the Add form.
-- Full playoff wording on the event page.
-- Artist before tour in titles.
-- Co-bills and multi-day passes.
+3. Kylie's answers to the 30-card form (Oct 14): copy `docs/build-5/research/naming-review-answers-oct14.json`.
+
+**Closed (Kylie, Oct 14; item 15):**
+- Cosm-style screenings: **Watch party** (N01).
+- **Concert** on the Add form and the event page (N02).
+- Full playoff wording: **full words on the event page**, short forms on chips and rows (N03, read from her note).
+- **Artist before tour**, middle dot (N10, N28).
+- Co-bills: full row title until billing is known (N11). Multi-day: "Day 1 of 4", "Weekend 1 / 2", a date for fairs (N12).
+
+### 15. Naming review answers (Kylie, Oct 14, N01–N30)
+
+Sources: the review `docs/build-5/research/naming-review-oct14.html` (29 issues; "review #" below), the 30-card form, and Kylie's answers, copied to `docs/build-5/research/naming-review-answers-oct14.json`. Refs are at main 635a164 (fetched 2:05 AM PT, unchanged). 26 answers are the lean. Three differ (N03, N08, N29) and one adds a note (N16); those are marked. Separator rule for every example: "vs." with a period (N29), middle dot between parts (N28).
+
+**Where titles are built today:** `listTitle` (`src/lib/eventTitle.ts:193-198`) puts the round first ("NLCS G2 · Dodgers at Brewers") and passes shows and festivals through as the feed's title (`:194`, via `displayName`, `src/config/names.ts:31`). `stakesLabel` (`:56-61`) and `postseasonChip` (`:133-139`) write "{round} G{n}". Rounds come from `src/data/sources/roundLabel.ts` as codes. The type word comes from `eventTypeLabel` (`src/data/personalLog.ts:214-221`).
+
+#### Types (item 11)
+
+**N01 · Cosm is a Watch party (review #05; lean).**
+- Today: `eventTypeLabel` returns "Live Broadcast" (`personalLog.ts:216`), other screens say "Live broadcast" (`personalLog.ts:558, 976`; Add form `src/screens/AddEntryScreen.tsx:38`). The seed title is "Ohio State @ Michigan, at Cosm" (`src/data/seed/kylieLog.ts:286`).
+- Change: type `watch.broadcast`, label **Watch party** on every screen and the Add form. Title "Ohio State at Michigan · Watch party", venue Cosm on the page. Fix the seed title. Check one Cosm listing first; if it's sold as a screening, raise it before shipping.
+- Why: fans go to Cosm to watch together; "broadcast" is the wrong word, and ", at Cosm" reads as a second location.
+- Rejected: Live screening; keeping "Live broadcast" with fixed casing.
+
+**N02 · Concert on the Add form (review #04; lean).**
+- Today: the Add form says "Show" (`AddEntryScreen.tsx:36`); the event page says "Concert" (`personalLog.ts:218`).
+- Change: "Concert" on both.
+- Why: one word everywhere; "Show" could be comedy, theatre or an ice show.
+- Rejected: "Live music" on both; keeping as is.
+
+**N13 · Volleyball and Esports (review #03; lean).**
+- Today: `sportOf` has no volleyball or esports and falls back to "other" (`src/data/sources/ticketmasterSource.ts:171-175`); `sportLabel` shows the raw key (`personalLog.ts:199-208`).
+- Change: map volleyball to `sports.volleyball` (already in item 11) and label it Volleyball. Label esports **Esports**, kept as a subtype under `sports.other` so item 11 stays at 36 types (flag: promote it to its own type if esports shows up often). An unknown sport reads **"Sports event"**; this replaces item 11's "Other sport" label.
+- Why: name what people are going to, with an honest fallback.
+- Rejected: "Volleyball match" / "Esports tournament" / "Sport not specified"; keeping "other".
+
+**N14 · Capitalize raw sport keys (review #02; lean).**
+- Today: `sportLabel` capitalizes five sports and returns the raw key for the rest (`personalLog.ts:207`), so "boxing", "rodeo", "motorsports" show lowercase. Lucha libre lands as boxing (`ticketmasterSource.ts:173`).
+- Change: one label list for every type (Boxing, Motorsports, Rodeo, Lacrosse, Tennis, Cricket, Wrestling…), used by feeds and the Add form alike. Move the CMLL lucha libre event to Wrestling (item 13 parsing bug).
+- Why: small, consistent fix.
+- Rejected: a format word ("Boxing event", "Tennis match"); keeping as is.
+
+**N15 · WNBA is Basketball plus a Competition (review #06; lean).**
+- Today: feed WNBA games read "Basketball"; manual ones read "Women's basketball" (`personalLog.ts:219`).
+- Change: Type Basketball for all; the league goes in a Competition field (from the feed). Men's / Women's only where two games would otherwise read the same. Remove the `sport === 'WNBA'` branch.
+- Why: one sport label; the feed already gives the league.
+- Rejected: "Men's / Women's basketball" everywhere; keeping as is.
+
+**N24 · Festival classification (review #24; lean).**
+- Today: `kindOf` falls back to `special` (`ticketmasterSource.ts:165-166`), so festivals land as Concert or Special by feed. "Sick New World Festival Forth Worth" is the feed's title (seen in `src/data/startForecastIndex.ts:18611`).
+- Change: Type Festival for real festivals whatever the feed. Title "Sick New World · Fort Worth"; fix the "Forth" typo in the title cleanup.
+- Why: same event, same type.
+- Rejected: full festival name with the city in the venue line; keeping as is.
+
+**N30 · Replace "Special" (review #01; lean).**
+- Today: every special shows "Special" (`personalLog.ts:217, 558`; Add form "Special event", `AddEntryScreen.tsx:39`); 303 events on Oct 13.
+- Change: specific types where known (Theatre, Comedy, Ice show, Film, Talk, Fair…, per item 11's keyword pass). When unsure, the label is **"Event"** (type `other`). Remove "Special event" from the Add form.
+- Why: "Special" tells people nothing; this works with item 11's keyword sort and Kids & family.
+- Rejected: a smaller list (Live performance, Convention…); keeping "Special".
+
+#### Sports titles (item 13)
+
+**N03 · Full playoff words on the event page (review #11). DIFFERS FROM THE FORM CHOICE.**
+- Flag: Kylie picked **C, "Keep as is"**, but wrote "full words on the page though!!". The choice and the note disagree. **This reading follows her note.**
+- Today: rounds are codes everywhere: "NLWC", "WS" (`roundLabel.ts:19-27, 36-42`), "Conf Final" (`:113`), "CFP Semi" (`:126`), written as "{round} G{n}" on the page too (`eventTitle.ts:60, 196-197`; event title `src/screens/EventScreen.tsx:200`).
+- Change: the event page title spells it out: "Dodgers at Mets · NL Championship Series, Game 3", "World Series, Game 7", "National League Wild Card Series, Game 1", "Conference Final, Game 7", "College Football Playoff Semifinal". Chips and rows keep the short forms ("Mets · NLCS G3" on chips, "Dodgers at Mets · NLCS, Game 3" on rows). Add a full-name map beside `MLB_BY_SERIES` and the ESPN round functions.
+- Why: casual fans can't decode NLWC, WS or CFP, and the page has room.
+- Rejected: a generic "Playoffs · G7" chip; codes on the page too (the literal form choice; her note overrides it).
+
+**N04 · Teams first (review #10; lean).**
+- Today: `listTitle` puts the round first (`eventTitle.ts:197`); so does `scheduleGameTitle` (`:230`).
+- Change: "{teams} · {round}, Game {n}": "Dodgers at Braves · NLDS, Game 4". Applies to rows, the page and share text. The team page keeps its own form (N29).
+- Why: people scan for the team; it matches artist-first concerts (N10).
+- Rejected: round and game on a second line; round first (today).
+
+**N05 · Same words for the same round (review #12; lean).**
+- Today: "Semis" (`roundLabel.ts:104`), "1st Round" / "2nd Round" (`:105, 114-115`), "Postseason" fallback (`:173`), plus "Semifinals" from WNBA feeds.
+- Change: "Semifinals", "First round", "Second round"; "Playoffs" when the round is unknown (replaces "Postseason"); keep official names (Stanley Cup Final, World Series, Super Bowl). Chips may abbreviate as N03 allows.
+- Why: removes drift, keeps real round names.
+- Rejected: "Round 1 / Round 2" badges; keeping as is.
+
+**N06 · Super Bowl uses "vs." (review #13; lean).**
+- Today: neutral finals with no flag read "Chiefs at Rams" (`eventTitle.ts:78`); round first ("Super Bowl · Chiefs at Rams").
+- Change: "Chiefs vs. Rams · Super Bowl 2027" (with N07), venue and city on the page, not in the title. Set the neutral flag on every final at a neutral site.
+- Why: "at" implies a home game.
+- Rejected: "Super Bowl · Chiefs vs. Rams · [city]"; keeping as is.
+
+**N07 · Year on finals: kept (review #13; conflict, kept approved).** Item 13 step 4 stands: the year shows on full and short names when the feed gives the season ("Chiefs vs. Rams · Super Bowl 2027"), dropped on chips. Rejected: the reviewer's "no year unless verified" (we only use the feed's season, so nothing is guessed).
+
+**N08 · Preseason is a suffix (review #15; conflict). CHANGED FROM THE APPROVED DECISION.**
+- Today: preseason shows only on the team page as a label first (`eventTitle.ts:210-213, 222-223`).
+- Change: "Nuggets at Clippers · Preseason"; chip "Clippers Preseason". Item 13 step 5 is updated and marked adjusted. Applies to spring training too (item 13 MLB fix).
+- Why: Kylie chose the reviewer's version; it matches teams-first (N04). Step 2 still protects the designation from cuts.
+- Rejected: the earlier approved prefix "Preseason · Nuggets at Clippers" (the lean).
+
+**N09 · DH1 / DH2: kept (review #16; conflict, kept approved).** Item 13 step 3 stands: "DH1" / "DH2" on chips, "Game 1" / "Game 2" after the teams in rows and on the page. Today the index is dropped (`roundLabel.ts:15-16`). Rejected: "Doubleheader, Game 1" everywhere; DH on chips with spelled-out words on the page.
+
+**N16 · College squad codes (review #07; lean, with a note).**
+- Note: "I think codes for chips though / where space is tight".
+- Today: `collegeAbbrev` writes (FB) / (MBB) / (WBB) into every name (`eventTitle.ts:10-20, 73`).
+- Change: short and full names use a readable sport label after the teams: "Duke at Georgia Tech · Football", "X at UCLA · Women's basketball". Chips, and anywhere else width is tight, keep the code; on chips only on a clash, per item 13 ("Georgia Tech FB").
+- Why: plain words where there's room; codes where there isn't.
+- Rejected: a separate sport label beside the title; codes everywhere (today).
+
+**N17 · Neutral sites read "vs." (review #08; lean).**
+- Today: "Georgia at Florida" (missing flag, `src/data/seed/listings2026.ts:106`), "Oklahoma at Texas" in the archive; when flagged, the event name leads (`eventTitle.ts:76`).
+- Change: "Florida vs. Georgia · Neutral site", "Texas vs. Oklahoma · Red River Showdown", visitor first when known (item 13 step 7).
+- Rejected: event name first; keeping as is.
+
+**N18 · Event names parsed as teams (review #09; lean).**
+- Today: "Roosevelt) at East LA Classic (Garfield" and "Mexico at Copa Las Vegas: USA" (`sidesOf`, `eventTitle.ts:36`).
+- Change: rebuild the clear ones ("USA vs. Mexico · Copa Las Vegas", "Garfield vs. Roosevelt · East LA Classic"); show the original title when unsure (item 13 parsing bugs).
+- Rejected: event name first; keeping as is.
+
+**N19 · World Series said once (review #14; lean).** Today: "World Series G1 · World Series Game 1" from old seeds. Change: "World Series · Game 1", and "{teams} · World Series, Game 1" once teams are known. Rejected: "World Series — Game 1" with the matchup on its own line; keeping as is.
+
+**N20 · Named games (review #17; lean).** Today: bowl names alone, matchups dropped (`collegeRound`, `roundLabel.ts:124-133` returns no round for bowls). Change: "Georgia vs. Texas · Peach Bowl" once teams are known; bowl name alone until then. Rejected: bowl name first; keeping as is.
+
+#### Concert and event titles
+
+**N10 · Artist before tour (review #18; lean).** Today: feed titles pass through (`eventTitle.ts:194`): "Song Of The Saints Tour with Phil Wickham". Change: "Phil Wickham · Song Of The Saints Tour" when the performer is known and the title has "{tour} with {artist}". Rejected: colon form; keeping as is.
+
+**N11 · Co-bills (review #20; lean).** Today: chip is the first performer (`headliner`, `eventTitle.ts:85-92`), row is the comma list. Change: keep the full row title until billing is known; then "A + B" (equal bill) or "Headliner with Support"; full lineup on the page. Fits item 13's "no openers in short". Rejected: official title first with a Lineup field; keeping as is.
+
+**N12 · Multi-day (review #25; lean).** Today: "New York Comic Con (day 1 of 4)" (`listings2026.ts:23`); fair days share one name. Change: "New York Comic Con · Day 1 of 4", "Weekend 1" / "Weekend 2" for official weekends, a visible date for fairs ("State Fair of Texas · Sat, Oct 17"). No pass labels until pass type is stored. Rejected: date for every daily entry plus "Weekend pass" labels; keeping as is.
+
+**N21 · One styling per artist (review #21; lean).** Today: `displayName` turns all caps into title case (`src/config/names.ts:27-37`) on the chip but the row shows "SLAYER: Reign In Blood…" (`src/data/seed/la20261004.ts:76`). Change: one styling per artist from an artist list, used everywhere ("Slayer · Reign In Blood 40th Anniversary"); protect KATSEYE, $UICIDEBOY$, UB40. Rejected: official all caps everywhere; keeping as is.
+
+**N22 · Same artist twice (review #22; lean).** Today: `mapTitle` adds the full venue on a clash (`eventTitle.ts:175-177`), "Billy Strings · Angel of the Winds Arena". Change: short venue name when the venues differ, start time when the venue is the same ("Billy Strings · 7:00 PM"). The duplicate Dodgers game is a data fix. Rejected: artist only on the chip; keeping as is.
+
+**N23 · ComplexCon (review #23; lean).** Today: "2026 ComplexCon Concert" typed Festival (`la20261004.ts:90`). Change: if it's the concert, "ComplexCon concert", Type Concert, Playboi Carti in the lineup; confirm on the listing first. Rejected: "ComplexCon" as Festival; keeping as is.
+
+**N25 · "Touring" (review #26; lean).** Today: "Waitress (Touring)" from the feed (`eventTitle.ts:194`). Change: "Waitress", with "Touring production" on the page. Rejected: "· Touring production" only on overlap; keeping as is.
+
+**N26 · Production names on chips (review #27; lean).** Today: "Disney On Ice presents Jump In" cut by CSS. Change: drop "presents"; the distinguishing part stays visible as its own label (chip "Disney On Ice", row "Disney On Ice · Jump In"; "G7" protected per item 13 step 2). Rejected: "Disney On Ice: Jump In"; keeping as is.
+
+**N27 · Promoter boilerplate (review #28; lean).** Today: "BVD Boston presents BEND OVA ( 21+ )". Change: "BEND OVA · 21+", promoter on the page. Rejected: "BEND OVA (21+)"; keeping as is.
+
+#### Separators
+
+**N28 · Middle dot between artist and tour (review #19; lean).** Today: colons and hyphens from feeds ("Phoebe Bridgers: The Lost Tour", "LP - All Is Not Lost Tour"). Change: "Phoebe Bridgers · The Lost Tour" in titles we generate; official names untouched. Rejected: colon; keeping as is.
+
+**N29 · "vs." with a period everywhere; @ on team pages (review #29). NOTE OVERRIDES THE CHOICE LABEL.**
+- Flag: the choice label reads "vs with no period", but her note says "vs. with a period everywhere; keep @ on team pages". This follows the note.
+- Today: `teamRelativeTitle` writes "vs Padres" / "@ Brewers" (`eventTitle.ts:216-221`); `gameName` and `scheduleGameTitle` write "vs." (`:75, 228`).
+- Change: "vs." with a period on every surface, including the team page ("vs. Padres", "vs. 49ers · Melbourne"); keep "@ Brewers" on team pages. All examples in these notes use "vs.".
+- Rejected: "vs" without a period; spelling out "at" on team pages.
