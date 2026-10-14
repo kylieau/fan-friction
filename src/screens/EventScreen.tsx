@@ -351,7 +351,7 @@ export function EventScreen() {
             See the whole day ›
           </Link>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
-          {a.status === 'formula' && !stampLocked && <div className="draft-note">Forecast</div>}
+          {a.status === 'formula' && !stampLocked && <div className="draft-note">Verdict</div>}
         </section>
       )}
 

@@ -109,7 +109,9 @@ export function SettingsCrowdScreen() {
           </div>
           <p className="you-fine">Slider moves in steps of 5,000. Type any thousand for exact values. 80,000+ means no max.</p>
         </div>
-        <p className="you-fine">Applies everywhere in the app.</p>
+        {/* Where the range applies (Kylie, Oct 14): Home keeps today's three biggest; a favorite's page and the Local
+            Competition timeline are never filtered. */}
+        <p className="you-fine">Applies to Explore, date pages and search. Home always shows today's three biggest events, and a favorite's page shows all of its events.</p>
         <p className="you-fine">Events you've stubbed or friends are attending always show.</p>
       </div>
       <div className="settings">

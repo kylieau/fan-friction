@@ -142,7 +142,7 @@ export function SettingsScreen() {
           <span>Crowd size</span>
           <span className="settings-value">{crowdRangeLabel(crowdRangeOf(log))}</span>
         </Link>
-        <p className="you-fine">Applies everywhere in the app.</p>
+        <p className="you-fine">Applies to Explore, date pages and search.</p>
       </div>
 
       {account && (

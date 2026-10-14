@@ -26,7 +26,6 @@ import {
   drawSize,
   savedNightRead,
   scheduleCoverage,
-  stampLocksAt,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
@@ -120,7 +119,6 @@ export function DateScreen() {
   );
   const plans = useMemo(() => log.plans.filter((p) => firmPlan(p) && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
-  const locksAt = useMemo(() => stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone), [metro, date, events]);
   // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
   const dayRange = cityDayRange(metro.id, date);
   const cityRow = dayRange ? undefined : cityWeather(metro.id, date, events);
@@ -179,10 +177,11 @@ export function DateScreen() {
     );
   }
 
-  // "Forecast" until the stamp locks, 24 hours after the last start. A settled read carries no label
+  // "Verdict" until the stamp locks, 24 hours after the last start (Kylie, Oct 14: was "Forecast", which read like the
+  // weather forecast on the same page). A settled read carries no label
   // (build notes 2, section 1): how it settled, and any revision, sits behind the (i).
   const locked = !ahead && isStampLocked(asMetroDate(metro.id, date, events), metro.timeZone);
-  const readKind = rating && !locked ? 'Forecast' : null;
+  const readKind = rating && !locked ? 'Verdict' : null;
   // A settled night shows the read as it was saved, never today's recomputation (3.15).
   const saved = locked ? savedNightRead(metro.id, date, events) : null;
   const shownRating = saved?.rating ?? rating?.rating ?? null;
@@ -233,8 +232,7 @@ export function DateScreen() {
               <span className="read-txt">{rating.headline}</span>
               {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
               <span className="read-meta">
-                {/* No internal terms here (C069): the lock time ahead, the sources count after. */}
-                {ahead && locksAt ? `Locks ${locksAt.toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: metro.timeZone })}` : ''}
+                {/* No internal terms here (C069): the sources count after; no lock time ahead (Kylie, Oct 14). */}
                 {rebuilt ? 'Rebuilt from past schedules.' : !ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
               </span>
             </span>
@@ -260,8 +258,8 @@ export function DateScreen() {
                 </span>
               ) : (
                 <>
-                  <span className="read-lab">{ahead ? 'Forecast' : 'No read yet'}</span>
-                  <span className="read-txt">{ahead ? 'The forecast arrives with the formula.' : 'This date has no rating yet.'}</span>
+                  <span className="read-lab">{ahead ? 'Verdict' : 'No read yet'}</span>
+                  <span className="read-txt">{ahead ? 'The verdict arrives with the formula.' : 'This date has no rating yet.'}</span>
                 </>
               )}
               {day.emptyWhy === 'failed' && (
