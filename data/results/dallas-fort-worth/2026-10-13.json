@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-dallas-stars-401892498",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 3
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-10-14T13:26:17.763Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "20:46"
+    }
+  ]
+}

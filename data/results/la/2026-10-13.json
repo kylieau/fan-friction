@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-ducks-401892501",
+      "metroId": "la",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "away": {
+        "name": "Flames",
+        "score": 4
+      },
+      "attendance": 17174,
+      "capturedAt": "2026-10-14T13:26:15.299Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "21:53"
+    },
+    {
+      "eventId": "2026-10-13-espn-kings-401892502",
+      "metroId": "la",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 1
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 4
+      },
+      "attendance": 16192,
+      "capturedAt": "2026-10-14T13:26:15.299Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "22:39"
+    },
+    {
+      "eventId": "2026-10-13-espn-lakers-401898718",
+      "metroId": "la",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 89
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 101
+      },
+      "attendance": 7471,
+      "capturedAt": "2026-10-14T13:26:15.299Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    }
+  ]
+}

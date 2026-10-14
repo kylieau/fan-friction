@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-29",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:21:59.352Z",
+      "feelsLikeHighF": 55.8,
+      "feelsLikeLowF": 44.7,
+      "code": 3,
+      "precipProbability": 13
+    }
+  ]
+}

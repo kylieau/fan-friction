@@ -39,6 +39,18 @@
       "code": 65,
       "precipProbability": 58,
       "precipMm": 12.2
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:21:00.961Z",
+      "feelsLikeHighF": 73.9,
+      "feelsLikeLowF": 62.2,
+      "code": 63,
+      "precipProbability": 85,
+      "precipMm": 6.2
     }
   ]
 }

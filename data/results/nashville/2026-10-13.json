@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-mtsu-football-401871067",
+      "metroId": "nashville",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "floyd-stadium",
+      "homeTeamId": "mtsu-football",
+      "home": {
+        "name": "MTSU",
+        "score": 33
+      },
+      "away": {
+        "name": "Delaware",
+        "score": 30
+      },
+      "attendance": 8606,
+      "capturedAt": "2026-10-14T13:26:20.797Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    },
+    {
+      "eventId": "2026-10-13-espn-predators-401892499",
+      "metroId": "nashville",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 2
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 5
+      },
+      "attendance": 17229,
+      "capturedAt": "2026-10-14T13:26:20.797Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "20:54"
+    }
+  ]
+}

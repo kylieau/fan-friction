@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-sharks-401892503",
+      "metroId": "bay-area",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 3
+      },
+      "away": {
+        "name": "Bruins",
+        "score": 6
+      },
+      "attendance": 14748,
+      "capturedAt": "2026-10-14T13:26:17.222Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "23:15"
+    }
+  ]
+}

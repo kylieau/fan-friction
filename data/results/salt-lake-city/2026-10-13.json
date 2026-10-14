@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-utah-mammoth-401892500",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 5
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 4
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-10-14T13:26:24.253Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    }
+  ]
+}

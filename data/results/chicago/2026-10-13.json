@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-blackhawks-401892496",
+      "metroId": "chicago",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 5
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 3
+      },
+      "attendance": 17609,
+      "capturedAt": "2026-10-14T13:26:17.476Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

@@ -352,6 +352,18 @@
       "code": 0,
       "precipProbability": 17,
       "precipMm": 0
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:19:21.656Z",
+      "feelsLikeHighF": 66.6,
+      "feelsLikeLowF": 62.5,
+      "code": 53,
+      "precipProbability": 18,
+      "precipMm": 7.9
     }
   ]
 }

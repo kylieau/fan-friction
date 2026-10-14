@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-flyers-401892492",
+      "metroId": "philadelphia",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 2
+      },
+      "away": {
+        "name": "Kraken",
+        "score": 3
+      },
+      "attendance": 17851,
+      "note": "SO",
+      "capturedAt": "2026-10-14T13:26:19.091Z",
+      "duration": {
+        "minutes": 175,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

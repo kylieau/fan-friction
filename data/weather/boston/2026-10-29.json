@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-29",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "boston",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:20:06.677Z",
+      "feelsLikeHighF": 60.4,
+      "feelsLikeLowF": 50.1,
+      "code": 81,
+      "precipProbability": 23,
+      "precipMm": 21.6
+    }
+  ]
+}

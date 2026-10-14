@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-29",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:19:13.162Z",
+      "feelsLikeHighF": 79.6,
+      "feelsLikeLowF": 72.5,
+      "code": 3,
+      "precipProbability": 6
+    }
+  ]
+}

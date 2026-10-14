@@ -27,6 +27,18 @@
       "code": 3,
       "precipProbability": 26,
       "precipMm": 0
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-27",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:21:11.031Z",
+      "feelsLikeHighF": 56.5,
+      "feelsLikeLowF": 40.1,
+      "code": 3,
+      "precipProbability": 19,
+      "precipMm": 0
     }
   ]
 }

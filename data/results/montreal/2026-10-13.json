@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-canadiens-401892490",
+      "metroId": "montreal",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 4
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 3
+      },
+      "attendance": 20962,
+      "note": "SO",
+      "capturedAt": "2026-10-14T13:26:18.277Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "18:38"
+    }
+  ]
+}

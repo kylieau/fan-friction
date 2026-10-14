@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-islanders-401892495",
+      "metroId": "new-york",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 3
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "attendance": 13647,
+      "capturedAt": "2026-10-14T13:26:16.443Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:53"
+    },
+    {
+      "eventId": "2026-10-13-espn-ny-rangers-401892493",
+      "metroId": "new-york",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 4
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 1
+      },
+      "attendance": 17076,
+      "capturedAt": "2026-10-14T13:26:16.443Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:23"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-ht-seattle-thunderbirds-1023166",
+      "metroId": "seattle",
+      "date": "2026-10-13",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 1
+      },
+      "away": {
+        "name": "Giants",
+        "score": 5
+      },
+      "attendance": 3158,
+      "capturedAt": "2026-10-14T13:26:16.017Z"
+    }
+  ]
+}

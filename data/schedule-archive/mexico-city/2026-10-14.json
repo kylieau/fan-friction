@@ -1,0 +1,2115 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "metroName": "Mexico City",
+  "timeZone": "America/Mexico_City",
+  "capturedOn": "2026-10-14",
+  "capturedAt": "2026-10-14T13:24:32.877Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-14",
+    "through": "2026-10-28"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 8
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 45
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-14-tm-G5dVZ_dr7Dvl0",
+      "metroId": "mexico-city",
+      "date": "2026-10-14",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Hombres G",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Hombres G",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_dr7Dvl0",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-1AfZk38GkdBtYYk",
+      "metroId": "mexico-city",
+      "date": "2026-10-14",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Travis",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Travis",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk38GkdBtYYk",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-G5dVZ_GnRMd7l",
+      "metroId": "mexico-city",
+      "date": "2026-10-14",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Karen Souza",
+      "officialTitle": "Karen Souza: The Biggest Latin Jazz Diva is Back",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Karen Souza",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_GnRMd7l",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-1AfZk4FGkdVYa2U",
+      "metroId": "mexico-city",
+      "date": "2026-10-15",
+      "start": "20:15",
+      "kind": "game",
+      "title": "Basquetbol Mineros de Zacatecas v. Diablos Rojos Temporada 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "gimnasio-juan-de-la-barrera"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Diablos Rojos Basquetbol",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk4FGkdVYa2U"
+    },
+    {
+      "id": "2026-10-15-tm-G5dVZ_73-we__",
+      "metroId": "mexico-city",
+      "date": "2026-10-15",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Bunbury",
+      "officialTitle": "Enrique Bunbury",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Bunbury",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_73-we__",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-1AfZkoPGkew4IVC",
+      "metroId": "mexico-city",
+      "date": "2026-10-15",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Two Door Cinema Club",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Two Door Cinema Club",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZkoPGkew4IVC",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5dVZ_FNNiJ7I",
+      "metroId": "mexico-city",
+      "date": "2026-10-15",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Ked El Hombre Magia",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Magic & Illusion"
+      },
+      "performer": "Ked El Hombre Magia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_FNNiJ7I"
+    },
+    {
+      "id": "2026-10-16-tm-1Av8Z_3GklEhZwc",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Budo Sento 37",
+      "place": {
+        "type": "venue",
+        "venueId": "gimnasio-juan-de-la-barrera"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Budo Sento",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_3GklEhZwc"
+    },
+    {
+      "id": "2026-10-16-tm-1AfZkuyGkdZEXZj",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Martin Garrix",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Martin Garrix",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZkuyGkdZEXZj",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-1Av8Z_FGkTPTg3j",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Gran Final Campeonato Universal Amazonas, lucha libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTPTg3j",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5dVZ_dr7DolJ",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Hombres G",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Hombres G",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_dr7DolJ",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-atlante-401876945",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "kind": "game",
+      "title": "Atlante vs. Pumas",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlante",
+        "away": "pumas-unam",
+        "awayOpponent": "unam"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-16-tm-1AfZkoPGkeSQFHt",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Two Door Cinema Club",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Two Door Cinema Club",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZkoPGkeSQFHt",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5dVZ_o3kNekI",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "start": "22:30",
+      "kind": "show",
+      "title": "Estela Nunez",
+      "officialTitle": "Cabaret Lunario Presenta: Estela Nuñez con Mariachi",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Ballads/Romantic"
+      },
+      "performer": "Estela Nunez",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_o3kNekI",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5dVZ_Gm0Bdwy",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Ópera MET Macbeth",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Macbeth",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_Gm0Bdwy"
+    },
+    {
+      "id": "2026-10-17-tm-1AfZkowGkesNzmv",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Airbag",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Airbag",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZkowGkesNzmv",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1AfZkuyGkdvxr1A",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Martin Garrix",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Martin Garrix",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZkuyGkdvxr1A",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5dVZ_5Qmakll",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Juan Solo",
+      "officialTitle": "Juan Solo Salvavidas",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Ballads/Romantic"
+      },
+      "performer": "Juan Solo",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_5Qmakll",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5dVZ_73-we_h",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Bunbury",
+      "officialTitle": "Enrique Bunbury",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Bunbury",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_73-we_h",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-cruz-azul-401876939",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "start": "21:10",
+      "kind": "game",
+      "title": "Cruz Azul vs. Juárez",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "cruz-azul",
+        "away": "ju-rez",
+        "awayOpponent": "ju-rez"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 30760,
+        "low": 22969,
+        "high": 41668,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 4 games, 2023."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-pumas-femenil-401924370",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Pumas vs. Atlas",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "pumas-femenil",
+        "away": "atlas",
+        "awayOpponent": "atlas"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2627,
+        "low": 2339,
+        "high": 7739,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5dVZ_urdiZgY",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "show",
+      "title": "Pavel Loaria",
+      "officialTitle": "Pavel Loaria Big Band 10 Años",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Pavel Loaria",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_urdiZgY",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-1Av8Z_FGkTs2ysd",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Domingo Familiar de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTs2ysd",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-10-18-espn-america-femenil-401924393",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "América vs. Pachuca",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "america-femenil",
+        "away": "pachuca",
+        "awayOpponent": "pachuca"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-tm-17AZv0G61NaSPa5",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "OMD",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "OMD",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G61NaSPa5",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-17AZv0G6Ckcu0Ec",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "BLESSD",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "BLESSD",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6Ckcu0Ec",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5dVZ_dr7D-li",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Hombres G",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Hombres G",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_dr7D-li",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-17AZv0G65pX_L4R",
+      "metroId": "mexico-city",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Def Leppard",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Def Leppard",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G65pX_L4R",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-G5dVZ_73-ww_N",
+      "metroId": "mexico-city",
+      "date": "2026-10-19",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Bunbury",
+      "officialTitle": "Enrique Bunbury",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Bunbury",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_73-ww_N",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-1Av8Z_FGkTP2VDw",
+      "metroId": "mexico-city",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Martes Populares de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTP2VDw",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-21-tm-1AfZk34GkecTCB2",
+      "metroId": "mexico-city",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Slayer",
+      "officialTitle": "SLAYER: Reign In Blood 40th Anniversary 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Slayer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk34GkecTCB2",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5dVZ_u3ZQsdy",
+      "metroId": "mexico-city",
+      "date": "2026-10-21",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Jesse & Joy",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Ballads/Romantic"
+      },
+      "performer": "Jesse & Joy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_u3ZQsdy",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-16v8Z_kQeG7UxfM",
+      "metroId": "mexico-city",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bad Gyal",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "Bad Gyal",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16v8Z_kQeG7UxfM",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5dVZ_1TKZcgl",
+      "metroId": "mexico-city",
+      "date": "2026-10-22",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Edith Marquez",
+      "officialTitle": "Edith Márquez",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Edith Marquez",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_1TKZcgl",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1AfZk3pGkd0Stij",
+      "metroId": "mexico-city",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fobia",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Fobia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3pGkd0Stij",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1Av8Z_FGkTJZA3r",
+      "metroId": "mexico-city",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Grand Prix de Amazonas, lucha libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJZA3r",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5dVZ_FXVYkUo",
+      "metroId": "mexico-city",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Andrés Obregón",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Ballads/Romantic"
+      },
+      "performer": "Andrés Obregón",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_FXVYkUo",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-atlante-401876927",
+      "metroId": "mexico-city",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "kind": "game",
+      "title": "Atlante vs. Atl. San Luis",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlante",
+        "away": "atl-san-luis",
+        "awayOpponent": "atl-san-luis"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-G5dVZ_ClpGPzo",
+      "metroId": "mexico-city",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Arturo Sandoval",
+      "officialTitle": "Arturo Sandoval Presenta:Sangú",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Arturo Sandoval",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_ClpGPzo",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AfZkoSGkdgaJGa",
+      "metroId": "mexico-city",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fobia",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Fobia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZkoSGkdgaJGa",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5dVZ_uKvY4SE",
+      "metroId": "mexico-city",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gloria Trevi",
+      "officialTitle": "Gloria Trevi Celebration",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Gloria Trevi",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_uKvY4SE",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-pumas-unam-401876924",
+      "metroId": "mexico-city",
+      "date": "2026-10-24",
+      "start": "21:00",
+      "kind": "game",
+      "title": "Pumas vs. Tigres",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "pumas-unam",
+        "away": "tigres",
+        "awayOpponent": "tigres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 37779,
+        "low": 33205,
+        "high": 40472,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5dVZ_ClpUgBx",
+      "metroId": "mexico-city",
+      "date": "2026-10-24",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Arturo Sandoval",
+      "officialTitle": "Arturo Sandoval Presenta:Sangú",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Arturo Sandoval",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_ClpUgBx",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1Av8Z_FGkTs2ys1",
+      "metroId": "mexico-city",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Domingo Familiar de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTs2ys1",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-25-espn-club-america-401876922",
+      "metroId": "mexico-city",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "América vs. Pachuca",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "club-america",
+        "away": "pachuca",
+        "awayOpponent": "pachuca"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 39968,
+        "low": 31133,
+        "high": 46465,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 19 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1Av8Z_7Gkl7_wwo",
+      "metroId": "mexico-city",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Romeo Santos",
+      "officialTitle": "Romeo Santos & Prince Royce",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Romeo Santos",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_7Gkl7_wwo",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5dVZ_aQgopBb",
+      "metroId": "mexico-city",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pimpinela",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Pimpinela",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_aQgopBb",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5dVZ_FmK2e3r",
+      "metroId": "mexico-city",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Transmetal",
+      "officialTitle": "Transmetal 40 Aniversario",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Transmetal",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_FmK2e3r",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-1Av8Z_7GklkkKut",
+      "metroId": "mexico-city",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Romeo Santos",
+      "officialTitle": "Romeo Santos & Prince Royce",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Romeo Santos",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_7GklkkKut",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-1Av8Z_FGkTP87DV",
+      "metroId": "mexico-city",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Eliminatoria Rey del Inframundo, Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTP87DV",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5dVZ_GJfYvjT",
+      "metroId": "mexico-city",
+      "date": "2026-10-27",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Marcos Vidal",
+      "officialTitle": "Eterno Marcos Vidal, Marcos Witt, Marco Barrientos",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "Marcos Vidal",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_GJfYvjT",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-17AZv0G6uDvJyEf",
+      "metroId": "mexico-city",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Omar Courtz",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Omar Courtz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6uDvJyEf",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-club-america-401876986",
+      "metroId": "mexico-city",
+      "date": "2026-10-28",
+      "start": "21:00",
+      "kind": "game",
+      "title": "América vs. Tijuana",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "club-america",
+        "away": "tijuana",
+        "awayOpponent": "tijuana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20726,
+        "low": 20245,
+        "high": 26913,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2023."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-14-tm-G5dVZ_dr7Dvl0",
+      "date": "2026-10-14",
+      "start": "20:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Karen Souza and Travis next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-1AfZk38GkdBtYYk",
+      "date": "2026-10-14",
+      "start": "21:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Hombres G and Karen Souza 2.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-G5dVZ_GnRMd7l",
+      "date": "2026-10-14",
+      "start": "21:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Hombres G and Travis next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-1AfZk4FGkdVYa2U",
+      "date": "2026-10-15",
+      "start": "20:15",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Bunbury and Ked El Hombre Magia 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5dVZ_73-we__",
+      "date": "2026-10-15",
+      "start": "20:30",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Ked El Hombre Magia and Two Door Cinema Club next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-1AfZkoPGkew4IVC",
+      "date": "2026-10-15",
+      "start": "21:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Bunbury and Ked El Hombre Magia 2.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5dVZ_FNNiJ7I",
+      "date": "2026-10-15",
+      "start": "21:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Bunbury and Two Door Cinema Club next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1Av8Z_3GklEhZwc",
+      "date": "2026-10-16",
+      "start": "17:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Martin Garrix and Atlante vs. Pumas 4.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1AfZkuyGkdZEXZj",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Atlante vs. Pumas 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1Av8Z_FGkTPTg3j",
+      "date": "2026-10-16",
+      "start": "20:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Atlante vs. Pumas 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5dVZ_dr7DolJ",
+      "date": "2026-10-16",
+      "start": "20:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Atlante vs. Pumas 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-atlante-401876945",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Low",
+        "why": "Martin Garrix 7.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1AfZkoPGkeSQFHt",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Atlante vs. Pumas and Martin Garrix 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5dVZ_o3kNekI",
+      "date": "2026-10-16",
+      "start": "22:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Atlante vs. Pumas and Martin Garrix 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5dVZ_Gm0Bdwy",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1AfZkowGkesNzmv",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "Cruz Azul vs. Juárez and Martin Garrix 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1AfZkuyGkdvxr1A",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Cruz Azul vs. Juárez 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5dVZ_5Qmakll",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "Cruz Azul vs. Juárez and Martin Garrix 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5dVZ_73-we_h",
+      "date": "2026-10-17",
+      "start": "20:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Cruz Azul vs. Juárez and Martin Garrix 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-cruz-azul-401876939",
+      "date": "2026-10-17",
+      "start": "21:10",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Martin Garrix 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 30760,
+        "low": 22969,
+        "high": 41668
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-pumas-femenil-401924370",
+      "date": "2026-10-18",
+      "start": "12:00",
+      "read": {
+        "rating": 5.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2627,
+        "low": 2339,
+        "high": 7739
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5dVZ_urdiZgY",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 5.9,
+        "friction": "Moderate",
+        "why": "Domingo Familiar de Lucha Libre CMLL 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1Av8Z_FGkTs2ysd",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "read": {
+        "rating": 5.9,
+        "friction": "Heavy",
+        "why": "América vs. Pachuca 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-america-femenil-401924393",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 5.9,
+        "friction": "Low",
+        "why": "BLESSD 7.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-17AZv0G61NaSPa5",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 5.9,
+        "friction": "Heavy",
+        "why": "Hombres G 2.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-17AZv0G6Ckcu0Ec",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 5.9,
+        "friction": "Moderate",
+        "why": "América vs. Pachuca 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5dVZ_dr7D-li",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 5.9,
+        "friction": "Heavy",
+        "why": "OMD and América vs. Pachuca 2.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-17AZv0G65pX_L4R",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Bunbury 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-G5dVZ_73-ww_N",
+      "date": "2026-10-19",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Def Leppard 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-1Av8Z_FGkTP2VDw",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-1AfZk34GkecTCB2",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Jesse & Joy 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5dVZ_u3ZQsdy",
+      "date": "2026-10-21",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Slayer 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-16v8Z_kQeG7UxfM",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Edith Marquez 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5dVZ_1TKZcgl",
+      "date": "2026-10-22",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Bad Gyal 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AfZk3pGkd0Stij",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 5.5,
+        "friction": "Moderate",
+        "why": "Atlante vs. Atl. San Luis 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1Av8Z_FGkTJZA3r",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "read": {
+        "rating": 5.5,
+        "friction": "Moderate",
+        "why": "Atlante vs. Atl. San Luis 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5dVZ_FXVYkUo",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "read": {
+        "rating": 5.5,
+        "friction": "Heavy",
+        "why": "Atlante vs. Atl. San Luis and Fobia 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-atlante-401876927",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "read": {
+        "rating": 5.5,
+        "friction": "Low",
+        "why": "Fobia 7.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5dVZ_ClpGPzo",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "read": {
+        "rating": 5.5,
+        "friction": "Heavy",
+        "why": "Atlante vs. Atl. San Luis and Fobia 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AfZkoSGkdgaJGa",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Pumas vs. Tigres 7.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dVZ_uKvY4SE",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Pumas vs. Tigres and Fobia 6.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-pumas-unam-401876924",
+      "date": "2026-10-24",
+      "start": "21:00",
+      "read": {
+        "rating": 4,
+        "friction": "Low",
+        "why": "Fobia 7.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 37779,
+        "low": 33205,
+        "high": 40472
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dVZ_ClpUgBx",
+      "date": "2026-10-24",
+      "start": "21:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Pumas vs. Tigres and Fobia 6.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1Av8Z_FGkTs2ys1",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "América vs. Pachuca and Romeo Santos 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-club-america-401876922",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Romeo Santos 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 39968,
+        "low": 31133,
+        "high": 46465
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1Av8Z_7Gkl7_wwo",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Pimpinela and América vs. Pachuca 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5dVZ_aQgopBb",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Romeo Santos 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5dVZ_FmK2e3r",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "América vs. Pachuca and Romeo Santos 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-1Av8Z_7GklkkKut",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-1Av8Z_FGkTP87DV",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Marcos Vidal 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5dVZ_GJfYvjT",
+      "date": "2026-10-27",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Eliminatoria Rey del Inframundo, Lucha Libre CMLL 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-17AZv0G6uDvJyEf",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "América vs. Tijuana 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-club-america-401876986",
+      "date": "2026-10-28",
+      "start": "21:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Omar Courtz 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20726,
+        "low": 20245,
+        "high": 26913
+      }
+    }
+  ]
+}

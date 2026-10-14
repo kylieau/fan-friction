@@ -27,6 +27,18 @@
       "code": 3,
       "precipProbability": 32,
       "precipMm": 0
+    },
+    {
+      "metroId": "indianapolis",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:21:08.489Z",
+      "feelsLikeHighF": 77.6,
+      "feelsLikeLowF": 55.7,
+      "code": 80,
+      "precipProbability": 20,
+      "precipMm": 4.2
     }
   ]
 }

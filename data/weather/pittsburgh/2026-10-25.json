@@ -27,6 +27,18 @@
       "code": 3,
       "precipProbability": 19,
       "precipMm": 0
+    },
+    {
+      "metroId": "pittsburgh",
+      "venueId": "city",
+      "date": "2026-10-25",
+      "basis": "forecast",
+      "capturedAt": "2026-10-14T13:20:18.122Z",
+      "feelsLikeHighF": 65,
+      "feelsLikeLowF": 38.4,
+      "code": 53,
+      "precipProbability": 19,
+      "precipMm": 2.4
     }
   ]
 }

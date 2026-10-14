@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-ottawa-senators-401892494",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 2
+      },
+      "away": {
+        "name": "Blues",
+        "score": 7
+      },
+      "attendance": 14085,
+      "capturedAt": "2026-10-14T13:26:24.577Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    }
+  ]
+}

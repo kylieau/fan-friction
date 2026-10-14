@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-hurricanes-401892491",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "hurricanes",
+      "home": {
+        "name": "Hurricanes",
+        "score": 4
+      },
+      "away": {
+        "name": "Capitals",
+        "score": 2
+      },
+      "attendance": 18828,
+      "capturedAt": "2026-10-14T13:26:25.503Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "18:53"
+    }
+  ]
+}

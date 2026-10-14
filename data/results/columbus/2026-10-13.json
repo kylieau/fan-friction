@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-13",
+  "results": [
+    {
+      "eventId": "2026-10-13-espn-blue-jackets-401892489",
+      "metroId": "columbus",
+      "date": "2026-10-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 3
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 7
+      },
+      "attendance": 13538,
+      "capturedAt": "2026-10-14T13:26:20.277Z",
+      "duration": {
+        "minutes": 161,
+        "kind": "estimated"
+      },
+      "startedAt": "18:24"
+    }
+  ]
+}
