@@ -283,7 +283,7 @@ export const KYLIE_LOG: Entry[] = [
     venue: 'Pomona-Pitzer',
     belowFloor: true,
   }),
-  entry('k-2025-11-29-cosm', day('2025-11-29'), 'Ohio State @ Michigan, at Cosm', 'Cosm', FB, 'Ohio State', {
+  entry('k-2025-11-29-cosm', day('2025-11-29'), 'Ohio State at Michigan · Watch party', 'Cosm', FB, 'Ohio State', {
     venue: 'Cosm',
     kind: 'live-broadcast',
     belowFloor: true,

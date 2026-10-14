@@ -105,6 +105,8 @@ interface MlbGame {
   ifNecessary?: string;
   /** Doubleheader index. Not the series game. */
   gameNumber?: number;
+  /** "Y" (traditional) or "S" (split) on a doubleheader game, "N" otherwise. */
+  doubleHeader?: string;
   status: { detailedState: string; startTimeTBD?: boolean; abstractGameState?: string };
   linescore?: { currentInning?: number; scheduledInnings?: number };
   venue?: { id: number; name?: string };
@@ -163,6 +165,10 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
     kind: 'game',
     title: `${homeName} vs. ${awayName}`,
     ...(stakes ? { stakes } : {}),
+    // Spring training is gameType S, on the map path as on the team schedule (build 5, item 13, case 1).
+    ...(g.gameType === 'S' ? { preseason: true } : {}),
+    // A doubleheader's game, read from the feed instead of dropped (N09): "Game 1" in names, "DH1" on chips.
+    ...(g.doubleHeader && g.doubleHeader !== 'N' && (g.gameNumber === 1 || g.gameNumber === 2) ? { doubleheader: g.gameNumber } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: 'baseball' },
     teams: { home: home.teamId, away: slug(awayName) },

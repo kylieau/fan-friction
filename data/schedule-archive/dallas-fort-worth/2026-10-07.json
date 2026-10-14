@@ -490,6 +490,7 @@
       "start": "14:30",
       "kind": "game",
       "title": "Texas vs. Oklahoma (Red River Showdown)",
+      "neutralSite": true,
       "place": {
         "type": "venue",
         "venueId": "cotton-bowl"

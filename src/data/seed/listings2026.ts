@@ -46,6 +46,8 @@ const neutralFootball = (id: string, date: string, start: string | null, title: 
   start,
   kind: 'game',
   title,
+  // Every game this helper builds is at a neutral site (build 5, item 13: the flag was missing, so titles read "at").
+  neutralSite: true,
   place: { type: 'venue', venueId: 'mercedes-benz-stadium' },
   audience: { domain: 'sports', sport: 'football' },
   crowd: [],
