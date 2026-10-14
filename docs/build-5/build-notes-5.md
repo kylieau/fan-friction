@@ -42,7 +42,8 @@ Scope: shows of 5,000 or more people, any genre, that are not on Ticketmaster.
 
 **(b) SeatGeek official API, as the catch-all.** It needs only a free client ID. It picks up shows at rooms that are not on AXS or Ticketmaster.
 
-- Required test event: **Pawsa** at the Rio Vista lot in LA. It is sold only on DICE, so it is a good test of whether SeatGeek finds DICE-only shows. Sources disagree on the address (1951 vs 1485 Rio Vista Ave); this must be resolved before the event is stored.
+- Required test event: **Pawsa** at the Rio Vista lot in LA. It is sold only on DICE, so it is a good test of whether SeatGeek finds DICE-only shows. Sources disagree on the address (1951 vs 1485 Rio Vista Ave).
+- **Builder step (Kylie, Oct 14):** resolve Pawsa's address before storing the event. Check the DICE listing and the promoter's page, store the address they agree on, and note the source in a comment. Why: a wrong address puts the pin and the crowd in the wrong place. Rejected: storing either address and fixing it later, or leaving the address blank.
 - If SeatGeek misses Pawsa, we fall back to **DICE public event pages** for shows like it.
 
 **(c) A hand-kept festival and promoter list.** Big festivals and promoters are few and stable, so a short list we keep by hand covers them reliably:
@@ -64,6 +65,8 @@ Scope: shows of 5,000 or more people, any genre, that are not on Ticketmaster.
 - **JamBase:** possible paid trial. Not decided either way.
 
 ### Pop-up sizing
+
+**Today: not built.** No pop-up sizing rule exists on main. Put it in a new shared helper, `src/data/sources/popupSizing.ts`, called by the new sources (a)–(c); hand seeds keep using `unsized` (`src/data/seed/past2026.ts:90`) when nothing is known. The rule itself is settled by the Oct 13 research; don't reopen it, just build it.
 
 For one-off venues (lots, fields, temporary sites):
 
@@ -90,6 +93,8 @@ Rejected:
 Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
 
 ### Background: the earlier 60-mile discussion (not decided)
+
+**Background for the builder's research prompt, not an instruction.** Use it as context when writing the prompt; don't build any of it.
 
 Proposed rule: an event within **60 miles** of the metro's existing center point counts as local. 60 miles is a starting value, not a sourced figure, and can be changed.
 
@@ -122,7 +127,7 @@ Gillette Stadium is probably already in as the Patriots' venue. Check before add
 
 ## 3. Add to calendar
 
-**Build instruction:** build option B (Mosaic item 2 below): an icon button beside "+ Stub it" that opens a chooser sheet. Context: nothing exists on main to extend (no .ics, Google Calendar or Add to calendar code).
+**Build instruction:** build option B (Mosaic board, Oct 13, `/workspace/ff-gap-review/mosaic/b5/add-to-calendar.png`): a 52pt calendar icon button beside a narrower "+ Stub it" that opens a chooser sheet (Apple Calendar via an .ics file, "Device calendar" on Android; Google Calendar via a prefilled link). The event is written once; no sync. Context: nothing exists on main to extend (no .ics, Google Calendar or Add to calendar code).
 
 Let the user export an event to their own phone or computer calendar. This is not an in-app calendar.
 
@@ -130,6 +135,13 @@ Feasible with two pieces:
 
 - An **.ics file download**, which works with Apple Calendar, Outlook and most others.
 - A **Google Calendar link** that opens a prefilled event.
+
+**Why B:** it adds no row, so This day and everything below stay where they are, and Stub it stays the main action.
+
+**Rejected:**
+
+- **Option A (Mosaic's lean):** an outlined, full-width "Add to calendar" button under "+ Stub it", 44pt. Clear verb, but it costs a row and pushes This day and the content below down 56pt.
+- **Option C:** inside the share action. Too hidden.
 
 ## Review form answers (Kylie, Oct 14)
 
@@ -496,7 +508,8 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 
 #### DC5 · City type
 
-- **Decision:** Hub
+- **Decision:** Hub. **Firm change (Kylie, Oct 14).**
+- **Today on main:** `src/data/formula/gridlock.ts:116` has `'washington-dc': 'transit'`. Change it to `'hub'`.
 - **Context:** Transit vs hub.
 - **Why:** Landover and the amphitheatres pull people out to the suburbs by car.
 - **Rejected:** Transit
@@ -816,7 +829,7 @@ Changes the answers make to city data (capacities, codes, names, ids). File hint
 - [x] **DC1** City code: DC. File: `src/config/metros.ts` **Done on main** (`metros.ts:384`, code DC).
 - [ ] **DC3** Greene Stadium: Store 7,086 as seats, once confirmed. File: `src/data/venues.ts` — Today on main: Greene Stadium (`venues.ts:8983`) has no capacity. Not done.
 - [x] **DC4** Merriweather Post Pavilion: DC. File: `src/data/venues.ts` **Done on main** (Merriweather is in `washington-dc`, `venues.ts:8935`).
-- [ ] **DC5** City type: Hub. File: `src/data/venues.ts` **Contradicts main:** `src/data/formula/gridlock.ts:116` has `washington-dc: transit`. The answer says Hub. Builder: change to hub (and the note at gridlock.ts:110-ish), or check with Kylie if the transit call came from newer research.
+- [ ] **DC5** City type: Hub. File: `src/data/venues.ts` File: `src/data/formula/gridlock.ts:116` (not venues.ts). **Firm change (Kylie, Oct 14):** main has `'washington-dc': 'transit'`; change it to `'hub'`. Don't check back; this overrides the earlier transit call.
 - [ ] **CLE1** Jacobs Pavilion: One rule for every standing-floor room: seated by default (4,100 here). File: `src/data/venues.ts` **Adjusted:** Jacobs Pavilion (`venues.ts:10082`) already has 4,100 concert, plus a second 5,000 concert row. Change: drop or demote the 5,000 row so 4,100 seated is the default.
 - [x] **CLE4** Public Hall: Match by tenant: Charge games at 5,100. File: `src/data/venues.ts` **Done on main** (Public Hall has 5,100 basketball, `venues.ts:10032`).
 - [ ] **PDX3** Cascades Amphitheater: Store 7,810 seated. File: `src/data/venues.ts` — Today on main: Cascades Amphitheater (`venues.ts:10568`) has no capacity. Not done.
@@ -1174,7 +1187,7 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
 - **Spring training:** the MLB map feed (`src/data/sources/mlbSource.ts:228-240`, `toEvent` at `:138`) never sets `preseason`; only the team schedule does (`:213`). Set it when `gameType === 'S'` so the "· Preseason" rule applies. (The spring training wording itself is open, below.)
 - **World Series doubling:** old seeds with round "World Series" and title "World Series Game 1" read "World Series G1 · World Series Game 1". Strip the round text from the title when it repeats the label.
 - **College "FB" always shown:** college football short names already contain "FB", so the chip always shows it, though the docs show the tag only on a clash. Show the squad code on chips only when two chips clash. **Reconciled with N16:** short and full names drop the code for a readable sport label ("Duke at Georgia Tech · Football", "X at UCLA · Women's basketball"); the code (FB / MBB / WBB) stays on chips and wherever space is tight, and on chips still only on a clash ("Georgia Tech FB" only when another Georgia Tech chip that night would match).
-- **Lucha libre stored as boxing:** `sportOf` (`ticketmasterSource.ts:171-175`) checks "boxing" text before wrestling words. Map lucha libre to wrestling (`sports.combat`, subtype wrestling), per item 11.
+- **Lucha libre stored as boxing:** confirm the feed's genre text, then fix. On main, `sportOf` checks "wrestling" before "boxing" (`ticketmasterSource.ts:173`), so the order isn't the cause; the CMLL event's genre text likely says boxing (or not wrestling). Look at the raw Ticketmaster genre/subgenre for it first, then map lucha libre to wrestling (`sports.combat`, subtype wrestling), per item 11. Rejected: reordering the checks blind.
 
 **Why:** chips and rows have fixed widths, so names need real limits, and the designation is what tells games apart. "DH1" fits a chip and doesn't clash with series "G1". Years read instantly; chips have no room and show the date anyway. A suffix in the title still travels into shares and notifications, where tags don't render, and reads team-first like every other title (N08). Short rows are for scanning the headliner. Leagues list neutral-site games visitor first, as the spec does. Favorites rows are narrow.
 
@@ -1193,7 +1206,7 @@ Source: Mosaic's `research/event-naming-table.md`; current behavior and real exa
 
 **Settled by the naming review (item 15):** bowl names (N20), festival weekends and days (N12), watch party names (N01), round wording (N03, N05: "Semifinals", full words on the page), the "· City" ending at neutral sites (N06, N17: venue and city on the page, not in the title), tour-first titles (N10).
 
-**Still open:** spring training wording ("Spring Training" or "Spring", now as a suffix), All-Star and tournament names, pop-up names, comedy and theatre headliners, HockeyTech playoff games with no game number, and a hand seed and feed copy of the same game counting as a clash.
+**Still open (pending follow-up research, Kylie running Oct 14; add the answers when they land):** spring training wording ("Spring Training" or "Spring", now as a suffix), All-Star and tournament names, pop-up names, comedy and theatre headliners, HockeyTech playoff games with no game number, and a hand seed and feed copy of the same game counting as a clash.
 
 ### 14. Commit the naming research docs
 
