@@ -1095,7 +1095,12 @@ Boards: `/workspace/ff-gap-review/mosaic/b5/v4/estimated-crowds.png`, `estimated
 ### Closed and backlog (Kylie, Oct 14)
 
 - **CLOSED (Kylie, Oct 14):** Where crowds with no size show in Explore. Nothing beyond the blank rule above and the existing muted gray chips. Rejected: a "1 unsized not counted" footer and hollow gray pins (older board unsized.png). Board: `/workspace/ff-gap-review/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
-- Regional events: backlog next step (item 2). Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog. Nothing wired in build 5.
+- Regional events: backlog next step (item 2). Kylie ran the regional research herself (Oct 14); prompt and answer are filed verbatim below. Claude adds them to the backlog as the basis for one rule for every metro. Nothing wired in build 5.
+- **Research on file (verbatim, word for word; summaries in these notes always link here):**
+  - Oct 13 concerts Ticketmaster misses: prompt [`research/concerts-ticketmaster-misses-oct13-prompt.md`](research/concerts-ticketmaster-misses-oct13-prompt.md); answer [`research/concerts-ticketmaster-misses-oct13-answer.pdf`](research/concerts-ticketmaster-misses-oct13-answer.pdf) (text copy [`.txt`](research/concerts-ticketmaster-misses-oct13-answer.txt)).
+  - Oct 14 regional events: prompt [`research/regional-events-research-prompt.md`](research/regional-events-research-prompt.md); answer [`research/regional-events-research-answer.html`](research/regional-events-research-answer.html) (original HTML as received).
+  - Oct 14 naming review: prompt [`research/naming-review-oct14-prompt.md`](research/naming-review-oct14-prompt.md); review [`research/naming-review-oct14.html`](research/naming-review-oct14.html); answers [`research/naming-review-answers-oct14.json`](research/naming-review-answers-oct14.json); follow-up [`research/naming-followup-oct14-verbatim.md`](research/naming-followup-oct14-verbatim.md).
+  - City follow-up answers: pending; each is filed verbatim here as it lands.
 
 ### CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug)
 
