@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { CrowdMark } from './EventTags';
+import { TypeIcon } from './TypeIcon';
 import { frictionClass } from '../config/scoreLabels';
-import { drawSize, estimateMark, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
+import { drawSize, estimateMark, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
 import { mapTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
@@ -65,7 +66,10 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
               <Link to={eventPath(e.id, e.metroId)} className="bar-link">
                 <div className="bar-label">
                   <span className="bar-name">
-                    {mapTitle(e, events)}
+                    <span className="bar-title">
+                      <TypeIcon typeKey={eventType(e).key} size={17} />
+                      {mapTitle(e, events)}
+                    </span>
                     {size ? (
                       <span className="bar-crowd">
                         <CrowdMark />

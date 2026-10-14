@@ -8218,3 +8218,24 @@ button.back-link {
   color: inherit;
   cursor: pointer;
 }
+
+/* The type icon at the very start of a title (build 5, item 12; board icons-r3): inline, link blue, a small gap,
+   vertical align −4px (Stubs −3px). Sized per surface by the component; never changes a row's height. */
+.type-icon-wrap {
+  display: inline-block;
+  line-height: 0;
+  margin-right: 4px;
+  vertical-align: -4px;
+}
+
+.type-icon-wrap svg {
+  display: block;
+}
+
+.stub-type-icon {
+  vertical-align: -3px;
+}
+
+.bar-title {
+  display: inline;
+}

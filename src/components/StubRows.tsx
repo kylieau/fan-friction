@@ -1,4 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
+import { TypeIcon } from './TypeIcon';
+import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { entryCrowd, entryEstimateMark, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { crowdThousands } from '../map/crowdPoints';
@@ -39,7 +41,10 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
       <Link to={to} className="stub-row-link" aria-label={entry.title} onClick={() => clearOpenedFromMap()} />
       <DateBox when={entry.when} />
       <span className="stub-main">
-        <span className="stub-title">{entry.title}</span>
+        <span className="stub-title">
+          <TypeIcon typeKey={entryTypeKey(entry)} size={16} className="stub-type-icon" />
+          {entry.title}
+        </span>
         {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
         {entry.stamp?.friction && entry.stamp.friction !== 'Low' && (
           <span className="stub-tags">
@@ -70,7 +75,7 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
 }
 
 /** A plan still ahead: Attending, or Watching with its Private / Friends choice and place. */
-export function PlanRow({ plan, rating }: { plan: Plan; rating: number | null }) {
+export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number | null; /** The listed event's type, when the caller has it. */ typeKey?: string | null }) {
   const navigate = useNavigate();
   const share = plan.watch ? watchShareOf(plan) : undefined;
   const place = plan.watch && share === 'friends' ? watchPlaceOf(plan) : undefined;
@@ -80,7 +85,10 @@ export function PlanRow({ plan, rating }: { plan: Plan; rating: number | null })
       <Link to={plan.manual && !plan.eventId ? entryPath(plan.id) : datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row-link" aria-label={plan.title} />
       <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
       <span className="stub-main">
-        <span className="stub-title">{plan.title}</span>
+        <span className="stub-title">
+          <TypeIcon typeKey={typeKey ?? (plan.manual ? entryTypeKey({ kind: plan.manual.kind, sport: plan.manual.sport ?? '', title: plan.title }) : null)} size={16} className="stub-type-icon" />
+          {plan.title}
+        </span>
         {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
         <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>

@@ -4,12 +4,14 @@ import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
 import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
+import { TypeIcon } from '../components/TypeIcon';
 import { ActivityLines, StatusLine } from '../components/ActivityLines';
 import { activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
   estimateMark,
+  eventType,
   alwaysShownIds,
   crowdRangeOf,
   splitByRange,
@@ -209,7 +211,10 @@ export function EventScreen() {
       </MapBack>
 
       <header className="event-head">
-        <h1 className="page-title">{listTitle(e)}</h1>
+        <h1 className="page-title">
+          <TypeIcon typeKey={eventType(e).key} size={18} className="title-type-icon" />
+          {listTitle(e)}
+        </h1>
         {stakesLine && <p className="event-stakes">{stakesLine}</p>}
         <div className="event-sub">
           {me.venueName}

@@ -21,6 +21,8 @@ import {
   tagSummaries,
   type Entry,
   entryTags,
+  eventType,
+  getCityDate,
 } from '../data';
 import { timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
@@ -59,6 +61,23 @@ export function StubsScreen() {
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const plansAhead = useMemo(() => upcomingPlans(todayIn(DEFAULT_METRO), log), [log]);
+
+  // Each upcoming plan's listed event, for its type icon (build 5, item 12): plans store no kind of their own.
+  const [planTypes, setPlanTypes] = useState<Map<string, string>>(new Map());
+  useEffect(() => {
+    let current = true;
+    const linked = plansAhead.filter((plan) => plan.eventId);
+    const dates = [...new Map(linked.map((plan) => [`${plan.metroId}|${plan.date}`, plan])).values()];
+    Promise.all(dates.map((plan) => getCityDate(plan.metroId, plan.date).catch(() => null))).then((days) => {
+      if (!current) return;
+      const types = new Map<string, string>();
+      for (const day of days) for (const event of day?.events ?? []) types.set(event.id, eventType(event).key);
+      setPlanTypes(types);
+    });
+    return () => {
+      current = false;
+    };
+  }, [plansAhead]);
 
   useEffect(() => {
     let current = true;
@@ -211,7 +230,7 @@ export function StubsScreen() {
             <ul className="log-list">
               {plansAhead.map((plan) => (
                 <li key={plan.id}>
-                  <PlanRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} />
+                  <PlanRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} typeKey={plan.eventId ? planTypes.get(plan.eventId) : undefined} />
                 </li>
               ))}
             </ul>

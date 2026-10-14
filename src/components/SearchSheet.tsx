@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { SearchIcon } from './Icons';
 import { ReadTile } from './ReadTile';
 import { HiddenLine } from './HiddenLine';
+import { TypeIcon } from './TypeIcon';
+import { favoriteTypeKey } from '../map/typeIcons';
 import { METROS } from '../config/metros';
 import {
   favoriteFor,
@@ -183,7 +185,10 @@ export function SearchSheet({
                   {favoriteMark(fav)}
                 </span>
                 <span className="log-main">
-                  <span className="log-title">{fav.label}</span>
+                  <span className="log-title">
+                    <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />
+                    {fav.label}
+                  </span>
                 </span>
               </Link>
               <button type="button" className={`fav-toggle${isOn(fav) ? ' on' : ''}`} aria-pressed={isOn(fav)} onClick={() => toggle(fav)}>

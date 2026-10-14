@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { TypeIcon } from '../components/TypeIcon';
+import { favoriteTypeKey } from '../map/typeIcons';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
 import { SearchButton } from '../components/SearchButton';
@@ -438,7 +440,10 @@ function FavRow({ fav, sub, on }: { fav: Favorite; sub: string; on: boolean }) {
           {favoriteMark(fav)}
         </span>
         <span className="log-main">
-          <span className="log-title">{fav.label}</span>
+          <span className="log-title">
+            <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />
+            {fav.label}
+          </span>
           <span className="log-facts">{sub}</span>
         </span>
       </Link>

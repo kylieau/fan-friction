@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { eventType, VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { TypeIcon } from './TypeIcon';
 import { clockTime } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { markOpenedFromMap } from '../lib/mapReturn';
@@ -40,7 +41,10 @@ export function RowBody({
       <span className="day-row-time">{time}</span>
       <span className="day-row-body">
         <span className="day-row-line1">
-          <span className="day-row-title">{title ?? listTitle(e)}</span>
+          <span className="day-row-title">
+            <TypeIcon typeKey={eventType(e).key} size={18} />
+            {title ?? listTitle(e)}
+          </span>
           <CrowdFigure event={e} />
         </span>
         <span className="day-row-line2">

@@ -1,40 +1,43 @@
-// One-color type icons for the map chips (Kylie, Oct 9, 3.18): line style like the
-// app's other icons (src/components/Icons.tsx), 10px, Dodger blue, before the name (chip L1b, Oct 9).
-// Drawn here, not taken from an icon font, so every icon on screen matches.
+// The type icon at the start of every event title (build 5, item 12; Kylie, Oct 14, answers IN01, IN02, IN11–IN13;
+// board docs/build-5/mosaic/icons/sheet-r3.png): Phosphor regular plus six custom drawings, one line style, link
+// blue (#005A9C). The icon per type is the table's "Proposed icon" column (EVENT_TYPES in src/data/eventTypes.ts).
+// Sized per surface: 20pt is the target; each surface uses the largest size that keeps its live row height.
 
-import type { CrowdEvent } from '../data';
+import { entryType, eventType, typeDef, TEAMS, type CrowdEvent, type Entry, type Favorite } from '../data';
+import { ICON_ART } from './typeIconPaths';
 
-const ATTRS = 'width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#005A9C" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+const LINK_BLUE = '#005A9C';
 
-const ICONS: Record<string, string> = {
-  // a ball with two seams
-  baseball: '<circle cx="12" cy="12" r="9"/><path d="M6 5.5c2.5 2 2.5 11 0 13M18 5.5c-2.5 2-2.5 11 0 13"/>',
-  // a ball with a curved line across
-  basketball: '<circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3.5v17M5.6 5.6c3 3.5 3 9.3 0 12.8M18.4 5.6c-3 3.5-3 9.3 0 12.8"/>',
-  // a football, laces on top
-  football: '<path d="M4 20C4 11 11 4 20 4c0 9-7 16-16 16Z"/><path d="M8.5 15.5l7-7M11 11.5l1 1M13 9.5l1 1M9 13.5l1 1"/>',
-  // two crossed sticks and a puck
-  hockey: '<path d="M4 4l9 12M20 4l-9 12"/><path d="M13 16h-2l-1 3h4Z"/><ellipse cx="12" cy="20.5" rx="4" ry="1.5"/>',
-  // a ball with a pentagon
-  soccer: '<circle cx="12" cy="12" r="9"/><path d="M12 7.5l4.3 3.1-1.6 5h-5.4l-1.6-5Z"/><path d="M12 7.5V3.2M16.3 10.6l4 -1.3M14.7 15.6l2.6 3.5M9.3 15.6l-2.6 3.5M7.7 10.6l-4-1.3"/>',
-  // a racket
-  tennis: '<ellipse cx="13.5" cy="9" rx="6.5" ry="7.5" transform="rotate(-35 13.5 9)"/><path d="M8.5 15.5 3.5 20.5"/>',
-  // a music note
-  concert: '<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>',
-  // a flag
-  festival: '<path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/>',
-  // a ticket
-  special: '<path d="M3 9a2 2 0 0 0 2-2V6h14v1a2 2 0 0 0 2 2v6a2 2 0 0 0-2 2v1H5v-1a2 2 0 0 0-2-2Z"/><path d="M12 7v10" stroke-dasharray="2 2"/>',
-};
-
-function iconKey(event: CrowdEvent): string {
-  if (event.audience.domain === 'sports') return ICONS[event.audience.sport] ? event.audience.sport : 'special';
-  if (event.kind === 'show') return 'concert';
-  if (event.kind === 'festival') return 'festival';
-  return 'special';
+/** The inline SVG for a type key, as a string (map chips are plain HTML). */
+export function typeIconMarkup(typeKey: string, size: number, className = 'type-icon'): string {
+  const art = ICON_ART[typeDef(typeKey).icon] ?? ICON_ART.ticket;
+  const paint = art.fill ? `fill="${LINK_BLUE}"` : `fill="none" stroke="${LINK_BLUE}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"`;
+  return `<svg class="${className}" width="${size}" height="${size}" viewBox="0 0 256 256" ${paint} aria-hidden="true">${art.body}</svg>`;
 }
 
-/** The icon as an inline SVG string, for the chip's HTML. */
+/** The map chip's icon: 12pt (the measured size that keeps the chip's height). */
 export function typeIconSvg(event: CrowdEvent): string {
-  return `<svg class="crowd-type" ${ATTRS}>${ICONS[iconKey(event)]}</svg>`;
+  return typeIconMarkup(eventType(event).key, 12, 'crowd-type type-icon');
+}
+
+/** The type key a stub draws. */
+export function entryTypeKey(entry: Pick<Entry, 'kind' | 'sport' | 'title'>): string {
+  return entryType(entry).key;
+}
+
+/**
+ * The icon a favorite carries on the Faves picker and its search (board phones-r3/following-lean, search-lean): a team
+ * its sport's, an artist the music note, a festival its type by name; a venue none.
+ */
+export function favoriteTypeKey(fav: Favorite): string | null {
+  if (fav.kind === 'team') {
+    const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+    return team ? entryType({ kind: 'game', sport: team.sport, title: '' }).key : null;
+  }
+  if (fav.kind === 'artist') return 'music.concert';
+  if (fav.kind === 'festival') {
+    const key = entryType({ kind: 'special', sport: '', title: fav.label }).key;
+    return key === 'other' ? 'music.festival' : key;
+  }
+  return null;
 }
