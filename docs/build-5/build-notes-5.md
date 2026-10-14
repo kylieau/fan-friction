@@ -62,7 +62,7 @@ Scope: shows of 5,000 or more people, any genre, that are not on Ticketmaster.
 
 ### Undecided
 
-- **JamBase:** possible paid trial. Not decided either way.
+- **JamBase: dropped (Kylie, Oct 14).** Why: AXS, then SeatGeek, then DICE, then the hand-kept festival list already covers shows over 5,000; JamBase would mostly duplicate them and costs money. Rejected: a paid trial.
 
 ### Pop-up sizing
 
