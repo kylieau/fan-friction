@@ -10,6 +10,7 @@ import { mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
 import { listTitle } from '../lib/eventTitle';
+import { mergeDuplicates } from './dedupe';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, Entry, LocalDate, DateSearchHit } from './types';
 import { applyFormula } from './formulaRead';
 import { rateDate } from './formula';
@@ -33,7 +34,8 @@ const RATING_SOURCES: RatingSource[] = [seedRatings];
  */
 function uniqueById(events: CrowdEvent[]): CrowdEvent[] {
   const seen = new Set<string>();
-  return events.filter((event) => !seen.has(event.id) && Boolean(seen.add(event.id)));
+  // Then one record per occurrence across feeds, before any title or read (build 5, item 13, step 0).
+  return mergeDuplicates(events.filter((event) => !seen.has(event.id) && Boolean(seen.add(event.id))));
 }
 
 /**
@@ -197,12 +199,7 @@ export function todayIn(metro: Metro): LocalDate {
 /** Every event the calendar and search can see: seeded nights plus today onward. */
 async function catalog(metroId: string): Promise<CrowdEvent[]> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId) : Promise.resolve([]))));
-  const seen = new Set<string>();
-  const events = lists.flat().filter((event) => {
-    if (event.metroId !== metroId || seen.has(event.id)) return false;
-    seen.add(event.id);
-    return true;
-  });
+  const events = uniqueById(lists.flat().filter((event) => event.metroId === metroId));
   const seededDates = new Set(events.filter((event) => event.sourceId === 'seed').map((event) => event.date));
   return events.filter((event) => event.sourceId === 'seed' || !seededDates.has(event.date));
 }

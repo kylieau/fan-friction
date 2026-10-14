@@ -49,6 +49,19 @@ try {
     }
     if (Object.keys(want).every((k) => got[k] === want[k])) console.log(`ok   ${label}: ${got.chip} | ${got.short} | ${got.full}`);
   }
+  // Step 0 (case 7): a seller's copy and the league's copy of the same game merge, the league's facts win.
+  const { mergeDuplicates } = await server.ssrLoadModule('/src/data/dedupe.ts');
+  const tm = { ...game('Chicago Cubs vs. Los Angeles Dodgers', { sport: 'baseball', metroId: 'phoenix', sourceId: 'ticketmaster' }), id: 'tm-1' };
+  const mlb = { ...game('Cubs vs. Dodgers', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'cubs', away: 'dodgers' }, preseason: true, sourceId: 'mlb' }), id: 'mlb-1' };
+  const merged = mergeDuplicates([tm, mlb]);
+  const ok = merged.length === 1 && merged[0].sourceId === 'mlb' && merged[0].mergedFrom?.[0]?.id === 'tm-1' && listTitle(merged[0]) === 'Dodgers at Cubs · Spring training';
+  if (!ok) (failed += 1), console.log(`FAIL step 0 merge: ${merged.length} records, ${merged.map((e) => `${e.sourceId}: ${listTitle(e)}`).join(' / ')}`);
+  else console.log(`ok   Step 0 merge: one record, ${listTitle(merged[0])} (from ${merged[0].mergedFrom.map((m) => m.sourceId).join(', ')})`);
+  const addOn = { ...other('Brooklyn Nets v. Charlotte Hornets Post-Game Free Throw Opportunity', { sourceId: 'ticketmaster' }), id: 'tm-2' };
+  const nets = { ...game('Nets vs. Hornets', { sport: 'basketball', sourceId: 'espn' }), id: 'espn-2' };
+  if (mergeDuplicates([nets, addOn]).length !== 2) (failed += 1), console.log('FAIL step 0: an add-on merged into its game');
+  else console.log('ok   Step 0: an add-on is not the game (different admission)');
+
   const sched = scheduleGameTitle('Clippers', { home: true, opponent: 'Nuggets', preseason: true });
   if (sched !== 'Nuggets at Clippers · Preseason') (failed += 1), console.log(`FAIL schedule title: ${sched}`);
   const rel = teamRelativeTitle({ home: true, opponent: 'Padres' });

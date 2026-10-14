@@ -230,6 +230,8 @@ export interface CrowdEvent {
   neutralSite?: boolean;
   /** A preseason (exhibition) game. Sized from past preseason crowds, never the regular season's. */
   preseason?: boolean;
+  /** Records merged into this one, kept for reference only (build 5, item 13, step 0). Runtime, never stored. */
+  mergedFrom?: { sourceId: string; id: string; title: string }[];
   /** A doubleheader's game, 1 or 2 (build 5, item 13, N09): "Game 1" after the teams, "DH1" on chips. From the MLB feed. */
   doubleheader?: 1 | 2;
   /** The home side's first regular-season home game of the season. */
