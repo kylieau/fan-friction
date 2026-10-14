@@ -68,12 +68,15 @@ export function WeekCalendar({
     el.scrollTo({ top: index * rowHeight(), behavior: smooth ? 'smooth' : 'auto' });
   };
 
-  // First paint and a new city: the list's week at the top, no animation.
+  // The list's week sits in the middle row of the three, so what is before and after it shows too (Kylie, Oct 14).
+  const middleOf = (index: number) => Math.max(0, index - 1);
+
+  // First paint and a new city: the list's week in the middle row, no animation.
   const first = mondays[0];
   useEffect(() => {
-    scrollToRow(leadIndex, false);
-    setFirstRow(leadIndex);
-    onNeed(mondays.slice(leadIndex, leadIndex + AHEAD_ROWS));
+    scrollToRow(middleOf(leadIndex), false);
+    setFirstRow(middleOf(leadIndex));
+    onNeed(mondays.slice(middleOf(leadIndex), middleOf(leadIndex) + AHEAD_ROWS));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [first, mondays.length]);
 
@@ -83,7 +86,7 @@ export function WeekCalendar({
       scheduleSync();
       return;
     }
-    scrollToRow(leadIndex, true);
+    scrollToRow(middleOf(leadIndex), true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [leadIndex]);
 
@@ -99,7 +102,7 @@ export function WeekCalendar({
     syncTimer.current = window.setTimeout(() => {
       if (Date.now() < holdUntil.current) return scheduleSync();
       const lead = leadRef.current;
-      if (lead < firstRowRef.current || lead > firstRowRef.current + 2) scrollToRow(lead, true);
+      if (lead < firstRowRef.current || lead > firstRowRef.current + 2) scrollToRow(Math.max(0, lead - 1), true);
     }, Math.max(60, holdUntil.current - Date.now() + 60));
   };
   useEffect(() => () => window.clearTimeout(syncTimer.current), []);
@@ -141,7 +144,7 @@ export function WeekCalendar({
                 const read = reads.get(date);
                 const inRange = date >= range.from && date <= range.through;
                 const past = date < today;
-                const tinted = !past && inRange && read?.rating != null;
+                const tinted = inRange && read?.rating != null;
                 const band: ScoreBand | null = tinted ? scoreBand(Number(formatScore(read!.rating!))) : null;
                 const shown = tinted ? Number(formatScore(read!.rating!)) : null;
                 const name = new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' });

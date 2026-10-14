@@ -1,5 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
-import { setExploreView, type ExploreView } from '../lib/view';
+import { firstCaptureDay } from '../data/cityList';
+import { setExploreView, useView, type ExploreView } from '../lib/view';
 import { ListIcon, MapIcon } from './Icons';
 
 /**
@@ -8,13 +9,20 @@ import { ListIcon, MapIcon } from './Icons';
  */
 export function ExploreModeSwitch({ view }: { view: ExploreView }) {
   const [params, setParams] = useSearchParams();
+  const { metro, date, today } = useView();
   const pick = (next: ExploreView) => {
     if (next === view) return;
     setExploreView(next);
     const nextParams = new URLSearchParams(params);
     nextParams.set('view', next);
     nextParams.delete('pick');
-    setParams(nextParams, { replace: true });
+    // The List starts at the city's first captured day (today when there is none); an older Map date opens on today.
+    if (next === 'list') {
+      const first = firstCaptureDay(metro.id);
+      const from = first && first < today ? first : today;
+      if (date < from) nextParams.delete('date');
+    }
+    setParams(nextParams, { replace: true, state: { fromSwitch: true } });
   };
   return (
     <div className="explore-mode-switch" role="tablist" aria-label="Explore view">

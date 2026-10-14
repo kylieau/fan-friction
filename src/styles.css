@@ -7589,7 +7589,6 @@ button.back-link {
 .filter-chip,
 .stub-tags-add,
 .activity-chip,
-.today-pill,
 .segmented button {
   position: relative;
 }
@@ -7890,4 +7889,18 @@ button.back-link {
 /* A segment's words stay on one line (the You tab's "This year" wrapped under the new sizes). */
 .segmented button {
   white-space: nowrap;
+}
+
+/* Past days carry their read too, a little quieter than days ahead (Kylie, Oct 14: "past dates are not loaded"). */
+.week-calendar-day.is-past .week-calendar-num {
+  opacity: 0.62;
+}
+
+.week-calendar-day.is-past:not([class*='band-']) .week-calendar-num {
+  opacity: 1;
+}
+
+/* Date page rows: the badges sit at the right of the line, like every list (Kylie, Oct 14). */
+.date-row-line {
+  justify-content: space-between;
 }

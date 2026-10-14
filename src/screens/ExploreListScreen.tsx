@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { Link, useNavigate, useNavigationType } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useNavigationType } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import {
@@ -27,6 +27,24 @@ import { ReadTile } from '../components/ReadTile';
 import { WeekCalendar, type CalendarRead } from '../components/WeekCalendar';
 
 const LIST_MEMORY_KEY = 'fan-friction:list-return';
+/** Set when a row or a day band is tapped, so Back from there restores the place; read once on the next open. */
+const LIST_ARMED_KEY = 'fan-friction:list-armed';
+
+function peekArmed(): boolean {
+  try {
+    return sessionStorage.getItem(LIST_ARMED_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function disarm() {
+  try {
+    sessionStorage.removeItem(LIST_ARMED_KEY);
+  } catch {
+    /* storage blocked */
+  }
+}
 /** Weeks loaded ahead of the first one, and per scroll step. */
 const FIRST_AHEAD = 4;
 const STEP = 2;
@@ -94,9 +112,15 @@ export function ExploreListScreen() {
   const scroller = useRef<HTMLDivElement>(null);
   // Back from an event restores where you were; any other way in opens on today (Kylie: the List opens on today).
   const navType = useNavigationType();
-  const memory = useRef(navType === 'POP' ? readMemory(href) : null);
+  // Only Back from an event restores the place; every other way in (a reload, the tab bar, the switch) opens on today.
+  const [initialMemory] = useState(() => (peekArmed() && navType === 'POP' ? readMemory(href) : null));
+  const memory = useRef(initialMemory);
+  const location = useLocation();
+  const fromSwitch = Boolean((location.state as { fromSwitch?: boolean } | null)?.fromSwitch);
   useEffect(() => {
     clearOpenedFromMap();
+    // Read once per open: the place is restored only for the Back that follows a tap on a row or a day band.
+    disarm();
   }, []);
 
   const [areaOpen, setAreaOpen] = useState(false);
@@ -134,7 +158,15 @@ export function ExploreListScreen() {
   } | null>({ date: memory.current?.topDate ?? target, smooth: false });
   const placed = useRef(false);
   const firstLoadedRef = useRef<string | undefined>(undefined);
-  const beforeAdd = useRef<{ height: number; top: number } | null>(null);
+  /** The day at the top and how far below the top edge it sits: after weeks are added, that day goes back there. */
+  const beforeAdd = useRef<{ day: string; offset: number } | null>(null);
+  const anchorNow = (el: HTMLElement) => {
+    const nodes = el.querySelectorAll<HTMLElement>('[data-day]');
+    for (const node of nodes) {
+      if (node.offsetTop + node.offsetHeight > el.scrollTop + 1) return { day: node.dataset.day ?? '', offset: node.offsetTop - el.scrollTop };
+    }
+    return null;
+  };
 
   const shownMetro = useRef(metro.id);
   useEffect(() => {
@@ -178,7 +210,7 @@ export function ExploreListScreen() {
         // Earlier weeks arriving above what is on screen must not move it: keep the place by the height they add.
         const el = scroller.current;
         const first = firstLoadedRef.current;
-        if (el && placed.current && first && rows.some(([m]) => m < first)) beforeAdd.current = { height: el.scrollHeight, top: el.scrollTop };
+        if (el && placed.current && first && rows.some(([m]) => m < first)) beforeAdd.current = anchorNow(el);
         setWeeks((prev) => {
           const next = new Map(prev);
           for (const [m, days] of rows) next.set(m, days);
@@ -195,7 +227,14 @@ export function ExploreListScreen() {
   // A target outside the range (a famous date, say) cannot be shown here: the Map shows any day.
   useEffect(() => {
     if (range && (target < range.from || target > range.through)) {
-      navigate(mapPath({ metroId: metro.id, date: target, today, view: 'map' }), { replace: true });
+      if (fromSwitch) {
+        // From the Map's own switch: the List cannot show that day, so it opens on today instead of bouncing back.
+        const next = new URLSearchParams(window.location.search);
+        next.delete('date');
+        navigate(`/explore?${next.toString()}`, { replace: true });
+      } else {
+        navigate(mapPath({ metroId: metro.id, date: target, today, view: 'map' }), { replace: true });
+      }
     }
   }, [range, target, today, metro.id, navigate]);
 
@@ -234,7 +273,8 @@ export function ExploreListScreen() {
     const el = scroller.current;
     const saved = beforeAdd.current;
     if (el && saved) {
-      el.scrollTop = saved.top + (el.scrollHeight - saved.height);
+      const node = el.querySelector<HTMLElement>(`[data-day="${saved.day}"]`);
+      if (node) el.scrollTop = node.offsetTop - saved.offset;
       beforeAdd.current = null;
     }
   }, [firstLoaded]);
@@ -242,7 +282,7 @@ export function ExploreListScreen() {
   const loadEarlier = useCallback(() => {
     if (!firstLoaded || !rangeFirstMonday || firstLoaded <= rangeFirstMonday) return;
     const el = scroller.current;
-    if (el) beforeAdd.current = { height: el.scrollHeight, top: el.scrollTop };
+    if (el) beforeAdd.current = anchorNow(el);
     const list: string[] = [];
     for (let i = 1; i <= STEP; i++) {
       const m = addDays(firstLoaded, -7 * i);
@@ -448,7 +488,21 @@ export function ExploreListScreen() {
             {pill === 'down' ? '↓' : '↑'} Today
           </button>
         )}
-        <div className="explore-list-scroll" ref={scroller} onScroll={onScroll}>
+        <div
+          className="explore-list-scroll"
+          ref={scroller}
+          onScroll={onScroll}
+          onClick={(ev) => {
+            // A tap on a row or a day band leaves the List: arm the place for Back.
+            if ((ev.target as HTMLElement).closest('a')) {
+              try {
+                sessionStorage.setItem(LIST_ARMED_KEY, '1');
+              } catch {
+                /* storage blocked */
+              }
+            }
+          }}
+        >
           {range && days.length === 0 && weeks.size > 0 && <p className="you-fine explore-list-empty">Nothing listed yet.</p>}
           {firstIsPast && <div className="explore-list-earlier">Earlier</div>}
           {days.map(({ date, day, events }) => (
