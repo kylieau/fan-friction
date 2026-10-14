@@ -8,14 +8,14 @@ Each item gives what we do, why, and the options we turned down.
 
 - Concerts Ticketmaster misses: sources, dedupe and pop-up sizing (item 1).
 - Add to calendar, option B: an icon button beside "+ Stub it" opens a chooser (item 3; Mosaic, Oct 13).
-- Stub privacy, Venmo-style (Mosaic, Oct 13).
+- Stub privacy, Venmo-style: Anyone / Friends / Private, new users Private (Mosaic Oct 13; levels updated Oct 14).
 - Date page r3 (Mosaic, Oct 14).
 - Lineup wording on every Explore List week: THIS / NEXT / LAST WEEK'S LINEUP (Mosaic Oct 14; every week per Kylie's answer D).
 - Unknown crowd size shows blank on rows, chips and the selected card, and "— Size unknown" on the event page (Mosaic, Oct 14).
 - Crowd size range setting in You › Settings › Events (Mosaic, Oct 14).
 - Kylie's city round 2 review form answers (Oct 14).
 
-Kylie answered A–D on Oct 14 (under item 6). Still open: C2 ("homestand" wording), D2 (weeks further out), E (profile "Anyone" vs stub privacy).
+Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). Still open: C2 ("homestand" wording), D2 (weeks further out).
 
 Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3.
 
@@ -816,28 +816,44 @@ Changes the answers make to city data (capacities, codes, names, ids). File hint
 
 ## Approved with Mock Mosaic (Kylie, Oct 13)
 
-### 1. Stub privacy, Venmo-style
+### 1. Stub privacy, Venmo-style (updated Oct 14: three levels)
 
-**Build instruction:** Stub privacy already works for **Watching** in `src/components/StubSheet.tsx:171-180`: two `stub-choice` buttons, Private / Friends, saved as `watchShare` by `setWatchDetails` (`src/data/personalLog.ts:712-720`). Extend that per-stub field to **Attending and Interested**, and replace the two buttons with the "Who sees this" pill. Then add what doesn't exist yet: a Settings › Privacy default, the bulk "Change past stubs…" sheet, and an editable status line on the event page. Keep the existing profile switch (`src/screens/ProfileEditScreen.tsx:14-26`) and don't duplicate it; how the two relate is open question E.
+**Build instruction:** Stubs get three Venmo-style levels, **Anyone / Friends / Private**. The default for new stubs is set in Settings › Privacy and can be overridden per stub with the pill. **The default for new users is Private** (Kylie, Oct 14: "the default should definitely be private though"), which matches today's profile default `only_me` (`src/screens/ProfileEditScreen.tsx:15`).
 
-1. **Stub it sheet** (`StubSheet.tsx`): remove the Watching-only Private/Friends buttons (`:171-180`). Add a small pill, "Who sees this [Friends ⌄]", for all three kinds, labelled **"Your default"**. Tapping it opens a menu. When the pick differs from the default, the label becomes a gold **"Not your default"**.
-2. **Data:** store the choice on every plan and entry, not just watched ones. Today `watchShare` exists only for Watching (`personalLog.ts:712-720`). Generalize it (or add a field next to it) and migrate existing `watchShare` values unchanged.
-3. **Settings › Privacy (new):** the default for new stubs, **Friends** or **Private**, with a helper line saying it applies to new stubs, and a **"Change past stubs…"** row. Settings today has Account and other groups (`src/screens/SettingsScreen.tsx:79-128`) but no Privacy section. The existing profile switch sits inside Settings via ProfileEditScreen; leave it in place.
-4. **Change past stubs… (new):** a bulk sheet that makes all past stubs **Private** or all **Friends**. Both directions are offered (Venmo only goes more private).
-5. **Event page status line:** make it editable before and after the event ("Watching · 🔒 Private ⌄", "Attended · 55k · Friends ⌄").
+Start from what exists:
+- Stub privacy already works for **Watching** only: `src/components/StubSheet.tsx:171-180` has two `stub-choice` buttons (Private / Friends), saved as `watchShare` by `setWatchDetails` (`src/data/personalLog.ts:712-720`).
+- A profile-wide switch already exists: `ProfileEditScreen.tsx:14-26` offers `only_me` "Only me" (default), `approved` "People I approve" and `anyone` "Anyone". It's enforced in the database by `can_view` / `can_view_plans` (below).
+
+Changes, in order:
+1. **Reuse the profile switch as "Default for new stubs"** (proposal to the builder). Don't add a second, competing setting. Move or relabel it under Settings › Privacy with the same three words: `anyone` → **Anyone**, `approved` → **Friends** (renamed from "People I approve" to match the stub wording), `only_me` → **Private**. Keep the enum values; change only the labels and the helper copy. A helper line says it applies to new stubs.
+2. **Stub it sheet:** remove the Watching-only Private/Friends buttons (`StubSheet.tsx:171-180`). Add the "Who sees this [Friends ⌄]" pill for **Attending, Watching and Interested**, labelled **"Your default"**. Its menu offers **Anyone / Friends / Private**. When the pick differs from the default, the label becomes a gold **"Not your default"**.
+3. **Data:** store a per-stub visibility (anyone / friends / private) on every plan and entry. Generalize `watchShare` (or add a field next to it) and migrate existing values unchanged: `friends` → Friends, `private` → Private. Stubs with no value inherit the profile default at the time of migration.
+4. **"Change past stubs…" (new row under the default):** a bulk sheet that makes all past stubs **Anyone, Friends or Private**, in any direction (Venmo only goes more private; we allow all directions).
+5. **Event page status line:** editable before and after the event, with the same three levels ("Watching · 🔒 Private ⌄", "Attended · 55k · Anyone ⌄").
 6. **Tags follow the stub's privacy** (T01).
 
-Why: one default set once, a quiet override where you stub, and a way to fix it later from the event page or in bulk.
+Why: one default set once, a quiet override where you stub, and a way to fix it later from the event page or in bulk. Anyone is kept because, in Kylie's words: "anyone would enable people who you don't follow to view this, which is fine. that's why there's a default setting. again, similar to venmo." New users start Private so nothing is shared until they choose.
 
-Rejected: a Public option; big buttons on the sheet; editing privacy only inside the sheet; a segmented row.
+Rejected: big buttons on the sheet; editing privacy only inside the sheet; a segmented row; a separate stub default next to the profile switch (two settings for one idea); a non-Private default for new users.
 
-Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box). The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
+**Superseded:** the Oct 13 rejection of a Public option. Kylie reversed it on Oct 14 (answer E): Anyone stays as a level, because the default protects people who don't want it and per-stub control covers the rest, as in Venmo.
 
-**Open question E (still pending Kylie's pick):** how the stub setting relates to the profile switch.
-- What exists: `ProfileEditScreen.tsx:14-26` offers **Only me** (default), **People I approve** and **Anyone**. "Anyone" lets non-followers and signed-out visitors see your events; following still needs approval, and only followers see plans.
-- Proposed rule: a stub's setting can only **narrow** the profile setting. A Friends stub is never shown beyond approved followers, even when the profile is Anyone, and a Private stub is never shown to anyone.
-- Still to decide: whether to keep the "Anyone" profile option at all, since stubs reject a Public option.
-- **Naming mismatch:** the profile says "People I approve" while stubs say "Friends", for the same audience (approved followers). Pick one word before building.
+> **Open builder check: database rules for per-stub visibility.** Today visibility is **per profile**, not per stub:
+> - `profiles.visibility` (`only_me` / `approved` / `anyone`, migration 0001) is read by `can_view(owner)` (0001; latest in `supabase/migrations/0018_blocks.sql:62-80`, which adds blocks). Visible = owner, or (not blocked and (`anyone`, or `approved` and an approved follower)).
+> - Plans use `can_view_plans` (0012; updated in 0016): visible only to approved followers when the profile isn't `only_me`, even for `anyone` profiles.
+> - Follow approval and its rules are in 0011 and 0015. Shared cards are views `profile_cards` / `entry_cards` filtered by `can_view` (0017).
+> - Signed-out access: `entry_cards` and `profile_cards` are granted to `anon` (`0017_cards.sql:44, 72`), and 0001 grants `profiles` and `nights` to `anon` (`:220`).
+>
+> The builder must:
+> - (a) add a per-stub visibility column on entries and plans;
+> - (b) change the read policies and views to check the stub's level (Anyone = everyone not blocked, signed out included; Friends = approved followers; Private = owner only) instead of, or narrowed by, the profile value;
+> - (c) decide plans: today `can_view_plans` never shows plans beyond approved followers, so an "Anyone" Interested/Attending plan needs that function changed;
+> - (d) confirm signed-out visitors can see Anyone stubs through the `anon` grants, and nothing else;
+> - (e) keep blocks (0018) overriding every level.
+>
+> Write a migration; don't edit old ones.
+
+Board: `/workspace/ff-gap-review/mosaic/privacy/privacy-r1.png` (on the box; drawn with two levels, so add Anyone to the menu and the bulk sheet). The Settings screen on the board isn't from a live capture: match the live styles and don't restyle existing components.
 
 ### 2. Add to calendar: option B
 
@@ -971,13 +987,12 @@ Builder checks:
 - **B. Up against and Local Competition: hidden events still appear if they're 5,000+** (lean accepted). Why: they're real crowd competitors and the read uses them; hiding them would make the explanation disagree with the score. Rejected: filtering them like the lists.
 - **C. Same homestand / Also on: not filtered by the crowd range** (lean accepted). Why: it's a schedule of the same team's or performer's dates, not a crowd list. Rejected: filtering it.
 - **D. Lineup on every week, not just this week** (not the lean): "THIS WEEK'S LINEUP", "NEXT WEEK'S LINEUP", "LAST WEEK'S LINEUP". Rejected: this week only (the lean).
-- **E. Profile "Anyone" vs stub privacy:** still pending; see item 1.
+- **E. Keep "Anyone"** as a stub level: Anyone / Friends / Private, with the profile switch reused as the default for new stubs ("People I approve" renamed Friends). New users default to **Private**. Kylie: "anyone would enable people who you don't follow to view this, which is fine. that's why there's a default setting. again, similar to venmo." This supersedes the Oct 13 rejection of a Public option. Rejected: dropping Anyone; Friends-only stubs under an Anyone profile; a non-Private default.
 
 ### Open questions
 
 - **C2. "Homestand" outside sports.** Kylie: "homestand" is sports language and may not fit non-sports events, or every team. Today `SameTour.tsx:37` shows **"Also on"** when the event has a `performer` (concerts and most Ticketmaster shows), and **"Same homestand"** otherwise. Matching (`:17-19`) is by performer, else by home team. A residency (a performer's run of nights) already reads "Also on". **Gap:** a non-sports event with no performer and no teams (theatre, comedy specials, fairs) matches nothing and the section hides, so the label never shows there. Open: what it should say for concerts and residencies ("Also on", "More dates", "Other nights"), and whether sports should keep "homestand" (it's wrong for a team's road games and neutral sites, which don't appear here anyway). Lean: "More dates" for everything, one word for all kinds.
 - **D2. Weeks further out:** lean "WEEK OF OCT 26 · LINEUP · N EVENTS" (replacing today's "OCT 26–NOV 1"). Kylie to confirm.
-- **E. Profile "Anyone" vs stub privacy:** see item 1 (narrow-only rule; "People I approve" vs "Friends" naming).
 
 ### On hold (Kylie working with Claude)
 
