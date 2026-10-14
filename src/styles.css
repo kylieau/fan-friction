@@ -989,7 +989,8 @@ button {
 /* Wider than the map chip, same card: white, 8px corners, 35% ink stroke, same shadow. */
 .sheet .event-row,
 .selected-row .event-row {
-  align-items: center;
+  /* The time sits on the title's line, not centered on the whole row (Kylie, Oct 14). */
+  align-items: flex-start;
   gap: 8px;
   padding: 6px 8px;
   background: #fff;
@@ -4338,7 +4339,7 @@ button.back-link {
 .tl-row-link {
   text-decoration: none;
   color: inherit;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .explore-top {
