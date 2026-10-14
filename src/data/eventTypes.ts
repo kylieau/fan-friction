@@ -204,7 +204,9 @@ function make(key: string, extra: Partial<EventType> = {}): EventType {
 
 /** The type for a sport key or an Add-form sport word. */
 function sportType(raw: string, title = ''): EventType {
-  const hit = SPORTS[raw.trim().toLowerCase()];
+  // A stub's sport can carry the side: "Women's basketball", "Men's volleyball" (hand-typed and imported logs).
+  const word = raw.trim().toLowerCase();
+  const hit = SPORTS[word] ?? SPORTS[word.replace(/^(?:men|women)['’]s\s+/, '')];
   // Lucha libre comes from Ticketmaster stored as boxing (item 13 parsing bug; the raw genre is unconfirmed).
   if (/\blucha libre\b/i.test(title) && (!hit || hit.key === 'sports.combat')) return make('sports.combat', { subtype: 'Wrestling' });
   if (hit) return make(hit.key, hit.subtype ? { subtype: hit.subtype } : {});
