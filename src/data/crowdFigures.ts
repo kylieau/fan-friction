@@ -9,6 +9,7 @@
 
 import type { CrowdEvent, Entry } from './types';
 import { roundEstimate } from './expectedDrawBuild';
+import { listedCapacity } from './read';
 
 /** A count with what kind of count it is. A reported figure sits in the Announced slot, labeled as reported. */
 export interface CrowdFigureShown {
@@ -47,12 +48,17 @@ export function highlightedCrowd(event: CrowdEvent): CrowdFigureShown | null {
 
 /** The crowd count shown on the map, chip card and sheet total (build 4 §0: Final > Announced > Estimated). */
 export function displayedCrowdCount(event: CrowdEvent): number | undefined {
-  return highlightedCrowd(event)?.count;
+  const count = highlightedCrowd(event)?.count;
+  if (count != null) return count;
+  // A sold-out listing with no published count already shows the room size on its chip.
+  // Keep the card and totals consistent with that display fallback; do not change read math.
+  return event.crowd.some((figure) => figure.soldOut) ? listedCapacity(event) : undefined;
 }
 
 /** Source line for the event page's Announced row only (Kylie, Oct 12, build 4 R05). */
 export function announcedSourceLabel(event: CrowdEvent): string | undefined {
-  if (!crowdFigures(event).announced) return undefined;
+  const figures = crowdFigures(event);
+  if (!figures.announced || figures.announcedKind === 'reported') return undefined;
   return event.audience.domain === 'sports' ? 'from the team' : 'per organizers';
 }
 
@@ -64,7 +70,8 @@ export function backfillEntryCrowd(entry: Entry, event?: CrowdEvent): Partial<En
   if (entry.crowd == null) return null;
   if (entry.crowdAnnounced != null || entry.crowdEstimated != null || entry.crowdFinal != null) return null;
   const hasBoxScore = Boolean(event?.result?.attendance != null && event.result.attendance > 0);
-  const hasAnnouncedOnEvent = Boolean(event && crowdFigures(event).announced != null);
+  const figures = event ? crowdFigures(event) : undefined;
+  const hasAnnouncedOnEvent = figures?.announced != null && figures.announcedKind === 'announced';
   if (hasBoxScore || hasAnnouncedOnEvent) {
     return { crowdAnnounced: entry.crowd, crowd: undefined };
   }

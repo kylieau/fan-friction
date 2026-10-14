@@ -79,7 +79,6 @@ export function TagsPanel({
         <input
           ref={input}
           value={text}
-          maxLength={TAG_MAX}
           enterKeyHint="done"
           autoCapitalize="none"
           autoComplete="off"
@@ -88,10 +87,19 @@ export function TagsPanel({
           onChange={(ev) => {
             const value = ev.target.value;
             if (value.includes(',')) {
-              value.split(',').forEach((part, i, all) => (i < all.length - 1 ? add(part) : setText(part)));
+              const parts = value.split(',');
+              const remaining = parts.pop() ?? '';
+              const next = [...tags];
+              for (const part of parts) {
+                const tag = normalizeTag(part);
+                if (tag && !next.includes(tag)) next.push(tag);
+              }
+              // One update preserves every tag when several arrive in the same input event.
+              if (next.length !== tags.length) onChange(next);
+              setText(remaining.slice(0, TAG_MAX));
               return;
             }
-            setText(value);
+            setText(value.slice(0, TAG_MAX));
           }}
           onKeyDown={(ev) => {
             if (ev.key === 'Enter') {

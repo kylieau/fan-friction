@@ -450,11 +450,9 @@ export function ExploreListScreen() {
   const thisMonday = mondayOf(today);
 
   const toToday = () => {
-    const el = scroller.current;
-    if (!el) return;
-    const first = days.find((d) => d.date >= today);
-    const node = first ? el.querySelector<HTMLElement>(`[data-day="${first.date}"]`) : null;
-    if (node) el.scrollTo({ top: node.offsetTop - 1, behavior: 'smooth' });
+    // A future deep link may not have loaded today's week yet. Use the same loader and
+    // empty-day handling as a calendar tap before scrolling back.
+    setPending({ date: today, smooth: true });
   };
 
   const lineFor = (event: CrowdEvent) =>
