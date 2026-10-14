@@ -8,30 +8,14 @@ import {
   subscribeAccount,
   suggestHandle,
   updateMyProfile,
-  type Visibility,
 } from '../data';
 
-const CHOICES: { value: Visibility; title: string; body: string }[] = [
-  { value: 'only_me', title: 'Only me', body: 'Your events are private. The default.' },
-  {
-    value: 'approved',
-    title: 'People I approve',
-    body: 'Anyone can ask to follow you. Only people you approve see your events and plans.',
-  },
-  {
-    value: 'anyone',
-    title: 'Anyone',
-    body: 'Anyone can see your events. Following still needs your OK, and only followers see your plans.',
-  },
-];
-
-/** Display name, handle, and the one visibility switch. Sits inside Settings. */
+/** Display name and handle. Sits inside Settings; who sees your stubs moved to Settings › Privacy (build 5, item 9). */
 export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [loaded, setLoaded] = useState(false);
   const [name, setName] = useState('');
   const [handle, setHandle] = useState('');
-  const [visibility, setVisibility] = useState<Visibility>('only_me');
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
 
@@ -41,7 +25,6 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
       if (!current || !profile) return;
       setName(profile.displayName ?? '');
       setHandle(profile.handle ?? suggestHandle(profile.displayName ?? ''));
-      setVisibility(profile.visibility ?? 'only_me');
       setLoaded(true);
     });
     return () => {
@@ -55,7 +38,7 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
     if (busy) return;
     setBusy(true);
     setNote(null);
-    const error = await updateMyProfile({ displayName: name, handle, visibility });
+    const error = await updateMyProfile({ displayName: name, handle });
     setBusy(false);
     if (error) {
       setNote(error);
@@ -106,25 +89,6 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
           </span>
           {!handleOk && <span className="field-hint">3 to 32 letters, numbers or dashes.</span>}
         </label>
-
-        <fieldset className="field choices">
-          <legend className="field-label">Who can see your events</legend>
-          {CHOICES.map((choice) => (
-            <label key={choice.value} className={`choice${visibility === choice.value ? ' on' : ''}`}>
-              <input
-                type="radio"
-                name="visibility"
-                value={choice.value}
-                checked={visibility === choice.value}
-                onChange={() => setVisibility(choice.value)}
-              />
-              <span className="choice-text">
-                <span className="choice-title">{choice.title}</span>
-                <span className="choice-body">{choice.body}</span>
-              </span>
-            </label>
-          ))}
-        </fieldset>
 
         <button type="submit" className="gold-button" disabled={busy || !loaded || !handleOk}>
           Save

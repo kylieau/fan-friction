@@ -1,4 +1,3 @@
-import { useSyncExternalStore } from 'react';
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { TabBar } from './components/TabBar';
 import { HomePicker } from './components/HomePicker';
@@ -13,15 +12,17 @@ import { ProfileScreen } from './screens/ProfileScreen';
 import { ProfileEditScreen } from './screens/ProfileEditScreen';
 import { PeopleScreen } from './screens/PeopleScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
+import { SettingsCitiesScreen } from './screens/SettingsCitiesScreen';
+import { SettingsPrivacyScreen } from './screens/SettingsPrivacyScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
 import { StubsScreen } from './screens/StubsScreen';
 import { TagScreen } from './screens/TagScreen';
 import { FollowingScreen } from './screens/FollowingScreen';
 import { DateScreen } from './screens/DateScreen';
-import { getHomeId, subscribeHome } from './lib/homeCity';
+import { getHomeId } from './lib/homeCity';
 import { backfillLegacyCrowds, getCityDate, lockCrowds, settlePassedPlans, subscribeLogLoaded } from './data';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 /** /night/<date> was the date page's first address. */
 function OldDateRedirect() {
@@ -31,7 +32,8 @@ function OldDateRedirect() {
 
 function Shell() {
   const { pathname } = useLocation();
-  const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
+  // The first-open picker: on while no home is set, and kept open after home is picked until Done.
+  const [firstOpen, setFirstOpen] = useState(() => !getHomeId());
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   useEffect(() => {
@@ -70,14 +72,17 @@ function Shell() {
           <Route path="/you/people" element={<PeopleScreen />} />
           <Route path="/entry/:id" element={<ManualEntryScreen />} />
           <Route path="/you/settings" element={<SettingsScreen />} />
+          <Route path="/you/settings/cities" element={<SettingsCitiesScreen />} />
+          <Route path="/you/settings/privacy" element={<SettingsPrivacyScreen />} />
           <Route path="/nights" element={<Navigate to="/explore?view=list" replace />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <TabBar />
-      {/* Home city is chosen first, on Explore or Home. No first-run tips: the ? and the empty states carry it (3.17). */}
-      {!homeId && (pathname === '/explore' || pathname === '/home') && <HomePicker />}
+      {/* Home city is chosen first, on Explore or Home. No first-run tips: the ? and the empty states carry it (3.17).
+          It stays open after home is set, so cities can be starred, until Done (build 5, item 8). */}
+      {firstOpen && (pathname === '/explore' || pathname === '/home') && <HomePicker onDone={() => setFirstOpen(false)} />}
     </div>
   );
 }

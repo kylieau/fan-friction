@@ -1032,6 +1032,18 @@ export function favoriteCitiesOf(log: PersonalLog = snapshot): string[] {
   return log.favoriteCities ?? [];
 }
 
+/**
+ * One order for every city list (the switcher, the home picker, Settings › Home & cities): home first, then the
+ * cities you starred, then the rest (build notes 4, P1; build 5, item 8). Home is never in `pinned`.
+ */
+export function cityOrder<T extends { id: string }>(cities: readonly T[], home: string | null, starred: readonly string[]) {
+  return {
+    top: cities.filter((city) => city.id === home),
+    pinned: cities.filter((city) => city.id !== home && starred.includes(city.id)),
+    rest: cities.filter((city) => city.id !== home && !starred.includes(city.id)),
+  };
+}
+
 /** Star or un-star a city. Home is not starred: it is pinned on its own. */
 export function toggleFavoriteCity(metroId: string) {
   if (!METROS[metroId]) return;

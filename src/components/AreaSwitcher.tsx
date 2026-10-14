@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, useSyncExternalStore } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { type Metro } from '../config/metros';
-import { favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
+import { cityOrder, favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
 import { getHomeId } from '../lib/homeCity';
 import { openedMetroId } from '../lib/view';
 import { ChevronDown, HomeIcon, StarIcon } from './Icons';
@@ -36,9 +36,7 @@ export function AreaSwitcher({
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const starred = favoriteCitiesOf(log);
   const home = getHomeId();
-  const top = metros.filter((city) => city.id === home);
-  const pinned = metros.filter((city) => city.id !== home && starred.includes(city.id));
-  const rest = metros.filter((city) => city.id !== home && !starred.includes(city.id));
+  const { top, pinned, rest } = cityOrder(metros, home, starred);
   const ordered = [...top, ...pinned];
   // The list closes on a tap outside it or Escape, wherever the switcher sits (Map, List, calendar page).
   const root = useRef<HTMLDivElement>(null);
@@ -113,7 +111,7 @@ export function AreaSwitcher({
 }
 
 /** The house before the home city's name (Kylie, Oct 5). The name for screen readers is Home. */
-function HomeMark() {
+export function HomeMark() {
   return (
     <span className="home-mark" role="img" aria-label="Home">
       <HomeIcon />

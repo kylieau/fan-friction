@@ -4,17 +4,20 @@ import { AccountRow } from '../components/AccountBlock';
 import { ProfileForm } from './ProfileEditScreen';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { HomePicker } from '../components/HomePicker';
+import { VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { blockedPeople, getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, unblockUser, updateMyProfile, type Profile } from '../data';
+import { blockedPeople, favoriteCitiesOf, getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, unblockUser, updateMyProfile, type Profile, type Visibility } from '../data';
 
-/** Behind the gear on You: account, profile, backup, tips. */
+/**
+ * Behind the gear on You, one list (build 5, item 9; board settings-full, lean): Account, Location, Privacy, then the
+ * existing Profile, Blocked, Favorites, Your events and App sections. Detail controls live on sub-pages.
+ */
 export function SettingsScreen() {
-  const [changingHome, setChangingHome] = useState(false);
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [handle, setHandle] = useState<string | null>(null);
+  const [visibility, setVisibility] = useState<Visibility | null>(null);
   // undefined until the project has the column (migration 0017); the row then shows.
   const [linkOff, setLinkOff] = useState<boolean | undefined>(undefined);
   const [copyNote, setCopyNote] = useState('');
@@ -47,6 +50,7 @@ export function SettingsScreen() {
       if (!current) return;
       setHandle(profile?.handle ?? null);
       setLinkOff(profile?.linkOff);
+      setVisibility(profile?.visibility ?? 'only_me');
     });
     blockedPeople().then((list) => current && setBlocked(list));
     return () => {
@@ -124,6 +128,25 @@ export function SettingsScreen() {
         </div>
       )}
 
+      <div className="settings">
+        <div className="settings-heading">Location</div>
+        <Link to="/you/settings/cities" className="settings-row settings-link">
+          <span>Home &amp; cities</span>
+          <span className="settings-value">{homeCitiesValue(homeId, favoriteCitiesOf(log).filter((id) => id !== homeId).length)}</span>
+        </Link>
+      </div>
+
+      {account && (
+        <div className="settings">
+          <div className="settings-heading">Privacy</div>
+          <Link to="/you/settings/privacy" className="settings-row settings-link">
+            <span>Default for new stubs</span>
+            {visibility && <span className="settings-value">{VISIBILITY_WORDS[visibility]}</span>}
+          </Link>
+          <p className="you-fine">New users start Private. Applies to new stubs.</p>
+        </div>
+      )}
+
       {account && (
         <div className="settings">
           <div className="settings-heading">Profile</div>
@@ -167,15 +190,6 @@ export function SettingsScreen() {
       </div>
 
       <div className="settings">
-        <div className="settings-heading">Home city</div>
-        <button type="button" className="settings-row settings-link" onClick={() => setChangingHome(true)}>
-          <span>{homeId ? METROS[homeId]?.name ?? 'Change home' : 'Choose home'}</span>
-          <span className="settings-value">Change</span>
-        </button>
-      </div>
-      {changingHome && <HomePicker onDone={() => setChangingHome(false)} />}
-
-      <div className="settings">
         <div className="settings-heading">App</div>
         <p className="you-fine">
           Weather data by{' '}
@@ -190,4 +204,10 @@ export function SettingsScreen() {
       </div>
     </div>
   );
+}
+
+/** "Los Angeles · 3 starred"; the count only when something is starred. */
+function homeCitiesValue(homeId: string | null, starred: number): string {
+  const home = homeId ? (METROS[homeId]?.name ?? '') : 'Choose home';
+  return starred > 0 ? `${home} · ${starred} starred` : home;
 }

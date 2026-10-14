@@ -1443,6 +1443,97 @@ button {
   color: var(--ink2);
 }
 
+/* The city list (build 5, item 8; board favorite-cities): first-open picker and Settings › Home & cities. */
+.city-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.city-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.city-row .home-city {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.city-row .home-city.is-home {
+  flex-basis: 100%;
+}
+
+.city-row-name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.city-row-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+
+.city-row .home-mark svg {
+  width: 18px;
+  height: 18px;
+  color: var(--dodger);
+}
+
+.city-divider {
+  flex: 1 0 100%;
+  height: 1px;
+  margin: 2px 0 6px;
+  background: var(--line);
+}
+
+.city-star {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--muted);
+}
+
+.city-star svg {
+  width: 20px;
+  height: 20px;
+}
+
+.city-star.on {
+  color: var(--dodger);
+}
+
+.city-star.on svg {
+  fill: currentColor;
+}
+
+.city-list.on-page .home-city {
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+/* Done stays in view at the foot of the picker card (board favorite-cities b). The card-scoped selector beats the
+   later tap-area rule that makes every .gold-button position: relative. */
+.home-card .home-done {
+  position: sticky;
+  bottom: 0;
+  flex-shrink: 0;
+  margin-top: 4px;
+  box-shadow: 0 -8px 12px var(--card);
+}
+
 .home-list {
   list-style: none;
   margin: 0;
