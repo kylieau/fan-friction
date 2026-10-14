@@ -335,11 +335,12 @@ function truncate(text: string, max: number): string {
   return text.length <= max ? text : `${text.slice(0, max - 1).trimEnd()}…`;
 }
 
-function roundText(p: GameParts, length: Length): string | null {
+function roundText(p: GameParts, length: Length, compact = false): string | null {
   if (!p.round) return null;
   const words = length === 'full' ? p.round.full : p.round.short;
   const year = p.year && length !== 'chip' ? ` ${p.year}` : '';
-  return p.game ? `${words}${year}, Game ${p.game}` : `${words}${year}`;
+  if (!p.game) return `${words}${year}`;
+  return compact ? `${words}${year}\u00a0G${p.game}` : `${words}${year}, Game ${p.game}`;
 }
 
 /**
@@ -347,7 +348,7 @@ function roundText(p: GameParts, length: Length): string | null {
  * Preseason, DH), which is never cut. `drop` removes name parts in the notes' order: 1 year, 2 away team,
  * 3 event name / sport label (the tag); the caller truncates last.
  */
-function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0): { name: string; designation: string[] } {
+function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = false): { name: string; designation: string[] } {
   const withYear = drop >= 1 ? { ...p, year: null } : p;
   const matchup = drop >= 2 ? withYear.second : `${withYear.first} ${withYear.joiner} ${withYear.second}`;
   const tail: string[] = [];
@@ -357,9 +358,9 @@ function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0): { name: s
     if (withYear.sport) tail.push(withYear.sport);
   }
   const designation: string[] = [];
-  const round = roundText(withYear, length);
+  const round = roundText(withYear, length, compact);
   if (round) designation.push(round);
-  if (withYear.designation) designation.push(length === 'full' ? withYear.designation.full : withYear.designation.short);
+  if (withYear.designation) designation.push(length === 'full' ? withYear.designation.full : compact ? withYear.designation.chip : withYear.designation.short);
   return { name: [matchup, ...tail].join(' · '), designation };
 }
 
@@ -371,15 +372,16 @@ function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
 /**
  * The short budget for a game counts the name only (matchup, event name, sport label); the designation rides
  * outside it, since it is never cut first (build 5, item 13; advisor reading of the drop order with N04, recorded
- * in the handoff): "Brewers at Dodgers · NLCS, Game 3" keeps both teams.
+ * in the handoff). When the whole name runs past 32, the designation takes its chip form ("Game 3" → "G3",
+ * "Game 1" → "DH1"; Kylie, Oct 14): "Brewers at Dodgers · NLCS G3" keeps both teams.
  */
 function shortGame(p: GameParts): string {
-  for (let drop = 0; drop <= 3; drop += 1) {
-    const { name, designation } = gamePieces(p, 'short', drop);
-    if (name.length <= SHORT_MAX) return [name, ...designation].join(' · ');
-  }
-  const { name, designation } = gamePieces(p, 'short', 3);
-  return [truncate(name, SHORT_MAX), ...designation].join(' · ');
+  let drop = 0;
+  while (drop < 3 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
+  const name = truncate(gamePieces(p, 'short', drop).name, SHORT_MAX);
+  const full = [name, ...gamePieces(p, 'short', drop).designation].join(' · ');
+  if (full.length <= SHORT_MAX) return full;
+  return [name, ...gamePieces(p, 'short', drop, true).designation].join(' · ');
 }
 
 function renderShow(p: ShowParts, length: 'short' | 'full', drop = 0): string {

@@ -14,9 +14,9 @@ Status per notes item, file refs, judgment calls and open questions are below; t
 
 **Questions (one word each is enough)**
 1. **Read tile in Local Competition:** the notes said keep it, both boards dropped it; I followed the boards. Put it back?
-2. **First-open picker:** a row tap now sets home and leaves the picker open (board b), with Done to close. Or close on the row tap, as the notes' wording said?
-3. **Short-name budget:** the round and game ride outside the 32 characters, so "Brewers at Dodgers · NLCS, Game 3" keeps both teams. Or count them (it would read "Dodgers · NLCS, Game 3")?
-4. **Chip punctuation:** " · " before a playoff round ("Dodgers · NLCS G3"), a space before Preseason / DH1 / AHL playoffs, from your Oct 14 examples; the Oct 4 lock was parentheses. Unify?
+2. ~~**First-open picker**~~ **Answered (Kylie, Oct 14):** keep the row tap leaving the picker open so people can star cities, with a way to close it. Done already shows once home is set and closes it; no change.
+3. ~~**Short-name budget**~~ **Answered (Kylie, Oct 14):** when the short name runs past 32 characters, the game number shortens to the chip form: "Brewers at Dodgers · NLCS G3" ("Game 1" on a doubleheader → "DH1"). Under 32, "Game 3" stays ("Mets at Dodgers · NLCS, Game 3"). The round and number never split across lines. Built in `eventTitle.ts` (`shortGame`), checked in `titles-check.mjs`.
+4. ~~**Chip punctuation**~~ **Answered (Kylie, Oct 14):** keep " · " before a playoff round ("Dodgers · NLCS G3"), replacing the Oct 4 parentheses.
 5. **Old stubs' titles** keep the old form ("NLCS G2 · Dodgers at Brewers"). Retitle them from their events?
 6. **STL2 Hollywood Casino Amphitheatre:** 6,805 seated, or a total with lawn (IND4)? **DC3 Greene Stadium 7,086:** the notes say "once confirmed"; Howard's page doesn't state it.
 7. **Cosm:** couldn't check how a Cosm listing is sold (the page renders nothing to a fetch). Shipped "Watch party" as you decided; say if it's sold as a screening.

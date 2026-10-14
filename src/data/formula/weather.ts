@@ -6,6 +6,7 @@
 
 import { degreesFor, METROS } from '../../config/metros';
 import { VENUES } from '../venues';
+import { isDarkAt } from './sun';
 import type { CrowdEvent, LocalDate } from '../types';
 
 export type WeatherBasis = 'forecast' | 'reanalysis';
@@ -63,14 +64,18 @@ export function rangeSpoken(day: Pick<WeatherDay, 'feelsLikeLowF' | 'feelsLikeHi
   return `feels like a high of ${plain(day.feelsLikeHighF)} and a low of ${plain(day.feelsLikeLowF)} degrees`;
 }
 
-/** The glyph beside the headline number. */
-export function weatherGlyph(row: Pick<WeatherRow, 'code' | 'precipMm' | 'precipProbability' | 'cloudCover'>): string {
+/** The glyph beside the headline number. An hour's row after dark shows a moon for clear or partly cloudy skies. */
+export function weatherGlyph(
+  row: Pick<WeatherRow, 'code' | 'precipMm' | 'precipProbability' | 'cloudCover'> & Partial<Pick<WeatherRow, 'metroId' | 'date' | 'hour'>>,
+): string {
   const code = row.code ?? -1;
   if (code >= 95) return '⛈';
   if (code >= 71 && code <= 77) return '🌨';
   if (code >= 51 || (row.precipMm ?? 0) >= 1 || (row.precipProbability ?? 0) >= 50) return '🌧';
   if (code === 45 || code === 48) return '🌫';
   if ((row.cloudCover ?? 0) >= 70 || code === 3) return '☁️';
+  const dark = row.metroId && row.date && row.hour != null && isDarkAt(row.metroId, row.date, row.hour);
+  if (dark) return '🌙';
   if ((row.cloudCover ?? 0) >= 30 || code === 2) return '🌤';
   return '☀️';
 }
