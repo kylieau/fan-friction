@@ -14,6 +14,7 @@ import { COVERED_METRO_IDS, METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
 import { VENUES } from '../venues';
 import { showKeys, venueByNameOrPlace } from './venueMatch';
+import { isAddOnListing } from './addOns';
 
 const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
@@ -57,25 +58,6 @@ function venueFor(metroId: string, v: TmVenue) {
   if (byId) return byId;
   // By name, else within 300 m of a room we know (C016); shared with the other sellers (venueMatch.ts).
   return venueByNameOrPlace(metroId, v.name, v.location ? Number(v.location.latitude) : undefined, v.location ? Number(v.location.longitude) : undefined);
-}
-
-/** Listings that are not a night out: venue tours, parking, camping, VIP add-ons, premium seating, passes. */
-function isAddOn(name: string): boolean {
-  return /\b(parking|tours?\b(?!\s+(?:de|of)\b)|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade|repas|restaurant|salon des|lounge|hospitality|suites?)\b/i.test(name) || isPremiumAddOn(name);
-}
-
-/**
- * The add-on words that also appear in real show names ("The Romantic Tour", "Club Nouveau"), so
- * they count only in an add-on shape: a "Premium:" prefix, a club or premium package, a parking or
- * lot pass, or Ticketmaster's own "Not an Event Ticket" (C001).
- */
-function isPremiumAddOn(name: string): boolean {
-  return /^\s*(?:premium|club|vip|platinum)\s*[:–-]|\b(?:premium|club|platinum) (?:seat(?:s|ing)?|package|experience|access|ticket)s?\b|\b(?:parking|lot|fast|early entry|pre-?show|pre-?game|tailgate|benchwarmers?) pass(?:es)?\b|not an event ticket/i.test(name);
-}
-
-/** For a show: the add-on shapes only, never the bare words a tour or band name can carry. */
-function isShowAddOn(name: string): boolean {
-  return /\b(?:parking|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|hospitality|suites?|(?:venue|stadium|arena|behind.the.scenes) tours?)\b/i.test(name) || isPremiumAddOn(name);
 }
 
 /**
@@ -269,7 +251,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       }
       const kind = kindOf(segment, venue.id);
       if (!kind) continue;
-      if (kind === 'show' ? isShowAddOn(e.name) : isAddOn(e.name)) continue;
+      if (isAddOnListing(e.name, kind)) continue;
       const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
       const performer = (performers[0] ?? e.name).trim();
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
