@@ -9,6 +9,7 @@ import { hockeytechMetroIds } from './sources/hockeytechSource';
 import { mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
+import { listTitle } from '../lib/eventTitle';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, Entry, LocalDate, DateSearchHit } from './types';
 import { applyFormula } from './formulaRead';
 import { rateDate } from './formula';
@@ -246,7 +247,9 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
     if (!names) continue;
     const row = hits.get(event.date) ?? { titles: [], matched: [], anyVisible: false };
     if (!visible || visible(event)) row.anyVisible = true;
-    if (!row.titles.includes(event.title)) row.titles.push(event.title);
+    // The short name, as every row shows it (build 5, item 13).
+    const name = listTitle(event);
+    if (!row.titles.includes(name)) row.titles.push(name);
     for (const name of names) {
       if (!row.matched.some((m) => m.toLowerCase() === name.toLowerCase())) row.matched.push(name);
     }

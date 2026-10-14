@@ -342,9 +342,12 @@ function roundText(p: GameParts, length: Length): string | null {
   return p.game ? `${words}${year}, Game ${p.game}` : `${words}${year}`;
 }
 
-/** A game's short or full name; `drop` removes parts in the notes' order for the short budget. */
-function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
-  // Drop steps for a game: 1 year, 2 away team, 3 event name / sport label (the tag), 4 truncate.
+/**
+ * A game's name in two pieces: the name (matchup, event name, sport label) and the designation (round, game,
+ * Preseason, DH), which is never cut. `drop` removes name parts in the notes' order: 1 year, 2 away team,
+ * 3 event name / sport label (the tag); the caller truncates last.
+ */
+function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0): { name: string; designation: string[] } {
   const withYear = drop >= 1 ? { ...p, year: null } : p;
   const matchup = drop >= 2 ? withYear.second : `${withYear.first} ${withYear.joiner} ${withYear.second}`;
   const tail: string[] = [];
@@ -353,10 +356,30 @@ function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
     else if (withYear.neutralSite && !withYear.round) tail.push('Neutral site');
     if (withYear.sport) tail.push(withYear.sport);
   }
+  const designation: string[] = [];
   const round = roundText(withYear, length);
-  if (round) tail.push(round);
-  if (withYear.designation) tail.push(length === 'full' ? withYear.designation.full : withYear.designation.short);
-  return [matchup, ...tail].join(' · ');
+  if (round) designation.push(round);
+  if (withYear.designation) designation.push(length === 'full' ? withYear.designation.full : withYear.designation.short);
+  return { name: [matchup, ...tail].join(' · '), designation };
+}
+
+function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
+  const { name, designation } = gamePieces(p, length, drop);
+  return [name, ...designation].join(' · ');
+}
+
+/**
+ * The short budget for a game counts the name only (matchup, event name, sport label); the designation rides
+ * outside it, since it is never cut first (build 5, item 13; advisor reading of the drop order with N04, recorded
+ * in the handoff): "Brewers at Dodgers · NLCS, Game 3" keeps both teams.
+ */
+function shortGame(p: GameParts): string {
+  for (let drop = 0; drop <= 3; drop += 1) {
+    const { name, designation } = gamePieces(p, 'short', drop);
+    if (name.length <= SHORT_MAX) return [name, ...designation].join(' · ');
+  }
+  const { name, designation } = gamePieces(p, 'short', 3);
+  return [truncate(name, SHORT_MAX), ...designation].join(' · ');
 }
 
 function renderShow(p: ShowParts, length: 'short' | 'full', drop = 0): string {
@@ -388,7 +411,7 @@ function fitShort(render: (drop: number) => string, steps: number): string {
  */
 export function listTitle(event: CrowdEvent): string {
   const p = partsOf(event);
-  if (p.type === 'game') return fitShort((drop) => renderGame(p, 'short', drop), 3);
+  if (p.type === 'game') return shortGame(p);
   if (p.type === 'show') return fitShort((drop) => renderShow(p, 'short', drop), 3);
   return truncate(renderNamed(p, 'short'), SHORT_MAX);
 }
@@ -443,6 +466,16 @@ function chipDesignation(p: Parts): string {
   if (p.round?.minor) return ` ${p.round.chip}`;
   if (p.designation) return ` ${p.designation.chip}`;
   return '';
+}
+
+/**
+ * The chip in two pieces, for the fixed-width map chip: the name, which may shrink with an ellipsis, and the
+ * designation, which never does (" · NLCS G3", " Preseason"). `mapTitle` is the two joined.
+ */
+export function chipParts(event: CrowdEvent, entry: readonly CrowdEvent[] = []): { name: string; designation: string } {
+  const title = mapTitle(event, entry);
+  const designation = spokenHome(event) ? chipDesignation(partsOf(event)) : '';
+  return designation && title.endsWith(designation) ? { name: title.slice(0, -designation.length), designation } : { name: title, designation: '' };
 }
 
 /** Squad code and visitor only when two chips that night would otherwise match (N16: codes on a clash only). */

@@ -5701,6 +5701,12 @@ button.back-link {
   white-space: nowrap;
 }
 
+/* The designation after the chip's name never shrinks (build 5, item 13: "never cut first"). */
+.crowd-name-tag {
+  flex-shrink: 0;
+  white-space: pre;
+}
+
 .crowd-meta {
   font-size: 10.5px;
 }

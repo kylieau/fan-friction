@@ -63,6 +63,10 @@ try {
   const events = (day.events ?? []).slice(0, 40);
   console.log(`\n${metro} ${file}: chip | short | full`);
   for (const e of events) console.log(`  ${mapTitle(e, events)} | ${listTitle(e)} | ${fullTitle(e)}`);
+  // Rows whose short name lost the visitor to the budget (the full name has " at " or " vs. ", the short one doesn't).
+  const all = day.events ?? [];
+  const lost = all.filter((e) => e.kind === "game" && / (at|vs\.) /.test(fullTitle(e)) && !/ (at|vs\.) /.test(listTitle(e)));
+  console.log(`\n${lost.length} of ${all.length} rows lose the visitor in the short name:${lost.map((e) => `\n  ${listTitle(e)}  (full: ${fullTitle(e)})`).join('')}`);
 } finally {
   await server.close();
 }

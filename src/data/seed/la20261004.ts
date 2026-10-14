@@ -86,8 +86,10 @@ export const LA_20261004_EVENTS: CrowdEvent[] = [
     metroId: 'la',
     date: DATE,
     start: '18:00',
-    kind: 'festival',
-    title: '2026 ComplexCon Concert',
+    // N23 (build 5): the concert, not the convention (Complex: Playboi Carti headlines Oct 4 at Crypto.com Arena), so
+    // type Concert and "ComplexCon concert"; Playboi Carti stays the performer (the chip and the lineup).
+    kind: 'show',
+    title: 'ComplexCon concert',
     place: { type: 'venue', venueId: 'crypto-com-arena' },
     audience: { domain: 'music', genre: 'hip-hop' },
     performer: 'Playboi Carti',
