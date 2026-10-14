@@ -28,7 +28,7 @@ Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default 
 
 The naming review is closed (item 15): Cosm is a Watch party, the Add form says Concert, full playoff words on the event page (N03 follows her note, not her form choice; see item 15), artist before tour, co-bills and multi-day passes all decided. Three answers differ from the lean: N03 (note overrides choice), N08 (Preseason moves to a suffix) and N29 (note overrides choice: "vs." with a period). N16 adds a note: codes stay on chips. Item 13's "still open" list is mostly settled; what's left is listed there.
 
-Regional events (item 2): backlog next step — Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog; nothing wired in build 5. CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug; keep the no-code check after the game). Still on hold: where crowds with no size show in Explore. The "~" question is closed (item 10).
+Regional events (item 2): backlog next step — Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog; nothing wired in build 5. CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug; keep the no-code check after the game). CLOSED: where crowds with no size show in Explore (blank rule plus existing muted chips; see item 10's closed list). The "~" question is closed (item 10).
 
 ## 1. Concerts Ticketmaster misses
 
@@ -833,12 +833,12 @@ Changes the answers make to city data (capacities, codes, names, ids). File hint
 **Build instruction:** Stubs get three Venmo-style levels, **Anyone / Friends / Private**. The default for new stubs is set in Settings › Privacy and can be overridden per stub with the pill. **The default for new users is Private** (Kylie, Oct 14: "the default should definitely be private though"), which matches today's profile default `only_me` (`src/screens/ProfileEditScreen.tsx:15`).
 
 Start from what exists:
-- Stub privacy already works for **Watching** only: `src/components/StubSheet.tsx:171-180` has two `stub-choice` buttons (Private / Friends), saved as `watchShare` by `setWatchDetails` (`src/data/personalLog.ts:712-720`).
+- Stub privacy already works for **Watching** only: `src/components/StubSheet.tsx:168-187` has two `stub-choice` buttons (Private / Friends), saved as `watchShare` by `setWatchDetails` (`src/data/personalLog.ts:718-735`).
 - A profile-wide switch already exists: `ProfileEditScreen.tsx:14-26` offers `only_me` "Only me" (default), `approved` "People I approve" and `anyone` "Anyone". It's enforced in the database by `can_view` / `can_view_plans` (below).
 
 Changes, in order:
 1. **Reuse the profile switch as "Default for new stubs"** (proposal to the builder). Don't add a second, competing setting. Move or relabel it under Settings › Privacy with the same three words: `anyone` → **Anyone**, `approved` → **Friends** (renamed from "People I approve" to match the stub wording), `only_me` → **Private**. Keep the enum values; change only the labels and the helper copy. A helper line says it applies to new stubs.
-2. **Stub it sheet:** remove the Watching-only Private/Friends buttons (`StubSheet.tsx:171-180`). Add the "Who sees this [Friends ⌄]" pill for **Attending, Watching and Interested**, labelled **"Your default"**. Its menu offers **Anyone / Friends / Private**. When the pick differs from the default, the label becomes a gold **"Not your default"**.
+2. **Stub it sheet:** remove the Watching-only Private/Friends buttons (`StubSheet.tsx:168-187`). Add the "Who sees this [Friends ⌄]" pill for **Attending, Watching and Interested**, labelled **"Your default"**. Its menu offers **Anyone / Friends / Private**. When the pick differs from the default, the label becomes a gold **"Not your default"**.
 3. **Data:** store a per-stub visibility (anyone / friends / private) on every plan and entry. Generalize `watchShare` (or add a field next to it) and migrate existing values unchanged: `friends` → Friends, `private` → Private. Stubs with no value inherit the profile default at the time of migration.
 4. **"Change past stubs…" (new row under the default):** a bulk sheet that makes all past stubs **Anyone, Friends or Private**, in any direction (Venmo only goes more private; we allow all directions).
 5. **Event page status line:** editable before and after the event, with the same three levels ("Watching · 🔒 Private ⌄", "Attended · 55k · Anyone ⌄").
@@ -850,7 +850,7 @@ Rejected: big buttons on the sheet; editing privacy only inside the sheet; a seg
 
 **Superseded:** the Oct 13 rejection of a Public option. Kylie reversed it on Oct 14 (answer E): Anyone stays as a level, because the default protects people who don't want it and per-stub control covers the rest, as in Venmo.
 
-> **Open builder check: database rules for per-stub visibility.** Today visibility is **per profile**, not per stub:
+> **Builder check: database rules for per-stub visibility.** Today visibility is **per profile**, not per stub:
 > - `profiles.visibility` (`only_me` / `approved` / `anyone`, migration 0001) is read by `can_view(owner)` (0001; latest in `supabase/migrations/0018_blocks.sql:62-80`, which adds blocks). Visible = owner, or (not blocked and (`anyone`, or `approved` and an approved follower)).
 > - Plans use `can_view_plans` (0012; updated in 0016): visible only to approved followers when the profile isn't `only_me`, even for `anyone` profiles.
 > - Follow approval and its rules are in 0011 and 0015. Shared cards are views `profile_cards` / `entry_cards` filtered by `can_view` (0017).
@@ -987,7 +987,7 @@ Instructions by surface. Implement one shared predicate, e.g. `passesCrowdRange(
 | Friends Activity layer | Events friends are attending always show, muted if under 5,000. | `chipActivity.ts:23`; `ExploreListScreen.tsx:133, 465`; `DateScreen.tsx:127` |
 | Stubs (log, You, Your year) | Never filtered. Stubbed events always show everywhere, muted if under 5,000. | `StubRows.tsx`, `YourYear.tsx` |
 | Search | Apply the filter, with a Show line (Kylie's "everywhere" rule). Search returns dates with matched titles, so filter which titles match; a date whose only matches are hidden shows under the Show line. | `SearchSheet.tsx`; `DateSearchHit` (`types.ts:354`) |
-| Unknown-size events | Shown by default with a blank size (muted on the map); the toggle hides them. | `sizeTier` → `unknown` (`read.ts:117`) |
+| Unknown-size events | Shown by default with a blank size (muted on the map); the toggle hides them. | `sizeTier` → `unknown` (`read.ts:116`) |
 | Hidden-events line (new) | Link-blue, 11pt. Show reveals for the current view only and resets on leaving. | new |
 | New users | Default no min, no max: no behavior change. | new |
 
@@ -1007,7 +1007,7 @@ Builder checks:
 
 ### 7. "More dates" heading on the event page (Oct 14, C2)
 
-**Build instruction:** In `src/components/SameTour.tsx:37`, replace `{event.performer ? 'Also on' : 'Same homestand'}` with the single heading **"More dates"** for every kind of event. Leave the matching logic (`:17-19`: same performer, else same home team, same city, within 30 days) and the crowd range rule (not filtered, C) unchanged. Update the section's `aria-label` ("Other dates") to match if it should read the same.
+**Build instruction:** In `src/components/SameTour.tsx:37`, replace `{event.performer ? 'Also on' : 'Same homestand'}` with the single heading **"More dates"** for every kind of event. Leave the matching logic (`:19-22`: same performer, else same home team, same city, within 30 days) and the crowd range rule (not filtered, C) unchanged. Update the section's `aria-label` ("Other dates") to match if it should read the same.
 
 Context: today concerts and other events with a performer, residencies included, show "Also on". Games show "Same homestand". Events with neither performer nor teams (theatre, comedy specials, fairs) match nothing, so the section hides; that's unchanged.
 
@@ -1019,7 +1019,7 @@ Rejected: keeping "Same homestand" for sports and "Also on" for shows; "Other ni
 
 **Build instruction:** Rework the existing home picker (`src/components/HomePicker.tsx`); don't build a new one.
 
-What it does today (main 635a164): `HomePicker.tsx:9-37` shows "Where's home?" (`:20`) and a plain list of every city with events (`metrosWithEvents()`, `:10`). Tapping a city sets home and closes (`choose`, `:12-15`). There's no search and no star. It opens on first launch (`src/App.tsx:80`) and, unchanged, from Settings › Home city (`src/screens/SettingsScreen.tsx:169-176`). Stars already exist on the city switcher: `src/components/AreaSwitcher.tsx:35-41` orders home, then starred cities, then the rest, with a star button on each non-home row (`:86-100`), stored on the device by `favoriteCitiesOf` / `toggleFavoriteCity` (`src/data/personalLog.ts:1031-1040`). **Done:** the switcher order and its stars; don't rebuild them.
+What it does today (main 635a164): `HomePicker.tsx:9-37` shows "Where's home?" (`:20`) and a plain list of every city with events (`metrosWithEvents()`, `:9`). Tapping a city sets home and closes (`choose`, `:11-15`). There's no search and no star. It opens on first launch (`src/App.tsx:80`) and, unchanged, from Settings › Home city (`src/screens/SettingsScreen.tsx:169-176`). Stars already exist on the city switcher: `src/components/AreaSwitcher.tsx:35-41` orders home, then starred cities, then the rest, with a star button on each non-home row (`:86-100`), stored on the device by `favoriteCitiesOf` / `toggleFavoriteCity` (`src/data/personalLog.ts:1031-1040`). **Done:** the switcher order and its stars; don't rebuild them.
 
 Changes:
 1. Add a **search field** at the top of the picker that filters the city list as you type.
@@ -1079,7 +1079,7 @@ This closes the open "~" question. The NLCS G3 note below is CLOSED (not a bug);
 
 Boards: `/workspace/ff-gap-review/mosaic/b5/v4/estimated-crowds.png`, `estimated-crowds-lean-map-chip.png`, `estimated-crowds-lean-list-row.png`, `estimated-crowds-lean-selected-card.png`, `estimated-crowds-lean-event-crowd.png`, `estimated-crowds-lean-about-estimate.png`; live references `estimated-crowds-live-map.png`, `estimated-crowds-live-event-crowd.png`; rejected `estimated-crowds-alt-est-suffix-rows.png` (on the box).
 
-### On hold (Kylie working with Claude)
+### Closed and backlog (Kylie, Oct 14)
 
 - **CLOSED (Kylie, Oct 14):** Where crowds with no size show in Explore. Nothing beyond the blank rule above and the existing muted gray chips. Rejected: a "1 unsized not counted" footer and hollow gray pins (older board unsized.png). Board: `/workspace/ff-gap-review/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
 - Regional events: backlog next step (item 2). Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog. Nothing wired in build 5.
@@ -1109,7 +1109,7 @@ Sources: Mosaic's `research/event-types-table.md` (decisions at the top) and `do
 4. **Genre stays text.** Music genres map to `music.concert` and the genre is kept as secondary text, normalized to Ticketmaster casing ("hip-hop" → "Hip-Hop/Rap").
 5. **Children's Theatre → `family.kids`** (Kids & family), not Theatre.
 6. **Undefined / Miscellaneous (about 119 events on Oct 13):** sort by title keywords ("Tribute" → concert, "Comedy" → comedy, "Festival" → festival, and so on). Anything unmatched falls back to `other`.
-7. The type label replaces `eventTypeLabel`. "Other sport" is the label for `sports.other`, never the raw "other".
+7. The type label replaces `eventTypeLabel`. **Adjusted (N13, N30):** `sports.other` reads "Sports event" (not "Other sport"), and `other` reads "Event"; never the raw "other".
 8. Level, division, occasion tier and favorite kinds stay separate fields. Don't fold them into the type.
 
 **Why:** Theatre (51) and Comedy (28) already outnumber Baseball (11) on Oct 13, so they need their own types. "Special" hides the useful tag behind a ticket icon. One list fixes the case drift that quietly changes the audience-overlap score. Families look for kids' shows by audience, not art form. Most Undefined titles name their type, so a keyword pass fixes most of them with no hand work.
