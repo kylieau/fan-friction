@@ -7915,3 +7915,108 @@ button.back-link {
   gap: 4px;
   margin-left: auto;
 }
+
+/* The shared row body (Kylie, Oct 14: badges right-justified everywhere): time at the left; line 1 the title and,
+   at the right edge, the crowd; line 2 the venue and, at the same right edge, the badges. */
+.day-row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.day-row-line1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.day-row-line1 .day-row-title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.day-row-line1 .crowd-figure {
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+  padding-top: 1px;
+}
+
+.day-row-line2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  min-height: 18px;
+}
+
+.day-row-line2 .day-row-venue {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.day-row-line2 .event-tags {
+  flex: 0 0 auto;
+  margin-left: auto;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.day-row-line2 .tag-occasion,
+.day-row-line2 .chip {
+  height: 18px;
+  font-size: 11px;
+}
+
+/* Rows that are not .day-row (Home, the date page, "Fighting today") carry the same time column. */
+.log-row .day-row-time,
+.date-row-main .day-row-time,
+.event-row .day-row-time {
+  width: 48px;
+  flex-shrink: 0;
+  padding-top: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+  font-variant-numeric: tabular-nums;
+}
+
+.date-row-main {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  padding-bottom: 26px;
+}
+
+.date-row {
+  position: relative;
+  padding: 8px 12px 8px 10px;
+}
+
+.date-row .stub-mini {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  margin: 0;
+}
+
+.event-row {
+  align-items: flex-start;
+}
+
+/* A row's title takes at most two lines (a long official title ends in an ellipsis). */
+.day-row-line1 .day-row-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

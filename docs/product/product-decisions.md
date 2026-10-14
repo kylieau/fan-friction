@@ -216,3 +216,10 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Week line:** centered, "This week · 35 events", "Next week", "Last week", and dates ("Oct 26–Nov 1") for any other. It stays above the list (it does not scroll away) and follows the week at the top of the list.
 - **Calendar:** its own scroller of week rows (up and down, snapping), three rows and half of the next so it reads as scrollable; same card height as before; month label centered and following the calendar's own rows; **squares replace circles** (her change to V05); a small bar marks the day at the top of the list; a tap on a day moves the list; scrolling the list brings the calendar to its week unless a finger was just on the calendar (a tap does not count as holding).
 - **Builder's calls:** squares carry no border so they do not read as read boxes; the calendar loads reads for weeks as they scroll into view, separately from the list's.
+
+### Badges flush right on every event list (Kylie, Oct 14: "right-justified ... across the board")
+- **One rule, one shared row body (`RowBody`):** the time at the left; line 1 the title and, at the row's right edge, the crowd; line 2 the venue and, at the same right edge, the badges. The badges' right edge equals the crowd figure's right edge, measured (0 px gap on every row with badges on the Explore List, the Map sheet, "Fighting today", Home and the date page).
+- **Date page rows** follow it: time, then title and crowd, then venue and badges, then weather at the left and "+ Stub it" at the right.
+- **"Fighting today":** the time moves to the left column (a day tag rides with the venue) so the right of line 2 is free for the badges.
+- **Titles take at most two lines;** a long venue gives way to the badges.
+- **Left on purpose (a different right edge):** the event page header and the tapped-chip card (the pill starts "Swamped by Kings"), Stubs rows and Faves rows (the right edge is the read box or the Save button).
