@@ -1,6 +1,6 @@
 # Build 5 notes
 
-Grounded against main 635a164, Oct 14, 2026 (fetched 1:20 AM PT; main's last commit 12:23 AM PT). Written as instructions to the builder: each item leads with what to change, starting from the code as it is, followed by short context on what exists today (file:line refs at that commit).
+Grounded against main 635a164, Oct 14, 2026 (fetched again 1:55 AM PT, unchanged; main's last commit 12:23 AM PT). Written as instructions to the builder: each item leads with what to change, starting from the code as it is, followed by short context on what exists today (file:line refs at that commit).
 
 Each item gives what we do, why, and the options we turned down.
 
@@ -18,8 +18,14 @@ Each item gives what we do, why, and the options we turned down.
 - Starred cities in the home picker, reused as Settings › Home & cities (item 8; Mosaic v4, Oct 14).
 - Settings as one list: Account, Location, Events, Privacy, then Favorites, Your events, App (item 9; Mosaic v4, Oct 14).
 - "~" on every estimated crowd, and a POP-UPS section in About this estimate (item 10; Mosaic v4, Oct 14).
+- Event types: 8 categories, 36 types, "Special" retired (item 11; Mosaic, Oct 14).
+- Type icons: Phosphor plus six custom, at the start of every title, sized per surface (item 12; Mosaic, Oct 14).
+- Event names: chip / short / full lengths and the parsing fixes (item 13; Mosaic, Oct 14).
+- Commit the naming review and the types-and-naming table to docs/research/topics (item 14).
 
 Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). C2 ("More dates") and D2 ("WEEK OF OCT 26 · LINEUP") were also accepted on Oct 14. No open questions remain from this round.
+
+Open from the naming review (item 14): Cosm as Watch party vs Live screening, Concert vs Show on the Add form, full playoff wording, artist before tour, co-bills and multi-day passes. Naming cases not yet covered are listed at the end of item 13.
 
 Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3. The "~" question is closed (item 10).
 
@@ -1088,3 +1094,112 @@ The live event page shows "~55,000 Estimated" for NLCS G3 (Dodgers vs. Brewers, 
 - Final has no source at all yet: `src/data/crowdFigures.ts` says the field exists but nothing writes it (build notes 3, ⚑4).
 - `highlightedCrowd` already picks Final > Announced > Estimated. Once the nightly results pass saves the box score, Announced will take over by itself.
 - Worth checking after the game: that the results pass runs for LA on Oct 14 and the page switches to Announced. G1 and G2 in Milwaukee did get box-score attendance (for example 42,516 on Oct 12). No code change made.
+
+### 11. Event types: one controlled list (Oct 14, answers IN03, IN04)
+
+Sources: Mosaic's `research/event-types-table.md` (decisions at the top) and `docs/build-5/research/event-types-and-naming-table.md` (code refs and bugs, checked at main 635a164).
+
+**Today:** there is no controlled type. `event.kind` is game / show / festival / live-broadcast / special, and the type word comes from `eventTypeLabel` (`src/data/personalLog.ts:214-221`). Only five sports get a proper label (`sportLabel`, `personalLog.ts:199-208`); everything else shows the raw key ("boxing", "rodeo", "other"). Every special shows "Special". Ticketmaster sports come from a text match (`sportOf`, `src/data/sources/ticketmasterSource.ts:171-175`), so lucha libre lands as boxing and volleyball as other. The Add form stores Title Case words (`src/data/competitions.ts:16-31`) and calls a concert "Show" (`src/screens/AddEntryScreen.tsx:36`). Nothing in the database limits these values. 85 raw strings in all.
+
+**Change:**
+1. Add a type key on every event: `category.type`, lowercase (e.g. `sports.baseball`). 8 categories, 36 types, exactly as in section 2 of `event-types-table.md`: Sports (18: baseball, softball, basketball, football, soccer, hockey, lacrosse, volleyball, tennis, golf, combat, motorsports, rodeo, horse_racing, rugby, cricket, track, other), Music (concert, festival, classical), Arts (theatre, comedy, dance, film, talk, spectacle), Family (circus, ice_show, kids), Fairs & Markets (fair, expo, market), Pop-up (`popup`), Watch party (`watch.broadcast`), Other (`other`).
+2. Map every raw key with the table in section 3 of `event-types-table.md`, after lowercasing and trimming. Feeds and the Add form go through the same map. Keep the original string as a subtype where the table says so (boxing / MMA / wrestling under `sports.combat`; union / league / Aussie rules under `sports.rugby`).
+3. **Retire "Special" as a type.** A special resolves by its tag; no tag goes to `other`.
+4. **Genre stays text.** Music genres map to `music.concert` and the genre is kept as secondary text, normalized to Ticketmaster casing ("hip-hop" → "Hip-Hop/Rap").
+5. **Children's Theatre → `family.kids`** (Kids & family), not Theatre.
+6. **Undefined / Miscellaneous (about 119 events on Oct 13):** sort by title keywords ("Tribute" → concert, "Comedy" → comedy, "Festival" → festival, and so on). Anything unmatched falls back to `other`.
+7. The type label replaces `eventTypeLabel`. "Other sport" is the label for `sports.other`, never the raw "other".
+8. Level, division, occasion tier and favorite kinds stay separate fields. Don't fold them into the type.
+
+**Why:** Theatre (51) and Comedy (28) already outnumber Baseball (11) on Oct 13, so they need their own types. "Special" hides the useful tag behind a ticket icon. One list fixes the case drift that quietly changes the audience-overlap score. Families look for kids' shows by audience, not art form. Most Undefined titles name their type, so a keyword pass fixes most of them with no hand work.
+
+**Rejected:**
+- A flat list of about 14 types (one per sport, plus Concert, Festival, Stage, Family, Fair, Pop-up, Other), with genre and subtype as text only. Too coarse for theatre and comedy.
+- A music icon per genre (19+ icons for one kind is visual noise).
+- Keeping "Special" as a type (it is the catch-all that caused the problem).
+- Children's Theatre under Arts › Theatre.
+- Leaving Undefined events as Other with no keyword pass, or sorting them by hand.
+
+### 12. Type icons (Oct 14, answers IN01, IN02, IN11, IN12, IN13)
+
+Boards: Mosaic's `mosaic/icons/icons-r3.png`, `sheet-r3.png` and `phones-r3/` (map chip, Explore list, date page lineup, timeline, event title, Stubs, Following, search). Custom icon paths: `mosaic/icons/src/icons.cjs`.
+
+**Today:** `src/map/typeIcons.ts` (40 lines) has nine hand-drawn 10px icons in Dodger blue (`#005A9C`, `:7`). They show only on map chips (`src/map/CrowdLayer.tsx:153`). Everything without its own icon gets the ticket.
+
+**Change:**
+1. Replace the hand-drawn icons with **Phosphor Icons v2.1.1 (MIT), regular weight**: one line style, link blue. Inline the SVG paths as `typeIcons.ts` does now; don't add an icon font. Keep the MIT notice in the repo.
+2. The icon per type is the "Proposed icon" column in `event-types-table.md` section 2. Concert uses Phosphor `music-note`.
+3. Add six **custom icons** drawn on the same 256 grid and stroke: Comedy (`x-laugh`, laughing face), Film (`x-movie-camera`), Circus (`x-big-top`, big-top tent), Fair (`x-ferris-wheel`), Lacrosse (`x-lacrosse`) and Rugby (`x-rugby`). Copy the paths from `icons.cjs`. Lacrosse and the movie camera are **first drafts**; ship them, but expect a redraw.
+4. **Placement:** the icon sits at the very start of the event title on every surface: map chips, Explore rows, the date page lineup, the Local Competition timeline, the event page title, Stubs, Following and search.
+5. **Size**, the largest that keeps today's row heights (measured at 390pt wide against live rows): 18pt on Explore rows, the date page lineup, the event title, Following and search; 17pt on the timeline; 16pt on Stubs (baseline offset 3pt); 12pt on map chips. Vertical align −4px (Stubs −3px). **Do not change any row height.**
+6. Caveats to check on device: a long one-line title may now wrap because the icon takes width; the Stubs size was measured on a stand-in row, so confirm it on the real Stubs list.
+
+**Why:** Phosphor covers 34 of the 36 types in one free, open style, so nothing is a placeholder. Lacrosse and rugby are real sports on the Add form, and a generic ball reads as soccer. At the start of the title the icon reads as part of the name and keeps the time column clean. Kylie found 20pt made rows taller, so each surface gets the largest size that doesn't.
+
+**Rejected:**
+- Keeping and extending the hand-drawn set (would take 30+ new drawings).
+- Tabler icons (no hockey, lacrosse, circus or Ferris wheel).
+- An icon font.
+- A generic ball for lacrosse and rugby.
+- 20pt everywhere (the form's lean; it made rows taller), and 16pt everywhere (looked goofy).
+- The icon on line 2, or in the time column.
+- Swapping any other approved icon (IN13: none).
+
+### 13. Event names: three lengths (Oct 14, answers IN05–IN10, IN14)
+
+Source: Mosaic's `research/event-naming-table.md`; current behavior and real examples in `docs/build-5/research/event-types-and-naming-table.md`.
+
+**Today:** `src/lib/eventTitle.ts` has two lengths. `mapTitle` (`:172-185`) is the short one, used on chips, the timeline, "Biggest:" (`src/screens/EventScreen.tsx:258`), Home rows (`src/screens/HomeScreen.tsx:195`) and favorite-page rows (`src/screens/FavoritePage.tsx:403`). `listTitle` (`:193-198`) is the full one, used on Explore rows, the event title (`EventScreen.tsx:200`), Stubs, Compare and Following (`src/screens/FavoritesScreen.tsx:149`). There are no character limits; cutting is CSS ellipsis, so the chip loses the round first ("Golden Knights (Conf Final G7)"). Doubleheaders get identical names. Preseason is stored (`:206, 212`) but only the team page shows it. Finals have no year. No opener field exists.
+
+**Change:**
+1. Three lengths:
+   - **Chip** (map chip, timeline labels, "Biggest:", Up against): 16 characters of name plus the designation (up to 8), one line.
+   - **Short** (Explore and sheet rows, date page lineup, Stubs rows, Following, search, chip card): 32 characters, at most 2 lines.
+   - **Full** (event page title, Stub sheet, share text): about 64 characters, wraps, **never cut**.
+2. **The designation (G7, DH1, Preseason, All-Star) is never cut first.** Drop order when a name is too long: year → tour, then openers → away team (then city, chip only) → tag (festival weekend, college tag) → nickname shortened to the shortName ("Golden Knights" → "Vegas") → truncate the name as a last resort.
+3. **Doubleheaders:** "Game 1" / "Game 2" in short and full names ("Game 1 · A's at Angels"); "DH1" / "DH2" on chips ("Angels DH1"). The game index is read but dropped today (`src/data/sources/roundLabel.ts:15-16`).
+4. **Finals get the year:** "Super Bowl 2027 · Chiefs vs. Eagles". The year is dropped on chips ("Super Bowl").
+5. **Preseason is a title prefix:** "Preseason · Raiders at Rams" (chip "Rams Preseason"). Not a tag.
+6. **No openers in short rows.** Openers go in the full name only, once there is an opener field.
+7. **Neutral sites: designated visitor first.** `gameName` (`eventTitle.ts:74-77`) puts the first-named side first ("Lakers vs. Warriors" comes out home-first); the comment at `:66` already says visitor first. Fix the code to match. Also fix `docs/product/product-decisions.md:38`, which still says titles stay "Home vs. Away"; it should say "{Away} at {Home}", with "{Visitor} vs. {Home}" at a neutral site.
+8. **Favorites rows use the short name:** switch `FavoritesScreen.tsx:149` off `listTitle`.
+
+**Parsing bugs to fix with this item** (from the research table, Gaps 5–11):
+- **Bracket text dropped:** `sidesOf` (`eventTitle.ts:47-50`) keeps a bracket after the visitor only as an event name, and `gameName` uses it only at neutral sites, so "(Red River Showdown)", "(SD)" and "(neutral site)" vanish. Keep it (as the event name, ahead of the matchup) on every game.
+- **East LA Classic:** "East LA Classic (Garfield vs. Roosevelt)" becomes "Roosevelt) at East LA Classic (Garfield" because the vs match (`:36`) runs inside brackets. Don't split on a "vs" inside brackets; treat the outer name as the event name: "East LA Classic · Garfield vs. Roosevelt".
+- **Ticketmaster event names glued to a team:** "Copa Las Vegas: USA vs Mexico" becomes "Mexico at Copa Las Vegas: USA". Split off text before a colon as the event name: "Copa Las Vegas · USA vs. Mexico".
+- **Lost neutral flags:** "Florida vs. Georgia (neutral site)" (`src/data/seed/listings2026.ts:106`) has no `neutralSite` flag, so it reads "Georgia at Florida". Set the flag (the `neutralFootball` helper at `:42` should set it for every game it builds). The archived copy of the Red River game also lost its flag and reads "Oklahoma at Texas"; restore it in the archive.
+- **Spring training:** the MLB map feed (`src/data/sources/mlbSource.ts:228-240`, `toEvent` at `:138`) never sets `preseason`; only the team schedule does (`:213`). Set it when `gameType === 'S'` so the "Preseason ·" rule applies. (The spring training wording itself is open, below.)
+- **World Series doubling:** old seeds with round "World Series" and title "World Series Game 1" read "World Series G1 · World Series Game 1". Strip the round text from the title when it repeats the label.
+- **College "FB" always shown:** college football short names already contain "FB", so the chip always shows it, though the docs show the tag only on a clash. Show the squad tag on chips only when two chips clash (it stays on short and full names).
+- **Lucha libre stored as boxing:** `sportOf` (`ticketmasterSource.ts:171-175`) checks "boxing" text before wrestling words. Map lucha libre to wrestling (`sports.combat`, subtype wrestling), per item 11.
+
+**Why:** chips and rows have fixed widths, so names need real limits, and the designation is what tells games apart. "DH1" fits a chip and doesn't clash with series "G1". Years read instantly; chips have no room and show the date anyway. A prefix travels with the name into shares and notifications, where tags don't render. Short rows are for scanning the headliner. Leagues list neutral-site games visitor first, as the spec does. Favorites rows are narrow.
+
+**Rejected:**
+- Two lengths with character limits added (rows need the designation but not the tour).
+- Today's CSS ellipsis, or moving the designation to the front ("G7 · Golden Knights" on chips).
+- "G1/G2" for doubleheaders (clashes with series games).
+- Roman numerals or no year on finals.
+- Preseason as a small tag in `.event-tags`.
+- Openers in short rows ("Phoebe Bridgers + Muna").
+- Home team first at neutral sites (what the code does now).
+- Keeping the full name in Favorites.
+- A 140px / 20-character chip; 40 characters on one line for short names.
+
+**Still open (not covered by the decisions):** spring training wording ("Spring Training ·" vs "Spring"), All-Star, tournament and bowl names, festival weekends and days, pop-up and watch party names, comedy and theatre headliners, round wording ("NLWC" vs "WC G1", "WS" vs "World Series", "Semis" vs "Semifinals"), HockeyTech playoff games with no game number, the "· City" ending at neutral sites, a hand seed and feed copy of the same game counting as a clash, and tour-first titles.
+
+### 14. Commit the naming research docs
+
+**Change:** commit two research docs to `docs/research/topics/` (where `event-naming-at-vs.md` and the other topic research live on main):
+1. Kylie's UX writing review, "Fan/Friction naming review" (Oct 14, 29 issues): copy `docs/build-5/research/naming-review-oct14.html`.
+2. The table it reviewed: copy `docs/build-5/research/event-types-and-naming-table.html` and `event-types-and-naming-table.md`.
+
+Copies of all three are in this PR under `docs/build-5/research/`. Items 11–13 cover the review's decided points.
+
+**Open for Kylie (don't decide these):**
+- Cosm-style screenings: "Watch party" or "Live screening".
+- "Concert" or "Show" on the Add form.
+- Full playoff wording on the event page.
+- Artist before tour in titles.
+- Co-bills and multi-day passes.
