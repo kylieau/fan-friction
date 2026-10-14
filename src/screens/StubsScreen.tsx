@@ -93,6 +93,7 @@ export function StubsScreen() {
     () =>
       entries
         .filter((entry) => !filter || entryTags(entry).includes(filter))
+        // Two picked tags show stubs with either one (Kylie, Oct 14).
         .filter((entry) => picked.length === 0 || picked.some((tag) => entry.userTags?.includes(tag)))
         .filter((entry) =>
           chip === 'all' ? true : chip === 'watched' ? Boolean(entry.watched) : chip === 'attended' ? !entry.watched : chip === 'sports' ? entry.kind === 'game' : entry.kind === 'show' || entry.kind === 'festival',

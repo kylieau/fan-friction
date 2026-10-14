@@ -6,7 +6,7 @@ Status per notes item, file refs, judgment calls and open questions are below; t
 
 ## For Kylie (everything in one place)
 **Steps only you can do**
-1. **Run migration `supabase/migrations/0026_stub_visibility.sql`** in Supabase's SQL editor (run the PREVIEW query at its top first if you want the counts). Until you do, per-stub levels are saved but the database keeps the account-wide rule (an entry set Private is already hidden; a plan set Private and "Anyone" are not enforced). It never widens anyone's exposure.
+1. ~~**Run migration `supabase/migrations/0026_stub_visibility.sql`**~~ **Done (Kylie, Oct 14: ran, successful).** in Supabase's SQL editor (run the PREVIEW query at its top first if you want the counts). Until you do, per-stub levels are saved but the database keeps the account-wide rule (an entry set Private is already hidden; a plan set Private and "Anyone" are not enforced). It never widens anyone's exposure.
 2. 🚩 **SeatGeek:** sign up for the free client id (check the API terms; no cost found), then add `SEATGEEK_CLIENT_ID` to the repo's Actions secrets. Until then the source stays off.
 3. **Paste terms:** the automated-access clause from AXS, DICE and Goldenvoice (each refused a normal fetch or hid the text). Insomniac's terms bar scrapers, so it isn't built.
 4. **Phone checks:** on the installed app, Add to calendar → Apple Calendar on an upcoming event; the level pill on the Stub it sheet and the event page (couldn't be screenshotted signed in here); the build 4 check still open (add a tag, star a city, enter seats, sign out and in).
@@ -23,7 +23,7 @@ Status per notes item, file refs, judgment calls and open questions are below; t
 8. **Crowd size range:** Home's Today rows and favorite pages aren't in the notes' list and aren't filtered. Should they be?
 9. **Add-on filter:** Spurs free throws, Flyers "MUST HAVE TICKET TO GAME", Nets warm-ups, Scotiabank tours and BetMGM dinner reservations still list (as type "Event"). Tighten the filter?
 10. **N1 / B1** ("explain sprawl/hub/transit in plain words → build 5, with names and codes"): the notes give no build instruction or copy for it, and "names and codes" are a later research item, so nothing was built. Is it this build's?
-11. From Codex's PR #57: the Stubs tag-combining rule, and Wrigley's 0.367 vs 0.421 (below).
+11. ~~From Codex's PR #57~~ **Answered (Kylie, Oct 14):** two picked tags show stubs with either one (locked in product-decisions); Wrigley now stores 0.421, the broader car figure. Note: 0.421 is the second-opinion answer's broader reading of the same 2013 plan (42.1% counting remote-parking drivers), not a newer source.
 
 **Notes-vs-board or notes-vs-notes calls I made** (each listed under its item): read tile (board), first-open row tap (board), STL2 (left blank), backfill order for "Only me" (no widening), short budget (advisor reading), Pop-ups section wording (board).
 

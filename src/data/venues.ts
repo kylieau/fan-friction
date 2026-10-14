@@ -3226,7 +3226,7 @@ export const VENUES: Record<string, Venue> = {
   // ---------- Chicago (docs/research/city-builds/chicago/chicago-venue-table-answer.md; city type hub per B2, Oct 13, 2026 rebuild) ----------
   // Not venue rows: Grant, Douglass, Union and Humboldt parks (festival grounds), McCormick Place and the Stephens
   // Convention Center (sized per event-day), Hawthorne (racing ended July 19, 2026) and Arlington Park (closed 2021).
-  // carShare wired only where sourced (B7, Oct 13): Wrigley 36.7% (2013 gameday plan), United Center 86.9% (2023 patron survey).
+  // carShare wired only where sourced (B7, Oct 13): Wrigley 42.1% (2013 gameday plan, counting remote-parking drivers; Kylie, Oct 14), United Center 86.9% (2023 patron survey).
   'soldier-field': {
     id: 'soldier-field',
     metroId: 'chicago',
@@ -3243,8 +3243,10 @@ export const VENUES: Record<string, Venue> = {
   'wrigley-field': {
     id: 'wrigley-field',
     metroId: 'chicago',
-    // Official (2013 Wrigley Gameday Traffic and Parking Management Plan): 36.7% driving; verified distinct from UW Husky Stadium 36.7% (Oct 13, 2026).
-    carShare: 0.367,
+    // 2013 Wrigley Gameday Traffic and Parking Management Plan, the broader car figure (Kylie, Oct 14, 2026): "40.7%, or
+    // 42.1% including remote-parking drivers" (Estimated, historical; docs/research/city-builds/chicago/
+    // chicago-city-type-answer-astra.md, the second opinion reading the same plan). Was 0.367, the driving-only reading.
+    carShare: 0.421,
     names: [{ name: 'Wrigley Field' }],
     location: [-87.6556, 41.9481],
     ticketmasterIds: ['KovZpZAFlktA'],
