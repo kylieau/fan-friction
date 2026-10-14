@@ -310,6 +310,7 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 - **Context:** Only a range is sourced (5,500–8,585). It's blank now.
 - **Why:** Her pick over the lean; see context. (The lean had been: Your C05 decision keeps range-only rooms blank.)
 - **Rejected:** Leave it blank until one bowl figure turns up; Store 5,500 as the usual setup
+- **Confirmed live (Kylie, Oct 14):** Keep 8,585 as the stored full-bowl capacity. Change: add 8,585 (full bowl) to `arena-at-td-place` (`src/data/venues.ts:9112`; it has no capacity today). Context: the Ottawa follow-up answer ([answer](../research/city-builds/ottawa-gatineau/ottawa-gatineau-gaps-followup-answer.md)) calls the full bowl a gap (only the range 5,500–8,585 and "nearly 9,000" are sourced), and an announced Charge crowd of 8,605 (Apr 18, 2026) is above 8,585, so 8,585 isn't a hard maximum. Rejected: leave it blank, as the Ottawa answer suggests.
 
 #### OTT2 · Ticketmaster id at TD Place (401513)
 
@@ -324,6 +325,7 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 - **Context:** OTT was a judgment call.
 - **Why:** Reads as Ottawa. Your codes research prompt (C08) may revisit it.
 - **Rejected:** YOW (airport); OTG
+- **Confirmed live (Kylie, Oct 14):** Keep OTT for Ottawa–Gatineau and EDM for Edmonton. No change: `src/config/metros.ts:403` (`code: 'OTT'`) and `:394` (`code: 'EDM'`) already match. The follow-up answers recommend the airport codes YOW ([Ottawa answer](../research/city-builds/ottawa-gatineau/ottawa-gatineau-gaps-followup-answer.md)) and YEG ([Edmonton answer](../research/city-builds/edmonton/edmonton-gaps-followup-answer.md)). Rejected: YOW and YEG.
 
 #### OTT4 · Canadian Tire Centre hockey
 
@@ -582,10 +584,11 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 
 #### PDX2 · McMenamins Edgefield
 
-- **Decision:** Leave it blank
-- **Context:** 7,000 vs ~5,000. It's blank now.
-- **Why:** Nothing is guessed. The room just shows no capacity. The sources disagree and none is official.
-- **Rejected:** Store 7,000
+- **Decision (Kylie, Oct 14, live; replaces "leave it blank"):** Store 7,000, labeled reported
+- **Change:** add 7,000 (lawn concerts, reported, Travel Portland) to `mcmenamins-edgefield` (`src/data/venues.ts:10597`; blank today).
+- **Context:** The Portland follow-up answer ([answer](../research/city-builds/portland/portland-gaps-followup-answer.md)) finds one capacity figure, 7,000 (Travel Portland). The ~5,000 figure is a crowd size, not a capacity, so the sources don't actually conflict.
+- **Why:** One sourced capacity figure, not a guess.
+- **Rejected:** Keep blank
 
 #### PDX3 · Cascades Amphitheater
 
@@ -707,10 +710,11 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 
 #### RDU2 · Dorton Arena concert setup
 
-- **Decision:** Leave concert blank; keep 5,000 seats
-- **Context:** 7,000 / 6,500 / 7,610 / 9,150. Kept the official 5,000 permanent seats.
-- **Why:** The stage setup has two official figures from the same agency, and they disagree: 7,000 (NCDA booking page) vs 6,500 (NCDA history page). The other two (7,610, 9,150) don't name a setup ([Raleigh–Durham follow-up answer](../research/city-builds/raleigh-durham/raleigh-durham-gaps-followup-answer.md)). With no single official figure, concert stays blank.
-- **Rejected:** Store 7,000 for concerts
+- **Decision (Kylie, Oct 14, live; replaces "leave concert blank"):** Store 7,000 for the concert (stage) setup, labeled official; keep 5,000 permanent seats
+- **Change:** in `dorton-arena` (`src/data/venues.ts:11515`), replace the "Concert setup left blank" comment with a 7,000 concert row sourced to the NCDA booking page.
+- **Context:** The stage setup has two official figures from the same agency: 7,000 (NCDA booking page, the agency's current booking source) and 6,500 (NCDA history page, undated). The other two (7,610, 9,150) don't name a setup ([Raleigh–Durham follow-up answer](../research/city-builds/raleigh-durham/raleigh-durham-gaps-followup-answer.md)).
+- **Why:** The current booking page is the agency's primary source for setups.
+- **Rejected:** Keep blank; Store 6,500 (history page figure)
 
 #### RDU3 · Lenovo Center after 2026 renovation
 
@@ -823,9 +827,9 @@ Changes the answers make to city data (capacities, codes, names, ids). File hint
 - [ ] **N9** Ryan Field 58% concert car share: wire it?: Wire 58% when concerts are listed, marked estimated. File: not found in repo yet (new round-2 city data) — Today on main: Ryan Field (`venues.ts:3266`) has a 35,000 football capacity and no concert car share. Not done.
 - [ ] **N10** Chicago (Composer, PR #54): Impact Field capacity: Keep 6,300 (reported). File: `src/data/venues.ts` — Today on main: Impact Field (`venues.ts:3398`) has no capacity (blanked). Change: add 6,300 concert, reported.
 - [ ] **X2** Old numeric Ticketmaster ids: switch to the new kind?: Swap them all for the new ids in the catch-up lookup pass. File: not found in repo yet (new round-2 city data)
-- [ ] **OTT1** TD Place Arena capacity: Store 8,585 as the full bowl. File: `src/data/venues.ts` — Today on main: TD Place Arena (`venues.ts:9111`) has no capacity. Change: add 8,585.
+- [ ] **OTT1** TD Place Arena capacity: Store 8,585 as the full bowl (confirmed live Oct 14). File: `src/data/venues.ts` — Today on main: TD Place Arena (`venues.ts:9111`) has no capacity. Change: add 8,585.
 - [ ] **OTT2** Ticketmaster id at TD Place (401513): Swap it for the new id in the catch-up pass. File: not found in repo yet (new round-2 city data)
-- [x] **OTT3** City code: OTT. File: `src/config/metros.ts` **Done on main** (`metros.ts:403`, code OTT).
+- [x] **OTT3** City code: OTT (confirmed live Oct 14; Edmonton keeps EDM, `metros.ts:394`; YOW/YEG rejected). File: `src/config/metros.ts` **Done on main** (`metros.ts:403`, code OTT).
 - [ ] **IND4** Lawn totals (Everwise, Ruoff, Victory Field): One rule for all: total including lawn. File: not found in repo yet (new round-2 city data)
 - [x] **IND5** City type: Sprawl. File: `src/data/venues.ts` **Done on main**, but the file is `src/data/formula/gridlock.ts:116` (`CITY_TYPE`), not venues.ts.
 - [ ] **EDM3** Convention Centre (5,254 movable chairs): Mute the room. File: `src/data/venues.ts` — Today on main: Edmonton Convention Centre (`venues.ts:9808`) is not muted. Not done.
@@ -836,8 +840,10 @@ Changes the answers make to city data (capacities, codes, names, ids). File hint
 - [ ] **DC5** City type: Hub. File: `src/data/venues.ts` File: `src/data/formula/gridlock.ts:116` (not venues.ts). **Firm change (Kylie, Oct 14):** main has `'washington-dc': 'transit'`; change it to `'hub'`. Don't check back; this overrides the earlier transit call.
 - [ ] **CLE1** Jacobs Pavilion: One rule for every standing-floor room: seated by default (4,100 here). File: `src/data/venues.ts` **Adjusted:** Jacobs Pavilion (`venues.ts:10082`) already has 4,100 concert, plus a second 5,000 concert row. Change: drop or demote the 5,000 row so 4,100 seated is the default.
 - [x] **CLE4** Public Hall: Match by tenant: Charge games at 5,100. File: `src/data/venues.ts` **Done on main** (Public Hall has 5,100 basketball, `venues.ts:10032`).
+- [ ] **PDX2** McMenamins Edgefield: Store 7,000 reported (Kylie, Oct 14, live). File: `src/data/venues.ts` — Today on main: `mcmenamins-edgefield` (`venues.ts:10597`) is blank. Change: add 7,000.
 - [ ] **PDX3** Cascades Amphitheater: Store 7,810 seated. File: `src/data/venues.ts` — Today on main: Cascades Amphitheater (`venues.ts:10568`) has no capacity. Not done.
 - [x] **RDU4** City code: RDU. File: `src/config/metros.ts` **Done on main** (`metros.ts:345`, code RDU).
+- [ ] **RDU2** Dorton Arena concert: Store 7,000 official (NCDA booking page; Kylie, Oct 14, live). File: `src/data/venues.ts` — Today on main: `dorton-arena` (`venues.ts:11515`) has 5,000 seats and the concert setup blank. Change: add 7,000 concert.
 - [ ] **RDU5** Hurricanes/Duke postseason rows: Add them in the next full recalibration. File: not found in repo yet (new round-2 city data)
 - [ ] **STL2** Hollywood Casino Amphitheatre: Store 6,805 seated, if the operator confirms. File: `src/data/venues.ts` — Today on main: `hollywood-casino-amphitheatre-stl` (`venues.ts:9290`) has no capacity. Not done (and not to be confused with the Chicago-area venue at `:3286`).
 - [ ] **DEN1** Empower Field football: Store 76,125. File: `src/data/venues.ts` — Today on main: Empower Field (`venues.ts:11666`) only has 85,000 concert. Change: add 76,125 football.
