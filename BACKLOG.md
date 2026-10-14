@@ -478,5 +478,5 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/product/expected-draw-decisions
 - Sheet drag (`src/lib/useSheetDrag.ts`) uses touch events on the sheet; mouse dragging isn't supported (a click on the grabber toggles). Smoothness on a real phone is untested; Kylie asked for it twice.
 - The main JavaScript file is about 1.3 MB, mostly the map library. Split the map out so other tabs load faster.
 - An offline-ready service worker for the installed app.
-- **Screenshot checks:** `playwright-core` driving `/usr/bin/chromium` with `--use-angle=swiftshader --enable-unsafe-swiftshader` works in this container. Keep the helper script in the session scratchpad, not the repo.
+- **Screenshot checks:** `playwright-core` driving `/usr/bin/chromium` with `--use-angle=swiftshader --enable-unsafe-swiftshader` works in this container. Keep the helper script in the session scratchpad, not the repo. Never `npm i --no-save` a one-off package (it removed `playwright-core` once); `npm pack` it into the scratchpad instead.
 - Confirm the Vercel plugin's account connection works (Kylie ran `/mcp`, but it hasn't been used yet).
