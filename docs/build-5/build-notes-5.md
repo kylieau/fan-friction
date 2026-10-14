@@ -877,7 +877,7 @@ Board: `/workspace/ff-gap-review/mosaic/b5/v2/` (on the box).
 
 ### 3. Crowds with no size (updated Oct 14)
 
-**Build instruction:** Unknown sizes are already blank on most rows and chips, because `crowdThousands` is only drawn when a size exists (e.g. `src/components/ChipCard.tsx:53`, `src/components/DayTimeline.tsx:54`). Change the one place that shows a dash, `src/components/WhyCard.tsx:86` (`'—'` when the size is 0), to show nothing. Add "— Size unknown" to the event page's crowd area, which doesn't exist yet. Keep unknown-size events muted on the map: `isMuted` (`src/map/crowdPoints.ts:33`) already mutes them, because `sizeTier` returns `unknown` (`src/data/read.ts:117`); don't change that. Never show the word "unsized" in UI copy.
+**Build instruction:** Unknown sizes are already blank on most rows and chips, because `crowdThousands` is only drawn when a size exists (e.g. `src/components/ChipCard.tsx:53`, `src/components/DayTimeline.tsx:54`). Change the one place that shows a dash, `src/components/WhyCard.tsx:86` (`'—'` when the size is 0), to show nothing. Add "— Size unknown" to the event page's crowd area, which doesn't exist yet. Keep unknown-size events muted on the map: `isMuted` (`src/map/crowdPoints.ts:33`) already mutes them, because `sizeTier` returns `unknown` (`src/data/read.ts:116`); don't change that. Never show the word "unsized" in UI copy.
 
 - **Event page:** "— Size unknown".
 - **Rows, chips and the selected card:** nothing (blank). This replaces the Oct 13 bare "—" rule; ignore the dashes on the v3 boards.
