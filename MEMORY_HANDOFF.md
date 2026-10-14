@@ -4,6 +4,12 @@ Overwritten each session. Deferred work and history live in `BACKLOG.md`: **open
 
 _Last synced: Oct 14, 2026, Claude Code (Sonnet, Opus advisor), at `main`'s head (`608d9c3`, everything pushed). The Codex connections section below is Codex's Oct 13 note and is unchanged. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
 
+## Build 5 (Oct 14, 2026, Claude Code): read `docs/build-5/handoff-5.md` first
+- Build 5 is built and pushed to `main`; `docs/build-5/handoff-5.md` is its snapshot (status by notes item, judgment calls, advisor log) and opens with everything for Kylie in one list. This file's sections below are the build 4 state and are older.
+- **Blocking manual steps:** run migration `supabase/migrations/0026_stub_visibility.sql` (stub privacy; preview query at its top); 🚩 sign up for SeatGeek's free client id and add `SEATGEEK_CLIENT_ID` to the Actions secrets.
+- Codex's PR #57 (the build 4 check fixes) was reviewed and merged first, so the "Sol's check-only pass" line below is done.
+- New check scripts: `crowd-range-check.mjs`, `event-types-check.mjs`, `titles-check.mjs` (run them with `city-build-check.mjs` and `npm run build`).
+
 ## Docs were reorganized (Oct 11, 2026): old `docs/` paths no longer exist
 Every doc lives in a sub-folder: `docs/product/`, `docs/reference/`, `docs/checks/`, `docs/research/` (`city-builds/<city>/`, `topics/`, `events-and-dates/`, `second-opinions/`), `docs/reviews/`, `docs/design/`, `docs/archive/`, and `docs/build-4/` (map: `docs/README.md`).
 
