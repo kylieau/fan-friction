@@ -1252,7 +1252,7 @@ Sources: the review `docs/build-5/research/naming-review-oct14.html` (29 issues;
 - Rejected: "Volleyball match" / "Esports tournament" / "Sport not specified"; keeping "other".
 
 **N14 · Capitalize raw sport keys (review #02; lean).**
-- Today: `sportLabel` capitalizes five sports and returns the raw key for the rest (`personalLog.ts:207`), so "boxing", "rodeo", "motorsports" show lowercase. Lucha libre lands as boxing (`ticketmasterSource.ts:173`).
+- Today: `sportLabel` capitalizes five sports and returns the raw key for the rest (`personalLog.ts:207`), so "boxing", "rodeo", "motorsports" show lowercase. Lucha libre lands as boxing; the cause is unconfirmed, since wrestling is checked before boxing (`ticketmasterSource.ts:173`), so confirm the feed genre text first.
 - Change: one label list for every type (Boxing, Motorsports, Rodeo, Lacrosse, Tennis, Cricket, Wrestling…), used by feeds and the Add form alike. Move the CMLL lucha libre event to Wrestling (item 13 parsing bug).
 - Why: small, consistent fix.
 - Rejected: a format word ("Boxing event", "Tennis match"); keeping as is.
