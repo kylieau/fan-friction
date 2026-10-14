@@ -1,0 +1,10 @@
+exec(open('compose.py').read().split('\n\nS=')[0].replace("V='/workspace/ff-gap-review/mosaic/privacy/src/'","V='/workspace/ff-gap-review/mosaic/privacy/r2/'"))
+S="Rendered inside the running app (main 635a164, localhost:3101) with live classes; mock-only pieces (pill, menu, gold notes) are additive CSS, no live component restyled. EXAMPLE data. Kylie decides."
+board('privacy-r2.png','Stub privacy r2: Anyone / Friends / Private, Venmo-style. New users start Private.',S,[
+ ('1 · Settings › Privacy (default Private)','r2-1-settings-privacy',1),('2 · Change past stubs (any direction)','r2-2-bulk-sheet',1),('3 · Stub it: pill = your default','r2-3a-sheet-default',1),('3 · pill menu: globe/people/lock','r2-3b-sheet-menu',1),('3 · overridden to Friends','r2-3c-sheet-override',1),('4 · Upcoming: Anyone override','r2-4a-event-upcoming',1),('4 · Past: Private (default)','r2-4b-event-past',1),('5 · Profile: "People I approve" → "Friends"','r2-5-profile-friends',1)],[
+ ("Kylie, Oct 14: three levels like Venmo (Anyone / Friends / Private). New users start Private. Default set in Settings › Privacy, overridable per stub. Applies to Attending, Watching and Interested.",0),
+ ("1/2 · Radio list with one-line descriptions; 'Change past stubs…' bulk-sets all past stubs to any of the three (both directions, unlike Venmo's more-private-only rule).",0),
+ ("3 · 'Who sees this [[lock] Private ⌄]' preselected from the default, labelled 'Your default'; picking another level shows gold 'Not your default'.",0),
+ ("4 · Event status line: 'Watching · [globe] Anyone ⌄' (override, gold note) and 'Attended · [lock] Private ⌄' (default); tappable to change later.",0),
+ ("5 · Profile visibility option 'People I approve' renamed 'Friends' (it lives in Settings › Profile form; the live You tab capture has no such row).",0),
+ ("Rejected (updated): 'a Public option' removed from rejected, now in as 'Anyone'. The word 'Public' rejected in favor of 'Anyone' to match Venmo. Still rejected: two big Private/Friends buttons; audience only inside the sheet.",1)])
