@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { Link, useNavigate, useNavigationType } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useNavigationType } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import {
@@ -14,7 +14,7 @@ import {
   type CrowdEvent,
   type FeedItem,
 } from '../data';
-import { addDays } from '../lib/dates';
+import { addDays, daysBetween } from '../lib/dates';
 import { mondayOf, weekOf } from '../data/cityList';
 import { activityGroups, activityLine, yourActivity } from '../lib/activity';
 import { getPref } from '../lib/prefs';
@@ -27,6 +27,24 @@ import { ReadTile } from '../components/ReadTile';
 import { WeekCalendar, type CalendarRead } from '../components/WeekCalendar';
 
 const LIST_MEMORY_KEY = 'fan-friction:list-return';
+/** Set when a row or a day band is tapped, so Back from there restores the place; read once on the next open. */
+const LIST_ARMED_KEY = 'fan-friction:list-armed';
+
+function peekArmed(): boolean {
+  try {
+    return sessionStorage.getItem(LIST_ARMED_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function disarm() {
+  try {
+    sessionStorage.removeItem(LIST_ARMED_KEY);
+  } catch {
+    /* storage blocked */
+  }
+}
 /** Weeks loaded ahead of the first one, and per scroll step. */
 const FIRST_AHEAD = 4;
 const STEP = 2;
@@ -60,6 +78,15 @@ function dayLabel(date: string, today: string): string {
   return lead ? `${lead} · ${base}` : base;
 }
 
+/** "This week", "Next week", "Last week", or the dates ("Oct 26–Nov 1") for any other (Kylie, Oct 13). */
+function weekWord(monday: string, thisMonday: string): string {
+  const weeks = Math.round(daysBetween(thisMonday, monday) / 7);
+  if (weeks === 0) return 'This week';
+  if (weeks === 1) return 'Next week';
+  if (weeks === -1) return 'Last week';
+  return weekSpan(monday);
+}
+
 /** "OCT 12–18", or "OCT 26–NOV 1" across months. */
 function weekSpan(monday: string): string {
   const sunday = addDays(monday, 6);
@@ -85,9 +112,15 @@ export function ExploreListScreen() {
   const scroller = useRef<HTMLDivElement>(null);
   // Back from an event restores where you were; any other way in opens on today (Kylie: the List opens on today).
   const navType = useNavigationType();
-  const memory = useRef(navType === 'POP' ? readMemory(href) : null);
+  // Only Back from an event restores the place; every other way in (a reload, the tab bar, the switch) opens on today.
+  const [initialMemory] = useState(() => (peekArmed() && navType === 'POP' ? readMemory(href) : null));
+  const memory = useRef(initialMemory);
+  const location = useLocation();
+  const fromSwitch = Boolean((location.state as { fromSwitch?: boolean } | null)?.fromSwitch);
   useEffect(() => {
     clearOpenedFromMap();
+    // Read once per open: the place is restored only for the Back that follows a tap on a row or a day band.
+    disarm();
   }, []);
 
   const [areaOpen, setAreaOpen] = useState(false);
@@ -125,7 +158,15 @@ export function ExploreListScreen() {
   } | null>({ date: memory.current?.topDate ?? target, smooth: false });
   const placed = useRef(false);
   const firstLoadedRef = useRef<string | undefined>(undefined);
-  const beforeAdd = useRef<{ height: number; top: number } | null>(null);
+  /** The day at the top and how far below the top edge it sits: after weeks are added, that day goes back there. */
+  const beforeAdd = useRef<{ day: string; offset: number } | null>(null);
+  const anchorNow = (el: HTMLElement) => {
+    const nodes = el.querySelectorAll<HTMLElement>('[data-day]');
+    for (const node of nodes) {
+      if (node.offsetTop + node.offsetHeight > el.scrollTop + 1) return { day: node.dataset.day ?? '', offset: node.offsetTop - el.scrollTop };
+    }
+    return null;
+  };
 
   const shownMetro = useRef(metro.id);
   useEffect(() => {
@@ -169,7 +210,7 @@ export function ExploreListScreen() {
         // Earlier weeks arriving above what is on screen must not move it: keep the place by the height they add.
         const el = scroller.current;
         const first = firstLoadedRef.current;
-        if (el && placed.current && first && rows.some(([m]) => m < first)) beforeAdd.current = { height: el.scrollHeight, top: el.scrollTop };
+        if (el && placed.current && first && rows.some(([m]) => m < first)) beforeAdd.current = anchorNow(el);
         setWeeks((prev) => {
           const next = new Map(prev);
           for (const [m, days] of rows) next.set(m, days);
@@ -186,7 +227,14 @@ export function ExploreListScreen() {
   // A target outside the range (a famous date, say) cannot be shown here: the Map shows any day.
   useEffect(() => {
     if (range && (target < range.from || target > range.through)) {
-      navigate(mapPath({ metroId: metro.id, date: target, today, view: 'map' }), { replace: true });
+      if (fromSwitch) {
+        // From the Map's own switch: the List cannot show that day, so it opens on today instead of bouncing back.
+        const next = new URLSearchParams(window.location.search);
+        next.delete('date');
+        navigate(`/explore?${next.toString()}`, { replace: true });
+      } else {
+        navigate(mapPath({ metroId: metro.id, date: target, today, view: 'map' }), { replace: true });
+      }
     }
   }, [range, target, today, metro.id, navigate]);
 
@@ -225,7 +273,8 @@ export function ExploreListScreen() {
     const el = scroller.current;
     const saved = beforeAdd.current;
     if (el && saved) {
-      el.scrollTop = saved.top + (el.scrollHeight - saved.height);
+      const node = el.querySelector<HTMLElement>(`[data-day="${saved.day}"]`);
+      if (node) el.scrollTop = node.offsetTop - saved.offset;
       beforeAdd.current = null;
     }
   }, [firstLoaded]);
@@ -233,7 +282,7 @@ export function ExploreListScreen() {
   const loadEarlier = useCallback(() => {
     if (!firstLoaded || !rangeFirstMonday || firstLoaded <= rangeFirstMonday) return;
     const el = scroller.current;
-    if (el) beforeAdd.current = { height: el.scrollHeight, top: el.scrollTop };
+    if (el) beforeAdd.current = anchorNow(el);
     const list: string[] = [];
     for (let i = 1; i <= STEP; i++) {
       const m = addDays(firstLoaded, -7 * i);
@@ -346,34 +395,51 @@ export function ExploreListScreen() {
     [],
   );
 
-  // The calendar follows the week at the top; every row it shows must have its week loaded.
-  const calendarMonday = mondayOf(topDate);
+  // The calendar loads its own weeks as its rows come into view, separate from the list's, so browsing ahead
+  // never adds weeks (or gaps) to the list. Anything the list already loaded is used first.
+  const [calWeeks, setCalWeeks] = useState<Map<string, CityDate[]>>(new Map());
+  const calLoading = useRef(new Set<string>());
   useEffect(() => {
-    if (!rangeLastMonday) return;
-    const need: string[] = [];
-    for (let i = 0; i < 3; i++) {
-      const m = addDays(calendarMonday, 7 * i);
-      if (m <= rangeLastMonday && (!rangeFirstMonday || m >= rangeFirstMonday) && !weeks.has(m)) need.push(m);
-    }
-    if (need.length > 0) void loadWeeks(need);
-  }, [calendarMonday, rangeFirstMonday, rangeLastMonday, weeks, loadWeeks]);
-
+    calLoading.current = new Set();
+    setCalWeeks(new Map());
+  }, [metro.id]);
+  const needWeeks = useCallback(
+    (list: string[]) => {
+      const forMetro = metro.id;
+      const need = list.filter((m) => !calLoading.current.has(m) && !weeks.has(m));
+      need.forEach((m) => calLoading.current.add(m));
+      if (need.length === 0) return;
+      void Promise.all(need.map((m) => getListWeek(forMetro, m).then((days) => [m, days] as const))).then((rows) => {
+        if (metroRef.current !== forMetro) return;
+        setCalWeeks((prev) => {
+          const next = new Map(prev);
+          for (const [m, days] of rows) next.set(m, days);
+          return next;
+        });
+      });
+    },
+    [metro.id, weeks],
+  );
   const reads = useMemo(() => {
     const out = new Map<string, CalendarRead>();
-    for (const monday of mondays) {
-      for (const day of weeks.get(monday) ?? []) {
-        out.set(day.date, {
-          rating: day.rating?.rating ?? null,
-          hasEvents: day.events.some(showsOnMap),
-        });
+    for (const source of [calWeeks, weeks]) {
+      for (const days of source.values()) {
+        for (const day of days) out.set(day.date, { rating: day.rating?.rating ?? null, hasEvents: day.events.some(showsOnMap) });
       }
     }
     return out;
-  }, [weeks, mondays]);
+  }, [weeks, calWeeks]);
+  const allMondays = useMemo(() => {
+    if (!rangeFirstMonday || !rangeLastMonday) return [] as string[];
+    const out: string[] = [];
+    for (let m = rangeFirstMonday; m <= rangeLastMonday; m = addDays(m, 7)) out.push(m);
+    return out;
+  }, [rangeFirstMonday, rangeLastMonday]);
 
   const pickDay = (date: string) => setPending({ date, smooth: true });
 
-  // The band under the calendar: the week at the top and how many rows it has.
+  // The band under the calendar: the week at the top of the list and how many rows it has.
+  const calendarMonday = mondayOf(topDate);
   const weekCount = useMemo(() => {
     if (!range) return 0;
     return weekOf(calendarMonday).reduce((sum, date) => {
@@ -409,12 +475,10 @@ export function ExploreListScreen() {
         <ExploreHeader metro={metro} areaOpen={areaOpen} onAreaOpenChange={setAreaOpen}>
           <ExploreModeSwitch view="list" />
         </ExploreHeader>
-        {range && <WeekCalendar monday={calendarMonday} reads={reads} today={today} range={range} onPick={pickDay} />}
+        {range && allMondays.length > 0 && <WeekCalendar mondays={allMondays} reads={reads} today={today} range={range} topDate={topDate} onPick={pickDay} onNeed={needWeeks} />}
         {range && (
           <div className="explore-list-band">
-            {calendarMonday === thisMonday ? 'This week' : ''}
-            {calendarMonday === thisMonday ? ' · ' : ''}
-            {weekSpan(calendarMonday)} · {weekCount} {weekCount === 1 ? 'event' : 'events'}
+            {weekWord(calendarMonday, thisMonday)} · {weekCount} {weekCount === 1 ? 'event' : 'events'}
           </div>
         )}
       </div>
@@ -424,14 +488,28 @@ export function ExploreListScreen() {
             {pill === 'down' ? '↓' : '↑'} Today
           </button>
         )}
-        <div className="explore-list-scroll" ref={scroller} onScroll={onScroll}>
+        <div
+          className="explore-list-scroll"
+          ref={scroller}
+          onScroll={onScroll}
+          onClick={(ev) => {
+            // A tap on a row or a day band leaves the List: arm the place for Back.
+            if ((ev.target as HTMLElement).closest('a')) {
+              try {
+                sessionStorage.setItem(LIST_ARMED_KEY, '1');
+              } catch {
+                /* storage blocked */
+              }
+            }
+          }}
+        >
           {range && days.length === 0 && weeks.size > 0 && <p className="you-fine explore-list-empty">Nothing listed yet.</p>}
           {firstIsPast && <div className="explore-list-earlier">Earlier</div>}
           {days.map(({ date, day, events }) => (
             <section key={date} className="explore-list-day" data-day={date} aria-label={dayLabel(date, today)}>
               <Link to={datePath(date, metro.id)} className="explore-list-dayhead">
                 <span className="explore-list-daylabel">{dayLabel(date, today)}</span>
-                <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
+                <ReadTile size="inline" rating={day.rating?.rating ?? null} empty={day.empty} />
               </Link>
               <ul className="day-list" aria-label={dayLabel(date, today)}>
                 {[...events]

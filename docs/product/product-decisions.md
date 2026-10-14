@@ -201,8 +201,26 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Seats caps:** a generous sanity limit (40 / 20 / 20), not a fit to a form; "Sec" is added only when the section is a bare number.
 - **Interested carries no tags (T02):** going through Interested drops them (Attending → Interested → Attending loses them).
 
-### Seats: one row of three (Kylie, Oct 13: "it has to be incredibly simple")
-- **One row, three optional boxes: Section, Row, Seat**, free text as typed (caps 80 / 24 / 40), placeholders "112 or Lawn", "8", "4". Section takes whatever names the place: "112", "Lawn", "Floor", "GA", "Suite 42". "Sec" is added only for a bare number ("Sec 112 · Row 8 · Seat 4"; "Lawn" alone). No toggle, no Area field, no chips, no extra line; no Done of its own (saves as you leave a box).
-- **Why:** the research answered "does it fit every venue", not "will people fill it in". Free text in Section is what stops it being restrictive; more fields would have made it a form nobody uses. Rejected: the six-field editor shipped earlier on Oct 13 (No assigned seat, Area with chips, Section or block, Row, Seat, Anything else).
-- **Migration on read:** a seat saved by the six-field editor folds into Section (GA, Area, section and details joined with " · "); no SQL.
-- **Privacy:** seats sit in the stub's data, readable by approved followers' apps though nothing shows them (accepted, Oct 13). The research file (`docs/research/topics/seat-fields-answer-claude.md`) stays as background.
+### Seats: a "Where" dropdown, then three boxes (Kylie, Oct 13: "incredibly simple", then "GA should have its own dropdown"; mock approved, "Yes")
+- **One "Where" dropdown first: Seat, GA, Floor, Pit, Lawn, Standing room.** A place with no seat is one tap and done; the stub reads "GA" or "Lawn". **Seat** shows three optional free-text boxes: Section, Row, Seat (placeholders "112 or Suite 42", "8", "4"; caps 80 / 24 / 40). A reserved lawn with a section, a GA ticket with rows, or "Suite 42" go in Seat, so free text still catches every case the research found. No Done of its own (saves as you change or leave a field).
+- **Display:** "GA", "Standing room", or "Sec 112 · Row 8 · Seat 4" ("Sec" only for a bare number or number and letter; "Suite 42", "Q1" read as typed).
+- **Switching to a place with no seat clears Section, Row and Seat,** so nothing hidden is stored and the export matches the screen. Watched still clears seats.
+- **Old saves fold in on read, no SQL:** a Section that is exactly GA, Floor, Pit, Lawn or Standing room (any case), with no row or seat, becomes that place; the six-field editor's toggle, Area and details join into Section.
+- **Rejected:** three boxes only (nobody types "GA" into a box called Section), the six-field editor, and chips (six did not fit a phone row). Suite is not on the list: suites have numbers and fit Seat.
+- **Privacy:** seats sit in the stub's data, readable by approved followers' apps though nothing shows them (accepted, Oct 13). The research file stays as background.
+
+### Explore density and calendar (Kylie, Oct 13, from mocks; her changes to V03 and V05)
+- **Smaller controls everywhere, so every tab matches** (her answer to scope: "shrink everywhere"): titles 22 pt (was 24, V03), round buttons 36, the Map | List switch 32, main buttons and the sheet's answer buttons 40, filter chips 30, Today and day steps 30 to 34, segmented 34. Each keeps a 44 pt tap area through an invisible extension (vertical only, so neighbors never overlap). No text under 11 pt; badges 18 px tall with 11 pt text.
+- **Venue and badges share one line** on every event list (the Map sheet's rows share the List's row, so they changed too); a title is no longer squeezed to three lines.
+- **A one-line read for the List's day bands** ("6.3 BRUTAL", number and word side by side, same border and color ramp). The square box stays where the read is the headline (Map header, date page, event page, Stubs rows).
+- **Week line:** centered, "This week · 35 events", "Next week", "Last week", and dates ("Oct 26–Nov 1") for any other. It stays above the list (it does not scroll away) and follows the week at the top of the list.
+- **Calendar:** its own scroller of week rows (up and down, snapping), three rows and half of the next so it reads as scrollable; same card height as before; month label centered and following the calendar's own rows; **squares replace circles** (her change to V05); a small bar marks the day at the top of the list; a tap on a day moves the list; scrolling the list brings the calendar to its week unless a finger was just on the calendar (a tap does not count as holding).
+- **Builder's calls:** squares carry no border so they do not read as read boxes; the calendar loads reads for weeks as they scroll into view, separately from the list's.
+
+### Badges flush right on every event list (Kylie, Oct 14: "right-justified ... across the board")
+- **One rule, one shared row body (`RowBody`):** the time at the left; line 1 the title and, at the row's right edge, the crowd; line 2 the venue and, at the same right edge, the badges. The badges' right edge equals the crowd figure's right edge, measured (0 px gap on every row with badges on the Explore List, the Map sheet, "Fighting today", Home and the date page).
+- **Date page rows** follow it: time, then title and crowd, then venue and badges, then weather at the left and "+ Stub it" at the right.
+- **"Fighting today":** the time moves to the left column (a day tag rides with the venue) so the right of line 2 is free for the badges.
+- **Titles take at most two lines;** a long venue gives way to the badges.
+- **The time sits on the title's line,** top-aligned, on every list (measured within 0.5 px on the List, the Map sheet, "Fighting today", Home and the date page); "Fighting today" and Home had centered it on the whole row.
+- **Left on purpose (a different right edge):** the event page header and the tapped-chip card (the pill starts "Swamped by Kings"), Stubs rows and Faves rows (the right edge is the read box or the Save button).

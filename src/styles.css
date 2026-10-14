@@ -989,7 +989,8 @@ button {
 /* Wider than the map chip, same card: white, 8px corners, 35% ink stroke, same shadow. */
 .sheet .event-row,
 .selected-row .event-row {
-  align-items: center;
+  /* The time sits on the title's line, not centered on the whole row (Kylie, Oct 14). */
+  align-items: flex-start;
   gap: 8px;
   padding: 6px 8px;
   background: #fff;
@@ -4338,7 +4339,7 @@ button.back-link {
 .tl-row-link {
   text-decoration: none;
   color: inherit;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .explore-top {
@@ -7483,4 +7484,540 @@ button.back-link {
 .seat-field-area,
 .seat-field-details {
   width: 100%;
+}
+
+/* The seats "Where" dropdown: a native select, one tap on a phone. */
+.seat-where {
+  min-height: 44px;
+  font-size: 16px;
+}
+
+/* ===== Density pass (Kylie, Oct 13, 2026): "maximize information on the screen" =====
+   Everything shrinks the same way on every tab. Each small control keeps a 44 pt tap area through an
+   invisible ::after, and no text goes under 11 pt. Later rules win over the sizes above. */
+.page-title,
+.area-switcher.is-title .area-chip {
+  font-size: 22px;
+}
+
+.explore-title-row,
+.you-header {
+  min-height: 44px;
+}
+
+.area-switcher.is-title,
+.area-switcher.is-title .area-chip {
+  min-height: 44px;
+}
+
+.explore-list-top {
+  gap: 6px;
+  padding-top: calc(4px + env(safe-area-inset-top, 0px));
+  padding-bottom: 4px;
+}
+
+.round-button {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+
+.round-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.explore-mode-switch {
+  padding: 2px;
+  border-radius: 18px;
+}
+
+.explore-mode-switch button {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.explore-mode-switch button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.round-button::after,
+.explore-mode-switch button::after,
+.day-nav-step::after,
+.day-nav-today::after,
+.filter-chip::after,
+.stub-tags-add::after,
+.today-pill::after,
+.segmented button::after {
+  content: '';
+  position: absolute;
+  inset: -7px 0;
+}
+
+/* The Friends-activity chip draws its slash on ::after, so its tap area uses ::before. */
+.activity-chip::before {
+  content: '';
+  position: absolute;
+  inset: -7px 0;
+}
+
+.gold-button,
+.stub-choice,
+.gold-button.small,
+.stub-it-small {
+  position: relative;
+}
+
+.gold-button::after,
+.stub-choice::after {
+  content: '';
+  position: absolute;
+  inset: -2px 0;
+}
+
+/* The chip rows scroll sideways, which also clips up and down: room above and below keeps the extended taps whole. */
+.filter-row {
+  padding-block: 7px;
+  margin-block: -7px;
+}
+
+.day-nav-step,
+.day-nav-today,
+.filter-chip,
+.stub-tags-add,
+.activity-chip,
+.segmented button {
+  position: relative;
+}
+
+.gold-button {
+  height: 40px;
+  border-radius: 12px;
+}
+
+.gold-button.small,
+.stub-it-small {
+  height: 34px;
+}
+
+.stub-choice {
+  min-height: 40px;
+  border-radius: 12px;
+}
+
+.stub-tags-add {
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.segmented {
+  height: 34px;
+}
+
+.filter-chip {
+  height: 30px;
+  padding: 0 12px;
+}
+
+.stub-fab {
+  height: 40px;
+  bottom: 12px;
+}
+
+.day-nav-step {
+  width: 30px;
+  height: 30px;
+}
+
+.day-nav-today {
+  height: 30px;
+  padding: 0 12px;
+}
+
+.map-header {
+  padding-top: calc(4px + env(safe-area-inset-top, 0px));
+  padding-bottom: 8px;
+  gap: 2px;
+}
+
+.activity-chip {
+  height: 30px;
+  width: 40px;
+}
+
+.sheet-bar {
+  min-height: 30px;
+}
+
+.today-pill {
+  height: 34px;
+  padding: 0 14px;
+  font-size: 13px;
+}
+
+.stub-seats-line {
+  min-height: 32px;
+}
+
+.stub-row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+/* The List: calendar, week line (centered), day bands and rows. */
+.week-calendar {
+  padding: 6px 8px 4px;
+  border-radius: 14px;
+}
+
+.week-calendar-month {
+  text-align: center;
+  margin: 0 0 2px;
+  font-size: 13px;
+}
+
+.week-calendar-head span {
+  font-size: 11px;
+  padding-bottom: 0;
+}
+
+.explore-list-band {
+  text-align: center;
+  font-size: 11px;
+}
+
+.explore-list-dayhead {
+  padding: 3px 16px;
+  min-height: 0;
+}
+
+.explore-list-daylabel {
+  font-size: 12px;
+}
+
+.explore-list-day .day-list {
+  margin: 4px 10px 6px;
+  border-radius: 12px;
+}
+
+/* The one-line read: number and word side by side, vertically centered (Kylie, Oct 13). */
+.log-score.inline {
+  width: auto;
+  height: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 8px;
+  border-radius: 7px;
+}
+
+.log-score.inline .log-score-num {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.log-score.inline .log-score-word {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* A row: time, title over (venue and badges), crowd at the right. */
+.day-row {
+  padding: 6px 10px;
+  gap: 8px;
+}
+
+.day-row-time {
+  width: 48px;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+.day-row-title {
+  line-height: 1.2;
+}
+
+.day-row-venue {
+  font-size: 12px;
+}
+
+.day-row-side {
+  gap: 0;
+}
+
+.day-row-sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+.day-row-sub .day-row-venue {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.day-row-sub .event-tags {
+  flex: 0 0 auto;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.day-row-sub .tag-occasion {
+  height: 18px;
+  padding: 0 5px;
+  font-size: 11px;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+}
+
+.day-row-sub .chip {
+  height: 18px;
+  padding: 0 7px;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+/* The calendar's own scroller: three rows and half of the next, snapping to week rows; squares (Kylie, Oct 13). */
+.week-calendar {
+  --cal-row: 43px;
+}
+
+.week-calendar-viewport {
+  position: relative;
+}
+
+.week-calendar-viewport::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--card));
+  pointer-events: none;
+}
+
+.week-calendar-scroll {
+  height: calc(var(--cal-row) * 3.5);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  touch-action: pan-y;
+}
+
+.week-calendar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.week-calendar-row {
+  height: var(--cal-row);
+  scroll-snap-align: start;
+}
+
+.week-calendar-day {
+  height: var(--cal-row);
+  position: relative;
+}
+
+.week-calendar-num {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.week-calendar-day.is-top::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  height: 3px;
+  margin-left: -7px;
+  border-radius: 2px;
+  background: var(--dodger);
+}
+
+/* Badges everywhere (Kylie, Oct 13: "shrink everywhere so that it's consistent"): 18 px tall, 11 pt text. */
+.tag-occasion {
+  height: 18px;
+  padding: 0 5px;
+  font-size: 11px;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+}
+
+.chip.chip-f {
+  height: 18px;
+  padding: 0 7px;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+/* The venue and the badges share one line wherever events are listed. */
+.event-tagline {
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+.event-tagline .event-venue {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-tagline .event-tags {
+  flex: 0 0 auto;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+/* A segment's words stay on one line (the You tab's "This year" wrapped under the new sizes). */
+.segmented button {
+  white-space: nowrap;
+}
+
+/* Past days carry their read too, a little quieter than days ahead (Kylie, Oct 14: "past dates are not loaded"). */
+.week-calendar-day.is-past .week-calendar-num {
+  opacity: 0.62;
+}
+
+.week-calendar-day.is-past:not([class*='band-']) .week-calendar-num {
+  opacity: 1;
+}
+
+/* Date page rows: the badges sit at the right of the line, like every list (Kylie, Oct 14). */
+.date-row-line {
+  justify-content: space-between;
+}
+
+/* Date page: the crowd at the left of the line and the badges at the right of it, on one line. */
+.date-row-line {
+  flex-wrap: nowrap;
+}
+
+.date-row-line .event-tags {
+  flex-wrap: nowrap;
+  gap: 4px;
+  margin-left: auto;
+}
+
+/* The shared row body (Kylie, Oct 14: badges right-justified everywhere): time at the left; line 1 the title and,
+   at the right edge, the crowd; line 2 the venue and, at the same right edge, the badges. */
+.day-row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.day-row-line1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.day-row-line1 .day-row-title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.day-row-line1 .crowd-figure {
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+  padding-top: 1px;
+}
+
+.day-row-line2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  min-height: 18px;
+}
+
+.day-row-line2 .day-row-venue {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.day-row-line2 .event-tags {
+  flex: 0 0 auto;
+  margin-left: auto;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.day-row-line2 .tag-occasion,
+.day-row-line2 .chip {
+  height: 18px;
+  font-size: 11px;
+}
+
+/* Rows that are not .day-row (Home, the date page, "Fighting today") carry the same time column. */
+.log-row .day-row-time,
+.date-row-main .day-row-time,
+.event-row .day-row-time {
+  width: 48px;
+  flex-shrink: 0;
+  padding-top: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+  font-variant-numeric: tabular-nums;
+}
+
+.date-row-main {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  padding-bottom: 26px;
+}
+
+.date-row {
+  position: relative;
+  padding: 8px 12px 8px 10px;
+}
+
+.date-row .stub-mini {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  margin: 0;
+}
+
+.event-row {
+  align-items: flex-start;
+}
+
+/* A row's title takes at most two lines (a long official title ends in an ellipsis). */
+.day-row-line1 .day-row-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

@@ -1,3 +1,4 @@
+import { RowBody } from '../components/DayRow';
 import { lazy, Suspense, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { AccountBlock } from '../components/AccountBlock';
@@ -5,7 +6,6 @@ import { HomeIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { CrowdFigure, EventTags } from '../components/EventTags';
 import {
   eventMatches,
   favoriteKey,
@@ -192,18 +192,7 @@ export function HomeScreen() {
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
                 <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link">
-                  <span className="log-main">
-                    <span className="log-title">{mapTitle(e, tonight)}</span>
-                    <span className="event-tagline">
-                      <EventTags event={e} />
-                      {venueOf(e) && <span className="event-venue">{venueOf(e)}</span>}
-                    </span>
-                  </span>
-                  {/* Time on the right under the crowd, matching Explore (build notes 2, two tags). */}
-                  <span className="event-side">
-                    <CrowdFigure event={e} />
-                    <span className="event-meta">{e.start ? clockTime(e.start) : 'TBA'}</span>
-                  </span>
+                  <RowBody event={e} title={mapTitle(e, tonight)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
                 </Link>
               </li>
             ))}

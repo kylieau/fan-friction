@@ -1,3 +1,4 @@
+import { RowBody } from '../components/DayRow';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
@@ -40,10 +41,9 @@ import {
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
-import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
-import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
+import { CrowdFigure, CrowdMark } from '../components/EventTags';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
@@ -319,22 +319,22 @@ export function DateScreen() {
             return (
               <li key={e.id} className={`date-row${you || e.id === highlight ? ' yours' : ''}`}>
                 <Link to={eventPath(e.id, e.metroId)} className="date-row-main">
-                  <span className="date-row-title">{listTitle(e)}</span>
-                  <span className="date-row-line">
-                    <CrowdFigure event={e} />
-                    <EventTags event={e} />
-                  </span>
-                  {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
-                  {line && <span className="day-row-activity">{line}</span>}
-                  <VenueWeather event={e} bare />
+                  <RowBody
+                    event={e}
+                    time={e.start ? clockTime(e.start) : 'TBA'}
+                    venueText={venueOf(e) ?? null}
+                    line={line}
+                    extra={
+                      <>
+                        {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
+                        <VenueWeather event={e} bare />
+                      </>
+                    }
+                  />
                 </Link>
-                <span className="date-row-side">
-                  <span className="date-row-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
-                  {venueOf(e) && <span className="date-row-venue">{venueOf(e)}</span>}
-                  <button type="button" className={`stub-mini${you ? ' on' : ''}`} onClick={() => setStubbing(e)}>
-                    {you ? ACTIVITY_WORDS[you.kind] : '+ Stub it'}
-                  </button>
-                </span>
+                <button type="button" className={`stub-mini${you ? ' on' : ''}`} onClick={() => setStubbing(e)}>
+                  {you ? ACTIVITY_WORDS[you.kind] : '+ Stub it'}
+                </button>
               </li>
             );
           })}

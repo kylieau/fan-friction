@@ -2,7 +2,7 @@
 
 Summary as pasted by Kylie, Oct 13, 2026. The full answer (display rules, the 12-venue list, source conflicts, the numbered source list) is in her other session and is still to add.
 
-Status: closed, folded in as free text in the single Section box of a one-row Section · Row · Seat editor (Kylie, Oct 13: it has to be incredibly simple), Oct 13, 2026. The six-field recommendation below was not built.
+Status: closed, folded into a "Where" dropdown (Seat, GA, Floor, Pit, Lawn, Standing room) with Section · Row · Seat as free text under Seat (Kylie, Oct 13: incredibly simple), Oct 13, 2026. The six-field recommendation below was not built.
 
 **Section, Row and Seat hold up. The GA / Floor / Pit choice is what breaks.** It mixes two separate questions: whether there was an assigned seat, and which part of the venue you were in. Real venues answer those independently:
 

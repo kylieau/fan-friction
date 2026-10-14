@@ -41,8 +41,8 @@ import { datePath, mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
-import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
-import { DayRow, sheetVenue } from '../components/DayRow';
+import { CrowdMark } from '../components/EventTags';
+import { DayRow, RowBody, sheetVenue } from '../components/DayRow';
 import { displayedCrowdCount, drawSize, sizeTier } from '../data';
 
 type Mode = 'crowds' | 'traffic';
@@ -534,25 +534,17 @@ function EventRow({
   showDate?: boolean;
   href?: string;
 }) {
-  const time = e.start ? clockTime(e.start) : 'Time TBA';
+  const time = e.start ? clockTime(e.start) : 'TBA';
   const venue = sheetVenue(e);
   const stakes = quietStakes(e, dateEvents);
-  // Two tags under the title (build notes 2): the occasion outline tag, the friction pill. Crowd and time sit on the right.
+  // The shared row body: time at the left, badges flush right under the crowd. A day tag rides with the venue.
   const body = (
-    <>
-      <span className="event-main">
-        <span className="event-title">{listTitle(e)}</span>
-        <span className="event-tagline">
-          <EventTags event={e} />
-          {venue && <span className="event-venue">{venue}</span>}
-        </span>
-        {stakes && <span className="event-stakes">{stakes}</span>}
-      </span>
-      <span className="event-side">
-        <CrowdFigure event={e} />
-        <span className="event-meta">{showDate ? `${shortLocalDate(e.date)} · ${time}` : time}</span>
-      </span>
-    </>
+    <RowBody
+      event={e}
+      time={time}
+      venueText={showDate ? [shortLocalDate(e.date), venue].filter(Boolean).join(' · ') : venue}
+      extra={stakes ? <span className="event-stakes">{stakes}</span> : null}
+    />
   );
   const cls = `event-row${selected ? ' selected' : ''}`;
   if (href) return <Link to={href} className={cls}>{body}</Link>;

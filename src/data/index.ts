@@ -426,7 +426,7 @@ export {
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
 export { favoriteCitiesOf, toggleFavoriteCity, setEntrySeats, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
-export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, TAG_MAX, type TagSummary } from './stubTags';
+export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
 export { hasUnsyncedChanges } from './storage';
 export { suggestEvent } from './suggestions';
 export { getTeamSchedule, nextTeamGame, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
