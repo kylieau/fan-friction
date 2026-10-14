@@ -2,10 +2,21 @@
 
 Overwritten each session. Deferred work and history live in `BACKLOG.md`: **open questions for Kylie are at its top** (the K-list) and in **"Build 4 follow-ups (Claude Code slice, Oct 13)"** under Next. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (its **"Oct 13, 2026 — build 4 (Claude Code slice)"** section is the newest, with the builder's calls). **Build 4's source of truth is `docs/build-4/build-notes-4-oct12.md`; Claude Code's plan and what shipped is `docs/build-4/claude-build-plan-oct13.md`.**
 
-_Last synced: Oct 13, 2026, Claude Code (Sonnet, Opus advisor), at `main`'s head after the Oct 13 follow-up commits. Everything below is pushed. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
+_Last synced: Oct 13, 2026, Codex. This session applied desktop/mobile container-connection persistence; Build 4's product snapshot below remains Claude Code's Oct 13 handoff. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
 
 ## Docs were reorganized (Oct 11, 2026): old `docs/` paths no longer exist
 Every doc lives in a sub-folder: `docs/product/`, `docs/reference/`, `docs/checks/`, `docs/research/` (`city-builds/<city>/`, `topics/`, `events-and-dates/`, `second-opinions/`), `docs/reviews/`, `docs/design/`, `docs/archive/`, and `docs/build-4/` (map: `docs/README.md`).
+
+## Codex connections — Oct 13, 2026 (Codex)
+
+- Desktop SSH and direct iPhone pairing to this dev container were verified by Kylie in this session. The project in `Documents/fan-friction` is mounted at `/workspaces/fan-friction`; these are the same files. Pairing the phone only with the Mac did not expose the container project; direct container Remote Control pairing worked.
+- **Persistence changes applied; one rebuild still needed to activate saved storage.** `.devcontainer/devcontainer.json` adds saved volumes for `/home/node/.codex` and `/home/node/.ssh`, port 2222 with a fixed local port, and automatic connection startup. SSH remains localhost-only, key-only, as `node`. Codex has a version-matched standalone fallback when VS Code's bundled executable is unavailable.
+- The startup script starts mobile Remote Control and desktop SSH. If desktop SSH already owns an unmanaged Codex server, a local protocol helper enables Remote Control in place. No chat ownership locks are removed; a chat still being written in VS Code may show “open in another app” on desktop.
+- **Private backup:** `private/devcontainer-state/latest`, Git-ignored. Six SQLite databases passed integrity checks and a temporary recovery drill preserved chat files, login, installation identity, and SSH keys. Refresh the snapshot immediately before the first rebuild so it includes the latest messages. New empty volumes restore it once; later rebuilds keep the existing saved state. Credentials and pairing details are never committed.
+- Current startup was verified without disconnecting active chats. **Stop/start and rebuild behavior remain unverified until Kylie does the first rebuild.** After it, check the same desktop SSH connection, iPhone host, and existing chats. Keep Docker/the container running; desktop SSH also needs VS Code port forwarding. No new cost.
+- Persistence code is this session's work; Build 4's product snapshot below remains the prior Claude Code handoff. The open docs/build-5 PR is unrelated.
+
+**Next:** run `python3 .devcontainer/backup-codex.py` in the container terminal, then use VS Code **Dev Containers: Rebuild Container**. After reconnecting, verify desktop and iPhone chats, then run `python3 .devcontainer/codex-remote-control.py status` if mobile is unavailable.
 
 ## Current state
 - **Build 4 is complete and live on `main`** (Composer's slice PR #54; Claude Code's slice Oct 13, 40 commits). Claude Code's slice:

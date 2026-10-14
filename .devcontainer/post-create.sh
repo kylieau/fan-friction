@@ -14,12 +14,19 @@ if [ -d "$BACKUP/claude" ] && [ ! -d /home/node/.claude/projects ]; then
   echo "Restored Claude Code settings and history from backup."
 fi
 
+bash .devcontainer/restore-codex-state.sh
+
 git config --global --add safe.directory "$PWD"
 
 npm install -g @anthropic-ai/claude-code vercel
 
 # A headless browser so Claude can screenshot the app while building it.
 sudo apt-get update -qq
-sudo apt-get install -y -qq --no-install-recommends chromium fonts-noto-color-emoji
+sudo apt-get install -y -qq --no-install-recommends chromium fonts-noto-color-emoji openssh-server python3
+
+# Keep a Codex fallback available even before VS Code finishes installing extensions.
+npm install -g --prefix /home/node/.local @openai/codex@0.162.0-alpha.17.2
+sudo install -m 755 .devcontainer/codex-launcher /usr/local/bin/codex-fan-friction
+sudo ln -sfn /usr/local/bin/codex-fan-friction /usr/local/bin/codex
 
 npm ci

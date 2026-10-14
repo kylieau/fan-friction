@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Prefer VS Code's bundled Codex; retain a matching standalone fallback.
+set -euo pipefail
+bundled_codex=$(find /home/node/.vscode-server/extensions -type f -path '*/openai.chatgpt-*/bin/*/codex' 2>/dev/null | sort -V | tail -n 1) || true
+if [ -n "$bundled_codex" ] && [ -x "$bundled_codex" ]; then
+  exec "$bundled_codex" "$@"
+fi
+exec /home/node/.local/bin/codex "$@"

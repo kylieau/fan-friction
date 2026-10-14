@@ -4,12 +4,23 @@
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  // Keep Claude Code settings, history and GitHub CLI login across rebuilds.
+  // Keep assistant history, SSH identity and GitHub CLI login across rebuilds.
   "mounts": [
+    "source=fan-friction-codex-${devcontainerId},target=/home/node/.codex,type=volume",
+    "source=fan-friction-ssh-${devcontainerId},target=/home/node/.ssh,type=volume",
     "source=fan-friction-claude-${devcontainerId},target=/home/node/.claude,type=volume",
     "source=fan-friction-gh-${devcontainerId},target=/home/node/.config/gh,type=volume"
   ],
   "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postStartCommand": "bash .devcontainer/start-connections.sh",
   "remoteUser": "node",
-  "forwardPorts": [3001]
+  "forwardPorts": [3001, 2222],
+  "portsAttributes": {
+    "2222": { "label": "Codex SSH", "onAutoForward": "silent", "requireLocalPort": true }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": { "remote.restoreForwardedPorts": true, "remote.localPortHost": "localhost" }
+    }
+  }
 }
