@@ -10,12 +10,13 @@ Each item gives what we do, why, and the options we turned down.
 - Add to calendar, option B: an icon button beside "+ Stub it" opens a chooser (item 3; Mosaic, Oct 13).
 - Stub privacy, Venmo-style: Anyone / Friends / Private, new users Private (Mosaic Oct 13; levels updated Oct 14).
 - Date page r3 (Mosaic, Oct 14).
-- Lineup wording on every Explore List week: THIS / NEXT / LAST WEEK'S LINEUP (Mosaic Oct 14; every week per Kylie's answer D).
+- Lineup wording on every Explore List week: THIS / NEXT / LAST WEEK'S LINEUP, and "WEEK OF OCT 26 · LINEUP" further out (Mosaic Oct 14; answers D, D2).
+- "More dates" replaces "Same homestand" / "Also on" on the event page (answer C2, Oct 14).
 - Unknown crowd size shows blank on rows, chips and the selected card, and "— Size unknown" on the event page (Mosaic, Oct 14).
 - Crowd size range setting in You › Settings › Events (Mosaic, Oct 14).
 - Kylie's city round 2 review form answers (Oct 14).
 
-Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). Still open: C2 ("homestand" wording), D2 (weeks further out).
+Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default to Private). C2 ("More dates") and D2 ("WEEK OF OCT 26 · LINEUP") were also accepted on Oct 14. No open questions remain from this round.
 
 Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3.
 
@@ -903,7 +904,7 @@ Boards: `/workspace/ff-gap-review/mosaic/datepage/datepage-r3.png` and the lean 
 - This week → **"THIS WEEK'S LINEUP · N EVENTS"** (today "This week").
 - Next week → **"NEXT WEEK'S LINEUP · N EVENTS"** (today "Next week").
 - Last week → **"LAST WEEK'S LINEUP · N EVENTS"** (today "Last week").
-- Weeks further out: today `weekSpan` gives "OCT 26–NOV 1". **Lean: "WEEK OF OCT 26 · LINEUP · N EVENTS"** (open; see question D2).
+- Weeks further out → **"WEEK OF OCT 26 · LINEUP · N EVENTS"** (decided D2, Oct 14). Today `weekWord` falls back to `weekSpan` (`ExploreListScreen.tsx:87`, defined at `:91`), which gives "OCT 26–NOV 1". Change `weekWord`'s fallback to "Week of {Mon date}" + " · lineup", and keep `weekSpan` only if something else still uses it. Why: the same lineup wording as the near weeks, and a single start date is shorter than a range. Rejected: keeping "OCT 26–NOV 1" with no lineup word; "OCT 26–NOV 1 · LINEUP" (long, and the range is redundant with the day bands).
 
 Why: one clear use of the word on Explore, at the top of the list. Kylie wants it on every week, not only this one (Oct 14, answer D).
 
@@ -967,7 +968,7 @@ Instructions by surface. Implement one shared predicate, e.g. `passesCrowdRange(
 | Date page lineup | Filter rows; hidden-events line at the bottom. | `DateScreen.tsx:112, 311-340` |
 | Date page Local Competition (timeline) | **Not filtered** (decided, B): hidden events still appear if they're 5,000+, because the read uses them. The summary line is removed by item 4. | `DayTimeline.tsx:16` (already 5,000+ only) |
 | Event page Up against | **Not filtered** (B): hidden 5,000+ rivals still appear. | `EventScreen.tsx:182, 276-305` (already 5,000+ only) |
-| Event page Same homestand / Also on | **Not filtered** (decided, C). See the open question on the "homestand" wording. | `src/components/SameTour.tsx:17, 37` |
+| Event page Same homestand / Also on | **Not filtered** (decided, C). The heading becomes "More dates" (C2, item 7). | `src/components/SameTour.tsx:17, 37` |
 | Event page itself | Always opens (link, search, stub). | `EventScreen.tsx` |
 | Selected chip card | A hidden event can't be selected unless Show was tapped. | `ChipCard.tsx` |
 | Friends Activity layer | Events friends are attending always show, muted if under 5,000. | `chipActivity.ts:23`; `ExploreListScreen.tsx:133, 465`; `DateScreen.tsx:127` |
@@ -987,12 +988,19 @@ Builder checks:
 - **B. Up against and Local Competition: hidden events still appear if they're 5,000+** (lean accepted). Why: they're real crowd competitors and the read uses them; hiding them would make the explanation disagree with the score. Rejected: filtering them like the lists.
 - **C. Same homestand / Also on: not filtered by the crowd range** (lean accepted). Why: it's a schedule of the same team's or performer's dates, not a crowd list. Rejected: filtering it.
 - **D. Lineup on every week, not just this week** (not the lean): "THIS WEEK'S LINEUP", "NEXT WEEK'S LINEUP", "LAST WEEK'S LINEUP". Rejected: this week only (the lean).
+- **C2. "More dates"** for every kind of event (lean accepted, "your leans are fine"). See item 7.
+- **D2. "WEEK OF OCT 26 · LINEUP"** for weeks further out (lean accepted). See item 5.
 - **E. Keep "Anyone"** as a stub level: Anyone / Friends / Private, with the profile switch reused as the default for new stubs ("People I approve" renamed Friends). New users default to **Private**. Kylie: "anyone would enable people who you don't follow to view this, which is fine. that's why there's a default setting. again, similar to venmo." This supersedes the Oct 13 rejection of a Public option. Rejected: dropping Anyone; Friends-only stubs under an Anyone profile; a non-Private default.
 
-### Open questions
+### 7. "More dates" heading on the event page (Oct 14, C2)
 
-- **C2. "Homestand" outside sports.** Kylie: "homestand" is sports language and may not fit non-sports events, or every team. Today `SameTour.tsx:37` shows **"Also on"** when the event has a `performer` (concerts and most Ticketmaster shows), and **"Same homestand"** otherwise. Matching (`:17-19`) is by performer, else by home team. A residency (a performer's run of nights) already reads "Also on". **Gap:** a non-sports event with no performer and no teams (theatre, comedy specials, fairs) matches nothing and the section hides, so the label never shows there. Open: what it should say for concerts and residencies ("Also on", "More dates", "Other nights"), and whether sports should keep "homestand" (it's wrong for a team's road games and neutral sites, which don't appear here anyway). Lean: "More dates" for everything, one word for all kinds.
-- **D2. Weeks further out:** lean "WEEK OF OCT 26 · LINEUP · N EVENTS" (replacing today's "OCT 26–NOV 1"). Kylie to confirm.
+**Build instruction:** In `src/components/SameTour.tsx:37`, replace `{event.performer ? 'Also on' : 'Same homestand'}` with the single heading **"More dates"** for every kind of event. Leave the matching logic (`:17-19`: same performer, else same home team, same city, within 30 days) and the crowd range rule (not filtered, C) unchanged. Update the section's `aria-label` ("Other dates") to match if it should read the same.
+
+Context: today concerts and other events with a performer, residencies included, show "Also on". Games show "Same homestand". Events with neither performer nor teams (theatre, comedy specials, fairs) match nothing, so the section hides; that's unchanged.
+
+Why: "homestand" is sports language and doesn't fit concerts, residencies or every team (Kylie). One plain heading works for every kind of event.
+
+Rejected: keeping "Same homestand" for sports and "Also on" for shows; "Other nights"; "Also on" for everything.
 
 ### On hold (Kylie working with Claude)
 
