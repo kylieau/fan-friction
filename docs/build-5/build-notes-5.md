@@ -28,7 +28,7 @@ Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default 
 
 The naming review is closed (item 15): Cosm is a Watch party, the Add form says Concert, full playoff words on the event page (N03 follows her note, not her form choice; see item 15), artist before tour, co-bills and multi-day passes all decided. Three answers differ from the lean: N03 (note overrides choice), N08 (Preseason moves to a suffix) and N29 (note overrides choice: "vs." with a period). N16 adds a note: codes stay on chips. Item 13's "still open" naming cases are now settled by Kylie's follow-up research (Oct 14; verbatim in `docs/build-5/research/naming-followup-oct14-verbatim.md`): MLB spring training uses "· Spring training", dedupe runs before naming, six new house rules. Only seed/feed duplicate clashes stay in backlog.
 
-Regional events (item 2): backlog next step — Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog; nothing wired in build 5. CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug; keep the no-code check after the game). CLOSED: where crowds with no size show in Explore (blank rule plus existing muted chips; see item 10's closed list). The "~" question is closed (item 10).
+Regional events (item 2): the research is in (Kylie, Oct 14; [`research/regional-events-research-answer.html`](research/regional-events-research-answer.html)). Next step: turn the answer into one rule for every metro and add it to the backlog; nothing wired in build 5. CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug; keep the no-code check after the game). CLOSED: where crowds with no size show in Explore (blank rule plus existing muted chips; see item 10's closed list). The "~" question is closed (item 10).
 
 ## 1. Concerts Ticketmaster misses
 
@@ -73,6 +73,10 @@ For one-off venues (lots, fields, temporary sites):
 - **80% of stated capacity** by default.
 - **95%** when the show is sold out or has a waitlist.
 - **Festivals are sized per day**, not as a whole weekend.
+  - Never divide passes sold or unique visitors by the number of festival days. A three-day pass holder who comes all three days is three person-days. Use past daily gate counts when they exist.
+  - Don't add included shows (concerts, rodeos, air displays inside a fair) to the parent event's gate attendance.
+  - Record the source year and what the count measures (daily gate, total visits, unique visitors, passes, capacity) next to every figure.
+  - Source: Oct 14 regional research, "Scoring and crowd estimation" ([`research/regional-events-research-answer.html`](research/regional-events-research-answer.html)).
 - **No stated capacity:** use the best past edition's attendance.
 - **Nothing to go on:** mark it **"unsized"** (internal term only). It is shown in the app but not counted toward scores. In the app: blank on rows, chips and the selected card; "— Size unknown" on the event page. The word "unsized" never appears in UI copy.
 
@@ -86,15 +90,15 @@ Rejected:
 
 ## 2. Regional events: backlog (next step)
 
-**Backlog next step (Kylie, Oct 14):** Whoever builds (Claude) writes a generalized research prompt for regional events and festivals, then adds it to the backlog. Nothing is wired in build 5.
+**Backlog next step (Kylie, Oct 14):** The research is in. Kylie ran it herself on Oct 14: prompt [`research/regional-events-research-prompt.md`](research/regional-events-research-prompt.md), answer [`research/regional-events-research-answer.html`](research/regional-events-research-answer.html). Whoever builds (Claude) turns the answer into one rule for every metro and adds it to the backlog. Nothing is wired in build 5.
 
-**Build instruction:** none for build 5. Don't build anything here until the research comes back and Kylie decides. Context: no regional list or distance rule exists on main.
+**Build instruction:** none for build 5. Don't build anything here until Kylie sets the rule from the Oct 14 research. Context: no regional list or distance rule exists on main.
 
 Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
 
 ### Background: the earlier 60-mile discussion (not decided)
 
-**Background for the builder's research prompt, not an instruction.** Use it as context when writing the prompt; don't build any of it.
+**Superseded by the Oct 14 research; see its 6-bullet rule set ("Recommended operating rules" in [`research/regional-events-research-answer.html`](research/regional-events-research-answer.html)); Kylie sets the rule.** Kept as history only; don't build any of it. Where it differs: the research uses 60 miles only as a search prefilter and recommends a 120-minute baseline drive from the metro core, measured at non-event times, plus documented exceptions. It also counts the in-metro share of an out-of-town event's traffic, while a map layer alone never adds score. The list name, "Regional" or "Further out" (the research's term), gets decided along with the rule.
 
 Proposed rule: an event within **60 miles** of the metro's existing center point counts as local. 60 miles is a starting value, not a sourced figure, and can be changed.
 
@@ -112,7 +116,7 @@ Proposed reasoning: this would keep scores honest (only events whose crowds plau
 
 #### Venues that would come into range
 
-These would need sourced capacities, or they stay unsized:
+These would need sourced capacities, or they stay unsized. The Oct 14 research now has sourced crowd figures (with uncertainty) for some of them, e.g. BottleRock, Country Thunder Wisconsin and Sonoma: see the event table in [`research/regional-events-research-answer.html`](research/regional-events-research-answer.html). Use that table when the backlog item is built; don't copy its numbers into city data yet.
 
 - NOS Events Center
 - Glen Helen
@@ -526,8 +530,8 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 #### CLE2 · ForeFront Field
 
 - **Decision:** Leave it blank
-- **Context:** Only a 2009 plan figure (3,500 + 1,500 berm). It's blank now.
-- **Why:** Nothing is guessed. The room just shows no capacity. A 2009 plan isn't the built room.
+- **Context:** A 2009 plan figure (3,500 + 1,500 berm), plus Wikipedia (secondary): "Seats 5,000; about 7,000 with suites, berm and group areas" ([Cleveland follow-up answer](../research/city-builds/cleveland/cleveland-gaps-followup-answer.md)). No official figure. It's blank now.
+- **Why:** Nothing is guessed. The room just shows no capacity. A 2009 plan isn't the built room, and the only other figure is secondary.
 - **Rejected:** Store 5,000
 
 #### CLE3 · Blossom Music Center
@@ -705,7 +709,7 @@ Non-lean picks: N6, N9, N10, OTT1. Notes: N2, N5. All other cards take the lean.
 
 - **Decision:** Leave concert blank; keep 5,000 seats
 - **Context:** 7,000 / 6,500 / 7,610 / 9,150. Kept the official 5,000 permanent seats.
-- **Why:** Four figures, no official one.
+- **Why:** The stage setup has two official figures from the same agency, and they disagree: 7,000 (NCDA booking page) vs 6,500 (NCDA history page). The other two (7,610, 9,150) don't name a setup ([Raleigh–Durham follow-up answer](../research/city-builds/raleigh-durham/raleigh-durham-gaps-followup-answer.md)). With no single official figure, concert stays blank.
 - **Rejected:** Store 7,000 for concerts
 
 #### RDU3 · Lenovo Center after 2026 renovation
