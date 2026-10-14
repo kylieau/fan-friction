@@ -540,6 +540,12 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
         </h1>
         {about && <p className="how-about">{about}</p>}
         {/* Short headed sections (Kylie, Oct 9, C071). */}
+        {/* Build 5, item 10 (board estimated-crowds-lean-about-estimate): the pop-up rule, first. */}
+        <h2 className="how-sub">Pop-ups</h2>
+        <p className="home-helper">
+          Events not on Ticketmaster: 80% of the stated capacity, or 95% if sold out or waitlisted. Labeled Estimated; an
+          announced count replaces it.
+        </p>
         <h2 className="how-sub">Games</h2>
         <p className="home-helper">
           This team's typical announced crowd here on this kind of date, over the last two or three seasons, nudged by how
@@ -554,12 +560,6 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
         <p className="home-helper">
           The room's own published average when it has one; otherwise the full room for a venue built for shows, or{' '}
           {Math.round(CONCERT_FILL * 100)}% of an arena or stadium.
-        </p>
-        {/* Build 5, item 10: the pop-up rule (item 1). */}
-        <h2 className="how-sub">Pop-ups</h2>
-        <p className="home-helper">
-          A one-off site such as a lot or a field: 80% of its stated capacity, or 95% when sold out or waitlisted. Festivals
-          are sized per day.
         </p>
         <h2 className="how-sub">Counts</h2>
         <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates. An announced or reported count replaces the estimate when it lands.</p>
