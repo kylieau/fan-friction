@@ -39,7 +39,7 @@ Status per notes item, file refs, judgment calls and open questions are below; t
 
 **Readings to confirm (Oct 14)**
 - Your dictated "Okay, cause them" was read as "change their wording": Atlanta, Ottawa–Gatineau and Las Vegas got their own sentence and kept their types. Say if you meant to change the types too (it moves no number).
-- The private-log move (another session, uncommitted when this was written) deletes files that item 5 above, BACKLOG's retitle and Cosm lines, and `scripts/docs-tidy.mjs` (line 47 reads `docs/product/kylie-logs.md`, so the commit hook errors on every commit until it's updated) still point to. Not edited here, to avoid guessing where they went. Note: the rename table and 0027 are in `main`'s history (98e4bd9, 60f2bd2), as `kylie-logs.md` and 0002 already were.
+- ~~The private-log move left dangling references and broke the docs tidy hook~~ **Resolved (Kylie, Oct 14: the move is done).** The personal-log files live under the git-ignored `private/kylie-log/`; item 5 and BACKLOG point there; `scripts/docs-tidy.mjs` now skips a doc deleted on disk but still tracked, so the commit hook no longer errors. History note kept: the rename table and 0027 are in `main`'s history (98e4bd9, 60f2bd2), as the earlier log doc and 0002 already were.
 
 **Notes-vs-board or notes-vs-notes calls I made** (each listed under its item): read tile (board), first-open row tap (board), STL2 (left blank), backfill order for "Only me" (no widening), short budget (advisor reading), Pop-ups section wording (board).
 

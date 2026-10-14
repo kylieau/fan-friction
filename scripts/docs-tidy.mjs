@@ -26,7 +26,8 @@ const git = (...a) => execFileSync('git', a, { cwd: root, encoding: 'utf8', maxB
 const posix = (p) => p.split(path.sep).join('/');
 
 // ---- what is in docs/ now (paths relative to docs/) -----------------------------------------------
-const docsFiles = git('ls-files', '-z', 'docs').split('\0').filter(Boolean).map((p) => p.slice('docs/'.length));
+// A doc deleted on disk but not yet committed (a cleanup in progress) is gone for tidying, not an error.
+const docsFiles = git('ls-files', '-z', 'docs').split('\0').filter((p) => p && existsSync(path.join(root, p))).map((p) => p.slice('docs/'.length));
 const docsSet = new Set(docsFiles);
 
 // ---- decide the moves: old docs-relative path -> new docs-relative path ----------------------------
