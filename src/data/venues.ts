@@ -3272,6 +3272,8 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 35000, setup: 'football', fromYear: 2026, note: 'Official (Northwestern); opened Oct 2, 2026. Concerts (up to six a year) expected from 2027; capacity unpublished.' },
     ],
+    // N9 (Kylie, Oct 14): wire the 58% concert car share (Kimley-Horn projection, estimated) when concerts are listed.
+    // Not wired yet: no concerts are listed and carShare is one value per room, so it would move football too.
     roof: 'covered',
   },
   'huntington-bank-pavilion': {
@@ -3400,7 +3402,9 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'chicago',
     names: [{ name: 'Impact Field' }],
     location: [-87.8711, 41.9781],
-    capacity: [],
+    // N10 (Kylie, Oct 14): keep 6,300 (reported), reversing the PR #54 blank. Stored for the whole room (no setup):
+    // the ballpark site's figure (incl. 5,526 fixed seats) describes the room, not a concert layout. Wikipedia says 8,300.
+    capacity: [{ seats: 6300, note: 'Reported (ballpark site), including 5,526 fixed seats. Conflicts with 8,300 (Wikipedia). None official.' }],
     roof: 'open',
   },
   'wintrust-field': {
@@ -8349,6 +8353,8 @@ export const VENUES: Record<string, Venue> = {
     location: [-86.1693652, 39.7648386],
     capacity: [
       { seats: 12230, setup: 'baseball', note: 'Official (MLB): fixed seats. About 2,000 lawn and 14,230 total with lawn per reported figures. Source: https://www.mlb.com/astros/news/featured/explore-victory-field-home-of-the-indianapolis-indians' },
+      // IND4 (Kylie, Oct 14): one rule for lawn rooms, total including lawn. The last matching row is the one used.
+      { seats: 14230, setup: 'baseball', note: 'Total including lawn: official components (MLB: 12,230 fixed + about 2,000 lawn), total reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Victory_Field' },
     ],
     roof: 'open',
   },
@@ -9120,8 +9126,9 @@ export const VENUES: Record<string, Venue> = {
     ],
     location: [-75.6835457, 45.3984326],
     ticketmasterIds: ['401513'],
-    // Sourced only as a range (5,500–8,585 by configuration); round-2 rule: range capacities stay blank (BACKLOG).
-    capacity: [],
+    // OTT1 (Kylie, Oct 14, confirmed live): store 8,585 as the full bowl. Sourced as a range (5,500–8,585 by
+    // configuration); an announced Charge crowd of 8,605 (Apr 18, 2026) is above it, so it is not a hard maximum.
+    capacity: [{ seats: 8585, note: 'Full bowl (Kylie, Oct 14, OTT1). Sourced only as the top of a 5,500–8,585 range.' }],
     roof: 'indoor',
   },
   'canadian-tire-centre': {
@@ -9810,13 +9817,10 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'edmonton',
     names: [{ name: 'Edmonton Convention Centre' }, { name: 'Shaw Conference Centre' }],
     location: [-113.4858137, 53.5411497],
-    capacity: [
-      {
-        seats: 5254,
-        setup: 'concert',
-        note: 'Official listing for Hall ABC theatre chairs; movable chairs in a convention hall, not a fixed bowl. Source: https://exploreedmonton.com/industry/offsite/edmonton-convention-centre',
-      },
-    ],
+    // EDM3 (Kylie, Oct 14): muted. Convention halls aren't venue rows, so no capacity is stored; with no size the room
+    // stays on the map, muted, and feeds no friction. The official listing gives 5,254 movable Hall ABC theatre chairs,
+    // not a fixed bowl. Source: https://exploreedmonton.com/industry/offsite/edmonton-convention-centre
+    capacity: [],
     roof: 'indoor',
   },
   'foote-field': {
@@ -10087,7 +10091,8 @@ export const VENUES: Record<string, Venue> = {
     location: [-81.7030703, 41.4963115],
     capacity: [
       { seats: 4100, setup: 'concert', note: 'Reported permanent seating. GA with floor/standing can reach 5,000. Source: https://en.wikipedia.org/wiki/Jacobs_Pavilion' },
-      { seats: 5000, setup: 'concert', note: 'Reported with temporary floor/standing pit. Source: https://www.aegsev.com/jacobs-pavilion' },
+      // CLE1 (Kylie, Oct 14): standing-floor rooms are seated by default, so the 5,000 temporary-floor figure is not a row.
+      // Reported with temporary floor/standing pit: 5,000. Source: https://www.aegsev.com/jacobs-pavilion
     ],
     roof: 'open',
   },
@@ -10575,8 +10580,9 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Cascades Amphitheater', from: '2025-01-01' },
     ],
     location: [-122.6670094, 45.7425261],
-    // Round-2 rule: stored 18,000 was not a sourced figure (official 7,810 covered + lawn ~10,000; Bandsintown 17,884); blank (BACKLOG).
-    capacity: [],
+    // PDX3 (Kylie, Oct 14): store 7,810 seated (official). The earlier 18,000 was not sourced; official total with lawn is
+    // "nearly 10,000" (not stored, Kylie's pick); Bandsintown says 17,884.
+    capacity: [{ seats: 7810, setup: 'concert', note: 'Official covered seating (Kylie, Oct 14, PDX3). Lawn brings it to nearly 10,000 (not stored).' }],
     roof: 'covered',
   },
   'hillsboro-stadium': {
@@ -10602,8 +10608,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'McMenamins Historic Edgefield Manor' },
     ],
     location: [-122.4053047, 45.535264],
-    // Round-2 rule: 7,000 vs ~5,000 conflict, none official; blank (BACKLOG).
-    capacity: [],
+    // PDX2 (Kylie, Oct 14, live): 7,000 reported. The ~5,000 figure is a crowd size, not a capacity (Portland follow-up answer).
+    capacity: [{ seats: 7000, setup: 'concert', note: 'Reported (Travel Portland), lawn concerts (Kylie, Oct 14, PDX2).' }],
     roof: 'open',
   },
   'hillsboro-hops-ballpark': {
@@ -11519,7 +11525,9 @@ export const VENUES: Record<string, Venue> = {
     location: [-78.7103734, 35.7939506],
     capacity: [
       { seats: 5000, note: 'Official (NCDA): permanent seats, exactly at the friction line. Cable-roof arena, not air-conditioned. Source: venue table R12.' },
-      // Concert setup left blank: 7,000 (NCDA) vs 6,500 (same agency) vs 7,610 vs 9,150 (BACKLOG).
+      // RDU2 (Kylie, Oct 14, live): the NCDA booking page (the agency's current booking source) gives 7,000 for the stage
+      // setup; its undated history page says 6,500; 7,610 and 9,150 name no setup.
+      { seats: 7000, setup: 'concert', note: 'Official (NCDA booking page), concert stage setup (Kylie, Oct 14, RDU2).' },
     ],
     roof: 'indoor',
   },
@@ -11676,7 +11684,8 @@ export const VENUES: Record<string, Venue> = {
     ],
     location: [-105.0192228, 39.7439520],
     capacity: [
-      // Football capacity left blank: 76,125 (structural engineer) vs 75,000 (RTD), none official (BACKLOG).
+      // DEN1 / X1 (Kylie, Oct 14): sources within about 2% keep a reported figure; 75,000 (RTD) conflicts by ~1.5%.
+      { seats: 76125, setup: 'football', note: 'Reported (structural engineer). Conflicts with 75,000 (RTD); kept under X1.' },
       { seats: 85000, setup: 'concert', note: 'Reported. Source: https://en.wikipedia.org/wiki/Empower_Field_at_Mile_High' },
     ],
     roof: 'open',

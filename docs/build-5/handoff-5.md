@@ -1,0 +1,37 @@
+# Build 5 handoff (Claude Code)
+
+Builder: Claude Code (Opus 5.5, Fable 5.1 advisor), Oct 14, 2026. Source of truth: `docs/build-5/build-notes-5.md` (grounded at 635a164). Started from `main` at `d717cdc` (PR #57 merged first, after review and advisor sign-off).
+
+Status per notes item, file refs, judgment calls and open questions are below; the advisor log is at the end.
+
+## Before build 5: PR #57 (Codex, Build 4 check fixes)
+Reviewed, built merged onto `main`, advisor signed off, squash-merged as `d717cdc`. What it changes that Kylie will see: the Map's day total now counts a sold-out show with no published count at room size, as its chip already did. Caveat: the `backfillEntryCrowd` tightening only affects stubs not yet backfilled; a stub already tagged Announced from a reported-only figure stays that way (R04: never overwrite a filled field).
+
+Codex asks two questions (from the PR body, not decided by this build):
+1. The Stubs tag-combining rule (`StubsScreen.tsx:76`) shipped while T13 said "how the filters combine is OPEN". Accept or revise?
+2. Wrigley stores the driving-only 0.367; the broader definition (taxis, remote parking) is 0.421. Ryan Field has no 58% concert override. (N9 below now wires Ryan Field.) Reconcile Wrigley in the formula pass?
+
+## Items
+
+### Review form answers: "City data changes to apply" — done, except the conditional and catch-up rows
+All in `src/data/venues.ts` unless noted. Refs drifted by one line since 635a164 (e.g. Ryan Field `:3266` → `:3267`, Impact Field `:3398` → `:3399`, Jacobs `:10082` → `:10083`); every venue was found by id.
+- **Done:** N10 Impact Field 6,300; OTT1 TD Place Arena 8,585; EDM3 Edmonton Convention Centre muted; CLE1 Jacobs Pavilion seated 4,100 only; PDX2 Edgefield 7,000; PDX3 Cascades 7,810; RDU2 Dorton 7,000 concert; DEN1 Empower 76,125 football; IND4 Victory Field 14,230; DEN5 alias dropped (`src/data/teams.ts`); DC5 Washington DC to hub (`src/data/formula/gridlock.ts:116`).
+- **Already on main (checked):** OTT3, IND5, DC1, DC4, CLE4, RDU4; the X1 "keep" rows (Hard Rock 64,767, Gainbridge 17,274, Enterprise hockey 18,096, Busch 43,769) are all present.
+- **Not done, with reason:**
+  - **N9 Ryan Field 58%:** the decision is "when concerts are listed"; none are, and `carShare` is one value per room, so wiring it now would move Northwestern football's read (PIT5 rejected per-tenant shares). A comment on the row says to wire it when concerts list.
+  - **DC3 Greene Stadium 7,086 "once confirmed":** Howard's facilities page (hubison.com) states no Greene capacity. Left blank.
+  - **STL2 Hollywood Casino Amphitheatre "6,805 seated, if the operator confirms":** the decision contradicts itself (store 6,805 seated, then "follow IND4 if it says totals", and IND4 says totals). Left blank. **Question for Kylie:** 6,805 seated, or a total with lawn (only a 20,000 estimate exists)?
+  - **X2, OTT2, EDM4, N12 (Ticketmaster id catch-up):** needs `scripts/ticketmaster-venues.mjs --all` with the Ticketmaster key, which only the nightly job has. To run.
+  - **RDU5:** next full recalibration, per the decision.
+- **Judgment calls:** N10 and OTT1 are stored with no setup (the whole room) rather than "concert": Impact Field's figure is the ballpark's seating, and "full bowl" names no setup; a row with no setup is what `capacityOn` uses for every event. Rejected: `setup: 'concert'` (it would only match by fallback and mislabel the figure). EDM3 is muted by storing no capacity (the 5,254 figure stays in a comment), the repo's existing way to mute a room; rejected: a new `muted` field (structural). CLE1's 5,000 row became a comment.
+- **For Kylie (not changed):** other rooms with two rows for the same setup, where the last row is the one used: Tampa MidFlorida (9,900 / 20,000), BayCare Sound (4,000 / 9,000), Philadelphia Freedom Mortgage Pavilion (25,488 / **7,000 used**), Nashville Bridgestone (10,000 / 20,000 / 18,500), Ascend (2,300 / 6,800), Mexico City Palacio (15,000 / 21,000), Pepsi Center (6,486 / 8,000), Minneapolis Grand Casino Arena (12,999 / 20,554), San Antonio Tobin (2,000 / 2,039). CLE1 (standing floors seated) and IND4 (lawn totals) may apply to some of them. PDX3 (seated 7,810 over the ~10,000 total) is her explicit pick but sits against IND4's lawn-total rule.
+
+### Item 14: commit the naming research docs — done
+Copied to `docs/research/topics/`: `naming-review-oct14.html`, `event-types-and-naming-table.html`, `event-types-and-naming-table.md`, `naming-review-answers-oct14.json`. Originals in `docs/build-5/research/` untouched.
+
+## Advisor log
+
+| When (PT, Oct 14) | Asked | Said | Did |
+|---|---|---|---|
+| Before merge | Sign off on PR #57 after my review and a merged build | Sign off; squash-merge; relay Codex's two questions; mention the day-total change; note the backfill caveat; expect line drift in the three files | Merged `d717cdc`; recorded above |
+| Plan | Overall build order and how to handle the missing boards, `icons.cjs`, the SeatGeek key, `/compact` | Data/docs first; small copy items; "~"; date page; home picker then Settings; crowd range; types → icons → names (dedupe last, own call); privacy with a migration that main tolerates unapplied; calendar; item 1 last. Build to the notes' text where boards are missing; never draw the six custom icons; SeatGeek behind an env var, no sign-up; check AXS/DICE terms before scraping; Ticketmaster id pass needs the job's key | Following this order |

@@ -590,7 +590,8 @@ const LIST: Team[] = [
   team('broncos', 'Denver Broncos', 'Broncos', 'NFL', 'football', 'denver', 'DEN'),
   team('nuggets', 'Denver Nuggets', 'Nuggets', 'NBA', 'basketball', 'denver', 'DEN'),
   team('avalanche', 'Colorado Avalanche', 'Avalanche', 'NHL', 'hockey', 'denver', 'COL'),
-  team('colorado-mammoth', 'Colorado Mammoth', 'Mammoth', 'NLL', 'lacrosse', 'denver', 'COL', ['Mammoth']),
+  // DEN5 (Kylie, Oct 14): no bare "Mammoth" alias, so it can't cross-match Utah's NHL club.
+  team('colorado-mammoth', 'Colorado Mammoth', 'Mammoth', 'NLL', 'lacrosse', 'denver', 'COL'),
   team('denver-summit-fc', 'Denver Summit FC', 'Summit FC', 'NWSL', 'soccer', 'denver', 'DEN', ['Denver Summit']),
   team('du-mhockey', 'Denver Pioneers Hockey', 'DU Hockey', "College men's hockey", 'hockey', 'denver', 'DU', ['Denver', 'Pioneers']),
   team('du-mbb', "Denver Pioneers Men's Basketball", 'DU MBB', "College men's basketball", 'basketball', 'denver', 'DU', ['Denver', 'Pioneers']),
