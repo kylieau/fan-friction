@@ -1,5 +1,6 @@
 -- Fan/Friction: your imported log (0002) takes the new event names (Kylie, Oct 14, 2026; build 5, item 13).
--- Run only after you approve the table in docs/build-5/kylie-log-retitle.md. Paste into Supabase's SQL Editor and Run.
+-- ON HOLD (Kylie, Oct 14): don't run yet; more research on these events comes first. Then regenerate with
+-- scripts/kylie-log-retitle.mjs, approve the table in docs/build-5/kylie-log-retitle.md, paste into Supabase's SQL Editor and Run.
 -- Safe to run more than once: a row is changed only while it still has its old title, so anything you've
 -- edited since is left alone. The new edit time makes every phone take the new title on its next open.
 -- When it runs, it lists each row it changed (old title, new title).

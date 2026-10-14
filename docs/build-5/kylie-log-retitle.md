@@ -1,5 +1,7 @@
 # Your imported log: new names, for your yes
 
+**On hold (Kylie, Oct 14): don't run 0027 yet.** She is adding research to flesh out the details on these events, and will answer the questions below after that; they aren't to be reopened before then. She confirmed the rename itself ("yes") and that the brackets on Dodgers games are the starters, which stay on each stub.
+
 Written Oct 14, 2026 (Claude Code). You asked for the stubs imported from `docs/product/kylie-logs.md` (migration 0002) to be renamed. They're already in the old style ("UCLA MBB vs. Maryland"), so this renames them **to the new style** the rest of the app now uses ("Maryland at UCLA · Basketball"). If you meant something else, say so and nothing runs.
 
 **How to apply:** read the table; if it's right, run `supabase/migrations/0027_kylie_log_titles.sql` in Supabase's SQL editor. It changes only rows that still have their old title, lists each change, and every phone picks the new names up on its next open. The table and the SQL come from one script, so they match.
