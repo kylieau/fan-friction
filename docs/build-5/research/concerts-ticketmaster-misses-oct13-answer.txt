@@ -1,0 +1,468 @@
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+  Fan/Friction: Concerts Ticketmaster Misses
+  (5,000+)
+     Oct 13, 2026         · ​@Kylie
+
+
+  Summary
+  Add the SeatGeek API as a catch-all feed and crawl AXS venue/artist pages; together they
+  surfaced most of the sample I checked, and AXS also lists Goldenvoice co-promoted DICE
+  shows like the PAWSA example. Trial JamBase as a normalized multi-seller feed before
+  committing.
+
+        Biggest misses are not on any one alternative seller. Insomniac megafestivals sell on
+        Front Gate, arena shows on AXS, pop-ups on DICE, and LA Phil Hollywood Bowl shows
+        on the Bowl's own box office.
+        Your example is catchable. PAWSA (Oct 17) has an AXS listing whose buy button hands
+        off to DICE, and Framework's site shows a waitlist, which signals a sell-out.
+        Pop-up capacity is the hard part. Permits and city contracts are the most reliable
+        source; promoter press releases are the usual one in practice; aggregator capacity
+        fields are often wrong.
+        Outside LA: AXS holds up in Las Vegas (MGM/AEG arenas). In Chicago the big crowds
+        sell through festival sites, so AXS adds little there.
+
+  Coverage counts below come from what searches surfaced, not a full audit of each seller.
+
+
+  1. LA sample, Aug 1 – Oct 31, 2026
+  25 events (37 show dates) found with a likely crowd of 5,000+ and no Ticketmaster sale.
+  "LA area" here includes Orange County and the Inland Empire; capacities are as stated or
+  reported, and blanks mean none was found.
+
+
+    Event                       Date            Venue       Primary seller              Promoter    Capacity
+                                                                                                    (source)
+
+    HARD Summer                 Aug 1–2         Hollywood   Front Gate (2025 edition,   HARD /      ~85,000/day,
+                                                Park,       EDM Identity)               Insomniac   sold out in 2025
+                                                Inglewood                                           (EDM Identity)
+
+
+
+
+                                                                                                               Page 1 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+    Event                       Date            Venue            Primary seller              Promoter       Capacity
+                                                                                                            (source)
+
+    Megan                       Aug 7–8         Crypto.com       AXS (AXS)                   Not stated     20,000+ seats
+    Moroney                                     Arena                                                       (AXS)
+
+    Head in the                 Aug 8–9         Rose Bowl /      Unverified                  88rising       Unverified
+    Clouds                                      Brookside                                    (unverified)   (listing)
+
+    KCON LA (3                  Aug 14–         Crypto.com       AXS (AXS)                   CJ ENM         20,000+ seats
+    nights)                     16              Arena                                        (unverified)   (AXS)
+
+    Just Like                   Aug 22          Brookside at     Festival site (platform     Goldenvoice    Unverified
+    Heaven                                      the Rose Bowl    unverified)
+
+    Rossi                       Aug 22          Exposition       DICE (Framework's           Framework      Same park
+                                                Lawn,            channel)                                   drew 12,000
+                                                Exposition                                                  sold out for
+                                                Park                                                        Disco Lines,
+                                                                                                            May 2
+                                                                                                            (EDMTunes)
+
+    MAMAMOO                     Aug 25          Crypto.com       AXS                         Not stated     20,000+ seats
+                                                Arena                                                       (AXS)
+
+    J. Cole                     Sep 1           Crypto.com       AXS                         Not stated     20,000+ seats
+                                                Arena                                                       (AXS)
+
+    Hollywood Bowl              Sep 9–          Hollywood        hollywoodbowl.com (NBC      LA Phil        17,500 seats
+    LA Phil shows:              23              Bowl             LA)                                        (KTLA)
+    Buddy Guy
+    (Sep 9),
+    OneRepublic
+    Fireworks
+    Finale (Sep 11–
+    12), Jazz at
+    Lincoln Center
+    (Sep 23)
+
+    Sun Soaked                  Sep 12          Huntington       sunsoaked.insomniac.com     Kaskade +      Unverified;
+                                                State Beach                                  Insomniac      2025 sold out
+
+    Ben Sterling                Sep 12          California       DICE (Framework's           Framework      Unverified
+    (Planet X)                                  Plaza, DTLA      channel)
+
+    Nocturnal                   Sep 19–         Glen Helen       Front Gate (EDM Identity)   Insomniac      80,000+ over
+    Wonderland                  20              Regional Park,                                              the 2023
+                                                San                                                         weekend, per
+                                                Bernardino                                                  sheriff
+                                                                                                            (Fontana
+                                                                                                            Herald News)
+
+
+
+
+                                                                                                                         Page 2 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+    Event                       Date            Venue            Primary seller              Promoter      Capacity
+                                                                                                           (source)
+
+    Francis Mercier             Sep 19          Reframe          DICE (Framework's           Framework     Lot held a
+    + Shimza                                    Studios          channel)                                  9,000-person
+                                                Outdoors,                                                  show (Bisnow)
+                                                Atwater
+                                                Village
+
+    Ocean Way                   Sep 26–         Santa Monica     oceanwayfestival.com        Goldenvoice   Up to
+                                27              Beach            (platform unverified)                     35,000/day
+                                                                                                           (Locale)
+
+    Disney Worlds               Sep 28;         Crypto.com       AXS (AXS, AXS)              Not stated    20,000+ seats
+    Collide; Jungle;            Oct 10;         Arena                                                      (AXS)
+    Kacey                       Oct 18–
+    Musgraves (2);              19; Oct
+    Weezer; YG                  24; Oct
+                                28
+
+    Prospa (3                   Oct 14–         Shrine Expo      AXS (Framework)             Framework +   5,000 standing,
+    shows)                      16              Hall                                         Goldenvoice   borderline
+                                                                                                           (AEG)
+
+    PAWSA                       Oct 17          Rio Vista Lot,   DICE; listed on AXS         Framework +   Unverified;
+                                                Historic Sears                               Goldenvoice   waitlist on
+                                                Building                                                   Framework
+
+    Hugel                       Oct 24          Reframe          DICE (Framework)            Framework +   Same lot as
+                                                Studios                                      Goldenvoice   above, 9,000
+                                                Outdoors                                                   precedent
+
+    Escape                      Oct 30–         NOS Events       Front Gate (EDM Identity)   Insomniac     125,000 over
+    Halloween                   31              Center, San                                                two nights in
+                                                Bernardino                                                 2017 (Fontana
+                                                                                                           Herald News)
+
+
+  PAWSA's address conflicts: DICE says 1485 Rio Vista Ave, Framework says 1951. Possible
+  extra candidates I could not size: The Soulection Experience (Oct 3, Reframe Studios
+  Outdoors) and Day Trip in the Park (Aug 16 and 23, LA State Historic Park). Hollywood Bowl
+  shows booked by Live Nation sell on Ticketmaster and are excluded.
+
+
+  2. Sources: coverage and machine access
+  AXS carried the most sample dates I could confirm; SeatGeek is the only seller with an
+  official, self-serve events API. "Seen" counts are listings that surfaced in searches, so
+  treat them as lower bounds.
+
+
+
+
+                                                                                                                         Page 3 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+     Source                                     Sample events seen      Machine access         Terms / limits
+
+     AXS                                        17 dates: 13            Public HTML venue      Terms of use not
+                                                Crypto.com Arena        and event pages; no    reviewed in detail
+                                                dates, 3 Prospa, and    public API found
+                                                the PAWSA listing       (unverified)
+                                                that hands off to
+                                                DICE (AXS PAWSA)
+
+     DICE                                       5 Framework shows       Partner-only           API requires being a
+                                                (Rossi, Ben Sterling,   GraphQL API (API       DICE selling partner;
+                                                Francis Mercier,        profile); public       scraping terms
+                                                PAWSA, Hugel)           pages embed            unverified
+                                                                        structured event
+                                                                        data with organizer
+                                                                        (DICE)
+
+     Front Gate Tickets                         3 Insomniac             No public API found    Unverified
+                                                festivals (HARD,        (unverified)
+                                                Nocturnal, Escape);
+                                                Sun Soaked likely
+
+     SeatGeek                                   Hugel (SeatGeek);       Official REST API,     API terms apply;
+                                                others not checked      /2/events , free       review before
+                                                                        client ID (guide)      commercial use
+
+     StubHub                                    PAWSA (StubHub)         Structured page        Unverified
+                                                                        data (JSON-LD
+                                                                        seen); no public API
+                                                                        (unverified)
+
+     Vivid Seats                                Escape, Sun Soaked,     Affiliate access       Unverified
+                                                Rio Vista Lot venue     only (unverified)
+                                                page (Vivid)
+
+     TickPick                                   Hugel, Soulection,      None found             Unverified
+                                                Day Trip (TickPick)
+
+     Eventbrite                                 0                       Public search API      Organization
+                                                                        shut off Feb 2020;     endpoints need a
+                                                                        only by event,         known ID
+                                                                        venue or organizer
+                                                                        ID (GitHub notice)
+
+
+
+
+                                                                                                                  Page 4 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+     Source                                     Sample events seen   Machine access         Terms / limits
+
+     Resident Advisor                           Nocturnal            No official API;       Terms reserve all
+                                                Wonderland; Rio      site's internal        rights; get
+                                                Vista Lot venue      GraphQL is used by     permission first
+                                                page (RA)            third parties (PyPI)
+
+     Framework site                             All Framework LA     The Events             Unverified
+                                                shows                Calendar REST API
+                                                                     (page metadata
+                                                                     shows tec-api v1,
+                                                                     site)
+
+     Insomniac /                                Their own events     Public pages; press    Unverified
+     Goldenvoice sites                                               sites list dates
+                                                                     (Insomniac press)
+
+     hollywoodbowl.com                          LA Phil Bowl shows   Public pages only      Unverified
+
+     JamBase                                    Crypto.com Arena     Paid REST API, free    Licensed data, plan
+     (aggregator)                               shows seen; others   developer tier; says   rate limits
+                                                not checked          it pulls 60+ sources
+                                                (JamBase)            incl. AXS, DICE,
+                                                                     Eventbrite
+                                                                     (JamBase)
+
+
+  Live Nation outside Ticketmaster mostly means Front Gate here (Insomniac and C3
+  festivals); I did not find a separate Live Nation feed.
+
+
+  3. Recommendation
+  Start with the SeatGeek API plus an AXS crawl: SeatGeek is the one official, free events
+  API, and AXS holds the arena shows and the Goldenvoice co-promoted DICE pop-ups.
+
+    1. SeatGeek API (catch-all). Query by city and date window each night. Resale listings
+        appear for pop-ups (Hugel was there) and for sold-out shows, which are exactly the big
+        ones.
+    2. AXS venue and artist pages. Crawl the LA venue pages (Crypto.com Arena, Shrine,
+        Greek, Peacock) and Goldenvoice listings. Check the AXS terms of use first, since
+        there is no public API.
+
+
+
+
+                                                                                                                Page 5 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+    3. Trial JamBase before building more scrapers. If its claimed AXS, DICE and Front Gate
+        coverage holds for this sample, it replaces steps 2 and 4.
+    4. Small promoter watch list for the highest-impact pop-ups: Framework (REST API),
+        Insomniac and Goldenvoice. These also give the best capacity statements.
+
+  Resale as catch-all: partial. It catches sold-out and high-demand shows across sellers,
+  but misses free events, non-transferable tickets (the Bowl's $1 seats cannot be resold, per
+  NBC LA), and shows that sell slowly. Resale pages also sometimes use vague venue
+  names, so match on date and coordinates, not venue strings.
+
+  Next step: run SeatGeek and JamBase against the 25-event table above and count hits
+  before choosing.
+
+
+  4. Pop-up sizing
+  Permits and city contracts give the most trustworthy numbers, but for LA pop-ups the
+  number you can actually get is usually a promoter press release; use it, discounted, and
+  flag the source.
+
+
+  Where a capacity can be found
+
+     Source                                 Example                               Reliability
+
+     City contract or                       Lollapalooza's 115,000 daily cap is   High: a legal ceiling
+     permit cap                             set in its city contract (Chicago
+                                            Tribune via Recorder); Riot Fest's
+                                            park contract estimates 150,000
+                                            tickets over three days (WBEZ)
+
+     LA City permits                        LAFD's Public Assemblage Unit         High, but whether these are
+                                            issues event permits and sets         publicly searchable is
+                                            occupancy limits (LAFD); LADBS        unverified; may need a records
+                                            temporary event permits need an       request
+                                            LAFD-approved safety plan
+                                            (LADBS)
+
+     Police or sheriff                      80,000+ at Nocturnal Wonderland       Medium-high; after the fact
+     counts                                 2023 (Fontana Herald News)
+
+     Promoter                               9,000 at Reframe (Bisnow); 12,000     Medium; rounded and self-
+     statements                             at Exposition Park (EDMTunes)         interested
+
+
+
+
+                                                                                                                Page 6 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+     Source                                 Example                               Reliability
+
+     Venue rental specs                     Shrine Expo Hall 5,000 standing       Medium-high for fixed sites
+                                            (AEG)
+
+     Aggregator                             FestivalMates lists Escape at         Low; do not use
+     capacity fields                        20,000 (FestivalMates), far under
+                                            its reported crowds; Songkick lists
+                                            LA State Historic Park at 2,000
+                                            (Songkick) despite sold-out multi-
+                                            day shows there
+
+
+
+  How often big pop-ups sell out
+  Most large pop-ups with published results were reported sold out, but promoters
+  publicize sell-outs and stay quiet otherwise, so this overstates the rate.
+
+
+     Event                                                               Reported crowd              Source
+
+     Disco Lines, Exposition Park (May 2026)                             12,000, sold out            EDMTunes
+
+     &ME, Cabrillo Beach (May 2026)                                      6,000+, sold out            EDMTunes
+
+     Chris Lake, LA State Historic Park (June 2026, 2                    Sold out, size not stated   EDMTunes
+     days)
+
+     re:frame season 1 (8 shows)                                         30,000+ total, all sold     EDM.com
+                                                                         out
+
+     HARD Summer 2025                                                    ~85,000/day, sold out       EDM
+                                                                                                     Identity
+
+     Sun Soaked 2025                                                     Sold out, size not stated   EDM.com
+
+     Fisher + Chris Lake, Hollywood Blvd                                 12,000                      Pollstar
+
+
+
+  Proposed sizing rule
+  The percentages below are my proposal, not sourced; calibrate them against permit or
+  police counts as you collect them.
+
+    1. Start from the best capacity available, in the reliability order above. For multi-day
+       events, use the per-day figure.
+
+
+
+                                                                                                                Page 7 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+    2. Default expected crowd = 80% of stated capacity.
+    3. Raise to 95% if the seller shows sold out or a waitlist (PAWSA's waitlist on Framework's
+        site is this signal), or if resale prices sit above face value.
+    4. No capacity found: use the same venue's or brand's best past result (Reframe lot:
+       9,000).
+    5. No history either: estimate from usable area. Clark County's outdoor-assembly guide
+       uses 7 sq ft per person (Clark County); mark the result "estimated".
+    6. Still nothing: keep the event on the map as "unsized, likely 5,000+" if it is a lot, park or
+        beach show from a promoter with a 5,000+ track record; drop it otherwise.
+
+
+  5. Chicago and Las Vegas spot check
+  The AXS half of the recommendation holds in Las Vegas but not Chicago, where the
+  biggest crowds sell through festival websites; SeatGeek and JamBase still need testing in
+  both.
+
+
+  Chicago
+
+    Event                      Date               Venue          Seller                       Promoter      Capacity (source)
+
+    Lollapalooza               Aug 1–2            Grant          lollapalooza.com             C3 Presents   115,000/day cap
+    (in-window                 (runs Jul          Park                                        (Live         (Chicago Tribune
+    days)                      30–Aug 2)                                                      Nation)       via Recorder)
+
+    ARC Music                  Sep 4–7            Union          arcmusicfestival.com         Auris         Unverified
+    Festival                                      Park           (EDMTunes)                   Presents
+
+    Riot Fest                  Sep 18–20          Douglass       riotfest.org; one            Riot Fest     Up to 50,000/day
+                                                  Park           comparison site lists                      (WBEZ)
+                                                                 Ticketmaster
+                                                                 (Stereoboard), so verify
+
+
+
+  Las Vegas
+
+    Event                            Date             Venue        Seller             Promoter     Capacity (source)
+
+    iHeartRadio Music                Sep 18–          T-Mobile     AXS                iHeartMedia 12,000–20,000 for concerts
+    Festival                         19               Arena        (iHeartMedia)                   (T-Mobile Arena)
+
+    Weezer                           Oct 23           T-Mobile     AXS (AXS)          Not stated   Same
+                                                      Arena
+
+
+
+
+                                                                                                                          Page 8 of 9
+Fan/Friction: Concerts Ticketmaster Misses (5,000+)
+
+
+
+
+    Event                            Date             Venue      Seller      Promoter     Capacity (source)
+
+    Doja Cat                         Oct 31           T-Mobile   AXS (AXS)   Not stated   Same
+                                                      Arena
+
+
+        MGM Grand Garden Arena (17,000) and Michelob ULTRA Arena (12,000) also sell on
+        AXS (AXS); I did not list their shows.
+        When We Were Young is skipping 2026 (News 3 LV), yet a festival aggregator still lists it
+        (Frontstage), a reminder to drop events not confirmed by a primary seller.
+        Life is Beautiful 2026 dates and status are unverified.
+        No large DICE pop-ups turned up in either city in my searches.
+
+
+  Caveats and unverified items
+        Not a full census. The LA table is what searches surfaced; Peacock Theater, Shrine
+        Auditorium, Greek Theatre (split between AXS and Ticketmaster) and Intuit Dome
+        shows were not checked show by show.
+        Seller platforms marked "festival site" (Ocean Way, Just Like Heaven, ARC,
+        Lollapalooza) were not traced to the underlying ticketing company.
+        No capacity found for PAWSA's Rio Vista Lot, California Plaza, Sun Soaked, Just Like
+        Heaven, Head in the Clouds or ARC.
+        API access and terms for AXS, Front Gate, StubHub and Vivid Seats were not
+        confirmed; read each terms page before automated collection.
+        Free shows are invisible to every seller here; none were sized in this pass.
+        The sizing percentages (80% / 95%) are a proposal to calibrate, not a measured rate.
+
+
+
+
+                                                                                                              Page 9 of 9
+
