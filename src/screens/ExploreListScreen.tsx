@@ -78,26 +78,17 @@ function dayLabel(date: string, today: string): string {
   return lead ? `${lead} · ${base}` : base;
 }
 
-/** "This week", "Next week", "Last week", or the dates ("Oct 26–Nov 1") for any other (Kylie, Oct 13). */
+/**
+ * The week line over the List (build 5, item 5; Kylie, Oct 14, answers D and D2): every week is a lineup,
+ * "This week's lineup", "Next week's lineup", "Last week's lineup", else "Week of Oct 26 · lineup". Shown uppercase.
+ */
 function weekWord(monday: string, thisMonday: string): string {
   const weeks = Math.round(daysBetween(thisMonday, monday) / 7);
-  if (weeks === 0) return 'This week';
-  if (weeks === 1) return 'Next week';
-  if (weeks === -1) return 'Last week';
-  return weekSpan(monday);
-}
-
-/** "OCT 12–18", or "OCT 26–NOV 1" across months. */
-function weekSpan(monday: string): string {
-  const sunday = addDays(monday, 6);
-  const m = (d: string) =>
-    new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', {
-      month: 'short',
-      timeZone: 'UTC',
-    });
-  return m(monday) === m(sunday)
-    ? `${m(monday)} ${Number(monday.slice(8))}–${Number(sunday.slice(8))}`
-    : `${m(monday)} ${Number(monday.slice(8))}–${m(sunday)} ${Number(sunday.slice(8))}`;
+  if (weeks === 0) return "This week's lineup";
+  if (weeks === 1) return "Next week's lineup";
+  if (weeks === -1) return "Last week's lineup";
+  const month = new Date(`${monday}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+  return `Week of ${month} ${Number(monday.slice(8))} · lineup`;
 }
 
 /**
