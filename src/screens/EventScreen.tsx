@@ -6,6 +6,7 @@ import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
 import { TypeIcon } from '../components/TypeIcon';
 import { LevelPill } from '../components/LevelPill';
+import { AddToCalendar } from '../components/AddToCalendar';
 import { ActivityLines, StatusLine } from '../components/ActivityLines';
 import { activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
@@ -250,9 +251,13 @@ export function EventScreen() {
 
       {/* One "+ Stub it" opens one sheet (build notes 3, 4.7); your answer sits under it as a status line. */}
       <div className="event-marks">
-        <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
-          + Stub it
-        </button>
+        {/* Add to calendar beside "+ Stub it" while the event is ahead (build 5, item 3, option B): no new row. */}
+        <span className="stub-actions">
+          <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
+            + Stub it
+          </button>
+          {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
+        </span>
         {you && (
           <span className="event-status">
             {/* Signed in, the line carries the stub's level as a pill, before and after the event (build 5, stub privacy;

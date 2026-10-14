@@ -8407,3 +8407,51 @@ button.back-link {
   margin-top: 6px;
   color: var(--ink2);
 }
+
+/* "+ Stub it" and Add to calendar on one row (build 5, item 3, option B). */
+.stub-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.stub-actions .gold-button:not(.small) {
+  flex: 1;
+}
+
+.stub-actions .stub-it-small {
+  align-self: auto;
+}
+
+.calendar-button {
+  position: relative;
+  flex: 0 0 52px;
+  width: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--dodger);
+  border-radius: 16px;
+  background: var(--card);
+  color: var(--dodger);
+  cursor: pointer;
+}
+
+/* The same invisible 44pt tap area as the other controls. */
+.calendar-button::after {
+  content: '';
+  position: absolute;
+  inset: -2px 0;
+}
+
+.calendar-g {
+  width: 24px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+  color: #4285f4;
+}
+
+a.bulk-row {
+  text-decoration: none;
+}
