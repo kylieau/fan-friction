@@ -4,6 +4,7 @@ import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { SearchButton } from '../components/SearchButton';
 import {
   filterChoices,
+  entryTags,
   followRequests,
   getAccount,
   getMyProfile,
@@ -91,7 +92,7 @@ export function YouScreen() {
   }, [entries]);
 
   const choices = useMemo(() => filterChoices(entries), [entries]);
-  const shown = filter === 'All' ? entries : entries.filter((entry) => entry.tags.includes(filter));
+  const shown = filter === 'All' ? entries : entries.filter((entry) => entryTags(entry).includes(filter));
   const stats = useMemo(() => logStats(shown), [shown]);
 
   const filters = (

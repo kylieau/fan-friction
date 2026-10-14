@@ -20,6 +20,7 @@ import {
   yourEntries,
   tagSummaries,
   type Entry,
+  entryTags,
 } from '../data';
 import { timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
@@ -72,7 +73,7 @@ export function StubsScreen() {
   const recent = useMemo(
     () =>
       entries
-        .filter((entry) => !filter || entry.tags.includes(filter))
+        .filter((entry) => !filter || entryTags(entry).includes(filter))
         .filter((entry) => picked.length === 0 || picked.some((tag) => entry.userTags?.includes(tag)))
         .filter((entry) =>
           chip === 'all' ? true : chip === 'watched' ? Boolean(entry.watched) : chip === 'attended' ? !entry.watched : chip === 'sports' ? entry.kind === 'game' : entry.kind === 'show' || entry.kind === 'festival',

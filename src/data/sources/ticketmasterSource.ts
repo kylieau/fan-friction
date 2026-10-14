@@ -170,7 +170,10 @@ function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'
 /** The sport a Ticketmaster genre names ("Hockey" → hockey); "other" when it is a rodeo, a race or unclear. */
 function sportOf(genre: string | undefined): string {
   const g = (genre ?? '').toLowerCase();
-  for (const s of ['hockey', 'basketball', 'football', 'soccer', 'baseball', 'lacrosse', 'rodeo', 'motorsports', 'tennis', 'cricket', 'wrestling', 'boxing']) if (g.includes(s)) return s;
+  // Lucha libre is wrestling (build 5, item 13). CMLL listings came in as boxing; the raw genre text is unconfirmed
+  // (no key outside the nightly job), so the rule keys on the words "lucha libre" in the genre or the event name.
+  if (g.includes('lucha libre')) return 'wrestling';
+  for (const s of ['hockey', 'basketball', 'football', 'soccer', 'baseball', 'lacrosse', 'volleyball', 'rodeo', 'motorsports', 'tennis', 'cricket', 'wrestling', 'boxing']) if (g.includes(s)) return s;
   return 'other';
 }
 

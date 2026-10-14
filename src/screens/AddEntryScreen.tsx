@@ -31,12 +31,14 @@ import { longLocalDate } from '../lib/dates';
 import { getPref, setPref } from '../lib/prefs';
 import { datePath, entryPath } from '../lib/view';
 
+// The type words (build 5, item 11): Concert (N02), Watch party (N01), and "Event" in place of "Special event" (N30).
+// "Event" stays stored as `special`; its title goes through the same keyword pass as the feeds (Theatre, Comedy…).
 const KINDS: { kind: EventKind; label: string }[] = [
   { kind: 'game', label: 'Game' },
-  { kind: 'show', label: 'Show' },
+  { kind: 'show', label: 'Concert' },
   { kind: 'festival', label: 'Festival' },
-  { kind: 'live-broadcast', label: 'Live broadcast' },
-  { kind: 'special', label: 'Special event' },
+  { kind: 'live-broadcast', label: 'Watch party' },
+  { kind: 'special', label: 'Event' },
 ];
 
 

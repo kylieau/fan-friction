@@ -19,6 +19,7 @@ import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLoc
 import { seedEventsOn } from './sources/seedSource';
 import { drawSize } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
+import { competitionOf, entryType, eventType } from './eventTypes';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import type { CrowdEvent, CrowdRange, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
@@ -196,35 +197,31 @@ function venueLabel(event: CrowdEvent): string | undefined {
   return event.place.name;
 }
 
+/** A sport key in its one label (build 5, item 11, N14): "Boxing", "Motorsports", "Sports event" for an unknown one. */
 function sportLabel(sport: string): string {
-  const names: Record<string, string> = {
-    baseball: 'Baseball',
-    basketball: 'Basketball',
-    football: 'Football',
-    hockey: 'Hockey',
-    soccer: 'Soccer',
-  };
-  return names[sport] ?? sport;
+  return entryType({ kind: 'game', sport, title: '' }).label;
 }
 
-/**
- * What kind of night it was. A game is named by its sport (Baseball, not Game).
- * A concert stays Show, or Festival / Live broadcast when that is the real kind.
- */
-export function eventTypeLabel(kind: string, sport: string): string {
-  if (kind === 'festival') return 'Festival';
-  if (kind === 'live-broadcast') return 'Live Broadcast';
-  if (kind === 'special') return 'Special';
-  if (kind === 'show' || sport === 'Concerts') return 'Concert';
-  if (sport === 'WNBA') return "Women's basketball";
-  return sport;
+/** What kind of event it was, by the controlled type list (build 5, item 11; replaces the old kind/sport words). */
+export function eventTypeLabel(kind: string, sport: string, title = ''): string {
+  return entryType({ kind: kind as Entry['kind'], sport, title }).label;
+}
+
+/** Stored system labels from before the type list, as they read now: "Special" → "Event", "Live broadcast" → "Watch party". */
+const LEGACY_TAGS: Record<string, string> = { Special: 'Event', 'Live broadcast': 'Watch party', 'Live Broadcast': 'Watch party' };
+
+/** A stub's system labels for chips and filters, legacy words mapped (stored rows are not rewritten). */
+export function entryTags(entry: Pick<Entry, 'tags'>): string[] {
+  return entry.tags.map((tag) => LEGACY_TAGS[tag] ?? tag);
 }
 
 /** "Basketball · WNBA", "Basketball · Women's college", "Football · High school": the row's type line for a hand-typed game. */
 export function entryTypeLabel(entry: Entry): string {
-  const base = eventTypeLabel(entry.kind, entry.sport);
+  const base = entryType(entry).label;
   if (entry.kind !== 'game') return base;
-  if (entry.competition) return `${base} · ${entry.competition}`;
+  // A seeded WNBA game kept "WNBA" as its sport: the type is Basketball and the league is the competition (N15).
+  const competition = entry.competition ?? (entry.sport === 'WNBA' ? 'WNBA' : undefined);
+  if (competition) return `${base} · ${competition}`;
   if (entry.level) return `${base} · ${levelPhrase(entry.level, entry.division)}`;
   return base;
 }
@@ -491,9 +488,11 @@ export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
     else facts.unshift(outcome);
   }
   if (!logged) {
-    const sport = event.audience.domain === 'sports' ? sportLabel(event.audience.sport) : '';
-    const type = eventTypeLabel(event.kind, sport);
-    if (type) facts.push({ label: 'Type', value: type });
+    const type = eventType(event);
+    facts.push({ label: 'Type', value: type.genre ? `${type.label} · ${type.genre}` : type.label });
+    // The league comes from the feed's home team (N15: WNBA is Basketball plus a Competition).
+    const competition = competitionOf(event);
+    if (competition) facts.push({ label: 'Competition', value: competition });
   }
   if (event.neutralSite) facts.push({ label: 'Site', value: 'Neutral' });
   if (event.starters && !facts.some((fact) => fact.label === 'Starter')) {
@@ -555,7 +554,7 @@ function entryFromEvent(event: CrowdEvent): Entry {
       kind: event.kind,
     });
   }
-  const label = event.kind === 'live-broadcast' ? 'Live broadcast' : event.kind === 'special' ? 'Special' : 'Event';
+  const label = eventType(event).label;
   return withFloor(event, {
     id: `mark-${event.id}`,
     eventId: event.id,
@@ -968,14 +967,7 @@ function counts(labels: string[]): CountRow[] {
 
 /** Chips for teams and sports she has logged more than once. */
 export function filterChoices(entries: Entry[]): CountRow[] {
-  return counts(entries.flatMap((entry) => entry.tags)).filter((row) => row.count >= 2);
-}
-
-/** Plain words for a log entry's kind. A show is a concert (C089: one label everywhere), not a sport. */
-function typeLabel(kind: string): string {
-  if (kind === 'live-broadcast') return 'Live broadcast';
-  if (kind === 'show') return 'Concert';
-  return kind.charAt(0).toUpperCase() + kind.slice(1);
+  return counts(entries.flatMap(entryTags)).filter((row) => row.count >= 2);
 }
 
 export function logStats(entries: Entry[]): LogStats {
@@ -985,8 +977,9 @@ export function logStats(entries: Entry[]): LogStats {
     venues: new Set(venues).size,
     watched: entries.filter((entry) => entry.watched).length,
     attended: entries.filter((entry) => !entry.watched).length,
-    byType: counts(entries.map((entry) => typeLabel(entry.kind))),
-    byTeamSport: counts(entries.flatMap((entry) => entry.tags)),
+    // By the controlled type (build 5, item 11): "Event" for an old special with no tag to go on.
+    byType: counts(entries.map((entry) => entryType(entry).label)),
+    byTeamSport: counts(entries.flatMap(entryTags)),
     bySport: counts(entries.map((entry) => (entry.sport === 'Concerts' ? 'Concert' : entry.sport))),
     byVenue: counts(venues),
   };
