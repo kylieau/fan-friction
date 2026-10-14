@@ -36,6 +36,33 @@ Status per notes item, file refs, judgment calls and open questions are below; t
 
 **Notes-vs-board or notes-vs-notes calls I made** (each listed under its item): read tile (board), first-open row tap (board), STL2 (left blank), backfill order for "Only me" (no widening), short budget (advisor reading), Pop-ups section wording (board).
 
+## Open (near-term verification, recorded Oct 14)
+
+Follow-ups Kylie asked to have recorded on Oct 14; nothing here is fixed yet, and none reopens a settled decision. Each entry says what is **confirmed** (read in the code or SQL) and what **needs investigation** (not yet tested). Deferred work is in `BACKLOG.md` (see the capacity entry below).
+
+**O1. Privacy default scope: what "Default for new stubs" actually changes.**
+- Confirmed: Settings › Privacy writes the profile-wide `profiles.visibility` (`SettingsPrivacyScreen.tsx`, `updateMyProfile({ visibility })`) and then sets the default level for new stubs (`setStubDefault`). Migration 0026 keeps that profile value in use beyond new stubs: shared night records and any entry or plan row with no level still read through `can_view(owner)` (the profile rule); `watch_place_visible` falls back to the profile's "Only me" when a row has no level; and the profile itself (profile cards) follows it as before.
+- Needs investigation: list every effect of changing the switch (new stubs, nights, rows without a level, watch places, profile visibility, anything else that reads `profiles.visibility`), and whether the label "Default for new stubs" matches those effects.
+
+**O2. Privacy enforcement and sync, live.**
+- Confirmed: migration 0026 ran successfully (Kylie, Oct 14). Nothing beyond the build and advisor review has been tested; neither establishes live enforcement.
+- Needs investigation, in a live test matrix: Private / Friends / Anyone, for entries and for plans, as seen by the owner, an approved follower, a signed-in person who isn't approved, a signed-out visitor and a blocked person. Include:
+  - watching-place protection (a place reaches approved followers only, never Anyone, never when the stub is Private);
+  - old-device sync (a copy of the app from before levels writing rows);
+  - the reported case where the pill shows Anyone while the database keeps the stub private (an old device's "Keep this one private" as the newer copy; noted under the stub privacy item below as a known mismatch).
+- Bulk changes ("Change past stubs…"): confirmed that the page reports "{n} stubs {level}" as soon as the local copy changes; the account save runs after (a failure shows only the app's general save warning), and each watched stub's place update is started but not awaited, and a failed one isn't reported (`setPastStubsVisibility`, `personalLog.ts`). Needs investigation: whether a partial failure leaves rows and places at different levels, or shows success for a change that didn't reach the database.
+- Record what was actually tested (who, which level, which surface, result).
+
+**O3. Final naming and layout verification.**
+- Confirmed: the last naming changes (G3 shortening past 32 characters, the round and game number kept together, the retitle of stubs made from events, college sport labels kept on imported titles) passed `titles-check.mjs` and a few phone screenshots.
+- Needs investigation: re-measure every affected surface at phone size after the final changes: long matchups, college sport labels, the protected round and game text. Fewer characters don't guarantee the same wrapping. Check row heights, truncation, overflow and badge alignment across the shared rows (Explore, the sheet, the date page lineup, Home, Stubs, Following, search, chip card) and the event page title. Record measured results and any exceptions.
+
+**O4. Reconcile this handoff with the latest answers.**
+- Confirmed: older sections and the status table predate several of Kylie's Oct 14 answers, e.g. the stub privacy heading still says it needs migration 0026 run (it has run), the "For Kylie (not changed)" capacity note lists STL2 and DC3 as open (both stored), naming entries predate the G3 rule and the retitle, and Wrigley's 0.367 appears in older text (now 0.421).
+- To do: label each superseded passage as superseded with the answer and date beside it, keeping the history, so later sessions don't redo finished work or re-ask answered questions.
+
+**Moved to Backlog:** capacity configuration selection (rooms with two capacity rows for the same setup) — `BACKLOG.md`, Build 5 follow-ups, "Rooms with two capacity rows".
+
 ## Status by notes item
 | Notes item | Status |
 |---|---|
@@ -90,7 +117,7 @@ All in `src/data/venues.ts` unless noted. Refs drifted by one line since 635a164
   - **X2, OTT2, EDM4, N12 (Ticketmaster id catch-up):** needs `scripts/ticketmaster-venues.mjs --all` with the Ticketmaster key, which only the nightly job has. To run.
   - **RDU5:** next full recalibration, per the decision.
 - **Judgment calls:** N10 and OTT1 are stored with no setup (the whole room) rather than "concert": Impact Field's figure is the ballpark's seating, and "full bowl" names no setup; a row with no setup is what `capacityOn` uses for every event. Rejected: `setup: 'concert'` (it would only match by fallback and mislabel the figure). EDM3 is muted by storing no capacity (the 5,254 figure stays in a comment), the repo's existing way to mute a room; rejected: a new `muted` field (structural). CLE1's 5,000 row became a comment.
-- **For Kylie (not changed):** other rooms with two rows for the same setup, where the last row is the one used: Tampa MidFlorida (9,900 / 20,000), BayCare Sound (4,000 / 9,000), Philadelphia Freedom Mortgage Pavilion (25,488 / **7,000 used**), Nashville Bridgestone (10,000 / 20,000 / 18,500), Ascend (2,300 / 6,800), Mexico City Palacio (15,000 / 21,000), Pepsi Center (6,486 / 8,000), Minneapolis Grand Casino Arena (12,999 / 20,554), San Antonio Tobin (2,000 / 2,039). CLE1 (standing floors seated) and IND4 (lawn totals) may apply to some of them. PDX3 (seated 7,810 over the ~10,000 total) is her explicit pick but sits against IND4's lawn-total rule.
+- **For Kylie (not changed; tracked in `BACKLOG.md`, "Rooms with two capacity rows"):** other rooms with two rows for the same setup, where the last row is the one used: Tampa MidFlorida (9,900 / 20,000), BayCare Sound (4,000 / 9,000), Philadelphia Freedom Mortgage Pavilion (25,488 / **7,000 used**), Nashville Bridgestone (10,000 / 20,000 / 18,500), Ascend (2,300 / 6,800), Mexico City Palacio (15,000 / 21,000), Pepsi Center (6,486 / 8,000), Minneapolis Grand Casino Arena (12,999 / 20,554), San Antonio Tobin (2,000 / 2,039). CLE1 (standing floors seated) and IND4 (lawn totals) may apply to some of them. PDX3 (seated 7,810 over the ~10,000 total) is her explicit pick but sits against IND4's lawn-total rule.
 
 ### Item 14: commit the naming research docs — done
 Copied to `docs/research/topics/`: `naming-review-oct14.html`, `event-types-and-naming-table.html`, `event-types-and-naming-table.md`, `naming-review-answers-oct14.json`. Originals in `docs/build-5/research/` untouched.
