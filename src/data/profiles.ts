@@ -467,6 +467,22 @@ export interface FeedItem {
   example?: boolean;
 }
 
+type PlanQuery = ReturnType<ReturnType<SupabaseClient['from']>['select']>;
+
+/**
+ * Someone else's plans, as cards (build 5, stub privacy; migration 0026): `plan_cards` carries the date, the place-free
+ * facts and the Watching / Interested flags, never the row's data. Until 0026 is applied the view doesn't exist, so the
+ * old table read (approved followers) is the fallback. Rows come back in the old shape (`data.watch`, `data.interested`).
+ */
+async function planCards(c: SupabaseClient, narrow: (q: PlanQuery) => PlanQuery): Promise<{ data: unknown[] | null }> {
+  const cards = await narrow(c.from('plan_cards').select('id, user_id, date, metro_id, event_id, title, venue, watch, interested'));
+  if (!cards.error) {
+    return { data: ((cards.data ?? []) as { watch?: boolean; interested?: boolean }[]).map((row) => ({ ...row, data: { watch: row.watch, interested: row.interested } })) };
+  }
+  const old = await narrow(c.from('plans').select('id, user_id, date, metro_id, event_id, title, venue, data'));
+  return { data: (old.data ?? null) as unknown[] | null };
+}
+
 /** The places the people you follow shared, keyed "user|event". Reads through the 0023 rule; nothing before it runs. */
 async function sharedPlaces(c: SupabaseClient, ids: string[]): Promise<Map<string, string>> {
   const { data, error } = await c.from('watch_places').select('user_id, event_id, place').in('user_id', ids).eq('public', true);
@@ -505,13 +521,7 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
     cardsById(c, ids),
     entryCards(c, ids, limit),
     sharedPlaces(c, ids),
-    c
-      .from('plans')
-      .select('id, user_id, date, metro_id, event_id, title, venue, data')
-      .in('user_id', ids)
-      .gte('date', earliestToday())
-      .order('date', { ascending: true })
-      .limit(limit),
+    planCards(c, (q) => q.in('user_id', ids).gte('date', earliestToday()).order('date', { ascending: true }).limit(limit)),
   ]);
   const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean; interested?: boolean } | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id))
@@ -621,13 +631,7 @@ export interface PlanCard {
 export async function plansOf(userId: string): Promise<PlanCard[]> {
   const c = supabase();
   if (!c) return [];
-  const { data } = await c
-    .from('plans')
-    .select('id, date, metro_id, event_id, title, venue, data')
-    .eq('user_id', userId)
-    .gte('date', earliestToday())
-    .order('date', { ascending: true })
-    .limit(20);
+  const { data } = await planCards(c, (q) => q.eq('user_id', userId).gte('date', earliestToday()).order('date', { ascending: true }).limit(20));
   return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean; interested?: boolean } | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id) && !p.data?.interested)
     .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined, ...(p.data?.watch ? { watch: true } : {}) }));

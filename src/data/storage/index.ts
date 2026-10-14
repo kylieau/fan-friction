@@ -185,15 +185,22 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
   return { entries, plans, settings, log };
 }
 
-function newerWins<T extends { id: string; updatedAt?: string }>(account: T[], phone: T[], removed: Record<string, string>): T[] {
+function newerWins<T extends { id: string; updatedAt?: string; visibility?: string; private?: boolean }>(account: T[], phone: T[], removed: Record<string, string>): T[] {
   const rows = byId(account);
   for (const row of phone) {
     const mine = rows.get(row.id);
     if (!mine) rows.set(row.id, row);
-    else if ((row.updatedAt ?? '') > (mine.updatedAt ?? '')) rows.set(row.id, row);
+    else if ((row.updatedAt ?? '') > (mine.updatedAt ?? '')) rows.set(row.id, carryLevel(row, mine));
+    else rows.set(row.id, carryLevel(mine, row));
   }
   // A row removed on any device stays out, unless it was written again after the removal.
   return [...rows.values()].filter((row) => !(row.id in removed) || (row.updatedAt ?? '') > removed[row.id]);
+}
+
+/** A newer copy that predates stub levels keeps the other copy's level, so the pill never shows a level the database doesn't hold. */
+function carryLevel<T extends { visibility?: string; private?: boolean }>(winner: T, other: T): T {
+  if (winner.visibility || !other.visibility) return winner;
+  return { ...winner, visibility: other.visibility, ...(other.private ? { private: true } : {}) };
 }
 
 /**

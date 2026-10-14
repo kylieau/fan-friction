@@ -33,6 +33,8 @@ interface EntryRow {
   event_id: string | null;
   data: Omit<Entry, 'note'>;
   updated_at?: string;
+  /** The stub's level (0026); absent until that migration runs. */
+  visibility?: string | null;
 }
 
 interface NoteRow {
@@ -51,6 +53,7 @@ interface PlanRow {
   venue: string | null;
   data: Record<string, unknown>;
   updated_at?: string;
+  visibility?: string | null;
 }
 
 interface SettingsRow {
@@ -95,6 +98,10 @@ function planRow(userId: string, plan: Plan): PlanRow {
     venue: venue ?? null,
     data: rest as Record<string, unknown>,
   };
+}
+
+function isLevel(value: unknown): value is 'anyone' | 'friends' | 'private' {
+  return value === 'anyone' || value === 'friends' || value === 'private';
 }
 
 function asOrder(value: string): YouOrder {
@@ -160,6 +167,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         hiddenSeedIds: settings?.hidden_seed_ids ?? EMPTY_LOG.hiddenSeedIds,
         added: (entries ?? []).map((row) => {
           const entry: Entry = { ...row.data, id: row.id };
+          // A row saved before levels existed takes the level the database gave it (0026's backfill).
+          if (!entry.visibility && isLevel(row.visibility)) entry.visibility = row.visibility;
           // The edit time the app wrote (on the server's clock) decides who wins (R06); the server's own stamp is the fallback.
           const at = isoTime(row.data.updatedAt) ?? isoTime(row.updated_at);
           if (at) entry.updatedAt = at;
@@ -178,6 +187,7 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
             venue: row.venue ?? undefined,
             ...row.data,
           };
+          if (!plan.visibility && isLevel(row.visibility)) plan.visibility = row.visibility;
           const at = isoTime((row.data as { updatedAt?: string }).updatedAt) ?? isoTime(row.updated_at);
           if (at) plan.updatedAt = at;
           return plan;

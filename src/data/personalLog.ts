@@ -21,7 +21,7 @@ import { drawSize } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
-import type { CrowdEvent, CrowdRange, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
+import type { CrowdEvent, CrowdRange, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, StubVisibility, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -456,16 +456,75 @@ export function updateEntry(entryId: string, edit: EntryEdit) {
   commit({ ...snapshot, added });
 }
 
+// ---------- Stub levels (build 5, stub privacy; Kylie, Oct 14, answer E) ----------
+
+/** The level a new stub takes: the profile's switch, once the account has said it; Private when signed out or unknown. */
+let defaultLevel: StubVisibility = 'private';
+
+export function stubDefault(): StubVisibility {
+  return defaultLevel;
+}
+
+/** Set by the account layer and by Settings › Privacy when the profile's switch is read or changed. */
+export function setStubDefault(level: StubVisibility) {
+  defaultLevel = level;
+}
+
+/** A stub's level as the app shows it: its own, else what an older row meant (kept private, a Private watch), else Private. */
+export function stubLevel(row: Pick<Entry, 'visibility' | 'private' | 'watchShare'>): StubVisibility {
+  if (row.visibility) return row.visibility;
+  if (row.private) return 'private';
+  if (row.watchShare === 'private') return 'private';
+  if (row.watchShare === 'friends') return 'friends';
+  return 'private';
+}
+
+/** The level on a row, with the older `private` flag kept in step for copies of the app that only read it. */
+function withLevel<T extends Pick<Entry, 'visibility' | 'private'>>(row: T, level: StubVisibility): T {
+  const next = { ...row, visibility: level };
+  if (level === 'private') next.private = true;
+  else delete next.private;
+  return next;
+}
+
+/**
+ * Change one stub's level (the Stub it sheet's pill, the event page's status line). A watch's shared place follows:
+ * Private keeps it on this log, Friends or Anyone shares it with approved followers only (never Anyone).
+ */
+export async function setStubVisibility(eventId: string, level: StubVisibility): Promise<string | null> {
+  commit({
+    ...snapshot,
+    plans: snapshot.plans.map((plan) => (plan.eventId === eventId ? { ...plan, visibility: level } : plan)),
+    added: snapshot.added.map((entry) => (entry.eventId === eventId ? withLevel(entry, level) : entry)),
+  });
+  const row = snapshot.plans.find((plan) => plan.eventId === eventId && plan.watch) ?? snapshot.added.find((entry) => entry.eventId === eventId && entry.watched);
+  if (!row) return null;
+  return setWatchDetails(eventId, level === 'private' ? 'private' : 'friends', watchPlaceOf(row));
+}
+
+/** The same for one stub by its own id (a hand-added stub has no event). */
+export function setEntryVisibility(entryId: string, level: StubVisibility) {
+  const entry = snapshot.added.find((row) => row.id === entryId);
+  if (entry?.eventId) {
+    void setStubVisibility(entry.eventId, level);
+    return;
+  }
+  commit({ ...snapshot, added: snapshot.added.map((row) => (row.id === entryId ? withLevel(row, level) : row)) });
+}
+
+/** "Change past stubs…" (Settings › Privacy): every stub you've logged takes one level, in any direction. */
+export function setPastStubsVisibility(level: StubVisibility): number {
+  const added = snapshot.added.map((entry) => withLevel(entry, level));
+  commit({ ...snapshot, added });
+  // Each watched stub's shared place follows (approved followers only, never Anyone).
+  for (const entry of added) if (entry.watched && entry.eventId && watchPlaceOf(entry)) void setWatchDetails(entry.eventId, level === 'private' ? 'private' : 'friends', watchPlaceOf(entry));
+  return added.length;
+}
+
 /** Keep one entry private, or share it again. The stamp and everything else stay. */
 export function setEntryPrivate(entryId: string, on: boolean) {
-  const added = snapshot.added.map((entry) => {
-    if (entry.id !== entryId) return entry;
-    const next: Entry = { ...entry };
-    if (on) next.private = true;
-    else delete next.private;
-    return next;
-  });
-  commit({ ...snapshot, added });
+  // Now a level (build 5, stub privacy): private, or back to your default.
+  setEntryVisibility(entryId, on ? 'private' : stubDefault());
 }
 
 /** Take an entry out of the log. For a linked night this is the same as un-tapping Attended. */
@@ -604,7 +663,7 @@ export function toggleWasThere(event: CrowdEvent) {
 }
 
 function freshEntry(event: CrowdEvent, watched: boolean): Entry {
-  const entry = entryFromEvent(event);
+  const entry = withLevel(entryFromEvent(event), stubDefault());
   const stamp = stampNow(event, new Date());
   if (stamp) entry.stamp = stamp;
   // The crowd is not taken at the tap (Kylie, Oct 11, call 4): it locks with the stamp, see lockCrowds.
@@ -846,6 +905,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     ...(before?.userTags?.length && answer !== 'interested' ? { userTags: before.userTags } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
+    // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
+    visibility: before?.visibility ?? stubDefault(),
   };
   commit({ ...snapshot, plans: [...snapshot.plans.filter((row) => row.eventId !== event.id), plan] });
 }
@@ -900,6 +961,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       if (plan.watch) {
         entry.watched = true;
         if (plan.watchShare) entry.watchShare = plan.watchShare;
+        if (plan.visibility) Object.assign(entry, withLevel(entry, plan.visibility));
         if (plan.watchedPlace) entry.watchedPlace = plan.watchedPlace;
         if (plan.watchedPlace) entry.watchedWhere = /^home$/i.test(plan.watchedPlace) ? 'home' : 'public';
       }

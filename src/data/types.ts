@@ -575,9 +575,14 @@ export interface Entry {
    * Friends shares the place with your approved followers. Absent until chosen; nothing is preselected.
    */
   watchShare?: 'private' | 'friends';
+  /** Who sees this stub (build 5, stub privacy): Anyone, Friends (approved followers) or Private. Absent on older rows. */
+  visibility?: StubVisibility;
   /** When this device last changed the entry (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
 }
+
+/** A stub's level, Venmo-style (Kylie, Oct 14, answer E). The profile's switch is the default for new ones. */
+export type StubVisibility = 'anyone' | 'friends' | 'private';
 
 /** An upcoming night she flagged. Separate from "I was there". */
 export interface Plan {
@@ -599,6 +604,8 @@ export interface Plan {
   /** A Watching plan's Private / Friends choice and place (build notes 3, 4.7); they carry into the Watched stub. */
   watchShare?: 'private' | 'friends';
   watchedPlace?: string;
+  /** Who sees this plan (build 5, stub privacy); it carries into the stub. */
+  visibility?: StubVisibility;
   /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.

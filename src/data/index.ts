@@ -430,6 +430,7 @@ export {
   yourEntries,
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
+export { stubDefault, setStubDefault, stubLevel, setStubVisibility, setEntryVisibility, setPastStubsVisibility } from './personalLog';
 export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, toggleFavoriteCity, setEntrySeats, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
 export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
 export { hasUnsyncedChanges } from './storage';

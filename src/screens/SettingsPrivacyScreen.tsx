@@ -1,10 +1,15 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
-import { getAccount, getMyProfile, subscribeAccount, updateMyProfile, type Visibility } from '../data';
+import { getAccount, getMyProfile, setStubDefault, subscribeAccount, updateMyProfile, type StubVisibility, type Visibility } from '../data';
 
 /** The three levels (Kylie, Oct 14, answer E): the profile switch's values, relabeled. */
 export const VISIBILITY_WORDS: Record<Visibility, string> = { anyone: 'Anyone', approved: 'Friends', only_me: 'Private' };
+
+/** The profile's switch as a stub level: the default for new stubs. */
+export function levelFor(visibility: Visibility | undefined | null): StubVisibility {
+  return visibility === 'anyone' ? 'anyone' : visibility === 'approved' ? 'friends' : 'private';
+}
 const ORDER: Visibility[] = ['anyone', 'approved', 'only_me'];
 
 /**
@@ -35,7 +40,7 @@ export function SettingsPrivacyScreen() {
     if (error) {
       setValue(before);
       setNote(error);
-    }
+    } else setStubDefault(levelFor(next));
   };
 
   return (

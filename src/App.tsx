@@ -23,7 +23,9 @@ import { FollowingScreen } from './screens/FollowingScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
 import { backfillLegacyCrowds, getCityDate, lockCrowds, settlePassedPlans, subscribeLogLoaded } from './data';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
+import { getAccount, getMyProfile, setStubDefault, subscribeAccount } from './data';
+import { levelFor } from './screens/SettingsPrivacyScreen';
 
 /** /night/<date> was the date page's first address. */
 function OldDateRedirect() {
@@ -35,6 +37,20 @@ function Shell() {
   const { pathname } = useLocation();
   // The first-open picker: on while no home is set, and kept open after home is picked until Done.
   const [firstOpen, setFirstOpen] = useState(() => !getHomeId());
+
+  // The level a new stub takes is the profile's switch (build 5, stub privacy); Private when signed out.
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
+  useEffect(() => {
+    let current = true;
+    if (!account) {
+      setStubDefault('private');
+      return;
+    }
+    getMyProfile().then((profile) => current && setStubDefault(levelFor(profile?.visibility)));
+    return () => {
+      current = false;
+    };
+  }, [account?.id]);
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   useEffect(() => {
