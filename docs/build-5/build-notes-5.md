@@ -28,7 +28,7 @@ Kylie answered A–E on Oct 14 (under item 6; E: Anyone kept, new users default 
 
 The naming review is closed (item 15): Cosm is a Watch party, the Add form says Concert, full playoff words on the event page (N03 follows her note, not her form choice; see item 15), artist before tour, co-bills and multi-day passes all decided. Three answers differ from the lean: N03 (note overrides choice), N08 (Preseason moves to a suffix) and N29 (note overrides choice: "vs." with a period). N16 adds a note: codes stay on chips. Item 13's "still open" list is mostly settled; what's left is listed there.
 
-Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3. The "~" question is closed (item 10).
+Regional events (item 2): backlog next step — Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog; nothing wired in build 5. CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug; keep the no-code check after the game). Still on hold: where crowds with no size show in Explore. The "~" question is closed (item 10).
 
 ## 1. Concerts Ticketmaster misses
 
@@ -81,13 +81,13 @@ Rejected:
 - **Assuming every pop-up sells out:** overstates most shows.
 - **My earlier flat 90%:** doesn't separate sold-out shows from the rest.
 
-## 2. Regional events: UNDECIDED (to-do)
+## 2. Regional events: backlog (next step)
 
-**TO-DO: Research prompt: should apps like this show regional events further out?**
+**Backlog next step (Kylie, Oct 14):** Whoever builds (Claude) writes a generalized research prompt for regional events and festivals, then adds it to the backlog. Nothing is wired in build 5.
 
-**Build instruction:** none. Don't build anything here until the research comes back and Kylie decides. Context: no regional list or distance rule exists on main.
+**Build instruction:** none for build 5. Don't build anything here until the research comes back and Kylie decides. Context: no regional list or distance rule exists on main.
 
-Not a build item. Nothing here should be built until the research comes back and Kylie decides. Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
+Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
 
 ### Background: the earlier 60-mile discussion (not decided)
 
@@ -1075,20 +1075,20 @@ Why: one short mark, the same everywhere, tells you a number is an estimate with
 
 Rejected: an "est." suffix (`estimated-crowds-alt-est-suffix-rows.png`); a separate label word; a different color; "Up to 400".
 
-This closes the open "~" question. It doesn't change the NLCS G3 flag below, which is about which figure is highlighted.
+This closes the open "~" question. The NLCS G3 note below is CLOSED (not a bug); it was about which figure is highlighted.
 
 Boards: `/workspace/ff-gap-review/mosaic/b5/v4/estimated-crowds.png`, `estimated-crowds-lean-map-chip.png`, `estimated-crowds-lean-list-row.png`, `estimated-crowds-lean-selected-card.png`, `estimated-crowds-lean-event-crowd.png`, `estimated-crowds-lean-about-estimate.png`; live references `estimated-crowds-live-map.png`, `estimated-crowds-live-event-crowd.png`; rejected `estimated-crowds-alt-est-suffix-rows.png` (on the box).
 
 ### On hold (Kylie working with Claude)
 
-- **ON HOLD:** Where crowds with no size show in Explore (beyond the blank rule above).
-- Regional events are no longer a placement question; they're undecided (item 2).
+- **ON HOLD:** Where crowds with no size show in Explore (beyond the blank rule above). Board: `/workspace/ff-gap-review/mosaic/b5/unsized.png` (older; superseded on rows, chips and cards by the blank rule).
+- Regional events: backlog next step (item 2). Claude writes a generalized research prompt for regional events and festivals, then adds it to the backlog. Nothing wired in build 5.
 
-### Open flag: "~55,000 Estimated" on NLCS G3
+### CLOSED: "~55,000 Estimated" on NLCS G3 (not a bug)
 
 **Build instruction:** no code change. After the game, check that the nightly results pass writes LA's Oct 14 result and the page switches to Announced. Context: `src/data/crowdFigures.ts` and `src/data/results.ts` are unchanged at 635a164.
 
-The live event page shows "~55,000 Estimated" for NLCS G3 (Dodgers vs. Brewers, Dodger Stadium). Checked against Final > Announced > Estimated (D04). **Finding: the code is behaving correctly; no Announced or Final figure exists.**
+The live event page shows "~55,000 Estimated" for NLCS G3 (Dodgers vs. Brewers, Dodger Stadium). Checked against Final > Announced > Estimated (D04). **Finding: the code is behaving correctly; no Announced or Final figure exists. Not a bug — CLOSED (Kylie, Oct 14).**
 
 - The game is Wed Oct 14 at 5:00 PM PT, so it hasn't been played yet (checked Oct 14, 12:30 AM PT). Event `2026-10-14-mlb-849811` in `data/schedule-archive/la/2026-10-13.json` has `crowd: []` and an `expectedDraw` of 54,656 (planning blend), which rounds to ~55,000.
 - There is no `data/results/la/2026-10-14.json`, so `withResults` (`src/data/results.ts`) has no box-score attendance to put in the Announced slot.
