@@ -81,10 +81,13 @@ export function WhyCard({
                     <span className={`why-bar${feeds ? '' : ' quiet'}`} aria-hidden>
                       <span className="why-bar-fill" style={{ width: `${Math.max(4, Math.round((size / max) * 100))}%` }} />
                     </span>
-                    <span className="why-row-crowd">
-                      <CrowdMark />
-                      {size > 0 ? crowdThousands(size) : '—'}
-                    </span>
+                    {/* No size shows nothing (build 5, item 3); the event page says "Size unknown". */}
+                    {size > 0 && (
+                      <span className="why-row-crowd">
+                        <CrowdMark />
+                        {crowdThousands(size)}
+                      </span>
+                    )}
                     {e.assessment && <OccasionTag occasion={e.assessment.occasion} />}
                     <EventFrictionPill event={e} />
                   </span>

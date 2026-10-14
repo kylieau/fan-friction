@@ -379,7 +379,8 @@ export function EventScreen() {
             <span className="crowd-kind">Seats · no estimate yet</span>
           </>
         ) : (
-          <span className="crowd-kind">No count found yet</span>
+          // No count, estimate or room size (build 5, item 3). The word "unsized" never shows.
+          <span className="crowd-kind">— Size unknown</span>
         )}
         {me.soldOut && shown && <span className="tag-soldout">SOLD OUT</span>}
       </section>
