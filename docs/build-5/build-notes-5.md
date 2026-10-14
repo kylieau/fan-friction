@@ -1,6 +1,19 @@
 # Build 5 notes
 
-Three items: concerts that Ticketmaster misses, regional events, and Add to calendar. Each item gives what we do, why, and the options we turned down.
+Each item gives what we do, why, and the options we turned down.
+
+## Approved so far
+
+- Concerts Ticketmaster misses: sources, dedupe and pop-up sizing (item 1).
+- Add to calendar, option B: an icon button beside "+ Stub it" opens a chooser (item 3; Mosaic, Oct 13).
+- Stub privacy, Venmo-style (Mosaic, Oct 13).
+- Date page r3 (Mosaic, Oct 14).
+- "THIS WEEK'S LINEUP" label on the Explore List (Mosaic, Oct 14).
+- Unknown crowd size shows blank on rows, chips and the selected card, and "— Size unknown" on the event page (Mosaic, Oct 14).
+- Crowd size range setting in You › Settings › Events (Mosaic, Oct 14).
+- Kylie's city round 2 review form answers (Oct 14).
+
+Not decided: regional events "further out" (now a research to-do, item 2). Open flag: "~55,000 Estimated" on NLCS G3.
 
 ## 1. Concerts Ticketmaster misses
 
@@ -41,7 +54,7 @@ For one-off venues (lots, fields, temporary sites):
 - **95%** when the show is sold out or has a waitlist.
 - **Festivals are sized per day**, not as a whole weekend.
 - **No stated capacity:** use the best past edition's attendance.
-- **Nothing to go on:** mark it **"unsized"**. It is shown in the app but not counted toward scores.
+- **Nothing to go on:** mark it **"unsized"** (internal term only). It is shown in the app but not counted toward scores. In the app: blank on rows, chips and the selected card; "— Size unknown" on the event page. The word "unsized" never appears in UI copy.
 
 Why: stated capacity is the only firm number we usually have, and pop-ups rarely fill completely, so we scale it down unless there is evidence the show sold out.
 
@@ -51,15 +64,21 @@ Rejected:
 - **Assuming every pop-up sells out:** overstates most shows.
 - **My earlier flat 90%:** doesn't separate sold-out shows from the rest.
 
-## 2. Regional events
+## 2. Regional events: UNDECIDED (to-do)
 
-**Rule:** an event within **60 miles** of the metro's existing center point counts as local. 60 miles is a starting value, not a sourced figure, and can be changed.
+**TO-DO: Research prompt: should apps like this show regional events further out?**
 
-**Farther big events** go in a simple **"Regional" list**: name, date and distance only, with no score.
+Not a build item. Nothing here should be built until the research comes back and Kylie decides. Board for reference: `/workspace/ff-gap-review/mosaic/b5/v3/regional.png` (on the box).
 
-Why: this keeps scores honest (only events whose crowds plausibly affect the metro) while still showing big nearby events.
+### Background: the earlier 60-mile discussion (not decided)
 
-### Rejected for now
+Proposed rule: an event within **60 miles** of the metro's existing center point counts as local. 60 miles is a starting value, not a sourced figure, and can be changed.
+
+Farther big events would go in a simple **"Regional" list**: name, date and distance only, with no score.
+
+Proposed reasoning: this would keep scores honest (only events whose crowds plausibly affect the metro) while still showing big nearby events.
+
+#### Options set aside in that discussion
 
 - **Corridor tier:** would need routing, travel-window timing and counting unique attendees, and attendance for most of these events is unknown anyway.
 - **CSA boundaries:** make Coachella local to LA and drop Sonoma.
@@ -67,9 +86,9 @@ Why: this keeps scores honest (only events whose crowds plausibly affect the met
 - **City hall as the center point:** we keep the existing metro center.
 - **Drive time:** circular, since traffic depends on the events we're measuring.
 
-### Venues newly in range
+#### Venues that would come into range
 
-These need sourced capacities, or they stay unsized:
+These would need sourced capacities, or they stay unsized:
 
 - NOS Events Center
 - Glen Helen
@@ -807,23 +826,92 @@ An **icon button beside "+ Stub it"** opens a chooser sheet with two choices: **
 
 Board: `/workspace/ff-gap-review/mosaic/b5/v2/` (on the box).
 
-### 3. Crowds with no size
+### 3. Crowds with no size (updated Oct 14)
 
 Never show the word "unsized" in the app.
 
 - **Event page:** "— Size unknown".
-- **Rows and chips:** a bare "—".
-- **Tight spaces:** nothing.
+- **Rows, chips and the selected card:** nothing (blank). This replaces the Oct 13 bare "—" rule. Ignore the dashes on the v3 boards.
 
-This updates the pop-up sizing wording in item 1: "unsized" stays as the internal term in notes and code, but never in UI copy.
+Why: a dash in every row reads as noise; blank is quieter, and the event page is where the full explanation belongs.
+
+Rejected: the bare "—" on rows and chips (Oct 13 version); the word "unsized" anywhere in UI copy.
+
+The pop-up sizing item (item 1) is updated to match: "unsized" stays as the internal term in notes and code only.
+
+## Approved with Mock Mosaic (Kylie, Oct 14)
+
+### 4. Date page r3
+
+Boards: `/workspace/ff-gap-review/mosaic/datepage/datepage-r3.png` and the lean phone `datepage-r3-lean.png` (on the box).
+
+Order, top to bottom:
+
+1. **Header and forecast card** stay on top, as now.
+2. **Local Competition** (capitalized). No duplicate summary line. An **hourly weather strip** sits above its timeline. The temperatures on the board are example values; use real hourly forecast data.
+3. **"<Dayname>'s lineup"**, for example "Wednesday's lineup". The day name changes with the date. Sorted by **time**. Rows use the **shared Explore row**: time leading and top-aligned, title, venue underneath, crowd and badges on the right.
+
+Row details:
+
+- **Attending** is plain link-blue text with the ticket icon. No fill.
+- **No "+ Stub it"** on date page rows.
+- **Icons everywhere:** ticket = Attending, TV = Watching, bookmark = Interested.
+
+Why: the day's situation (forecast, competition, weather by hour) comes first, then the events in the order you'd live them. Reusing the Explore row keeps one row design across the app.
+
+Rejected: sorting by crowd size; weather on every row; "+ Stub it" on rows; a filled Attending pill (filled navy is reserved for actions or selection); a "You're attending" text line.
+
+### 5. Lineup label
+
+Board: `/workspace/ff-gap-review/mosaic/b5/v3/lineup.png` (on the box).
+
+On the Explore List, "THIS WEEK · N EVENTS" becomes **"THIS WEEK'S LINEUP · N EVENTS"**.
+
+Why: one clear use of the word on Explore, at the top of the list, without repeating it.
+
+Rejected: "lineup" in every day band; using it as the Map sheet label.
+
+Reconciling N16 (which picked "Saturday's lineup" on a day's list): the day-name form lives on the **date page** heading ("Wednesday's lineup", item 4). The Explore List uses **THIS WEEK'S LINEUP**. Day bands on Explore don't use the word.
+
+### 6. Crowd size range setting
+
+Boards: `/workspace/ff-gap-review/mosaic/minsize/minsize-r6.png` and phones `minsize-r6-1-settings.png` to `minsize-r6-5-datepage-filtered.png` (on the box).
+
+**Where:** a new **Events** section in You › Settings, with the row "Crowd size · 3,000 – No max ›" (the board's value is an example).
+
+**Scope:** applies everywhere (Explore map and list, date pages, search). No per-page exceptions.
+
+**Picker:**
+
+- A two-handle slider from 0 to 80,000+ (0 = no min, 80,000+ = no max). It snaps in steps of 5,000 (17 stops).
+- Labels 0 / 20,000 / 40,000 / 60,000 / 80,000+, with light ticks at every 5,000.
+- Min and Max number-pad fields accept any whole thousand. Typed values snap to the nearest 1,000 and can sit between slider stops.
+- Full numbers with commas, never "k".
+- Helper: "Slider moves in steps of 5,000. Type any thousand for exact values. 80,000+ means no max."
+
+**Hidden events:** a quiet link-blue 11pt line, "N events outside your crowd size · Show", in Explore day bands and at the bottom of the date page lineup. Counts on the boards are examples.
+
+**Rules:**
+
+- Stubbed events and events friends are attending always show.
+- Events with no listed size show by default. A toggle, "Show events with unknown size", controls them.
+- Show reveals the hidden events for that view only. It doesn't change the setting.
+- New users start with no min and no max.
+
+Why: one setting the user controls everywhere, with exact values possible but coarse dragging, and nothing silently lost (the Show line).
+
+Rejected: min only; fixed-tier dropdowns; a stepper; free typing of any number; "k" abbreviations; a 50,000 cap; dragging in 1,000 steps; per-tab filters; a hard hide with no Show link.
+
+Caveats: the Settings screen isn't from a live capture (match live styles, don't restyle existing components), and the counts are examples.
+
+> **Builder check:** this is a display filter only and doesn't change scoring. The existing 5,000 friction threshold (`FRICTION_ATTENDEES` in `src/data/read.ts`; small rooms muted on the map) stays as is. A user minimum below 5,000 shows small events but doesn't make them count toward friction; a maximum doesn't remove big events from the score. Confirm the map's muting and the filter don't conflict.
 
 ### On hold (Kylie working with Claude)
 
-- **ON HOLD:** Regional list placement in Explore.
-- **ON HOLD:** Where "lineup" goes in Explore (see N16 for the word itself).
-- **ON HOLD:** Where crowds with no size show in Explore.
+- **ON HOLD:** Where crowds with no size show in Explore (beyond the blank rule above).
+- Regional events are no longer a placement question; they're undecided (item 2).
 
-### Flagged: "~55,000 Estimated" on NLCS G3
+### Open flag: "~55,000 Estimated" on NLCS G3
 
 The live event page shows "~55,000 Estimated" for NLCS G3 (Dodgers vs. Brewers, Dodger Stadium). Checked against Final > Announced > Estimated (D04). **Finding: the code is behaving correctly; no Announced or Final figure exists.**
 
