@@ -31,6 +31,7 @@ import {
   type TicketPrice,
   venueNameOn,
   VENUES,
+  cityTravelLine,
   weatherForEvent,
   weatherGlyph,
   weatherRangeForEvent,
@@ -561,6 +562,8 @@ function seasonSpan(seasons: string | undefined): string | undefined {
 
 function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; event: CrowdEvent; seats: number | undefined }) {
   const about = aboutThisEstimate(event, seats);
+  const ownShare = event.place.type === 'venue' ? VENUES[event.place.venueId]?.carShare : undefined;
+  const travel = ownShare === undefined ? cityTravelLine(event.metroId) : null;
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
       if (ev.key === 'Escape') onClose();
@@ -597,6 +600,14 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
           The room's own published average when it has one; otherwise the full room for a venue built for shows, or{' '}
           {Math.round(CONCERT_FILL * 100)}% of an arena or stadium.
         </p>
+        {/* Gridlock (build 5, N1/B1; Kylie, Oct 14): the city's plain-words line, only when the venue has no arrival
+            figure of its own (a city line would mislead at, say, Wrigley); the venue's own wording waits on Kylie. */}
+        {travel && (
+          <>
+            <h2 className="how-sub">Gridlock</h2>
+            <p className="home-helper">{travel}</p>
+          </>
+        )}
         <h2 className="how-sub">Counts</h2>
         <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates. An announced or reported count replaces the estimate when it lands.</p>
         <button type="button" className="home-city" onClick={onClose}>

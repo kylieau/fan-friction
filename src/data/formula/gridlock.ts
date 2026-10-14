@@ -551,6 +551,14 @@ export function hardAccessFactor(carShare: number): number {
   return 1 + (HARD_ACCESS_BASE - 1) * (carShare / CAR_SHARE_REFERENCE);
 }
 
+/** How a city's fans get to big events, for the read and for the plain-words line (`cityTravel.ts`). */
+export type CityType = 'sprawl' | 'hub' | 'transit';
+
+/** The city's type; a city not listed reads as sprawl, as the read does. */
+export function cityTypeOf(metroId: string): CityType {
+  return CITY_TYPE[metroId] ?? 'sprawl';
+}
+
 /** The share of fans who drive, until a venue has its own figure. */
 const CAR_SHARE_BY_CITY: Record<'sprawl' | 'hub' | 'transit', number> = { sprawl: 0.85, hub: 0.85, transit: 0.4 };
 

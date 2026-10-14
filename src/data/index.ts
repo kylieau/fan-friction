@@ -290,6 +290,7 @@ export {
   suggestionsFor,
 } from './favorites';
 export { audienceOverlap } from './audience';
+export { cityTravelLine } from './cityTravel';
 export {
   canSignIn,
   getAccount,

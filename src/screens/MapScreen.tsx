@@ -18,6 +18,7 @@ import {
   type CityDate,
   type CrowdEvent,
   type FeedItem,
+  cityTravelLine,
 } from '../data';
 import { friendsLine, yourActivity } from '../lib/activity';
 import { getPref, setPref } from '../lib/prefs';
@@ -387,6 +388,8 @@ export function MapScreen() {
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
                 <li className="map-key-ring">Pale ring is the one you picked</li>
                 <li className="map-key-note">The date's read, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
+                {/* How this city's fans get to events, in plain words (build 5, N1/B1; Kylie, Oct 14). */}
+                {cityTravelLine(metro.id) && <li className="map-key-note">{cityTravelLine(metro.id)}</li>}
                 <li className="map-key-note">
                   Local competition: <span className="chip chip-f squeezed">Squeezed</span> <span className="chip chip-f swamped">Swamped</span> <span className="chip chip-f steamrolled">Steamrolled</span>
                 </li>
