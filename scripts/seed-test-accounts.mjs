@@ -33,7 +33,7 @@ const empty = { version: 1, hiddenSeedIds: [], added: [], plans: [], order: 'pla
 const log = {
   ...empty,
   added: [
-    { id: 'seed-a-1', eventId: '2026-10-03-dodgers', when: { sort: '2026-10-03', label: 'Oct 3, 2026', precision: 'day' }, title: 'Braves at Dodgers · NLDS Game 1', tags: ['Dodgers'], sport: 'Baseball', sides: ['Dodgers'], venue: 'Dodger Stadium', kind: 'game', metroId: 'la', inMetro: true, review: 'Loud from the first pitch.' },
+    { id: 'seed-a-1', eventId: '2026-10-03-dodgers', when: { sort: '2026-10-03', label: 'Oct 3, 2026', precision: 'day' }, title: 'Braves at Dodgers (NLDS\u00a0G1)', tags: ['Dodgers'], sport: 'Baseball', sides: ['Dodgers'], venue: 'Dodger Stadium', kind: 'game', metroId: 'la', inMetro: true, review: 'Loud from the first pitch.' },
     { id: 'seed-a-2', eventId: '2026-10-04-slayer', when: { sort: '2026-10-04', label: 'Oct 4, 2026', precision: 'day' }, title: 'Slayer', tags: ['Concerts'], sport: 'Concerts', sides: ['Slayer'], venue: 'Kia Forum', kind: 'show', metroId: 'la', inMetro: true },
     { id: 'seed-a-3', eventId: '2026-10-12-espn-rams-401872994', when: { sort: '2026-10-12', label: 'Oct 12, 2026', precision: 'day' }, title: 'Bills at Rams', tags: ['Rams'], sport: 'Football', sides: ['Rams'], venue: 'SoFi Stadium', kind: 'game', metroId: 'la', inMetro: true, watched: true },
   ],

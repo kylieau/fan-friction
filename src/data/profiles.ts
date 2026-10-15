@@ -574,7 +574,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
       id: 'example-entry-1',
       eventId: '2026-10-03-dodgers',
       when: { sort: '2026-10-03', label: '', precision: 'day' },
-      title: 'Braves at Dodgers · NLDS Game 1',
+      title: 'Braves at Dodgers (NLDS\u00a0G1)',
       tags: ['Dodgers'],
       sport: 'Baseball',
       sides: ['Dodgers'],

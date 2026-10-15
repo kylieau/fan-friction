@@ -722,7 +722,7 @@ export async function backfillLegacyCrowds(loadDate: (metroId: string, date: str
 }
 
 /** Bump when the naming rules change, so every log takes the new names once. */
-const TITLE_VERSION = 'build-5-oct15'; // Oct 15: "(Preseason)" in parentheses; no comma before the game number
+const TITLE_VERSION = 'labels-r3'; // Oct 15: labels round 3 ("Brewers at Dodgers (NLCS G3)")
 
 /**
  * Stubs made from an event take that event's current short name (Kylie, Oct 14: old stubs read "NLCS G2 · Dodgers
