@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-timberwolves-401914125",
+      "metroId": "minneapolis",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 106
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 128
+      },
+      "attendance": 10262,
+      "capturedAt": "2026-10-15T13:10:47.009Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

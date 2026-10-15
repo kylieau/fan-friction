@@ -51,6 +51,18 @@
       "code": 0,
       "precipProbability": 32,
       "precipMm": 0
+    },
+    {
+      "metroId": "houston",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-15T13:06:07.115Z",
+      "feelsLikeHighF": 86,
+      "feelsLikeLowF": 74.9,
+      "code": 3,
+      "precipProbability": 16,
+      "precipMm": 0
     }
   ]
 }

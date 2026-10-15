@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-fc-dallas-761867",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-stadium",
+      "homeTeamId": "fc-dallas",
+      "home": {
+        "name": "FC Dallas",
+        "score": 1
+      },
+      "away": {
+        "name": "Sounders",
+        "score": 0
+      },
+      "capturedAt": "2026-10-15T13:10:41.649Z"
+    },
+    {
+      "eventId": "2026-10-14-espn-mavericks-401901825",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 97
+      },
+      "away": {
+        "name": "Pelicans",
+        "score": 101
+      },
+      "attendance": 17140,
+      "capturedAt": "2026-10-15T13:10:41.649Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

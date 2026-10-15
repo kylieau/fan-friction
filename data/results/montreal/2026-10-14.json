@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-cf-montreal-761864",
+      "metroId": "montreal",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "stade-saputo",
+      "homeTeamId": "cf-montreal",
+      "home": {
+        "name": "CF Montréal",
+        "score": 0
+      },
+      "away": {
+        "name": "Atlanta United",
+        "score": 3
+      },
+      "capturedAt": "2026-10-15T13:10:42.140Z"
+    }
+  ]
+}

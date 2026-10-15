@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-avalanche-401892505",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 2
+      },
+      "away": {
+        "name": "Stars",
+        "score": 3
+      },
+      "attendance": 18107,
+      "note": "SO",
+      "capturedAt": "2026-10-15T13:10:49.091Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "20:38"
+    },
+    {
+      "eventId": "2026-10-14-espn-rapids-761871",
+      "metroId": "denver",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dicks-sporting-goods-park",
+      "homeTeamId": "rapids",
+      "home": {
+        "name": "Rapids",
+        "score": 2
+      },
+      "away": {
+        "name": "MNUFC",
+        "score": 2
+      },
+      "capturedAt": "2026-10-15T13:10:49.091Z"
+    }
+  ]
+}

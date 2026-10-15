@@ -1,0 +1,3419 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "metroName": "Los Angeles",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-15",
+  "capturedAt": "2026-10-15T13:06:58.497Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-15",
+    "through": "2026-10-29"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 2
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 17
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 64
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-15-mlb-849810",
+      "broadcast": "FS1",
+      "starters": {
+        "home": "Tyler Glasnow"
+      },
+      "metroId": "la",
+      "date": "2026-10-15",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Dodgers vs. Brewers",
+      "stakes": {
+        "round": "NLCS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "dodger-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "dodgers",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 54656,
+        "low": 50064,
+        "high": 56000,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 44,
+        "seasons": "2024, 2025 + league",
+        "basis": "blend",
+        "note": "Playoff crowds as a share of the building, this team's and the league's past 44 games (2024, 2025 + league). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vv170Z_7GkMfFAZu",
+      "metroId": "la",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Phil Wickham",
+      "officialTitle": "Song Of The Saints Tour with Phil Wickham",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phil Wickham",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_7GkMfFAZu",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
+      "metroId": "la",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "LP",
+      "officialTitle": "LP - All Is Not Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "LP",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_aGkRSVNGb",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
+      "metroId": "la",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Ilana Glazer Live!",
+      "place": {
+        "type": "venue",
+        "venueId": "belasco"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ilana Glazer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_GwWe2IR"
+    },
+    {
+      "id": "2026-10-15-tm-vvG1iZ_1rd3dbK",
+      "metroId": "la",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Cynthia Erivo: Let Me Sing To You",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Cynthia Erivo",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZ_1rd3dbK"
+    },
+    {
+      "id": "2026-10-15-tm-vvG1IZ_82Z9hL3",
+      "metroId": "la",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pedro Fernández",
+      "officialTitle": "Pedro Fernández - Ave Fénix Two'r",
+      "place": {
+        "type": "venue",
+        "venueId": "youtube-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Pedro Fernández",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_82Z9hL3",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-mlb-849808",
+      "broadcast": "FS1",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Dodgers vs. Brewers",
+      "stakes": {
+        "round": "NLCS",
+        "game": 5,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "dodger-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "dodgers",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 54656,
+        "low": 50064,
+        "high": 56000,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 44,
+        "seasons": "2024, 2025 + league",
+        "basis": "blend",
+        "note": "Playoff crowds as a share of the building, this team's and the league's past 44 games (2024, 2025 + league). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-ducks-401892518",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ducks vs. Bruins",
+      "broadcast": "KCOP",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ducks",
+        "away": "bruins",
+        "awayOpponent": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15315,
+        "low": 14325,
+        "high": 15928,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 27 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-lakers-401898719",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Lakers vs. Nuggets",
+      "preseason": true,
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "nuggets",
+        "awayOpponent": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17382,
+        "low": 16718,
+        "high": 17866,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 3 games, 2026–2027."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1iZ_owcOPJ1",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "MILEY",
+      "officialTitle": "Miley: Bass Persuades - Live at the Hollywood Bowl",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "MILEY",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZ_owcOPJ1",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-rZ7HnEZ1Af07vN",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Napoleon Dynamite Live",
+      "place": {
+        "type": "venue",
+        "venueId": "ventura-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Napoleon Dynamite Live",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af07vN"
+    },
+    {
+      "id": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Juanes",
+      "officialTitle": "Juanes North America Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Juanes",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_7Gkz5H4zw",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-ucla-football-401858494",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "16:30",
+      "kind": "game",
+      "title": "UCLA vs. Wisconsin",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "rose-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ucla-football",
+        "away": "wisconsin",
+        "awayOpponent": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 39256,
+        "low": 35561,
+        "high": 42012,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-kings-401892530",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Kings vs. Bruins",
+      "broadcast": "ABTV",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "bruins",
+        "awayOpponent": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18145,
+        "low": 17517,
+        "high": 18145,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-rZ7HnEZ1AfaaP7",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Aquabats!",
+      "officialTitle": "The Aquabats!, Manic Hispanic, sullvn",
+      "place": {
+        "type": "venue",
+        "venueId": "ventura-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Aquabats!",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfaaP7",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG10Z_1rn_GMv",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Thee Sinseers",
+      "officialTitle": "KCRW Presents Thee Sinseers: Love Stories Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Thee Sinseers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_1rn_GMv",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-galaxy-761887",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Galaxy vs. San Diego FC",
+      "place": {
+        "type": "venue",
+        "venueId": "dignity-health-sports-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "galaxy",
+        "away": "san-diego-fc",
+        "awayOpponent": "san-diego"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16664,
+        "low": 16415,
+        "high": 20423,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1iZ_F53Epiv",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "SmartLess Podcast",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZ_F53Epiv"
+    },
+    {
+      "id": "2026-10-17-tm-vv170Z_FGkM0q1JB",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Vulfpeck",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Vulfpeck",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_FGkM0q1JB",
+      "expectedDraw": {
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AaZk3dGkdvrEc1",
+      "expectedDraw": {
+        "count": 10308,
+        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Tigres del Norte",
+      "officialTitle": "Los Tigres Del Norte: Los Tigres Del Mundo Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Los Tigres del Norte",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AaZkobGkeOgjs3",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG10Z_G9R7nPH",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charli xcx",
+      "officialTitle": "Charli xcx - Music, Fashion, Film Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Charli xcx",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_G9R7nPH",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-rams-401873004",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Rams vs. Cardinals",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "rams",
+        "away": "arizona-cardinals",
+        "awayOpponent": "cardinals"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 72901,
+        "low": 72478,
+        "high": 73104,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2024",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1iZ_owcx4Jh",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "MILEY",
+      "officialTitle": "Miley: Bass Persuades - Live at the Hollywood Bowl",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "MILEY",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZ_owcx4Jh",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A70kAU",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "officialTitle": "Kacey Musgraves w/ Gabriella Rose",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70kAU",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG10Z_G9gehI7",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charli xcx",
+      "officialTitle": "Charli xcx - Music, Fashion, Film Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Charli xcx",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_G9gehI7",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-Z7r9jZ1A70kAg",
+      "metroId": "la",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "officialTitle": "Kacey Musgraves w/ Estevie",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70kAg",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-vvG1IZ_37AOAuJ",
+      "metroId": "la",
+      "date": "2026-10-19",
+      "start": null,
+      "kind": "special",
+      "title": "Los Angeles Coliseum Historic Tours",
+      "place": {
+        "type": "venue",
+        "venueId": "coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Los Angeles Coliseum Historic Tours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_37AOAuJ",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG10Z_1hSZGrO",
+      "metroId": "la",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Cameron Whitcomb",
+      "officialTitle": "Cameron Whitcomb - Kingdom of Fear Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Cameron Whitcomb",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_1hSZGrO",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG10Z_u1J_FHJ",
+      "metroId": "la",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "almost monday",
+      "officialTitle": "almost monday - THANK GOD IT'S ALMOST MONDAY",
+      "place": {
+        "type": "venue",
+        "venueId": "belasco"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "almost monday",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_u1J_FHJ",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vv170Z_FGkU1BKx2",
+      "metroId": "la",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Ware",
+      "officialTitle": "Jessie Ware: The Superbloom Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jessie Ware",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_FGkU1BKx2",
+      "expectedDraw": {
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
+      "metroId": "la",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MONSTA X",
+      "officialTitle": "2026 MONSTA X WORLD TOUR [THE X : NEXUS] IN LOS ANGELES",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "MONSTA X",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AaZk3vGkdfJcBD",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG1IZ_37A-4Cm",
+      "metroId": "la",
+      "date": "2026-10-20",
+      "start": null,
+      "kind": "special",
+      "title": "Los Angeles Coliseum Historic Tours",
+      "place": {
+        "type": "venue",
+        "venueId": "coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Los Angeles Coliseum Historic Tours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_37A-4Cm",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-21-espn-lakers-401909092",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lakers vs. Warriors",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "warriors",
+        "awayOpponent": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 18997,
+        "low": 18684,
+        "high": 18997,
+        "fromCrowds": true,
+        "games": 41,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 41 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG10Z_GpWro4Z",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pouya",
+      "officialTitle": "Pouya: The Forever Glades Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Pouya",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_GpWro4Z",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "G-Eazy",
+      "officialTitle": "Logic & G-Eazy: The Endless Summer Tour Part II",
+      "place": {
+        "type": "venue",
+        "venueId": "youtube-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "G-Eazy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_aQlI5Ky",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-clippers-401909842",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Clippers vs. Sac Kings",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "clippers",
+        "away": "sacramento-kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 17752,
+        "low": 16005,
+        "high": 17891,
+        "fromCrowds": true,
+        "games": 46,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 46 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG10Z_uCyohlW",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "beabadoobee",
+      "officialTitle": "beabadoobee: The Powerlines Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "beabadoobee",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_uCyohlW",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1iZbS55MdJK",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "My Chemical Romance",
+      "officialTitle": "My Chemical Romance The Black Parade 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "My Chemical Romance",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZbS55MdJK",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG10Z_5Up7IgV",
+      "metroId": "la",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Julia Jacklin",
+      "officialTitle": "Julia Jacklin - North America Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Julia Jacklin",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_5Up7IgV",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vv170ZbSGkIhFzEy",
+      "metroId": "la",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170ZbSGkIhFzEy",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG10Z_59jFKnv",
+      "metroId": "la",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bryson Tiller",
+      "officialTitle": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Bryson Tiller",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_59jFKnv",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-rZ7HnEZ1AfPprd",
+      "metroId": "la",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Devil Makes Three",
+      "officialTitle": "The Devil Makes Three, Two Runner",
+      "place": {
+        "type": "venue",
+        "venueId": "ventura-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Devil Makes Three",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfPprd",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-lakers-401909851",
+      "metroId": "la",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lakers vs. Clippers",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18997,
+        "low": 18908,
+        "high": 18997,
+        "fromCrowds": true,
+        "games": 16,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 16 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vv170Z_aGkRleoD6",
+      "metroId": "la",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amble",
+      "place": {
+        "type": "venue",
+        "venueId": "belasco"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Amble",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_aGkRleoD6",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG10Z_u2VwVbg",
+      "metroId": "la",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "WORSHIP",
+      "officialTitle": "WORSHIP NORTH AMERICA 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "WORSHIP",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_u2VwVbg",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1IZ_GNCU5jV",
+      "metroId": "la",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "JAŸ-Z",
+      "officialTitle": "JAY-Z30",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "JAŸ-Z",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_GNCU5jV",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 40037,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1iZbS55MSJp",
+      "metroId": "la",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "My Chemical Romance",
+      "officialTitle": "My Chemical Romance The Black Parade 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "My Chemical Romance",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZbS55MSJp",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-angel-city-401854030",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "17:45",
+      "kind": "game",
+      "title": "Angel City vs. Bay FC",
+      "broadcast": "ION",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "angel-city",
+        "away": "bay-fc",
+        "awayOpponent": "bay"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15962,
+        "low": 15024,
+        "high": 17062,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG10Z_CQ0afVx",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Drab Majesty",
+      "officialTitle": "Substance",
+      "place": {
+        "type": "venue",
+        "venueId": "belasco"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Drab Majesty",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_CQ0afVx",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-LvZ18QEeUh2VRS8rNKUpd",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "show",
+      "title": "The Offspring",
+      "officialTitle": "2026 Rock 2 Freedom® Benefit Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Offspring",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QEeUh2VRS8rNKUpd",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5eYZ_kU9s8XI",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Weezer",
+      "officialTitle": "WEEZER: The Gathering",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Weezer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eYZ_kU9s8XI",
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv170Z_AGkmI0jmT",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_AGkmI0jmT",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv1AaZkogGkd5zy4D",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Marshmello",
+      "officialTitle": "Pokémon Night Out",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Marshmello",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AaZkogGkd5zy4D",
+      "expectedDraw": {
+        "count": 10308,
+        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1iZ_erD1S_5",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Long Beach Symphony POPS: The Ultimate Eagles Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "long-beach-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Long Beach Symphony Pops",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZ_erD1S_5"
+    },
+    {
+      "id": "2026-10-24-tm-rZ7HnEZ1AfGFQf",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Bloodsuckers Ball",
+      "place": {
+        "type": "venue",
+        "venueId": "ventura-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bloodsuckers Ball",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfGFQf"
+    },
+    {
+      "id": "2026-10-24-tm-vvG10Z_CkYNF-n",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Intocable",
+      "officialTitle": "Intocable: Cultura Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Intocable",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_CkYNF-n",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1IZ_GNtjqqM",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "JAŸ-Z",
+      "officialTitle": "JAY-Z30",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "JAŸ-Z",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_GNtjqqM",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 40037,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1iZbS55zNJb",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "My Chemical Romance",
+      "officialTitle": "My Chemical Romance The Black Parade 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "My Chemical Romance",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZbS55zNJb",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-ucla-football-401858499",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "UCLA vs. Michigan St",
+      "place": {
+        "type": "venue",
+        "venueId": "rose-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ucla-football",
+        "away": "michigan-st",
+        "awayOpponent": "michigan-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 39256,
+        "low": 35561,
+        "high": 42012,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-lafc-761904",
+      "metroId": "la",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "LAFC vs. Galaxy",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "lafc",
+        "away": "galaxy",
+        "awayOpponent": "la-galaxy"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22115,
+        "low": 21933,
+        "high": 22384,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG10Z_1rnyceQ",
+      "metroId": "la",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "SWITCHFOOT",
+      "officialTitle": "Switchfoot with special guest Anberlin - Forever Now Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "SWITCHFOOT",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_1rnyceQ",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG10Z_5Eio1cI",
+      "metroId": "la",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bryson Tiller",
+      "officialTitle": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Bryson Tiller",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_5Eio1cI",
+      "expectedDraw": {
+        "count": 10308,
+        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1IZ_2L8dh94",
+      "metroId": "la",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jodeci",
+      "officialTitle": "Jodeci - 35th Anniversary Tour of Forever My Lady",
+      "place": {
+        "type": "venue",
+        "venueId": "youtube-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jodeci",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_2L8dh94",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-vvG10Z_52oEvV_",
+      "metroId": "la",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Rocky Horror Picture Show Spooktacular Tour with Barry Bostwick",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Music"
+      },
+      "performer": "The Rocky Horror Picture Show",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_52oEvV_"
+    },
+    {
+      "id": "2026-10-26-tm-vvG10Z_58XADKo",
+      "metroId": "la",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Tom Jones",
+      "officialTitle": "Tom Jones : Come Gather Round Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Tom Jones",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_58XADKo",
+      "expectedDraw": {
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-vvG1IZ_37AxP2-",
+      "metroId": "la",
+      "date": "2026-10-26",
+      "start": null,
+      "kind": "special",
+      "title": "Los Angeles Coliseum Historic Tours",
+      "place": {
+        "type": "venue",
+        "venueId": "coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Los Angeles Coliseum Historic Tours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_37AxP2-",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-10-27-espn-ducks-401892594",
+      "metroId": "la",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ducks vs. Canucks",
+      "broadcast": "KCOP",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ducks",
+        "away": "vancouver-canucks",
+        "awayOpponent": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16452,
+        "low": 15499,
+        "high": 16977,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-vvG10Z_Ckgiavq",
+      "metroId": "la",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chief Keef",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Chief Keef",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_Ckgiavq",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-lakers-401909880",
+      "metroId": "la",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Lakers vs. Blazers",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "blazers",
+        "awayOpponent": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18750,
+        "low": 18441,
+        "high": 18750,
+        "fromCrowds": true,
+        "games": 41,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 41 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-vvG1IZ_37ANg8x",
+      "metroId": "la",
+      "date": "2026-10-27",
+      "start": null,
+      "kind": "special",
+      "title": "Los Angeles Coliseum Historic Tours",
+      "place": {
+        "type": "venue",
+        "venueId": "coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Los Angeles Coliseum Historic Tours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_37ANg8x",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG10Z_GEYNE3j",
+      "metroId": "la",
+      "date": "2026-10-28",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Lenny Pearce",
+      "officialTitle": "Lenny Pearce - Toddler Rave World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Lenny Pearce",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_GEYNE3j",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vv1ke8v00OGA5luoC",
+      "metroId": "la",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dilated Peoples",
+      "place": {
+        "type": "venue",
+        "venueId": "belasco"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Dilated Peoples",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1ke8v00OGA5luoC",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-clippers-401909892",
+      "metroId": "la",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Clippers vs. Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "clippers",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18304,
+        "low": 16502,
+        "high": 18447,
+        "fromCrowds": true,
+        "games": 46,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 46 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5eYZ_26DXOUj",
+      "metroId": "la",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "YG",
+      "officialTitle": "YG: THE GENTLEMAN'S CLUB TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "YG",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eYZ_26DXOUj",
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG10Z_GCgtRwF",
+      "metroId": "la",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Malcolm Todd",
+      "officialTitle": "Malcolm Todd: Do That Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Malcolm Todd",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_GCgtRwF",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-ducks-401892608",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ducks vs. Sabres",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ducks",
+        "away": "sabres",
+        "awayOpponent": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16097,
+        "low": 15164,
+        "high": 16610,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-kings-401892609",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kings vs. Senators",
+      "broadcast": "ABTV",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "ottawa-senators",
+        "awayOpponent": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15339,
+        "low": 14776,
+        "high": 16246,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG10Z_1rlfWGN",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "place": {
+        "type": "venue",
+        "venueId": "wiltern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Slow Pulp",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_1rlfWGN",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1iZ_Kzl1GKE",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Aerosmith",
+      "officialTitle": "California Dream On: Aerosmith & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "hollywood-bowl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Aerosmith",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1iZ_Kzl1GKE",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG10Z_GpoVtCx",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Malcolm Todd",
+      "officialTitle": "Malcolm Todd: Do That Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Malcolm Todd",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG10Z_GpoVtCx",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1IZ_5wKdJjG",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Moenia",
+      "officialTitle": "Moenia + Maria Jose Us Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "youtube-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Moenia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_5wKdJjG",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vv170Z_KGkmqDfJY",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Omer Adam",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Omer Adam",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv170Z_KGkmqDfJY",
+      "expectedDraw": {
+        "count": 10308,
+        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-15-mlb-849810",
+      "date": "2026-10-15",
+      "start": "17:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 54656,
+        "low": 50064,
+        "high": 56000
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vv170Z_7GkMfFAZu",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Dodgers vs. Brewers 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10773
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vv170Z_aGkRSVNGb",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG10Z_GwWe2IR",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1iZ_1rd3dbK",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Dodgers vs. Brewers 6.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1IZ_82Z9hL3",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Dodgers vs. Brewers 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-10-16-mlb-849808",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 54656,
+        "low": 50064,
+        "high": 56000
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-ducks-401892518",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Lakers vs. Nuggets 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15315,
+        "low": 14325,
+        "high": 15928
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-lakers-401898719",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Ducks vs. Bruins 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17382,
+        "low": 16718,
+        "high": 17866
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1iZ_owcOPJ1",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17500
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-rZ7HnEZ1Af07vN",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-ucla-football-401858494",
+      "date": "2026-10-17",
+      "start": "16:30",
+      "read": {
+        "rating": 7.4,
+        "friction": "Moderate",
+        "why": "Kings vs. Bruins and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 10.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 39256,
+        "low": 35561,
+        "high": 42012
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-kings-401892530",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Heavy",
+        "why": "UCLA vs. Wisconsin 10.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18145,
+        "low": 17517,
+        "high": 18145
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-rZ7HnEZ1AfaaP7",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG10Z_1rn_GMv",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-galaxy-761887",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 7.4,
+        "friction": "Heavy",
+        "why": "UCLA vs. Wisconsin 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16664,
+        "low": 16415,
+        "high": 20423
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1iZ_F53Epiv",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 7.4,
+        "friction": "Heavy",
+        "why": "UCLA vs. Wisconsin 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vv170Z_FGkM0q1JB",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Extreme",
+        "why": "UCLA vs. Wisconsin and Kings vs. Bruins 7.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5900
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Extreme",
+        "why": "Los Tigres del Norte 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10308
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Extreme",
+        "why": "Young Miko 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10773
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG10Z_G9R7nPH",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Heavy",
+        "why": "UCLA vs. Wisconsin 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-rams-401873004",
+      "date": "2026-10-18",
+      "start": "13:05",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "88° feels-like at a 1:05 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 72901,
+        "low": 72478,
+        "high": 73104
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1iZ_owcx4Jh",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Charli xcx 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17500
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A70kAU",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "MILEY and Charli xcx 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10779
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG10Z_G9gehI7",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "MILEY 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-Z7r9jZ1A70kAg",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Los Angeles Coliseum Historic Tours 2.3 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10779
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vvG1IZ_37AOAuJ",
+      "date": "2026-10-19",
+      "start": null,
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG10Z_1hSZGrO",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG10Z_u1J_FHJ",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vv170Z_FGkU1BKx2",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "MONSTA X 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5900
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Los Angeles Coliseum Historic Tours 5.0 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG1IZ_37A-4Cm",
+      "date": "2026-10-20",
+      "start": null,
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-lakers-401909092",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Clippers vs. Sac Kings 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18997,
+        "low": 18684,
+        "high": 18997
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG10Z_GpWro4Z",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "My Chemical Romance and Lakers vs. Warriors 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-clippers-401909842",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Lakers vs. Warriors 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17752,
+        "low": 16005,
+        "high": 17891
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG10Z_uCyohlW",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "My Chemical Romance 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1iZbS55MdJK",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "beabadoobee 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17500
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG10Z_5Up7IgV",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv170ZbSGkIhFzEy",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Bryson Tiller 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG10Z_59jFKnv",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Doja Cat 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10773
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-rZ7HnEZ1AfPprd",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-lakers-401909851",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "JAŸ-Z 7.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18997,
+        "low": 18908,
+        "high": 18997
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv170Z_aGkRleoD6",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG10Z_u2VwVbg",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "JAŸ-Z and My Chemical Romance next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1IZ_GNCU5jV",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Low",
+        "why": "My Chemical Romance 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 40037
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1iZbS55MSJp",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "JAŸ-Z 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17500
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-angel-city-401854030",
+      "date": "2026-10-24",
+      "start": "17:45",
+      "read": {
+        "rating": 8,
+        "friction": "Heavy",
+        "why": "JAŸ-Z 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15962,
+        "low": 15024,
+        "high": 17062
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG10Z_CQ0afVx",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-LvZ18QEeUh2VRS8rNKUpd",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5eYZ_kU9s8XI",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 8,
+        "friction": "Extreme",
+        "why": "My Chemical Romance 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10779
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv170Z_AGkmI0jmT",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 8,
+        "friction": "Extreme",
+        "why": "My Chemical Romance 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10891
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv1AaZkogGkd5zy4D",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 8,
+        "friction": "Extreme",
+        "why": "JAŸ-Z and My Chemical Romance 0.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10308
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1iZ_erD1S_5",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 8,
+        "friction": "Heavy",
+        "why": "JAŸ-Z and My Chemical Romance 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-rZ7HnEZ1AfGFQf",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG10Z_CkYNF-n",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 8,
+        "friction": "Heavy",
+        "why": "JAŸ-Z and My Chemical Romance 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10773
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1IZ_GNtjqqM",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 8,
+        "friction": "Moderate",
+        "why": "My Chemical Romance 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 40037
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1iZbS55zNJb",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 8,
+        "friction": "Heavy",
+        "why": "Gorillaz and Weezer 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17500
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-ucla-football-401858499",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 8,
+        "friction": "Moderate",
+        "why": "JAŸ-Z 17 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 39256,
+        "low": 35561,
+        "high": 42012
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-lafc-761904",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Bryson Tiller 5.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22115,
+        "low": 21933,
+        "high": 22384
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG10Z_1rnyceQ",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG10Z_5Eio1cI",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "LAFC vs. Galaxy 5.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10308
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1IZ_2L8dh94",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "LAFC vs. Galaxy and Bryson Tiller 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-vvG10Z_52oEvV_",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-vvG10Z_58XADKo",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Los Angeles Coliseum Historic Tours 7.3 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5900
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-vvG1IZ_37AxP2-",
+      "date": "2026-10-26",
+      "start": null,
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-ducks-401892594",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Lakers vs. Blazers 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16452,
+        "low": 15499,
+        "high": 16977
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-vvG10Z_Ckgiavq",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-lakers-401909880",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Ducks vs. Canucks 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18750,
+        "low": 18441,
+        "high": 18750
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-vvG1IZ_37ANg8x",
+      "date": "2026-10-27",
+      "start": null,
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG10Z_GEYNE3j",
+      "date": "2026-10-28",
+      "start": "17:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vv1ke8v00OGA5luoC",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-clippers-401909892",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "YG 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18304,
+        "low": 16502,
+        "high": 18447
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5eYZ_26DXOUj",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Clippers vs. Lakers 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10779
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG10Z_GCgtRwF",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Clippers vs. Lakers and YG 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5900
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-ducks-401892608",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Kings vs. Senators 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16097,
+        "low": 15164,
+        "high": 16610
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-kings-401892609",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Ducks vs. Sabres 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15339,
+        "low": 14776,
+        "high": 16246
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG10Z_1rlfWGN",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1iZ_Kzl1GKE",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Ducks vs. Sabres and Kings vs. Senators 34 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17500
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG10Z_GpoVtCx",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Aerosmith and Ducks vs. Sabres 2.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5900
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1IZ_5wKdJjG",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Aerosmith and Ducks vs. Sabres 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vv170Z_KGkmqDfJY",
+      "date": "2026-10-29",
+      "start": "20:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Aerosmith and Ducks vs. Sabres 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10308
+      }
+    }
+  ]
+}

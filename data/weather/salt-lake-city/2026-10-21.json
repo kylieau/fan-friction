@@ -39,6 +39,18 @@
       "code": 2,
       "precipProbability": 56,
       "precipMm": 0
+    },
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-15T13:06:24.408Z",
+      "feelsLikeHighF": 61.4,
+      "feelsLikeLowF": 42.8,
+      "code": 80,
+      "precipProbability": 41,
+      "precipMm": 17.7
     }
   ]
 }

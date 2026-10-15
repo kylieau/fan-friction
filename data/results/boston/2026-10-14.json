@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-celtics-401898405",
+      "metroId": "boston",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "celtics",
+      "home": {
+        "name": "Celtics",
+        "score": 114
+      },
+      "away": {
+        "name": "Hornets",
+        "score": 93
+      },
+      "attendance": 19156,
+      "capturedAt": "2026-10-15T13:10:42.694Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    }
+  ]
+}

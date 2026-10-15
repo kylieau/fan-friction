@@ -27,6 +27,18 @@
       "code": 3,
       "precipProbability": 0,
       "precipMm": 0
+    },
+    {
+      "metroId": "washington-dc",
+      "venueId": "city",
+      "date": "2026-10-19",
+      "basis": "forecast",
+      "capturedAt": "2026-10-15T13:06:33.707Z",
+      "feelsLikeHighF": 62.8,
+      "feelsLikeLowF": 42.8,
+      "code": 2,
+      "precipProbability": 9,
+      "precipMm": 0
     }
   ]
 }

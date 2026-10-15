@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-chicago-fire-761869",
+      "metroId": "chicago",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "chicago-fire",
+      "home": {
+        "name": "Fire",
+        "score": 1
+      },
+      "away": {
+        "name": "Union",
+        "score": 3
+      },
+      "capturedAt": "2026-10-15T13:10:41.322Z"
+    }
+  ]
+}

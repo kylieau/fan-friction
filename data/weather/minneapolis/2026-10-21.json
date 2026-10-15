@@ -51,6 +51,18 @@
       "code": 3,
       "precipProbability": 31,
       "precipMm": 0
+    },
+    {
+      "metroId": "minneapolis",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-15T13:06:17.895Z",
+      "feelsLikeHighF": 65.3,
+      "feelsLikeLowF": 49.6,
+      "code": 63,
+      "precipProbability": 17,
+      "precipMm": 8.2
     }
   ]
 }

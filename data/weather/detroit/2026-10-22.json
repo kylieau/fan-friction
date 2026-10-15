@@ -39,6 +39,18 @@
       "code": 61,
       "precipProbability": 16,
       "precipMm": 9.6
+    },
+    {
+      "metroId": "detroit",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-15T13:04:53.730Z",
+      "feelsLikeHighF": 63.3,
+      "feelsLikeLowF": 48.6,
+      "code": 2,
+      "precipProbability": 8,
+      "precipMm": 0
     }
   ]
 }

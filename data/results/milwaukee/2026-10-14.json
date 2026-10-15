@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-bucks-401908942",
+      "metroId": "milwaukee",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "bucks",
+      "home": {
+        "name": "Bucks",
+        "score": 104
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 125
+      },
+      "attendance": 10146,
+      "capturedAt": "2026-10-15T13:10:42.347Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

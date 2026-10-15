@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-real-salt-lake-761870",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "america-first-field",
+      "homeTeamId": "real-salt-lake",
+      "home": {
+        "name": "Real Salt Lake",
+        "score": 1
+      },
+      "away": {
+        "name": "Earthquakes",
+        "score": 1
+      },
+      "capturedAt": "2026-10-15T13:10:47.427Z"
+    }
+  ]
+}

@@ -1,0 +1,1424 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "metroName": "Sacramento",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-15",
+  "capturedAt": "2026-10-15T13:08:51.351Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-15",
+    "through": "2026-10-29"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 34
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-15-tm-G5vYZ_uJY1LvH",
+      "metroId": "sacramento",
+      "date": "2026-10-15",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Water for Elephants (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Water for Elephants (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uJY1LvH",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vYZ_CEuN080",
+      "metroId": "sacramento",
+      "date": "2026-10-15",
+      "start": "18:00",
+      "kind": "show",
+      "title": "The Aquabats!",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Aquabats!",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CEuN080",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vYZbyX2AUhl",
+      "metroId": "sacramento",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "George Michael Reborn - A Tribute to George Michael",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "George Michael Reborn - A Tribute to George Michael",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbyX2AUhl",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vYZ_7lZTq4X",
+      "metroId": "sacramento",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Juanes",
+      "officialTitle": "Juanes North America Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Juanes",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_7lZTq4X",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5vYZ_KS8V6M2",
+      "metroId": "sacramento",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bop To The Top",
+      "officialTitle": "Bop To The Top 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bop To The Top",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KS8V6M2",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5vYZ_uJY5LeF",
+      "metroId": "sacramento",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Water for Elephants (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Water for Elephants (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uJY5LeF",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5vYZ_6r_O6D6",
+      "metroId": "sacramento",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "special",
+      "title": "John Mulaney: Mister Whatever",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "John Mulaney",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6r_O6D6"
+    },
+    {
+      "id": "2026-10-16-tm-G5vYZ_kmJYlt6",
+      "metroId": "sacramento",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brit Floyd",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brit Floyd",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_kmJYlt6",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5vYZ_uJY5Te4",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Water for Elephants (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Water for Elephants (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uJY5Te4",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-17-espn-sac-state-football-401866445",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sacramento St vs. Ohio",
+      "place": {
+        "type": "venue",
+        "venueId": "hornet-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sac-state-football",
+        "away": "ohio",
+        "awayOpponent": "ohio"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15608,
+        "low": 14991,
+        "high": 16203,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5vYZ_15gx1Vt",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Max McNown",
+      "officialTitle": "Max McNown with George Birge & Tyler Braden",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Max McNown",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_15gx1Vt",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5vYZ_1xSXMiY",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "She Wants Revenge",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "She Wants Revenge",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1xSXMiY",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5vYZ_aDk5JZw",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bronco",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Bronco",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aDk5JZw",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5vYZ_uJYGTe0",
+      "metroId": "sacramento",
+      "date": "2026-10-18",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Water for Elephants (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Water for Elephants (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uJYGTe0",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5vYZ_6DtC3x0",
+      "metroId": "sacramento",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Akeem Ali",
+      "officialTitle": "Akeem Ali -the Texture Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Akeem Ali",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6DtC3x0",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5vYZ_kCwQrYa",
+      "metroId": "sacramento",
+      "date": "2026-10-20",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Bluey's Big Play",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Bluey's Big Play",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_kCwQrYa"
+    },
+    {
+      "id": "2026-10-20-tm-G5vYZ_u0dqoo1",
+      "metroId": "sacramento",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dinosaur Jr.",
+      "officialTitle": "Dinosaur Jr. - Fall Tour 2026 with special guest Stef Chura",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dinosaur Jr.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_u0dqoo1",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5vYZbSnJ9Ve1",
+      "metroId": "sacramento",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbSnJ9Ve1",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5vYZ_o59Mant",
+      "metroId": "sacramento",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lil Pete",
+      "officialTitle": "Lil Pete: Real Is Back Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Pete",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_o59Mant",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5vYZ_GE-QGHw",
+      "metroId": "sacramento",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pouya",
+      "officialTitle": "Pouya: The Forever Glades Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Pouya",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GE-QGHw",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5vYZ_dpc2mF2",
+      "metroId": "sacramento",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "UB40",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "UB40",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_dpc2mF2",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-sacramento-kings-401909852",
+      "metroId": "sacramento",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Blazers",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "blazers",
+        "awayOpponent": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 16369,
+        "low": 16158,
+        "high": 17713,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5vYZ_1SN_lUE",
+      "metroId": "sacramento",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Everclear",
+      "officialTitle": "Everclear - Lucky 7 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Everclear",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1SN_lUE",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5vYZ_kQJXRwJ",
+      "metroId": "sacramento",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Engelbert Humperdinck",
+      "officialTitle": "Engelbert Humperdinck with Special Guest Star Crystal Gayle",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Engelbert Humperdinck",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_kQJXRwJ",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5vYZbVLrSMZK",
+      "metroId": "sacramento",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Harry Potter and the Goblet of Fire (TM) In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Harry Potter and the Goblet of Fire (TM)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbVLrSMZK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5vYZ_81rrFK3",
+      "metroId": "sacramento",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fuerza Regida",
+      "officialTitle": "Fuerza Regida - This Is Our Dream Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Fuerza Regida",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_81rrFK3",
+      "expectedDraw": {
+        "count": 18500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5vYZbVLLaEvd",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Harry Potter and the Goblet of Fire (TM) In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Harry Potter and the Goblet of Fire (TM)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbVLLaEvd",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-24-espn-uc-davis-football-401868132",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UC Davis vs. N Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "uc-davis-health-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uc-davis-football",
+        "away": "n-colorado",
+        "awayOpponent": "n-colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9122,
+        "low": 8957,
+        "high": 9387,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-sacramento-republic-401842309",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Republic FC vs. Roots",
+      "place": {
+        "type": "venue",
+        "venueId": "heart-health-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sacramento-republic",
+        "away": "oakland-roots",
+        "awayOpponent": "oakland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12240,
+        "low": 12240,
+        "high": 12240,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5vYZ_8K9VQc5",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bryan Adams",
+      "officialTitle": "Bryan Adams - Bare Bones Acoustic Solo Show",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Bryan Adams",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8K9VQc5",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5vYZ_KNtjXP4",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Stan Society",
+      "officialTitle": "Stan Society Presents Olivia Rodrigo Night 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Stan Society",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KNtjXP4",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-sacramento-kings-401909867",
+      "metroId": "sacramento",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Memphis Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15519,
+        "low": 14902,
+        "high": 16348,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 17 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_KQy50qN",
+      "metroId": "sacramento",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Haryana Vibe Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Haryana Vibe Tour 2026",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KQy50qN",
+      "expectedDraw": {
+        "count": 2188,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_CjLfefJ",
+      "metroId": "sacramento",
+      "date": "2026-10-27",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Knox",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Knox",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CjLfefJ",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_26E7BrI",
+      "metroId": "sacramento",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Michael Franti",
+      "officialTitle": "Michael Franti Trio - Heartstrings & Dynamite",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Michael Franti",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_26E7BrI",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_fMlfyGq",
+      "metroId": "sacramento",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Sacramento Speakers Series Presents Liz Cheney",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Sacramento Speakers Series Presents Liz Cheney",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_fMlfyGq"
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_ax0boA7",
+      "metroId": "sacramento",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ax0boA7",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_uv6X3UJ",
+      "metroId": "sacramento",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "José Madero",
+      "officialTitle": "Jose Madero - USA Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "José Madero",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uv6X3UJ",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_uks_r9q",
+      "metroId": "sacramento",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Celebrating Meat Loaf",
+      "officialTitle": "Bat Out Of Helloween: Celebrating Meat Loaf And Rocky Horror",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Celebrating Meat Loaf",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uks_r9q",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-15-tm-G5vYZ_uJY1LvH",
+      "date": "2026-10-15",
+      "start": "13:30"
+    },
+    {
+      "eventId": "2026-10-15-tm-G5vYZ_CEuN080",
+      "date": "2026-10-15",
+      "start": "18:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5vYZbyX2AUhl",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5vYZ_7lZTq4X",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5vYZ_KS8V6M2",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5vYZ_uJY5LeF",
+      "date": "2026-10-16",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-16-tm-G5vYZ_6r_O6D6",
+      "date": "2026-10-16",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-16-tm-G5vYZ_kmJYlt6",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5vYZ_uJY5Te4",
+      "date": "2026-10-17",
+      "start": "13:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-sac-state-football-401866445",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15608,
+        "low": 14991,
+        "high": 16203
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5vYZ_15gx1Vt",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5vYZ_1xSXMiY",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5vYZ_aDk5JZw",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5vYZ_uJYGTe0",
+      "date": "2026-10-18",
+      "start": "13:30"
+    },
+    {
+      "eventId": "2026-10-18-tm-G5vYZ_6DtC3x0",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5vYZ_kCwQrYa",
+      "date": "2026-10-20",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5vYZ_u0dqoo1",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5vYZbSnJ9Ve1",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5vYZ_o59Mant",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5vYZ_GE-QGHw",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5vYZ_dpc2mF2",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-sacramento-kings-401909852",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Low",
+        "why": "Fuerza Regida 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16369,
+        "low": 16158,
+        "high": 17713
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5vYZ_1SN_lUE",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5vYZ_kQJXRwJ",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5vYZbVLrSMZK",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5vYZ_81rrFK3",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Low",
+        "why": "Sac Kings vs. Blazers 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vYZbVLLaEvd",
+      "date": "2026-10-24",
+      "start": "13:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-uc-davis-football-401868132",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Republic FC vs. Roots 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9122,
+        "low": 8957,
+        "high": 9387
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-sacramento-republic-401842309",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "UC Davis vs. N Colorado 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12240,
+        "low": 12240,
+        "high": 12240
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vYZ_8K9VQc5",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vYZ_KNtjXP4",
+      "date": "2026-10-24",
+      "start": "20:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-sacramento-kings-401909867",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15519,
+        "low": 14902,
+        "high": 16348
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_KQy50qN",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2188
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_CjLfefJ",
+      "date": "2026-10-27",
+      "start": "18:30",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_26E7BrI",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_fMlfyGq",
+      "date": "2026-10-28",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_ax0boA7",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_uv6X3UJ",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_uks_r9q",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    }
+  ]
+}

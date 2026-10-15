@@ -1,0 +1,1075 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "metroName": "Cleveland",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-15",
+  "capturedAt": "2026-10-15T13:08:21.552Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-15",
+    "through": "2026-10-29"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 3
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 16
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-15-mlb-849818",
+      "broadcast": "TBS/HBO MAX",
+      "starters": {
+        "home": "Gavin Williams",
+        "away": "Griffin Jax"
+      },
+      "metroId": "cleveland",
+      "date": "2026-10-15",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Guardians vs. Rays",
+      "stakes": {
+        "round": "ALCS",
+        "game": 3
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "progressive-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "guardians",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "league, 2022, 2023, 2024, 2025",
+        "basis": "league",
+        "note": "Playoff crowds as a share of the building, the league's past 39 games (league, 2022, 2023, 2024, 2025). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A7-kF_",
+      "metroId": "cleveland",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "W.A.S.P.",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "W.A.S.P.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-kF_",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-mlb-849817",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "cleveland",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Guardians vs. Rays",
+      "stakes": {
+        "round": "ALCS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "progressive-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "guardians",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "league, 2022, 2023, 2024, 2025",
+        "basis": "league",
+        "note": "Playoff crowds as a share of the building, the league's past 39 games (league, 2022, 2023, 2024, 2025). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-ht-cleveland-monsters-1029139",
+      "metroId": "cleveland",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Monsters vs. Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 9909,
+        "low": 8368,
+        "high": 11056,
+        "fromCrowds": true,
+        "games": 16,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 16 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vv1AAZkftGkeX52Qz",
+      "metroId": "cleveland",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Sploinky Rave",
+      "officialTitle": "Sploinky Rave: Cleveland (21 & Over Only, Valid ID Required)",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Sploinky Rave",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkftGkeX52Qz",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-ht-cleveland-monsters-1029152",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Monsters vs. Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 10177,
+        "low": 9712,
+        "high": 10465,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A70b7_",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "Movements w/ Balance & Composure",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Movements",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70b7_",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-mlb-849816",
+      "broadcast": "TBS/HBO MAX",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Guardians vs. Rays",
+      "stakes": {
+        "round": "ALCS",
+        "game": 5
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "progressive-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "guardians",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb",
+      "expectedDraw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530,
+        "planning": true,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "league, 2022, 2023, 2024, 2025",
+        "basis": "league",
+        "note": "Playoff crowds as a share of the building, the league's past 39 games (league, 2022, 2023, 2024, 2025). An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-browns-401872997",
+      "metroId": "cleveland",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Browns vs. Ravens",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-bank-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "browns",
+        "away": "ravens",
+        "awayOpponent": "ravens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66554,
+        "low": 66554,
+        "high": 67036,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A7-Vj-",
+      "metroId": "cleveland",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Jesse Welles",
+      "officialTitle": "Jesse Welles w/ Hudson Freeman",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jesse Welles",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Vj-",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-vvG1fZ_GKq4Vw_",
+      "metroId": "cleveland",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Brook & The Bluff",
+      "officialTitle": "The Brook & The Bluff: The Werewolf Tour - MOVED TO CAMBRIDGE ROOM",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Brook & The Bluff",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_GKq4Vw_",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-vv17fZ_8GkDpq2AZ",
+      "metroId": "cleveland",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8GkDpq2AZ",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG1fZ_5hbiTow",
+      "metroId": "cleveland",
+      "date": "2026-10-20",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hawthorne Heights",
+      "officialTitle": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hawthorne Heights",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_5hbiTow",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A7Pd4P",
+      "metroId": "cleveland",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Mastodon",
+      "officialTitle": "Mastodon w/ Deafheaven",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Mastodon",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pd4P",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1fZ_5Kxxnka",
+      "metroId": "cleveland",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lauren Alaina",
+      "officialTitle": "Lauren Alaina: The Stages Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Lauren Alaina",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_5Kxxnka",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1fZ_Cr93y0c",
+      "metroId": "cleveland",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Candlebox",
+      "officialTitle": "Candlebox  - Can't Quit You Tour, Fall 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Candlebox",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_Cr93y0c",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-cavaliers-401909854",
+      "metroId": "cleveland",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Cavaliers vs. Nets",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "nets",
+        "awayOpponent": "nets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7x93a",
+      "metroId": "cleveland",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Streetlight Manifesto",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Streetlight Manifesto",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x93a",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1AAZfv9",
+      "metroId": "cleveland",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Dying Fetus",
+      "officialTitle": "Dying Fetus & Sanguisugabogg",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dying Fetus",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZfv9",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1fZ_CxB1QbZ",
+      "metroId": "cleveland",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Cradle of Filth",
+      "officialTitle": "CRADLE OF FILTH: Majestic In Death II",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Cradle of Filth",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CxB1QbZ",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-zak",
+      "metroId": "cleveland",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-zak"
+    },
+    {
+      "id": "2026-10-26-espn-cavaliers-401909869",
+      "metroId": "cleveland",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cavaliers vs. Timberwolves",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "timberwolves",
+        "awayOpponent": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 30,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 30 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-vvG1fZ_ukTsrLJ",
+      "metroId": "cleveland",
+      "date": "2026-10-27",
+      "start": "17:30",
+      "kind": "show",
+      "title": "The Wrecks",
+      "officialTitle": "The Wrecks - Finally : OUTSIDE Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Wrecks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_ukTsrLJ",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-cavaliers-401909882",
+      "metroId": "cleveland",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cavaliers vs. Wizards",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "wizards",
+        "awayOpponent": "wizards"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 30,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 30 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vv1AAZkfbGkdfML_L",
+      "metroId": "cleveland",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chris Webby",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Chris Webby",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfbGkdfML_L",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-15-mlb-849818",
+      "date": "2026-10-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A7-kF_",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-16-mlb-849817",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530
+      }
+    },
+    {
+      "eventId": "2026-10-16-ht-cleveland-monsters-1029139",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Guardians vs. Rays next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9909,
+        "low": 8368,
+        "high": 11056
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vv1AAZkftGkeX52Qz",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-17-ht-cleveland-monsters-1029152",
+      "date": "2026-10-17",
+      "start": "15:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Guardians vs. Rays next door, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10177,
+        "low": 9712,
+        "high": 10465
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A70b7_",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-17-mlb-849816",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 33530,
+        "low": 30278,
+        "high": 33530
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-browns-401872997",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66554,
+        "low": 66554,
+        "high": 67036
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A7-Vj-",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vvG1fZ_GKq4Vw_",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vv17fZ_8GkDpq2AZ",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG1fZ_5hbiTow",
+      "date": "2026-10-20",
+      "start": "18:00",
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A7Pd4P",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1fZ_5Kxxnka",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1fZ_Cr93y0c",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-cavaliers-401909854",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7x93a",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1AAZfv9",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1fZ_CxB1QbZ",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-zak",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-cavaliers-401909869",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-vvG1fZ_ukTsrLJ",
+      "date": "2026-10-27",
+      "start": "17:30",
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-cavaliers-401909882",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vv1AAZkfbGkdfML_L",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    }
+  ]
+}

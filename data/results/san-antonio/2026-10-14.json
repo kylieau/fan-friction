@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-spurs-401898722",
+      "metroId": "san-antonio",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 123
+      },
+      "away": {
+        "name": "Suns",
+        "score": 103
+      },
+      "attendance": 18354,
+      "capturedAt": "2026-10-15T13:10:48.259Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

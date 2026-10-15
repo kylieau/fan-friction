@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-clippers-401918011",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 122
+      },
+      "away": {
+        "name": "Nuggets",
+        "score": 110
+      },
+      "attendance": 13018,
+      "capturedAt": "2026-10-15T13:10:38.448Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "22:40"
+    },
+    {
+      "eventId": "2026-10-14-espn-galaxy-761874",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dignity-health-sports-park",
+      "homeTeamId": "galaxy",
+      "home": {
+        "name": "Galaxy",
+        "score": 2
+      },
+      "away": {
+        "name": "Timbers",
+        "score": 0
+      },
+      "capturedAt": "2026-10-15T13:10:38.448Z"
+    },
+    {
+      "eventId": "2026-10-14-espn-lafc-761873",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bmo-stadium",
+      "homeTeamId": "lafc",
+      "home": {
+        "name": "LAFC",
+        "score": 3
+      },
+      "away": {
+        "name": "Austin FC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-15T13:10:38.448Z"
+    },
+    {
+      "eventId": "2026-10-14-mlb-849811",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "dodger-stadium",
+      "homeTeamId": "dodgers",
+      "home": {
+        "name": "Dodgers",
+        "score": 2
+      },
+      "away": {
+        "name": "Brewers",
+        "score": 6
+      },
+      "capturedAt": "2026-10-15T13:10:38.696Z",
+      "attendance": 50708,
+      "duration": {
+        "minutes": 182,
+        "kind": "official"
+      },
+      "startedAt": "17:09"
+    }
+  ]
+}

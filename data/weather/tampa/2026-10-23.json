@@ -51,6 +51,18 @@
       "code": 0,
       "precipProbability": 18,
       "precipMm": 0
+    },
+    {
+      "metroId": "tampa",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-15T13:05:24.294Z",
+      "feelsLikeHighF": 84,
+      "feelsLikeLowF": 70.7,
+      "code": 3,
+      "precipProbability": 5,
+      "precipMm": 0
     }
   ]
 }

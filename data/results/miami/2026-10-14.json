@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-heat-401898404",
+      "metroId": "miami",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 144
+      },
+      "away": {
+        "name": "Nets",
+        "score": 128
+      },
+      "attendance": 19600,
+      "capturedAt": "2026-10-15T13:10:43.999Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-10-14-espn-inter-miami-cf-761861",
+      "metroId": "miami",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nu-stadium",
+      "homeTeamId": "inter-miami-cf",
+      "home": {
+        "name": "Inter Miami",
+        "score": 2
+      },
+      "away": {
+        "name": "NYCFC",
+        "score": 0
+      },
+      "capturedAt": "2026-10-15T13:10:43.999Z"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-ht-henderson-silver-knights-1029134",
+      "metroId": "las-vegas",
+      "date": "2026-10-14",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 4
+      },
+      "away": {
+        "name": "Firebirds",
+        "score": 0
+      },
+      "attendance": 2278,
+      "capturedAt": "2026-10-15T13:10:45.837Z"
+    }
+  ]
+}

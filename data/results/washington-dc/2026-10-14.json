@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-capitals-401892504",
+      "metroId": "washington-dc",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 5
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 4
+      },
+      "attendance": 16719,
+      "capturedAt": "2026-10-15T13:10:47.963Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "19:45"
+    },
+    {
+      "eventId": "2026-10-14-espn-dc-united-761863",
+      "metroId": "washington-dc",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "dc-united",
+      "home": {
+        "name": "D.C. United",
+        "score": 2
+      },
+      "away": {
+        "name": "Red Bull NY",
+        "score": 1
+      },
+      "capturedAt": "2026-10-15T13:10:47.963Z"
+    }
+  ]
+}

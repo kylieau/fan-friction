@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-columbus-crew-761865",
+      "metroId": "columbus",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scottsmiracle-gro-field",
+      "homeTeamId": "columbus-crew",
+      "home": {
+        "name": "Crew",
+        "score": 3
+      },
+      "away": {
+        "name": "Charlotte",
+        "score": 1
+      },
+      "capturedAt": "2026-10-15T13:10:44.212Z"
+    }
+  ]
+}

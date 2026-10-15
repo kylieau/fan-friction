@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-14",
+  "results": [
+    {
+      "eventId": "2026-10-14-espn-nashville-sc-761866",
+      "metroId": "nashville",
+      "date": "2026-10-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "geodis-park",
+      "homeTeamId": "nashville-sc",
+      "home": {
+        "name": "Nashville SC",
+        "score": 4
+      },
+      "away": {
+        "name": "Sporting KC",
+        "score": 0
+      },
+      "capturedAt": "2026-10-15T13:10:44.640Z"
+    }
+  ]
+}
