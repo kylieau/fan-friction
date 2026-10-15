@@ -8,7 +8,9 @@
 - The unused database copy of `data/attendance/` is dropped (migration 0029).
 - Concerts: setlist.fm is fine (terms read first; free key).
 
-**Built (Oct 15):** `scripts/past-dates-load.mjs --metro=<id> --dates-file=<path> --out=<file.sql>`. It reads the MLB and ESPN feeds for those dates (`loadEspnPastDates`, `loadMlbSchedule` with a start date). It keeps only the city's own games and skips hand-seeded dates' events while keeping their results. It writes a SQL file to paste into Supabase, plus a JSON copy. No date list goes in the repo: the input and output live outside it. Windowed catalog reads (old step 2) are dropped for now, because a few hundred rows don't need them. Known gaps: no Sparks feed (WNBA LA isn't in `ESPN_TEAMS`); no past concerts until setlist.fm; dates outside app cities get no read.
+**Built (Oct 15):** `scripts/past-dates-load.mjs --metro=<id> --dates-file=<path> --out=<file.sql>`. It reads the MLB and ESPN feeds for those dates (`loadEspnPastDates`, `loadMlbSchedule` with a start date). It keeps only the city's own games and skips hand-seeded dates' events while keeping their results. It writes a SQL file to paste into Supabase, plus a JSON copy. No date list goes in the repo: the input and output live outside it. Windowed catalog reads (old step 2) are dropped for now, because a few hundred rows don't need them. Known gaps then: no Sparks feed (added Oct 15); dates outside app cities get no read.
+
+**Concerts (Oct 15):** setlist.fm's API terms bar keeping its data, so past concerts come from research instead: `docs/research/events-and-dates/past-nights-research-prompt.md` run on a private date list, then `scripts/research-events-load.mjs --metro=<id> --files=<answer.md>[,<supplement.md>] --places=<points.json> --out=<file.sql>`. It skips games (the feeds own them) but adds one the feeds lack; lists fairs, conventions and races unsized; stops on a venue not on file. Research is a lower bound: check it against what the night is known to have had.
 
 The original proposal follows.
 

@@ -1901,6 +1901,24 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 8200, setup: 'concert', note: 'OC Fair, after the 2013 rebuild; 8,042 also reported' }],
     roof: 'open',
   },
+  // Closed rooms, kept for past dates (Oct 15, 2026: past concert nights). Nothing is listed here from today on.
+  'irvine-meadows-amphitheatre': {
+    id: 'irvine-meadows-amphitheatre',
+    metroId: 'la',
+    // Renamed back to Irvine Meadows during 2014 (the June 3, 2014 shows were still billed "Verizon Wireless").
+    names: [{ name: 'Irvine Meadows Amphitheatre' }, { name: 'Verizon Wireless Amphitheatre', from: '2000-01-01' }, { name: 'Irvine Meadows Amphitheatre', from: '2015-01-01' }],
+    location: [-117.74972, 33.6375],
+    capacity: [{ seats: 16085, setup: 'concert', note: '10,418 reserved seats and 5,667 lawn. Opened 1981; closed Oct 30, 2016 and demolished. Source: https://en.wikipedia.org/wiki/Irvine_Meadows_Amphitheatre' }],
+    roof: 'open',
+  },
+  'gibson-amphitheatre': {
+    id: 'gibson-amphitheatre',
+    metroId: 'la',
+    names: [{ name: 'Universal Amphitheatre' }, { name: 'Gibson Amphitheatre', from: '2005-01-01' }],
+    location: [-118.353233, 34.138194],
+    capacity: [{ seats: 6251, setup: 'concert', note: 'After the 1980s renovation, which added the roof. Universal City; last show Sept 6, 2013, demolished that month. Source: https://en.wikipedia.org/wiki/Gibson_Amphitheatre' }],
+    roof: 'covered',
+  },
   'dhsp-tennis-stadium': {
     id: 'dhsp-tennis-stadium',
     metroId: 'la',
@@ -1922,7 +1940,8 @@ export const VENUES: Record<string, Venue> = {
   'peacock-theater': {
     id: 'peacock-theater',
     metroId: 'la',
-    names: [{ name: 'Microsoft Theater' }, { name: 'Peacock Theater', from: '2023-07-11' }],
+    // Nokia Theatre L.A. Live until 2015 (renamed that year; the exact day isn't stored).
+    names: [{ name: 'Nokia Theatre L.A. Live' }, { name: 'Microsoft Theater', from: '2015-06-01' }, { name: 'Peacock Theater', from: '2023-07-11' }],
     location: [-118.2671, 34.0445],
     ticketmasterIds: ['KovZpaFSVe', 'KovZ917ARk0'],
     capacity: [{ seats: 7100, setup: 'concert', note: 'AEG' }],
