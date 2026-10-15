@@ -3,6 +3,9 @@
 **Decided (Kylie, Oct 15, 2026), replacing the plan below where they differ:**
 - Store only **logged dates**, not whole past seasons. Pull a season from the feeds when needed, keep only the dates asked for. Past dates nobody logged stay unloaded; their events can still have pages.
 - Steps 1–3 approved, LA first. Start small; more past dates will come later as she remembers them.
+- Exception, also Oct 15: load the last five seasons of every home date for UCLA men's and women's basketball, UCLA football and the Dodgers, "since I know I'm going to" log more of them. Loaded with `--teams=ucla-mbb,ucla-wbb,ucla-football,dodgers --seasons=2022-2026`. ESPN numbers winter seasons by the year they end, so basketball is 2021–22 through 2025–26.
+- A rebuilt read says "Estimated from past schedules."
+- The unused database copy of `data/attendance/` is dropped (migration 0029).
 - Concerts: setlist.fm is fine (terms read first; free key).
 
 **Built (Oct 15):** `scripts/past-dates-load.mjs --metro=<id> --dates-file=<path> --out=<file.sql>`. It reads the MLB and ESPN feeds for those dates (`loadEspnPastDates`, `loadMlbSchedule` with a start date). It keeps only the city's own games and skips hand-seeded dates' events while keeping their results. It writes a SQL file to paste into Supabase, plus a JSON copy. No date list goes in the repo: the input and output live outside it. Windowed catalog reads (old step 2) are dropped for now, because a few hundred rows don't need them. Known gaps: no Sparks feed (WNBA LA isn't in `ESPN_TEAMS`); no past concerts until setlist.fm; dates outside app cities get no read.
