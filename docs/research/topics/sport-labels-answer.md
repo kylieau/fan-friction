@@ -1,6 +1,8 @@
 # Answer: short sport labels that name men's and women's alike
 
-Status: research answer, not a decision. Written Oct 15, 2026, in reply to the brief of the same date (`sport-labels-prompt.md`). Kylie decides; any format change gets a mockup before anything is built. Pasted into the repo by Claude Code on Oct 15, 2026, as returned.
+Status: answered; Kylie's calls Oct 15, 2026 below. Research answer, not itself a decision. Written Oct 15, 2026, in reply to the brief of the same date (`sport-labels-prompt.md`). Kylie decides; any format change gets a mockup before anything is built. Pasted into the repo by Claude Code on Oct 15, 2026, as returned.
+
+**Kylie's calls (Oct 15, 2026):** Option B, sport first ("WBB · First round"); the recommended code list in 5.1; hockey MHKY / WHKY; shared-name clubs (Liga MX / Liga MX Femenil) take the same M/W codes in every city; imported stubs get a label slot instead of "· WBB" in their titles. Open: whether the label line spells the code out ("Women's basketball · First round") while the inline parentheses keep the code (mock `docs/design/sport-labels/B-words-*.png`).
 
 **How facts are marked**
 
