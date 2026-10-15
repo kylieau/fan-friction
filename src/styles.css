@@ -8557,3 +8557,7 @@ a.bulk-row {
   text-decoration: none;
   margin-bottom: 4px;
 }
+/* No chevron on a row whose read column isn't a link (an Away game): center its contents. */
+span.fav-sched-read {
+  padding: 6px 2px;
+}
