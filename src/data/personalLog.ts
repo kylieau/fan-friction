@@ -613,7 +613,7 @@ function entryFromEvent(event: CrowdEvent): Entry {
       sport: sport ? sportLabel(sport) : 'Sports',
       sides: [side],
       venue: venueLabel(event),
-      inMetro: true,
+      inMetro: !event.outsideMetro,
       metroId: event.metroId,
       kind: event.kind,
     });

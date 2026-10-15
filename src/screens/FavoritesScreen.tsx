@@ -30,6 +30,8 @@ import {
   type Favorite,
   type FavoriteKind,
   type TeamGame,
+  gameEventId,
+  type GameLink,
 } from '../data';
 import { addDays, clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle, scheduleGameTitle, stakesLabel } from '../lib/eventTitle';
@@ -60,8 +62,10 @@ interface ScheduleRow {
   /** The listed event behind it, when the building is covered. */
   event?: CrowdEvent;
   metroId?: string;
-  /** A game at a building the app does not cover: an Away tag, no page. */
+  /** A game at a building the app does not cover: an Away tag; its page is built from the game (Kylie, Oct 15). */
   away: boolean;
+  /** The team's schedule game behind the row, so a game with no listed event still opens a page to stub it. */
+  link?: GameLink;
 }
 
 /**
@@ -136,6 +140,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
             event,
             metroId: event?.metroId ?? game.eventMetroId,
             away: !game.eventId,
+            ...(fav.teamId ? { link: { teamId: fav.teamId, game } } : {}),
           });
         }
         continue;
@@ -370,7 +375,7 @@ function venueOf(event: CrowdEvent): string {
 /**
  * One row, two tap zones (build notes 3, 4.5): the tag and the words open the event page; the read box,
  * with its city's code over it when the date is not at home, opens the date page. An uncovered away
- * game has no page and wears the Away tag.
+ * game wears the Away tag; its words open a page built from the game, so it can be stubbed (Kylie, Oct 15).
  */
 function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: number | null; home: string }) {
   const code = row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null;
@@ -389,6 +394,10 @@ function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: numb
     <div className="fav-sched-row">
       {row.event ? (
         <Link to={eventPath(row.event.id, row.event.metroId)} className="fav-sched-main">
+          {main}
+        </Link>
+      ) : row.link ? (
+        <Link to={eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home)} state={{ game: row.link }} className="fav-sched-main">
           {main}
         </Link>
       ) : (

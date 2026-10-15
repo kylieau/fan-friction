@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TypeIcon } from './TypeIcon';
 import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { entryCrowd, entryEstimateMark, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
+import { entryCrowd, entryEstimateMark, isGameEventId, isOutsideGamePlan, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { crowdThousands } from '../map/crowdPoints';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
@@ -83,7 +83,7 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
   const city = plan.metroId !== DEFAULT_METRO.id ? METROS[plan.metroId]?.name : null;
   return (
     <div className="stub-row">
-      <Link to={plan.manual && !plan.eventId ? entryPath(plan.id) : datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row-link" aria-label={plan.title} />
+      <Link to={plan.manual && !plan.eventId ? entryPath(plan.id) : isGameEventId(plan.eventId) ? eventPath(plan.eventId!, plan.metroId) : datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row-link" aria-label={plan.title} />
       <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
       <span className="stub-main">
         <span className="stub-title">
@@ -93,7 +93,8 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
         {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
         <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
-      <ReadTile rating={rating} />
+      {/* An away game outside the covered cities has no read (its plan is filed under the team's city). */}
+      <ReadTile rating={isOutsideGamePlan(plan) ? null : rating} />
     </div>
   );
 }

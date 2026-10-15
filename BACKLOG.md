@@ -85,7 +85,7 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 
 ### Next build: Kylie's Oct 14 UX notes (open; the list is in `docs/product/ux-notes.md`, "Oct 14, 2026: Kylie's notes after build 5")
-- Row venue indent; Preseason out of the title (mock asked for); date page section headers and the crowded lineup (with Mock Mosaic); Faves empty space, "Edit", the row divider and one-line titles; stubbing a past game you watched; no comma before the game number (Kylie, Oct 14); a visible way to add people on Friends; the Example Rams–Bills date (not reproduced; needs her screenshot); the Friends page and You layout (more notes coming).
+- Row venue indent; Preseason out of the title (mock asked for); date page section headers and the crowded lineup (with Mock Mosaic); Faves empty space, "Edit", the row divider and one-line titles; ~~stubbing a past game you watched~~ (built Oct 15: every schedule and results row opens a page with "+ Stub it"); no comma before the game number (Kylie, Oct 14); a visible way to add people on Friends; the Example Rams–Bills date (not reproduced; needs her screenshot); the Friends page and You layout (more notes coming).
 - **Fixed Oct 14 (found while checking):** favorites picked the wrong team when two share a short name (LA's Faves suggestions showed the Columbus Clippers, a baseball team, and search couldn't reach the LA Clippers). If a Clippers favorite was saved before the fix, it points at Columbus: unfollow and follow again.
 
 
@@ -474,7 +474,7 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/product/expected-draw-decisions
 - Migrations `0010`–`0013` are all applied (Kylie pasted 0011–0013 on Oct 9).
 - A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
 - The Read tile on a schedule row shows a rating only for nights already in the log; an upcoming home game's read could be looked up from the catalog later.
-- Away games at buildings the app does not cover are listed only (no night to open). Times are the team's home-city time, not the venue's.
+- ~~Away games at buildings the app does not cover are listed only (no night to open).~~ Superseded (Kylie, Oct 15: every game can be stubbed): they open a page built from the game, with "+ Stub it" and no read. Times are the team's home-city time, not the venue's.
 
 ## Tech housekeeping
 - **Schedule archive** (`docs/reference/schedule-archive.md`): `npm run archive-schedule` writes `data/schedule-archive/la/YYYY-MM-DD.json`. GitHub Actions runs it once a day, at 08:23 UTC (about 1:23am Pacific in summer), and commits to `main`. A feed failure skips that city for the night (Oct 10). A listing-only commit skips the Vercel deploy. A commit that updates the forecast list the app reads does build the site, still on the free plan. The map still gets an empty list when a live feed is down; only the archive treats that as a failed run.

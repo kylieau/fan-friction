@@ -74,6 +74,7 @@ import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
 import { TitleText } from '../components/TitleText';
+import { eventFromGame, eventFromStub, sameGame, TEAMS, type GameLink } from '../data';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -89,6 +90,9 @@ export function EventScreen() {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [showHow, setShowHow] = useState(false);
   const [sheet, setSheet] = useState(false);
+  // A team page's schedule row hands over its game (Kylie, Oct 15: every game can be stubbed, however you got here).
+  const location = useLocation();
+  const link = (location.state as { game?: GameLink } | null)?.game;
 
   useEffect(() => {
     let current = true;
@@ -102,12 +106,24 @@ export function EventScreen() {
     );
     (async () => {
       let last: CityDate | null = null;
+      const seen: CityDate[] = [];
       for (const metroId of metros) {
         const next = await getCityDate(metroId, date);
         if (!current) return;
         last = next;
+        seen.push(next);
         if (next.events.some((event) => event.id === id)) {
           setDay(next);
+          return;
+        }
+      }
+      // The same game under another id (a hand seed's "2026-10-03-dodgers" for the feed's MLB id): open that one.
+      if (link) {
+        const host = link.game.eventMetroId && !metros.includes(link.game.eventMetroId) ? await getCityDate(link.game.eventMetroId, date) : null;
+        if (!current) return;
+        const match = sameGame(link, [...seen, ...(host ? [host] : [])].flatMap((d) => d.events));
+        if (match) {
+          navigate(eventPath(match.id, match.metroId), { replace: true, state: location.state });
           return;
         }
       }
@@ -116,7 +132,7 @@ export function EventScreen() {
     return () => {
       current = false;
     };
-  }, [id, date, requestedMetro]);
+  }, [id, date, requestedMetro, link?.game.id]);
 
   // A room under the floor can still open. It does not show up as competition on a bigger event.
   const points = day
@@ -166,6 +182,10 @@ export function EventScreen() {
 
   if (!day) return <div className="screen page" />;
   if (!me) {
+    // No catalog event: a schedule game, or a stub saved from one, still gets its page and its Stub it.
+    const saved = log.added.find((entry) => entry.eventId === id) ?? log.plans.find((plan) => plan.eventId === id);
+    const game = link ? eventFromGame(link) : saved ? eventFromStub(id, saved) : null;
+    if (game && game.id === id) return <GameOnlyPage event={game} link={link} />;
     return (
       <div className="screen page">
         <MapBack date={date} className="back-link">
@@ -699,5 +719,65 @@ function MapBack({
     >
       {children}
     </Link>
+  );
+}
+
+/**
+ * A game the app holds no event for (an away game outside the covered cities, a day before the nightly
+ * job began): the event page's header and its "+ Stub it", nothing that needs data the app doesn't have
+ * (no read, no crowd, no day card).
+ */
+function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
+  const navigate = useNavigate();
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
+  const [sheet, setSheet] = useState(false);
+  const you = yourActivity(event.id, log);
+  const logged = yourEntries(log).find((entry) => entry.eventId === event.id);
+  const youRow = log.plans.find((p) => p.eventId === event.id) ?? logged;
+  const youShare = youRow && (you?.kind === 'watching' || you?.kind === 'watched') ? watchShareOf(youRow) : undefined;
+  const ahead = event.date >= todayIn(METROS[event.metroId] ?? DEFAULT_METRO);
+  const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name || null;
+  const team = link ? TEAMS[link.teamId] : undefined;
+  const score = link?.game.score;
+  // Winner first, as on any event page.
+  const sidesScored = score && team ? [{ name: team.shortName, pts: score.us }, { name: link!.game.opponent, pts: score.them }].sort((x, y) => y.pts - x.pts) : [];
+  const facts: { label: string; value: string }[] = sidesScored.length ? [{ label: 'Outcome', value: sidesScored.map((x) => `${x.name} ${x.pts}`).join(', ') }] : [];
+  return (
+    <div className="screen page event-page">
+      <button type="button" className="back-link link-button" onClick={() => navigate(-1)}>
+        <ChevronDown /> {shortLocalDate(event.date)}
+      </button>
+      <header className="event-head">
+        <h1 className="page-title">
+          <TypeIcon typeKey={eventType(event).key} size={18} className="title-type-icon" />
+          {/* Built from a schedule game, the full name like any event page; rebuilt from a stub, the stub's own name. */}
+          <TitleText text={link ? fullTitle(event) : event.title} />
+        </h1>
+        <div className="event-sub">{[venue, event.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}</div>
+        <FactList facts={facts} />
+      </header>
+      <div className="event-marks">
+        <span className="stub-actions">
+          <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
+            + Stub it
+          </button>
+          {ahead && <AddToCalendar event={event} venue={venue} />}
+        </span>
+        {you && (
+          <span className="event-status">
+            <StatusLine kind={you.kind} share={account && youRow ? undefined : youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} onTag={(tag) => navigate(tagPath(tag))} />
+            {account && youRow && (
+              <>
+                <span aria-hidden>·</span>
+                <LevelPill down value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(event.id, next)} />
+              </>
+            )}
+          </span>
+        )}
+        {logged && <EntryLayer entry={logged} showLevel={false} />}
+      </div>
+      {sheet && <StubSheet event={event} onClose={() => setSheet(false)} />}
+    </div>
   );
 }

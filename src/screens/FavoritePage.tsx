@@ -45,11 +45,13 @@ import {
   type Favorite,
   type FriendEntry,
   type TeamGame,
+  gameEventId,
+  type GameLink,
 } from '../data';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { datePath } from '../lib/view';
+import { datePath, eventPath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
 
@@ -303,7 +305,7 @@ export function FavoritePage() {
                 <ul className="log-list">
                   {shownRows.map((game) => (
                     <li key={game.id}>
-                      <GameRow game={game} rating={game.eventId && game.eventMetroId ? readAt(game.eventMetroId, game.date) : null} covered={Boolean(game.eventId)} teamMetroId={teamMetroId} />
+                      <GameRow game={game} rating={game.eventId && game.eventMetroId ? readAt(game.eventMetroId, game.date) : null} covered={Boolean(game.eventId)} teamMetroId={teamMetroId} teamId={team?.id} today={today} />
                     </li>
                   ))}
                   {rows.length > ROWS && (
@@ -492,7 +494,7 @@ function gameTitle(game: TeamGame): string {
 }
 
 /** A schedule or results row: the game, its date and place; the read when the building is covered, else a dash. */
-function GameRow({ game, rating, covered, teamMetroId }: { game: TeamGame; rating: number | null; covered: boolean; teamMetroId?: string }) {
+function GameRow({ game, rating, covered, teamMetroId, teamId, today }: { game: TeamGame; rating: number | null; covered: boolean; teamMetroId?: string; teamId?: string; today: string }) {
   const mark = scoreMark(game);
   const city = game.eventMetroId && game.eventMetroId !== teamMetroId ? METROS[game.eventMetroId]?.name : !game.home || game.neutral ? game.venueName : undefined;
   const facts = [shortLocalDate(game.date) + (game.start && !mark ? ` · ${clockTime(game.start)}` : ''), city, game.stakes?.game && mark ? null : null]
@@ -507,9 +509,19 @@ function GameRow({ game, rating, covered, teamMetroId }: { game: TeamGame; ratin
       {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No read: not a covered building">—</span>)}
     </>
   );
-  if (game.eventId && game.eventMetroId) {
+  // An upcoming game in a covered building opens its date; every other game opens its event page, carrying the
+  // game so the page can be built when the app holds no event for it (Kylie, Oct 15: every game can be stubbed).
+  if (game.eventId && game.eventMetroId && game.date >= today && !game.score) {
     return (
       <Link to={datePath(game.date, game.eventMetroId, game.eventId)} className="log-row fav-row fav-game-row">
+        {body}
+      </Link>
+    );
+  }
+  if (teamId) {
+    const link: GameLink = { teamId, game };
+    return (
+      <Link to={eventPath(game.eventId ?? gameEventId(game), game.eventMetroId ?? teamMetroId ?? '')} state={{ game: link }} className="log-row fav-row fav-game-row">
         {body}
       </Link>
     );

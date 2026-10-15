@@ -422,6 +422,7 @@ function fitShort(render: (drop: number) => string, steps: number): string {
  * search and the chip card. Teams first, then the round: "Dodgers at Mets · NLCS, Game 3" (N04).
  */
 export function listTitle(event: CrowdEvent): string {
+  if (event.titleFixed) return event.title;
   const p = partsOf(event);
   if (p.type === 'game') return shortGame(p);
   if (p.type === 'show') return fitShort((drop) => renderShow(p, 'short', drop), 3);
@@ -433,6 +434,7 @@ export function listTitle(event: CrowdEvent): string {
  * NL Championship Series, Game 3", N03), the year on a final (N07), "Touring production" (N25).
  */
 export function fullTitle(event: CrowdEvent): string {
+  if (event.titleFixed) return event.title;
   const p = partsOf(event);
   if (p.type === 'game') return renderGame(p, 'full');
   if (p.type === 'show') return renderShow(p, 'full');

@@ -196,6 +196,10 @@ export interface CrowdEvent {
   occasionFacts?: OccasionFacts;
   /** Invite-only (an awards show, a convention): counts for Gridlock, never Crowd fight. */
   invited?: boolean;
+  /** A schedule game outside every covered city, built for the Stub it sheet (`gameStub.ts`): its stub keeps no read. */
+  outsideMetro?: boolean;
+  /** The title is already a finished name (a page rebuilt from a saved stub): the title rules show it as it is. */
+  titleFixed?: boolean;
   /** The TV station carrying it, when the schedule names one ("ESPN", "SportsNet LA"). A fact, never an input. */
   broadcast?: string;
   /** Probable or announced starters, known before the game (MLB names its pitchers). Home first. */
