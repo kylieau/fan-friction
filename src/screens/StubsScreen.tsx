@@ -28,6 +28,7 @@ import { timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { TagChip } from '../components/TagChip';
 import { ChevronDown } from '../components/Icons';
+import { ListBand } from '../components/ListBand';
 
 type Tab = 'recent' | 'upcoming';
 type Chip = 'all' | 'sports' | 'concerts' | 'watched' | 'attended';
@@ -196,7 +197,7 @@ export function StubsScreen() {
             <div className="timeline">
               {groupByTime(recent).map(([group, list]) => (
                 <section key={group} className="timeline-group" aria-label={group}>
-                  <h3 className="timeline-heading month-band">{group}</h3>
+                  <ListBand label={group} />
                   <ul className="log-list">
                     {list.map((entry) => (
                       <li key={entry.id}>

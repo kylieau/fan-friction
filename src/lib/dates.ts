@@ -175,3 +175,12 @@ export function daysBetween(from: string, to: string): number {
   const [ty, tm, td] = to.split('-').map(Number);
   return Math.round((Date.UTC(ty, tm - 1, td) - Date.UTC(fy, fm - 1, fd)) / 86_400_000);
 }
+
+/** A list's day band: "Today · Thu, Oct 15", "Tomorrow · Fri, Oct 16", else "Sat, Oct 17" (the Explore List's label). */
+export function dayBandLabel(date: string, today: string): string {
+  const base = shortLocalDate(date);
+  const [y, m, d] = today.split('-').map(Number);
+  const tomorrow = new Date(Date.UTC(y, m - 1, d + 1)).toISOString().slice(0, 10);
+  const lead = date === today ? 'Today' : date === tomorrow ? 'Tomorrow' : null;
+  return lead ? `${lead} · ${base}` : base;
+}

@@ -8561,3 +8561,33 @@ a.bulk-row {
 span.fav-sched-read {
   padding: 6px 2px;
 }
+
+/* One separator for every grouped list, the Explore List's day band (Kylie, Oct 15: "standard across the
+   board"): full width, grey, the label uppercase at the left, the day's read at the right when there is one. */
+.list-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  background: rgba(15, 27, 45, 0.08);
+  color: var(--ink);
+}
+.list-band-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.list-band-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+/* Inside a page (16 px side padding) the band runs edge to edge, like the Explore List's. */
+.page .list-band {
+  margin: 0 -16px;
+}

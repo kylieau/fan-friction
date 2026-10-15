@@ -31,6 +31,7 @@ import { shortLocalDate } from '../lib/dates';
 import { backFrom, datePath, eventPath } from '../lib/view';
 import { FavoritesScreen } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
+import { ListBand } from '../components/ListBand';
 
 type Segment = 'faves' | 'friends';
 
@@ -270,7 +271,7 @@ function ByEvent({ items, example, ratings, log, onFeed }: { items: FeedItem[]; 
       {coming.map(card)}
       {earlier.length > 0 && (
         <section className="you-block" aria-label="Earlier">
-          <h3 className="timeline-heading month-band">Earlier</h3>
+          <ListBand label="Earlier" />
           {earlier.map(card)}
           <button type="button" className="text-link see-earlier" onClick={onFeed}>
             See all earlier activity ›
@@ -295,7 +296,7 @@ function Feed({ items, example }: { items: FeedItem[]; example: boolean }) {
   const band = (label: string, rows: FeedItem[]) =>
     rows.length > 0 && (
       <section className="you-block" aria-label={label}>
-        <h3 className="timeline-heading month-band">{label}</h3>
+        <ListBand label={label} />
         <ul className="log-list feed-flat">
           {rows.map((item) => {
             const { lead, tail } = feedSentence(item);

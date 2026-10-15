@@ -33,11 +33,12 @@ import {
   gameEventId,
   type GameLink,
 } from '../data';
-import { addDays, clockTime, shortLocalDate } from '../lib/dates';
+import { addDays, clockTime, dayBandLabel, shortLocalDate } from '../lib/dates';
 import { listTitle, scheduleGameTitle, stakesChip, stakesLabel } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { TitleText } from '../components/TitleText';
+import { ListBand } from '../components/ListBand';
 
 /** How far ahead the schedule looks: the schedule archive's reach. */
 const AHEAD_DAYS = 14;
@@ -347,7 +348,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
       ) : (
         [...byDate.entries()].map(([date, list]) => (
           <section key={date} className="you-block fav-day" aria-label={shortLocalDate(date)}>
-            <h2 className="fav-day-head">{shortLocalDate(date)}</h2>
+            <ListBand as="h2" label={dayBandLabel(date, today)} />
             <ul className="log-list">
               {list.map((row) => (
                 <li key={row.key}>

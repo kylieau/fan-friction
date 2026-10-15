@@ -29,6 +29,7 @@ import { ExploreHeader } from '../components/ExploreHeader';
 import { ExploreModeSwitch } from '../components/ExploreModeSwitch';
 import { ReadTile } from '../components/ReadTile';
 import { WeekCalendar, type CalendarRead } from '../components/WeekCalendar';
+import { ListBand } from '../components/ListBand';
 
 const LIST_MEMORY_KEY = 'fan-friction:list-return';
 /** Set when a row or a day band is tapped, so Back from there restores the place; read once on the next open. */
@@ -502,9 +503,8 @@ export function ExploreListScreen() {
           {firstIsPast && <div className="explore-list-earlier">Earlier</div>}
           {days.map(({ date, day, events, hidden }) => (
             <section key={date} className="explore-list-day" data-day={date} aria-label={dayLabel(date, today)}>
-              <Link to={datePath(date, metro.id)} className="explore-list-dayhead">
-                <span className="explore-list-daylabel">{dayLabel(date, today)}</span>
-                <ReadTile size="inline" rating={day.rating?.rating ?? null} empty={day.empty} />
+              <Link to={datePath(date, metro.id)} className="list-band-link">
+                <ListBand label={dayLabel(date, today)} right={<ReadTile size="inline" rating={day.rating?.rating ?? null} empty={day.empty} />} />
               </Link>
               <ul className="day-list" aria-label={dayLabel(date, today)}>
                 {[...events]

@@ -21,6 +21,7 @@ import { tagPath } from '../lib/view';
 import { ChevronDown } from '../components/Icons';
 import { PlanRow, StubRow } from '../components/StubRows';
 import { TagChip } from '../components/TagChip';
+import { ListBand } from '../components/ListBand';
 
 /**
  * One of your tags (build notes 4, "Stub tags" 4; T02, T07): the tag, "5 stubs · 4 attended · 1 watched",
@@ -161,7 +162,7 @@ export function TagScreen() {
 
       {ahead.length > 0 && (
         <section className="you-block stubs-list" aria-label="Coming up">
-          <h2 className="timeline-heading month-band">Coming up</h2>
+          <ListBand as="h2" label="Coming up" />
           <ul className="log-list">
             {ahead.map((plan) => (
               <li key={plan.id}>
@@ -173,7 +174,7 @@ export function TagScreen() {
       )}
       {years.map(([year, list]) => (
         <section key={year} className="you-block stubs-list" aria-label={year}>
-          <h2 className="timeline-heading month-band">{year}</h2>
+          <ListBand as="h2" label={year} />
           <ul className="log-list">
             {list.map((entry) => (
               <li key={entry.id}>
