@@ -2,7 +2,7 @@
 
 Overwritten each session. Deferred work and history live in `BACKLOG.md`: open questions are at its top (the K-list), build follow-ups under **Next** ("Build 5 follow-ups" is newest). Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (newest sections at the bottom). **Build 5's source of truth is `docs/build-5/build-notes-5.md`; its full snapshot is `docs/build-5/handoff-5.md`. Read that first.**
 
-_Last synced: Oct 14, 2026, Claude Code (Opus 5.5), at `main`'s head after `c4b6cd2`, with everything pushed and the tree clean. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
+_Last synced: Oct 15, 2026, Claude Code (Opus 5.5), at `main`'s head, with everything pushed and the tree clean. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
 
 ## Current state
 - **Build 5 is built, pushed and verified by the checks.** `npm run build` and all five check scripts pass: `titles-check`, `event-types-check`, `crowd-range-check`, `city-build-check` and `addon-filter-check`. Status by notes item, judgment calls and the advisor log are in `docs/build-5/handoff-5.md`.
@@ -18,11 +18,18 @@ _Last synced: Oct 14, 2026, Claude Code (Opus 5.5), at `main`'s head after `c4b6
   - **Add-on filter:** four bugs fixed (`sources/addOns.ts`, with a check script).
   - **docs-tidy:** skips a doc that was deleted but is still tracked.
   - **Personal log:** moved out of the repo into the git-ignored `private/kylie-log/`.
+- **Oct 15 round (Kylie's notes after build 5; all committed, checks pass):**
+  - **Every game can be stubbed** (`src/data/gameStub.ts`): every Schedule/Results row on a team page and every team row in Faves opens a page with "+ Stub it". A game held under another id (a hand seed) is matched by date and teams; a game held nowhere gets a page built from the schedule (no read, no crowd), which its stub, a friend's line and a cold link (via the team's schedule) all reopen. Past team-page rows now open the event page; upcoming covered ones still open the date.
+  - **Preseason and spring training are an aside:** "Nuggets at Clippers (Preseason)", smaller and lighter, through one shared piece (`TitleText`). Kylie wants the same for exhibitions, scrimmages, qualifiers, tournaments, maybe playoffs: **her rules and mockups are coming; build nothing until then.**
+  - **No comma before the game number** ("NLCS Game 3"). **Badges use the team's own code**, the TV scorebug's (the 407 stored codes were not audited against broadcasts).
+  - **Rows:** the type icon hangs left so title text, its second line and the venue share one edge (measured, 209 rows). **Date page:** Attending and the lineup carry their titles inside their cards. **Faves:** a badges strip (builder's call, no mock: Kylie to look), one-line titles, the divider by the read. **Friends:** a "Find people" bar (not screenshotted signed in). **Favorites** pick the right team when two share a name (LA Clippers, not Columbus's).
+  - **Test data:** the test-account seed and the Example rows use real events on real dates; the seed was re-run on the test accounts.
+  - **Build fix:** the nightly forecast index outgrew TypeScript (TS2590) and stopped deploys; `scripts/forecast-index.mjs` now writes it as parsed JSON (same rows).
 - **Migration 0026 (stub privacy) has been run (Kylie, Oct 14).** Do not list it as a task again. Only the build and the advisor review have checked live enforcement, and neither proves it works (see O2 below).
 - **Cosm can't be listed.** Its terms forbid automated collection without written consent, and it has no feed. This is recorded in `docs/reference/data-sources.md` under "Checked and not usable".
 
 ## Changes made this session
-Every file named above, plus the research prompts and answers under `docs/research/topics/` and `docs/research/city-builds/new-york/`, the handoff-5, BACKLOG, product-decisions and data-sources docs, and the other session's private-log cleanup (`3f64fd3`, committed here at Kylie's request). Nothing is uncommitted.
+Oct 15: the files named in the Oct 15 round (see `git log` from `ccbaedc`). Oct 14: every file named above, plus the research prompts and answers under `docs/research/topics/` and `docs/research/city-builds/new-york/`, the handoff-5, BACKLOG, product-decisions and data-sources docs, and the other session's private-log cleanup (`3f64fd3`, committed here at Kylie's request). Nothing is uncommitted.
 
 ## Key decisions in force (newest; older ones are in product-decisions and BACKLOG)
 - **Mockups illustrate the notes, nothing more (Kylie, Oct 14).** They are never the goal and never fill a gap the notes leave open. Raise any difference between a mockup and the notes.
@@ -50,6 +57,8 @@ Every file named above, plus the research prompts and answers under `docs/resear
   - **Scrolling:** the page scrolls inside `.screen.page`.
   - **Layout:** measure element edges with a Playwright script before saying something is fixed everywhere.
   - **Scripts:** keep helper scripts in the session scratchpad.
+  - **Game pages carry router state:** test a schedule row by tapping it, not by opening its URL (a cold URL now resolves through the team's schedule, so both work, but the tap is the user's path).
+  - **No Prettier config:** never run `prettier --write` on a file; it reformats the whole thing.
   - **Stopping vite:** use `kill $(lsof -ti:3001)`, never `pkill`.
 
 ## Kylie's manual steps
@@ -69,6 +78,7 @@ Every file named above, plus the research prompts and answers under `docs/resear
    - Whether chats survive a stop/start or a rebuild stays unverified until that first rebuild.
 
 ## Open (details in `docs/build-5/handoff-5.md` and BACKLOG)
+0. **Kylie's next messages:** the aside rules for exhibitions and the rest; notes on Stubs, the Friends page and You; the date page's crowding and lineup social toggle (with Mock Mosaic). At the start of a resumed session, ask for these.
 1. **O1–O4** (handoff-5, "Open"):
    - O1: what the privacy default actually changes.
    - O2: a live test matrix for privacy enforcement and sync.
