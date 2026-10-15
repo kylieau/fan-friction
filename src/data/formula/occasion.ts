@@ -12,7 +12,7 @@ function roundPoints(round: string | undefined): number {
   const r = round.toLowerCase();
   if (/(world series|super bowl|nba finals|stanley cup final|mls cup$|final$|championship game|national championship)/.test(r)) return 4;
   if (/(play-in|wild card|wildcard|round one|first round|round of)/.test(r)) return 2;
-  if (/(nlds|alds|nlcs|alcs|division|conference|semifinal|quarterfinal|playoff|round)/.test(r)) return 3;
+  if (/(nlds|alds|nlcs|alcs|division|conference|semifinal|quarterfinal|playoff|round|sweet 16|elite eight|final four|frozen four)/.test(r)) return 3;
   return 0;
 }
 

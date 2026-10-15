@@ -162,11 +162,14 @@ export function espnStakes(game: EspnScheduleGame, league: FeedLeague): Stakes |
  * "post", and the headline names the round ("WNBA Semifinals - Game 3"). Without
  * this they read as regular-season games and took a regular-season crowd.
  */
-export function otherPostseason(game: EspnScheduleGame): Stakes | undefined {
+export function otherPostseason(game: EspnScheduleGame, path = ''): Stakes | undefined {
   if (!playoffSeason(game)) return undefined;
   const raw = headlineOf(game);
   const ifNecessary = /\bif necessary\b/i.test(raw);
   const headline = raw.replace(/\s+if necessary$/i, '');
+  // College tournaments read in the NCAA's round words (Kylie, Oct 15; docs/product/college-tournament-labels-proposal.md).
+  const college = /\bcollege\b/.test(path) ? collegeTournamentRound(headline) : undefined;
+  if (college) return { round: college, ...(ifNecessary ? { ifNecessary: true } : {}) };
   const m = headline.match(/^(?:WNBA|NWSL|MLS)?\s*(.*?)(?:\s*-\s*Game\s+(\d+))?$/i);
   const round = m?.[1]?.trim();
   const game_ = m?.[2] ? Number(m[2]) : undefined;
@@ -180,4 +183,38 @@ export function leagueFromPath(path: string): FeedLeague | null {
   if (path.endsWith('/nfl')) return 'nfl';
   if (path.includes('college-football')) return 'college';
   return null;
+}
+
+const COLLEGE_ROUNDS: [RegExp, string][] = [
+  [/^first four$/i, 'First Four'],
+  [/^(?:1st|first) round$/i, 'First round'],
+  [/^(?:2nd|second) round$/i, 'Second round'],
+  [/^(?:3rd|third) round$/i, 'Third round'],
+  [/sweet (?:16|sixteen)|regional semifinal/i, 'Sweet 16'],
+  [/elite (?:8|eight)|regional final/i, 'Elite Eight'],
+  [/final four|national semifinal/i, 'Final Four'],
+  [/frozen four/i, 'Frozen Four'],
+  [/national championship|^championship$/i, 'National Championship'],
+  [/quarterfinals?$/i, 'Quarterfinal'],
+  [/semifinals?$/i, 'Semifinal'],
+  [/^finals?$/i, 'Final'],
+];
+
+/**
+ * A college tournament round in words (Kylie, Oct 15, 2026; first round stays Notable, 2 points), from ESPN's headline ("NCAA Women's Championship pres. by Capital One -
+ * Greenville Regional 1 - 1st Round" → "First round"). The NCAA tournament is plain; any other tournament is named
+ * first ("NIT First round"). Gender, sponsor, region and city leave the label: MBB / WBB already say which.
+ * Undefined when the round isn't recognized, so the headline stays as it was.
+ */
+export function collegeTournamentRound(raw: string): string | undefined {
+  const parts = raw.split(/\s+-\s+/).map((p) => p.trim());
+  const last = parts[parts.length - 1];
+  const round = COLLEGE_ROUNDS.find(([re]) => re.test(last))?.[1];
+  if (!round || parts.length < 2) return undefined;
+  const head = parts[0];
+  if (/\bNCAA\b|^(?:Men's|Women's) (?:Basketball |Hockey )?Championship/i.test(head)) return round;
+  const named = head.match(/\b(WBIT|NIT|CBI|CIT|Crown|FCS)\b/i)?.[1];
+  if (named) return `${named === 'Crown' ? 'Crown' : named.toUpperCase()} ${round}`;
+  const conference = head.match(/^(.+?) (?:Tournament|Championship)$/i)?.[1];
+  return conference ? `${conference} Tournament ${round}` : undefined;
 }

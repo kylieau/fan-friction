@@ -1078,7 +1078,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     ? localParts(g.date, METROS[eventMetro].timeZone)
     : { date: localParts(g.date, 'America/New_York').date, time: null };
   const league = leagueFromPath(t.path);
-  const stakes = league ? espnStakes(g, league) : otherPostseason(g);
+  const stakes = league ? espnStakes(g, league) : otherPostseason(g, t.path);
   const broadcast = tvStation(c.broadcasts);
   return {
     id: `${date}-espn-${t.teamId}-${g.id}`,

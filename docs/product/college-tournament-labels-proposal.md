@@ -1,6 +1,6 @@
 # Proposal: short labels for college tournament games (Oct 15, 2026)
 
-Status: proposal, waiting for Kylie's OK. Measured on a trial build, then reverted; nothing is built.
+Status: **approved and built (Kylie, Oct 15, 2026): first round stays Notable (2 points).** She may want more research on this later (BACKLOG). The LA dates below were reloaded (private SQL 0034).
 
 ## The problem
 College basketball and hockey postseason games show ESPN's whole headline as their label, for men and women alike:
