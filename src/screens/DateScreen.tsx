@@ -233,7 +233,7 @@ export function DateScreen() {
               {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
               <span className="read-meta">
                 {/* No internal terms here (C069): the sources count after; no lock time ahead (Kylie, Oct 14). */}
-                {rebuilt ? 'Rebuilt from past schedules.' : !ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
+                {rebuilt ? 'Estimated from past schedules.' : !ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
               </span>
             </span>
             {locked && (

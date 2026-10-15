@@ -27,7 +27,7 @@ Fan/Friction is a personal log of the live events you went to (games, concerts, 
 
 The app is at **https://fan-friction.vercel.app**. It works best on a phone. I'm signed in, and Kylie has loaded my past events into my account. Tabs: Explore (a map and day strip of upcoming and past dates), Stubs (my log: Recent and Upcoming), Following (Faves: the teams, artists and venues I follow; Friends: the people I follow), and You (profile, settings, stats). I can log an event myself with **+ Stub it**, on an event or on the Stubs tab.
 
-My past events were loaded by hand. Each one in a city the app covers carries its friction read, settled from public listings of what else was on that date and the weather. Dates from before the app started saving schedules say "Rebuilt from past schedules" under the read; the ⓘ on a date's read says how it settled. Events in a city the app doesn't cover yet may not have a read. Still ask whether those look right, and whether I'd want a read for them.
+My past events were loaded by hand. Each one in a city the app covers carries its friction read, settled from public listings of what else was on that date and the weather. Dates from before the app started saving schedules say "Estimated from past schedules" under the read; the ⓘ on a date's read says how it settled. Events in a city the app doesn't cover yet may not have a read. Still ask whether those look right, and whether I'd want a read for them.
 
 ## How to run this
 - Ask me **one question at a time** and wait for my answer. Keep it to about 15–20 minutes.

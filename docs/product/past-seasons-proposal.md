@@ -25,7 +25,7 @@ The repo only ever gains past events in complete sets: every home game of a team
 ## Plan
 1. **A city-neutral `past-seasons` script.** It pulls each team's full past-season schedule from the MLB, ESPN and HockeyTech feeds (the fetch code already exists in `attendance-collect.mjs`), keeps home games in the metro's rooms, and writes them to the catalog as source `past-season`. Scheduled starts only. ESPN's placeholder midnight times become "time unknown", never a real start. Final scores, announced crowds and game length go into results as evidence, never into the read.
 2. **Read the catalog by date window.** The app now pulls a city's whole catalog at once. With past seasons in it, that's thousands of rows per open. The date page and strip will ask for a window around the date, like weather does. Calendar and search keep upcoming dates plus whatever window is open.
-3. **First slice: Los Angeles, 2024–25 and 2025–26 seasons.** Check three past date pages (events listed, "Rebuilt from past schedules", a verdict), with screenshots. Logged nights on those dates pick up the read by city and date. No log edits are needed.
+3. **First slice: Los Angeles, 2024–25 and 2025–26 seasons.** Check three past date pages (events listed, "Estimated from past schedules", a verdict), with screenshots. Logged nights on those dates pick up the read by city and date. No log edits are needed.
 4. **Widen:** LA back to 2013, then every built city from 2022. Same script, more seasons.
 5. **Concerts.** No feed has past concerts. Until a venue-wide source exists, no past concert is added (a handful of shows on their own would mark someone's nights). Two routes:
    - setlist.fm's free API, venue by venue. Its terms need a read first; it costs nothing.
@@ -33,7 +33,7 @@ The repo only ever gains past events in complete sets: every home game of a team
 6. **Season-wide research pass** for what the feeds don't carry (rankings with the poll named, broadcast, occasion), written after step 3 shows what the feeds filled.
 
 ## What a past date will and won't get
-- A verdict and the events, labeled "Rebuilt from past schedules". Expected draws use today's season levels for old dates. That's acceptable for a rebuilt read, so it's labeled, not tuned.
+- A verdict and the events, labeled "Estimated from past schedules" (Kylie, Oct 15). Expected draws use today's season levels for old dates. That's acceptable for a rebuilt read, so it's labeled, not tuned.
 - No stamp. Stamps need the archived forecast before the start, which doesn't exist before Oct 2026. A "rebuilt stamp" would be a separate proposal.
 - Places that aren't app cities (desert festivals, Ventura County) get no read until someone decides to add them.
 - Rooms with no feed and under 5,000 (small-college volleyball, Division III) aren't added. A logged one still takes the nearby read from the big events that night.
