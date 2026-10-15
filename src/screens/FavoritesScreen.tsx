@@ -35,6 +35,7 @@ import { addDays, clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle, scheduleGameTitle, stakesLabel } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
+import { TitleText } from '../components/TitleText';
 
 /** How far ahead the schedule looks: the schedule archive's reach. */
 const AHEAD_DAYS = 14;
@@ -379,7 +380,7 @@ function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: numb
         {favoriteMark(row.fav)}
       </span>
       <span className="log-main">
-        <span className="log-title">{row.title}</span>
+        <span className="log-title"><TitleText text={row.title} /></span>
         <span className="log-facts">{row.facts}</span>
       </span>
     </>

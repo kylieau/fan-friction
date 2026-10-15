@@ -29,6 +29,7 @@ import { shortLocalDate } from '../lib/dates';
 import { datePath } from '../lib/view';
 import { loggedDateLabel } from '../lib/dates';
 import { eventPath, type BackTo } from '../lib/view';
+import { TitleText } from '../components/TitleText';
 
 /**
  * Someone's page as others see it: name, three stats, and the entries they allow
@@ -235,7 +236,7 @@ export function ProfileScreen() {
               <li key={plan.id}>
                 <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="log-row">
                   <span className="log-main">
-                    <span className="log-title">{plan.title}</span>
+                    <span className="log-title"><TitleText text={plan.title} /></span>
                     <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name, plan.watch ? 'Watching' : null].filter(Boolean).join(' · ')}</span>
                   </span>
                 </Link>
@@ -282,7 +283,7 @@ function ProfileEntryRow({ entry, rating }: { entry: Entry; rating: number | nul
         </span>
       )}
       <span className="log-main">
-        <span className="log-title">{entry.title}</span>
+        <span className="log-title"><TitleText text={entry.title} /></span>
         <span className="log-facts">{facts}</span>
         {entry.review && <span className="log-review">{entry.review}</span>}
       </span>

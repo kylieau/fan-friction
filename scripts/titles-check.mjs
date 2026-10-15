@@ -27,8 +27,8 @@ try {
     // Kylie, Oct 14: past 32 characters the game number shortens to G3; under it, "Game 3" stays.
     ['Short G3 only when long', game('Dodgers vs. Mets', { sport: 'baseball', teams: { home: 'dodgers', away: 'mets' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { short: 'Mets at Dodgers · NLCS, Game 3' }],
     ['N06/N07 Super Bowl', game('Rams vs. Chiefs', { teams: { home: 'rams', away: 'chiefs' }, stakes: { round: 'Super Bowl' }, date: '2027-02-14' }), { full: 'Chiefs vs. Rams · Super Bowl 2027' }],
-    ['N08 Preseason', game('Clippers vs. Nuggets', { sport: 'basketball', teams: { home: 'clippers', away: 'nuggets' }, preseason: true }), { chip: 'Clippers Preseason', short: 'Nuggets at Clippers · Preseason' }],
-    ['Case 1 spring training', game('Reds vs. Cubs', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'reds', away: 'cubs' }, preseason: true, sourceId: 'mlb' }), { short: 'Cubs at Reds · Spring training', full: 'Cubs at Reds · Spring training (Cactus League)' }],
+    ['N08 Preseason', game('Clippers vs. Nuggets', { sport: 'basketball', teams: { home: 'clippers', away: 'nuggets' }, preseason: true }), { chip: 'Clippers (Preseason)', short: 'Nuggets at Clippers (Preseason)' }],
+    ['Case 1 spring training', game('Reds vs. Cubs', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'reds', away: 'cubs' }, preseason: true, sourceId: 'mlb' }), { short: 'Cubs at Reds (Spring training)', full: 'Cubs at Reds (Spring training, Cactus League)' }],
     ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels DH1' }],
     ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls · AHL playoffs', full: 'Reign at Gulls · Calder Cup Playoffs' }],
     ['N10 artist before tour', show('Song Of The Saints Tour with Phil Wickham', { performer: 'Phil Wickham' }), { full: 'Phil Wickham · Song Of The Saints Tour' }],
@@ -56,7 +56,7 @@ try {
   const tm = { ...game('Chicago Cubs vs. Los Angeles Dodgers', { sport: 'baseball', metroId: 'phoenix', sourceId: 'ticketmaster' }), id: 'tm-1' };
   const mlb = { ...game('Cubs vs. Dodgers', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'cubs', away: 'dodgers' }, preseason: true, sourceId: 'mlb' }), id: 'mlb-1' };
   const merged = mergeDuplicates([tm, mlb]);
-  const ok = merged.length === 1 && merged[0].sourceId === 'mlb' && merged[0].mergedFrom?.[0]?.id === 'tm-1' && listTitle(merged[0]) === 'Dodgers at Cubs · Spring training';
+  const ok = merged.length === 1 && merged[0].sourceId === 'mlb' && merged[0].mergedFrom?.[0]?.id === 'tm-1' && listTitle(merged[0]) === 'Dodgers at Cubs (Spring training)';
   if (!ok) (failed += 1), console.log(`FAIL step 0 merge: ${merged.length} records, ${merged.map((e) => `${e.sourceId}: ${listTitle(e)}`).join(' / ')}`);
   else console.log(`ok   Step 0 merge: one record, ${listTitle(merged[0])} (from ${merged[0].mergedFrom.map((m) => m.sourceId).join(', ')})`);
   const addOn = { ...other('Brooklyn Nets v. Charlotte Hornets Post-Game Free Throw Opportunity', { sourceId: 'ticketmaster' }), id: 'tm-2' };
@@ -80,7 +80,23 @@ try {
   else console.log('ok   Seller dedupe: a SeatGeek show Ticketmaster lists is dropped, the rest kept');
 
   const sched = scheduleGameTitle('Clippers', { home: true, opponent: 'Nuggets', preseason: true });
-  if (sched !== 'Nuggets at Clippers · Preseason') (failed += 1), console.log(`FAIL schedule title: ${sched}`);
+  if (sched !== 'Nuggets at Clippers (Preseason)') (failed += 1), console.log(`FAIL schedule title: ${sched}`);
+  const relPre = teamRelativeTitle({ home: true, opponent: 'Nuggets', preseason: true });
+  if (relPre !== 'vs. Nuggets (Preseason)') (failed += 1), console.log(`FAIL team page preseason: ${relPre}`);
+  // TitleText sets the aside apart, on new titles and on older saved ones (Kylie, Oct 15).
+  const { splitAside } = await server.ssrLoadModule('/src/components/TitleText.tsx');
+  const asides = [
+    ['Nuggets at Clippers (Preseason)', 'Nuggets at Clippers', 'Preseason'],
+    ['Nuggets at Clippers · Preseason', 'Nuggets at Clippers', 'Preseason'],
+    ['Preseason · vs. Nuggets', 'vs. Nuggets', 'Preseason'],
+    ['Cubs at Reds (Spring training, Cactus League)', 'Cubs at Reds', 'Spring training, Cactus League'],
+    ['Brewers at Dodgers · NLCS G3', 'Brewers at Dodgers · NLCS G3', null],
+  ];
+  for (const [text, name, aside] of asides) {
+    const got = splitAside(text);
+    if (got.name !== name || got.aside !== aside) (failed += 1), console.log(`FAIL aside: ${text} → ${JSON.stringify(got)}`);
+  }
+  console.log('ok   Preseason aside: parentheses on new titles, older " · Preseason" read the same');
   const rel = teamRelativeTitle({ home: true, opponent: 'Padres' });
   if (rel !== 'vs. Padres') (failed += 1), console.log(`FAIL team page: ${rel}`);
   else console.log('ok   N29 team page: vs. Padres / @ kept');

@@ -7,6 +7,7 @@ import { mapTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
 import { crowdThousands } from '../map/crowdPoints';
+import { TitleText } from './TitleText';
 
 /**
  * The night's stacked timeline (Kylie, Oct 11, call 6; mock call6-overlap B/C): one bar per
@@ -68,7 +69,7 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
                   <span className="bar-name">
                     <span className="bar-title">
                       <TypeIcon typeKey={eventType(e).key} size={17} />
-                      {mapTitle(e, events)}
+                      <TitleText text={mapTitle(e, events)} />
                     </span>
                     {size ? (
                       <span className="bar-crowd">

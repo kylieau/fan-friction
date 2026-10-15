@@ -51,6 +51,7 @@ import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
+import { TitleText } from '../components/TitleText';
 
 /** How many schedule rows show before "See all". */
 const ROWS = 5;
@@ -257,7 +258,7 @@ export function FavoritePage() {
                 <Link to={datePath(nextHome.date, nextHomeEvent.metroId, nextHomeEvent.id)} className="fav-next-main">
                   <Read rating={readAt(nextHomeEvent.metroId, nextHome.date)} size="big" />
                   <span className="log-main">
-                    <span className="log-title">{gameTitle(nextHome)}</span>
+                    <span className="log-title"><TitleText text={gameTitle(nextHome)} /></span>
                     <span className="log-facts">
                       {shortLocalDate(nextHome.date)}
                       {nextHome.start ? ` · ${clockTime(nextHome.start)}` : ''}
@@ -399,7 +400,7 @@ export function FavoritePage() {
                   <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
                     <Read rating={readAt(event.metroId, event.date)} />
                     <span className="log-main">
-                      <span className="log-title">{listTitle(event)}</span>
+                      <span className="log-title"><TitleText text={listTitle(event)} /></span>
                       <span className="log-facts">
                         {shortLocalDate(event.date)}
                         {event.start ? ` · ${clockTime(event.start)}` : ''}
@@ -465,7 +466,7 @@ export function FavoritePage() {
                   <Read rating={ratingForEntry(entry, ratings)} />
                   <span className="log-main">
                     <span className="log-friend">{friend.displayName ?? friend.handle ?? 'Someone'}</span>
-                    <span className="log-title">{entry.title}</span>
+                    <span className="log-title"><TitleText text={entry.title} /></span>
                     <span className="log-facts">{loggedDateLabel(entry.when)}</span>
                   </span>
                 </div>
@@ -500,7 +501,7 @@ function GameRow({ game, rating, covered, teamMetroId }: { game: TeamGame; ratin
   const body = (
     <>
       <span className="log-main">
-        <span className="log-title">{mark ? `${mark} ${teamRelativeTitle({ ...game, stakes: undefined, preseason: undefined })}` : gameTitle(game)}</span>
+        <span className="log-title"><TitleText text={mark ? `${mark} ${teamRelativeTitle({ ...game, stakes: undefined, preseason: undefined })}` : gameTitle(game)} /></span>
         <span className="log-facts">{facts}</span>
       </span>
       {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No read: not a covered building">—</span>)}
@@ -522,7 +523,7 @@ function EntryRow({ entry, rating, outcome }: { entry: Entry; rating: number | n
     <>
       <Read rating={rating} />
       <span className="log-main">
-        <span className="log-title">{entry.title}</span>
+        <span className="log-title"><TitleText text={entry.title} /></span>
         <span className="log-facts">{facts}</span>
       </span>
     </>

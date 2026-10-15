@@ -8,6 +8,7 @@ import { crowdThousands } from '../map/crowdPoints';
 import { cardSegments } from '../map/chipActivity';
 import { ActivityIcon } from './ActivityLines';
 import type { FeedItem } from '../data';
+import { TitleText } from './TitleText';
 
 /**
  * The compact card that rises when a chip is tapped (build notes 2, T1): occasion tag
@@ -27,7 +28,7 @@ export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Fr
       <span className="chip-card-main">
         <span className="chip-card-title">
           {event.assessment && <OccasionTag occasion={event.assessment.occasion} />}
-          <span className="log-title">{listTitle(event)}</span>
+          <span className="log-title"><TitleText text={listTitle(event)} /></span>
         </span>
         <span className="log-facts">{[venue, event.start ? clockTime(event.start) : 'Time TBA', degrees].filter(Boolean).join(' · ')}</span>
         <span className="chip-card-tags">

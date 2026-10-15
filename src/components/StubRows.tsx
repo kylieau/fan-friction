@@ -9,6 +9,7 @@ import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
 import { StatusLine } from './ActivityLines';
 import { CrowdMark, FrictionPill } from './EventTags';
 import { ReadTile } from './ReadTile';
+import { TitleText } from './TitleText';
 
 /** The weekday over the day number, as on the carousel; a rough date shows its label instead. */
 export function DateBox({ when }: { when: Entry['when'] }) {
@@ -43,7 +44,7 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
       <span className="stub-main">
         <span className="stub-title">
           <TypeIcon typeKey={entryTypeKey(entry)} size={16} className="stub-type-icon" />
-          {entry.title}
+          <TitleText text={entry.title} />
         </span>
         {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
         {entry.stamp?.friction && entry.stamp.friction !== 'Low' && (
@@ -87,7 +88,7 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
       <span className="stub-main">
         <span className="stub-title">
           <TypeIcon typeKey={typeKey ?? (plan.manual ? entryTypeKey({ kind: plan.manual.kind, sport: plan.manual.sport ?? '', title: plan.title, venue: plan.venue }) : null)} size={16} className="stub-type-icon" />
-          {plan.title}
+          <TitleText text={plan.title} />
         </span>
         {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
         <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} onTag={(tag) => navigate(tagPath(tag))} />

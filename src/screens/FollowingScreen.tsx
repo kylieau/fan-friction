@@ -29,6 +29,7 @@ import { ACTIVITY_WORDS, activityGroups, activityOrder, feedSentence, type Activ
 import { shortLocalDate } from '../lib/dates';
 import { backFrom, datePath, eventPath } from '../lib/view';
 import { FavoritesScreen } from './FavoritesScreen';
+import { TitleText } from '../components/TitleText';
 
 type Segment = 'faves' | 'friends';
 
@@ -215,7 +216,7 @@ function ByEvent({ items, example, ratings, log, onFeed }: { items: FeedItem[]; 
     const head = (
       <>
         <span className="log-main">
-          <span className="log-title">{group.title}</span>
+          <span className="log-title"><TitleText text={group.title} /></span>
           <span className="log-facts">{[group.venue, shortLocalDate(group.date)].filter(Boolean).join(' · ')}</span>
           {friction && friction !== 'Low' && (
             <span className="stub-tags">
@@ -297,7 +298,7 @@ function Feed({ items, example }: { items: FeedItem[]; example: boolean }) {
                   {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
                 </span>
                 <span className="feed-flat-text">
-                  {lead} <strong>{item.title}</strong>
+                  {lead} <strong><TitleText text={item.title} /></strong>
                   {tail}
                 </span>
                 <span className="feed-flat-date">{shortLocalDate(item.date).replace(/^\w+, /, '')}</span>
@@ -359,7 +360,7 @@ export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMa
           {item.example && <span className="example-chip">Example</span>}
         </span>
         <span className="log-title">
-          {item.title}
+          <TitleText text={item.title} />
           {tail}
         </span>
         <span className="log-facts">{facts}</span>

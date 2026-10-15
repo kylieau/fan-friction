@@ -73,6 +73,7 @@ import { comparePath, datePath, openedMetroId, eventPath, tagPath } from '../lib
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
+import { TitleText } from '../components/TitleText';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -220,7 +221,7 @@ export function EventScreen() {
       <header className="event-head">
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(e).key} size={18} className="title-type-icon" />
-          {fullTitle(e)}
+          <TitleText text={fullTitle(e)} />
         </h1>
         {stakesLine && <p className="event-stakes">{stakesLine}</p>}
         <div className="event-sub">

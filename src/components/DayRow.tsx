@@ -9,6 +9,7 @@ import { eventPath } from '../lib/view';
 import { CrowdFigure, EventTags } from './EventTags';
 import { ActivityIcon } from './ActivityLines';
 import { ACTIVITY_WORDS, type ActivityKind } from '../lib/activity';
+import { TitleText } from './TitleText';
 
 /**
  * The one row body every event list shares (Kylie, Oct 14: badges right-justified, "across the board").
@@ -43,7 +44,7 @@ export function RowBody({
         <span className="day-row-line1">
           <span className="day-row-title">
             <TypeIcon typeKey={eventType(e).key} size={18} />
-            {title ?? listTitle(e)}
+            <TitleText text={title ?? listTitle(e)} />
           </span>
           <CrowdFigure event={e} />
         </span>

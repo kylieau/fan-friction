@@ -146,12 +146,12 @@ export function CrowdLayer({ points, selectedId, onSelect, activity }: Props) {
       const el = document.createElement('div');
       el.className = `crowd-label is-hidden${p.muted ? ' is-muted' : ''}`;
       el.dataset.id = p.event.id;
-      // The name may shrink with an ellipsis; the designation (" · NLCS G3", " Preseason") never does (build 5, item 13).
+      // The name may shrink with an ellipsis; the designation (" · NLCS G3", "(Preseason)", set as an aside) never does (build 5, item 13).
       const chip = chipParts(p.event, entry);
       // Line 1 opens with the one-color type icon, then the name (Kylie, Oct 9: chip L1b); line 2 is time · crowd.
       el.innerHTML =
         `<span class="crowd-line">` +
-        `<span class="crowd-name">${typeIconSvg(p.event)}<span class="crowd-name-text">${escapeHtml(chip.name)}</span>${chip.designation ? `<span class="crowd-name-tag">${escapeHtml(chip.designation.trimStart())}</span>` : ''}</span>` +
+        `<span class="crowd-name">${typeIconSvg(p.event)}<span class="crowd-name-text">${escapeHtml(chip.name)}</span>${chip.designation ? `<span class="crowd-name-tag${chip.designation.trimStart().startsWith('(') ? ' title-aside' : ''}">${escapeHtml(chip.designation.trimStart())}</span>` : ''}</span>` +
         `<span class="crowd-meta"><span>${escapeHtml(chipDetail(p))}</span></span>` +
         `</span>` +
         `<button type="button" class="crowd-more is-hidden" aria-label="More events here"></button>`;

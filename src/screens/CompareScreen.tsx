@@ -26,6 +26,7 @@ import { ShareCard } from '../components/ShareCard';
 import { listTitle } from '../lib/eventTitle';
 import { loggedDateLabel, longLocalDate, shortLocalDate } from '../lib/dates';
 import { comparePath, datePath, type NightKey, parseNightKey } from '../lib/view';
+import { TitleText } from '../components/TitleText';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -97,7 +98,7 @@ function Picker({ a }: { a: NightKey }) {
                 <Link to={comparePath(a, { metroId: entry.metroId ?? DEFAULT_METRO.id, date: entry.when.sort, eventId: entry.eventId })} className="log-row">
                   <ReadTile rating={ratingForEntry(entry, ratings)} />
                   <span className="log-main">
-                    <span className="log-title">{entry.title}</span>
+                    <span className="log-title"><TitleText text={entry.title} /></span>
                     <span className="log-facts">{[loggedDateLabel(entry.when), entry.venue].filter(Boolean).join(' · ')}</span>
                   </span>
                 </Link>

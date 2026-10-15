@@ -8455,3 +8455,16 @@ button.back-link {
 a.bulk-row {
   text-decoration: none;
 }
+
+/* A title's aside, "(Preseason)": smaller, regular weight, muted, in the body face (Kylie, Oct 15; mock
+   docs/build-5/preseason-label-mock.png). TitleText renders it on every title. */
+.title-aside {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink2);
+  white-space: nowrap;
+}

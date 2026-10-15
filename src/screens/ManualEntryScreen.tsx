@@ -25,6 +25,7 @@ import { TagsPanel } from '../components/TagsPanel';
 import { ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { loggedDateLabel } from '../lib/dates';
+import { TitleText } from '../components/TitleText';
 
 /**
  * An event typed in by hand: no catalog event behind it, so no crowd or
@@ -58,7 +59,7 @@ function ManualPlanPage({ planId }: { planId: string }) {
         <ChevronDown /> Stubs
       </Link>
       <header className="event-head">
-        <h1 className="page-title">{plan.title}</h1>
+        <h1 className="page-title"><TitleText text={plan.title} /></h1>
         <div className="event-sub">{sub}</div>
       </header>
       <div className="event-marks">
@@ -153,7 +154,7 @@ function ManualEntryPage() {
       </Link>
 
       <header className="event-head">
-        <h1 className="page-title">{entry.title}</h1>
+        <h1 className="page-title"><TitleText text={entry.title} /></h1>
         <div className="event-sub">
           {sub}
           {weather && (

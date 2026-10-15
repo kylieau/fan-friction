@@ -123,7 +123,8 @@ interface GameParts {
   round: (RoundWords & { minor?: boolean }) | null;
   game: number | null;
   year: number | null;
-  designation: { chip: string; short: string; full: string } | null;
+  /** `aside`: Preseason and spring training ride after the name in parentheses, never as a " · " part (Kylie, Oct 15). */
+  designation: { chip: string; short: string; full: string; aside?: boolean } | null;
 }
 
 interface NamedParts {
@@ -201,9 +202,9 @@ function designationOf(event: CrowdEvent): GameParts['designation'] {
   if (!event.preseason) return null;
   if (event.audience.domain === 'sports' && event.audience.sport === 'baseball') {
     const league = springLeague(event);
-    return { chip: 'Spring training', short: 'Spring training', full: league ? `Spring training (${league})` : 'Spring training' };
+    return { chip: 'Spring training', short: 'Spring training', full: league ? `Spring training, ${league}` : 'Spring training', aside: true };
   }
-  return { chip: 'Preseason', short: 'Preseason', full: 'Preseason' };
+  return { chip: 'Preseason', short: 'Preseason', full: 'Preseason', aside: true };
 }
 
 /** Cactus League in Arizona, Grapefruit League in Florida (case 1), from the city's own name; else nothing. */
@@ -348,7 +349,7 @@ function roundText(p: GameParts, length: Length, compact = false): string | null
  * Preseason, DH), which is never cut. `drop` removes name parts in the notes' order: 1 year, 2 away team,
  * 3 event name / sport label (the tag); the caller truncates last.
  */
-function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = false): { name: string; designation: string[] } {
+function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = false): { name: string; designation: string[]; aside: string | null } {
   const withYear = drop >= 1 ? { ...p, year: null } : p;
   const matchup = drop >= 2 ? withYear.second : `${withYear.first} ${withYear.joiner} ${withYear.second}`;
   const tail: string[] = [];
@@ -360,13 +361,21 @@ function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = 
   const designation: string[] = [];
   const round = roundText(withYear, length, compact);
   if (round) designation.push(round);
-  if (withYear.designation) designation.push(length === 'full' ? withYear.designation.full : compact ? withYear.designation.chip : withYear.designation.short);
-  return { name: [matchup, ...tail].join(' · '), designation };
+  const d = withYear.designation;
+  const word = d ? (length === 'full' ? d.full : compact ? d.chip : d.short) : null;
+  if (word && !d?.aside) designation.push(word);
+  return { name: [matchup, ...tail].join(' · '), designation, aside: d?.aside ? word : null };
+}
+
+/** "Nuggets at Clippers (Preseason)": the parts joined by " · ", the aside after them in parentheses. */
+function joinGame(name: string, designation: string[], aside: string | null): string {
+  const text = [name, ...designation].join(' · ');
+  return aside ? `${text} (${aside})` : text;
 }
 
 function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
-  const { name, designation } = gamePieces(p, length, drop);
-  return [name, ...designation].join(' · ');
+  const { name, designation, aside } = gamePieces(p, length, drop);
+  return joinGame(name, designation, aside);
 }
 
 /**
@@ -379,9 +388,10 @@ function shortGame(p: GameParts): string {
   let drop = 0;
   while (drop < 3 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
   const name = truncate(gamePieces(p, 'short', drop).name, SHORT_MAX);
-  const full = [name, ...gamePieces(p, 'short', drop).designation].join(' · ');
-  if (full.length <= SHORT_MAX) return full;
-  return [name, ...gamePieces(p, 'short', drop, true).designation].join(' · ');
+  const { designation, aside } = gamePieces(p, 'short', drop);
+  // The aside is set smaller and lighter, so it stays out of the 32-character count.
+  if ([name, ...designation].join(' · ').length <= SHORT_MAX) return joinGame(name, designation, aside);
+  return joinGame(name, gamePieces(p, 'short', drop, true).designation, aside);
 }
 
 function renderShow(p: ShowParts, length: 'short' | 'full', drop = 0): string {
@@ -461,18 +471,18 @@ function spokenAway(event: CrowdEvent): string | null {
   return id && TEAMS[id] ? TEAMS[id].shortName.replace(new RegExp(`\\s+(${SQUAD_TAG})$`), '') : null;
 }
 
-/** The chip's designation: " · NLCS G3" before a playoff round (N03), a space before the rest ("Angels DH1"). */
+/** The chip's designation: " · NLCS G3" before a playoff round (N03), "(Preseason)" in parentheses, a space before the rest ("Angels DH1"). */
 function chipDesignation(p: Parts): string {
   if (p.type !== 'game') return '';
   if (p.round && !p.round.minor) return ` · ${p.game ? `${p.round.chip} G${p.game}` : p.round.chip}`;
   if (p.round?.minor) return ` ${p.round.chip}`;
-  if (p.designation) return ` ${p.designation.chip}`;
+  if (p.designation) return p.designation.aside ? ` (${p.designation.chip})` : ` ${p.designation.chip}`;
   return '';
 }
 
 /**
  * The chip in two pieces, for the fixed-width map chip: the name, which may shrink with an ellipsis, and the
- * designation, which never does (" · NLCS G3", " Preseason"). `mapTitle` is the two joined.
+ * designation, which never does (" · NLCS G3", " (Preseason)"). `mapTitle` is the two joined.
  */
 export function chipParts(event: CrowdEvent, entry: readonly CrowdEvent[] = []): { name: string; designation: string } {
   const title = mapTitle(event, entry);
@@ -549,11 +559,9 @@ export interface SchedulePick {
 }
 
 function scheduleLabel(game: SchedulePick): string | null {
-  if (game.stakes) {
-    const words = roundWords(game.stakes.round).short;
-    return game.stakes.game ? `${words}, Game ${game.stakes.game}` : words;
-  }
-  return game.preseason ? 'Preseason' : null;
+  if (!game.stakes) return null;
+  const words = roundWords(game.stakes.round).short;
+  return game.stakes.game ? `${words}, Game ${game.stakes.game}` : words;
 }
 
 /**
@@ -563,8 +571,8 @@ function scheduleLabel(game: SchedulePick): string | null {
  */
 export function teamRelativeTitle(game: SchedulePick): string {
   const side = game.neutral ? `vs. ${game.opponent}${game.venueName ? ` · ${game.venueName}` : ''}` : game.home ? `vs. ${game.opponent}` : `@ ${game.opponent}`;
-  const label = game.stakes ? stakesChip(game.stakes) : game.preseason ? 'Preseason' : null;
-  return label ? `${label} · ${side}` : side;
+  if (!game.stakes && game.preseason) return `${side} (Preseason)`;
+  return game.stakes ? `${stakesChip(game.stakes)} · ${side}` : side;
 }
 
 function stakesChip(stakes: { round: string; game?: number }): string {
@@ -572,9 +580,10 @@ function stakesChip(stakes: { round: string; game?: number }): string {
   return stakes.game ? `${chip} G${stakes.game}` : chip;
 }
 
-/** The same game in its canonical form for a list that is not the team's own page: "Dodgers at Brewers · Preseason" (N04, N08). */
+/** The same game in its canonical form for a list that is not the team's own page: "Dodgers at Brewers (Preseason)" (N04, N08; parentheses, Kylie, Oct 15). */
 export function scheduleGameTitle(us: string, game: SchedulePick): string {
   const name = game.neutral ? (game.home ? `${game.opponent} vs. ${us}` : `${us} vs. ${game.opponent}`) : game.home ? `${game.opponent} at ${us}` : `${us} at ${game.opponent}`;
   const label = scheduleLabel(game);
+  if (!label && game.preseason) return `${name} (Preseason)`;
   return label ? `${name} · ${label}` : name;
 }

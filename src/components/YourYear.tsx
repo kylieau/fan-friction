@@ -8,6 +8,7 @@ import { loggedDateLabel } from '../lib/dates';
 import { entryPath, eventPath } from '../lib/view';
 import { ReadTile } from './ReadTile';
 import { CrowdMark } from './EventTags';
+import { TitleText } from './TitleText';
 
 /** The read's words, quietest first (src/config/scoreLabels.ts). */
 const LADDER = ['Chill', 'Mild', 'Spicy', 'Brutal', 'Cooked'];
@@ -111,7 +112,7 @@ function NightRow({ label, row }: { label: string; row: { entry: Entry; rating: 
         <ReadTile rating={row.rating} />
         <span className="log-main">
           <span className="log-facts">{label}</span>
-          <span className="log-title">{row.entry.title}</span>
+          <span className="log-title"><TitleText text={row.entry.title} /></span>
           <span className="log-facts">{[loggedDateLabel(row.entry.when), row.entry.venue].filter(Boolean).join(' · ')}</span>
         </span>
       </Link>

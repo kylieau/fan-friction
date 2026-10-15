@@ -38,6 +38,7 @@ import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
 import { FeedRow } from './FollowingScreen';
+import { TitleText } from '../components/TitleText';
 
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.
 const MiniMap = lazy(() => import('../map/MiniMap'));
@@ -226,7 +227,7 @@ export function HomeScreen() {
                 <Link to={datePath(row.date, row.metroId, row.eventId)} className="log-row">
                   <ReadTile rating={ratings.get(nightKey(row.metroId, row.date)) ?? null} />
                   <span className="log-main">
-                    <span className="log-title">{row.title}</span>
+                    <span className="log-title"><TitleText text={row.title} /></span>
                     <span className="log-facts">
                       {[shortLocalDate(row.date), row.start ? clockTime(row.start) : null, row.venue, row.metroId !== home.id ? METROS[row.metroId]?.name : null]
                         .filter(Boolean)
@@ -302,7 +303,7 @@ export function HomeScreen() {
                 <Link to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)} className="log-row">
                   <ReadTile rating={ratingForEntry(entry, ratings)} />
                   <span className="log-main">
-                    <span className="log-title">{entry.title}</span>
+                    <span className="log-title"><TitleText text={entry.title} /></span>
                     <span className="log-facts">{[loggedDateLabel(entry.when), entry.venue].filter(Boolean).join(' · ')}</span>
                     {entry.result && <span className="log-facts">{entry.result}</span>}
                   </span>
