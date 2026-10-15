@@ -1,4 +1,4 @@
-import { RowBody } from '../components/DayRow';
+import { RowBody, spokenRow } from '../components/DayRow';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
@@ -329,7 +329,7 @@ export function DateScreen() {
             <ul className="date-list">
             {lineup.shown.map((e) => (
               <li key={e.id} className={`date-row${e.id === highlight ? ' yours' : ''}`}>
-                <Link to={eventPath(e.id, e.metroId)} className="date-row-main">
+                <Link to={eventPath(e.id, e.metroId)} className="date-row-main" aria-label={spokenRow(e, venueOf(e) ?? null)}>
                   <RowBody
                     event={e}
                     time={e.start ? clockTime(e.start) : 'TBA'}

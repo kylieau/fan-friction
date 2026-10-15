@@ -9,8 +9,8 @@ function showsStakes(event: CrowdEvent): boolean {
 }
 
 /**
- * The quiet line under a title. The round and game now lead the title itself ("NLCS G2 · Dodgers at
- * Brewers", Kylie, Oct 11, 2026), so only "If necessary" is left for this line (Kylie, Oct 9, C024).
+ * The quiet line under a title: no longer shown. Since labels round 3 (Kylie, Oct 15) the label carries
+ * "(if necessary)" itself; kept for any caller that still asks.
  */
 export function quietStakes(event: CrowdEvent, _entry: readonly CrowdEvent[] = []): string | null {
   if (!showsStakes(event)) return null;

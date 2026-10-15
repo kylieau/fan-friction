@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef } from 'react';
 import { type Map as MapLibreMap, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import { clockTime } from '../lib/dates';
-import { chipParts } from '../lib/eventTitle';
+import { chipCode, chipParts, spokenTitle } from '../lib/eventTitle';
 import { crowdShort, type CrowdPoint } from './crowdPoints';
 import { glowRadiusPx } from './glowRadius';
 import {
@@ -14,6 +14,7 @@ import {
   type PlacedChip,
 } from './chipPlacement';
 import { typeIconSvg } from './typeIcons';
+import { drawSize } from '../data';
 import { applyChipActivity, type ChipActivity } from './chipActivity';
 
 /** People in the disc. A sold-out show with no separate count uses the room. A muted event has no glow. */
@@ -146,12 +147,22 @@ export function CrowdLayer({ points, selectedId, onSelect, activity }: Props) {
       const el = document.createElement('div');
       el.className = `crowd-label is-hidden${p.muted ? ' is-muted' : ''}`;
       el.dataset.id = p.event.id;
-      // The name may shrink with an ellipsis; the designation (" · NLCS G3", "(Preseason)", set as an aside) never does (build 5, item 13).
+      // Labels r3 (Kylie, Oct 15): (a) the nickname and its label, "Dodgers (NLCS G3)", wrapping before the "("
+      // when it can't share a line; (b) the team code, "LAD (NLCS G3)", when the nickname is too long for (a).
+      // Low-stakes and occasion labels are not on the chip; the label is never cut, the name never mid-word.
       const chip = chipParts(p.event, entry);
+      const tag = chip.designation.trim();
+      let name = chip.name;
+      let wrap = false;
+      if (tag && `${name} ${tag}`.length > CHIP_ONE_LINE) {
+        if (name.length <= CHIP_NAME_LINE) wrap = true;
+        else name = chipCode(p.event) ?? name;
+      }
+      el.setAttribute('aria-label', spokenChip(p));
       // Line 1 opens with the one-color type icon, then the name (Kylie, Oct 9: chip L1b); line 2 is time · crowd.
       el.innerHTML =
         `<span class="crowd-line">` +
-        `<span class="crowd-name">${typeIconSvg(p.event)}<span class="crowd-name-text">${escapeHtml(chip.name)}</span>${chip.designation ? `<span class="crowd-name-tag${chip.designation.trimStart().startsWith('(') ? ' title-aside' : ''}">${escapeHtml(chip.designation.trimStart())}</span>` : ''}</span>` +
+        `<span class="crowd-name${wrap ? ' is-wrap' : ''}">${typeIconSvg(p.event)}<span class="crowd-name-text">${escapeHtml(name)}</span>${tag ? `<span class="crowd-name-tag">${escapeHtml(tag)}</span>` : ''}</span>` +
         `<span class="crowd-meta"><span>${escapeHtml(chipDetail(p))}</span></span>` +
         `</span>` +
         `<button type="button" class="crowd-more is-hidden" aria-label="More events here"></button>`;
@@ -179,6 +190,9 @@ export function CrowdLayer({ points, selectedId, onSelect, activity }: Props) {
         .setLngLat(p.location)
         .addTo(map);
       markers.set(p.event.id, marker);
+      // The count above is a rule of thumb; the drawn width decides. A name that would show "…" next to its label
+      // takes (a) its own line, the label wrapping under it, or (b) the team code (labels r3: never mid-word).
+      if (tag && !wrap) requestAnimationFrame(() => fitChipName(el, chipCode(p.event)));
     }
 
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -498,6 +512,30 @@ function drawStems(svg: SVGSVGElement, placed: PlacedChip[], w: number, h: numbe
     line.setAttribute('stroke-linecap', 'butt');
     svg.appendChild(line);
   }
+}
+
+/** After drawing: if a chip's name is cut beside its label, wrap the label under it, or use the code if even that cuts. */
+function fitChipName(el: HTMLElement, code: string | null) {
+  const nameEl = el.querySelector<HTMLElement>('.crowd-name');
+  const text = el.querySelector<HTMLElement>('.crowd-name-text');
+  if (!nameEl || !text) return;
+  const cut = () => text.scrollWidth > text.clientWidth + 0.5;
+  if (!cut()) return;
+  nameEl.classList.add('is-wrap');
+  if (cut() && code) {
+    nameEl.classList.remove('is-wrap');
+    text.textContent = code;
+  }
+}
+
+/** Labels r3 chip fit: about 17 characters share one line in the condensed face; a name of up to 14 fits a line of its own. */
+const CHIP_ONE_LINE = 17;
+const CHIP_NAME_LINE = 14;
+
+/** The chip read as one sentence (labels r3): "Brewers at Dodgers, NLCS Game 3, 5:00 pm, Dodger Stadium, about 51,000". */
+function spokenChip(p: CrowdPoint): string {
+  const size = drawSize(p.event);
+  return [spokenTitle(p.event), p.event.start ? clockTime(p.event.start) : null, p.venueName, size ? `about ${size.toLocaleString('en-US')}` : null].filter(Boolean).join(', ');
 }
 
 /** Line 2 of a map card: "1:08 pm · 40k". A different day is named first. No status words. */

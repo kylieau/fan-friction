@@ -22,16 +22,18 @@ try {
     ['N17 Florida–Georgia', game('Florida vs. Georgia (neutral site)', { sourceId: 'seed' }), { full: 'Florida vs. Georgia · Neutral site' }],
     ['N18 East LA Classic', game('East LA Classic (Garfield vs. Roosevelt)', { sourceId: 'seed' }), { full: 'Garfield vs. Roosevelt · East LA Classic' }],
     ['N18 Copa Las Vegas', game('Copa Las Vegas: USA vs Mexico', { sport: 'soccer', sourceId: 'ticketmaster' }), { full: 'USA vs. Mexico · Copa Las Vegas' }],
-    ['N19 World Series seed', game('World Series Game 1', { sport: 'baseball', teams: { home: 'dodgers', away: 'yankees' }, stakes: { round: 'World Series', game: 1 }, sourceId: 'seed' }), { full: 'Yankees at Dodgers · World Series Game\u00a01' }],
-    ['N03/N04 NLCS', game('Dodgers vs. Brewers', { sport: 'baseball', teams: { home: 'dodgers', away: 'brewers' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { chip: 'Dodgers · NLCS G3', short: 'Brewers at Dodgers · NLCS Game\u00a03', full: 'Brewers at Dodgers · NL Championship Series Game\u00a03' }],
-    // Kylie, Oct 14: past 32 characters the game number shortens to G3; under it, "Game 3" stays.
-    ['Short G3 past 32', game('Brewers vs. Diamondbacks', { sport: 'baseball', teams: { home: 'brewers', away: 'diamondbacks' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { short: 'Diamondbacks at Brewers · NLCS\u00a0G3' }],
-    ['Short G3 only when long', game('Dodgers vs. Mets', { sport: 'baseball', teams: { home: 'dodgers', away: 'mets' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { short: 'Mets at Dodgers · NLCS Game\u00a03' }],
-    ['N06/N07 Super Bowl', game('Rams vs. Chiefs', { teams: { home: 'rams', away: 'chiefs' }, stakes: { round: 'Super Bowl' }, date: '2027-02-14' }), { full: 'Chiefs vs. Rams · Super Bowl 2027' }],
-    ['N08 Preseason', game('Clippers vs. Nuggets', { sport: 'basketball', teams: { home: 'clippers', away: 'nuggets' }, preseason: true }), { chip: 'Clippers (Preseason)', short: 'Nuggets at Clippers (Preseason)' }],
+    ['N19 World Series seed', game('World Series Game 1', { sport: 'baseball', teams: { home: 'dodgers', away: 'yankees' }, stakes: { round: 'World Series', game: 1 }, sourceId: 'seed' }), { full: 'Yankees at Dodgers (World Series Game\u00a01)' }],
+    ['N03/N04 NLCS', game('Dodgers vs. Brewers', { sport: 'baseball', teams: { home: 'dodgers', away: 'brewers' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { chip: 'Dodgers (NLCS\u00a0G3)', short: 'Brewers at Dodgers (NLCS\u00a0G3)', full: 'Brewers at Dodgers (NL Championship Series Game\u00a03)' }],
+    // Labels r3 (Kylie, Oct 15): the short name carries the label inline, in parentheses, outside the 32-character budget.
+    ['Long name, label kept', game('Brewers vs. Diamondbacks', { sport: 'baseball', teams: { home: 'brewers', away: 'diamondbacks' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { short: 'Diamondbacks at Brewers (NLCS\u00a0G3)' }],
+    ['If necessary, one set of parentheses', game('Dodgers vs. Brewers', { sport: 'baseball', teams: { home: 'dodgers', away: 'brewers' }, stakes: { round: 'NLCS', game: 6, ifNecessary: true }, sourceId: 'mlb' }), { chip: 'Dodgers (NLCS\u00a0G6)', short: 'Brewers at Dodgers (NLCS\u00a0G6, if necessary)' }],
+    ['Home opener', game('Dodgers vs. Giants', { sport: 'baseball', teams: { home: 'dodgers', away: 'giants' }, homeOpener: true, sourceId: 'mlb' }), { chip: 'Dodgers', short: 'Giants at Dodgers (Home opener)' }],
+    ['Exhibition from the title', game('Galaxy vs. Club América Exhibition', { sport: 'soccer', sourceId: 'ticketmaster' }), { chip: 'Galaxy' }],
+    ['N06/N07 Super Bowl', game('Rams vs. Chiefs', { teams: { home: 'rams', away: 'chiefs' }, stakes: { round: 'Super Bowl' }, date: '2027-02-14' }), { full: 'Chiefs vs. Rams (Super Bowl 2027)' }],
+    ['N08 Preseason', game('Clippers vs. Nuggets', { sport: 'basketball', teams: { home: 'clippers', away: 'nuggets' }, preseason: true }), { chip: 'Clippers', short: 'Nuggets at Clippers (Preseason)' }],
     ['Case 1 spring training', game('Reds vs. Cubs', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'reds', away: 'cubs' }, preseason: true, sourceId: 'mlb' }), { short: 'Cubs at Reds (Spring training)', full: 'Cubs at Reds (Spring training, Cactus League)' }],
-    ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels DH1' }],
-    ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls · AHL playoffs', full: 'Reign at Gulls · Calder Cup Playoffs' }],
+    ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels (DH1)' }],
+    ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls (AHL playoffs)', full: 'Reign at Gulls (Calder Cup Playoffs)' }],
     ['N10 artist before tour', show('Song Of The Saints Tour with Phil Wickham', { performer: 'Phil Wickham' }), { full: 'Phil Wickham · Song Of The Saints Tour' }],
     ['N28 middle dot', show('Phoebe Bridgers: The Lost Tour', { performer: 'Phoebe Bridgers' }), { short: 'Phoebe Bridgers · The Lost Tour' }],
     ['N21 Slayer', show('SLAYER: Reign In Blood 40th Anniversary', { performer: 'SLAYER' }), { full: 'Slayer · Reign In Blood 40th Anniversary' }],
@@ -84,23 +86,33 @@ try {
   if (sched !== 'Nuggets at Clippers (Preseason)') (failed += 1), console.log(`FAIL schedule title: ${sched}`);
   const relPre = teamRelativeTitle({ home: true, opponent: 'Nuggets', preseason: true });
   if (relPre !== 'vs. Nuggets (Preseason)') (failed += 1), console.log(`FAIL team page preseason: ${relPre}`);
-  // TitleText sets the aside apart, on new titles and on older saved ones (Kylie, Oct 15).
-  const { splitAside } = await server.ssrLoadModule('/src/components/TitleText.tsx');
-  const asides = [
-    ['Nuggets at Clippers (Preseason)', 'Nuggets at Clippers', 'Preseason'],
-    ['Nuggets at Clippers · Preseason', 'Nuggets at Clippers', 'Preseason'],
-    ['Preseason · vs. Nuggets', 'vs. Nuggets', 'Preseason'],
-    ['Cubs at Reds (Spring training, Cactus League)', 'Cubs at Reds', 'Spring training, Cactus League'],
-    ['Brewers at Dodgers · NLCS G3', 'Brewers at Dodgers · NLCS G3', null],
+  // Labels r3: a title's label is read back from the string, on new titles and older saved ones; a tail that is
+  // not a label stays part of the name.
+  const { splitTitleLabel } = await server.ssrLoadModule('/src/lib/eventTitle.ts');
+  const splits = [
+    ['Nuggets at Clippers (Preseason)', 'Nuggets at Clippers', 'low', 'Preseason'],
+    ['Brewers at Dodgers (NLCS\u00a0G3)', 'Brewers at Dodgers', 'stage', 'NLCS Game\u00a03'],
+    ['Brewers at Dodgers (NLCS\u00a0G6, if necessary)', 'Brewers at Dodgers', 'stage', 'NLCS Game\u00a06 +ifnec'],
+    ['Brewers at Dodgers (NL Championship Series Game\u00a03)', 'Brewers at Dodgers', 'stage', 'NL Championship Series Game\u00a03'],
+    ['Braves at Dodgers · NLDS Game 1', 'Braves at Dodgers', 'stage', 'NLDS Game\u00a01'],
+    ['Brewers at Dodgers · NLCS, Game 3', 'Brewers at Dodgers', 'stage', 'NLCS Game\u00a03'],
+    ['Preseason · vs. Nuggets', 'vs. Nuggets', 'low', 'Preseason'],
+    ['Cubs at Reds (Spring training, Cactus League)', 'Cubs at Reds', 'low', 'Spring training, Cactus League'],
+    ['Jessie Ware (DJ Set)', 'Jessie Ware (DJ Set)', null, null],
+    ['Wisconsin at UCLA · Football', 'Wisconsin at UCLA · Football', null, null],
+    ["Angels at A's (Game\u00a01)", "Angels at A's", 'game', 'Game\u00a01'],
   ];
-  for (const [text, name, aside] of asides) {
-    const got = splitAside(text);
-    if (got.name !== name || got.aside !== aside) (failed += 1), console.log(`FAIL aside: ${text} → ${JSON.stringify(got)}`);
+  for (const [text, name, kind, own] of splits) {
+    const got = splitTitleLabel(text);
+    const gotOwn = got.label ? got.label.own + (got.label.ifNecessary ? ' +ifnec' : '') : null;
+    if (got.name !== name || (got.label?.kind ?? null) !== kind || gotOwn !== own) (failed += 1), console.log(`FAIL label split: ${text} → ${JSON.stringify(got)}`);
   }
-  console.log('ok   Preseason aside: parentheses on new titles, older " · Preseason" read the same');
+  console.log('ok   Label split: new titles and older saved ones; concert parentheses and sport tails stay plain');
+  const relAway = teamRelativeTitle({ home: false, opponent: 'Brewers', stakes: { round: 'NLCS', game: 6, ifNecessary: true } });
+  if (relAway !== 'at Brewers (NLCS\u00a0G6, if necessary)') (failed += 1), console.log(`FAIL team page away: ${relAway}`);
   const rel = teamRelativeTitle({ home: true, opponent: 'Padres' });
   if (rel !== 'vs. Padres') (failed += 1), console.log(`FAIL team page: ${rel}`);
-  else console.log('ok   N29 team page: vs. Padres / @ kept');
+  else console.log('ok   Team page: vs. Padres, at Brewers (labels r3 replace N29\'s @)');
 
   // One day of the archive in all three lengths, for a scan.
   const metro = metroArg ?? 'la';

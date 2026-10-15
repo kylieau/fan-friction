@@ -208,6 +208,8 @@ export async function mlbTeamSchedule(teamId: string): Promise<TeamGame[] | null
       const host = MLB_TEAMS[g.teams.home.team.id ?? -1];
       const hostVenue = MLB_VENUES[g.venue?.id ?? -1] ?? host?.venueId;
       const stakes = mlbStakes(g);
+      // The team page shows "(if necessary)" too (labels r3), so the schedule keeps the flag the event has.
+      if (stakes && g.ifNecessary === 'Y') stakes.ifNecessary = true;
       return [
         {
           id: `mlb-${t.teamId}-${g.gamePk}`,

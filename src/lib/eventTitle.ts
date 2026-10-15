@@ -69,6 +69,7 @@ const ROUNDS: Record<string, RoundWords> = {
   'Cup Final': { chip: 'Cup Final', short: 'Stanley Cup Final', full: 'Stanley Cup Final', final: true },
   'Conf Final': { chip: 'Conf Final', short: 'Conf Final', full: 'Conference Final' },
   Semis: { chip: 'Semis', short: 'Semifinals', full: 'Semifinals' },
+  Semifinals: { chip: 'Semis', short: 'Semifinals', full: 'Semifinals' },
   '1st Round': { chip: '1st Round', short: 'First round', full: 'First round' },
   '2nd Round': { chip: '2nd Round', short: 'Second round', full: 'Second round' },
   'CFP Semi': { chip: 'CFP Semi', short: 'CFP Semifinal', full: 'College Football Playoff Semifinal' },
@@ -205,6 +206,134 @@ function designationOf(event: CrowdEvent): GameParts['designation'] {
     return { chip: 'Spring training', short: 'Spring training', full: league ? `Spring training, ${league}` : 'Spring training', aside: true };
   }
   return { chip: 'Preseason', short: 'Preseason', full: 'Preseason', aside: true };
+}
+
+// ---------- The label (labels round 3, Kylie, Oct 15; docs/build-5/mosaic/labels/labels-r3-note.md) ----------
+// One label per event, stage > game type > occasion. The matchup is the bold title; the label is a quiet slot:
+// on its own line in lists ("NLCS Game 3", no parentheses) and inline after the name on bars and chips, in
+// parentheses ("(NLCS G3)"). "if necessary" is the locked wording; inline it shares the stage's parentheses
+// ("(NLCS G6, if necessary)"). Stage labels are dark; low-stakes, occasion and doubleheader labels are grey.
+
+export type LabelKind = 'stage' | 'low' | 'occasion' | 'game';
+
+export interface EventLabel {
+  kind: LabelKind;
+  /** Own line in lists: "NLCS Game 3", "Preseason", "Home opener". */
+  own: string;
+  /** Own line on the event page, words spelled out (N03): "NL Championship Series Game 3". */
+  full: string;
+  /** Inline after the name, inside parentheses: "NLCS G3". */
+  inline: string;
+  /** On a map chip, or null when the chip drops it (low-stakes and occasion labels). */
+  chip: string | null;
+  ifNecessary: boolean;
+}
+
+const LOW_WORDS = /\b(exhibition|friendly|scrimmage|qualifier)\b/i;
+
+export function eventLabel(event: CrowdEvent): EventLabel | null {
+  if (event.audience.domain !== 'sports' || event.kind === 'show' || event.kind === 'festival') return null;
+  const stakes = event.stakes;
+  if (stakes?.round) {
+    const words = roundWords(stakes.round);
+    const year = finalYear(event, words);
+    const g = stakes.game && stakes.game > 0 ? stakes.game : null;
+    const withYear = (w: string) => (year ? `${w} ${year}` : w);
+    return {
+      kind: 'stage',
+      own: g ? `${words.short} Game\u00a0${g}` : withYear(words.short),
+      full: g ? `${withYear(words.full)} Game\u00a0${g}` : withYear(words.full),
+      inline: g ? `${words.short}\u00a0G${g}` : withYear(words.short),
+      chip: g ? `${words.chip}\u00a0G${g}` : words.chip,
+      ifNecessary: Boolean(stakes.ifNecessary),
+    };
+  }
+  // Doubleheaders are not designed yet (labels r3, section 7): "Game 1" stays as it was, grey.
+  if (event.doubleheader) {
+    const n = event.doubleheader;
+    return { kind: 'game', own: `Game\u00a0${n}`, full: `Game\u00a0${n}`, inline: `Game\u00a0${n}`, chip: `DH${n}`, ifNecessary: false };
+  }
+  if (event.preseason) {
+    if (event.audience.sport === 'baseball') {
+      const league = springLeague(event);
+      return { kind: 'low', own: 'Spring training', full: league ? `Spring training, ${league}` : 'Spring training', inline: 'Spring training', chip: null, ifNecessary: false };
+    }
+    return { kind: 'low', own: 'Preseason', full: 'Preseason', inline: 'Preseason', chip: null, ifNecessary: false };
+  }
+  const low = event.title.match(LOW_WORDS);
+  if (low) {
+    const word = low[1][0].toUpperCase() + low[1].slice(1).toLowerCase();
+    return { kind: 'low', own: word, full: word, inline: word, chip: null, ifNecessary: false };
+  }
+  if (event.homeOpener) return { kind: 'occasion', own: 'Home opener', full: 'Home opener', inline: 'Home opener', chip: null, ifNecessary: false };
+  return null;
+}
+
+/** " (NLCS G3)", " (NLCS G6, if necessary)", " (NL Championship Series Game 3)": a label inline after a plain name. */
+function labelSuffix(label: EventLabel | null, form: 'inline' | 'full'): string {
+  if (!label) return '';
+  return ` (${form === 'full' ? label.full : label.inline}${label.ifNecessary ? ', if necessary' : ''})`;
+}
+
+/** Every word a stage label can carry, so a saved title's parenthesis is read as a label only when it is one. */
+const ROUND_TEXTS = new Set<string>([
+  ...Object.values(ROUNDS).flatMap((r) => [r.chip, r.short, r.full]),
+  ...Object.values(CUP_NAMES),
+  'Semifinals',
+  'First round',
+  'Second round',
+].map((w) => w.toLowerCase()));
+
+/** What a title string carries after its name, when the tail is a label (and only then). */
+export interface TitleLabel {
+  kind: LabelKind;
+  own: string;
+  inline: string;
+  ifNecessary: boolean;
+}
+
+/** Is this text a label ("NLCS G3", "Preseason", "If necessary")? For lists of facts that would repeat the label. */
+export function isLabelText(text: string): boolean {
+  return readLabel(text) !== null || /^if necessary$/i.test(text.trim());
+}
+
+function readLabel(raw: string): TitleLabel | null {
+  const text = raw.replace(/\u00a0/g, ' ').trim();
+  const ifNecessary = /,?\s*if necessary$/i.test(text);
+  const core = text.replace(/,?\s*if necessary$/i, '').trim();
+  const make = (kind: LabelKind, own: string, inline: string): TitleLabel => ({ kind, own, inline, ifNecessary });
+  if (/^(preseason|spring training(, [a-z]+ league)?|exhibition|friendly|scrimmage|qualifier)$/i.test(core)) return make('low', core, core);
+  if (/^(home opener|season finale)$/i.test(core)) return make('occasion', core, core);
+  if (/^game \d+$/i.test(core)) return make('game', core.replace(' ', '\u00a0'), core.replace(' ', '\u00a0'));
+  const numbered = core.match(/^(.+?) (?:G|Game )(\d+)$/);
+  const stem = (numbered ? numbered[1] : core).replace(/ \d{4}$/, '').toLowerCase();
+  if (!ROUND_TEXTS.has(stem) && !/^\S+ playoffs$/.test(stem)) return null;
+  if (!numbered) return make('stage', core, core);
+  return make('stage', `${numbered[1]} Game\u00a0${numbered[2]}`, `${numbered[1]}\u00a0G${numbered[2]}`);
+}
+
+/**
+ * A title string split into its name and its label: "Brewers at Dodgers (NLCS G3)" → "Brewers at Dodgers" +
+ * NLCS. Older saved titles read the same way ("… · NLCS Game 3", "Preseason · vs. Nuggets"). A parenthesis or a
+ * " · " tail that is not a label ("Jessie Ware (DJ Set)", "… · Football") stays part of the name.
+ */
+export function splitTitleLabel(title: string): { name: string; label: TitleLabel | null } {
+  const paren = title.match(/^(.*\S)\s*\(([^()]+)\)$/);
+  if (paren) {
+    const label = readLabel(paren[2]);
+    if (label) return { name: paren[1], label };
+  }
+  const dot = title.match(/^(.*\S)\s+·\s+([^·]+)$/);
+  if (dot) {
+    const label = readLabel(dot[2].replace(/,\s*Game/, ' Game'));
+    if (label) return { name: dot[1], label };
+  }
+  const lead = title.match(/^([^·]+?)\s+·\s+(.+)$/);
+  if (lead) {
+    const label = readLabel(lead[1]);
+    if (label) return { name: lead[2], label };
+  }
+  return { name: title, label: null };
 }
 
 /** Cactus League in Arizona, Grapefruit League in Florida (case 1), from the city's own name; else nothing. */
@@ -368,15 +497,8 @@ function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = 
   return { name: [matchup, ...tail].join(' · '), designation, aside: d?.aside ? word : null };
 }
 
-/** "Nuggets at Clippers (Preseason)": the parts joined by " · ", the aside after them in parentheses. */
-function joinGame(name: string, designation: string[], aside: string | null): string {
-  const text = [name, ...designation].join(' · ');
-  return aside ? `${text} (${aside})` : text;
-}
-
 function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
-  const { name, designation, aside } = gamePieces(p, length, drop);
-  return joinGame(name, designation, aside);
+  return gamePieces(p, length, drop).name;
 }
 
 /**
@@ -386,13 +508,10 @@ function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
  * "Game 1" → "DH1"; Kylie, Oct 14): "Brewers at Dodgers · NLCS G3" keeps both teams.
  */
 function shortGame(p: GameParts): string {
+  // The label rides outside the 32-character budget (labels r3: it is its own quiet slot).
   let drop = 0;
   while (drop < 3 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
-  const name = truncate(gamePieces(p, 'short', drop).name, SHORT_MAX);
-  const { designation, aside } = gamePieces(p, 'short', drop);
-  // The aside is set smaller and lighter, so it stays out of the 32-character count.
-  if ([name, ...designation].join(' · ').length <= SHORT_MAX) return joinGame(name, designation, aside);
-  return joinGame(name, gamePieces(p, 'short', drop, true).designation, aside);
+  return truncate(gamePieces(p, 'short', drop).name, SHORT_MAX);
 }
 
 function renderShow(p: ShowParts, length: 'short' | 'full', drop = 0): string {
@@ -425,7 +544,7 @@ function fitShort(render: (drop: number) => string, steps: number): string {
 export function listTitle(event: CrowdEvent): string {
   if (event.titleFixed) return event.title;
   const p = partsOf(event);
-  if (p.type === 'game') return shortGame(p);
+  if (p.type === 'game') return `${shortGame(p)}${labelSuffix(eventLabel(event), 'inline')}`;
   if (p.type === 'show') return fitShort((drop) => renderShow(p, 'short', drop), 3);
   return truncate(renderNamed(p, 'short'), SHORT_MAX);
 }
@@ -437,7 +556,7 @@ export function listTitle(event: CrowdEvent): string {
 export function fullTitle(event: CrowdEvent): string {
   if (event.titleFixed) return event.title;
   const p = partsOf(event);
-  if (p.type === 'game') return renderGame(p, 'full');
+  if (p.type === 'game') return `${renderGame(p, 'full')}${labelSuffix(eventLabel(event), 'full')}`;
   if (p.type === 'show') return renderShow(p, 'full');
   return renderNamed(p, 'full');
 }
@@ -474,22 +593,19 @@ function spokenAway(event: CrowdEvent): string | null {
   return id && TEAMS[id] ? TEAMS[id].shortName.replace(new RegExp(`\\s+(${SQUAD_TAG})$`), '') : null;
 }
 
-/** The chip's designation: " · NLCS G3" before a playoff round (N03), "(Preseason)" in parentheses, a space before the rest ("Angels DH1"). */
-function chipDesignation(p: Parts): string {
-  if (p.type !== 'game') return '';
-  if (p.round && !p.round.minor) return ` · ${p.game ? `${p.round.chip} G${p.game}` : p.round.chip}`;
-  if (p.round?.minor) return ` ${p.round.chip}`;
-  if (p.designation) return p.designation.aside ? ` (${p.designation.chip})` : ` ${p.designation.chip}`;
-  return '';
+/** The chip's designation, in parentheses (labels r3): "(NLCS G3)"; low-stakes and occasion labels drop off the chip. */
+function chipDesignation(event: CrowdEvent): string {
+  const label = eventLabel(event);
+  return label?.chip ? ` (${label.chip})` : '';
 }
 
 /**
  * The chip in two pieces, for the fixed-width map chip: the name, which may shrink with an ellipsis, and the
- * designation, which never does (" · NLCS G3", " (Preseason)"). `mapTitle` is the two joined.
+ * designation, which never does (" (NLCS G3)"). `mapTitle` is the two joined.
  */
 export function chipParts(event: CrowdEvent, entry: readonly CrowdEvent[] = []): { name: string; designation: string } {
   const title = mapTitle(event, entry);
-  const designation = spokenHome(event) ? chipDesignation(partsOf(event)) : '';
+  const designation = spokenHome(event) ? chipDesignation(event) : '';
   return designation && title.endsWith(designation) ? { name: title.slice(0, -designation.length), designation } : { name: title, designation: '' };
 }
 
@@ -506,7 +622,7 @@ function sportsChip(event: CrowdEvent, squad: boolean, visitor: boolean): string
     const away = spokenAway(event);
     if (away) name = `${name} · ${away}`;
   }
-  return `${truncate(name, CHIP_NAME)}${chipDesignation(partsOf(event))}`;
+  return `${truncate(name, CHIP_NAME)}${chipDesignation(event)}`;
 }
 
 function sportsCollide(event: CrowdEvent, entry: readonly CrowdEvent[], squad: boolean, visitor: boolean): boolean {
@@ -558,36 +674,63 @@ export interface SchedulePick {
   opponent: string;
   venueName?: string;
   preseason?: boolean;
-  stakes?: { round: string; game?: number };
+  stakes?: { round: string; game?: number; ifNecessary?: boolean };
 }
 
-function scheduleLabel(game: SchedulePick): string | null {
-  if (!game.stakes) return null;
-  const words = roundWords(game.stakes.round).short;
-  return game.stakes.game ? `${words} Game\u00a0${game.stakes.game}` : words;
+/** A schedule game's label, the same kinds as an event's (labels r3). `sport` makes baseball's preseason "Spring training". */
+export function scheduleLabelOf(game: SchedulePick, sport?: string): EventLabel | null {
+  if (game.stakes?.round) {
+    const words = roundWords(game.stakes.round);
+    const g = game.stakes.game && game.stakes.game > 0 ? game.stakes.game : null;
+    return {
+      kind: 'stage',
+      own: g ? `${words.short} Game\u00a0${g}` : words.short,
+      full: g ? `${words.full} Game\u00a0${g}` : words.full,
+      inline: g ? `${words.short}\u00a0G${g}` : words.short,
+      chip: g ? `${words.chip}\u00a0G${g}` : words.chip,
+      ifNecessary: Boolean(game.stakes.ifNecessary),
+    };
+  }
+  if (game.preseason) {
+    const word = sport === 'baseball' ? 'Spring training' : 'Preseason';
+    return { kind: 'low', own: word, full: word, inline: word, chip: null, ifNecessary: false };
+  }
+  return null;
 }
 
 /**
  * The team-relative form, only on a favorite team's own page (Kylie, Oct 11, 2026): "vs. Padres" at home,
- * "@ Brewers" away, "vs. 49ers · Melbourne" at a neutral site, the label first (the team page keeps its own form;
- * N29: "vs." with a period, "@" kept). Never on share cards, the feed, search or the log.
+ * "at Brewers" away (labels r3, Kylie, Oct 15: "at", replacing N29's "@"), "vs. 49ers · Melbourne" at a neutral
+ * site; the label after it in parentheses, which lists show on its own line ("NLCS Game 3").
  */
-export function teamRelativeTitle(game: SchedulePick): string {
-  const side = game.neutral ? `vs. ${game.opponent}${game.venueName ? ` · ${game.venueName}` : ''}` : game.home ? `vs. ${game.opponent}` : `@ ${game.opponent}`;
-  if (!game.stakes && game.preseason) return `${side} (Preseason)`;
-  return game.stakes ? `${stakesChip(game.stakes)} · ${side}` : side;
+export function teamRelativeTitle(game: SchedulePick, sport?: string): string {
+  const side = game.neutral ? `vs. ${game.opponent}${game.venueName ? ` · ${game.venueName}` : ''}` : game.home ? `vs. ${game.opponent}` : `at ${game.opponent}`;
+  return `${side}${labelSuffix(scheduleLabelOf(game, sport), 'inline')}`;
 }
 
 /** A round in its chip form: "NLCS G3". */
 export function stakesChip(stakes: { round: string; game?: number }): string {
   const chip = roundWords(stakes.round).chip;
-  return stakes.game ? `${chip} G${stakes.game}` : chip;
+  return stakes.game ? `${chip}\u00a0G${stakes.game}` : chip;
 }
 
-/** The same game in its canonical form for a list that is not the team's own page: "Dodgers at Brewers (Preseason)" (N04, N08; parentheses, Kylie, Oct 15). */
-export function scheduleGameTitle(us: string, game: SchedulePick): string {
+/** The same game in its canonical form for a list that is not the team's own page: "Dodgers at Brewers (NLCS G6)". */
+export function scheduleGameTitle(us: string, game: SchedulePick, sport?: string): string {
   const name = game.neutral ? (game.home ? `${game.opponent} vs. ${us}` : `${us} vs. ${game.opponent}`) : game.home ? `${game.opponent} at ${us}` : `${us} at ${game.opponent}`;
-  const label = scheduleLabel(game);
-  if (!label && game.preseason) return `${name} (Preseason)`;
-  return label ? `${name} · ${label}` : name;
+  return `${name}${labelSuffix(scheduleLabelOf(game, sport), 'inline')}`;
+}
+
+/**
+ * One spoken name for a row or a chip (labels r3, accessibility): full words, no parentheses, no "G3":
+ * "Brewers at Dodgers, NLCS Game 3, if necessary". Callers add the time, place and crowd.
+ */
+export function spokenTitle(event: CrowdEvent): string {
+  const { name, label } = splitTitleLabel(listTitle(event));
+  return [name, label?.own.replace(/\u00a0/g, ' '), label?.ifNecessary ? 'if necessary' : null].filter(Boolean).join(', ');
+}
+
+/** The chip's last fallback name (labels r3, chip (b)): the home side's team code, "LAD". */
+export function chipCode(event: CrowdEvent): string | null {
+  const id = event.teams?.home;
+  return id && TEAMS[id]?.abbr ? TEAMS[id].abbr! : null;
 }

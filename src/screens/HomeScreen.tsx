@@ -1,4 +1,4 @@
-import { RowBody } from '../components/DayRow';
+import { RowBody, spokenRow } from '../components/DayRow';
 import { lazy, Suspense, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { AccountBlock } from '../components/AccountBlock';
@@ -192,7 +192,7 @@ export function HomeScreen() {
           <ul className="log-list tonight-list">
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
-                <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link">
+                <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link" aria-label={spokenRow(e, venueOf(e) ?? null)}>
                   <RowBody event={e} title={listTitle(e)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
                 </Link>
               </li>

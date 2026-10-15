@@ -32,12 +32,13 @@ import {
   type TeamGame,
   gameEventId,
   type GameLink,
+  TEAMS,
 } from '../data';
 import { addDays, clockTime, dayBandLabel, shortLocalDate } from '../lib/dates';
-import { listTitle, scheduleGameTitle, stakesChip, stakesLabel } from '../lib/eventTitle';
+import { listTitle, scheduleGameTitle, splitTitleLabel } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
-import { TitleText } from '../components/TitleText';
+import { LabelLine } from '../components/TitleText';
 import { ListBand } from '../components/ListBand';
 
 /** How far ahead the schedule looks: the schedule archive's reach. */
@@ -58,8 +59,6 @@ interface ScheduleRow {
   start: string | null;
   /** "Dodgers at Brewers", an artist's name, or the listed event's name. */
   title: string;
-  /** The round in its chip form, kept whole after the title on one line ("NLCS G4"; Kylie, Oct 15). */
-  tag?: string;
   /** "American Family Field · 5:00 pm · NLCS G2". */
   facts: string;
   /** The listed event behind it, when the building is covered. */
@@ -138,8 +137,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
             fav,
             date: game.date,
             start: game.start,
-            title: scheduleGameTitle(fav.label, { ...game, stakes: undefined }),
-            ...(game.stakes ? { tag: stakesChip(game.stakes) } : {}),
+            title: scheduleGameTitle(fav.label, game, fav.teamId ? TEAMS[fav.teamId]?.sport : undefined),
             facts: [venue, game.start ? clockTime(game.start) : null].filter(Boolean).join(' · '),
             event,
             metroId: event?.metroId ?? game.eventMetroId,
@@ -152,14 +150,13 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
       for (const event of upcoming) {
         if (!eventMatches(event, fav) || seen.has(event.id)) continue;
         seen.add(event.id);
-        const label = stakesLabel(event);
         out.push({
           key: event.id,
           fav,
           date: event.date,
           start: event.start ?? null,
           title: fav.kind === 'artist' ? fav.label : listTitle(event),
-          facts: [venueOf(event), event.start ? clockTime(event.start) : null, fav.kind !== 'team' ? null : label].filter(Boolean).join(' · '),
+          facts: [venueOf(event), event.start ? clockTime(event.start) : null].filter(Boolean).join(' · '),
           event,
           metroId: event.metroId,
           away: false,
@@ -390,6 +387,7 @@ function venueOf(event: CrowdEvent): string {
  * game wears the Away tag; its words open a page built from the game, so it can be stubbed (Kylie, Oct 15).
  */
 function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: number | null; home: string }) {
+  const split = splitTitleLabel(row.title);
   const code = row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null;
   const main = (
     <>
@@ -397,12 +395,11 @@ function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: numb
         {favoriteMark(row.fav)}
       </span>
       <span className="log-main">
+        {/* The title on one line; the label on its own line under it (labels r3), never after a dot. */}
         <span className="log-title fav-one-line">
-          <span className="fav-title-name">
-            <TitleText text={row.title} />
-          </span>
-          {row.tag && <span className="fav-title-tag">&nbsp;· {row.tag}</span>}
+          <span className="fav-title-name">{split.name}</span>
         </span>
+        {split.label && <LabelLine label={split.label} />}
         <span className="log-facts">{row.facts}</span>
       </span>
     </>

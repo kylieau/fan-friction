@@ -1,27 +1,47 @@
-// An event or stub title with its aside set apart: "Nuggets at Clippers (Preseason)" renders the
-// parenthesis smaller, regular weight and muted (Kylie, Oct 15: preseason isn't important enough
-// to be part of the title). Titles stay plain strings everywhere else (share text, calendar, saved
-// stubs); older saved titles with " · Preseason" or "Preseason · " render the same way.
+// An event or stub title with its label set apart (labels round 3, Kylie, Oct 15;
+// docs/build-5/mosaic/labels/labels-r3-note.md). Titles stay plain strings everywhere (share text, calendar,
+// saved stubs): "Brewers at Dodgers (NLCS G3)". On screen:
+//   stacked (lists, pages): the name, then the label on its own line, no parentheses ("NLCS Game 3"), with
+//     "(if necessary)" after it;
+//   inline (Local Competition bars, feed sentences): the name, then "(NLCS G3)" or "(NLCS G6, if necessary)".
+// Stage labels are dark, weight 500; low-stakes, occasion and doubleheader labels and "if necessary" are grey,
+// regular. Older saved titles (" · NLCS Game 3", "Preseason · vs. Nuggets") read the same way.
+import { splitTitleLabel, type TitleLabel } from '../lib/eventTitle';
 
-const ASIDE = '(?:Preseason|Spring training(?:, [A-Za-z ]+ League)?)';
-const TRAILING = new RegExp(`^(.*?)\\s*(?:\\((${ASIDE})\\)|·\\s*(${ASIDE}))$`);
-const LEADING = new RegExp(`^(${ASIDE})\\s*·\\s*(.+)$`);
-
-/** The title's name and its aside ("Preseason"), or the whole title when it has none. */
-export function splitAside(title: string): { name: string; aside: string | null } {
-  const lead = title.match(LEADING);
-  if (lead) return { name: lead[2], aside: lead[1] };
-  const trail = title.match(TRAILING);
-  if (trail && trail[1]) return { name: trail[1], aside: trail[2] ?? trail[3] };
-  return { name: title, aside: null };
+/** The label on its own line: "NLCS Game 3", "NLCS Game 6 (if necessary)", "Preseason". */
+export function LabelLine({ label, className = '' }: { label: TitleLabel; className?: string }) {
+  return (
+    <span className={`title-label-line label-${label.kind} ${className}`.trim()}>
+      {label.own}
+      {label.ifNecessary && <span className="label-ifnec"> (if necessary)</span>}
+    </span>
+  );
 }
 
-export function TitleText({ text }: { text: string }) {
-  const { name, aside } = splitAside(text);
-  if (!aside) return <>{text}</>;
+/** The label inline after a name: "(NLCS G3)", "(NLCS G6, if necessary)". */
+export function InlineLabel({ label }: { label: TitleLabel }) {
+  return (
+    <span className={`title-label label-${label.kind}`}>
+      ({label.inline}
+      {label.ifNecessary && <span className="label-ifnec">, if necessary</span>})
+    </span>
+  );
+}
+
+export function TitleText({ text, layout = 'stacked' }: { text: string; layout?: 'stacked' | 'inline' }) {
+  const { name, label } = splitTitleLabel(text);
+  if (!label) return <>{text}</>;
+  if (layout === 'inline') {
+    return (
+      <>
+        {name} <InlineLabel label={label} />
+      </>
+    );
+  }
   return (
     <>
-      {name} <span className="title-aside">({aside})</span>
+      {name}
+      <LabelLine label={label} />
     </>
   );
 }

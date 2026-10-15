@@ -3,7 +3,7 @@ import { CrowdMark } from './EventTags';
 import { TypeIcon } from './TypeIcon';
 import { frictionClass } from '../config/scoreLabels';
 import { drawSize, estimateMark, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
-import { mapTitle } from '../lib/eventTitle';
+import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
 import { crowdThousands } from '../map/crowdPoints';
@@ -69,7 +69,7 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
                   <span className="bar-name">
                     <span className="bar-title">
                       <TypeIcon typeKey={eventType(e).key} size={17} />
-                      <TitleText text={mapTitle(e, events)} />
+                      <TitleText layout="inline" text={listTitle(e)} />
                     </span>
                     {size ? (
                       <span className="bar-crowd">

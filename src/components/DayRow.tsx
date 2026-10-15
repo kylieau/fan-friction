@@ -1,15 +1,15 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { eventType, VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { drawSize, eventType, VENUES, venueNameOn, type CrowdEvent } from '../data';
 import { TypeIcon } from './TypeIcon';
 import { clockTime } from '../lib/dates';
-import { listTitle } from '../lib/eventTitle';
+import { listTitle, spokenTitle, splitTitleLabel } from '../lib/eventTitle';
 import { markOpenedFromMap } from '../lib/mapReturn';
 import { eventPath } from '../lib/view';
 import { CrowdFigure, EventTags } from './EventTags';
 import { ActivityIcon } from './ActivityLines';
 import { ACTIVITY_WORDS, type ActivityKind } from '../lib/activity';
-import { TitleText } from './TitleText';
+import { LabelLine } from './TitleText';
 
 /**
  * The one row body every event list shares (Kylie, Oct 14: badges right-justified, "across the board").
@@ -37,6 +37,9 @@ export function RowBody({
   you?: ActivityKind | null;
   extra?: ReactNode;
 }) {
+  // The label sits on its own line, a sibling of the title (the title's two-line clamp would hide it), between
+  // the title and the venue (labels r3).
+  const { name, label } = splitTitleLabel(title ?? listTitle(e));
   return (
     <>
       <span className="day-row-time">{time}</span>
@@ -44,10 +47,11 @@ export function RowBody({
         <span className="day-row-line1">
           <span className="day-row-title">
             <TypeIcon typeKey={eventType(e).key} size={18} />
-            <TitleText text={title ?? listTitle(e)} />
+            {name}
           </span>
           <CrowdFigure event={e} />
         </span>
+        {label && <LabelLine label={label} className="day-row-label" />}
         <span className="day-row-line2">
           {venueText && <span className="day-row-venue">{venueText}</span>}
           <EventTags event={e} />
@@ -70,10 +74,16 @@ export function RowBody({
  */
 export function DayRow({ event: e, line, you }: { event: CrowdEvent; line: string | null; you?: ActivityKind | null }) {
   return (
-    <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" onClick={() => markOpenedFromMap()}>
+    <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" aria-label={spokenRow(e, sheetVenue(e))} onClick={() => markOpenedFromMap()}>
       <RowBody event={e} time={e.start ? clockTime(e.start) : 'TBA'} venueText={sheetVenue(e)} line={line} you={you} />
     </Link>
   );
+}
+
+/** The row read as one sentence (labels r3): "Brewers at Dodgers, NLCS Game 3, 7:00 pm, Dodger Stadium, about 55,000". */
+export function spokenRow(e: CrowdEvent, venue: string | null): string {
+  const size = drawSize(e);
+  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size ? `about ${size.toLocaleString('en-US')}` : null].filter(Boolean).join(', ');
 }
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */

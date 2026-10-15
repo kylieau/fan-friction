@@ -8456,18 +8456,6 @@ a.bulk-row {
   text-decoration: none;
 }
 
-/* A title's aside, "(Preseason)": smaller, regular weight, muted, in the body face (Kylie, Oct 15; mock
-   docs/build-5/preseason-label-mock.png). TitleText renders it on every title. */
-.title-aside {
-  font-family: 'Manrope', system-ui, sans-serif;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-stretch: normal;
-  letter-spacing: 0;
-  text-transform: none;
-  color: var(--ink2);
-  white-space: nowrap;
-}
 
 /* Date page: every section's title inside its card, like Local Competition (Kylie, Oct 15). */
 .in-card-title {
@@ -8494,7 +8482,7 @@ a.bulk-row {
    gutter to their left (Kylie, Oct 15: the venue started under the icon, not the title). 18 px icon + 4 px. */
 .day-row-body {
   position: relative;
-  padding-left: 22px;
+  padding-left: 23px;
 }
 /* Placed against the row, not the title: the title's two-line clamp hides anything outside its own box. */
 .day-row-title .type-icon-wrap {
@@ -8590,4 +8578,58 @@ span.fav-sched-read {
 /* Inside a page (16 px side padding) the band runs edge to edge, like the Explore List's. */
 .page .list-band {
   margin: 0 -16px;
+}
+
+/* Event labels (labels round 3, Kylie, Oct 15; docs/build-5/mosaic/labels/labels-r3-note.md). Stage labels are dark,
+   weight 500; low-stakes, occasion and doubleheader labels and "if necessary" are grey #5F6670, regular. 12 px
+   in lists and bars, 11 px on chips. Own line: no parentheses; inline: in parentheses. */
+.title-label-line {
+  display: block;
+  margin-top: 1px;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0f1b2d;
+}
+.title-label {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0f1b2d;
+  white-space: nowrap;
+}
+.label-low,
+.label-occasion,
+.label-game,
+.label-ifnec {
+  font-weight: 400;
+  color: #5f6670;
+}
+/* Local Competition bars: icon, title, label and crowd are one tight group over the bar (labels r3, tweak 4). */
+.bar-name {
+  gap: 6px;
+  flex-wrap: wrap;
+  row-gap: 2px;
+}
+.bar-title .type-icon-wrap {
+  margin-right: 6px;
+}
+/* Chip label (labels r3): 11 px, dark medium, never shrinks; (a) wraps before the "(" onto its own line. */
+.crowd-name-tag {
+  font-weight: 500;
+  margin-left: 1px;
+}
+.crowd-name.is-wrap {
+  flex-wrap: wrap;
+  row-gap: 0;
+}
+.crowd-name.is-wrap .crowd-name-tag {
+  flex-basis: 100%;
+  margin-left: 0;
+  padding-left: 14px;
 }

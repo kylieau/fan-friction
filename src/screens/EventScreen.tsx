@@ -67,10 +67,9 @@ import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
-import { fullTitle, mapTitle } from '../lib/eventTitle';
+import { fullTitle, isLabelText, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
 import { comparePath, datePath, openedMetroId, eventPath, tagPath } from '../lib/view';
-import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
 import { TitleText } from '../components/TitleText';
@@ -228,7 +227,6 @@ export function EventScreen() {
   const figures = crowdFigures(e);
   const shown = highlightedCrowd(e);
   const sourceLabel = announcedSourceLabel(e);
-  const stakesLine = quietStakes(e, day.events);
   const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
   // Your own answer, for the status line under the button.
   const you = yourActivity(e.id, log);
@@ -265,7 +263,6 @@ export function EventScreen() {
           <TypeIcon typeKey={eventType(e).key} size={18} className="title-type-icon" />
           <TitleText text={fullTitle(e)} />
         </h1>
-        {stakesLine && <p className="event-stakes">{stakesLine}</p>}
         <div className="event-sub">
           {me.venueName}
           {/* A neutral site names its city (build notes 2, event naming). */}
@@ -285,7 +282,8 @@ export function EventScreen() {
           <div className="chip-row">
             {/* The two tags (build notes 2): the occasion outline tag, then the friction pill, Unopposed included here. */}
             <EventTags event={e} withUnopposed />
-            {a.facts.map((f) => (
+            {/* The round already reads under the title (labels r3); a fact that repeats it is left out. */}
+            {a.facts.filter((f) => !isLabelText(f)).map((f) => (
               <span key={f} className="chip chip-fact">
                 {f}
               </span>

@@ -306,7 +306,7 @@ function Feed({ items, example }: { items: FeedItem[]; example: boolean }) {
                   {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
                 </span>
                 <span className="feed-flat-text">
-                  {lead} <strong><TitleText text={item.title} /></strong>
+                  {lead} <strong><TitleText layout="inline" text={item.title} /></strong>
                   {tail}
                 </span>
                 <span className="feed-flat-date">{shortLocalDate(item.date).replace(/^\w+, /, '')}</span>

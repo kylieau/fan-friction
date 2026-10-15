@@ -503,7 +503,7 @@ function GameRow({ game, rating, covered, teamMetroId, teamId, today }: { game: 
   const body = (
     <>
       <span className="log-main">
-        <span className="log-title"><TitleText text={mark ? `${mark} ${teamRelativeTitle({ ...game, stakes: undefined, preseason: undefined })}` : gameTitle(game)} /></span>
+        <span className="log-title"><TitleText text={mark ? `${mark} ${teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined)}` : teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined)} /></span>
         <span className="log-facts">{facts}</span>
       </span>
       {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No read: not a covered building">—</span>)}

@@ -35,7 +35,6 @@ import { DateScore } from '../components/DateScore';
 import { ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
 import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
-import { quietStakes } from '../lib/stakes';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { datePath, mapPath, useView } from '../lib/view';
@@ -541,14 +540,14 @@ function RememberMap({
 
 function EventRow({
   event: e,
-  dateEvents,
   selected,
   onPick,
   showDate,
   href,
 }: {
   event: CrowdEvent;
-  dateEvents: CrowdEvent[];
+  /** Kept for callers; the stakes line it fed is now the label (labels r3). */
+  dateEvents?: CrowdEvent[];
   selected?: boolean;
   onPick?: () => void;
   showDate?: boolean;
@@ -556,14 +555,12 @@ function EventRow({
 }) {
   const time = e.start ? clockTime(e.start) : 'TBA';
   const venue = sheetVenue(e);
-  const stakes = quietStakes(e, dateEvents);
   // The shared row body: time at the left, badges flush right under the crowd. A day tag rides with the venue.
   const body = (
     <RowBody
       event={e}
       time={time}
       venueText={showDate ? [shortLocalDate(e.date), venue].filter(Boolean).join(' · ') : venue}
-      extra={stakes ? <span className="event-stakes">{stakes}</span> : null}
     />
   );
   const cls = `event-row${selected ? ' selected' : ''}`;
