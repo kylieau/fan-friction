@@ -28,6 +28,14 @@ export function isGameEventId(id: string | undefined): boolean {
   return Boolean(id && id.slice(10).startsWith(MARK));
 }
 
+/** The team and schedule game an id names ("…-game-espn-ny-giants-401…"), so a cold link can find its game again. */
+export function gameRefFromId(id: string): { teamId: string; gameId: string } | null {
+  if (!isGameEventId(id)) return null;
+  const gameId = id.slice(10 + MARK.length);
+  const m = gameId.match(/^(?:espn|mlb|ht)-(.+)-[^-]+$/);
+  return m && TEAMS[m[1]] ? { teamId: m[1], gameId } : null;
+}
+
 /** The opponent's record by name, same sport first ("Giants" is three teams). */
 function opponentOf(team: Team, name: string): Team | undefined {
   const key = name.trim().toLowerCase();

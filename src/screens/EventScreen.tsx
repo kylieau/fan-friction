@@ -74,7 +74,7 @@ import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
 import { TitleText } from '../components/TitleText';
-import { eventFromGame, eventFromStub, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
+import { eventFromGame, eventFromStub, gameRefFromId, getTeamSchedule, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -92,7 +92,26 @@ export function EventScreen() {
   const [sheet, setSheet] = useState(false);
   // A team page's schedule row hands over its game (Kylie, Oct 15: every game can be stubbed, however you got here).
   const location = useLocation();
-  const link = (location.state as { game?: GameLink } | null)?.game;
+  // A cold link (pasted, opened fresh) carries nothing: the id names the team, so its schedule finds the game.
+  const [coldLink, setColdLink] = useState<GameLink | null>(null);
+  const [coldPending, setColdPending] = useState(false);
+  const link = (location.state as { game?: GameLink } | null)?.game ?? coldLink ?? undefined;
+  useEffect(() => {
+    setColdLink(null);
+    const ref = (location.state as { game?: GameLink } | null)?.game ? null : gameRefFromId(id);
+    setColdPending(Boolean(ref));
+    if (!ref) return;
+    let current = true;
+    getTeamSchedule(ref.teamId).then((games) => {
+      if (!current) return;
+      const game = games?.find((g) => g.id === ref.gameId);
+      if (game) setColdLink({ teamId: ref.teamId, game });
+      setColdPending(false);
+    });
+    return () => {
+      current = false;
+    };
+  }, [id]);
   // A friend's line on such a game hands over what it knows (title, date, venue), since you hold no row for it.
   const friendStub = (location.state as { stub?: StubShape } | null)?.stub;
 
@@ -188,6 +207,7 @@ export function EventScreen() {
     const saved = log.added.find((entry) => entry.eventId === id) ?? log.plans.find((plan) => plan.eventId === id);
     const game = link ? eventFromGame(link) : saved ? eventFromStub(id, stubShapeOf(saved)) : friendStub ? eventFromStub(id, friendStub) : null;
     if (game && game.id === id) return <GameOnlyPage event={game} link={link} />;
+    if (coldPending) return <div className="screen page" />;
     return (
       <div className="screen page">
         <MapBack date={date} className="back-link">
