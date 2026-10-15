@@ -275,10 +275,11 @@ export function DateScreen() {
 
       {(mine.length > 0 || plans.length > 0) && (
         <section className="you-block" aria-labelledby="your-entry">
-          <h2 id="your-entry" className="you-heading">
-            {ahead ? (plans.length > 0 && plans.every((p) => p.watch) ? 'Watching' : 'Attending') : 'Attended'}
-          </h2>
+          {/* Section titles sit inside their card, like Local Competition (Kylie, Oct 15). */}
           <div className="entry-card">
+            <h2 id="your-entry" className="you-heading in-card-title">
+              {ahead ? (plans.length > 0 && plans.every((p) => p.watch) ? 'Watching' : 'Attending') : 'Attended'}
+            </h2>
             {mine.map((entry) => {
               const event = events.find((e) => e.id === entry.eventId);
               return (
@@ -318,12 +319,14 @@ export function DateScreen() {
 
       {events.length > 0 && (
         <section className="you-block" aria-labelledby="that-date">
-          <h2 id="that-date" className="you-heading">
-            {weekdayLong(date)}'s lineup
-          </h2>
           {/* The shared Explore row (build 5, item 4), by start time. No per-row "+ Stub it": the event page has it.
-              Your own answer shows in the row as its icon and word; the deep-linked event keeps its tint. */}
-          <ul className="date-list">
+              Your own answer shows in the row as its icon and word; the deep-linked event keeps its tint.
+              The title sits inside the card, like Local Competition (Kylie, Oct 15). */}
+          <div className="date-lineup-card">
+            <h2 id="that-date" className="you-heading in-card-title">
+              {weekdayLong(date)}'s lineup
+            </h2>
+            <ul className="date-list">
             {lineup.shown.map((e) => (
               <li key={e.id} className={`date-row${e.id === highlight ? ' yours' : ''}`}>
                 <Link to={eventPath(e.id, e.metroId)} className="date-row-main">
@@ -337,7 +340,8 @@ export function DateScreen() {
                 </Link>
               </li>
             ))}
-          </ul>
+            </ul>
+          </div>
           <HiddenLine count={lineup.hidden.length} onShow={() => setShowAll(true)} />
         </section>
       )}

@@ -8468,3 +8468,41 @@ a.bulk-row {
   color: var(--ink2);
   white-space: nowrap;
 }
+
+/* Date page: every section's title inside its card, like Local Competition (Kylie, Oct 15). */
+.in-card-title {
+  margin: 0;
+}
+.entry-card .in-card-title {
+  padding-top: 4px;
+}
+.date-lineup-card {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.08);
+  overflow: hidden;
+}
+.date-lineup-card .in-card-title {
+  padding: 16px 16px 4px;
+}
+.date-lineup-card .date-list {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Every row's title text, its second line and the venue start at one edge: the type icon hangs in the
+   gutter to their left (Kylie, Oct 15: the venue started under the icon, not the title). 18 px icon + 4 px. */
+.day-row-body {
+  position: relative;
+  padding-left: 22px;
+}
+/* Placed against the row, not the title: the title's two-line clamp hides anything outside its own box. */
+.day-row-title .type-icon-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+.entry-card {
+  padding: 14px 16px;
+}
