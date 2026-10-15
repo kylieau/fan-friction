@@ -65,8 +65,10 @@ function readFromAssessment(event) {
   return read;
 }
 
+// The rows ride as one JSON string, parsed at load: as a literal, their many optional shapes grew past what
+// TypeScript can check (TS2590, Oct 15, 2026, which stopped the build and the deploy). Same data, same type.
 function emit(archiveRows) {
-  return `${HEADER}export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = ${JSON.stringify(archiveRows, null, 2)};
+  return `${HEADER}export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = JSON.parse(${JSON.stringify(JSON.stringify(archiveRows))});
 `;
 }
 
