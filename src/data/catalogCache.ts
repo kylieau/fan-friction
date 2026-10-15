@@ -14,6 +14,26 @@ import type { GameResult, LocalDate } from './types';
 /** Days either side of a date fetched in one go, so the strip and the month need one or two reads, not forty. */
 const WINDOW_DAYS = 21;
 
+/** Supabase answers at most this many rows a call (the project's max-rows setting, checked Oct 15, 2026). */
+const PAGE_ROWS = 1000;
+
+/**
+ * Every row a query matches, asked for a page at a time: one call stops at
+ * PAGE_ROWS without saying so. `page` builds the query for one range and must
+ * sort by a unique key, so pages don't overlap or skip.
+ */
+export async function allRows<T>(
+  page: (from: number, to: number) => PromiseLike<{ data: T[] | null; error: unknown }>,
+): Promise<{ data: T[]; error: unknown }> {
+  const rows: T[] = [];
+  for (let from = 0; ; from += PAGE_ROWS) {
+    const { data, error } = await page(from, from + PAGE_ROWS - 1);
+    if (error) return { data: rows, error };
+    rows.push(...(data ?? []));
+    if (!data || data.length < PAGE_ROWS) return { data: rows, error: null };
+  }
+}
+
 const weatherHours = new Map<string, WeatherRow[]>();
 const weatherDays = new Map<string, WeatherDay[]>();
 const results = new Map<string, GameResult[]>();
@@ -53,12 +73,24 @@ export function primeDate(metroId: string, date: LocalDate): Promise<void> {
   const from = addDays(date, -WINDOW_DAYS);
   const through = addDays(date, WINDOW_DAYS);
   const p = (async () => {
+    const windowed = (table: string, key: string) =>
+      allRows<{ data: unknown }>((a, b) => client.from(table).select('data').eq('metro_id', metroId).gte('date', from).lte('date', through).order(key).range(a, b));
     const [hours, days, res, snaps, draws] = await Promise.all([
-      client.from('weather_hours').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through),
-      client.from('weather_days').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through),
-      client.from('event_results').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through),
-      client.from('schedule_snapshots').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through),
-      expectedDraws.has(metroId) ? Promise.resolve(null) : client.from('expected_draws').select('data').eq('metro_id', metroId),
+      allRows<{ data: unknown }>((a, b) =>
+        client.from('weather_hours').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through)
+          .order('venue_id').order('date').order('hour').order('captured_at').range(a, b)),
+      allRows<{ data: unknown }>((a, b) =>
+        client.from('weather_days').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through)
+          .order('date').order('captured_at').range(a, b)),
+      windowed('event_results', 'event_id'),
+      allRows<{ data: unknown }>((a, b) =>
+        client.from('schedule_snapshots').select('data').eq('metro_id', metroId).gte('date', from).lte('date', through)
+          .order('captured_on').order('event_id').range(a, b)),
+      expectedDraws.has(metroId)
+        ? Promise.resolve(null)
+        : allRows<{ data: unknown }>((a, b) =>
+            client.from('expected_draws').select('data').eq('metro_id', metroId)
+              .order('team_id').order('venue_id').order('day_class').order('month').range(a, b)),
     ]);
     if (hours.error || days.error || res.error || snaps.error || (draws && draws.error)) return;
     for (const row of hours.data ?? []) {

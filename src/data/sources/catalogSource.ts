@@ -4,6 +4,7 @@
 // stay in code (seedSource) for now. When the table can't be reached, or has
 // nothing for a metro yet, the live feeds answer as before.
 
+import { allRows } from '../catalogCache';
 import type { CrowdEvent, LocalDate } from '../types';
 import { supabase } from '../storage/supabaseClient';
 import { espnEvents } from './espnSource';
@@ -24,11 +25,15 @@ function catalogFor(metroId: string): Promise<CrowdEvent[] | null> {
     // Rows filed under this city's pass, plus games another city's feed filed here because the room is here
     // (the Lakers' home game in Las Vegas is the Las Vegas day; the row stays under the team's pass so the nightly
     // cleanup of one city never deletes another's).
-    const { data, error } = await client
-      .from('events')
-      .select('data')
-      .or(`metro_id.eq.${metroId},data->>metroId.eq.${metroId}`)
-      .neq('source_id', 'seed');
+    const { data, error } = await allRows<{ data: unknown }>((a, b) =>
+      client
+        .from('events')
+        .select('data')
+        .or(`metro_id.eq.${metroId},data->>metroId.eq.${metroId}`)
+        .neq('source_id', 'seed')
+        .order('id')
+        .range(a, b),
+    );
     if (error || !data || data.length === 0) return null;
     return data.map((row) => row.data as CrowdEvent);
   })().catch(() => null);
