@@ -578,7 +578,8 @@ export function teamRelativeTitle(game: SchedulePick): string {
   return game.stakes ? `${stakesChip(game.stakes)} · ${side}` : side;
 }
 
-function stakesChip(stakes: { round: string; game?: number }): string {
+/** A round in its chip form: "NLCS G3". */
+export function stakesChip(stakes: { round: string; game?: number }): string {
   const chip = roundWords(stakes.round).chip;
   return stakes.game ? `${chip} G${stakes.game}` : chip;
 }

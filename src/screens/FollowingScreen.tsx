@@ -5,7 +5,7 @@ import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
 import { ActivityLines } from '../components/ActivityLines';
 import { FrictionPill } from '../components/EventTags';
-import { CardsIcon, ChevronDown, ListIcon, PeopleIcon, StarIcon } from '../components/Icons';
+import { CardsIcon, ChevronDown, ListIcon, PeopleIcon, SearchIcon, StarIcon } from '../components/Icons';
 import {
   EXAMPLE_FEED,
   favoritesOf,
@@ -117,6 +117,12 @@ function FriendsTab({ view, onView }: { view: View; onView: (view: View) => void
   const items = example ? EXAMPLE_FEED : feed;
   return (
     <>
+      {/* A visible way to find and add people (Kylie, Oct 15: "I just need there to be a way to search for other
+          people or add friends"); it opens the People search. */}
+      <Link to="/you/people?find=1" className="search-box friends-find">
+        <SearchIcon />
+        <span>Find people</span>
+      </Link>
       <div className="you-heading-row friends-head">
         <span className="friends-kicker">{view === 'events' ? 'By event' : 'Feed'}</span>
         {/* Grouped by event is the default (Kylie, Oct 11); the switch goes to the feed. */}

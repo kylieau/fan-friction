@@ -47,7 +47,8 @@ export function PeopleScreen() {
   const [showRequests, setShowRequests] = useState(false);
   const [menuFor, setMenuFor] = useState<string | null>(null);
   const [asking, setAsking] = useState<{ id: string; action: 'remove' | 'unfollow' | 'block' } | null>(null);
-  const [finding, setFinding] = useState(false);
+  // ?find=1 opens straight into the search (the Friends tab's "Find people", Kylie, Oct 15).
+  const [finding, setFinding] = useState(params.get('find') === '1');
   const [query, setQuery] = useState('');
   const [found, setFound] = useState<Profile[] | null>(null);
   const [note, setNote] = useState<string | null>(null);

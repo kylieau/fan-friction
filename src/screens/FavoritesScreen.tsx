@@ -34,7 +34,7 @@ import {
   type GameLink,
 } from '../data';
 import { addDays, clockTime, shortLocalDate } from '../lib/dates';
-import { listTitle, scheduleGameTitle, stakesLabel } from '../lib/eventTitle';
+import { listTitle, scheduleGameTitle, stakesChip, stakesLabel } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { TitleText } from '../components/TitleText';
@@ -57,6 +57,8 @@ interface ScheduleRow {
   start: string | null;
   /** "Dodgers at Brewers", an artist's name, or the listed event's name. */
   title: string;
+  /** The round in its chip form, kept whole after the title on one line ("NLCS G4"; Kylie, Oct 15). */
+  tag?: string;
   /** "American Family Field · 5:00 pm · NLCS G2". */
   facts: string;
   /** The listed event behind it, when the building is covered. */
@@ -135,7 +137,8 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
             fav,
             date: game.date,
             start: game.start,
-            title: scheduleGameTitle(fav.label, game),
+            title: scheduleGameTitle(fav.label, { ...game, stakes: undefined }),
+            ...(game.stakes ? { tag: stakesChip(game.stakes) } : {}),
             facts: [venue, game.start ? clockTime(game.start) : null].filter(Boolean).join(' · '),
             event,
             metroId: event?.metroId ?? game.eventMetroId,
@@ -323,8 +326,16 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
 
   const body = (
     <>
-      <div className="you-heading-row">
-        <span />
+      {/* Your favorites as their badges, each opening its page, then Edit (Kylie, Oct 15: "Edit" alone hid the way
+          to each favorite and left a gap under the switch). */}
+      <div className="fav-strip">
+        <div className="fav-strip-marks">
+          {favorites.map((fav) => (
+            <Link key={favoriteKey(fav)} to={favPath(fav)} className={`fav-tag fav-tag-${fav.kind}`} aria-label={fav.label}>
+              {favoriteMark(fav)}
+            </Link>
+          ))}
+        </div>
         <button type="button" className="link-button you-edit" onClick={() => setPicking(true)}>
           Edit
         </button>
@@ -385,7 +396,12 @@ function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: numb
         {favoriteMark(row.fav)}
       </span>
       <span className="log-main">
-        <span className="log-title"><TitleText text={row.title} /></span>
+        <span className="log-title fav-one-line">
+          <span className="fav-title-name">
+            <TitleText text={row.title} />
+          </span>
+          {row.tag && <span className="fav-title-tag">&nbsp;· {row.tag}</span>}
+        </span>
         <span className="log-facts">{row.facts}</span>
       </span>
     </>

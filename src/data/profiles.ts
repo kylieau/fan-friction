@@ -541,8 +541,10 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
 
 /** The feed's shape before anyone is followed, marked Example. Nothing here is written anywhere. */
 export const EXAMPLE_FEED: FeedItem[] = [
-  { example: true, kind: 'planning', friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null }, title: 'Bills at Rams', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la' },
-  { example: true, kind: 'attended', friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, homeMetroId: null }, title: 'Slayer', date: '2026-10-02', venue: 'Kia Forum', metroId: 'la' },
+  // Real events on their real dates, already past, so the line's tense stays true (Oct 15: a static plan on a past
+  // game read "is going" days later, and an invented date showed on the Friends tab).
+  { example: true, kind: 'attended', watched: true, friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null }, title: 'Bills at Rams', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la', eventId: '2026-10-12-espn-rams-401872994' },
+  { example: true, kind: 'attended', friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, homeMetroId: null }, title: 'Slayer', date: '2026-10-04', venue: 'Kia Forum', metroId: 'la', eventId: '2026-10-04-slayer' },
 ];
 
 /** Recent nights of the people the signed-in person follows (approved only), newest first. */
@@ -570,8 +572,9 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
     friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null },
     entry: {
       id: 'example-entry-1',
+      eventId: '2026-10-03-dodgers',
       when: { sort: '2026-10-03', label: '', precision: 'day' },
-      title: 'NLDS G1 · Phillies at Dodgers',
+      title: 'Braves at Dodgers · NLDS Game 1',
       tags: ['Dodgers'],
       sport: 'Baseball',
       sides: ['Dodgers'],
@@ -586,7 +589,8 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
     friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, homeMetroId: null },
     entry: {
       id: 'example-entry-2',
-      when: { sort: '2026-10-02', label: '', precision: 'day' },
+      eventId: '2026-10-04-slayer',
+      when: { sort: '2026-10-04', label: '', precision: 'day' },
       title: 'Slayer',
       tags: ['Concerts'],
       sport: 'Concerts',
@@ -603,7 +607,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
     entry: {
       id: 'example-entry-3',
       when: { sort: '2026-09-21', label: '', precision: 'day' },
-      title: 'Rams vs. NY Giants',
+      title: 'Giants at Rams',
       tags: ['Rams'],
       sport: 'Football',
       sides: ['Rams'],

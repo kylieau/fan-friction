@@ -8506,3 +8506,54 @@ a.bulk-row {
 .entry-card {
   padding: 14px 16px;
 }
+
+/* Faves (Kylie, Oct 15): the favorites' badges under the switch, each opening its page, then Edit. */
+.fav-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 2px 0 4px;
+}
+.fav-strip-marks {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0;
+}
+.fav-strip-marks::-webkit-scrollbar {
+  display: none;
+}
+.fav-strip-marks .fav-tag {
+  text-decoration: none;
+}
+/* One line per title: the matchup may shorten with an ellipsis, the round never does. */
+.fav-one-line {
+  display: flex;
+  min-width: 0;
+  white-space: nowrap;
+}
+.fav-title-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fav-title-tag {
+  flex-shrink: 0;
+}
+/* The divider sits closer to the read tile, giving the title the room (Kylie, Oct 15). */
+.fav-sched-read {
+  width: 64px;
+  padding: 6px 12px 6px 2px;
+}
+.fav-sched-main {
+  padding-right: 8px;
+}
+
+/* Friends: "Find people", shaped like the Faves search, opens the People search (Kylie, Oct 15). */
+.friends-find {
+  text-decoration: none;
+  margin-bottom: 4px;
+}
