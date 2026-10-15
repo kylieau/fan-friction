@@ -1,7 +1,8 @@
 // Puts the two test accounts back into the state the handoff describes, after
 // scripts/account-check.mjs has wiped them: B follows A (approved), A is on
-// "People I approve", and A has three entries (one watched) and one plan, so the
-// feeds have rows. Needs .env.local and private/test-accounts.json (git-ignored).
+// "People I approve", and A has three entries (one watched) and two plans, so the
+// feeds have rows. Every row points at a real catalog event on its real date (Oct 15, 2026: an
+// invented "Rams vs. Bills, Oct 4" showed on B's Friends tab; the game was Mon, Oct 12). Needs .env.local and private/test-accounts.json (git-ignored).
 // Run: node scripts/seed-test-accounts.mjs
 import { createServer } from 'vite';
 import { createClient } from '@supabase/supabase-js';
@@ -32,17 +33,28 @@ const empty = { version: 1, hiddenSeedIds: [], added: [], plans: [], order: 'pla
 const log = {
   ...empty,
   added: [
-    { id: 'seed-a-1', eventId: 'mlb-813007', when: { sort: '2026-10-03', label: 'Oct 3, 2026', precision: 'day' }, title: 'Dodgers vs. Braves', tags: ['Dodgers'], sport: 'Baseball', sides: ['Dodgers'], venue: 'Dodger Stadium', kind: 'game', metroId: 'la', inMetro: true, review: 'Loud from the first pitch.' },
+    { id: 'seed-a-1', eventId: '2026-10-03-dodgers', when: { sort: '2026-10-03', label: 'Oct 3, 2026', precision: 'day' }, title: 'Braves at Dodgers · NLDS, Game 1', tags: ['Dodgers'], sport: 'Baseball', sides: ['Dodgers'], venue: 'Dodger Stadium', kind: 'game', metroId: 'la', inMetro: true, review: 'Loud from the first pitch.' },
     { id: 'seed-a-2', when: { sort: '2026-10-02', label: 'Oct 2, 2026', precision: 'day' }, title: 'Slayer', tags: ['Concerts'], sport: 'Concerts', sides: ['Slayer'], venue: 'Kia Forum', kind: 'show', metroId: 'la', inMetro: true },
-    { id: 'seed-a-3', when: { sort: '2026-10-04', label: 'Oct 4, 2026', precision: 'day' }, title: 'Rams vs. Bills', tags: ['Rams'], sport: 'Football', sides: ['Rams'], venue: 'SoFi Stadium', kind: 'game', metroId: 'la', inMetro: true, watched: true },
+    { id: 'seed-a-3', eventId: '2026-10-12-espn-rams-401872994', when: { sort: '2026-10-12', label: 'Oct 12, 2026', precision: 'day' }, title: 'Bills at Rams', tags: ['Rams'], sport: 'Football', sides: ['Rams'], venue: 'SoFi Stadium', kind: 'game', metroId: 'la', inMetro: true, watched: true },
   ],
   plans: [
-    { id: 'plan-seed-a', date: '2026-10-17', metroId: 'la', eventId: 'seed-plan-texas', title: 'Texas vs. Oklahoma', venue: 'Cotton Bowl' },
+    { id: 'plan-2026-10-18-espn-rams-401873004', date: '2026-10-18', metroId: 'la', eventId: '2026-10-18-espn-rams-401873004', title: 'Cardinals at Rams', venue: 'SoFi Stadium' },
     // An Interested answer on a real listed game (Kylie, Oct 11), so B's event page and by-event list have a line to show.
-    { id: 'plan-2026-10-12-espn-rams-401872994', date: '2026-10-12', metroId: 'la', eventId: '2026-10-12-espn-rams-401872994', title: 'Rams vs. Bills', venue: 'SoFi Stadium', interested: true },
+    { id: 'plan-2026-10-21-espn-lakers-401909092', date: '2026-10-21', metroId: 'la', eventId: '2026-10-21-espn-lakers-401909092', title: 'Warriors at Lakers', venue: 'crypto.com Arena', interested: true },
   ],
 };
-await a.store.save(diffLogs(empty, log));
-console.log(`Seeded: A has ${(await a.store.load()).added.length} entries and 1 plan; B follows A (approved).`);
+// Replace only the seed's own rows, so anything else on A (settings, rows added by hand) stays;
+// the ids an older version of this script used are removed.
+const OLD_PLAN_IDS = ['plan-seed-a', 'plan-2026-10-12-espn-rams-401872994'];
+const before = await a.store.load();
+const ours = new Set([...log.added, ...log.plans].map((row) => row.id).concat(OLD_PLAN_IDS));
+const after = {
+  ...before,
+  added: [...before.added.filter((row) => !ours.has(row.id)), ...log.added],
+  plans: [...before.plans.filter((row) => !ours.has(row.id)), ...log.plans],
+};
+await a.store.save(diffLogs(before, after));
+const now = await a.store.load();
+console.log(`Seeded: A has ${now.added.length} entries and ${now.plans.length} plans; B follows A (approved).`);
 await server.close();
 process.exit(0);
