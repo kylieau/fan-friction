@@ -216,7 +216,7 @@ export function entryTags(entry: Pick<Entry, 'tags'>): string[] {
   return entry.tags.map((tag) => LEGACY_TAGS[tag] ?? tag);
 }
 
-/** "Basketball · WNBA", "Basketball · Women's college", "Football · High school": the row's type line for a hand-typed game. */
+/** "Basketball · WNBA", "Basketball · Women's college", "Basketball · Men's college", "Football · High school": the row's type line for a hand-typed game. */
 export function entryTypeLabel(entry: Entry): string {
   const base = entryType(entry).label;
   if (entry.kind !== 'game') return base;

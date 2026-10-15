@@ -34,8 +34,11 @@ function collegeAbbrev(event: CrowdEvent): string | null {
   return null;
 }
 
-/** N16: a readable sport label after the teams in short and full names; the code stays on chips. */
-const SQUAD_WORDS: Record<string, string> = { FB: 'Football', MBB: 'Basketball', WBB: "Women's basketball" };
+/**
+ * N16: a sport label after the teams in short and full names; the code stays on chips. Men's and women's are
+ * named alike (Kylie, Oct 15, 2026: "it is not okay that men's sports doesn't specify gender but women's does"; MBB and WBB).
+ */
+const SQUAD_WORDS: Record<string, string> = { FB: 'Football', MBB: 'MBB', WBB: 'WBB' };
 
 function squadTag(raw: string): string {
   return raw === 'CFB' ? 'FB' : raw;

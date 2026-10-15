@@ -107,6 +107,8 @@ export function competitionNamed(name: string): Competition | undefined {
 export function levelPhrase(level: SportsLevel, division?: Division): string {
   const word = LEVELS.find((row) => row.level === level)?.label ?? level;
   if (level === 'school') return division === 'women' ? "Girls' high school" : division === 'men' ? "Boys' high school" : word;
+  // Men's is named whenever women's would be (Kylie, Oct 15, 2026); no division on file keeps the plain word.
+  if (division === 'men') return `Men's ${word.toLowerCase()}`;
   if (division === 'women') return `Women's ${word.toLowerCase()}`;
   if (division === 'mixed') return `Mixed ${word.toLowerCase()}`;
   return word;
