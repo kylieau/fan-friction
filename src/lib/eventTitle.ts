@@ -227,7 +227,7 @@ function gameParts(event: CrowdEvent): Parts {
     const home = event.teams?.home ? TEAMS[event.teams.home]?.shortName : undefined;
     const away = event.teams?.away ? TEAMS[event.teams.away]?.shortName : undefined;
     if (!home || !away) return { type: 'named', name: round.short, designation: game ? `Game ${game}` : null, year: null };
-    // "{teams} · World Series, Game 1" once the teams are known.
+    // "{teams} · World Series Game 1" once the teams are known.
     return { type: 'game', first: away, second: home, joiner: 'at', eventName: null, neutralSite: false, sport: null, squad: null, round, game, year: finalYear(event, round), designation: null };
   }
   const sides = sidesOf(title);
@@ -341,7 +341,8 @@ function roundText(p: GameParts, length: Length, compact = false): string | null
   const words = length === 'full' ? p.round.full : p.round.short;
   const year = p.year && length !== 'chip' ? ` ${p.year}` : '';
   if (!p.game) return `${words}${year}`;
-  return compact ? `${words}${year}\u00a0G${p.game}` : `${words}${year}, Game ${p.game}`;
+  // No comma before the game number (Kylie, Oct 15: "NLCS Game 3"); the number never leaves its word.
+  return compact ? `${words}${year}\u00a0G${p.game}` : `${words}${year} Game\u00a0${p.game}`;
 }
 
 /**
@@ -419,7 +420,7 @@ function fitShort(render: (drop: number) => string, steps: number): string {
 
 /**
  * Short name (32 characters, up to two lines): Explore and sheet rows, the date page lineup, Home, Stubs, Faves,
- * search and the chip card. Teams first, then the round: "Dodgers at Mets · NLCS, Game 3" (N04).
+ * search and the chip card. Teams first, then the round: "Dodgers at Mets · NLCS Game 3" (N04).
  */
 export function listTitle(event: CrowdEvent): string {
   if (event.titleFixed) return event.title;
@@ -431,7 +432,7 @@ export function listTitle(event: CrowdEvent): string {
 
 /**
  * Full name (event page title, Stub sheet, share text): never cut. Playoff words spelled out ("Dodgers at Mets ·
- * NL Championship Series, Game 3", N03), the year on a final (N07), "Touring production" (N25).
+ * NL Championship Series Game 3", N03), the year on a final (N07), "Touring production" (N25).
  */
 export function fullTitle(event: CrowdEvent): string {
   if (event.titleFixed) return event.title;
@@ -563,7 +564,7 @@ export interface SchedulePick {
 function scheduleLabel(game: SchedulePick): string | null {
   if (!game.stakes) return null;
   const words = roundWords(game.stakes.round).short;
-  return game.stakes.game ? `${words}, Game ${game.stakes.game}` : words;
+  return game.stakes.game ? `${words} Game\u00a0${game.stakes.game}` : words;
 }
 
 /**
