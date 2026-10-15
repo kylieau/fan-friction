@@ -10,6 +10,8 @@ import { seedEventsOn } from '../sources/seedSource';
 function roundPoints(round: string | undefined): number {
   if (!round) return 0;
   const r = round.toLowerCase();
+  // College tournament rounds that read like later rounds (Kylie, Oct 15): the Round of 32 and a hockey regional final.
+  if (/(round of 32|regional final)/.test(r)) return 3;
   if (/(world series|super bowl|nba finals|stanley cup final|mls cup$|final$|championship game|national championship)/.test(r)) return 4;
   if (/(play-in|wild card|wildcard|round one|first round|round of)/.test(r)) return 2;
   if (/(nlds|alds|nlcs|alcs|division|conference|semifinal|quarterfinal|playoff|round|sweet 16|elite eight|final four|frozen four)/.test(r)) return 3;

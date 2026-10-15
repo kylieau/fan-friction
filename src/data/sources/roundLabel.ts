@@ -201,10 +201,29 @@ const COLLEGE_ROUNDS: [RegExp, string][] = [
 ];
 
 /**
- * A college tournament round in words (Kylie, Oct 15, 2026; first round stays Notable, 2 points), from ESPN's headline ("NCAA Women's Championship pres. by Capital One -
- * Greenville Regional 1 - 1st Round" → "First round"). The NCAA tournament is plain; any other tournament is named
- * first ("NIT First round"). Gender, sponsor, region and city leave the label: MBB / WBB already say which.
- * Undefined when the round isn't recognized, so the headline stays as it was.
+ * March Madness by its field (Kylie, Oct 15, 2026: "round of 64 > 32 > sweet 16"): the NCAA basketball tournament's
+ * first two rounds. The NCAA's own names since 2016 are "First Round" and "Second Round"; this is her call, kept on
+ * purpose. Other tournaments keep "First round".
+ */
+const MARCH_MADNESS: Record<string, string> = { 'First round': 'Round of 64', 'Second round': 'Round of 32' };
+
+/** Hockey's NCAA tournament has 16 teams: its regionals are not the Sweet 16 or the Elite Eight. */
+const HOCKEY_REGIONALS: Record<string, string> = { 'Sweet 16': 'Regional semifinal', 'Elite Eight': 'Regional final' };
+
+/** Every word a college round can read as, so a saved title's label is recognized (eventTitle.ts, readLabel). */
+const COLLEGE_ROUND_WORDS = [...new Set([...COLLEGE_ROUNDS.map(([, w]) => w), ...Object.values(MARCH_MADNESS), ...Object.values(HOCKEY_REGIONALS)])];
+const COLLEGE_ROUND_RE = new RegExp(`^(?:(?:nit|wbit|cbi|cit|crown|fcs|.+ tournament) )?(?:${COLLEGE_ROUND_WORDS.map((w) => w.toLowerCase()).join('|')})$`, 'i');
+
+/** Is this a college tournament round's label ("Round of 64", "NIT First round", "Big Ten Tournament Final")? */
+export function isCollegeRoundText(text: string): boolean {
+  return COLLEGE_ROUND_RE.test(text.trim());
+}
+
+/**
+ * A college tournament round in words (Kylie, Oct 15, 2026; first round stays Notable, 2 points), from ESPN's headline
+ * ("NCAA Women's Championship pres. by Capital One - Greenville Regional 1 - 1st Round" → "Round of 64"). The NCAA
+ * tournament is plain; any other tournament is named first ("NIT First round"). Gender, sponsor, region and city leave
+ * the label: the sport label already says which. Undefined when the round isn't recognized, so the headline stays.
  */
 export function collegeTournamentRound(raw: string): string | undefined {
   const parts = raw.split(/\s+-\s+/).map((p) => p.trim());
@@ -212,7 +231,10 @@ export function collegeTournamentRound(raw: string): string | undefined {
   const round = COLLEGE_ROUNDS.find(([re]) => re.test(last))?.[1];
   if (!round || parts.length < 2) return undefined;
   const head = parts[0];
-  if (/\bNCAA\b|^(?:Men's|Women's) (?:Basketball |Hockey )?Championship/i.test(head)) return round;
+  if (/\bNCAA\b|^(?:Men's|Women's) (?:Basketball |Hockey )?Championship/i.test(head)) {
+    if (/hockey/i.test(head)) return HOCKEY_REGIONALS[round] ?? round;
+    return MARCH_MADNESS[round] ?? round;
+  }
   const named = head.match(/\b(WBIT|NIT|CBI|CIT|Crown|FCS)\b/i)?.[1];
   if (named) return `${named === 'Crown' ? 'Crown' : named.toUpperCase()} ${round}`;
   const conference = head.match(/^(.+?) (?:Tournament|Championship)$/i)?.[1];

@@ -1,6 +1,6 @@
 # Proposal: short labels for college tournament games (Oct 15, 2026)
 
-Status: **approved and built (Kylie, Oct 15, 2026): first round stays Notable (2 points).** She may want more research on this later (BACKLOG). The LA dates below were reloaded (private SQL 0034).
+Status: **approved and built (Kylie, Oct 15, 2026): first round stays Notable (2 points).** Later the same day: NCAA basketball's first two rounds read **Round of 64** and **Round of 32** (product-decisions), and the sport moved into the label ("WBB · Round of 64"). She may want more research on this later (BACKLOG). The LA dates below were reloaded (private SQL 0034).
 
 ## The problem
 College basketball and hockey postseason games show ESPN's whole headline as their label, for men and women alike:

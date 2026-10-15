@@ -4,6 +4,7 @@ import { METROS } from '../config/metros';
 import type { CrowdEvent } from '../data/types';
 import { displayName } from '../config/names';
 import { clockTime } from './dates';
+import { isCollegeRoundText } from '../data/sources/roundLabel';
 
 // Event names in three lengths (build 5, item 13; naming review N01–N30, item 15; follow-up research, Oct 14).
 // One set of parts per event, rendered three ways, so the lengths can't drift:
@@ -18,27 +19,114 @@ import { clockTime } from './dates';
 const CHIP_NAME = 16;
 const SHORT_MAX = 32;
 
-/** Tags that belong after the first name. CFB is stripped from old titles and never written back. */
-const SQUAD_TAG = 'FB|MBB|WBB|CFB';
+// ---------- Sport labels (Kylie, Oct 15, 2026; docs/research/topics/sport-labels-answer.md) ----------
+// Men's and women's are named alike: "it is not okay that men's sports doesn't specify gender but women's does."
+// The label sits in the event-label slot, not after the teams. Alone it is spelled out ("Men's Basketball"); paired
+// with a round or other label it is the code ("WBB · Round of 64"). Inline in parentheses it is always the code.
 
-/** College football is FB. College basketball is MBB, or WBB when the team says so. */
-function collegeAbbrev(event: CrowdEvent): string | null {
-  if (event.audience.domain !== 'sports' || !event.teams) return null;
-  const sides = [TEAMS[event.teams.home], TEAMS[event.teams.away]].filter((t) => t !== undefined);
-  if (!sides.some((t) => /college/i.test(t.league))) return null;
-  if (event.audience.sport === 'football') return 'FB';
-  if (event.audience.sport === 'basketball') {
-    const women = sides.some((t) => /women|wbb/i.test(t.league) || t.id.endsWith('-wbb'));
-    return women ? 'WBB' : 'MBB';
+/** Code suffix and words per sport. Football, baseball, softball and field hockey carry none: their names differ. */
+const SPORT_CODES: Record<string, { code: string; words: string }> = {
+  basketball: { code: 'BB', words: 'Basketball' },
+  volleyball: { code: 'VB', words: 'Volleyball' },
+  'beach volleyball': { code: 'BVB', words: 'Beach Volleyball' },
+  soccer: { code: 'SOC', words: 'Soccer' },
+  hockey: { code: 'HKY', words: 'Hockey' },
+  'ice hockey': { code: 'HKY', words: 'Hockey' },
+  lacrosse: { code: 'LAX', words: 'Lacrosse' },
+  'water polo': { code: 'WP', words: 'Water Polo' },
+  tennis: { code: 'TEN', words: 'Tennis' },
+  golf: { code: 'GOLF', words: 'Golf' },
+  swimming: { code: 'SWIM', words: 'Swimming' },
+  track: { code: 'TRK', words: 'Track' },
+  'track and field': { code: 'TRK', words: 'Track' },
+  'cross country': { code: 'XC', words: 'Cross Country' },
+  gymnastics: { code: 'GYM', words: 'Gymnastics' },
+  fencing: { code: 'FEN', words: 'Fencing' },
+  rowing: { code: 'ROW', words: 'Rowing' },
+  rugby: { code: 'RUG', words: 'Rugby' },
+  wrestling: { code: 'WR', words: 'Wrestling' },
+};
+const SIDE_WORDS = { M: "Men's", W: "Women's", B: "Boys'", G: "Girls'" } as const;
+type Side = keyof typeof SIDE_WORDS;
+const SUFFIXES = [...new Set(Object.values(SPORT_CODES).map((s) => s.code))].sort((a, b) => b.length - a.length);
+
+/** Every sport code, for reading tags in raw titles ("UCLA WVB") and labels back from saved titles. */
+const SPORT_CODE_RE = new RegExp(`^([MWBG])(${SUFFIXES.join('|')})$`);
+
+/** Tags that belong after the first name. CFB is stripped from old titles and never written back. */
+const SQUAD_TAG = `FB|CFB|[MWBG](?:${SUFFIXES.join('|')})`;
+
+export interface SportLabel {
+  code: string;
+  words: string;
+}
+
+/** "WBB" → Women's Basketball; null when it isn't a sport code. */
+function sportFromCode(code: string): SportLabel | null {
+  const m = code.match(SPORT_CODE_RE);
+  if (!m) return null;
+  const words = Object.values(SPORT_CODES).find((s) => s.code === m[2])!.words;
+  return { code, words: `${SIDE_WORDS[m[1] as Side]} ${words}` };
+}
+
+/** "Men's Basketball" → MBB; null when it isn't a sport label's words. */
+function sportFromWords(text: string): SportLabel | null {
+  for (const [side, said] of Object.entries(SIDE_WORDS)) {
+    if (!text.toLowerCase().startsWith(`${said.toLowerCase()} `)) continue;
+    const rest = text.slice(said.length + 1).toLowerCase();
+    const sport = Object.values(SPORT_CODES).find((s) => s.words.toLowerCase() === rest);
+    if (sport) return { code: `${side}${sport.code}`, words: `${said} ${sport.words}` };
   }
   return null;
 }
 
+const TEAM_LIST = Object.values(TEAMS);
+/** A side word some clubs carry in their names ("América Femenil"); the sport label says it instead, for both sides. */
+const SIDE_IN_NAME = /\s+(?:femenil|varonil)$/i;
+const baseName = (name: string) => name.replace(SIDE_IN_NAME, '');
+const AMATEUR = /college|u sports|ncaa|naia|high school|\bschool\b/i;
+
+/** Which side a team is, from its league and name. Women's is checked first: "women's" contains "men's". */
+function sideOf(team: (typeof TEAM_LIST)[number]): Side | null {
+  const text = `${team.league} ${team.name}`;
+  const school = /high school|\bschool\b/i.test(team.league);
+  if (/\bwomen'?s?\b|\bgirls'?\b|\bfemenil\b/i.test(text)) return school ? 'G' : 'W';
+  if (/\bmen'?s?\b|\bboys'?\b|\bvaronil\b/i.test(text)) return school ? 'B' : 'M';
+  return null;
+}
+
 /**
- * N16: a sport label after the teams in short and full names; the code stays on chips. Men's and women's are
- * named alike (Kylie, Oct 15, 2026: "it is not okay that men's sports doesn't specify gender but women's does"; MBB and WBB).
+ * A game's sport label, or null. College and school games carry one whenever the side is known. A pro game carries
+ * one only when a men's and a women's club share the name (Liga MX and Liga MX Femenil), on both sides alike.
  */
-const SQUAD_WORDS: Record<string, string> = { FB: 'Football', MBB: 'MBB', WBB: 'WBB' };
+export function sportLabelOf(event: CrowdEvent): SportLabel | null {
+  if (event.audience.domain !== 'sports' || !event.teams) return null;
+  const sport = SPORT_CODES[event.audience.sport.toLowerCase()];
+  if (!sport) return null;
+  const sides = [TEAMS[event.teams.home], TEAMS[event.teams.away]].filter((t) => t !== undefined);
+  if (sides.length === 0) return null;
+  let side: Side | null = null;
+  if (sides.some((t) => AMATEUR.test(t.league))) {
+    side = sides.map(sideOf).find((x) => x !== null) ?? null;
+  } else {
+    const home = sides[0];
+    const twin = TEAM_LIST.find((t) => t.id !== home.id && t.sport === home.sport && baseName(t.shortName) === baseName(home.shortName));
+    const twinSide = twin ? sideOf(twin) : null;
+    if (!twin) return null;
+    side = sideOf(home) ?? (twinSide === 'W' ? 'M' : twinSide === 'M' ? 'W' : null);
+  }
+  if (!side) return null;
+  return { code: `${side}${sport.code}`, words: `${SIDE_WORDS[side]} ${sport.words}` };
+}
+
+/** The squad code for a chip clash (N16): the sport code, or FB for college football. */
+function collegeAbbrev(event: CrowdEvent): string | null {
+  const label = sportLabelOf(event);
+  if (label) return label.code;
+  if (event.audience.domain !== 'sports' || !event.teams || event.audience.sport !== 'football') return null;
+  const sides = [TEAMS[event.teams.home], TEAMS[event.teams.away]].filter((t) => t !== undefined);
+  return sides.some((t) => /college/i.test(t.league)) ? 'FB' : null;
+}
 
 function squadTag(raw: string): string {
   return raw === 'CFB' ? 'FB' : raw;
@@ -217,7 +305,7 @@ function designationOf(event: CrowdEvent): GameParts['designation'] {
 // parentheses ("(NLCS G3)"). "if necessary" is the locked wording; inline it shares the stage's parentheses
 // ("(NLCS G6, if necessary)"). Stage labels are dark; low-stakes, occasion and doubleheader labels are grey.
 
-export type LabelKind = 'stage' | 'low' | 'occasion' | 'game';
+export type LabelKind = 'stage' | 'low' | 'occasion' | 'game' | 'sport';
 
 export interface EventLabel {
   kind: LabelKind;
@@ -234,7 +322,22 @@ export interface EventLabel {
 
 const LOW_WORDS = /\b(exhibition|friendly|scrimmage|qualifier)\b/i;
 
+/**
+ * An event's label: its stage or other label, with the sport in front when the game carries one. Alone, the sport is
+ * spelled out on its own line ("Men's Basketball") and the code inline ("(MBB)"); paired, it is the code
+ * ("WBB · Round of 64"). The event page spells both out ("Women's Basketball · Round of 64").
+ */
 export function eventLabel(event: CrowdEvent): EventLabel | null {
+  const base = stageLabel(event);
+  if (event.audience.domain !== 'sports' || event.kind === 'show' || event.kind === 'festival') return base;
+  const tag = sidesOf(event.title)?.tag;
+  const sport = sportLabelOf(event) ?? (tag ? sportFromCode(tag) : null);
+  if (!sport) return base;
+  if (!base) return { kind: 'sport', own: sport.words, full: sport.words, inline: sport.code, chip: null, ifNecessary: false };
+  return { ...base, own: `${sport.code} · ${base.own}`, inline: `${sport.code} · ${base.inline}`, full: `${sport.words} · ${base.full}` };
+}
+
+function stageLabel(event: CrowdEvent): EventLabel | null {
   if (event.audience.domain !== 'sports' || event.kind === 'show' || event.kind === 'festival') return null;
   const stakes = event.stakes;
   if (stakes?.round) {
@@ -305,12 +408,20 @@ function readLabel(raw: string): TitleLabel | null {
   const ifNecessary = /,?\s*if necessary$/i.test(text);
   const core = text.replace(/,?\s*if necessary$/i, '').trim();
   const make = (kind: LabelKind, own: string, inline: string): TitleLabel => ({ kind, own, inline, ifNecessary });
+  // A sport label alone ("MBB", "Men's Basketball"), or the code in front of another label ("WBB · Round of 64").
+  const sport = sportFromCode(core) ?? sportFromWords(core);
+  if (sport) return make('sport', sport.words, sport.code);
+  const paired = core.match(/^(\S+) · (.+)$/);
+  if (paired && sportFromCode(paired[1])) {
+    const rest = readLabel(paired[2]);
+    if (rest) return { ...rest, own: `${paired[1]} · ${rest.own}`, inline: `${paired[1]} · ${rest.inline}`, ifNecessary: rest.ifNecessary || ifNecessary };
+  }
   if (/^(preseason|spring training(, [a-z]+ league)?|exhibition|friendly|scrimmage|qualifier)$/i.test(core)) return make('low', core, core);
   if (/^(home opener|season finale)$/i.test(core)) return make('occasion', core, core);
   if (/^game \d+$/i.test(core)) return make('game', core.replace(' ', '\u00a0'), core.replace(' ', '\u00a0'));
   const numbered = core.match(/^(.+?) (?:G|Game )(\d+)$/);
   const stem = (numbered ? numbered[1] : core).replace(/ \d{4}$/, '').toLowerCase();
-  if (!ROUND_TEXTS.has(stem) && !/^\S+ playoffs$/.test(stem)) return null;
+  if (!ROUND_TEXTS.has(stem) && !/^\S+ playoffs$/.test(stem) && !isCollegeRoundText(stem)) return null;
   if (!numbered) return make('stage', core, core);
   return make('stage', `${numbered[1]} Game\u00a0${numbered[2]}`, `${numbered[1]}\u00a0G${numbered[2]}`);
 }
@@ -381,6 +492,8 @@ function gameParts(event: CrowdEvent): Parts {
   } else {
     [first, second, joiner] = [sides.second, sides.first, 'at'];
   }
+  // "América Femenil" → "América" once the label names the side (both clubs are then named alike).
+  if (sportLabelOf(event)) [first, second] = [baseName(first), baseName(second)];
   return {
     type: 'game',
     first,
@@ -388,7 +501,8 @@ function gameParts(event: CrowdEvent): Parts {
     joiner,
     eventName,
     neutralSite: neutral,
-    sport: code ? SQUAD_WORDS[code] ?? null : null,
+    // The sport rides in the label slot now (eventLabel), not after the teams.
+    sport: null,
     squad: code,
     round,
     game,
@@ -729,7 +843,9 @@ export function scheduleGameTitle(us: string, game: SchedulePick, sport?: string
  */
 export function spokenTitle(event: CrowdEvent): string {
   const { name, label } = splitTitleLabel(listTitle(event));
-  return [name, label?.own.replace(/\u00a0/g, ' '), label?.ifNecessary ? 'if necessary' : null].filter(Boolean).join(', ');
+  // Codes are read as words ("WBB" would be spelled out letter by letter).
+  const own = label?.own.replace(/\u00a0/g, ' ').replace(/^(\S+) · /, (_m, code: string) => `${sportFromCode(code)?.words ?? code}, `);
+  return [name, own, label?.ifNecessary ? 'if necessary' : null].filter(Boolean).join(', ');
 }
 
 /** The chip's last fallback name (labels r3, chip (b)): the home side's team code, "LAD". */

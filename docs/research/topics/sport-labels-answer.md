@@ -2,7 +2,7 @@
 
 Status: answered; Kylie's calls Oct 15, 2026 below. Research answer, not itself a decision. Written Oct 15, 2026, in reply to the brief of the same date (`sport-labels-prompt.md`). Kylie decides; any format change gets a mockup before anything is built. Pasted into the repo by Claude Code on Oct 15, 2026, as returned.
 
-**Kylie's calls (Oct 15, 2026):** Option B, sport first ("WBB · First round"); the recommended code list in 5.1; hockey MHKY / WHKY; shared-name clubs (Liga MX / Liga MX Femenil) take the same M/W codes in every city; imported stubs get a label slot instead of "· WBB" in their titles. Open: whether the label line spells the code out ("Women's basketball · First round") while the inline parentheses keep the code (mock `docs/design/sport-labels/B-words-*.png`).
+**Kylie's calls (Oct 15, 2026), built the same day:** Option B, sport first; spelled out (capitalized) only when the sport label stands alone, the code when paired; the 5.1 code list; hockey MHKY / WHKY; shared-name clubs take the same M/W codes in every city; imported stubs carry the label in their title's slot. Status: closed, docs/product/product-decisions.md, Oct 15, 2026.
 
 **How facts are marked**
 
