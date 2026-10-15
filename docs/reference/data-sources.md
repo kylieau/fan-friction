@@ -49,6 +49,18 @@ Kylie, Oct 6, 2026: one file that says where each kind of data is pulled from, s
 - `docs/research/topics/venue-egress-answer.md` and `docs/archive/formula/gridlock_inputs_all_43_venues.csv`: parking counts, mode shares, occupancy and clearance times for all 43 venues (EIRs, city plans, LA Phil, MTS, SacRT). Exit lanes are not published anywhere, so the cars-per-lane rule is shelved; `carShare` can be filled from the official/reported rows.
 - `docs/archive/formula/formula-review-response.md`: the formula review, including the calibration plan (§11).
 
+## Past-event sources (checked Oct 14, 2026, by hand)
+
+For looking up a past game or show: result, scheduled start, announced crowd, setlist. None is wired into the app; a person or a research run reads them.
+
+| Data | Source | Notes |
+|---|---|---|
+| NBA and WNBA official gamebooks (start, end, crowd, officials) | [statsdmz.nba.com](https://statsdmz.nba.com/) | Official. Guessing a file path fails; find the game's id first. |
+| College box scores, recaps, schedules with start times | each school's athletics site (e.g. [uclabruins.com](https://uclabruins.com/)); Division III conferences such as [SCIAC](https://thesciac.org/) | Official. Some box-score PDFs extract as unreadable text (font encoding); use the HTML box or recap instead. A recap's headline and body can disagree on rank or seed: name the poll. |
+| MLB box scores with weather, elapsed time, crowd | [Baseball Almanac](https://www.baseball-almanac.com/) | Specialist, not official. Baseball-Reference refused automated fetches in this pass; the MLB box score (above) is the official check. |
+| Concert setlists, bills, dates | [setlist.fm](https://www.setlist.fm/), [Songkick](https://www.songkick.com/), [JamBase](https://www.jambase.com/), Loudmemories | Community-edited: a reported sequence, not proof of who played. Advance billing is not a performance. |
+| TV audience for a single game | [ESPN Press Room](https://espnpressroom.com/) | Average and peak are different figures; an alternate feed is not added without its scope. |
+
 ## Checked and not usable (terms or access)
 - **Cosm** (Live screening venues in Los Angeles, Dallas, Atlanta and Detroit; Cleveland 2027): its Website Terms of Use (last modified Sept 17, 2025, as indexed) forbid robots, scrapers or any automated collection of its content, and arguably systematic hand-copying, without Cosm's prior written consent. It publishes no API or feed and isn't on Ticketmaster or SeatGeek; Viator and GetYourGuide are authorized resellers (Viator's affiliate API carries films only). Nothing is listed from Cosm until Cosm gives written consent or a feed (Kylie to ask, support@cosm.com). Source: `docs/research/topics/cosm-schedule-access-answer.md` (Oct 14, 2026); the terms text came from a search engine's copy, so check the live page before relying on the wording.
 - **AXS, DICE** (403 to a normal fetch; terms unread), **Insomniac** (terms bar scrapers), **Goldenvoice** (terms text didn't load), **Framework** (no site of its own): checked in build 5, item 1; see `BACKLOG.md`.

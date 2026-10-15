@@ -1664,6 +1664,9 @@ export const VENUES: Record<string, Venue> = {
     location: [-118.2673, 34.043],
     ticketmasterIds: ['KovZpZAEdntA'],
     capacity: [
+      // Kept as reported by the Oct venue review. The arena's own A–Z guide lists 19,079 for basketball
+      // (https://www.cryptoarena.com/plan-your-visit/general-info-faq/a-z-guide); 2025–26 NBA gamebooks
+      // report 18,997 sellouts. Different measures (building vs. saleable), checked Oct 14, 2026.
       { seats: 18910, setup: 'basketball' },
       { seats: 18145, setup: 'hockey' },
     ],
@@ -1776,7 +1779,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pauley Pavilion' }],
     location: [-118.4468, 34.0702],
     ticketmasterIds: ['KovZpZAEkveA'],
-    capacity: [{ seats: 13800, setup: 'basketball', fromYear: 2012, note: 'Since the 2012 renovation (Wikipedia infobox, checked Oct 6, 2026).' }],
+    capacity: [{ seats: 13800, setup: 'basketball', fromYear: 2012, note: "Since the 2012 renovation (Wikipedia infobox, checked Oct 6, 2026). Official: UCLA's 2013–14 men's basketball media guide, https://static.uclabruins.com/pdf/mbkb_14mg_169_194.pdf (checked Oct 14, 2026). A building figure: an announced sellout can reflect a smaller saleable setup." }],
     roof: 'indoor',
   },
   'galen-center': {

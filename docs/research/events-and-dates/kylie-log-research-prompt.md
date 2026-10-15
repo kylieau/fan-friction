@@ -1,5 +1,7 @@
 # Research prompt: a complete research dossier for my event log
 
+Answered Oct 14, 2026 (private, 130 entries). What could go public without revealing the log went to `docs/reference/data-sources.md` (past-event sources), `src/data/venues.ts` (venue notes) and `docs/research/topics/log-stats-measures.md` (Oct 15).
+
 This public file is the reusable research brief. For the independent-model run, use the self-contained packet at `private/kylie-log/kylie-log-research-packet.md`: it includes this brief, the full currently documented log, and the project's existing event research and notes, so the model does not need repository access. Keep the packet and the answer in the ignored `private/kylie-log/` folder; this public repository must not contain the log or its researched attendance history. Ask the model to return its answer as a downloadable Markdown file named `private/kylie-log/kylie-log-research-answer.md`. If the tool cannot create a file, return the Markdown in chat so it can be saved privately. A second model's answer should use `private/kylie-log/kylie-log-research-answer-<model>.md`.
 
 The source export is the inventory for this run. Do not treat the sample log in public project documentation as complete or copy personal attendance details into this prompt or repository. This is research only: it does not approve changes to the app, its fields, its screens, or its formula.
