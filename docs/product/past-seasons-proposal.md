@@ -1,6 +1,13 @@
 # Proposal: past seasons in the catalog (Oct 15, 2026)
 
-Status: proposal, waiting for Kylie's OK. Nothing below is built except step 0.
+**Decided (Kylie, Oct 15, 2026), replacing the plan below where they differ:**
+- Store only **logged dates**, not whole past seasons. Pull a season from the feeds when needed, keep only the dates asked for. Past dates nobody logged stay unloaded; their events can still have pages.
+- Steps 1–3 approved, LA first. Start small; more past dates will come later as she remembers them.
+- Concerts: setlist.fm is fine (terms read first; free key).
+
+**Built (Oct 15):** `scripts/past-dates-load.mjs --metro=<id> --dates-file=<path> --out=<file.sql>`. It reads the MLB and ESPN feeds for those dates (`loadEspnPastDates`, `loadMlbSchedule` with a start date). It keeps only the city's own games and skips hand-seeded dates' events while keeping their results. It writes a SQL file to paste into Supabase, plus a JSON copy. No date list goes in the repo: the input and output live outside it. Windowed catalog reads (old step 2) are dropped for now, because a few hundred rows don't need them. Known gaps: no Sparks feed (WNBA LA isn't in `ESPN_TEAMS`); no past concerts until setlist.fm; dates outside app cities get no read.
+
+The original proposal follows.
 
 ## What she asked for (Kylie, Oct 15, 2026)
 - Every past date should have its events loaded, and a date read verdict where one can be made.

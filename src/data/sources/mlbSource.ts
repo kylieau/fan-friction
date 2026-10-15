@@ -235,9 +235,10 @@ const cache = new Map<string, Promise<CrowdEvent[]>>();
  * The map does not call this: it uses `mlbEvents`, which still returns an
  * empty list when the feed is down.
  */
-export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<CrowdEvent[]> {
+export function loadMlbSchedule(metroId: string, throughDate?: string, fromDate?: LocalDate): Promise<CrowdEvent[]> {
   const tz = METROS[metroId].timeZone;
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
+  // From today, unless a past date is asked for (scripts/past-dates-load.mjs).
+  const today = fromDate ?? new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = throughDate ?? new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
   const calls = [...teamIdsBySport(metroId)].map(([sportId, teamIds]) =>
     fetch(`${API}?sportId=${sportId}&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team,broadcasts(all),probablePitcher`)

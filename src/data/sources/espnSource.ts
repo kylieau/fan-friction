@@ -1092,11 +1092,15 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
 
 const cache = new Map<string, Promise<CrowdEvent[]>>();
 
-async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean): Promise<EspnGame[]> {
+async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean, season?: number): Promise<EspnGame[]> {
   // Default is preseason, seasontype=2 is the regular season, seasontype=3 is the postseason.
   // Soccer is different: the plain schedule lists only matches already played, and the
   // season-type queries come back empty. Upcoming fixtures need `fixture=true`.
-  const queries = ['', '?seasontype=2', '?seasontype=3', ...(t.path.startsWith('soccer/') ? ['?fixture=true'] : [])];
+  // A past season is asked for by year: the year it ends for winter sports, the calendar year otherwise.
+  const queries =
+    season === undefined
+      ? ['', '?seasontype=2', '?seasontype=3', ...(t.path.startsWith('soccer/') ? ['?fixture=true'] : [])]
+      : [`?season=${season}`, `?season=${season}&seasontype=2`, `?season=${season}&seasontype=3`];
   const urls = queries.map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
   const lists = await Promise.all(
     urls.map(async (u) => {
@@ -1194,6 +1198,34 @@ async function playClockSpan(path: string, gameId: string): Promise<{ minutes: n
   }
 }
 
+/** The result row for a finished game, or null when it isn't final or a score is missing. */
+function finalOf(g: EspnGame, event: CrowdEvent, metroId: string, capturedAt: string): GameResult | null {
+  const c = g.competitions[0];
+  // Soccer says STATUS_FULL_TIME; everything else says STATUS_FINAL.
+  if (!/^STATUS_(FINAL|FULL_TIME)/.test(c?.status?.type?.name ?? '')) return null;
+  const home = c.competitors.find((x) => x.homeAway === 'home');
+  const away = c.competitors.find((x) => x.homeAway === 'away');
+  const hs = home ? scoreOf(home) : undefined;
+  const as = away ? scoreOf(away) : undefined;
+  if (!home || !away || hs == null || as == null) return null;
+  const detail = c.status?.type?.shortDetail ?? '';
+  const note = /OT|SO|\/\d/.test(detail) ? detail.replace(/^Final/i, '').replace(/^\//, '').trim() : undefined;
+  return {
+    eventId: event.id,
+    metroId,
+    date: event.date,
+    sourceId: 'espn',
+    status: 'final',
+    ...(event.place.type === 'venue' ? { venueId: event.place.venueId } : {}),
+    ...(event.teams ? { homeTeamId: event.teams.home } : {}),
+    home: { name: nameOf(home.team), score: hs },
+    away: { name: nameOf(away.team), score: as },
+    ...(typeof c.attendance === 'number' && c.attendance > 0 ? { attendance: c.attendance } : {}),
+    ...(note ? { note } : {}),
+    capturedAt,
+  };
+}
+
 /**
  * Finished home games between two dates, with the score, announced crowd and
  * how long the game ran. For the nightly results pass. Throws when a team
@@ -1205,35 +1237,12 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
   const lists = await Promise.all(
     ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
       (await scheduleFor(t, true)).flatMap((g): GameResult[] => {
-        const c = g.competitions[0];
-        // Soccer says STATUS_FULL_TIME; everything else says STATUS_FINAL.
-        if (!/^STATUS_(FINAL|FULL_TIME)/.test(c?.status?.type?.name ?? '')) return [];
         const event = toEvent(g, t);
         if (!event || event.date < from || event.date > through) return [];
-        const home = c.competitors.find((x) => x.homeAway === 'home');
-        const away = c.competitors.find((x) => x.homeAway === 'away');
-        const hs = home ? scoreOf(home) : undefined;
-        const as = away ? scoreOf(away) : undefined;
-        if (!home || !away || hs == null || as == null) return [];
-        const detail = c.status?.type?.shortDetail ?? '';
-        const note = /OT|SO|\/\d/.test(detail) ? detail.replace(/^Final/i, '').replace(/^\//, '').trim() : undefined;
+        const row = finalOf(g, event, metroId, capturedAt);
+        if (!row) return [];
         spans.set(event.id, playClockSpan(t.path, g.id));
-        return [
-          {
-            eventId: event.id,
-            metroId,
-            date: event.date,
-            sourceId: 'espn',
-            status: 'final',
-            ...(event.place.type === 'venue' ? { venueId: event.place.venueId } : {}),
-            ...(event.teams ? { homeTeamId: event.teams.home } : {}),
-            home: { name: nameOf(home.team), score: hs },
-            away: { name: nameOf(away.team), score: as },
-            ...(typeof c.attendance === 'number' && c.attendance > 0 ? { attendance: c.attendance } : {}),
-            ...(note ? { note } : {}),
-            capturedAt,
-          },
-        ];
+        return [row];
       }),
     ),
   );
@@ -1256,6 +1265,47 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
  */
 export function loadEspnSchedule(metroId: string): Promise<CrowdEvent[]> {
   return upcomingFor(metroId, true);
+}
+
+/**
+ * Home games on given past dates, with their results: for dates before the
+ * nightly archive began (scripts/past-dates-load.mjs). Each date's year and the
+ * next are asked for, which covers seasons named for the year they end.
+ * Throws when a team schedule can't be read.
+ */
+export async function loadEspnPastDates(metroId: string, dates: LocalDate[]): Promise<{ events: CrowdEvent[]; results: GameResult[] }> {
+  const want = new Set(dates);
+  const seasons = [...new Set(dates.flatMap((d) => [Number(d.slice(0, 4)), Number(d.slice(0, 4)) + 1]))].sort();
+  const capturedAt = new Date().toISOString();
+  const events = new Map<string, CrowdEvent>();
+  const results = new Map<string, GameResult>();
+  const spans = new Map<string, Promise<{ minutes: number; startedAt: LocalTime } | undefined>>();
+  // One team-season at a time: a decade of dates is hundreds of schedule reads, and all at once fails.
+  for (const t of ESPN_TEAMS.filter((x) => x.metroId === metroId)) {
+    for (const season of seasons) {
+      const games = await scheduleFor(t, true, season);
+      // Each season is read on its own, so its first home game is that season's opener.
+      const openerId = homeOpenerId(games, t.espnId);
+      for (const g of games) {
+        const event = toEvent(g, t);
+        if (!event || !want.has(event.date) || events.has(event.id)) continue;
+        events.set(event.id, g.id === openerId ? { ...event, homeOpener: true } : event);
+        const row = finalOf(g, event, metroId, capturedAt);
+        if (row) {
+          results.set(event.id, row);
+          spans.set(event.id, playClockSpan(t.path, g.id));
+        }
+      }
+    }
+  }
+  for (const row of results.values()) {
+    const span = await spans.get(row.eventId);
+    if (span) {
+      row.duration = { minutes: span.minutes, kind: 'estimated' };
+      row.startedAt = span.startedAt;
+    }
+  }
+  return { events: [...events.values()], results: [...results.values()] };
 }
 
 /** One team's games this season, home and away, with scores where a game is final. */
