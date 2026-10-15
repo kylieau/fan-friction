@@ -63,7 +63,7 @@ import { crowdPoints, showsOnMap } from '../map/crowdPoints';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
-import { ArrowRight, ChevronDown } from '../components/Icons';
+import { ArrowRight } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
@@ -74,6 +74,7 @@ import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
 import { TitleText } from '../components/TitleText';
 import { eventFromGame, eventFromStub, gameRefFromId, getTeamSchedule, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
+import { BackLink } from '../components/BackLink';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -209,9 +210,7 @@ export function EventScreen() {
     if (coldPending) return <div className="screen page" />;
     return (
       <div className="screen page">
-        <MapBack date={date} className="back-link">
-          <ChevronDown /> {shortLocalDate(date)}
-        </MapBack>
+        <BackLink to={datePath(date, requestedMetro ?? DEFAULT_METRO.id)} />
         <h1 className="page-title">Event not found</h1>
         <MapBack date={date} className="gold-button">
           See the map
@@ -254,9 +253,8 @@ export function EventScreen() {
 
   return (
     <div className="screen page event-page">
-      <MapBack date={date} metroId={e.metroId} eventId={e.id} className="back-link">
-        <ChevronDown /> {shortLocalDate(date)}
-      </MapBack>
+      {/* Back to wherever you came from (Faves, a team page, the map, Stubs); a cold open falls back to the date. */}
+      <BackLink to={datePath(date, e.metroId, e.id)} />
 
       <header className="event-head">
         <h1 className="page-title">
@@ -765,19 +763,8 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
   const facts: { label: string; value: string }[] = sidesScored.length ? [{ label: 'Outcome', value: sidesScored.map((x) => `${x.name} ${x.pts}`).join(', ') }] : [];
   return (
     <div className="screen page event-page">
-      {/* Back where you came from; after a reload, the team's page or My Stubs (its date has no map to open). */}
-      <Link
-        to={link ? `/favorites/team/${link.teamId}` : '/stubs'}
-        className="back-link"
-        onClick={(ev) => {
-          if (((window.history.state as { idx?: number } | null)?.idx ?? 0) > 0) {
-            ev.preventDefault();
-            navigate(-1);
-          }
-        }}
-      >
-        <ChevronDown /> {shortLocalDate(event.date)}
-      </Link>
+      {/* Back where you came from; on a cold open, the team's page or My Stubs (its date has no map to open). */}
+      <BackLink to={link ? `/favorites/team/${link.teamId}` : '/stubs'} />
       <header className="event-head">
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(event).key} size={18} className="title-type-icon" />

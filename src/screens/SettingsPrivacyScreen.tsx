@@ -1,7 +1,7 @@
 import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronDown, GlobeIcon, LockMark, PeopleIcon } from '../components/Icons';
+import { GlobeIcon, LockMark, PeopleIcon } from '../components/Icons';
 import { getAccount, getMyProfile, getPersonalLog, setPastStubsVisibility, setStubDefault, subscribeAccount, subscribePersonalLog, updateMyProfile, type StubVisibility, type Visibility } from '../data';
+import { BackLink } from '../components/BackLink';
 
 /** The three levels (Kylie, Oct 14, answer E): the profile switch's values, relabeled. */
 export const VISIBILITY_WORDS: Record<Visibility, string> = { anyone: 'Anyone', approved: 'Friends', only_me: 'Private' };
@@ -55,9 +55,7 @@ export function SettingsPrivacyScreen() {
 
   return (
     <div className="screen page">
-      <Link to="/you/settings" className="back-link">
-        <ChevronDown /> Settings
-      </Link>
+      <BackLink to="/you/settings" label="Settings" />
       <h1 className="page-title">Privacy</h1>
       {account ? (
         <div className="settings">

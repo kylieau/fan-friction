@@ -2,11 +2,11 @@ import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { AccountRow } from '../components/AccountBlock';
 import { ProfileForm } from './ProfileEditScreen';
-import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { blockedPeople, crowdRangeLabel, crowdRangeOf, favoriteCitiesOf, getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, unblockUser, updateMyProfile, type Profile, type Visibility } from '../data';
+import { BackLink } from '../components/BackLink';
 
 /**
  * Behind the gear on You, one list (build 5, item 9; board settings-full, lean): Account, Location, Privacy, then the
@@ -74,9 +74,7 @@ export function SettingsScreen() {
 
   return (
     <div className="screen page">
-      <Link to="/you" className="back-link">
-        <ChevronDown /> You
-      </Link>
+      <BackLink to="/you" label="You" />
       <h1 className="page-title">Settings</h1>
 
       {account && (

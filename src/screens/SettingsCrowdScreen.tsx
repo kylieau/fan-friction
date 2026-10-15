@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronDown } from '../components/Icons';
 import { CROWD_RANGE_TOP, crowdRangeLabel, crowdRangeOf, getPersonalLog, setCrowdRange, subscribePersonalLog, type CrowdRange } from '../data';
+import { BackLink } from '../components/BackLink';
 
 const STOP = 5000;
 const LABELS = [0, 20000, 40000, 60000, CROWD_RANGE_TOP];
@@ -57,9 +56,7 @@ export function SettingsCrowdScreen() {
 
   return (
     <div className="screen page">
-      <Link to="/you/settings" className="back-link">
-        <ChevronDown /> Settings
-      </Link>
+      <BackLink to="/you/settings" label="Settings" />
       <h1 className="page-title">Crowd size</h1>
       <div className="settings">
         <div className="settings-heading">Crowd size</div>

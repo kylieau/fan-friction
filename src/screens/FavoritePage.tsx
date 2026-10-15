@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ChevronDown } from '../components/Icons';
 import { CrowdFigure, EventFrictionPill } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
@@ -54,6 +53,7 @@ import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
+import { BackLink } from '../components/BackLink';
 
 /** How many schedule rows show before "See all". */
 const ROWS = 5;
@@ -206,9 +206,7 @@ export function FavoritePage() {
 
   return (
     <div className="screen page">
-      <Link to="/following" className="back-link">
-        <ChevronDown /> Following
-      </Link>
+      <BackLink to="/following" />
 
       <div className="profile-head">
         <span className={`fav-mark fav-big fav-${fav.kind}`} aria-hidden>

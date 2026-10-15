@@ -1,6 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { ChevronDown } from '../components/Icons';
+import { useNavigate } from 'react-router-dom';
 import {
   getAccount,
   getMyProfile,
@@ -9,6 +8,7 @@ import {
   suggestHandle,
   updateMyProfile,
 } from '../data';
+import { BackLink } from '../components/BackLink';
 
 /** Display name and handle. Sits inside Settings; who sees your stubs moved to Settings › Privacy (build 5, item 9). */
 export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
@@ -107,9 +107,7 @@ export function ProfileEditScreen() {
   const navigate = useNavigate();
   return (
     <div className="screen page">
-      <Link to="/you/settings" className="back-link">
-        <ChevronDown /> Settings
-      </Link>
+      <BackLink to="/you/settings" label="Settings" />
       <h1 className="page-title">Edit profile</h1>
       <ProfileForm onSaved={() => navigate('/you/settings', { replace: true })} />
     </div>

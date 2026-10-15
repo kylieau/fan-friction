@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import {
   deleteTag,
   getPersonalLog,
@@ -18,10 +18,10 @@ import {
 } from '../data';
 import { DEFAULT_METRO } from '../config/metros';
 import { tagPath } from '../lib/view';
-import { ChevronDown } from '../components/Icons';
 import { PlanRow, StubRow } from '../components/StubRows';
 import { TagChip } from '../components/TagChip';
 import { ListBand } from '../components/ListBand';
+import { BackLink } from '../components/BackLink';
 
 /**
  * One of your tags (build notes 4, "Stub tags" 4; T02, T07): the tag, "5 stubs · 4 attended · 1 watched",
@@ -77,9 +77,7 @@ export function TagScreen() {
 
   return (
     <div className="screen page tag-page">
-      <Link to="/stubs" className="back-link">
-        <ChevronDown /> Stubs
-      </Link>
+      <BackLink to="/stubs" />
       <div className="tag-page-head">
         <h1 className="tag-page-title">
           <TagChip tag={tag} size="sheet" />

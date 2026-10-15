@@ -27,6 +27,7 @@ import { listTitle } from '../lib/eventTitle';
 import { loggedDateLabel, longLocalDate, shortLocalDate } from '../lib/dates';
 import { comparePath, datePath, type NightKey, parseNightKey } from '../lib/view';
 import { TitleText } from '../components/TitleText';
+import { BackLink } from '../components/BackLink';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -43,9 +44,7 @@ export function CompareScreen() {
   if (!a) {
     return (
       <div className="screen page">
-        <Link to="/stubs" className="back-link">
-          <ChevronDown /> Stubs
-        </Link>
+        <BackLink to="/stubs" />
         <h1 className="page-title">Compare</h1>
         <p className="you-fine">Open an event you attended and tap Compare with…</p>
       </div>
@@ -85,9 +84,7 @@ function Picker({ a }: { a: NightKey }) {
   const back = datePath(a.date, a.metroId, a.eventId);
   return (
     <div className="screen page">
-      <Link to={back} className="back-link">
-        <ChevronDown /> {shortLocalDate(a.date)}
-      </Link>
+      <BackLink to={back} />
       <h1 className="page-title">Compare with…</h1>
       {entries.length > 0 && (
         <section className="you-block" aria-label="Your events">

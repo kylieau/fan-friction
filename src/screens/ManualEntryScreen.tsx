@@ -22,10 +22,10 @@ import { FactList } from '../components/FactList';
 import { StatusLine } from '../components/ActivityLines';
 import { TagChip } from '../components/TagChip';
 import { TagsPanel } from '../components/TagsPanel';
-import { ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { loggedDateLabel } from '../lib/dates';
 import { TitleText } from '../components/TitleText';
+import { BackLink } from '../components/BackLink';
 
 /**
  * An event typed in by hand: no catalog event behind it, so no crowd or
@@ -55,9 +55,7 @@ function ManualPlanPage({ planId }: { planId: string }) {
   const sub = [loggedDateLabel({ sort: plan.date, label: '', precision: 'day' }), plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ');
   return (
     <div className="screen page event-page">
-      <Link to="/stubs" className="back-link">
-        <ChevronDown /> Stubs
-      </Link>
+      <BackLink to="/stubs" />
       <header className="event-head">
         <h1 className="page-title"><TitleText text={plan.title} /></h1>
         <div className="event-sub">{sub}</div>
@@ -133,9 +131,7 @@ function ManualEntryPage() {
   if (!entry) {
     return (
       <div className="screen page">
-        <Link to="/stubs" className="back-link">
-          <ChevronDown /> Stubs
-        </Link>
+        <BackLink to="/stubs" />
         <h1 className="page-title">Not in your log</h1>
       </div>
     );
@@ -149,9 +145,7 @@ function ManualEntryPage() {
 
   return (
     <div className="screen page event-page">
-      <Link to="/stubs" className="back-link">
-        <ChevronDown /> Stubs
-      </Link>
+      <BackLink to="/stubs" />
 
       <header className="event-head">
         <h1 className="page-title"><TitleText text={entry.title} /></h1>

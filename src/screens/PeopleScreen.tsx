@@ -1,6 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import { ChevronDown } from '../components/Icons';
 import { backFrom } from '../lib/view';
 import { SearchIcon } from '../components/Icons';
 import {
@@ -21,6 +20,7 @@ import {
   type PersonRow,
   type Profile,
 } from '../data';
+import { BackLink } from '../components/BackLink';
 
 type Chip = 'all' | 'mutual' | 'followers' | 'following';
 
@@ -117,9 +117,7 @@ export function PeopleScreen() {
 
   return (
     <div className="screen page">
-      <Link to="/you" className="back-link">
-        <ChevronDown /> You
-      </Link>
+      <BackLink to="/you" />
       <h1 className="page-title">People</h1>
       {/* The one line that says what access means (privacy 10). */}
       <p className="you-fine">You see their logged events and plans once they approve.</p>

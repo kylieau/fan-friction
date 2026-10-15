@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
 import { CityList } from '../components/HomePicker';
-import { ChevronDown } from '../components/Icons';
+import { BackLink } from '../components/BackLink';
 
 /**
  * Settings › Home & cities (build 5, items 8–9; board favorite-cities c): the first-open city list as a page.
@@ -9,9 +8,7 @@ import { ChevronDown } from '../components/Icons';
 export function SettingsCitiesScreen() {
   return (
     <div className="screen page">
-      <Link to="/you/settings" className="back-link">
-        <ChevronDown /> Settings
-      </Link>
+      <BackLink to="/you/settings" label="Settings" />
       <h1 className="page-title">Home &amp; cities</h1>
       <div className="settings">
         <div className="settings-heading">Home</div>

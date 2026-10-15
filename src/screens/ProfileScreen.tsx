@@ -1,6 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
 import { HeaviestStat, Stat, heaviestEntry } from './YouScreen';
@@ -32,6 +31,7 @@ import { datePath } from '../lib/view';
 import { loggedDateLabel } from '../lib/dates';
 import { eventPath, type BackTo } from '../lib/view';
 import { TitleText } from '../components/TitleText';
+import { BackLink } from '../components/BackLink';
 
 /**
  * Someone's page as others see it: name, three stats, and the entries they allow
@@ -92,9 +92,7 @@ export function ProfileScreen() {
   if (!profile) {
     return (
       <div className="screen page">
-        <Link to={back.to} className="back-link">
-          <ChevronDown /> {back.label}
-        </Link>
+        <BackLink to={back.to} label={back.label} />
         <h1 className="page-title">No one here</h1>
         <p className="you-fine">There's no profile at /p/{handle}. Check the link.</p>
       </div>
@@ -126,9 +124,7 @@ export function ProfileScreen() {
 
   return (
     <div className="screen page">
-      <Link to={back.to} className="back-link">
-        <ChevronDown /> {back.label}
-      </Link>
+      <BackLink to={back.to} label={back.label} />
 
       <div className="profile-head">
         {/* The Google picture is stored on the profile but not shown (Kylie, Oct 5): a

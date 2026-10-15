@@ -24,12 +24,13 @@ import {
   type SportsLevel,
   venueNamesIn,
 } from '../data';
-import { ChevronDown, SearchIcon } from '../components/Icons';
+import { SearchIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { getHomeId } from '../lib/homeCity';
 import { longLocalDate } from '../lib/dates';
 import { getPref, setPref } from '../lib/prefs';
 import { datePath, entryPath } from '../lib/view';
+import { BackLink } from '../components/BackLink';
 
 // The type words (build 5, item 11): Concert (N02), Watch party (N01), and "Event" in place of "Special event" (N30).
 // "Event" stays stored as `special`; its title goes through the same keyword pass as the feeds (Theatre, Comedy…).
@@ -76,9 +77,7 @@ export function AddEntryScreen() {
 
   return (
     <div className="screen page add-page">
-      <Link to="/stubs" className="back-link">
-        <ChevronDown /> Stubs
-      </Link>
+      <BackLink to="/stubs" />
       <h1 className="page-title">New stub</h1>
       {firstVisit && <p className="you-fine">Saved to your Stubs</p>}
 
