@@ -24,6 +24,7 @@ import {
   type Favorite,
   type FeedItem,
   type PersonalLog,
+  isGameEventId,
 } from '../data';
 import { ACTIVITY_WORDS, activityGroups, activityOrder, feedSentence, type ActivityGroups } from '../lib/activity';
 import { shortLocalDate } from '../lib/dates';
@@ -233,7 +234,7 @@ function ByEvent({ items, example, ratings, log, onFeed }: { items: FeedItem[]; 
         {group.example ? (
           <div className="feed-group-head">{head}</div>
         ) : (
-          <Link to={group.eventId && group.metroId ? eventPath(group.eventId, group.metroId) : datePath(group.date, group.metroId ?? DEFAULT_METRO.id)} className="feed-group-head">
+          <Link to={group.eventId && group.metroId ? eventPath(group.eventId, group.metroId) : datePath(group.date, group.metroId ?? DEFAULT_METRO.id)} state={friendStubState(group.eventId, group)} className="feed-group-head">
             {head}
           </Link>
         )}
@@ -314,7 +315,7 @@ function Feed({ items, example }: { items: FeedItem[]; example: boolean }) {
             }
             return (
               <li key={key}>
-                <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} state={{ back }} className="feed-flat-row">
+                <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} state={{ back, ...friendStubState(item.eventId, item) }} className="feed-flat-row">
                   {text}
                 </Link>
               </li>
@@ -370,9 +371,15 @@ export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMa
   if (item.example) return <li className="log-row">{body}</li>;
   return (
     <li>
-      <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} className="log-row">
+      <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} state={friendStubState(item.eventId, item)} className="log-row">
         {body}
       </Link>
     </li>
   );
+}
+
+/** A friend's line on a game the app holds no event for: what the event page needs to build it (Kylie, Oct 15). */
+function friendStubState(eventId: string | undefined, line: { title: string; date: string; venue?: string; metroId?: string; entry?: Entry }) {
+  if (!isGameEventId(eventId)) return undefined;
+  return { stub: { title: line.title, date: line.date, venue: line.venue, metroId: line.metroId, sport: line.entry?.sport, inMetro: line.entry?.inMetro } };
 }

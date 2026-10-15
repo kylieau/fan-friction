@@ -74,7 +74,7 @@ import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
 import { TitleText } from '../components/TitleText';
-import { eventFromGame, eventFromStub, sameGame, TEAMS, type GameLink } from '../data';
+import { eventFromGame, eventFromStub, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -93,6 +93,8 @@ export function EventScreen() {
   // A team page's schedule row hands over its game (Kylie, Oct 15: every game can be stubbed, however you got here).
   const location = useLocation();
   const link = (location.state as { game?: GameLink } | null)?.game;
+  // A friend's line on such a game hands over what it knows (title, date, venue), since you hold no row for it.
+  const friendStub = (location.state as { stub?: StubShape } | null)?.stub;
 
   useEffect(() => {
     let current = true;
@@ -184,7 +186,7 @@ export function EventScreen() {
   if (!me) {
     // No catalog event: a schedule game, or a stub saved from one, still gets its page and its Stub it.
     const saved = log.added.find((entry) => entry.eventId === id) ?? log.plans.find((plan) => plan.eventId === id);
-    const game = link ? eventFromGame(link) : saved ? eventFromStub(id, saved) : null;
+    const game = link ? eventFromGame(link) : saved ? eventFromStub(id, stubShapeOf(saved)) : friendStub ? eventFromStub(id, friendStub) : null;
     if (game && game.id === id) return <GameOnlyPage event={game} link={link} />;
     return (
       <div className="screen page">
@@ -745,9 +747,19 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
   const facts: { label: string; value: string }[] = sidesScored.length ? [{ label: 'Outcome', value: sidesScored.map((x) => `${x.name} ${x.pts}`).join(', ') }] : [];
   return (
     <div className="screen page event-page">
-      <button type="button" className="back-link link-button" onClick={() => navigate(-1)}>
+      {/* Back where you came from; after a reload, the team's page or My Stubs (its date has no map to open). */}
+      <Link
+        to={link ? `/favorites/team/${link.teamId}` : '/stubs'}
+        className="back-link"
+        onClick={(ev) => {
+          if (((window.history.state as { idx?: number } | null)?.idx ?? 0) > 0) {
+            ev.preventDefault();
+            navigate(-1);
+          }
+        }}
+      >
         <ChevronDown /> {shortLocalDate(event.date)}
-      </button>
+      </Link>
       <header className="event-head">
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(event).key} size={18} className="title-type-icon" />

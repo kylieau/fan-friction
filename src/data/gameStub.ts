@@ -97,27 +97,39 @@ export function eventFromGame(link: GameLink): CrowdEvent | null {
   };
 }
 
-/** The same page rebuilt from a saved stub or plan, when the catalog never had the game. */
-export function eventFromStub(id: string, row: Entry | Plan): CrowdEvent | null {
-  const entry = 'when' in row ? row : null;
-  const date = entry ? entry.when.sort : (row as Plan).date;
+/** What a stub's page needs when the catalog never had the game: your own saved row, or a friend's line. */
+export interface StubShape {
+  title: string;
+  date: string;
+  venue?: string;
+  metroId?: string;
+  sport?: string;
+  inMetro?: boolean;
+}
+
+export function stubShapeOf(row: Entry | Plan): StubShape {
+  if ('when' in row) return { title: row.title, date: row.when.sort, venue: row.venue, metroId: row.metroId, sport: row.sport, inMetro: row.inMetro };
+  return { title: row.title, date: row.date, venue: row.venue, metroId: row.metroId };
+}
+
+/** The same page rebuilt from a stub or a friend's line (its name kept as saved), when the catalog never had the game. */
+export function eventFromStub(id: string, row: StubShape): CrowdEvent {
   const metroId = row.metroId ?? 'la';
-  const venueName = entry ? entry.venue : (row as Plan).venue;
-  const sport = (entry?.sport ?? '').toLowerCase();
-  const venue = venueName ? Object.values(VENUES).find((v) => v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === venueName.toLowerCase())) : undefined;
+  const key = (row.venue ?? '').toLowerCase();
+  const venue = key ? Object.values(VENUES).find((v) => v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === key)) : undefined;
   return {
     id,
     metroId,
-    date,
+    date: row.date,
     start: null,
     kind: 'game',
     title: row.title,
-    place: venue ? { type: 'venue', venueId: venue.id } : { type: 'point', location: METROS[metroId]?.center ?? [0, 0], name: venueName ?? '' },
-    audience: { domain: 'sports', sport: sport || 'sports' },
+    place: venue ? { type: 'venue', venueId: venue.id } : { type: 'point', location: METROS[metroId]?.center ?? [0, 0], name: row.venue ?? '' },
+    audience: { domain: 'sports', sport: (row.sport ?? '').toLowerCase() || 'sports' },
     crowd: [],
     sourceId: 'team-schedule',
     titleFixed: true,
-    ...(entry?.inMetro === false ? { outsideMetro: true } : {}),
+    ...(row.inMetro === false ? { outsideMetro: true } : {}),
   };
 }
 

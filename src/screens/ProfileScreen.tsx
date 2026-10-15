@@ -24,6 +24,8 @@ import {
   type PlanCard,
   type Profile,
   unfollow,
+  isGameEventId,
+  stubShapeOf,
 } from '../data';
 import { shortLocalDate } from '../lib/dates';
 import { datePath } from '../lib/view';
@@ -234,7 +236,11 @@ export function ProfileScreen() {
           <ul className="log-list">
             {plans.map((plan) => (
               <li key={plan.id}>
-                <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="log-row">
+                <Link
+                  to={isGameEventId(plan.eventId) ? eventPath(plan.eventId!, plan.metroId) : datePath(plan.date, plan.metroId, plan.eventId)}
+                  state={isGameEventId(plan.eventId) ? { stub: { title: plan.title, date: plan.date, venue: plan.venue, metroId: plan.metroId } } : undefined}
+                  className="log-row"
+                >
                   <span className="log-main">
                     <span className="log-title"><TitleText text={plan.title} /></span>
                     <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name, plan.watch ? 'Watching' : null].filter(Boolean).join(' · ')}</span>
@@ -291,7 +297,7 @@ function ProfileEntryRow({ entry, rating }: { entry: Entry; rating: number | nul
   );
   if (entry.eventId) {
     return (
-      <Link to={eventPath(entry.eventId, entry.metroId ?? DEFAULT_METRO.id)} className="log-row">
+      <Link to={eventPath(entry.eventId, entry.metroId ?? DEFAULT_METRO.id)} state={isGameEventId(entry.eventId) ? { stub: stubShapeOf(entry) } : undefined} className="log-row">
         {body}
       </Link>
     );
