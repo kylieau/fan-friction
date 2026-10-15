@@ -28,13 +28,13 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
   team(`${school}-${code}`, `${schoolName} ${label}`, `${school.toUpperCase()} ${code.toUpperCase()}`, league, sport, 'la', school.toUpperCase(), aliases);
 
 /**
- * The mark on a favorite with no logo. The team's abbreviation when no other team in
- * its city uses it; otherwise the first three letters of its nickname, so the Clippers
- * and Chargers (both LAC), or Chicago's eight teams (all CHI), tell apart (C013).
+ * The mark on a favorite with no logo: the team's own abbreviation, even when another team
+ * in its city shares it (Kylie, Oct 15: the Clippers and Chargers are both LAC; the sport icon
+ * and colors tell them apart). Replaces C013's nickname letters ("CLI"). With no abbreviation,
+ * the first three letters of the nickname.
  */
 export function teamBadge(team: Team): string {
-  const abbr = team.abbr;
-  if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
+  if (team.abbr) return team.abbr;
   const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|san antonio|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|portland|psu|detroit|michigan|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }

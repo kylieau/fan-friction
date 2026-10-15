@@ -229,3 +229,6 @@ Plan: `docs/build-4/claude-build-plan-oct13.md`. Boards: `docs/build-4/mockups/c
 - **Titles take at most two lines;** a long venue gives way to the badges.
 - **The time sits on the title's line,** top-aligned, on every list (measured within 0.5 px on the List, the Map sheet, "Fighting today", Home and the date page); "Fighting today" and Home had centered it on the whole row.
 - **Left on purpose (a different right edge):** the event page header and the tapped-chip card (the pill starts "Swamped by Kings"), Stubs rows and Faves rows (the right edge is the read box or the Save button).
+
+## Oct 15, 2026 (Kylie's answers after build 5)
+- **Team badges use the team's own code** (Kylie, Oct 15): the Clippers and the Chargers are both LAC, Chicago's teams CHI; the sport icon and colors tell them apart. Replaces the nickname letters ("CLI") from C013.
