@@ -43,6 +43,7 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   108: { metroId: 'la', teamId: 'angels' },
   135: { metroId: 'san-diego', teamId: 'padres' },
   136: { metroId: 'seattle', teamId: 'mariners' },
+  116: { metroId: 'detroit', teamId: 'tigers' },
   147: { metroId: 'new-york', teamId: 'yankees' },
   121: { metroId: 'new-york', teamId: 'mets' },
   144: { metroId: 'atlanta', teamId: 'braves' },
@@ -77,7 +78,7 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   510: { metroId: 'san-antonio', teamId: 'san-antonio-missions', sportId: 12, venueId: 'wolff-stadium' },
   561: { metroId: 'salt-lake-city', teamId: 'salt-lake-bees', sportId: 11, venueId: 'ballpark-at-america-first-square' },
 };
-const MLB_VENUES: Record<number, string> = { 14: 'rogers-centre', 3: 'fenway-park', 31: 'pnc-park', 3309: 'nationals-park', 2832: 'prince-georges-stadium', 2681: 'citizens-bank-park', 5: 'progressive-field', 2759: 'classic-auto-group-park', 15: 'chase-field', 4169: 'loandepot-park', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 2529: 'sutter-health-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium', 5355: 'las-vegas-ballpark', 7: 'kauffman-stadium', 2392: 'daikin-park', 5421: 'constellation-field', 3312: 'target-field', 5472: 'chs-field', 6135: 'ballpark-at-america-first-square', 2858: 'victory-field', 2818: 'wolff-stadium', 7256: 'hillsboro-hops-ballpark', 4429: 'hillsboro-ballpark', 2541: 'durham-bulls-athletic-park', 2889: 'busch-stadium', 19: 'coors-field' };
+const MLB_VENUES: Record<number, string> = { 14: 'rogers-centre', 3: 'fenway-park', 31: 'pnc-park', 3309: 'nationals-park', 2832: 'prince-georges-stadium', 2681: 'citizens-bank-park', 5: 'progressive-field', 2759: 'classic-auto-group-park', 15: 'chase-field', 4169: 'loandepot-park', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 2529: 'sutter-health-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium', 5355: 'las-vegas-ballpark', 7: 'kauffman-stadium', 2392: 'daikin-park', 5421: 'constellation-field', 3312: 'target-field', 5472: 'chs-field', 6135: 'ballpark-at-america-first-square', 2858: 'victory-field', 2818: 'wolff-stadium', 7256: 'hillsboro-hops-ballpark', 4429: 'hillsboro-ballpark', 2541: 'durham-bulls-athletic-park', 2889: 'busch-stadium', 19: 'coors-field', 2394: 'comerica-park' };
 /** The feed's team ids for a metro, grouped by sport id (one schedule call per sport). */
 function teamIdsBySport(metroId: string): Map<number, string[]> {
   const out = new Map<number, string[]>();
@@ -226,6 +227,24 @@ export async function mlbTeamSchedule(teamId: string): Promise<TeamGame[] | null
       ];
     })
     .sort((a, b) => (a.date + (a.start ?? '99:99')).localeCompare(b.date + (b.start ?? '99:99')));
+}
+
+/** The dates of a club's home games in its own city over past seasons (scripts/past-dates-load.mjs --teams). Null for a club this feed doesn't carry. */
+export async function mlbHomeDates(teamId: string, seasons: number[]): Promise<LocalDate[] | null> {
+  const entry = Object.entries(MLB_TEAMS).find(([, t]) => t.teamId === teamId);
+  if (!entry) return null;
+  const [mlbId, t] = entry;
+  const dates = new Set<LocalDate>();
+  for (const season of seasons) {
+    const r = await fetch(`${API}?sportId=${t.sportId ?? 1}&teamId=${mlbId}&season=${season}&gameType=S,R,F,D,L,W&hydrate=team`);
+    if (!r.ok) throw new Error(`MLB schedule for ${teamId} ${season} answered ${r.status}`);
+    const j = (await r.json()) as { dates?: { games: MlbGame[] }[] };
+    for (const g of (j.dates ?? []).flatMap((d) => d.games)) {
+      const event = toEvent(g, t.metroId);
+      if (event?.teams?.home === teamId) dates.add(event.date);
+    }
+  }
+  return [...dates].sort();
 }
 
 const cache = new Map<string, Promise<CrowdEvent[]>>();

@@ -169,19 +169,8 @@ try {
   }
   counts.schedule_snapshots = await upsert('schedule_snapshots', snapshots, 'metro_id,captured_on,event_id');
 
-  // 5. Past attendance and expected draws (change rarely; cheap to upsert every night).
-  // One row per team per date; a doubleheader is two games on that row.
-  const byTeamDate = new Map();
-  for (const f of await jsonFiles(path.join(root, 'data', 'attendance', metroId))) {
-    const parsed = JSON.parse(await readFile(path.join(root, 'data', 'attendance', metroId, f), 'utf8'));
-    for (const g of parsed.games ?? []) {
-      const k = `${parsed.teamId}|${g.date}`;
-      if (!byTeamDate.has(k)) byTeamDate.set(k, { metro_id: metroId, team_id: parsed.teamId, date: g.date, data: { games: [] } });
-      byTeamDate.get(k).data.games.push(g);
-    }
-  }
-  const attendance = [...byTeamDate.values()];
-  counts.attendance = await upsert('attendance', attendance, 'metro_id,team_id,date');
+  // 5. Expected draws (change rarely; cheap to upsert every night). The past games behind them stay in
+  // data/attendance/ in the repo; the database copy was never read and was dropped (Kylie, Oct 15, 2026; migration 0029).
   // Keyed by building since Oct 7, 2026 (supabase/migrations/0009). Until that SQL is run
   // the table has no venue_id: skip it and say so; the app falls back to the built-in rows.
   // The city's rows are replaced, not merged, so a bucket that no longer has 3 games goes away.

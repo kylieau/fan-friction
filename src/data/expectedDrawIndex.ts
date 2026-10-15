@@ -25439,6 +25439,114 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 12189,
+    "low": 11142,
+    "high": 13666,
+    "games": 40,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 12192,
+    "low": 10828,
+    "high": 13570,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 11050,
+    "low": 10836,
+    "high": 11254,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 12939,
+    "low": 12305,
+    "high": 16200,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 11862,
+    "low": 10753,
+    "high": 12911,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12206,
+    "low": 11836,
+    "high": 12759,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 12218,
+    "low": 11535,
+    "high": 14804,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 12375,
+    "low": 11179,
+    "high": 14653,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 12218,
+    "low": 12007,
+    "high": 13979,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "la",
     "teamId": "ucla-football",
     "venueId": "rose-bowl",
     "dayClass": "all",
@@ -58235,6 +58343,126 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   },
   {
     "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 11812,
+    "low": 10306,
+    "high": 12836,
+    "games": 42,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 11968,
+    "low": 10252,
+    "high": 13106,
+    "games": 21,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 10252,
+    "low": 9516,
+    "high": 13084,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 12500,
+    "low": 12500,
+    "high": 13106,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 11123,
+    "low": 10632,
+    "high": 11582,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 14200,
+    "low": 13350,
+    "high": 14200,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 10712,
+    "low": 9722,
+    "high": 11641,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12500,
+    "low": 11938,
+    "high": 12786,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 12500,
+    "low": 10634,
+    "high": 14169,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 14185,
+    "low": 13856,
+    "high": 14855,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "seattle",
     "teamId": "tacoma-rainiers",
     "venueId": "cheney-stadium",
     "dayClass": "all",
@@ -79508,6 +79736,97 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "aces",
+    "ratio": 1.009,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "dream",
+    "ratio": 0.969,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "fever",
+    "ratio": 1.059,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "fire",
+    "ratio": 1.056,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "liberty",
+    "ratio": 1.118,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "lynx",
+    "ratio": 1.042,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "mercury",
+    "ratio": 1.041,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "mystics",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "sky",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "storm",
+    "ratio": 0.975,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "sun",
+    "ratio": 0.958,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "valkyries",
+    "ratio": 1.091,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "opponent": "wings",
+    "ratio": 1.046,
+    "games": 3
+  },
+  {
+    "metroId": "la",
     "teamId": "ucla-mbb",
     "opponent": "arizona-st",
     "ratio": 0.993,
@@ -95685,6 +96004,97 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "aces",
+    "ratio": 0.955,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "dream",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "fever",
+    "ratio": 1.209,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "fire",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "liberty",
+    "ratio": 1.06,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "lynx",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "mercury",
+    "ratio": 0.951,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "mystics",
+    "ratio": 0.907,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "sky",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "sparks",
+    "ratio": 0.987,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "sun",
+    "ratio": 0.921,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "valkyries",
+    "ratio": 1.041,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "opponent": "wings",
+    "ratio": 1.064,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
     "teamId": "tacoma-rainiers",
     "opponent": "aces",
     "ratio": 0.964,
@@ -105987,6 +106397,78 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.05,
     "games": 45,
     "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "band": "first",
+    "occupancy": 0.734,
+    "low": 0.478,
+    "high": 1,
+    "games": 36,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "galen-center",
+    "band": "first",
+    "occupancy": 0.734,
+    "low": 0.478,
+    "high": 1,
+    "games": 36,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "crypto-com-arena",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.52,
+    "high": 0.945,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "sparks",
+    "venueId": "galen-center",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.52,
+    "high": 0.945,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "band": "first",
+    "occupancy": 0.715,
+    "low": 0.484,
+    "high": 1,
+    "games": 39,
+    "seasons": "2022, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "storm",
+    "venueId": "climate-pledge-arena",
+    "band": "conference",
+    "occupancy": 0.808,
+    "low": 0.52,
+    "high": 0.945,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   }
 ];

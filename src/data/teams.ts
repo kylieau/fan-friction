@@ -397,6 +397,7 @@ const LIST: Team[] = [
   team('kraken', 'Seattle Kraken', 'Kraken', 'NHL', 'hockey', 'seattle', 'SEA'),
   team('sounders', 'Seattle Sounders FC', 'Sounders', 'MLS', 'soccer', 'seattle', 'SEA'),
   team('reign', 'Seattle Reign FC', 'Reign', 'NWSL', 'soccer', 'seattle', 'SEA', ['OL Reign']),
+  team('storm', 'Seattle Storm', 'Storm', 'WNBA', 'basketball', 'seattle', 'SEA'),
   team('uw-football', 'Washington Huskies Football', 'UW', 'College football', 'football', 'seattle', 'UW', ['Huskies', 'Washington Football']),
   team('uw-mbb', 'Washington Huskies Men\'s Basketball', 'UW MBB', "College men's basketball", 'basketball', 'seattle', 'UW', ['Huskies']),
   team('uw-wbb', 'Washington Huskies Women\'s Basketball', 'UW WBB', "College women's basketball", 'basketball', 'seattle', 'UW', ['Huskies']),

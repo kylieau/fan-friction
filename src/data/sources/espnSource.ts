@@ -11,6 +11,18 @@ import { espnStakes, leagueFromPath, otherPostseason } from './roundLabel';
 import type { EventSource } from './types';
 
 const API = 'https://site.api.espn.com/apis/site/v2/sports';
+
+/** A fetch that tries again after a dropped connection (not after an error answer): ESPN resets some under load. */
+async function fetchRetry(url: string, tries = 3): Promise<Response> {
+  for (let i = 1; ; i++) {
+    try {
+      return await fetch(url);
+    } catch (err) {
+      if (i >= tries) throw err;
+      await new Promise((r) => setTimeout(r, 1000 * i));
+    }
+  }
+}
 const DAYS_AHEAD = 120;
 
 /** ESPN's ids for each team, mapped to our records. Add a metro's teams here. */
@@ -191,6 +203,7 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'hockey/mens-college-hockey', espnId: '2900', metroId: 'minneapolis', teamId: 'st-thomas-hockey', sport: 'hockey' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '6', metroId: 'la', teamId: 'sparks', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
   { path: 'hockey/nhl', espnId: '25', metroId: 'la', teamId: 'ducks', sport: 'hockey' },
   { path: 'soccer/usa.1', espnId: '187', metroId: 'la', teamId: 'galaxy', sport: 'soccer' },
@@ -211,6 +224,7 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-wbb', sport: 'basketball' },
   { path: 'football/nfl', espnId: '26', metroId: 'seattle', teamId: 'seahawks', sport: 'football' },
   { path: 'hockey/nhl', espnId: '124292', metroId: 'seattle', teamId: 'kraken', sport: 'hockey' },
+  { path: 'basketball/wnba', espnId: '14', metroId: 'seattle', teamId: 'storm', sport: 'basketball' },
   { path: 'soccer/usa.1', espnId: '9726', metroId: 'seattle', teamId: 'sounders', sport: 'soccer' },
   { path: 'soccer/usa.nwsl', espnId: '15363', metroId: 'seattle', teamId: 'reign', sport: 'soccer' },
   { path: 'football/college-football', espnId: '264', metroId: 'seattle', teamId: 'uw-football', sport: 'football' },
@@ -1105,7 +1119,7 @@ async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean, seas
   const lists = await Promise.all(
     urls.map(async (u) => {
       try {
-        const r = await fetch(u);
+        const r = await fetchRetry(u);
         if (!r.ok) {
           // 404 is a season that team does not have. Anything else, in a strict
           // read, means the listing is incomplete and must not be saved.
@@ -1180,7 +1194,7 @@ function scoreOf(side: EspnSide): number | undefined {
  */
 async function playClockSpan(path: string, gameId: string): Promise<{ minutes: number; startedAt: LocalTime } | undefined> {
   try {
-    const r = await fetch(`${API}/${path}/summary?event=${gameId}`);
+    const r = await fetchRetry(`${API}/${path}/summary?event=${gameId}`);
     if (!r.ok) return undefined;
     const json = (await r.json()) as {
       plays?: { wallclock?: string }[];
@@ -1267,6 +1281,20 @@ export function loadEspnSchedule(metroId: string): Promise<CrowdEvent[]> {
   return upcomingFor(metroId, true);
 }
 
+/** The dates of a team's home games in its own city over past seasons (scripts/past-dates-load.mjs --teams). Null for a team this feed doesn't carry. */
+export async function espnHomeDates(teamId: string, seasons: number[]): Promise<LocalDate[] | null> {
+  const t = ESPN_TEAMS.find((x) => x.teamId === teamId);
+  if (!t) return null;
+  const dates = new Set<LocalDate>();
+  for (const season of seasons) {
+    for (const g of await scheduleFor(t, true, season)) {
+      const event = toEvent(g, t);
+      if (event && event.metroId === t.metroId) dates.add(event.date);
+    }
+  }
+  return [...dates].sort();
+}
+
 /**
  * Home games on given past dates, with their results: for dates before the
  * nightly archive began (scripts/past-dates-load.mjs). Each date's year and the
@@ -1279,7 +1307,6 @@ export async function loadEspnPastDates(metroId: string, dates: LocalDate[]): Pr
   const capturedAt = new Date().toISOString();
   const events = new Map<string, CrowdEvent>();
   const results = new Map<string, GameResult>();
-  const spans = new Map<string, Promise<{ minutes: number; startedAt: LocalTime } | undefined>>();
   // One team-season at a time: a decade of dates is hundreds of schedule reads, and all at once fails.
   for (const t of ESPN_TEAMS.filter((x) => x.metroId === metroId)) {
     for (const season of seasons) {
@@ -1291,18 +1318,15 @@ export async function loadEspnPastDates(metroId: string, dates: LocalDate[]): Pr
         if (!event || !want.has(event.date) || events.has(event.id)) continue;
         events.set(event.id, g.id === openerId ? { ...event, homeOpener: true } : event);
         const row = finalOf(g, event, metroId, capturedAt);
-        if (row) {
-          results.set(event.id, row);
-          spans.set(event.id, playClockSpan(t.path, g.id));
+        if (!row) continue;
+        // One game page at a time: hundreds at once get connections dropped.
+        const span = await playClockSpan(t.path, g.id);
+        if (span) {
+          row.duration = { minutes: span.minutes, kind: 'estimated' };
+          row.startedAt = span.startedAt;
         }
+        results.set(event.id, row);
       }
-    }
-  }
-  for (const row of results.values()) {
-    const span = await spans.get(row.eventId);
-    if (span) {
-      row.duration = { minutes: span.minutes, kind: 'estimated' };
-      row.startedAt = span.startedAt;
     }
   }
   return { events: [...events.values()], results: [...results.values()] };
