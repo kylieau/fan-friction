@@ -1937,6 +1937,40 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 1100, setup: 'concert', note: 'Opened 2001, closed 2016. Source: https://en.wikipedia.org/wiki/House_of_Blues' }],
     roof: 'indoor',
   },
+  // From the concert-nights research (Oct 16, 2026), each with the research's sources.
+  'shrine-expo-hall': {
+    id: 'shrine-expo-hall',
+    metroId: 'la',
+    // A flat-floor hall beside the Shrine Auditorium (6,300 seats), its own room.
+    names: [{ name: 'Shrine Expo Hall' }],
+    location: [-118.28167, 34.02333],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Standing. Source: https://www.shrineauditorium.com/the-venue/' }],
+    roof: 'indoor',
+  },
+  'los-alamitos-race-course': {
+    id: 'los-alamitos-race-course',
+    metroId: 'la',
+    names: [{ name: 'Los Alamitos Race Course' }],
+    location: [-118.04361, 33.80861],
+    capacity: [{ seats: 6000, setup: 'racing', note: 'Reported (2014 DRF); larger total-capacity claims differ. Cypress. Source: https://www.drf.com/news/los-alamitos-tries-fill-void-left-hollywood-park' }],
+    roof: 'open',
+  },
+  'irwindale-speedway': {
+    id: 'irwindale-speedway',
+    metroId: 'la',
+    names: [{ name: 'Irwindale Speedway' }],
+    location: [-117.98806, 34.10944],
+    capacity: [{ seats: 6500, setup: 'racing', note: 'Grandstand, excluding portable seating. Closed December 2024. Source: https://en.wikipedia.org/wiki/Irwindale_Speedway' }],
+    roof: 'open',
+  },
+  'the-hangar-lancaster': {
+    id: 'the-hangar-lancaster',
+    metroId: 'la',
+    names: [{ name: 'The Hangar' }],
+    location: [-118.17306, 34.70278],
+    capacity: [{ seats: 4500, standing: 6860, setup: 'baseball', note: 'About 4,500 permanent seats; with the grass berms the listed total is 6,860 (kept as standing room, not seats). Lancaster JetHawks, California League, until 2020. Source: https://en.wikipedia.org/wiki/The_Hangar_(Lancaster,_California)' }],
+    roof: 'open',
+  },
   'gibson-amphitheatre': {
     id: 'gibson-amphitheatre',
     metroId: 'la',

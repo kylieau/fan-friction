@@ -80,7 +80,8 @@ function crowdOf(text) {
     const total = Number(n[1].replace(/,/g, ''));
     return [{ count: Math.round(total / days), kind: 'estimated', note: `About ${total.toLocaleString('en-US')} admissions over ${days} days, averaged per day.` }];
   }
-  if (/across|weekend|total/i.test(text)) return [];
+  // "175000 over Apr 11-13; city forecast; not Sunday-only": a weekend figure, not the day's.
+  if (/across|weekend|total|not \w+-only|over [A-Z][a-z]{2,8}\.? \d+\s*[-–]\s*\d+/i.test(text)) return [];
   const kind = /announced/i.test(text) ? 'announced' : /estimat/i.test(text) ? 'estimated' : 'reported';
   return [{ count: Number(n[1].replace(/,/g, '')), kind, note: 'From the date research.' }];
 }
@@ -96,7 +97,10 @@ try {
   const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
 
   const venueOf = (name) => {
-    const tries = [name, name.replace(/\s*\([^)]*\)\s*$/, ''), name.replace(/^The /i, '')];
+    // Name variants answers use: "(Irvine)", "The …", "Angel Stadium of Anaheim", "Los Angeles Memorial Coliseum",
+    // "Fairplex Grandstand" (filed as Fairplex).
+    const base = name.replace(/\s*\([^)]*\)\s*$/, '');
+    const tries = [name, base, base.replace(/^The /i, ''), base.replace(/\s+of\s+[A-Z][a-z]+$/, ''), base.replace(/^Los Angeles /, 'LA '), base.replace(/\s+Grandstand$/i, '')];
     for (const t of tries) {
       const v = venueByNameOrPlace(metroId, t);
       if (v) return v;
@@ -199,43 +203,97 @@ try {
   if (unknownVenues.size) throw new Error(`Venues not on file in ${metroId}; add them or list the event by name: ${[...unknownVenues].join('; ')}`);
   if (missingPoints.size) throw new Error(`No point for: ${[...missingPoints].join('; ')}. Add them to the --places file.`);
 
+  // One event per booking across answers (the first file wins; later ones fill a missing start or crowd): same date and
+  // place, and the same headliner or one title inside the other ("Muse" / "Muse - The 2nd Law Tour").
+  const placeKey = (e) => (e.place.type === 'venue' ? e.place.venueId : (venueOf(e.place.name)?.id ?? e.place.name.toLowerCase()));
+  const words = (t) => t.toLowerCase().replace(/\s*\([^)]*\)/g, '').replace(/\s+-\s+.*$/, '').replace(/[^a-z0-9 ]/g, '').replace(/\b(the|\d{4})\b/g, '').replace(/\s+/g, ' ').trim();
+  const sameBooking = (a, b) =>
+    a.date === b.date &&
+    placeKey(a) === placeKey(b) &&
+    ((a.performer && b.performer && a.performer.toLowerCase() === b.performer.toLowerCase()) || (words(a.title) && words(b.title) && (words(a.title).includes(words(b.title)) || words(b.title).includes(words(a.title)))));
+  const merged = [];
+  let duplicates = 0;
+  for (const e of events) {
+    const first = merged.find((m) => sameBooking(m, e));
+    if (!first) {
+      merged.push(e);
+      continue;
+    }
+    duplicates++;
+    if (!first.start && e.start) first.start = e.start;
+    if (!first.crowd.length && e.crowd.length) first.crowd = e.crowd;
+    if (!first.occasionFacts && e.occasionFacts) first.occasionFacts = e.occasionFacts;
+  }
+  events.length = 0;
+  events.push(...merged);
+  if (duplicates) console.log(`${duplicates} rows were the same booking in another answer; merged.`);
+
   // A hand-seeded date is the whole list for that day (index.ts, preferSeed): its research rows are not written.
   const seeded = new Set();
   for (const d of new Set(events.map((e) => e.date))) if ((await seedEvents.eventsOn(metroId, d)).length) seeded.add(d);
   const kept = [...new Map(events.filter((e) => !seeded.has(e.date)).map((e) => [e.id, e])).values()].sort((a, b) => a.id.localeCompare(b.id));
   if (seeded.size) console.log(`Hand-seeded, left as they are: ${[...seeded].join(', ')}`);
 
-  // Games: the feeds own them. Say which ones the catalog doesn't have.
-  for (const g of gamesToCheck) {
-    const listed = await catalogEvents.eventsOn(metroId, g.date).catch(() => []);
-    const venue = venueOf(g.venue);
-    const home = (g.home_team || '').split(' ').pop().toLowerCase();
-    const found = listed.some((e) => e.kind === 'game' && (!venue || (e.place.type === 'venue' && e.place.venueId === venue.id)) && e.title.toLowerCase().includes(home));
-    if (found) continue;
-    // A game the feeds don't carry (a preseason game in another building): added from the research when both teams
-    // and the building are on file, else reported.
+  // Games: the feeds own them. One row per game across answers; a game the catalog lacks is added from the research.
+  const teamId = (name) => {
     // "Los Angeles Clippers" is the record "LA Clippers": match the full name, else the nickname within this city.
-    const teamId = (name) => {
-      const n = name.toLowerCase();
-      const all = Object.values(TEAMS);
-      return (all.find((t) => t.name.toLowerCase() === n) ?? all.find((t) => t.metroId === metroId && n.endsWith(` ${t.shortName.toLowerCase()}`)) ?? all.find((t) => n.endsWith(` ${t.shortName.toLowerCase()}`)))?.id;
-    };
-    const [homeId, awayId] = [teamId(g.home_team), teamId(g.away_team)];
-    if (!homeId || !awayId || !venue || seeded.has(g.date)) {
+    const n = name.toLowerCase();
+    const all = Object.values(TEAMS);
+    return (all.find((t) => t.name.toLowerCase() === n) ?? all.find((t) => t.metroId === metroId && n.endsWith(` ${t.shortName.toLowerCase()}`)) ?? all.find((t) => n.endsWith(` ${t.shortName.toLowerCase()}`)))?.id;
+  };
+  const nick = (name) => (name || '').split(' ').pop().toLowerCase();
+  // Teams not on file: a long matchup loses its mascots so both sides fit ("Arizona Wildcats" → "Arizona"); a club
+  // name ending "SC", "FC" or a number keeps its name. A college game carries its sport code in the title's tag
+  // slot ("(MBB)") so the label names men's and women's alike.
+  const MASCOTS2 = /\s+(?:Tar Heels|Crimson Tide|Blue Devils|Sun Devils|Golden Bears|Golden Eagles|Fighting Irish|Horned Frogs|Yellow Jackets|Nittany Lions|Demon Deacons|Mean Green|Red Raiders|Scarlet Knights|Rainbow Warriors|Red Storm|Blue Raiders|Golden Gophers)$/;
+  const place = (name) => (/\b(?:SC|FC|\d+)$/.test(name) && !/\d{2}ers$/.test(name) ? name : MASCOTS2.test(name) ? name.replace(MASCOTS2, '') : name.replace(/\s+\S+$/, ''));
+  const CODES = [[/women's basketball/i, 'WBB'], [/men's basketball/i, 'MBB'], [/women's volleyball/i, 'WVB'], [/men's volleyball/i, 'MVB'], [/women's soccer/i, 'WSOC'], [/men's soccer/i, 'MSOC']];
+  const unlistedTitle = (g) => {
+    let [home, away] = [g.home_team, g.away_team];
+    if (`${home} vs. ${away}`.length > 32) [home, away] = [place(home), place(away)];
+    const code = CODES.find(([re]) => re.test(g.league_or_genre))?.[1];
+    // With no team records the title is shown as written: at a neutral site the designated visitor goes first (N17).
+    const [a, b] = /neutral-site/i.test(g.facts) ? [away, home] : [home, away];
+    return `${a} vs. ${b}${code ? ` (${code})` : ''}`;
+  };
+  const seenGames = new Set();
+  const SPORTS = [[/basketball|NBA|WNBA/i, 'basketball'], [/baseball|MLB|League/i, 'baseball'], [/soccer|USL|MLS|NWSL/i, 'soccer'], [/hockey|NHL|AHL/i, 'hockey'], [/football|NFL/i, 'football']];
+  for (const g of gamesToCheck) {
+    const venue = venueOf(g.venue);
+    const key = `${g.date}|${venue?.id ?? g.venue}|${[nick(g.home_team), nick(g.away_team)].sort().join('-')}`;
+    if (seenGames.has(key)) continue;
+    seenGames.add(key);
+    const listed = await catalogEvents.eventsOn(metroId, g.date).catch(() => []);
+    // On file when a feed game (not an earlier research row, which this file replaces) is in the same room that day and
+    // its title names either side ("UCLA vs. Washington" for "Washington at UCLA Bruins").
+    const names = `${g.home_team} ${g.away_team}`.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length >= 3 && !['los', 'angeles', 'state'].includes(w));
+    const found = listed.some((e) => e.kind === 'game' && e.sourceId !== 'research' && (!venue || (e.place.type === 'venue' && e.place.venueId === venue.id)) && names.some((w) => e.title.toLowerCase().includes(w)));
+    if (found) continue;
+    if (!venue || seeded.has(g.date)) {
       console.log(`Not in the catalog, not added: ${g.date} ${g.title} (${g.venue})`);
       continue;
     }
-    const sport = TEAMS[homeId].sport;
+    const [homeId, awayId] = [teamId(g.home_team), teamId(g.away_team)];
+    const both = homeId && awayId;
+    const sport = both ? TEAMS[homeId].sport : SPORTS.find(([re]) => re.test(g.league_or_genre))?.[1];
+    if (!sport) {
+      console.log(`Not added (sport unclear): ${g.date} ${g.title}`);
+      continue;
+    }
+    const level = g.level === 'college' ? 'college' : g.level === 'lower' ? 'lower' : undefined;
     kept.push({
       id: `${g.date}-research-${slug(g.title)}`,
       metroId,
       date: g.date,
       start: /^\d{2}:\d{2}$/.test(g.start_local) ? g.start_local : null,
       kind: 'game',
-      title: `${TEAMS[homeId].shortName} vs. ${TEAMS[awayId].shortName}`,
+      // Feed style, home first; the title rules turn it into "Away at Home". Teams not on file keep their names.
+      title: both ? `${TEAMS[homeId].shortName} vs. ${TEAMS[awayId].shortName}` : unlistedTitle(g),
       place: { type: 'venue', venueId: venue.id },
-      audience: { domain: 'sports', sport },
-      teams: { home: homeId, away: awayId },
+      audience: { domain: 'sports', sport, ...(level ? { level } : {}) },
+      ...(both ? { teams: { home: homeId, away: awayId } } : {}),
+      ...(g.stakes ? { stakes: { round: g.stakes } } : {}),
+      ...(/neutral-site/i.test(g.facts) ? { neutralSite: true } : {}),
       ...(/preseason/i.test(`${g.facts} ${g.title}`) ? { preseason: true } : {}),
       crowd: crowdOf(g.attendance),
       sourceId: 'research',
@@ -248,8 +306,10 @@ try {
   const lines = [
     `-- Fan/Friction: ${kept.length} researched events on ${new Set(kept.map((e) => e.date)).size} past date(s) in ${metroId} (concerts, festivals, other big events).`,
     `-- Made ${capturedAt.slice(0, 10)} by scripts/research-events-load.mjs. Paste into Supabase's SQL Editor and Run.`,
-    '-- Safe to run more than once: every row is an upsert.',
+    '-- Safe to run more than once. It first removes the researched rows already loaded for these dates, so a newer',
+    '-- answer replaces an older one instead of sitting beside it; league games from the feeds are untouched.',
     '',
+    `delete from public.events where source_id = 'research' and metro_id = ${sqlText(metroId)} and date in (${[...new Set(kept.map((e) => e.date))].sort().map(sqlText).join(', ')});`,
   ];
   for (const e of kept) {
     lines.push(
