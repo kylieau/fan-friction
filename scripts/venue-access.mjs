@@ -152,6 +152,16 @@ console.log(`Saved ${path.relative(root, out)}.`);
 
 // The index the app reads (venues.ts turns it into the strained flag by the rule).
 const rows = lines.slice(1).map((l) => l.split('\t'));
+// A scoped run also keeps index rows the table lacks (some city builds wrote the index only), so it never drops a city.
+if (metroFilter !== undefined) {
+  const inTable = new Set(rows.map(([vid]) => vid));
+  let saved = '';
+  try { saved = readFileSync(path.join(root, 'src', 'data', 'venueAccessIndex.ts'), 'utf8'); }
+  catch (err) { if (err.code !== 'ENOENT') throw err; }
+  for (const [, vid, rel, n250] of saved.matchAll(/venueId: '([^']+)', reliefM: (-?\d+), streets250: (\d+)/g)) {
+    if (!inTable.has(vid)) rows.push([vid, , , , , n250, , rel]);
+  }
+}
 const index = `// Hard-access measures per venue, from scripts/venue-access.mjs (the map
 // tiles and a public elevation service). Do not edit by hand; rerun the
 // script when venues are added. The rule that turns these into the
