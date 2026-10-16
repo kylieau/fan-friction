@@ -17,8 +17,12 @@ import { TitleText } from './TitleText';
  * glyph and feels-like at each hour tick, read the way the date header reads it. Hidden under two stored hours.
  */
 export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]; weather?: { metroId: string; date: string } }) {
-  const timed = events.filter((e) => e.start && sizeTier(e) === 'feeds-friction');
-  if (timed.length < 2) return null;
+  const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
+  const timed = big.filter((e) => e.start);
+  // Big events with no start on file (research-loaded past dates) sit in a "Time TBA" band under the timed bars, each
+  // across the whole axis, so a day's biggest crowd is never missing from its timeline (Kylie, Oct 16: the band).
+  const untimed = big.filter((e) => !e.start).sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
+  if (timed.length < 1 || big.length < 2) return null;
   const span = (e: CrowdEvent) => {
     const s = hoursOf(e.start as string);
     return [s, s + runningHours(e)] as const;
@@ -56,39 +60,49 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
           </span>
         ))}
       </div>
-      <ul className="bars">
-        {rows.map((e) => {
-          const [s, end] = span(e);
-          const size = drawSize(e);
-          const level = e.assessment?.friction;
-          const cls = level && level !== 'Low' ? frictionClass(level) : 'none';
-          return (
-            <li key={e.id} className="bar-row">
-              <Link to={eventPath(e.id, e.metroId)} className="bar-link">
-                <div className="bar-label">
-                  <span className="bar-name">
-                    <span className="bar-title">
-                      <TypeIcon typeKey={eventType(e).key} size={17} />
-                      <TitleText layout="inline" text={listTitle(e)} />
-                    </span>
-                    {size ? (
-                      <span className="bar-crowd">
-                        <CrowdMark />
-                        {estimateMark(e)}
-                        {crowdThousands(size)}
-                        {atLeastMark(e)}
-                      </span>
-                    ) : null}
-                  </span>
-                </div>
-                <div className="bar-track">
-                  <span className={`bar bar-${cls}`} style={{ left: pct(s), width: `calc(${pct(end)} - ${pct(s)})` }} />
-                </div>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <ul className="bars">{rows.map((e) => barRow(e, span(e)))}</ul>
+      {untimed.length > 0 && (
+        <div className="bars-tba" aria-label="Time TBA">
+          <span className="bars-tba-label">Time TBA</span>
+          <ul className="bars">{untimed.map((e) => barRow(e, null))}</ul>
+        </div>
+      )}
     </div>
   );
+
+  /** One row: the event's name and crowd over its bar; a TBA row's bar runs the whole axis, hatched. */
+  function barRow(e: CrowdEvent, at: readonly [number, number] | null) {
+    const size = drawSize(e);
+    const level = e.assessment?.friction;
+    const cls = level && level !== 'Low' ? frictionClass(level) : 'none';
+    return (
+      <li key={e.id} className="bar-row">
+        <Link to={eventPath(e.id, e.metroId)} className="bar-link">
+          <div className="bar-label">
+            <span className="bar-name">
+              <span className="bar-title">
+                <TypeIcon typeKey={eventType(e).key} size={17} />
+                <TitleText layout="inline" text={listTitle(e)} />
+              </span>
+              {size ? (
+                <span className="bar-crowd">
+                  <CrowdMark />
+                  {estimateMark(e)}
+                  {crowdThousands(size)}
+                  {atLeastMark(e)}
+                </span>
+              ) : null}
+            </span>
+          </div>
+          <div className="bar-track">
+            {at ? (
+              <span className={`bar bar-${cls}`} style={{ left: pct(at[0]), width: `calc(${pct(at[1])} - ${pct(at[0])})` }} />
+            ) : (
+              <span className="bar bar-tba" />
+            )}
+          </div>
+        </Link>
+      </li>
+    );
+  }
 }

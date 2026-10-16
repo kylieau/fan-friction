@@ -2327,6 +2327,33 @@ button {
   border-radius: 4px;
 }
 
+/* The "Time TBA" band under the timed bars: a rule, a small label, then rows whose bar runs the whole axis, hatched
+   so it reads "sometime that day", in the event's friction color. */
+.bars-tba {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 2px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+}
+
+.bars-tba-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.bar-tba {
+  left: 0;
+  right: 0;
+  /* Blank, not a read: the track's light grey with a dashed edge, whatever the event's friction (Kylie, Oct 16). */
+  background: var(--track);
+  border: 1px dashed var(--line);
+  box-sizing: border-box;
+}
+
 .bar-overlap {
   background: var(--ucla);
 }
