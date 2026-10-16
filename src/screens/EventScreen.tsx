@@ -414,7 +414,9 @@ export function EventScreen() {
             <div className="crowd-hero">
               <span className="crowd-hero-num">
                 <CrowdMark />
-                {crowdFull(shown, fmt)}
+                {/* A floor's "At least" in the small text face, so the number keeps one line (Kylie, Oct 16). */}
+                {shown.atLeast && <span className="crowd-hero-floor">At least</span>}
+                {shown.atLeast ? fmt(shown.count) : crowdFull(shown, fmt)}
               </span>
               <span className="crowd-hero-kind">
                 {crowdKindWord(shown.kind)}

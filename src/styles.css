@@ -2121,6 +2121,15 @@ button {
   color: var(--ink);
 }
 
+.crowd-hero-floor {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .crowd-hero-num .crowd-mark {
   width: 18px;
   height: 18px;
