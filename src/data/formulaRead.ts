@@ -12,7 +12,7 @@ import { METROS } from '../config/metros';
 import { eventConditions } from './formula/weather';
 import { weatherForEvent } from './weather';
 import { drawSize, sizeTier } from './read';
-import { mapTitle } from '../lib/eventTitle';
+import { listTitle, mapTitle } from '../lib/eventTitle';
 
 function location(event: CrowdEvent): [number, number] | null {
   if (event.place.type === 'venue') return VENUES[event.place.venueId]?.location ?? null;
@@ -39,9 +39,10 @@ function eventWhy(row: EventCrowdFight, read: DateRead): string {
   const miles = a && b ? milesBetween(a, b) : null;
   const distance = miles === null ? '' : miles < 0.5 ? ' next door' : ` ${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi away`;
   const timing = top.t >= 0.99 ? 'same hours' : top.t >= 0.5 ? 'back to back' : 'earlier in the day';
+  // The rivals take the lineup's short name, like the date headline (it read the feed's title, Oct 16).
   const second = row.competitors[1];
-  const also = second && second.d >= top.d * 0.8 ? ` and ${second.event.title}` : '';
-  return `${top.event.title}${also}${distance}, ${timing}.`;
+  const also = second && second.d >= top.d * 0.8 ? ` and ${listTitle(second.event)}` : '';
+  return `${listTitle(top.event)}${also}${distance}, ${timing}.`;
 }
 
 function clock(time: string): string {
@@ -110,7 +111,7 @@ export function applyFormula(metroId: string, date: LocalDate, events: readonly 
     rating: read.rating,
     headline: read.why,
     detail: read.lead?.name === 'Crowd fight' ? crowdFightDetail(read.crowdFight, METROS[metroId]?.name ?? metroId) || undefined : undefined,
-    squeezedMost: read.crowdFight.topPuller ? `pulled by ${read.crowdFight.topPuller.title}` : '',
+    squeezedMost: read.crowdFight.topPuller ? `pulled by ${listTitle(read.crowdFight.topPuller)}` : '',
     method: 'formula',
     notes: read.reasons.map((r) => `${r.name} ${r.score.toFixed(1)}: ${r.why}`).join(' '),
   };

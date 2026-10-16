@@ -82,9 +82,10 @@ function conditionsWhy(rows: { event: CrowdEvent; conditions: EventConditions }[
   if (!worst || worst.conditions.w === 0) return 'Nothing in the weather.';
   const c = worst.conditions;
   const start = worst.event.start ? ` at a ${clock(worst.event.start)} start` : '';
-  if (c.cause === 'heat') return `${degreesFor(c.effectiveF, worst.event.metroId)} feels-like${start}, no roof (${worst.event.title}).`;
-  if (c.cause === 'rain') return `${weatherGlyph(c.row)} Rain in the forecast${start} (${worst.event.title}).`;
-  return `${degreesFor(c.row.feelsLikeF, worst.event.metroId)} feels-like${start}, no roof (${worst.event.title}).`;
+  const name = listTitle(worst.event);
+  if (c.cause === 'heat') return `${degreesFor(c.effectiveF, worst.event.metroId)} feels-like${start}, no roof (${name}).`;
+  if (c.cause === 'rain') return `${weatherGlyph(c.row)} Rain in the forecast${start} (${name}).`;
+  return `${degreesFor(c.row.feelsLikeF, worst.event.metroId)} feels-like${start}, no roof (${name}).`;
 }
 
 function clock(time: string): string {
