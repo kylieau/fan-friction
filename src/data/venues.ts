@@ -2948,7 +2948,7 @@ export const VENUES: Record<string, Venue> = {
   'hammerstein-ballroom': {
     id: 'hammerstein-ballroom',
     metroId: 'new-york',
-    names: [{ name: 'Manhattan Center' }, { name: 'Hammerstein Ballroom' }],
+    names: [{ name: 'Hammerstein Ballroom' }],
     location: [-73.994189, 40.752908],
     capacity: [{ seats: 3500, setup: 'concert', note: 'Official: up to 3,500 general admission; up to 2,000 seated. Source: https://www.themanhattancenter.com/the-venue/' }],
     roof: 'indoor',

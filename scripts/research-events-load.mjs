@@ -75,6 +75,8 @@ const sqlJson = (o) => `${sqlText(JSON.stringify(o))}::jsonb`;
  *   a figure of unclear kind ("over 20,000 across all 3 days") gives at least itself ÷ the days open, sized only when
  *   that clears 5,000.
  * A weekend or total figure whose days open aren't stated stays unsized.
+ * Known limit: the first number in the text is the figure, so a row naming a count and a cap ("announced 17,500; sold out
+ * at an 18,000 cap") would be read as the cap. No answer does this yet; the prompt asks for one figure and its kind.
  */
 function crowdOf(text) {
   if (!text) return [];
