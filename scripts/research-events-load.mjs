@@ -309,6 +309,8 @@ try {
     '-- Safe to run more than once. It first removes the researched rows already loaded for these dates, so a newer',
     '-- answer replaces an older one instead of sitting beside it; league games from the feeds are untouched.',
     '',
+    // One transaction: if anything fails, the rows already there stay as they were.
+    'begin;',
     `delete from public.events where source_id = 'research' and metro_id = ${sqlText(metroId)} and date in (${[...new Set(kept.map((e) => e.date))].sort().map(sqlText).join(', ')});`,
   ];
   for (const e of kept) {
@@ -318,6 +320,7 @@ try {
         ') on conflict (id) do update set metro_id = excluded.metro_id, date = excluded.date, start = excluded.start, kind = excluded.kind, title = excluded.title, source_id = excluded.source_id, captured_at = excluded.captured_at, data = excluded.data;',
     );
   }
+  lines.push('commit;');
   await mkdir(path.dirname(path.resolve(out)), { recursive: true });
   await writeFile(out, lines.join('\n') + '\n');
   await writeFile(out.replace(/\.sql$/, '') + '.json', JSON.stringify({ schema: 1, metroId, capturedAt, events: kept }, null, 2) + '\n');
