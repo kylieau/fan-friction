@@ -1898,7 +1898,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pacific Amphitheatre' }],
     location: [-117.9044, 33.6666],
     ticketmasterIds: ['KovZpZAF6EaA'],
-    capacity: [{ seats: 8200, setup: 'concert', note: 'OC Fair, after the 2013 rebuild; 8,042 also reported' }],
+    capacity: [{ seats: 7800, setup: 'concert', note: 'Official (OC Fair 2025 media guide): 7,800+. 8,200 and 8,042 were reported after the 2013 rebuild; no current setup supporting them was found (small-rooms research, Oct 16, 2026). Source: https://ocfair.com/wp-content/uploads/2025/06/2025-OC-Fair-Media-Guide.pdf' }],
     roof: 'open',
   },
   // Closed rooms, kept for past dates (Oct 15, 2026: past concert nights). Nothing is listed here from today on.
@@ -2112,6 +2112,633 @@ export const VENUES: Record<string, Venue> = {
       setup: 'concert',
       note: 'Herbert Zipper Concert Hall at the Colburn School. Published room is about 415-435 seats. Under the map floor.',
     }],
+    roof: 'indoor',
+  },
+  // ---- Los Angeles region, rooms from the small-rooms research's second installment
+  // (docs/research/city-builds/small-rooms-big-cities-answer-2.md, Oct 16, 2026; Kylie's OK on the scope, Oct 16): Los Angeles,
+  // Orange and Ventura Counties plus the Coachella Valley; the Inland Empire rows (Ontario, San Bernardino, Riverside, Temecula,
+  // Highland, Lake Elsinore) are held. Locations are reference points, not entrances: the research's, or OpenStreetMap's by
+  // address or building name (noted on each room). The research's Ticketmaster numbers are a different id scheme, so names
+  // match. Each note keeps the research's capacity sentence and first source. ----
+  'indian-wells-stadium-1': {
+    id: 'indian-wells-stadium-1',
+    metroId: 'la',
+    // Missing larger venue.
+    names: [{ name: 'Indian Wells Tennis Garden' }, { name: 'Stadium 1, Indian Wells Tennis Garden' }],
+    // OpenStreetMap point for the address (78200, Miles Avenue), not an entrance.
+    location: [-116.312441, 33.722619],
+    capacity: [{ seats: 16100, setup: 'tennis', note: 'Official (tennis). Coachella Valley (Riverside County), like the Empire Polo Club. The building name sits on this, the largest court; Stadium 2 is its own room. Official: 16,100 tennis seats. Concert and standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
+    roof: 'open',
+  },
+  'acrisure-arena': {
+    id: 'acrisure-arena',
+    metroId: 'la',
+    // Missing larger venue.
+    names: [{ name: 'Acrisure Arena', from: '2022-12-14' }],
+    // OpenStreetMap point for the address (Varner Road, Thousand Palms), not an entrance.
+    location: [-116.3941126, 33.8098765],
+    capacity: [{ seats: 11007, setup: 'concert', note: 'Official (concert). Thousand Palms, Coachella Valley. Opened Dec 14, 2022 (Coachella Valley Firebirds, AHL). The hockey count is unconfirmed, so the concert figure is the only row. Official: 11,007 concert; architect reports official approximate 11,000. Hockey inventory not confirmed in this pass; do not reuse concert total for hockey. Source: https://www.acrisurearena.com/about' }],
+    roof: 'indoor',
+  },
+  'great-park-live': {
+    id: 'great-park-live',
+    metroId: 'la',
+    // Larger venue, conflicting limits.
+    names: [{ name: 'Great Park Live', from: '2024-01-01' }],
+    // OpenStreetMap point for the address (Great Park Live - Temporary Amphitheatre, 8000), not an entrance.
+    location: [-117.7452016, 33.674071],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert). Irvine, the Great Park; opened 2024, a separate site from FivePoint and Irvine Meadows. The city\'s Jan 2025 report called it a 5,000-capacity temporary venue; the operator now says 10,000, layout unstated. Conflict kept. Official current operator: 10,000 capacity, layout unspecified. Official city January 2025 report: temporary venue 5,000. Prefer current operator provisionally, but expansion timing and seated/standing split remain unconfirmed; retain conflict. Source: https://www.greatparklive.com/' }],
+    roof: 'open',
+  },
+  'indian-wells-stadium-2': {
+    id: 'indian-wells-stadium-2',
+    metroId: 'la',
+    // Missing larger venue.
+    names: [{ name: 'Stadium 2, Indian Wells Tennis Garden' }],
+    // OpenStreetMap point for the address (78200, Miles Avenue), not an entrance.
+    location: [-116.312441, 33.722619],
+    capacity: [{ seats: 8000, setup: 'tennis', note: 'Official (tennis). All seats reserved from 2026; a ticketing change, not a capacity change. Official: 8,000 tennis seats. All Stadium 2 seats reserved from 2026; that ticketing change is not evidence of a capacity change. Concert/standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
+    roof: 'open',
+  },
+  'kellogg-arena': {
+    id: 'kellogg-arena',
+    metroId: 'la',
+    names: [{ name: 'Kellogg Arena' }],
+    // OpenStreetMap point for the address (The Don Miller and Ron Simons Rose Float Lab, 3801), not an entrance.
+    location: [-117.8111979, 34.0621465],
+    capacity: [{ seats: 4765, setup: 'basketball', note: 'Official (basketball). Cal Poly Pomona; Kellogg Stadium is the outdoor room. Official: 4,765 seated basketball. Standing / concert setup unconfirmed. Source: https://www.cpp.edu/maps/text-map.php?id=678712&list=loc' }],
+    roof: 'indoor',
+  },
+  'starlight-bowl': {
+    id: 'starlight-bowl',
+    metroId: 'la',
+    // Operating status conflict.
+    names: [{ name: 'Starlight Bowl' }],
+    // OpenStreetMap point for the address (Starlight Bowl, 1249), not an entrance.
+    location: [-118.310092, 34.2065347],
+    capacity: [{ seats: 4200, setup: 'concert', note: 'Official (concert). Burbank. The city caps it at 4,200 (an older split read 3,000 seats plus 2,000 lawn). Closed after 2025 wind damage per the city\'s restoration page, yet an Aug 2026 show was cancelled for fire: operating status unresolved. Official city current planning page: capped at 4,200 since early 2000s. Reported older reference: 3,000 fixed + 2,000 lawn = 5,000. Prefer city cap; do not import proposed 5,000 as accomplished expansion. Current seat/lawn split unconfirmed. Source: https://www.burbankca.gov/web/parks-recreation/starlight-bowl-transformation-project' }],
+    roof: 'open',
+  },
+  'gersten-pavilion': {
+    id: 'gersten-pavilion',
+    metroId: 'la',
+    names: [{ name: 'Gersten Pavilion' }],
+    // OpenStreetMap point for the building (Gersten Pavilion, Loyola Boulevard), not an entrance.
+    location: [-118.4155929, 33.9677033],
+    capacity: [{ seats: 4156, setup: 'basketball', note: 'Official (basketball). Loyola Marymount. Official: 4,156 seated basketball. Concert and standing configurations unconfirmed. Source: https://lmulions.com/sports/2018/5/29/school-bio-gersten-html.aspx' }],
+    roof: 'indoor',
+  },
+  'titan-gym': {
+    id: 'titan-gym',
+    metroId: 'la',
+    names: [{ name: 'Titan Gym' }],
+    // OpenStreetMap point for the building (Titan Gymnasium, Gymnasium Drive), not an entrance.
+    location: [-117.8863889, 33.8830556],
+    capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). Cal State Fullerton, beside Titan Stadium. Official: 4,000 basketball. Historical attendance records are not current configured capacities. Seated concert / standing total unconfirmed. Source: https://fullertontitans.com/sports/2023/8/3/athletics-titan-gym.aspx' }],
+    roof: 'indoor',
+  },
+  'felix-event-center': {
+    id: 'felix-event-center',
+    metroId: 'la',
+    names: [{ name: 'Richard and Vivian Felix Event Center' }, { name: 'Felix Event Center' }],
+    // OpenStreetMap point for the address (Azusa Pacific University, 701), not an entrance.
+    location: [-117.8970195, 34.1344841],
+    capacity: [{ seats: 3344, setup: 'basketball', note: 'Official (basketball). Azusa Pacific. 3,816 in a theater setup. Official: 3,344 athletic seating; 3,816 theater setup. Floor-chair and bleacher components must not be added again. Standing concert total unconfirmed. Source: https://www.apu.edu/event-services/venues/' }],
+    roof: 'indoor',
+  },
+  'fantasy-springs-special-events-center': {
+    id: 'fantasy-springs-special-events-center',
+    metroId: 'la',
+    names: [{ name: 'Fantasy Springs Resort Casino Special Events Center' }, { name: 'Fantasy Springs Resort Casino' }],
+    // OpenStreetMap point for the building (Fantasy Springs Special Events Center, Indio Springs Drive), not an entrance.
+    location: [-116.1929256, 33.7199699],
+    capacity: [{ seats: 3700, setup: 'concert', note: 'Official (concert). Indio. The Rock Yard outside is a separate free stage. Official: 3,700 seated theater. Standing show limit unconfirmed; do not substitute free Rock Yard audience. Source: https://www.fantasyspringsresort.com/wp-content/uploads/2022/06/C_Sales_SEC_2021.pdf' }],
+    roof: 'indoor',
+  },
+  'cal-state-la-university-gym': {
+    id: 'cal-state-la-university-gym',
+    metroId: 'la',
+    names: [{ name: 'Cal State LA University Gym' }, { name: 'University Gym' }],
+    // OpenStreetMap point for the address (California State University Los Angeles, 5151), not an entrance.
+    location: [-118.1671415, 34.0664949],
+    capacity: [{ seats: 3540, setup: 'basketball', note: 'Official (basketball). The page\'s components (888 lower, 2,654 upper) sum to 3,542; the stated total is used. Official headline: 3,540 seated. Same page lists official components 888 lower + 2,654 upper, which sum to estimated 3,542. Prefer official stated total; two-seat inconsistency uncorrected. Standing unconfirmed. Source: https://lagoldeneagles.com/facilities/university-gym/2' }],
+    roof: 'indoor',
+  },
+  'goodwin-field': {
+    id: 'goodwin-field',
+    metroId: 'la',
+    names: [{ name: 'Goodwin Field' }],
+    // OpenStreetMap point for the building (Goodwin Field, West Campus Drive), not an entrance.
+    location: [-117.8852303, 33.8869736],
+    capacity: [{ seats: 3500, setup: 'baseball', note: 'Official (baseball). Cal State Fullerton, beside Titan Stadium. Official: nearly 3,500 seated after 2001 expansion, predating study period; no later capacity change confirmed. Standing / concert inventory unconfirmed. Source: https://fullertontitans.com/facilities/goodwin-field/1' }],
+    roof: 'open',
+  },
+  'anteater-ballpark': {
+    id: 'anteater-ballpark',
+    metroId: 'la',
+    names: [{ name: 'Anteater Ballpark' }, { name: 'Cicerone Field at Anteater Ballpark' }],
+    // OpenStreetMap point for the building (Anteater Ballpark, University Drive), not an entrance.
+    location: [-117.8477134, 33.6513335],
+    capacity: [{ seats: 908, standing: 3408, setup: 'baseball', note: 'Official (baseball). UC Irvine. 908 seats plus the 2,500-person Anthill lawn (kept as standing room). Official: 3,408 total baseball, comprising 908 seats and 2,500 Anthill lawn. Keep lawn distinct from seats. Concert limit unconfirmed. Source: https://ucirvinesports.com/documents/download/2024/5/21/2024UCIBSBnotes5-21.pdf' }],
+    roof: 'open',
+  },
+  'dolby-theatre': {
+    id: 'dolby-theatre',
+    metroId: 'la',
+    names: [{ name: 'Dolby Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.338764, 34.101602],
+    capacity: [{ seats: 3400, setup: 'concert', note: 'Official (concert). Hollywood, in the Ovation Hollywood complex (formerly Hollywood & Highland). About 3,400 for the Academy Awards; about 1,600 for film presentations. Official: approximately 3,400 for Academy Awards; approximately 1,600 for movie presentations. Concert production-specific seated inventory unconfirmed; no GA maximum established. Source: https://www.dolby.com/movies-tv/dolby-theatre/' }],
+    roof: 'indoor',
+  },
+  'dorothy-chandler-pavilion': {
+    id: 'dorothy-chandler-pavilion',
+    metroId: 'la',
+    names: [{ name: 'Dorothy Chandler Pavilion' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.248573, 34.056068],
+    capacity: [{ seats: 3200, setup: 'concert', note: 'Official (concert). The Music Center; 3,156 is also reported. Official current marketing: approximately 3,200 seated. Reported: 3,156. Prefer official approximate total pending a current sellable seat inventory; component lists are not reconciled here. Standing unconfirmed. Source: https://www.musiccenter.org/visit-explore/visit-explore/campus/dorothy-chandler-pavilion/' }],
+    roof: 'indoor',
+  },
+  'firestone-fieldhouse': {
+    id: 'firestone-fieldhouse',
+    metroId: 'la',
+    names: [{ name: 'Firestone Fieldhouse' }],
+    // OpenStreetMap point for the building (Firestone Fieldhouse, John Tyler Drive), not an entrance.
+    location: [-118.7097134, 34.0385447],
+    capacity: [{ seats: 3104, setup: 'basketball', note: 'Official (basketball). Pepperdine, Malibu. A recreation page says 3,500 with no setup. Official athletics: 3,104 basketball / volleyball; official recreation page: 3,500 unspecified. Prefer sport-specific 3,104. Concert seating and standing maximum unconfirmed. Construction-era entrance status needs event-date reconciliation. Source: https://pepperdinewaves.com/documents/download/2023/9/20/Pepperdine_Visitor_Guide_2023-2024.pdf' }],
+    roof: 'indoor',
+  },
+  'terrace-theater-long-beach': {
+    id: 'terrace-theater-long-beach',
+    metroId: 'la',
+    names: [{ name: 'Terrace Theater' }],
+    // OpenStreetMap point for the address (Long Beach Convention & Entertainment Center, 300), not an entrance.
+    location: [-118.1883741, 33.7640942],
+    capacity: [{ seats: 3052, setup: 'concert', note: 'Official (concert). Long Beach Convention & Entertainment Center, beside the Long Beach Arena. Official 2021 campus sheet: 3,052 seated. Current operator rounds to more than 3,000. Prefer precise official sheet provisionally; current event seat inventory may vary. Standing unconfirmed. Source: https://longbeachcc-2021.s3.amazonaws.com/images/files/CAMPUS-MAP_CAPACITIES_10.28.21_FINAL-FULL-SPECS.pdf?focal=none&mtime=20220524123641' }],
+    roof: 'indoor',
+  },
+  'pasadena-civic-auditorium': {
+    id: 'pasadena-civic-auditorium',
+    metroId: 'la',
+    names: [{ name: 'Pasadena Civic Auditorium' }],
+    // OpenStreetMap point for the address (Pasadena Convention Center - A, B and Ballroom), not an entrance.
+    location: [-118.1452085, 34.1436537],
+    capacity: [{ seats: 2997, setup: 'concert', note: 'Official (concert). 1,880 fixed main floor, 98 removable pit, 560 loge, 459 upper balcony. Official: 2,997 seated: 1,880 fixed main-floor, 98 removable pit, 560 loge and 459 upper balcony. Pit use changes sellable inventory; no standing concert total established. Source: https://www.visitpasadena.com/civic-auditorium/about/tech-specs/' }],
+    roof: 'indoor',
+  },
+  'segerstrom-hall': {
+    id: 'segerstrom-hall',
+    metroId: 'la',
+    names: [{ name: 'Segerstrom Hall' }],
+    // OpenStreetMap point for the address (Town Center Drive, Costa Mesa), not an entrance.
+    location: [-117.8840324, 33.6925561],
+    capacity: [{ seats: 2994, setup: 'concert', note: 'Official (concert). Segerstrom Center for the Arts, Costa Mesa; the concert hall next door is its own room. Official indexed specification: 2,994 seated; same operator rounds to 3,000. Prefer exact 2,994 provisionally; full page verification unavailable. Standing unconfirmed. Source: https://www.scfta.org/about-us/venue-rental-information/segerstrom-hall' }],
+    roof: 'indoor',
+  },
+  'torodome': {
+    id: 'torodome',
+    metroId: 'la',
+    names: [{ name: 'Torodome' }],
+    // OpenStreetMap point for the address (California State University - Dominguez Hills, 1000), not an entrance.
+    location: [-118.2573775, 33.8633711],
+    capacity: [{ seats: 2802, setup: 'basketball', note: 'Estimated (basketball). Cal State Dominguez Hills, Carson. The bleacher subtotal from the current page (900 + 900 + 559 + 443); older totals were 4,200 and 4,100. Floor seats are not counted. Estimated current bleacher subtotal: 2,802 from official north 900 + south 900 + east 559 + west 443. Legacy official 2010 bleacher total: 4,200; reported current: 4,100. Prefer current itemized subtotal for bleachers only; additional floor seats / full-house limit unconfirmed, so do not relabel subtotal as certified total. Source: https://gotoros.com/facilities/torodome/1' }],
+    roof: 'indoor',
+  },
+  'hollywood-pantages-theatre': {
+    id: 'hollywood-pantages-theatre',
+    metroId: 'la',
+    names: [{ name: 'Hollywood Pantages Theatre' }, { name: 'Pantages Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.325591, 34.101686],
+    capacity: [{ seats: 2703, setup: 'concert', note: 'Official (concert). The 2000 renovation count; no later change found. Official historical renovation: 2,703 seats installed in 2000; current event-specific inventory unconfirmed. No post-2016 numerical change established. Standing unconfirmed. Source: https://www.broadwayinhollywood.com/assets/doc/9x12.Pntgs75thAnvrsryBrch.Spreads-1-7685e05397.pdf' }],
+    roof: 'indoor',
+  },
+  'bridges-auditorium': {
+    id: 'bridges-auditorium',
+    metroId: 'la',
+    names: [{ name: 'Bridges Auditorium' }, { name: 'Mabel Shaw Bridges Music Auditorium' }],
+    // OpenStreetMap point for the address (450, North College Way), not an entrance.
+    location: [-117.7124929, 34.0982037],
+    capacity: [{ seats: 2494, setup: 'concert', note: 'Official (concert). Pomona College, Claremont. Bridges Hall of Music is a smaller, separate room. Official: 2,494 seated across main floor and balcony; official balcony component 500. Standing unconfirmed. Source: https://www.pomona.edu/administration/bridges-auditorium/about/technical-specifications' }],
+    roof: 'indoor',
+  },
+  'the-novo': {
+    id: 'the-novo',
+    metroId: 'la',
+    names: [{ name: 'Club Nokia' }, { name: 'The Novo', from: '2016-03-08' }, { name: 'The Novo by Microsoft', from: '2016-03-08' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.265829, 34.045391],
+    capacity: [{ seats: 2300, setup: 'concert', note: 'Official (concert). L.A. LIVE. Renamed Mar 8, 2016; when the sponsor suffix was dropped is unconfirmed. 1,358 seated in a theater setup. Official current: 2,300 maximum / 1,358 theater seated. Reported legacy 2,400 is not preferred over current operator configuration. Source: https://online.flippingbook.com/view/621208/' }],
+    roof: 'indoor',
+  },
+  'premier-america-credit-union-arena': {
+    id: 'premier-america-credit-union-arena',
+    metroId: 'la',
+    names: [{ name: 'Matadome' }, { name: 'Premier America Credit Union Arena', from: '2022-03-23' }],
+    // OpenStreetMap point for the address (California State University, Northridge), not an entrance.
+    location: [-118.5263221, 34.2455346],
+    capacity: [{ seats: 2300, setup: 'basketball', note: 'Official (basketball). Cal State Northridge; "the Matadome". Official: 2,300 seated after restored seating in 2015–16; no post-2016 numerical revision established. Standing unconfirmed. Source: https://gomatadors.com/sports/2015/6/22/GEN_20140101246' }],
+    roof: 'indoor',
+  },
+  'walt-disney-concert-hall': {
+    id: 'walt-disney-concert-hall',
+    metroId: 'la',
+    names: [{ name: 'Walt Disney Concert Hall' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.248959, 34.055566],
+    capacity: [{ seats: 2265, setup: 'concert', note: 'Official (concert). The Music Center. Official: 2,265 seated. Standing public concert setup not established. Source: https://www.laphil.com/about-us/our-venues/about-walt-disney-concert-hall' }],
+    roof: 'indoor',
+  },
+  'the-show-agua-caliente': {
+    id: 'the-show-agua-caliente',
+    metroId: 'la',
+    names: [{ name: 'The Show at Agua Caliente Rancho Mirage' }, { name: 'The Show' }],
+    // OpenStreetMap point for the address (32250, Bob Hope Drive), not an entrance.
+    location: [-116.4084774, 33.8112794],
+    capacity: [{ seats: 2057, setup: 'concert', note: 'Official (concert). Rancho Mirage, Coachella Valley. 457 floor plus 1,600 in the tiers. Official: 2,057 seated, comprising 457 floor and 1,600 lounge/mezzanine/balcony. Standing setup unconfirmed. Source: https://www.aguacalientecasinos.com/entertainment/rancho-mirage-shows/the-show/book-the-show/' }],
+    roof: 'indoor',
+  },
+  'segerstrom-concert-hall': {
+    id: 'segerstrom-concert-hall',
+    metroId: 'la',
+    names: [{ name: 'Renée and Henry Segerstrom Concert Hall' }, { name: 'Segerstrom Concert Hall' }],
+    // OpenStreetMap point for the address (Renee & Henry Segerstrom Concert Hall, 615), not an entrance.
+    location: [-117.8822139, 33.6917009],
+    capacity: [{ seats: 2000, setup: 'concert', note: 'Official (concert). Segerstrom Center for the Arts, Costa Mesa. Official naming-patron account: 2,000 seated. Current operator\'s exact sellable inventory and standing setup unconfirmed. Source: https://henrysegerstrom.com/home/philanthropy/segerstrom-center-for-the-arts/renee-and-henry-segerstrom-concert-hall/' }],
+    roof: 'indoor',
+  },
+  'eddy-d-field-stadium': {
+    id: 'eddy-d-field-stadium',
+    metroId: 'la',
+    names: [{ name: 'Eddy D. Field Stadium' }],
+    // OpenStreetMap point for the address (Starbucks, 24255), not an entrance.
+    location: [-118.7070564, 34.0385744],
+    capacity: [{ seats: 2000, setup: 'baseball', note: 'Official (baseball). Pepperdine, Malibu. Paid public games unconfirmed (provisional). Official: 2,000 baseball audience; chair/bleacher/standing breakdown unconfirmed. Current paid public-game frequency must be checked before feed activation. Source: https://pepperdinewaves.com/documents/download/2023/9/20/Pepperdine_Visitor_Guide_2023-2024.pdf' }],
+    roof: 'open',
+  },
+  'tari-frahm-rokus-field': {
+    id: 'tari-frahm-rokus-field',
+    metroId: 'la',
+    names: [{ name: 'Tari Frahm Rokus Field' }],
+    // OpenStreetMap point for the address (Starbucks, 24255), not an entrance.
+    location: [-118.7070564, 34.0385744],
+    capacity: [{ seats: 2000, setup: 'soccer', note: 'Official (soccer). Pepperdine, Malibu. Paid admission unconfirmed (provisional). Official: 2,000 soccer audience. Seated/standing split and routine paid admission not confirmed; provisional import. Source: https://pepperdinewaves.com/documents/download/2023/9/20/Pepperdine_Visitor_Guide_2023-2024.pdf' }],
+    roof: 'open',
+  },
+  'fox-theater-pomona': {
+    id: 'fox-theater-pomona',
+    metroId: 'la',
+    // Grand Hall, provisional total.
+    names: [{ name: 'Fox Theater Pomona' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-117.750181, 34.056872],
+    capacity: [{ seats: 2000, setup: 'concert', note: 'Official (concert). The 2,000 is for single or combined spaces; the Grand Hall alone is not isolated (provisional). Official: up to 2,000 for single or combined venue spaces; Grand Hall-only current limit not isolated. Ticketed concert use confirmed by operator, but keep capacity provisional rather than treating whole-house maximum as main-floor standing. Source: https://www.foxpomona.com/rental-info' }],
+    roof: 'indoor',
+  },
+  'orpheum-theatre-los-angeles': {
+    id: 'orpheum-theatre-los-angeles',
+    metroId: 'la',
+    names: [{ name: 'Orpheum Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.255238, 34.043113],
+    capacity: [{ seats: 1976, setup: 'concert', note: 'Official (concert). Broadway, downtown. 1,019 orchestra, 146 mezzanine, 781 balcony, 30 boxes. Official: 1,976 seated, comprising 1,019 orchestra, 146 mezzanine, 781 balcony and 30 boxes. Standing unconfirmed. Source: https://laorpheum.com/private-events/' }],
+    roof: 'indoor',
+  },
+  'cerritos-center': {
+    id: 'cerritos-center',
+    metroId: 'la',
+    names: [{ name: 'Cerritos Center for the Performing Arts' }],
+    // OpenStreetMap point for the address (Cerritos Center for the Performing Arts, 18000), not an entrance.
+    location: [-118.0616575, 33.8675683],
+    capacity: [{ seats: 1721, setup: 'concert', note: 'Official (concert). One room in six layouts: arena 1,691–1,721, in the round up to 1,934, lyric, concert, cabaret and recital smaller. The arena figure is stored. Official seated: Arena 1,691–1,721; Lyric 1,311–1,391; Recital 921–1,083; Concert 1,493–1,629; Cabaret 1,324–1,504; in-the-round 1,845–1,934. Use event configuration; these are one room, not six venues. GA standing unconfirmed. Source: https://ccpa.cerritos.gov/about-us/technical-specifications-and-contacts/' }],
+    roof: 'indoor',
+  },
+  'saban-theatre': {
+    id: 'saban-theatre',
+    metroId: 'la',
+    names: [{ name: 'Saban Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.374995, 34.064844],
+    capacity: [{ seats: 1897, setup: 'concert', note: 'Reported (concert). Beverly Hills; 1,910 is also reported. Reported: 1,897 seated in event directory; theater association: 1,910. Prefer 1,897 provisionally as event-venue figure, pending current official inventory. A directory\'s identical reception count is not independent standing evidence. Source: https://www.bizbash.com/venue-directory/entertainment-venues-performance-spaces/theaters-performance-spaces/venue/13408542/the-saban-theatre' }],
+    roof: 'indoor',
+  },
+  'oc-fair-action-sports-arena': {
+    id: 'oc-fair-action-sports-arena',
+    metroId: 'la',
+    names: [{ name: 'Action Sports Arena, OC Fair & Event Center' }, { name: 'OC Fair Action Sports Arena' }],
+    // OpenStreetMap point for the address (OC Fair Administration, 88), not an entrance.
+    location: [-117.9044725, 33.6684651],
+    capacity: [{ seats: 1888, setup: 'rodeo', note: 'Official (rodeo). Costa Mesa, the fairgrounds; the Pacific Amphitheatre and the Hangar are separate rooms. 164 ADA places may be extra; capacity varies by show. Official indexed sales book: 1,888 seats plus an entry labeled 164 ADA. Whether ADA places are additional or included is unconfirmed; do not sum automatically. Official 2025 media guide: capacity varies by show. Use event layout; no fixed universal maximum adopted. Source: https://ocfair.com/wp-content/uploads/2025/01/OCFEC-Venue-Sales-Book-Spread.pdf' }],
+    roof: 'open',
+  },
+  'royce-hall': {
+    id: 'royce-hall',
+    metroId: 'la',
+    names: [{ name: 'Royce Hall' }],
+    // OpenStreetMap point for the building (Royce Hall, Royce Drive), not an entrance.
+    location: [-118.4422863, 34.0728448],
+    capacity: [{ seats: 1825, setup: 'concert', note: 'Official (concert). UCLA. The campus directory says 1,834. Official current rental: 1,825 seated; official campus event directory: 1,834. Prefer current hall rental count; revision year unconfirmed. Standing unconfirmed. Source: https://roycehall.org/rent/' }],
+    roof: 'indoor',
+  },
+  'fred-kavli-theatre': {
+    id: 'fred-kavli-theatre',
+    metroId: 'la',
+    names: [{ name: 'Fred Kavli Theatre' }, { name: 'Fred Kavli Theatre at Bank of America Performing Arts Center' }, { name: 'Thousand Oaks Civic Arts Plaza' }],
+    // OpenStreetMap point for the address (2100, East Thousand Oaks Boulevard), not an entrance.
+    location: [-118.8478829, 34.1755812],
+    capacity: [{ seats: 1800, setup: 'concert', note: 'Official (concert). Thousand Oaks, Ventura County. Includes the removable pit-lift seats. The sponsor wording for the complex changed on an unconfirmed date. Official: 1,800 seated. Includes removable orchestra-pit lift seats; total with pit occupied by musicians unconfirmed. Standing unconfirmed. Source: https://bapacthousandoaks.com/storage/learn_more/bapacthousandoaks/2d069c62ff873b44cec2caeec7a28064933ae2be.pdf' }],
+    roof: 'indoor',
+  },
+  'the-soraya': {
+    id: 'the-soraya',
+    metroId: 'la',
+    names: [{ name: 'Valley Performing Arts Center' }, { name: 'The Soraya', from: '2017-07-18' }],
+    // OpenStreetMap point for the building (Younes and Soraya Nazarian Center for the Performing Arts, 18111), not an entrance.
+    location: [-118.5281129, 34.2362174],
+    capacity: [{ seats: 1700, setup: 'concert', note: 'Official (concert). Cal State Northridge; the Younes and Soraya Nazarian Center for the Performing Arts. Official: 1,700 seated main hall. Onstage jazz-club presentation also used; its reduced audience total unconfirmed, not a second large room. Source: https://thesoraya.org/soraya-stories/en/csun-announces-executive-and-artistic-director/' }],
+    roof: 'indoor',
+  },
+  'city-national-grove-of-anaheim': {
+    id: 'city-national-grove-of-anaheim',
+    metroId: 'la',
+    names: [{ name: 'City National Grove of Anaheim' }, { name: 'The Grove of Anaheim' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-117.885948, 33.803613],
+    capacity: [{ seats: 1700, setup: 'concert', note: 'Official (concert). On the Angel Stadium property. The city\'s conditional-use figure; layout-specific limits unconfirmed. Official municipal document: 1,700-person concert theater. Dinner/theater and standing layout-specific limits unconfirmed; do not mark 1,700 all-seated without layout evidence. Source: https://www.anaheim.net/DocumentCenter/View/43984/ITEM-3-Att-No-6-Draft-CUP-Resolution_Grove' }],
+    roof: 'indoor',
+  },
+  'united-theater-on-broadway': {
+    id: 'united-theater-on-broadway',
+    metroId: 'la',
+    names: [{ name: 'The Theatre at Ace Hotel' }, { name: 'The United Theater on Broadway', from: '2024-02-01' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.256517, 34.041936],
+    capacity: [{ seats: 1647, setup: 'concert', note: 'Official (concert). Downtown; the former United Artists theater. The Feb 2024 rename is reported by month. Official: 1,647 seated, comprising 825 orchestra and 822 balcony. Prefer current count over legacy reported approximately 1,600; standing unconfirmed. Source: https://theunitedtheater.com/about/' }],
+    roof: 'indoor',
+  },
+  'oxnard-performing-arts-center': {
+    id: 'oxnard-performing-arts-center',
+    metroId: 'la',
+    names: [{ name: 'Oxnard Performing Arts & Convention Center' }, { name: 'Oxnard Performing Arts Center' }],
+    // The research's reported venue point, not an entrance.
+    location: [-119.18851, 34.19306],
+    capacity: [{ seats: 1604, setup: 'concert', note: 'Official (concert). Ventura County. The auditorium; the convention rooms are separate. A promoter bills it "The Canyon at Oxnard PACC". Official city: 1,604 seated auditorium. Standing / concert floor conversion not established. Source: https://www.oxnard.gov/locations/oxnard-performing-arts-center' }],
+    roof: 'indoor',
+  },
+  'warner-grand-theatre': {
+    id: 'warner-grand-theatre',
+    metroId: 'la',
+    // Temporarily closed.
+    names: [{ name: 'Warner Grand Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.287411, 33.738812],
+    capacity: [{ seats: 1525, setup: 'concert', note: 'Official (concert). San Pedro. Closed Jan 1, 2024 for renovation; a late-2026 reopening is expected, not confirmed. Kept for past dates. Official friends group: 1,525 seated pre-renovation. Closed January 1, 2024; late-2026 reopening expected, not confirmed accomplished. Post-renovation count unknown; history-only until reopened. Source: https://grandvision.org/warner-grand-events/' }],
+    roof: 'indoor',
+  },
+  'gilbert-arena': {
+    id: 'gilbert-arena',
+    metroId: 'la',
+    names: [{ name: 'Gilbert Arena' }],
+    // OpenStreetMap point for the address (Gilbert Sports and Fitness Center, 130), not an entrance.
+    location: [-118.8781265, 34.2263096],
+    capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Cal Lutheran, Thousand Oaks. The campus rental limit is 1,000. Paid public events unconfirmed (provisional). Official athletics: 1,500 spectator seats; official campus rental maximum: 1,000, plus 560 dining. Prefer 1,500 for sports; 1,000 for unspecified rental only. Standing unconfirmed; paid public-event frequency provisional. Source: https://clusports.com/facilities/gilbert-arena/2' }],
+    roof: 'indoor',
+  },
+  'the-mayan': {
+    id: 'the-mayan',
+    metroId: 'la',
+    names: [{ name: 'The Mayan' }, { name: 'Mayan Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.258945, 34.040995],
+    capacity: [{ seats: 1492, setup: 'concert', note: 'Reported (concert). Downtown, the same block as the Belasco. Reported tourism board: 1,492 inside, configuration unspecified; theater directory: 1,491 seated. Prefer tourism total provisionally for venue scale only; current concert seated/standing breakdown unconfirmed. Source: https://www.discoverlosangeles.com/things-to-do/mayan-theatre' }],
+    roof: 'indoor',
+  },
+  'redondo-beach-performing-arts-center': {
+    id: 'redondo-beach-performing-arts-center',
+    metroId: 'la',
+    names: [{ name: 'Redondo Beach Performing Arts Center' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.37807, 33.887434],
+    capacity: [{ seats: 1453, setup: 'concert', note: 'Official (concert). Official city: 1,453 seated theater. Standing unconfirmed. Source: https://www.redondo.org/FY%202024-25%20Adopted%20Budget%20BookV2.pdf' }],
+    roof: 'indoor',
+  },
+  'haugh-performing-arts-center': {
+    id: 'haugh-performing-arts-center',
+    metroId: 'la',
+    names: [{ name: 'Haugh Performing Arts Center' }],
+    // OpenStreetMap point for the address (Citrus College, 1000), not an entrance.
+    location: [-117.8856927, 34.1343151],
+    capacity: [{ seats: 1440, setup: 'concert', note: 'Official (concert). Citrus College, Glendora. The source is a 2015 program inventory. Official published inventory: 1,440 seated. Source is legacy 2015; no post-2016 numerical change established, but current sellable count remains unconfirmed. Standing unconfirmed. Source: https://www.citruscollege.edu/pr/Documents/Archive/AS/HPAC/2015PAC.pdf' }],
+    roof: 'indoor',
+  },
+  'alex-theatre': {
+    id: 'alex-theatre',
+    metroId: 'la',
+    names: [{ name: 'Alex Theatre' }],
+    // OpenStreetMap point for the address (216, North Brand Boulevard), not an entrance.
+    location: [-118.255154, 34.1484434],
+    capacity: [{ seats: 1413, setup: 'concert', note: 'Reported (concert). Glendale. 768 orchestra, 181 terrace, 464 balcony; the city rounds to 1,400. Reported detailed inventory: 1,413 seated, comprising 768 orchestra, 181 terrace, 464 balcony. Official city rounds to 1,400. Prefer reported precise figure provisionally; standing unconfirmed. Source: https://www.glendaleca.gov/Home/Components/FacilityDirectory/FacilityDirectory/1250/36' }],
+    roof: 'indoor',
+  },
+  'san-gabriel-mission-playhouse': {
+    id: 'san-gabriel-mission-playhouse',
+    metroId: 'la',
+    names: [{ name: 'San Gabriel Mission Playhouse' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.108985, 34.098257],
+    capacity: [{ seats: 1387, setup: 'concert', note: 'Official (concert). Includes 30 house seats that may not sell. Official: 1,387 seated, including 30 venue house seats; these may not be sellable for every show. No later inventory change established. Standing unconfirmed. Source: https://missionplayhouse.org/wp-content/uploads/2017-18-RENTAL-PACKET-MISSION-PLAYHOUSE-revised-May-21-2018-1.pdf' }],
+    roof: 'indoor',
+  },
+  'wilshire-ebell-theatre': {
+    id: 'wilshire-ebell-theatre',
+    metroId: 'la',
+    names: [{ name: 'Wilshire Ebell Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.324465, 34.061213],
+    capacity: [{ seats: 1266, setup: 'concert', note: 'Official (concert). Official: 1,266 seated. Prefer current owner count over rounded directory totals. Standing unconfirmed. Source: https://www.ebellofla.org/about-us' }],
+    roof: 'indoor',
+  },
+  'la-mirada-theatre': {
+    id: 'la-mirada-theatre',
+    metroId: 'la',
+    names: [{ name: 'La Mirada Theatre for the Performing Arts' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.009856, 33.896171],
+    capacity: [{ seats: 1261, setup: 'concert', note: 'Official (concert). 789 orchestra, 472 balcony. Official: 1,261 seated, comprising 789 orchestra and 472 balcony. Standing unconfirmed. Source: https://lamiradatheatre.com/theatre-rental/' }],
+    roof: 'indoor',
+  },
+  'ambassador-auditorium': {
+    id: 'ambassador-auditorium',
+    metroId: 'la',
+    names: [{ name: 'Ambassador Auditorium' }],
+    // OpenStreetMap point for the address (Ambassador Auditorium, 131), not an entrance.
+    location: [-118.1565024, 34.1434799],
+    capacity: [{ seats: 1232, setup: 'concert', note: 'Official (concert). Pasadena. 1,262 is also reported. A regular public series is unconfirmed (provisional). Official rental: 1,232 seated; reported encyclopedia: 1,262. Prefer current official rental. Current recurring paid-series frequency and exact setup inventory need confirmation; provisional record. Source: https://afpasadena.org/alison-event-spaces/' }],
+    roof: 'indoor',
+  },
+  'fonda-theatre': {
+    id: 'fonda-theatre',
+    metroId: 'la',
+    names: [{ name: 'The Fonda Theatre' }, { name: 'Fonda Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.322732, 34.10159],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Official (concert). Hollywood. 633 seated in a theater setup; the 800 main floor is part of the 1,200. Official current: 1,200 maximum / 633 theater seated / 800 main floor. Main-floor count is a component, not an extra 800 over total. Source: https://online.flippingbook.com/view/621208/' }],
+    roof: 'indoor',
+  },
+  'the-vermont-hollywood': {
+    id: 'the-vermont-hollywood',
+    metroId: 'la',
+    names: [{ name: 'The Vermont Hollywood', from: '2021-01-01' }, { name: 'The Vermont' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.291663, 34.090011],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Official (concert). East Hollywood; opened 2021 (the year is stored). Official production deck: 1,200; official technical specification: 1,200+. Prefer stated 1,200 provisionally; seated/standing split unconfirmed. Source: https://www.vermonthollywood.com/files/Vermont%20Production%20Deck.pdf' }],
+    roof: 'indoor',
+  },
+  'the-ford': {
+    id: 'the-ford',
+    metroId: 'la',
+    names: [{ name: 'John Anson Ford Amphitheatre' }, { name: 'The Ford' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.33577, 34.114327],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Official (concert). Hollywood Hills, across the freeway from the Hollywood Bowl. The LA Phil has run it since 2020; "The Ford" is marketing, with no dated rename. Official: 1,200 seated outdoor amphitheater. GA standing setup unconfirmed. Source: https://www.laphil.com/posts/gail-samuel-appointed-president-of-the-hollywood-bowl-and-chief-operating-officer-of-the-los-angeles-philharmonic-association' }],
+    roof: 'open',
+  },
+  'libbey-bowl': {
+    id: 'libbey-bowl',
+    metroId: 'la',
+    names: [{ name: 'Libbey Bowl' }],
+    // OpenStreetMap point for the address (210, South Signal Street), not an entrance.
+    location: [-119.2458406, 34.4465888],
+    capacity: [{ seats: 973, standing: 1273, setup: 'concert', note: 'Official (concert). Ojai, Ventura County. 973 fixed seats plus 200–300 on the lawn (kept as standing room). Official: 973 fixed seats plus 200–300 lawn audience. Estimated combined total: 1,173–1,273 from published components. Include because combined ticketed format exceeds cutoff; exact event lawn availability varies. Source: https://www.libbeybowl.org/info' }],
+    roof: 'open',
+  },
+  'exchange-la': {
+    id: 'exchange-la',
+    metroId: 'la',
+    names: [{ name: 'Exchange LA' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.25138, 34.045413],
+    capacity: [{ seats: 1150, setup: 'concert', note: 'Reported (concert). Downtown, the former stock exchange. The main trading floor: 1,150 standing, 1,050 seated; the whole building is reported at 1,500. Reported main trading floor: 1,150 standing / 1,050 seated; whole venue reported 1,500. Prefer room-specific figures provisionally; full-house circulation limit is not main-floor audience. Source: https://thevendry.com/venue/122162/exchange-la-los-angeles-ca' }],
+    roof: 'indoor',
+  },
+  'oc-fair-hangar': {
+    id: 'oc-fair-hangar',
+    metroId: 'la',
+    names: [{ name: 'The Hangar at the OC Fair & Event Center' }, { name: 'OC Fair Hangar' }],
+    // OpenStreetMap point for the address (OC Fair Administration, 88), not an entrance.
+    location: [-117.9044725, 33.6684651],
+    capacity: [{ seats: 1150, setup: 'concert', note: 'Official (concert). Costa Mesa, the fairgrounds. Not the Lancaster ballpark of the same name. Official: 1,150 seated ticketed concerts in both 2022 and 2025 media guides; no capacity change established. Standing unconfirmed. Source: https://ocfair.com/wp-content/uploads/2025/06/2025-OC-Fair-Media-Guide.pdf' }],
+    roof: 'indoor',
+  },
+  'mccallum-theatre': {
+    id: 'mccallum-theatre',
+    metroId: 'la',
+    names: [{ name: 'McCallum Theatre' }],
+    // OpenStreetMap point for the address (73000, Fred Waring Drive), not an entrance.
+    location: [-116.391063, 33.728827],
+    capacity: [{ seats: 1127, setup: 'concert', note: 'Official (concert). Palm Desert, Coachella Valley. Official: 1,127 seated in July 2022 specification posted in 2025; pit / production removals alter saleable seats. Standing unconfirmed. Source: https://www.mccallumtheatre.org/app/uploads/2025/10/Facility-Specs-2025.pdf' }],
+    roof: 'indoor',
+  },
+  'avalon-hollywood': {
+    id: 'avalon-hollywood',
+    metroId: 'la',
+    names: [{ name: 'Avalon Hollywood' }, { name: 'Avalon' }],
+    // The research's official routing point, not an entrance.
+    location: [-118.327308, 34.103345],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official (concert). BARDOT (300) is a separate room in the building; 1,400 is the two combined. Official: AVALON 1,100 standing; published seated range 400–600, precise room scope not explicit. AVALON+BARDOT combined official 1,400 standing; BARDOT alone official 300. Use 1,100 for AVALON; do not import combined figure. Source: https://avalonhollywood.com/hollywood-event-space-rental/' }],
+    roof: 'indoor',
+  },
+  'regent-theater': {
+    id: 'regent-theater',
+    metroId: 'la',
+    names: [{ name: 'The Regent Theater' }, { name: 'Regent Theater' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.247949, 34.047222],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official (concert). Downtown. "1,100+". Official: 1,100+ maximum. Exact seated / GA split unconfirmed; approximate upper figure must not imply exact sellable count. Source: https://regentdtla.com/rentals/' }],
+    roof: 'indoor',
+  },
+  'palace-theatre-los-angeles': {
+    id: 'palace-theatre-los-angeles',
+    metroId: 'la',
+    names: [{ name: 'Palace Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-118.252402, 34.046156],
+    capacity: [{ seats: 1068, setup: 'concert', note: 'Official (concert). Broadway, downtown. 608 floor, 460 mezzanine. A recurring concert or comedy program is not established (provisional). Official current: 1,068 seated, comprising 608 floor and 460 mezzanine. Original historic theater total is not current usable inventory. Recurring qualifying concert/comedy program not established; provisional, public screenings alone do not establish concert series. Source: https://palacedowntown.com/venue-specs' }],
+    roof: 'indoor',
+  },
+  'carpenter-performing-arts-center': {
+    id: 'carpenter-performing-arts-center',
+    metroId: 'la',
+    names: [{ name: 'Carpenter Performing Arts Center' }],
+    // OpenStreetMap point for the address (Carpenter Performing Arts Center, 6200), not an entrance.
+    location: [-118.1119628, 33.7881964],
+    capacity: [{ seats: 1054, setup: 'concert', note: 'Official (concert). Cal State Long Beach; same campus as the Pyramid. Official: 1,054 seated. Standing unconfirmed. Source: https://www.carpenterarts.org/about/mission-history' }],
+    roof: 'indoor',
+  },
+  'musco-center': {
+    id: 'musco-center',
+    metroId: 'la',
+    names: [{ name: 'Musco Center for the Arts', from: '2016-03-01' }],
+    // OpenStreetMap point for the address (415, North Glassell Street), not an entrance.
+    location: [-117.8529862, 33.7936181],
+    capacity: [{ seats: 1044, setup: 'concert', note: 'Official (concert). Chapman University, Orange; opened March 2016. Official: 1,044 seated. Standing unconfirmed. Source: https://www.chapman.edu/campus-services/event-operations/external-events/performance-venues.aspx' }],
+    roof: 'indoor',
+  },
+  'soka-performing-arts-center': {
+    id: 'soka-performing-arts-center',
+    metroId: 'la',
+    names: [{ name: 'Soka Performing Arts Center' }],
+    // OpenStreetMap point for the address (Soka University of America, 1), not an entrance.
+    location: [-117.7347405, 33.5546752],
+    capacity: [{ seats: 1032, setup: 'concert', note: 'Official (concert). Soka University, Aliso Viejo. The concert hall; the Black Box is separate. Official: 1,032 seated concert hall. Alternate theatrical stage mode documented but separate audience total unconfirmed; standing unconfirmed. Source: https://www.performingarts.soka.edu/soka-performing-arts-center/about/rentals' }],
+    roof: 'indoor',
+  },
+  'george-c-page-stadium': {
+    id: 'george-c-page-stadium',
+    metroId: 'la',
+    names: [{ name: 'George C. Page Stadium' }],
+    // OpenStreetMap point for the building (Page Baseball Stadium, West 80th Street), not an entrance.
+    location: [-118.4144523, 33.9665526],
+    capacity: [{ seats: 1000, setup: 'baseball', note: 'Official (baseball). Loyola Marymount. Routine paid admission not established (provisional). Official: 1,000 baseball capacity. Avoid reported legacy 2,200 without dated configuration evidence; routine paid admission not established in this pass, provisional. Source: https://lmulions.com/sports/2018/5/29/school-bio-page-html' }],
+    roof: 'open',
+  },
+  'kellogg-stadium': {
+    id: 'kellogg-stadium',
+    metroId: 'la',
+    names: [{ name: 'Kellogg Field' }, { name: 'Kellogg Stadium' }],
+    // OpenStreetMap point for the building (Kellogg Track and Soccer Stadium, South Campus Drive), not an entrance.
+    location: [-117.8168772, 34.0525441],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). Cal Poly Pomona. 2010 notes said 2,500; the current page is used. Paid public program unconfirmed (provisional). Official current: 1,000; official 2010 notes: 2,500 for Kellogg Field. Prefer current page, but change timing and whether inventory scope changed remain unknown. Routine paid public program unconfirmed. Source: https://broncoathletics.com/facilities/kellogg-stadium/1' }],
+    roof: 'open',
+  },
+  'observatory-orange-county': {
+    id: 'observatory-orange-county',
+    metroId: 'la',
+    names: [{ name: 'The Observatory' }, { name: 'Observatory Orange County' }, { name: 'The Observatory Orange County' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-117.919365, 33.700546],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official (concert). Santa Ana. The Constellation Room (250) is separate. Official ticketing affiliate: 1,000 audience. Main hall seated layout not established from readable current operator text; no assumed seated count. Constellation Room\'s official 250 is a separate room and excluded. Source: https://blog.ticketmaster.com/venue-faq-observatory-oc-santa-ana-ca/' }],
+    roof: 'indoor',
+  },
+  'yost-theater': {
+    id: 'yost-theater',
+    metroId: 'la',
+    names: [{ name: 'The Yost Theater' }, { name: 'Yost Theatre' }],
+    // The research's address estimate (Census), not an entrance.
+    location: [-117.865514, 33.747235],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official (concert). Santa Ana. Up to 1,000 standing; the site now stresses private events, so recurring public shows need rechecking (provisional). Official current: up to 1,000 standing; seated concert limit unconfirmed. Current website emphasizes private events; recurring paid public programming needs revalidation before active import. Source: https://www.theyosttheater.com/main-theater' }],
+    roof: 'indoor',
+  },
+  'house-of-blues-anaheim': {
+    id: 'house-of-blues-anaheim',
+    metroId: 'la',
+    // The GardenWalk room, open since 2017; the Downtown Disney room (2001–2016) is its own record. With the same name
+    // on both, a show's date picks the room in use then.
+    names: [{ name: 'House of Blues Anaheim', from: '2017-03-01' }],
+    // OpenStreetMap point for Anaheim GardenWalk (the AMC inside it), not the club's door.
+    location: [-117.9123866, 33.8058754],
+    capacity: [{ seats: 1700, setup: 'concert', note: 'Official (Live Nation rental page): a 1,700-capacity music setting; 3,300 for the whole property. Reported: 2,200 at the 2017 opening for the concert setup. The rental figure is stored until a production plan settles one concert maximum (small-rooms research, Oct 16, 2026). Source: https://specialevents.livenation.com/venues/house-of-blues-anaheim' }],
     roof: 'indoor',
   },
   // Buildings from her log outside Los Angeles. One record each. New York
@@ -3446,6 +4073,278 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpa4cFe', 'rZ7HnEZ17favg'],
     capacity: [{ seats: 39860, setup: 'baseball', note: 'Fixed seats (MLB). 42,445 is also reported and likely counts standing room.' }],
     roof: 'open',
+  },
+  // ---- New York, the rest of the small-rooms research (second installment, docs/research/city-builds/small-rooms-big-cities-answer-2.md,
+  // Oct 16, 2026; Kylie's OK on the scope, Oct 16): the larger rooms it found missing (Rutgers first), closed and reopening
+  // rooms kept for past dates, and college grounds whose paid admission is unconfirmed (provisional, muted by size). Locations
+  // are reference points, not entrances: the research's, or OpenStreetMap's by address or building name (noted on each room). ----
+  'shi-stadium': {
+    id: 'shi-stadium',
+    metroId: 'new-york',
+    // Missing larger venue.
+    names: [{ name: 'High Point Solutions Stadium' }, { name: 'SHI Stadium', from: '2019-07-01' }],
+    // OpenStreetMap point for the building (SHI Stadium, Sutphen Road), not an entrance.
+    location: [-74.4651433, 40.5135037],
+    capacity: [{ seats: 52454, setup: 'football', note: 'Official (football). Rutgers, Busch campus (Piscataway). The rename month is July 2019; the day is not stored. The feed name is "SHI Stadium". Official: 52,454 football seats; alternate concert setup unconfirmed. Source: https://scarletknights.com/sports/2017/6/11/facilities-football-html' }],
+    roof: 'open',
+  },
+  'hinchliffe-stadium': {
+    id: 'hinchliffe-stadium',
+    metroId: 'new-york',
+    // Missing larger venue.
+    names: [{ name: 'Hinchliffe Stadium' }],
+    // OpenStreetMap point for the building (Hinchliffe Stadium, Liberty Street), not an entrance.
+    location: [-74.1813221, 40.9183804],
+    capacity: [{ seats: 10000, setup: 'baseball', note: 'Official (baseball). Paterson. Reopened May 19, 2023 after closing in 1997. Official: 10,000 seats; operator about page says 10,000+. Use 10,000 main-site figure; baseball-specific sellable inventory unconfirmed. Source: https://www.thehinchliffestadium.com/' }],
+    roof: 'open',
+  },
+  'jersey-mikes-arena': {
+    id: 'jersey-mikes-arena',
+    metroId: 'new-york',
+    // Missing larger venue.
+    names: [{ name: 'Louis Brown Athletic Center' }, { name: 'Rutgers Athletic Center', from: '2019-01-01' }, { name: 'Jersey Mike\'s Arena', from: '2021-11-01' }],
+    // OpenStreetMap point for the building (Jersey Mike's Arena, 83), not an entrance.
+    location: [-74.441356, 40.5251962],
+    capacity: [{ seats: 8000, setup: 'basketball', note: 'Reported (basketball). Rutgers, Livingston campus; "the RAC". The 2019 rename is by year, the 2021 one by month. Reported: 8,000 basketball / multipurpose seats; current university page confirms sports and naming, without retrieved exact inventory. Source: https://scarletknights.com/sports/2021/11/1/jersey-mikes-arena' }],
+    roof: 'indoor',
+  },
+  'shoretown-ballpark': {
+    id: 'shoretown-ballpark',
+    metroId: 'new-york',
+    // Missing larger venue.
+    names: [{ name: 'FirstEnergy Park' }, { name: 'ShoreTown Ballpark', from: '2022-03-18' }],
+    // OpenStreetMap point for the building (ShoreTown Ballpark, 2), not an entrance.
+    location: [-74.1868893, 40.0750723],
+    capacity: [{ seats: 6588, setup: 'baseball', note: 'Official (baseball). Jersey Shore BlueClaws, Lakewood. The berm is extra and unsized. Official: 6,588 seats plus GA berm; separate berm maximum unconfirmed. Do not interpret 6,588 as total event maximum. Source: https://www.mlb.com/milb/news/featured/visit-shoretown-ballpark-home-of-the-jersey-shore-blueclaws?t=mlb-pipeline-coverage' }],
+    roof: 'open',
+  },
+  'td-bank-ballpark': {
+    id: 'td-bank-ballpark',
+    metroId: 'new-york',
+    // Missing larger venue.
+    names: [{ name: 'TD Bank Ballpark' }],
+    // OpenStreetMap point for the building (TD Bank Ballpark, Main Street), not an entrance.
+    location: [-74.5531525, 40.5607364],
+    capacity: [{ seats: 6100, setup: 'baseball', note: 'Official (baseball). Somerset Patriots, Bridgewater. Official owner: 6,100 seats; lawn / concert alternatives unconfirmed. Source: https://www.somersetcountynj.gov/visitors/td-bank-park-and-the-somerset-patriots' }],
+    roof: 'open',
+  },
+  'sprague-field': {
+    id: 'sprague-field',
+    metroId: 'new-york',
+    // Missing larger venue.
+    names: [{ name: 'Sprague Field' }],
+    // OpenStreetMap point for the building (Sprague Field, Normal Avenue), not an entrance.
+    location: [-74.2011811, 40.8585941],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Official (football). Montclair State. Paid public use per event. Official: 6,000 seats for football / field hockey / lacrosse; paid-public event frequency should be checked per event. Source: https://montclairathletics.com/sports/2012/2/15/GEN_0215125034.aspx' }],
+    roof: 'open',
+  },
+  'msu-soccer-park': {
+    id: 'msu-soccer-park',
+    metroId: 'new-york',
+    // Threshold venue.
+    names: [{ name: 'MSU Soccer Park at Pittser Field' }, { name: 'MSU Soccer Park' }],
+    // OpenStreetMap point for the building (Pittser Field, Carlisle Road), not an entrance.
+    location: [-74.2004401, 40.8608605],
+    capacity: [{ seats: 5000, setup: 'soccer', note: 'Official (soccer). Montclair State. The official history (3,000 in 2017 plus 1,500 in 2018) does not add to its 5,000; the stated total is used. Official: 5,000 seats current; official text gives 3,000 in 2017 plus 1,500 in 2018 while claiming total 5,000. Arithmetic is inconsistent; do not infer the missing seats or a further change. Prefer stated current total. Source: https://montclairathletics.com/facilities/msu-soccer-park/3' }],
+    roof: 'open',
+  },
+  'skylands-stadium': {
+    id: 'skylands-stadium',
+    metroId: 'new-york',
+    names: [{ name: 'Skylands Stadium' }],
+    // Reported venue point (Wikipedia; OpenStreetMap has no entry), not a gate.
+    location: [-74.7101222, 41.125917],
+    capacity: [{ seats: 4200, standing: 4500, setup: 'baseball', note: 'Reported (baseball). Sussex County Miners, Augusta. The field was named Columbus Field in Oct 2021; the stadium name is unchanged. Reported: 4,200 seats / 4,500 including standing room. Official current site confirms Miners and ticketed seasonal events, without numerical seating inventory retrieved. Source: https://en.wikipedia.org/wiki/Skylands_Stadium' }],
+    roof: 'open',
+  },
+  'loews-jersey-theatre': {
+    id: 'loews-jersey-theatre',
+    metroId: 'new-york',
+    // Reopening announced, not yet operating.
+    names: [{ name: 'Loew\'s Jersey Theatre' }, { name: 'Loew\'s Jersey' }],
+    // OpenStreetMap point for the building (Loew's Jersey Theatre, 54), not an entrance.
+    location: [-74.0646602, 40.732415],
+    capacity: [{ seats: 3000, standing: 4000, note: 'Reported. Jersey City, Journal Square. Closed for restoration; the grand-opening weekend is scheduled for Nov 13, 2026. Nothing lists here until it reopens. Official: flexible audience range 2,600–4,000, without setup assignment. Contractor reports approximately 3,000 seated / 4,000 standing; older city plan said 3,300 seated. Use current operator range; exact seated count unconfirmed. Source: https://loewsjersey.com/about' }],
+    roof: 'indoor',
+  },
+  'william-paterson-rec-center': {
+    id: 'william-paterson-rec-center',
+    metroId: 'new-york',
+    names: [{ name: 'William Paterson University Recreation Center' }, { name: 'William Paterson Rec Center' }],
+    // OpenStreetMap point for the building (William Paterson University, 300), not an entrance.
+    location: [-74.1962763, 40.9477244],
+    capacity: [{ seats: 3200, setup: 'basketball', note: 'Official (basketball). Wayne. 3,800 with floor seating; a rental page says 3,000 for concerts. Official: 3,200 bleacher seats / 3,800 with floor seating; another university rental page says 3,000 for concerts. Prefer configuration-specific current room page, retaining concert-specific alternative. Source: https://www.wpunj.edu/auxiliary-services/events-and-conference-scheduling/main-campus/rec-center' }],
+    roof: 'indoor',
+  },
+  'wagner-college-stadium': {
+    id: 'wagner-college-stadium',
+    metroId: 'new-york',
+    names: [{ name: 'Wagner College Stadium' }, { name: 'Hameline Field at Wagner College Stadium' }],
+    // OpenStreetMap point for the building (Wagner College, Grand Avenue), not an entrance.
+    location: [-74.0935587, 40.6147187],
+    capacity: [{ seats: 3700, setup: 'football', note: 'Reported (football). Staten Island. A sponsorship page claims 5,000 with no setup; unresolved. Reported current: 3,700 seats; official sponsorship page claims 5,000, setup unspecified. Use 3,700 provisionally for football; larger official figure unresolved. Source: https://en.wikipedia.org/wiki/Wagner_College_Stadium' }],
+    roof: 'open',
+  },
+  'asbury-park-convention-hall': {
+    id: 'asbury-park-convention-hall',
+    metroId: 'new-york',
+    // Closed / restoration pending.
+    names: [{ name: 'Convention Hall' }],
+    // OpenStreetMap point for the building (Asbury Park Convention Hall, Asbury Park Boardwalk), not an entrance.
+    location: [-73.9980604, 40.2237365],
+    capacity: [{ seats: 3600, note: 'Reported. Asbury Park boardwalk; shares the building with the Paramount Theatre. Closed to public events; the city announced a restoration award in Aug 2026, not a reopening. Kept for past dates. Reported planning inventory: 3,600 seated. Current event configuration unavailable because room is inactive; do not schedule as an active room. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
+    roof: 'indoor',
+  },
+  'brooklyn-hangar': {
+    id: 'brooklyn-hangar',
+    metroId: 'new-york',
+    names: [{ name: 'Brooklyn Hangar' }],
+    // OpenStreetMap point for the building (The Brooklyn Hangar, 2), not an entrance.
+    location: [-74.0214726, 40.6497305],
+    capacity: [{ seats: 3000, note: 'Official. Sunset Park. The promoter says a 3,000-person venue; seated and standing are not split. Official promoter: 3,000-person venue; seated / standing split not published in retrieved description. Source: https://www.degpresents.com/venues' }],
+    roof: 'indoor',
+  },
+  'pratt-recreation-center': {
+    id: 'pratt-recreation-center',
+    metroId: 'new-york',
+    // Public-ticketing provisional.
+    names: [{ name: 'Pratt Recreation Center' }],
+    // OpenStreetMap point for the building (Long Island University C W Post Campus, University Drive), not an entrance.
+    location: [-73.5967133, 40.820249],
+    capacity: [{ seats: 3000, setup: 'basketball', note: 'Official (basketball). LIU Post, Brookville; same campus as the Tilles Center. Regular ticketed public events unconfirmed (provisional). Official: 3,000-seat gym with three courts; regular current ticketed public-event schedule unconfirmed. Provisional room, not a confirmed active concert venue. Source: https://www.liuathletics.com/facilities/pratt-recreation-center/8' }],
+    roof: 'indoor',
+  },
+  'amazura': {
+    id: 'amazura',
+    metroId: 'new-york',
+    names: [{ name: 'Amazura' }, { name: 'Club Amazura' }],
+    // OpenStreetMap point for the building (Amazura, 91-12), not an entrance.
+    location: [-73.8103957, 40.7001801],
+    capacity: [{ seats: 3000, note: 'Reported. Jamaica, Queens. Ticketed 2026 concerts are documented; the 3,000+ figure is a directory\'s. Reported: 3,000+ audience; seated / standing configuration not confirmed. Public ticketed 2026 concerts are documented; treat numerical maximum as provisional. Source: https://www.dancehallmag.com/2026/08/30/news/anthony-b-headlines-the-crowning-of-anthony-b-concert-at-club-amazura-in-queens-nyc.html' }],
+    roof: 'indoor',
+  },
+  'harwood-arena': {
+    id: 'harwood-arena',
+    metroId: 'new-york',
+    // Public-ticketing provisional.
+    names: [{ name: 'Harwood Arena' }],
+    // OpenStreetMap point for the building (Harwood Arena, Conant Street), not an entrance.
+    location: [-74.2375266, 40.6804431],
+    capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). Kean University, Union. Regular paid events unconfirmed (provisional). Official: 2,500 seated for competition. Regular paid-event frequency not separately established; public competition use confirmed. Source: https://keanathletics.com/sports/2019/5/9/information-facilities-harwoodarena.aspx' }],
+    roof: 'indoor',
+  },
+  'mazzella-field': {
+    id: 'mazzella-field',
+    metroId: 'new-york',
+    // Public-ticketing provisional.
+    names: [{ name: 'Mazzella Field' }],
+    // OpenStreetMap point for the building (Mazzella Field, Beechmont), not an entrance.
+    location: [-73.7854104, 40.9267657],
+    capacity: [{ seats: 2400, note: 'Official. Iona, New Rochelle; beside the Hynes Athletics Center. Paid admission unconfirmed (provisional). Official: 2,400 spectators maximum; seating / standing split not specified. Current paid-admission frequency unconfirmed. Source: https://ionagaels.com/facilities/mazzella-field/11' }],
+    roof: 'open',
+  },
+  'st-james-theatre': {
+    id: 'st-james-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'St. James Theatre' }],
+    // OpenStreetMap point for the building (St. James Theatre, 246), not an entrance.
+    location: [-73.9881584, 40.7579845],
+    capacity: [{ seats: 1721, note: 'Reported. Broadway house; listed on its concert residencies (Springsteen, 2021). The count varies with the pit and the production. Reported: 1,721 seats at 2021 Springsteen residency; current inventory can vary with orchestra pit / production. Standing not established. Source: https://www.broadwaynews.com/springsteen-plays-to-first-full-capacity-audience-on-broadway-in-more-than-a-year/' }],
+    roof: 'indoor',
+  },
+  'palace-theatre-nyc': {
+    id: 'palace-theatre-nyc',
+    metroId: 'new-york',
+    names: [{ name: 'Palace Theatre' }],
+    // OpenStreetMap point for the building (Palace Theater, 1564), not an entrance.
+    location: [-73.9846166, 40.7589003],
+    capacity: [{ seats: 1743, note: 'Reported: 1,743 before the 2018 closure.' }, { seats: 1648, fromYear: 2024, note: 'Reported. Times Square; closed 2018–2024 while the theater was raised inside the TSX Broadway development. The guest entrance is now 160 West 47th Street. Reported: 1,648 seated since 2024; reported prior 1,743 before 2018 closure. Standing layout not established. Source: https://en.wikipedia.org/wiki/Palace_Theatre_(New_York_City' }],
+    roof: 'indoor',
+  },
+  'hofstra-soccer-stadium': {
+    id: 'hofstra-soccer-stadium',
+    metroId: 'new-york',
+    // Public-ticketing provisional.
+    names: [{ name: 'Hofstra Soccer Stadium' }, { name: 'Captains Field at Hofstra Soccer Stadium', from: '2024-09-28' }],
+    // The research's official routing point, not an entrance.
+    location: [-73.599069, 40.718006],
+    capacity: [{ seats: 1600, setup: 'soccer', note: 'Reported (soccer). Hofstra north campus. Whether tickets are required varies (provisional). Reported: 1,600 seats; official current facility page confirms name and location. Current public ticket requirement varies / not independently established. Source: https://gohofstra.com/facilities/hofstra-soccer-stadium/6' }],
+    roof: 'open',
+  },
+  'paramount-theatre-asbury-park': {
+    id: 'paramount-theatre-asbury-park',
+    metroId: 'new-york',
+    // Closed / restoration pending. Named with its town so a live "Paramount Theatre" listing matches Middletown's, not this closed room.
+    names: [{ name: 'Paramount Theatre, Asbury Park' }, { name: 'Asbury Park Paramount Theatre' }],
+    // OpenStreetMap point for the building (Paramount Theatre, Ocean Avenue), not an entrance.
+    location: [-73.9988376, 40.2238818],
+    capacity: [{ seats: 1600, note: 'Reported. Asbury Park boardwalk, the auditorium beside Convention Hall. Inactive while the restoration proceeds; kept for past dates. Reported planning inventory: 1,600 seated. Current post-restoration inventory unconfirmed; inactive record for historical logs. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
+    roof: 'indoor',
+  },
+  'canavan-arena': {
+    id: 'canavan-arena',
+    metroId: 'new-york',
+    // Public-ticketing provisional.
+    names: [{ name: 'Canavan Arena' }],
+    // OpenStreetMap point for the building (Schaefer Athletic Center, Field House Road), not an entrance.
+    location: [-74.0257418, 40.7443768],
+    capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Stevens, Hoboken. Routine paid admission unconfirmed (provisional). Official: 1,500 audience; seated competition use. No verified standing alternate. NCAA / conference event use documented; routine paid admission unconfirmed. Source: https://stevensducks.com/sports/2012/9/25/Canavan.aspx' }],
+    roof: 'indoor',
+  },
+  'satow-stadium': {
+    id: 'satow-stadium',
+    metroId: 'new-york',
+    names: [{ name: 'Robertson Field at Satow Stadium' }, { name: 'Satow Stadium' }],
+    // OpenStreetMap point for the building (Baker Athletics Complex, Manhattan Community Board 12), not an entrance.
+    location: [-73.9159148, 40.8730025],
+    capacity: [{ seats: 1500, setup: 'baseball', note: 'Official (baseball). Columbia, Baker Athletics Complex (Inwood). Paid-admission frequency unconfirmed. Official: 1,500 seats; public baseball use. Paid-admission frequency unconfirmed, including whether postseason tickets use full inventory. Source: https://gocolumbialions.com/facilities/robertson-field-at-satow-stadium/20' }],
+    roof: 'open',
+  },
+  'park-avenue-armory': {
+    id: 'park-avenue-armory',
+    metroId: 'new-york',
+    names: [{ name: 'Park Avenue Armory' }, { name: 'Wade Thompson Drill Hall' }],
+    // OpenStreetMap point for the building (Park Avenue Armory, 643), not an entrance.
+    location: [-73.9655036, 40.7672334],
+    capacity: [],
+    roof: 'indoor',
+  },
+  'panzer-athletic-center': {
+    id: 'panzer-athletic-center',
+    metroId: 'new-york',
+    names: [{ name: 'Panzer Athletic Center' }],
+    // OpenStreetMap point for the building (Panzer Athletic Center, College Avenue), not an entrance.
+    location: [-74.2003737, 40.858309],
+    capacity: [{ seats: 1200, setup: 'basketball', note: 'Reported (basketball). Montclair State, near Sprague Field. Paid public events unconfirmed. Reported: 1,200 seats; university confirms home sports. Paid-public-event frequency unconfirmed. Source: https://montclairathletics.com/facilities/panzer-athletic-center/5' }],
+    roof: 'indoor',
+  },
+  'paramount-theatre-middletown': {
+    id: 'paramount-theatre-middletown',
+    metroId: 'new-york',
+    names: [{ name: 'Paramount Theatre' }],
+    // OpenStreetMap point for the address (Paramount Theatre, 17), not an entrance.
+    location: [-74.4208878, 41.4443071],
+    capacity: [{ seats: 1100, note: 'Official. Middletown, Orange County NY (17 South Street). No standing room; the operator prohibits it. Official: 1,100 seated theater. Operator explicitly prohibits standing room; no GA standing setup. No post-2016 numerical change established. Source: https://middletownparamount.com/about-us/' }],
+    roof: 'indoor',
+  },
+  'strand-theater-lakewood': {
+    id: 'strand-theater-lakewood',
+    metroId: 'new-york',
+    names: [{ name: 'The Strand Theater' }, { name: 'Strand Theater' }],
+    // OpenStreetMap point for the address (Strand Theater, 400), not an entrance.
+    location: [-74.2155111, 40.0942531],
+    capacity: [{ seats: 1042, note: 'Official. Lakewood, Ocean County; the Ocean County Center for the Arts. Official state cultural-trust inventory: up to 1,042 seated. Standing configuration unconfirmed. Source: https://nj.gov/state/culturaltrust/assets/pdf/2026-ct-qualified-orgs-0124.pdf' }],
+    roof: 'indoor',
+  },
+  'golden-dome': {
+    id: 'golden-dome',
+    metroId: 'new-york',
+    // Public-ticketing provisional.
+    names: [{ name: 'The Golden Dome Athletic Center' }, { name: 'Golden Dome' }],
+    // OpenStreetMap point for the building (Golden Dome Athletic Center, 42), not an entrance.
+    location: [-74.1745525, 40.739344],
+    capacity: [{ seats: 1002, setup: 'basketball', note: 'Official (basketball). Rutgers–Newark. An older catalog said 2,000; the current room page is used. Routine paid events unconfirmed (provisional). Official: 1,002 seats current athletics page; older official graduate catalog says 2,000. Prefer current room page; change year unconfirmed. Current routine paid-public event frequency unconfirmed. Source: https://rutgersnewarkathletics.com/facilities/the-golden-dome/55' }],
+    roof: 'indoor',
   },
   // ---- San Diego, from docs/research/city-builds/san-diego/san-diego-venue-table-answer.md (Oct 6, 2026) ----
   'san-diego-stadium': {

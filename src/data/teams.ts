@@ -678,7 +678,11 @@ const LIST: Team[] = [
   team('fiu-mbb', "FIU Panthers Men's Basketball", 'FIU MBB', "College men's basketball", 'basketball', 'miami', 'FIU', ['FIU']),
   team('miami-fc', 'Miami FC', 'Miami FC', 'USL Championship', 'soccer', 'miami', 'MFC'),
   team('fort-lauderdale-united', 'Fort Lauderdale United FC', 'Fort Lauderdale Utd', 'USL Super League', 'soccer', 'miami', 'FTL'),
-  team('rutgers', 'Rutgers Scarlet Knights', 'Rutgers', 'College football', 'football', undefined, 'RUTG'),
+  // Rutgers is a New York home team since Oct 16, 2026 (SHI Stadium and Jersey Mike's Arena came in with the small-rooms research).
+  // The football id stays 'rutgers': the expected-draw index names it as an opponent.
+  team('rutgers', 'Rutgers Scarlet Knights', 'Rutgers', 'College football', 'football', 'new-york', 'RUTG', ['Rutgers FB', 'Rutgers Football']),
+  team('rutgers-mbb', "Rutgers Scarlet Knights Men's Basketball", 'Rutgers MBB', "College men's basketball", 'basketball', 'new-york', 'RUTG', ['Rutgers']),
+  team('rutgers-wbb', "Rutgers Scarlet Knights Women's Basketball", 'Rutgers WBB', "College women's basketball", 'basketball', 'new-york', 'RUTG', ['Rutgers']),
   team('washington-huskies', 'Washington Huskies', 'Huskies', 'College football', 'football', undefined, 'WASH'),
   team('bowling-green', 'Bowling Green Falcons', 'Bowling Green', 'College football', 'football', undefined, 'BGSU'),
   team('rice', 'Rice Owls', 'Rice', 'College football', 'football', undefined, 'RICE'),

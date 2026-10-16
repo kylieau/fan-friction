@@ -246,6 +246,10 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '171', metroId: 'new-york', teamId: 'columbia-football', sport: 'football' },
   { path: 'football/college-football', espnId: '2619', metroId: 'new-york', teamId: 'stony-brook-football', sport: 'football' },
   { path: 'football/college-football', espnId: '2230', metroId: 'new-york', teamId: 'fordham-football', sport: 'football' },
+  // Rutgers (Piscataway), Oct 16, 2026: SHI Stadium and Jersey Mike's Arena.
+  { path: 'football/college-football', espnId: '164', metroId: 'new-york', teamId: 'rutgers', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '164', metroId: 'new-york', teamId: 'rutgers-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '164', metroId: 'new-york', teamId: 'rutgers-wbb', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '1', metroId: 'atlanta', teamId: 'hawks', sport: 'basketball' },
   { path: 'basketball/wnba', espnId: '20', metroId: 'atlanta', teamId: 'dream', sport: 'basketball' },
   // Bay Area (docs/research/city-builds/bay-area/bay-area-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
@@ -604,6 +608,9 @@ const VENUE_BY_NAME: Record<string, string> = {
   'metlife stadium': 'metlife-stadium',
   'yankee stadium': 'yankee-stadium',
   'citi field': 'citi-field',
+  'shi stadium': 'shi-stadium',
+  "jersey mike's arena": 'jersey-mikes-arena',
+  'rutgers athletic center': 'jersey-mikes-arena',
   'sports illustrated stadium': 'sports-illustrated-stadium',
   'prudential center': 'prudential-center',
   'lawrence a. wien stadium': 'wien-stadium',
