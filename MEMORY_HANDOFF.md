@@ -1,101 +1,93 @@
 # Fan/Friction: handoff snapshot
 
-Overwritten each session. Deferred work and history live in `BACKLOG.md`: open questions are at its top (the K-list), build follow-ups under **Next** ("Build 5 follow-ups" is newest). Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (newest sections at the bottom). **Build 5's source of truth is `docs/build-5/build-notes-5.md`; its full snapshot is `docs/build-5/handoff-5.md`. Read that first.**
+Overwritten each session. Deferred work and history live in `BACKLOG.md`: open questions are at its top (the K-list), build follow-ups under **Next** ("Past dates" is newest, then "Build 5 follow-ups"). Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (newest sections at the bottom). Build 5's snapshot is still `docs/build-5/handoff-5.md`.
 
-_Last synced: Oct 15, 2026, Claude Code (Opus 5.5), at `main`'s head, with everything pushed and the tree clean. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
+_Last synced: Oct 16, 2026, Claude Code (Opus 5.5), at `main`'s head, with everything pushed and the tree clean. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
 
 ## Current state
-- **Build 5 is built, pushed and verified by the checks.** `npm run build` and all five check scripts pass: `titles-check`, `event-types-check`, `crowd-range-check`, `city-build-check` and `addon-filter-check`. Status by notes item, judgment calls and the advisor log are in `docs/build-5/handoff-5.md`.
-- **Follow-up rounds after the build (Kylie, Oct 14), all committed:**
-  - **Row names:** "Game 3" shortens to "G3" past 32 characters, and the round and number never split across lines.
-  - **Hourly weather:** shows a moon after dark (`formula/sun.ts`).
-  - **Stub titles:** stubs made from a catalog event are retitled once per log (`retitleStubs`).
-  - **Venue figures:** Wrigley car share 0.421. Hollywood Casino Amphitheatre 20,000 (estimated, with lawn). Greene Stadium 7,086 (reported).
-  - **Date page:** says "Verdict", not "Forecast", and has no lock time. Settings states that Home always shows today's three biggest events.
-  - **How a city's fans travel, in plain words:** `src/data/cityTravel.ts`. Shown in the map key and in How estimates work.
-  - **New York** stays hub, with its own sentence and four sourced car shares.
-  - **Live screening:** a new type and icon for a watch party in a dome or cinema. A screening never counts toward friction.
-  - **Add-on filter:** four bugs fixed (`sources/addOns.ts`, with a check script).
-  - **docs-tidy:** skips a doc that was deleted but is still tracked.
-  - **Personal log:** moved out of the repo into the git-ignored `private/kylie-log/`.
-- **Oct 15 round (Kylie's notes after build 5; all committed, checks pass):**
-  - **Every game can be stubbed** (`src/data/gameStub.ts`): every Schedule/Results row on a team page and every team row in Faves opens a page with "+ Stub it". A game held under another id (a hand seed) is matched by date and teams; a game held nowhere gets a page built from the schedule (no read, no crowd), which its stub, a friend's line and a cold link (via the team's schedule) all reopen. Past team-page rows now open the event page; upcoming covered ones still open the date.
-  - **Event labels, round 3 (built Oct 15; `docs/build-5/mosaic/labels/`, product-decisions):** the matchup is the title; one label per event on its own line in lists, Faves, the team page ("at Brewers") and the event page; inline "(NLCS G6, if necessary)" on Local Competition bars and feed sentences; chips "Dodgers (NLCS G3)", wrapping or taking the team code by drawn width (`fitChipName`); low-stakes labels off chips. One model (`eventLabel`, `splitTitleLabel` in `eventTitle.ts`; `TitleText` / `LabelLine`). Saved stubs retitle once (`labels-r3`). Left: BACKLOG "Labels round 3, left from the note".
-  - **Back returns where you came from** on every inner page (`BackLink`; cold open falls back to the parent).
-  - **No comma before the game number** ("NLCS Game 3"); separators across grouped lists are one `ListBand`; team codes partly applied from the research (rest waits on Kylie, BACKLOG). **Badges use the team's own code**, the one fans know from TV scorebugs, league sites, score sites and shorthand (the 578 stored codes are unaudited; research prompt `docs/research/topics/team-codes-prompt.md`, with the current list beside it, for Kylie to run).
-  - **Rows:** the type icon hangs left so title text, its second line and the venue share one edge (measured, 209 rows). **Date page:** Attending and the lineup carry their titles inside their cards. **Faves:** a badges strip (builder's call, no mock: Kylie to look), one-line titles, the divider by the read. **Friends:** a "Find people" bar (not screenshotted signed in). **Favorites** pick the right team when two share a name (LA Clippers, not Columbus's).
-  - **Test data:** the test-account seed and the Example rows use real events on real dates; the seed was re-run on the test accounts.
-  - **Build fix:** the nightly forecast index outgrew TypeScript (TS2590) and stopped deploys; `scripts/forecast-index.mjs` now writes it as parsed JSON (same rows).
-- **Migration 0026 (stub privacy) has been run (Kylie, Oct 14).** Do not list it as a task again. Only the build and the advisor review have checked live enforcement, and neither proves it works (see O2 below).
-- **Cosm can't be listed.** Its terms forbid automated collection without written consent, and it has no feed. This is recorded in `docs/reference/data-sources.md` under "Checked and not usable".
+All committed, pushed and checked with `npm run build`. UI changes were checked with Playwright screenshots at phone size.
 
-## Changes made this session
-Oct 15: the files named in the Oct 15 round (see `git log` from `ccbaedc`). Oct 14: every file named above, plus the research prompts and answers under `docs/research/topics/` and `docs/research/city-builds/new-york/`, the handoff-5, BACKLOG, product-decisions and data-sources docs, and the other session's private-log cleanup (`3f64fd3`, committed here at Kylie's request). Nothing is uncommitted.
+- **Past dates are in the catalog** (`docs/product/past-seasons-proposal.md`):
+  - Loaders: `scripts/past-dates-load.mjs` (the MLB and ESPN feeds by date, team or season) and `scripts/research-events-load.mjs` (a research answer's CSV, several answers merged, with grounds placed as points through `--places`).
+  - A rebuilt date's read says "Estimated from past schedules."
+  - Feeds were added for the Sparks, the Storm and the Tigers. Catalog reads page past Supabase's 1,000-row cap (`allRows`).
+  - The output SQL is private (`private/kylie-log/records/`). Kylie has run everything through **0038**; nothing is waiting to be pasted.
+- **Listing vs. friction (Kylie, Oct 16):** the app lists from about 1,000; the 5,000 floor decides only what feeds friction. The theater rule is retired.
+- **Sport labels and college rounds (Kylie, Oct 15; product-decisions):**
+  - The sport goes in the label slot. Alone it's spelled out ("Men's Basketball"); paired it's the code ("WBB · Round of 64").
+  - MBB/WBB, so men's is labeled whenever women's is.
+  - NCAA rounds read Round of 64 / Round of 32 / Sweet 16; hockey reads Regional semifinal / Regional final.
+  - Neutral sites follow ESPN's flag.
+- **Multi-day events (Kylie, Oct 16, decided and built):** one day is sized by the kind of figure published.
+  - A per-day figure, or a sold-out daily cap, is the day's crowd.
+  - Cumulative admissions are averaged over the days open.
+  - Multi-day passes are never divided.
+  - A figure of unclear kind gives an "at least" floor, used only when it clears 5,000.
+  - Held: unique-attendee multipliers, day-of-week weights, borrowing from a nearby year.
+  - Record: `docs/archive/proposals/multiday-sizing-proposal.md`. Code: `crowdOf` in the research loader. The flag is `atLeast` on a crowd figure (`crowdAtLeast` on a stub).
+- **"At least" display (Kylie, Oct 16):**
+  - "6.7k+" wherever a crowd is shortened, with no "~". Shown on map chips, cards, timeline, lineup, friction rows, stubs and Your Year.
+  - On the event page: "At least" in the small text face beside the big number, on one line. Compare and the share line read "at least 6,667".
+  - One helper set: `atLeastMark`, `entryAtLeastMark`, `crowdFull`.
+- **Events placed at a point or route open their page.** Festival grounds, race cards and the FIFA Fan Festival used to say "Event not found". `crowdPoints(..., withPlaces)` is used only by the event page; the map is unchanged. Those events no longer get a "theater" size tag.
+- **Seller venue names (`venueMatch.ts`):**
+  - Matching now ignores case, dashes, curly quotes and Theatre/Theater/Centre spelling. It drops a city or state tag, a parent building ("-Adrienne Arsht PAC", "at the Broward Center") or the city's name ("Royale Boston").
+  - When two rooms share a name, the show's date picks the one using it (Raleigh's Red Hat moves in 2027).
+  - All 15 rooms the feed couldn't place on Oct 15 match in a direct test. The first real confirmation is the **Oct 17 nightly run**: the catalog step's log line "rooms the table lacks".
+- **New York: 66 rooms from about 1,000 to 5,000** (`small-rooms-big-cities-answer.md`, first installment; Kylie's OK, Oct 16).
+  - Locations are reference points, not entrances. Brooklyn Storehouse sits at the Navy Yard's main address and Purchase's arts center at the campus point.
+  - The three 5,000+ rooms were measured for hard access; none is strained.
+  - `scripts/venue-access.mjs --metro=` no longer drops the 27 index rows that other city builds wrote without a table row.
+- **Research answers saved in the repo:** multi-day attendance (closed), small rooms (NY installment), sport labels, concert nights (private).
 
-## Key decisions in force (newest; older ones are in product-decisions and BACKLOG)
-- **Mockups illustrate the notes, nothing more (Kylie, Oct 14).** They are never the goal and never fill a gap the notes leave open. Raise any difference between a mockup and the notes.
-- **Live screening (Kylie, Oct 14):** a Cosm or cinema showing has its own type and never feeds friction. Being ticketed and/or gated by security (more than a bar's door staff) is a strong consideration, not a threshold. How that consideration combines with the type is still open.
-- **City travel line (Kylie, Oct 14):** describe how fans travel rather than name the city type, with one sentence pattern per type. Atlanta, Ottawa–Gatineau, Las Vegas and New York have their own sentence and keep their type. The shares behind the patterns:
+## Changes made this session (Oct 15–16)
+Commits `8657eb59` through `3fc59cb3` on `main`, all from this session; the nightly "Save the schedule" commits in between are the scheduled job's. Main areas:
+- Data and sources: `src/data/sources/` (espn, mlb, catalog, venueMatch, roundLabel, ticketmaster, seatgeek), `src/data/venues.ts`, `teams.ts`, `crowdFigures.ts`, `personalLog.ts`, `formulaRead.ts`, `types.ts`.
+- Screens and pieces: `src/lib/eventTitle.ts`, `src/map/crowdPoints.ts`, the event, date and Compare screens, `src/components/`.
+- Scripts: `scripts/past-dates-load.mjs`, `research-events-load.mjs`, `venue-access.mjs`.
+- Docs: `docs/product/`, `docs/research/`, BACKLOG.
 
-  | Type | Car share | Spill |
-  |---|---|---|
-  | sprawl | 85% | 15% |
-  | hub | 85% | 15% |
-  | transit | 40% | 10% |
+Private files changed only under `private/`. Nothing is uncommitted.
 
-  A venue's own `carShare` overrides its city's type. Taxis and rideshare count as cars.
-- **Tag filter:** picking two tags shows stubs with either one (Kylie, Oct 14).
-- **Chip punctuation:** " · " goes before a playoff round ("Dodgers · NLCS G3").
-- **Crowd size range:** applies to Explore, date pages and search. Home keeps today's three biggest events, and a favorite's page shows all of its events.
-- **Imported log:** retitling it is on hold until Kylie adds her research. Do not reopen those four questions; they are in `private/kylie-log/`.
-- **Build 4 rules still apply** (tags in `userTags`, a game belongs to its venue's city, °C in Canada and Mexico, the Stub it sheet, the words, the read-box border). They are in product-decisions under "Oct 13, 2026 — build 4".
+## Key decisions in force (newest first; older ones are in product-decisions and BACKLOG)
+- **Copy-only changes need no mock (Kylie, Oct 16):** "if the only change is the copy, that's fine, no need for a mock." This applies on the Map too. Layout, size and new pieces still get a mock first.
+- **Big figures never wrap (Kylie, Oct 16):** "I dislike the wrapped line." A qualifier goes in the small text face beside the number. Flagging a wrap is welcome.
+- **Listing floor about 1,000, friction floor 5,000** (Oct 16), and the theater rule is retired. **Multi-day sizing** as above (Oct 16). **Sport labels, MBB/WBB, Round of 64** (Oct 15).
+- **Event facts are public; personal attendance is private.** Event facts loaded for past dates go in the shared catalog like any other event. Nothing in the repo may tie a date to a person's attendance: no date lists, no "her nights". Lists, SQL and research briefs naming dates stay in `private/kylie-log/`.
+- **Mockups illustrate the notes, nothing more (Kylie, Oct 14).** Raise any difference between a mockup and the notes.
+- **Live screening (Kylie, Oct 14):** a Cosm or cinema showing has its own type and never feeds friction.
+- **City travel line (Kylie, Oct 14):** describe how fans travel, one sentence per type. Car shares: sprawl 85% (spill 15%), hub 85% (15%), transit 40% (10%). A venue's own `carShare` overrides its type.
+- **Earlier rules still in force:**
+  - The tag filter matches either tag.
+  - " · " goes before a playoff round.
+  - The crowd size range applies to Explore, date pages and search.
+  - Build 4's rules are in product-decisions under "Oct 13, 2026 — build 4".
 - **Testing notes:**
-  - **Install:** never use `npm i --no-save`, because it removed `playwright-core` once. For a one-off package, `npm pack` it into the scratchpad.
-  - **Browser:** use Chromium at `/usr/bin/chromium` with the swiftshader flags.
-  - **Skip the city picker:** set `localStorage['fan-friction:home-metro'] = JSON.stringify('la')`.
-  - **Local log:** goes in `localStorage['fan-friction:your-nights']`.
-  - **Event pages outside the home city:** add `?metro=<id>` to the URL.
-  - **Scrolling:** the page scrolls inside `.screen.page`.
-  - **Layout:** measure element edges with a Playwright script before saying something is fixed everywhere.
-  - **Scripts:** keep helper scripts in the session scratchpad.
-  - **Game pages carry router state:** test a schedule row by tapping it, not by opening its URL (a cold URL now resolves through the team's schedule, so both work, but the tap is the user's path).
-  - **No Prettier config:** never run `prettier --write` on a file; it reformats the whole thing.
-  - **Stopping vite:** use `kill $(lsof -ti:3001)`, never `pkill`.
+  - Chromium is at `/usr/bin/chromium` with `--no-sandbox`, driven through `playwright-core`.
+  - Skip the city picker with `localStorage['fan-friction:home-metro'] = JSON.stringify('la')`.
+  - The page scrolls inside `.screen.page`; use `scrollIntoView` on an element.
+  - Event pages outside the home city need `?metro=<id>`.
+  - Keep helper scripts in the session scratchpad. A temporary script under `scripts/` must be deleted after use.
+  - Never `npm i --no-save` or `prettier --write`. Stop vite with `kill $(lsof -ti:3001)`.
+  - Measure edges and heights before saying a layout is fixed everywhere.
 
 ## Kylie's manual steps
-1. **Cosm:** email support@cosm.com to ask for written consent or a schedule feed. Building-figure choices per venue are in BACKLOG.
-2. 🚩 **SeatGeek:** Kylie is handling the free client id separately. It goes in the `SEATGEEK_CLIENT_ID` Actions secret.
-3. **Paste terms:** the automated-access clauses for AXS, DICE and Goldenvoice.
-4. **Phone checks:**
-   - Add to calendar on an upcoming event.
-   - The level pill on the Stub it sheet and on the event page.
-   - The build 4 round trip: add a tag, star a city, enter seats, then sign out and back in.
-5. **Ticketmaster id catch-up:** `node scripts/ticketmaster-venues.mjs --all` needs the nightly job's key.
-6. **One reading to confirm:** "Okay, cause them" was read as changing the wording only for Atlanta, Ottawa–Gatineau and Las Vegas, not their types.
-7. **Codex (its Oct 13 note):**
-   - Before the first container rebuild, run `python3 .devcontainer/backup-codex.py`, then **Dev Containers: Rebuild Container**.
-   - After the rebuild, check the desktop SSH and iPhone chats. If mobile is unavailable, run `python3 .devcontainer/codex-remote-control.py status`.
-   - The private backup is in `private/devcontainer-state/latest`.
-   - Whether chats survive a stop/start or a rebuild stays unverified until that first rebuild.
+1. **Small-rooms research, next installment:** paste into the research tool: "Continue from the stopping point: finish New York (entrance coordinates, the name-history check, the candidate list), then Los Angeles including Orange and Ventura Counties." Save the answer beside its prompt.
+2. **Her own log items:** the open items under "Still open" in `private/kylie-log/open-questions.md`.
+3. **Cosm:** email support@cosm.com for written consent or a schedule feed.
+4. 🚩 **SeatGeek:** the free client id goes in the `SEATGEEK_CLIENT_ID` Actions secret (she's handling it).
+5. **Paste terms:** the automated-access clauses for AXS, DICE and Goldenvoice.
+6. **Phone checks:** Add to calendar; the level pill; the build 4 round trip (tag, star a city, seats, sign out and back in).
+7. **Ticketmaster ids:** `node scripts/ticketmaster-venues.mjs --all` needs the nightly job's key. This also picks up New York's new rooms.
+8. **Codex (its Oct 13 note):** before the first container rebuild, run `python3 .devcontainer/backup-codex.py`; afterwards check that chats survived (`python3 .devcontainer/codex-remote-control.py status`).
 
-## Open (details in `docs/build-5/handoff-5.md` and BACKLOG)
-0. **Kylie's next messages:** the aside rules for exhibitions and the rest; notes on Stubs, the Friends page and You; the date page's crowding and lineup social toggle (with Mock Mosaic). At the start of a resumed session, ask for these.
-1. **O1–O4** (handoff-5, "Open"):
-   - O1: what the privacy default actually changes.
-   - O2: a live test matrix for privacy enforcement and sync.
-   - O3: re-measure naming and layout.
-   - O4: reconcile the handoffs.
-2. **Read tile in Local Competition:** the notes said keep it, but both mockups dropped it, and I followed the mockups. Under the mockups rule, this needs Kylie's call.
-3. **Waiting on SeatGeek and the Ticketmaster API checks:** the layered add-on rule.
-4. **BACKLOG items:**
-   - Rankings and seeds per team (next build).
-   - Capacity rows per configuration.
-   - Per-venue spillover.
-   - Citi Field recheck.
-   - UBS Arena's definition of driving.
-   - The city-line wording for a venue with its own figure.
-   - The Atlanta and Ottawa type flips.
-   - The city follow-ups.
+## Open (details in BACKLOG under "Past dates" and in `docs/build-5/handoff-5.md`)
+1. **Check the Oct 17 nightly log** for "rooms the table lacks". Only Broward's Amaturo Theater and Abdo New River Room (rooms under 1,000) should remain.
+2. **Stubs that locked before their date was loaded never get its crowd** (30-day retry only). The planned fix is a one-time relock on the phone, in BACKLOG.
+3. **Building names on the largest room** (Carnegie Hall, Newark Symphony Hall): move them when a second 1,000+ room in the same building is added.
+4. **Headline uses the feed's title**, and **Local Competition bars skip events with no start time**.
+5. **O1–O4 from build 5:** the privacy default, the live privacy test matrix, re-measuring naming and layout, reconciling the handoffs. Also open: the Read tile in Local Competition (Kylie's call).
+6. **At the start of a resumed session:** ask Kylie for new UX notes, and ask whether she has more thoughts on the tournament labels.
 
 **Next command to run:**
 ```bash
