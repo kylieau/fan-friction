@@ -4,6 +4,7 @@
 
 import { degreesFor } from '../../config/metros';
 import { formatScore } from '../../config/scoreLabels';
+import { listTitle } from '../../lib/eventTitle';
 import { listedCapacity } from '../read';
 import type { CrowdEvent } from '../types';
 import { weatherForEvent } from '../weather';
@@ -47,7 +48,11 @@ export function combine(scores: number[]): number {
   return Math.min(10, top + 0.25 * extra);
 }
 
-/** "World Series Game 1 pulls on five other crowds." The seat figure is a detail line, not the headline. */
+/**
+ * "Dodgers vs. Mets pulls on five other crowds." The puller takes the same short name as the lineup rows under it
+ * (it read the feed's title, "Angels vs. Mets", over rows that said "Mets at Angels"). The seat figure is a detail
+ * line, not the headline.
+ */
 function crowdFightWhy(cf: DateCrowdFight): string {
   const big = cf.events.filter((row) => row.competitors.length > 0);
   if (cf.contestedSeats < 1000 || big.length === 0) return 'Nothing else big that date.';
@@ -55,7 +60,7 @@ function crowdFightWhy(cf: DateCrowdFight): string {
   const puller = cf.topPuller;
   if (puller && n >= 2) {
     const others = n - 1;
-    return `${puller.title} pulls on ${COUNT[others] ?? others} other ${others === 1 ? 'crowd' : 'crowds'}.`;
+    return `${listTitle(puller)} pulls on ${COUNT[others] ?? others} other ${others === 1 ? 'crowd' : 'crowds'}.`;
   }
   return `${COUNT[n] ?? n} crowds in a fight.`;
 }
