@@ -316,13 +316,13 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
     facts: { opener: true, storyline: true /* USA's first home World Cup match since 1994; opening ceremony beforehand */ },
   }),
   // Ticketed, four days. Placed as a point, not as the Coliseum's 77,500 seats, because a lawn
-  // festival is not a full stadium. Sized by its own crowd: Kylie, Oct 7, 2026, a multi-day
-  // total may be averaged into a per-day figure when it is labeled estimated.
+  // festival is not a full stadium. Sized by its own crowd: "visitors" doesn't say how they were
+  // counted, so the four-day total ÷ 4 is a floor (Kylie, Oct 16, 2026, multiday-sizing-proposal.md).
   {
     ...unsized('la', '2026-06-12', 'fifa-fan-festival', 'FIFA Fan Festival', 'fan-festival', {
       type: 'point', location: [-118.2879, 34.0141], name: 'LA Memorial Coliseum',
     }, '11:00'),
-    crowd: [estimated(25000, 'Estimated: LA Magazine reported 100,000+ visitors over the Jun 11–14 opening weekend; averaged over the four days')],
+    crowd: [{ ...estimated(25000, 'At least: LA Magazine reported 100,000+ visitors over the Jun 11–14 opening weekend, without saying how it counted; ÷ 4 days'), atLeast: true }],
   },
   la('2026-06-12', 'angels', 'Angels vs Rays', 'baseball', { home: 'angels', away: 'rays' }, {
     start: '18:38', venue: 'angel-stadium', crowd: [announced(37023)],

@@ -133,6 +133,8 @@ export interface CrowdFigure {
   count?: number;
   kind: CrowdKind;
   soldOut?: boolean;
+  /** A floor, not a count: a multi-day figure of unclear kind divided by the days open (Kylie, Oct 16, 2026). */
+  atLeast?: boolean;
   note?: string;
 }
 

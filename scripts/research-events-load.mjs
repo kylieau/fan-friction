@@ -65,25 +65,46 @@ const sqlText = (s) => (s == null ? 'null' : `'${String(s).replace(/'/g, "''")}'
 const sqlJson = (o) => `${sqlText(JSON.stringify(o))}::jsonb`;
 
 /**
- * "reported approximately 10,000 Saturday" → 10,000 reported. A multi-day total is averaged into a day, labeled
- * estimated, only when it says it counts admissions day by day ("cumulative attendance", "turnstile", "person-days")
- * (Kylie, Oct 7, 2026, C3 in docs/product/expected-draw-decisions-oct7.md). A total of unclear kind ("attendees",
- * passes sold) is not a day's crowd: a three-day pass holder is in the crowd every day. That stays unsized.
+ * "reported approximately 10,000 Saturday" → 10,000 reported. A figure for more than one day is sized by the kind of
+ * figure it is (Kylie, Oct 16, 2026, docs/archive/proposals/multiday-sizing-proposal.md; it replaces C3):
+ *   a per-day figure ("about 115,000 a day") is the day's, as labeled;
+ *   a per-day cap or permit with a sellout report is the day's crowd, estimated;
+ *   cumulative admissions (turnstile, gate, person-days) are averaged over the days open, estimated;
+ *   multi-day passes sold are the day's crowd, estimated: a pass holder can come every day, so passes are never divided;
+ *   unique people (badges, registrants) stay unsized;
+ *   a figure of unclear kind ("over 20,000 across all 3 days") gives at least itself ÷ the days open, sized only when
+ *   that clears 5,000.
+ * A weekend or total figure whose days open aren't stated stays unsized.
  */
 function crowdOf(text) {
   if (!text) return [];
   const n = text.match(/(\d{1,3}(?:,\d{3})+|\d{4,})/);
   if (!n) return [];
-  const days = Number(text.match(/(?:across|over)\s+(?:all\s+)?(\d+)\s+days/i)?.[1] ?? 0);
+  const figure = Number(n[1].replace(/,/g, ''));
+  const fmt = (x) => x.toLocaleString('en-US');
+  const label = /announced/i.test(text) ? 'announced' : /estimat/i.test(text) ? 'estimated' : 'reported';
+  if (/\b(per|a|each)\s+day\b|\/day\b|\bdaily\b(?!\s+admissions)/i.test(text)) {
+    return [{ count: figure, kind: label, note: `About ${fmt(figure)} a day, from the date research.` }];
+  }
+  if (/\b(cap|permit|capacity)\b/i.test(text) && /sold[\s-]?out|sellout/i.test(text)) {
+    return [{ count: figure, kind: 'estimated', note: `Sold out at a cap of ${fmt(figure)} a day. Actual count not published.` }];
+  }
+  const days = Number(text.match(/(?:across|over)\s+(?:all\s+)?(\d+)\s+days/i)?.[1] ?? text.match(/\b(\d+)-day\b/i)?.[1] ?? 0);
   if (days > 1) {
-    if (!/cumulative|turnstile|person-days|daily admissions|admissions over/i.test(text)) return [];
-    const total = Number(n[1].replace(/,/g, ''));
-    return [{ count: Math.round(total / days), kind: 'estimated', note: `About ${total.toLocaleString('en-US')} admissions over ${days} days, averaged per day.` }];
+    if (/unique|individual|registrant|badge|audited/i.test(text)) return [];
+    if (/cumulative|turnstile|person-days|daily admissions|admissions over|gate/i.test(text)) {
+      return [{ count: Math.round(figure / days), kind: 'estimated', note: `About ${fmt(figure)} admissions over ${days} days, averaged per day.` }];
+    }
+    if (/\bpass(es)?\b|wristband/i.test(text) && !/single-day|one-day|day tickets/i.test(text)) {
+      return [{ count: figure, kind: 'estimated', note: `${fmt(figure)} passes sold; each pass holder can come every day.` }];
+    }
+    const floor = Math.round(figure / days);
+    if (floor < 5000) return [];
+    return [{ count: floor, kind: 'estimated', atLeast: true, note: `"${text.trim()}": the count's kind isn't stated, so at least about ${fmt(floor)} a day (${fmt(figure)} ÷ ${days} days).` }];
   }
   // "175000 over Apr 11-13; city forecast; not Sunday-only": a weekend figure, not the day's.
   if (/across|weekend|total|not \w+-only|over [A-Z][a-z]{2,8}\.? \d+\s*[-–]\s*\d+/i.test(text)) return [];
-  const kind = /announced/i.test(text) ? 'announced' : /estimat/i.test(text) ? 'estimated' : 'reported';
-  return [{ count: Number(n[1].replace(/,/g, '')), kind, note: 'From the date research.' }];
+  return [{ count: figure, kind: label, note: 'From the date research.' }];
 }
 
 const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });

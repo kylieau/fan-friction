@@ -29,7 +29,7 @@ All kinds count equally (sizes as above): pro and college sports (including pres
 
 **Mid-size theaters (about 5,000–8,000 seats) are listed like any room.** Whether one feeds the friction read is the app's call, not the research's (Kylie, Oct 16, 2026: the 5,000 floor and the theater rule decide what counts, never what is listed).
 
-**A multi-day total** (a festival's weekend attendance) goes in the attendance column as written, with the number of days, **and what kind of total it is**: cumulative admissions counted day by day, unique attendees, or passes sold. The app averages only a cumulative admissions total per day; a three-day pass holder is in the crowd every day, so a pass or attendee count is not divided.
+**A multi-day total** (a festival's weekend attendance) goes in the attendance column as written, with the number of days, **and what kind of total it is**: a per-day figure or cap (and whether it sold out), cumulative admissions counted day by day, unique attendees, multi-day passes sold, or not stated. Quote the source's wording. The app sizes the day from the kind; a three-day pass holder is in the crowd every day, so a pass count is never divided.
 
 **Watch parties count when they're big** (5,000+), like any event: an official team watch party outside the arena, a stadium opened for an away game, a big Cosm-style screening. Put one in a venue in the Events table with `kind` live-broadcast; put a street or plaza one in the no-venue table. Give a crowd figure only if a source has one.
 
