@@ -786,44 +786,47 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
     const metro = METROS[entry.metroId];
     return Boolean(metro) && entry.when.sort < todayInZone(metro.timeZone, now);
   };
-  // The one-time relock (per log, per device, like retitleStubs): every blank locked entry asks again, however old.
+  // The one-time relock (per log, per device, like retitleStubs): every locked entry with no figure at all asks
+  // again, however old. It loads by date, four at a time, with no cap: many stubs share a date.
   const scope = getAccount()?.id ?? 'phone';
   const relocked = getPref<Record<string, string>>('crowd-relock', {});
   const relock = relocked[scope] !== RELOCK_VERSION;
   const window = todayInZone('UTC', new Date(now.getTime() - ANNOUNCED_RETRY_DAYS * 86400000));
   const first = snapshot.added.filter((entry) => !entry.crowdLocked && past(entry));
   const retry = snapshot.added.filter(
-    (entry) => entry.crowdLocked && !entry.crowdAnnounced && !entry.crowdFinal && !entry.crowd && past(entry) && (relock || entry.when.sort >= window),
+    (entry) => entry.crowdLocked && !entry.crowdAnnounced && !entry.crowdFinal && !entry.crowd && past(entry) && (entry.when.sort >= window || (relock && !entry.crowdEstimated)),
   );
-  const due = [...first, ...retry];
-  if (due.length === 0) {
-    if (relock) setPref('crowd-relock', { ...relocked, [scope]: RELOCK_VERSION });
-    return;
+  const due = relock ? [...first, ...retry] : [...first, ...retry].slice(0, 40);
+  const dates = [...new Map(due.map((entry) => [`${entry.metroId}|${entry.when.sort}`, { metroId: entry.metroId!, date: entry.when.sort }])).values()];
+  const days = new Map<string, { events: CrowdEvent[] }>();
+  let failed = false;
+  for (let i = 0; i < dates.length; i += 4) {
+    const loaded = await Promise.all(dates.slice(i, i + 4).map((d) => loadDate(d.metroId, d.date).catch(() => null)));
+    loaded.forEach((day, j) => {
+      if (day) days.set(`${dates[i + j].metroId}|${dates[i + j].date}`, day);
+      else failed = true; /* try again next open */
+    });
   }
   const updates = new Map<string, Partial<Entry>>();
-  let failed = due.length > 40;
-  for (const entry of due.slice(0, 40)) {
-    try {
-      const day = await loadDate(entry.metroId!, entry.when.sort);
-      const metro = METROS[entry.metroId!];
-      if (!crowdsLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
-      const event = day.events.find((e) => e.id === entry.eventId);
-      const locked = event ? lockedCrowd(event) : {};
-      // Fill only what is empty: a figure already on the entry stays (D03).
-      const fill: Partial<Entry> = { crowdLocked: true };
-      if (locked.crowdAnnounced && !entry.crowdAnnounced) fill.crowdAnnounced = locked.crowdAnnounced;
-      if (locked.crowdEstimated && !entry.crowdEstimated) {
-        fill.crowdEstimated = locked.crowdEstimated;
-        if (locked.crowdAtLeast) fill.crowdAtLeast = true;
-      }
-      // A retry that found nothing new writes nothing.
-      if (entry.crowdLocked && !fill.crowdAnnounced && !fill.crowdEstimated) continue;
-      updates.set(entry.id, fill);
-    } catch {
-      failed = true; /* try again next open */
+  for (const entry of due) {
+    const day = days.get(`${entry.metroId}|${entry.when.sort}`);
+    if (!day) continue;
+    const metro = METROS[entry.metroId!];
+    if (!crowdsLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
+    const event = day.events.find((e) => e.id === entry.eventId);
+    const locked = event ? lockedCrowd(event) : {};
+    // Fill only what is empty: a figure already on the entry stays (D03).
+    const fill: Partial<Entry> = { crowdLocked: true };
+    if (locked.crowdAnnounced && !entry.crowdAnnounced) fill.crowdAnnounced = locked.crowdAnnounced;
+    if (locked.crowdEstimated && !entry.crowdEstimated) {
+      fill.crowdEstimated = locked.crowdEstimated;
+      if (locked.crowdAtLeast) fill.crowdAtLeast = true;
     }
+    // A retry that found nothing new writes nothing.
+    if (entry.crowdLocked && !fill.crowdAnnounced && !fill.crowdEstimated) continue;
+    updates.set(entry.id, fill);
   }
-  // The relock is done after a pass where every due date loaded; a cut-off or failed pass runs again next open.
+  // The relock is done after a pass where every date loaded; a failed pass runs again next open.
   if (relock && !failed) setPref('crowd-relock', { ...relocked, [scope]: RELOCK_VERSION });
   if (updates.size === 0) return;
   commit({ ...snapshot, added: snapshot.added.map((entry) => (updates.has(entry.id) ? { ...entry, ...updates.get(entry.id) } : entry)) });
