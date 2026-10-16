@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-blackhawks-401892512",
+      "metroId": "chicago",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 4
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 3
+      },
+      "attendance": 15028,
+      "note": "OT",
+      "capturedAt": "2026-10-16T13:07:58.666Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    }
+  ]
+}

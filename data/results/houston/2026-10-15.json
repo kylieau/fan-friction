@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-rockets-401908622",
+      "metroId": "houston",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-center",
+      "homeTeamId": "rockets",
+      "home": {
+        "name": "Rockets",
+        "score": 116
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 89
+      },
+      "attendance": 16605,
+      "capturedAt": "2026-10-16T13:08:03.913Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "20:40"
+    }
+  ]
+}

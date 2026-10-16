@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-mlb-849810",
+      "metroId": "la",
+      "date": "2026-10-15",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "dodger-stadium",
+      "homeTeamId": "dodgers",
+      "home": {
+        "name": "Dodgers",
+        "score": 4
+      },
+      "away": {
+        "name": "Brewers",
+        "score": 6
+      },
+      "capturedAt": "2026-10-16T13:07:56.374Z",
+      "attendance": 49104,
+      "duration": {
+        "minutes": 179,
+        "kind": "official"
+      },
+      "startedAt": "17:08"
+    }
+  ]
+}

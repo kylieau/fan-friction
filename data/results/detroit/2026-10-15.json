@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-red-wings-401892508",
+      "metroId": "detroit",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "red-wings",
+      "home": {
+        "name": "Red Wings",
+        "score": 2
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 1
+      },
+      "attendance": 17551,
+      "capturedAt": "2026-10-16T13:07:59.315Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    }
+  ]
+}

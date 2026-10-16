@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-maple-leafs-401892506",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 4
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 5
+      },
+      "attendance": 18886,
+      "note": "OT",
+      "capturedAt": "2026-10-16T13:08:04.393Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-oilers-401892515",
+      "metroId": "edmonton",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 2
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 4
+      },
+      "attendance": 16176,
+      "capturedAt": "2026-10-16T13:08:05.726Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    }
+  ]
+}

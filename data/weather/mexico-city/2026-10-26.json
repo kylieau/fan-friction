@@ -51,6 +51,18 @@
       "code": 53,
       "precipProbability": 40,
       "precipMm": 4.2
+    },
+    {
+      "metroId": "mexico-city",
+      "venueId": "city",
+      "date": "2026-10-26",
+      "basis": "forecast",
+      "capturedAt": "2026-10-16T13:03:09.290Z",
+      "feelsLikeHighF": 60.6,
+      "feelsLikeLowF": 53.6,
+      "code": 80,
+      "precipProbability": 22,
+      "precipMm": 2.4
     }
   ]
 }

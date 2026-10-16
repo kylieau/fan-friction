@@ -1,0 +1,917 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "metroName": "Kansas City",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-16",
+  "capturedAt": "2026-10-16T13:06:24.742Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-16",
+    "through": "2026-10-30"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 20
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-16-tm-vvG1bZ_2Txyttj",
+      "metroId": "kansas-city",
+      "date": "2026-10-16",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Kansas City Mavericks vs Rapid City Rush - Barn Party Night",
+      "place": {
+        "type": "venue",
+        "venueId": "cable-dahmer-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kansas City Mavericks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2Txyttj",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7PJqZ",
+      "metroId": "kansas-city",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Demola",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truman"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Demola",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PJqZ",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1bZ_2TLtFgS",
+      "metroId": "kansas-city",
+      "date": "2026-10-17",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Kansas City Mavericks vs Rapid City Rush",
+      "place": {
+        "type": "venue",
+        "venueId": "cable-dahmer-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kansas City Mavericks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2TLtFgS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7-SfU",
+      "metroId": "kansas-city",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-SfU"
+    },
+    {
+      "id": "2026-10-17-espn-sporting-kc-761884",
+      "metroId": "kansas-city",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Sporting KC vs. Real Salt Lake",
+      "place": {
+        "type": "venue",
+        "venueId": "sporting-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sporting-kc",
+        "away": "real-salt-lake",
+        "awayOpponent": "salt-lake"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16531,
+        "low": 16019,
+        "high": 17510,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 23 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1AAvSZ7",
+      "metroId": "kansas-city",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bright Eyes",
+      "officialTitle": "Bright Eyes w/ Lullaby For The Working Class",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truman"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Bright Eyes",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvSZ7",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-chiefs-401873006",
+      "metroId": "kansas-city",
+      "date": "2026-10-18",
+      "start": "15:25",
+      "kind": "game",
+      "title": "Chiefs vs. Chargers",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "arrowhead-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "chiefs",
+        "away": "chargers",
+        "awayOpponent": "chargers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 73437,
+        "low": 73417,
+        "high": 73466,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A7PbZM",
+      "metroId": "kansas-city",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Judah & the Lion",
+      "officialTitle": "Judah and The Lion",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truman"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Judah & the Lion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PbZM",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1bZ_2wbNyt3",
+      "metroId": "kansas-city",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Paige Fish",
+      "officialTitle": "Paige Fish: the midnight crisis tour",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Paige Fish",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2wbNyt3",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1bZ_5nC5gBQ",
+      "metroId": "kansas-city",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Knocked Loose",
+      "officialTitle": "Knocked Loose & Denzel Curry",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Knocked Loose",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_5nC5gBQ",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A70tPp",
+      "metroId": "kansas-city",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Trampled By Turtles",
+      "officialTitle": "Trampled By Turtles w/ Wild Horses",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truman"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Trampled By Turtles",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tPp",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7-baI",
+      "metroId": "kansas-city",
+      "date": "2026-10-23",
+      "start": "19:45",
+      "kind": "game",
+      "title": "PBR Teams: Outlaw Days",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "PBR: Teams",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-baI",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1bZ_5U22PBR",
+      "metroId": "kansas-city",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Caleb Hearon & Waxahatchee Present: Yeehaw! A Benefit for Kansas City",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Caleb Hearon",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_5U22PBR"
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1AAeefw",
+      "metroId": "kansas-city",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace w/ Rollo Doherty",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truman"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Palace",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeefw",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7-bat",
+      "metroId": "kansas-city",
+      "date": "2026-10-24",
+      "start": "18:45",
+      "kind": "game",
+      "title": "PBR Teams: Outlaw Days",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "PBR: Teams",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-bat",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-24-espn-sporting-kc-761899",
+      "metroId": "kansas-city",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Sporting KC vs. Austin FC",
+      "place": {
+        "type": "venue",
+        "venueId": "sporting-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sporting-kc",
+        "away": "austin-fc",
+        "awayOpponent": "austin"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16398,
+        "low": 15890,
+        "high": 17369,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 23 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-baY",
+      "metroId": "kansas-city",
+      "date": "2026-10-25",
+      "start": "13:45",
+      "kind": "game",
+      "title": "PBR Teams: Outlaw Days",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "PBR: Teams",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-baY",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-25-espn-kc-current-401854032",
+      "metroId": "kansas-city",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Current vs. Spirit",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "cpkc-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "kc-current",
+        "away": "spirit",
+        "awayOpponent": "washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11500,
+        "low": 11500,
+        "high": 11500,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1bZ_5mC0go_",
+      "metroId": "kansas-city",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lauren Sanderson",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Lauren Sanderson",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_5mC0go_",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG1bZ_26eCKED",
+      "metroId": "kansas-city",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ryan Bingham",
+      "officialTitle": "Ryan Bingham and The Texas Gentlemen - Still Gettin' Away With It Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ryan Bingham",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_26eCKED",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG1bZ_ueFy4JI",
+      "metroId": "kansas-city",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brand New",
+      "place": {
+        "type": "venue",
+        "venueId": "cable-dahmer-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brand New",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_ueFy4JI",
+      "expectedDraw": {
+        "count": 3306,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1bZ_uLNqs8t",
+      "metroId": "kansas-city",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zack Fox",
+      "officialTitle": "Zack Fox (DJ Set)",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Zack Fox",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_uLNqs8t",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAvy8Y",
+      "metroId": "kansas-city",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Rewind: 2000s Halloween Rave - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truman"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Rewind: 2000s Rave",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvy8Y"
+    },
+    {
+      "id": "2026-10-30-tm-vv1AkZk3dGkemtrJm",
+      "metroId": "kansas-city",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "kind": "show",
+      "title": "REZN",
+      "officialTitle": "REZN - Cycles in the Infinite Dream Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "REZN",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZk3dGkemtrJm",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-16-tm-vvG1bZ_2Txyttj",
+      "date": "2026-10-16",
+      "start": "19:05",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7PJqZ",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1bZ_2TLtFgS",
+      "date": "2026-10-17",
+      "start": "18:05",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Disney Worlds Collide Concert Tour and Sporting KC vs. Real Salt Lake 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7-SfU",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Sporting KC vs. Real Salt Lake 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-sporting-kc-761884",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Disney Worlds Collide Concert Tour 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16531,
+        "low": 16019,
+        "high": 17510
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1AAvSZ7",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-chiefs-401873006",
+      "date": "2026-10-18",
+      "start": "15:25",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 73437,
+        "low": 73417,
+        "high": 73466
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A7PbZM",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1bZ_2wbNyt3",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1bZ_5nC5gBQ",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A70tPp",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7-baI",
+      "date": "2026-10-23",
+      "start": "19:45",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1bZ_5U22PBR",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1AAeefw",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7-bat",
+      "date": "2026-10-24",
+      "start": "18:45",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Sporting KC vs. Austin FC 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-sporting-kc-761899",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "PBR Teams: Outlaw Days 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16398,
+        "low": 15890,
+        "high": 17369
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-baY",
+      "date": "2026-10-25",
+      "start": "13:45",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Current vs. Spirit 1.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-kc-current-401854032",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "PBR Teams: Outlaw Days 1.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11500,
+        "low": 11500,
+        "high": 11500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1bZ_5mC0go_",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1bZ_26eCKED",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1bZ_ueFy4JI",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 3306
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1bZ_uLNqs8t",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAvy8Y",
+      "date": "2026-10-30",
+      "start": "21:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AkZk3dGkemtrJm",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "draw": {
+        "count": 2400
+      }
+    }
+  ]
+}

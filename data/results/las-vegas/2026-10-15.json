@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-golden-knights-401892516",
+      "metroId": "las-vegas",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 6
+      },
+      "away": {
+        "name": "Flames",
+        "score": 2
+      },
+      "attendance": 16433,
+      "capturedAt": "2026-10-16T13:08:03.421Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

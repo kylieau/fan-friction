@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-predators-401892513",
+      "metroId": "nashville",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 2
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 3
+      },
+      "attendance": 17181,
+      "note": "SO",
+      "capturedAt": "2026-10-16T13:08:01.981Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    }
+  ]
+}

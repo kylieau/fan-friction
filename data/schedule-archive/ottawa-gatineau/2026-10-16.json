@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "metroName": "Ottawa–Gatineau",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-10-16",
+  "capturedAt": "2026-10-16T13:07:12.805Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-16",
+    "through": "2026-10-30"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-21-espn-ottawa-senators-401892551",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Senators vs. Panthers",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16216,
+        "low": 15558,
+        "high": 16936,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-ottawa-senators-401892554",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "sharks",
+        "awayOpponent": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16040,
+        "low": 15389,
+        "high": 16753,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-ottawa-senators-401892569",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Rangers",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "ny-rangers",
+        "awayOpponent": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15832,
+        "low": 15706,
+        "high": 17126,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-21-espn-ottawa-senators-401892551",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16216,
+        "low": 15558,
+        "high": 16936
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-ottawa-senators-401892554",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16040,
+        "low": 15389,
+        "high": 16753
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-ottawa-senators-401892569",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15832,
+        "low": 15706,
+        "high": 17126
+      }
+    }
+  ]
+}

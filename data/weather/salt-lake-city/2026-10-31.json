@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-31",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "salt-lake-city",
+      "venueId": "city",
+      "date": "2026-10-31",
+      "basis": "forecast",
+      "capturedAt": "2026-10-16T13:03:37.650Z",
+      "feelsLikeHighF": 50.6,
+      "feelsLikeLowF": 39.9,
+      "code": 3,
+      "precipProbability": 35,
+      "precipMm": 0
+    }
+  ]
+}

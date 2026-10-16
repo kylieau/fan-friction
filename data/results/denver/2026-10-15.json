@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-broncos-401872995",
+      "metroId": "denver",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "empower-field",
+      "homeTeamId": "broncos",
+      "home": {
+        "name": "Broncos",
+        "score": 17
+      },
+      "away": {
+        "name": "Seahawks",
+        "score": 14
+      },
+      "attendance": 76973,
+      "note": "OT",
+      "capturedAt": "2026-10-16T13:08:07.537Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "20:15"
+    }
+  ]
+}

@@ -1,0 +1,1042 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "metroName": "San Antonio",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-16",
+  "capturedAt": "2026-10-16T13:07:26.247Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-16",
+    "through": "2026-10-30"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 17
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-16-tm-G5dIZ_aQVkdKk",
+      "metroId": "san-antonio",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Dying Fetus",
+      "officialTitle": "DYING FETUS & SANGUISUGABOGG",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dying Fetus",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_aQVkdKk",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-spurs-401898843",
+      "metroId": "san-antonio",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Sac Kings",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "sacramento-kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17635,
+        "low": 16473,
+        "high": 18091,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 7 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5dIZ_GRTPUUa",
+      "metroId": "san-antonio",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sleeping With Sirens",
+      "officialTitle": "Sleeping With Sirens: An Ending In Itself Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "boeing-center-tech-port"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sleeping With Sirens",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_GRTPUUa",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5dIZ_opmLmm2",
+      "metroId": "san-antonio",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Antonio Spurs vs. Sacramento Kings Courtside Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "San Antonio Spurs vs. Sacramento Kings Courtside Experience",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_opmLmm2"
+    },
+    {
+      "id": "2026-10-17-espn-uiw-football-401868250",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. UT Rio Grande",
+      "place": {
+        "type": "venue",
+        "venueId": "benson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uiw-football",
+        "away": "ut-rio-grande",
+        "awayOpponent": "ut-rio-grande"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-utsa-football-401862804",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UTSA vs. Navy",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utsa-football",
+        "away": "navy",
+        "awayOpponent": "navy"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18456,
+        "low": 17961,
+        "high": 18935,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-san-antonio-fc-401842297",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "SAFC vs. New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "san-antonio-fc",
+        "away": "new-mexico",
+        "awayOpponent": "new-mexico"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7126,
+        "low": 7011,
+        "high": 7433,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5dIZ_a3Q5FYf",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Modest Mouse",
+      "place": {
+        "type": "venue",
+        "venueId": "boeing-center-tech-port"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Modest Mouse",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_a3Q5FYf",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5dIZ_CnRb_wn",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Marilyn Manson",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Marilyn Manson",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_CnRb_wn",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5dIZ_kULhamF",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Lil Wayne",
+      "officialTitle": "LIL WAYNE: 20 YEARS OF CARTER CLASSICS",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Wayne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_kULhamF",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5dIZ_CnR_twS",
+      "metroId": "san-antonio",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Marilyn Manson",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Marilyn Manson",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_CnR_twS",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-G5dIZ_7nTbhpg",
+      "metroId": "san-antonio",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Leonid & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Leonid & Friends",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_7nTbhpg",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-spurs-401909090",
+      "metroId": "san-antonio",
+      "date": "2026-10-20",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Spurs vs. Thunder",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "thunder",
+        "awayOpponent": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 18336,
+        "low": 17919,
+        "high": 18509,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5dIZ_GCIfa8i",
+      "metroId": "san-antonio",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Maria Jose",
+      "officialTitle": "Maria Jose + Moenia Us Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Maria Jose",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_GCIfa8i",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5dIZ_1DG8uLn",
+      "metroId": "san-antonio",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "officialTitle": "Don Omar \"The Last King World Tour\"",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Don Omar",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1DG8uLn",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5dIZ_F5slxER",
+      "metroId": "san-antonio",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "freeman-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_F5slxER",
+      "expectedDraw": {
+        "count": 11700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5dIZ_aB86yzH",
+      "metroId": "san-antonio",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Prof",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Prof",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_aB86yzH",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-spurs-401909096",
+      "metroId": "austin",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Spurs vs. Rockets",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "rockets",
+        "awayOpponent": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-uiw-football-401869138",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. McNeese",
+      "place": {
+        "type": "venue",
+        "venueId": "benson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uiw-football",
+        "away": "mcneese",
+        "awayOpponent": "mcneese"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-san-antonio-fc-401842310",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "SAFC vs. Orange County",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "san-antonio-fc",
+        "away": "orange-county",
+        "awayOpponent": "orange-county"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7097,
+        "low": 6983,
+        "high": 7403,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5dIZ_1qq2S42",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Cameron Whitcomb",
+      "officialTitle": "Cameron Whitcomb - Kingdom of Fear Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Cameron Whitcomb",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1qq2S42",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5dIZ_GCRLQr_",
+      "metroId": "san-antonio",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Wage War",
+      "officialTitle": "WAGE WAR - EMERGENCY BROADCAST TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Wage War",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_GCRLQr_",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-G5dIZbUpq3nZc",
+      "metroId": "san-antonio",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZbUpq3nZc",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-spurs-401909879",
+      "metroId": "san-antonio",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Sac Kings",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "sacramento-kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18134,
+        "low": 17722,
+        "high": 18306,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5dIZ_opmxCmV",
+      "metroId": "san-antonio",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Antonio Spurs vs. Sacramento Kings Courtside Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "San Antonio Spurs Courtside Experience",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_opmxCmV",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5dIZ_8rC_pyY",
+      "metroId": "san-antonio",
+      "date": "2026-10-30",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Plim Plim - En Vivo!",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Plim Plim \"En Vivo\"",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_8rC_pyY"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-16-tm-G5dIZ_aQVkdKk",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-spurs-401898843",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Low",
+        "why": "San Antonio Spurs vs. Sacramento Kings Courtside Experience next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17635,
+        "low": 16473,
+        "high": 18091
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5dIZ_GRTPUUa",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5dIZ_opmLmm2",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Low",
+        "why": "Spurs vs. Sac Kings next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-uiw-football-401868250",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Heavy",
+        "why": "UTSA vs. Navy 3.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-utsa-football-401862804",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Incarnate Word vs. UT Rio Grande 3.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18456,
+        "low": 17961,
+        "high": 18935
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-san-antonio-fc-401842297",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "UTSA vs. Navy and Lil Wayne 9.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7126,
+        "low": 7011,
+        "high": 7433
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5dIZ_a3Q5FYf",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5dIZ_CnRb_wn",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5dIZ_kULhamF",
+      "date": "2026-10-17",
+      "start": "20:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "UTSA vs. Navy 2.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5dIZ_CnR_twS",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-G5dIZ_7nTbhpg",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-spurs-401909090",
+      "date": "2026-10-20",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18336,
+        "low": 17919,
+        "high": 18509
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5dIZ_GCIfa8i",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5dIZ_1DG8uLn",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Young Miko next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5dIZ_F5slxER",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Don Omar next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11700
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5dIZ_aB86yzH",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-spurs-401909096",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-uiw-football-401869138",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "SAFC vs. Orange County 6.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-san-antonio-fc-401842310",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Incarnate Word vs. McNeese 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7097,
+        "low": 6983,
+        "high": 7403
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dIZ_1qq2S42",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5dIZ_GCRLQr_",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5dIZbUpq3nZc",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-spurs-401909879",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 5.8,
+        "friction": "Low",
+        "why": "San Antonio Spurs vs. Sacramento Kings Courtside Experience next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18134,
+        "low": 17722,
+        "high": 18306
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5dIZ_opmxCmV",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 5.8,
+        "friction": "Low",
+        "why": "Spurs vs. Sac Kings next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5dIZ_8rC_pyY",
+      "date": "2026-10-30",
+      "start": "17:00"
+    }
+  ]
+}

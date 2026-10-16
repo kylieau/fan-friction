@@ -1,0 +1,3585 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "metroName": "Nashville",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-16",
+  "capturedAt": "2026-10-16T13:05:41.414Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-16",
+    "through": "2026-10-30"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 83
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-16-tm-G5viZ_a35Bk_2",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Teddy Swims BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_a35Bk_2",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5viZ_FXfO1dj",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "officialTitle": "Teddy Swims: The UGLY Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Teddy Swims",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_FXfO1dj",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5viZ_GSBKrkh",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Graham Barham",
+      "officialTitle": "Graham Barham - Club Country Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Graham Barham",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_GSBKrkh",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7Of-E",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of-E",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5viZ_1Q-8uDa",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Tedeschi Trucks Band",
+      "officialTitle": "Tedeschi Trucks Band: Future Soul 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Tedeschi Trucks Band",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1Q-8uDa",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7xd48",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Sound Of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "nashville-municipal-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xd48",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7-VjO",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jesse Welles",
+      "officialTitle": "Jesse Welles w/ Hudson Freeman",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jesse Welles",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-VjO",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7P-Q6",
+      "metroId": "nashville",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Isbell and the 400 Unit",
+      "officialTitle": "Jason Isbell & the 400 Unit w/ The Bo-Keys",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jason Isbell and the 400 Unit",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-Q6",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7xd4o",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Sound Of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "nashville-municipal-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xd4o",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-17-espn-tsu-football-401867968",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Tennessee St vs. Morgan St",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tsu-football",
+        "away": "morgan-st",
+        "awayOpponent": "morgan-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7875,
+        "low": 3879,
+        "high": 13975,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-vanderbilt-football-401856726",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Vanderbilt vs. Arkansas",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "firstbank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "vanderbilt-football",
+        "away": "arkansas",
+        "awayOpponent": "arkansas"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 38453,
+        "low": 38021,
+        "high": 44500,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-predators-401892529",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Blues",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "blues",
+        "awayOpponent": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17159,
+        "low": 17159,
+        "high": 17206,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5viZ_KNFZ7iv",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Up Top Comedy",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Up Top Comedy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_KNFZ7iv"
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7r4-V",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7r4-V",
+      "occasionFacts": {
+        "run": 7
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5viZ_1Q-ouD2",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Tedeschi Trucks Band",
+      "officialTitle": "Tedeschi Trucks Band: Future Soul 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Tedeschi Trucks Band",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1Q-ouD2",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5viZ_66AZKft",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Tank and the Bangas",
+      "officialTitle": "Tank and The Bangas, The Last Balloon Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Tank and the Bangas",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_66AZKft",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A70o_9",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Interpol",
+      "officialTitle": "Interpol w/ DIIV",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Interpol",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70o_9",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7P-QF",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Isbell and the 400 Unit",
+      "officialTitle": "Jason Isbell & the 400 Unit",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jason Isbell and the 400 Unit",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-QF",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A7xd4K",
+      "metroId": "nashville",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Sound Of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "nashville-municipal-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xd4K",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1AAv4FN",
+      "metroId": "nashville",
+      "date": "2026-10-18",
+      "start": "16:30",
+      "kind": "show",
+      "title": "Guster",
+      "officialTitle": "Live on the Green Lawnwarming Party Featuring Guster and Grace Potter with Beach Weather, The Brummies, Lucie Silvas, and Kara Frazier",
+      "place": {
+        "type": "venue",
+        "venueId": "ascend-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Guster",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv4FN",
+      "expectedDraw": {
+        "count": 6800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5viZ_1KEAEGs",
+      "metroId": "nashville",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MercyMe",
+      "officialTitle": "MercyMe, Jeremy Camp, Tim Timmons, Sam Wesley",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MercyMe",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1KEAEGs",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-G5viZ_53JQDbO",
+      "metroId": "nashville",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "special",
+      "title": "MercyMe BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_53JQDbO",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A7qxZk",
+      "metroId": "nashville",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7qxZk",
+      "occasionFacts": {
+        "run": 8
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1AAZAZU",
+      "metroId": "nashville",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Ryan Bingham",
+      "officialTitle": "Ryan Bingham w/ The Texas Gentlemen",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ryan Bingham",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZAZU",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-Z7r9jZ1A7Pd4s",
+      "metroId": "nashville",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Knocked Loose",
+      "officialTitle": "Knocked Loose w/ Denzel Curry",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Knocked Loose",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pd4s",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-G5viZ_5QsjjVL",
+      "metroId": "nashville",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Sonic Live in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Sonic Live in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5QsjjVL"
+    },
+    {
+      "id": "2026-10-19-tm-G5viZ_89gJ7Hb",
+      "metroId": "nashville",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dope Lemon",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dope Lemon",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_89gJ7Hb",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-G5viZ_kSwJa16",
+      "metroId": "nashville",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sting",
+      "officialTitle": "STING 3.0 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sting",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kSwJa16",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5viZ_G5Z-Dur",
+      "metroId": "nashville",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chad Gray",
+      "officialTitle": "Chad Gray: 30 Years of Madnesss",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Chad Gray",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_G5Z-Dur",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A7Of-V",
+      "metroId": "nashville",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of-V",
+      "occasionFacts": {
+        "run": 9
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5viZ_1JptBRJ",
+      "metroId": "nashville",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Sons of Legion",
+      "officialTitle": "Sons of Legion - Soul to SØL Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sons of Legion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1JptBRJ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5viZ_3lQjNZe",
+      "metroId": "nashville",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dave Chappelle Karmageddon",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dave Chappelle",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_3lQjNZe"
+    },
+    {
+      "id": "2026-10-20-tm-G5viZ_3WBXfdx",
+      "metroId": "nashville",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dave Chappelle BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_3WBXfdx",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-20-tm-G5viZ_kSwEa1u",
+      "metroId": "nashville",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sting",
+      "officialTitle": "STING 3.0 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sting",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kSwEa1u",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A7Of-g",
+      "metroId": "nashville",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of-g",
+      "occasionFacts": {
+        "run": 10
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5viZ_141B_9F",
+      "metroId": "nashville",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_141B_9F",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5viZ_1wmil-o",
+      "metroId": "nashville",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Journey BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1wmil-o",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5viZ_5pCqzDU",
+      "metroId": "nashville",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Sons of Legion",
+      "officialTitle": "Sons of Legion - Soul to SØL Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sons of Legion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5pCqzDU",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5viZ_dCw31Q-",
+      "metroId": "nashville",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sugar",
+      "officialTitle": "SUGAR - Love You Even Still 2026 World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sugar",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_dCw31Q-",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-G5viZ_kmiam6n",
+      "metroId": "nashville",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rawayana",
+      "officialTitle": "RAWAYANA - ¿Dónde es el after? World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kmiam6n",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5viZ_akmi2v-",
+      "metroId": "nashville",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Dying Fetus",
+      "officialTitle": "DYING FETUS & SANGUISUGABOGG",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dying Fetus",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_akmi2v-",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5viZ_kM99zk6",
+      "metroId": "nashville",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Red Clay Strays BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kM99zk6",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5viZbUm8X11w",
+      "metroId": "nashville",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "kind": "show",
+      "title": "The Red Clay Strays",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Red Clay Strays",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbUm8X11w",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7O4-s",
+      "metroId": "nashville",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Opry Show",
+      "officialTitle": "Opry Country Classics",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Opry Show",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7O4-s",
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-G5viZ_1BbgQQs",
+      "metroId": "nashville",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1BbgQQs",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7P-Q7",
+      "metroId": "nashville",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Isbell and the 400 Unit",
+      "officialTitle": "Jason Isbell & the 400 Unit w/ Ben Nichols",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jason Isbell and the 400 Unit",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-Q7",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5viZ_kMbkbpG",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Red Clay Strays BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kMbkbpG",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5viZbUBiwctj",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "kind": "show",
+      "title": "The Red Clay Strays",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Red Clay Strays",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbUBiwctj",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7Of-M",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of-M",
+      "occasionFacts": {
+        "run": 12
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5viZ_C553X_t",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Machine Girl",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Machine Girl",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_C553X_t",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1Af-yCK",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "DJ Shadow",
+      "officialTitle": "DJ Shadow Celebrates 30 Years of Endtroducing",
+      "place": {
+        "type": "venue",
+        "venueId": "marathon-music-works"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Shadow",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af-yCK",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7Jf8d",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dom Dolla",
+      "officialTitle": "Dom Dolla - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dom Dolla",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Jf8d",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7P-QA",
+      "metroId": "nashville",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Isbell and the 400 Unit",
+      "officialTitle": "Jason Isbell & the 400 Unit w/ Amy LaVere",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jason Isbell and the 400 Unit",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-QA",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-tsu-football-401868174",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Tennessee St vs. Charleston So",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tsu-football",
+        "away": "charleston-so",
+        "awayOpponent": "charleston-so"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7875,
+        "low": 3879,
+        "high": 13975,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7Ofx6",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ofx6",
+      "occasionFacts": {
+        "run": 12
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5viZ_G2k00Id",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Stephen Day",
+      "officialTitle": "Stephen Day Presents: The Self Titled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Stephen Day",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_G2k00Id",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5viZ_kUQ0G54",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Kevin Gates",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Kevin Gates",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kUQ0G54",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5viZbUfyNRbv",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Matt Rife: Stay Golden World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matt Rife",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbUfyNRbv"
+    },
+    {
+      "id": "2026-10-24-tm-G5viZbUloPj0d",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Matt Rife BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbUloPj0d",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7PNb7",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Isbell and the 400 Unit",
+      "officialTitle": "Jason Isbell & the 400 Unit w/ Tony Thomas Three",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jason Isbell and the 400 Unit",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNb7",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAZAFy",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dom Dolla",
+      "officialTitle": "Dom Dolla (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dom Dolla",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZAFy",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-titans-401873013",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Titans vs. Browns",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "titans",
+        "away": "browns",
+        "awayOpponent": "browns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 69537,
+        "low": 68432,
+        "high": 70087,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-predators-401892580",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17228,
+        "low": 17228,
+        "high": 17228,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5viZbzmVmAtm",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bethel Music",
+      "officialTitle": "Bethel Music 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Bethel Music",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbzmVmAtm",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7q-PU",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7q-PU",
+      "occasionFacts": {
+        "run": 11
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5viZ_uhr5hYm",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Patrick Droney",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Patrick Droney",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_uhr5hYm",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5viZ_2efobaQ",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "EsDeeKid",
+      "officialTitle": "EsDeeKid - Council House Rat Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "EsDeeKid",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_2efobaQ",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A707GM",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Morrissey",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Morrissey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A707GM",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-G5viZ_1MfI-bC",
+      "metroId": "nashville",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MICO",
+      "officialTitle": "MICO - Running From A Feeling Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MICO",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1MfI-bC",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAeox9",
+      "metroId": "nashville",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Sarah Jakes Roberts",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Sarah Jakes Roberts",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeox9"
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZUa-",
+      "metroId": "nashville",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Woman Evolve w/ Sarah Jakes Roberts",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Woman Evolve",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUa-"
+    },
+    {
+      "id": "2026-10-27-espn-predators-401892589",
+      "metroId": "nashville",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Islanders",
+      "broadcast": "MSG2",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "islanders",
+        "awayOpponent": "islanders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7Ofx8",
+      "metroId": "nashville",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ofx8",
+      "occasionFacts": {
+        "run": 11
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AAZUuM",
+      "metroId": "nashville",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Sho-Bud Showcase Live",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Sho-Bud Showcase",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUuM"
+    },
+    {
+      "id": "2026-10-28-espn-mtsu-football-401871058",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "MTSU vs. Kennesaw St",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "floyd-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "mtsu-football",
+        "away": "ksu-football",
+        "awayOpponent": "kennesaw-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 10812,
+        "low": 10394,
+        "high": 10812,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_FJa3nQ8",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_FJa3nQ8",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_FyBfPnc",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "special",
+      "title": "SOMBR BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_FyBfPnc",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7Ofxb",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ofxb",
+      "occasionFacts": {
+        "run": 10
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-nashville-sc-761914",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Nashville SC vs. Union",
+      "place": {
+        "type": "venue",
+        "venueId": "geodis-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nashville-sc",
+        "away": "philadelphia-union",
+        "awayOpponent": "philadelphia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 27165,
+        "low": 26954,
+        "high": 27745,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAZFa6",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Shenandoah",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Shenandoah",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFa6",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_1Kk88nN",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "glaive",
+      "officialTitle": "GLAIVE - GOD SAVE THE THREE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "glaive",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1Kk88nN",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-predators-401892605",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Capitals",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "capitals",
+        "awayOpponent": "capitals"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_263jPMd",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Demon Hunter",
+      "officialTitle": "Demon Hunter - Storm the Gates of Hell 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Demon Hunter",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_263jPMd",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_kURICyP",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "HARDY",
+      "officialTitle": "HARDY Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "HARDY",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kURICyP",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7Of0Z",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0Z",
+      "occasionFacts": {
+        "run": 10
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_5QlIiaH",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Marc Scibilia",
+      "officialTitle": "Marc Scibilia - One Night Only",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Marc Scibilia",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5QlIiaH",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_GxLR9gO",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Neko Case",
+      "officialTitle": "Neko Case & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Neko Case",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_GxLR9gO",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_kURtCyM",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "HARDY",
+      "officialTitle": "HARDY Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "HARDY",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kURtCyM",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7Of0v",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0v",
+      "occasionFacts": {
+        "run": 11
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_oKkqrTu",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "show",
+      "title": "NIGHTLY",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "NIGHTLY",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_oKkqrTu",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_G6SZNnJ",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zach Top",
+      "officialTitle": "Zach Top: Cold Beer & Country Music Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Zach Top",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_G6SZNnJ",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_GLprcP8",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Zach Top BetMGM Dinner Reservation",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "BetMGM Dinner Reservation",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_GLprcP8",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAekfy",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Riley Green",
+      "place": {
+        "type": "venue",
+        "venueId": "pinnacle-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Riley Green",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAekfy",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-16-tm-G5viZ_a35Bk_2",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Teddy Swims and Sound Of Music (Touring) next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5viZ_FXfO1dj",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Teddy Swims BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5viZ_GSBKrkh",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7Of-E",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5viZ_1Q-8uDa",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7xd48",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Teddy Swims BetMGM Dinner Reservation and Teddy Swims 0.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7-VjO",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7P-Q6",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7xd4o",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Vanderbilt vs. Arkansas 2.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-tsu-football-401867968",
+      "date": "2026-10-17",
+      "start": "17:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 7875,
+        "low": 3879,
+        "high": 13975
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-vanderbilt-football-401856726",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Predators vs. Blues 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 38453,
+        "low": 38021,
+        "high": 44500
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-predators-401892529",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Vanderbilt vs. Arkansas 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17159,
+        "low": 17159,
+        "high": 17206
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5viZ_KNFZ7iv",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7r4-V",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5viZ_1Q-ouD2",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5viZ_66AZKft",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A70o_9",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7P-QF",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A7xd4K",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Guster 0.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1AAv4FN",
+      "date": "2026-10-18",
+      "start": "16:30",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "MercyMe BetMGM Dinner Reservation and MercyMe next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6800
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5viZ_1KEAEGs",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "MercyMe BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-G5viZ_53JQDbO",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "MercyMe next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A7qxZk",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1AAZAZU",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-Z7r9jZ1A7Pd4s",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-G5viZ_5QsjjVL",
+      "date": "2026-10-19",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-19-tm-G5viZ_89gJ7Hb",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-G5viZ_kSwJa16",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5viZ_G5Z-Dur",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A7Of-V",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5viZ_1JptBRJ",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5viZ_3lQjNZe",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Dave Chappelle BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5viZ_3WBXfdx",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Dave Chappelle Karmageddon next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-G5viZ_kSwEa1u",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A7Of-g",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5viZ_141B_9F",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Journey BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5viZ_1wmil-o",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Journey next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5viZ_5pCqzDU",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5viZ_dCw31Q-",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-G5viZ_kmiam6n",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5viZ_akmi2v-",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5viZ_kM99zk6",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The Red Clay Strays next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5viZbUm8X11w",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Red Clay Strays BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7O4-s",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-G5viZ_1BbgQQs",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7P-Q7",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5viZ_kMbkbpG",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The Red Clay Strays next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5viZbUBiwctj",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Red Clay Strays BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7Of-M",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5viZ_C553X_t",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1Af-yCK",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7Jf8d",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7P-QA",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-tsu-football-401868174",
+      "date": "2026-10-24",
+      "start": "14:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 7875,
+        "low": 3879,
+        "high": 13975
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7Ofx6",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5viZ_G2k00Id",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5viZ_kUQ0G54",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5viZbUfyNRbv",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Matt Rife BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5viZbUloPj0d",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Matt Rife: Stay Golden World Tour next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7PNb7",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAZAFy",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-titans-401873013",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 69537,
+        "low": 68432,
+        "high": 70087
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-predators-401892580",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Titans vs. Browns 0.7 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17228,
+        "low": 17228,
+        "high": 17228
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5viZbzmVmAtm",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7q-PU",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5viZ_uhr5hYm",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5viZ_2efobaQ",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A707GM",
+      "date": "2026-10-25",
+      "start": "20:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5viZ_1MfI-bC",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAeox9",
+      "date": "2026-10-26",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZUa-",
+      "date": "2026-10-26",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-27-espn-predators-401892589",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7Ofx8",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AAZUuM",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-mtsu-football-401871058",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Nashville SC vs. Union and SOMBR BetMGM Dinner Reservation 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10812,
+        "low": 10394,
+        "high": 10812
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_FJa3nQ8",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Nashville SC vs. Union and SOMBR BetMGM Dinner Reservation 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_FyBfPnc",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Nashville SC vs. Union 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7Ofxb",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-nashville-sc-761914",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "SOMBR BetMGM Dinner Reservation 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 27165,
+        "low": 26954,
+        "high": 27745
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAZFa6",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_1Kk88nN",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-predators-401892605",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_263jPMd",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_kURICyP",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7Of0Z",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_5QlIiaH",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_GxLR9gO",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_kURtCyM",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7Of0v",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_oKkqrTu",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_G6SZNnJ",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Zach Top BetMGM Dinner Reservation next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_GLprcP8",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Zach Top next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAekfy",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    }
+  ]
+}

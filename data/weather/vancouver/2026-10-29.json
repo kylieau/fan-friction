@@ -26,6 +26,18 @@
       "code": 81,
       "precipProbability": 29,
       "precipMm": 13.1
+    },
+    {
+      "metroId": "vancouver",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-16T13:03:02.430Z",
+      "feelsLikeHighF": 51.7,
+      "feelsLikeLowF": 39.1,
+      "code": 1,
+      "precipProbability": 39,
+      "precipMm": 0
     }
   ]
 }

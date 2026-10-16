@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-mlb-849818",
+      "metroId": "cleveland",
+      "date": "2026-10-15",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "progressive-field",
+      "homeTeamId": "guardians",
+      "home": {
+        "name": "Guardians",
+        "score": 3
+      },
+      "away": {
+        "name": "Rays",
+        "score": 2
+      },
+      "capturedAt": "2026-10-16T13:08:01.966Z",
+      "attendance": 30101,
+      "duration": {
+        "minutes": 148,
+        "kind": "official"
+      },
+      "startedAt": "13:10"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-10-15",
+  "results": [
+    {
+      "eventId": "2026-10-15-espn-texas-state-football-401860923",
+      "metroId": "austin",
+      "date": "2026-10-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ufcu-stadium",
+      "homeTeamId": "texas-state-football",
+      "home": {
+        "name": "Texas St",
+        "score": 66
+      },
+      "away": {
+        "name": "Colorado St",
+        "score": 27
+      },
+      "attendance": 16229,
+      "capturedAt": "2026-10-16T13:08:02.241Z",
+      "duration": {
+        "minutes": 207,
+        "kind": "estimated"
+      },
+      "startedAt": "20:00"
+    }
+  ]
+}

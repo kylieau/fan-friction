@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-31",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-31",
+      "basis": "forecast",
+      "capturedAt": "2026-10-16T13:01:00.438Z",
+      "feelsLikeHighF": 69.2,
+      "feelsLikeLowF": 64.7,
+      "code": 1,
+      "precipProbability": 19
+    }
+  ]
+}

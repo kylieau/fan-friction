@@ -15,6 +15,18 @@
       "code": 3,
       "precipProbability": 32,
       "precipMm": 0
+    },
+    {
+      "metroId": "san-antonio",
+      "venueId": "city",
+      "date": "2026-10-30",
+      "basis": "forecast",
+      "capturedAt": "2026-10-16T13:03:49.662Z",
+      "feelsLikeHighF": 85.6,
+      "feelsLikeLowF": 75.5,
+      "code": 51,
+      "precipProbability": 19,
+      "precipMm": 0.3
     }
   ]
 }
