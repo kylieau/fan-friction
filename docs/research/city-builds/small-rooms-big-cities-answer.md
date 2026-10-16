@@ -1,5 +1,7 @@
 # Small rooms, big cities — Fan/Friction venue research
 
+**Superseded Oct 16, 2026 by `small-rooms-big-cities-answer-2.md`** (the second installment: New York finished at 94 rows, which include these 66, plus the Los Angeles region). Import from that file, not this one. Status: closed, 66 New York rooms imported into `src/data/venues.ts` (Kylie's OK, Oct 16).
+
 **Status: partial delivery, New York metro first installment.** Researched October 15–16, 2026. Pasted into the repo by Claude Code on Oct 16, 2026, as returned (answer to `small-rooms-big-cities-prompt.md`). This file contains 66 researched room records, a near-threshold exclusion list, unresolved candidates, source failures, and a continuation checklist. **It is not a completed New York census or a completed multi-city answer.** Los Angeles and the remaining cities have not yet been researched in this installment.
 
 ## How to use this installment
