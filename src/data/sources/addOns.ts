@@ -33,6 +33,13 @@ const DISCLAIMER = new RegExp(
 /** A tour of the building, not a performer's tour ("Guided Tours of Scotiabank Arena", "Stadium Tour"; not "World Tour"). */
 const VENUE_TOUR = /\b(?:guided|pre-?game|behind[- ]the[- ]scenes|backstage|venue|stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)\s+tours?\b|\btours?\s+of\s+(?:the\s+)?[\w'. ]*(?:arena|stadium|centre|center|field|park|garden|ballpark|coliseum|dome)\b|\bvisites?\s+guid[ée]es?\b|\bvisite\s+d'avant[- ]match\b/i;
 
+/**
+ * The same, wider, for listings that are not shows: the building word may sit a word or two before "tour" ("Los Angeles
+ * Coliseum Historic Tours" got through as a 77,500-person event, Oct 16), and a name ending in the plural "Tours" is a
+ * building's tours. Shows keep the strict rule: "Garden Party Tour" is a concert, and a performer's tour is "Tour", singular.
+ */
+const VENUE_TOUR_WIDE = new RegExp(`${VENUE_TOUR.source}|\\b(?:stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)(?:\\s+\\w+){1,2}\\s+tours?\\b|\\btours\\s*$`, 'i');
+
 /** A matchup: "Spurs vs. Suns", "Broncos v Seahawks", "Nets at Hornets". */
 const GAME_SHAPE = /\b(?:vs?\.?|versus|at|@)\s/i;
 
@@ -48,13 +55,13 @@ function isPremiumAddOn(name: string): boolean {
 
 /** Games and other listings: the bare add-on words, plus the risky ones on a game shape. */
 function isOtherAddOn(name: string, game: boolean): boolean {
-  if (/\b(parking|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade|repas|salon des|lounge|hospitality)\b/i.test(name) || VENUE_TOUR.test(name)) return true;
+  if (/\b(parking|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade|repas|salon des|lounge|hospitality)\b/i.test(name) || VENUE_TOUR_WIDE.test(name)) return true;
   return (game || GAME_SHAPE.test(name)) && RISKY.test(name);
 }
 
 /** Shows: the add-on shapes only, never the bare words a tour or band name can carry. */
 function isShowAddOn(name: string): boolean {
-  return /\b(?:parking|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|hospitality|suites?|(?:venue|stadium|arena|behind.the.scenes) tours?)\b/i.test(name);
+  return /\b(?:parking|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|hospitality|suites?)\b/i.test(name) || VENUE_TOUR.test(name);
 }
 
 /** True when a listing is an add-on, not an event (any seller; Ticketmaster today). */
