@@ -137,6 +137,17 @@ function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'
   }
 }
 
+/** A listing name without a venue or "City, ST" tail the seller glued on; exported for the check script. */
+export function untagName(name: string, venueNames: string[]): string {
+  let n = name.trim();
+  const bar = n.lastIndexOf(' | ');
+  if (bar > 0) {
+    const tail = n.slice(bar + 3).trim().toLowerCase();
+    if (venueNames.some((v) => v.toLowerCase() === tail)) n = n.slice(0, bar).trim();
+  }
+  return n.replace(/\s+[–—-]\s+[A-Z][A-Za-z.' ]+,\s*[A-Z]{2}$/, '').trim();
+}
+
 /** The sport a Ticketmaster genre names ("Hockey" → hockey); "other" when it is a rodeo, a race or unclear. */
 function sportOf(genre: string | undefined): string {
   const g = (genre ?? '').toLowerCase();
@@ -262,7 +273,11 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       }
       if (addOn) continue;
       const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
-      const performer = (performers[0] ?? e.name).trim();
+      // A listing name with the venue or the city glued on ("Jurassic Quest – Anaheim, CA | Anaheim Convention Center")
+      // reads as the event alone (Oct 16): the tail after " | " goes when it names a room we have, and a trailing
+      // "City, ST" tag goes. Any city; the name is otherwise kept as written.
+      const name = untagName(e.name, venue.names.map((n) => n.name));
+      const performer = (performers[0] ?? name).trim();
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
       // One performer in one building on one date is one show, whatever time each listing carries (C014); one event
       // listed under two segments with two performer names is caught by its name (the shared key, venueMatch.ts).
@@ -276,9 +291,9 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         date: e.dates.start.localDate,
         start: e.dates.start.timeTBA || !e.dates.start.localTime ? null : e.dates.start.localTime.slice(0, 5),
         kind,
-        title: kind === 'show' ? performer : e.name.trim(),
+        title: kind === 'show' ? performer : name,
         // The full listing name when it says more than the act ("Bruno Mars: The Romantic Tour"; build notes 2, event naming).
-        ...(kind === 'show' && e.name.trim().toLowerCase() !== performer.toLowerCase() ? { officialTitle: e.name.trim() } : {}),
+        ...(kind === 'show' && name.toLowerCase() !== performer.toLowerCase() ? { officialTitle: name } : {}),
         place: { type: 'venue', venueId: venue.id },
         audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(`${genre} ${e.classifications?.[0]?.subGenre?.name ?? ''} ${e.name}`) } : { domain: 'other', tag: genre },
         performer,
