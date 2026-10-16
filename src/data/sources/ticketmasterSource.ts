@@ -48,6 +48,8 @@ export interface TicketmasterPull {
   events: CrowdEvent[];
   /** Listings at rooms the venue table doesn't have, by venue name, most first. */
   unknownVenues: { name: string; count: number }[];
+  /** Miscellaneous listings at 5,000+ rooms, with what the feed says about them (Kylie, Oct 16: the next add-on rule comes from feed facts, not words). */
+  bigRoomSpecials: { name: string; venueId: string; segment: string; genre: string; subGenre: string; dropped: boolean }[];
   pages: number;
 }
 
@@ -202,6 +204,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   const through = addDays(today, DAYS_AHEAD);
   const events: CrowdEvent[] = [];
   const unknown = new Map<string, number>();
+  const bigRoomSpecials: TicketmasterPull['bigRoomSpecials'] = [];
   const seen = new Set<string>();
   // Ticketmaster can list one show twice under two ids (a second listing, a package). The same
   // performer in the same building at the same date and start is one show, counted once.
@@ -251,7 +254,13 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       }
       const kind = kindOf(segment, venue.id);
       if (!kind) continue;
-      if (isAddOnListing(e.name, kind)) continue;
+      const addOn = isAddOnListing(e.name, kind);
+      // What the feed says about a miscellaneous listing at a big room (a stadium tour got a stadium's crowd, Oct 16), for the log.
+      if (kind === 'special' && Math.max(0, ...venue.capacity.map((c) => c.seats)) >= 5000) {
+        const c = e.classifications?.[0];
+        bigRoomSpecials.push({ name: e.name.trim(), venueId: venue.id, segment: segment ?? '', genre: c?.genre?.name ?? '', subGenre: c?.subGenre?.name ?? '', dropped: addOn });
+      }
+      if (addOn) continue;
       const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
       const performer = (performers[0] ?? e.name).trim();
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
@@ -286,6 +295,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   return {
     events,
     unknownVenues: [...unknown].map(([name, count]) => ({ name, count })).sort((a, b) => b.count - a.count),
+    bigRoomSpecials,
     pages,
   };
 }

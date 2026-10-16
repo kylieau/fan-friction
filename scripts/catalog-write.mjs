@@ -94,7 +94,7 @@ try {
     loadEspnSchedule(metroId),
     loadHockeytechSchedule(metroId).catch(() => []),
     seedEvents.catalog(metroId),
-    tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], pages: 0 }),
+    tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], bigRoomSpecials: [], pages: 0 }),
   ]);
   // A new source failing must not cost the city its night: log it and carry on without it.
   const sgAll = sgKey
@@ -108,6 +108,12 @@ try {
   if (tmKey) {
     const top = tm.unknownVenues.slice(0, 8).map((v) => `${v.name} (${v.count})`).join(', ');
     console.log(`${metroId}: Ticketmaster ${tm.events.length} listings kept at known venues, ${tm.unknownVenues.reduce((n, v) => n + v.count, 0)} at rooms the table lacks${top ? `: ${top}` : ''}.`);
+  }
+  // Miscellaneous listings at 5,000+ rooms, with the feed's own categories (Kylie, Oct 16): the material for a feed-based
+  // add-on rule. "kept" ones are listed at the room's size; "dropped" ones the word filter caught.
+  if (tm.bigRoomSpecials?.length) {
+    const rows = tm.bigRoomSpecials.map((s) => `${s.dropped ? 'dropped' : 'kept'} "${s.name}" @${s.venueId} [${[s.segment, s.genre, s.subGenre].filter(Boolean).join(' / ')}]`);
+    console.log(`${metroId}: ${rows.length} miscellaneous listings at 5,000+ rooms: ${[...new Set(rows)].join('; ')}.`);
   }
   // Rooms placed by a relaxed name or by proximity (any seller): a wrong room shows up here, not in the line above.
   if (looseVenueMatches.size) {
