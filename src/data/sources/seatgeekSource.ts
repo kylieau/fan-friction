@@ -12,7 +12,7 @@ import { METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
 import { capacityOn } from '../venues';
 import { FRICTION_ATTENDEES } from '../read';
-import { showKeys, venueByNameOrPlace } from './venueMatch';
+import { showKeys, venueByNameOrPlace, venueClosedOn } from './venueMatch';
 
 const API = 'https://api.seatgeek.com/2/events';
 const DAYS_AHEAD = 120;
@@ -77,7 +77,7 @@ export async function loadSeatgeekEvents(metroId: string, clientId: string): Pro
       if (!kind || e.datetime_tbd || !e.datetime_local || !e.venue?.name) continue;
       const date = e.datetime_local.slice(0, 10);
       const venue = venueByNameOrPlace(metroId, e.venue.name, e.venue.location?.lat, e.venue.location?.lon, date);
-      if (!venue) continue;
+      if (!venue || venueClosedOn(venue, date)) continue;
       const capacity = capacityOn(venue, date, 'concert');
       if (!capacity || capacity < FRICTION_ATTENDEES) continue;
       const performer = (e.performers?.find((p) => p.primary)?.name ?? e.performers?.[0]?.name ?? e.title).trim();

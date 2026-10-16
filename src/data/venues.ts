@@ -1848,6 +1848,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     // Closed Oct 21, 2023. Kept so nights there (2017–2023) can be logged.
     names: [{ name: 'FivePoint Amphitheatre' }],
+    closed: { from: '2023-10-22', note: 'Last show Oct 21, 2023; closed for good.' },
     // Approximate: the Great Park point, not the stage.
     location: [-117.7325, 33.6705],
     ticketmasterIds: ['KovZ917A8gf'],
@@ -1907,6 +1908,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     // Renamed back to Irvine Meadows during 2014 (the June 3, 2014 shows were still billed "Verizon Wireless").
     names: [{ name: 'Irvine Meadows Amphitheatre' }, { name: 'Verizon Wireless Amphitheatre', from: '2000-01-01' }, { name: 'Irvine Meadows Amphitheatre', from: '2015-01-01' }],
+    closed: { from: '2016-10-31', note: 'Last show Oct 30, 2016; demolished.' },
     location: [-117.74972, 33.6375],
     capacity: [{ seats: 16085, setup: 'concert', note: '10,418 reserved seats and 5,667 lawn. Opened 1981; closed Oct 30, 2016 and demolished. Source: https://en.wikipedia.org/wiki/Irvine_Meadows_Amphitheatre' }],
     roof: 'open',
@@ -1933,6 +1935,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     // The original room at Downtown Disney, 2001–2016. The GardenWalk room that opened in 2017 is a different room.
     names: [{ name: 'House of Blues Anaheim' }],
+    closed: { from: '2017-01-01', note: 'The Downtown Disney room closed in 2016 (the exact day is not stored); the GardenWalk room is its own record.' },
     location: [-117.921883, 33.8093233],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Opened 2001, closed 2016. Source: https://en.wikipedia.org/wiki/House_of_Blues' }],
     roof: 'indoor',
@@ -1975,6 +1978,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'gibson-amphitheatre',
     metroId: 'la',
     names: [{ name: 'Universal Amphitheatre' }, { name: 'Gibson Amphitheatre', from: '2005-01-01' }],
+    closed: { from: '2013-09-07', note: 'Last show Sept 6, 2013; demolished that month.' },
     location: [-118.353233, 34.138194],
     capacity: [{ seats: 6251, setup: 'concert', note: 'After the 1980s renovation, which added the roof. Universal City; last show Sept 6, 2013, demolished that month. Source: https://en.wikipedia.org/wiki/Gibson_Amphitheatre' }],
     roof: 'covered',
@@ -2491,6 +2495,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     // Temporarily closed.
     names: [{ name: 'Warner Grand Theatre' }],
+    closed: { from: '2024-01-01', note: 'Closed Jan 1, 2024 for renovation; a late-2026 reopening is expected, not confirmed. Source: https://grandvision.org/warner-grand-events/' },
     // The research's address estimate (Census), not an entrance.
     location: [-118.287411, 33.738812],
     capacity: [{ seats: 1525, setup: 'concert', note: 'Official (concert). San Pedro. Closed Jan 1, 2024 for renovation; a late-2026 reopening is expected, not confirmed. Kept for past dates. Official friends group: 1,525 seated pre-renovation. Closed January 1, 2024; late-2026 reopening expected, not confirmed accomplished. Post-renovation count unknown; history-only until reopened. Source: https://grandvision.org/warner-grand-events/' }],
@@ -3908,6 +3913,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'apollo-theater',
     metroId: 'new-york',
     names: [{ name: 'The Apollo' }, { name: 'Apollo Theater' }],
+    closed: { note: 'Closed for renovation; the Apollo expects a late-2026 reopening. Set `until` when a date is announced. Source: https://www.apollotheater.org/rent-the-apollo' },
     // OpenStreetMap point (253 West 125th Street).
     location: [-73.9499948, 40.8100895],
     capacity: [{ seats: 1506, setup: 'concert', note: 'Reported 1,506; the Apollo says about 1,500. Closed for renovation, reopening expected late 2026; the new count is unknown. Kept for past nights. Source: https://www.apollotheater.org/rent-the-apollo' }],
@@ -4162,6 +4168,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     // Reopening announced, not yet operating.
     names: [{ name: 'Loew\'s Jersey Theatre' }, { name: 'Loew\'s Jersey' }],
+    closed: { until: '2026-11-13', note: 'Closed for restoration; the grand-opening weekend is Nov 13, 2026. Source: https://loewsjersey.com/' },
     // OpenStreetMap point for the building (Loew's Jersey Theatre, 54), not an entrance.
     location: [-74.0646602, 40.732415],
     capacity: [{ seats: 3000, standing: 4000, note: 'Reported. Jersey City, Journal Square. Closed for restoration; the grand-opening weekend is scheduled for Nov 13, 2026. Nothing lists here until it reopens. Official: flexible audience range 2,600–4,000, without setup assignment. Contractor reports approximately 3,000 seated / 4,000 standing; older city plan said 3,300 seated. Use current operator range; exact seated count unconfirmed. Source: https://loewsjersey.com/about' }],
@@ -4190,6 +4197,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     // Closed / restoration pending.
     names: [{ name: 'Convention Hall' }],
+    closed: { note: 'Closed to public events; the city announced a restoration award in Aug 2026, not a reopening. Source: https://cityofasburypark.com/530/Boardwalk-Preservation' },
     // OpenStreetMap point for the building (Asbury Park Convention Hall, Asbury Park Boardwalk), not an entrance.
     location: [-73.9980604, 40.2237365],
     capacity: [{ seats: 3600, note: 'Reported. Asbury Park boardwalk; shares the building with the Paramount Theatre. Closed to public events; the city announced a restoration award in Aug 2026, not a reopening. Kept for past dates. Reported planning inventory: 3,600 seated. Current event configuration unavailable because room is inactive; do not schedule as an active room. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
@@ -4276,6 +4284,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     // Closed / restoration pending. Named with its town so a live "Paramount Theatre" listing matches Middletown's, not this closed room.
     names: [{ name: 'Paramount Theatre, Asbury Park' }, { name: 'Asbury Park Paramount Theatre' }],
+    closed: { note: 'Inactive while the boardwalk restoration proceeds; no reopening confirmed. Source: https://cityofasburypark.com/530/Boardwalk-Preservation' },
     // OpenStreetMap point for the building (Paramount Theatre, Ocean Avenue), not an entrance.
     location: [-73.9988376, 40.2238818],
     capacity: [{ seats: 1600, note: 'Reported. Asbury Park boardwalk, the auditorium beside Convention Hall. Inactive while the restoration proceeds; kept for past dates. Reported planning inventory: 1,600 seated. Current post-restoration inventory unconfirmed; inactive record for historical logs. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],

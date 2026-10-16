@@ -1,7 +1,7 @@
 // Matching a seller's listing to a venue we know, and telling when two sellers list the same show. Shared by
 // Ticketmaster and the sources added in build 5, item 1 (so there is one rule, not one per seller).
 
-import type { LocalDate } from '../types';
+import type { LocalDate, Venue } from '../types';
 import { VENUES } from '../venues';
 import { METROS } from '../../config/metros';
 
@@ -73,6 +73,13 @@ export function venueByNameOrPlace(metroId: string, name: string, lat?: number, 
   const nearby = ours.filter((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
   if (nearby.length === 1) noteLoose(name, nearby[0].id, 'within 300 m');
   return nearby.length === 1 ? nearby[0] : undefined;
+}
+
+/** Whether a room is closed on a date (its `closed` window; see the Venue type). Sellers drop listings for closed rooms. */
+export function venueClosedOn(venue: Pick<Venue, 'closed'>, date: LocalDate): boolean {
+  const c = venue.closed;
+  if (!c) return false;
+  return (c.from === undefined || date >= c.from) && (c.until === undefined || date < c.until);
 }
 
 /**

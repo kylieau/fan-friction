@@ -56,6 +56,12 @@ export interface Venue {
   carShare?: number;
   /** Ticketmaster's ids for this building, when known; a listing matches by id before by name. */
   ticketmasterIds?: string[];
+  /**
+   * A room that is closed (Kylie, Oct 16, 2026): a seller listing dated from `from` (or any date, when absent) up to
+   * `until` (or forever) is dropped at the nightly run. Past dates still resolve, and a hand-added entry can still name
+   * the room. A reopening sets `until`; a demolition leaves it off. The note carries the source.
+   */
+  closed?: { from?: LocalDate; until?: LocalDate; note: string };
 }
 
 // ---------- Teams ----------

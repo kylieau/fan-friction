@@ -13,7 +13,7 @@
 import { COVERED_METRO_IDS, METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
 import { VENUES } from '../venues';
-import { showKeys, venueByNameOrPlace } from './venueMatch';
+import { showKeys, venueByNameOrPlace, venueClosedOn } from './venueMatch';
 import { isAddOnListing } from './addOns';
 
 const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
@@ -263,6 +263,8 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         if (segment !== 'Sports') unknown.set(tmVenue.name, (unknown.get(tmVenue.name) ?? 0) + 1);
         continue;
       }
+      // A closed room takes no listing inside its closed window (the Apollo during its renovation; Kylie, Oct 16).
+      if (venueClosedOn(venue, e.dates.start.localDate)) continue;
       const kind = kindOf(segment, venue.id);
       if (!kind) continue;
       const addOn = isAddOnListing(e.name, kind);
