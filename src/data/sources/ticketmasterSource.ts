@@ -52,12 +52,12 @@ export interface TicketmasterPull {
 }
 
 /** The venue record a Ticketmaster venue matches, or undefined. */
-function venueFor(metroId: string, v: TmVenue) {
+function venueFor(metroId: string, v: TmVenue, date: LocalDate) {
   const ours = Object.values(VENUES).filter((venue) => venue.metroId === metroId);
   const byId = ours.find((venue) => venue.ticketmasterIds?.includes(v.id));
   if (byId) return byId;
   // By name, else within 300 m of a room we know (C016); shared with the other sellers (venueMatch.ts).
-  return venueByNameOrPlace(metroId, v.name, v.location ? Number(v.location.latitude) : undefined, v.location ? Number(v.location.longitude) : undefined);
+  return venueByNameOrPlace(metroId, v.name, v.location ? Number(v.location.latitude) : undefined, v.location ? Number(v.location.longitude) : undefined, date);
 }
 
 /**
@@ -244,7 +244,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       const segment = e.classifications?.[0]?.segment?.name;
       const tmVenue = e._embedded?.venues?.[0];
       if (!tmVenue) continue;
-      const venue = venueFor(metroId, tmVenue);
+      const venue = venueFor(metroId, tmVenue, e.dates.start.localDate);
       if (!venue) {
         if (segment !== 'Sports') unknown.set(tmVenue.name, (unknown.get(tmVenue.name) ?? 0) + 1);
         continue;

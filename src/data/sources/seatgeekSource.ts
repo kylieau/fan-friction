@@ -76,7 +76,7 @@ export async function loadSeatgeekEvents(metroId: string, clientId: string): Pro
       const kind = kindOf(e.type);
       if (!kind || e.datetime_tbd || !e.datetime_local || !e.venue?.name) continue;
       const date = e.datetime_local.slice(0, 10);
-      const venue = venueByNameOrPlace(metroId, e.venue.name, e.venue.location?.lat, e.venue.location?.lon);
+      const venue = venueByNameOrPlace(metroId, e.venue.name, e.venue.location?.lat, e.venue.location?.lon, date);
       if (!venue) continue;
       const capacity = capacityOn(venue, date, 'concert');
       if (!capacity || capacity < FRICTION_ATTENDEES) continue;

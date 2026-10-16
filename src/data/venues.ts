@@ -3933,7 +3933,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'dallas-fort-worth',
     // Estimated, ours (not in the research): the Stockyards district, congested on weekends.
     carShare: 0.9,
-    names: [{ name: "Billy Bob's Texas" }],
+    // "Billy Bob's" is how Ticketmaster lists it under a second venue id (feed, Oct 15, 2026).
+    names: [{ name: "Billy Bob's Texas" }, { name: "Billy Bob's" }],
     location: [-97.3478, 32.7909],
     ticketmasterIds: ['KovZpZAJ6dnA'],
     capacity: [
@@ -4727,6 +4728,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Mann Center for the Performing Arts' },
       { name: 'TD Pavilion at the Mann', from: '2020-01-01' },
       { name: 'Highmark Mann TD Pavilion', from: '2025-10-15' },
+      { name: 'TD Pavilion at Highmark Mann', from: '2025-10-15' },
     ],
     location: [-75.2229615, 39.9832572],
     capacity: [
