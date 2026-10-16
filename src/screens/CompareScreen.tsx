@@ -181,8 +181,8 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
     const e = c.mine;
     if (!e) return c.entry?.title ?? null;
     const parts = [listTitle(e)];
-    const count = e.crowd.find((f) => f.count !== undefined)?.count;
-    if (count) parts.push(`${fmt(count)} ${e.crowd.find((f) => f.count !== undefined)?.kind ?? ''}`.trim());
+    const figure = e.crowd.find((f) => f.count !== undefined);
+    if (figure?.count) parts.push(`${figure.atLeast ? 'at least ' : ''}${fmt(figure.count)} ${figure.kind}`);
     const r = resultFor(e);
     const len = r ? lengthLine(r) : undefined;
     if (len) parts.push(len);

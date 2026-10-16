@@ -15,10 +15,14 @@ import { listedCapacity } from './read';
 export interface CrowdFigureShown {
   count: number;
   kind: 'final' | 'announced' | 'reported' | 'estimated';
+  /** The estimate is a floor: "at least" this many (a multi-day figure of unclear kind; Kylie, Oct 16, 2026). */
+  atLeast?: boolean;
 }
 
 export interface CrowdFigures {
   estimated?: number;
+  /** The estimate is a floor, shown "at least" (Kylie, Oct 16, 2026). */
+  estimatedAtLeast?: boolean;
   announced?: number;
   /** The announced slot's own word: a press-reported count stays "reported". */
   announcedKind?: 'announced' | 'reported';
@@ -29,10 +33,11 @@ export interface CrowdFigures {
 export function crowdFigures(event: CrowdEvent): CrowdFigures {
   const firm = event.crowd.find((f) => f.count != null && f.kind !== 'estimated');
   const announced = event.result?.attendance ?? firm?.count;
-  const seededEstimate = event.crowd.find((f) => f.count != null && f.kind === 'estimated')?.count;
-  const estimated = seededEstimate ?? (event.expectedDraw ? roundEstimate(event.expectedDraw.count) : undefined);
+  const seeded = event.crowd.find((f) => f.count != null && f.kind === 'estimated');
+  const estimated = seeded?.count ?? (event.expectedDraw ? roundEstimate(event.expectedDraw.count) : undefined);
   return {
     ...(estimated ? { estimated } : {}),
+    ...(seeded?.atLeast ? { estimatedAtLeast: true } : {}),
     ...(announced ? { announced, announcedKind: event.result?.attendance || firm?.kind !== 'reported' ? 'announced' : 'reported' } : {}),
   };
 }
@@ -42,7 +47,7 @@ export function highlightedCrowd(event: CrowdEvent): CrowdFigureShown | null {
   const f = crowdFigures(event);
   if (f.final) return { count: f.final, kind: 'final' };
   if (f.announced) return { count: f.announced, kind: f.announcedKind ?? 'announced' };
-  if (f.estimated) return { count: f.estimated, kind: 'estimated' };
+  if (f.estimated) return { count: f.estimated, kind: 'estimated', ...(f.estimatedAtLeast ? { atLeast: true } : {}) };
   return null;
 }
 
@@ -52,12 +57,30 @@ export function highlightedCrowd(event: CrowdEvent): CrowdFigureShown | null {
  * sold-out room size with no count of its own (that is the room, not an estimate).
  */
 export function estimateMark(event: CrowdEvent): string {
-  return highlightedCrowd(event)?.kind === 'estimated' ? '~' : '';
+  const shown = highlightedCrowd(event);
+  return shown?.kind === 'estimated' && !shown.atLeast ? '~' : '';
+}
+
+/** After the number, for a floor: "6.7k+" (Kylie, Oct 16, 2026). A floor takes no "~". */
+export function atLeastMark(event: CrowdEvent): string {
+  return highlightedCrowd(event)?.atLeast ? '+' : '';
 }
 
 /** The same mark for a stub's own figure. */
 export function entryEstimateMark(entry: Entry): string {
-  return entryCrowd(entry)?.kind === 'estimated' ? '~' : '';
+  const shown = entryCrowd(entry);
+  return shown?.kind === 'estimated' && !shown.atLeast ? '~' : '';
+}
+
+/** The same "+" for a stub's own floor. */
+export function entryAtLeastMark(entry: Entry): string {
+  return entryCrowd(entry)?.atLeast ? '+' : '';
+}
+
+/** The full figure on the event page: "52,667", "~18,000", "At least 6,667". */
+export function crowdFull(shown: CrowdFigureShown, fmt: (n: number) => string): string {
+  if (shown.atLeast) return `At least ${fmt(shown.count)}`;
+  return shown.kind === 'estimated' ? `~${fmt(shown.count)}` : fmt(shown.count);
 }
 
 /** The crowd count shown on the map, chip card and sheet total (build 4 §0: Final > Announced > Estimated). */
@@ -93,10 +116,10 @@ export function backfillEntryCrowd(entry: Entry, event?: CrowdEvent): Partial<En
 }
 
 /** The one figure to show for a stub (R04: legacy `crowd` is migrated on open). */
-export function entryCrowd(entry: Entry): { count: number; kind?: CrowdFigureShown['kind'] } | null {
+export function entryCrowd(entry: Entry): { count: number; kind?: CrowdFigureShown['kind']; atLeast?: boolean } | null {
   if (entry.crowdFinal) return { count: entry.crowdFinal, kind: 'final' };
   if (entry.crowdAnnounced) return { count: entry.crowdAnnounced, kind: 'announced' };
-  if (entry.crowdEstimated) return { count: entry.crowdEstimated, kind: 'estimated' };
+  if (entry.crowdEstimated) return { count: entry.crowdEstimated, kind: 'estimated', ...(entry.crowdAtLeast ? { atLeast: true } : {}) };
   if (entry.crowd) return { count: entry.crowd };
   return null;
 }

@@ -680,10 +680,14 @@ function freshEntry(event: CrowdEvent, watched: boolean): Entry {
  * The figures an entry's crowd locks to (build notes 3, D04): the announced attendance from the box
  * score, and the estimate the app made, each into its own field. Final has no source yet (⚑4).
  */
-function lockedCrowd(event: CrowdEvent): Pick<Entry, 'crowdAnnounced' | 'crowdEstimated'> {
+function lockedCrowd(event: CrowdEvent): Pick<Entry, 'crowdAnnounced' | 'crowdEstimated' | 'crowdAtLeast'> {
   const figures = crowdFigures(event);
   const estimated = figures.estimated ?? drawSize(event);
-  return { ...(figures.announced ? { crowdAnnounced: figures.announced } : {}), ...(estimated ? { crowdEstimated: estimated } : {}) };
+  return {
+    ...(figures.announced ? { crowdAnnounced: figures.announced } : {}),
+    ...(estimated ? { crowdEstimated: estimated } : {}),
+    ...(figures.estimated && figures.estimatedAtLeast ? { crowdAtLeast: true } : {}),
+  };
 }
 
 /** How long after a date an entry keeps asking for its announced crowd (Kylie, Oct 12: retry until it lands). Box scores land within days; older gaps are left. */
@@ -782,7 +786,10 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
       // Fill only what is empty: a figure already on the entry stays (D03).
       const fill: Partial<Entry> = { crowdLocked: true };
       if (locked.crowdAnnounced && !entry.crowdAnnounced) fill.crowdAnnounced = locked.crowdAnnounced;
-      if (locked.crowdEstimated && !entry.crowdEstimated) fill.crowdEstimated = locked.crowdEstimated;
+      if (locked.crowdEstimated && !entry.crowdEstimated) {
+        fill.crowdEstimated = locked.crowdEstimated;
+        if (locked.crowdAtLeast) fill.crowdAtLeast = true;
+      }
       // A retry that found nothing new writes nothing.
       if (entry.crowdLocked && !fill.crowdAnnounced && !fill.crowdEstimated) continue;
       updates.set(entry.id, fill);

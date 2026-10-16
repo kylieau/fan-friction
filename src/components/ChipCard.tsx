@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ByLine, CrowdMark, EventFrictionPill, OccasionTag } from './EventTags';
-import { displayedCrowdCount, estimateMark, feelsLikeLabel, isOpenAir, VENUES, venueNameOn, weatherForEvent, type CrowdEvent } from '../data';
+import { atLeastMark, displayedCrowdCount, estimateMark, feelsLikeLabel, isOpenAir, VENUES, venueNameOn, weatherForEvent, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
@@ -53,6 +53,7 @@ export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Fr
             <CrowdMark />
             {estimateMark(event)}
             {crowdThousands(size)}
+            {atLeastMark(event)}
           </span>
         ) : null}
         <span className="chip-card-chevron" aria-hidden>

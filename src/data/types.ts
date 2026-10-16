@@ -563,6 +563,8 @@ export interface Entry {
    * highlighted one is Final > Announced > Estimated (src/data/crowdFigures.ts).
    */
   crowdEstimated?: number;
+  /** The estimate locked from a floor ("at least"; Kylie, Oct 16, 2026). */
+  crowdAtLeast?: boolean;
   crowdAnnounced?: number;
   crowdFinal?: number;
   /**

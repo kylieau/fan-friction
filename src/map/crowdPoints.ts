@@ -42,12 +42,31 @@ const SETUP_BY_SPORT: Record<string, string> = {
   baseball: 'baseball',
 };
 
-/** One point per event that happens at a known venue. Events with no venue yet are left off. */
-export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
+/**
+ * One point per event that happens at a known venue. Events with no venue yet are left off, unless `withPlaces`:
+ * the event page also opens an event placed at a point (a festival ground, a race card), with that place's name.
+ */
+export function crowdPoints(events: CrowdEvent[], date: string, withPlaces = false): CrowdPoint[] {
   const points: CrowdPoint[] = [];
   const today = todayIn(DEFAULT_METRO);
   for (const event of events) {
-    if (event.place.type !== 'venue') continue;
+    if (event.place.type !== 'venue') {
+      if (!withPlaces) continue;
+      const count = event.crowd.find((c) => c.count !== undefined)?.count;
+      points.push({
+        event,
+        venueName: event.place.name,
+        location: event.place.type === 'point' ? event.place.location : event.place.path[0],
+        capacity: undefined,
+        count,
+        soldOut: event.crowd.some((c) => c.soldOut),
+        fill: null,
+        upcoming: event.date >= today,
+        dayTag: event.date === date ? null : shortLocalDate(event.date),
+        muted: isMuted(event),
+      });
+      continue;
+    }
     const venue = VENUES[event.place.venueId];
     if (!venue) continue;
     const setup = event.audience.domain === 'sports' ? SETUP_BY_SPORT[event.audience.sport] : 'concert';
@@ -103,8 +122,9 @@ export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), w
   const highlighted = highlightedCrowd(event);
   const sold = withSold && event.crowd.some((c) => c.soldOut);
   if (highlighted) {
-    const mark = highlighted.kind === 'estimated' ? '~' : '';
-    return `${mark}${crowdThousands(highlighted.count)}${sold ? ' (sold out)' : ''}`;
+    // A floor reads "6.7k+", with no "~" (Kylie, Oct 16, 2026).
+    const mark = highlighted.kind === 'estimated' && !highlighted.atLeast ? '~' : '';
+    return `${mark}${crowdThousands(highlighted.count)}${highlighted.atLeast ? '+' : ''}${sold ? ' (sold out)' : ''}`;
   }
   if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
   if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);

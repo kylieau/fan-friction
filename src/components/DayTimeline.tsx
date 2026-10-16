@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { CrowdMark } from './EventTags';
 import { TypeIcon } from './TypeIcon';
 import { frictionClass } from '../config/scoreLabels';
-import { drawSize, estimateMark, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
+import { atLeastMark, drawSize, estimateMark, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
@@ -76,6 +76,7 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
                         <CrowdMark />
                         {estimateMark(e)}
                         {crowdThousands(size)}
+                        {atLeastMark(e)}
                       </span>
                     ) : null}
                   </span>

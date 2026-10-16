@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { EventFrictionPill, CrowdMark, OccasionTag } from './EventTags';
 import { ReadTile, type EmptyKind } from './ReadTile';
 import { formatScore, FRICTION_LEVELS } from '../config/scoreLabels';
-import { drawSize, sizeTier, type CrowdEvent } from '../data';
+import { atLeastMark, drawSize, sizeTier, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
 import { mapTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
@@ -86,6 +86,7 @@ export function WhyCard({
                       <span className="why-row-crowd">
                         <CrowdMark />
                         {crowdThousands(size)}
+                        {atLeastMark(e)}
                       </span>
                     )}
                     {e.assessment && <OccasionTag occasion={e.assessment.occasion} />}

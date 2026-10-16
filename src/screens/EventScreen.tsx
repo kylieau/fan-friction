@@ -12,6 +12,8 @@ import { activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
+  atLeastMark,
+  crowdFull,
   estimateMark,
   eventType,
   popupExplainer,
@@ -160,6 +162,7 @@ export function EventScreen() {
     ? crowdPoints(
         day.events.filter((event) => event.id === id || showsOnMap(event)),
         date,
+        true,
       )
     : [];
   const me = points.find((p) => p.event.id === id);
@@ -379,6 +382,7 @@ export function EventScreen() {
                           <CrowdMark />
                           {estimateMark(r)}
                           {crowdThousands(drawSize(r)!)}
+                          {atLeastMark(r)}
                         </span>
                       ) : null}
                     </Link>
@@ -410,7 +414,7 @@ export function EventScreen() {
             <div className="crowd-hero">
               <span className="crowd-hero-num">
                 <CrowdMark />
-                {shown.kind === 'estimated' ? `~${fmt(shown.count)}` : fmt(shown.count)}
+                {crowdFull(shown, fmt)}
               </span>
               <span className="crowd-hero-kind">
                 {crowdKindWord(shown.kind)}
@@ -476,7 +480,7 @@ export function EventScreen() {
         line={a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : ''}
         friction={a?.friction ?? null}
         rating={day.rating ? day.rating.rating : null}
-        crowd={shown ? `${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null}
+        crowd={shown ? `${shown.atLeast ? 'At least ' : ''}${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null}
       />
 
       <MapBack date={date} metroId={e.metroId} className="text-link">

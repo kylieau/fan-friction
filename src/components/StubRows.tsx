@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TypeIcon } from './TypeIcon';
 import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { entryCrowd, entryEstimateMark, isGameEventId, isOutsideGamePlan, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
+import { entryAtLeastMark, entryCrowd, entryEstimateMark, isGameEventId, isOutsideGamePlan, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { crowdThousands } from '../map/crowdPoints';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
@@ -64,6 +64,7 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
                 <CrowdMark />
                 {entryEstimateMark(entry)}
                 {crowdThousands(crowd.count)}
+                {entryAtLeastMark(entry)}
               </>
             ) : undefined
           }
