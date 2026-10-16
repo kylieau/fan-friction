@@ -16,13 +16,14 @@ import { lengthLine, scoreLine } from './results';
 import { normalizeSeats, normalizeTags, retag } from './stubTags';
 import type { Seats } from './types';
 import type { Favorite } from './favorites';
-import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
+import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry, wallClockToUtc } from './read';
+import { addDays } from '../lib/dates';
 import { seedEventsOn } from './sources/seedSource';
 import { drawSize } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
-import type { CrowdEvent, CrowdRange, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, StubVisibility, YouOrder } from './types';
+import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SportsLevel, Stamp, PersonalLog, StubVisibility, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -762,6 +763,22 @@ export async function retitleStubs(loadDate: (metroId: string, date: string) => 
   if (!failed) setPref('stub-titles', { ...getPref<Record<string, string>>('stub-titles', {}), [scope]: TITLE_VERSION });
 }
 
+/**
+ * Bump to relock every log once more. Oct 16: entries that locked blank before their date's events were loaded
+ * (the research-loaded past dates) take the figures now; they were outside the 30-day retry.
+ */
+const RELOCK_VERSION = 'past-dates-oct16';
+
+/**
+ * Whether a date's crowds may lock: the stamp clock, 24 hours after the last scheduled start. A date with no start
+ * on file (a research-loaded concert date) gets no stamp, and used to lock no crowd either: its crowds lock 24
+ * hours after the end of that day, which is never earlier than any start could have been.
+ */
+function crowdsLocked(metroDate: MetroDate, timeZone: string, now: Date): boolean {
+  if (metroDate.lastScheduledStart) return isStampLocked(metroDate, timeZone, now);
+  return now.getTime() >= wallClockToUtc(addDays(metroDate.date, 1), '00:00', timeZone).getTime() + 24 * 3600_000;
+}
+
 export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
   const now = new Date();
   const past = (entry: Entry) => {
@@ -769,18 +786,27 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
     const metro = METROS[entry.metroId];
     return Boolean(metro) && entry.when.sort < todayInZone(metro.timeZone, now);
   };
+  // The one-time relock (per log, per device, like retitleStubs): every blank locked entry asks again, however old.
+  const scope = getAccount()?.id ?? 'phone';
+  const relocked = getPref<Record<string, string>>('crowd-relock', {});
+  const relock = relocked[scope] !== RELOCK_VERSION;
+  const window = todayInZone('UTC', new Date(now.getTime() - ANNOUNCED_RETRY_DAYS * 86400000));
   const first = snapshot.added.filter((entry) => !entry.crowdLocked && past(entry));
   const retry = snapshot.added.filter(
-    (entry) => entry.crowdLocked && !entry.crowdAnnounced && !entry.crowdFinal && !entry.crowd && past(entry) && entry.when.sort >= todayInZone('UTC', new Date(now.getTime() - ANNOUNCED_RETRY_DAYS * 86400000)),
+    (entry) => entry.crowdLocked && !entry.crowdAnnounced && !entry.crowdFinal && !entry.crowd && past(entry) && (relock || entry.when.sort >= window),
   );
   const due = [...first, ...retry];
-  if (due.length === 0) return;
+  if (due.length === 0) {
+    if (relock) setPref('crowd-relock', { ...relocked, [scope]: RELOCK_VERSION });
+    return;
+  }
   const updates = new Map<string, Partial<Entry>>();
+  let failed = due.length > 40;
   for (const entry of due.slice(0, 40)) {
     try {
       const day = await loadDate(entry.metroId!, entry.when.sort);
       const metro = METROS[entry.metroId!];
-      if (!isStampLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
+      if (!crowdsLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
       const event = day.events.find((e) => e.id === entry.eventId);
       const locked = event ? lockedCrowd(event) : {};
       // Fill only what is empty: a figure already on the entry stays (D03).
@@ -794,9 +820,11 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
       if (entry.crowdLocked && !fill.crowdAnnounced && !fill.crowdEstimated) continue;
       updates.set(entry.id, fill);
     } catch {
-      /* try again next open */
+      failed = true; /* try again next open */
     }
   }
+  // The relock is done after a pass where every due date loaded; a cut-off or failed pass runs again next open.
+  if (relock && !failed) setPref('crowd-relock', { ...relocked, [scope]: RELOCK_VERSION });
   if (updates.size === 0) return;
   commit({ ...snapshot, added: snapshot.added.map((entry) => (updates.has(entry.id) ? { ...entry, ...updates.get(entry.id) } : entry)) });
 }
