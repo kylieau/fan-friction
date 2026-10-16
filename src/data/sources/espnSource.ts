@@ -610,6 +610,7 @@ const VENUE_BY_NAME: Record<string, string> = {
   'citi field': 'citi-field',
   'shi stadium': 'shi-stadium',
   "jersey mike's arena": 'jersey-mikes-arena',
+  'jersey mike’s arena': 'jersey-mikes-arena', // the feed's curly apostrophe (checked Oct 16)
   'rutgers athletic center': 'jersey-mikes-arena',
   'sports illustrated stadium': 'sports-illustrated-stadium',
   'prudential center': 'prudential-center',
