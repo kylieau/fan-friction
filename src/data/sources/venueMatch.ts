@@ -25,6 +25,18 @@ function plain(name: string): string {
 }
 
 /**
+ * Listings placed by anything but their exact name (a dropped tag, a dropped building or city, proximity), for the
+ * nightly log: a room placed wrongly shows up here, where the unplaced list only shows misses (Oct 16).
+ */
+export const looseVenueMatches = new Map<string, { venueId: string; how: string; count: number }>();
+
+function noteLoose(name: string, venueId: string, how: string) {
+  const row = looseVenueMatches.get(name) ?? { venueId, how, count: 0 };
+  row.count += 1;
+  looseVenueMatches.set(name, row);
+}
+
+/**
  * The venue a listing names, by any name we store, else the one room within 300 m of its point (C016). Several
  * rooms on one campus make proximity ambiguous, so then nothing matches.
  */
@@ -44,10 +56,22 @@ export function venueByNameOrPlace(metroId: string, name: string, lat?: number, 
   // must still equal a name we store in this city, and the exact name always wins.
   const untagged = key.replace(/\s*-\s*[a-z.]+(?:\s[a-z.]+){0,2}$/, '');
   const city = plain(METROS[metroId]?.name ?? '');
-  const tries = [key, untagged, key.replace(/\s+at\s+(the\s+)?[^-]+$/, ''), city ? plain(key).replace(new RegExp(`\\s${city}$`), '') : key];
-  const byName = tries.map(named).find(Boolean) ?? named(untagged.replace(/^the\s+/, ''));
-  if (byName || lat == null || lng == null || !Number.isFinite(lat) || !Number.isFinite(lng)) return byName;
+  const tries: [string, string][] = [
+    ['exact', key],
+    ['tag dropped', untagged],
+    ['building dropped', key.replace(/\s+at\s+(the\s+)?[^-]+$/, '')],
+    ['city dropped', city ? plain(key).replace(new RegExp(`\\s${city}$`), '') : key],
+    ['"the" dropped', untagged.replace(/^the\s+/, '')],
+  ];
+  for (const [how, k] of tries) {
+    const venue = named(k);
+    if (!venue) continue;
+    if (how !== 'exact') noteLoose(name, venue.id, how);
+    return venue;
+  }
+  if (lat == null || lng == null || !Number.isFinite(lat) || !Number.isFinite(lng)) return undefined;
   const nearby = ours.filter((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
+  if (nearby.length === 1) noteLoose(name, nearby[0].id, 'within 300 m');
   return nearby.length === 1 ? nearby[0] : undefined;
 }
 

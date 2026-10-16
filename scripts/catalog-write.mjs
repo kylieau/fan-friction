@@ -71,6 +71,7 @@ try {
   const { loadHockeytechSchedule } = await server.ssrLoadModule('/src/data/sources/hockeytechSource.ts');
   const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
   const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
+  const { looseVenueMatches } = await server.ssrLoadModule('/src/data/sources/venueMatch.ts');
   const { dropTicketmasterGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
   // SeatGeek (build 5, item 1): shows Ticketmaster misses. Off until Kylie adds the free client id as a secret.
@@ -107,6 +108,12 @@ try {
   if (tmKey) {
     const top = tm.unknownVenues.slice(0, 8).map((v) => `${v.name} (${v.count})`).join(', ');
     console.log(`${metroId}: Ticketmaster ${tm.events.length} listings kept at known venues, ${tm.unknownVenues.reduce((n, v) => n + v.count, 0)} at rooms the table lacks${top ? `: ${top}` : ''}.`);
+  }
+  // Rooms placed by a relaxed name or by proximity (any seller): a wrong room shows up here, not in the line above.
+  if (looseVenueMatches.size) {
+    const loose = [...looseVenueMatches].map(([name, m]) => `"${name}" → ${m.venueId} (${m.how}, ${m.count})`).join('; ');
+    console.log(`${metroId}: ${looseVenueMatches.size} seller names placed loosely: ${loose}.`);
+    looseVenueMatches.clear();
   }
   const eventRow = (e) => ({
     id: e.id,

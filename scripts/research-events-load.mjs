@@ -267,8 +267,10 @@ try {
   const nick = (name) => (name || '').split(' ').pop().toLowerCase();
   // Teams not on file: a long matchup loses its mascots so both sides fit ("Arizona Wildcats" → "Arizona"); a club
   // name ending "SC", "FC" or a number keeps its name. A college game carries its sport code in the title's tag
-  // slot ("(MBB)") so the label names men's and women's alike.
-  const MASCOTS2 = /\s+(?:Tar Heels|Crimson Tide|Blue Devils|Sun Devils|Golden Bears|Golden Eagles|Fighting Irish|Horned Frogs|Yellow Jackets|Nittany Lions|Demon Deacons|Mean Green|Red Raiders|Scarlet Knights|Rainbow Warriors|Red Storm|Blue Raiders|Golden Gophers)$/;
+  // slot ("(MBB)") so the label names men's and women's alike. Known limit: a mascot is taken as the last word,
+  // except the two-word mascots listed here (any city); a two-word mascot not listed keeps its first word.
+  const MASCOTS2 =
+    /\s+(?:Tar Heels|Crimson Tide|Blue Devils|Sun Devils|Golden Bears|Golden Eagles|Fighting Irish|Horned Frogs|Yellow Jackets|Nittany Lions|Demon Deacons|Mean Green|Red Raiders|Scarlet Knights|Rainbow Warriors|Red Storm|Blue Raiders|Golden Gophers|Black Knights|Golden Flashes|Golden Hurricane|Golden Griffins|Golden Grizzlies|Golden Lions|Fighting Illini|Fighting Hawks|Fighting Camels|Thundering Herd|Green Wave|Blue Hens|Blue Hose|Blue Jays|Red Wolves|Red Flash|Red Foxes|Black Bears|Ragin' Cajuns|Runnin' Rebels|Mountain Hawks|River Hawks|Sea Wolves|Great Danes|Purple Aces|Purple Eagles|Orange|Polar Bears|Delta Devils|Roadrunners|Mean Green|Little Rock|Wolf Pack|Sun Belt|Jimmies|Leathernecks|Bearkats|Wildcats|Ramblin' Wreck|Shockers|Mastodons|Penguins|Mocs|Rams|Gaels|Hoyas|Chanticleers|Catamounts|Jaspers|Peacocks|Highlanders|Lancers|Anteaters|Matadors|Tritons|Waves|Lions|Toros|Titans|Gauchos|Aggies|Bruins|Trojans)$/;
   const place = (name) => (/\b(?:SC|FC|\d+)$/.test(name) && !/\d{2}ers$/.test(name) ? name : MASCOTS2.test(name) ? name.replace(MASCOTS2, '') : name.replace(/\s+\S+$/, ''));
   const CODES = [[/women's basketball/i, 'WBB'], [/men's basketball/i, 'MBB'], [/women's volleyball/i, 'WVB'], [/men's volleyball/i, 'MVB'], [/women's soccer/i, 'WSOC'], [/men's soccer/i, 'MSOC']];
   const unlistedTitle = (g) => {
@@ -280,7 +282,15 @@ try {
     return `${a} vs. ${b}${code ? ` (${code})` : ''}`;
   };
   const seenGames = new Set();
-  const SPORTS = [[/basketball|NBA|WNBA/i, 'basketball'], [/baseball|MLB|League/i, 'baseball'], [/soccer|USL|MLS|NWSL/i, 'soccer'], [/hockey|NHL|AHL/i, 'hockey'], [/football|NFL/i, 'football']];
+  // The sport from the league or genre column, any city: a bare "League" names nothing ("Premier League" is soccer,
+  // "Pacific Coast League" baseball), so each sport lists its own leagues. Soccer first, since its leagues say "football".
+  const SPORTS = [
+    [/soccer|\b(?:USL|MLS|NWSL|CPL|Liga MX|Premier League|Champions League|Leagues Cup|Bundesliga|Serie A|La Liga|Ligue 1)\b/i, 'soccer'],
+    [/basketball|\b(?:NBA|WNBA|G League|CEBL|NBL)\b/i, 'basketball'],
+    [/baseball|\b(?:MLB|MiLB|Pacific Coast|International|California|Frontier|Atlantic|Pioneer|Carolina|South Atlantic|Eastern|Southern|Texas|Midwest|Florida State|Northwest|Appalachian|American Association|Partner) League\b|\bMLB\b|\bMiLB\b/i, 'baseball'],
+    [/hockey|\b(?:NHL|AHL|ECHL|PWHL|OHL|WHL|QMJHL|SPHL|NCHC)\b/i, 'hockey'],
+    [/football|\b(?:NFL|CFL|UFL|XFL|USFL)\b/i, 'football'],
+  ];
   for (const g of gamesToCheck) {
     const venue = venueOf(g.venue);
     const key = `${g.date}|${venue?.id ?? g.venue}|${[nick(g.home_team), nick(g.away_team)].sort().join('-')}`;
