@@ -1,6 +1,6 @@
 # Research prompt: what else was on, for specific past dates
 
-Copy everything below the line into a research model, after filling in the "Dates for this run" block. Paste the answer back to Claude to check and fold in. Drafted Oct 6, 2026, from `docs/research/events-and-dates/october-2026-events-prompt.md`. Use it to give a logged night its friction read: the read needs every other big event in that city on that date. Weather is fetched separately (Open-Meteo), so the prompt doesn't ask for it.
+Copy everything below the line into a research model, after filling in the "Dates for this run" block. Paste the answer back to Claude to check and fold in. Drafted Oct 6, 2026 (listing floor corrected to about 1,000 on Oct 16, per Kylie's Oct 6 and Oct 9 rules), from `docs/research/events-and-dates/october-2026-events-prompt.md`. Use it to give a logged night its friction read: the read needs every other big event in that city on that date. Weather is fetched separately (Open-Meteo), so the prompt doesn't ask for it.
 
 Keep the filled-in date list out of the repo when the dates come from someone's private log (the repo is public). Paste it into the research tool only.
 
@@ -22,16 +22,18 @@ Los Angeles (LA County + Orange County): 2026-02-25, 2026-03-03, ...
 ## What counts
 Include an event when **all** of these are true:
 - It happened **in that city's area** on that **local date** (any start time, day or night).
-- The venue holds **about 5,000 or more** in that setup, or the event drew 5,000+ (a festival, a parade).
+- The venue holds **about 1,000 or more** in that setup, or the event drew 1,000+ (a festival, a parade). Rooms of 1,000–5,000 are listed too: the app shows them muted, and only events of 5,000+ feed the friction read. Give the room's size so the two can be told apart.
 - It was **public**: ticketed, free, or open to anyone. Invite-only events (awards shows, closed conventions) are included but marked invited.
 
-All kinds count equally (sizes as above): pro and college sports (including preseason and playoffs), lower leagues in 5,000+ buildings, concerts at stadiums, arenas and amphitheaters, festivals, international soccer, and other big ticketed events (wrestling, combat sports, motorsport, family shows). No-venue crowd events (parades, marathons, street festivals, closures) go in their own table.
+All kinds count equally (sizes as above): pro and college sports (including preseason and playoffs), lower leagues, concerts at stadiums, arenas, amphitheaters, theaters and large clubs, festivals, international soccer, and other big ticketed events (wrestling, combat sports, motorsport, family shows). No-venue crowd events (parades, marathons, street festivals, closures) go in their own table.
 
-**Mid-size theaters (about 5,000–8,000 seats)** go in only when they're inside or beside a venue that had a big event that same night (a theater inside an arena building, or on a stadium campus).
+**Mid-size theaters (about 5,000–8,000 seats) are listed like any room.** Whether one feeds the friction read is the app's call, not the research's (Kylie, Oct 16, 2026: the 5,000 floor and the theater rule decide what counts, never what is listed).
+
+**A multi-day total** (a festival's weekend attendance) goes in the attendance column as written, with the number of days ("over 20,000 across all 3 days"); the app averages it per day, labeled estimated.
 
 **Watch parties count when they're big** (5,000+), like any event: an official team watch party outside the arena, a stadium opened for an away game, a big Cosm-style screening. Put one in a venue in the Events table with `kind` live-broadcast; put a street or plaza one in the no-venue table. Give a crowd figure only if a source has one.
 
-Skip: rooms under 5,000, Broadway and theater runs, clubs, private events, small watch parties and bar screenings, and away games.
+Skip: rooms under about 1,000, Broadway and theater runs, private events, small watch parties and bar screenings, and away games.
 
 ## How to verify
 - Every row needs a source URL. Prefer box scores and league pages for games (they also give the scheduled start and announced attendance) and the venue's or tour's own pages for concerts. Setlist.fm and tour-date archives are good for confirming a concert happened that night.

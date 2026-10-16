@@ -1911,6 +1911,32 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 16085, setup: 'concert', note: '10,418 reserved seats and 5,667 lawn. Opened 1981; closed Oct 30, 2016 and demolished. Source: https://en.wikipedia.org/wiki/Irvine_Meadows_Amphitheatre' }],
     roof: 'open',
   },
+  // Rooms of about 1,000–5,000 (Kylie, Oct 6 and Oct 9: listed from about 1,000, muted, no friction label).
+  'hollywood-palladium': {
+    id: 'hollywood-palladium',
+    metroId: 'la',
+    names: [{ name: 'Hollywood Palladium' }],
+    location: [-118.32421, 34.098007],
+    capacity: [{ seats: 4000, setup: 'concert', note: 'Standing. Source: https://en.wikipedia.org/wiki/Hollywood_Palladium' }],
+    roof: 'indoor',
+  },
+  'the-bellwether': {
+    id: 'the-bellwether',
+    metroId: 'la',
+    names: [{ name: 'The Bellwether' }],
+    location: [-118.2584445, 34.0562378],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'About 1,500 (the venue\'s own site, checked Oct 16, 2026). Source: https://thebellwetherla.com/' }],
+    roof: 'indoor',
+  },
+  'house-of-blues-anaheim-downtown-disney': {
+    id: 'house-of-blues-anaheim-downtown-disney',
+    metroId: 'la',
+    // The original room at Downtown Disney, 2001–2016. The GardenWalk room that opened in 2017 is a different room.
+    names: [{ name: 'House of Blues Anaheim' }],
+    location: [-117.921883, 33.8093233],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Opened 2001, closed 2016. Source: https://en.wikipedia.org/wiki/House_of_Blues' }],
+    roof: 'indoor',
+  },
   'gibson-amphitheatre': {
     id: 'gibson-amphitheatre',
     metroId: 'la',

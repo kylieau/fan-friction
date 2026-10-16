@@ -64,11 +64,21 @@ const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').rep
 const sqlText = (s) => (s == null ? 'null' : `'${String(s).replace(/'/g, "''")}'`);
 const sqlJson = (o) => `${sqlText(JSON.stringify(o))}::jsonb`;
 
-/** "reported approximately 10,000 Saturday" → 10,000 reported. A total across several days is not a day's crowd. */
+/**
+ * "reported approximately 10,000 Saturday" → 10,000 reported. A total over several days ("over 20,000 across all 3
+ * days") is averaged into a day, labeled estimated (Kylie, Oct 7, 2026: "a per-day average of a multi-day total is fine
+ * when it is labeled estimated"). A total whose days aren't given is left out rather than guessed.
+ */
 function crowdOf(text) {
-  if (!text || /across|weekend|all \d+ days|total/i.test(text)) return [];
+  if (!text) return [];
   const n = text.match(/(\d{1,3}(?:,\d{3})+|\d{4,})/);
   if (!n) return [];
+  const days = Number(text.match(/(?:across|over)\s+(?:all\s+)?(\d+)\s+days/i)?.[1] ?? 0);
+  if (days > 1) {
+    const total = Number(n[1].replace(/,/g, ''));
+    return [{ count: Math.round(total / days), kind: 'estimated', note: `About ${total.toLocaleString('en-US')} over ${days} days, averaged per day.` }];
+  }
+  if (/across|weekend|total/i.test(text)) return [];
   const kind = /announced/i.test(text) ? 'announced' : /estimat/i.test(text) ? 'estimated' : 'reported';
   return [{ count: Number(n[1].replace(/,/g, '')), kind, note: 'From the date research.' }];
 }
