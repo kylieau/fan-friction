@@ -18,7 +18,11 @@ function metersBetween([lng1, lat1]: readonly [number, number] | number[], [lng2
 export function venueByNameOrPlace(metroId: string, name: string, lat?: number, lng?: number) {
   const ours = Object.values(VENUES).filter((venue) => venue.metroId === metroId);
   const key = name.trim().toLowerCase();
-  const byName = ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === key));
+  const named = (k: string) => ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === k));
+  // Sellers tag a room with its city or state ("Peacock Theater - LA", "Shrine Auditorium-CA", "Greek Theatre-Los
+  // Angeles"): retry without a short trailing tag, then without a leading "The". The exact name always wins.
+  const untagged = key.replace(/\s*-\s*[a-z.]+(?:\s[a-z.]+)?$/, '');
+  const byName = named(key) ?? named(untagged) ?? named(untagged.replace(/^the\s+/, ''));
   if (byName || lat == null || lng == null || !Number.isFinite(lat) || !Number.isFinite(lng)) return byName;
   const nearby = ours.filter((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
   return nearby.length === 1 ? nearby[0] : undefined;

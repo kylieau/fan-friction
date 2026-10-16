@@ -65,9 +65,10 @@ const sqlText = (s) => (s == null ? 'null' : `'${String(s).replace(/'/g, "''")}'
 const sqlJson = (o) => `${sqlText(JSON.stringify(o))}::jsonb`;
 
 /**
- * "reported approximately 10,000 Saturday" → 10,000 reported. A total over several days ("over 20,000 across all 3
- * days") is averaged into a day, labeled estimated (Kylie, Oct 7, 2026: "a per-day average of a multi-day total is fine
- * when it is labeled estimated"). A total whose days aren't given is left out rather than guessed.
+ * "reported approximately 10,000 Saturday" → 10,000 reported. A multi-day total is averaged into a day, labeled
+ * estimated, only when it says it counts admissions day by day ("cumulative attendance", "turnstile", "person-days")
+ * (Kylie, Oct 7, 2026, C3 in docs/product/expected-draw-decisions-oct7.md). A total of unclear kind ("attendees",
+ * passes sold) is not a day's crowd: a three-day pass holder is in the crowd every day. That stays unsized.
  */
 function crowdOf(text) {
   if (!text) return [];
@@ -75,8 +76,9 @@ function crowdOf(text) {
   if (!n) return [];
   const days = Number(text.match(/(?:across|over)\s+(?:all\s+)?(\d+)\s+days/i)?.[1] ?? 0);
   if (days > 1) {
+    if (!/cumulative|turnstile|person-days|daily admissions|admissions over/i.test(text)) return [];
     const total = Number(n[1].replace(/,/g, ''));
-    return [{ count: Math.round(total / days), kind: 'estimated', note: `About ${total.toLocaleString('en-US')} over ${days} days, averaged per day.` }];
+    return [{ count: Math.round(total / days), kind: 'estimated', note: `About ${total.toLocaleString('en-US')} admissions over ${days} days, averaged per day.` }];
   }
   if (/across|weekend|total/i.test(text)) return [];
   const kind = /announced/i.test(text) ? 'announced' : /estimat/i.test(text) ? 'estimated' : 'reported';

@@ -4095,7 +4095,7 @@ export const VENUES: Record<string, Venue> = {
   'ventura-theater': {
     id: 'ventura-theater',
     metroId: 'la',
-    names: [{ name: 'Ventura Theater' }],
+    names: [{ name: 'Ventura Theater' }, { name: 'Majestic Ventura Theater', from: '2015-01-01' }],
     location: [-119.2978, 34.2805],
     ticketmasterIds: ['KovZpapT1e'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated. Ventura is part of Los Angeles here.' }],
