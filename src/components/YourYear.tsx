@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { scoreLabel } from '../config/scoreLabels';
-import { biggestCrowd, entryAtLeastMark, entryCrowd, entryEstimateMark, ratingForEntry, toughestFights, type Entry } from '../data';
+import { biggestCrowd, entryAtLeastMark, entryCrowd, ratingForEntry, toughestFights, type Entry } from '../data';
 import { crowdThousands } from '../map/crowdPoints';
 import { loggedDateLabel } from '../lib/dates';
 import { entryPath, eventPath } from '../lib/view';
@@ -88,7 +88,7 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
             <div className="badge-row">
               {biggest && (
                 <span className="badge badge-crowd">
-                  Biggest crowd · {biggest.title} · <CrowdMark /> {entryEstimateMark(biggest)}{crowdThousands(entryCrowd(biggest)?.count ?? 0)}{entryAtLeastMark(biggest)}
+                  Biggest crowd · {biggest.title} · <CrowdMark /> {crowdThousands(entryCrowd(biggest)?.count ?? 0)}{entryAtLeastMark(biggest)}
                 </span>
               )}
               {fightText && <span className="badge badge-fight">Toughest fight · {fightText}</span>}

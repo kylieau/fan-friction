@@ -367,9 +367,7 @@ export { CONCERT_FILL, roundEstimate } from './expectedDrawBuild';
 export {
   crowdFigures,
   highlightedCrowd,
-  estimateMark,
   atLeastMark,
-  entryEstimateMark,
   entryAtLeastMark,
   crowdFull,
   displayedCrowdCount,

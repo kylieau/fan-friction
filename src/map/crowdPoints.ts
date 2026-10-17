@@ -114,7 +114,8 @@ export function eventCapacity(event: CrowdEvent): number | undefined {
 }
 
 /**
- * Short crowd wording: an estimate leads with "~" ("~55k", build 5, item 10; it replaced the " est" suffix).
+ * Short crowd wording: the number only ("55k"; a floor "6.7k+"). No "~" on chips, rows or cards (build 6, item 4):
+ * the event page's full number says "Estimated", and the map key says numbers on upcoming events may be estimates.
  * Sold out stays on the sheet. The map chip is the number only.
  * A sold-out show with no count of its own uses the room size, and that number is not an estimate.
  */
@@ -122,9 +123,7 @@ export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), w
   const highlighted = highlightedCrowd(event);
   const sold = withSold && event.crowd.some((c) => c.soldOut);
   if (highlighted) {
-    // A floor reads "6.7k+", with no "~" (Kylie, Oct 16, 2026).
-    const mark = highlighted.kind === 'estimated' && !highlighted.atLeast ? '~' : '';
-    return `${mark}${crowdThousands(highlighted.count)}${highlighted.atLeast ? '+' : ''}${sold ? ' (sold out)' : ''}`;
+    return `${crowdThousands(highlighted.count)}${highlighted.atLeast ? '+' : ''}${sold ? ' (sold out)' : ''}`;
   }
   if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
   if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);
@@ -133,7 +132,7 @@ export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), w
     const d = event.expectedDraw;
     const shown = d.planning && d.low != null ? d.low : d.count;
     // In practice crowdFigures already turns the draw into the highlighted estimate, so this rarely runs.
-    return `~${crowdThousands(roundEstimate(shown))}`;
+    return crowdThousands(roundEstimate(shown));
   }
   return sold ? 'Sold out' : 'No count yet';
 }

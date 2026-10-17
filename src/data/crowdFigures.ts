@@ -29,7 +29,7 @@ export interface CrowdFigures {
   final?: number;
 }
 
-/** The figures on a listed event. Every estimate, a building-only one included, reads "~" (build 5, item 10). */
+/** The figures on a listed event. An estimate reads "~" only in the event page's full number (build 6, item 4). */
 export function crowdFigures(event: CrowdEvent): CrowdFigures {
   const firm = event.crowd.find((f) => f.count != null && f.kind !== 'estimated');
   const announced = event.result?.attendance ?? firm?.count;
@@ -51,25 +51,13 @@ export function highlightedCrowd(event: CrowdEvent): CrowdFigureShown | null {
   return null;
 }
 
-/**
- * The mark in front of an estimated crowd on compact surfaces: "~55k" (build 5, item 10). One rule for every surface:
- * "~" when the event's highlighted crowd is an estimate, nothing for Announced, Reported or Final, and nothing for a
- * sold-out room size with no count of its own (that is the room, not an estimate).
- */
-export function estimateMark(event: CrowdEvent): string {
-  const shown = highlightedCrowd(event);
-  return shown?.kind === 'estimated' && !shown.atLeast ? '~' : '';
-}
+// No "~" on compact surfaces (build 6, item 4; Kylie, Oct 15: it "isn't visually appealing"). The one place an estimate
+// says so is the event page's full number beside the word "Estimated" (`crowdFull`), plus one line in the map key:
+// "Numbers on upcoming events may be estimates." This reverses build 5, item 10, which marked every estimate "~".
 
-/** After the number, for a floor: "6.7k+" (Kylie, Oct 16, 2026). A floor takes no "~". */
+/** After the number, for a floor: "6.7k+" (Kylie, Oct 16, 2026). */
 export function atLeastMark(event: CrowdEvent): string {
   return highlightedCrowd(event)?.atLeast ? '+' : '';
-}
-
-/** The same mark for a stub's own figure. */
-export function entryEstimateMark(entry: Entry): string {
-  const shown = entryCrowd(entry);
-  return shown?.kind === 'estimated' && !shown.atLeast ? '~' : '';
 }
 
 /** The same "+" for a stub's own floor. */
