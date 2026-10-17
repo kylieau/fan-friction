@@ -103,7 +103,10 @@ try {
     ['Cubs at Reds (Spring training, Cactus League)', 'Cubs at Reds', 'low', 'Spring training, Cactus League'],
     ['Jessie Ware (DJ Set)', 'Jessie Ware (DJ Set)', null, null],
     ['Wisconsin at UCLA · Football', 'Wisconsin at UCLA · Football', null, null],
-    ["Angels at A's (Game\u00a01)", "Angels at A's", 'game', 'Game\u00a01'],
+    // An older saved "(Game 1)" reads as the doubleheader it was (build 6, item 10).
+    ["Angels at A's (Game\u00a01)", "Angels at A's", 'game', 'Doubleheader Game\u00a01'],
+    ["Angels at A's (DH1)", "Angels at A's", 'game', 'Doubleheader Game\u00a01'],
+    ["Angels at A's (Doubleheader, Game\u00a01)", "Angels at A's", 'game', 'Doubleheader Game\u00a01'],
   ];
   for (const [text, name, kind, own] of splits) {
     const got = splitTitleLabel(text);
