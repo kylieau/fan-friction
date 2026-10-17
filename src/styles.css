@@ -5821,6 +5821,13 @@ button.back-link {
    becomes its own scroller under the header, opened with today's band at its top; the past is above, by scrolling up. */
 .timeline-page {
   overflow: hidden;
+  /* The list runs to the tab bar and the floating button floats over it (Kylie, Oct 17: "shouldn't cut off here");
+     the scroller's own bottom padding keeps the last row clear of the button. */
+  padding-bottom: 0;
+}
+
+.timeline-section.stubs-list {
+  padding-bottom: 0;
 }
 
 .page > .timeline-section {
