@@ -49,7 +49,7 @@ export function FollowingScreen() {
     setParams(nextParams, { replace: true });
   };
   return (
-    <div className={`screen page${segment === 'friends' ? ' timeline-page' : ''}`}>
+    <div className="screen page timeline-page">
       <div className="you-header">
         <h1 className="page-title">Following</h1>
         <SearchButton className="you-search" />

@@ -41,6 +41,7 @@ export function Timeline({
   const scroller = useRef<HTMLDivElement>(null);
   const todayLine = useRef<HTMLDivElement>(null);
   const placed = useRef(false);
+  const hadPast = useRef(false);
   const openedAt = useRef(0);
   const [pill, setPill] = useState<'down' | 'up' | null>(null);
   // Room under the future so the today line can always reach the top of the list, however little is ahead.
@@ -51,7 +52,13 @@ export function Timeline({
   useLayoutEffect(() => {
     const el = scroller.current;
     const line = todayLine.current;
-    if (placed.current || !el || !line) return;
+    if (!el || !line) return;
+    // Rows can arrive after the first render (a feed, a team's schedule): the first past rows place the line again.
+    if (past.length > 0 && !hadPast.current) {
+      hadPast.current = true;
+      placed.current = false;
+    }
+    if (placed.current) return;
     if (past.length === 0) {
       placed.current = true;
       openedAt.current = 0;

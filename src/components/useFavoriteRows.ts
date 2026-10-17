@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Metro } from '../config/metros';
-import { eventMatches, getEventsBetween, getTeamSchedule, metrosWithEvents, todayIn, TEAMS, VENUES, venueNameOn, type CrowdEvent, type Favorite, type GameLink, type TeamGame } from '../data';
+import { eventMatches, getEventsBetween, getTeamSchedule, metrosWithEvents, scoreMark, todayIn, TEAMS, VENUES, venueNameOn, type CrowdEvent, type Favorite, type GameLink, type TeamGame } from '../data';
 import { addDays, clockTime } from '../lib/dates';
-import { listTitle, scheduleGameTitle } from '../lib/eventTitle';
+import { listTitle, scheduleGameTitle, teamRelativeTitle } from '../lib/eventTitle';
 
 /** One row of a favorites schedule: a favorite's date, from its own schedule (a team) or the listings (everyone else). */
 export interface ScheduleRow {
@@ -28,24 +28,26 @@ export interface ScheduleRow {
  * (the Faves schedule in Settings, 14 days; the Following timeline, 60; build 6, item 7). Teams come from their
  * own schedule, home and away; everyone else from the listings in every covered city.
  */
-export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, aheadDays: number): { rows: ScheduleRow[]; today: string; horizon: string } {
+export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, aheadDays: number, backDays = 0): { rows: ScheduleRow[]; today: string; horizon: string } {
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
   const [schedules, setSchedules] = useState<Map<string, TeamGame[] | null>>(new Map());
   const today = todayIn(home);
   const horizon = addDays(today, aheadDays);
+  // The past the rows reach back into (the Faves timeline, 60 days; Kylie, Oct 17): results for teams, dates for the rest.
+  const floor = addDays(today, -backDays);
 
   // Listings everywhere for the span: a favorite's date can be in any covered city.
   useEffect(() => {
     let current = true;
-    // From yesterday, since the listings query starts after its first date: today's own games belong here.
-    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(today, -1), horizon))).then((lists) => {
+    // From the day before the floor, since the listings query starts after its first date.
+    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(floor, -1), horizon))).then((lists) => {
       if (!current) return;
       setUpcoming(lists.flat().sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))));
     });
     return () => {
       current = false;
     };
-  }, [today, horizon]);
+  }, [floor, horizon]);
 
   // Each followed team's own schedule, home and away.
   const teamIds = favorites.map((fav) => fav.teamId).filter((id): id is string => Boolean(id)).join(',');
@@ -65,19 +67,23 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
       const games = fav.teamId ? (schedules.get(fav.teamId) ?? null) : null;
       if (games) {
         for (const game of games) {
-          if (game.date < today || game.date > horizon || game.score) continue;
+          const past = game.date < today;
+          if (game.date < floor || game.date > horizon || (!past && game.score)) continue;
           const event = game.eventId ? upcoming.find((e) => e.id === game.eventId) : undefined;
           const key = event?.id ?? `${fav.teamId}-${game.id}`;
           if (seen.has(key)) continue;
           seen.add(key);
           const venue = event ? venueOf(event) : game.venueName;
+          const sport = fav.teamId ? TEAMS[fav.teamId]?.sport : undefined;
+          // A result reads the team page's way: the score first, then the game from the team's side ("W 17–15 at Oregon").
+          const mark = past ? scoreMark(game) : undefined;
           out.push({
             key,
             fav,
             date: game.date,
             start: game.start,
-            title: scheduleGameTitle(fav.label, game, fav.teamId ? TEAMS[fav.teamId]?.sport : undefined),
-            facts: [venue, game.start ? clockTime(game.start) : null].filter(Boolean).join(' · '),
+            title: mark ? `${mark} ${teamRelativeTitle(game, sport)}` : scheduleGameTitle(fav.label, game, sport),
+            facts: [venue, game.start && !mark ? clockTime(game.start) : null].filter(Boolean).join(' · '),
             event,
             metroId: event?.metroId ?? game.eventMetroId,
             away: !game.eventId,
@@ -103,7 +109,7 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
       }
     }
     return out.sort((a, b) => (a.date + (a.start ?? '99')).localeCompare(b.date + (b.start ?? '99')));
-  }, [favorites, schedules, upcoming, today, horizon]);
+  }, [favorites, schedules, upcoming, today, horizon, floor]);
 
   return { rows, today, horizon };
 }

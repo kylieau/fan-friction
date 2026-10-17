@@ -30,10 +30,11 @@ import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { LabelLine } from '../components/TitleText';
-import { ListBand } from '../components/ListBand';
+import { Timeline, type TimelineItem } from '../components/Timeline';
 
 /** How far ahead the schedule looks: the schedule archive's reach. */
-const AHEAD_DAYS = 14;
+/** The Faves timeline reaches 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
+const SPAN_DAYS = 60;
 
 const KINDS: { kind: FavoriteKind; label: string }[] = [
   { kind: 'team', label: 'Team' },
@@ -63,7 +64,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   // The picker stays open until Done, even after the first follow.
   const [picking, setPicking] = useState(() => edit || pathname.endsWith('/edit') || favorites.length === 0);
   // The schedule rows (shared with the Following timeline since build 6, item 7).
-  const { rows, today } = useFavoriteRows(favorites, home, AHEAD_DAYS);
+  const { rows, today } = useFavoriteRows(favorites, home, SPAN_DAYS, SPAN_DAYS);
 
   // The read of each date, keyed by city and date (C066 / 5.2).
   useEffect(() => {
@@ -223,12 +224,12 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
 
   // Dates, in order; each row keeps its own read (Kylie's answer, build notes 3, 8.1, item 21: no heading read).
   // Month bands, like the Stubs and Friends timelines (Kylie, Oct 17); each row then carries its own date.
-  const byDate = new Map<string, ScheduleRow[]>();
-  for (const row of rows) {
-    const month = timelineGroup({ sort: row.date, label: '', precision: 'day' });
-    byDate.set(month, [...(byDate.get(month) ?? []), row]);
-  }
-  const quiet = favorites.filter((fav) => !rows.some((row) => favoriteKey(row.fav) === favoriteKey(fav)));
+  const toItem = (row: ScheduleRow): TimelineItem => ({
+    key: row.key,
+    group: timelineGroup({ sort: row.date, label: '', precision: 'day' }),
+    node: <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} today={today} />,
+  });
+  const quiet = favorites.filter((fav) => !rows.some((row) => favoriteKey(row.fav) === favoriteKey(fav) && row.date >= today));
 
   const body = (
     <>
@@ -247,29 +248,29 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
           Edit
         </button>
       </div>
-      {byDate.size === 0 ? (
-        <div className="card empty-card">
-          <div className="card-title">Nothing in the next two weeks.</div>
-        </div>
-      ) : (
-        [...byDate.entries()].map(([month, list]) => (
-          <section key={month} className="you-block fav-day" aria-label={month}>
-            <ListBand as="h2" label={month} />
-            <ul className="log-list">
-              {list.map((row) => (
-                <li key={row.key}>
-                  <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} today={today} />
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))
-      )}
       {quiet.length > 0 && (
         <Link to="/favorites/edit" className="text-link fav-quiet">
           Nothing coming: {quiet.map((fav) => fav.label).join(', ')} ›
         </Link>
       )}
+      {/* The same line of time as Stubs and Friends (Kylie, Oct 17): results and past dates above the today line,
+          reached by scrolling up; what is ahead below it; month bands on both sides. */}
+      <Timeline
+        label="Faves"
+        past={rows.filter((row) => row.date < today).map(toItem)}
+        future={rows.filter((row) => row.date >= today).map(toItem)}
+        todayLabel={dayBandLabel(today, today)}
+        emptyPast={
+          <div className="card empty-card">
+            <div className="card-title">Nothing from your Faves in the last {SPAN_DAYS} days.</div>
+          </div>
+        }
+        emptyFuture={
+          <div className="card empty-card">
+            <div className="card-title">Nothing from your Faves in the next {SPAN_DAYS} days.</div>
+          </div>
+        }
+      />
     </>
   );
   if (embedded) return body;
