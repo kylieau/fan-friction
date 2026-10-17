@@ -23,7 +23,7 @@ import {
   type FavoriteKind,
   gameEventId,
 } from '../data';
-import { dayBandLabel, shortLocalDate } from '../lib/dates';
+import { dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { splitTitleLabel } from '../lib/eventTitle';
 import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
@@ -222,8 +222,12 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   }
 
   // Dates, in order; each row keeps its own read (Kylie's answer, build notes 3, 8.1, item 21: no heading read).
+  // Month bands, like the Stubs and Friends timelines (Kylie, Oct 17); each row then carries its own date.
   const byDate = new Map<string, ScheduleRow[]>();
-  for (const row of rows) byDate.set(row.date, [...(byDate.get(row.date) ?? []), row]);
+  for (const row of rows) {
+    const month = timelineGroup({ sort: row.date, label: '', precision: 'day' });
+    byDate.set(month, [...(byDate.get(month) ?? []), row]);
+  }
   const quiet = favorites.filter((fav) => !rows.some((row) => favoriteKey(row.fav) === favoriteKey(fav)));
 
   const body = (
@@ -248,13 +252,13 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
           <div className="card-title">Nothing in the next two weeks.</div>
         </div>
       ) : (
-        [...byDate.entries()].map(([date, list]) => (
-          <section key={date} className="you-block fav-day" aria-label={shortLocalDate(date)}>
-            <ListBand as="h2" label={dayBandLabel(date, today)} />
+        [...byDate.entries()].map(([month, list]) => (
+          <section key={month} className="you-block fav-day" aria-label={month}>
+            <ListBand as="h2" label={month} />
             <ul className="log-list">
               {list.map((row) => (
                 <li key={row.key}>
-                  <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />
+                  <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} today={today} />
                 </li>
               ))}
             </ul>
@@ -285,9 +289,11 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
  * with its city's code over it when the date is not at home, opens the date page. An uncovered away
  * game wears the Away tag; its words open a page built from the game, so it can be stubbed (Kylie, Oct 15).
  */
-function ScheduleRowView({ row, shown, rating, home }: { row: ScheduleRow; /** The favorites this schedule lists, for the set-aware badge. */ shown: readonly Favorite[]; rating: number | null; home: string }) {
+function ScheduleRowView({ row, shown, rating, home, today }: { row: ScheduleRow; /** The favorites this schedule lists, for the set-aware badge. */ shown: readonly Favorite[]; rating: number | null; home: string; today: string }) {
   const split = splitTitleLabel(row.title);
   const code = row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null;
+  // Under a month band the row says its day first: "Today · Sat, Oct 17 · Rose Bowl · 4:30 pm".
+  const facts = [dayBandLabel(row.date, today), row.facts].filter(Boolean).join(' · ');
   const main = (
     <>
       <FavoriteBadge fav={row.fav} shown={shown} />
@@ -297,7 +303,7 @@ function ScheduleRowView({ row, shown, rating, home }: { row: ScheduleRow; /** T
           <span className="fav-title-name">{split.name}</span>
         </span>
         {split.label && <LabelLine label={split.label} />}
-        <span className="log-facts">{row.facts}</span>
+        <span className="log-facts">{facts}</span>
       </span>
     </>
   );
