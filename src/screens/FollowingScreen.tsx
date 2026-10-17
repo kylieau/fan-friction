@@ -1,182 +1,174 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
-import { ActivityLines } from '../components/ActivityLines';
-import { CardsIcon, ChevronDown, ListIcon, PeopleIcon, SearchIcon, StarIcon } from '../components/Icons';
+import { StarIcon } from '../components/Icons';
+import { TypeIcon } from '../components/TypeIcon';
+import { DateBox } from '../components/StubRows';
+import { Timeline, type TimelineItem } from '../components/Timeline';
+import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import {
-  EXAMPLE_FEED,
+  canSignIn,
+  eventType,
   favoritesOf,
   followingFeed,
   getAccount,
   getPersonalLog,
   nightKey,
-  nightsOf,
   ratingForEntry,
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
-  todayIn,
-  yourEntries,
   type Entry,
-  type Favorite,
   type FeedItem,
-  type PersonalLog,
   isGameEventId,
 } from '../data';
 import { ACTIVITY_WORDS, activityGroups, activityOrder, feedSentence, type ActivityGroups } from '../lib/activity';
-import { shortLocalDate } from '../lib/dates';
+import { addDays, clockTime, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
+import { getHomeId } from '../lib/homeCity';
 import { backFrom, datePath, eventPath } from '../lib/view';
-import { FavoritesScreen } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
-import { ListBand } from '../components/ListBand';
 
-type Segment = 'faves' | 'friends';
+/** How far the timeline looks each way (Kylie, Oct 16, Q4): your Faves' next 60 days; followed people's last 60. */
+const SPAN_DAYS = 60;
 
 /**
- * Following: who and what you follow, its own tab since build 3 (Kylie, Oct 11, 2026; mocks
- * docs/design/build3/5-favorites.png and 6-friends.png). Two segments, star "Faves" and person
- * "Friends", an icon and a short word each so the F-words don't stack.
+ * Following (build 6, item 7; Kylie, Oct 16, Q4): the same line of time as Stubs. Ahead of the today line,
+ * upcoming events at your Faves in covered cities within 60 days and what the people you follow answered
+ * (Attending, Watching, Interested); behind it, only what followed people attended or watched in the last
+ * 60 days. Your own plans live in Stubs, not here. Each row shows its own date and time; no friction mark.
+ * The Faves and People lists are edited in Settings; this tab only reads.
  */
 export function FollowingScreen() {
-  const [params, setParams] = useSearchParams();
-  const segment: Segment = params.get('tab') === 'friends' ? 'friends' : 'faves';
-  const pick = (next: Segment) => {
-    const nextParams = new URLSearchParams(params);
-    if (next === 'faves') nextParams.delete('tab');
-    else nextParams.set('tab', next);
-    setParams(nextParams, { replace: true });
-  };
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
+  const favorites = useMemo(() => favoritesOf(log), [log]);
+  const home = METROS[getHomeId() ?? DEFAULT_METRO.id] ?? DEFAULT_METRO;
+  const { rows, today } = useFavoriteRows(favorites, home, SPAN_DAYS);
+  const [feed, setFeed] = useState<FeedItem[]>([]);
+  const [feedNote, setFeedNote] = useState<string | null>(null);
+  const [ratings, setRatings] = useState<Map<string, number>>(new Map());
+
+  useEffect(() => {
+    let current = true;
+    setFeedNote(null);
+    if (!account) {
+      setFeed([]);
+      return;
+    }
+    followingFeed(300)
+      .then((list) => current && setFeed(list))
+      .catch(() => current && setFeedNote("Couldn't load the people you follow. Try again later."));
+    return () => {
+      current = false;
+    };
+  }, [account?.id]);
+
+  const items = useMemo(() => mergeRows(rows.filter((row) => row.event), feed, today), [rows, feed, today]);
+
+  useEffect(() => {
+    let current = true;
+    scoresForNights(items.flatMap((item) => (item.metroId ? [{ metroId: item.metroId, date: item.date }] : []))).then((map) => current && setRatings(map));
+    return () => {
+      current = false;
+    };
+  }, [items]);
+
+  const location = useLocation();
+  const back = backFrom(location.pathname, location.search);
+  const toItem = (item: FollowItem): TimelineItem => ({
+    key: item.key,
+    group: timelineGroup({ sort: item.date, label: '', precision: 'day' }),
+    node: <FollowRow item={item} rating={ratingFor(item, ratings)} back={back} />,
+  });
+  const past = items.filter((item) => item.date < today).map(toItem);
+  const future = items.filter((item) => item.date >= today).map(toItem);
+
   return (
     <div className="screen page">
       <div className="you-header">
         <h1 className="page-title">Following</h1>
         <SearchButton className="you-search" />
       </div>
-      <div className="segmented following-segments" role="tablist" aria-label="Following">
-        <button type="button" role="tab" aria-selected={segment === 'faves'} onClick={() => pick('faves')}>
-          <StarIcon /> Faves
-        </button>
-        <button type="button" role="tab" aria-selected={segment === 'friends'} onClick={() => pick('friends')}>
-          <PeopleIcon /> Friends
-        </button>
-      </div>
-      {segment === 'faves' ? <FavoritesScreen embedded /> : <FriendsTab view={params.get('view') === 'feed' ? 'feed' : 'events'} onView={(view) => {
-        const nextParams = new URLSearchParams(params);
-        if (view === 'events') nextParams.delete('view');
-        else nextParams.set('view', view);
-        setParams(nextParams, { replace: true });
-      }} />}
+      {/* The lists you edit (Faves, People) moved to Settings (Kylie, Oct 16); one quiet pointer here. */}
+      <p className="you-fine following-note">
+        <Link to="/you?panel=faves">You can edit them in Settings.</Link>
+      </p>
+      {!account && canSignIn() && <p className="you-fine">Sign in to follow people.</p>}
+      {feedNote && (
+        <p className="you-fine" role="status">
+          {feedNote}
+        </p>
+      )}
+      <Timeline
+        label="Following"
+        past={past}
+        future={future}
+        todayLabel={dayBandLabel(today, today)}
+        todayGroup={timelineGroup({ sort: today, label: '', precision: 'day' })}
+        emptyPast={<p className="you-fine timeline-note">Nothing from the people you follow yet.</p>}
+        emptyFuture={<p className="you-fine timeline-note">Nothing coming up at your Faves or from the people you follow.</p>}
+      />
     </div>
   );
 }
 
-type View = 'events' | 'feed';
-
-/** The Friends segment: the people you follow, grouped by event by default, or as the flat feed. */
-function FriendsTab({ view, onView }: { view: View; onView: (view: View) => void }) {
-  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
-  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
-  const entries = useMemo(() => yourEntries(log), [log]);
-  const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [feed, setFeed] = useState<FeedItem[] | null>(null);
-
-  useEffect(() => {
-    let current = true;
-    if (!account) {
-      setFeed(null);
-      return;
-    }
-    followingFeed(200).then((list) => current && setFeed(list));
-    return () => {
-      current = false;
-    };
-  }, [account?.id]);
-
-  useEffect(() => {
-    let current = true;
-    const nights = [...nightsOf(entries), ...(feed ?? []).map((item) => ({ metroId: item.metroId ?? DEFAULT_METRO.id, date: item.date }))];
-    scoresForNights(nights).then((map) => {
-      if (current) setRatings(map);
-    });
-    return () => {
-      current = false;
-    };
-  }, [entries, feed]);
-
-  if (!account) {
-    return (
-      <div className="card empty-card">
-        <div className="card-title">Sign in to follow people.</div>
-      </div>
-    );
-  }
-  if (feed === null) return null;
-  const example = feed.length === 0;
-  const items = example ? EXAMPLE_FEED : feed;
-  return (
-    <>
-      {/* A visible way to find and add people (Kylie, Oct 15: "I just need there to be a way to search for other
-          people or add friends"); it opens the People search. */}
-      <Link to="/you/people?find=1" className="search-box friends-find">
-        <SearchIcon />
-        <span>Find people</span>
-      </Link>
-      <div className="you-heading-row friends-head">
-        <span className="friends-kicker">{view === 'events' ? 'By event' : 'Feed'}</span>
-        {/* Grouped by event is the default (Kylie, Oct 11); the switch goes to the feed. */}
-        <div className="view-switch" role="tablist" aria-label="View">
-          <button type="button" role="tab" aria-selected={view === 'events'} aria-label="By event" onClick={() => onView('events')}>
-            <CardsIcon />
-          </button>
-          <button type="button" role="tab" aria-selected={view === 'feed'} aria-label="Feed" onClick={() => onView('feed')}>
-            <ListIcon />
-          </button>
-        </div>
-      </div>
-      {view === 'events' ? <ByEvent items={items} example={example} ratings={ratings} log={log} onFeed={() => onView('feed')} /> : <Feed items={items} example={example} />}
-    </>
-  );
-}
-
-/** A friend's line belongs on your by-event list when the event is yours (saved or logged) or one of your favorites' (Kylie, Oct 9; kept, 8.1 item 19). */
-function interested(item: FeedItem, log: PersonalLog, favorites: readonly Favorite[]): boolean {
-  if (item.eventId && (log.plans.some((p) => p.eventId === item.eventId) || log.added.some((e) => e.eventId === item.eventId))) return true;
-  const title = item.title.toLowerCase();
-  const venue = (item.venue ?? '').toLowerCase();
-  return favorites.some((fav) => {
-    const label = fav.label.toLowerCase();
-    if (!label) return false;
-    if (fav.kind === 'venue') return venue === label;
-    if (fav.kind === 'artist') return title === label || title.startsWith(`${label}:`) || title.startsWith(`${label} `);
-    const word = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    return new RegExp(`(^|[^a-z0-9])${word}([^a-z0-9]|$)`).test(title);
-  });
-}
-
-interface FeedGroup {
+/** One row on the Following timeline: an event, the Faves it belongs to, and the followed people on it. */
+interface FollowItem {
   key: string;
   title: string;
   date: string;
+  start: string | null;
   venue?: string;
   metroId?: string;
   eventId?: string;
+  typeKey?: string;
+  /** The favorites that put it here. */
+  faves: string[];
+  /** The followed people's answers on it. */
+  friends: FeedItem[];
+  /** A friend's attended entry behind a past row, for its read. */
   entry?: Entry;
-  items: FeedItem[];
-  example: boolean;
 }
 
-function groupFeed(items: FeedItem[]): FeedGroup[] {
-  const groups = new Map<string, FeedGroup>();
-  for (const item of items) {
-    const key = item.eventId ?? `${item.metroId ?? ''}|${item.date}|${item.title}`;
-    const group = groups.get(key) ?? { key, title: item.title, date: item.date, venue: item.venue, metroId: item.metroId, eventId: item.eventId, entry: item.entry, items: [], example: Boolean(item.example) };
-    group.items.push(item);
-    if (!group.entry && item.entry) group.entry = item.entry;
-    groups.set(key, group);
+/** Faves rows and friends' answers merged by event, in date order, inside the 60-day windows. */
+function mergeRows(rows: readonly ScheduleRow[], feed: readonly FeedItem[], today: string): FollowItem[] {
+  const out = new Map<string, FollowItem>();
+  const keyOf = (eventId: string | undefined, metroId: string | undefined, date: string, title: string) => eventId ?? `${metroId ?? ''}|${date}|${title.toLowerCase()}`;
+  for (const row of rows) {
+    const key = keyOf(row.event?.id, row.metroId, row.date, row.title);
+    const item = out.get(key) ?? {
+      key,
+      title: row.title,
+      date: row.date,
+      start: row.start,
+      venue: row.facts.split(' · ')[0] || undefined,
+      metroId: row.metroId,
+      eventId: row.event?.id,
+      typeKey: row.event ? eventType(row.event).key : undefined,
+      faves: [],
+      friends: [],
+    };
+    if (!item.faves.includes(row.fav.label)) item.faves.push(row.fav.label);
+    out.set(key, item);
   }
-  return [...groups.values()];
+  const floor = addDays(today, -SPAN_DAYS);
+  for (const line of feed) {
+    // Plans ahead, and what people attended or watched in the last 60 days; the feed already keeps privacy.
+    if (line.date < floor) continue;
+    const key = keyOf(line.eventId, line.metroId, line.date, line.title);
+    const item = out.get(key) ?? { key, title: line.title, date: line.date, start: null, venue: line.venue, metroId: line.metroId, eventId: line.eventId, faves: [], friends: [] };
+    item.friends.push(line);
+    if (!item.entry && line.entry) item.entry = line.entry;
+    out.set(key, item);
+  }
+  return [...out.values()].sort((a, b) => (a.date + (a.start ?? '99')).localeCompare(b.date + (b.start ?? '99')) || a.title.localeCompare(b.title));
+}
+
+function ratingFor(item: FollowItem, ratings: ReadonlyMap<string, number>): number | null {
+  if (item.entry) return ratingForEntry(item.entry, ratings);
+  return item.metroId ? (ratings.get(nightKey(item.metroId, item.date)) ?? null) : null;
 }
 
 /** "Sam +2 attending · Priya watching · 3 interested" (build notes 3, 4.6; Attending/Attended per 8.1 item 25). */
@@ -191,162 +183,37 @@ function summaryLine(groups: ActivityGroups): string {
     .join(' · ');
 }
 
-function todayFor(metroId: string | undefined): string {
-  return todayIn(METROS[metroId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO);
-}
-
 /**
- * Grouped by event (build notes 3, 4.6; mock 6-friends, A): each card leads with the title and venue,
- * then its tags and the small read box; one summary line that expands to the grouped lists. Dates
- * ahead first; past ones sit under an Earlier band like the Stubs month bands. Only the events you
- * saved, logged or follow (Kylie, Oct 9); the feed shows every line.
+ * A row: the date box, the title over "venue · time", then its own last line (the people on it, or the Fave it
+ * belongs to), and the date's read. Opens the event page, or the date page when the app holds no event.
  */
-function ByEvent({ items, example, ratings, log, onFeed }: { items: FeedItem[]; example: boolean; ratings: ReadonlyMap<string, number>; log: PersonalLog; onFeed: () => void }) {
-  const favorites = favoritesOf(log);
-  const list = example ? items : items.filter((item) => interested(item, log, favorites));
-  const groups = groupFeed(list);
-  const coming = groups.filter((g) => g.date >= todayFor(g.metroId)).sort((a, b) => a.date.localeCompare(b.date));
-  const earlier = groups.filter((g) => g.date < todayFor(g.metroId)).sort((a, b) => b.date.localeCompare(a.date));
-  const [open, setOpen] = useState<string | null>(() => (coming[0] ?? earlier[0])?.key ?? null);
-  if (groups.length === 0) {
-    return (
-      <div className="card empty-card">
-        <div className="card-title">Nothing from the people you follow at your events or favorites yet.</div>
-      </div>
-    );
-  }
-  const card = (group: FeedGroup) => {
-    const rating = group.entry && !group.example ? ratingForEntry(group.entry, ratings) : group.metroId ? (ratings.get(nightKey(group.metroId, group.date)) ?? null) : null;
-    const activity = activityGroups(group.items, null);
-    const expanded = open === group.key;
-    const head = (
-      <>
-        <span className="log-main">
-          <span className="log-title"><TitleText text={group.title} /></span>
-          <span className="log-facts">{[group.venue, shortLocalDate(group.date)].filter(Boolean).join(' · ')}</span>
-          {/* No friction mark on a Following card (build 6, item 1): information, not conclusions. */}
+function FollowRow({ item, rating, back }: { item: FollowItem; rating: number | null; back: { to: string; label: string } }) {
+  const to = item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id);
+  const line = item.friends.length > 0 ? summaryLine(activityGroups(item.friends, null)) : null;
+  return (
+    <div className="stub-row follow-row">
+      <Link to={to} state={{ back, ...friendStubState(item.eventId, { title: item.title, date: item.date, venue: item.venue, metroId: item.metroId, entry: item.entry }) }} className="stub-row-link" aria-label={item.title} />
+      <DateBox when={{ sort: item.date, label: '', precision: 'day' }} />
+      <span className="stub-main">
+        <span className="stub-title">
+          {item.typeKey && <TypeIcon typeKey={item.typeKey} size={16} className="stub-type-icon" />}
+          <TitleText text={item.title} />
         </span>
-        {group.example && <span className="example-chip">Example</span>}
-        <ReadTile rating={rating} />
-      </>
-    );
-    return (
-      <article key={group.key} className="card feed-group">
-        {group.example ? (
-          <div className="feed-group-head">{head}</div>
+        <span className="stub-venue">{[item.venue, item.start ? clockTime(item.start) : null].filter(Boolean).join(' · ')}</span>
+        {line ? (
+          <span className="follow-last">{line}</span>
         ) : (
-          <Link to={group.eventId && group.metroId ? eventPath(group.eventId, group.metroId) : datePath(group.date, group.metroId ?? DEFAULT_METRO.id)} state={friendStubState(group.eventId, group)} className="feed-group-head">
-            {head}
-          </Link>
-        )}
-        <button type="button" className="feed-summary" aria-expanded={expanded} onClick={() => setOpen(expanded ? null : group.key)}>
-          <span className="feed-avatars" aria-hidden>
-            {group.items.slice(0, 3).map((item) => (
-              <span key={item.friend.id} className="avatar avatar-small">
-                {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
-              </span>
-            ))}
+          <span className="follow-last follow-fave">
+            <StarIcon /> {item.faves.join(', ')}
           </span>
-          <span className="feed-summary-text">{summaryLine(activity)}</span>
-          <span className={`feed-summary-chevron${expanded ? ' open' : ''}`} aria-hidden>
-            <ChevronDown />
-          </span>
-        </button>
-        {expanded && (
-          <div className="feed-expanded">
-            <ActivityLines groups={activity} />
-          </div>
         )}
-      </article>
-    );
-  };
-  return (
-    <>
-      {coming.map(card)}
-      {earlier.length > 0 && (
-        <section className="you-block" aria-label="Earlier">
-          <ListBand label="Earlier" />
-          {earlier.map(card)}
-          <button type="button" className="text-link see-earlier" onClick={onFeed}>
-            See all earlier activity ›
-          </button>
-        </section>
-      )}
-    </>
+      </span>
+      <ReadTile rating={rating} />
+    </div>
   );
 }
 
-/**
- * The feed (Kylie, Oct 11, call 1; build notes 3, 4.6 and 4.7): one plain sentence per line, every friend's
- * line, under Today, Coming up and Earlier bands. "Sam is watching {event} at {location}" when shared.
- */
-function Feed({ items, example }: { items: FeedItem[]; example: boolean }) {
-  const location = useLocation();
-  const back = backFrom(location.pathname, location.search);
-  const visible = items.filter((item) => !item.interested);
-  const todayRows = visible.filter((item) => item.date === todayFor(item.metroId));
-  const coming = visible.filter((item) => item.date > todayFor(item.metroId)).sort((a, b) => a.date.localeCompare(b.date));
-  const earlier = visible.filter((item) => item.date < todayFor(item.metroId)).sort((a, b) => b.date.localeCompare(a.date));
-  const band = (label: string, rows: FeedItem[]) =>
-    rows.length > 0 && (
-      <section className="you-block" aria-label={label}>
-        <ListBand label={label} />
-        <ul className="log-list feed-flat">
-          {rows.map((item) => {
-            const { lead, tail } = feedSentence(item);
-            const text = (
-              <>
-                <span className="avatar avatar-small" aria-hidden>
-                  {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
-                </span>
-                <span className="feed-flat-text">
-                  {lead} <strong><TitleText layout="inline" text={item.title} /></strong>
-                  {tail}
-                </span>
-                <span className="feed-flat-date">{shortLocalDate(item.date).replace(/^\w+, /, '')}</span>
-              </>
-            );
-            const key = `${item.friend.id}-${item.kind}-${item.date}-${item.title}`;
-            if (item.example || !item.friend.handle) {
-              return (
-                <li key={key}>
-                  <span className="feed-flat-row">{text}</span>
-                </li>
-              );
-            }
-            return (
-              <li key={key}>
-                <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} state={{ back, ...friendStubState(item.eventId, item) }} className="feed-flat-row">
-                  {text}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-    );
-  if (visible.length === 0) {
-    return (
-      <div className="card empty-card">
-        <div className="card-title">Nothing from the people you follow yet.</div>
-      </div>
-    );
-  }
-  return (
-    <>
-      {example && <span className="example-chip">Example</span>}
-      {band('Today', todayRows)}
-      {band('Coming up', coming)}
-      {band('Earlier', earlier)}
-    </>
-  );
-}
-
-/** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam is watching", "Sam went to", "Sam watched". The event follows. */
-export function feedLine(item: FeedItem): string {
-  return feedSentence(item).lead;
-}
-
+/** One line of a friend's activity on Home's Following strip: "Sam attended", "Priya is attending", the event, the date. */
 export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMap<string, number> }) {
   const location = useLocation();
   const back = backFrom(location.pathname, location.search);

@@ -443,8 +443,8 @@ export interface FriendEntry {
 }
 
 /**
- * One line of the Following feed (Kylie, Oct 11, call 1): "{name} went to {event}" or "{name}
- * watched {event}" once the date has passed, "{name} is going to {event}" for a date ahead.
+ * One line of a friend's activity (Kylie, Oct 11, call 1): "{name} attended {event}" or "{name}
+ * watched {event}" once the date has passed, "{name} is attending {event}" for a date ahead.
  * Dated by the event, never by when it was saved, and never "is at": nothing here says where
  * someone is now.
  */

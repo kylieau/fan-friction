@@ -17,6 +17,7 @@ export function Timeline({
   past,
   future,
   todayLabel,
+  todayGroup,
   emptyPast,
   emptyFuture,
   label,
@@ -25,6 +26,8 @@ export function Timeline({
   future: readonly TimelineItem[];
   /** The today line's words, "Today · Fri, Oct 16". */
   todayLabel: string;
+  /** The band today falls in ("October 2026"): it is never repeated right under the line. */
+  todayGroup: string;
   emptyPast: ReactNode;
   emptyFuture: ReactNode;
   label: string;
@@ -66,7 +69,7 @@ export function Timeline({
       ) : (
         futureGroups.map(([group, items], i) => (
           <section key={`future-${group}`} className="timeline-group" aria-label={group}>
-            {!(i === 0 && group === lastPast) && <ListBand label={group} />}
+            {!(i === 0 && (group === lastPast || group === todayGroup)) && <ListBand label={group} />}
             <ul className="log-list">
               {items.map((item) => (
                 <li key={item.key}>{item.node}</li>

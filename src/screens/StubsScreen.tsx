@@ -180,6 +180,7 @@ export function StubsScreen() {
           past={pastItems}
           future={futureItems}
           todayLabel={dayBandLabel(today, today)}
+          todayGroup={timelineGroup({ sort: today, label: '', precision: 'day' })}
           emptyPast={
             // The decided empty-past copy (Kylie, Oct 16): no "Stub it" button here, only the way to today.
             <div className="card empty-card">

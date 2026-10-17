@@ -101,11 +101,15 @@ export function friendsLine(items: readonly FeedItem[]): string | null {
   return activityLine(activityGroups(items, null));
 }
 
-/** The feed sentence's start (Kylie, Oct 11, call 1; build notes 3, 4.7): "Sam is going to", "Sam is watching", "Sam went to", "Sam watched". The event follows, then the place for a shared watch. */
+/**
+ * A friend's sentence (Home's Following strip): "Sam is attending", "Sam is watching", "Sam attended", "Sam watched".
+ * No "going" anywhere (build 6, item 7, a default): the one vocabulary is Attending / Watching / Interested and
+ * Attended / Watched. The event follows, then the place for a shared watch.
+ */
 export function feedSentence(item: FeedItem): { lead: string; tail: string } {
   const name = friendName(item);
   const kind = feedKind(item);
-  const lead = kind === 'interested' ? `${name} is interested in` : kind === 'watching' ? `${name} is watching` : kind === 'attending' ? `${name} is going to` : kind === 'watched' ? `${name} watched` : `${name} went to`;
+  const lead = kind === 'interested' ? `${name} is interested in` : kind === 'watching' ? `${name} is watching` : kind === 'attending' ? `${name} is attending` : kind === 'watched' ? `${name} watched` : `${name} attended`;
   const tail = kind === 'watching' || kind === 'watched' ? placeClause(item.place) : '';
   return { lead, tail };
 }
