@@ -37,7 +37,9 @@ Run on Oct 17, 2026 (Claude Code, Fable 5.1), after Kylie attached the Oct 17 no
 | `map-key.png` | M5-08 draft A, pill-r1 fragment | Matches draft A's shape (sentence, ring plus word ×4, the "A row shows the ring" line); the pills are the one violet tint |
 | `map-chip-card.png` | none | No mockup |
 | `stubs-open.png`, `stubs-scrolled-up.png`, `stubs-past-only.png`, `stubs-future-only*.png`, `stubs-nothing*.png` | M2-01 panel C, M2-02 | Matches panel C: header, chips, the thin blue "Today · Sat, Oct 17" rule, OCTOBER 2026 on both sides, "+ Stub it" extended at open and "+" once scrolled; past above by scrolling up. Matches M2-02's empty past (card, no button) and pill (shared `.today-pill`). Differs from M2-02 on the empty future: a one-line note, per the notes |
-| `following-faves.png` | none | No mockup (the Faves schedule keeps the Explore-style day bands it had before build 6; see Questions) |
+| `following-faves.png` | none | No mockup; month bands with the day on each row (Kylie, Oct 17) |
+| `map-key-short-window.png`, `map-key-short-phone.png` | M5-08 | The key under a tall header on a short window: 8 px under the header, 8 px over its button, scrolling inside |
+| `stubs-open-short-window.png`, `stubs-future-only-short-window.png`, `stubs-nothing-short-window.png`, `following-faves-short-window.png` | M2-01 C, M2-02 | Kylie's 508 × 770 window: chips intact, no sideways scroll, the empty cards in view |
 | `following-friends-signed-out.png` | none | No mockup; signed out in headless |
 | `settings-panel.png` | none | No mockup |
 | `faves-edit.png` | badge-r1 (evidence) | No mockup for the decided badge |
@@ -45,8 +47,9 @@ Run on Oct 17, 2026 (Claude Code, Fable 5.1), after Kylie attached the Oct 17 no
 ## Checks
 `npm run build` (type-check plus production build), `node scripts/titles-check.mjs` ("all passed"), `node scripts/event-types-check.mjs` (37 types; 138 rows read "Event", known, B5-10) after each code commit. There is no lint script and no test suite. Row measurements at 390 px with Playwright: ring centre vs figure centre, ring gap after the number, tag right edge vs crowd edge (all within 1 px on the Explore List, date page, Home and map sheet); Stubs rows 70 px; the today line 26 px with its label centred.
 
-## Questions for Kylie
-1. The Faves segment's schedule keeps day bands ("TODAY · SAT, OCT 17", "WED, OCT 21"); "monthly only" was said about the Stubs and Friends timelines. Should the Faves schedule take month bands too?
-2. The empty-future side under the today line is a one-line note (the notes' words); board M2-02 draws a card with "Browse today in Explore ›". Say if the card is wanted.
-3. The map key's helper tip uses M5-08 draft A (Mosaic's lean, three lines). Draft C is shorter if the key feels long.
-4. A brand-new account (no stubs, no plans) opens Stubs on the today line with "Nothing upcoming yet" under it; the "No stubbed events / Browse today in Explore ›" card is above the line, out of view until a scroll up, and the floating button is hidden (Q3). That follows the notes and M2-02's "scrolled up" panel. Should the list open at its top instead when the past is empty, so the card, the line and the note all show at once?
+## Questions for Kylie, and her answers (Oct 17, later)
+1. ~~Should the Faves schedule take month bands too?~~ **Yes** (built, `b7e21048`): the Faves schedule groups by month and each row says its day first ("Today · Sat, Oct 17 · Rose Bowl · 4:30 pm"; `following-faves.png`).
+2. ~~Empty future: the notes' one-line note or M2-02's card?~~ **M2-02's card** (built, `cb4969bd`): "Nothing upcoming yet" with "Browse today in Explore ›" under the line (`stubs-nothing.png`, `stubs-past-only.png`).
+3. ~~The helper tip's length~~ **Fine for now**; she has thoughts (a lot of information; break it into sections) and it hid under the map header on her window. The hiding is fixed (`e58add49`: the key measures the room between the header and its button and scrolls inside it; `map-key-short-window.png`). The sectioning is for Mosaic (BACKLOG, "Build 6 follow-ups").
+4. ~~A brand-new account opens with the empty-past card out of view~~ **"The card should not be out of view"** (built, `cb4969bd`): a list with nothing behind the line opens at its top, so the card, the line and the empty-future card all show (`stubs-nothing.png`, `stubs-future-only.png`).
+5. **Found by Kylie on her window:** the Stubs and Friends lists ran wider than the page (a sideways scroll, the content shifted), and the list took height from the filter chips, which squashed to a sliver under the today band. Both fixed in `cb4969bd`: the scroller bleeds to the page's edges and hides sideways overflow (the month bands still run edge to edge), and the chips and tag picker never shrink. Measured at 390 × 844 and at her 508 × 770 window: sideways overflow 0, the chip row 44 px, the bands at the page's edges (`stubs-open-short-window.png`).
