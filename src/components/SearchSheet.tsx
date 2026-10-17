@@ -95,7 +95,7 @@ export function SearchSheet({
     };
   }, [homeId, trimmed, friends]);
   const shownHits = (hits ?? []).filter((hit) => showAll || !hit.hidden);
-  const hiddenHits = showAll ? 0 : (hits ?? []).filter((hit) => hit.hidden).length;
+  const hiddenHits = (hits ?? []).filter((hit) => hit.hidden).length;
 
   useEffect(() => {
     if (!signedIn || trimmed.length < PEOPLE_SEARCH_MIN) {
@@ -256,7 +256,7 @@ export function SearchSheet({
                 </li>
               ))}
             </ul>
-            <HiddenLine count={hiddenHits} noun="date" onShow={() => setShowAll(true)} />
+            <HiddenLine count={hiddenHits} noun="date" shown={showAll} onToggle={() => setShowAll((v) => !v)} />
           </section>
         )}
         {group('Teams', 'team')}

@@ -134,7 +134,8 @@ export function MapScreen() {
   const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
   const split = useMemo(() => splitByRange(allDayEvents, crowdRangeOf(log), keep), [allDayEvents, log, keep]);
   const dayEvents = showAll ? allDayEvents : split.shown;
-  const hiddenCount = showAll ? 0 : split.hidden.length;
+  // The line keeps its count while the hidden ones show, so Show can turn into Hide (Kylie, Oct 17).
+  const hiddenCount = split.hidden.length;
 
   // The map shows one day (Kylie, Oct 6). An empty day stays empty: the strip
   // shows where the next reads are, and the sheet names the next event.
@@ -507,7 +508,7 @@ export function MapScreen() {
                 ))}
             </ul>
           )}
-          {!selected && <HiddenLine count={hiddenCount} onShow={() => setShowAll(true)} />}
+          {!selected && <HiddenLine count={hiddenCount} shown={showAll} onToggle={() => setShowAll((v) => !v)} />}
         </div>
       </section>
 

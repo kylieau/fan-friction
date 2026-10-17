@@ -110,7 +110,9 @@ export function DateScreen() {
   const [showAll, setShowAll] = useState(false);
   useEffect(() => setShowAll(false), [metro.id, date]);
   const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
-  const lineup = useMemo(() => (showAll ? { shown: events, hidden: [] as CrowdEvent[] } : splitByRange(events, crowdRangeOf(log), keep)), [events, showAll, log, keep]);
+  // The split is always known, so the line keeps its count and reads Hide while everything shows (Kylie, Oct 17).
+  const split = useMemo(() => splitByRange(events, crowdRangeOf(log), keep), [events, log, keep]);
+  const lineup = useMemo(() => (showAll ? { shown: events, hidden: split.hidden } : split), [events, showAll, split]);
   // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
   const biggest = useMemo(() => [...events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0))[0], [events]);
   const mine = useMemo(
@@ -343,7 +345,7 @@ export function DateScreen() {
             ))}
             </ul>
           </div>
-          <HiddenLine count={lineup.hidden.length} onShow={() => setShowAll(true)} />
+          <HiddenLine count={lineup.hidden.length} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
         </section>
       )}
 

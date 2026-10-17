@@ -267,8 +267,9 @@ export function ExploreListScreen() {
         if (day.date < range.from || day.date > range.through) continue;
         const all = day.events.filter(showsOnMap);
         if (all.length === 0) continue;
-        const split = revealed.has(day.date) ? { shown: all, hidden: [] } : splitByRange(all, crowdRange, keep);
-        out.push({ date: day.date, day, events: split.shown, hidden: split.hidden.length });
+        // The hidden count stays while the day shows everything, so its line can read Hide (Kylie, Oct 17).
+        const split = splitByRange(all, crowdRange, keep);
+        out.push({ date: day.date, day, events: revealed.has(day.date) ? all : split.shown, hidden: split.hidden.length });
       }
     }
     return out;
@@ -515,7 +516,18 @@ export function ExploreListScreen() {
                     </li>
                   ))}
               </ul>
-              <HiddenLine count={hidden} onShow={() => setRevealed((set) => new Set(set).add(date))} />
+              <HiddenLine
+                count={hidden}
+                shown={revealed.has(date)}
+                onToggle={() =>
+                  setRevealed((set) => {
+                    const next = new Set(set);
+                    if (next.has(date)) next.delete(date);
+                    else next.add(date);
+                    return next;
+                  })
+                }
+              />
             </section>
           ))}
         </div>
