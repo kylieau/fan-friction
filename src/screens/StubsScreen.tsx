@@ -110,7 +110,7 @@ export function StubsScreen() {
   const nothing = entries.length === 0 && plansAhead.length === 0;
 
   return (
-    <div className="screen page stubs-page" onScroll={(event) => setScrolled((event.target as HTMLElement).scrollTop > 40)}>
+    <div className="screen page stubs-page timeline-page">
       <div className="you-header">
         <h1 className="page-title">Stubs</h1>
         <SearchButton className="you-search" />
@@ -121,7 +121,7 @@ export function StubsScreen() {
         </p>
       )}
 
-      <section className="you-block stubs-list" aria-label="Stubs">
+      <section className="you-block stubs-list timeline-section" aria-label="Stubs">
         <div className="filter-row" role="group" aria-label="Show">
           {(
             [
@@ -183,8 +183,9 @@ export function StubsScreen() {
           future={futureItems}
           todayLabel={dayBandLabel(today, today)}
           todayGroup={timelineGroup({ sort: today, label: '', precision: 'day' })}
-          emptyPast={
-            // The decided empty-past copy (Kylie, Oct 16): no "Stub it" button here, only the way to today.
+          onScrolled={setScrolled}
+          emptyAll={
+            // The decided empty copy (Kylie, Oct 16): no "Stub it" button here, only the way to today.
             <div className="card empty-card">
               <div className="card-title">{entries.length > 0 ? 'Nothing here.' : 'No stubbed events'}</div>
               <div className="empty-actions">

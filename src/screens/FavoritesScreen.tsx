@@ -50,7 +50,7 @@ const KINDS: { kind: FavoriteKind; label: string }[] = [
  * Favorites with nothing coming are named in one line. With no favorites yet, or from Edit, the
  * tab is a picker: search, suggestions, Follow pills, Done. A favorite's own page has the rest.
  */
-export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
+export function FavoritesScreen({ embedded = false, edit = false }: { embedded?: boolean; /** The picker only (the Settings "Edit favorites" dropdown; Kylie, Oct 17): never the schedule. */ edit?: boolean }) {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
@@ -61,7 +61,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
   const [query, setQuery] = useState('');
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   // The picker stays open until Done, even after the first follow.
-  const [picking, setPicking] = useState(() => pathname.endsWith('/edit') || favorites.length === 0);
+  const [picking, setPicking] = useState(() => edit || pathname.endsWith('/edit') || favorites.length === 0);
   // The schedule rows (shared with the Following timeline since build 6, item 7).
   const { rows, today } = useFavoriteRows(favorites, home, AHEAD_DAYS);
 
@@ -107,8 +107,8 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
   const done = () => {
     setPicking(false);
     setQuery('');
-    // The Faves list lives in Settings now (build 6, item 7): Done returns to that dropdown.
-    if (pathname.endsWith('/edit')) navigate('/you?panel=faves', { replace: true });
+    // The picker page returns to the Faves tab (Kylie, Oct 17: the tab keeps its sub-tabs).
+    if (pathname.endsWith('/edit')) navigate('/following', { replace: true });
   };
 
   const search = (
@@ -194,14 +194,17 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
             })}
           </>
         )}
-        {/* Done stays in reach while the list scrolls (C077). */}
-        <div className="picker-done">
-          <button type="button" className="gold-button" onClick={done} disabled={favorites.length === 0}>
-            Done
-          </button>
-        </div>
+        {/* Done stays in reach while the list scrolls (C077). Inside the Settings dropdown there is nothing to return to. */}
+        {!edit && (
+          <div className="picker-done">
+            <button type="button" className="gold-button" onClick={done} disabled={favorites.length === 0}>
+              Done
+            </button>
+          </div>
+        )}
       </>
     );
+    if (edit) return picker;
     if (embedded) {
       return (
         <>

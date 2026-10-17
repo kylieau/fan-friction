@@ -285,7 +285,8 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
               ))}
             </div>,
           )}
-        {dropdown('faves', 'Faves', favorites.length > 0 ? `${favorites.length}` : null, <FavoritesScreen embedded />)}
+        {/* The edit-favorites picker only (Kylie, Oct 17); the Faves schedule stays on the Following tab. */}
+        {dropdown('faves', 'Edit favorites', favorites.length > 0 ? `${favorites.length}` : null, <FavoritesScreen embedded edit />)}
         {account &&
           dropdown(
             'people',

@@ -246,7 +246,7 @@ export function HomeScreen() {
       {account && (feedShown.length > 0 || newUser) && (
         <section className="you-block" aria-labelledby="following-heading">
           <h2 id="following-heading" className="you-heading heading-link-row">
-            <Link to="/following" className="heading-link">
+            <Link to="/following?tab=friends" className="heading-link">
               Following ›
             </Link>
           </h2>
