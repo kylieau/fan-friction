@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { CROWD_RANGE_TOP, crowdRangeLabel, crowdRangeOf, getPersonalLog, setCrowdRange, subscribePersonalLog, type CrowdRange } from '../data';
-import { BackLink } from '../components/BackLink';
 
 const STOP = 5000;
 const LABELS = [0, 20000, 40000, 60000, CROWD_RANGE_TOP];
@@ -16,9 +15,10 @@ function snapTyped(text: string): number {
 /**
  * Settings › Crowd size (build 5, item 6; board minsize-r6): a two-handle slider from 0 to 80,000+ that snaps to
  * 5,000s, and Min and Max fields that take any whole thousand (a typed value can sit between stops). 0 is no
- * minimum, 80,000+ no maximum. A display filter only: scores never change. Saved as you go.
+ * minimum, 80,000+ no maximum. A display filter only: scores never change. Saved as you go. A dropdown's contents
+ * inside the Settings panel since build 6 (item 8).
  */
-export function SettingsCrowdScreen() {
+export function CrowdSizeSettings() {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const saved = crowdRangeOf(log);
   const [min, setMin] = useState(saved.min ?? 0);
@@ -55,11 +55,8 @@ export function SettingsCrowdScreen() {
   const showUnknown = saved.showUnknown !== false;
 
   return (
-    <div className="screen page">
-      <BackLink to="/you/settings" label="Settings" />
-      <h1 className="page-title">Crowd size</h1>
+    <>
       <div className="settings">
-        <div className="settings-heading">Crowd size</div>
         <div className="crowd-picker">
           <div className="crowd-picker-value">{crowdRangeLabel(current)}</div>
           <div className="range-slider" style={{ ['--lo' as string]: pct(min), ['--hi' as string]: pct(max) }}>
@@ -128,7 +125,7 @@ export function SettingsCrowdScreen() {
           <span className="settings-value">{showUnknown ? 'On' : 'Off'}</span>
         </button>
       </div>
-    </div>
+    </>
   );
 }
 

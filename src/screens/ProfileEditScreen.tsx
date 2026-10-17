@@ -1,5 +1,4 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   getAccount,
   getMyProfile,
@@ -8,9 +7,11 @@ import {
   suggestHandle,
   updateMyProfile,
 } from '../data';
-import { BackLink } from '../components/BackLink';
 
-/** Display name and handle. Sits inside Settings; who sees your stubs moved to Settings › Privacy (build 5, item 9). */
+/**
+ * Display name and handle: the Profile dropdown of the Settings panel (build 6, item 8); who sees your stubs is the
+ * Privacy dropdown (build 5, item 9). The old /profile/edit address opens the panel on this dropdown.
+ */
 export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [loaded, setLoaded] = useState(false);
@@ -99,17 +100,5 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
           </p>
         )}
       </form>
-  );
-}
-
-/** The old stand-alone route. Settings now holds the same form. */
-export function ProfileEditScreen() {
-  const navigate = useNavigate();
-  return (
-    <div className="screen page">
-      <BackLink to="/you/settings" label="Settings" />
-      <h1 className="page-title">Edit profile</h1>
-      <ProfileForm onSaved={() => navigate('/you/settings', { replace: true })} />
-    </div>
   );
 }

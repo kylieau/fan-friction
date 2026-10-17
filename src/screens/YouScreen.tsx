@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { SearchButton } from '../components/SearchButton';
 import {
@@ -23,8 +23,9 @@ import {
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { YourYear } from '../components/YourYear';
-import { ChevronDown, ChevronRight } from '../components/Icons';
+import { ChevronDown } from '../components/Icons';
 import { clearOpenedFromMap } from '../lib/mapReturn';
+import { SettingsPanel } from './SettingsScreen';
 
 const TOP = 8;
 
@@ -38,7 +39,7 @@ export function YouScreen() {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   // "You at games" on a favorite's card opens the log filtered to it (build notes 2, section 2).
   const wanted = params.get('filter');
   useEffect(() => {
@@ -46,24 +47,27 @@ export function YouScreen() {
   }, [wanted]);
   const [handle, setHandle] = useState<string | null>(null);
   const [requestCount, setRequestCount] = useState(0);
-  const [sheet, setSheet] = useState(false);
-  const [shareNote, setShareNote] = useState('');
-  const navigate = useNavigate();
-  // Share my handle: the profile link where it works, the handle itself elsewhere.
-  const shareHandle = async () => {
-    const url = `${window.location.origin}/p/${handle}`;
-    try {
-      if (navigator.share) {
-        await navigator.share({ title: account?.displayName ?? 'Fan/Friction', url });
-        setSheet(false);
-        return;
-      }
-      await navigator.clipboard.writeText(url);
-      setShareNote('Link copied.');
-    } catch {
-      setShareNote(`@${handle}`);
-    }
-  };
+  // The Settings panel (build 6, item 8): `?panel=<section>` in the address, so a link or bookmark can open it on one
+  // dropdown ("1" opens it on none); Back closes it.
+  const panel = params.get('panel');
+  const openPanel = (section?: string) =>
+    setParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.set('panel', section ?? '1');
+      return next;
+    });
+  const closePanel = useCallback(
+    () =>
+      setParams(
+        (prev) => {
+          const next = new URLSearchParams(prev);
+          for (const key of ['panel', 'find', 'chip']) next.delete(key);
+          return next;
+        },
+        { replace: true },
+      ),
+    [setParams],
+  );
   const [peopleCount, setPeopleCount] = useState<number | null>(null);
 
   useEffect(() => {
@@ -112,8 +116,8 @@ export function YouScreen() {
   return (
     <div className="screen page">
       <div className="you-header">
-        {/* The avatar opens profile, Settings and sharing (build notes 2, global search); the chevron badge is the cue. */}
-        <button type="button" className="you-avatar-btn" aria-label="Profile and settings" aria-haspopup="dialog" onClick={() => (account ? setSheet(true) : navigate('/you/settings'))}>
+        {/* The avatar is the only door to Settings (build 6, item 8; Kylie, Oct 16, Q5: on the You tab only); the chevron badge is the cue. */}
+        <button type="button" className="you-avatar-btn" aria-label="Profile and settings" aria-haspopup="dialog" aria-expanded={panel !== null} onClick={() => openPanel()}>
           <span className="avatar" aria-hidden>
             {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
           </span>
@@ -125,52 +129,16 @@ export function YouScreen() {
           <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
           {account && handle && <span className="you-handle">@{handle}</span>}
           {account && peopleCount !== null && (
-            // One count, one tap to everyone (build notes 2, section 3): the People list holds requests too.
-            <Link to="/you/people" className="you-people">
+            // One count, one tap to everyone (build notes 2, section 3): the People dropdown holds requests too.
+            <button type="button" className="you-people link-button" onClick={() => openPanel('people')}>
               {peopleCount} {peopleCount === 1 ? 'person' : 'people'}
               {requestCount > 0 ? ` · ${requestCount} ${requestCount === 1 ? 'request' : 'requests'}` : ''} ›
-            </Link>
+            </button>
           )}
         </div>
         <SearchButton className="you-search" />
       </div>
-      {sheet && (
-        <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Your account" onClick={() => setSheet(false)}>
-          <div className="action-sheet" onClick={(event) => event.stopPropagation()}>
-            <span className="sheet-handle" aria-hidden />
-            <div className="you-header">
-              <span className="avatar" aria-hidden>
-                {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
-              </span>
-              <div className="you-who">
-                <span className="log-title">{account?.displayName ?? 'You'}</span>
-                {account && handle && <span className="you-handle">@{handle}</span>}
-              </div>
-            </div>
-            <Link to="/profile/edit" className="action-row" onClick={() => setSheet(false)}>
-              <span className="action-row-main">Edit profile</span>
-              <ChevronRight />
-            </Link>
-            <Link to="/you/settings" className="action-row" onClick={() => setSheet(false)}>
-              <span className="action-row-main">
-                Settings
-                <span className="action-row-sub">Home city, privacy, notifications</span>
-              </span>
-              {requestCount > 0 && <span className="you-badge static">{requestCount}</span>}
-              <ChevronRight />
-            </Link>
-            {handle && (
-              <button type="button" className="action-row" onClick={shareHandle}>
-                <span className="action-row-main">
-                  Share my handle
-                  {shareNote && <span className="action-row-sub">{shareNote}</span>}
-                </span>
-                <ChevronRight />
-              </button>
-            )}
-          </div>
-        </div>
-      )}
+      {panel !== null && <SettingsPanel section={panel} onClose={closePanel} />}
 
       <AccountBlock />
 

@@ -9,12 +9,6 @@ import { YouScreen } from './screens/YouScreen';
 import { AddEntryScreen } from './screens/AddEntryScreen';
 import { ManualEntryScreen } from './screens/ManualEntryScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
-import { ProfileEditScreen } from './screens/ProfileEditScreen';
-import { PeopleScreen } from './screens/PeopleScreen';
-import { SettingsScreen } from './screens/SettingsScreen';
-import { SettingsCitiesScreen } from './screens/SettingsCitiesScreen';
-import { SettingsPrivacyScreen } from './screens/SettingsPrivacyScreen';
-import { SettingsCrowdScreen } from './screens/SettingsCrowdScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
 import { StubsScreen } from './screens/StubsScreen';
@@ -31,6 +25,18 @@ import { levelFor } from './screens/SettingsPrivacyScreen';
 function OldDateRedirect() {
   const { pathname, search } = useLocation();
   return <Navigate to={pathname.replace(/^\/night\//, '/date/') + search} replace />;
+}
+
+/**
+ * The Settings sub-pages and the People page became dropdowns of the Settings panel on You (build 6, item 8): their
+ * old addresses open the panel on that dropdown, so bookmarks and links keep working (a default). The People page's
+ * own parameters (`?find=1`, `?chip=`) ride along.
+ */
+function PanelRedirect({ section }: { section: string }) {
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  params.set('panel', section);
+  return <Navigate to={`/you?${params.toString()}`} replace />;
 }
 
 function Shell() {
@@ -86,15 +92,15 @@ function Shell() {
           <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
           <Route path="/p/:handle" element={<ProfileScreen />} />
-          <Route path="/profile/edit" element={<ProfileEditScreen />} />
+          <Route path="/profile/edit" element={<PanelRedirect section="profile" />} />
           <Route path="/you" element={<YouScreen />} />
           <Route path="/you/add" element={<AddEntryScreen />} />
-          <Route path="/you/people" element={<PeopleScreen />} />
+          <Route path="/you/people" element={<PanelRedirect section="people" />} />
           <Route path="/entry/:id" element={<ManualEntryScreen />} />
-          <Route path="/you/settings" element={<SettingsScreen />} />
-          <Route path="/you/settings/cities" element={<SettingsCitiesScreen />} />
-          <Route path="/you/settings/privacy" element={<SettingsPrivacyScreen />} />
-          <Route path="/you/settings/crowd" element={<SettingsCrowdScreen />} />
+          <Route path="/you/settings" element={<PanelRedirect section="1" />} />
+          <Route path="/you/settings/cities" element={<PanelRedirect section="cities" />} />
+          <Route path="/you/settings/privacy" element={<PanelRedirect section="privacy" />} />
+          <Route path="/you/settings/crowd" element={<PanelRedirect section="crowd" />} />
           <Route path="/nights" element={<Navigate to="/explore?view=list" replace />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -2,6 +2,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { backFrom } from '../lib/view';
 import { SearchIcon } from '../components/Icons';
+// A dropdown's contents inside the Settings panel since build 6 (item 8); the old /you/people address opens that dropdown.
 import {
   approveFollow,
   blockUser,
@@ -20,7 +21,6 @@ import {
   type PersonRow,
   type Profile,
 } from '../data';
-import { BackLink } from '../components/BackLink';
 
 type Chip = 'all' | 'mutual' | 'followers' | 'following';
 
@@ -37,10 +37,21 @@ const CHIPS: { id: Chip; label: string }[] = [
  * status on the right; a ⋯ menu with Remove and Unfollow behind one confirm. Nothing
  * here notifies anyone, and a decline or removal shows no change on their side.
  */
-export function PeopleScreen() {
+export function PeoplePanel() {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [params, setParams] = useSearchParams();
   const chip = (CHIPS.find((c) => c.id === params.get('chip'))?.id ?? 'all') as Chip;
+  // The chip rides in the address beside the panel's own parameter, never replacing it.
+  const pickChip = (id: Chip) =>
+    setParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        if (id === 'all') next.delete('chip');
+        else next.set('chip', id);
+        return next;
+      },
+      { replace: true },
+    );
   const [people, setPeople] = useState<PersonRow[] | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
   const [declined, setDeclined] = useState<FollowRequest[]>([]);
@@ -115,16 +126,15 @@ export function PeopleScreen() {
   }, [q]);
   const known = new Map((people ?? []).map((p) => [p.profile.id, p]));
 
+  if (!account) return <p className="you-fine">Sign in to follow people.</p>;
   return (
-    <div className="screen page">
-      <BackLink to="/you" />
-      <h1 className="page-title">People</h1>
+    <div className="people-panel">
       {/* The one line that says what access means (privacy 10). */}
       <p className="you-fine">You see their logged events and plans once they approve.</p>
 
       <div className="filter-row" role="group" aria-label="Who">
         {CHIPS.map((c) => (
-          <button key={c.id} type="button" className="filter-chip" aria-pressed={chip === c.id} onClick={() => setParams(c.id === 'all' ? {} : { chip: c.id })}>
+          <button key={c.id} type="button" className="filter-chip" aria-pressed={chip === c.id} onClick={() => pickChip(c.id)}>
             {c.label}
           </button>
         ))}

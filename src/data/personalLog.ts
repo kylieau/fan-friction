@@ -518,13 +518,19 @@ export function setEntryVisibility(entryId: string, level: StubVisibility) {
   commit({ ...snapshot, added: snapshot.added.map((row) => (row.id === entryId ? withLevel(row, level) : row)) });
 }
 
-/** "Change past stubs…" (Settings › Privacy): every stub you've logged takes one level, in any direction. */
-export function setPastStubsVisibility(level: StubVisibility): number {
+/**
+ * "Change past stubs…" (Settings › Privacy): every stub you've logged takes one level, in any direction. Waits for
+ * every shared place to follow and says how many could not (B5-02, build 6): the caller reports "N couldn't update,
+ * try again" rather than a success it has not seen.
+ */
+export async function setPastStubsVisibility(level: StubVisibility): Promise<{ count: number; failed: number }> {
   const added = snapshot.added.map((entry) => withLevel(entry, level));
   commit({ ...snapshot, added });
   // Each watched stub's shared place follows (approved followers only, never Anyone).
-  for (const entry of added) if (entry.watched && entry.eventId && watchPlaceOf(entry)) void setWatchDetails(entry.eventId, level === 'private' ? 'private' : 'friends', watchPlaceOf(entry));
-  return added.length;
+  const results = await Promise.all(
+    added.filter((entry) => entry.watched && entry.eventId && watchPlaceOf(entry)).map((entry) => setWatchDetails(entry.eventId!, level === 'private' ? 'private' : 'friends', watchPlaceOf(entry))),
+  );
+  return { count: added.length, failed: results.filter((error) => error !== null).length };
 }
 
 /** Keep one entry private, or share it again. The stamp and everything else stay. */
