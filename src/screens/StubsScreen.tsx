@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO } from '../config/metros';
+import { DEFAULT_METRO, METROS } from '../config/metros';
+import { getHomeId } from '../lib/homeCity';
 import { SearchButton } from '../components/SearchButton';
 import { PlanRow, StubRow } from '../components/StubRows';
 import { PlusIcon } from '../components/Icons';
@@ -55,7 +56,8 @@ export function StubsScreen() {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const today = todayIn(DEFAULT_METRO);
+  // Today in the home city, like Following's line (Oct 17, 2026): the old Upcoming tab counted from Los Angeles time.
+  const today = todayIn(METROS[getHomeId() ?? DEFAULT_METRO.id] ?? DEFAULT_METRO);
   const plansAhead = useMemo(() => upcomingPlans(today, log), [log, today]);
 
   // Each upcoming plan's listed event, for its type icon (build 5, item 12): plans store no kind of their own.
