@@ -79,13 +79,27 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
 const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
 const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
+// --new: only rooms the table lacks, so rooms measured earlier keep their numbers (a different elevation service can
+// move a relief figure a few metres, and a few metres can flip the strained rule; that change is Kylie's call).
+const onlyNew = process.argv.includes('--new');
+let savedTable = '';
+try { savedTable = readFileSync(path.join(root, 'data', 'venue-access.tsv'), 'utf8'); }
+catch (err) { if (err.code !== 'ENOENT') throw err; }
+const alreadyMeasured = new Set(savedTable.trim().split('\n').slice(1).map((line) => line.split('\t')[0]));
 if (metroFilter !== undefined && !Object.values(VENUES).some((v) => v.metroId === metroFilter)) throw new Error(`Unknown venue metro: ${metroFilter}`);
 await server.close();
 const venues = Object.values(VENUES)
-  .filter((v) => (metroFilter === undefined || v.metroId === metroFilter) && Math.max(...v.capacity.map((c) => c.seats)) >= 5000)
+  .filter((v) => (metroFilter === undefined || v.metroId === metroFilter) && (!onlyNew || !alreadyMeasured.has(v.id)) && Math.max(...v.capacity.map((c) => c.seats)) >= 5000)
   .map((v) => [v.id, v.metroId, v.location[1], v.location[0], Math.max(...v.capacity.map((c) => c.seats)), v.strained ? 1 : 0, v.names[v.names.length - 1].name]);
 
-/** Ground relief within 500 m: the venue's elevation against eight points around it (Open-Elevation, one request). */
+/**
+ * Ground relief within 500 m: the venue's elevation against eight points around it. Open-Elevation first, the service
+ * every stored row was measured with; when it rate-limits (every run on Oct 16, 2026 got 429), Open-Meteo's elevation
+ * API (free, no key, the weather provider the app already uses; 100 points a call) answers instead. The two read
+ * different terrain models: on New York's 42 rooms the relief differed by up to about 20 m, and a few metres can flip
+ * the strained rule at its 40 m line (the Rose Bowl reads 42 on one and 39 on the other), so the service used is
+ * printed, and --new keeps measured rooms as they are.
+ */
 async function reliefFor(list) {
   const locs = [];
   for (const [vid, , lat, lng] of list) {
@@ -94,8 +108,8 @@ async function reliefFor(list) {
       locs.push({ vid, latitude: lat + 0.0045 * Math.cos(a), longitude: lng + (0.0045 * Math.sin(a)) / Math.cos((lat * Math.PI) / 180) });
     }
   }
-  let results;
-  for (let attempt = 1; ; attempt++) {
+  let results = null;
+  for (let attempt = 1; attempt <= 3 && !results; attempt++) {
     const r = await fetch('https://api.open-elevation.com/api/v1/lookup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'fan-friction venue research' },
@@ -103,12 +117,16 @@ async function reliefFor(list) {
     });
     if (r.ok) {
       ({ results } = await r.json());
+      console.log('Elevations from Open-Elevation.');
       break;
     }
-    // The public service rate-limits repeat calls; wait and try again, three times.
-    if (attempt >= 3) throw new Error(`Open-Elevation answered ${r.status}; try again in a few minutes`);
-    console.log(`Open-Elevation answered ${r.status}; waiting 30 s…`);
-    await new Promise((resolve) => setTimeout(resolve, 30_000));
+    // The public service rate-limits repeat calls; wait and try again, three times, then ask Open-Meteo.
+    console.log(`Open-Elevation answered ${r.status}${attempt < 3 ? '; waiting 30 s…' : '; asking Open-Meteo instead.'}`);
+    if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, 30_000));
+  }
+  if (!results) {
+    results = await openMeteoElevations(locs);
+    console.log('Elevations from Open-Meteo (Open-Elevation was rate-limited).');
   }
   const byVenue = new Map();
   results.forEach((row, i) => {
@@ -116,6 +134,22 @@ async function reliefFor(list) {
     byVenue.set(vid, [...(byVenue.get(vid) ?? []), row.elevation]);
   });
   return new Map([...byVenue].map(([vid, els]) => [vid, Math.round(Math.max(...els) - Math.min(...els))]));
+}
+
+/** Elevations in metres from Open-Meteo, 96 points a call with a pause between calls; same row shape as Open-Elevation. */
+async function openMeteoElevations(locs) {
+  const results = [];
+  for (let i = 0; i < locs.length; i += 96) {
+    const chunk = locs.slice(i, i + 96);
+    const url = `https://api.open-meteo.com/v1/elevation?latitude=${chunk.map((l) => l.latitude.toFixed(5)).join(',')}&longitude=${chunk.map((l) => l.longitude.toFixed(5)).join(',')}`;
+    const r = await fetch(url, { headers: { 'User-Agent': 'fan-friction venue research' } });
+    if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
+    const { elevation } = await r.json();
+    if (!Array.isArray(elevation) || elevation.length !== chunk.length) throw new Error('Open-Meteo returned an unexpected shape');
+    results.push(...elevation.map((e) => ({ elevation: e })));
+    if (i + 96 < locs.length) await new Promise((resolve) => setTimeout(resolve, 1000));
+  }
+  return results;
 }
 
 const relief = await reliefFor(venues);
