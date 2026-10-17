@@ -26,10 +26,7 @@ import {
   isOpenAir,
   seatsLine,
   storyFor,
-  priceLine,
   sizeTier,
-  ticketPrice,
-  type TicketPrice,
   venueNameOn,
   VENUES,
   cityTravelLine,
@@ -165,11 +162,10 @@ export function EventScreen() {
       )
     : [];
   const me = points.find((p) => p.event.id === id);
-  // The ticket line's lookup (8.1): hooks sit before the early returns. Upcoming, unlogged, with a Ticketmaster listing.
+  // Hooks sit before the early returns. The ticket line and its live price lookup are off (Kylie, Oct 15, B6-01 option
+  // C; build 6, item 12): "seems complicated and hasn't been helpful so far". `api/ticket-price.ts`, `src/data/tickets.ts`
+  // and the stored `ticketmasterId` stay (the official-site link on Favorites reads the id), so it can come back.
   const liveEvent = me?.event ?? null;
-  const tmId = liveEvent?.ticketmasterId;
-  const wantsPrice = Boolean(liveEvent && tmId && liveEvent.date >= todayIn(METROS[liveEvent.metroId] ?? DEFAULT_METRO) && !yourEntries(log).some((entry) => entry.eventId === liveEvent.id));
-  const [price, setPrice] = useState<TicketPrice | null>(null);
   // The people you follow at this event (Kylie, Oct 11): their answers, Interested included, on the event page.
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [friends, setFriends] = useState<FeedItem[]>([]);
@@ -191,18 +187,6 @@ export function EventScreen() {
       current = false;
     };
   }, [account?.id, liveEvent?.id]);
-  useEffect(() => {
-    if (!wantsPrice || !tmId) {
-      setPrice(null);
-      return;
-    }
-    let current = true;
-    ticketPrice(tmId).then((answer) => current && setPrice(answer));
-    return () => {
-      current = false;
-    };
-  }, [wantsPrice, tmId]);
-
   if (!day) return <div className="screen page" />;
   if (!me) {
     // No catalog event: a schedule game, or a stub saved from one, still gets its page and its Stub it.
@@ -273,13 +257,7 @@ export function EventScreen() {
           {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>
         <FactList facts={eventFacts(e, logged)} />
-        {/* The ticket line (8.1): upcoming, unlogged events with a Ticketmaster listing; the price is looked up live and never stored. */}
-        {price && price.url && !price.offsale && (
-          <a className="ticket-line" href={price.url} target="_blank" rel="noreferrer">
-            {/* With no price the line is just "Tickets ›" (build notes 3, 8.1, item 24): the link may not always be Ticketmaster. */}
-            {priceLine(price) ?? 'Tickets'} ›
-          </a>
-        )}
+        {/* No ticket line (build 6, item 12): hidden, not deleted; the .ticket-line style stays for its return. */}
         {a && (
           <div className="chip-row">
             {/* The occasion tag, always the event's own (build 6, item 2); the friction pill moved to the Crowd and
