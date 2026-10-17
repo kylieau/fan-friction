@@ -57,8 +57,10 @@ export function mapPath(opts: { metroId: string; date: string; today: string; vi
  * The event page for one night. Los Angeles stays a plain path. Any other
  * city is named on the query so the page does not look the night up in Los Angeles.
  */
+/** Always carries the city: a page with no city in its address falls back to home, which may not be the city you
+ * were looking at (Kylie, Oct 17: a Los Angeles day opened as the Bay Area). */
 export function eventPath(eventId: string, metroId: string): string {
-  if (!metroId || metroId === DEFAULT_METRO.id) return `/event/${eventId}`;
+  if (!metroId) return `/event/${eventId}`;
   return `/event/${eventId}?metro=${encodeURIComponent(metroId)}`;
 }
 
@@ -100,7 +102,7 @@ export function entryPath(entryId: string): string {
 /** The night page: a date in a city, with an event to highlight when one is meant. */
 export function datePath(date: string, metroId: string, eventId?: string): string {
   const params = new URLSearchParams();
-  if (metroId && metroId !== DEFAULT_METRO.id) params.set('metro', metroId);
+  if (metroId) params.set('metro', metroId);
   if (eventId) params.set('event', eventId);
   const q = params.toString();
   return `/date/${date}${q ? `?${q}` : ''}`;

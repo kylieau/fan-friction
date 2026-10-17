@@ -959,6 +959,12 @@ button {
   gap: 4px;
 }
 
+/* The lists inside keep their full height so the body is what scrolls (Kylie, Oct 17: the day list, which clips its
+   own corners, was shrinking to the body's height and showing five events with no way to the rest). */
+.sheet-body > * {
+  flex-shrink: 0;
+}
+
 .selected-row .event-row {
   background: #fff;
   color: var(--ink);
@@ -5940,15 +5946,24 @@ button.back-link {
   position: relative;
 }
 
+/* The sport icon as the badge board draws it (Kylie, Oct 17): a small white disc astride the tile's top-left corner,
+   the icon in the tile's blue, not a glyph painted over the tile. */
 .fav-badge-icon {
   position: absolute;
-  top: 2px;
-  left: 3px;
+  top: -5px;
+  left: -5px;
+  width: 16px;
+  height: 16px;
   margin: 0;
-  opacity: 0.92;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--dodger);
+  box-shadow: 0 0 0 1px rgba(15, 27, 45, 0.12);
 }
 
-/* The type icon paints itself link blue; on the blue tile it takes the tile's text color. */
 .fav-badge-icon svg[fill='none'] {
   stroke: currentColor;
 }
@@ -5957,23 +5972,22 @@ button.back-link {
   fill: currentColor;
 }
 
-.fav-tag.has-icon {
-  padding: 7px 6px 0 9px;
-}
-
 .fav-mark.has-icon {
   width: auto;
   min-width: 40px;
-  padding: 9px 6px 0 9px;
+  padding: 0 6px;
 }
+
 
 .fav-mark.fav-big.has-icon {
   padding-top: 12px;
 }
 
 .fav-big .fav-badge-icon {
-  top: 3px;
-  left: 4px;
+  top: -6px;
+  left: -6px;
+  width: 22px;
+  height: 22px;
 }
 
 .fav-tag.lettered,
@@ -8861,6 +8875,11 @@ a.bulk-row {
 }
 .fav-strip-marks::-webkit-scrollbar {
   display: none;
+}
+/* Room for the badge's corner disc where the strip clips its own edges (the disc sits 5 px outside the tile). */
+.fav-strip-marks {
+  padding: 7px 0 2px 7px;
+  margin-left: -7px;
 }
 .fav-strip-marks .fav-tag {
   text-decoration: none;
