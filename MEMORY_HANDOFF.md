@@ -2,10 +2,10 @@
 
 Overwritten each session. Deferred work and history live in `BACKLOG.md`: open questions are at its top (the K-list), build follow-ups under **Next** ("Past dates" is newest, then "Build 5 follow-ups"). Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (newest sections at the bottom). Build 5's snapshot is still `docs/build-5/handoff-5.md`.
 
-_Last synced: Oct 17, 2026 (00:58 UTC; the evening of Oct 16 Pacific), Claude Code (Fable 5.1), at `main`'s head, with everything pushed and the tree clean. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
+_Last synced: Oct 17, 2026 (about 02:00 UTC; the evening of Oct 16 Pacific), Claude Code (Fable 5.1), at `main`'s head, with everything pushed and the tree clean. Commits this session: `f6948926` through `70bafb17`. Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9)._
 
 ## Current state
-All committed, pushed and checked with `npm run build`; UI changes checked with Playwright screenshots at phone size. Sixteen commits this session (`f6948926` through `e6c1d5f4`).
+All committed, pushed and checked with `npm run build`; UI changes checked with Playwright screenshots at phone size. Twenty-one commits this session (`f6948926` through `70bafb17`).
 
 - **Small-rooms research, second installment** is saved (`docs/research/city-builds/small-rooms-big-cities-answer-2.md`; the first installment is marked superseded) and **imported** (Kylie's OK on the scope, Oct 16): New York's other 28 rooms and 68 Los Angeles-region rooms (LA, Orange and Ventura Counties plus the Coachella Valley; ten Inland Empire rows held: Toyota Arena, San Manuel Stadium, Morongo Field, Fowler Events Center, Lake Elsinore Diamond, Pechanga Summit and Theater, Yaamava', Fox Riverside, Riverside Municipal Auditorium). Pacific Amphitheatre reads the OC Fair's official 7,800+; the GardenWalk House of Blues Anaheim is its own room. Locations are reference points, never entrances (the research's, or OpenStreetMap's by address or building name, noted per room; a campus address on a few). Hard access is measured for every 5,000+ room; none of the open ones is strained.
 - **Rutgers is a New York home team** on the ESPN feed (football at SHI Stadium, MBB and WBB at Jersey Mike's Arena; both feed spellings map, the arena with a curly apostrophe). The football id stays `rutgers` (the expected-draw index names it as an opponent).
@@ -30,12 +30,12 @@ All committed, pushed and checked with `npm run build`; UI changes checked with 
 ## Kylie's manual steps
 1. **Small-rooms research, next installment:** paste into the research tool: "Continue from the stopping point: Chicago, then Dallas–Fort Worth, Houston, Washington DC, Philadelphia, Atlanta, Miami and Phoenix; Boston and the San Francisco Bay Area if time permits. Reconcile the feed-visible venues listed at the end of the second installment before adding duplicates." Save the answer as `small-rooms-big-cities-answer-3.md` beside the prompt.
 2. **Her own log items:** the open items under "Still open" in `private/kylie-log/open-questions.md`.
-3. **Cosm:** email support@cosm.com for written consent or a schedule feed.
-4. 🚩 **SeatGeek:** the free client id goes in the `SEATGEEK_CLIENT_ID` Actions secret (she's handling it).
-5. **Paste terms:** the automated-access clauses for AXS, DICE and Goldenvoice.
-6. **Phone checks:** Add to calendar; the level pill; the build 4 round trip (tag, star a city, seats, sign out and back in); after this session, open Stubs signed in and check that research-loaded past dates now show a crowd (the relock runs on open).
-7. **Ticketmaster ids:** `node scripts/ticketmaster-venues.mjs --all` needs the nightly job's key; this also picks up the 96 new rooms.
-8. **Build 6 (GrokBot):** her UX notes are in progress; the stamp question above belongs with them.
+3. 🚩 **SeatGeek:** Kylie applied for the free client id and is waiting on SeatGeek (Oct 17). **Remind her at the start of every session until it lands**; then it goes in the `SEATGEEK_CLIENT_ID` Actions secret.
+4. **Seller terms:** hand an agent the prompt in `docs/research/topics/seller-terms-automated-access-prompt.md` (AXS, DICE, Goldenvoice, Insomniac, Framework) and save the answer beside it.
+5. **Phone checks (deferred by Kylie to a later batch, Oct 17; none urgent):** Add to calendar; the level pill; the build 4 round trip (tag, star a city, seats, sign out and back in); open Stubs signed in and check that research-loaded past dates now show a crowd (the relock runs on open).
+6. **Build 6 (GrokBot):** her UX notes are in progress; the stamp question above belongs with them.
+
+Closed Oct 17: Cosm is an accepted limitation (no consent request; `docs/product/build-brief.md`). The Ticketmaster id pass ran here (the key is in `.env.local` on the dev machine): 605 rooms in 33 cities got ids, 22 spot-checked; `scripts/ticketmaster-venues.mjs` now skips rooms closed for good.
 
 ## Open (details in BACKLOG under "Past dates" and in `docs/build-5/handoff-5.md`)
 1. **Check the Oct 17 nightly log:** "rooms the table lacks" (only Broward's two sub-1,000 rooms should remain), the new "placed loosely" line (any wrong room), the "miscellaneous listings at 5,000+ rooms" line (the material for a feed-based add-on rule; bring Kylie a proposal once a few nights are in), Rutgers basketball games landing at Jersey Mike's Arena, and the Coliseum tour gone.
