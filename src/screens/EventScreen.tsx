@@ -504,17 +504,18 @@ export function EventScreen() {
 }
 
 /**
- * "The night" story (build notes 4, P4): a short paragraph and its source links, under the crowd, in a
- * white card. The whole block is left out when there is no story. The label follows the words rule
- * (Kylie, Oct 9): "night" only for a start at 5 pm or later, otherwise, or with no start, "The day".
+ * The evening's story (build notes 4, P4): a short paragraph and its source links, under the crowd, in a
+ * white card. The whole block is left out when there is no story. "The evening" for a start at 5 pm or later,
+ * otherwise, or with no start, "The day": "night" stays out of app copy except run labels (build 6, item 11, a
+ * lean; Kylie's wording to confirm). The CSS class keeps its old name.
  */
 function StorySlot({ event }: { event: CrowdEvent }) {
   const story = storyFor(event.id);
   if (!story) return null;
   const evening = event.start ? event.start >= '17:00' : false;
   return (
-    <section className="card night-story" aria-label={evening ? 'The night' : 'The day'}>
-      <h2 className="night-story-label">{evening ? 'The night' : 'The day'}</h2>
+    <section className="card night-story" aria-label={evening ? 'The evening' : 'The day'}>
+      <h2 className="night-story-label">{evening ? 'The evening' : 'The day'}</h2>
       <p className="night-story-text">{story.text}</p>
       {story.links.length > 0 && (
         <p className="night-story-links">
