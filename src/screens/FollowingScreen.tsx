@@ -135,8 +135,16 @@ function FriendsTimeline() {
         past={past}
         future={future}
         todayLabel={dayBandLabel(today, today)}
-        emptyPast={<p className="you-fine timeline-note">Nothing from the people you follow in the last 60 days.</p>}
-        emptyFuture={<p className="you-fine timeline-note">Nothing coming up from the people you follow.</p>}
+        emptyPast={
+          <div className="card empty-card">
+            <div className="card-title">Nothing from the people you follow in the last 60 days.</div>
+          </div>
+        }
+        emptyFuture={
+          <div className="card empty-card">
+            <div className="card-title">Nothing coming up from the people you follow.</div>
+          </div>
+        }
       />
     </>
   );

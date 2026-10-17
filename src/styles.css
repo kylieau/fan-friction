@@ -5843,16 +5843,25 @@ button.back-link {
   min-height: 0;
 }
 
+/* The scroller bleeds to the page's edges and pads back in, so the month bands (which reach 16 px past the content)
+   run edge to edge without a sideways scroll (Kylie, Oct 17: the content sat off the page's width). */
 .timeline-scroll {
   position: relative;
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0 0 80px;
+  margin: 0 -16px;
+  padding: 0 16px 80px;
+}
+
+/* The chips and tag picker above the list never give up height to it (they squashed to a sliver on a short window). */
+.timeline-section > :not(.timeline-body) {
+  flex-shrink: 0;
 }
 
 /* The today line (board M2-01 panel C, decided): not a band but a thin blue rule with "Today · Sat, Oct 17" centred

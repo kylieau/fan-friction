@@ -46,11 +46,18 @@ export function Timeline({
   // Room under the future so the today line can always reach the top of the list, however little is ahead.
   const [pad, setPad] = useState(0);
 
-  // Open on today, once the rows are there: the line sits at the top of the list (the Explore List's opening).
+  // Open on today, once the rows are there: the line sits at the top of the list (the Explore List's opening). With
+  // nothing behind the line, the list opens at its top instead, so the empty-past card is in view (Kylie, Oct 17).
   useLayoutEffect(() => {
     const el = scroller.current;
     const line = todayLine.current;
     if (placed.current || !el || !line) return;
+    if (past.length === 0) {
+      placed.current = true;
+      openedAt.current = 0;
+      el.scrollTop = 0;
+      return;
+    }
     const need = el.clientHeight - (el.scrollHeight - pad - line.offsetTop);
     if (need > pad) {
       setPad(need);

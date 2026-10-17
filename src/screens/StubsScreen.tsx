@@ -194,7 +194,17 @@ export function StubsScreen() {
               </div>
             </div>
           }
-          emptyFuture={<p className="you-fine timeline-note">Nothing upcoming yet</p>}
+          emptyFuture={
+            // Board M2-02's card (Kylie, Oct 17), under the line.
+            <div className="card empty-card">
+              <div className="card-title">Nothing upcoming yet</div>
+              <div className="empty-actions">
+                <Link to="/explore" className="link-button">
+                  Browse today in Explore ›
+                </Link>
+              </div>
+            </div>
+          }
         />
       </section>
 
