@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-penn-football-401867821",
+      "metroId": "philadelphia",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "penn-franklin-field",
+      "homeTeamId": "penn-football",
+      "home": {
+        "name": "Penn",
+        "score": 27
+      },
+      "away": {
+        "name": "Columbia",
+        "score": 28
+      },
+      "attendance": 1860,
+      "capturedAt": "2026-10-17T12:07:36.602Z",
+      "duration": {
+        "minutes": 219,
+        "kind": "estimated"
+      },
+      "startedAt": "20:30"
+    },
+    {
+      "eventId": "2026-10-16-espn-sixers-401898407",
+      "metroId": "philadelphia",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 120
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 125
+      },
+      "attendance": 19746,
+      "note": "OT",
+      "capturedAt": "2026-10-17T12:07:36.602Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

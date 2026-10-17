@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-atlante-401876945",
+      "metroId": "mexico-city",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "atlante",
+      "home": {
+        "name": "Atlante",
+        "score": 1
+      },
+      "away": {
+        "name": "Pumas",
+        "score": 2
+      },
+      "capturedAt": "2026-10-17T12:07:41.334Z"
+    }
+  ]
+}

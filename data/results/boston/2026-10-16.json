@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-boston-legacy-fc-401854091",
+      "metroId": "boston",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gillette-stadium",
+      "homeTeamId": "boston-legacy-fc",
+      "home": {
+        "name": "Legacy FC",
+        "score": 2
+      },
+      "away": {
+        "name": "Louisville",
+        "score": 1
+      },
+      "capturedAt": "2026-10-17T12:07:36.283Z"
+    }
+  ]
+}

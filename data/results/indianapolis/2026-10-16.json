@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-pacers-401914126",
+      "metroId": "indianapolis",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 127
+      },
+      "away": {
+        "name": "Bucks",
+        "score": 128
+      },
+      "attendance": 10283,
+      "note": "OT",
+      "capturedAt": "2026-10-17T12:07:42.587Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

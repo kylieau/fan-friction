@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-01",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "cleveland",
+      "venueId": "city",
+      "date": "2026-11-01",
+      "basis": "forecast",
+      "capturedAt": "2026-10-17T11:59:17.437Z",
+      "feelsLikeHighF": 51.3,
+      "feelsLikeLowF": 45.8,
+      "code": 3,
+      "precipProbability": 30,
+      "precipMm": 0
+    }
+  ]
+}

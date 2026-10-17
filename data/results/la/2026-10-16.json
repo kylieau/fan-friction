@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-ducks-401892518",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "away": {
+        "name": "Bruins",
+        "score": 4
+      },
+      "attendance": 17174,
+      "capturedAt": "2026-10-17T12:07:32.860Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-10-16-espn-lakers-401898719",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 106
+      },
+      "away": {
+        "name": "Nuggets",
+        "score": 121
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-10-17T12:07:32.860Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "22:47"
+    }
+  ]
+}

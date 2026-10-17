@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-bulls-401908943",
+      "metroId": "chicago",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 133
+      },
+      "away": {
+        "name": "Timberwolves",
+        "score": 116
+      },
+      "attendance": 21017,
+      "capturedAt": "2026-10-17T12:07:35.188Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

@@ -63,6 +63,18 @@
       "code": 3,
       "precipProbability": 7,
       "precipMm": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-10-19",
+      "basis": "forecast",
+      "capturedAt": "2026-10-17T12:04:24.702Z",
+      "feelsLikeHighF": 57.7,
+      "feelsLikeLowF": 47.6,
+      "code": 3,
+      "precipProbability": 7,
+      "precipMm": 0
     }
   ]
 }

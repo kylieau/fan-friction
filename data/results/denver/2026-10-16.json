@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-avalanche-401892517",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 5
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 2
+      },
+      "attendance": 18111,
+      "capturedAt": "2026-10-17T12:07:47.108Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    },
+    {
+      "eventId": "2026-10-16-espn-du-mhockey-401904862",
+      "metroId": "denver",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 1
+      },
+      "away": {
+        "name": "Michigan Wolverines",
+        "score": 4
+      },
+      "capturedAt": "2026-10-17T12:07:47.108Z"
+    }
+  ]
+}
