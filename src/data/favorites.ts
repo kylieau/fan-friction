@@ -104,11 +104,19 @@ export function suggestionsFor(homeMetroId: string | null, have: readonly Favori
   const teams = Object.values(TEAMS)
     .filter((team) => team.metroId === homeMetroId)
     .map(favoriteForTeam);
+  // A room closed for good is not suggested, and two rooms with one name (the closed Downtown Disney House of Blues
+  // and its GardenWalk successor) make one favorite, not two children with one key (found Oct 17, 2026, build 6).
   const venues = Object.values(VENUES)
-    .filter((venue) => venue.metroId === homeMetroId)
+    .filter((venue) => venue.metroId === homeMetroId && !(venue.closed && !venue.closed.until))
     .sort((a, b) => Math.max(...b.capacity.map((c) => c.seats)) - Math.max(...a.capacity.map((c) => c.seats)))
     .map((venue) => favoriteFor('venue', venueNameOn(venue, today())));
-  return [...teams, ...venues].filter((fav) => !haveKeys.has(favoriteKey(fav)));
+  const seen = new Set<string>();
+  return [...teams, ...venues].filter((fav) => {
+    const key = favoriteKey(fav);
+    if (haveKeys.has(key) || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 /** Does a logged night belong to this favorite? Matched by name, since logs are names. */
