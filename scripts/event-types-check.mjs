@@ -15,7 +15,8 @@ let failed = false;
 try {
   const { EVENT_TYPES, eventType } = await server.ssrLoadModule('/src/data/eventTypes.ts');
   for (const t of EVENT_TYPES) if (!t.icon) (failed = true), console.log(`FAIL ${t.key} has no icon`);
-  if (EVENT_TYPES.length !== 36) (failed = true), console.log(`FAIL ${EVENT_TYPES.length} types, the table has 36`);
+  // 37 since build 5 added "Live screening" (Kylie, Oct 14, 2026).
+  if (EVENT_TYPES.length !== 37) (failed = true), console.log(`FAIL ${EVENT_TYPES.length} types, the table has 37`);
   const base = path.join(root, 'data', 'schedule-archive');
   const metros = only ? [only] : (await readdir(base, { withFileTypes: true })).filter((d) => d.isDirectory()).map((d) => d.name);
   const total = new Map();
