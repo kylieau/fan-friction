@@ -198,6 +198,12 @@ export interface CrowdEvent {
   audience: Audience;
   /** For games. Ids point at Team records. */
   teams?: { home: string; away: string; /** Listing slug for OPPONENT_RATIOS; ESPN sets this when away is our team id. */ awayOpponent?: string };
+  /**
+   * Each side's ranking going into the game, from an official poll ("#4 UCLA"; Kylie, M3-08, build 6, item 10). Shown
+   * in the event page's title only, and only when a source filled it: no source writes it yet (sourcing is pending
+   * research), so it is empty everywhere today. Never hand-entered.
+   */
+  rank?: { home?: number; away?: number };
   /** For shows. */
   performer?: string;
   /** Pre-event facts for the occasion rule. Playoff round and game live in `stakes`. */

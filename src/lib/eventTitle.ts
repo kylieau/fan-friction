@@ -208,6 +208,9 @@ interface GameParts {
   first: string;
   second: string;
   joiner: 'at' | 'vs.';
+  /** Each side's official ranking, when a source filled it ("#4 UCLA"; build 6, item 10): the full title only. */
+  rankFirst: number | null;
+  rankSecond: number | null;
   eventName: string | null;
   neutralSite: boolean;
   sport: string | null;
@@ -290,7 +293,7 @@ function finalYear(event: CrowdEvent, round: RoundWords | null): number | null {
 
 /** Preseason (N08), spring training (case 1), doubleheaders (N09): the designation after the teams. */
 function designationOf(event: CrowdEvent): GameParts['designation'] {
-  if (event.doubleheader) return { chip: `DH${event.doubleheader}`, short: `Game ${event.doubleheader}`, full: `Game ${event.doubleheader}` };
+  if (event.doubleheader) return { chip: `DH${event.doubleheader}`, short: `Doubleheader Game ${event.doubleheader}`, full: `Doubleheader, Game ${event.doubleheader}` };
   if (!event.preseason) return null;
   if (event.audience.domain === 'sports' && event.audience.sport === 'baseball') {
     const league = springLeague(event);
@@ -354,10 +357,12 @@ function stageLabel(event: CrowdEvent): EventLabel | null {
       ifNecessary: Boolean(stakes.ifNecessary),
     };
   }
-  // Doubleheaders are not designed yet (labels r3, section 7): "Game 1" stays as it was, grey.
+  // Doubleheaders (Kylie, M3-04; build 6, item 10): never a plain "Game N", which reads as a series game. Own line
+  // "Doubleheader Game 1", the event page "Doubleheader, Game 1"; the chip keeps "DH1" (a lean), and so does the
+  // inline form, which shares the chip's budget on bars.
   if (event.doubleheader) {
     const n = event.doubleheader;
-    return { kind: 'game', own: `Game\u00a0${n}`, full: `Game\u00a0${n}`, inline: `Game\u00a0${n}`, chip: `DH${n}`, ifNecessary: false };
+    return { kind: 'game', own: `Doubleheader Game\u00a0${n}`, full: `Doubleheader, Game\u00a0${n}`, inline: `DH${n}`, chip: `DH${n}`, ifNecessary: false };
   }
   if (event.preseason) {
     if (event.audience.sport === 'baseball') {
@@ -418,7 +423,9 @@ function readLabel(raw: string): TitleLabel | null {
   }
   if (/^(preseason|spring training(, [a-z]+ league)?|exhibition|friendly|scrimmage|qualifier)$/i.test(core)) return make('low', core, core);
   if (/^(home opener|season finale)$/i.test(core)) return make('occasion', core, core);
-  if (/^game \d+$/i.test(core)) return make('game', core.replace(' ', '\u00a0'), core.replace(' ', '\u00a0'));
+  // A doubleheader in any of its forms, older saved "(Game 1)" included (build 6, item 10).
+  const dh = core.match(/^(?:doubleheader,? game|dh|game) ?(\d+)$/i);
+  if (dh) return make('game', `Doubleheader Game\u00a0${dh[1]}`, `DH${dh[1]}`);
   const numbered = core.match(/^(.+?) (?:G|Game )(\d+)$/);
   const stem = (numbered ? numbered[1] : core).replace(/ \d{4}$/, '').toLowerCase();
   if (!ROUND_TEXTS.has(stem) && !/^\S+ playoffs$/.test(stem) && !isCollegeRoundText(stem)) return null;
@@ -471,7 +478,7 @@ function gameParts(event: CrowdEvent): Parts {
     const away = event.teams?.away ? TEAMS[event.teams.away]?.shortName : undefined;
     if (!home || !away) return { type: 'named', name: round.short, designation: game ? `Game ${game}` : null, year: null };
     // "{teams} · World Series Game 1" once the teams are known.
-    return { type: 'game', first: away, second: home, joiner: 'at', eventName: null, neutralSite: false, sport: null, squad: null, round, game, year: finalYear(event, round), designation: null };
+    return { type: 'game', first: away, second: home, joiner: 'at', rankFirst: event.rank?.away ?? null, rankSecond: event.rank?.home ?? null, eventName: null, neutralSite: false, sport: null, squad: null, round, game, year: finalYear(event, round), designation: null };
   }
   const sides = sidesOf(title);
   if (!sides) return { type: 'named', name: displayName(title), designation: null, year: null };
@@ -499,6 +506,9 @@ function gameParts(event: CrowdEvent): Parts {
     first,
     second,
     joiner,
+    // Every branch above puts the visitor first and the home side second.
+    rankFirst: event.rank?.away ?? null,
+    rankSecond: event.rank?.home ?? null,
     eventName,
     neutralSite: neutral,
     // The sport rides in the label slot now (eventLabel), not after the teams.
@@ -598,7 +608,10 @@ function roundText(p: GameParts, length: Length, compact = false): string | null
  */
 function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = false): { name: string; designation: string[]; aside: string | null } {
   const withYear = drop >= 1 ? { ...p, year: null } : p;
-  const matchup = drop >= 2 ? withYear.second : `${withYear.first} ${withYear.joiner} ${withYear.second}`;
+  // Rank in the title on the event page only (Kylie, M3-08, option B; build 6, item 10): "#17 USC at #4 UCLA". Rows
+  // and chips never carry it.
+  const ranked = (name: string, rank: number | null) => (length === 'full' && rank ? `#${rank} ${name}` : name);
+  const matchup = drop >= 2 ? ranked(withYear.second, withYear.rankSecond) : `${ranked(withYear.first, withYear.rankFirst)} ${withYear.joiner} ${ranked(withYear.second, withYear.rankSecond)}`;
   const tail: string[] = [];
   if (drop < 3) {
     if (withYear.eventName) tail.push(withYear.eventName);

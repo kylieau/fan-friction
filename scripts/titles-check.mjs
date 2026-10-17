@@ -32,7 +32,10 @@ try {
     ['N06/N07 Super Bowl', game('Rams vs. Chiefs', { teams: { home: 'rams', away: 'chiefs' }, stakes: { round: 'Super Bowl' }, date: '2027-02-14' }), { full: 'Chiefs vs. Rams (Super Bowl 2027)' }],
     ['N08 Preseason', game('Clippers vs. Nuggets', { sport: 'basketball', teams: { home: 'clippers', away: 'nuggets' }, preseason: true }), { chip: 'Clippers', short: 'Nuggets at Clippers (Preseason)' }],
     ['Case 1 spring training', game('Reds vs. Cubs', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'reds', away: 'cubs' }, preseason: true, sourceId: 'mlb' }), { short: 'Cubs at Reds (Spring training)', full: 'Cubs at Reds (Spring training, Cactus League)' }],
-    ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels (DH1)' }],
+    // Doubleheaders (Kylie, M3-04; build 6, item 10): never a plain "Game N"; the chip keeps DH1.
+    ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels (DH1)', short: "A's at Angels (DH1)", full: "A's at Angels (Doubleheader, Game 1)" }],
+    // Rank in the title, event page only, when a source filled it (Kylie, M3-08; build 6, item 10).
+    ['Rank in the full title', game('UCLA vs. USC', { sport: 'football', teams: { home: 'ucla-football', away: 'usc-football' }, rank: { home: 4, away: 17 } }), { short: 'USC at UCLA', full: '#17 USC at #4 UCLA' }],
     ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls (AHL playoffs)', full: 'Reign at Gulls (Calder Cup Playoffs)' }],
     ['N10 artist before tour', show('Song Of The Saints Tour with Phil Wickham', { performer: 'Phil Wickham' }), { full: 'Phil Wickham · Song Of The Saints Tour' }],
     ['N28 middle dot', show('Phoebe Bridgers: The Lost Tour', { performer: 'Phoebe Bridgers' }), { short: 'Phoebe Bridgers · The Lost Tour' }],
