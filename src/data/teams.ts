@@ -90,6 +90,37 @@ export function teamBadge(team: Team, shown: readonly Team[] = []): string {
   return `${code} ${letters}`;
 }
 
+/** The short way a league is written under a badge; a league not listed here is written as it is ("NBA", "PWHL"). */
+const LEAGUE_MARKS: Record<string, string> = {
+  'NBA G League': 'G League',
+  'USL Championship': 'USL',
+  'USL Super League': 'USL Super',
+  'Triple-A baseball': 'Triple-A',
+  'Double-A baseball': 'Double-A',
+  'Single-A baseball': 'Single-A',
+  'MLS Next Pro': 'MLS Next',
+  'Liga MX Femenil': 'Femenil',
+  'American Association': 'Am. Assoc.',
+  'Independent baseball': 'Indie ball',
+  'Frontier League': 'Frontier',
+  'Texas League': 'Texas Lg',
+  'UpShot League': 'UpShot',
+  'WPSL PRO': 'WPSL Pro',
+};
+
+/**
+ * The league mark on a pro badge (Kylie, Oct 17, 2026: option A of build 6, item 9a): only when another pro badge in
+ * the set carries the same code and sport (Pacers and Fever, both IND basketball), and then on every badge of the
+ * clash, never on only the women's team. The league is data every team has, and text works for everyone. Two
+ * clubs of one league and sport with one code read the same mark; the row's name separates them. College programs
+ * take their sport letters instead (`teamBadge`).
+ */
+export function leagueMark(team: Team, shown: readonly Team[]): string | null {
+  if (isCollegeTeam(team)) return null;
+  if (!shown.some((other) => !isCollegeTeam(other) && badgesCollide(team, other))) return null;
+  return LEAGUE_MARKS[team.league] ?? team.league;
+}
+
 const LIST: Team[] = [
   // Milwaukee (Oct 11, 2026): current clubs/programs; no-feed records remain manually loggable.
   team("brewers", "Milwaukee Brewers", "Brewers", "MLB", "baseball", "milwaukee", "MIL"),
@@ -308,7 +339,7 @@ const LIST: Team[] = [
   team("uh-wbb", "Houston Cougars Women's Basketball", "UH WBB", "College women's basketball", "basketball", "houston", "HOU", ["Cougars"]),
   team("uh-baseball", "Houston Cougars Baseball", "UH Baseball", "College baseball", "baseball", "houston", "HOU", ["Cougars"]),
   team("uh-softball", "Houston Cougars Softball", "UH Softball", "College softball", "softball", "houston", "HOU", ["Cougars"]),
-  team("rice-football", "Rice Owls Football", "Rice", "College football", "football", "houston", "RICE", ["Owls"]),
+  team("rice-football", "Rice Owls Football", "Rice", "College football", "football", "houston", "RICE", ["Owls", "Rice Owls"]),
   team("rice-mbb", "Rice Owls Men's Basketball", "Rice MBB", "College men's basketball", "basketball", "houston", "RICE", ["Owls"]),
   team("rice-wbb", "Rice Owls Women's Basketball", "Rice WBB", "College women's basketball", "basketball", "houston", "RICE", ["Owls"]),
   team("rice-baseball", "Rice Owls Baseball", "Rice Baseball", "College baseball", "baseball", "houston", "RICE", ["Owls"]),
@@ -449,7 +480,7 @@ const LIST: Team[] = [
   team('sounders', 'Seattle Sounders FC', 'Sounders', 'MLS', 'soccer', 'seattle', 'SEA'),
   team('reign', 'Seattle Reign FC', 'Reign', 'NWSL', 'soccer', 'seattle', 'SEA', ['OL Reign']),
   team('storm', 'Seattle Storm', 'Storm', 'WNBA', 'basketball', 'seattle', 'SEA'),
-  team('uw-football', 'Washington Huskies Football', 'UW', 'College football', 'football', 'seattle', 'WASH', ['Huskies', 'Washington Football']),
+  team('uw-football', 'Washington Huskies Football', 'UW', 'College football', 'football', 'seattle', 'WASH', ['Huskies', 'Washington Football', 'Washington Huskies']),
   team('uw-mbb', 'Washington Huskies Men\'s Basketball', 'UW MBB', "College men's basketball", 'basketball', 'seattle', 'WASH', ['Huskies']),
   team('uw-wbb', 'Washington Huskies Women\'s Basketball', 'UW WBB', "College women's basketball", 'basketball', 'seattle', 'WASH', ['Huskies']),
   team('lakers', 'Los Angeles Lakers', 'Lakers', 'NBA', 'basketball', 'la', 'LAL'),
@@ -734,9 +765,7 @@ const LIST: Team[] = [
   team('rutgers', 'Rutgers Scarlet Knights', 'Rutgers', 'College football', 'football', 'new-york', 'RUTG', ['Rutgers FB', 'Rutgers Football']),
   team('rutgers-mbb', "Rutgers Scarlet Knights Men's Basketball", 'Rutgers MBB', "College men's basketball", 'basketball', 'new-york', 'RUTG', ['Rutgers']),
   team('rutgers-wbb', "Rutgers Scarlet Knights Women's Basketball", 'Rutgers WBB', "College women's basketball", 'basketball', 'new-york', 'RUTG', ['Rutgers']),
-  team('washington-huskies', 'Washington Huskies', 'Huskies', 'College football', 'football', undefined, 'WASH'),
   team('bowling-green', 'Bowling Green Falcons', 'Bowling Green', 'College football', 'football', undefined, 'BGSU'),
-  team('rice', 'Rice Owls', 'Rice', 'College football', 'football', undefined, 'RICE'),
 ];
 
 export const TEAMS: Record<string, Team> = Object.fromEntries(LIST.map((t) => [t.id, t]));

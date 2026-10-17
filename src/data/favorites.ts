@@ -8,7 +8,7 @@
 // The Weeknd) still work: they match the log by name and get a page from it.
 
 import { METROS } from '../config/metros';
-import { TEAMS, teamBadge } from './teams';
+import { TEAMS, leagueMark, teamBadge } from './teams';
 import { VENUES, venueNameOn } from './venues';
 import type { CrowdEvent, Favorite, FavoriteKind, Entry, Team } from './types';
 
@@ -160,6 +160,14 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
   }
 }
 
+const teamsOf = (favs: readonly Favorite[]) => favs.flatMap((f) => (f.teamId && TEAMS[f.teamId] ? [TEAMS[f.teamId]] : []));
+
+/** The league caption under a pro team's badge when another pro badge in the set clashes with it (Kylie, Oct 17: option A). */
+export function favoriteLeagueMark(fav: Favorite, shown: readonly Favorite[]): string | null {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  return team ? leagueMark(team, teamsOf(shown)) : null;
+}
+
 /**
  * The mark for a favorite without a logo: a team's badge code, given the other favorites shown beside it (build 6,
  * item 9a: "UCLA MBB" only when another program of the same code and sport is in the set); two letters for an
@@ -168,7 +176,7 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
 export function favoriteMark(fav: Favorite, shown: readonly Favorite[] = []): string {
   if (fav.teamId) {
     const team = TEAMS[fav.teamId];
-    if (team) return teamBadge(team, shown.flatMap((f) => (f.teamId && TEAMS[f.teamId] ? [TEAMS[f.teamId]] : [])));
+    if (team) return teamBadge(team, teamsOf(shown));
   }
   const words = fav.label.split(/\s+/).filter(Boolean);
   if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();

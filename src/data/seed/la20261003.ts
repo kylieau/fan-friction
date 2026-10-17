@@ -43,7 +43,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     title: 'USC vs Washington',
     place: { type: 'venue', venueId: 'coliseum' },
     audience: { domain: 'sports', sport: 'football' },
-    teams: { home: 'usc-football', away: 'washington-huskies' },
+    teams: { home: 'usc-football', away: 'uw-football' },
     crowd: [estimated(62000, 'Recent Coliseum games have drawn about 67,000. Heat and a 4:30 pm kickoff work against that; homecoming helps. The Coliseum holds 77,500. Not an announced attendance.')],
     assessment: draft('Notable', ['homecoming', 'NBC'], 'Moderate', 'Gets out as the Inglewood shows are starting'),
     sourceId: SOURCE_ID,

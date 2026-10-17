@@ -286,6 +286,7 @@ export {
   favoriteForTeam,
   favoriteKey,
   favoriteMark,
+  favoriteLeagueMark,
   kindLabel,
   entryMatches,
   suggestionsFor,

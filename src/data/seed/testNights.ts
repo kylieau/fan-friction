@@ -283,7 +283,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Routine', ['ordinary opponent', '11:30am', 'before classes start'], 'Extreme', 'Midday game in 100°F+ heat'],
   }),
   game(D12, {
-    title: 'USC vs. Rice', home: 'usc-football', away: 'rice', sport: 'football',
+    title: 'USC vs. Rice', home: 'usc-football', away: 'rice-football', sport: 'football',
     venue: 'coliseum', start: '15:00', crowd: [announced(60113)],
     a: ['Notable', ["new coach's debut"], 'Heavy', '3pm in the heat'],
   }),

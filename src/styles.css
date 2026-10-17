@@ -5908,6 +5908,24 @@ button.back-link {
   flex-shrink: 0;
 }
 
+/* The badge and, on a clashing pro pair, its league caption under the tile (Kylie, Oct 17: option A; board B). */
+.fav-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.fav-badge-league {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--ink2);
+  white-space: nowrap;
+  line-height: 1;
+}
+
 /* ---------- Settings as a side panel (build 6, item 8) ---------- */
 .side-backdrop {
   align-items: stretch;
