@@ -12,11 +12,11 @@ Grounded against main **67c91d27** (Oct 16, 2026, 6:29 PM PT; fetched 6:58 PM PT
 
 ## Decisions and defaults from the Oct 16 evening (Q1-Q14)
 
-Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 16 she answered Q1-Q10 (her own picks, relayed by Mock Mosaic). Q11-Q14 are Mosaic's leans, not asked of Kylie (labeled **Lean (Mosaic), not approved by Kylie**); S1-S5 are smaller defaults (labeled **Default, NOT approved by Kylie (Mosaic taking to her; may change)**). Each is a buildable instruction. Nothing in this list blocks the build.
+Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 16 she answered Q1-Q10 (her own picks, relayed by Mock Mosaic); on Oct 17 at 7:19 AM PT she decided Q15 (ring placement) and Q16 (tag position). Q11-Q14 are Mosaic's leans, not asked of Kylie (labeled **Lean (Mosaic), not approved by Kylie**); S1-S5 are smaller defaults (labeled **Default, NOT approved by Kylie (Mosaic taking to her; may change)**). Each is a buildable instruction. Nothing in this list blocks the build.
 
-**Counts: 10 decided, 4 Mosaic leans (Q11-Q14), 5 smaller defaults (S1-S5), 1 open question (pro badge disambiguation, options A-D, none chosen; nothing built for pros), 1 to-confirm (college letters only on a clash vs always), 0 pending, 0 blocking.** Pending work outside this list is unchanged and does not block: official-rankings sourcing, the 22 Low team codes (HOLD), SeatGeek (HOLD), add-on research, migration 0027, and the run-label data fields (item 11).
+**Counts: 12 decided, 4 Mosaic leans (Q11-Q14), 5 smaller defaults (S1-S5), 1 open question (pro badge disambiguation, options A-D, none chosen; nothing built for pros), 1 to-confirm (college letters only on a clash vs always), 0 pending, 0 blocking.** Pending work outside this list is unchanged and does not block: official-rankings sourcing, the 22 Low team codes (HOLD), SeatGeek (HOLD), add-on research, migration 0027, and the run-label data fields (item 11).
 
-### Decided (Kylie, 2026-10-16)
+### Decided (Kylie, 2026-10-16 and 2026-10-17)
 
 | # | Question | Her pick | Item |
 |---|---|---|---|
@@ -30,6 +30,8 @@ Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 
 | Q8 | Run labels | HOLD all run labels until the data fields exist. No first phase, no "Night 3" / "Show 3" fallback. | 11 |
 | Q9 | Quiet-day line | "No other big events that day." | 3 |
 | Q10 | "~" on rival rows | Removed. "~" stays only on the event page's full number next to "Estimated" and in the map-key line. | 4 |
+| Q15 | Where the ring sits on a row (2026-10-17) | After the crowd figure on the SAME line, right after the number (M1-02 panel C). Not underneath the crowd figure; not just before it. | 1 |
+| Q16 | Where the occasion tag sits on a row (2026-10-17) | Right-justified on the venue line, at the right edge. Not right after the venue name. | 2 |
 
 ### Leans (build them; they do not block)
 
@@ -81,7 +83,7 @@ Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 
 
 **Build instruction.**
 - **Rows only (compact):** a "ghost ring" in ONE violet, `#6A3FBF` (the existing `fight` token, `src/config/theme.ts:47`). Shape alone carries the ladder: a dot inside a ring. **Squeezed** = dot nearly fills the ring (r 3.2); **Swamped** = about half (r 2.0); **Steamrolled** = pinpoint (r 0.9). Outer ring "a tiny bit thinner" than the first draft (Kylie, M5-06). Shown from Squeezed up; **Unopposed shows no ring on lists.**
-- **Placement on rows:** first line, beside the crowd figure, after the number (M1-02). Today the pill sits on the second line with the occasion tag (`src/components/DayRow.tsx:55-57`, `<EventTags event={e} />` in `day-row-line2`); the crowd figure is on line 1 (`DayRow.tsx:52`). Move the friction mark to line 1; leave the occasion tag on line 2 (item 2).
+- **Placement on rows: DECIDED (Kylie 2026-10-17): the ring sits AFTER the crowd figure on the SAME line (line 1), right after the number, as M1-02 panel C. NOT underneath the crowd figure.** Build exactly this. Several boards (M5-01, M5-03, M3-R, compact-r4, M5-04, M1-04) draw the ring under the crowd figure at the right edge of the venue line; follow this decision, not those boards. Today the pill sits on the second line with the occasion tag (`src/components/DayRow.tsx:55-57`, `<EventTags event={e} />` in `day-row-line2`); the crowd figure is on line 1 (`DayRow.tsx:52`). Move the friction mark to line 1; leave the occasion tag on line 2 (item 2).
 - **Not on:** map chips, Local Competition bars, Following cards, Stubs rows, the share card (principle above).
 - **Event page:** the word pill stays. The Crowd card shows the pill with a 16 px ring to the LEFT of the pill; the ring has no tap target. **Unopposed shows on the event page** (the existing `withUnopposed`, `src/screens/EventScreen.tsx:285`, and `:360`).
 - **Pill colors, option B:** all four pills (Unopposed, Squeezed, Swamped, Steamrolled) use the SAME violet tint: fill `#E6DDF8`, text `#3F2A78` (8.86:1, checked). Only the word and the ring change by level. Kylie's correction: Unopposed gets the same tint, NOT pale grey (the `pill-r1` board still shows grey; ignore that detail).
@@ -109,6 +111,7 @@ Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 
 **Why (Mosaic's reasoning from Kylie's answers).** Friction should be something the eye reads without a new vocabulary and without competing with the date read. A ring whose inner dot shrinks reads as "less of the crowd left" without borrowing a power or capacity metaphor, and a single violet means the pill and ring never run in opposite directions.
 
 **Rejected, with why.**
+- **Ring UNDER the crowd figure on the venue line (M1-02 panel A, the boards' lean) and ring just before the crowd figure (panel B): rejected by Kylie 2026-10-17** in favour of after the number on the same line (panel C).
 - Fill bar and bracket ticks: read as capacity or progress.
 - Bitten disc, moons, eroded disc, shrinking disc: Kylie: looks like moons; also mimics power.
 - Iris and pinched waist: shortlisted, lost to the ghost ring.
@@ -121,7 +124,7 @@ Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 
 - Unopposed as pale grey (Kylie's correction).
 - Any resemblance to the date read: the date read (Chill / Mild / Spicy / Brutal / Cooked, `scoreLabels.ts:7-12`) is a different five-level ladder and includes gridlock; friction is an event's own crowd fight plus conditions.
 
-**Mockups.** `batch5/compact-r4.png` (ring spec: greyscale, deuteranopia, dark mode, VoiceOver); `batch5/pill-r1.png` (pill B and the event-page ring; ignore its grey Unopposed and its "55,000" without the "~" the live page shows next to "Estimated"); `batch5/v2/M5-02`, `M5-03`; `combined-v3/final/M1-02`. Not applicable: `batch5/compact-r1..r3`.
+**Mockups.** In the mockup pack (`docs/build-6/mockups/`, see `MANIFEST.md`): `item01-friction-ring-shape-spec_compact-r4` (ring spec: greyscale, deuteranopia, dark mode, VoiceOver; it draws the ring on chips and bars and under the crowd figure, both superseded); `item01-friction-pill-colours_pill-r1` (pill B and the event-page ring; ignore its grey Unopposed and its "55,000" without the "~" the live page shows next to "Estimated"); `item01-ring-placement-on-rows_M1-02` (panel C is the decided placement); `item01-event-page-pill-and-ring_M5-03` and `item03-chips-and-bars-no-ring_M5-02` (the refreshed `combined-v3/final` files; the old `batch5/v2/M5-02` draws rings on chips and bars and is wrong). Not applicable: `batch5/compact-r1..r3`.
 
 ---
 
@@ -130,7 +133,7 @@ Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 
 **Build instruction.**
 - Keep the existing outlined uppercase word: 1 px `#4B5A70` (`tagInk`, `theme.ts:57`), 11 px / 700, 18 px tall. **NOTABLE / MAJOR / MARQUEE**; Routine shows none. **Marquee has no special style.** No flags, no symbols (Kylie: self-explanatory word; "don't want to give users another symbol to keep track of").
 - **On any list of events** (Explore and date lists, Home today list, map sheet): only the event(s) with the highest occasion level that day show the tag. Ties show both. If the top level is Routine, none. **Event pages always show their own tag.**
-- **Position:** on the venue line, right-justified at the right edge (replaces "next to the venue"). Long venues shorten with an ellipsis. The `occasion-r1` board still shows the old "next to venue" placement; superseded.
+- **Position: DECIDED (Kylie 2026-10-17): right-justified on the venue line, at the right edge.** Build exactly this; long venues shorten with an ellipsis. Several boards (M5-01, M1-04, M3-R, occasion-r1) draw the tag right after the venue name; follow this decision, not those boards. Rejected: the tag right after the venue name (the earlier "next to the venue" placement, occasion-r1 P-a, and the refreshed boards' reading).
 - **Excluded:** the grey "Home opener" and "Season finale" labels are a separate mechanism (Kylie excluded them). Season finale has no source field; Kylie says no need to include it.
 
 **Rule details (S1; C-07).** **Default, NOT approved by Kylie (Mosaic taking to her; may change)**.
@@ -142,7 +145,7 @@ Kylie wants unknowns not to stall the build. Between 7:08 and 7:27 PM PT on Oct 
 
 **Why.** Showing the tag on every row dilutes it; showing it on the day's top event(s) says "this is the one". A word needs no key.
 
-**Rejected.** Flags-only (O4); grey word (O1); chip (P-b); a special Marquee style; an icon or symbol.
+**Rejected.** Flags-only (O4); grey word (O1); chip (P-b); a special Marquee style; an icon or symbol; the tag right after the venue name (Kylie 2026-10-17: right-justified on the venue line instead).
 
 ---
 
