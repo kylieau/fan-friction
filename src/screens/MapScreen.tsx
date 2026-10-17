@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { useCallback, useContext, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import {
@@ -56,6 +56,23 @@ const TRAFFIC_BUILT = false;
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
+  // The key's room: from just under the floating header to just over its button, so it never tucks under the
+  // header on a short window (Kylie, Oct 17). Measured when it opens and whenever the window changes.
+  const legendRef = useRef<HTMLDivElement>(null);
+  const [legendMax, setLegendMax] = useState<number | null>(null);
+  useLayoutEffect(() => {
+    if (!legend) return;
+    const fit = () => {
+      const card = legendRef.current;
+      const header = card?.closest('.map-controls')?.parentElement?.querySelector('.map-header');
+      const button = card?.previousElementSibling;
+      if (!card || !header || !button) return;
+      setLegendMax(Math.max(120, Math.floor(button.getBoundingClientRect().top - header.getBoundingClientRect().bottom - 16)));
+    };
+    fit();
+    window.addEventListener('resize', fit);
+    return () => window.removeEventListener('resize', fit);
+  }, [legend]);
   const location = useLocation();
   const href = `${location.pathname}${location.search}`;
   const restored = useRef<MapMemory | null | undefined>(undefined);
@@ -381,7 +398,7 @@ export function MapScreen() {
             ?
           </button>
           {legend && (
-            <div className="legend-card" role="note">
+            <div ref={legendRef} className="legend-card" role="note" style={legendMax ? { maxHeight: legendMax } : undefined}>
               <ul className="map-key">
                 {points.length === 0 && <li className="map-key-empty">Nothing big on this date.</li>}
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
