@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { Fragment, useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import {
@@ -41,7 +41,8 @@ import { datePath, mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
-import { CrowdMark } from '../components/EventTags';
+import { CrowdMark, FRICTION_LADDER, FrictionRing } from '../components/EventTags';
+import { frictionWord } from '../config/scoreLabels';
 import { DayRow, RowBody, sheetVenue } from '../components/DayRow';
 import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, sizeTier, splitByRange } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
@@ -389,8 +390,21 @@ export function MapScreen() {
                 <li className="map-key-note">The date's read, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
                 {/* How this city's fans get to events, in plain words (build 5, N1/B1; Kylie, Oct 14). */}
                 {cityTravelLine(metro.id) && <li className="map-key-note">{cityTravelLine(metro.id)}</li>}
-                <li className="map-key-note">
-                  Local competition: <span className="chip chip-f squeezed">Squeezed</span> <span className="chip chip-f swamped">Swamped</span> <span className="chip chip-f steamrolled">Steamrolled</span>
+                {/* No "~" on chips or rows (build 6, item 4): this one line says it for all of them. */}
+                <li className="map-key-note">Numbers on upcoming events may be estimates.</li>
+                {/* The friction ladder's one introduction (build 6, item 1; wording a default): each word reads "<word> by that
+                    day's lineup", with the ring each level wears on a row (Unopposed wears none). */}
+                <li className="map-key-note map-key-friction">
+                  {FRICTION_LADDER.map((level, i) => (
+                    <Fragment key={level}>
+                      {i > 0 && <span aria-hidden>&nbsp;· </span>}
+                      <span className="map-key-level">
+                        {level !== 'Low' && <FrictionRing level={level} size={12} />}
+                        {frictionWord(level)}
+                      </span>
+                    </Fragment>
+                  ))}{' '}
+                  by that day's lineup
                 </li>
                 <li className="map-key-note">
                   How big a deal: <span className="tag-occasion">Notable</span> <span className="tag-occasion">Major</span> <span className="tag-occasion">Marquee</span>
@@ -455,7 +469,7 @@ export function MapScreen() {
                   <li key={e.id}>
                     <EventRow
                       event={e}
-                      dateEvents={events}
+                      day={allDayEvents}
                       showDate={e.date !== date}
                       onPick={() => {
                         setFreezeCamera(false);
@@ -474,7 +488,7 @@ export function MapScreen() {
                 .sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'))
                 .map((e) => (
                   <li key={e.id}>
-                    <DayRow event={e} line={lineFor(e)} you={youFor(e)} />
+                    <DayRow event={e} day={allDayEvents} line={lineFor(e)} you={youFor(e)} />
                   </li>
                 ))}
             </ul>
@@ -540,14 +554,15 @@ function RememberMap({
 
 function EventRow({
   event: e,
+  day,
   selected,
   onPick,
   showDate,
   href,
 }: {
   event: CrowdEvent;
-  /** Kept for callers; the stakes line it fed is now the label (labels r3). */
-  dateEvents?: CrowdEvent[];
+  /** The city's whole day (every event at a known venue), for the occasion tag's day's-top rule (build 6, item 2). */
+  day: readonly CrowdEvent[];
   selected?: boolean;
   onPick?: () => void;
   showDate?: boolean;
@@ -559,6 +574,7 @@ function EventRow({
   const body = (
     <RowBody
       event={e}
+      day={day}
       time={time}
       venueText={showDate ? [shortLocalDate(e.date), venue].filter(Boolean).join(' · ') : venue}
     />

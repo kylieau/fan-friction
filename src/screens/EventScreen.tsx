@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
-import { CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
+import { CrowdMark, FrictionVerdict, OccasionTag, pageFriction } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
 import { TypeIcon } from '../components/TypeIcon';
 import { LevelPill } from '../components/LevelPill';
@@ -14,7 +14,6 @@ import {
   drawSize,
   atLeastMark,
   crowdFull,
-  estimateMark,
   eventType,
   popupExplainer,
   setStubVisibility,
@@ -225,6 +224,8 @@ export function EventScreen() {
 
   const e = me.event;
   const a = e.assessment;
+  // The friction verdict on this page (build 6, item 1): every level, Unopposed included, once the event feeds friction.
+  const verdict = pageFriction(e);
   // The three crowd figures and the one to highlight (D04). A seeded estimate is a figure, never a ceiling.
   const figures = crowdFigures(e);
   const shown = highlightedCrowd(e);
@@ -281,8 +282,9 @@ export function EventScreen() {
         )}
         {a && (
           <div className="chip-row">
-            {/* The two tags (build notes 2): the occasion outline tag, then the friction pill, Unopposed included here. */}
-            <EventTags event={e} withUnopposed />
+            {/* The occasion tag, always the event's own (build 6, item 2); the friction pill moved to the Crowd and
+                Up against cards (build 6, item 1, Kylie's Q2). */}
+            <OccasionTag occasion={a.occasion} />
             {/* The round already reads under the title (labels r3); a fact that repeats it is left out. */}
             {a.facts.filter((f) => !isLabelText(f)).map((f) => (
               <span key={f} className="chip chip-fact">
@@ -356,8 +358,9 @@ export function EventScreen() {
               each with its venue, start and distance; the whole day is one tap away. The old timeline is gone. */}
           <div className="up-against-label">Up against</div>
           <div className="up-against-line">
-            {/* A room under the floor gets no pill (build notes 2); Unopposed shows here, and only here. */}
-            {sizeTier(e) === 'feeds-friction' ? <FrictionPill level={a.friction} /> : null}
+            {/* A room under the floor gets no pill (build notes 2); Unopposed shows here and in the Crowd card, with the
+                ring beside the pill (build 6, item 1). */}
+            {verdict && <FrictionVerdict level={verdict} />}
             <span className="up-against-count">{rivals.length > 0 ? `${rivals.length} big ${rivals.length === 1 ? 'draw' : 'draws'} within an hour` : a.why}</span>
           </div>
           {rivals.length > 0 && (
@@ -380,7 +383,6 @@ export function EventScreen() {
                       {drawSize(r) ? (
                         <span className="rival-crowd">
                           <CrowdMark />
-                          {estimateMark(r)}
                           {crowdThousands(drawSize(r)!)}
                           {atLeastMark(r)}
                         </span>
@@ -408,6 +410,8 @@ export function EventScreen() {
         <div className="crowd-block-label">
           <span className="crowd-block-dot" aria-hidden />
           Crowd
+          {/* The verdict where the crowd is read (build 6, item 1, Kylie's Q2): the pill with a 16 px ring at its left. */}
+          {verdict && <FrictionVerdict level={verdict} />}
         </div>
         {shown ? (
           <>

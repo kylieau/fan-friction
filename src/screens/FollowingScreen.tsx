@@ -4,7 +4,6 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
 import { ActivityLines } from '../components/ActivityLines';
-import { FrictionPill } from '../components/EventTags';
 import { CardsIcon, ChevronDown, ListIcon, PeopleIcon, SearchIcon, StarIcon } from '../components/Icons';
 import {
   EXAMPLE_FEED,
@@ -220,17 +219,12 @@ function ByEvent({ items, example, ratings, log, onFeed }: { items: FeedItem[]; 
     const rating = group.entry && !group.example ? ratingForEntry(group.entry, ratings) : group.metroId ? (ratings.get(nightKey(group.metroId, group.date)) ?? null) : null;
     const activity = activityGroups(group.items, null);
     const expanded = open === group.key;
-    const friction = group.entry?.stamp?.friction;
     const head = (
       <>
         <span className="log-main">
           <span className="log-title"><TitleText text={group.title} /></span>
           <span className="log-facts">{[group.venue, shortLocalDate(group.date)].filter(Boolean).join(' · ')}</span>
-          {friction && friction !== 'Low' && (
-            <span className="stub-tags">
-              <FrictionPill level={friction} />
-            </span>
-          )}
+          {/* No friction mark on a Following card (build 6, item 1): information, not conclusions. */}
         </span>
         {group.example && <span className="example-chip">Example</span>}
         <ReadTile rating={rating} />

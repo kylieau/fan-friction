@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { CrowdFigure, EventFrictionPill } from '../components/EventTags';
+import { CrowdFigure, FrictionMark } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
@@ -264,8 +264,9 @@ export function FavoritePage() {
                       {nextHome.start ? ` · ${clockTime(nextHome.start)}` : ''}
                     </span>
                     <span className="fav-next-tags">
-                      <EventFrictionPill event={nextHomeEvent} />
+                      {/* The figure, then the ring after it, as on every list row (build 6, item 1, Q14 lean). */}
                       <CrowdFigure event={nextHomeEvent} />
+                      <FrictionMark event={nextHomeEvent} />
                     </span>
                   </span>
                 </Link>
@@ -344,8 +345,8 @@ export function FavoritePage() {
                           {event.start ? ` · ${clockTime(event.start)}` : ''}
                         </span>
                         <span className="fav-next-tags">
-                          <EventFrictionPill event={event} />
                           <CrowdFigure event={event} />
+                          <FrictionMark event={event} />
                         </span>
                       </span>
                     </Link>
@@ -407,7 +408,7 @@ export function FavoritePage() {
                         {event.metroId !== metro.id ? ` · ${METROS[event.metroId]?.name ?? ''}` : ''}
                       </span>
                       <span className="fav-next-tags">
-                        <EventFrictionPill event={event} />
+                        <FrictionMark event={event} />
                       </span>
                     </span>
                   </Link>

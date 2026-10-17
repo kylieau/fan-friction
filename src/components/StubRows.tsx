@@ -2,12 +2,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TypeIcon } from './TypeIcon';
 import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { entryAtLeastMark, entryCrowd, entryEstimateMark, isGameEventId, isOutsideGamePlan, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
+import { entryAtLeastMark, entryCrowd, isGameEventId, isOutsideGamePlan, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { crowdThousands } from '../map/crowdPoints';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
 import { StatusLine } from './ActivityLines';
-import { CrowdMark, FrictionPill } from './EventTags';
+import { CrowdMark } from './EventTags';
 import { ReadTile } from './ReadTile';
 import { TitleText } from './TitleText';
 
@@ -47,11 +47,8 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
           <TitleText text={entry.title} />
         </span>
         {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
-        {entry.stamp?.friction && entry.stamp.friction !== 'Low' && (
-          <span className="stub-tags">
-            <FrictionPill level={entry.stamp.friction} />
-          </span>
-        )}
+        {/* No friction mark on a stub (build 6, items 1 and 6): the diary shows information, not conclusions; the
+            stored stamp stays for the year stats. */}
         <StatusLine
           kind={entry.watched ? 'watched' : 'attended'}
           share={share}
@@ -62,7 +59,6 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
             crowd && !entry.watched ? (
               <>
                 <CrowdMark />
-                {entryEstimateMark(entry)}
                 {crowdThousands(crowd.count)}
                 {entryAtLeastMark(entry)}
               </>

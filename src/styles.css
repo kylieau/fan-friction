@@ -2320,15 +2320,18 @@ button {
   border-radius: 4px;
 }
 
+/* Every bar is the gold crowd color (build 6, item 3; Kylie, Oct 16): one identity color for all, no friction color,
+   outline or ring. Position and length are the start and the rough running time; gold does not encode size. */
 .bar {
   position: absolute;
   top: 0;
   bottom: 0;
   border-radius: 4px;
+  background: var(--crowdBar);
 }
 
-/* The "Time TBA" band under the timed bars: a rule, a small label, then rows whose bar runs the whole axis, hatched
-   so it reads "sometime that day", in the event's friction color. */
+/* The "Time TBA" band under the timed bars: a rule, a small label, then rows whose bar runs the whole axis, blank and
+   dashed so it reads "sometime that day" (not a read, whatever the event's friction; Kylie, Oct 16). */
 .bars-tba {
   display: flex;
   flex-direction: column;
@@ -4296,25 +4299,7 @@ button.back-link {
   color: var(--ink);
 }
 
-.chip-f {
-  background: var(--track);
-  color: var(--ink2);
-}
-
-.chip-f.moderate {
-  background: var(--paleBlue);
-  color: var(--ink);
-}
-
-.chip-f.heavy {
-  background: var(--dodger);
-  color: var(--card);
-}
-
-.chip-f.extreme {
-  background: var(--ink);
-  color: var(--card);
-}
+/* The friction pill's one tint is set with the ring rules further down (build 6, item 1). */
 
 .date-page .back-link {
   border: none;
@@ -5781,29 +5766,71 @@ button.back-link {
   flex-shrink: 0;
 }
 
+/* Friction, build 6, item 1 (Kylie, Oct 16): one violet. The word pill keeps one tint for every level, Unopposed
+   included (not pale grey: her correction); only the word and the ring change by level. */
 .chip-f {
-  background: var(--unopposed);
-  color: var(--tagInk);
-}
-
-.chip-f.unopposed {
-  background: var(--unopposed);
-  color: var(--tagInk);
-}
-
-.chip-f.squeezed {
   background: var(--fightContainer);
-  color: var(--ink);
+  color: var(--fightInk);
 }
 
-.chip-f.swamped {
-  background: var(--fight);
-  color: #fff;
+/* The ghost ring: a dot inside a thin ring, the dot shrinking as the level climbs. Decorative; the row's accessible
+   name or the pill beside it carries the words. */
+.friction-ring {
+  color: var(--fight);
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: -2px;
 }
 
-.chip-f.steamrolled {
-  background: var(--fightDeep);
-  color: #fff;
+/* The event page's mark: the 16 px ring at the left of the pill, no tap target of its own. */
+.friction-verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* The row's right slot on line 1: the crowd figure, then the ring after the number (M1-02). */
+.day-row-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex: 0 0 auto;
+  padding-top: 1px;
+}
+
+.day-row-right .crowd-figure {
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.day-row-right:empty {
+  display: none;
+}
+
+/* The Crowd card's label row: "Crowd" at the left, the verdict at the right, in the pill's own face. */
+.crowd-block-label .friction-verdict {
+  margin-left: auto;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Local Competition with fewer than two big events (Kylie, Oct 16, Q9): one quiet line, never an empty card. */
+.timeline-quiet {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+/* The map key's friction line: each level with the ring it wears on a row, then "by that day's lineup". */
+.map-key-level {
+  white-space: nowrap;
+}
+
+.map-key-level .friction-ring {
+  margin-right: 3px;
 }
 
 .event-tags {
@@ -6573,22 +6600,6 @@ button.back-link {
 .bar-crowd .crowd-mark {
   width: 12px;
   height: 12px;
-}
-
-.bar-squeezed {
-  background: var(--fightBar);
-}
-
-.bar-swamped {
-  background: var(--fight);
-}
-
-.bar-steamrolled {
-  background: var(--fightDeep);
-}
-
-.bar-none {
-  background: var(--noFightBar);
 }
 
 .crowd-number .crowd-mark {
@@ -8018,15 +8029,6 @@ button.back-link {
   min-width: 0;
 }
 
-.day-row-line1 .crowd-figure {
-  flex: 0 0 auto;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
-  font-size: 13px;
-  font-weight: 800;
-  padding-top: 1px;
-}
 
 .day-row-line2 {
   display: flex;

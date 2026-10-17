@@ -6,21 +6,22 @@ import { clockTime } from '../lib/dates';
 import { listTitle, spokenTitle, splitTitleLabel } from '../lib/eventTitle';
 import { markOpenedFromMap } from '../lib/mapReturn';
 import { eventPath } from '../lib/view';
-import { CrowdFigure, EventTags } from './EventTags';
+import { CrowdFigure, DayOccasionTag, FrictionMark, frictionSentence } from './EventTags';
 import { ActivityIcon } from './ActivityLines';
 import { ACTIVITY_WORDS, type ActivityKind } from '../lib/activity';
 import { LabelLine } from './TitleText';
 
 /**
  * The one row body every event list shares (Kylie, Oct 14: badges right-justified, "across the board").
- * The time at the left; line 1 the title and, at the right edge, the crowd; line 2 the venue and, at the
- * same right edge, the badges, so the badges line up with the crowd figure; then anything extra and the
- * activity line. A long title never meets the badges, and a long venue gives way to them.
- * Your own answer is its own right-aligned line under the badges: its icon and word in link blue, no fill
- * (build 5, item 4; board datepage-r3-lean). Friends stay in the activity line.
+ * The time at the left; line 1 the title and, at the right edge, the crowd figure with the friction ring
+ * after it (build 6, item 1); line 2 the venue and, at the same right edge, the occasion tag, shown only on
+ * the day's top event(s) (build 6, item 2). A long title never meets the figure, and a long venue gives way
+ * to the tag. Your own answer is its own right-aligned line under the tag: its icon and word in link blue,
+ * no fill (build 5, item 4; board datepage-r3-lean). Friends stay in the activity line.
  */
 export function RowBody({
   event: e,
+  day,
   title,
   time,
   venueText,
@@ -29,6 +30,8 @@ export function RowBody({
   extra,
 }: {
   event: CrowdEvent;
+  /** Every event in this city on this date (not the visible slice): the occasion tag shows only on the day's top level. */
+  day: readonly CrowdEvent[];
   title?: string;
   time: string;
   venueText?: string | null;
@@ -49,12 +52,15 @@ export function RowBody({
             <TypeIcon typeKey={eventType(e).key} size={18} />
             {name}
           </span>
-          <CrowdFigure event={e} />
+          <span className="day-row-right">
+            <CrowdFigure event={e} />
+            <FrictionMark event={e} />
+          </span>
         </span>
         {label && <LabelLine label={label} className="day-row-label" />}
         <span className="day-row-line2">
           {venueText && <span className="day-row-venue">{venueText}</span>}
-          <EventTags event={e} />
+          <DayOccasionTag event={e} day={day} />
         </span>
         {you && (
           <span className="day-row-you">
@@ -72,18 +78,21 @@ export function RowBody({
 /**
  * One of the day's rows (build notes 3, 4.2; mock 2b). Opens the event page.
  */
-export function DayRow({ event: e, line, you }: { event: CrowdEvent; line: string | null; you?: ActivityKind | null }) {
+export function DayRow({ event: e, day, line, you }: { event: CrowdEvent; day: readonly CrowdEvent[]; line: string | null; you?: ActivityKind | null }) {
   return (
     <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" aria-label={spokenRow(e, sheetVenue(e))} onClick={() => markOpenedFromMap()}>
-      <RowBody event={e} time={e.start ? clockTime(e.start) : 'TBA'} venueText={sheetVenue(e)} line={line} you={you} />
+      <RowBody event={e} day={day} time={e.start ? clockTime(e.start) : 'TBA'} venueText={sheetVenue(e)} line={line} you={you} />
     </Link>
   );
 }
 
-/** The row read as one sentence (labels r3): "Brewers at Dodgers, NLCS Game 3, 7:00 pm, Dodger Stadium, about 55,000". */
+/**
+ * The row read as one sentence (labels r3): "Brewers at Dodgers, NLCS Game 3, 7:00 pm, Dodger Stadium, about 55,000,
+ * Swamped: other events split this crowd". The friction ring has no tap target, so its words ride here (build 6, item 1).
+ */
 export function spokenRow(e: CrowdEvent, venue: string | null): string {
   const size = drawSize(e);
-  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size ? `about ${size.toLocaleString('en-US')}` : null].filter(Boolean).join(', ');
+  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size ? `about ${size.toLocaleString('en-US')}` : null, frictionSentence(e)].filter(Boolean).join(', ');
 }
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */
@@ -94,4 +103,3 @@ export function sheetVenue(event: CrowdEvent): string | null {
   }
   return event.place.name;
 }
-

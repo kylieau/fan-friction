@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { EventFrictionPill, CrowdMark, OccasionTag } from './EventTags';
+import { CrowdMark, DayOccasionTag, FrictionVerdict, listedFriction } from './EventTags';
 import { ReadTile, type EmptyKind } from './ReadTile';
 import { formatScore, FRICTION_LEVELS } from '../config/scoreLabels';
 import { atLeastMark, drawSize, sizeTier, type CrowdEvent } from '../data';
@@ -13,6 +13,7 @@ import { crowdThousands } from '../map/crowdPoints';
  * then every event in order of crowd (ties: more friction, then the earlier start), each
  * with a gold crowd bar, its figure, the occasion tag and the friction pill. The whole row
  * opens the event. No "by" line here; no highlighted row.
+ * Not rendered anywhere on main as of build 6 (Oct 17, 2026): kept current with items 1 and 2 so it is ready.
  */
 export function WhyCard({
   events,
@@ -70,6 +71,7 @@ export function WhyCard({
           {rows.map((e) => {
             const size = drawSize(e) ?? 0;
             const feeds = sizeTier(e) === 'feeds-friction';
+            const level = listedFriction(e);
             return (
               <li key={e.id}>
                 <Link to={eventPath(e.id, e.metroId)} className="why-row" onClick={onClose}>
@@ -89,8 +91,10 @@ export function WhyCard({
                         {atLeastMark(e)}
                       </span>
                     )}
-                    {e.assessment && <OccasionTag occasion={e.assessment.occasion} />}
-                    <EventFrictionPill event={e} />
+                    {/* Build 6: the tag only on the day's top event(s) (item 2); the pill with its ring, as on the event page
+                        (item 1, Q14 lean), from Squeezed up as before. */}
+                    <DayOccasionTag event={e} day={events} />
+                    {level && <FrictionVerdict level={level} />}
                   </span>
                   <span className="why-row-chevron" aria-hidden>
                     ›

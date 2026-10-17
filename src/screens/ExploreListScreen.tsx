@@ -511,7 +511,7 @@ export function ExploreListScreen() {
                   .sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'))
                   .map((e) => (
                     <li key={e.id}>
-                      <DayRow event={e} line={lineFor(e)} you={youFor(e)} />
+                      <DayRow event={e} day={day.events} line={lineFor(e)} you={youFor(e)} />
                     </li>
                   ))}
               </ul>

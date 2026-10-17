@@ -332,6 +332,7 @@ export function DateScreen() {
                 <Link to={eventPath(e.id, e.metroId)} className="date-row-main" aria-label={spokenRow(e, venueOf(e) ?? null)}>
                   <RowBody
                     event={e}
+                    day={events}
                     time={e.start ? clockTime(e.start) : 'TBA'}
                     venueText={venueOf(e) ?? null}
                     line={lineFor(e)}

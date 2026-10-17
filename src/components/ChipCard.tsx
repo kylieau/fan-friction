@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ByLine, CrowdMark, EventFrictionPill, OccasionTag } from './EventTags';
-import { atLeastMark, displayedCrowdCount, estimateMark, feelsLikeLabel, isOpenAir, VENUES, venueNameOn, weatherForEvent, type CrowdEvent } from '../data';
+import { ByLine, CrowdMark, FrictionPill, OccasionTag, listedFriction } from './EventTags';
+import { atLeastMark, displayedCrowdCount, feelsLikeLabel, isOpenAir, VENUES, venueNameOn, weatherForEvent, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
@@ -14,7 +14,9 @@ import { TitleText } from './TitleText';
  * The compact card that rises when a chip is tapped (build notes 2, T1): occasion tag
  * and title, "Venue · time", the friction pill with its "by" line, the crowd figure and
  * a chevron. The whole card opens the event page. No read box: the read belongs to the
- * whole night, and the card is about this event.
+ * whole night, and the card is about this event. The card keeps its tag, pill and by-line
+ * (Kylie, Oct 16, Q1); the map dot itself carries none of them. The by-line shows only
+ * beside the pill (build 6, item 5): a "by" with no verdict has nothing to explain.
  */
 export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Friends with a status here, when Activity is on; never you. */ friends?: FeedItem[]; onOpen?: () => void }) {
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
@@ -23,6 +25,7 @@ export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Fr
   const row = isOpenAir(event) ? weatherForEvent(event) : undefined;
   const degrees = row ? feelsLikeLabel(row, event.metroId) : null;
   const segments = friends ? cardSegments(friends) : [];
+  const level = listedFriction(event);
   return (
     <Link to={eventPath(event.id, event.metroId)} state={{ fromMap: true }} className="chip-card" onClick={onOpen}>
       <span className="chip-card-main">
@@ -31,10 +34,12 @@ export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Fr
           <span className="log-title"><TitleText text={listTitle(event)} /></span>
         </span>
         <span className="log-facts">{[venue, event.start ? clockTime(event.start) : 'Time TBA', degrees].filter(Boolean).join(' · ')}</span>
-        <span className="chip-card-tags">
-          <EventFrictionPill event={event} />
-          <ByLine event={event} />
-        </span>
+        {level && (
+          <span className="chip-card-tags">
+            <FrictionPill level={level} />
+            <ByLine event={event} />
+          </span>
+        )}
         {segments.length > 0 && (
           <span className="chip-card-activity">
             {segments.map((seg, i) => (
@@ -51,7 +56,6 @@ export function ChipCard({ event, friends, onOpen }: { event: CrowdEvent; /** Fr
         {size ? (
           <span className="chip-card-crowd">
             <CrowdMark />
-            {estimateMark(event)}
             {crowdThousands(size)}
             {atLeastMark(event)}
           </span>

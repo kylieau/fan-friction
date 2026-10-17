@@ -193,7 +193,7 @@ export function HomeScreen() {
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
                 <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link" aria-label={spokenRow(e, venueOf(e) ?? null)}>
-                  <RowBody event={e} title={listTitle(e)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
+                  <RowBody event={e} day={day.events} title={listTitle(e)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
                 </Link>
               </li>
             ))}
