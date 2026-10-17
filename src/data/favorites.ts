@@ -152,11 +152,15 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
   }
 }
 
-/** A two-letter mark for a favorite without a logo: "LAD", "UCLA", "W". */
-export function favoriteMark(fav: Favorite): string {
+/**
+ * The mark for a favorite without a logo: a team's badge code, given the other favorites shown beside it (build 6,
+ * item 9a: "UCLA MBB" only when another program of the same code and sport is in the set); two letters for an
+ * artist, venue or festival.
+ */
+export function favoriteMark(fav: Favorite, shown: readonly Favorite[] = []): string {
   if (fav.teamId) {
     const team = TEAMS[fav.teamId];
-    if (team) return teamBadge(team);
+    if (team) return teamBadge(team, shown.flatMap((f) => (f.teamId && TEAMS[f.teamId] ? [TEAMS[f.teamId]] : [])));
   }
   const words = fav.label.split(/\s+/).filter(Boolean);
   if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();

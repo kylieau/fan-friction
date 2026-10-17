@@ -17,22 +17,38 @@ const AGGREGATOR = 3;
 
 const norm = (s: string | undefined) => (s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
-/** Every way a team is written (full name, short name, aliases) → its short name, so "Chicago Cubs" meets "Cubs". */
-let byName: Map<string, string> | null = null;
-function teamName(raw: string): string {
+/**
+ * Every way a team is written (full name, short name, aliases) → its id, so "Chicago Cubs" meets "Cubs". Keyed by
+ * id, not short name (B5-04, build 6, item 9d): two clubs can share a nickname (Utah's and Colorado's Mammoth). A
+ * name that two teams write the same way maps to nothing, so a bare "Mammoth" stays unmatched rather than guessed.
+ */
+let byName: Map<string, string | null> | null = null;
+function teamIdFor(raw: string): string | null {
   if (!byName) {
     byName = new Map();
-    for (const team of Object.values(TEAMS)) for (const n of [team.name, team.shortName, ...(team.aliases ?? [])]) byName.set(norm(n), norm(team.shortName));
+    for (const team of Object.values(TEAMS)) {
+      for (const n of [team.name, team.shortName, ...(team.aliases ?? [])]) {
+        const key = norm(n);
+        const seen = byName.get(key);
+        if (seen === undefined) byName.set(key, team.id);
+        else if (seen !== team.id) byName.set(key, null);
+      }
+    }
   }
-  const key = norm(raw);
-  return byName.get(key) ?? key;
+  return byName.get(norm(raw)) ?? null;
 }
 
-/** The two sides of a game as a sorted key: team short names when the feed gave ids, else the title's sides. */
+/** One side of a game as a key: the team's id when a feed gave one or a name resolves to one, else the written name. */
+function sideKey(raw: string): string {
+  if (TEAMS[raw]) return raw;
+  return teamIdFor(raw) ?? norm(raw);
+}
+
+/** The two sides of a game as a sorted key: team ids when the feed gave them, else the title's sides. */
 function sidesKey(event: CrowdEvent): string | null {
-  if (event.teams) return [event.teams.home, event.teams.away].map((id) => (TEAMS[id] ? norm(TEAMS[id].shortName) : teamName(id))).sort().join('|');
+  if (event.teams) return [event.teams.home, event.teams.away].map(sideKey).sort().join('|');
   const parts = event.title.replace(/\([^)]*\)/g, '').replace(/\s+[—–-]\s+.*$/, '').split(/\s+(?:vs\.?|@|at|v\.)\s+/i);
-  return parts.length === 2 ? parts.map(teamName).sort().join('|') : null;
+  return parts.length === 2 ? parts.map(sideKey).sort().join('|') : null;
 }
 
 function minutes(t: string | null): number | null {

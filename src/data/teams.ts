@@ -28,15 +28,66 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
   team(`${school}-${code}`, `${schoolName} ${label}`, `${school.toUpperCase()} ${code.toUpperCase()}`, league, sport, 'la', school.toUpperCase(), aliases);
 
 /**
- * The mark on a favorite with no logo: the team's own abbreviation, even when another team
- * in its city shares it (Kylie, Oct 15: the Clippers and Chargers are both LAC; the sport icon
- * and colors tell them apart). Replaces C013's nickname letters ("CLI"). With no abbreviation,
- * the first three letters of the nickname.
+ * A team's plain code: its own abbreviation, even when another team in its city shares it (Kylie, Oct 15: the
+ * Clippers and Chargers are both LAC; the sport icon tells them apart). Replaces C013's nickname letters ("CLI").
+ * With no abbreviation, the first three letters of the nickname.
  */
-export function teamBadge(team: Team): string {
+export function teamCode(team: Team): string {
   if (team.abbr) return team.abbr;
   const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|san antonio|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|miami|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|cleveland|lake county|lake erie|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|salt lake city|salt lake|utah|real salt lake|ottawa|gatineau|edmonton|portland|psu|detroit|michigan|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
+}
+
+/** A school's program, not a club: college and university leagues. */
+export function isCollegeTeam(team: Team): boolean {
+  return /^(college|u sports|ncaa)/i.test(team.league);
+}
+
+/** The sport letters a college program carries in its badge code on a clash (Kylie, Oct 16): "UCLA MBB", "UCLA WBB", "UCLA FB". */
+export function sportLetters(team: Team): string | null {
+  const women = /women/i.test(team.league);
+  switch (team.sport) {
+    case 'football':
+      return 'FB';
+    case 'basketball':
+      return women ? 'WBB' : 'MBB';
+    case 'baseball':
+      return 'BSB';
+    case 'softball':
+      return 'SB';
+    case 'volleyball':
+      return 'VB';
+    case 'hockey':
+      return women ? 'WH' : 'MH';
+    case 'soccer':
+      return 'SOC';
+    default:
+      return null;
+  }
+}
+
+/**
+ * The one predicate behind the badge (build 6, item 9a; Kylie, Oct 16, 7:42 PM PT): two badges clash when they
+ * carry the same code AND the same sport (the sport icon already separates different sports). The other reading,
+ * any same code, is a one-line change here. To confirm with Kylie: letters only on a clash (built) vs always.
+ */
+export function badgesCollide(a: Team, b: Team): boolean {
+  return a.id !== b.id && a.sport === b.sport && teamCode(a) === teamCode(b);
+}
+
+/**
+ * The code on a team's badge, given the other badges shown beside it (build 6, item 9a; Kylie, Oct 16): the plain
+ * code ("UCLA", "IND"), or, for a college program whose code and sport another badge in the set shares, the code
+ * with its sport letters ("UCLA MBB"). A badge is a property of the set, so the same team can read differently in
+ * two people's strips (a trade-off Kylie accepted). Pro teams always read their plain code: how clashing same-sport
+ * pro pairs (Pacers/Fever) are told apart is an open question (notes 9a, options A to D), nothing built.
+ */
+export function teamBadge(team: Team, shown: readonly Team[] = []): string {
+  const code = teamCode(team);
+  if (!isCollegeTeam(team)) return code;
+  const letters = sportLetters(team);
+  if (!letters || !shown.some((other) => badgesCollide(team, other))) return code;
+  return `${code} ${letters}`;
 }
 
 const LIST: Team[] = [
@@ -69,7 +120,7 @@ const LIST: Team[] = [
   team("bc-wbb", "Boston College Eagles Women's Basketball", "BC WBB", "College women's basketball", "basketball", "boston", "BC"),
   team("bu-mbb", "Boston University Terriers Men's Basketball", "BU MBB", "College men's basketball", "basketball", "boston", "BU"),
   team("bu-wbb", "Boston University Terriers Women's Basketball", "BU WBB", "College women's basketball", "basketball", "boston", "BU"),
-  team("harvard-football", "Harvard Crimson Football", "Harvard Football", "College football", "football", "boston", "HAR"),
+  team("harvard-football", "Harvard Crimson Football", "Harvard Football", "College football", "football", "boston", "HARV"),
   team("uml-mbb", "UMass Lowell River Hawks Men's Basketball", "UML MBB", "College men's basketball", "basketball", "boston", "UML"),
   team("uml-wbb", "UMass Lowell River Hawks Women's Basketball", "UML WBB", "College women's basketball", "basketball", "boston", "UML"),
   team("boston-cannons", "Boston Cannons", "Cannons", "PLL", "lacrosse", "boston", "CAN"),
@@ -90,14 +141,14 @@ const LIST: Team[] = [
   team("penn-football", "Pennsylvania Quakers Football", "Penn FB", "College football", "football", "philadelphia", "PENN", ["Penn", "Pennsylvania"]),
   team("penn-mbb", "Pennsylvania Quakers Men's Basketball", "Penn MBB", "College men's basketball", "basketball", "philadelphia", "PENN", ["Penn", "Pennsylvania"]),
   team("penn-wbb", "Pennsylvania Quakers Women's Basketball", "Penn WBB", "College women's basketball", "basketball", "philadelphia", "PENN", ["Penn", "Pennsylvania"]),
-  team("delaware-football", "Delaware Fightin' Blue Hens Football", "Delaware FB", "College football", "football", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
-  team("delaware-mbb", "Delaware Fightin' Blue Hens Men's Basketball", "Delaware MBB", "College men's basketball", "basketball", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
-  team("delaware-wbb", "Delaware Fightin' Blue Hens Women's Basketball", "Delaware WBB", "College women's basketball", "basketball", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
+  team("delaware-football", "Delaware Fightin' Blue Hens Football", "Delaware FB", "College football", "football", "philadelphia", "DEL", ["Blue Hens", "Delaware"]),
+  team("delaware-mbb", "Delaware Fightin' Blue Hens Men's Basketball", "Delaware MBB", "College men's basketball", "basketball", "philadelphia", "DEL", ["Blue Hens", "Delaware"]),
+  team("delaware-wbb", "Delaware Fightin' Blue Hens Women's Basketball", "Delaware WBB", "College women's basketball", "basketball", "philadelphia", "DEL", ["Blue Hens", "Delaware"]),
   team("wilmington-blue-rocks", "Wilmington Blue Rocks", "Blue Rocks", "MiLB", "baseball", "philadelphia", "WIL"),
   // Tampa Bay (Oct 12, 2026; docs/research/city-builds/tampa/). Feed ids checked against live schedules.
   team("rays", "Tampa Bay Rays", "Rays", "MLB", "baseball", "tampa", "TB"),
   team("buccaneers", "Tampa Bay Buccaneers", "Buccaneers", "NFL", "football", "tampa", "TB"),
-  team("lightning", "Tampa Bay Lightning", "Lightning", "NHL", "hockey", "tampa", "TB"),
+  team("lightning", "Tampa Bay Lightning", "Lightning", "NHL", "hockey", "tampa", "TBL"),
   team("usf-football", "South Florida Bulls Football", "USF", "College football", "football", "tampa", "USF", ["Bulls"]),
   team("usf-mbb", "South Florida Bulls Men's Basketball", "USF MBB", "College men's basketball", "basketball", "tampa", "USF", ["Bulls"]),
   team("usf-wbb", "South Florida Bulls Women's Basketball", "USF WBB", "College women's basketball", "basketball", "tampa", "USF", ["Bulls"]),
@@ -110,7 +161,7 @@ const LIST: Team[] = [
   // Crew 2, Aviators, Fury and Ohio Wesleyan have records only; no verified schedule adapter.
   team("blue-jackets", "Columbus Blue Jackets", "Blue Jackets", "NHL", "hockey", "columbus", "CBJ"),
   team("columbus-crew", "Columbus Crew", "Crew", "MLS", "soccer", "columbus", "CLB"),
-  team("columbus-clippers", "Columbus Clippers", "Clippers", "Triple-A baseball", "baseball", "columbus", "CLP"),
+  team("columbus-clippers", "Columbus Clippers", "Clippers", "Triple-A baseball", "baseball", "columbus", "COL"),
   team("osu-football", "Ohio State Buckeyes Football", "Ohio State", "College football", "football", "columbus", "OSU", ["Buckeyes"]),
   team("osu-mbb", "Ohio State Buckeyes Men's Basketball", "Ohio State MBB", "College men's basketball", "basketball", "columbus", "OSU", ["Buckeyes"]),
   team("osu-wbb", "Ohio State Buckeyes Women's Basketball", "Ohio State WBB", "College women's basketball", "basketball", "columbus", "OSU", ["Buckeyes"]),
@@ -124,10 +175,10 @@ const LIST: Team[] = [
   team("browns", "Cleveland Browns", "Browns", "NFL", "football", "cleveland", "CLE"),
   team("guardians", "Cleveland Guardians", "Guardians", "MLB", "baseball", "cleveland", "CLE"),
   team("cavaliers", "Cleveland Cavaliers", "Cavaliers", "NBA", "basketball", "cleveland", "CLE"),
-  team("cleveland-monsters", "Cleveland Monsters", "Monsters", "AHL", "hockey", "cleveland", "MON"),
+  team("cleveland-monsters", "Cleveland Monsters", "Monsters", "AHL", "hockey", "cleveland", "CLE"),
   team("lake-county-captains", "Lake County Captains", "Captains", "High-A baseball", "baseball", "cleveland", "CAP"),
-  team("cleveland-state-mbb", "Cleveland State Vikings Men's Basketball", "CSU MBB", "College men's basketball", "basketball", "cleveland", "CSU", ["Vikings"]),
-  team("cleveland-state-wbb", "Cleveland State Vikings Women's Basketball", "CSU WBB", "College women's basketball", "basketball", "cleveland", "CSU", ["Vikings"]),
+  team("cleveland-state-mbb", "Cleveland State Vikings Men's Basketball", "CSU MBB", "College men's basketball", "basketball", "cleveland", "CLE", ["Vikings"]),
+  team("cleveland-state-wbb", "Cleveland State Vikings Women's Basketball", "CSU WBB", "College women's basketball", "basketball", "cleveland", "CLE", ["Vikings"]),
   team("cleveland-charge", "Cleveland Charge", "Charge", "NBA G League", "basketball", "cleveland", "CHG"),
   team("lake-erie-crushers", "Lake Erie Crushers", "Crushers", "Frontier League", "baseball", "cleveland", "LEC"),
   team("cleveland-crunch", "Cleveland Crunch", "Crunch", "MLIS", "soccer", "cleveland", "CRN"),
@@ -152,9 +203,9 @@ const LIST: Team[] = [
   team("predators", "Nashville Predators", "Predators", "NHL", "hockey", "nashville", "NSH"),
   team("nashville-sc", "Nashville SC", "Nashville SC", "MLS", "soccer", "nashville", "NSH"),
   team("sounds", "Nashville Sounds", "Sounds", "Triple-A baseball", "baseball", "nashville", "NAS"),
-  team("tsu-football", "Tennessee State Tigers Football", "TSU Football", "College football", "football", "nashville", "TSU", ["Tennessee State", "TSU"]),
-  team("tsu-mbb", "Tennessee State Tigers Men's Basketball", "TSU MBB", "College men's basketball", "basketball", "nashville", "TSU", ["Tennessee State", "TSU"]),
-  team("tsu-wbb", "Tennessee State Lady Tigers Women's Basketball", "TSU WBB", "College women's basketball", "basketball", "nashville", "TSU", ["Tennessee State", "TSU"]),
+  team("tsu-football", "Tennessee State Tigers Football", "TSU Football", "College football", "football", "nashville", "TNST", ["Tennessee State", "TSU"]),
+  team("tsu-mbb", "Tennessee State Tigers Men's Basketball", "TSU MBB", "College men's basketball", "basketball", "nashville", "TNST", ["Tennessee State", "TSU"]),
+  team("tsu-wbb", "Tennessee State Lady Tigers Women's Basketball", "TSU WBB", "College women's basketball", "basketball", "nashville", "TNST", ["Tennessee State", "TSU"]),
   team("vanderbilt-football", "Vanderbilt Commodores Football", "Vanderbilt Football", "College football", "football", "nashville", "VAN", ["Vandy", "Commodores"]),
   team("vanderbilt-mbb", "Vanderbilt Commodores Men's Basketball", "Vanderbilt MBB", "College men's basketball", "basketball", "nashville", "VAN", ["Vandy", "Commodores"]),
   team("vanderbilt-wbb", "Vanderbilt Commodores Women's Basketball", "Vanderbilt WBB", "College women's basketball", "basketball", "nashville", "VAN", ["Vandy", "Commodores"]),
@@ -169,7 +220,7 @@ const LIST: Team[] = [
   // Austin (Oct 12, 2026; docs/research/city-builds/austin/). Feed ids checked against live schedules. No-feed clubs stay loggable.
   team("austin-fc", "Austin FC", "Austin FC", "MLS", "soccer", "austin", "ATX"),
   team("round-rock-express", "Round Rock Express", "Express", "Triple-A baseball", "baseball", "austin", "RR"),
-  team("texas-stars", "Texas Stars", "Stars", "AHL", "hockey", "austin", "STA"),
+  team("texas-stars", "Texas Stars", "Stars", "AHL", "hockey", "austin", "TEX"),
   team("texas-football", "Texas Longhorns Football", "Texas", "College football", "football", "austin", "TEX", ["Longhorns", "Texas FB"]),
   team("texas-mbb", "Texas Longhorns Men's Basketball", "Texas MBB", "College men's basketball", "basketball", "austin", "TEX", ["Longhorns"]),
   team("texas-wbb", "Texas Longhorns Women's Basketball", "Texas WBB", "College women's basketball", "basketball", "austin", "TEX", ["Longhorns"]),
@@ -192,7 +243,7 @@ const LIST: Team[] = [
   team("diamondbacks", "Arizona Diamondbacks", "Diamondbacks", "MLB", "baseball", "phoenix", "AZ"),
   team("arizona-cardinals", "Arizona Cardinals", "Cardinals", "NFL", "football", "phoenix", "ARI"),
   team("suns", "Phoenix Suns", "Suns", "NBA", "basketball", "phoenix", "PHX"),
-  team("mercury", "Phoenix Mercury", "Mercury", "WNBA", "basketball", "phoenix", "MER"),
+  team("mercury", "Phoenix Mercury", "Mercury", "WNBA", "basketball", "phoenix", "PHO"),
   team("valley-suns", "Valley Suns", "Valley Suns", "NBA G League", "basketball", "phoenix", "VAL"),
   team("phoenix-rising", "Phoenix Rising FC", "Rising", "USL Championship", "soccer", "phoenix", "RIS"),
   team("asu-football", "Arizona State Sun Devils Football", "ASU", "College football", "football", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
@@ -208,15 +259,15 @@ const LIST: Team[] = [
   // "Sac Kings" so titles do not collide with the Los Angeles Kings.
   team("sacramento-kings", "Sacramento Kings", "Sac Kings", "NBA", "basketball", "sacramento", "SAC"),
   team("athletics", "Athletics", "Athletics", "MLB", "baseball", "sacramento", "ATH", ["A's", "Oakland Athletics"]),
-  team("river-cats", "Sacramento River Cats", "River Cats", "Triple-A baseball", "baseball", "sacramento", "RC"),
+  team("river-cats", "Sacramento River Cats", "River Cats", "Triple-A baseball", "baseball", "sacramento", "SAC"),
   team("sacramento-republic", "Sacramento Republic FC", "Republic FC", "USL Championship", "soccer", "sacramento", "REP"),
-  team("sac-state-football", "Sacramento State Hornets Football", "Sac State FB", "College football", "football", "sacramento", "SSFB", ["Hornets", "Sacramento State"]),
-  team("sac-state-mbb", "Sacramento State Hornets Men's Basketball", "Sac State MBB", "College men's basketball", "basketball", "sacramento", "SSMB", ["Hornets"]),
-  team("sac-state-wbb", "Sacramento State Hornets Women's Basketball", "Sac State WBB", "College women's basketball", "basketball", "sacramento", "SSWB", ["Hornets"]),
-  team("sac-state-volleyball", "Sacramento State Hornets Women's Volleyball", "Sac State VB", "College volleyball", "volleyball", "sacramento", "SSVB", ["Hornets"]),
-  team("uc-davis-football", "UC Davis Aggies Football", "UC Davis FB", "College football", "football", "sacramento", "UCFB", ["Aggies", "UC Davis"]),
-  team("uc-davis-mbb", "UC Davis Aggies Men's Basketball", "UC Davis MBB", "College men's basketball", "basketball", "sacramento", "UCMB", ["Aggies"]),
-  team("uc-davis-wbb", "UC Davis Aggies Women's Basketball", "UC Davis WBB", "College women's basketball", "basketball", "sacramento", "UCWB", ["Aggies"]),
+  team("sac-state-football", "Sacramento State Hornets Football", "Sac State FB", "College football", "football", "sacramento", "SAC", ["Hornets", "Sacramento State"]),
+  team("sac-state-mbb", "Sacramento State Hornets Men's Basketball", "Sac State MBB", "College men's basketball", "basketball", "sacramento", "SAC", ["Hornets"]),
+  team("sac-state-wbb", "Sacramento State Hornets Women's Basketball", "Sac State WBB", "College women's basketball", "basketball", "sacramento", "SAC", ["Hornets"]),
+  team("sac-state-volleyball", "Sacramento State Hornets Women's Volleyball", "Sac State VB", "College volleyball", "volleyball", "sacramento", "SAC", ["Hornets"]),
+  team("uc-davis-football", "UC Davis Aggies Football", "UC Davis FB", "College football", "football", "sacramento", "UCD", ["Aggies", "UC Davis"]),
+  team("uc-davis-mbb", "UC Davis Aggies Men's Basketball", "UC Davis MBB", "College men's basketball", "basketball", "sacramento", "UCD", ["Aggies"]),
+  team("uc-davis-wbb", "UC Davis Aggies Women's Basketball", "UC Davis WBB", "College women's basketball", "basketball", "sacramento", "UCD", ["Aggies"]),
   team("sac-city-football", "Sacramento City College Panthers Football", "Sac City FB", "Community college football", "football", "sacramento", "SCC"),
   // Las Vegas (Oct 12, 2026; docs/research/city-builds/las-vegas/). Feed ids checked against live schedules the same day.
   team("raiders", "Las Vegas Raiders", "Raiders", "NFL", "football", "las-vegas", "LV"),
@@ -224,7 +275,7 @@ const LIST: Team[] = [
   team("aces", "Las Vegas Aces", "Aces", "WNBA", "basketball", "las-vegas", "LVA"),
   team("pwhl-las-vegas", "PWHL Las Vegas", "PWHL Vegas", "PWHL", "hockey", "las-vegas", "PWHL"),
   team("henderson-silver-knights", "Henderson Silver Knights", "Silver Knights", "AHL", "hockey", "las-vegas", "HSK"),
-  team("las-vegas-aviators", "Las Vegas Aviators", "Aviators", "Triple-A baseball", "baseball", "las-vegas", "AVI"),
+  team("las-vegas-aviators", "Las Vegas Aviators", "Aviators", "Triple-A baseball", "baseball", "las-vegas", "LV"),
   team("las-vegas-lights", "Las Vegas Lights FC", "Lights", "USL Championship", "soccer", "las-vegas", "LVL"),
   team("unlv-football", "UNLV Rebels", "UNLV", "College football", "football", "las-vegas", "UNLV", ["Rebels"]),
   team("unlv-mbb", "UNLV Rebels", "UNLV MBB", "College men's basketball", "basketball", "las-vegas", "UNLV", ["Rebels"]),
@@ -236,7 +287,7 @@ const LIST: Team[] = [
   team("chiefs", "Kansas City Chiefs", "Chiefs", "NFL", "football", "kansas-city", "KC", ["KC Chiefs"]),
   team("royals", "Kansas City Royals", "Royals", "MLB", "baseball", "kansas-city", "KC", ["KC Royals"]),
   team("sporting-kc", "Sporting Kansas City", "Sporting KC", "MLS", "soccer", "kansas-city", "SKC", ["Sporting Kansas City"]),
-  team("kc-current", "Kansas City Current", "Current", "NWSL", "soccer", "kansas-city", "KCC", ["KC Current"]),
+  team("kc-current", "Kansas City Current", "Current", "NWSL", "soccer", "kansas-city", "KC", ["KC Current"]),
   team("sporting-kc-ii", "Sporting KC II", "Sporting II", "MLS Next Pro", "soccer", "kansas-city", "SK2"),
   team("kc-monarchs", "Kansas City Monarchs", "Monarchs", "American Association", "baseball", "kansas-city", "KCM"),
   team("kc-mavericks", "Kansas City Mavericks", "KC Mavericks", "ECHL", "hockey", "kansas-city", "MVS"),
@@ -252,17 +303,17 @@ const LIST: Team[] = [
   team("dynamo", "Houston Dynamo FC", "Dynamo", "MLS", "soccer", "houston", "HOU"),
   team("dash", "Houston Dash", "Dash", "NWSL", "soccer", "houston", "HOU"),
   team("space-cowboys", "Sugar Land Space Cowboys", "Space Cowboys", "Triple-A baseball", "baseball", "houston", "SUG"),
-  team("uh-football", "Houston Cougars Football", "UH", "College football", "football", "houston", "UH", ["Cougars"]),
-  team("uh-mbb", "Houston Cougars Men's Basketball", "UH MBB", "College men's basketball", "basketball", "houston", "UH", ["Cougars"]),
-  team("uh-wbb", "Houston Cougars Women's Basketball", "UH WBB", "College women's basketball", "basketball", "houston", "UH", ["Cougars"]),
-  team("uh-baseball", "Houston Cougars Baseball", "UH Baseball", "College baseball", "baseball", "houston", "UH", ["Cougars"]),
-  team("uh-softball", "Houston Cougars Softball", "UH Softball", "College softball", "softball", "houston", "UH", ["Cougars"]),
+  team("uh-football", "Houston Cougars Football", "UH", "College football", "football", "houston", "HOU", ["Cougars"]),
+  team("uh-mbb", "Houston Cougars Men's Basketball", "UH MBB", "College men's basketball", "basketball", "houston", "HOU", ["Cougars"]),
+  team("uh-wbb", "Houston Cougars Women's Basketball", "UH WBB", "College women's basketball", "basketball", "houston", "HOU", ["Cougars"]),
+  team("uh-baseball", "Houston Cougars Baseball", "UH Baseball", "College baseball", "baseball", "houston", "HOU", ["Cougars"]),
+  team("uh-softball", "Houston Cougars Softball", "UH Softball", "College softball", "softball", "houston", "HOU", ["Cougars"]),
   team("rice-football", "Rice Owls Football", "Rice", "College football", "football", "houston", "RICE", ["Owls"]),
   team("rice-mbb", "Rice Owls Men's Basketball", "Rice MBB", "College men's basketball", "basketball", "houston", "RICE", ["Owls"]),
   team("rice-wbb", "Rice Owls Women's Basketball", "Rice WBB", "College women's basketball", "basketball", "houston", "RICE", ["Owls"]),
   team("rice-baseball", "Rice Owls Baseball", "Rice Baseball", "College baseball", "baseball", "houston", "RICE", ["Owls"]),
   // texas-southern-football: Nashville already uses tsu-football for Tennessee State.
-  team("texas-southern-football", "Texas Southern Tigers Football", "TSU", "College football", "football", "houston", "TSU", ["Tigers"]),
+  team("texas-southern-football", "Texas Southern Tigers Football", "TSU", "College football", "football", "houston", "TXSO", ["Tigers"]),
   team("pvamu-football", "Prairie View A&M Panthers Football", "PVAMU", "College football", "football", "houston", "PVAM", ["Panthers"]),
   // Minneapolis–St. Paul (Oct 12, 2026; docs/research/city-builds/minneapolis/). Feed ids checked against live schedules.
   team("vikings", "Minnesota Vikings", "Vikings", "NFL", "football", "minneapolis", "MIN"),
@@ -290,10 +341,10 @@ const LIST: Team[] = [
   // New Orleans (Oct 12, 2026; docs/research/city-builds/new-orleans/). Feed ids checked against live schedules.
   team("saints", "New Orleans Saints", "Saints", "NFL", "football", "new-orleans", "NO"),
   team("pelicans", "New Orleans Pelicans", "Pelicans", "NBA", "basketball", "new-orleans", "NOP"),
-  team("tulane-football", "Tulane Green Wave Football", "Tulane FB", "College football", "football", "new-orleans", "TUL", ["Green Wave", "Tulane"]),
-  team("tulane-mbb", "Tulane Green Wave Men's Basketball", "Tulane MBB", "College men's basketball", "basketball", "new-orleans", "TUL", ["Green Wave"]),
-  team("tulane-wbb", "Tulane Green Wave Women's Basketball", "Tulane WBB", "College women's basketball", "basketball", "new-orleans", "TUL", ["Green Wave"]),
-  team("tulane-baseball", "Tulane Green Wave Baseball", "Tulane Baseball", "College baseball", "baseball", "new-orleans", "TUL", ["Green Wave"]),
+  team("tulane-football", "Tulane Green Wave Football", "Tulane FB", "College football", "football", "new-orleans", "TULN", ["Green Wave", "Tulane"]),
+  team("tulane-mbb", "Tulane Green Wave Men's Basketball", "Tulane MBB", "College men's basketball", "basketball", "new-orleans", "TULN", ["Green Wave"]),
+  team("tulane-wbb", "Tulane Green Wave Women's Basketball", "Tulane WBB", "College women's basketball", "basketball", "new-orleans", "TULN", ["Green Wave"]),
+  team("tulane-baseball", "Tulane Green Wave Baseball", "Tulane Baseball", "College baseball", "baseball", "new-orleans", "TULN", ["Green Wave"]),
   team("lsuno-mbb", "LSU New Orleans Privateers Men's Basketball", "LSUNO MBB", "College men's basketball", "basketball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
   team("lsuno-wbb", "LSU New Orleans Privateers Women's Basketball", "LSUNO WBB", "College women's basketball", "basketball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
   team("lsuno-baseball", "LSU New Orleans Privateers Baseball", "LSUNO Baseball", "College baseball", "baseball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
@@ -318,9 +369,9 @@ const LIST: Team[] = [
   // Raleigh–Durham (Oct 13, 2026; docs/research/city-builds/raleigh-durham/). Feed ids checked against live schedules.
   // North Carolina FC sits out 2026–27 (research: club suspended operations), so it has no record.
   team("hurricanes", "Carolina Hurricanes", "Hurricanes", "NHL", "hockey", "raleigh-durham", "CAR", ["Canes"]),
-  team("nc-state-football", "NC State Wolfpack Football", "NC State FB", "College football", "football", "raleigh-durham", "NCSU", ["Wolfpack", "NC State"]),
-  team("nc-state-mbb", "NC State Wolfpack Men's Basketball", "NC State MBB", "College men's basketball", "basketball", "raleigh-durham", "NCSU", ["Wolfpack"]),
-  team("nc-state-wbb", "NC State Wolfpack Women's Basketball", "NC State WBB", "College women's basketball", "basketball", "raleigh-durham", "NCSU", ["Wolfpack"]),
+  team("nc-state-football", "NC State Wolfpack Football", "NC State FB", "College football", "football", "raleigh-durham", "NCST", ["Wolfpack", "NC State"]),
+  team("nc-state-mbb", "NC State Wolfpack Men's Basketball", "NC State MBB", "College men's basketball", "basketball", "raleigh-durham", "NCST", ["Wolfpack"]),
+  team("nc-state-wbb", "NC State Wolfpack Women's Basketball", "NC State WBB", "College women's basketball", "basketball", "raleigh-durham", "NCST", ["Wolfpack"]),
   team("unc-football", "North Carolina Tar Heels Football", "UNC FB", "College football", "football", "raleigh-durham", "UNC", ["Tar Heels", "North Carolina"]),
   team("unc-mbb", "North Carolina Tar Heels Men's Basketball", "UNC MBB", "College men's basketball", "basketball", "raleigh-durham", "UNC", ["Tar Heels"]),
   team("unc-wbb", "North Carolina Tar Heels Women's Basketball", "UNC WBB", "College women's basketball", "basketball", "raleigh-durham", "UNC", ["Tar Heels"]),
@@ -398,9 +449,9 @@ const LIST: Team[] = [
   team('sounders', 'Seattle Sounders FC', 'Sounders', 'MLS', 'soccer', 'seattle', 'SEA'),
   team('reign', 'Seattle Reign FC', 'Reign', 'NWSL', 'soccer', 'seattle', 'SEA', ['OL Reign']),
   team('storm', 'Seattle Storm', 'Storm', 'WNBA', 'basketball', 'seattle', 'SEA'),
-  team('uw-football', 'Washington Huskies Football', 'UW', 'College football', 'football', 'seattle', 'UW', ['Huskies', 'Washington Football']),
-  team('uw-mbb', 'Washington Huskies Men\'s Basketball', 'UW MBB', "College men's basketball", 'basketball', 'seattle', 'UW', ['Huskies']),
-  team('uw-wbb', 'Washington Huskies Women\'s Basketball', 'UW WBB', "College women's basketball", 'basketball', 'seattle', 'UW', ['Huskies']),
+  team('uw-football', 'Washington Huskies Football', 'UW', 'College football', 'football', 'seattle', 'WASH', ['Huskies', 'Washington Football']),
+  team('uw-mbb', 'Washington Huskies Men\'s Basketball', 'UW MBB', "College men's basketball", 'basketball', 'seattle', 'WASH', ['Huskies']),
+  team('uw-wbb', 'Washington Huskies Women\'s Basketball', 'UW WBB', "College women's basketball", 'basketball', 'seattle', 'WASH', ['Huskies']),
   team('lakers', 'Los Angeles Lakers', 'Lakers', 'NBA', 'basketball', 'la', 'LAL'),
   team('clippers', 'LA Clippers', 'Clippers', 'NBA', 'basketball', 'la', 'LAC'),
   team('kings', 'Los Angeles Kings', 'Kings', 'NHL', 'hockey', 'la', 'LAK'),
@@ -492,7 +543,7 @@ const LIST: Team[] = [
   team('depaul-mbb', "DePaul Blue Demons Men's Basketball", 'DePaul MBB', "College men's basketball", 'basketball', 'chicago', 'DEP', ['DePaul']),
   team('depaul-wbb', "DePaul Blue Demons Women's Basketball", 'DePaul WBB', "College women's basketball", 'basketball', 'chicago', 'DEP', ['DePaul']),
   team('uic-mbb', "UIC Flames Men's Basketball", 'UIC MBB', "College men's basketball", 'basketball', 'chicago', 'UIC', ['UIC']),
-  team('chicago-state-mbb', "Chicago State Cougars Men's Basketball", 'Chicago State MBB', "College men's basketball", 'basketball', 'chicago', 'CSU', ['Chicago State']),
+  team('chicago-state-mbb', "Chicago State Cougars Men's Basketball", 'Chicago State MBB', "College men's basketball", 'basketball', 'chicago', 'CHIS', ['Chicago State']),
   // Dallas–Fort Worth, covered Oct 8, 2026 (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md). The Rangers were a visitor record before.
   team('rangers', 'Texas Rangers', 'Rangers', 'MLB', 'baseball', 'dallas-fort-worth', 'TEX'),
   team('cowboys', 'Dallas Cowboys', 'Cowboys', 'NFL', 'football', 'dallas-fort-worth', 'DAL'),
@@ -569,8 +620,8 @@ const LIST: Team[] = [
   team('raptors', 'Toronto Raptors', 'Raptors', 'NBA', 'basketball', 'toronto', 'TOR'),
   team('toronto-fc', 'Toronto FC', 'Toronto FC', 'MLS', 'soccer', 'toronto', 'TOR'),
   team('argonauts', 'Toronto Argonauts', 'Argonauts', 'CFL', 'football', 'toronto', 'TOR', ['Argos']),
-  team('marlies', 'Toronto Marlies', 'Marlies', 'AHL', 'hockey', 'toronto', 'MAR'),
-  team('sceptres', 'Toronto Sceptres', 'Sceptres', 'PWHL', 'hockey', 'toronto', 'SCE'),
+  team('marlies', 'Toronto Marlies', 'Marlies', 'AHL', 'hockey', 'toronto', 'TOR'),
+  team('sceptres', 'Toronto Sceptres', 'Sceptres', 'PWHL', 'hockey', 'toronto', 'TOR'),
   team('tempo', 'Toronto Tempo', 'Tempo', 'WNBA', 'basketball', 'toronto', 'TOR'),
   team('raptors-905', 'Raptors 905', 'Raptors 905', 'NBA G League', 'basketball', 'toronto', '905'),
   team('afc-toronto', 'AFC Toronto', 'AFC Toronto', 'NSL', 'soccer', 'toronto', 'AFC'),
@@ -600,7 +651,7 @@ const LIST: Team[] = [
   // Ottawa–Gatineau (Oct 13, 2026; docs/research/city-builds/ottawa-gatineau/). Black Bears discontinued Sep 2026 — no record.
   team('ottawa-senators', 'Ottawa Senators', 'Senators', 'NHL', 'hockey', 'ottawa-gatineau', 'OTT', ['Centre Canadian Tire']),
   team('ottawa-redblacks', 'Ottawa Redblacks', 'Redblacks', 'CFL', 'football', 'ottawa-gatineau', 'OTT'),
-  team('ottawa-charge', 'Ottawa Charge', 'Charge', 'PWHL', 'hockey', 'ottawa-gatineau', 'CHG'),
+  team('ottawa-charge', 'Ottawa Charge', 'Charge', 'PWHL', 'hockey', 'ottawa-gatineau', 'OTT'),
   team('atletico-ottawa', 'Atlético Ottawa', 'Atlético Ottawa', 'CPL', 'soccer', 'ottawa-gatineau', 'ATO'),
   team('ottawa-67s', "Ottawa 67's", "67's", 'OHL', 'hockey', 'ottawa-gatineau', '67S'),
   team('ottawa-blackjacks', 'Ottawa BlackJacks', 'BlackJacks', 'CEBL', 'basketball', 'ottawa-gatineau', 'OBJ'),
@@ -624,7 +675,7 @@ const LIST: Team[] = [
   team('rip-city-remix', 'Rip City Remix', 'Remix', 'NBA G League', 'basketball', 'portland', 'REM'),
   team('up-pilots-mbb', "Portland Pilots Men's Basketball", 'Pilots MBB', "College men's basketball", 'basketball', 'portland', 'UP'),
   // San Antonio (Oct 13, 2026; docs/research/city-builds/san-antonio/). Spurs were a visitor record; same id, now home.
-  team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball', 'san-antonio', 'SA'),
+  team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball', 'san-antonio', 'SAS'),
   team('san-antonio-fc', 'San Antonio FC', 'SAFC', 'USL Championship', 'soccer', 'san-antonio', 'SAFC'),
   team('san-antonio-missions', 'San Antonio Missions', 'Missions', 'Texas League', 'baseball', 'san-antonio', 'MIS'),
   team('utsa-football', 'UTSA Roadrunners Football', 'UTSA FB', 'College football', 'football', 'san-antonio', 'UTSA'),
@@ -641,11 +692,11 @@ const LIST: Team[] = [
   team('cruz-azul', 'Cruz Azul', 'Cruz Azul', 'Liga MX', 'soccer', 'mexico-city', 'CAZ'),
   team('atlante', 'Atlante', 'Atlante', 'Liga MX', 'soccer', 'mexico-city', 'ATL'),
   team('pumas-unam', 'Pumas UNAM', 'Pumas', 'Liga MX', 'soccer', 'mexico-city', 'UNAM', ['UNAM', 'Pumas']),
-  team('america-femenil', 'América Femenil', 'América Femenil', 'Liga MX Femenil', 'soccer', 'mexico-city', 'AMF', ['Club America Femenil', 'America Femenil']),
-  team('pumas-femenil', 'Pumas UNAM Femenil', 'Pumas Femenil', 'Liga MX Femenil', 'soccer', 'mexico-city', 'PUF', ['Pumas Femenil']),
-  team('cruz-azul-femenil', 'Cruz Azul Femenil', 'Cruz Azul Femenil', 'Liga MX Femenil', 'soccer', 'mexico-city', 'CAF'),
+  team('america-femenil', 'América Femenil', 'América Femenil', 'Liga MX Femenil', 'soccer', 'mexico-city', 'AME', ['Club America Femenil', 'America Femenil']),
+  team('pumas-femenil', 'Pumas UNAM Femenil', 'Pumas Femenil', 'Liga MX Femenil', 'soccer', 'mexico-city', 'UNAM', ['Pumas Femenil']),
+  team('cruz-azul-femenil', 'Cruz Azul Femenil', 'Cruz Azul Femenil', 'Liga MX Femenil', 'soccer', 'mexico-city', 'CAZ'),
   team('capitanes', 'Capitanes de la Ciudad de México', 'Capitanes', 'NBA G League', 'basketball', 'mexico-city', 'CAP', ['Mexico City Capitanes', 'Capitanes CDMX']),
-  team('diablos-rojos', 'Diablos Rojos del México', 'Diablos', 'LMB', 'baseball', 'mexico-city', 'DIA', ['Diablos Rojos']),
+  team('diablos-rojos', 'Diablos Rojos del México', 'Diablos', 'LMB', 'baseball', 'mexico-city', 'MEX', ['Diablos Rojos']),
   team('diablos-rojos-softball', 'Diablos Rojos Femenil', 'Diablos Femenil', 'LMS', 'softball', 'mexico-city', 'DIS'),
   team('diablos-rojos-basketball', 'Diablos Rojos de Básquetbol', 'Diablos Básquet', 'LNBP', 'basketball', 'mexico-city', 'DRB'),
   team('aguilas-blancas', 'Águilas Blancas', 'Águilas Blancas', 'ONEFA', 'football', 'mexico-city', 'AGB', ['Aguilas Blancas']),
@@ -653,7 +704,7 @@ const LIST: Team[] = [
   // Washington, DC (Oct 13, 2026; docs/research/city-builds/washington-dc/washington-dc-venue-table-answer.md).
   team('nationals', 'Washington Nationals', 'Nationals', 'MLB', 'baseball', 'washington-dc', 'WSH', ['Nats']),
   team('capitals', 'Washington Capitals', 'Capitals', 'NHL', 'hockey', 'washington-dc', 'WSH', ['Caps']),
-  team('wizards', 'Washington Wizards', 'Wizards', 'NBA', 'basketball', 'washington-dc', 'WSH'),
+  team('wizards', 'Washington Wizards', 'Wizards', 'NBA', 'basketball', 'washington-dc', 'WAS'),
   team('mystics', 'Washington Mystics', 'Mystics', 'WNBA', 'basketball', 'washington-dc', 'WAS'),
   team('dc-united', 'D.C. United', 'D.C. United', 'MLS', 'soccer', 'washington-dc', 'DC', ['DC United']),
   team('spirit', 'Washington Spirit', 'Spirit', 'NWSL', 'soccer', 'washington-dc', 'WAS'),
@@ -667,13 +718,13 @@ const LIST: Team[] = [
   team('howard-football', 'Howard Bison Football', 'Howard FB', 'College football', 'football', 'washington-dc', 'HOW', ['Howard']),
   team('chesapeake-baysox', 'Chesapeake Baysox', 'Baysox', 'Double-A baseball', 'baseball', 'washington-dc', 'BAY', ['Bowie Baysox']),
   team('loudoun-united', 'Loudoun United FC', 'Loudoun United', 'USL Championship', 'soccer', 'washington-dc', 'LOU'),
-  team('washington', 'Washington Commanders', 'Commanders', 'NFL', 'football', 'washington-dc', 'WSH', ['Washington']),
+  team('washington', 'Washington Commanders', 'Commanders', 'NFL', 'football', 'washington-dc', 'WAS', ['Washington']),
   team('dolphins', 'Miami Dolphins', 'Dolphins', 'NFL', 'football', 'miami', 'MIA'),
   // Miami (Oct 13, 2026; docs/research/city-builds/miami/). ESPN ids checked Oct 13, 2026.
   team('heat', 'Miami Heat', 'Heat', 'NBA', 'basketball', 'miami', 'MIA'),
   team('inter-miami-cf', 'Inter Miami CF', 'Inter Miami', 'MLS', 'soccer', 'miami', 'MIA', ['Inter Miami CF']),
-  team('miami-hurricanes-football', 'Miami Hurricanes Football', 'Hurricanes FB', 'College football', 'football', 'miami', 'UM', ['Miami', 'Hurricanes']),
-  team('miami-hurricanes-mbb', "Miami Hurricanes Men's Basketball", 'Hurricanes MBB', "College men's basketball", 'basketball', 'miami', 'UM', ['Miami', 'Hurricanes']),
+  team('miami-hurricanes-football', 'Miami Hurricanes Football', 'Hurricanes FB', 'College football', 'football', 'miami', 'MIA', ['Miami', 'Hurricanes']),
+  team('miami-hurricanes-mbb', "Miami Hurricanes Men's Basketball", 'Hurricanes MBB', "College men's basketball", 'basketball', 'miami', 'MIA', ['Miami', 'Hurricanes']),
   team('fiu-football', 'FIU Panthers Football', 'FIU FB', 'College football', 'football', 'miami', 'FIU', ['FIU']),
   team('fiu-mbb', "FIU Panthers Men's Basketball", 'FIU MBB', "College men's basketball", 'basketball', 'miami', 'FIU', ['FIU']),
   team('miami-fc', 'Miami FC', 'Miami FC', 'USL Championship', 'soccer', 'miami', 'MFC'),

@@ -10,7 +10,6 @@ import {
   favoriteFor,
   favoriteForTeam,
   favoriteKey,
-  favoriteMark,
   favoritesOf,
   follow,
   getAccount,
@@ -36,6 +35,7 @@ import {
 import { longLocalDate } from '../lib/dates';
 import { parseTypedDate } from '../lib/searchDate';
 import { favPath } from '../screens/FavoritesScreen';
+import { FavoriteBadge, favoriteName } from './FavoriteBadge';
 
 /**
  * The one search, the same from every tab (build notes 2, global search): a team,
@@ -181,13 +181,12 @@ export function SearchSheet({
         <ul className="log-list">
           {rows.slice(0, 6).map((fav) => (
             <li key={favoriteKey(fav)} className="fav-li">
-              <Link to={favPath(fav)} className="log-row fav-row" onClick={onClose}>
-                <span className={`fav-mark fav-${fav.kind}`} aria-hidden>
-                  {favoriteMark(fav)}
-                </span>
+              <Link to={favPath(fav)} className="log-row fav-row" aria-label={favoriteName(fav)} onClick={onClose}>
+                {/* The set is your favorites plus this group's rows (builder's call), so a program reads "UCLA MBB" beside its sibling. */}
+                <FavoriteBadge fav={fav} shown={[...favorites, ...rows]} size="mark" />
                 <span className="log-main">
                   <span className="log-title">
-                    <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />
+                    {fav.kind !== 'team' && <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />}
                     {fav.label}
                   </span>
                 </span>

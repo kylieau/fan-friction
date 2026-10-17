@@ -1,3 +1,4 @@
+import { FavoriteBadge } from '../components/FavoriteBadge';
 import { RowBody, spokenRow } from '../components/DayRow';
 import { lazy, Suspense, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
@@ -9,7 +10,6 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
   eventMatches,
   favoriteKey,
-  favoriteMark,
   favoritesOf,
   firmPlan,
   followingFeed,
@@ -276,9 +276,8 @@ export function HomeScreen() {
             {favoritesWeek.map(({ fav, next }) => (
               <li key={favoriteKey(fav)}>
                 <Link to={datePath(next.date, next.metroId, next.id)} className="fav-chip">
-                  <span className={`fav-mark fav-${fav.kind}`} aria-hidden>
-                    {favoriteMark(fav)}
-                  </span>
+                  {/* The set is your whole favorites list, so a team reads the same here as in the strip (builder's call). */}
+                  <FavoriteBadge fav={fav} shown={favorites} size="mark" />
                   <span className="fav-chip-text">
                     <span className="log-title">{fav.label}</span>
                     <span className="log-facts">{shortLocalDate(next.date)}</span>

@@ -11,7 +11,6 @@ import {
   entryMatches,
   favoriteFor,
   favoriteKey,
-  favoriteMark,
   favoritesOf,
   getPersonalLog,
   nightKey,
@@ -27,6 +26,7 @@ import {
 import { dayBandLabel, shortLocalDate } from '../lib/dates';
 import { splitTitleLabel } from '../lib/eventTitle';
 import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
+import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { LabelLine } from '../components/TitleText';
@@ -135,7 +135,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
     <section className="you-block" aria-label="Results">
       <ul className="log-list">
         {found.map((fav) => (
-          <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on={isOn(fav)} />
+          <FavRow key={favoriteKey(fav)} fav={fav} shown={found} sub={subFor(fav, countFor(fav))} on={isOn(fav)} />
         ))}
         {!exactMatch && (
           // Placeholder for things the app doesn't know yet: a favorite by name only.
@@ -174,6 +174,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
               const on = favorites.filter((fav) => fav.kind === kind);
               const more = suggestions.filter((fav) => fav.kind === kind);
               if (on.length === 0 && more.length === 0) return null;
+              const listed = [...on, ...more];
               return (
                 <section key={kind} className="you-block" aria-labelledby={`pick-${kind}`}>
                   <h2 id={`pick-${kind}`} className="you-heading">
@@ -181,10 +182,10 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
                   </h2>
                   <ul className="log-list">
                     {on.map((fav) => (
-                      <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on />
+                      <FavRow key={favoriteKey(fav)} fav={fav} shown={listed} sub={subFor(fav, countFor(fav))} on />
                     ))}
                     {more.map((fav) => (
-                      <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on={false} />
+                      <FavRow key={favoriteKey(fav)} fav={fav} shown={listed} sub={subFor(fav, countFor(fav))} on={false} />
                     ))}
                   </ul>
                 </section>
@@ -227,9 +228,10 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
           to each favorite and left a gap under the switch). */}
       <div className="fav-strip">
         <div className="fav-strip-marks">
+          {/* The set-aware badge (build 6, item 9a): the whole strip is the set; the link speaks the full name. */}
           {favorites.map((fav) => (
-            <Link key={favoriteKey(fav)} to={favPath(fav)} className={`fav-tag fav-tag-${fav.kind}`} aria-label={fav.label}>
-              {favoriteMark(fav)}
+            <Link key={favoriteKey(fav)} to={favPath(fav)} className="fav-strip-link" aria-label={favoriteName(fav)}>
+              <FavoriteBadge fav={fav} shown={favorites} />
             </Link>
           ))}
         </div>
@@ -248,7 +250,7 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
             <ul className="log-list">
               {list.map((row) => (
                 <li key={row.key}>
-                  <ScheduleRowView row={row} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />
+                  <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />
                 </li>
               ))}
             </ul>
@@ -279,14 +281,12 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
  * with its city's code over it when the date is not at home, opens the date page. An uncovered away
  * game wears the Away tag; its words open a page built from the game, so it can be stubbed (Kylie, Oct 15).
  */
-function ScheduleRowView({ row, rating, home }: { row: ScheduleRow; rating: number | null; home: string }) {
+function ScheduleRowView({ row, shown, rating, home }: { row: ScheduleRow; /** The favorites this schedule lists, for the set-aware badge. */ shown: readonly Favorite[]; rating: number | null; home: string }) {
   const split = splitTitleLabel(row.title);
   const code = row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null;
   const main = (
     <>
-      <span className={`fav-tag fav-tag-${row.fav.kind}`} aria-hidden>
-        {favoriteMark(row.fav)}
-      </span>
+      <FavoriteBadge fav={row.fav} shown={shown} />
       <span className="log-main">
         {/* The title on one line; the label on its own line under it (labels r3), never after a dot. */}
         <span className="log-title fav-one-line">
@@ -348,17 +348,18 @@ export function favPath(fav: Pick<Favorite, 'kind' | 'id'>): string {
   return `/favorites/${fav.kind}/${encodeURIComponent(fav.id)}`;
 }
 
-/** A favorite in a list, with a Follow / Following pill on the right. */
-function FavRow({ fav, sub, on }: { fav: Favorite; sub: string; on: boolean }) {
+/**
+ * A favorite in a list, with a Follow / Following pill on the right. The badge carries the sport icon now, so a team's
+ * name has none beside it (build 6, item 9a); an artist or festival keeps its type icon.
+ */
+function FavRow({ fav, shown, sub, on }: { fav: Favorite; /** The favorites in this list, for the set-aware badge. */ shown: readonly Favorite[]; sub: string; on: boolean }) {
   return (
     <li className="fav-li">
-      <Link to={favPath(fav)} className="log-row fav-row">
-        <span className={`fav-mark fav-${fav.kind}`} aria-hidden>
-          {favoriteMark(fav)}
-        </span>
+      <Link to={favPath(fav)} className="log-row fav-row" aria-label={favoriteName(fav)}>
+        <FavoriteBadge fav={fav} shown={shown} size="mark" />
         <span className="log-main">
           <span className="log-title">
-            <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />
+            {fav.kind !== 'team' && <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />}
             {fav.label}
           </span>
           <span className="log-facts">{sub}</span>

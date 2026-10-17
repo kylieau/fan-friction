@@ -1,3 +1,4 @@
+import { FavoriteBadge } from '../components/FavoriteBadge';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { CrowdFigure, FrictionMark } from '../components/EventTags';
@@ -10,7 +11,6 @@ import {
   eventMatches,
   favoriteFor,
   favoriteKey,
-  favoriteMark,
   favoritesOf,
   friendsEntries,
   getAccount,
@@ -209,9 +209,8 @@ export function FavoritePage() {
       <BackLink to="/following" />
 
       <div className="profile-head">
-        <span className={`fav-mark fav-big fav-${fav.kind}`} aria-hidden>
-          {favoriteMark({ ...fav, label })}
-        </span>
+        {/* The set is the viewer's favorites plus this one (builder's call): the header reads as the strip does. */}
+        <FavoriteBadge fav={{ ...fav, label }} shown={[...favoritesOf(log), fav]} size="big" />
         <div className="you-who">
           <h1 className="page-title">{team?.name ?? label}</h1>
           <span className="you-handle">{[record ? recordLine(record) : null, series].filter(Boolean).join(' · ') || kindLabel(fav.kind)}</span>
