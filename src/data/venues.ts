@@ -975,6 +975,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Gillette Stadium' }, { name: 'Boston Stadium', from: '2026-06-13' }],
     location: [-71.2643, 42.0909],
+    ticketmasterIds: ['KovZpZA6kvlA', 'Za5ju3rKuqZB463d-zctalbxoyaQ-jAHk'],
     capacity: [
       { seats: 64628, setup: 'football', note: 'Reported. NFL 64,628 (2023–present); World Cup setup 64,146 announced. Source: docs/research/city-builds/boston/boston-venue-table-answer.md A01.' },
       { seats: 20000, setup: 'soccer', note: 'Reported. Expandable soccer default; concert setup unknown. Source: venue table A01.' },
@@ -986,6 +987,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Alumni Stadium' }],
     location: [-71.1662, 42.3351],
+    ticketmasterIds: ['KovZpZA17dlA'],
     capacity: [{ seats: 44500, setup: 'football', note: 'Official (Boston College). Source: venue table A02.' }],
     roof: 'open',
   },
@@ -995,6 +997,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'Fenway Park' }],
     location: [-71.0970999, 42.3464614],
+    ticketmasterIds: ['KovZpZAaaI7A'],
     capacity: [
       { seats: 37755, setup: 'baseball', note: "Official night baseball (MLB). Day 37,305 with tarped batter's eye. Source: venue table A03." },
     ],
@@ -1005,6 +1008,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Harvard Stadium' }],
     location: [-71.1268, 42.3666],
+    ticketmasterIds: ['KovZpZAF7vnA'],
     capacity: [
       { seats: 25000, setup: 'football', note: 'Official (Harvard rentals, 2024). Conflicts with 30,323 on lacrosse page; both kept in research. Source: venue table A04.' },
     ],
@@ -1016,6 +1020,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Xfinity Center' }, { name: 'Comcast Center' }],
     location: [-71.2196119, 41.9924449],
+    ticketmasterIds: ['KovZpZAEAElA'],
     capacity: [{ seats: 19900, setup: 'concert', note: 'Reported (Globe, 2026). Lawn/GA not fixed seats. Mansfield corridor exception. Source: venue table A05.' }],
     roof: 'covered',
   },
@@ -1028,6 +1033,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'TD Garden', from: '2009-07-01' },
     ],
     location: [-71.0621622, 42.3662986],
+    ticketmasterIds: ['KovZpa2gne'],
     capacity: [
       { seats: 19156, setup: 'basketball', note: 'Official. Basketball 19,156; hockey 17,850; max 19,580 (TD Garden). 2019 hockey/basketball bumps noted in research. Source: venue table A06.' },
       { seats: 17850, setup: 'hockey', note: 'Official (TD Garden). Source: venue table A06.' },
@@ -1039,6 +1045,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Nickerson Field' }],
     location: [-71.119302, 42.3532848],
+    ticketmasterIds: ['KovZpZA16tlA'],
     capacity: [{ seats: 9871, setup: 'soccer', note: 'Official (BU): 3,546 chair-back + 6,325 bleacher. Source: venue table A08.' }],
     roof: 'open',
   },
@@ -1047,6 +1054,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Silvio O. Conte Forum' }, { name: 'Conte Forum' }],
     location: [-71.1677, 42.3352],
+    ticketmasterIds: ['KovZpZAJdJtA'],
     capacity: [
       { seats: 8606, setup: 'basketball', note: 'Official (BC). Source: venue table A09.' },
       { seats: 7884, setup: 'hockey', note: 'Official (BC). Kelley Rink. Source: venue table A09.' },
@@ -1058,6 +1066,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Agganis Arena' }],
     location: [-71.11773, 42.3522233],
+    ticketmasterIds: ['KovZpZAFd1nA'],
     capacity: [
       { seats: 6150, setup: 'hockey', note: 'Reported (2026 promoter guide). Concert up to 7,200–8,000 center stage in research. Source: venue table A10.' },
       { seats: 7200, setup: 'concert', note: 'Reported. Source: venue table A10.' },
@@ -1080,6 +1089,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'MGM Music Hall at Fenway' }],
     location: [-71.0954944, 42.3466937],
+    ticketmasterIds: ['KovZ917AEJz'],
     capacity: [{ seats: 5009, setup: 'concert', note: 'Reported (Songkick). Threshold case; seated/standing split unknown. Source: venue table A12.' }],
     roof: 'indoor',
   },
@@ -1088,6 +1098,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Leader Bank Pavilion' }, { name: 'Rockland Trust Bank Pavilion' }],
     location: [-71.0359348, 42.3485027],
+    ticketmasterIds: ['KovZpZAEAdEA'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official (naming partner). Exactly at friction threshold. Source: venue table A13.' }],
     roof: 'covered',
   },
@@ -1096,6 +1107,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'The TRACK at New Balance' }],
     location: [-71.1446563, 42.3564587],
+    ticketmasterIds: ['Z7r9jZaAfX'],
     capacity: [{ seats: 5000, setup: 'track', note: 'Reported. Sources disagree up to vs over 5,000; confirm per event. Source: venue table A14.' }],
     roof: 'indoor',
   },
@@ -1104,6 +1116,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Boch Center – Wang Theatre' }, { name: 'Wang Theatre' }],
     location: [-71.0643045, 42.350458],
+    ticketmasterIds: ['KovZpZAJd6FA', 'Za5ju3rKuqZDvjDdVh7PsZXy3nOChrLagx'],
     capacity: [{ seats: 3500, setup: 'concert', note: 'Reported. Source: venue table A18.' }],
     roof: 'indoor',
   },
@@ -1112,6 +1125,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Orpheum Theatre' }],
     location: [-71.0608194, 42.3562342],
+    ticketmasterIds: ['KovZpZA1J7JA'],
     capacity: [{ seats: 2700, setup: 'concert', note: 'Reported. Source: venue table A19.' }],
     roof: 'indoor',
   },
@@ -1120,6 +1134,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Citizens House of Blues Boston' }, { name: 'House of Blues Boston' }],
     location: [-71.0955967, 42.3474108],
+    ticketmasterIds: ['KovZpZAEA7eA', 'rZ7HnEZ17FAO0'],
     capacity: [{ seats: 2200, setup: 'concert', note: 'Reported. ~2,425 incl. balconies in secondary source. Source: venue table A20.' }],
     roof: 'indoor',
   },
@@ -1128,6 +1143,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Big Night Live' }],
     location: [-71.0612, 42.3653],
+    ticketmasterIds: ['KovZ917AxdQ'],
     capacity: [{ seats: 1400, setup: 'concert', note: 'Reported. Coordinates approximate (Causeway St). Source: venue table A21.' }],
     roof: 'indoor',
   },
@@ -1136,6 +1152,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Royale' }],
     location: [-71.065799, 42.3500824],
+    ticketmasterIds: ['KovZpZAFknIA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Reported. 279 Tremont St. Source: venue table A22.' }],
     roof: 'indoor',
   },
@@ -1144,6 +1161,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Jordan Field' }],
     location: [-71.1297321, 42.3678302],
+    ticketmasterIds: ['Z7r9jZadGT'],
     capacity: [{ seats: 3000, setup: 'soccer', note: 'Official (Harvard, 2024): up to 3,000 incl. standing. Source: venue table A23.' }],
     roof: 'open',
   },
@@ -1156,6 +1174,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Raymond James Stadium' }],
     location: [-82.5033545, 27.9759793],
+    ticketmasterIds: ['KovZpZAFnl1A', 'Za5ju3rKuqZB1HerEOVo7YlTa64-a8GIk'],
     capacity: [
       {
         seats: 69218,
@@ -1176,6 +1195,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Tropicana Field' }],
     location: [-82.6532755, 27.7680559],
+    ticketmasterIds: ['KovZpa4Rfe', 'Za5ju3rKuqZDetFylJcd_5ohlNgq3rMML4'],
     capacity: [
       {
         seats: 25025,
@@ -1222,6 +1242,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // Approximate; OSM did not resolve the fairgrounds pavilion by name (research §A06).
     location: [-82.368, 27.988],
+    ticketmasterIds: ['KovZpZAEkA7A'],
     capacity: [
       {
         seats: 9900,
@@ -1258,6 +1279,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Yuengling Center', from: '2018-07-01' },
     ],
     location: [-82.4066241, 28.0592444],
+    ticketmasterIds: ['KovZpZAEkAvA'],
     capacity: [
       {
         seats: 10411,
@@ -1293,6 +1315,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'The BayCare Sound', from: '2024-07-01' },
     ],
     location: [-82.802783, 27.9674955],
+    ticketmasterIds: ['KovZpa4mUe'],
     capacity: [
       {
         seats: 4000,
@@ -1330,6 +1353,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'TD Ballpark' }],
     location: [-82.786662, 28.0038021],
+    ticketmasterIds: ['KovZpab8ze'],
     capacity: [
       {
         seats: 8500,
@@ -1344,6 +1368,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Al Lang Stadium' }],
     location: [-82.6330913, 27.7683643],
+    ticketmasterIds: ['KovZpaFp3e'],
     capacity: [
       {
         seats: 7227,
@@ -1393,6 +1418,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Ruth Eckerd Hall' }],
     location: [-82.7046899, 27.9760792],
+    ticketmasterIds: ['KovZpZAFk7IA', 'KovZpapdfe'],
     capacity: [{ seats: 2180, setup: 'concert', note: 'Reported. Source: https://en.wikipedia.org/wiki/Ruth_Eckerd_Hall' }],
     roof: 'indoor',
   },
@@ -1402,6 +1428,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Mahaffey Theater' }, { name: 'Duke Energy Center for the Arts' }],
     // Approximate; OSM did not resolve the waterfront theater name (research §A20).
     location: [-82.6318, 27.7656],
+    ticketmasterIds: ['KovZpZAdE1eA'],
     capacity: [{ seats: 2031, setup: 'concert', note: 'Official (tourism). Source: https://www.visitstpeteclearwater.com/list/best-area-theaters-performing-arts-halls' }],
     roof: 'indoor',
   },
@@ -1410,6 +1437,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Jannus Live' }],
     location: [-82.6360699, 27.7719217],
+    ticketmasterIds: ['KovZpZAFAnaA'],
     capacity: [{ seats: 2000, setup: 'concert', note: 'Official. Mostly standing courtyard. Source: https://www.jannuslive.com/live-music-st-pete/' }],
     roof: 'open',
   },
@@ -1427,6 +1455,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Tampa Theatre' }],
     location: [-82.4588074, 27.9503814],
+    ticketmasterIds: ['KovZpZAFAnEA'],
     capacity: [{ seats: 1238, setup: 'concert', note: 'Reported (secondary; verify with venue). Source: https://getmorestreams.com/?p=11019' }],
     roof: 'indoor',
   },
@@ -1453,6 +1482,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Miami Stadium', from: '2026-06-01' },
     ],
     location: [-80.2388497, 25.9579032],
+    ticketmasterIds: ['KovZpZAEkvtA'],
     capacity: [
       { seats: 64767, setup: 'football', note: 'Reported. NFL seated; conflicts with 65,326 permanent seats on Ticketmaster blog. Source: venue table A01.' },
       { seats: 64478, setup: 'soccer', note: 'Reported. 2026 FIFA World Cup configuration. Source: venue table A01.' },
@@ -1464,6 +1494,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'miami',
     names: [{ name: 'Homestead-Miami Speedway' }],
     location: [-80.4094304, 25.4517516],
+    ticketmasterIds: ['KovZpZAdJnAA', 'Za5ju3rKuqZBzaQJhuN-7F_9Cs75O7rnQ'],
     // Round-2 rule: conflicting figures (46,000 / 45,000 / 65,000), none official; blank (BACKLOG).
     capacity: [],
     roof: 'open',
@@ -1474,6 +1505,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Marlins Park' }, { name: 'loanDepot park', from: '2021-04-01' }],
     location: [-80.219554, 25.7780733],
+    ticketmasterIds: ['KovZpZAId1JA'],
     capacity: [
       { seats: 36742, setup: 'baseball', note: 'Reported. Seated baseball; 37,442 with standing room not used as seated. Source: venue table A03.' },
     ],
@@ -1503,6 +1535,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Amerant Bank Arena', from: '2023-09-19' },
     ],
     location: [-80.3254289, 26.1583702],
+    ticketmasterIds: ['KovZpZAEeavA'],
     capacity: [
       { seats: 19250, setup: 'hockey', note: 'Reported. Source: venue table A05.' },
       { seats: 23000, setup: 'concert', note: 'Reported. Max concert configuration; stage-type figures vary. Source: venue table A05.' },
@@ -1518,6 +1551,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Chase Stadium', from: '2024-01-01' },
     ],
     location: [-80.16068, 26.1932426],
+    ticketmasterIds: ['KovZpZAFFelA', 'rZ7HnEZ17f8-P'],
     capacity: [
       { seats: 21550, setup: 'soccer', note: 'Reported. Inter Miami II and occasional first-team matches after 2026 move to Nu Stadium. Source: venue table A06.' },
     ],
@@ -1534,6 +1568,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Kaseya Center', from: '2023-05-01' },
     ],
     location: [-80.1879435, 25.7813595],
+    ticketmasterIds: ['KovZpZAJtFaA', 'KovZpZAaEEdA'],
     capacity: [
       { seats: 19600, setup: 'basketball', note: 'Reported. Source: venue table A07.' },
       { seats: 19146, setup: 'concert', note: 'Reported. Center-stage concert configuration. Source: city-type V06 / venue table A07.' },
@@ -1549,6 +1584,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Pitbull Stadium', from: '2024-08-01' },
     ],
     location: [-80.3778903, 25.7524884],
+    ticketmasterIds: ['ZFr9jZ6dd1', 'KovZpZAJtF1A'],
     // Round-2 rule: conflicting figures (20,000 / 22,682), none official; blank (BACKLOG).
     capacity: [],
     roof: 'open',
@@ -1562,6 +1598,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'FPL Solar Amphitheater at Bayfront Park', from: '2020-01-01' },
     ],
     location: [-80.1860601, 25.7762049],
+    ticketmasterIds: ['KovZpZAEAFAA'],
     // Round-2 rule: conflicting figures (8,500 / 5,000 / 1,646); blank until one official current figure (BACKLOG).
     capacity: [],
     roof: 'covered',
@@ -1571,6 +1608,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'miami',
     names: [{ name: 'BankUnited Center' }, { name: 'Watsco Center', from: '2016-10-10' }],
     location: [-80.2793844, 25.7153095],
+    ticketmasterIds: ['KovZpZAEkAdA'],
     capacity: [
       { seats: 7972, setup: 'basketball', note: 'Official (UM Athletics). Source: venue table A11.' },
     ],
@@ -1581,6 +1619,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'miami',
     names: [{ name: 'Hard Rock Live' }],
     location: [-80.2116126, 26.0523004],
+    ticketmasterIds: ['KovZpZA6AEaA'],
     capacity: [
       { seats: 7000, setup: 'concert', note: 'Official (Seminole Hard Rock). Hollywood reservation room; not Hard Rock Stadium. Source: venue table A12.' },
     ],
@@ -1623,6 +1662,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Au-Rene Theater' }, { name: 'Broward Center for the Performing Arts' }],
     // Approximate; OSM did not resolve the performing-arts building by name (research §A19).
     location: [-80.142, 26.119],
+    ticketmasterIds: ['KovZpZAEeaAA'],
     capacity: [
       { seats: 2658, setup: 'concert', note: 'Reported. Source: venue table A19.' },
     ],
@@ -1633,6 +1673,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'miami',
     names: [{ name: 'Ziff Ballet Opera House' }, { name: 'Adrienne Arsht Center — Ziff Ballet Opera House' }],
     location: [-80.1900593, 25.7876286],
+    ticketmasterIds: ['KovZpa4RIe'],
     capacity: [
       { seats: 2400, setup: 'concert', note: 'Official (Arsht Center). Source: venue table A20.' },
     ],
@@ -1643,6 +1684,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'miami',
     names: [{ name: 'Knight Concert Hall' }],
     location: [-80.1900593, 25.7876286],
+    ticketmasterIds: ['KovZpZAaIvvA'],
     capacity: [
       { seats: 2200, setup: 'concert', note: 'Official (Arsht Center). Not James L. Knight Center downtown. Source: venue table A21.' },
     ],
@@ -1919,6 +1961,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Hollywood Palladium' }],
     location: [-118.32421, 34.098007],
+    ticketmasterIds: ['KovZpZAEAlaA', 'Za5ju3rKuqZDdiylzH9EtZU1nwJEgjmUkg'],
     capacity: [{ seats: 4000, setup: 'concert', note: 'Standing. Source: https://en.wikipedia.org/wiki/Hollywood_Palladium' }],
     roof: 'indoor',
   },
@@ -1927,6 +1970,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'The Bellwether' }],
     location: [-118.2584445, 34.0562378],
+    ticketmasterIds: ['KovZ917AiI3', 'Z7r9jZaAkT'],
     capacity: [{ seats: 1500, setup: 'concert', note: 'About 1,500 (the venue\'s own site, checked Oct 16, 2026). Source: https://thebellwetherla.com/' }],
     roof: 'indoor',
   },
@@ -1937,6 +1981,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'House of Blues Anaheim' }],
     closed: { from: '2017-01-01', note: 'The Downtown Disney room closed in 2016 (the exact day is not stored); the GardenWalk room is its own record.' },
     location: [-117.921883, 33.8093233],
+    // No Ticketmaster id here: the seller's "House of Blues Anaheim" id is the GardenWalk room's (400 W Disney Way).
     capacity: [{ seats: 1100, setup: 'concert', note: 'Opened 2001, closed 2016. Source: https://en.wikipedia.org/wiki/House_of_Blues' }],
     roof: 'indoor',
   },
@@ -1947,6 +1992,7 @@ export const VENUES: Record<string, Venue> = {
     // A flat-floor hall beside the Shrine Auditorium (6,300 seats), its own room.
     names: [{ name: 'Shrine Expo Hall' }],
     location: [-118.28167, 34.02333],
+    ticketmasterIds: ['KovZpZAdEanA'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Standing. Source: https://www.shrineauditorium.com/the-venue/' }],
     roof: 'indoor',
   },
@@ -1955,6 +2001,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Los Alamitos Race Course' }],
     location: [-118.04361, 33.80861],
+    ticketmasterIds: ['KovZ917Amui'],
     capacity: [{ seats: 6000, setup: 'racing', note: 'Reported (2014 DRF); larger total-capacity claims differ. Cypress. Source: https://www.drf.com/news/los-alamitos-tries-fill-void-left-hollywood-park' }],
     roof: 'open',
   },
@@ -1963,6 +2010,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Irwindale Speedway' }],
     location: [-117.98806, 34.10944],
+    ticketmasterIds: ['KovZpa9WVe'],
     capacity: [{ seats: 6500, setup: 'racing', note: 'Grandstand, excluding portable seating. Closed December 2024. Source: https://en.wikipedia.org/wiki/Irwindale_Speedway' }],
     roof: 'open',
   },
@@ -1980,6 +2028,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Universal Amphitheatre' }, { name: 'Gibson Amphitheatre', from: '2005-01-01' }],
     closed: { from: '2013-09-07', note: 'Last show Sept 6, 2013; demolished that month.' },
     location: [-118.353233, 34.138194],
+    ticketmasterIds: ['ZFr9jZeFFA'],
     capacity: [{ seats: 6251, setup: 'concert', note: 'After the 1980s renovation, which added the roof. Universal City; last show Sept 6, 2013, demolished that month. Source: https://en.wikipedia.org/wiki/Gibson_Amphitheatre' }],
     roof: 'covered',
   },
@@ -2131,6 +2180,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Indian Wells Tennis Garden' }, { name: 'Stadium 1, Indian Wells Tennis Garden' }],
     // OpenStreetMap point for the address (78200, Miles Avenue), not an entrance.
     location: [-116.312441, 33.722619],
+    ticketmasterIds: ['KovZpZAaEFlA'],
     capacity: [{ seats: 16100, setup: 'tennis', note: 'Official (tennis). Coachella Valley (Riverside County), like the Empire Polo Club. The building name sits on this, the largest court; Stadium 2 is its own room. Official: 16,100 tennis seats. Concert and standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
     roof: 'open',
   },
@@ -2151,6 +2201,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Great Park Live', from: '2024-01-01' }],
     // OpenStreetMap point for the address (Great Park Live - Temporary Amphitheatre, 8000), not an entrance.
     location: [-117.7452016, 33.674071],
+    ticketmasterIds: ['KovZ917ARPO'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert). Irvine, the Great Park; opened 2024, a separate site from FivePoint and Irvine Meadows. The city\'s Jan 2025 report called it a 5,000-capacity temporary venue; the operator now says 10,000, layout unstated. Conflict kept. Official current operator: 10,000 capacity, layout unspecified. Official city January 2025 report: temporary venue 5,000. Prefer current operator provisionally, but expansion timing and seated/standing split remain unconfirmed; retain conflict. Source: https://www.greatparklive.com/' }],
     roof: 'open',
   },
@@ -2180,6 +2231,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Starlight Bowl' }],
     // OpenStreetMap point for the address (Starlight Bowl, 1249), not an entrance.
     location: [-118.310092, 34.2065347],
+    ticketmasterIds: ['KovZ917AOKx'],
     capacity: [{ seats: 4200, setup: 'concert', note: 'Official (concert). Burbank. The city caps it at 4,200 (an older split read 3,000 seats plus 2,000 lawn). Closed after 2025 wind damage per the city\'s restoration page, yet an Aug 2026 show was cancelled for fire: operating status unresolved. Official city current planning page: capped at 4,200 since early 2000s. Reported older reference: 3,000 fixed + 2,000 lawn = 5,000. Prefer city cap; do not import proposed 5,000 as accomplished expansion. Current seat/lawn split unconfirmed. Source: https://www.burbankca.gov/web/parks-recreation/starlight-bowl-transformation-project' }],
     roof: 'open',
   },
@@ -2234,6 +2286,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Goodwin Field' }],
     // OpenStreetMap point for the building (Goodwin Field, West Campus Drive), not an entrance.
     location: [-117.8852303, 33.8869736],
+    ticketmasterIds: ['Z7r9jZad__'],
     capacity: [{ seats: 3500, setup: 'baseball', note: 'Official (baseball). Cal State Fullerton, beside Titan Stadium. Official: nearly 3,500 seated after 2001 expansion, predating study period; no later capacity change confirmed. Standing / concert inventory unconfirmed. Source: https://fullertontitans.com/facilities/goodwin-field/1' }],
     roof: 'open',
   },
@@ -2243,6 +2296,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Anteater Ballpark' }, { name: 'Cicerone Field at Anteater Ballpark' }],
     // OpenStreetMap point for the building (Anteater Ballpark, University Drive), not an entrance.
     location: [-117.8477134, 33.6513335],
+    ticketmasterIds: ['KovZpZAaJldA'],
     capacity: [{ seats: 908, standing: 3408, setup: 'baseball', note: 'Official (baseball). UC Irvine. 908 seats plus the 2,500-person Anthill lawn (kept as standing room). Official: 3,408 total baseball, comprising 908 seats and 2,500 Anthill lawn. Keep lawn distinct from seats. Concert limit unconfirmed. Source: https://ucirvinesports.com/documents/download/2024/5/21/2024UCIBSBnotes5-21.pdf' }],
     roof: 'open',
   },
@@ -2252,6 +2306,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dolby Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.338764, 34.101602],
+    ticketmasterIds: ['KovZpZAdtaEA'],
     capacity: [{ seats: 3400, setup: 'concert', note: 'Official (concert). Hollywood, in the Ovation Hollywood complex (formerly Hollywood & Highland). About 3,400 for the Academy Awards; about 1,600 for film presentations. Official: approximately 3,400 for Academy Awards; approximately 1,600 for movie presentations. Concert production-specific seated inventory unconfirmed; no GA maximum established. Source: https://www.dolby.com/movies-tv/dolby-theatre/' }],
     roof: 'indoor',
   },
@@ -2261,6 +2316,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dorothy Chandler Pavilion' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.248573, 34.056068],
+    ticketmasterIds: ['KovZpZAEvnkA'],
     capacity: [{ seats: 3200, setup: 'concert', note: 'Official (concert). The Music Center; 3,156 is also reported. Official current marketing: approximately 3,200 seated. Reported: 3,156. Prefer official approximate total pending a current sellable seat inventory; component lists are not reconciled here. Standing unconfirmed. Source: https://www.musiccenter.org/visit-explore/visit-explore/campus/dorothy-chandler-pavilion/' }],
     roof: 'indoor',
   },
@@ -2279,6 +2335,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Terrace Theater' }],
     // OpenStreetMap point for the address (Long Beach Convention & Entertainment Center, 300), not an entrance.
     location: [-118.1883741, 33.7640942],
+    ticketmasterIds: ['KovZpZAJvnvA'],
     capacity: [{ seats: 3052, setup: 'concert', note: 'Official (concert). Long Beach Convention & Entertainment Center, beside the Long Beach Arena. Official 2021 campus sheet: 3,052 seated. Current operator rounds to more than 3,000. Prefer precise official sheet provisionally; current event seat inventory may vary. Standing unconfirmed. Source: https://longbeachcc-2021.s3.amazonaws.com/images/files/CAMPUS-MAP_CAPACITIES_10.28.21_FINAL-FULL-SPECS.pdf?focal=none&mtime=20220524123641' }],
     roof: 'indoor',
   },
@@ -2288,6 +2345,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pasadena Civic Auditorium' }],
     // OpenStreetMap point for the address (Pasadena Convention Center - A, B and Ballroom), not an entrance.
     location: [-118.1452085, 34.1436537],
+    ticketmasterIds: ['rZ7HnEZ17fOAg'],
     capacity: [{ seats: 2997, setup: 'concert', note: 'Official (concert). 1,880 fixed main floor, 98 removable pit, 560 loge, 459 upper balcony. Official: 2,997 seated: 1,880 fixed main-floor, 98 removable pit, 560 loge and 459 upper balcony. Pit use changes sellable inventory; no standing concert total established. Source: https://www.visitpasadena.com/civic-auditorium/about/tech-specs/' }],
     roof: 'indoor',
   },
@@ -2315,6 +2373,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hollywood Pantages Theatre' }, { name: 'Pantages Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.325591, 34.101686],
+    ticketmasterIds: ['KovZpZAEeFaA'],
     capacity: [{ seats: 2703, setup: 'concert', note: 'Official (concert). The 2000 renovation count; no later change found. Official historical renovation: 2,703 seats installed in 2000; current event-specific inventory unconfirmed. No post-2016 numerical change established. Standing unconfirmed. Source: https://www.broadwayinhollywood.com/assets/doc/9x12.Pntgs75thAnvrsryBrch.Spreads-1-7685e05397.pdf' }],
     roof: 'indoor',
   },
@@ -2333,6 +2392,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Club Nokia' }, { name: 'The Novo', from: '2016-03-08' }, { name: 'The Novo by Microsoft', from: '2016-03-08' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.265829, 34.045391],
+    ticketmasterIds: ['KovZpZAE7ddA', 'KovZ917A25f'],
     capacity: [{ seats: 2300, setup: 'concert', note: 'Official (concert). L.A. LIVE. Renamed Mar 8, 2016; when the sponsor suffix was dropped is unconfirmed. 1,358 seated in a theater setup. Official current: 2,300 maximum / 1,358 theater seated. Reported legacy 2,400 is not preferred over current operator configuration. Source: https://online.flippingbook.com/view/621208/' }],
     roof: 'indoor',
   },
@@ -2342,6 +2402,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Matadome' }, { name: 'Premier America Credit Union Arena', from: '2022-03-23' }],
     // OpenStreetMap point for the address (California State University, Northridge), not an entrance.
     location: [-118.5263221, 34.2455346],
+    ticketmasterIds: ['KovZpZA1venA', 'KovZ917AOZ1'],
     capacity: [{ seats: 2300, setup: 'basketball', note: 'Official (basketball). Cal State Northridge; "the Matadome". Official: 2,300 seated after restored seating in 2015–16; no post-2016 numerical revision established. Standing unconfirmed. Source: https://gomatadors.com/sports/2015/6/22/GEN_20140101246' }],
     roof: 'indoor',
   },
@@ -2360,6 +2421,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Show at Agua Caliente Rancho Mirage' }, { name: 'The Show' }],
     // OpenStreetMap point for the address (32250, Bob Hope Drive), not an entrance.
     location: [-116.4084774, 33.8112794],
+    ticketmasterIds: ['KovZ917A2Af'],
     capacity: [{ seats: 2057, setup: 'concert', note: 'Official (concert). Rancho Mirage, Coachella Valley. 457 floor plus 1,600 in the tiers. Official: 2,057 seated, comprising 457 floor and 1,600 lounge/mezzanine/balcony. Standing setup unconfirmed. Source: https://www.aguacalientecasinos.com/entertainment/rancho-mirage-shows/the-show/book-the-show/' }],
     roof: 'indoor',
   },
@@ -2397,6 +2459,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fox Theater Pomona' }],
     // The research's address estimate (Census), not an entrance.
     location: [-117.750181, 34.056872],
+    ticketmasterIds: ['KovZpZAaaanA'],
     capacity: [{ seats: 2000, setup: 'concert', note: 'Official (concert). The 2,000 is for single or combined spaces; the Grand Hall alone is not isolated (provisional). Official: up to 2,000 for single or combined venue spaces; Grand Hall-only current limit not isolated. Ticketed concert use confirmed by operator, but keep capacity provisional rather than treating whole-house maximum as main-floor standing. Source: https://www.foxpomona.com/rental-info' }],
     roof: 'indoor',
   },
@@ -2406,6 +2469,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Orpheum Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.255238, 34.043113],
+    ticketmasterIds: ['KovZpa3uCe'],
     capacity: [{ seats: 1976, setup: 'concert', note: 'Official (concert). Broadway, downtown. 1,019 orchestra, 146 mezzanine, 781 balcony, 30 boxes. Official: 1,976 seated, comprising 1,019 orchestra, 146 mezzanine, 781 balcony and 30 boxes. Standing unconfirmed. Source: https://laorpheum.com/private-events/' }],
     roof: 'indoor',
   },
@@ -2415,6 +2479,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cerritos Center for the Performing Arts' }],
     // OpenStreetMap point for the address (Cerritos Center for the Performing Arts, 18000), not an entrance.
     location: [-118.0616575, 33.8675683],
+    ticketmasterIds: ['KovZ917AREi'],
     capacity: [{ seats: 1721, setup: 'concert', note: 'Official (concert). One room in six layouts: arena 1,691–1,721, in the round up to 1,934, lyric, concert, cabaret and recital smaller. The arena figure is stored. Official seated: Arena 1,691–1,721; Lyric 1,311–1,391; Recital 921–1,083; Concert 1,493–1,629; Cabaret 1,324–1,504; in-the-round 1,845–1,934. Use event configuration; these are one room, not six venues. GA standing unconfirmed. Source: https://ccpa.cerritos.gov/about-us/technical-specifications-and-contacts/' }],
     roof: 'indoor',
   },
@@ -2442,6 +2507,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Royce Hall' }],
     // OpenStreetMap point for the building (Royce Hall, Royce Drive), not an entrance.
     location: [-118.4422863, 34.0728448],
+    ticketmasterIds: ['KovZpZAFAtkA'],
     capacity: [{ seats: 1825, setup: 'concert', note: 'Official (concert). UCLA. The campus directory says 1,834. Official current rental: 1,825 seated; official campus event directory: 1,834. Prefer current hall rental count; revision year unconfirmed. Standing unconfirmed. Source: https://roycehall.org/rent/' }],
     roof: 'indoor',
   },
@@ -2451,6 +2517,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fred Kavli Theatre' }, { name: 'Fred Kavli Theatre at Bank of America Performing Arts Center' }, { name: 'Thousand Oaks Civic Arts Plaza' }],
     // OpenStreetMap point for the address (2100, East Thousand Oaks Boulevard), not an entrance.
     location: [-118.8478829, 34.1755812],
+    ticketmasterIds: ['KovZpZAEd1IA'],
     capacity: [{ seats: 1800, setup: 'concert', note: 'Official (concert). Thousand Oaks, Ventura County. Includes the removable pit-lift seats. The sponsor wording for the complex changed on an unconfirmed date. Official: 1,800 seated. Includes removable orchestra-pit lift seats; total with pit occupied by musicians unconfirmed. Standing unconfirmed. Source: https://bapacthousandoaks.com/storage/learn_more/bapacthousandoaks/2d069c62ff873b44cec2caeec7a28064933ae2be.pdf' }],
     roof: 'indoor',
   },
@@ -2460,6 +2527,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Valley Performing Arts Center' }, { name: 'The Soraya', from: '2017-07-18' }],
     // OpenStreetMap point for the building (Younes and Soraya Nazarian Center for the Performing Arts, 18111), not an entrance.
     location: [-118.5281129, 34.2362174],
+    ticketmasterIds: ['KovZpZAaaltA'],
     capacity: [{ seats: 1700, setup: 'concert', note: 'Official (concert). Cal State Northridge; the Younes and Soraya Nazarian Center for the Performing Arts. Official: 1,700 seated main hall. Onstage jazz-club presentation also used; its reduced audience total unconfirmed, not a second large room. Source: https://thesoraya.org/soraya-stories/en/csun-announces-executive-and-artistic-director/' }],
     roof: 'indoor',
   },
@@ -2478,6 +2546,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Theatre at Ace Hotel' }, { name: 'The United Theater on Broadway', from: '2024-02-01' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.256517, 34.041936],
+    ticketmasterIds: ['KovZpZAJ7AEA'],
     capacity: [{ seats: 1647, setup: 'concert', note: 'Official (concert). Downtown; the former United Artists theater. The Feb 2024 rename is reported by month. Official: 1,647 seated, comprising 825 orchestra and 822 balcony. Prefer current count over legacy reported approximately 1,600; standing unconfirmed. Source: https://theunitedtheater.com/about/' }],
     roof: 'indoor',
   },
@@ -2487,6 +2556,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Oxnard Performing Arts & Convention Center' }, { name: 'Oxnard Performing Arts Center' }],
     // The research's reported venue point, not an entrance.
     location: [-119.18851, 34.19306],
+    ticketmasterIds: ['KovZpZAallkA'],
     capacity: [{ seats: 1604, setup: 'concert', note: 'Official (concert). Ventura County. The auditorium; the convention rooms are separate. A promoter bills it "The Canyon at Oxnard PACC". Official city: 1,604 seated auditorium. Standing / concert floor conversion not established. Source: https://www.oxnard.gov/locations/oxnard-performing-arts-center' }],
     roof: 'indoor',
   },
@@ -2498,6 +2568,7 @@ export const VENUES: Record<string, Venue> = {
     closed: { from: '2024-01-01', note: 'Closed Jan 1, 2024 for renovation; a late-2026 reopening is expected, not confirmed. Source: https://grandvision.org/warner-grand-events/' },
     // The research's address estimate (Census), not an entrance.
     location: [-118.287411, 33.738812],
+    ticketmasterIds: ['KovZpZA1AetA'],
     capacity: [{ seats: 1525, setup: 'concert', note: 'Official (concert). San Pedro. Closed Jan 1, 2024 for renovation; a late-2026 reopening is expected, not confirmed. Kept for past dates. Official friends group: 1,525 seated pre-renovation. Closed January 1, 2024; late-2026 reopening expected, not confirmed accomplished. Post-renovation count unknown; history-only until reopened. Source: https://grandvision.org/warner-grand-events/' }],
     roof: 'indoor',
   },
@@ -2507,6 +2578,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Gilbert Arena' }],
     // OpenStreetMap point for the address (Gilbert Sports and Fitness Center, 130), not an entrance.
     location: [-118.8781265, 34.2263096],
+    ticketmasterIds: ['Z7r9jZa73z'],
     capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Cal Lutheran, Thousand Oaks. The campus rental limit is 1,000. Paid public events unconfirmed (provisional). Official athletics: 1,500 spectator seats; official campus rental maximum: 1,000, plus 560 dining. Prefer 1,500 for sports; 1,000 for unspecified rental only. Standing unconfirmed; paid public-event frequency provisional. Source: https://clusports.com/facilities/gilbert-arena/2' }],
     roof: 'indoor',
   },
@@ -2516,6 +2588,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Mayan' }, { name: 'Mayan Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.258945, 34.040995],
+    ticketmasterIds: ['KovZpZAEd1kA'],
     capacity: [{ seats: 1492, setup: 'concert', note: 'Reported (concert). Downtown, the same block as the Belasco. Reported tourism board: 1,492 inside, configuration unspecified; theater directory: 1,491 seated. Prefer tourism total provisionally for venue scale only; current concert seated/standing breakdown unconfirmed. Source: https://www.discoverlosangeles.com/things-to-do/mayan-theatre' }],
     roof: 'indoor',
   },
@@ -2525,6 +2598,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Redondo Beach Performing Arts Center' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.37807, 33.887434],
+    ticketmasterIds: ['KovZpZA1tvJA'],
     capacity: [{ seats: 1453, setup: 'concert', note: 'Official (concert). Official city: 1,453 seated theater. Standing unconfirmed. Source: https://www.redondo.org/FY%202024-25%20Adopted%20Budget%20BookV2.pdf' }],
     roof: 'indoor',
   },
@@ -2543,6 +2617,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Alex Theatre' }],
     // OpenStreetMap point for the address (216, North Brand Boulevard), not an entrance.
     location: [-118.255154, 34.1484434],
+    ticketmasterIds: ['KovZpa971e'],
     capacity: [{ seats: 1413, setup: 'concert', note: 'Reported (concert). Glendale. 768 orchestra, 181 terrace, 464 balcony; the city rounds to 1,400. Reported detailed inventory: 1,413 seated, comprising 768 orchestra, 181 terrace, 464 balcony. Official city rounds to 1,400. Prefer reported precise figure provisionally; standing unconfirmed. Source: https://www.glendaleca.gov/Home/Components/FacilityDirectory/FacilityDirectory/1250/36' }],
     roof: 'indoor',
   },
@@ -2552,6 +2627,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'San Gabriel Mission Playhouse' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.108985, 34.098257],
+    ticketmasterIds: ['KovZ917ACN0'],
     capacity: [{ seats: 1387, setup: 'concert', note: 'Official (concert). Includes 30 house seats that may not sell. Official: 1,387 seated, including 30 venue house seats; these may not be sellable for every show. No later inventory change established. Standing unconfirmed. Source: https://missionplayhouse.org/wp-content/uploads/2017-18-RENTAL-PACKET-MISSION-PLAYHOUSE-revised-May-21-2018-1.pdf' }],
     roof: 'indoor',
   },
@@ -2561,6 +2637,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Wilshire Ebell Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.324465, 34.061213],
+    ticketmasterIds: ['KovZpZA7v6tA'],
     capacity: [{ seats: 1266, setup: 'concert', note: 'Official (concert). Official: 1,266 seated. Prefer current owner count over rounded directory totals. Standing unconfirmed. Source: https://www.ebellofla.org/about-us' }],
     roof: 'indoor',
   },
@@ -2570,6 +2647,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'La Mirada Theatre for the Performing Arts' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.009856, 33.896171],
+    ticketmasterIds: ['ZFr9jZk11d'],
     capacity: [{ seats: 1261, setup: 'concert', note: 'Official (concert). 789 orchestra, 472 balcony. Official: 1,261 seated, comprising 789 orchestra and 472 balcony. Standing unconfirmed. Source: https://lamiradatheatre.com/theatre-rental/' }],
     roof: 'indoor',
   },
@@ -2579,6 +2657,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ambassador Auditorium' }],
     // OpenStreetMap point for the address (Ambassador Auditorium, 131), not an entrance.
     location: [-118.1565024, 34.1434799],
+    ticketmasterIds: ['KovZpZAAttIA'],
     capacity: [{ seats: 1232, setup: 'concert', note: 'Official (concert). Pasadena. 1,262 is also reported. A regular public series is unconfirmed (provisional). Official rental: 1,232 seated; reported encyclopedia: 1,262. Prefer current official rental. Current recurring paid-series frequency and exact setup inventory need confirmation; provisional record. Source: https://afpasadena.org/alison-event-spaces/' }],
     roof: 'indoor',
   },
@@ -2588,6 +2667,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Fonda Theatre' }, { name: 'Fonda Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.322732, 34.10159],
+    ticketmasterIds: ['KovZpZAFAkIA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Official (concert). Hollywood. 633 seated in a theater setup; the 800 main floor is part of the 1,200. Official current: 1,200 maximum / 633 theater seated / 800 main floor. Main-floor count is a component, not an extra 800 over total. Source: https://online.flippingbook.com/view/621208/' }],
     roof: 'indoor',
   },
@@ -2597,6 +2677,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Vermont Hollywood', from: '2021-01-01' }, { name: 'The Vermont' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.291663, 34.090011],
+    ticketmasterIds: ['KovZ917At7I'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Official (concert). East Hollywood; opened 2021 (the year is stored). Official production deck: 1,200; official technical specification: 1,200+. Prefer stated 1,200 provisionally; seated/standing split unconfirmed. Source: https://www.vermonthollywood.com/files/Vermont%20Production%20Deck.pdf' }],
     roof: 'indoor',
   },
@@ -2606,6 +2687,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'John Anson Ford Amphitheatre' }, { name: 'The Ford' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.33577, 34.114327],
+    ticketmasterIds: ['KovZpZAaannA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Official (concert). Hollywood Hills, across the freeway from the Hollywood Bowl. The LA Phil has run it since 2020; "The Ford" is marketing, with no dated rename. Official: 1,200 seated outdoor amphitheater. GA standing setup unconfirmed. Source: https://www.laphil.com/posts/gail-samuel-appointed-president-of-the-hollywood-bowl-and-chief-operating-officer-of-the-los-angeles-philharmonic-association' }],
     roof: 'open',
   },
@@ -2615,6 +2697,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Libbey Bowl' }],
     // OpenStreetMap point for the address (210, South Signal Street), not an entrance.
     location: [-119.2458406, 34.4465888],
+    ticketmasterIds: ['KovZpZAJtF6A'],
     capacity: [{ seats: 973, standing: 1273, setup: 'concert', note: 'Official (concert). Ojai, Ventura County. 973 fixed seats plus 200–300 on the lawn (kept as standing room). Official: 973 fixed seats plus 200–300 lawn audience. Estimated combined total: 1,173–1,273 from published components. Include because combined ticketed format exceeds cutoff; exact event lawn availability varies. Source: https://www.libbeybowl.org/info' }],
     roof: 'open',
   },
@@ -2624,6 +2707,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Exchange LA' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.25138, 34.045413],
+    ticketmasterIds: ['KovZpZAEd16A'],
     capacity: [{ seats: 1150, setup: 'concert', note: 'Reported (concert). Downtown, the former stock exchange. The main trading floor: 1,150 standing, 1,050 seated; the whole building is reported at 1,500. Reported main trading floor: 1,150 standing / 1,050 seated; whole venue reported 1,500. Prefer room-specific figures provisionally; full-house circulation limit is not main-floor audience. Source: https://thevendry.com/venue/122162/exchange-la-los-angeles-ca' }],
     roof: 'indoor',
   },
@@ -2642,6 +2726,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'McCallum Theatre' }],
     // OpenStreetMap point for the address (73000, Fred Waring Drive), not an entrance.
     location: [-116.391063, 33.728827],
+    ticketmasterIds: ['KovZpZAalnIA'],
     capacity: [{ seats: 1127, setup: 'concert', note: 'Official (concert). Palm Desert, Coachella Valley. Official: 1,127 seated in July 2022 specification posted in 2025; pit / production removals alter saleable seats. Standing unconfirmed. Source: https://www.mccallumtheatre.org/app/uploads/2025/10/Facility-Specs-2025.pdf' }],
     roof: 'indoor',
   },
@@ -2651,6 +2736,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Avalon Hollywood' }, { name: 'Avalon' }],
     // The research's official routing point, not an entrance.
     location: [-118.327308, 34.103345],
+    ticketmasterIds: ['KovZ917AI1p', 'KovZpZAaantA'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official (concert). BARDOT (300) is a separate room in the building; 1,400 is the two combined. Official: AVALON 1,100 standing; published seated range 400–600, precise room scope not explicit. AVALON+BARDOT combined official 1,400 standing; BARDOT alone official 300. Use 1,100 for AVALON; do not import combined figure. Source: https://avalonhollywood.com/hollywood-event-space-rental/' }],
     roof: 'indoor',
   },
@@ -2660,6 +2746,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Regent Theater' }, { name: 'Regent Theater' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.247949, 34.047222],
+    ticketmasterIds: ['KovZpZAJ6daA'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official (concert). Downtown. "1,100+". Official: 1,100+ maximum. Exact seated / GA split unconfirmed; approximate upper figure must not imply exact sellable count. Source: https://regentdtla.com/rentals/' }],
     roof: 'indoor',
   },
@@ -2669,6 +2756,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Palace Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-118.252402, 34.046156],
+    ticketmasterIds: ['KovZpZAJE1vA'],
     capacity: [{ seats: 1068, setup: 'concert', note: 'Official (concert). Broadway, downtown. 608 floor, 460 mezzanine. A recurring concert or comedy program is not established (provisional). Official current: 1,068 seated, comprising 608 floor and 460 mezzanine. Original historic theater total is not current usable inventory. Recurring qualifying concert/comedy program not established; provisional, public screenings alone do not establish concert series. Source: https://palacedowntown.com/venue-specs' }],
     roof: 'indoor',
   },
@@ -2678,6 +2766,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Carpenter Performing Arts Center' }],
     // OpenStreetMap point for the address (Carpenter Performing Arts Center, 6200), not an entrance.
     location: [-118.1119628, 33.7881964],
+    ticketmasterIds: ['KovZpZAaEkAA'],
     capacity: [{ seats: 1054, setup: 'concert', note: 'Official (concert). Cal State Long Beach; same campus as the Pyramid. Official: 1,054 seated. Standing unconfirmed. Source: https://www.carpenterarts.org/about/mission-history' }],
     roof: 'indoor',
   },
@@ -2687,6 +2776,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Musco Center for the Arts', from: '2016-03-01' }],
     // OpenStreetMap point for the address (415, North Glassell Street), not an entrance.
     location: [-117.8529862, 33.7936181],
+    ticketmasterIds: ['Z7r9jZadaC'],
     capacity: [{ seats: 1044, setup: 'concert', note: 'Official (concert). Chapman University, Orange; opened March 2016. Official: 1,044 seated. Standing unconfirmed. Source: https://www.chapman.edu/campus-services/event-operations/external-events/performance-venues.aspx' }],
     roof: 'indoor',
   },
@@ -2723,6 +2813,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Observatory' }, { name: 'Observatory Orange County' }, { name: 'The Observatory Orange County' }],
     // The research's address estimate (Census), not an entrance.
     location: [-117.919365, 33.700546],
+    ticketmasterIds: ['KovZpZAF6JkA'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official (concert). Santa Ana. The Constellation Room (250) is separate. Official ticketing affiliate: 1,000 audience. Main hall seated layout not established from readable current operator text; no assumed seated count. Constellation Room\'s official 250 is a separate room and excluded. Source: https://blog.ticketmaster.com/venue-faq-observatory-oc-santa-ana-ca/' }],
     roof: 'indoor',
   },
@@ -2732,6 +2823,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Yost Theater' }, { name: 'Yost Theatre' }],
     // The research's address estimate (Census), not an entrance.
     location: [-117.865514, 33.747235],
+    ticketmasterIds: ['KovZpZA7dvEA'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official (concert). Santa Ana. Up to 1,000 standing; the site now stresses private events, so recurring public shows need rechecking (provisional). Official current: up to 1,000 standing; seated concert limit unconfirmed. Current website emphasizes private events; recurring paid public programming needs revalidation before active import. Source: https://www.theyosttheater.com/main-theater' }],
     roof: 'indoor',
   },
@@ -2743,6 +2835,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'House of Blues Anaheim', from: '2017-03-01' }],
     // OpenStreetMap point for Anaheim GardenWalk (the AMC inside it), not the club's door.
     location: [-117.9123866, 33.8058754],
+    ticketmasterIds: ['KovZpZAEA67A'],
     capacity: [{ seats: 1700, setup: 'concert', note: 'Official (Live Nation rental page): a 1,700-capacity music setting; 3,300 for the whole property. Reported: 2,200 at the 2017 opening for the concert setup. The rental figure is stored until a production plan settles one concert maximum (small-rooms research, Oct 16, 2026). Source: https://specialevents.livenation.com/venues/house-of-blues-anaheim' }],
     roof: 'indoor',
   },
@@ -2773,6 +2866,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.86,
     names: [{ name: 'Nationwide Arena' }],
     location: [-83.00608, 39.96919],
+    ticketmasterIds: ['KovZpZA6kelA'],
     capacity: [
       { seats: 18500, setup: 'hockey', note: 'Official. Fan wiki lists 18,144 (older). End-stage concerts are a range (13,000–18,000), not a single figure. Source: https://www.nationwidearena.com/arena-info' },
       { seats: 19500, setup: 'basketball', note: 'Official. Source: https://www.nationwidearena.com/arena-info' },
@@ -2791,6 +2885,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Value City Arena at the Jerome Schottenstein Center' },
     ],
     location: [-83.02496, 40.0076],
+    ticketmasterIds: ['KovZpZA6A1EA'],
     capacity: [
       { seats: 18809, setup: 'basketball', note: 'Reported (Wikipedia) for OSU basketball. Official full bowl is up to 20,000; curtained setups are a 3,000–7,000 range, not one number. Architect program cited 19,500. Source: https://en.wikipedia.org/wiki/Value_City_Arena' },
       { seats: 17500, setup: 'hockey', note: 'Reported (Wikipedia). Total seats also reported at 19,049. Source: https://en.wikipedia.org/wiki/Value_City_Arena' },
@@ -2808,6 +2903,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'ScottsMiracle-Gro Field', from: '2026-01-01' },
     ],
     location: [-83.01666, 39.96836],
+    ticketmasterIds: ['Za5ju3rKuqZDejXBtn8QoaqFiUZf_HTVY7', 'KovZ917AJ1C'],
     capacity: [{
       seats: 20371,
       setup: 'soccer',
@@ -2825,6 +2921,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Historic Crew Stadium', from: '2020-12-01' },
     ],
     location: [-82.99114, 40.00947],
+    ticketmasterIds: ['Za5ju3rKuqZDv-CjYMKU_2sBMMYJK7SRQ2', 'KovZpZAEe6AA'],
     capacity: [{
       seats: 19968,
       note: 'Reported gridiron/UFL figure. Also reported: 21,000 (Columbus Navigator) and 27,000 (Dispatch via AOL, configuration not stated — possibly a field or festival floor, unverified, not stored). Sonic Temple uses the bowl plus outside stages; do not add stage crowds. Roof called open-air but marked unsourced in the research. Source: https://en.wikipedia.org/wiki/2026_UFL_season',
@@ -2836,6 +2933,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'St. John Arena' }],
     location: [-83.01913, 40.00541],
+    ticketmasterIds: ['KovZpZAEAtFA'],
     capacity: [{
       seats: 13276,
       setup: 'basketball',
@@ -2874,6 +2972,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Huntington Park' }],
     location: [-83.01091, 39.96873],
+    ticketmasterIds: ['KovZpa2BVe'],
     capacity: [{
       seats: 10100,
       setup: 'baseball',
@@ -2886,6 +2985,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Jesse Owens Memorial Stadium' }],
     location: [-83.02762, 40.01232],
+    ticketmasterIds: ['KovZpZAEAnvA'],
     capacity: [
       { seats: 10000, note: 'Official billed total on the same OSU page that lists the East Grandstand at 3,242 fixed seats. The other seats are unreconciled. Fixed seating alone would sit under 5,000. Source: https://ohiostatebuckeyes.com/sports/2023/5/22/jesse-owens-memorial-stadium' },
       { seats: 3242, setup: 'track', note: 'Official East Grandstand seats only, same page. Not a second crowd.' },
@@ -2898,6 +2998,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Selby Stadium' }],
     // NRHP / Wikipedia point (~10 m). Nominatim did not resolve the stadium name.
     location: [-83.06361, 40.29667],
+    ticketmasterIds: ['ZFr9jZa11v'],
     capacity: [{
       seats: 9100,
       setup: 'football',
@@ -2910,6 +3011,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Fortress Obetz' }],
     location: [-82.94446, 39.88582],
+    ticketmasterIds: ['KovZ917Ao17'],
     capacity: [{
       seats: 6500,
       note: 'Reported grandstand (1,100 flip-down + 2,000 bench-back + 3,400 bleacher). Tenant page says 6,500+. Typical events are community and high-school; crowds unknown. Source: https://en.wikipedia.org/wiki/Fortress_Obetz',
@@ -2922,6 +3024,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Battelle Hall' }, { name: 'Battelle Grand' }],
     // Parent convention-center point. The room itself was not a separate OSM hit.
     location: [-83.00115, 39.97188],
+    ticketmasterIds: ['KovZpapUke', 'KovZpZAaJ1vA'],
     capacity: [{
       seats: 5411,
       setup: 'concert',
@@ -2940,6 +3043,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'KEMBA Live!' },
     ],
     location: [-83.01005, 39.96977],
+    ticketmasterIds: ['KovZpZAEAtIA', 'KovZ917AIkj'],
     capacity: [{
       seats: 5200,
       setup: 'concert',
@@ -2965,6 +3069,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Nick Swisher Field' }, { name: 'Bill Davis Stadium' }],
     location: [-83.02602, 40.00968],
+    ticketmasterIds: ['KovZpZAEAneA'],
     // A Wanderlog guide says 4,450. The venue research labels that source weak and says not to rely on it. Capacity stays unknown.
     capacity: [],
     roof: 'open',
@@ -2975,6 +3080,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Covelli Center' }],
     // OSM way "Covelli Center & Jennings Wrestling Facility". Not Youngstown's Covelli Centre.
     location: [-83.02774, 40.01385],
+    ticketmasterIds: ['KovZ917A-LH'],
     capacity: [{
       seats: 3700,
       note: 'Reported approximate (~3,700). Volleyball, wrestling and gymnastics since 2019. Source: https://myfox28columbus.com/sports/content/sneak-peak-of-new-covelli-center-at-ohio-state',
@@ -2986,6 +3092,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Ohio Theatre' }],
     location: [-82.99894, 39.95989],
+    ticketmasterIds: ['KovZpZAEAAdA'],
     capacity: [{
       seats: 2779,
       setup: 'concert',
@@ -2998,6 +3105,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Palace Theatre' }],
     location: [-83.00194, 39.96259],
+    ticketmasterIds: ['KovZpZAEAA7A'],
     capacity: [{
       seats: 2695,
       setup: 'concert',
@@ -3010,6 +3118,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Mershon Auditorium' }],
     location: [-83.00896, 40.00052],
+    ticketmasterIds: ['KovZpaoyie'],
     capacity: [{
       seats: 2477,
       setup: 'concert',
@@ -3022,6 +3131,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Newport Music Hall' }],
     location: [-83.00709, 39.99747],
+    ticketmasterIds: ['KovZpZAEAt6A'],
     capacity: [{
       seats: 1700,
       setup: 'concert',
@@ -3034,6 +3144,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Branch Rickey Arena' }],
     location: [-83.06643, 40.2949],
+    ticketmasterIds: ['KovZpZAJ7IdA'],
     capacity: [{
       seats: 1450,
       setup: 'basketball',
@@ -3047,6 +3158,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Midland Theatre' }],
     // OSM at 36 N Park Place. A research database point sits about 120 m away; precision there was unknown.
     location: [-82.40167, 40.05915],
+    ticketmasterIds: ['KovZpZAE666A'],
     capacity: [{
       seats: 1200,
       setup: 'concert',
@@ -3071,6 +3183,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Ohio State Lacrosse Stadium' }],
     location: [-83.02598, 40.01412],
+    ticketmasterIds: ['KovZ917AtI8'],
     // A Wanderlog guide says 2,000. The venue research labels that source weak. Capacity stays unknown.
     capacity: [],
     roof: 'open',
@@ -3514,6 +3627,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Prospect Park Bandshell' }, { name: 'Lena Horne Bandshell', from: '2021-01-01' }],
     // OpenStreetMap point for the bandshell, not a gate. The rename year is reported; the exact date is not.
     location: [-73.9766333, 40.6633738],
+    ticketmasterIds: ['KovZpZAFkndA'],
     capacity: [{ seats: 8000, setup: 'concert', note: 'Official: more than 8,000 at a festival show (BRIC); seated and lawn split unconfirmed. Ticketed benefit shows; most Celebrate Brooklyn nights are free. Source: https://bricartsmedia.org/event/benefit-show-patti-labelle/' }],
     roof: 'open',
   },
@@ -3532,6 +3646,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Brooklyn Storehouse', from: '2024-05-21' }],
     // The Navy Yard's main address (141 Flushing Avenue), not the building: Building 293 on Assembly Road is not on OpenStreetMap.
     location: [-73.9709818, 40.698258],
+    ticketmasterIds: ['KovZ917AV7S'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official: 5,000 maximum (operator overview); seated and standing split not published. Larger directory claims not used. Source: https://brooklynstorehouse.com/app/uploads/2025/08/brooklyn-storehouse-venueoverview-privatehire.pdf' }],
     roof: 'indoor',
   },
@@ -3540,6 +3655,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Yogi Berra Stadium' }],
     location: [-74.195247, 40.868734],
+    ticketmasterIds: ['KovZpZA1n1kA'],
     capacity: [{ seats: 3784, standing: 5000, setup: 'baseball', note: 'Official: nearly 3,800 fixed seats, nearly 5,000 with the lawn (kept as standing room). Montclair State; the New Jersey Jackals played here through 2022; regular paid events in 2026 unconfirmed. Source: https://montclairathletics.com/facilities/yogi-berra-stadium/4' }],
     roof: 'open',
   },
@@ -3549,6 +3665,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Stone Pony Summer Stage' }],
     // The club's point, not a Summer Stage gate.
     location: [-74.00058, 40.21995],
+    ticketmasterIds: ['KovZpZAatk1A'],
     capacity: [{ seats: 4500, setup: 'concert', note: 'Official: about 4,500 outdoors. The indoor club (about 850) is a separate, smaller room. Source: https://www.stoneponyonline.com/history/' }],
     roof: 'open',
   },
@@ -3599,6 +3716,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Rooftop at Pier 17' }],
     // OpenStreetMap point for the Pier 17 building.
     location: [-74.0015738, 40.7055221],
+    ticketmasterIds: ['KovZpZAatEFA'],
     capacity: [{ seats: 3500, setup: 'concert', note: 'Official: 3,500 standing, 2,266 seated (operator). Concerts since 2018. Source: https://theseaport.nyc/the-rooftop-at-pier-17-venue/' }],
     roof: 'open',
   },
@@ -3607,6 +3725,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'United Palace' }],
     location: [-73.9381, 40.8464],
+    ticketmasterIds: ['KovZpZAaadEA'],
     capacity: [{ seats: 3344, setup: 'concert', note: 'Official: up to 3,344 seated (tech pack, read only through a search index; the PDF would not open). Reported 3,293. Source: https://unitedpalaceevents.com/wp-content/uploads/2024/10/TECHPACK-0824EN.pdf' }],
     roof: 'indoor',
   },
@@ -3615,6 +3734,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Kings Theatre' }],
     location: [-73.9575, 40.6458],
+    ticketmasterIds: ['KovZpZAJEa6A'],
     capacity: [{ seats: 3250, setup: 'concert', note: 'Reported: 3,250 seated; the operator says more than 3,000. Removable orchestra seats allow a pit; that total is unconfirmed. Source: https://en.wikipedia.org/wiki/Kings_Theatre_(Brooklyn)' }],
     roof: 'indoor',
   },
@@ -3639,6 +3759,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Prudential Hall' }, { name: 'New Jersey Performing Arts Center' }, { name: 'NJPAC' }],
     location: [-74.1679199, 40.7401467],
+    ticketmasterIds: ['KovZ917Axie', 'Za5ju3rKuqZDv8hs9bmry27DHaGvWSwi-y', 'Z7r9jZadBb', 'KovZpa6Vxe'],
     capacity: [{ seats: 2868, setup: 'concert', note: 'Official: 2,868 seated (NJPAC). Not Prudential Center, the arena. Source: https://www.njpac.org/venue/prudential-hall-betty-wold-johnson-stage/' }],
     roof: 'indoor',
   },
@@ -3647,6 +3768,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Beacon Theatre' }],
     location: [-73.98111, 40.78056],
+    ticketmasterIds: ['KovZpZAEAd6A'],
     capacity: [{ seats: 2800, setup: 'concert', note: 'Official: 2,800 (MSG rental page); MSG\'s overview says 2,829; reported 2,894. Source: https://www.msg.com/venue-rentals/beacon-theatre' }],
     roof: 'indoor',
   },
@@ -3656,6 +3778,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'NYCB Theatre at Westbury' }, { name: 'NYCB at Westbury Theatre', from: '2018-01-01' }, { name: 'Flagstar at Westbury Music Fair', from: '2024-03-07' }],
     // The 2018 name change is reported by year only.
     location: [-73.55833, 40.77333],
+    ticketmasterIds: ['KovZpZAEAEaA'],
     capacity: [{ seats: 2800, setup: 'concert', note: 'Official: 2,800 full theater (in the round), 1,900 reduced. Reported legacy 2,870. Source: https://www.flagstaratwestburymusicfair.com/private-events' }],
     roof: 'indoor',
   },
@@ -3664,6 +3787,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Sarah Vaughan Concert Hall' }, { name: 'Newark Symphony Hall' }],
     location: [-74.17639, 40.72778],
+    ticketmasterIds: ['KovZpZAdJatA'],
     capacity: [{ seats: 2800, setup: 'concert', note: 'Official: 2,800 seated (Sarah Vaughan Concert Hall). Source: https://newarksymphonyhall.org/book-our-venue/' }],
     roof: 'indoor',
   },
@@ -3672,6 +3796,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Terminal 5' }],
     location: [-73.99275, 40.76965],
+    ticketmasterIds: ['KovZpZAFkn6A'],
     capacity: [{ seats: 2800, setup: 'concert', note: 'Official: 2,800 standing, 1,000 seated (AEG). Source: https://aegsev.com/venues/venue-detail/index.php?venue=terminal-5' }],
     roof: 'indoor',
   },
@@ -3680,6 +3805,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Stern Auditorium / Perelman Stage' }, { name: 'Carnegie Hall' }],
     location: [-73.98, 40.765],
+    ticketmasterIds: ['ZFr9jZ117e', 'KovZpZA1dnJA'],
     capacity: [{ seats: 2790, setup: 'concert', note: 'Official: 2,790 seated in Stern Auditorium (Sep 2025 tech specs); Carnegie\'s archive keeps 2,804. Zankel and Weill are smaller rooms. Source: https://www.carnegiehall.org/-/media/Events-Portal/PerformanceHalls/Stern/House-Procedures/Tech-Specs.pdf' }],
     roof: 'indoor',
   },
@@ -3688,6 +3814,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Brooklyn Paramount', from: '2024-03-27' }],
     location: [-73.9808956, 40.6903256],
+    ticketmasterIds: ['KovZpZA77ldA'],
     capacity: [{ seats: 2700, setup: 'concert', note: 'Official: 2,700 (Live Nation, at the March 2024 reopening); reported 1,300 seated. LIU Brooklyn campus. Source: https://ebs.publicnow.com/view/078AFB86BC599AD6F0C81760C2A24D735602AB96' }],
     roof: 'indoor',
   },
@@ -3696,6 +3823,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Levien Gymnasium' }],
     location: [-73.9617151, 40.8097897],
+    ticketmasterIds: ['ZFr9jZaveF'],
     capacity: [{ seats: 2700, setup: 'basketball', note: 'Official (Columbia). Source: https://gocolumbialions.com/facilities/levien-gymnasium/14' }],
     roof: 'indoor',
   },
@@ -3704,6 +3832,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'David H. Koch Theater' }],
     location: [-73.98361, 40.77194],
+    ticketmasterIds: ['ZFr9jZd67d'],
     capacity: [{ seats: 2586, setup: 'concert', note: 'Reported. Lincoln Center. Source: https://en.wikipedia.org/wiki/David_H._Koch_Theater' }],
     roof: 'indoor',
   },
@@ -3712,6 +3841,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Hynes Athletics Center' }],
     location: [-73.784325, 40.92664],
+    ticketmasterIds: ['ZFr9jZ6kdv'],
     capacity: [
       { seats: 2611, setup: 'basketball', note: 'Reported, before the 2019 renovation.' },
       { seats: 2578, setup: 'basketball', fromYear: 2019, note: 'Official (Iona), after the summer 2019 renovation. Source: https://ionagaels.com/facilities/hynes-athletics-center/14' },
@@ -3723,6 +3853,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Steinberg Wellness Center' }],
     location: [-73.979176, 40.69059],
+    ticketmasterIds: ['KovZ917AG_V'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Reported. LIU Brooklyn, same campus as Brooklyn Paramount. Source: https://en.wikipedia.org/wiki/Steinberg_Wellness_Center' }],
     roof: 'indoor',
   },
@@ -3740,6 +3871,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Wellmont Theatre' }, { name: 'The Wellmont Theater' }],
     location: [-74.2166, 40.8126],
+    ticketmasterIds: ['KovZpZAJvIeA'],
     capacity: [{ seats: 2500, setup: 'concert', note: 'Official: nearly 2,500, flexible concert setup; seated total not published. Source: https://wellmonttheater.com/venue/' }],
     roof: 'indoor',
   },
@@ -3748,6 +3880,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Draddy Gymnasium' }],
     location: [-73.900158, 40.89073],
+    ticketmasterIds: ['Z7r9jZa7MX'],
     capacity: [{ seats: 2345, setup: 'basketball', note: 'Reported (Stadium Journey, 2025). Manhattan University. Source: https://www.stadiumjourney.com/stadiums/draddy-gymnasium-s554' }],
     roof: 'indoor',
   },
@@ -3757,6 +3890,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lehman Center for the Performing Arts' }],
     // OpenStreetMap point for the building.
     location: [-73.8926438, 40.8745077],
+    ticketmasterIds: ['KovZ917ARQ0'],
     capacity: [{ seats: 2265, setup: 'concert', note: 'Official: 2,265 seated (rental page); the college catalog says 2,310. Source: https://www.lehmancenter.org/rent' }],
     roof: 'indoor',
   },
@@ -3774,6 +3908,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Carteret Performing Arts & Events Center' }, { name: 'URSB Carteret Performing Arts & Events Center', from: '2023-01-01' }],
     // OpenStreetMap point for 46 Washington Avenue. The sponsor name is documented by 2023; the date is not.
     location: [-74.2215496, 40.5761408],
+    ticketmasterIds: ['Z7r9jZa7nj'],
     capacity: [{ seats: 1600, standing: 2200, setup: 'concert', note: 'Official: 1,100–1,600 seated main stage; 2,200+ standing or expo (kept as standing). Opened 2021. Source: https://carteretpac.com/rent-the-cpac/' }],
     roof: 'indoor',
   },
@@ -3805,6 +3940,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'PlayStation Theater' }, { name: 'Palladium Times Square', from: '2020-01-01' }],
     // The venue gives the rename year only.
     location: [-73.98639, 40.75778],
+    ticketmasterIds: ['KovZpaFtpe'],
     capacity: [{ seats: 2150, setup: 'concert', note: 'Reported: 2,150 concert, 1,150 seated (Times Square Alliance). Below One Astor Plaza. Source: https://www.timessquarenyc.org/business-community/meeting-event-spaces' }],
     roof: 'indoor',
   },
@@ -3821,6 +3957,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'BAM Howard Gilman Opera House' }],
     location: [-73.97806, 40.68639],
+    ticketmasterIds: ['KovZpZAa1nlA'],
     capacity: [{ seats: 2096, setup: 'concert', note: 'Official (BAM). Source: https://www.bam.org/rentals/howard-gilman-opera-house' }],
     roof: 'indoor',
   },
@@ -3829,6 +3966,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Colden Auditorium' }],
     location: [-73.815746, 40.737854],
+    ticketmasterIds: ['KovZpZAIdJ1A', 'KovZpZA7A6tA'],
     capacity: [{ seats: 2083, setup: 'concert', note: 'Official: 2,083 (Kupferberg Center rentals); an older venue sheet says 2,140. Queens College. Source: https://kupferbergcenter.org/rentals/' }],
     roof: 'indoor',
   },
@@ -3837,6 +3975,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'The Capitol Theatre' }],
     location: [-73.66556, 41.00167],
+    ticketmasterIds: ['KovZ917Ax6H'],
     capacity: [{ seats: 2002, setup: 'concert', note: 'Official: 2,002 with a standing floor, 1,527 fully seated. Source: https://www.thecapitoltheatre.com/private-events' }],
     roof: 'indoor',
   },
@@ -3845,6 +3984,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Starland Ballroom' }],
     location: [-74.35528, 40.44028],
+    ticketmasterIds: ['KovZpaFbwe'],
     capacity: [{ seats: 2000, setup: 'concert', note: 'Official: 2,000 (AEG 2026 brochure); AEG\'s rental page says 2,500. Source: https://online.flippingbook.com/view/621208/74/' }],
     roof: 'indoor',
   },
@@ -3853,6 +3993,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'St. George Theatre' }],
     location: [-74.0775222, 40.6420083],
+    ticketmasterIds: ['KovZpa4PZe'],
     capacity: [{ seats: 1900, setup: 'concert', note: 'Official: about 1,900; reported 1,903. Source: https://stgeorgetheatre.com/our-history/' }],
     roof: 'indoor',
   },
@@ -3861,6 +4002,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Rothman Center' }, { name: 'Bogota Savings Bank Center', from: '2024-01-18' }],
     location: [-74.0324, 40.8967],
+    ticketmasterIds: ['Z7r9jZadcn'],
     capacity: [{ seats: 1852, setup: 'basketball', note: 'Official (FDU athletics). A campus page\'s 5,000 has no layout and is not used. Source: https://fduknights.com/facilities/bogota-savings-bank-center/1' }],
     roof: 'indoor',
   },
@@ -3869,6 +4011,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'State Theatre New Jersey' }],
     location: [-74.44462, 40.493341],
+    ticketmasterIds: ['KovZpZAdEktA'],
     capacity: [
       { seats: 1850, setup: 'concert', note: 'Reported, before the renovation.' },
       { seats: 1811, setup: 'concert', fromYear: 2021, note: 'Official, after renovations finished October 2021. Source: https://www.stnj.org/virtual-tour' },
@@ -3880,6 +4023,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Brooklyn Steel' }],
     location: [-73.938783, 40.719366],
+    ticketmasterIds: ['KovZ917AC-V'],
     capacity: [{ seats: 1800, setup: 'concert', note: 'Official: 1,800 standing, 600 seated (AEG). Opened April 2017. Source: https://aegsev.com/venues/venue-detail/index.php?venue=brooklyn-steel' }],
     roof: 'indoor',
   },
@@ -3889,6 +4033,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Space at Westbury Theater' }, { name: 'The Space at Westbury' }],
     // OpenStreetMap point (250 Post Avenue).
     location: [-73.5874735, 40.7581919],
+    ticketmasterIds: ['KovZpZAJvEIA', 'KovZpZA67vEA'],
     capacity: [{ seats: 1700, setup: 'concert', note: 'Reported: 1,700 standing, 800 seated (Westbury BID). Source: https://westburybid.org/businesses/united-states/new-york/westbury/general/the-space-at-westbury-theater/' }],
     roof: 'indoor',
   },
@@ -3898,6 +4043,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Paramount in concert with Northwell' }, { name: 'The Paramount' }],
     // OpenStreetMap point for the theater.
     location: [-73.4256195, 40.8697559],
+    ticketmasterIds: ['KovZpZAEAEtA'],
     capacity: [{ seats: 1573, setup: 'concert', note: 'Official: up to 1,573 (standing, hybrid or seated; each setup\'s limit not published). Source: https://www.paramountny.com/info' }],
     roof: 'indoor',
   },
@@ -3906,6 +4052,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Count Basie Theatre' }, { name: 'Hackensack Meridian Health Theatre', from: '2018-10-26' }, { name: 'Hackensack Meridian Health Theatre at the Count Basie Center', from: '2018-10-26' }],
     location: [-74.0701, 40.349],
+    ticketmasterIds: ['KovZ917A8C7'],
     capacity: [{ seats: 1568, setup: 'concert', note: 'Reported: 1,568 seated. The Vogel is a separate smaller room. Source: https://en.wikipedia.org/wiki/Count_Basie_Center_for_the_Arts' }],
     roof: 'indoor',
   },
@@ -3916,6 +4063,7 @@ export const VENUES: Record<string, Venue> = {
     closed: { note: 'Closed for renovation; the Apollo expects a late-2026 reopening. Set `until` when a date is announced. Source: https://www.apollotheater.org/rent-the-apollo' },
     // OpenStreetMap point (253 West 125th Street).
     location: [-73.9499948, 40.8100895],
+    ticketmasterIds: ['KovZpZA7AAIA', 'KovZ917AJw7', 'KovZ917AJsB', 'KovZ917AmmX'],
     capacity: [{ seats: 1506, setup: 'concert', note: 'Reported 1,506; the Apollo says about 1,500. Closed for renovation, reopening expected late 2026; the new count is unknown. Kept for past nights. Source: https://www.apollotheater.org/rent-the-apollo' }],
     roof: 'indoor',
   },
@@ -3933,6 +4081,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'The Town Hall' }],
     location: [-73.9847, 40.756],
+    ticketmasterIds: ['KovZpZAFdJtA'],
     capacity: [{ seats: 1495, setup: 'concert', note: 'Reported: 1,495 fixed seats; the hall rounds to 1,500. Source: https://ovrtur.com/venue/1458' }],
     roof: 'indoor',
   },
@@ -3951,6 +4100,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Performing Arts Center, Purchase College' }],
     // Purchase College's campus point (OpenStreetMap has no point for the hall); about 300 m off at most.
     location: [-73.7023563, 41.0476826],
+    ticketmasterIds: ['ZFr9jZ7a6d'],
     capacity: [{ seats: 1372, setup: 'concert', note: 'Official: 1,372 seated Concert Hall. PepsiCo Theatre (713) is separate. Source: https://www.artscenter.org/facility-rentals/theatres/' }],
     roof: 'indoor',
   },
@@ -3959,6 +4109,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Bergen Performing Arts Center' }, { name: 'bergenPAC' }],
     location: [-73.9749, 40.89527],
+    ticketmasterIds: ['KovZpZAEAdJA'],
     capacity: [{ seats: 1367, setup: 'concert', note: 'Official (bergenPAC): 1,307 fixed plus 60 temporary. Source: https://www.bergenpac.org/corporate-events-private-parties' }],
     roof: 'indoor',
   },
@@ -3967,6 +4118,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Webster Hall' }],
     location: [-73.98917, 40.73167],
+    ticketmasterIds: ['KovZpa6WFe'],
     capacity: [{ seats: 1350, setup: 'concert', note: 'Official: 1,350 standing concert, 700 seated (AEG). Source: https://aeg-ms01.us-west1.gce.aegp.cloud/venues/venue-detail/index.php?venue=webster-hall' }],
     roof: 'indoor',
   },
@@ -3975,6 +4127,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Union County Performing Arts Center' }],
     location: [-74.2775, 40.61028],
+    ticketmasterIds: ['KovZpZA7dtlA', 'KovZpZA7dnvA', 'KovZpZA11JIA'],
     capacity: [{ seats: 1334, setup: 'concert', note: 'Official (UCPAC). Source: https://ucpac.org/venue-rentals/' }],
     roof: 'indoor',
   },
@@ -3983,6 +4136,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Mayo Performing Arts Center' }],
     location: [-74.47814, 40.79413],
+    ticketmasterIds: ['KovZpa90Xe'],
     capacity: [{ seats: 1319, setup: 'concert', note: 'Official: 1,319 (2020); the FAQ rounds to 1,300. Source: https://www.mayoarts.org/visitor-info/faqs/' }],
     roof: 'indoor',
   },
@@ -3991,6 +4145,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Walsh Gymnasium' }],
     location: [-74.244921, 40.74169],
+    ticketmasterIds: ['KovZpaoMne'],
     capacity: [{ seats: 1316, setup: 'basketball', note: 'Official (Seton Hall); renovated 2021. Source: https://shupirates.com/facilities/walsh-gymnasium/1' }],
     roof: 'indoor',
   },
@@ -3999,6 +4154,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Rose Theater' }, { name: 'Jazz at Lincoln Center - Rose Theater' }],
     location: [-73.98306, 40.76917],
+    ticketmasterIds: ['KovZpZA11JJA'],
     capacity: [{ seats: 1233, setup: 'concert', note: 'Official (Jazz at Lincoln Center). Source: https://press.jazz.org/press/2025/05/jazz-at-lincoln-center-announces-2025-26-season-mother-africa-a-season-of-world-premiere-commissions-and-unique-collaborations-celebrating-jazz-africa-and-the-african-diaspora-and-in-person-an/' }],
     roof: 'indoor',
   },
@@ -4015,6 +4171,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Irving Plaza Powered By Verizon 5G' }, { name: 'Irving Plaza' }],
     location: [-73.98833, 40.735],
+    ticketmasterIds: ['KovZpaFPje'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official: 1,100 (Live Nation); reported 1,200 for concerts in 2021. Source: https://specialevents.livenation.com/venues/irving-plaza' }],
     roof: 'indoor',
   },
@@ -4024,6 +4181,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Warsaw' }],
     // OpenStreetMap point (Driggs Avenue).
     location: [-73.9484696, 40.7223925],
+    ticketmasterIds: ['KovZpZAdJtAA'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official: 1,100 (Live Nation); reported 500 seated. Polish National Home. Source: https://specialevents.livenation.com/venues/warsaw' }],
     roof: 'indoor',
   },
@@ -4032,6 +4190,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Alice Tully Hall' }],
     location: [-73.98222, 40.77333],
+    ticketmasterIds: ['KovZpZAkJFkA'],
     capacity: [{ seats: 1087, setup: 'concert', note: 'Official (Lincoln Center); reported 1,086. Source: https://lincolncenter.org/page/frequently-asked-questions' }],
     roof: 'indoor',
   },
@@ -4040,6 +4199,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Staller Center for the Arts' }],
     location: [-73.12147, 40.91571],
+    ticketmasterIds: ['ZFr9jZ6aAk'],
     capacity: [{ seats: 1078, setup: 'concert', note: 'Official: 1,078 with lift seating, 1,040 without (seat map). Stony Brook. Source: https://www.stallercenter.com/contact/_MainStageSeatMap.pdf' }],
     roof: 'indoor',
   },
@@ -4049,6 +4209,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Paramount Hudson Valley Theater' }],
     // OpenStreetMap point for 1008 Brown Street.
     location: [-73.9197014, 41.290206],
+    ticketmasterIds: ['ZFr9jZA1dF'],
     capacity: [{ seats: 1050, setup: 'concert', note: 'Official. Source: https://paramounthudsonvalley.com/rent-the-theater/' }],
     roof: 'indoor',
   },
@@ -4058,6 +4219,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Melrose Ballroom' }],
     // OpenStreetMap point (36-08 33rd Street).
     location: [-73.9286809, 40.7556197],
+    ticketmasterIds: ['KovZpZAEFelA'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Reported: 1,000 (a rental directory); provisional. Source: https://hirespace.com/Spaces/New-York/227821/Melrose-Ballroom/Main-Ballroom/Events' }],
     roof: 'indoor',
   },
@@ -4066,6 +4228,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Sony Hall', from: '2018-01-25' }],
     location: [-73.98694, 40.75944],
+    ticketmasterIds: ['KovZ917Ah5Q'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official: 1,000 standing, 500 seated (Sony). Basement of the Paramount Hotel. Source: https://www.sony.com/en/SonyInfo/News/Press/201801/18-012E/' }],
     roof: 'indoor',
   },
@@ -4091,6 +4254,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'High Point Solutions Stadium' }, { name: 'SHI Stadium', from: '2019-07-01' }],
     // OpenStreetMap point for the building (SHI Stadium, Sutphen Road), not an entrance.
     location: [-74.4651433, 40.5135037],
+    ticketmasterIds: ['KovZpaFr8e'],
     capacity: [{ seats: 52454, setup: 'football', note: 'Official (football). Rutgers, Busch campus (Piscataway). The rename month is July 2019; the day is not stored. The feed name is "SHI Stadium". Official: 52,454 football seats; alternate concert setup unconfirmed. Source: https://scarletknights.com/sports/2017/6/11/facilities-football-html' }],
     roof: 'open',
   },
@@ -4101,6 +4265,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hinchliffe Stadium' }],
     // OpenStreetMap point for the building (Hinchliffe Stadium, Liberty Street), not an entrance.
     location: [-74.1813221, 40.9183804],
+    ticketmasterIds: ['KovZpZAkt66A'],
     capacity: [{ seats: 10000, setup: 'baseball', note: 'Official (baseball). Paterson. Reopened May 19, 2023 after closing in 1997. Official: 10,000 seats; operator about page says 10,000+. Use 10,000 main-site figure; baseball-specific sellable inventory unconfirmed. Source: https://www.thehinchliffestadium.com/' }],
     roof: 'open',
   },
@@ -4111,6 +4276,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Louis Brown Athletic Center' }, { name: 'Rutgers Athletic Center', from: '2019-01-01' }, { name: 'Jersey Mike\'s Arena', from: '2021-11-01' }],
     // OpenStreetMap point for the building (Jersey Mike's Arena, 83), not an entrance.
     location: [-74.441356, 40.5251962],
+    ticketmasterIds: ['KovZpZA1JdEA'],
     capacity: [{ seats: 8000, setup: 'basketball', note: 'Reported (basketball). Rutgers, Livingston campus; "the RAC". The 2019 rename is by year, the 2021 one by month. Reported: 8,000 basketball / multipurpose seats; current university page confirms sports and naming, without retrieved exact inventory. Source: https://scarletknights.com/sports/2021/11/1/jersey-mikes-arena' }],
     roof: 'indoor',
   },
@@ -4121,6 +4287,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'FirstEnergy Park' }, { name: 'ShoreTown Ballpark', from: '2022-03-18' }],
     // OpenStreetMap point for the building (ShoreTown Ballpark, 2), not an entrance.
     location: [-74.1868893, 40.0750723],
+    ticketmasterIds: ['Z7r9jZadX9'],
     capacity: [{ seats: 6588, setup: 'baseball', note: 'Official (baseball). Jersey Shore BlueClaws, Lakewood. The berm is extra and unsized. Official: 6,588 seats plus GA berm; separate berm maximum unconfirmed. Do not interpret 6,588 as total event maximum. Source: https://www.mlb.com/milb/news/featured/visit-shoretown-ballpark-home-of-the-jersey-shore-blueclaws?t=mlb-pipeline-coverage' }],
     roof: 'open',
   },
@@ -4171,6 +4338,7 @@ export const VENUES: Record<string, Venue> = {
     closed: { until: '2026-11-13', note: 'Closed for restoration; the grand-opening weekend is Nov 13, 2026. Source: https://loewsjersey.com/' },
     // OpenStreetMap point for the building (Loew's Jersey Theatre, 54), not an entrance.
     location: [-74.0646602, 40.732415],
+    ticketmasterIds: ['KovZ917AVxp'],
     capacity: [{ seats: 3000, standing: 4000, note: 'Reported. Jersey City, Journal Square. Closed for restoration; the grand-opening weekend is scheduled for Nov 13, 2026. Nothing lists here until it reopens. Official: flexible audience range 2,600–4,000, without setup assignment. Contractor reports approximately 3,000 seated / 4,000 standing; older city plan said 3,300 seated. Use current operator range; exact seated count unconfirmed. Source: https://loewsjersey.com/about' }],
     roof: 'indoor',
   },
@@ -4200,6 +4368,7 @@ export const VENUES: Record<string, Venue> = {
     closed: { note: 'Closed to public events; the city announced a restoration award in Aug 2026, not a reopening. Source: https://cityofasburypark.com/530/Boardwalk-Preservation' },
     // OpenStreetMap point for the building (Asbury Park Convention Hall, Asbury Park Boardwalk), not an entrance.
     location: [-73.9980604, 40.2237365],
+    ticketmasterIds: ['KovZpZAdnEaA'],
     capacity: [{ seats: 3600, note: 'Reported. Asbury Park boardwalk; shares the building with the Paramount Theatre. Closed to public events; the city announced a restoration award in Aug 2026, not a reopening. Kept for past dates. Reported planning inventory: 3,600 seated. Current event configuration unavailable because room is inactive; do not schedule as an active room. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
     roof: 'indoor',
   },
@@ -4209,6 +4378,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Brooklyn Hangar' }],
     // OpenStreetMap point for the building (The Brooklyn Hangar, 2), not an entrance.
     location: [-74.0214726, 40.6497305],
+    ticketmasterIds: ['KovZ917A5cV'],
     capacity: [{ seats: 3000, note: 'Official. Sunset Park. The promoter says a 3,000-person venue; seated and standing are not split. Official promoter: 3,000-person venue; seated / standing split not published in retrieved description. Source: https://www.degpresents.com/venues' }],
     roof: 'indoor',
   },
@@ -4228,6 +4398,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Amazura' }, { name: 'Club Amazura' }],
     // OpenStreetMap point for the building (Amazura, 91-12), not an entrance.
     location: [-73.8103957, 40.7001801],
+    ticketmasterIds: ['Z7r9jZaAi2', 'KovZpZAaadIA'],
     capacity: [{ seats: 3000, note: 'Reported. Jamaica, Queens. Ticketed 2026 concerts are documented; the 3,000+ figure is a directory\'s. Reported: 3,000+ audience; seated / standing configuration not confirmed. Public ticketed 2026 concerts are documented; treat numerical maximum as provisional. Source: https://www.dancehallmag.com/2026/08/30/news/anthony-b-headlines-the-crowning-of-anthony-b-concert-at-club-amazura-in-queens-nyc.html' }],
     roof: 'indoor',
   },
@@ -4238,6 +4409,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Harwood Arena' }],
     // OpenStreetMap point for the building (Harwood Arena, Conant Street), not an entrance.
     location: [-74.2375266, 40.6804431],
+    ticketmasterIds: ['KovZpZAJ7ltA'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). Kean University, Union. Regular paid events unconfirmed (provisional). Official: 2,500 seated for competition. Regular paid-event frequency not separately established; public competition use confirmed. Source: https://keanathletics.com/sports/2019/5/9/information-facilities-harwoodarena.aspx' }],
     roof: 'indoor',
   },
@@ -4257,6 +4429,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'St. James Theatre' }],
     // OpenStreetMap point for the building (St. James Theatre, 246), not an entrance.
     location: [-73.9881584, 40.7579845],
+    ticketmasterIds: ['KovZpZAE66vA'],
     capacity: [{ seats: 1721, note: 'Reported. Broadway house; listed on its concert residencies (Springsteen, 2021). The count varies with the pit and the production. Reported: 1,721 seats at 2021 Springsteen residency; current inventory can vary with orchestra pit / production. Standing not established. Source: https://www.broadwaynews.com/springsteen-plays-to-first-full-capacity-audience-on-broadway-in-more-than-a-year/' }],
     roof: 'indoor',
   },
@@ -4266,6 +4439,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Palace Theatre' }],
     // OpenStreetMap point for the building (Palace Theater, 1564), not an entrance.
     location: [-73.9846166, 40.7589003],
+    ticketmasterIds: ['KovZpa2BGe'],
     capacity: [{ seats: 1743, note: 'Reported: 1,743 before the 2018 closure.' }, { seats: 1648, fromYear: 2024, note: 'Reported. Times Square; closed 2018–2024 while the theater was raised inside the TSX Broadway development. The guest entrance is now 160 West 47th Street. Reported: 1,648 seated since 2024; reported prior 1,743 before 2018 closure. Standing layout not established. Source: https://en.wikipedia.org/wiki/Palace_Theatre_(New_York_City' }],
     roof: 'indoor',
   },
@@ -4287,6 +4461,7 @@ export const VENUES: Record<string, Venue> = {
     closed: { note: 'Inactive while the boardwalk restoration proceeds; no reopening confirmed. Source: https://cityofasburypark.com/530/Boardwalk-Preservation' },
     // OpenStreetMap point for the building (Paramount Theatre, Ocean Avenue), not an entrance.
     location: [-73.9988376, 40.2238818],
+    ticketmasterIds: ['KovZpZAat7vA'],
     capacity: [{ seats: 1600, note: 'Reported. Asbury Park boardwalk, the auditorium beside Convention Hall. Inactive while the restoration proceeds; kept for past dates. Reported planning inventory: 1,600 seated. Current post-restoration inventory unconfirmed; inactive record for historical logs. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
     roof: 'indoor',
   },
@@ -4315,6 +4490,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Park Avenue Armory' }, { name: 'Wade Thompson Drill Hall' }],
     // OpenStreetMap point for the building (Park Avenue Armory, 643), not an entrance.
     location: [-73.9655036, 40.7672334],
+    ticketmasterIds: ['KovZpZAatEAA'],
     capacity: [],
     roof: 'indoor',
   },
@@ -4333,6 +4509,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Paramount Theatre' }],
     // OpenStreetMap point for the address (Paramount Theatre, 17), not an entrance.
     location: [-74.4208878, 41.4443071],
+    ticketmasterIds: ['KovZ917Am4e'],
     capacity: [{ seats: 1100, note: 'Official. Middletown, Orange County NY (17 South Street). No standing room; the operator prohibits it. Official: 1,100 seated theater. Operator explicitly prohibits standing room; no GA standing setup. No post-2016 numerical change established. Source: https://middletownparamount.com/about-us/' }],
     roof: 'indoor',
   },
@@ -6108,6 +6285,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.74,
     names: [{ name: 'Lincoln Financial Field' }],
     location: [-75.1674892, 39.9009099],
+    ticketmasterIds: ['KovZpa2yme'],
     capacity: [
       {
         seats: 69879,
@@ -6142,6 +6320,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Xfinity Mobile Arena', from: '2025-09-01' },
     ],
     location: [-75.1720165, 39.9011004],
+    ticketmasterIds: ['Za5ju3rKuqZBbc4XHEVP2-DVEH3jCYZ-l', 'KovZ917AiMF'],
     capacity: [
       { seats: 20478, setup: 'basketball', note: 'Reported. 20,478 (21,305 with standing room). Source: https://en.wikipedia.org/wiki/Xfinity_Mobile_Arena' },
       { seats: 19173, setup: 'hockey', note: 'Reported. 19,173 (20,000 with standing room). Source: https://en.wikipedia.org/wiki/Xfinity_Mobile_Arena' },
@@ -6154,6 +6333,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Franklin Field' }],
     location: [-75.1899748, 39.950067],
+    ticketmasterIds: ['KovZpZA16lFA'],
     capacity: [
       {
         seats: 52958,
@@ -6169,6 +6349,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.93,
     names: [{ name: 'Talen Energy Stadium' }, { name: 'Subaru Park', from: '2020-01-01' }],
     location: [-75.3784739, 39.8329094],
+    ticketmasterIds: ['KovZ917ARyn', 'Za5ju3rKuqZB8erED2WAC6IRFxT87a8Tn'],
     capacity: [
       { seats: 18500, setup: 'soccer', note: 'Official/reported. 18,500 soccer. Source: https://en.wikipedia.org/wiki/Subaru_Park' },
       { seats: 26000, setup: 'concert', note: 'Reported. Field standing included; not seated capacity. Source: https://phillyvoice.com/subaru-park-chester-union-speakeasy-club-seating-expansion' },
@@ -6185,6 +6366,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Freedom Mortgage Pavilion', from: '2022-05-11' },
     ],
     location: [-75.129816, 39.940706],
+    ticketmasterIds: ['KovZ917AIKm', 'KovZpZAEAIEA'],
     capacity: [
       { seats: 25488, setup: 'concert', note: 'Reported. Summer amphitheatre pit/reserved/lawn; do not sum with winter figure. Source: https://en.wikipedia.org/wiki/Freedom_Mortgage_Pavilion' },
       { seats: 7000, setup: 'concert', note: 'Reported. Winter enclosed theatre configuration of the same building. Source: https://en.wikipedia.org/wiki/Freedom_Mortgage_Pavilion' },
@@ -6202,6 +6384,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'TD Pavilion at Highmark Mann', from: '2025-10-15' },
     ],
     location: [-75.2229615, 39.9832572],
+    ticketmasterIds: ['KovZpZAEdFJA'],
     capacity: [
       {
         seats: 13000,
@@ -6219,6 +6402,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Highmark Skyline Stage', from: '2024-01-01' },
     ],
     location: [-75.2229615, 39.9832572],
+    ticketmasterIds: ['KovZpZAEdFIA'],
     capacity: [
       {
         seats: 6500,
@@ -6233,6 +6417,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Villanova Stadium' }],
     location: [-75.3366393, 40.0330101],
+    ticketmasterIds: ['KovZpZAF6FnA'],
     capacity: [{ seats: 12500, setup: 'football', note: 'Reported. No official university figure retrieved. Source: https://stadiumjourney.com/stadiums/villanova-stadium-s1330' }],
     roof: 'open',
   },
@@ -6241,6 +6426,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Liacouras Center' }],
     location: [-75.1585825, 39.9798139],
+    ticketmasterIds: ['KovZpZAatnaA'],
     capacity: [
       { seats: 10206, setup: 'basketball', note: 'Reported. Source: https://en.wikipedia.org/wiki/Liacouras_Center' },
       { seats: 5000, setup: 'concert', note: 'Reported. Esther Boyer theater mode; can fall below 5,000. Source: https://sportsinpa.com/node/165' },
@@ -6252,6 +6438,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'The Palestra' }],
     location: [-75.1886362, 39.9514018],
+    ticketmasterIds: ['KovZpZA1EA1A'],
     capacity: [{ seats: 8725, setup: 'basketball', note: 'Reported. Source: https://en.wikipedia.org/wiki/Palestra' }],
     roof: 'indoor',
   },
@@ -6260,6 +6447,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'The Pavilion' }, { name: 'Finneran Pavilion', from: '2018-10-05' }],
     location: [-75.3365756, 40.0340472],
+    ticketmasterIds: ['KovZpZAF6FEA'],
     capacity: [{ seats: 6501, setup: 'basketball', note: 'Official. 6,500 plus the Lone Chair. Source: https://villanova.com/sports/2024/8/5/finneran-pavilion' }],
     roof: 'indoor',
   },
@@ -6290,6 +6478,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Electric Factory' }, { name: 'Franklin Music Hall' }],
     location: [-75.1496846, 39.9591981],
+    ticketmasterIds: ['KovZpZAdJ1FA', 'KovZpa2y8e'],
     capacity: [{ seats: 2700, setup: 'concert', note: 'Reported. Source: https://thetriangle.org/article/a-guide-to-philadelphia-music-venues' }],
     roof: 'indoor',
   },
@@ -6298,6 +6487,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Academy of Music' }],
     location: [-75.165197, 39.9480186],
+    ticketmasterIds: ['KovZpapSFe'],
     capacity: [{ seats: 2600, setup: 'concert', note: 'Official. Ensemble Arts rentals page; re-verify URL slug. Source: https://kimmelcenter.org/rent-our-venues/stages/commonwealth-plaza/' }],
     roof: 'indoor',
   },
@@ -6306,6 +6496,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'The Fillmore Philadelphia' }],
     location: [-75.1349058, 39.9655391],
+    ticketmasterIds: ['KovZpZAEkteA'],
     capacity: [{ seats: 2500, setup: 'concert', note: 'Reported. The Foundry (450) is a separate room in the same building. Source: https://www.redbull.com/us-en/top-music-venues-in-philadelphia' }],
     roof: 'indoor',
   },
@@ -6314,6 +6505,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Verizon Hall' }, { name: 'Marian Anderson Hall', from: '2024-06-08' }],
     location: [-75.1657393, 39.9467456],
+    ticketmasterIds: ['KovZpZA1ld6A'],
     capacity: [{ seats: 2500, setup: 'concert', note: 'Reported. Perelman Theater (650) is a separate sub-1,000 room. Source: https://en.wikipedia.org/wiki/Kimmel_Center_for_the_Performing_Arts' }],
     roof: 'indoor',
   },
@@ -6322,6 +6514,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Hagan Arena' }],
     location: [-75.234862, 39.9956149],
+    ticketmasterIds: ['KovZpZAenaAA'],
     capacity: [{ seats: 4200, setup: 'basketball', note: 'Reported. Below the 5,000 friction line. Source: https://wikipedia.com/wiki/Hagan_Arena' }],
     roof: 'indoor',
   },
@@ -6339,6 +6532,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Xcite Center at Parx Casino' }],
     location: [-74.9527098, 40.1185328],
+    ticketmasterIds: ['KovZ917AtPj'],
     capacity: [{ seats: 1500, setup: 'concert', note: 'Reported. Shares Parx Racing grounds; racetrack crowds are separate Table B events. Source: https://www.visitphilly.com/?p=4472' }],
     roof: 'indoor',
   },
@@ -6347,6 +6541,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Keswick Theatre' }],
     location: [-75.1468196, 40.1064112],
+    ticketmasterIds: ['KovZpa9tOe'],
     capacity: [{ seats: 1361, setup: 'concert', note: 'Official. 1,300 seated; 1,361 max. Source: https://www.aegsev.com/keswick-theatre' }],
     roof: 'indoor',
   },
@@ -6355,6 +6550,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Union Transfer' }],
     location: [-75.1553446, 39.9613822],
+    ticketmasterIds: ['KovZpZAF6taA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Reported. Near the ~1,000 pre-list line. Source: https://www.axs.com/us/category/cities/4560349/philadelphia-pa' }],
     roof: 'indoor',
   },
@@ -6364,6 +6560,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Delaware Stadium' }],
     location: [-75.7488991, 39.6616707],
+    ticketmasterIds: ['KovZ917AO_I'],
     capacity: [
       {
         seats: 18500,
@@ -6414,6 +6611,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Nissan Stadium' }],
     location: [-86.7713148, 36.1665236],
+    ticketmasterIds: ['KovZpZA7AnJA', 'Za5ju3rKuqZDd8LJ34ssyCFQwh0AuSEsYC'],
     capacity: [
       {
         seats: 69143,
@@ -6434,6 +6632,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'GEODIS Park', from: '2022-03-01' }],
     location: [-86.7659442, 36.130025],
+    ticketmasterIds: ['KovZ917APYJ'],
     capacity: [
       {
         seats: 30000,
@@ -6458,6 +6657,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OSM knows the site as Dudley Field (the historic name), not FirstBank Stadium.
     location: [-86.8089081, 36.1440212],
+    ticketmasterIds: ['ZFr9jZd6e6', 'Za5ju3rKuqZBULvL92UAa5zhukgjbOkxG', 'KovZpa9-be'],
     capacity: [
       {
         seats: 40350,
@@ -6499,6 +6699,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Nashville Superspeedway' }],
     // OSM places the track in Rutherford County; the research places it in Lebanon, Wilson County.
     location: [-86.4101499, 36.0456319],
+    ticketmasterIds: ['KovZpZA1JnkA'],
     capacity: [
       {
         seats: 25000,
@@ -6514,6 +6715,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'FirstBank Amphitheater' }],
     // OSM did not name the stage. Coordinate is the research Wikipedia point.
     location: [-86.840156, 35.81034],
+    ticketmasterIds: ['KovZ917AJek'],
     capacity: [
       {
         seats: 7500,
@@ -6528,6 +6730,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Grand Ole Opry House' }],
     location: [-86.6918054, 36.2069577],
+    ticketmasterIds: ['KovZpa3Jbe'],
     capacity: [
       {
         seats: 4000,
@@ -6557,6 +6760,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Allen Arena' }],
     location: [-86.7989111, 36.1037647],
+    ticketmasterIds: ['KovZpaKkme'],
     capacity: [
       {
         seats: 5028,
@@ -6571,6 +6775,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Bridgestone Arena' }],
     location: [-86.7783819, 36.1589806],
+    ticketmasterIds: ['KovZpZA6taAA', 'KovZpa4VIe'],
     capacity: [
       {
         seats: 17159,
@@ -6619,6 +6824,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Monte Hale Arena' }, { name: 'Murphy Center' }],
     location: [-86.3695467, 35.852395],
+    ticketmasterIds: ['KovZpa44be'],
     capacity: [
       {
         seats: 11802,
@@ -6636,6 +6842,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'First Horizon Park', from: '2019-01-01' },
     ],
     location: [-86.7845981, 36.1725225],
+    ticketmasterIds: ['KovZpZAJaF6A'],
     capacity: [
       {
         seats: 8500,
@@ -6651,6 +6858,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Nashville Municipal Auditorium' }],
     location: [-86.7821984, 36.1673832],
+    ticketmasterIds: ['KovZpZAF6eJA'],
     capacity: [
       {
         seats: 9700,
@@ -6670,6 +6878,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Ascend Amphitheater' }],
     location: [-86.7718452, 36.1598799],
+    ticketmasterIds: ['KovZpZAEet7A'],
     capacity: [
       {
         seats: 2300,
@@ -6690,6 +6899,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Curb Event Center' }],
     // OSM did not name the arena. Coordinate is the research Wikipedia point. A second address (1801 Edgehill Ave) is unresolved.
     location: [-86.79444444, 36.13222222],
+    ticketmasterIds: ['KovZpaK8ke'],
     capacity: [
       {
         seats: 5085,
@@ -6709,6 +6919,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'The Pinnacle' }],
     location: [-86.7849304, 36.1601131],
+    ticketmasterIds: ['Z7r9jZaASi'],
     capacity: [
       {
         seats: 4500,
@@ -6724,6 +6935,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Truth' }],
     // OSM has the street address (440 Chestnut St), not a named venue. Opened Oct 1, 2026.
     location: [-86.7684688, 36.1442267],
+    ticketmasterIds: ['KovZ917ASBh'],
     capacity: [
       {
         seats: 4400,
@@ -6738,6 +6950,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Hawkins Field' }],
     location: [-86.807492, 36.1433436],
+    ticketmasterIds: ['KovZpZAJAJaA'],
     capacity: [
       {
         seats: 3802,
@@ -6752,6 +6965,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Tennessee Performing Arts Center' }, { name: 'Andrew Jackson Hall' }],
     location: [-86.7824167, 36.164551],
+    ticketmasterIds: ['KovZpZA1nl6A'],
     capacity: [
       {
         seats: 2472,
@@ -6781,6 +6995,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Ryman Auditorium' }],
     location: [-86.7784951, 36.1612473],
+    ticketmasterIds: ['KovZpa61Ge'],
     capacity: [
       {
         seats: 2362,
@@ -6796,6 +7011,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Schermerhorn Symphony Center' }, { name: 'Laura Turner Concert Hall' }],
     location: [-86.7754987, 36.1597613],
+    ticketmasterIds: ['KovZpZAEvF7A', 'ZFr9jZkvd7'],
     capacity: [
       {
         seats: 1844,
@@ -6824,6 +7040,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Marathon Music Works' }],
     location: [-86.7973705, 36.1641223],
+    ticketmasterIds: ['KovZpZAJnJlA'],
     capacity: [
       {
         seats: 1500,
@@ -6838,6 +7055,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Brooklyn Bowl Nashville' }],
     location: [-86.7839698, 36.1734467],
+    ticketmasterIds: ['KovZ917APep'],
     capacity: [
       {
         seats: 1200,
@@ -6869,6 +7087,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Darrell K Royal-Texas Memorial Stadium' },
     ],
     location: [-97.7326229, 30.2838412],
+    ticketmasterIds: ['KovZpZAJE6dA'],
     capacity: [{
       seats: 100119,
       setup: 'football',
@@ -6898,6 +7117,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Q2 Stadium', from: '2021-01-25' }],
     // Nominatim has no stadium name; this is the OSM point for 10414 McKalla Place.
     location: [-97.719227, 30.3853074],
+    ticketmasterIds: ['KovZ917AJ9n'],
     capacity: [{
       seats: 20738,
       setup: 'soccer',
@@ -6910,6 +7130,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Mike A. Myers Stadium and Soccer Field' }, { name: 'Mike A. Myers Stadium' }],
     location: [-97.7299723, 30.282571],
+    ticketmasterIds: ['KovZ917AOFB'],
     capacity: [
       { seats: 20000, setup: 'soccer', note: 'Official. Same listed size for soccer and track. Source: https://texaslonghorns.com/sports/2013/7/25/facilities_0725133514' },
       { seats: 20000, setup: 'track', note: 'Official. Same listed size. Source: https://texaslonghorns.com/sports/2013/7/25/facilities_0725133514' },
@@ -6921,6 +7142,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Moody Center' }],
     location: [-97.7306522, 30.2809367],
+    ticketmasterIds: ['KovZ917ANwG'],
     capacity: [
       {
         seats: 10763,
@@ -6944,6 +7166,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // Nominatim has no amphitheater node. This is the OSM sports_centre for Circuit of The Americas.
     location: [-97.63662, 30.1356307],
+    ticketmasterIds: ['KovZpZAJEFJA'],
     capacity: [{
       seats: 14000,
       setup: 'concert',
@@ -6956,6 +7179,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Dell Diamond' }],
     location: [-97.6308393, 30.5277319],
+    ticketmasterIds: ['KovZpZA1v1lA'],
     capacity: [{
       seats: 11631,
       setup: 'baseball',
@@ -6972,6 +7196,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Strahan Arena', from: '2018-10-06' },
     ],
     location: [-97.9324419, 29.8885359],
+    ticketmasterIds: ['KovZpZAJ1EAA'],
     capacity: [{
       seats: 10000,
       setup: 'basketball',
@@ -6987,6 +7212,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'H-E-B Center at Cedar Park', from: '2016-04-22' },
     ],
     location: [-97.8205235, 30.5413221],
+    ticketmasterIds: ['KovZpZAJJn6A'],
     capacity: [
       { seats: 6863, setup: 'hockey', note: 'Official press release. The current site lists hockey at 6,800. Source: https://www.hebcenter.com/assets/doc/H-E-B-Center-Press-Release-FINAL-323c3a4ae0.pdf' },
       { seats: 7200, setup: 'basketball', note: 'Official press release. Source: https://www.hebcenter.com/assets/doc/H-E-B-Center-Press-Release-FINAL-323c3a4ae0.pdf' },
@@ -6999,6 +7225,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Luedecke Arena' }, { name: 'Travis County Exposition Center' }],
     location: [-97.6209537, 30.2942285],
+    ticketmasterIds: ['KovZ917AYQZ'],
     capacity: [
       { seats: 6400, setup: 'rodeo', note: 'Reported (Austin Monitor) as 6,400 seats. Pollstar 2017 lists 8,400 capacity. Seated vs floor is unresolved and the two figures are not averaged. Source: https://austinmonitor.com/?p=32577' },
       { seats: 8400, setup: 'concert', note: 'Reported (Pollstar, 2017). May be the floor setup against the 6,400 seated figure. Unresolved. Source: https://news.pollstar.com/2017/12/06/expo-center-replacement-plan/' },
@@ -7013,6 +7240,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'UFCU Disch-Falk Field', from: '2006-08-01' },
     ],
     location: [-97.7261524, 30.2801248],
+    ticketmasterIds: ['KovZpZAJJn7A'],
     capacity: [{
       seats: 7211,
       setup: 'baseball',
@@ -7038,6 +7266,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Moody Amphitheater' }, { name: 'Moody Amphitheater at Waterloo Park' }],
     // Nominatim has no amphitheater node. This is the OSM point for Waterloo Park.
     location: [-97.7359243, 30.2741216],
+    ticketmasterIds: ['KovZ917AJ_x'],
     capacity: [{
       seats: 5000,
       setup: 'concert',
@@ -7050,6 +7279,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Gregory Gymnasium' }, { name: 'Gregory Gym' }],
     location: [-97.7363896, 30.2839839],
+    ticketmasterIds: ['ZFr9jZ7vF6'],
     capacity: [{ seats: 4000, note: 'Official. Texas volleyball. Source: https://texaslonghorns.com/sports/2013/7/25/facilities_0725134031' }],
     roof: 'indoor',
   },
@@ -7058,6 +7288,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Bass Concert Hall' }],
     location: [-97.7312787, 30.2858688],
+    ticketmasterIds: ['KovZpZAJJ7AA'],
     capacity: [{ seats: 2900, setup: 'concert', note: 'Reported (Wikipedia, citing Texas Performing Arts). Source: https://en.wikipedia.org/wiki/University_of_Texas_Performing_Arts_Center' }],
     roof: 'indoor',
   },
@@ -7078,6 +7309,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Long Center for the Performing Arts' }, { name: 'Michael & Susan Dell Hall' }],
     location: [-97.7512449, 30.2602594],
+    ticketmasterIds: ['KovZpZAJEFvA', 'KovZ917A5YV'],
     capacity: [{ seats: 2442, setup: 'concert', note: 'Official. Source: https://thelongcenter.org/dell-hall/' }],
     roof: 'indoor',
   },
@@ -7086,6 +7318,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: "Stubb's BBQ" }, { name: "Stubb's Waller Creek Amphitheater" }],
     location: [-97.7362194, 30.2684889],
+    ticketmasterIds: ['KovZpZAEAEdA', 'KovZ917AxzU'],
     capacity: [{
       seats: 2200,
       setup: 'concert',
@@ -7098,6 +7331,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: "Emo's" }],
     location: [-97.7280211, 30.239565],
+    ticketmasterIds: ['KovZpZAEAEeA'],
     capacity: [{
       seats: 2000,
       setup: 'concert',
@@ -7110,6 +7344,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Red & Charline McCombs Field' }, { name: 'Red and Charline McCombs Field' }],
     location: [-97.7247851, 30.2808552],
+    ticketmasterIds: ['ZFr9jZ1k6A'],
     capacity: [{ seats: 1250, note: 'Reported. Texas softball. Near the 1,000 pre-list line. Source: https://en.wikipedia.org/wiki/Sports_in_Austin,_Texas' }],
     roof: 'open',
   },
@@ -7141,6 +7376,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'State Farm Stadium', from: '2018-09-01' },
     ],
     location: [-112.261709, 33.527039],
+    ticketmasterIds: ['KovZpZAFaeIA', 'Za5ju3rKuqZDdIIQfksiPAXzhgVtpD102i', 'Za5ju3rKuqZBXFBSR84tZ8tUFDf0G9zrJ'],
     capacity: [
       {
         seats: 63400,
@@ -7160,6 +7396,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Mountain America Stadium', from: '2023-08-01' },
     ],
     location: [-111.932659, 33.426310],
+    ticketmasterIds: ['KovZ917A-TV', 'KovZpZA1nkEA'],
     capacity: [
       {
         seats: 53599,
@@ -7175,6 +7412,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Chase Field' }],
     location: [-112.066693, 33.445486],
+    ticketmasterIds: ['KovZpZA6tdtA'],
     capacity: [
       {
         seats: 48633,
@@ -7193,6 +7431,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Phoenix Raceway', from: '2018-01-01' },
     ],
     location: [-112.321285, 33.373632],
+    ticketmasterIds: ['KovZpZA1nkJA'],
     capacity: [
       {
         seats: 42000,
@@ -7210,6 +7449,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Talking Stick Resort Amphitheatre', from: '2023-01-01' },
     ],
     location: [-112.232867, 33.471523],
+    ticketmasterIds: ['KovZpZAE6vJA'],
     capacity: [
       {
         seats: 20106,
@@ -7227,6 +7467,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Desert Diamond Arena', from: '2022-01-01' },
     ],
     location: [-112.260440, 33.532033],
+    ticketmasterIds: ['KovZpZA6vE7A', 'KovZpZAJaFeA'],
     capacity: [
       {
         seats: 17125,
@@ -7283,6 +7524,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Sloan Park' }],
     location: [-111.881637, 33.431390],
+    ticketmasterIds: ['KovZ917Axqp'],
     capacity: [
       {
         seats: 15000,
@@ -7310,6 +7552,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Desert Financial Arena', from: '2019-01-01' },
     ],
     location: [-111.931010, 33.424508],
+    ticketmasterIds: ['KovZpZAdJInA'],
     capacity: [
       {
         seats: 14198,
@@ -7328,6 +7571,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OSM sports-centre point. Branded Glendale; the pin sits in Phoenix city limits. Municipality left unresolved.
     location: [-112.295002, 33.512312],
+    ticketmasterIds: ['KovZpZAFaeEA'],
     capacity: [
       {
         seats: 13500,
@@ -7342,6 +7586,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Scottsdale Stadium' }],
     location: [-111.920205, 33.488608],
+    ticketmasterIds: ['KovZpZA1nkIA'],
     capacity: [
       {
         seats: 12000,
@@ -7356,6 +7601,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Salt River Fields at Talking Stick' }],
     location: [-111.885255, 33.545384],
+    ticketmasterIds: ['KovZpZA6ta7A'],
     capacity: [
       {
         seats: 11000,
@@ -7373,6 +7619,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Surprise Stadium', from: '2003-01-01' },
     ],
     location: [-112.378276, 33.628129],
+    ticketmasterIds: ['KovZpZAFk1IA'],
     capacity: [
       {
         seats: 10714,
@@ -7420,6 +7667,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OSM sports-centre point. 2019 reopening month not in the research.
     location: [-112.172128, 33.490742],
+    ticketmasterIds: ['ZFr9jZeveA'],
     capacity: [
       {
         seats: 10000,
@@ -7448,6 +7696,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Tempe Diablo Stadium' }],
     location: [-111.971061, 33.401010],
+    ticketmasterIds: ['KovZpZAFk1nA'],
     capacity: [
       {
         seats: 9558,
@@ -7479,6 +7728,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Phoenix Municipal Stadium' }],
     location: [-111.954221, 33.449272],
+    ticketmasterIds: ['KovZpZAA6leA'],
     capacity: [
       {
         seats: 7800,
@@ -7510,6 +7760,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Mullett Arena' }],
     location: [-111.928489, 33.426643],
+    ticketmasterIds: ['KovZ917AEqX'],
     capacity: [
       {
         seats: 5000,
@@ -7529,6 +7780,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Arizona Financial Theatre', from: '2022-07-11' },
     ],
     location: [-112.079626, 33.448930],
+    ticketmasterIds: ['KovZpZAEk7lA'],
     capacity: [
       {
         seats: 5000,
@@ -7547,6 +7799,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OSM recreation-ground under the former name, at the 20000 S Maricopa Rd grounds. Not a surveyed grandstand point.
     location: [-111.965414, 33.267968],
+    ticketmasterIds: ['KovZ917A2YV'],
     // No capacity in the venue answer. Gila River Indian Community land, Chandler mailing address.
     capacity: [],
     roof: 'open',
@@ -7562,6 +7815,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'BC Place Vancouver' }, { name: 'BC Place' }],
     location: [-123.1120062, 49.2766905],
+    ticketmasterIds: ['KovZpZAJdn6A', 'KovZ917AYv2'],
     capacity: [
       { seats: 54500, setup: 'football', note: 'Reported (Ticketmaster blog). Also 54,320 (Soccer Stadium Digest). Venue marketing says over 55,000, not an exact count. FIFA 2026 configuration 54,000 (CBC) was a tournament setup. Concerts with a floor are reported as over 65,000; no exact seat count is stored.' },
       { seats: 22120, setup: 'soccer', note: 'Reported (Wikipedia, city-type answer): lower bowl, upper deck closed. Venue table also reports about 22,000 (SeatGeek) and 21,000 (Soccer Stadium Digest).' },
@@ -7574,6 +7828,7 @@ export const VENUES: Record<string, Venue> = {
     // Not Rogers Place (Edmonton) or Rogers Forum (Abbotsford).
     names: [{ name: 'GM Place' }, { name: 'Canada Hockey Place' }, { name: 'Rogers Arena' }],
     location: [-123.1089417, 49.2779085],
+    ticketmasterIds: ['KovZpZAFFInA'],
     capacity: [
       { seats: 18871, setup: 'hockey', fromYear: 2018, note: 'Reported (Wikipedia): 2018–present. Ticketmaster blog lists 18,910. Wikipedia also lists 18,865 for 2016–2018.' },
       { seats: 19700, setup: 'basketball', note: 'Reported (Ticketmaster blog).' },
@@ -7586,6 +7841,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Rink on Renfrew' }, { name: 'Pacific Coliseum' }],
     location: [-123.0427418, 49.2858422],
+    ticketmasterIds: ['KovZpZAavJIA'],
     capacity: [
       { seats: 15713, setup: 'hockey', note: 'Official (PNE): permanent seats, plus provision for 2,000 floor seats (total cited 17,500). The naming-rights page lists a current capacity of 15,455. Hockey is also reported as 16,281 (Wikipedia) and 16,821 (The Stadium Business). A PWHL sell-out of 14,958 is attendance, not capacity.' },
       { seats: 17000, setup: 'concert', note: 'Official (PNE): in-the-round. A mini concert is listed at 4,200; that setup is not stored as the concert size.' },
@@ -7633,6 +7889,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Willoughby Community Park Stadium' }, { name: 'Willoughby Stadium at Langley Events Centre' }, { name: 'Willoughby Stadium' }],
     location: [-122.6656644, 49.1438512],
+    ticketmasterIds: ['KovZ917ASnr'],
     capacity: [
       { seats: 6042, setup: 'soccer', note: 'Reported (Wikipedia). The same page also lists an initial configuration of 6,137. Langley Advance Times says more than 6,500; Soccerway says 6,600. Modular and designed to expand. All of those figures are at or above 5,000.' },
     ],
@@ -7654,6 +7911,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Swangard Stadium' }],
     location: [-123.0217265, 49.2308777],
+    ticketmasterIds: ['KovZpaKSQe'],
     capacity: [
       { seats: 4500, setup: 'soccer', note: 'Reported (Rise team president, Burnaby Now, 2024): current seating 4,500. Conflicts that cross 5,000: 5,288 (Wikipedia), about 5,000 (The IX), and more than 5,000 permanent seats (Burnaby Now). No official City of Burnaby figure. The 4,500 count is what is stored, so the friction label stays off until one official number exists. A temporary 10,000 setup for the 2007 U-20 World Cup is historical and not stored.' },
     ],
@@ -7675,6 +7933,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Thunderbird Stadium' }],
     location: [-123.2453928, 49.2544747],
+    ticketmasterIds: ['Za5ju3rKuqZDdokWP-BfWvsIC8UuWT493p'],
     capacity: [
       { seats: 3500, setup: 'football', note: 'Official (UBC Thunderbirds, 2009, dated). The current UBC Sport Facilities home page says 12,000. The venue research says that figure may include temporary or standing space and not to label the room until UBC says which number is seated. 12,000 is not stored.' },
       { seats: 3500, setup: 'soccer', note: 'Same stands. No separate soccer capacity was published.' },
@@ -7686,6 +7945,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Queen Elizabeth Theatre' }],
     location: [-123.113161, 49.2803131],
+    ticketmasterIds: ['KovZpZAavEvA'],
     capacity: [{ seats: 2765, setup: 'concert', note: 'Official (Vancouver Civic Theatres). The Vancouver Playhouse (668) is the adjoining room and is under the pre-list line, so it is not a row.' }],
     roof: 'indoor',
   },
@@ -7694,6 +7954,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Orpheum Theatre' }, { name: 'Orpheum' }],
     location: [-123.1203207, 49.2801482],
+    ticketmasterIds: ['KovZpZAaevlA', 'KovZpZAFtanA', 'rZ7HnEZ17jkAS'],
     capacity: [{ seats: 2672, setup: 'concert', note: 'Official (Vancouver Civic Theatres). Destination Vancouver lists 2,688.' }],
     roof: 'indoor',
   },
@@ -7719,6 +7980,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Vogue Theatre' }],
     location: [-123.121631, 49.2797734],
+    ticketmasterIds: ['KovZpZAkEenA'],
     capacity: [{ seats: 1280, setup: 'concert', note: 'Reported (Bandsintown). A guide site says about 1,100.' }],
     roof: 'indoor',
   },
@@ -7727,6 +7989,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Massey Theatre' }],
     location: [-122.926914, 49.2151874],
+    ticketmasterIds: ['KovZpZAkFvEA'],
     capacity: [{ seats: 1260, setup: 'concert', note: 'Official (Massey Theatre): 867 orchestra plus 393 balcony.' }],
     roof: 'indoor',
   },
@@ -7735,6 +7998,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Chan Centre for the Performing Arts' }, { name: 'Chan Shun Concert Hall' }],
     location: [-123.2551083, 49.2697484],
+    ticketmasterIds: ['KovZpZAFFkJA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Reported (BC Touring Council). The venue research did not re-verify this independently. Telus Studio Theatre (250) is a different room.' }],
     roof: 'indoor',
   },
@@ -7743,6 +8007,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Bell Performing Arts Centre' }],
     location: [-122.8214734, 49.1165785],
+    ticketmasterIds: ['KovZpZAavElA'],
     capacity: [{ seats: 1052, setup: 'concert', note: 'Reported (BC Touring Council). The venue research did not re-verify this independently.' }],
     roof: 'indoor',
   },
@@ -7751,6 +8016,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Commodore Ballroom' }],
     location: [-123.120792, 49.2805634],
+    ticketmasterIds: ['KovZpZAEkklA'],
     capacity: [{ seats: 990, setup: 'concert', note: 'Reported (BC Living): standing room. Also described as about 1,000. Not rounded up to 1,000.' }],
     roof: 'indoor',
   },
@@ -7765,6 +8031,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Sutter Health Park', from: '2020-01-01' },
     ],
     location: [-121.5134097, 38.5803717],
+    ticketmasterIds: ['KovZpZA7kl6A', 'Za5ju3rKuqZDvuiMYg8tc6KIi2VnqXOK8d'],
     capacity: [
       {
         seats: 13416,
@@ -7800,6 +8067,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Heart Health Park', from: '2021-01-01' },
     ],
     location: [-121.4380099, 38.5913512],
+    ticketmasterIds: ['KovZpaFvee'],
     capacity: [
       {
         seats: 8000,
@@ -7829,6 +8097,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Toyota Amphitheatre', from: '2015-03-01' },
     ],
     location: [-121.512912, 39.0311465],
+    ticketmasterIds: ['KovZpaFEIe'],
     capacity: [
       {
         seats: 18500,
@@ -7883,6 +8152,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'sacramento',
     names: [{ name: 'Hughes Stadium' }, { name: 'Charles C. Hughes Stadium' }],
     location: [-121.4862621, 38.5407719],
+    ticketmasterIds: ['KovZpZAJk7JA'],
     capacity: [
       {
         seats: 25000,
@@ -7898,6 +8168,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Venue at Thunder Valley' }],
     // The indoor room has no separate OSM point; this is the resort.
     location: [-121.3137366, 38.8403664],
+    ticketmasterIds: ['KovZ917AtFi'],
     capacity: [
       {
         seats: 4500,
@@ -7912,6 +8183,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'sacramento',
     names: [{ name: 'All American Speedway' }],
     location: [-121.2921058, 38.7579863],
+    ticketmasterIds: ['Z7r9jZakbw'],
     capacity: [
       {
         seats: 4000,
@@ -7926,6 +8198,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'sacramento',
     names: [{ name: 'Sacramento Memorial Auditorium' }, { name: 'Memorial Auditorium' }],
     location: [-121.4856188, 38.5789153],
+    ticketmasterIds: ['KovZpZA1natA'],
     capacity: [
       {
         seats: 3849,
@@ -7956,6 +8229,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hard Rock Live Sacramento' }, { name: 'Hard Rock Live' }],
     // OSM has the casino, not a separate Hard Rock Live room. Wheatland edge, near Toyota Amphitheatre.
     location: [-121.5118126, 39.0506909],
+    ticketmasterIds: ['KovZ917AESi'],
     capacity: [
       {
         seats: 2500,
@@ -7973,6 +8247,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'SAFE Credit Union Performing Arts Center', from: '2021-01-01' },
     ],
     location: [-121.4894149, 38.5771834],
+    ticketmasterIds: ['KovZ917AJup'],
     capacity: [
       {
         seats: 2188,
@@ -8003,6 +8278,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'sacramento',
     names: [{ name: 'Ace of Spades' }],
     location: [-121.4909477, 38.5699259],
+    ticketmasterIds: ['KovZpZAJ6lvA'],
     capacity: [
       {
         seats: 1000,
@@ -8050,6 +8326,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Estadio Banorte', from: '2026-03-28' },
     ],
     location: [-99.15047, 19.3029794],
+    ticketmasterIds: ['KovZpZAJtkAA'],
     capacity: [
       {
         seats: 81070,
@@ -8073,6 +8350,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Estadio GNP Seguros', from: '2024-08-08' },
     ],
     location: [-99.0955714, 19.4050224],
+    ticketmasterIds: ['KovZpZAd1IaA'],
     capacity: [
       {
         seats: 65000,
@@ -8126,6 +8404,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Estadio Ciudad de los Deportes', from: '2018-01-01' },
     ],
     location: [-99.1782599, 19.3834348],
+    ticketmasterIds: ['KovZpZAJtAkA'],
     capacity: [
       {
         seats: 34253,
@@ -8163,6 +8442,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [{ name: 'Domo de Cobre' }, { name: 'Palacio de los Deportes' }],
     location: [-99.0996762, 19.4053099],
+    ticketmasterIds: ['KovZpZA77t6A'],
     capacity: [
       {
         seats: 15000,
@@ -8182,6 +8462,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [{ name: 'Estadio Alfredo Harp Helú' }],
     location: [-99.0852437, 19.4036757],
+    ticketmasterIds: ['KovZ917AOhe'],
     capacity: [
       {
         seats: 20576,
@@ -8197,6 +8478,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [{ name: 'Arena México' }],
     location: [-99.1520014, 19.4246141],
+    ticketmasterIds: ['KovZpZAJtIdA'],
     capacity: [
       {
         seats: 16500,
@@ -8210,6 +8492,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [{ name: 'Estadio Wilfrido Massieu' }],
     location: [-99.1384942, 19.5019763],
+    ticketmasterIds: ['KovZpZAEkllA'],
     capacity: [
       {
         seats: 13000,
@@ -8224,6 +8507,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [{ name: 'Auditorio Nacional' }],
     location: [-99.1948518, 19.4247897],
+    ticketmasterIds: ['KovZpZA6EkkA'],
     capacity: [
       {
         seats: 9366,
@@ -8238,6 +8522,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [{ name: 'Pepsi Center WTC' }],
     location: [-99.1747474, 19.3944618],
+    ticketmasterIds: ['KovZpZAJllnA'],
     capacity: [
       {
         seats: 3342,
@@ -8280,6 +8565,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'T-Mobile Arena' }],
     location: [-115.1782239, 36.102678],
+    ticketmasterIds: ['KovZpZAIIIdA'],
     capacity: [
       { seats: 17500, setup: 'hockey', note: 'Official. Hockey with standing room 20,000 is secondary. Source: venue table A04.' },
       { seats: 18000, setup: 'basketball', note: 'Official. Source: venue table A04.' },
@@ -8292,6 +8578,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Allegiant Stadium' }],
     location: [-115.1833303, 36.0907359],
+    ticketmasterIds: ['KovZ917Ax7n'],
     capacity: [
       { seats: 65000, setup: 'football', note: 'Official. Expanded figures 71,835 (secondary) and about 72,000 (reported) are not the regular NFL setup. Concert configurations were not published. Source: venue table A02.' },
       { seats: 61000, setup: 'soccer', note: 'Secondary. Source: venue table A02.' },
@@ -8303,6 +8590,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Mandalay Bay Events Center' }, { name: 'Michelob ULTRA Arena' }],
     location: [-115.1790209, 36.0906483],
+    ticketmasterIds: ['Za5ju3rKuqZDe1qyFvK0tuU5Rwt4xiUMaW', 'KovZpZAJadaA'],
     capacity: [
       { seats: 12000, setup: 'basketball', note: 'Secondary. No official WNBA-configuration figure; the Aces use part of the bowl. Rename date from Mandalay Bay Events Center was not verified. Source: venue table A09.' },
     ],
@@ -8313,6 +8601,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'MGM Grand Garden Arena' }],
     location: [-115.1685689, 36.1048311],
+    ticketmasterIds: ['KovZpZAJFJaA'],
     capacity: [
       { seats: 16800, setup: 'concert', note: 'Official fact sheet, Jan 15, 2026: boxing/UFC and center-stage concert up to 16,800. Source: venue table A07.' },
     ],
@@ -8323,6 +8612,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Park Theater' }, { name: 'Dolby Live' }],
     location: [-115.1749787, 36.1041326],
+    ticketmasterIds: ['KovZ917A5L7', 'Za5ju3rKuqZDvg96ATOEACByW4mszo3YMw'],
     // Reseller figure of 5,200 was not stored. The venue answer said to confirm an official number first.
     capacity: [],
     roof: 'indoor',
@@ -8338,6 +8628,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // Venue-table coordinates (Wikipedia). OpenStreetMap resolved Planet Hollywood, not the theater.
     location: [-115.1701, 36.1099],
+    ticketmasterIds: ['KovZpZAJalEA'],
     capacity: [
       { seats: 7000, setup: 'concert', note: 'Secondary, about 7,000, set at the 2000 reopening. GA exists; the seated vs GA split was not published. PH Live rename is July 2024 vs August 2024. Source: venue table A14.' },
     ],
@@ -8348,6 +8639,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Sphere' }],
     location: [-115.1620674, 36.1212076],
+    ticketmasterIds: ['KovZ917Atbr'],
     capacity: [
       { seats: 17600, setup: 'concert', note: 'Secondary: 17,600 seated; 20,000 with floor (Wikipedia; 8K Association, July 2023). Conflicts with 18,600 seated reported elsewhere. Official capacity page not retrieved. Source: venue table A05.' },
     ],
@@ -8370,6 +8662,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'BleauLive Theater' }],
     // OpenStreetMap resolved Fontainebleau, not the theater.
     location: [-115.1592284, 36.1374208],
+    ticketmasterIds: ['Za5ju3rKuqZDviRgbAheuFPb6HO1ONT_nq'],
     capacity: [
       { seats: 3800, setup: 'concert', note: 'Secondary. Muted (under 5,000). Source: venue table A20.' },
     ],
@@ -8380,6 +8673,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Thomas & Mack Center' }],
     location: [-115.1442662, 36.104923],
+    ticketmasterIds: ['KovZpZA1e1JA'],
     capacity: [
       { seats: 18000, setup: 'basketball', note: 'Official post-modernization basketball. Conflicts with secondary 17,923. Pre-modernization 19,522 boxing / 18,500 basketball is not the current room. Cox Pavilion is a separate room and is not mapped. Source: venue table A06.' },
     ],
@@ -8390,6 +8684,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Orleans Arena' }],
     location: [-115.2022465, 36.1058277],
+    ticketmasterIds: ['KovZpZA1e7IA'],
     capacity: [
       { seats: 5736, note: 'Official production guide, July 2024: permanent seats. Source: venue table A12.' },
       { seats: 7773, setup: 'hockey', note: 'Secondary. Source: venue table A12.' },
@@ -8403,6 +8698,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Downtown Las Vegas Events Center' }],
     location: [-115.1446408, 36.1687163],
+    ticketmasterIds: ['KovZpZA77IvA'],
     capacity: [
       { seats: 11000, setup: 'concert', note: 'Official: main venue up to 11,000 standing. All available space up to 20,000 is a different footprint. The tent (1,500 seated / 2,000 standing) is not this room. A third-party listing says 2,500 scalable to 11,000. Source: venue table A10.' },
     ],
@@ -8413,6 +8709,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Cashman Field' }],
     location: [-115.1298902, 36.1797605],
+    ticketmasterIds: ['KovZpZAEk7nA'],
     capacity: [
       { seats: 10000, setup: 'soccer', note: 'Reported, about 10,000. Secondary lists 12,500. Final match Oct 17, 2026. Source: venue table A08.' },
     ],
@@ -8423,6 +8720,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Las Vegas Ballpark' }],
     location: [-115.3294897, 36.152704],
+    ticketmasterIds: ['KovZ917ALsI'],
     capacity: [
       { seats: 10000, setup: 'baseball', note: 'Official (A\'s Las Vegas series guide): about 8,200 fixed seats, 10,000 capacity. Secondary infobox 8,196 seats. June 2026 MLB games took some seats out of sale. Source: venue table A11.' },
     ],
@@ -8433,6 +8731,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Dollar Loan Center' }, { name: "Lee's Family Forum", from: '2024-04-02' }],
     location: [-115.081418, 36.0193318],
+    ticketmasterIds: ['KovZ917AIKQ'],
     capacity: [
       { seats: 5567, setup: 'hockey', note: 'Reported fixed seats and 28 suites. The rounded about 6,000 is not used. Source: venue table A15.' },
     ],
@@ -8443,6 +8742,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'las-vegas',
     names: [{ name: 'Las Vegas Motor Speedway' }],
     location: [-115.0094164, 36.2711872],
+    ticketmasterIds: ['KovZpaKuYe'],
     capacity: [
       { seats: 80000, setup: 'racing', note: 'Reported, about 80,000 permanent seats after upgrades. Conflicts: secondary 75,000 at the end of 2018 with 8,000 more removed in 2019; stale 123,000; reseller 131,000. Source: venue table A01.' },
     ],
@@ -8475,6 +8775,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Arena at South Point Hotel And Casino' }, { name: 'South Point Arena' }],
     // OpenStreetMap resolved the hotel at 9777 Las Vegas Blvd S, not the arena.
     location: [-115.1761154, 36.0119389],
+    ticketmasterIds: ['KovZpZAEFIFA'],
     capacity: [
       { seats: 4600, note: 'Official: Main Arena 4,600 seats. Other arenas in the complex have no published spectator capacity. Muted (under 5,000). Source: venue table A19.' },
     ],
@@ -8503,6 +8804,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Arrowhead Stadium', from: '2026-08-05' },
     ],
     location: [-94.4839993, 39.0489358],
+    ticketmasterIds: ['KovZpZAF7E1A'],
     capacity: [
       {
         seats: 76416,
@@ -8517,6 +8819,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Kauffman Stadium' }],
     location: [-94.4804598, 39.0515081],
+    ticketmasterIds: ['KovZpa9Ybe'],
     capacity: [
       {
         seats: 37903,
@@ -8549,6 +8852,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Sporting Park', from: '2026-02-01' },
     ],
     location: [-94.8233504, 39.1216438],
+    ticketmasterIds: ['KovZpZAF6anA'],
     capacity: [
       {
         seats: 18467,
@@ -8571,6 +8875,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'T-Mobile Center', from: '2020-01-01' },
     ],
     location: [-94.5799495, 39.0972952],
+    ticketmasterIds: ['KovZpZAE7eeA'],
     capacity: [
       {
         seats: 19252,
@@ -8604,6 +8909,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Azura Amphitheater', from: '2021-01-01' },
     ],
     location: [-94.8773837, 39.1138158],
+    ticketmasterIds: ['KovZpa3sfe'],
     capacity: [
       {
         seats: 18000,
@@ -8618,6 +8924,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'CPKC Stadium' }],
     location: [-94.5665908, 39.1193789],
+    ticketmasterIds: ['KovZ917AY2C'],
     // The venue-table answer left the roof unconfirmed. Recorded open because the sources describe a soccer stadium, not an indoor arena.
     capacity: [
       {
@@ -8633,6 +8940,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Municipal Auditorium' }, { name: 'Municipal Auditorium Arena' }],
     location: [-94.5864003, 39.0979007],
+    ticketmasterIds: ['KovZpaoXbe'],
     capacity: [
       {
         seats: 7316,
@@ -8646,6 +8954,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Music Hall' }, { name: 'Kansas City Music Hall' }],
     location: [-94.5867058, 39.0985136],
+    ticketmasterIds: ['KovZpaoXxe'],
     capacity: [
       {
         seats: 2363,
@@ -8660,6 +8969,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Starlight Theatre' }],
     location: [-94.5328099, 39.0075805],
+    ticketmasterIds: ['KovZpZAF7EaA'],
     capacity: [
       {
         seats: 7739,
@@ -8694,6 +9004,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Legends Field', from: '2021-01-01' },
     ],
     location: [-94.8308572, 39.124496],
+    ticketmasterIds: ['KovZ917APgF'],
     capacity: [
       {
         seats: 6537,
@@ -8711,6 +9022,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Cable Dahmer Arena', from: '2011-01-01' },
     ],
     location: [-94.3574967, 39.0398613],
+    ticketmasterIds: ['KovZpZAF6tlA'],
     capacity: [
       {
         seats: 5800,
@@ -8725,6 +9037,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Hale Arena' }],
     location: [-94.6045545, 39.0900121],
+    ticketmasterIds: ['KovZpZAF7EJA'],
     capacity: [
       {
         seats: 5000,
@@ -8743,6 +9056,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OSM places the arena on Wyoming Street; the research address is 1800 Genessee, the next block.
     location: [-94.6058218, 39.0917752],
+    ticketmasterIds: ['KovZpZAaJ1kA'],
     capacity: [
       {
         seats: 3500,
@@ -8760,6 +9074,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Arvest Bank Theatre at The Midland', from: '2013-09-13' },
     ],
     location: [-94.5837203, 39.0988674],
+    ticketmasterIds: ['KovZpZAEdaIA'],
     // The official site publishes a live-show range, 1,300–3,000, not one figure. Left unknown.
     capacity: [],
     roof: 'indoor',
@@ -8770,6 +9085,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Muriel Kauffman Theatre' }],
     // OSM building point. The two halls were not separated.
     location: [-94.587694, 39.0941587],
+    ticketmasterIds: ['ZFr9jZadFa'],
     capacity: [
       {
         seats: 1800,
@@ -8784,6 +9100,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Helzberg Hall' }],
     location: [-94.587694, 39.0941587],
+    ticketmasterIds: ['ZFr9jZadFF'],
     capacity: [
       {
         seats: 1600,
@@ -8798,6 +9115,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Uptown Theater' }],
     location: [-94.5910506, 39.0609236],
+    ticketmasterIds: ['KovZpa3sre'],
     capacity: [
       {
         seats: 2400,
@@ -8827,6 +9145,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Grinders' }],
     // OSM resolved the restaurant, not a separate stage.
     location: [-94.578132, 39.0914904],
+    ticketmasterIds: ['KovZpZAaJJnA'],
     capacity: [
       {
         seats: 2500,
@@ -8841,6 +9160,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'The Truman' }],
     location: [-94.5761415, 39.0952132],
+    ticketmasterIds: ['KovZ917AQI8'],
     capacity: [
       {
         seats: 1200,
@@ -8855,6 +9175,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'kansas-city',
     names: [{ name: 'Folly Theatre' }, { name: 'Folly Theater' }],
     location: [-94.587292, 39.1003099],
+    ticketmasterIds: ['KovZpaoXie'],
     capacity: [
       {
         seats: 1006,
@@ -8878,6 +9199,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Reliant Stadium', from: '2026-08-01' },
     ],
     location: [-95.410802, 29.684858],
+    ticketmasterIds: ['KovZpZAEdFeA', 'Za5ju3rKuqZDv4JHrAG1c2RF3zNDntHzCr'],
     capacity: [
       { seats: 72220, setup: 'football', note: 'Official current. Reported steps: 69,500 (2002), 71,054 (2003–13), 71,795 (2014–17), 72,220 (2018–). Conflict: 71,995 on a Titans media guide. Source: https://www.reliantpark.com/reliant-stadium/' },
       { seats: 80000, setup: 'concert', note: 'Official upper of "72,000 to 80,000" for special events. An 80,203 concert is attendance, not a seat count. Source: https://www.reliantpark.com/reliant-stadium/' },
@@ -8894,6 +9216,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Reliant Arena', from: '2026-08-01' },
     ],
     location: [-95.405969, 29.681173],
+    ticketmasterIds: ['KovZpZAJaEaA'],
     capacity: [
       { seats: 5700, setup: 'concert', note: 'Official "5,700+" seats, not an exact count. Wikipedia cites 5,800. Source: https://www.reliantpark.com/reliant-park-facilities/' },
     ],
@@ -8921,6 +9244,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Daikin Park', from: '2025-01-01' },
     ],
     location: [-95.355234, 29.757232],
+    ticketmasterIds: ['KovZpZAJJAtA'],
     capacity: [
       { seats: 41168, setup: 'baseball', note: 'Reported (SportCal / Wikipedia). Conflicts: 40,950 Baseball-Reference, 40,963 AP. The Astros\' own figure was not fetched. Source: https://www.sportcal.com/newsletters/astros-to-rename-minute-maid-park-as-daikin-secures-stadium-naming-rights' },
     ],
@@ -8931,6 +9255,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Toyota Center' }],
     location: [-95.362231, 29.750747],
+    ticketmasterIds: ['KovZpZAJJIIA'],
     capacity: [
       { seats: 18104, setup: 'basketball', note: 'Reported. Conflict: about 18,055 (3D Digital Venue). Official Rockets figure was not fetched. 2026–27 renovation capacity effect unknown. Source: https://en.wikipedia.org/wiki/Toyota_Center' },
       { seats: 19000, setup: 'concert', note: 'Reported "up to about 19,000". Source: https://www.thestadiumbusiness.com/2026/04/09/toyota-center-set-for-major-revamp/' },
@@ -8946,6 +9271,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Shell Energy Stadium' },
     ],
     location: [-95.352341, 29.752026],
+    ticketmasterIds: ['Za5ju3rKuqZDvIz0yXODy2BbPGRrI8dHln', 'KovZpaFrke'],
     capacity: [
       { seats: 22039, setup: 'soccer', note: 'Reported. Conflicts: 20,656 (KHOU) and 20,039 (Stadium Journey). Football and concert configurations unknown. Rename dates were not verified. Source: https://en.wikipedia.org/wiki/Shell_Energy_Stadium' },
     ],
@@ -8959,6 +9285,7 @@ export const VENUES: Record<string, Venue> = {
       { name: '713 Music Hall' },
     ],
     location: [-95.364025, 29.765919],
+    ticketmasterIds: ['KovZ917APwH'],
     capacity: [
       { seats: 5000, setup: 'concert', note: 'Official city listing: 5,000 occupancy, mostly a flat GA floor. Not 5,000 seats. Threshold case. Source: https://www.houstontx.gov/events/713-music-hall.html' },
     ],
@@ -8969,6 +9296,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Jones Hall' }, { name: 'Jones Hall for the Performing Arts' }],
     location: [-95.365028, 29.760873],
+    ticketmasterIds: ['KovZpZAJ1aIA'],
     capacity: [
       { seats: 2912, setup: 'concert', note: 'Official Houston Symphony. Can shrink to 2,300. Conflict: 2,883 in a secondary roundup. Source: https://houstonsymphony.org/visit/seating-charts' },
     ],
@@ -8979,6 +9307,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Sarofim Hall' }],
     location: [-95.369706, 29.761658],
+    ticketmasterIds: ['ZFr9jZdk6d'],
     capacity: [
       { seats: 2650, setup: 'concert', note: 'Reported. Hobby Center\'s other room, Zilkha Hall (500), is below the pre-list line and is not a row. Source: https://catastrophictheatre.com/press/citys-theater-district-among-the-best/' },
     ],
@@ -9010,6 +9339,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'John O\'Quinn Field at TDECU Stadium' }, { name: 'TDECU Stadium' }],
     // OSM names the pitch John O'Quinn Field and has no separate stadium node.
     location: [-95.349184, 29.721997],
+    ticketmasterIds: ['ZFr9jZddvv', 'KovZpZAJJAFA'],
     capacity: [
       { seats: 40000, setup: 'football', note: 'Reported (architect and concessionaire). Conflict: 39,700 plus standing room (Wikipedia, current). Post-2024 renovation effect unverified. Source: https://walterpmoore.com/projects/university-houston-tdecu-stadium' },
     ],
@@ -9023,6 +9353,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Fertitta Center', from: '2018-12-01' },
     ],
     location: [-95.346961, 29.724737],
+    ticketmasterIds: ['KovZpZAJ1aJA', 'KovZ917AOIr'],
     capacity: [
       { seats: 7035, setup: 'basketball', fromYear: 2018, note: 'Reported. Conflict: 7,100 (concessionaire). Earlier reported layouts: 10,000 (1969–98), 8,479 (1998–2017). Source: https://en.wikipedia.org/wiki/Fertitta_Center' },
     ],
@@ -9033,6 +9364,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Schroeder Park' }, { name: 'Darryl & Lori Schroeder Park' }],
     location: [-95.34536, 29.726957],
+    ticketmasterIds: ['KovZpZAJJnAA'],
     capacity: [
       { seats: 3500, setup: 'baseball', note: 'Reported (concessionaire). Source: https://media.delawarenorth.com/delaware-north-sportservice-named-food-and-beverage-partner-for-university-houston-athletics-facilities/' },
     ],
@@ -9043,6 +9375,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Cougar Softball Stadium' }],
     location: [-95.349056, 29.727193],
+    ticketmasterIds: ['KovZpZAE7veA'],
     capacity: [
       { seats: 1200, setup: 'baseball', note: 'Reported (concessionaire). Source: https://media.delawarenorth.com/delaware-north-sportservice-named-food-and-beverage-partner-for-university-houston-athletics-facilities/' },
     ],
@@ -9056,6 +9389,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'First Community Stadium', from: '2026-10-03' },
     ],
     location: [-95.409324, 29.716323],
+    ticketmasterIds: ['KovZpZAJ1edA'],
     capacity: [
       { seats: 47000, setup: 'football', note: 'Official Rice 2020 rental page. Conflict: 37,000 (Stadium Journey). Post-renovation capacity is unknown and not applied. Not Rice–Totten Stadium in Mississippi. Source: https://riceowls.com/sports/2020/6/11/outside-event-facility-rentals.aspx' },
     ],
@@ -9066,6 +9400,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Tudor Fieldhouse' }],
     location: [-95.403987, 29.714983],
+    ticketmasterIds: ['KovZpZAJIJ6A'],
     capacity: [
       { seats: 5208, setup: 'basketball', note: 'Reported, single secondary source, just over 5,000. Source: https://stadiumjourney.com/stadiums/tudor-fieldhouse-s571' },
     ],
@@ -9076,6 +9411,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Reckling Park' }],
     location: [-95.403988, 29.713426],
+    ticketmasterIds: ['Za5ju3rKuqZDd4cMAPLEcZltSpnult-wy3', 'KovZpZAJJ1IA'],
     capacity: [
       { seats: 6193, setup: 'baseball', note: 'Official Rice facility page. Conflict: 7,000 on the 2020 rental page. Includes 3,700+ chairbacks; the rest is general admission. Source: https://riceowls.com/facilities/reckling-park/5' },
     ],
@@ -9109,6 +9445,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'The Cynthia Woods Mitchell Pavilion presented by Huntsman' },
     ],
     location: [-95.464202, 30.161401],
+    ticketmasterIds: ['KovZpZAE6k6A'],
     capacity: [
       { seats: 16500, setup: 'concert', note: 'Official operator listing: 6,500 covered seats plus about 10,000 lawn. The lawn is GA, not seats. Source: https://blog.ticketmaster.com/venue-faq-cynthia-woods-mitchell-pavilion-woodlands-tx/' },
     ],
@@ -9192,6 +9529,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Smart Financial Centre' }, { name: 'Smart Financial Centre at Sugar Land' }],
     location: [-95.643362, 29.577051],
+    ticketmasterIds: ['KovZpZAIIIeA'],
     capacity: [],
     roof: 'indoor',
   },
@@ -9204,6 +9542,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // City note: map apps misplace this at 2055 Mowery Rd. OSM point is Houston Sports Park, 12131 Kirby Dr.
     location: [-95.395005, 29.638065],
+    ticketmasterIds: ['KovZ917AVAj'],
     capacity: [
       { seats: 3000, standing: 4000, setup: 'soccer', note: 'Official city page: 3,000+ seats, 4,000 maximum including standing. Anchor tenant left before 2026. Under 5,000. Source: https://houstontx.gov/abouthouston/sabercats-stadium.html' },
     ],
@@ -9215,6 +9554,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'White Oak Music Hall Lawn' }],
     // Campus point. The lawn and the downstairs room are not separate OSM nodes.
     location: [-95.366809, 29.785793],
+    ticketmasterIds: ['KovZ917Ata1'],
     capacity: [
       { seats: 3000, setup: 'concert', note: 'Reported, low-quality secondary, about 3,000. Verify with the venue. Source: https://getmorestreams.com/?p=10491' },
     ],
@@ -9225,6 +9565,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'White Oak Music Hall Downstairs' }],
     location: [-95.366809, 29.785793],
+    ticketmasterIds: ['KovZ917AiGZ'],
     capacity: [
       { seats: 1000, setup: 'concert', note: 'Reported, low-quality secondary, about 1,000. At the pre-list line. Verify with the venue. Source: https://getmorestreams.com/?p=10491' },
     ],
@@ -9245,6 +9586,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Sam Houston Race Park' }],
     // OSM commercial-area point. The grandstand itself was not a separate node.
     location: [-95.530219, 29.930121],
+    ticketmasterIds: ['KovZpZAJJ1FA'],
     capacity: [],
     roof: 'open',
   },
@@ -9256,6 +9598,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'toronto',
     names: [{ name: 'Rogers Stadium' }],
     location: [-79.46923, 43.74617],
+    ticketmasterIds: ['KovZ917ARzt'],
     capacity: [{ seats: 50000, setup: 'concert', fromYear: 2025, note: 'Official concert capacity. Not 50,000 seats: up to 18,000 floor plus up to 32,000 bleachers (reported). Temporary; five-year lease from 2025. Source: https://news.livenationentertainment.com/news/live-nation-canada-opens-rogers-stadium' }],
     roof: 'open',
   },
@@ -9264,6 +9607,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'toronto',
     names: [{ name: 'SkyDome' }, { name: 'Rogers Centre' }],
     location: [-79.38920, 43.64166],
+    ticketmasterIds: ['KovZpa3Bbe'],
     capacity: [
       { seats: 49282, setup: 'baseball', note: 'Reported pre-renovation baseball capacity (the 2022 figure). Source: https://baseballparks.com/indepth/rogers-centre-renovation/' },
       { seats: 39150, setup: 'baseball', fromYear: 2024, note: 'Reported seats after the 2022–24 renovation. MLB\'s March 2026 guide says "over 41,000" (likely standing and social areas). 2026 announced average 41,220 exceeded 39,150. Conflict kept; 39,150 is the sourced seat count. Source: https://baseballparks.com/indepth/rogers-centre-renovation/' },
@@ -9277,6 +9621,7 @@ export const VENUES: Record<string, Venue> = {
     // "Toronto Stadium" applied only 12 Jun–2 Jul 2026. The name list has no end date, so BMO Field is repeated from 3 Jul 2026 and stays the current name.
     names: [{ name: 'BMO Field' }, { name: 'Toronto Stadium', from: '2026-06-12' }, { name: 'BMO Field', from: '2026-07-03' }],
     location: [-79.41856, 43.63334],
+    ticketmasterIds: ['KovZpZAE77aA'],
     capacity: [
       { seats: 28180, setup: 'soccer', note: 'Reported regular seats after the 2026 World Cup temporary stands came down. Wikipedia lists 28,351. About 30,000 with standing is a separate figure and is not added. Temporary World Cup capacity 45,736 (official) applied only 12 Jun–2 Jul 2026; the year model cannot date that window, so it is not stored as current. Source: https://www.blogto.com/sports_play/2026/06/torontos-bmo-field-change-fifa-world-cup/' },
       { seats: 28180, setup: 'football', note: 'Same bowl for Canadian football after the temporary stands were removed. Source: https://www.blogto.com/sports_play/2026/07/toronto-stadium-additions-torn-down-fifa-world-cup/' },
@@ -9288,6 +9633,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'toronto',
     names: [{ name: 'Air Canada Centre' }, { name: 'Aréna Scotiabank', from: '2018-07-01' }, { name: 'Scotiabank Arena', from: '2018-07-01' }],
     location: [-79.37908, 43.64343],
+    ticketmasterIds: ['KovZpZAFFE1A'],
     capacity: [
       { seats: 18800, setup: 'hockey', note: 'Official. Wikipedia reports 18,819, and 20,270 with standing. Theatre setup 5,200 is the same room, not stored as the concert figure. Source: https://scotiabankarena.com/about' },
       { seats: 19800, setup: 'basketball', note: 'Official. Wikipedia reports 20,511 with standing room. Source: https://scotiabankarena.com/about' },
@@ -9300,6 +9646,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'toronto',
     names: [{ name: 'Molson Canadian Amphitheatre' }, { name: 'Budweiser Stage', from: '2017-01-01' }, { name: 'RBC Amphitheatre', from: '2025-10-28' }],
     location: [-79.41528, 43.62933],
+    ticketmasterIds: ['KovZpZAEkkIA'],
     capacity: [{ seats: 16000, setup: 'concert', note: 'Reported: 16,000 including 7,000 lawn (9,000 pavilion + 7,000 lawn). Not 16,000 seats. Billboard "now-15,000" and "18,000-ish" conflict kept. Scheduled to close fall 2027. Budweiser Stage start day in 2017 was not dated. Source: https://news.pollstar.com/2025/10/31/live-nations-wayne-zronik-talks-newly-named-rbc-amphitheatre-upcoming-renovations-at-popular-toronto-shed/' }],
     roof: 'covered',
   },
@@ -9308,6 +9655,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'toronto',
     names: [{ name: 'Rexall Centre' }, { name: 'Aviva Centre', from: '2015-01-01' }, { name: 'Sobeys Stadium', from: '2022-01-01' }],
     location: [-79.51208, 43.77159],
+    ticketmasterIds: ['KovZpZAEdJIA', 'Za5ju3rKuqZDeanGZuOBy2Ih12DGNnXUzV'],
     capacity: [{ seats: 12500, setup: 'tennis', note: 'Reported Stadium Court. Concert listings conflict: 11,000–14,000 versus 9,100. No separate concert figure is stored. Rename days for Aviva (2015) and Sobeys (2022) were years only. Source: https://huddle.today/2022/05/03/empire-unveils-sobeys-stadium-in-toronto-part-of-enhanced-partnership-with-tennis-canada/' }],
     roof: 'open',
   },
