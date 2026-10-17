@@ -138,16 +138,18 @@ try {
   const events = dropTicketmasterGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...tm.events, ...sg].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds and past dates stay.
+  // Every row this pass kept was just stamped `captured_at: now`, so a stale row is one this city's pass stamped
+  // earlier. (Listing every kept id in the request instead broke on Oct 16, 2026: Los Angeles passed about 670
+  // events and the address grew past what Supabase accepts, so no city's catalog was written that night.)
   if (!dryRun) {
     const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
-    const keep = events.map((e) => e.id);
     const { error, count } = await db
       .from('events')
       .delete({ count: 'exact' })
       .eq('metro_id', metroId)
       .neq('source_id', 'seed')
       .gte('date', todayLocal)
-      .not('id', 'in', `(${keep.map((id) => `"${id}"`).join(',')})`);
+      .lt('captured_at', now);
     if (error) throw new Error(`events (stale): ${error.message}`);
     counts.events_removed = count ?? 0;
   }
