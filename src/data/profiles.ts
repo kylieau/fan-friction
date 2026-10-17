@@ -471,16 +471,14 @@ type PlanQuery = ReturnType<ReturnType<SupabaseClient['from']>['select']>;
 
 /**
  * Someone else's plans, as cards (build 5, stub privacy; migration 0026): `plan_cards` carries the date, the place-free
- * facts and the Watching / Interested flags, never the row's data. Until 0026 is applied the view doesn't exist, so the
- * old table read (approved followers) is the fallback. Rows come back in the old shape (`data.watch`, `data.interested`).
+ * facts and the Watching / Interested flags, never the row's data. Rows come back in the old shape (`data.watch`,
+ * `data.interested`). A read that fails throws, so the screen can say so (B5-07, build 6): the old fallback to the
+ * `plans` table was dead (0026 is applied, and the table's rules no longer let a follower read it), and it hid the error.
  */
 async function planCards(c: SupabaseClient, narrow: (q: PlanQuery) => PlanQuery): Promise<{ data: unknown[] | null }> {
   const cards = await narrow(c.from('plan_cards').select('id, user_id, date, metro_id, event_id, title, venue, watch, interested'));
-  if (!cards.error) {
-    return { data: ((cards.data ?? []) as { watch?: boolean; interested?: boolean }[]).map((row) => ({ ...row, data: { watch: row.watch, interested: row.interested } })) };
-  }
-  const old = await narrow(c.from('plans').select('id, user_id, date, metro_id, event_id, title, venue, data'));
-  return { data: (old.data ?? null) as unknown[] | null };
+  if (cards.error) throw new Error(`plan_cards: ${cards.error.message}`);
+  return { data: ((cards.data ?? []) as { watch?: boolean; interested?: boolean }[]).map((row) => ({ ...row, data: { watch: row.watch, interested: row.interested } })) };
 }
 
 /** The places the people you follow shared, keyed "user|event". Reads through the 0023 rule; nothing before it runs. */
