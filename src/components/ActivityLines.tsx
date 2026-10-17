@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { TagChip } from './TagChip';
 import type { ReactNode } from 'react';
 import { ACTIVITY_WORDS, activityOrder, placeClause, type ActivityGroups, type ActivityKind } from '../lib/activity';
-import { BookmarkIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
+import { BookmarkIcon, GlobeIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
 
 /** The icon for a kind (build notes 3, 4.4): a ticket for attending, a TV for watching, a bookmark for interested. */
 export function ActivityIcon({ kind }: { kind: ActivityKind }) {
@@ -36,7 +36,8 @@ export function ActivityLines({ groups }: { groups: ActivityGroups }) {
 
 /**
  * Your own answer as one line (build notes 3, 4.4 and 4.7): "[ticket] Attending", "[TV] Watching · [lock] Private",
- * "[TV] Watched · [people] Friends · Home". A private watch never names its place (8.1, item 14).
+ * "[TV] Watched · [people] Friends · Home". A private watch never names its place (8.1, item 14). The stub's own
+ * level, Anyone included, rides on any kind when the caller passes it (B5-05, build 6).
  */
 export function StatusLine({
   kind,
@@ -48,7 +49,7 @@ export function StatusLine({
   onTag,
 }: {
   kind: ActivityKind;
-  share?: 'private' | 'friends';
+  share?: 'private' | 'friends' | 'anyone';
   place?: string;
   crowd?: ReactNode;
   /** Your own tags (build notes 4, T05): the first few as luggage chips, then "+N". Not on Interested. */
@@ -62,17 +63,24 @@ export function StatusLine({
     <span className={`status-line status-${kind}`}>
       <ActivityIcon kind={kind} />
       {ACTIVITY_WORDS[kind]}
-      {watch && share === 'private' && (
+      {share === 'private' && (
         <>
           {' · '}
           <LockMark size={13} /> Private
         </>
       )}
-      {watch && share === 'friends' && (
+      {share === 'friends' && (
         <>
           {' · '}
           <PeopleIcon size={14} /> Friends
-          {place ? ` · ${place}` : ''}
+          {watch && place ? ` · ${place}` : ''}
+        </>
+      )}
+      {share === 'anyone' && (
+        <>
+          {' · '}
+          <GlobeIcon size={14} /> Anyone
+          {watch && place ? ` · ${place}` : ''}
         </>
       )}
       {crowd && !watch && <> · {crowd}</>}

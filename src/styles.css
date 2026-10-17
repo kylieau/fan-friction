@@ -5817,6 +5817,16 @@ button.back-link {
   letter-spacing: 0;
 }
 
+/* The timeline's today line (build 6, items 6 and 7): the shared band in the selected blue, so the eye finds now. */
+.today-line .list-band {
+  background: var(--dodger);
+  color: var(--card);
+}
+
+.timeline-note {
+  padding: 4px 4px 0;
+}
+
 /* Local Competition with fewer than two big events (Kylie, Oct 16, Q9): one quiet line, never an empty card. */
 .timeline-quiet {
   margin: 4px 0 0;

@@ -5,63 +5,58 @@ import { SearchButton } from '../components/SearchButton';
 import { PlanRow, StubRow } from '../components/StubRows';
 import { PlusIcon } from '../components/Icons';
 import {
-  canSignIn,
-  getAccount,
   getPersonalLog,
   getSaveWarning,
   nightKey,
   nightsOf,
   ratingForEntry,
   scoresForNights,
-  subscribeAccount,
   subscribePersonalLog,
   todayIn,
   upcomingPlans,
   yourEntries,
   tagSummaries,
-  type Entry,
   entryTags,
   eventType,
   getCityDate,
 } from '../data';
-import { timelineGroup } from '../lib/dates';
+import { dayBandLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { TagChip } from '../components/TagChip';
 import { ChevronDown } from '../components/Icons';
-import { ListBand } from '../components/ListBand';
+import { Timeline, type TimelineItem } from '../components/Timeline';
 
-type Tab = 'recent' | 'upcoming';
 type Chip = 'all' | 'sports' | 'concerts' | 'watched' | 'attended';
 
 /**
- * Stubs (build notes 3, 4.4; docs/design/build3/4-stubs.png): the diary. Recent first, then Upcoming.
- * Recent runs in month bands, each row a date box, the title over the venue, the friction word from
- * its stamp, your status with the crowd on attended rows, and the small read box with its word. The
- * floating "+ Stub it" shrinks to "+" as the list scrolls; the list keeps room under it.
+ * Stubs (build 6, item 6; Kylie, Oct 15 and 16): the diary as one line of time. Past stubs run down to a
+ * "today" line, then the plans ahead; month bands only. A row is its date box, the title over the venue,
+ * your state on its own last line, and the small read box: no crowd, ring or occasion tag (the diary
+ * shows information, not conclusions). The chips and tag picker narrow the past. The floating "+ Stub it"
+ * shrinks to "+" as the list scrolls and hides only when there are no stubs and no plans (Kylie, Q3).
  */
 export function StubsScreen() {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
-  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const entries = useMemo(() => yourEntries(log), [log]);
   const [params] = useSearchParams();
   // A favorite's "My Stubs ›" opens the log narrowed to it.
   const filter = params.get('filter');
-  const [tab, setTab] = useState<Tab>('recent');
-  // The Oct 11 chips (Kylie, call 8) stay under Recent; the first one is "All" now that Recent names the tab.
+  // The Oct 11 chips (Kylie, call 8), the first one "All".
   const [chip, setChip] = useState<Chip>('all');
   // Your own tags as a filter (T10, T13): several at once match any of them, and the type chip narrows that.
   const [picked, setPicked] = useState<string[]>([]);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [tagQuery, setTagQuery] = useState('');
-  // The picker filters Recent, so it lists the tags on your stubs; plans carry theirs into a stub later.
+  // The picker filters the past, so it lists the tags on your stubs; plans carry theirs into a stub later.
   const known = useMemo(() => tagSummaries(log.added, []), [log]);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const plansAhead = useMemo(() => upcomingPlans(todayIn(DEFAULT_METRO), log), [log]);
+  const today = todayIn(DEFAULT_METRO);
+  const plansAhead = useMemo(() => upcomingPlans(today, log), [log, today]);
 
   // Each upcoming plan's listed event, for its type icon (build 5, item 12): plans store no kind of their own.
   const [planTypes, setPlanTypes] = useState<Map<string, string>>(new Map());
@@ -90,7 +85,8 @@ export function StubsScreen() {
     };
   }, [entries, plansAhead]);
 
-  const recent = useMemo(
+  // The past, oldest first, so the line reads down into today (the Explore List's order).
+  const past = useMemo(
     () =>
       entries
         .filter((entry) => !filter || entryTags(entry).includes(filter))
@@ -98,11 +94,18 @@ export function StubsScreen() {
         .filter((entry) => picked.length === 0 || picked.some((tag) => entry.userTags?.includes(tag)))
         .filter((entry) =>
           chip === 'all' ? true : chip === 'watched' ? Boolean(entry.watched) : chip === 'attended' ? !entry.watched : chip === 'sports' ? entry.kind === 'game' : entry.kind === 'show' || entry.kind === 'festival',
-        ),
+        )
+        .sort((a, b) => a.when.sort.localeCompare(b.when.sort) || a.title.localeCompare(b.title)),
     [entries, chip, filter, picked],
   );
 
-  const emptyUpcoming = tab === 'upcoming' && plansAhead.length === 0;
+  const pastItems: TimelineItem[] = past.map((entry) => ({ key: entry.id, group: timelineGroup(entry.when), node: <StubRow entry={entry} rating={ratingForEntry(entry, ratings)} /> }));
+  const futureItems: TimelineItem[] = plansAhead.map((plan) => ({
+    key: plan.id,
+    group: timelineGroup({ sort: plan.date, label: '', precision: 'day' }),
+    node: <PlanRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} typeKey={plan.eventId ? planTypes.get(plan.eventId) : undefined} />,
+  }));
+  const nothing = entries.length === 0 && plansAhead.length === 0;
 
   return (
     <div className="screen page stubs-page" onScroll={(event) => setScrolled((event.target as HTMLElement).scrollTop > 40)}>
@@ -115,132 +118,86 @@ export function StubsScreen() {
           {warning}
         </p>
       )}
-      <div className="segmented" role="tablist" aria-label="Stubs">
-        <button type="button" role="tab" aria-selected={tab === 'recent'} onClick={() => setTab('recent')}>
-          Recent
-        </button>
-        <button type="button" role="tab" aria-selected={tab === 'upcoming'} onClick={() => setTab('upcoming')}>
-          Upcoming
-        </button>
-      </div>
 
-      {tab === 'recent' && (
-        <section className="you-block stubs-list" aria-label="Recent">
-          <div className="filter-row" role="group" aria-label="Show">
-            {(
-              [
-                ['all', 'All'],
-                ['sports', 'Sports'],
-                ['concerts', 'Concerts'],
-                ['watched', 'Watched'],
-                ['attended', 'Attended'],
-              ] as const
-            ).map(([id, label]) => (
-              <button
-                key={id}
-                type="button"
-                className="filter-chip"
-                aria-pressed={chip === id}
-                onClick={() => {
-                  setChip(id);
-                  // "All" is Recent's reset (T13 lean): it clears the tag picks too.
-                  if (id === 'all') {
-                    setPicked([]);
-                    setPickerOpen(false);
-                  }
-                }}
-              >
-                {label}
-              </button>
-            ))}
-            {known.length > 0 && (
-              <button type="button" className="filter-chip" aria-pressed={picked.length > 0} aria-expanded={pickerOpen} onClick={() => setPickerOpen((v) => !v)}>
-                {picked.length > 0 ? `Tag · ${picked.length}` : 'Tag'} <ChevronDown />
-              </button>
-            )}
-          </div>
-          {pickerOpen && (
-            <div className="card tag-picker" role="group" aria-label="Tags">
-              {known.length > 6 && (
-                <input className="account-input" type="search" value={tagQuery} placeholder="Search your tags" aria-label="Search your tags" onChange={(ev) => setTagQuery(ev.target.value)} />
-              )}
-              <div className="tag-picker-list">
-                {known
-                  .filter((k) => k.tag.includes(tagQuery.trim().toLowerCase()))
-                  .map((k) => (
-                    <label key={k.tag} className="tag-picker-row">
-                      <input
-                        type="checkbox"
-                        checked={picked.includes(k.tag)}
-                        onChange={() => setPicked((cur) => (cur.includes(k.tag) ? cur.filter((t) => t !== k.tag) : [...cur, k.tag]))}
-                      />
-                      <TagChip tag={k.tag} />
-                      <span className="tags-panel-count">{k.count}</span>
-                    </label>
-                  ))}
-              </div>
-            </div>
+      <section className="you-block stubs-list" aria-label="Stubs">
+        <div className="filter-row" role="group" aria-label="Show">
+          {(
+            [
+              ['all', 'All'],
+              ['sports', 'Sports'],
+              ['concerts', 'Concerts'],
+              ['watched', 'Watched'],
+              ['attended', 'Attended'],
+            ] as const
+          ).map(([id, label]) => (
+            <button
+              key={id}
+              type="button"
+              className="filter-chip"
+              aria-pressed={chip === id}
+              onClick={() => {
+                setChip(id);
+                // "All" is the reset (T13 lean): it clears the tag picks too.
+                if (id === 'all') {
+                  setPicked([]);
+                  setPickerOpen(false);
+                }
+              }}
+            >
+              {label}
+            </button>
+          ))}
+          {known.length > 0 && (
+            <button type="button" className="filter-chip" aria-pressed={picked.length > 0} aria-expanded={pickerOpen} onClick={() => setPickerOpen((v) => !v)}>
+              {picked.length > 0 ? `Tag · ${picked.length}` : 'Tag'} <ChevronDown />
+            </button>
           )}
-          {recent.length === 0 ? (
+        </div>
+        {pickerOpen && (
+          <div className="card tag-picker" role="group" aria-label="Tags">
+            {known.length > 6 && (
+              <input className="account-input" type="search" value={tagQuery} placeholder="Search your tags" aria-label="Search your tags" onChange={(ev) => setTagQuery(ev.target.value)} />
+            )}
+            <div className="tag-picker-list">
+              {known
+                .filter((k) => k.tag.includes(tagQuery.trim().toLowerCase()))
+                .map((k) => (
+                  <label key={k.tag} className="tag-picker-row">
+                    <input
+                      type="checkbox"
+                      checked={picked.includes(k.tag)}
+                      onChange={() => setPicked((cur) => (cur.includes(k.tag) ? cur.filter((t) => t !== k.tag) : [...cur, k.tag]))}
+                    />
+                    <TagChip tag={k.tag} />
+                    <span className="tags-panel-count">{k.count}</span>
+                  </label>
+                ))}
+            </div>
+          </div>
+        )}
+        <Timeline
+          label="Your stubs"
+          past={pastItems}
+          future={futureItems}
+          todayLabel={dayBandLabel(today, today)}
+          emptyPast={
+            // The decided empty-past copy (Kylie, Oct 16): no "Stub it" button here, only the way to today.
             <div className="card empty-card">
-              <div className="card-title">{entries.length > 0 ? 'Nothing here.' : canSignIn() && !account ? 'No stubs on this phone.' : 'No stubs yet.'}</div>
+              <div className="card-title">{entries.length > 0 ? 'Nothing here.' : 'No stubbed events'}</div>
               <div className="empty-actions">
-                <Link to="/you/add" className="gold-button small">
-                  + Stub it
-                </Link>
                 <Link to="/explore" className="link-button">
                   Browse today in Explore ›
                 </Link>
               </div>
             </div>
-          ) : (
-            <div className="timeline">
-              {groupByTime(recent).map(([group, list]) => (
-                <section key={group} className="timeline-group" aria-label={group}>
-                  <ListBand label={group} />
-                  <ul className="log-list">
-                    {list.map((entry) => (
-                      <li key={entry.id}>
-                        <StubRow entry={entry} rating={ratingForEntry(entry, ratings)} />
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              ))}
-            </div>
-          )}
-        </section>
-      )}
+          }
+          emptyFuture={<p className="you-fine timeline-note">Nothing upcoming yet</p>}
+        />
+      </section>
 
-      {tab === 'upcoming' &&
-        (emptyUpcoming ? (
-          <div className="card empty-card stubs-empty">
-            <span className="stubs-empty-mark" aria-hidden>
-              <PlusIcon />
-            </span>
-            <div className="card-title">Nothing upcoming yet</div>
-            <div className="card-body">Events you plan to attend or watch show here.</div>
-            <Link to="/you/add" className="gold-button">
-              + Stub it
-            </Link>
-            <Link to="/explore" className="text-link">
-              Browse today in Explore ›
-            </Link>
-          </div>
-        ) : (
-          <section className="you-block stubs-list" aria-label="Upcoming">
-            <ul className="log-list">
-              {plansAhead.map((plan) => (
-                <li key={plan.id}>
-                  <PlanRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} typeKey={plan.eventId ? planTypes.get(plan.eventId) : undefined} />
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-
-      {/* The extended floating button (build notes 3, 4.4): bottom right above the bar; "+" alone once the list has scrolled. */}
-      {!emptyUpcoming && (
+      {/* The extended floating button (build notes 3, 4.4): bottom right above the bar; "+" alone once the list has scrolled.
+          Hidden only when there is nothing on either side of the line (Kylie, Oct 16, Q3). */}
+      {!nothing && (
         <Link to="/you/add" className={`stub-fab${scrolled ? ' small' : ''}`} aria-label="Stub it">
           <PlusIcon />
           <span className="stub-fab-label">Stub it</span>
@@ -248,16 +205,4 @@ export function StubsScreen() {
       )}
     </div>
   );
-}
-
-/** Entries in the order given, split into month (or year) groups for the timeline. */
-function groupByTime(entries: Entry[]): [string, Entry[]][] {
-  const groups: [string, Entry[]][] = [];
-  for (const entry of entries) {
-    const label = timelineGroup(entry.when);
-    const last = groups[groups.length - 1];
-    if (last && last[0] === label) last[1].push(entry);
-    else groups.push([label, [entry]]);
-  }
-  return groups;
 }
