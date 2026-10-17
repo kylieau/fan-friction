@@ -1,0 +1,1317 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "metroName": "Miami",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-17",
+  "capturedAt": "2026-10-17T12:06:12.119Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-17",
+    "through": "2026-10-31"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 12
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 19
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-17-espn-panthers-401892522",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Panthers vs. Kraken",
+      "broadcast": "KONG",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "panthers",
+        "away": "kraken",
+        "awayOpponent": "kraken"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19343,
+        "low": 16804,
+        "high": 19357,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-miami-fc-401842298",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Miami FC vs. Charleston",
+      "place": {
+        "type": "venue",
+        "venueId": "pitbull-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "miami-fc",
+        "away": "charleston",
+        "awayOpponent": "charleston"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1203,
+        "low": 1129,
+        "high": 1382,
+        "fromCrowds": true,
+        "games": 29,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 29 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-miami-hurricanes-football-401858263",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Miami vs. Florida St",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "miami-hurricanes-football",
+        "away": "florida-st",
+        "awayOpponent": "florida-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 58503,
+        "low": 58045,
+        "high": 63892,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A70J4-",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Miami City Ballet",
+      "place": {
+        "type": "venue",
+        "venueId": "arsht-ziff-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Miami City Ballet",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70J4-",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1VZ_GpGY6iN",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "iHeartRadio Fiesta Latina",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "iHeartRadio Fiesta Latina",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GpGY6iN",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A70J4x",
+      "metroId": "miami",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Miami City Ballet",
+      "place": {
+        "type": "venue",
+        "venueId": "arsht-ziff-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Miami City Ballet",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70J4x",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A7xZpd",
+      "metroId": "miami",
+      "date": "2026-10-18",
+      "start": "18:30",
+      "kind": "show",
+      "title": "$UICIDEBOY$",
+      "officialTitle": "$uicideboy$ present Grey Day Tour 2026 w. Shakewell & more",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "$UICIDEBOY$",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xZpd",
+      "expectedDraw": {
+        "count": 13110,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1VZ_5G47K2b",
+      "metroId": "miami",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "TINI",
+      "officialTitle": "TINI - FUTTTURA WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "TINI",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_5G47K2b",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-fiu-football-401871055",
+      "metroId": "miami",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "FIU vs. MTSU",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "pitbull-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "fiu-football",
+        "away": "mtsu-football",
+        "awayOpponent": "mtsu"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12436,
+        "low": 10891,
+        "high": 14426,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG1VZ_6xPlImM",
+      "metroId": "miami",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Doobie Brothers",
+      "officialTitle": "The Doobie Brothers: Walk This Road Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Doobie Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_6xPlImM",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-heat-401909091",
+      "metroId": "miami",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Heat vs. Timberwolves",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "heat",
+        "away": "timberwolves",
+        "awayOpponent": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19620,
+        "low": 19610,
+        "high": 19623,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-fort-lauderdale-united-401878621",
+      "metroId": "miami",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Fort Lauderdale Utd vs. Carolina",
+      "place": {
+        "type": "venue",
+        "venueId": "beyond-bancard-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "fort-lauderdale-united",
+        "away": "carolina",
+        "awayOpponent": "carolina"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1890,
+        "low": 1736,
+        "high": 2148,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 13 games, 2025."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1VZ_GK4mdnE",
+      "metroId": "miami",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Alvaro Diaz",
+      "officialTitle": "ALVARO DIAZ - OMAKASE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-miami-beach"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Alvaro Diaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GK4mdnE",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70v8I",
+      "metroId": "miami",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Teddy Swims",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70v8I",
+      "expectedDraw": {
+        "count": 13110,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-heat-401909847",
+      "metroId": "miami",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Heat vs. Pistons",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "heat",
+        "away": "pistons",
+        "awayOpponent": "pistons"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19690,
+        "low": 19657,
+        "high": 19788,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-miami-hurricanes-football-401858274",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Miami vs. Pitt",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "miami-hurricanes-football",
+        "away": "pitt-football",
+        "awayOpponent": "pitt"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 58503,
+        "low": 58045,
+        "high": 63892,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7x8vw",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Sombr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x8vw",
+      "expectedDraw": {
+        "count": 13110,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1VZ_1mQ_pYB",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Blake Shelton",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Blake Shelton",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_1mQ_pYB",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1VZ_2rNGAp0",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Adrian Uribe: 50 y Pico Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-miami-beach"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Adrián Uribe",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_2rNGAp0"
+    },
+    {
+      "id": "2026-10-24-tm-vvG1VZ_kt0YoDW",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Chayanne",
+      "officialTitle": "Chayanne - Bailemos Otra Vez Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Chayanne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_kt0YoDW",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_Gl6RGiu",
+      "metroId": "miami",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brand New",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brand New",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_Gl6RGiu",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-heat-401909871",
+      "metroId": "miami",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Heat vs. Mavericks",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "heat",
+        "away": "mavericks",
+        "awayOpponent": "mavericks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19620,
+        "low": 19610,
+        "high": 19623,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-vvG1VZ_8pW-pfe",
+      "metroId": "miami",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fpl-solar-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_8pW-pfe"
+    },
+    {
+      "id": "2026-10-28-espn-inter-miami-cf-761908",
+      "metroId": "miami",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Inter Miami vs. Cincinnati",
+      "place": {
+        "type": "venue",
+        "venueId": "nu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "inter-miami-cf",
+        "away": "cincinnati",
+        "awayOpponent": "cincinnati"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-28-tm-vvG1VZ_amhljrd",
+      "metroId": "miami",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bad Gyal",
+      "officialTitle": "Bad Gyal - Más Cara World Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-miami-beach"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "Bad Gyal",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_amhljrd",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG1VZ_FCHiqhv",
+      "metroId": "miami",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_FCHiqhv",
+      "expectedDraw": {
+        "count": 10913,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1VZbSkEUolT",
+      "metroId": "miami",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ed Sheeran",
+      "officialTitle": "Ed Sheeran: LOOP Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Ed Sheeran",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZbSkEUolT",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-panthers-401892612",
+      "metroId": "miami",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Panthers vs. Winnipeg Jets",
+      "place": {
+        "type": "venue",
+        "venueId": "amerant-bank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "panthers",
+        "away": "jets",
+        "awayOpponent": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19641,
+        "low": 18815,
+        "high": 19728,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-heat-401909282",
+      "metroId": "miami",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Heat vs. Pacers",
+      "place": {
+        "type": "venue",
+        "venueId": "kaseya-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "heat",
+        "away": "pacers",
+        "awayOpponent": "pacers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19769,
+        "low": 19736,
+        "high": 19867,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1VZbS6V90ea",
+      "metroId": "miami",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ed Sheeran",
+      "officialTitle": "Ed Sheeran: LOOP Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Ed Sheeran",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZbS6V90ea",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1VZ_53B1i9K",
+      "metroId": "miami",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Grupo Niche",
+      "officialTitle": "Grupo Niche - Niche DIsco Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-hollywood"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Grupo Niche",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_53B1i9K",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-17-espn-panthers-401892522",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 5.6,
+        "friction": "Moderate",
+        "why": "Florida St at Miami 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19343,
+        "low": 16804,
+        "high": 19357
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-miami-fc-401842298",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 5.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1203,
+        "low": 1129,
+        "high": 1382
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-miami-hurricanes-football-401858263",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 5.6,
+        "friction": "Heavy",
+        "why": "Rain in the forecast at a 7:00 pm start.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 58503,
+        "low": 58045,
+        "high": 63892
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A70J4-",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 5.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1VZ_GpGY6iN",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 5.6,
+        "friction": "Moderate",
+        "why": "Florida St at Miami 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A70J4x",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A7xZpd",
+      "date": "2026-10-18",
+      "start": "18:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Tini · Futttura World Tour 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13110
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1VZ_5G47K2b",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "$uicideboy$ present Grey Day To… 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-fiu-football-401871055",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 10,
+        "friction": "Low",
+        "why": "The Doobie Brothers 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12436,
+        "low": 10891,
+        "high": 14426
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG1VZ_6xPlImM",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 10,
+        "friction": "Low",
+        "why": "MTSU at FIU 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-heat-401909091",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19620,
+        "low": 19610,
+        "high": 19623
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-fort-lauderdale-united-401878621",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "draw": {
+        "count": 1890,
+        "low": 1736,
+        "high": 2148
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1VZ_GK4mdnE",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "draw": {
+        "count": 2700
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70v8I",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Pistons at Heat 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13110
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-heat-401909847",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Teddy Swims 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19690,
+        "low": 19657,
+        "high": 19788
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-miami-hurricanes-football-401858274",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 58503,
+        "low": 58045,
+        "high": 63892
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7x8vw",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Chayanne 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13110
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1VZ_1mQ_pYB",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Sombr and Chayanne 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1VZ_2rNGAp0",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1VZ_kt0YoDW",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Sombr 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_Gl6RGiu",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-heat-401909871",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19620,
+        "low": 19610,
+        "high": 19623
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-vvG1VZ_8pW-pfe",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-inter-miami-cf-761908",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Young Miko · Late Checkout Tour 4.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1VZ_amhljrd",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2700
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1VZ_FCHiqhv",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Cincinnati at Inter Miami 4.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10913
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1VZbSkEUolT",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-panthers-401892612",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Pacers at Heat 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19641,
+        "low": 18815,
+        "high": 19728
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-heat-401909282",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Winnipeg Jets at Panthers 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19769,
+        "low": 19736,
+        "high": 19867
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1VZbS6V90ea",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Pacers at Heat and Winnipeg Jets at Panthers 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1VZ_53B1i9K",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    }
+  ]
+}

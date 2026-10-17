@@ -75,6 +75,18 @@
       "code": 3,
       "precipProbability": 8,
       "precipMm": 0
+    },
+    {
+      "metroId": "boston",
+      "venueId": "city",
+      "date": "2026-10-25",
+      "basis": "forecast",
+      "capturedAt": "2026-10-17T11:58:51.477Z",
+      "feelsLikeHighF": 54.8,
+      "feelsLikeLowF": 39.3,
+      "code": 0,
+      "precipProbability": 12,
+      "precipMm": 0
     }
   ]
 }

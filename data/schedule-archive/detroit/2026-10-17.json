@@ -1,0 +1,1933 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "metroName": "Detroit",
+  "timeZone": "America/Detroit",
+  "capturedOn": "2026-10-17",
+  "capturedAt": "2026-10-17T12:05:45.240Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-17",
+    "through": "2026-10-31"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 42
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A70A-t",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Dirty Dancing (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Dirty Dancing: The Musical",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70A-t",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vv17OZ_8GkDoDuG9",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "15:00",
+      "kind": "special",
+      "title": "MARVIN - The Marvin Gaye Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "MARVIN - The Marvin Gaye Musical",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_8GkDoDuG9",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-17-espn-michigan-football-401858490",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Penn State",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "michigan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "michigan-football",
+        "away": "penn-state",
+        "awayOpponent": "penn-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-red-wings-401892525",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Wings vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "sharks",
+        "awayOpponent": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19515,
+        "low": 18180,
+        "high": 19515,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1OZ_1QKkJyg",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Niko Moon",
+      "officialTitle": "Niko Moon - Back To My Roots Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Niko Moon",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_1QKkJyg",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1OZ_CDcX_8i",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "All Star Comedy Festival - Suite Rental",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Lavell Crawford",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_CDcX_8i"
+    },
+    {
+      "id": "2026-10-17-tm-vvG1OZ_GKHpq9x",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Hey, Nothing",
+      "officialTitle": "HEY, NOTHING - THE HOUND TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hey, Nothing",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_GKHpq9x",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1OZ_51g5kEG",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jeffrey Osborne",
+      "place": {
+        "type": "venue",
+        "venueId": "sound-board-motorcity"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jeffrey Osborne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_51g5kEG",
+      "expectedDraw": {
+        "count": 2405,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A70A-s",
+      "metroId": "detroit",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Dirty Dancing (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Dirty Dancing: The Musical",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70A-s",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vv17OZ_8GkDoDWGL",
+      "metroId": "detroit",
+      "date": "2026-10-18",
+      "start": "15:00",
+      "kind": "special",
+      "title": "MARVIN - The Marvin Gaye Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "MARVIN - The Marvin Gaye Musical",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_8GkDoDWGL",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1OZ_uVNTYPU",
+      "metroId": "detroit",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Candlebox",
+      "officialTitle": "Candlebox - Can't Quit You Tour, Fall 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Candlebox",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_uVNTYPU",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-1F7Zv0o3fZZ7GFuu",
+      "metroId": "detroit",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Black Keys",
+      "officialTitle": "The Black Keys: PEACHES 'N KREAM",
+      "place": {
+        "type": "venue",
+        "venueId": "colosseum-caesars-windsor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Black Keys",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1F7Zv0o3fZZ7GFuu",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vv17OZ_oGknjZgnL",
+      "metroId": "detroit",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Mya",
+      "place": {
+        "type": "venue",
+        "venueId": "sound-board-motorcity"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Mya",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGknjZgnL",
+      "expectedDraw": {
+        "count": 2405,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vv1AFZkfNGkd2X6f6",
+      "metroId": "detroit",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Watch What Crappens: In The Mix Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Watch What Crappens",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkfNGkd2X6f6"
+    },
+    {
+      "id": "2026-10-19-tm-vvG1OZ_udpjh0t",
+      "metroId": "detroit",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rod Wave",
+      "officialTitle": "Rod Wave: Don't Look Down Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rod Wave",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_udpjh0t",
+      "expectedDraw": {
+        "count": 11124,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-pistons-401909088",
+      "metroId": "detroit",
+      "date": "2026-10-20",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Pistons vs. Celtics",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "celtics",
+        "awayOpponent": "celtics"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19225,
+        "low": 18400,
+        "high": 20140,
+        "fromCrowds": true,
+        "games": 40,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 40 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A70b7w",
+      "metroId": "detroit",
+      "date": "2026-10-20",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "Movements w/ Balance & Composure",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Movements",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70b7w",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vv1AFZk39Gkdjq_tQ",
+      "metroId": "detroit",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "John Cameron Mitchell: Hedwig 25th Anniversary Movie Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "John Cameron Mitchell",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZk39Gkdjq_tQ"
+    },
+    {
+      "id": "2026-10-22-tm-vvG1OZ_5lEWyGa",
+      "metroId": "detroit",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Wheeler Walker Jr.",
+      "officialTitle": "Wheeler Walker Jr. - Pullin' Out: The Farewell Tour with Colton Bowlin",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Wheeler Walker Jr.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_5lEWyGa",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A70o78",
+      "metroId": "detroit",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "DJ Shadow",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Shadow",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70o78",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-michigan-mhockey-401905027",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Western Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "yost-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "michigan-mhockey",
+        "away": "western-michigan",
+        "awayOpponent": "western-michigan"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1AfFx_0",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Creepy Cheapy XVIII: Night One",
+      "place": {
+        "type": "venue",
+        "venueId": "the-crofoot"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Creepy Cheapy XVIII: Night One",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFx_0"
+    },
+    {
+      "id": "2026-10-23-tm-vv1AFZkotGkeEE6je",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkotGkeEE6je",
+      "expectedDraw": {
+        "count": 11124,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7xbZd",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Streetlight Manifesto",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Streetlight Manifesto",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xbZd",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vv1AFZkoNGkd_9BH3",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Bassem Youssef: The Belly of the Beast Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Bassem Youssef",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkoNGkd_9BH3"
+    },
+    {
+      "id": "2026-10-23-tm-vv17OZ_3GkXlZJ-T",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rewind",
+      "officialTitle": "Rewind: 2000s Halloween Rave (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rewind",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_3GkXlZJ-T",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7PvPY",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Whethan",
+      "officialTitle": "Whethan (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Whethan",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PvPY",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-michigan-football-401858496",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Indiana",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "michigan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "michigan-football",
+        "away": "indiana",
+        "awayOpponent": "indiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1OZ_5hLLQhl",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Plini",
+      "officialTitle": "Plini - An Unnameable Desire North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Plini",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_5hLLQhl",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-rZ7HnEZ1AfFtaf",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Creepy Cheapy XVIII: Night Two",
+      "place": {
+        "type": "venue",
+        "venueId": "the-crofoot"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Creepy Cheapy XVIII: Night Two",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFtaf"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7O6qd",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bethel Music",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Bethel Music",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7O6qd",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv17OZ_aGkS8Fj5f",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Jo Koy - Suite Rental",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jo Koy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_aGkS8Fj5f"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAva8U",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Whethan",
+      "officialTitle": "Whethan - WAREHOUSE.WAVS TOUR - (Ages 18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Whethan",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAva8U",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-lions-401873020",
+      "metroId": "detroit",
+      "date": "2026-10-25",
+      "start": "16:25",
+      "kind": "game",
+      "title": "Lions vs. Packers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "lions",
+        "away": "packers",
+        "awayOpponent": "packers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 64174,
+        "low": 63739,
+        "high": 64430,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 13 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1OZ_Gmsn9ph",
+      "metroId": "detroit",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Judah & the Lion",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Judah & the Lion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_Gmsn9ph",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vv17OZ_8GkSd_91x",
+      "metroId": "detroit",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_8GkSd_91x",
+      "expectedDraw": {
+        "count": 11124,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1OZ_26AhtkH",
+      "metroId": "detroit",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Winger",
+      "place": {
+        "type": "venue",
+        "venueId": "sound-board-motorcity"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Winger",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_26AhtkH",
+      "expectedDraw": {
+        "count": 2405,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7P_Ad",
+      "metroId": "detroit",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sleeping With Sirens",
+      "officialTitle": "Sleeping with Sirens w/ Rain City Drive",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sleeping With Sirens",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P_Ad",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-pistons-401909883",
+      "metroId": "detroit",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pistons vs. Hornets",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "hornets",
+        "awayOpponent": "hornets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18842,
+        "low": 18033,
+        "high": 19739,
+        "fromCrowds": true,
+        "games": 40,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 40 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG1OZ_CD6nUT8",
+      "metroId": "detroit",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Quadeca",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Quadeca",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_CD6nUT8",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7xb7t",
+      "metroId": "detroit",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "show",
+      "title": "The Damned",
+      "officialTitle": "The Damned w/ Flamin Groovies",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Damned",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xb7t",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1OZ_G51vzoD",
+      "metroId": "detroit",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rodrigo y Gabriela",
+      "officialTitle": "Rodrigo y Gabriela - OurHome Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Rodrigo y Gabriela",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_G51vzoD",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-red-wings-401892600",
+      "metroId": "detroit",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Red Wings vs. Blackhawks",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "blackhawks",
+        "awayOpponent": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18780,
+        "low": 18256,
+        "high": 19205,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1OZ_u1q-4YL",
+      "metroId": "detroit",
+      "date": "2026-10-30",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Twiztid",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Twiztid",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_u1q-4YL",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1OZ_CBfnSSv",
+      "metroId": "detroit",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "show",
+      "title": "King 810",
+      "place": {
+        "type": "venue",
+        "venueId": "the-crofoot"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "King 810",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_CBfnSSv",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PkCK",
+      "metroId": "detroit",
+      "date": "2026-10-30",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Dweezil Zappa",
+      "officialTitle": "Dweezil Zappa w/ Like Father",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dweezil Zappa",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PkCK",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv17OZ_kGkMVFl46",
+      "metroId": "detroit",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Blue October",
+      "officialTitle": "Blue October: The Foiled 20th Anniversary World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Blue October",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_kGkMVFl46",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-red-wings-401892615",
+      "metroId": "detroit",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Red Wings vs. Blues",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "blues",
+        "awayOpponent": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19515,
+        "low": 18180,
+        "high": 19515,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-rZ7HnEZ1A4ZV0S",
+      "metroId": "detroit",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Claudio Simonetti's Goblin",
+      "officialTitle": "Claudio Simonetti's Goblin with a screening of Tenebrae",
+      "place": {
+        "type": "venue",
+        "venueId": "the-crofoot"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Claudio Simonetti's Goblin",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4ZV0S",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1OZ_16bTW-C",
+      "metroId": "detroit",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "L7",
+      "officialTitle": "L7: The Last Hurrah Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "L7",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_16bTW-C",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1OZ_5UGe0_-",
+      "metroId": "detroit",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Assala",
+      "officialTitle": "Assala Nasri",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Assala",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_5UGe0_-",
+      "expectedDraw": {
+        "count": 5048,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A70A-t",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vv17OZ_8GkDoDuG9",
+      "date": "2026-10-17",
+      "start": "15:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-michigan-football-401858490",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-red-wings-401892525",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Michigan Wolverines 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19515,
+        "low": 18180,
+        "high": 19515
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1OZ_1QKkJyg",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1OZ_CDcX_8i",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1OZ_GKHpq9x",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1OZ_51g5kEG",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2405
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A70A-s",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vv17OZ_8GkDoDWGL",
+      "date": "2026-10-18",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1OZ_uVNTYPU",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1F7Zv0o3fZZ7GFuu",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vv17OZ_oGknjZgnL",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2405
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vv1AFZkfNGkd2X6f6",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vvG1OZ_udpjh0t",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11124
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-pistons-401909088",
+      "date": "2026-10-20",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19225,
+        "low": 18400,
+        "high": 20140
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A70b7w",
+      "date": "2026-10-20",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vv1AFZk39Gkdjq_tQ",
+      "date": "2026-10-21",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1OZ_5lEWyGa",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A70o78",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-michigan-mhockey-401905027",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Disney Descendants, ZOMBIES & C… 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1AfFx_0",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AFZkotGkeEE6je",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Michigan Wolverines (MHKY) 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11124
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7xbZd",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AFZkoNGkd_9BH3",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv17OZ_3GkXlZJ-T",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7PvPY",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-michigan-football-401858496",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 111440,
+        "low": 111256,
+        "high": 111569
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1OZ_5hLLQhl",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-rZ7HnEZ1AfFtaf",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7O6qd",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv17OZ_aGkS8Fj5f",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAva8U",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-lions-401873020",
+      "date": "2026-10-25",
+      "start": "16:25",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 64174,
+        "low": 63739,
+        "high": 64430
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1OZ_Gmsn9ph",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vv17OZ_8GkSd_91x",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Packers at Lions 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11124
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1OZ_26AhtkH",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2405
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7P_Ad",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-pistons-401909883",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18842,
+        "low": 18033,
+        "high": 19739
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1OZ_CD6nUT8",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7xb7t",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1OZ_G51vzoD",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-red-wings-401892600",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18780,
+        "low": 18256,
+        "high": 19205
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1OZ_u1q-4YL",
+      "date": "2026-10-30",
+      "start": "17:30",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1OZ_CBfnSSv",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PkCK",
+      "date": "2026-10-30",
+      "start": "18:30",
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv17OZ_kGkMVFl46",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-red-wings-401892615",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19515,
+        "low": 18180,
+        "high": 19515
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-rZ7HnEZ1A4ZV0S",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1OZ_16bTW-C",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1OZ_5UGe0_-",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5048
+      }
+    }
+  ]
+}

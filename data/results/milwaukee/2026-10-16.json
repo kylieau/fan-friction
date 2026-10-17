@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-ht-milwaukee-admirals-1029142",
+      "metroId": "milwaukee",
+      "date": "2026-10-16",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "uwm-panther-arena",
+      "homeTeamId": "milwaukee-admirals",
+      "home": {
+        "name": "Admirals",
+        "score": 1
+      },
+      "away": {
+        "name": "Eagles",
+        "score": 4
+      },
+      "attendance": 2781,
+      "capturedAt": "2026-10-17T12:07:36.065Z"
+    }
+  ]
+}

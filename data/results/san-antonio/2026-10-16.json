@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-spurs-401898843",
+      "metroId": "san-antonio",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 126
+      },
+      "away": {
+        "name": "Sac Kings",
+        "score": 97
+      },
+      "attendance": 18354,
+      "capturedAt": "2026-10-17T12:07:45.439Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

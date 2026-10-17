@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-warriors-401898409",
+      "metroId": "bay-area",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 128
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 118
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-17T12:07:34.992Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "eventId": "2026-10-16-espn-pelicans-401906509",
+      "metroId": "new-orleans",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "smoothie-king-center",
+      "homeTeamId": "pelicans",
+      "home": {
+        "name": "Pelicans",
+        "score": 107
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 106
+      },
+      "capturedAt": "2026-10-17T12:07:44.466Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-10-16-espn-tulane-football-401862801",
+      "metroId": "new-orleans",
+      "date": "2026-10-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yulman-stadium",
+      "homeTeamId": "tulane-football",
+      "home": {
+        "name": "Tulane",
+        "score": 31
+      },
+      "away": {
+        "name": "Memphis",
+        "score": 17
+      },
+      "attendance": 20083,
+      "capturedAt": "2026-10-17T12:07:44.466Z",
+      "duration": {
+        "minutes": 213,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    }
+  ]
+}
