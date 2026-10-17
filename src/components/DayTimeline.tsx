@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CrowdMark } from './EventTags';
 import { TypeIcon } from './TypeIcon';
-import { frictionClass } from '../config/scoreLabels';
-import { atLeastMark, drawSize, estimateMark, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
+import { atLeastMark, drawSize, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
@@ -10,19 +9,31 @@ import { crowdThousands } from '../map/crowdPoints';
 import { TitleText } from './TitleText';
 
 /**
- * The night's stacked timeline (Kylie, Oct 11, call 6; mock call6-overlap B/C): one bar per
- * event over the friction floor, from its start for its rough running time, in the violet
- * of its friction (grey when it has none). No miles, no helper text. Each row opens the event.
+ * The day's stacked timeline (Kylie, Oct 11, call 6; mock call6-overlap B/C): one bar per event over the
+ * friction floor, from its start for its rough running time. Every bar is the gold crowd color, one color
+ * for all (build 6, item 3; Kylie, Oct 16): the bars show start and running time and let the reader draw
+ * the conclusion; no friction color, outline or ring. Gold here is identity, not size. No miles, no helper
+ * text. Each row opens the event.
  * With `weather`, an hourly strip sits over the axis (build 5, item 4; board datepage-r3-lean): the city point's
  * glyph and feels-like at each hour tick, read the way the date header reads it. Hidden under two stored hours.
+ * With fewer than two big events the card says so in one line, so it never looks empty by mistake (Kylie,
+ * Oct 16, Q9). Big events that are all untimed still get their "Time TBA" band, alone, with no axis (Q13 lean).
  */
 export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]; weather?: { metroId: string; date: string } }) {
   const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
   const timed = big.filter((e) => e.start);
-  // Big events with no start on file (research-loaded past dates) sit in a "Time TBA" band under the timed bars, each
-  // across the whole axis, so a day's biggest crowd is never missing from its timeline (Kylie, Oct 16: the band).
+  // Big events with no start on file (research-loaded past dates, a game with no kickoff set) sit in a "Time TBA" band
+  // under the timed bars, each across the whole axis, so a day's biggest crowd is never missing from its timeline
+  // (Kylie, Oct 16: the band).
   const untimed = big.filter((e) => !e.start).sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
-  if (timed.length < 1 || big.length < 2) return null;
+  if (big.length < 2) return <p className="timeline-quiet">No other big events that day.</p>;
+  if (timed.length === 0) {
+    return (
+      <div className="day-timeline" aria-label="Timeline">
+        <TbaBand events={untimed} />
+      </div>
+    );
+  }
   const span = (e: CrowdEvent) => {
     const s = hoursOf(e.start as string);
     return [s, s + runningHours(e)] as const;
@@ -60,49 +71,45 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
           </span>
         ))}
       </div>
-      <ul className="bars">{rows.map((e) => barRow(e, span(e)))}</ul>
-      {untimed.length > 0 && (
-        <div className="bars-tba" aria-label="Time TBA">
-          <span className="bars-tba-label">Time TBA</span>
-          <ul className="bars">{untimed.map((e) => barRow(e, null))}</ul>
-        </div>
-      )}
+      <ul className="bars">{rows.map((e) => barRow(e, { left: pct(span(e)[0]), width: `calc(${pct(span(e)[1])} - ${pct(span(e)[0])})` }))}</ul>
+      {untimed.length > 0 && <TbaBand events={untimed} />}
     </div>
   );
+}
 
-  /** One row: the event's name and crowd over its bar; a TBA row's bar runs the whole axis, hatched. */
-  function barRow(e: CrowdEvent, at: readonly [number, number] | null) {
-    const size = drawSize(e);
-    const level = e.assessment?.friction;
-    const cls = level && level !== 'Low' ? frictionClass(level) : 'none';
-    return (
-      <li key={e.id} className="bar-row">
-        <Link to={eventPath(e.id, e.metroId)} className="bar-link">
-          <div className="bar-label">
-            <span className="bar-name">
-              <span className="bar-title">
-                <TypeIcon typeKey={eventType(e).key} size={17} />
-                <TitleText layout="inline" text={listTitle(e)} />
-              </span>
-              {size ? (
-                <span className="bar-crowd">
-                  <CrowdMark />
-                  {estimateMark(e)}
-                  {crowdThousands(size)}
-                  {atLeastMark(e)}
-                </span>
-              ) : null}
+/** The "Time TBA" band: a rule, a small label, then rows whose blank bar runs the whole axis. */
+function TbaBand({ events }: { events: readonly CrowdEvent[] }) {
+  return (
+    <div className="bars-tba" aria-label="Time TBA">
+      <span className="bars-tba-label">Time TBA</span>
+      <ul className="bars">{events.map((e) => barRow(e, null))}</ul>
+    </div>
+  );
+}
+
+/** One row: the event's name and crowd over its bar; a TBA row's bar runs the whole axis, blank and dashed (not a read). */
+function barRow(e: CrowdEvent, at: { left: string; width: string } | null) {
+  const size = drawSize(e);
+  return (
+    <li key={e.id} className="bar-row">
+      <Link to={eventPath(e.id, e.metroId)} className="bar-link">
+        <div className="bar-label">
+          <span className="bar-name">
+            <span className="bar-title">
+              <TypeIcon typeKey={eventType(e).key} size={17} />
+              <TitleText layout="inline" text={listTitle(e)} />
             </span>
-          </div>
-          <div className="bar-track">
-            {at ? (
-              <span className={`bar bar-${cls}`} style={{ left: pct(at[0]), width: `calc(${pct(at[1])} - ${pct(at[0])})` }} />
-            ) : (
-              <span className="bar bar-tba" />
-            )}
-          </div>
-        </Link>
-      </li>
-    );
-  }
+            {size ? (
+              <span className="bar-crowd">
+                <CrowdMark />
+                {crowdThousands(size)}
+                {atLeastMark(e)}
+              </span>
+            ) : null}
+          </span>
+        </div>
+        <div className="bar-track">{at ? <span className="bar" style={at} /> : <span className="bar bar-tba" />}</div>
+      </Link>
+    </li>
+  );
 }
