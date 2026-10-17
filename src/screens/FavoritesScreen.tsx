@@ -107,7 +107,8 @@ export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
   const done = () => {
     setPicking(false);
     setQuery('');
-    if (pathname.endsWith('/edit')) navigate('/following', { replace: true });
+    // The Faves list lives in Settings now (build 6, item 7): Done returns to that dropdown.
+    if (pathname.endsWith('/edit')) navigate('/you?panel=faves', { replace: true });
   };
 
   const search = (
