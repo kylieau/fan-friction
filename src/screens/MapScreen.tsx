@@ -43,7 +43,7 @@ import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { CrowdMark, FRICTION_LADDER, FrictionRing } from '../components/EventTags';
 import { frictionWord } from '../config/scoreLabels';
-import { DayRow, RowBody, sheetVenue } from '../components/DayRow';
+import { DayRow, RowBody, sheetVenue, spokenRow } from '../components/DayRow';
 import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, sizeTier, splitByRange } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
 
@@ -580,9 +580,11 @@ function EventRow({
     />
   );
   const cls = `event-row${selected ? ' selected' : ''}`;
-  if (href) return <Link to={href} className={cls}>{body}</Link>;
+  // The row read as one sentence, the friction verdict included (build 6, item 1): the ring itself is decorative.
+  const spoken = spokenRow(e, venue);
+  if (href) return <Link to={href} className={cls} aria-label={spoken}>{body}</Link>;
   return onPick ? (
-    <button type="button" className={cls} onClick={onPick} aria-pressed={selected}>
+    <button type="button" className={cls} onClick={onPick} aria-pressed={selected} aria-label={spoken}>
       {body}
     </button>
   ) : (
