@@ -5855,23 +5855,39 @@ button.back-link {
   padding: 0 0 80px;
 }
 
-.timeline-earlier {
-  padding: 8px 4px 0;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: var(--ink2);
+/* The today line (board M2-01 panel C, decided): not a band but a thin blue rule with "Today · Sat, Oct 17" centred
+   on it, between the past and the future; the month bands stay grey on both sides of it. */
+.today-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0 2px;
+  color: var(--dodger);
 }
 
-/* The today band: the shared band in the selected blue, so the eye finds now. */
-.today-line .list-band {
+.today-line::before,
+.today-line::after {
+  content: '';
+  flex: 1 1 auto;
+  height: 2px;
+  border-radius: 1px;
   background: var(--dodger);
-  color: var(--card);
 }
 
+.today-line-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* The one-line note on an empty side of the line, and the empty-past card above it. */
 .timeline-note {
   padding: 4px 4px 0;
+}
+
+.timeline-empty-past {
+  padding-top: 8px;
 }
 
 /* A Following row's own last line (build 6, item 7): the people on it, or the Fave it belongs to. */

@@ -135,8 +135,7 @@ function FriendsTimeline() {
         past={past}
         future={future}
         todayLabel={dayBandLabel(today, today)}
-        todayGroup={timelineGroup({ sort: today, label: '', precision: 'day' })}
-        emptyAll={<p className="you-fine timeline-note">Nothing from the people you follow yet.</p>}
+        emptyPast={<p className="you-fine timeline-note">Nothing from the people you follow in the last 60 days.</p>}
         emptyFuture={<p className="you-fine timeline-note">Nothing coming up from the people you follow.</p>}
       />
     </>

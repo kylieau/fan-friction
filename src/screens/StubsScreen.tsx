@@ -182,10 +182,9 @@ export function StubsScreen() {
           past={pastItems}
           future={futureItems}
           todayLabel={dayBandLabel(today, today)}
-          todayGroup={timelineGroup({ sort: today, label: '', precision: 'day' })}
           onScrolled={setScrolled}
-          emptyAll={
-            // The decided empty copy (Kylie, Oct 16): no "Stub it" button here, only the way to today.
+          emptyPast={
+            // The decided empty-past copy (Kylie, Oct 16), above the line: no "Stub it" button here, only the way to today.
             <div className="card empty-card">
               <div className="card-title">{entries.length > 0 ? 'Nothing here.' : 'No stubbed events'}</div>
               <div className="empty-actions">
