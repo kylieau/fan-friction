@@ -1,0 +1,29 @@
+# Build 6: the frozen task
+
+Written before any code, Oct 17, 2026 (Claude Code, Fable 5.1), from `build-notes-6.md` at main `75816216`. The review at the end of the build is judged against this list, not against the notes re-read later. "Build" means decided, lean, default or to-confirm in the notes; "nothing" means open, hold or pending.
+
+## In scope, in the notes' order
+
+1. **Friction ring and one pill tint.** A violet ghost ring (dot in a ring; Squeezed r 3.2, Swamped r 2.0, Steamrolled r 0.9; thin outer ring) on list rows, line 1 after the crowd figure, from Squeezed up. The word pill in one tint everywhere (`#E6DDF8` fill, `#3F2A78` text; new token). Event page: Crowd card gets pill plus 16 px ring at its left; Up against keeps its pill with the ring; the tag row keeps the occasion tag only; Unopposed shows in those two cards. Share card keeps the pill. Favorite page rows: ring instead of pill. Why card: pill with ring. Stubs rows and Following cards: no friction mark. Row accessible name carries the friction sentence (open-air wording when open-air). Helper tip wording: each word "by that day's lineup". Dark mode: nothing.
+2. **Occasion tag.** Outline word as today; on any list only the day's top level shows it (ties both; Routine top none), computed from the city's whole day; right-justified on the venue line; event page and chip card always show their own.
+3. **Local Competition.** Bars all gold (`crowdBar`), no violet, no ring; row height unchanged; quiet-day line "No other big events that day." when fewer than two big events; a Time TBA band may render alone (no axis, no strip).
+4. **No "~"** on chips, rows, cards, lists, rival rows, stubs; only the event page's full number and one map-key line: "Numbers on upcoming events may be estimates."
+5. **"by {rival}"** only beside a friction pill; the chip card keeps pill, tag and by-line; the map dot carries nothing.
+6. **Stubs.** One timeline, month bands, a today line, no day bands; rows carry no crowd, ring or tag; state on its own last line; empty past "no stubbed events" plus "Browse today in Explore ›" and no Stub it button; the floating "+ Stub it" hidden only when there are no stubs and no plans; keep the tag filter row; open scrolled to the today line; always show the line with a one-line empty note on the empty side.
+7. **Following.** The same timeline: upcoming events at your Faves within 60 days plus followed people's Attending / Watching / Interested, past rows only from followed people (last 60 days), own plans excluded, privacy respected; no friction mark; "You can edit them in Settings." note; the Faves / Friends / People lists (badge strip, Find people bar) move to Settings; the sentence feed goes; the "going" copy becomes attending / attended; search gains a People group (Events / Teams / People), hidden signed out.
+8. **Settings.** The You avatar (You tab only) opens a side panel: profile card with Edit profile and Share profile, then dropdown sections on one page (Privacy, Blocked, Faves, Friends, People, cities, crowd size, the rest); the old sub-routes redirect into the panel with that section open; "Change past stubs" works inside its dropdown with the B5-02 result; signed out, only what a signed-out user can use.
+9. **Team badges and codes.** 9a: a badge component with the sport icon top-left; `teamBadge(team, shown)` and `favoriteMark(fav, shown)` take the shown set; `badgesCollide` = same code and same sport; college programs take sport letters (FB, MBB, WBB, BSB, SB, VB, MH, WH, SOC) only on a clash; pros stay plain code plus icon (nothing for the open question); no W; the icon beside the name on the edit list goes; badges aria-hidden with the full name on the row. 9b: Commanders and Wizards WAS, Lightning TBL, KC Current KC, Spurs SAS, Mercury PHO. 9c: the 47 other Medium rows from the team-codes answer, skipping `red-bulls` and `angel-city`; the 22 Low rows untouched. 9d: dedupe keys games by team id, names map to ids, a bare ambiguous name stays unmatched.
+10. **Doubleheaders and rank.** "Doubleheader Game 1" on rows, "Doubleheader, Game 1" on the event page, chip stays "DH1"; titles check updated. A rank field that the event page title shows only when a value exists (no source today). "Size unknown" stays.
+11. **Run labels: nothing.** The evening-story heading "The night" becomes "The evening" ("The day" stays).
+12. **Ticket links.** Hide the line and stop the lookup; keep `api/ticket-price.ts`, `src/data/tickets.ts` and the stored ids.
+13. **Build 5 fixes.** B5-02 (Change past stubs waits and reports "N couldn't update, try again"); B5-04 (= 9d); B5-05 (the stored stub level on Stubs rows and the pill); B5-07 (remove the dead `plans` fallback); B5-08 (measure every changed list at 390 px). B5-03, B5-09, B5-10, B5-11, B6-15: nothing.
+14. **City and data: nothing changes** (DC hub, B6-12, RDU, Merriweather, Dorton, Edgefield).
+15. **"More dates" and Favorites where home is set:** nothing to build; confirm the wording in the report.
+16. **Docs and comments:** build-notes-5 item 10, formula-v4 pull weights, overlap-and-date-rating-v3 occasion shield, DayTimeline and styles comments, theme comments, RULES.md "Night", `src/lib/chips.ts`; product-decisions and the design docs updated with the decisions.
+- **Health:** `scripts/event-types-check.mjs` expects 37 types; `npm run build` and the check scripts after each item.
+
+## Not in scope (nothing built)
+Pro badge disambiguation (A to D); run labels of any kind; SeatGeek; the 22 Low team codes; official rankings sourcing; rank-per-team data entry; add-on research and the "Event" rows; migration 0027; dark mode; city-type changes; capacities.
+
+## Process
+Build in the notes' order, one item or fix per commit, build and checks after each; then argue against the build, review it against this list, judge, and push.
