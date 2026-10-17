@@ -48,6 +48,9 @@ const report = [];
 for (const venue of Object.values(VENUES)) {
   if (metroFilter !== undefined && venue.metroId !== metroFilter) continue;
   if (!all && venue.ticketmasterIds?.length) continue;
+  // A room closed for good is never looked up: the seller's id under that name belongs to its successor (the Downtown
+  // Disney House of Blues got the GardenWalk room's id, Oct 17, 2026), and the id match runs before the closed check.
+  if (venue.closed && !venue.closed.until) continue;
   const names = venue.names.map((n) => n.name);
   const ids = new Set(venue.ticketmasterIds ?? []);
   const notes = [];
