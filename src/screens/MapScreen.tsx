@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import {
@@ -41,8 +41,7 @@ import { datePath, mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
-import { CrowdMark, FRICTION_LADDER, FrictionRing } from '../components/EventTags';
-import { frictionWord } from '../config/scoreLabels';
+import { CrowdMark, FRICTION_LADDER, FrictionVerdict } from '../components/EventTags';
 import { DayRow, RowBody, sheetVenue, spokenRow } from '../components/DayRow';
 import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, sizeTier, splitByRange } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
@@ -392,19 +391,17 @@ export function MapScreen() {
                 {cityTravelLine(metro.id) && <li className="map-key-note">{cityTravelLine(metro.id)}</li>}
                 {/* No "~" on chips or rows (build 6, item 4): this one line says it for all of them. */}
                 <li className="map-key-note">Numbers on upcoming events may be estimates.</li>
-                {/* The friction ladder's one introduction (build 6, item 1; wording a default): each word reads "<word> by that
-                    day's lineup", with the ring each level wears on a row (Unopposed wears none). */}
+                {/* The friction ladder's one introduction (build 6, item 1; wording a default, board M5-08 draft A): the
+                    sentence that reads each word "by that day's lineup", the four marks as the event page draws them
+                    (ring and word), and where each shows. */}
                 <li className="map-key-note map-key-friction">
-                  {FRICTION_LADDER.map((level, i) => (
-                    <Fragment key={level}>
-                      {i > 0 && <span aria-hidden>&nbsp;· </span>}
-                      <span className="map-key-level">
-                        {level !== 'Low' && <FrictionRing level={level} size={12} />}
-                        {frictionWord(level)}
-                      </span>
-                    </Fragment>
-                  ))}{' '}
-                  by that day's lineup
+                  <span>Each event is Unopposed, Squeezed, Swamped or Steamrolled by that day's lineup.</span>
+                  <span className="map-key-ladder">
+                    {FRICTION_LADDER.map((level) => (
+                      <FrictionVerdict key={level} level={level} size={12} />
+                    ))}
+                  </span>
+                  <span>A row shows the ring. The event page shows the ring and the word.</span>
                 </li>
                 <li className="map-key-note">
                   How big a deal: <span className="tag-occasion">Notable</span> <span className="tag-occasion">Major</span> <span className="tag-occasion">Marquee</span>

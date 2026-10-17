@@ -6097,13 +6097,18 @@ button.back-link {
   color: var(--ink2);
 }
 
-/* The map key's friction line: each level with the ring it wears on a row, then "by that day's lineup". */
-.map-key-level {
-  white-space: nowrap;
+/* The map key's friction tip (board M5-08 draft A): a sentence, the four marks as the event page draws them, a line on
+   where each shows. */
+.map-key-friction {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.map-key-level .friction-ring {
-  margin-right: 3px;
+.map-key-ladder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
 }
 
 .event-tags {

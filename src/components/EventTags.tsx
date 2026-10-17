@@ -26,15 +26,22 @@ export function pageFriction(event: CrowdEvent): Friction | null {
   return a.friction;
 }
 
-/** The dot's radius inside a ring of radius 4.6 on a 12-unit canvas (build 6, item 1; Kylie, M5-06: a thin outer ring). */
-const RING_DOT: Record<Friction, number> = { Low: 0, Moderate: 3.2, Heavy: 2.0, Extreme: 0.9 };
+/**
+ * The ring's geometry on its 12-unit canvas, drawn at 12 px on rows and 16 px on the event page (board M5-04,
+ * decided): an opening of radius 4.5 inside a thin stroke; the dot inside is 3.2 at Squeezed (most of the
+ * opening), 2.0 at Swamped (about half), 0.9 at Steamrolled (a pinpoint). Unopposed, event page only, is the
+ * full disc: nothing is missing. The stroke is a touch under the board's 1.5 (Kylie, M5-06: a thinner outer ring).
+ */
+const RING_OPENING = 4.5;
+const RING_STROKE = 1.3;
+const RING_DOT: Record<Friction, number> = { Low: RING_OPENING, Moderate: 3.2, Heavy: 2.0, Extreme: 0.9 };
 
 /** The ghost ring, decorative: the row or pill beside it carries the words. */
-export function FrictionRing({ level, size = 14 }: { level: Friction; size?: number }) {
+export function FrictionRing({ level, size = 12 }: { level: Friction; size?: number }) {
   return (
     <svg className={`friction-ring ring-${level.toLowerCase()}`} viewBox="0 0 12 12" width={size} height={size} aria-hidden="true">
-      <circle cx="6" cy="6" r="4.6" fill="none" stroke="currentColor" strokeWidth="1" />
-      {RING_DOT[level] > 0 && <circle cx="6" cy="6" r={RING_DOT[level]} fill="currentColor" />}
+      <circle cx="6" cy="6" r={RING_OPENING + RING_STROKE / 2} fill="none" stroke="currentColor" strokeWidth={RING_STROKE} />
+      <circle cx="6" cy="6" r={RING_DOT[level]} fill="currentColor" />
     </svg>
   );
 }
@@ -50,24 +57,34 @@ export function FrictionPill({ level }: { level: Friction }) {
   return <span className={`chip chip-f ${level.toLowerCase()}`}>{frictionWord(level)}</span>;
 }
 
-/** The event page's mark: a 16 px ring at the left of the word pill, no tap target of its own. */
-export function FrictionVerdict({ level }: { level: Friction }) {
+/** The event page's mark: a 16 px ring at the left of the word pill, no tap target of its own (the map key draws it at 12). */
+export function FrictionVerdict({ level, size = 16 }: { level: Friction; size?: number }) {
   return (
     <span className="friction-verdict">
-      <FrictionRing level={level} size={16} />
+      <FrictionRing level={level} size={size} />
       <FrictionPill level={level} />
     </span>
   );
 }
 
+/** What each level takes from the crowd, one clause per level (board M5-04's VoiceOver table). */
+const FRICTION_TAKES: Record<Friction, string> = {
+  Low: 'nothing competes for this crowd',
+  Moderate: 'take a little of this crowd',
+  Heavy: 'split this crowd',
+  Extreme: 'take most of this crowd',
+};
+
 /**
  * The row's spoken friction, part of its accessible name (build 6, item 1): "Swamped: other events split this
- * crowd"; an open-air event's verdict can be the weather with no rival, so it says "rival events or weather".
+ * crowd", "Squeezed: other events take a little of this crowd", "Steamrolled: other events take most of this crowd".
+ * An open-air event's verdict can be the weather with no rival, so its subject is "rival events or weather".
  */
 export function frictionSentence(event: CrowdEvent): string | null {
   const level = listedFriction(event);
   if (!level) return null;
-  return `${frictionWord(level)}: ${isOpenAir(event) ? 'rival events or weather' : 'other events split this crowd'}`;
+  const subject = isOpenAir(event) ? 'rival events or weather' : 'other events';
+  return `${frictionWord(level)}: ${subject} ${FRICTION_TAKES[level]}`;
 }
 
 /** The four words in ladder order, for the map key's one-line introduction. */
