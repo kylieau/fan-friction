@@ -5,7 +5,7 @@ Build status tags: **[live]** = seen in today's capture (b1c3478). **[pending]**
 
 ## Global copy
 - Users are capable: say less, skip fine print, no helper text. No confirm prompts except the one confirm for Remove / Unfollow / Block. (B1 §0, B2 house rules, J)
-- "Night" only for a city's date after 5 PM. Otherwise "Today". "Today/tonight" on a favorite's next date follows the same 5 PM split (R16). [live: Home says "Today in Los Angeles" at 1 PM]
+- "Night" only for a city's date after 5 PM. Otherwise "Today". "Today/tonight" on a favorite's next date follows the same 5 PM split (R16). [live: Home says "Today in Los Angeles" at 1 PM] **Superseded Oct 16–17, 2026 (build 6, item 11): "night" stays out of app copy except run labels (held); the story heading reads "The evening".**
 - Reads always show tenths (4.7) plus the word. Never "x/10". Ladder: Chill 1–2, Mild 3–4, Spicy 5–6, Brutal 7–8, Cooked 9–10.
 - Crowd format "k" rule: compact on glanceable surfaces, always thousands with k, never a bare number. 60k / 9.5k / .6k (under 1,000 = one decimal, no leading zero). Full numbers only where there's room and precision helps. (B1 C073, §6.3)
 - Say "Log an event" and "My Stubs". The clock form is "7:30 pm".

@@ -1085,6 +1085,8 @@ Boards: `docs/build-5/mosaic/b5/v4/settings-full.png`, `settings-full-lean-one-l
 
 ### 10. "~" on every estimated crowd (v4)
 
+**Superseded Oct 17, 2026 (build 6, item 4; Kylie, Oct 15 and 16):** no "~" on chips, rows, cards or lists; it stays only on the event page's full number beside "Estimated", and one map-key line says "Numbers on upcoming events may be estimates."
+
 **Build instruction:** Put **"~"** in front of every estimated crowd on compact surfaces, e.g. **"~55k"**.
 
 What it does today: compact surfaces show estimates with no marker. `crowdShort` (`src/map/crowdPoints.ts:102-120`) adds " est" only when `withEst` is true, and the row figure (`CrowdFigure`, `src/components/EventTags.tsx:68-77`) and map chip label (`src/map/CrowdLayer.tsx:506`) both pass `false`. The selected card prints `crowdThousands(size)` bare (`src/components/ChipCard.tsx:53`). The event page already shows "~" for estimates, but "Up to N" for playoff building estimates (`src/screens/EventScreen.tsx:337`). The "About this estimate" sheet (`EventScreen.tsx:536-560`) has Games, Playoff games, Shows and Counts sections; there's no pop-up section.

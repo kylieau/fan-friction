@@ -47,8 +47,6 @@ export type Friction = (typeof FRICTION_LEVELS)[number];
  */
 export const FRICTION_WORDS: Record<Friction, string> = { Low: 'Unopposed', Moderate: 'Squeezed', Heavy: 'Swamped', Extreme: 'Steamrolled' };
 export const frictionWord = (level: Friction) => FRICTION_WORDS[level];
-/** The CSS class for a pill on the violet ladder. */
-export const frictionClass = (level: Friction) => FRICTION_WORDS[level].toLowerCase();
 
 export const frictionLabel = (level: Friction) => frictionWord(level);
 /** The pill starts the sentence: "Swamped by Mac DeMarco +2". Without a rival, the word alone. */
