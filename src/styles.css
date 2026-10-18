@@ -4565,6 +4565,17 @@ button.back-link {
   scrollbar-width: none;
 }
 
+/* Home's strip scrolls itself: room for the badges' corner discs. On Following the badges scroll inside
+   .fav-strip-marks, so that wrapper stays open and the disc is not cut at the left. */
+ul.fav-strip {
+  padding: 6px 0 4px 6px;
+  margin: -6px 0 0 -6px;
+}
+
+.fav-strip-open {
+  overflow: visible;
+}
+
 .fav-strip li {
   flex: 0 0 62%;
 }
@@ -4911,9 +4922,47 @@ button.back-link {
 
 /* One row, two tap zones with a thin separator between them. */
 .fav-sched-row {
+  position: relative;
   display: flex;
   align-items: stretch;
   border-bottom: 1px solid var(--line);
+}
+
+/* The row's words are one tap zone under the text (Kylie's P5, Oct 18); the team line and the read tile sit over it
+   with taps of their own. */
+.fav-sched-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.fav-sched-main {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fav-sched-team {
+  pointer-events: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 1px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--dodger);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fav-sched-team .type-icon-wrap {
+  margin: 0;
+  vertical-align: 0;
+}
+
+.fav-sched-read {
+  z-index: 1;
 }
 
 .log-list li:last-child .fav-sched-row {
@@ -8598,6 +8647,14 @@ button.back-link {
 
 .type-icon-wrap svg {
   display: block;
+}
+
+/* The badge's corner disc centres its icon (the wrapper rule above would make it a plain block). */
+.type-icon-wrap.fav-badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .stub-type-icon {

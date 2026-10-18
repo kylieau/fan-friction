@@ -11,6 +11,8 @@ import {
   entryMatches,
   favoriteFor,
   favoriteKey,
+  favoriteLeagueMark,
+  favoriteMark,
   favoritesOf,
   getPersonalLog,
   nightKey,
@@ -27,6 +29,7 @@ import { dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { splitTitleLabel } from '../lib/eventTitle';
 import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
+import { DateBox } from '../components/StubRows';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { LabelLine } from '../components/TitleText';
@@ -227,7 +230,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   const toItem = (row: ScheduleRow): TimelineItem => ({
     key: row.key,
     group: timelineGroup({ sort: row.date, label: '', precision: 'day' }),
-    node: <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} today={today} />,
+    node: <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />,
   });
   const quiet = favorites.filter((fav) => !rows.some((row) => favoriteKey(row.fav) === favoriteKey(fav) && row.date >= today));
 
@@ -235,7 +238,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     <>
       {/* Your favorites as their badges, each opening its page, then Edit (Kylie, Oct 15: "Edit" alone hid the way
           to each favorite and left a gap under the switch). */}
-      <div className="fav-strip">
+      <div className="fav-strip fav-strip-open">
         <div className="fav-strip-marks">
           {/* The set-aware badge (build 6, item 9a): the whole strip is the set; the link speaks the full name. */}
           {favorites.map((fav) => (
@@ -286,41 +289,36 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
 }
 
 /**
- * One row, two tap zones (build notes 3, 4.5): the tag and the words open the event page; the read box,
- * with its city's code over it when the date is not at home, opens the date page. An uncovered away
- * game wears the Away tag; its words open a page built from the game, so it can be stubbed (Kylie, Oct 15).
+ * One row, Kylie's option P5 (Oct 18, 2026): the date tile at the left; a text block of three lines, the team line
+ * (sport icon and the code the strip uses, in action blue, a link to the favorite's page), the title (a past game
+ * writes its result into it) and the venue and time in grey; the read tile at the right, opening the date page, or
+ * an Away tag where the app does not cover the building. The words open the event page (built from the game when
+ * the app holds no event for it; Kylie, Oct 15). No badge on the row, no friction mark, no occasion tag.
  */
-function ScheduleRowView({ row, shown, rating, home, today }: { row: ScheduleRow; /** The favorites this schedule lists, for the set-aware badge. */ shown: readonly Favorite[]; rating: number | null; home: string; today: string }) {
+function ScheduleRowView({ row, shown, rating, home }: { row: ScheduleRow; /** The favorites this schedule lists, for the set-aware code. */ shown: readonly Favorite[]; rating: number | null; home: string }) {
   const split = splitTitleLabel(row.title);
   const code = row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null;
-  // Under a month band the row says its day first: "Today · Sat, Oct 17 · Rose Bowl · 4:30 pm".
-  const facts = [dayBandLabel(row.date, today), row.facts].filter(Boolean).join(' · ');
-  const main = (
-    <>
-      <FavoriteBadge fav={row.fav} shown={shown} />
-      <span className="log-main">
-        {/* The title on one line; the label on its own line under it (labels r3), never after a dot. */}
-        <span className="log-title fav-one-line">
-          <span className="fav-title-name">{split.name}</span>
-        </span>
-        {split.label && <LabelLine label={split.label} />}
-        <span className="log-facts">{facts}</span>
-      </span>
-    </>
-  );
+  const to = row.event ? eventPath(row.event.id, row.event.metroId) : row.link ? eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home) : null;
+  const league = row.fav.kind === 'team' ? favoriteLeagueMark(row.fav, shown) : null;
   return (
     <div className="fav-sched-row">
-      {row.event ? (
-        <Link to={eventPath(row.event.id, row.event.metroId)} className="fav-sched-main">
-          {main}
-        </Link>
-      ) : row.link ? (
-        <Link to={eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home)} state={{ game: row.link }} className="fav-sched-main">
-          {main}
-        </Link>
-      ) : (
-        <span className="fav-sched-main">{main}</span>
-      )}
+      {to && <Link to={to} state={row.link ? { game: row.link } : undefined} className="fav-sched-link" aria-label={`${row.title}, ${favoriteName(row.fav)}`} />}
+      <span className="fav-sched-main">
+        <DateBox when={{ sort: row.date, label: '', precision: 'day' }} />
+        <span className="log-main">
+          <Link to={favPath(row.fav)} className="fav-sched-team" aria-label={favoriteName(row.fav)}>
+            <TypeIcon typeKey={favoriteTypeKey(row.fav)} size={12} />
+            {favoriteMark(row.fav, shown)}
+            {league ? ` ${league}` : ''}
+          </Link>
+          {/* The title on one line; the label on its own line under it (labels r3), never after a dot. */}
+          <span className="log-title fav-one-line">
+            <span className="fav-title-name">{split.name}</span>
+          </span>
+          {split.label && <LabelLine label={split.label} />}
+          <span className="log-facts">{row.facts}</span>
+        </span>
+      </span>
       {row.event && row.metroId ? (
         <Link to={datePath(row.date, row.metroId, row.event.id)} className="fav-sched-read" aria-label={`The read for ${shortLocalDate(row.date)}${code ? ` in ${METROS[row.metroId]?.name}` : ''}`}>
           {code && <span className="fav-sched-code">{code}</span>}
