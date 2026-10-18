@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-blue-jackets-401892527",
+      "metroId": "columbus",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 1
+      },
+      "away": {
+        "name": "Rangers",
+        "score": 0
+      },
+      "attendance": 16021,
+      "note": "OT",
+      "capturedAt": "2026-10-18T12:32:16.440Z",
+      "duration": {
+        "minutes": 168,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

@@ -75,6 +75,18 @@
       "code": 0,
       "precipProbability": 4,
       "precipMm": 0
+    },
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-18T12:29:06.814Z",
+      "feelsLikeHighF": 69.1,
+      "feelsLikeLowF": 44.5,
+      "code": 0,
+      "precipProbability": 3,
+      "precipMm": 0
     }
   ]
 }

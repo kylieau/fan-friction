@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-miami-fc-401842298",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pitbull-stadium",
+      "homeTeamId": "miami-fc",
+      "home": {
+        "name": "Miami FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Charleston",
+        "score": 2
+      },
+      "capturedAt": "2026-10-18T12:32:16.223Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-miami-hurricanes-football-401858263",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hard-rock-stadium",
+      "homeTeamId": "miami-hurricanes-football",
+      "home": {
+        "name": "Miami",
+        "score": 43
+      },
+      "away": {
+        "name": "Florida St",
+        "score": 35
+      },
+      "attendance": 66790,
+      "note": "2OT",
+      "capturedAt": "2026-10-18T12:32:16.223Z",
+      "duration": {
+        "minutes": 233,
+        "kind": "estimated"
+      },
+      "startedAt": "19:04"
+    },
+    {
+      "eventId": "2026-10-17-espn-panthers-401892522",
+      "metroId": "miami",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 8
+      },
+      "away": {
+        "name": "Kraken",
+        "score": 3
+      },
+      "attendance": 19169,
+      "capturedAt": "2026-10-18T12:32:16.223Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "18:09"
+    }
+  ]
+}

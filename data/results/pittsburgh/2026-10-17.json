@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-robert-morris-football-401867920",
+      "metroId": "pittsburgh",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "joe-walton-stadium",
+      "homeTeamId": "robert-morris-football",
+      "home": {
+        "name": "Robert Morris",
+        "score": 15
+      },
+      "away": {
+        "name": "New Haven",
+        "score": 26
+      },
+      "attendance": 1235,
+      "capturedAt": "2026-10-18T12:32:15.721Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "12:00"
+    }
+  ]
+}

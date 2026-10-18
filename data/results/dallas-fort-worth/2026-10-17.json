@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-smu-football-401858268",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gerald-j-ford-stadium",
+      "homeTeamId": "smu-football",
+      "home": {
+        "name": "SMU",
+        "score": 23
+      },
+      "away": {
+        "name": "Virginia",
+        "score": 13
+      },
+      "attendance": 28713,
+      "capturedAt": "2026-10-18T12:32:14.274Z",
+      "duration": {
+        "minutes": 189,
+        "kind": "estimated"
+      },
+      "startedAt": "12:08"
+    }
+  ]
+}

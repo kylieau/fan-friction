@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-predators-401892529",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 5
+      },
+      "away": {
+        "name": "Blues",
+        "score": 2
+      },
+      "attendance": 17159,
+      "capturedAt": "2026-10-18T12:32:16.985Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    },
+    {
+      "eventId": "2026-10-17-espn-tsu-football-401867968",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "tsu-football",
+      "home": {
+        "name": "Tennessee St",
+        "score": 25
+      },
+      "away": {
+        "name": "Morgan St",
+        "score": 16
+      },
+      "attendance": 11347,
+      "capturedAt": "2026-10-18T12:32:16.985Z",
+      "duration": {
+        "minutes": 187,
+        "kind": "estimated"
+      },
+      "startedAt": "18:33"
+    },
+    {
+      "eventId": "2026-10-17-espn-vanderbilt-football-401856726",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "firstbank-stadium",
+      "homeTeamId": "vanderbilt-football",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 21
+      },
+      "away": {
+        "name": "Arkansas",
+        "score": 31
+      },
+      "attendance": 35000,
+      "capturedAt": "2026-10-18T12:32:16.985Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

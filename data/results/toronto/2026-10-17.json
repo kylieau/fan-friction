@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-maple-leafs-401892523",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 1
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 4
+      },
+      "attendance": 18915,
+      "capturedAt": "2026-10-18T12:32:19.323Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

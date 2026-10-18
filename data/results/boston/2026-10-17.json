@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-bc-football-401858267",
+      "metroId": "boston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alumni-stadium",
+      "homeTeamId": "bc-football",
+      "home": {
+        "name": "Boston College",
+        "score": 27
+      },
+      "away": {
+        "name": "Pitt",
+        "score": 21
+      },
+      "attendance": 32847,
+      "capturedAt": "2026-10-18T12:32:15.171Z",
+      "duration": {
+        "minutes": 213,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-10-17-espn-harvard-football-401867841",
+      "metroId": "boston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "harvard-stadium",
+      "homeTeamId": "harvard-football",
+      "home": {
+        "name": "Harvard",
+        "score": 30
+      },
+      "away": {
+        "name": "Holy Cross",
+        "score": 7
+      },
+      "attendance": 6581,
+      "capturedAt": "2026-10-18T12:32:15.171Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "12:59"
+    },
+    {
+      "eventId": "2026-10-17-espn-revolution-761879",
+      "metroId": "boston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gillette-stadium",
+      "homeTeamId": "revolution",
+      "home": {
+        "name": "Revolution",
+        "score": 1
+      },
+      "away": {
+        "name": "Fire",
+        "score": 0
+      },
+      "capturedAt": "2026-10-18T12:32:15.171Z"
+    }
+  ]
+}

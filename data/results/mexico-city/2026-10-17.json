@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-cruz-azul-401876939",
+      "metroId": "mexico-city",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "cruz-azul",
+      "home": {
+        "name": "Cruz Azul",
+        "score": 5
+      },
+      "away": {
+        "name": "Juárez",
+        "score": 0
+      },
+      "capturedAt": "2026-10-18T12:32:18.031Z"
+    }
+  ]
+}

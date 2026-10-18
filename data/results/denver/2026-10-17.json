@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-denver-summit-fc-401854092",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "centennial-stadium",
+      "homeTeamId": "denver-summit-fc",
+      "home": {
+        "name": "Summit FC",
+        "score": 2
+      },
+      "away": {
+        "name": "Angel City",
+        "score": 3
+      },
+      "capturedAt": "2026-10-18T12:32:21.862Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-du-mhockey-401904863",
+      "metroId": "denver",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 3
+      },
+      "away": {
+        "name": "Michigan Wolverines",
+        "score": 4
+      },
+      "capturedAt": "2026-10-18T12:32:21.862Z"
+    }
+  ]
+}

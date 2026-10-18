@@ -51,6 +51,18 @@
       "code": 53,
       "precipProbability": 22,
       "precipMm": 0.5
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-18T12:27:14.715Z",
+      "feelsLikeHighF": 68.7,
+      "feelsLikeLowF": 58.6,
+      "code": 53,
+      "precipProbability": 17,
+      "precipMm": 3.6
     }
   ]
 }

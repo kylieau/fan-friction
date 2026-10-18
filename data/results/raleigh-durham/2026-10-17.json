@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-duke-football-401858266",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wallace-wade-stadium",
+      "homeTeamId": "duke-football",
+      "home": {
+        "name": "Duke",
+        "score": 20
+      },
+      "away": {
+        "name": "North Carolina",
+        "score": 24
+      },
+      "attendance": 35018,
+      "capturedAt": "2026-10-18T12:32:21.440Z",
+      "duration": {
+        "minutes": 217,
+        "kind": "estimated"
+      },
+      "startedAt": "15:35"
+    },
+    {
+      "eventId": "2026-10-17-espn-nc-courage-401854023",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "first-horizon-stadium",
+      "homeTeamId": "nc-courage",
+      "home": {
+        "name": "Courage",
+        "score": 1
+      },
+      "away": {
+        "name": "Wave",
+        "score": 2
+      },
+      "attendance": 10353,
+      "capturedAt": "2026-10-18T12:32:21.440Z"
+    }
+  ]
+}

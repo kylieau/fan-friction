@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-butler-football-401868213",
+      "metroId": "indianapolis",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sellick-bowl",
+      "homeTeamId": "butler-football",
+      "home": {
+        "name": "Butler",
+        "score": 9
+      },
+      "away": {
+        "name": "Dayton",
+        "score": 19
+      },
+      "attendance": 3917,
+      "capturedAt": "2026-10-18T12:32:19.149Z",
+      "duration": {
+        "minutes": 188,
+        "kind": "estimated"
+      },
+      "startedAt": "13:01"
+    }
+  ]
+}

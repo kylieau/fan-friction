@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-galaxy-761887",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dignity-health-sports-park",
+      "homeTeamId": "galaxy",
+      "home": {
+        "name": "Galaxy",
+        "score": 2
+      },
+      "away": {
+        "name": "San Diego FC",
+        "score": 2
+      },
+      "capturedAt": "2026-10-18T12:32:11.745Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-kings-401892530",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 1
+      },
+      "away": {
+        "name": "Bruins",
+        "score": 4
+      },
+      "attendance": 18145,
+      "capturedAt": "2026-10-18T12:32:11.745Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "21:09"
+    },
+    {
+      "eventId": "2026-10-17-espn-ucla-football-401858494",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rose-bowl",
+      "homeTeamId": "ucla-football",
+      "home": {
+        "name": "UCLA",
+        "score": 17
+      },
+      "away": {
+        "name": "Wisconsin",
+        "score": 7
+      },
+      "attendance": 36045,
+      "capturedAt": "2026-10-18T12:32:11.745Z",
+      "duration": {
+        "minutes": 195,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    }
+  ]
+}

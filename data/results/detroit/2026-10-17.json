@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-michigan-football-401858490",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michigan-stadium",
+      "homeTeamId": "michigan-football",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 21
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 18
+      },
+      "attendance": 110731,
+      "capturedAt": "2026-10-18T12:32:14.540Z",
+      "duration": {
+        "minutes": 207,
+        "kind": "estimated"
+      },
+      "startedAt": "15:43"
+    },
+    {
+      "eventId": "2026-10-17-espn-red-wings-401892525",
+      "metroId": "detroit",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "red-wings",
+      "home": {
+        "name": "Red Wings",
+        "score": 4
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 3
+      },
+      "attendance": 17979,
+      "note": "SO",
+      "capturedAt": "2026-10-18T12:32:14.540Z",
+      "duration": {
+        "minutes": 168,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

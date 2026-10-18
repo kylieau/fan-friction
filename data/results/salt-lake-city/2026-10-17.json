@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-utah-mammoth-401892531",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 2
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 6
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-10-18T12:32:20.065Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    },
+    {
+      "eventId": "2026-10-17-espn-utah-royals-401854022",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "america-first-field",
+      "homeTeamId": "utah-royals",
+      "home": {
+        "name": "Royals",
+        "score": 0
+      },
+      "away": {
+        "name": "Current",
+        "score": 2
+      },
+      "capturedAt": "2026-10-18T12:32:20.065Z"
+    }
+  ]
+}

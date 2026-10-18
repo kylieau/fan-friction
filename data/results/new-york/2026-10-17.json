@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-fordham-football-401868012",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "coffey-field",
+      "homeTeamId": "fordham-football",
+      "home": {
+        "name": "Fordham",
+        "score": 17
+      },
+      "away": {
+        "name": "Villanova",
+        "score": 38
+      },
+      "attendance": 2369,
+      "capturedAt": "2026-10-18T12:32:12.947Z",
+      "duration": {
+        "minutes": 186,
+        "kind": "estimated"
+      },
+      "startedAt": "15:32"
+    },
+    {
+      "eventId": "2026-10-17-espn-nycfc-761877",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "citi-field",
+      "homeTeamId": "nycfc",
+      "home": {
+        "name": "NYCFC",
+        "score": 1
+      },
+      "away": {
+        "name": "LAFC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-18T12:32:12.947Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-red-bulls-761878",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sports-illustrated-stadium",
+      "homeTeamId": "red-bulls",
+      "home": {
+        "name": "Red Bull NY",
+        "score": 0
+      },
+      "away": {
+        "name": "Toronto FC",
+        "score": 2
+      },
+      "capturedAt": "2026-10-18T12:32:12.947Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-stony-brook-football-401866666",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lavalle-stadium",
+      "homeTeamId": "stony-brook-football",
+      "home": {
+        "name": "Stony Brook",
+        "score": 31
+      },
+      "away": {
+        "name": "UAlbany",
+        "score": 48
+      },
+      "attendance": 6101,
+      "capturedAt": "2026-10-18T12:32:12.947Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "14:35"
+    }
+  ]
+}
