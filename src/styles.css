@@ -9538,3 +9538,58 @@ span.fav-sched-read {
   font-weight: 800;
   text-decoration: none;
 }
+
+/* The picker's Browse by league (Kylie, Oct 19): sport headings, one card per sport, a league row that opens its teams. */
+.browse-sport {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.browse-list {
+  padding: 0;
+  margin: 0;
+}
+
+.browse-league {
+  border-bottom: 1px solid var(--line);
+}
+
+.browse-league:last-child {
+  border-bottom: none;
+}
+
+.browse-league-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  padding: 8px 12px 8px 16px;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+.browse-league-row .log-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.browse-chevron {
+  display: inline-flex;
+  color: var(--dodger);
+  transition: transform 160ms ease;
+}
+
+.browse-chevron.open {
+  transform: rotate(180deg);
+}
+
+.browse-league > .log-list {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+}

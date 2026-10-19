@@ -2,11 +2,12 @@ import { useMemo, useState, useSyncExternalStore } from 'react';
 import { TypeIcon } from '../components/TypeIcon';
 import { favoriteTypeKey } from '../map/typeIcons';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
-import { SearchIcon } from '../components/Icons';
+import { ChevronDown, SearchIcon } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
   entryMatches,
   favoriteFor,
+  favoriteForTeam,
   favoriteKey,
   favoriteLongName,
   favoritesOf,
@@ -17,9 +18,34 @@ import {
   yourEntries,
   type Favorite,
   type FavoriteKind,
+  TEAMS,
+  teamLongName,
 } from '../data';
 import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
+
+/** The leagues a Suggested row draws from (Kylie, Oct 19: the home city's major-league teams). */
+const MAJOR_LEAGUES = new Set(['MLB', 'NBA', 'WNBA', 'NFL', 'NHL', 'MLS', 'NWSL', 'PWHL', 'CFL', 'Liga MX']);
+
+/** Every team on file as sport → league → teams, for browsing the way a sports site lists them. */
+function browseTree(): { sport: string; leagues: { league: string; teams: Favorite[] }[] }[] {
+  const bySport = new Map<string, Map<string, Favorite[]>>();
+  for (const team of Object.values(TEAMS)) {
+    const sport = team.sport.charAt(0).toUpperCase() + team.sport.slice(1);
+    const leagues = bySport.get(sport) ?? new Map<string, Favorite[]>();
+    leagues.set(team.league, [...(leagues.get(team.league) ?? []), favoriteForTeam(team)]);
+    bySport.set(sport, leagues);
+  }
+  const size = (leagues: Map<string, Favorite[]>) => [...leagues.values()].reduce((n, l) => n + l.length, 0);
+  return [...bySport.entries()]
+    .sort((a, b) => size(b[1]) - size(a[1]) || a[0].localeCompare(b[0]))
+    .map(([sport, leagues]) => ({
+      sport,
+      leagues: [...leagues.entries()]
+        .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+        .map(([league, teams]) => ({ league, teams: teams.sort((a, b) => teamLongName(TEAMS[a.teamId!]).localeCompare(teamLongName(TEAMS[b.teamId!]))) })),
+    }));
+}
 
 const KINDS: { kind: FavoriteKind; label: string }[] = [
   { kind: 'team', label: 'Team' },
@@ -46,7 +72,11 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   // The picker stays open until Done, even after the first follow.
   const [picking, setPicking] = useState(() => edit || pathname.endsWith('/edit') || favorites.length === 0);
 
-  const suggestions = useMemo(() => suggestionsFor(home.id, favorites), [home.id, favorites]);
+  // The home city's major-league teams you do not follow yet: a short row, not the whole city (Kylie, Oct 19).
+  const suggested = useMemo(() => suggestionsFor(home.id, favorites).filter((fav) => fav.teamId && MAJOR_LEAGUES.has(TEAMS[fav.teamId]?.league ?? '')), [home.id, favorites]);
+  // Every team on file by sport, then league, each league's teams A–Z by their written name.
+  const browse = useMemo(() => browseTree(), []);
+  const [openLeague, setOpenLeague] = useState<string | null>(null);
   const isOn = (fav: Favorite) => favorites.some((f) => favoriteKey(f) === favoriteKey(fav));
   const countFor = (fav: Favorite) => entries.filter((entry) => entryMatches(entry, fav)).length;
 
@@ -65,6 +95,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     };
     favorites.forEach(add);
     suggestionsFor(home.id, []).forEach(add);
+    Object.values(TEAMS).forEach((team) => add(favoriteForTeam(team)));
     for (const entry of entries) {
       if (entry.kind === 'show') entry.sides.forEach((side) => add(favoriteFor('artist', side)));
       else if (entry.kind === 'festival') add(favoriteFor('festival', entry.title));
@@ -142,28 +173,73 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
         {search}
         {results || (
           <>
-            {/* Sections by kind (Kylie, Oct 9, C076): what you follow first, then the rest in your home city. */}
+            {/* Your Faves first, by kind (Kylie, Oct 9, C076). */}
             {KINDS.map(({ kind, label }) => {
               const on = favorites.filter((fav) => fav.kind === kind);
-              const more = suggestions.filter((fav) => fav.kind === kind);
-              if (on.length === 0 && more.length === 0) return null;
-              const listed = [...on, ...more];
+              if (on.length === 0) return null;
               return (
                 <section key={kind} className="you-block" aria-labelledby={`pick-${kind}`}>
                   <h2 id={`pick-${kind}`} className="you-heading">
-                    {label}s
+                    Your {label.toLowerCase()}s
                   </h2>
                   <ul className="log-list">
                     {on.map((fav) => (
-                      <FavRow key={favoriteKey(fav)} fav={fav} shown={listed} sub={subFor(fav, countFor(fav))} on />
-                    ))}
-                    {more.map((fav) => (
-                      <FavRow key={favoriteKey(fav)} fav={fav} shown={listed} sub={subFor(fav, countFor(fav))} on={false} />
+                      <FavRow key={favoriteKey(fav)} fav={fav} shown={on} sub={subFor(fav, countFor(fav))} on />
                     ))}
                   </ul>
                 </section>
               );
             })}
+            {/* A short Suggested row: the home city's major-league teams (Kylie, Oct 19: not the whole city). */}
+            {suggested.length > 0 && (
+              <section className="you-block" aria-labelledby="pick-suggested">
+                <h2 id="pick-suggested" className="you-heading">
+                  Suggested in {home.name}
+                </h2>
+                <ul className="log-list">
+                  {suggested.map((fav) => (
+                    <FavRow key={favoriteKey(fav)} fav={fav} shown={suggested} sub={subFor(fav, countFor(fav))} on={false} />
+                  ))}
+                </ul>
+              </section>
+            )}
+            {/* Browse by sport, then league, the way a sports site lists them (Kylie, Oct 19); a league opens on a tap.
+                Concerts will browse by genre once artists carry one (artist-genres research). */}
+            <section className="you-block" aria-labelledby="pick-browse">
+              <h2 id="pick-browse" className="you-heading">
+                Browse by league
+              </h2>
+              {browse.map(({ sport, leagues }) => (
+                <div key={sport} className="browse-sport">
+                  <h3 className="you-heading sheet-heading">{sport}</h3>
+                  <ul className="log-list card browse-list">
+                    {leagues.map(({ league, teams }) => {
+                      const open = openLeague === league;
+                      return (
+                        <li key={league} className="browse-league">
+                          <button type="button" className="browse-league-row" aria-expanded={open} onClick={() => setOpenLeague(open ? null : league)}>
+                            <span className="log-title">{league}</span>
+                            <span className="log-facts">
+                              {teams.length} {teams.length === 1 ? 'team' : 'teams'}
+                            </span>
+                            <span className={`browse-chevron${open ? ' open' : ''}`} aria-hidden>
+                              <ChevronDown />
+                            </span>
+                          </button>
+                          {open && (
+                            <ul className="log-list">
+                              {teams.map((fav) => (
+                                <FavRow key={favoriteKey(fav)} fav={fav} shown={teams} sub={subFor(fav, countFor(fav))} on={isOn(fav)} />
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              ))}
+            </section>
           </>
         )}
         {/* Done stays in reach while the list scrolls (C077). Inside the Settings dropdown there is nothing to return to. */}
