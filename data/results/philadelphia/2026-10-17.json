@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-flyers-401892526",
+      "metroId": "philadelphia",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 3
+      },
+      "away": {
+        "name": "Senators",
+        "score": 1
+      },
+      "attendance": 18953,
+      "capturedAt": "2026-10-18T12:32:15.424Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:16"
+    },
+    {
+      "eventId": "2026-10-17-espn-philadelphia-union-761875",
+      "metroId": "philadelphia",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "subaru-park",
+      "homeTeamId": "philadelphia-union",
+      "home": {
+        "name": "Union",
+        "score": 2
+      },
+      "away": {
+        "name": "Charlotte",
+        "score": 2
+      },
+      "attendance": 18551,
+      "capturedAt": "2026-10-18T12:32:15.424Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-temple-football-401862803",
+      "metroId": "philadelphia",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "temple-football",
+      "home": {
+        "name": "Temple",
+        "score": 31
+      },
+      "away": {
+        "name": "Charlotte",
+        "score": 38
+      },
+      "attendance": 11589,
+      "capturedAt": "2026-10-18T12:32:15.424Z",
+      "duration": {
+        "minutes": 206,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

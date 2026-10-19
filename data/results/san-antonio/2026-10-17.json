@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-san-antonio-fc-401842297",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-field",
+      "homeTeamId": "san-antonio-fc",
+      "home": {
+        "name": "SAFC",
+        "score": 1
+      },
+      "away": {
+        "name": "New Mexico",
+        "score": 0
+      },
+      "attendance": 7154,
+      "capturedAt": "2026-10-18T12:32:21.071Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-uiw-football-401868250",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benson-stadium",
+      "homeTeamId": "uiw-football",
+      "home": {
+        "name": "Incarnate Word",
+        "score": 41
+      },
+      "away": {
+        "name": "UT Rio Grande",
+        "score": 16
+      },
+      "attendance": 3682,
+      "capturedAt": "2026-10-18T12:32:21.071Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    },
+    {
+      "eventId": "2026-10-17-espn-utsa-football-401862804",
+      "metroId": "san-antonio",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alamodome",
+      "homeTeamId": "utsa-football",
+      "home": {
+        "name": "UTSA",
+        "score": 38
+      },
+      "away": {
+        "name": "Navy",
+        "score": 34
+      },
+      "attendance": 23297,
+      "capturedAt": "2026-10-18T12:32:21.071Z",
+      "duration": {
+        "minutes": 211,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    }
+  ]
+}

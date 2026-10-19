@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-ht-cleveland-monsters-1029152",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cleveland-monsters",
+      "home": {
+        "name": "Monsters",
+        "score": 3
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 6
+      },
+      "attendance": 7316,
+      "capturedAt": "2026-10-18T12:32:16.691Z"
+    },
+    {
+      "eventId": "2026-10-17-mlb-849816",
+      "metroId": "cleveland",
+      "date": "2026-10-17",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "progressive-field",
+      "homeTeamId": "guardians",
+      "home": {
+        "name": "Guardians",
+        "score": 3
+      },
+      "away": {
+        "name": "Rays",
+        "score": 7
+      },
+      "capturedAt": "2026-10-18T12:32:16.923Z",
+      "attendance": 33355,
+      "duration": {
+        "minutes": 190,
+        "kind": "official"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

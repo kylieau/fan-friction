@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-blackhawks-401892528",
+      "metroId": "chicago",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 0
+      },
+      "away": {
+        "name": "Stars",
+        "score": 4
+      },
+      "attendance": 18233,
+      "capturedAt": "2026-10-18T12:32:13.902Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-10-17-ht-chicago-wolves-1029151",
+      "metroId": "chicago",
+      "date": "2026-10-17",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "allstate-arena",
+      "homeTeamId": "chicago-wolves",
+      "home": {
+        "name": "Wolves",
+        "score": 2
+      },
+      "away": {
+        "name": "Wild",
+        "score": 1
+      },
+      "attendance": 4521,
+      "note": "OT",
+      "capturedAt": "2026-10-18T12:32:13.904Z"
+    }
+  ]
+}

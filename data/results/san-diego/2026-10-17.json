@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-sdsu-football-401860904",
+      "metroId": "san-diego",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "sdsu-football",
+      "home": {
+        "name": "San Diego St",
+        "score": 26
+      },
+      "away": {
+        "name": "Fresno St",
+        "score": 23
+      },
+      "attendance": 21847,
+      "capturedAt": "2026-10-18T12:32:12.245Z",
+      "duration": {
+        "minutes": 190,
+        "kind": "estimated"
+      },
+      "startedAt": "22:36"
+    }
+  ]
+}

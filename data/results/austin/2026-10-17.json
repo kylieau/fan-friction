@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-austin-fc-761882",
+      "metroId": "austin",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "q2-stadium",
+      "homeTeamId": "austin-fc",
+      "home": {
+        "name": "Austin FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Vancouver",
+        "score": 2
+      },
+      "capturedAt": "2026-10-18T12:32:17.269Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-texas-football-401856724",
+      "metroId": "austin",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dkr-texas-memorial-stadium",
+      "homeTeamId": "texas-football",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 24
+      },
+      "away": {
+        "name": "Florida",
+        "score": 27
+      },
+      "attendance": 103989,
+      "capturedAt": "2026-10-18T12:32:17.269Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "12:05"
+    }
+  ]
+}

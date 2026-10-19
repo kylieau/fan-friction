@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-sounders-761885",
+      "metroId": "seattle",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "sounders",
+      "home": {
+        "name": "Sounders",
+        "score": 1
+      },
+      "away": {
+        "name": "CF Montréal",
+        "score": 1
+      },
+      "capturedAt": "2026-10-18T12:32:12.527Z"
+    },
+    {
+      "eventId": "2026-10-17-ht-seattle-thunderbirds-1023185",
+      "metroId": "seattle",
+      "date": "2026-10-17",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 2
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 3
+      },
+      "attendance": 3314,
+      "note": "SO",
+      "capturedAt": "2026-10-18T12:32:12.529Z"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-capitals-401892519",
+      "metroId": "washington-dc",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 4
+      },
+      "away": {
+        "name": "Devils",
+        "score": 2
+      },
+      "attendance": 16834,
+      "capturedAt": "2026-10-18T12:32:20.771Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "13:08"
+    },
+    {
+      "eventId": "2026-10-17-espn-maryland-football-401858489",
+      "metroId": "washington-dc",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "secu-stadium",
+      "homeTeamId": "maryland-football",
+      "home": {
+        "name": "Maryland",
+        "score": 30
+      },
+      "away": {
+        "name": "Rutgers",
+        "score": 37
+      },
+      "attendance": 39326,
+      "capturedAt": "2026-10-18T12:32:20.771Z",
+      "duration": {
+        "minutes": 208,
+        "kind": "estimated"
+      },
+      "startedAt": "12:37"
+    },
+    {
+      "eventId": "2026-10-17-espn-spirit-401854021",
+      "metroId": "washington-dc",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "spirit",
+      "home": {
+        "name": "Spirit",
+        "score": 1
+      },
+      "away": {
+        "name": "Gotham",
+        "score": 0
+      },
+      "attendance": 19215,
+      "capturedAt": "2026-10-18T12:32:20.771Z"
+    }
+  ]
+}

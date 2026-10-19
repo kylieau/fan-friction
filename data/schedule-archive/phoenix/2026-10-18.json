@@ -1,0 +1,1072 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "metroName": "Phoenix",
+  "timeZone": "America/Phoenix",
+  "capturedOn": "2026-10-18",
+  "capturedAt": "2026-10-18T12:31:05.357Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-18",
+    "through": "2026-11-01"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 21
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-18-tm-1A_Zk8YGkd5y9oH",
+      "metroId": "phoenix",
+      "date": "2026-10-18",
+      "start": "08:00",
+      "kind": "game",
+      "title": "NASCAR Cup Series Freeway Insurance 500",
+      "place": {
+        "type": "venue",
+        "venueId": "phoenix-raceway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "NASCAR Cup Series",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_Zk8YGkd5y9oH"
+    },
+    {
+      "id": "2026-10-18-tm-rZ7HnEZ1AfOOJd",
+      "metroId": "phoenix",
+      "date": "2026-10-18",
+      "start": "11:00",
+      "kind": "special",
+      "title": "AZ TACO FEST",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-river-fields"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "AZ TACO FEST",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfOOJd"
+    },
+    {
+      "id": "2026-10-18-tm-1av0Z_KAtP-Zd2GG",
+      "metroId": "phoenix",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Fastball Comedy Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "sloan-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dave Chappelle",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1av0Z_KAtP-Zd2GG"
+    },
+    {
+      "id": "2026-10-18-tm-1Av0Z_FGkRRWFE0",
+      "metroId": "phoenix",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chayanne",
+      "officialTitle": "Chayanne - Bailemos Otra Vez Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-diamond-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Chayanne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_FGkRRWFE0",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-1A_Zk3eGkd3BcmH",
+      "metroId": "phoenix",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_Zk3eGkd3BcmH",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-17k8v0G6u5FW9HS",
+      "metroId": "phoenix",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "beabadoobee",
+      "officialTitle": "beabadoobee: The Powerlines Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "talking-stick-resort-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "beabadoobee",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6u5FW9HS",
+      "expectedDraw": {
+        "count": 20106,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-1Av0Z_FGkHabHCZ",
+      "metroId": "phoenix",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Modest Mouse",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Modest Mouse",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_FGkHabHCZ",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-1Av0Z_kGkMN6HU7",
+      "metroId": "phoenix",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Weezer",
+      "officialTitle": "WEEZER: The Gathering",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Weezer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_kGkMN6HU7",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-17k8v0G65lC9IRs",
+      "metroId": "phoenix",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bryson Tiller",
+      "officialTitle": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "talking-stick-resort-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Bryson Tiller",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G65lC9IRs",
+      "expectedDraw": {
+        "count": 20106,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-17k8v0G6G9pu_YT",
+      "metroId": "phoenix",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charli xcx",
+      "officialTitle": "Charli xcx - Music, Fashion, Film Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-diamond-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Charli xcx",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6G9pu_YT",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1AfPpQK",
+      "metroId": "phoenix",
+      "date": "2026-10-23",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Halloween Spooktacular Hot Air Balloon Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-river-fields"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Halloween Spooktacular Hot Air Balloon Festival",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfPpQK",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1Av0Z_AGknirbye",
+      "metroId": "phoenix",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_AGknirbye",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1A_ZkfNGkeJ-Puc",
+      "metroId": "phoenix",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Gemelos De Sinaloa",
+      "officialTitle": "Los Gemelos de Sinaloa: The Gemeliza Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Los Gemelos De Sinaloa",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkfNGkeJ-Puc",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-rZ7HnEZ1AfPpjN",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Halloween Spooktacular Hot Air Balloon Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-river-fields"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Halloween Spooktacular Hot Air Balloon Festival",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfPpjN",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-24-espn-phoenix-rising-401842307",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rising vs. Lexington",
+      "place": {
+        "type": "venue",
+        "venueId": "phoenix-rising-soccer-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "phoenix-rising",
+        "away": "lexington",
+        "awayOpponent": "lexington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7563,
+        "low": 6443,
+        "high": 8092,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-suns-401909860",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Warriors",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "warriors",
+        "awayOpponent": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-16_ZkoS0yZAuA8kF",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mon Laferte",
+      "officialTitle": "Mon Laferte - Femme Fatale Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Mon Laferte",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16_ZkoS0yZAuA8kF",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-asu-football-401856839",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Arizona St vs. Kansas St",
+      "place": {
+        "type": "venue",
+        "venueId": "mountain-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "asu-football",
+        "away": "kansas-st",
+        "awayOpponent": "kansas-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 54069,
+        "low": 53978,
+        "high": 54147,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-arizona-cardinals-401873019",
+      "metroId": "phoenix",
+      "date": "2026-10-25",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Cardinals vs. Broncos",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "arizona-cardinals",
+        "away": "broncos",
+        "awayOpponent": "broncos"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 63672,
+        "low": 62961,
+        "high": 64413,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-rZ7HnEZ1AfPpqS",
+      "metroId": "phoenix",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Halloween Spooktacular Hot Air Balloon Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-river-fields"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Halloween Spooktacular Hot Air Balloon Festival",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfPpqS",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-25-tm-17k8v0G6G538qi9",
+      "metroId": "phoenix",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Malcolm Todd",
+      "officialTitle": "Malcolm Todd: Do That Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Malcolm Todd",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6G538qi9",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-17k8v0G6CC1PKta",
+      "metroId": "phoenix",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Chief Keef",
+      "officialTitle": "Chief Keef Live 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Chief Keef",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6CC1PKta",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-1Av0ZbSGknh-N_Z",
+      "metroId": "phoenix",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0ZbSGknh-N_Z",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-suns-401909286",
+      "metroId": "phoenix",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Nuggets",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "nuggets",
+        "awayOpponent": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-17k8v0G62LhibLw",
+      "metroId": "phoenix",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jodeci",
+      "officialTitle": "Jodeci - 35th Anniversary Tour of Forever My Lady",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jodeci",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G62LhibLw",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-17k8v0G6GxLnVM3",
+      "metroId": "phoenix",
+      "date": "2026-11-01",
+      "start": "12:30",
+      "kind": "show",
+      "title": "Lenny Pearce",
+      "officialTitle": "Lenny Pearce - Toddler Rave World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Lenny Pearce",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6GxLnVM3",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-18-tm-1A_Zk8YGkd5y9oH",
+      "date": "2026-10-18",
+      "start": "08:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Az Taco Fest 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-rZ7HnEZ1AfOOJd",
+      "date": "2026-10-18",
+      "start": "11:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "NASCAR Cup Series Freeway Insur… 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1av0Z_KAtP-Zd2GG",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Chayanne 23 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1Av0Z_FGkRRWFE0",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Young Miko · Late Checkout Tour 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1A_Zk3eGkd3BcmH",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Chayanne 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-17k8v0G6u5FW9HS",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Modest Mouse 9.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20106
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-1Av0Z_FGkHabHCZ",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "beabadoobee 9.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-1Av0Z_kGkMN6HU7",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Bryson Tiller Presents: The Neo… 9.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-17k8v0G65lC9IRs",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Weezer · The Gathering 9.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20106
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-17k8v0G6G9pu_YT",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1AfPpQK",
+      "date": "2026-10-23",
+      "start": "17:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Gorillaz · The Mountain Tour 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1Av0Z_AGknirbye",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Halloween Spooktacular Hot Air… 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1A_ZkfNGkeJ-Puc",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Halloween Spooktacular Hot Air… and Gorillaz · The Mountain Tour 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-rZ7HnEZ1AfPpjN",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Warriors at Suns (Home opener) 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-phoenix-rising-401842307",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Warriors at Suns (Home opener) and Halloween Spooktacular Hot Air… 4.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7563,
+        "low": 6443,
+        "high": 8092
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-suns-401909860",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Halloween Spooktacular Hot Air… and Kansas St at Arizona St 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-16_ZkoS0yZAuA8kF",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Warriors at Suns (Home opener) and Halloween Spooktacular Hot Air… 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-asu-football-401856839",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "88° feels-like, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 54069,
+        "low": 53978,
+        "high": 54147
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-arizona-cardinals-401873019",
+      "date": "2026-10-25",
+      "start": "13:05",
+      "read": {
+        "rating": 3.7,
+        "friction": "Moderate",
+        "why": "91° feels-like at a 1:05 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 63672,
+        "low": 62961,
+        "high": 64413
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-rZ7HnEZ1AfPpqS",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Moderate",
+        "why": "Broncos at Cardinals 22 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-17k8v0G6G538qi9",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Moderate",
+        "why": "Halloween Spooktacular Hot Air… 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-17k8v0G6CC1PKta",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-1Av0ZbSGknh-N_Z",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-suns-401909286",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Jodeci 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-17k8v0G62LhibLw",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Nuggets at Suns 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-17k8v0G6GxLnVM3",
+      "date": "2026-11-01",
+      "start": "12:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    }
+  ]
+}

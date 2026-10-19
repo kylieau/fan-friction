@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-dynamo-761883",
+      "metroId": "houston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "dynamo",
+      "home": {
+        "name": "Dynamo",
+        "score": 2
+      },
+      "away": {
+        "name": "FC Dallas",
+        "score": 2
+      },
+      "capturedAt": "2026-10-18T12:32:18.886Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-pvamu-football-401868361",
+      "metroId": "houston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pvamu-panther-stadium",
+      "homeTeamId": "pvamu-football",
+      "home": {
+        "name": "Prairie View",
+        "score": 41
+      },
+      "away": {
+        "name": "Alcorn St",
+        "score": 38
+      },
+      "capturedAt": "2026-10-18T12:32:18.886Z",
+      "duration": {
+        "minutes": 216,
+        "kind": "estimated"
+      },
+      "startedAt": "15:06"
+    },
+    {
+      "eventId": "2026-10-17-espn-rice-football-401862805",
+      "metroId": "houston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "first-community-stadium",
+      "homeTeamId": "rice-football",
+      "home": {
+        "name": "Rice Owls",
+        "score": 17
+      },
+      "away": {
+        "name": "Tulsa",
+        "score": 38
+      },
+      "attendance": 14626,
+      "capturedAt": "2026-10-18T12:32:18.886Z",
+      "duration": {
+        "minutes": 186,
+        "kind": "estimated"
+      },
+      "startedAt": "16:32"
+    },
+    {
+      "eventId": "2026-10-17-espn-uh-football-401856831",
+      "metroId": "houston",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "tdecu-stadium",
+      "homeTeamId": "uh-football",
+      "home": {
+        "name": "Houston",
+        "score": 35
+      },
+      "away": {
+        "name": "Oklahoma St",
+        "score": 32
+      },
+      "attendance": 42544,
+      "capturedAt": "2026-10-18T12:32:18.886Z",
+      "duration": {
+        "minutes": 209,
+        "kind": "estimated"
+      },
+      "startedAt": "19:35"
+    }
+  ]
+}

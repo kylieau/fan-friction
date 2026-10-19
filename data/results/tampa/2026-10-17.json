@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-lightning-401892521",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 4
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-10-18T12:32:15.988Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "16:09"
+    },
+    {
+      "eventId": "2026-10-17-espn-rowdies-401842293",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-lang-stadium",
+      "homeTeamId": "rowdies",
+      "home": {
+        "name": "Rowdies",
+        "score": 1
+      },
+      "away": {
+        "name": "DCFC",
+        "score": 0
+      },
+      "attendance": 4783,
+      "capturedAt": "2026-10-18T12:32:15.988Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-usf-football-401862806",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "raymond-james-stadium",
+      "homeTeamId": "usf-football",
+      "home": {
+        "name": "South Florida",
+        "score": 29
+      },
+      "away": {
+        "name": "Kent State",
+        "score": 2
+      },
+      "attendance": 31384,
+      "capturedAt": "2026-10-18T12:32:15.988Z",
+      "duration": {
+        "minutes": 203,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

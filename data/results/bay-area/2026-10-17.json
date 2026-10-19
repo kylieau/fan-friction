@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-cal-football-401858269",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "california-memorial-stadium",
+      "homeTeamId": "cal-football",
+      "home": {
+        "name": "California",
+        "score": 7
+      },
+      "away": {
+        "name": "Wake Forest",
+        "score": 41
+      },
+      "capturedAt": "2026-10-18T12:32:13.640Z",
+      "duration": {
+        "minutes": 203,
+        "kind": "estimated"
+      },
+      "startedAt": "22:36"
+    },
+    {
+      "eventId": "2026-10-17-espn-earthquakes-761886",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "paypal-park",
+      "homeTeamId": "earthquakes",
+      "home": {
+        "name": "Earthquakes",
+        "score": 1
+      },
+      "away": {
+        "name": "Nashville SC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-18T12:32:13.640Z"
+    },
+    {
+      "eventId": "2026-10-17-espn-stanford-football-401858262",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "stanford-stadium",
+      "homeTeamId": "stanford-football",
+      "home": {
+        "name": "Stanford",
+        "score": 34
+      },
+      "away": {
+        "name": "Elon",
+        "score": 7
+      },
+      "attendance": 18940,
+      "capturedAt": "2026-10-18T12:32:13.640Z",
+      "duration": {
+        "minutes": 201,
+        "kind": "estimated"
+      },
+      "startedAt": "19:29"
+    },
+    {
+      "eventId": "2026-10-17-espn-valkyries-401918305",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "valkyries",
+      "home": {
+        "name": "Valkyries",
+        "score": 68
+      },
+      "away": {
+        "name": "Dream",
+        "score": 64
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-18T12:32:13.640Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "12:43"
+    }
+  ]
+}

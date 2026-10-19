@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-golden-knights-401892532",
+      "metroId": "las-vegas",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 6
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 2
+      },
+      "attendance": 17437,
+      "capturedAt": "2026-10-18T12:32:18.435Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-10-17-espn-las-vegas-lights-401842291",
+      "metroId": "las-vegas",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cashman-field",
+      "homeTeamId": "las-vegas-lights",
+      "home": {
+        "name": "Lights",
+        "score": 3
+      },
+      "away": {
+        "name": "Lexington",
+        "score": 5
+      },
+      "capturedAt": "2026-10-18T12:32:18.435Z"
+    }
+  ]
+}

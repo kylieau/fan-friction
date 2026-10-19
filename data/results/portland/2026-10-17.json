@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-timbers-761888",
+      "metroId": "portland",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "providence-park",
+      "homeTeamId": "timbers",
+      "home": {
+        "name": "Timbers",
+        "score": 0
+      },
+      "away": {
+        "name": "Rapids",
+        "score": 0
+      },
+      "capturedAt": "2026-10-18T12:32:21.284Z"
+    }
+  ]
+}

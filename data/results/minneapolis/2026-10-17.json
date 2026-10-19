@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-minnesota-united-761876",
+      "metroId": "minneapolis",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allianz-field",
+      "homeTeamId": "minnesota-united",
+      "home": {
+        "name": "MNUFC",
+        "score": 3
+      },
+      "away": {
+        "name": "CITY SC",
+        "score": 2
+      },
+      "attendance": 19616,
+      "capturedAt": "2026-10-18T12:32:19.590Z"
+    }
+  ]
+}

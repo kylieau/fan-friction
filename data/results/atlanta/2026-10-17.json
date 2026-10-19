@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-atlanta-united-761880",
+      "metroId": "atlanta",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "atlanta-united",
+      "home": {
+        "name": "Atlanta United",
+        "score": 1
+      },
+      "away": {
+        "name": "Inter Miami",
+        "score": 3
+      },
+      "capturedAt": "2026-10-18T12:32:13.367Z"
+    }
+  ]
+}

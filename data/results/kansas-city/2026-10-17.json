@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-sporting-kc-761884",
+      "metroId": "kansas-city",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sporting-park",
+      "homeTeamId": "sporting-kc",
+      "home": {
+        "name": "Sporting KC",
+        "score": 1
+      },
+      "away": {
+        "name": "Real Salt Lake",
+        "score": 3
+      },
+      "capturedAt": "2026-10-18T12:32:18.654Z"
+    }
+  ]
+}

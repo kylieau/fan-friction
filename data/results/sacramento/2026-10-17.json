@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-10-17",
+  "results": [
+    {
+      "eventId": "2026-10-17-espn-sac-state-football-401866445",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-stadium",
+      "homeTeamId": "sac-state-football",
+      "home": {
+        "name": "Sacramento St",
+        "score": 7
+      },
+      "away": {
+        "name": "Ohio",
+        "score": 48
+      },
+      "attendance": 17661,
+      "capturedAt": "2026-10-18T12:32:17.755Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    }
+  ]
+}
