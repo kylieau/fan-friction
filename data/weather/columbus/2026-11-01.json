@@ -20,6 +20,24 @@
       "shortwave": 5,
       "cloudCover": 5,
       "code": 0
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-11-01",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-19T15:17:11.600Z",
+      "feelsLikeF": 51.9,
+      "tempF": 52.7,
+      "humidity": 98,
+      "windMph": 3.6,
+      "uvIndex": 0,
+      "precipProbability": 34,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -46,6 +64,18 @@
       "code": 2,
       "precipProbability": 39,
       "precipMm": 0
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-11-01",
+      "basis": "forecast",
+      "capturedAt": "2026-10-19T15:17:11.600Z",
+      "feelsLikeHighF": 52.4,
+      "feelsLikeLowF": 42.3,
+      "code": 55,
+      "precipProbability": 39,
+      "precipMm": 9.3
     }
   ]
 }

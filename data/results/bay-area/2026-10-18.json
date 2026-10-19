@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-bay-fc-401854025",
+      "metroId": "bay-area",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "paypal-park",
+      "homeTeamId": "bay-fc",
+      "home": {
+        "name": "Bay FC",
+        "score": 2
+      },
+      "away": {
+        "name": "Thorns",
+        "score": 2
+      },
+      "attendance": 14451,
+      "capturedAt": "2026-10-19T15:21:02.602Z"
+    }
+  ]
+}

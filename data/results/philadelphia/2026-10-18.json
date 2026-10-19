@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-eagles-401872998",
+      "metroId": "philadelphia",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "eagles",
+      "home": {
+        "name": "Eagles",
+        "score": 14
+      },
+      "away": {
+        "name": "Carolina Panthers",
+        "score": 25
+      },
+      "attendance": 69879,
+      "capturedAt": "2026-10-19T15:21:04.442Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

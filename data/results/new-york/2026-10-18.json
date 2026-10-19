@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-ny-giants-401873000",
+      "metroId": "new-york",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-giants",
+      "home": {
+        "name": "Giants",
+        "score": 27
+      },
+      "away": {
+        "name": "Saints",
+        "score": 34
+      },
+      "attendance": 82905,
+      "capturedAt": "2026-10-19T15:21:01.880Z",
+      "duration": {
+        "minutes": 203,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-america-femenil-401924393",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "america-femenil",
+      "home": {
+        "name": "América",
+        "score": 2
+      },
+      "away": {
+        "name": "Pachuca",
+        "score": 1
+      },
+      "capturedAt": "2026-10-19T15:21:07.120Z"
+    },
+    {
+      "eventId": "2026-10-18-espn-pumas-femenil-401924370",
+      "metroId": "mexico-city",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-olimpico-universitario",
+      "homeTeamId": "pumas-femenil",
+      "home": {
+        "name": "Pumas",
+        "score": 1
+      },
+      "away": {
+        "name": "Atlas",
+        "score": 0
+      },
+      "capturedAt": "2026-10-19T15:21:07.120Z"
+    }
+  ]
+}

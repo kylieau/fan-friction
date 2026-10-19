@@ -1,0 +1,2050 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "metroName": "Minneapolis–St. Paul",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-19",
+  "capturedAt": "2026-10-19T15:20:25.733Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-19",
+    "through": "2026-11-02"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 39
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-20-tm-vvG1bZ_2Rq2gib",
+      "metroId": "minneapolis",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2Rq2gib",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1bZ_u14eza4",
+      "metroId": "minneapolis",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Indigo Girls",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Indigo Girls",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_u14eza4",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2181,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1bZ_2RqoAiP",
+      "metroId": "minneapolis",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2RqoAiP",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-22-espn-gophers-hockey-401905008",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Minnesota vs. North Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "north-dakota",
+        "awayOpponent": "north-dakota"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-10-22-tm-vv1AkZkosGkda0Txp",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Outlander In Concert: Echoes Through the Highlands",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Drama"
+      },
+      "performer": "Outlander in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkosGkda0Txp"
+    },
+    {
+      "id": "2026-10-22-tm-vvG1bZ_2Rq3AiE",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2Rq3AiE",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7xb4a",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Palace",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xb4a",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7xeG7",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sammy Rae",
+      "officialTitle": "Sammy Rae and The Friends with Melt (18+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-saint-paul"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Sammy Rae",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xeG7",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-gophers-hockey-401905009",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Minnesota vs. North Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "north-dakota",
+        "awayOpponent": "north-dakota"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-vv1AkZk3FGkdoPdYM",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Lucas Zelnick",
+      "place": {
+        "type": "venue",
+        "venueId": "pantages-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Lucas Zelnick",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZk3FGkdoPdYM"
+    },
+    {
+      "id": "2026-10-23-tm-vv1AkZkfxGkdPiTje",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dogstar",
+      "officialTitle": "Dogstar: ALL IN NOW TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dogstar",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkfxGkdPiTje",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1bZ_uJJByyc",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Indigo Girls",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Indigo Girls",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_uJJByyc",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2181,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7OwqO",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Zac Brown Band",
+      "officialTitle": "Zac Brown Band w/ Brothers Osborne",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Zac Brown Band",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OwqO",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-st-thomas-hockey-401904659",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:07",
+      "kind": "game",
+      "title": "St Thomas vs. Minnesota State",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "st-thomas-hockey",
+        "away": "minnesota-state",
+        "awayOpponent": "minnesota-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-vvG1bZ_2RqK4ii",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2RqK4ii",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1AAZdOt",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ryan Bingham",
+      "officialTitle": "Ryan Bingham and The Texas Gentlemen (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-saint-paul"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ryan Bingham",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZdOt",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7PfOY",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Sylvan Esso",
+      "officialTitle": "Sylvan Esso (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Sylvan Esso",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PfOY",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1bZ_2RqfPc7",
+      "metroId": "minneapolis",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2RqfPc7",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-24-espn-gophers-football-401858497",
+      "metroId": "minneapolis",
+      "date": "2026-10-24",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Minnesota vs. Iowa",
+      "broadcast": "FS1",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "gophers-football",
+        "away": "iowa",
+        "awayOpponent": "iowa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 46939,
+        "low": 46407,
+        "high": 48520,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv1FvOv0bSFdZ75828",
+      "metroId": "minneapolis",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Buena Vista Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Buena Vista Orchestra",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1FvOv0bSFdZ75828",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1bZ_1S0py1K",
+      "metroId": "minneapolis",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Steve Taylor",
+      "officialTitle": "Steve Taylor & Some Band w Special Guest The Choir",
+      "place": {
+        "type": "venue",
+        "venueId": "pantages-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "Steve Taylor",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_1S0py1K",
+      "expectedDraw": {
+        "count": 1014,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-vikings-401873014",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Vikings vs. Colts",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "vikings",
+        "away": "colts",
+        "awayOpponent": "colts"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66971,
+        "low": 66935,
+        "high": 66987,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1bZ_2Rq9gc-",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2Rq9gc-",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-25-espn-timberwolves-401909864",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Timberwolves vs. Raptors",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "raptors",
+        "awayOpponent": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19282,
+        "low": 18797,
+        "high": 19282,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-vvG1bZ_CrYgQkh",
+      "metroId": "minneapolis",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Thundercat",
+      "officialTitle": "Thundercat: Distracted AF Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Thundercat",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_CrYgQkh",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A70do-",
+      "metroId": "minneapolis",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "All Them Witches",
+      "officialTitle": "All Them Witches (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "All Them Witches",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70do-",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A70UGF",
+      "metroId": "minneapolis",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dresden Dolls",
+      "officialTitle": "The Dresden Dolls (18+ with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-saint-paul"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dresden Dolls",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70UGF",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-timberwolves-401909888",
+      "metroId": "minneapolis",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Timberwolves vs. Warriors",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "warriors",
+        "awayOpponent": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15507,
+        "low": 14854,
+        "high": 17366,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-minnesota-united-761913",
+      "metroId": "minneapolis",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "MNUFC vs. Sporting KC",
+      "place": {
+        "type": "venue",
+        "venueId": "allianz-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "minnesota-united",
+        "away": "sporting-kc",
+        "awayOpponent": "kansas-city"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19628,
+        "low": 18916,
+        "high": 19688,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7PKO4",
+      "metroId": "minneapolis",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "SIENNA SPIRO",
+      "officialTitle": "Sienna Spiro (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "SIENNA SPIRO",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PKO4",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7PkC4",
+      "metroId": "minneapolis",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dweezil Zappa",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-saint-paul"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dweezil Zappa",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PkC4",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-wild-401892607",
+      "metroId": "minneapolis",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wild vs. Islanders",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "islanders",
+        "awayOpponent": "islanders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16945,
+        "low": 16090,
+        "high": 16982,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAvA_o",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "special",
+      "title": "St. Thomas Tommies Womens Hockey vs. Minnesota State Mavericks Womens Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "St. Thomas Tommies Womens Hockey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvA_o"
+    },
+    {
+      "id": "2026-10-30-tm-vvG1bZ_2kNQGbu",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "18:15",
+      "kind": "show",
+      "title": "Ganja White Night",
+      "officialTitle": "Friday Pass: Ganja White Night - Wobbleween",
+      "place": {
+        "type": "venue",
+        "venueId": "minneapolis-armory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Ganja White Night",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2kNQGbu",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 8400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-timberwolves-401909284",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Timberwolves vs. Clippers",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18959,
+        "low": 18006,
+        "high": 18959,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 21 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAvaFp",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Parables Tour with Father Mike Schmitz",
+      "place": {
+        "type": "venue",
+        "venueId": "roy-wilkins-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Fr. Mike Schmitz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvaFp"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PdPf",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Tallest Man On Earth",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-saint-paul"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Tallest Man On Earth",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PdPf",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1bZ_2xL5QHc",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charlie Parr",
+      "officialTitle": "An Evening W/ Charlie Parr Ft. Dave King - Rooming House Album Release",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Charlie Parr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2xL5QHc",
+      "expectedDraw": {
+        "count": 2181,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1AkZkfkGkezQiQC",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Cristian Baca",
+      "officialTitle": "Reventón: Latin Halloween Party",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Cristian Baca",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkfkGkezQiQC",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-gophers-hockey-401923143",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "start": null,
+      "kind": "game",
+      "title": "Minnesota vs. Penn State",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "penn-state",
+        "awayOpponent": "penn-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AAvY_f",
+      "metroId": "minneapolis",
+      "date": "2026-10-31",
+      "start": "11:30",
+      "kind": "show",
+      "title": "The Rock and Roll Playhouse",
+      "officialTitle": "The Rock and Roll Playhouse presents Halloween Spectacular for Kids",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Rock and Roll Playhouse",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvY_f",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1bZ_52L-SDH",
+      "metroId": "minneapolis",
+      "date": "2026-10-31",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot US Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_52L-SDH",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1bZ_2k0fGN2",
+      "metroId": "minneapolis",
+      "date": "2026-10-31",
+      "start": "18:15",
+      "kind": "show",
+      "title": "Ganja White Night",
+      "officialTitle": "Saturday Pass: Ganja White Night - Wobbleween",
+      "place": {
+        "type": "venue",
+        "venueId": "minneapolis-armory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Ganja White Night",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2k0fGN2",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 8400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PPo7",
+      "metroId": "minneapolis",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Ella Langley",
+      "officialTitle": "Ella Langley w/ Kameron Marlowe",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ella Langley",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPo7",
+      "expectedDraw": {
+        "count": 11716,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-gophers-hockey-401923145",
+      "metroId": "minneapolis",
+      "date": "2026-10-31",
+      "start": null,
+      "kind": "game",
+      "title": "Minnesota vs. Penn State",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "penn-state",
+        "awayOpponent": "penn-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-01-tm-vv1AkZk3aGkeivme6",
+      "metroId": "minneapolis",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZk3aGkeivme6",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7044k",
+      "metroId": "minneapolis",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Allison Russell",
+      "officialTitle": "Allison Russell (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Allison Russell",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7044k",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-vv1AkZkfwGkec3C4s",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Trippie Redd",
+      "officialTitle": "Trippie Redd - The Non-disclosure Agreement Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Trippie Redd",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkfwGkec3C4s",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-timberwolves-401909915",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Timberwolves vs. Bucks",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "bucks",
+        "awayOpponent": "bucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17988,
+        "low": 17988,
+        "high": 18226,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAZwba",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZwba",
+      "expectedDraw": {
+        "count": 11716,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7xpQ3",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Damned",
+      "officialTitle": "The Damned (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Damned",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpQ3",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-gophers-mbb-401916303",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Minnesota vs. North Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "williams-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gophers-mbb",
+        "away": "north-dakota",
+        "awayOpponent": "north-dakota"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 7132,
+        "low": 7054,
+        "high": 7401,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-gophers-wbb-401913855",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Minnesota vs. Harvard",
+      "place": {
+        "type": "venue",
+        "venueId": "williams-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gophers-wbb",
+        "away": "harvard",
+        "awayOpponent": "harvard"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2946,
+        "low": 2781,
+        "high": 2973,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-20-tm-vvG1bZ_2Rq2gib",
+      "date": "2026-10-20",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1bZ_u14eza4",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "draw": {
+        "count": 2181
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1bZ_2RqoAiP",
+      "date": "2026-10-21",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-22-espn-gophers-hockey-401905008",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv1AkZkosGkda0Txp",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1bZ_2Rq3AiE",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7xb4a",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7xeG7",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-gophers-hockey-401905009",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Zac Brown Band w/ Brothers Osbo… 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AkZk3FGkdoPdYM",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AkZkfxGkdPiTje",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1bZ_uJJByyc",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2181
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7OwqO",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "North Dakota at Minnesota (MHKY) 2.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11685
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-st-thomas-hockey-401904659",
+      "date": "2026-10-23",
+      "start": "19:07",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1bZ_2RqK4ii",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1AAZdOt",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7PfOY",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1bZ_2RqfPc7",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-gophers-football-401858497",
+      "date": "2026-10-24",
+      "start": "14:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 46939,
+        "low": 46407,
+        "high": 48520
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv1FvOv0bSFdZ75828",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1bZ_1S0py1K",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1014
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-vikings-401873014",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66971,
+        "low": 66935,
+        "high": 66987
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1bZ_2Rq9gc-",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-timberwolves-401909864",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Colts at Vikings 0.9 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19282,
+        "low": 18797,
+        "high": 19282
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-vvG1bZ_CrYgQkh",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A70do-",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A70UGF",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-timberwolves-401909888",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Sporting KC at MNUFC 5.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15507,
+        "low": 14854,
+        "high": 17366
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-minnesota-united-761913",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Warriors at Timberwolves 5.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19628,
+        "low": 18916,
+        "high": 19688
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7PKO4",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7PkC4",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-wild-401892607",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16945,
+        "low": 16090,
+        "high": 16982
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAvA_o",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Clippers at Timberwolves 4.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1bZ_2kNQGbu",
+      "date": "2026-10-30",
+      "start": "18:15",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Clippers at Timberwolves 0.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8400
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-timberwolves-401909284",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Friday Pass: Ganja White Night… 0.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18959,
+        "low": 18006,
+        "high": 18959
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAvaFp",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PdPf",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1bZ_2xL5QHc",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2181
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AkZkfkGkezQiQC",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-gophers-hockey-401923143",
+      "date": "2026-10-30",
+      "start": null,
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Clippers at Timberwolves 2.3 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AAvY_f",
+      "date": "2026-10-31",
+      "start": "11:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1bZ_52L-SDH",
+      "date": "2026-10-31",
+      "start": "17:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1bZ_2k0fGN2",
+      "date": "2026-10-31",
+      "start": "18:15",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Ella Langley w/ Kameron Marlowe 8.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PPo7",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Saturday Pass: Ganja White Nigh… 8.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11716
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-gophers-hockey-401923145",
+      "date": "2026-10-31",
+      "start": null,
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Ella Langley w/ Kameron Marlowe 6.6 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv1AkZk3aGkeivme6",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11685
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7044k",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vv1AkZkfwGkec3C4s",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-timberwolves-401909915",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Jonas Brothers 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17988,
+        "low": 17988,
+        "high": 18226
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAZwba",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Bucks at Timberwolves 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11716
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7xpQ3",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-gophers-mbb-401916303",
+      "date": "2026-11-02",
+      "start": null,
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Bucks at Timberwolves 2.3 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7132,
+        "low": 7054,
+        "high": 7401
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-gophers-wbb-401913855",
+      "date": "2026-11-02",
+      "start": null,
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2946,
+        "low": 2781,
+        "high": 2973
+      }
+    }
+  ]
+}

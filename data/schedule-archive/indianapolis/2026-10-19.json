@@ -1,0 +1,945 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "metroName": "Indianapolis",
+  "timeZone": "America/Indiana/Indianapolis",
+  "capturedOn": "2026-10-19",
+  "capturedAt": "2026-10-19T15:20:16.428Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-19",
+    "through": "2026-11-02"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 22
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-20-tm-vvG1fZ_1XMUioK",
+      "metroId": "indianapolis",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1XMUioK",
+      "expectedDraw": {
+        "count": 10416,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1fZ_1QXqepe",
+      "metroId": "indianapolis",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Rocky Horror Picture Show Spooktacular Tour with Barry Bostwick",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Music"
+      },
+      "performer": "The Rocky Horror Picture Show",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1QXqepe"
+    },
+    {
+      "id": "2026-10-21-tm-vv1AAZkoJGkdxp3XH",
+      "metroId": "indianapolis",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Buena Vista Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Buena Vista Orchestra",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkoJGkdxp3XH",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1fZ_1rxsHuf",
+      "metroId": "indianapolis",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nurse John: Against Medical Advice Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nurse John",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1rxsHuf"
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7-YuI",
+      "metroId": "indianapolis",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gavin Adcock",
+      "officialTitle": "Gavin Adcock w/ Pecos and The Rooftops",
+      "place": {
+        "type": "venue",
+        "venueId": "fishers-event-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Gavin Adcock",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-YuI",
+      "expectedDraw": {
+        "count": 7500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vv1AAZkobGkeULrRX",
+      "metroId": "indianapolis",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sting",
+      "officialTitle": "STING 3.0 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sting",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkobGkeULrRX",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-pacers-401909844",
+      "metroId": "indianapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pacers vs. Mavericks",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "mavericks",
+        "awayOpponent": "mavericks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-10-23-tm-vvG1fZ_CkbvgHC",
+      "metroId": "indianapolis",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nateland Live: A Good Clean Comedy Show",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nateland Live",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CkbvgHC"
+    },
+    {
+      "id": "2026-10-23-tm-vv1AAZkobGkeUOCYQ",
+      "metroId": "indianapolis",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sting",
+      "officialTitle": "STING 3.0 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sting",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkobGkeUOCYQ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1fZ_2xrD9pp",
+      "metroId": "indianapolis",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Ali Siddiq: The Custom Fit Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ali Siddiq",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_2xrD9pp"
+    },
+    {
+      "id": "2026-10-24-tm-vvG1fZ_G1SBGiQ",
+      "metroId": "indianapolis",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Wheeler Walker Jr.",
+      "officialTitle": "Wheeler Walker Jr. - Pullin' Out: The Farewell Tour with Colton Bowlin",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Wheeler Walker Jr.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_G1SBGiQ",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vv1AAZkoVGkeYBto5",
+      "metroId": "indianapolis",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Outlander in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Drama"
+      },
+      "performer": "Outlander in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkoVGkeYBto5"
+    },
+    {
+      "id": "2026-10-25-tm-vv1AAZk3bGkdCzUlb",
+      "metroId": "indianapolis",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Josh Gates Haunted Expeditions Live!",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Josh Gates",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk3bGkdCzUlb"
+    },
+    {
+      "id": "2026-10-27-tm-vv17fZ_kGkmhx6vd",
+      "metroId": "indianapolis",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_kGkmhx6vd",
+      "expectedDraw": {
+        "count": 10416,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-pacers-401909884",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pacers vs. 76ers",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "sixers",
+        "awayOpponent": "76ers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-29-tm-vvG1fZ_G63WqaK",
+      "metroId": "indianapolis",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Rocky in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Music"
+      },
+      "performer": "Rocky in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_G63WqaK"
+    },
+    {
+      "id": "2026-10-29-tm-vv1AAZkfzGkdQ_sck",
+      "metroId": "indianapolis",
+      "date": "2026-10-29",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Noche Latina",
+      "officialTitle": "¡NOCHE LATINA! (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Noche Latina",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkdQ_sck",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1AAZkoyGkdqWcAR",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "William Shatner Live On-stage with Star Trek II: The Wrath of Khan",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "William Shatner",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkoyGkdqWcAR"
+    },
+    {
+      "id": "2026-10-30-tm-vvG1fZ_1BNRb1N",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shakey Graves",
+      "officialTitle": "Shakey Graves - Fondness, Etc. Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Shakey Graves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1BNRb1N",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AAZk4kGkd4vlpl",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "special",
+      "title": "VIP Soundcheck Party - The Living Tombstone - Not a Concert Ticket**",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "LN Artist Upsell",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk4kGkd4vlpl"
+    },
+    {
+      "id": "2026-10-31-tm-vv1AAZko9Gkdr_jSx",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "officialTitle": "The Living Tombstone - The Multiplayer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZko9Gkdr_jSx",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AAZkfxGkdBefvq",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "show",
+      "title": "It's A 2000's Party",
+      "officialTitle": "It's A 2000's (Halloween) Party: Indianapolis",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "It's A 2000's Party",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfxGkdBefvq",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vv17fZ_aGkS1zCd-",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Elmo's Got the Moves",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Sesame Street Live",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_aGkS1zCd-"
+    },
+    {
+      "id": "2026-11-01-espn-pacers-401909904",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Pacers vs. Nets",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "nets",
+        "awayOpponent": "nets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-01-tm-vv1AAZk3vGkeysDCl",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Phil Collins Story",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Phil Collins Story",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk3vGkeysDCl",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-butler-wbb-401920251",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Butler vs. Tennessee Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "butler-wbb",
+        "away": "tennessee-tech",
+        "awayOpponent": "tennessee-tech"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-11-02-espn-butler-mbb-401902275",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. Lafayette",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "butler-mbb",
+        "away": "lafayette",
+        "awayOpponent": "lafayette"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-11-02-espn-pacers-401909909",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Pacers vs. Hawks",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "hawks",
+        "awayOpponent": "hawks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-20-tm-vvG1fZ_1XMUioK",
+      "date": "2026-10-20",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10416
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1fZ_1QXqepe",
+      "date": "2026-10-21",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-21-tm-vv1AAZkoJGkdxp3XH",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1fZ_1rxsHuf",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7-YuI",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7500
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv1AAZkobGkeULrRX",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-pacers-401909844",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1fZ_CkbvgHC",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AAZkobGkeUOCYQ",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1fZ_2xrD9pp",
+      "date": "2026-10-24",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1fZ_G1SBGiQ",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vv1AAZkoVGkeYBto5",
+      "date": "2026-10-25",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-10-25-tm-vv1AAZk3bGkdCzUlb",
+      "date": "2026-10-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-27-tm-vv17fZ_kGkmhx6vd",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10416
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-pacers-401909884",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1fZ_G63WqaK",
+      "date": "2026-10-29",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-vv1AAZkfzGkdQ_sck",
+      "date": "2026-10-29",
+      "start": "21:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AAZkoyGkdqWcAR",
+      "date": "2026-10-30",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1fZ_1BNRb1N",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AAZk4kGkd4vlpl",
+      "date": "2026-10-31",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AAZko9Gkdr_jSx",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AAZkfxGkdBefvq",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv17fZ_aGkS1zCd-",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-pacers-401909904",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv1AAZk3vGkeysDCl",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-butler-wbb-401920251",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-butler-mbb-401902275",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Hawks at Pacers 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-pacers-401909909",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Lafayette at Butler (MBB · Home opener) 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    }
+  ]
+}

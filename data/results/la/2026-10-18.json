@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-rams-401873004",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sofi-stadium",
+      "homeTeamId": "rams",
+      "home": {
+        "name": "Rams",
+        "score": 16
+      },
+      "away": {
+        "name": "Cardinals",
+        "score": 18
+      },
+      "attendance": 72573,
+      "capturedAt": "2026-10-19T15:21:00.652Z",
+      "duration": {
+        "minutes": 174,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    }
+  ]
+}
