@@ -5,10 +5,10 @@
 import { degreesFor } from '../../config/metros';
 import { formatScore } from '../../config/scoreLabels';
 import { listTitle } from '../../lib/eventTitle';
-import { listedCapacity } from '../read';
+import { eventFeedsFriction, listedCapacity } from '../read';
 import type { CrowdEvent } from '../types';
 import { weatherForEvent } from '../weather';
-import { dateCrowdFight, eventFeedsFriction, leftOut, type DateCrowdFight } from './crowdFight';
+import { dateCrowdFight, leftOut, type DateCrowdFight } from './crowdFight';
 import { dateConditions, eventConditions, type EventConditions, weatherGlyph } from './weather';
 import { dateGridlock, gridlockWhy, type DateGridlock } from './gridlock';
 
