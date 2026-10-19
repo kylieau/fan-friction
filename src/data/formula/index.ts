@@ -55,6 +55,10 @@ export function combine(scores: number[]): number {
  */
 function crowdFightWhy(cf: DateCrowdFight): string {
   const big = cf.events.filter((row) => row.competitors.length > 0);
+  // By count (Kylie, Oct 19, 2026; R10): "else" had no anchor. Two or more big events that never overlap keep the
+  // old sentence, the one case it still fits.
+  if (cf.events.length === 0) return 'Nothing big that date.';
+  if (cf.events.length === 1) return 'One big event that date.';
   if (cf.contestedSeats < 1000 || big.length === 0) return 'Nothing else big that date.';
   const n = cf.events.filter((row) => !leftOut(row.event) && row.competitors.length > 0).length;
   const puller = cf.topPuller;

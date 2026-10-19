@@ -26,7 +26,9 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
   // under the timed bars, each across the whole axis, so a day's biggest crowd is never missing from its timeline
   // (Kylie, Oct 16: the band).
   const untimed = big.filter((e) => !e.start).sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
-  if (big.length < 2) return <p className="timeline-quiet">No other big events that day.</p>;
+  // The quiet-day line by count (Kylie, Oct 19, 2026, superseding her Oct 16 Q9 sentence "No other big events that
+  // day.", whose "other" had no anchor on a date page; tester-readiness review R10).
+  if (big.length < 2) return <p className="timeline-quiet">{big.length === 0 ? 'Nothing big that day.' : 'One big event that day.'}</p>;
   if (timed.length === 0) {
     return (
       <div className="day-timeline" aria-label="Timeline">
