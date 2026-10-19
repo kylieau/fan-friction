@@ -1154,13 +1154,14 @@ function homeOpenerId(games: EspnGame[], espnId: string): string | undefined {
   return home[0]?.id;
 }
 
-function upcomingFor(metroId: string, strict = false): Promise<CrowdEvent[]> {
+function upcomingFor(metroId: string, strict = false, fromDate?: LocalDate): Promise<CrowdEvent[]> {
   if (!strict) {
     const hit = cache.get(metroId);
     if (hit) return hit;
   }
   const tz = METROS[metroId].timeZone;
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
+  // From today, unless the nightly pass asks for the last few days too (so a game the feed dropped after its day leaves the catalog).
+  const today = fromDate ?? new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
 
   const p = Promise.all(
@@ -1285,8 +1286,8 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
  * The map does not call this: it uses `espnEvents`, which still returns an
  * empty list when a feed is down.
  */
-export function loadEspnSchedule(metroId: string): Promise<CrowdEvent[]> {
-  return upcomingFor(metroId, true);
+export function loadEspnSchedule(metroId: string, fromDate?: LocalDate): Promise<CrowdEvent[]> {
+  return upcomingFor(metroId, true, fromDate);
 }
 
 /** The dates of a team's home games in its own city over past seasons (scripts/past-dates-load.mjs --teams). Null for a team this feed doesn't carry. */

@@ -18,6 +18,9 @@ const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slic
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const dryRun = process.argv.includes('--dry-run');
+/** The feeds that keep listing a game after its day (with its result), so the pass can tell a dropped game from a past one. */
+const GAME_FEEDS = ['mlb', 'espn', 'hockeytech'];
+const GAME_FEED_BACK_DAYS = 7;
 
 if (!url || !key) {
   console.log('Catalog write skipped: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are not set.');
@@ -87,12 +90,17 @@ try {
   for (const metroId of metroIds) {
   const now = new Date().toISOString();
   const counts = {};
+  const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
+  // The game feeds are read from a week back, not from today: a game the league drops after its own day (an
+  // "if necessary" game once the series ends, a rainout called in the afternoon) then leaves the catalog on the
+  // next pass instead of sitting on a past date for good (Kylie, Oct 19, 2026: NLCS Game 5 never happened).
+  const floorLocal = new Date(new Date(`${todayLocal}T12:00:00Z`).getTime() - GAME_FEED_BACK_DAYS * 86_400_000).toISOString().slice(0, 10);
 
-  // 1. The catalog: every upcoming home game the feeds list, plus the hand-seeded nights.
+  // 1. The catalog: every home game the feeds list from a week back, plus the hand-seeded nights.
   const [mlb, espn, ht, seed, tm] = await Promise.all([
-    loadMlbSchedule(metroId),
-    loadEspnSchedule(metroId),
-    loadHockeytechSchedule(metroId).catch(() => []),
+    loadMlbSchedule(metroId, undefined, floorLocal),
+    loadEspnSchedule(metroId, floorLocal),
+    loadHockeytechSchedule(metroId, floorLocal).catch(() => []),
     seedEvents.catalog(metroId),
     tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], bigRoomSpecials: [], pages: 0 }),
   ]);
@@ -137,22 +145,20 @@ try {
   const seen = new Set();
   const events = dropTicketmasterGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...tm.events, ...sg].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
   counts.events = await upsert('events', events, 'id');
-  // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds and past dates stay.
+  // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds stay. The game feeds
+  // (MLB, ESPN, HockeyTech) still list last week's games, so their stale rows are cleared from a week back; the
+  // sellers drop past listings, so theirs are cleared from today only and past rows stay.
   // Every row this pass kept was just stamped `captured_at: now`, so a stale row is one this city's pass stamped
   // earlier. This relies on `upsert` rewriting every supplied column on conflict (it does: no `ignoreDuplicates`);
   // a kept row that kept its old stamp would be deleted here. (Listing every kept id in the request instead broke on Oct 16, 2026: Los Angeles passed about 670
   // events and the address grew past what Supabase accepts, so no city's catalog was written that night.)
   if (!dryRun) {
-    const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
-    const { error, count } = await db
-      .from('events')
-      .delete({ count: 'exact' })
-      .eq('metro_id', metroId)
-      .neq('source_id', 'seed')
-      .gte('date', todayLocal)
-      .lt('captured_at', now);
-    if (error) throw new Error(`events (stale): ${error.message}`);
-    counts.events_removed = count ?? 0;
+    const stale = (q, from) => q.eq('metro_id', metroId).gte('date', from).lt('captured_at', now);
+    const games = await stale(db.from('events').delete({ count: 'exact' }).in('source_id', GAME_FEEDS), floorLocal);
+    if (games.error) throw new Error(`events (stale games): ${games.error.message}`);
+    const rest = await stale(db.from('events').delete({ count: 'exact' }).not('source_id', 'in', `(${['seed', ...GAME_FEEDS].map((id) => `"${id}"`).join(',')})`), todayLocal);
+    if (rest.error) throw new Error(`events (stale): ${rest.error.message}`);
+    counts.events_removed = (games.count ?? 0) + (rest.count ?? 0);
   }
 
   // 2. Results.

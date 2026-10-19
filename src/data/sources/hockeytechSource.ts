@@ -221,13 +221,14 @@ function toEvent(g: HtGame, t: (typeof HOCKEYTECH_TEAMS)[number], playoffs: bool
 
 const cache = new Map<string, Promise<CrowdEvent[]>>();
 
-async function upcomingFor(metroId: string, strict: boolean): Promise<CrowdEvent[]> {
+async function upcomingFor(metroId: string, strict: boolean, fromDate?: LocalDate): Promise<CrowdEvent[]> {
   if (!strict) {
     const hit = cache.get(metroId);
     if (hit) return hit;
   }
   const tz = METROS[metroId].timeZone;
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
+  // From today, unless the nightly pass asks for the last few days too.
+  const today = fromDate ?? new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
   const p = Promise.all(
     HOCKEYTECH_TEAMS.filter((t) => t.metroId === metroId).map(async (t) => {
@@ -259,8 +260,8 @@ async function upcomingFor(metroId: string, strict: boolean): Promise<CrowdEvent
 }
 
 /** Home games for the metro. Throws if a club's feed cannot be read. */
-export function loadHockeytechSchedule(metroId: string): Promise<CrowdEvent[]> {
-  return upcomingFor(metroId, true);
+export function loadHockeytechSchedule(metroId: string, fromDate?: LocalDate): Promise<CrowdEvent[]> {
+  return upcomingFor(metroId, true, fromDate);
 }
 
 /** Finished home games between two dates, with the score and the announced crowd. */
