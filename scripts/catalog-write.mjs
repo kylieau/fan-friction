@@ -97,17 +97,27 @@ try {
   const floorLocal = new Date(new Date(`${todayLocal}T12:00:00Z`).getTime() - GAME_FEED_BACK_DAYS * 86_400_000).toISOString().slice(0, 10);
 
   // 1. The catalog: every home game the feeds list from a week back, plus the hand-seeded nights.
+  // A feed that fails is carried on without, and its rows already in the catalog are left as they were: the stale-row
+  // cleanup below skips a failed feed, since an empty read is not a feed saying the games are gone (gap review G7,
+  // Oct 19, 2026: a HockeyTech outage would have cleared the past week's hockey games). MLB and ESPN throw and stop
+  // the city's pass, so nothing of theirs is written or deleted that night.
+  const failedFeeds = new Set();
   const [mlb, espn, ht, seed, tm] = await Promise.all([
     loadMlbSchedule(metroId, undefined, floorLocal),
     loadEspnSchedule(metroId, floorLocal),
-    loadHockeytechSchedule(metroId, floorLocal).catch(() => []),
+    loadHockeytechSchedule(metroId, floorLocal).catch((error) => {
+      failedFeeds.add('hockeytech');
+      console.log(`${metroId}: HockeyTech failed (${error.message}); kept the rest, its rows untouched.`);
+      return [];
+    }),
     seedEvents.catalog(metroId),
     tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], bigRoomSpecials: [], pages: 0 }),
   ]);
   // A new source failing must not cost the city its night: log it and carry on without it.
   const sgAll = sgKey
     ? await loadSeatgeekEvents(metroId, sgKey).catch((error) => {
-        console.log(`${metroId}: SeatGeek failed (${error.message}); kept the rest.`);
+        failedFeeds.add('seatgeek');
+        console.log(`${metroId}: SeatGeek failed (${error.message}); kept the rest, its rows untouched.`);
         return [];
       })
     : [];
@@ -152,11 +162,14 @@ try {
   // earlier. This relies on `upsert` rewriting every supplied column on conflict (it does: no `ignoreDuplicates`);
   // a kept row that kept its old stamp would be deleted here. (Listing every kept id in the request instead broke on Oct 16, 2026: Los Angeles passed about 670
   // events and the address grew past what Supabase accepts, so no city's catalog was written that night.)
+  // A feed that failed tonight is skipped on both deletes (see step 1): its rows keep their old stamp and stay.
   if (!dryRun) {
     const stale = (q, from) => q.eq('metro_id', metroId).gte('date', from).lt('captured_at', now);
-    const games = await stale(db.from('events').delete({ count: 'exact' }).in('source_id', GAME_FEEDS), floorLocal);
+    const gameFeeds = GAME_FEEDS.filter((id) => !failedFeeds.has(id));
+    const games = await stale(db.from('events').delete({ count: 'exact' }).in('source_id', gameFeeds), floorLocal);
     if (games.error) throw new Error(`events (stale games): ${games.error.message}`);
-    const rest = await stale(db.from('events').delete({ count: 'exact' }).not('source_id', 'in', `(${['seed', ...GAME_FEEDS].map((id) => `"${id}"`).join(',')})`), todayLocal);
+    const kept = ['seed', ...GAME_FEEDS, ...failedFeeds];
+    const rest = await stale(db.from('events').delete({ count: 'exact' }).not('source_id', 'in', `(${kept.map((id) => `"${id}"`).join(',')})`), todayLocal);
     if (rest.error) throw new Error(`events (stale): ${rest.error.message}`);
     counts.events_removed = (games.count ?? 0) + (rest.count ?? 0);
   }
