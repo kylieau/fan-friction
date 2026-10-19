@@ -179,11 +179,11 @@ export function DateScreen() {
     );
   }
 
-  // "Verdict" until the stamp locks, 24 hours after the last start (Kylie, Oct 14: was "Forecast", which read like the
-  // weather forecast on the same page). A settled read carries no label
-  // (build notes 2, section 1): how it settled, and any revision, sits behind the (i).
+  // The card's heading is "Verdict", the name of the date's number and word (Kylie, Oct 19, 2026), on every date with
+  // one: settled dates too, which carried no label from Oct 14 to Oct 19 (when "Verdict" only replaced "Forecast" on
+  // upcoming dates). How a settled verdict settled, and any revision, sits behind the (i).
   const locked = !ahead && isStampLocked(asMetroDate(metro.id, date, events), metro.timeZone);
-  const readKind = rating && !locked ? 'Verdict' : null;
+  const readKind = rating ? 'Verdict' : null;
   // A settled night shows the read as it was saved, never today's recomputation (3.15).
   const saved = locked ? savedNightRead(metro.id, date, events) : null;
   const shownRating = saved?.rating ?? rating?.rating ?? null;
