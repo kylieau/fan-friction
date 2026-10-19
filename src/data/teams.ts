@@ -38,32 +38,46 @@ export function teamCode(team: Team): string {
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
-/** A school's program, not a club: college and university leagues. */
+/** A school's program, not a club: college, community college and university leagues. */
 export function isCollegeTeam(team: Team): boolean {
-  return /^(college|u sports|ncaa)/i.test(team.league);
+  return /^(college|community college|u sports|ncaa)/i.test(team.league);
+}
+
+/**
+ * Which side a college program is, read from its league or its full name ("College women's basketball", "Marquette
+ * Golden Eagles Women's Volleyball"); null when neither says (found Oct 19, 2026: four women's volleyball programs
+ * stored under the plain league "College volleyball" were being written as men's). Never guessed from the sport.
+ */
+export function programSide(team: Team): 'men' | 'women' | null {
+  const text = `${team.league} ${team.name}`;
+  if (/\bwomen'?s?\b/i.test(text)) return 'women';
+  if (/\bmen'?s?\b/i.test(text)) return 'men';
+  return null;
 }
 
 /**
  * The sport code a college program carries after its school (Kylie, Oct 19, 2026: her own list, not the NCAA's;
- * volleyball by analogy): "UCLA FB", "UCLA MBB", "UCLA WBB", "UCLA MIH", "UCLA BSB", "UCLA SB", "UCLA MSOC".
+ * volleyball by analogy): "UCLA FB", "UCLA MBB", "UCLA WBB", "UCLA MIH", "UCLA BSB", "UCLA SB", "UCLA MSOC". A
+ * program whose side is not on file takes the sport's bare code ("BB", "VB", "IH", "SOC") rather than a guessed one.
  */
 export function sportLetters(team: Team): string | null {
-  const women = /women/i.test(team.league);
+  const side = programSide(team);
+  const sided = (men: string, women: string, bare: string) => (side === 'women' ? women : side === 'men' ? men : bare);
   switch (team.sport) {
     case 'football':
       return 'FB';
     case 'basketball':
-      return women ? 'WBB' : 'MBB';
+      return sided('MBB', 'WBB', 'BB');
     case 'baseball':
       return 'BSB';
     case 'softball':
       return 'SB';
     case 'volleyball':
-      return women ? 'WVB' : 'MVB';
+      return sided('MVB', 'WVB', 'VB');
     case 'hockey':
-      return women ? 'WIH' : 'MIH';
+      return sided('MIH', 'WIH', 'IH');
     case 'soccer':
-      return women ? 'WSOC' : 'MSOC';
+      return sided('MSOC', 'WSOC', 'SOC');
     default:
       return null;
   }
@@ -94,25 +108,28 @@ const TRAILING_CODE = /\s+(?:(?:men's|women's)\s+)?(FB|CFB|MBB|WBB|BSB|SB|VB|MVB
  * club whose name does not end in its nickname keeps its full name ("Angel City FC"). A college program is its
  * school and sport code ("UCLA FB", "Marquette WBB"), computed from the sport, never from the stored short name.
  */
-/** The sport in words for a college program's long name: "Football", "Men's Basketball", "Women's Ice Hockey". */
+/**
+ * The sport in words for a college program's long name: "Football", "Men's Basketball", "Women's Ice Hockey". A
+ * program whose side is not on file reads the sport alone ("Texas Volleyball"), never a guessed "Men's".
+ */
 function sportWords(team: Team): string {
-  const women = /women/i.test(team.league);
-  const side = women ? "Women's" : "Men's";
+  const side = programSide(team);
+  const sided = (sport: string) => (side === 'women' ? `Women's ${sport}` : side === 'men' ? `Men's ${sport}` : sport);
   switch (team.sport) {
     case 'football':
       return 'Football';
     case 'basketball':
-      return `${side} Basketball`;
+      return sided('Basketball');
     case 'baseball':
       return 'Baseball';
     case 'softball':
       return 'Softball';
     case 'volleyball':
-      return `${side} Volleyball`;
+      return sided('Volleyball');
     case 'hockey':
-      return `${side} Ice Hockey`;
+      return sided('Ice Hockey');
     case 'soccer':
-      return `${side} Soccer`;
+      return sided('Soccer');
     default:
       return team.sport.charAt(0).toUpperCase() + team.sport.slice(1);
   }
