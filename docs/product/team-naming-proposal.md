@@ -63,7 +63,7 @@ A college game on an Explore or date row already writes its sport in words on it
 
 **C2. Compact forms for long schools** (the research's U of T, UdeM, Miami (FL) / Miami (OH)). Recommendation: a `compactSchool` field, filled only for the handful that need it, used on chips and the 12.5 px lead line. Not worth a field until a long school is actually on file: today's longest school words are "Kennesaw State", "San José State", "Detroit Mercy" and "Sacramento City", which fit the lead line, so this can wait for the first Canadian or Ohio build that needs it.
 
-**C3. The side (men's / women's) as a stored value, not a guess.** See section 4. Ten programs have no side on file. Recommendation: she fills the ten rows below once, and the rule never guesses again.
+**C3. The side (men's / women's) as a stored value, not a guess.** See section 4. Seven programs have no side on file. Recommendation: she fills the seven rows below once, and the rule never guesses again.
 
 **C4. The rest of the research's field model** (`entity_kind`, `brand_geography`, `club_nickname`, `badge_text_override`, `squad`, aliases with language tags, `spoken_name_override`, provenance and history). Recommendation: not now. C1 and C3 cover every visible problem on file; aliases already exist; the badge override is covered by the existing scoreboard code field. Revisit when a city build hits a case the three fields cannot express.
 
@@ -71,7 +71,7 @@ A college game on an Explore or date row already writes its sport in words on it
 
 **Four women's volleyball programs were written as men's.** Marquette, Milwaukee, Sacramento State and Minnesota women's volleyball were stored under the plain league "College volleyball", and the Oct 19 rule read the side from the league string alone, so their long names said "Men's Volleyball". Fixed: the side is read from the league or the full name, and a program whose side neither says reads its sport alone ("Texas Volleyball") rather than a guessed "Men's". Also fixed: "Community college football" (Sacramento City College) now counts as a college program, so it reads "Sac City Football" instead of its whole 41-character name.
 
-**Ten programs now read the sport alone, because nothing on file says their side.** For Kylie, or whoever runs the next data pass, to fill (this is C3):
+**Seven programs now read the sport alone, because nothing on file says their side.** For Kylie, or whoever runs the next data pass, to fill (this is C3):
 
 | Program | Today | Likely answer (unverified) |
 |---|---|---|
@@ -98,5 +98,5 @@ The research notes that the house rule says 11 **pt** while the app's sizes are 
 4. A5: no nickname line on college headers for now (recommended)?
 5. B1: keep the code on a clashing chip (recommended), or see a screenshot of the two word options?
 6. C1: go ahead with one reviewed school word per program (recommended; a data pass, nothing on screen changes except the wrong words above)?
-7. C3: the ten sides in section 4; any she knows now?
+7. C3: the seven sides in section 4; any she knows now?
 8. Section 5: does 11 pt mean 11 CSS px, and do the 12.5 px lines stand?
