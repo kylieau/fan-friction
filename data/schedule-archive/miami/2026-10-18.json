@@ -821,7 +821,7 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 10,
+        "rating": 1.5,
         "friction": "Low",
         "why": "The Doobie Brothers 23 mi away, same hours.",
         "method": "formula"
@@ -837,7 +837,7 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 10,
+        "rating": 1.5,
         "friction": "Low",
         "why": "MTSU at FIU 23 mi away, same hours.",
         "method": "formula"
