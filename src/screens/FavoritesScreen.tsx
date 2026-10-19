@@ -47,6 +47,12 @@ function browseTree(): { sport: string; leagues: { league: string; teams: Favori
     }));
 }
 
+/** Every name a favorite is found by, lower-cased: its label and long name, and a team's short name, full name and aliases. */
+function searchNames(fav: Favorite): string[] {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  return [fav.label, favoriteLongName(fav), ...(team ? [team.shortName, team.name, ...(team.aliases ?? [])] : [])].map((n) => n.toLowerCase());
+}
+
 const KINDS: { kind: FavoriteKind; label: string }[] = [
   { kind: 'team', label: 'Team' },
   { kind: 'artist', label: 'Artist' },
@@ -86,9 +92,11 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     if (!q) return [];
     const seen = new Set<string>();
     const out: Favorite[] = [];
+    // A favorite matches on any name it is known by: the words on its row, the stored short and full names and
+    // the aliases (found Oct 19, 2026: "UCLA Football", the words on screen, matched nothing and offered a ghost).
     const add = (fav: Favorite) => {
       const key = favoriteKey(fav);
-      if (!seen.has(key) && fav.label.toLowerCase().includes(q)) {
+      if (!seen.has(key) && searchNames(fav).some((name) => name.includes(q))) {
         seen.add(key);
         out.push(fav);
       }
@@ -105,7 +113,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     return out;
   }, [q, favorites, entries, home.id]);
 
-  const exactMatch = found.some((fav) => fav.label.toLowerCase() === q);
+  const exactMatch = found.some((fav) => searchNames(fav).includes(q));
 
   const done = () => {
     setPicking(false);
