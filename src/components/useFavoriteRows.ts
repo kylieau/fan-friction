@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Metro } from '../config/metros';
 import { eventMatches, getEventsBetween, getTeamSchedule, metrosWithEvents, scoreMark, todayIn, TEAMS, VENUES, venueNameOn, type CrowdEvent, type Favorite, type GameLink, type TeamGame } from '../data';
+import { isCollegeTeam } from '../data/teams';
 import { addDays, clockTime } from '../lib/dates';
 import { listTitle, scheduleGameTitle, teamRelativeTitle } from '../lib/eventTitle';
 
@@ -74,15 +75,19 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
           if (seen.has(key)) continue;
           seen.add(key);
           const venue = event ? venueOf(event) : game.venueName;
-          const sport = fav.teamId ? TEAMS[fav.teamId]?.sport : undefined;
+          const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+          const sport = team?.sport;
           // A result reads the team page's way: the score first, then the game from the team's side ("W 17–15 at Oregon").
           const mark = past ? scoreMark(game) : undefined;
+          // The team line above the title already names the program, so a college title says the school alone
+          // ("Lehigh at UCLA", not "Lehigh at UCLA WBB"; Kylie, Oct 19).
+          const us = team && isCollegeTeam(team) ? team.abbr || fav.label : fav.label;
           out.push({
             key,
             fav,
             date: game.date,
             start: game.start,
-            title: mark ? `${mark} ${teamRelativeTitle(game, sport)}` : scheduleGameTitle(fav.label, game, sport),
+            title: mark ? `${mark} ${teamRelativeTitle(game, sport)}` : scheduleGameTitle(us, game, sport),
             facts: [venue, game.start && !mark ? clockTime(game.start) : null].filter(Boolean).join(' · '),
             event,
             metroId: event?.metroId ?? game.eventMetroId,

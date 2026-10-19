@@ -1,9 +1,11 @@
+import type { ReactNode } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { TypeIcon } from './TypeIcon';
 import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getAccount, isGameEventId, isOutsideGamePlan, stubLevel, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { clearOpenedFromMap } from '../lib/mapReturn';
+import { shortLocalDate } from '../lib/dates';
 import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
 import { StatusLine } from './ActivityLines';
 import { ReadTile } from './ReadTile';
@@ -60,8 +62,23 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
         {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
         <StatusLine kind={entry.watched ? 'watched' : 'attended'} share={share} place={place} tags={entry.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
-      <ReadTile rating={rating} />
+      <DateReadLink date={entry.when.precision === 'day' ? entry.when.sort : null} metroId={entry.metroId ?? DEFAULT_METRO.id} eventId={entry.eventId}>
+        <ReadTile rating={rating} />
+      </DateReadLink>
     </div>
+  );
+}
+
+/**
+ * The read tile as its own tap (Kylie, Oct 19): it opens that date's page, like the Faves rows' tiles, while the rest
+ * of the row opens the event. A stub with a rough date has no day page, so its tile stays plain.
+ */
+function DateReadLink({ date, metroId, eventId, children }: { date: string | null; metroId: string; eventId?: string; children: ReactNode }) {
+  if (!date) return <>{children}</>;
+  return (
+    <Link to={datePath(date, metroId, eventId)} className="stub-read-link" aria-label={`The read for ${shortLocalDate(date)}`}>
+      {children}
+    </Link>
   );
 }
 
@@ -84,7 +101,9 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
         <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
       {/* An away game outside the covered cities has no read (its plan is filed under the team's city). */}
-      <ReadTile rating={isOutsideGamePlan(plan) ? null : rating} />
+      <DateReadLink date={isOutsideGamePlan(plan) ? null : plan.date} metroId={plan.metroId} eventId={plan.eventId}>
+        <ReadTile rating={isOutsideGamePlan(plan) ? null : rating} />
+      </DateReadLink>
     </div>
   );
 }

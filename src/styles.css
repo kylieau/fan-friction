@@ -4965,6 +4965,13 @@ ul.fav-strip {
   z-index: 1;
 }
 
+/* A Stubs row's read tile as its own tap, opening the date's page (Kylie, Oct 19). */
+.stub-read-link {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+}
+
 .log-list li:last-child .fav-sched-row {
   border-bottom: none;
 }
@@ -4994,7 +5001,6 @@ ul.fav-strip {
   flex-shrink: 0;
   width: 78px;
   padding: 6px 4px;
-  border-left: 1px solid var(--line);
   color: inherit;
   text-decoration: none;
   position: relative;
