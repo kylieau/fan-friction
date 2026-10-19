@@ -1,4 +1,5 @@
 import { FavoriteBadge } from '../components/FavoriteBadge';
+import { favoriteLongName } from '../data';
 import { RowBody, spokenRow } from '../components/DayRow';
 import { lazy, Suspense, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
@@ -279,7 +280,7 @@ export function HomeScreen() {
                   {/* The set is your whole favorites list, so a team reads the same here as in the strip (builder's call). */}
                   <FavoriteBadge fav={fav} shown={favorites} size="mark" />
                   <span className="fav-chip-text">
-                    <span className="log-title">{fav.label}</span>
+                    <span className="log-title">{favoriteLongName(fav)}</span>
                     <span className="log-facts">{shortLocalDate(next.date)}</span>
                   </span>
                 </Link>

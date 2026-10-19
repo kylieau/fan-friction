@@ -36,6 +36,7 @@ import { longLocalDate } from '../lib/dates';
 import { parseTypedDate } from '../lib/searchDate';
 import { favPath } from '../screens/FavoritesScreen';
 import { FavoriteBadge, favoriteName } from './FavoriteBadge';
+import { favoriteLongName } from '../data';
 
 /**
  * The one search, the same from every tab (build notes 2, global search): a team,
@@ -187,7 +188,7 @@ export function SearchSheet({
                 <span className="log-main">
                   <span className="log-title">
                     {fav.kind !== 'team' && <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />}
-                    {fav.label}
+                    {favoriteLongName(fav)}
                   </span>
                 </span>
               </Link>

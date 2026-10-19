@@ -46,6 +46,8 @@ import {
   type TeamGame,
   gameEventId,
   type GameLink,
+  isCollegeTeam,
+  teamLongName,
 } from '../data';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
@@ -212,7 +214,7 @@ export function FavoritePage() {
         {/* The set is the viewer's favorites plus this one (builder's call): the header reads as the strip does. */}
         <FavoriteBadge fav={{ ...fav, label }} shown={[...favoritesOf(log), fav]} size="big" />
         <div className="you-who">
-          <h1 className="page-title">{team?.name ?? label}</h1>
+          <h1 className="page-title">{team ? (isCollegeTeam(team) ? teamLongName(team) : team.name) : label}</h1>
           <span className="you-handle">{[record ? recordLine(record) : null, series].filter(Boolean).join(' · ') || kindLabel(fav.kind)}</span>
         </div>
       </div>

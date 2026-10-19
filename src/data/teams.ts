@@ -125,11 +125,8 @@ export function teamLongName(team: Team): string {
 }
 
 export function teamDisplayName(team: Team): string {
-  if (isCollegeTeam(team)) {
-    const school = team.shortName.replace(TRAILING_CODE, '').trim();
-    const code = sportLetters(team);
-    return code ? `${school} ${code}` : school;
-  }
+  // A college program spells its sport out ("UCLA Football"; Kylie, Oct 19, later that day, replacing "UCLA FB").
+  if (isCollegeTeam(team)) return teamLongName(team);
   if (!team.name.endsWith(team.shortName) || team.name === team.shortName) return team.name;
   const city = team.name.slice(0, -team.shortName.length).trim();
   return city ? `${CITY_SHORTCUTS[city] ?? city} ${team.shortName}` : team.name;
@@ -145,17 +142,14 @@ export function badgesCollide(a: Team, b: Team): boolean {
 }
 
 /**
- * The code on a team's badge (build 6, item 9a; Kylie, Oct 16 and Oct 19): the plain code for a pro team ("IND"),
- * the code with its sport letters for a college program ("UCLA MBB", always, since Oct 19). The shown set still
- * decides a pro badge's league caption (`leagueMark`), so the set stays an input here for the callers' sake.
+ * The code on a team's badge (build 6, item 9a; Kylie, Oct 16 and Oct 19): the plain code, "IND", "UCLA". The
+ * sport letters left the badge on Oct 19 (her call after seeing them everywhere); the sport lives in the words
+ * beside it. The shown set stays an input for the callers' sake and for `leagueMark`.
  */
 export function teamBadge(team: Team, _shown: readonly Team[] = []): string {
-  const code = teamCode(team);
-  if (!isCollegeTeam(team)) return code;
-  // A college badge always carries its sport code (Kylie, Oct 19, 2026, replacing the Oct 17 "only on a clash"):
-  // the badge now sits beside the team's display name, which carries the code too, and reads the same alone.
-  const letters = sportLetters(team);
-  return letters ? `${code} ${letters}` : code;
+  // The plain code for every team (Kylie, Oct 19, later in the day: no sport on a college badge; the words beside the
+  // badge say the sport, "UCLA Football"). The shown set still decides a pro badge's league caption (`leagueMark`).
+  return teamCode(team);
 }
 
 /** The short way a league is written under a badge; a league not listed here is written as it is ("NBA", "PWHL"). */

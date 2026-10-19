@@ -276,7 +276,7 @@ export async function searchAllDates(homeId: string | null, query: string, visib
 }
 
 export { VENUES, venueNameOn, capacityOn } from './venues';
-export { TEAMS, isCollegeTeam, teamDisplayName } from './teams';
+export { TEAMS, isCollegeTeam, teamDisplayName, teamLongName } from './teams';
 export { storyFor, type NightStory } from './seed/stories';
 export { weatherAt, weatherForEvent, weatherRangeForEvent, cityWeather, cityDayRange } from './weather';
 export { weatherGlyph, feelsLikeLabel, rangeLabel, rangeSpoken, isOpenAir, type WeatherRow, type WeatherDay } from './formula/weather';

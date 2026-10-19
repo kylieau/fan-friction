@@ -25,6 +25,7 @@ export function FollowRow({
   rating,
   readTo,
   away,
+  cityCode,
   spoken,
 }: {
   date: string;
@@ -40,6 +41,8 @@ export function FollowRow({
   readTo?: string | null;
   /** A building the app does not cover: the Away tag instead of a read. */
   away?: boolean;
+  /** The city's code over the read tile when the date is not at home ("MSP"). */
+  cityCode?: string | null;
   spoken: string;
 }) {
   const split = splitTitleLabel(title);
@@ -70,7 +73,8 @@ export function FollowRow({
           <span className="away-tag">Away</span>
         </span>
       ) : readTo ? (
-        <Link to={readTo} className="follow-read" aria-label={`The read for ${shortLocalDate(date)}`}>
+        <Link to={readTo} className="follow-read" aria-label={`The read for ${shortLocalDate(date)}${cityCode ? ` in ${cityCode}` : ''}`}>
+          {cityCode && <span className="fav-sched-code">{cityCode}</span>}
           <ReadTile rating={rating} />
           <span className="follow-chevron" aria-hidden>
             ›

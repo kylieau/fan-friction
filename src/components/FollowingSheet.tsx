@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PeopleIcon, StarIcon } from './Icons';
-import { FavoriteBadge, favoriteName } from './FavoriteBadge';
+import { favoriteName } from './FavoriteBadge';
 import {
   approveFollow,
   blockUser,
@@ -179,9 +179,6 @@ function FavesSide({ favorites, picked, onPicked, editing, onClose }: { favorite
                 return (
                   <li key={key} className="sheet-row">
                     {!editing && <Check on={on} label={favoriteName(fav)} onClick={() => onPicked(toggleIn(picked, key, keys))} />}
-                    <span className="sheet-badge">
-                      <FavoriteBadge fav={fav} shown={favorites} />
-                    </span>
                     <button type="button" className="log-main sheet-row-words" onClick={() => (editing ? undefined : onPicked(toggleIn(picked, key, keys)))} disabled={editing}>
                       <span className="log-title">{favoriteLongName(fav)}</span>
                       <span className="log-facts">{subOf(fav)}</span>

@@ -282,6 +282,7 @@ function FaveRow({ row, rating, home }: { row: ScheduleRow; rating: number | nul
       rating={rating}
       readTo={row.away ? null : readPath(row.date, row.metroId, row.event?.id)}
       away={row.away}
+      cityCode={row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null}
       spoken={`${favoriteName(row.fav)}, ${row.title}, ${shortLocalDate(row.date)}`}
     />
   );
@@ -355,7 +356,7 @@ function FriendsTimeline({ account, picked, people, home, onClear }: { account: 
   const toItem = (item: FollowItem): TimelineItem => ({
     key: item.key,
     group: timelineGroup({ sort: item.date, label: '', precision: 'day' }),
-    node: <FriendRow item={item} rating={ratingFor(item, ratings)} back={back} />,
+    node: <FriendRow item={item} rating={ratingFor(item, ratings)} back={back} home={home.id} />,
   });
   return (
     <>
@@ -430,7 +431,7 @@ function peopleLine(items: readonly FeedItem[]): string {
     .join(' · ');
 }
 
-function FriendRow({ item, rating, back }: { item: FollowItem; rating: number | null; back: { to: string; label: string } }) {
+function FriendRow({ item, rating, back, home }: { item: FollowItem; rating: number | null; back: { to: string; label: string }; home: string }) {
   const to = item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id);
   const line = peopleLine(item.friends);
   return (
@@ -444,6 +445,7 @@ function FriendRow({ item, rating, back }: { item: FollowItem; rating: number | 
       state={{ back, ...friendStubState(item.eventId, { title: item.title, date: item.date, venue: item.venue, metroId: item.metroId, entry: item.entry }) }}
       rating={rating}
       readTo={readPath(item.date, item.metroId, item.eventId)}
+      cityCode={item.metroId && item.metroId !== home ? METROS[item.metroId]?.code : null}
       spoken={`${item.title}, ${line}`}
     />
   );
