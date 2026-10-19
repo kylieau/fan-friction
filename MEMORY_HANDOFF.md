@@ -2,7 +2,7 @@
 
 Overwritten each session. Deferred work and history live in `BACKLOG.md`: open questions are at its top (the K-list), build follow-ups under **Next** ("Build 6 follow-ups" is newest, then "Past dates", then "Build 5 follow-ups"). Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (newest sections at the bottom; build 6's decisions are the last section). Build 6's notes are `docs/build-6/build-notes-6.md`; its frozen scope is `docs/build-6/scope-frozen.md`.
 
-_Last synced: Oct 19, 2026 (later), Claude Code (Fable 5.1), at `main`'s head. **The Following redesign (seven commits after `af332103`) is local and NOT pushed**; push when Kylie says. Her standing word since Oct 17: small tweaks are committed locally and pushed when she says._ Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9; reaffirmed for build 6)._
+_Last synced: Oct 19, 2026 (later), Claude Code (Fable 5.1), at `main`'s head. Everything pushed (Kylie, Oct 19: "excellent, let's push"; `bb66a7a6`) and the tree clean. Her standing word since Oct 17: small tweaks are committed locally and pushed when she says._ Kylie's standing instruction: one commit per step, straight to `main` (Kylie, Oct 9; reaffirmed for build 6)._
 
 ## Current state
 **Build 6 is built, checked and pushed** (items 1–16 of `docs/build-6/build-notes-6.md`, one item per commit, from `75816216` to the head). `npm run build`, `scripts/titles-check.mjs` and `scripts/event-types-check.mjs` pass; every changed list was measured at 390 px with Playwright; every changed screen was smoke-tested for runtime errors. In short:
