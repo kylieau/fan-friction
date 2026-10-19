@@ -17,8 +17,14 @@ export interface ScheduleRow {
   /** The listed event behind it, when the building is covered. */
   event?: CrowdEvent;
   metroId?: string;
-  /** A game at a building the app does not cover: an Away tag; its page is built from the game (Kylie, Oct 15). */
+  /** A game with no listed event, so no read: its page is built from the game (Kylie, Oct 15). */
   away: boolean;
+  /**
+   * The grey tag in the read's place: "Away" for a game at another team's building (Kylie, Oct 18 and 19), "No read"
+   * for a home or neutral game the app holds no event for, a building it cannot place (gap review, judgment call 1;
+   * Kylie, Oct 19, 2026: the old "Away" there was untrue).
+   */
+  noRead?: 'Away' | 'No read';
   /** The team's schedule game behind the row, so a game with no listed event still opens a page to stub it. */
   link?: GameLink;
 }
@@ -92,6 +98,7 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
             event,
             metroId: event?.metroId ?? game.eventMetroId,
             away: !game.eventId,
+            ...(game.eventId ? {} : { noRead: game.home || game.neutral ? ('No read' as const) : ('Away' as const) }),
             ...(fav.teamId ? { link: { teamId: fav.teamId, game } } : {}),
           });
         }

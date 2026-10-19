@@ -39,8 +39,8 @@ export function FollowRow({
   rating: number | null;
   /** The date page behind the read tile; none when there is no read to open. */
   readTo?: string | null;
-  /** A building the app does not cover: the Away tag instead of a read. */
-  away?: boolean;
+  /** The grey tag instead of a read: "Away" at another team's building, "No read" for a home game the app cannot place. */
+  away?: 'Away' | 'No read';
   /** The city's code over the read tile when the date is not at home ("MSP"). */
   cityCode?: string | null;
   spoken: string;
@@ -54,12 +54,12 @@ export function FollowRow({
         {lead.to ? (
           <Link to={lead.to} className="follow-lead" aria-label={lead.label ?? lead.text}>
             {lead.icon}
-            {lead.text}
+            <span className="follow-lead-text">{lead.text}</span>
           </Link>
         ) : (
           <span className="follow-lead">
             {lead.icon}
-            {lead.text}
+            <span className="follow-lead-text">{lead.text}</span>
           </span>
         )}
         <span className="follow-title">
@@ -70,7 +70,7 @@ export function FollowRow({
       </span>
       {away ? (
         <span className="follow-read">
-          <span className="away-tag">Away</span>
+          <span className="away-tag">{away}</span>
         </span>
       ) : readTo ? (
         <Link to={readTo} className="follow-read" aria-label={`The read for ${shortLocalDate(date)}${cityCode ? ` in ${cityCode}` : ''}`}>

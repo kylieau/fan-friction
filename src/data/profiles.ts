@@ -504,22 +504,39 @@ async function approvedFollowees(c: SupabaseClient, me: string): Promise<string[
   return (await followsOut(c, me)).filter((row) => row.status === 'approved').map((row) => row.followeeId);
 }
 
+/** The Following feed with its plans read's fate: the lines, and whether friends' plans could not be read this time. */
+export interface FollowingFeedResult {
+  items: FeedItem[];
+  /** The plans read failed (a paused project, a permissions hiccup): the attended lines are here, the plans are not. */
+  plansFailed: boolean;
+}
+
 /**
  * The Following feed: approved followees' past entries and upcoming plans, soonest plans
  * first, then newest entries. Plans are asked for from today on (R07), so old ones never
  * crowd out the next ones within the limit.
+ *
+ * A failed plans read is caught here, once, for every screen that shows friends' lines (gap review G2, Oct 19, 2026:
+ * only the Following tab caught the throw B5-07 added, so a momentary read failure blanked the date page, Explore,
+ * the event page, Home, the Map and search with an unhandled rejection). The attended lines still come back, with
+ * `plansFailed` set so the Following tab can say so; the other screens read `followingFeed` and simply show what loaded.
  */
-export async function followingFeed(limit = 30): Promise<FeedItem[]> {
+export async function followingFeedWithStatus(limit = 30): Promise<FollowingFeedResult> {
   const c = supabase();
   const me = getAccount();
-  if (!c || !me) return [];
+  if (!c || !me) return { items: [], plansFailed: false };
   const ids = await approvedFollowees(c, me.id);
-  if (ids.length === 0) return [];
+  if (ids.length === 0) return { items: [], plansFailed: false };
+  let plansFailed = false;
   const [people, cards, places, { data: plans }] = await Promise.all([
     cardsById(c, ids),
     entryCards(c, ids, limit),
     sharedPlaces(c, ids),
-    planCards(c, (q) => q.in('user_id', ids).gte('date', earliestToday()).order('date', { ascending: true }).limit(limit)),
+    planCards(c, (q) => q.in('user_id', ids).gte('date', earliestToday()).order('date', { ascending: true }).limit(limit)).catch((error: unknown) => {
+      plansFailed = true;
+      console.warn(error instanceof Error ? error.message : error);
+      return { data: [] as unknown[] };
+    }),
   ]);
   const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean; interested?: boolean } | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id))
@@ -534,7 +551,12 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
     const place = entry.watched && entry.eventId ? places.get(`${userId}|${entry.eventId}`) : undefined;
     return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}), ...(place ? { place } : {}) }];
   });
-  return [...planning, ...attended].slice(0, limit);
+  return { items: [...planning, ...attended].slice(0, limit), plansFailed };
+}
+
+/** The Following feed's lines alone; a failed plans read leaves the plans out (see `followingFeedWithStatus`). */
+export async function followingFeed(limit = 30): Promise<FeedItem[]> {
+  return (await followingFeedWithStatus(limit)).items;
 }
 
 /** The feed's shape before anyone is followed, marked Example. Nothing here is written anywhere. */

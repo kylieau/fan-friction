@@ -17,7 +17,7 @@ import {
   favoriteKey,
   favoritesOf,
   followRequests,
-  followingFeed,
+  followingFeedWithStatus,
   gameEventId,
   getAccount,
   getPersonalLog,
@@ -281,7 +281,7 @@ function FaveRow({ row, rating, home }: { row: ScheduleRow; rating: number | nul
       state={row.link ? { game: row.link } : undefined}
       rating={rating}
       readTo={row.away ? null : readPath(row.date, row.metroId, row.event?.id)}
-      away={row.away}
+      away={row.noRead}
       cityCode={row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null}
       spoken={`${favoriteName(row.fav)}, ${row.title}, ${shortLocalDate(row.date)}`}
     />
@@ -301,8 +301,13 @@ function FriendsTimeline({ account, picked, people, home, onClear }: { account: 
       setFeed([]);
       return;
     }
-    followingFeed(300)
-      .then((list) => current && setFeed(list))
+    // A failed plans read still brings the attended lines (gap review G2): the note says what is missing.
+    followingFeedWithStatus(300)
+      .then((result) => {
+        if (!current) return;
+        setFeed(result.items);
+        if (result.plansFailed) setFeedNote("Couldn't load your friends' plans. Try again later.");
+      })
       .catch(() => current && setFeedNote("Couldn't load the people you follow. Try again later."));
     return () => {
       current = false;
@@ -345,7 +350,8 @@ function FriendsTimeline({ account, picked, people, home, onClear }: { account: 
     });
     return (
       <div className="card empty-card following-empty">
-        <div className="card-title">Nothing from {names.join(', ')} in the last or next {SPAN_DAYS} days.</div>
+        {/* Friends' plans ahead are not capped (the builder's report); only the past is 60 days (gap review G10). */}
+        <div className="card-title">Nothing from {names.join(', ')} in the last {SPAN_DAYS} days or ahead.</div>
         <p className="following-empty-sub">The filter hides everything else.</p>
         <button type="button" className="following-empty-link" onClick={onClear}>
           Show all friends <span aria-hidden>›</span>
