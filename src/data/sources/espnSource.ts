@@ -1115,13 +1115,16 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
 const cache = new Map<string, Promise<CrowdEvent[]>>();
 
 async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean, season?: number): Promise<EspnGame[]> {
-  // Default is preseason, seasontype=2 is the regular season, seasontype=3 is the postseason.
+  // The plain schedule is whichever season type is current (preseason until the regular season opens, then the
+  // regular season); seasontype=1 is the preseason, 2 the regular season, 3 the postseason. The preseason is asked
+  // for by name so played preseason games stay listed once the regular season begins (found Oct 19, 2026: the
+  // Lakers' Oct 13 and 16 preseason games left the plain schedule, and the nightly week-back cleanup dropped them).
   // Soccer is different: the plain schedule lists only matches already played, and the
   // season-type queries come back empty. Upcoming fixtures need `fixture=true`.
   // A past season is asked for by year: the year it ends for winter sports, the calendar year otherwise.
   const queries =
     season === undefined
-      ? ['', '?seasontype=2', '?seasontype=3', ...(t.path.startsWith('soccer/') ? ['?fixture=true'] : [])]
+      ? ['', '?seasontype=1', '?seasontype=2', '?seasontype=3', ...(t.path.startsWith('soccer/') ? ['?fixture=true'] : [])]
       : [`?season=${season}`, `?season=${season}&seasontype=2`, `?season=${season}&seasontype=3`];
   const urls = queries.map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
   const lists = await Promise.all(
