@@ -40,7 +40,7 @@ interface TmEvent {
   classifications?: { segment?: { name?: string }; genre?: { name?: string }; subGenre?: { name?: string } }[];
   _embedded?: {
     venues?: TmVenue[];
-    attractions?: { name: string }[];
+    attractions?: { id?: string; name: string }[];
   };
 }
 
@@ -274,7 +274,12 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         bigRoomSpecials.push({ name: e.name.trim(), venueId: venue.id, segment: segment ?? '', genre: c?.genre?.name ?? '', subGenre: c?.subGenre?.name ?? '', dropped: addOn });
       }
       if (addOn) continue;
-      const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
+      const attractions = e._embedded?.attractions ?? [];
+      const performers = attractions.map((a) => a.name).filter(Boolean);
+      // The acts' attraction ids, kept for shows at 5,000+ rooms (Kylie, Oct 19, 2026, the artist-genres answers): the
+      // material for matching a favorite by id later. In the feed's order; never the website's page number.
+      const bigRoom = Math.max(0, ...venue.capacity.map((c) => c.seats)) >= 5000;
+      const performerIds = attractions.map((a) => a.id).filter((id): id is string => Boolean(id));
       // A listing name with the venue or the city glued on ("Jurassic Quest – Anaheim, CA | Anaheim Convention Center")
       // reads as the event alone (Oct 16): the tail after " | " goes when it names a room we have, and a trailing
       // "City, ST" tag goes. Any city; the name is otherwise kept as written.
@@ -299,6 +304,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         place: { type: 'venue', venueId: venue.id },
         audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(`${genre} ${e.classifications?.[0]?.subGenre?.name ?? ''} ${e.name}`) } : { domain: 'other', tag: genre },
         performer,
+        ...(kind === 'show' && bigRoom && performerIds.length ? { performerIds } : {}),
         crowd: [],
         sourceId: 'ticketmaster',
         ticketmasterId: e.id,

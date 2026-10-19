@@ -2,6 +2,7 @@
 // Weights are placeholders to tune: High 0.7, Medium 0.35, Low 0.15.
 
 import { TEAMS } from '../teams';
+import { genreCategory } from '../genres';
 import type { CrowdEvent } from '../types';
 
 export type Tier = 'High' | 'Medium' | 'Low';
@@ -65,6 +66,14 @@ export function overlapTier(a: CrowdEvent, b: CrowdEvent): Tier {
     if (broadA || broadB) return 'Medium';
     return 'Low';
   }
-  if (A.domain === 'music' && B.domain === 'music') return A.genre === B.genre ? 'Medium' : 'Low';
+  if (A.domain === 'music' && B.domain === 'music') {
+    // Two shows share an audience when their genres land in the same category (Alternative and Rock both read Rock);
+    // a show whose genre is missing (Other, Undefined) is Unknown, never a match, at Low's weight as the provisional
+    // neutral value (Kylie, Oct 19, 2026, answer 5 to the artist-genres proposal).
+    const ga = genreCategory(A.genre);
+    const gb = genreCategory(B.genre);
+    if (!ga || !gb) return 'Low';
+    return ga === gb ? 'Medium' : 'Low';
+  }
   return 'Low';
 }
