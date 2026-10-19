@@ -438,6 +438,8 @@ export interface ZoneScore {
   normal: number;
   background: number;
   score: number;
+  /** Rooms in play with no capacity on file: the zone's normal night was read against their expected crowds instead (a flag, Kylie, Oct 19, 2026). */
+  capacityUnknown: string[];
 }
 
 export interface DateGridlock {
@@ -593,8 +595,19 @@ export function dateGridlock(metroId: string, date: string, events: readonly Cro
       }
       peak = Math.max(peak, seats);
     }
-    // A normal night here: the largest room full, plus the usual spill from the neighbours' largest rooms.
-    let normal = zone.largest;
+    // A normal night here: the largest room full, plus the usual spill from the neighbours' largest rooms. A room
+    // with no capacity on file counts as full at its event's expected crowd, so a stadium never reads against a
+    // small neighbour's normal (Kylie, Oct 19, 2026: Pitbull Stadium, blank, was measured against the 5,000-seat
+    // arena next door and a Tuesday game read 10.0); the room is flagged so the gap in the data is visible.
+    const capacityUnknown: string[] = [];
+    let largest = zone.largest;
+    for (const e of mine) {
+      if (e.place.type !== 'venue' || venueCapacityMax(e.place.venueId, date) > 0) continue;
+      const venue = VENUES[e.place.venueId];
+      if (venue && !capacityUnknown.includes(venue.names[venue.names.length - 1].name)) capacityUnknown.push(venue.names[venue.names.length - 1].name);
+      largest = Math.max(largest, capacityOf(e));
+    }
+    let normal = largest;
     for (const other of zones) {
       if (other.id === zone.id) continue;
       normal += spillWeight(other, zone, cityType) * other.largest;
@@ -611,7 +624,7 @@ export function dateGridlock(metroId: string, date: string, events: readonly Cro
     const background = backgroundFor(mine, date, rain, strainedCarShare);
     const ratio = normal > 0 ? (background * peak) / normal : 1;
     const score = Math.max(1, Math.min(10, 1 + SCALE * Math.log2(Math.max(ratio, 0.01))));
-    scored.push({ zone, events: mine, load: peak, normal, background, score });
+    scored.push({ zone, events: mine, load: peak, normal, background, score, capacityUnknown });
     for (const e of mine) byEvent.set(e.id, score);
   }
   scored.sort((a, b) => b.score - a.score);
@@ -631,5 +644,7 @@ export function gridlockWhy(g: DateGridlock, date: string): string {
   const day = new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' });
   const when = z.events.every((e) => startHour(e) < 14) ? 'afternoon' : 'evening';
   const together = z.events.length > 1 ? 'arriving together' : 'alone';
-  return `${z.zone.name}: ${who} ${together}, ${day} ${when}.`;
+  // The flag, in words, when the worst zone's read leaned on an expected crowd instead of a capacity on file.
+  const flag = z.capacityUnknown.length > 0 ? ` No capacity on file for ${z.capacityUnknown.join(' or ')}; read against its expected crowd.` : '';
+  return `${z.zone.name}: ${who} ${together}, ${day} ${when}.${flag}`;
 }

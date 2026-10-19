@@ -1495,8 +1495,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Homestead-Miami Speedway' }],
     location: [-80.4094304, 25.4517516],
     ticketmasterIds: ['KovZpZAdJnAA', 'Za5ju3rKuqZBzaQJhuN-7F_9Cs75O7rnQ'],
-    // Round-2 rule: conflicting figures (46,000 / 45,000 / 65,000), none official; blank (BACKLOG).
-    capacity: [],
+    // 46,000, the register's reported mid-range of 46,000 / 45,000 / 65,000 (none official), filled Oct 19, 2026 with Pitbull Stadium so Gridlock never reads the track against a small neighbour; Kylie's to change.
+    capacity: [{ seats: 46000, setup: 'racing', note: 'Reported, mid-range of three figures (46,000 / 45,000 / 65,000); none official. Miami implementation register.' }],
     roof: 'open',
   },
   'loandepot-park': {
@@ -1585,8 +1585,8 @@ export const VENUES: Record<string, Venue> = {
     ],
     location: [-80.3778903, 25.7524884],
     ticketmasterIds: ['ZFr9jZ6dd1', 'KovZpZAJtF1A'],
-    // Round-2 rule: conflicting figures (20,000 / 22,682), none official; blank (BACKLOG).
-    capacity: [],
+    // 20,000 (Kylie, Oct 19, 2026, after the Oct 20 read: a blank capacity let Gridlock measure the stadium against its 5,000-seat neighbour). The 22,682 figure stays in BACKLOG.
+    capacity: [{ seats: 20000, setup: 'football', note: 'Reported. Kylie, Oct 19, 2026; 22,682 also reported, not official.' }],
     roof: 'open',
   },
   'fpl-solar-amphitheater': {
