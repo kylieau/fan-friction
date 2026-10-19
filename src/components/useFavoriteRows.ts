@@ -137,7 +137,9 @@ export function venueOf(event: CrowdEvent): string {
 /** The part of a listing's name after the artist's own ("Phoebe Bridgers: Reunion Tour" → "Reunion Tour"); the whole name when nothing else is there. */
 export function showName(title: string, artist: string): string {
   const rest = title.toLowerCase().startsWith(artist.toLowerCase()) ? title.slice(artist.length).replace(/^[\s:·\-–—]+/, '').trim() : '';
-  // A support act is not the show's name ("Phoebe Bridgers w/ Alex G"): the whole title stays.
-  if (!rest || /^(w\/|with|and|&|feat\.?|featuring|\+)\b/i.test(rest)) return title;
+  // A support act is not the show's name ("Phoebe Bridgers w/ Alex G"): the whole title stays. The boundary sits after
+  // the word forms only: "\b" after "w/", "&" or "+" never matched a following space, so "w/ Estevie" was shown as the
+  // show's name (found Oct 19, 2026, running the split over 240 titles).
+  if (!rest || /^(w\/|with\b|and\b|&|feat\.?(?=\s)|featuring\b|\+)/i.test(rest)) return title;
   return rest;
 }
