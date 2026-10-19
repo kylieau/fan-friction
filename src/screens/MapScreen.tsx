@@ -419,7 +419,7 @@ export function MapScreen() {
                 {points.length === 0 && <li className="map-key-empty">Nothing big on this date.</li>}
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
                 <li className="map-key-ring">Pale ring is the one you picked</li>
-                <li className="map-key-note">The date's read, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
+                <li className="map-key-note">The date's verdict, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
                 {/* How this city's fans get to events, in plain words (build 5, N1/B1; Kylie, Oct 14). */}
                 {cityTravelLine(metro.id) && <li className="map-key-note">{cityTravelLine(metro.id)}</li>}
                 {/* No "~" on chips or rows (build 6, item 4): this one line says it for all of them. */}

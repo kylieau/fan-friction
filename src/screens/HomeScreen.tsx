@@ -176,7 +176,7 @@ export function HomeScreen() {
             <span className="mini-map-overlay">
               <ReadTile rating={rating} empty={day.empty} />
               <span className="mini-map-text">
-                <span className="mini-map-label">Today's read</span>
+                <span className="mini-map-label">Today's verdict</span>
                 <span className="mini-map-title">
                   {shortLocalDate(today)} · {tonight.length} {tonight.length === 1 ? 'event' : 'events'}
                 </span>

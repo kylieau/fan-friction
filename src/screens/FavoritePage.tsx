@@ -506,7 +506,7 @@ function GameRow({ game, rating, covered, teamMetroId, teamId, today }: { game: 
         <span className="log-title"><TitleText text={mark ? `${mark} ${teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined)}` : teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined)} /></span>
         <span className="log-facts">{facts}</span>
       </span>
-      {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No read: not a covered building">—</span>)}
+      {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No verdict: not a covered building">—</span>)}
     </>
   );
   // An upcoming game in a covered building opens its date; every other game opens its event page, carrying the

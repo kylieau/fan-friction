@@ -39,8 +39,8 @@ export function FollowRow({
   rating: number | null;
   /** The date page behind the read tile; none when there is no read to open. */
   readTo?: string | null;
-  /** The grey tag instead of a read: "Away" at another team's building, "No read" for a home game the app cannot place. */
-  away?: 'Away' | 'No read';
+  /** The grey tag instead of a read: "Away" at another team's building, "No verdict" for a home game the app cannot place. */
+  away?: 'Away' | 'No verdict';
   /** The city's code over the read tile when the date is not at home ("MSP"). */
   cityCode?: string | null;
   spoken: string;
@@ -73,7 +73,7 @@ export function FollowRow({
           <span className="away-tag">{away}</span>
         </span>
       ) : readTo ? (
-        <Link to={readTo} className="follow-read" aria-label={`The read for ${shortLocalDate(date)}${cityCode ? ` in ${cityCode}` : ''}`}>
+        <Link to={readTo} className="follow-read" aria-label={`The verdict for ${shortLocalDate(date)}${cityCode ? ` in ${cityCode}` : ''}`}>
           {cityCode && <span className="fav-sched-code">{cityCode}</span>}
           <ReadTile rating={rating} />
           <span className="follow-chevron" aria-hidden>

@@ -57,7 +57,7 @@ or foundational code, check for in-progress work and flag possible conflicts.
 (`git fetch` and look at `origin/cursor/*` branches and open PRs first.)
 
 ## UI copy rule (Kylie, Oct 5, 2026)
-Users are not dumb. They use Letterboxd, Strava and Flighty daily. Words (Kylie, Oct 9): "night" only for a city-date after 5 pm, otherwise events, dates, days; the log is My Stubs; Following is who you see, Followers who sees you. Don't spend
+Users are not dumb. They use Letterboxd, Strava and Flighty daily. Words (Kylie, Oct 9): "night" only for a city-date after 5 pm, otherwise events, dates, days; the log is My Stubs; Following is who you see, Followers who sees you. The date's number and word (1.4 Chill, 9.9 Cooked) is the **Verdict**, never "the read" on screen; **friction** (or competition friction) is the event's competition word, Unopposed to Steamrolled (Kylie, Oct 19). Don't spend
 screen space explaining patterns they already know: no "this is how others see
 you" banners, no reassurance fine print, no hint text under every control. Put
 utilities (Export, account details, settings) behind a gear, not top and center.

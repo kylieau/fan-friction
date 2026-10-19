@@ -192,7 +192,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
     const range = cityDayRange(c.key.metroId, c.key.date);
     return range ? `H ${degreesFor(range.feelsLikeHighF, c.key.metroId)} L ${degreesFor(range.feelsLikeLowF, c.key.metroId)}` : null;
   };
-  const score = (c: Column) => (c.day.rating ? `${c.day.rating.rating} ${scoreLabel(c.day.rating.rating)}` : 'No read');
+  const score = (c: Column) => (c.day.rating ? `${c.day.rating.rating} ${scoreLabel(c.day.rating.rating)}` : 'No verdict');
   const part = (pick: (p: NonNullable<Column['parts']>) => number | null) => (c: Column) => {
     if (!c.parts) return null;
     const v = pick(c.parts);
@@ -215,7 +215,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
         ))}
       </div>
       <div className="cmp-table">
-        {row('Read', score)}
+        {row('Verdict', score)}
         {row('Crowd fight', part((p) => p.crowdFight))}
         {row('Conditions', part((p) => p.conditions))}
         {row('Gridlock', part((p) => p.gridlock))}
@@ -225,14 +225,14 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
       </div>
       <ShareCard
         dateLabel={`${shortLocalDate(A.key.date)} vs ${shortLocalDate(B.key.date)}`}
-        title={`${A.day.rating ? scoreLabel(A.day.rating.rating) : 'No read'} vs ${B.day.rating ? scoreLabel(B.day.rating.rating) : 'No read'}`}
+        title={`${A.day.rating ? scoreLabel(A.day.rating.rating) : 'No verdict'} vs ${B.day.rating ? scoreLabel(B.day.rating.rating) : 'No verdict'}`}
         line={`${A.day.rating?.headline ?? ''} · ${B.day.rating?.headline ?? ''}`}
         rating={null}
         crowd={null}
         buttonLabel="Share these events"
       />
       {/* How the parts become the read (3.6). */}
-      <p className="you-fine">The read is the strongest reason, plus a bump for each other strong one.</p>
+      <p className="you-fine">The verdict is the strongest reason, plus a bump for each other strong one.</p>
       <Link to={comparePath(A.key)} className="text-link">
         Compare with another event
       </Link>

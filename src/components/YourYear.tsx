@@ -67,7 +67,7 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
           <p className="your-usual your-counts">
             {inScope.length} attended{watchedCount > 0 ? ` · ${watchedCount} watched` : ''}
           </p>
-          <div className="word-row" aria-label="Events by read">
+          <div className="word-row" aria-label="Events by verdict">
             {byWord.map(({ word, count }) => (
               <span key={word} className={`word-pill ${word.toLowerCase()}`}>
                 <strong>{count}</strong> {word}

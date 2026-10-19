@@ -20,7 +20,7 @@ export function ReadTile({ rating, size = 'row', quiet, empty }: { rating: numbe
   if (rating === null) {
     const word = kind === 'quiet' ? 'Quiet' : kind === 'no-data' ? 'No data' : null;
     return (
-      <span className={`${cls} none${kind === 'no-data' ? ' nodata' : ''}`} aria-label={word ?? 'No read yet'}>
+      <span className={`${cls} none${kind === 'no-data' ? ' nodata' : ''}`} aria-label={word ?? 'No verdict yet'}>
         <span className={size === 'big' ? 'read-num' : 'log-score-num'}>—</span>
         {word && <span className={size === 'big' ? 'read-word' : 'log-score-word'}>{word}</span>}
       </span>

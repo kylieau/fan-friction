@@ -222,7 +222,7 @@ export function DateScreen() {
         </span>
       </header>
 
-      <section className={`read-tile${rating ? '' : ' none'}`} aria-label="The read">
+      <section className={`read-tile${rating ? '' : ' none'}`} aria-label="The verdict">
         {rating && shownRating !== null ? (
           <>
             <span className={`read-big ${scoreBand(shownRating)}`}>
@@ -239,7 +239,7 @@ export function DateScreen() {
               </span>
             </span>
             {locked && (
-              <button type="button" className="read-info" aria-label="About this read" onClick={() => setAbout(true)}>
+              <button type="button" className="read-info" aria-label="About this verdict" onClick={() => setAbout(true)}>
                 i
               </button>
             )}
@@ -260,7 +260,7 @@ export function DateScreen() {
                 </span>
               ) : (
                 <>
-                  <span className="read-lab">{ahead ? 'Verdict' : 'No read yet'}</span>
+                  <span className="read-lab">{ahead ? 'Verdict' : 'No verdict yet'}</span>
                   <span className="read-txt">{ahead ? 'The verdict arrives with the formula.' : 'This date has no rating yet.'}</span>
                 </>
               )}
@@ -415,7 +415,7 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
       <div className="home-card about-read" onClick={(event) => event.stopPropagation()}>
         <div className="about-read-head">
           <h2 id="about-read-title" className="home-title">
-            About this read
+            About this verdict
           </h2>
           <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
             ×

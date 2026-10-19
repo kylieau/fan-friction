@@ -77,7 +77,7 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
 function DateReadLink({ date, metroId, eventId, children }: { date: string | null; metroId: string; eventId?: string; children: ReactNode }) {
   if (!date) return <>{children}</>;
   return (
-    <Link to={datePath(date, metroId, eventId)} className="stub-read-link" aria-label={`The read for ${shortLocalDate(date)}`}>
+    <Link to={datePath(date, metroId, eventId)} className="stub-read-link" aria-label={`The verdict for ${shortLocalDate(date)}`}>
       {children}
     </Link>
   );
