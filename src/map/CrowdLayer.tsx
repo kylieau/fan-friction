@@ -543,7 +543,8 @@ function chipDetail(p: CrowdPoint): string {
   const time = p.event.start ? clockTime(p.event.start) : 'Time TBA';
   // An expected draw shows as its number, like any estimate on a map card (Kylie, Oct 7).
   const crowd = crowdShort(p.event, p.capacity, false);
-  return p.dayTag ? `${p.dayTag} · ${time} · ${crowd}` : `${time} · ${crowd}`;
+  // No figure, no words: "No count yet" only ever truncated to "No c…" on the card (found Oct 19, 2026).
+  return [p.dayTag, time, crowd === 'No count yet' ? null : crowd].filter(Boolean).join(' · ');
 }
 
 function escapeHtml(text: string) {

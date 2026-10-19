@@ -156,8 +156,11 @@ function FavesSide({ favorites, picked, onPicked, editing, onClose }: { favorite
           Add a team, artist, venue or festival
         </Link>
       ) : (
-        <button type="button" className="card sheet-all-row" onClick={() => onPicked(null)}>
-          <Check on={picked === null} label="All Faves" onClick={() => onPicked(null)} />
+        <button type="button" role="checkbox" aria-checked={picked === null} className="card sheet-all-row" onClick={() => onPicked(null)}>
+          {/* One control: the check is drawn, not a second button inside this one (found Oct 19, 2026). */}
+          <span className={`sheet-check${picked === null ? ' on' : ''}`} aria-hidden>
+            {picked === null ? '✓' : ''}
+          </span>
           <span className="log-main">
             <span className="log-title">All Faves</span>
             <span className="log-facts">{picked === null ? `All ${favorites.length} on timeline` : `${shownCount} of ${favorites.length} on timeline`}</span>

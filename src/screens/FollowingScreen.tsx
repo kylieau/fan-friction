@@ -432,7 +432,8 @@ function peopleLine(items: readonly FeedItem[]): string {
 }
 
 function FriendRow({ item, rating, back, home }: { item: FollowItem; rating: number | null; back: { to: string; label: string }; home: string }) {
-  const to = item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id);
+  // A friend's stub logged "elsewhere" has no city, so nowhere to open (it had opened the default city's page).
+  const to = item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : item.metroId ? datePath(item.date, item.metroId) : undefined;
   const line = peopleLine(item.friends);
   return (
     <FollowRow
@@ -474,10 +475,10 @@ export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMa
       </span>
     </>
   );
-  if (item.example) return <li className="log-row">{body}</li>;
+  if (item.example || !item.metroId) return <li className="log-row">{body}</li>;
   return (
     <li>
-      <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} state={friendStubState(item.eventId, item)} className="log-row">
+      <Link to={item.eventId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId)} state={friendStubState(item.eventId, item)} className="log-row">
         {body}
       </Link>
     </li>

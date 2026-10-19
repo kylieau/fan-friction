@@ -33,8 +33,8 @@ export function FollowRow({
   lead: { icon: ReactNode; text: string; to?: string; label?: string };
   title: string;
   facts: string;
-  /** Where the words open: the event page, or the date page when the app holds no event. */
-  to: string;
+  /** Where the words open: the event page, or the date page when the app holds no event; nothing when the row has no city to open. */
+  to?: string;
   state?: unknown;
   rating: number | null;
   /** The date page behind the read tile; none when there is no read to open. */
@@ -48,7 +48,7 @@ export function FollowRow({
   const split = splitTitleLabel(title);
   return (
     <div className="follow-row">
-      <Link to={to} state={state} className="follow-row-link" aria-label={spoken} />
+      {to && <Link to={to} state={state} className="follow-row-link" aria-label={spoken} />}
       <DateBox when={{ sort: date, label: '', precision: 'day' }} />
       <span className="follow-main">
         {lead.to ? (

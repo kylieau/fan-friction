@@ -30,9 +30,10 @@ export function SearchButton({ metroId, className = '' }: { metroId?: string; cl
           homeId={cityId}
           today={today}
           onClose={() => setOpen(false)}
-          onPick={(picked, pickedMetro) => {
+          onPick={(picked, pickedMetro, eventId) => {
             setOpen(false);
-            navigate(mapPath({ metroId: pickedMetro, date: picked, today }));
+            // A hit that names an event opens the Map, where that event's card can show, whichever view was last used.
+            navigate(mapPath({ metroId: pickedMetro, date: picked, today, eventId, ...(eventId ? { view: 'map' as const } : {}) }));
           }}
           onPickDate={() => {
             setOpen(false);

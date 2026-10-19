@@ -44,11 +44,12 @@ export function useView(): View {
 }
 
 /** The Explore address for one place and one date. `view` forces Map or List; without it the remembered view opens. */
-export function mapPath(opts: { metroId: string; date: string; today: string; view?: 'map' | 'list' }): string {
+export function mapPath(opts: { metroId: string; date: string; today: string; view?: 'map' | 'list'; /** The event to open selected (a search hit). */ eventId?: string }): string {
   const params = new URLSearchParams();
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   if (opts.date !== opts.today) params.set('date', opts.date);
   if (opts.view) params.set('view', opts.view);
+  if (opts.eventId) params.set('event', opts.eventId);
   const q = params.toString();
   return `/explore${q ? `?${q}` : ''}`;
 }

@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TypeIcon } from './TypeIcon';
 import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { getAccount, isGameEventId, isOutsideGamePlan, stubLevel, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
+import { getAccount, isOutsideGamePlan, stubLevel, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { shortLocalDate } from '../lib/dates';
 import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
@@ -62,7 +62,8 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
         {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
         <StatusLine kind={entry.watched ? 'watched' : 'attended'} share={share} place={place} tags={entry.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
-      <DateReadLink date={entry.when.precision === 'day' ? entry.when.sort : null} metroId={entry.metroId ?? DEFAULT_METRO.id} eventId={entry.eventId}>
+      {/* An entry logged "elsewhere" has no city, so no date page: its tile stays plain, like a rough date (found Oct 19, 2026: it opened the default city's page). */}
+      <DateReadLink date={entry.when.precision === 'day' && entry.metroId ? entry.when.sort : null} metroId={entry.metroId ?? DEFAULT_METRO.id} eventId={entry.eventId}>
         <ReadTile rating={rating} />
       </DateReadLink>
     </div>
@@ -90,7 +91,8 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
   const city = plan.metroId !== DEFAULT_METRO.id ? METROS[plan.metroId]?.name : null;
   return (
     <div className="stub-row">
-      <Link to={plan.manual && !plan.eventId ? entryPath(plan.id) : isGameEventId(plan.eventId) ? eventPath(plan.eventId!, plan.metroId) : datePath(plan.date, plan.metroId, plan.eventId)} className="stub-row-link" aria-label={plan.title} />
+      {/* The row opens the event, the read tile the date (Kylie, Oct 19, 2026), for every plan with a catalog event, not only games. */}
+      <Link to={plan.manual && !plan.eventId ? entryPath(plan.id) : plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId)} className="stub-row-link" aria-label={plan.title} />
       <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
       <span className="stub-main">
         <span className="stub-title">

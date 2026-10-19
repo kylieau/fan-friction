@@ -237,13 +237,17 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
   if (q.length < 2) return [];
   const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
   const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
-  const hits = new Map<string, { titles: string[]; matched: string[]; anyVisible: boolean }>();
+  const hits = new Map<string, { titles: string[]; matched: string[]; anyVisible: boolean; eventId?: string; hiddenEventId?: string }>();
 
   for (const event of events) {
     const names = matchingNames(event, q);
     if (!names) continue;
     const row = hits.get(event.date) ?? { titles: [], matched: [], anyVisible: false };
-    if (!visible || visible(event)) row.anyVisible = true;
+    const shown = !visible || visible(event);
+    if (shown) row.anyVisible = true;
+    // The first visible match is the one a tap selects on the day; the first match at all when every one is hidden.
+    if (shown) row.eventId ??= event.id;
+    else row.hiddenEventId ??= event.id;
     // The short name, as every row shows it (build 5, item 13).
     const name = listTitle(event);
     if (!row.titles.includes(name)) row.titles.push(name);
@@ -263,6 +267,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
         rating: rating?.rating ?? null,
         headline: rating?.headline ?? row.titles.slice(0, 2).join(' · '),
         matched: row.matched.slice(0, 3).join(' · '),
+        ...(row.eventId ?? row.hiddenEventId ? { eventId: row.eventId ?? row.hiddenEventId } : {}),
         ...(row.anyVisible ? {} : { hidden: true }),
       };
     });

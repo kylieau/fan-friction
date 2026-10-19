@@ -384,6 +384,8 @@ export interface DateSearchHit {
   headline: string;
   /** The names that matched, such as "Dodgers · SoFi Stadium". */
   matched: string;
+  /** The first matching event that day, so a tap can open the day with it selected (found Oct 19, 2026). */
+  eventId?: string;
   /** Every matching event is outside your crowd size range (build 5, item 6): listed under the Show line. */
   hidden?: boolean;
 }

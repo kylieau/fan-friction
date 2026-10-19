@@ -67,8 +67,10 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
       const games = fav.teamId ? (schedules.get(fav.teamId) ?? null) : null;
       if (games) {
         for (const game of games) {
-          const past = game.date < today;
-          if (game.date < floor || game.date > horizon || (!past && game.score)) continue;
+          // A game with a score is past the moment it ends, like the team page's Results (found Oct 19, 2026: a game
+          // that finished today vanished from the timeline until midnight).
+          const past = game.date < today || Boolean(game.score);
+          if (game.date < floor || game.date > horizon) continue;
           const event = game.eventId ? upcoming.find((e) => e.id === game.eventId) : undefined;
           const key = event?.id ?? `${fav.teamId}-${game.id}`;
           if (seen.has(key)) continue;

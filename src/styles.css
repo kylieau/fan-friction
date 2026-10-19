@@ -8141,7 +8141,7 @@ ul.fav-strip {
 }
 
 .today-pill {
-  height: 34px;
+  /* No height here: the pill's own 44 px rule stands (a 34 px override was found Oct 19, 2026). */
   padding: 0 14px;
   font-size: 13px;
 }
@@ -8636,6 +8636,7 @@ ul.fav-strip {
 }
 
 .hidden-line-show {
+  position: relative;
   padding: 0;
   border: none;
   background: none;
@@ -8643,6 +8644,13 @@ ul.fav-strip {
   font-weight: 800;
   color: inherit;
   cursor: pointer;
+}
+
+/* The word is 11 px tall; its tap area reaches the 44 px floor without moving the line (found Oct 19, 2026). */
+.hidden-line-show::after {
+  content: '';
+  position: absolute;
+  inset: -16px -10px;
 }
 
 /* The type icon at the very start of a title (build 5, item 12; board icons-r3): inline, link blue, a small gap,

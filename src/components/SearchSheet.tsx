@@ -54,7 +54,8 @@ export function SearchSheet({
 }: {
   homeId: string;
   today: string;
-  onPick: (date: string, metroId: string) => void;
+  /** A day to open, with the event to select on it when the hit names one. */
+  onPick: (date: string, metroId: string, eventId?: string) => void;
   onPickDate: () => void;
   onClose: () => void;
 }) {
@@ -245,7 +246,7 @@ export function SearchSheet({
             <ul className="famous-list search-results">
               {shownHits.slice(0, 12).map((hit) => (
                 <li key={`${hit.metroId}-${hit.date}`}>
-                  <button type="button" className="famous-row" onClick={() => onPick(hit.date, hit.metroId)}>
+                  <button type="button" className="famous-row" onClick={() => onPick(hit.date, hit.metroId, hit.eventId)}>
                     <ReadTile rating={hit.rating} />
                     <span className="famous-text">
                       <span className="famous-headline">{hit.headline}</span>

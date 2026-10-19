@@ -150,7 +150,8 @@ export function MapScreen() {
   // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
   // list scrolls once that would pass the sheet's max height.
   const [open, setOpen] = useState(memory?.sheetOpen ?? false);
-  const [selectedId, setSelectedId] = useState<string | null>(memory?.selectedId ?? null);
+  // A remembered selection first; else the event the address names (`?event=`, a search hit; found Oct 19, 2026: a hit opened the day with nothing selected).
+  const [selectedId, setSelectedId] = useState<string | null>(memory?.selectedId ?? new URLSearchParams(location.search).get('event'));
   const [freezeCamera, setFreezeCamera] = useState(Boolean(memory));
   // The recenter button (Kylie, Oct 6): shows once the map has been moved by hand,
   // or when it opens on a remembered view; a tap frames the night again.
