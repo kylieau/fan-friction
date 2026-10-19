@@ -9259,6 +9259,15 @@ a.follow-lead::after {
   text-overflow: ellipsis;
 }
 
+/* The grey tag in the read's place ("Away", "No read"): one line, the column's full 64 px, since "NO READ" wrapped
+   inside the column's padding (measured Oct 19, 2026). */
+.follow-read .away-tag {
+  white-space: nowrap;
+  padding: 0 4px;
+  margin: 0 -4px;
+  letter-spacing: 0.2px;
+}
+
 .follow-read {
   position: relative;
   z-index: 1;
