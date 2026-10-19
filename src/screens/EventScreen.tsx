@@ -44,8 +44,6 @@ import {
   roundEstimate,
   getCityDate,
   getPersonalLog,
-  isStampLocked,
-  asMetroDate,
   subscribePersonalLog,
   todayIn,
   watchShareOf,
@@ -220,8 +218,6 @@ export function EventScreen() {
   const youRow = log.plans.find((p) => p.eventId === e.id) ?? logged;
   const youShare = youRow && (you?.kind === 'watching' || you?.kind === 'watched') ? watchShareOf(youRow) : undefined;
   const ahead = e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
-  // "Stamped" only once the stamp has locked, 24 hours after the night's last start (C041).
-  const stampLocked = !ahead && isStampLocked(asMetroDate(e.metroId, date, day.events), (METROS[e.metroId] ?? DEFAULT_METRO).timeZone);
   // The station: the schedule's when it names one, else what you wrote down.
   const tv = e.broadcast ?? logged?.tv;
   // The rivals: other events over the floor starting within an hour, biggest first (build notes 2).
@@ -375,7 +371,6 @@ export function EventScreen() {
             See the whole day ›
           </Link>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
-          {a.status === 'formula' && !stampLocked && <div className="draft-note">Verdict</div>}
         </section>
       )}
 
