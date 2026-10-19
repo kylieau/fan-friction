@@ -1,7 +1,7 @@
 import type { CrowdEvent } from './types';
 
 /**
- * An artist record the app owns (Kylie, Oct 19, 2026, answer 3 to `docs/product/artist-genres-proposal.md`): the id a
+ * An artist record the app owns (Kylie, Oct 19, 2026, answer 3 to `docs/archive/proposals/artist-genres-proposal.md`): the id a
  * favorite points at, so aliases ("The Weeknd" / "Weeknd") and sellers' ids attach to it later without renaming the
  * favorite. Shaped like a team or venue record: the registry is code, hand-reviewed, and starts empty by decision; a
  * favorite with no record keeps matching listings by its name, as before.

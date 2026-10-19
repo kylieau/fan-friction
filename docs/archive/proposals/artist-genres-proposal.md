@@ -109,3 +109,5 @@ Not in this step, each a 🚩 or a later call: Wikidata for the second level and
 ## 7. What this would touch
 
 `src/data/favorites.ts` (the id and the genre word), `src/components/FollowingSheet.tsx` and `FavoritesScreen.tsx` (the sub-line), `src/components/useFavoriteRows.ts` (the fallback), `src/data/sources/ticketmasterSource.ts` and `scripts/catalog-write.mjs` (the attraction-id log), `src/data/formula/overlap.ts` (section 4, held). No Map change. No new cost.
+
+Status: closed, Kylie answered every section on Oct 19, 2026 (evening) and the smallest next step is built; her answers are in `docs/product/product-decisions.md`, Oct 19, 2026.

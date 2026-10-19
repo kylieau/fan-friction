@@ -27,7 +27,7 @@ _Last synced: Oct 19, 2026 (evening), Claude Code (Fable 5.1), at `main`'s head,
 1. 🚩 **SeatGeek:** still waiting on the free client id (applied Oct 17). **Remind her at the start of every session until it lands**; then it goes in the `SEATGEEK_CLIENT_ID` Actions secret.
 2. **Confirm or change:** Homestead-Miami Speedway 46,000; the three minor clubs under the STL / TB rule; the review items left open (BACKLOG, "The Oct 19 reviews").
 3. **Phone checks:** the Friends timeline and the sheet's Friends side signed in; the Stubs timeline's two taps; the strip scrolled a year back; Miami Oct 20 on the live site after the deploy.
-4. **The artist-genres proposal** is in `docs/product/artist-genres-proposal.md` (Oct 19, evening); her answers to its ten recommendations are the next step.
+4. **The artist-genres proposal** is in `docs/archive/proposals/artist-genres-proposal.md` (Oct 19, evening); her answers to its ten recommendations are the next step.
 5. **Small-rooms research, next installment** (Chicago onward) and the **seller-terms prompt** (BACKLOG, "Past dates", "Build 5 follow-ups").
 
 ## Open (details in BACKLOG)

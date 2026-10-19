@@ -278,3 +278,5 @@ A suggested next audit, **not performed here**: sample 100 relevant listings eac
 10. **First coverage audit:** which cities, venue set, and event formats should define "good enough" before any coverage percentage becomes a product claim?
 
 The smallest credible next step is an identity-and-label prototype with explicit missing data: app-owned favorites, verified seller mappings where access permits, eighteen editable categories, short display labels, and event-specific tour parsing. The taxonomy can improve without changing what a favorite points to.
+
+Status: closed, Kylie's Oct 19, 2026 answers to `docs/archive/proposals/artist-genres-proposal.md` (recorded in `docs/product/product-decisions.md`), Oct 19, 2026.

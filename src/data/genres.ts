@@ -2,7 +2,7 @@ import type { CrowdEvent } from './types';
 
 /**
  * The genre word an artist carries, the way a team carries a sport and a league (Kylie, Oct 19, 2026, her answers to
- * `docs/product/artist-genres-proposal.md`). The seller's first-level genre maps onto the research's top-level
+ * `docs/archive/proposals/artist-genres-proposal.md`). The seller's first-level genre maps onto the research's top-level
  * categories through this table; the seller's second level is not read (a live pull showed "Rock › Pop" on 167
  * Los Angeles listings and "Amapiano" on 63, defaults, not descriptions). Both the screens and the overlap rule read
  * this one map, so a word can never differ between them. Anything unmapped (Other, Undefined, New Age, Holiday, a
