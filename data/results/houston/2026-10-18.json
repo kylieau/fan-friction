@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-dash-401854024",
+      "metroId": "houston",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "dash",
+      "home": {
+        "name": "Dash",
+        "score": 1
+      },
+      "away": {
+        "name": "Orlando",
+        "score": 2
+      },
+      "attendance": 7248,
+      "capturedAt": "2026-10-19T15:21:07.867Z"
+    }
+  ]
+}

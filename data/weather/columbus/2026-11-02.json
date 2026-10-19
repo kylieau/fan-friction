@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "columbus",
   "date": "2026-11-02",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-11-02",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-19T15:17:11.600Z",
+      "feelsLikeF": 38.6,
+      "tempF": 45.9,
+      "humidity": 90,
+      "windMph": 13.3,
+      "uvIndex": 0,
+      "precipProbability": 22,
+      "precipMm": 0.7,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 53
+    }
+  ],
   "days": [
     {
       "metroId": "columbus",
@@ -15,6 +34,18 @@
       "code": 0,
       "precipProbability": 36,
       "precipMm": 0
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-11-02",
+      "basis": "forecast",
+      "capturedAt": "2026-10-19T15:17:11.600Z",
+      "feelsLikeHighF": 51.8,
+      "feelsLikeLowF": 37.9,
+      "code": 55,
+      "precipProbability": 23,
+      "precipMm": 8.1
     }
   ]
 }

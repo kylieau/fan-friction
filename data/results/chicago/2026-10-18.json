@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-chicago-stars-401854026",
+      "metroId": "chicago",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "martin-stadium",
+      "homeTeamId": "chicago-stars",
+      "home": {
+        "name": "Stars",
+        "score": 1
+      },
+      "away": {
+        "name": "Reign",
+        "score": 3
+      },
+      "capturedAt": "2026-10-19T15:21:02.929Z"
+    },
+    {
+      "eventId": "2026-10-18-ht-chicago-wolves-1029162",
+      "metroId": "chicago",
+      "date": "2026-10-18",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "allstate-arena",
+      "homeTeamId": "chicago-wolves",
+      "home": {
+        "name": "Wolves",
+        "score": 3
+      },
+      "away": {
+        "name": "Wild",
+        "score": 2
+      },
+      "attendance": 3993,
+      "capturedAt": "2026-10-19T15:21:02.931Z"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-chiefs-401873006",
+      "metroId": "kansas-city",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arrowhead-stadium",
+      "homeTeamId": "chiefs",
+      "home": {
+        "name": "Chiefs",
+        "score": 22
+      },
+      "away": {
+        "name": "Chargers",
+        "score": 6
+      },
+      "attendance": 73640,
+      "capturedAt": "2026-10-19T15:21:07.609Z",
+      "duration": {
+        "minutes": 181,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

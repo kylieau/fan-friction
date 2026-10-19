@@ -1,0 +1,1204 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "metroName": "Atlanta",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-19",
+  "capturedAt": "2026-10-19T15:18:56.347Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-19",
+    "through": "2026-11-02"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 1
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 10
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-19-tm-vvG1zZ_1p_clEl",
+      "metroId": "atlanta",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1p_clEl",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG1zZ_FUW3nLL",
+      "metroId": "atlanta",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "officialTitle": "Teddy Swims: The UGLY Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Teddy Swims",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_FUW3nLL",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-dream-401918307",
+      "metroId": "atlanta",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Dream vs. Valkyries",
+      "stakes": {
+        "round": "Finals",
+        "game": 3
+      },
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "dream",
+        "away": "valkyries",
+        "awayOpponent": "valkyries"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17600,
+        "low": 17600,
+        "high": 17600,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-ksu-football-401871056",
+      "metroId": "atlanta",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kennesaw St vs. Liberty Flames",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ksu-football",
+        "away": "liberty",
+        "awayOpponent": "liberty"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 10227,
+        "low": 9493,
+        "high": 11004,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1zZ_FxEt19L",
+      "metroId": "atlanta",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_FxEt19L",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1zZ_A3EpGC8",
+      "metroId": "atlanta",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "CeCe Winans",
+      "officialTitle": "CeCe Winans - COME WORSHIP! Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "CeCe Winans",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_A3EpGC8",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1zZ_kw099iN",
+      "metroId": "atlanta",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rawayana",
+      "officialTitle": "RAWAYANA - ¿Dónde es el after? World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chastain-park-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_kw099iN",
+      "expectedDraw": {
+        "count": 6900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-dream-401918308",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Dream vs. Valkyries",
+      "stakes": {
+        "round": "Finals",
+        "game": 4
+      },
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "dream",
+        "away": "valkyries",
+        "awayOpponent": "valkyries"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17600,
+        "low": 17600,
+        "high": 17600,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-gt-football-401858273",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Georgia Tech vs. Boston College",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "bobby-dodd-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "gt-football",
+        "away": "bc-football",
+        "awayOpponent": "boston-college"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 48249,
+        "low": 46513,
+        "high": 65836,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-atlanta-united-761893",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Atlanta United vs. Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlanta-united",
+        "away": "chicago-fire",
+        "awayOpponent": "chicago"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 41032,
+        "low": 37289,
+        "high": 42385,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-hawks-401909856",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Hawks vs. Rockets",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "hawks",
+        "away": "rockets",
+        "awayOpponent": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 17430,
+        "low": 16863,
+        "high": 18049,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-falcons-401873017",
+      "metroId": "atlanta",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Falcons vs. 49ers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "falcons",
+        "away": "sf-49ers",
+        "awayOpponent": "49ers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 70306,
+        "low": 69806,
+        "high": 70854,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1zZ_6Dbxqs6",
+      "metroId": "atlanta",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Johnny Blue Skies",
+      "officialTitle": "Johnny Blue Skies & the Dark Clouds - Mutiny for the Masses 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Johnny Blue Skies",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6Dbxqs6",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-hawks-401909881",
+      "metroId": "atlanta",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hawks vs. Heat",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "hawks",
+        "away": "heat",
+        "awayOpponent": "heat"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15945,
+        "low": 15369,
+        "high": 16777,
+        "fromCrowds": true,
+        "games": 35,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 35 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-hawks-401909893",
+      "metroId": "atlanta",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hawks vs. Cavaliers",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "hawks",
+        "away": "cavaliers",
+        "awayOpponent": "cavaliers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16425,
+        "low": 15831,
+        "high": 17281,
+        "fromCrowds": true,
+        "games": 35,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 35 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1zZ_5pbvQ93",
+      "metroId": "atlanta",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zach Top",
+      "officialTitle": "Zach Top: Cold Beer & Country Music Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Zach Top",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_5pbvQ93",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1zZ_2X4sIuB",
+      "metroId": "atlanta",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chastain-park-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2X4sIuB",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 6900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-florida-georgia",
+      "metroId": "atlanta",
+      "date": "2026-10-31",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Florida vs. Georgia (neutral site)",
+      "neutralSite": true,
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "crowd": [],
+      "expectedDraw": {
+        "count": 75000,
+        "note": "Expanded setup, official (75,000); a one-year move from Jacksonville. An estimate."
+      },
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-31-tm-vvG1zZ_83DtnFh",
+      "metroId": "atlanta",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chastain-park-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_83DtnFh",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 6900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1zZ_F1gFmtS",
+      "metroId": "atlanta",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_F1gFmtS",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-gsu-football-401869944",
+      "metroId": "atlanta",
+      "date": "2026-10-31",
+      "start": null,
+      "kind": "game",
+      "title": "Georgia St vs. Coastal",
+      "place": {
+        "type": "venue",
+        "venueId": "center-parc-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "gsu-football",
+        "away": "coastal",
+        "awayOpponent": "coastal"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20161,
+        "low": 16509,
+        "high": 20335,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-atlanta-united-761931",
+      "metroId": "atlanta",
+      "date": "2026-11-01",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Atlanta United vs. Toronto FC",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlanta-united",
+        "away": "toronto-fc",
+        "awayOpponent": "toronto"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 40919,
+        "low": 40214,
+        "high": 41882,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 3 games, 2025."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-gt-wbb-401913714",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Georgia Tech vs. Hofstra",
+      "place": {
+        "type": "venue",
+        "venueId": "mccamish-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gt-wbb",
+        "away": "hofstra",
+        "awayOpponent": "hofstra"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1439,
+        "low": 1293,
+        "high": 1534,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-gsu-mbb-401910994",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Georgia St vs. Bowling Green",
+      "place": {
+        "type": "venue",
+        "venueId": "gsu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gsu-mbb",
+        "away": "bowling-green",
+        "awayOpponent": "bowling-green"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1262,
+        "low": 806,
+        "high": 1300,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-ksu-mbb-401926787",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Kennesaw St vs. Midway",
+      "place": {
+        "type": "venue",
+        "venueId": "ksu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "ksu-mbb",
+        "away": "midway",
+        "awayOpponent": "midway"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2733,
+        "low": 2569,
+        "high": 11496,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-ksu-wbb-401927994",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Kennesaw St vs. Shorter",
+      "place": {
+        "type": "venue",
+        "venueId": "ksu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "ksu-wbb",
+        "away": "shorter",
+        "awayOpponent": "shorter"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 576,
+        "low": 515,
+        "high": 675,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-19-tm-vvG1zZ_1p_clEl",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG1zZ_FUW3nLL",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-dream-401918307",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17600,
+        "low": 17600,
+        "high": 17600
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-ksu-football-401871056",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Sombr · You Are The Reason Tour 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10227,
+        "low": 9493,
+        "high": 11004
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1zZ_FxEt19L",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Liberty Flames at Kennesaw St 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1zZ_A3EpGC8",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Rawayana 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1zZ_kw099iN",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "CeCe Winans · COME WORSHIP! Tour 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6900
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-dream-401918308",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "Boston College at Georgia Tech 1.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17600,
+        "low": 17600,
+        "high": 17600
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-gt-football-401858273",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "Fire at Atlanta United 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 48249,
+        "low": 46513,
+        "high": 65836
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-atlanta-united-761893",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "Boston College at Georgia Tech 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 41032,
+        "low": 37289,
+        "high": 42385
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-hawks-401909856",
+      "date": "2026-10-24",
+      "start": "20:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Fire at Atlanta United and Boston College at Georgia Tech next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17430,
+        "low": 16863,
+        "high": 18049
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-falcons-401873017",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 70306,
+        "low": 69806,
+        "high": 70854
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1zZ_6Dbxqs6",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "49ers at Falcons next door, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-hawks-401909881",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15945,
+        "low": 15369,
+        "high": 16777
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-hawks-401909893",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Zach Top 24 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16425,
+        "low": 15831,
+        "high": 17281
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1zZ_5pbvQ93",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Cavaliers at Hawks 24 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1zZ_2X4sIuB",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6900
+      }
+    },
+    {
+      "eventId": "2026-10-31-florida-georgia",
+      "date": "2026-10-31",
+      "start": "15:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Low",
+        "why": "Coastal at Georgia St 1.5 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 75000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1zZ_83DtnFh",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Georgia · Neutral site 8.5 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6900
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1zZ_F1gFmtS",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Georgia · Neutral site next door, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-gsu-football-401869944",
+      "date": "2026-10-31",
+      "start": null,
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Georgia · Neutral site 1.5 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20161,
+        "low": 16509,
+        "high": 20335
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-atlanta-united-761931",
+      "date": "2026-11-01",
+      "start": "16:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 40919,
+        "low": 40214,
+        "high": 41882
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-gt-wbb-401913714",
+      "date": "2026-11-02",
+      "start": "10:30",
+      "draw": {
+        "count": 1439,
+        "low": 1293,
+        "high": 1534
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-gsu-mbb-401910994",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "draw": {
+        "count": 1262,
+        "low": 806,
+        "high": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-ksu-mbb-401926787",
+      "date": "2026-11-02",
+      "start": null,
+      "draw": {
+        "count": 2733,
+        "low": 2569,
+        "high": 11496
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-ksu-wbb-401927994",
+      "date": "2026-11-02",
+      "start": null,
+      "draw": {
+        "count": 576,
+        "low": 515,
+        "high": 675
+      }
+    }
+  ]
+}

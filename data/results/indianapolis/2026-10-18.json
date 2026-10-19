@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-colts-401873003",
+      "metroId": "indianapolis",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lucas-oil-stadium",
+      "homeTeamId": "colts",
+      "home": {
+        "name": "Colts",
+        "score": 20
+      },
+      "away": {
+        "name": "Titans",
+        "score": 26
+      },
+      "attendance": 64273,
+      "capturedAt": "2026-10-19T15:21:08.166Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

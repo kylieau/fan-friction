@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-raiders-401873005",
+      "metroId": "las-vegas",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allegiant-stadium",
+      "homeTeamId": "raiders",
+      "home": {
+        "name": "Raiders",
+        "score": 30
+      },
+      "away": {
+        "name": "Bills",
+        "score": 33
+      },
+      "attendance": 62618,
+      "capturedAt": "2026-10-19T15:21:07.334Z",
+      "duration": {
+        "minutes": 187,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

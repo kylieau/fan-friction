@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-wild-401892533",
+      "metroId": "minneapolis",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 2
+      },
+      "away": {
+        "name": "Blue Jackets",
+        "score": 1
+      },
+      "attendance": 18012,
+      "capturedAt": "2026-10-19T15:21:08.643Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "18:08"
+    }
+  ]
+}

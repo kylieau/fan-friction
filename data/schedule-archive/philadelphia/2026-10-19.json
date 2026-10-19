@@ -1,0 +1,2676 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "metroName": "Philadelphia",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-19",
+  "capturedAt": "2026-10-19T15:19:25.155Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-19",
+    "through": "2026-11-02"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 57
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-19-espn-flyers-401892536",
+      "metroId": "philadelphia",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Flyers vs. Avalanche",
+      "broadcast": "NBC Sports Phil",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "flyers",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16251,
+        "low": 15891,
+        "high": 17331,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-vv1AeZkf4GkdoL_eb",
+      "metroId": "philadelphia",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Katt Williams On Book Tour!",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Katt Williams",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AeZkf4GkdoL_eb"
+    },
+    {
+      "id": "2026-10-19-tm-Z7r9jZ1A7x7eZ",
+      "metroId": "philadelphia",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ghostbusters in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ghostbusters in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x7eZ",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-Z7r9jZ1AAebvJ",
+      "metroId": "philadelphia",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mike D 5D",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Mike D 5D",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebvJ"
+    },
+    {
+      "id": "2026-10-20-tm-Z7r9jZ1A7-9f-",
+      "metroId": "philadelphia",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Mushroomhead",
+      "officialTitle": "Mushroomhead and Fear Factory - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Mushroomhead",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-9f-",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vv17FZ_FGknIiBH-",
+      "metroId": "philadelphia",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "JPEGMAFIA",
+      "officialTitle": "JPEGMAFIA: the Experimental Rap Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "JPEGMAFIA",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17FZ_FGknIiBH-",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A7-M06",
+      "metroId": "philadelphia",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M06",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A70_Pw",
+      "metroId": "philadelphia",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Airborne Toxic Event",
+      "officialTitle": "The Airborne Toxic Event- All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Airborne Toxic Event",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70_Pw",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1AAvKog",
+      "metroId": "philadelphia",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Night of the Living Drag All Ages (Mature Content)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Night of the Living Drag",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvKog"
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1AAZP7v",
+      "metroId": "philadelphia",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Quadeca",
+      "officialTitle": "Quadeca w/ Derby",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Quadeca",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZP7v",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1FZ_5C1NAJ3",
+      "metroId": "philadelphia",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot US Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1FZ_5C1NAJ3",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-sixers-401909093",
+      "metroId": "philadelphia",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "76ers vs. Cavaliers",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sixers",
+        "away": "cavaliers",
+        "awayOpponent": "cavaliers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19746,
+        "low": 18765,
+        "high": 19769,
+        "fromCrowds": true,
+        "games": 43,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 43 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7x8_F",
+      "metroId": "philadelphia",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Insane Clown Posse",
+      "place": {
+        "type": "venue",
+        "venueId": "franklin-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Insane Clown Posse",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x8_F",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7-M0F",
+      "metroId": "philadelphia",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0F",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A70SaE",
+      "metroId": "philadelphia",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Waylon Wyatt",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Waylon Wyatt",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70SaE"
+    },
+    {
+      "id": "2026-10-22-tm-Z7r9jZ1A7Ps_d",
+      "metroId": "philadelphia",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Jayhawks",
+      "officialTitle": "The Jayhawks - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Jayhawks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ps_d",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-penn-football-401870841",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penn vs. Yale",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "penn-franklin-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "penn-football",
+        "away": "yale",
+        "awayOpponent": "yale"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1861,
+        "low": 832,
+        "high": 3324,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7-M0a",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0a",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vv17FZ_aGkiXWcUo",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "horsegiirL",
+      "officialTitle": "horsegiirL - NATURE IS HEALING TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "horsegiirL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17FZ_aGkiXWcUo",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vv1AeZkoxGkeycHJL",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jesse Welles",
+      "officialTitle": "WXPN Welcomes Jesse Welles: Red Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "the-met-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jesse Welles",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AeZkoxGkeycHJL",
+      "expectedDraw": {
+        "count": 3400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7xpup",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Musical Box",
+      "officialTitle": "The Musical Box - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "The Musical Box",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpup",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70__O",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "special",
+      "title": "Paris Paloma",
+      "place": {
+        "type": "venue",
+        "venueId": "franklin-music-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Paris Paloma",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70__O"
+    },
+    {
+      "id": "2026-10-24-espn-flyers-401892566",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Flyers vs. Ducks",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "flyers",
+        "away": "ducks",
+        "awayOpponent": "ducks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17925,
+        "low": 17206,
+        "high": 18557,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7-M0o",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "13:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0o",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-10-24-espn-villanova-football-401868035",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Villanova vs. Lehigh",
+      "place": {
+        "type": "venue",
+        "venueId": "villanova-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "villanova-football",
+        "away": "lehigh",
+        "awayOpponent": "lehigh"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4605,
+        "low": 2728,
+        "high": 5632,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-philadelphia-union-761894",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Union vs. Revolution",
+      "place": {
+        "type": "venue",
+        "venueId": "subaru-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "philadelphia-union",
+        "away": "revolution",
+        "awayOpponent": "new-england"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18626,
+        "low": 18227,
+        "high": 18749,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-sixers-401909855",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "76ers vs. Bucks",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sixers",
+        "away": "bucks",
+        "awayOpponent": "bucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19178,
+        "low": 19006,
+        "high": 19501,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A70tek",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "Movements w/ Balance & Composure",
+      "place": {
+        "type": "venue",
+        "venueId": "franklin-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Movements",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tek",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv17FZ_6GkT9acwS",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Cavetown",
+      "officialTitle": "Cavetown - Running With Scissors Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Cavetown",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17FZ_6GkT9acwS",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1FZ_1SKMms5",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Arcángel",
+      "officialTitle": "Arcángel - La 8va Maravilla World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-met-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Arcángel",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1FZ_1SKMms5",
+      "expectedDraw": {
+        "count": 3400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A707ok",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Damned",
+      "officialTitle": "The Damned w/ Flamin Groovies",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Damned",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A707ok",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7xpu9",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Musical Box",
+      "officialTitle": "The Musical Box - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "The Musical Box",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpu9",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-M03",
+      "metroId": "philadelphia",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M03",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-25-espn-sixers-401909866",
+      "metroId": "philadelphia",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "game",
+      "title": "76ers vs. Pistons",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sixers",
+        "away": "pistons",
+        "awayOpponent": "pistons"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19682,
+        "low": 19444,
+        "high": 19702,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-Ovy",
+      "metroId": "philadelphia",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bruce Cockburn",
+      "officialTitle": "Bruce Cockburn - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Bruce Cockburn",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Ovy",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7OFvw",
+      "metroId": "philadelphia",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Osees",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Osees",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OFvw",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1A703ab",
+      "metroId": "philadelphia",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Glenn Miller Orchestra",
+      "officialTitle": "Glenn Miller Orchestra- All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Glenn Miller Orchestra",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A703ab",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-eagles-401873009",
+      "metroId": "philadelphia",
+      "date": "2026-10-26",
+      "start": "20:15",
+      "kind": "game",
+      "title": "Eagles vs. Cowboys",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-financial-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "eagles",
+        "away": "cowboys",
+        "awayOpponent": "cowboys"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 69879,
+        "low": 69879,
+        "high": 69879,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 21 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-flyers-401892585",
+      "metroId": "philadelphia",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Flyers vs. Blue Jackets",
+      "broadcast": "NBC Sports Phil",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "flyers",
+        "away": "blue-jackets",
+        "awayOpponent": "blue-jackets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16235,
+        "low": 15875,
+        "high": 17314,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7-M0f",
+      "metroId": "philadelphia",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0f",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7Q6vf",
+      "metroId": "philadelphia",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Sukhishvili Georgian National Ballet - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Narodowy Balet Gruzji Sukhishvili",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Q6vf"
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AAZUbN",
+      "metroId": "philadelphia",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bassvictim",
+      "officialTitle": "Bassvictim w/ Thoom",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bassvictim",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUbN",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7-M0p",
+      "metroId": "philadelphia",
+      "date": "2026-10-28",
+      "start": "13:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0p",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-28-tm-17GZv0G61p0-pPK",
+      "metroId": "philadelphia",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17GZv0G61p0-pPK",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-17GZv0G655b8PNo",
+      "metroId": "philadelphia",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Suites - JOURNEY - Final Frontier Tour (an Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Xfinity Mobile Arena Premium Seating",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17GZv0G655b8PNo",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A70t8v",
+      "metroId": "philadelphia",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jukebox the Ghost",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Jukebox the Ghost",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t8v",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7-M09",
+      "metroId": "philadelphia",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M09",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PZP6",
+      "metroId": "philadelphia",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Yunchan Lim w/ Philadelphia Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "marian-anderson-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Yunchan Lim",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PZP6",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PdOv",
+      "metroId": "philadelphia",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Blair Witch Project Movie Screening and Q&A with Heather Donahue, Joshua Leonard, Michael C. Williams (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The Blair Witch Project",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PdOv"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1AAv37d",
+      "metroId": "philadelphia",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Speed w/ E-Town Concrete",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Speed",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv37d"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A70fp4",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Yunchan Lim w/ Philadelphia Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "marian-anderson-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Yunchan Lim",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70fp4",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-espn-sixers-401909280",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "game",
+      "title": "76ers vs. Knicks",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sixers",
+        "away": "knicks",
+        "awayOpponent": "knicks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19800,
+        "low": 19785,
+        "high": 19819,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7-M0b",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0b",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1kFZ_oGeG7HNoY",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yebba",
+      "officialTitle": "Yebba: Jean Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Yebba",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kFZ_oGeG7HNoY",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7Je39",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Magical Mystery Doors",
+      "officialTitle": "Magical Mystery Doors - All Ages (under 16 with adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Magical Mystery Doors",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Je39",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PE8V",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Vince Staples",
+      "place": {
+        "type": "venue",
+        "venueId": "franklin-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Vince Staples",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE8V",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAvO4N",
+      "metroId": "philadelphia",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "kind": "special",
+      "title": "Holywatr w/ Mercury",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Holywatr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvO4N"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7-M0O",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "13:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0O",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PZPF",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Yunchan Lim w/ Philadelphia Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "marian-anderson-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Yunchan Lim",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PZPF",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-17GZv0G65wxRAE5",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Motionless In White",
+      "officialTitle": "Motionless In White: The Sweat and Blood Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Motionless In White",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17GZv0G65wxRAE5",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-17GZv0G6GJ_P0fL",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Suites - Motionless In White: The Sweat And Blood Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Xfinity Mobile Arena Premium Seating",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17GZv0G6GJ_P0fL",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv17FZ_8Gkml9iT6",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "special",
+      "title": "MARVIN - The Marvin Gaye Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "the-met-philadelphia"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "MARVIN - The Marvin Gaye Musical",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17FZ_8Gkml9iT6"
+    },
+    {
+      "id": "2026-10-31-tm-vv1AeZkfkGkdwapJf",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Third Eye Blind",
+      "officialTitle": "Third Eye Blind - Halloween 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Third Eye Blind",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AeZkfkGkdwapJf",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7Pxv4",
+      "metroId": "philadelphia",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Boy Harsher",
+      "officialTitle": "Making Time PURE HALLOWEEN with Boy Harsher, Model/Actriz, Conducta, Marie Davidson (DJ Set) - 21 and Over",
+      "place": {
+        "type": "venue",
+        "venueId": "franklin-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Boy Harsher",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pxv4",
+      "expectedDraw": {
+        "count": 2700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7-M0-",
+      "metroId": "philadelphia",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "academy-of-music"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-M0-",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-01-espn-flyers-401892626",
+      "metroId": "philadelphia",
+      "date": "2026-11-01",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Flyers vs. Mammoth",
+      "broadcast": "NBC Sports Phil",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "flyers",
+        "away": "utah-mammoth",
+        "awayOpponent": "mammoth"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18659,
+        "low": 17446,
+        "high": 19073,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7Pt-P",
+      "metroId": "philadelphia",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Judah & the Lion",
+      "officialTitle": "Judah and The Lion",
+      "place": {
+        "type": "venue",
+        "venueId": "union-transfer"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Judah & the Lion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pt-P",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vv17FZ_kGkmmxHFD",
+      "metroId": "philadelphia",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rawayana",
+      "officialTitle": "RAWAYANA - ¿Dónde es el after? World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-met-philadelphia"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17FZ_kGkmmxHFD",
+      "expectedDraw": {
+        "count": 3400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1AAvgaO",
+      "metroId": "philadelphia",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Michael Feinstein",
+      "place": {
+        "type": "venue",
+        "venueId": "keswick-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Michael Feinstein",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvgaO",
+      "expectedDraw": {
+        "count": 1361,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-delaware-mbb-401920902",
+      "metroId": "philadelphia",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Delaware vs. Notre Dame MD",
+      "place": {
+        "type": "venue",
+        "venueId": "bob-carpenter-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "delaware-mbb",
+        "away": "notre-dame-md",
+        "awayOpponent": "notre-dame-md"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1775,
+        "low": 1481,
+        "high": 2007,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-sixers-401909912",
+      "metroId": "philadelphia",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "76ers vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "xfinity-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sixers",
+        "away": "bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19568,
+        "low": 18707,
+        "high": 19584,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-temple-mbb-401925857",
+      "metroId": "philadelphia",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Temple vs. C Connecticut",
+      "place": {
+        "type": "venue",
+        "venueId": "liacouras-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "temple-mbb",
+        "away": "c-connecticut",
+        "awayOpponent": "c-connecticut"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3637,
+        "low": 3561,
+        "high": 4119,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-19-espn-flyers-401892536",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16251,
+        "low": 15891,
+        "high": 17331
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vv1AeZkf4GkdoL_eb",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-Z7r9jZ1A7x7eZ",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-Z7r9jZ1AAebvJ",
+      "date": "2026-10-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-Z7r9jZ1A7-9f-",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vv17FZ_FGknIiBH-",
+      "date": "2026-10-20",
+      "start": "19:30",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A7-M06",
+      "date": "2026-10-21",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A70_Pw",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1AAvKog",
+      "date": "2026-10-21",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1AAZP7v",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1FZ_5C1NAJ3",
+      "date": "2026-10-22",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-sixers-401909093",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19746,
+        "low": 18765,
+        "high": 19769
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7x8_F",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2700
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7-M0F",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A70SaE",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-Z7r9jZ1A7Ps_d",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-penn-football-401870841",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "draw": {
+        "count": 1861,
+        "low": 832,
+        "high": 3324
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7-M0a",
+      "date": "2026-10-23",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-23-tm-vv17FZ_aGkiXWcUo",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AeZkoxGkeycHJL",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "draw": {
+        "count": 3400
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7xpup",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70__O",
+      "date": "2026-10-23",
+      "start": "20:30"
+    },
+    {
+      "eventId": "2026-10-24-espn-flyers-401892566",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17925,
+        "low": 17206,
+        "high": 18557
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7-M0o",
+      "date": "2026-10-24",
+      "start": "13:30",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-villanova-football-401868035",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4605,
+        "low": 2728,
+        "high": 5632
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-philadelphia-union-761894",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Bucks at 76ers 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18626,
+        "low": 18227,
+        "high": 18749
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-sixers-401909855",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Revolution at Union 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19178,
+        "low": 19006,
+        "high": 19501
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A70tek",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2700
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv17FZ_6GkT9acwS",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1FZ_1SKMms5",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3400
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A707ok",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7xpu9",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-M03",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-sixers-401909866",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19682,
+        "low": 19444,
+        "high": 19702
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-Ovy",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7OFvw",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1A703ab",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-eagles-401873009",
+      "date": "2026-10-26",
+      "start": "20:15",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 69879,
+        "low": 69879,
+        "high": 69879
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-flyers-401892585",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16235,
+        "low": 15875,
+        "high": 17314
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7-M0f",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7Q6vf",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AAZUbN",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7-M0p",
+      "date": "2026-10-28",
+      "start": "13:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-17GZv0G61p0-pPK",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Suites - JOURNEY - Final Fronti… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-17GZv0G655b8PNo",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Journey next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A70t8v",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7-M09",
+      "date": "2026-10-29",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PZP6",
+      "date": "2026-10-29",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PdOv",
+      "date": "2026-10-29",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1AAv37d",
+      "date": "2026-10-29",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A70fp4",
+      "date": "2026-10-30",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-sixers-401909280",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19800,
+        "low": 19785,
+        "high": 19819
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7-M0b",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1kFZ_oGeG7HNoY",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7Je39",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PE8V",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2700
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAvO4N",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7-M0O",
+      "date": "2026-10-31",
+      "start": "13:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PZPF",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-17GZv0G65wxRAE5",
+      "date": "2026-10-31",
+      "start": "18:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Suites - Motionless In White: T… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-17GZv0G6GJ_P0fL",
+      "date": "2026-10-31",
+      "start": "18:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Motionless In White next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv17FZ_8Gkml9iT6",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AeZkfkGkdwapJf",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7Pxv4",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2700
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7-M0-",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-flyers-401892626",
+      "date": "2026-11-01",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18659,
+        "low": 17446,
+        "high": 19073
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7Pt-P",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv17FZ_kGkmmxHFD",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3400
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1AAvgaO",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1361
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-delaware-mbb-401920902",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1775,
+        "low": 1481,
+        "high": 2007
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-sixers-401909912",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19568,
+        "low": 18707,
+        "high": 19584
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-temple-mbb-401925857",
+      "date": "2026-11-02",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3637,
+        "low": 3561,
+        "high": 4119
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-18",
+  "results": [
+    {
+      "eventId": "2026-10-18-espn-browns-401872997",
+      "metroId": "cleveland",
+      "date": "2026-10-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "huntington-bank-field",
+      "homeTeamId": "browns",
+      "home": {
+        "name": "Browns",
+        "score": 13
+      },
+      "away": {
+        "name": "Ravens",
+        "score": 10
+      },
+      "attendance": 65872,
+      "capturedAt": "2026-10-19T15:21:05.650Z",
+      "duration": {
+        "minutes": 173,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-10-18-mlb-849817",
+      "metroId": "cleveland",
+      "date": "2026-10-18",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "progressive-field",
+      "homeTeamId": "guardians",
+      "home": {
+        "name": "Guardians",
+        "score": 1
+      },
+      "away": {
+        "name": "Rays",
+        "score": 3
+      },
+      "capturedAt": "2026-10-19T15:21:05.862Z",
+      "attendance": 36303,
+      "duration": {
+        "minutes": 170,
+        "kind": "official"
+      },
+      "startedAt": "17:08"
+    }
+  ]
+}
