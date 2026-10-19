@@ -254,12 +254,23 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
   if (q.length < 2) return [];
   const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
   const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
-  const hits = new Map<string, { titles: string[]; matched: string[]; anyVisible: boolean; eventId?: string; hiddenEventId?: string }>();
+  const hits = new Map<string, { titles: string[]; matched: string[]; artists: string[]; festivals: string[]; anyVisible: boolean; eventId?: string; hiddenEventId?: string }>();
+  const addName = (list: string[], name: string) => {
+    if (!list.some((m) => m.toLowerCase() === name.toLowerCase())) list.push(name);
+  };
 
   for (const event of events) {
     const names = matchingNames(event, q);
     if (!names) continue;
-    const row = hits.get(event.date) ?? { titles: [], matched: [], anyVisible: false };
+    const row = hits.get(event.date) ?? { titles: [], matched: [], artists: [], festivals: [], anyVisible: false };
+    // What a person can follow from this match (R16, Oct 19, 2026): an act's name from a show or a special, when the
+    // seller lists it as an act (or no source says otherwise), and a festival by its title. A game offers its teams
+    // through the team records; its title, and a listing's own name standing in for a performer, are never artists.
+    const performer = event.performer?.trim();
+    if (performer && (event.kind === 'show' || event.kind === 'special') && event.act !== false && names.some((n) => n.toLowerCase() === performer.toLowerCase())) {
+      addName(row.artists, performer);
+    }
+    if (event.kind === 'festival' && names.some((n) => n.toLowerCase() === event.title.toLowerCase())) addName(row.festivals, event.title);
     const shown = !visible || visible(event);
     if (shown) row.anyVisible = true;
     // The first visible match is the one a tap selects on the day; the first match at all when every one is hidden.
@@ -268,9 +279,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
     // The short name, as every row shows it (build 5, item 13).
     const name = listTitle(event);
     if (!row.titles.includes(name)) row.titles.push(name);
-    for (const name of names) {
-      if (!row.matched.some((m) => m.toLowerCase() === name.toLowerCase())) row.matched.push(name);
-    }
+    for (const name of names) addName(row.matched, name);
     hits.set(event.date, row);
   }
 
@@ -284,6 +293,8 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
         rating: rating?.rating ?? null,
         headline: rating?.headline ?? row.titles.slice(0, 2).join(' · '),
         matched: row.matched.slice(0, 3).join(' · '),
+        ...(row.artists.length ? { artists: row.artists } : {}),
+        ...(row.festivals.length ? { festivals: row.festivals } : {}),
         ...(row.eventId ?? row.hiddenEventId ? { eventId: row.eventId ?? row.hiddenEventId } : {}),
         ...(row.anyVisible ? {} : { hidden: true }),
       };

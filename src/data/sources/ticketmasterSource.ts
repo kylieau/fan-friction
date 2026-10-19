@@ -304,6 +304,8 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         place: { type: 'venue', venueId: venue.id },
         audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(`${genre} ${e.classifications?.[0]?.subGenre?.name ?? ''} ${e.name}`) } : { domain: 'other', tag: genre },
         performer,
+        // Whether that performer is an act the feed names, or the listing's name standing in (R16; from the Oct 20 run).
+        act: performers.length > 0,
         ...(kind === 'show' && bigRoom && performerIds.length ? { performerIds } : {}),
         crowd: [],
         sourceId: 'ticketmaster',

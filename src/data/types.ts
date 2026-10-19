@@ -207,6 +207,13 @@ export interface CrowdEvent {
   /** For shows. */
   performer?: string;
   /**
+   * Whether `performer` is an act the seller lists (a Ticketmaster attraction) rather than the listing's own name
+   * used as a stand-in. False when the feed named no act, so a gala, an open house or a premium-seating listing is
+   * never offered as an artist to follow (tester-readiness review R16, Oct 19, 2026); absent on hand seeds and
+   * research loads, whose performer a person wrote, and on rows captured before the field existed.
+   */
+  act?: boolean;
+  /**
    * The seller's ids for the acts on the bill, in the feed's order (Ticketmaster attraction ids), kept for shows at
    * 5,000+ rooms so a favorite can match by id later (Kylie, Oct 19, 2026, answer 4). Never the website's page number.
    */
@@ -389,6 +396,13 @@ export interface DateSearchHit {
   headline: string;
   /** The names that matched, such as "Dodgers · SoFi Stadium". */
   matched: string;
+  /**
+   * The acts among the matches that a person can follow as an artist: a show's or a special's performer when the
+   * seller lists it as an act (R16, Oct 19, 2026). A game's title or teams and a listing's own name never count.
+   */
+  artists?: string[];
+  /** The festivals among the matches, by title, to follow as a festival. */
+  festivals?: string[];
   /** The first matching event that day, so a tap can open the day with it selected (found Oct 19, 2026). */
   eventId?: string;
   /** Every matching event is outside your crowd size range (build 5, item 6): listed under the Show line. */

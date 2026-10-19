@@ -149,6 +149,9 @@ export function SearchSheet({
       if (venue.names.some((n) => n.name.toLowerCase().includes(q))) add(favoriteFor('venue', name));
     }
     for (const hit of hits ?? []) {
+      // A matched name is offered as a team or a venue only when a record carries it. Artists and festivals come from
+      // the hit's own lists (an act the seller names, a festival's title; R16, Oct 19, 2026): a game's title or a
+      // listing's own name is never offered as an artist.
       for (const name of hit.matched.split(' · ')) {
         if (!name || !name.toLowerCase().includes(q)) continue;
         const team = favoriteFor('team', name);
@@ -157,12 +160,10 @@ export function SearchSheet({
           continue;
         }
         const venue = favoriteFor('venue', name);
-        if (venue.venueId) {
-          add(venue);
-          continue;
-        }
-        add(favoriteFor('artist', name));
+        if (venue.venueId) add(venue);
       }
+      for (const name of hit.artists ?? []) if (name.toLowerCase().includes(q)) add(favoriteFor('artist', name));
+      for (const name of hit.festivals ?? []) if (name.toLowerCase().includes(q)) add(favoriteFor('festival', name));
     }
     return [...out.values()];
   }, [q, hits, today]);
@@ -263,6 +264,7 @@ export function SearchSheet({
         )}
         {group('Teams', 'team')}
         {group('Artists', 'artist')}
+        {group('Festivals', 'festival')}
         {group('Venues', 'venue')}
         {people && people.length > 0 && (
           <section className="search-group" aria-label="People">
