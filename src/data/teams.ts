@@ -162,7 +162,10 @@ const SCHOOL_WORDS: Record<string, string> = {
 /** The school a college program is written with: "UCLA", "Boston College", "Houston", "Minnesota". */
 export function schoolWord(team: Team): string {
   const stored = team.shortName.replace(TRAILING_CODE, '').replace(/\s+W$/, '').trim();
-  return SCHOOL_WORDS[stored] ?? stored;
+  const mapped = SCHOOL_WORDS[stored];
+  // The mapped word must open the program's full name ("Portland State Vikings" for PSU), so a later city that stores
+  // "PSU" for Penn State or "Bears" for Baylor falls back to its stored word and shows up in review, never as Portland State.
+  return mapped && team.name.startsWith(mapped) ? mapped : stored;
 }
 
 /**
