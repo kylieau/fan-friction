@@ -57,8 +57,10 @@ export function programSide(team: Team): 'men' | 'women' | null {
 
 /**
  * The sport code a college program carries after its school (Kylie, Oct 19, 2026: her own list, not the NCAA's;
- * volleyball by analogy): "UCLA FB", "UCLA MBB", "UCLA WBB", "UCLA MIH", "UCLA BSB", "UCLA SB", "UCLA MSOC". A
- * program whose side is not on file takes the sport's bare code ("BB", "VB", "IH", "SOC") rather than a guessed one.
+ * volleyball by analogy; hockey is MHKY / WHKY, her answer to the naming proposal the same day, one spelling with the
+ * row and chip codes in `src/lib/eventTitle.ts`): "UCLA FB", "UCLA MBB", "UCLA WBB", "UCLA MHKY", "UCLA BSB",
+ * "UCLA SB", "UCLA MSOC". A program whose side is not on file takes the sport's bare code ("BB", "VB", "HKY", "SOC")
+ * rather than a guessed one.
  */
 export function sportLetters(team: Team): string | null {
   const side = programSide(team);
@@ -75,7 +77,7 @@ export function sportLetters(team: Team): string | null {
     case 'volleyball':
       return sided('MVB', 'WVB', 'VB');
     case 'hockey':
-      return sided('MIH', 'WIH', 'IH');
+      return sided('MHKY', 'WHKY', 'HKY');
     case 'soccer':
       return sided('MSOC', 'WSOC', 'SOC');
     default:
@@ -83,7 +85,12 @@ export function sportLetters(team: Team): string | null {
   }
 }
 
-/** The city shortcuts a pro team's display name uses (Kylie, Oct 19): "LA Dodgers", "NY Rangers"; every other city is spelled out. */
+/**
+ * The city shortcuts a pro team's display name uses (Kylie, Oct 19, 2026, and her Oct 19 answers to the naming
+ * proposal): these seven always ("LA Dodgers", "NY Rangers"); St. Louis and Tampa Bay only before a one-word
+ * nickname ("STL Cardinals", "TB Lightning", but "St. Louis CITY SC", "Tampa Bay Sun FC"); New Orleans never (it
+ * reads as the word "no"); every other city is spelled out.
+ */
 const CITY_SHORTCUTS: Record<string, string> = {
   'Los Angeles': 'LA',
   'New York': 'NY',
@@ -93,21 +100,71 @@ const CITY_SHORTCUTS: Record<string, string> = {
   'San José': 'SJ',
   'Kansas City': 'KC',
   'Las Vegas': 'LV',
+};
+const PLAIN_NICKNAME_SHORTCUTS: Record<string, string> = {
   'St. Louis': 'STL',
   'St Louis': 'STL',
   'Tampa Bay': 'TB',
-  'New Orleans': 'NO',
 };
+/** A stored short name that already is the club's brand ("LAFC", "NYCFC", "Sporting KC", "KC Mavericks"): used as the compact name as it is (Kylie, Oct 19, A2). */
+const BRAND_SHORT_NAME = /^[A-Z0-9]{3,}$|(?:^|\s)(?:LA|NY|SF|SD|SJ|KC|LV|STL|TB)(?:\s|$)/;
 
 /** A trailing sport code a stored college short name may already carry ("Marquette MBB", "Columbia FB", "Bears FB"). */
-const TRAILING_CODE = /\s+(?:(?:men's|women's)\s+)?(FB|CFB|MBB|WBB|BSB|SB|VB|MVB|WVB|MH|WH|HK|MIH|WIH|SOC|MSOC|WSOC|football|basketball|baseball|softball|volleyball|hockey|soccer)$/i;
+const TRAILING_CODE = /\s+(?:(?:men's|women's)\s+)?(FB|CFB|MBB|WBB|BSB|SB|VB|MVB|WVB|MH|WH|HK|HKY|MHKY|WHKY|MIH|WIH|SOC|MSOC|WSOC|football|basketball|baseball|softball|volleyball|hockey|soccer)$/i;
 
 /**
- * The name a team is called where there is room for words but not the full name (the Following rows and sheet;
- * Kylie, Oct 19, 2026). A pro team is its city shortcut and nickname ("LA Dodgers", "Golden State Warriors"); a
- * club whose name does not end in its nickname keeps its full name ("Angel City FC"). A college program is its
- * school and sport code ("UCLA FB", "Marquette WBB"), computed from the sport, never from the stored short name.
+ * The school word a college program is written with, where the stored short name is not it (Kylie, Oct 19, 2026,
+ * C1 of the naming proposal: one reviewed word per school, the common athletics name, never initials fans outside
+ * the city do not read and never the mascot). Keyed by the stored short name with its sport code removed; a short
+ * name that already is the school ("UCLA", "Temple", "Ohio State") needs no row. Reviewed by hand, Oct 19.
  */
+const SCHOOL_WORDS: Record<string, string> = {
+  BC: 'Boston College',
+  BU: 'Boston University',
+  UML: 'UMass Lowell',
+  USF: 'South Florida',
+  OWU: 'Ohio Wesleyan',
+  CSU: 'Cleveland State',
+  'IU Indy': 'IU Indianapolis',
+  TSU: 'Tennessee State',
+  MTSU: 'Middle Tennessee',
+  ASU: 'Arizona State',
+  GCU: 'Grand Canyon',
+  'Sac State': 'Sacramento State',
+  'Sac City': 'Sacramento City College',
+  UH: 'Houston',
+  PVAMU: 'Prairie View A&M',
+  Gophers: 'Minnesota',
+  Tommies: 'St. Thomas',
+  LSUNO: 'LSU New Orleans',
+  SLU: 'Saint Louis',
+  SIUE: 'SIU Edwardsville',
+  UNC: 'North Carolina',
+  NCCU: 'North Carolina Central',
+  RMU: 'Robert Morris',
+  Bears: 'Alberta',
+  SDSU: 'San Diego State',
+  UW: 'Washington',
+  UTA: 'UT Arlington',
+  Carabins: 'Montréal',
+  'Varsity Blues': 'Toronto',
+  DU: 'Denver',
+  Ravens: 'Carleton',
+  PSU: 'Portland State',
+  Pilots: 'Portland',
+  UIW: 'Incarnate Word',
+  GMU: 'George Mason',
+  GW: 'George Washington',
+  Hurricanes: 'Miami',
+  'TMU Bold': 'TMU',
+};
+
+/** The school a college program is written with: "UCLA", "Boston College", "Houston", "Minnesota". */
+export function schoolWord(team: Team): string {
+  const stored = team.shortName.replace(TRAILING_CODE, '').replace(/\s+W$/, '').trim();
+  return SCHOOL_WORDS[stored] ?? stored;
+}
+
 /**
  * The sport in words for a college program's long name: "Football", "Men's Basketball", "Women's Ice Hockey". A
  * program whose side is not on file reads the sport alone ("Texas Volleyball"), never a guessed "Men's".
@@ -138,15 +195,25 @@ function sportWords(team: Team): string {
 /** The name a list writes out beside a badge (the Following sheet): "LA Dodgers", "UCLA Football", "UCLA Men's Basketball". */
 export function teamLongName(team: Team): string {
   if (!isCollegeTeam(team)) return teamDisplayName(team);
-  return `${team.shortName.replace(TRAILING_CODE, '').trim()} ${sportWords(team)}`;
+  return `${schoolWord(team)} ${sportWords(team)}`;
 }
 
+/**
+ * The name a team is called where there is room for words but not the full name (the Following rows and sheet, the
+ * picker, the team page header; Kylie, Oct 19, 2026). A college program is its school and sport in words ("UCLA
+ * Football"). A pro team is its city shortcut and nickname ("LA Dodgers", "Golden State Warriors"); a club whose
+ * stored short name already is its brand reads that ("LAFC", "Sporting KC", "KC Mavericks"; A2); any other club
+ * whose name does not end in its nickname keeps its full name ("Angel City FC", "Phoenix Rising FC").
+ */
 export function teamDisplayName(team: Team): string {
-  // A college program spells its sport out ("UCLA Football"; Kylie, Oct 19, later that day, replacing "UCLA FB").
   if (isCollegeTeam(team)) return teamLongName(team);
-  if (!team.name.endsWith(team.shortName) || team.name === team.shortName) return team.name;
+  if (!team.name.endsWith(team.shortName) || team.name === team.shortName) return BRAND_SHORT_NAME.test(team.shortName) ? team.shortName : team.name;
   const city = team.name.slice(0, -team.shortName.length).trim();
-  return city ? `${CITY_SHORTCUTS[city] ?? city} ${team.shortName}` : team.name;
+  if (!city) return team.name;
+  if (CITY_SHORTCUTS[city]) return `${CITY_SHORTCUTS[city]} ${team.shortName}`;
+  // St. Louis and Tampa Bay shorten only before a one-word nickname (A1): "STL Blues", but "St. Louis CITY SC".
+  if (PLAIN_NICKNAME_SHORTCUTS[city] && /^[A-Z][a-z]+$/.test(team.shortName)) return `${PLAIN_NICKNAME_SHORTCUTS[city]} ${team.shortName}`;
+  return team.name;
 }
 
 /**
@@ -213,8 +280,8 @@ const LIST: Team[] = [
   team("lake-country-dockhounds", "Lake Country DockHounds", "DockHounds", "American Association", "baseball", "milwaukee", "LC"),
   team("milwaukee-wave", "Milwaukee Wave", "Milwaukee Wave", "MASL", "soccer", "milwaukee", "MIL"),
   team("lakeshore-chinooks", "Lakeshore Chinooks", "Chinooks", "Northwoods League", "baseball", "milwaukee", "LS"),
-  team("marquette-volleyball", "Marquette Golden Eagles Women's Volleyball", "Marquette VB", "College volleyball", "volleyball", "milwaukee", "MARQ"),
-  team("uwm-volleyball", "Milwaukee Panthers Women's Volleyball", "Milwaukee VB", "College volleyball", "volleyball", "milwaukee", "MILW"),
+  team("marquette-volleyball", "Marquette Golden Eagles Women's Volleyball", "Marquette VB", "College women's volleyball", "volleyball", "milwaukee", "MARQ"),
+  team("uwm-volleyball", "Milwaukee Panthers Women's Volleyball", "Milwaukee VB", "College women's volleyball", "volleyball", "milwaukee", "MILW"),
   team("milwaukee-torrent-men", "Milwaukee Torrent Men", "Torrent Men", "NPSL", "soccer", "milwaukee", "MIL"),
   team("milwaukee-torrent-women", "Milwaukee Torrent Women", "Torrent Women", "WPSL", "soccer", "milwaukee", "MIL"),
   // Boston (Oct 12, 2026; docs/research/city-builds/boston/). Legacy home rooms change by season; Cannons/Guard are tour weekends.
@@ -339,8 +406,8 @@ const LIST: Team[] = [
   team("texas-state-wbb", "Texas State Bobcats Women's Basketball", "Texas State WBB", "College women's basketball", "basketball", "austin", "TXST", ["Bobcats"]),
   team("texas-baseball", "Texas Longhorns Baseball", "Texas Baseball", "College baseball", "baseball", "austin", "TEX", ["Longhorns"]),
   team("texas-softball", "Texas Longhorns Softball", "Texas Softball", "College softball", "softball", "austin", "TEX", ["Longhorns"]),
-  team("texas-soccer", "Texas Longhorns Soccer", "Texas Soccer", "College soccer", "soccer", "austin", "TEX", ["Longhorns"]),
-  team("texas-volleyball", "Texas Longhorns Volleyball", "Texas VB", "College volleyball", "volleyball", "austin", "TEX", ["Longhorns"]),
+  team("texas-soccer", "Texas Longhorns Women's Soccer", "Texas Soccer", "College women's soccer", "soccer", "austin", "TEX", ["Longhorns"]),
+  team("texas-volleyball", "Texas Longhorns Women's Volleyball", "Texas VB", "College women's volleyball", "volleyball", "austin", "TEX", ["Longhorns"]),
   team("austin-fc-ii", "Austin FC II", "Austin FC II", "MLS Next Pro", "soccer", "austin", "ATX2"),
   team("texas-volts", "Texas Volts", "Volts", "AUSL", "softball", "austin", "VOL"),
   team("austin-spurs", "Austin Spurs", "Austin Spurs", "NBA G League", "basketball", "austin", "AUS"),
@@ -374,7 +441,7 @@ const LIST: Team[] = [
   team("sac-state-football", "Sacramento State Hornets Football", "Sac State FB", "College football", "football", "sacramento", "SAC", ["Hornets", "Sacramento State"]),
   team("sac-state-mbb", "Sacramento State Hornets Men's Basketball", "Sac State MBB", "College men's basketball", "basketball", "sacramento", "SAC", ["Hornets"]),
   team("sac-state-wbb", "Sacramento State Hornets Women's Basketball", "Sac State WBB", "College women's basketball", "basketball", "sacramento", "SAC", ["Hornets"]),
-  team("sac-state-volleyball", "Sacramento State Hornets Women's Volleyball", "Sac State VB", "College volleyball", "volleyball", "sacramento", "SAC", ["Hornets"]),
+  team("sac-state-volleyball", "Sacramento State Hornets Women's Volleyball", "Sac State VB", "College women's volleyball", "volleyball", "sacramento", "SAC", ["Hornets"]),
   team("uc-davis-football", "UC Davis Aggies Football", "UC Davis FB", "College football", "football", "sacramento", "UCD", ["Aggies", "UC Davis"]),
   team("uc-davis-mbb", "UC Davis Aggies Men's Basketball", "UC Davis MBB", "College men's basketball", "basketball", "sacramento", "UCD", ["Aggies"]),
   team("uc-davis-wbb", "UC Davis Aggies Women's Basketball", "UC Davis WBB", "College women's basketball", "basketball", "sacramento", "UCD", ["Aggies"]),
@@ -423,7 +490,7 @@ const LIST: Team[] = [
   team("rice-wbb", "Rice Owls Women's Basketball", "Rice WBB", "College women's basketball", "basketball", "houston", "RICE", ["Owls"]),
   team("rice-baseball", "Rice Owls Baseball", "Rice Baseball", "College baseball", "baseball", "houston", "RICE", ["Owls"]),
   // texas-southern-football: Nashville already uses tsu-football for Tennessee State.
-  team("texas-southern-football", "Texas Southern Tigers Football", "TSU", "College football", "football", "houston", "TXSO", ["Tigers"]),
+  team("texas-southern-football", "Texas Southern Tigers Football", "Texas Southern", "College football", "football", "houston", "TXSO", ["Tigers", "TSU"]),
   team("pvamu-football", "Prairie View A&M Panthers Football", "PVAMU", "College football", "football", "houston", "PVAM", ["Panthers"]),
   // Minneapolis–St. Paul (Oct 12, 2026; docs/research/city-builds/minneapolis/). Feed ids checked against live schedules.
   team("vikings", "Minnesota Vikings", "Vikings", "NFL", "football", "minneapolis", "MIN"),
@@ -439,7 +506,7 @@ const LIST: Team[] = [
   team("gophers-wbb", "Minnesota Golden Gophers Women's Basketball", "Gophers WBB", "College women's basketball", "basketball", "minneapolis", "MINN", ["Gophers"]),
   team("gophers-hockey", "Minnesota Golden Gophers Men's Hockey", "Gophers Hockey", "College men's hockey", "hockey", "minneapolis", "MINN", ["Gophers"]),
   team("gophers-whockey", "Minnesota Golden Gophers Women's Hockey", "Gophers W Hockey", "College women's hockey", "hockey", "minneapolis", "MINN", ["Gophers"]),
-  team("gophers-volleyball", "Minnesota Golden Gophers Women's Volleyball", "Gophers VB", "College volleyball", "volleyball", "minneapolis", "MINN", ["Gophers"]),
+  team("gophers-volleyball", "Minnesota Golden Gophers Women's Volleyball", "Gophers VB", "College women's volleyball", "volleyball", "minneapolis", "MINN", ["Gophers"]),
   team("st-thomas-mbb", "St. Thomas Tommies Men's Basketball", "Tommies MBB", "College men's basketball", "basketball", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
   team("st-thomas-wbb", "St. Thomas Tommies Women's Basketball", "Tommies WBB", "College women's basketball", "basketball", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
   team("st-thomas-hockey", "St. Thomas Tommies Men's Hockey", "Tommies Hockey", "College men's hockey", "hockey", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
@@ -528,7 +595,7 @@ const LIST: Team[] = [
   team('edmonton-stingers', 'Edmonton Stingers', 'Stingers', 'CEBL', 'basketball', 'edmonton', 'EDM'),
   team('edmonton-riverhawks', 'Edmonton Riverhawks', 'Riverhawks', 'WCL', 'baseball', 'edmonton', 'EDM'),
   team('ualberta-football', 'Alberta Golden Bears Football', 'Bears FB', 'U Sports football', 'football', 'edmonton', 'UAB', ['Golden Bears']),
-  team('ualberta-hockey', 'Alberta Golden Bears Hockey', 'Bears Hockey', 'U Sports hockey', 'hockey', 'edmonton', 'UAB', ['Golden Bears']),
+  team('ualberta-hockey', 'Alberta Golden Bears Men\'s Hockey', 'Bears Hockey', 'U Sports men\'s hockey', 'hockey', 'edmonton', 'UAB', ['Golden Bears']),
   team('ualberta-mbb', 'Alberta Golden Bears Men\'s Basketball', 'Bears MBB', 'U Sports basketball', 'basketball', 'edmonton', 'UAB', ['Golden Bears']),
   team('spruce-grove-saints', 'Spruce Grove Saints', 'Saints', 'BCHL', 'hockey', 'edmonton', 'SGS'),
   team('sherwood-park-crusaders', 'Sherwood Park Crusaders', 'Crusaders', 'BCHL', 'hockey', 'edmonton', 'SPC'),

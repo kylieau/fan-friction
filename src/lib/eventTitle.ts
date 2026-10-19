@@ -22,7 +22,8 @@ const SHORT_MAX = 32;
 // ---------- Sport labels (Kylie, Oct 15, 2026; docs/research/topics/sport-labels-answer.md) ----------
 // Men's and women's are named alike: "it is not okay that men's sports doesn't specify gender but women's does."
 // The label sits in the event-label slot, not after the teams. Alone it is spelled out ("Men's Basketball"); paired
-// with a round or other label it is the code ("WBB · Round of 64"). Inline in parentheses it is always the code.
+// with a round or other label it is words too ("Women's Basketball · Round of 64"; Kylie, Oct 19, 2026). Inline in
+// parentheses it is always the code ("(WBB · R64)").
 
 /** Code suffix and words per sport. Football, baseball, softball and field hockey carry none: their names differ. */
 const SPORT_CODES: Record<string, { code: string; words: string }> = {
@@ -327,8 +328,8 @@ const LOW_WORDS = /\b(exhibition|friendly|scrimmage|qualifier)\b/i;
 
 /**
  * An event's label: its stage or other label, with the sport in front when the game carries one. Alone, the sport is
- * spelled out on its own line ("Men's Basketball") and the code inline ("(MBB)"); paired, it is the code
- * ("WBB · Round of 64"). The event page spells both out ("Women's Basketball · Round of 64").
+ * spelled out on its own line ("Men's Basketball") and the code inline ("(MBB)"); paired, the own line and the event
+ * page spell it out ("Women's Basketball · Round of 64") and the inline form keeps the code ("WBB · R64").
  */
 export function eventLabel(event: CrowdEvent): EventLabel | null {
   const base = stageLabel(event);
@@ -337,7 +338,9 @@ export function eventLabel(event: CrowdEvent): EventLabel | null {
   const sport = sportLabelOf(event) ?? (tag ? sportFromCode(tag) : null);
   if (!sport) return base;
   if (!base) return { kind: 'sport', own: sport.words, full: sport.words, inline: sport.code, chip: null, ifNecessary: false };
-  return { ...base, own: `${sport.code} · ${base.own}`, inline: `${sport.code} · ${base.inline}`, full: `${sport.words} · ${base.full}` };
+  // On its own line the pair is words too ("Men's Basketball · Round of 64"; Kylie, Oct 19, 2026, A4); the inline
+  // form on bars keeps the code, where there is no room.
+  return { ...base, own: `${sport.words} · ${base.own}`, inline: `${sport.code} · ${base.inline}`, full: `${sport.words} · ${base.full}` };
 }
 
 function stageLabel(event: CrowdEvent): EventLabel | null {
@@ -413,13 +416,16 @@ function readLabel(raw: string): TitleLabel | null {
   const ifNecessary = /,?\s*if necessary$/i.test(text);
   const core = text.replace(/,?\s*if necessary$/i, '').trim();
   const make = (kind: LabelKind, own: string, inline: string): TitleLabel => ({ kind, own, inline, ifNecessary });
-  // A sport label alone ("MBB", "Men's Basketball"), or the code in front of another label ("WBB · Round of 64").
+  // A sport label alone ("MBB", "Men's Basketball"), or the sport in front of another label ("WBB · Round of 64",
+  // "Women's Basketball · Round of 64"). On its own line the pair reads in words, inline as the code (Kylie, Oct 19,
+  // 2026, A4), whichever form the saved title carried.
   const sport = sportFromCode(core) ?? sportFromWords(core);
   if (sport) return make('sport', sport.words, sport.code);
-  const paired = core.match(/^(\S+) · (.+)$/);
-  if (paired && sportFromCode(paired[1])) {
+  const paired = core.match(/^(.+?) · (.+)$/);
+  const pairedSport = paired ? (sportFromCode(paired[1]) ?? sportFromWords(paired[1])) : null;
+  if (paired && pairedSport) {
     const rest = readLabel(paired[2]);
-    if (rest) return { ...rest, own: `${paired[1]} · ${rest.own}`, inline: `${paired[1]} · ${rest.inline}`, ifNecessary: rest.ifNecessary || ifNecessary };
+    if (rest) return { ...rest, own: `${pairedSport.words} · ${rest.own}`, inline: `${pairedSport.code} · ${rest.inline}`, ifNecessary: rest.ifNecessary || ifNecessary };
   }
   if (/^(preseason|spring training(, [a-z]+ league)?|exhibition|friendly|scrimmage|qualifier)$/i.test(core)) return make('low', core, core);
   if (/^(home opener|season finale)$/i.test(core)) return make('occasion', core, core);
