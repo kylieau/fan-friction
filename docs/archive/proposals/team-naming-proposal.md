@@ -100,3 +100,5 @@ The research notes that the house rule says 11 **pt** while the app's sizes are 
 6. C1: go ahead with one reviewed school word per program (recommended; a data pass, nothing on screen changes except the wrong words above)?
 7. C3: the seven sides in section 4; any she knows now?
 8. Section 5: does 11 pt mean 11 CSS px, and do the 12.5 px lines stand?
+
+Status: closed, Kylie answered every question on Oct 19, 2026 (A1 hybrid: NO out, STL and TB on one-word nicknames; A2, A3 with MHKY / WHKY, A4, A5, B1, C1, C3 for Texas and Alberta, section 5 = 11 CSS px); logged in `docs/product/product-decisions.md` and built the same day.

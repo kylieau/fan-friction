@@ -327,3 +327,5 @@ Sources were consulted October 19, 2026. Older guides are used only as evidence 
 [washington]: https://app.gohuskies.com/FB26TicketSpecials
 [minnesota]: https://web3.ncaa.org/directory/orgDetail?id=428
 [ncaa-dir]: https://www.ncaa.org/about-us/membership-directory/
+
+Status: closed, Kylie answered the proposal (`docs/archive/proposals/team-naming-proposal.md`, now under `docs/archive/proposals/`) on Oct 19, 2026; the answers are logged in `docs/product/product-decisions.md` ("Team naming, Kylie's Oct 19 answers") and built the same day.
