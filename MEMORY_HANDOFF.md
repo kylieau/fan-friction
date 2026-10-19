@@ -5,7 +5,7 @@ Overwritten each session. Deferred work and history live in `BACKLOG.md`: open q
 _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled "late evening", was the same day), Claude Code (Fable 5.1), at `main`'s head, pushed. Kylie's standing instructions: one commit per step, straight to `main`, pushed; every tweak she sends is first judged for UX and for conflicts with earlier decisions, and an obvious conflict goes back to her as a question (advisor first). A tap check is part of "measured"._
 
 ## Current state
-**Everything is committed, built and pushed; the working tree is clean.** `npm run build` passes at the head. Six commits this session.
+**Everything is committed, built and pushed; the working tree is clean.** `npm run build` passes at the head. Eight commits this session.
 
 **Her Oct 19 (afternoon) answers at the resume:** phone checks deferred ("ignore for now"; the list stays under her manual steps); SeatGeek still on hold; no new UX notes.
 
@@ -13,9 +13,10 @@ _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled 
 - **Fixed:** a favorite's Near home list and Home's coming-up strip skipped today (the between-dates query's first date is exclusive; both now ask from the day before); measured on Kacey Musgraves' Oct 19 show ("Crypto.com Arena · today").
 - **R15 built:** one shared edge-fade piece (`useEdgeFade`, `src/lib/`) marks a sideways chip row with the edge it clips at; the stylesheet fades that edge only; none where the row fits or at the end reached. Wired on the Stubs, You and People filter rows, the stub sheet's Where row, the Following filter chips (their always-on mask is gone) and the event page's same-tour row. Measured at 390 and 430 px; People is signed-in only, so unmeasured. Home's favorites strip left alone (parked screen).
 - **R13 closed** by the Oct 19 strip change (first cell measured: Mon, Oct 27, 2025, rated). **R14 as decided** (the half calendar row is Kylie's Oct 13 design). **R17 measured** on the Vercel build from the dev container: header about 1 s, chips about 4 s (they wait on the live snapshot read), List about 2.3 s on clean runs; one run stalled; judge on a phone. **R16** waits on the artist record.
-- **R11 built (Kylie: yes, Oct 19 afternoon):** the map key clips only on phones shorter than about 800 px (120 px hidden at 667, 47 at 740; none at 844); it now fades its clipped end in the card's colour (the card keeps its edge; the top fades once scrolled). Recorded in product-decisions (last entry). Screenshots: `assets/r11-key-667-now.png`, `r11-key-fade-667.png`, `r11-key-fade-667-bottom.png`.
+- **R11 built (Kylie: yes, Oct 19 afternoon):** the map key clips only on phones shorter than about 800 px (120 px hidden at 667, 47 at 740; none at 844); it now fades its clipped end in the card's colour (the card keeps its edge; the top fades once scrolled). Recorded in product-decisions. Screenshots: `assets/r11-key-667-now.png`, `r11-key-fade-667.png`, `r11-key-fade-667-bottom.png`.
+- **R16 built (Kylie: "let's do R16"):** search offers an artist only from a show's or a special's performer when the seller lists it as an act (new `act` flag on every Ticketmaster row, from the Oct 20 run; older rows count as acts until re-captured, so "Community Open House" shows as an artist for a day); a game's title is never an artist; festivals get their own group. Recorded in product-decisions (last entry). Measured on "ucla", "kacey", "chappelle", "jo koy", "complexcon". Data, not fixes: a Ticketmaster game whose teams have no record offers nothing to follow; the search lists the 12 newest matching dates.
 
-**Both Oct 19 reviews stay open on her word.** The gap review could close (every G item built, the Near-home item fixed, the other judgment calls stand), but closing moves it and the root-level screenshots both reviews share, so wait for her.
+**Both Oct 19 reviews are fully settled** (every item built, decided or measured). Closing them moves them with the root-level screenshots both reviews share, so wait for her word.
 
 ## Key decisions in force (newest first; older ones are in product-decisions and BACKLOG)
 - **Oct 19 evening (Kylie):** Verdict / friction words (`AGENTS.md`); the artist-genres answers (seven items; the Faves row never shows genre); R4 dropped, R10 by count ("that day" on the card, "that date" in the why line, both hers), R8 option B; the "No verdict" tag at the tile's size; the review process updated; the heavier lean on every open confirm. **Formula:** the Unknown-genre rule applies on unlocked dates only; nothing is re-stamped unless she asks.
@@ -27,7 +28,7 @@ _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled 
 ## Kylie's manual steps
 1. 🚩 **SeatGeek:** still waiting on the free client id (applied Oct 17; "still on hold" Oct 19 afternoon). **Remind her at the start of every session until it lands**; then it goes in the `SEATGEEK_CLIENT_ID` Actions secret, with SeatGeek's linked logo attribution wherever its data shows.
 2. **Phone checks (deferred by her, Oct 19 afternoon; still worth doing):** the Friends timeline and the sheet's Friends side signed in; the "↑ N earlier" line and its tap on Stubs; the "No verdict" tag on a Faves row; the genre word on the sheet and picker with her own artist favorites; Miami Oct 20 on the live site; new: scroll the Stubs filter row (the fade), open a favorite who plays today (Near home).
-3. **The Oct 20 nightly run's log:** the two Lakers preseason games re-added, Miami's snapshots re-upserted, and `performerIds` present on 5,000+ shows in the archive files.
+3. **The Oct 20 nightly run's log:** the two Lakers preseason games re-added, Miami's snapshots re-upserted, `performerIds` present on 5,000+ shows in the archive files, and `act` present on every Ticketmaster row (then "open house" in search should offer no artist).
 
 ## Open (details in BACKLOG)
 1. **Close the two Oct 19 reviews on her word** (everything in them is built, decided or waiting on the artist record; closing moves them with the root-level screenshots they share).
