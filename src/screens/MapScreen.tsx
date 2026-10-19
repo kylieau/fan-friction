@@ -9,6 +9,7 @@ import {
   rangeSpoken,
   weatherGlyph,
   getCityDate,
+  getListRange,
   todayIn,
   followingFeed,
   getAccount,
@@ -85,6 +86,19 @@ export function MapScreen() {
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
+
+  // How far back the day strip reaches: the List's range start (the earliest day with events on file within a year).
+  const [stripFrom, setStripFrom] = useState<string | null>(null);
+  useEffect(() => {
+    let current = true;
+    setStripFrom(null);
+    getListRange(metro.id, today)
+      .then((r) => current && setStripFrom(r.from))
+      .catch(() => current && setStripFrom(null));
+    return () => {
+      current = false;
+    };
+  }, [metro.id, today]);
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -341,7 +355,7 @@ export function MapScreen() {
             </Link>
           </nav>
         </div>
-        <DayStrip metro={metro} today={today} date={date} />
+        <DayStrip metro={metro} today={today} date={date} from={stripFrom} />
         <div className="map-chrome">
           <div className="map-chrome-left">
             {showFeels && dayRange && (

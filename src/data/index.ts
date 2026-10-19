@@ -118,7 +118,24 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
 export async function getListRange(metroId: string, today: LocalDate): Promise<{ from: LocalDate; through: LocalDate }> {
   const ahead = await getEventsBetween(metroId, addDays(today, -1), addDays(today, 500));
   const last = ahead.reduce<LocalDate | null>((max, e) => (max === null || e.date > max ? e.date : max), null);
-  return listRange(metroId, today, last);
+  const range = listRange(metroId, today, last);
+  // Back to the earliest day with an event on file within the last year, when that is before the first capture
+  // (Kylie, Oct 19, 2026: Los Angeles holds past seasons the List could not reach). A year bounds the walk back
+  // through empty weeks; older days stay reachable from the date page and the Map's day arrows.
+  const earliest = await earliestEventDay(metroId, addDays(today, -LIST_BACK_DAYS), today);
+  return earliest && earliest < range.from ? { ...range, from: earliest } : range;
+}
+
+/** How far back the List and the Map's day strip reach for past days with events on file: a year. */
+export const LIST_BACK_DAYS = 365;
+
+/** The earliest day in [floor, before) with an event on file for the city, or null. */
+async function earliestEventDay(metroId: string, floor: LocalDate, before: LocalDate): Promise<LocalDate | null> {
+  const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId).catch(() => []) : Promise.resolve([]))));
+  return lists
+    .flat()
+    .filter((e) => e.date >= floor && e.date < before && belongsToCity(e, metroId))
+    .reduce<LocalDate | null>((min, e) => (min === null || e.date < min ? e.date : min), null);
 }
 
 /** One Monday-to-Sunday week of a city's days, each with its events and read, for the List and its calendar. */
