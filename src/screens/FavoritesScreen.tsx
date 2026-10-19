@@ -12,6 +12,7 @@ import {
   favoriteLongName,
   favoritesOf,
   getPersonalLog,
+  isCollegeLeague,
   subscribePersonalLog,
   suggestionsFor,
   toggleFavorite,
@@ -27,6 +28,18 @@ import { getHomeId, subscribeHome } from '../lib/homeCity';
 /** The leagues a Suggested row draws from (Kylie, Oct 19: the home city's major-league teams). */
 const MAJOR_LEAGUES = new Set(['MLB', 'NBA', 'WNBA', 'NFL', 'NHL', 'MLS', 'NWSL', 'PWHL', 'CFL', 'Liga MX']);
 
+/**
+ * The order the browse list reads in (gap review, judgment call 5; Kylie, Oct 19, 2026: a fixed order, where team
+ * counts had put college men's basketball above MLB and the NBA): the big-league sports first, the rest A–Z; within
+ * a sport, the top pro leagues in this order, then other pro leagues by size, then the college leagues.
+ */
+const SPORT_ORDER = ['Football', 'Basketball', 'Baseball', 'Hockey', 'Soccer'];
+const LEAGUE_ORDER = ['NFL', 'NBA', 'WNBA', 'MLB', 'NHL', 'PWHL', 'MLS', 'NWSL'];
+const rankIn = (list: readonly string[], name: string) => {
+  const i = list.indexOf(name);
+  return i === -1 ? list.length : i;
+};
+
 /** Every team on file as sport → league → teams, for browsing the way a sports site lists them. */
 function browseTree(): { sport: string; leagues: { league: string; teams: Favorite[] }[] }[] {
   const bySport = new Map<string, Map<string, Favorite[]>>();
@@ -36,13 +49,18 @@ function browseTree(): { sport: string; leagues: { league: string; teams: Favori
     leagues.set(team.league, [...(leagues.get(team.league) ?? []), favoriteForTeam(team)]);
     bySport.set(sport, leagues);
   }
-  const size = (leagues: Map<string, Favorite[]>) => [...leagues.values()].reduce((n, l) => n + l.length, 0);
   return [...bySport.entries()]
-    .sort((a, b) => size(b[1]) - size(a[1]) || a[0].localeCompare(b[0]))
+    .sort((a, b) => rankIn(SPORT_ORDER, a[0]) - rankIn(SPORT_ORDER, b[0]) || a[0].localeCompare(b[0]))
     .map(([sport, leagues]) => ({
       sport,
       leagues: [...leagues.entries()]
-        .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+        .sort(
+          (a, b) =>
+            Number(isCollegeLeague(a[0])) - Number(isCollegeLeague(b[0])) ||
+            rankIn(LEAGUE_ORDER, a[0]) - rankIn(LEAGUE_ORDER, b[0]) ||
+            b[1].length - a[1].length ||
+            a[0].localeCompare(b[0]),
+        )
         .map(([league, teams]) => ({ league, teams: teams.sort((a, b) => teamLongName(TEAMS[a.teamId!]).localeCompare(teamLongName(TEAMS[b.teamId!]))) })),
     }));
 }

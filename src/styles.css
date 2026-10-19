@@ -5994,8 +5994,8 @@ ul.fav-strip {
   margin-top: -4px;
 }
 
-/* Team badges (build 6, item 9a; Kylie, Oct 16): the sport icon at the top-left, never over the code; a lettered
-   college code ("UCLA MBB") lets the tile grow (the strip scrolls). */
+/* Team badges (build 6, item 9a; Kylie, Oct 16): the sport icon at the top-left, never over the code. The code is
+   the school's or the club's alone (Kylie, Oct 19: no sport on a college badge). */
 .fav-tag,
 .fav-mark {
   position: relative;
@@ -6043,11 +6043,6 @@ ul.fav-strip {
   left: -6px;
   width: 22px;
   height: 22px;
-}
-
-.fav-tag.lettered,
-.fav-mark.lettered {
-  white-space: nowrap;
 }
 
 .fav-strip-link {
@@ -9483,14 +9478,6 @@ a.follow-lead::after {
 .sheet-check-gap {
   flex-shrink: 0;
   width: 28px;
-}
-
-/* A fixed column for the badge, the code centred in it. */
-.sheet-badge {
-  flex-shrink: 0;
-  width: 92px;
-  display: flex;
-  justify-content: center;
 }
 
 .sheet-all-row,

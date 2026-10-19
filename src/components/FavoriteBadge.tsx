@@ -17,7 +17,7 @@ export function FavoriteBadge({ fav, shown, size = 'tag', className = '' }: { fa
   const base = size === 'tag' ? `fav-tag fav-tag-${fav.kind}` : `fav-mark fav-${fav.kind}${size === 'big' ? ' fav-big' : ''}`;
   return (
     <span className={`fav-badge${league ? ' has-league' : ''} ${className}`.trim()} aria-hidden="true">
-      <span className={`${base}${icon ? ' has-icon' : ''}${text.includes(' ') ? ' lettered' : ''}`}>
+      <span className={`${base}${icon ? ' has-icon' : ''}`}>
         {icon && <TypeIcon typeKey={icon} size={size === 'big' ? 14 : 10} className="fav-badge-icon" />}
         {text}
       </span>

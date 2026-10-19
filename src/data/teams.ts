@@ -38,9 +38,14 @@ export function teamCode(team: Team): string {
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
-/** A school's program, not a club: college, community college and university leagues. */
+/** A school's league, not a club's: college, community college and university leagues. */
+export function isCollegeLeague(league: string): boolean {
+  return /^(college|community college|u sports|ncaa)/i.test(league);
+}
+
+/** A school's program, not a club. */
 export function isCollegeTeam(team: Team): boolean {
-  return /^(college|community college|u sports|ncaa)/i.test(team.league);
+  return isCollegeLeague(team.league);
 }
 
 /**
@@ -53,36 +58,6 @@ export function programSide(team: Team): 'men' | 'women' | null {
   if (/\bwomen'?s?\b/i.test(text)) return 'women';
   if (/\bmen'?s?\b/i.test(text)) return 'men';
   return null;
-}
-
-/**
- * The sport code a college program carries after its school (Kylie, Oct 19, 2026: her own list, not the NCAA's;
- * volleyball by analogy; hockey is MHKY / WHKY, her answer to the naming proposal the same day, one spelling with the
- * row and chip codes in `src/lib/eventTitle.ts`): "UCLA FB", "UCLA MBB", "UCLA WBB", "UCLA MHKY", "UCLA BSB",
- * "UCLA SB", "UCLA MSOC". A program whose side is not on file takes the sport's bare code ("BB", "VB", "HKY", "SOC")
- * rather than a guessed one.
- */
-export function sportLetters(team: Team): string | null {
-  const side = programSide(team);
-  const sided = (men: string, women: string, bare: string) => (side === 'women' ? women : side === 'men' ? men : bare);
-  switch (team.sport) {
-    case 'football':
-      return 'FB';
-    case 'basketball':
-      return sided('MBB', 'WBB', 'BB');
-    case 'baseball':
-      return 'BSB';
-    case 'softball':
-      return 'SB';
-    case 'volleyball':
-      return sided('MVB', 'WVB', 'VB');
-    case 'hockey':
-      return sided('MHKY', 'WHKY', 'HKY');
-    case 'soccer':
-      return sided('MSOC', 'WSOC', 'SOC');
-    default:
-      return null;
-  }
 }
 
 /**
