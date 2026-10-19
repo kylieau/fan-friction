@@ -7807,7 +7807,10 @@ ul.fav-strip {
   pointer-events: none;
 }
 
-.stub-row .tag-chip-body {
+.stub-row .tag-chip-body,
+.stub-row .stub-read-link {
+  /* The tag chips and the read tile take their own tap (the tile opens the date's page, Kylie, Oct 19; it had been
+     swallowed by the row's overlay link until the Oct 19 readiness check). */
   pointer-events: auto;
 }
 
