@@ -108,10 +108,12 @@ export function FavoritePage() {
     return name ?? fav.label;
   }, [fav, entries]);
 
-  // Listings in every covered city for the next two months: dates near home, and the tour elsewhere.
+  // Listings in every covered city from today through the next two months: dates near home, and the tour
+  // elsewhere. The query's first date is exclusive, so it starts the day before (today's shows were skipped
+  // before Oct 19, 2026, and the " · today" word never showed).
   useEffect(() => {
     let current = true;
-    Promise.all(metrosWithEvents().map((m) => getEventsBetween(m.id, today, addDays(today, AHEAD_DAYS)))).then((lists) => {
+    Promise.all(metrosWithEvents().map((m) => getEventsBetween(m.id, addDays(today, -1), addDays(today, AHEAD_DAYS)))).then((lists) => {
       if (!current) return;
       setEverywhere(lists.flat().sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))));
     });
