@@ -4,6 +4,7 @@ import { getCityDate, getEventsBetween, type CrowdEvent } from '../data';
 import { shortLocalDate } from '../lib/dates';
 import { datePath } from '../lib/view';
 import { ReadTile } from './ReadTile';
+import { useEdgeFade } from '../lib/useEdgeFade';
 
 /**
  * Dates for the same tour or homestand (docs/product/compare-proposal-oct6.md, section 3):
@@ -11,6 +12,7 @@ import { ReadTile } from './ReadTile';
  * city within 30 days, each with that day's read, so the calmest can be picked.
  */
 export function SameTour({ event }: { event: CrowdEvent }) {
+  const row = useEdgeFade();
   const [rows, setRows] = useState<{ event: CrowdEvent; rating: number | null }[] | null>(null);
   useEffect(() => {
     let current = true;
@@ -36,7 +38,7 @@ export function SameTour({ event }: { event: CrowdEvent }) {
     <section className="same-tour" aria-label="More dates">
       {/* One heading for every kind of event (build 5, item 7, C2). */}
       <h2 className="you-heading">More dates</h2>
-      <div className="same-tour-row">
+      <div className="same-tour-row" ref={row}>
         {rows.map(({ event: other, rating }) => (
           <Link key={other.id} to={datePath(other.date, other.metroId, other.id)} className="same-tour-cell">
             <ReadTile rating={rating} />

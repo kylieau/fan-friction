@@ -2835,6 +2835,23 @@ button {
   padding-bottom: 2px;
 }
 
+/* A row that scrolls sideways fades the edge it clips at, the sign there is more (`useEdgeFade`; R15, Oct 19,
+   2026). A row that fits, or one scrolled to that end, shows no fade; the faded strip still takes taps. */
+[data-fade='end'] {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+
+[data-fade='start'] {
+  -webkit-mask-image: linear-gradient(to left, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to left, #000 calc(100% - 28px), transparent);
+}
+
+[data-fade='both'] {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
+
 .filter-chip {
   flex-shrink: 0;
   height: 32px;
@@ -9149,8 +9166,6 @@ span.fav-sched-read {
   overflow-x: auto;
   scrollbar-width: none;
   padding: 2px 0;
-  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
-  mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
 }
 
 .following-chips-scroll::-webkit-scrollbar {

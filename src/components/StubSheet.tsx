@@ -35,6 +35,7 @@ import { TagChip } from './TagChip';
 import { LevelPill } from './LevelPill';
 import { TagsPanel } from './TagsPanel';
 import { SeatsRow } from './SeatsRow';
+import { useEdgeFade } from '../lib/useEdgeFade';
 
 /**
  * The "+ Stub it" sheet (build notes 3, 4.7; mock docs/design/build3/7-stub-it-sheet.png): one sheet for
@@ -44,6 +45,7 @@ import { SeatsRow } from './SeatsRow';
  * with the one helper line. Un-tapping Attended asks once (C054).
  */
 export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () => void }) {
+  const placesRow = useEdgeFade();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const ahead = event.date >= todayIn(METROS[event.metroId] ?? DEFAULT_METRO);
@@ -189,7 +191,7 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                     <p className="stub-where">
                       Where? <span className="stub-where-optional">optional</span>
                     </p>
-                    <div className="filter-row stub-places" role="group" aria-label="Where">
+                    <div className="filter-row stub-places" role="group" aria-label="Where" ref={placesRow}>
                       <button
                         type="button"
                         className="filter-chip"

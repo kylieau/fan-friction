@@ -1,6 +1,7 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { backFrom } from '../lib/view';
+import { useEdgeFade } from '../lib/useEdgeFade';
 import { SearchIcon } from '../components/Icons';
 // A dropdown's contents inside the Settings panel since build 6 (item 8); the old /you/people address opens that dropdown.
 import {
@@ -38,6 +39,7 @@ const CHIPS: { id: Chip; label: string }[] = [
  * here notifies anyone, and a decline or removal shows no change on their side.
  */
 export function PeoplePanel() {
+  const filterRow = useEdgeFade();
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [params, setParams] = useSearchParams();
   const chip = (CHIPS.find((c) => c.id === params.get('chip'))?.id ?? 'all') as Chip;
@@ -132,7 +134,7 @@ export function PeoplePanel() {
       {/* The one line that says what access means (privacy 10). */}
       <p className="you-fine">You see their logged events and plans once they approve.</p>
 
-      <div className="filter-row" role="group" aria-label="Who">
+      <div className="filter-row" role="group" aria-label="Who" ref={filterRow}>
         {CHIPS.map((c) => (
           <button key={c.id} type="button" className="filter-chip" aria-pressed={chip === c.id} onClick={() => pickChip(c.id)}>
             {c.label}

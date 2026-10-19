@@ -25,11 +25,13 @@ import { AccountBlock } from '../components/AccountBlock';
 import { YourYear } from '../components/YourYear';
 import { ChevronDown } from '../components/Icons';
 import { clearOpenedFromMap } from '../lib/mapReturn';
+import { useEdgeFade } from '../lib/useEdgeFade';
 import { SettingsPanel } from './SettingsScreen';
 
 const TOP = 8;
 
 export function YouScreen() {
+  const filterRow = useEdgeFade();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
@@ -100,7 +102,7 @@ export function YouScreen() {
   const stats = useMemo(() => logStats(shown), [shown]);
 
   const filters = (
-    <div className="filter-row" role="group" aria-label="Filter your events">
+    <div className="filter-row" role="group" aria-label="Filter your events" ref={filterRow}>
       <FilterChip label="All" pressed={filter === 'All'} onClick={() => setFilter('All')} />
       {choices.map((choice) => (
         <FilterChip

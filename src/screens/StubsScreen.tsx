@@ -26,6 +26,7 @@ import { clearOpenedFromMap } from '../lib/mapReturn';
 import { TagChip } from '../components/TagChip';
 import { ChevronDown } from '../components/Icons';
 import { Timeline, type TimelineItem } from '../components/Timeline';
+import { useEdgeFade } from '../lib/useEdgeFade';
 
 type Chip = 'all' | 'sports' | 'concerts' | 'watched' | 'attended';
 
@@ -37,6 +38,7 @@ type Chip = 'all' | 'sports' | 'concerts' | 'watched' | 'attended';
  * shrinks to "+" as the list scrolls and hides only when there are no stubs and no plans (Kylie, Q3).
  */
 export function StubsScreen() {
+  const filterRow = useEdgeFade();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
   const entries = useMemo(() => yourEntries(log), [log]);
@@ -122,7 +124,7 @@ export function StubsScreen() {
       )}
 
       <section className="you-block stubs-list timeline-section" aria-label="Stubs">
-        <div className="filter-row" role="group" aria-label="Show">
+        <div className="filter-row" role="group" aria-label="Show" ref={filterRow}>
           {(
             [
               ['all', 'All'],

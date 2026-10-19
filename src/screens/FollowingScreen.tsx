@@ -40,6 +40,7 @@ import { addDays, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dat
 import { favoriteTypeKey } from '../map/typeIcons';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { backFrom, datePath, eventPath } from '../lib/view';
+import { useEdgeFade } from '../lib/useEdgeFade';
 
 /** Both lines of time reach 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
 const SPAN_DAYS = 60;
@@ -52,6 +53,7 @@ const SPAN_DAYS = 60;
  * and Friends; while a filter is on it turns solid with a count and a chip row shows what is picked.
  */
 export function FollowingScreen() {
+  const chipRow = useEdgeFade();
   const [params, setParams] = useSearchParams();
   const segment: FollowingSegment = params.get('tab') === 'friends' ? 'friends' : 'faves';
   const pick = (next: FollowingSegment) => {
@@ -138,7 +140,7 @@ export function FollowingScreen() {
       </div>
       {chips.length > 0 && (
         <div className="following-chips">
-          <div className="following-chips-scroll">
+          <div className="following-chips-scroll" ref={chipRow}>
             {chips.map((chip) => (
               <button key={chip.key} type="button" className="following-chip" onClick={() => drop(chip.key)} aria-label={`Stop showing only ${chip.label}`}>
                 {chip.label} <span aria-hidden>✕</span>
