@@ -32,13 +32,20 @@ const KINDS: { kind: FavoriteKind; label: string }[] = [
   { kind: 'festival', label: 'Festivals' },
 ];
 
-/** "Basketball · NBA", "Football · College", "Artist": the line under a Fave's name in the sheet. */
-function subOf(fav: Favorite): string {
+/**
+ * "Basketball · NBA", "Football · College", "Country": the line under a Fave's name in the sheet. An artist's word is
+ * its genre from the listings (Kylie, Oct 19, 2026; `useArtistGenres`), "Artist" while no listing is on file (a lean).
+ */
+function subOf(fav: Favorite, genres: ReadonlyMap<string, string>): string {
   const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
   if (team) {
     const sport = team.sport.charAt(0).toUpperCase() + team.sport.slice(1);
     const league = /^college/i.test(team.league) ? 'College' : team.league;
     return `${sport} · ${league}`;
+  }
+  if (fav.kind === 'artist') {
+    const genre = genres.get(favoriteKey(fav));
+    if (genre) return genre;
   }
   return KINDS.find((k) => k.kind === fav.kind)?.label.replace(/s$/, '') ?? '';
 }
@@ -60,6 +67,7 @@ export function FollowingSheet({
   onSegment,
   onClose,
   favorites,
+  genres,
   favPicked,
   onFavPicked,
   signedIn,
@@ -73,6 +81,8 @@ export function FollowingSheet({
   onSegment: (next: FollowingSegment) => void;
   onClose: () => void;
   favorites: readonly Favorite[];
+  /** Each artist favorite's genre word by favorite key (`useArtistGenres`). */
+  genres: ReadonlyMap<string, string>;
   favPicked: Picked;
   onFavPicked: (next: Picked) => void;
   signedIn: boolean;
@@ -111,7 +121,7 @@ export function FollowingSheet({
         </div>
         <div className="following-sheet-body">
           {segment === 'faves' ? (
-            <FavesSide favorites={favorites} picked={favPicked} onPicked={onFavPicked} editing={editing} onClose={onClose} />
+            <FavesSide favorites={favorites} genres={genres} picked={favPicked} onPicked={onFavPicked} editing={editing} onClose={onClose} />
           ) : (
             <FriendsSide signedIn={signedIn} people={people} requests={requests} picked={friendPicked} onPicked={onFriendPicked} onChanged={onPeopleChanged} onClose={onClose} />
           )}
@@ -143,7 +153,7 @@ function toggleIn(picked: Picked, key: string, all: readonly string[]): Picked {
   return next;
 }
 
-function FavesSide({ favorites, picked, onPicked, editing, onClose }: { favorites: readonly Favorite[]; picked: Picked; onPicked: (next: Picked) => void; editing: boolean; onClose: () => void }) {
+function FavesSide({ favorites, genres, picked, onPicked, editing, onClose }: { favorites: readonly Favorite[]; genres: ReadonlyMap<string, string>; picked: Picked; onPicked: (next: Picked) => void; editing: boolean; onClose: () => void }) {
   const keys = favorites.map(favoriteKey);
   const shownCount = picked === null ? favorites.length : [...picked].filter((k) => keys.includes(k)).length;
   return (
@@ -184,7 +194,7 @@ function FavesSide({ favorites, picked, onPicked, editing, onClose }: { favorite
                     {!editing && <Check on={on} label={favoriteName(fav)} onClick={() => onPicked(toggleIn(picked, key, keys))} />}
                     <button type="button" className="log-main sheet-row-words" onClick={() => (editing ? undefined : onPicked(toggleIn(picked, key, keys)))} disabled={editing}>
                       <span className="log-title">{favoriteLongName(fav)}</span>
-                      <span className="log-facts">{subOf(fav)}</span>
+                      <span className="log-facts">{subOf(fav, genres)}</span>
                     </button>
                     {editing && (
                       <button type="button" className="sheet-remove" aria-label={`Remove ${favoriteName(fav)}`} onClick={() => toggleFavorite(fav)}>

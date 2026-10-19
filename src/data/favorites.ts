@@ -8,6 +8,7 @@
 // The Weeknd) still work: they match the log by name and get a page from it.
 
 import { METROS } from '../config/metros';
+import { ARTISTS, artistByName, artistMatches } from './artists';
 import { TEAMS, leagueMark, teamBadge, teamDisplayName, teamLongName } from './teams';
 import { VENUES, venueNameOn } from './venues';
 import type { CrowdEvent, Favorite, FavoriteKind, Entry, Team } from './types';
@@ -59,6 +60,10 @@ export function favoriteFor(kind: FavoriteKind, label: string): Favorite {
   if (kind === 'venue') {
     const venue = venueByName(clean);
     if (venue) return { kind, id: venue.id, label: venueNameOn(venue, today()), venueId: venue.id };
+  }
+  if (kind === 'artist') {
+    const artist = artistByName(clean);
+    if (artist) return { kind, id: artist.id, label: artist.name, artistId: artist.id };
   }
   return { kind, id: slug(clean), label: clean };
 }
@@ -150,8 +155,11 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
     case 'team':
       if (fav.teamId && event.teams) return event.teams.home === fav.teamId || event.teams.away === fav.teamId;
       return event.title.toLowerCase().includes(label);
-    case 'artist':
+    case 'artist': {
+      const artist = fav.artistId ? ARTISTS[fav.artistId] : undefined;
+      if (artist) return artistMatches(event, artist);
       return (event.performer ?? '').toLowerCase() === label || event.title.toLowerCase() === label;
+    }
     case 'festival':
       return event.kind === 'festival' && event.title.toLowerCase().includes(label);
     case 'venue':

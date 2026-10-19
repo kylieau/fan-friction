@@ -23,6 +23,7 @@ import {
   teamLongName,
 } from '../data';
 import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
+import { useArtistGenres } from '../components/useArtistGenres';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 
 /** The leagues a Suggested row draws from (Kylie, Oct 19: the home city's major-league teams). */
@@ -91,6 +92,8 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const home = METROS[homeId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO;
   const favorites = useMemo(() => favoritesOf(log), [log]);
+  // The genre word under a followed artist (Kylie, Oct 19); an artist not yet followed, or with no listing, reads "Artist".
+  const genres = useArtistGenres(favorites);
   const entries = useMemo(() => yourEntries(log), [log]);
   const [query, setQuery] = useState('');
   // The picker stays open until Done, even after the first follow.
@@ -165,7 +168,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     <section className="you-block" aria-label="Results">
       <ul className="log-list">
         {found.map((fav) => (
-          <FavRow key={favoriteKey(fav)} fav={fav} shown={found} sub={subFor(fav, countFor(fav))} on={isOn(fav)} />
+          <FavRow key={favoriteKey(fav)} fav={fav} shown={found} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)))} on={isOn(fav)} />
         ))}
         {!exactMatch && (
           // Placeholder for things the app doesn't know yet: a favorite by name only.
@@ -210,7 +213,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
                   </h2>
                   <ul className="log-list">
                     {on.map((fav) => (
-                      <FavRow key={favoriteKey(fav)} fav={fav} shown={on} sub={subFor(fav, countFor(fav))} on />
+                      <FavRow key={favoriteKey(fav)} fav={fav} shown={on} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)))} on />
                     ))}
                   </ul>
                 </section>
@@ -224,7 +227,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
                 </h2>
                 <ul className="log-list">
                   {suggested.map((fav) => (
-                    <FavRow key={favoriteKey(fav)} fav={fav} shown={suggested} sub={subFor(fav, countFor(fav))} on={false} />
+                    <FavRow key={favoriteKey(fav)} fav={fav} shown={suggested} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)))} on={false} />
                   ))}
                 </ul>
               </section>
@@ -255,7 +258,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
                           {open && (
                             <ul className="log-list">
                               {teams.map((fav) => (
-                                <FavRow key={favoriteKey(fav)} fav={fav} shown={teams} sub={subFor(fav, countFor(fav))} on={isOn(fav)} />
+                                <FavRow key={favoriteKey(fav)} fav={fav} shown={teams} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)))} on={isOn(fav)} />
                               ))}
                             </ul>
                           )}
@@ -314,8 +317,8 @@ export function LastFive({ marks }: { marks: readonly ('W' | 'L' | 'T')[] }) {
   );
 }
 
-function subFor(fav: Favorite, count: number): string {
-  const kind = KINDS.find((k) => k.kind === fav.kind)?.label ?? '';
+function subFor(fav: Favorite, count: number, genre?: string): string {
+  const kind = (fav.kind === 'artist' && genre) || KINDS.find((k) => k.kind === fav.kind)?.label || '';
   return count > 0 ? `${kind} · ${count} ${count === 1 ? 'event' : 'events'}` : kind;
 }
 

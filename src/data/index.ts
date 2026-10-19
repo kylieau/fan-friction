@@ -480,3 +480,5 @@ export { EVENT_TYPES, competitionOf, entryType, eventType, genreCasing, typeDef,
 export { wallClockToUtc } from './read';
 export { popupDraw, popupExplainer, type PopupFacts } from './sources/popupSizing';
 export { eventFromGame, eventFromStub, gameEventId, gameRefFromId, isGameEventId, isOutsideGamePlan, sameGame, stubShapeOf, type GameLink, type StubShape } from './gameStub';
+export { ARTISTS, artistByName, artistMatches, type Artist } from './artists';
+export { genreCategory, artistGenreWord, UNKNOWN_GENRE_WORD } from './genres';

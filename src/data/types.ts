@@ -206,6 +206,11 @@ export interface CrowdEvent {
   rank?: { home?: number; away?: number };
   /** For shows. */
   performer?: string;
+  /**
+   * The seller's ids for the acts on the bill, in the feed's order (Ticketmaster attraction ids), kept for shows at
+   * 5,000+ rooms so a favorite can match by id later (Kylie, Oct 19, 2026, answer 4). Never the website's page number.
+   */
+  performerIds?: string[];
   /** Pre-event facts for the occasion rule. Playoff round and game live in `stakes`. */
   occasionFacts?: OccasionFacts;
   /** Invite-only (an awards show, a convention): counts for Gridlock, never Crowd fight. */
@@ -695,4 +700,6 @@ export interface Favorite {
   label: string;
   teamId?: string;
   venueId?: string;
+  /** The app-owned artist record behind an artist favorite, when one exists (`src/data/artists.ts`; Kylie, Oct 19, 2026). */
+  artistId?: string;
 }

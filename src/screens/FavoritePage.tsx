@@ -19,6 +19,7 @@ import {
   getTeamSchedule,
   isPlanned,
   kindLabel,
+  artistGenreWord,
   metrosWithEvents,
   nextTeamGame,
   nightKey,
@@ -215,7 +216,7 @@ export function FavoritePage() {
         <FavoriteBadge fav={{ ...fav, label }} shown={[...favoritesOf(log), fav]} size="big" />
         <div className="you-who">
           <h1 className="page-title">{team ? (isCollegeTeam(team) ? teamLongName(team) : team.name) : label}</h1>
-          <span className="you-handle">{[record ? recordLine(record) : null, series].filter(Boolean).join(' · ') || kindLabel(fav.kind)}</span>
+          <span className="you-handle">{[record ? recordLine(record) : null, series].filter(Boolean).join(' · ') || (fav.kind === 'artist' && artistGenreWord(matching)) || kindLabel(fav.kind)}</span>
         </div>
       </div>
 

@@ -9,6 +9,7 @@ import { Timeline, type TimelineItem } from '../components/Timeline';
 import { FollowRow, LeadIcon, readPath } from '../components/FollowRow';
 import { FollowingSheet, type FollowingSegment, type Picked } from '../components/FollowingSheet';
 import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
+import { useArtistGenres } from '../components/useArtistGenres';
 import { favPath } from './FavoritesScreen';
 import { favoriteName } from '../components/FavoriteBadge';
 import {
@@ -64,6 +65,7 @@ export function FollowingScreen() {
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const home = METROS[homeId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO;
   const favorites = useMemo(() => favoritesOf(log), [log]);
+  const genres = useArtistGenres(favorites);
   const [sheet, setSheet] = useState(false);
   // The filters, kept on this device for the session so a row tap and Back keep them (a builder's call).
   const [favPicked, setFavPicked] = usePicked('fan-friction:following-faves-filter');
@@ -159,6 +161,7 @@ export function FollowingScreen() {
           onSegment={pick}
           onClose={() => setSheet(false)}
           favorites={favorites}
+          genres={genres}
           favPicked={favFilter}
           onFavPicked={setFavPicked}
           signedIn={Boolean(account)}
