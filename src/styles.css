@@ -5958,6 +5958,23 @@ ul.fav-strip {
   white-space: nowrap;
 }
 
+/* "↑ N earlier" above the today line (Kylie, Oct 19, 2026, option B): a quiet grey line the list opens on, a 44 px tap. */
+.timeline-earlier-cue {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  padding: 14px 0 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--muted);
+  text-align: center;
+  cursor: pointer;
+}
+
 /* The one-line note on an empty side of the line, and the empty-past card above it. */
 .timeline-note {
   padding: 4px 4px 0;

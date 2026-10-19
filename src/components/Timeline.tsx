@@ -40,6 +40,9 @@ export function Timeline({
 }) {
   const scroller = useRef<HTMLDivElement>(null);
   const todayLine = useRef<HTMLDivElement>(null);
+  // The "↑ N earlier" cue above the line (Kylie, Oct 19, 2026: option B; tester-readiness review R8): the list opens on
+  // it, so a person sees that the past is there without scrolling; a tap brings a screen of it into view.
+  const earlierCue = useRef<HTMLButtonElement>(null);
   const placed = useRef(false);
   const hadPast = useRef(false);
   const openedAt = useRef(0);
@@ -65,14 +68,15 @@ export function Timeline({
       el.scrollTop = 0;
       return;
     }
-    const need = el.clientHeight - (el.scrollHeight - pad - line.offsetTop);
+    const anchor = earlierCue.current ?? line;
+    const need = el.clientHeight - (el.scrollHeight - pad - anchor.offsetTop);
     if (need > pad) {
       setPad(need);
       return;
     }
     placed.current = true;
-    openedAt.current = line.offsetTop;
-    el.scrollTop = line.offsetTop;
+    openedAt.current = anchor.offsetTop;
+    el.scrollTop = anchor.offsetTop;
   }, [past.length, future.length, pad]);
 
   const update = () => {
@@ -87,9 +91,17 @@ export function Timeline({
 
   const toToday = () => {
     const el = scroller.current;
-    const line = todayLine.current;
-    if (!el || !line) return;
-    el.scrollTo({ top: line.offsetTop, behavior: 'smooth' });
+    const anchor = earlierCue.current ?? todayLine.current;
+    if (!el || !anchor) return;
+    el.scrollTo({ top: anchor.offsetTop, behavior: 'smooth' });
+  };
+
+  /** A screen of the past comes into view, the cue at the bottom of it; a short past shows whole from the top. */
+  const showEarlier = () => {
+    const el = scroller.current;
+    const cue = earlierCue.current;
+    if (!el || !cue) return;
+    el.scrollTo({ top: Math.max(0, cue.offsetTop - (el.clientHeight - cue.offsetHeight - 8)), behavior: 'smooth' });
   };
 
   const pastGroups = groupItems(past);
@@ -113,6 +125,11 @@ export function Timeline({
             </ul>
           </section>
         ))}
+        {past.length > 0 && (
+          <button ref={earlierCue} type="button" className="timeline-earlier-cue" onClick={showEarlier} aria-label={`${past.length} earlier. Show them`}>
+            <span aria-hidden>↑</span> {past.length} earlier
+          </button>
+        )}
         <div ref={todayLine} className="today-line">
           <h3 className="today-line-label">{todayLabel}</h3>
         </div>
