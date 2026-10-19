@@ -9259,13 +9259,12 @@ a.follow-lead::after {
   text-overflow: ellipsis;
 }
 
-/* The grey tag in the read's place ("Away", "No read"): one line, the column's full 64 px, since "NO READ" wrapped
-   inside the column's padding (measured Oct 19, 2026). */
+/* The grey tag in the read's place ("Away", "No read"): "NO READ" sits on two centred lines in the 64 px column
+   (Kylie, Oct 19, 2026: "fine on two lines, but center-justify the text"). */
 .follow-read .away-tag {
-  white-space: nowrap;
-  padding: 0 4px;
-  margin: 0 -4px;
-  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 1.1;
+  padding: 4px 6px;
 }
 
 .follow-read {
