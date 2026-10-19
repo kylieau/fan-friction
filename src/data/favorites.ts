@@ -8,7 +8,7 @@
 // The Weeknd) still work: they match the log by name and get a page from it.
 
 import { METROS } from '../config/metros';
-import { TEAMS, leagueMark, teamBadge } from './teams';
+import { TEAMS, leagueMark, teamBadge, teamDisplayName, teamLongName } from './teams';
 import { VENUES, venueNameOn } from './venues';
 import type { CrowdEvent, Favorite, FavoriteKind, Entry, Team } from './types';
 
@@ -181,4 +181,16 @@ export function favoriteMark(fav: Favorite, shown: readonly Favorite[] = []): st
   const words = fav.label.split(/\s+/).filter(Boolean);
   if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
   return fav.label.slice(0, 2).toUpperCase();
+}
+
+/** What a favorite is called in words where a row names it (Kylie, Oct 19): a team's display name ("LA Dodgers", "UCLA FB"), else its label. */
+export function favoriteDisplayName(fav: Favorite): string {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  return team ? teamDisplayName(team) : fav.label;
+}
+
+/** The name written out in a list beside a favorite's badge (the Following sheet): "UCLA Football", else the label. */
+export function favoriteLongName(fav: Favorite): string {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  return team ? teamLongName(team) : fav.label;
 }

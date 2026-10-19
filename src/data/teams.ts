@@ -43,7 +43,10 @@ export function isCollegeTeam(team: Team): boolean {
   return /^(college|u sports|ncaa)/i.test(team.league);
 }
 
-/** The sport letters a college program carries in its badge code on a clash (Kylie, Oct 16): "UCLA MBB", "UCLA WBB", "UCLA FB". */
+/**
+ * The sport code a college program carries after its school (Kylie, Oct 19, 2026: her own list, not the NCAA's;
+ * volleyball by analogy): "UCLA FB", "UCLA MBB", "UCLA WBB", "UCLA MIH", "UCLA BSB", "UCLA SB", "UCLA MSOC".
+ */
 export function sportLetters(team: Team): string | null {
   const women = /women/i.test(team.league);
   switch (team.sport) {
@@ -56,14 +59,80 @@ export function sportLetters(team: Team): string | null {
     case 'softball':
       return 'SB';
     case 'volleyball':
-      return 'VB';
+      return women ? 'WVB' : 'MVB';
     case 'hockey':
-      return women ? 'WH' : 'MH';
+      return women ? 'WIH' : 'MIH';
     case 'soccer':
-      return 'SOC';
+      return women ? 'WSOC' : 'MSOC';
     default:
       return null;
   }
+}
+
+/** The city shortcuts a pro team's display name uses (Kylie, Oct 19): "LA Dodgers", "NY Rangers"; every other city is spelled out. */
+const CITY_SHORTCUTS: Record<string, string> = {
+  'Los Angeles': 'LA',
+  'New York': 'NY',
+  'San Francisco': 'SF',
+  'San Diego': 'SD',
+  'San Jose': 'SJ',
+  'San José': 'SJ',
+  'Kansas City': 'KC',
+  'Las Vegas': 'LV',
+  'St. Louis': 'STL',
+  'St Louis': 'STL',
+  'Tampa Bay': 'TB',
+  'New Orleans': 'NO',
+};
+
+/** A trailing sport code a stored college short name may already carry ("Marquette MBB", "Columbia FB", "Bears FB"). */
+const TRAILING_CODE = /\s+(?:(?:men's|women's)\s+)?(FB|CFB|MBB|WBB|BSB|SB|VB|MVB|WVB|MH|WH|HK|MIH|WIH|SOC|MSOC|WSOC|football|basketball|baseball|softball|volleyball|hockey|soccer)$/i;
+
+/**
+ * The name a team is called where there is room for words but not the full name (the Following rows and sheet;
+ * Kylie, Oct 19, 2026). A pro team is its city shortcut and nickname ("LA Dodgers", "Golden State Warriors"); a
+ * club whose name does not end in its nickname keeps its full name ("Angel City FC"). A college program is its
+ * school and sport code ("UCLA FB", "Marquette WBB"), computed from the sport, never from the stored short name.
+ */
+/** The sport in words for a college program's long name: "Football", "Men's Basketball", "Women's Ice Hockey". */
+function sportWords(team: Team): string {
+  const women = /women/i.test(team.league);
+  const side = women ? "Women's" : "Men's";
+  switch (team.sport) {
+    case 'football':
+      return 'Football';
+    case 'basketball':
+      return `${side} Basketball`;
+    case 'baseball':
+      return 'Baseball';
+    case 'softball':
+      return 'Softball';
+    case 'volleyball':
+      return `${side} Volleyball`;
+    case 'hockey':
+      return `${side} Ice Hockey`;
+    case 'soccer':
+      return `${side} Soccer`;
+    default:
+      return team.sport.charAt(0).toUpperCase() + team.sport.slice(1);
+  }
+}
+
+/** The name a list writes out beside a badge (the Following sheet): "LA Dodgers", "UCLA Football", "UCLA Men's Basketball". */
+export function teamLongName(team: Team): string {
+  if (!isCollegeTeam(team)) return teamDisplayName(team);
+  return `${team.shortName.replace(TRAILING_CODE, '').trim()} ${sportWords(team)}`;
+}
+
+export function teamDisplayName(team: Team): string {
+  if (isCollegeTeam(team)) {
+    const school = team.shortName.replace(TRAILING_CODE, '').trim();
+    const code = sportLetters(team);
+    return code ? `${school} ${code}` : school;
+  }
+  if (!team.name.endsWith(team.shortName) || team.name === team.shortName) return team.name;
+  const city = team.name.slice(0, -team.shortName.length).trim();
+  return city ? `${CITY_SHORTCUTS[city] ?? city} ${team.shortName}` : team.name;
 }
 
 /**
@@ -76,18 +145,17 @@ export function badgesCollide(a: Team, b: Team): boolean {
 }
 
 /**
- * The code on a team's badge, given the other badges shown beside it (build 6, item 9a; Kylie, Oct 16): the plain
- * code ("UCLA", "IND"), or, for a college program whose code and sport another badge in the set shares, the code
- * with its sport letters ("UCLA MBB"). A badge is a property of the set, so the same team can read differently in
- * two people's strips (a trade-off Kylie accepted). Pro teams always read their plain code: how clashing same-sport
- * pro pairs (Pacers/Fever) are told apart is an open question (notes 9a, options A to D), nothing built.
+ * The code on a team's badge (build 6, item 9a; Kylie, Oct 16 and Oct 19): the plain code for a pro team ("IND"),
+ * the code with its sport letters for a college program ("UCLA MBB", always, since Oct 19). The shown set still
+ * decides a pro badge's league caption (`leagueMark`), so the set stays an input here for the callers' sake.
  */
-export function teamBadge(team: Team, shown: readonly Team[] = []): string {
+export function teamBadge(team: Team, _shown: readonly Team[] = []): string {
   const code = teamCode(team);
   if (!isCollegeTeam(team)) return code;
+  // A college badge always carries its sport code (Kylie, Oct 19, 2026, replacing the Oct 17 "only on a clash"):
+  // the badge now sits beside the team's display name, which carries the code too, and reads the same alone.
   const letters = sportLetters(team);
-  if (!letters || !shown.some((other) => badgesCollide(team, other))) return code;
-  return `${code} ${letters}`;
+  return letters ? `${code} ${letters}` : code;
 }
 
 /** The short way a league is written under a badge; a league not listed here is written as it is ("NBA", "PWHL"). */
