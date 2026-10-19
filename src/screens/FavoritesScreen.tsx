@@ -1,43 +1,24 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-// The schedule's reach and its row shape live in useFavoriteRows (build 6, item 7).
+import { useMemo, useState, useSyncExternalStore } from 'react';
 import { TypeIcon } from '../components/TypeIcon';
 import { favoriteTypeKey } from '../map/typeIcons';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
-import { SearchButton } from '../components/SearchButton';
-import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
   entryMatches,
   favoriteFor,
   favoriteKey,
-  favoriteLeagueMark,
-  favoriteMark,
   favoritesOf,
   getPersonalLog,
-  nightKey,
-  scoresForNights,
   subscribePersonalLog,
   suggestionsFor,
   toggleFavorite,
   yourEntries,
   type Favorite,
   type FavoriteKind,
-  gameEventId,
 } from '../data';
-import { dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
-import { splitTitleLabel } from '../lib/eventTitle';
-import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
-import { DateBox } from '../components/StubRows';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { datePath, eventPath } from '../lib/view';
-import { LabelLine } from '../components/TitleText';
-import { Timeline, type TimelineItem } from '../components/Timeline';
-
-/** How far ahead the schedule looks: the schedule archive's reach. */
-/** The Faves timeline reaches 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
-const SPAN_DAYS = 60;
 
 const KINDS: { kind: FavoriteKind; label: string }[] = [
   { kind: 'team', label: 'Team' },
@@ -47,12 +28,10 @@ const KINDS: { kind: FavoriteKind; label: string }[] = [
 ];
 
 /**
- * Faves (build notes 3, 4.5; docs/design/build3/5-favorites.png): the teams, artists, venues and
- * festivals you follow as one schedule by date. A team tag on the left, the title over the venue
- * and time, and the small read box with its word at the end. Two tap zones: the row opens the
- * event page, the read box the date page; a date outside home wears its city's code over the box.
- * Favorites with nothing coming are named in one line. With no favorites yet, or from Edit, the
- * tab is a picker: search, suggestions, Follow pills, Done. A favorite's own page has the rest.
+ * The Faves picker (build notes 3, 4.5; Kylie, Oct 9, C076): search, your Faves first, then suggestions in the home
+ * city, Follow pills, Done. Reached from /favorites/edit (the Following sheet's Add row, the empty state's Add a
+ * Fave) and the Settings "Edit favorites" dropdown. The schedule itself is the Following tab's Faves timeline
+ * (Kylie's redesign, Oct 19, 2026).
  */
 export function FavoritesScreen({ embedded = false, edit = false }: { embedded?: boolean; /** The picker only (the Settings "Edit favorites" dropdown; Kylie, Oct 17): never the schedule. */ edit?: boolean }) {
   const navigate = useNavigate();
@@ -63,20 +42,8 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   const favorites = useMemo(() => favoritesOf(log), [log]);
   const entries = useMemo(() => yourEntries(log), [log]);
   const [query, setQuery] = useState('');
-  const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   // The picker stays open until Done, even after the first follow.
   const [picking, setPicking] = useState(() => edit || pathname.endsWith('/edit') || favorites.length === 0);
-  // The schedule rows (shared with the Following timeline since build 6, item 7).
-  const { rows, today } = useFavoriteRows(favorites, home, SPAN_DAYS, SPAN_DAYS);
-
-  // The read of each date, keyed by city and date (C066 / 5.2).
-  useEffect(() => {
-    let current = true;
-    scoresForNights(rows.flatMap((row) => (row.metroId ? [{ metroId: row.metroId, date: row.date }] : []))).then((map) => current && setRatings(map));
-    return () => {
-      current = false;
-    };
-  }, [rows]);
 
   const suggestions = useMemo(() => suggestionsFor(home.id, favorites), [home.id, favorites]);
   const isOn = (fav: Favorite) => favorites.some((f) => favoriteKey(f) === favoriteKey(fav));
@@ -226,115 +193,11 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   }
 
   // Dates, in order; each row keeps its own read (Kylie's answer, build notes 3, 8.1, item 21: no heading read).
-  // Month bands, like the Stubs and Friends timelines (Kylie, Oct 17); each row then carries its own date.
-  const toItem = (row: ScheduleRow): TimelineItem => ({
-    key: row.key,
-    group: timelineGroup({ sort: row.date, label: '', precision: 'day' }),
-    node: <ScheduleRowView row={row} shown={favorites} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />,
-  });
-  const quiet = favorites.filter((fav) => !rows.some((row) => favoriteKey(row.fav) === favoriteKey(fav) && row.date >= today));
-
-  const body = (
-    <>
-      {/* Your favorites as their badges, each opening its page, then Edit (Kylie, Oct 15: "Edit" alone hid the way
-          to each favorite and left a gap under the switch). */}
-      <div className="fav-strip fav-strip-open">
-        <div className="fav-strip-marks">
-          {/* The set-aware badge (build 6, item 9a): the whole strip is the set; the link speaks the full name. */}
-          {favorites.map((fav) => (
-            <Link key={favoriteKey(fav)} to={favPath(fav)} className="fav-strip-link" aria-label={favoriteName(fav)}>
-              <FavoriteBadge fav={fav} shown={favorites} />
-            </Link>
-          ))}
-        </div>
-        <button type="button" className="link-button you-edit" onClick={() => setPicking(true)}>
-          Edit
-        </button>
-      </div>
-      {quiet.length > 0 && (
-        <Link to="/favorites/edit" className="text-link fav-quiet">
-          Nothing coming: {quiet.map((fav) => fav.label).join(', ')} ›
-        </Link>
-      )}
-      {/* The same line of time as Stubs and Friends (Kylie, Oct 17): results and past dates above the today line,
-          reached by scrolling up; what is ahead below it; month bands on both sides. */}
-      <Timeline
-        label="Faves"
-        past={rows.filter((row) => row.date < today).map(toItem)}
-        future={rows.filter((row) => row.date >= today).map(toItem)}
-        todayLabel={dayBandLabel(today, today)}
-        emptyPast={
-          <div className="card empty-card">
-            <div className="card-title">Nothing from your Faves in the last {SPAN_DAYS} days.</div>
-          </div>
-        }
-        emptyFuture={
-          <div className="card empty-card">
-            <div className="card-title">Nothing from your Faves in the next {SPAN_DAYS} days.</div>
-          </div>
-        }
-      />
-    </>
-  );
-  if (embedded) return body;
-  return (
-    <div className="screen page">
-      <div className="you-header">
-        <h1 className="page-title">Favorites</h1>
-        <SearchButton />
-      </div>
-      {body}
-    </div>
-  );
+  // The schedule left this screen on Oct 19, 2026 (Kylie's Following redesign: the Faves timeline and its filter live
+  // in FollowingScreen). What remains is the picker, reached from /favorites/edit and the Settings dropdown.
+  return <Navigate to="/following" replace />;
 }
 
-/**
- * One row, Kylie's option P5 (Oct 18, 2026): the date tile at the left; a text block of three lines, the team line
- * (sport icon and the code the strip uses, in action blue, a link to the favorite's page), the title (a past game
- * writes its result into it) and the venue and time in grey; the read tile at the right, opening the date page, or
- * an Away tag where the app does not cover the building. The words open the event page (built from the game when
- * the app holds no event for it; Kylie, Oct 15). No badge on the row, no friction mark, no occasion tag.
- */
-function ScheduleRowView({ row, shown, rating, home }: { row: ScheduleRow; /** The favorites this schedule lists, for the set-aware code. */ shown: readonly Favorite[]; rating: number | null; home: string }) {
-  const split = splitTitleLabel(row.title);
-  const code = row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null;
-  const to = row.event ? eventPath(row.event.id, row.event.metroId) : row.link ? eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home) : null;
-  const league = row.fav.kind === 'team' ? favoriteLeagueMark(row.fav, shown) : null;
-  return (
-    <div className="fav-sched-row">
-      {to && <Link to={to} state={row.link ? { game: row.link } : undefined} className="fav-sched-link" aria-label={`${row.title}, ${favoriteName(row.fav)}`} />}
-      <span className="fav-sched-main">
-        <DateBox when={{ sort: row.date, label: '', precision: 'day' }} />
-        <span className="log-main">
-          <Link to={favPath(row.fav)} className="fav-sched-team" aria-label={favoriteName(row.fav)}>
-            <TypeIcon typeKey={favoriteTypeKey(row.fav)} size={12} />
-            {favoriteMark(row.fav, shown)}
-            {league ? ` ${league}` : ''}
-          </Link>
-          {/* The title on one line; the label on its own line under it (labels r3), never after a dot. */}
-          <span className="log-title fav-one-line">
-            <span className="fav-title-name">{split.name}</span>
-          </span>
-          {split.label && <LabelLine label={split.label} />}
-          <span className="log-facts">{row.facts}</span>
-        </span>
-      </span>
-      {row.event && row.metroId ? (
-        <Link to={datePath(row.date, row.metroId, row.event.id)} className="fav-sched-read" aria-label={`The read for ${shortLocalDate(row.date)}${code ? ` in ${METROS[row.metroId]?.name}` : ''}`}>
-          {code && <span className="fav-sched-code">{code}</span>}
-          <Read rating={rating} />
-          <span className="fav-sched-chevron" aria-hidden>
-            ›
-          </span>
-        </Link>
-      ) : (
-        <span className="fav-sched-read">{row.away ? <span className="away-tag">Away</span> : <Read rating={rating} />}</span>
-      )}
-    </div>
-  );
-}
-
-/** The last five results as W/L marks, oldest first. */
 export function LastFive({ marks }: { marks: readonly ('W' | 'L' | 'T')[] }) {
   if (marks.length === 0) return null;
   return (

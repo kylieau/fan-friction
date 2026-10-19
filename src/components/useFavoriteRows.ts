@@ -1,9 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Metro } from '../config/metros';
 import { eventMatches, getEventsBetween, getTeamSchedule, metrosWithEvents, scoreMark, todayIn, TEAMS, VENUES, venueNameOn, type CrowdEvent, type Favorite, type GameLink, type TeamGame } from '../data';
-import { isCollegeTeam } from '../data/teams';
 import { addDays, clockTime } from '../lib/dates';
-import { listTitle, scheduleGameTitle, teamRelativeTitle } from '../lib/eventTitle';
+import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
 
 /** One row of a favorites schedule: a favorite's date, from its own schedule (a team) or the listings (everyone else). */
 export interface ScheduleRow {
@@ -11,7 +10,7 @@ export interface ScheduleRow {
   fav: Favorite;
   date: string;
   start: string | null;
-  /** "Dodgers at Brewers", an artist's name, or the listed event's name. */
+  /** The row's title from the Fave's side (Kylie, Oct 19): "vs. Wisconsin", "at Michigan St", "W 17–15 at Oregon"; a show's name. */
   title: string;
   /** "American Family Field · 5:00 pm · NLCS G2". */
   facts: string;
@@ -77,18 +76,17 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
           const venue = event ? venueOf(event) : game.venueName;
           const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
           const sport = team?.sport;
-          // A result reads the team page's way: the score first, then the game from the team's side ("W 17–15 at Oregon").
+          // The row reads from the Fave's side (Kylie, Oct 19): "vs. Wisconsin", "at Michigan St"; a past game writes
+          // its result in first ("W 17–15 at Oregon"), the team page's way.
           const mark = past ? scoreMark(game) : undefined;
-          // The team line above the title already names the program, so a college title says the school alone
-          // ("Lehigh at UCLA", not "Lehigh at UCLA WBB"; Kylie, Oct 19).
-          const us = team && isCollegeTeam(team) ? team.abbr || fav.label : fav.label;
+          const side = teamRelativeTitle(game, sport);
           out.push({
             key,
             fav,
             date: game.date,
             start: game.start,
-            title: mark ? `${mark} ${teamRelativeTitle(game, sport)}` : scheduleGameTitle(us, game, sport),
-            facts: [venue, game.start && !mark ? clockTime(game.start) : null].filter(Boolean).join(' · '),
+            title: mark ? `${mark} ${side}` : side,
+            facts: [game.start && !mark ? clockTime(game.start) : null, venue].filter(Boolean).join(' · '),
             event,
             metroId: event?.metroId ?? game.eventMetroId,
             away: !game.eventId,
@@ -105,8 +103,10 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
           fav,
           date: event.date,
           start: event.start ?? null,
-          title: fav.kind === 'artist' ? fav.label : listTitle(event),
-          facts: [venueOf(event), event.start ? clockTime(event.start) : null].filter(Boolean).join(' · '),
+          // An artist's row names the show, not the artist (the line above already does): "Reunion Tour" from
+          // "Phoebe Bridgers: Reunion Tour"; the headliner's name alone when the seller wrote nothing more.
+          title: fav.kind === 'artist' ? showName(listTitle(event), fav.label) : listTitle(event),
+          facts: [event.date < today ? null : event.start ? clockTime(event.start) : null, venueOf(event)].filter(Boolean).join(' · '),
           event,
           metroId: event.metroId,
           away: false,
@@ -123,4 +123,12 @@ export function venueOf(event: CrowdEvent): string {
   if (event.place.type !== 'venue') return event.place.name;
   const venue = VENUES[event.place.venueId];
   return venue ? venueNameOn(venue, event.date) : event.place.venueId;
+}
+
+/** The part of a listing's name after the artist's own ("Phoebe Bridgers: Reunion Tour" → "Reunion Tour"); the whole name when nothing else is there. */
+export function showName(title: string, artist: string): string {
+  const rest = title.toLowerCase().startsWith(artist.toLowerCase()) ? title.slice(artist.length).replace(/^[\s:·\-–—]+/, '').trim() : '';
+  // A support act is not the show's name ("Phoebe Bridgers w/ Alex G"): the whole title stays.
+  if (!rest || /^(w\/|with|and|&|feat\.?|featuring|\+)\b/i.test(rest)) return title;
+  return rest;
 }

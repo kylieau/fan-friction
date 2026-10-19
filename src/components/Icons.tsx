@@ -266,3 +266,15 @@ export function GlobeIcon({ size = 16 }: { size?: number }) {
     </svg>
   );
 }
+
+/** Two sliders: the Following tab's filter-and-manage button (Kylie, Oct 19). */
+export function SlidersIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" {...base} aria-hidden>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+      <circle cx="9" cy="8" r="2.5" fill="var(--card)" />
+      <circle cx="15" cy="16" r="2.5" fill="var(--card)" />
+    </svg>
+  );
+}
