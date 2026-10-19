@@ -1,6 +1,6 @@
 # Fan/Friction shared review prompt
 
-Use the shared core below with one mode: **gap review** or **tester-readiness review**. Specify the release/diff, environment and intended test if known; otherwise establish them from the current project. This prompt is usable in Claude Code, Cursor and Codex without a particular tool or browser runner. It is a prepared review resource, not a replacement for the existing review READMEs, tester brief or interview guide, and does not change reviews already underway. Their coordinated update remains deferred until Kylie says the current reviews and phone checks are done.
+Use the shared core below with one mode: **gap review** or **tester-readiness review**. Specify the release/diff, environment and intended test if known; otherwise establish them from the current project. This prompt is usable in Claude Code, Cursor and Codex without a particular tool or browser runner. It is the shared procedure the two review READMEs point at (since Oct 19, 2026, evening, at Kylie's word); the tester brief and interview guide stay the interview's own documents and this prompt does not replace them. It does not change reviews already underway.
 
 ## Shared core
 
@@ -14,7 +14,7 @@ Start with `AGENTS.md`, `MEMORY_HANDOFF.md` and `BACKLOG.md`. Read:
 - `docs/reviews/gap-reviews/README.md` and `docs/reviews/tester-readiness-reviews/README.md`.
 - `docs/product/tester-brief.md` and `docs/product/tester-interview-guide.md`, including its six interview topics.
 
-Distinguish dated owner decisions from proposals, assistant notes and historical descriptions. Cite the named, dated decision before calling it locked. Resolve older descriptions against later decisions; flag genuine ambiguity without inventing requirements. For example, older tester documents say “read”; the Oct 19 decision calls the date's number and word the **Verdict**, while **friction** means the event's competition. Do not edit those historical descriptions during a review or use this wording difference to teach participants the answer.
+Distinguish dated owner decisions from proposals, assistant notes and historical descriptions. Cite the named, dated decision before calling it locked. Resolve older descriptions against later decisions; flag genuine ambiguity without inventing requirements. For example, reviews and notes from before Oct 19, 2026 say “read”; the Oct 19 decision calls the date's number and word the **Verdict**, while **friction** means the event's competition (the brief and guide were updated that evening). Do not edit those historical descriptions during a review or use this wording difference to teach participants the answer.
 
 Fan/Friction is a personal record of live events attended, games and shows together. The log leads; the date's verdict and the event's competition help distinguish an entry and inform a future decision to go. It must work for one person alone and across cities. Do not turn a review into proposals for points, rankings, open posting, public photo walls or navigation. Preserve existing features and respect parked work. Anything can be logged by hand; roughly 1,000+ is pre-listed, and only 5,000+ feeds friction. A small or uncovered event still belongs in the log without an invented verdict.
 

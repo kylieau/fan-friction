@@ -2,11 +2,9 @@
 
 Deferred work and open questions that outlive one session. Remove an item only after checking it against the code. The current snapshot is in `MEMORY_HANDOFF.md`.
 
-## Review-process update — after current reviews and tests
+## Review-process update — done Oct 19, 2026 (evening)
 
-**Requested by Kylie, Oct 19, 2026.** Once the current reviews and tests are completed, update the existing gap-review and tester-readiness documentation using the reusable review prompt drafted in this chat, adapted to Fan/Friction's purpose, code, risks and existing decisions. Do not change the process for work already underway.
-
-Update the review READMEs and relevant tester guide/brief together, incorporating lessons from the completed reviews and tests. Preserve the distinction between product gaps and readiness for a particular user test; require purpose-based critical journeys, risk-based coverage, reproducible evidence and verification limits, separate severity and confidence, shared-cause grouping, neutral participant tasks, explicit readiness conditions, and retest/closure criteria. Reviews remain evidence and proposals, not build authorization. Distinguish browser/code checks from real-user, physical-device, live-account and cross-device verification; keep private tester material out of public documentation. Reconcile existing guidance rather than creating competing procedures, and preserve previous reviews as dated snapshots.
+**Requested by Kylie, Oct 19, 2026; done the same evening at her word** ("if you can update, that would be ideal"). Codex saved the reusable review prompt as `docs/reviews/review-prompt.md` (commit `032f8b77`); the two review READMEs now point at it (gap mode, tester-readiness mode) and carry the Oct 19 lessons (a tap check is part of "measured"; signed-in, phone and cross-device checks named as untested, never passed by implication; severity and confidence apart; shared causes grouped once); the tester brief and interview guide say "verdict" for the date's number and word. Past reviews are untouched dated snapshots. Left: the Oct 19 reviews' later screenshots sit at `assets/` root rather than a dated folder (noted in both README rows).
 
 ## Open questions and judgment calls for Kylie (gathered Oct 11, 2026; build 3 closed most of them on Oct 12)
 Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, §8.1) and build 3 built them on Oct 12. Closed items stay listed with where they went; the rest are still open. "Assistant's call" means an assistant chose it and she has not confirmed it.
