@@ -5,7 +5,7 @@ Overwritten each session. Deferred work and history live in `BACKLOG.md`: open q
 _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled "late evening", was the same day), Claude Code (Fable 5.1), at `main`'s head, pushed. Kylie's standing instructions: one commit per step, straight to `main`, pushed; every tweak she sends is first judged for UX and for conflicts with earlier decisions, and an obvious conflict goes back to her as a question (advisor first). A tap check is part of "measured"._
 
 ## Current state
-**Three commits pushed this session; `npm run build` passes on the working tree.** Three files are **modified and uncommitted on purpose** (the held R11 proposal, below): `src/lib/useEdgeFade.ts` (a vertical axis option), `src/screens/MapScreen.tsx` (the key's ref), `src/styles.css` (the key's sticky fade overlay). The same change is saved as `docs/reviews/tester-readiness-reviews/assets/r11-key-fade-held.patch` (committed), so any tool can apply it with `git apply <patch>` on her yes, or `git checkout -- <the three files>` on her no.
+**Everything is committed, built and pushed; the working tree is clean.** `npm run build` passes at the head. Six commits this session.
 
 **Her Oct 19 (afternoon) answers at the resume:** phone checks deferred ("ignore for now"; the list stays under her manual steps); SeatGeek still on hold; no new UX notes.
 
@@ -13,7 +13,7 @@ _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled 
 - **Fixed:** a favorite's Near home list and Home's coming-up strip skipped today (the between-dates query's first date is exclusive; both now ask from the day before); measured on Kacey Musgraves' Oct 19 show ("Crypto.com Arena · today").
 - **R15 built:** one shared edge-fade piece (`useEdgeFade`, `src/lib/`) marks a sideways chip row with the edge it clips at; the stylesheet fades that edge only; none where the row fits or at the end reached. Wired on the Stubs, You and People filter rows, the stub sheet's Where row, the Following filter chips (their always-on mask is gone) and the event page's same-tour row. Measured at 390 and 430 px; People is signed-in only, so unmeasured. Home's favorites strip left alone (parked screen).
 - **R13 closed** by the Oct 19 strip change (first cell measured: Mon, Oct 27, 2025, rated). **R14 as decided** (the half calendar row is Kylie's Oct 13 design). **R17 measured** on the Vercel build from the dev container: header about 1 s, chips about 4 s (they wait on the live snapshot read), List about 2.3 s on clean runs; one run stalled; judge on a phone. **R16** waits on the artist record.
-- **R11, held for Kylie:** the map key clips only on phones shorter than about 800 px (120 px hidden at 667, 47 at 740; none at 844). The proposal is a fade in the card's colour that sticks to the clipped end (the card keeps its edge; the top fades once scrolled). Screenshots sent to her and saved: `assets/r11-key-667-now.png`, `r11-key-fade-667.png`, `r11-key-fade-667-bottom.png`.
+- **R11 built (Kylie: yes, Oct 19 afternoon):** the map key clips only on phones shorter than about 800 px (120 px hidden at 667, 47 at 740; none at 844); it now fades its clipped end in the card's colour (the card keeps its edge; the top fades once scrolled). Recorded in product-decisions (last entry). Screenshots: `assets/r11-key-667-now.png`, `r11-key-fade-667.png`, `r11-key-fade-667-bottom.png`.
 
 **Both Oct 19 reviews stay open on her word.** The gap review could close (every G item built, the Near-home item fixed, the other judgment calls stand), but closing moves it and the root-level screenshots both reviews share, so wait for her.
 
@@ -30,7 +30,7 @@ _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled 
 3. **The Oct 20 nightly run's log:** the two Lakers preseason games re-added, Miami's snapshots re-upserted, and `performerIds` present on 5,000+ shows in the archive files.
 
 ## Open (details in BACKLOG)
-1. **R11, her yes or no** (apply the patch or discard the three files). Then, on her word, close the two Oct 19 reviews.
+1. **Close the two Oct 19 reviews on her word** (everything in them is built, decided or waiting on the artist record; closing moves them with the root-level screenshots they share).
 2. **Parked from the artist-genres answers:** the first coverage audit prompt (Los Angeles, New York, Mexico City; 100 listings each; four weeks) at the next research slot; Wikidata for the second genre level; hand-added artist records when a favorite needs an alias or a seller id.
 3. **Leans she may change:** "Artist" where an artist has no listing in the 60-day window or is not yet followed; the league-string variants in the browse list (a data pass, BACKLOG "The Oct 19 reviews").
 4. **Small-rooms research, next installment** (Chicago onward) and the **seller-terms prompt** (BACKLOG, "Past dates", "Build 5 follow-ups").
@@ -38,5 +38,5 @@ _Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled 
 
 **Next command to run:**
 ```bash
-git pull && npm run dev   # localhost:3001 (or reuse the server already there); then git status -s to see the three held R11 files
+git pull && npm run dev   # localhost:3001 (or reuse the server already there)
 ```
