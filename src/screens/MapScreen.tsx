@@ -46,6 +46,7 @@ import { CrowdMark, FRICTION_LADDER, FrictionVerdict } from '../components/Event
 import { DayRow, RowBody, sheetVenue, spokenRow } from '../components/DayRow';
 import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, sizeTier, splitByRange } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
+import { useEdgeFade } from '../lib/useEdgeFade';
 
 type Mode = 'crowds' | 'traffic';
 /** No traffic layer exists yet; the switch stays off the map until one does (C079). */
@@ -60,6 +61,8 @@ export function MapScreen() {
   // The key's room: from just under the floating header to just over its button, so it never tucks under the
   // header on a short window (Kylie, Oct 17). Measured when it opens and whenever the window changes.
   const legendRef = useRef<HTMLDivElement>(null);
+  // On a short phone the key scrolls; its clipped end fades while more is beyond it (R11; Kylie, Oct 19, 2026).
+  const legendFade = useEdgeFade('y');
   const [legendMax, setLegendMax] = useState<number | null>(null);
   useLayoutEffect(() => {
     if (!legend) return;
@@ -414,7 +417,15 @@ export function MapScreen() {
             ?
           </button>
           {legend && (
-            <div ref={legendRef} className="legend-card" role="note" style={legendMax ? { maxHeight: legendMax } : undefined}>
+            <div
+              ref={(el) => {
+                legendRef.current = el;
+                legendFade(el);
+              }}
+              className="legend-card"
+              role="note"
+              style={legendMax ? { maxHeight: legendMax } : undefined}
+            >
               <ul className="map-key">
                 {points.length === 0 && <li className="map-key-empty">Nothing big on this date.</li>}
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>

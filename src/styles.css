@@ -2852,6 +2852,33 @@ button {
   mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
 }
 
+/* The same for the map key when a short phone makes it scroll (R11; Kylie, Oct 19, 2026): a card keeps its edge,
+   so the fade is an overlay in the card's own color that sticks to the clipped end, not a mask on the card. */
+.legend-card[data-fade-y='end']::after,
+.legend-card[data-fade-y='both']::after {
+  content: '';
+  position: sticky;
+  bottom: -12px;
+  display: block;
+  height: 36px;
+  margin-top: -36px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--card));
+  pointer-events: none;
+}
+
+.legend-card[data-fade-y='start']::before,
+.legend-card[data-fade-y='both']::before {
+  content: '';
+  position: sticky;
+  top: -12px;
+  z-index: 1;
+  display: block;
+  height: 36px;
+  margin-bottom: -36px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), var(--card));
+  pointer-events: none;
+}
+
 .filter-chip {
   flex-shrink: 0;
   height: 32px;
