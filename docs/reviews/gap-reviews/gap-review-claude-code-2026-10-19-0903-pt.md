@@ -42,7 +42,7 @@ These are places the code picked one reading where the decision had two, or did 
 
 ## Pre-existing, noticed on the way (not from this diff)
 
-- A favorite's page lists "Near home" from a query that excludes its first date, so today's shows never appear there and the "· today" suffix cannot render. (`src/screens/FavoritePage.tsx:113, 342`; `src/data/index.ts:110`)
+- **Fixed Oct 19 (afternoon):** a favorite's page listed "Near home" from a query that excludes its first date, so today's shows never appeared there and the "· today" suffix could not render; Home's coming-up strip had the same query. Both now ask from the day before (`src/screens/FavoritePage.tsx`, `src/screens/HomeScreen.tsx`); measured on Kacey Musgraves' page with her Oct 19 show ("Crypto.com Arena · today").
 - Global search skips teams with no metro (visitor records), by design.
 
 ## Fixed in this session (clear, city-neutral correctness; held locally, not pushed)
