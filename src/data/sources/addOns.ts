@@ -70,15 +70,34 @@ const STRONG = new RegExp(
 /** Every add-on word, strong or risky: what the leftover words of a parent match must be (layer 3). */
 const ADDON_WORDS = new RegExp(`${STRONG.source}|\\bsuites?\\b|\\brestaurant\\b|\\btailgate\\b|\\btunnel\\b|\\bpre-?\\s?game\\b|\\bpost-?\\s?game\\b|\\bwarm-?\\s?ups?\\b|\\bclub\\s+seats?\\b`, 'i');
 
-/** A tour of the building, not a performer's tour ("Guided Tours of Scotiabank Arena", "Stadium Tour"; not "World Tour"). */
-const VENUE_TOUR = /\b(?:guided|pre-?game|behind[- ]the[- ]scenes|backstage|venue|stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)\s+tours?\b|\btours?\s+of\s+(?:the\s+)?[\w'. ]*(?:arena|stadium|centre|center|field|park|garden|ballpark|coliseum|dome)\b|\bvisites?\s+guid[ée]es?\b|\bvisite\s+d'avant[- ]match\b/i;
+const BUILDING = String.raw`(?:venue|stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)`;
 
 /**
- * The same, wider, for listings that are not shows: the building word may sit a word or two before "tour" ("Los Angeles
- * Coliseum Historic Tours" got through as a 77,500-person event, Oct 16), and a name ending in the plural "Tours" is a
- * building's tours. Shows keep the strict rule: "Garden Party Tour" is a concert, and a performer's tour is "Tour", singular.
+ * A tour of the building, not a performer's tour, on any listing: an explicit word ("Guided Tours of Scotiabank Arena",
+ * "Opry Backstage Tour", "Coliseum Historic Tours"), "tours of" a building, the plural after a building word
+ * ("Barclays Center Tours", "Climate Pledge Arena Tours", "MetLife Stadium VIP Tours"), or the French visit words.
+ * A performer's tour is singular ("Garth Brooks - … Arena Tour", "Sanctuary Park Tour: … The Jayhawks", dropped by
+ * mistake until Oct 20, 2026, when the nightly log listed them).
  */
-const VENUE_TOUR_WIDE = new RegExp(`${VENUE_TOUR.source}|\\b(?:stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)(?:\\s+\\w+){1,2}\\s+tours?\\b|\\btours\\s*$`, 'i');
+const VENUE_TOUR = new RegExp(
+  [
+    String.raw`\b(?:guided|behind[- ]the[- ]scenes|backstage|pre-?game|historic)\s+tours?\b`,
+    String.raw`\btours?\s+of\s+(?:the\s+)?[\w'. ]*${BUILDING}\b`,
+    String.raw`\b${BUILDING}(?:\s+\w+){0,2}\s+tours\b`,
+    String.raw`\bvisites?\s+guid[ée]es?\b`,
+    String.raw`\bvisite\s+d'avant[- ]match\b`,
+  ].join('|'),
+  'i',
+);
+
+/** A singular "{building} Tour" ("Lucas Oil Stadium Tour", "Seattle Mariners Ballpark Tour") with no performer in front. */
+const LONE_BUILDING_TOUR = new RegExp(String.raw`\b${BUILDING}\s+tour\b`, 'i');
+const HAS_PARTS = /\s[-–|]\s|:\s/;
+
+/** Listings that are not shows: every building tour, plus a lone singular one ("Stadium Tour", "Garden Tour Experience"). */
+function isVenueTourWide(name: string): boolean {
+  return VENUE_TOUR.test(name) || (LONE_BUILDING_TOUR.test(name) && !HAS_PARTS.test(name));
+}
 
 /** A matchup: "Spurs vs. Suns", "Broncos v Seahawks", "Nets at Hornets". */
 const GAME_SHAPE = /\b(?:vs?\.?|versus|at|@)\s/i;
@@ -95,7 +114,7 @@ function isPremiumAddOn(name: string): boolean {
 
 /** Games and other listings: the strong add-on words, plus the risky ones on a game shape. */
 function isOtherAddOn(name: string, game: boolean): boolean {
-  if (STRONG.test(name) || VENUE_TOUR_WIDE.test(name)) return true;
+  if (STRONG.test(name) || isVenueTourWide(name)) return true;
   return (game || GAME_SHAPE.test(name)) && RISKY.test(name);
 }
 

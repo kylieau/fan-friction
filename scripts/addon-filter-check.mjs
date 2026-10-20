@@ -108,6 +108,13 @@ const LOOK_ALIKES = [
   ['Cavaliers vs. Knicks Eastern Conference Finals Watch Party', 'special'],
   ['Tour de France Watch Night', 'special'],
   ['Lakers vs. Celtics', 'game'],
+  // Performers' tours the building-tour rule dropped until Oct 20, 2026 (the nightly log listed them).
+  ['Garth Brooks - Blame It All On My Roots Arena Tour', 'show'],
+  ['JOHN SUMMIT - CTRL ESCAPE ARENA TOUR', 'show'],
+  ['The Jayhawks - Sanctuary Park Tour: Celebrating 40 Years', 'show'],
+  ['Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks', 'show'],
+  ['for KING + COUNTRY - A Drummer Boy Christmas The 2026 Arena Tour', 'show'],
+  ['Morgan Wallen - I\'m The Problem Stadium Tour', 'special'],
 ];
 
 // Add-ons the old filter already dropped; they must stay dropped.
@@ -120,6 +127,16 @@ const STILL_DROPPED = [
   ['Arena Tours', 'show'],
   ['Fenway Park Tours', 'special'],
   ['Madison Square Garden Tours', 'special'],
+  // Building tours seen in the Oct 20, 2026 nightly log.
+  ['Barclays Center Tours - Brooklyn Nets v. Boston Celtics', 'special'],
+  ['Lucas Oil Stadium Tour', 'special'],
+  ['Seattle Mariners Ballpark Tour', 'special'],
+  ['Madison Square Garden Tour Experience', 'special'],
+  ['Opry Backstage Tour', 'special'],
+  ['KSE Venue Ball Arena Tours', 'special'],
+  ['Los Angeles Coliseum Historic Tours', 'special'],
+  ['All Access Pass – Climate Pledge Arena Tours', 'special'],
+  ['Leafs VIP Guided Tour of Scotiabank Arena with alumni Darryl Sittler', 'special'],
 ];
 
 // The research's look-alikes (section 3): real shows whose names carry add-on words.
