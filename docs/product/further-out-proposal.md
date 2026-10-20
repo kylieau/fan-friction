@@ -54,5 +54,5 @@ A favorite's further-out event always shows on its page and the Following timeli
 
 ![Built: the map](further-out-built-map.png)
 
-**Not built yet:** search (it reads the city's calendar, which leaves further-out events out); further-out rooms for other cities (research); Escape Halloween and Nocturnal Wonderland (their grounds are not on file and the festival list is not read by the app yet).
+**Search** (built the same day): the search sheet finds further-out events (5,000+) when the lists switch is on ("ramon ayala" finds the Nov 7 Toyota Arena show; off, only Portland's Nov 27 date); logging an event by hand always finds them. **Not built yet:** further-out rooms for other cities (research); Escape Halloween and Nocturnal Wonderland (their grounds are not on file and the festival list is not read by the app yet).
 

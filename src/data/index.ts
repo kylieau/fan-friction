@@ -223,11 +223,15 @@ export function todayIn(metro: Metro): LocalDate {
   return new Date().toLocaleDateString('en-CA', { timeZone: metro.timeZone });
 }
 
-/** Every event the calendar and search can see: seeded nights plus today onward. */
-async function catalog(metroId: string): Promise<CrowdEvent[]> {
+/**
+ * Every event the calendar and search can see: seeded nights plus today onward. A further-out room's events are never
+ * in the city's calendar; search adds them (5,000+ only) when asked (`withFurtherOut`, Kylie, Oct 20, 2026).
+ */
+async function catalog(metroId: string, withFurtherOut = false): Promise<CrowdEvent[]> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId) : Promise.resolve([]))));
-  // A further-out room's events are never in the city's calendar or search (they have their own group).
-  const events = uniqueById(lists.flat().filter((event) => event.metroId === metroId && !isFurtherOut(event)));
+  const events = uniqueById(
+    lists.flat().filter((event) => event.metroId === metroId && (!isFurtherOut(event) || (withFurtherOut && sizeTier(event) === 'feeds-friction'))),
+  );
   const seededDates = new Set(events.filter((event) => event.sourceId === 'seed').map((event) => event.date));
   return events.filter((event) => event.sourceId === 'seed' || !seededDates.has(event.date));
 }
@@ -260,10 +264,10 @@ export async function getCalendarMonth(metroId: string, month: string): Promise<
  * Nights whose team, artist, or venue matches the query, newest first.
  * Fewer than two letters matches nothing, so an empty box can show Famous nights.
  */
-export async function searchDates(metroId: string, query: string, visible?: (event: CrowdEvent) => boolean): Promise<DateSearchHit[]> {
+export async function searchDates(metroId: string, query: string, visible?: (event: CrowdEvent) => boolean, opts: { withFurtherOut?: boolean } = {}): Promise<DateSearchHit[]> {
   const q = query.trim();
   if (q.length < 2) return [];
-  const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
+  const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId, opts.withFurtherOut === true)]);
   const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
   const hits = new Map<string, { titles: string[]; matched: string[]; artists: string[]; festivals: string[]; anyVisible: boolean; eventId?: string; hiddenEventId?: string }>();
   const addName = (list: string[], name: string) => {
@@ -313,9 +317,9 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
 }
 
 /** The same search over every covered city at once, the home city's hits first (Kylie, Oct 9, C058). */
-export async function searchAllDates(homeId: string | null, query: string, visible?: (event: CrowdEvent) => boolean): Promise<DateSearchHit[]> {
+export async function searchAllDates(homeId: string | null, query: string, visible?: (event: CrowdEvent) => boolean, opts: { withFurtherOut?: boolean } = {}): Promise<DateSearchHit[]> {
   const ids = [...COVERED_METRO_IDS].sort((a, b) => (a === homeId ? -1 : b === homeId ? 1 : 0));
-  const lists = await Promise.all(ids.map((id) => searchDates(id, query, visible)));
+  const lists = await Promise.all(ids.map((id) => searchDates(id, query, visible, opts)));
   return lists.flat();
 }
 

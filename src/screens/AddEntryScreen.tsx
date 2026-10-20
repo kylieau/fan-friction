@@ -69,7 +69,8 @@ export function AddEntryScreen() {
     }
     let current = true;
     setHits(null);
-    searchAllDates(homeId, trimmed).then((list) => current && setHits(list));
+    // Anything can be logged by hand (Kylie, Oct 6), so a further-out event is always findable here.
+    searchAllDates(homeId, trimmed, undefined, { withFurtherOut: true }).then((list) => current && setHits(list));
     return () => {
       current = false;
     };

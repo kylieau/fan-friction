@@ -92,7 +92,9 @@ export function SearchSheet({
     const log = getPersonalLog();
     const range = rangeOn(crowdRangeOf(log), 'lists');
     const keep = alwaysShownIds(log, friends);
-    searchAllDates(homeId, trimmed, (event) => passesCrowdRange(event, range, keep)).then((list) => current && setHits(list));
+    // Further out follows its own lists switch (Kylie, Oct 20, 2026).
+    const withFurtherOut = !crowdRangeOf(log).furtherListsOff;
+    searchAllDates(homeId, trimmed, (event) => passesCrowdRange(event, range, keep), { withFurtherOut }).then((list) => current && setHits(list));
     return () => {
       current = false;
     };
