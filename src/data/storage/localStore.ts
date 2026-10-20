@@ -117,6 +117,11 @@ function asOrder(value: unknown): YouOrder {
   return value === 'nights-first' ? 'nights-first' : 'plans-first';
 }
 
+function firstById<T extends { id: string }>(rows: T[]): T[] {
+  const seen = new Set<string>();
+  return rows.filter((row) => !seen.has(row.id) && Boolean(seen.add(row.id)));
+}
+
 /** Read the phone copy. A bad or missing file becomes an empty log, not a crash. */
 export function readLocalLog(): PersonalLog {
   try {
@@ -127,7 +132,8 @@ export function readLocalLog(): PersonalLog {
     return {
       version: 1,
       hiddenSeedIds: Array.isArray(parsed.hiddenSeedIds) ? parsed.hiddenSeedIds.filter((id) => typeof id === 'string') : [],
-      added: Array.isArray(parsed.added) ? parsed.added.filter(isEntry).map(cleanEntry) : [],
+      // One row per id: a phone that settled one plan twice (before the Oct 20, 2026 fix) keeps the first copy.
+      added: Array.isArray(parsed.added) ? firstById(parsed.added.filter(isEntry).map(cleanEntry)) : [],
       plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
       favorites: readFavorites(parsed.favorites),

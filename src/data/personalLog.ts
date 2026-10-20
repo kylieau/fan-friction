@@ -1061,9 +1061,12 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
     }
   }
   if (settledIds.size === 0) return;
+  // App start and the account load can both run this; the log may have changed while the dates loaded, so a stub
+  // another run already made is not added twice (found Oct 20, 2026: one passed plan became two identical stubs).
+  const fresh = added.filter((entry) => !snapshot.added.some((row) => row.id === entry.id || (entry.eventId && row.eventId === entry.eventId)));
   commit({
     ...snapshot,
-    added: [...snapshot.added, ...added],
+    added: [...snapshot.added, ...fresh],
     plans: snapshot.plans.filter((plan) => !settledIds.has(plan.id)),
   });
 }
