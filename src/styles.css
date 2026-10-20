@@ -2004,6 +2004,13 @@ button {
   color: var(--ink2);
 }
 
+/* A further-out event's quiet second line (Kylie, Oct 20, 2026, afternoon). */
+.event-further {
+  margin-top: -5px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .event-stakes {
   margin: 0;
   font-size: 14px;

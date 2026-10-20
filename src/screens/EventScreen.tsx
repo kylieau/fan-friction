@@ -240,7 +240,9 @@ export function EventScreen() {
   // The day's events on the map and its biggest draw, for the This day card; inside the crowd size range only
   // (build 5, item 6, answer A). Up against above stays unfiltered (answer B).
   // A further-out event (outside the city, within about 2 hours) opens on its own; it has no This day card.
-  const further = e.place.type === 'venue' && Boolean(VENUES[e.place.venueId]?.furtherOut);
+  const furtherRoom = e.place.type === 'venue' ? VENUES[e.place.venueId]?.furtherOut : undefined;
+  const further = Boolean(furtherRoom);
+  const furtherTown = furtherRoom?.town;
   const dayEvents = splitByRange(day.events.filter(showsOnMap), rangeOn(crowdRangeOf(log), 'lists'), alwaysShownIds(log, dayFriends)).shown;
   const dayCount = dayEvents.length;
   const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
@@ -259,9 +261,12 @@ export function EventScreen() {
           {me.venueName}
           {/* A neutral site names its city (build notes 2, event naming). */}
           {e.neutralSite ? ` · ${(METROS[e.metroId] ?? DEFAULT_METRO).name}` : ''}
+          {/* A further-out event names its town (Kylie, Oct 20, 2026, afternoon); the drive stays on list rows. */}
+          {furtherTown ? ` · ${furtherTown}` : ''}
           {e.start ? ` · ${clockTime(e.start)}` : ''}
           {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>
+        {further && <div className="event-further">Further out</div>}
         <FactList facts={eventFacts(e, logged)} />
         {/* No ticket line (build 6, item 12): hidden, not deleted; the .ticket-line style stays for its return. */}
         {a && (
