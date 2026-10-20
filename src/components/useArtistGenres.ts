@@ -18,7 +18,7 @@ export function useArtistGenres(favorites: readonly Favorite[]): ReadonlyMap<str
     if (!hasArtists) return;
     let current = true;
     const today = new Date().toISOString().slice(0, 10);
-    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(today, -SPAN_DAYS - 1), addDays(today, SPAN_DAYS)))).then((lists) => {
+    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(today, -SPAN_DAYS - 1), addDays(today, SPAN_DAYS), { withFurtherOut: true }))).then((lists) => {
       if (current) setListings(lists.flat());
     });
     return () => {

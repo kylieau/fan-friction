@@ -1,3 +1,4 @@
+import { FurtherOutList } from '../components/FurtherOut';
 import { RowBody, spokenRow } from '../components/DayRow';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
@@ -114,6 +115,10 @@ export function DateScreen() {
   // The split is always known, so the line keeps its count and reads Hide while everything shows (Kylie, Oct 17).
   const split = useMemo(() => splitByRange(events, rangeOn(crowdRangeOf(log), 'lists'), keep), [events, log, keep]);
   const lineup = useMemo(() => (showAll ? { shown: events, hidden: split.hidden } : split), [events, showAll, split]);
+  const further = useMemo(() => {
+    const all = day?.furtherOut ?? [];
+    return crowdRangeOf(log).furtherListsOff ? all.filter((e) => keep.has(e.id)) : all;
+  }, [day, log, keep]);
   // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
   const biggest = useMemo(() => [...events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0))[0], [events]);
   const mine = useMemo(
@@ -347,6 +352,19 @@ export function DateScreen() {
             </ul>
           </div>
           <HiddenLine count={lineup.hidden.length} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
+        </section>
+      )}
+
+      {/* Further out (Kylie, Oct 19–20, 2026): big events within about a 2-hour drive, after the lineup, never in the
+          verdict. The lists switch hides them; ones you stubbed or friends are attending always show. */}
+      {further.length > 0 && (
+        <section className="you-block" aria-labelledby="further-out">
+          <div className="date-lineup-card">
+            <h2 id="further-out" className="you-heading in-card-title">
+              Further out
+            </h2>
+            <FurtherOutList events={further} variant="date" />
+          </div>
         </section>
       )}
 

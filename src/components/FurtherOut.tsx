@@ -1,0 +1,53 @@
+import { Link } from 'react-router-dom';
+import { VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { clockTime } from '../lib/dates';
+import { eventPath } from '../lib/view';
+import { RowBody, spokenRow } from './DayRow';
+
+/**
+ * Further out (Kylie, Oct 19–20, 2026; board docs/product/further-out-proposal.md): big events outside the city,
+ * within about a 2-hour drive. The same rows as the lineup, with no friction ring or occasion tag (they never reach
+ * the formula), and a second line of room · town · drive.
+ */
+
+/** "45 min drive", "1 hr drive", "1 hr 25 min drive": the stored drive rounded to 5 minutes. Always an estimate. */
+export function driveText(minutes: number): string {
+  const m = Math.max(5, Math.round(minutes / 5) * 5);
+  if (m < 60) return `${m} min drive`;
+  const h = Math.floor(m / 60);
+  const rest = m % 60;
+  return rest ? `${h} hr ${rest} min drive` : `${h} hr drive`;
+}
+
+/** "Toyota Arena · Ontario · 1 hr 5 min drive". */
+export function furtherOutPlace(event: CrowdEvent): string | null {
+  if (event.place.type !== 'venue') return event.place.name;
+  const venue = VENUES[event.place.venueId];
+  if (!venue) return null;
+  const parts = [venueNameOn(venue, event.date)];
+  if (venue.furtherOut?.town) parts.push(venue.furtherOut.town);
+  if (venue.furtherOut?.driveMinutes) parts.push(driveText(venue.furtherOut.driveMinutes));
+  return parts.join(' · ');
+}
+
+/**
+ * The rows themselves, each opening its event page: the date page's lineup rows (`variant="date"`) or the Explore
+ * List's (`variant="list"`), so each group matches the rows above it.
+ */
+export function FurtherOutList({ events, variant }: { events: readonly CrowdEvent[]; variant: 'date' | 'list' }) {
+  const date = variant === 'date';
+  return (
+    <ul className={date ? 'date-list further-out-list' : 'day-list further-out-list'}>
+      {events.map((e) => {
+        const place = furtherOutPlace(e);
+        return (
+          <li key={e.id} className={date ? 'date-row' : undefined}>
+            <Link to={eventPath(e.id, e.metroId)} className={date ? 'date-row-main' : 'day-row'} aria-label={`${spokenRow(e, place)}, further out`}>
+              <RowBody event={e} day={events} time={e.start ? clockTime(e.start) : 'TBA'} venueText={place} />
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}

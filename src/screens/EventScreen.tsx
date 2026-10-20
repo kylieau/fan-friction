@@ -134,6 +134,13 @@ export function EventScreen() {
           setDay(next);
           return;
         }
+        // A further-out event (Kylie, Oct 19–20, 2026) opens on its own: no rivals, no verdict, since it never
+        // counts toward the city's day.
+        const further = next.furtherOut?.find((event) => event.id === id);
+        if (further) {
+          setDay({ ...next, events: [further], rating: null, status: 'unrated', furtherOut: undefined });
+          return;
+        }
       }
       // The same game under another id (a hand seed's "2026-10-03-dodgers" for the feed's MLB id): open that one.
       if (link) {
@@ -232,6 +239,8 @@ export function EventScreen() {
   const rivalMiles = (r: CrowdEvent) => (r.place.type === 'venue' && VENUES[r.place.venueId] ? milesBetween(me.location, VENUES[r.place.venueId].location) : null);
   // The day's events on the map and its biggest draw, for the This day card; inside the crowd size range only
   // (build 5, item 6, answer A). Up against above stays unfiltered (answer B).
+  // A further-out event (outside the city, within about 2 hours) opens on its own; it has no This day card.
+  const further = e.place.type === 'venue' && Boolean(VENUES[e.place.venueId]?.furtherOut);
   const dayEvents = splitByRange(day.events.filter(showsOnMap), rangeOn(crowdRangeOf(log), 'lists'), alwaysShownIds(log, dayFriends)).shown;
   const dayCount = dayEvents.length;
   const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
@@ -302,7 +311,10 @@ export function EventScreen() {
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
 
-      {/* This day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page. */}
+      {/* This day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page.
+          Not on a further-out event (Kylie, Oct 19–20, 2026): it is outside the city's day, so the card would count it
+          as a day of one. */}
+      {!further && (
       <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This day">
         <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
         <span className="this-day-main">
@@ -316,6 +328,7 @@ export function EventScreen() {
           ›
         </span>
       </Link>
+      )}
 
       {friends.length > 0 && (
         <section className="you-block" aria-labelledby="friends-event">

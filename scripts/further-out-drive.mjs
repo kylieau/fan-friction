@@ -50,7 +50,7 @@ for (const venue of Object.values(VENUES)) {
   await sleep(1100);
   const how = minutes ? 'routed' : 'straight-line';
   const drive = minutes ?? Math.round(((miles(core, venue.location) * 1.3) / 45) * 60);
-  const block = new RegExp(`(id: '${venue.id}',[\\s\\S]*?furtherOut: \\{ driveMinutes: )\\d+(, how: ')[a-z-]+(' \\})`);
+  const block = new RegExp(`(id: '${venue.id}',[\\s\\S]*?furtherOut: \\{ driveMinutes: )\\d+(, how: ')[a-z-]+(')`);
   if (!block.test(src)) { console.log(`could not place the drive for ${venue.id}`); continue; }
   src = src.replace(block, `$1${drive}$2${how}$3`);
   written += 1;

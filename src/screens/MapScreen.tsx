@@ -164,6 +164,18 @@ export function MapScreen() {
     all.sort((a, b) => (a.event.date + (a.event.start ?? '')).localeCompare(b.event.date + (b.event.start ?? '')));
     return all;
   }, [shown, mode, events, date]);
+  // Further out (Kylie, Oct 19–20, 2026): the day's big events within about a 2-hour drive, drawn muted like small
+  // rooms, with no ring. Only the drawing layer gets them: the camera keeps framing the city, and the sheet's rows,
+  // totals and the verdict never see them. The map switch hides them, except your stubs and friends' plans.
+  const furtherOn = useMemo(() => {
+    const all = shown?.furtherOut ?? [];
+    return crowdRangeOf(log).furtherMapOff ? all.filter((e) => keep.has(e.id)) : all;
+  }, [shown, log, keep]);
+  const furtherPoints = useMemo(
+    () => (shown && mode === 'crowds' ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true })) : []),
+    [shown, mode, furtherOn, date],
+  );
+  const layerPoints = useMemo(() => (furtherPoints.length ? [...points, ...furtherPoints] : points), [points, furtherPoints]);
   // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
   // list scrolls once that would pass the sheet's max height.
   const [open, setOpen] = useState(memory?.sheetOpen ?? false);
@@ -208,7 +220,7 @@ export function MapScreen() {
     setSelectedId(id);
     if (id) setLegend(false); // and on an event pick
   }, []);
-  const selected = events.find((e) => e.id === selectedId) ?? null;
+  const selected = events.find((e) => e.id === selectedId) ?? furtherOn.find((e) => e.id === selectedId) ?? null;
 
   const headerRating = rating ? rating.rating : null;
   // The day's crowd, over the friction floor, for the count line and the Why card.
@@ -298,7 +310,7 @@ export function MapScreen() {
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro} camera={memory}>
-          <CrowdLayer points={points} selectedId={selectedId} onSelect={select} activity={chipActivity} />
+          <CrowdLayer points={layerPoints} selectedId={selectedId} onSelect={select} activity={chipActivity} />
           <MapCamera
             points={points}
             selectedId={selectedId}

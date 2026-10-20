@@ -52,7 +52,12 @@ export function CrowdSizeSettings() {
   };
 
   // Where the range applies (Kylie, Oct 19, 2026): the map and lists each have a switch; every save keeps them.
-  const scope: CrowdRange = { ...(saved.mapOff ? { mapOff: true } : {}), ...(saved.listsOff ? { listsOff: true } : {}) };
+  const scope: CrowdRange = {
+    ...(saved.mapOff ? { mapOff: true } : {}),
+    ...(saved.listsOff ? { listsOff: true } : {}),
+    ...(saved.furtherMapOff ? { furtherMapOff: true } : {}),
+    ...(saved.furtherListsOff ? { furtherListsOff: true } : {}),
+  };
   const current: CrowdRange = { ...(min > 0 ? { min } : {}), ...(max < CROWD_RANGE_TOP ? { max } : {}), ...scope };
   const toggle = (patch: CrowdRange) => {
     window.clearTimeout(timer.current);
@@ -141,6 +146,20 @@ export function CrowdSizeSettings() {
         >
           <span>Show events with unknown size</span>
           <span className="settings-value">{showUnknown ? 'On' : 'Off'}</span>
+        </button>
+      </div>
+      {/* Further out (Kylie, Oct 19–20, 2026): its own two switches, both on; the line under the heading says what
+          the group is (Kylie, Oct 20: "needs a helper explanation"). */}
+      <div className="settings">
+        <div className="settings-heading">Further out</div>
+        <p className="you-fine">Big events (5,000+) outside the city, within about a 2-hour drive. They're listed for reference and never count toward a date's verdict.</p>
+        <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherMapOff} onClick={() => toggle({ furtherMapOff: !saved.furtherMapOff })}>
+          <span>Show on the map</span>
+          <span className="settings-value">{saved.furtherMapOff ? 'Off' : 'On'}</span>
+        </button>
+        <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherListsOff} onClick={() => toggle({ furtherListsOff: !saved.furtherListsOff })}>
+          <span>Show on date pages and lists</span>
+          <span className="settings-value">{saved.furtherListsOff ? 'Off' : 'On'}</span>
         </button>
       </div>
     </>

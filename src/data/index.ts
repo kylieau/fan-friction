@@ -18,7 +18,7 @@ import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
 import './homeSync';
 import { primeDate } from './catalogCache';
-import { checkedFor, entryMetroId, nightKey, rememberNearby } from './read';
+import { checkedFor, entryMetroId, nightKey, rememberNearby, sizeTier } from './read';
 import { listRange, weekOf } from './cityList';
 import { belongsToCity, isFurtherOut } from './sources/venueMetro';
 import { addDays } from '../lib/dates';
@@ -57,10 +57,17 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
   const [answers] = await Promise.all([Promise.allSettled(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
   const lists = answers.map((a) => (a.status === 'fulfilled' ? a.value : []));
   const failed = EVENT_SOURCES.filter((_, i) => answers[i].status === 'rejected').map((s) => s.id);
-  const listed = withExpectedDraws(withResults(preferSeed(uniqueById(lists.flat()).filter((e) => belongsToCity(e, metroId))))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const all = uniqueById(lists.flat());
+  const byStart = (a: CrowdEvent, b: CrowdEvent) => (a.start ?? '99').localeCompare(b.start ?? '99');
+  const listed = withExpectedDraws(withResults(preferSeed(all.filter((e) => belongsToCity(e, metroId))))).sort(byStart);
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
-  const day: CityDate = { metroId, date, status, events, rating, ...(failed.length ? { failed } : {}) };
+  // Further out (Kylie, Oct 19–20, 2026): big events at this city's further-out rooms, sized like any event, kept
+  // apart from the day. They never reach applyFormula, the status or the empty-day test.
+  const further = withExpectedDraws(all.filter((e) => e.metroId === metroId && isFurtherOut(e)))
+    .filter((e) => sizeTier(e) === 'feeds-friction')
+    .sort(byStart);
+  const day: CityDate = { metroId, date, status, events, rating, ...(failed.length ? { failed } : {}), ...(further.length ? { furtherOut: further } : {}) };
   if (events.length === 0) {
     // Quiet only when the city was really checked that date (Kylie, Oct 9, C030): a past date by the
     // saved captures; today and ahead by the live load, and never when a source failed.
@@ -101,13 +108,16 @@ export async function getUpcoming(metroId: string, afterDate: LocalDate, limit =
     .slice(0, limit);
 }
 
-/** Events after one date and up to another (both local dates, the end included), soonest first. */
-export async function getEventsBetween(metroId: string, afterDate: LocalDate, throughDate: LocalDate): Promise<CrowdEvent[]> {
+/**
+ * Events after one date and up to another (both local dates, the end included), soonest first. `withFurtherOut` adds
+ * the city's further-out events (Kylie, Oct 20, 2026: a favorite's always show, on its page and Following).
+ */
+export async function getEventsBetween(metroId: string, afterDate: LocalDate, throughDate: LocalDate, opts: { withFurtherOut?: boolean } = {}): Promise<CrowdEvent[]> {
   const lists = await Promise.all(
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );
   return uniqueById(lists.flat())
-    .filter((e) => e.date > afterDate && e.date <= throughDate && belongsToCity(e, metroId))
+    .filter((e) => e.date > afterDate && e.date <= throughDate && (belongsToCity(e, metroId) || (opts.withFurtherOut === true && e.metroId === metroId && isFurtherOut(e))))
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
 }
 

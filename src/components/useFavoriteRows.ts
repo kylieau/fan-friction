@@ -46,7 +46,7 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
   useEffect(() => {
     let current = true;
     // From the day before the floor, since the listings query starts after its first date.
-    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(floor, -1), horizon))).then((lists) => {
+    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(floor, -1), horizon, { withFurtherOut: true }))).then((lists) => {
       if (!current) return;
       setUpcoming(lists.flat().sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))));
     });

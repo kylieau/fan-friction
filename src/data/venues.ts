@@ -2232,7 +2232,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 9736, setup: 'hockey', note: 'Official (hockey). Same source.' },
     ],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 63, how: 'routed' },
+    furtherOut: { driveMinutes: 63, how: 'routed', town: 'Ontario' },
   },
   'san-manuel-stadium': {
     id: 'san-manuel-stadium',
@@ -2242,7 +2242,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-117.29642, 34.09675],
     capacity: [{ seats: 8000, setup: 'baseball', note: 'Official, approximate (the current MiLB page: 8,000, seating and berm split unstated; concert setup unconfirmed). Source: https://www.milb.com/inland-empire/ballpark' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 83, how: 'routed' },
+    furtherOut: { driveMinutes: 83, how: 'routed', town: 'San Bernardino' },
   },
   'morongo-field': {
     id: 'morongo-field',
@@ -2253,7 +2253,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-117.54584, 34.1012],
     capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, approximate (the current team page: roughly 6,000 seated; berm split and concert limit unconfirmed). Source: https://www.milb.com/rancho-cucamonga/ballpark' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 66, how: 'routed' },
+    furtherOut: { driveMinutes: 66, how: 'routed', town: 'Rancho Cucamonga' },
   },
   'fowler-events-center': {
     id: 'fowler-events-center',
@@ -2263,7 +2263,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-117.42592, 33.92832],
     capacity: [{ seats: 5050, setup: 'basketball', note: 'Official (basketball). California Baptist University. The 2016 plan said expandable past 6,000; no concert layout is established, so that is not used. Source: https://cbulancers.com/facilities/dale-e-and-sarah-ann-fowler-events-center/41' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 76, how: 'routed' },
+    furtherOut: { driveMinutes: 76, how: 'routed', town: 'Riverside' },
   },
   'kellogg-arena': {
     id: 'kellogg-arena',

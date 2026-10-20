@@ -113,7 +113,7 @@ export function FavoritePage() {
   // before Oct 19, 2026, and the " · today" word never showed).
   useEffect(() => {
     let current = true;
-    Promise.all(metrosWithEvents().map((m) => getEventsBetween(m.id, addDays(today, -1), addDays(today, AHEAD_DAYS)))).then((lists) => {
+    Promise.all(metrosWithEvents().map((m) => getEventsBetween(m.id, addDays(today, -1), addDays(today, AHEAD_DAYS), { withFurtherOut: true }))).then((lists) => {
       if (!current) return;
       setEverywhere(lists.flat().sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))));
     });

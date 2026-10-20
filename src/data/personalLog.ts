@@ -1208,6 +1208,8 @@ export function setCrowdRange(range: CrowdRange) {
     ...(range.showUnknown === false ? { showUnknown: false } : {}),
     ...(range.mapOff ? { mapOff: true } : {}),
     ...(range.listsOff ? { listsOff: true } : {}),
+    ...(range.furtherMapOff ? { furtherMapOff: true } : {}),
+    ...(range.furtherListsOff ? { furtherListsOff: true } : {}),
   };
   commit({ ...snapshot, crowdRange: clean, crowdRangeAt: new Date().toISOString() });
 }

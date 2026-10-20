@@ -1,6 +1,6 @@
 # Proposal: "Further out" (regional events), mock for Kylie's yes
 
-Claude Code, Oct 19, 2026 (evening). Status: open, waiting on Kylie's yes to the mock.
+Claude Code, Oct 19, 2026 (evening). Mock approved by Kylie Oct 20, 2026 ("fine", with a helper line under the Settings heading); built Oct 20 (see "Built" at the end).
 
 **Updated Oct 20, 2026, midday (Kylie, multiple choice):** separate switches for the map and for lists (date pages, the Explore List, search), both on by default; a favorite's further-out event always shows on its page and Following. The screenshots below are redone to match.
 
@@ -44,3 +44,15 @@ One range, with two switches under it, "Apply on the map" and "Apply on date pag
 
 ## Decided with it
 A favorite's further-out event always shows on its page and the Following timeline, whatever the switches say.
+
+## Built (Oct 20, 2026)
+- **Data:** a room marked `furtherOut` (drive, town) keeps its city's id so the feeds read it, and never reaches a day, the calendar, search, a stamp, the stamp clock or a gridlock zone. The first rooms are Los Angeles's Inland Empire rooms of 5,000+ (Toyota Arena, San Manuel Stadium, Morongo Field, Fowler Events Center; 63–83 minutes by the routed drive). Only events of 5,000+ show.
+- **Date page:** the Further out card under the lineup, behind the lists switch (stubs and friends' plans always show). **Explore List:** a small "Further out" heading closes the day. **Map:** muted chips on the drawing layer only (the camera, the sheet's rows and the day's totals never see them), behind the map switch. **Event page:** a further-out event opens on its own, with no This day card. **Favorites:** its page, the Following timeline and Home's strip include further-out events whatever the switches say. **Settings:** the Further out heading, the helper line and the two switches.
+- **Measured** with Los Angeles's live further-out rows on Sat, Nov 7 (Ramon Ayala at Toyota Arena): the verdict reads 4.7 with 25 lineup events with or without the row; the card and the List group show one row and disappear with the lists switch off; the map draws one muted chip with the switch on and none with it off, the header staying at 25 events · 64k.
+
+![Built: the date page](further-out-built-date.png)
+
+![Built: the map](further-out-built-map.png)
+
+**Not built yet:** search (it reads the city's calendar, which leaves further-out events out); further-out rooms for other cities (research); Escape Halloween and Nocturnal Wonderland (their grounds are not on file and the festival list is not read by the app yet).
+

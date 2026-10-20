@@ -1,3 +1,4 @@
+import { FurtherOutList } from '../components/FurtherOut';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useNavigationType } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
@@ -257,6 +258,7 @@ export function ExploreListScreen() {
   useEffect(() => setRevealed(new Set()), [metro.id]);
   const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
   const crowdRange = rangeOn(crowdRangeOf(log), 'lists');
+  const furtherOff = Boolean(crowdRangeOf(log).furtherListsOff);
 
   // The days that show: a row for every event at a known venue, empty days hidden (V08). A day whose rows are all
   // outside the range keeps its band, so its hidden line can be found.
@@ -529,6 +531,19 @@ export function ExploreListScreen() {
                   })
                 }
               />
+              {/* Further out (Kylie, Oct 19–20, 2026): the day's big events within about a 2-hour drive close the day,
+                  under a small heading, never in its verdict. The lists switch hides them, except your stubs and
+                  friends' plans. */}
+              {(() => {
+                const further = (day.furtherOut ?? []).filter((e) => !furtherOff || keep.has(e.id));
+                if (further.length === 0) return null;
+                return (
+                  <>
+                    <div className="settings-heading further-out-head">Further out</div>
+                    <FurtherOutList events={further} variant="list" />
+                  </>
+                );
+              })()}
             </section>
           ))}
         </div>

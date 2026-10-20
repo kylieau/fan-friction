@@ -66,7 +66,7 @@ export function HomeScreen() {
     let current = true;
     getCityDate(home.id, today).then((next) => current && setDay(next));
     // From today (the query's first date is exclusive; today's events were skipped before Oct 19, 2026).
-    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(today, -1), addDays(today, 30)))).then((lists) => {
+    Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, addDays(today, -1), addDays(today, 30), { withFurtherOut: true }))).then((lists) => {
       if (current) setEverywhere(lists.flat());
     });
     return () => {

@@ -67,7 +67,7 @@ export interface Venue {
    * "Further out"). Its events show in their own group and never reach a verdict, a stamp or the day's count. The
    * drive is computed once per room by scripts/further-out-drive.mjs, always an estimate.
    */
-  furtherOut?: { driveMinutes: number; how: 'routed' | 'straight-line' };
+  furtherOut?: { driveMinutes: number; how: 'routed' | 'straight-line'; /** The town on the row ("Ontario"). */ town: string };
 }
 
 // ---------- Teams ----------
@@ -383,6 +383,11 @@ export interface CityDate {
   empty?: 'quiet' | 'no-data';
   /** The line under "No data" on the date page: never collected, not all collected, or a failed load. */
   emptyWhy?: 'never' | 'partial' | 'failed';
+  /**
+   * Big events (5,000+) that day at further-out rooms for this city (Kylie, Oct 19–20, 2026): listed in their own
+   * group, never part of `events`, the rating or the status. Absent when there are none.
+   */
+  furtherOut?: CrowdEvent[];
 }
 
 /** One cell of the Nights calendar. Quiet means nothing big is on file for that date. */
@@ -681,6 +686,9 @@ export interface CrowdRange {
   showUnknown?: boolean;
   mapOff?: boolean;
   listsOff?: boolean;
+  /** Further out (Kylie, Oct 20, 2026): its own two switches, both on by default; true only when turned off. */
+  furtherMapOff?: boolean;
+  furtherListsOff?: boolean;
 }
 
 /**
