@@ -21,6 +21,16 @@ export function isFurtherOut(event: CrowdEvent): boolean {
 }
 
 /**
+ * The same, for a stub, plan or friend's row, which keeps only its city and the room's name. Such a row's tile is
+ * plain, with no tap: the city's verdict is about a day the event never counted toward (Kylie, Oct 20, 2026).
+ */
+export function isFurtherOutRoom(metroId: string | undefined, venue: string | undefined): boolean {
+  const key = venue?.trim().toLowerCase();
+  if (!metroId || !key) return false;
+  return Object.values(VENUES).some((v) => v.furtherOut && v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === key));
+}
+
+/**
  * Does this event belong in this city's day? An event at a venue that belongs to another covered city
  * does not. An event with no known venue, or at a venue in no covered city, stays where it was filed.
  * A further-out room's events never do: they are read only through `furtherOutOn`.

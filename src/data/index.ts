@@ -21,6 +21,7 @@ import { primeDate } from './catalogCache';
 import { checkedFor, entryMetroId, nightKey, rememberNearby, sizeTier } from './read';
 import { listRange, weekOf } from './cityList';
 import { belongsToCity, isFurtherOut } from './sources/venueMetro';
+export { isFurtherOut, isFurtherOutRoom } from './sources/venueMetro';
 import { addDays } from '../lib/dates';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
@@ -269,7 +270,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
   if (q.length < 2) return [];
   const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId, opts.withFurtherOut === true)]);
   const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
-  const hits = new Map<string, { titles: string[]; matched: string[]; artists: string[]; festivals: string[]; anyVisible: boolean; eventId?: string; hiddenEventId?: string }>();
+  const hits = new Map<string, { titles: string[]; matched: string[]; artists: string[]; festivals: string[]; anyVisible: boolean; inCity?: boolean; eventId?: string; hiddenEventId?: string }>();
   const addName = (list: string[], name: string) => {
     if (!list.some((m) => m.toLowerCase() === name.toLowerCase())) list.push(name);
   };
@@ -288,6 +289,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
     if (event.kind === 'festival' && names.some((n) => n.toLowerCase() === event.title.toLowerCase())) addName(row.festivals, event.title);
     const shown = !visible || visible(event);
     if (shown) row.anyVisible = true;
+    if (!isFurtherOut(event)) row.inCity = true;
     // The first visible match is the one a tap selects on the day; the first match at all when every one is hidden.
     if (shown) row.eventId ??= event.id;
     else row.hiddenEventId ??= event.id;
@@ -301,7 +303,8 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
   return [...hits.entries()]
     .sort((a, b) => b[0].localeCompare(a[0]))
     .map(([date, row]) => {
-      const rating = ratingByDate.get(date);
+      // A date found only through further-out events shows no verdict (Kylie, Oct 20, 2026): they never counted toward it.
+      const rating = row.inCity ? ratingByDate.get(date) : undefined;
       return {
         date,
         metroId,

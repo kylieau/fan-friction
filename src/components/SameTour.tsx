@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getCityDate, getEventsBetween, type CrowdEvent } from '../data';
+import { getCityDate, getEventsBetween, isFurtherOut, type CrowdEvent } from '../data';
 import { shortLocalDate } from '../lib/dates';
 import { datePath } from '../lib/view';
 import { ReadTile } from './ReadTile';
@@ -26,7 +26,8 @@ export function SameTour({ event }: { event: CrowdEvent }) {
     (async () => {
       const between = await getEventsBetween(event.metroId, day(-31), day(30));
       const kin = between.filter(same).slice(0, 6);
-      const read = await Promise.all(kin.map(async (other) => ({ event: other, rating: (await getCityDate(other.metroId, other.date)).rating?.rating ?? null })));
+      // A further-out date shows no verdict (Kylie, Oct 20, 2026).
+      const read = await Promise.all(kin.map(async (other) => ({ event: other, rating: isFurtherOut(other) ? null : ((await getCityDate(other.metroId, other.date)).rating?.rating ?? null) })));
       if (current) setRows(read);
     })();
     return () => {

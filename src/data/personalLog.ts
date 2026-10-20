@@ -19,6 +19,7 @@ import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry, wallClockToUtc } from './read';
 import { addDays } from '../lib/dates';
 import { seedEventsOn } from './sources/seedSource';
+import { isFurtherOutRoom } from './sources/venueMetro';
 import { drawSize } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
@@ -1145,6 +1146,8 @@ export function logStats(entries: Entry[]): LogStats {
  * scored (C035); the seeded list is the fallback before then.
  */
 export function ratingForEntry(entry: Entry, scores: ReadonlyMap<string, number>): number | null {
+  // A further-out stub (Kylie, Oct 20, 2026): the city's verdict is about a day the event never counted toward.
+  if (isFurtherOutRoom(entry.metroId, entry.venue)) return null;
   const events =
     entry.when.precision === 'day' ? seedEventsOn(entryMetroId(entry), entry.when.sort) : [];
   return ratingFromEntry(entry, scores, events);

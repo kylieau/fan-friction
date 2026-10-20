@@ -22,6 +22,8 @@ import {
   artistGenreWord,
   metrosWithEvents,
   nextTeamGame,
+  isFurtherOut,
+  isFurtherOutRoom,
   nightKey,
   nightsOf,
   ratingForEntry,
@@ -193,6 +195,8 @@ export function FavoritePage() {
   const lastMine = [...mine].sort((a, b) => b.when.sort.localeCompare(a.when.sort))[0];
   const espn = fav.teamId ? espnTeamUrl(fav.teamId) : null;
   const readAt = (metroId: string | undefined, date: string) => (metroId ? (ratings.get(nightKey(metroId, date)) ?? null) : null);
+  // A further-out event shows no verdict (Kylie, Oct 20, 2026): it never counted toward the city's day.
+  const readOf = (event: CrowdEvent, date = event.date) => (isFurtherOut(event) ? null : readAt(event.metroId, date));
   const filterKey = fav.kind === 'team' || fav.kind === 'artist' ? label : null;
 
   const yoursLine =
@@ -260,7 +264,7 @@ export function FavoritePage() {
             {nextHome && nextHomeEvent ? (
               <div className="card fav-next-card">
                 <Link to={datePath(nextHome.date, nextHomeEvent.metroId, nextHomeEvent.id)} className="fav-next-main">
-                  <Read rating={readAt(nextHomeEvent.metroId, nextHome.date)} size="big" />
+                  <Read rating={readOf(nextHomeEvent, nextHome.date)} size="big" />
                   <span className="log-main">
                     <span className="log-title"><TitleText text={gameTitle(nextHome)} /></span>
                     <span className="log-facts">
@@ -308,7 +312,7 @@ export function FavoritePage() {
                 <ul className="log-list">
                   {shownRows.map((game) => (
                     <li key={game.id}>
-                      <GameRow game={game} rating={game.eventId && game.eventMetroId ? readAt(game.eventMetroId, game.date) : null} covered={Boolean(game.eventId)} teamMetroId={teamMetroId} teamId={team?.id} today={today} />
+                      <GameRow game={game} rating={game.eventId && game.eventMetroId && !isFurtherOutRoom(game.eventMetroId, game.venueName) ? readAt(game.eventMetroId, game.date) : null} covered={Boolean(game.eventId)} teamMetroId={teamMetroId} teamId={team?.id} today={today} />
                     </li>
                   ))}
                   {rows.length > ROWS && (
@@ -338,7 +342,7 @@ export function FavoritePage() {
                 {nearHome.map((event) => (
                   <li key={event.id} className="fav-li">
                     <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
-                      <Read rating={readAt(event.metroId, event.date)} />
+                      <Read rating={readOf(event)} />
                       <span className="log-main">
                         <span className="log-title">
                           {venueOf(event)}
@@ -403,7 +407,7 @@ export function FavoritePage() {
               {matching.map((event) => (
                 <li key={event.id} className="fav-li">
                   <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
-                    <Read rating={readAt(event.metroId, event.date)} />
+                    <Read rating={readOf(event)} />
                     <span className="log-main">
                       <span className="log-title"><TitleText text={listTitle(event)} /></span>
                       <span className="log-facts">

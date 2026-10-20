@@ -22,6 +22,8 @@ import {
   gameEventId,
   getAccount,
   getPersonalLog,
+  isFurtherOut,
+  isFurtherOutRoom,
   isGameEventId,
   nightKey,
   peopleList,
@@ -225,7 +227,7 @@ function FavesTimeline({ favorites, picked, home, onClear }: { favorites: readon
   const toItem = (row: ScheduleRow): TimelineItem => ({
     key: row.key,
     group: timelineGroup({ sort: row.date, label: '', precision: 'day' }),
-    node: <FaveRow row={row} rating={row.metroId ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />,
+    node: <FaveRow row={row} rating={row.metroId && !(row.event && isFurtherOut(row.event)) ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />,
   });
   if (favorites.length === 0) {
     return (
@@ -285,7 +287,8 @@ function FaveRow({ row, rating, home }: { row: ScheduleRow; rating: number | nul
       to={to}
       state={row.link ? { game: row.link } : undefined}
       rating={rating}
-      readTo={row.away ? null : readPath(row.date, row.metroId, row.event?.id)}
+      // A further-out event's tile is plain, with no tap (Kylie, Oct 20, 2026).
+      readTo={row.away || (row.event && isFurtherOut(row.event)) ? null : readPath(row.date, row.metroId, row.event?.id)}
       away={row.noRead}
       cityCode={row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null}
       spoken={`${favoriteName(row.fav)}, ${row.title}, ${shortLocalDate(row.date)}`}
@@ -426,6 +429,7 @@ function mergeFeed(feed: readonly FeedItem[], today: string): FollowItem[] {
 
 function ratingFor(item: FollowItem, ratings: ReadonlyMap<string, number>): number | null {
   if (item.entry) return ratingForEntry(item.entry, ratings);
+  if (isFurtherOutRoom(item.metroId, item.venue)) return null;
   return item.metroId ? (ratings.get(nightKey(item.metroId, item.date)) ?? null) : null;
 }
 
@@ -456,7 +460,7 @@ function FriendRow({ item, rating, back, home }: { item: FollowItem; rating: num
       to={to}
       state={{ back, ...friendStubState(item.eventId, { title: item.title, date: item.date, venue: item.venue, metroId: item.metroId, entry: item.entry }) }}
       rating={rating}
-      readTo={readPath(item.date, item.metroId, item.eventId)}
+      readTo={isFurtherOutRoom(item.metroId, item.venue) ? null : readPath(item.date, item.metroId, item.eventId)}
       cityCode={item.metroId && item.metroId !== home ? METROS[item.metroId]?.code : null}
       spoken={`${item.title}, ${line}`}
     />

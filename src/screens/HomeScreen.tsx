@@ -32,7 +32,7 @@ import {
   type FeedItem,
   yourEntries,
 } from '../data';
-import { VENUES, venueNameOn } from '../data';
+import { VENUES, isFurtherOutRoom, venueNameOn } from '../data';
 import { crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
@@ -227,7 +227,8 @@ export function HomeScreen() {
             {comingUp.map((row) => (
               <li key={row.key}>
                 <Link to={datePath(row.date, row.metroId, row.eventId)} className="log-row">
-                  <ReadTile rating={ratings.get(nightKey(row.metroId, row.date)) ?? null} />
+                  {/* A further-out event shows no verdict (Kylie, Oct 20, 2026). */}
+                  <ReadTile rating={isFurtherOutRoom(row.metroId, row.venue) ? null : (ratings.get(nightKey(row.metroId, row.date)) ?? null)} />
                   <span className="log-main">
                     <span className="log-title"><TitleText text={row.title} /></span>
                     <span className="log-facts">
