@@ -54,5 +54,21 @@ A favorite's further-out event always shows on its page and the Following timeli
 
 ![Built: the map](further-out-built-map.png)
 
+## Three leans for her word (Oct 20, 2026, afternoon; mocks at phone size, nothing built)
+
+**1. The helper line** (copy only). Now: "Big events (5,000+) outside the city, within about a 2-hour drive. They're listed for reference and never count toward a date's verdict." ("2-" and "hour" break across lines.) Lean: "Big events (5,000+) within about a 2-hour drive. They never count toward a date's verdict.", with a hyphen that never breaks.
+
+**2. The event page.** Today the header reads "Toyota Arena · 8:30 pm"; nothing says the event is further out, while every list row says "Toyota Arena · Ontario · 1 hr 5 min drive". A (lean): the town in the header and a quiet "Further out · 1 hr 5 min drive" line, no card. B: the same, plus the city's This day card titled "This day in Los Angeles".
+
+![A: town and drive, no card](further-out-lean-event-a.png)
+
+![B: plus the city's This day](further-out-lean-event-b.png)
+
+**3. The tile on a further-out stub or plan.** Now it shows the city's verdict (4.7 Spicy), which the event never counted toward. B (lean): a plain tile with no tap, the way an away game outside the covered cities already reads. Whatever she picks goes through one shared rule on every row that carries a tile for an event: Stubs (stubs and plans), Home's stubs and strip, Following and a favorite's timeline (`FollowRow`), Home's friends feed (`FeedRow`), search and Log an event hits, Same tour, Compare and Your year.
+
+![A: the city's verdict, as built](further-out-lean-tile-a.png)
+
+![B: a plain tile](further-out-lean-tile-b.png)
+
 **Search** (built the same day): the search sheet finds further-out events (5,000+) when the lists switch is on ("ramon ayala" finds the Nov 7 Toyota Arena show; off, only Portland's Nov 27 date); logging an event by hand always finds them. **Not built yet:** further-out rooms for other cities (research); Escape Halloween and Nocturnal Wonderland (their grounds are not on file and the festival list is not read by the app yet).
 
