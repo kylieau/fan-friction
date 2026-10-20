@@ -1,6 +1,6 @@
 # Gap review: build 6 and its correction rounds (Oct 17–19, 2026)
 
-**Author:** Claude Code (Fable 5.1). **Saved:** Oct 19, 2026, 9:03 AM PT. **Status:** open; Kylie asked for the clear fixes on Oct 19 (later that day) and G1, G3, G4, G5, G6, G9, G11 and G12 are built and held locally (see "Fixed in this session"); the rest wait on her. **Scope:** the hand-written code changed from `75816216` (the build 6 notes landing) to `6212320d`, that is build 6 (Oct 17), the mockup audit (Oct 17), the Faves row (Oct 18) and the Following redesign with its corrections (Oct 19). Generated data indexes are out of scope. Line numbers are against `6212320d`.
+**Author:** Claude Code (Fable 5.1). **Saved:** Oct 19, 2026, 9:03 AM PT. **Status:** closed Oct 19, 2026 (evening), at Kylie's word. The clear fixes (G1, G3, G4, G5, G6, G9, G11, G12) were built the same day; she answered the rest that evening (G2, G7, G8, G10, G13 and judgment calls 1 and 5 built; the other judgment calls stand as built; call 7 decided by her artist-genres answer 1); the pre-existing Near-home item was fixed Oct 19 (afternoon). The record is `docs/product/product-decisions.md` ("Kylie's Oct 19, 2026 (evening) answers") and `BACKLOG.md` ("The Oct 19 reviews"). The findings below keep their Oct 19 morning wording. **Scope:** the hand-written code changed from `75816216` (the build 6 notes landing) to `6212320d`, that is build 6 (Oct 17), the mockup audit (Oct 17), the Faves row (Oct 18) and the Following redesign with its corrections (Oct 19). Generated data indexes are out of scope. Line numbers are against `6212320d`.
 
 **How it was done.** A second, unanchored read of the files by a sub-agent that was given the decisions log (`docs/product/product-decisions.md`, the build 6 sections) and the diff range, not the builder's report; then every finding below was checked against the code by hand, and the catalog script, the feeds and the naming rules were run over the data. There is no test suite; `npm run build` passes at the head.
 
@@ -59,3 +59,5 @@ The friction ring and pill (predicates, radii, stroke, Unopposed a full disc on 
 ## What this review did not cover
 
 Signed-in flows (headless cannot sign in), the Friends timeline with real followed people, the nightly run itself (the first week-back pass had not fired when this was saved), dark mode (spec only), and anything under `private/`.
+
+Status: closed, every item built or decided by Kylie on Oct 19, 2026 (the clear fixes that day, the rest that evening; recorded in docs/product/product-decisions.md and BACKLOG.md, "The Oct 19 reviews"), closed Oct 19, 2026 (evening)
