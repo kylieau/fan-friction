@@ -67135,7 +67135,7 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "sf-49ers",
     "season": 2026,
     "level": 0.99,
-    "games": 3
+    "games": 4
   },
   {
     "metroId": "bay-area",
@@ -87565,7 +87565,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "ny-rangers",
     "opponent": "ducks",
     "ratio": 1,
-    "games": 3
+    "games": 4
   },
   {
     "metroId": "new-york",
@@ -88628,8 +88628,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "philadelphia",
     "teamId": "flyers",
     "opponent": "avalanche",
-    "ratio": 1.005,
-    "games": 3
+    "ratio": 1.031,
+    "games": 4
   },
   {
     "metroId": "philadelphia",
@@ -94200,8 +94200,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "salt-lake-city",
     "teamId": "utah-mammoth",
     "opponent": "penguins",
-    "ratio": 1.023,
-    "games": 2
+    "ratio": 1.067,
+    "games": 3
   },
   {
     "metroId": "salt-lake-city",
@@ -97665,8 +97665,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "toronto",
     "teamId": "maple-leafs",
     "opponent": "sharks",
-    "ratio": 1.001,
-    "games": 3
+    "ratio": 1.007,
+    "games": 4
   },
   {
     "metroId": "toronto",

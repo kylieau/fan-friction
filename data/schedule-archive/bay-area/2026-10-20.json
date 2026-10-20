@@ -1,0 +1,1618 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "metroName": "Bay Area",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-20",
+  "capturedAt": "2026-10-20T13:23:16.656Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-20",
+    "through": "2026-11-03"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 19
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 15
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-22-tm-G5vYZ_FDGjC3K",
+      "metroId": "bay-area",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FDGjC3K",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-23-espn-warriors-401909850",
+      "metroId": "bay-area",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Memphis Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-G5vYZ_FDGqm3_",
+      "metroId": "bay-area",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FDGqm3_",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-23-espn-stanford-football-401858272",
+      "metroId": "bay-area",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Stanford vs. NC State",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "stanford-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "stanford-football",
+        "away": "nc-state-football",
+        "awayOpponent": "nc-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22406,
+        "low": 19331,
+        "high": 27580,
+        "fromCrowds": true,
+        "games": 16,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 16 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70kkF",
+      "metroId": "bay-area",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "officialTitle": "Kacey Musgraves w/ Estevie",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172Ca0",
+        "Z7r9jZafof"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70kkF",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5vYZ_FDGrm3O",
+      "metroId": "bay-area",
+      "date": "2026-10-24",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FDGrm3O",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5vYZ_FTZ_iUu",
+      "metroId": "bay-area",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "SOFI TUKKER",
+      "officialTitle": "SOFI TUKKER Presents: ANIMAL TALK (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "cow-palace"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "SOFI TUKKER",
+      "act": true,
+      "performerIds": [
+        "K8vZ917fATV",
+        "K8vZ9174SG7",
+        "K8vZ917jBZ7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FTZ_iUu",
+      "expectedDraw": {
+        "count": 9405,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_FDGNm3T",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FDGNm3T",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-26-espn-valkyries-401918309",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Valkyries vs. Dream",
+      "stakes": {
+        "round": "Finals",
+        "game": 5
+      },
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valkyries",
+        "away": "dream",
+        "awayOpponent": "dream"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-G5vYZ_uFp_rvl",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "beabadoobee",
+      "officialTitle": "beabadoobee: The Powerlines Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "beabadoobee",
+      "act": true,
+      "performerIds": [
+        "K8vZ9179Xxf",
+        "K8vZ917Csz7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uFp_rvl",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-sharks-401892595",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Sharks vs. Sabres",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "sabres",
+        "awayOpponent": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13839,
+        "low": 11732,
+        "high": 14164,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_5EhIC8T",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers: The Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KN9V",
+        "K8vZ917oh_f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5EhIC8T",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_5IX0y73",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bryson Tiller",
+      "officialTitle": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-pavilion-concord"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Bryson Tiller",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KBFf",
+        "K8vZ917fb2V",
+        "K8vZ917ozIV",
+        "K8vZ917fofV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5IX0y73",
+      "expectedDraw": {
+        "count": 12500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_a9251k2",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "G-Eazy",
+      "officialTitle": "Logic & G-Eazy: The Endless Summer Tour Part II",
+      "place": {
+        "type": "venue",
+        "venueId": "shoreline-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "G-Eazy",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uAkf",
+        "K8vZ917Cn90"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_a9251k2",
+      "expectedDraw": {
+        "count": 22500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_AllHHol",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "LIVE 105 Presents: Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171zxV",
+        "K8vZ9173ysf",
+        "K8vZ9171nXf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_AllHHol",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-earthquakes-761917",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Earthquakes vs. Rapids",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "earthquakes",
+        "away": "rapids",
+        "awayOpponent": "colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15304,
+        "low": 13790,
+        "high": 16652,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_GpQJTlc",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers: The Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KN9V",
+        "K8vZ917oh_f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GpQJTlc",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-sharks-401892610",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sharks vs. Canucks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "vancouver-canucks",
+        "awayOpponent": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12689,
+        "low": 10757,
+        "high": 12987,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-warriors-401909285",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_2pp1FoO",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rahat Fateh Ali Khan",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Rahat Fateh Ali Khan",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178uNf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2pp1FoO",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-sharks-401892619",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Sharks vs. Senators",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "ottawa-senators",
+        "awayOpponent": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17418,
+        "low": 17313,
+        "high": 17418,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-sjsu-football-401864529",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "San José St vs. New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "cefcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sjsu-football",
+        "away": "new-mexico",
+        "awayOpponent": "new-mexico"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19527,
+        "low": 18345,
+        "high": 19528,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2024",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-earthquakes-761929",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Earthquakes vs. Real Salt Lake",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "earthquakes",
+        "away": "real-salt-lake",
+        "awayOpponent": "salt-lake"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16131,
+        "low": 15311,
+        "high": 17443,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-valkyries-401918311",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Valkyries vs. Dream",
+      "stakes": {
+        "round": "Finals",
+        "game": 7,
+        "ifNecessary": true
+      },
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valkyries",
+        "away": "dream",
+        "awayOpponent": "dream"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_u2LCDvy",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "YG",
+      "officialTitle": "YG: THE GENTLEMEN'S CLUB TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "YG",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uBN0",
+        "K8vZ917ppSf",
+        "K8vZ9179WlV",
+        "K8vZ917Lvkf",
+        "K8vZ917LF_0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_u2LCDvy",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-bay-fc-401854033",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Bay FC vs. Wave",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "bay-fc",
+        "away": "wave",
+        "awayOpponent": "san-diego"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11558,
+        "low": 11343,
+        "high": 12091,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-warriors-401909905",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Warriors vs. Clippers",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-cal-mbb-401918051",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "09:00",
+      "kind": "game",
+      "title": "California vs. Adams St",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-mbb",
+        "away": "adams-st",
+        "awayOpponent": "adams-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3143,
+        "low": 3105,
+        "high": 3308,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-sjsu-mbb-401911469",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "12:00",
+      "kind": "game",
+      "title": "San José St vs. UTSA",
+      "place": {
+        "type": "venue",
+        "venueId": "provident-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sjsu-mbb",
+        "away": "utsa-mbb",
+        "awayOpponent": "utsa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1876,
+        "low": 1849,
+        "high": 1982,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-cal-wbb-401903553",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "California vs. Washington St",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "washington-st",
+        "awayOpponent": "washington-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2889,
+        "low": 1132,
+        "high": 4735,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-sharks-401892632",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Sharks vs. Flames",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "flames",
+        "awayOpponent": "flames"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11437,
+        "low": 11152,
+        "high": 11929,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 13 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-stanford-mbb-401920716",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stanford vs. E Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-mbb",
+        "away": "e-washington",
+        "awayOpponent": "e-washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2286,
+        "low": 2210,
+        "high": 2293,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-warriors-401909919",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Suns",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "suns",
+        "awayOpponent": "suns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A70wFs",
+      "metroId": "bay-area",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "XG",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "XG",
+      "act": true,
+      "performerIds": [
+        "K8vZ917jwk7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70wFs",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-22-tm-G5vYZ_FDGjC3K",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-warriors-401909850",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "NC State at Stanford 26 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5vYZ_FDGqm3_",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "NC State at Stanford and Memphis Grizzlies at Warriors (Home opener) 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-stanford-football-401858272",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Memphis Grizzlies at Warriors (Home opener) 26 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22406,
+        "low": 19331,
+        "high": 27580
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70kkF",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "NC State at Stanford and Disney On Ice · Find Your Hero 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vYZ_FDGrm3O",
+      "date": "2026-10-24",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vYZ_FTZ_iUu",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9405
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_FDGNm3T",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-valkyries-401918309",
+      "date": "2026-10-26",
+      "start": "17:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "beabadoobee 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vYZ_uFp_rvl",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Dream at Valkyries (Finals G5) 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-sharks-401892595",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Bryson Tiller Presents: The Neo… and Phoebe Bridgers · The Lost Tour 43 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13839,
+        "low": 11732,
+        "high": 14164
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_5EhIC8T",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Bryson Tiller Presents: The Neo… and Sabres at Sharks 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_5IX0y73",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Low",
+        "why": "Sabres at Sharks and Phoebe Bridgers · The Lost Tour 43 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12500
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_a9251k2",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Rapids at Earthquakes and LIVE 105 Presents: Gorillaz - T… 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22500
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_AllHHol",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Phoebe Bridgers · The Lost Tour 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-earthquakes-761917",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Logic & G-Eazy: The Endless Sum… 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15304,
+        "low": 13790,
+        "high": 16652
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_GpQJTlc",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "LIVE 105 Presents: Gorillaz - T… 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-sharks-401892610",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12689,
+        "low": 10757,
+        "high": 12987
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-warriors-401909285",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Rahat Fateh Ali Khan 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_2pp1FoO",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Lakers at Warriors 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-sharks-401892619",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "New Mexico at San José St and Real Salt Lake at Earthquakes 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17418,
+        "low": 17313,
+        "high": 17418
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-sjsu-football-401864529",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Senators at Sharks and Real Salt Lake at Earthquakes 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19527,
+        "low": 18345,
+        "high": 19528
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-earthquakes-761929",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "New Mexico at San José St and Senators at Sharks 3.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16131,
+        "low": 15311,
+        "high": 17443
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-valkyries-401918311",
+      "date": "2026-10-31",
+      "start": "17:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_u2LCDvy",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-bay-fc-401854033",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Clippers at Warriors 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11558,
+        "low": 11343,
+        "high": 12091
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-warriors-401909905",
+      "date": "2026-11-01",
+      "start": "17:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Wave at Bay FC 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-cal-mbb-401918051",
+      "date": "2026-11-02",
+      "start": "09:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3143,
+        "low": 3105,
+        "high": 3308
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-sjsu-mbb-401911469",
+      "date": "2026-11-02",
+      "start": "12:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1876,
+        "low": 1849,
+        "high": 1982
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-cal-wbb-401903553",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2889,
+        "low": 1132,
+        "high": 4735
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-sharks-401892632",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Suns at Warriors 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11437,
+        "low": 11152,
+        "high": 11929
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-stanford-mbb-401920716",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2286,
+        "low": 2210,
+        "high": 2293
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-warriors-401909919",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Flames at Sharks 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A70wFs",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    }
+  ]
+}

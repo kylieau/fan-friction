@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-19",
+  "results": [
+    {
+      "eventId": "2026-10-19-espn-ny-rangers-401892535",
+      "metroId": "new-york",
+      "date": "2026-10-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 5
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "attendance": 18006,
+      "capturedAt": "2026-10-20T13:25:28.336Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

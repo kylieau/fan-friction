@@ -39,6 +39,18 @@
       "code": 3,
       "precipProbability": 24,
       "precipMm": 0
+    },
+    {
+      "metroId": "new-orleans",
+      "venueId": "city",
+      "date": "2026-11-01",
+      "basis": "forecast",
+      "capturedAt": "2026-10-20T13:21:44.358Z",
+      "feelsLikeHighF": 68.4,
+      "feelsLikeLowF": 54.6,
+      "code": 3,
+      "precipProbability": 40,
+      "precipMm": 0
     }
   ]
 }

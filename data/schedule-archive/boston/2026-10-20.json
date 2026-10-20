@@ -1,0 +1,2153 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "metroName": "Boston",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-20",
+  "capturedAt": "2026-10-20T13:23:41.672Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-20",
+    "through": "2026-11-03"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 13
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 41
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-20-tm-vvG17Z_u5eXFh3",
+      "metroId": "boston",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Thorn",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "The Thorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_u5eXFh3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vv1AvZkozGkegyOOB",
+      "metroId": "boston",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Cavetown",
+      "officialTitle": "Cavetown - Running With Scissors Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Cavetown",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkozGkegyOOB",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG17Z_GCb1eOy",
+      "metroId": "boston",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Røz",
+      "officialTitle": "RØZ Presents: SE ESTÁ HACIENDO TARDE",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_GCb1eOy",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG17Z_u5eXzh-",
+      "metroId": "boston",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Thorn",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "The Thorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_u5eXzh-",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-21-tm-Z7r9jZ1A704JZ",
+      "metroId": "boston",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Paris Paloma",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Paris Paloma",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A704JZ"
+    },
+    {
+      "id": "2026-10-22-tm-vv177Z_kGkw9nlvp",
+      "metroId": "boston",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hawthorne Heights",
+      "officialTitle": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hawthorne Heights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_kGkw9nlvp",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vv1A8vP1ZGAGGdpS",
+      "metroId": "boston",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Meghan Quinn on Tour!",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "Meghan Quinn on Tour!",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8vP1ZGAGGdpS"
+    },
+    {
+      "id": "2026-10-22-espn-bruins-401892552",
+      "metroId": "boston",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Predators",
+      "broadcast": "NESN",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "predators",
+        "awayOpponent": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-celtics-401909095",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Celtics vs. Knicks",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "knicks",
+        "awayOpponent": "knicks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vv177Z_oGkWWRPJM",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "ROA",
+      "officialTitle": "ROA: USA Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "ROA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGkWWRPJM",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG17Z_2dcYkBH",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Quadeca",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Quadeca",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2dcYkBH",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vv1AvZkoPGkenxv3k",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Jim Gaffigan: Everything is Wonderful!",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jim Gaffigan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkoPGkenxv3k",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1AtZkfsGkd9co7x",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Virtual Riot",
+      "officialTitle": "Virtual Riot & Blanke - Far From Home",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Virtual Riot",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfsGkd9co7x",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-harvard-football-401867842",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Harvard vs. Princeton",
+      "place": {
+        "type": "venue",
+        "venueId": "harvard-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "harvard-football",
+        "away": "princeton",
+        "awayOpponent": "princeton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7678,
+        "low": 6950,
+        "high": 12244,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG17Z_uIduBog",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Have Heart",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Have Heart",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_uIduBog",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-bruins-401892568",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "sharks",
+        "awayOpponent": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG17Z_CJV-ecA",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Driveways",
+      "officialTitle": "DRIVEWAYS with special guests The Spill Canvas & Have Mercy",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Driveways",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_CJV-ecA",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv1AvZkoPGkenNv3K",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Jim Gaffigan: Everything is Wonderful!",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jim Gaffigan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkoPGkenNv3K",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7-VjN",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jesse Welles",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jesse Welles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-VjN",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-LvZ18QlQ895y1fN87Cgc4",
+      "metroId": "boston",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Yellow Cup Weekend- Yelloween-BOSTON",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Yellow Cup Weekend",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QlQ895y1fN87Cgc4"
+    },
+    {
+      "id": "2026-10-25-tm-vv1AvZkoPGkenNs30",
+      "metroId": "boston",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jim Gaffigan: Everything is Wonderful!",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jim Gaffigan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkoPGkenNs30",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A70bev",
+      "metroId": "boston",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "Movements w/ Balance & Composure",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Movements",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70bev",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vv1avZkf7qMA_Ze28",
+      "metroId": "boston",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Aria Vega",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Aria Vega",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1avZkf7qMA_Ze28",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG17Z_ueRk22E",
+      "metroId": "boston",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rod Wave",
+      "officialTitle": "Rod Wave: Don't Look Down Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rod Wave",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b8z7",
+        "K8vZ917hyqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_ueRk22E",
+      "expectedDraw": {
+        "count": 10919,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-vv16vZkf6PZZAu5Ceu",
+      "metroId": "boston",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Parables Tour with Father Mike Schmitz",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "Fr. Mike Schmitz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv16vZkf6PZZAu5Ceu"
+    },
+    {
+      "id": "2026-10-26-espn-celtics-401909870",
+      "metroId": "boston",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 38,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 38 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZg0-",
+      "metroId": "boston",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bassvictim",
+      "officialTitle": "Bassvictim with Thoom (18+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bassvictim",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZg0-",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-celtics-401909877",
+      "metroId": "boston",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Nets",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "nets",
+        "awayOpponent": "nets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 38,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 38 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG17Z_uUEcXK_",
+      "metroId": "boston",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Candlebox",
+      "officialTitle": "Candlebox - Can't Quit You Tour, Fall 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Candlebox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_uUEcXK_",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-revolution-761909",
+      "metroId": "boston",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Revolution vs. Red Bull NY",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "revolution",
+        "away": "red-bulls",
+        "awayOpponent": "red-bull-ny"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15511,
+        "low": 14299,
+        "high": 21082,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG17Z_1EilXli",
+      "metroId": "boston",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KATSEYE",
+      "officialTitle": "KATSEYE: THE WILDWORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "KATSEYE",
+      "act": true,
+      "performerIds": [
+        "K8vZ917q517"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_1EilXli",
+      "expectedDraw": {
+        "count": 10919,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG17Z_1MZT4EK",
+      "metroId": "boston",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Arcángel",
+      "officialTitle": "Arcángel - La 8va Maravilla World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Arcángel",
+      "act": true,
+      "performerIds": [
+        "K8vZ917okqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_1MZT4EK",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAvove",
+      "metroId": "boston",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yebba",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Yebba",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvove",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vv177Z_oGkBx6hkV",
+      "metroId": "boston",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "special",
+      "title": "First To The Floor Live Show",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "First To The Floor Live Show",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGkBx6hkV"
+    },
+    {
+      "id": "2026-10-29-tm-vv1AvZkf7Gkd5tB3w",
+      "metroId": "boston",
+      "date": "2026-10-29",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Mochakk",
+      "officialTitle": "Mochakk ( 21+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Mochakk",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkf7Gkd5tB3w",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-celtics-401909278",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv177Z_kGkmUlwQK",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rawayana",
+      "officialTitle": "RAWAYANA - ¿Dónde es el after? World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p5tf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_kGkmUlwQK",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv177Z_oGkYvQfab",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Punchis Punchis",
+      "officialTitle": "Punchis Punchis: Banda Rave Experience (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Punchis Punchis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGkYvQfab",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1AvZkf_GkdZNKhb",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "kind": "show",
+      "title": "Yo Quiero Bailar Fest",
+      "officialTitle": "Y.Q.B presents: Perreoween Eve ( 21+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Yo Quiero Bailar Fest",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkf_GkdZNKhb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-bruins-401892614",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Bruins vs. Blackhawks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "blackhawks",
+        "awayOpponent": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AvZkfAGkdi83p_",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lil Peep",
+      "officialTitle": "LIL PEEP 30TH BIRTHDAY CELEBRATION",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Peep",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfAGkdi83p_",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-1AtZkfEGkdt5vj9",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Trixie's Halloween Dance Party",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Trixie Mattel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfEGkdt5vj9"
+    },
+    {
+      "id": "2026-10-31-tm-LvZ18Qnxhqv1gd8Kv2xCg",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "kind": "show",
+      "title": "iBlack USA",
+      "officialTitle": "Halloween Favela Encantada Boston (18+) | Oct 31 @ Studio B Big Night Live",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "iBlack USA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18Qnxhqv1gd8Kv2xCg",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv177Z_oGkcnhVo_",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "show",
+      "title": "DJ Pauly D",
+      "officialTitle": "DJ Pauly D ( 21+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Pauly D",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGkcnhVo_",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A709qy",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "special",
+      "title": "horsegiirL (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "horsegiirL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A709qy"
+    },
+    {
+      "id": "2026-11-01-tm-LvZ18QErSVuzU4JvpXhQV",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Ana Castela",
+      "officialTitle": "Ana Castela Boston | ALL AGES | November 1st @ Big Night Live",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Ana Castela",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QErSVuzU4JvpXhQV",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-revolution-761932",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Revolution vs. Inter Miami",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "revolution",
+        "away": "inter-miami-cf",
+        "awayOpponent": "miami"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 26849,
+        "low": 21897,
+        "high": 31810,
+        "fromCrowds": true,
+        "games": 32,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 32 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PE8w",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Vince Staples",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Vince Staples",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE8w",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-bc-wbb-401906031",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston College vs. Holy Cross",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-wbb",
+        "away": "holy-cross",
+        "awayOpponent": "holy-cross"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 647,
+        "low": 611,
+        "high": 917,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-bruins-401892629",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Golden Knights",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "golden-knights",
+        "awayOpponent": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vvG17Z_GmBZ9_J",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sleeping With Sirens",
+      "officialTitle": "Sleeping With Sirens: An Ending In Itself Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sleeping With Sirens",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_GmBZ9_J",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-bc-mbb-401909551",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. Wagner",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-mbb",
+        "away": "wagner",
+        "awayOpponent": "wagner"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 4529,
+        "low": 3534,
+        "high": 4633,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-1AtZkfsGkdbyvA0",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Aj McLean - the Better Man Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Aj McLean - the Better Man Tour",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfsGkdbyvA0",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv1A8v0_OGACNl8G",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8v0_OGACNl8G",
+      "expectedDraw": {
+        "count": 10919,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-20-tm-vvG17Z_u5eXFh3",
+      "date": "2026-10-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-21-tm-vv1AvZkozGkegyOOB",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG17Z_GCb1eOy",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG17Z_u5eXzh-",
+      "date": "2026-10-21",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-21-tm-Z7r9jZ1A704JZ",
+      "date": "2026-10-21",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-22-tm-vv177Z_kGkw9nlvp",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv1A8vP1ZGAGGdpS",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-bruins-401892552",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-celtics-401909095",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv177Z_oGkWWRPJM",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG17Z_2dcYkBH",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1AvZkoPGkenxv3k",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AtZkfsGkd9co7x",
+      "date": "2026-10-23",
+      "start": "22:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-harvard-football-401867842",
+      "date": "2026-10-24",
+      "start": "15:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Sharks at Bruins 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7678,
+        "low": 6950,
+        "high": 12244
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG17Z_uIduBog",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-bruins-401892568",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Princeton at Harvard 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG17Z_CJV-ecA",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv1AvZkoPGkenNv3K",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7-VjN",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-LvZ18QlQ895y1fN87Cgc4",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vv1AvZkoPGkenNs30",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A70bev",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vv1avZkf7qMA_Ze28",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG17Z_ueRk22E",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10919
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-vv16vZkf6PZZAu5Ceu",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-celtics-401909870",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZg0-",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-celtics-401909877",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG17Z_uUEcXK_",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-revolution-761909",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "KATSEYE · the Wildworld Tour 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15511,
+        "low": 14299,
+        "high": 21082
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG17Z_1EilXli",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Red Bull NY at Revolution 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10919
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG17Z_1MZT4EK",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Red Bull NY at Revolution and KATSEYE · the Wildworld Tour 20 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAvove",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vv177Z_oGkBx6hkV",
+      "date": "2026-10-29",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-vv1AvZkf7Gkd5tB3w",
+      "date": "2026-10-29",
+      "start": "22:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-celtics-401909278",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Rawayana 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv177Z_kGkmUlwQK",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Bulls at Celtics 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv177Z_oGkYvQfab",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AvZkf_GkdZNKhb",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-bruins-401892614",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AvZkfAGkdi83p_",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1AtZkfEGkdt5vj9",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-LvZ18Qnxhqv1gd8Kv2xCg",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv177Z_oGkcnhVo_",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A709qy",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-LvZ18QErSVuzU4JvpXhQV",
+      "date": "2026-11-01",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-revolution-761932",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 26849,
+        "low": 21897,
+        "high": 31810
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PE8w",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-bc-wbb-401906031",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 647,
+        "low": 611,
+        "high": 917
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-bruins-401892629",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vvG17Z_GmBZ9_J",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-bc-mbb-401909551",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4529,
+        "low": 3534,
+        "high": 4633
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-1AtZkfsGkdbyvA0",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vv1A8v0_OGACNl8G",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10919
+      }
+    }
+  ]
+}

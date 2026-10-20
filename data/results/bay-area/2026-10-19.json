@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-19",
+  "results": [
+    {
+      "eventId": "2026-10-19-espn-sf-49ers-401873008",
+      "metroId": "bay-area",
+      "date": "2026-10-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "levis-stadium",
+      "homeTeamId": "sf-49ers",
+      "home": {
+        "name": "49ers",
+        "score": 23
+      },
+      "away": {
+        "name": "Commanders",
+        "score": 17
+      },
+      "attendance": 71561,
+      "capturedAt": "2026-10-20T13:25:28.979Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "20:16"
+    },
+    {
+      "eventId": "2026-10-19-espn-valkyries-401918306",
+      "metroId": "bay-area",
+      "date": "2026-10-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "valkyries",
+      "home": {
+        "name": "Valkyries",
+        "score": 65
+      },
+      "away": {
+        "name": "Dream",
+        "score": 79
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-20T13:25:28.979Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "17:11"
+    }
+  ]
+}
