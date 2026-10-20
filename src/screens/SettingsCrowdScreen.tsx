@@ -149,10 +149,12 @@ export function CrowdSizeSettings() {
         </button>
       </div>
       {/* Further out (Kylie, Oct 19–20, 2026): its own two switches, both on; the line under the heading says what
-          the group is (Kylie, Oct 20: "needs a helper explanation"). */}
+          the group is (Kylie, Oct 20: "needs a helper explanation"; wording and the unbroken "2-hour", Oct 20 afternoon). */}
       <div className="settings">
         <div className="settings-heading">Further out</div>
-        <p className="you-fine">Big events (5,000+) outside the city, within about a 2-hour drive. They're listed for reference and never count toward a date's verdict.</p>
+        <p className="you-fine">
+          Big events (5,000+) within about a <span style={{ whiteSpace: 'nowrap' }}>2-hour</span> drive. They never count toward a date's verdict.
+        </p>
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherMapOff} onClick={() => toggle({ furtherMapOff: !saved.furtherMapOff })}>
           <span>Show on the map</span>
           <span className="settings-value">{saved.furtherMapOff ? 'Off' : 'On'}</span>
