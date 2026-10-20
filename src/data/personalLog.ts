@@ -709,7 +709,7 @@ const ANNOUNCED_RETRY_DAYS = 30;
  * catalog cannot find (before the archive) stays blank. At most forty lookups a run.
  */
 /** Moves legacy single `crowd` on stubs into Announced or Estimated (build 4, R04). Rerunnable; never overwrites split fields. */
-export async function backfillLegacyCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+export async function backfillLegacyCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[]; furtherOut?: CrowdEvent[] }>) {
   const due = snapshot.added.filter(
     (entry) => entry.crowd != null && entry.crowdAnnounced == null && entry.crowdEstimated == null && entry.crowdFinal == null,
   );
@@ -720,7 +720,8 @@ export async function backfillLegacyCrowds(loadDate: (metroId: string, date: str
     if (entry.eventId && entry.metroId && entry.when.precision === 'day') {
       try {
         const day = await loadDate(entry.metroId, entry.when.sort);
-        event = day.events.find((e) => e.id === entry.eventId);
+        // A further-out event (Kylie, Oct 19–20, 2026) is in its own list, not the city's day.
+        event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === entry.eventId);
       } catch {
         /* estimated fallback */
       }
@@ -741,7 +742,7 @@ const TITLE_VERSION = 'labels-r3'; // Oct 15: labels round 3 ("Brewers at Dodger
  * whose event can't be found keeps the name it has. Once per log on each device: done after a pass where every
  * date loaded.
  */
-export async function retitleStubs(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+export async function retitleStubs(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[]; furtherOut?: CrowdEvent[] }>) {
   const scope = getAccount()?.id ?? 'phone';
   const done = getPref<Record<string, string>>('stub-titles', {});
   if (done[scope] === TITLE_VERSION) return;
@@ -756,7 +757,7 @@ export async function retitleStubs(loadDate: (metroId: string, date: string) => 
     const days = await Promise.all(dates.slice(i, i + 4).map((d) => loadDate(d.metroId, d.date).catch(() => null)));
     for (const day of days) {
       if (!day) failed = true;
-      for (const event of day?.events ?? []) names.set(event.id, listTitle(event));
+      for (const event of [...(day?.events ?? []), ...(day?.furtherOut ?? [])]) names.set(event.id, listTitle(event));
     }
   }
   const renamed = <T extends { eventId?: string; title: string }>(row: T): T => {
@@ -785,7 +786,7 @@ function crowdsLocked(metroDate: MetroDate, timeZone: string, now: Date): boolea
   return now.getTime() >= wallClockToUtc(addDays(metroDate.date, 1), '00:00', timeZone).getTime() + 24 * 3600_000;
 }
 
-export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[]; furtherOut?: CrowdEvent[] }>) {
   const now = new Date();
   const past = (entry: Entry) => {
     if (!entry.eventId || !entry.metroId || entry.when.precision !== 'day') return false;
@@ -804,7 +805,7 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
   );
   const due = relock ? [...first, ...retry] : [...first, ...retry].slice(0, 40);
   const dates = [...new Map(due.map((entry) => [`${entry.metroId}|${entry.when.sort}`, { metroId: entry.metroId!, date: entry.when.sort }])).values()];
-  const days = new Map<string, { events: CrowdEvent[] }>();
+  const days = new Map<string, { events: CrowdEvent[]; furtherOut?: CrowdEvent[] }>();
   let failed = false;
   for (let i = 0; i < dates.length; i += 4) {
     const loaded = await Promise.all(dates.slice(i, i + 4).map((d) => loadDate(d.metroId, d.date).catch(() => null)));
@@ -819,7 +820,7 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
     if (!day) continue;
     const metro = METROS[entry.metroId!];
     if (!crowdsLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
-    const event = day.events.find((e) => e.id === entry.eventId);
+    const event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === entry.eventId);
     const locked = event ? lockedCrowd(event) : {};
     // Fill only what is empty: a figure already on the entry stays (D03).
     const fill: Partial<Entry> = { crowdLocked: true };
@@ -1006,7 +1007,7 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
  * waits for the next open; public listings drop past events, so "not found"
  * is treated like a failed load. A hand-added plan becomes a hand-added entry (C059).
  */
-export async function settlePassedPlans(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>, homeMetroId: string | null = null) {
+export async function settlePassedPlans(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[]; furtherOut?: CrowdEvent[] }>, homeMetroId: string | null = null) {
   const now = new Date();
   const passed = snapshot.plans.filter((plan) => {
     const metro = METROS[plan.metroId] ?? METROS.la;
@@ -1039,7 +1040,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
     }
     try {
       const day = await loadDate(plan.metroId, plan.date);
-      const event = day.events.find((e) => e.id === plan.eventId);
+      const event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === plan.eventId);
       if (!event) continue;
       const entry = entryFromEvent(event);
       if (plan.userTags?.length) entry.userTags = plan.userTags;
