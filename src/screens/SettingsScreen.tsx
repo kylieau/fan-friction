@@ -257,10 +257,8 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
           'crowd',
           'Crowd size',
           crowdRangeLabel(crowdRangeOf(log)),
-          <>
-            <CrowdSizeSettings />
-            <p className="you-fine">Applies to Explore, date pages and search.</p>
-          </>,
+          // Where it applies is the panel's own two switches now (Kylie, Oct 19, 2026).
+          <CrowdSizeSettings />,
         )}
         {account && dropdown('privacy', 'Privacy', visibility ? VISIBILITY_WORDS[visibility] : null, <PrivacySettings />)}
         {account &&

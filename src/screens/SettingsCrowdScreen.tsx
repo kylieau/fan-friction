@@ -33,6 +33,7 @@ export function CrowdSizeSettings() {
         ...(nextMin > 0 ? { min: nextMin } : {}),
         ...(nextMax < CROWD_RANGE_TOP ? { max: nextMax } : {}),
         ...(showUnknown === false ? { showUnknown: false } : {}),
+        ...scope,
       };
       setCrowdRange(range);
     }, 350);
@@ -50,7 +51,13 @@ export function CrowdSizeSettings() {
     save(nextMin, nextMax);
   };
 
-  const current: CrowdRange = { ...(min > 0 ? { min } : {}), ...(max < CROWD_RANGE_TOP ? { max } : {}) };
+  // Where the range applies (Kylie, Oct 19, 2026): the map and lists each have a switch; every save keeps them.
+  const scope: CrowdRange = { ...(saved.mapOff ? { mapOff: true } : {}), ...(saved.listsOff ? { listsOff: true } : {}) };
+  const current: CrowdRange = { ...(min > 0 ? { min } : {}), ...(max < CROWD_RANGE_TOP ? { max } : {}), ...scope };
+  const toggle = (patch: CrowdRange) => {
+    window.clearTimeout(timer.current);
+    setCrowdRange({ ...current, ...(saved.showUnknown === false ? { showUnknown: false } : {}), ...patch });
+  };
   const pct = (n: number) => `${(n / CROWD_RANGE_TOP) * 100}%`;
   const showUnknown = saved.showUnknown !== false;
 
@@ -103,9 +110,21 @@ export function CrowdSizeSettings() {
           </div>
           <p className="you-fine">Slider moves in steps of 5,000. Type any thousand for exact values. 80,000+ means no max.</p>
         </div>
-        {/* Where the range applies (Kylie, Oct 14): Home keeps today's three biggest; a favorite's page and the Local
-            Competition timeline are never filtered. */}
-        <p className="you-fine">Applies to Explore, date pages and search. Home always shows today's three biggest events, and a favorite's page shows all of its events.</p>
+      </div>
+      {/* Where the range applies (Kylie, Oct 19, 2026: one range, a switch for the map and one for lists, both on). The
+          map switch covers the map and its sheet; lists are date pages, the Explore List and search. Home keeps today's
+          three biggest; a favorite's page and the Local Competition timeline are never filtered (Kylie, Oct 14). */}
+      <div className="settings">
+        <div className="settings-heading">Applies</div>
+        <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.mapOff} onClick={() => toggle({ mapOff: !saved.mapOff })}>
+          <span>Apply on the map</span>
+          <span className="settings-value">{saved.mapOff ? 'Off' : 'On'}</span>
+        </button>
+        <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.listsOff} onClick={() => toggle({ listsOff: !saved.listsOff })}>
+          <span>Apply on date pages and lists</span>
+          <span className="settings-value">{saved.listsOff ? 'Off' : 'On'}</span>
+        </button>
+        <p className="you-fine">Home always shows today's three biggest events, and a favorite's page shows all of its events.</p>
         <p className="you-fine">Events you've stubbed or friends are attending always show.</p>
       </div>
       <div className="settings">
@@ -117,8 +136,7 @@ export function CrowdSizeSettings() {
           aria-checked={showUnknown}
           onClick={() => {
             const next = !showUnknown;
-            window.clearTimeout(timer.current);
-            setCrowdRange({ ...current, ...(next ? {} : { showUnknown: false }) });
+            toggle(next ? { showUnknown: undefined } : { showUnknown: false });
           }}
         >
           <span>Show events with unknown size</span>

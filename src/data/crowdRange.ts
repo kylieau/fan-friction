@@ -15,6 +15,14 @@ export function rangeNumber(event: CrowdEvent): number | undefined {
   return highlightedCrowd(event)?.count ?? drawSize(event);
 }
 
+/**
+ * The range as one surface sees it (Kylie, Oct 19, 2026): the map (and its sheet), or lists (date pages, the Explore
+ * List, search, the event page's This day card). A surface whose switch is off sees no range at all.
+ */
+export function rangeOn(range: CrowdRange, surface: 'map' | 'lists'): CrowdRange {
+  return (surface === 'map' ? range.mapOff : range.listsOff) ? {} : range;
+}
+
 /** True when the range filters nothing: no min, no max, unknown sizes shown. New users start here. */
 export function rangeIsOpen(range: CrowdRange): boolean {
   return !range.min && !range.max && range.showUnknown !== false;

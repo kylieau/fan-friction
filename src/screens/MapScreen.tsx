@@ -44,7 +44,7 @@ import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { CrowdMark, FRICTION_LADDER, FrictionVerdict } from '../components/EventTags';
 import { DayRow, RowBody, sheetVenue, spokenRow } from '../components/DayRow';
-import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, sizeTier, splitByRange } from '../data';
+import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, rangeOn, sizeTier, splitByRange } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
@@ -149,7 +149,7 @@ export function MapScreen() {
   // for this view. Stubbed events and ones friends are attending always show. The read never sees this.
   const [showAll, setShowAll] = useState(false);
   const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
-  const split = useMemo(() => splitByRange(allDayEvents, crowdRangeOf(log), keep), [allDayEvents, log, keep]);
+  const split = useMemo(() => splitByRange(allDayEvents, rangeOn(crowdRangeOf(log), 'map'), keep), [allDayEvents, log, keep]);
   const dayEvents = showAll ? allDayEvents : split.shown;
   // The line keeps its count while the hidden ones show, so Show can turn into Hide (Kylie, Oct 17).
   const hiddenCount = split.hidden.length;

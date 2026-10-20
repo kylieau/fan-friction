@@ -486,7 +486,7 @@ export type * from './types';
 export { ticketPrice, priceLine, type TicketPrice } from './tickets';
 export { artistSite } from './artistSite';
 export { saveWatchPlace, clearWatchPlace, placesForEvent, placeKey, SAVE_FAILED, type EventPlace } from './watchPlaces';
-export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeIsOpen, rangeNumber, splitByRange } from './crowdRange';
+export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeIsOpen, rangeNumber, rangeOn, splitByRange } from './crowdRange';
 export { EVENT_TYPES, competitionOf, entryType, eventType, genreCasing, typeDef, type EventType, type TypeDef } from './eventTypes';
 export { wallClockToUtc } from './read';
 export { popupDraw, popupExplainer, type PopupFacts } from './sources/popupSizing';

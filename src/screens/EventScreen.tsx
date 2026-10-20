@@ -21,6 +21,7 @@ import {
   stubLevel,
   alwaysShownIds,
   crowdRangeOf,
+  rangeOn,
   splitByRange,
   feelsLikeLabel,
   isOpenAir,
@@ -231,7 +232,7 @@ export function EventScreen() {
   const rivalMiles = (r: CrowdEvent) => (r.place.type === 'venue' && VENUES[r.place.venueId] ? milesBetween(me.location, VENUES[r.place.venueId].location) : null);
   // The day's events on the map and its biggest draw, for the This day card; inside the crowd size range only
   // (build 5, item 6, answer A). Up against above stays unfiltered (answer B).
-  const dayEvents = splitByRange(day.events.filter(showsOnMap), crowdRangeOf(log), alwaysShownIds(log, dayFriends)).shown;
+  const dayEvents = splitByRange(day.events.filter(showsOnMap), rangeOn(crowdRangeOf(log), 'lists'), alwaysShownIds(log, dayFriends)).shown;
   const dayCount = dayEvents.length;
   const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
 

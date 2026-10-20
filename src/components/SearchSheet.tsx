@@ -28,6 +28,7 @@ import {
   type Profile,
   alwaysShownIds,
   crowdRangeOf,
+  rangeOn,
   followingFeed,
   passesCrowdRange,
   type FeedItem,
@@ -89,7 +90,7 @@ export function SearchSheet({
     setHits(null);
     setShowAll(false);
     const log = getPersonalLog();
-    const range = crowdRangeOf(log);
+    const range = rangeOn(crowdRangeOf(log), 'lists');
     const keep = alwaysShownIds(log, friends);
     searchAllDates(homeId, trimmed, (event) => passesCrowdRange(event, range, keep)).then((list) => current && setHits(list));
     return () => {

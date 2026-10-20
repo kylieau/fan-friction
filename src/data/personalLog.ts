@@ -1206,6 +1206,8 @@ export function setCrowdRange(range: CrowdRange) {
     ...(range.min && range.min > 0 ? { min: Math.round(range.min / 1000) * 1000 } : {}),
     ...(range.max && range.max > 0 ? { max: Math.round(range.max / 1000) * 1000 } : {}),
     ...(range.showUnknown === false ? { showUnknown: false } : {}),
+    ...(range.mapOff ? { mapOff: true } : {}),
+    ...(range.listsOff ? { listsOff: true } : {}),
   };
   commit({ ...snapshot, crowdRange: clean, crowdRangeAt: new Date().toISOString() });
 }

@@ -15,6 +15,7 @@ import {
   type FeedItem,
   alwaysShownIds,
   crowdRangeOf,
+  rangeOn,
   splitByRange,
 } from '../data';
 import { addDays, daysBetween } from '../lib/dates';
@@ -255,7 +256,7 @@ export function ExploreListScreen() {
   const [revealed, setRevealed] = useState<ReadonlySet<string>>(() => new Set());
   useEffect(() => setRevealed(new Set()), [metro.id]);
   const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
-  const crowdRange = crowdRangeOf(log);
+  const crowdRange = rangeOn(crowdRangeOf(log), 'lists');
 
   // The days that show: a row for every event at a known venue, empty days hidden (V08). A day whose rows are all
   // outside the range keeps its band, so its hidden line can be found.

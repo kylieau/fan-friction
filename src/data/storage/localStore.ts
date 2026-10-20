@@ -95,6 +95,8 @@ export function readCrowdRange(value: unknown): CrowdRange | undefined {
     ...(min ? { min } : {}),
     ...(max ? { max } : {}),
     ...(v.showUnknown === false ? { showUnknown: false } : {}),
+    ...(v.mapOff === true ? { mapOff: true } : {}),
+    ...(v.listsOff === true ? { listsOff: true } : {}),
   };
 }
 

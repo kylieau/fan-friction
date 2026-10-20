@@ -2,7 +2,7 @@
 
 Claude Code, Oct 19, 2026 (evening). Status: open, waiting on Kylie's yes to the mock.
 
-**Updated the same evening (Kylie, multiple choice):** separate switches for the map and for lists (date pages, the Explore List, search), both on by default; a favorite's further-out event always shows on its page and Following. The screenshots below are redone to match.
+**Updated Oct 20, 2026, midday (Kylie, multiple choice):** separate switches for the map and for lists (date pages, the Explore List, search), both on by default; a favorite's further-out event always shows on its page and Following. The screenshots below are redone to match.
 
 **Decided already (Kylie, Oct 19, 2026, evening, multiple choice):** big events within about a 2-hour drive of a covered city's core show in a "Further out" group on the date page and an optional map layer. They never change the city's verdict (the regional research's rule 3, `docs/build-5/research/regional-events-research-answer.html`). This page is only the look, for her yes before any code (mock first).
 
@@ -29,7 +29,7 @@ Escape Halloween (Insomniac, NOS Events Center, San Bernardino, Oct 30–31) is 
 - **Where events come from:** the same feeds, reading rooms outside the city once those rooms are on file (the held Inland Empire rooms are the first), plus the hand-kept festival list (Nocturnal Wonderland and Escape Halloween are already marked regional).
 - **What it never does:** change the verdict, take a friction word, or count toward the day's total.
 
-## Crowd size takes the same pattern (Kylie, Oct 19, 2026, evening, multiple choice)
+## Crowd size takes the same pattern (Kylie, Oct 20, 2026, midday, multiple choice; built Oct 20)
 
 One range, with two switches under it, "Apply on the map" and "Apply on date pages and lists" (search follows lists), both on, so nothing changes until someone turns one off. "Show events with unknown size" stays one switch and filters wherever the range applies. The range's "Applies to Explore, date pages and search" sentence goes; the switches say it. The whole panel:
 
