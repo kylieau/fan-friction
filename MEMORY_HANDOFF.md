@@ -2,10 +2,10 @@
 
 Overwritten each session. Deferred work and history live in `BACKLOG.md`: open questions are at its top (the K-list), build follow-ups under **Next** ("Build 6 follow-ups" is newest, then "Past dates", then "Build 5 follow-ups"). Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/product/direction.md` and `docs/product/product-decisions.md` (newest sections at the bottom; the Oct 19 evening entries end the file). Reviews run from `docs/reviews/review-prompt.md` (shared, two modes); the Oct 19 reviews are `docs/reviews/gap-reviews/gap-review-claude-code-2026-10-19-0903-pt.md` and `docs/reviews/tester-readiness-reviews/tester-readiness-review-claude-code-2026-10-19-0918-pt.md`.
 
-_Last synced: Oct 19, 2026 (afternoon, Pacific; the session before it, labelled "late evening", was the same day), Claude Code (Fable 5.1), at `main`'s head, pushed. Kylie's standing instructions: one commit per step, straight to `main`, pushed; every tweak she sends is first judged for UX and for conflicts with earlier decisions, and an obvious conflict goes back to her as a question (advisor first). A tap check is part of "measured"._
+_Last synced: Oct 20, 2026 (early morning UTC; the work was the Oct 19 afternoon and evening, Pacific), Claude Code (Fable 5.1), at `main`'s head, pushed, before a clear. Kylie's standing instructions: one commit per step, straight to `main`, pushed; every tweak she sends is first judged for UX and for conflicts with earlier decisions, and an obvious conflict goes back to her as a question (advisor first). A tap check is part of "measured"._
 
 ## Current state
-**Everything is committed, built and pushed; the working tree is clean.** `npm run build` passes at the head. Eight commits this session.
+**Everything is committed, built and pushed; the working tree is clean.** `npm run build` passes at the head. Nine commits this session; the last adds `.claude/settings.json` (committed): Claude Code may run the Codex tool here without a permission prompt (Kylie, Oct 20). There is no Codex plugin for Claude Code (she tried `/codex:setup`; the official catalog has none); Codex itself is installed, signed in and healthy (`codex doctor`: 21 ok). Use it for second opinions or `codex review` when she asks.
 
 **Her Oct 19 (afternoon) answers at the resume:** phone checks deferred ("ignore for now"; the list stays under her manual steps); SeatGeek still on hold; no new UX notes.
 
