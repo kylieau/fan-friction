@@ -1496,7 +1496,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-80.4094304, 25.4517516],
     ticketmasterIds: ['KovZpZAdJnAA', 'Za5ju3rKuqZBzaQJhuN-7F_9Cs75O7rnQ'],
     // 46,000, the register's reported mid-range of 46,000 / 45,000 / 65,000 (none official), filled Oct 19, 2026 with Pitbull Stadium so Gridlock never reads the track against a small neighbour; confirmed by Kylie the same evening.
-    capacity: [{ seats: 46000, setup: 'racing', note: 'Reported, mid-range of three figures (46,000 / 45,000 / 65,000); none official. Miami implementation register.' }],
+    capacity: [{ seats: 46000, setup: 'racing', note: 'Reported, mid-range of three figures (46,000 / 45,000 / 65,000); none official. Miami implementation register. Figure confirmed by Kylie, Oct 19, 2026.' }],
     roof: 'open',
   },
   'loandepot-park': {

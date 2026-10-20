@@ -33,8 +33,8 @@ _Last synced: Oct 20, 2026 (early morning UTC; the work was the Oct 19 afternoon
 ## Open (details in BACKLOG)
 1. ~~Close the two Oct 19 reviews~~ done Oct 19 (evening).
 2. **Three research prompts are ready for Kylie to run** (Oct 19, evening): the first coverage audit (`docs/research/topics/artist-coverage-audit-prompt.md`, new; Los Angeles, New York, Mexico City, 100 listings each over one four-week window, measured against each city's rooms), the small-rooms third installment (`docs/research/city-builds/small-rooms-big-cities-prompt.md`, updated to start at Chicago with the rooms list refreshed; the answer goes to `-answer-3.md`) and the seller-terms prompt, now closed: answered twice (Claude Code, corrected, and GrokBot), and Kylie decided Oct 19 (evening) that none of the five lists and none is asked, Framework included (build-brief, data-sources, product-decisions). Still parked from the artist-genres answers: Wikidata for the second genre level; hand-added artist records when a favorite needs an alias or a seller id.
-3. **A lean she may change:** "Artist" where an artist has no listing in the 60-day window or is not yet followed. (The league-string variants are merged, Oct 19 evening; BACKLOG "The Oct 19 reviews".)
-4. **For Kylie to confirm or change:** Homestead-Miami Speedway at 46,000 (a builder's fill from the register's reported mid-range) and the other blank capacities under BACKLOG "Past dates", which ride the Gridlock fallback until filled.
+3. ~~"Artist" placeholder~~ kept as built (Kylie, Oct 19 evening: "idc—whatever you think"). The league merge and its four calls: "fine".
+4. Homestead-Miami Speedway 46,000 confirmed (Kylie, Oct 19 evening). The other blank capacities under BACKLOG "Past dates" still ride the Gridlock fallback until filled.
 5. **At the start of a resumed session:** remind her of SeatGeek and ask for new UX notes.
 
 **Next command to run:**
