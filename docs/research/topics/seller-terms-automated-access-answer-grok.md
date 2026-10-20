@@ -489,3 +489,5 @@ Sitemap: https://thisisframework.com/sitemap_index.xml
 | `https://frameworkla.com/` (apex) | TLS error, "tlsv1 alert internal error"; http timed out |
 | `https://seatgeek.com/...` | curl: HTTP 403, "Please enable JS and disable any ad blocker" |
 | `https://www.ticketmaster.com/event/090064D2B2B3A5F4` | curl: HTTP 401 `{"response":"identify"}`; WebFetch returned an empty page. Ticketmaster presence was checked against the app's own saved Ticketmaster read instead |
+
+Status: closed, folded into docs/product/build-brief.md ("Known limitation, accepted") and docs/reference/data-sources.md ("Checked and not usable"), Oct 19, 2026 (evening); Kylie will not ask any of the five for consent.

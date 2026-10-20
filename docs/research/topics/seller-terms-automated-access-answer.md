@@ -155,3 +155,5 @@ Sitemap: https://thisisframework.com/sitemap_index.xml
 
 ## What this answer did not do
 It did not open any page that answered 403, did not use cached copies or archive sites, and did not check SeatGeek directly (the app has no SeatGeek access yet). The AEG terms body may render in a browser; a plain request got an empty field. The two public files found (Goldenvoice's JSON, Framework's iCal) are recorded as what the sites publish, with no reading of permission into them.
+
+Status: closed, folded into docs/product/build-brief.md ("Known limitation, accepted") and docs/reference/data-sources.md ("Checked and not usable"), Oct 19, 2026 (evening); Kylie will not ask any of the five for consent.
