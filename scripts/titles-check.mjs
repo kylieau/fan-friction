@@ -39,6 +39,10 @@ try {
     ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls (AHL playoffs)', full: 'Reign at Gulls (Calder Cup Playoffs)' }],
     ['N10 artist before tour', show('Song Of The Saints Tour with Phil Wickham', { performer: 'Phil Wickham' }), { full: 'Phil Wickham · Song Of The Saints Tour' }],
     ['N28 middle dot', show('Phoebe Bridgers: The Lost Tour', { performer: 'Phoebe Bridgers' }), { short: 'Phoebe Bridgers · The Lost Tour' }],
+    // A quoted tour after the act (Oct 20, 2026); quotes elsewhere only lose the spaces inside them.
+    ['Quoted tour', show('Ramon Ayala " Historia De Un Final"', { performer: 'Ramon Ayala' }), { full: 'Ramon Ayala · Historia De Un Final' }],
+    ['Quoted tour, no gap', show('Don Omar "The Last King World Tour"', { performer: 'Don Omar' }), { full: 'Don Omar · The Last King World Tour' }],
+    ['Quotes, not a tour', show('A " Charlie Brown " Christmas', { performer: 'Charlie Brown' }), { full: 'A "Charlie Brown" Christmas' }],
     ['N21 Slayer', show('SLAYER: Reign In Blood 40th Anniversary', { performer: 'SLAYER' }), { full: 'Slayer · Reign In Blood 40th Anniversary' }],
     ['N26 Disney On Ice', other('Disney On Ice presents Jump In'), { chip: 'Disney On Ice', short: 'Disney On Ice · Jump In' }],
     ['N27 BEND OVA', other('BVD Boston presents BEND OVA ( 21+ )'), { short: 'BEND OVA · 21+' }],

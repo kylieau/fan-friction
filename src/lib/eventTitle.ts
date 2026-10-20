@@ -580,6 +580,11 @@ function showParts(event: CrowdEvent): ShowParts {
   // A middle dot between artist and tour (N28): "Phoebe Bridgers: The Lost Tour", "LP - All Is Not Lost Tour".
   const split = name.match(/^(.+?)\s*(?::|\s-\s)\s*(.+)$/);
   if (!withArtist && split && (!performer || split[1].toLowerCase() === performer.toLowerCase())) [name, tour] = [split[1].trim(), split[2].trim()];
+  // A quoted tour after the act reads the same way (found Oct 20, 2026: 'Ramon Ayala " Historia De Un Final"',
+  // 'Don Omar "The Last King World Tour"'); any other quotes lose the spaces just inside them.
+  const quoted = !tour && performer ? name.match(/^(.+?)\s*["“]\s*([^"“”]+?)\s*["”]$/) : null;
+  if (quoted && quoted[1].toLowerCase() === performer!.toLowerCase()) [name, tour] = [quoted[1].trim(), quoted[2].trim()];
+  else name = name.replace(/(^|\s)(["“])\s*([^"“”]*?)\s*(["”])/g, '$1$2$3$4');
   // The act keeps its own styling when the whole title was cased as one ("YG: THE …" → "YG", not "Yg"; Oct 20, 2026).
   if (performer && name.toLowerCase() === performer.toLowerCase()) name = performer;
   // "Sick New World Festival Fort Worth" → "Sick New World · Fort Worth" (N24).
