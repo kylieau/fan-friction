@@ -13,6 +13,7 @@ import type { CrowdEvent, LocalDate } from '../types';
 import { capacityOn } from '../venues';
 import { FRICTION_ATTENDEES } from '../read';
 import { showKeys, venueByNameOrPlace, venueClosedOn } from './venueMatch';
+import { isAddOnListing } from './addOns';
 
 const API = 'https://api.seatgeek.com/2/events';
 const DAYS_AHEAD = 120;
@@ -80,6 +81,9 @@ export async function loadSeatgeekEvents(metroId: string, clientId: string): Pro
       if (!venue || venueClosedOn(venue, date)) continue;
       const capacity = capacityOn(venue, date, 'concert');
       if (!capacity || capacity < FRICTION_ATTENDEES) continue;
+      // The add-on filter's name and act layers, as on Ticketmaster (Kylie, Oct 19, 2026: the layered rule; teams name
+      // the same products the same way on every seller).
+      if (isAddOnListing(e.title, kind, { acts: (e.performers ?? []).map((p) => p.name).filter((n): n is string => Boolean(n)) })) continue;
       const performer = (e.performers?.find((p) => p.primary)?.name ?? e.performers?.[0]?.name ?? e.title).trim();
       const keys = showKeys(date, venue.id, performer, e.title);
       if (keys.some((k) => shows.has(k))) continue;

@@ -111,7 +111,7 @@ try {
       return [];
     }),
     seedEvents.catalog(metroId),
-    tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], bigRoomSpecials: [], pages: 0 }),
+    tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], bigRoomSpecials: [], droppedAddOns: [], pages: 0 }),
   ]);
   // A new source failing must not cost the city its night: log it and carry on without it.
   const sgAll = sgKey
@@ -132,6 +132,11 @@ try {
   if (tm.bigRoomSpecials?.length) {
     const rows = tm.bigRoomSpecials.map((s) => `${s.dropped ? 'dropped' : 'kept'} "${s.name}" @${s.venueId} [${[s.segment, s.genre, s.subGenre].filter(Boolean).join(' / ')}]`);
     console.log(`${metroId}: ${rows.length} miscellaneous listings at 5,000+ rooms: ${[...new Set(rows)].join('; ')}.`);
+  }
+  // What the add-on filter dropped (Kylie, Oct 19, 2026: the layered rule), so a wrong drop shows up in the log.
+  if (tm.droppedAddOns?.length) {
+    const names = [...new Set(tm.droppedAddOns.map((a) => `"${a.name}" @${a.venueId}`))];
+    console.log(`${metroId}: ${tm.droppedAddOns.length} add-on listings dropped: ${names.slice(0, 40).join('; ')}${names.length > 40 ? `; and ${names.length - 40} more` : ''}.`);
   }
   // Rooms placed by a relaxed name or by proximity (any seller): a wrong room shows up here, not in the line above.
   if (looseVenueMatches.size) {

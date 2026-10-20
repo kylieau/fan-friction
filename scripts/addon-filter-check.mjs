@@ -1,5 +1,6 @@
-// Build 5: the add-on filter (src/data/sources/addOns.ts) against one nightly sample (Oct 14, 2026: 97 listings typed
-// "Event") and look-alike real events. Prints what is still listed. Usage: node scripts/addon-filter-check.mjs
+// The add-on filter (src/data/sources/addOns.ts) against one nightly sample (Oct 14, 2026: 97 listings typed "Event"),
+// look-alike real events, and the layered rule's own cases (Kylie, Oct 19, 2026: act names, same-room parents, shows
+// with no genre). Prints what is still listed. Usage: node scripts/addon-filter-check.mjs
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -7,7 +8,7 @@ import { createServer } from 'vite';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
-const { isAddOnListing } = await server.ssrLoadModule('/src/data/sources/addOns.ts');
+const { isAddOnListing, parentedAddOn, listingKey } = await server.ssrLoadModule('/src/data/sources/addOns.ts');
 await server.close();
 
 // Add-ons that listed as events that night (all came in as Undefined / Miscellaneous, so kind "special").
@@ -45,7 +46,16 @@ const ADD_ONS = [
   "San Antonio Spurs vs. Sacramento Kings Post-Game Free Throw",
   "Teddy Swims BetMGM Dinner Reservation",
   "VIP Tailgate: Broncos v Seahawks",
-  "mike. Pre-Show VIP Upsell - DOES NOT INCLUDE A TICKET"
+  "mike. Pre-Show VIP Upsell - DOES NOT INCLUDE A TICKET",
+  // Seen live Oct 19, 2026 (the layered rule's check across five cities).
+  "Skydiggers Vinyl Upgrade - NOT A CONCERT TICKET",
+  "NSQK MERCH UPGRADE (No da acceso al evento)",
+  "Upsell: Mezzanine Bleachers - Not A Ticket",
+  "Ultimate Fan Pass: 30-min Exclusive On-court Access From 12:30pm-1pm",
+  "Brooklyn Nets v Portland Trail Blazers Post-Game Free Throw",
+  "San Antonio Spurs - Postgame Free Throw",
+  "Tylil's Friendsgiving Fest VIP M&G Add On",
+  "MetLife Stadium VIP Tours"
 ];
 
 // Real events that night with no genre: they must stay.
@@ -112,10 +122,58 @@ const STILL_DROPPED = [
   ['Madison Square Garden Tours', 'special'],
 ];
 
+// The research's look-alikes (section 3): real shows whose names carry add-on words.
+LOOK_ALIKES.push(
+  ["Alice's Restaurant", 'show'],
+  ['Tunnel of Love', 'show'],
+  ["Tailgate N' Tallboys", 'show'],
+  ['Disney On Ice: Frozen & Encanto', 'special'],
+  ['Monster Jam', 'special'],
+);
+
+// Layer 1: add-ons the seller files as acts of their own; the name alone may not say so.
+const BY_ACT = [
+  ['Rod Wave', ['Rod Wave', 'BetMGM Dinner Reservation'], 'special'],
+  ['Fanboni', ['Leafs Fan Access Plus Ups'], 'special'],
+  ['Olivia Dean', ['Centre Bell - Repas Restaurant Canti'], 'show'],
+  ['Rush', ['Centre Bell - Stationnement'], 'special'],
+  ['Estaciona-T', ['Estaciona-T - Estacionamiento - Mexico'], 'special'],
+];
+// Real listings whose acts must not trip layer 1.
+const REAL_ACTS = [
+  ['Arlo Guthrie', ['Arlo Guthrie'], 'show'],
+  ['Lakers vs. Celtics', ['Los Angeles Lakers', 'Boston Celtics'], 'game'],
+  ['Parquet Courts', ['Parquet Courts'], 'show'],
+];
+
+// Layer 3: a same-room, same-date parent plus add-on words drops; other leftovers stay.
+const PARENTED = [
+  ['San Antonio Spurs vs. Phoenix Suns Courtside Experience', ['San Antonio Spurs vs. Phoenix Suns']],
+  ['San Antonio Spurs v Phoenix Suns Post-Game Free Throw', ['San Antonio Spurs vs. Phoenix Suns']],
+  ['Monster Jam Pit Party', ['Monster Jam']],
+  ['Journey BetMGM Dinner Reservation', ['Journey']],
+];
+const NOT_PARENTED = [
+  ['Leanne Morgan (Late Show)', ['Leanne Morgan']],
+  ['Monster Jam', ['Monster Jam Pit Party']],
+  ['Cavaliers vs. Knicks Watch Party', ['Cavaliers vs. Knicks']],
+  ['Bruno Mars: The Romantic Tour', ['Bruno Mars']],
+];
+
+// Layer 5: a show the seller left without a genre is read like any other listing; one with a genre keeps the strict rule.
+const NO_GENRE = [['Heineken Garden Lounge', 'show', 'Undefined'], ['Fast Lane Early Entry', 'show', 'Miscellaneous']];
+const WITH_GENRE = [['Lounge Lizards', 'show', 'Rock'], ['The Upgrade', 'show', 'Hip-Hop/Rap']];
+
 let failed = 0;
+for (const [name, acts, kind] of BY_ACT) if (!isAddOnListing(name, kind, { acts })) { failed += 1; console.log(`FAIL act add-on listed: ${name} [${acts.join(', ')}]`); }
+for (const [name, acts, kind] of REAL_ACTS) if (isAddOnListing(name, kind, { acts })) { failed += 1; console.log(`FAIL real act dropped: ${name}`); }
+for (const [name, others] of PARENTED) if (!parentedAddOn(name, others.map(listingKey))) { failed += 1; console.log(`FAIL parented add-on listed: ${name}`); }
+for (const [name, others] of NOT_PARENTED) if (parentedAddOn(name, others.map(listingKey))) { failed += 1; console.log(`FAIL dropped by a parent: ${name}`); }
+for (const [name, kind, genre] of NO_GENRE) if (!isAddOnListing(name, kind, { genre })) { failed += 1; console.log(`FAIL no-genre add-on listed: ${name}`); }
+for (const [name, kind, genre] of WITH_GENRE) if (isAddOnListing(name, kind, { genre })) { failed += 1; console.log(`FAIL show with a genre dropped: ${name}`); }
 const listed = ADD_ONS.filter((name) => !isAddOnListing(name, 'special'));
 console.log(`add-ons dropped: ${ADD_ONS.length - listed.length} of ${ADD_ONS.length} distinct names`);
-if (listed.length) console.log('still listed (the held layered rule would catch these):\n  ' + listed.join('\n  '));
+if (listed.length) console.log('still listed by name alone (layer 1 or 3 may catch them live):\n  ' + listed.join('\n  '));
 for (const name of REAL) if (isAddOnListing(name, 'special')) { failed += 1; console.log(`FAIL real event dropped: ${name}`); }
 for (const [name, kind] of LOOK_ALIKES) if (isAddOnListing(name, kind)) { failed += 1; console.log(`FAIL look-alike dropped: ${name}`); }
 for (const [name, kind] of STILL_DROPPED) if (!isAddOnListing(name, kind)) { failed += 1; console.log(`FAIL no longer dropped: ${name}`); }

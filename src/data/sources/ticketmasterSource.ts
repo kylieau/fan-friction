@@ -14,7 +14,7 @@ import { COVERED_METRO_IDS, METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
 import { VENUES } from '../venues';
 import { showKeys, venueByNameOrPlace, venueClosedOn } from './venueMatch';
-import { isAddOnListing } from './addOns';
+import { isAddOnListing, listingKey, parentedAddOn } from './addOns';
 
 const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
@@ -50,6 +50,8 @@ export interface TicketmasterPull {
   unknownVenues: { name: string; count: number }[];
   /** Miscellaneous listings at 5,000+ rooms, with what the feed says about them (Kylie, Oct 16: the next add-on rule comes from feed facts, not words). */
   bigRoomSpecials: { name: string; venueId: string; segment: string; genre: string; subGenre: string; dropped: boolean }[];
+  /** Every listing the add-on filter dropped, for the nightly log and the filter check. */
+  droppedAddOns: { name: string; venueId: string; date: LocalDate }[];
   pages: number;
 }
 
@@ -216,6 +218,10 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   const events: CrowdEvent[] = [];
   const unknown = new Map<string, number>();
   const bigRoomSpecials: TicketmasterPull['bigRoomSpecials'] = [];
+  const droppedAddOns: TicketmasterPull['droppedAddOns'] = [];
+  const roomListings = new Map<string, string[]>();
+  const rawNames = new Map<string, string>();
+  const showKeysOf = new Map<string, string[]>();
   const seen = new Set<string>();
   // Ticketmaster can list one show twice under two ids (a second listing, a package). The same
   // performer in the same building at the same date and start is one show, counted once.
@@ -267,13 +273,22 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       if (venueClosedOn(venue, e.dates.start.localDate)) continue;
       const kind = kindOf(segment, venue.id);
       if (!kind) continue;
-      const addOn = isAddOnListing(e.name, kind);
+      // Every placed listing's name, kept for the same-room parent check after the pass (add-on layer 3).
+      const roomDay = `${venue.id}|${e.dates.start.localDate}`;
+      roomListings.set(roomDay, [...(roomListings.get(roomDay) ?? []), listingKey(e.name)]);
+      const addOn = isAddOnListing(e.name, kind, {
+        acts: (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean),
+        genre: e.classifications?.[0]?.genre?.name,
+      });
       // What the feed says about a miscellaneous listing at a big room (a stadium tour got a stadium's crowd, Oct 16), for the log.
       if (kind === 'special' && Math.max(0, ...venue.capacity.map((c) => c.seats)) >= 5000) {
         const c = e.classifications?.[0];
         bigRoomSpecials.push({ name: e.name.trim(), venueId: venue.id, segment: segment ?? '', genre: c?.genre?.name ?? '', subGenre: c?.subGenre?.name ?? '', dropped: addOn });
       }
-      if (addOn) continue;
+      if (addOn) {
+        droppedAddOns.push({ name: e.name.trim(), venueId: venue.id, date: e.dates.start.localDate });
+        continue;
+      }
       const attractions = e._embedded?.attractions ?? [];
       const performers = attractions.map((a) => a.name).filter(Boolean);
       // The acts' attraction ids, kept for shows at 5,000+ rooms (Kylie, Oct 19, 2026, the artist-genres answers): the
@@ -288,10 +303,9 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
       // One performer in one building on one date is one show, whatever time each listing carries (C014); one event
       // listed under two segments with two performer names is caught by its name (the shared key, venueMatch.ts).
-      const [show, named] = showKeys(e.dates.start.localDate, venue.id, performer, e.name);
-      if (shows.has(show) || shows.has(named)) continue;
-      shows.add(show);
-      shows.add(named);
+      // The duplicate check runs after the pass, once add-on layer 3 has had the whole night (an add-on caught only by
+      // its parent must never stand in for the real show).
+      showKeysOf.set(`${e.dates.start.localDate}-tm-${e.id}`, showKeys(e.dates.start.localDate, venue.id, performer, e.name));
       events.push({
         id: `${e.dates.start.localDate}-tm-${e.id}`,
         metroId,
@@ -311,16 +325,34 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         sourceId: 'ticketmaster',
         ticketmasterId: e.id,
       });
+      rawNames.set(events[events.length - 1].id, e.name);
     }
     const total = json.page?.totalPages ?? 1;
     if (page + 1 >= total) break;
   }
   }
-  markRuns(events);
+  // Add-on layer 3: a listing that is another same-room, same-date listing's name plus add-on words drops.
+  const kept = events.filter((event) => {
+    const raw = rawNames.get(event.id) ?? event.title;
+    const roomDay = `${event.place.type === 'venue' ? event.place.venueId : ''}|${event.date}`;
+    if (!parentedAddOn(raw, roomListings.get(roomDay) ?? [])) return true;
+    droppedAddOns.push({ name: raw.trim(), venueId: event.place.type === 'venue' ? event.place.venueId : '', date: event.date });
+    const special = bigRoomSpecials.find((s) => s.name === raw.trim() && !s.dropped);
+    if (special) special.dropped = true;
+    return false;
+  }).filter((event) => {
+    const [show, named] = showKeysOf.get(event.id) ?? [event.id, event.id];
+    if (shows.has(show) || shows.has(named)) return false;
+    shows.add(show);
+    shows.add(named);
+    return true;
+  });
+  markRuns(kept);
   return {
-    events,
+    events: kept,
     unknownVenues: [...unknown].map(([name, count]) => ({ name, count })).sort((a, b) => b.count - a.count),
     bigRoomSpecials,
+    droppedAddOns,
     pages,
   };
 }
