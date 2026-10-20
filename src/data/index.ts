@@ -20,7 +20,7 @@ import './homeSync';
 import { primeDate } from './catalogCache';
 import { checkedFor, entryMetroId, nightKey, rememberNearby } from './read';
 import { listRange, weekOf } from './cityList';
-import { belongsToCity } from './sources/venueMetro';
+import { belongsToCity, isFurtherOut } from './sources/venueMetro';
 import { addDays } from '../lib/dates';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
@@ -216,7 +216,8 @@ export function todayIn(metro: Metro): LocalDate {
 /** Every event the calendar and search can see: seeded nights plus today onward. */
 async function catalog(metroId: string): Promise<CrowdEvent[]> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId) : Promise.resolve([]))));
-  const events = uniqueById(lists.flat().filter((event) => event.metroId === metroId));
+  // A further-out room's events are never in the city's calendar or search (they have their own group).
+  const events = uniqueById(lists.flat().filter((event) => event.metroId === metroId && !isFurtherOut(event)));
   const seededDates = new Set(events.filter((event) => event.sourceId === 'seed').map((event) => event.date));
   return events.filter((event) => event.sourceId === 'seed' || !seededDates.has(event.date));
 }

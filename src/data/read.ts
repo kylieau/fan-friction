@@ -125,7 +125,8 @@ export function eventFeedsFriction(event: CrowdEvent): boolean {
 
 /** The events that share a local date, plus the latest start among them. */
 export function asMetroDate(metroId: string, date: LocalDate, events: readonly CrowdEvent[]): MetroDate {
-  const thatDate = events.filter((event) => event.metroId === metroId && event.date === date);
+  // Further-out events never set a date's last start or its stamp clock (Kylie, Oct 19–20, 2026).
+  const thatDate = events.filter((event) => event.metroId === metroId && event.date === date && !(event.place.type === 'venue' && VENUES[event.place.venueId]?.furtherOut));
   return {
     metroId,
     date,

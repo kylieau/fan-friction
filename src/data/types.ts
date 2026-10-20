@@ -62,6 +62,12 @@ export interface Venue {
    * the room. A reopening sets `until`; a demolition leaves it off. The note carries the source.
    */
   closed?: { from?: LocalDate; until?: LocalDate; note: string };
+  /**
+   * A room outside every covered city, within about a 2-hour drive of `metroId`'s core (Kylie, Oct 19–20, 2026:
+   * "Further out"). Its events show in their own group and never reach a verdict, a stamp or the day's count. The
+   * drive is computed once per room by scripts/further-out-drive.mjs, always an estimate.
+   */
+  furtherOut?: { driveMinutes: number; how: 'routed' | 'straight-line' };
 }
 
 // ---------- Teams ----------

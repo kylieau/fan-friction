@@ -2215,6 +2215,56 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 8000, setup: 'tennis', note: 'Official (tennis). All seats reserved from 2026; a ticketing change, not a capacity change. Official: 8,000 tennis seats. All Stadium 2 seats reserved from 2026; that ticketing change is not evidence of a capacity change. Concert/standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
     roof: 'open',
   },
+  // Further out from Los Angeles (Kylie, Oct 19–20, 2026: big events within about 2 hours of a covered city show in a
+  // "Further out" group and never feed a verdict). The Inland Empire rooms of 5,000+ from
+  // docs/research/city-builds/small-rooms-big-cities-answer-2.md, held on Oct 16 for scope and brought in by that
+  // decision. They keep metroId 'la' so the city's feeds read them; `furtherOut` keeps them out of every LA day.
+  // Drive minutes from scripts/further-out-drive.mjs. Lake Elsinore Diamond (about 4,835 seated today) stays out.
+  'toyota-arena-ontario': {
+    id: 'toyota-arena-ontario',
+    metroId: 'la',
+    names: [{ name: 'Citizens Business Bank Arena' }, { name: 'Toyota Arena', from: '2019-07-01' }],
+    // OpenStreetMap point for the arena (4000 E Ontario Center Parkway, Ontario), not an entrance.
+    location: [-117.56632, 34.07302],
+    capacity: [
+      { seats: 11089, setup: 'concert', note: 'Official (concert). Ontario, San Bernardino County. The 9,500 fixed seats are part of each layout, not added. Source: https://www.toyota-arena.com/news/detail/new-general-manager-announced-for-toyota-arena-in-ontario-california' },
+      { seats: 10832, setup: 'basketball', note: 'Official (basketball). Same source.' },
+      { seats: 9736, setup: 'hockey', note: 'Official (hockey). Same source.' },
+    ],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 63, how: 'routed' },
+  },
+  'san-manuel-stadium': {
+    id: 'san-manuel-stadium',
+    metroId: 'la',
+    names: [{ name: 'San Manuel Stadium' }],
+    // OpenStreetMap point for the ballpark (280 S E Street, San Bernardino), not an entrance.
+    location: [-117.29642, 34.09675],
+    capacity: [{ seats: 8000, setup: 'baseball', note: 'Official, approximate (the current MiLB page: 8,000, seating and berm split unstated; concert setup unconfirmed). Source: https://www.milb.com/inland-empire/ballpark' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 83, how: 'routed' },
+  },
+  'morongo-field': {
+    id: 'morongo-field',
+    metroId: 'la',
+    // Earlier LoanMart Field; the change date is unconfirmed, so only today's name is kept.
+    names: [{ name: 'Morongo Field' }],
+    // OpenStreetMap point for the address (8408 Rochester Avenue, Rancho Cucamonga), not an entrance.
+    location: [-117.54584, 34.1012],
+    capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, approximate (the current team page: roughly 6,000 seated; berm split and concert limit unconfirmed). Source: https://www.milb.com/rancho-cucamonga/ballpark' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 66, how: 'routed' },
+  },
+  'fowler-events-center': {
+    id: 'fowler-events-center',
+    metroId: 'la',
+    names: [{ name: 'CBU Events Center', from: '2017-05-04' }, { name: 'Dale E. and Sarah Ann Fowler Events Center', from: '2023-02-01' }],
+    // OpenStreetMap point for the campus address (8432 Magnolia Avenue, Riverside), not the arena's entrance.
+    location: [-117.42592, 33.92832],
+    capacity: [{ seats: 5050, setup: 'basketball', note: 'Official (basketball). California Baptist University. The 2016 plan said expandable past 6,000; no concert layout is established, so that is not used. Source: https://cbulancers.com/facilities/dale-e-and-sarah-ann-fowler-events-center/41' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 76, how: 'routed' },
+  },
   'kellogg-arena': {
     id: 'kellogg-arena',
     metroId: 'la',

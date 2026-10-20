@@ -5,6 +5,7 @@
 import type { CrowdEvent, FrictionRead, LocalDate, LocalTime } from './types';
 import { frictionReadForEvent } from './read';
 import { applyFormula } from './formulaRead';
+import { isFurtherOut } from './sources/venueMetro';
 
 export interface ArchivedEventRead {
   eventId: string;
@@ -29,7 +30,8 @@ export interface SavedDraw {
  * The event itself stays in the list so its own record can still be written.
  */
 function shownThatNight(events: readonly CrowdEvent[], event: CrowdEvent): CrowdEvent[] {
-  const thatDate = events.filter((row) => row.metroId === event.metroId && row.date === event.date);
+  // Further-out events never feed a read (Kylie, Oct 19–20, 2026), so they are never part of the night.
+  const thatDate = events.filter((row) => row.metroId === event.metroId && row.date === event.date && !isFurtherOut(row));
   const seeded = thatDate.filter((row) => row.sourceId === 'seed');
   const shown = seeded.length > 0 ? seeded : thatDate;
   if (shown.some((row) => row.id === event.id)) return shown;
@@ -48,7 +50,8 @@ export function forecastRead(event: CrowdEvent, events: readonly CrowdEvent[]): 
 /** One stored read per event in a daily schedule file. */
 export function archivedReads(events: readonly CrowdEvent[]): ArchivedEventRead[] {
   return events.map((event) => {
-    const read = forecastRead(event, events);
+    // A further-out event takes no read of its own: it never has a friction word.
+    const read = isFurtherOut(event) ? undefined : forecastRead(event, events);
     return {
       eventId: event.id,
       date: event.date,

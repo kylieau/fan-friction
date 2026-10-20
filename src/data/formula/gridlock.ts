@@ -480,7 +480,8 @@ function venueCapacityMax(venueId: string, date: string): number {
 
 /** Cluster a metro's venues into zones (venues within about 2 km of one another). */
 export function zonesFor(metroId: string, date: string): Zone[] {
-  const venues = Object.values(VENUES).filter((v) => v.metroId === metroId);
+  // A further-out room is outside the city, so it never joins a city zone (Kylie, Oct 19–20, 2026).
+  const venues = Object.values(VENUES).filter((v) => v.metroId === metroId && !v.furtherOut);
   const zones: Zone[] = [];
   for (const venue of venues) {
     const home = zones.find((z) => milesBetween(z.center, venue.location) <= ZONE_MILES);
