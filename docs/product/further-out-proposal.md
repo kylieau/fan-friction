@@ -29,7 +29,14 @@ Escape Halloween (Insomniac, NOS Events Center, San Bernardino, Oct 30–31) is 
 - **Where events come from:** the same feeds, reading rooms outside the city once those rooms are on file (the held Inland Empire rooms are the first), plus the hand-kept festival list (Nocturnal Wonderland and Escape Halloween are already marked regional).
 - **What it never does:** change the verdict, take a friction word, or count toward the day's total.
 
+## Crowd size takes the same pattern (Kylie, Oct 19, 2026, evening, multiple choice)
+
+One range, with two switches under it, "Apply on the map" and "Apply on date pages and lists" (search follows lists), both on, so nothing changes until someone turns one off. "Show events with unknown size" stays one switch and filters wherever the range applies. The range's "Applies to Explore, date pages and search" sentence goes; the switches say it. The whole panel:
+
+![Settings › Crowd size with both sets of switches](further-out-mock-crowd-panel.png)
+
 ## Leans she may change
+- The heading over the range's switches reads "Applies"; the rows say "Apply on…" for the range and "Show on…" for Further out, because one filters and the other adds.
 - The card (and the List's heading) shows only when there is at least one further-out event that day, and always sits after the day's own events.
 - No line under the switches explaining them (the copy rule: users are not dumb).
 - Search follows the lists switch.
