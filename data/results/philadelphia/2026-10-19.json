@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-19",
+  "results": [
+    {
+      "eventId": "2026-10-19-espn-flyers-401892536",
+      "metroId": "philadelphia",
+      "date": "2026-10-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 3
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 2
+      },
+      "attendance": 18353,
+      "capturedAt": "2026-10-20T13:25:30.634Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

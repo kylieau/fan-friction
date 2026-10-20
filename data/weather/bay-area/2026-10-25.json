@@ -135,6 +135,18 @@
       "code": 3,
       "precipProbability": 10,
       "precipMm": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-25",
+      "basis": "forecast",
+      "capturedAt": "2026-10-20T13:20:14.278Z",
+      "feelsLikeHighF": 76.2,
+      "feelsLikeLowF": 56.3,
+      "code": 0,
+      "precipProbability": 9,
+      "precipMm": 0
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-19",
+  "results": [
+    {
+      "eventId": "2026-10-19-espn-utah-mammoth-401892538",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 5
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 4
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-10-20T13:25:34.632Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    }
+  ]
+}

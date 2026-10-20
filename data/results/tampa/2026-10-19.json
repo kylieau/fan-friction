@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-19",
+  "results": [
+    {
+      "eventId": "2026-10-19-mlb-849815",
+      "metroId": "tampa",
+      "date": "2026-10-19",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "tropicana-field",
+      "homeTeamId": "rays",
+      "home": {
+        "name": "Rays",
+        "score": 7
+      },
+      "away": {
+        "name": "Guardians",
+        "score": 3
+      },
+      "capturedAt": "2026-10-20T13:25:31.198Z",
+      "attendance": 40230,
+      "duration": {
+        "minutes": 175,
+        "kind": "official"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

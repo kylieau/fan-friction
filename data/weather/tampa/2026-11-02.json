@@ -20,6 +20,24 @@
       "shortwave": 28,
       "cloudCover": 1,
       "code": 0
+    },
+    {
+      "metroId": "tampa",
+      "venueId": "city",
+      "date": "2026-11-02",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-20T13:20:53.040Z",
+      "feelsLikeF": 73.7,
+      "tempF": 76.1,
+      "humidity": 70,
+      "windMph": 19.3,
+      "uvIndex": 0.1,
+      "precipProbability": 17,
+      "precipMm": 0,
+      "shortwave": 12,
+      "cloudCover": 24,
+      "code": 1
     }
   ],
   "days": [
@@ -46,6 +64,18 @@
       "code": 2,
       "precipProbability": 14,
       "precipMm": 0
+    },
+    {
+      "metroId": "tampa",
+      "venueId": "city",
+      "date": "2026-11-02",
+      "basis": "forecast",
+      "capturedAt": "2026-10-20T13:20:53.040Z",
+      "feelsLikeHighF": 79.6,
+      "feelsLikeLowF": 69.7,
+      "code": 53,
+      "precipProbability": 20,
+      "precipMm": 2.4
     }
   ]
 }

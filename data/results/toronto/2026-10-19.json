@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-19",
+  "results": [
+    {
+      "eventId": "2026-10-19-espn-maple-leafs-401892537",
+      "metroId": "toronto",
+      "date": "2026-10-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 3
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 1
+      },
+      "attendance": 19011,
+      "capturedAt": "2026-10-20T13:25:33.935Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:42"
+    }
+  ]
+}

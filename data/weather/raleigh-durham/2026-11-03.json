@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "raleigh-durham",
   "date": "2026-11-03",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-11-03",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-20T13:22:06.131Z",
+      "feelsLikeF": 55.4,
+      "tempF": 60.6,
+      "humidity": 51,
+      "windMph": 7.8,
+      "uvIndex": 0,
+      "precipProbability": 18,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
   "days": [
     {
       "metroId": "raleigh-durham",
@@ -15,6 +34,18 @@
       "code": 3,
       "precipProbability": 19,
       "precipMm": 0
+    },
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-11-03",
+      "basis": "forecast",
+      "capturedAt": "2026-10-20T13:22:06.131Z",
+      "feelsLikeHighF": 60.5,
+      "feelsLikeLowF": 39.9,
+      "code": 1,
+      "precipProbability": 19,
+      "precipMm": 0.1
     }
   ]
 }
