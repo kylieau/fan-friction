@@ -1011,6 +1011,25 @@ interface EspnSide {
   homeAway: 'home' | 'away';
   team: { id: string; displayName: string; shortDisplayName: string };
   score?: { value?: number; displayValue?: string } | string | number;
+  /** The side's poll rank (the AP poll, or the College Football Playoff ranking once published); 99 is unranked. */
+  curatedRank?: { current?: number };
+}
+
+/**
+ * Each side's ranking going into the game (Kylie, Oct 19, 2026: fill M3-08's title rank from the poll rank ESPN's team
+ * schedules already carry). A played game keeps the rank it went in with; an upcoming one shows this week's, and the
+ * nightly capture of the game day fixes that day's. Only a real poll place (1–25) counts; 99 and pro games carry none.
+ */
+function pollRank(side: EspnSide): number | undefined {
+  const n = side.curatedRank?.current;
+  return typeof n === 'number' && n >= 1 && n <= 25 ? n : undefined;
+}
+
+function ranksOf(home: EspnSide, away: EspnSide): { home?: number; away?: number } | undefined {
+  const h = pollRank(home);
+  const a = pollRank(away);
+  if (h === undefined && a === undefined) return undefined;
+  return { ...(h !== undefined ? { home: h } : {}), ...(a !== undefined ? { away: a } : {}) };
 }
 interface EspnGame {
   id: string;
@@ -1088,6 +1107,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
   const league = leagueFromPath(t.path);
   const stakes = league ? espnStakes(g, league) : otherPostseason(g, t.path);
   const broadcast = tvStation(c.broadcasts);
+  const rank = ranksOf(home, away);
   return {
     id: `${date}-espn-${t.teamId}-${g.id}`,
     metroId: eventMetro,
@@ -1107,6 +1127,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
       awayOpponent: slug(away.team.shortDisplayName ?? nameOf(away.team)),
     },
     ...(c.neutralSite ? { neutralSite: true } : {}),
+    ...(rank ? { rank } : {}),
     crowd: [],
     sourceId: 'espn',
   };
