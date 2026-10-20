@@ -227,7 +227,6 @@ const LEAGUE_MARKS: Record<string, string> = {
   'American Association': 'Am. Assoc.',
   'Independent baseball': 'Indie ball',
   'Frontier League': 'Frontier',
-  'Texas League': 'Texas Lg',
   'UpShot League': 'UpShot',
   'WPSL PRO': 'WPSL Pro',
 };
@@ -299,7 +298,7 @@ const LIST: Team[] = [
   team("delaware-football", "Delaware Fightin' Blue Hens Football", "Delaware FB", "College football", "football", "philadelphia", "DEL", ["Blue Hens", "Delaware"]),
   team("delaware-mbb", "Delaware Fightin' Blue Hens Men's Basketball", "Delaware MBB", "College men's basketball", "basketball", "philadelphia", "DEL", ["Blue Hens", "Delaware"]),
   team("delaware-wbb", "Delaware Fightin' Blue Hens Women's Basketball", "Delaware WBB", "College women's basketball", "basketball", "philadelphia", "DEL", ["Blue Hens", "Delaware"]),
-  team("wilmington-blue-rocks", "Wilmington Blue Rocks", "Blue Rocks", "MiLB", "baseball", "philadelphia", "WIL"),
+  team("wilmington-blue-rocks", "Wilmington Blue Rocks", "Blue Rocks", "High-A baseball", "baseball", "philadelphia", "WIL"),
   // Tampa Bay (Oct 12, 2026; docs/research/city-builds/tampa/). Feed ids checked against live schedules.
   team("rays", "Tampa Bay Rays", "Rays", "MLB", "baseball", "tampa", "TB"),
   team("buccaneers", "Tampa Bay Buccaneers", "Buccaneers", "NFL", "football", "tampa", "TB"),
@@ -341,11 +340,11 @@ const LIST: Team[] = [
   team("colts", "Indianapolis Colts", "Colts", "NFL", "football", "indianapolis", "IND"),
   team("pacers", "Indiana Pacers", "Pacers", "NBA", "basketball", "indianapolis", "IND"),
   team("fever", "Indiana Fever", "Fever", "WNBA", "basketball", "indianapolis", "IND"),
-  team("indianapolis-indians", "Indianapolis Indians", "Indians", "Triple-A", "baseball", "indianapolis", "IND"),
+  team("indianapolis-indians", "Indianapolis Indians", "Indians", "Triple-A baseball", "baseball", "indianapolis", "IND"),
   team("indy-eleven", "Indy Eleven", "Eleven", "USL Championship", "soccer", "indianapolis", "ELE"),
   team("indy-fuel", "Indy Fuel", "Fuel", "ECHL", "hockey", "indianapolis", "FUEL"),
-  team("indy-ignite", "Indy Ignite", "Ignite", "Major League Volleyball", "volleyball", "indianapolis", "IGN"),
-  team("fishers-freight", "Fishers Freight", "Freight", "Indoor Football League", "football", "indianapolis", "FR8"),
+  team("indy-ignite", "Indy Ignite", "Ignite", "MLV", "volleyball", "indianapolis", "IGN"),
+  team("fishers-freight", "Fishers Freight", "Freight", "IFL", "football", "indianapolis", "FR8"),
   team("butler-football", "Butler Bulldogs Football", "Butler Football", "College football", "football", "indianapolis", "BUT", ["Bulldogs"]),
   team("butler-mbb", "Butler Bulldogs Men's Basketball", "Butler MBB", "College men's basketball", "basketball", "indianapolis", "BUT", ["Bulldogs"]),
   team("butler-wbb", "Butler Bulldogs Women's Basketball", "Butler WBB", "College women's basketball", "basketball", "indianapolis", "BUT", ["Bulldogs"]),
@@ -389,7 +388,7 @@ const LIST: Team[] = [
   team("austin-fc-ii", "Austin FC II", "Austin FC II", "MLS Next Pro", "soccer", "austin", "ATX2"),
   team("texas-volts", "Texas Volts", "Volts", "AUSL", "softball", "austin", "VOL"),
   team("austin-spurs", "Austin Spurs", "Austin Spurs", "NBA G League", "basketball", "austin", "AUS"),
-  team("lovb-austin", "LOVB Austin", "LOVB Austin", "League One Volleyball", "volleyball", "austin", "LOVB"),
+  team("lovb-austin", "LOVB Austin", "LOVB Austin", "LOVB Pro", "volleyball", "austin", "LOVB"),
   team("austin-gamblers", "Austin Gamblers", "Gamblers", "PBR Teams", "rodeo", "austin", "GAM"),
   team("austin-rise", "Austin Rise FC", "Rise FC", "WPSL PRO", "soccer", "austin", "RISE"),
   // Phoenix (Oct 12, 2026; docs/research/city-builds/phoenix/). Suns was already a visitor id; it is now the home record.
@@ -404,12 +403,12 @@ const LIST: Team[] = [
   team("asu-football", "Arizona State Sun Devils Football", "ASU", "College football", "football", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
   team("asu-mbb", "Arizona State Sun Devils Men's Basketball", "ASU MBB", "College men's basketball", "basketball", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
   team("asu-wbb", "Arizona State Sun Devils Women's Basketball", "ASU WBB", "College women's basketball", "basketball", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
-  team("asu-hockey", "Arizona State Sun Devils Men's Hockey", "ASU Hockey", "College hockey", "hockey", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
+  team("asu-hockey", "Arizona State Sun Devils Men's Hockey", "ASU Hockey", "College men's hockey", "hockey", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
   team("asu-baseball", "Arizona State Sun Devils Baseball", "ASU Baseball", "College baseball", "baseball", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
   team("gcu-mbb", "Grand Canyon Lopes Men's Basketball", "GCU MBB", "College men's basketball", "basketball", "phoenix", "GCU", ["Lopes", "Grand Canyon"]),
   team("gcu-wbb", "Grand Canyon Lopes Women's Basketball", "GCU WBB", "College women's basketball", "basketball", "phoenix", "GCU", ["Lopes", "Grand Canyon"]),
   team("arizona-rattlers", "Arizona Rattlers", "Rattlers", "IFL", "football", "phoenix", "RAT"),
-  team("arizona-ridge-riders", "Arizona Ridge Riders", "Ridge Riders", "PBR", "rodeo", "phoenix", "ARR"),
+  team("arizona-ridge-riders", "Arizona Ridge Riders", "Ridge Riders", "PBR Teams", "rodeo", "phoenix", "ARR"),
   // Sacramento (Oct 12, 2026; docs/research/city-builds/sacramento/). Feed ids checked against live schedules.
   // "Sac Kings" so titles do not collide with the Los Angeles Kings.
   team("sacramento-kings", "Sacramento Kings", "Sac Kings", "NBA", "basketball", "sacramento", "SAC"),
@@ -447,7 +446,7 @@ const LIST: Team[] = [
   team("kc-monarchs", "Kansas City Monarchs", "Monarchs", "American Association", "baseball", "kansas-city", "KCM"),
   team("kc-mavericks", "Kansas City Mavericks", "KC Mavericks", "ECHL", "hockey", "kansas-city", "MVS"),
   team("kc-comets", "Kansas City Comets", "Comets", "MASL", "soccer", "kansas-city", "KCO"),
-  team("kc-outlaws", "Kansas City Outlaws", "Outlaws", "PBR", "rodeo", "kansas-city", "OUT"),
+  team("kc-outlaws", "Kansas City Outlaws", "Outlaws", "PBR Teams", "rodeo", "kansas-city", "OUT"),
   // Houston (Oct 12, 2026; docs/research/city-builds/houston/). Feed ids checked against live schedules.
   // Comets have a team record only: the WNBA feed had no Houston club on Oct 12. Baseball and softball
   // programs are records only; this app has no college baseball or softball adapter.
@@ -587,7 +586,7 @@ const LIST: Team[] = [
   team("utah-mbb", "Utah Utes Men's Basketball", "Utah MBB", "College men's basketball", "basketball", "salt-lake-city", "UTAH", ["Utes"]),
   team("utah-wbb", "Utah Utes Women's Basketball", "Utah WBB", "College women's basketball", "basketball", "salt-lake-city", "UTAH", ["Utes"]),
   team("salt-lake-city-stars", "Salt Lake City Stars", "Stars", "NBA G League", "basketball", "salt-lake-city", "SLC"),
-  team("real-monarchs", "Real Monarchs", "Monarchs", "MLS NEXT Pro", "soccer", "salt-lake-city", "RSL"),
+  team("real-monarchs", "Real Monarchs", "Monarchs", "MLS Next Pro", "soccer", "salt-lake-city", "RSL"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),
@@ -759,7 +758,7 @@ const LIST: Team[] = [
   team('vancouver-giants', 'Vancouver Giants', 'Giants', 'WHL', 'hockey', 'vancouver', 'VAN'),
   team('vancouver-bandits', 'Vancouver Bandits', 'Bandits', 'CEBL', 'basketball', 'vancouver', 'VAN'),
   team('vancouver-canadians', 'Vancouver Canadians', 'Canadians', 'High-A baseball', 'baseball', 'vancouver', 'VAN'),
-  team('vancouver-fc', 'Vancouver FC', 'Vancouver FC', 'Canadian Premier League', 'soccer', 'vancouver', 'VFC'),
+  team('vancouver-fc', 'Vancouver FC', 'Vancouver FC', 'CPL', 'soccer', 'vancouver', 'VFC'),
   team('vancouver-rise', 'Vancouver Rise FC', 'Rise', 'NSL', 'soccer', 'vancouver', 'RISE'),
   team('whitecaps-fc-2', 'Whitecaps FC 2', 'Whitecaps 2', 'MLS Next Pro', 'soccer', 'vancouver', 'WFC2'),
   team('ubc-football', 'UBC Thunderbirds Football', 'UBC FB', 'U Sports football', 'football', 'vancouver', 'UBC'),
@@ -789,7 +788,7 @@ const LIST: Team[] = [
   team('varsity-blues-hockey', 'Toronto Varsity Blues Hockey', 'Varsity Blues HK', 'U Sports hockey', 'hockey', 'toronto', 'VHK'),
   team('varsity-blues-mbb', "Toronto Varsity Blues Men's Basketball", 'Varsity Blues MBB', 'U Sports basketball', 'basketball', 'toronto', 'VBB'),
   team('york-lions-football', 'York Lions Football', 'York Lions FB', 'U Sports football', 'football', 'toronto', 'YFB'),
-  team('tmu-bold', 'TMU Bold', 'TMU Bold', 'U Sports', 'basketball', 'toronto', 'TMU'),
+  team('tmu-bold', 'TMU Bold', 'TMU Bold', 'U Sports basketball', 'basketball', 'toronto', 'TMU'),
   // Denver, covered Oct 13, 2026 (docs/research/city-builds/denver/). Feed ids checked against ESPN Oct 13, 2026.
   // The Rockies and Rapids were visitor records; same ids, now home clubs.
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball', 'denver', 'COL'),
@@ -832,7 +831,7 @@ const LIST: Team[] = [
   // San Antonio (Oct 13, 2026; docs/research/city-builds/san-antonio/). Spurs were a visitor record; same id, now home.
   team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball', 'san-antonio', 'SAS'),
   team('san-antonio-fc', 'San Antonio FC', 'SAFC', 'USL Championship', 'soccer', 'san-antonio', 'SAFC'),
-  team('san-antonio-missions', 'San Antonio Missions', 'Missions', 'Texas League', 'baseball', 'san-antonio', 'MIS'),
+  team('san-antonio-missions', 'San Antonio Missions', 'Missions', 'Double-A baseball', 'baseball', 'san-antonio', 'MIS'),
   team('utsa-football', 'UTSA Roadrunners Football', 'UTSA FB', 'College football', 'football', 'san-antonio', 'UTSA'),
   team('utsa-mbb', "UTSA Roadrunners Men's Basketball", 'UTSA MBB', "College men's basketball", 'basketball', 'san-antonio', 'UTSA'),
   team('utsa-wbb', "UTSA Roadrunners Women's Basketball", 'UTSA WBB', "College women's basketball", 'basketball', 'san-antonio', 'UTSA'),
