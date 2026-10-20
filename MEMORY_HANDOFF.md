@@ -32,9 +32,9 @@ _Last synced: Oct 20, 2026 (early morning UTC; the work was the Oct 19 afternoon
 
 ## Open (details in BACKLOG)
 1. ~~Close the two Oct 19 reviews~~ done Oct 19 (evening).
-2. **Parked from the artist-genres answers:** the first coverage audit prompt (Los Angeles, New York, Mexico City; 100 listings each; four weeks) at the next research slot; Wikidata for the second genre level; hand-added artist records when a favorite needs an alias or a seller id.
-3. **Leans she may change:** "Artist" where an artist has no listing in the 60-day window or is not yet followed; the league-string variants in the browse list (a data pass, BACKLOG "The Oct 19 reviews").
-4. **Small-rooms research, next installment** (Chicago onward) and the **seller-terms prompt** (BACKLOG, "Past dates", "Build 5 follow-ups").
+2. **Three research prompts are ready for Kylie to run** (Oct 19, evening): the first coverage audit (`docs/research/topics/artist-coverage-audit-prompt.md`, new; Los Angeles, New York, Mexico City, 100 listings each over one four-week window, measured against each city's rooms), the small-rooms third installment (`docs/research/city-builds/small-rooms-big-cities-prompt.md`, updated to start at Chicago with the rooms list refreshed; the answer goes to `-answer-3.md`) and the seller-terms prompt (`docs/research/topics/seller-terms-automated-access-prompt.md`, unchanged since Oct 17). Still parked from the artist-genres answers: Wikidata for the second genre level; hand-added artist records when a favorite needs an alias or a seller id.
+3. **A lean she may change:** "Artist" where an artist has no listing in the 60-day window or is not yet followed. (The league-string variants are merged, Oct 19 evening; BACKLOG "The Oct 19 reviews".)
+4. **For Kylie to confirm or change:** Homestead-Miami Speedway at 46,000 (a builder's fill from the register's reported mid-range) and the other blank capacities under BACKLOG "Past dates", which ride the Gridlock fallback until filled.
 5. **At the start of a resumed session:** remind her of SeatGeek and ask for new UX notes.
 
 **Next command to run:**
