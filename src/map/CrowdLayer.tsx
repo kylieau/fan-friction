@@ -253,6 +253,7 @@ export function CrowdLayer({ points, selectedId, onSelect, activity }: Props) {
           h: Math.max(el.offsetHeight, 1),
           rank: (selected ? SELECTED_RANK : 0) + crowdRank(p),
           selected,
+          ...(p.furtherOut ? { furtherOut: true } : {}),
         });
       }
 

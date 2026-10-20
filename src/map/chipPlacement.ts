@@ -40,6 +40,8 @@ export interface ChipCandidate {
   /** Higher ranks are placed first. The selected event outranks every crowd. */
   rank: number;
   selected: boolean;
+  /** A further-out event: a city event's dropped chip never counts under it (Oct 20, 2026). */
+  furtherOut?: boolean;
 }
 
 export interface Stem {
@@ -282,6 +284,8 @@ export function placeChips(candidates: ChipCandidate[], obstacles: Box[], view: 
     for (const p of placed) {
       const pin = at.get(p.id);
       if (!pin) continue;
+      // A city event never hides under a further-out chip: it counts under a city chip or under none.
+      if (pin.furtherOut && !d.furtherOut) continue;
       const dist = Math.hypot(pin.x - d.x, pin.y - d.y);
       if (!best || dist < best.dist) best = { id: p.id, dist };
     }

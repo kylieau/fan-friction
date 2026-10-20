@@ -22,6 +22,8 @@ export interface CrowdPoint {
   dayTag: string | null;
   /** Under the friction floor: a muted dot, no glow, placed after the big crowds. */
   muted: boolean;
+  /** A further-out event (Kylie, Oct 19–20, 2026): drawn muted, and never the chip a city event's dot counts under. */
+  furtherOut?: boolean;
 }
 
 /** Every event at a known venue is on the map; a small one is drawn muted (Kylie, Oct 9, 3.4). */

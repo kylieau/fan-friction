@@ -172,7 +172,7 @@ export function MapScreen() {
     return crowdRangeOf(log).furtherMapOff ? all.filter((e) => keep.has(e.id)) : all;
   }, [shown, log, keep]);
   const furtherPoints = useMemo(
-    () => (shown && mode === 'crowds' ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true })) : []),
+    () => (shown && mode === 'crowds' ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true, furtherOut: true })) : []),
     [shown, mode, furtherOn, date],
   );
   const layerPoints = useMemo(() => (furtherPoints.length ? [...points, ...furtherPoints] : points), [points, furtherPoints]);
