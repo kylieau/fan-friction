@@ -56,6 +56,8 @@ A favorite's further-out event always shows on its page and the Following timeli
 
 ## Three leans for her word (Oct 20, 2026, afternoon; mocks at phone size, nothing built)
 
+**Decided and built (Kylie, Oct 20, 2026, afternoon: "1/ lean 2/ lean minus drive time 3/ lean"):** (1) the shorter line; (2) A without the drive: the header names the town, a quiet "Further out" line under it; (3) B, the plain tile on every row. Product-decisions has the entry.
+
 **1. The helper line** (copy only). Now: "Big events (5,000+) outside the city, within about a 2-hour drive. They're listed for reference and never count toward a date's verdict." ("2-" and "hour" break across lines.) Lean: "Big events (5,000+) within about a 2-hour drive. They never count toward a date's verdict.", with a hyphen that never breaks.
 
 **2. The event page.** Today the header reads "Toyota Arena · 8:30 pm"; nothing says the event is further out, while every list row says "Toyota Arena · Ontario · 1 hr 5 min drive". A (lean): the town in the header and a quiet "Further out · 1 hr 5 min drive" line, no card. B: the same, plus the city's This day card titled "This day in Los Angeles".
