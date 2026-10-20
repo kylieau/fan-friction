@@ -13,14 +13,17 @@ const OFFICIAL = new Map(OFFICIAL_STYLING.map((name) => [name.toLowerCase(), nam
 const SMALL = new Set(['and', 'of', 'the', 'a', 'an', 'at', 'in', 'on', 'for', 'to', 'de', 'y', 'la', 'el', 'los', 'las', 'del', 'with', 'vs', 'feat']);
 
 function titleCase(name: string): string {
-  return name
-    .toLowerCase()
-    .split(' ')
+  const words = name.toLowerCase().split(' ');
+  return words
     .map((word, i) => {
       if (!word) return word;
-      if (i > 0 && SMALL.has(word)) return word;
-      // Each letter after a non-letter too: "o'neal" -> "O'Neal", "band-maid" -> "Band-Maid".
-      return word.replace(/(^|[^\p{L}\p{N}])(\p{L})/gu, (_m, before: string, letter: string) => `${before}${letter.toUpperCase()}`);
+      // A small word stays lower case, except first or right after a colon or a dash ("YG: The Gentlemen's…").
+      if (i > 0 && SMALL.has(word) && !/[:·|–-]$/.test(words[i - 1])) return word;
+      // Each letter after a non-letter ("band-maid" -> "Band-Maid"), but not after an apostrophe: a possessive stays
+      // lower case ("Gentlemen's", not "Gentlemen'S", Oct 20, 2026); one letter before it is a name ("O'Neal").
+      return word
+        .replace(/(^|[^\p{L}\p{N}'’])(\p{L})/gu, (_m, before: string, letter: string) => `${before}${letter.toUpperCase()}`)
+        .replace(/^(\p{L})(['’])(\p{L})/u, (_m, a: string, ap: string, b: string) => `${a}${ap}${b.toUpperCase()}`);
     })
     .join(' ');
 }

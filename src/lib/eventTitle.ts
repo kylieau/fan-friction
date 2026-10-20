@@ -580,6 +580,8 @@ function showParts(event: CrowdEvent): ShowParts {
   // A middle dot between artist and tour (N28): "Phoebe Bridgers: The Lost Tour", "LP - All Is Not Lost Tour".
   const split = name.match(/^(.+?)\s*(?::|\s-\s)\s*(.+)$/);
   if (!withArtist && split && (!performer || split[1].toLowerCase() === performer.toLowerCase())) [name, tour] = [split[1].trim(), split[2].trim()];
+  // The act keeps its own styling when the whole title was cased as one ("YG: THE …" → "YG", not "Yg"; Oct 20, 2026).
+  if (performer && name.toLowerCase() === performer.toLowerCase()) name = performer;
   // "Sick New World Festival Fort Worth" → "Sick New World · Fort Worth" (N24).
   const tail = cityTail(name);
   if (tail) [name, city] = [tail.rest, tail.city];
