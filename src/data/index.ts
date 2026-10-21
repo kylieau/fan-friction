@@ -127,7 +127,9 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
  * nightly catalog saved, forward to the last event it has. A city with no capture starts today.
  */
 export async function getListRange(metroId: string, today: LocalDate): Promise<{ from: LocalDate; through: LocalDate }> {
-  const ahead = await getEventsBetween(metroId, addDays(today, -1), addDays(today, 500));
+  // Further-out events count toward the reach (found Oct 21, 2026): a day with only a further-out show is a day the
+  // List and the day strip can show, under its own heading.
+  const ahead = await getEventsBetween(metroId, addDays(today, -1), addDays(today, 500), { withFurtherOut: true });
   const last = ahead.reduce<LocalDate | null>((max, e) => (max === null || e.date > max ? e.date : max), null);
   const range = listRange(metroId, today, last);
   // Back to the earliest day with an event on file within the last year, when that is before the first capture
@@ -145,7 +147,7 @@ async function earliestEventDay(metroId: string, floor: LocalDate, before: Local
   const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId).catch(() => []) : Promise.resolve([]))));
   return lists
     .flat()
-    .filter((e) => e.date >= floor && e.date < before && belongsToCity(e, metroId))
+    .filter((e) => e.date >= floor && e.date < before && (belongsToCity(e, metroId) || (e.metroId === metroId && isFurtherOut(e))))
     .reduce<LocalDate | null>((min, e) => (min === null || e.date < min ? e.date : min), null);
 }
 
@@ -271,6 +273,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
   const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId, opts.withFurtherOut === true)]);
   const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
   const hits = new Map<string, { titles: string[]; matched: string[]; artists: string[]; festivals: string[]; anyVisible: boolean; inCity?: boolean; eventId?: string; hiddenEventId?: string }>();
+  const furtherIds = new Set<string>();
   const addName = (list: string[], name: string) => {
     if (!list.some((m) => m.toLowerCase() === name.toLowerCase())) list.push(name);
   };
@@ -290,6 +293,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
     const shown = !visible || visible(event);
     if (shown) row.anyVisible = true;
     if (!isFurtherOut(event)) row.inCity = true;
+    else furtherIds.add(event.id);
     // The first visible match is the one a tap selects on the day; the first match at all when every one is hidden.
     if (shown) row.eventId ??= event.id;
     else row.hiddenEventId ??= event.id;
@@ -314,6 +318,7 @@ export async function searchDates(metroId: string, query: string, visible?: (eve
         ...(row.artists.length ? { artists: row.artists } : {}),
         ...(row.festivals.length ? { festivals: row.festivals } : {}),
         ...(row.eventId ?? row.hiddenEventId ? { eventId: row.eventId ?? row.hiddenEventId } : {}),
+        ...(furtherIds.has(row.eventId ?? row.hiddenEventId ?? '') ? { furtherOut: true as const } : {}),
         ...(row.anyVisible ? {} : { hidden: true }),
       };
     });

@@ -68,9 +68,11 @@ function venueFor(metroId: string, v: TmVenue, date: LocalDate) {
  * Buildings whose games no league feed lists (docs/product/no-feed-teams-proposal.md; Kylie's OK, Oct 8, 2026): the AHL,
  * ECHL, PWHL, WHL, CFL, UFL, USL Super League, MASL, cricket, rodeo and motorsport rooms. Sports listings are kept
  * only here, and a feed game at the same building on the same date still wins (the catalog and archive drop the
- * Ticketmaster copy).
+ * Ticketmaster copy). Every id here must be a venue in VENUES: an id that drifts from the venue table drops that
+ * building's games silently (found Oct 21, 2026: Toyota Arena's games went missing when the venue took a new id), so
+ * scripts/city-build-check.mjs checks the list.
  */
-const SPORTS_FROM_TICKETMASTER = new Set([
+export const SPORTS_FROM_TICKETMASTER = new Set([
   // Milwaukee smaller sports and races; league-feed games at the same building/date still win.
   'uwm-panther-arena', 'al-mcguire-center', 'klotsche-center', 'franklin-field', 'dockhounds-ballpark',
   'frawley-stadium', 'mann-skyline-stage',
@@ -99,7 +101,7 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',
   // The Dogs and Boomers (American Association, Frontier League) have no schedule in MLB's partner-league feed, so their parks are swept too.
   'allstate-arena', 'now-arena', 'chicagoland-speedway', 'impact-field', 'wintrust-field',
-  'toyota-arena', 'pechanga-arena', 'acrisure-arena',
+  'toyota-arena-ontario', 'pechanga-arena', 'acrisure-arena',
   'climate-pledge-arena', 'angel-of-the-winds-arena', 'accesso-showare-center',
   'gas-south-arena', 'echopark-speedway',
   'kezar-stadium', 'oakland-coliseum',

@@ -417,6 +417,11 @@ export interface DateSearchHit {
   festivals?: string[];
   /** The first matching event that day, so a tap can open the day with it selected (found Oct 19, 2026). */
   eventId?: string;
+  /**
+   * That event is at a further-out room (found Oct 21, 2026): a tap opens its event page, which always shows it,
+   * since the Map and the date page hide further-out events behind their own switches.
+   */
+  furtherOut?: true;
   /** Every matching event is outside your crowd size range (build 5, item 6): listed under the Show line. */
   hidden?: boolean;
 }

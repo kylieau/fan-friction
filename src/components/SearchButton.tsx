@@ -5,7 +5,7 @@ import { SearchSheet } from './SearchSheet';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { todayIn } from '../data';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { mapPath } from '../lib/view';
+import { eventPath, mapPath } from '../lib/view';
 
 /**
  * The search button, top right on every tab (build notes 2, global search): one spot,
@@ -30,8 +30,13 @@ export function SearchButton({ metroId, className = '' }: { metroId?: string; cl
           homeId={cityId}
           today={today}
           onClose={() => setOpen(false)}
-          onPick={(picked, pickedMetro, eventId) => {
+          onPick={(picked, pickedMetro, eventId, furtherOut) => {
             setOpen(false);
+            // A further-out event opens its own page (found Oct 21, 2026): the Map's switch may hide it there.
+            if (eventId && furtherOut) {
+              navigate(eventPath(eventId, pickedMetro));
+              return;
+            }
             // A hit that names an event opens the Map, where that event's card can show, whichever view was last used.
             navigate(mapPath({ metroId: pickedMetro, date: picked, today, eventId, ...(eventId ? { view: 'map' as const } : {}) }));
           }}

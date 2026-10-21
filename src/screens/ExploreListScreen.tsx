@@ -261,23 +261,25 @@ export function ExploreListScreen() {
   const furtherOff = Boolean(crowdRangeOf(log).furtherListsOff);
 
   // The days that show: a row for every event at a known venue, empty days hidden (V08). A day whose rows are all
-  // outside the range keeps its band, so its hidden line can be found.
+  // outside the range keeps its band, so its hidden line can be found. A day with only further-out events that the
+  // lists switch shows keeps its band too (found Oct 21, 2026: it vanished from the List).
   const days = useMemo(() => {
-    const out: { date: string; day: CityDate; events: CrowdEvent[]; hidden: number }[] = [];
+    const out: { date: string; day: CityDate; events: CrowdEvent[]; hidden: number; further: CrowdEvent[] }[] = [];
     if (!range) return out;
     for (const monday of mondays) {
       for (const day of weeks.get(monday) ?? []) {
         if (day.date < range.from || day.date > range.through) continue;
         const all = day.events.filter(showsOnMap);
-        if (all.length === 0) continue;
+        const further = (day.furtherOut ?? []).filter((e) => !furtherOff || keep.has(e.id));
+        if (all.length === 0 && further.length === 0) continue;
         // The hidden count stays while the day shows everything, so its line can read Hide (Kylie, Oct 17).
         const split = splitByRange(all, crowdRange, keep);
-        out.push({ date: day.date, day, events: revealed.has(day.date) ? all : split.shown, hidden: split.hidden.length });
+        out.push({ date: day.date, day, events: revealed.has(day.date) ? all : split.shown, hidden: split.hidden.length, further });
       }
     }
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [weeks, mondays, range, revealed, keep, crowdRange.min, crowdRange.max, crowdRange.showUnknown]);
+  }, [weeks, mondays, range, revealed, keep, furtherOff, crowdRange.min, crowdRange.max, crowdRange.showUnknown]);
 
   // Keep the place when earlier weeks are added above: the scroll moves by the height they take.
   useLayoutEffect(() => {
@@ -451,10 +453,13 @@ export function ExploreListScreen() {
 
   // The band under the calendar: the week at the top of the list and how many rows it has.
   const calendarMonday = mondayOf(topDate);
-  // Visible rows only (answer A), so the count matches the list.
+  // Visible rows only (answer A), so the count matches the list; a day's further-out rows count as rows.
   const weekCount = useMemo(() => {
     if (!range) return 0;
-    return weekOf(calendarMonday).reduce((sum, date) => sum + (days.find((d) => d.date === date)?.events.length ?? 0), 0);
+    return weekOf(calendarMonday).reduce((sum, date) => {
+      const day = days.find((d) => d.date === date);
+      return sum + (day ? day.events.length + day.further.length : 0);
+    }, 0);
   }, [days, calendarMonday, range]);
   const thisMonday = mondayOf(today);
 
@@ -505,7 +510,7 @@ export function ExploreListScreen() {
         >
           {range && days.length === 0 && weeks.size > 0 && <p className="you-fine explore-list-empty">Nothing listed yet.</p>}
           {firstIsPast && <div className="explore-list-earlier">Earlier</div>}
-          {days.map(({ date, day, events, hidden }) => (
+          {days.map(({ date, day, events, hidden, further }) => (
             <section key={date} className="explore-list-day" data-day={date} aria-label={dayLabel(date, today)}>
               <Link to={datePath(date, metro.id)} className="list-band-link">
                 <ListBand label={dayLabel(date, today)} right={<ReadTile size="inline" rating={day.rating?.rating ?? null} empty={day.empty} />} />
@@ -535,7 +540,6 @@ export function ExploreListScreen() {
                   under a small heading, never in its verdict. The lists switch hides them, except your stubs and
                   friends' plans. */}
               {(() => {
-                const further = (day.furtherOut ?? []).filter((e) => !furtherOff || keep.has(e.id));
                 if (further.length === 0) return null;
                 return (
                   <>

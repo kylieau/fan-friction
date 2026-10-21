@@ -29,7 +29,7 @@ import { ReadTile } from '../components/ReadTile';
 import { getHomeId } from '../lib/homeCity';
 import { longLocalDate } from '../lib/dates';
 import { getPref, setPref } from '../lib/prefs';
-import { datePath, entryPath } from '../lib/view';
+import { datePath, entryPath, eventPath } from '../lib/view';
 import { BackLink } from '../components/BackLink';
 
 // The type words (build 5, item 11): Concert (N02), Watch party (N01), and "Event" in place of "Special event" (N30).
@@ -109,7 +109,8 @@ export function AddEntryScreen() {
               <ul className="famous-list">
                 {hits.map((hit) => (
                   <li key={`${hit.metroId}-${hit.date}`}>
-                    <Link to={datePath(hit.date, hit.metroId)} className="famous-row">
+                    {/* A further-out event opens its own page (found Oct 21, 2026): the date page's lists switch may hide it. */}
+                    <Link to={hit.furtherOut && hit.eventId ? eventPath(hit.eventId, hit.metroId) : datePath(hit.date, hit.metroId)} className="famous-row">
                       <ReadTile rating={hit.rating} />
                       <span className="famous-text">
                         <span className="famous-headline">{hit.headline}</span>

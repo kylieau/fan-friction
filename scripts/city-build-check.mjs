@@ -7,6 +7,7 @@ const server = await createServer({ server: { middlewareMode: true }, logLevel: 
 const { COVERED_METRO_IDS, METROS } = await server.ssrLoadModule('/src/config/metros.ts');
 const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
 const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
+const { SPORTS_FROM_TICKETMASTER } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
 await server.close();
 
 let fails = 0;
@@ -21,6 +22,12 @@ for (const metroId of COVERED_METRO_IDS) {
   ok(`${metroId}: METROS record`, Boolean(METROS[metroId]));
   ok(`${metroId}: at least one venue`, venues.length > 0);
   ok(`${metroId}: at least one home team`, teams.length > 0);
+}
+
+// Every building whose sports listings come from Ticketmaster must be a venue on file, or its games drop silently
+// (found Oct 21, 2026: Toyota Arena's games went missing when the venue took a new id).
+for (const venueId of SPORTS_FROM_TICKETMASTER) {
+  ok(`ticketmaster sports: ${venueId} is a venue`, Boolean(VENUES[venueId]));
 }
 
 console.log(fails ? `${fails} failed` : 'all passed');
