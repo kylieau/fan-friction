@@ -54,3 +54,6 @@ Thumbs.db
 
 # Private notes about real people (tester logs, import scripts). Never commit.
 private/
+
+# Screenshots the Playwright MCP server saves while a session checks the app (.mcp.json).
+.playwright-mcp/

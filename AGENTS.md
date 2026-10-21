@@ -37,7 +37,7 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
 
 ## Working in this repo
 - Run: `npm run dev` (phone-sized web app on http://localhost:3001; Vite may pick 3002 if busy). Don't `pkill -f vite`; use `kill $(lsof -ti:PORT)`.
-- Test: there is no test suite yet. `npm run build` (type-check plus production build) is the check that must pass. Visual checks use phone-size screenshots (see MEMORY_HANDOFF.md).
+- Test: there is no test suite yet. `npm run build` (type-check plus production build) is the check that must pass. Visual checks use phone-size screenshots (see MEMORY_HANDOFF.md). `.mcp.json` gives Claude Code a Playwright browser for them (headless, iPhone 15 size, screenshots in the git-ignored `.playwright-mcp/`); a new session picks it up, and the dev container installs its Chromium.
 - Key folders:
   - `src/screens/` Home, Explore (the Map; the date page is `DateScreen`), Favorites (and a favorite's page), You (My Stubs, Following, Stats; Settings, Log an event, a hand-added entry's page, profiles), Event, Compare
   - `src/data/` events, venues, teams, seeded nights, live sources (`sources/`), the save layer (`storage/`, change-based since Oct 9), and the read (`read.ts`: forecast, stamp, nearby read, saved night read). Screens read only through `src/data/index.ts`.

@@ -30,3 +30,7 @@ sudo install -m 755 .devcontainer/codex-launcher /usr/local/bin/codex-fan-fricti
 sudo ln -sfn /usr/local/bin/codex-fan-friction /usr/local/bin/codex
 
 npm ci
+
+# The browser the Playwright MCP server (.mcp.json) drives for phone-size checks of the app; the server's own
+# install command, so the browser build matches the server.
+npx -y @playwright/mcp@latest install-browser chrome-for-testing

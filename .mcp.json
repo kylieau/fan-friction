@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--headless",
+        "--isolated",
+        "--browser",
+        "chromium",
+        "--device",
+        "iPhone 15",
+        "--output-dir",
+        ".playwright-mcp"
+      ]
+    }
+  }
+}
