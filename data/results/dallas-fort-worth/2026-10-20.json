@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-dallas-stars-401892545",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 3
+      },
+      "away": {
+        "name": "Bruins",
+        "score": 2
+      },
+      "attendance": 18532,
+      "note": "OT",
+      "capturedAt": "2026-10-21T13:31:03.022Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

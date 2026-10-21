@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-pistons-401909088",
+      "metroId": "detroit",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "pistons",
+      "home": {
+        "name": "Pistons",
+        "score": 121
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 113
+      },
+      "attendance": 20178,
+      "capturedAt": "2026-10-21T13:31:03.405Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "15:07"
+    }
+  ]
+}

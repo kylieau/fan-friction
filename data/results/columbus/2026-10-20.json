@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-blue-jackets-401892543",
+      "metroId": "columbus",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 2
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 6
+      },
+      "attendance": 15073,
+      "capturedAt": "2026-10-21T13:31:05.642Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

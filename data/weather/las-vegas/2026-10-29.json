@@ -86,6 +86,18 @@
       "code": 51,
       "precipProbability": 6,
       "precipMm": 1.5
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-21T13:27:07.416Z",
+      "feelsLikeHighF": 73,
+      "feelsLikeLowF": 64.5,
+      "code": 3,
+      "precipProbability": 5,
+      "precipMm": 0
     }
   ]
 }

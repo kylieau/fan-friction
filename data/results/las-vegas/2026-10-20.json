@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-golden-knights-401892549",
+      "metroId": "las-vegas",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 6
+      },
+      "attendance": 17017,
+      "capturedAt": "2026-10-21T13:31:07.857Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "22:45"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-vancouver-canucks-401892548",
+      "metroId": "vancouver",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "vancouver-canucks",
+      "home": {
+        "name": "Canucks",
+        "score": 3
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 6
+      },
+      "attendance": 17250,
+      "capturedAt": "2026-10-21T13:31:07.003Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

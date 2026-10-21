@@ -1,0 +1,1150 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "metroName": "Columbus",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-21",
+  "capturedAt": "2026-10-21T13:29:38.130Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-21",
+    "through": "2026-11-04"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 19
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-21-tm-vv1AAZk8EGkdloFXu",
+      "metroId": "columbus",
+      "date": "2026-10-21",
+      "start": "18:45",
+      "kind": "show",
+      "title": "Five Finger Death Punch",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Five Finger Death Punch",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GCJ7",
+        "K8vZ917KogV",
+        "K8vZ917p47V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk8EGkdloFXu",
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1fZ_u68l-X-",
+      "metroId": "columbus",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rod Wave",
+      "officialTitle": "Rod Wave: Don't Look Down Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rod Wave",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b8z7",
+        "K8vZ917hyqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_u68l-X-",
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1AAZzjs",
+      "metroId": "columbus",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Earlybirds Club",
+      "officialTitle": "Earlybirds Club - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Earlybirds Club",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZzjs",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-osu-mhockey-401904519",
+      "metroId": "columbus",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Augustana (SD)",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "augustana-sd",
+        "awayOpponent": "augustana-sd"
+      },
+      "rank": {
+        "away": 13
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-10-23-tm-vvG1fZ_1rrMD0o",
+      "metroId": "columbus",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Nurse John: Against Medical Advice Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mershon-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nurse John",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1rrMD0o"
+    },
+    {
+      "id": "2026-10-24-espn-columbus-crew-761890",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Crew vs. Toronto FC",
+      "place": {
+        "type": "venue",
+        "venueId": "scottsmiracle-gro-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "columbus-crew",
+        "away": "toronto-fc",
+        "awayOpponent": "toronto"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19907,
+        "low": 19765,
+        "high": 19932,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-osu-mhockey-401904520",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Augustana (SD)",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "augustana-sd",
+        "awayOpponent": "augustana-sd"
+      },
+      "rank": {
+        "away": 13
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-blue-jackets-401892572",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Golden Knights",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "golden-knights",
+        "awayOpponent": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16300,
+        "low": 15849,
+        "high": 16742,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAekfN",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Legends Fight Series",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legends Fight Series",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAekfN"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAZtFs",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bassvictim",
+      "officialTitle": "Bassvictim w/ Thoom",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bassvictim",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZtFs",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7J774",
+      "metroId": "columbus",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Machine Girl",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Machine Girl",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J774",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1A7-Vj0",
+      "metroId": "columbus",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Jesse Welles",
+      "officialTitle": "Jesse Welles w/ Hudson Freeman",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jesse Welles",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qvGf",
+        "Z7r9jZ177bve"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Vj0",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAZ9fk",
+      "metroId": "columbus",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BEAT",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-columbus"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "BEAT",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ9fk",
+      "expectedDraw": {
+        "count": 2695,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vv17fZ_aGkMTN2Ij",
+      "metroId": "columbus",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ9178c40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_aGkMTN2Ij",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PVq0",
+      "metroId": "columbus",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Wrecks",
+      "officialTitle": "The Wrecks w/ Worry Club",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Wrecks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PVq0",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv17fZ_aGkMTNRI-",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ9178c40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_aGkMTNRI-",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A70eob",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Damned",
+      "officialTitle": "The Damned w/ Flamin Groovies",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Damned",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70eob",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7xo8f",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Haunted Fest",
+      "officialTitle": "Haunted Fest Columbus",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Haunted Fest",
+      "act": true,
+      "performerIds": [
+        "Z7r9jZaFw9"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xo8f",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-columbus-crew-761924",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Crew vs. D.C. United",
+      "place": {
+        "type": "venue",
+        "venueId": "scottsmiracle-gro-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "columbus-crew",
+        "away": "dc-united",
+        "awayOpponent": "d-c-united"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19927,
+        "low": 19785,
+        "high": 19952,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7JKuf",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ekoostik Hookah",
+      "officialTitle": "Hookahween featuring Ekoostik Hookah",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ekoostik Hookah",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKuf",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-osu-mhockey-401923146",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": null,
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan Wolverines",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "michigan-mhockey",
+        "awayOpponent": "michigan"
+      },
+      "rank": {
+        "away": 1
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-01-espn-osu-mhockey-401923148",
+      "metroId": "columbus",
+      "date": "2026-11-01",
+      "start": null,
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan Wolverines",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "michigan-mhockey",
+        "awayOpponent": "michigan"
+      },
+      "rank": {
+        "away": 1
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-02-espn-osu-wbb-401927081",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. UIC",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-wbb",
+        "away": "uic",
+        "awayOpponent": "uic"
+      },
+      "rank": {
+        "home": 18
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 4617,
+        "low": 4574,
+        "high": 4644,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-blue-jackets-401892641",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16356,
+        "low": 15315,
+        "high": 17302,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vvG1fZ_CPGltU_",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGltU_",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1AAZPv6",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Abbie Gamboa w/ Chelsea Plank",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Abbie Gamboa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZPv6"
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1AAZAa7",
+      "metroId": "columbus",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Fortunate Youth",
+      "officialTitle": "Fortunate Youth w/ Kash'd Out",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Fortunate Youth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZAa7",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG1fZ_CPGi_Uh",
+      "metroId": "columbus",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGi_Uh",
+      "occasionFacts": {
+        "run": 6
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-21-tm-vv1AAZk8EGkdloFXu",
+      "date": "2026-10-21",
+      "start": "18:45",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1fZ_u68l-X-",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1AAZzjs",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-osu-mhockey-401904519",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1fZ_1rrMD0o",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-columbus-crew-761890",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "read": {
+        "rating": 3.6,
+        "friction": "Low",
+        "why": "Ohio State Buckeyes · SD (MHKY) and Golden Knights at Blue Jackets 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19907,
+        "low": 19765,
+        "high": 19932
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-osu-mhockey-401904520",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Golden Knights at Blue Jackets 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-blue-jackets-401892572",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Ohio State Buckeyes · SD (MHKY) 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16300,
+        "low": 15849,
+        "high": 16742
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAekfN",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAZtFs",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 3.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7J774",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1A7-Vj0",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAZ9fk",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "draw": {
+        "count": 2695
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vv17fZ_aGkMTN2Ij",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PVq0",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv17fZ_aGkMTNRI-",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Haunted Fest Columbus 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A70eob",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7xo8f",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-columbus-crew-761924",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19927,
+        "low": 19785,
+        "high": 19952
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7JKuf",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-osu-mhockey-401923146",
+      "date": "2026-10-31",
+      "start": null,
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-osu-mhockey-401923148",
+      "date": "2026-11-01",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-osu-wbb-401927081",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "draw": {
+        "count": 4617,
+        "low": 4574,
+        "high": 4644
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-blue-jackets-401892641",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16356,
+        "low": 15315,
+        "high": 17302
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vvG1fZ_CPGltU_",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1AAZPv6",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1AAZAa7",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG1fZ_CPGi_Uh",
+      "date": "2026-11-04",
+      "start": "19:30"
+    }
+  ]
+}

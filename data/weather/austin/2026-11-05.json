@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-05",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-11-05",
+      "basis": "forecast",
+      "capturedAt": "2026-10-21T13:26:50.126Z",
+      "feelsLikeHighF": 80.3,
+      "feelsLikeLowF": 60.2,
+      "code": 53,
+      "precipProbability": 16,
+      "precipMm": 2.4
+    }
+  ]
+}

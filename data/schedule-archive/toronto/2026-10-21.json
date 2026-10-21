@@ -1,0 +1,3210 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "metroName": "Toronto",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-10-21",
+  "capturedAt": "2026-10-21T13:30:16.615Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-21",
+    "through": "2026-11-04"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 76
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-21-ht-marlies-1029174",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Marlies vs. Hammers",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "hammers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4026,
+        "low": 2665,
+        "high": 7362,
+        "fromCrowds": true,
+        "games": 25,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 25 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-177Zv0G62eBEGfP",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rebecca Black",
+      "officialTitle": "Rebecca Black: Exhibitionism on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Rebecca Black",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62eBEGfP",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-raptors-401909837",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Raptors vs. Bulls",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "raptors",
+        "away": "bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19364,
+        "low": 19274,
+        "high": 19364,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-177Zv0G65rcNeqk",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Plini",
+      "officialTitle": "Plini - An Unnameable Desire North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Plini",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G65rcNeqk",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-maple-leafs-401892553",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maple Leafs vs. Rangers",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "maple-leafs",
+        "away": "ny-rangers",
+        "awayOpponent": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18377,
+        "low": 18250,
+        "high": 18655,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-1A8Zk46GkeYFAnZ",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Allison Russell",
+      "officialTitle": "Allison Russell with very special guest AHI",
+      "place": {
+        "type": "venue",
+        "venueId": "concert-hall-888-yonge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Allison Russell",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk46GkeYFAnZ",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-177Zv0G62KfsvAw",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Visiting Mr. Green",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Visiting Mr. Green",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62KfsvAw",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-22-tm-1A8ZkoVGkdd8WiP",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Menopause The Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "pickering-casino-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Menopause The Musical",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkoVGkdd8WiP"
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1AfGKxf",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "11:00",
+      "kind": "game",
+      "title": "TMU Bold Women's Hockey - 2026-27 Season Pass",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold Women's Hockey - 2026-27 Season Pass",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfGKxf"
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1A4ZdrK",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "11:15",
+      "kind": "game",
+      "title": "TMU Bold vs Toronto - School Day (Women's Hockey)",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold vs Toronto - School Day (Women's Hockey)",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4ZdrK"
+    },
+    {
+      "id": "2026-10-23-tm-1A8Zk3KGkdpWtv-",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MIKE.",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "MIKE.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3KGkdpWtv-",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1A8Zkf_GkeJPlen",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Brampton Steelheads vs. Brantford Bulldogs",
+      "place": {
+        "type": "venue",
+        "venueId": "caa-centre-brampton"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Brampton Steelheads",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf_GkeJPlen",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1AvZZ_FGkUx0bXQ",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Toronto Argonauts vs. Montreal Alouettes",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Toronto Argonauts",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_FGkUx0bXQ"
+    },
+    {
+      "id": "2026-10-23-tm-1AvZZ_8GkStc7Gp",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Oshawa Generals vs. Peterborough Petes",
+      "place": {
+        "type": "venue",
+        "venueId": "tribute-communities-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Oshawa Generals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkStc7Gp",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1k7ZvPFyGA1LM7f",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dave Chappelle Karmageddon",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dave Chappelle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1k7ZvPFyGA1LM7f"
+    },
+    {
+      "id": "2026-10-23-tm-177Zv0G6527-XSJ",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mike Epps",
+      "place": {
+        "type": "venue",
+        "venueId": "pickering-casino-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Mike Epps",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6527-XSJ"
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70z70",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Tallest Man On Earth",
+      "place": {
+        "type": "venue",
+        "venueId": "massey-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Tallest Man On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70z70",
+      "expectedDraw": {
+        "count": 2534,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1AfaMG7",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Skepsis",
+      "officialTitle": "CRUCAST",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Skepsis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfaMG7",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AtZkfYGkdNxYgN",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "kind": "show",
+      "title": "Dancehall At 9am",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "Dancehall At 9am",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfYGkdNxYgN",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-ht-marlies-1029200",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Marlies vs. IceHogs",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "icehogs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3820,
+        "low": 3711,
+        "high": 3824,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-177Zv0G6Gl4Dzgx",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Judah & the Lion",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Judah & the Lion",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6Gl4Dzgx",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1A8Zkf4GkdK38B-",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Yebba",
+      "officialTitle": "Yebba: Jean Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Yebba",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf4GkdK38B-",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-177Zv0G62Kfwvkk",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Visiting Mr. Green",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Visiting Mr. Green",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62Kfwvkk",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AvZZ_oGkUi9hTo",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175T17",
+        "K8vZ917-bbf",
+        "K8vZ917Cz1V",
+        "K8vZ917bkb0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_oGkUi9hTo",
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-177Zv0G62KfSvkh",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Visiting Mr. Green",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Visiting Mr. Green",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62KfSvkh",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1A8Zkf_GkeJJlez",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Brampton Steelheads vs. Erie Otters",
+      "place": {
+        "type": "venue",
+        "venueId": "caa-centre-brampton"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Brampton Steelheads",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf_GkeJJlez",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-25-ht-marlies-1029204",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Marlies vs. IceHogs",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "icehogs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3792,
+        "low": 3735,
+        "high": 4433,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1AvZZ_AGklF626g",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Inter Toronto FC vs. Atlético Ottawa",
+      "place": {
+        "type": "venue",
+        "venueId": "york-lions-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Inter Toronto FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_AGklF626g"
+    },
+    {
+      "id": "2026-10-25-tm-177Zv0G6G9hZRkw",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "SIENNA SPIRO",
+      "officialTitle": "Sienna Spiro: My House Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "SIENNA SPIRO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6G9hZRkw",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1AvZZ_8GkStmfue",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Oshawa Generals vs. Sudbury Wolves",
+      "place": {
+        "type": "venue",
+        "venueId": "tribute-communities-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Oshawa Generals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkStmfue",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-25-tm-177Zv0G65CtmBSJ",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "John Summit",
+      "officialTitle": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "John Summit",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_pO7",
+        "K8vZ9174My7",
+        "K8vZ917hRfV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G65CtmBSJ",
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-177Zv0G658v1VzJ",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G658v1VzJ",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-177Zv0G629d8ms9",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Quadeca",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Quadeca",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G629d8ms9",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-1A8ZkoVGkd7hqUQ",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "AFC Toronto vs. Halifax Tides FC",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "AFC Toronto",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkoVGkd7hqUQ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-26-tm-1AvZZ_aGkmWmyKb",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ9178c40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkmWmyKb",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-1AvZZ_aGkVCvOgJ",
+      "metroId": "toronto",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ9178c40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkVCvOgJ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-1AvZZ_aGkwqfD2H",
+      "metroId": "toronto",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "horsegiirL",
+      "officialTitle": "horsegiirL - NATURE IS HEALING TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "horsegiirL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkwqfD2H",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-177Zv0G62KfVvkn",
+      "metroId": "toronto",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Visiting Mr. Green",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Visiting Mr. Green",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62KfVvkn",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-28-tm-1AvZZ_FGkXMMxKH",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "kind": "show",
+      "title": "The Story So Far",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Story So Far",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_FGkXMMxKH",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-1AvZZ_8GkBysr00",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Waylon Wyatt",
+      "officialTitle": "Waylon Wyatt - Dustpiles World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Waylon Wyatt",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkBysr00",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-raptors-401909885",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Raptors vs. Magic",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "raptors",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19120,
+        "low": 18194,
+        "high": 19212,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-toronto-fc-761906",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Toronto FC vs. D.C. United",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "toronto-fc",
+        "away": "dc-united",
+        "awayOpponent": "d-c-united"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14963,
+        "low": 11499,
+        "high": 15638,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-177Zv0G62KfgvkW",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Visiting Mr. Green",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Visiting Mr. Green",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62KfgvkW",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-29-tm-177Zv0G62KfUv6C",
+      "metroId": "toronto",
+      "date": "2026-10-29",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Visiting Mr. Green",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Visiting Mr. Green",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62KfUv6C",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-10-29-tm-rZ7HnEZ1AfGKqV",
+      "metroId": "toronto",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "TMU Bold Men's Hockey - 2026-27 Season Pass",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold Men's Hockey - 2026-27 Season Pass",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfGKqV"
+    },
+    {
+      "id": "2026-10-29-tm-rZ7HnEZ1A4Zd1K",
+      "metroId": "toronto",
+      "date": "2026-10-29",
+      "start": "18:15",
+      "kind": "game",
+      "title": "TMU Bold vs Lakehead (Men's Hockey)",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold vs Lakehead (Men's Hockey)",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4Zd1K",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-29-tm-177Zv0G61pSqChA",
+      "metroId": "toronto",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "L7",
+      "officialTitle": "L7: The Last Hurrah Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "L7",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61pSqChA",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-1avZZ_3avp4ZdCa8",
+      "metroId": "toronto",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "kwn",
+      "officialTitle": "kwn: wn night only",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "kwn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1avZZ_3avp4ZdCa8",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-rZ7HnEZ1A4Z7vd",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "TMU Bold vs Lakehead (W) / Brock (M) (Men's & Women's Volleyball)",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "TMU Bold vs Lakehead (W) / Brock (M) (Men's & Women's Volleyball)",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4Z7vd",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-tm-rZ7HnEZ1AfGfv7",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "TMU Bold Men's Volleyball - 2026-27 Season Pass",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "TMU Bold Men's Volleyball - 2026-27 Season Pass",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfGfv7"
+    },
+    {
+      "id": "2026-10-30-tm-rZ7HnEZ1AfGfZf",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "TMU Bold Women's Volleyball - 2026-27 Season Pass",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "TMU Bold Women's Volleyball - 2026-27 Season Pass",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfGfZf"
+    },
+    {
+      "id": "2026-10-30-tm-rZ7HnEZ1A4ZduN",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "18:15",
+      "kind": "game",
+      "title": "TMU Bold vs Lakehead (Men's Hockey)",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold vs Lakehead (Men's Hockey)",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4ZduN",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-ht-marlies-1029225",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Marlies vs. Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "bears"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3144,
+        "low": 2877,
+        "high": 3521,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-177Zv0G61hkRoeD",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "This Is Lorelei",
+      "officialTitle": "This Is Lorelei - MOVED TO THE CONCERT HALL",
+      "place": {
+        "type": "venue",
+        "venueId": "concert-hall-888-yonge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "This Is Lorelei",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61hkRoeD",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-1A8Zkf_GkeJEldk",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Brampton Steelheads vs. Oshawa Generals",
+      "place": {
+        "type": "venue",
+        "venueId": "caa-centre-brampton"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Brampton Steelheads",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf_GkeJEldk",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-30-espn-raptors-401909281",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Raptors vs. Magic",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "raptors",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19640,
+        "low": 19300,
+        "high": 19840,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 23 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-177Zv0G61SdQR7x",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KETTAMA",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "KETTAMA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61SdQR7x",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-177Zv0G65a5FuVi",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mali Obomsawin and Ahmed Moneka",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Mali Obomsawin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G65a5FuVi"
+    },
+    {
+      "id": "2026-10-30-tm-1k18vPu8GAu9sIo",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Mortem Halloween 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Mortem Halloween 2026",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1k18vPu8GAu9sIo",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-rZ7HnEZ1AfuvO7",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "kind": "show",
+      "title": "boom 97.3 Totally 80's Halloween Costume Party",
+      "place": {
+        "type": "venue",
+        "venueId": "phoenix-concert-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "boom 97.3 Totally 80's Halloween Costume Party",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfuvO7",
+      "expectedDraw": {
+        "count": 1350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-1AvZZ_KGkwx4JZO",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "2026 Eastern Semi Final - Toronto Argonauts v. TBD",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Toronto Argonauts",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_KGkwx4JZO"
+    },
+    {
+      "id": "2026-10-31-tm-rZ7HnEZ1A4Z7vN",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "TMU Bold vs Lakehead (W) / Brock (M) (Men's & Women's Volleyball)",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "TMU Bold vs Lakehead (W) / Brock (M) (Men's & Women's Volleyball)",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4Z7vN",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-tm-1A8Zkf3GkdJpMmT",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Darryl Vega LIVE",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Darryl Vega",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf3GkdJpMmT"
+    },
+    {
+      "id": "2026-10-31-tm-1AvZZ_kGkVAwuqh",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Blue October",
+      "officialTitle": "Blue October: Foiled 20th Anniversary World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Blue October",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_kGkVAwuqh",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-177Zv0G653rShzz",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KETTAMA",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "KETTAMA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G653rShzz",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-1A8ZkfPGkePIaET",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dalvin La Melodia",
+      "officialTitle": "Dalvin La Melodia Canadian Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Dalvin La Melodia",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfPGkePIaET",
+      "expectedDraw": {
+        "count": 3191,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-rZ7HnEZ1AfFoA7",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "show",
+      "title": "JESSICA AUDIFFRED",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "JESSICA AUDIFFRED",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFoA7",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-rZ7HnEZ1AfG8q7",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Kaskade",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Kaskade",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfG8q7",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-168ZkokjUZA2da5k",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "23:59",
+      "kind": "game",
+      "title": "2026 AFC Toronto Season Tickets",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "AFC Toronto",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "168ZkokjUZA2da5k",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-tm-168ZkokjUZACda57",
+      "metroId": "toronto",
+      "date": "2026-10-31",
+      "start": "23:59",
+      "kind": "game",
+      "title": "2026 AFC Toronto Season Tickets",
+      "place": {
+        "type": "venue",
+        "venueId": "york-lions-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "AFC Toronto",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "168ZkokjUZACda57"
+    },
+    {
+      "id": "2026-11-01-tm-177Zv0G6CrR7MV0",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "13:30",
+      "kind": "show",
+      "title": "Loreena McKennitt",
+      "place": {
+        "type": "venue",
+        "venueId": "massey-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Loreena McKennitt",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6CrR7MV0",
+      "expectedDraw": {
+        "count": 2534,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-1A8Zkf_GkeJIDdu",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Brampton Steelheads vs. Windsor Spitfires",
+      "place": {
+        "type": "venue",
+        "venueId": "caa-centre-brampton"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Brampton Steelheads",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf_GkeJIDdu",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-tm-177Zv0G65BQtnTX",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Orchestra Toronto",
+      "officialTitle": "Turn of the Century: Elgar, Beach & Sibelius",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Orchestra Toronto",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G65BQtnTX",
+      "expectedDraw": {
+        "count": 1727,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-177Zv0G61TuXH0k",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Arch Enemy",
+      "officialTitle": "Arch Enemy & The Black Dahlia Murder - Wrath Across North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Arch Enemy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61TuXH0k",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-177Zv0G6GwdVb1R",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sleeping With Sirens",
+      "officialTitle": "Sleeping With Sirens: An Ending In Itself Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sleeping With Sirens",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6GwdVb1R",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-1AvZZ_8GkStRfuq",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Oshawa Generals vs. Ottawa 67s",
+      "place": {
+        "type": "venue",
+        "venueId": "tribute-communities-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Oshawa Generals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkStRfuq",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-tm-1AvZZ_kGkmJanvt",
+      "metroId": "toronto",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_kGkmJanvt",
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-1AvZZ_aGkI7dtKH",
+      "metroId": "toronto",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amble",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Amble",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkI7dtKH",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-maple-leafs-401892633",
+      "metroId": "toronto",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maple Leafs vs. Mammoth",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "maple-leafs",
+        "away": "utah-mammoth",
+        "awayOpponent": "mammoth"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18451,
+        "low": 18371,
+        "high": 18669,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-1A8Zk3fGkeJq_g9",
+      "metroId": "toronto",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Geese",
+      "officialTitle": "Geese - Getting Killed Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geese",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3fGkeJq_g9",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-177Zv0G6CNlFXkb",
+      "metroId": "toronto",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "SHYNE",
+      "officialTitle": "SHYNE: 2622 LGND Tour with Barrington Levy and Lil' Cease",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "SHYNE",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6CNlFXkb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-1A8Zk3fGkeJragO",
+      "metroId": "toronto",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Geese",
+      "officialTitle": "Geese - Getting Killed Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geese",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3fGkeJragO",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-177Zv0G6110gajO",
+      "metroId": "toronto",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6110gajO",
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-1A8Zk3bGkdGqcsk",
+      "metroId": "toronto",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Nobuo Uematsu",
+      "officialTitle": "Nobuo Uematsu con TIKI SHOW",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-arts-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Nobuo Uematsu",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3bGkdGqcsk",
+      "expectedDraw": {
+        "count": 1727,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7Pwjf",
+      "metroId": "toronto",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Vince Staples",
+      "place": {
+        "type": "venue",
+        "venueId": "queen-elizabeth-theatre-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Vince Staples",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pwjf",
+      "expectedDraw": {
+        "count": 1250,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-21-ht-marlies-1029174",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4026,
+        "low": 2665,
+        "high": 7362
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-177Zv0G62eBEGfP",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-raptors-401909837",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19364,
+        "low": 19274,
+        "high": 19364
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-177Zv0G65rcNeqk",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-maple-leafs-401892553",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18377,
+        "low": 18250,
+        "high": 18655
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-1A8Zk46GkeYFAnZ",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-177Zv0G62KfsvAw",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-1A8ZkoVGkdd8WiP",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1AfGKxf",
+      "date": "2026-10-23",
+      "start": "11:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1A4ZdrK",
+      "date": "2026-10-23",
+      "start": "11:15",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1A8Zk3KGkdpWtv-",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1A8Zkf_GkeJPlen",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Heavy",
+        "why": "Oshawa Generals 45 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AvZZ_FGkUx0bXQ",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Dave Chappelle Karmageddon 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AvZZ_8GkStc7Gp",
+      "date": "2026-10-23",
+      "start": "19:05",
+      "read": {
+        "rating": 3.5,
+        "friction": "Heavy",
+        "why": "Brampton Steelheads 45 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1k7ZvPFyGA1LM7f",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Toronto Argonauts 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-177Zv0G6527-XSJ",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70z70",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2534
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1AfaMG7",
+      "date": "2026-10-23",
+      "start": "22:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AtZkfYGkdNxYgN",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-ht-marlies-1029200",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3820,
+        "low": 3711,
+        "high": 3824
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-177Zv0G6Gl4Dzgx",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1A8Zkf4GkdK38B-",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-177Zv0G62Kfwvkk",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AvZZ_oGkUi9hTo",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-177Zv0G62KfSvkh",
+      "date": "2026-10-25",
+      "start": "13:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1A8Zkf_GkeJJlez",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Oshawa Generals 45 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-ht-marlies-1029204",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3792,
+        "low": 3735,
+        "high": 4433
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1AvZZ_AGklF626g",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-177Zv0G6G9hZRkw",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1AvZZ_8GkStmfue",
+      "date": "2026-10-25",
+      "start": "18:05",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Brampton Steelheads 45 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-177Zv0G65CtmBSJ",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Oshawa Generals 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-177Zv0G658v1VzJ",
+      "date": "2026-10-26",
+      "start": "17:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-177Zv0G629d8ms9",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-1A8ZkoVGkd7hqUQ",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-1AvZZ_aGkmWmyKb",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Halifax Tides FC at AFC Toronto 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-1AvZZ_aGkVCvOgJ",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-1AvZZ_aGkwqfD2H",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-177Zv0G62KfVvkn",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-1AvZZ_FGkXMMxKH",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-1AvZZ_8GkBysr00",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-raptors-401909885",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "D.C. United at Toronto FC 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19120,
+        "low": 18194,
+        "high": 19212
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-toronto-fc-761906",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Magic at Raptors 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14963,
+        "low": 11499,
+        "high": 15638
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-177Zv0G62KfgvkW",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-177Zv0G62KfUv6C",
+      "date": "2026-10-29",
+      "start": "13:30"
+    },
+    {
+      "eventId": "2026-10-29-tm-rZ7HnEZ1AfGKqV",
+      "date": "2026-10-29",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-rZ7HnEZ1A4Zd1K",
+      "date": "2026-10-29",
+      "start": "18:15"
+    },
+    {
+      "eventId": "2026-10-29-tm-177Zv0G61pSqChA",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-1avZZ_3avp4ZdCa8",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-rZ7HnEZ1A4Z7vd",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-rZ7HnEZ1AfGfv7",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-rZ7HnEZ1AfGfZf",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-rZ7HnEZ1A4ZduN",
+      "date": "2026-10-30",
+      "start": "18:15",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-ht-marlies-1029225",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3144,
+        "low": 2877,
+        "high": 3521
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-177Zv0G61hkRoeD",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-1A8Zkf_GkeJEldk",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Magic at Raptors 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-raptors-401909281",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Brampton Steelheads 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19640,
+        "low": 19300,
+        "high": 19840
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-177Zv0G61SdQR7x",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-177Zv0G65a5FuVi",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-1k18vPu8GAu9sIo",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-rZ7HnEZ1AfuvO7",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1350
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1AvZZ_KGkwx4JZO",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-rZ7HnEZ1A4Z7vN",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1A8Zkf3GkdJpMmT",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1AvZZ_kGkVAwuqh",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-177Zv0G653rShzz",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1A8ZkfPGkePIaET",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3191
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-rZ7HnEZ1AfFoA7",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-rZ7HnEZ1AfG8q7",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-168ZkokjUZA2da5k",
+      "date": "2026-10-31",
+      "start": "23:59",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-168ZkokjUZACda57",
+      "date": "2026-10-31",
+      "start": "23:59",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-177Zv0G6CrR7MV0",
+      "date": "2026-11-01",
+      "start": "13:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2534
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-1A8Zkf_GkeJIDdu",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Ottawa 67s at Oshawa Generals 45 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-177Zv0G65BQtnTX",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1727
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-177Zv0G61TuXH0k",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-177Zv0G6GwdVb1R",
+      "date": "2026-11-01",
+      "start": "18:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-1AvZZ_8GkStRfuq",
+      "date": "2026-11-01",
+      "start": "18:05",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Brampton Steelheads 45 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-1AvZZ_kGkmJanvt",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Ottawa 67s at Oshawa Generals 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-1AvZZ_aGkI7dtKH",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-maple-leafs-401892633",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18451,
+        "low": 18371,
+        "high": 18669
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-1A8Zk3fGkeJq_g9",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-177Zv0G6CNlFXkb",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-1A8Zk3fGkeJragO",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-177Zv0G6110gajO",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-1A8Zk3bGkdGqcsk",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1727
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7Pwjf",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1250
+      }
+    }
+  ]
+}

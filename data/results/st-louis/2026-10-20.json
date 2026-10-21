@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-blues-401892544",
+      "metroId": "st-louis",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 2
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 1
+      },
+      "attendance": 18096,
+      "capturedAt": "2026-10-21T13:31:11.376Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

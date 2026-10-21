@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-fiu-football-401871055",
+      "metroId": "miami",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pitbull-stadium",
+      "homeTeamId": "fiu-football",
+      "home": {
+        "name": "FIU",
+        "score": 23
+      },
+      "away": {
+        "name": "MTSU",
+        "score": 26
+      },
+      "attendance": 8230,
+      "capturedAt": "2026-10-21T13:31:05.409Z",
+      "duration": {
+        "minutes": 206,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

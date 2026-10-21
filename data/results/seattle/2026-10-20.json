@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-kraken-401892547",
+      "metroId": "seattle",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 4
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 3
+      },
+      "attendance": 17151,
+      "note": "SO",
+      "capturedAt": "2026-10-21T13:31:00.804Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "21:48"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-20",
+  "results": [
+    {
+      "eventId": "2026-10-20-espn-oilers-401892546",
+      "metroId": "edmonton",
+      "date": "2026-10-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 4
+      },
+      "away": {
+        "name": "Wild",
+        "score": 3
+      },
+      "attendance": 17032,
+      "note": "OT",
+      "capturedAt": "2026-10-21T13:31:10.225Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "21:09"
+    }
+  ]
+}

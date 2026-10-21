@@ -111,6 +111,18 @@
       "code": 3,
       "precipProbability": 12,
       "precipMm": 0
+    },
+    {
+      "metroId": "denver",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-21T13:27:57.998Z",
+      "feelsLikeHighF": 72.9,
+      "feelsLikeLowF": 51.1,
+      "code": 55,
+      "precipProbability": 9,
+      "precipMm": 0.83
     }
   ]
 }

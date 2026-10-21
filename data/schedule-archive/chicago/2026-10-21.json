@@ -1,0 +1,1869 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "metroName": "Chicago",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-21",
+  "capturedAt": "2026-10-21T13:29:01.052Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-21",
+    "through": "2026-11-04"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 25
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-21-tm-vv1kvZvPfaGA11ax_",
+      "metroId": "chicago",
+      "date": "2026-10-21",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Community Open House & Appreciation Night",
+      "place": {
+        "type": "venue",
+        "venueId": "ryan-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Community Open House & Appreciation Night",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvZvPfaGA11ax_"
+    },
+    {
+      "id": "2026-10-21-tm-vv178Z_kGkTlVyFY",
+      "metroId": "chicago",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_kGkTlVyFY",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vv1A7ZkfdGkdwgOWF",
+      "metroId": "chicago",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Black Keys",
+      "officialTitle": "The Black Keys with Eddie 9V: PEACHES 'N KREAM",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Black Keys",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175f_7",
+        "K8vZ917hZ20"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkfdGkdwgOWF",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-bears-401873010",
+      "metroId": "chicago",
+      "date": "2026-10-22",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Bears vs. Patriots",
+      "place": {
+        "type": "venue",
+        "venueId": "soldier-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "bears",
+        "away": "patriots",
+        "awayOpponent": "patriots"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 59248,
+        "low": 58044,
+        "high": 61139,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 21 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vv178Z_8GkymMwt7",
+      "metroId": "chicago",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175T17",
+        "K8vZ917-bbf",
+        "K8vZ917bkb0",
+        "K8vZ917Cz1V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_8GkymMwt7",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vv178Z_aGkSV90pF",
+      "metroId": "chicago",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sylvan Esso",
+      "officialTitle": "Sylvan Esso with Sen Morimoto presented by Jack Daniel's",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Sylvan Esso",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ofYf",
+        "K8vZ9179bsf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_aGkSV90pF",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-blackhawks-401892564",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Canadiens",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "canadiens",
+        "awayOpponent": "canadiens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19664,
+        "low": 19125,
+        "high": 20237,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-chicago-stars-401854027",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Dash",
+      "place": {
+        "type": "venue",
+        "venueId": "martin-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "chicago-stars",
+        "away": "dash",
+        "awayOpponent": "houston"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-vv1A7ZkoMGkeB3pBb",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sammy Rae & The Friends",
+      "officialTitle": "Sammy Rae & The Friends - the GET DOWN!",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sammy Rae & The Friends",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hu8V",
+        "K8vZ9179oNV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkoMGkeB3pBb",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG18Z_GSvXicw",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Yousuke Yukimatsu (¥ØU$UK€ ¥UK1MAT$U)",
+      "officialTitle": "¥ØU$UK ¥UK1MAT$U: Autumn 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Yousuke Yukimatsu (¥ØU$UK€ ¥UK1MAT$U)",
+      "act": true,
+      "performerIds": [
+        "K8vZ917rdx0",
+        "K8vZ917OWNV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_GSvXicw",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-northwestern-football-401858498",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Northwestern vs. Rutgers",
+      "place": {
+        "type": "venue",
+        "venueId": "ryan-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "northwestern-football",
+        "away": "rutgers",
+        "awayOpponent": "rutgers"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-bulls-401909857",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Wizards",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "wizards",
+        "awayOpponent": "wizards"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 21144,
+        "low": 20495,
+        "high": 21428,
+        "fromCrowds": true,
+        "games": 16,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 16 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-ht-chicago-wolves-1029189",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wolves vs. Admirals",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "admirals"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6201,
+        "low": 6115,
+        "high": 6839,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vv1A7ZkoVGkewnMGL",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fruit Bats",
+      "officialTitle": "Fruit Bats with Matthew Logan Vasquez",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Fruit Bats",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175960",
+        "K8vZ917fCEf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkoVGkewnMGL",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG18Z_2XNUFcP",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rahat Fateh Ali Khan",
+      "place": {
+        "type": "venue",
+        "venueId": "now-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Rahat Fateh Ali Khan",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178uNf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_2XNUFcP",
+      "expectedDraw": {
+        "count": 6394,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-blackhawks-401892578",
+      "metroId": "chicago",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Panthers",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19410,
+        "low": 18629,
+        "high": 20131,
+        "fromCrowds": true,
+        "games": 29,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 29 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG18Z_GR6IX5F",
+      "metroId": "chicago",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sleeping With Sirens",
+      "officialTitle": "Sleeping With Sirens: An Ending In Itself Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sleeping With Sirens",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Gmh7",
+        "K8vZ917fqi0",
+        "K8vZ917LtFV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_GR6IX5F",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-ht-chicago-wolves-1029205",
+      "metroId": "chicago",
+      "date": "2026-10-27",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Wolves vs. Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "moose"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 11394,
+        "low": 9774,
+        "high": 12324,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-blackhawks-401892587",
+      "metroId": "chicago",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Kings",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15224,
+        "low": 14297,
+        "high": 16656,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-vvG18Z_u5XBTr6",
+      "metroId": "chicago",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dylan Gossett",
+      "officialTitle": "Dylan Gossett - Live In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dylan Gossett",
+      "act": true,
+      "performerIds": [
+        "K8vZ917j68V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_u5XBTr6",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-bulls-401909886",
+      "metroId": "chicago",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Knicks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "knicks",
+        "awayOpponent": "knicks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18616,
+        "low": 18165,
+        "high": 18617,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-chicago-fire-761911",
+      "metroId": "chicago",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Fire vs. Orlando",
+      "place": {
+        "type": "venue",
+        "venueId": "soldier-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "chicago-fire",
+        "away": "orlando",
+        "awayOpponent": "orlando"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20636,
+        "low": 17764,
+        "high": 26752,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 21 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG18Z_1NdArnR",
+      "metroId": "chicago",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Dresden Dolls",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Dresden Dolls",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u5X0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1NdArnR",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv167ZkuUOKZA2AdC5",
+      "metroId": "chicago",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MANÁ",
+      "officialTitle": "MANÁ: VIVIR SIN AIRE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "MANÁ",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171Kyf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv167ZkuUOKZA2AdC5",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1A7ZkobGkeTj_2e",
+      "metroId": "chicago",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "officialTitle": "The Living Tombstone - The Multiplayer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hsO7",
+        "K8vZ917QgAV",
+        "K8vZ917-t1V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkobGkeTj_2e",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv178Z_8GkMAyGOJ",
+      "metroId": "chicago",
+      "date": "2026-10-31",
+      "start": "17:00",
+      "kind": "show",
+      "title": "OsamaSon",
+      "officialTitle": "Gods of Chaos Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "OsamaSon",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hjcV",
+        "K8vZ917GnEV",
+        "K8vZ917hWaV",
+        "K8vZ917LqU7",
+        "K8vZ917rPKf",
+        "K8vZ917GMef",
+        "K8vZ9171ShV",
+        "K8vZ917qENV",
+        "K8vZ917rQIV",
+        "K8vZ9179y10",
+        "K8vZ917L9tf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_8GkMAyGOJ",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-ht-chicago-wolves-1029228",
+      "metroId": "chicago",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wolves vs. Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "stars"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6165,
+        "low": 6079,
+        "high": 6799,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1A7Zk38GkeOTpyZ",
+      "metroId": "chicago",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geese",
+      "officialTitle": "Geese - Getting Killed Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geese",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_6ef",
+        "K8vZ917GqkV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk38GkeOTpyZ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG18Z_udha5EP",
+      "metroId": "chicago",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rod Wave",
+      "officialTitle": "Rod Wave: Don't Look Down Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rod Wave",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b8z7",
+        "K8vZ917hyqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_udha5EP",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-ht-chicago-wolves-1029233",
+      "metroId": "chicago",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Wolves vs. Griffins",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "griffins"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 10192,
+        "low": 9128,
+        "high": 11855,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vv178Z_aGkRGd_NX",
+      "metroId": "chicago",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geese",
+      "officialTitle": "Geese - Getting Killed Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geese",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_6ef",
+        "K8vZ917_Yp0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_aGkRGd_NX",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vvG18Z_uQCj0ym",
+      "metroId": "chicago",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rod Wave",
+      "officialTitle": "Rod Wave: Don't Look Down Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rod Wave",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b8z7",
+        "K8vZ917hyqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_uQCj0ym",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-uic-mbb-401928858",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UIC vs. St Francis IL",
+      "place": {
+        "type": "venue",
+        "venueId": "credit-union-1-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uic-mbb",
+        "away": "st-francis-il",
+        "awayOpponent": "st-francis-il"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1113,
+        "low": 844,
+        "high": 1807,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-blackhawks-401892631",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18781,
+        "low": 17901,
+        "high": 19426,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-depaul-mbb-401909500",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "DePaul vs. West Georgia",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "depaul-mbb",
+        "away": "west-georgia",
+        "awayOpponent": "west-georgia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3051,
+        "low": 1991,
+        "high": 3273,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-northwestern-mbb-401920732",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northwestern vs. Binghamton",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-mbb",
+        "away": "binghamton",
+        "awayOpponent": "binghamton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 4607,
+        "low": 4389,
+        "high": 5064,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-depaul-wbb-401913044",
+      "metroId": "chicago",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "kind": "game",
+      "title": "DePaul vs. Evansville",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "depaul-wbb",
+        "away": "evansville",
+        "awayOpponent": "evansville"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1305,
+        "low": 980,
+        "high": 2634,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-northwestern-wbb-401921442",
+      "metroId": "chicago",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northwestern vs. Milwaukee",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-wbb",
+        "away": "uwm-wbb",
+        "awayOpponent": "milwaukee"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1478,
+        "low": 1109,
+        "high": 1728,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vv1A7Zk36Gkd2Hi7b",
+      "metroId": "chicago",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917Qs-V",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk36Gkd2Hi7b",
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG18Z_ueUZbii",
+      "metroId": "chicago",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "show",
+      "title": "BOYNEXTDOOR",
+      "officialTitle": "BOYNEXTDOOR TOUR 'KNOCK ON Vol.2' IN NORTH AMERICA",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "BOYNEXTDOOR",
+      "act": true,
+      "performerIds": [
+        "K8vZ917rG00"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_ueUZbii",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-21-tm-vv1kvZvPfaGA11ax_",
+      "date": "2026-10-21",
+      "start": "17:30",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Disney Descendants, ZOMBIES & C… 11 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vv178Z_kGkTlVyFY",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Community Open House & Apprecia… 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vv1A7ZkfdGkdwgOWF",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Community Open House & Apprecia… and Disney Descendants, ZOMBIES & C… 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-bears-401873010",
+      "date": "2026-10-22",
+      "start": "19:15",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 59248,
+        "low": 58044,
+        "high": 61139
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv178Z_8GkymMwt7",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Patriots at Bears 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv178Z_aGkSV90pF",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Patriots at Bears 3.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-blackhawks-401892564",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Dash at Stars 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19664,
+        "low": 19125,
+        "high": 20237
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-chicago-stars-401854027",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Canadiens at Blackhawks 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vv1A7ZkoMGkeB3pBb",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Canadiens at Blackhawks and Dash at Stars 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG18Z_GSvXicw",
+      "date": "2026-10-23",
+      "start": "21:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Canadiens at Blackhawks and Dash at Stars 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-northwestern-football-401858498",
+      "date": "2026-10-24",
+      "start": "11:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-bulls-401909857",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Admirals at Wolves 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21144,
+        "low": 20495,
+        "high": 21428
+      }
+    },
+    {
+      "eventId": "2026-10-24-ht-chicago-wolves-1029189",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Heavy",
+        "why": "Wizards at Bulls (Home opener) 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6201,
+        "low": 6115,
+        "high": 6839
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv1A7ZkoVGkewnMGL",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Wizards at Bulls (Home opener) 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG18Z_2XNUFcP",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Wizards at Bulls (Home opener) 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6394
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-blackhawks-401892578",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19410,
+        "low": 18629,
+        "high": 20131
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG18Z_GR6IX5F",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Panthers at Blackhawks 2.0 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-27-ht-chicago-wolves-1029205",
+      "date": "2026-10-27",
+      "start": "11:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11394,
+        "low": 9774,
+        "high": 12324
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-blackhawks-401892587",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Dylan Gossett · Live In Concert 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15224,
+        "low": 14297,
+        "high": 16656
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-vvG18Z_u5XBTr6",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Kings at Blackhawks 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-bulls-401909886",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Orlando at Fire 3.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18616,
+        "low": 18165,
+        "high": 18617
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-chicago-fire-761911",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Knicks at Bulls 3.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20636,
+        "low": 17764,
+        "high": 26752
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG18Z_1NdArnR",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv167ZkuUOKZA2AdC5",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The Living Tombstone 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1A7ZkobGkeTj_2e",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "MANÁ · Vivir Sin Aire Tour 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv178Z_8GkMAyGOJ",
+      "date": "2026-10-31",
+      "start": "17:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Heavy",
+        "why": "Rod Wave · Don't Look Down Tour 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-31-ht-chicago-wolves-1029228",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Rod Wave · Don't Look Down Tour 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6165,
+        "low": 6079,
+        "high": 6799
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1A7Zk38GkeOTpyZ",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Rod Wave · Don't Look Down Tour 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG18Z_udha5EP",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Gods of Chaos Halloween 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-01-ht-chicago-wolves-1029233",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Rod Wave · Don't Look Down Tour 14 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10192,
+        "low": 9128,
+        "high": 11855
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv178Z_aGkRGd_NX",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "Rod Wave · Don't Look Down Tour 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vvG18Z_uQCj0ym",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Griffins at Wolves and Geese 14 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-uic-mbb-401928858",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1113,
+        "low": 844,
+        "high": 1807
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-blackhawks-401892631",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18781,
+        "low": 17901,
+        "high": 19426
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-depaul-mbb-401909500",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3051,
+        "low": 1991,
+        "high": 3273
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-northwestern-mbb-401920732",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4607,
+        "low": 4389,
+        "high": 5064
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-depaul-wbb-401913044",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "draw": {
+        "count": 1305,
+        "low": 980,
+        "high": 2634
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-northwestern-wbb-401921442",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "draw": {
+        "count": 1478,
+        "low": 1109,
+        "high": 1728
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vv1A7Zk36Gkd2Hi7b",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "BOYNEXTDOOR TOUR 'KNOCK ON Vol.… 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG18Z_ueUZbii",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Sombr · You Are The Reason Tour 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    }
+  ]
+}

@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "austin",
   "date": "2026-11-04",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-11-04",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-21T13:26:50.126Z",
+      "feelsLikeF": 68.5,
+      "tempF": 73.2,
+      "humidity": 26,
+      "windMph": 3.7,
+      "uvIndex": 0.1,
+      "precipProbability": 6,
+      "precipMm": 0,
+      "shortwave": 13,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
   "days": [
     {
       "metroId": "austin",
@@ -14,6 +33,18 @@
       "feelsLikeLowF": 70.6,
       "code": 3,
       "precipProbability": 26,
+      "precipMm": 0
+    },
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-11-04",
+      "basis": "forecast",
+      "capturedAt": "2026-10-21T13:26:50.126Z",
+      "feelsLikeHighF": 71.9,
+      "feelsLikeLowF": 51.1,
+      "code": 3,
+      "precipProbability": 14,
       "precipMm": 0
     }
   ]
