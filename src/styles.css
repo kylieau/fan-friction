@@ -9806,3 +9806,43 @@ a.follow-lead::after {
 .add-record-chev {
   opacity: 0.5;
 }
+
+/* Settings › Review queue (Oct 21, 2026): fan-added events awaiting a call. */
+.review-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.review-row {
+  padding: 12px 16px;
+}
+.review-row + .review-row {
+  border-top: 1px solid rgba(15, 27, 45, 0.08);
+}
+.review-row.settled {
+  opacity: 0.7;
+}
+.review-title {
+  font-weight: 700;
+}
+.review-sub,
+.review-checks {
+  font-size: 14px;
+  color: var(--muted, #5b6b82);
+  margin-top: 2px;
+}
+.review-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.review-actions .gold-button.small {
+  width: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.review-status {
+  font-size: 14px;
+  color: var(--muted, #5b6b82);
+}

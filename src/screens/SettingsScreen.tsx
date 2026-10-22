@@ -7,6 +7,7 @@ import { PrivacySettings, VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { CrowdSizeSettings } from './SettingsCrowdScreen';
 import { PeoplePanel } from './PeopleScreen';
 import { FavoritesScreen } from './FavoritesScreen';
+import { ReviewQueue } from '../components/ReviewQueue';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import {
@@ -18,6 +19,8 @@ import {
   followRequests,
   getAccount,
   getMyProfile,
+  isReviewAdmin,
+  reviewQueue,
   getPersonalLog,
   logBackup,
   peopleList,
@@ -31,7 +34,7 @@ import {
 } from '../data';
 
 /** The dropdowns, in the panel's order (a default: grouped by the sections Settings already had). */
-export type SettingsSectionId = 'profile' | 'account' | 'cities' | 'crowd' | 'privacy' | 'blocked' | 'faves' | 'people' | 'events' | 'app';
+export type SettingsSectionId = 'profile' | 'account' | 'cities' | 'crowd' | 'privacy' | 'blocked' | 'faves' | 'people' | 'events' | 'review' | 'app';
 
 /**
  * Settings as a side panel (build 6, item 8; Kylie, Oct 15: "reorganize the entire You > Edit profile / settings /
@@ -55,6 +58,8 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
   const [shareNote, setShareNote] = useState('');
   const [peopleCount, setPeopleCount] = useState<number | null>(null);
   const [requestCount, setRequestCount] = useState(0);
+  const [admin, setAdmin] = useState(false);
+  const [pendingCount, setPendingCount] = useState(0);
   const wanted = isSection(section) ? section : null;
   const [open, setOpen] = useState<Set<SettingsSectionId>>(() => new Set(wanted ? [wanted] : []));
   const panel = useRef<HTMLDivElement>(null);
@@ -92,6 +97,11 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
     blockedPeople().then((list) => current && setBlocked(list));
     peopleList().then((list) => current && setPeopleCount(list.length));
     followRequests().then((list) => current && setRequestCount(list.length));
+    isReviewAdmin().then((yes) => {
+      if (!current) return;
+      setAdmin(yes);
+      if (yes) reviewQueue().then((rows) => current && setPendingCount(rows.filter((r) => r.status === 'pending').length));
+    });
     return () => {
       current = false;
     };
@@ -304,6 +314,8 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
             <p className="you-fine">A JSON file of every event and plan.</p>
           </div>,
         )}
+        {/* The review queue (Kylie, Oct 21, 2026): an admin account only (migration 0032); hidden for everyone else. */}
+        {admin && dropdown('review', 'Review queue', pendingCount > 0 ? `${pendingCount}` : null, <ReviewQueue />)}
         {dropdown(
           'app',
           'App',
@@ -324,7 +336,7 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
   );
 }
 
-const SECTIONS: readonly SettingsSectionId[] = ['profile', 'account', 'cities', 'crowd', 'privacy', 'blocked', 'faves', 'people', 'events', 'app'];
+const SECTIONS: readonly SettingsSectionId[] = ['profile', 'account', 'cities', 'crowd', 'privacy', 'blocked', 'faves', 'people', 'events', 'review', 'app'];
 
 export function isSection(value: string | null): value is SettingsSectionId {
   return value !== null && (SECTIONS as readonly string[]).includes(value);
