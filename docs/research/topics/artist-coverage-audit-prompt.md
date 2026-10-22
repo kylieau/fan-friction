@@ -61,3 +61,11 @@ The trimmed Los Angeles room-first census (the follow-up to this audit) was past
 ```
 Continue the Los Angeles room-first census from room 21, Pauley Pavilion, down the same capacity-ordered room list, for the same window (October 26 – November 22, 2026, inclusive, America/Los_Angeles, 24-hour times). Keep rooms 1–20 exactly as delivered and append the new rooms; update the summary table, the "Remaining rooms" ledger and the stopping point. Same rules: read each room's own or operator calendar, one row per dated performance or daily admission, date-only tour entries marked as such, no packages or parking as events, free admission and private hire excluded, ambiguous admission in the room's unresolved table, every fact an official-source observation unless marked unknown or reported, no paid access or workaround for a page that will not load (list it instead). Go as far down the list as you can and say exactly where you stopped; a room you could not read is "Unread", never empty.
 ```
+
+### Census continuation 2 (Oct 22, 2026): from room 51, Fantasy Springs Resort Casino
+
+Status: rooms 1–50 are saved in `artist-coverage-audit-census-answer.md`. Next: room 51.
+
+```
+Continue the Los Angeles room-first census from room 51, Fantasy Springs Resort Casino, down the same capacity-ordered room list, for the same window (October 26 – November 22, 2026, inclusive, America/Los_Angeles, 24-hour times). Keep rooms 1–50 exactly as delivered and append the new rooms; update the summary table, the derived tallies, the "Remaining rooms" ledger and the stopping point. Same rules: read each room's own or operator calendar, one row per dated performance or daily admission, date-only tour entries marked as such, no packages or parking as events, free admission and private hire excluded, ambiguous admission in the room's unresolved table, every fact an official-source observation unless marked unknown or reported, no paid access or workaround for a page that will not load (list it instead). Rooms 51–116 are mostly theatres and halls with one calendar each, so aim to finish the list in this pass. Say exactly where you stopped; a room you could not read is "Unread", never empty.
+```
