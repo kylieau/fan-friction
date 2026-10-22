@@ -18,7 +18,7 @@ import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
 import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, subscribeLogLoaded } from './data';
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { getAccount, getMyProfile, setStubDefault, subscribeAccount } from './data';
+import { getAccount, getMyProfile, linkConfirmedSuggestions, setStubDefault, subscribeAccount } from './data';
 import { levelFor } from './screens/SettingsPrivacyScreen';
 
 /** /night/<date> was the date page's first address. */
@@ -53,6 +53,8 @@ function Shell() {
       return;
     }
     getMyProfile().then((profile) => current && setStubDefault(levelFor(profile?.visibility)));
+    // A fan-added event the nightly job confirmed: my hand plan or stub moves onto it (step 2, Oct 21, 2026).
+    void linkConfirmedSuggestions();
     return () => {
       current = false;
     };

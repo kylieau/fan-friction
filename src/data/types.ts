@@ -289,6 +289,8 @@ export interface CrowdEvent {
   ticketmasterId?: string;
   /** The seller's ticket page, kept only for sources whose terms ask that it be shown as returned (JamBase). */
   ticketUrl?: string;
+  /** A fan-added event (sourceId 'fan'; Oct 21, 2026): the review row it came from and how it was confirmed. */
+  fan?: { suggestionId: string; confirmedBy: string; venue: string };
 }
 
 /**

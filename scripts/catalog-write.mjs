@@ -78,6 +78,7 @@ try {
   const { dropGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
   const { loadSidearmSchedule } = await server.ssrLoadModule('/src/data/sources/sidearmSource.ts');
   const { loadJambaseEvents, readJambaseQuota, JAMBASE_METROS } = await server.ssrLoadModule('/src/data/sources/jambaseSource.ts');
+  const { fanEventFrom, fanEventId, secondPersonConfirmations } = await server.ssrLoadModule('/src/data/sources/fanSource.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
   // JamBase (Kylie, Oct 21, 2026): concerts from the sellers Ticketmaster's feed lacks. Off until the free key is a secret;
   // the quota is read once per run and every city's pull stops while the reserve is left.
@@ -192,8 +193,44 @@ try {
     captured_at: now,
     data: e,
   });
+  // Fan-added events (step 2 of the Add a game / Add a show card, Oct 21, 2026). The review rows for this city:
+  // the second-person rule confirms pending rows two unrelated accounts submitted for the same event; confirmed and
+  // approved rows become 'fan' events, ranked last so a feed's copy of the same game or show wins; each row records
+  // the catalog event it became, which the app uses to link the submitter's plan. A failure here never costs the
+  // city its night.
+  let fan = [];
+  try {
+    const { data: rows, error } = await db.from('suggested_events').select('*').eq('metro_id', metroId).in('status', ['pending', 'confirmed', 'approved']).gte('when_sort', floorLocal);
+    if (error) throw new Error(error.message);
+    const users = [...new Set((rows ?? []).map((r) => r.user_id))];
+    let follows = [];
+    if (users.length > 1) {
+      const f = await db.from('follows').select('follower_id, followee_id').in('follower_id', users).in('followee_id', users);
+      if (f.error) throw new Error(f.error.message);
+      follows = f.data ?? [];
+    }
+    const confirmIds = secondPersonConfirmations(rows ?? [], follows);
+    if (confirmIds.length && !dryRun) {
+      const u = await db.from('suggested_events').update({ status: 'confirmed', confirmed_by: 'second-person', confirmed_at: now }).in('id', confirmIds);
+      if (u.error) throw new Error(u.error.message);
+    }
+    const live = (rows ?? []).map((r) => (confirmIds.includes(r.id) ? { ...r, status: 'confirmed', confirmed_by: 'second-person' } : r)).filter((r) => r.status === 'confirmed' || r.status === 'approved');
+    fan = live.map((r) => fanEventFrom(r, todayLocal)).filter(Boolean);
+    const unplaced = live.length - fan.length;
+    if (rows?.length) console.log(`${metroId}: fan-added rows ${rows.length} (${confirmIds.length} confirmed tonight by a second person); ${fan.length} written as events${unplaced ? `, ${unplaced} with no room on file` : ''}.`);
+    if (!dryRun) {
+      for (const r of live) {
+        const id = fanEventId(r);
+        if (r.catalog_event_id !== id && fan.some((e) => e.id === id)) await db.from('suggested_events').update({ catalog_event_id: id }).eq('id', r.id);
+      }
+    }
+  } catch (error) {
+    console.log(`${metroId}: fan-added rows skipped (${error.message}).`);
+  }
+  // A fan show the sellers already list is theirs (the shared one-show key); fan games go through the one-game rule below.
+  const fanKept = dropShowsTicketmasterHas(fan.filter((e) => e.kind !== 'game'), [...tm.events, ...sg, ...jb]).concat(fan.filter((e) => e.kind === 'game'));
   const seen = new Set();
-  const events = dropGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...sa, ...tm.events, ...sg, ...jb].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
+  const events = dropGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...sa, ...tm.events, ...sg, ...jb, ...fanKept].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds stay. The game feeds
   // (MLB, ESPN, HockeyTech) still list last week's games, so their stale rows are cleared from a week back; the

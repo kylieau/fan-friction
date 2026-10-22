@@ -12,7 +12,7 @@ import type { CrowdEvent } from './types';
  * aggregator. Lower wins. Within a tier the first one seen is kept: no feed carries a "confirmed at" time to
  * compare, so "latest confirmed" can't be read yet.
  */
-const AUTHORITY: Record<string, number> = { seed: 0, mlb: 1, espn: 1, hockeytech: 1, sidearm: 1, ticketmaster: 2, seatgeek: 2, jambase: 2 };
+const AUTHORITY: Record<string, number> = { seed: 0, mlb: 1, espn: 1, hockeytech: 1, sidearm: 1, ticketmaster: 2, seatgeek: 2, jambase: 2, fan: 4 };
 const AGGREGATOR = 3;
 
 const norm = (s: string | undefined) => (s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();

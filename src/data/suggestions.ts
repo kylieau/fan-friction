@@ -7,6 +7,7 @@
 import { getAccount } from './account';
 import { supabase } from './storage/supabaseClient';
 import type { Entry } from './types';
+import { linkSuggestion } from './personalLog';
 
 /**
  * Send one suggestion. Returns its id, or null when there is no account to
@@ -29,4 +30,22 @@ export async function suggestEvent(entry: Entry): Promise<string | null> {
     metro_id: entry.metroId ?? null,
   });
   return error ? null : id;
+}
+
+/**
+ * Link what the nightly job confirmed (step 2 of the Add a game / Add a show card, Oct 21, 2026): each of my review
+ * rows that became a catalog event moves my hand plan or stub onto that event. Runs at sign-in and when the log
+ * loads; a row already linked is skipped. Returns how many were linked.
+ */
+export async function linkConfirmedSuggestions(): Promise<number> {
+  const client = supabase();
+  const account = getAccount();
+  if (!client || !account) return 0;
+  const { data, error } = await client.from('suggested_events').select('entry_id, catalog_event_id, metro_id').eq('user_id', account.id).not('catalog_event_id', 'is', null);
+  if (error || !data) return 0;
+  let linked = 0;
+  for (const row of data as { entry_id: string; catalog_event_id: string; metro_id: string | null }[]) {
+    if (linkSuggestion(row.entry_id, row.catalog_event_id, row.metro_id ?? undefined)) linked++;
+  }
+  return linked;
 }

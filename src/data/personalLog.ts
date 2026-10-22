@@ -380,6 +380,26 @@ function nightFromPlan(plan: Plan): ManualNight {
   };
 }
 
+/**
+ * A fan-added event the nightly job confirmed and wrote to the catalog (step 2, Oct 21, 2026): the submitter's hand
+ * plan becomes a plan on that event (tags and visibility kept), and a stub takes the event's id, so the pages and
+ * the timeline treat it as a listed night from then on.
+ */
+export function linkSuggestion(entryOrPlanId: string, eventId: string, metroId?: string) {
+  const plan = snapshot.plans.find((p) => p.id === entryOrPlanId && !p.eventId);
+  if (plan) {
+    const linked: Plan = { id: `plan-${eventId}`, date: plan.date, metroId: metroId ?? plan.metroId, eventId, title: plan.title, ...(plan.venue ? { venue: plan.venue } : {}), ...(plan.userTags?.length ? { userTags: plan.userTags } : {}), ...(plan.visibility ? { visibility: plan.visibility } : {}), updatedAt: new Date().toISOString() };
+    commit({ ...snapshot, plans: [...snapshot.plans.filter((p) => p.id !== plan.id && p.id !== linked.id), linked] });
+    return true;
+  }
+  const entry = snapshot.added.find((e) => e.id === entryOrPlanId && !e.eventId);
+  if (entry) {
+    commit({ ...snapshot, added: snapshot.added.map((e) => (e.id === entry.id ? { ...e, eventId, ...(metroId ? { metroId } : {}) } : e)) });
+    return true;
+  }
+  return false;
+}
+
 /** A hand-added plan that was also sent for review (the Add a game / Add a show card): the review row's id stays with it. */
 export function markPlanSuggested(planId: string, suggestionId: string) {
   commit({

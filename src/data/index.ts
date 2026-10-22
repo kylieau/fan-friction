@@ -499,7 +499,7 @@ export { stubDefault, setStubDefault, stubLevel, setStubVisibility, setEntryVisi
 export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, toggleFavoriteCity, setEntrySeats, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
 export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
 export { hasUnsyncedChanges } from './storage';
-export { suggestEvent } from './suggestions';
+export { suggestEvent, linkConfirmedSuggestions } from './suggestions';
 export { quickAddDefaults, saveQuickAdd, roomsIn, type QuickAddDefaults, type QuickAddInput, type QuickAddResult } from './quickAdd';
 export { markPlanSuggested } from './personalLog';
 export { favoriteSearchNames, searchFavoriteRecords } from './favorites';

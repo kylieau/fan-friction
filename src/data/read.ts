@@ -103,7 +103,7 @@ export function knownSize(event: CrowdEvent): number | undefined {
   // calendar: the "college match the feeds don't carry" of that rule), since Oct 21, 2026, when the school feeds and
   // the wider sports rule began listing such games at every room.
   const draw = event.expectedDraw;
-  const unsized = event.kind === 'game' && !draw && (event.sourceId === 'ticketmaster' || event.sourceId === 'sidearm' || event.sourceId === 'seatgeek');
+  const unsized = event.kind === 'game' && !draw && (event.sourceId === 'ticketmaster' || event.sourceId === 'sidearm' || event.sourceId === 'seatgeek' || event.sourceId === 'fan');
   if ((event.kind === 'special' && event.sourceId === 'ticketmaster' || unsized) && !event.crowd.some((c) => c.soldOut)) {
     const cap = listedCapacity(event);
     const smallDraw = unsized && event.audience.domain === 'sports' && SMALL_DRAW_SPORTS.has(event.audience.sport);

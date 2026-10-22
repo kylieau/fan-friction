@@ -273,6 +273,8 @@ export function EventScreen() {
             Further out <FurtherOutInfo />
           </div>
         )}
+        {/* A fan-added event (step 2 of the Add a game / Add a show card, Oct 21, 2026): the label stays once confirmed. */}
+        {e.sourceId === 'fan' && <div className="event-further">Added by a fan</div>}
         <FactList facts={eventFacts(e, logged)} />
         {/* No ticket line (build 6, item 12): hidden, not deleted; the .ticket-line style stays for its return. */}
         {a && (
