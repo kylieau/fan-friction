@@ -250,7 +250,9 @@ export function checkedFor(metroId: string, date: LocalDate): DateChecked {
   const latest = spans.reduce((a, b) => (b.capturedOn > a.capturedOn ? b : a));
   const covering = spans.filter((span) => date >= span.from && date <= span.through);
   if (covering.length === 0) return 'never';
-  const uses = latest.sources.filter((id) => id !== 'seed');
+  // The seed and the fan-added rows are the app's own, not feeds a capture could have missed: a date is not "partial"
+  // for lacking them (the fan source joined the snapshot on Oct 22, 2026, and no earlier night had rows to miss).
+  const uses = latest.sources.filter((id) => id !== 'seed' && id !== 'fan');
   return covering.some((span) => uses.every((id) => span.sources.includes(id))) ? 'checked' : 'partial';
 }
 

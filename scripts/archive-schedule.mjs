@@ -9,6 +9,7 @@ import { createServer } from 'vite';
 import { refreshForecastIndex } from './forecast-index.mjs';
 import { primeFromFiles } from './prime-from-files.mjs';
 import { refreshScheduleIndex } from './schedule-index.mjs';
+import { fanEventsFor, serviceDb } from './fan-rows.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Optional --metro=<id> for a city build; without it the nightly job covers every city.
@@ -30,15 +31,28 @@ const server = await createServer({
 let exitCode = 0;
 try {
   const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
-  const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  const { COVERED_METRO_IDS, METROS } = await server.ssrLoadModule('/src/config/metros.ts');
   if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
   const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
+  // Fan-added events (Oct 22, 2026): read from the review rows with the job's key, so the snapshot the stamps read
+  // carries them. Without the key the snapshot is saved as before and says nothing of fan rows.
+  const { db: fanDb, reason: noFanDb } = serviceDb();
+  const fanFns = fanDb ? await server.ssrLoadModule('/src/data/sources/fanSource.ts') : null;
+  if (!fanDb) console.log(`Fan-added rows not read (${noFanDb}).`);
   const failed = [];
   for (const metroId of metroIds) {
   try {
   // The reads saved tonight need weather; without Supabase here, it comes from the files.
   await primeFromFiles(server, metroId);
-  const snapshot = await collectScheduleArchive(metroId);
+  let extras = {};
+  if (fanDb) {
+    const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
+    const fanRead = await fanEventsFor({ db: fanDb, fns: fanFns, metroId, floorLocal: todayLocal, todayLocal });
+    if (fanRead.log) console.log(fanRead.log);
+    // A failed read is logged and the snapshot still lists the source as read with none, never a missing night.
+    extras = { fanEvents: fanRead.events };
+  }
+  const snapshot = await collectScheduleArchive(metroId, new Date(), extras);
   const dir = path.join(root, 'data', 'schedule-archive', snapshot.metroId);
   const file = path.join(dir, `${snapshot.capturedOn}.json`);
   const relative = path.relative(root, file);

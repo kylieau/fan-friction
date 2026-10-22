@@ -9,42 +9,27 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createClient } from '@supabase/supabase-js';
 import { createServer } from 'vite';
+import { fanEventsFor, serviceDb } from './fan-rows.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Optional --metro=<id> for a city build; without it the nightly job covers every city.
 const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
-const url = process.env.SUPABASE_URL;
-const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const dryRun = process.argv.includes('--dry-run');
 /** The feeds that keep listing a game after its day (with its result), so the pass can tell a dropped game from a past one. */
 const GAME_FEEDS = ['mlb', 'espn', 'hockeytech', 'sidearm'];
 const GAME_FEED_BACK_DAYS = 7;
 
-if (!url || !key) {
-  console.log('Catalog write skipped: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are not set.');
-  process.exit(0);
-}
-
-// The key must be one that can write: Supabase's newer "secret" key (sb_secret_…) or the
-// older service_role JWT. The public key (sb_publishable_… or an anon JWT) can only read.
-function keyKind(k) {
-  if (k.startsWith('sb_secret_')) return 'secret';
-  if (k.startsWith('sb_publishable_')) return 'publishable (read-only)';
-  try {
-    return JSON.parse(Buffer.from(k.split('.')[1], 'base64url').toString()).role ?? 'unknown';
-  } catch {
-    return 'unknown';
+// The client and the key check live in scripts/fan-rows.mjs since Oct 22, 2026 (the archive step reads fan rows too).
+const { db, reason } = serviceDb();
+if (!db) {
+  if (reason.startsWith('SUPABASE_URL')) {
+    console.log(`Catalog write skipped: ${reason}.`);
+    process.exit(0);
   }
-}
-const kind = keyKind(key);
-if (kind !== 'secret' && kind !== 'service_role') {
-  console.error(`SUPABASE_SERVICE_ROLE_KEY holds a "${kind}" key, which cannot write. In Supabase: Project Settings → API Keys → a Secret key (sb_secret_…), or the legacy service_role key.`);
+  console.error(reason);
   process.exit(1);
 }
-
-const db = createClient(url, key, { auth: { persistSession: false } });
 const CHUNK = 500;
 
 async function upsert(table, rows, onConflict) {
@@ -193,40 +178,14 @@ try {
     captured_at: now,
     data: e,
   });
-  // Fan-added events (step 2 of the Add a game / Add a show card, Oct 21, 2026). The review rows for this city:
+  // Fan-added events (step 2 of the Add a game / Add a show card, Oct 21, 2026; scripts/fan-rows.mjs since Oct 22):
   // the second-person rule confirms pending rows two unrelated accounts submitted for the same event; confirmed and
   // approved rows become 'fan' events, ranked last so a feed's copy of the same game or show wins; each row records
   // the catalog event it became, which the app uses to link the submitter's plan. A failure here never costs the
   // city its night.
-  let fan = [];
-  try {
-    const { data: rows, error } = await db.from('suggested_events').select('*').eq('metro_id', metroId).in('status', ['pending', 'confirmed', 'approved']).gte('when_sort', floorLocal);
-    if (error) throw new Error(error.message);
-    const users = [...new Set((rows ?? []).map((r) => r.user_id))];
-    let follows = [];
-    if (users.length > 1) {
-      const f = await db.from('follows').select('follower_id, followee_id').in('follower_id', users).in('followee_id', users);
-      if (f.error) throw new Error(f.error.message);
-      follows = f.data ?? [];
-    }
-    const confirmIds = secondPersonConfirmations(rows ?? [], follows);
-    if (confirmIds.length && !dryRun) {
-      const u = await db.from('suggested_events').update({ status: 'confirmed', confirmed_by: 'second-person', confirmed_at: now }).in('id', confirmIds);
-      if (u.error) throw new Error(u.error.message);
-    }
-    const live = (rows ?? []).map((r) => (confirmIds.includes(r.id) ? { ...r, status: 'confirmed', confirmed_by: 'second-person' } : r)).filter((r) => r.status === 'confirmed' || r.status === 'approved');
-    fan = live.map((r) => fanEventFrom(r, todayLocal)).filter(Boolean);
-    const unplaced = live.length - fan.length;
-    if (rows?.length) console.log(`${metroId}: fan-added rows ${rows.length} (${confirmIds.length} confirmed tonight by a second person); ${fan.length} written as events${unplaced ? `, ${unplaced} with no room on file` : ''}.`);
-    if (!dryRun) {
-      for (const r of live) {
-        const id = fanEventId(r);
-        if (r.catalog_event_id !== id && fan.some((e) => e.id === id)) await db.from('suggested_events').update({ catalog_event_id: id }).eq('id', r.id);
-      }
-    }
-  } catch (error) {
-    console.log(`${metroId}: fan-added rows skipped (${error.message}).`);
-  }
+  const fanRead = await fanEventsFor({ db, fns: { fanEventFrom, fanEventId, secondPersonConfirmations }, metroId, floorLocal, todayLocal, now, write: !dryRun });
+  if (fanRead.log) console.log(fanRead.log);
+  const fan = fanRead.events;
   // A fan show the sellers already list is theirs (the shared one-show key); fan games go through the one-game rule below.
   const fanKept = dropShowsTicketmasterHas(fan.filter((e) => e.kind !== 'game'), [...tm.events, ...sg, ...jb]).concat(fan.filter((e) => e.kind === 'game'));
   const seen = new Set();

@@ -14,6 +14,7 @@ import { seedEvents } from './sources/seedSource';
 import { loadTicketmasterEvents } from './sources/ticketmasterSource';
 import { loadSidearmSchedule } from './sources/sidearmSource';
 import { loadJambaseEvents, JAMBASE_METROS } from './sources/jambaseSource';
+import { dropShowsTicketmasterHas } from './sources/seatgeekSource';
 
 /** The job's Ticketmaster key, from the environment; never in the app. */
 function ticketmasterKey(): string | undefined {
@@ -95,8 +96,17 @@ async function readSource(name: string, load: () => Promise<CrowdEvent[]>): Prom
   }
 }
 
+export interface ArchiveExtras {
+  /**
+   * Fan-added events (step 2 of the Add a game / Add a show card), read by the job from the review rows with its own
+   * key (scripts/fan-rows.mjs) since Oct 22, 2026, so the snapshot the stamps read carries them; `undefined` when the
+   * job had no key, and then the source is not listed. Ranked last: a feed's copy of the same game or show wins.
+   */
+  fanEvents?: CrowdEvent[];
+}
+
 /** Listings for one city's window: live home games, plus seeded events already in the repo. */
-export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID, now = new Date()): Promise<ScheduleSnapshot> {
+export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID, now = new Date(), extras: ArchiveExtras = {}): Promise<ScheduleSnapshot> {
   const metro = METROS[metroId];
   if (!metro) throw new Error(`Unknown metro ${metroId}. Nothing was saved.`);
   const capturedOn = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
@@ -123,10 +133,13 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   const tmWindow = inWindow(tm, capturedOn, through);
   const saWindow = inWindow(sa, capturedOn, through);
   const jbWindow = inWindow(jb, capturedOn, through);
+  // A fan show the sellers already list is theirs (the shared one-show key); fan games go through the one-game rule.
+  const fanAll = inWindow(extras.fanEvents ?? [], capturedOn, through);
+  const fanWindow = dropShowsTicketmasterHas(fanAll.filter((e) => e.kind !== 'game'), [...tmWindow, ...jbWindow]).concat(fanAll.filter((e) => e.kind === 'game'));
   // Each game carries the expected draw the app shows that day (Oct 7, 2026): the saved read
   // sizes events the way the live read does, and the estimate is on file before the game, to
   // be scored against the announced crowd (scripts/expected-draw-check.mjs, "Saved ahead").
-  const events = withExpectedDraws(dropGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...htWindow, ...seedWindow, ...saWindow, ...tmWindow, ...jbWindow]).sort(byListing));
+  const events = withExpectedDraws(dropGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...htWindow, ...seedWindow, ...saWindow, ...tmWindow, ...jbWindow, ...fanWindow]).sort(byListing));
 
   return {
     schema: 1,
@@ -146,6 +159,7 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
       ...(key ? [{ id: 'ticketmaster', name: 'Ticketmaster listings', inWindow: tmWindow.length }] : []),
       { id: 'sidearm', name: 'School calendars', inWindow: saWindow.length },
       ...(jbKey && JAMBASE_METROS.includes(metroId) ? [{ id: 'jambase', name: 'JamBase concerts', inWindow: jbWindow.length }] : []),
+      ...(extras.fanEvents ? [{ id: 'fan', name: 'Fan-added events', inWindow: fanWindow.length }] : []),
     ],
     events,
     forecasts: archivedReads(events),

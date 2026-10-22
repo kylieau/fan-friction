@@ -69,6 +69,9 @@ jobs:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           # Oct 21, 2026: JamBase's free Developer plan (concerts from AXS, DICE and the other sellers the app can't read). Empty until Kylie adds the key.
           JAMBASE_API_KEY: ${{ secrets.JAMBASE_API_KEY }}
+          # Oct 22, 2026: the fan-added rows (the Add a game / Add a show card) are read into the snapshot the stamps use.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           metro_args=()
           if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
