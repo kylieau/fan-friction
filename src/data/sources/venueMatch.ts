@@ -70,6 +70,10 @@ export function venueByNameOrPlace(metroId: string, name: string, lat?: number, 
     ['building dropped', key.replace(/\s+at\s+(the\s+)?[^-]+$/, '')],
     ['city dropped', city ? plain(key).replace(new RegExp(`\\s${city}$`), '') : key],
     ['"the" dropped', untagged.replace(/^the\s+/, '')],
+    // The parent first and the room after the dash ("Segerstrom Center for the Arts-Segerstrom Hall", 51 Costa Mesa listings
+    // unplaced on Oct 22, 2026), and a leading "The" on a name whose city is glued on ("The Fox Theater-Pomona").
+    ['parent dropped', key.replace(/^.*\S\s*[-–—]\s*(?=\S)/, '')],
+    ['"the" dropped, tag kept', plain(key).replace(/^the\s+/, '')],
   ];
   for (const [how, k] of tries) {
     const venue = named(k);

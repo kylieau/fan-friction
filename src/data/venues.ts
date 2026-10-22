@@ -1864,7 +1864,9 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Auto Club Raceway at Pomona' }, { name: 'In-N-Out Burger Pomona Dragstrip', from: '2023-03-30' }],
     // Approximate: OpenStreetMap has no point for the strip itself.
     location: [-117.771, 34.091],
-    ticketmasterIds: ['KovZpZAaEknA'],
+    // The seller listed the 2026 NHRA Finals under a second id for the current name (ZFr9jZddAa, 3.4 km from this point, so
+    // the id script's 1.5 km rule passed it over); found by the Oct 22, 2026 Los Angeles census check.
+    ticketmasterIds: ['KovZpZAaEknA', 'ZFr9jZddAa'],
     capacity: [{ seats: 40000, setup: 'racing', note: 'Reported' }],
     roof: 'open',
   },
@@ -2230,6 +2232,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Citizens Business Bank Arena' }, { name: 'Toyota Arena', from: '2019-07-01' }],
     // OpenStreetMap point for the arena (4000 E Ontario Center Parkway, Ontario), not an entrance.
     location: [-117.56632, 34.07302],
+    ticketmasterIds: ['KovZpZAkEFlA'],
     capacity: [
       { seats: 11089, setup: 'concert', note: 'Official (concert). Ontario, San Bernardino County. The 9,500 fixed seats are part of each layout, not added. Source: https://www.toyota-arena.com/news/detail/new-general-manager-announced-for-toyota-arena-in-ontario-california' },
       { seats: 10832, setup: 'basketball', note: 'Official (basketball). Same source.' },
@@ -2244,6 +2247,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'San Manuel Stadium' }],
     // OpenStreetMap point for the ballpark (280 S E Street, San Bernardino), not an entrance.
     location: [-117.29642, 34.09675],
+    ticketmasterIds: ['KovZpZAaalIA'],
     capacity: [{ seats: 8000, setup: 'baseball', note: 'Official, approximate (the current MiLB page: 8,000, seating and berm split unstated; concert setup unconfirmed). Source: https://www.milb.com/inland-empire/ballpark' }],
     roof: 'open',
     furtherOut: { driveMinutes: 83, how: 'routed', town: 'San Bernardino' },
@@ -2255,6 +2259,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Morongo Field' }],
     // OpenStreetMap point for the address (8408 Rochester Avenue, Rancho Cucamonga), not an entrance.
     location: [-117.54584, 34.1012],
+    ticketmasterIds: ['KovZ917AVxh'],
     capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, approximate (the current team page: roughly 6,000 seated; berm split and concert limit unconfirmed). Source: https://www.milb.com/rancho-cucamonga/ballpark' }],
     roof: 'open',
     furtherOut: { driveMinutes: 66, how: 'routed', town: 'Rancho Cucamonga' },
@@ -14508,6 +14513,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Rolland Stadium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-118.8792917, 34.2261954],
+    ticketmasterIds: ['KovZ917AOqU'],
     capacity: [{ seats: 2000, setup: 'football', note: 'Official (football). Cal Lutheran, Thousand Oaks. 2,000 fixed seats (the quick-facts page says 3,000 with portable bleachers); soccer too. Source: https://clusports.com/facilities/?id=1' }],
     roof: 'open',
   },
@@ -14517,6 +14523,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Anteater Stadium' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-117.8507666, 33.650222],
+    ticketmasterIds: ['Z7r9jZa7RI'],
     capacity: [{ seats: 2500, setup: 'soccer', note: 'Official (soccer). UC Irvine, Irvine. From the school\'s match preview; the facility page carries no figure. Source: https://ucirvinesports.com/news/2025/8/26/mens-soccer-uci-takes-on-cal-state-la-north-florida-in-anteater-stadium' }],
     roof: 'open',
   },
