@@ -6417,7 +6417,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-75.3784739, 39.8329094],
     ticketmasterIds: ['KovZ917ARyn', 'Za5ju3rKuqZB8erED2WAC6IRFxT87a8Tn'],
     capacity: [
-      { seats: 18500, setup: 'soccer', note: 'Official/reported. 18,500 soccer. Source: https://en.wikipedia.org/wiki/Subaru_Park' },
+      { seats: 18500, setup: 'soccer', note: 'Official (the Union\'s stadium page; small rooms answer 5, Oct 22, 2026). Source: https://www.philadelphiaunion.com/stadium/about' },
       { seats: 26000, setup: 'concert', note: 'Reported. Field standing included; not seated capacity. Source: https://phillyvoice.com/subaru-park-chester-union-speakeasy-club-seating-expansion' },
     ],
     roof: 'open',
@@ -10933,8 +10933,11 @@ export const VENUES: Record<string, Venue> = {
     ],
     location: [-76.864533, 38.9076694],
     ticketmasterIds: ['KovZpZAJ6kEA'],
-    // Round-2 rule: conflicting figures (64,000 / 62,000 / 65,000), none official; blank (BACKLOG).
-    capacity: [],
+    // Blank until Oct 22, 2026 (conflicting figures, none official); from 2025 only, so earlier years keep the blank-room read. Kylie, Oct 22, 2026 ("ok go ahead"): fill the reported
+    // figure from small rooms answer 5, which a dated seat addition explains and the team's own crowds match (median 64,244).
+    capacity: [
+      { seats: 64000, setup: 'football', fromYear: 2025, note: 'Reported, approximate: a net 1,500 seats added in 2025 brought football to about 64,000 (Sports Business Journal, Sep 8, 2025). Ticketmaster\'s 2026 guide still says 62,000 and StadiumDB 63,000, neither dated. Concert setup unconfirmed. Source: https://www.sportsbusinessjournal.com/Articles/2025/09/08/commanders-seeing-growth-in-corporate-sponsorship-ticket-sales/' },
+    ],
     roof: 'open',
   },
   'secu-stadium': {
@@ -11031,6 +11034,20 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'covered',
   },
+  // Kylie, Oct 22, 2026 ("ok go ahead"), from small rooms answer 5: a 5,000+ room the city build missed.
+  'dc-armory': {
+    id: 'dc-armory',
+    metroId: 'washington-dc',
+    names: [{ name: 'DC Armory' }],
+    aliases: ['D.C. Armory'],
+    // Center of the building outline (OpenStreetMap way 298594982), not an entrance.
+    location: [-76.97552, 38.88847],
+    ticketmasterIds: ['KovZpa4Dpe'],
+    capacity: [
+      { seats: 10000, note: 'Official (Events DC), sports and theater setups; a formal cabaret layout is 4,500. Event-by-event sellable and standing figures unconfirmed. Stadium–Armory, Washington, DC; RFK Stadium next door is demolished and a separate record. Source: https://eventsdc.com/sites/default/files/2020-11/Events%20DC%20Brand%20Brochure.pdf' },
+    ],
+    roof: 'indoor',
+  },
   'umd-xfinity-center': {
     id: 'umd-xfinity-center',
     metroId: 'washington-dc',
@@ -11038,7 +11055,9 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Comcast Center' }, { name: 'Xfinity Center', from: '2014-07-28' }],
     location: [-76.9413362, 38.9956239],
     capacity: [
-      { seats: 17950, setup: 'basketball', note: 'Reported. Pavilion (~1,500) is a separate room. Source: venue table A1.' },
+      { seats: 17950, setup: 'basketball', note: 'Reported, before the arena improvements. Pavilion (~1,500) is a separate room. Source: venue table A1.' },
+      // Kylie, Oct 22, 2026 ("ok go ahead"), from small rooms answer 5.
+      { seats: 17300, setup: 'basketball', fromYear: 2025, note: 'Official (the university\'s facility page); the 2025–26 record book marks the lower count as following arena improvements. The first game at 17,300 is unconfirmed; 2025 is the earliest season the sources show. Source: https://umterps.com/facilities/xfinity-center/8' },
     ],
     roof: 'indoor',
   },
@@ -11258,7 +11277,8 @@ export const VENUES: Record<string, Venue> = {
   'taag-park': {
     id: 'taag-park',
     metroId: 'ottawa-gatineau',
-    names: [{ name: 'TAAG Park' }, { name: 'MNP Park' }, { name: "Ravens' Perch" }],
+    // MNP Park from Aug 26, 2015 (Carleton newsroom), Ravens' Perch 2020–22 (year only, day unconfirmed), TAAG Park since August 2022 (checked Oct 22, 2026; the order had shown Ravens' Perch).
+    names: [{ name: 'MNP Park', from: '2015-08-26' }, { name: "Ravens' Perch", from: '2020-01-01' }, { name: 'TAAG Park', from: '2022-08-01' }],
     location: [-75.6950041, 45.3858581],
     capacity: [{ seats: 3500, setup: 'football', note: 'Reported: 3,044 seats plus about 500 on the Perch hill. One 2016 crowd reported at 5,000 is unverified. Source: venue table A9.' }],
     roof: 'open',
@@ -11379,8 +11399,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'st-louis',
     carShare: 0.85,
     names: [
-      { name: 'Scottrade Center' },
       { name: 'Kiel Center' },
+      { name: 'Scottrade Center' },
       { name: 'Enterprise Center', from: '2018-07-01' },
     ],
     location: [-90.20262, 38.626801],
@@ -11399,10 +11419,10 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Riverport Amphitheatre' },
       { name: 'UMB Bank Pavilion' },
       { name: 'Verizon Wireless Amphitheater' },
+      // The -er spelling some sellers use carries the same date, so it never shows before 2014 and the -re spelling wins.
+      { name: 'Hollywood Casino Amphitheater', from: '2014-01-01' },
       { name: 'Hollywood Casino Amphitheatre', from: '2014-01-01' },
     ],
-    // The -er spelling some sellers use; matched, never shown (it sat last, undated, and showed on every date).
-    aliases: ['Hollywood Casino Amphitheater'],
     location: [-90.470094, 38.74481],
     ticketmasterIds: ['KovZpZAEAnaA'],
     // STL2 with the IND4 lawn rule (Kylie, Oct 14, 2026): the total with lawn, estimated. 6,805 pavilion / 19,000 standing also reported (The Vendry).
@@ -12058,7 +12078,8 @@ export const VENUES: Record<string, Venue> = {
   'thompson-family-arena': {
     id: 'thompson-family-arena',
     metroId: 'edmonton',
-    names: [{ name: 'Thompson Family Arena at Heavy Metal Place' }, { name: 'Heavy Metal Place' }],
+    // Heavy Metal Place is the Spruce Grove complex; this room is its Thompson Family Arena, so it goes last (checked Oct 22, 2026).
+    names: [{ name: 'Heavy Metal Place' }, { name: 'Thompson Family Arena at Heavy Metal Place' }],
     location: [-113.8780428, 53.5682568],
     capacity: [
       {
@@ -12164,7 +12185,9 @@ export const VENUES: Record<string, Venue> = {
     id: 'wolstein-center',
     metroId: 'cleveland',
     carShare: 0.88,
-    names: [{ name: 'Wolstein Center' }, { name: 'Goodman Arena' }],
+    // The arena inside is Henry J. Goodman Arena; sellers and the school say Wolstein Center, so it goes last (checked Oct 22, 2026).
+    // Both stay in names, not aliases: stubs and favorites look a room up by its names.
+    names: [{ name: 'Goodman Arena' }, { name: 'Wolstein Center' }],
     location: [-81.6766496, 41.4992338],
     ticketmasterIds: ['KovZpZAFdEEA'],
     capacity: [
@@ -12228,7 +12251,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'jacobs-pavilion',
     metroId: 'cleveland',
     carShare: 0.9,
-    names: [{ name: 'Jacobs Pavilion at Nautica' }, { name: 'Nautica Pavilion' }],
+    // Nautica Pavilion 2009–11, Jacobs Pavilion at Nautica since March 2011 (checked Oct 22, 2026; the order had shown the old name).
+    names: [{ name: 'Nautica Pavilion' }, { name: 'Jacobs Pavilion at Nautica', from: '2011-03-01' }],
     location: [-81.7030703, 41.4963115],
     ticketmasterIds: ['KovZpZAEAtkA'],
     capacity: [
@@ -12270,7 +12294,8 @@ export const VENUES: Record<string, Venue> = {
   'severance-mandel-hall': {
     id: 'severance-mandel-hall',
     metroId: 'cleveland',
-    names: [{ name: 'Severance Music Center — Mandel Concert Hall' }, { name: 'Severance Hall' }],
+    // Renamed with the Mandel Foundation gift announced Sept 30, 2021; effective day unconfirmed, so undated (checked Oct 22, 2026).
+    names: [{ name: 'Severance Hall' }, { name: 'Severance Music Center — Mandel Concert Hall' }],
     location: [-81.6093686, 41.5063871],
     ticketmasterIds: ['KovZpZA1EnEA'],
     capacity: [{ seats: 2000, setup: 'concert', note: 'Official (Cleveland Orchestra). 1,960 also listed. Source: https://www.clevelandorchestra.com/visit/venue-and-event-rentals/bookable-event-spaces' }],
