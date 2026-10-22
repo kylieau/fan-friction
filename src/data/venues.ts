@@ -126,6 +126,8 @@ export const VENUES: Record<string, Venue> = {
         name: 'UW-Milwaukee Panther Arena'
       }
     ],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['UWM Panther Arena'],
     location: [
       -87.91695,
       43.04229
@@ -6563,6 +6565,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'hagan-arena',
     metroId: 'philadelphia',
     names: [{ name: 'Hagan Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Michael J. Hagan \'85 Arena'],
     location: [-75.234862, 39.9956149],
     ticketmasterIds: ['KovZpZAenaAA'],
     capacity: [{ seats: 4200, setup: 'basketball', note: 'Reported. Below the 5,000 friction line. Source: https://wikipedia.com/wiki/Hagan_Arena' }],
@@ -11519,6 +11523,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Vadalabene Center' },
       { name: 'First Community Arena at the Vadalabene Center' },
     ],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['First Community Arena'],
     // OSM miss; campus centroid from reference coordinates.
     location: [-89.99722, 38.79083],
     capacity: [
@@ -11563,6 +11569,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'hyland-performance-arena',
     metroId: 'st-louis',
     names: [{ name: 'Robert F. Hyland Performance Arena' }, { name: 'Hyland Performance Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Robert F. Hyland Arena'],
     location: [-90.50352, 38.78912],
     capacity: [
       {
@@ -12611,6 +12619,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'mcdermott-convocation-center',
     metroId: 'san-antonio',
     names: [{ name: 'McDermott Convocation Center' }, { name: 'Alice P. McDermott Convocation Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['McDermott Center'],
     location: [-98.4655092, 29.4623935],
     capacity: [
       {

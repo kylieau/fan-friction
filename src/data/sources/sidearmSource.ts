@@ -81,14 +81,29 @@ function sportOf(summary: string): string {
   return 'other';
 }
 
+/**
+ * The program as the app writes it: "MEN'S BASKETBALL" → "Men's Basketball", "Basketball (M)" → "Men's Basketball",
+ * "#4 Ice Hockey" → "Ice Hockey", and a side the feed's prefix carries ("Pandas" → "Women's Volleyball"). Never a
+ * guessed side: a bare "Volleyball" stays bare.
+ */
+function programWords(raw: string, side?: 'men' | 'women'): string {
+  let p = raw.replace(/^#\d+\s+/, '').replace(/\s+/g, ' ').trim();
+  const tagged = p.match(/^(.*?)\s*\((M|W)\)$/i);
+  if (tagged) p = `${tagged[2].toUpperCase() === 'M' ? "Men's" : "Women's"} ${tagged[1]}`;
+  if (p === p.toUpperCase()) p = p.toLowerCase().replace(/(^|[\s'/-])([a-z])/g, (_, b, c) => `${b}${c.toUpperCase()}`).replace(/'S\b/g, "'s");
+  if (side && !/\b(?:men|women)'s\b/i.test(p)) p = `${side === 'women' ? "Women's" : "Men's"} ${p}`;
+  return p;
+}
+
 /** "[L] USC Trojans Men's Basketball vs North Carolina (Exhibition)" → its parts. */
 function readSummary(summary: string, school: SidearmSchool) {
   const name = summary.replace(/^\[[A-Z]\]\s*/, '').replace(/\s+/g, ' ').trim();
-  const prefix = school.school.find((s) => name.toLowerCase().startsWith(s.toLowerCase()));
+  // The longest prefix first, so "University of Alberta Pandas" wins over "University of Alberta".
+  const prefix = [...school.school].sort((a, b) => b.length - a.length).find((s) => name.toLowerCase().startsWith(s.toLowerCase()));
   const rest = prefix ? name.slice(prefix.length).trim() : name;
   const m = rest.match(/^(.*?)\s+(vs\.?|at)\s+(.+)$/i);
   if (!m) return null;
-  const program = m[1].trim(); // "Men's Basketball"
+  const program = programWords(m[1], prefix ? school.sides?.[prefix] : undefined); // "Men's Basketball"
   const home = /^vs/i.test(m[2]);
   let opponent = m[3].trim();
   // A trailing note ("- B1G Premiere", "- Exhibition", "(Exhibition)", "- Home") is kept apart from the opponent.
@@ -98,11 +113,33 @@ function readSummary(summary: string, school: SidearmSchool) {
   return { program, home, opponent, exhibition };
 }
 
-/** The room in "Los Angeles, Calif., Galen Center" or "Los Angeles, CA, Pauley Pavilion"; none for "TBD" or a bare city. */
-function roomOf(location: string): string | null {
+/**
+ * The room in "Los Angeles, Calif., Galen Center" or "Los Angeles, CA, Pauley Pavilion", as the names to try in order;
+ * none for "TBD" or a bare city. The feeds vary (Oct 22, 2026, every covered city): "Chestnut, Hill, Mass., Conte
+ * Forum" (a comma too many), ", Conte Forum" (no city), "Chaifetz Arena (Basketball)", "Toronto, Ont. (Mattamy
+ * Athletic Centre)", "Molson Stadium (Montreal, Que)", "United Airlines Field at L.A. Memorial Coliseum". Each name
+ * must still equal one on file in this city, so a state or a city never places a game.
+ */
+function roomCandidates(location: string): string[] {
+  const out: string[] = [];
+  const add = (name: string | undefined) => {
+    const n = name?.replace(/\s+/g, ' ').trim();
+    if (n && !/^tbd$/i.test(n) && !out.includes(n)) out.push(n);
+  };
+  const paren = location.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+  if (paren && /,/.test(paren[2]) && !/,/.test(paren[1])) add(paren[1]); // "Molson Stadium (Montreal, Que)"
+  else if (paren && /,/.test(paren[1]) && !/,/.test(paren[2])) add(paren[2]); // "Toronto, Ont. (Mattamy Athletic Centre)"
   const parts = location.split(/,\s*/).map((p) => p.trim()).filter(Boolean);
-  if (parts.length < 3) return null;
-  return parts.slice(2).join(', ');
+  if (parts.length >= 3) add(parts.slice(2).join(', '));
+  // The last part alone when it reads as a room (two words or more): "Mass., Conte Forum", ", Conte Forum".
+  const last = parts[parts.length - 1];
+  if (last && /\s/.test(last)) add(last);
+  for (const room of [...out]) {
+    add(room.replace(/\s*\([^)]*\)\s*$/, '')); // "Chaifetz Arena (Basketball)"
+    add(room.replace(/^.*\s+at\s+(the\s+)?/i, '')); // the building after "at"
+    add(room.replace(/\s+at\s+.*$/i, '')); // the field before it
+  }
+  return out;
 }
 
 /** Our team record for a school's program, when one exists ("USC Trojans Men's Basketball" → usc-mbb). */
@@ -130,10 +167,7 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
     if (!when || (fromDate && when.date < fromDate)) continue;
     const read = readSummary(v.summary, school);
     if (!read) continue;
-    const room = roomOf(v.location);
-    if (!room) continue;
-    // "United Airlines Field at L.A. Memorial Coliseum": the whole name, then the building after "at", then the field before it.
-    const venue = [room, room.replace(/^.*\s+at\s+(the\s+)?/i, ''), room.replace(/\s+at\s+.*$/i, '')]
+    const venue = roomCandidates(v.location)
       .map((name) => venueByNameOrPlace(school.metroId, name, undefined, undefined, when.date))
       .find(Boolean);
     if (!venue || venueClosedOn(venue, when.date)) continue;

@@ -12,7 +12,7 @@ function metersBetween([lng1, lat1]: readonly [number, number] | number[], [lng2
   return Math.sqrt(x * x + y * y) * 6_371_000;
 }
 
-/** A name with the differences sellers don't mean dropped: case, dashes, curly quotes, "Theatre" for "Theater". */
+/** A name with the differences sellers don't mean dropped: case, dashes, curly quotes, "Theatre" for "Theater", "Gym" for "Gymnasium". */
 function plain(name: string): string {
   return name
     .toLowerCase()
@@ -20,6 +20,7 @@ function plain(name: string): string {
     .replace(/[-–—]/g, ' ')
     .replace(/\b(amphi)?theatre\b/g, '$1theater')
     .replace(/\bcentre\b/g, 'center')
+    .replace(/\bgym\b/g, 'gymnasium')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -48,7 +49,12 @@ export function venueByNameOrPlace(metroId: string, name: string, lat?: number, 
   const named = (k: string) => {
     const hits = ours.flatMap((venue) => venue.names.filter((n) => plain(n.name) === plain(k)).map((n) => ({ venue, from: n.from ?? '' })));
     const inUse = date ? hits.filter((h) => h.from <= date).sort((x, y) => y.from.localeCompare(x.from)) : [];
-    return (inUse[0] ?? hits[0])?.venue;
+    const byName = (inUse[0] ?? hits[0])?.venue;
+    if (byName) return byName;
+    // A spelling a seller or a school feed uses (`aliases`, Oct 22, 2026): matched like a name, never shown.
+    const byAlias = ours.find((venue) => venue.aliases?.some((a) => plain(a) === plain(k)));
+    if (byAlias) noteLoose(name, byAlias.id, 'alias');
+    return byAlias;
   };
   // Sellers tag a room with its city, state or parent building ("Peacock Theater - LA", "Greek Theatre-Los Angeles",
   // "Knight Concert Hall-Adrienne Arsht PAC", "Amaturo Theater at Broward Center", "Royale Boston"): retry without a

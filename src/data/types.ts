@@ -57,6 +57,11 @@ export interface Venue {
   /** Ticketmaster's ids for this building, when known; a listing matches by id before by name. */
   ticketmasterIds?: string[];
   /**
+   * Other spellings sellers and school feeds use for this room ("UWM Panther Arena", "Michael J. Hagan '85 Arena"),
+   * matched like a name but never shown and never a rename (Oct 22, 2026). A rename goes in `names` with its date.
+   */
+  aliases?: string[];
+  /**
    * A room that is closed (Kylie, Oct 16, 2026): a seller listing dated from `from` (or any date, when absent) up to
    * `until` (or forever) is dropped at the nightly run. Past dates still resolve, and a hand-added entry can still name
    * the room. A reopening sets `until`; a demolition leaves it off. The note carries the source.
