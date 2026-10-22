@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { quickAddDefaults, saveQuickAdd, type Favorite, type QuickAddDefaults } from '../data';
-import { entryPath } from '../lib/view';
+import { getCityDate, quickAddDefaults, saveQuickAdd, type Favorite, type QuickAddDefaults } from '../data';
+import { entryPath, eventPath } from '../lib/view';
 
 /** The Where and Opponent lists' last choice: something the app doesn't have on file. */
 const OTHER = '__other__';
@@ -50,9 +50,11 @@ export function QuickAddSheet({ target, homeId, genreWord, artistListed, playedR
   const save = async () => {
     if (!defaults || !ready || busy) return;
     setBusy(true);
-    const result = await saveQuickAdd({ target, defaults, opponent: game ? opponentName : undefined, date, start: start || undefined, venue: venueName }, homeId);
+    const result = await saveQuickAdd({ target, defaults, opponent: game ? opponentName : undefined, date, start: start || undefined, venue: venueName }, homeId, getCityDate);
     onClose();
-    navigate(result.plan ? '/stubs' : entryPath(result.id), { replace: true });
+    // Already listed: the plan went on that event, so land there. Otherwise Stubs (a plan) or the new entry's page.
+    if (result.matchedEventId && result.matchedMetroId && result.plan) navigate(eventPath(result.matchedEventId, result.matchedMetroId), { replace: true });
+    else navigate(result.plan ? '/stubs' : entryPath(result.id), { replace: true });
   };
 
   return (

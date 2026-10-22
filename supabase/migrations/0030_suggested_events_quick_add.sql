@@ -11,4 +11,6 @@ alter table public.suggested_events
   add column if not exists sport text,
   add column if not exists level text,
   -- 'form' for Add it yourself, 'quick-add' for the card.
-  add column if not exists source text not null default 'form';
+  add column if not exists source text not null default 'form',
+  -- The plausibility gate's findings, for the reviewer: {season: in|out|unknown, opponent: known|free-text|none, room: on-file|free-text}.
+  add column if not exists checks jsonb;

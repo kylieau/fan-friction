@@ -9,11 +9,11 @@
 
 import { getAccount } from './account';
 import { competitionNamed } from './competitions';
-import { addManualEntry, addManualPlan, markPlanSuggested, markSuggested, type ManualNight } from './personalLog';
+import { addManualEntry, addManualPlan, markPlanSuggested, markSuggested, togglePlan, type ManualNight } from './personalLog';
 import { supabase } from './storage/supabaseClient';
 import { getTeamSchedule } from './teamSchedule';
 import { TEAMS, isCollegeTeam, teamLongName } from './teams';
-import type { Division, Favorite, LocalDate, LocalTime, SportsLevel } from './types';
+import type { CrowdEvent, Division, Favorite, LocalDate, LocalTime, SportsLevel } from './types';
 import { VENUES, venueNameOn } from './venues';
 import { METROS, DEFAULT_METRO, type Metro } from '../config/metros';
 
@@ -36,6 +36,15 @@ export interface QuickAddDefaults {
   rooms: string[];
   /** Whether the team or artist is on file (a team record; an artist with listings or a record). */
   onFile: boolean;
+  /** The schedule's span, padded a month each way, for the season check; absent when no schedule is on file. */
+  season?: { from: LocalDate; to: LocalDate };
+}
+
+/** What the plausibility gate found, kept on the review row so a reviewer sees it at a glance. */
+export interface QuickAddChecks {
+  season: 'in' | 'out' | 'unknown';
+  opponent: 'known' | 'free-text' | 'none';
+  room: 'on-file' | 'free-text';
 }
 
 export interface QuickAddInput {
@@ -54,8 +63,15 @@ export interface QuickAddResult {
   /** Sent for review: the standard was met and the person is signed in. */
   submitted: boolean;
   /** Why it was not sent, in a word for the log. */
-  heldBecause?: 'no-record' | 'no-room' | 'no-time' | 'signed-out' | 'no-connection';
+  heldBecause?: 'no-record' | 'no-room' | 'no-time' | 'signed-out' | 'no-connection' | 'listed';
+  /** The catalog already lists it (the instant check): the plan went on that event instead. */
+  matchedEventId?: string;
+  matchedMetroId?: string;
+  checks?: QuickAddChecks;
 }
+
+/** What the instant check reads: the city's date as the app sees it (last night's feeds). */
+export type LoadDate = (metroId: string, date: LocalDate) => Promise<{ events: CrowdEvent[]; furtherOut?: CrowdEvent[] }>;
 
 const cap = (s: string) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
@@ -93,6 +109,9 @@ export async function quickAddDefaults(target: Favorite, homeId: string | null, 
     const ahead = schedule.filter((g) => g.date >= today).sort((a, b) => a.date.localeCompare(b.date));
     const played = schedule.filter((g) => g.date < today).sort((a, b) => b.date.localeCompare(a.date));
     const opponents = [...new Set([...ahead, ...played].map((g) => g.opponent).filter(Boolean))];
+    const dates = schedule.map((g) => g.date).sort();
+    const pad = (d: LocalDate, days: number) => new Date(new Date(`${d}T12:00:00Z`).getTime() + days * 86_400_000).toISOString().slice(0, 10);
+    const season = dates.length ? { from: pad(dates[0], -30), to: pad(dates[dates.length - 1], 30) } : undefined;
     // The home room: the one the schedule's home games name most often, by its name today.
     const counts = new Map<string, number>();
     for (const g of schedule) if (g.home && g.venueName) counts.set(g.venueName, (counts.get(g.venueName) ?? 0) + 1);
@@ -110,6 +129,7 @@ export async function quickAddDefaults(target: Favorite, homeId: string | null, 
       opponents,
       rooms: roomsIn(team.metroId ?? metroId, today, homeRoom ? [venueNameOn(homeRoom, today)] : []),
       onFile: true,
+      ...(season ? { season } : {}),
     };
   }
   return {
@@ -123,7 +143,7 @@ export async function quickAddDefaults(target: Favorite, homeId: string | null, 
 }
 
 /** Save the card: a plan or an entry in the person's log, and the review row when the standard is met. */
-export async function saveQuickAdd(input: QuickAddInput, homeId: string | null): Promise<QuickAddResult> {
+export async function saveQuickAdd(input: QuickAddInput, homeId: string | null, loadDate?: LoadDate): Promise<QuickAddResult> {
   const { target, defaults } = input;
   const metroId = homeId ?? DEFAULT_METRO.id;
   const today = todayIn(METROS[metroId] ?? DEFAULT_METRO);
@@ -132,6 +152,28 @@ export async function saveQuickAdd(input: QuickAddInput, homeId: string | null):
   const room = roomNamed(roomMetro, input.venue, input.date);
   const opponent = input.opponent?.trim() || undefined;
   const title = defaults.kind === 'game' ? (opponent ? `${defaults.title} vs. ${opponent}` : defaults.title) : defaults.title;
+
+  // The instant check (Kylie, Oct 21, 2026, late evening): if the catalog already lists it at this room on this
+  // date (the same sport within three hours for a game, the same act for a show), the plan goes on that event and
+  // nothing is sent for review. Reads the catalog as the app sees it; the nightly job matches what lands later.
+  if (room && loadDate) {
+    const listed = await listedMatch(loadDate, room.metroId, input.date, room.id, defaults, target.label, input.start).catch(() => undefined);
+    if (listed) {
+      const ahead = input.date >= today;
+      if (ahead) togglePlan(listed, 'attend');
+      else {
+        const entry = addManualEntry({ title, kind: defaults.kind, when: { sort: input.date, label: '', precision: 'day' }, venue: venueNameOn(room, input.date), metroId: room.metroId, ...(input.start ? { start: input.start } : {}), tags: team ? [team.shortName] : ['Concerts'], sides: team ? [team.name, ...(opponent ? [opponent] : [])] : [target.label] }, homeId);
+        return { id: entry.id, plan: false, submitted: false, heldBecause: 'listed', matchedEventId: listed.id, matchedMetroId: listed.metroId };
+      }
+      return { id: `plan-${listed.id}`, plan: true, submitted: false, heldBecause: 'listed', matchedEventId: listed.id, matchedMetroId: listed.metroId };
+    }
+  }
+  // The plausibility gate: recorded for the reviewer, never a block (a real opponent can be one the schedule hasn't named).
+  const checks: QuickAddChecks = {
+    season: defaults.season ? (input.date >= defaults.season.from && input.date <= defaults.season.to ? 'in' : 'out') : 'unknown',
+    opponent: defaults.kind !== 'game' ? 'none' : opponent && (defaults.opponents.includes(opponent) || Object.values(TEAMS).some((t) => [t.name, t.shortName, ...(t.aliases ?? [])].some((n) => n.toLowerCase() === opponent.toLowerCase()))) ? 'known' : 'free-text',
+    room: room ? 'on-file' : 'free-text',
+  };
   const night: ManualNight = {
     title,
     kind: defaults.kind,
@@ -146,7 +188,7 @@ export async function saveQuickAdd(input: QuickAddInput, homeId: string | null):
   };
   const ahead = input.date >= today;
   const saved = ahead ? addManualPlan(night, homeId) : addManualEntry(night, homeId);
-  const result: QuickAddResult = { id: saved.id, plan: ahead, submitted: false };
+  const result: QuickAddResult = { id: saved.id, plan: ahead, submitted: false, checks };
   if (!defaults.onFile) return { ...result, heldBecause: 'no-record' };
   if (!room) return { ...result, heldBecause: 'no-room' };
   if (!input.start) return { ...result, heldBecause: 'no-time' };
@@ -178,10 +220,32 @@ export async function saveQuickAdd(input: QuickAddInput, homeId: string | null):
       sport: defaults.sport ?? null,
       level: defaults.level ?? null,
       source: 'quick-add',
+      checks,
     })
     .eq('id', id)
     .then(() => undefined, () => undefined);
   if (ahead) markPlanSuggested(saved.id, id);
   else markSuggested(saved.id, id);
   return { ...result, submitted: true };
+}
+
+const minutes = (t: string | null | undefined) => (t ? Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5)) : null);
+const plain = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+/** The listed event at this room on this date that is the same game or show, if any. */
+async function listedMatch(loadDate: LoadDate, metroId: string, date: LocalDate, venueId: string, defaults: QuickAddDefaults, label: string, start?: LocalTime): Promise<CrowdEvent | undefined> {
+  const day = await loadDate(metroId, date);
+  const atRoom = [...day.events, ...(day.furtherOut ?? [])].filter((e) => e.place.type === 'venue' && e.place.venueId === venueId);
+  if (defaults.kind === 'game') {
+    const sport = (defaults.sport ?? '').toLowerCase();
+    return atRoom.find((e) => {
+      if (e.kind !== 'game' || e.audience.domain !== 'sports') return false;
+      if (sport && e.audience.sport !== sport && e.audience.sport !== 'other') return false;
+      const ma = minutes(start);
+      const mb = minutes(e.start);
+      return ma == null || mb == null || Math.abs(ma - mb) <= 180;
+    });
+  }
+  const who = plain(label);
+  return atRoom.find((e) => e.kind !== 'game' && [e.performer, e.title, e.officialTitle].some((n) => n && (plain(n) === who || plain(n).includes(who))));
 }

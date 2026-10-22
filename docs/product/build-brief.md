@@ -68,6 +68,7 @@ Kylie wants this free until paying is unavoidable. Each of these is a milestone 
 | M1 | Nothing. Vercel free, Supabase free, OpenFreeMap, MLB feed, Ticketmaster key are all free | $0 |
 | M1, if Supabase fills up | Supabase free plan allows 2 active projects per account (Kylie already uses one) and pauses a project after about a week with no use. A third project, or no pausing, means Supabase Pro. Kylie's plan: switch to Firebase or another free option instead of paying | $25/month (or $0 by switching) |
 | JamBase Developer plan (Oct 21, 2026) | Declined the same evening (Kylie: no signups; a priced plan with overage billing is not a plain API key). The adapter is built and inert. | none |
+| Verifying a fan-added event by web search (Oct 21, 2026; the route not taken) | A search API (or a model reading results) to check that a submitted event exists where no feed we read carries it. A paid service with its own terms, and a hit would still need a person to look, since the pages it finds (AXS, a school's site) are ones the app may not read as data. Kylie, Oct 21: a fair limitation; noted here so it can be revisited if the review queue gets big. | 🚩 per-query pricing; not priced |
 | Custom web address (any time) | A domain like fanfriction.app instead of fan-friction.vercel.app | ~$10–20/year |
 | Native iPhone app | Apple Developer Program | $99/year |
 | Native Android app | Google Play developer account | $25 once |
