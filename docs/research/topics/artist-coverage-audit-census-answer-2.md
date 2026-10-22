@@ -1,5 +1,7 @@
 # Artist Coverage Audit — Answer 4: Los Angeles room-first census (new rooms 51–116)
 
+Status: closed, docs/checks/artist-coverage-la-census-2026-10-22.md and docs/product/product-decisions.md (the six questions and matinees), Oct 22, 2026
+
 Status: saved Oct 22, 2026, not folded in. Rooms 51–116, the end of the list; rooms 1–50 are in `artist-coverage-audit-census-answer.md` (delivered as "Answer 3"). The census list is finished; open work is its Remaining rooms ledger.
 
 ## Overview — delivery Answer 4

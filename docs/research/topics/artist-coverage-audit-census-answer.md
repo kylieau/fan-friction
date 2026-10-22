@@ -2,6 +2,8 @@
 
 # Artist Coverage Audit — Answer 3: Los Angeles room-first census (rooms 1–50)
 
+Status: closed, docs/checks/artist-coverage-la-census-2026-10-22.md and docs/product/product-decisions.md (the six questions and matinees), Oct 22, 2026
+
 **Window: October 26–November 22, 2026, inclusive.** Local time is America/Los_Angeles, shown in 24-hour format. October 26–31 is PDT; November 1–22 is PST. Room capacities are **reported figures from the supplied inventory**, used only to preserve its descending order.
 
 **Incomplete. This installment stops after room 50, Titan Gym (reported 4,000). Next: room 51, Fantasy Springs Resort Casino (reported 3,700).** Rooms 1–20 and their summary rows are preserved exactly as previously delivered. Rooms 21–50 are appended below; rooms 51–116 remain pending. Earlier partial/unread rooms remain open, not empty. The 116-room capacity order is unchanged.

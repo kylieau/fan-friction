@@ -47,6 +47,8 @@ Written Oct 22, 2026 (evening) by Claude Code (Opus 5.5, with Fable as advisor).
 
 ## Proposal (multiple choice; the builder's lean is marked)
 
+**Answered Oct 22, 2026 (afternoon) and built; see the last entry in `docs/product/product-decisions.md`:** 1 (a), 2 (a), 3 kept as is after a second look, 4 (a), 5 (a), 6 (a), and matinees split into separate events.
+
 1. **The Coachella Valley rooms and Acrisure Arena.**
    - **(a) Lean:** fix Acrisure (its Ticketmaster id and the arena's point) and make the six Coachella Valley rooms further out. They would be listed with their drive and never count toward a Los Angeles verdict. That is about 2½ hours, so "about a 2-hour drive" stretches for this one band of rooms, or the helper line changes. The college tournament's starts (11:00, 13:30, 18:30, 20:00, 21:00) are more than two hours from the school feed's 16:00 Cal Baptist games, so the one-game rule drops none of them.
    - (b) Fix Acrisure and keep the valley in the Los Angeles verdict, as today.
