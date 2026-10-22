@@ -48,7 +48,7 @@ Written Oct 22, 2026 (evening) by Claude Code (Opus 5.5, with Fable as advisor).
 ## Proposal (multiple choice; the builder's lean is marked)
 
 1. **The Coachella Valley rooms and Acrisure Arena.**
-   - **(a) Lean:** fix Acrisure (its Ticketmaster id and the arena's point) and make the six Coachella Valley rooms further out. They would be listed with their drive and never count toward a Los Angeles verdict. That is about 2½ hours, so "about a 2-hour drive" stretches for this one band of rooms, or the helper line changes.
+   - **(a) Lean:** fix Acrisure (its Ticketmaster id and the arena's point) and make the six Coachella Valley rooms further out. They would be listed with their drive and never count toward a Los Angeles verdict. That is about 2½ hours, so "about a 2-hour drive" stretches for this one band of rooms, or the helper line changes. The college tournament's starts (11:00, 13:30, 18:30, 20:00, 21:00) are more than two hours from the school feed's 16:00 Cal Baptist games, so the one-game rule drops none of them.
    - (b) Fix Acrisure and keep the valley in the Los Angeles verdict, as today.
    - (c) Fix Acrisure's point and id only, and leave the valley question for later. Acrisure then starts counting toward Los Angeles dates from the next nightly run.
 2. **Box-office rooms (82 rows, 69 under 5,000).**
