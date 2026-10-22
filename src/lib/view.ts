@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
-import { todayIn } from '../data';
+import { isFurtherOut, isFurtherOutRoom, todayIn, type CrowdEvent } from '../data';
 import { isValidDate, shortLocalDate } from './dates';
 import { getHomeId, subscribeHome } from './homeCity';
 import { getPref, setPref } from './prefs';
@@ -107,6 +107,21 @@ export function datePath(date: string, metroId: string, eventId?: string): strin
   if (eventId) params.set('event', eventId);
   const q = params.toString();
   return `/date/${date}${q ? `?${q}` : ''}`;
+}
+
+/**
+ * Where a row that names an event opens (Kylie, Oct 21, 2026, option A in docs/product/further-out-proposal.md):
+ * its date page, unless the event is further out, when it opens the event page. The city's date page never counted
+ * a further-out event and buries it under the lineup; the event page names the town and says "Further out".
+ * Every row on Home, a favorite's page and More dates goes through this, so the rule holds in every city.
+ */
+export function eventRowPath(event: CrowdEvent): string {
+  return isFurtherOut(event) ? eventPath(event.id, event.metroId) : datePath(event.date, event.metroId, event.id);
+}
+
+/** The same rule for a stub, plan or game row, which keeps only its city and the room's name. */
+export function loggedRowPath(row: { date: string; metroId: string; eventId?: string; venue?: string }): string {
+  return row.eventId && isFurtherOutRoom(row.metroId, row.venue) ? eventPath(row.eventId, row.metroId) : datePath(row.date, row.metroId, row.eventId);
 }
 
 /** The calendar view of Explore, opened on the month of a date. */

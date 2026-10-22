@@ -37,7 +37,7 @@ import { crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { datePath, mapPath } from '../lib/view';
+import { eventRowPath, loggedRowPath, mapPath } from '../lib/view';
 import { FeedRow } from './FollowingScreen';
 import { TitleText } from '../components/TitleText';
 
@@ -194,7 +194,7 @@ export function HomeScreen() {
           <ul className="log-list tonight-list">
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
-                <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link" aria-label={spokenRow(e, venueOf(e) ?? null)}>
+                <Link to={eventRowPath(e)} className="log-row tl-row-link" aria-label={spokenRow(e, venueOf(e) ?? null)}>
                   <RowBody event={e} day={day.events} title={listTitle(e)} time={e.start ? clockTime(e.start) : 'TBA'} venueText={venueOf(e) ?? null} />
                 </Link>
               </li>
@@ -226,7 +226,7 @@ export function HomeScreen() {
           <ul className="log-list">
             {comingUp.map((row) => (
               <li key={row.key}>
-                <Link to={datePath(row.date, row.metroId, row.eventId)} className="log-row">
+                <Link to={loggedRowPath(row)} className="log-row">
                   {/* A further-out event shows no verdict (Kylie, Oct 20, 2026). */}
                   <ReadTile rating={isFurtherOutRoom(row.metroId, row.venue) ? null : (ratings.get(nightKey(row.metroId, row.date)) ?? null)} />
                   <span className="log-main">
@@ -278,7 +278,7 @@ export function HomeScreen() {
           <ul className="fav-strip">
             {favoritesWeek.map(({ fav, next }) => (
               <li key={favoriteKey(fav)}>
-                <Link to={datePath(next.date, next.metroId, next.id)} className="fav-chip">
+                <Link to={eventRowPath(next)} className="fav-chip">
                   {/* The set is your whole favorites list, so a team reads the same here as in the strip (builder's call). */}
                   <FavoriteBadge fav={fav} shown={favorites} size="mark" />
                   <span className="fav-chip-text">
@@ -302,7 +302,7 @@ export function HomeScreen() {
           <ul className="log-list">
             {recent.map((entry) => (
               <li key={entry.id}>
-                <Link to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)} className="log-row">
+                <Link to={loggedRowPath({ date: entry.when.sort, metroId: entry.metroId ?? DEFAULT_METRO.id, eventId: entry.eventId, venue: entry.venue })} className="log-row">
                   <ReadTile rating={ratingForEntry(entry, ratings)} />
                   <span className="log-main">
                     <span className="log-title"><TitleText text={entry.title} /></span>

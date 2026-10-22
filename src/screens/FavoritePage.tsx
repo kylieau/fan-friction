@@ -55,7 +55,7 @@ import {
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { datePath, eventPath } from '../lib/view';
+import { eventPath, eventRowPath, loggedRowPath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
 import { BackLink } from '../components/BackLink';
@@ -263,7 +263,7 @@ export function FavoritePage() {
             </h2>
             {nextHome && nextHomeEvent ? (
               <div className="card fav-next-card">
-                <Link to={datePath(nextHome.date, nextHomeEvent.metroId, nextHomeEvent.id)} className="fav-next-main">
+                <Link to={eventRowPath({ ...nextHomeEvent, date: nextHome.date })} className="fav-next-main">
                   <Read rating={readOf(nextHomeEvent, nextHome.date)} size="big" />
                   <span className="log-main">
                     <span className="log-title"><TitleText text={gameTitle(nextHome)} /></span>
@@ -341,7 +341,7 @@ export function FavoritePage() {
               <ul className="log-list">
                 {nearHome.map((event) => (
                   <li key={event.id} className="fav-li">
-                    <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
+                    <Link to={eventRowPath(event)} className="log-row fav-row">
                       <Read rating={readOf(event)} />
                       <span className="log-main">
                         <span className="log-title">
@@ -379,7 +379,7 @@ export function FavoritePage() {
               <ul className="log-list">
                 {elsewhere.map((event) => (
                   <li key={event.id}>
-                    <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
+                    <Link to={eventRowPath(event)} className="log-row fav-row">
                       <span className="log-main">
                         <span className="log-title">{venueOf(event)}</span>
                         <span className="log-facts">
@@ -406,7 +406,7 @@ export function FavoritePage() {
             <ul className="log-list">
               {matching.map((event) => (
                 <li key={event.id} className="fav-li">
-                  <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
+                  <Link to={eventRowPath(event)} className="log-row fav-row">
                     <Read rating={readOf(event)} />
                     <span className="log-main">
                       <span className="log-title"><TitleText text={listTitle(event)} /></span>
@@ -516,11 +516,12 @@ function GameRow({ game, rating, covered, teamMetroId, teamId, today }: { game: 
       {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No verdict: not a covered building">—</span>)}
     </>
   );
-  // An upcoming game in a covered building opens its date; every other game opens its event page, carrying the
+  // An upcoming game in a covered building opens its date (a further-out building, its event page; Kylie, Oct 21,
+  // 2026); every other game opens its event page, carrying the
   // game so the page can be built when the app holds no event for it (Kylie, Oct 15: every game can be stubbed).
   if (game.eventId && game.eventMetroId && game.date >= today && !game.score) {
     return (
-      <Link to={datePath(game.date, game.eventMetroId, game.eventId)} className="log-row fav-row fav-game-row">
+      <Link to={loggedRowPath({ date: game.date, metroId: game.eventMetroId, eventId: game.eventId, venue: game.venueName })} className="log-row fav-row fav-game-row">
         {body}
       </Link>
     );
@@ -549,7 +550,7 @@ function EntryRow({ entry, rating, outcome }: { entry: Entry; rating: number | n
   );
   if (entry.eventId) {
     return (
-      <Link to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)} className="log-row">
+      <Link to={loggedRowPath({ date: entry.when.sort, metroId: entry.metroId ?? DEFAULT_METRO.id, eventId: entry.eventId, venue: entry.venue })} className="log-row">
         {body}
       </Link>
     );

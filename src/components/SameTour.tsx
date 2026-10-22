@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getCityDate, getEventsBetween, isFurtherOut, type CrowdEvent } from '../data';
 import { shortLocalDate } from '../lib/dates';
-import { datePath } from '../lib/view';
+import { eventRowPath } from '../lib/view';
 import { ReadTile } from './ReadTile';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
@@ -41,7 +41,7 @@ export function SameTour({ event }: { event: CrowdEvent }) {
       <h2 className="you-heading">More dates</h2>
       <div className="same-tour-row" ref={row}>
         {rows.map(({ event: other, rating }) => (
-          <Link key={other.id} to={datePath(other.date, other.metroId, other.id)} className="same-tour-cell">
+          <Link key={other.id} to={eventRowPath(other)} className="same-tour-cell">
             <ReadTile rating={rating} />
             <span className="same-tour-date">{shortLocalDate(other.date)}</span>
           </Link>
