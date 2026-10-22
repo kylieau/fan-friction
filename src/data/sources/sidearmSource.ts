@@ -9,7 +9,7 @@
 // for "personal, noncommercial use". Recorded in docs/reference/data-sources.md.
 
 import { METROS } from '../../config/metros';
-import { TEAMS, isCollegeTeam, schoolWord, sportWords } from '../teams';
+import { TEAMS, isCollegeTeam, schoolWord, sportWords, storedSchoolWord } from '../teams';
 import type { CrowdEvent, LocalDate } from '../types';
 import { SIDEARM_SCHOOLS, type SidearmSchool } from './sidearmSchools';
 import { venueByNameOrPlace, venueClosedOn } from './venueMatch';
@@ -126,6 +126,9 @@ function roomCandidates(location: string): string[] {
     const n = name?.replace(/\s+/g, ' ').trim();
     if (n && !/^tbd$/i.test(n) && !out.includes(n)) out.push(n);
   };
+  // "Washington, D.C. / Capital One Arena", "Las Vegas, Nev. / The Pavilion": the room after a slash.
+  const slash = location.match(/^.*?,[^/]*\/\s*(.+)$/);
+  if (slash) add(slash[1]);
   const paren = location.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
   if (paren && /,/.test(paren[2]) && !/,/.test(paren[1])) add(paren[1]); // "Molson Stadium (Montreal, Que)"
   else if (paren && /,/.test(paren[1]) && !/,/.test(paren[2])) add(paren[2]); // "Toronto, Ont. (Mattamy Athletic Centre)"
@@ -154,17 +157,19 @@ const plainWords = (s: string) => s.toLowerCase().replace(/\bice hockey\b/g, 'ho
  */
 function teamIdFor(schoolNames: readonly string[], program: string, metroId: string): string | undefined {
   const schools = new Set(schoolNames.map(plainWords));
-  const prog = plainWords(program);
+  // "Men's Hockey" (U Sports, Lindenwood) and "Men's Ice Hockey" are one program word.
+  const hockey = (s: string) => s.replace(/\bice hockey\b/, 'hockey');
+  const prog = hockey(plainWords(program));
   const wanted = new Set([...schools].map((s) => `${s} ${prog}`));
   for (const team of Object.values(TEAMS)) {
     for (const n of [team.name, ...(team.aliases ?? [])]) if (wanted.has(plainWords(n))) return team.id;
   }
   const programs = Object.values(TEAMS).filter(
-    (t) => t.metroId === metroId && isCollegeTeam(t) && (schools.has(plainWords(schoolWord(t))) || (t.aliases ?? []).some((a) => schools.has(plainWords(a)))),
+    (t) => t.metroId === metroId && isCollegeTeam(t) && (schools.has(plainWords(schoolWord(t))) || schools.has(plainWords(storedSchoolWord(t))) || (t.aliases ?? []).some((a) => schools.has(plainWords(a)))),
   );
-  const exact = programs.filter((t) => plainWords(sportWords(t)) === prog);
+  const exact = programs.filter((t) => hockey(plainWords(sportWords(t))) === prog);
   if (exact.length === 1) return exact[0].id;
-  const bare = programs.filter((t) => plainWords(t.sport) === prog || plainWords(sportWords(t)).replace(/^(?:men|women) s /, '') === prog);
+  const bare = programs.filter((t) => plainWords(t.sport) === prog || hockey(plainWords(sportWords(t))).replace(/^(?:men|women) s /, '') === prog);
   return bare.length === 1 ? bare[0].id : undefined;
 }
 

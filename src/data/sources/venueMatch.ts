@@ -21,6 +21,8 @@ function plain(name: string): string {
     .replace(/\b(amphi)?theatre\b/g, '$1theater')
     .replace(/\bcentre\b/g, 'center')
     .replace(/\bgym\b/g, 'gymnasium')
+    .replace(/\s*&\s*/g, ' and ') // "Gayle & Tom Benson Stadium" is "Gayle and Tom Benson Stadium" on file
+    .replace(/\.(?=\S)/g, '') // "L.A. Memorial Coliseum" is "LA Memorial Coliseum"; "St. Louis" is "St Louis" on both sides
     .replace(/\s+/g, ' ')
     .trim();
 }

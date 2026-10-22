@@ -40,6 +40,14 @@ export const SMALL_SPECIAL_ROOM = 6000;
  */
 export const SMALL_DRAW_SPORTS = new Set(['volleyball', 'water polo', 'track', 'swimming', 'tennis', 'gymnastics', 'softball', 'lacrosse', 'golf', 'rowing', 'cross country']);
 
+/**
+ * The sports a school's own calendar can fill a big room for. A school-feed game in any other sport (soccer in a
+ * 22,000-seat track bowl, field hockey in a 7,000-seat stadium) sits under the floor like a small-draw sport, since the
+ * room says nothing about the crowd (Oct 22, 2026, when the school rooms went on file). A league feed's copy of the same
+ * game, with its expected draw, still wins the one-game rule.
+ */
+export const SCHOOL_FEED_ARENA_SPORTS = new Set(['football', 'basketball', 'hockey', 'baseball']);
+
 /** The stamp locks this many hours after the last scheduled start that night. */
 export const STAMP_LOCK_HOURS = 24;
 
@@ -106,7 +114,10 @@ export function knownSize(event: CrowdEvent): number | undefined {
   const unsized = event.kind === 'game' && !draw && (event.sourceId === 'ticketmaster' || event.sourceId === 'sidearm' || event.sourceId === 'seatgeek' || event.sourceId === 'fan');
   if ((event.kind === 'special' && event.sourceId === 'ticketmaster' || unsized) && !event.crowd.some((c) => c.soldOut)) {
     const cap = listedCapacity(event);
-    const smallDraw = unsized && event.audience.domain === 'sports' && SMALL_DRAW_SPORTS.has(event.audience.sport);
+    const smallDraw =
+      unsized &&
+      event.audience.domain === 'sports' &&
+      (SMALL_DRAW_SPORTS.has(event.audience.sport) || (event.sourceId === 'sidearm' && !SCHOOL_FEED_ARENA_SPORTS.has(event.audience.sport)));
     if (cap != null && (cap < SMALL_SPECIAL_ROOM || smallDraw)) return Math.min(cap, FRICTION_ATTENDEES - 1);
   }
   // A show's estimate sizes its pull, not the gate: the room decides until venue

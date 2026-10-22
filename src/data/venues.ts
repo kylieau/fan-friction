@@ -3222,6 +3222,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'ohio-state-ice-rink',
     metroId: 'columbus',
     names: [{ name: 'Ohio State Ice Rink' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['OSU Ice Rink'],
     location: [-83.01822, 40.00541],
     capacity: [{
       seats: 1000,
@@ -3501,6 +3503,8 @@ export const VENUES: Record<string, Venue> = {
     // Estimated, nearest comparable UBS Arena's non-Islanders events: Suffolk County, campus lots, no rail at the gate.
     carShare: 0.9,
     names: [{ name: 'Kenneth P. LaValle Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['LaValle Stadium'],
     location: [-73.1237, 40.9188],
     ticketmasterIds: ['KovZ917AJ7J'],
     capacity: [
@@ -3733,6 +3737,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'island-federal-arena',
     metroId: 'new-york',
     names: [{ name: 'Island Federal Credit Union Arena' }, { name: 'Island Federal Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Stony Brook Arena'],
     // When the shorter name took over is unconfirmed.
     location: [-73.125955, 40.91741],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official: about 4,000 (Stony Brook). Beside LaValle Stadium. Source: https://stonybrookathletics.com/sports/2016/8/25/facilities-ston-10-arena-html' }],
@@ -3904,6 +3910,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'steinberg-wellness-center',
     metroId: 'new-york',
     names: [{ name: 'Steinberg Wellness Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Brooklyn Athletic Center'],
     location: [-73.979176, 40.69059],
     ticketmasterIds: ['KovZ917AG_V'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Reported. LIU Brooklyn, same campus as Brooklyn Paramount. Source: https://en.wikipedia.org/wiki/Steinberg_Wellness_Center' }],
@@ -4407,6 +4415,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'wagner-college-stadium',
     metroId: 'new-york',
     names: [{ name: 'Wagner College Stadium' }, { name: 'Hameline Field at Wagner College Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Hameline Field'],
     // OpenStreetMap point for the building (Wagner College, Grand Avenue), not an entrance.
     location: [-74.0935587, 40.6147187],
     capacity: [{ seats: 3700, setup: 'football', note: 'Reported (football). Staten Island. A sponsorship page claims 5,000 with no setup; unresolved. Reported current: 3,700 seats; official sponsorship page claims 5,000, setup unspecified. Use 3,700 provisionally for football; larger official figure unresolved. Source: https://en.wikipedia.org/wiki/Wagner_College_Stadium' }],
@@ -5896,6 +5906,8 @@ export const VENUES: Record<string, Venue> = {
     // Estimated (75–88%): the same site drew 6–8% by MARTA as Turner Field; a mile from Georgia State station.
     carShare: 0.82,
     names: [{ name: 'Georgia State Stadium' }, { name: 'Center Parc Stadium', from: '2020-08-01' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Center Parc Credit Union Stadium'],
     location: [-84.3887, 33.7355],
     ticketmasterIds: ['KovZ917A8b7'],
     capacity: [{ seats: 24333, setup: 'football', note: 'Reported. Turner Field (49,586, baseball, 1997–2016) is history, not a setup.' }],
@@ -9905,6 +9917,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'kimel-field-house',
     metroId: 'toronto',
     names: [{ name: 'Goldring Centre' }, { name: 'Kimel Family Field House' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Goldring Centre Kimel Family Field House'],
     // Parent Goldring Centre. The 2011 plan said 2,000 seats; as-built capacity was not verified, so none is stored.
     location: [-79.39835, 43.66689],
     ticketmasterIds: ['KovZ917AJDj'],
@@ -10459,6 +10473,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'kiesel-field-key-stadium',
     metroId: 'indianapolis',
     names: [{ name: 'Kiesel Field at Key Stadium' }, { name: 'Key Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Key Stadium/Kiesel Field'],
     location: [-86.1302054, 39.7113913],
     capacity: [{ seats: 5500, setup: 'football', note: 'Official (UIndy). Unofficial standing-room add-on not stored. Source: https://athletics.uindy.edu/facilities/?id=2' }],
     roof: 'open',
@@ -11046,6 +11062,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'greene-stadium',
     metroId: 'washington-dc',
     names: [{ name: 'William H. Greene Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Greene Stadium'],
     location: [-77.020737, 38.925662],
     // DC3 (Kylie, Oct 14, 2026): store the 7,086 seats as reported; the same source's 10,000 for football is not used.
     capacity: [{ seats: 7086, setup: 'football', note: 'Reported (Wikipedia, https://en.wikipedia.org/wiki/William_H._Greene_Stadium); Howard publishes no figure.' }],
@@ -11430,6 +11448,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'harlen-c-hunter-stadium',
     metroId: 'st-louis',
     names: [{ name: 'Harlen C. Hunter Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Hunter Stadium'],
     location: [-90.501903, 38.787735],
     capacity: [
       {
@@ -14161,6 +14181,1001 @@ export const VENUES: Record<string, Venue> = {
         note: 'Reported (~2,000); PLL use may close sections. Coordinate approximate near DU lacrosse. Source: https://en.wikipedia.org/wiki/2026_Premier_Lacrosse_League_season',
       },
     ],
+    roof: 'open',
+  },
+  // College rooms the school calendar feeds name that were not on file (Oct 22, 2026; BACKLOG "The events the feeds miss").
+  // Rooms of about 1,000 seats and up with a figure read on a fetched page; every figure labeled, every point OpenStreetMap or
+  // a stand-in said so in its comment. Rooms with no published figure stay in BACKLOG.
+  'tait-mckenzie-centre': {
+    id: 'tait-mckenzie-centre',
+    metroId: 'toronto',
+    names: [{ name: 'Tait McKenzie Centre' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-79.5096507, 43.7744324],
+    capacity: [{ seats: 1200, setup: 'basketball', note: 'Official (basketball). York University, North York. Main Gym, retractable bleachers; volleyball shares it. Source: https://yorkulions.ca/sports/2017/7/11/york-lions-gyms.aspx?id=411' }],
+    roof: 'indoor',
+  },
+  'canlan-ice-sports-york': {
+    id: 'canlan-ice-sports-york',
+    metroId: 'toronto',
+    names: [{ name: 'Canlan Ice Sports' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['NFP Athletic Centre', 'Canlan Sports York'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-79.5139282, 43.7745465],
+    capacity: [{ seats: 1200, setup: 'hockey', note: 'Official (hockey). York University, North York. Main rink; the building was rebranded NFP Athletic Centre, the feed and the map still say Canlan. Source: https://yorkulions.ca/sports/2013/4/12/GEN_0412134245.aspx' }],
+    roof: 'indoor',
+  },
+  'gentile-arena': {
+    id: 'gentile-arena',
+    metroId: 'chicago',
+    names: [{ name: 'Gentile Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Joseph J. Gentile Arena', 'Gentile Center'],
+    // OpenStreetMap point for the attached Norville Athletics Center (6525 N Sheridan Rd); the arena has no point of its own.
+    location: [-87.6585535, 42.0007095],
+    capacity: [{ seats: 4557, setup: 'basketball', note: 'Official (basketball). Loyola Chicago. Basketball and volleyball. Source: https://loyolaramblers.com/facilities/gentile-arena/4' }],
+    roof: 'indoor',
+  },
+  'mcgrath-phillips-arena': {
+    id: 'mcgrath-phillips-arena',
+    metroId: 'chicago',
+    names: [{ name: 'McGrath-Phillips Arena' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-87.6531445, 41.9239123],
+    capacity: [{ seats: 3000, setup: 'basketball', note: 'Reported (basketball). DePaul. Women\'s basketball and volleyball; the school page gives no figure. Source: https://en.wikipedia.org/wiki/McGrath-Phillips_Arena' }],
+    roof: 'indoor',
+  },
+  'jacoby-dickens-center': {
+    id: 'jacoby-dickens-center',
+    metroId: 'chicago',
+    names: [{ name: 'Jacoby Dickens Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Jacoby D. Dickens Center', 'JDC'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-87.60881, 41.7177588],
+    capacity: [{ seats: 2500, note: 'Official (volleyball). Chicago State. Volleyball home since basketball moved to the Jones Convocation Center (2007); figure from the school\'s older facility page. Source: https://www.gocsucougars.com/sports/2008/4/13/JDC?id=19' }],
+    roof: 'indoor',
+  },
+  'flames-field': {
+    id: 'flames-field',
+    metroId: 'chicago',
+    names: [{ name: 'Flames Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-87.6502796, 41.8655005],
+    capacity: [{ seats: 1200, setup: 'soccer', note: 'Official (soccer). UIC. West grandstand; UIC\'s softball field of the same name seats 500. Source: https://uicflames.com/facilities/flames-field/5' }],
+    roof: 'open',
+  },
+  'wish-field': {
+    id: 'wish-field',
+    metroId: 'chicago',
+    names: [{ name: 'Wish Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Cacciatore Stadium', 'Wish Field at Cacciatore Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-87.6521067, 41.9242577],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). DePaul. Permanent seats at Cacciatore Stadium, converted to soccer each fall. Source: https://depaulbluedemons.com/facilities/cacciatore-stadium/5' }],
+    roof: 'open',
+  },
+  'saville-community-sports-centre': {
+    id: 'saville-community-sports-centre',
+    metroId: 'edmonton',
+    names: [{ name: 'Saville Community Sports Centre' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Competition Gymnasium', 'Saville Centre', 'Competition Gym - Saville Community Sports Centre'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-113.5307207, 53.5022519],
+    capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). University of Alberta, South Campus. Competition Gym setup, basketball and volleyball; figure from the university\'s recreation site. Source: https://www.ualberta.ca/en/campus-community-recreation/facilities/competition-gymnasium.html' }],
+    roof: 'indoor',
+  },
+  'silent-ice-center': {
+    id: 'silent-ice-center',
+    metroId: 'edmonton',
+    names: [{ name: 'Silent Ice Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Silent Ice Centre', 'Hatch Arena', 'Hatch Arena at Silent Ice Center'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-113.4952106, 53.3792395],
+    capacity: [{ seats: 1800, setup: 'hockey', note: 'Official (hockey). University of Alberta hockey\'s 2026-27 home while Clare Drake Arena is renovated, Nisku, Leduc County. Primary rink; figure from the school\'s Oct 2025 release. Source: https://bearsandpandas.ca/news/2025/10/22/golden-bears-and-pandas-hockey-to-play-2026-27-season-at-silent-ice-center.aspx' }],
+    roof: 'indoor',
+  },
+  'war-memorial-sobrato-center': {
+    id: 'war-memorial-sobrato-center',
+    metroId: 'bay-area',
+    names: [{ name: 'War Memorial at The Sobrato Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['War Memorial Gymnasium', 'War Memorial Gym', 'Sobrato Center'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-122.4495456, 37.7768558],
+    capacity: [{ seats: 3100, setup: 'basketball', note: 'Official (basketball). University of San Francisco. Basketball and volleyball. Source: https://usfdons.com/facilities/war-memorial-at-the-sobrato-center/20' }],
+    roof: 'indoor',
+  },
+  'university-credit-union-pavilion': {
+    id: 'university-credit-union-pavilion',
+    metroId: 'bay-area',
+    names: [{ name: 'University Credit Union Pavilion' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['UCU Pavilion', 'McKeon Pavilion'],
+    // OpenStreetMap point for the campus; the pavilion has no point of its own.
+    location: [-122.109459, 37.8409597],
+    capacity: [{ seats: 3500, setup: 'basketball', note: 'Official (basketball). Saint Mary\'s, Moraga. Formerly McKeon Pavilion. Source: https://smcgaels.com/facilities/university-credit-union-pavilion/4' }],
+    roof: 'indoor',
+  },
+  'leavey-center': {
+    id: 'leavey-center',
+    metroId: 'bay-area',
+    names: [{ name: 'Leavey Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Leavey Event Center'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-121.9352305, 37.3491623],
+    capacity: [{ seats: 4200, setup: 'basketball', note: 'Official (basketball). Santa Clara, Santa Clara. Basketball and volleyball. Source: https://santaclarabroncos.com/facilities/leavey-center/3' }],
+    roof: 'indoor',
+  },
+  'saint-marys-stadium': {
+    id: 'saint-marys-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Saint Mary\'s Stadium' }],
+    // OpenStreetMap point for the campus; the stadium has no point of its own.
+    location: [-122.109459, 37.8409597],
+    capacity: [{ seats: 5500, setup: 'soccer', note: 'Official (soccer). Saint Mary\'s, Moraga. The old football-stadium figure; soccer crowds are far smaller. Source: https://smcgaels.com/facilities/saint-marys-stadium/1009' }],
+    roof: 'open',
+  },
+  'negoesco-stadium': {
+    id: 'negoesco-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Negoesco Stadium' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-122.4538804, 37.7765578],
+    capacity: [{ seats: 3000, setup: 'soccer', note: 'Official (soccer). University of San Francisco. Source: https://usfdons.com/facilities/negoesco-stadium/5' }],
+    roof: 'open',
+  },
+  'stevens-stadium': {
+    id: 'stevens-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Stevens Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Buck Shaw Stadium', 'Buck Shaw Field', 'Stevens Stadium - Buck Shaw Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-121.9367171, 37.3505152],
+    capacity: [{ seats: 6800, setup: 'soccer', note: 'Official (soccer). Santa Clara, Santa Clara. The former Buck Shaw Stadium; the figure may predate the Stevens renovation. Source: https://santaclarabroncos.com/facilities/stevens-stadium-buck-shaw-field/1' }],
+    roof: 'open',
+  },
+  'edwards-stadium': {
+    id: 'edwards-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Edwards Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Edwards Field', 'Edwards Track Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-122.264856, 37.8690737],
+    capacity: [{ seats: 22000, setup: 'soccer', note: 'Reported (soccer). Cal, Berkeley. The full track-stadium bowl; college soccer uses a fraction of it, and a school-feed match there sits under the floor. Source: https://en.wikipedia.org/wiki/Edwards_Stadium' }],
+    roof: 'open',
+  },
+  'liontree-arena': {
+    id: 'liontree-arena',
+    metroId: 'san-diego',
+    names: [{ name: 'LionTree Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['RIMAC Arena'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-117.2395148, 32.885306],
+    capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). UC San Diego, La Jolla. "Nearly 4,000" for basketball and volleyball; RIMAC Arena until 2022. Source: https://ucsdtritons.com/facilities/liontree-arena/2' }],
+    roof: 'indoor',
+  },
+  'dobbins-stadium': {
+    id: 'dobbins-stadium',
+    metroId: 'sacramento',
+    names: [{ name: 'Dobbins Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Swimley Field', 'Phil Swimley Field at Dobbins Stadium'],
+    // OpenStreetMap point for the adjoining Aggie Soccer Field (same address, 622 Orchard Road); the ballpark has no point of its own.
+    location: [-121.7566012, 38.541722],
+    capacity: [{ seats: 3500, setup: 'baseball', note: 'Official (baseball). UC Davis, Davis. Source: https://ucdavisaggies.com/facilities/phil-swimley-field-at-dobbins-stadium/7' }],
+    roof: 'open',
+  },
+  'aggie-soccer-field': {
+    id: 'aggie-soccer-field',
+    metroId: 'sacramento',
+    names: [{ name: 'Aggie Soccer Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-121.7566012, 38.541722],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). UC Davis, Davis. "Approx. 1,000". Source: https://ucdavisaggies.com/facilities/aggie-soccer-field/10' }],
+    roof: 'open',
+  },
+  'hornet-field': {
+    id: 'hornet-field',
+    metroId: 'sacramento',
+    names: [{ name: 'Hornet Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Hornet Soccer Field'],
+    // OpenStreetMap point for Yosemite Hall, which the school says the field sits just west of; the field has no point of its own.
+    location: [-121.4276643, 38.5625448],
+    capacity: [{ seats: 1050, setup: 'soccer', note: 'Official (soccer). Sacramento State. Source: https://hornetsports.com/facilities/hornet-field/6' }],
+    roof: 'open',
+  },
+  'husky-soccer-stadium': {
+    id: 'husky-soccer-stadium',
+    metroId: 'seattle',
+    names: [{ name: 'Husky Soccer Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Husky Soccer Field'],
+    // OpenStreetMap point for Walla Walla Road NE, the stadium's street; the stadium has no point of its own.
+    location: [-122.2991279, 47.6594948],
+    capacity: [{ seats: 2200, setup: 'soccer', note: 'Official (soccer). Washington. Source: https://gohuskies.com/facilities/husky-soccer-stadium/35' }],
+    roof: 'open',
+  },
+  'cox-pavilion': {
+    id: 'cox-pavilion',
+    metroId: 'las-vegas',
+    names: [{ name: 'Cox Pavilion' }, { name: 'The Pavilion' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-115.1433505, 36.1042473],
+    capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). UNLV. 2,500 for sporting events, 3,100 as a multi-purpose venue; attached to the Thomas & Mack Center; the Cox name ended in 2025. Source: https://unlvrebels.com/sports/2018/5/18/facilities-unlv-w-baskbl-cox-pavilion-new-html.aspx' }],
+    roof: 'indoor',
+  },
+  'peter-johann-memorial-field': {
+    id: 'peter-johann-memorial-field',
+    metroId: 'las-vegas',
+    names: [{ name: 'Peter Johann Memorial Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Johann Field'],
+    // OpenStreetMap point for the UNLV main campus address (4505 S Maryland Pkwy); the field has no point of its own.
+    location: [-115.1439051, 36.1079411],
+    capacity: [{ seats: 2500, setup: 'soccer', note: 'Official (soccer). UNLV. "Approximately 2,500" in open seating. Source: https://unlvrebels.com/sports/2018/5/18/facilities-unlv-trads-johann-html.aspx' }],
+    roof: 'open',
+  },
+  'gcu-ballpark': {
+    id: 'gcu-ballpark',
+    metroId: 'phoenix',
+    names: [{ name: 'Brazell Field at GCU Ballpark' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['GCU Ballpark', 'Brazell Field'],
+    // OpenStreetMap point for the campus (3300 W Camelback Rd); the ballpark has no point of its own.
+    location: [-112.127183, 33.5131857],
+    capacity: [{ seats: 4000, setup: 'baseball', note: 'Official (baseball). Grand Canyon. Top crowds pass 5,000 with the berm and standing room. Source: https://gculopes.com/facilities/brazell-field-at-gcu-ballpark/16' }],
+    roof: 'open',
+  },
+  'gcu-stadium': {
+    id: 'gcu-stadium',
+    metroId: 'phoenix',
+    names: [{ name: 'GCU Stadium' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-112.131321, 33.5120597],
+    capacity: [{ seats: 6000, setup: 'soccer', note: 'Official (soccer). Grand Canyon. 3,000 chairbacks plus about 3,000 on the berm. Source: https://gculopes.com/facilities/gcu-stadium/24' }],
+    roof: 'open',
+  },
+  'du-soccer-stadium': {
+    id: 'du-soccer-stadium',
+    metroId: 'denver',
+    names: [{ name: 'University of Denver Soccer Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['CIBER Field', 'DU Soccer Stadium'],
+    // OpenStreetMap point for 2201 E Asbury Ave, the stadium's address; the stadium has no point of its own.
+    location: [-104.9623376, 39.6811962],
+    capacity: [{ seats: 2000, setup: 'soccer', note: 'Official (soccer). Denver. Source: https://denverpioneers.com/sports/2018/5/24/facilities-du-soccer-stadium-html.aspx' }],
+    roof: 'open',
+  },
+  'the-mountain-at-mullin-park': {
+    id: 'the-mountain-at-mullin-park',
+    metroId: 'la',
+    names: [{ name: 'The Mountain at Mullin Park' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['The Mountain', 'Mullin Park'],
+    // OpenStreetMap point for the Malibu campus; the arena (on the former Rho lot) has no point yet.
+    location: [-118.7093459, 34.0430103],
+    capacity: [{ seats: 3600, setup: 'basketball', note: 'Official (basketball). Pepperdine, Malibu. Opens Dec 5-6, 2026 (first games); Firestone Fieldhouse hosts the games before then. Source: https://pepperdinewaves.com/news/2026/8/24/general-pepperdine-basketball-set-to-open-the-mountain-at-mullin-park-dec-5-6' }],
+    roof: 'indoor',
+  },
+  'william-rolland-stadium': {
+    id: 'william-rolland-stadium',
+    metroId: 'la',
+    names: [{ name: 'William Rolland Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Rolland Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-118.8792917, 34.2261954],
+    capacity: [{ seats: 2000, setup: 'football', note: 'Official (football). Cal Lutheran, Thousand Oaks. 2,000 fixed seats (the quick-facts page says 3,000 with portable bleachers); soccer too. Source: https://clusports.com/facilities/?id=1' }],
+    roof: 'open',
+  },
+  'anteater-stadium': {
+    id: 'anteater-stadium',
+    metroId: 'la',
+    names: [{ name: 'Anteater Stadium' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-117.8507666, 33.650222],
+    capacity: [{ seats: 2500, setup: 'soccer', note: 'Official (soccer). UC Irvine, Irvine. From the school\'s match preview; the facility page carries no figure. Source: https://ucirvinesports.com/news/2025/8/26/mens-soccer-uci-takes-on-cal-state-la-north-florida-in-anteater-stadium' }],
+    roof: 'open',
+  },
+  'sullivan-field': {
+    id: 'sullivan-field',
+    metroId: 'la',
+    names: [{ name: 'Sullivan Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-118.4159818, 33.9665924],
+    capacity: [{ seats: 1200, setup: 'soccer', note: 'Official (soccer). Loyola Marymount. Source: https://lmulions.com/sports/2018/5/29/school-bio-sullivan-html.aspx' }],
+    roof: 'open',
+  },
+  'george-allen-field': {
+    id: 'george-allen-field',
+    metroId: 'la',
+    names: [{ name: 'George Allen Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-118.1107362, 33.7857401],
+    capacity: [{ seats: 2000, setup: 'soccer', note: 'Official (soccer). Long Beach State, Long Beach. Source: https://longbeachstate.com/facilities/george-allen-field/7' }],
+    roof: 'open',
+  },
+  'william-j-nicks-building': {
+    id: 'william-j-nicks-building',
+    metroId: 'houston',
+    names: [{ name: 'William J. Nicks Building' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Baby Dome', 'William J. Nicks Field House', 'Nicks Building'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-95.9929721, 30.0922395],
+    capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). Prairie View A&M, Prairie View. The "Baby Dome"; basketball and volleyball. Source: https://pvpanthers.com/facilities/william-j-nicks-building/88' }],
+    roof: 'indoor',
+  },
+  'hpe-arena': {
+    id: 'hpe-arena',
+    metroId: 'houston',
+    names: [{ name: 'H&PE Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Health and Physical Education Arena', 'HPE Arena'],
+    // OpenStreetMap point for the campus; the arena (3100 Cleburne St) has no point of its own.
+    location: [-95.3596267, 29.7209058],
+    capacity: [{ seats: 8100, setup: 'basketball', note: 'Official (basketball). Texas Southern. Basketball and volleyball. Source: https://tsusports.com/facilities/h-pe-arena/4' }],
+    roof: 'indoor',
+  },
+  'alexander-durley-stadium': {
+    id: 'alexander-durley-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Alexander Durley Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Alexander Durley Sports Complex', 'Durley Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-95.3623686, 29.7209741],
+    capacity: [{ seats: 5500, setup: 'soccer', note: 'Official (soccer). Texas Southern. Soccer and track; football\'s secondary home. Source: https://tsusports.com/facilities/alexander-durley-stadium/3' }],
+    roof: 'open',
+  },
+  'carl-lewis-international-complex': {
+    id: 'carl-lewis-international-complex',
+    metroId: 'houston',
+    names: [{ name: 'Carl Lewis International Complex' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Carl Lewis Track & Field and Soccer Complex'],
+    // OpenStreetMap point for the address (3605 Elgin St); the complex has no point of its own.
+    location: [-95.3489763, 29.7278527],
+    capacity: [{ seats: 2500, setup: 'soccer', note: 'Official (soccer). Houston. Source: https://uhcougars.com/sports/2018/6/12/facilities-tellez-html' }],
+    roof: 'open',
+  },
+  'holloway-field': {
+    id: 'holloway-field',
+    metroId: 'houston',
+    names: [{ name: 'Wendel D. Ley Track & Holloway Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Wendel D. Ley Track & Holloway Field', 'Holloway Field at Wendel D. Ley Track', 'Holloway Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-95.4020107, 29.7128708],
+    capacity: [{ seats: 1500, setup: 'soccer', note: 'Official (soccer). Rice. Grandstand; an older page said 2,000. Source: https://riceowls.com/facilities/wendel-d-ley-track-holloway-field/8' }],
+    roof: 'open',
+  },
+  'bobcat-ballpark': {
+    id: 'bobcat-ballpark',
+    metroId: 'austin',
+    names: [{ name: 'Bobcat Ballpark' }, { name: 'Irvine-Rasmussen Ballpark', from: '2026-04-07' }],
+    // OpenStreetMap point for the address (225 Charles Austin Dr), beside the softball stadium; the ballpark has no point of its own.
+    location: [-97.9298522, 29.8881983],
+    capacity: [{ seats: 2500, setup: 'baseball', note: 'Official (baseball). Texas State, San Marcos. 2,000 seats plus about 500 standing; renamed April 7, 2026. South-edge room. Source: https://txst.com/facilities/irvine-rasmussen-ballpark/5' }],
+    roof: 'open',
+  },
+  'washburne-stadium': {
+    id: 'washburne-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Westcott Field' }, { name: 'Washburne Soccer and Track Stadium', from: '2022-04-08' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Washburne Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-96.7823407, 32.8396433],
+    capacity: [{ seats: 2577, setup: 'soccer', note: 'Official (soccer). SMU, University Park. Renovated and renamed 2022; the factbook says 4,000. Source: https://smumustangs.com/facilities/washburne-soccer-and-track-stadium/44' }],
+    roof: 'open',
+  },
+  'swinney-recreation-center': {
+    id: 'swinney-recreation-center',
+    metroId: 'kansas-city',
+    names: [{ name: 'Swinney Recreation Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Swinney Recreation Center', 'Swinney Center'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-94.5787562, 39.0355454],
+    capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Kansas City. Competition court; women\'s basketball and volleyball (men\'s basketball moves to Municipal Auditorium for 2026-27). Source: https://kcroos.com/sports/2008/11/16/1626244' }],
+    roof: 'indoor',
+  },
+  'centene-community-ice-center': {
+    id: 'centene-community-ice-center',
+    metroId: 'st-louis',
+    names: [{ name: 'Centene Community Ice Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Centene Ice Center'],
+    // OpenStreetMap point for the address (750 Casino Center Dr); the rink has no point of its own.
+    location: [-90.4772788, 38.7496606],
+    capacity: [{ seats: 2500, setup: 'hockey', note: 'Official (hockey). Lindenwood hockey\'s home, Maryland Heights. Main rink. Source: https://lindenwoodlions.com/sports/2020/9/10/Centene%20Community%20Ice%20Center.aspx?id=400' }],
+    roof: 'indoor',
+  },
+  'oshaughnessy-stadium': {
+    id: 'oshaughnessy-stadium',
+    metroId: 'minneapolis',
+    names: [{ name: 'O\'Shaughnessy Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Palmer Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-93.1916226, 44.9438342],
+    capacity: [{ seats: 5025, setup: 'football', note: 'Official (football). St. Thomas, Saint Paul. Source: https://tommiesports.com/sports/2020/7/23/facilities-O-Shaughnessy-Stadium' }],
+    roof: 'open',
+  },
+  'jane-sage-cowles-stadium': {
+    id: 'jane-sage-cowles-stadium',
+    metroId: 'minneapolis',
+    names: [{ name: 'Jane Sage Cowles Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Cowles Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-93.2289779, 44.9811355],
+    capacity: [{ seats: 1000, note: 'Official (softball). Minnesota. Source: https://gophersports.com/sports/2018/5/21/facilities-cowles-stadium-html' }],
+    roof: 'open',
+  },
+  'siebert-field': {
+    id: 'siebert-field',
+    metroId: 'minneapolis',
+    names: [{ name: 'Siebert Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-93.2292882, 44.9823786],
+    capacity: [{ seats: 1420, setup: 'baseball', note: 'Official (baseball). Minnesota. Plus berm seating. Source: https://gophersports.com/sports/2018/5/21/facilities-siebert-field-html' }],
+    roof: 'open',
+  },
+  'elizabeth-lyle-robbie-stadium': {
+    id: 'elizabeth-lyle-robbie-stadium',
+    metroId: 'minneapolis',
+    names: [{ name: 'Elizabeth Lyle Robbie Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Robbie Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-93.1894292, 44.9945814],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). Minnesota, Saint Paul campus. Source: https://gophersports.com/sports/2022/10/5/soccer-robbie-stadium' }],
+    roof: 'open',
+  },
+  'human-performance-center': {
+    id: 'human-performance-center',
+    metroId: 'new-orleans',
+    names: [{ name: 'Human Performance Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['HPC'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-90.0634093, 30.0260158],
+    capacity: [{ seats: 1760, note: 'Official (volleyball). New Orleans. Source: https://privateersports.com/facilities/human-performance-center/5' }],
+    roof: 'indoor',
+  },
+  'daskalakis-athletic-center': {
+    id: 'daskalakis-athletic-center',
+    metroId: 'philadelphia',
+    names: [{ name: 'Daskalakis Athletic Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['DAC'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.190623, 39.9562721],
+    capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). Drexel. Event figure from the school; Wikipedia says 2,509 for basketball. Source: https://drexeldragons.com/news/2024/9/25/facilities-state-of-the-art-athletics-facility-rentals-in-philadelphia' }],
+    roof: 'indoor',
+  },
+  'vidas-field': {
+    id: 'vidas-field',
+    metroId: 'philadelphia',
+    names: [{ name: 'Vidas Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Vidas Athletic Complex'],
+    // OpenStreetMap point for the Vidas Athletic Complex (4300 Powelton Ave); the field has no point of its own.
+    location: [-75.2080118, 39.9599484],
+    capacity: [{ seats: 1500, setup: 'soccer', note: 'Reported (soccer). Drexel. Source: https://en.wikipedia.org/wiki/Drexel_Dragons_men%27s_soccer' }],
+    roof: 'open',
+  },
+  'mcgonigle-hall': {
+    id: 'mcgonigle-hall',
+    metroId: 'philadelphia',
+    names: [{ name: 'McGonigle Hall' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Pearson-McGonigle Hall', 'Pearson McGonigle Hall'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.1583676, 39.9806923],
+    capacity: [{ seats: 3900, note: 'Official (volleyball). Temple. Main arena; volleyball and gymnastics since basketball left in 2022. Source: https://owlsports.com/facilities/mcgonigle-hall/10' }],
+    roof: 'indoor',
+  },
+  'fred-rust-ice-arena': {
+    id: 'fred-rust-ice-arena',
+    metroId: 'philadelphia',
+    names: [{ name: 'Fred Rust Ice Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Fred Rust Arena'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.7504509, 39.6644723],
+    capacity: [{ seats: 2500, setup: 'hockey', note: 'Reported (hockey). Delaware, Newark, Del.. Source: https://en.wikipedia.org/wiki/Fred_Rust_Ice_Arena' }],
+    roof: 'indoor',
+  },
+  'bob-hannah-stadium': {
+    id: 'bob-hannah-stadium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Bob Hannah Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Hannah Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.7475762, 39.6634593],
+    capacity: [{ seats: 1500, setup: 'baseball', note: 'Official (baseball). Delaware, Newark, Del.. "Approximately 1,500". Source: https://events.bluehens.com/sports/2026/2/20/bob-hannah-stadium.aspx' }],
+    roof: 'open',
+  },
+  'grant-stadium': {
+    id: 'grant-stadium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Stuart & Suzanne Grant Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Grant Stadium', 'Delaware Mini-Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.747699, 39.6617632],
+    capacity: [{ seats: 1400, setup: 'soccer', note: 'Official (soccer). Delaware, Newark, Del.. Source: https://events.bluehens.com/sports/2026/2/20/grant-stadium.aspx' }],
+    roof: 'open',
+  },
+  'rullo-stadium': {
+    id: 'rullo-stadium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Fred P. Rullo Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Rullo Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.7494256, 39.6591995],
+    capacity: [{ seats: 2000, note: 'Official (field hockey). Delaware, Newark, Del.. "Approximately 2,000"; the older facility page says roughly 1,500. Source: https://events.bluehens.com/sports/2026/2/20/fred-p-rullo-stadium.aspx' }],
+    roof: 'open',
+  },
+  'higgins-soccer-complex': {
+    id: 'higgins-soccer-complex',
+    metroId: 'philadelphia',
+    names: [{ name: 'Higgins Soccer Complex' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Campolo Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.3459231, 40.0418387],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). Villanova, Villanova. Source: https://villanova.com/sports/2024/7/16/higgins-soccer-complex.aspx' }],
+    roof: 'open',
+  },
+  'jake-nevin-field-house': {
+    id: 'jake-nevin-field-house',
+    metroId: 'philadelphia',
+    names: [{ name: 'Jake Nevin Field House' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Nevin Field House', 'The Jake'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.3382398, 40.0337225],
+    capacity: [{ seats: 2100, setup: 'basketball', note: 'Official (basketball). Villanova, Villanova. Volleyball is the home tenant; Wikipedia counts 1,500 permanent seats. Source: https://villanova.com/sports/2019/7/26/test' }],
+    roof: 'indoor',
+  },
+  'sean-sweeney-field': {
+    id: 'sean-sweeney-field',
+    metroId: 'philadelphia',
+    names: [{ name: 'Sean Sweeney Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Sweeney Field', 'Finnesey Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-75.2366177, 39.9946535],
+    capacity: [{ seats: 3000, setup: 'soccer', note: 'Official (soccer). Saint Joseph\'s. Source: https://sjuhawks.com/facilities/sean-sweeney-field/4' }],
+    roof: 'open',
+  },
+  'bob-turtle-smith-stadium': {
+    id: 'bob-turtle-smith-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Bob "Turtle" Smith Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Shipley Field at Bob "Turtle" Smith Stadium', 'Shipley Field', 'Bob Turtle Smith Stadium', 'Smith Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-76.9444091, 38.9892976],
+    capacity: [{ seats: 2500, setup: 'baseball', note: 'Official (baseball). Maryland, College Park. Source: https://umterps.com/facilities/?id=1077' }],
+    roof: 'open',
+  },
+  'maryland-field-hockey-lacrosse-complex': {
+    id: 'maryland-field-hockey-lacrosse-complex',
+    metroId: 'washington-dc',
+    names: [{ name: 'Maryland Field Hockey and Lacrosse Complex' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Field Hockey & Lacrosse Complex', 'Field Hockey and Lacrosse Complex'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-76.9368761, 38.994708],
+    capacity: [{ seats: 1400, note: 'Reported (field hockey). Maryland, College Park. The school page gives no count. Source: https://stadiumjourney.com/stadiums/university-of-maryland-field-hockey-and-lacrosse-complex-s2832' }],
+    roof: 'open',
+  },
+  'ludwig-field': {
+    id: 'ludwig-field',
+    metroId: 'washington-dc',
+    names: [{ name: 'Ludwig Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Ludwig Field at Kehoe Track'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-76.9505752, 38.9881178],
+    capacity: [{ seats: 7000, setup: 'soccer', note: 'Reported (soccer). Maryland, College Park. The school page gives no count; an older one said 6,000. Source: https://en.wikipedia.org/wiki/Ludwig_Field' }],
+    roof: 'open',
+  },
+  'george-mason-stadium': {
+    id: 'george-mason-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'George Mason Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Mason Stadium'],
+    // OpenStreetMap point for the campus; the stadium has no point of its own.
+    location: [-77.3079884, 38.8313333],
+    capacity: [{ seats: 5000, setup: 'soccer', note: 'Official (soccer). George Mason, Fairfax. Grandstand; soccer, lacrosse and track. Source: https://gomason.com/facilities/george-mason-stadium/4' }],
+    roof: 'open',
+  },
+  'george-mason-rac': {
+    id: 'george-mason-rac',
+    metroId: 'washington-dc',
+    names: [{ name: 'Recreation Athletic Complex' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['RAC', 'RAC Gym', 'Recreation and Athletic Complex'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-77.3124828, 38.830579],
+    capacity: [{ seats: 1550, note: 'Official (volleyball). George Mason, Fairfax. RAC Gym; volleyball and wrestling. Source: https://gomason.com/facilities/recreation-athletic-complex/6' }],
+    roof: 'indoor',
+  },
+  'burr-gymnasium': {
+    id: 'burr-gymnasium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Burr Gymnasium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Burr Gym', 'John H. Burr Gymnasium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-77.0222225, 38.9263126],
+    capacity: [{ seats: 2700, setup: 'basketball', note: 'Official (basketball). Howard. Basketball and volleyball. Source: https://hubison.com/facilities/?id=1' }],
+    roof: 'indoor',
+  },
+  'mcdonough-arena': {
+    id: 'mcdonough-arena',
+    metroId: 'washington-dc',
+    names: [{ name: 'McDonough Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['McDonough Gymnasium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-77.077429, 38.9077168],
+    capacity: [{ seats: 2000, setup: 'basketball', note: 'Official (basketball). Georgetown. Women\'s basketball and volleyball. Source: https://guhoyas.com/sports/2018/6/6/facilities-gu-mcdonough-arena-html.aspx' }],
+    roof: 'indoor',
+  },
+  'shaw-field': {
+    id: 'shaw-field',
+    metroId: 'washington-dc',
+    names: [{ name: 'Shaw Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['North Kehoe Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-77.0767118, 38.9102916],
+    capacity: [{ seats: 1625, setup: 'soccer', note: 'Official (soccer). Georgetown. Source: https://guhoyas.com/sports/2018/6/6/facilities-gu-north-kehoe-field-html.aspx' }],
+    roof: 'open',
+  },
+  'mickey-dunn-stadium': {
+    id: 'mickey-dunn-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Mickey Dunn Stadium at Henssler Financial Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Mickey Dunn Stadium', 'Henssler Financial Field', 'Stillwell Stadium', 'Fred Stillwell Stadium'],
+    // OpenStreetMap point for the site, which the map still names Fred Stillwell Baseball Stadium.
+    location: [-84.5816195, 34.0337605],
+    capacity: [{ seats: 2500, setup: 'baseball', note: 'Official (baseball). Kennesaw State, Kennesaw. Home from the 2026 season. Source: https://ksuowls.com/facilities/mickey-dunn-stadium-at-henssler-financial-field/77' }],
+    roof: 'open',
+  },
+  'gsu-sports-arena': {
+    id: 'gsu-sports-arena',
+    metroId: 'atlanta',
+    names: [{ name: 'GSU Sports Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Georgia State Sports Arena'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-84.3863635, 33.7516294],
+    capacity: [{ seats: 3854, setup: 'basketball', note: 'Reported (basketball). Georgia State. Basketball setup; volleyball\'s home since basketball moved to the Convocation Center (2022). The school lists no facilities online. Source: https://en.wikipedia.org/wiki/GSU_Sports_Arena' }],
+    roof: 'indoor',
+  },
+  'gsu-soccer-complex': {
+    id: 'gsu-soccer-complex',
+    metroId: 'atlanta',
+    names: [{ name: 'GSU Soccer Complex' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['GSU Soccer Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-84.3817809, 33.7479026],
+    capacity: [{ seats: 1500, setup: 'soccer', note: 'Reported (soccer). Georgia State. The complex moved downtown (188 MLK Jr Dr SE) in 2021; the figure may describe the old pitch. Source: https://en.wikipedia.org/wiki/Georgia_State_Panthers_men%27s_soccer' }],
+    roof: 'open',
+  },
+  'fiu-baseball-stadium': {
+    id: 'fiu-baseball-stadium',
+    metroId: 'miami',
+    names: [{ name: 'FIU Baseball Stadium' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-80.380732, 25.7545317],
+    capacity: [{ seats: 2000, setup: 'baseball', note: 'Official (baseball). FIU. Source: https://fiusports.com/sports/2014/6/20/BB_0620143058/' }],
+    roof: 'open',
+  },
+  'corbett-stadium': {
+    id: 'corbett-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Corbett Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Corbett Soccer Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-82.4038458, 28.0600726],
+    capacity: [{ seats: 3000, setup: 'soccer', note: 'Official (soccer). South Florida. "3,000+" with the berm; the grandstand seats nearly 1,000. Source: https://gousfbulls.com/sports/2024/4/22/Corbett-stadium-nar' }],
+    roof: 'open',
+  },
+  'the-corral': {
+    id: 'the-corral',
+    metroId: 'tampa',
+    names: [{ name: 'The Corral' }],
+    // OpenStreetMap point for the Yuengling Center it is attached to; the gym has no point of its own.
+    location: [-82.4066241, 28.0592444],
+    capacity: [{ seats: 1000, note: 'Official (volleyball). South Florida. Source: https://gousfbulls.com/news/2016/8/3/211100125' }],
+    roof: 'indoor',
+  },
+  'usf-softball-stadium': {
+    id: 'usf-softball-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'USF Softball Stadium' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-82.4044619, 28.0580906],
+    capacity: [{ seats: 1600, note: 'Official (softball). South Florida. 1,500-seat grandstand plus pavilions. Source: https://gousfbulls.com/sports/2024/5/21/softball-stadium-nar' }],
+    roof: 'open',
+  },
+  'reese-smith-jr-field': {
+    id: 'reese-smith-jr-field',
+    metroId: 'nashville',
+    names: [{ name: 'Reese Smith Jr. Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Reese Smith Jr Field', 'Reese Smith Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-86.3665403, 35.8511274],
+    capacity: [{ seats: 2600, setup: 'baseball', note: 'Official (baseball). Middle Tennessee, Murfreesboro. Source: https://goblueraiders.com/facilities/reese-smith-jr-field/10' }],
+    roof: 'open',
+  },
+  'kean-hall': {
+    id: 'kean-hall',
+    metroId: 'nashville',
+    names: [{ name: 'Kean Hall' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Henry A. Kean Hall'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-86.827351, 36.1661657],
+    capacity: [{ seats: 2500, note: 'Official (volleyball). Tennessee State. Source: https://tsutigers.com/facilities/kean-hall/6' }],
+    roof: 'indoor',
+  },
+  'lipscomb-soccer-complex': {
+    id: 'lipscomb-soccer-complex',
+    metroId: 'nashville',
+    names: [{ name: 'Lipscomb Soccer Complex' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-86.8011776, 36.1017469],
+    capacity: [{ seats: 1500, setup: 'soccer', note: 'Reported (soccer). Lipscomb. The school lists no facilities online; about 630 seats, the rest standing. Source: https://en.wikipedia.org/wiki/Lipscomb_Bisons_men%27s_soccer' }],
+    roof: 'open',
+  },
+  'dail-soccer-field': {
+    id: 'dail-soccer-field',
+    metroId: 'raleigh-durham',
+    names: [{ name: 'Dail Soccer Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Dail Soccer Stadium', 'Dail Soccer Field/Track Complex'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-78.6692982, 35.7816824],
+    capacity: [{ seats: 3000, setup: 'soccer', note: 'Reported (soccer). NC State. The school page gives no count. Source: https://en.wikipedia.org/wiki/Dail_Soccer_Field' }],
+    roof: 'open',
+  },
+  'pritchard-gymnasium': {
+    id: 'pritchard-gymnasium',
+    metroId: 'new-york',
+    names: [{ name: 'Pritchard Gymnasium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Pritchard Gym'],
+    // OpenStreetMap point for the campus; the gym (inside the Sports Complex, beside the arena) has no point of its own.
+    location: [-73.1205518, 40.9090809],
+    capacity: [{ seats: 1970, note: 'Reported (volleyball). Stony Brook, Stony Brook. Volleyball; the former basketball home. Source: https://en.wikipedia.org/wiki/Pritchard_Gymnasium' }],
+    roof: 'indoor',
+  },
+  'northwell-health-ice-center': {
+    id: 'northwell-health-ice-center',
+    metroId: 'new-york',
+    names: [{ name: 'Northwell Health Ice Center' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-73.5763912, 40.7269495],
+    capacity: [{ seats: 2500, setup: 'hockey', note: 'Reported (hockey). LIU hockey\'s home, East Meadow. Figure from LIU\'s news site; the Islanders own the rink. Source: https://headlines.liu.edu/?p=7625' }],
+    roof: 'indoor',
+  },
+  'shark-stadium': {
+    id: 'shark-stadium',
+    metroId: 'new-york',
+    names: [{ name: 'Shark Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Bethpage Federal Credit Union Stadium', 'LIU Football Stadium'],
+    // OpenStreetMap point for the LIU Post campus; the stadium has no point of its own.
+    location: [-73.5886898, 40.815158],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Official (football). LIU, Brookville. "Over 6,000"; field hockey and lacrosse too. Source: https://liuathletics.com/facilities/shark-stadium/1' }],
+    roof: 'open',
+  },
+  'yurcak-field': {
+    id: 'yurcak-field',
+    metroId: 'new-york',
+    names: [{ name: 'Yurcak Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['The Soccer Stadium at Yurcak Field'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-74.4637107, 40.5185364],
+    capacity: [{ seats: 5000, setup: 'soccer', note: 'Official (soccer). Rutgers, Piscataway. Grandstand; the berm holds several thousand more. Source: https://scarletknights.com/sports/2017/6/11/facilities-yurcak-html.aspx' }],
+    roof: 'open',
+  },
+  'bainton-field': {
+    id: 'bainton-field',
+    metroId: 'new-york',
+    names: [{ name: 'Bainton Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Rutgers Baseball Complex'],
+    // OpenStreetMap point for Fitch Road beside Yurcak Field; the park has no point of its own.
+    location: [-74.4656976, 40.5174223],
+    capacity: [{ seats: 1500, setup: 'baseball', note: 'Official (baseball). Rutgers, Piscataway. The school feed writes only "New Jersey" for its rows, so they stay unplaced. Source: https://scarletknights.com/sports/2017/6/11/facilities-baseball-html' }],
+    roof: 'open',
+  },
+  'owen-t-carroll-field': {
+    id: 'owen-t-carroll-field',
+    metroId: 'new-york',
+    names: [{ name: 'Owen T. Carroll Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Owen T. Carroll Field (Soccer)', 'Carroll Field'],
+    // OpenStreetMap point for the campus; the field has no point of its own.
+    location: [-74.2468921, 40.7433314],
+    capacity: [{ seats: 1800, setup: 'soccer', note: 'Official (soccer). Seton Hall, South Orange. Soccer; baseball\'s seated capacity at the same field is 261 since the 2020 rebuild. Source: https://shupirates.com/facilities/owen-t-carroll-field-soccer/16' }],
+    roof: 'open',
+  },
+  'cabot-center': {
+    id: 'cabot-center',
+    metroId: 'boston',
+    names: [{ name: 'Cabot Center' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Solomon Court', 'Cabot Physical Education Center', 'Cabot Gym'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-71.0897007, 42.3395251],
+    capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Northeastern. Solomon Court; volleyball and women\'s basketball, and men\'s basketball while Matthews Arena is closed. Source: https://nuhuskies.com/sports/2013/4/3/GEN_0403130440' }],
+    roof: 'indoor',
+  },
+  'parsons-field': {
+    id: 'parsons-field',
+    metroId: 'boston',
+    names: [{ name: 'Parsons Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Friedman Diamond'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-71.1140839, 42.3372864],
+    capacity: [{ seats: 3000, setup: 'baseball', note: 'Official (baseball). Northeastern, Brookline. The baseball diamond\'s figure; soccer and lacrosse share the ground. Source: https://nuhuskies.com/sports/2010/3/25/GEN_0325100521' }],
+    roof: 'open',
+  },
+  'case-gym': {
+    id: 'case-gym',
+    metroId: 'boston',
+    names: [{ name: 'Case Gym' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Case Gymnasium', 'The Roof', 'Case Center', 'Case Gym – "The Roof"'],
+    // OpenStreetMap point for the Case Physical Education Center (285 Babcock St), the gym's building.
+    location: [-71.1203071, 42.3540666],
+    capacity: [{ seats: 1800, setup: 'basketball', note: 'Official (basketball). Boston University. Source: https://goterriers.com/facilities/case-gym-the-roof/17' }],
+    roof: 'indoor',
+  },
+  'walter-brown-arena': {
+    id: 'walter-brown-arena',
+    metroId: 'boston',
+    names: [{ name: 'Walter Brown Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Walter A. Brown Arena'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-71.1203527, 42.3539611],
+    capacity: [{ seats: 3806, setup: 'hockey', note: 'Official (hockey). Boston University. Women\'s hockey; men\'s moved to Agganis Arena in 2005. Source: https://goterriers.com/facilities/walter-brown-arena/14' }],
+    roof: 'indoor',
+  },
+  'newton-campus-soccer-field': {
+    id: 'newton-campus-soccer-field',
+    metroId: 'boston',
+    names: [{ name: 'Newton Campus Soccer Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Newton Soccer Field', 'Newton Campus Lacrosse & Soccer Field'],
+    // OpenStreetMap point for 885 Centre St, the field's address on the Newton campus; the field has no point of its own.
+    location: [-71.194702, 42.3417969],
+    capacity: [{ seats: 1800, setup: 'soccer', note: 'Reported (soccer). Boston College, Newton. Source: https://en.wikipedia.org/wiki/Newton_Campus_Soccer_Field' }],
+    roof: 'open',
+  },
+  'kennedy-family-athletic-complex': {
+    id: 'kennedy-family-athletic-complex',
+    metroId: 'boston',
+    names: [{ name: 'Costello Athletic Center' }, { name: 'Kennedy Family Athletic Complex', from: '2025-10-15' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Costello Gym'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-71.3241431, 42.6555426],
+    capacity: [{ seats: 2000, setup: 'basketball', note: 'Reported (basketball). UMass Lowell, Lowell. The 1967 building, renamed at its Oct 15, 2025 dedication. Source: https://en.wikipedia.org/wiki/Kennedy_Family_Athletic_Complex' }],
+    roof: 'indoor',
+  },
+  'nicoson-hall': {
+    id: 'nicoson-hall',
+    metroId: 'indianapolis',
+    names: [{ name: 'Nicoson Hall' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Ray Skillman Court', 'Nicoson Hall/Ray Skillman Court'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-86.1318902, 39.7087835],
+    capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). UIndy. Source: https://athletics.uindy.edu/facilities/nicoson-hall-ray-skillman-court/4' }],
+    roof: 'indoor',
+  },
+  'michael-a-carroll-stadium': {
+    id: 'michael-a-carroll-stadium',
+    metroId: 'indianapolis',
+    names: [{ name: 'Michael A. Carroll Stadium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Carroll Stadium', 'Michael A. Carroll Track & Soccer Stadium', 'IUPUI Carroll Stadium'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-86.1789666, 39.7710116],
+    capacity: [{ seats: 10000, setup: 'soccer', note: 'Official (soccer). IU Indy. Soccer and track; Wikipedia says 12,111. Source: https://iuindyjags.com/facilities/michael-a-carroll-stadium/7' }],
+    roof: 'open',
+  },
+  'buckeye-field': {
+    id: 'buckeye-field',
+    metroId: 'columbus',
+    names: [{ name: 'Buckeye Field' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Buckeye Field (SB)'],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-83.0259673, 40.0119291],
+    capacity: [{ seats: 1500, note: 'Official (softball). Ohio State. Source: https://ohiostatebuckeyes.com/sports/2023/5/24/softball-field' }],
+    roof: 'open',
+  },
+  'woodling-gymnasium': {
+    id: 'woodling-gymnasium',
+    metroId: 'cleveland',
+    names: [{ name: 'Woodling Gymnasium' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Woodling Gym'],
+    // OpenStreetMap point for the campus; the gym (in the Physical Education Center) has no point of its own.
+    location: [-81.6750871, 41.5025834],
+    capacity: [{ seats: 3000, note: 'Official (volleyball). Cleveland State. Volleyball; the former basketball home. Source: https://csuvikings.com/facilities/woodling-gymnasium/7' }],
+    roof: 'indoor',
+  },
+  'krenzler-field': {
+    id: 'krenzler-field',
+    metroId: 'cleveland',
+    names: [{ name: 'Krenzler Field' }],
+    // OpenStreetMap point for the campus; the field (E 18th St) has no point of its own.
+    location: [-81.6750871, 41.5025834],
+    capacity: [{ seats: 1680, setup: 'soccer', note: 'Official (soccer). Cleveland State. Source: https://csuvikings.com/facilities/krenzler-field/3' }],
+    roof: 'open',
+  },
+  'titan-field': {
+    id: 'titan-field',
+    metroId: 'detroit',
+    names: [{ name: 'Titan Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-83.1359768, 42.4162437],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Reported (soccer). Detroit Mercy. The school\'s own 2015-16 game notes (1,000) over Wikipedia\'s 3,000; the school lists no facility page. Source: https://en.wikipedia.org/wiki/Detroit_Mercy_Titans_men%27s_soccer' }],
+    roof: 'open',
+  },
+  'victory-heights-arena': {
+    id: 'victory-heights-arena',
+    metroId: 'pittsburgh',
+    names: [{ name: 'Victory Heights Arena' }],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
+    aliases: ['Victory Heights', 'Victory Heights Arena and Sports Performance Center'],
+    // OpenStreetMap point for the Victory Heights district on upper campus; the 2026 building is not drawn yet.
+    location: [-79.9613446, 40.4446435],
+    capacity: [{ seats: 3600, note: 'Official (volleyball). Pitt. Volleyball, wrestling and gymnastics; replaces Fitzgerald Field House. Source: https://pittsburghpanthers.com/facilities/victory-heights-arena-and-sports-performance-center/95' }],
+    roof: 'indoor',
+  },
+  'ambrose-urbanic-field': {
+    id: 'ambrose-urbanic-field',
+    metroId: 'pittsburgh',
+    names: [{ name: 'Ambrose Urbanic Field' }],
+    // OpenStreetMap point for the building, not an entrance.
+    location: [-79.9672972, 40.4446095],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). Pitt. Petersen Sports Complex. Source: https://pittsburghpanthers.com/facilities/ambrose-urbanic-field/24' }],
     roof: 'open',
   },
 };
