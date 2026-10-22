@@ -58,7 +58,7 @@ One table per city, one row per room, largest first, with the fields above. Then
 
 ## Continuation pastes
 
-The research delivers one or two cities per pass. Each continuation paste says where to pick up and gives the refreshed rooms-on-file list for the next cities (from `src/data/venues.ts` on the date of the paste, current name and largest figure on file), so the research never adds a room the app already has. Answers so far: New York and Los Angeles (answer 1), New York continued (answer 2), Chicago (answer 3), Dallas–Fort Worth and Houston (answer 4).
+The research delivers one or two cities per pass. Each continuation paste says where to pick up and gives the refreshed rooms-on-file list for the next cities (from `src/data/venues.ts` on the date of the paste, current name and largest figure on file), so the research never adds a room the app already has. Answers so far: New York and Los Angeles (answer 1), New York continued (answer 2), Chicago (answer 3), Dallas–Fort Worth and Houston (answer 4), Washington, DC and Philadelphia (answer 5), Atlanta, Miami and Phoenix (answer 6).
 
 ### Continuation 5 (Oct 22, 2026): Washington, DC and Philadelphia
 
@@ -93,4 +93,22 @@ Atlanta: Mercedes-Benz Stadium (71,000); EchoPark Speedway (71,000); Bobby Dodd 
 Miami: Miami Stadium, the NFL stadium (64,767); Homestead-Miami Speedway (46,000); loanDepot park (36,742); Nu Stadium at Miami Freedom Park (26,700); Amerant Bank Arena (23,000); Chase Stadium (21,550); Pitbull Stadium (20,000); Kaseya Center (19,600); Watsco Center (7,972); Hard Rock Live (7,000); Beyond Bancard Field at NSU (7,000); FIU Arena (5,000); The Fillmore Miami Beach at the Jackie Gleason Theater (2,700); Broward Center for the Performing Arts (2,658); Adrienne Arsht Center, Ziff Ballet Opera House (2,400); Adrienne Arsht Center, Knight Concert Hall (2,200); FIU Baseball Stadium (2,000); FPL Solar Amphitheater at Bayfront Park (no figure).
 
 Phoenix: State Farm Stadium (63,400); Mountain America Stadium (53,599); Chase Field (48,633); Phoenix Raceway (42,000); Talking Stick Resort Amphitheatre (20,106); Desert Diamond Arena (19,000); Mortgage Matchup Center (17,071); Sloan Park (15,000); Desert Financial Arena (14,198); Camelback Ranch–Glendale (13,500); Peoria Sports Complex (12,339); Scottsdale Stadium (12,000); Salt River Fields at Talking Stick (11,000); Surprise Stadium (10,714); Hohokam Stadium (10,500); American Family Fields of Phoenix (10,000); Phoenix Rising Soccer Stadium (10,000); Tempe Diablo Stadium (9,558); Goodyear Ballpark (9,500); Phoenix Municipal Stadium (7,800); Global Credit Union Arena (7,000); GCU Stadium (6,000); Mullett Arena (5,000); Arizona Financial Theatre (5,000); Brazell Field at GCU Ballpark (4,000); Arizona Veterans Memorial Coliseum (no figure); Firebird Motorsports Park (no figure).
+```
+
+### Continuation 7 (Oct 22, 2026): Boston, then the San Francisco Bay Area
+
+Status: installment 6 (Atlanta, Miami, Phoenix) is saved as `small-rooms-big-cities-answer-6.md`. Next: Boston, then the Bay Area, the brief's two "if there is time" cities; the list ends there.
+
+```
+Continue the small-rooms research with Boston, then the San Francisco Bay Area, the brief's last two cities. Keep the same brief, rules, labels (official / reported / estimated) and output: one table per city, largest first, then the near-the-line exclusions, the unconfirmed candidates, closed or superseded rooms useful for event history, corrections to rooms already on file, the pages that would not load, and a short "Further out" list of rooms outside the city's boundary. Deliver this as installment 7, a new file; do not repeat earlier cities. Stop when both cities are done and say so.
+
+Boundaries (these override the brief's wording where they differ):
+- Boston: the Boston–Cambridge–Newton metro core, with the Foxborough / Mansfield corridor and Lowell at its edges. Worcester, Providence, Manchester and the New Hampshire seacoast are outside; list a room there under "Further out", not as an addition.
+- Bay Area: San Francisco, Alameda, Contra Costa, San Mateo and Santa Clara counties only (five, not the brief's nine). Marin, Sonoma, Napa, Solano and Santa Cruz rooms go under "Further out".
+
+Deduplicate against these rooms on file (Oct 22, 2026; largest figure on file). A room on this list is corrected, not added; a room held with a blank figure is welcome to get one.
+
+Boston: Boston Stadium (64,628); Alumni Stadium (44,500); Fenway Park (37,755); Harvard Stadium (25,000); Xfinity Center (19,900); TD Garden (19,156); Nickerson Field (9,871); Conte Forum (8,606); Tsongas Arena (7,800); Agganis Arena (7,200); MGM Music Hall at Fenway (5,009); Rockland Trust Bank Pavilion (5,000); The TRACK at New Balance (5,000); Walter Brown Arena (3,806); Wang Theatre (3,500); Roadrunner (3,500); Jordan Field (3,000); Parsons Field (3,000); Orpheum Theatre (2,700); House of Blues Boston (2,200); Kennedy Family Athletic Complex (2,000); Case Gym (1,800); Newton Campus Soccer Field (1,800); Cabot Center (1,500); Big Night Live (1,400); Royale (1,200).
+
+Bay Area: Levi's Stadium (68,827); California Memorial Stadium (62,467); Oakland Coliseum (53,200); Stanford Stadium (50,424); Oracle Park (41,265); CEFCU Stadium (30,456); Shoreline Amphitheatre (22,500); Edwards Stadium (22,000); Oakland Arena (19,596); Chase Center (19,500); SAP Center (18,543); PayPal Park (18,000); Cow Palace (16,500); Toyota Pavilion at Concord (12,500); Haas Pavilion (11,858); Kezar Stadium (10,000); Greek Theatre (8,500); Bill Graham Civic Auditorium (8,500); Frost Amphitheater (8,000); Maples Pavilion (7,233); Stevens Stadium (6,800); Provident Credit Union Event Center (6,000); Saint Mary's Stadium (5,500); Leavey Center (4,200); University Credit Union Pavilion (3,500); War Memorial at The Sobrato Center (3,100); Negoesco Stadium (3,000).
 ```
