@@ -1020,7 +1020,9 @@ export const VENUES: Record<string, Venue> = {
     id: 'xfinity-center',
     metroId: 'boston',
     carShare: 0.95,
-    names: [{ name: 'Xfinity Center' }, { name: 'Comcast Center' }],
+    // Comcast Center became Xfinity Center at the turn of 2013–2014 (reported January 2014; exact day unconfirmed); the
+    // undated pair showed the old name (found Oct 22, 2026).
+    names: [{ name: 'Comcast Center' }, { name: 'Xfinity Center', from: '2014-01-01' }],
     location: [-71.2196119, 41.9924449],
     ticketmasterIds: ['KovZpZAEAElA'],
     capacity: [{ seats: 19900, setup: 'concert', note: 'Reported (Globe, 2026). Lawn/GA not fixed seats. Mansfield corridor exception. Source: venue table A05.' }],
@@ -10312,7 +10314,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'indianapolis-motor-speedway',
     metroId: 'indianapolis',
     carShare: 0.93,
-    names: [{ name: 'Indianapolis Motor Speedway' }, { name: 'IMS' }],
+    names: [{ name: 'IMS' }, { name: 'Indianapolis Motor Speedway' }],
     location: [-86.2336932, 39.7903186],
     ticketmasterIds: ['KovZpZAaJetA'],
     // Round-2 rule: conflicting estimates (AP 275,000 vs 250,000 vs 257,325) are not stored; blank until one official figure (BACKLOG).
@@ -10365,10 +10367,12 @@ export const VENUES: Record<string, Venue> = {
     id: 'gainbridge-fieldhouse',
     metroId: 'indianapolis',
     carShare: 0.85,
+    // Order is history: an undated name after a dated one always wins (fixed Oct 22, 2026; the app showed Conseco).
+    // Gainbridge from Sept 27, 2021, "with immediate effect" (Pacers' announcement, via Wikipedia).
     names: [
-      { name: 'Gainbridge Fieldhouse' },
-      { name: 'Bankers Life Fieldhouse', from: '2011-01-01' },
       { name: 'Conseco Fieldhouse' },
+      { name: 'Bankers Life Fieldhouse', from: '2011-01-01' },
+      { name: 'Gainbridge Fieldhouse', from: '2021-09-27' },
     ],
     location: [-86.1555024, 39.7639331],
     ticketmasterIds: ['KovZpZA6keIA', 'Za5ju3rKuqZDveWA61G_tCstLkZixopaTf'],
@@ -11192,7 +11196,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'ottawa-gatineau',
     // Estimated (0.52, measured 2014 bus+shuttle aggregate for Redblacks ticket holders).
     carShare: 0.52,
-    names: [{ name: 'TD Place Stadium' }, { name: 'Stade Place TD' }, { name: 'Frank Clair Stadium' }],
+    names: [{ name: 'Stade Place TD' }, { name: 'Frank Clair Stadium' }, { name: 'TD Place Stadium' }],
     location: [-75.6835457, 45.3984326],
     capacity: [
       { seats: 24000, setup: 'football', note: 'Reported fixed seating for CFL/soccer. Temporary Grey Cup expansion to nearly 36,000 (2017) is not stored. Field rental 10,200 is a setup, not seats. Source: venue table A1.' },
@@ -11206,9 +11210,9 @@ export const VENUES: Record<string, Venue> = {
     // Estimated (0.60): comparison to Lansdowne transit access; no measured split.
     carShare: 0.6,
     names: [
-      { name: 'The Arena at TD Place' },
       { name: 'TD Place Arena' },
       { name: 'Ottawa Civic Centre' },
+      { name: 'The Arena at TD Place' },
     ],
     location: [-75.6835457, 45.3984326],
     ticketmasterIds: ['401513'],
@@ -11222,7 +11226,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'ottawa-gatineau',
     // Estimated (0.92): derived from measured 1999–2000 transit share (~3.2% of hockey attendance).
     carShare: 0.92,
-    names: [{ name: 'Canadian Tire Centre' }, { name: 'Centre Canadian Tire' }, { name: 'Scotiabank Place' }, { name: 'Corel Centre' }],
+    names: [{ name: 'Centre Canadian Tire' }, { name: 'Scotiabank Place' }, { name: 'Corel Centre' }, { name: 'Canadian Tire Centre' }],
     location: [-75.9268973, 45.2969069],
     ticketmasterIds: ['KovZpZA7dnJA'],
     capacity: [
@@ -11376,8 +11380,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [
       { name: 'Scottrade Center' },
-      { name: 'Enterprise Center', from: '2018-07-01' },
       { name: 'Kiel Center' },
+      { name: 'Enterprise Center', from: '2018-07-01' },
     ],
     location: [-90.20262, 38.626801],
     ticketmasterIds: ['KovZpa2DJe', 'KovZ917ASnu'],
@@ -11396,8 +11400,9 @@ export const VENUES: Record<string, Venue> = {
       { name: 'UMB Bank Pavilion' },
       { name: 'Verizon Wireless Amphitheater' },
       { name: 'Hollywood Casino Amphitheatre', from: '2014-01-01' },
-      { name: 'Hollywood Casino Amphitheater' },
     ],
+    // The -er spelling some sellers use; matched, never shown (it sat last, undated, and showed on every date).
+    aliases: ['Hollywood Casino Amphitheater'],
     location: [-90.470094, 38.74481],
     ticketmasterIds: ['KovZpZAEAnaA'],
     // STL2 with the IND4 lawn rule (Kylie, Oct 14, 2026): the total with lawn, estimated. 6,805 pavilion / 19,000 standing also reported (The Vendry).
@@ -11408,7 +11413,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'the-muny',
     metroId: 'st-louis',
     carShare: 0.86,
-    names: [{ name: 'The Muny' }, { name: 'Municipal Opera' }],
+    names: [{ name: 'Municipal Opera' }, { name: 'The Muny' }],
     location: [-90.280229, 38.640171],
     capacity: [
       {
@@ -11661,7 +11666,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'salt-lake-city',
     // Agency estimate anchor (~20% TRAX at BYU–Utah 2024); car share derived (city-type V04).
     carShare: 0.75,
-    names: [{ name: 'Rice-Eccles Stadium' }, { name: 'Rice Stadium' }],
+    names: [{ name: 'Rice Stadium' }, { name: 'Rice-Eccles Stadium' }],
     location: [-111.8489131, 40.7598165],
     ticketmasterIds: ['KovZpZAdEt6A'],
     capacity: [
@@ -11698,7 +11703,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'jon-m-huntsman-center',
     metroId: 'salt-lake-city',
     carShare: 0.82,
-    names: [{ name: 'Jon M. Huntsman Center' }, { name: 'University of Utah Special Events Center' }],
+    names: [{ name: 'University of Utah Special Events Center' }, { name: 'Jon M. Huntsman Center' }],
     location: [-111.8387946, 40.7620351],
     ticketmasterIds: ['KovZpZA1EvFA'],
     capacity: [
@@ -11938,7 +11943,7 @@ export const VENUES: Record<string, Venue> = {
   'edmonton-convention-centre': {
     id: 'edmonton-convention-centre',
     metroId: 'edmonton',
-    names: [{ name: 'Edmonton Convention Centre' }, { name: 'Shaw Conference Centre' }],
+    names: [{ name: 'Shaw Conference Centre' }, { name: 'Edmonton Convention Centre' }],
     location: [-113.4858137, 53.5411497],
     ticketmasterIds: ['KovZpaKSme'],
     // EDM3 (Kylie, Oct 14): muted. Convention halls aren't venue rows, so no capacity is stored; with no size the room
@@ -12941,7 +12946,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'michigan-stadium',
     metroId: 'detroit',
     carShare: 0.80,
-    names: [{ name: 'Michigan Stadium' }, { name: 'The Big House' }],
+    names: [{ name: 'The Big House' }, { name: 'Michigan Stadium' }],
     location: [-83.7478267, 42.2658285],
     ticketmasterIds: ['KovZpZAEvn7A'],
     capacity: [{
@@ -12984,7 +12989,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'little-caesars-arena',
     metroId: 'detroit',
     carShare: 0.88,
-    names: [{ name: 'Little Caesars Arena' }, { name: 'Detroit Events Center' }],
+    names: [{ name: 'Detroit Events Center' }, { name: 'Little Caesars Arena' }],
     location: [-83.055, 42.34111],
     ticketmasterIds: ['KovZ917A25V'],
     capacity: [
@@ -13011,7 +13016,7 @@ export const VENUES: Record<string, Venue> = {
   'crisler-center': {
     id: 'crisler-center',
     metroId: 'detroit',
-    names: [{ name: 'Crisler Center' }, { name: 'Crisler Arena' }],
+    names: [{ name: 'Crisler Arena' }, { name: 'Crisler Center' }],
     location: [-83.74669, 42.26502],
     ticketmasterIds: ['KovZpZAF6nAA'],
     capacity: [{
@@ -13342,7 +13347,7 @@ export const VENUES: Record<string, Venue> = {
   'petersen-events-center': {
     id: 'petersen-events-center',
     metroId: 'pittsburgh',
-    names: [{ name: 'Petersen Events Center' }, { name: 'The Pete' }],
+    names: [{ name: 'The Pete' }, { name: 'Petersen Events Center' }],
     location: [-79.9621193, 40.4440003],
     ticketmasterIds: ['KovZpa3-7e'],
     capacity: [
@@ -13489,7 +13494,7 @@ export const VENUES: Record<string, Venue> = {
   'upmc-cooper-fieldhouse': {
     id: 'upmc-cooper-fieldhouse',
     metroId: 'pittsburgh',
-    names: [{ name: 'UPMC Cooper Fieldhouse' }, { name: 'A.J. Palumbo Center' }],
+    names: [{ name: 'A.J. Palumbo Center' }, { name: 'UPMC Cooper Fieldhouse' }],
     location: [-79.988138, 40.4377196],
     ticketmasterIds: ['Zkr9jZeve4', 'KovZpZAFkenA'],
     capacity: [
