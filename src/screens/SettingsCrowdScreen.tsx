@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { CROWD_RANGE_TOP, crowdRangeLabel, crowdRangeOf, getPersonalLog, setCrowdRange, subscribePersonalLog, type CrowdRange } from '../data';
+import { FurtherOutInfo } from '../components/FurtherOut';
 
 const STOP = 5000;
 const LABELS = [0, 20000, 40000, 60000, CROWD_RANGE_TOP];
@@ -151,10 +152,11 @@ export function CrowdSizeSettings() {
       {/* Further out (Kylie, Oct 19–20, 2026): its own two switches, both on; the line under the heading says what
           the group is (Kylie, Oct 20: "needs a helper explanation"; wording and the unbroken "2-hour", Oct 20 afternoon). */}
       <div className="settings">
-        <div className="settings-heading">Further out</div>
-        <p className="you-fine">
-          Big events (5,000+) within about a <span style={{ whiteSpace: 'nowrap' }}>2-hour</span> drive. They never count toward a date's verdict.
-        </p>
+        {/* The definition sits behind the same (i) as on the event page (Kylie, Oct 21, 2026: "the same info icon on
+            settings as well"); it was a line under the heading from Oct 20. */}
+        <div className="settings-heading settings-heading-info">
+          Further out <FurtherOutInfo />
+        </div>
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherMapOff} onClick={() => toggle({ furtherMapOff: !saved.furtherMapOff })}>
           <span>Show on the map</span>
           <span className="settings-value">{saved.furtherMapOff ? 'Off' : 'On'}</span>

@@ -72,6 +72,7 @@ import { milesBetween } from '../lib/windows';
 import { TitleText } from '../components/TitleText';
 import { eventFromGame, eventFromStub, gameRefFromId, getTeamSchedule, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
 import { BackLink } from '../components/BackLink';
+import { FurtherOutInfo } from '../components/FurtherOut';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
@@ -266,7 +267,12 @@ export function EventScreen() {
           {e.start ? ` · ${clockTime(e.start)}` : ''}
           {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>
-        {further && <div className="event-further">Further out</div>}
+        {/* The (i) opens the definition (Kylie, Oct 21, 2026). */}
+        {further && (
+          <div className="event-further">
+            Further out <FurtherOutInfo />
+          </div>
+        )}
         <FactList facts={eventFacts(e, logged)} />
         {/* No ticket line (build 6, item 12): hidden, not deleted; the .ticket-line style stays for its return. */}
         {a && (

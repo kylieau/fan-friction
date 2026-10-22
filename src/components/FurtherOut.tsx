@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { VENUES, venueNameOn, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
@@ -9,6 +10,65 @@ import { RowBody, spokenRow } from './DayRow';
  * within about a 2-hour drive. The same rows as the lineup, with no friction ring or occasion tag (they never reach
  * the formula), and a second line of room · town · drive.
  */
+
+/**
+ * What "Further out" means, in one place (Kylie, Oct 20, 2026, the shorter line; Oct 21: the same definition behind the
+ * (i) on the event page and in Settings). "2-hour" stays on one line.
+ */
+export function FurtherOutSentence() {
+  return (
+    <>
+      Big events (5,000+) within about a <span style={{ whiteSpace: 'nowrap' }}>2-hour</span> drive. They never count toward a date's verdict.
+    </>
+  );
+}
+
+/**
+ * The small (i) after a "Further out" label (Kylie, Oct 21, 2026: "literally an info icon circle, which would open to a
+ * brief explanation"). It opens the same small card "About this verdict" uses, with the sentence above. The circle is
+ * the app's info dot, drawn inside a 44 px button so the tap area is real on every side and the look stays small.
+ */
+export function FurtherOutInfo() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <button type="button" className="further-info" aria-label="About further out" onClick={() => setOpen(true)}>
+        <span className="info-dot" aria-hidden="true">
+          i
+        </span>
+      </button>
+      {open && <FurtherOutCard onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
+function FurtherOutCard({ onClose }: { onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  return (
+    <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="further-out-title" onClick={onClose}>
+      {/* Its own text styling: in Settings the card sits inside an uppercase, letter-spaced heading. */}
+      <div className="home-card about-read further-out-card" onClick={(event) => event.stopPropagation()}>
+        <div className="about-read-head">
+          <h2 id="further-out-title" className="home-title">
+            Further out
+          </h2>
+          <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
+            ×
+          </button>
+        </div>
+        <p className="about-read-line">
+          <FurtherOutSentence />
+        </p>
+      </div>
+    </div>
+  );
+}
 
 /** "45 min drive", "1 hr drive", "1 hr 25 min drive": the stored drive rounded to 5 minutes. Always an estimate. */
 export function driveText(minutes: number): string {

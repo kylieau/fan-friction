@@ -2004,11 +2004,49 @@ button {
   color: var(--ink2);
 }
 
-/* A further-out event's quiet second line (Kylie, Oct 20, 2026, afternoon). */
+/* A further-out event's quiet second line (Kylie, Oct 20, 2026, afternoon), with its (i) (Oct 21). */
 .event-further {
   margin-top: -5px;
   font-size: 13px;
   color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* The (i) after "Further out" on the event page and in Settings: a 44 px button around the info dot's look,
+   pulled in by negative margins so the line's spacing stays that of the 18 px circle. */
+.further-info {
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  margin: -13px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.further-info .info-dot {
+  color: inherit;
+}
+
+/* The card keeps its own text styling wherever it opens (Settings' heading is uppercase and letter-spaced). */
+.further-out-card {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.settings-heading-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .event-stakes {
