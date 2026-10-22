@@ -91,3 +91,12 @@ export function costWords(cost: Cost | undefined): string {
   if (!c) return '';
   return c.free ? 'Free' : formatMoney(costTotal(c) ?? 0, c.currency);
 }
+
+/** The currency's own sign ("$", "MX$", "£"), for the amount box, so the box and the total agree. */
+export function currencySign(currency = 'USD'): string {
+  try {
+    return new Intl.NumberFormat(undefined, { style: 'currency', currency }).formatToParts(0).find((p) => p.type === 'currency')?.value ?? '$';
+  } catch {
+    return '$';
+  }
+}

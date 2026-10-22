@@ -6,6 +6,7 @@ import {
   WATCHED_COST_KINDS,
   costLine,
   costTotal,
+  currencySign,
   deviceCurrency,
   formatMoney,
   lineTotal,
@@ -96,7 +97,7 @@ export function CostRow({ cost, watched, onChange }: { cost: Cost | undefined; w
           <div key={`${l.kind}-${i}`} className="cost-line">
             <span className="cost-line-label">{COST_LABELS[l.kind]}</span>
             <label className="cost-amount">
-              <span aria-hidden>$</span>
+              <span aria-hidden>{currencySign(currency)}</span>
               <input
                 className="account-input"
                 inputMode="decimal"
@@ -170,6 +171,9 @@ function toDraft(cost: Cost | undefined, watched: boolean, opening: boolean): Dr
 
 function fromDraft(draft: Draft, currency: string): Cost | undefined {
   if (draft.free) return { free: true, lines: [], currency };
+  // A ticket typed as 0 with nothing else is Free (the chip's meaning), not a paid stub of $0.
+  const typed = draft.lines.filter((l) => l.amount.trim() !== '');
+  if (typed.length === 1 && typed[0].kind === 'ticket' && Number(typed[0].amount) === 0) return { free: true, lines: [], currency };
   return normalizeCost({
     currency,
     lines: draft.lines

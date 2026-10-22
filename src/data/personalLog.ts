@@ -1065,6 +1065,9 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     venue: venueLabel(event),
     // An Interested answer carries no tags (T02), so going through it drops them.
     ...(before?.userTags?.length && answer !== 'interested' ? { userTags: before.userTags } : {}),
+    // So do a same-day cost and seat (build 7): cost through Attending and Watching, a seat only while Attending.
+    ...(before?.cost && answer !== 'interested' ? { cost: before.cost } : {}),
+    ...(before?.seats && answer === 'attend' ? { seats: before.seats } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
