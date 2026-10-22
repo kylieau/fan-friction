@@ -7,7 +7,7 @@ social network, traffic app, or rewards program. Full reasoning:
 docs/product/direction.md. Read it before making any product decision.
 
 ## Starting and ending a session (every tool)
-Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which tool it was last synced) and `BACKLOG.md` (parked work). When Kylie says "resume the handoff" or "sync the handoff", follow `handoff/resume.md` or `handoff/sync.md`. Claude Code and Cursor also have `/resume-handoff` and `/sync-handoff`, which only point at those files. Edit the procedure there, not in a tool's own folder.
+Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which tool it was last synced) and `BACKLOG.md` (parked work). When Kylie says "resume the handoff" or "sync the handoff", follow `handoff/resume.md` or `handoff/sync.md`. Claude Code (`.claude/skills/`), Cursor (`.cursor/commands/`) and Codex (`.agents/skills/`) also have `/resume-handoff` and `/sync-handoff`, which only point at those files. Edit the procedure there, not in a tool's own folder.
 
 ## Firm rules
 - Never delete existing features. Reposition them to serve the log, and flag
