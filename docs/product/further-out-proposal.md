@@ -88,3 +88,15 @@ A favorite's further-out event always shows on its page and the Following timeli
 **A (lean): the row opens the event page.** The same place a search hit, a date-page row and a List row already go for a further-out event. The event page names the town, says "Further out", and holds Stub it and Attending. One rule: a further-out event's row opens its event page, every other event's row keeps its date page. **B: the row opens the date page, scrolled to the Further out card, the row tinted.** Rows keep opening dates, but the page still leads with a city verdict the event never counted toward, and the scroll jumps two screens. **C: leave it.**
 
 ![Now, A and B](further-out-row-tap-board.png)
+
+**Decided and built (Kylie, Oct 21, 2026, evening: "i'm good with A"):** one shared rule, `eventRowPath` and `loggedRowPath` in `src/lib/view.ts`, on every row above; measured on Los Angeles (commit `522c08c2`).
+
+## A helper for "Further out" on the event page (Oct 21, 2026, evening; mocks only, nothing built)
+
+Kylie, Oct 21: "i do want a helper that explains Further Out (or points the user to where that's defined?)". Today the event page carries only the quiet line "Further out" (her Oct 20 lean, no drive). The definition lives in one place, Settings › Further out: "Big events (5,000+) within about a 2-hour drive. They never count toward a date's verdict."
+
+- **H1:** the line explains it in one sentence: "Further out · about a 2-hour drive from Los Angeles. Never in a date's verdict." Two lines at phone width; no tap.
+- **H2:** the line stays "Further out" and becomes a link; a tap opens Settings › Further out, where the sentence and the two switches live.
+- **H3 (lean):** "Further out · never in a date's verdict ›", one line with the reason, and a tap opens Settings › Further out for the full definition. The city's name comes from the event's metro, so the line reads the same in every city.
+
+![Now, H1, H2 and H3](further-out-helper-board.png)
