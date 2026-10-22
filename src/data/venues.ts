@@ -14314,6 +14314,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Competition Gymnasium', 'Saville Centre', 'Competition Gym - Saville Community Sports Centre'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-113.5307207, 53.5022519],
+    ticketmasterIds: ['KovZpZAJe7EA'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). University of Alberta, South Campus. Competition Gym setup, basketball and volleyball; figure from the university\'s recreation site. Source: https://www.ualberta.ca/en/campus-community-recreation/facilities/competition-gymnasium.html' }],
     roof: 'indoor',
   },

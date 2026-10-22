@@ -4,6 +4,7 @@
 // Needs TICKETMASTER_API_KEY in .env.local or the environment.
 //   node scripts/ticketmaster-venues.mjs            (every venue without ids)
 //   node scripts/ticketmaster-venues.mjs --all      (every venue, re-checked)
+// Exact-name matches between 1.5 and 10 km are listed at the end for a hand look and never written.
 
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -32,7 +33,7 @@ const norm = (s) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function search(name, [lng, lat]) {
-  const url = `https://app.ticketmaster.com/discovery/v2/venues.json?keyword=${encodeURIComponent(name)}&latlong=${lat},${lng}&radius=5&unit=km&size=20&apikey=${KEY}`;
+  const url = `https://app.ticketmaster.com/discovery/v2/venues.json?keyword=${encodeURIComponent(name)}&latlong=${lat},${lng}&radius=10&unit=km&size=20&apikey=${KEY}`;
   for (let tries = 0; tries < 4; tries++) {
     const r = await fetch(url);
     if (r.status === 429) { await sleep(1500 * (tries + 1)); continue; }
@@ -45,6 +46,9 @@ async function search(name, [lng, lat]) {
 
 const found = new Map();
 const report = [];
+// Exact-name rooms farther than 1.5 km and within 10 km: listed for a hand look, never written (Kylie, Oct 22, 2026, the
+// census report's question 4; the dragstrip's second id sat 3.4 km from its point and hid the NHRA Finals).
+const far = [];
 for (const venue of Object.values(VENUES)) {
   if (metroFilter !== undefined && venue.metroId !== metroFilter) continue;
   if (!all && venue.ticketmasterIds?.length) continue;
@@ -66,12 +70,14 @@ for (const venue of Object.values(VENUES)) {
       // A lot, a tour, a suite, a tent or a club on the grounds is not the room; its own listings are add-ons.
       const addOn = /\b(parking|lot|tours?|suites?|club|chapiteau|big top|grounds|warehouse|plaza|pavilion at|theater at|lounge)\b/i.test(h.name) && !exact;
       if (!addOn && (same && d <= 1.5)) { ids.add(h.id); notes.push(`${h.name} (${h.id}, ${d.toFixed(2)} km)`); }
+      else if (!addOn && exact && d <= 10 && !ids.has(h.id)) far.push(`${venue.id} (${venue.metroId}): "${h.name}" ${h.id}, ${d.toFixed(2)} km, ${h.upcomingEvents?._total ?? 0} upcoming`);
     }
   }
   if (ids.size) found.set(venue.id, [...ids]);
   report.push(`${venue.id}: ${ids.size ? [...ids].join(', ') : 'no match'}${notes.length ? ' — ' + notes.join('; ') : ''}`);
 }
 console.log(report.join('\n'));
+if (far.length) console.log(`\nExact names farther than 1.5 km, not written (look at each by hand):\n${[...new Set(far)].join('\n')}`);
 
 // Write the ids into venues.ts, after each venue's `location` line.
 const file = path.join(root, 'src', 'data', 'venues.ts');
