@@ -1,6 +1,6 @@
 # Adding an event from a team's or artist's page
 
-Status: open, mock only. Written Oct 21, 2026 (late evening) by Claude Code, from Kylie's ask the same evening, at UCLA's exhibition against Cal Baptist ("it's like selecting rather than filling out brand new... defaults are already plugged in"), and her word that this is a new event, not only a new stub, so it sits beside build 7's logging work rather than inside it. Nothing is built.
+Status: decided (Kylie, Oct 21, 2026, late evening: both entry points, the card, the inclusion standard and the three confirmations; see product-decisions). Building from Oct 21, late evening. Written Oct 21, 2026 (late evening) by Claude Code, from Kylie's ask the same evening, at UCLA's exhibition against Cal Baptist ("it's like selecting rather than filling out brand new... defaults are already plugged in"), and her word that this is a new event, not only a new stub, so it sits beside build 7's logging work rather than inside it. Nothing is built.
 
 ## Why
 The feeds now carry most of what happens in a city's rooms (the league feeds, Ticketmaster's match-shaped sports listings since Oct 21, the schools' own calendar feeds since Oct 21). What no public source carries, by decision: shows sold only on AXS, DICE, See Tickets or Tixr (the Shrine's Chappell Roan nights), and box-office games at a school whose site is neither on Sidearm nor an opponent of one. Today those go in through "Add it yourself" on New stub: What, When, City, Where, then a Details block of type, sport, level, division and competition. Too many boxes for someone standing in a stadium (Kylie, Oct 13: "it has to be incredibly simple").
@@ -24,3 +24,12 @@ The feeds now carry most of what happens in a city's rooms (the league feeds, Ti
 - Whether a hand-added event reaches the shared catalog (lean: no; see above).
 - Whether the sheet is a bottom card (as drawn) or the full New stub page with the defaults filled.
 - The native time control clips "PM" in the mock at 393 px; a real phone shows its own picker.
+
+## Decided (Kylie, Oct 21, 2026, late evening)
+Both entry points, the bottom card, Save into the person's own log, and a path to the shared catalog with a standard and a mechanism:
+
+**The standard at Save.** A team or artist on file; a room on file; a date and a time; nothing already listed at that room, date and sport (else it matches the listing); signed in. "Official, ticketed" is enforced by the records, not a box: a sister's high-school game has neither a team nor a room on file (Kylie: "it shouldn't be for random things... official events... ticketed").
+
+**Pending until confirmed, three ways.** (1) A feed catches up and the entry matches its listing (exists). (2) A second account that doesn't follow the first adds the same team, room and date. (3) Kylie approves it: a Supabase row with an approved flag for v1, no admin screen until the queue is busy. Pending shows to the person and their followers, labeled "Added by a fan"; confirmed shows to everyone, sized like any game, label kept.
+
+**Build order.** Step 1: the two entry points, the card, the entry in the log with its qualifying flag and the "Added by a fan · Pending" label. Step 2: the submissions table (SQL for Kylie to paste), the second-person check and the approved rows entering the catalog at the nightly run.
