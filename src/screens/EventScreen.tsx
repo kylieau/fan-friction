@@ -26,6 +26,7 @@ import {
   feelsLikeLabel,
   isOpenAir,
   seatsLine,
+  costWords,
   storyFor,
   sizeTier,
   venueNameOn,
@@ -312,14 +313,17 @@ export function EventScreen() {
                 <LevelPill down value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
               </>
             )}
-            {you.kind !== 'interested' && (youRow?.userTags?.length ?? 0) > 0 && (
+            {/* Edit the whole stub (tags, seat, cost) whenever you have one (build 7, Locked; Kylie, Oct 21, 2026). A plan
+                while the date is ahead reads "Edit". */}
+            {you.kind !== 'interested' && (
               <button type="button" className="link-button" onClick={() => setSheet(true)}>
-                Edit
+                {you.kind === 'attended' || you.kind === 'watched' ? 'Edit stub' : 'Edit'}
               </button>
             )}
           </span>
         )}
         {logged?.seats && !logged.watched && seatsLine(logged.seats) && <span className="event-seats">{seatsLine(logged.seats)}</span>}
+        {logged?.cost && costWords(logged.cost) && <span className="event-seats">{costWords(logged.cost) === 'Free' ? 'Free ticket' : `You paid ${costWords(logged.cost)}`}</span>}
         {logged && <EntryLayer entry={logged} showLevel={false} />}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
@@ -800,6 +804,11 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
                 <span aria-hidden>·</span>
                 <LevelPill down value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(event.id, next)} />
               </>
+            )}
+            {you.kind !== 'interested' && (
+              <button type="button" className="link-button" onClick={() => setSheet(true)}>
+                {you.kind === 'attended' || you.kind === 'watched' ? 'Edit stub' : 'Edit'}
+              </button>
             )}
           </span>
         )}

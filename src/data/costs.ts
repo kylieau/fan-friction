@@ -84,3 +84,10 @@ export function costLine(cost: Cost | undefined): string {
   const total = costTotal(c) ?? 0;
   return c.lines.length === 1 ? formatMoney(total, c.currency) : `${formatMoney(total, c.currency)} · ${c.lines.length} lines`;
 }
+
+/** "Free" or the total alone ("$151"), for a status line; empty when never entered. */
+export function costWords(cost: Cost | undefined): string {
+  const c = normalizeCost(cost);
+  if (!c) return '';
+  return c.free ? 'Free' : formatMoney(costTotal(c) ?? 0, c.currency);
+}

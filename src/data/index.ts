@@ -504,7 +504,7 @@ export { suggestEvent, linkConfirmedSuggestions, isReviewAdmin, reviewQueue, set
 export { quickAddDefaults, saveQuickAdd, roomsIn, type QuickAddDefaults, type QuickAddInput, type QuickAddResult } from './quickAdd';
 export { markPlanSuggested } from './personalLog';
 export { favoriteSearchNames, searchFavoriteRecords, favoriteOfficialName } from './favorites';
-export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine } from './costs';
+export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine, costWords } from './costs';
 export { getTeamSchedule, nextTeamGame, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
 export { espnTeamUrl } from './sources/espnSource';
 export { entryOutcome, hoursAtGames, lengthLine, resultFor, scoreLine } from './results';

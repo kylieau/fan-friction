@@ -10,6 +10,9 @@ import {
   setWatchDetails,
   setRowTags,
   setEntrySeats,
+  setEntryCost,
+  setPlanCost,
+  setPlanSeats,
   tagSummaries,
   subscribeAccount,
   subscribePersonalLog,
@@ -35,6 +38,7 @@ import { TagChip } from './TagChip';
 import { LevelPill } from './LevelPill';
 import { TagsPanel } from './TagsPanel';
 import { SeatsRow } from './SeatsRow';
+import { CostRow } from './CostRow';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
 /**
@@ -268,7 +272,13 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
                 </button>
               </div>
             )}
-            {kind === 'attended' && entry && entry.kind !== 'live-broadcast' && <SeatsRow seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
+            {/* Seat and cost (build 7, §3.5; same-day logging, Locked option A): an Attended stub, and an Attending plan while
+                the game is on; both carry into the stub when the date passes. Cost on Watched and Watching too; never on
+                Interested. Tags, Seat and Cost read as one optional group: same blue, no divider. */}
+            {kind === 'attended' && entry && event.kind !== 'live-broadcast' && <SeatsRow seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
+            {kind === 'attending' && plan && event.kind !== 'live-broadcast' && <SeatsRow seats={plan.seats} onChange={(next) => setPlanSeats(plan.id, next)} />}
+            {(kind === 'attended' || kind === 'watched') && entry && <CostRow cost={entry.cost} watched={kind === 'watched'} onChange={(next) => setEntryCost(entry.id, next)} />}
+            {(kind === 'attending' || kind === 'watching') && plan && <CostRow cost={plan.cost} watched={kind === 'watching'} onChange={(next) => setPlanCost(plan.id, next)} />}
         <button type="button" className="gold-button stub-done" onClick={onClose}>
               Done
             </button>

@@ -6,9 +6,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | Step | State | Commit | Notes |
 |---|---|---|---|
 | 1. Groundwork | done | `92b2a35f` | StatCards, FrictionLadder, favoriteOfficialName, Cost type + setters, cost/seats on Plan and carried at settle, opponents on game stubs |
-| 2. Naming | done | (step 2 commit) | official names in search results, the Faves picker rows, New stub's team list |
-| 3. Cost row, blue rows, 44 pt seat line, Edit stub | next | | Codex review 1 after this |
-| 4. Routes and tab bar | | | Codex review 2 after this |
+| 2. Naming | done | `75184b41` | official names in search results, the Faves picker rows, New stub's team list |
+| 3. Cost row, blue rows, 44 pt seat line, Edit stub | done | (step 3 commit) | Codex review 1 after this |
+| 4. Routes and tab bar | next | | Codex review 2 after this |
 | 5. Upcoming | | | |
 | 6. Activity | | | Codex review 3 after this |
 | 7. Log an event sheet | | | |
@@ -36,6 +36,14 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - Team page header verified: `FavoritePage.tsx` already renders `isCollegeTeam ? teamLongName : team.name`; no change.
 - Long names wrap: `.log-title` and `.add-record-name` set no `white-space` or ellipsis, so nothing truncates.
 - Everything else (Upcoming/Following rows, Home strip, stub rows, FollowRow leads) still uses the shortcut helpers; untouched.
+
+### Step 3. Cost row, blue optional rows, seat-line tap size, Edit stub
+- `src/components/CostRow.tsx`: the collapsed "+ Add cost" row under Seat (same markup as Seat, so no divider); opened on Attended it presets one Ticket line with the cursor in the amount, "You paid · optional", `× qty` on the ticket line only, a plain Free chip, chips for the other categories in the locked order (Parking & Transit, Food & Drink, Merch, Other; Watched: Stream / PPV, Food & Drink, Other, no preset), one × per line, a running Total once there are two lines or a quantity. Saves as you type through `setEntryCost` / `setPlanCost`; a blank amount is dropped, so closing an untouched editor leaves "not entered".
+- StubSheet gates: Seat on Attended stubs **and Attending plans** (`setPlanSeats`), never on live broadcasts; Cost on Attended, Watched, Attending and Watching; never on Interested.
+- `.stub-tags-add` is action blue (`--fight` → `--action`): "+ Add tag", "+ Add seat" and "+ Add cost" match. Tag chips untouched (builder's call, left violet for now; revisited at step 8 if it clashes next to the friction tiles).
+- `.stub-seats-line` (the filled seat or cost line) gets the shared `::after` extension: measured 32 px tall with a −7 px/+7 px extension, so 46 px of tap area.
+- Event page: "Edit stub" shows whenever you have an Attended or Watched stub (was: only with tags); a plan while the date is ahead reads "Edit". Both render paths (catalog event, schedule game). A quiet "You paid $151" / "Free ticket" line sits under the seat line when a cost is entered (owner-only data on your own page).
+- Phone-size check: `.playwright-mcp/b7-cost-collapsed.png`, `b7-cost-open.png`, `b7-cost-lines.png` match mocks 21–23.
 
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
