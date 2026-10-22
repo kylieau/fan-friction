@@ -22,6 +22,11 @@
 //   5. A show the seller left without a genre (Undefined, Miscellaneous) is read like any other listing for 4.
 // Not built: the parent's product links (1a, unverified in the feed) and a "hide" outcome for season packages and
 // standalone venue tours (tours drop, as before). Checked by scripts/addon-filter-check.mjs.
+// Oct 22, 2026 (the step 2 follow-ups): the products a wider sports rule had let in on Oct 21 are add-ons by rule, not
+// only kept out by the match shape: a building tour sold as "<Something> Tour at <building>" ("Classic Tour at Yankee
+// Stadium", act "Yankee Stadium Tours"), a tram tour, a room's daily admission ("Belmont Park - General Admission",
+// act "Belmont Park Admission"; "Live Racing at Santa Anita Park"), and a pass sold beside a game ("Pinstripe Pass *
+// New York Yankees v. Tampa Bay Rays", layer 3). A named race day stays ("The Belmont Stakes - General Admission").
 
 import type { CrowdEvent } from '../types';
 
@@ -50,7 +55,17 @@ const KEEP = /\bwatch\s+part(?:y|ies)\b|\bfan\s+fest\b/i;
  * Layer 1: an act whose own name is a product, not a performer or a team. Short and product-like on purpose: a band
  * can be called almost anything, so bare "restaurant", "suite" or "tour" are not here.
  */
-const ADDON_ACT = /\bparking\b|\bestaciona(?:mi|i)ento\b|\bstationnement\b|\bdinner\s+reservations?\b|\breservaci[oó]n\b|\brepas\b|\bfan\s+access\b|\bplus\s+ups?\b|\bupsell\b/i;
+const ADDON_ACT = new RegExp(
+  [
+    String.raw`\bparking\b`, String.raw`\bestaciona(?:mi|i)ento\b`, String.raw`\bstationnement\b`, String.raw`\bdinner\s+reservations?\b`,
+    String.raw`\breservaci[oó]n\b`, String.raw`\brepas\b`, String.raw`\bfan\s+access\b`, String.raw`\bplus\s+ups?\b`, String.raw`\bupsell\b`,
+    // The building's own tours and its daily admission, filed as acts ("Yankee Stadium Tours", "Belmont Park Admission",
+    // "Live Racing at Santa Anita Park"): a product named after the room, never a performer.
+    String.raw`\b(?:venue|stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)\s+tours\b`,
+    String.raw`\badmission\b`, String.raw`\blive\s+racing\b`, String.raw`\btram\s+tours?\b`,
+  ].join('|'),
+  'i',
+);
 
 /** Add-on words strong enough on any listing that is not a show (research layer 4a). */
 const STRONG = new RegExp(
@@ -63,12 +78,14 @@ const STRONG = new RegExp(
     String.raw`\bclub\s+level\s+access\b`, String.raw`\bflag\s+bearer\b`, String.raw`\bfanboni\b`, String.raw`\bbench\s+(?:access|photo)\b`,
     String.raw`\bon-(?:ice|court|field)\b`, String.raw`\bpit\s+(?:pass|party)\b`, String.raw`\bfast\s*lane\b`, String.raw`\bearly\s+entry\b`,
     String.raw`\bbottomless\b`, String.raw`\bm\s*&\s*g\b`, String.raw`\badd[- ]on\b`,
+    // A room's race days and tram tours sold as a season-long product (Oct 22, 2026).
+    String.raw`\blive\s+racing\b`, String.raw`\btram\s+tours?\b`,
   ].join('|'),
   'i',
 );
 
 /** Every add-on word, strong or risky: what the leftover words of a parent match must be (layer 3). */
-const ADDON_WORDS = new RegExp(`${STRONG.source}|\\bsuites?\\b|\\brestaurant\\b|\\btailgate\\b|\\btunnel\\b|\\bpre-?\\s?game\\b|\\bpost-?\\s?game\\b|\\bwarm-?\\s?ups?\\b|\\bclub\\s+seats?\\b`, 'i');
+const ADDON_WORDS = new RegExp(`${STRONG.source}|\\bsuites?\\b|\\brestaurant\\b|\\btailgate\\b|\\btunnel\\b|\\bpre-?\\s?game\\b|\\bpost-?\\s?game\\b|\\bwarm-?\\s?ups?\\b|\\bclub\\s+seats?\\b|\\bpass(?:es)?\\b`, 'i');
 
 const BUILDING = String.raw`(?:venue|stadium|arena|ballpark|field|park|centre|center|garden|dome|coliseum)`;
 
@@ -94,9 +111,12 @@ const VENUE_TOUR = new RegExp(
 const LONE_BUILDING_TOUR = new RegExp(String.raw`\b${BUILDING}\s+tour\b`, 'i');
 const HAS_PARTS = /\s[-–|]\s|:\s/;
 
-/** Listings that are not shows: every building tour, plus a lone singular one ("Stadium Tour", "Garden Tour Experience"). */
+/** A tour sold at a building ("Classic Tour at Yankee Stadium"), never on a show, where a performer's tour could read so. */
+const TOUR_AT_BUILDING = new RegExp(String.raw`\btours?\s+at\s+(?:the\s+)?[\w'. ]*${BUILDING}\b`, 'i');
+
+/** Listings that are not shows: every building tour, a lone singular one ("Stadium Tour", "Garden Tour Experience"), a tour at a building. */
 function isVenueTourWide(name: string): boolean {
-  return VENUE_TOUR.test(name) || (LONE_BUILDING_TOUR.test(name) && !HAS_PARTS.test(name));
+  return VENUE_TOUR.test(name) || (LONE_BUILDING_TOUR.test(name) && !HAS_PARTS.test(name)) || TOUR_AT_BUILDING.test(name);
 }
 
 /** A matchup: "Spurs vs. Suns", "Broncos v Seahawks", "Nets at Hornets". */

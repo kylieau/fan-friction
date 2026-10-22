@@ -115,6 +115,9 @@ const LOOK_ALIKES = [
   ['Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks', 'show'],
   ['for KING + COUNTRY - A Drummer Boy Christmas The 2026 Arena Tour', 'show'],
   ['Morgan Wallen - I\'m The Problem Stadium Tour', 'special'],
+  // A performer's tour that names the room must stay (Oct 22, 2026: "tour at <building>" is a building tour only off a show).
+  ['Taylor Swift | The Eras Tour at SoFi Stadium', 'show'],
+  ['Cortaca Jug', 'game'],
 ];
 
 // Add-ons the old filter already dropped; they must stay dropped.
@@ -137,6 +140,12 @@ const STILL_DROPPED = [
   ['Los Angeles Coliseum Historic Tours', 'special'],
   ['All Access Pass – Climate Pledge Arena Tours', 'special'],
   ['Leafs VIP Guided Tour of Scotiabank Arena with alumni Darryl Sittler', 'special'],
+  // Oct 22, 2026: the products a wider sports rule had let in on Oct 21 (Yankee Stadium, Belmont Park, Santa Anita).
+  ['Classic Tour at Yankee Stadium', 'game'],
+  ['Classic Tour at Yankee Stadium', 'special'],
+  ['Seabiscuit Tram Tour', 'game'],
+  ['Live Racing at Santa Anita Park', 'game'],
+  ['Live Racing at Santa Anita Park', 'special'],
 ];
 
 // The research's look-alikes (section 3): real shows whose names carry add-on words.
@@ -155,12 +164,19 @@ const BY_ACT = [
   ['Olivia Dean', ['Centre Bell - Repas Restaurant Canti'], 'show'],
   ['Rush', ['Centre Bell - Stationnement'], 'special'],
   ['Estaciona-T', ['Estaciona-T - Estacionamiento - Mexico'], 'special'],
+  // Oct 22, 2026: a room's tours and daily admission filed as acts.
+  ['Glimpse of Greatness', ['Yankee Stadium Tours'], 'special'],
+  ['Belmont Park - General Admission', ['Belmont Park Admission'], 'game'],
+  ['Pumpkin Path & Fall Fun Fest', ['Live Racing at Santa Anita Park'], 'special'],
 ];
 // Real listings whose acts must not trip layer 1.
 const REAL_ACTS = [
   ['Arlo Guthrie', ['Arlo Guthrie'], 'show'],
   ['Lakers vs. Celtics', ['Los Angeles Lakers', 'Boston Celtics'], 'game'],
   ['Parquet Courts', ['Parquet Courts'], 'show'],
+  // A named race day is a day out (Oct 22, 2026): the act is the race, not the room's admission.
+  ['The Belmont Stakes - General Admission', ['The Belmont Stakes'], 'special'],
+  ['Belmont Stakes Racing Festival - 2-Day General Admission', ['The Belmont Stakes'], 'special'],
 ];
 
 // Layer 3: a same-room, same-date parent plus add-on words drops; other leftovers stay.
@@ -169,12 +185,15 @@ const PARENTED = [
   ['San Antonio Spurs v Phoenix Suns Post-Game Free Throw', ['San Antonio Spurs vs. Phoenix Suns']],
   ['Monster Jam Pit Party', ['Monster Jam']],
   ['Journey BetMGM Dinner Reservation', ['Journey']],
+  // A pass sold beside the game (Oct 22, 2026).
+  ['Pinstripe Pass * New York Yankees v. Tampa Bay Rays', ['New York Yankees vs. Tampa Bay Rays']],
 ];
 const NOT_PARENTED = [
   ['Leanne Morgan (Late Show)', ['Leanne Morgan']],
   ['Monster Jam', ['Monster Jam Pit Party']],
   ['Cavaliers vs. Knicks Watch Party', ['Cavaliers vs. Knicks']],
   ['Bruno Mars: The Romantic Tour', ['Bruno Mars']],
+  ['Belmont Stakes Racing Festival - 2-Day General Admission', ['The Belmont Stakes']],
 ];
 
 // Layer 5: a show the seller left without a genre is read like any other listing; one with a genre keeps the strict rule.
