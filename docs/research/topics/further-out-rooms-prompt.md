@@ -241,3 +241,76 @@ Mexico City (the app's Mexico City covers CDMX's 16 alcaldías plus the State of
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 4 (Oct 22, 2026): from Montreal
+
+Status: delivery 4 (Bay Area, Seattle, Toronto, Mexico City) is saved as `further-out-rooms-answer-4.md`. Next: Montreal, Vancouver, Detroit, Minneapolis–St. Paul.
+
+```
+Continue the Further out research from Montreal, in the brief's order: Montreal, Vancouver, Detroit, Minneapolis–St. Paul. Same rules, same table, same labels (official / reported / estimated), same "near the line", "shared with another covered city" and "could not confirm" sections per city, and the same downtown drive ranges with their planner sources. Deliver this as Delivery 5, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries.
+
+The app already has these rooms in the next four cities. Their towns are inside the city's own area; do not list these rooms or any other room in those towns as Further out. A room in another town is yours to judge by the metro rule you have been using; say which counties or regions you treated as outside.
+
+Montreal (the app's Montreal covers the island, Laval, Longueuil and the South Shore; Ottawa–Gatineau and Toronto are covered cities). Rooms on file; town; largest setup on file:
+- Olympic Stadium; Montreal; 56,000 (closed to events since December 2023)
+- Molson Stadium; Montreal; 25,012
+- Bell Centre; Montreal; 22,114
+- Saputo Stadium; Montreal; 20,801
+- IGA Stadium; Montreal; 11,991
+- Place Bell; Laval; 10,172
+- Claude-Robillard Sports Complex; Montreal; 6,375
+- CEPSUM Stadium; Montreal; 5,000
+
+Vancouver (the app's Vancouver covers Metro Vancouver, the regional district; Abbotsford and Victoria are outside; Seattle is a covered city across the border). Rooms on file; town; largest setup on file:
+- BC Place; Vancouver; 54,500
+- Rogers Arena; Vancouver; 19,700
+- Pacific Coliseum; Vancouver; 17,000
+- Thunderbird Arena; Vancouver (UBC); 7,000
+- Rogers Field at Nat Bailey Stadium; Vancouver; 6,500
+- Willoughby Stadium; Langley; 6,042
+- Freedom Mobile Arch; Vancouver; 6,000
+- Langley Events Centre; Langley; 5,276
+- Swangard Stadium (Burnaby), Thunderbird Stadium (UBC), PNE Agrodome, Queen Elizabeth Theatre, Orpheum, War Memorial Gym, Vogue Theatre, Chan Shun Concert Hall, Commodore Ballroom (Vancouver), Langley Events Centre Gymnasium (Langley), Massey Theatre (New Westminster), Bell Performing Arts Centre (Surrey); all under 5,000
+
+Detroit (the app's Detroit covers the six-county Detroit–Warren–Dearborn area plus Ann Arbor and Windsor, Ontario, as edge towns; Toronto, Cleveland and Columbus are covered cities). Rooms on file; town; largest setup on file:
+- Michigan Stadium; Ann Arbor; 107,601
+- Ford Field; Detroit; 65,000
+- Comerica Park; Detroit; 41,083
+- Little Caesars Arena; Detroit; 20,332
+- Crisler Center; Ann Arbor; 12,707
+- Calihan Hall; Detroit; 8,295
+- Meadow Brook Amphitheatre; Rochester Hills; 7,700
+- Yost Ice Arena; Ann Arbor; 6,637
+- Windsor Family Credit Union Centre; Windsor, Ontario; 6,450
+- Fox Theatre; Detroit; 5,048
+- The Colosseum at Caesars Windsor; Windsor, Ontario; 5,000
+- Pine Knob Music Theatre; Clarkston (Independence Township); no figure on file
+- Michigan Lottery Amphitheatre; Sterling Heights; no figure on file
+- Keyworth Stadium; Hamtramck; no figure on file
+- The Aretha; Detroit; no figure on file
+- Rooms under 5,000: Detroit Masonic Temple, Wayne State Fieldhouse, The Fillmore, Detroit Opera House, Sound Board, Fisher Theatre, Max M. Fisher Music Center, Harpos, Music Hall, Majestic Theatre, Saint Andrew's Hall, Titan Field (Detroit); Royal Oak Music Theatre (Royal Oak); Macomb Center for the Performing Arts (Clinton Township); Crofoot Ballroom (Pontiac)
+
+Minneapolis–St. Paul (the app's Minneapolis covers the seven-county Met Council core). Rooms on file; town; largest setup on file:
+- U.S. Bank Stadium; Minneapolis; 66,860
+- Huntington Bank Stadium; Minneapolis; 50,805
+- Target Field; Minneapolis; 39,504
+- Grand Casino Arena; Saint Paul; 20,554
+- Target Center; Minneapolis; 20,500
+- Allianz Field; Saint Paul; 19,400
+- Mystic Lake Amphitheater; Prior Lake (Shakopee Mdewakanton Sioux Community); 19,000
+- Williams Arena; Minneapolis; 14,625
+- Minnesota State Fair Grandstand; Falcon Heights; 13,000
+- 3M Arena at Mariucci; Minneapolis; 10,257
+- The Armory; Minneapolis; 8,400
+- CHS Field; Saint Paul; 7,210
+- Lee and Penny Anderson Arena; Saint Paul; 6,000
+- Legendary Roy Wilkins Auditorium; Saint Paul; 5,800
+- Maturi Pavilion; Minneapolis; 5,700
+- Twin Cities Orthopedics Performance Center; Eagan; 5,500
+- O'Shaughnessy Stadium; Saint Paul; 5,025
+- NSC Stadium; Blaine; no figure on file
+- Rooms under 5,000 in Minneapolis and Saint Paul (Ridder Arena, Northrop, Palace Theatre, Orpheum, State Theatre, Fillmore, First Avenue, Pantages, and the university's ballparks and soccer stadium)
+
+Stop at a clean break and say where you stopped.
+```
+
