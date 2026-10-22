@@ -50,8 +50,8 @@ export async function linkConfirmedSuggestions(): Promise<number> {
   return linked;
 }
 
-/** The review window (Kylie, Oct 21, 2026, late evening): a hand-added event is sent for review only inside it. Days. */
-export const REVIEW_WINDOW = { behind: 30, ahead: 180 };
+/** The review window (Kylie, Oct 21, 2026, late evening: 30 back, then "let's do 90 instead of 180"): a hand-added event is sent for review only inside it. Days. */
+export const REVIEW_WINDOW = { behind: 30, ahead: 90 };
 
 /** Whether this account is a review admin (migration 0032). Cached per account for the session. */
 const adminCache = new Map<string, Promise<boolean>>();

@@ -190,7 +190,7 @@ export async function saveQuickAdd(input: QuickAddInput, homeId: string | null, 
   const ahead = input.date >= today;
   const saved = ahead ? addManualPlan(night, homeId) : addManualEntry(night, homeId);
   const result: QuickAddResult = { id: saved.id, plan: ahead, submitted: false, checks };
-  // The review window (Kylie, Oct 21, 2026): 30 days back, 180 ahead; outside it the log keeps the event and nothing is sent.
+  // The review window (Kylie, Oct 21, 2026): 30 days back, 90 ahead; outside it the log keeps the event and nothing is sent.
   const dayDiff = Math.round((Date.parse(`${input.date}T12:00:00Z`) - Date.parse(`${today}T12:00:00Z`)) / 86_400_000);
   if (dayDiff < -REVIEW_WINDOW.behind || dayDiff > REVIEW_WINDOW.ahead) return { ...result, heldBecause: 'outside-window' };
   if (!defaults.onFile) return { ...result, heldBecause: 'no-record' };
