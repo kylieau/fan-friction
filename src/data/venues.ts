@@ -8448,6 +8448,8 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Plaza México' },
       { name: 'Plaza de Toros México' },
     ],
+    // Ticketmaster's spelling (the Oct 22, 2026 nightly listed it as a room the table lacks); matched, never shown.
+    aliases: ['Monumental Plaza De Toros México'],
     location: [-99.1800979, 19.3829715],
     capacity: [
       {

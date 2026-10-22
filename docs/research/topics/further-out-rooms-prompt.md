@@ -145,3 +145,99 @@ Boston (the app's Boston covers the Boston metro, including Foxborough, Mansfiel
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 3 (Oct 22, 2026): from the Bay Area
+
+Status: delivery 3 (Atlanta, Miami, Phoenix, Boston) is saved as `further-out-rooms-answer-3.md`. Next: Bay Area, Seattle, Toronto, Mexico City.
+
+```
+Continue the Further out research from the Bay Area, in the brief's order: Bay Area, Seattle, Toronto, Mexico City. Same rules, same table, same labels (official / reported / estimated), same "near the line", "shared with another covered city" and "could not confirm" sections per city, and the same downtown drive ranges with their planner sources. Deliver this as Delivery 4, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries.
+
+The app already has these rooms in the next four cities. Their towns are inside the city's own area; do not list these rooms or any other room in those towns as Further out. A room in another town is yours to judge by the metro rule you have been using; say which counties you treated as outside.
+
+Bay Area (the app's Bay Area covers San Francisco, Alameda, Contra Costa, San Mateo and Santa Clara counties; Sacramento is its own covered city). Rooms on file; town; largest setup on file:
+- Levi's Stadium; Santa Clara; 68,827
+- California Memorial Stadium; Berkeley; 62,467
+- Oakland Coliseum; Oakland; 53,200
+- Stanford Stadium; Stanford; 50,424
+- Oracle Park; San Francisco; 41,265
+- CEFCU Stadium; San Jose; 30,456
+- Shoreline Amphitheatre; Mountain View; 22,500
+- Edwards Stadium; Berkeley; 22,000
+- Oakland Arena; Oakland; 19,596
+- Chase Center; San Francisco; 19,500
+- SAP Center; San Jose; 18,543
+- PayPal Park; San Jose; 18,000
+- Cow Palace; Daly City; 16,500
+- Toyota Pavilion at Concord; Concord; 12,500
+- Haas Pavilion; Berkeley; 11,858
+- Kezar Stadium; San Francisco; 10,000
+- Greek Theatre; Berkeley; 8,500
+- Bill Graham Civic Auditorium; San Francisco; 8,500
+- Frost Amphitheater; Stanford; 8,000
+- Maples Pavilion; Stanford; 7,233
+- Stevens Stadium; Santa Clara; 6,800
+- Provident Credit Union Event Center; San Jose; 6,000
+- Saint Mary's Stadium; Moraga; 5,500
+- Leavey Center (Santa Clara), University Credit Union Pavilion (Moraga), War Memorial at the Sobrato Center and Negoesco Stadium (San Francisco); all under 5,000
+
+Seattle (the app's Seattle covers King, Pierce and Snohomish counties, plus the Gorge, which is on file as a Seattle room). Rooms on file; town; largest setup on file:
+- Husky Stadium; Seattle; 72,132
+- Lumen Field; Seattle; 68,740
+- T-Mobile Park; Seattle; 47,943
+- Pacific Raceways; Kent; 30,000
+- The Gorge; George (Grant County); 27,500
+- Seattle Center grounds; Seattle; 26,000
+- Tacoma Dome; Tacoma; 21,000
+- Climate Pledge Arena; Seattle; 18,300
+- White River Amphitheatre; Auburn; 16,000
+- Everett Memorial Stadium; Everett; 12,000
+- Memorial Stadium; Seattle; 12,000
+- Umpqua Bank Grandstand (Washington State Fair); Puyallup; 10,200
+- Alaska Airlines Arena; Seattle; 10,000
+- Angel of the Winds Arena; Everett; 10,000
+- Emerald Downs; Auburn; 9,100
+- Evergreen Speedway; Monroe; 7,500
+- accesso ShoWare Center; Kent; 7,300
+- WaMu Theater; Seattle; 7,000
+- Marymoor Live; Redmond; 6,500
+- Cheney Stadium; Tacoma; 6,500
+- Remlinger Farms; Carnation; 6,000
+- Husky Soccer Stadium; Seattle; under 5,000
+(Vancouver and Portland are covered cities: a room within reach of Seattle and one of them goes under "shared with another covered city".)
+
+Toronto (the app's Toronto covers the City of Toronto plus Peel, York, Halton and Durham through Oshawa; Hamilton is a separate city, not covered). Rooms on file; town; largest setup on file:
+- Rogers Stadium; Toronto (Downsview); 50,000
+- Rogers Centre; Toronto; 50,000
+- BMO Field; Toronto; 28,180
+- Scotiabank Arena; Toronto; 19,800
+- RBC Amphitheatre; Toronto; 16,000
+- Sobeys Stadium; Toronto (York University); 12,500
+- CNE Bandshell; Toronto; 10,000
+- Coca-Cola Coliseum; Toronto; 9,250
+- Tribute Communities Centre; Oshawa; 7,600
+- Mississauga Sports and Entertainment Centre; Mississauga; 5,420
+- The Theatre at Great Canadian Casino Resort Toronto; Toronto (Etobicoke); 5,000
+- CAA Centre; Brampton; 5,000
+- Varsity Stadium; Toronto; 5,000
+- Pickering Casino Resort theatre; Pickering; 2,500
+- 25 more rooms under 5,000, all in Toronto (theatres, halls, Varsity Arena, the York and TMU campus rooms)
+(Ottawa–Gatineau and Montreal are covered cities.)
+
+Mexico City (the app's Mexico City covers CDMX's 16 alcaldías plus the State of Mexico municipalities of the long-standing ZMVM; Toluca, Puebla and Querétaro are separate cities, not covered). Rooms on file; alcaldía; largest setup on file:
+- Estadio Banorte; Coyoacán; 87,000
+- Estadio GNP Seguros; Iztacalco; 65,000
+- Estadio Olímpico Universitario; Coyoacán; 58,445
+- Plaza de Toros México; Benito Juárez; 50,000
+- Estadio Ciudad de los Deportes; Benito Juárez; 34,253
+- Arena Ciudad de México; Azcapotzalco; 22,300
+- Palacio de los Deportes; Iztacalco; 21,000
+- Estadio Alfredo Harp Helú; Iztacalco; 20,576
+- Arena México; Cuauhtémoc; 16,500
+- Estadio Wilfrido Massieu; Gustavo A. Madero; 13,000
+- Auditorio Nacional; Miguel Hidalgo; 9,366
+- Pepsi Center WTC; Benito Juárez; 8,000
+- Gimnasio Olímpico Juan de la Barrera; Benito Juárez; 5,242
+
+Stop at a clean break and say where you stopped.
+```
