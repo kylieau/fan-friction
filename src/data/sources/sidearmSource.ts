@@ -9,7 +9,7 @@
 // for "personal, noncommercial use". Recorded in docs/reference/data-sources.md.
 
 import { METROS } from '../../config/metros';
-import { TEAMS } from '../teams';
+import { TEAMS, isCollegeTeam, schoolWord, sportWords } from '../teams';
 import type { CrowdEvent, LocalDate } from '../types';
 import { SIDEARM_SCHOOLS, type SidearmSchool } from './sidearmSchools';
 import { venueByNameOrPlace, venueClosedOn } from './venueMatch';
@@ -105,7 +105,7 @@ function readSummary(summary: string, school: SidearmSchool) {
   if (!m) return null;
   const program = programWords(m[1], prefix ? school.sides?.[prefix] : undefined); // "Men's Basketball"
   const home = /^vs/i.test(m[2]);
-  let opponent = m[3].trim();
+  let opponent = m[3].trim().replace(/^#\d+\s+/, '');
   // A trailing note ("- B1G Premiere", "- Exhibition", "(Exhibition)", "- Home") is kept apart from the opponent.
   const note = opponent.match(/\s[-–]\s(.+)$|\s(\([^)]*\))$/);
   if (note) opponent = opponent.slice(0, note.index).trim();
@@ -142,15 +142,30 @@ function roomCandidates(location: string): string[] {
   return out;
 }
 
-/** Our team record for a school's program, when one exists ("USC Trojans Men's Basketball" → usc-mbb). */
-function teamIdFor(school: SidearmSchool, program: string): string | undefined {
-  const wanted = new Set([`${school.short} ${program}`, ...school.school.map((s) => `${s} ${program}`)].map((s) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()));
+const plainWords = (s: string) => s.toLowerCase().replace(/\bice hockey\b/g, 'hockey').replace(/[^a-z0-9]+/g, ' ').trim();
+
+/**
+ * Our team record for a school's program, when one exists (Oct 22, 2026, every city): the school names the feed
+ * uses (or an opponent's name, for the home side of an away row) against each college program's school word and
+ * aliases in this city, then the program words against the program's sport words ("Men's Basketball"; "Ice Hockey"
+ * and "Hockey" alike). A bare sport word ("Volleyball") links only when the school has one program of that sport on
+ * file, never by guessing the side. The stored full name and aliases still match as they did ("USC Trojans Men's
+ * Basketball").
+ */
+function teamIdFor(schoolNames: readonly string[], program: string, metroId: string): string | undefined {
+  const schools = new Set(schoolNames.map(plainWords));
+  const prog = plainWords(program);
+  const wanted = new Set([...schools].map((s) => `${s} ${prog}`));
   for (const team of Object.values(TEAMS)) {
-    for (const n of [team.name, ...(team.aliases ?? [])]) {
-      if (wanted.has(n.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim())) return team.id;
-    }
+    for (const n of [team.name, ...(team.aliases ?? [])]) if (wanted.has(plainWords(n))) return team.id;
   }
-  return undefined;
+  const programs = Object.values(TEAMS).filter(
+    (t) => t.metroId === metroId && isCollegeTeam(t) && (schools.has(plainWords(schoolWord(t))) || (t.aliases ?? []).some((a) => schools.has(plainWords(a)))),
+  );
+  const exact = programs.filter((t) => plainWords(sportWords(t)) === prog);
+  if (exact.length === 1) return exact[0].id;
+  const bare = programs.filter((t) => plainWords(t.sport) === prog || plainWords(sportWords(t)).replace(/^(?:men|women) s /, '') === prog);
+  return bare.length === 1 ? bare[0].id : undefined;
 }
 
 /** One school's feed as games at rooms this city has on file. Throws when the feed can't be read. */
@@ -171,7 +186,10 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
       .map((name) => venueByNameOrPlace(school.metroId, name, undefined, undefined, when.date))
       .find(Boolean);
     if (!venue || venueClosedOn(venue, when.date)) continue;
-    const teamId = teamIdFor(school, read.program);
+    // The home side's record: this school's for a home row; for an away row at a room in this city, the opponent's
+    // (Cal Baptist "at UCLA" links UCLA's program), so a school on another provider still gets its team link.
+    const homeId = read.home ? teamIdFor([school.short, ...school.school], read.program, school.metroId) : teamIdFor([read.opponent], read.program, school.metroId);
+    const awayName = read.home ? read.opponent : school.short;
     const title = read.home ? `${school.short} ${read.program} vs. ${read.opponent}` : `${read.opponent} ${read.program} vs. ${school.short}`;
     const gameId = v.uid.match(/vcal_(\d+)/)?.[1] ?? v.uid.replace(/[^a-z0-9]+/gi, '-');
     const tm = v.description.match(/ticketmaster\.com\/[^\s]*\/event\/([A-Z0-9]+)/i)?.[1];
@@ -185,7 +203,7 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
       ...(read.exhibition ? { preseason: true } : {}),
       place: { type: 'venue', venueId: venue.id },
       audience: { domain: 'sports', sport: sportOf(read.program) },
-      ...(teamId && read.home ? { teams: { home: teamId, away: read.opponent, awayOpponent: read.opponent.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
+      ...(homeId ? { teams: { home: homeId, away: awayName, awayOpponent: awayName.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
       ...(tm ? { ticketmasterId: tm } : {}),
       crowd: [],
       sourceId: 'sidearm',

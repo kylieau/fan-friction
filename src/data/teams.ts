@@ -24,8 +24,8 @@ const team = (
 
 // College programs are one team per sport, the way ESPN lists them (UCLA Football,
 // UCLA Women's Basketball), so a favorite is the program, not the school.
-const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport: string, league: string, label: string, aliases: string[]) =>
-  team(`${school}-${code}`, `${schoolName} ${label}`, `${school.toUpperCase()} ${code.toUpperCase()}`, league, sport, 'la', school.toUpperCase(), aliases);
+const program = (school: string, schoolName: string, code: string, sport: string, league: string, label: string, aliases: string[], short = school.toUpperCase(), abbr = short) =>
+  team(`${school}-${code}`, `${schoolName} ${label}`, `${short} ${code.toUpperCase()}`, league, sport, 'la', abbr, aliases);
 
 /**
  * A team's plain code: its own abbreviation, even when another team in its city shares it (Kylie, Oct 15: the
@@ -147,7 +147,7 @@ export function schoolWord(team: Team): string {
  * The sport in words for a college program's long name: "Football", "Men's Basketball", "Women's Ice Hockey". A
  * program whose side is not on file reads the sport alone ("Texas Volleyball"), never a guessed "Men's".
  */
-function sportWords(team: Team): string {
+export function sportWords(team: Team): string {
   const side = programSide(team);
   const sided = (sport: string) => (side === 'women' ? `Women's ${sport}` : side === 'men' ? `Men's ${sport}` : sport);
   switch (team.sport) {
@@ -627,6 +627,23 @@ const LIST: Team[] = [
   program('usc', 'USC Trojans', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['USC Women\'s Basketball']),
   program('usc', 'USC Trojans', 'baseball', 'baseball', 'College baseball', 'baseball', []),
   program('usc', 'USC Trojans', 'wvb', 'volleyball', "College women's volleyball", "women's volleyball", []),
+  // The other Division I basketball programs in Los Angeles rooms on file (Oct 22, 2026, step 2 follow-up: their
+  // games arrive from the schools' own calendar feeds, sidearmSchools.ts, and a team link needs a record). The short
+  // word is the school's common athletics name (Kylie, Oct 19, C1); the code is the scoreboard one.
+  program('lmu', 'Loyola Marymount Lions', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['LMU Men\'s Basketball', 'Loyola Marymount'], 'LMU'),
+  program('lmu', 'Loyola Marymount Lions', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['LMU Women\'s Basketball'], 'LMU'),
+  program('pepperdine', 'Pepperdine Waves', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['Pepperdine Men\'s Basketball'], 'Pepperdine', 'PEPP'),
+  program('pepperdine', 'Pepperdine Waves', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['Pepperdine Women\'s Basketball'], 'Pepperdine', 'PEPP'),
+  program('long-beach-state', 'Long Beach State Beach', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['Long Beach State Men\'s Basketball', 'LBSU'], 'Long Beach State', 'LBSU'),
+  program('long-beach-state', 'Long Beach State Beach', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['Long Beach State Women\'s Basketball'], 'Long Beach State', 'LBSU'),
+  program('csun', 'CSUN Matadors', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['CSUN Men\'s Basketball', 'Cal State Northridge'], 'CSUN'),
+  program('csun', 'CSUN Matadors', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['CSUN Women\'s Basketball'], 'CSUN'),
+  program('uc-irvine', 'UC Irvine Anteaters', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['UC Irvine Men\'s Basketball', 'UCI'], 'UC Irvine', 'UCI'),
+  program('uc-irvine', 'UC Irvine Anteaters', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['UC Irvine Women\'s Basketball'], 'UC Irvine', 'UCI'),
+  program('cal-state-fullerton', 'Cal State Fullerton Titans', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['Cal State Fullerton Men\'s Basketball', 'CSUF'], 'Cal State Fullerton', 'CSUF'),
+  program('cal-state-fullerton', 'Cal State Fullerton Titans', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['Cal State Fullerton Women\'s Basketball'], 'Cal State Fullerton', 'CSUF'),
+  program('cal-baptist', 'Cal Baptist Lancers', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['Cal Baptist Men\'s Basketball', 'California Baptist', 'CBU'], 'Cal Baptist', 'CBU'),
+  program('cal-baptist', 'Cal Baptist Lancers', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['Cal Baptist Women\'s Basketball'], 'Cal Baptist', 'CBU'),
   // Visitors
   // New York, covered Oct 7, 2026 (docs/reference/new-city-checklist.md). Every feed id was verified against the live feed.
   // 'ny-' prefixes where an away team already holds the plain id (giants, jets, rangers are SF, Winnipeg, Texas).
