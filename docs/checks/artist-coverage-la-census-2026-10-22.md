@@ -27,7 +27,7 @@ Written Oct 22, 2026 (evening) by Claude Code (Opus 5.5, with Fable as advisor).
 
 - **Fixed today, in two commits** (`0495b770`, `2a55d43d`):
   - **The NHRA Finals** (Nov 12–15, the 40,000-seat Pomona dragstrip) were on Ticketmaster under a second id for the room's current name. The pull asks by id and never saw them. Both ids are on the room now.
-  - **Two seller spellings matched no room in any city:** "Segerstrom Center for the Arts-Segerstrom Hall" (51 listings, Costa Mesa) and "The Fox Theater-Pomona" (10). Each now gets a retry that must still equal a room name on file. The Fox listings are AXS shows Ticketmaster also lists, so six of the census's eight Fox rows are now listed. Segerstrom Hall was unread in the census; it gains 20 dates in the window.
+  - **Two seller spellings matched no room in any city:** "Segerstrom Center for the Arts-Segerstrom Hall" (51 listings, Costa Mesa) and "The Fox Theater-Pomona" (10). Each now gets a retry that must still equal a room name on file. The Fox listings are AXS shows that Ticketmaster carries as resale (the NHRA listings are resale too; the primary seller is the organizer). They are real events at a real room, so six of the census's eight Fox rows are now listed, but resale listings can lapse; this is not the app reading AXS. Segerstrom Hall was unread in the census; it gains 20 dates in the window.
   - **Soccer read as football** when a club is named "Football Club", so the one-game rule kept both copies. LAFC vs. Minnesota (BMO Stadium, Nov 1) and Sounders vs. LAFC (Lumen Field, Nov 7) were each listed twice, a doubled crowd in each city's friction.
   - **Season passes** ("TMU Bold Women's Basketball - 2026-27 Season Pass") passed the add-on filter.
   - The id script also gave five rooms matched by name only an id of their own.
@@ -71,7 +71,7 @@ Doors versus show times (27 rows) are recorded, not proposed: a fixed offset per
 
 ## Rooms (census order)
 
-"Fixed today" rows are listed in the live re-measure, not yet in the catalog. "Not listed" names the cause and count. A blank row count means the census established no dated rows there; that is not zero.
+"Fixed today" rows are listed in the live re-measure, not yet in the catalog. Room 29's one listed row (the boxing card) is in the catalog under room 8, Dignity Health Sports Park. "Not listed" names the cause and count. A blank row count means the census established no dated rows there; that is not zero.
 
 | # | Room | Census capacity | App record | Census status | Rows | Listed | Fixed today | By design | Not listed (cause) |
 |---|---|---|---|---|---|---|---|---|---|
