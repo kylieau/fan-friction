@@ -100,3 +100,7 @@ Kylie, Oct 21: "i do want a helper that explains Further Out (or points the user
 - **H3 (lean):** "Further out · never in a date's verdict ›", one line with the reason, and a tap opens Settings › Further out for the full definition. The city's name comes from the event's metro, so the line reads the same in every city.
 
 ![Now, H1, H2 and H3](further-out-helper-board.png)
+
+**Kylie, Oct 21, 2026 (evening), on the three forms above:** "i was thinking literally an info icon circle, which would open to a brief explanation (which would contain the same definition as in the settings)". Mocked below with the app's own pieces: the (i) that sits beside an estimated figure, and the small card "About this verdict" uses. The sentence is Settings' sentence, kept in one place so the two can never drift. Awaiting her yes; nothing built.
+
+![The (i) on the Further out line, closed and open](further-out-info-board.png)
