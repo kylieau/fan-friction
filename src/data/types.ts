@@ -539,6 +539,32 @@ export interface Seats {
   seat?: string;
 }
 
+/**
+ * What one line of a stub's cost was for (build 7, §3.5; Kylie, Oct 22, 2026). Attended: Ticket (preset), Parking &
+ * Transit, Food & Drink, Merch, Other. Watched: Stream / PPV, Food & Drink, Other. Fees go inside Ticket; a trip
+ * goes under Other.
+ */
+export type CostKind = 'ticket' | 'parking' | 'food' | 'merch' | 'stream' | 'other';
+
+export interface CostLine {
+  kind: CostKind;
+  /** What you paid, as typed ("You paid"; Kylie, Oct 22, 2026): never divided, never taken from a live price. */
+  amount: number;
+  /** Only when you bought more than one (2 × $68). Feeds the average ticket per seat; nothing is split by it. */
+  qty?: number;
+}
+
+/**
+ * A stub's cost, three states (build 7, Locked): absent = not entered, `free` = $0, `lines` = paid. Blank never
+ * counts as $0. Owner-only: it rides in the row's data, which the card views never pass through.
+ */
+export interface Cost {
+  free?: true;
+  lines: CostLine[];
+  /** The ISO currency code the amounts were typed in, so a later locale change cannot alter past amounts. */
+  currency?: string;
+}
+
 /** One night she went to. Not a map dot, and not limited to events over 5k. */
 export interface Entry {
   id: string;
@@ -552,6 +578,8 @@ export interface Entry {
   userTags?: string[];
   /** Where you sat or stood (build notes 4, "Seats are a separate optional structured field"). Attended stubs only. */
   seats?: Seats;
+  /** What you paid (build 7, §3.5). Attended and watched stubs; absent means not entered, never $0. */
+  cost?: Cost;
   /**
    * Type name used for filters. A game uses the sport (Baseball, Women's basketball).
    * A show uses "Concerts". This is not a sports-only field.
@@ -559,6 +587,11 @@ export interface Entry {
   sport: string;
   /** Team or artist names. Opponents she didn't go "for" stay out. */
   sides: string[];
+  /**
+   * The other team in a game, as a filter tag ("Padres"), so every game credits both teams in Teams seen, Ranks and
+   * Spend (Kylie, Oct 22, 2026). Not what you went for: `tags` and `sides` keep their meaning. Catalog games only.
+   */
+  opponents?: string[];
   /** For a game typed in by hand: pro, college, high school… Catalog games carry this on the event. */
   level?: SportsLevel;
   division?: Division;
@@ -677,6 +710,12 @@ export interface Plan {
   watchedPlace?: string;
   /** Who sees this plan (build 5, stub privacy); it carries into the stub. */
   visibility?: StubVisibility;
+  /**
+   * Same-day logging (build 7, Locked, option A): an Attending plan can take a seat and a cost while the game is on;
+   * both carry into the stub when the date passes. Seats never on a Watching plan.
+   */
+  seats?: Seats;
+  cost?: Cost;
   /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.

@@ -14,12 +14,13 @@ import { TitleText } from './TitleText';
 const LADDER = ['Chill', 'Mild', 'Spicy', 'Brutal', 'Cooked'];
 
 /**
- * Your year (docs/product/compare-proposal-oct6.md, section 1): your nights by friction
- * word, the heaviest and the quietest, and "your usual", the median read, which
- * is the yardstick a side-by-side compares against. This calendar year, or all
- * time. Counts and milestones only; nothing is ranked against anyone.
+ * The friction ladder (docs/product/compare-proposal-oct6.md, section 1; the component was called YourYear until
+ * build 7 gave that name to a page): your nights by friction word, the heaviest and the quietest, and "your usual",
+ * the median read, which is the yardstick a side-by-side compares against. This calendar year, or all time.
+ * Counts and milestones only; nothing is ranked against anyone. Since build 7 it sits on the Your year page, under
+ * the stats (Kylie, 2026-10-22).
  */
-export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: ReadonlyMap<string, number> }) {
+export function FrictionLadder({ entries, ratings }: { entries: Entry[]; ratings: ReadonlyMap<string, number> }) {
   const thisYear = String(new Date().getFullYear());
   const [scope, setScope] = useState<'year' | 'all'>('year');
   // Watched entries stay out of the reads here (Kylie, Oct 11, call 3): a watched game is never Heaviest or Quietest.

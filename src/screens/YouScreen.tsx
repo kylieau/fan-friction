@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { SearchButton } from '../components/SearchButton';
 import {
   filterChoices,
@@ -14,15 +13,14 @@ import {
   peopleList,
   logStats,
   nightsOf,
-  ratingForEntry,
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
-  type Entry,
   yourEntries,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
-import { YourYear } from '../components/YourYear';
+import { FrictionLadder } from '../components/FrictionLadder';
+import { Stat } from '../components/StatCards';
 import { ChevronDown } from '../components/Icons';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { useEdgeFade } from '../lib/useEdgeFade';
@@ -152,7 +150,7 @@ export function YouScreen() {
 
       {/* Stats is what You keeps (build notes 3, 4.4: Stubs and Following are their own tabs). */}
       {filters}
-      <YourYear entries={shown} ratings={ratings} />
+      <FrictionLadder entries={shown} ratings={ratings} />
       <Stats stats={stats} hours={hoursAtGames(shown.filter((e) => !e.watched))} />
     </div>
   );
@@ -181,32 +179,6 @@ function Stats({ stats, hours }: { stats: ReturnType<typeof logStats>; hours: { 
       <CountList title="By team and sport" rows={stats.byTeamSport} />
       <CountList title="By sport" rows={stats.bySport} />
       <CountList title="By venue" rows={stats.byVenue} />
-    </div>
-  );
-}
-
-/** The night with the highest friction read. Shown on You and on the page others see. */
-export function heaviestEntry(entries: Entry[], ratings: ReadonlyMap<string, number>): number | null {
-  return entries.reduce<number | null>((best, entry) => {
-    const r = ratingForEntry(entry, ratings);
-    return r !== null && (best === null || r > best) ? r : best;
-  }, null);
-}
-
-export function HeaviestStat({ rating }: { rating: number | null }) {
-  return (
-    <div className="stat-card">
-      <span className="stat-num">{rating === null ? '—' : formatScore(rating)}</span>
-      <span className="stat-label">{rating === null ? 'Heaviest' : `Heaviest · ${scoreLabel(rating)}`}</span>
-    </div>
-  );
-}
-
-export function Stat({ n, label }: { n: number; label: string }) {
-  return (
-    <div className="stat-card">
-      <span className="stat-num">{n}</span>
-      <span className="stat-label">{label}</span>
     </div>
   );
 }

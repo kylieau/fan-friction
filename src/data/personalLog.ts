@@ -14,7 +14,8 @@ import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
 import { normalizeSeats, normalizeTags, retag } from './stubTags';
-import type { LocalTime, Seats } from './types';
+import { normalizeCost } from './costs';
+import type { Cost, LocalTime, Seats } from './types';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry, wallClockToUtc } from './read';
 import { addDays } from '../lib/dates';
@@ -631,6 +632,23 @@ function tagFor(teamId: string | undefined, sport: string): { tag: string; side:
   return { tag: side, side };
 }
 
+/** The away team's filter tag, when the catalog names it, so a game credits both teams (Kylie, Oct 22, 2026). */
+function opponentTags(event: CrowdEvent): string[] {
+  if (event.audience.domain !== 'sports' || !event.teams?.away || !TEAMS[event.teams.away]) return [];
+  const { tag } = tagFor(event.teams.away, event.audience.sport);
+  return tag === tagFor(event.teams.home, event.audience.sport).tag ? [] : [tag];
+}
+
+/**
+ * Every team a game credits (build 7, Locked, Kylie, Oct 22, 2026: "every game credits both teams, Fave or not"):
+ * the team tags on the stub plus its opponents. Concerts and other no-team events give nothing.
+ */
+export function entryTeams(entry: Entry): string[] {
+  if (entry.kind === 'show' || entry.kind === 'festival' || entry.sport === 'Concerts') return [];
+  const out = [...entryTags(entry).filter((tag) => tag !== 'Concerts' && tag !== 'Sports'), ...(entry.opponents ?? [])];
+  return out.filter((tag, i) => out.indexOf(tag) === i);
+}
+
 function withFloor(event: CrowdEvent, entry: Entry): Entry {
   return event.belowFloor ? { ...entry, belowFloor: true } : entry;
 }
@@ -656,12 +674,14 @@ function entryFromEvent(event: CrowdEvent): Entry {
   if (event.audience.domain === 'sports') {
     const sport = event.audience.sport;
     const { tag, side } = tagFor(event.teams?.home, sport);
+    const opponents = opponentTags(event);
     return withFloor(event, {
       id: `mark-${event.id}`,
       eventId: event.id,
       when: { sort: event.date, label: '', precision: 'day' },
       title: listTitle(event),
       tags: [tag],
+      ...(opponents.length ? { opponents } : {}),
       sport: sport ? sportLabel(sport) : 'Sports',
       sides: [side],
       venue: venueLabel(event),
@@ -779,7 +799,7 @@ export async function backfillLegacyCrowds(loadDate: (metroId: string, date: str
 }
 
 /** Bump when the naming rules change, so every log takes the new names once. */
-const TITLE_VERSION = 'labels-r3'; // Oct 15: labels round 3 ("Brewers at Dodgers (NLCS G3)")
+const TITLE_VERSION = 'opponents-b7'; // Oct 22: build 7 adds the away team to every catalog game, so both teams are credited (labels-r3 ran Oct 15)
 
 /**
  * Stubs made from an event take that event's current short name (Kylie, Oct 14: old stubs read "NLCS G2 · Dodgers
@@ -797,19 +817,29 @@ export async function retitleStubs(loadDate: (metroId: string, date: string) => 
   ];
   const dates = [...new Map(linked.map((d) => [`${d.metroId}|${d.date}`, d])).values()];
   const names = new Map<string, string>();
+  const opponents = new Map<string, string[]>();
   let failed = false;
   for (let i = 0; i < dates.length; i += 4) {
     const days = await Promise.all(dates.slice(i, i + 4).map((d) => loadDate(d.metroId, d.date).catch(() => null)));
     for (const day of days) {
       if (!day) failed = true;
-      for (const event of [...(day?.events ?? []), ...(day?.furtherOut ?? [])]) names.set(event.id, listTitle(event));
+      for (const event of [...(day?.events ?? []), ...(day?.furtherOut ?? [])]) {
+        names.set(event.id, listTitle(event));
+        opponents.set(event.id, opponentTags(event));
+      }
     }
   }
   const renamed = <T extends { eventId?: string; title: string }>(row: T): T => {
     const name = row.eventId ? names.get(row.eventId) : undefined;
     return name && name !== row.title ? { ...row, title: name } : row;
   };
-  const added = snapshot.added.map((entry) => (isManualEntry(entry) ? entry : renamed(entry)));
+  // Build 7: a stub logged before Oct 22, 2026 names only the home team; the away team joins it as an opponent.
+  const withOpponents = (entry: Entry): Entry => {
+    const away = entry.eventId ? opponents.get(entry.eventId) : undefined;
+    if (!away?.length || (entry.opponents ?? []).join('|') === away.join('|')) return entry;
+    return { ...entry, opponents: away };
+  };
+  const added = snapshot.added.map((entry) => (isManualEntry(entry) ? entry : withOpponents(renamed(entry))));
   const plans = snapshot.plans.map(renamed);
   if (added.some((e, i) => e !== snapshot.added[i]) || plans.some((p, i) => p !== snapshot.plans[i])) commit({ ...snapshot, added, plans });
   if (!failed) setPref('stub-titles', { ...getPref<Record<string, string>>('stub-titles', {}), [scope]: TITLE_VERSION });
@@ -1072,7 +1102,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
         // Once only (R11): a plan that already became an entry (this run or an earlier one) is just cleared.
         const id = `manual-${plan.id.replace(/^plan-manual-/, '')}`;
         if (!snapshot.added.some((entry) => entry.id === id) && !added.some((entry) => entry.id === id)) {
-          const entry = manualEntryFrom(nightFromPlan(plan), homeMetroId, id);
+          const entry = carryPlanExtras(plan, manualEntryFrom(nightFromPlan(plan), homeMetroId, id));
           added.push(plan.visibility ? withLevel(entry, plan.visibility) : entry);
         }
         settledIds.add(plan.id);
@@ -1087,7 +1117,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       const day = await loadDate(plan.metroId, plan.date);
       const event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === plan.eventId);
       if (!event) continue;
-      const entry = entryFromEvent(event);
+      const entry = carryPlanExtras(plan, entryFromEvent(event));
       if (plan.userTags?.length) entry.userTags = plan.userTags;
       // A Watching? answer becomes a Watched stub (Kylie, Oct 11); the friction stamp still applies.
       // Its Private / Friends choice and place come along (build notes 3, 4.7).
@@ -1114,6 +1144,17 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
     added: [...snapshot.added, ...fresh],
     plans: snapshot.plans.filter((plan) => !settledIds.has(plan.id)),
   });
+}
+
+/**
+ * Same-day logging (build 7, Locked, option A): the seat and cost saved on an Attending or Watching plan carry into the
+ * stub it settles into; without this they would be silently dropped. A Watching plan's seat never carries (watched
+ * is not in person).
+ */
+function carryPlanExtras(plan: Plan, entry: Entry): Entry {
+  const seats = !plan.watch ? normalizeSeats(plan.seats) : undefined;
+  const cost = normalizeCost(plan.cost);
+  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}) };
 }
 
 export function removePlan(planId: string) {
@@ -1337,6 +1378,48 @@ export function deleteTag(tag: string) {
  * Where you sat, on an Attended stub (build notes 4). Never on a watched entry or a live broadcast:
  * those are not in person. Empty parts are dropped; an empty set removes the field.
  */
+/** A seat on an Attending plan, for same-day logging (build 7); never on a Watching or Interested plan. */
+export function setPlanSeats(planId: string, seats: Seats | undefined) {
+  const next = normalizeSeats(seats);
+  commit({
+    ...snapshot,
+    plans: snapshot.plans.map((plan) => {
+      if (plan.id !== planId || plan.watch || plan.interested) return plan;
+      const { seats: _old, ...rest } = plan;
+      void _old;
+      return next ? { ...rest, seats: next } : rest;
+    }),
+  });
+}
+
+/** What you paid on a stub (build 7, §3.5). Clearing to blank deletes the key: "not entered", never $0. */
+export function setEntryCost(entryId: string, cost: Cost | undefined) {
+  const next = normalizeCost(cost);
+  commit({
+    ...snapshot,
+    added: snapshot.added.map((entry) => {
+      if (entry.id !== entryId) return entry;
+      const { cost: _old, ...rest } = entry;
+      void _old;
+      return next ? { ...rest, cost: next } : rest;
+    }),
+  });
+}
+
+/** A cost on an Attending or Watching plan, for same-day logging (build 7); never on Interested. */
+export function setPlanCost(planId: string, cost: Cost | undefined) {
+  const next = normalizeCost(cost);
+  commit({
+    ...snapshot,
+    plans: snapshot.plans.map((plan) => {
+      if (plan.id !== planId || plan.interested) return plan;
+      const { cost: _old, ...rest } = plan;
+      void _old;
+      return next ? { ...rest, cost: next } : rest;
+    }),
+  });
+}
+
 export function setEntrySeats(entryId: string, seats: Seats | undefined) {
   const next = normalizeSeats(seats);
   commit({

@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
-import { HeaviestStat, Stat, heaviestEntry } from './YouScreen';
+import { HeaviestStat, Stat, heaviestEntry } from '../components/StatCards';
 import {
   blockUser,
   canSignIn,

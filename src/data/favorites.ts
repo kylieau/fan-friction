@@ -9,7 +9,7 @@
 
 import { METROS } from '../config/metros';
 import { ARTISTS, artistByName, artistMatches } from './artists';
-import { TEAMS, leagueMark, teamBadge, teamDisplayName, teamLongName } from './teams';
+import { TEAMS, isCollegeTeam, leagueMark, teamBadge, teamDisplayName, teamLongName } from './teams';
 import { VENUES, venueByName, venueNameOn } from './venues';
 import type { CrowdEvent, Favorite, FavoriteKind, Entry, Team } from './types';
 
@@ -196,6 +196,18 @@ export function favoriteDisplayName(fav: Favorite): string {
 export function favoriteLongName(fav: Favorite): string {
   const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
   return team ? teamLongName(team) : fav.label;
+}
+
+/**
+ * The full official name, where build 7's naming rule allows it (Kylie, Oct 22, 2026: the favorites section and
+ * sheet, the team page header, search results): "Los Angeles Dodgers" for a pro team, the school's words for a
+ * college program ("UCLA Football": no one spells out the university), else the label. The same expression the
+ * team page header renders. Everywhere else keeps city shortcuts (`favoriteDisplayName`, `favoriteLongName`).
+ */
+export function favoriteOfficialName(fav: Favorite): string {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  if (!team) return fav.label;
+  return isCollegeTeam(team) ? teamLongName(team) : team.name;
 }
 
 /** Every name a favorite is found by, lower-cased: its label and long name, and a team's short name, full name and aliases. */

@@ -496,13 +496,15 @@ export {
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
 export { stubDefault, setStubDefault, stubLevel, setStubVisibility, setEntryVisibility, setPastStubsVisibility } from './personalLog';
-export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, toggleFavoriteCity, setEntrySeats, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
+export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, toggleFavoriteCity, setEntrySeats, setPlanSeats, setEntryCost, setPlanCost, entryTeams, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
 export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
+export type { Cost, CostKind, CostLine } from './types';
 export { hasUnsyncedChanges } from './storage';
 export { suggestEvent, linkConfirmedSuggestions, isReviewAdmin, reviewQueue, setReviewStatus, REVIEW_WINDOW, type ReviewRow } from './suggestions';
 export { quickAddDefaults, saveQuickAdd, roomsIn, type QuickAddDefaults, type QuickAddInput, type QuickAddResult } from './quickAdd';
 export { markPlanSuggested } from './personalLog';
-export { favoriteSearchNames, searchFavoriteRecords } from './favorites';
+export { favoriteSearchNames, searchFavoriteRecords, favoriteOfficialName } from './favorites';
+export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine } from './costs';
 export { getTeamSchedule, nextTeamGame, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
 export { espnTeamUrl } from './sources/espnSource';
 export { entryOutcome, hoursAtGames, lengthLine, resultFor, scoreLine } from './results';
