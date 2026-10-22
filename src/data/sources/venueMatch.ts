@@ -79,8 +79,34 @@ export function venueByNameOrPlace(metroId: string, name: string, lat?: number, 
   }
   if (lat == null || lng == null || !Number.isFinite(lat) || !Number.isFinite(lng)) return undefined;
   const nearby = ours.filter((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
-  if (nearby.length === 1) noteLoose(name, nearby[0].id, 'within 300 m');
-  return nearby.length === 1 ? nearby[0] : undefined;
+  if (nearby.length !== 1 || sideRoom(name, nearby[0])) return undefined;
+  noteLoose(name, nearby[0].id, 'within 300 m');
+  return nearby[0];
+}
+
+/** Words every kind of room carries, which say nothing about which room it is. */
+const ROOM_WORDS = new Set(
+  'the at of and in on by a an theater amphitheater hall center arena stadium field park pavilion ballroom auditorium room club music event events live presented inside venue'.split(' '),
+);
+
+function distinctWords(name: string): string[] {
+  return plain(name.normalize('NFD').replace(/[\u0300-\u036f]/g, ''))
+    .replace(/[^a-z0-9' ]/g, ' ')
+    .split(' ')
+    .filter((w) => w.length > 1 && !ROOM_WORDS.has(w));
+}
+
+/**
+ * A smaller room inside or beside the one on file, found only by distance: "The Parish at House of Blues Anaheim",
+ * "NOIR (inside REBEL)", "Jane Mallett Theatre" next to Meridian Hall (the Oct 22, 2026 nightly placed all three on the
+ * big room). The listing's own room is the part before "at" or a parenthesis; when it has words of its own and none of
+ * them is in the room's names or aliases, it is another room, and stays unplaced like any room the table lacks.
+ */
+function sideRoom(name: string, venue: Venue): boolean {
+  const own = distinctWords(name.split(/\s+at\s+|\s*\(/i)[0]);
+  if (own.length === 0) return false;
+  const known = new Set([...venue.names.map((n) => n.name), ...(venue.aliases ?? [])].flatMap(distinctWords));
+  return !own.some((w) => known.has(w));
 }
 
 /** Whether a room is closed on a date (its `closed` window; see the Venue type). Sellers drop listings for closed rooms. */

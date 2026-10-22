@@ -118,6 +118,9 @@ const LOOK_ALIKES = [
   // A performer's tour that names the room must stay (Oct 22, 2026: "tour at <building>" is a building tour only off a show).
   ['Taylor Swift | The Eras Tour at SoFi Stadium', 'show'],
   ['Cortaca Jug', 'game'],
+  // Shows the Oct 22, 2026 nightly dropped: a band named Free Throw, and a theater's age note in the show's name.
+  ['Free Throw w/ Microwave', 'show'],
+  ['The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket', 'show'],
 ];
 
 // Add-ons the old filter already dropped; they must stay dropped.
@@ -146,6 +149,16 @@ const STILL_DROPPED = [
   ['Seabiscuit Tram Tour', 'game'],
   ['Live Racing at Santa Anita Park', 'game'],
   ['Live Racing at Santa Anita Park', 'special'],
+  // Oct 22, 2026 nightly: products kept as events at 5,000+ rooms.
+  ['MVP Court Pass (Check In By 1:30PM)', 'special'],
+  ['Harlem Globetrotters MVP Court Pass (Check in by 11:30am)', 'special'],
+  ['Club Fee - Pentatonix', 'special'],
+  ['Harlem Globetrotters - CPA Club Fee', 'special'],
+  ['Jeff Dunham | Official Caesars Ticket + Hotel Packages', 'special'],
+  ['Glow Suite Packages 2026', 'special'],
+  ['Yuengling Flight Club Pre-Event Dinner: Seating 6:00pm-7:15pm', 'special'],
+  ['Limited Edition Rivals Replica Game Ball From Spalding®', 'special'],
+  ['DELTA SKY 360 CLUB RED CARPET EXPERIENCE - ANDREA BOCELLI', 'special'],
 ];
 
 // The research's look-alikes (section 3): real shows whose names carry add-on words.
@@ -155,6 +168,10 @@ LOOK_ALIKES.push(
   ["Tailgate N' Tallboys", 'show'],
   ['Disney On Ice: Frozen & Encanto', 'special'],
   ['Monster Jam', 'special'],
+  // Kept beside the Oct 22, 2026 product words: the real event, and multi-day passes (a festival may list only those).
+  ['Harlem Globetrotters: Rivalry Tour Presented By Sprite', 'special'],
+  ['Decadence Arizona - 2 Day Ticket', 'special'],
+  ['Gateway Dirt Nationals - 3 Day Pass', 'special'],
 );
 
 // Layer 1: add-ons the seller files as acts of their own; the name alone may not say so.

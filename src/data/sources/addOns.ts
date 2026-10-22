@@ -33,7 +33,9 @@ import type { CrowdEvent } from '../types';
 /** Phrases that say the listing is not a ticket to the event. Every kind of listing. */
 const DISCLAIMER = new RegExp(
   [
-    String.raw`\bmust\s+have\s+(?:a\s+|valid\s+|a\s+valid\s+)?(?:game\s+|event\s+)?ticket`,
+    // "Ticket to game" or "game ticket", never a bare "must have a ticket": a theater's age note says that on the show
+    // itself ("The Lion King … regardless of age, must have a ticket", dropped by mistake Oct 22, 2026).
+    String.raw`\bmust\s+have\s+(?:a\s+|valid\s+|a\s+valid\s+)?(?:(?:game|event)\s+ticket|tickets?\s+to\b)`,
     String.raw`\b(?:game|event|show)\s+tickets?\s+(?:is\s+|are\s+)?(?:required|sold\s+separately|not\s+included)`,
     String.raw`\b(?:does\s+)?not\s+include\s+(?:a\s+|an\s+|the\s+)?(?:game\s+|event\s+|show\s+)?(?:ticket|admission)`,
     String.raw`\bnot\s+(?:an?\s+)?(?:event|concert|game|show)\s+ticket`,
@@ -74,12 +76,16 @@ const STRONG = new RegExp(
     String.raw`\bcamping\b`, String.raw`\bvip\s+(?:package|upgrade|add-on)\b`, String.raw`\bmeet\s*(?:&|and|\+)\s*greet\b`,
     String.raw`\bupgrade\b`, String.raw`\brepas\b`, String.raw`\bsalon\s+des\b`, String.raw`\blounge\b`, String.raw`\bhospitality\b`,
     String.raw`\bdinner\s+reservations?\b`, String.raw`\bfan\s+access\b`, String.raw`\bplus\s+ups?\b`, String.raw`\bupsell\b`,
-    String.raw`\bfree\s+throws?\b`, String.raw`\bcourtside\s+(?:access|experience)\b`, String.raw`\bsocial\s+pass\b`,
+    String.raw`\b(?:post|pre)-?\s?game\s+free\s+throws?\b`, String.raw`\bcourtside\s+(?:access|experience)\b`, String.raw`\bsocial\s+pass\b`,
     String.raw`\bclub\s+level\s+access\b`, String.raw`\bflag\s+bearer\b`, String.raw`\bfanboni\b`, String.raw`\bbench\s+(?:access|photo)\b`,
     String.raw`\bon-(?:ice|court|field)\b`, String.raw`\bpit\s+(?:pass|party)\b`, String.raw`\bfast\s*lane\b`, String.raw`\bearly\s+entry\b`,
     String.raw`\bbottomless\b`, String.raw`\bm\s*&\s*g\b`, String.raw`\badd[- ]on\b`,
     // A room's race days and tram tours sold as a season-long product (Oct 22, 2026).
     String.raw`\blive\s+racing\b`, String.raw`\btram\s+tours?\b`,
+    // Products the Oct 22, 2026 nightly kept as events at 5,000+ rooms: the Globetrotters' "MVP Court Pass" in 20-odd
+    // arenas, club fees, ticket-and-hotel and suite packages, a pre-event dinner, a replica ball, a red-carpet extra.
+    String.raw`\bcourt\s+pass\b`, String.raw`\bclub\s+fee\b`, String.raw`\b(?:hotel|suite)\s+packages?\b`,
+    String.raw`\bpre-?\s?event\s+dinner\b`, String.raw`\breplica\b`, String.raw`\bred\s+carpet\s+experience\b`,
   ].join('|'),
   'i',
 );
