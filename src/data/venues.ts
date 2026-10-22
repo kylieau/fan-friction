@@ -1484,6 +1484,9 @@ export const VENUES: Record<string, Venue> = {
       { name: 'New Miami Stadium' },
       { name: 'Hard Rock Stadium', from: '2016-08-01' },
       { name: 'Miami Stadium', from: '2026-06-01' },
+      // "Miami Stadium" is FIFA's World Cup label; Hard Rock Stadium is the permanent name (small-rooms answer 6). Miami's
+      // last match was July 18, 2026.
+      { name: 'Hard Rock Stadium', from: '2026-07-19' },
     ],
     location: [-80.2388497, 25.9579032],
     ticketmasterIds: ['KovZpZAEkvtA'],
@@ -1603,8 +1606,8 @@ export const VENUES: Record<string, Venue> = {
     ],
     location: [-80.1860601, 25.7762049],
     ticketmasterIds: ['KovZpZAEAFAA'],
-    // Round-2 rule: conflicting figures (8,500 / 5,000 / 1,646); blank until one official current figure (BACKLOG).
-    capacity: [],
+    // Filled Oct 22, 2026 (small-rooms answer 6; Kylie's yes): the city's figure for the amphitheater, not all of Bayfront Park.
+    capacity: [{ seats: 10000, note: "Official (the City of Miami's crowd-management contract; the Miami DDA's January 2025 venue guide agrees). The amphitheater, not the whole park; bench and lawn split unconfirmed. A Ticketmaster blog table's 1,646 is rejected: the same table names another city's operator. Source: https://apps.miamigov.com/contract_files/1589.pdf" }],
     roof: 'covered',
   },
   'watsco-center': {
@@ -1663,7 +1666,9 @@ export const VENUES: Record<string, Venue> = {
   'broward-center-au-rene': {
     id: 'broward-center-au-rene',
     metroId: 'miami',
-    names: [{ name: 'Au-Rene Theater' }, { name: 'Broward Center for the Performing Arts' }],
+    // The stored figure is the Au-Rene Theater's alone, so the room shows as that (small-rooms answer 6, Oct 22, 2026); the
+    // earlier labels stay in `names` for stub and favorite lookups.
+    names: [{ name: 'Au-Rene Theater' }, { name: 'Broward Center for the Performing Arts' }, { name: 'Au-Rene Theater at Broward Center' }],
     // Approximate; OSM did not resolve the performing-arts building by name (research §A19).
     location: [-80.142, 26.119],
     ticketmasterIds: ['KovZpZAEeaAA'],
@@ -6080,7 +6085,7 @@ export const VENUES: Record<string, Venue> = {
   'ksu-convocation-center': {
     id: 'ksu-convocation-center',
     metroId: 'atlanta',
-    names: [{ name: 'KSU Convocation Center' }, { name: 'VyStar Arena' }],
+    names: [{ name: 'KSU Convocation Center' }, { name: 'VyStar Arena', from: '2025-08-12' }],
     // Approximate: the research's read (34.039, -84.583); OpenStreetMap does not list the building.
     location: [-84.583, 34.039],
     capacity: [
@@ -7624,8 +7629,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Arizona Veterans Memorial Coliseum' }],
     // OSM stadium point at 1826 W McDowell, the fairgrounds address. A reseller page says 1326 W McDowell; not used.
     location: [-112.096678, 33.469625],
-    // Reseller listing ~14,870 only. The venue answer says mark capacity unverified until an official figure exists.
-    capacity: [],
+    // Filled Oct 22, 2026 (small-rooms answer 6; Kylie's yes): the owner's arena-bowl count. A floor-seated concert may hold more.
+    capacity: [{ seats: 14691, note: 'Official (the Arizona State Fair, the owner): 14,691 seats in the arena bowl; 14,870 in a generic reference. Floor seating, the basketball setup and a standing limit are unconfirmed. Source: https://azstatefair.com/venue-rental/veterans-memorial-coliseum/' }],
     roof: 'indoor',
   },
   'desert-financial-arena': {
