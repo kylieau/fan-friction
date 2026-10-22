@@ -74,3 +74,17 @@ A favorite's further-out event always shows on its page and the Following timeli
 
 **Search** (built the same day): the search sheet finds further-out events (5,000+) when the lists switch is on ("ramon ayala" finds the Nov 7 Toyota Arena show; off, only Portland's Nov 27 date); logging an event by hand always finds them. **Not built yet:** further-out rooms for other cities (research); Escape Halloween and Nocturnal Wonderland (their grounds are not on file and the festival list is not read by the app yet).
 
+
+## Where a further-out row's tap goes (Oct 21, 2026, evening; Codex finding 4; nothing built)
+
+**The problem, measured in the browser (Jo Koy, Fri, Dec 11, Toyota Arena, Los Angeles).** Every row that carries a further-out event and opens its date page sends the person to Los Angeles's page for that date. On a favorite's Near home row the event lands 1,483 px down (the viewport is 659 px tall), below a Verdict it never counted toward ("1.7 Chill · Brent Faiyaz pulls on 17 other crowds"), Local Competition and an 18-row lineup, and the row is not tinted (the deep-link tint only knows lineup rows). From Home's Your next event row it is 1,605 px down; a saved plan at least adds the Attending card near the top. The tile on these rows is already plain, as decided.
+
+**Where the pattern appears** (every whole-row link to a date page that a further-out event can reach; one shared rule should cover them all):
+- Home: Your next event rows; the favorites-this-week chips; Recent rows (a stub at a further-out room).
+- A favorite's page: Near home; Tour dates · elsewhere (a further-out room in another covered city); Upcoming (a venue or festival favorite, such as Toyota Arena itself); Next at home and the schedule rows (a team based at a further-out room, such as the Ontario Reign once its games land); Your events rows.
+- An event page's More dates cells (another date of the same tour at a further-out room).
+- Already right: search hits (Map and Log an event), the date page's Further out rows, the List's Further out rows, a Stubs plan or stub row (they open the event page); Compare's night cells compare nights, so they stay.
+
+**A (lean): the row opens the event page.** The same place a search hit, a date-page row and a List row already go for a further-out event. The event page names the town, says "Further out", and holds Stub it and Attending. One rule: a further-out event's row opens its event page, every other event's row keeps its date page. **B: the row opens the date page, scrolled to the Further out card, the row tinted.** Rows keep opening dates, but the page still leads with a city verdict the event never counted toward, and the scroll jumps two screens. **C: leave it.**
+
+![Now, A and B](further-out-row-tap-board.png)
