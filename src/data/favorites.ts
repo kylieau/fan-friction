@@ -202,3 +202,38 @@ export function favoriteLongName(fav: Favorite): string {
   const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
   return team ? teamLongName(team) : fav.label;
 }
+
+/** Every name a favorite is found by, lower-cased: its label and long name, and a team's short name, full name and aliases. */
+export function favoriteSearchNames(fav: Favorite): string[] {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  return [fav.label, favoriteLongName(fav), ...(team ? [team.shortName, team.name, ...(team.aliases ?? [])] : [])].map((n) => n.toLowerCase());
+}
+
+/**
+ * The records a query finds (the Faves picker's search, shared with New stub's "Which team?" since Oct 21, 2026):
+ * your favorites, the home city's suggestions, every team on file, and names from the log. Optionally one kind.
+ */
+export function searchFavoriteRecords(query: string, favorites: readonly Favorite[], entries: readonly Entry[], homeMetroId: string | null, kind?: FavoriteKind): Favorite[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const seen = new Set<string>();
+  const out: Favorite[] = [];
+  const add = (fav: Favorite) => {
+    if (kind && fav.kind !== kind) return;
+    const key = favoriteKey(fav);
+    if (!seen.has(key) && favoriteSearchNames(fav).some((name) => name.includes(q))) {
+      seen.add(key);
+      out.push(fav);
+    }
+  };
+  favorites.forEach(add);
+  suggestionsFor(homeMetroId, []).forEach(add);
+  Object.values(TEAMS).forEach((team) => add(favoriteForTeam(team)));
+  for (const entry of entries) {
+    if (entry.kind === 'show') entry.sides.forEach((side) => add(favoriteFor('artist', side)));
+    else if (entry.kind === 'festival') add(favoriteFor('festival', entry.title));
+    else entry.tags.forEach((tag) => tag !== 'Concerts' && add(favoriteFor('team', tag)));
+    if (entry.venue) add(favoriteFor('venue', entry.venue));
+  }
+  return out;
+}

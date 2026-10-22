@@ -14,7 +14,7 @@ import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
 import { normalizeSeats, normalizeTags, retag } from './stubTags';
-import type { Seats } from './types';
+import type { LocalTime, Seats } from './types';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry, wallClockToUtc } from './read';
 import { addDays } from '../lib/dates';
@@ -277,6 +277,11 @@ export interface ManualNight {
   metroId?: string;
   /** Your own tags, set on a hand-added plan so they carry into its stub. */
   userTags?: string[];
+  /** From the Add a game / Add a show card (Oct 21, 2026): a start time, the team or artist as filter tags and sides, and the review row's id. */
+  start?: LocalTime;
+  tags?: string[];
+  sides?: string[];
+  suggestionId?: string;
 }
 
 /**
@@ -301,9 +306,11 @@ function manualEntryFrom(night: ManualNight, homeMetroId: string | null, id: str
     id,
     when: night.when,
     title: night.title.trim(),
-    tags: [],
+    tags: night.tags ?? [],
     sport: game ? (night.sport?.trim() || 'Sports') : 'Concerts',
-    sides: [],
+    sides: night.sides ?? [],
+    ...(night.start ? { start: night.start } : {}),
+    ...(night.suggestionId ? { suggestionId: night.suggestionId } : {}),
     ...(game && night.level ? { level: night.level } : {}),
     ...(game && night.division ? { division: night.division } : {}),
     ...(game && night.competition?.trim() ? { competition: night.competition.trim() } : {}),
@@ -341,6 +348,9 @@ export function addManualPlan(night: ManualNight, homeMetroId: string | null): P
       ...(night.division ? { division: night.division } : {}),
       ...(night.competition ? { competition: night.competition } : {}),
       ...(metroId ? {} : { elsewhere: true }),
+      ...(night.start ? { start: night.start } : {}),
+      ...(night.tags?.length ? { tags: night.tags } : {}),
+      ...(night.sides?.length ? { sides: night.sides } : {}),
     },
     // Your default level, like any other plan (build 5, stub privacy).
     visibility: stubDefault(),
@@ -363,7 +373,19 @@ function nightFromPlan(plan: Plan): ManualNight {
     venue: plan.venue,
     metroId: m.elsewhere ? undefined : plan.metroId,
     ...(plan.userTags?.length ? { userTags: plan.userTags } : {}),
+    ...(m.start ? { start: m.start } : {}),
+    ...(m.tags?.length ? { tags: m.tags } : {}),
+    ...(m.sides?.length ? { sides: m.sides } : {}),
+    ...(m.suggestionId ? { suggestionId: m.suggestionId } : {}),
   };
+}
+
+/** A hand-added plan that was also sent for review (the Add a game / Add a show card): the review row's id stays with it. */
+export function markPlanSuggested(planId: string, suggestionId: string) {
+  commit({
+    ...snapshot,
+    plans: snapshot.plans.map((plan) => (plan.id === planId && plan.manual ? { ...plan, manual: { ...plan.manual, suggestionId } } : plan)),
+  });
 }
 
 /** Normalized words of a title, for the duplicate check. */

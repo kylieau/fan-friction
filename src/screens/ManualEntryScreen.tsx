@@ -59,6 +59,8 @@ function ManualPlanPage({ planId }: { planId: string }) {
       <header className="event-head">
         <h1 className="page-title"><TitleText text={plan.title} /></h1>
         <div className="event-sub">{sub}</div>
+        {/* Sent for review from the Add a game / Add a show card (Kylie, Oct 21, 2026): everyone sees it once confirmed. */}
+        {plan.manual?.suggestionId && <div className="event-further">Added by a fan · Pending review</div>}
       </header>
       <div className="event-marks">
         <StatusLine kind={plan.watch ? 'watching' : 'attending'} />
@@ -161,6 +163,7 @@ function ManualEntryPage() {
             </>
           )}
         </div>
+        {entry.suggestionId && <div className="event-further">Added by a fan · Pending review</div>}
         <FactList facts={entryFacts(entry)} />
       </header>
 

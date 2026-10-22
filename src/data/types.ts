@@ -555,6 +555,8 @@ export interface Entry {
   /** For a game typed in by hand: pro, college, high school… Catalog games carry this on the event. */
   level?: SportsLevel;
   division?: Division;
+  /** The start time a hand-added night was given (the Add a game / Add a show card, Oct 21, 2026). */
+  start?: LocalTime;
   /** "WNBA", "Premier League", "NCAA D-I". Competition, not league: cups and tournaments fit. */
   competition?: string;
   venue?: string;
@@ -676,7 +678,19 @@ export interface Plan {
   /** When this device last changed the plan (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
   /** A plan typed in by hand (C059): what the form collected, so it becomes an entry when the date passes. */
-  manual?: { kind: EventKind; sport?: string; level?: SportsLevel; division?: Division; competition?: string; elsewhere?: boolean };
+  manual?: {
+    kind: EventKind;
+    sport?: string;
+    level?: SportsLevel;
+    division?: Division;
+    competition?: string;
+    elsewhere?: boolean;
+    /** From the Add a game / Add a show card (Oct 21, 2026): the start, the filter tags and sides it will carry as a stub, and its review row's id. */
+    start?: LocalTime;
+    tags?: string[];
+    sides?: string[];
+    suggestionId?: string;
+  };
 }
 
 export type YouOrder = 'plans-first' | 'nights-first';

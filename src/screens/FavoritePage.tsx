@@ -59,6 +59,7 @@ import { eventPath, eventRowPath, loggedRowPath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
 import { BackLink } from '../components/BackLink';
+import { QuickAddSheet } from '../components/QuickAddSheet';
 
 /** How many schedule rows show before "See all". */
 const ROWS = 5;
@@ -85,6 +86,8 @@ export function FavoritePage() {
   const [schedule, setSchedule] = useState<TeamGame[] | null>(null);
   const [list, setList] = useState<'schedule' | 'results'>('schedule');
   const [allRows, setAllRows] = useState(false);
+  // The Add a game / Add a show card (Kylie, Oct 21, 2026, late evening).
+  const [adding, setAdding] = useState(false);
   const today = todayIn(metro);
 
   // The favorite: the saved one, or one built from the address (a page you haven't followed yet).
@@ -96,6 +99,7 @@ export function FavoritePage() {
     return built.id === decodeURIComponent(id) ? built : { ...built, id: decodeURIComponent(id) };
   }, [favorites, kind, id]);
   const following = favorites.some((f) => favoriteKey(f) === favoriteKey(fav));
+  const canAdd = fav.kind === 'team' || fav.kind === 'artist';
   const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
   const teamMetroId = team?.metroId;
 
@@ -160,6 +164,8 @@ export function FavoritePage() {
     };
   }, [siteEventId, label]);
   const nearHome = matching.filter((e) => e.metroId === metro.id);
+  // The rooms this artist or team has listings at near home, for the card's Where list (most recent first).
+  const playedRooms = useMemo(() => [...new Set(nearHome.map((e) => (e.place.type === 'venue' ? venueNameOn(VENUES[e.place.venueId], e.date) : '')).filter(Boolean))], [nearHome]);
   const elsewhere = matching.filter((e) => e.metroId !== metro.id);
   const byId = useMemo(() => new Map(everywhere.map((e) => [e.id, e])), [everywhere]);
 
@@ -231,6 +237,10 @@ export function FavoritePage() {
           <span className="fav-last5">
             <span className="log-facts">Last {record.last5.length}</span> <LastFive marks={record.last5} />
           </span>
+        ) : canAdd ? (
+          <button type="button" className="fav-toggle fav-add" onClick={() => setAdding(true)}>
+            {fav.kind === 'team' ? '+ Add a game' : '+ Add a show'}
+          </button>
         ) : (
           <span />
         )}
@@ -253,6 +263,17 @@ export function FavoritePage() {
         <a href={site} target="_blank" rel="noreferrer" className="fav-foot-link fav-foot-out fav-page-espn">
           Official site ›
         </a>
+      )}
+
+      {record && canAdd && (
+        <div className="fav-page-row">
+          <button type="button" className="fav-toggle fav-add" onClick={() => setAdding(true)}>
+            + Add a game
+          </button>
+        </div>
+      )}
+      {adding && (
+        <QuickAddSheet target={{ ...fav, label }} homeId={homeId} genreWord={fav.kind === 'artist' ? artistGenreWord(matching) : undefined} artistListed={matching.length > 0} playedRooms={playedRooms} onClose={() => setAdding(false)} />
       )}
 
       {fav.kind === 'team' ? (

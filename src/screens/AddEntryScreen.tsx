@@ -23,7 +23,20 @@ import {
   type ManualNight,
   type SportsLevel,
   venueNamesIn,
+  favoritesOf,
+  searchFavoriteRecords,
+  favoriteFor,
+  yourEntries,
+  type Favorite,
 } from '../data';
+import { QuickAddSheet } from '../components/QuickAddSheet';
+import { FavoriteBadge } from '../components/FavoriteBadge';
+import { TEAMS, isCollegeTeam, teamLongName } from '../data';
+
+/** "College" or the league, under a team's name in the pick list. */
+function teamLevelWord(team: (typeof TEAMS)[string]): string {
+  return isCollegeTeam(team) ? 'College' : team.league;
+}
 import { SearchIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { getHomeId } from '../lib/homeCity';
@@ -55,7 +68,29 @@ export function AddEntryScreen() {
   const [query, setQuery] = useState('');
   const [hits, setHits] = useState<DateSearchHit[] | null>(null);
   const [typing, setTyping] = useState(false);
+  // The type first (Kylie, Oct 21, 2026, late evening): Game or Concert find a team or artist and open the card; Other is the search as before.
+  const [pick, setPick] = useState<'game' | 'show' | 'other'>('game');
+  const [target, setTarget] = useState<Favorite | null>(null);
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const trimmed = query.trim();
+  // Teams from the records on file; artists from your favorites and log, then the acts the listings name (R16).
+  const records = useMemo(() => {
+    if (pick === 'other') return [];
+    const found = searchFavoriteRecords(trimmed, favoritesOf(log), yourEntries(log), homeId, pick === 'game' ? 'team' : 'artist');
+    if (pick === 'show' && trimmed.length >= 2) {
+      const q = trimmed.toLowerCase();
+      const seen = new Set(found.map((f) => f.id));
+      for (const name of (hits ?? []).flatMap((h) => h.artists ?? [])) {
+        const fav = favoriteFor('artist', name);
+        if (name.toLowerCase().includes(q) && !seen.has(fav.id)) {
+          seen.add(fav.id);
+          found.push(fav);
+        }
+      }
+    }
+    return found.slice(0, 6);
+  }, [pick, trimmed, log, homeId, hits]);
+  const listedArtists = useMemo(() => new Set((hits ?? []).flatMap((h) => h.artists ?? []).map((n) => n.toLowerCase())), [hits]);
   // "Saved to your Stubs" is said once, on the first visit (Kylie, Oct 12, 11:42 PM PT): marked seen on open.
   const [firstVisit] = useState(() => !getPref<boolean>('new-stub-seen', false));
   useEffect(() => {
@@ -84,6 +119,13 @@ export function AddEntryScreen() {
 
       {!typing && (
         <>
+          <div className="pill-row add-type" role="group" aria-label="Type">
+            {([['game', 'Game'], ['show', 'Concert'], ['other', 'Other']] as const).map(([k, label]) => (
+              <button type="button" key={k} className="filter-chip" aria-pressed={pick === k} onClick={() => setPick(k)}>
+                {label}
+              </button>
+            ))}
+          </div>
           <div className="search-box">
             <label className="search-field">
               <SearchIcon />
@@ -91,8 +133,8 @@ export function AddEntryScreen() {
                 type="search"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder="Search a team, artist or venue"
-                aria-label="Search a team, artist or venue"
+                placeholder={pick === 'game' ? 'Which team?' : pick === 'show' ? 'Which artist?' : 'Search a team, artist or venue'}
+                aria-label={pick === 'game' ? 'Which team?' : pick === 'show' ? 'Which artist?' : 'Search a team, artist or venue'}
                 autoFocus
               />
             </label>
@@ -103,6 +145,25 @@ export function AddEntryScreen() {
             )}
           </div>
 
+          {records.length > 0 && (
+            <section className="card add-records" aria-label={pick === 'game' ? 'Teams' : 'Artists'}>
+              <ul className="add-record-list">
+                {records.map((fav) => (
+                  <li key={`${fav.kind}:${fav.id}`}>
+                    <button type="button" className="add-record-row" onClick={() => setTarget(fav)}>
+                      <FavoriteBadge fav={fav} shown={records} size="mark" />
+                      <span className="add-record-text">
+                        <span className="add-record-name">{fav.teamId ? teamLongName(TEAMS[fav.teamId]) : fav.label}</span>
+                        <span className="you-fine">{fav.teamId ? teamLevelWord(TEAMS[fav.teamId]) : 'Artist'}</span>
+                      </span>
+                      <span className="add-record-chev" aria-hidden>›</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          {target && <QuickAddSheet target={target} homeId={homeId} artistListed={listedArtists.has(target.label.toLowerCase())} onClose={() => setTarget(null)} />}
           {trimmed.length >= 2 && hits && hits.length > 0 && (
             <section className="famous" aria-live="polite">
               <h2 className="section-title">{hits.length === 1 ? '1 date' : `${hits.length} dates`}</h2>
