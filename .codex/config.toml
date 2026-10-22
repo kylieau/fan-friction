@@ -1,0 +1,8 @@
+# Codex settings for this repo. The Playwright browser every tool uses for phone-size checks of the app
+# (Claude Code: .mcp.json; Cursor: .cursor/mcp.json): headless Chromium at iPhone 15 size, a fresh profile
+# each run, screenshots in the git-ignored .playwright-mcp/.
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest", "--headless", "--isolated", "--browser", "chromium", "--device", "iPhone 15", "--output-dir", ".playwright-mcp"]
+startup_timeout_sec = 120
