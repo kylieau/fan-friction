@@ -189,7 +189,23 @@ try {
   // A fan show the sellers already list is theirs (the shared one-show key); fan games go through the one-game rule below.
   const fanKept = dropShowsTicketmasterHas(fan.filter((e) => e.kind !== 'game'), [...tm.events, ...sg, ...jb]).concat(fan.filter((e) => e.kind === 'game'));
   const seen = new Set();
-  const events = dropGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...sa, ...tm.events, ...sg, ...jb, ...fanKept].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
+  const ours = [...seed, ...mlb, ...espn, ...ht, ...sa, ...tm.events, ...sg, ...jb, ...fanKept].filter((e) => !seen.has(e.id) && seen.add(e.id));
+  // Feed games another city's pass filed in this city's rooms (the 49ers at Estadio Banorte sit under the Bay Area's pass,
+  // the Longhorns at the Frost Bank Center under Austin's; found Oct 22, 2026, each listed twice): read from the table so
+  // the one-game rule drops this pass's seller copy too. They take part in the rule only and are never written here.
+  // A failed read costs nothing but the check.
+  const elsewhere = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await db.from('events').select('id,data').eq('data->>metroId', metroId).neq('metro_id', metroId).in('source_id', GAME_FEEDS).gte('date', todayLocal).order('id').range(from, from + 999);
+    if (error) { console.log(`${metroId}: feed games filed by other passes not read (${error.message}).`); break; }
+    elsewhere.push(...data.filter((row) => !seen.has(row.id)).map((row) => row.data));
+    if (data.length < 1000) break;
+  }
+  const elsewhereIds = new Set(elsewhere.map((e) => e.id));
+  const keptEvents = dropGamesCoveredByFeeds([...ours, ...elsewhere]).filter((e) => !elsewhereIds.has(e.id));
+  const copies = dropGamesCoveredByFeeds(ours).length - keptEvents.length;
+  if (copies) console.log(`${metroId}: ${copies} seller games dropped as copies of feed games other passes filed here.`);
+  const events = keptEvents.map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds stay. The game feeds
   // (MLB, ESPN, HockeyTech) still list last week's games, so their stale rows are cleared from a week back; the

@@ -3,12 +3,22 @@
 // sources without changing the screens. Everything is async because live
 // sources will be.
 
+import { TEAMS } from '../teams';
 import type { CrowdEvent, DateRating, LocalDate } from '../types';
 
 /** Who to believe about a game, lowest first: a league or the school itself, then a seller. */
 const GAME_RANK: Record<string, number> = { seed: 0, mlb: 0, espn: 0, hockeytech: 0, sidearm: 1, ticketmaster: 2, seatgeek: 2, jambase: 2, fan: 3 };
 
-type GameLike = { sourceId: string; kind: string; date: string; start?: string | null; place: { type: string; venueId?: string }; audience?: object };
+type GameLike = {
+  sourceId: string;
+  kind: string;
+  date: string;
+  start?: string | null;
+  place: { type: string; venueId?: string };
+  audience?: object;
+  title?: string;
+  teams?: { home: string; away: string; awayOpponent?: string };
+};
 
 const sportOf = (e: GameLike) => (e.audience as { sport?: string } | undefined)?.sport;
 
@@ -22,7 +32,37 @@ function sameGame(a: GameLike, b: GameLike): boolean {
   if (sa && sb && sa !== 'other' && sb !== 'other' && sa !== sb) return false;
   const ma = minutes(a.start);
   const mb = minutes(b.start);
-  return ma == null || mb == null || Math.abs(ma - mb) <= 120;
+  return ma == null || mb == null || Math.abs(ma - mb) <= 120 || sameOpponent(a, b) || sameOpponent(b, a);
+}
+
+const plainWords = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(' ').filter((w) => w.length > 2);
+
+/** "women", "men" or undefined, from a title or a team's name ("Women's", "Womens", "Men's"). */
+function sideOf(text: string | undefined): 'women' | 'men' | undefined {
+  if (!text) return undefined;
+  if (/\bwomen'?s\b|\bwomens\b|\bwomen\b/i.test(text)) return 'women';
+  if (/\bmen'?s\b|\bmens\b/i.test(text)) return 'men';
+  return undefined;
+}
+
+/**
+ * A seller's game whose start is farther than two hours from a feed's game is still that game when the seller's title
+ * names the feed game's opponent and does not say a different side (men's or women's) from the feed's team (Kylie,
+ * Oct 22, 2026: "this is probably a scheduling issue, for games i would probably defer to ESPN"; found at the Galen
+ * Center, USC vs. Arkansas–Pine Bluff, 16:00 on ESPN and 19:00 on Ticketmaster). The feed's start stands, since the
+ * feed's copy wins.
+ */
+function sameOpponent(feed: GameLike, seller: GameLike): boolean {
+  if (!feed.teams || seller.teams || !seller.title) return false;
+  const away = feed.teams.awayOpponent ?? feed.teams.away;
+  const opponent = TEAMS[feed.teams.away]?.name;
+  const title = new Set(plainWords(seller.title));
+  const words = plainWords(away.replace(/-/g, ' '));
+  const named = (ws: string[]) => ws.length > 0 && ws.every((w) => title.has(w));
+  if (!named(words) && !(opponent && named(plainWords(opponent).slice(-2)))) return false;
+  const ours = sideOf(TEAMS[feed.teams.home]?.name ?? '');
+  const theirs = sideOf(seller.title);
+  return !ours || !theirs || ours === theirs;
 }
 
 /**
