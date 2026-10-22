@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-21",
+  "results": [
+    {
+      "eventId": "2026-10-21-espn-clippers-401909842",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 121
+      },
+      "away": {
+        "name": "Sac Kings",
+        "score": 96
+      },
+      "attendance": 17927,
+      "capturedAt": "2026-10-22T13:35:37.965Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "22:43"
+    },
+    {
+      "eventId": "2026-10-21-espn-lakers-401909092",
+      "metroId": "la",
+      "date": "2026-10-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 127
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 105
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-10-22T13:35:37.965Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "22:17"
+    }
+  ]
+}

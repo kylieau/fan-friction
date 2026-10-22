@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-21",
+  "results": [
+    {
+      "eventId": "2026-10-21-espn-raptors-401909837",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 135
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 92
+      },
+      "attendance": 19800,
+      "capturedAt": "2026-10-22T13:35:48.740Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "19:45"
+    },
+    {
+      "eventId": "2026-10-21-ht-marlies-1029174",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "coca-cola-coliseum",
+      "homeTeamId": "marlies",
+      "home": {
+        "name": "Marlies",
+        "score": 4
+      },
+      "away": {
+        "name": "Hammers",
+        "score": 1
+      },
+      "attendance": 3359,
+      "capturedAt": "2026-10-22T13:35:48.741Z"
+    }
+  ]
+}

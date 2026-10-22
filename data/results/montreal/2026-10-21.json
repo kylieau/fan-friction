@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-21",
+  "results": [
+    {
+      "eventId": "2026-10-21-ht-laval-rocket-1029171",
+      "metroId": "montreal",
+      "date": "2026-10-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 5
+      },
+      "away": {
+        "name": "Crunch",
+        "score": 1
+      },
+      "attendance": 8123,
+      "capturedAt": "2026-10-22T13:35:42.738Z"
+    }
+  ]
+}

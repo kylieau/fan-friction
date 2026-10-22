@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-10-21",
+  "results": [
+    {
+      "eventId": "2026-10-21-espn-pelicans-401909839",
+      "metroId": "new-orleans",
+      "date": "2026-10-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "smoothie-king-center",
+      "homeTeamId": "pelicans",
+      "home": {
+        "name": "Pelicans",
+        "score": 120
+      },
+      "away": {
+        "name": "Pacers",
+        "score": 123
+      },
+      "attendance": 17232,
+      "capturedAt": "2026-10-22T13:35:49.234Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    }
+  ]
+}

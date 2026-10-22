@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-21",
+  "results": [
+    {
+      "eventId": "2026-10-21-espn-dream-401918307",
+      "metroId": "atlanta",
+      "date": "2026-10-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "dream",
+      "home": {
+        "name": "Dream",
+        "score": 97
+      },
+      "away": {
+        "name": "Valkyries",
+        "score": 71
+      },
+      "attendance": 17099,
+      "capturedAt": "2026-10-22T13:35:41.111Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "17:11"
+    }
+  ]
+}
