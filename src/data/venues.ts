@@ -11030,7 +11030,8 @@ export const VENUES: Record<string, Venue> = {
   'umd-xfinity-center': {
     id: 'umd-xfinity-center',
     metroId: 'washington-dc',
-    names: [{ name: 'Xfinity Center' }, { name: 'Comcast Center' }],
+    // Comcast Center became Xfinity Center July 28, 2014 (umterps.com); the undated pair showed the old name (small rooms answer 5).
+    names: [{ name: 'Comcast Center' }, { name: 'Xfinity Center', from: '2014-07-28' }],
     location: [-76.9413362, 38.9956239],
     capacity: [
       { seats: 17950, setup: 'basketball', note: 'Reported. Pavilion (~1,500) is a separate room. Source: venue table A1.' },
