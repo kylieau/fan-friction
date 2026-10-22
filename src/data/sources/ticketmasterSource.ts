@@ -126,7 +126,17 @@ export const SPORTS_FROM_TICKETMASTER = new Set([
   'ottawa-stadium', 'centre-slush-puppie', 'hard-rock-live-ottawa', 'arena-at-td-place', 'theatre-casino-lac-leamy',
 ]);
 
-function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {
+/**
+ * A listing named like a match: two sides around "vs", "vs.", "v." or "@" ("UCLA Bruins Mens Basketball vs San Diego
+ * Toreros Mens Basketball (Exhibition)", "Pacheco vs. Fulghum"). "at" is not enough: "Classic Tour at Yankee Stadium"
+ * names a building, not an opponent.
+ */
+function gameShaped(name: string): boolean {
+  // A side still "TBD" ("New York Knicks v TBD") is a placeholder the league feed will name later.
+  return /\S\s+(?:vs\.?|v\.?|@)\s+\S/i.test(name) && !/\bTBD\b/.test(name);
+}
+
+function kindOf(segment: string | undefined, venueId: string, name: string): CrowdEvent['kind'] | null {
   switch (segment) {
     case 'Music':
       return 'show';
@@ -135,7 +145,12 @@ function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'
     case 'Film':
       return 'special';
     case 'Sports':
-      return SPORTS_FROM_TICKETMASTER.has(venueId) ? 'game' : null; // elsewhere the league feeds own sports
+      // Rooms with no league feed (SPORTS_FROM_TICKETMASTER) take every sports listing. Everywhere else, since
+      // Oct 21, 2026 (Kylie: UCLA's exhibitions were in neither feed), a listing named like a match is kept too; a
+      // league feed's game at the same building and date still wins (dropTicketmasterGamesCoveredByFeeds), so what
+      // survives is an exhibition, a sport the feeds lack (college volleyball) or a one-off showcase. The match shape
+      // keeps out what the feeds never had a reason to list: stadium tours, racing days, daily general admission.
+      return SPORTS_FROM_TICKETMASTER.has(venueId) || gameShaped(name) ? 'game' : null;
     default:
       return 'special';
   }
@@ -276,7 +291,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       }
       // A closed room takes no listing inside its closed window (the Apollo during its renovation; Kylie, Oct 16).
       if (venueClosedOn(venue, e.dates.start.localDate)) continue;
-      const kind = kindOf(segment, venue.id);
+      const kind = kindOf(segment, venue.id, e.name);
       if (!kind) continue;
       // Every placed listing's name, kept for the same-room parent check after the pass (add-on layer 3).
       const roomDay = `${venue.id}|${e.dates.start.localDate}`;
@@ -323,6 +338,8 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         place: { type: 'venue', venueId: venue.id },
         audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(`${genre} ${e.classifications?.[0]?.subGenre?.name ?? ''} ${e.name}`) } : { domain: 'other', tag: genre },
         performer,
+        // An exhibition or preseason game by its listing name (ESPN marks its own with the season type).
+        ...(kind === 'game' && /\b(exhibition|preseason|pre-season)\b/i.test(e.name) ? { preseason: true } : {}),
         // Whether that performer is an act the feed names, or the listing's name standing in (R16; from the Oct 20 run).
         act: performers.length > 0,
         ...(kind === 'show' && bigRoom && performerIds.length ? { performerIds } : {}),
