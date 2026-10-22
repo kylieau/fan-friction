@@ -100,6 +100,14 @@ function capacityOf(event: CrowdEvent): { cap: number; estimated: boolean } {
   return { cap: known || 5000, estimated: true };
 }
 
+/** The same performer or title in the same room on the same date: two houses of one show. */
+function sameProduction(a: CrowdEvent, b: CrowdEvent): boolean {
+  if (a.place.type !== 'venue' || b.place.type !== 'venue' || a.place.venueId !== b.place.venueId || a.date !== b.date) return false;
+  if (a.kind === 'game' || b.kind === 'game') return false;
+  const name = (e: CrowdEvent) => (e.performer ?? e.title).toLowerCase().trim();
+  return name(a) === name(b);
+}
+
 /** Out of the read: an invited event, or a playoff game that may not be played (C024). */
 export function leftOut(event: CrowdEvent): boolean {
   return Boolean(event.invited || event.stakes?.ifNecessary);
@@ -115,6 +123,8 @@ export function eventCrowdFight(event: CrowdEvent, sameDate: readonly CrowdEvent
   if (!leftOut(event)) {
     for (const other of sameDate) {
       if (other.id === event.id || leftOut(other) || !eventFeedsFriction(other)) continue;
+      // Two performances of one production in one room (a matinee and an evening house, Oct 22, 2026) never compete.
+      if (sameProduction(event, other)) continue;
       const cap = capacityOf(other);
       const tier = overlapTier(event, other);
       const t = timeFactor(event, other);

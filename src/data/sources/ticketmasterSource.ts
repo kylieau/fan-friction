@@ -24,6 +24,8 @@ const PAGE_SIZE = 200;
 const MAX_PAGES = 5;
 const WINDOW_DAYS = 60;
 const VENUES_PER_CALL = 12;
+/** Two listings of one performer in one room on one date this far apart are two performances (a matinee and an evening). */
+const SECOND_PERFORMANCE_MINUTES = 180;
 /** A venue with no Ticketmaster id on record: its current name, searched this close to its spot (miles). */
 const NAME_SEARCH_MILES = 3;
 
@@ -197,10 +199,11 @@ function markRuns(events: CrowdEvent[]) {
     for (const e of list) {
       const [y, m, d] = e.date.split('-').map(Number);
       const t = Date.UTC(y, m - 1, d);
-      const run = list.filter((o) => {
+      // Dates, not performances: a matinee day is one date of the run.
+      const run = new Set(list.filter((o) => {
         const [oy, om, od] = o.date.split('-').map(Number);
         return Math.abs(Date.UTC(oy, om - 1, od) - t) <= 7 * 86_400_000;
-      }).length;
+      }).map((o) => o.date)).size;
       if (run >= 2) e.occasionFacts = { ...(e.occasionFacts ?? {}), run };
     }
   }
@@ -242,9 +245,11 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   const rawNames = new Map<string, string>();
   const showKeysOf = new Map<string, string[]>();
   const seen = new Set<string>();
-  // Ticketmaster can list one show twice under two ids (a second listing, a package). The same
-  // performer in the same building at the same date and start is one show, counted once.
-  const shows = new Set<string>();
+  // Ticketmaster can list one show twice under two ids (a second listing, a package). The same performer in the same
+  // building on the same date is one show, counted once, unless the starts are more than three hours apart: then it is a
+  // second performance (Kylie, Oct 22, 2026: "for matinees, make the second performance a second event"). A doors time,
+  // a package or a VIP entry sits an hour or two from the show; a matinee and an evening house are four hours or more.
+  const shows = new Map<string, (number | null)[]>();
   let pages = 0;
   // The queries: the city's venues by id, a dozen at a time per two-month window; then each
   // venue with no id by its name near its spot, over the whole horizon.
@@ -323,7 +328,8 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       const name = untagName(e.name, venue.names.map((n) => n.name));
       const performer = (performers[0] ?? name).trim();
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
-      // One performer in one building on one date is one show, whatever time each listing carries (C014); one event
+      // One performer in one building on one date is one show (C014) unless the starts are three hours apart (a matinee and
+      // an evening house are two; Oct 22, 2026); one event
       // listed under two segments with two performer names is caught by its name (the shared key, venueMatch.ts).
       // The duplicate check runs after the pass, once add-on layer 3 has had the whole night (an add-on caught only by
       // its parent must never stand in for the real show).
@@ -366,9 +372,11 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
     return false;
   }).filter((event) => {
     const [show, named] = showKeysOf.get(event.id) ?? [event.id, event.id];
-    if (shows.has(show) || shows.has(named)) return false;
-    shows.add(show);
-    shows.add(named);
+    const start = event.start ? Number(event.start.slice(0, 2)) * 60 + Number(event.start.slice(3, 5)) : null;
+    const copy = (k: string) => (shows.get(k) ?? []).some((s) => s === null || start === null || Math.abs(s - start) <= SECOND_PERFORMANCE_MINUTES);
+    if (copy(show) || copy(named)) return false;
+    shows.set(show, [...(shows.get(show) ?? []), start]);
+    shows.set(named, [...(shows.get(named) ?? []), start]);
     return true;
   });
   markRuns(kept);
