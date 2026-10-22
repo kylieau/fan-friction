@@ -15,7 +15,7 @@ import { supabase } from './storage/supabaseClient';
 import { getTeamSchedule } from './teamSchedule';
 import { TEAMS, isCollegeTeam, teamLongName } from './teams';
 import type { CrowdEvent, Division, Favorite, LocalDate, LocalTime, SportsLevel } from './types';
-import { VENUES, venueNameOn } from './venues';
+import { VENUES, venueByName, venueNameOn } from './venues';
 import { METROS, DEFAULT_METRO, type Metro } from '../config/metros';
 
 const todayIn = (metro: Metro): LocalDate => new Date().toLocaleDateString('en-CA', { timeZone: metro.timeZone });
@@ -80,7 +80,7 @@ const cap = (s: string) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 export function roomNamed(metroId: string, name: string, date: LocalDate) {
   const q = name.trim().toLowerCase();
   return Object.values(VENUES).find((v) => v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === q) && venueNameOn(v, date).toLowerCase() === q)
-    ?? Object.values(VENUES).find((v) => v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === q));
+    ?? venueByName(q, metroId);
 }
 
 /** The city's open rooms A–Z (a native picker jumps by letter), with any named first ones ahead: the home room, the rooms the artist has played here. */

@@ -485,9 +485,11 @@ export function venueNamesIn(metroId: string): string[] {
     .sort();
 }
 
-const VENUE_BY_ANY_NAME = new Map(
-  Object.values(VENUES).flatMap((venue) => venue.names.map((n) => [n.name.toLowerCase(), venue] as const)),
-);
+// Aliases go in first, so a room's own name wins over another room's alias.
+const VENUE_BY_ANY_NAME = new Map([
+  ...Object.values(VENUES).flatMap((venue) => (venue.aliases ?? []).map((a) => [a.toLowerCase(), venue] as const)),
+  ...Object.values(VENUES).flatMap((venue) => venue.names.map((n) => [n.name.toLowerCase(), venue] as const)),
+]);
 
 /** Write the person's own fields on one entry. Blank values clear the field. The stamp is untouched. */
 export function updateEntry(entryId: string, edit: EntryEdit) {

@@ -12207,7 +12207,6 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'cleveland',
     carShare: 0.88,
     // The arena inside is Henry J. Goodman Arena; sellers and the school say Wolstein Center, so it goes last (checked Oct 22, 2026).
-    // Both stay in names, not aliases: stubs and favorites look a room up by its names.
     names: [{ name: 'Goodman Arena' }, { name: 'Wolstein Center' }],
     location: [-81.6766496, 41.4992338],
     ticketmasterIds: ['KovZpZAFdEEA'],
@@ -15241,6 +15240,22 @@ export function venueNameOn(venue: Venue, date: LocalDate): string {
   let current = venue.names[0].name;
   for (const n of venue.names) if (!n.from || n.from <= date) current = n.name;
   return current;
+}
+
+/** Whether a room goes by this name, any case: one of its names, else a seller's or a feed's spelling (`aliases`, never shown). */
+export function venueGoesBy(venue: Venue, name: string): boolean {
+  const key = name.trim().toLowerCase();
+  return venue.names.some((n) => n.name.toLowerCase() === key) || (venue.aliases ?? []).some((a) => a.toLowerCase() === key);
+}
+
+/**
+ * The room that goes by this name, in one city when one is given. A room's names win over another room's alias,
+ * so a spelling a seller uses never takes a stub or a favorite from the room that carries it as a name.
+ */
+export function venueByName(name: string, metroId?: string): Venue | undefined {
+  const key = name.trim().toLowerCase();
+  const rooms = Object.values(VENUES).filter((v) => !metroId || v.metroId === metroId);
+  return rooms.find((v) => v.names.some((n) => n.name.toLowerCase() === key)) ?? rooms.find((v) => (v.aliases ?? []).some((a) => a.toLowerCase() === key));
 }
 
 /**

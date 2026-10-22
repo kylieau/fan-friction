@@ -149,7 +149,7 @@ export function SearchSheet({
     }
     for (const venue of Object.values(VENUES)) {
       const name = venueNameOn(venue, today);
-      if (venue.names.some((n) => n.name.toLowerCase().includes(q))) add(favoriteFor('venue', name));
+      if ([...venue.names.map((n) => n.name), ...(venue.aliases ?? [])].some((n) => n.toLowerCase().includes(q))) add(favoriteFor('venue', name));
     }
     for (const hit of hits ?? []) {
       // A matched name is offered as a team or a venue only when a record carries it. Artists and festivals come from

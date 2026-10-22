@@ -4,7 +4,7 @@
 
 import { cachedResults } from './catalogCache';
 import type { CrowdEvent, Entry, GameResult } from './types';
-import { VENUES } from './venues';
+import { venueByName } from './venues';
 
 export function resultFor(event: CrowdEvent): GameResult | undefined {
   // The shared catalog's rows for that date (loaded by getCityDate, or by a script from the files).
@@ -74,8 +74,7 @@ function resultForEntry(entry: Entry): GameResult | undefined {
     if (exact) return exact;
   }
   if (!entry.venue) return undefined;
-  const venueName = entry.venue.toLowerCase();
-  const venue = Object.values(VENUES).find((v) => v.names.some((n) => n.name.toLowerCase() === venueName));
+  const venue = venueByName(entry.venue);
   if (!venue) return undefined;
   return rows.find((row) => row.date === entry.when.sort && row.venueId === venue.id);
 }

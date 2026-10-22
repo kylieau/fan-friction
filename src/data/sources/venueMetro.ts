@@ -4,7 +4,7 @@
 
 import { METROS } from '../../config/metros';
 import type { CrowdEvent } from '../types';
-import { VENUES } from '../venues';
+import { VENUES, venueGoesBy } from '../venues';
 
 /** The metro of a known venue, when the app covers it; otherwise the fallback (the team's metro). */
 export function metroForVenue(venueId: string, fallback: string): string {
@@ -27,7 +27,7 @@ export function isFurtherOut(event: CrowdEvent): boolean {
 export function isFurtherOutRoom(metroId: string | undefined, venue: string | undefined): boolean {
   const key = venue?.trim().toLowerCase();
   if (!metroId || !key) return false;
-  return Object.values(VENUES).some((v) => v.furtherOut && v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === key));
+  return Object.values(VENUES).some((v) => v.furtherOut && v.metroId === metroId && venueGoesBy(v, key));
 }
 
 /**

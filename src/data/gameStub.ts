@@ -7,7 +7,7 @@
 
 import { METROS } from '../config/metros';
 import { TEAMS } from './teams';
-import { VENUES } from './venues';
+import { VENUES, venueByName, venueGoesBy } from './venues';
 import { venueByNameOrPlace } from './sources/venueMatch';
 import type { CrowdEvent, Entry, Plan, Team, TeamGame } from './types';
 
@@ -52,8 +52,7 @@ function venueOf(game: TeamGame, metroId: string | undefined) {
     const here = venueByNameOrPlace(metroId, game.venueName);
     if (here) return here;
   }
-  const key = game.venueName.trim().toLowerCase();
-  return Object.values(VENUES).find((v) => v.names.some((n) => n.name.toLowerCase() === key));
+  return venueByName(game.venueName);
 }
 
 /** The home and away team ids, when both are known. */
@@ -123,8 +122,7 @@ export function stubShapeOf(row: Entry | Plan): StubShape {
 /** The same page rebuilt from a stub or a friend's line (its name kept as saved), when the catalog never had the game. */
 export function eventFromStub(id: string, row: StubShape): CrowdEvent {
   const metroId = row.metroId ?? 'la';
-  const key = (row.venue ?? '').toLowerCase();
-  const venue = key ? Object.values(VENUES).find((v) => v.metroId === metroId && v.names.some((n) => n.name.toLowerCase() === key)) : undefined;
+  const venue = row.venue ? venueByName(row.venue, metroId) : undefined;
   return {
     id,
     metroId,
@@ -144,6 +142,5 @@ export function eventFromStub(id: string, row: StubShape): CrowdEvent {
 /** A plan made from a schedule game in a building outside its city's catalog: no read belongs to it. */
 export function isOutsideGamePlan(plan: Plan): boolean {
   if (!isGameEventId(plan.eventId)) return false;
-  const key = (plan.venue ?? '').toLowerCase();
-  return !Object.values(VENUES).some((v) => v.metroId === plan.metroId && v.names.some((n) => n.name.toLowerCase() === key));
+  return !Object.values(VENUES).some((v) => v.metroId === plan.metroId && venueGoesBy(v, plan.venue ?? ''));
 }

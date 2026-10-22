@@ -10,7 +10,7 @@
 import { METROS } from '../config/metros';
 import { ARTISTS, artistByName, artistMatches } from './artists';
 import { TEAMS, leagueMark, teamBadge, teamDisplayName, teamLongName } from './teams';
-import { VENUES, venueNameOn } from './venues';
+import { VENUES, venueByName, venueNameOn } from './venues';
 import type { CrowdEvent, Favorite, FavoriteKind, Entry, Team } from './types';
 
 export type { Favorite, FavoriteKind } from './types';
@@ -43,11 +43,6 @@ function teamByShortName(name: string) {
       team.name.toLowerCase() === lower ||
       (team.aliases ?? []).some((alias) => alias.toLowerCase() === lower),
   );
-}
-
-function venueByName(name: string) {
-  const lower = name.toLowerCase();
-  return Object.values(VENUES).find((venue) => venue.names.some((n) => n.name.toLowerCase() === lower));
 }
 
 /** Build a favorite from a name, linking it to the catalog when the name matches. */

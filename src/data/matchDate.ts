@@ -26,7 +26,7 @@ export function dateNames(event: CrowdEvent): string[] {
   if (event.performer) names.push(event.performer);
   if (event.place.type === 'venue') {
     const venue = VENUES[event.place.venueId];
-    if (venue) names.push(...venue.names.map((n) => n.name));
+    if (venue) names.push(...venue.names.map((n) => n.name), ...(venue.aliases ?? []));
   } else {
     names.push(event.place.name);
   }
