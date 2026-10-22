@@ -33,6 +33,12 @@ export const PRELIST_ATTENDEES = 1000;
 export const FRICTION_ATTENDEES = 5000;
 /** A non-concert Ticketmaster listing in a room smaller than this stays under the floor unless it sold out. */
 export const SMALL_SPECIAL_ROOM = 6000;
+/**
+ * Sports whose crowds sit far under their rooms whatever the room (a college volleyball match in a 13,800-seat
+ * arena): listed like a small room, never a friction crowd, until a count or a past-crowd row says otherwise
+ * (Oct 21, 2026, with the school feeds and the wider Ticketmaster sports rule).
+ */
+export const SMALL_DRAW_SPORTS = new Set(['volleyball', 'water polo', 'track', 'swimming', 'tennis', 'gymnastics', 'softball', 'lacrosse', 'golf', 'rowing', 'cross country']);
 
 /** The stamp locks this many hours after the last scheduled start that night. */
 export const STAMP_LOCK_HOURS = 24;
@@ -93,11 +99,16 @@ export function knownSize(event: CrowdEvent): number | undefined {
   // A Ticketmaster listing that is neither a concert nor a league game (Arts & Theatre,
   // Miscellaneous, a college match the feeds don't carry) in a room under ~6,000 sits
   // under the floor unless a source says it sold out (Kylie, Oct 7).
-  if (event.kind === 'special' && event.sourceId === 'ticketmaster' && !event.crowd.some((c) => c.soldOut)) {
-    const cap = listedCapacity(event);
-    if (cap != null && cap < SMALL_SPECIAL_ROOM) return Math.min(cap, FRICTION_ATTENDEES - 1);
-  }
+  // The same for a game no league feed carries and no past crowd sizes (a seller's listing, a school's own
+  // calendar: the "college match the feeds don't carry" of that rule), since Oct 21, 2026, when the school feeds and
+  // the wider sports rule began listing such games at every room.
   const draw = event.expectedDraw;
+  const unsized = event.kind === 'game' && !draw && (event.sourceId === 'ticketmaster' || event.sourceId === 'sidearm' || event.sourceId === 'seatgeek');
+  if ((event.kind === 'special' && event.sourceId === 'ticketmaster' || unsized) && !event.crowd.some((c) => c.soldOut)) {
+    const cap = listedCapacity(event);
+    const smallDraw = unsized && event.audience.domain === 'sports' && SMALL_DRAW_SPORTS.has(event.audience.sport);
+    if (cap != null && (cap < SMALL_SPECIAL_ROOM || smallDraw)) return Math.min(cap, FRICTION_ATTENDEES - 1);
+  }
   // A show's estimate sizes its pull, not the gate: the room decides until venue
   // averages exist for most covered rooms (Kylie, Oct 7, C1).
   if (draw && event.audience.domain === 'sports') return draw.low ?? draw.count;

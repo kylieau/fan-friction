@@ -19,7 +19,7 @@ const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const dryRun = process.argv.includes('--dry-run');
 /** The feeds that keep listing a game after its day (with its result), so the pass can tell a dropped game from a past one. */
-const GAME_FEEDS = ['mlb', 'espn', 'hockeytech'];
+const GAME_FEEDS = ['mlb', 'espn', 'hockeytech', 'sidearm'];
 const GAME_FEED_BACK_DAYS = 7;
 
 if (!url || !key) {
@@ -75,8 +75,22 @@ try {
   const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
   const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
   const { looseVenueMatches } = await server.ssrLoadModule('/src/data/sources/venueMatch.ts');
-  const { dropTicketmasterGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
+  const { dropGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
+  const { loadSidearmSchedule } = await server.ssrLoadModule('/src/data/sources/sidearmSource.ts');
+  const { loadJambaseEvents, readJambaseQuota, JAMBASE_METROS } = await server.ssrLoadModule('/src/data/sources/jambaseSource.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
+  // JamBase (Kylie, Oct 21, 2026): concerts from the sellers Ticketmaster's feed lacks. Off until the free key is a secret;
+  // the quota is read once per run and every city's pull stops while the reserve is left.
+  const jbKey = process.env.JAMBASE_API_KEY;
+  let jbQuota = null;
+  if (jbKey) {
+    try {
+      jbQuota = await readJambaseQuota(jbKey);
+      console.log(`JamBase quota: plan ${jbQuota.plan ?? '?'}, ${jbQuota.usedCalls ?? '?'} used, ${jbQuota.remainingCalls ?? 'unknown'} left this month${jbQuota.overageCalls ? `, ${jbQuota.overageCalls} over` : ''}.`);
+    } catch (error) {
+      console.log(`JamBase quota could not be read (${error.message}); JamBase skipped tonight.`);
+    }
+  }
   // SeatGeek (build 5, item 1): shows Ticketmaster misses. Off until Kylie adds the free client id as a secret.
   const { loadSeatgeekEvents, dropShowsTicketmasterHas } = await server.ssrLoadModule('/src/data/sources/seatgeekSource.ts');
   const sgKey = process.env.SEATGEEK_CLIENT_ID;
@@ -102,7 +116,7 @@ try {
   // Oct 19, 2026: a HockeyTech outage would have cleared the past week's hockey games). MLB and ESPN throw and stop
   // the city's pass, so nothing of theirs is written or deleted that night.
   const failedFeeds = new Set();
-  const [mlb, espn, ht, seed, tm] = await Promise.all([
+  const [mlb, espn, ht, seed, tm, sa] = await Promise.all([
     loadMlbSchedule(metroId, undefined, floorLocal),
     loadEspnSchedule(metroId, floorLocal),
     loadHockeytechSchedule(metroId, floorLocal).catch((error) => {
@@ -112,7 +126,28 @@ try {
     }),
     seedEvents.catalog(metroId),
     tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], bigRoomSpecials: [], droppedAddOns: [], pages: 0 }),
+    // The schools' own calendar feeds (Kylie, Oct 21, 2026): a feed that fails is logged inside and costs nothing else.
+    loadSidearmSchedule(metroId, floorLocal).catch((error) => {
+      failedFeeds.add('sidearm');
+      console.log(`${metroId}: school calendars failed (${error.message}); kept the rest, their rows untouched.`);
+      return [];
+    }),
   ]);
+  if (sa.length) console.log(`${metroId}: school calendars ${sa.length} games at rooms on file.`);
+  let jbAll = [];
+  if (jbKey && jbQuota && JAMBASE_METROS.includes(metroId)) {
+    try {
+      const pull = await loadJambaseEvents(metroId, jbKey, jbQuota);
+      jbAll = pull.events;
+      if (pull.quota) jbQuota = { ...jbQuota, remainingCalls: pull.quota.remainingCalls == null ? null : pull.quota.remainingCalls - pull.calls, usedCalls: (pull.quota.usedCalls ?? 0) + pull.calls };
+      console.log(pull.skipped ? `${metroId}: JamBase skipped (${pull.skipped}).` : `${metroId}: JamBase ${jbAll.length} concerts at rooms on file, ${pull.calls} calls.`);
+    } catch (error) {
+      failedFeeds.add('jambase');
+      console.log(`${metroId}: JamBase failed (${error.message}); kept the rest, its rows untouched.`);
+    }
+  }
+  const jb = dropShowsTicketmasterHas(jbAll, tm.events);
+  if (jbAll.length) console.log(`${metroId}: JamBase ${jb.length} shows Ticketmaster doesn't list (${jbAll.length - jb.length} it does).`);
   // A new source failing must not cost the city its night: log it and carry on without it.
   const sgAll = sgKey
     ? await loadSeatgeekEvents(metroId, sgKey).catch((error) => {
@@ -158,7 +193,7 @@ try {
     data: e,
   });
   const seen = new Set();
-  const events = dropTicketmasterGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...tm.events, ...sg].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
+  const events = dropGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...ht, ...sa, ...tm.events, ...sg, ...jb].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds stay. The game feeds
   // (MLB, ESPN, HockeyTech) still list last week's games, so their stale rows are cleared from a week back; the

@@ -67,6 +67,8 @@ jobs:
         continue-on-error: true
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          # Oct 21, 2026: JamBase's free Developer plan (concerts from AXS, DICE and the other sellers the app can't read). Empty until Kylie adds the key.
+          JAMBASE_API_KEY: ${{ secrets.JAMBASE_API_KEY }}
         run: |
           metro_args=()
           if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
@@ -97,6 +99,7 @@ jobs:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           # Build 5, item 1: shows Ticketmaster misses. Empty until the free client id is added as a secret.
           SEATGEEK_CLIENT_ID: ${{ secrets.SEATGEEK_CLIENT_ID }}
+          JAMBASE_API_KEY: ${{ secrets.JAMBASE_API_KEY }}
         run: |
           metro_args=()
           if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi

@@ -287,6 +287,8 @@ export interface CrowdEvent {
   sourceId: string;
   /** Ticketmaster's event id, for listings from its feed (the one piece of its content kept). */
   ticketmasterId?: string;
+  /** The seller's ticket page, kept only for sources whose terms ask that it be shown as returned (JamBase). */
+  ticketUrl?: string;
 }
 
 /**

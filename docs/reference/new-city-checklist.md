@@ -14,6 +14,7 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 - `src/data/sources/mlbSource.ts` `MLB_TEAMS` and `MLB_VENUES`: MLB id and ballpark id.
 - `src/data/sources/espnSource.ts` `ESPN_TEAMS` and `VENUE_BY_NAME`: ESPN path and id per team; the venue names ESPN uses. Ids are in `docs/reference/data-sources.md`'s method: the team page on espn.com carries the id in its URL.
 - `scripts/attendance-collect.mjs`: the same ids with the seasons to pull.
+- `src/data/sources/sidearmSchools.ts`: one line per school whose athletics site runs on Sidearm Sports (the footer says so; `https://<site>/calendar.ashx/calendar.ics` returns `text/calendar`). Give its site, the name its feed writes before the sport ("USC Trojans") and a short name. Its games then arrive nightly, exhibitions included, placed by the room in the feed's LOCATION, so the school's rooms of 1,000+ must be in `venues.ts` under the names the feed uses. A school on WMT Digital or another provider is left out; its home games come through opponents' feeds.
 
 ## 3. Venues (the hand part, about an afternoon)
 - Run the venue research prompt for the city (`docs/research/city-builds/los-angeles/la-venue-table-prompt.md`, change the city and boundary). Fold the answer into `src/data/venues.ts`: names with rename dates, coordinates, capacity by setup and year, roof. Label every figure official, reported or estimated. Geocode coordinates against OpenStreetMap.

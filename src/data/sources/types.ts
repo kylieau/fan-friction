@@ -5,14 +5,43 @@
 
 import type { CrowdEvent, DateRating, LocalDate } from '../types';
 
-/**
- * A Ticketmaster game at a building and date where a league feed already lists one is the same game
- * sold twice; the feed's copy stays (docs/product/no-feed-teams-proposal.md).
- */
-export function dropTicketmasterGamesCoveredByFeeds<T extends { sourceId: string; kind: string; date: string; place: { type: string; venueId?: string } }>(events: T[]): T[] {
-  const feedGames = new Set(events.filter((e) => e.sourceId !== 'ticketmaster' && e.kind === 'game' && e.place.type === 'venue').map((e) => `${e.place.venueId}|${e.date}`));
-  return events.filter((e) => !(e.sourceId === 'ticketmaster' && e.kind === 'game' && e.place.type === 'venue' && feedGames.has(`${e.place.venueId}|${e.date}`)));
+/** Who to believe about a game, lowest first: a league or the school itself, then a seller. */
+const GAME_RANK: Record<string, number> = { seed: 0, mlb: 0, espn: 0, hockeytech: 0, sidearm: 1, ticketmaster: 2, seatgeek: 2, jambase: 2 };
+
+type GameLike = { sourceId: string; kind: string; date: string; start?: string | null; place: { type: string; venueId?: string }; audience?: object };
+
+const sportOf = (e: GameLike) => (e.audience as { sport?: string } | undefined)?.sport;
+
+const minutes = (t: string | null | undefined) => (t ? Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5)) : null);
+
+/** The same game sold or listed twice: one building, one date, the same sport when both say one, starts within two hours when both have one. */
+function sameGame(a: GameLike, b: GameLike): boolean {
+  if (a.place.venueId !== b.place.venueId || a.date !== b.date) return false;
+  const sa = sportOf(a);
+  const sb = sportOf(b);
+  if (sa && sb && sa !== 'other' && sb !== 'other' && sa !== sb) return false;
+  const ma = minutes(a.start);
+  const mb = minutes(b.start);
+  return ma == null || mb == null || Math.abs(ma - mb) <= 120;
 }
+
+/**
+ * A game a league feed or the school's own feed lists wins over a seller's listing of it, and the league's over the
+ * school's (docs/product/no-feed-teams-proposal.md; widened Oct 21, 2026 to every room, and from "same building and
+ * date" to "same building, date, sport and start", so a volleyball match the feeds lack stays on a day the
+ * basketball team plays at home).
+ */
+export function dropGamesCoveredByFeeds<T extends GameLike>(events: T[]): T[] {
+  const games = events.filter((e) => e.kind === 'game' && e.place.type === 'venue');
+  return events.filter((e) => {
+    if (e.kind !== 'game' || e.place.type !== 'venue') return true;
+    const rank = GAME_RANK[e.sourceId] ?? 3;
+    return !games.some((g) => (GAME_RANK[g.sourceId] ?? 3) < rank && sameGame(g, e));
+  });
+}
+
+/** The old name, kept for the scripts. */
+export const dropTicketmasterGamesCoveredByFeeds = dropGamesCoveredByFeeds;
 
 export interface EventSource {
   id: string;

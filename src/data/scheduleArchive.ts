@@ -8,15 +8,23 @@ import { archivedReads, type ArchivedEventRead } from './forecastCapture';
 import { withExpectedDraws } from './expectedDraw';
 import { loadEspnSchedule } from './sources/espnSource';
 import { loadHockeytechSchedule } from './sources/hockeytechSource';
-import { dropTicketmasterGamesCoveredByFeeds } from './sources/types';
+import { dropGamesCoveredByFeeds } from './sources/types';
 import { loadMlbSchedule } from './sources/mlbSource';
 import { seedEvents } from './sources/seedSource';
 import { loadTicketmasterEvents } from './sources/ticketmasterSource';
+import { loadSidearmSchedule } from './sources/sidearmSource';
+import { loadJambaseEvents, JAMBASE_METROS } from './sources/jambaseSource';
 
 /** The job's Ticketmaster key, from the environment; never in the app. */
 function ticketmasterKey(): string | undefined {
   const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env;
   return env?.TICKETMASTER_API_KEY || undefined;
+}
+
+/** The job's JamBase key, from the environment; never in the app. */
+function jambaseKey(): string | undefined {
+  const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env;
+  return env?.JAMBASE_API_KEY || undefined;
 }
 
 /** How far past today the saved window runs, in calendar days. Today is included. */
@@ -97,12 +105,15 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   if (!seedCatalog) throw new Error('The seeded catalog is missing. Nothing was saved.');
 
   const key = ticketmasterKey();
-  const [mlb, espn, ht, seed, tm] = await Promise.all([
+  const jbKey = jambaseKey();
+  const [mlb, espn, ht, seed, tm, sa, jb] = await Promise.all([
     readSource('MLB schedule', () => loadMlbSchedule(metroId, through)),
     readSource('ESPN schedules', () => loadEspnSchedule(metroId)),
     readSource('HockeyTech schedules', () => loadHockeytechSchedule(metroId)),
     readSource('seeded catalog', () => seedCatalog(metroId)),
     key ? readSource('Ticketmaster listings', async () => (await loadTicketmasterEvents(metroId, key, now)).events) : Promise.resolve([] as CrowdEvent[]),
+    readSource('School calendars', () => loadSidearmSchedule(metroId)),
+    jbKey && JAMBASE_METROS.includes(metroId) ? readSource('JamBase concerts', async () => (await loadJambaseEvents(metroId, jbKey)).events) : Promise.resolve([] as CrowdEvent[]),
   ]);
 
   const mlbWindow = inWindow(mlb, capturedOn, through);
@@ -110,10 +121,12 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   const htWindow = inWindow(ht, capturedOn, through);
   const seedWindow = inWindow(seed, capturedOn, through);
   const tmWindow = inWindow(tm, capturedOn, through);
+  const saWindow = inWindow(sa, capturedOn, through);
+  const jbWindow = inWindow(jb, capturedOn, through);
   // Each game carries the expected draw the app shows that day (Oct 7, 2026): the saved read
   // sizes events the way the live read does, and the estimate is on file before the game, to
   // be scored against the announced crowd (scripts/expected-draw-check.mjs, "Saved ahead").
-  const events = withExpectedDraws(dropTicketmasterGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...htWindow, ...seedWindow, ...tmWindow]).sort(byListing));
+  const events = withExpectedDraws(dropGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...htWindow, ...seedWindow, ...saWindow, ...tmWindow, ...jbWindow]).sort(byListing));
 
   return {
     schema: 1,
@@ -131,6 +144,8 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
       { id: 'hockeytech', name: 'HockeyTech schedules', inWindow: htWindow.length },
       { id: 'seed', name: seedEvents.name, inWindow: seedWindow.length },
       ...(key ? [{ id: 'ticketmaster', name: 'Ticketmaster listings', inWindow: tmWindow.length }] : []),
+      { id: 'sidearm', name: 'School calendars', inWindow: saWindow.length },
+      ...(jbKey && JAMBASE_METROS.includes(metroId) ? [{ id: 'jambase', name: 'JamBase concerts', inWindow: jbWindow.length }] : []),
     ],
     events,
     forecasts: archivedReads(events),
