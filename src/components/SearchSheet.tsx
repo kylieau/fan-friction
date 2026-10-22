@@ -37,7 +37,7 @@ import { longLocalDate } from '../lib/dates';
 import { parseTypedDate } from '../lib/searchDate';
 import { favPath } from '../screens/FavoritesScreen';
 import { FavoriteBadge, favoriteName } from './FavoriteBadge';
-import { favoriteLongName } from '../data';
+import { favoriteOfficialName } from '../data';
 
 /**
  * The one search, the same from every tab (build notes 2, global search): a team,
@@ -193,7 +193,8 @@ export function SearchSheet({
                 <span className="log-main">
                   <span className="log-title">
                     {fav.kind !== 'team' && <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />}
-                    {favoriteLongName(fav)}
+                    {/* Full official name in search results (build 7 naming rule, Kylie, Oct 22, 2026); rows elsewhere keep the city shortcut. */}
+                    {favoriteOfficialName(fav)}
                   </span>
                 </span>
               </Link>

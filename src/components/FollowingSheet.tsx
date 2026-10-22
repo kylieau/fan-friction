@@ -8,7 +8,7 @@ import {
   declineFollow,
   favoriteDisplayName,
   favoriteKey,
-  favoriteLongName,
+  favoriteOfficialName,
   follow,
   removeFollower,
   TEAMS,
@@ -193,7 +193,7 @@ function FavesSide({ favorites, genres, picked, onPicked, editing, onClose }: { 
                   <li key={key} className="sheet-row">
                     {!editing && <Check on={on} label={favoriteName(fav)} onClick={() => onPicked(toggleIn(picked, key, keys))} />}
                     <button type="button" className="log-main sheet-row-words" onClick={() => (editing ? undefined : onPicked(toggleIn(picked, key, keys)))} disabled={editing}>
-                      <span className="log-title">{favoriteLongName(fav)}</span>
+                      <span className="log-title">{favoriteOfficialName(fav)}</span>
                       <span className="log-facts">{subOf(fav, genres)}</span>
                     </button>
                     {editing && (

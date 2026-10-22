@@ -31,7 +31,7 @@ import {
 } from '../data';
 import { QuickAddSheet } from '../components/QuickAddSheet';
 import { FavoriteBadge } from '../components/FavoriteBadge';
-import { TEAMS, isCollegeTeam, teamLongName } from '../data';
+import { TEAMS, favoriteOfficialName, isCollegeTeam } from '../data';
 
 /** "College" or the league, under a team's name in the pick list. */
 function teamLevelWord(team: (typeof TEAMS)[string]): string {
@@ -153,7 +153,7 @@ export function AddEntryScreen() {
                     <button type="button" className="add-record-row" onClick={() => setTarget(fav)}>
                       <FavoriteBadge fav={fav} shown={records} size="mark" />
                       <span className="add-record-text">
-                        <span className="add-record-name">{fav.teamId ? teamLongName(TEAMS[fav.teamId]) : fav.label}</span>
+                        <span className="add-record-name">{favoriteOfficialName(fav)}</span>
                         <span className="you-fine">{fav.teamId ? teamLevelWord(TEAMS[fav.teamId]) : 'Artist'}</span>
                       </span>
                       <span className="add-record-chev" aria-hidden>›</span>

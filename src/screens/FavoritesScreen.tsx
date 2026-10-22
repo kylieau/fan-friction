@@ -10,6 +10,7 @@ import {
   favoriteForTeam,
   favoriteKey,
   favoriteLongName,
+  favoriteOfficialName,
   favoritesOf,
   getPersonalLog,
   isCollegeLeague,
@@ -338,7 +339,7 @@ function FavRow({ fav, shown, sub, on }: { fav: Favorite; /** The favorites in t
         <span className="log-main">
           <span className="log-title">
             {fav.kind !== 'team' && <TypeIcon typeKey={favoriteTypeKey(fav)} size={18} />}
-            {favoriteLongName(fav)}
+            {favoriteOfficialName(fav)}
           </span>
           <span className="log-facts">{sub}</span>
         </span>
