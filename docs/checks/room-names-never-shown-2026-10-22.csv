@@ -1,0 +1,346 @@
+metro,venue_id,never_shown_name,shown_today,rough_sort
+austin,long-center-dell-hall,Long Center for the Performing Arts,Michael & Susan Dell Hall,maybe a former name
+austin,luedecke-arena,Luedecke Arena,Travis County Exposition Center,maybe a former name
+boston,td-garden,FleetCenter,TD Garden,maybe a former name
+chicago,martin-stadium,Northwestern Medicine Field at Martin Stadium,Martin Stadium,maybe a former name
+cleveland,wolstein-center,Goodman Arena,Wolstein Center,maybe a former name
+columbus,bill-davis-stadium,Nick Swisher Field,Bill Davis Stadium,maybe a former name
+columbus,kemba-live-outdoor,PromoWest Pavilion,KEMBA Live!,maybe a former name
+columbus,kemba-live-outdoor,Lifestyle Communities Pavilion,KEMBA Live!,maybe a former name
+columbus,kemba-live-outdoor,Express Live!,KEMBA Live!,maybe a former name
+columbus,ohio-stadium,The Shoe,Ohio Stadium,maybe a former name
+columbus,scottsmiracle-gro-field,Columbus Stadium,ScottsMiracle-Gro Field,maybe a former name
+dallas-fort-worth,comerica-center,Dr Pepper Arena,Comerica Center,maybe a former name
+dallas-fort-worth,dallas-memorial-arena,Kay Bailey Hutchison Convention Center Dallas Memorial Arena,Dallas Memorial Arena,maybe a former name
+dallas-fort-worth,gerald-j-ford-stadium,Gerald J. Ford Stadium,Ford Stadium,maybe a former name
+dallas-fort-worth,grand-prairie-stadium,Grand Prairie Stadium,QuikTrip Park,maybe a former name
+dallas-fort-worth,mansfield-stadium,Texas Health Mansfield Stadium,Mansfield Stadium,maybe a former name
+dallas-fort-worth,schollmaier-arena,Ed & Rae Schollmaier Arena,Schollmaier Arena,maybe a former name
+dallas-fort-worth,unt-coliseum,UNT Coliseum,The Super Pit,maybe a former name
+denver,dicks-sporting-goods-park,Dick's Sporting Goods Park,DSG Park,maybe a former name
+detroit,aretha-franklin-amphitheatre,Chene Park Amphitheatre,The Aretha,maybe a former name
+detroit,little-caesars-arena,Detroit Events Center,Little Caesars Arena,maybe a former name
+detroit,michigan-lottery-amphitheatre,Freedom Hill Amphitheatre,Michigan Lottery Amphitheatre,maybe a former name
+detroit,michigan-stadium,The Big House,Michigan Stadium,maybe a former name
+detroit,orchestra-hall-detroit,Orchestra Hall,Max M. Fisher Music Center,maybe a former name
+detroit,wfcu-centre,WFCU Centre,Windsor Family Credit Union Centre,maybe a former name
+edmonton,edmonton-convention-centre,Shaw Conference Centre,Edmonton Convention Centre,maybe a former name
+edmonton,edmonton-expo-arena,Edmonton EXPO Centre Arena,Flair Airlines Hangar,maybe a former name
+edmonton,edmonton-expo-arena,Hall D,Flair Airlines Hangar,maybe a former name
+edmonton,river-cree-resort,River Cree Resort & Casino,The Venue,maybe a former name
+edmonton,sherwood-park-arena,Sherwood Park Arena & Sports Centre,Randy Rosen Rink,maybe a former name
+edmonton,winspear-centre,Francis Winspear Centre for Music,Winspear Centre,maybe a former name
+houston,713-music-hall,The Terminal,713 Music Hall,maybe a former name
+houston,cy-fair-fcu-stadium,Berry Center stadium,Cy-Fair FCU Stadium,maybe a former name
+houston,legacy-stadium,Mike Johnston Field,Legacy Stadium,maybe a former name
+houston,reliant-arena,Astroarena,Reliant Arena,maybe a former name
+houston,reliant-arena-pavilion,NRG Pavilion,Reliant Arena Pavilion,maybe a former name
+houston,sabercats-stadium,AVEVA Stadium,SaberCats Stadium,maybe a former name
+houston,shell-energy-stadium,BBVA Compass Stadium,Shell Energy Stadium,maybe a former name
+houston,shell-energy-stadium,BBVA Stadium,Shell Energy Stadium,maybe a former name
+houston,tdecu-stadium,John O'Quinn Field at TDECU Stadium,TDECU Stadium,maybe a former name
+indianapolis,carroll-stadium,IU Michael A. Carroll Track & Soccer Stadium,Carroll Stadium,maybe a former name
+indianapolis,everwise-amphitheater,TCU Amphitheater,Farm Bureau Insurance Lawn,maybe a former name
+indianapolis,indianapolis-motor-speedway,IMS,Indianapolis Motor Speedway,maybe a former name
+indianapolis,iu-indy-jungle,The Jungle,IUPUI Gymnasium,maybe a former name
+indianapolis,iu-indy-jungle,IU Indy Gymnasium,IUPUI Gymnasium,maybe a former name
+indianapolis,james-t-morris-arena,James T. Morris Arena,The Jim,maybe a former name
+indianapolis,palladium-carmel,The Palladium,Center for the Performing Arts,maybe a former name
+indianapolis,ruoff-music-center,Ruoff Home Mortgage Music Center,Klipsch Music Center,maybe a former name
+indianapolis,sellick-bowl,Bud and Jackie Sellick Bowl,Sellick Bowl,maybe a former name
+la,cal-state-la-university-gym,Cal State LA University Gym,University Gym,maybe a former name
+la,felix-event-center,Richard and Vivian Felix Event Center,Felix Event Center,maybe a former name
+la,fred-kavli-theatre,Fred Kavli Theatre,Thousand Oaks Civic Arts Plaza,maybe a former name
+la,fred-kavli-theatre,Fred Kavli Theatre at Bank of America Performing Arts Center,Thousand Oaks Civic Arts Plaza,maybe a former name
+la,segerstrom-concert-hall,Renée and Henry Segerstrom Concert Hall,Segerstrom Concert Hall,maybe a former name
+la,the-ford,John Anson Ford Amphitheatre,The Ford,maybe a former name
+la,the-show-agua-caliente,The Show at Agua Caliente Rancho Mirage,The Show,maybe a former name
+las-vegas,cox-pavilion,Cox Pavilion,The Pavilion,maybe a former name
+las-vegas,michelob-ultra-arena,Mandalay Bay Events Center,Michelob ULTRA Arena,maybe a former name
+mexico-city,estadio-banorte,Estadio Ciudad de México,Estadio Banorte,maybe a former name
+mexico-city,palacio-de-los-deportes,Domo de Cobre,Palacio de los Deportes,maybe a former name
+miami,ocean-bank-convocation-center,Ocean Bank Convocation Center,FIU Arena,maybe a former name
+milwaukee,american-family-insurance-amphitheater,Marcus Amphitheater,American Family Insurance Amphitheater,maybe a former name
+milwaukee,franklin-field,Routine Field,Franklin Field,maybe a former name
+milwaukee,rave-ii,Eagles Hall,The Rave II,maybe a former name
+milwaukee,southeast-sales-powersports-stadium,Kohler Engines Stadium,Southeast Sales Powersports Stadium,maybe a former name
+milwaukee,st-thomas-more-gym,Rick Majerus Court,Jerry Huennekens Gymnasium,maybe a former name
+milwaukee,uwm-panther-arena,U.S. Cellular Arena,UW-Milwaukee Panther Arena,maybe a former name
+minneapolis,nsc-stadium,National Sports Center Stadium,NSC Stadium,maybe a former name
+minneapolis,tco-stadium,TCO Stadium,Twin Cities Orthopedics Performance Center,maybe a former name
+minneapolis,williams-arena,The Barn by Blue Cross and Blue Shield of Minnesota,Williams Arena,maybe a former name
+montreal,cepsum-stadium,Stade du CEPSUM,CEPSUM Stadium,maybe a former name
+montreal,iga-stadium,Stade Uniprix,IGA Stadium,maybe a former name
+montreal,olympic-stadium,Stade olympique,Olympic Stadium,maybe a former name
+montreal,percival-molson-stadium,Stade Percival-Molson,Molson Stadium,maybe a former name
+nashville,andrew-jackson-hall,Tennessee Performing Arts Center,Andrew Jackson Hall,maybe a former name
+nashville,firstbank-stadium,Dudley Field,FirstBank Stadium,maybe a former name
+nashville,floyd-stadium,Horace Jones Field,"Johnny ""Red"" Floyd Stadium",maybe a former name
+nashville,laura-turner-concert-hall,Schermerhorn Symphony Center,Laura Turner Concert Hall,maybe a former name
+nashville,murphy-center,Monte Hale Arena,Murphy Center,maybe a former name
+new-orleans,lakefront-arena,Senator Nat G. Kiefer University of New Orleans Lakefront Arena,Lakefront Arena,maybe a former name
+new-orleans,tad-gormley-stadium,Reggie Bush Field,Tad Gormley Stadium,maybe a former name
+new-york,bergenpac,Bergen Performing Arts Center,bergenPAC,maybe a former name
+new-york,carnegie-hall,Stern Auditorium / Perelman Stage,Carnegie Hall,maybe a former name
+new-york,david-geffen-hall,Wu Tsai Theater,David Geffen Hall,maybe a former name
+new-york,irving-plaza,Irving Plaza Powered By Verizon 5G,Irving Plaza,maybe a former name
+new-york,newark-symphony-hall,Sarah Vaughan Concert Hall,Newark Symphony Hall,maybe a former name
+new-york,njpac-prudential-hall,Prudential Hall,NJPAC,maybe a former name
+new-york,njpac-prudential-hall,New Jersey Performing Arts Center,NJPAC,maybe a former name
+new-york,paramount-huntington,The Paramount in concert with Northwell,The Paramount,maybe a former name
+new-york,park-avenue-armory,Park Avenue Armory,Wade Thompson Drill Hall,maybe a former name
+new-york,summerstage,SummerStage,Rumsey Playfield,maybe a former name
+ottawa-gatineau,arena-at-td-place,Ottawa Civic Centre,The Arena at TD Place,maybe a former name
+ottawa-gatineau,canadian-tire-centre,Scotiabank Place,Canadian Tire Centre,maybe a former name
+ottawa-gatineau,canadian-tire-centre,Corel Centre,Canadian Tire Centre,maybe a former name
+ottawa-gatineau,ottawa-stadium,Ottawa Stadium,RCGT Park,maybe a former name
+ottawa-gatineau,ottawa-stadium,Raymond Chabot Grant Thornton Park,RCGT Park,maybe a former name
+ottawa-gatineau,td-place-stadium,Frank Clair Stadium,TD Place Stadium,maybe a former name
+philadelphia,bob-carpenter-center,Bob Carpenter Center,Acierno Arena,maybe a former name
+philadelphia,dell-music-center,Robin Hood Dell East,Dell Music Center,maybe a former name
+philadelphia,franklin-music-hall,Electric Factory,Franklin Music Hall,maybe a former name
+philadelphia,frawley-stadium,Daniel S. Frawley Stadium,Frawley Stadium,maybe a former name
+pittsburgh,arthur-j-rooney-athletic-field,Arthur J. Rooney Athletic Field,Rooney Field,maybe a former name
+pittsburgh,eqt-park,CONSOL Energy Park,EQT Park,maybe a former name
+pittsburgh,pavilion-star-lake,KeyBank Pavilion,The Pavilion at Star Lake,maybe a former name
+pittsburgh,petersen-events-center,The Pete,Petersen Events Center,maybe a former name
+pittsburgh,upmc-cooper-fieldhouse,A.J. Palumbo Center,UPMC Cooper Fieldhouse,maybe a former name
+portland,mcmenamins-edgefield,Edgefield Concerts on the Lawn,McMenamins Historic Edgefield Manor,maybe a former name
+portland,mcmenamins-grand-lodge,McMenamins Grand Lodge,Concerts in the Grove,maybe a former name
+raleigh-durham,dorrance-field,Fetzer Field,Dorrance Field,maybe a former name
+raleigh-durham,dpac,DPAC,Durham Performing Arts Center,maybe a former name
+raleigh-durham,koka-booth-amphitheatre,Amphitheatre at Regency Park,Koka Booth Amphitheatre,maybe a former name
+raleigh-durham,reynolds-coliseum,James T. Valvano Arena at William Neal Reynolds Coliseum,Reynolds Coliseum,maybe a former name
+sacramento,hornet-stadium,Fred Anderson Field at Hornet Stadium,Hornet Stadium,maybe a former name
+sacramento,quarry-park-amphitheater,Platnum Living Amphitheater at Quarry Park,Quarry Park Amphitheater,maybe a former name
+sacramento,sac-state-nest,The Nest,Colberg Court,maybe a former name
+sacramento,sac-state-nest,Hornets Nest,Colberg Court,maybe a former name
+sacramento,sacramento-memorial-auditorium,Sacramento Memorial Auditorium,Memorial Auditorium,maybe a former name
+salt-lake-city,days-of-47-arena,Days of '47 Arena,Utah State Fairpark Arena,maybe a former name
+salt-lake-city,delta-center,Vivint Smart Home Arena,Delta Center,maybe a former name
+salt-lake-city,jon-m-huntsman-center,University of Utah Special Events Center,Jon M. Huntsman Center,maybe a former name
+san-antonio,benson-stadium,Gayle and Tom Benson Stadium,Benson Stadium,maybe a former name
+san-antonio,the-espee,The Espee,Lonestar Pavilion at Sunset Station,maybe a former name
+san-antonio,tobin-center,H-E-B Performance Hall at the Tobin Center,Tobin Center,maybe a former name
+san-antonio,utsa-convocation-center,UTSA Convocation Center,The Convo,maybe a former name
+san-antonio,wolff-stadium,Nelson W. Wolff Municipal Stadium,Wolff Stadium,maybe a former name
+seattle,alaska-airlines-arena,Hec Edmundson Pavilion,Alaska Airlines Arena,maybe a former name
+seattle,memorial-stadium-seattle,Seattle Center Memorial Stadium,Memorial Stadium,maybe a former name
+seattle,washington-state-fair-grandstand,Washington State Fair Events Center,Umpqua Bank Grandstand,maybe a former name
+st-louis,carshield-field,T.R. Hughes Ballpark,CarShield Field,maybe a former name
+st-louis,enterprise-center,Kiel Center,Enterprise Center,maybe a former name
+st-louis,hermann-stadium,Robert R. Hermann Stadium,Hermann Stadium,maybe a former name
+st-louis,hollywood-casino-amphitheatre-stl,Riverport Amphitheatre,Hollywood Casino Amphitheatre,maybe a former name
+st-louis,hollywood-casino-amphitheatre-stl,UMB Bank Pavilion,Hollywood Casino Amphitheatre,maybe a former name
+st-louis,the-muny,Municipal Opera,The Muny,maybe a former name
+tampa,ferguson-hall-straz,Louise Lykes Ferguson Hall,Ferguson Hall,maybe a former name
+tampa,mahaffey-theater,The Mahaffey Theater,Duke Energy Center for the Arts,maybe a former name
+tampa,midflorida-amphitheatre,MIDFLORIDA Credit Union Amphitheatre,Florida State Fairgrounds Amphitheatre,maybe a former name
+tampa,wish-farms-soundstage,GT Grandstands at the Wish Farms Soundstage,Florida Strawberry Festival Grandstands,maybe a former name
+toronto,caa-ed-mirvish-theatre,Pantages Theatre,CAA Ed Mirvish Theatre,maybe a former name
+toronto,caa-ed-mirvish-theatre,Canon Theatre,CAA Ed Mirvish Theatre,maybe a former name
+toronto,cne-bandshell,Bell SOUNDSTAGE at the Bandshell,CNE Bandshell,maybe a former name
+toronto,coca-cola-coliseum,Ricoh Coliseum,Coca-Cola Coliseum,maybe a former name
+toronto,concert-hall-888-yonge,Masonic Temple,The Concert Hall,maybe a former name
+toronto,kimel-field-house,Goldring Centre,Kimel Family Field House,maybe a former name
+toronto,mattamy-athletic-centre,Maple Leaf Gardens,Mattamy Athletic Centre,maybe a former name
+toronto,rogers-centre,SkyDome,Rogers Centre,maybe a former name
+vancouver,pacific-coliseum,Rink on Renfrew,Pacific Coliseum,maybe a former name
+vancouver,rogers-arena,GM Place,Rogers Arena,maybe a former name
+vancouver,rogers-arena,Canada Hockey Place,Rogers Arena,maybe a former name
+vancouver,thunderbird-arena,UBC Winter Sports Centre,Thunderbird Arena,maybe a former name
+vancouver,thunderbird-arena,Doug Mitchell Thunderbird Sports Centre,Thunderbird Arena,maybe a former name
+washington-dc,capital-one-arena,MCI Center,Capital One Arena,maybe a former name
+washington-dc,secu-stadium,Capital One Field at Maryland Stadium,SECU Stadium,maybe a former name
+atlanta,fifth-third-stadium,Fifth Third Bank Stadium,Fifth Third Stadium,spelling of a shown name
+atlanta,gateway-center-arena,Gateway Center Arena at College Park,Gateway Center,spelling of a shown name
+austin,dkr-texas-memorial-stadium,DKR-Texas Memorial Stadium,Darrell K Royal-Texas Memorial Stadium,spelling of a shown name
+austin,gregory-gym,Gregory Gymnasium,Gregory Gym,spelling of a shown name
+austin,mccombs-field,Red & Charline McCombs Field,Red and Charline McCombs Field,spelling of a shown name
+austin,moody-amphitheater,Moody Amphitheater,Moody Amphitheater at Waterloo Park,spelling of a shown name
+austin,moody-theater,Moody Theater,ACL Live at the Moody Theater,spelling of a shown name
+austin,myers-stadium,Mike A. Myers Stadium and Soccer Field,Mike A. Myers Stadium,spelling of a shown name
+austin,strahan-arena,Strahan Coliseum,Strahan Arena,spelling of a shown name
+austin,stubbs-amphitheater,Stubb's BBQ,Stubb's Waller Creek Amphitheater,spelling of a shown name
+bay-area,greek-theatre-berkeley,Hearst Greek Theatre,Greek Theatre,spelling of a shown name
+bay-area,oakland-coliseum,Oakland–Alameda County Coliseum,Oakland Coliseum,spelling of a shown name
+boston,conte-forum,Silvio O. Conte Forum,Conte Forum,spelling of a shown name
+boston,house-of-blues-boston,Citizens House of Blues Boston,House of Blues Boston,spelling of a shown name
+boston,leader-bank-pavilion,Leader Bank Pavilion,Rockland Trust Bank Pavilion,spelling of a shown name
+boston,tsongas-center,Tsongas Center,Tsongas Arena,spelling of a shown name
+boston,wang-theatre,Boch Center – Wang Theatre,Wang Theatre,spelling of a shown name
+chicago,jones-convocation-center,Jones Convocation Center,Emil and Patricia Jones Convocation Center,spelling of a shown name
+chicago,ravinia,Ravinia Festival,Ravinia,spelling of a shown name
+cleveland,mimi-ohio-theatre,Mimi Ohio Theatre,Ohio Theatre,spelling of a shown name
+cleveland,public-hall-cleveland,Public Auditorium — Public Hall,Public Hall,spelling of a shown name
+cleveland,public-hall-cleveland,Cleveland Public Hall,Public Hall,spelling of a shown name
+cleveland,severance-mandel-hall,Severance Hall,Severance Music Center — Mandel Concert Hall,spelling of a shown name
+columbus,battelle-grand,Battelle Hall,Battelle Grand,spelling of a shown name
+columbus,celeste-center,Celeste Center,WCOL Celeste Center,spelling of a shown name
+columbus,value-city-arena,Value City Arena,Value City Arena at the Jerome Schottenstein Center,spelling of a shown name
+columbus,value-city-arena,Jerome Schottenstein Center,Value City Arena at the Jerome Schottenstein Center,spelling of a shown name
+columbus,value-city-arena,Schottenstein Center,Value City Arena at the Jerome Schottenstein Center,spelling of a shown name
+dallas-fort-worth,billy-bobs-texas,Billy Bob's Texas,Billy Bob's,spelling of a shown name
+dallas-fort-worth,cotton-bowl,Cotton Bowl Stadium,Cotton Bowl,spelling of a shown name
+dallas-fort-worth,dallas-memorial-arena,Dallas Memorial Auditorium,Dallas Memorial Arena,spelling of a shown name
+dallas-fort-worth,ford-center-at-the-star,Ford Center at The Star,The Star,spelling of a shown name
+dallas-fort-worth,toyota-music-factory,Irving Music Factory,Toyota Music Factory,spelling of a shown name
+dallas-fort-worth,toyota-music-factory,The Pavilion at Toyota Music Factory,Toyota Music Factory,spelling of a shown name
+denver,ccc-mile-high-ballroom,Mile High Ballroom,Colorado Convention Center — Mile High Ballroom,spelling of a shown name
+denver,hamilton-gymnasium,Hamilton Gymnasium,Hamilton Gymnasium at the Ritchie Center,spelling of a shown name
+denver,magness-arena,Magness Arena,Magness Arena at the Ritchie Center,spelling of a shown name
+denver,peter-barton-lacrosse-stadium,Peter Barton Lacrosse Stadium,Peter Barton Stadium,spelling of a shown name
+detroit,aretha-franklin-amphitheatre,Aretha Franklin Amphitheatre,The Aretha,spelling of a shown name
+detroit,crisler-center,Crisler Arena,Crisler Center,spelling of a shown name
+detroit,fillmore-detroit,Fillmore Detroit,The Fillmore Detroit,spelling of a shown name
+detroit,majestic-theatre-detroit,Majestic Theatre,Majestic Theatre Complex,spelling of a shown name
+detroit,masonic-temple-theatre,Masonic Temple Theatre,Detroit Masonic Temple,spelling of a shown name
+detroit,meadow-brook-amphitheatre,Meadow Brook Music Festival,Meadow Brook Amphitheatre at Oakland University Credit Union,spelling of a shown name
+detroit,michigan-lottery-amphitheatre,Michigan Lottery Amphitheatre at Freedom Hill,Michigan Lottery Amphitheatre,spelling of a shown name
+detroit,music-hall-center,Music Hall Center,Music Hall Center for the Performing Arts,spelling of a shown name
+detroit,sound-board-motorcity,Sound Board,Sound Board at MotorCity Casino Hotel,spelling of a shown name
+detroit,the-crofoot,The Crofoot,Crofoot Ballroom,spelling of a shown name
+edmonton,commonwealth-stadium,Commonwealth Stadium,The Brick Field at Commonwealth Stadium,spelling of a shown name
+edmonton,downtown-community-arena,Downtown Community Arena,Edmonton Downtown Community Arena,spelling of a shown name
+edmonton,servus-credit-union-place,Servus Credit Union Place,Servus Place,spelling of a shown name
+edmonton,thompson-family-arena,Heavy Metal Place,Thompson Family Arena at Heavy Metal Place,spelling of a shown name
+houston,cynthia-woods-mitchell-pavilion,Cynthia Woods Mitchell Pavilion,The Cynthia Woods Mitchell Pavilion presented by Huntsman,spelling of a shown name
+houston,jones-hall,Jones Hall,Jones Hall for the Performing Arts,spelling of a shown name
+houston,pvamu-panther-stadium,Panther Stadium,Panther Stadium at Blackshear Field,spelling of a shown name
+houston,schroeder-park,Schroeder Park,Darryl & Lori Schroeder Park,spelling of a shown name
+houston,smart-financial-centre,Smart Financial Centre,Smart Financial Centre at Sugar Land,spelling of a shown name
+indianapolis,kiesel-field-key-stadium,Kiesel Field at Key Stadium,Key Stadium,spelling of a shown name
+indianapolis,murat-theatre,Murat Theatre at Old National Centre,Old National Centre,spelling of a shown name
+kansas-city,folly-theater,Folly Theatre,Folly Theater,spelling of a shown name
+kansas-city,kansas-city-music-hall,Music Hall,Kansas City Music Hall,spelling of a shown name
+kansas-city,legends-field,Field of Legends,Legends Field,spelling of a shown name
+kansas-city,municipal-auditorium-arena,Municipal Auditorium,Municipal Auditorium Arena,spelling of a shown name
+kansas-city,starlight-cohen-stage,Starlight Cohen Community Stage,Cohen Community Stage,spelling of a shown name
+kansas-city,theatre-in-the-park,Theatre in the Park,The Theatre in the Park,spelling of a shown name
+la,anteater-ballpark,Anteater Ballpark,Cicerone Field at Anteater Ballpark,spelling of a shown name
+la,avalon-hollywood,Avalon Hollywood,Avalon,spelling of a shown name
+la,bridges-auditorium,Bridges Auditorium,Mabel Shaw Bridges Music Auditorium,spelling of a shown name
+la,city-national-grove-of-anaheim,City National Grove of Anaheim,The Grove of Anaheim,spelling of a shown name
+la,fantasy-springs-special-events-center,Fantasy Springs Resort Casino Special Events Center,Fantasy Springs Resort Casino,spelling of a shown name
+la,fonda-theatre,The Fonda Theatre,Fonda Theatre,spelling of a shown name
+la,hollywood-pantages-theatre,Hollywood Pantages Theatre,Pantages Theatre,spelling of a shown name
+la,indian-wells-stadium-1,Indian Wells Tennis Garden,"Stadium 1, Indian Wells Tennis Garden",spelling of a shown name
+la,kellogg-stadium,Kellogg Field,Kellogg Stadium,spelling of a shown name
+la,observatory-orange-county,The Observatory,The Observatory Orange County,spelling of a shown name
+la,observatory-orange-county,Observatory Orange County,The Observatory Orange County,spelling of a shown name
+la,oc-fair-action-sports-arena,"Action Sports Arena, OC Fair & Event Center",OC Fair Action Sports Arena,spelling of a shown name
+la,oc-fair-hangar,The Hangar at the OC Fair & Event Center,OC Fair Hangar,spelling of a shown name
+la,oxnard-performing-arts-center,Oxnard Performing Arts & Convention Center,Oxnard Performing Arts Center,spelling of a shown name
+la,regent-theater,The Regent Theater,Regent Theater,spelling of a shown name
+la,the-mayan,The Mayan,Mayan Theatre,spelling of a shown name
+la,the-novo,The Novo,The Novo by Microsoft,spelling of a shown name
+la,the-vermont-hollywood,The Vermont Hollywood,The Vermont,spelling of a shown name
+la,yost-theater,The Yost Theater,Yost Theatre,spelling of a shown name
+las-vegas,dolby-live,Park Theater,Dolby Live,spelling of a shown name
+las-vegas,south-point-arena,Arena at South Point Hotel And Casino,South Point Arena,spelling of a shown name
+mexico-city,arena-cdmx,Mexico City Arena,Arena Ciudad de México,spelling of a shown name
+mexico-city,plaza-de-toros-mexico,Plaza México,Plaza de Toros México,spelling of a shown name
+miami,arsht-ziff-opera-house,Ziff Ballet Opera House,Adrienne Arsht Center — Ziff Ballet Opera House,spelling of a shown name
+miami,broward-center-au-rene,Au-Rene Theater,Au-Rene Theater at Broward Center,spelling of a shown name
+miami,broward-center-au-rene,Broward Center for the Performing Arts,Au-Rene Theater at Broward Center,spelling of a shown name
+milwaukee,bmo-pavilion,BMO Harris Pavilion,BMO Pavilion,spelling of a shown name
+milwaukee,bradley-symphony-center,Allen-Bradley Hall,Bradley Symphony Center,spelling of a shown name
+milwaukee,rave-hall,Rave Hall,The Rave,spelling of a shown name
+minneapolis,anderson-arena,Lee & Penny Anderson Arena,Lee and Penny Anderson Arena,spelling of a shown name
+minneapolis,fillmore-minneapolis,The Fillmore Minneapolis,Fillmore Minneapolis,spelling of a shown name
+minneapolis,first-avenue,First Avenue,First Avenue Main Room,spelling of a shown name
+minneapolis,minneapolis-armory,Minneapolis Armory,The Armory,spelling of a shown name
+minneapolis,northrop-auditorium,Northrop Auditorium,Northrop,spelling of a shown name
+minneapolis,northrop-auditorium,Northrop Memorial Auditorium,Northrop,spelling of a shown name
+minneapolis,roy-wilkins-auditorium,Roy Wilkins Auditorium,Legendary Roy Wilkins Auditorium,spelling of a shown name
+montreal,bell-centre,Centre Bell,Bell Centre,spelling of a shown name
+montreal,claude-robillard,Complexe sportif Claude-Robillard,Claude-Robillard Sports Complex,spelling of a shown name
+montreal,iga-stadium,Stade IGA,IGA Stadium,spelling of a shown name
+montreal,percival-molson-stadium,Percival Molson Memorial Stadium,Molson Stadium,spelling of a shown name
+montreal,stade-saputo,Stade Saputo,Saputo Stadium,spelling of a shown name
+nashville,gentry-center,Howard Gentry Complex,Gentry Center,spelling of a shown name
+new-orleans,alario-center,Alario Center,Alario Sr. Event Center,spelling of a shown name
+new-orleans,civic-theatre-new-orleans,The Civic Theatre,Civic Theatre,spelling of a shown name
+new-orleans,devlin-fieldhouse,Avron B. Fogelman Arena in the Devlin Fieldhouse,Fogelman Arena in Devlin Fieldhouse,spelling of a shown name
+new-orleans,fillmore-new-orleans,Fillmore New Orleans,The Fillmore New Orleans,spelling of a shown name
+new-orleans,house-of-blues-new-orleans,House of Blues,House of Blues New Orleans,spelling of a shown name
+new-orleans,lakefront-arena,UNO Lakefront Arena,Lakefront Arena,spelling of a shown name
+new-orleans,maestri-field,Maestri Field,Maestri Field at Privateer Park,spelling of a shown name
+new-orleans,pontchartrain-center,Pontchartrain Convention and Civic Center,Pontchartrain Center,spelling of a shown name
+new-orleans,turchin-stadium,Turchin Stadium,Greer Field at Turchin Stadium,spelling of a shown name
+new-orleans,turchin-stadium,Green Field at Turchin Stadium,Greer Field at Turchin Stadium,spelling of a shown name
+new-orleans,yulman-stadium,Yulman Stadium,Benson Field at Yulman Stadium,spelling of a shown name
+new-york,amazura,Amazura,Club Amazura,spelling of a shown name
+new-york,apollo-theater,The Apollo,Apollo Theater,spelling of a shown name
+new-york,coffey-field,Jack Coffey Field,Moglia Stadium at Jack Coffey Field,spelling of a shown name
+new-york,count-basie-theatre,Hackensack Meridian Health Theatre,Hackensack Meridian Health Theatre at the Count Basie Center,spelling of a shown name
+new-york,golden-dome,The Golden Dome Athletic Center,Golden Dome,spelling of a shown name
+new-york,island-federal-arena,Island Federal Credit Union Arena,Island Federal Arena,spelling of a shown name
+new-york,knockdown-ruins,Knockdown Center - The Ruins,The Ruins at Knockdown Center,spelling of a shown name
+new-york,loews-jersey-theatre,Loew's Jersey Theatre,Loew's Jersey,spelling of a shown name
+new-york,msu-soccer-park,MSU Soccer Park at Pittser Field,MSU Soccer Park,spelling of a shown name
+new-york,paramount-theatre-asbury-park,"Paramount Theatre, Asbury Park",Asbury Park Paramount Theatre,spelling of a shown name
+new-york,rose-theater-jalc,Rose Theater,Jazz at Lincoln Center - Rose Theater,spelling of a shown name
+new-york,satow-stadium,Robertson Field at Satow Stadium,Satow Stadium,spelling of a shown name
+new-york,space-at-westbury,The Space at Westbury Theater,The Space at Westbury,spelling of a shown name
+new-york,strand-theater-lakewood,The Strand Theater,Strand Theater,spelling of a shown name
+new-york,wagner-college-stadium,Wagner College Stadium,Hameline Field at Wagner College Stadium,spelling of a shown name
+new-york,wellmont-theater,Wellmont Theatre,The Wellmont Theater,spelling of a shown name
+new-york,wien-stadium,Lawrence A. Wien Stadium,Robert K. Kraft Field at Lawrence A. Wien Stadium,spelling of a shown name
+new-york,william-paterson-rec-center,William Paterson University Recreation Center,William Paterson Rec Center,spelling of a shown name
+ottawa-gatineau,arena-at-td-place,TD Place Arena,The Arena at TD Place,spelling of a shown name
+ottawa-gatineau,canadian-tire-centre,Centre Canadian Tire,Canadian Tire Centre,spelling of a shown name
+ottawa-gatineau,centre-slush-puppie,Centre Slush Puppie,Slush Puppie Centre,spelling of a shown name
+ottawa-gatineau,hard-rock-live-ottawa,Hard Rock Live Ottawa,Hard Rock LIVE Ottawa,spelling of a shown name
+ottawa-gatineau,southam-hall,Southam Hall,NAC Southam Hall,spelling of a shown name
+ottawa-gatineau,td-place-stadium,Stade Place TD,TD Place Stadium,spelling of a shown name
+ottawa-gatineau,theatre-casino-lac-leamy,Théâtre du Casino du Lac-Leamy,Théâtre de l'Hôtel-Casino Lac-Leamy,spelling of a shown name
+philadelphia,mann-td-pavilion,Highmark Mann TD Pavilion,TD Pavilion at Highmark Mann,spelling of a shown name
+phoenix,mountain-america-stadium,"Mountain America Stadium, Home of the ASU Sun Devils",Mountain America Stadium,spelling of a shown name
+pittsburgh,benedum-center,Benedum Center for the Performing Arts,Benedum Center,spelling of a shown name
+pittsburgh,heinz-hall,Heinz Hall for the Performing Arts,Heinz Hall,spelling of a shown name
+pittsburgh,mihalik-thompson-stadium,Mihalik-Thompson Stadium,N. Kerr Thompson Stadium,spelling of a shown name
+pittsburgh,stage-ae-outdoor,Stage AE,Stage AE Outdoor Amphitheater,spelling of a shown name
+portland,arlene-schnitzer-concert-hall,Arlene Schnitzer Concert Hall,Arlene Schnitzer Hall,spelling of a shown name
+portland,chiles-center,Chiles Center,Earle A. & Virginia H. Chiles Center,spelling of a shown name
+portland,mcmenamins-edgefield,McMenamins Edgefield,McMenamins Historic Edgefield Manor,spelling of a shown name
+portland,merlo-field,Merlo Field,Merlo Field at the Clive Charles Soccer Complex,spelling of a shown name
+portland,roseland-theater,Roseland Theater,Roseland Theatre,spelling of a shown name
+portland,veterans-memorial-coliseum,Memorial Coliseum,Veterans Memorial Coliseum,spelling of a shown name
+raleigh-durham,dorton-arena,Dorton Arena,J.S. Dorton Arena,spelling of a shown name
+raleigh-durham,kenan-stadium,Kenan Memorial Stadium,Kenan Stadium,spelling of a shown name
+raleigh-durham,raleigh-memorial-auditorium,Memorial Auditorium,Raleigh Memorial Auditorium,spelling of a shown name
+sacramento,hard-rock-live-sacramento,Hard Rock Live Sacramento,Hard Rock Live,spelling of a shown name
+sacramento,hughes-stadium,Hughes Stadium,Charles C. Hughes Stadium,spelling of a shown name
+sacramento,university-credit-union-center,The Pavilion,University Credit Union Center,spelling of a shown name
+salt-lake-city,abravanel-hall,Maurice Abravanel Hall,Abravanel Hall,spelling of a shown name
+salt-lake-city,eccles-theater-slc,Eccles Theater,George S. and Dolores Doré Eccles Theater,spelling of a shown name
+salt-lake-city,rice-eccles-stadium,Rice Stadium,Rice-Eccles Stadium,spelling of a shown name
+salt-lake-city,utah-first-ballpark,America First Ballpark,Charlie Monfort Field at America First Ballpark,spelling of a shown name
+san-antonio,flores-country-store-outdoor,John T. Floore's Country Store — outdoor stage,Floore's Country Store,spelling of a shown name
+san-antonio,mcdermott-convocation-center,McDermott Convocation Center,Alice P. McDermott Convocation Center,spelling of a shown name
+seattle,alaska-airlines-arena,Alaska Airlines Arena at Hec Edmundson Pavilion,Alaska Airlines Arena,spelling of a shown name
+seattle,gorge-amphitheatre,Gorge Amphitheatre,The Gorge,spelling of a shown name
+st-louis,fabulous-fox-theatre-stl,The Fabulous Fox,Fabulous Fox Theatre,spelling of a shown name
+st-louis,ferrara-theatre,Ferrara Theatre,America's Center Ferrara Theatre,spelling of a shown name
+st-louis,hollywood-casino-amphitheatre-stl,Hollywood Casino Amphitheater,Hollywood Casino Amphitheatre,spelling of a shown name
+st-louis,hyland-performance-arena,Robert F. Hyland Performance Arena,Hyland Performance Arena,spelling of a shown name
+st-louis,saint-louis-music-park,Saint Louis Music Park,St. Louis Music Park,spelling of a shown name
+st-louis,siue-vadalabene-arena,Vadalabene Center,First Community Arena at the Vadalabene Center,spelling of a shown name
+tampa,carol-morsani-hall,Carol Morsani Hall,Morsani Hall,spelling of a shown name
+toronto,caa-ed-mirvish-theatre,Ed Mirvish Theatre,CAA Ed Mirvish Theatre,spelling of a shown name
+toronto,four-seasons-centre,Four Seasons Centre for the Performing Arts,Four Seasons Centre,spelling of a shown name
+toronto,scotiabank-arena,Aréna Scotiabank,Scotiabank Arena,spelling of a shown name
+vancouver,bc-place,BC Place Vancouver,BC Place,spelling of a shown name
+vancouver,chan-centre,Chan Centre for the Performing Arts,Chan Shun Concert Hall,spelling of a shown name
+vancouver,langley-centre-gym,Langley Events Centre — Centre Gymnasium,Langley Events Centre Gymnasium,spelling of a shown name
+vancouver,langley-events-centre,Langley Events Centre Arena,Langley Events Centre,spelling of a shown name
+vancouver,nat-bailey-stadium,Nat Bailey Stadium,Rogers Field at Nat Bailey Stadium,spelling of a shown name
+vancouver,nat-bailey-stadium,Scotiabank Field at Nat Bailey Stadium,Rogers Field at Nat Bailey Stadium,spelling of a shown name
+vancouver,nat-bailey-stadium,The Nat,Rogers Field at Nat Bailey Stadium,spelling of a shown name
+vancouver,orpheum-vancouver,Orpheum Theatre,Orpheum,spelling of a shown name
+vancouver,pne-agrodome,Agrodome,PNE Agrodome,spelling of a shown name
+vancouver,war-memorial-gym,War Memorial Gymnasium,War Memorial Gym,spelling of a shown name
+vancouver,willoughby-stadium,Willoughby Community Park Stadium,Willoughby Stadium,spelling of a shown name
+vancouver,willoughby-stadium,Willoughby Stadium at Langley Events Centre,Willoughby Stadium,spelling of a shown name
+washington-dc,wolf-trap-filene-center,Filene Center,Wolf Trap Filene Center,spelling of a shown name
