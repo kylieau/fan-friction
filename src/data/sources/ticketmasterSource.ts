@@ -261,7 +261,10 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
     for (const e of json._embedded?.events ?? []) {
       if (seen.has(e.id)) continue;
       seen.add(e.id);
-      if (/cancel|postpon|resched/i.test(e.dates.status?.code ?? '')) continue;
+      // Cancelled and postponed listings go. A rescheduled one stays: its dates are the new dates and it is on
+      // sale (the Oct 21, 2026 Los Angeles coverage check found 11 live shows dropped by this line, two at
+      // Cerritos and three at the YouTube Theater; docs/checks/artist-coverage-la-2026-10-21.md).
+      if (/cancel|postpon/i.test(e.dates.status?.code ?? '')) continue;
       if (e.dates.start.dateTBA || !e.dates.start.localDate) continue;
       const segment = e.classifications?.[0]?.segment?.name;
       const tmVenue = e._embedded?.venues?.[0];
