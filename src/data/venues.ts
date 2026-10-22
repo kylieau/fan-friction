@@ -1863,9 +1863,9 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Auto Club Raceway at Pomona' }, { name: 'In-N-Out Burger Pomona Dragstrip', from: '2023-03-30' }],
     // Approximate: OpenStreetMap has no point for the strip itself.
-    location: [-117.771, 34.091],
     // The seller listed the 2026 NHRA Finals under a second id for the current name (ZFr9jZddAa, 3.4 km from this point, so
     // the id script's 1.5 km rule passed it over); found by the Oct 22, 2026 Los Angeles census check.
+    location: [-117.771, 34.091],
     ticketmasterIds: ['KovZpZAaEknA', 'ZFr9jZddAa'],
     capacity: [{ seats: 40000, setup: 'racing', note: 'Reported' }],
     roof: 'open',
@@ -2176,7 +2176,9 @@ export const VENUES: Record<string, Venue> = {
   // ---- Los Angeles region, rooms from the small-rooms research's second installment
   // (docs/research/city-builds/small-rooms-big-cities-answer-2.md, Oct 16, 2026; Kylie's OK on the scope, Oct 16): Los Angeles,
   // Orange and Ventura Counties plus the Coachella Valley; the Inland Empire rows (Ontario, San Bernardino, Riverside, Temecula,
-  // Highland, Lake Elsinore) are held. Locations are reference points, not entrances: the research's, or OpenStreetMap's by
+  // Highland, Lake Elsinore) are held. The Coachella Valley rooms are further out since Oct 22, 2026 (Kylie: "coachella valley
+  // is definitely further out"; 144 to 164 minutes from the city's center), so they never feed a Los Angeles verdict.
+  // Locations are reference points, not entrances: the research's, or OpenStreetMap's by
   // address or building name (noted on each room). The research's Ticketmaster numbers are a different id scheme, so names
   // match. Each note keeps the research's capacity sentence and first source. ----
   'indian-wells-stadium-1': {
@@ -2189,16 +2191,20 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAaEFlA'],
     capacity: [{ seats: 16100, setup: 'tennis', note: 'Official (tennis). Coachella Valley (Riverside County), like the Empire Polo Club. The building name sits on this, the largest court; Stadium 2 is its own room. Official: 16,100 tennis seats. Concert and standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 155, how: 'routed', town: 'Indian Wells' },
   },
   'acrisure-arena': {
     id: 'acrisure-arena',
     metroId: 'la',
     // Missing larger venue.
     names: [{ name: 'Acrisure Arena', from: '2022-12-14' }],
-    // OpenStreetMap point for the address (Varner Road, Thousand Palms), not an entrance.
-    location: [-116.3941126, 33.8098765],
+    // OpenStreetMap's arena (75702 Varner Road, Palm Desert; the seller's point agrees), not an entrance. The point used until
+    // Oct 22, 2026 sat about 6 km away in Thousand Palms, outside the seller's 3-mile name search, so none of its events listed.
+    location: [-116.340466, 33.779724],
+    ticketmasterIds: ['KovZ917A-Tn'],
     capacity: [{ seats: 11007, setup: 'concert', note: 'Official (concert). Thousand Palms, Coachella Valley. Opened Dec 14, 2022 (Coachella Valley Firebirds, AHL). The hockey count is unconfirmed, so the concert figure is the only row. Official: 11,007 concert; architect reports official approximate 11,000. Hockey inventory not confirmed in this pass; do not reuse concert total for hockey. Source: https://www.acrisurearena.com/about' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 147, how: 'routed', town: 'Palm Desert' },
   },
   'great-park-live': {
     id: 'great-park-live',
@@ -2220,6 +2226,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-116.312441, 33.722619],
     capacity: [{ seats: 8000, setup: 'tennis', note: 'Official (tennis). All seats reserved from 2026; a ticketing change, not a capacity change. Official: 8,000 tennis seats. All Stadium 2 seats reserved from 2026; that ticketing change is not evidence of a capacity change. Concert/standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 155, how: 'routed', town: 'Indian Wells' },
   },
   // Further out from Los Angeles (Kylie, Oct 19–20, 2026: big events within about 2 hours of a covered city show in a
   // "Further out" group and never feed a verdict). The Inland Empire rooms of 5,000+ from
@@ -2329,6 +2336,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-116.1929256, 33.7199699],
     capacity: [{ seats: 3700, setup: 'concert', note: 'Official (concert). Indio. The Rock Yard outside is a separate free stage. Official: 3,700 seated theater. Standing show limit unconfirmed; do not substitute free Rock Yard audience. Source: https://www.fantasyspringsresort.com/wp-content/uploads/2022/06/C_Sales_SEC_2021.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 160, how: 'routed', town: 'Indio' },
   },
   'cal-state-la-university-gym': {
     id: 'cal-state-la-university-gym',
@@ -2483,6 +2491,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZ917A2Af'],
     capacity: [{ seats: 2057, setup: 'concert', note: 'Official (concert). Rancho Mirage, Coachella Valley. 457 floor plus 1,600 in the tiers. Official: 2,057 seated, comprising 457 floor and 1,600 lounge/mezzanine/balcony. Standing setup unconfirmed. Source: https://www.aguacalientecasinos.com/entertainment/rancho-mirage-shows/the-show/book-the-show/' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 144, how: 'routed', town: 'Rancho Mirage' },
   },
   'segerstrom-concert-hall': {
     id: 'segerstrom-concert-hall',
@@ -2788,6 +2797,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAalnIA'],
     capacity: [{ seats: 1127, setup: 'concert', note: 'Official (concert). Palm Desert, Coachella Valley. Official: 1,127 seated in July 2022 specification posted in 2025; pit / production removals alter saleable seats. Standing unconfirmed. Source: https://www.mccallumtheatre.org/app/uploads/2025/10/Facility-Specs-2025.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 150, how: 'routed', town: 'Palm Desert' },
   },
   'avalon-hollywood': {
     id: 'avalon-hollywood',
@@ -5843,6 +5853,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 125000, setup: 'concert', fromYear: 2017, note: 'The daily cap after Indio raised it; 2018 sold out at this figure.' },
     ],
     roof: 'open',
+    furtherOut: { driveMinutes: 164, how: 'routed', town: 'Indio' },
   },
   'ventura-theater': {
     id: 'ventura-theater',
