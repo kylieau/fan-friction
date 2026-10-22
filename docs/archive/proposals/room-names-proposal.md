@@ -2,6 +2,8 @@
 
 Proposal, Oct 22, 2026 (afternoon), Claude Code (Opus 5.5, with Fable as advisor). Asked for by Kylie the same afternoon ("ok let's do it") after the alias lookups landed. Not a decision until she answers.
 
+Status: closed, Kylie took both leans (Oct 22, 2026, afternoon: "yes, your lean for both!"); recorded in `docs/product/product-decisions.md` ("Room names"), the rule in `docs/reference/new-city-checklist.md`, the prompt in `docs/research/topics/room-former-names-prompt.md`, Oct 22, 2026.
+
 The full list is `docs/checks/room-names-never-shown-2026-10-22.csv`: 345 names on file that never show on any date.
 
 ## 1. A correction: moving the spellings changes nothing on screen
