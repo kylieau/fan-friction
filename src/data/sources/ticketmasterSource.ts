@@ -173,7 +173,9 @@ function sportOf(genre: string | undefined): string {
   // Lucha libre is wrestling (build 5, item 13). CMLL listings came in as boxing; the raw genre text is unconfirmed
   // (no key outside the nightly job), so the rule keys on the words "lucha libre" in the genre or the event name.
   if (g.includes('lucha libre')) return 'wrestling';
-  for (const s of ['hockey', 'basketball', 'football', 'soccer', 'baseball', 'lacrosse', 'volleyball', 'rodeo', 'motorsports', 'tennis', 'cricket', 'wrestling', 'boxing']) if (g.includes(s)) return s;
+  // Soccer before football: a club named "Football Club" with the seller's genre Soccer is soccer (LAFC and the Sounders
+  // were listed twice, Oct 22, 2026, because the seller's copy read football and the one-game rule needs the same sport).
+  for (const s of ['hockey', 'basketball', 'soccer', 'football', 'baseball', 'lacrosse', 'volleyball', 'rodeo', 'motorsports', 'tennis', 'cricket', 'wrestling', 'boxing']) if (g.includes(s)) return s;
   return 'other';
 }
 

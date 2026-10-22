@@ -159,6 +159,9 @@ const STILL_DROPPED = [
   ['Yuengling Flight Club Pre-Event Dinner: Seating 6:00pm-7:15pm', 'special'],
   ['Limited Edition Rivals Replica Game Ball From Spalding®', 'special'],
   ['DELTA SKY 360 CLUB RED CARPET EXPERIENCE - ANDREA BOCELLI', 'special'],
+  // Oct 22, 2026 LA census check: a season-long product on one date.
+  ["TMU Bold Women's Basketball - 2026-27 Season Pass", 'game'],
+  ['Los Angeles Kings Season Tickets', 'special'],
 ];
 
 // The research's look-alikes (section 3): real shows whose names carry add-on words.

@@ -86,6 +86,8 @@ const STRONG = new RegExp(
     // arenas, club fees, ticket-and-hotel and suite packages, a pre-event dinner, a replica ball, a red-carpet extra.
     String.raw`\bcourt\s+pass\b`, String.raw`\bclub\s+fee\b`, String.raw`\b(?:hotel|suite)\s+packages?\b`,
     String.raw`\bpre-?\s?event\s+dinner\b`, String.raw`\breplica\b`, String.raw`\bred\s+carpet\s+experience\b`,
+    // A season-long product listed on one date ("TMU Bold Women's Basketball - 2026-27 Season Pass", the Oct 22, 2026 LA census check).
+    String.raw`\bseason\s+(?:pass(?:es)?|tickets?|packages?|memberships?)\b`,
   ].join('|'),
   'i',
 );
