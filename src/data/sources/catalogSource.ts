@@ -5,6 +5,7 @@
 // nothing for a metro yet, the live feeds answer as before.
 
 import { allRows } from '../catalogCache';
+import { MERGED_VENUE_IDS } from '../venues';
 import type { CrowdEvent, LocalDate } from '../types';
 import { supabase } from '../storage/supabaseClient';
 import { espnEvents } from './espnSource';
@@ -35,7 +36,7 @@ function catalogFor(metroId: string): Promise<CrowdEvent[] | null> {
         .range(a, b),
     );
     if (error || !data || data.length === 0) return null;
-    return data.map((row) => row.data as CrowdEvent);
+    return data.map((row) => withMergedRoom(row.data as CrowdEvent));
   })().catch(() => null);
   cache.set(metroId, p);
   // A failed read is not kept, so the next look tries the table again.
@@ -43,6 +44,12 @@ function catalogFor(metroId: string): Promise<CrowdEvent[] | null> {
     if (rows === null) cache.delete(metroId);
   });
   return p;
+}
+
+/** A row written under a merged duplicate's id points at the room kept. */
+function withMergedRoom(event: CrowdEvent): CrowdEvent {
+  const kept = event.place.type === 'venue' ? MERGED_VENUE_IDS[event.place.venueId] : undefined;
+  return kept ? { ...event, place: { type: 'venue', venueId: kept } } : event;
 }
 
 async function fromFeeds<T>(pick: (source: EventSource) => Promise<T[]> | undefined): Promise<T[]> {

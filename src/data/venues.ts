@@ -10426,6 +10426,9 @@ export const VENUES: Record<string, Venue> = {
       { name: 'IU Michael A. Carroll Track & Soccer Stadium' },
       { name: 'Carroll Stadium' },
     ],
+    // Spellings the school feed uses (Oct 22, 2026); matched, never shown. They were a second record for this
+    // stadium, 'michael-a-carroll-stadium', merged here the same day (see MERGED_VENUE_IDS).
+    aliases: ['Michael A. Carroll Stadium', 'Michael A. Carroll Track & Soccer Stadium', 'IUPUI Carroll Stadium'],
     location: [-86.1789666, 39.7710116],
     ticketmasterIds: ['KovZpZAJAnlA'],
     capacity: [
@@ -15163,17 +15166,6 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). UIndy. Source: https://athletics.uindy.edu/facilities/nicoson-hall-ray-skillman-court/4' }],
     roof: 'indoor',
   },
-  'michael-a-carroll-stadium': {
-    id: 'michael-a-carroll-stadium',
-    metroId: 'indianapolis',
-    names: [{ name: 'Michael A. Carroll Stadium' }],
-    // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
-    aliases: ['Carroll Stadium', 'Michael A. Carroll Track & Soccer Stadium', 'IUPUI Carroll Stadium'],
-    // OpenStreetMap point for the building, not an entrance.
-    location: [-86.1789666, 39.7710116],
-    capacity: [{ seats: 10000, setup: 'soccer', note: 'Official (soccer). IU Indy. Soccer and track; Wikipedia says 12,111. Source: https://iuindyjags.com/facilities/michael-a-carroll-stadium/7' }],
-    roof: 'open',
-  },
   'buckeye-field': {
     id: 'buckeye-field',
     metroId: 'columbus',
@@ -15235,6 +15227,14 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
   },
 };
+/**
+ * A merged duplicate's old id → the room kept, so catalog rows the nightly wrote under the old id before the merge
+ * still find their room until the next run rewrites them.
+ */
+export const MERGED_VENUE_IDS: Record<string, string> = {
+  'michael-a-carroll-stadium': 'carroll-stadium',
+};
+
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
 export function venueNameOn(venue: Venue, date: LocalDate): string {
   let current = venue.names[0].name;

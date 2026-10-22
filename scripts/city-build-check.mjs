@@ -5,7 +5,7 @@ import { createServer } from 'vite';
 
 const server = await createServer({ server: { middlewareMode: true }, logLevel: 'error' });
 const { COVERED_METRO_IDS, METROS } = await server.ssrLoadModule('/src/config/metros.ts');
-const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
+const { VENUES, MERGED_VENUE_IDS } = await server.ssrLoadModule('/src/data/venues.ts');
 const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
 const { SPORTS_FROM_TICKETMASTER } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
 await server.close();
@@ -28,6 +28,19 @@ for (const metroId of COVERED_METRO_IDS) {
 // (found Oct 21, 2026: Toyota Arena's games went missing when the venue took a new id).
 for (const venueId of SPORTS_FROM_TICKETMASTER) {
   ok(`ticketmaster sports: ${venueId} is a venue`, Boolean(VENUES[venueId]));
+}
+
+// An alias that is another room's name in the same city is a second record for one building, or a lookup that can
+// never land (found Oct 22, 2026: Carroll Stadium was on file twice in Indianapolis, as two records).
+const roomByName = new Map(Object.values(VENUES).flatMap((v) => v.names.map((n) => [`${v.metroId}|${n.name.toLowerCase()}`, v.id])));
+for (const venue of Object.values(VENUES)) {
+  for (const alias of venue.aliases ?? []) {
+    const other = roomByName.get(`${venue.metroId}|${alias.toLowerCase()}`);
+    if (other && other !== venue.id) ok(`${venue.id}: alias "${alias}" is ${other}'s name`, false);
+  }
+}
+for (const [from, to] of Object.entries(MERGED_VENUE_IDS)) {
+  ok(`merged ${from} → ${to}: old id gone, room kept`, !VENUES[from] && Boolean(VENUES[to]));
 }
 
 console.log(fails ? `${fails} failed` : 'all passed');
