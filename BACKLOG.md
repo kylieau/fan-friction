@@ -63,6 +63,18 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ## Next
 
+### Build 7 follow-ups (Claude Code, Oct 22, 2026, evening; the report is `docs/build-7/gap-report-7.md`)
+Build 7 shipped in twelve steps plus two review-fix commits on Oct 22 (the notes: `docs/build-7/build-notes-7.md`). Deferred, each with its why in the report's "Not built" section:
+- **Change city on the Log sheet** (Lean in the notes): the sheet uses the home city; a picker would be new UI (mock first).
+- **Opponents outside the catalog**: a school feed's name-only visitor is not credited in Ranks or Seen N; needs team ids in the feed.
+- **Team identity by id**: two teams sharing a short name ("Stars") share one tag; attribution by id is a wider change than build 7.
+- **A shared sheet focus rule**: no sheet traps focus; one rule for all sheets (Stub it, Search, the filters, Log, Edit favorites).
+- **Settings page refresh after an edit** (profile handle, Blocked): a shared profile store so the head updates without a reload.
+- **`searchEvents` performance**: a debounce and a per-session catalog cache for the Log sheet's and search's event rows.
+- **From the notes' §11**: Hide mine saved to the account; Recap share cards; a season-ticket cost feature; trip costs out of venue averages; Recap photos; a Notifications bell; multi-currency; Travel & Stay.
+- **Kylie's phone checks** are listed in the report ("For Kylie to check on a phone"): Activity with real friends, the Settings page signed in, same-day logging settling after midnight.
+- **Judgment calls for her to confirm or reverse** (report, "Judgment calls"): global search keeps a Dates group under the new Events rows; Seat and Cost show on any Attending plan, not only same-day; the Your stubs "Team or sport" filter reads both teams; the stub count beside the Your stubs title; the plans band's helper line shows once per device.
+
 ### Parked and unrendered screens (register, Kylie's ask, Oct 17, 2026)
 Code that ships but no screen reaches, or a screen nothing links to. Keep this list current when a screen is retired, rehomed or relinked; find the first kind with `for f in src/screens/*.tsx src/components/*.tsx; do n=$(basename "$f" .tsx); grep -rqL "/$n'" src || echo "$f"; done` (a file no other file imports).
 | Piece | Where it is | State | Why it is parked |

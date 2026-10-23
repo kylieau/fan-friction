@@ -1,5 +1,7 @@
 # Build 7 · gap report
 
+**Build 7 is complete** (Oct 22, 2026, evening): twelve steps and three review-fix commits, all on `main` and pushed; `npm run build` passes; no SQL needed. Read the progress log, then "For Kylie to check on a phone" and "Judgment calls".
+
 Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress log at the top; a later session resumes from it). The spec is [`build-notes-7.md`](build-notes-7.md); step numbers are its §9. Built by Claude Code (Fable 5.1, advisor on) straight on `main`, one commit per step, `npm run build` before each.
 
 ## Progress log
@@ -16,7 +18,7 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 9. You rebuild | done | `3771b769` | |
 | 10. Ranks, Recap | done | `036f0a0a` | |
 | 11. Your year, Spend details | done | `6857ec1c` | |
-| 12. Profile & Settings, city switcher | done | `6a3a19de` | Codex review 4 after this |
+| 12. Profile & Settings, city switcher | done | `6a3a19de`; stage-4 fixes `1be18800` | Codex review 4 after this |
 
 **Codex reviews:** stage 1 was tried twice at about 4:30 and 4:45 PM Pacific and failed before any analysis ("out of credits"); Kylie said credits returned at 5:20 PM, and stages 1, 2 and 3 ran then, in parallel (read-only, each on its stage's diff), all three completing. Findings and what was done are under **Codex reviews** below. Stage 4 (step 12 plus a final pass over steps 7–11) ran after step 12 and completed. **Skipped reviews for Kylie to run afterward:** none.
 
