@@ -360,6 +360,7 @@ export const VENUES: Record<string, Venue> = {
       -88.47574,
       43.06754
     ],
+    ticketmasterIds: ['Z7r9jZa7J1'],
     capacity: [
       {
         seats: 3641,
@@ -402,6 +403,7 @@ export const VENUES: Record<string, Venue> = {
       -87.91378,
       43.25645
     ],
+    ticketmasterIds: ['Z7r9jZaeHH'],
     capacity: [
       {
         seats: 3000,
@@ -1385,6 +1387,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // Approximate; OSM did not resolve the downtown riverfront soccer stadium (research §A14).
     location: [-82.4666, 27.9592],
+    ticketmasterIds: ['Z7r9jZaAm-'],
     capacity: [
       {
         seats: 5248,
@@ -1400,6 +1403,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tampa Bay Downs' }],
     // Approximate; no public seat count (research §A15).
     location: [-82.659, 28.044],
+    ticketmasterIds: ['Z7r9jZadbz'],
     capacity: [],
     roof: 'open',
   },
@@ -2400,6 +2404,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Firestone Fieldhouse' }],
     // OpenStreetMap point for the building (Firestone Fieldhouse, John Tyler Drive), not an entrance.
     location: [-118.7097134, 34.0385447],
+    ticketmasterIds: ['ZFr9jZavvd'],
     capacity: [{ seats: 3104, setup: 'basketball', note: 'Official (basketball). Pepperdine, Malibu. A recreation page says 3,500 with no setup. Official athletics: 3,104 basketball / volleyball; official recreation page: 3,500 unspecified. Prefer sport-specific 3,104. Concert seating and standing maximum unconfirmed. Construction-era entrance status needs event-date reconciliation. Source: https://pepperdinewaves.com/documents/download/2023/9/20/Pepperdine_Visitor_Guide_2023-2024.pdf' }],
     roof: 'indoor',
   },
@@ -2524,6 +2529,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tari Frahm Rokus Field' }],
     // OpenStreetMap point for the address (Starbucks, 24255), not an entrance.
     location: [-118.7070564, 34.0385744],
+    ticketmasterIds: ['Z7r9jZa7YG'],
     capacity: [{ seats: 2000, setup: 'soccer', note: 'Official (soccer). Pepperdine, Malibu. Paid admission unconfirmed (provisional). Official: 2,000 soccer audience. Seated/standing split and routine paid admission not confirmed; provisional import. Source: https://pepperdinewaves.com/documents/download/2023/9/20/Pepperdine_Visitor_Guide_2023-2024.pdf' }],
     roof: 'open',
   },
@@ -2688,6 +2694,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Haugh Performing Arts Center' }],
     // OpenStreetMap point for the address (Citrus College, 1000), not an entrance.
     location: [-117.8856927, 34.1343151],
+    ticketmasterIds: ['ZFr9jZFvdd'],
     capacity: [{ seats: 1440, setup: 'concert', note: 'Official (concert). Citrus College, Glendora. The source is a 2015 program inventory. Official published inventory: 1,440 seated. Source is legacy 2015; no post-2016 numerical change established, but current sellable count remains unconfirmed. Standing unconfirmed. Source: https://www.citruscollege.edu/pr/Documents/Archive/AS/HPAC/2015PAC.pdf' }],
     roof: 'indoor',
   },
@@ -2868,6 +2875,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Soka Performing Arts Center' }],
     // OpenStreetMap point for the address (Soka University of America, 1), not an entrance.
     location: [-117.7347405, 33.5546752],
+    ticketmasterIds: ['Z7r9jZadhW'],
     capacity: [{ seats: 1032, setup: 'concert', note: 'Official (concert). Soka University, Aliso Viejo. The concert hall; the Black Box is separate. Official: 1,032 seated concert hall. Alternate theatrical stage mode documented but separate audience total unconfirmed; standing unconfirmed. Source: https://www.performingarts.soka.edu/soka-performing-arts-center/about/rentals' }],
     roof: 'indoor',
   },
@@ -2877,6 +2885,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'George C. Page Stadium' }],
     // OpenStreetMap point for the building (Page Baseball Stadium, West 80th Street), not an entrance.
     location: [-118.4144523, 33.9665526],
+    ticketmasterIds: ['Z7r9jZa7Ti'],
     capacity: [{ seats: 1000, setup: 'baseball', note: 'Official (baseball). Loyola Marymount. Routine paid admission not established (provisional). Official: 1,000 baseball capacity. Avoid reported legacy 2,200 without dated configuration evidence; routine paid admission not established in this pass, provisional. Source: https://lmulions.com/sports/2018/5/29/school-bio-page-html' }],
     roof: 'open',
   },
@@ -3029,6 +3038,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mid-Ohio Sports Car Course' }],
     // Edge of the MSA (Morrow County). Research: a destination circuit, not the Columbus default. Not on the sports sweep.
     location: [-82.63636, 40.68901],
+    ticketmasterIds: ['ZFr9jZa1Ae'],
     capacity: [{
       seats: 12000,
       setup: 'racing',
@@ -3042,6 +3052,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Celeste Center' }, { name: 'WCOL Celeste Center' }],
     location: [-82.99051, 39.99914],
+    ticketmasterIds: ['Z6r9jZd1Fe'],
     capacity: [{
       seats: 10200,
       setup: 'concert',
@@ -3449,6 +3460,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.97,
     names: [{ name: 'PNC Bank Arts Center' }],
     location: [-74.1756, 40.3934],
+    ticketmasterIds: ['KovZpZAEAIIA'],
     capacity: [{ seats: 17500, setup: 'concert', note: 'Reported; 7,000 seats plus ~10,500 lawn' }],
     roof: 'covered',
   },
@@ -3775,6 +3787,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Stony Brook Arena'],
     // When the shorter name took over is unconfirmed.
     location: [-73.125955, 40.91741],
+    ticketmasterIds: ['Z7r9jZaeM5'],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official: about 4,000 (Stony Brook). Beside LaValle Stadium. Source: https://stonybrookathletics.com/sports/2016/8/25/facilities-ston-10-arena-html' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 89, how: 'routed', town: 'Stony Brook' },
@@ -3844,6 +3857,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Knockdown Center' }],
     location: [-73.91361, 40.71528],
+    ticketmasterIds: ['KovZpZAEteAA'],
     capacity: [{ seats: 3100, setup: 'concert', note: 'Reported: 3,100 standing in the Main Space. The outdoor Ruins is its own room. Source: https://djmag.com/top100clubs/2021/89/Knockdown-Center' }],
     roof: 'indoor',
   },
@@ -4048,6 +4062,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     names: [{ name: 'Spiro Sports Center' }],
     location: [-74.095729, 40.6149664],
+    ticketmasterIds: ['Z7r9jZa7rR'],
     capacity: [{ seats: 2100, setup: 'basketball', note: 'Official (Wagner). Source: https://wagnerathletics.com/facilities/spiro-sports-center/1' }],
     roof: 'indoor',
   },
@@ -4407,6 +4422,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'TD Bank Ballpark' }],
     // OpenStreetMap point for the building (TD Bank Ballpark, Main Street), not an entrance.
     location: [-74.5531525, 40.5607364],
+    ticketmasterIds: ['ZFr9jZdv1a'],
     capacity: [{ seats: 6100, setup: 'baseball', note: 'Official (baseball). Somerset Patriots, Bridgewater. Official owner: 6,100 seats; lawn / concert alternatives unconfirmed. Source: https://www.somersetcountynj.gov/visitors/td-bank-park-and-the-somerset-patriots' }],
     roof: 'open',
   },
@@ -4436,6 +4452,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Skylands Stadium' }],
     // Reported venue point (Wikipedia; OpenStreetMap has no entry), not a gate.
     location: [-74.7101222, 41.125917],
+    ticketmasterIds: ['Z7r9jZadyW'],
     capacity: [{ seats: 4200, standing: 4500, setup: 'baseball', note: 'Reported (baseball). Sussex County Miners, Augusta. The field was named Columbus Field in Oct 2021; the stadium name is unchanged. Reported: 4,200 seats / 4,500 including standing room. Official current site confirms Miners and ticketed seasonal events, without numerical seating inventory retrieved. Source: https://en.wikipedia.org/wiki/Skylands_Stadium' }],
     roof: 'open',
     furtherOut: { driveMinutes: 84, how: 'routed', town: 'Augusta' },
@@ -5264,6 +5281,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'chicago',
     names: [{ name: 'Impact Field' }],
     location: [-87.8711, 41.9781],
+    ticketmasterIds: ['Z7r9jZadLS'],
     // N10 (Kylie, Oct 14): keep 6,300 (reported), reversing the PR #54 blank. Stored for the whole room (no setup):
     // the ballpark site's figure (incl. 5,526 fixed seats) describes the room, not a concert layout. Wikipedia says 8,300.
     capacity: [
@@ -5543,6 +5561,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.83,
     names: [{ name: 'UNT Coliseum' }, { name: 'The Super Pit' }],
     location: [-97.1533, 33.2079],
+    ticketmasterIds: ['Z7r9jZadY4'],
     capacity: [
       { seats: 9797, setup: 'basketball', note: 'Reported; record 10,600 (1977)' },
     ],
@@ -5955,6 +5974,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Atlanta Motor Speedway' }, { name: 'EchoPark Speedway', from: '2025-06-03' }],
     location: [-84.3162, 33.3889],
+    ticketmasterIds: ['KovZpZAFFdtA'],
     capacity: [{ seats: 71000, setup: 'racing', note: 'Reported: the last grandstand figure the owner released (2015). No feed lists its two race weekends; hand-list them.' }],
     roof: 'open',
   },
@@ -6078,6 +6098,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'atlanta',
     names: [{ name: 'B.T. Harvey Stadium' }],
     location: [-84.4162, 33.7457],
+    ticketmasterIds: ['Z7r9jZakxh'],
     capacity: [{ seats: 9000, setup: 'football', note: 'Official (Morehouse)' }],
     roof: 'open',
   },
@@ -6128,6 +6149,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'atlanta',
     names: [{ name: 'Forbes Arena' }],
     location: [-84.4171, 33.7486],
+    ticketmasterIds: ['KovZpZAEvllA'],
     capacity: [{ seats: 6000, setup: 'basketball', note: 'Official (Morehouse)' }],
     roof: 'indoor',
   },
@@ -6350,6 +6372,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Concord Pavilion' }, { name: 'Toyota Pavilion at Concord', from: '2023-07-01' }],
     location: [-121.9404, 37.96],
+    ticketmasterIds: ['ZFr9jZe1dd'],
     capacity: [{ seats: 12500, setup: 'concert', note: 'Reported, covered seats plus lawn; the split is not published. The Toyota name runs to about the end of 2027.' }],
     roof: 'covered',
   },
@@ -6447,6 +6470,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.81,
     names: [{ name: 'Citizens Bank Park' }],
     location: [-75.1664804, 39.9059221],
+    ticketmasterIds: ['KovZpZAa1neA'],
     capacity: [
       {
         seats: 42901,
@@ -6605,6 +6629,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Dell Music Center', from: '2010-08-10' },
     ],
     location: [-75.1889115, 39.9962783],
+    ticketmasterIds: ['KovZpZAEdFEA'],
     capacity: [
       {
         seats: 5884,
@@ -6679,6 +6704,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tom Gola Arena' }, { name: 'John Glaser Arena', from: '2024-10-01' }],
     // Approximate; La Salle athletics zone — exact gym point unverified in research.
     location: [-75.237, 40.038],
+    ticketmasterIds: ['ZFr9jZ1FA1'],
     capacity: [{ seats: 3000, setup: 'basketball', note: 'Reported. Source: https://en.wikipedia.org/wiki/John_Glaser_Arena' }],
     roof: 'indoor',
   },
@@ -6730,6 +6756,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'philadelphia',
     names: [{ name: 'Daniel S. Frawley Stadium' }, { name: 'Frawley Stadium' }],
     location: [-75.5650384, 39.732192],
+    ticketmasterIds: ['Z6r9jZ6vve'],
     capacity: [{ seats: 6404, setup: 'baseball', fromYear: 2016, note: 'Reported. 6,404 from 2016. Source: https://en.wikipedia.org/wiki/Daniel_S._Frawley_Stadium' }],
     roof: 'open',
   },
@@ -7225,6 +7252,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [{ name: 'Nashville Fairgrounds Speedway' }],
     location: [-86.7621456, 36.130769],
+    ticketmasterIds: ['Z7r9jZa7NT'],
     // Current capacity was not found. A ~30,000-seat proposal is not built. Nothing is invented.
     capacity: [],
     roof: 'open',
@@ -7259,6 +7287,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'UFCU Stadium', from: '2024-05-21' },
     ],
     location: [-97.9255534, 29.8910593],
+    ticketmasterIds: ['Z6r9jZdvae'],
     capacity: [{
       seats: 28388,
       setup: 'football',
@@ -7519,6 +7548,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'austin',
     names: [{ name: 'Bobcat Softball Stadium' }],
     location: [-97.9293321, 29.8881256],
+    ticketmasterIds: ['Z7r9jZa7Bx'],
     capacity: [{ seats: 1000, note: 'Reported (Visit San Marcos). Right at the 1,000 pre-list line. South-edge room. Source: https://www.visitsanmarcos.com/things-to-do/recreation-and-sports/texas-state-university/' }],
     roof: 'open',
     alsoIn: ['san-antonio'],
@@ -7841,6 +7871,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Goodyear Ballpark' }],
     location: [-112.390297, 33.428455],
+    ticketmasterIds: ['KovZpZAFaFIA'],
     capacity: [
       {
         seats: 9500,
@@ -8063,6 +8094,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     names: [{ name: 'Langley Events Centre Arena' }, { name: 'Langley Events Centre' }],
     location: [-122.6664163, 49.1459933],
+    ticketmasterIds: ['KovZpZAJAa7A'],
     capacity: [
       { seats: 5276, setup: 'hockey', note: 'Reported (Wikipedia; CBC). Also described as about 5,300 (Daily Hive). The Giants reportedly curtain unused upper seating; no curtained seat count was published, so none is stored. Threshold-sensitive.' },
       { seats: 5276, setup: 'basketball', note: 'No separate basketball figure was published for the Bandits. The arena figure is used. The Centre Gymnasium is a different room.' },
@@ -8212,6 +8244,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Hornet Stadium' },
     ],
     location: [-121.4229535, 38.5556698],
+    ticketmasterIds: ['ZFr9jZF1a1'],
     capacity: [
       {
         seats: 21195,
@@ -8278,6 +8311,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'UC Davis Health Stadium', from: '2019-01-01' },
     ],
     location: [-121.762774, 38.5365564],
+    ticketmasterIds: ['ZFr9jZ1eae'],
     capacity: [
       {
         seats: 10743,
@@ -8376,6 +8410,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'sacramento',
     names: [{ name: 'Hornet Pavilion' }],
     location: [-121.4234503, 38.5568456],
+    ticketmasterIds: ['Z7r9jZakPP'],
     capacity: [
       {
         seats: 3000,
@@ -8431,6 +8466,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // South Gym inside Yosemite Hall. OSM knows the hall, not the gym.
     location: [-121.4276643, 38.5625448],
+    ticketmasterIds: ['Z7r9jZad4-'],
     capacity: [
       {
         seats: 1012,
@@ -8463,6 +8499,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Quarry Park Amphitheater' },
     ],
     location: [-121.2339412, 38.7883736],
+    ticketmasterIds: ['Z7r9jZa7LN'],
     capacity: [
       {
         seats: 1000,
@@ -8477,6 +8514,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'sacramento',
     names: [{ name: 'Dan Russell Rodeo Arena' }],
     location: [-121.1682977, 38.6830298],
+    ticketmasterIds: ['Z7r9jZad08'],
     // Reseller 7,000 is labeled estimated. No official capacity, so none is stored.
     capacity: [],
     roof: 'open',
@@ -9694,6 +9732,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'Constellation Field' }],
     location: [-95.64696, 29.62258],
+    ticketmasterIds: ['KovZpZAJJlkA'],
     capacity: [
       { seats: 7500, standing: 8606, setup: 'baseball', note: 'Official MLB.com seat count. Reported stated capacity including berm and standing is 8,606. 2025 average attendance was 3,706, which is not the capacity. Source: https://www.mlb.com/news/featured/constellation-field-home-of-the-sugar-land-space-cowboys' },
       { seats: 9500, setup: 'concert', note: 'Reported. Source: https://www.baseball-reference.com/bullpen/Constellation_Field' },
@@ -9755,6 +9794,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'W.W. Thorne Stadium' }],
     location: [-95.359986, 29.933616],
+    ticketmasterIds: ['Z7r9jZakL9'],
     capacity: [{ seats: 10000, setup: 'football', note: 'Official (Aldine ISD): the replacement stadium, not the older berm stadium. Small-rooms answer 4.' }],
     roof: 'open',
   },
@@ -10351,6 +10391,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'minneapolis',
     names: [{ name: 'Lee & Penny Anderson Arena' }, { name: 'Lee and Penny Anderson Arena' }],
     location: [-93.194434, 44.9396574],
+    ticketmasterIds: ['Z7r9jZaka1'],
     capacity: [
       { seats: 4000, setup: 'hockey', note: 'Reported (The Stadium Business). Opened Oct 24, 2025. Source: https://www.thestadiumbusiness.com/?p=86726' },
       { seats: 5300, setup: 'basketball', note: 'Reported (The Stadium Business). A planning page said about 5,500. Source: https://www.thestadiumbusiness.com/?p=86726' },
@@ -10601,6 +10642,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // Butler campus; OSM did not separate the bowl from Hinkle. Point is approximate east of Hinkle.
     location: [-86.1652, 39.841],
+    ticketmasterIds: ['Z7r9jZa7SJ', 'Za5ju3rKuqZDdKjJp-1XW6-1tacPUcYXaZ'],
     capacity: [{ seats: 5647, setup: 'football', note: 'Official after 2010 renovation. Just above the 5,000 friction line. Source: https://butlersports.com/facilities/?id=2' }],
     roof: 'open',
   },
@@ -10611,6 +10653,7 @@ export const VENUES: Record<string, Venue> = {
     // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
     aliases: ['Key Stadium/Kiesel Field'],
     location: [-86.1302054, 39.7113913],
+    ticketmasterIds: ['Z7r9jZadau'],
     capacity: [{ seats: 5500, setup: 'football', note: 'Official (UIndy). Unofficial standing-room add-on not stored. Source: https://athletics.uindy.edu/facilities/?id=2' }],
     roof: 'open',
   },
@@ -11195,6 +11238,7 @@ export const VENUES: Record<string, Venue> = {
     // Comcast Center became Xfinity Center July 28, 2014 (umterps.com); the undated pair showed the old name (small rooms answer 5).
     names: [{ name: 'Comcast Center' }, { name: 'Xfinity Center', from: '2014-07-28' }],
     location: [-76.9413362, 38.9956239],
+    ticketmasterIds: ['KovZpZAJItdA'],
     capacity: [
       { seats: 17950, setup: 'basketball', note: 'Reported, before the arena improvements. Pavilion (~1,500) is a separate room. Source: venue table A1.' },
       // Kylie, Oct 22, 2026 ("ok go ahead"), from small rooms answer 5.
@@ -11363,6 +11407,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'TD Place Stadium', from: '2014-01-07' },
     ],
     location: [-75.6835457, 45.3984326],
+    ticketmasterIds: ['KovZpZAkIAtA', 'KovZpZAEF1EA'],
     capacity: [
       { seats: 24000, setup: 'football', note: 'Reported fixed seating for CFL/soccer. Temporary Grey Cup expansion to nearly 36,000 (2017) is not stored. Field rental 10,200 is a setup, not seats. Source: venue table A1.' },
       { seats: 24000, setup: 'soccer', note: 'Same bowl for Atlético Ottawa and Ottawa Rapid FC.' },
@@ -11594,6 +11639,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.86,
     names: [{ name: 'Municipal Opera' }, { name: 'The Muny' }],
     location: [-90.280229, 38.640171],
+    ticketmasterIds: ['ZFr9jZdkd6'],
     capacity: [
       {
         seats: 10700,
@@ -11638,6 +11684,7 @@ export const VENUES: Record<string, Venue> = {
     // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
     aliases: ['Hunter Stadium'],
     location: [-90.501903, 38.787735],
+    ticketmasterIds: ['Z7r9jZa7RD'],
     capacity: [
       {
         seats: 6000,
@@ -11653,6 +11700,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Robert R. Hermann Stadium' }, { name: 'Hermann Stadium' }],
     // OSM miss; SLU athletics places the stadium one block east of Grand on Laclede (approximate).
     location: [-90.2358, 38.6369],
+    ticketmasterIds: ['KovZpZAJvIlA'],
     capacity: [
       {
         seats: 6050,
@@ -11672,6 +11720,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OSM miss; coordinates from reference-work infobox (Gateway Grizzlies).
     location: [-90.16389, 38.58972],
+    ticketmasterIds: ['Z7r9jZa7iw', 'KovZpZAaJJaA', 'ZFr9jZ717k'],
     capacity: [
       {
         seats: 6000,
@@ -11689,6 +11738,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'CarShield Field', from: '2016-04-06' },
     ],
     location: [-90.680582, 38.816864],
+    ticketmasterIds: ['Z7r9jZadyD'],
     capacity: [
       {
         seats: 3500,
@@ -11921,6 +11971,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Days of \'47 Arena' },
     ],
     location: [-111.9248087, 40.7745295],
+    ticketmasterIds: ['Z7r9jZadr5'],
     capacity: [
       { seats: 10000, setup: 'concert', note: 'Official state legislature presentation (stadium-style seats). Listing 10,240 not used. Rodeo and concerts share the bowl. Source: https://le.utah.gov/interim/2025/pdf/00000313.pdf' },
     ],
@@ -12025,6 +12076,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'salt-lake-city',
     names: [{ name: 'America First Ballpark' }, { name: 'Charlie Monfort Field at America First Ballpark' }],
     location: [-111.8455, 40.7610],
+    ticketmasterIds: ['Z7r9jZakfK'],
     capacity: [
       { seats: 1200, setup: 'baseball', note: 'Reported Utes baseball home (opened Jan 2026). Name collides with America First Field and the Bees ballpark — match exact strings. Source: https://www.sltrib.com/sports/utah-utes/2025/05/19/utah-baseball-plays-last-game/' },
     ],
@@ -12420,6 +12472,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'ForeFront Field', from: '2026-01-01' },
     ],
     location: [-82.0611959, 41.4597894],
+    ticketmasterIds: ['Z7r9jZadg6'],
     // Round-2 rule: only a 2009 plan figure (3,500 fixed + 1,500 berm); no current official capacity; blank (BACKLOG).
     capacity: [],
     roof: 'open',
@@ -12647,6 +12700,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Benson Stadium' },
     ],
     location: [-98.4655092, 29.4623935],
+    ticketmasterIds: ['Z7r9jZadZz'],
     capacity: [
       {
         seats: 6000,
@@ -13008,6 +13062,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Hillsboro Ballpark', from: '2024-03-01' },
     ],
     location: [-122.9087495, 45.5537602],
+    ticketmasterIds: ['Z7r9jZaecj'],
     capacity: [
       {
         seats: 4500,
@@ -13251,6 +13306,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.78,
     names: [{ name: 'Keyworth Stadium' }],
     location: [-83.055, 42.3928],
+    ticketmasterIds: ['Z7r9jZadzz'],
     // Round-2 rule: 7,933 vs 'can seat 7,000', none official; blank (BACKLOG).
     capacity: [],
     roof: 'open',
@@ -13283,6 +13339,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Michigan Lottery Amphitheatre', from: '2015-07-16' },
     ],
     location: [-82.9761577, 42.5641485],
+    ticketmasterIds: ['KovZpZAJAlAA'],
     // Round-2 rule: 7,200 vs 7,300 vs 4,200 pavilion, none official; blank (BACKLOG).
     capacity: [],
     roof: 'open',
@@ -13399,6 +13456,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'detroit',
     names: [{ name: 'Fisher Theatre' }],
     location: [-83.0519, 42.3369],
+    ticketmasterIds: ['KovZpZAF6neA'],
     capacity: [{ seats: 2089, setup: 'concert', note: 'Reported (Crain\'s 2017). Source: https://prod.crainsdetroit.com/article/20171024/news/643081/metro-detroits-major-entertainment-venues' }],
     roof: 'indoor',
   },
@@ -13780,6 +13838,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'pittsburgh',
     names: [{ name: 'Arthur J. Rooney Athletic Field' }, { name: 'Rooney Field' }],
     location: [-80.0014, 40.4356],
+    ticketmasterIds: ['KovZpZAaInFA'],
     capacity: [
       {
         seats: 2200,
@@ -13821,6 +13880,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'pittsburgh',
     names: [{ name: 'Clearview Arena' }],
     location: [-80.129, 40.507],
+    ticketmasterIds: ['KovZ917ALzp'],
     capacity: [{ seats: 1200, setup: 'hockey', note: 'Official RMU athletics at Island Sports Center. Source: https://rmucolonials.com/sports/2026/1/13/facilities-2026.aspx' }],
     roof: 'indoor',
   },
@@ -13860,6 +13920,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.87, // estimate, city-type V07
     names: [{ name: 'Wallace Wade Stadium' }],
     location: [-78.9418892, 35.9954458],
+    ticketmasterIds: ['KovZpZA1lkFA'],
     capacity: [
       { seats: 40004, fromYear: 2016, setup: 'football', note: 'Reported: 40,004 for 2016–23. Source: venue table R03.' },
       { seats: 35018, fromYear: 2024, setup: 'football', note: 'Official (Duke). Seated, after the 2024 Devils Deck. The Devils Deck (just over 1,500, standing, game ticket required) is not added. Field is Brooks Field. Source: venue table R03.' },
@@ -13911,6 +13972,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'raleigh-durham',
     names: [{ name: 'O\'Kelly-Riddick Stadium' }],
     location: [-78.8970335, 35.9738768],
+    ticketmasterIds: ['Z7r9jZadmG'],
     capacity: [
       { seats: 10000, setup: 'football', note: 'Official (NCCU). Wikipedia\'s list shows 11,500; official used. Source: venue table R07.' },
     ],
@@ -13963,6 +14025,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'raleigh-durham',
     names: [{ name: 'Durham County Memorial Stadium' }],
     location: [-78.9028957, 36.0351406],
+    ticketmasterIds: ['Z7r9jZa7nR'],
     capacity: [
       { seats: 8500, setup: 'football', note: 'Official (Durham County and Durham Sports Commission). Football, soccer and track. Hosts Shaw University (a Raleigh school) football, Carolina Flyers (UFA) and Tobacco Road FC; no league feed. Source: venue table R11.' },
     ],
@@ -14053,6 +14116,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'raleigh-durham',
     names: [{ name: 'Koskinen Stadium' }, { name: 'Freeman Field at Koskinen Stadium', from: '2025-10-10' }],
     location: [-78.9440126, 35.9957873],
+    ticketmasterIds: ['Z7r9jZaeza'],
     capacity: [
       { seats: 4500, setup: 'soccer', note: 'Reported (Wikipedia): 4,500 seated. The 7,000 total includes standing and is not stored as seats. Below the 5,000 floor. Source: venue table R14.' },
     ],
@@ -14077,6 +14141,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'raleigh-durham',
     names: [{ name: 'McDougald-McLendon Arena' }],
     location: [-78.8977424, 35.9759803],
+    ticketmasterIds: ['Z7r9jZa7O1'],
     capacity: [
       { seats: 3116, setup: 'basketball', note: 'Official (NCCU): 3,116 seated, 3,500 total. Source: venue table R21.' },
     ],
@@ -14231,6 +14296,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.90,
     names: [{ name: 'Centennial Stadium' }],
     location: [-104.9402559, 39.5960013],
+    ticketmasterIds: ['Z7r9jZak3B'],
     capacity: [
       {
         seats: 12000,
@@ -14450,6 +14516,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Joseph J. Gentile Arena', 'Gentile Center'],
     // OpenStreetMap point for the attached Norville Athletics Center (6525 N Sheridan Rd); the arena has no point of its own.
     location: [-87.6585535, 42.0007095],
+    ticketmasterIds: ['ZFr9jZ11av'],
     capacity: [{ seats: 4557, setup: 'basketball', note: 'Official (basketball). Loyola Chicago. Basketball and volleyball. Source: https://loyolaramblers.com/facilities/gentile-arena/4' }],
     roof: 'indoor',
   },
@@ -14459,6 +14526,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'McGrath-Phillips Arena' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-87.6531445, 41.9239123],
+    ticketmasterIds: ['KovZpZAFdEeA'],
     capacity: [{ seats: 3000, setup: 'basketball', note: 'Reported (basketball). DePaul. Women\'s basketball and volleyball; the school page gives no figure. Source: https://en.wikipedia.org/wiki/McGrath-Phillips_Arena' }],
     roof: 'indoor',
   },
@@ -14535,6 +14603,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['UCU Pavilion'],
     // OpenStreetMap point for the campus; the pavilion has no point of its own.
     location: [-122.109459, 37.8409597],
+    ticketmasterIds: ['ZFr9jZk6k1'],
     capacity: [{ seats: 3500, setup: 'basketball', note: 'Official (basketball). Saint Mary\'s, Moraga. Formerly McKeon Pavilion. Source: https://smcgaels.com/facilities/university-credit-union-pavilion/4' }],
     roof: 'indoor',
   },
@@ -14564,6 +14633,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Negoesco Stadium' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-122.4538804, 37.7765578],
+    ticketmasterIds: ['KovZ917At7Z'],
     capacity: [{ seats: 3000, setup: 'soccer', note: 'Official (soccer). University of San Francisco. Source: https://usfdons.com/facilities/negoesco-stadium/5' }],
     roof: 'open',
   },
@@ -14575,6 +14645,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Buck Shaw Stadium', 'Buck Shaw Field', 'Stevens Stadium - Buck Shaw Field'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-121.9367171, 37.3505152],
+    ticketmasterIds: ['ZFr9jZkavv'],
     capacity: [{ seats: 6800, setup: 'soccer', note: 'Official (soccer). Santa Clara, Santa Clara. The former Buck Shaw Stadium; the figure may predate the Stevens renovation. Source: https://santaclarabroncos.com/facilities/stevens-stadium-buck-shaw-field/1' }],
     roof: 'open',
   },
@@ -14586,6 +14657,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Edwards Field', 'Edwards Track Stadium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-122.264856, 37.8690737],
+    ticketmasterIds: ['Z7r9jZaAuf'],
     capacity: [{ seats: 22000, setup: 'soccer', note: 'Reported (soccer). Cal, Berkeley. The full track-stadium bowl; college soccer uses a fraction of it, and a school-feed match there sits under the floor. Source: https://en.wikipedia.org/wiki/Edwards_Stadium' }],
     roof: 'open',
   },
@@ -14597,6 +14669,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['RIMAC Arena'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-117.2395148, 32.885306],
+    ticketmasterIds: ['Z7r9jZaAZP'],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). UC San Diego, La Jolla. "Nearly 4,000" for basketball and volleyball; RIMAC Arena until 2022. Source: https://ucsdtritons.com/facilities/liontree-arena/2' }],
     roof: 'indoor',
   },
@@ -14639,6 +14712,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Husky Soccer Field'],
     // OpenStreetMap point for Walla Walla Road NE, the stadium's street; the stadium has no point of its own.
     location: [-122.2991279, 47.6594948],
+    ticketmasterIds: ['KovZpZAdlvtA'],
     capacity: [{ seats: 2200, setup: 'soccer', note: 'Official (soccer). Washington. Source: https://gohuskies.com/facilities/husky-soccer-stadium/35' }],
     roof: 'open',
   },
@@ -14648,6 +14722,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cox Pavilion' }, { name: 'The Pavilion' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-115.1433505, 36.1042473],
+    ticketmasterIds: ['KovZpa603e'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). UNLV. 2,500 for sporting events, 3,100 as a multi-purpose venue; attached to the Thomas & Mack Center; the Cox name ended in 2025. Source: https://unlvrebels.com/sports/2018/5/18/facilities-unlv-w-baskbl-cox-pavilion-new-html.aspx' }],
     roof: 'indoor',
   },
@@ -14690,6 +14765,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['CIBER Field', 'DU Soccer Stadium'],
     // OpenStreetMap point for 2201 E Asbury Ave, the stadium's address; the stadium has no point of its own.
     location: [-104.9623376, 39.6811962],
+    ticketmasterIds: ['Z7r9jZa7Rv'],
     capacity: [{ seats: 2000, setup: 'soccer', note: 'Official (soccer). Denver. Source: https://denverpioneers.com/sports/2018/5/24/facilities-du-soccer-stadium-html.aspx' }],
     roof: 'open',
   },
@@ -14701,6 +14777,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['The Mountain', 'Mullin Park'],
     // OpenStreetMap point for the Malibu campus; the arena (on the former Rho lot) has no point yet.
     location: [-118.7093459, 34.0430103],
+    ticketmasterIds: ['Z7r9jZakNw'],
     capacity: [{ seats: 3600, setup: 'basketball', note: 'Official (basketball). Pepperdine, Malibu. Opens Dec 5-6, 2026 (first games); Firestone Fieldhouse hosts the games before then. Source: https://pepperdinewaves.com/news/2026/8/24/general-pepperdine-basketball-set-to-open-the-mountain-at-mullin-park-dec-5-6' }],
     roof: 'indoor',
   },
@@ -14752,6 +14829,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Baby Dome', 'William J. Nicks Field House', 'Nicks Building'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-95.9929721, 30.0922395],
+    ticketmasterIds: ['Z7r9jZaA3y'],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). Prairie View A&M, Prairie View. The "Baby Dome"; basketball and volleyball. Source: https://pvpanthers.com/facilities/william-j-nicks-building/88' }],
     roof: 'indoor',
   },
@@ -14785,6 +14863,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Carl Lewis Track & Field and Soccer Complex'],
     // OpenStreetMap point for the address (3605 Elgin St); the complex has no point of its own.
     location: [-95.3489763, 29.7278527],
+    ticketmasterIds: ['KovZpZAE7v7A'],
     capacity: [{ seats: 2500, setup: 'soccer', note: 'Official (soccer). Houston. Source: https://uhcougars.com/sports/2018/6/12/facilities-tellez-html' }],
     roof: 'open',
   },
@@ -14805,6 +14884,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bobcat Ballpark' }, { name: 'Irvine-Rasmussen Ballpark', from: '2026-04-07' }],
     // OpenStreetMap point for the address (225 Charles Austin Dr), beside the softball stadium; the ballpark has no point of its own.
     location: [-97.9298522, 29.8881983],
+    ticketmasterIds: ['Z7r9jZadA3'],
     capacity: [{ seats: 2500, setup: 'baseball', note: 'Official (baseball). Texas State, San Marcos. 2,000 seats plus about 500 standing; renamed April 7, 2026. South-edge room. Source: https://txst.com/facilities/irvine-rasmussen-ballpark/5' }],
     roof: 'open',
     alsoIn: ['san-antonio'],
@@ -14817,6 +14897,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Washburne Stadium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-96.7823407, 32.8396433],
+    ticketmasterIds: ['KovZpZA1AEJA'],
     capacity: [{ seats: 2577, setup: 'soccer', note: 'Official (soccer). SMU, University Park. Renovated and renamed 2022; the factbook says 4,000. Source: https://smumustangs.com/facilities/washburne-soccer-and-track-stadium/44' }],
     roof: 'open',
   },
@@ -14828,6 +14909,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Swinney Recreation Center', 'Swinney Center'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-94.5787562, 39.0355454],
+    ticketmasterIds: ['Z7r9jZaeyY'],
     capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Kansas City. Competition court; women\'s basketball and volleyball (men\'s basketball moves to Municipal Auditorium for 2026-27). Source: https://kcroos.com/sports/2008/11/16/1626244' }],
     roof: 'indoor',
   },
@@ -14839,6 +14921,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Centene Ice Center'],
     // OpenStreetMap point for the address (750 Casino Center Dr); the rink has no point of its own.
     location: [-90.4772788, 38.7496606],
+    ticketmasterIds: ['KovZ917Axtx'],
     capacity: [{ seats: 2500, setup: 'hockey', note: 'Official (hockey). Lindenwood hockey\'s home, Maryland Heights. Main rink. Source: https://lindenwoodlions.com/sports/2020/9/10/Centene%20Community%20Ice%20Center.aspx?id=400' }],
     roof: 'indoor',
   },
@@ -14850,6 +14933,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Palmer Field'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-93.1916226, 44.9438342],
+    ticketmasterIds: ['Z7r9jZa7hW'],
     capacity: [{ seats: 5025, setup: 'football', note: 'Official (football). St. Thomas, Saint Paul. Source: https://tommiesports.com/sports/2020/7/23/facilities-O-Shaughnessy-Stadium' }],
     roof: 'open',
   },
@@ -14861,6 +14945,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Cowles Stadium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-93.2289779, 44.9811355],
+    ticketmasterIds: ['Z7r9jZadqz'],
     capacity: [{ seats: 1000, note: 'Official (softball). Minnesota. Source: https://gophersports.com/sports/2018/5/21/facilities-cowles-stadium-html' }],
     roof: 'open',
   },
@@ -14870,6 +14955,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Siebert Field' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-93.2292882, 44.9823786],
+    ticketmasterIds: ['ZFr9jZAAe1'],
     capacity: [{ seats: 1420, setup: 'baseball', note: 'Official (baseball). Minnesota. Plus berm seating. Source: https://gophersports.com/sports/2018/5/21/facilities-siebert-field-html' }],
     roof: 'open',
   },
@@ -14881,6 +14967,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Robbie Stadium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-93.1894292, 44.9945814],
+    ticketmasterIds: ['Z7r9jZa7Rj'],
     capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). Minnesota, Saint Paul campus. Source: https://gophersports.com/sports/2022/10/5/soccer-robbie-stadium' }],
     roof: 'open',
   },
@@ -14903,6 +14990,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['DAC'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-75.190623, 39.9562721],
+    ticketmasterIds: ['ZFr9jZaFak', 'KovZ917ALrk'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Official (basketball). Drexel. Event figure from the school; Wikipedia says 2,509 for basketball. Source: https://drexeldragons.com/news/2024/9/25/facilities-state-of-the-art-athletics-facility-rentals-in-philadelphia' }],
     roof: 'indoor',
   },
@@ -14925,6 +15013,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Pearson-McGonigle Hall', 'Pearson McGonigle Hall'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-75.1583676, 39.9806923],
+    ticketmasterIds: ['ZFr9jZFkAA'],
     capacity: [{ seats: 3900, note: 'Official (volleyball). Temple. Main arena; volleyball and gymnastics since basketball left in 2022. Source: https://owlsports.com/facilities/mcgonigle-hall/10' }],
     roof: 'indoor',
   },
@@ -15013,6 +15102,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Shipley Field at Bob "Turtle" Smith Stadium', 'Shipley Field', 'Bob Turtle Smith Stadium', 'Smith Stadium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-76.9444091, 38.9892976],
+    ticketmasterIds: ['KovZpZAE76tA'],
     capacity: [{ seats: 2500, setup: 'baseball', note: 'Official (baseball). Maryland, College Park. Source: https://umterps.com/facilities/?id=1077' }],
     roof: 'open',
   },
@@ -15024,6 +15114,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Field Hockey & Lacrosse Complex', 'Field Hockey and Lacrosse Complex'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-76.9368761, 38.994708],
+    ticketmasterIds: ['Z7r9jZaApA'],
     capacity: [{ seats: 1400, note: 'Reported (field hockey). Maryland, College Park. The school page gives no count. Source: https://stadiumjourney.com/stadiums/university-of-maryland-field-hockey-and-lacrosse-complex-s2832' }],
     roof: 'open',
   },
@@ -15035,6 +15126,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Ludwig Field at Kehoe Track'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-76.9505752, 38.9881178],
+    ticketmasterIds: ['KovZpZA11IFA'],
     capacity: [{ seats: 7000, setup: 'soccer', note: 'Reported (soccer). Maryland, College Park. The school page gives no count; an older one said 6,000. Source: https://en.wikipedia.org/wiki/Ludwig_Field' }],
     roof: 'open',
   },
@@ -15046,6 +15138,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Mason Stadium'],
     // OpenStreetMap point for the campus; the stadium has no point of its own.
     location: [-77.3079884, 38.8313333],
+    ticketmasterIds: ['KovZpZA11taA'],
     capacity: [{ seats: 5000, setup: 'soccer', note: 'Official (soccer). George Mason, Fairfax. Grandstand; soccer, lacrosse and track. Source: https://gomason.com/facilities/george-mason-stadium/4' }],
     roof: 'open',
   },
@@ -15068,6 +15161,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Burr Gym', 'John H. Burr Gymnasium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-77.0222225, 38.9263126],
+    ticketmasterIds: ['KovZpa3pYe'],
     capacity: [{ seats: 2700, setup: 'basketball', note: 'Official (basketball). Howard. Basketball and volleyball. Source: https://hubison.com/facilities/?id=1' }],
     roof: 'indoor',
   },
@@ -15079,6 +15173,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['McDonough Gymnasium'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-77.077429, 38.9077168],
+    ticketmasterIds: ['ZFr9jZ7k6k', 'KovZ917A0ir'],
     capacity: [{ seats: 2000, setup: 'basketball', note: 'Official (basketball). Georgetown. Women\'s basketball and volleyball. Source: https://guhoyas.com/sports/2018/6/6/facilities-gu-mcdonough-arena-html.aspx' }],
     roof: 'indoor',
   },
@@ -15090,6 +15185,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['North Kehoe Field'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-77.0767118, 38.9102916],
+    ticketmasterIds: ['KovZ917A0iI', 'Z7r9jZa7Ry'],
     capacity: [{ seats: 1625, setup: 'soccer', note: 'Official (soccer). Georgetown. Source: https://guhoyas.com/sports/2018/6/6/facilities-gu-north-kehoe-field-html.aspx' }],
     roof: 'open',
   },
@@ -15112,6 +15208,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Georgia State Sports Arena'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-84.3863635, 33.7516294],
+    ticketmasterIds: ['Za5ju3rKuqZDv06Jv4yz-k7IUkDqsGNXiU'],
     capacity: [{ seats: 3854, setup: 'basketball', note: 'Reported (basketball). Georgia State. Basketball setup; volleyball\'s home since basketball moved to the Convocation Center (2022). The school lists no facilities online. Source: https://en.wikipedia.org/wiki/GSU_Sports_Arena' }],
     roof: 'indoor',
   },
@@ -15132,6 +15229,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'FIU Baseball Stadium' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-80.380732, 25.7545317],
+    ticketmasterIds: ['KovZpZAFFatA'],
     capacity: [{ seats: 2000, setup: 'baseball', note: 'Official (baseball). FIU. Source: https://fiusports.com/sports/2014/6/20/BB_0620143058/' }],
     roof: 'open',
   },
@@ -15161,6 +15259,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'USF Softball Stadium' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-82.4044619, 28.0580906],
+    ticketmasterIds: ['Za5ju3rKuqZDvFHhI9bA-eeBtZ9Qnyw5eG'],
     capacity: [{ seats: 1600, note: 'Official (softball). South Florida. 1,500-seat grandstand plus pavilions. Source: https://gousfbulls.com/sports/2024/5/21/softball-stadium-nar' }],
     roof: 'open',
   },
@@ -15192,6 +15291,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lipscomb Soccer Complex' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-86.8011776, 36.1017469],
+    ticketmasterIds: ['Z7r9jZa7VK'],
     capacity: [{ seats: 1500, setup: 'soccer', note: 'Reported (soccer). Lipscomb. The school lists no facilities online; about 630 seats, the rest standing. Source: https://en.wikipedia.org/wiki/Lipscomb_Bisons_men%27s_soccer' }],
     roof: 'open',
   },
@@ -15214,6 +15314,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Pritchard Gym'],
     // OpenStreetMap point for the campus; the gym (inside the Sports Complex, beside the arena) has no point of its own.
     location: [-73.1205518, 40.9090809],
+    ticketmasterIds: ['Z7r9jZaet1'],
     capacity: [{ seats: 1970, note: 'Reported (volleyball). Stony Brook, Stony Brook. Volleyball; the former basketball home. Source: https://en.wikipedia.org/wiki/Pritchard_Gymnasium' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 88, how: 'routed', town: 'Stony Brook' },
@@ -15235,6 +15336,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Bethpage Federal Credit Union Stadium', 'LIU Football Stadium'],
     // OpenStreetMap point for the LIU Post campus; the stadium has no point of its own.
     location: [-73.5886898, 40.815158],
+    ticketmasterIds: ['Z7r9jZaAG6'],
     capacity: [{ seats: 6000, setup: 'football', note: 'Official (football). LIU, Brookville. "Over 6,000"; field hockey and lacrosse too. Source: https://liuathletics.com/facilities/shark-stadium/1' }],
     roof: 'open',
   },
@@ -15246,6 +15348,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['The Soccer Stadium at Yurcak Field'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-74.4637107, 40.5185364],
+    ticketmasterIds: ['KovZ917Ao57'],
     capacity: [{ seats: 5000, setup: 'soccer', note: 'Official (soccer). Rutgers, Piscataway. Grandstand; the berm holds several thousand more. Source: https://scarletknights.com/sports/2017/6/11/facilities-yurcak-html.aspx' }],
     roof: 'open',
   },
@@ -15257,6 +15360,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Rutgers Baseball Complex'],
     // OpenStreetMap point for Fitch Road beside Yurcak Field; the park has no point of its own.
     location: [-74.4656976, 40.5174223],
+    ticketmasterIds: ['Z7r9jZadZJ'],
     capacity: [{ seats: 1500, setup: 'baseball', note: 'Official (baseball). Rutgers, Piscataway. The school feed writes only "New Jersey" for its rows, so they stay unplaced. Source: https://scarletknights.com/sports/2017/6/11/facilities-baseball-html' }],
     roof: 'open',
   },
@@ -15279,6 +15383,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Solomon Court', 'Cabot Physical Education Center', 'Cabot Gym'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-71.0897007, 42.3395251],
+    ticketmasterIds: ['Z7r9jZaeV4'],
     capacity: [{ seats: 1500, setup: 'basketball', note: 'Official (basketball). Northeastern. Solomon Court; volleyball and women\'s basketball, and men\'s basketball while Matthews Arena is closed. Source: https://nuhuskies.com/sports/2013/4/3/GEN_0403130440' }],
     roof: 'indoor',
   },
@@ -15312,6 +15417,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Walter A. Brown Arena'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-71.1203527, 42.3539611],
+    ticketmasterIds: ['KovZpZAF7vEA'],
     capacity: [{ seats: 3806, setup: 'hockey', note: 'Official (hockey). Boston University. Women\'s hockey; men\'s moved to Agganis Arena in 2005. Source: https://goterriers.com/facilities/walter-brown-arena/14' }],
     roof: 'indoor',
   },
@@ -15334,6 +15440,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Costello Gym'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-71.3241431, 42.6555426],
+    ticketmasterIds: ['Z7r9jZa7M6'],
     capacity: [{ seats: 2000, setup: 'basketball', note: 'Reported (basketball). UMass Lowell, Lowell. The 1967 building, renamed at its Oct 15, 2025 dedication. Source: https://en.wikipedia.org/wiki/Kennedy_Family_Athletic_Complex' }],
     roof: 'indoor',
   },
@@ -15345,6 +15452,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Ray Skillman Court', 'Nicoson Hall/Ray Skillman Court'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-86.1318902, 39.7087835],
+    ticketmasterIds: ['Z7r9jZa7U5'],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official (basketball). UIndy. Source: https://athletics.uindy.edu/facilities/nicoson-hall-ray-skillman-court/4' }],
     roof: 'indoor',
   },
@@ -15356,6 +15464,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Buckeye Field (SB)'],
     // OpenStreetMap point for the building, not an entrance.
     location: [-83.0259673, 40.0119291],
+    ticketmasterIds: ['KovZpZAaJdnA'],
     capacity: [{ seats: 1500, note: 'Official (softball). Ohio State. Source: https://ohiostatebuckeyes.com/sports/2023/5/24/softball-field' }],
     roof: 'open',
   },
@@ -15367,6 +15476,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Woodling Gym'],
     // OpenStreetMap point for the campus; the gym (in the Physical Education Center) has no point of its own.
     location: [-81.6750871, 41.5025834],
+    ticketmasterIds: ['Z7r9jZaAuU'],
     capacity: [{ seats: 3000, note: 'Official (volleyball). Cleveland State. Volleyball; the former basketball home. Source: https://csuvikings.com/facilities/woodling-gymnasium/7' }],
     roof: 'indoor',
   },
@@ -15376,6 +15486,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Krenzler Field' }],
     // OpenStreetMap point for the campus; the field (E 18th St) has no point of its own.
     location: [-81.6750871, 41.5025834],
+    ticketmasterIds: ['Z7r9jZaAhI'],
     capacity: [{ seats: 1680, setup: 'soccer', note: 'Official (soccer). Cleveland State. Source: https://csuvikings.com/facilities/krenzler-field/3' }],
     roof: 'open',
   },
@@ -15396,6 +15507,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Victory Heights', 'Victory Heights Arena and Sports Performance Center'],
     // OpenStreetMap point for the Victory Heights district on upper campus; the 2026 building is not drawn yet.
     location: [-79.9613446, 40.4446435],
+    ticketmasterIds: ['Z7r9jZak_g'],
     capacity: [{ seats: 3600, note: 'Official (volleyball). Pitt. Volleyball, wrestling and gymnastics; replaces Fitzgerald Field House. Source: https://pittsburghpanthers.com/facilities/victory-heights-arena-and-sports-performance-center/95' }],
     roof: 'indoor',
   },
@@ -15405,6 +15517,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ambrose Urbanic Field' }],
     // OpenStreetMap point for the building, not an entrance.
     location: [-79.9672972, 40.4446095],
+    ticketmasterIds: ['Z7r9jZa7YN'],
     capacity: [{ seats: 1000, setup: 'soccer', note: 'Official (soccer). Pitt. Petersen Sports Complex. Source: https://pittsburghpanthers.com/facilities/ambrose-urbanic-field/24' }],
     roof: 'open',
   },
@@ -15432,6 +15545,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Talladega Superspeedway' }],
     // The research's map point; not an entrance.
     location: [-86.07, 33.56611],
+    ticketmasterIds: ['KovZpZAJvFIA'],
     capacity: [{ seats: 80000, setup: 'racing', note: 'Reported (grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 119, how: 'routed', town: 'Talladega' },
@@ -15442,6 +15556,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Finley Stadium' }],
     // The research's map point; not an entrance.
     location: [-85.315762, 35.036374],
+    ticketmasterIds: ['KovZpZAa1vtA', 'Za5ju3rKuqZDvmmexIP_gdRbvHFxq6DVYu'],
     capacity: [{ seats: 20668, setup: 'football', note: 'Reported (football/soccer), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 133, how: 'routed', town: 'Chattanooga' },
@@ -15452,6 +15567,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'McKenzie Arena' }],
     // The research's map point; not an entrance.
     location: [-85.30091, 35.050382],
+    ticketmasterIds: ['KovZpZAIetJA'],
     capacity: [{ seats: 11557, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 136, how: 'routed', town: 'Chattanooga' },
@@ -15462,6 +15578,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Stegeman Coliseum' }],
     // The research's map point; not an entrance.
     location: [-83.378, 33.9428],
+    ticketmasterIds: ['KovZpa6E0e'],
     capacity: [{ seats: 10523, setup: 'basketball', note: 'Official (basketball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 90, how: 'routed', town: 'Athens' },
@@ -15472,6 +15589,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Five Star Stadium' }],
     // The research's map point; not an entrance.
     location: [-83.6551, 32.8267],
+    ticketmasterIds: ['Z7r9jZa7jQ'],
     capacity: [{ seats: 10000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 96, how: 'routed', town: 'Macon' },
@@ -15482,6 +15600,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Atrium Health Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-83.692, 32.8174],
+    ticketmasterIds: ['KovZ917Ac43'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 96, how: 'routed', town: 'Macon' },
@@ -15492,6 +15611,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Columbus Civic Center' }],
     // The research's map point; not an entrance.
     location: [-84.987699, 32.450276],
+    ticketmasterIds: ['KovZpZAEkA1A'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 124, how: 'routed', town: 'Columbus' },
@@ -15512,6 +15632,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Macon Coliseum' }],
     // The research's map point; not an entrance.
     location: [-83.61972, 32.84194],
+    ticketmasterIds: ['KovZpZAFAlaA'],
     capacity: [{ seats: 9000, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 98, how: 'routed', town: 'Macon' },
@@ -15522,6 +15643,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Akins Ford Arena' }],
     // The research's map point; not an entrance.
     location: [-83.370806, 33.961139],
+    ticketmasterIds: ['KovZ917AYZa'],
     capacity: [{ seats: 8500, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 92, how: 'routed', town: 'Athens' },
@@ -15532,6 +15654,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Reaves Arena' }],
     // The research's map point; not an entrance.
     location: [-83.749187, 32.437424],
+    ticketmasterIds: ['KovZpZA1IlJA'],
     capacity: [{ seats: 8250, note: 'Reported (arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 122, how: 'routed', town: 'Perry' },
@@ -15542,6 +15665,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Erlanger Park' }],
     // The research's map point; not an entrance.
     location: [-85.32085, 35.02602],
+    ticketmasterIds: ['Z7r9jZakpy'],
     capacity: [{ seats: 8032, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 135, how: 'routed', town: 'Chattanooga' },
@@ -15572,6 +15696,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'CHI Memorial Stadium' }],
     // The research's map point; not an entrance.
     location: [-85.21139, 34.99861],
+    ticketmasterIds: ['Z7r9jZa7-8'],
     capacity: [{ seats: 5500, setup: 'soccer', note: 'Official (soccer), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 127, how: 'routed', town: 'East Ridge' },
@@ -15582,6 +15707,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'AdventHealth Stadium' }],
     // The research's map point; not an entrance.
     location: [-85.16722, 34.28583],
+    ticketmasterIds: ['KovZpa3KHe'],
     capacity: [{ seats: 5105, setup: 'baseball', note: 'Reported (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 94, how: 'routed', town: 'Rome' },
@@ -15602,6 +15728,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Sonoma Raceway' }],
     // The research's map point; not an entrance.
     location: [-122.455, 38.16083],
+    ticketmasterIds: ['KovZpZAa17IA'],
     capacity: [{ seats: 44000, setup: 'racing', note: 'Reported (racing permanent seats), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
   },
@@ -15611,6 +15738,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Napa Valley Expo' }],
     // The research's map point; not an entrance.
     location: [-122.2766401, 38.2965812],
+    ticketmasterIds: ['KovZpZAJF7IA'],
     capacity: [{ seats: 40000, setup: 'concert', note: 'Reported (festival layout), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
   },
@@ -15620,6 +15748,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Salinas Sports Complex' }],
     // The research's map point; not an entrance.
     location: [-121.651784, 36.694183],
+    ticketmasterIds: ['KovZpZA1naFA'],
     capacity: [{ seats: 16500, setup: 'rodeo', note: 'Official (rodeo), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 71, how: 'routed', town: 'Salinas' },
@@ -15658,6 +15787,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cardinale Stadium' }],
     // The research's map point; not an entrance.
     location: [-121.805, 36.65083],
+    ticketmasterIds: ['Z7r9jZa7N6'],
     capacity: [{ seats: 6000, setup: 'soccer', note: 'Official (soccer), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 79, how: 'routed', town: 'Seaside' },
@@ -15688,6 +15818,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'New Hampshire Motor Speedway' }],
     // The research's map point; not an entrance.
     location: [-71.46125, 43.362261],
+    ticketmasterIds: ['KovZpZAdnItA'],
     capacity: [{ seats: 44000, setup: 'racing', note: 'Reported (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 106, how: 'routed', town: 'Loudon' },
@@ -15708,6 +15839,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Meadows Music Theatre' }],
     // The research's map point; not an entrance.
     location: [-72.669196, 41.779233],
+    ticketmasterIds: ['KovZpZAEkFnA'],
     capacity: [{ seats: 24100, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
     furtherOut: { driveMinutes: 126, how: 'routed', town: 'Hartford' },
@@ -15718,6 +15850,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fitton Field' }],
     // The research's map point; not an entrance.
     location: [-71.809972, 42.241556],
+    ticketmasterIds: ['Z7r9jZaeSI'],
     capacity: [{ seats: 23500, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
   },
@@ -15747,6 +15880,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'PeoplesBank Arena' }],
     // The research's map point; not an entrance.
     location: [-72.67694, 41.76833],
+    ticketmasterIds: ['KovZpZAJF7nA'],
     capacity: [{ seats: 16000, note: 'Official (general arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 123, how: 'routed', town: 'Hartford' },
@@ -15757,6 +15891,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Seekonk Speedway' }],
     // The research's map point; not an entrance.
     location: [-71.3021, 41.7845],
+    ticketmasterIds: ['Z7r9jZa7Dn'],
     capacity: [{ seats: 15000, setup: 'racing', note: 'Official (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 74, how: 'routed', town: 'Seekonk' },
@@ -15767,6 +15902,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'DCU Center' }],
     // The research's map point; not an entrance.
     location: [-71.79833, 42.26611],
+    ticketmasterIds: ['KovZpZA6kvJA', 'KovZ917ARMf'],
     capacity: [{ seats: 14500, note: 'Official (arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -15776,6 +15912,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Amica Mutual Pavilion' }],
     // The research's map point; not an entrance.
     location: [-71.41833, 41.82361],
+    ticketmasterIds: ['KovZpa2gGe'],
     capacity: [{ seats: 14000, setup: 'concert', note: 'Official (concert/general arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 67, how: 'routed', town: 'Providence' },
@@ -15796,6 +15933,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'SNHU Arena' }],
     // The research's map point; not an entrance.
     location: [-71.46222, 42.98639],
+    ticketmasterIds: ['KovZpZA6kvtA'],
     capacity: [{ seats: 11770, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 66, how: 'routed', town: 'Manchester' },
@@ -15806,6 +15944,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Centreville Bank Stadium' }],
     // The research's map point; not an entrance.
     location: [-71.38259, 41.86879],
+    ticketmasterIds: ['KovZ917AYho'],
     capacity: [{ seats: 10500, setup: 'soccer', note: 'Official (soccer), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
   },
@@ -15815,6 +15954,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mullins Center' }],
     // The research's map point; not an entrance.
     location: [-72.533439, 42.389381],
+    ticketmasterIds: ['KovZpaoVUe'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 135, how: 'routed', town: 'Amherst' },
@@ -15825,6 +15965,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mohegan Sun Arena' }],
     // The research's map point; not an entrance.
     location: [-72.08972, 41.49111],
+    ticketmasterIds: ['KovZpZA6taIA', 'Za5ju3rKuqZDvTMmAkRBvdWDP0xEKy_sqf'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 128, how: 'routed', town: 'Uncasville' },
@@ -15835,6 +15976,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fort Adams State Park' }],
     // The research's map point; not an entrance.
     location: [-71.33556, 41.47806],
+    ticketmasterIds: ['KovZpZAJ6a7A'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (festival), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 113, how: 'routed', town: 'Newport' },
@@ -15855,6 +15997,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Polar Park' }],
     // The research's map point; not an entrance.
     location: [-71.8, 42.25694],
+    ticketmasterIds: ['Z7r9jZa7bb'],
     capacity: [{ seats: 9508, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
   },
@@ -15864,6 +16007,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cross Insurance Arena' }],
     // The research's map point; not an entrance.
     location: [-70.25917, 43.65556],
+    ticketmasterIds: ['KovZpZAJ6akA'],
     capacity: [{ seats: 9500, setup: 'concert', note: 'Reported (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 129, how: 'routed', town: 'Portland' },
@@ -15874,6 +16018,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'BankNH Pavilion' }],
     // The research's map point; not an entrance.
     location: [-71.41306, 43.58],
+    ticketmasterIds: ['KovZpa1qje'],
     capacity: [{ seats: 9000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
     furtherOut: { driveMinutes: 132, how: 'routed', town: 'Gilford' },
@@ -15904,6 +16049,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'MassMutual Center' }],
     // The research's map point; not an entrance.
     location: [-72.58694, 42.10222],
+    ticketmasterIds: ['KovZpZAdJ1AA', 'Z7r9jZa7OT'],
     capacity: [{ seats: 7743, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 111, how: 'routed', town: 'Springfield' },
@@ -15924,6 +16070,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Stafford Motor Speedway' }],
     // The research's map point; not an entrance.
     location: [-72.3204, 41.9553],
+    ticketmasterIds: ['KovZpa4VHe'],
     capacity: [{ seats: 7000, setup: 'racing', note: 'Official (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 103, how: 'routed', town: 'Stafford Springs' },
@@ -15934,6 +16081,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Delta Dental Park at Hadlock Field' }],
     // The research's map point; not an entrance.
     location: [-70.27833, 43.65694],
+    ticketmasterIds: ['ZFr9jZ77k7'],
     capacity: [{ seats: 6868, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 128, how: 'routed', town: 'Portland' },
@@ -15944,6 +16092,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Thompson\'s Point' }],
     // The research's map point; not an entrance.
     location: [-70.291451, 43.650715],
+    ticketmasterIds: ['KovZpZAEvt7A', 'KovZ917At9U'],
     capacity: [{ seats: 6500, setup: 'concert', note: 'Official (outdoor concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 128, how: 'routed', town: 'Portland' },
@@ -15994,6 +16143,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Arute Field' }],
     // The research's map point; not an entrance.
     location: [-72.76163, 41.695055],
+    ticketmasterIds: ['Z7r9jZadnY'],
     capacity: [{ seats: 5500, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 135, how: 'routed', town: 'New Britain' },
@@ -16004,6 +16154,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Trinity Health Stadium' }],
     // The research's map point; not an entrance.
     location: [-72.6611, 41.7538],
+    ticketmasterIds: ['Z7r9jZa73K'],
     capacity: [{ seats: 5500, setup: 'soccer', note: 'Reported (soccer), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 126, how: 'routed', town: 'Hartford' },
@@ -16037,6 +16188,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Notre Dame Stadium' }],
     // The research's map point; not an entrance.
     location: [-86.23389, 41.69833],
+    ticketmasterIds: ['KovZpZA1EFkA'],
     capacity: [{ seats: 77622, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 120, how: 'routed', town: 'Notre Dame' },
@@ -16067,6 +16219,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'BMO Center' }],
     // The research's map point; not an entrance.
     location: [-89.096083, 42.270264],
+    ticketmasterIds: ['KovZpZAFdEkA'],
     capacity: [{ seats: 6500, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 109, how: 'routed', town: 'Rockford' },
@@ -16077,6 +16230,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Compton Family Ice Arena' }],
     // The research's map point; not an entrance.
     location: [-86.230876, 41.693769],
+    ticketmasterIds: ['KovZ917ACMf'],
     capacity: [{ seats: 5022, setup: 'hockey', note: 'Official (main hockey arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 119, how: 'routed', town: 'Notre Dame' },
@@ -16087,6 +16241,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'McLane Stadium' }],
     // The research's map point; not an entrance.
     location: [-97.1157, 31.5582],
+    ticketmasterIds: ['KovZpZAJIvlA'],
     capacity: [{ seats: 45140, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 97, how: 'routed', town: 'Waco' },
@@ -16107,6 +16262,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ferrell Center' }],
     // The research's map point; not an entrance.
     location: [-97.105969, 31.547903],
+    ticketmasterIds: ['KovZpZA1aElA'],
     capacity: [{ seats: 12000, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 97, how: 'routed', town: 'Waco' },
@@ -16137,6 +16293,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Community National Bank & Trust Stadium' }],
     // The research's map point; not an entrance.
     location: [-96.51583, 32.08639],
+    ticketmasterIds: ['Z7r9jZa7qp'],
     capacity: [{ seats: 10001, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 67, how: 'routed', town: 'Corsicana' },
@@ -16167,6 +16324,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Foster Pavilion' }],
     // The research's map point; not an entrance.
     location: [-97.121613, 31.556698],
+    ticketmasterIds: ['KovZ917AV7b'],
     capacity: [{ seats: 7000, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 95, how: 'routed', town: 'Waco' },
@@ -16177,6 +16335,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lucas Oil Live' }],
     // The research's map point; not an entrance.
     location: [-97.127315, 33.760258],
+    ticketmasterIds: ['KovZpZA6AE6A'],
     capacity: [{ seats: 6500, setup: 'concert', note: 'Official (concert/comedy auditorium), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 84, how: 'routed', town: 'Thackerville' },
@@ -16207,6 +16366,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Kyle Field' }],
     // The research's map point; not an entrance.
     location: [-96.3405, 30.6099],
+    ticketmasterIds: ['KovZpZAJJ1AA'],
     capacity: [{ seats: 102733, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 112, how: 'routed', town: 'College Station' },
@@ -16237,6 +16397,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Reed Arena' }],
     // The research's map point; not an entrance.
     location: [-96.34619, 30.60578],
+    ticketmasterIds: ['KovZpZAJJA6A'],
     capacity: [{ seats: 12989, setup: 'basketball', note: 'Official (basketball/arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 113, how: 'routed', town: 'College Station' },
@@ -16297,6 +16458,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Olsen Field at Blue Bell Park' }],
     // The research's map point; not an entrance.
     location: [-96.3413, 30.60575],
+    ticketmasterIds: ['ZFr9jZedd6'],
     capacity: [{ seats: 6100, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 113, how: 'routed', town: 'College Station' },
@@ -16327,6 +16489,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Estadio Nemesio Diez' }],
     // The research's map point; not an entrance.
     location: [-99.666794, 19.287286],
+    ticketmasterIds: ['KovZpZA6E1eA'],
     capacity: [{ seats: 27273, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 67, how: 'routed', town: 'Toluca' },
@@ -16337,6 +16500,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Estadio Hidalgo' }],
     // The research's map point; not an entrance.
     location: [-98.756114, 20.105144],
+    ticketmasterIds: ['KovZpZA6IaeA'],
     capacity: [{ seats: 25922, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 78, how: 'routed', town: 'Pachuca' },
@@ -16357,6 +16521,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Estadio Agustín “Coruco” Díaz' }],
     // The research's map point; not an entrance.
     location: [-99.192027, 18.655069],
+    ticketmasterIds: ['KovZpZAEv6JA'],
     capacity: [{ seats: 24000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 111, how: 'routed', town: 'Zacatepec' },
@@ -16367,6 +16532,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Estadio Centenario' }],
     // The research's map point; not an entrance.
     location: [-99.246667, 18.970556],
+    ticketmasterIds: ['KovZ917AVkt'],
     capacity: [{ seats: 14800, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 70, how: 'routed', town: 'Cuernavaca' },
@@ -16377,6 +16543,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Estadio Tlahuicole' }],
     // The research's map point; not an entrance.
     location: [-98.23027778, 19.32555556],
+    ticketmasterIds: ['KovZpZAJn6vA'],
     capacity: [{ seats: 12000, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 107, how: 'routed', town: 'Tlaxcala' },
@@ -16427,6 +16594,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Flagler Credit Union Stadium' }],
     // The research's map point; not an entrance.
     location: [-80.10167, 26.37611],
+    ticketmasterIds: ['KovZpZAFk7lA'],
     capacity: [{ seats: 30000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
   },
@@ -16436,6 +16604,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'iTHINK Financial Amphitheatre' }],
     // The research's map point; not an entrance.
     location: [-80.186269, 26.685387],
+    ticketmasterIds: ['KovZpZAEkvEA'],
     capacity: [{ seats: 17200, setup: 'concert', note: 'Official (concert/event maximum), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
     furtherOut: { driveMinutes: 83, how: 'routed', town: 'West Palm Beach' },
@@ -16446,6 +16615,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Delray Beach Tennis Center' }],
     // The research's map point; not an entrance.
     location: [-80.07556, 26.462694],
+    ticketmasterIds: ['KovZpZAaaJFA'],
     capacity: [{ seats: 8200, setup: 'tennis', note: 'Official (tennis), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
   },
@@ -16455,6 +16625,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'CACTI Park of the Palm Beaches' }],
     // The research's map point; not an entrance.
     location: [-80.11278, 26.75528],
+    ticketmasterIds: ['Z7r9jZaddt'],
     capacity: [{ seats: 8000, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 91, how: 'routed', town: 'West Palm Beach' },
@@ -16475,6 +16646,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Roger Dean Chevrolet Stadium' }],
     // The research's map point; not an entrance.
     location: [-80.11639, 26.89111],
+    ticketmasterIds: ['ZFr9jZeAkd'],
     capacity: [{ seats: 6871, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 100, how: 'routed', town: 'Jupiter' },
@@ -16485,6 +16657,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Sunset Cove Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-80.23766, 26.37238],
+    ticketmasterIds: ['KovZpZAJ6JnA'],
     capacity: [{ seats: 6000, setup: 'concert', note: 'Official (concert/festival), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 68, how: 'routed', town: 'Boca Raton' },
@@ -16495,6 +16668,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mizner Park Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-80.085234, 26.356869],
+    ticketmasterIds: ['KovZpZAaaJAA'],
     capacity: [{ seats: 5000, note: 'Official (ga standing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
   },
@@ -16504,6 +16678,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Alpine Valley Music Theatre' }],
     // The research's map point; not an entrance.
     location: [-88.43361, 42.73778],
+    ticketmasterIds: ['KovZpZAEAnnA'],
     capacity: [{ seats: 35300, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'covered',
   },
@@ -16552,6 +16727,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fisher Stadium' }],
     // The research's map point; not an entrance.
     location: [-75.21056, 40.70083],
+    ticketmasterIds: ['ZFr9jZ6d1k'],
     capacity: [{ seats: 13132, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 97, how: 'routed', town: 'Easton' },
@@ -16562,6 +16738,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Total Mortgage Arena' }],
     // The research's map point; not an entrance.
     location: [-73.187, 41.1732],
+    ticketmasterIds: ['KovZpZA6taEA'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 93, how: 'routed', town: 'Bridgeport' },
@@ -16592,6 +16769,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Heritage Financial Park' }],
     // The research's map point; not an entrance.
     location: [-73.961067, 41.527911],
+    ticketmasterIds: ['KovZpZA1dntA'],
     capacity: [{ seats: 5400, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 96, how: 'routed', town: 'Fishkill' },
@@ -16612,6 +16790,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dover Motor Speedway' }],
     // The research's map point; not an entrance.
     location: [-75.53, 39.19],
+    ticketmasterIds: ['KovZpZA17JnA'],
     capacity: [{ seats: 54000, setup: 'racing', note: 'Official (grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 103, how: 'routed', town: 'Dover' },
@@ -16671,6 +16850,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'GIANT Center' }],
     // The research's map point; not an entrance.
     location: [-76.66917, 40.28639],
+    ticketmasterIds: ['KovZpZAdE6dA'],
     capacity: [{ seats: 12500, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 124, how: 'routed', town: 'Hershey' },
@@ -16681,6 +16861,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Coca-Cola Park' }],
     // The research's map point; not an entrance.
     location: [-75.4525, 40.62611],
+    ticketmasterIds: ['KovZpZAa1nFA'],
     capacity: [{ seats: 10000, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 83, how: 'routed', town: 'Allentown' },
@@ -16701,6 +16882,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mohegan Arena at Casey Plaza' }],
     // The research's map point; not an entrance.
     location: [-75.848504, 41.240471],
+    ticketmasterIds: ['KovZpaoMee'],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 136, how: 'routed', town: 'Wilkes-Barre' },
@@ -16711,6 +16893,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Santander Arena' }],
     // The research's map point; not an entrance.
     location: [-75.923013, 40.334771],
+    ticketmasterIds: ['KovZpZAJdEeA'],
     capacity: [{ seats: 8800, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 80, how: 'routed', town: 'Reading' },
@@ -16721,6 +16904,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'PPL Center' }],
     // The research's map point; not an entrance.
     location: [-75.47278, 40.6025],
+    ticketmasterIds: ['KovZ917ARFJ'],
     capacity: [{ seats: 8500, setup: 'hockey', note: 'Official (hockey), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 81, how: 'routed', town: 'Allentown' },
@@ -16731,6 +16915,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'CURE Insurance Arena' }],
     // The research's map point; not an entrance.
     location: [-74.757561, 40.21278],
+    ticketmasterIds: ['KovZ917AOlY'],
     capacity: [{ seats: 8500, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
   },
@@ -16750,6 +16935,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Wildwoods Convention Center' }],
     // The research's map point; not an entrance.
     location: [-74.8099, 38.9874],
+    ticketmasterIds: ['KovZpaoU0e'],
     // A convention hall (Kylie, Oct 23, 2026: the builder's lean, after the Oct 7 rule and the Edmonton Convention
     // Centre): no capacity stored, so the room stays on the map, muted, and feeds no friction. The research's figure
     // is in docs/research/topics/further-out-rooms-answer*.md.
@@ -16773,6 +16959,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hard Rock Live at Etess Arena' }],
     // The research's map point; not an entrance.
     location: [-74.419778, 39.358653],
+    ticketmasterIds: ['KovZ917Ah93'],
     capacity: [{ seats: 7000, note: 'Reported (event/general-session), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 81, how: 'routed', town: 'Atlantic City' },
@@ -16783,6 +16970,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Wind Creek Steel Stage at PNC Plaza' }],
     // The research's map point; not an entrance.
     location: [-75.3699, 40.6151],
+    ticketmasterIds: ['KovZpZAtvJ7A'],
     capacity: [{ seats: 6500, note: 'Reported (ticketed headliner setup), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 84, how: 'routed', town: 'Bethlehem' },
@@ -16803,6 +16991,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Trenton Thunder Ballpark' }],
     // The research's map point; not an entrance.
     location: [-74.7609, 40.2032],
+    ticketmasterIds: ['ZFr9jZAdA1'],
     capacity: [{ seats: 6440, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
   },
@@ -16812,6 +17001,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Penn Medicine Park' }],
     // The research's map point; not an entrance.
     location: [-76.31083, 40.04861],
+    ticketmasterIds: ['ZFr9jZ7FaA'],
     capacity: [{ seats: 6250, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 100, how: 'routed', town: 'Lancaster' },
@@ -16822,6 +17012,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Stabler Arena' }],
     // The research's map point; not an entrance.
     location: [-75.3575, 40.58528],
+    ticketmasterIds: ['KovZpZAF6IEA'],
     capacity: [{ seats: 6200, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 82, how: 'routed', town: 'Bethlehem' },
@@ -16832,6 +17023,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'FNB Field' }],
     // The research's map point; not an entrance.
     location: [-76.889977, 40.256428],
+    ticketmasterIds: ['ZFr9jZFFa1'],
     capacity: [{ seats: 6187, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 132, how: 'routed', town: 'Harrisburg' },
@@ -16852,6 +17044,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ovation Hall' }],
     // The research's map point; not an entrance.
     location: [-74.413497, 39.36175],
+    ticketmasterIds: ['KovZpZAJd6IA'],
     capacity: [{ seats: 5500, setup: 'concert', note: 'Official (full theater), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 81, how: 'routed', town: 'Atlantic City' },
@@ -16902,6 +17095,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tucson Rodeo Grounds' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-110.966389, 32.166285],
+    ticketmasterIds: ['Z7r9jZaeUU'],
     capacity: [{ seats: 11000, setup: 'rodeo', note: 'Reported (rodeo), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 129, how: 'routed', town: 'Tucson' },
@@ -16912,6 +17106,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tucson Arena' }],
     // The research's map point; not an entrance.
     location: [-110.97417, 32.21833],
+    ticketmasterIds: ['KovZpa61Oe'],
     capacity: [{ seats: 8962, setup: 'concert', note: 'Official (concert/general event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 123, how: 'routed', town: 'Tucson' },
@@ -16922,6 +17117,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pima County Fairgrounds' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-110.78427, 32.045599],
+    ticketmasterIds: ['KovZpZAA6ldA'],
     capacity: [{ seats: 7500, setup: 'concert', note: 'Official (festival standing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
     furtherOut: { driveMinutes: 145, how: 'routed', town: 'Tucson' },
@@ -16932,6 +17128,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tucson Expo Center' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-110.912299, 32.161483],
+    ticketmasterIds: ['KovZ917Afw0'],
     // A convention hall (Kylie, Oct 23, 2026: the builder's lean, after the Oct 7 rule and the Edmonton Convention
     // Centre): no capacity stored, so the room stays on the map, muted, and feeds no friction. The research's figure
     // is in docs/research/topics/further-out-rooms-answer*.md.
@@ -16955,6 +17152,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Findlay Toyota Center' }],
     // The research's map point; not an entrance.
     location: [-112.336361, 34.589242],
+    ticketmasterIds: ['KovZpZAIIveA'],
     capacity: [{ seats: 6200, setup: 'concert', note: 'Reported (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 105, how: 'routed', town: 'Prescott Valley' },
@@ -16975,6 +17173,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Adventist Health Arena' }],
     // The research's map point; not an entrance.
     location: [-121.296116, 37.956077],
+    ticketmasterIds: ['KovZpZA6t7AA'],
     capacity: [{ seats: 11300, note: 'Reported (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -16984,6 +17183,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Alex G. Spanos Center' }],
     // The research's map point; not an entrance.
     location: [-121.315095, 37.976669],
+    ticketmasterIds: ['Z7r9jZadf1'],
     capacity: [{ seats: 6150, setup: 'basketball', note: 'Official (basketball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -17042,6 +17242,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Highmark Stadium' }],
     // The research's map point; not an entrance.
     location: [-78.79222, 42.77306],
+    ticketmasterIds: ['KovZ917AV54'],
     capacity: [{ seats: 60000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 135, how: 'routed', town: 'Orchard Park' },
@@ -17052,6 +17253,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Burl\'s Creek Event Grounds' }],
     // The research's map point; not an entrance.
     location: [-79.519172, 44.47924],
+    ticketmasterIds: ['KovZpZAFlvtA'],
     capacity: [{ seats: 50000, setup: 'concert', note: 'Official (boots and hearts festival), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 95, how: 'routed', town: 'Oro-Medonte' },
@@ -17062,6 +17264,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hamilton Stadium' }],
     // The research's map point; not an entrance.
     location: [-79.83, 43.25222],
+    ticketmasterIds: ['KovZpZAJkveA'],
     capacity: [{ seats: 23218, note: 'Reported (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
   },
@@ -17071,6 +17274,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'KeyBank Center' }],
     // The research's map point; not an entrance.
     location: [-78.87639, 42.875],
+    ticketmasterIds: ['KovZpZAaFEaA'],
     capacity: [{ seats: 19070, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 120, how: 'routed', town: 'Buffalo' },
@@ -17081,6 +17285,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'TD Coliseum' }],
     // The research's map point; not an entrance.
     location: [-79.8725, 43.25917],
+    ticketmasterIds: ['KovZpZAEdJEA'],
     capacity: [{ seats: 18000, setup: 'concert', note: 'Reported (post-rebuild concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -17090,6 +17295,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Sahlen Field' }],
     // The research's map point; not an entrance.
     location: [-78.874278, 42.881306],
+    ticketmasterIds: ['ZFr9jZA171'],
     capacity: [{ seats: 16600, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 119, how: 'routed', town: 'Buffalo' },
@@ -17100,6 +17306,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Artpark Outdoor Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-79.043, 43.164],
+    ticketmasterIds: ['KovZ917APEU'],
     capacity: [{ seats: 9999, setup: 'concert', note: 'Official (outdoor concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 106, how: 'routed', town: 'Lewiston' },
@@ -17120,6 +17327,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ohsweken Speedway' }],
     // The research's map point; not an entrance.
     location: [-80.112981, 43.082798],
+    ticketmasterIds: ['KovZpZAkEeFA'],
     capacity: [{ seats: 8000, setup: 'racing', note: 'Reported (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 87, how: 'routed', town: 'Ohsweken' },
@@ -17140,6 +17348,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ron Joyce Stadium' }],
     // The research's map point; not an entrance.
     location: [-79.91701, 43.2661],
+    ticketmasterIds: ['KovZpZAkIktA'],
     capacity: [{ seats: 6000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
   },
@@ -17149,6 +17358,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Meridian Centre' }],
     // The research's map point; not an entrance.
     location: [-79.2442222, 43.1558167],
+    ticketmasterIds: ['KovZpZAJaAeA'],
     capacity: [{ seats: 6000, note: 'Reported (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 85, how: 'routed', town: 'St. Catharines' },
@@ -17159,6 +17369,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Peterborough Memorial Centre' }],
     // The research's map point; not an entrance.
     location: [-78.31556, 44.28861],
+    ticketmasterIds: ['KovZpZAk6dlA'],
     capacity: [{ seats: 5501, note: 'Official (ice events), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 105, how: 'routed', town: 'Peterborough' },
@@ -17179,6 +17390,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Sleeman Centre' }],
     // The research's map point; not an entrance.
     location: [-80.24639, 43.54667],
+    ticketmasterIds: ['KovZpZAFlFeA'],
     capacity: [{ seats: 5000, note: 'Official (general event venue), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 77, how: 'routed', town: 'Guelph' },
@@ -17199,6 +17411,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'OLG Stage at Fallsview Casino' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-79.080583, 43.080872],
+    ticketmasterIds: ['KovZ917Axu8'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official (concert/theater), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 98, how: 'routed', town: 'Niagara Falls' },
@@ -17209,6 +17422,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'M&T Bank Stadium' }],
     // The research's map point; not an entrance.
     location: [-76.62278, 39.27806],
+    ticketmasterIds: ['KovZpaK7Ce'],
     capacity: [{ seats: 70257, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
   },
@@ -17218,6 +17432,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Richmond Raceway' }],
     // The research's map point; not an entrance.
     location: [-77.420911, 37.591689],
+    ticketmasterIds: ['KovZpZAIJ6aA', 'KovZpZAaaElA'],
     capacity: [{ seats: 50000, setup: 'racing', note: 'Reported (grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 127, how: 'routed', town: 'Richmond' },
@@ -17228,6 +17443,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Oriole Park at Camden Yards' }],
     // The research's map point; not an entrance.
     location: [-76.62167, 39.28389],
+    ticketmasterIds: ['KovZpZAa1elA'],
     capacity: [{ seats: 42455, setup: 'baseball', note: 'Reported (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
   },
@@ -17237,6 +17453,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Navy–Marine Corps Memorial Stadium' }],
     // The research's map point; not an entrance.
     location: [-76.507, 38.985],
+    ticketmasterIds: ['KovZpZA1JAlA'],
     capacity: [{ seats: 34000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
   },
@@ -17246,6 +17463,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'CFG Bank Arena' }],
     // The research's map point; not an entrance.
     location: [-76.61889, 39.28861],
+    ticketmasterIds: ['KovZpZAJe6dA'],
     capacity: [{ seats: 14000, setup: 'concert', note: 'Official (concert/entertainment), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
   },
@@ -17255,6 +17473,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Johnny Unitas Stadium' }],
     // The research's map point; not an entrance.
     location: [-76.615936, 39.388462],
+    ticketmasterIds: ['ZFr9jZ1vA1'],
     capacity: [{ seats: 11111, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 80, how: 'routed', town: 'Towson' },
@@ -17265,6 +17484,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Maryland International Raceway' }],
     // The research's map point; not an entrance.
     location: [-76.845421, 38.395803],
+    ticketmasterIds: ['KovZpZA1J6vA'],
     capacity: [{ seats: 11000, setup: 'racing', note: 'Official (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 77, how: 'routed', town: 'Mechanicsville' },
@@ -17285,6 +17505,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'CarMax Park' }],
     // The research's map point; not an entrance.
     location: [-77.46444, 37.56944],
+    ticketmasterIds: ['Z7r9jZak4B'],
     capacity: [{ seats: 9585, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 123, how: 'routed', town: 'Richmond' },
@@ -17295,6 +17516,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'E. Claiborne Robins Stadium' }],
     // The research's map point; not an entrance.
     location: [-77.536805, 37.580892],
+    ticketmasterIds: ['ZFr9jZ1veF'],
     capacity: [{ seats: 8700, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 132, how: 'routed', town: 'Richmond' },
@@ -17305,6 +17527,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hagerstown Speedway' }],
     // The research's map point; not an entrance.
     location: [-77.844, 39.6607],
+    ticketmasterIds: ['KovZpZAaIInA'],
     capacity: [{ seats: 8500, setup: 'racing', note: 'Reported (racing grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 105, how: 'routed', town: 'Hagerstown' },
@@ -17315,6 +17538,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Innsbrook Pavilion' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-77.578595, 37.648859],
+    ticketmasterIds: ['KovZpZA16IlA'],
     capacity: [{ seats: 8500, setup: 'concert', note: 'Reported (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 128, how: 'routed', town: 'Glen Allen' },
@@ -17325,6 +17549,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Homewood Field' }],
     // The research's map point; not an entrance.
     location: [-76.62083, 39.33361],
+    ticketmasterIds: ['KovZ917AxSC'],
     capacity: [{ seats: 8500, note: 'Official (stadium), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 69, how: 'routed', town: 'Baltimore' },
@@ -17335,6 +17560,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Stuart C. Siegel Center' }],
     // The research's map point; not an entrance.
     location: [-77.4529, 37.552918],
+    ticketmasterIds: ['ZFr9jZ7vA1'],
     capacity: [{ seats: 7637, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 126, how: 'routed', town: 'Richmond' },
@@ -17345,6 +17571,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'WellSpan Park' }],
     // The research's map point; not an entrance.
     location: [-76.72917, 39.9675],
+    ticketmasterIds: ['ZFr9jZad1e'],
     capacity: [{ seats: 7500, setup: 'baseball', note: 'Reported (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 129, how: 'routed', town: 'York' },
@@ -17355,6 +17582,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Allianz Amphitheater at Riverfront' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-77.446245, 37.535734],
+    ticketmasterIds: ['KovZ917ARgg'],
     capacity: [{ seats: 7000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 129, how: 'routed', town: 'Richmond' },
@@ -17365,6 +17593,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ridley Athletic Complex' }],
     // The research's map point; not an entrance.
     location: [-76.6525, 39.33694],
+    ticketmasterIds: ['KovZ917AO5z'],
     capacity: [{ seats: 6000, setup: 'soccer', note: 'Official (lacrosse/soccer stadium), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 72, how: 'routed', town: 'Baltimore' },
@@ -17395,6 +17624,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Alumni Hall' }],
     // The research's map point; not an entrance.
     location: [-76.487782, 38.984491],
+    ticketmasterIds: ['KovZpZA1kJAA'],
     capacity: [{ seats: 5710, setup: 'basketball', note: 'Official (basketball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
   },
@@ -17404,6 +17634,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Chesapeake Employers Insurance Arena' }],
     // The research's map point; not an entrance.
     location: [-76.707431, 39.252342],
+    ticketmasterIds: ['KovZ917A_-7'],
     capacity: [{ seats: 4500, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
   },
@@ -17429,6 +17660,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Summit Motorsports Park' }],
     // The research's map point; not an entrance.
     location: [-82.542828, 41.239414],
+    ticketmasterIds: ['ZFr9jZad1F'],
     capacity: [{ seats: 40000, setup: 'racing', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 74, how: 'routed', town: 'Norwalk Township' },
@@ -17439,6 +17671,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Spartan Stadium' }],
     // The research's map point; not an entrance.
     location: [-84.48472, 42.72806],
+    ticketmasterIds: ['KovZpZAdlAlA'],
     capacity: [{ seats: 74866, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 105, how: 'routed', town: 'East Lansing' },
@@ -17449,6 +17682,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Michigan International Speedway' }],
     // The research's map point; not an entrance.
     location: [-84.24139, 42.06639],
+    ticketmasterIds: ['KovZpa6SBe'],
     capacity: [{ seats: 56000, setup: 'racing', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 99, how: 'routed', town: 'Brooklyn' },
@@ -17459,6 +17693,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Kelly/Shorts Stadium' }],
     // The research's map point; not an entrance.
     location: [-84.771051, 43.577623],
+    ticketmasterIds: ['KovZpZA7vtAA'],
     capacity: [{ seats: 30255, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 172, how: 'routed', town: 'Mount Pleasant' },
@@ -17479,6 +17714,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Glass Bowl' }],
     // The research's map point; not an entrance.
     location: [-83.61361, 41.65694],
+    ticketmasterIds: ['KovZpZAaJt7A'],
     capacity: [{ seats: 26038, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 77, how: 'routed', town: 'Toledo' },
@@ -17499,6 +17735,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Breslin Center' }],
     // The research's map point; not an entrance.
     location: [-84.492396, 42.728227],
+    ticketmasterIds: ['KovZpZAaE7EA'],
     capacity: [{ seats: 14759, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 103, how: 'routed', town: 'East Lansing' },
@@ -17519,6 +17756,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Van Andel Arena' }],
     // The research's map point; not an entrance.
     location: [-85.671592, 42.962242],
+    ticketmasterIds: ['KovZpZAEAlkA'],
     capacity: [{ seats: 12000, note: 'Official (over 12,000 general capacity), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 178, how: 'routed', town: 'Grand Rapids' },
@@ -17529,6 +17767,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Jackson Field' }],
     // The research's map point; not an entrance.
     location: [-84.54528, 42.73472],
+    ticketmasterIds: ['ZFr9jZ7add'],
     capacity: [{ seats: 11000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 104, how: 'routed', town: 'Lansing' },
@@ -17539,6 +17778,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Atwood Stadium at Kettering University' }],
     // The research's map point; not an entrance.
     location: [-83.702277, 43.017162],
+    ticketmasterIds: ['KovZpZAaEA1A'],
     capacity: [{ seats: 11000, setup: 'soccer', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 80, how: 'routed', town: 'Flint' },
@@ -17559,6 +17799,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Huntington Center' }],
     // The research's map point; not an entrance.
     location: [-83.5372281, 41.6498596],
+    ticketmasterIds: ['KovZpZAJA6FA'],
     capacity: [{ seats: 8000, setup: 'hockey', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 71, how: 'routed', town: 'Toledo' },
@@ -17569,6 +17810,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Toledo Speedway' }],
     // The research's map point; not an entrance.
     location: [-83.51139, 41.71667],
+    ticketmasterIds: ['KovZpZAaltIA'],
     capacity: [{ seats: 8000, setup: 'racing', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
   },
@@ -17578,6 +17820,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Savage Arena' }],
     // The research's map point; not an entrance.
     location: [-83.609795, 41.660232],
+    ticketmasterIds: ['KovZpZAaltJA'],
     capacity: [{ seats: 7014, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 76, how: 'routed', town: 'Toledo' },
@@ -17598,6 +17841,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Frank “Muddy” Waters Stadium' }],
     // The research's map point; not an entrance.
     location: [-84.626095, 41.931494],
+    ticketmasterIds: ['Z7r9jZaAst'],
     capacity: [{ seats: 6500, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 132, how: 'routed', town: 'Hillsdale' },
@@ -17608,6 +17852,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dort Financial Center' }],
     // The research's map point; not an entrance.
     location: [-83.64194, 43.01111],
+    ticketmasterIds: ['KovZpZAEAkIA'],
     capacity: [{ seats: 6469, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 79, how: 'routed', town: 'Flint' },
@@ -17618,6 +17863,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Wings Event Center' }],
     // The research's map point; not an entrance.
     location: [-85.536175, 42.254068],
+    ticketmasterIds: ['KovZpZAEeFeA'],
     capacity: [{ seats: 6323, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 153, how: 'routed', town: 'Kalamazoo' },
@@ -17628,6 +17874,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Kellogg Arena' }],
     // The research's map point; not an entrance.
     location: [-85.185478, 42.319098],
+    ticketmasterIds: ['KovZpZAFAE7A'],
     capacity: [{ seats: 6200, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 131, how: 'routed', town: 'Battle Creek' },
@@ -17638,6 +17885,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dow Event Center' }],
     // The research's map point; not an entrance.
     location: [-83.9368889, 43.4359722],
+    ticketmasterIds: ['KovZpZAdFatA'],
     capacity: [{ seats: 5527, setup: 'hockey', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 114, how: 'routed', town: 'Saginaw' },
@@ -17648,6 +17896,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dow Diamond' }],
     // The research's map point; not an entrance.
     location: [-84.23775, 43.608975],
+    ticketmasterIds: ['Z7r9jZadyR'],
     capacity: [{ seats: 5500, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 143, how: 'routed', town: 'Midland' },
@@ -17658,6 +17907,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'McGuirk Arena' }],
     // The research's map point; not an entrance.
     location: [-84.774189, 43.581566],
+    ticketmasterIds: ['ZFr9jZeAk6'],
     capacity: [{ seats: 5300, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 173, how: 'routed', town: 'Mount Pleasant' },
@@ -17668,6 +17918,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Jenison Field House' }],
     // The research's map point; not an entrance.
     location: [-84.489928, 42.730843],
+    ticketmasterIds: ['KovZpZAJedeA'],
     capacity: [{ seats: 5017, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 104, how: 'routed', town: 'East Lansing' },
@@ -17688,6 +17939,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Treasure Island Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-92.64992, 44.63215],
+    ticketmasterIds: ['KovZ917AOQk'],
     capacity: [{ seats: 16000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
   },
@@ -17697,6 +17949,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Grand Casino Hinckley Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-92.897484, 46.009275],
+    ticketmasterIds: ['KovZpZAF7FJA'],
     capacity: [{ seats: 7100, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 89, how: 'routed', town: 'Hinckley' },
@@ -17707,6 +17960,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bayfront Festival Park' }],
     // The research's map point; not an entrance.
     location: [-92.102428, 46.777796],
+    ticketmasterIds: ['rZ7HnEZ17G0p4', 'KovZpZAaJ7nA'],
     capacity: [{ seats: 9000, setup: 'concert', note: 'Estimated, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 168, how: 'routed', town: 'Duluth' },
@@ -17727,6 +17981,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mayo Civic Center' }],
     // The research's map point; not an entrance.
     location: [-92.458599, 44.02247],
+    ticketmasterIds: ['KovZpZAF7tdA', 'KovZpZAF7teA', 'KovZ917AoCV', 'KovZpZAF7ndA', 'KovZpabAre'],
     capacity: [{ seats: 7200, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 104, how: 'routed', town: 'Rochester' },
@@ -17737,6 +17992,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Blakeslee Stadium' }],
     // The research's map point; not an entrance.
     location: [-93.995, 44.144],
+    ticketmasterIds: ['Z7r9jZa7RH'],
     capacity: [{ seats: 7000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 109, how: 'routed', town: 'Mankato' },
@@ -17747,6 +18003,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'AMSOIL Arena' }],
     // The research's map point; not an entrance.
     location: [-92.099687, 46.780476],
+    ticketmasterIds: ['KovZpa3dxe'],
     capacity: [{ seats: 6756, setup: 'hockey', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 168, how: 'routed', town: 'Duluth' },
@@ -17757,6 +18014,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cedar Lake Speedway' }],
     // The research's map point; not an entrance.
     location: [-92.588, 45.19031],
+    ticketmasterIds: ['Z7r9jZaAmq'],
     capacity: [{ seats: 6500, setup: 'racing', note: 'Official (seats), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
   },
@@ -17766,6 +18024,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Carson Park' }],
     // The research's map point; not an entrance.
     location: [-91.521, 44.808],
+    ticketmasterIds: ['KovZ917AVGp'],
     capacity: [{ seats: 6500, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 99, how: 'routed', town: 'Eau Claire' },
@@ -17776,6 +18035,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Halenbeck Hall' }],
     // The research's map point; not an entrance.
     location: [-94.152864, 45.548586],
+    ticketmasterIds: ['KovZpZAF7I6A'],
     capacity: [{ seats: 6400, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 82, how: 'routed', town: 'St. Cloud' },
@@ -17786,6 +18046,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Herb Brooks National Hockey Center' }],
     // The research's map point; not an entrance.
     location: [-94.15222, 45.54667],
+    ticketmasterIds: ['Z7r9jZadv5'],
     capacity: [{ seats: 6000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 82, how: 'routed', town: 'St. Cloud' },
@@ -17796,6 +18057,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Ledge Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-94.23729, 45.544611],
+    ticketmasterIds: ['KovZ917AxSi'],
     capacity: [{ seats: 5500, setup: 'concert', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 86, how: 'routed', town: 'Waite Park' },
@@ -17806,6 +18068,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mayo Clinic Health System Event Center' }],
     // The research's map point; not an entrance.
     location: [-94.004613, 44.166114],
+    ticketmasterIds: ['KovZpa3dCe'],
     capacity: [{ seats: 5000, setup: 'hockey', note: 'Official (university handbook; 5,280 reported), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 105, how: 'routed', town: 'Mankato' },
@@ -17836,6 +18099,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Somerset Amphitheater' }],
     // The research's map point; not an entrance.
     location: [-92.6855, 45.1285],
+    ticketmasterIds: ['KovZ917APzQ'],
     capacity: [{ seats: 30000, note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'open',
   },
@@ -17855,6 +18119,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Amphithéâtre Cogeco' }],
     // The research's map point; not an entrance.
     location: [-72.53193, 46.34686],
+    ticketmasterIds: ['KovZ917AIdI'],
     capacity: [{ seats: 9000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'covered',
     furtherOut: { driveMinutes: 118, how: 'routed', town: 'Trois-Rivières' },
@@ -17875,6 +18140,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Amphithéâtre Fernand-Lindsay' }],
     // The research's map point; not an entrance.
     location: [-73.4135, 46.00319],
+    ticketmasterIds: ['KovZpZAIvltA'],
     capacity: [{ seats: 7000, setup: 'concert', note: 'Estimated (official 2,000 covered seats plus 5,000 lawn), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'covered',
   },
@@ -17913,6 +18179,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cornwall Civic Complex' }],
     // The research's map point; not an entrance.
     location: [-74.723209, 45.014449],
+    ticketmasterIds: ['KovZpauDHe'],
     capacity: [{ seats: 5700, setup: 'concert', note: 'Official (expanded concert setup; over 4,800 arena seats), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 91, how: 'routed', town: 'Cornwall' },
@@ -17923,6 +18190,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Rogers Forum' }],
     // The research's map point; not an entrance.
     location: [-122.287145, 49.030665],
+    ticketmasterIds: ['KovZpZA7A7EA'],
     capacity: [{ seats: 6800, setup: 'concert', note: 'Official (flexible 2,550–6,800), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -17958,6 +18226,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Festival Hall at Navy Pier' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.615078, 41.892596],
+    ticketmasterIds: ['KovZ917A2-V'],
     capacity: [{ seats: 12500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -17967,6 +18236,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Northwestern Medicine Field' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.281897, 41.880389],
+    ticketmasterIds: ['Z6r9jZkvke'],
     capacity: [{ seats: 10923, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'open',
   },
@@ -17976,6 +18246,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'RiverEdge Park' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.309273, 41.765786],
+    ticketmasterIds: ['KovZpZAtvEFA'],
     capacity: [{ seats: 7500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'open',
   },
@@ -18012,6 +18283,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Athletics-Recreation Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.048342, 41.464254],
+    ticketmasterIds: ['ZFr9jZ76v7'],
     capacity: [{ seats: 5000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 80, how: 'routed', town: 'Valparaiso' },
@@ -18022,6 +18294,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Brown Field' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.047918, 41.465638],
+    ticketmasterIds: ['Z7r9jZa7do'],
     capacity: [{ seats: 5000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 79, how: 'routed', town: 'Valparaiso' },
@@ -18032,6 +18305,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Rosemont Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.8642611, 41.9762194],
+    ticketmasterIds: ['KovZpa2BOe'],
     capacity: [{ seats: 4400, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18041,6 +18315,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hammond Civic Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.512827, 41.607504],
+    ticketmasterIds: ['KovZpZAaJI6A'],
     capacity: [{ seats: 4200, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18059,6 +18334,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Arie Crown Theater' }],
     // The research's map point; not an entrance.
     location: [-87.6156222, 41.8528444],
+    ticketmasterIds: ['KovZpZAJ61JA'],
     capacity: [{ seats: 4188, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18087,6 +18363,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['legacy “Auditorium Theatre”'],
     // The research's map point; not an entrance.
     location: [-87.6251856, 41.8760639],
+    ticketmasterIds: ['KovZpa2H7e'],
     capacity: [{ seats: 3875, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18096,6 +18373,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Radius' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.642609, 41.853282],
+    ticketmasterIds: ['KovZ917AESx'],
     capacity: [{ seats: 3800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18115,6 +18393,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Chicago Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.62778, 41.88528],
+    ticketmasterIds: ['KovZpZA6AJ6A', 'KovZpZAFAdJA'],
     capacity: [{ seats: 3553, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18124,6 +18403,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Aon Grand Ballroom at Navy Pier' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.599396, 41.891841],
+    ticketmasterIds: ['KovZpZA6vE6A'],
     capacity: [{ seats: 3500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18142,6 +18422,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Venue at Horseshoe Hammond' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.506653, 41.694124],
+    ticketmasterIds: ['rZ7HnEZ17qs_f'],
     capacity: [{ seats: 3300, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18169,6 +18450,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fox Valley Ice Arena' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.280181, 41.872978],
+    ticketmasterIds: ['KovZpZA161JA'],
     capacity: [{ seats: 3000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18205,6 +18487,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Riviera Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.65988, 41.96858],
+    ticketmasterIds: ['KovZpZAan6kA', 'rZ7HnEZ17uMF4'],
     capacity: [{ seats: 2500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18214,6 +18497,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Genesee Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.83093, 42.362603],
+    ticketmasterIds: ['KovZpZAFAJJA'],
     capacity: [{ seats: 2403, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18223,6 +18507,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Edman Memorial Chapel' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.100677, 41.869832],
+    ticketmasterIds: ['KovZpZA17EaA'],
     capacity: [{ seats: 2400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18232,6 +18517,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cadillac Palace Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.6325, 41.88389],
+    ticketmasterIds: ['KovZpZAFAJkA'],
     capacity: [{ seats: 2344, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18241,6 +18527,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'James M. Nederlander Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.62861, 41.88472],
+    ticketmasterIds: ['KovZpZAFAJ7A'],
     capacity: [{ seats: 2253, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18250,6 +18537,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dan and Ada Rice Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.096169, 41.780537],
+    ticketmasterIds: ['ZFr9jZdk61'],
     capacity: [{ seats: 2000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18259,6 +18547,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Joe’s Live' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.867416, 41.978178],
+    ticketmasterIds: ['KovZ917ALIk'],
     capacity: [{ seats: 2000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18277,6 +18566,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Rialto Square Theatre' }],
     // The research's map point; not an entrance.
     location: [-88.0813556, 41.5259778],
+    ticketmasterIds: ['KovZpZAFAdlA'],
     capacity: [{ seats: 1966, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18286,6 +18576,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Paramount Theatre' }],
     // The research's map point; not an entrance.
     location: [-88.31444, 41.757667],
+    ticketmasterIds: ['KovZpZAFAdIA'],
     capacity: [{ seats: 1885, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18296,6 +18587,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Ticketmaster: “Copernicus Center”'],
     // The research's map point; not an entrance.
     location: [-87.758631, 41.968096],
+    ticketmasterIds: ['KovZ917Axum'],
     capacity: [{ seats: 1852, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18305,6 +18597,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'CIBC Theatre' }],
     // The research's map point; not an entrance.
     location: [-87.6285104, 41.8808054],
+    ticketmasterIds: ['KovZpZA6AJAA'],
     capacity: [{ seats: 1800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18314,6 +18607,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ramova Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.646598, 41.830329],
+    ticketmasterIds: ['KovZ917ARPG'],
     capacity: [{ seats: 1800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18332,6 +18626,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Patio Theater' }],
     // The research's map point; not an entrance.
     location: [-87.777127, 41.953201],
+    ticketmasterIds: ['KovZpZAFatdA'],
     capacity: [{ seats: 1495, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18341,6 +18636,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Concord Music Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.689912, 41.91871],
+    ticketmasterIds: ['KovZpZAJtF7A'],
     capacity: [{ seats: 1490, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18350,6 +18646,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Vic' }],
     // The research's map point; not an entrance.
     location: [-87.6538, 41.9395],
+    ticketmasterIds: ['KovZpZA17AEA'],
     capacity: [{ seats: 1400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18359,6 +18656,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cermak Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.642991, 41.853197],
+    ticketmasterIds: ['Z7r9jZa7tt'],
     capacity: [{ seats: 1350, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18368,6 +18666,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'House of Blues Chicago' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.629109, 41.888244],
+    ticketmasterIds: ['KovZpZAEAIlA'],
     capacity: [{ seats: 1300, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18395,6 +18694,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Metro' }],
     // The research's map point; not an entrance.
     location: [-87.65889, 41.94972],
+    ticketmasterIds: ['KovZpaoMXe'],
     capacity: [{ seats: 1150, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18413,6 +18713,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pfeiffer Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.143252, 41.774744],
+    ticketmasterIds: ['KovZpZAEktaA'],
     capacity: [{ seats: 1057, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18422,6 +18723,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cahn Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.67785, 42.051837],
+    ticketmasterIds: ['KovZ917At8O'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18431,6 +18733,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dellora A. Norris Cultural Arts Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.283243, 41.928939],
+    ticketmasterIds: ['KovZpZA66vlA'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18440,6 +18743,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Harold Washington Cultural Center' }],
     // The research's map point; not an entrance.
     location: [-87.616117, 41.809276],
+    ticketmasterIds: ['KovZpZAaJI1A'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18449,6 +18753,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Park West' }],
     // The research's map point; not an entrance.
     location: [-87.63741, 41.91861],
+    ticketmasterIds: ['KovZpZAan6AA'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18458,6 +18763,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Des Plaines Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.88715, 42.041822],
+    ticketmasterIds: ['Z7r9jZa7qo'],
     capacity: [{ seats: 998, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18467,6 +18773,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pick-Staiger Concert Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-87.672168, 42.052642],
+    ticketmasterIds: ['ZFr9jZe11A'],
     capacity: [{ seats: 989, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18476,6 +18783,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Forge' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-88.082086, 41.527697],
+    ticketmasterIds: ['KovZ917ALP3'],
     capacity: [{ seats: 950, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
     roof: 'indoor',
   },
@@ -18604,6 +18912,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['TM: Bomb Factory'],
     // The research's map point; not an entrance.
     location: [-96.783748, 32.782391],
+    ticketmasterIds: ['KovZpa97fe'],
     capacity: [{ seats: 4300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18622,6 +18931,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Music Hall at Fair Park' }],
     // The research's map point; not an entrance.
     location: [-96.765789, 32.780358],
+    ticketmasterIds: ['KovZpZAFFvnA'],
     capacity: [{ seats: 3420, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18640,6 +18950,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'South Side Ballroom' }],
     // The research's map point; not an entrance.
     location: [-96.79815, 32.76901],
+    ticketmasterIds: ['KovZpZAEAFdA', 'KovZpZAEkvaA'],
     capacity: [{ seats: 3200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18658,6 +18969,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Texas Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-97.115555, 32.729718],
+    ticketmasterIds: ['KovZpZA1IEeA'],
     capacity: [{ seats: 2625, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18676,6 +18988,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'NYTEX Sports Centre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-97.195501, 32.859234],
+    ticketmasterIds: ['Z7r9jZa7db'],
     capacity: [{ seats: 2400, setup: 'hockey', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18704,6 +19017,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Margot and Bill Winspear Opera House' }],
     // The research's map point; not an entrance.
     location: [-96.797532, 32.790832],
+    ticketmasterIds: ['KovZpabeVe'],
     capacity: [{ seats: 2200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18713,6 +19027,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Morton H. Meyerson Symphony Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.798626, 32.789951],
+    ticketmasterIds: ['KovZpZA1vanA'],
     capacity: [{ seats: 2062, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18722,6 +19037,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bass Performance Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-97.329757, 32.754753],
+    ticketmasterIds: ['KovZpZAF6EtA'],
     capacity: [{ seats: 2042, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18741,6 +19057,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['TM: Majestic Theatre Dallas'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.795001, 32.782773],
+    ticketmasterIds: ['KovZpZAFl6vA'],
     capacity: [{ seats: 1704, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18750,6 +19067,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'House of Blues Dallas' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.808182, 32.785085],
+    ticketmasterIds: ['KovZpZAEAF7A'],
     capacity: [{ seats: 1625, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18786,6 +19104,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Garvey-Rosenthal Soccer Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-97.368344, 32.702699],
+    ticketmasterIds: ['Z7r9jZa7Rn'],
     capacity: [{ seats: 1500, setup: 'soccer', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'open',
   },
@@ -18822,6 +19141,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Stereo Live Dallas' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.879364, 32.860107],
+    ticketmasterIds: ['Z7r9jZadZ0'],
     capacity: [{ seats: 1400, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18831,6 +19151,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Granada Theater' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.769816, 32.830874],
+    ticketmasterIds: ['KovZpZAaEnvA'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18840,6 +19161,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Studio at The Bomb Factory' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.784016, 32.782127],
+    ticketmasterIds: ['Z7r9jZakpl'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18849,6 +19171,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Echo Lounge & Music Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-96.814436, 32.790646],
+    ticketmasterIds: ['KovZ917AxY0', 'Z7r9jZa7rE'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18867,6 +19190,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Delmar Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.45623, 29.803658],
+    ticketmasterIds: ['KovZpZAJEk1A'],
     capacity: [{ seats: 12000, setup: 'football', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'open',
   },
@@ -18894,6 +19218,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Health & Physical Education Arena' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.365578, 29.722879],
+    ticketmasterIds: ['Z7r9jZadfx'],
     capacity: [{ seats: 8100, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18912,6 +19237,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Butler Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.488353, 29.635807],
+    ticketmasterIds: ['KovZpZAJJJvA'],
     capacity: [{ seats: 8000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'open',
   },
@@ -18921,6 +19247,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Humble Civic Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.258799, 29.98015],
+    ticketmasterIds: ['KovZpZA7AklA'],
     capacity: [{ seats: 7000, setup: 'rodeo', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'covered',
   },
@@ -18939,6 +19266,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Leonard E. Merrell Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.832509, 29.780357],
+    ticketmasterIds: ['KovZpZAJJtaA'],
     capacity: [{ seats: 6000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18957,6 +19285,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'George R. Brown Convention Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.358114, 29.751793],
+    ticketmasterIds: ['KovZpZAJ1vaA'],
     capacity: [{ seats: 3600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -18966,6 +19295,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bayou Music Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.367189, 29.762431],
+    ticketmasterIds: ['KovZpZAEkIIA'],
     capacity: [{ seats: 3200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -19002,6 +19332,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Arena Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.517738, 29.702356],
+    ticketmasterIds: ['KovZpZAJJ7FA'],
     capacity: [{ seats: 2711, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -19020,6 +19351,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cullen Performance Hall' }],
     // The research's map point; not an entrance.
     location: [-95.3431, 29.7203],
+    ticketmasterIds: ['KovZpZAJaEEA'],
     capacity: [{ seats: 1612, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -19029,6 +19361,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'House of Blues Houston' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.363957, 29.753798],
+    ticketmasterIds: ['KovZpZAE6k1A', 'KovZ917AxFQ'],
     capacity: [{ seats: 1500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -19047,6 +19380,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Warehouse Live Midtown' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.37551, 29.745697],
+    ticketmasterIds: ['ZFr9jZAva6', 'KovZ917AVwF'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -19056,6 +19390,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Stafford Centre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-95.556417, 29.623801],
+    ticketmasterIds: ['KovZpZAJJIdA'],
     capacity: [{ seats: 1155, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
     roof: 'indoor',
   },
@@ -19065,6 +19400,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'John A. Farrell Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.601793, 39.936931],
+    ticketmasterIds: ['Z7r9jZaAGQ'],
     capacity: [{ seats: 7500, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'open',
   },
@@ -19092,6 +19428,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Penn Community Bank Amphitheater' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-74.942856, 40.107215],
+    ticketmasterIds: ['Z7r9jZaAQH'],
     capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'covered',
   },
@@ -19101,6 +19438,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Valley Forge Casino Resort' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.415789, 40.096787],
+    ticketmasterIds: ['KovZpZAJEaAA'],
     capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19110,6 +19448,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Chase Fieldhouse' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.554778, 39.726414],
+    ticketmasterIds: ['KovZ917Acdw'],
     capacity: [{ seats: 2500, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19147,6 +19486,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Irvine Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.192994, 39.950914],
+    ticketmasterIds: ['KovZpa4B8e'],
     capacity: [{ seats: 1259, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19184,6 +19524,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['seller shorthand: The Grand'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.548476, 39.743746],
+    ticketmasterIds: ['Z7r9jZadBD'],
     capacity: [{ seats: 1140, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19193,6 +19534,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Queen' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.550271, 39.741133],
+    ticketmasterIds: ['KovZ917A2T0'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19202,6 +19544,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Scottish Rite Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.084615, 39.914485],
+    ticketmasterIds: ['KovZpZAankeA'],
     capacity: [{ seats: 1050, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19211,6 +19554,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'NOTO Philadelphia' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.159015, 39.958011],
+    ticketmasterIds: ['Z7r9jZadG-', 'KovZ917AxnI'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19230,6 +19574,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['TM legacy URL alias: The Event Center at Harrah’s Philadelphia'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-75.348379, 39.851001],
+    ticketmasterIds: ['KovZ917A-Vm'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19239,6 +19584,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Regency Furniture Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-76.904032, 38.577561],
+    ticketmasterIds: ['KovZpZA1nJJA'],
     capacity: [{ seats: 6200, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'open',
   },
@@ -19249,6 +19595,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['TM: Show Place Arena'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-76.749419, 38.810859],
+    ticketmasterIds: ['KovZpZAa1etA'],
     capacity: [{ seats: 5700, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19267,6 +19614,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Nymeo Field at Harry Grove Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.414214, 39.401603],
+    ticketmasterIds: ['Z6r9jZFv1e'],
     capacity: [{ seats: 5400, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 67, how: 'routed', town: 'Frederick' },
@@ -19277,6 +19625,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Virginia Credit Union Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.508985, 38.318273],
+    ticketmasterIds: ['Z7r9jZa7Qn'],
     capacity: [{ seats: 5000, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 69, how: 'routed', town: 'Fredericksburg independent city' },
@@ -19297,6 +19646,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Cooper Field' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.075299, 38.908049],
+    ticketmasterIds: ['KovZ917A0iw'],
     capacity: [{ seats: 3750, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'open',
   },
@@ -19306,6 +19656,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'DAR Constitution Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.040587, 38.893942],
+    ticketmasterIds: ['KovZpaKdYe'],
     capacity: [{ seats: 3702, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19324,6 +19675,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Echostage' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-76.972424, 38.919901],
+    ticketmasterIds: ['KovZpZAadt7A'],
     capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19333,6 +19685,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Prince George’s Sports & Learning Complex' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-76.867293, 38.911296],
+    ticketmasterIds: ['KovZpZA1nd7A'],
     capacity: [{ seats: 3000, setup: 'track', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19342,6 +19695,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bender Arena' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.089892, 38.937722],
+    ticketmasterIds: ['KovZpZAaIIEA'],
     capacity: [{ seats: 2900, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19360,6 +19714,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Washington National Cathedral' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.070595, 38.930651],
+    ticketmasterIds: ['KovZpZAklEaA'],
     capacity: [{ seats: 2000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19369,6 +19724,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Warner Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.029353, 38.896511],
+    ticketmasterIds: ['KovZpZAJv7aA'],
     capacity: [{ seats: 1847, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19379,6 +19735,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['seller shorthand: National Theatre'],
     // The research's map point; not an entrance.
     location: [-77.0304987, 38.8963566],
+    ticketmasterIds: ['KovZpZAFk6lA'],
     capacity: [{ seats: 1713, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19388,6 +19745,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Capital One Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.21127, 38.925455],
+    ticketmasterIds: ['KovZ917AJ17'],
     capacity: [{ seats: 1600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19406,6 +19764,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lisner Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.047093, 38.899295],
+    ticketmasterIds: ['KovZpZAa1eEA'],
     capacity: [{ seats: 1400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19415,6 +19774,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dodd Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.474273, 38.300679],
+    ticketmasterIds: ['ZFr9jZFdeF'],
     capacity: [{ seats: 1283, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 70, how: 'routed', town: 'Fredericksburg independent city' },
@@ -19425,6 +19785,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'National Presbyterian Church' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.080943, 38.941869],
+    ticketmasterIds: ['KovZ917AVVZ', 'KovZ917AVsp'],
     capacity: [{ seats: 1244, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19435,6 +19796,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['TM: 9:30 CLUB'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.023647, 38.917996],
+    ticketmasterIds: ['KovZpZA7knFA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19444,6 +19806,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Howard Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-77.021094, 38.915314],
+    ticketmasterIds: ['KovZpZAFavlA'],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
     roof: 'indoor',
   },
@@ -19499,6 +19862,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Coliseum' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-85.103896, 33.575905],
+    ticketmasterIds: ['KovZpZA6vInA'],
     capacity: [{ seats: 6500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 65, how: 'routed', town: 'Carrollton' },
@@ -19537,6 +19901,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Atlanta Silverbacks Park' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.255073, 33.89128],
+    ticketmasterIds: ['KovZpZA7A1nA'],
     capacity: [{ seats: 5000, setup: 'soccer', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19546,6 +19911,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Atlanta Coliseum' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.129563, 33.958185],
+    ticketmasterIds: ['KovZpZAFF1lA'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19555,6 +19921,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fox Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.385562, 33.772643],
+    ticketmasterIds: ['KovZpZAdnvEA'],
     capacity: [{ seats: 4665, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19564,6 +19931,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Coca-Cola Roxy' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.469826, 33.890412],
+    ticketmasterIds: ['KovZ917ACc7'],
     capacity: [{ seats: 3600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19574,6 +19942,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Stockbridge Amphitheater'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.231558, 33.544095],
+    ticketmasterIds: ['KovZ917AV7U'],
     capacity: [{ seats: 3200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19592,6 +19961,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mable House Barnes Amphitheatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.57281, 33.827317],
+    ticketmasterIds: ['KovZpZAdJIkA'],
     capacity: [{ seats: 2500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'covered',
   },
@@ -19601,6 +19971,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Frederick Brown Jr. Amphitheater' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.568182, 33.382571],
+    ticketmasterIds: ['KovZpZAFkAlA'],
     capacity: [{ seats: 2500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19610,6 +19981,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Eastern' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.360534, 33.745379],
+    ticketmasterIds: ['KovZ917AYK-'],
     capacity: [{ seats: 2200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19619,6 +19991,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Atlanta Symphony Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.385432, 33.78887],
+    ticketmasterIds: ['KovZpZAJedlA'],
     capacity: [{ seats: 1814, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19628,6 +20001,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Buckhead Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.379921, 33.840335],
+    ticketmasterIds: ['KovZpZAJAllA'],
     capacity: [{ seats: 1800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19656,6 +20030,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'O’Keefe Gymnasium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.391619, 33.77941],
+    ticketmasterIds: ['Z7r9jZa7mr'],
     capacity: [{ seats: 1200, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19665,6 +20040,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Variety Playhouse' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.350943, 33.763609],
+    ticketmasterIds: ['KovZpa3Qne'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19674,6 +20050,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Center Stage Theater' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-84.388235, 33.792208],
+    ticketmasterIds: ['KovZpZAFF1tA'],
     capacity: [{ seats: 1050, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19710,6 +20087,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tropical Park Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.32307, 25.730085],
+    ticketmasterIds: ['KovZpZA1vAEA'],
     capacity: [{ seats: 7000, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19719,6 +20097,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Ansin Sports Complex' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.290565, 25.98837],
+    ticketmasterIds: ['KovZ917AJ2x'],
     capacity: [{ seats: 5000, setup: 'track', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19728,6 +20107,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Alex Rodriguez Park at Mark Light Field' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.282279, 25.711885],
+    ticketmasterIds: ['KovZpZA7knaA'],
     capacity: [{ seats: 5000, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19747,6 +20127,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Coral Springs Center for the Arts' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.26523, 26.266355],
+    ticketmasterIds: ['KovZpZAaE11A'],
     capacity: [{ seats: 1471, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19756,6 +20137,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Revolution Live' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.146055, 26.121305],
+    ticketmasterIds: ['KovZpZAEkvlA', 'KovZpZAEke6A', 'KovZ917Am_Q'],
     capacity: [{ seats: 1300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19765,6 +20147,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lauderhill Performing Arts Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.200287, 26.138844],
+    ticketmasterIds: ['Z7r9jZa7Uj'],
     capacity: [{ seats: 1106, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19774,6 +20157,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'LIV' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.12238, 25.817723],
+    ticketmasterIds: ['KovZ917Ac_V', 'Z7r9jZadpv'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19783,6 +20167,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bailey Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.236425, 26.078431],
+    ticketmasterIds: ['KovZpZAJdteA', 'rZ7HnEZ17pZqI'],
     capacity: [{ seats: 1069, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19792,6 +20177,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'ZeyZey Miami' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-80.189092, 25.832808],
+    ticketmasterIds: ['KovZ917ASB7'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19810,6 +20196,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Mesa Amphitheatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-111.830063, 33.42096],
+    ticketmasterIds: ['KovZpZA6vJIA'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19819,6 +20206,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'ASU Gammage' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-111.938062, 33.416259],
+    ticketmasterIds: ['KovZpZAE6v1A'],
     capacity: [{ seats: 3017, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19837,6 +20225,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Celebrity Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-112.014747, 33.454419],
+    ticketmasterIds: ['KovZpZAJen1A'],
     capacity: [{ seats: 2606, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19855,6 +20244,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Van Buren' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-112.079439, 33.451086],
+    ticketmasterIds: ['KovZ917A887'],
     capacity: [{ seats: 1900, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19864,6 +20254,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Highlands Church' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-111.886013, 33.700562],
+    ticketmasterIds: ['KovZ917AN-Z'],
     capacity: [{ seats: 1600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19873,6 +20264,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Marquee Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-111.943989, 33.436966],
+    ticketmasterIds: ['KovZpZAJk7eA'],
     capacity: [{ seats: 1500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19882,6 +20274,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Orpheum Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-112.07687, 33.449016],
+    ticketmasterIds: ['KovZpZAE7F6A'],
     capacity: [{ seats: 1410, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19891,6 +20284,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Vista' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-112.384802, 33.626422],
+    ticketmasterIds: ['Z7r9jZa7lE'],
     capacity: [{ seats: 1300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'indoor',
   },
@@ -19900,6 +20294,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Alberta B. Farrington Softball Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-111.9234, 33.4254],
+    ticketmasterIds: ['KovZ917A837'],
     capacity: [{ seats: 1200, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
     roof: 'open',
   },
@@ -19945,6 +20340,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Pioneer Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.06077, 37.657234],
+    ticketmasterIds: ['Z7r9jZaAAW'],
     capacity: [{ seats: 5000, setup: 'soccer', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'open',
   },
@@ -19954,6 +20350,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Raimondi Park' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.293791, 37.816069],
+    ticketmasterIds: ['Z7r9jZaANP'],
     capacity: [{ seats: 4000, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'open',
   },
@@ -19963,6 +20360,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Kezar Pavilion' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.453886, 37.767511],
+    ticketmasterIds: ['ZFr9jZk716'],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -19973,6 +20371,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['San Jose Municipal Stadium'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-121.862413, 37.320608],
+    ticketmasterIds: ['ZFr9jZ7a6e'],
     capacity: [{ seats: 3811, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'open',
   },
@@ -19982,6 +20381,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Masonic' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.41299, 37.791174],
+    ticketmasterIds: ['KovZpZAJ6nlA'],
     capacity: [{ seats: 3481, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -19992,6 +20392,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['City National Civic'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-121.890232, 37.333559],
+    ticketmasterIds: ['KovZpZAJk71A'],
     capacity: [{ seats: 3326, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20001,6 +20402,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Paramount Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.268667, 37.809868],
+    ticketmasterIds: ['KovZpZAFkIlA'],
     capacity: [{ seats: 3040, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20010,6 +20412,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'War Memorial Opera House' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.420928, 37.778537],
+    ticketmasterIds: ['KovZpZAFkItA'],
     capacity: [{ seats: 3006, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20019,6 +20422,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Richmond Memorial Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.344307, 37.936968],
+    ticketmasterIds: ['KovZpZA1nlaA'],
     capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20028,6 +20432,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fox Theater' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.270515, 37.808144],
+    ticketmasterIds: ['KovZpaKoXe'],
     capacity: [{ seats: 2800, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20037,6 +20442,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Louise M. Davies Symphony Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.420458, 37.777647],
+    ticketmasterIds: ['KovZpZAEeAaA'],
     capacity: [{ seats: 2739, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20064,6 +20470,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Warfield' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.410342, 37.782622],
+    ticketmasterIds: ['KovZpZAJe6lA'],
     capacity: [{ seats: 2454, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20073,6 +20480,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Golden Gate Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.4111, 37.782531],
+    ticketmasterIds: ['KovZpaK8ze'],
     capacity: [{ seats: 2297, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20082,6 +20490,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Orpheum Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.414735, 37.779162],
+    ticketmasterIds: ['KovZpZAFaanA'],
     capacity: [{ seats: 2197, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20092,6 +20501,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Nourse Theater'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.420963, 37.776892],
+    ticketmasterIds: ['KovZ917A-gp'],
     capacity: [{ seats: 1687, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20101,6 +20511,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Curran Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.410604, 37.786831],
+    ticketmasterIds: ['KovZpZAFaalA'],
     capacity: [{ seats: 1677, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20110,6 +20521,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'San Mateo Performing Arts Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.330668, 37.577669],
+    ticketmasterIds: ['KovZpZAdlaeA'],
     capacity: [{ seats: 1540, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20137,6 +20549,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Regency Ballroom' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.421576, 37.787818],
+    ticketmasterIds: ['KovZpZAEet6A'],
     capacity: [{ seats: 1400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20155,6 +20568,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'The Fillmore' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.433171, 37.784084],
+    ticketmasterIds: ['KovZpZAE6eeA'],
     capacity: [{ seats: 1315, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20164,6 +20578,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'California Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-121.887219, 37.330598],
+    ticketmasterIds: ['KovZpZAa17EA'],
     capacity: [{ seats: 1122, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20173,6 +20588,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Fox Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.229624, 37.486351],
+    ticketmasterIds: ['KovZpZAata6A'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20183,6 +20599,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Geary Theater'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.410267, 37.786885],
+    ticketmasterIds: ['Z7r9jZakP7'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20210,6 +20627,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'August Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-122.409787, 37.787588],
+    ticketmasterIds: ['KovZ917ALXF'],
     capacity: [{ seats: 951, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20219,6 +20637,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hynes Convention Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.087171, 42.347961],
+    ticketmasterIds: ['KovZpZAJdJIA'],
     capacity: [{ seats: 6000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20237,6 +20656,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Campanelli Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.042452, 42.069273],
+    ticketmasterIds: ['KovZpZA17dEA'],
     capacity: [{ seats: 4750, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'open',
   },
@@ -20246,6 +20666,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Aleppo Shriners Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.135526, 42.567915],
+    ticketmasterIds: ['KovZpZAknFeA'],
     capacity: [{ seats: 4150, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20255,6 +20676,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dana Athletic Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.224856, 42.383208],
+    ticketmasterIds: ['Z7r9jZa7zu'],
     capacity: [{ seats: 4000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20273,6 +20695,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bentley Arena' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.220546, 42.384787],
+    ticketmasterIds: ['Z7r9jZadQz'],
     capacity: [{ seats: 3626, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20282,6 +20705,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Duane Stadium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.120236, 42.666343],
+    ticketmasterIds: ['Z7r9jZa7vH'],
     capacity: [{ seats: 3500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'open',
   },
@@ -20291,6 +20715,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Reggie Lewis Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.092835, 42.332019],
+    ticketmasterIds: ['KovZpZA1J7nA'],
     capacity: [{ seats: 3500, setup: 'track', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20300,6 +20725,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bright-Landry Hockey Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.127241, 42.368366],
+    ticketmasterIds: ['Z6r9jZdd6e'],
     capacity: [{ seats: 3000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20309,6 +20735,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lawler Arena' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.120097, 42.667909],
+    ticketmasterIds: ['ZFr9jZ1vAe'],
     capacity: [{ seats: 3000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20318,6 +20745,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Lowell Memorial Auditorium' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.304196, 42.645157],
+    ticketmasterIds: ['KovZpZAFknJA'],
     capacity: [{ seats: 2800, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20345,6 +20773,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'South Shore Music Circus' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-70.81248, 42.240332],
+    ticketmasterIds: ['KovZpZAIenFA'],
     capacity: [{ seats: 2300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'covered',
   },
@@ -20355,6 +20784,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Lynn Auditorium'],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-70.951246, 42.464811],
+    ticketmasterIds: ['rZ7HnEZ17QA-S'],
     capacity: [{ seats: 2072, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20364,6 +20794,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Chevalier Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.109088, 42.420316],
+    ticketmasterIds: ['KovZpZAJd6aA'],
     capacity: [{ seats: 1900, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20373,6 +20804,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Emerson Colonial Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.065288, 42.35231],
+    ticketmasterIds: ['KovZpZAJd66A'],
     capacity: [{ seats: 1634, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20382,6 +20814,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'North Shore Music Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-70.869606, 42.575858],
+    ticketmasterIds: ['KovZpZA16nnA'],
     capacity: [{ seats: 1500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20391,6 +20824,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Berklee Performance Center' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.087094, 42.347045],
+    ticketmasterIds: ['KovZpZAFkn1A'],
     capacity: [{ seats: 1215, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20400,6 +20834,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'John Hancock Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.073072, 42.349841],
+    ticketmasterIds: ['KovZpZAa1I1A'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20409,6 +20844,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Jordan Hall' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.086205, 42.341087],
+    ticketmasterIds: ['KovZpaogIe'],
     capacity: [{ seats: 1051, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
@@ -20418,6 +20854,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Sanders Theatre' }],
     // OpenStreetMap point by name or address, approximate; not an entrance.
     location: [-71.114686, 42.375887],
+    ticketmasterIds: ['KovZpZAatknA'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
