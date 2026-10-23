@@ -1,6 +1,6 @@
 # Small rooms, big cities — installment 4
 
-Status: saved Oct 22, 2026, not folded in; continuation 5 (Washington, DC and Philadelphia) is in small-rooms-big-cities-prompt.md.
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026, in the one import pass (rooms with a trusted map point; the rest are listed in `docs/checks/small-rooms-not-imported-2026-10-23.md`).
 
 Dallas–Fort Worth, then Houston. Research checked October 21, 2026. Chicago remains in installment 3 and is not repeated.
 

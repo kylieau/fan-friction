@@ -1,5 +1,7 @@
 # Small rooms, big cities — answer 3
 
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026, in the one import pass (rooms with a trusted map point; the rest are listed in `docs/checks/small-rooms-not-imported-2026-10-23.md`).
+
 ## Delivery status and scope
 
 **This installment covers a first Chicago-metro research batch. It stops at Chicago; Dallas–Fort Worth has not been started.** New York and Los Angeles have not been repeated. The Chicago census is **not yet exhaustive**: the named unresolved candidates below still need work, particularly school sports facilities, fairgrounds, and room-level convention configurations. This is a reviewable research file, not an import-ready assertion that every required field has been verified.

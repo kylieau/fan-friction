@@ -17927,6 +17927,2491 @@ export const VENUES: Record<string, Venue> = {
     roof: 'indoor',
     furtherOut: { driveMinutes: 90, how: 'routed', town: 'Chilliwack' },
   },
+  // ---- Small rooms in the big cities, installments 3–7 (docs/research/city-builds/small-rooms-big-cities-answer-3.md to
+  // -7.md: Chicago, Dallas–Fort Worth, Houston, Washington, Philadelphia, Atlanta, Miami, Phoenix, Boston, the Bay Area),
+  // the one import pass when the series ended, Oct 23, 2026 (Kylie: "let's go with your lean"). Mostly 1,000–5,000 rooms,
+  // muted and loggable; about 57 are 5,000+ (school-district stadiums, the Hynes auditorium with Hall C, Stern Grove).
+  // The research gave few points, so most are OpenStreetMap's by name or street address, checked to lie within 90 km of
+  // the city and marked approximate; rooms with no point we trust are not imported (listed in BACKLOG). Each sits on the
+  // side the drive-time rule puts it. Capacity is the research's first figure for the room, its largest setup. ----
+  'pavilion-at-wolf-lake-memorial-park': {
+    id: 'pavilion-at-wolf-lake-memorial-park',
+    metroId: 'chicago',
+    names: [{ name: 'Pavilion at Wolf Lake Memorial Park' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.510001, 41.670859],
+    capacity: [{ seats: 15000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'covered',
+  },
+  'festival-hall-at-navy-pier': {
+    id: 'festival-hall-at-navy-pier',
+    metroId: 'chicago',
+    names: [{ name: 'Festival Hall at Navy Pier' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.615078, 41.892596],
+    capacity: [{ seats: 12500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'northwestern-medicine-field': {
+    id: 'northwestern-medicine-field',
+    metroId: 'chicago',
+    names: [{ name: 'Northwestern Medicine Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.281897, 41.880389],
+    capacity: [{ seats: 10923, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'riveredge-park': {
+    id: 'riveredge-park',
+    metroId: 'chicago',
+    names: [{ name: 'RiverEdge Park' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.309273, 41.765786],
+    capacity: [{ seats: 7500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'steel-yard': {
+    id: 'steel-yard',
+    metroId: 'chicago',
+    names: [{ name: 'Steel Yard' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.333018, 41.602933],
+    capacity: [{ seats: 6139, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'duly-health-and-care-field': {
+    id: 'duly-health-and-care-field',
+    metroId: 'chicago',
+    names: [{ name: 'Duly Health and Care Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.077696, 41.526012],
+    capacity: [{ seats: 6016, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'benedetti-wehrli-stadium': {
+    id: 'benedetti-wehrli-stadium',
+    metroId: 'chicago',
+    names: [{ name: 'Benedetti-Wehrli Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.145815, 41.769405],
+    capacity: [{ seats: 5500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'athletics-recreation-center': {
+    id: 'athletics-recreation-center',
+    metroId: 'chicago',
+    names: [{ name: 'Athletics-Recreation Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.048342, 41.464254],
+    capacity: [{ seats: 5000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 80, how: 'routed', town: 'Valparaiso' },
+  },
+  'brown-field': {
+    id: 'brown-field',
+    metroId: 'chicago',
+    names: [{ name: 'Brown Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.047918, 41.465638],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 79, how: 'routed', town: 'Valparaiso' },
+  },
+  'rosemont-theatre': {
+    id: 'rosemont-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Rosemont Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.8642611, 41.9762194],
+    capacity: [{ seats: 4400, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'hammond-civic-center': {
+    id: 'hammond-civic-center',
+    metroId: 'chicago',
+    names: [{ name: 'Hammond Civic Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.512827, 41.607504],
+    capacity: [{ seats: 4200, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'ozinga-field': {
+    id: 'ozinga-field',
+    metroId: 'chicago',
+    names: [{ name: 'Ozinga Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.731208, 41.637468],
+    capacity: [{ seats: 4200, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'arie-crown-theater': {
+    id: 'arie-crown-theater',
+    metroId: 'chicago',
+    names: [{ name: 'Arie Crown Theater' }],
+    // The research's map point; not an entrance.
+    location: [-87.6156222, 41.8528444],
+    capacity: [{ seats: 4188, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'mccully-stadium': {
+    id: 'mccully-stadium',
+    metroId: 'chicago',
+    names: [{ name: 'McCully Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.096017, 41.867526],
+    capacity: [{ seats: 4000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'wintrust-sports-complex': {
+    id: 'wintrust-sports-complex',
+    metroId: 'chicago',
+    names: [{ name: 'Wintrust Sports Complex' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.759324, 41.773209],
+    capacity: [{ seats: 4000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'the-auditorium': {
+    id: 'the-auditorium',
+    metroId: 'chicago',
+    names: [{ name: 'The Auditorium' }],
+    aliases: ['legacy “Auditorium Theatre”'],
+    // The research's map point; not an entrance.
+    location: [-87.6251856, 41.8760639],
+    capacity: [{ seats: 3875, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'radius': {
+    id: 'radius',
+    metroId: 'chicago',
+    names: [{ name: 'Radius' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.642609, 41.853282],
+    capacity: [{ seats: 3800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'grundy-county-speedway': {
+    id: 'grundy-county-speedway',
+    metroId: 'chicago',
+    names: [{ name: 'Grundy County Speedway' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.416704, 41.410694],
+    capacity: [{ seats: 3700, setup: 'track', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Morris' },
+  },
+  'the-chicago-theatre': {
+    id: 'the-chicago-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'The Chicago Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.62778, 41.88528],
+    capacity: [{ seats: 3553, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'aon-grand-ballroom-at-navy-pier': {
+    id: 'aon-grand-ballroom-at-navy-pier',
+    metroId: 'chicago',
+    names: [{ name: 'Aon Grand Ballroom at Navy Pier' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.599396, 41.891841],
+    capacity: [{ seats: 3500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'dr-conrad-worrill-track-field-center-at-gately-park': {
+    id: 'dr-conrad-worrill-track-field-center-at-gately-park',
+    metroId: 'chicago',
+    names: [{ name: 'Dr. Conrad Worrill Track & Field Center at Gately Park' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.602613, 41.708465],
+    capacity: [{ seats: 3500, setup: 'track', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'the-venue-at-horseshoe-hammond': {
+    id: 'the-venue-at-horseshoe-hammond',
+    metroId: 'chicago',
+    names: [{ name: 'The Venue at Horseshoe Hammond' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.506653, 41.694124],
+    capacity: [{ seats: 3300, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'lyric-opera-house': {
+    id: 'lyric-opera-house',
+    metroId: 'chicago',
+    names: [{ name: 'Lyric Opera House' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.637472, 41.882711],
+    capacity: [{ seats: 3276, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'bruce-r-deaton-memorial-field': {
+    id: 'bruce-r-deaton-memorial-field',
+    metroId: 'chicago',
+    names: [{ name: 'Bruce R. Deaton Memorial Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.717161, 41.708368],
+    capacity: [{ seats: 3000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'fox-valley-ice-arena': {
+    id: 'fox-valley-ice-arena',
+    metroId: 'chicago',
+    names: [{ name: 'Fox Valley Ice Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.280181, 41.872978],
+    capacity: [{ seats: 3000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'shannon-center': {
+    id: 'shannon-center',
+    metroId: 'chicago',
+    names: [{ name: 'Shannon Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.716127, 41.706915],
+    capacity: [{ seats: 3000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'king-arena': {
+    id: 'king-arena',
+    metroId: 'chicago',
+    names: [{ name: 'King Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.096789, 41.871286],
+    capacity: [{ seats: 2650, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'orchestra-hall-at-symphony-center': {
+    id: 'orchestra-hall-at-symphony-center',
+    metroId: 'chicago',
+    names: [{ name: 'Orchestra Hall at Symphony Center' }],
+    // The research's map point; not an entrance.
+    location: [-87.625, 41.87917],
+    capacity: [{ seats: 2522, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'riviera-theatre': {
+    id: 'riviera-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Riviera Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.65988, 41.96858],
+    capacity: [{ seats: 2500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'genesee-theatre': {
+    id: 'genesee-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Genesee Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.83093, 42.362603],
+    capacity: [{ seats: 2403, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'edman-memorial-chapel': {
+    id: 'edman-memorial-chapel',
+    metroId: 'chicago',
+    names: [{ name: 'Edman Memorial Chapel' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.100677, 41.869832],
+    capacity: [{ seats: 2400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'cadillac-palace-theatre': {
+    id: 'cadillac-palace-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Cadillac Palace Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.6325, 41.88389],
+    capacity: [{ seats: 2344, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'james-m-nederlander-theatre': {
+    id: 'james-m-nederlander-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'James M. Nederlander Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.62861, 41.88472],
+    capacity: [{ seats: 2253, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'dan-and-ada-rice-center': {
+    id: 'dan-and-ada-rice-center',
+    metroId: 'chicago',
+    names: [{ name: 'Dan and Ada Rice Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.096169, 41.780537],
+    capacity: [{ seats: 2000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'joes-live': {
+    id: 'joes-live',
+    metroId: 'chicago',
+    names: [{ name: 'Joe’s Live' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.867416, 41.978178],
+    capacity: [{ seats: 2000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'the-stadium-at-parkway-bank-sports-complex': {
+    id: 'the-stadium-at-parkway-bank-sports-complex',
+    metroId: 'chicago',
+    names: [{ name: 'The Stadium at Parkway Bank Sports Complex' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.873295, 41.980989],
+    capacity: [{ seats: 2000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'rialto-square-theatre': {
+    id: 'rialto-square-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Rialto Square Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-88.0813556, 41.5259778],
+    capacity: [{ seats: 1966, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'paramount-theatre': {
+    id: 'paramount-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Paramount Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-88.31444, 41.757667],
+    capacity: [{ seats: 1885, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'copernicus-center': {
+    id: 'copernicus-center',
+    metroId: 'chicago',
+    names: [{ name: 'Copernicus Center' }],
+    aliases: ['Ticketmaster: “Copernicus Center”'],
+    // The research's map point; not an entrance.
+    location: [-87.758631, 41.968096],
+    capacity: [{ seats: 1852, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'cibc-theatre': {
+    id: 'cibc-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'CIBC Theatre' }],
+    // The research's map point; not an entrance.
+    location: [-87.6285104, 41.8808054],
+    capacity: [{ seats: 1800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'ramova-theatre': {
+    id: 'ramova-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Ramova Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.646598, 41.830329],
+    capacity: [{ seats: 1800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'rockefeller-memorial-chapel': {
+    id: 'rockefeller-memorial-chapel',
+    metroId: 'chicago',
+    names: [{ name: 'Rockefeller Memorial Chapel' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.597049, 41.788458],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'patio-theater': {
+    id: 'patio-theater',
+    metroId: 'chicago',
+    names: [{ name: 'Patio Theater' }],
+    // The research's map point; not an entrance.
+    location: [-87.777127, 41.953201],
+    capacity: [{ seats: 1495, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'concord-music-hall': {
+    id: 'concord-music-hall',
+    metroId: 'chicago',
+    names: [{ name: 'Concord Music Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.689912, 41.91871],
+    capacity: [{ seats: 1490, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'the-vic': {
+    id: 'the-vic',
+    metroId: 'chicago',
+    names: [{ name: 'The Vic' }],
+    // The research's map point; not an entrance.
+    location: [-87.6538, 41.9395],
+    capacity: [{ seats: 1400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'cermak-hall': {
+    id: 'cermak-hall',
+    metroId: 'chicago',
+    names: [{ name: 'Cermak Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.642991, 41.853197],
+    capacity: [{ seats: 1350, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'house-of-blues-chicago': {
+    id: 'house-of-blues-chicago',
+    metroId: 'chicago',
+    names: [{ name: 'House of Blues Chicago' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.629109, 41.888244],
+    capacity: [{ seats: 1300, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'oil-city-stadium': {
+    id: 'oil-city-stadium',
+    metroId: 'chicago',
+    names: [{ name: 'Oil City Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.4881, 41.678632],
+    capacity: [{ seats: 1300, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'open',
+  },
+  'center-for-performing-arts-at-governors-state-university': {
+    id: 'center-for-performing-arts-at-governors-state-university',
+    metroId: 'chicago',
+    names: [{ name: 'Center for Performing Arts at Governors State University' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.7166, 41.449878],
+    capacity: [{ seats: 1171, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'metro': {
+    id: 'metro',
+    metroId: 'chicago',
+    names: [{ name: 'Metro' }],
+    // The research's map point; not an entrance.
+    location: [-87.65889, 41.94972],
+    capacity: [{ seats: 1150, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'neil-carey-arena': {
+    id: 'neil-carey-arena',
+    metroId: 'chicago',
+    names: [{ name: 'Neil Carey Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.082005, 41.605308],
+    capacity: [{ seats: 1100, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'pfeiffer-hall': {
+    id: 'pfeiffer-hall',
+    metroId: 'chicago',
+    names: [{ name: 'Pfeiffer Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.143252, 41.774744],
+    capacity: [{ seats: 1057, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'cahn-auditorium': {
+    id: 'cahn-auditorium',
+    metroId: 'chicago',
+    names: [{ name: 'Cahn Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.67785, 42.051837],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'dellora-a-norris-cultural-arts-center': {
+    id: 'dellora-a-norris-cultural-arts-center',
+    metroId: 'chicago',
+    names: [{ name: 'Dellora A. Norris Cultural Arts Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.283243, 41.928939],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'harold-washington-cultural-center': {
+    id: 'harold-washington-cultural-center',
+    metroId: 'chicago',
+    names: [{ name: 'Harold Washington Cultural Center' }],
+    // The research's map point; not an entrance.
+    location: [-87.616117, 41.809276],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'park-west': {
+    id: 'park-west',
+    metroId: 'chicago',
+    names: [{ name: 'Park West' }],
+    // The research's map point; not an entrance.
+    location: [-87.63741, 41.91861],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'des-plaines-theatre': {
+    id: 'des-plaines-theatre',
+    metroId: 'chicago',
+    names: [{ name: 'Des Plaines Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.88715, 42.041822],
+    capacity: [{ seats: 998, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'pick-staiger-concert-hall': {
+    id: 'pick-staiger-concert-hall',
+    metroId: 'chicago',
+    names: [{ name: 'Pick-Staiger Concert Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-87.672168, 42.052642],
+    capacity: [{ seats: 989, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'the-forge': {
+    id: 'the-forge',
+    metroId: 'chicago',
+    names: [{ name: 'The Forge' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-88.082086, 41.527697],
+    capacity: [{ seats: 950, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-3.md.' }],
+    roof: 'indoor',
+  },
+  'farrington-field': {
+    id: 'farrington-field',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Farrington Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.360315, 32.745619],
+    capacity: [{ seats: 18500, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'eagle-stadium': {
+    id: 'eagle-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Eagle Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.657622, 33.114067],
+    capacity: [{ seats: 18000, setup: 'football', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'homer-b-johnson-stadium': {
+    id: 'homer-b-johnson-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Homer B. Johnson Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.616655, 32.885713],
+    capacity: [{ seats: 15000, setup: 'football', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'john-clark-stadium': {
+    id: 'john-clark-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'John Clark Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.7022, 33.063412],
+    capacity: [{ seats: 14224, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'c-h-collins-athletic-complex': {
+    id: 'c-h-collins-athletic-complex',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'C.H. Collins Athletic Complex' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.119593, 33.263602],
+    capacity: [{ seats: 12000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'childrens-health-stadium-at-prosper-isd': {
+    id: 'childrens-health-stadium-at-prosper-isd',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Children’s Health Stadium at Prosper ISD' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.804215, 33.2607],
+    capacity: [{ seats: 12000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'coach-kenny-deel-stadium': {
+    id: 'coach-kenny-deel-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Coach Kenny Deel Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.541193, 33.286751],
+    capacity: [{ seats: 10000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'tom-kimbrough-stadium': {
+    id: 'tom-kimbrough-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Tom Kimbrough Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.608893, 33.025505],
+    capacity: [{ seats: 9603, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'ron-poe-stadium': {
+    id: 'ron-poe-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Ron Poe Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.633598, 33.207192],
+    capacity: [{ seats: 7000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'fair-park-band-shell': {
+    id: 'fair-park-band-shell',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Fair Park Band Shell' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.760892, 32.776357],
+    capacity: [{ seats: 5909, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'covered',
+  },
+  'claude-cunningham-performance-hall-dr-jim-vaszauskas-center-for-the-performing-arts': {
+    id: 'claude-cunningham-performance-hall-dr-jim-vaszauskas-center-for-the-performing-arts',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Claude Cunningham Performance Hall, Dr. Jim Vaszauskas Center for the Performing Arts' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.15767, 32.594956],
+    capacity: [{ seats: 5500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'gomez-western-wear-arena': {
+    id: 'gomez-western-wear-arena',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Gomez Western Wear Arena' }],
+    aliases: ['Mesquite Arena'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.625728, 32.761739],
+    capacity: [{ seats: 5500, setup: 'rodeo', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'lupton-stadium-at-williams-reilly-field': {
+    id: 'lupton-stadium-at-williams-reilly-field',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Lupton Stadium at Williams-Reilly Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.37217, 32.702855],
+    capacity: [{ seats: 4500, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'the-bomb-factory': {
+    id: 'the-bomb-factory',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'The Bomb Factory' }],
+    aliases: ['TM: Bomb Factory'],
+    // The research's map point; not an entrance.
+    location: [-96.783748, 32.782391],
+    capacity: [{ seats: 4300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'the-depot-at-cleburne-station': {
+    id: 'the-depot-at-cleburne-station',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'The Depot at Cleburne Station' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.41302, 32.374372],
+    capacity: [{ seats: 3750, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'music-hall-at-fair-park': {
+    id: 'music-hall-at-fair-park',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Music Hall at Fair Park' }],
+    // The research's map point; not an entrance.
+    location: [-96.765789, 32.780358],
+    capacity: [{ seats: 3420, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'silo-dallas': {
+    id: 'silo-dallas',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'SILO Dallas' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.829503, 32.797622],
+    capacity: [{ seats: 3200, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'south-side-ballroom': {
+    id: 'south-side-ballroom',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'South Side Ballroom' }],
+    // The research's map point; not an entrance.
+    location: [-96.79815, 32.76901],
+    capacity: [{ seats: 3200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'jack-a-billingsley-field-house': {
+    id: 'jack-a-billingsley-field-house',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Jack A. Billingsley Field House' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.357218, 32.74528],
+    capacity: [{ seats: 3000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'texas-hall': {
+    id: 'texas-hall',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Texas Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.115555, 32.729718],
+    capacity: [{ seats: 2625, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'esports-stadium-arlington': {
+    id: 'esports-stadium-arlington',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Esports Stadium Arlington' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.081549, 32.755139],
+    capacity: [{ seats: 2500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'nytex-sports-centre': {
+    id: 'nytex-sports-centre',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'NYTEX Sports Centre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.195501, 32.859234],
+    capacity: [{ seats: 2400, setup: 'hockey', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'mcfarlin-memorial-auditorium': {
+    id: 'mcfarlin-memorial-auditorium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'McFarlin Memorial Auditorium' }],
+    aliases: ['TM: McFarlin Auditorium'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.786177, 32.844198],
+    capacity: [{ seats: 2386, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'longhorn-ballroom': {
+    id: 'longhorn-ballroom',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Longhorn Ballroom' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.792555, 32.759758],
+    capacity: [{ seats: 2300, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'margot-and-bill-winspear-opera-house': {
+    id: 'margot-and-bill-winspear-opera-house',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Margot and Bill Winspear Opera House' }],
+    // The research's map point; not an entrance.
+    location: [-96.797532, 32.790832],
+    capacity: [{ seats: 2200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'morton-h-meyerson-symphony-center': {
+    id: 'morton-h-meyerson-symphony-center',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Morton H. Meyerson Symphony Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.798626, 32.789951],
+    capacity: [{ seats: 2062, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'bass-performance-hall': {
+    id: 'bass-performance-hall',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Bass Performance Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.329757, 32.754753],
+    capacity: [{ seats: 2042, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'annette-strauss-square': {
+    id: 'annette-strauss-square',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Annette Strauss Square' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.798354, 32.791394],
+    capacity: [{ seats: 1800, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'majestic-theatre': {
+    id: 'majestic-theatre',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Majestic Theatre' }],
+    aliases: ['TM: Majestic Theatre Dallas'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.795001, 32.782773],
+    capacity: [{ seats: 1704, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'house-of-blues-dallas': {
+    id: 'house-of-blues-dallas',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'House of Blues Dallas' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.808182, 32.785085],
+    capacity: [{ seats: 1625, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'clay-gould-ballpark': {
+    id: 'clay-gould-ballpark',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Clay Gould Ballpark' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.130963, 32.722038],
+    capacity: [{ seats: 1600, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'robbie-lynore-robinson-fine-arts-center': {
+    id: 'robbie-lynore-robinson-fine-arts-center',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Robbie & Lynore Robinson Fine Arts Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.714755, 33.024717],
+    capacity: [{ seats: 1502, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'allen-isd-performing-arts-center': {
+    id: 'allen-isd-performing-arts-center',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Allen ISD Performing Arts Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.659455, 33.111109],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'garvey-rosenthal-soccer-stadium': {
+    id: 'garvey-rosenthal-soccer-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Garvey-Rosenthal Soccer Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.368344, 32.702699],
+    capacity: [{ seats: 1500, setup: 'soccer', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'mean-green-soccer-and-track-field-stadium': {
+    id: 'mean-green-soccer-and-track-field-stadium',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Mean Green Soccer and Track & Field Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.159929, 33.197637],
+    capacity: [{ seats: 1500, setup: 'soccer', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'covered',
+  },
+  'sid-richardson-center': {
+    id: 'sid-richardson-center',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Sid Richardson Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.278564, 32.732748],
+    capacity: [{ seats: 1500, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'lil-texas-motor-speedway': {
+    id: 'lil-texas-motor-speedway',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Lil’ Texas Motor Speedway' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-97.275823, 33.035896],
+    capacity: [{ seats: 1448, setup: 'track', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'stereo-live-dallas': {
+    id: 'stereo-live-dallas',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Stereo Live Dallas' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.879364, 32.860107],
+    capacity: [{ seats: 1400, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'granada-theater': {
+    id: 'granada-theater',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'Granada Theater' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.769816, 32.830874],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'the-studio-at-the-bomb-factory': {
+    id: 'the-studio-at-the-bomb-factory',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'The Studio at The Bomb Factory' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.784016, 32.782127],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'the-echo-lounge-music-hall': {
+    id: 'the-echo-lounge-music-hall',
+    metroId: 'dallas-fort-worth',
+    names: [{ name: 'The Echo Lounge & Music Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-96.814436, 32.790646],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'cowart-stadium': {
+    id: 'cowart-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Cowart Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.265638, 29.869286],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'delmar-stadium': {
+    id: 'delmar-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Delmar Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.45623, 29.803658],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'ken-pridgeon-stadium': {
+    id: 'ken-pridgeon-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Ken Pridgeon Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.569988, 29.935647],
+    capacity: [{ seats: 11000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'jack-rhodes-memorial-stadium': {
+    id: 'jack-rhodes-memorial-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Jack Rhodes Memorial Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.805473, 29.796358],
+    capacity: [{ seats: 9768, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'health-physical-education-arena': {
+    id: 'health-physical-education-arena',
+    metroId: 'houston',
+    names: [{ name: 'Health & Physical Education Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.365578, 29.722879],
+    capacity: [{ seats: 8100, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'barnett-stadium': {
+    id: 'barnett-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Barnett Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.306779, 29.692446],
+    capacity: [{ seats: 8000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'butler-stadium': {
+    id: 'butler-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Butler Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.488353, 29.635807],
+    capacity: [{ seats: 8000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'humble-civic-center': {
+    id: 'humble-civic-center',
+    metroId: 'houston',
+    names: [{ name: 'Humble Civic Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.258799, 29.98015],
+    capacity: [{ seats: 7000, setup: 'rodeo', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'covered',
+  },
+  'dyer-stadium': {
+    id: 'dyer-stadium',
+    metroId: 'houston',
+    names: [{ name: 'Dyer Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.45558, 29.805186],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'open',
+  },
+  'leonard-e-merrell-center': {
+    id: 'leonard-e-merrell-center',
+    metroId: 'houston',
+    names: [{ name: 'Leonard E. Merrell Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.832509, 29.780357],
+    capacity: [{ seats: 6000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'miller-outdoor-theatre': {
+    id: 'miller-outdoor-theatre',
+    metroId: 'houston',
+    names: [{ name: 'Miller Outdoor Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.388988, 29.719554],
+    capacity: [{ seats: 4500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'covered',
+  },
+  'george-r-brown-convention-center': {
+    id: 'george-r-brown-convention-center',
+    metroId: 'houston',
+    names: [{ name: 'George R. Brown Convention Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.358114, 29.751793],
+    capacity: [{ seats: 3600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'bayou-music-center': {
+    id: 'bayou-music-center',
+    metroId: 'houston',
+    names: [{ name: 'Bayou Music Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.367189, 29.762431],
+    capacity: [{ seats: 3200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'the-pavilion-arena': {
+    id: 'the-pavilion-arena',
+    metroId: 'houston',
+    names: [{ name: 'The Pavilion Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.293843, 29.848754],
+    capacity: [{ seats: 2875, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  't-j-engram-gym': {
+    id: 't-j-engram-gym',
+    metroId: 'houston',
+    names: [{ name: 'T.J. Engram Gym' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.262626, 29.869954],
+    capacity: [{ seats: 2850, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'barnett-fieldhouse': {
+    id: 'barnett-fieldhouse',
+    metroId: 'houston',
+    names: [{ name: 'Barnett Fieldhouse' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.304976, 29.693623],
+    capacity: [{ seats: 2750, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'arena-theatre': {
+    id: 'arena-theatre',
+    metroId: 'houston',
+    names: [{ name: 'Arena Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.517738, 29.702356],
+    capacity: [{ seats: 2711, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'butler-fieldhouse': {
+    id: 'butler-fieldhouse',
+    metroId: 'houston',
+    names: [{ name: 'Butler Fieldhouse' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.487522, 29.634595],
+    capacity: [{ seats: 2500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'cullen-performance-hall': {
+    id: 'cullen-performance-hall',
+    metroId: 'houston',
+    names: [{ name: 'Cullen Performance Hall' }],
+    // The research's map point; not an entrance.
+    location: [-95.3431, 29.7203],
+    capacity: [{ seats: 1612, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'house-of-blues-houston': {
+    id: 'house-of-blues-houston',
+    metroId: 'houston',
+    names: [{ name: 'House of Blues Houston' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.363957, 29.753798],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  '9pm-music-venue': {
+    id: '9pm-music-venue',
+    metroId: 'houston',
+    names: [{ name: '9PM Music Venue' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.530012, 29.728189],
+    capacity: [{ seats: 1400, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'warehouse-live-midtown': {
+    id: 'warehouse-live-midtown',
+    metroId: 'houston',
+    names: [{ name: 'Warehouse Live Midtown' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.37551, 29.745697],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'stafford-centre': {
+    id: 'stafford-centre',
+    metroId: 'houston',
+    names: [{ name: 'Stafford Centre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-95.556417, 29.623801],
+    capacity: [{ seats: 1155, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-4.md.' }],
+    roof: 'indoor',
+  },
+  'john-a-farrell-stadium': {
+    id: 'john-a-farrell-stadium',
+    metroId: 'philadelphia',
+    names: [{ name: 'John A. Farrell Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.601793, 39.936931],
+    capacity: [{ seats: 7500, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'abessinio-stadium': {
+    id: 'abessinio-stadium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Abessinio Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.552994, 39.761061],
+    capacity: [{ seats: 5000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'leslie-c-quick-jr-stadium': {
+    id: 'leslie-c-quick-jr-stadium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Leslie C. Quick Jr. Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.354685, 39.86793],
+    capacity: [{ seats: 4000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'penn-community-bank-amphitheater': {
+    id: 'penn-community-bank-amphitheater',
+    metroId: 'philadelphia',
+    names: [{ name: 'Penn Community Bank Amphitheater' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-74.942856, 40.107215],
+    capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'covered',
+  },
+  'valley-forge-casino-resort': {
+    id: 'valley-forge-casino-resort',
+    metroId: 'philadelphia',
+    names: [{ name: 'Valley Forge Casino Resort' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.415789, 40.096787],
+    capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'chase-fieldhouse': {
+    id: 'chase-fieldhouse',
+    metroId: 'philadelphia',
+    names: [{ name: 'Chase Fieldhouse' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.554778, 39.726414],
+    capacity: [{ seats: 2500, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'manuel-rivero-hall': {
+    id: 'manuel-rivero-hall',
+    metroId: 'philadelphia',
+    names: [{ name: 'Manuel Rivero Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.930754, 39.808371],
+    capacity: [{ seats: 2500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 79, how: 'routed', town: 'Lincoln University / Oxford area' },
+  },
+  'schwartz-athletic-center': {
+    id: 'schwartz-athletic-center',
+    metroId: 'philadelphia',
+    names: [{ name: 'Schwartz Athletic Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.35198, 39.866279],
+    capacity: [{ seats: 1500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'coach-herb-magee-arena': {
+    id: 'coach-herb-magee-arena',
+    metroId: 'philadelphia',
+    names: [{ name: 'Coach Herb Magee Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.191513, 40.022193],
+    capacity: [{ seats: 1266, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'irvine-auditorium': {
+    id: 'irvine-auditorium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Irvine Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.192994, 39.950914],
+    capacity: [{ seats: 1259, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'emilie-k-asplundh-concert-hall': {
+    id: 'emilie-k-asplundh-concert-hall',
+    metroId: 'philadelphia',
+    names: [{ name: 'Emilie K. Asplundh Concert Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.598189, 39.953396],
+    capacity: [{ seats: 1202, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'the-mirenda-center-for-sport-spirituality-and-character-development': {
+    id: 'the-mirenda-center-for-sport-spirituality-and-character-development',
+    metroId: 'philadelphia',
+    names: [{ name: 'The Mirenda Center for Sport, Spirituality and Character Development' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.440474, 39.875563],
+    capacity: [{ seats: 1200, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'esbjornson-gymnasium': {
+    id: 'esbjornson-gymnasium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Esbjornson Gymnasium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.111616, 39.706238],
+    capacity: [{ seats: 1150, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'copeland-hall': {
+    id: 'copeland-hall',
+    metroId: 'philadelphia',
+    names: [{ name: 'Copeland Hall' }],
+    aliases: ['seller shorthand: The Grand'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.548476, 39.743746],
+    capacity: [{ seats: 1140, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'the-queen': {
+    id: 'the-queen',
+    metroId: 'philadelphia',
+    names: [{ name: 'The Queen' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.550271, 39.741133],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'scottish-rite-auditorium': {
+    id: 'scottish-rite-auditorium',
+    metroId: 'philadelphia',
+    names: [{ name: 'Scottish Rite Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.084615, 39.914485],
+    capacity: [{ seats: 1050, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'noto-philadelphia': {
+    id: 'noto-philadelphia',
+    metroId: 'philadelphia',
+    names: [{ name: 'NOTO Philadelphia' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.159015, 39.958011],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'the-venue': {
+    id: 'the-venue',
+    metroId: 'philadelphia',
+    names: [{ name: 'The Venue' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.415938, 40.096583],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'the-block-at-harrahs-philadelphia': {
+    id: 'the-block-at-harrahs-philadelphia',
+    metroId: 'philadelphia',
+    names: [{ name: 'The Block at Harrah’s Philadelphia' }],
+    aliases: ['TM legacy URL alias: The Event Center at Harrah’s Philadelphia'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-75.348379, 39.851001],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'regency-furniture-stadium': {
+    id: 'regency-furniture-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Regency Furniture Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.904032, 38.577561],
+    capacity: [{ seats: 6200, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'the-show-place-arena': {
+    id: 'the-show-place-arena',
+    metroId: 'washington-dc',
+    names: [{ name: 'The Show Place Arena' }],
+    aliases: ['TM: Show Place Arena'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.749419, 38.810859],
+    capacity: [{ seats: 5700, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'marvin-f-wilson-stadium': {
+    id: 'marvin-f-wilson-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Marvin F. Wilson Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.867293, 38.911296],
+    capacity: [{ seats: 5500, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'nymeo-field-at-harry-grove-stadium': {
+    id: 'nymeo-field-at-harry-grove-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Nymeo Field at Harry Grove Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.414214, 39.401603],
+    capacity: [{ seats: 5400, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 67, how: 'routed', town: 'Frederick' },
+  },
+  'virginia-credit-union-stadium': {
+    id: 'virginia-credit-union-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Virginia Credit Union Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.508985, 38.318273],
+    capacity: [{ seats: 5000, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 69, how: 'routed', town: 'Fredericksburg independent city' },
+  },
+  'bulldog-stadium': {
+    id: 'bulldog-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Bulldog Stadium' }],
+    aliases: ['campus-directory variant: Bulldogs Stadium'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.75978, 39.01812],
+    capacity: [{ seats: 3964, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'cooper-field': {
+    id: 'cooper-field',
+    metroId: 'washington-dc',
+    names: [{ name: 'Cooper Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.075299, 38.908049],
+    capacity: [{ seats: 3750, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'dar-constitution-hall': {
+    id: 'dar-constitution-hall',
+    metroId: 'washington-dc',
+    names: [{ name: 'DAR Constitution Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.040587, 38.893942],
+    capacity: [{ seats: 3702, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'cardinal-stadium': {
+    id: 'cardinal-stadium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Cardinal Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.000851, 38.943371],
+    capacity: [{ seats: 3500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'echostage': {
+    id: 'echostage',
+    metroId: 'washington-dc',
+    names: [{ name: 'Echostage' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.972424, 38.919901],
+    capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'prince-georges-sports-learning-complex': {
+    id: 'prince-georges-sports-learning-complex',
+    metroId: 'washington-dc',
+    names: [{ name: 'Prince George’s Sports & Learning Complex' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.867293, 38.911296],
+    capacity: [{ seats: 3000, setup: 'track', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'bender-arena': {
+    id: 'bender-arena',
+    metroId: 'washington-dc',
+    names: [{ name: 'Bender Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.089892, 38.937722],
+    capacity: [{ seats: 2900, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'a-c-jordan-arena': {
+    id: 'a-c-jordan-arena',
+    metroId: 'washington-dc',
+    names: [{ name: 'A.C. Jordan Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.75978, 39.01812],
+    capacity: [{ seats: 2400, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'washington-national-cathedral': {
+    id: 'washington-national-cathedral',
+    metroId: 'washington-dc',
+    names: [{ name: 'Washington National Cathedral' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.070595, 38.930651],
+    capacity: [{ seats: 2000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'warner-theatre': {
+    id: 'warner-theatre',
+    metroId: 'washington-dc',
+    names: [{ name: 'Warner Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.029353, 38.896511],
+    capacity: [{ seats: 1847, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'the-national-theatre': {
+    id: 'the-national-theatre',
+    metroId: 'washington-dc',
+    names: [{ name: 'The National Theatre' }],
+    aliases: ['seller shorthand: National Theatre'],
+    // The research's map point; not an entrance.
+    location: [-77.0304987, 38.8963566],
+    capacity: [{ seats: 1713, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'capital-one-hall': {
+    id: 'capital-one-hall',
+    metroId: 'washington-dc',
+    names: [{ name: 'Capital One Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.21127, 38.925455],
+    capacity: [{ seats: 1600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'hotchkiss-field': {
+    id: 'hotchkiss-field',
+    metroId: 'washington-dc',
+    names: [{ name: 'Hotchkiss Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-76.991722, 38.906847],
+    capacity: [{ seats: 1500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'lisner-auditorium': {
+    id: 'lisner-auditorium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Lisner Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.047093, 38.899295],
+    capacity: [{ seats: 1400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'dodd-auditorium': {
+    id: 'dodd-auditorium',
+    metroId: 'washington-dc',
+    names: [{ name: 'Dodd Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.474273, 38.300679],
+    capacity: [{ seats: 1283, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'Fredericksburg independent city' },
+  },
+  'national-presbyterian-church': {
+    id: 'national-presbyterian-church',
+    metroId: 'washington-dc',
+    names: [{ name: 'National Presbyterian Church' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.080943, 38.941869],
+    capacity: [{ seats: 1244, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  '9-30-club': {
+    id: '9-30-club',
+    metroId: 'washington-dc',
+    names: [{ name: '9:30 Club' }],
+    aliases: ['TM: 9:30 CLUB'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.023647, 38.917996],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'howard-theatre': {
+    id: 'howard-theatre',
+    metroId: 'washington-dc',
+    names: [{ name: 'Howard Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.021094, 38.915314],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'indoor',
+  },
+  'carlini-field': {
+    id: 'carlini-field',
+    metroId: 'washington-dc',
+    names: [{ name: 'Carlini Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-77.001649, 38.946231],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Estimated, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-5.md.' }],
+    roof: 'open',
+  },
+  'james-r-hallford-stadium': {
+    id: 'james-r-hallford-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'James R. Hallford Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.232843, 33.793207],
+    capacity: [{ seats: 15600, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'university-stadium-carrollton': {
+    id: 'university-stadium-carrollton',
+    metroId: 'atlanta',
+    names: [{ name: 'University Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-85.120634, 33.580013],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 66, how: 'routed', town: 'Carrollton' },
+  },
+  'lakewood-stadium': {
+    id: 'lakewood-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Lakewood Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.387584, 33.70294],
+    capacity: [{ seats: 10000, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'eddie-s-henderson-stadium': {
+    id: 'eddie-s-henderson-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Eddie S. Henderson Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.370585, 33.780743],
+    capacity: [{ seats: 8000, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'the-coliseum': {
+    id: 'the-coliseum',
+    metroId: 'atlanta',
+    names: [{ name: 'The Coliseum' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-85.103896, 33.575905],
+    capacity: [{ seats: 6500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 65, how: 'routed', town: 'Carrollton' },
+  },
+  'adams-stadium': {
+    id: 'adams-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Adams Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.327857, 33.825641],
+    capacity: [{ seats: 6500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'napoleon-b-cobb-stadium': {
+    id: 'napoleon-b-cobb-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Napoleon B. Cobb Stadium' }],
+    aliases: ['Avondale Stadium'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.266153, 33.759056],
+    capacity: [{ seats: 6500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'north-dekalb-stadium': {
+    id: 'north-dekalb-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'North DeKalb Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.308722, 33.897013],
+    capacity: [{ seats: 6500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'atlanta-silverbacks-park': {
+    id: 'atlanta-silverbacks-park',
+    metroId: 'atlanta',
+    names: [{ name: 'Atlanta Silverbacks Park' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.255073, 33.89128],
+    capacity: [{ seats: 5000, setup: 'soccer', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'atlanta-coliseum': {
+    id: 'atlanta-coliseum',
+    metroId: 'atlanta',
+    names: [{ name: 'Atlanta Coliseum' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.129563, 33.958185],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'fox-theatre': {
+    id: 'fox-theatre',
+    metroId: 'atlanta',
+    names: [{ name: 'Fox Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.385562, 33.772643],
+    capacity: [{ seats: 4665, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'coca-cola-roxy': {
+    id: 'coca-cola-roxy',
+    metroId: 'atlanta',
+    names: [{ name: 'Coca-Cola Roxy' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.469826, 33.890412],
+    capacity: [{ seats: 3600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'vystar-amphitheater-at-the-bridge': {
+    id: 'vystar-amphitheater-at-the-bridge',
+    metroId: 'atlanta',
+    names: [{ name: 'VyStar Amphitheater at The Bridge' }],
+    aliases: ['Stockbridge Amphitheater'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.231558, 33.544095],
+    capacity: [{ seats: 3200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'mac-nease-baseball-park-at-russ-chandler-stadium': {
+    id: 'mac-nease-baseball-park-at-russ-chandler-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Mac Nease Baseball Park at Russ Chandler Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.394635, 33.777656],
+    capacity: [{ seats: 3194, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'mable-house-barnes-amphitheatre': {
+    id: 'mable-house-barnes-amphitheatre',
+    metroId: 'atlanta',
+    names: [{ name: 'Mable House Barnes Amphitheatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.57281, 33.827317],
+    capacity: [{ seats: 2500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'covered',
+  },
+  'frederick-brown-jr-amphitheater': {
+    id: 'frederick-brown-jr-amphitheater',
+    metroId: 'atlanta',
+    names: [{ name: 'Frederick Brown Jr. Amphitheater' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.568182, 33.382571],
+    capacity: [{ seats: 2500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'the-eastern': {
+    id: 'the-eastern',
+    metroId: 'atlanta',
+    names: [{ name: 'The Eastern' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.360534, 33.745379],
+    capacity: [{ seats: 2200, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'atlanta-symphony-hall': {
+    id: 'atlanta-symphony-hall',
+    metroId: 'atlanta',
+    names: [{ name: 'Atlanta Symphony Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.385432, 33.78887],
+    capacity: [{ seats: 1814, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'buckhead-theatre': {
+    id: 'buckhead-theatre',
+    metroId: 'atlanta',
+    names: [{ name: 'Buckhead Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.379921, 33.840335],
+    capacity: [{ seats: 1800, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'the-ville-amphitheater': {
+    id: 'the-ville-amphitheater',
+    metroId: 'atlanta',
+    names: [{ name: 'The Ville Amphitheater' }],
+    aliases: ['Brightmoor Healthcare Amphitheater'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.460717, 33.451391],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'shirley-clements-mewborn-field': {
+    id: 'shirley-clements-mewborn-field',
+    metroId: 'atlanta',
+    names: [{ name: 'Shirley Clements Mewborn Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.393212, 33.779266],
+    capacity: [{ seats: 1500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'okeefe-gymnasium': {
+    id: 'okeefe-gymnasium',
+    metroId: 'atlanta',
+    names: [{ name: 'O’Keefe Gymnasium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.391619, 33.77941],
+    capacity: [{ seats: 1200, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'variety-playhouse': {
+    id: 'variety-playhouse',
+    metroId: 'atlanta',
+    names: [{ name: 'Variety Playhouse' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.350943, 33.763609],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'center-stage-theater': {
+    id: 'center-stage-theater',
+    metroId: 'atlanta',
+    names: [{ name: 'Center Stage Theater' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.388235, 33.792208],
+    capacity: [{ seats: 1050, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'james-and-sis-brown-athletic-center': {
+    id: 'james-and-sis-brown-athletic-center',
+    metroId: 'atlanta',
+    names: [{ name: 'James and Sis Brown Athletic Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.548694, 34.318833],
+    capacity: [{ seats: 1000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'ken-white-athletic-field-at-university-stadium': {
+    id: 'ken-white-athletic-field-at-university-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Ken White Athletic Field at University Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-84.545464, 34.321325],
+    capacity: [{ seats: 1000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'broward-county-stadium': {
+    id: 'broward-county-stadium',
+    metroId: 'miami',
+    names: [{ name: 'Broward County Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.198688, 26.140015],
+    capacity: [{ seats: 15000, setup: 'cricket', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'covered',
+  },
+  'tropical-park-stadium': {
+    id: 'tropical-park-stadium',
+    metroId: 'miami',
+    names: [{ name: 'Tropical Park Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.32307, 25.730085],
+    capacity: [{ seats: 7000, note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'ansin-sports-complex': {
+    id: 'ansin-sports-complex',
+    metroId: 'miami',
+    names: [{ name: 'Ansin Sports Complex' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.290565, 25.98837],
+    capacity: [{ seats: 5000, setup: 'track', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'alex-rodriguez-park-at-mark-light-field': {
+    id: 'alex-rodriguez-park-at-mark-light-field',
+    metroId: 'miami',
+    names: [{ name: 'Alex Rodriguez Park at Mark Light Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.282279, 25.711885],
+    capacity: [{ seats: 5000, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'war-memorial-auditorium-holiday-park': {
+    id: 'war-memorial-auditorium-holiday-park',
+    metroId: 'miami',
+    names: [{ name: 'War Memorial Auditorium' }],
+    aliases: ['FTL War Memorial Auditorium'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.134078, 26.133542],
+    capacity: [{ seats: 3400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'coral-springs-center-for-the-arts': {
+    id: 'coral-springs-center-for-the-arts',
+    metroId: 'miami',
+    names: [{ name: 'Coral Springs Center for the Arts' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.26523, 26.266355],
+    capacity: [{ seats: 1471, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'revolution-live': {
+    id: 'revolution-live',
+    metroId: 'miami',
+    names: [{ name: 'Revolution Live' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.146055, 26.121305],
+    capacity: [{ seats: 1300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'lauderhill-performing-arts-center': {
+    id: 'lauderhill-performing-arts-center',
+    metroId: 'miami',
+    names: [{ name: 'Lauderhill Performing Arts Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.200287, 26.138844],
+    capacity: [{ seats: 1106, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'liv': {
+    id: 'liv',
+    metroId: 'miami',
+    names: [{ name: 'LIV' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.12238, 25.817723],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'bailey-hall': {
+    id: 'bailey-hall',
+    metroId: 'miami',
+    names: [{ name: 'Bailey Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.236425, 26.078431],
+    capacity: [{ seats: 1069, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'zeyzey-miami': {
+    id: 'zeyzey-miami',
+    metroId: 'miami',
+    names: [{ name: 'ZeyZey Miami' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.189092, 25.832808],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'main-stage': {
+    id: 'main-stage',
+    metroId: 'miami',
+    names: [{ name: 'Main Stage' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-80.369281, 25.570694],
+    capacity: [{ seats: 961, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'mesa-amphitheatre': {
+    id: 'mesa-amphitheatre',
+    metroId: 'phoenix',
+    names: [{ name: 'Mesa Amphitheatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-111.830063, 33.42096],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'asu-gammage': {
+    id: 'asu-gammage',
+    metroId: 'phoenix',
+    names: [{ name: 'ASU Gammage' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-111.938062, 33.416259],
+    capacity: [{ seats: 3017, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'east-bowl': {
+    id: 'east-bowl',
+    metroId: 'phoenix',
+    names: [{ name: 'East Bowl' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-111.920417, 33.492616],
+    capacity: [{ seats: 2700, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'celebrity-theatre': {
+    id: 'celebrity-theatre',
+    metroId: 'phoenix',
+    names: [{ name: 'Celebrity Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.014747, 33.454419],
+    capacity: [{ seats: 2606, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'symphony-hall': {
+    id: 'symphony-hall',
+    metroId: 'phoenix',
+    names: [{ name: 'Symphony Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.070589, 33.448888],
+    capacity: [{ seats: 2312, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'the-van-buren': {
+    id: 'the-van-buren',
+    metroId: 'phoenix',
+    names: [{ name: 'The Van Buren' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.079439, 33.451086],
+    capacity: [{ seats: 1900, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'highlands-church': {
+    id: 'highlands-church',
+    metroId: 'phoenix',
+    names: [{ name: 'Highlands Church' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-111.886013, 33.700562],
+    capacity: [{ seats: 1600, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'marquee-theatre': {
+    id: 'marquee-theatre',
+    metroId: 'phoenix',
+    names: [{ name: 'Marquee Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-111.943989, 33.436966],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'orpheum-theatre': {
+    id: 'orpheum-theatre',
+    metroId: 'phoenix',
+    names: [{ name: 'Orpheum Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.07687, 33.449016],
+    capacity: [{ seats: 1410, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'the-vista': {
+    id: 'the-vista',
+    metroId: 'phoenix',
+    names: [{ name: 'The Vista' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.384802, 33.626422],
+    capacity: [{ seats: 1300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'alberta-b-farrington-softball-stadium': {
+    id: 'alberta-b-farrington-softball-stadium',
+    metroId: 'phoenix',
+    names: [{ name: 'Alberta B. Farrington Softball Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-111.9234, 33.4254],
+    capacity: [{ seats: 1200, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'spirit-field': {
+    id: 'spirit-field',
+    metroId: 'phoenix',
+    names: [{ name: 'Spirit Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.370387, 33.628253],
+    capacity: [{ seats: 1200, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'open',
+  },
+  'faith-arena': {
+    id: 'faith-arena',
+    metroId: 'phoenix',
+    names: [{ name: 'Faith Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-112.371829, 33.628425],
+    capacity: [{ seats: 1000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'sigmund-stern-grove': {
+    id: 'sigmund-stern-grove',
+    metroId: 'bay-area',
+    names: [{ name: 'Sigmund Stern Grove' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.478604, 37.736086],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'cox-stadium': {
+    id: 'cox-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Cox Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.478308, 37.724702],
+    capacity: [{ seats: 5500, setup: 'soccer', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'pioneer-stadium': {
+    id: 'pioneer-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Pioneer Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.06077, 37.657234],
+    capacity: [{ seats: 5000, setup: 'soccer', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'raimondi-park': {
+    id: 'raimondi-park',
+    metroId: 'bay-area',
+    names: [{ name: 'Raimondi Park' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.293791, 37.816069],
+    capacity: [{ seats: 4000, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'kezar-pavilion': {
+    id: 'kezar-pavilion',
+    metroId: 'bay-area',
+    names: [{ name: 'Kezar Pavilion' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.453886, 37.767511],
+    capacity: [{ seats: 4000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'excite-ballpark': {
+    id: 'excite-ballpark',
+    metroId: 'bay-area',
+    names: [{ name: 'Excite Ballpark' }],
+    aliases: ['San Jose Municipal Stadium'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-121.862413, 37.320608],
+    capacity: [{ seats: 3811, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'the-masonic': {
+    id: 'the-masonic',
+    metroId: 'bay-area',
+    names: [{ name: 'The Masonic' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.41299, 37.791174],
+    capacity: [{ seats: 3481, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'san-jose-civic': {
+    id: 'san-jose-civic',
+    metroId: 'bay-area',
+    names: [{ name: 'San Jose Civic' }],
+    aliases: ['City National Civic'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-121.890232, 37.333559],
+    capacity: [{ seats: 3326, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'paramount-theatre-downtown-oakland': {
+    id: 'paramount-theatre-downtown-oakland',
+    metroId: 'bay-area',
+    names: [{ name: 'Paramount Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.268667, 37.809868],
+    capacity: [{ seats: 3040, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'war-memorial-opera-house': {
+    id: 'war-memorial-opera-house',
+    metroId: 'bay-area',
+    names: [{ name: 'War Memorial Opera House' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.420928, 37.778537],
+    capacity: [{ seats: 3006, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'richmond-memorial-auditorium': {
+    id: 'richmond-memorial-auditorium',
+    metroId: 'bay-area',
+    names: [{ name: 'Richmond Memorial Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.344307, 37.936968],
+    capacity: [{ seats: 3000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'fox-theater': {
+    id: 'fox-theater',
+    metroId: 'bay-area',
+    names: [{ name: 'Fox Theater' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.270515, 37.808144],
+    capacity: [{ seats: 2800, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'louise-m-davies-symphony-hall': {
+    id: 'louise-m-davies-symphony-hall',
+    metroId: 'bay-area',
+    names: [{ name: 'Louise M. Davies Symphony Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.420458, 37.777647],
+    capacity: [{ seats: 2739, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'center-for-the-performing-arts': {
+    id: 'center-for-the-performing-arts',
+    metroId: 'bay-area',
+    names: [{ name: 'Center for the Performing Arts' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-121.892519, 37.32966],
+    capacity: [{ seats: 2608, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'evans-diamond-at-stu-gordon-stadium': {
+    id: 'evans-diamond-at-stu-gordon-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Evans Diamond at Stu Gordon Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.263413, 37.869484],
+    capacity: [{ seats: 2500, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'the-warfield': {
+    id: 'the-warfield',
+    metroId: 'bay-area',
+    names: [{ name: 'The Warfield' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.410342, 37.782622],
+    capacity: [{ seats: 2454, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'golden-gate-theatre': {
+    id: 'golden-gate-theatre',
+    metroId: 'bay-area',
+    names: [{ name: 'Golden Gate Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.4111, 37.782531],
+    capacity: [{ seats: 2297, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'orpheum-theatre-civic-center-mid-market': {
+    id: 'orpheum-theatre-civic-center-mid-market',
+    metroId: 'bay-area',
+    names: [{ name: 'Orpheum Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.414735, 37.779162],
+    capacity: [{ seats: 2197, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'sydney-goldstein-theater': {
+    id: 'sydney-goldstein-theater',
+    metroId: 'bay-area',
+    names: [{ name: 'Sydney Goldstein Theater' }],
+    aliases: ['Nourse Theater'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.420963, 37.776892],
+    capacity: [{ seats: 1687, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'curran-theatre': {
+    id: 'curran-theatre',
+    metroId: 'bay-area',
+    names: [{ name: 'Curran Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.410604, 37.786831],
+    capacity: [{ seats: 1677, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'san-mateo-performing-arts-center': {
+    id: 'san-mateo-performing-arts-center',
+    metroId: 'bay-area',
+    names: [{ name: 'San Mateo Performing Arts Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.330668, 37.577669],
+    capacity: [{ seats: 1540, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'stephen-schott-stadium': {
+    id: 'stephen-schott-stadium',
+    metroId: 'bay-area',
+    names: [{ name: 'Stephen Schott Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-121.931366, 37.348529],
+    capacity: [{ seats: 1500, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'burnham-pavilion': {
+    id: 'burnham-pavilion',
+    metroId: 'bay-area',
+    names: [{ name: 'Burnham Pavilion' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.164342, 37.42852],
+    capacity: [{ seats: 1421, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'the-regency-ballroom': {
+    id: 'the-regency-ballroom',
+    metroId: 'bay-area',
+    names: [{ name: 'The Regency Ballroom' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.421576, 37.787818],
+    capacity: [{ seats: 1400, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'calvin-simmons-theater': {
+    id: 'calvin-simmons-theater',
+    metroId: 'bay-area',
+    names: [{ name: 'Calvin Simmons Theater' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.262122, 37.797781],
+    capacity: [{ seats: 1350, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'the-fillmore': {
+    id: 'the-fillmore',
+    metroId: 'bay-area',
+    names: [{ name: 'The Fillmore' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.433171, 37.784084],
+    capacity: [{ seats: 1315, setup: 'concert', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'california-theatre': {
+    id: 'california-theatre',
+    metroId: 'bay-area',
+    names: [{ name: 'California Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-121.887219, 37.330598],
+    capacity: [{ seats: 1122, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'fox-theatre-downtown-redwood-city': {
+    id: 'fox-theatre-downtown-redwood-city',
+    metroId: 'bay-area',
+    names: [{ name: 'Fox Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.229624, 37.486351],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'toni-rembe-theater': {
+    id: 'toni-rembe-theater',
+    metroId: 'bay-area',
+    names: [{ name: 'Toni Rembe Theater' }],
+    aliases: ['Geary Theater'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.410267, 37.786885],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'louis-guisto-field': {
+    id: 'louis-guisto-field',
+    metroId: 'bay-area',
+    names: [{ name: 'Louis Guisto Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.111883, 37.842061],
+    capacity: [{ seats: 1000, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'palace-of-fine-arts-theatre': {
+    id: 'palace-of-fine-arts-theatre',
+    metroId: 'bay-area',
+    names: [{ name: 'Palace of Fine Arts Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.449226, 37.802334],
+    capacity: [{ seats: 960, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'august-hall': {
+    id: 'august-hall',
+    metroId: 'bay-area',
+    names: [{ name: 'August Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-122.409787, 37.787588],
+    capacity: [{ seats: 951, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'hynes-convention-center': {
+    id: 'hynes-convention-center',
+    metroId: 'boston',
+    names: [{ name: 'Hynes Convention Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.087171, 42.347961],
+    capacity: [{ seats: 6000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'edward-a-lelacheur-park': {
+    id: 'edward-a-lelacheur-park',
+    metroId: 'boston',
+    names: [{ name: 'Edward A. LeLacheur Park' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.317856, 42.653445],
+    capacity: [{ seats: 4767, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'campanelli-stadium': {
+    id: 'campanelli-stadium',
+    metroId: 'boston',
+    names: [{ name: 'Campanelli Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.042452, 42.069273],
+    capacity: [{ seats: 4750, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'aleppo-shriners-auditorium': {
+    id: 'aleppo-shriners-auditorium',
+    metroId: 'boston',
+    names: [{ name: 'Aleppo Shriners Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.135526, 42.567915],
+    capacity: [{ seats: 4150, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'dana-athletic-center': {
+    id: 'dana-athletic-center',
+    metroId: 'boston',
+    names: [{ name: 'Dana Athletic Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.224856, 42.383208],
+    capacity: [{ seats: 4000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'fraser-field': {
+    id: 'fraser-field',
+    metroId: 'boston',
+    names: [{ name: 'Fraser Field' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-70.954073, 42.473934],
+    capacity: [{ seats: 3804, setup: 'baseball', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'bentley-arena': {
+    id: 'bentley-arena',
+    metroId: 'boston',
+    names: [{ name: 'Bentley Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.220546, 42.384787],
+    capacity: [{ seats: 3626, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'duane-stadium': {
+    id: 'duane-stadium',
+    metroId: 'boston',
+    names: [{ name: 'Duane Stadium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.120236, 42.666343],
+    capacity: [{ seats: 3500, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'reggie-lewis-center': {
+    id: 'reggie-lewis-center',
+    metroId: 'boston',
+    names: [{ name: 'Reggie Lewis Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.092835, 42.332019],
+    capacity: [{ seats: 3500, setup: 'track', note: 'Reported, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'bright-landry-hockey-center': {
+    id: 'bright-landry-hockey-center',
+    metroId: 'boston',
+    names: [{ name: 'Bright-Landry Hockey Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.127241, 42.368366],
+    capacity: [{ seats: 3000, note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'lawler-arena': {
+    id: 'lawler-arena',
+    metroId: 'boston',
+    names: [{ name: 'Lawler Arena' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.120097, 42.667909],
+    capacity: [{ seats: 3000, setup: 'basketball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'lowell-memorial-auditorium': {
+    id: 'lowell-memorial-auditorium',
+    metroId: 'boston',
+    names: [{ name: 'Lowell Memorial Auditorium' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.304196, 42.645157],
+    capacity: [{ seats: 2800, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'symphony-hall-symphony-fenway': {
+    id: 'symphony-hall-symphony-fenway',
+    metroId: 'boston',
+    names: [{ name: 'Symphony Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.085682, 42.342843],
+    capacity: [{ seats: 2625, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'eddie-pellagrini-diamond': {
+    id: 'eddie-pellagrini-diamond',
+    metroId: 'boston',
+    names: [{ name: 'Eddie Pellagrini Diamond' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.159799, 42.343957],
+    capacity: [{ seats: 2500, setup: 'baseball', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'open',
+  },
+  'south-shore-music-circus': {
+    id: 'south-shore-music-circus',
+    metroId: 'boston',
+    names: [{ name: 'South Shore Music Circus' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-70.81248, 42.240332],
+    capacity: [{ seats: 2300, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'covered',
+  },
+  'lynn-memorial-auditorium': {
+    id: 'lynn-memorial-auditorium',
+    metroId: 'boston',
+    names: [{ name: 'Lynn Memorial Auditorium' }],
+    aliases: ['Lynn Auditorium'],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-70.951246, 42.464811],
+    capacity: [{ seats: 2072, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'chevalier-theatre': {
+    id: 'chevalier-theatre',
+    metroId: 'boston',
+    names: [{ name: 'Chevalier Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.109088, 42.420316],
+    capacity: [{ seats: 1900, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'emerson-colonial-theatre': {
+    id: 'emerson-colonial-theatre',
+    metroId: 'boston',
+    names: [{ name: 'Emerson Colonial Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.065288, 42.35231],
+    capacity: [{ seats: 1634, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'north-shore-music-theatre': {
+    id: 'north-shore-music-theatre',
+    metroId: 'boston',
+    names: [{ name: 'North Shore Music Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-70.869606, 42.575858],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'berklee-performance-center': {
+    id: 'berklee-performance-center',
+    metroId: 'boston',
+    names: [{ name: 'Berklee Performance Center' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.087094, 42.347045],
+    capacity: [{ seats: 1215, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'john-hancock-hall': {
+    id: 'john-hancock-hall',
+    metroId: 'boston',
+    names: [{ name: 'John Hancock Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.073072, 42.349841],
+    capacity: [{ seats: 1100, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'jordan-hall': {
+    id: 'jordan-hall',
+    metroId: 'boston',
+    names: [{ name: 'Jordan Hall' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.086205, 42.341087],
+    capacity: [{ seats: 1051, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'sanders-theatre': {
+    id: 'sanders-theatre',
+    metroId: 'boston',
+    names: [{ name: 'Sanders Theatre' }],
+    // OpenStreetMap point by name or address, approximate; not an entrance.
+    location: [-71.114686, 42.375887],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
+    roof: 'indoor',
+  },
 };
 /**
  * A merged duplicate's old id → the room kept, so catalog rows the nightly wrote under the old id before the merge

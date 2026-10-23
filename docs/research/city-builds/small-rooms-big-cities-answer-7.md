@@ -1,6 +1,6 @@
 # Small rooms in big cities — installment 7
 
-Status: saved Oct 23, 2026, not folded in; the series ends here (Boston and the Bay Area were the brief's last two cities). Its additions join answers 3–6's in the one import pass. Note: it used the old county boundaries; under the drive-time rule (Oct 23) Worcester, Marin, Napa, southern Sonoma, Solano and Santa Cruz rooms within an hour are inside.
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026, in the one import pass (rooms with a trusted map point; the rest are listed in `docs/checks/small-rooms-not-imported-2026-10-23.md`).
 
 Boston → San Francisco Bay Area. Research cut-off: October 23, 2026. The brief’s last two cities only; earlier installments are unchanged. Deduplication uses your refreshed October 22 rooms-on-file lists.
 

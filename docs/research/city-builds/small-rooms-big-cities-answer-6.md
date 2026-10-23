@@ -1,6 +1,6 @@
 # Small rooms in big cities — installment 6
 
-Status: saved Oct 22, 2026, not folded in; continuation 7 (Boston, then the San Francisco Bay Area) is in `small-rooms-big-cities-prompt.md`.
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026, in the one import pass (rooms with a trusted map point; the rest are listed in `docs/checks/small-rooms-not-imported-2026-10-23.md`).
 
 Atlanta → Miami → Phoenix. Research cut-off: October 22, 2026. New file; earlier installments are unchanged. Deduplication uses the refreshed rooms-on-file lists supplied for this installment.
 
