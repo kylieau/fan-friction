@@ -74,10 +74,19 @@ export function sameOccurrence(a: CrowdEvent, b: CrowdEvent): boolean {
   return norm(a.title) === norm(b.title);
 }
 
+/**
+ * A seller's facts about an act, which mean nothing on a game: its run counts a performer's nights in the room, so a
+ * home series would read as a three-night stand (Oct 22, 2026, the first live merge, LAFC vs. Galaxy).
+ */
+const ACT_ONLY: ReadonlySet<string> = new Set(['performer', 'act', 'occasionFacts', 'performerIds']);
+
 /** The winner keeps its facts; a fact only the other record has fills in. The originals stay on `mergedFrom`. */
 function merge(winner: CrowdEvent, loser: CrowdEvent): CrowdEvent {
   const filled: Record<string, unknown> = { ...winner };
-  for (const [key, value] of Object.entries(loser)) if (filled[key] === undefined && value !== undefined) filled[key] = value;
+  for (const [key, value] of Object.entries(loser)) {
+    if (winner.kind === 'game' && ACT_ONLY.has(key)) continue;
+    if (filled[key] === undefined && value !== undefined) filled[key] = value;
+  }
   const from = [...(winner.mergedFrom ?? []), { sourceId: loser.sourceId ?? 'unknown', id: loser.id, title: loser.title }, ...(loser.mergedFrom ?? [])];
   return { ...(filled as unknown as CrowdEvent), mergedFrom: from };
 }

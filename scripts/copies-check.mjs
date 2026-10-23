@@ -31,7 +31,9 @@ try {
   const espn = { ...base, id: 'espn-1', title: 'LAFC vs. Galaxy', teams: { home: 'lafc', away: 'galaxy' }, audience: { domain: 'sports', sport: 'soccer' }, sourceId: 'espn' };
   const tm = { ...base, id: 'tm-1', title: 'Los Angeles Football Club vs. LA Galaxy', performer: 'Los Angeles Football Club', audience: { domain: 'sports', sport: 'soccer' }, sourceId: 'ticketmaster' };
   check(dropGamesCoveredByFeeds([espn, tm]).length === 1, 'LAFC: the one-game rule keeps ESPN\'s copy');
-  check(mergeDuplicates([espn, tm]).length === 1, 'LAFC: the merge reads "Football Club" as FC');
+  const merged = mergeDuplicates([espn, { ...tm, act: true, occasionFacts: { run: 3 } }]);
+  check(merged.length === 1 && merged[0].sourceId === 'espn', 'LAFC: the merge reads "Football Club" as FC and keeps ESPN\'s copy');
+  check(merged[0].occasionFacts === undefined && merged[0].performer === undefined, "LAFC: the game takes no seller's run or performer");
   const room = { ...base, place: { type: 'venue', venueId: 'tudor-fieldhouse' }, start: '13:00' };
   const sa = { ...room, id: 'sa-1', title: "Rice Women's Volleyball vs. Tulsa", audience: { domain: 'sports', sport: 'volleyball' }, sourceId: 'sidearm' };
   const tmGame = { ...room, id: 'tm-2', title: 'Rice Owls Womens Volleyball vs. Tulsa Golden Hurricane Womens Volleyball', audience: { domain: 'sports', sport: 'volleyball' }, sourceId: 'ticketmaster' };
