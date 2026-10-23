@@ -42,6 +42,14 @@ try {
   check(dropGamesCoveredByFeeds([sa, tmGame]).length === 1, "Rice volleyball: the school feed's copy wins");
   const bball = { ...tmGame, id: 'tm-3', audience: { domain: 'sports', sport: 'basketball' }, title: 'Rice Owls Mens Basketball vs. Tulsa Golden Hurricane Mens Basketball' };
   check(dropGamesCoveredByFeeds([sa, bball]).length === 2, 'another sport the same afternoon stays');
+  // The school's room wins (Kylie, Oct 23, 2026): Georgetown's Nov 10 game, ESPN at Capital One Arena, the school at McDonough.
+  const gtBase = { metroId: 'washington-dc', crowd: [], date: '2026-11-10', start: '18:30', kind: 'game', audience: { domain: 'sports', sport: 'basketball' } };
+  const gtEspn = { ...gtBase, id: 'espn-gt', title: 'Georgetown vs. Delaware St', place: { type: 'venue', venueId: 'capital-one-arena' }, teams: { home: 'georgetown-mbb', away: 'delaware-st' }, sourceId: 'espn' };
+  const gtSchool = { ...gtBase, id: 'sa-gt', title: "Georgetown Men's Basketball vs. Delaware State University", place: { type: 'venue', venueId: 'mcdonough-arena' }, teams: { home: 'georgetown-mbb', away: 'Delaware State University' }, sourceId: 'sidearm' };
+  const gt = dropGamesCoveredByFeeds([gtEspn, gtSchool]);
+  check(gt.length === 1 && gt[0].sourceId === 'espn' && gt[0].place.venueId === 'mcdonough-arena', "Georgetown: one game, ESPN's copy, in the school's room");
+  const other = { ...gtSchool, id: 'sa-other', teams: { home: 'georgetown-wbb', away: 'Delaware State University' } };
+  check(dropGamesCoveredByFeeds([gtEspn, other]).find((e) => e.id === 'espn-gt').place.venueId === 'capital-one-arena', "another team's game in another room moves nothing");
   check(possibleCopies([espn, tm]).length === 1 && possibleCopies([espn]).length === 0, 'the detector sees a pair and nothing in a single row');
 
   // 3. What still looks doubled in the latest archive per city.

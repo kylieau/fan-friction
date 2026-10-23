@@ -71,12 +71,37 @@ function sameOpponent(feed: GameLike, seller: GameLike): boolean {
  * date" to "same building, date, sport and start", so a volleyball match the feeds lack stays on a day the
  * basketball team plays at home).
  */
-export function dropGamesCoveredByFeeds<T extends GameLike>(events: T[]): T[] {
+export function dropGamesCoveredByFeeds<T extends GameLike>(input: T[]): T[] {
+  const events = schoolRoomsWin(input);
   const games = events.filter((e) => e.kind === 'game' && e.place.type === 'venue');
   return events.filter((e) => {
     if (e.kind !== 'game' || e.place.type !== 'venue') return true;
     const rank = GAME_RANK[e.sourceId] ?? 4;
     return !games.some((g) => (GAME_RANK[g.sourceId] ?? 4) < rank && sameGame(g, e));
+  });
+}
+
+/**
+ * Where a school's game is played, the school's own feed wins (Kylie, Oct 23, 2026: "yes", to "should a school's own
+ * site win on where its game is played?"). ESPN files some home games under the school's main arena when the school
+ * plays them on campus (Georgetown's Nov 10 and Nov 21 games at McDonough Arena, listed at Capital One Arena on nights
+ * Sombr and Doja Cat play there; about 15 games across the cities, Oct 23). When a league feed's game and the school
+ * feed's game share the home team, the date and a start within two hours but sit in two rooms, the league's copy
+ * moves to the school's room; the one-game rule then keeps the league's copy there, as before (her Oct 22 "defer to
+ * ESPN" still holds for everything else).
+ */
+function schoolRoomsWin<T extends GameLike>(events: T[]): T[] {
+  const school = events.filter((e) => e.sourceId === 'sidearm' && e.kind === 'game' && e.place.type === 'venue' && e.teams?.home);
+  if (school.length === 0) return events;
+  return events.map((e) => {
+    if (e.kind !== 'game' || e.place.type !== 'venue' || !e.teams?.home || (GAME_RANK[e.sourceId] ?? 4) >= GAME_RANK.sidearm) return e;
+    const own = school.find((s) => {
+      if (s.teams?.home !== e.teams?.home || s.date !== e.date || s.place.venueId === e.place.venueId) return false;
+      const a = minutes(s.start);
+      const b = minutes(e.start);
+      return a == null || b == null || Math.abs(a - b) <= 120;
+    });
+    return own ? { ...e, place: { ...e.place, venueId: own.place.venueId } } : e;
   });
 }
 
