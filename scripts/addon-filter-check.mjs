@@ -162,6 +162,8 @@ const STILL_DROPPED = [
   // Oct 22, 2026 LA census check: a season-long product on one date.
   ["TMU Bold Women's Basketball - 2026-27 Season Pass", 'game'],
   ['Los Angeles Kings Season Tickets', 'special'],
+  // Oct 23, 2026 nightly: an accessibility device's reservation listed beside the Suns' game.
+  ['OneCourt', 'special'],
 ];
 
 // The research's look-alikes (section 3): real shows whose names carry add-on words.

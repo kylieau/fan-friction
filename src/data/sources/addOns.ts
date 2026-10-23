@@ -88,6 +88,9 @@ const STRONG = new RegExp(
     String.raw`\bpre-?\s?event\s+dinner\b`, String.raw`\breplica\b`, String.raw`\bred\s+carpet\s+experience\b`,
     // A season-long product listed on one date ("TMU Bold Women's Basketball - 2026-27 Season Pass", the Oct 22, 2026 LA census check).
     String.raw`\bseason\s+(?:pass(?:es)?|tickets?|packages?|memberships?)\b`,
+    // A device reservation listed as its own event beside the game ("OneCourt", the haptic accessibility device, at the
+    // Suns' arena on Nov 9, 2026; caught by the nightly's possible-copies line, Oct 23).
+    String.raw`\bonecourt\b`,
   ].join('|'),
   'i',
 );
