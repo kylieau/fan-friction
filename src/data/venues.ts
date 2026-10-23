@@ -16024,7 +16024,10 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Eastern States Exposition Coliseum' }],
     // The research's map point; not an entrance.
     location: [-72.618694, 42.091333],
-    capacity: [{ seats: 5000, note: 'Official (arena), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
+    // A convention hall (Kylie, Oct 23, 2026: the builder's lean, after the Oct 7 rule and the Edmonton Convention
+    // Centre): no capacity stored, so the room stays on the map, muted, and feeds no friction. The research's figure
+    // is in docs/research/topics/further-out-rooms-answer*.md.
+    capacity: [],
     roof: 'indoor',
     furtherOut: { driveMinutes: 115, how: 'routed', town: 'West Springfield' },
   },
@@ -16747,7 +16750,10 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Wildwoods Convention Center' }],
     // The research's map point; not an entrance.
     location: [-74.8099, 38.9874],
-    capacity: [{ seats: 7264, setup: 'concert', note: 'Official (large concert assembly), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
+    // A convention hall (Kylie, Oct 23, 2026: the builder's lean, after the Oct 7 rule and the Edmonton Convention
+    // Centre): no capacity stored, so the room stays on the map, muted, and feeds no friction. The research's figure
+    // is in docs/research/topics/further-out-rooms-answer*.md.
+    capacity: [],
     roof: 'indoor',
     furtherOut: { driveMinutes: 112, how: 'routed', town: 'Wildwood' },
   },
@@ -16926,7 +16932,10 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Tucson Expo Center' }],
     // OpenStreetMap point by name, approximate; not an entrance.
     location: [-110.912299, 32.161483],
-    capacity: [{ seats: 7000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
+    // A convention hall (Kylie, Oct 23, 2026: the builder's lean, after the Oct 7 rule and the Edmonton Convention
+    // Centre): no capacity stored, so the room stays on the map, muted, and feeds no friction. The research's figure
+    // is in docs/research/topics/further-out-rooms-answer*.md.
+    capacity: [],
     roof: 'indoor',
     furtherOut: { driveMinutes: 130, how: 'routed', town: 'Tucson' },
   },
