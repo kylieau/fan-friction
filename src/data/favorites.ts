@@ -130,7 +130,8 @@ export function entryMatches(entry: Entry, fav: Favorite): boolean {
         names.add(team.shortName.toLowerCase());
         (team.aliases ?? []).forEach((alias) => names.add(alias.toLowerCase()));
       }
-      if (entry.tags.some((tag) => names.has(tag.toLowerCase()))) return true;
+      // Both teams of a game count (build 7, Locked, Kylie, Oct 22, 2026): the opponent on the stub too.
+      if ([...entry.tags, ...(entry.opponents ?? [])].some((tag) => names.has(tag.toLowerCase()))) return true;
       // A bare side ("UCLA") only counts for a school's football program, the log's default.
       return entry.kind !== 'show' && entry.kind !== 'festival' && !team && entry.sides.some((side) => side.toLowerCase() === label);
     }

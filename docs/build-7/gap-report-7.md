@@ -11,9 +11,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 4. Routes and tab bar | done | `2c007029` | Codex review 2 after this |
 | 5. Upcoming | done | `fe90842f` | own screen, plans band, filter sheet, no earlier cue anywhere |
 | 6. Activity | done | `f4687f8a` | Codex review 3 after this |
-| 7. Log an event sheet | done | (step 7 commit) | |
-| 8. Your stubs page | next | | |
-| 9. You rebuild | | | |
+| 7. Log an event sheet | done | `2e41d4e9`; review fixes `b205527e` | |
+| 8. Your stubs page | done | (step 8 commit) | |
+| 9. You rebuild | next | | |
 | 10. Ranks, Recap | | | |
 | 11. Your year, Spend details | | | |
 | 12. Profile & Settings, city switcher | | | Codex review 4 after this |
@@ -82,6 +82,15 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - Escape: the Log sheet ignores it while a sheet sits above it (Stub it, the Add card), so only the top sheet closes (checked).
 - Screenshots: `.playwright-mcp/b7-log-sheet.png`, `b7-log-stub.png`, `b7-log-marked.png`, `b7-log-search.png`, `b7-global-search.png`.
 
+### Step 8. The Your stubs page
+- `StubsScreen.tsx` rebuilt as the pushed page at `/you/stubs` (mocks 38–43): "‹ You", the title with its stub count (Lean; the mock shows one and the no-counts rule was about "See all"), filter and search on the title row (measured 36 × 36 px each), a List / Grid / Calendar switcher (`segmented`, remembered per device). No year chip, no plans, no floating button.
+- **Filter sheet** (mock 40): Dates (From / To, All time / This year / Last year / Last 30 days), Type (All / Attended / Watched), Kind (All / Game / Concert / Other, the notes' words), **Team or sport** (the chips You's row had: teams and sports logged more than once), Tags (the existing tag picker rows). Picks live in sessionStorage; `?filter=` (a Fave's "My Stubs ›") and `?tag=` (ready for Ranks' Tags tab) pre-set them. Count badge and removable chips with Clear; "No stubs match" with Clear when the filter empties the list.
+- Rough dates in the Dates filter (lean from the notes): a month, year or span stub counts when its stretch overlaps the range; an unknown date always does.
+- **Grid** (mock 41): light cards three across, newest first: date and the read tile on the top line, the ticket / TV and sport icons, the title, the venue.
+- **Calendar** (mock 42): a year strip (each month shaded by how many stubs, the shown month outlined, ‹ › for years) over a **Sunday-first** month grid (the app's `monthCells`, as Explore's calendar; `WeekCalendar`'s Monday-first is a pre-existing mismatch, noted, not changed). A dot for attended, a ring for a day with only watched stubs; a tapped day lists its stubs; **"No exact date"** lists the rough-dated stubs. The month floor is the oldest dated stub, not Explore's 2016 clamp.
+- **Seen N credits both teams** (`entryMatches` reads `opponents`), so Faves counts, the team page's "N games in My Stubs" and the Faves row agree with Ranks (Locked). `favoritesFromLog` still reads `tags` only, so a new person's first Faves never include opponents.
+- Screenshots: `.playwright-mcp/b7-stubs-list.png`, `b7-stubs-grid.png`, `b7-stubs-calendar.png`, `b7-stubs-filter.png`.
+
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
 
@@ -120,6 +129,7 @@ Each stage ran as a read-only review of that stage's diff, with the design rules
 7. **Accepted** (risk): the stored Upcoming filter JSON was cast unchecked. Each piece is validated; one of the two Show rows always stays on.
 
 ## Judgment calls
+- **Team or sport filter reads both teams.** The notes say the filter moves "as is" (home-team tags), but Ranks and Seen N credit both teams of every game (Locked), so a "Padres" filter that hid a Dodgers home game against them would contradict the counts next to it. The filter now reads `entryTeams` (both teams) plus the sport word. Easy to narrow back if Kylie prefers "what you went for".
 - **Global search event rows (step 7).** The lock says search's event rows get the shared row, but live search had no event rows: its Events group was one row per *date* opening the map. The safest reading that fits: add an Events group of real event rows (the shared `LogRow`) above the date hits, and keep the date hits as a "Dates" group, so nothing that worked is lost. Kylie can ask for the Dates group to go.
 - **"Change city" on the Log sheet (Lean) is deferred to backlog.** The notes' `openedMetroId()` returns home, not the city Explore is looking at, so there was nothing to reuse; the sheet uses home (the notes' fallback). A picker would be new UI.
 - **Seat and Cost on any Attending plan, not only same-day.** The notes name same-day logging as the use case, not as a gate; knowing your seat at purchase is a fair reason. Easy to narrow later.

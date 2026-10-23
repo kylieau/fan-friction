@@ -10195,3 +10195,216 @@ a.follow-lead::after {
   justify-content: center;
   color: var(--action);
 }
+
+/* Your stubs (build 7, §3.7; mocks 38–43): the count beside the title, the three views, light grid cards, the calendar. */
+.page-title-count {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.stubs-views button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.stubs-views button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.stubs-page .timeline-page-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+}
+
+.stub-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 32px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.stub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 14px;
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+}
+
+.stub-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.stub-card-date {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.stub-card-top .read-tile {
+  transform: scale(0.8);
+  transform-origin: top right;
+}
+
+.stub-card-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.stub-card-icons svg {
+  width: 14px;
+  height: 14px;
+}
+
+.stub-card-title {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.stub-card-venue {
+  font-size: 11.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stub-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding-bottom: 32px;
+}
+
+.cal-year-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cal-year {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.cal-nav.small {
+  width: 32px;
+  height: 32px;
+}
+
+.cal-year-strip {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 4px;
+  padding: 10px 8px;
+}
+
+.cal-year-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.cal-year-month.on {
+  color: var(--action);
+}
+
+.cal-year-box {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  background: rgba(15, 27, 45, calc(0.06 + var(--fill, 0) * 0.5));
+}
+
+.cal-year-month.on .cal-year-box {
+  box-shadow: inset 0 0 0 2px var(--action);
+}
+
+.cal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.stub-cal-day {
+  height: 44px;
+  border: 0;
+  font: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.stub-cal-day.has {
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.stub-cal-day.selected {
+  box-shadow: inset 0 0 0 2px var(--action);
+}
+
+.stub-cal-num {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.stub-cal-mark {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.stub-cal-mark.ring {
+  background: none;
+  box-shadow: inset 0 0 0 2px var(--ink);
+}
+
+.stub-cal-mark.inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px 0 2px;
+}
+
+.stub-cal-key {
+  margin: 0;
+}
+
+.filter-pills .filter-chip svg {
+  margin-right: 5px;
+}
