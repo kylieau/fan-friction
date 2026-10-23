@@ -18,6 +18,8 @@ import { ActivityScreen } from './screens/ActivityScreen';
 import { UpcomingScreen } from './screens/UpcomingScreen';
 import { RanksScreen } from './screens/RanksScreen';
 import { RecapScreen } from './screens/RecapScreen';
+import { YourYearScreen } from './screens/YourYearScreen';
+import { SpendScreen } from './screens/SpendScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
 import { DEFAULT_METRO, METROS } from './config/metros';
@@ -139,6 +141,8 @@ function Shell() {
           <Route path="/you/stubs" element={<StubsScreen />} />
           <Route path="/you/ranks" element={<RanksScreen />} />
           <Route path="/you/recap" element={<RecapScreen />} />
+          <Route path="/you/year" element={<YourYearScreen />} />
+          <Route path="/you/spend" element={<SpendScreen />} />
           <Route path="/you/stubs/tag/:tag" element={<TagScreen />} />
           <Route path="/stubs" element={<StubsRedirect />} />
           <Route path="/stubs/tag/:tag" element={<StubsRedirect />} />

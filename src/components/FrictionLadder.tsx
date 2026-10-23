@@ -20,9 +20,10 @@ const LADDER = ['Chill', 'Mild', 'Spicy', 'Brutal', 'Cooked'];
  * Counts and milestones only; nothing is ranked against anyone. Since build 7 it sits on the Your year page, under
  * the stats (Kylie, 2026-10-22).
  */
-export function FrictionLadder({ entries, ratings }: { entries: Entry[]; ratings: ReadonlyMap<string, number> }) {
-  const thisYear = String(new Date().getFullYear());
-  const [scope, setScope] = useState<'year' | 'all'>('year');
+export function FrictionLadder({ entries, ratings, year }: { entries: Entry[]; ratings: ReadonlyMap<string, number>; /** The Your year page's year (or "All time"): the ladder follows it and hides its own switch. */ year?: string }) {
+  const thisYear = year && year !== 'All time' ? year : String(new Date().getFullYear());
+  const [ownScope, setScope] = useState<'year' | 'all'>('year');
+  const scope: 'year' | 'all' = year ? (year === 'All time' ? 'all' : 'year') : ownScope;
   // Watched entries stay out of the reads here (Kylie, Oct 11, call 3): a watched game is never Heaviest or Quietest.
   const scoped = useMemo(() => (scope === 'year' ? entries.filter((e) => e.when.sort.startsWith(thisYear)) : entries), [entries, scope, thisYear]);
   const inScope = useMemo(() => scoped.filter((e) => !e.watched), [scoped]);
@@ -50,7 +51,8 @@ export function FrictionLadder({ entries, ratings }: { entries: Entry[]; ratings
   return (
     <section className="your-year" aria-label="Your year">
       <div className="your-year-head">
-        <h2 className="you-heading">{scope === 'year' ? thisYear : 'All time'}</h2>
+        <h2 className="you-heading">{year ? 'Your reads' : scope === 'year' ? thisYear : 'All time'}</h2>
+        {!year && (
         <div className="segmented small" role="tablist" aria-label="Span">
           <button type="button" role="tab" aria-selected={scope === 'year'} onClick={() => setScope('year')}>
             This year
@@ -59,6 +61,7 @@ export function FrictionLadder({ entries, ratings }: { entries: Entry[]; ratings
             All time
           </button>
         </div>
+        )}
       </div>
       {rated.length === 0 ? (
         <p className="you-fine">{inScope.length === 0 ? 'No events yet.' : 'No reads on these events yet.'}</p>

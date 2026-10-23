@@ -10923,3 +10923,265 @@ a.follow-lead::after {
   display: inline-flex;
   align-items: center;
 }
+
+/* Your year and Spend details (build 7, §3.9; mocks 50–53). */
+.by-month {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.by-month-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 4px;
+  align-items: end;
+  min-height: 72px;
+}
+
+.by-month-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+}
+
+.by-month-block {
+  width: 100%;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--ink);
+}
+
+.by-month-block.watched {
+  background: var(--card);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.by-month-block.inline {
+  display: inline-block;
+  width: 12px;
+  vertical-align: middle;
+  margin: 0 4px 0 2px;
+}
+
+.by-month-letter {
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.by-month-key {
+  margin: 0;
+}
+
+.top-three {
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.top-three-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.top-three-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-three-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.top-three-list li:last-child {
+  border-bottom: 0;
+}
+
+.rank-pos.small {
+  width: 22px;
+  font-size: 14px;
+}
+
+.top-three-label {
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.top-three-sub {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.top-three-count {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.spend-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+}
+
+.spend-total {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.spend-big {
+  font-size: 36px;
+}
+
+.spend-coverage {
+  margin: -4px 0 0;
+}
+
+.spend-bar {
+  display: flex;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: var(--track);
+}
+
+.spend-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.spend-legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.spend-legend strong {
+  margin-left: auto;
+}
+
+.spend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.spend-line {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.spend-line strong {
+  color: var(--ink);
+}
+
+.spend-watched {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.spend-watched strong {
+  margin-left: auto;
+}
+
+.spend-watched svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.spend-details-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  margin: 0 -16px -14px;
+  padding: 0 16px;
+  border-top: 1px solid var(--line);
+  color: var(--action);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.spend-empty {
+  margin: 0;
+}
+
+.spend-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.spend-tile {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+}
+
+.spend-groups {
+  padding: 0;
+}
+
+.spend-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.spend-groups li:last-child {
+  border-bottom: 0;
+}
+
+.spend-group-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.spend-group-label {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.spend-group-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 17px;
+  font-weight: 800;
+}

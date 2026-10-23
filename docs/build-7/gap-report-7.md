@@ -14,9 +14,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 7. Log an event sheet | done | `2e41d4e9`; review fixes `b205527e` | |
 | 8. Your stubs page | done | `b3f400c7` | |
 | 9. You rebuild | done | `3771b769` | |
-| 10. Ranks, Recap | done | (step 10 commit) | |
-| 11. Your year, Spend details | next | | |
-| 12. Profile & Settings, city switcher | | | Codex review 4 after this |
+| 10. Ranks, Recap | done | `036f0a0a` | |
+| 11. Your year, Spend details | done | (step 11 commit) | |
+| 12. Profile & Settings, city switcher | next | | Codex review 4 after this |
 
 **Codex reviews:** stage 1 was tried twice at about 4:30 and 4:45 PM Pacific and failed before any analysis ("out of credits"); Kylie said credits returned at 5:20 PM, and stages 1, 2 and 3 ran then, in parallel (read-only, each on its stage's diff), all three completing. Findings and what was done are under **Codex reviews** below. Stage 4 runs after step 12. **Skipped reviews for Kylie to run afterward:** none.
 
@@ -105,6 +105,13 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - **Ranks** (`/you/ranks`, mocks 45–46): rounded pill tabs Teams / Venues / Cities / Artists / Tags; count only, ranked by attended + watched with ties sharing a rank ("=3"), the ticket / TV sub-counts and a bar against the top row; "Show all N ›" past eight. Teams count every team seen, both sides (Locked); a team row opens Your stubs filtered to it, a tag row opens Your stubs with `?tag=`. No "By count / My order" switch, no grips. Empty Tags: "Tags come from your stubs: open one and add a tag."
 - **Recap** (`/you/recap`, mocks 44 and 48): a scrolling page of moments: the year so far (dark hero), First of the year, Biggest crowd (with the next biggest), Heaviest friction read with your usual (from the score labels only), Most-seen team (count, attended / watched, date chips), Top tag (chip, chips, the next tag), New venues (a list, not the mock's map: no map piece for stubs exists and the list says the same), Attended vs watched (bar), "See these N stubs ›" (Your stubs with that year preset). No share icon (sharing is backlog, Locked), no photos.
 - Screenshots: `.playwright-mcp/b7-ranks.png`, `b7-recap.png`.
+
+### Step 11. Your year and Spend details
+- **Your year** (`/you/year`, mock 50, r3): the scoreboard. The stats card (the big number and every stat the pool has), then the **friction ladder** (`FrictionLadder`, the old YourYear component) under it with "your usual" (Locked; it follows the page's year and hides its own switch), **By month** (stacked blocks, attended solid and watched ringed), **Most seen** (top-3 tables for Teams, Venues, Tags, ties sharing a rank, each "See all ›" into Ranks on that tab), and the compact **Spend** card (total, "Costs logged for N of M events", the category bar and legend, avg ticket per seat, free events, the Watched line, "Spend details ›"). No moment cards, so it never looks like Recap.
+- **Spend details** (`/you/spend`, mock 53): by category (the same card), the avg-ticket and free-events tiles, by venue per visit, by team (both teams of every game, no-team events out; Locked), and the footnote. Back goes to Your year.
+- `src/data/spend.ts`: `spendSummary`, `spendByVenue`, `spendByTeam`. Logged amounts only; absent is excluded, Free is $0; the average ticket divides ticket spend by ticket quantity (1 when none) and leaves free tickets out; watched spend sits on its own line and stays out of venue and team figures; trip costs (Other) count everywhere (Locked). Currency follows the stored code.
+- The "8px read-tile word" exception travels with the ladder as-is (its CSS is unchanged).
+- Screenshots: `.playwright-mcp/b7-your-year.png`, `b7-spend.png`.
 
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
