@@ -1090,7 +1090,8 @@ export const VENUES: Record<string, Venue> = {
   'leader-bank-pavilion': {
     id: 'leader-bank-pavilion',
     metroId: 'boston',
-    names: [{ name: 'Leader Bank Pavilion' }, { name: 'Rockland Trust Bank Pavilion' }],
+    // Blue Hills Bank Pavilion 2014–2019, Rockland Trust 2019–2021, Leader Bank from 2021 (small-rooms answer 7; exact days unconfirmed, so January 1).
+    names: [{ name: 'Blue Hills Bank Pavilion' }, { name: 'Rockland Trust Bank Pavilion', from: '2019-01-01' }, { name: 'Leader Bank Pavilion', from: '2021-01-01' }],
     location: [-71.0359348, 42.3485027],
     ticketmasterIds: ['KovZpZAEAdEA'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official (naming partner). Exactly at friction threshold. Source: venue table A13.' }],
@@ -5265,7 +5266,10 @@ export const VENUES: Record<string, Venue> = {
     location: [-87.8711, 41.9781],
     // N10 (Kylie, Oct 14): keep 6,300 (reported), reversing the PR #54 blank. Stored for the whole room (no setup):
     // the ballpark site's figure (incl. 5,526 fixed seats) describes the room, not a concert layout. Wikipedia says 8,300.
-    capacity: [{ seats: 6300, note: 'Reported (ballpark site), including 5,526 fixed seats. Conflicts with 8,300 (Wikipedia). None official.' }],
+    capacity: [
+      { seats: 6300, setup: 'baseball', note: 'Reported (ballpark site), including 5,526 fixed seats. Conflicts with 8,300 (Wikipedia). None official.' },
+      { seats: 10000, setup: 'concert', note: 'Official (village/operator): "more than 10,000" concert seating; no exact maximum published. Small-rooms answer 3.' },
+    ],
     roof: 'open',
   },
   'wintrust-field': {
@@ -5528,7 +5532,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-96.8197, 33.0984],
     ticketmasterIds: ['KovZpZAFAtnA'],
     capacity: [
-      { seats: 10316, setup: 'baseball', note: 'Reported; 10,216 by MiLB; 7,748 fixed seats plus a berm' },
+      { seats: 10216, setup: 'baseball', note: 'Official (team ballpark page, small-rooms answer 4): 10,216 total, 7,748 fixed seats plus a berm; 10,316 was reported earlier' },
     ],
     roof: 'open',
   },
@@ -9388,6 +9392,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAJaEaA'],
     capacity: [
       { seats: 5700, setup: 'concert', note: 'Official "5,700+" seats, not an exact count. Wikipedia cites 5,800. Source: https://www.reliantpark.com/reliant-park-facilities/' },
+      { seats: 8000, setup: 'concert', note: 'Official (current operator): about 5,700 permanent seats plus 2,000 on the floor, "approximately 8,000". Small-rooms answer 4.' },
     ],
     roof: 'indoor',
   },
@@ -9489,7 +9494,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Brown Theater' }],
     location: [-95.365622, 29.763351],
     capacity: [
-      { seats: 2423, setup: 'concert', note: 'Reported. Conflict: 2,405. Wortham\'s two rooms are separate. Source: https://catastrophictheatre.com/press/citys-theater-district-among-the-best/' },
+      { seats: 2405, setup: 'concert', note: 'Official (venue seating chart, small-rooms answer 4), including optional pit seats; 2,423 was reported earlier. Wortham\'s two rooms are separate.' },
     ],
     roof: 'indoor',
   },
@@ -9703,7 +9708,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Smart Financial Centre' }, { name: 'Smart Financial Centre at Sugar Land' }],
     location: [-95.643362, 29.577051],
     ticketmasterIds: ['KovZpZAIIIeA'],
-    capacity: [],
+    capacity: [{ seats: 6400, setup: 'concert', note: 'Official (ATG): four configurations from 3,000 to 6,400 seated. Small-rooms answer 4.' }],
     roof: 'indoor',
   },
   'sabercats-stadium': {
@@ -9750,7 +9755,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [{ name: 'W.W. Thorne Stadium' }],
     location: [-95.359986, 29.933616],
-    capacity: [],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Official (Aldine ISD): the replacement stadium, not the older berm stadium. Small-rooms answer 4.' }],
     roof: 'open',
   },
   'sam-houston-race-park': {
@@ -14525,9 +14530,9 @@ export const VENUES: Record<string, Venue> = {
   'university-credit-union-pavilion': {
     id: 'university-credit-union-pavilion',
     metroId: 'bay-area',
-    names: [{ name: 'University Credit Union Pavilion' }],
+    names: [{ name: 'McKeon Pavilion' }, { name: 'University Credit Union Pavilion', from: '2019-12-16' }],
     // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
-    aliases: ['UCU Pavilion', 'McKeon Pavilion'],
+    aliases: ['UCU Pavilion'],
     // OpenStreetMap point for the campus; the pavilion has no point of its own.
     location: [-122.109459, 37.8409597],
     capacity: [{ seats: 3500, setup: 'basketball', note: 'Official (basketball). Saint Mary\'s, Moraga. Formerly McKeon Pavilion. Source: https://smcgaels.com/facilities/university-credit-union-pavilion/4' }],
