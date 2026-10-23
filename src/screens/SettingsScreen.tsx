@@ -1,22 +1,19 @@
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
-import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import { BackLink } from '../components/BackLink';
 import { EditFavoritesSheet, FavoritesSection } from '../components/EditFavoritesSheet';
 import { FavoriteCitiesSection } from '../components/FavoriteCities';
 import { AccountBlock, AccountRow } from '../components/AccountBlock';
-import { ChevronDown } from '../components/Icons';
 import { ProfileForm } from './ProfileEditScreen';
 import { PrivacySettings, VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { CrowdSizeSettings } from './SettingsCrowdScreen';
 import { PeoplePanel } from './PeopleScreen';
 import { ReviewQueue } from '../components/ReviewQueue';
 import { DEFAULT_METRO } from '../config/metros';
-import { getHomeId, subscribeHome } from '../lib/homeCity';
 import {
   blockedPeople,
   crowdRangeLabel,
   crowdRangeOf,
-  favoriteCitiesOf,
   favoritesOf,
   followRequests,
   getAccount,
@@ -47,7 +44,6 @@ export type SettingsSectionId = 'profile' | 'account' | 'cities' | 'crowd' | 'pr
  * Notifications section (Locked). It was a side panel of dropdowns from build 6 until build 7.
  */
 export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boolean } = {}) {
-  const navigate = useNavigate();
   const { hash } = useLocation();
   const [params] = useSearchParams();
   const section = (hash ? hash.slice(1) : params.get('panel')) || null;
@@ -55,7 +51,6 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   useEffect(() => {
     setEditing(editFaves);
   }, [editFaves]);
-  void navigate;
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [handle, setHandle] = useState<string | null>(null);
@@ -78,7 +73,8 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
     if (!wanted) return;
     const id = window.setTimeout(() => panel.current?.querySelector(`[data-section="${wanted}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 80);
     return () => window.clearTimeout(id);
-  }, [wanted]);
+    // A section that only shows signed in (Profile, People) is scrolled to again once the account is in (Codex, stage 4).
+  }, [wanted, account?.id]);
 
   useEffect(() => {
     let current = true;
@@ -86,6 +82,11 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
       setHandle(null);
       setPeopleCount(null);
       setRequestCount(0);
+      setBlocked([]);
+      setAdmin(false);
+      setPendingCount(0);
+      setLinkOff(undefined);
+      setVisibility(null);
       return;
     }
     getMyProfile().then((profile) => {
@@ -137,10 +138,6 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   };
 
   const favorites = useMemo(() => favoritesOf(log), [log]);
-  void favoriteCitiesOf;
-  void ChevronDown;
-  void subscribeHome;
-  void getHomeId;
 
   // One section of the page: a heading with its one-line value, the body always open, an anchor for deep links.
   const dropdown = (id: SettingsSectionId, title: string, value: ReactNode, body: ReactNode) => (

@@ -75,7 +75,12 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
   useEffect(() => {
     let current = true;
     const floor = addDays(today, -7);
-    const opened = recentOpened().filter((row) => row.date >= floor && row.date <= today && row.eventId && !(todayEvents ?? []).some((e) => e.id === row.eventId));
+    // Opened on this device, plus stubs logged this week (a row's "+" never opens the page), newest first.
+    const loggedRows = yourEntries(log)
+      .filter((entry) => entry.eventId && entry.metroId && entry.when.precision === 'day' && entry.when.sort >= floor && entry.when.sort <= today)
+      .map((entry) => ({ eventId: entry.eventId!, metroId: entry.metroId!, date: entry.when.sort, at: entry.updatedAt ?? '' }));
+    const merged = [...recentOpened(), ...loggedRows].filter((row, i, all) => all.findIndex((r) => r.eventId === row.eventId) === i);
+    const opened = merged.filter((row) => row.date >= floor && row.date <= today && row.eventId && !(todayEvents ?? []).some((e) => e.id === row.eventId));
     const dates = [...new Map(opened.map((row) => [`${row.metroId}|${row.date}`, row])).values()];
     Promise.all(dates.map((row) => getCityDate(row.metroId, row.date).catch(() => null))).then((days) => {
       if (!current) return;

@@ -825,6 +825,7 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
         {logged && <EntryLayer entry={logged} showLevel={false} />}
       </div>
       {sheet && <StubSheet event={event} onClose={() => setSheet(false)} />}
+      <RecordOpened event={event} />
     </div>
   );
 }

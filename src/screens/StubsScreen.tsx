@@ -102,9 +102,14 @@ export function StubsScreen() {
   const wantedTag = params.get('tag');
   const wantedYear = params.get('year');
   useEffect(() => {
-    if (wantedTeam) setFilter({ ...readFilter(), team: wantedTeam });
-    else if (wantedTag) setFilter({ ...readFilter(), tags: [wantedTag] });
-    else if (wantedYear && /^\d{4}$/.test(wantedYear)) setFilter({ ...readFilter(), dates: { preset: 'custom', from: `${wantedYear}-01-01`, to: `${wantedYear}-12-31` } });
+    if (!wantedTeam && !wantedTag && !wantedYear) return;
+    // A drilldown starts clean and applies everything the link asks for together (Codex, stage 4).
+    setFilter({
+      ...DEFAULT_FILTER,
+      ...(wantedTeam ? { team: wantedTeam } : {}),
+      ...(wantedTag ? { tags: [wantedTag] } : {}),
+      ...(wantedYear && /^\d{4}$/.test(wantedYear) ? { dates: { preset: 'custom' as const, from: `${wantedYear}-01-01`, to: `${wantedYear}-12-31` } } : {}),
+    });
   }, [wantedTeam, wantedTag, wantedYear]);
   const [sheet, setSheet] = useState(false);
   useEffect(() => {

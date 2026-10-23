@@ -17,10 +17,12 @@ const KEY = 'opened-events';
 const CAP = 20;
 
 export function recordOpened(event: Pick<CrowdEvent, 'id' | 'metroId' | 'date'>) {
-  const rest = getPref<OpenedEvent[]>(KEY, []).filter((row) => row.eventId !== event.id);
+  const rest = recentOpened().filter((row) => row.eventId !== event.id);
   setPref(KEY, [{ eventId: event.id, metroId: event.metroId, date: event.date, at: new Date().toISOString() }, ...rest].slice(0, CAP));
 }
 
 export function recentOpened(): OpenedEvent[] {
-  return getPref<OpenedEvent[]>(KEY, []);
+  const raw = getPref<unknown>(KEY, []);
+  if (!Array.isArray(raw)) return [];
+  return raw.filter((row): row is OpenedEvent => Boolean(row) && typeof row === 'object' && typeof (row as OpenedEvent).eventId === 'string' && typeof (row as OpenedEvent).metroId === 'string' && typeof (row as OpenedEvent).date === 'string');
 }

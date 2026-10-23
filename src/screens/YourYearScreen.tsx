@@ -7,6 +7,7 @@ import { TagChip } from '../components/TagChip';
 import { TicketIcon, TvIcon } from '../components/Icons';
 import {
   entriesInYear,
+  entryTeams,
   formatMoney,
   getPersonalLog,
   nightsOf,
@@ -185,11 +186,7 @@ export function SpendBar({ spend }: { spend: ReturnType<typeof spendSummary> }) 
 }
 
 function TopThree({ title, rows, to, inYear, kind }: { title: string; rows: { label: string; count: number }[]; to: string; inYear: Entry[]; kind: 'team' | 'venue' | 'tag' }) {
-  const split = (label: string) => {
-    const mine = inYear.filter((e) => (kind === 'tag' ? e.userTags?.includes(label) : kind === 'venue' ? e.venue === label : true));
-    const watched = kind === 'venue' ? 0 : mine.filter((e) => e.watched && (kind !== 'team' || true)).length;
-    return { watched };
-  };
+  const watchedOf = (label: string) => inYear.filter((e) => e.watched && (kind === 'tag' ? e.userTags?.includes(label) : kind === 'venue' ? e.venue === label : entryTeams(e).includes(label))).length;
   return (
     <div className="card top-three">
       <div className="top-three-head">
@@ -209,7 +206,13 @@ function TopThree({ title, rows, to, inYear, kind }: { title: string; rows: { la
               <span className="rank-pos small">{tie ? `=${rank}` : rank}</span>
               <span className="top-three-label">{kind === 'tag' ? <TagChip tag={row.label} size="row" /> : row.label}</span>
               <span className="top-three-sub">
-                <TicketIcon size={12} /> {row.count - (kind === 'team' ? 0 : split(row.label).watched)}
+                <TicketIcon size={12} /> {row.count - watchedOf(row.label)}
+                {watchedOf(row.label) > 0 && (
+                  <>
+                    {' '}
+                    <TvIcon /> {watchedOf(row.label)}
+                  </>
+                )}
               </span>
               <span className="top-three-count">{row.count}</span>
             </li>

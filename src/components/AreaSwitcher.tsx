@@ -40,7 +40,7 @@ export function AreaSwitcher({
   const shown: Metro[] = [...(home && byId.get(home) ? [byId.get(home)!] : []), ...favorites.flatMap((id) => (byId.get(id) ? [byId.get(id)!] : []))];
   if (!shown.some((c) => c.id === metro.id)) shown.push(metro);
   const typed = query.trim().toLowerCase();
-  const found = typed ? covered.filter((c) => c.name.toLowerCase().includes(typed) && !shown.some((s) => s.id === c.id)) : [];
+  const found = typed ? covered.filter((c) => c.name.toLowerCase().includes(typed)) : [];
   // The list closes on a tap outside it or Escape, wherever the switcher sits (Map, List, calendar page).
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {

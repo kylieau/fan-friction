@@ -16,9 +16,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 9. You rebuild | done | `3771b769` | |
 | 10. Ranks, Recap | done | `036f0a0a` | |
 | 11. Your year, Spend details | done | `6857ec1c` | |
-| 12. Profile & Settings, city switcher | done | (step 12 commit) | Codex review 4 after this |
+| 12. Profile & Settings, city switcher | done | `6a3a19de` | Codex review 4 after this |
 
-**Codex reviews:** stage 1 was tried twice at about 4:30 and 4:45 PM Pacific and failed before any analysis ("out of credits"); Kylie said credits returned at 5:20 PM, and stages 1, 2 and 3 ran then, in parallel (read-only, each on its stage's diff), all three completing. Findings and what was done are under **Codex reviews** below. Stage 4 runs after step 12. **Skipped reviews for Kylie to run afterward:** none.
+**Codex reviews:** stage 1 was tried twice at about 4:30 and 4:45 PM Pacific and failed before any analysis ("out of credits"); Kylie said credits returned at 5:20 PM, and stages 1, 2 and 3 ran then, in parallel (read-only, each on its stage's diff), all three completing. Findings and what was done are under **Codex reviews** below. Stage 4 (step 12 plus a final pass over steps 7–11) ran after step 12 and completed. **Skipped reviews for Kylie to run afterward:** none.
 
 ## What shipped per step
 
@@ -123,7 +123,14 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - Screenshots: `.playwright-mcp/b7-settings.png`, `b7-edit-faves.png`, `b7-switcher.png`.
 
 ## Advisor calls
+(Each call: what was asked, what came back, what was done. The advisor is Fable, through Claude Code's advisor tool.)
+
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
+
+2. **Before Codex stage 1 (after step 3).** Asked: the stage-1 brief and anything the checks missed. Said: produce the diff file for Codex (it may not run git); check whether the test browser was signed in (it was not: the stub was local only); `togglePlan` dropped a plan's seat and cost when the answer switched; the amount box's hard "$" against the device currency; a typed 0 ticket. Did: all four (`7a3a3b19`), then the review brief as advised.
+3. **Before Codex stages 2–3 and step 7.** Asked: the Log sheet plan and the review approach. Said: `searchEvents` beside `searchDates`; a per-device "opened" store; one shared `LogRow`; the SearchSheet judgment call (date rows, not event rows, existed; add event rows, keep the dates); guard Escape between stacked sheets; "Change city" only if cheap; warm today's cache; record the `peopleLine` arithmetic and own private stubs as a note. Did: all of it; Codex caught the arithmetic (stage 3, finding 6) and it was fixed by identity.
+4. **Before step 8.** Asked: Seen N reading opponents, the calendar's week start, the Team or sport filter. Said: `entryMatches` reads opponents now, `favoritesFromLog` stays tags-only; Sunday-first (the app's `monthCells`), floor at the oldest stub, not the 2016 clamp; the filter's "both teams" change is new logic, log it either way; the header count is Lean; wire `?tag=` now. Did: all of it (step 8); the filter reads both teams (judgment call below).
+5. **Before Codex stage 4 and before calling the build done.** Asked: what the report and handoff still need. Said: record `recordOpened` on schedule-only game pages (done, in the stage-4 fixes commit); confirm `/you` still lights the tab (it does); list the advisor calls, the reversals, the deferred items and the phone checks in one place each; BACKLOG block and a full handoff rewrite; note `searchEvents`' cost as a known one. Did: this section and the ones below.
 
 ## Codex reviews
 Each stage ran as a read-only review of that stage's diff, with the design rules stated up front (cost's three states, `opponents`, seat and cost on plans, the card views' named keys). Fixes landed in one commit after step 7 ("review fixes, stages 1–3").
@@ -159,6 +166,25 @@ Each stage ran as a read-only review of that stage's diff, with the design rules
 6. **Accepted** (bug): you were identified by the display name "You", so a friend called You would be merged. Identity is by id now.
 7. **Accepted** (risk): the stored Upcoming filter JSON was cast unchecked. Each piece is validated; one of the two Show rows always stays on.
 
+### Stage 4 (step 12 and a final pass; diff 6857ec1c..6a3a19de), run about 7:05 PM
+1. **Accepted** (bug): signing out left the admin flag, the blocked list and the review queue's rows in place on the settings page. Account-scoped state resets on sign-out.
+2. **Accepted** (bug): the switcher's search left out Home, a favorite and the city on screen, so "san" could say "No city by that name". The search covers every covered city.
+3. **Rejected** (bug claimed): edits in a section (profile, blocked) don't refresh the page head's handle or Blocked until the page reloads. The same was true of the build 6 panel; a shared profile store is a wider change. Noted in backlog.
+4. **Accepted** (risk): a deep link to Profile or People could miss its section while the account was still loading. The scroll reruns once the account is in.
+5. **Rejected** (risk): no focus trap on the Edit favorites sheet, as stage 2's finding 5 (one rule for every sheet, backlog). The sheet never stacks on another: the Upcoming filter closes before it opens.
+6. **Rejected** (bug claimed): mixed currencies sum as one. Multi-currency is backlog in the notes (§11); the summary labels the total with the stored code it saw, which is the device's. Noted.
+7. **Accepted** (bug): a $0 ticket line counted as a paid seat and pulled the average down. Free ticket lines stay out of the paid-seat average.
+8. **Accepted** (bug): By team counted watched games although the page says watched spend stays out of team figures. Attended games only.
+9. **Accepted** (bug): "up from N in <last year>" counted every venue last year, repeats included. Last year's first visits are measured against its own earlier history.
+10. **Accepted** (bug): Your year's Most seen team rows labelled every sighting with the ticket icon. Attended and watched are counted and shown apart, for every kind.
+11. **Accepted** (bug): a drilldown into Your stubs inherited the saved filter and applied its parameters one at a time. A drilldown starts clean and applies team, tag and year together.
+12. **Accepted** (bug): Recent on the Log sheet came only from opened pages, so a stub logged from a row's "+" never appeared. Stubs logged this week are merged in.
+13. **Rejected** (risk), listed in backlog: `searchEvents` fans out to every covered city per keystroke; a debounce and a merged index are a follow-up.
+14. **Accepted** (risk): the opened-events store was read unchecked. Each row is validated on the way in.
+15. **Accepted** (nit): the leftover `void` placeholders and unused imports in `SettingsScreen.tsx` are gone.
+- Codex also confirmed: the old Profile and Settings addresses reach the page and `find` and `chip` ride along; `tsc` passes.
+- From the advisor's last call, in the same commit: schedule-only game pages record an open too, so they reach Recent.
+
 ## Judgment calls
 - **Team or sport filter reads both teams.** The notes say the filter moves "as is" (home-team tags), but Ranks and Seen N credit both teams of every game (Locked), so a "Padres" filter that hid a Dodgers home game against them would contradict the counts next to it. The filter now reads `entryTeams` (both teams) plus the sport word. Easy to narrow back if Kylie prefers "what you went for".
 - **Global search event rows (step 7).** The lock says search's event rows get the shared row, but live search had no event rows: its Events group was one row per *date* opening the map. The safest reading that fits: add an Events group of real event rows (the shared `LogRow`) above the date hits, and keep the date hits as a "Dates" group, so nothing that worked is lost. Kylie can ask for the Dates group to go.
@@ -171,6 +197,32 @@ Each stage ran as a read-only review of that stage's diff, with the design rules
 ## Skipped
 - Own Interested plans are on Activity even though friends' Interested answers never reach the feed (the `plan_cards` reader keeps them off). The chip row the notes lock has Interested on it, so your own show; a friend's Interested would need a server-side change, which is out of scope. Logged as a lean.
 - Plan band rows read "Attending" without the Fave's name after it (mock 08 shows "Attending · UCLA FB"). A plan does not point at a Fave; matching by title would be a guess. Lean: the status word alone.
+
+## Reversals named (each on purpose, from the notes)
+- Plans left the Stubs tab for Upcoming (reverses build 6's "your own plans stay in Stubs").
+- Your own entries are in the Activity feed, You first (reverses build 3 DECISIONS §2 and build 6's exclusion).
+- The floating "+ Stub it" on Stubs is gone; the bar's "+" does its job (reverses the Oct 12 FAB decision).
+- The "↑ N earlier" cue is deleted everywhere (reverses 435d817, Oct 19).
+- The Following tab and its Faves / Friends switch became two tabs; the Following sheet retired.
+- The Settings side panel of dropdowns became one page.
+
+## Not built, deferred to backlog (each listed in `BACKLOG.md`, "Build 7 follow-ups")
+- **Change city on the Log sheet** (Lean): the sheet uses home; the notes' `openedMetroId()` returns home, so there was nothing to reuse and a picker would be new UI.
+- **Opponents outside the catalog** (Codex stage 1, rejected): a name-only away team from a school feed is not credited; needs ids in the feed.
+- **Team identity by id, not tag** (Codex stage 1, rejected): two teams sharing a short name share a tag, as the app's tags always have.
+- **A shared sheet focus rule** (Codex stages 2 and 4, rejected): no sheet in the app traps focus; a rule for all of them is one change, not one sheet's.
+- **Settings page refresh after a section edit** (Codex stage 4, rejected): the head's handle and the Blocked list refresh on reload, as the build 6 panel did; a shared profile store would fix it.
+- **Mixed currencies** (Codex stage 4, rejected): sums are labelled with one code; multi-currency is the notes' own backlog item.
+- **`searchEvents` cost**: every covered city's catalog per keystroke, no debounce or per-session cache yet (from the cache when offline).
+- From the notes' own backlog (§11): Hide mine on the account; Recap share cards; season-ticket costs; trip costs out of venue averages; Recap photos; a Notifications bell; multi-currency; Travel & Stay.
+- `WeekCalendar` is Monday-first while the stubs calendar and Explore's are Sunday-first (pre-existing, noted).
+
+## For Kylie to check on a phone (signed in; the test browser was signed out)
+- Activity with real friends: a mixed row reads "You, Sam R. +1 attending"; Hide mine drops you and a row that was only you; the People checklist; the "Couldn't load" note on a failed plans read.
+- The Profile & Settings page signed in: the profile card's Edit profile and Share profile; People with a pending request; Privacy; Account with sign out; the page scrolling to a section from an old link.
+- Same-day logging end to end: Attending a game today with a seat and a cost, then after midnight the stub carries both (`settlePassedPlans`).
+- The Log sheet's Recent on a phone that has opened a few event pages; the Stub it sheet from a row on a stadium network.
+- The "+" and the raised circle against the phone's home indicator (safe-area inset).
 
 ## SQL for Kylie
 None. Build 7 needs no migration; the card views already keep `data` private.

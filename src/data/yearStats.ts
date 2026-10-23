@@ -77,7 +77,8 @@ export function yearStatPool(entries: readonly Entry[], year: string | 'all', al
     const seenBefore = new Set(before.map((e) => e.venue).filter(Boolean));
     const fresh = new Set(attended.map((e) => e.venue).filter((v): v is string => Boolean(v) && !seenBefore.has(v)));
     const prevYear = year === 'all' ? null : String(Number(year) - 1);
-    const prevFresh = prevYear ? new Set(allEntries.filter((e) => !e.watched && e.when.sort.startsWith(prevYear)).map((e) => e.venue).filter(Boolean)).size : 0;
+    const beforePrev = new Set(prevYear ? allEntries.filter((e) => !e.watched && e.when.sort < `${prevYear}-01-01`).map((e) => e.venue).filter(Boolean) : []);
+    const prevFresh = prevYear ? new Set(allEntries.filter((e) => !e.watched && e.when.sort.startsWith(prevYear)).map((e) => e.venue).filter((v) => v && !beforePrev.has(v))).size : 0;
     if (year !== 'all' && seenBefore.size > 0) pool.push({ key: 'newVenues', value: String(fresh.size), label: fresh.size === 1 ? 'New venue' : 'New venues', sub: prevFresh > 0 ? `${fresh.size > prevFresh ? 'up from' : fresh.size < prevFresh ? 'down from' : 'same as'} ${prevFresh} in ${prevYear}` : undefined, weight: 3 + fresh.size });
     else pool.push({ key: 'venues', value: String(stats.venues), label: stats.venues === 1 ? 'Venue' : 'Venues', weight: 3 + stats.venues });
   }

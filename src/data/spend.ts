@@ -45,7 +45,8 @@ export function spendSummary(entries: readonly Entry[]): SpendSummary {
       const amount = lineTotal(line);
       total += amount;
       byKind.set(line.kind, (byKind.get(line.kind) ?? 0) + amount);
-      if (line.kind === 'ticket' && !entry.watched) {
+      // A $0 ticket line is a free seat: out of the paid-seat average (Codex, stage 4).
+      if (line.kind === 'ticket' && !entry.watched && amount > 0) {
         ticketSum += amount;
         paidSeats += line.qty ?? 1;
       }
@@ -87,10 +88,10 @@ export function spendByVenue(entries: readonly Entry[]): SpendGroup[] {
   );
 }
 
-/** Games by team, both teams credited, Fave or not (Locked); concerts and other no-team events stay out. */
+/** Attended games by team, both teams credited, Fave or not (Locked); concerts and other no-team events stay out, and watched spend keeps to its own line. */
 export function spendByTeam(entries: readonly Entry[]): SpendGroup[] {
   return groups(
-    entries.filter((e) => e.kind === 'game'),
+    entries.filter((e) => e.kind === 'game' && !e.watched),
     (e) => entryTeams(e),
   );
 }
