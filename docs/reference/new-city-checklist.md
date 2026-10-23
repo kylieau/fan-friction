@@ -3,7 +3,7 @@
 Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city rides this page and the scripts. If a step can't be put here, the feature isn't done. A second city is for testing that the formula holds outside LA (step 4 of `docs/product/big-picture-plan-oct6.md`), not for coverage.
 
 ## 1. Configure (a few lines)
-- `src/config/metros.ts`: id, name, time zone, map center and zoom.
+- `src/config/metros.ts`: id, name, time zone, map center and zoom, and `downtowns`: the city hall's point (each city hall, for a city with several real centers). **The city's line is drive time (Kylie, Oct 23, 2026):** a room is inside when it is within about an hour's drive of the nearest downtown, Further out up to three hours, otherwise neither; never a county list. After the rooms are in (step 3), run `node scripts/further-out-drive.mjs <metro> --write` and check each new Further out row's town by eye.
 - `src/data/formula/gridlock.ts` `CITY_TYPE`: sprawl (everyone drives), hub, or transit. This sets the spill between zones and the default car share for a venue without its own. Research it, don't assume it (Kylie, Oct 6): run `docs/research/city-builds/seattle/seattle-city-type-prompt.md` with the city swapped in, and give each venue its `carShare` from the answer.
 - `src/data/formula/overlap.ts`: the city's **broad teams** (everyone's team, by year), if any.
 - `src/data/formula/weather.ts` `MONTHLY_NORMAL_F`: the heat baseline by month (empty today; the 85°F floor applies until filled). Needs a source that works for every city.

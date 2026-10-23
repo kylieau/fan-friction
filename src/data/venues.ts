@@ -2034,6 +2034,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-118.17306, 34.70278],
     capacity: [{ seats: 4500, standing: 6860, setup: 'baseball', note: 'About 4,500 permanent seats; with the grass berms the listed total is 6,860 (kept as standing room, not seats). Lancaster JetHawks, California League, until 2020. Source: https://en.wikipedia.org/wiki/The_Hangar_(Lancaster,_California)' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 87, how: 'routed', town: 'Lancaster' },
   },
   'gibson-amphitheatre': {
     id: 'gibson-amphitheatre',
@@ -2184,7 +2185,7 @@ export const VENUES: Record<string, Venue> = {
   // (docs/research/city-builds/small-rooms-big-cities-answer-2.md, Oct 16, 2026; Kylie's OK on the scope, Oct 16): Los Angeles,
   // Orange and Ventura Counties plus the Coachella Valley; the Inland Empire rows (Ontario, San Bernardino, Riverside, Temecula,
   // Highland, Lake Elsinore) are held. The Coachella Valley rooms are further out since Oct 22, 2026 (Kylie: "coachella valley
-  // is definitely further out"; 144 to 164 minutes from the city's center), so they never feed a Los Angeles verdict.
+  // is definitely further out"; 132 to 152 minutes from Los Angeles City Hall), so they never feed a Los Angeles verdict.
   // Locations are reference points, not entrances: the research's, or OpenStreetMap's by
   // address or building name (noted on each room). The research's Ticketmaster numbers are a different id scheme, so names
   // match. Each note keeps the research's capacity sentence and first source. ----
@@ -2198,7 +2199,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAaEFlA'],
     capacity: [{ seats: 16100, setup: 'tennis', note: 'Official (tennis). Coachella Valley (Riverside County), like the Empire Polo Club. The building name sits on this, the largest court; Stadium 2 is its own room. Official: 16,100 tennis seats. Concert and standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 155, how: 'routed', town: 'Indian Wells' },
+    furtherOut: { driveMinutes: 143, how: 'routed', town: 'Indian Wells' },
   },
   'acrisure-arena': {
     id: 'acrisure-arena',
@@ -2211,7 +2212,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZ917A-Tn'],
     capacity: [{ seats: 11007, setup: 'concert', note: 'Official (concert). Thousand Palms, Coachella Valley. Opened Dec 14, 2022 (Coachella Valley Firebirds, AHL). The hockey count is unconfirmed, so the concert figure is the only row. Official: 11,007 concert; architect reports official approximate 11,000. Hockey inventory not confirmed in this pass; do not reuse concert total for hockey. Source: https://www.acrisurearena.com/about' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 147, how: 'routed', town: 'Palm Desert' },
+    furtherOut: { driveMinutes: 135, how: 'routed', town: 'Palm Desert' },
   },
   'great-park-live': {
     id: 'great-park-live',
@@ -2233,13 +2234,13 @@ export const VENUES: Record<string, Venue> = {
     location: [-116.312441, 33.722619],
     capacity: [{ seats: 8000, setup: 'tennis', note: 'Official (tennis). All seats reserved from 2026; a ticketing change, not a capacity change. Official: 8,000 tennis seats. All Stadium 2 seats reserved from 2026; that ticketing change is not evidence of a capacity change. Concert/standing alternatives unconfirmed. Source: https://indianwellstennisgarden.com/about/history/' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 155, how: 'routed', town: 'Indian Wells' },
+    furtherOut: { driveMinutes: 143, how: 'routed', town: 'Indian Wells' },
   },
-  // Further out from Los Angeles (Kylie, Oct 19–20, 2026: big events within about 2 hours of a covered city show in a
-  // "Further out" group and never feed a verdict). The Inland Empire rooms of 5,000+ from
-  // docs/research/city-builds/small-rooms-big-cities-answer-2.md, held on Oct 16 for scope and brought in by that
-  // decision. They keep metroId 'la' so the city's feeds read them; `furtherOut` keeps them out of every LA day.
-  // Drive minutes from scripts/further-out-drive.mjs. Lake Elsinore Diamond (about 4,835 seated today) stays out.
+  // The Inland Empire rooms of 5,000+ from docs/research/city-builds/small-rooms-big-cities-answer-2.md, held on Oct 16
+  // for scope and brought in as Further out on Oct 19–20. Since the drive-time rule (Kylie, Oct 23, 2026), each sits on
+  // the side its drive from Los Angeles City Hall puts it: Toyota Arena (51 min) and Morongo Field (54) are inside and
+  // count; San Manuel Stadium and the Fowler Events Center (70–72) stay Further out. scripts/further-out-drive.mjs writes
+  // `furtherOut`. Lake Elsinore Diamond (about 4,835 seated today) stays out.
   'toyota-arena-ontario': {
     id: 'toyota-arena-ontario',
     metroId: 'la',
@@ -2253,7 +2254,6 @@ export const VENUES: Record<string, Venue> = {
       { seats: 9736, setup: 'hockey', note: 'Official (hockey). Same source.' },
     ],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 63, how: 'routed', town: 'Ontario' },
   },
   'san-manuel-stadium': {
     id: 'san-manuel-stadium',
@@ -2264,7 +2264,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAaalIA'],
     capacity: [{ seats: 8000, setup: 'baseball', note: 'Official, approximate (the current MiLB page: 8,000, seating and berm split unstated; concert setup unconfirmed). Source: https://www.milb.com/inland-empire/ballpark' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 83, how: 'routed', town: 'San Bernardino' },
+    furtherOut: { driveMinutes: 72, how: 'routed', town: 'San Bernardino' },
   },
   'morongo-field': {
     id: 'morongo-field',
@@ -2276,7 +2276,6 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZ917AVxh'],
     capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, approximate (the current team page: roughly 6,000 seated; berm split and concert limit unconfirmed). Source: https://www.milb.com/rancho-cucamonga/ballpark' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 66, how: 'routed', town: 'Rancho Cucamonga' },
   },
   'fowler-events-center': {
     id: 'fowler-events-center',
@@ -2286,7 +2285,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-117.42592, 33.92832],
     capacity: [{ seats: 5050, setup: 'basketball', note: 'Official (basketball). California Baptist University. The 2016 plan said expandable past 6,000; no concert layout is established, so that is not used. Source: https://cbulancers.com/facilities/dale-e-and-sarah-ann-fowler-events-center/41' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 76, how: 'routed', town: 'Riverside' },
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'Riverside' },
   },
   'kellogg-arena': {
     id: 'kellogg-arena',
@@ -2343,7 +2342,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-116.1929256, 33.7199699],
     capacity: [{ seats: 3700, setup: 'concert', note: 'Official (concert). Indio. The Rock Yard outside is a separate free stage. Official: 3,700 seated theater. Standing show limit unconfirmed; do not substitute free Rock Yard audience. Source: https://www.fantasyspringsresort.com/wp-content/uploads/2022/06/C_Sales_SEC_2021.pdf' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 160, how: 'routed', town: 'Indio' },
+    furtherOut: { driveMinutes: 148, how: 'routed', town: 'Indio' },
   },
   'cal-state-la-university-gym': {
     id: 'cal-state-la-university-gym',
@@ -2498,7 +2497,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZ917A2Af'],
     capacity: [{ seats: 2057, setup: 'concert', note: 'Official (concert). Rancho Mirage, Coachella Valley. 457 floor plus 1,600 in the tiers. Official: 2,057 seated, comprising 457 floor and 1,600 lounge/mezzanine/balcony. Standing setup unconfirmed. Source: https://www.aguacalientecasinos.com/entertainment/rancho-mirage-shows/the-show/book-the-show/' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 144, how: 'routed', town: 'Rancho Mirage' },
+    furtherOut: { driveMinutes: 132, how: 'routed', town: 'Rancho Mirage' },
   },
   'segerstrom-concert-hall': {
     id: 'segerstrom-concert-hall',
@@ -2638,6 +2637,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAallkA'],
     capacity: [{ seats: 1604, setup: 'concert', note: 'Official (concert). Ventura County. The auditorium; the convention rooms are separate. A promoter bills it "The Canyon at Oxnard PACC". Official city: 1,604 seated auditorium. Standing / concert floor conversion not established. Source: https://www.oxnard.gov/locations/oxnard-performing-arts-center' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 80, how: 'routed', town: 'Oxnard' },
   },
   'warner-grand-theatre': {
     id: 'warner-grand-theatre',
@@ -2779,6 +2779,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAJtF6A'],
     capacity: [{ seats: 973, standing: 1273, setup: 'concert', note: 'Official (concert). Ojai, Ventura County. 973 fixed seats plus 200–300 on the lawn (kept as standing room). Official: 973 fixed seats plus 200–300 lawn audience. Estimated combined total: 1,173–1,273 from published components. Include because combined ticketed format exceeds cutoff; exact event lawn availability varies. Source: https://www.libbeybowl.org/info' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 105, how: 'routed', town: 'Ojai' },
   },
   'exchange-la': {
     id: 'exchange-la',
@@ -2808,7 +2809,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAalnIA'],
     capacity: [{ seats: 1127, setup: 'concert', note: 'Official (concert). Palm Desert, Coachella Valley. Official: 1,127 seated in July 2022 specification posted in 2025; pit / production removals alter saleable seats. Standing unconfirmed. Source: https://www.mccallumtheatre.org/app/uploads/2025/10/Facility-Specs-2025.pdf' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 150, how: 'routed', town: 'Palm Desert' },
+    furtherOut: { driveMinutes: 138, how: 'routed', town: 'Palm Desert' },
   },
   'avalon-hollywood': {
     id: 'avalon-hollywood',
@@ -3033,6 +3034,7 @@ export const VENUES: Record<string, Venue> = {
       note: 'Reported grandstands. Observation mounds "over 75,000" are grounds, not seats, and are not stored. Source: https://www.scca.com/locations/1990905-mid-ohio-sports-car-course',
     }],
     roof: 'open',
+    furtherOut: { driveMinutes: 79, how: 'routed', town: 'Lexington' },
   },
   'celeste-center': {
     id: 'celeste-center',
@@ -3540,6 +3542,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 12300, setup: 'football', fromYear: 2017, note: 'Official; 10,300 seats plus 2,000 standing' },
     ],
     roof: 'open',
+    furtherOut: { driveMinutes: 89, how: 'routed', town: 'Stony Brook' },
   },
   'shuart-stadium': {
     id: 'shuart-stadium',
@@ -3594,6 +3597,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['ZFr9jZ77aA'],
     capacity: [{ seats: 6002, setup: 'baseball', note: 'Official (Long Island Ducks)' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 73, how: 'routed', town: 'Central Islip' },
   },
   'pacha-new-york': {
     id: 'pacha-new-york',
@@ -3752,6 +3756,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAatk1A'],
     capacity: [{ seats: 4500, setup: 'concert', note: 'Official: about 4,500 outdoors. The indoor club (about 850) is a separate, smaller room. Source: https://www.stoneponyonline.com/history/' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 83, how: 'routed', town: 'Asbury Park' },
   },
   'njit-wellness-events-center': {
     id: 'njit-wellness-events-center',
@@ -3771,6 +3776,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-73.125955, 40.91741],
     capacity: [{ seats: 4000, setup: 'basketball', note: 'Official: about 4,000 (Stony Brook). Beside LaValle Stadium. Source: https://stonybrookathletics.com/sports/2016/8/25/facilities-ston-10-arena-html' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 89, how: 'routed', town: 'Stony Brook' },
   },
   'metropolitan-opera-house': {
     id: 'metropolitan-opera-house',
@@ -4147,6 +4153,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZ917A8C7'],
     capacity: [{ seats: 1568, setup: 'concert', note: 'Reported: 1,568 seated. The Vogel is a separate smaller room. Source: https://en.wikipedia.org/wiki/Count_Basie_Center_for_the_Arts' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 71, how: 'routed', town: 'Red Bank' },
   },
   'apollo-theater': {
     id: 'apollo-theater',
@@ -4257,6 +4264,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-73.0134417, 40.7657306],
     capacity: [{ seats: 1106, setup: 'concert', fromYear: 2016, note: 'Reported: 854 orchestra plus 252 balcony after the 2016 reseating. Source: https://cdn1.creativecirclemedia.com/liadvance/files/20230517-105852-ADV%205-18-23_Web.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 89, how: 'routed', town: 'Patchogue' },
   },
   'irving-plaza': {
     id: 'irving-plaza',
@@ -4299,6 +4307,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['ZFr9jZ6aAk'],
     capacity: [{ seats: 1078, setup: 'concert', note: 'Official: 1,078 with lift seating, 1,040 without (seat map). Stony Brook. Source: https://www.stallercenter.com/contact/_MainStageSeatMap.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 88, how: 'routed', town: 'Stony Brook' },
   },
   'paramount-hudson-valley': {
     id: 'paramount-hudson-valley',
@@ -4309,6 +4318,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['ZFr9jZA1dF'],
     capacity: [{ seats: 1050, setup: 'concert', note: 'Official. Source: https://paramounthudsonvalley.com/rent-the-theater/' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 80, how: 'routed', town: 'Peekskill' },
   },
   'melrose-ballroom': {
     id: 'melrose-ballroom',
@@ -4387,6 +4397,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['Z7r9jZadX9'],
     capacity: [{ seats: 6588, setup: 'baseball', note: 'Official (baseball). Jersey Shore BlueClaws, Lakewood. The berm is extra and unsized. Official: 6,588 seats plus GA berm; separate berm maximum unconfirmed. Do not interpret 6,588 as total event maximum. Source: https://www.mlb.com/milb/news/featured/visit-shoretown-ballpark-home-of-the-jersey-shore-blueclaws?t=mlb-pipeline-coverage' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Lakewood' },
   },
   'td-bank-ballpark': {
     id: 'td-bank-ballpark',
@@ -4426,6 +4437,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-74.7101222, 41.125917],
     capacity: [{ seats: 4200, standing: 4500, setup: 'baseball', note: 'Reported (baseball). Sussex County Miners, Augusta. The field was named Columbus Field in Oct 2021; the stadium name is unchanged. Reported: 4,200 seats / 4,500 including standing room. Official current site confirms Miners and ticketed seasonal events, without numerical seating inventory retrieved. Source: https://en.wikipedia.org/wiki/Skylands_Stadium' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Augusta' },
   },
   'loews-jersey-theatre': {
     id: 'loews-jersey-theatre',
@@ -4470,6 +4482,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAdnEaA'],
     capacity: [{ seats: 3600, note: 'Reported. Asbury Park boardwalk; shares the building with the Paramount Theatre. Closed to public events; the city announced a restoration award in Aug 2026, not a reopening. Kept for past dates. Reported planning inventory: 3,600 seated. Current event configuration unavailable because room is inactive; do not schedule as an active room. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Asbury Park' },
   },
   'brooklyn-hangar': {
     id: 'brooklyn-hangar',
@@ -4563,6 +4576,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAat7vA'],
     capacity: [{ seats: 1600, note: 'Reported. Asbury Park boardwalk, the auditorium beside Convention Hall. Inactive while the restoration proceeds; kept for past dates. Reported planning inventory: 1,600 seated. Current post-restoration inventory unconfirmed; inactive record for historical logs. Source: https://asburyparkartscouncil.org/wp-content/uploads/2023/08/230710-AP-Arts-and-Culture-Plan_V2_Appendix.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Asbury Park' },
   },
   'canavan-arena': {
     id: 'canavan-arena',
@@ -4611,6 +4625,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZ917Am4e'],
     capacity: [{ seats: 1100, note: 'Official. Middletown, Orange County NY (17 South Street). No standing room; the operator prohibits it. Official: 1,100 seated theater. Operator explicitly prohibits standing room; no GA standing setup. No post-2016 numerical change established. Source: https://middletownparamount.com/about-us/' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 97, how: 'routed', town: 'Middletown' },
   },
   'strand-theater-lakewood': {
     id: 'strand-theater-lakewood',
@@ -4620,6 +4635,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-74.2155111, 40.0942531],
     capacity: [{ seats: 1042, note: 'Official. Lakewood, Ocean County; the Ocean County Center for the Arts. Official state cultural-trust inventory: up to 1,042 seated. Standing configuration unconfirmed. Source: https://nj.gov/state/culturaltrust/assets/pdf/2026-ct-qualified-orgs-0124.pdf' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 91, how: 'routed', town: 'Lakewood' },
   },
   'golden-dome': {
     id: 'golden-dome',
@@ -4842,7 +4858,7 @@ export const VENUES: Record<string, Venue> = {
     // Fallback until the measure runs: one road in, wooded hillside site (the research).
     strained: true,
   },
-  // Satellite in George, three hours out, the way Empire Polo Club rides with Los Angeles.
+  // Further out since Oct 23, 2026 (Kylie: "yes"): George is about three hours from downtown Seattle, so a Gorge show is listed for reference and never counts in a Seattle verdict.
   'gorge-amphitheatre': {
     id: 'gorge-amphitheatre',
     metroId: 'seattle',
@@ -4857,6 +4873,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'open',
     strained: true,
+    furtherOut: { driveMinutes: 180, how: 'routed', town: 'George' },
   },
   'seattle-center': {
     id: 'seattle-center',
@@ -5315,6 +5332,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAa1laA'],
     capacity: [{ seats: 47000, setup: 'racing', note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
     roof: 'open',
+    furtherOut: { driveMinutes: 68, how: 'routed', town: 'Joliet' },
   },
   // ---------- Dallas–Fort Worth (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md; car shares from docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
   // Not venue rows: Fair Park's grounds and the Will Rogers grounds (sized per fair day), PGA Frisco, the convention halls, and
@@ -5894,7 +5912,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 125000, setup: 'concert', fromYear: 2017, note: 'The daily cap after Indio raised it; 2018 sold out at this figure.' },
     ],
     roof: 'open',
-    furtherOut: { driveMinutes: 164, how: 'routed', town: 'Indio' },
+    furtherOut: { driveMinutes: 152, how: 'routed', town: 'Indio' },
   },
   'ventura-theater': {
     id: 'ventura-theater',
@@ -5904,6 +5922,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpapT1e'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated. Ventura is part of Los Angeles here.' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Ventura' },
   },
   // ---- Atlanta (docs/research/city-builds/atlanta/atlanta-venue-table-answer.md, Oct 7, 2026). Capacities labeled as the research
   // labeled them; car shares from docs/research/city-builds/atlanta/atlanta-city-type-answer.md (one value per venue, Kylie, Oct 6).
@@ -13552,6 +13571,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-80.0431, 41.0581],
     capacity: [{ seats: 10000, setup: 'football', note: 'Official Slippery Rock athletics. Source: https://rockathletics.com/facilities/mihalik-thompson-stadium/7' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 68, how: 'routed', town: 'Slippery Rock' },
   },
   'hepner-bailey-adamson-stadium': {
     id: 'hepner-bailey-adamson-stadium',
@@ -13624,6 +13644,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-79.6398154, 39.966393],
     capacity: [{ seats: 5000, note: 'Reported 2006-era grant figure; no later count found. Source: https://www.heraldstandard.com/news/2006/sep/30/fair-gets-grant/' }],
     roof: 'open',
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'Dunbar' },
   },
   'eqt-park': {
     id: 'eqt-park',
@@ -13697,6 +13718,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-80.0474988, 41.0604138],
     capacity: [{ seats: 3000, setup: 'basketball', note: 'Official Slippery Rock athletics. Source: https://rockathletics.com/facilities/?id=6' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 67, how: 'routed', town: 'Slippery Rock' },
   },
   'joe-walton-stadium': {
     id: 'joe-walton-stadium',
@@ -13715,6 +13737,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpapoUe'],
     capacity: [{ seats: 2834, setup: 'concert', note: 'Wiki. Lawrence County edge room. Source: https://en.wikipedia.org/wiki/Scottish_Rite_Cathedral_(New_Castle,_Pennsylvania)' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 68, how: 'routed', town: 'New Castle' },
   },
   'benedum-center': {
     id: 'benedum-center',
@@ -15182,6 +15205,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-73.1205518, 40.9090809],
     capacity: [{ seats: 1970, note: 'Reported (volleyball). Stony Brook, Stony Brook. Volleyball; the former basketball home. Source: https://en.wikipedia.org/wiki/Pritchard_Gymnasium' }],
     roof: 'indoor',
+    furtherOut: { driveMinutes: 88, how: 'routed', town: 'Stony Brook' },
   },
   'northwell-health-ice-center': {
     id: 'northwell-health-ice-center',

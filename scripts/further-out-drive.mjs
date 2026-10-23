@@ -1,60 +1,106 @@
-// The drive from a covered city's core to each further-out room (Kylie, Oct 19–20, 2026: "Further out", big events
-// within about a 2-hour drive). Computed once per room and written into src/data/venues.ts as
-// `furtherOut: { driveMinutes, how }`; always an estimate, never live traffic.
-//   node scripts/further-out-drive.mjs          rooms whose drive is still 0
-//   node scripts/further-out-drive.mjs --all    every further-out room again
-// The core is the city's map center (src/config/metros.ts). Routing: the public OSRM demo server (OpenStreetMap
-// data; light, non-commercial use, at most one request a second; no key). When it fails, a straight-line estimate:
-// miles × 1.3 for roads, at 45 mph, labeled 'straight-line'.
+// Which side of a city's line each room sits on, by drive time (Kylie, Oct 23, 2026, the drive-time rule from
+// docs/research/topics/city-boundary-answer.md): inside when the normal drive from the nearest of the city's downtowns
+// (src/config/metros.ts, `downtowns`) is about an hour or less; Further out beyond that and up to three hours (listed
+// for reference, never in a verdict; Oct 19–20); past three hours, neither (reported here, never written: the room stays
+// on file and loggable). Every room in every city, any size. Always an estimate, never live traffic.
+//   node scripts/further-out-drive.mjs           report the rooms whose side differs from the rule
+//   node scripts/further-out-drive.mjs --write   write it: set or refresh `furtherOut` in src/data/venues.ts, clear it
+//                                                from rooms the rule puts inside
+//   node scripts/further-out-drive.mjs <metro>   one city
+// Routing: the public OSRM demo server (OpenStreetMap data, no traffic; light non-commercial use, about one request a
+// second, no key), one table request per downtown and 90 rooms. A Further out row's town comes from OpenStreetMap's
+// reverse lookup (Nominatim, one request a second) the first time; after that the stored town is kept.
 
 import path from 'node:path';
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
 
+/** "About an hour": 60 minutes plus the router's margin (no traffic, a reference point rather than a gate). */
+const INSIDE_MINUTES = 64;
+/** The Further out ceiling (three hours, so The Gorge and the Coachella Valley stay listed). */
+const FURTHER_OUT_MINUTES = 180;
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const all = process.argv.includes('--all');
+const write = process.argv.includes('--write');
+const only = process.argv.slice(2).find((a) => !a.startsWith('--'));
 const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
-const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
+const { VENUES, venueNameOn } = await server.ssrLoadModule('/src/data/venues.ts');
 const { METROS } = await server.ssrLoadModule('/src/config/metros.ts');
 await server.close();
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-const miles = ([lng1, lat1], [lng2, lat2]) => {
-  const rad = Math.PI / 180;
-  const a = Math.sin(((lat2 - lat1) * rad) / 2) ** 2 + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(((lng2 - lng1) * rad) / 2) ** 2;
-  return 3958.8 * 2 * Math.asin(Math.sqrt(a));
-};
+const UA = { 'User-Agent': 'FanFriction/1.0 (personal app; drive times for city lines)' };
+const today = new Date().toISOString().slice(0, 10);
 
-async function routed(from, to) {
-  const url = `https://router.project-osrm.org/route/v1/driving/${from[0]},${from[1]};${to[0]},${to[1]}?overview=false`;
-  try {
-    const r = await fetch(url, { headers: { 'User-Agent': 'FanFriction/1.0 (personal app; one-off drive times)' } });
-    if (!r.ok) return null;
-    const j = await r.json();
-    const s = j.routes?.[0]?.duration;
-    return typeof s === 'number' ? Math.round(s / 60) : null;
-  } catch {
-    return null;
+/** Minutes from one point to each room, null where the router found no road. */
+async function table(from, rooms) {
+  const out = [];
+  for (let k = 0; k < rooms.length; k += 90) {
+    const chunk = rooms.slice(k, k + 90);
+    const coords = [from, ...chunk.map((v) => v.location)].map(([x, y]) => `${x},${y}`).join(';');
+    let j = {};
+    for (let tries = 0; tries < 3 && j.code !== 'Ok'; tries += 1) {
+      if (tries) await sleep(3000);
+      const r = await fetch(`https://router.project-osrm.org/table/v1/driving/${coords}?sources=0&annotations=duration`, { headers: UA }).catch(() => null);
+      j = r?.ok ? await r.json() : {};
+    }
+    if (j.code !== 'Ok') throw new Error('the router did not answer');
+    out.push(...j.durations[0].slice(1).map((s) => (s == null ? null : Math.round(s / 60))));
+    await sleep(1200);
   }
+  return out;
+}
+
+async function townOf([lng, lat]) {
+  const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&zoom=14&lat=${lat}&lon=${lng}`, { headers: UA });
+  await sleep(1100);
+  const a = (await r.json()).address ?? {};
+  // "Town of Brookhaven", "Slippery Rock Township" read as the place people say; check new rows by eye all the same.
+  const name = a.village ?? a.town ?? a.city ?? a.hamlet ?? a.municipality ?? a.county ?? '';
+  return name.replace(/^(?:Town|City|Village|Borough) of /, '').replace(/ Township$/, '');
 }
 
 const file = path.join(root, 'src', 'data', 'venues.ts');
 let src = await readFile(file, 'utf8');
-let written = 0;
-for (const venue of Object.values(VENUES)) {
-  if (!venue.furtherOut || (!all && venue.furtherOut.driveMinutes > 0)) continue;
-  const core = METROS[venue.metroId]?.center;
-  if (!core) continue;
-  const minutes = await routed(core, venue.location);
-  await sleep(1100);
-  const how = minutes ? 'routed' : 'straight-line';
-  const drive = minutes ?? Math.round(((miles(core, venue.location) * 1.3) / 45) * 60);
-  const block = new RegExp(`(id: '${venue.id}',[\\s\\S]*?furtherOut: \\{ driveMinutes: )\\d+(, how: ')[a-z-]+(')`);
-  if (!block.test(src)) { console.log(`could not place the drive for ${venue.id}`); continue; }
-  src = src.replace(block, `$1${drive}$2${how}$3`);
-  written += 1;
-  console.log(`${venue.id}: ${drive} min from ${venue.metroId}'s core (${how}; ${miles(core, venue.location).toFixed(0)} mi straight)`);
+const changes = [];
+for (const metro of Object.values(METROS)) {
+  if (only && metro.id !== only) continue;
+  const rooms = Object.values(VENUES).filter((v) => v.metroId === metro.id);
+  if (!rooms.length) continue;
+  const best = new Array(rooms.length).fill(null);
+  for (const point of metro.downtowns) {
+    (await table(point, rooms)).forEach((m, i) => { if (m != null && (best[i] == null || m < best[i])) best[i] = m; });
+  }
+  for (const [i, venue] of rooms.entries()) {
+    const minutes = best[i];
+    if (minutes == null) { console.log(`${venue.id}: no road route; left as it is`); continue; }
+    const side = minutes <= INSIDE_MINUTES ? 'inside' : minutes <= FURTHER_OUT_MINUTES ? 'further out' : 'neither';
+    const now = venue.furtherOut ? 'further out' : 'inside';
+    const label = `${metro.id} ${venueNameOn(venue, today)} (${venue.id}): ${minutes} min`;
+    if (side === 'neither') { console.log(`${label}, past the Further out ceiling; ${now} today, not written`); continue; }
+    const opened = [`\n  '${venue.id}': {\n`, `\n  ${venue.id}: {\n`].map((k) => src.indexOf(k)).filter((x) => x >= 0);
+    const blockStart = opened.length ? opened[0] : -1;
+    const blockEnd = src.indexOf('\n  },\n', blockStart);
+    if (blockStart < 0 || blockEnd < 0) { console.log(`could not find ${venue.id} in venues.ts`); continue; }
+    const block = src.slice(blockStart, blockEnd);
+    const line = /\n    furtherOut: \{ driveMinutes: \d+, how: '[a-z-]+', town: '((?:[^'\\]|\\.)*)' \},/;
+    if (side === 'inside') {
+      if (now === 'inside') continue;
+      changes.push(`${label}: further out → inside`);
+      if (write) src = src.slice(0, blockStart) + block.replace(line, '') + src.slice(blockEnd);
+      continue;
+    }
+    const stored = block.match(line);
+    if (now === 'inside') changes.push(`${label}: inside → further out`);
+    else if (venue.furtherOut.driveMinutes !== minutes) changes.push(`${label}: further out, drive ${venue.furtherOut.driveMinutes} → ${minutes}`);
+    else continue;
+    if (!write) continue;
+    const town = stored ? stored[1] : (await townOf(venue.location)).replace(/'/g, "\\'");
+    const next = `\n    furtherOut: { driveMinutes: ${minutes}, how: 'routed', town: '${town}' },`;
+    src = src.slice(0, blockStart) + (stored ? block.replace(line, next) : block + next) + src.slice(blockEnd);
+  }
 }
-await writeFile(file, src);
-console.log(`${written} drive times written.`);
+if (write) await writeFile(file, src);
+console.log(changes.join('\n'));
+console.log(`${changes.length} rooms ${write ? 'written' : 'differ (run with --write to apply)'}.`);
