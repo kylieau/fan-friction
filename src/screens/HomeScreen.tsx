@@ -38,7 +38,7 @@ import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/date
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { eventRowPath, loggedRowPath, mapPath } from '../lib/view';
-import { FeedRow } from './FollowingScreen';
+import { FeedRow } from '../components/FeedRow';
 import { TitleText } from '../components/TitleText';
 
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.

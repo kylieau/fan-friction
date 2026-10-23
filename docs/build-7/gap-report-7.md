@@ -9,9 +9,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 2. Naming | done | `75184b41` | official names in search results, the Faves picker rows, New stub's team list |
 | 3. Cost row, blue rows, 44 pt seat line, Edit stub | done | `e1f56f3d`, `7a3a3b19` | Codex review 1 after this |
 | 4. Routes and tab bar | done | `2c007029` | Codex review 2 after this |
-| 5. Upcoming | done | (step 5 commit) | own screen, plans band, filter sheet, no earlier cue anywhere |
-| 6. Activity | next | | Codex review 3 after this |
-| 7. Log an event sheet | | | |
+| 5. Upcoming | done | `fe90842f` | own screen, plans band, filter sheet, no earlier cue anywhere |
+| 6. Activity | done | (step 6 commit) | Codex review 3 after this |
+| 7. Log an event sheet | next | | |
 | 8. Your stubs page | | | |
 | 9. You rebuild | | | |
 | 10. Ranks, Recap | | | |
@@ -63,6 +63,15 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - `FollowingScreen` now renders only the Friends side (Activity) until step 6 replaces it. The shared pieces it used (`Picked`, `Check`, `toggleIn`, `subOf`) now live in `FilterSheet.tsx`.
 - Screenshots: `.playwright-mcp/b7-upcoming.png`, `b7-upcoming-filter.png`, `b7-upcoming-filtered.png`.
 
+### Step 6. Activity
+- `src/screens/ActivityScreen.tsx` replaces the Friends side of the old Following screen (`FollowingScreen.tsx` is removed; `FeedRow`, which Home's strip uses, moved to `src/components/FeedRow.tsx`).
+- **Your own entries mixed in** (Locked): built locally from your log (`ownLines`: stubs from the last 60 days, every plan ahead including Interested) under a `You` pseudo-profile that is never saved or sent; merged by event in `mergeFeed` with You first; the people line reads "You attended", "You're attending", "You, Sam R. +1 attending". Your own stub's read wins the row's tile. Nothing new is read from or written to the account for this.
+- **Filter sheet:** Hide mine (a switch; sticky, `prefs` key `activity-hide-mine`, per device, Locked), People (All people, then the approved people you follow with "N in your feed"), Activity chips All / Attended / Attending / Watching / Watched / Interested (Watching added, Locked). People and kind picks live in sessionStorage; Hide mine survives a reload (checked).
+- **Signed out** (Locked): the sign-in card (`AccountBlock`, the same card You will use) above your own local entries.
+- No Earlier line or cue (shared `Timeline`, step 5). Filter button measured 36 × 36 px against search 36 × 36 px.
+- Managing people (requests, find, following / followers) is no longer in a sheet here; the "Find people" empty state still deep-links to the People section, which step 12 turns into a page section.
+- Screenshots: `.playwright-mcp/b7-activity.png`, `b7-activity-filter.png`, `b7-activity-hidemine.png`.
+
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
 
@@ -75,6 +84,7 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - **A 0 on one line is allowed** ("parking was free" beside a paid ticket); a cost with no lines and no Free is "not entered".
 
 ## Skipped
+- Own Interested plans are on Activity even though friends' Interested answers never reach the feed (the `plan_cards` reader keeps them off). The chip row the notes lock has Interested on it, so your own show; a friend's Interested would need a server-side change, which is out of scope. Logged as a lean.
 - Plan band rows read "Attending" without the Fave's name after it (mock 08 shows "Attending · UCLA FB"). A plan does not point at a Fave; matching by title would be a guess. Lean: the status word alone.
 
 ## SQL for Kylie
