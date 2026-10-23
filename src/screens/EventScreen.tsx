@@ -779,7 +779,7 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
   return (
     <div className="screen page event-page">
       {/* Back where you came from; on a cold open, the team's page or My Stubs (its date has no map to open). */}
-      <BackLink to={link ? `/favorites/team/${link.teamId}` : '/stubs'} />
+      <BackLink to={link ? `/favorites/team/${link.teamId}` : '/you/stubs'} />
       <header className="event-head">
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(event).key} size={18} className="title-type-icon" />

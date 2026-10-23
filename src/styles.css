@@ -75,7 +75,8 @@ button {
 
 .tabbar {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* Five slots since build 7: four tabs and the center "+" (mock 01). */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   background: var(--chrome);
   border-top: 1px solid rgba(15, 27, 45, 0.12);
   box-shadow: none;
@@ -98,6 +99,36 @@ button {
 .tab.active {
   color: var(--dodger);
   font-weight: 700;
+}
+
+/* The center "+" (build 7, Locked; mock 02): a 48 px action-blue circle rising about 7 px above the bar, a thin
+   bar-coloured ring and a soft shadow, no label. A button that opens a sheet, never a selected tab. */
+.tab-log {
+  justify-content: flex-start;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tab-log-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: -13px;
+  border-radius: 50%;
+  background: var(--action);
+  color: var(--card);
+  box-shadow:
+    0 0 0 3px var(--chrome),
+    0 6px 14px rgba(15, 27, 45, 0.25);
+}
+
+.tab-log-circle svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* Following's two segments (build notes 3, 4.6): an icon and a short word each. */
@@ -3202,41 +3233,6 @@ button {
   color: #b98500;
 }
 
-.stub-fab {
-  position: absolute;
-  right: 16px;
-  bottom: 14px;
-  z-index: 4;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  height: 48px;
-  padding: 0 18px 0 14px;
-  border-radius: 24px;
-  background: var(--dodger);
-  color: var(--card);
-  font-size: 15px;
-  font-weight: 800;
-  text-decoration: none;
-  box-shadow: 0 6px 16px rgba(15, 27, 45, 0.25);
-  transition: padding 160ms ease;
-}
-
-.stub-fab svg {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-}
-
-.stub-fab.small {
-  width: 48px;
-  padding: 0;
-  justify-content: center;
-}
-
-.stub-fab.small .stub-fab-label {
-  display: none;
-}
 
 .stubs-empty {
   align-items: center;
@@ -8290,11 +8286,6 @@ ul.fav-strip {
   padding: 0 12px;
 }
 
-.stub-fab {
-  height: 40px;
-  bottom: 12px;
-}
-
 .day-nav-step {
   width: 30px;
   height: 30px;
@@ -9924,4 +9915,18 @@ a.follow-lead::after {
 .review-status {
   font-size: 14px;
   color: var(--muted, #5b6b82);
+}
+
+/* Build 7: room under every scrolling list for the raised "+" (about 7 px over the bar), so nothing hides under it. */
+.page,
+.timeline-scroll {
+  padding-bottom: 32px;
+}
+
+.add-embedded {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 70dvh;
+  overflow-y: auto;
 }

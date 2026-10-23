@@ -219,7 +219,7 @@ export function HomeScreen() {
       {comingUp.length > 0 && (
         <section className="you-block" aria-labelledby="coming-heading">
           <h2 id="coming-heading" className="you-heading heading-link-row">
-            <Link to="/stubs" className="heading-link">
+            <Link to="/you/stubs" className="heading-link">
               Your next event ›
             </Link>
           </h2>
@@ -249,7 +249,7 @@ export function HomeScreen() {
       {account && (feedShown.length > 0 || newUser) && (
         <section className="you-block" aria-labelledby="following-heading">
           <h2 id="following-heading" className="you-heading heading-link-row">
-            <Link to="/following?tab=friends" className="heading-link">
+            <Link to="/activity" className="heading-link">
               Following ›
             </Link>
           </h2>
@@ -270,7 +270,7 @@ export function HomeScreen() {
       {favoritesWeek.length > 0 && (
         <section className="you-block" aria-labelledby="favorites-heading">
           <h2 id="favorites-heading" className="you-heading heading-link-row">
-            <Link to="/following" className="heading-link">
+            <Link to="/upcoming" className="heading-link">
               Favorites this week ›
             </Link>
           </h2>
@@ -295,7 +295,7 @@ export function HomeScreen() {
       {recent.length > 0 && (
         <section className="you-block" aria-labelledby="recent-heading">
           <h2 id="recent-heading" className="you-heading heading-link-row">
-            <Link to="/stubs" className="heading-link">
+            <Link to="/you/stubs" className="heading-link">
               Recent ›
             </Link>
           </h2>

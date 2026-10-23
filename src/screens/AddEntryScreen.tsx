@@ -63,7 +63,11 @@ const OTHER = '__other__';
  * Add an event to your log. Search first: a listed night is one tap away.
  * When nothing fits, type it in yourself (Kylie, Oct 6: anything can be logged).
  */
-export function AddEntryScreen() {
+/**
+ * Inside the Log an event sheet (build 7, step 4) the same content shows without the page chrome; a save closes the
+ * sheet by navigating, as the page does.
+ */
+export function AddEntryScreen({ embedded = false }: { embedded?: boolean } = {}) {
   const homeId = getHomeId() ?? 'la';
   const [query, setQuery] = useState('');
   const [hits, setHits] = useState<DateSearchHit[] | null>(null);
@@ -112,10 +116,10 @@ export function AddEntryScreen() {
   }, [homeId, trimmed]);
 
   return (
-    <div className="screen page add-page">
-      <BackLink to="/stubs" />
-      <h1 className="page-title">New stub</h1>
-      {firstVisit && <p className="you-fine">Saved to your Stubs</p>}
+    <div className={embedded ? 'add-page add-embedded' : 'screen page add-page'}>
+      {!embedded && <BackLink to="/you/stubs" />}
+      {!embedded && <h1 className="page-title">New stub</h1>}
+      {firstVisit && !embedded && <p className="you-fine">Saved to your Stubs</p>}
 
       {!typing && (
         <>
@@ -265,7 +269,7 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
     // A date still ahead is a plan; it becomes an entry once the date passes (C059).
     if (ahead) {
       addManualPlan(night, homeId);
-      navigate('/stubs', { replace: true });
+      navigate('/you/stubs', { replace: true });
       return;
     }
     const entry = addManualEntry(night, homeId);

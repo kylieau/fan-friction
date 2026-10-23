@@ -4,7 +4,6 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { SearchButton } from '../components/SearchButton';
 import { PlanRow, StubRow } from '../components/StubRows';
-import { PlusIcon } from '../components/Icons';
 import {
   getPersonalLog,
   getSaveWarning,
@@ -34,8 +33,8 @@ type Chip = 'all' | 'sports' | 'concerts' | 'watched' | 'attended';
  * Stubs (build 6, item 6; Kylie, Oct 15 and 16): the diary as one line of time. Past stubs run down to a
  * "today" line, then the plans ahead; month bands only. A row is its date box, the title over the venue,
  * your state on its own last line, and the small read box: no crowd, ring or occasion tag (the diary
- * shows information, not conclusions). The chips and tag picker narrow the past. The floating "+ Stub it"
- * shrinks to "+" as the list scrolls and hides only when there are no stubs and no plans (Kylie, Q3).
+ * shows information, not conclusions). The chips and tag picker narrow the past. Logging is the tab bar's "+"
+ * (build 7; the floating "+ Stub it" went with it).
  */
 export function StubsScreen() {
   const filterRow = useEdgeFade();
@@ -53,7 +52,6 @@ export function StubsScreen() {
   const [tagQuery, setTagQuery] = useState('');
   // The picker filters the past, so it lists the tags on your stubs; plans carry theirs into a stub later.
   const known = useMemo(() => tagSummaries(log.added, []), [log]);
-  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
@@ -109,7 +107,6 @@ export function StubsScreen() {
     group: timelineGroup({ sort: plan.date, label: '', precision: 'day' }),
     node: <PlanRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} typeKey={plan.eventId ? planTypes.get(plan.eventId) : undefined} />,
   }));
-  const nothing = entries.length === 0 && plansAhead.length === 0;
 
   return (
     <div className="screen page stubs-page timeline-page">
@@ -184,7 +181,6 @@ export function StubsScreen() {
           past={pastItems}
           future={futureItems}
           todayLabel={dayBandLabel(today, today)}
-          onScrolled={setScrolled}
           emptyPast={
             // The decided empty-past copy (Kylie, Oct 16), above the line: no "Stub it" button here, only the way to today.
             <div className="card empty-card">
@@ -210,14 +206,6 @@ export function StubsScreen() {
         />
       </section>
 
-      {/* The extended floating button (build notes 3, 4.4): bottom right above the bar; "+" alone once the list has scrolled.
-          Hidden only when there is nothing on either side of the line (Kylie, Oct 16, Q3). */}
-      {!nothing && (
-        <Link to="/you/add" className={`stub-fab${scrolled ? ' small' : ''}`} aria-label="Stub it">
-          <PlusIcon />
-          <span className="stub-fab-label">Stub it</span>
-        </Link>
-      )}
     </div>
   );
 }

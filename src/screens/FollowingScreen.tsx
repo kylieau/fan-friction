@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
 import { PeopleIcon, SlidersIcon, StarIcon } from '../components/Icons';
@@ -54,16 +54,13 @@ const SPAN_DAYS = 60;
  * 44 × 44 sliders button beside the segmented control is both the timeline's filter and the way to manage Faves
  * and Friends; while a filter is on it turns solid with a count and a chip row shows what is picked.
  */
-export function FollowingScreen() {
+export function FollowingScreen({ segment: routeSegment }: { segment?: FollowingSegment } = {}) {
   const chipRow = useEdgeFade();
-  const [params, setParams] = useSearchParams();
-  const segment: FollowingSegment = params.get('tab') === 'friends' ? 'friends' : 'faves';
-  const pick = (next: FollowingSegment) => {
-    const nextParams = new URLSearchParams(params);
-    if (next === 'faves') nextParams.delete('tab');
-    else nextParams.set('tab', next);
-    setParams(nextParams, { replace: true });
-  };
+  const [params] = useSearchParams();
+  const navigate = useNavigate();
+  // Build 7 (step 4): the two sides are the Upcoming and Activity tabs, so the route says which one shows.
+  const segment: FollowingSegment = routeSegment ?? (params.get('tab') === 'friends' ? 'friends' : 'faves');
+  const pick = (next: FollowingSegment) => navigate(next === 'faves' ? '/upcoming' : '/activity', { replace: true });
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
@@ -123,7 +120,7 @@ export function FollowingScreen() {
   return (
     <div className="screen page timeline-page">
       <div className="you-header">
-        <h1 className="page-title">Following</h1>
+        <h1 className="page-title">{segment === 'faves' ? 'Upcoming' : 'Activity'}</h1>
         <SearchButton className="you-search" />
       </div>
       <div className="following-top">

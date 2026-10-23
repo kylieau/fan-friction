@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { TabBar } from './components/TabBar';
+import { LogSheet } from './components/LogSheet';
 import { HomePicker } from './components/HomePicker';
 import { HomeScreen } from './screens/HomeScreen';
 import { ExploreScreen } from './screens/ExploreScreen';
@@ -39,8 +40,32 @@ function PanelRedirect({ section }: { section: string }) {
   return <Navigate to={`/you?${params.toString()}`} replace />;
 }
 
+/**
+ * Following became two tabs in build 7: its Faves side is Upcoming, its Friends side (`?tab=friends`) is Activity.
+ * Old links land on the right one.
+ */
+function FollowingRedirect() {
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const friends = params.get('tab') === 'friends';
+  params.delete('tab');
+  const rest = params.toString();
+  return <Navigate to={`${friends ? '/activity' : '/upcoming'}${rest ? `?${rest}` : ''}`} replace />;
+}
+
+/** /stubs became the Your stubs page under You (build 7); the query (`?filter=`) rides along, and so does a tag path. */
+function StubsRedirect() {
+  const { pathname, search } = useLocation();
+  return <Navigate to={`/you${pathname}${search}`} replace />;
+}
+
 function Shell() {
   const { pathname } = useLocation();
+  // The Log an event sheet (build 7): opened by the tab bar's "+", closed by a tap outside, Escape, or going anywhere.
+  const [logging, setLogging] = useState(false);
+  useEffect(() => {
+    setLogging(false);
+  }, [pathname]);
   // The first-open picker: on while no home is set, and kept open after home is picked until Done.
   const [firstOpen, setFirstOpen] = useState(() => !getHomeId());
 
@@ -83,13 +108,18 @@ function Shell() {
           <Route path="/" element={<Navigate to="/explore" replace />} />
           <Route path="/home" element={<HomeScreen />} />
           <Route path="/explore" element={<ExploreScreen />} />
-          <Route path="/stubs" element={<StubsScreen />} />
-          <Route path="/stubs/tag/:tag" element={<TagScreen />} />
-          <Route path="/following" element={<FollowingScreen />} />
+          {/* Build 7: Upcoming and Activity are tabs; Your stubs is a page under You. The old addresses redirect. */}
+          <Route path="/upcoming" element={<FollowingScreen segment="faves" />} />
+          <Route path="/activity" element={<FollowingScreen segment="friends" />} />
+          <Route path="/you/stubs" element={<StubsScreen />} />
+          <Route path="/you/stubs/tag/:tag" element={<TagScreen />} />
+          <Route path="/stubs" element={<StubsRedirect />} />
+          <Route path="/stubs/tag/:tag" element={<StubsRedirect />} />
+          <Route path="/following" element={<FollowingRedirect />} />
           <Route path="/calendar" element={<Navigate to="/explore?view=calendar" replace />} />
           <Route path="/date/:date" element={<DateScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
-          <Route path="/favorites" element={<Navigate to="/following" replace />} />
+          <Route path="/favorites" element={<Navigate to="/upcoming" replace />} />
           <Route path="/favorites/edit" element={<FavoritesScreen />} />
           <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
@@ -108,7 +138,8 @@ function Shell() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
-      <TabBar />
+      <TabBar onLog={() => setLogging(true)} />
+      {logging && <LogSheet onClose={() => setLogging(false)} />}
       {/* Home city is chosen first, on Explore or Home. No first-run tips: the ? and the empty states carry it (3.17).
           It stays open after home is set, so cities can be starred, until Done (build 5, item 8). */}
       {firstOpen && (pathname === '/explore' || pathname === '/home') && <HomePicker onDone={() => setFirstOpen(false)} />}

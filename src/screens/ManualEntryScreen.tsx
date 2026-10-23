@@ -55,7 +55,7 @@ function ManualPlanPage({ planId }: { planId: string }) {
   const sub = [loggedDateLabel({ sort: plan.date, label: '', precision: 'day' }), plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ');
   return (
     <div className="screen page event-page">
-      <BackLink to="/stubs" />
+      <BackLink to="/you/stubs" />
       <header className="event-head">
         <h1 className="page-title"><TitleText text={plan.title} /></h1>
         <div className="event-sub">{sub}</div>
@@ -98,7 +98,7 @@ function ManualPlanPage({ planId }: { planId: string }) {
               className="gold-button small"
               onClick={() => {
                 removePlan(plan.id);
-                navigate('/stubs', { replace: true });
+                navigate('/you/stubs', { replace: true });
               }}
             >
               Remove
@@ -133,7 +133,7 @@ function ManualEntryPage() {
   if (!entry) {
     return (
       <div className="screen page">
-        <BackLink to="/stubs" />
+        <BackLink to="/you/stubs" />
         <h1 className="page-title">Not in your log</h1>
       </div>
     );
@@ -147,7 +147,7 @@ function ManualEntryPage() {
 
   return (
     <div className="screen page event-page">
-      <BackLink to="/stubs" />
+      <BackLink to="/you/stubs" />
 
       <header className="event-head">
         <h1 className="page-title"><TitleText text={entry.title} /></h1>
@@ -188,7 +188,7 @@ function ManualEntryPage() {
           Compare with…
         </Link>
       )}
-      <RemoveFromLog entry={entry} onRemoved={() => navigate('/stubs', { replace: true })} />
+      <RemoveFromLog entry={entry} onRemoved={() => navigate('/you/stubs', { replace: true })} />
     </div>
   );
 }

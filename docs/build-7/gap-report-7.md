@@ -7,9 +7,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 |---|---|---|---|
 | 1. Groundwork | done | `92b2a35f` | StatCards, FrictionLadder, favoriteOfficialName, Cost type + setters, cost/seats on Plan and carried at settle, opponents on game stubs |
 | 2. Naming | done | `75184b41` | official names in search results, the Faves picker rows, New stub's team list |
-| 3. Cost row, blue rows, 44 pt seat line, Edit stub | done | (step 3 commit) | Codex review 1 after this |
-| 4. Routes and tab bar | next | | Codex review 2 after this |
-| 5. Upcoming | | | |
+| 3. Cost row, blue rows, 44 pt seat line, Edit stub | done | `e1f56f3d`, `7a3a3b19` | Codex review 1 after this |
+| 4. Routes and tab bar | done | (step 4 commit) | Codex review 2 after this |
+| 5. Upcoming | next | | |
 | 6. Activity | | | Codex review 3 after this |
 | 7. Log an event sheet | | | |
 | 8. Your stubs page | | | |
@@ -18,7 +18,7 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 11. Your year, Spend details | | | |
 | 12. Profile & Settings, city switcher | | | Codex review 4 after this |
 
-**Skipped reviews (for Kylie to run afterward):** none so far.
+**Codex reviews:** stage 1 (steps 1–3) was tried twice at about 4:30 and 4:45 PM Pacific and failed both times before any analysis ("Your workspace is out of credits"). Kylie said credits return at 5:20 PM; stage 1 is run then, alongside stage 2. If it fails again it is listed here for her to run afterward.
 
 ## What shipped per step
 
@@ -44,6 +44,15 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - `.stub-seats-line` (the filled seat or cost line) gets the shared `::after` extension: measured 32 px tall with a −7 px/+7 px extension, so 46 px of tap area.
 - Event page: "Edit stub" shows whenever you have an Attended or Watched stub (was: only with tags); a plan while the date is ahead reads "Edit". Both render paths (catalog event, schedule game). A quiet "You paid $151" / "Free ticket" line sits under the seat line when a cost is entered (owner-only data on your own page).
 - Phone-size check: `.playwright-mcp/b7-cost-collapsed.png`, `b7-cost-open.png`, `b7-cost-lines.png` match mocks 21–23.
+
+### Step 4. Routes and the tab bar
+- Routes: `/upcoming` and `/activity` render the two sides of the Following screen (a bridge until steps 5–6 split it; the title reads Upcoming or Activity, the old Faves/Friends switch navigates between the two tabs); `/you/stubs` and `/you/stubs/tag/:tag` are the Your stubs page and TagScreen. Redirects keep the query string: `/stubs?filter=x` → `/you/stubs?filter=x`, `/stubs/tag/x` → `/you/stubs/tag/x`, `/following` → `/upcoming`, `/following?tab=friends` → `/activity`, `/favorites` → `/upcoming`. `/favorites/edit` still opens the picker page (the sheet comes in step 12). `?panel=` deep links unchanged (step 12).
+- Links moved (grepped, not taken from the a92cf29 list): ManualEntryScreen ×5, TagScreen ×2, CompareScreen, AddEntryScreen ×2, QuickAddSheet, EventScreen, HomeScreen ×4, FavoritePage ×2, FavoritesScreen ×2; `tagPath` in `view.ts`; `backFrom` reads `/you/stubs` before `/you`, and knows Upcoming and Activity.
+- Tab bar: Explore · Upcoming · (+) · Activity · You. The "+" is a button (`aria-label="Log an event"`, `aria-haspopup`), never selected; measured **48 × 48 px, top 6 px above the bar's top edge** (mock 02 says about 7). Thin chrome-coloured ring and soft shadow.
+- `LogSheet` shell: the bar's "+" opens a sheet titled "Log an event" with today's New stub content embedded (`AddEntryScreen embedded`); it closes on tap outside, Escape, or any navigation (a save navigates). Step 7 adds Happening now and Recent above it.
+- The floating "+ Stub it" on Stubs is gone, with its CSS; `/you/add` stays as an alias (Home's link).
+- Bottom padding: `.page` and `.timeline-scroll` get 32 px so the last row clears the raised part.
+- Checked in the browser: all seven old addresses land where listed above; Upcoming lights the Upcoming tab; `/you/stubs` lights You; no FAB on the page.
 
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.

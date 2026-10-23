@@ -141,7 +141,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     setPicking(false);
     setQuery('');
     // The picker page returns to the Faves tab (Kylie, Oct 17: the tab keeps its sub-tabs).
-    if (pathname.endsWith('/edit')) navigate('/following', { replace: true });
+    if (pathname.endsWith('/edit')) navigate('/upcoming', { replace: true });
   };
 
   const search = (
@@ -302,7 +302,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
   // Dates, in order; each row keeps its own read (Kylie's answer, build notes 3, 8.1, item 21: no heading read).
   // The schedule left this screen on Oct 19, 2026 (Kylie's Following redesign: the Faves timeline and its filter live
   // in FollowingScreen). What remains is the picker, reached from /favorites/edit and the Settings dropdown.
-  return <Navigate to="/following" replace />;
+  return <Navigate to="/upcoming" replace />;
 }
 
 export function LastFive({ marks }: { marks: readonly ('W' | 'L' | 'T')[] }) {

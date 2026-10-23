@@ -77,7 +77,7 @@ export function TagScreen() {
 
   return (
     <div className="screen page tag-page">
-      <BackLink to="/stubs" />
+      <BackLink to="/you/stubs" />
       <div className="tag-page-head">
         <h1 className="tag-page-title">
           <TagChip tag={tag} size="sheet" />
@@ -147,7 +147,7 @@ export function TagScreen() {
               className="gold-button small"
               onClick={() => {
                 deleteTag(tag);
-                navigate('/stubs', { replace: true });
+                navigate('/you/stubs', { replace: true });
               }}
             >
               Remove

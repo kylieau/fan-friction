@@ -221,7 +221,7 @@ export function FavoritePage() {
 
   return (
     <div className="screen page">
-      <BackLink to="/following" />
+      <BackLink to="/upcoming" />
 
       <div className="profile-head">
         {/* The set is the viewer's favorites plus this one (builder's call): the header reads as the strip does. */}
@@ -459,7 +459,7 @@ export function FavoritePage() {
               {fav.kind === 'team' && wins + losses > 0 ? `${mine.length} ${mine.length === 1 ? 'game' : 'games'} in My Stubs` : lastMine ? `Last: ${[lastMine.venue, lastMine.when.sort.slice(0, 4)].filter(Boolean).join(', ')}` : ''}
             </span>
           </div>
-          <Link to={filterKey ? `/stubs?filter=${encodeURIComponent(filterKey)}` : '/stubs'} className="fav-foot-link">
+          <Link to={filterKey ? `/you/stubs?filter=${encodeURIComponent(filterKey)}` : '/you/stubs'} className="fav-foot-link">
             My Stubs ›
           </Link>
         </div>

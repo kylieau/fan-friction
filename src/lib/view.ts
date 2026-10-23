@@ -92,7 +92,7 @@ export function comparePath(a: NightKey, b?: NightKey): string {
 
 /** Your tag's page under Stubs. Tags hold spaces, ' and &, so the word is encoded. */
 export function tagPath(tag: string): string {
-  return `/stubs/tag/${encodeURIComponent(tag)}`;
+  return `/you/stubs/tag/${encodeURIComponent(tag)}`;
 }
 
 /** A night typed in by hand, with no catalog event behind it. */
@@ -159,8 +159,12 @@ export interface BackTo {
 export function backFrom(pathname: string, search = ''): BackTo {
   const to = `${pathname}${search}`;
   if (pathname.startsWith('/you/people')) return { to, label: 'People' };
+  // Build 7: Your stubs is a page under You, and Following split into the Upcoming and Activity tabs.
+  if (pathname.startsWith('/you/stubs')) return { to, label: 'Stubs' };
   if (pathname.startsWith('/you')) return { to, label: 'You' };
   if (pathname.startsWith('/stubs')) return { to, label: 'Stubs' };
+  if (pathname.startsWith('/upcoming')) return { to, label: 'Upcoming' };
+  if (pathname.startsWith('/activity')) return { to, label: 'Activity' };
   if (pathname.startsWith('/following')) return { to, label: 'Following' };
   if (pathname === '/' || pathname.startsWith('/home')) return { to, label: 'Home' };
   if (pathname.startsWith('/p/')) return { to, label: 'Back' };
