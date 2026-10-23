@@ -2,6 +2,8 @@
 
 Answer to `docs/research/topics/room-former-names-question.md` (brief dated Oct 22, 2026). Researched Oct 22, 2026.
 
+Status: closed, folded into `src/data/venues.ts` (62 rooms dated, reordered or renamed; spellings and other-room names kept first so they never show, per Kylie's Oct 22 lean), Oct 23, 2026. Memory-only dates were checked by web search first (Canadian Tire Centre, Huntsman Center, Reliant Arena). Left open: see BACKLOG, "Room former names, left after the Oct 23 fold".
+
 ## Coverage and where the evidence was thin
 
 All 139 rooms in the brief are covered, in the brief's order, one row per name.

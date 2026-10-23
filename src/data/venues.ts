@@ -65,12 +65,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'american-family-insurance-amphitheater',
     metroId: 'milwaukee',
     names: [
-      {
-        name: 'Marcus Amphitheater'
-      },
-      {
-        name: 'American Family Insurance Amphitheater'
-      }
+      { name: 'Marcus Amphitheater' },
+      { name: 'American Family Insurance Amphitheater', from: '2017-01-26' },
     ],
     location: [
       -87.89756,
@@ -119,12 +115,10 @@ export const VENUES: Record<string, Venue> = {
     id: 'uwm-panther-arena',
     metroId: 'milwaukee',
     names: [
-      {
-        name: 'U.S. Cellular Arena'
-      },
-      {
-        name: 'UW-Milwaukee Panther Arena'
-      }
+      { name: 'MECCA Arena' },
+      { name: 'Wisconsin Center Arena', from: '1995-01-01' },
+      { name: 'U.S. Cellular Arena', from: '2000-01-01' },
+      { name: 'UW-Milwaukee Panther Arena', from: '2014-06-26' },
     ],
     // Spellings the school feed uses (Oct 22, 2026); matched, never shown.
     aliases: ['UWM Panther Arena'],
@@ -312,12 +306,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'franklin-field',
     metroId: 'milwaukee',
     names: [
-      {
-        name: 'Routine Field'
-      },
-      {
-        name: 'Franklin Field'
-      }
+      { name: 'Routine Field' },
+      { name: 'Franklin Field', from: '2020-06-22' },
     ],
     location: [
       -88.01583,
@@ -1033,7 +1023,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [
       { name: 'FleetCenter' },
-      { name: 'TD Banknorth Garden' },
+      { name: 'TD Banknorth Garden', from: '2005-07-01' },
       { name: 'TD Garden', from: '2009-07-01' },
     ],
     location: [-71.0621622, 42.3662986],
@@ -1241,8 +1231,11 @@ export const VENUES: Record<string, Venue> = {
     id: 'midflorida-amphitheatre',
     metroId: 'tampa',
     names: [
-      { name: 'MIDFLORIDA Credit Union Amphitheatre' },
       { name: 'Florida State Fairgrounds Amphitheatre' },
+      { name: 'Ford Amphitheatre' },
+      { name: '1-800-ASK-GARY Amphitheatre', from: '2010-06-10' },
+      { name: 'Live Nation Amphitheatre', from: '2013-01-01' },
+      { name: 'MIDFLORIDA Credit Union Amphitheatre', from: '2013-05-15' },
     ],
     // Approximate; OSM did not resolve the fairgrounds pavilion by name (research §A06).
     location: [-82.368, 27.988],
@@ -1429,7 +1422,10 @@ export const VENUES: Record<string, Venue> = {
   'mahaffey-theater': {
     id: 'mahaffey-theater',
     metroId: 'tampa',
-    names: [{ name: 'The Mahaffey Theater' }, { name: 'Duke Energy Center for the Arts' }],
+    names: [
+      { name: 'Duke Energy Center for the Arts' },
+      { name: 'The Mahaffey Theater' },
+    ],
     // Approximate; OSM did not resolve the waterfront theater name (research §A20).
     location: [-82.6318, 27.7656],
     ticketmasterIds: ['KovZpZAdE1eA'],
@@ -1646,7 +1642,13 @@ export const VENUES: Record<string, Venue> = {
   'ocean-bank-convocation-center': {
     id: 'ocean-bank-convocation-center',
     metroId: 'miami',
-    names: [{ name: 'Ocean Bank Convocation Center' }, { name: 'FIU Arena' }],
+    names: [
+      { name: 'Golden Panther Arena' },
+      { name: 'Pharmed Arena', from: '2004-09-01' },
+      { name: 'U.S. Century Bank Arena', from: '2008-01-01' },
+      { name: 'FIU Arena', from: '2014-01-01' },
+      { name: 'Ocean Bank Convocation Center', from: '2018-01-18' },
+    ],
     location: [-80.3798026, 25.7569394],
     capacity: [
       { seats: 5000, setup: 'basketball', note: 'Reported. Threshold case at exactly 5,000. Source: venue table A15.' },
@@ -2587,7 +2589,11 @@ export const VENUES: Record<string, Venue> = {
   'fred-kavli-theatre': {
     id: 'fred-kavli-theatre',
     metroId: 'la',
-    names: [{ name: 'Fred Kavli Theatre' }, { name: 'Fred Kavli Theatre at Bank of America Performing Arts Center' }, { name: 'Thousand Oaks Civic Arts Plaza' }],
+    names: [
+      { name: 'Thousand Oaks Civic Arts Plaza' },
+      { name: 'Fred Kavli Theatre at Bank of America Performing Arts Center' },
+      { name: 'Fred Kavli Theatre' },
+    ],
     // OpenStreetMap point for the address (2100, East Thousand Oaks Boulevard), not an entrance.
     location: [-118.8478829, 34.1755812],
     ticketmasterIds: ['KovZpZAEd1IA'],
@@ -3112,9 +3118,9 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [
       { name: 'PromoWest Pavilion' },
-      { name: 'Lifestyle Communities Pavilion' },
-      { name: 'Express Live!' },
-      { name: 'KEMBA Live!' },
+      { name: 'Lifestyle Communities Pavilion', from: '2005-01-01' },
+      { name: 'Express Live!', from: '2016-01-01' },
+      { name: 'KEMBA Live!', from: '2022-01-01' },
     ],
     location: [-83.01005, 39.96977],
     ticketmasterIds: ['KovZpZAEAtIA', 'KovZ917AIkj'],
@@ -3998,7 +4004,11 @@ export const VENUES: Record<string, Venue> = {
     id: 'david-geffen-hall',
     metroId: 'new-york',
     // Wu Tsai Theater is the room's name since the Oct 2022 reopening; listed before so the hall's name shows.
-    names: [{ name: 'Avery Fisher Hall' }, { name: 'Wu Tsai Theater', from: '2022-10-08' }, { name: 'David Geffen Hall', from: '2015-09-24' }],
+    names: [
+      { name: 'Wu Tsai Theater' },
+      { name: 'Avery Fisher Hall' },
+      { name: 'David Geffen Hall', from: '2015-09-24' },
+    ],
     // The room inside David Geffen Hall took the name Wu Tsai Theater at the October 2022 reopening.
     location: [-73.98306, 40.77278],
     capacity: [
@@ -4251,7 +4261,12 @@ export const VENUES: Record<string, Venue> = {
   'irving-plaza': {
     id: 'irving-plaza',
     metroId: 'new-york',
-    names: [{ name: 'Irving Plaza Powered By Verizon 5G' }, { name: 'Irving Plaza' }],
+    names: [
+      { name: 'Irving Plaza Powered By Verizon 5G' },
+      { name: 'Irving Plaza' },
+      { name: 'Fillmore New York at Irving Plaza', from: '2007-04-11' },
+      { name: 'Irving Plaza', from: '2010-06-23' },
+    ],
     location: [-73.98833, 40.735],
     ticketmasterIds: ['KovZpaFPje'],
     capacity: [{ seats: 1100, setup: 'concert', note: 'Official: 1,100 (Live Nation); reported 1,200 for concerts in 2021. Source: https://specialevents.livenation.com/venues/irving-plaza' }],
@@ -4939,7 +4954,12 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'seattle',
     // Estimated: no figure; Husky Stadium's 37% (same station) adjusted toward driving for weeknight indoor games.
     carShare: 0.5,
-    names: [{ name: 'Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena at Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena' }],
+    names: [
+      { name: 'Alaska Airlines Arena at Hec Edmundson Pavilion' },
+      { name: 'Hec Edmundson Pavilion' },
+      { name: 'Bank of America Arena at Hec Edmundson Pavilion', from: '2000-11-01' },
+      { name: 'Alaska Airlines Arena', from: '2011-01-20' },
+    ],
     location: [-122.3021, 47.6522],
     ticketmasterIds: ['KovZpZAFkkIA'],
     capacity: [{ seats: 10000, setup: 'basketball', note: 'Washington Huskies (official)' }],
@@ -5575,7 +5595,11 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'dallas-fort-worth',
     // Estimated, ours (not in the research): the same Grand Prairie cluster as Lone Star Park.
     carShare: 0.99,
-    names: [{ name: 'Grand Prairie Stadium' }, { name: 'QuikTrip Park' }],
+    names: [
+      { name: 'QuikTrip Park' },
+      { name: 'AirHogs Stadium', from: '2015-01-01' },
+      { name: 'Grand Prairie Stadium', from: '2023-07-13' },
+    ],
     location: [-96.986, 32.7683],
     ticketmasterIds: ['KovZpZA1vdtA'],
     capacity: [{ seats: 7200, setup: 'cricket', note: 'Reported: cricket (Texas Super Kings, Major League Cricket); expandable to 15,000' },
@@ -5587,7 +5611,10 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'dallas-fort-worth',
     // Estimated, ours (not in the research): a new suburban stadium with surface parking.
     carShare: 0.98,
-    names: [{ name: 'Texas Health Mansfield Stadium' }, { name: 'Mansfield Stadium' }],
+    names: [
+      { name: 'Mansfield Stadium' },
+      { name: 'Texas Health Mansfield Stadium' },
+    ],
     location: [-97.1395, 32.565],
     ticketmasterIds: ['Z7r9jZakrm'],
     capacity: [
@@ -5679,7 +5706,11 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'dallas-fort-worth',
     // Estimated: Frisco, next to Riders Field.
     carShare: 0.98,
-    names: [{ name: 'Dr Pepper Arena' }, { name: 'Comerica Center' }],
+    names: [
+      { name: 'Deja Blue Arena' },
+      { name: 'Dr Pepper Arena', from: '2009-06-01' },
+      { name: 'Comerica Center', from: '2019-01-01' },
+    ],
     location: [-96.8194, 33.1006],
     ticketmasterIds: ['KovZpZA6AEAA'],
     capacity: [
@@ -5782,7 +5813,12 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'montreal',
     // Estimated (30–45%): limited parking, a shuttle from a remote lot, two Métro lines within walking distance.
     carShare: 0.35,
-    names: [{ name: 'Stade Uniprix' }, { name: 'Stade IGA', from: '2018-04-01' }, { name: 'IGA Stadium' }],
+    names: [
+      { name: 'Stade IGA' },
+      { name: 'Stade du Maurier' },
+      { name: 'Stade Uniprix', from: '2004-01-01' },
+      { name: 'IGA Stadium', from: '2018-04-16' },
+    ],
     location: [-73.6267, 45.533],
     ticketmasterIds: ['KovZ917AQsZ', 'KovZ917A4df', 'KovZpZAFlaeA', 'Za5ju3rKuqZDdnNKoydOyGdhwTHTHZ4Cio'],
     capacity: [{ seats: 11991, setup: 'tennis', note: "Reported (Canadian Press, 2026): centre court; the grounds average about 24,000 a day during the National Bank Open (men's event in even years, women's in odd). A ~15,000-seat roofed court is planned, no dates." },
@@ -6541,7 +6577,10 @@ export const VENUES: Record<string, Venue> = {
   'dell-music-center': {
     id: 'dell-music-center',
     metroId: 'philadelphia',
-    names: [{ name: 'Robin Hood Dell East' }, { name: 'Dell Music Center' }],
+    names: [
+      { name: 'Robin Hood Dell East' },
+      { name: 'Dell Music Center', from: '2010-08-10' },
+    ],
     location: [-75.1889115, 39.9962783],
     capacity: [
       {
@@ -6563,7 +6602,11 @@ export const VENUES: Record<string, Venue> = {
   'franklin-music-hall': {
     id: 'franklin-music-hall',
     metroId: 'philadelphia',
-    names: [{ name: 'Electric Factory' }, { name: 'Franklin Music Hall' }],
+    names: [
+      { name: 'Electric Factory' },
+      { name: 'North Seventh', from: '2018-09-01' },
+      { name: 'Franklin Music Hall', from: '2018-10-18' },
+    ],
     location: [-75.1496846, 39.9591981],
     ticketmasterIds: ['KovZpZAdJ1FA', 'KovZpa2y8e'],
     capacity: [{ seats: 2700, setup: 'concert', note: 'Reported. Source: https://thetriangle.org/article/a-guide-to-philadelphia-music-venues' }],
@@ -6741,8 +6784,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'nashville',
     names: [
       { name: 'Dudley Field' },
-      { name: 'Vanderbilt Stadium' },
-      { name: 'FirstBank Stadium', from: '2022-01-01' },
+      { name: 'Vanderbilt Stadium', from: '1981-09-12' },
+      { name: 'FirstBank Stadium', from: '2022-08-29' },
     ],
     // OSM knows the site as Dudley Field (the historic name), not FirstBank Stadium.
     location: [-86.8089081, 36.1440212],
@@ -7915,7 +7958,11 @@ export const VENUES: Record<string, Venue> = {
     id: 'rogers-arena',
     metroId: 'vancouver',
     // Not Rogers Place (Edmonton) or Rogers Forum (Abbotsford).
-    names: [{ name: 'GM Place' }, { name: 'Canada Hockey Place' }, { name: 'Rogers Arena' }],
+    names: [
+      { name: 'Canada Hockey Place' },
+      { name: 'GM Place' },
+      { name: 'Rogers Arena', from: '2010-07-06' },
+    ],
     location: [-123.1089417, 49.2779085],
     ticketmasterIds: ['KovZpZAFFInA'],
     capacity: [
@@ -8350,7 +8397,11 @@ export const VENUES: Record<string, Venue> = {
   'sac-state-nest': {
     id: 'sac-state-nest',
     metroId: 'sacramento',
-    names: [{ name: 'The Nest' }, { name: 'Hornets Nest' }, { name: 'Colberg Court' }],
+    names: [
+      { name: 'Colberg Court' },
+      { name: 'Hornets Nest' },
+      { name: 'The Nest' },
+    ],
     // South Gym inside Yosemite Hall. OSM knows the hall, not the gym.
     location: [-121.4276643, 38.5625448],
     capacity: [
@@ -8381,7 +8432,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'quarry-park-amphitheater',
     metroId: 'sacramento',
     names: [
-      { name: 'Platnum Living Amphitheater at Quarry Park' },
+      { name: 'Platinum Living Amphitheater at Quarry Park' },
       { name: 'Quarry Park Amphitheater' },
     ],
     location: [-121.2339412, 38.7883736],
@@ -8411,8 +8462,9 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'mexico-city',
     names: [
       { name: 'Estadio Azteca' },
-      { name: 'Estadio Ciudad de México', from: '2026-06-11' },
       { name: 'Estadio Banorte', from: '2026-03-28' },
+      { name: 'Estadio Ciudad de México', from: '2026-06-11' },
+      { name: 'Estadio Banorte', from: '2026-07-06' },
     ],
     location: [-99.15047, 19.3029794],
     ticketmasterIds: ['KovZpZAJtkAA'],
@@ -8679,7 +8731,10 @@ export const VENUES: Record<string, Venue> = {
   'michelob-ultra-arena': {
     id: 'michelob-ultra-arena',
     metroId: 'las-vegas',
-    names: [{ name: 'Mandalay Bay Events Center' }, { name: 'Michelob ULTRA Arena' }],
+    names: [
+      { name: 'Mandalay Bay Events Center' },
+      { name: 'Michelob ULTRA Arena', from: '2021-02-11' },
+    ],
     location: [-115.1790209, 36.0906483],
     ticketmasterIds: ['Za5ju3rKuqZDe1qyFvK0tuU5Rwt4xiUMaW', 'KovZpZAJadaA'],
     capacity: [
@@ -9302,7 +9357,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [
       { name: 'Astroarena' },
-      { name: 'Reliant Arena' },
+      { name: 'Reliant Arena', from: '2000-01-01' },
       { name: 'NRG Arena', from: '2014-03-12' },
       { name: 'Reliant Arena', from: '2026-08-01' },
     ],
@@ -9318,7 +9373,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [
       { name: 'NRG Pavilion' },
-      { name: 'Reliant Arena Pavilion' },
+      { name: 'Reliant Arena Pavilion', from: '2026-08-01' },
     ],
     // Same building as Reliant Arena. OSM has one arena point. The pavilion rename is inferred from the facility rename.
     location: [-95.405969, 29.681173],
@@ -9358,8 +9413,9 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [
       { name: 'BBVA Compass Stadium' },
-      { name: 'BBVA Stadium' },
-      { name: 'Shell Energy Stadium' },
+      { name: 'BBVA Stadium', from: '2019-06-13' },
+      { name: 'PNC Stadium', from: '2021-10-01' },
+      { name: 'Shell Energy Stadium', from: '2023-01-17' },
     ],
     location: [-95.352341, 29.752026],
     ticketmasterIds: ['Za5ju3rKuqZDvIz0yXODy2BbPGRrI8dHln', 'KovZpaFrke'],
@@ -9511,7 +9567,10 @@ export const VENUES: Record<string, Venue> = {
   'cy-fair-fcu-stadium': {
     id: 'cy-fair-fcu-stadium',
     metroId: 'houston',
-    names: [{ name: 'Berry Center stadium' }, { name: 'Cy-Fair FCU Stadium' }],
+    names: [
+      { name: 'Berry Center stadium' },
+      { name: 'Cy-Fair FCU Stadium', from: '2016-07-01' },
+    ],
     location: [-95.68874, 29.905959],
     capacity: [
       { seats: 11000, setup: 'football', note: 'Reported. High-school room with no public ticket feed. Source: https://kiiitv.com/article/sports/high-school/hs-football/texas-high-school-football-stadiums-most-expensive/287-616a4f40-ba9a-4f19-98d9-4585838950d3' },
@@ -9629,7 +9688,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'houston',
     names: [
       { name: 'AVEVA Stadium' },
-      { name: 'SaberCats Stadium' },
+      { name: 'SaberCats Stadium', from: '2022-01-01' },
     ],
     // City note: map apps misplace this at 2055 Mowery Rd. OSM point is Houston Sports Park, 12131 Kirby Dr.
     location: [-95.395005, 29.638065],
@@ -9696,7 +9755,10 @@ export const VENUES: Record<string, Venue> = {
   'rogers-centre': {
     id: 'rogers-centre',
     metroId: 'toronto',
-    names: [{ name: 'SkyDome' }, { name: 'Rogers Centre' }],
+    names: [
+      { name: 'SkyDome' },
+      { name: 'Rogers Centre', from: '2005-02-02' },
+    ],
     location: [-79.38920, 43.64166],
     ticketmasterIds: ['KovZpa3Bbe'],
     capacity: [
@@ -9754,7 +9816,10 @@ export const VENUES: Record<string, Venue> = {
     id: 'cne-bandshell',
     metroId: 'toronto',
     // The Bell brand is the CNE-season name. It stays searchable; the year-round name is last so it is what the map shows.
-    names: [{ name: 'Bell SOUNDSTAGE at the Bandshell' }, { name: 'CNE Bandshell' }],
+    names: [
+      { name: 'CNE Bandshell' },
+      { name: 'Bell SOUNDSTAGE at the Bandshell', from: '2026-08-21' },
+    ],
     // Approximate. OpenStreetMap has no bandshell point. Research aggregator grounds point, about ±500 m (venue table A7).
     location: [-79.41236, 43.63507],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Reported grounds capacity, mostly standing. Admission is bundled with CNE grounds entry; do not add this crowd to a CNE gate total. Source: https://en.wikipedia.org/wiki/List_of_music_venues_in_Toronto' }],
@@ -9763,7 +9828,11 @@ export const VENUES: Record<string, Venue> = {
   'coca-cola-coliseum': {
     id: 'coca-cola-coliseum',
     metroId: 'toronto',
-    names: [{ name: 'Ricoh Coliseum' }, { name: 'Coca-Cola Coliseum' }],
+    names: [
+      { name: 'CNE Coliseum' },
+      { name: 'Ricoh Coliseum', from: '2003-11-01' },
+      { name: 'Coca-Cola Coliseum', from: '2018-07-11' },
+    ],
     location: [-79.41484, 43.63565],
     ticketmasterIds: ['KovZpZAJt7FA'],
     capacity: [
@@ -9897,7 +9966,12 @@ export const VENUES: Record<string, Venue> = {
   'caa-ed-mirvish-theatre': {
     id: 'caa-ed-mirvish-theatre',
     metroId: 'toronto',
-    names: [{ name: 'Pantages Theatre' }, { name: 'Canon Theatre' }, { name: 'Ed Mirvish Theatre' }, { name: 'CAA Ed Mirvish Theatre' }],
+    names: [
+      { name: 'Pantages Theatre' },
+      { name: 'Canon Theatre', from: '2001-09-01' },
+      { name: 'Ed Mirvish Theatre', from: '2011-12-06' },
+      { name: 'CAA Ed Mirvish Theatre', from: '2021-09-22' },
+    ],
     location: [-79.37950, 43.65522],
     ticketmasterIds: ['KovZpak1Je'],
     capacity: [{ seats: 2300, setup: 'concert', note: 'Official. A tourism page says 2,200. Source: https://mirvishproductions.com/about' }],
@@ -10153,8 +10227,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'williams-arena',
     metroId: 'minneapolis',
     names: [
-      { name: 'The Barn by Blue Cross and Blue Shield of Minnesota' },
       { name: 'Williams Arena' },
+      { name: 'The Barn by Blue Cross and Blue Shield of Minnesota', from: '2026-06-12' },
     ],
     location: [-93.2282704, 44.9769776],
     ticketmasterIds: ['KovZpapzBe'],
@@ -10372,9 +10446,11 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'indianapolis',
     carShare: 0.96,
     names: [
-      { name: 'Ruoff Music Center' },
-      { name: 'Ruoff Home Mortgage Music Center', from: '2017-01-01' },
-      { name: 'Klipsch Music Center', from: '2011-01-01' },
+      { name: 'Deer Creek Music Center' },
+      { name: 'Verizon Wireless Music Center', from: '2001-01-01' },
+      { name: 'Klipsch Music Center', from: '2011-10-01' },
+      { name: 'Ruoff Home Mortgage Music Center', from: '2017-09-27' },
+      { name: 'Ruoff Music Center', from: '2019-12-05' },
     ],
     location: [-85.9284362, 40.0044065],
     ticketmasterIds: ['KovZpvEk7A'],
@@ -10475,9 +10551,10 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'indianapolis',
     carShare: 0.85,
     names: [
-      { name: 'Everwise Amphitheater at White River State Park' },
+      { name: 'The Lawn at White River State Park' },
+      { name: 'Farm Bureau Insurance Lawn', from: '2012-03-27' },
       { name: 'TCU Amphitheater', from: '2021-01-01' },
-      { name: 'Farm Bureau Insurance Lawn', from: '2012-01-01' },
+      { name: 'Everwise Amphitheater at White River State Park', from: '2024-01-01' },
     ],
     location: [-86.1717927, 39.7659312],
     ticketmasterIds: ['KovZpZAEAAJA'],
@@ -10524,7 +10601,10 @@ export const VENUES: Record<string, Venue> = {
   'james-t-morris-arena': {
     id: 'james-t-morris-arena',
     metroId: 'indianapolis',
-    names: [{ name: 'James T. Morris Arena' }, { name: 'The Jim' }],
+    names: [
+      { name: 'The Jim' },
+      { name: 'James T. Morris Arena' },
+    ],
     location: [-86.1785, 39.7712],
     ticketmasterIds: ['KovZ917AV0i'],
     capacity: [{ seats: 4500, setup: 'basketball', note: 'Official (IU capital projects). Conflicts with 4,200 and 4,000 reported. Under construction / opening fall 2026; re-check. Source: https://cpf.iu.edu/capital-projects/projects/athletics/james-t-morris-arena.html' }],
@@ -10571,7 +10651,11 @@ export const VENUES: Record<string, Venue> = {
   'palladium-carmel': {
     id: 'palladium-carmel',
     metroId: 'indianapolis',
-    names: [{ name: 'The Palladium' }, { name: 'Center for the Performing Arts' }],
+    names: [
+      { name: 'Center for the Performing Arts' },
+      { name: 'Payne & Mencias Palladium' },
+      { name: 'The Palladium' },
+    ],
     location: [-86.1303436, 39.9699101],
     ticketmasterIds: ['KovZpZAE66FA'],
     capacity: [{ seats: 1600, setup: 'concert', note: 'Reported at naming. Source: https://www.ibj.com/articles/16351-carmel-performing-arts-center-raises-curtain-on-new-name' }],
@@ -10580,7 +10664,11 @@ export const VENUES: Record<string, Venue> = {
   'iu-indy-jungle': {
     id: 'iu-indy-jungle',
     metroId: 'indianapolis',
-    names: [{ name: 'The Jungle' }, { name: 'IU Indy Gymnasium' }, { name: 'IUPUI Gymnasium' }],
+    names: [
+      { name: 'The Jungle' },
+      { name: 'IUPUI Gymnasium' },
+      { name: 'IU Indy Gymnasium', from: '2024-07-01' },
+    ],
     location: [-86.1749711, 39.7708552],
     ticketmasterIds: ['KovZ917AY7l'],
     capacity: [{ seats: 1215, setup: 'basketball', note: 'Reported. Final season for basketball tenants in 2025–26 before Morris Arena. Source: https://en.wikipedia.org/wiki/The_Jungle_(Indianapolis)' }],
@@ -10968,8 +11056,9 @@ export const VENUES: Record<string, Venue> = {
     id: 'secu-stadium',
     metroId: 'washington-dc',
     names: [
-      { name: 'Capital One Field at Maryland Stadium' },
       { name: 'Maryland Stadium' },
+      { name: 'Byrd Stadium' },
+      { name: 'Capital One Field at Maryland Stadium', from: '2015-12-11' },
       { name: 'SECU Stadium', from: '2022-10-01' },
     ],
     location: [-76.9474534, 38.9902987],
@@ -11017,8 +11106,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.35,
     names: [
       { name: 'MCI Center' },
-      { name: 'Verizon Center' },
-      { name: 'Capital One Arena', from: '2017-01-01' },
+      { name: 'Verizon Center', from: '2006-01-01' },
+      { name: 'Capital One Arena', from: '2017-08-09' },
     ],
     location: [-77.0209378, 38.8981883],
     ticketmasterIds: ['KovZpa4DXe', 'KovZpaKuJe'],
@@ -11239,7 +11328,12 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'ottawa-gatineau',
     // Estimated (0.52, measured 2014 bus+shuttle aggregate for Redblacks ticket holders).
     carShare: 0.52,
-    names: [{ name: 'Stade Place TD' }, { name: 'Frank Clair Stadium' }, { name: 'TD Place Stadium' }],
+    names: [
+      { name: 'Stade Place TD' },
+      { name: 'Lansdowne Park' },
+      { name: 'Frank Clair Stadium', from: '1993-01-01' },
+      { name: 'TD Place Stadium', from: '2014-01-07' },
+    ],
     location: [-75.6835457, 45.3984326],
     capacity: [
       { seats: 24000, setup: 'football', note: 'Reported fixed seating for CFL/soccer. Temporary Grey Cup expansion to nearly 36,000 (2017) is not stored. Field rental 10,200 is a setup, not seats. Source: venue table A1.' },
@@ -11255,7 +11349,7 @@ export const VENUES: Record<string, Venue> = {
     names: [
       { name: 'TD Place Arena' },
       { name: 'Ottawa Civic Centre' },
-      { name: 'The Arena at TD Place' },
+      { name: 'The Arena at TD Place', from: '2014-01-07' },
     ],
     location: [-75.6835457, 45.3984326],
     ticketmasterIds: ['401513'],
@@ -11269,7 +11363,13 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'ottawa-gatineau',
     // Estimated (0.92): derived from measured 1999–2000 transit share (~3.2% of hockey attendance).
     carShare: 0.92,
-    names: [{ name: 'Centre Canadian Tire' }, { name: 'Scotiabank Place' }, { name: 'Corel Centre' }, { name: 'Canadian Tire Centre' }],
+    names: [
+      { name: 'Centre Canadian Tire' },
+      { name: 'The Palladium' },
+      { name: 'Corel Centre', from: '1996-02-01' },
+      { name: 'Scotiabank Place', from: '2006-01-19' },
+      { name: 'Canadian Tire Centre', from: '2013-07-01' },
+    ],
     location: [-75.9268973, 45.2969069],
     ticketmasterIds: ['KovZpZA7dnJA'],
     capacity: [
@@ -11281,7 +11381,13 @@ export const VENUES: Record<string, Venue> = {
   'ottawa-stadium': {
     id: 'ottawa-stadium',
     metroId: 'ottawa-gatineau',
-    names: [{ name: 'Ottawa Stadium' }, { name: 'Raymond Chabot Grant Thornton Park' }, { name: 'RCGT Park' }],
+    names: [
+      { name: 'Raymond Chabot Grant Thornton Park' },
+      { name: 'JetForm Park' },
+      { name: 'Lynx Stadium', from: '2003-01-01' },
+      { name: 'Ottawa Stadium', from: '2008-01-01' },
+      { name: 'RCGT Park', from: '2015-03-12' },
+    ],
     location: [-75.6532522, 45.4202454],
     ticketmasterIds: ['KovZ917AJDY', 'KovZpauN8e'],
     capacity: [
@@ -11424,7 +11530,8 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [
       { name: 'Kiel Center' },
-      { name: 'Scottrade Center' },
+      { name: 'Savvis Center', from: '2000-01-01' },
+      { name: 'Scottrade Center', from: '2006-09-01' },
       { name: 'Enterprise Center', from: '2018-07-01' },
     ],
     location: [-90.20262, 38.626801],
@@ -11440,12 +11547,12 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'st-louis',
     carShare: 0.96,
     names: [
+      // The -er spelling some sellers use sits first, so it never shows; dates from docs/research/topics/room-former-names-answer.md.
+      { name: 'Hollywood Casino Amphitheater' },
       { name: 'Riverport Amphitheatre' },
-      { name: 'UMB Bank Pavilion' },
-      { name: 'Verizon Wireless Amphitheater' },
-      // The -er spelling some sellers use carries the same date, so it never shows before 2014 and the -re spelling wins.
-      { name: 'Hollywood Casino Amphitheater', from: '2014-01-01' },
-      { name: 'Hollywood Casino Amphitheatre', from: '2014-01-01' },
+      { name: 'UMB Bank Pavilion', from: '2002-01-01' },
+      { name: 'Verizon Wireless Amphitheater', from: '2006-11-01' },
+      { name: 'Hollywood Casino Amphitheatre', from: '2014-12-17' },
     ],
     location: [-90.470094, 38.74481],
     ticketmasterIds: ['KovZpZAEAnaA'],
@@ -11549,7 +11656,10 @@ export const VENUES: Record<string, Venue> = {
   'carshield-field': {
     id: 'carshield-field',
     metroId: 'st-louis',
-    names: [{ name: 'T.R. Hughes Ballpark' }, { name: 'CarShield Field' }],
+    names: [
+      { name: 'T.R. Hughes Ballpark' },
+      { name: 'CarShield Field', from: '2016-04-06' },
+    ],
     location: [-90.680582, 38.816864],
     capacity: [
       {
@@ -11692,8 +11802,10 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'salt-lake-city',
     carShare: 0.8,
     names: [
-      { name: 'Vivint Smart Home Arena' },
-      { name: 'Vivint Arena' },
+      { name: 'Delta Center' },
+      { name: 'EnergySolutions Arena', from: '2006-11-20' },
+      { name: 'Vivint Smart Home Arena', from: '2015-10-26' },
+      { name: 'Vivint Arena', from: '2020-08-01' },
       { name: 'Delta Center', from: '2023-07-01' },
     ],
     location: [-111.9010551, 40.7683274],
@@ -11747,7 +11859,10 @@ export const VENUES: Record<string, Venue> = {
     id: 'jon-m-huntsman-center',
     metroId: 'salt-lake-city',
     carShare: 0.82,
-    names: [{ name: 'University of Utah Special Events Center' }, { name: 'Jon M. Huntsman Center' }],
+    names: [
+      { name: 'University of Utah Special Events Center' },
+      { name: 'Jon M. Huntsman Center', from: '1987-01-01' },
+    ],
     location: [-111.8387946, 40.7620351],
     ticketmasterIds: ['KovZpZA1EvFA'],
     capacity: [
@@ -11773,7 +11888,10 @@ export const VENUES: Record<string, Venue> = {
     id: 'days-of-47-arena',
     metroId: 'salt-lake-city',
     carShare: 0.88,
-    names: [{ name: "Days of '47 Arena" }, { name: 'Utah State Fairpark Arena' }],
+    names: [
+      { name: 'Utah State Fairpark Arena' },
+      { name: 'Days of \'47 Arena' },
+    ],
     location: [-111.9248087, 40.7745295],
     capacity: [
       { seats: 10000, setup: 'concert', note: 'Official state legislature presentation (stadium-style seats). Listing 10,240 not used. Rodeo and concerts share the bowl. Source: https://le.utah.gov/interim/2025/pdf/00000313.pdf' },
@@ -11972,7 +12090,7 @@ export const VENUES: Record<string, Venue> = {
     names: [
       { name: 'Edmonton EXPO Centre Arena' },
       { name: 'Hall D' },
-      { name: 'Flair Airlines Hangar' },
+      { name: 'Flair Airlines Hangar', from: '2022-11-10' },
     ],
     location: [-113.4580962, 53.5687097],
     capacity: [
@@ -11987,7 +12105,11 @@ export const VENUES: Record<string, Venue> = {
   'edmonton-convention-centre': {
     id: 'edmonton-convention-centre',
     metroId: 'edmonton',
-    names: [{ name: 'Shaw Conference Centre' }, { name: 'Edmonton Convention Centre' }],
+    names: [
+      { name: 'Edmonton Convention Centre' },
+      { name: 'Shaw Conference Centre', from: '1997-01-01' },
+      { name: 'Edmonton Convention Centre', from: '2019-01-01' },
+    ],
     location: [-113.4858137, 53.5411497],
     ticketmasterIds: ['KovZpaKSme'],
     // EDM3 (Kylie, Oct 14): muted. Convention halls aren't venue rows, so no capacity is stored; with no size the room
@@ -12210,7 +12332,11 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'cleveland',
     carShare: 0.88,
     // The arena inside is Henry J. Goodman Arena; sellers and the school say Wolstein Center, so it goes last (checked Oct 22, 2026).
-    names: [{ name: 'Goodman Arena' }, { name: 'Wolstein Center' }],
+    names: [
+      { name: 'Goodman Arena' },
+      { name: 'CSU Convocation Center' },
+      { name: 'Wolstein Center', from: '2005-01-01' },
+    ],
     location: [-81.6766496, 41.4992338],
     ticketmasterIds: ['KovZpZAFdEEA'],
     capacity: [
@@ -12595,7 +12721,10 @@ export const VENUES: Record<string, Venue> = {
   'the-espee': {
     id: 'the-espee',
     metroId: 'san-antonio',
-    names: [{ name: 'The Espee' }, { name: 'Lonestar Pavilion at Sunset Station' }],
+    names: [
+      { name: 'Lonestar Pavilion at Sunset Station' },
+      { name: 'The Espee', from: '2019-11-21' },
+    ],
     location: [-98.4781511, 29.4215033],
     ticketmasterIds: ['KovZ917AIE8', 'KovZpZAJJ1tA'],
     capacity: [
@@ -13120,9 +13249,9 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'detroit',
     carShare: 0.96,
     names: [
-      { name: 'Freedom Hill Amphitheatre' },
       { name: 'Michigan Lottery Amphitheatre at Freedom Hill' },
-      { name: 'Michigan Lottery Amphitheatre' },
+      { name: 'Freedom Hill Amphitheatre' },
+      { name: 'Michigan Lottery Amphitheatre', from: '2015-07-16' },
     ],
     location: [-82.9761577, 42.5641485],
     // Round-2 rule: 7,200 vs 7,300 vs 4,200 pavilion, none official; blank (BACKLOG).
@@ -13157,9 +13286,9 @@ export const VENUES: Record<string, Venue> = {
     id: 'aretha-franklin-amphitheatre',
     metroId: 'detroit',
     names: [
-      { name: 'Chene Park Amphitheatre' },
-      { name: 'Aretha Franklin Amphitheatre' },
       { name: 'The Aretha' },
+      { name: 'Chene Park Amphitheatre' },
+      { name: 'Aretha Franklin Amphitheatre', from: '2018-09-04' },
     ],
     location: [-83.0216925, 42.3340217],
     ticketmasterIds: ['KovZpa31me'],
@@ -13364,8 +13493,11 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'pittsburgh',
     carShare: 0.97,
     names: [
-      { name: 'KeyBank Pavilion' },
-      { name: 'S&T Bank Music Park' },
+      { name: 'Coca-Cola Star Lake Amphitheater' },
+      { name: 'Post-Gazette Pavilion', from: '2000-01-01' },
+      { name: 'First Niagara Pavilion', from: '2010-01-01' },
+      { name: 'KeyBank Pavilion', from: '2016-10-01' },
+      { name: 'S&T Bank Music Park', from: '2020-01-04' },
       { name: 'The Pavilion at Star Lake', from: '2020-12-01' },
     ],
     location: [-80.4336303, 40.41959],
@@ -13496,7 +13628,12 @@ export const VENUES: Record<string, Venue> = {
   'eqt-park': {
     id: 'eqt-park',
     metroId: 'pittsburgh',
-    names: [{ name: 'CONSOL Energy Park' }, { name: 'Wild Things Park' }, { name: 'EQT Park', from: '2025-03-25' }],
+    names: [
+      { name: 'Falconi Field' },
+      { name: 'CONSOL Energy Park', from: '2007-04-12' },
+      { name: 'Wild Things Park', from: '2017-01-01' },
+      { name: 'EQT Park', from: '2025-03-25' },
+    ],
     location: [-80.2836835, 40.1543643],
     ticketmasterIds: ['KovZpZAaIFdA'],
     capacity: [
@@ -13542,7 +13679,10 @@ export const VENUES: Record<string, Venue> = {
   'upmc-cooper-fieldhouse': {
     id: 'upmc-cooper-fieldhouse',
     metroId: 'pittsburgh',
-    names: [{ name: 'A.J. Palumbo Center' }, { name: 'UPMC Cooper Fieldhouse' }],
+    names: [
+      { name: 'A.J. Palumbo Center' },
+      { name: 'UPMC Cooper Fieldhouse', from: '2021-02-02' },
+    ],
     location: [-79.988138, 40.4377196],
     ticketmasterIds: ['Zkr9jZeve4', 'KovZpZAFkenA'],
     capacity: [
@@ -13814,7 +13954,10 @@ export const VENUES: Record<string, Venue> = {
     id: 'koka-booth-amphitheatre',
     metroId: 'raleigh-durham',
     carShare: 0.96, // estimate, city-type V13
-    names: [{ name: 'Amphitheatre at Regency Park' }, { name: 'Koka Booth Amphitheatre' }],
+    names: [
+      { name: 'Amphitheatre at Regency Park' },
+      { name: 'Koka Booth Amphitheatre', from: '2004-07-04' },
+    ],
     location: [-78.7953503, 35.7288197],
     ticketmasterIds: ['KovZpZAIAnkA'],
     capacity: [
@@ -13885,7 +14028,11 @@ export const VENUES: Record<string, Venue> = {
   'dorrance-field': {
     id: 'dorrance-field',
     metroId: 'raleigh-durham',
-    names: [{ name: 'Fetzer Field' }, { name: 'Dorrance Field' }],
+    names: [
+      { name: 'Fetzer Field' },
+      { name: 'UNC Soccer & Lacrosse Stadium', from: '2019-03-02' },
+      { name: 'Dorrance Field', from: '2019-09-29' },
+    ],
     location: [-79.044468, 35.9086907],
     ticketmasterIds: ['KovZpZA11AnA'],
     // Left blank: Visit Chapel Hill gives 4,200 chairback in one place and 5,025 in another, and the two sit on either side of the 5,000 floor.
