@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
 import { BookmarkIcon, TicketIcon, TvIcon } from '../components/Icons';
@@ -9,6 +8,7 @@ import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows
 import { useArtistGenres } from '../components/useArtistGenres';
 import { CheckRow, FAVORITE_KINDS, FilterButton, FilterChips, FilterSheet, SheetHeading, favoriteSub, prunePicked, readPicked, toggleIn, writePicked, type Picked } from '../components/FilterSheet';
 import { favPath } from './FavoritesScreen';
+import { EditFavoritesSheet } from '../components/EditFavoritesSheet';
 import { favoriteName } from '../components/FavoriteBadge';
 import {
   favoriteDisplayName,
@@ -89,6 +89,7 @@ export function UpcomingScreen() {
   const favorites = useMemo(() => favoritesOf(log), [log]);
   const genres = useArtistGenres(favorites);
   const [sheet, setSheet] = useState(false);
+  const [editingFaves, setEditingFaves] = useState(false);
   const [filter, setFilterState] = useState<UpcomingFilter>(readFilter);
   const setFilter = (next: UpcomingFilter) => {
     setFilterState(next);
@@ -189,9 +190,9 @@ export function UpcomingScreen() {
         <div className="card empty-card following-empty">
           <div className="card-title">No Faves yet</div>
           <p className="following-empty-sub">Follow a team, artist or venue to see their games and shows here.</p>
-          <Link to="/favorites/edit" className="following-empty-button">
+          <button type="button" className="following-empty-button" onClick={() => setEditingFaves(true)}>
             Add a Fave
-          </Link>
+          </button>
         </div>
       ) : shownRows.length === 0 && shownPlans.length === 0 && chips.length > 0 ? (
         <div className="card empty-card following-empty">
@@ -217,9 +218,9 @@ export function UpcomingScreen() {
               <div className="card-title">{favorites.length === 0 ? 'Follow a team, artist or venue to see what is ahead.' : `Nothing from your Faves in the next ${SPAN_DAYS} days.`}</div>
               {favorites.length === 0 && (
                 <div className="empty-actions">
-                  <Link to="/favorites/edit" className="link-button">
+                  <button type="button" className="link-button" onClick={() => setEditingFaves(true)}>
                     Add a Fave ›
-                  </Link>
+                  </button>
                 </div>
               )}
             </div>
@@ -237,8 +238,13 @@ export function UpcomingScreen() {
           today={today}
           onReset={clear}
           onClose={() => setSheet(false)}
+          onManage={() => {
+            setSheet(false);
+            setEditingFaves(true);
+          }}
         />
       )}
+      {editingFaves && <EditFavoritesSheet onClose={() => setEditingFaves(false)} />}
     </div>
   );
 }
@@ -340,6 +346,7 @@ function UpcomingFilterSheet({
   today,
   onReset,
   onClose,
+  onManage,
 }: {
   filter: UpcomingFilter;
   onFilter: (next: UpcomingFilter) => void;
@@ -350,6 +357,7 @@ function UpcomingFilterSheet({
   today: string;
   onReset: () => void;
   onClose: () => void;
+  onManage: () => void;
 }) {
   const keys = favorites.map(favoriteKey);
   const presets: { id: DatePreset; label: string }[] = [
@@ -442,10 +450,10 @@ function UpcomingFilterSheet({
           })}
         </>
       )}
-      {/* Opens the Edit favorites sheet once step 12 builds it; the picker page does the job until then. */}
-      <Link to="/favorites/edit" className="filter-sheet-link" onClick={onClose}>
+      {/* Opens the Edit favorites sheet directly (the mock's note said Profile & Settings; superseded). */}
+      <button type="button" className="filter-sheet-link link-button" onClick={onManage}>
         Manage faves <span aria-hidden>›</span>
-      </Link>
+      </button>
     </FilterSheet>
   );
 }

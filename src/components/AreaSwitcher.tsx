@@ -1,16 +1,18 @@
-import { useEffect, useId, useRef, useSyncExternalStore } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useEffect, useId, useRef, useState, useSyncExternalStore } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { type Metro } from '../config/metros';
-import { cityOrder, favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
+import { favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog } from '../data';
 import { getHomeId } from '../lib/homeCity';
 import { openedMetroId } from '../lib/view';
-import { ChevronDown, HomeIcon, StarIcon } from './Icons';
+import { ChevronDown, HomeIcon, SearchIcon } from './Icons';
 
 /**
- * Closed chip for the current metro. The list floats under the chip and does
- * not move the score. Only covered cities are listed, Los Angeles first.
- * Home is a mark on one row. Looking at another city does not change it.
- * Its own file so the Calendar screen can use it without loading the map.
+ * Closed chip for the current metro. The list floats under the chip and does not move the score. Since build 7
+ * (Kylie, Oct 21, 2026: "I actually just want the home and favorited lists to show up"; mocks 56–58) it lists only
+ * Home and your favorite cities, with no stars; a search at the top finds any other covered city (a city with
+ * nothing in it is a dead end, Kylie, Oct 6); "Edit favorite cities ›" at the bottom opens that section of Profile &
+ * Settings. Home is a mark on one row; looking at another city does not change it. Its own file so the Calendar
+ * screen can use it without loading the map.
  */
 export function AreaSwitcher({
   metro,
@@ -26,18 +28,19 @@ export function AreaSwitcher({
 }) {
   const [params, setParams] = useSearchParams();
   const menuId = useId();
-  // Only cities the app covers (Kylie, Oct 6): a city with nothing in it is a dead end here.
-  // Logged nights elsewhere still open from You. A city reached by link stays listed while it is on screen.
+  const [query, setQuery] = useState('');
   const covered = metrosWithEvents();
-  const metros = covered.some((city) => city.id === metro.id) ? covered : [...covered, metro];
   const homeId = openedMetroId();
-  const viewingHome = metro.id === getHomeId();
-  // Home first, then the cities you starred, a divider, then the rest (build notes 4, P1; Kylie Oct 13).
-  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
-  const starred = favoriteCitiesOf(log);
   const home = getHomeId();
-  const { top, pinned, rest } = cityOrder(metros, home, starred);
-  const ordered = [...top, ...pinned];
+  const viewingHome = metro.id === home;
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const favorites = favoriteCitiesOf(log).filter((id) => id !== home);
+  const byId = new Map(covered.map((c) => [c.id, c]));
+  // Home, then the favorites in their saved order; the city on screen stays listed while it is there.
+  const shown: Metro[] = [...(home && byId.get(home) ? [byId.get(home)!] : []), ...favorites.flatMap((id) => (byId.get(id) ? [byId.get(id)!] : []))];
+  if (!shown.some((c) => c.id === metro.id)) shown.push(metro);
+  const typed = query.trim().toLowerCase();
+  const found = typed ? covered.filter((c) => c.name.toLowerCase().includes(typed) && !shown.some((s) => s.id === c.id)) : [];
   // The list closes on a tap outside it or Escape, wherever the switcher sits (Map, List, calendar page).
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -55,6 +58,9 @@ export function AreaSwitcher({
       document.removeEventListener('keydown', onKey);
     };
   }, [open, onOpenChange]);
+  useEffect(() => {
+    if (!open) setQuery('');
+  }, [open]);
   const pick = (id: string) => {
     const next = new URLSearchParams(params);
     if (id === homeId) next.delete('metro');
@@ -62,6 +68,14 @@ export function AreaSwitcher({
     setParams(next);
     onOpenChange(false);
   };
+  const row = (item: Metro) => (
+    <div className="area-row" key={item.id}>
+      <button type="button" role="option" aria-selected={item.id === metro.id} onClick={() => pick(item.id)}>
+        {item.id === home && <HomeMark />}
+        <span>{item.name}</span>
+      </button>
+    </div>
+  );
   return (
     <div ref={root} className={`area-switcher${variant === 'title' ? ' is-title' : ''}`}>
       <button
@@ -79,31 +93,17 @@ export function AreaSwitcher({
       </button>
       {open && (
         <div className="area-menu" id={menuId} role="listbox" aria-label="Area">
-          {[...ordered, ...rest].map((item, index) => {
-            const isHome = item.id === home;
-            const isStar = starred.includes(item.id);
-            return (
-              <div className="area-row" key={item.id}>
-                {index === ordered.length && pinned.length > 0 && rest.length > 0 && <div className="area-divider" role="separator" />}
-                <button type="button" role="option" aria-selected={item.id === metro.id} onClick={() => pick(item.id)}>
-                  {isHome && <HomeMark />}
-                  <span>{item.name}</span>
-                </button>
-                {/* Changing home lives in Settings (Kylie, Oct 9); the house marks it here. A star pins any other city. */}
-                {!isHome && (
-                  <button
-                    type="button"
-                    className={`area-star${isStar ? ' on' : ''}`}
-                    aria-pressed={isStar}
-                    aria-label={`Star ${item.name}`}
-                    onClick={() => toggleFavoriteCity(item.id)}
-                  >
-                    <StarIcon />
-                  </button>
-                )}
-              </div>
-            );
-          })}
+          <div className="search-box area-search">
+            <label className="search-field">
+              <SearchIcon />
+              <input type="search" value={query} placeholder="Search all cities" aria-label="Search all cities" onChange={(ev) => setQuery(ev.target.value)} />
+            </label>
+          </div>
+          {typed ? (found.length > 0 ? found.map(row) : <p className="home-note">No city by that name.</p>) : shown.map(row)}
+          <div className="area-divider" role="separator" />
+          <Link to="/you/settings#cities" className="area-edit-link" onClick={() => onOpenChange(false)}>
+            Edit favorite cities <span aria-hidden>›</span>
+          </Link>
         </div>
       )}
     </div>

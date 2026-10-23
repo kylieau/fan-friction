@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
 import { AccountBlock } from '../components/AccountBlock';
@@ -30,7 +30,7 @@ import {
 import { favPath } from './FavoritesScreen';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { SettingsPanel } from './SettingsScreen';
+import { EditFavoritesSheet } from '../components/EditFavoritesSheet';
 import { levelFor } from './SettingsPrivacyScreen';
 
 /**
@@ -54,27 +54,8 @@ export function YouScreen() {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [params, setParams] = useSearchParams();
-  // The Settings panel (build 6, item 8; one page in step 12): `?panel=<section>` in the address opens it on one dropdown.
-  const panel = params.get('panel');
-  const openPanel = (section?: string) =>
-    setParams((prev) => {
-      const next = new URLSearchParams(prev);
-      next.set('panel', section ?? '1');
-      return next;
-    });
-  const closePanel = useCallback(
-    () =>
-      setParams(
-        (prev) => {
-          const next = new URLSearchParams(prev);
-          for (const key of ['panel', 'find', 'chip']) next.delete(key);
-          return next;
-        },
-        { replace: true },
-      ),
-    [setParams],
-  );
+  const navigate = useNavigate();
+  const [editingFaves, setEditingFaves] = useState(false);
   const [visibility, setVisibility] = useState<'anyone' | 'friends' | 'private'>('private');
   useEffect(() => {
     let current = true;
@@ -119,7 +100,7 @@ export function YouScreen() {
     <div className="screen page you-page">
       <div className="you-header">
         {/* The avatar is the only door to Profile & Settings (build 6, item 8; Kylie, Oct 21: "I don't think it's that unusual"). */}
-        <button type="button" className="you-avatar-btn" aria-label="Profile and settings" aria-haspopup="dialog" aria-expanded={panel !== null} onClick={() => openPanel()}>
+        <button type="button" className="you-avatar-btn" aria-label="Profile and settings" onClick={() => navigate('/you/settings')}>
           <span className="avatar" aria-hidden>
             {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
           </span>
@@ -138,7 +119,7 @@ export function YouScreen() {
         </div>
         <SearchButton className="you-search" />
       </div>
-      {panel !== null && <SettingsPanel section={panel} onClose={closePanel} />}
+      {editingFaves && <EditFavoritesSheet onClose={() => setEditingFaves(false)} />}
 
       {/* Signed out: the sign-in card on top (Locked, Kylie, 2026-10-22); the account section is in Profile & Settings too. */}
       {!account && <AccountBlock />}
@@ -240,17 +221,17 @@ export function YouScreen() {
             <StarIcon /> Faves
           </span>
           {faves.length > 0 && (
-            <Link to="/favorites/edit" className="heading-link">
+            <button type="button" className="heading-link link-button" onClick={() => setEditingFaves(true)}>
               Edit ›
-            </Link>
+            </button>
           )}
         </h2>
         {faves.length === 0 ? (
           <div className="card faves-empty">
             <p>Follow teams and artists to see them here</p>
-            <Link to="/favorites/edit" className="heading-link">
+            <button type="button" className="heading-link link-button" onClick={() => setEditingFaves(true)}>
               Find faves ›
-            </Link>
+            </button>
           </div>
         ) : (
           <FavesStrip faves={faves} seen={seen} />

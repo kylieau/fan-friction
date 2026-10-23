@@ -7,10 +7,10 @@ import { ExploreScreen } from './screens/ExploreScreen';
 import { EventScreen } from './screens/EventScreen';
 import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
+import { ProfileSettingsScreen } from './screens/SettingsScreen';
 import { AddEntryScreen } from './screens/AddEntryScreen';
 import { ManualEntryScreen } from './screens/ManualEntryScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
-import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
 import { StubsScreen } from './screens/StubsScreen';
 import { TagScreen } from './screens/TagScreen';
@@ -35,15 +35,22 @@ function OldDateRedirect() {
 }
 
 /**
- * The Settings sub-pages and the People page became dropdowns of the Settings panel on You (build 6, item 8): their
- * old addresses open the panel on that dropdown, so bookmarks and links keep working (a default). The People page's
- * own parameters (`?find=1`, `?chip=`) ride along.
+ * Profile & Settings is one page with anchors (build 7, §3.10): the old sub-page addresses, the People page and the
+ * build 6 `?panel=` links land on their section. The People page's own parameters (`?find=1`, `?chip=`) ride along.
  */
 function PanelRedirect({ section }: { section: string }) {
   const { search } = useLocation();
   const params = new URLSearchParams(search);
-  params.set('panel', section);
-  return <Navigate to={`/you?${params.toString()}`} replace />;
+  params.delete('panel');
+  const rest = params.toString();
+  return <Navigate to={`/you/settings${rest ? `?${rest}` : ''}#${section === '1' ? '' : section}`} replace />;
+}
+
+/** `/you?panel=x` from build 6 → the section on the page. */
+function YouPanelRedirect() {
+  const { search } = useLocation();
+  const section = new URLSearchParams(search).get('panel');
+  return section ? <PanelRedirect section={section} /> : <YouScreen />;
 }
 
 /**
@@ -151,16 +158,16 @@ function Shell() {
           <Route path="/date/:date" element={<DateScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/favorites" element={<KeepQuery to="/upcoming" />} />
-          <Route path="/favorites/edit" element={<FavoritesScreen />} />
+          <Route path="/favorites/edit" element={<ProfileSettingsScreen editFaves />} />
           <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
           <Route path="/p/:handle" element={<ProfileScreen />} />
           <Route path="/profile/edit" element={<PanelRedirect section="profile" />} />
-          <Route path="/you" element={<YouScreen />} />
+          <Route path="/you" element={<YouPanelRedirect />} />
           <Route path="/you/add" element={<AddEntryScreen />} />
           <Route path="/you/people" element={<PanelRedirect section="people" />} />
           <Route path="/entry/:id" element={<ManualEntryScreen />} />
-          <Route path="/you/settings" element={<PanelRedirect section="1" />} />
+          <Route path="/you/settings" element={<ProfileSettingsScreen />} />
           <Route path="/you/settings/cities" element={<PanelRedirect section="cities" />} />
           <Route path="/you/settings/privacy" element={<PanelRedirect section="privacy" />} />
           <Route path="/you/settings/crowd" element={<PanelRedirect section="crowd" />} />

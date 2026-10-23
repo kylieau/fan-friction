@@ -11185,3 +11185,131 @@ a.follow-lead::after {
   font-size: 17px;
   font-weight: 800;
 }
+
+/* Profile & Settings as one page (build 7, §3.10; mock 55), the favorites sections and the city switcher. */
+.settings-page {
+  gap: 14px;
+}
+
+.settings-page-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.settings-block-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 0 6px;
+}
+
+.settings-block .settings-section-body {
+  padding: 0;
+}
+
+.fav-city-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fav-city-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav-city-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.fav-city-row .sheet-remove {
+  margin-left: auto;
+}
+
+.fav-city-add span {
+  color: var(--action);
+  font-weight: 800;
+}
+
+.fav-city-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.fav-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 0 8px;
+}
+
+.fav-section-edit {
+  margin: 0;
+}
+
+.fav-group-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+}
+
+.fav-group-words {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fav-group-title {
+  font-weight: 800;
+}
+
+.fav-group-preview {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fav-group-list {
+  padding: 0 0 4px 4px;
+}
+
+.fav-group-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+}
+
+.fav-group-row .log-title {
+  white-space: normal;
+}
+
+.edit-faves-sheet {
+  max-height: calc(100dvh - 60px);
+}
+
+.area-search {
+  padding: 4px 8px 6px;
+}
+
+.area-edit-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  color: var(--action);
+  font-weight: 800;
+  text-decoration: none;
+}

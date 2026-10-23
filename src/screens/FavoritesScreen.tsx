@@ -205,7 +205,8 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
           <>
             {/* Your Faves first, by kind (Kylie, Oct 9, C076). */}
             {KINDS.map(({ kind, label }) => {
-              const on = favorites.filter((fav) => fav.kind === kind);
+              // Most seen first, then the official name (build 7, §3.11; the same order as the favorites section and You's row).
+              const on = favorites.filter((fav) => fav.kind === kind).sort((a, b) => countFor(b) - countFor(a) || favoriteOfficialName(a).localeCompare(favoriteOfficialName(b)));
               if (on.length === 0) return null;
               return (
                 <section key={kind} className="you-block" aria-labelledby={`pick-${kind}`}>
@@ -320,7 +321,8 @@ export function LastFive({ marks }: { marks: readonly ('W' | 'L' | 'T')[] }) {
 
 function subFor(fav: Favorite, count: number, genre?: string): string {
   const kind = (fav.kind === 'artist' && genre) || KINDS.find((k) => k.kind === fav.kind)?.label || '';
-  return count > 0 ? `${kind} · ${count} ${count === 1 ? 'event' : 'events'}` : kind;
+  // "Seen N" (build 7, mock 64), the same count as everywhere else.
+  return count > 0 ? `${kind} · Seen ${count}` : kind;
 }
 
 export function favPath(fav: Pick<Favorite, 'kind' | 'id'>): string {

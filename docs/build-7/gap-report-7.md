@@ -15,8 +15,8 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 8. Your stubs page | done | `b3f400c7` | |
 | 9. You rebuild | done | `3771b769` | |
 | 10. Ranks, Recap | done | `036f0a0a` | |
-| 11. Your year, Spend details | done | (step 11 commit) | |
-| 12. Profile & Settings, city switcher | next | | Codex review 4 after this |
+| 11. Your year, Spend details | done | `6857ec1c` | |
+| 12. Profile & Settings, city switcher | done | (step 12 commit) | Codex review 4 after this |
 
 **Codex reviews:** stage 1 was tried twice at about 4:30 and 4:45 PM Pacific and failed before any analysis ("out of credits"); Kylie said credits returned at 5:20 PM, and stages 1, 2 and 3 ran then, in parallel (read-only, each on its stage's diff), all three completing. Findings and what was done are under **Codex reviews** below. Stage 4 runs after step 12. **Skipped reviews for Kylie to run afterward:** none.
 
@@ -112,6 +112,15 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - `src/data/spend.ts`: `spendSummary`, `spendByVenue`, `spendByTeam`. Logged amounts only; absent is excluded, Free is $0; the average ticket divides ticket spend by ticket quantity (1 when none) and leaves free tickets out; watched spend sits on its own line and stays out of venue and team figures; trip costs (Other) count everywhere (Locked). Currency follows the stored code.
 - The "8px read-tile word" exception travels with the ladder as-is (its CSS is unchanged).
 - Screenshots: `.playwright-mcp/b7-your-year.png`, `b7-spend.png`.
+
+### Step 12. Profile & Settings, the favorites editor, the city switcher
+- **Profile & Settings** (`/you/settings`, mock 55): one scrolling page opened from the avatar (`ProfileSettingsScreen`, the old `SettingsPanel` reworked; no side panel, no gear). The profile card (or the sign-in card signed out), then **People**, **Favorite cities**, **Favorite teams & artists**, Profile, Account (with sign out), Crowd size, Privacy, Blocked, Your events (Export), the Review queue (admins), App. Every section is an anchor: `?panel=x`, `/you/settings/*`, `/you/people?find=1` and `/profile/edit` all redirect to `/you/settings#x` with their parameters kept (checked). No Notifications section (Locked).
+- **Favorite cities** (mock 60, `FavoriteCities.tsx`): home with **Change** (a list of the cities with events), each favorite with a minus, **+ Add city** with a search. Same `favoriteCities` data (synced); the stars are gone.
+- **Favorite teams & artists** (mocks 61–63, `EditFavoritesSheet.tsx`): collapsible Teams / Artists / Venues / Festivals, each closed with its count and a one-line preview, open rows read-only with "Seen N", most seen first, official names; a small **Edit**.
+- **Edit favorites sheet** (mocks 64–66): the existing picker in a sheet (search, Your faves most seen first, Suggested with Follow, Browse by league kept collapsed under it, Locked), Done closes, changes save as you go. It is the only editor: opened from the section's Edit, "Edit ›" / "Find faves ›" on You, "Manage faves ›" and "Add a Fave" on Upcoming, and the old `/favorites/edit` address (the settings page with the sheet open). The Following sheet is retired (`FollowingSheet.tsx` removed).
+- **City switcher** (mocks 56–58, `AreaSwitcher.tsx`): only Home and your favorite cities, no stars; "Search all cities" at the top finds any covered city; "Edit favorite cities ›" at the bottom opens that section. No favorites: Home alone plus search and the link.
+- The Faves picker's row line reads "Seen N" (the same count as everywhere else).
+- Screenshots: `.playwright-mcp/b7-settings.png`, `b7-edit-faves.png`, `b7-switcher.png`.
 
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.

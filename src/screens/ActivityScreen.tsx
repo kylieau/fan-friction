@@ -189,7 +189,7 @@ export function ActivityScreen() {
             <div className="card empty-card following-empty">
               <div className="card-title">No friends yet</div>
               <p className="following-empty-sub">Find people to see what they attend, watch or are interested in.</p>
-              <Link to="/you?panel=people&find=1" className="following-empty-button">
+              <Link to="/you/settings?find=1#people" className="following-empty-button">
                 Find people
               </Link>
             </div>

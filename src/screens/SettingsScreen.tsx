@@ -1,14 +1,16 @@
-import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import { BackLink } from '../components/BackLink';
+import { EditFavoritesSheet, FavoritesSection } from '../components/EditFavoritesSheet';
+import { FavoriteCitiesSection } from '../components/FavoriteCities';
 import { AccountBlock, AccountRow } from '../components/AccountBlock';
 import { ChevronDown } from '../components/Icons';
-import { CityList } from '../components/HomePicker';
 import { ProfileForm } from './ProfileEditScreen';
 import { PrivacySettings, VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { CrowdSizeSettings } from './SettingsCrowdScreen';
 import { PeoplePanel } from './PeopleScreen';
-import { FavoritesScreen } from './FavoritesScreen';
 import { ReviewQueue } from '../components/ReviewQueue';
-import { DEFAULT_METRO, METROS } from '../config/metros';
+import { DEFAULT_METRO } from '../config/metros';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import {
   blockedPeople,
@@ -33,19 +35,27 @@ import {
   type Visibility,
 } from '../data';
 
-/** The dropdowns, in the panel's order (a default: grouped by the sections Settings already had). */
+/** The page's sections, each an anchor (`#people`): the old panel's dropdowns, regrouped (build 7, §3.10). */
 export type SettingsSectionId = 'profile' | 'account' | 'cities' | 'crowd' | 'privacy' | 'blocked' | 'faves' | 'people' | 'events' | 'review' | 'app';
 
 /**
- * Settings as a side panel (build 6, item 8; Kylie, Oct 15: "reorganize the entire You > Edit profile / settings /
- * share my handle", built from Mock Mosaic's wireframe). The avatar on the You tab is its only door. At the top a
- * profile card with Edit profile and Share profile; under it one page of dropdowns: Profile, Account, Home & cities,
- * Crowd size, Privacy, Blocked, Faves, People, Your events, App. Privacy and Blocked are contents, not pages; the
- * Faves and People lists live here since Following became a timeline (item 7). Signed out, only what a signed-out
- * person can use shows (sign in, cities, crowd size, Faves, export, credits). `?panel=<section>` opens that one.
+ * Profile & Settings (build 7, §3.10; Kylie, Oct 21, 2026: "profile and settings are frequently near each other"; mock 55):
+ * one scrolling page, opened from the avatar on You, no gear anywhere. The profile card on top, then People, Favorite
+ * cities, Favorite teams & artists, and the sections Settings already had (profile, account, crowd size, privacy,
+ * blocked, your events, the review queue, app). Each section is an anchor, so the old `?panel=x` and sub-page
+ * addresses land on it. Signed out, only what a signed-out person can use shows, with the sign-in card on top. No
+ * Notifications section (Locked). It was a side panel of dropdowns from build 6 until build 7.
  */
-export function SettingsPanel({ section, onClose }: { section: string | null; onClose: () => void }) {
-  const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
+export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boolean } = {}) {
+  const navigate = useNavigate();
+  const { hash } = useLocation();
+  const [params] = useSearchParams();
+  const section = (hash ? hash.slice(1) : params.get('panel')) || null;
+  const [editing, setEditing] = useState(editFaves);
+  useEffect(() => {
+    setEditing(editFaves);
+  }, [editFaves]);
+  void navigate;
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [handle, setHandle] = useState<string | null>(null);
@@ -61,24 +71,14 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
   const [admin, setAdmin] = useState(false);
   const [pendingCount, setPendingCount] = useState(0);
   const wanted = isSection(section) ? section : null;
-  const [open, setOpen] = useState<Set<SettingsSectionId>>(() => new Set(wanted ? [wanted] : []));
   const panel = useRef<HTMLDivElement>(null);
 
-  // A deep link (`?panel=privacy`, the old sub-page addresses) opens that dropdown and brings it into view.
+  // A deep link (`#privacy`, the old `?panel=` and sub-page addresses) brings that section into view.
   useEffect(() => {
     if (!wanted) return;
-    setOpen((set) => (set.has(wanted) ? set : new Set(set).add(wanted)));
-    const id = window.setTimeout(() => panel.current?.querySelector(`[data-section="${wanted}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 50);
+    const id = window.setTimeout(() => panel.current?.querySelector(`[data-section="${wanted}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 80);
     return () => window.clearTimeout(id);
   }, [wanted]);
-
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
 
   useEffect(() => {
     let current = true;
@@ -136,45 +136,31 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
     setExportNote('Downloaded.');
   };
 
-  const toggle = (id: SettingsSectionId) =>
-    setOpen((set) => {
-      const next = new Set(set);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
-  const favorites = favoritesOf(log);
-  const starred = favoriteCitiesOf(log).filter((id) => id !== homeId).length;
-  const home = homeId ? (METROS[homeId]?.name ?? '') : 'Choose home';
+  const favorites = useMemo(() => favoritesOf(log), [log]);
+  void favoriteCitiesOf;
+  void ChevronDown;
+  void subscribeHome;
+  void getHomeId;
 
+  // One section of the page: a heading with its one-line value, the body always open, an anchor for deep links.
   const dropdown = (id: SettingsSectionId, title: string, value: ReactNode, body: ReactNode) => (
-    <section key={id} className={`settings-section${open.has(id) ? ' open' : ''}`} data-section={id}>
-      <button type="button" className="settings-row settings-link settings-section-head" aria-expanded={open.has(id)} aria-controls={`settings-${id}`} onClick={() => toggle(id)}>
+    <section key={id} id={id} className="settings-section open settings-block" data-section={id} aria-labelledby={`settings-${id}-title`}>
+      <h2 id={`settings-${id}-title`} className="you-heading settings-block-title">
         <span>{title}</span>
-        <span className="settings-section-side">
-          {value && <span className="settings-value">{value}</span>}
-          <span className={`settings-section-chevron${open.has(id) ? ' open' : ''}`} aria-hidden>
-            <ChevronDown />
-          </span>
-        </span>
-      </button>
-      {open.has(id) && (
-        <div id={`settings-${id}`} className="settings-section-body">
-          {body}
-        </div>
-      )}
+        {value && <span className="settings-value">{value}</span>}
+      </h2>
+      <div className="settings-section-body">{body}</div>
     </section>
   );
 
   return (
-    <div className="home-backdrop side-backdrop" role="presentation" onClick={onClose}>
-      <aside ref={panel} className="side-panel" role="dialog" aria-modal="true" aria-label="Settings" onClick={(ev) => ev.stopPropagation()}>
-        <div className="side-head">
-          <h2 className="side-title">Settings</h2>
-          <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
-            ×
-          </button>
-        </div>
+    <div ref={panel} className="screen page settings-page">
+      <div className="settings-page-head">
+        <BackLink to="/you" label="You" />
+        <h1 className="page-title">Profile &amp; Settings</h1>
+      </div>
+      {editing && <EditFavoritesSheet onClose={() => setEditing(false)} />}
+      <>
 
         {account ? (
           <div className="card profile-card">
@@ -189,10 +175,7 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
               <button
                 type="button"
                 className="link-button"
-                onClick={() => {
-                  setOpen((set) => new Set(set).add('profile'));
-                  panel.current?.querySelector('[data-section="profile"]')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
-                }}
+                onClick={() => panel.current?.querySelector('[data-section="profile"]')?.scrollIntoView({ block: 'start', behavior: 'smooth' })}
               >
                 Edit profile
               </button>
@@ -208,6 +191,17 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
           <AccountBlock />
         )}
 
+        {account &&
+          dropdown(
+            'people',
+            'People',
+            peopleCount !== null ? `${peopleCount}${requestCount > 0 ? ` · ${requestCount} ${requestCount === 1 ? 'request' : 'requests'}` : ''}` : null,
+            <PeoplePanel />,
+          )}
+        {/* Favorite cities (mock 60): a restyle of the old Home & cities list (home with Change, a minus per city, + Add city). */}
+        {dropdown('cities', 'Favorite cities', null, <FavoriteCitiesSection />)}
+        {/* Favorite teams & artists (mocks 61–66): collapsed groups, read-only rows, one small Edit to the one editor. */}
+        {dropdown('faves', 'Favorite teams & artists', favorites.length > 0 ? `${favorites.length}` : null, <FavoritesSection favorites={favorites} onEdit={() => setEditing(true)} />)}
         {account && dropdown('profile', 'Profile', handle ? `@${handle}` : null, <ProfileForm />)}
         {account &&
           dropdown(
@@ -255,15 +249,6 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
             </div>,
           )}
         {dropdown(
-          'cities',
-          'Home & cities',
-          starred > 0 ? `${home} · ${starred} starred` : home,
-          <div className="settings">
-            <p className="you-fine">Tap a city to make it home. Star any others you follow; they're pinned under Home and in the city menu.</p>
-            <CityList variant="page" />
-          </div>,
-        )}
-        {dropdown(
           'crowd',
           'Crowd size',
           crowdRangeLabel(crowdRangeOf(log)),
@@ -292,15 +277,6 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
                 </button>
               ))}
             </div>,
-          )}
-        {/* The edit-favorites picker only (Kylie, Oct 17); the Faves schedule stays on the Following tab. */}
-        {dropdown('faves', 'Edit favorites', favorites.length > 0 ? `${favorites.length}` : null, <FavoritesScreen embedded edit />)}
-        {account &&
-          dropdown(
-            'people',
-            'People',
-            peopleCount !== null ? `${peopleCount}${requestCount > 0 ? ` · ${requestCount} ${requestCount === 1 ? 'request' : 'requests'}` : ''}` : null,
-            <PeoplePanel />,
           )}
         {dropdown(
           'events',
@@ -331,7 +307,7 @@ export function SettingsPanel({ section, onClose }: { section: string | null; on
             <p className="you-fine">Your events are saved on this phone, and in your account if you sign in. No location, no tracking, nothing sold.</p>
           </div>,
         )}
-      </aside>
+      </>
     </div>
   );
 }
