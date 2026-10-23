@@ -10408,3 +10408,242 @@ a.follow-lead::after {
 .filter-pills .filter-chip svg {
   margin-right: 5px;
 }
+
+/* You (build 7, §3.6; mocks 27–37): the compact header, the Upcoming row, the year card, the Faves strip. */
+.you-who {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.you-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.you-line svg {
+  width: 14px;
+  height: 14px;
+}
+
+.you-upcoming-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 14px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.you-upcoming-row svg {
+  width: 18px;
+  height: 18px;
+  color: var(--action);
+  flex-shrink: 0;
+}
+
+.you-upcoming-words {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.you-upcoming-words strong {
+  color: var(--action);
+}
+
+.year-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.year-pick {
+  position: relative;
+  display: inline-block;
+}
+
+.year-select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  font-size: 16px;
+}
+
+.year-word {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 22px;
+  margin: 0;
+}
+
+.year-word svg {
+  width: 18px;
+  height: 18px;
+}
+
+.year-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.year-hero {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 14px 16px 10px;
+}
+
+.year-big {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.year-hero-words {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.year-hero-sub {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.year-nudge {
+  padding: 0 16px 14px;
+  margin: 0;
+}
+
+.year-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+}
+
+.year-stat {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.year-stat:nth-child(odd) {
+  border-right: 1px solid var(--line);
+}
+
+.year-stat-num {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.year-stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.year-stat-sub {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.year-foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.year-foot-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 48px;
+  color: var(--action);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.year-foot-link + .year-foot-link {
+  border-left: 1px solid var(--line);
+}
+
+.year-foot-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.you-heading-words {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.you-heading-words svg {
+  width: 18px;
+  height: 18px;
+}
+
+.faves-strip {
+  list-style: none;
+  margin: 0 -16px;
+  padding: 4px 16px 8px;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.faves-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.faves-strip-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 84px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.faves-strip-name {
+  font-size: 12.5px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.faves-strip-seen {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.faves-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+}
+
+.faves-empty p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}

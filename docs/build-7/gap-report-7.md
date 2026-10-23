@@ -12,9 +12,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 5. Upcoming | done | `fe90842f` | own screen, plans band, filter sheet, no earlier cue anywhere |
 | 6. Activity | done | `f4687f8a` | Codex review 3 after this |
 | 7. Log an event sheet | done | `2e41d4e9`; review fixes `b205527e` | |
-| 8. Your stubs page | done | (step 8 commit) | |
-| 9. You rebuild | next | | |
-| 10. Ranks, Recap | | | |
+| 8. Your stubs page | done | `b3f400c7` | |
+| 9. You rebuild | done | (step 9 commit) | |
+| 10. Ranks, Recap | next | | |
 | 11. Your year, Spend details | | | |
 | 12. Profile & Settings, city switcher | | | Codex review 4 after this |
 
@@ -90,6 +90,15 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - **Calendar** (mock 42): a year strip (each month shaded by how many stubs, the shown month outlined, ‹ › for years) over a **Sunday-first** month grid (the app's `monthCells`, as Explore's calendar; `WeekCalendar`'s Monday-first is a pre-existing mismatch, noted, not changed). A dot for attended, a ring for a day with only watched stubs; a tapped day lists its stubs; **"No exact date"** lists the rough-dated stubs. The month floor is the oldest dated stub, not Explore's 2016 clamp.
 - **Seen N credits both teams** (`entryMatches` reads `opponents`), so Faves counts, the team page's "N games in My Stubs" and the Faves row agree with Ranks (Locked). `favoritesFromLog` still reads `tags` only, so a new person's first Faves never include opponents.
 - Screenshots: `.playwright-mcp/b7-stubs-list.png`, `b7-stubs-grid.png`, `b7-stubs-calendar.png`, `b7-stubs-filter.png`.
+
+### Step 9. The You rebuild
+- `YouScreen.tsx` rebuilt to the seven pieces (mocks 27–37): compact header (avatar → Profile & Settings, name, home city with the house icon, "Private profile" / "Friends only" / "Public profile" from the profile's switch; search stays top right; no gear; the people count link is gone, it lives in People in Settings), the **Upcoming** row ("Upcoming · N plans ›" or the one plan's title and weekday; hidden with no plans), the **year card** (a year picker on the head, "Your year ›" beside it; the fixed big number "N events attended · N watched"; four auto-picked stats; Recap › and Ranks › as the footer), the **Your stubs** preview (four newest, "See all ›", hidden until the first stub), the **Faves** row (badges with the city-shortcut name and "Seen N", most seen first, "Edit ›"; the mock-37 empty state "Follow teams and artists to see them here · Find faves ›").
+- `src/data/yearStats.ts` holds the computations Your year and Ranks reuse: `entriesInYear`, `yearsOf`, `yearStatPool` (venues or new venues against last year, hours at games, cities, teams seen, most-seen team, top tag, longest streak of days, biggest crowd; each with a weight, the top four show; a stat with too little to say stays out), `teamCounts` (every team credited, both sides), `cityCounts`, `longestStreak`.
+- Brand-new user (Locked): the card reads 0 with "Nothing logged yet. Tap + to log your first event."; no stubs preview; the Faves empty state.
+- Signed out (Locked): the sign-in card (`AccountBlock`) under the header.
+- Gone from You: the Stats block, the By type / team / sport / venue lists and the chip row (their content is Your year, Ranks and Recap; the chip row's logic is the Your stubs filter's Team or sport). The Settings panel and its `?panel=` deep links stay until step 12.
+- The three card links (`/you/year`, `/you/recap`, `/you/ranks`) go live in steps 10 and 11, committed right after.
+- Screenshot: `.playwright-mcp/b7-you.png`.
 
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.

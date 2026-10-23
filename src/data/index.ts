@@ -522,6 +522,7 @@ export { suggestEvent, linkConfirmedSuggestions, isReviewAdmin, reviewQueue, set
 export { quickAddDefaults, saveQuickAdd, roomsIn, type QuickAddDefaults, type QuickAddInput, type QuickAddResult } from './quickAdd';
 export { markPlanSuggested } from './personalLog';
 export { favoriteSearchNames, searchFavoriteRecords, favoriteOfficialName } from './favorites';
+export { entriesInYear, yearsOf, yearStatPool, teamCounts, cityCounts, longestStreak, type YearStat } from './yearStats';
 export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine, costWords, currencySign } from './costs';
 export { getTeamSchedule, nextTeamGame, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
 export { espnTeamUrl } from './sources/espnSource';
