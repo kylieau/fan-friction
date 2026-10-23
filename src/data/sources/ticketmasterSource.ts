@@ -182,6 +182,9 @@ function sportOf(genre: string | undefined): string {
   if (g.includes('lucha libre')) return 'wrestling';
   // Soccer before football: a club named "Football Club" with the seller's genre Soccer is soccer (LAFC and the Sounders
   // were listed twice, Oct 22, 2026, because the seller's copy read football and the one-game rule needs the same sport).
+  // "FC" and "CF" (football club, club de fútbol) are soccer wherever they appear (Kylie, Oct 22, 2026: "obviously it
+  // does not mean American football"), so "Tampa Bay Sun FC vs. DC Power FC" with no segment is a soccer game.
+  if (/\b(?:fc|cf)\b|football club/.test(g)) return 'soccer';
   for (const s of ['hockey', 'basketball', 'soccer', 'football', 'baseball', 'lacrosse', 'volleyball', 'rodeo', 'motorsports', 'tennis', 'cricket', 'wrestling', 'boxing']) if (g.includes(s)) return s;
   return 'other';
 }

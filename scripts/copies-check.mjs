@@ -24,6 +24,8 @@ try {
   check(kindOf(undefined, 'du-soccer-stadium', 'Denver Pioneers Mens Soccer vs. Pacific Tigers Mens Soccer') === 'game', 'a listing with no segment at all, same');
   check(kindOf('Undefined', 'x', 'South House vs Naija House - Halloween Edition (21 and Over)') === 'special', 'a party named "X vs Y" stays a special');
   check(kindOf('Undefined', 'x', 'Basketball Hall of Fame Gala') === 'special', 'a sport word without a match stays a special');
+  check(kindOf('Undefined', 'x', 'Tampa Bay Sun FC vs. DC Power FC') === 'game', 'a match between two FCs is a game (FC is soccer)');
+  check(kindOf('Undefined', 'x', 'CF Montréal vs. Inter Miami CF') === 'game', 'CF, same');
   check(kindOf('Film', 'x', 'Godzilla vs. Kong: Hockey Night') === 'special', 'a film stays a special');
 
   // 2. The doubled pairs, as the fixed code builds them, come out as one.
