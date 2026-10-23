@@ -15429,7 +15429,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-86.07, 33.56611],
     capacity: [{ seats: 80000, setup: 'racing', note: 'Reported (grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 119, how: 'routed', town: 'Lincoln / Talladega postal area' },
+    furtherOut: { driveMinutes: 119, how: 'routed', town: 'Talladega' },
   },
   'finley-stadium': {
     id: 'finley-stadium',
@@ -16051,7 +16051,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-86.7521, 41.59563],
     capacity: [{ seats: 10000, setup: 'racing', note: 'Official (outdoor arena/grandstand), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 90, how: 'routed', town: 'La Porte / Scipio Township' },
+    furtherOut: { driveMinutes: 90, how: 'routed', town: 'La Porte' },
   },
   'bmo-center': {
     id: 'bmo-center',
@@ -16311,7 +16311,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.164444, 19.078056],
     capacity: [{ seats: 46817, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 120, how: 'routed', town: 'Puebla de Zaragoza' },
+    furtherOut: { driveMinutes: 120, how: 'routed', town: 'Puebla' },
   },
   'estadio-nemesio-diez': {
     id: 'estadio-nemesio-diez',
@@ -16321,7 +16321,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-99.666794, 19.287286],
     capacity: [{ seats: 27273, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 67, how: 'routed', town: 'Toluca de Lerdo' },
+    furtherOut: { driveMinutes: 67, how: 'routed', town: 'Toluca' },
   },
   'estadio-hidalgo': {
     id: 'estadio-hidalgo',
@@ -16331,7 +16331,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.756114, 20.105144],
     capacity: [{ seats: 25922, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 78, how: 'routed', town: 'Pachuca de Soto' },
+    furtherOut: { driveMinutes: 78, how: 'routed', town: 'Pachuca' },
   },
   'mega-domo-de-las-estrellas': {
     id: 'mega-domo-de-las-estrellas',
@@ -16341,7 +16341,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.7811, 20.06256],
     capacity: [{ seats: 25000, setup: 'concert', note: 'Reported (concert access ceiling), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 74, how: 'routed', town: 'Pachuca de Soto fairgrounds' },
+    furtherOut: { driveMinutes: 74, how: 'routed', town: 'Pachuca' },
   },
   'estadio-agustin-coruco-diaz': {
     id: 'estadio-agustin-coruco-diaz',
@@ -16351,7 +16351,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-99.192027, 18.655069],
     capacity: [{ seats: 24000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 111, how: 'routed', town: 'Zacatepec de Hidalgo' },
+    furtherOut: { driveMinutes: 111, how: 'routed', town: 'Zacatepec' },
   },
   'estadio-centenario': {
     id: 'estadio-centenario',
@@ -16371,7 +16371,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.23027778, 19.32555556],
     capacity: [{ seats: 12000, setup: 'football', note: 'Reported (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 107, how: 'routed', town: 'Tlaxcala de Xicohténcatl' },
+    furtherOut: { driveMinutes: 107, how: 'routed', town: 'Tlaxcala' },
   },
   'las-estacas': {
     id: 'las-estacas',
@@ -16381,7 +16381,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-99.11373, 18.73002],
     capacity: [{ seats: 11000, setup: 'concert', note: 'Reported (festival on-site ceiling), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 119, how: 'routed', town: 'Tlaltizapán de Zapata Municipality' },
+    furtherOut: { driveMinutes: 119, how: 'routed', town: 'Tlaltizapán' },
   },
   'auditorio-gnp-seguros-puebla': {
     id: 'auditorio-gnp-seguros-puebla',
@@ -16391,7 +16391,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.237215, 19.035359],
     capacity: [{ seats: 10500, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 121, how: 'routed', town: 'Puebla de Zaragoza' },
+    furtherOut: { driveMinutes: 121, how: 'routed', town: 'Puebla' },
   },
   'plaza-de-toros-vicente-segura': {
     id: 'plaza-de-toros-vicente-segura',
@@ -16401,7 +16401,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.7803, 20.0653],
     capacity: [{ seats: 10000, note: 'Reported (bullring), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 74, how: 'routed', town: 'Pachuca de Soto' },
+    furtherOut: { driveMinutes: 74, how: 'routed', town: 'Pachuca' },
   },
   'estadio-hermanos-serdan': {
     id: 'estadio-hermanos-serdan',
@@ -16411,7 +16411,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-98.1649, 19.0753583],
     capacity: [{ seats: 9200, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 121, how: 'routed', town: 'Puebla de Zaragoza' },
+    furtherOut: { driveMinutes: 121, how: 'routed', town: 'Puebla' },
   },
   'flagler-credit-union-stadium': {
     id: 'flagler-credit-union-stadium',
@@ -16430,7 +16430,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-80.186269, 26.685387],
     capacity: [{ seats: 17200, setup: 'concert', note: 'Official (concert/event maximum), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
-    furtherOut: { driveMinutes: 83, how: 'routed', town: 'West Palm Beach postal address / unincorporated fairgrounds area' },
+    furtherOut: { driveMinutes: 83, how: 'routed', town: 'West Palm Beach' },
   },
   'delray-beach-tennis-center': {
     id: 'delray-beach-tennis-center',
@@ -16479,7 +16479,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-80.23766, 26.37238],
     capacity: [{ seats: 6000, setup: 'concert', note: 'Official (concert/festival), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 68, how: 'routed', town: 'West Boca Raton postal area / unincorporated South County Regional Park' },
+    furtherOut: { driveMinutes: 68, how: 'routed', town: 'Boca Raton' },
   },
   'mizner-park-amphitheater': {
     id: 'mizner-park-amphitheater',
@@ -16507,7 +16507,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-88.29474, 42.51076],
     capacity: [{ seats: 30000, setup: 'concert', note: 'Official (festival day), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Twin Lakes area' },
+    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Twin Lakes' },
   },
   'historic-horlick-athletic-field': {
     id: 'historic-horlick-athletic-field',
@@ -16566,7 +16566,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-74.39333, 41.44778],
     capacity: [{ seats: 8000, setup: 'racing', note: 'Reported (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 95, how: 'routed', town: 'Middletown / Town of Wallkill fairgrounds' },
+    furtherOut: { driveMinutes: 95, how: 'routed', town: 'Middletown' },
   },
   'gregory-douds-field-at-eiler-martin-stadium': {
     id: 'gregory-douds-field-at-eiler-martin-stadium',
@@ -16586,7 +16586,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-73.961067, 41.527911],
     capacity: [{ seats: 5400, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Town of Fishkill' },
+    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Fishkill' },
   },
   'pocono-raceway': {
     id: 'pocono-raceway',
@@ -16635,7 +16635,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-75.35528, 40.58889],
     capacity: [{ seats: 16000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 83, how: 'routed', town: 'Bethlehem mailing address' },
+    furtherOut: { driveMinutes: 83, how: 'routed', town: 'Bethlehem' },
   },
   'jim-whelan-boardwalk-hall': {
     id: 'jim-whelan-boardwalk-hall',
@@ -16695,7 +16695,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-75.848504, 41.240471],
     capacity: [{ seats: 10000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 136, how: 'routed', town: 'Wilkes-Barre Township' },
+    furtherOut: { driveMinutes: 136, how: 'routed', town: 'Wilkes-Barre' },
   },
   'santander-arena': {
     id: 'santander-arena',
@@ -16813,7 +16813,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-75.3575, 40.58528],
     capacity: [{ seats: 6200, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 82, how: 'routed', town: 'Bethlehem mailing address' },
+    furtherOut: { driveMinutes: 82, how: 'routed', town: 'Bethlehem' },
   },
   'fnb-field': {
     id: 'fnb-field',
@@ -16853,7 +16853,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-75.61, 40.373],
     capacity: [{ seats: 5000, setup: 'racing', note: 'Reported (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 75, how: 'routed', town: 'Washington Township near Bechtelsville' },
+    furtherOut: { driveMinutes: 75, how: 'routed', town: 'Bechtelsville' },
   },
   'casino-del-sol-stadium': {
     id: 'casino-del-sol-stadium',
@@ -16913,7 +16913,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-110.78427, 32.045599],
     capacity: [{ seats: 7500, setup: 'concert', note: 'Official (festival standing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
-    furtherOut: { driveMinutes: 145, how: 'routed', town: 'Southeast Tucson postal area / unincorporated Pima County' },
+    furtherOut: { driveMinutes: 145, how: 'routed', town: 'Tucson' },
   },
   'tucson-expo-center': {
     id: 'tucson-expo-center',
@@ -16933,7 +16933,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-110.78889, 32.0375],
     capacity: [{ seats: 6500, setup: 'racing', note: 'Reported (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 148, how: 'routed', town: 'Southeast Tucson postal area' },
+    furtherOut: { driveMinutes: 148, how: 'routed', town: 'Tucson' },
   },
   'findlay-toyota-center': {
     id: 'findlay-toyota-center',
@@ -16953,7 +16953,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-111.08428, 32.12964],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-3.md.' }],
     roof: 'covered',
-    furtherOut: { driveMinutes: 141, how: 'routed', town: 'Tucson postal address / Pascua Yaqui reservation' },
+    furtherOut: { driveMinutes: 141, how: 'routed', town: 'Tucson' },
   },
   'adventist-health-arena': {
     id: 'adventist-health-arena',
@@ -17000,7 +17000,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-122.334347, 48.574644],
     capacity: [{ seats: 7500, setup: 'racing', note: 'Reported (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 91, how: 'routed', town: 'Alger area / Burlington postal address' },
+    furtherOut: { driveMinutes: 91, how: 'routed', town: 'Burlington' },
   },
   'grays-harbor-raceway': {
     id: 'grays-harbor-raceway',
@@ -17020,7 +17020,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-122.663, 47.6301],
     capacity: [{ seats: 5500, setup: 'rodeo', note: 'Official (rodeo/arena bleachers), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-4.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 97, how: 'routed', town: 'Bremerton postal area' },
+    furtherOut: { driveMinutes: 97, how: 'routed', town: 'Bremerton' },
   },
   'highmark-stadium': {
     id: 'highmark-stadium',
@@ -17206,7 +17206,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.420911, 37.591689],
     capacity: [{ seats: 50000, setup: 'racing', note: 'Reported (grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 127, how: 'routed', town: 'Henrico County' },
+    furtherOut: { driveMinutes: 127, how: 'routed', town: 'Richmond' },
   },
   'oriole-park-at-camden-yards': {
     id: 'oriole-park-at-camden-yards',
@@ -17253,7 +17253,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-76.845421, 38.395803],
     capacity: [{ seats: 11000, setup: 'racing', note: 'Official (racing), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 77, how: 'routed', town: 'Budds Creek / Mechanicsville' },
+    furtherOut: { driveMinutes: 77, how: 'routed', town: 'Mechanicsville' },
   },
   'earl-c-banks-field-at-hughes-stadium': {
     id: 'earl-c-banks-field-at-hughes-stadium',
@@ -17263,7 +17263,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-76.58306, 39.34361],
     capacity: [{ seats: 10000, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 74, how: 'routed', town: 'Baltimore independent city' },
+    furtherOut: { driveMinutes: 74, how: 'routed', town: 'Baltimore' },
   },
   'carmax-park': {
     id: 'carmax-park',
@@ -17273,7 +17273,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.46444, 37.56944],
     capacity: [{ seats: 9585, setup: 'baseball', note: 'Official (baseball), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 123, how: 'routed', town: 'Richmond independent city' },
+    furtherOut: { driveMinutes: 123, how: 'routed', town: 'Richmond' },
   },
   'e-claiborne-robins-stadium': {
     id: 'e-claiborne-robins-stadium',
@@ -17283,7 +17283,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.536805, 37.580892],
     capacity: [{ seats: 8700, setup: 'football', note: 'Official (football), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 132, how: 'routed', town: 'University of Richmond campus' },
+    furtherOut: { driveMinutes: 132, how: 'routed', town: 'Richmond' },
   },
   'hagerstown-speedway': {
     id: 'hagerstown-speedway',
@@ -17293,7 +17293,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.844, 39.6607],
     capacity: [{ seats: 8500, setup: 'racing', note: 'Reported (racing grandstands), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 105, how: 'routed', town: 'West of Hagerstown' },
+    furtherOut: { driveMinutes: 105, how: 'routed', town: 'Hagerstown' },
   },
   'innsbrook-pavilion': {
     id: 'innsbrook-pavilion',
@@ -17303,7 +17303,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.578595, 37.648859],
     capacity: [{ seats: 8500, setup: 'concert', note: 'Reported (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 128, how: 'routed', town: 'Glen Allen / Innsbrook' },
+    furtherOut: { driveMinutes: 128, how: 'routed', town: 'Glen Allen' },
   },
   'homewood-field': {
     id: 'homewood-field',
@@ -17313,7 +17313,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-76.62083, 39.33361],
     capacity: [{ seats: 8500, note: 'Official (stadium), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 69, how: 'routed', town: 'Baltimore independent city' },
+    furtherOut: { driveMinutes: 69, how: 'routed', town: 'Baltimore' },
   },
   'stuart-c-siegel-center': {
     id: 'stuart-c-siegel-center',
@@ -17323,7 +17323,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.4529, 37.552918],
     capacity: [{ seats: 7637, note: 'Official (event), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'indoor',
-    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Richmond independent city' },
+    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Richmond' },
   },
   'wellspan-park': {
     id: 'wellspan-park',
@@ -17343,7 +17343,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.446245, 37.535734],
     capacity: [{ seats: 7000, setup: 'concert', note: 'Official (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 129, how: 'routed', town: 'Richmond independent city' },
+    furtherOut: { driveMinutes: 129, how: 'routed', town: 'Richmond' },
   },
   'ridley-athletic-complex': {
     id: 'ridley-athletic-complex',
@@ -17353,7 +17353,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-76.6525, 39.33694],
     capacity: [{ seats: 6000, setup: 'soccer', note: 'Official (lacrosse/soccer stadium), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 72, how: 'routed', town: 'Baltimore independent city' },
+    furtherOut: { driveMinutes: 72, how: 'routed', town: 'Baltimore' },
   },
   'city-stadium': {
     id: 'city-stadium',
@@ -17363,7 +17363,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.486781, 37.549697],
     capacity: [{ seats: 6000, setup: 'soccer', note: 'Reported (soccer), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Richmond independent city' },
+    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Richmond' },
   },
   'virginia-credit-union-live-at-richmond-raceway': {
     id: 'virginia-credit-union-live-at-richmond-raceway',
@@ -17373,7 +17373,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-77.4175, 37.59],
     capacity: [{ seats: 6000, setup: 'concert', note: 'Reported (concert), the research\'s recommended figure. docs/research/topics/further-out-rooms-answer.md.' }],
     roof: 'open',
-    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Henrico County' },
+    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Richmond' },
   },
   'alumni-hall': {
     id: 'alumni-hall',
