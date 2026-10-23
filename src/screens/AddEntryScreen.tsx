@@ -269,7 +269,8 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
     // A date still ahead is a plan; it becomes an entry once the date passes (C059).
     if (ahead) {
       addManualPlan(night, homeId);
-      navigate('/you/stubs', { replace: true });
+      // A plan lives on Upcoming (build 7).
+      navigate('/upcoming', { replace: true });
       return;
     }
     const entry = addManualEntry(night, homeId);

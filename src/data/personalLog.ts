@@ -389,7 +389,7 @@ function nightFromPlan(plan: Plan): ManualNight {
 export function linkSuggestion(entryOrPlanId: string, eventId: string, metroId?: string) {
   const plan = snapshot.plans.find((p) => p.id === entryOrPlanId && !p.eventId);
   if (plan) {
-    const linked: Plan = { id: `plan-${eventId}`, date: plan.date, metroId: metroId ?? plan.metroId, eventId, title: plan.title, ...(plan.venue ? { venue: plan.venue } : {}), ...(plan.userTags?.length ? { userTags: plan.userTags } : {}), ...(plan.visibility ? { visibility: plan.visibility } : {}), updatedAt: new Date().toISOString() };
+    const linked: Plan = { id: `plan-${eventId}`, date: plan.date, metroId: metroId ?? plan.metroId, eventId, title: plan.title, ...(plan.venue ? { venue: plan.venue } : {}), ...(plan.userTags?.length ? { userTags: plan.userTags } : {}), ...(plan.visibility ? { visibility: plan.visibility } : {}), ...(plan.seats ? { seats: plan.seats } : {}), ...(plan.cost ? { cost: plan.cost } : {}), updatedAt: new Date().toISOString() };
     commit({ ...snapshot, plans: [...snapshot.plans.filter((p) => p.id !== plan.id && p.id !== linked.id), linked] });
     return true;
   }
@@ -644,9 +644,11 @@ function opponentTags(event: CrowdEvent): string[] {
  * the team tags on the stub plus its opponents. Concerts and other no-team events give nothing.
  */
 export function entryTeams(entry: Entry): string[] {
-  if (entry.kind === 'show' || entry.kind === 'festival' || entry.sport === 'Concerts') return [];
-  const out = [...entryTags(entry).filter((tag) => tag !== 'Concerts' && tag !== 'Sports'), ...(entry.opponents ?? [])];
-  return out.filter((tag, i) => out.indexOf(tag) === i);
+  if (entry.kind !== 'game') return [];
+  const system = new Set(['Concerts', 'Sports', 'Event', entry.sport]);
+  // A hand-added game names its teams in `sides` (both, when the Add card had both); a catalog game in `tags` + `opponents`.
+  const out = [...entryTags(entry).filter((tag) => !system.has(tag)), ...(entry.opponents ?? []), ...(isManualEntry(entry) ? entry.sides : [])];
+  return out.filter((tag, i) => tag && out.indexOf(tag) === i);
 }
 
 function withFloor(event: CrowdEvent, entry: Entry): Entry {
@@ -1141,10 +1143,17 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   if (settledIds.size === 0) return;
   // App start and the account load can both run this; the log may have changed while the dates loaded, so a stub
   // another run already made is not added twice (found Oct 20, 2026: one passed plan became two identical stubs).
-  const fresh = added.filter((entry) => !snapshot.added.some((row) => row.id === entry.id || (entry.eventId && row.eventId === entry.eventId)));
+  const twin = (entry: Entry) => snapshot.added.find((row) => row.id === entry.id || (entry.eventId && row.eventId === entry.eventId));
+  const fresh = added.filter((entry) => !twin(entry));
+  // A stub another run made meanwhile keeps the plan's seat and cost when it has none of its own (Codex, stage 1).
+  const merged = snapshot.added.map((row) => {
+    const prepared = added.find((entry) => twin(entry) === row);
+    if (!prepared) return row;
+    return { ...row, ...(prepared.seats && !row.seats && !row.watched ? { seats: prepared.seats } : {}), ...(prepared.cost && !row.cost ? { cost: prepared.cost } : {}) };
+  });
   commit({
     ...snapshot,
-    added: [...snapshot.added, ...fresh],
+    added: [...merged, ...fresh],
     plans: snapshot.plans.filter((plan) => !settledIds.has(plan.id)),
   });
 }

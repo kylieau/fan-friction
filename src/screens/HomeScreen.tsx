@@ -219,7 +219,7 @@ export function HomeScreen() {
       {comingUp.length > 0 && (
         <section className="you-block" aria-labelledby="coming-heading">
           <h2 id="coming-heading" className="you-heading heading-link-row">
-            <Link to="/you/stubs" className="heading-link">
+            <Link to="/upcoming" className="heading-link">
               Your next event ›
             </Link>
           </h2>

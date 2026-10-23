@@ -18,7 +18,7 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 11. Your year, Spend details | | | |
 | 12. Profile & Settings, city switcher | | | Codex review 4 after this |
 
-**Codex reviews:** stage 1 (steps 1–3) was tried twice at about 4:30 and 4:45 PM Pacific and failed both times before any analysis ("Your workspace is out of credits"). Kylie said credits return at 5:20 PM; stage 1 is run then, alongside stage 2. If it fails again it is listed here for her to run afterward.
+**Codex reviews:** stage 1 was tried twice at about 4:30 and 4:45 PM Pacific and failed before any analysis ("out of credits"); Kylie said credits returned at 5:20 PM, and stages 1, 2 and 3 ran then, in parallel (read-only, each on its stage's diff), all three completing. Findings and what was done are under **Codex reviews** below. Stage 4 runs after step 12. **Skipped reviews for Kylie to run afterward:** none.
 
 ## What shipped per step
 
@@ -86,7 +86,38 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
 
 ## Codex reviews
-(none yet)
+Each stage ran as a read-only review of that stage's diff, with the design rules stated up front (cost's three states, `opponents`, seat and cost on plans, the card views' named keys). Fixes landed in one commit after step 7 ("review fixes, stages 1–3").
+
+### Stage 1 (steps 1–3; diff adb14948..7a3a3b19), run 5:20 PM
+1. **Accepted** (bug): `settlePassedPlans` dedupe could discard a prepared stub, losing the plan's seat and cost when a twin stub appeared meanwhile. Now the surviving stub takes the plan's seat and cost when it has none.
+2. **Accepted** (bug): `linkSuggestion` rebuilt a confirmed hand-added plan without its seat and cost. Both carried now.
+3. **Rejected** (bug claimed): `opponentTags` skips an away team that is not in `TEAMS` (name-only visitors from a school feed). Crediting a team the app has no record of would make Ranks rows out of nothing; opponents credit catalog teams only. Noted as a backlog item: resolve name-based visitors once the feeds carry ids.
+4. **Rejected** (bug claimed): two teams sharing a short name ("Stars") collide in one tag. Tags are the app's existing filter vocabulary (`tagFor`), and the stub's own home tag already works this way; changing attribution to ids is a wider change than build 7. Noted in backlog.
+5. **Accepted** (bug): `entryTeams` ignored a hand-added game's `sides` and let "Event"/sport words count as teams. Now: games only; system words excluded; a hand-added game's sides count.
+6. **Accepted** (bug): typing 100001 saved 100000 while the box showed 100001. The box now caps what it shows.
+7. **Accepted** (risk): a quantity on a non-ticket line counted in totals. The normalizer keeps `qty` on the ticket line only.
+8. **Accepted** (risk): string amounts like "" or "abc" became 0. A string is accepted only when it is a plain number.
+9. **Accepted** (risk): saved `lines` not an array, or a kind like `toString`, could throw. Shape guarded, kinds checked by membership.
+- Checked fine by Codex: both settle branches carry seat and cost; "." stays not entered, "0" becomes Free, "00.5" saves; `tsc` passes.
+
+### Stage 2 (step 4; diff 7a3a3b19..2c007029), run 5:20 PM
+1. **Accepted** (bug): the Log sheet closed only on a pathname change, so saving while already on that page left it open. Closes on every navigation (`location.key`).
+2. **Accepted** (bug): plan saves (New stub, the Add card) and Home's "Your next event" went to `/you/stubs`, which no longer lists plans. They go to `/upcoming`.
+3. **Accepted** (bug): `/calendar`, `/nights`, `/favorites` dropped their query strings. Kept now (`ExploreRedirect`, `KeepQuery`).
+4. **Accepted** (risk): Escape closed the Log sheet and a sheet above it together. Only the top sheet takes Escape.
+5. **Rejected** (risk): no focus trap / inert background on the Log sheet. None of the app's sheets trap focus (Stub it, Search, the filters); the search box takes focus on open. Adding a trap to one sheet would be inconsistent; a shared sheet focus rule is a backlog item.
+6. **Accepted** (nit): the new `.page` bottom padding overrode the timeline pages' zero padding. Timeline pages excluded; their clearance stays inside the scroller.
+- Checked fine by Codex: no redirect loops, no leftover `/stubs` or `/following` links, `backFrom` order, the You tab lit on `/you/stubs`.
+
+### Stage 3 (steps 5–6; diff 2c007029..f4687f8a), run 5:20 PM
+- **Privacy verdict (the stage's main question):** no path writes your own stubs, plans, cost, seats or the `You` pseudo-profile to any store, to Supabase, or to anyone else's feed; the link `state` carries no private fields; friends' private stubs stay filtered. Nothing to fix.
+1. **Rejected** (risk): rating lookups for your own rows reach the catalog cache and so Supabase, revealing which cities and dates were looked up. The Stubs tab has looked up verdicts for your own stubs this way since build 3; a catalog read names a city and a date, never a stub. Noted.
+2. **Accepted** (bug): your own hand-added rows linked to the date page. They open their own page (`entryPath`).
+3. **Accepted** (bug): a plan for a game outside the covered cities could show the home city's verdict. The row carries `noRead` and shows none.
+4. **Accepted** (bug): Your stubs (past only, nothing under the line) opened on an empty Today with padding. A past-only list now opens at its end, newest rows in view.
+5. **Accepted** (bug): the "↓ Today" pill landed on the plans band, not the line. It goes to the line; only the opening scroll uses the band.
+6. **Accepted** (bug): you were identified by the display name "You", so a friend called You would be merged. Identity is by id now.
+7. **Accepted** (risk): the stored Upcoming filter JSON was cast unchecked. Each piece is validated; one of the two Show rows always stays on.
 
 ## Judgment calls
 - **Global search event rows (step 7).** The lock says search's event rows get the shared row, but live search had no event rows: its Events group was one row per *date* opening the map. The safest reading that fits: add an Events group of real event rows (the shared `LogRow`) above the date hits, and keep the date hits as a "Dates" group, so nothing that worked is lost. Kylie can ask for the Dates group to go.

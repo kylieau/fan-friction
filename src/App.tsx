@@ -55,6 +55,20 @@ function FollowingRedirect() {
   return <Navigate to={`${friends ? '/activity' : '/upcoming'}${rest ? `?${rest}` : ''}`} replace />;
 }
 
+/** An old address that lands on Explore in one view: the rest of its query (city, date) rides along (Codex, stage 2). */
+function ExploreRedirect({ view }: { view: string }) {
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  params.set('view', view);
+  return <Navigate to={`/explore?${params.toString()}`} replace />;
+}
+
+/** An old address that keeps its query on the way to its new one. */
+function KeepQuery({ to }: { to: string }) {
+  const { search } = useLocation();
+  return <Navigate to={`${to}${search}`} replace />;
+}
+
 /** /stubs became the Your stubs page under You (build 7); the query (`?filter=`) rides along, and so does a tag path. */
 function StubsRedirect() {
   const { pathname, search } = useLocation();
@@ -125,10 +139,10 @@ function Shell() {
           <Route path="/stubs" element={<StubsRedirect />} />
           <Route path="/stubs/tag/:tag" element={<StubsRedirect />} />
           <Route path="/following" element={<FollowingRedirect />} />
-          <Route path="/calendar" element={<Navigate to="/explore?view=calendar" replace />} />
+          <Route path="/calendar" element={<ExploreRedirect view="calendar" />} />
           <Route path="/date/:date" element={<DateScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
-          <Route path="/favorites" element={<Navigate to="/upcoming" replace />} />
+          <Route path="/favorites" element={<KeepQuery to="/upcoming" />} />
           <Route path="/favorites/edit" element={<FavoritesScreen />} />
           <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
@@ -142,7 +156,7 @@ function Shell() {
           <Route path="/you/settings/cities" element={<PanelRedirect section="cities" />} />
           <Route path="/you/settings/privacy" element={<PanelRedirect section="privacy" />} />
           <Route path="/you/settings/crowd" element={<PanelRedirect section="crowd" />} />
-          <Route path="/nights" element={<Navigate to="/explore?view=list" replace />} />
+          <Route path="/nights" element={<ExploreRedirect view="list" />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

@@ -28,10 +28,13 @@ export function deviceCurrency(): string {
 }
 
 function cleanAmount(value: unknown): number | null {
-  const n = typeof value === 'number' ? value : typeof value === 'string' ? Number(value.replace(/[^0-9.]/g, '')) : NaN;
+  // A string is accepted only when it is a plain number ("68", "12.50"); blank or words are "not entered", never 0.
+  const n = typeof value === 'number' ? value : typeof value === 'string' && /^\d+(\.\d+)?$/.test(value.trim()) ? Number(value.trim()) : NaN;
   if (!Number.isFinite(n) || n < 0) return null;
   return Math.min(COST_MAX, Math.round(n * 100) / 100);
 }
+
+const KINDS = new Set<string>(Object.keys(COST_LABELS));
 
 /**
  * A cost as it is stored: Free keeps no lines; a paid cost keeps the lines with a real amount (0 allowed on a line,
@@ -42,11 +45,13 @@ export function normalizeCost(raw: Cost | undefined): Cost | undefined {
   if (!raw) return undefined;
   if (raw.free) return { free: true, lines: [], ...(raw.currency ? { currency: raw.currency } : {}) };
   const lines: CostLine[] = [];
-  for (const line of raw.lines ?? []) {
-    if (!line || !(line.kind in COST_LABELS)) continue;
+  // Saved data is not trusted on the way in (Codex, stage 1): the list must be a list and the kind one of ours.
+  for (const line of Array.isArray(raw.lines) ? raw.lines : []) {
+    if (!line || typeof line !== 'object' || !KINDS.has(String(line.kind))) continue;
     const amount = cleanAmount(line.amount);
     if (amount === null) continue;
-    const qty = typeof line.qty === 'number' && Number.isInteger(line.qty) && line.qty >= 2 ? Math.min(99, line.qty) : undefined;
+    // A quantity belongs to the ticket line only (2 × $68); nothing else is bought by the seat.
+    const qty = line.kind === 'ticket' && typeof line.qty === 'number' && Number.isInteger(line.qty) && line.qty >= 2 ? Math.min(99, line.qty) : undefined;
     lines.push({ kind: line.kind, amount, ...(qty ? { qty } : {}) });
   }
   if (lines.length === 0) return undefined;

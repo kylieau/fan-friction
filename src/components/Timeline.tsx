@@ -71,6 +71,13 @@ export function Timeline({
       el.scrollTop = 0;
       return;
     }
+    // Nothing ahead and nothing to say about it (Your stubs since build 7): open at the end, the newest rows in view.
+    if (future.length === 0 && !emptyFuture && !aboveLine) {
+      placed.current = true;
+      openedAt.current = el.scrollHeight - el.clientHeight;
+      el.scrollTop = openedAt.current;
+      return;
+    }
     const anchor = anchorRef.current ?? line;
     const need = el.clientHeight - (el.scrollHeight - pad - anchor.offsetTop);
     if (need > pad) {
@@ -94,7 +101,8 @@ export function Timeline({
 
   const toToday = () => {
     const el = scroller.current;
-    const anchor = anchorRef.current ?? todayLine.current;
+    // The pill lands on the line itself, even when a tall band sits above it (Codex, stage 3).
+    const anchor = todayLine.current;
     if (!el || !anchor) return;
     el.scrollTo({ top: anchor.offsetTop, behavior: 'smooth' });
   };

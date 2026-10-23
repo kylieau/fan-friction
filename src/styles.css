@@ -9902,7 +9902,7 @@ a.follow-lead::after {
 }
 
 /* Build 7: room under every scrolling list for the raised "+" (about 7 px over the bar), so nothing hides under it. */
-.page,
+.page:not(.timeline-page),
 .timeline-scroll {
   padding-bottom: 32px;
 }

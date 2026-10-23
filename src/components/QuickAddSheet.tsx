@@ -54,7 +54,8 @@ export function QuickAddSheet({ target, homeId, genreWord, artistListed, playedR
     onClose();
     // Already listed: the plan went on that event, so land there. Otherwise Stubs (a plan) or the new entry's page.
     if (result.matchedEventId && result.matchedMetroId && result.plan) navigate(eventPath(result.matchedEventId, result.matchedMetroId), { replace: true });
-    else navigate(result.plan ? '/you/stubs' : entryPath(result.id), { replace: true });
+    // A plan lives on Upcoming (build 7); a stub opens its own page.
+    else navigate(result.plan ? '/upcoming' : entryPath(result.id), { replace: true });
   };
 
   return (

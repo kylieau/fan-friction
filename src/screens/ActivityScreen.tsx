@@ -14,6 +14,8 @@ import {
   getAccount,
   getPersonalLog,
   isFurtherOutRoom,
+  isManualEntry,
+  isOutsideGamePlan,
   nightKey,
   peopleList,
   ratingForEntry,
@@ -26,11 +28,11 @@ import {
   type PersonRow,
   type Profile,
 } from '../data';
-import { activityGroups, activityOrder, ACTIVITY_WORDS, feedKind, feedSentence, type ActivityGroups, type ActivityKind } from '../lib/activity';
+import { ACTIVITY_WORDS, feedKind, feedSentence, type ActivityKind } from '../lib/activity';
 import { addDays, dayBandLabel, timelineGroup } from '../lib/dates';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { getPref, setPref } from '../lib/prefs';
-import { backFrom, datePath, eventPath } from '../lib/view';
+import { backFrom, datePath, entryPath, eventPath } from '../lib/view';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
 /** The past reaches back 60 days (the notes' Q4 horizon; Kylie, Oct 17); plans ahead are not capped (gap review G10). */
@@ -40,6 +42,8 @@ const SPAN_DAYS = 60;
 const YOU: Profile = { id: 'you', handle: null, displayName: 'You', avatarUrl: null, homeMetroId: null };
 
 const KINDS: ActivityKind[] = ['attended', 'attending', 'watching', 'watched', 'interested'];
+/** The people line's order, the ladder's: plans first, then what happened. */
+const KIND_ORDER: ActivityKind[] = ['attending', 'watching', 'interested', 'attended', 'watched'];
 const PEOPLE_KEY = 'fan-friction:following-friends-filter';
 const KINDS_KEY = 'fan-friction:activity-kinds-filter';
 
@@ -271,14 +275,26 @@ function personName(p: Pick<PersonRow, 'profile'>): string {
 }
 
 /** Your own answers as feed lines: stubs from the last 60 days and every plan ahead (Attending, Watching, Interested). */
-function ownLines(log: ReturnType<typeof getPersonalLog>, today: string): FeedItem[] {
+function ownLines(log: ReturnType<typeof getPersonalLog>, today: string): OwnLine[] {
   const floor = addDays(today, -SPAN_DAYS);
-  const stubs: FeedItem[] = yourEntries(log)
+  const stubs: OwnLine[] = yourEntries(log)
     .filter((entry) => entry.when.precision === 'day' && entry.when.sort < today && entry.when.sort >= floor)
-    .map((entry) => ({ kind: 'attended', friend: YOU, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}) }));
-  const plans: FeedItem[] = log.plans
+    .map((entry) => ({ kind: 'attended', friend: YOU, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}), ...(isManualEntry(entry) ? { ownId: entry.id } : {}) }));
+  const plans: OwnLine[] = log.plans
     .filter((plan) => plan.date >= today)
-    .map((plan) => ({ kind: 'planning', friend: YOU, title: plan.title, date: plan.date, venue: plan.venue, metroId: plan.metroId, eventId: plan.eventId, ...(plan.watch ? { watched: true } : {}), ...(plan.interested ? { interested: true } : {}) }));
+    .map((plan) => ({
+      kind: 'planning',
+      friend: YOU,
+      title: plan.title,
+      date: plan.date,
+      venue: plan.venue,
+      metroId: plan.metroId,
+      eventId: plan.eventId,
+      ...(plan.watch ? { watched: true } : {}),
+      ...(plan.interested ? { interested: true } : {}),
+      ...(plan.manual && !plan.eventId ? { ownId: plan.id } : {}),
+      ...(isOutsideGamePlan(plan) ? { noRead: true } : {}),
+    }));
   return [...stubs, ...plans];
 }
 
@@ -293,7 +309,14 @@ interface FollowItem {
   people: FeedItem[];
   /** An attended entry behind a past row (yours first), for its read and type icon. */
   entry?: Entry;
+  /** Your own hand-added stub or plan behind the row: it opens its own page. */
+  ownId?: string;
+  /** No verdict for this row: your plan for a game outside the covered cities (Codex, stage 3). */
+  noRead?: boolean;
 }
+
+/** Your own lines carry a little more than a friend's: the row's own id and whether it has a read. */
+type OwnLine = FeedItem & { ownId?: string; noRead?: boolean };
 
 /** Lines merged by event, in date order: plans ahead, and what was attended or watched in the last 60 days. You first. */
 function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
@@ -303,8 +326,12 @@ function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
     if (line.date < floor) continue;
     const key = line.eventId ?? `${line.metroId ?? ''}|${line.date}|${line.title.toLowerCase()}`;
     const item = out.get(key) ?? { key, title: line.title, date: line.date, venue: line.venue, metroId: line.metroId, eventId: line.eventId, people: [] };
-    if (line.friend.id === YOU.id) item.people.unshift(line);
-    else item.people.push(line);
+    if (line.friend.id === YOU.id) {
+      item.people.unshift(line);
+      const own = line as OwnLine;
+      if (own.ownId) item.ownId = own.ownId;
+      if (own.noRead) item.noRead = true;
+    } else item.people.push(line);
     if (line.entry && (!item.entry || line.friend.id === YOU.id)) item.entry = line.entry;
     out.set(key, item);
   }
@@ -312,6 +339,7 @@ function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
 }
 
 function ratingFor(item: FollowItem, ratings: ReadonlyMap<string, number>): number | null {
+  if (item.noRead) return null;
   if (item.entry) return ratingForEntry(item.entry, ratings);
   if (isFurtherOutRoom(item.metroId, item.venue)) return null;
   return item.metroId ? (ratings.get(nightKey(item.metroId, item.date)) ?? null) : null;
@@ -327,23 +355,25 @@ function peopleLine(items: readonly FeedItem[]): string {
     }
     return feedSentence(only).lead.replace(/ in$/, '');
   }
-  const groups: ActivityGroups = activityGroups(items, null);
-  return activityOrder(groups)
+  // Grouped by kind in the ladder's order; you are known by id, never by a display name (a friend can be called "You").
+  const byKind = new Map<ActivityKind, FeedItem[]>();
+  for (const item of items) byKind.set(feedKind(item), [...(byKind.get(feedKind(item)) ?? []), item]);
+  return KIND_ORDER.filter((kind) => byKind.has(kind))
     .map((kind) => {
-      const people = groups[kind]!;
+      const people = byKind.get(kind)!;
       const word = ACTIVITY_WORDS[kind].toLowerCase();
-      const you = people.find((p) => p.name === 'You');
-      const others = people.filter((p) => p.name !== 'You');
-      const names = you ? (others.length > 0 ? `You, ${others[0].name}` : 'You') : others[0].name;
-      const rest = others.length - (you ? 1 : 1);
+      const you = people.some((p) => p.friend.id === YOU.id);
+      const others = people.filter((p) => p.friend.id !== YOU.id).map((p) => p.friend.displayName ?? p.friend.handle ?? 'Someone');
+      const names = you ? (others.length > 0 ? `You, ${others[0]}` : 'You') : others[0];
+      const rest = others.length - 1;
       return `${names}${rest > 0 ? ` +${rest}` : ''} ${word}`;
     })
     .join(' · ');
 }
 
 function ActivityRow({ item, rating, back, home }: { item: FollowItem; rating: number | null; back: { to: string; label: string }; home: string }) {
-  // A stub logged "elsewhere" has no city, so nowhere to open (it had opened the default city's page).
-  const to = item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : item.metroId ? datePath(item.date, item.metroId) : undefined;
+  // Your own hand-added row opens its page; a stub logged "elsewhere" has no city, so nowhere to open.
+  const to = item.ownId ? entryPath(item.ownId) : item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : item.metroId ? datePath(item.date, item.metroId) : undefined;
   const line = peopleLine(item.people);
   return (
     <FollowRow

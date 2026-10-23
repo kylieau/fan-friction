@@ -53,7 +53,16 @@ const FAVES_KEY = 'fan-friction:following-faves-filter';
 function readFilter(): UpcomingFilter {
   try {
     const raw = sessionStorage.getItem(FILTER_KEY);
-    return raw ? { ...DEFAULT_FILTER, ...(JSON.parse(raw) as Partial<UpcomingFilter>) } : DEFAULT_FILTER;
+    const saved = raw ? (JSON.parse(raw) as Partial<UpcomingFilter> | null) : null;
+    if (!saved || typeof saved !== 'object') return DEFAULT_FILTER;
+    // Stored JSON is checked piece by piece (Codex, stage 3): a bad piece falls back, and one of the two Show rows stays on.
+    const presets: DatePreset[] = ['all', '7', '30', 'month', 'custom'];
+    const dates = saved.dates && typeof saved.dates === 'object' && presets.includes(saved.dates.preset) ? saved.dates : DEFAULT_FILTER.dates;
+    const plans = typeof saved.plans === 'boolean' ? saved.plans : true;
+    const faves = typeof saved.faves === 'boolean' ? saved.faves : true;
+    const kinds: PlanKind[] = ['attending', 'watching', 'interested'];
+    const planKinds = Array.isArray(saved.planKinds) ? saved.planKinds.filter((k): k is PlanKind => kinds.includes(k)) : null;
+    return { dates, plans: plans || !faves ? true : plans, faves: faves || !plans ? true : faves, planKinds: planKinds && planKinds.length > 0 && planKinds.length < kinds.length ? planKinds : null };
   } catch {
     return DEFAULT_FILTER;
   }

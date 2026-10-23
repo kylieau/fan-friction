@@ -105,7 +105,7 @@ export function CostRow({ cost, watched, onChange }: { cost: Cost | undefined; w
                 placeholder="0"
                 autoFocus={i === draft.lines.length - 1 && l.amount === ''}
                 aria-label={`${COST_LABELS[l.kind]} amount`}
-                onChange={(ev) => setLine(i, { amount: ev.target.value.replace(/[^0-9.]/g, '').slice(0, 8) })}
+                onChange={(ev) => setLine(i, { amount: capAmount(ev.target.value) })}
                 onKeyDown={(ev) => ev.key === 'Enter' && (ev.target as HTMLInputElement).blur()}
               />
             </label>
@@ -161,6 +161,12 @@ export function CostRow({ cost, watched, onChange }: { cost: Cost | undefined; w
   );
 }
 
+/** Digits and one dot, never above the cap, so the box always shows what will be saved. */
+function capAmount(typed: string): string {
+  const clean = typed.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').slice(0, 9);
+  return Number(clean) > COST_MAX ? String(COST_MAX) : clean;
+}
+
 /** The editor's lines from a saved cost; opened fresh on Attended, one Ticket line is preset. */
 function toDraft(cost: Cost | undefined, watched: boolean, opening: boolean): Draft {
   const clean = normalizeCost(cost);
@@ -178,6 +184,6 @@ function fromDraft(draft: Draft, currency: string): Cost | undefined {
     currency,
     lines: draft.lines
       .filter((l) => l.amount.trim() !== '')
-      .map((l) => ({ kind: l.kind, amount: Math.min(COST_MAX, Number(l.amount)), ...(Number(l.qty) >= 2 ? { qty: Number(l.qty) } : {}) })),
+      .map((l) => ({ kind: l.kind, amount: Math.min(COST_MAX, Number(l.amount)), ...(l.kind === 'ticket' && Number(l.qty) >= 2 ? { qty: Number(l.qty) } : {}) })),
   });
 }
