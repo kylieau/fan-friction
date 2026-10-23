@@ -1,0 +1,608 @@
+metro,venue_id,name,seats,today,map_center_min,downtown_1,downtown_1_min,downtown_2,downtown_2_min,downtown_3,downtown_3_min,rule_60_135
+la,dodger-stadium,Dodger Stadium,56000,inside,19,Los Angeles City Hall,9,"Long Beach City Hall, Long Beach, California",39,"Santa Ana City Hall, California",47,inside
+la,crypto-com-arena,Crypto.com Arena,18910,inside,12,Los Angeles City Hall,5,"Long Beach City Hall, Long Beach, California",32,"Santa Ana City Hall, California",43,inside
+la,coliseum,LA Memorial Coliseum,93607,inside,10,Los Angeles City Hall,9,"Long Beach City Hall, Long Beach, California",30,"Santa Ana City Hall, California",47,inside
+la,bmo-stadium,BMO Stadium,24000,inside,8,Los Angeles City Hall,7,"Long Beach City Hall, Long Beach, California",28,"Santa Ana City Hall, California",45,inside
+la,sofi-stadium,SoFi Stadium,70240,inside,9,Los Angeles City Hall,20,"Long Beach City Hall, Long Beach, California",31,"Santa Ana City Hall, California",48,inside
+la,intuit-dome,Intuit Dome,18000,inside,9,Los Angeles City Hall,21,"Long Beach City Hall, Long Beach, California",28,"Santa Ana City Hall, California",46,inside
+la,kia-forum,Kia Forum,17505,inside,8,Los Angeles City Hall,19,"Long Beach City Hall, Long Beach, California",30,"Santa Ana City Hall, California",48,inside
+la,hollywood-bowl,Hollywood Bowl,17500,inside,23,Los Angeles City Hall,13,"Long Beach City Hall, Long Beach, California",42,"Santa Ana City Hall, California",51,inside
+la,rose-bowl,Rose Bowl,89702,inside,30,Los Angeles City Hall,20,"Long Beach City Hall, Long Beach, California",45,"Santa Ana City Hall, California",55,inside
+la,dignity-health-sports-park,Dignity Health Sports Park,30510,inside,17,Los Angeles City Hall,23,"Long Beach City Hall, Long Beach, California",17,"Santa Ana City Hall, California",38,inside
+la,angel-stadium,Angel Stadium,45517,inside,46,Los Angeles City Hall,40,"Long Beach City Hall, Long Beach, California",37,"Santa Ana City Hall, California",11,inside
+la,pauley-pavilion,Pauley Pavilion,13800,inside,23,Los Angeles City Hall,23,"Long Beach City Hall, Long Beach, California",40,"Santa Ana City Hall, California",59,inside
+la,galen-center,Galen Center,10258,inside,9,Los Angeles City Hall,7,"Long Beach City Hall, Long Beach, California",29,"Santa Ana City Hall, California",45,inside
+la,honda-center,Honda Center,18900,inside,45,Los Angeles City Hall,40,"Long Beach City Hall, Long Beach, California",37,"Santa Ana City Hall, California",9,inside
+la,santa-anita-park,Santa Anita Park,26000,inside,38,Los Angeles City Hall,28,"Long Beach City Hall, Long Beach, California",49,"Santa Ana City Hall, California",55,inside
+la,pomona-dragstrip,In-N-Out Burger Pomona Dragstrip,40000,inside,52,Los Angeles City Hall,40,"Long Beach City Hall, Long Beach, California",58,"Santa Ana City Hall, California",39,inside
+la,weingart-stadium,Weingart Stadium,22355,inside,22,Los Angeles City Hall,12,"Long Beach City Hall, Long Beach, California",29,"Santa Ana City Hall, California",38,inside
+la,long-beach-arena,Long Beach Arena,14500,inside,30,Los Angeles City Hall,36,"Long Beach City Hall, Long Beach, California",4,"Santa Ana City Hall, California",35,inside
+la,fivepoint-amphitheatre,FivePoint Amphitheatre,12000,inside,58,Los Angeles City Hall,52,"Long Beach City Hall, Long Beach, California",46,"Santa Ana City Hall, California",16,inside
+la,drake-stadium,Drake Stadium,11700,inside,23,Los Angeles City Hall,23,"Long Beach City Hall, Long Beach, California",40,"Santa Ana City Hall, California",59,inside
+la,veterans-memorial-stadium,Veterans Memorial Stadium,11600,inside,31,Los Angeles City Hall,34,"Long Beach City Hall, Long Beach, California",18,"Santa Ana City Hall, California",30,inside
+la,fairplex-grandstand,Fairplex,15000,inside,51,Los Angeles City Hall,39,"Long Beach City Hall, Long Beach, California",58,"Santa Ana City Hall, California",38,inside
+la,titan-stadium,Titan Stadium,10000,inside,45,Los Angeles City Hall,39,"Long Beach City Hall, Long Beach, California",39,"Santa Ana City Hall, California",17,inside
+la,pacific-amphitheatre,Pacific Amphitheatre,7800,inside,52,Los Angeles City Hall,53,"Long Beach City Hall, Long Beach, California",38,"Santa Ana City Hall, California",16,inside
+la,irvine-meadows-amphitheatre,Irvine Meadows Amphitheatre,16085,inside,59,Los Angeles City Hall,54,"Long Beach City Hall, Long Beach, California",45,"Santa Ana City Hall, California",18,inside
+la,shrine-expo-hall,Shrine Expo Hall,5000,inside,9,Los Angeles City Hall,8,"Long Beach City Hall, Long Beach, California",29,"Santa Ana City Hall, California",45,inside
+la,los-alamitos-race-course,Los Alamitos Race Course,6000,inside,35,Los Angeles City Hall,33,"Long Beach City Hall, Long Beach, California",24,"Santa Ana City Hall, California",23,inside
+la,irwindale-speedway,Irwindale Speedway,6500,inside,38,Los Angeles City Hall,26,"Long Beach City Hall, Long Beach, California",42,"Santa Ana City Hall, California",43,inside
+la,gibson-amphitheatre,Gibson Amphitheatre,6251,inside,28,Los Angeles City Hall,18,"Long Beach City Hall, Long Beach, California",47,"Santa Ana City Hall, California",56,inside
+la,dhsp-tennis-stadium,Dignity Health Sports Park Tennis Stadium,8000,inside,17,Los Angeles City Hall,23,"Long Beach City Hall, Long Beach, California",17,"Santa Ana City Hall, California",38,inside
+la,anaheim-convention-center,Anaheim Convention Center,7500,inside,44,Los Angeles City Hall,38,"Long Beach City Hall, Long Beach, California",35,"Santa Ana City Hall, California",13,inside
+la,peacock-theater,Peacock Theater,7100,inside,11,Los Angeles City Hall,4,"Long Beach City Hall, Long Beach, California",31,"Santa Ana City Hall, California",43,inside
+la,shrine-auditorium,Shrine Auditorium,6300,inside,9,Los Angeles City Hall,8,"Long Beach City Hall, Long Beach, California",29,"Santa Ana City Hall, California",45,inside
+la,youtube-theater,YouTube Theater,6000,inside,10,Los Angeles City Hall,22,"Long Beach City Hall, Long Beach, California",33,"Santa Ana City Hall, California",50,inside
+la,greek-theatre,Greek Theatre,5900,inside,26,Los Angeles City Hall,16,"Long Beach City Hall, Long Beach, California",43,"Santa Ana City Hall, California",52,inside
+la,la-tennis-center,Los Angeles Tennis Center,5800,inside,23,Los Angeles City Hall,22,"Long Beach City Hall, Long Beach, California",40,"Santa Ana City Hall, California",59,inside
+la,championship-soccer-stadium,Championship Soccer Stadium,5500,inside,58,Los Angeles City Hall,52,"Long Beach City Hall, Long Beach, California",47,"Santa Ana City Hall, California",16,inside
+la,bren-events-center,Bren Events Center,5430,inside,52,Los Angeles City Hall,53,"Long Beach City Hall, Long Beach, California",39,"Santa Ana City Hall, California",16,inside
+la,walter-pyramid,LBS Financial Credit Union Pyramid,5000,inside,30,Los Angeles City Hall,35,"Long Beach City Hall, Long Beach, California",16,"Santa Ana City Hall, California",26,inside
+la,indian-wells-stadium-1,"Stadium 1, Indian Wells Tennis Garden",16100,further out,155,Los Angeles City Hall,143,"Long Beach City Hall, Long Beach, California",156,"Santa Ana City Hall, California",132,neither
+la,acrisure-arena,Acrisure Arena,11007,further out,147,Los Angeles City Hall,135,"Long Beach City Hall, Long Beach, California",149,"Santa Ana City Hall, California",124,further
+la,great-park-live,Great Park Live,10000,inside,56,Los Angeles City Hall,51,"Long Beach City Hall, Long Beach, California",45,"Santa Ana City Hall, California",15,inside
+la,indian-wells-stadium-2,"Stadium 2, Indian Wells Tennis Garden",8000,further out,155,Los Angeles City Hall,143,"Long Beach City Hall, Long Beach, California",156,"Santa Ana City Hall, California",132,neither
+la,toyota-arena-ontario,Toyota Arena,11089,further out,63,Los Angeles City Hall,51,"Long Beach City Hall, Long Beach, California",69,"Santa Ana City Hall, California",50,inside
+la,san-manuel-stadium,San Manuel Stadium,8000,further out,83,Los Angeles City Hall,72,"Long Beach City Hall, Long Beach, California",86,"Santa Ana City Hall, California",62,further
+la,morongo-field,Morongo Field,6000,further out,66,Los Angeles City Hall,54,"Long Beach City Hall, Long Beach, California",72,"Santa Ana City Hall, California",53,inside
+la,fowler-events-center,Dale E. and Sarah Ann Fowler Events Center,5050,further out,76,Los Angeles City Hall,70,"Long Beach City Hall, Long Beach, California",70,"Santa Ana City Hall, California",46,further
+la,fantasy-springs-special-events-center,Fantasy Springs Resort Casino,3700,further out,160,Los Angeles City Hall,148,"Long Beach City Hall, Long Beach, California",161,"Santa Ana City Hall, California",137,neither
+la,the-show-agua-caliente,The Show,2057,further out,144,Los Angeles City Hall,132,"Long Beach City Hall, Long Beach, California",145,"Santa Ana City Hall, California",121,further
+la,mccallum-theatre,McCallum Theatre,1127,further out,150,Los Angeles City Hall,138,"Long Beach City Hall, Long Beach, California",151,"Santa Ana City Hall, California",127,neither
+la,empire-polo-club,Empire Polo Club,125000,further out,164,Los Angeles City Hall,152,"Long Beach City Hall, Long Beach, California",165,"Santa Ana City Hall, California",141,neither
+boston,gillette-stadium,Boston Stadium,64628,inside,48,Boston City Hall,45,,,,,inside
+boston,alumni-stadium,Alumni Stadium,44500,inside,18,Boston City Hall,19,,,,,inside
+boston,fenway-park,Fenway Park,37755,inside,9,Boston City Hall,9,,,,,inside
+boston,harvard-stadium,Harvard Stadium,25000,inside,11,Boston City Hall,12,,,,,inside
+boston,xfinity-center,Xfinity Center,19900,inside,56,Boston City Hall,52,,,,,inside
+boston,td-garden,TD Garden,19156,inside,6,Boston City Hall,3,,,,,inside
+boston,nickerson-field,Nickerson Field,9871,inside,9,Boston City Hall,12,,,,,inside
+boston,conte-forum,Conte Forum,8606,inside,16,Boston City Hall,17,,,,,inside
+boston,agganis-arena,Agganis Arena,7200,inside,9,Boston City Hall,11,,,,,inside
+boston,tsongas-center,Tsongas Arena,7800,inside,43,Boston City Hall,43,,,,,inside
+boston,mgm-music-hall-fenway,MGM Music Hall at Fenway,5009,inside,9,Boston City Hall,9,,,,,inside
+boston,leader-bank-pavilion,Rockland Trust Bank Pavilion,5000,inside,9,Boston City Hall,5,,,,,inside
+boston,track-new-balance,The TRACK at New Balance,5000,inside,14,Boston City Hall,13,,,,,inside
+chicago,soldier-field,Soldier Field,63500,inside,14,Chicago City Hall,6,,,,,inside
+chicago,wrigley-field,Wrigley Field,41649,inside,16,Chicago City Hall,11,,,,,inside
+chicago,rate-field,Rate Field,40615,inside,14,Chicago City Hall,9,,,,,inside
+chicago,ryan-field,Ryan Field,35000,inside,30,Chicago City Hall,29,,,,,inside
+chicago,huntington-bank-pavilion,Huntington Bank Pavilion at Northerly Island,30000,inside,16,Chicago City Hall,8,,,,,inside
+chicago,credit-union-1-amphitheatre,Credit Union 1 Amphitheatre,28000,inside,47,Chicago City Hall,44,,,,,inside
+chicago,seatgeek-stadium,SeatGeek Stadium,28000,inside,22,Chicago City Hall,26,,,,,inside
+chicago,united-center,United Center,23500,inside,5,Chicago City Hall,6,,,,,inside
+chicago,allstate-arena,Allstate Arena,18500,inside,30,Chicago City Hall,31,,,,,inside
+chicago,ravinia,Ravinia,12758,inside,39,Chicago City Hall,39,,,,,inside
+chicago,martin-stadium,Martin Stadium,12000,inside,33,Chicago City Hall,31,,,,,inside
+chicago,now-arena,NOW Arena,11218,inside,52,Chicago City Hall,53,,,,,inside
+chicago,pritzker-pavilion,Jay Pritzker Pavilion,11000,inside,12,Chicago City Hall,3,,,,,inside
+chicago,wintrust-arena,Wintrust Arena,10387,inside,14,Chicago City Hall,7,,,,,inside
+chicago,credit-union-1-arena,Credit Union 1 Arena,10300,inside,9,Chicago City Hall,6,,,,,inside
+chicago,impact-field,Impact Field,6300,inside,27,Chicago City Hall,32,,,,,inside
+chicago,wintrust-field,Wintrust Field,7365,inside,41,Chicago City Hall,48,,,,,inside
+chicago,welsh-ryan-arena,Welsh-Ryan Arena,8117,inside,30,Chicago City Hall,29,,,,,inside
+chicago,jones-convocation-center,Emil and Patricia Jones Convocation Center,7000,inside,27,Chicago City Hall,23,,,,,inside
+chicago,salt-shed,The Salt Shed,5000,inside,10,Chicago City Hall,7,,,,,inside
+chicago,aragon-ballroom,Byline Bank Aragon Ballroom,5000,inside,19,Chicago City Hall,14,,,,,inside
+chicago,gately-stadium,Gately Stadium,5000,inside,28,Chicago City Hall,24,,,,,inside
+chicago,chicagoland-speedway,Chicagoland Speedway,47000,inside,66,Chicago City Hall,68,,,,,further
+columbus,ohio-stadium,Ohio Stadium,102780,inside,7,"Columbus City Hall, Ohio",9,,,,,inside
+columbus,nationwide-arena,Nationwide Arena,20000,inside,5,"Columbus City Hall, Ohio",2,,,,,inside
+columbus,value-city-arena,Value City Arena at the Jerome Schottenstein Center,20000,inside,7,"Columbus City Hall, Ohio",9,,,,,inside
+columbus,scottsmiracle-gro-field,ScottsMiracle-Gro Field,20371,inside,7,"Columbus City Hall, Ohio",4,,,,,inside
+columbus,historic-crew-stadium,Historic Crew Stadium,19968,inside,9,"Columbus City Hall, Ohio",12,,,,,inside
+columbus,st-john-arena,St. John Arena,13276,inside,7,"Columbus City Hall, Ohio",9,,,,,inside
+columbus,mid-ohio-sports-car-course,Mid-Ohio Sports Car Course,12000,inside,77,"Columbus City Hall, Ohio",79,,,,,further
+columbus,celeste-center,WCOL Celeste Center,10200,inside,7,"Columbus City Hall, Ohio",10,,,,,inside
+columbus,huntington-park,Huntington Park,10100,inside,4,"Columbus City Hall, Ohio",2,,,,,inside
+columbus,jesse-owens-memorial-stadium,Jesse Owens Memorial Stadium,10000,inside,8,"Columbus City Hall, Ohio",10,,,,,inside
+columbus,selby-stadium,Selby Stadium,9100,inside,38,"Columbus City Hall, Ohio",40,,,,,inside
+columbus,fortress-obetz,Fortress Obetz,6500,inside,23,"Columbus City Hall, Ohio",20,,,,,inside
+columbus,battelle-grand,Battelle Grand,5411,inside,5,"Columbus City Hall, Ohio",4,,,,,inside
+columbus,kemba-live-outdoor,KEMBA Live!,5200,inside,4,"Columbus City Hall, Ohio",2,,,,,inside
+cleveland,huntington-bank-field,Huntington Bank Field,67431,inside,4,Cleveland City Hall,3,,,,,inside
+cleveland,progressive-field,Progressive Field,33530,inside,2,Cleveland City Hall,4,,,,,inside
+cleveland,rocket-arena,Rocket Arena,19432,inside,1,Cleveland City Hall,4,,,,,inside
+cleveland,wolstein-center,Wolstein Center,13610,inside,4,Cleveland City Hall,5,,,,,inside
+cleveland,public-hall-cleveland,Public Hall,10000,inside,3,Cleveland City Hall,2,,,,,inside
+cleveland,classic-auto-group-park,Classic Auto Group Park,7273,inside,26,Cleveland City Hall,24,,,,,inside
+cleveland,blossom-music-center,Blossom Music Center,6051,inside,49,Cleveland City Hall,51,,,,,inside
+new-york,metlife-stadium,MetLife Stadium,82500,inside,26,New York City Hall,24,,,,,inside
+new-york,yankee-stadium,Yankee Stadium,54251,inside,14,New York City Hall,24,,,,,inside
+new-york,belmont-park,Belmont Park,50000,inside,27,New York City Hall,36,,,,,inside
+new-york,citi-field,Citi Field,41922,inside,12,New York City Hall,24,,,,,inside
+new-york,aqueduct,Aqueduct Racetrack,17000,inside,25,New York City Hall,30,,,,,inside
+new-york,sports-illustrated-stadium,Sports Illustrated Stadium,25000,inside,31,New York City Hall,23,,,,,inside
+new-york,arthur-ashe-stadium,Arthur Ashe Stadium,23771,inside,15,New York City Hall,24,,,,,inside
+new-york,madison-square-garden,Madison Square Garden,19812,inside,11,New York City Hall,12,,,,,inside
+new-york,ubs-arena,UBS Arena,19000,inside,27,New York City Hall,36,,,,,inside
+new-york,barclays-center,Barclays Center,19000,inside,18,New York City Hall,9,,,,,inside
+new-york,prudential-center,Prudential Center,19500,inside,33,New York City Hall,23,,,,,inside
+new-york,pnc-bank-arts-center,PNC Bank Arts Center,17500,inside,69,New York City Hall,62,,,,,further
+new-york,wien-stadium,Robert K. Kraft Field at Lawrence A. Wien Stadium,17000,inside,21,New York City Hall,29,,,,,inside
+new-york,nassau-coliseum,Nassau Veterans Memorial Coliseum,16170,inside,40,New York City Hall,49,,,,,inside
+new-york,jones-beach-theater,Northwell at Jones Beach Theater,14000,inside,49,New York City Hall,57,,,,,inside
+new-york,forest-hills-stadium,Forest Hills Stadium,14000,inside,15,New York City Hall,24,,,,,inside
+new-york,louis-armstrong-stadium,Louis Armstrong Stadium,14000,inside,15,New York City Hall,23,,,,,inside
+new-york,lavalle-stadium,Kenneth P. LaValle Stadium,12300,inside,81,New York City Hall,89,,,,,further
+new-york,shuart-stadium,James M. Shuart Stadium,11929,inside,38,New York City Hall,47,,,,,inside
+new-york,maimonides-park,Maimonides Park,7000,inside,34,New York City Hall,25,,,,,inside
+new-york,usta-grandstand,USTA Grandstand,8000,inside,15,New York City Hall,24,,,,,inside
+new-york,siuh-community-park,SIUH Community Park,7171,inside,38,New York City Hall,29,,,,,inside
+new-york,fairfield-properties-ballpark,Fairfield Properties Ballpark,6002,inside,64,New York City Hall,73,,,,,further
+new-york,pacha-new-york,Pacha New York,6000,inside,10,New York City Hall,14,,,,,inside
+new-york,radio-city-music-hall,Radio City Music Hall,5960,inside,9,New York City Hall,14,,,,,inside
+new-york,carnesecca-arena,Carnesecca Arena,5602,inside,20,New York City Hall,28,,,,,inside
+new-york,infosys-theater-msg,Infosys Theater at Madison Square Garden,5600,inside,11,New York City Hall,12,,,,,inside
+new-york,summerstage,Rumsey Playfield,5000,inside,9,New York City Hall,17,,,,,inside
+new-york,icahn-stadium,Icahn Stadium,5000,inside,10,New York City Hall,21,,,,,inside
+new-york,ford-amphitheater,Ford Amphitheater at Coney Island,5000,inside,33,New York City Hall,24,,,,,inside
+new-york,westchester-county-center,Westchester County Center,5000,inside,44,New York City Hall,53,,,,,inside
+new-york,coffey-field,Moglia Stadium at Jack Coffey Field,7000,inside,23,New York City Hall,33,,,,,inside
+new-york,lena-horne-bandshell,Lena Horne Bandshell,8000,inside,20,New York City Hall,13,,,,,inside
+new-york,mack-sports-complex,David S. Mack Sports and Exhibition Complex,5023,inside,40,New York City Hall,49,,,,,inside
+new-york,brooklyn-storehouse,Brooklyn Storehouse,5000,inside,12,New York City Hall,8,,,,,inside
+new-york,shi-stadium,SHI Stadium,52454,inside,66,New York City Hall,59,,,,,inside
+new-york,hinchliffe-stadium,Hinchliffe Stadium,10000,inside,37,New York City Hall,35,,,,,inside
+new-york,jersey-mikes-arena,Jersey Mike's Arena,8000,inside,66,New York City Hall,59,,,,,inside
+new-york,shoretown-ballpark,ShoreTown Ballpark,6588,inside,103,New York City Hall,96,,,,,further
+new-york,td-bank-ballpark,TD Bank Ballpark,6100,inside,72,New York City Hall,63,,,,,further
+new-york,sprague-field,Sprague Field,6000,inside,34,New York City Hall,32,,,,,inside
+new-york,msu-soccer-park,MSU Soccer Park,5000,inside,35,New York City Hall,33,,,,,inside
+new-york,shark-stadium,Shark Stadium,6000,inside,39,New York City Hall,48,,,,,inside
+new-york,yurcak-field,Yurcak Field,5000,inside,66,New York City Hall,59,,,,,inside
+atlanta,mercedes-benz-stadium,Mercedes-Benz Stadium,71000,inside,10,Atlanta City Hall,2,,,,,inside
+atlanta,echopark-speedway,EchoPark Speedway,71000,inside,50,Atlanta City Hall,40,,,,,inside
+atlanta,bobby-dodd-stadium,Bobby Dodd Stadium at Hyundai Field,55000,inside,8,Atlanta City Hall,5,,,,,inside
+atlanta,truist-park,Truist Park,41084,inside,16,Atlanta City Hall,20,,,,,inside
+atlanta,center-parc-stadium,Center Parc Stadium,24333,inside,12,Atlanta City Hall,2,,,,,inside
+atlanta,state-farm-arena,State Farm Arena,21000,inside,11,Atlanta City Hall,3,,,,,inside
+atlanta,lakewood-amphitheatre,Lakewood Amphitheatre,18920,inside,18,Atlanta City Hall,9,,,,,inside
+atlanta,gas-south-arena,Gas South Arena,13000,inside,33,Atlanta City Hall,36,,,,,inside
+atlanta,ameris-bank-amphitheatre,Ameris Bank Amphitheatre,12000,inside,33,Atlanta City Hall,36,,,,,inside
+atlanta,fifth-third-stadium,Fifth Third Stadium,16316,inside,28,Atlanta City Hall,32,,,,,inside
+atlanta,gwinnett-field,Gwinnett Field,10427,inside,40,Atlanta City Hall,44,,,,,inside
+atlanta,bt-harvey-stadium,B.T. Harvey Stadium,9000,inside,11,Atlanta City Hall,4,,,,,inside
+atlanta,mccamish-pavilion,McCamish Pavilion,8600,inside,6,Atlanta City Hall,6,,,,,inside
+atlanta,gsu-convocation-center,GSU Convocation Center,8000,inside,12,Atlanta City Hall,2,,,,,inside
+atlanta,chastain-park-amphitheater,Synovus Bank Amphitheater at Chastain Park,6900,inside,14,Atlanta City Hall,19,,,,,inside
+atlanta,forbes-arena,Forbes Arena,6000,inside,10,Atlanta City Hall,4,,,,,inside
+atlanta,wolf-creek-amphitheater,Wolf Creek Amphitheater,5420,inside,35,Atlanta City Hall,27,,,,,inside
+atlanta,ksu-convocation-center,VyStar Arena,5000,inside,31,Atlanta City Hall,35,,,,,inside
+atlanta,panther-stadium,Panther Stadium,5000,inside,12,Atlanta City Hall,6,,,,,inside
+atlanta,gateway-center-arena,Gateway Center,5000,inside,26,Atlanta City Hall,17,,,,,inside
+bay-area,levis-stadium,Levi's Stadium,68827,inside,37,San Francisco City Hall,55,Oakland City Hall,49,San Jose City Hall,14,inside
+bay-area,oakland-coliseum,Oakland Coliseum,53200,inside,34,San Francisco City Hall,30,Oakland City Hall,13,San Jose City Hall,46,inside
+bay-area,california-memorial-stadium,California Memorial Stadium,62467,inside,50,San Francisco City Hall,28,Oakland City Hall,13,San Jose City Hall,61,inside
+bay-area,stanford-stadium,Stanford Stadium,50424,inside,29,San Francisco City Hall,48,Oakland City Hall,52,San Jose City Hall,30,inside
+bay-area,oracle-park,Oracle Park,41265,inside,32,San Francisco City Hall,8,Oakland City Hall,19,San Jose City Hall,60,inside
+bay-area,shoreline-amphitheatre,Shoreline Amphitheatre,22500,inside,29,San Francisco City Hall,47,Oakland City Hall,51,San Jose City Hall,21,inside
+bay-area,oakland-arena,Oakland Arena,19596,inside,34,San Francisco City Hall,31,Oakland City Hall,15,San Jose City Hall,46,inside
+bay-area,sap-center,SAP Center,18543,inside,42,San Francisco City Hall,61,Oakland City Hall,53,San Jose City Hall,4,inside
+bay-area,chase-center,Chase Center,19500,inside,32,San Francisco City Hall,8,Oakland City Hall,21,San Jose City Hall,59,inside
+bay-area,cefcu-stadium,CEFCU Stadium,30456,inside,46,San Francisco City Hall,65,Oakland City Hall,56,San Jose City Hall,5,inside
+bay-area,paypal-park,PayPal Park,18000,inside,41,San Francisco City Hall,60,Oakland City Hall,50,San Jose City Hall,6,inside
+bay-area,cow-palace,Cow Palace,16500,inside,29,San Francisco City Hall,14,Oakland City Hall,27,San Jose City Hall,57,inside
+bay-area,toyota-pavilion-concord,Toyota Pavilion at Concord,12500,inside,74,San Francisco City Hall,53,Oakland City Hall,38,San Jose City Hall,75,inside
+bay-area,haas-pavilion,Haas Pavilion,11858,inside,52,San Francisco City Hall,27,Oakland City Hall,14,San Jose City Hall,64,inside
+bay-area,kezar-stadium,Kezar Stadium,10000,inside,38,San Francisco City Hall,9,Oakland City Hall,24,San Jose City Hall,66,inside
+bay-area,greek-theatre-berkeley,Greek Theatre,8500,inside,50,San Francisco City Hall,28,Oakland City Hall,13,San Jose City Hall,62,inside
+bay-area,bill-graham-civic,Bill Graham Civic Auditorium,8500,inside,34,San Francisco City Hall,3,Oakland City Hall,19,San Jose City Hall,61,inside
+bay-area,frost-amphitheater,Frost Amphitheater,8000,inside,31,San Francisco City Hall,49,Oakland City Hall,53,San Jose City Hall,32,inside
+bay-area,maples-pavilion,Maples Pavilion,7233,inside,32,San Francisco City Hall,50,Oakland City Hall,54,San Jose City Hall,31,inside
+bay-area,provident-event-center,Provident Credit Union Event Center,6000,inside,46,San Francisco City Hall,64,Oakland City Hall,55,San Jose City Hall,3,inside
+bay-area,saint-marys-stadium,Saint Mary's Stadium,5500,inside,62,San Francisco City Hall,41,Oakland City Hall,26,San Jose City Hall,71,inside
+bay-area,stevens-stadium,Stevens Stadium,6800,inside,41,San Francisco City Hall,59,Oakland City Hall,53,San Jose City Hall,10,inside
+bay-area,edwards-stadium,Edwards Stadium,22000,inside,50,San Francisco City Hall,26,Oakland City Hall,12,San Jose City Hall,62,inside
+dallas-fort-worth,att-stadium,AT&T Stadium,80000,inside,20,Dallas City Hall,25,Fort Worth City Hall,24,,,inside
+dallas-fort-worth,cotton-bowl,Cotton Bowl,92100,inside,28,Dallas City Hall,9,Fort Worth City Hall,48,,,inside
+dallas-fort-worth,texas-motor-speedway,Texas Motor Speedway,75000,inside,38,Dallas City Hall,48,Fort Worth City Hall,30,,,inside
+dallas-fort-worth,amon-g-carter-stadium,Amon G. Carter Stadium,46000,inside,39,Dallas City Hall,48,Fort Worth City Hall,10,,,inside
+dallas-fort-worth,globe-life-field,Globe Life Field,43598,inside,20,Dallas City Hall,25,Fort Worth City Hall,26,,,inside
+dallas-fort-worth,gerald-j-ford-stadium,Ford Stadium,33200,inside,27,Dallas City Hall,10,Fort Worth City Hall,49,,,inside
+dallas-fort-worth,datcu-stadium,DATCU Stadium,30850,inside,42,Dallas City Hall,49,Fort Worth City Hall,41,,,inside
+dallas-fort-worth,choctaw-stadium,Choctaw Stadium,48114,inside,18,Dallas City Hall,23,Fort Worth City Hall,23,,,inside
+dallas-fort-worth,american-airlines-center,American Airlines Center,21000,inside,20,Dallas City Hall,5,Fort Worth City Hall,42,,,inside
+dallas-fort-worth,dos-equis-pavilion,Dos Equis Pavilion,20000,inside,26,Dallas City Hall,7,Fort Worth City Hall,46,,,inside
+dallas-fort-worth,toyota-stadium,Toyota Stadium,30000,inside,37,Dallas City Hall,36,Fort Worth City Hall,58,,,inside
+dallas-fort-worth,dickies-arena,Dickies Arena,14000,inside,36,Dallas City Hall,44,Fort Worth City Hall,6,,,inside
+dallas-fort-worth,ford-center-at-the-star,The Star,12000,inside,34,Dallas City Hall,33,Fort Worth City Hall,55,,,inside
+dallas-fort-worth,riders-field,Riders Field,10316,inside,32,Dallas City Hall,31,Fort Worth City Hall,53,,,inside
+dallas-fort-worth,unt-coliseum,The Super Pit,9797,inside,41,Dallas City Hall,48,Fort Worth City Hall,43,,,inside
+dallas-fort-worth,dallas-memorial-arena,Dallas Memorial Arena,10000,inside,21,Dallas City Hall,2,Fort Worth City Hall,43,,,inside
+dallas-fort-worth,fair-park-coliseum,Fair Park Coliseum,8500,inside,28,Dallas City Hall,9,Fort Worth City Hall,48,,,inside
+dallas-fort-worth,curtis-culwell-center,Curtis Culwell Center,6860,inside,37,Dallas City Hall,30,Fort Worth City Hall,61,,,inside
+dallas-fort-worth,toyota-music-factory,Toyota Music Factory,8000,inside,12,Dallas City Hall,17,Fort Worth City Hall,38,,,inside
+dallas-fort-worth,lone-star-park,Lone Star Park,8000,inside,13,Dallas City Hall,19,Fort Worth City Hall,33,,,inside
+dallas-fort-worth,grand-prairie-stadium,QuikTrip Park,7200,inside,14,Dallas City Hall,17,Fort Worth City Hall,31,,,inside
+dallas-fort-worth,mansfield-stadium,Mansfield Stadium,7000,inside,37,Dallas City Hall,41,Fort Worth City Hall,28,,,inside
+dallas-fort-worth,college-park-center,College Park Center,7000,inside,23,Dallas City Hall,28,Fort Worth City Hall,25,,,inside
+dallas-fort-worth,moody-coliseum,Moody Coliseum,7000,inside,27,Dallas City Hall,10,Fort Worth City Hall,50,,,inside
+dallas-fort-worth,cutx-event-center,Credit Union of Texas Event Center,7080,inside,41,Dallas City Hall,33,Fort Worth City Hall,65,,,inside
+dallas-fort-worth,schollmaier-arena,Schollmaier Arena,6800,inside,39,Dallas City Hall,48,Fort Worth City Hall,10,,,inside
+dallas-fort-worth,texas-trust-cu-theatre,Texas Trust CU Theatre,6350,inside,16,Dallas City Hall,19,Fort Worth City Hall,33,,,inside
+dallas-fort-worth,billy-bobs-texas,Billy Bob's,6000,inside,31,Dallas City Hall,45,Fort Worth City Hall,7,,,inside
+dallas-fort-worth,comerica-center,Comerica Center,6000,inside,33,Dallas City Hall,31,Fort Worth City Hall,54,,,inside
+dallas-fort-worth,will-rogers-coliseum,Will Rogers Memorial Coliseum,5652,inside,34,Dallas City Hall,44,Fort Worth City Hall,4,,,inside
+montreal,bell-centre,Bell Centre,22114,inside,13,Hôtel de Ville de Montréal,5,,,,,inside
+montreal,olympic-stadium,Olympic Stadium,56000,inside,15,Hôtel de Ville de Montréal,12,,,,,inside
+montreal,stade-saputo,Saputo Stadium,20801,inside,16,Hôtel de Ville de Montréal,14,,,,,inside
+montreal,place-bell,Place Bell,10172,inside,20,Hôtel de Ville de Montréal,26,,,,,inside
+montreal,percival-molson-stadium,Molson Stadium,25012,inside,9,Hôtel de Ville de Montréal,7,,,,,inside
+montreal,iga-stadium,IGA Stadium,11991,inside,9,Hôtel de Ville de Montréal,16,,,,,inside
+montreal,cepsum-stadium,CEPSUM Stadium,5000,inside,10,Hôtel de Ville de Montréal,12,,,,,inside
+montreal,claude-robillard,Claude-Robillard Sports Complex,6375,inside,12,Hôtel de Ville de Montréal,21,,,,,inside
+mexico-city,estadio-banorte,Estadio Banorte,87000,inside,14,"Palacio del Ayuntamiento, Ciudad de México",18,,,,,inside
+mexico-city,estadio-gnp-seguros,Estadio GNP Seguros,65000,inside,11,"Palacio del Ayuntamiento, Ciudad de México",12,,,,,inside
+mexico-city,estadio-olimpico-universitario,Estadio Olímpico Universitario,58445,inside,19,"Palacio del Ayuntamiento, Ciudad de México",24,,,,,inside
+mexico-city,plaza-de-toros-mexico,Plaza de Toros México,50000,inside,10,"Palacio del Ayuntamiento, Ciudad de México",12,,,,,inside
+mexico-city,estadio-ciudad-de-los-deportes,Estadio Ciudad de los Deportes,34253,inside,10,"Palacio del Ayuntamiento, Ciudad de México",13,,,,,inside
+mexico-city,arena-cdmx,Arena Ciudad de México,22300,inside,24,"Palacio del Ayuntamiento, Ciudad de México",19,,,,,inside
+mexico-city,palacio-de-los-deportes,Palacio de los Deportes,21000,inside,9,"Palacio del Ayuntamiento, Ciudad de México",10,,,,,inside
+mexico-city,estadio-alfredo-harp-helu,Estadio Alfredo Harp Helú,20576,inside,11,"Palacio del Ayuntamiento, Ciudad de México",12,,,,,inside
+mexico-city,arena-mexico,Arena México,16500,inside,7,"Palacio del Ayuntamiento, Ciudad de México",6,,,,,inside
+mexico-city,estadio-wilfrido-massieu,Estadio Wilfrido Massieu,13000,inside,21,"Palacio del Ayuntamiento, Ciudad de México",16,,,,,inside
+mexico-city,auditorio-nacional,Auditorio Nacional,9366,inside,13,"Palacio del Ayuntamiento, Ciudad de México",15,,,,,inside
+mexico-city,pepsi-center-wtc,Pepsi Center WTC,8000,inside,9,"Palacio del Ayuntamiento, Ciudad de México",11,,,,,inside
+mexico-city,gimnasio-juan-de-la-barrera,Gimnasio Olímpico Juan de la Barrera,5242,inside,9,"Palacio del Ayuntamiento, Ciudad de México",13,,,,,inside
+milwaukee,american-family-field,American Family Field,41900,inside,5,Milwaukee City Hall,9,,,,,inside
+milwaukee,milwaukee-mile,Milwaukee Mile,34855,inside,12,Milwaukee City Hall,16,,,,,inside
+milwaukee,american-family-insurance-amphitheater,American Family Insurance Amphitheater,23000,inside,11,Milwaukee City Hall,6,,,,,inside
+milwaukee,fiserv-forum,Fiserv Forum,18000,inside,7,Milwaukee City Hall,2,,,,,inside
+milwaukee,uwm-panther-arena,UW-Milwaukee Panther Arena,10705,inside,7,Milwaukee City Hall,2,,,,,inside
+milwaukee,slinger-speedway,Slinger Super Speedway,10000,inside,44,Milwaukee City Hall,47,,,,,inside
+milwaukee,bmo-pavilion,BMO Pavilion,10000,inside,11,Milwaukee City Hall,6,,,,,inside
+philadelphia,lincoln-financial-field,Lincoln Financial Field,69879,inside,11,Philadelphia City Hall,12,,,,,inside
+philadelphia,citizens-bank-park,Citizens Bank Park,42901,inside,10,Philadelphia City Hall,11,,,,,inside
+philadelphia,xfinity-mobile-arena,Xfinity Mobile Arena,21000,inside,11,Philadelphia City Hall,11,,,,,inside
+philadelphia,penn-franklin-field,Franklin Field,52958,inside,5,Philadelphia City Hall,7,,,,,inside
+philadelphia,subaru-park,Subaru Park,26000,inside,31,Philadelphia City Hall,32,,,,,inside
+philadelphia,freedom-mortgage-pavilion,Freedom Mortgage Pavilion,25488,inside,10,Philadelphia City Hall,8,,,,,inside
+philadelphia,mann-td-pavilion,TD Pavilion at Highmark Mann,13000,inside,10,Philadelphia City Hall,10,,,,,inside
+philadelphia,mann-skyline-stage,Highmark Skyline Stage,6500,inside,10,Philadelphia City Hall,10,,,,,inside
+philadelphia,villanova-stadium,Villanova Stadium,12500,inside,30,Philadelphia City Hall,30,,,,,inside
+philadelphia,liacouras-center,Liacouras Center,10206,inside,7,Philadelphia City Hall,6,,,,,inside
+philadelphia,the-palestra,The Palestra,8725,inside,5,Philadelphia City Hall,6,,,,,inside
+philadelphia,finneran-pavilion,Finneran Pavilion,6501,inside,31,Philadelphia City Hall,30,,,,,inside
+philadelphia,dell-music-center,Dell Music Center,5884,inside,11,Philadelphia City Hall,10,,,,,inside
+philadelphia,delaware-stadium,Delaware Stadium,18500,inside,60,Philadelphia City Hall,61,,,,,further
+philadelphia,frawley-stadium,Frawley Stadium,6404,inside,46,Philadelphia City Hall,48,,,,,inside
+philadelphia,bob-carpenter-center,Acierno Arena,5000,inside,60,Philadelphia City Hall,61,,,,,further
+phoenix,state-farm-stadium,State Farm Stadium,63400,inside,23,Phoenix City Hall,24,,,,,inside
+phoenix,mountain-america-stadium,Mountain America Stadium,53599,inside,20,Phoenix City Hall,19,,,,,inside
+phoenix,chase-field,Chase Field,48633,inside,8,Phoenix City Hall,2,,,,,inside
+phoenix,phoenix-raceway,Phoenix Raceway,42000,inside,31,Phoenix City Hall,32,,,,,inside
+phoenix,talking-stick-resort-amphitheatre,Talking Stick Resort Amphitheatre,20106,inside,16,Phoenix City Hall,16,,,,,inside
+phoenix,desert-diamond-arena,Desert Diamond Arena,19000,inside,23,Phoenix City Hall,24,,,,,inside
+phoenix,mortgage-matchup-center,Mortgage Matchup Center,17071,inside,8,Phoenix City Hall,2,,,,,inside
+phoenix,sloan-park,Sloan Park,15000,inside,22,Phoenix City Hall,21,,,,,inside
+phoenix,arizona-veterans-memorial-coliseum,Arizona Veterans Memorial Coliseum,14691,inside,4,Phoenix City Hall,7,,,,,inside
+phoenix,desert-financial-arena,Desert Financial Arena,14198,inside,20,Phoenix City Hall,18,,,,,inside
+phoenix,camelback-ranch,Camelback Ranch–Glendale,13500,inside,24,Phoenix City Hall,25,,,,,inside
+phoenix,scottsdale-stadium,Scottsdale Stadium,12000,inside,22,Phoenix City Hall,20,,,,,inside
+phoenix,salt-river-fields,Salt River Fields at Talking Stick,11000,inside,35,Phoenix City Hall,34,,,,,inside
+phoenix,surprise-stadium,Surprise Stadium,10714,inside,40,Phoenix City Hall,43,,,,,inside
+phoenix,hohokam-stadium,Hohokam Stadium,10500,inside,27,Phoenix City Hall,25,,,,,inside
+phoenix,peoria-sports-complex,Peoria Sports Complex,12339,inside,28,Phoenix City Hall,32,,,,,inside
+phoenix,american-family-fields-of-phoenix,American Family Fields of Phoenix,10000,inside,10,Phoenix City Hall,13,,,,,inside
+phoenix,goodyear-ballpark,Goodyear Ballpark,9500,inside,29,Phoenix City Hall,30,,,,,inside
+phoenix,tempe-diablo-stadium,Tempe Diablo Stadium,9558,inside,18,Phoenix City Hall,16,,,,,inside
+phoenix,phoenix-rising-soccer-stadium,Phoenix Rising Soccer Stadium,10000,inside,14,Phoenix City Hall,12,,,,,inside
+phoenix,phoenix-municipal-stadium,Phoenix Municipal Stadium,7800,inside,15,Phoenix City Hall,14,,,,,inside
+phoenix,global-credit-union-arena,Global Credit Union Arena,7000,inside,7,Phoenix City Hall,12,,,,,inside
+phoenix,mullett-arena,Mullett Arena,5000,inside,19,Phoenix City Hall,18,,,,,inside
+phoenix,arizona-financial-theatre,Arizona Financial Theatre,5000,inside,6,Phoenix City Hall,1,,,,,inside
+phoenix,gcu-stadium,GCU Stadium,6000,inside,9,Phoenix City Hall,13,,,,,inside
+sacramento,golden-1-center,Golden 1 Center,19000,inside,5,Sacramento City Hall,2,,,,,inside
+sacramento,sutter-health-park,Sutter Health Park,13416,inside,7,Sacramento City Hall,5,,,,,inside
+sacramento,hornet-stadium,Hornet Stadium,21195,inside,11,Sacramento City Hall,15,,,,,inside
+sacramento,heart-health-park,Heart Health Park,14000,inside,9,Sacramento City Hall,11,,,,,inside
+sacramento,toyota-amphitheatre,Toyota Amphitheatre,18500,inside,47,Sacramento City Hall,44,,,,,inside
+sacramento,uc-davis-health-stadium,UC Davis Health Stadium,10743,inside,27,Sacramento City Hall,26,,,,,inside
+sacramento,university-credit-union-center,University Credit Union Center,6003,inside,26,Sacramento City Hall,25,,,,,inside
+sacramento,hughes-stadium,Charles C. Hughes Stadium,25000,inside,6,Sacramento City Hall,11,,,,,inside
+san-diego,petco-park,Petco Park,39860,inside,1,San Diego City Hall,3,,,,,inside
+san-diego,san-diego-stadium,San Diego Stadium,70561,inside,13,San Diego City Hall,13,,,,,inside
+san-diego,snapdragon-stadium,Snapdragon Stadium,35000,inside,13,San Diego City Hall,12,,,,,inside
+san-diego,del-mar-fairgrounds,Del Mar Fairgrounds,40000,inside,33,San Diego City Hall,31,,,,,inside
+san-diego,embarcadero-marina-park-north,Embarcadero Marina Park North,30000,inside,3,San Diego City Hall,3,,,,,inside
+san-diego,north-island-amphitheatre,North Island Credit Union Amphitheatre,20500,inside,23,San Diego City Hall,25,,,,,inside
+san-diego,pechanga-arena,Pechanga Arena,16100,inside,11,San Diego City Hall,9,,,,,inside
+san-diego,waterfront-park,Waterfront Park,15000,inside,5,San Diego City Hall,3,,,,,inside
+san-diego,viejas-arena,Viejas Arena,12414,inside,15,San Diego City Hall,16,,,,,inside
+san-diego,rady-shell,The Rady Shell at Jacobs Park,10000,inside,3,San Diego City Hall,4,,,,,inside
+san-diego,frontwave-arena,Frontwave Arena,7500,inside,53,San Diego City Hall,51,,,,,inside
+san-diego,torero-stadium,Torero Stadium,6000,inside,12,San Diego City Hall,10,,,,,inside
+san-diego,jenny-craig-pavilion,Jenny Craig Pavilion,5100,inside,13,San Diego City Hall,11,,,,,inside
+san-diego,san-diego-convention-center,San Diego Convention Center,6500,inside,3,San Diego City Hall,5,,,,,inside
+seattle,husky-stadium,Husky Stadium,72132,inside,8,Seattle City Hall,8,,,,,inside
+seattle,lumen-field,Lumen Field,68740,inside,6,Seattle City Hall,3,,,,,inside
+seattle,t-mobile-park,T-Mobile Park,47943,inside,7,Seattle City Hall,4,,,,,inside
+seattle,pacific-raceways,Pacific Raceways,30000,inside,44,Seattle City Hall,42,,,,,inside
+seattle,gorge-amphitheatre,The Gorge,27500,inside,183,Seattle City Hall,180,,,,,neither
+seattle,seattle-center,Seattle Center,26000,inside,4,Seattle City Hall,7,,,,,inside
+seattle,tacoma-dome,Tacoma Dome,21000,inside,45,Seattle City Hall,42,,,,,inside
+seattle,climate-pledge-arena,Climate Pledge Arena,18300,inside,5,Seattle City Hall,7,,,,,inside
+seattle,white-river-amphitheatre,White River Amphitheatre,16000,inside,53,Seattle City Hall,51,,,,,inside
+seattle,everett-memorial-stadium,Everett Memorial Stadium,12000,inside,37,Seattle City Hall,37,,,,,inside
+seattle,memorial-stadium-seattle,Memorial Stadium,12000,inside,4,Seattle City Hall,7,,,,,inside
+seattle,washington-state-fair-grandstand,Umpqua Bank Grandstand,10200,inside,50,Seattle City Hall,48,,,,,inside
+seattle,alaska-airlines-arena,Alaska Airlines Arena,10000,inside,10,Seattle City Hall,10,,,,,inside
+seattle,angel-of-the-winds-arena,Angel of the Winds Arena,10000,inside,38,Seattle City Hall,38,,,,,inside
+seattle,emerald-downs,Emerald Downs,9100,inside,36,Seattle City Hall,34,,,,,inside
+seattle,evergreen-speedway,Evergreen Speedway,7500,inside,48,Seattle City Hall,47,,,,,inside
+seattle,accesso-showare-center,accesso ShoWare Center,7300,inside,30,Seattle City Hall,28,,,,,inside
+seattle,wamu-theater,WaMu Theater,7000,inside,7,Seattle City Hall,4,,,,,inside
+seattle,marymoor-live,Marymoor Live,6500,inside,25,Seattle City Hall,24,,,,,inside
+seattle,cheney-stadium,Cheney Stadium,6500,inside,50,Seattle City Hall,48,,,,,inside
+seattle,remlinger-farms,Remlinger Farms,6000,inside,40,Seattle City Hall,40,,,,,inside
+tampa,raymond-james-stadium,Raymond James Stadium,69218,inside,13,Tampa City Hall,10,"St. Petersburg City Hall, Florida",30,,,inside
+tampa,tropicana-field,Tropicana Field,25025,inside,30,Tampa City Hall,30,"St. Petersburg City Hall, Florida",5,,,inside
+tampa,benchmark-international-arena,Benchmark International Arena,21500,inside,14,Tampa City Hall,3,"St. Petersburg City Hall, Florida",32,,,inside
+tampa,midflorida-amphitheatre,Florida State Fairgrounds Amphitheatre,20000,inside,24,Tampa City Hall,13,"St. Petersburg City Hall, Florida",41,,,inside
+tampa,george-m-steinbrenner-field,George M. Steinbrenner Field,11026,inside,14,Tampa City Hall,10,"St. Petersburg City Hall, Florida",31,,,inside
+tampa,yuengling-center,Yuengling Center,10411,inside,31,Tampa City Hall,19,"St. Petersburg City Hall, Florida",47,,,inside
+tampa,wish-farms-soundstage,Florida Strawberry Festival Grandstands,9200,inside,40,Tampa City Hall,28,"St. Petersburg City Hall, Florida",56,,,inside
+tampa,baycare-sound,The BayCare Sound,9000,inside,37,Tampa City Hall,38,"St. Petersburg City Hall, Florida",36,,,inside
+tampa,baycare-ballpark,BayCare Ballpark,8500,inside,30,Tampa City Hall,31,"St. Petersburg City Hall, Florida",29,,,inside
+tampa,td-ballpark,TD Ballpark,8500,inside,40,Tampa City Hall,41,"St. Petersburg City Hall, Florida",38,,,inside
+tampa,al-lang-stadium,Al Lang Stadium,7227,inside,32,Tampa City Hall,33,"St. Petersburg City Hall, Florida",3,,,inside
+tampa,suncoast-credit-union-field,Suncoast Credit Union Field,5248,inside,15,Tampa City Hall,5,"St. Petersburg City Hall, Florida",32,,,inside
+miami,hard-rock-stadium,Hard Rock Stadium,64767,inside,21,Stephen P. Clark Government Center (111 NW 1st St),24,Fort Lauderdale City Hall,29,,,inside
+miami,homestead-miami-speedway,Homestead-Miami Speedway,46000,inside,62,Stephen P. Clark Government Center (111 NW 1st St),56,Fort Lauderdale City Hall,87,,,inside
+miami,loandepot-park,loanDepot park,36742,inside,12,Stephen P. Clark Government Center (111 NW 1st St),5,Fort Lauderdale City Hall,40,,,inside
+miami,nu-stadium,Nu Stadium at Miami Freedom Park,26700,inside,14,Stephen P. Clark Government Center (111 NW 1st St),11,Fort Lauderdale City Hall,43,,,inside
+miami,amerant-bank-arena,Amerant Bank Arena,23000,inside,42,Stephen P. Clark Government Center (111 NW 1st St),47,Fort Lauderdale City Hall,27,,,inside
+miami,inter-miami-cf-stadium,Chase Stadium,21550,inside,38,Stephen P. Clark Government Center (111 NW 1st St),42,Fort Lauderdale City Hall,13,,,inside
+miami,kaseya-center,Kaseya Center,19600,inside,11,Stephen P. Clark Government Center (111 NW 1st St),4,Fort Lauderdale City Hall,38,,,inside
+miami,pitbull-stadium,Pitbull Stadium,20000,inside,30,Stephen P. Clark Government Center (111 NW 1st St),27,Fort Lauderdale City Hall,54,,,inside
+miami,fpl-solar-amphitheater,FPL Solar Amphitheater at Bayfront Park,10000,inside,14,Stephen P. Clark Government Center (111 NW 1st St),5,Fort Lauderdale City Hall,41,,,inside
+miami,watsco-center,Watsco Center,7972,inside,23,Stephen P. Clark Government Center (111 NW 1st St),15,Fort Lauderdale City Hall,50,,,inside
+miami,hard-rock-live-hollywood,Hard Rock Live,7000,inside,28,Stephen P. Clark Government Center (111 NW 1st St),31,Fort Lauderdale City Hall,18,,,inside
+miami,beyond-bancard-field,Beyond Bancard Field at NSU,7000,inside,33,Stephen P. Clark Government Center (111 NW 1st St),36,Fort Lauderdale City Hall,19,,,inside
+miami,ocean-bank-convocation-center,FIU Arena,5000,inside,30,Stephen P. Clark Government Center (111 NW 1st St),26,Fort Lauderdale City Hall,52,,,inside
+nashville,nissan-stadium,Nissan Stadium,71000,inside,5,Metro Nashville Courthouse,3,,,,,inside
+nashville,geodis-park,GEODIS Park,30000,inside,6,Metro Nashville Courthouse,9,,,,,inside
+nashville,firstbank-stadium,FirstBank Stadium,40350,inside,5,Metro Nashville Courthouse,8,,,,,inside
+nashville,floyd-stadium,"Johnny ""Red"" Floyd Stadium",27303,inside,47,Metro Nashville Courthouse,47,,,,,inside
+nashville,nashville-superspeedway,Nashville Superspeedway,25000,inside,45,Metro Nashville Courthouse,44,,,,,inside
+nashville,firstbank-amphitheater,FirstBank Amphitheater,7500,inside,35,Metro Nashville Courthouse,36,,,,,inside
+nashville,gentry-center,Gentry Center,10500,inside,9,Metro Nashville Courthouse,10,,,,,inside
+nashville,allen-arena,Allen Arena,5028,inside,11,Metro Nashville Courthouse,14,,,,,inside
+nashville,bridgestone-arena,Bridgestone Arena,20000,inside,2,Metro Nashville Courthouse,5,,,,,inside
+nashville,vanderbilt-memorial-gymnasium,Memorial Gymnasium,14316,inside,5,Metro Nashville Courthouse,9,,,,,inside
+nashville,murphy-center,Murphy Center,11802,inside,48,Metro Nashville Courthouse,47,,,,,inside
+nashville,first-horizon-park,First Horizon Park,8500,inside,3,Metro Nashville Courthouse,5,,,,,inside
+nashville,nashville-municipal-auditorium,Nashville Municipal Auditorium,9700,inside,3,Metro Nashville Courthouse,4,,,,,inside
+nashville,ascend-amphitheater,Ascend Amphitheater,6800,inside,3,Metro Nashville Courthouse,4,,,,,inside
+nashville,curb-event-center,Curb Event Center,5500,inside,6,Metro Nashville Courthouse,10,,,,,inside
+austin,dkr-texas-memorial-stadium,Darrell K Royal-Texas Memorial Stadium,100119,inside,14,Austin City Hall,5,,,,,inside
+austin,ufcu-stadium,UFCU Stadium,28388,inside,47,Austin City Hall,36,,,,,inside
+austin,q2-stadium,Q2 Stadium,20738,inside,8,Austin City Hall,17,,,,,inside
+austin,myers-stadium,Mike A. Myers Stadium,20000,inside,14,Austin City Hall,6,,,,,inside
+austin,moody-center,Moody Center,16223,inside,13,Austin City Hall,7,,,,,inside
+austin,germania-amphitheater,Germania Insurance Amphitheater,14000,inside,36,Austin City Hall,27,,,,,inside
+austin,dell-diamond,Dell Diamond,11631,inside,28,Austin City Hall,32,,,,,inside
+austin,strahan-arena,Strahan Arena,10000,inside,48,Austin City Hall,37,,,,,inside
+austin,heb-center-cedar-park,H-E-B Center at Cedar Park,8700,inside,25,Austin City Hall,31,,,,,inside
+austin,luedecke-arena,Travis County Exposition Center,8400,inside,20,Austin City Hall,19,,,,,inside
+austin,disch-falk-field,UFCU Disch-Falk Field,7211,inside,13,Austin City Hall,5,,,,,inside
+austin,house-park,House Park,6500,inside,13,Austin City Hall,4,,,,,inside
+austin,moody-amphitheater,Moody Amphitheater at Waterloo Park,5000,inside,14,Austin City Hall,3,,,,,inside
+vancouver,bc-place,BC Place,54500,inside,5,Vancouver City Hall,5,,,,,inside
+vancouver,rogers-arena,Rogers Arena,19700,inside,5,Vancouver City Hall,5,,,,,inside
+vancouver,pacific-coliseum,Pacific Coliseum,17000,inside,12,Vancouver City Hall,14,,,,,inside
+vancouver,freedom-mobile-arch,Freedom Mobile Arch,6000,inside,13,Vancouver City Hall,15,,,,,inside
+vancouver,thunderbird-arena,Thunderbird Arena,7000,inside,19,Vancouver City Hall,18,,,,,inside
+vancouver,nat-bailey-stadium,Rogers Field at Nat Bailey Stadium,6500,inside,6,Vancouver City Hall,6,,,,,inside
+vancouver,willoughby-stadium,Willoughby Stadium,6042,inside,43,Vancouver City Hall,45,,,,,inside
+vancouver,langley-events-centre,Langley Events Centre,5276,inside,41,Vancouver City Hall,43,,,,,inside
+las-vegas,t-mobile-arena,T-Mobile Arena,18000,inside,4,Las Vegas City Hall,13,,,,,inside
+las-vegas,allegiant-stadium,Allegiant Stadium,65000,inside,6,Las Vegas City Hall,12,,,,,inside
+las-vegas,michelob-ultra-arena,Michelob ULTRA Arena,12000,inside,6,Las Vegas City Hall,13,,,,,inside
+las-vegas,mgm-grand-garden,MGM Grand Garden Arena,16800,inside,3,Las Vegas City Hall,13,,,,,inside
+las-vegas,ph-live,PH Live,7000,inside,3,Las Vegas City Hall,13,,,,,inside
+las-vegas,sphere,Sphere,17600,inside,5,Las Vegas City Hall,12,,,,,inside
+las-vegas,resorts-world-theatre,Resorts World Theatre,5000,inside,6,Las Vegas City Hall,10,,,,,inside
+las-vegas,thomas-mack-center,Thomas & Mack Center,18000,inside,6,Las Vegas City Hall,14,,,,,inside
+las-vegas,orleans-arena,Orleans Arena,9500,inside,6,Las Vegas City Hall,13,,,,,inside
+las-vegas,downtown-las-vegas-events-center,Downtown Las Vegas Events Center,11000,inside,9,Las Vegas City Hall,2,,,,,inside
+las-vegas,cashman-field,Cashman Field,10000,inside,12,Las Vegas City Hall,5,,,,,inside
+las-vegas,las-vegas-ballpark,Las Vegas Ballpark,10000,inside,19,Las Vegas City Hall,19,,,,,inside
+las-vegas,lees-family-forum,Lee's Family Forum,5567,inside,18,Las Vegas City Hall,23,,,,,inside
+las-vegas,las-vegas-motor-speedway,Las Vegas Motor Speedway,80000,inside,28,Las Vegas City Hall,25,,,,,inside
+las-vegas,lvms-dirt-track,LVMS Dirt Track,8200,inside,28,Las Vegas City Hall,25,,,,,inside
+las-vegas,lvms-bullring,LVMS Bullring,5400,inside,28,Las Vegas City Hall,25,,,,,inside
+kansas-city,arrowhead-stadium,Arrowhead Stadium,76416,inside,22,"Kansas City City Hall, Missouri",14,,,,,inside
+kansas-city,kauffman-stadium,Kauffman Stadium,37903,inside,21,"Kansas City City Hall, Missouri",13,,,,,inside
+kansas-city,kansas-speedway,Kansas Speedway,48000,inside,24,"Kansas City City Hall, Missouri",25,,,,,inside
+kansas-city,sporting-park,Sporting Park,25000,inside,20,"Kansas City City Hall, Missouri",21,,,,,inside
+kansas-city,t-mobile-center,T-Mobile Center,19252,inside,10,"Kansas City City Hall, Missouri",2,,,,,inside
+kansas-city,azura-amphitheater,Azura Amphitheater,18000,inside,24,"Kansas City City Hall, Missouri",26,,,,,inside
+kansas-city,cpkc-stadium,CPKC Stadium,11500,inside,12,"Kansas City City Hall, Missouri",4,,,,,inside
+kansas-city,municipal-auditorium-arena,Municipal Auditorium Arena,7316,inside,10,"Kansas City City Hall, Missouri",2,,,,,inside
+kansas-city,starlight-theatre,Starlight Theatre,7739,inside,24,"Kansas City City Hall, Missouri",16,,,,,inside
+kansas-city,legends-field,Legends Field,6537,inside,21,"Kansas City City Hall, Missouri",23,,,,,inside
+kansas-city,cable-dahmer-arena,Cable Dahmer Arena,5800,inside,30,"Kansas City City Hall, Missouri",22,,,,,inside
+kansas-city,hale-arena,Hale Arena,5000,inside,10,"Kansas City City Hall, Missouri",7,,,,,inside
+houston,reliant-stadium,Reliant Stadium,80000,inside,12,Houston City Hall,16,,,,,inside
+houston,reliant-arena,Reliant Arena,5700,inside,10,Houston City Hall,14,,,,,inside
+houston,daikin-park,Daikin Park,41168,inside,7,Houston City Hall,4,,,,,inside
+houston,toyota-center,Toyota Center,19000,inside,7,Houston City Hall,4,,,,,inside
+houston,shell-energy-stadium,Shell Energy Stadium,22039,inside,7,Houston City Hall,5,,,,,inside
+houston,713-music-hall,713 Music Hall,5000,inside,9,Houston City Hall,3,,,,,inside
+houston,tdecu-stadium,TDECU Stadium,40000,inside,8,Houston City Hall,10,,,,,inside
+houston,fertitta-center,Fertitta Center,7035,inside,9,Houston City Hall,9,,,,,inside
+houston,first-community-stadium,First Community Stadium,47000,inside,9,Houston City Hall,13,,,,,inside
+houston,tudor-fieldhouse,Tudor Fieldhouse,5208,inside,10,Houston City Hall,14,,,,,inside
+houston,reckling-park,Reckling Park,6193,inside,11,Houston City Hall,14,,,,,inside
+houston,cy-fair-fcu-stadium,Cy-Fair FCU Stadium,11000,inside,42,Houston City Hall,39,,,,,inside
+houston,berry-center-arena,Berry Center Arena,9500,inside,42,Houston City Hall,39,,,,,inside
+houston,cynthia-woods-mitchell-pavilion,The Cynthia Woods Mitchell Pavilion presented by Huntsman,16500,inside,45,Houston City Hall,40,,,,,inside
+houston,pvamu-panther-stadium,Panther Stadium at Blackshear Field,15000,inside,63,Houston City Hall,61,,,,,further
+houston,legacy-stadium,Legacy Stadium,12000,inside,43,Houston City Hall,40,,,,,inside
+houston,woodforest-bank-stadium,Woodforest Bank Stadium,10000,inside,47,Houston City Hall,41,,,,,inside
+houston,tomball-isd-stadium,Tomball ISD Stadium,10000,inside,53,Houston City Hall,48,,,,,inside
+houston,challenger-columbia-stadium,Challenger Columbia Stadium,10000,inside,34,Houston City Hall,34,,,,,inside
+houston,planet-ford-stadium,Planet Ford Stadium,8000,inside,43,Houston City Hall,39,,,,,inside
+houston,constellation-field,Constellation Field,9500,inside,30,Houston City Hall,32,,,,,inside
+houston,hpe-arena,H&PE Arena,8100,inside,7,Houston City Hall,9,,,,,inside
+houston,alexander-durley-stadium,Alexander Durley Stadium,5500,inside,7,Houston City Hall,9,,,,,inside
+indianapolis,lucas-oil-stadium,Lucas Oil Stadium,70000,inside,4,Indianapolis City-County Building,4,,,,,inside
+indianapolis,lucas-oil-indianapolis-raceway-park,Lucas Oil Raceway at Indianapolis,30000,inside,28,Indianapolis City-County Building,28,,,,,inside
+indianapolis,ruoff-music-center,Klipsch Music Center,24790,inside,38,Indianapolis City-County Building,37,,,,,inside
+indianapolis,gainbridge-fieldhouse,Gainbridge Fieldhouse,18274,inside,3,Indianapolis City-County Building,3,,,,,inside
+indianapolis,victory-field,Victory Field,14230,inside,4,Indianapolis City-County Building,4,,,,,inside
+indianapolis,carroll-stadium,Carroll Stadium,12111,inside,5,Indianapolis City-County Building,5,,,,,inside
+indianapolis,hinkle-fieldhouse,Hinkle Fieldhouse,9100,inside,15,Indianapolis City-County Building,15,,,,,inside
+indianapolis,fishers-event-center,Fishers Event Center,7500,inside,31,Indianapolis City-County Building,30,,,,,inside
+indianapolis,everwise-amphitheater,Farm Bureau Insurance Lawn,6000,inside,4,Indianapolis City-County Building,4,,,,,inside
+indianapolis,sellick-bowl,Sellick Bowl,5647,inside,14,Indianapolis City-County Building,14,,,,,inside
+indianapolis,kiesel-field-key-stadium,Key Stadium,5500,inside,11,Indianapolis City-County Building,10,,,,,inside
+toronto,rogers-stadium,Rogers Stadium,50000,inside,28,Toronto City Hall,28,,,,,inside
+toronto,rogers-centre,Rogers Centre,50000,inside,3,Toronto City Hall,5,,,,,inside
+toronto,bmo-field,BMO Field,28180,inside,5,Toronto City Hall,10,,,,,inside
+toronto,scotiabank-arena,Scotiabank Arena,19800,inside,5,Toronto City Hall,5,,,,,inside
+toronto,rbc-amphitheatre,RBC Amphitheatre,16000,inside,5,Toronto City Hall,9,,,,,inside
+toronto,sobeys-stadium,Sobeys Stadium,12500,inside,31,Toronto City Hall,31,,,,,inside
+toronto,cne-bandshell,CNE Bandshell,10000,inside,3,Toronto City Hall,8,,,,,inside
+toronto,coca-cola-coliseum,Coca-Cola Coliseum,9250,inside,3,Toronto City Hall,8,,,,,inside
+toronto,tribute-communities-centre,Tribute Communities Centre,7600,inside,52,Toronto City Hall,51,,,,,inside
+toronto,mississauga-sports-centre,Mississauga Sports and Entertainment Centre,5420,inside,30,Toronto City Hall,32,,,,,inside
+toronto,great-canadian-theatre-toronto,The Theatre at Great Canadian Casino Resort Toronto,5000,inside,26,Toronto City Hall,29,,,,,inside
+toronto,caa-centre-brampton,CAA Centre,5000,inside,32,Toronto City Hall,34,,,,,inside
+toronto,uoft-varsity-stadium,Varsity Stadium,5000,inside,10,Toronto City Hall,6,,,,,inside
+minneapolis,us-bank-stadium,U.S. Bank Stadium,66860,inside,9,Minneapolis City Hall,2,Saint Paul City Hall,16,,,inside
+minneapolis,huntington-bank-stadium,Huntington Bank Stadium,50805,inside,6,Minneapolis City Hall,8,Saint Paul City Hall,13,,,inside
+minneapolis,target-field,Target Field,39504,inside,12,Minneapolis City Hall,4,Saint Paul City Hall,19,,,inside
+minneapolis,target-center,Target Center,20500,inside,11,Minneapolis City Hall,3,Saint Paul City Hall,18,,,inside
+minneapolis,grand-casino-arena,Grand Casino Arena,20554,inside,11,Minneapolis City Hall,16,Saint Paul City Hall,2,,,inside
+minneapolis,allianz-field,Allianz Field,19400,inside,7,Minneapolis City Hall,12,Saint Paul City Hall,8,,,inside
+minneapolis,mystic-lake-amphitheater,Mystic Lake Amphitheater,19000,inside,37,Minneapolis City Hall,32,Saint Paul City Hall,40,,,inside
+minneapolis,williams-arena,Williams Arena,14625,inside,6,Minneapolis City Hall,8,Saint Paul City Hall,14,,,inside
+minneapolis,state-fair-grandstand,Minnesota State Fair Grandstand,13000,inside,8,Minneapolis City Hall,14,Saint Paul City Hall,14,,,inside
+minneapolis,mariucci-arena,3M Arena at Mariucci,10257,inside,7,Minneapolis City Hall,8,Saint Paul City Hall,14,,,inside
+minneapolis,minneapolis-armory,The Armory,8400,inside,9,Minneapolis City Hall,2,Saint Paul City Hall,16,,,inside
+minneapolis,chs-field,CHS Field,7210,inside,12,Minneapolis City Hall,16,Saint Paul City Hall,3,,,inside
+minneapolis,tco-stadium,Twin Cities Orthopedics Performance Center,5500,inside,23,Minneapolis City Hall,25,Saint Paul City Hall,18,,,inside
+minneapolis,maturi-pavilion,Maturi Pavilion,5700,inside,6,Minneapolis City Hall,8,Saint Paul City Hall,14,,,inside
+minneapolis,roy-wilkins-auditorium,Legendary Roy Wilkins Auditorium,5800,inside,11,Minneapolis City Hall,16,Saint Paul City Hall,3,,,inside
+minneapolis,anderson-arena,Lee and Penny Anderson Arena,6000,inside,9,Minneapolis City Hall,13,Saint Paul City Hall,14,,,inside
+minneapolis,oshaughnessy-stadium,O'Shaughnessy Stadium,5025,inside,6,Minneapolis City Hall,11,Saint Paul City Hall,12,,,inside
+detroit,michigan-stadium,Michigan Stadium,107601,inside,55,Coleman A. Young Municipal Center (2 Woodward Ave),55,,,,,inside
+detroit,ford-field,Ford Field,65000,inside,1,Coleman A. Young Municipal Center (2 Woodward Ave),3,,,,,inside
+detroit,comerica-park,Comerica Park,41083,inside,0,Coleman A. Young Municipal Center (2 Woodward Ave),3,,,,,inside
+detroit,little-caesars-arena,Little Caesars Arena,20332,inside,3,Coleman A. Young Municipal Center (2 Woodward Ave),6,,,,,inside
+detroit,crisler-center,Crisler Center,12707,inside,54,Coleman A. Young Municipal Center (2 Woodward Ave),55,,,,,inside
+detroit,calihan-hall,Calihan Hall,8295,inside,15,Coleman A. Young Municipal Center (2 Woodward Ave),16,,,,,inside
+detroit,meadow-brook-amphitheatre,Meadow Brook Amphitheatre at Oakland University Credit Union,7700,inside,40,Coleman A. Young Municipal Center (2 Woodward Ave),41,,,,,inside
+detroit,yost-ice-arena,Yost Ice Arena,6637,inside,53,Coleman A. Young Municipal Center (2 Woodward Ave),54,,,,,inside
+detroit,wfcu-centre,Windsor Family Credit Union Centre,6450,inside,24,Coleman A. Young Municipal Center (2 Woodward Ave),21,,,,,inside
+detroit,fox-theatre-detroit,Fox Theatre,5048,inside,1,Coleman A. Young Municipal Center (2 Woodward Ave),4,,,,,inside
+detroit,colosseum-caesars-windsor,The Colosseum at Caesars Windsor,5000,inside,8,Coleman A. Young Municipal Center (2 Woodward Ave),5,,,,,inside
+new-orleans,caesars-superdome,Caesars Superdome,83000,inside,5,New Orleans City Hall,2,,,,,inside
+new-orleans,yulman-stadium,Benson Field at Yulman Stadium,30000,inside,7,New Orleans City Hall,8,,,,,inside
+new-orleans,tad-gormley-stadium,Tad Gormley Stadium,26500,inside,6,New Orleans City Hall,8,,,,,inside
+new-orleans,smoothie-king-center,Smoothie King Center,17791,inside,5,New Orleans City Hall,2,,,,,inside
+new-orleans,fair-grounds-race-course,Fair Grounds Race Course,10000,inside,5,New Orleans City Hall,8,,,,,inside
+new-orleans,lakefront-arena,Lakefront Arena,8785,inside,13,New Orleans City Hall,14,,,,,inside
+new-orleans,turchin-stadium,Greer Field at Turchin Stadium,5000,inside,10,New Orleans City Hall,10,,,,,inside
+denver,empower-field,Empower Field at Mile High,85000,inside,6,Denver City and County Building,6,,,,,inside
+denver,coors-field,Coors Field,46891,inside,5,Denver City and County Building,5,,,,,inside
+denver,ball-arena,Ball Arena,21000,inside,5,Denver City and County Building,5,,,,,inside
+denver,fiddlers-green-amphitheatre,Fiddler's Green Amphitheatre,18000,inside,23,Denver City and County Building,22,,,,,inside
+denver,centennial-stadium,Centennial Stadium,12000,inside,26,Denver City and County Building,25,,,,,inside
+denver,red-rocks-amphitheatre,Red Rocks Amphitheatre,9525,inside,28,Denver City and County Building,27,,,,,inside
+denver,levitt-pavilion-denver,Levitt Pavilion Denver,7500,inside,13,Denver City and County Building,11,,,,,inside
+denver,magness-arena,Magness Arena at the Ritchie Center,7200,inside,13,Denver City and County Building,12,,,,,inside
+denver,bellco-theatre,Bellco Theatre,5000,inside,3,Denver City and County Building,2,,,,,inside
+raleigh-durham,carter-finley-stadium,Carter-Finley Stadium,56919,inside,14,Raleigh Municipal Building,14,Durham City Hall,26,,,inside
+raleigh-durham,kenan-stadium,Kenan Stadium,62980,inside,24,Raleigh Municipal Building,42,Durham City Hall,25,,,inside
+raleigh-durham,wallace-wade-stadium,Wallace Wade Stadium,40004,inside,24,Raleigh Municipal Building,41,Durham City Hall,9,,,inside
+raleigh-durham,dean-smith-center,Dean E. Smith Center,21750,inside,25,Raleigh Municipal Building,42,Durham City Hall,25,,,inside
+raleigh-durham,lenovo-center,Lenovo Center,20450,inside,14,Raleigh Municipal Building,14,Durham City Hall,27,,,inside
+raleigh-durham,coastal-credit-union-music-park,Coastal Credit Union Music Park at Walnut Creek,20601,inside,30,Raleigh Municipal Building,14,Durham City Hall,42,,,inside
+raleigh-durham,o-kelly-riddick-stadium,O'Kelly-Riddick Stadium,10000,inside,19,Raleigh Municipal Building,36,Durham City Hall,6,,,inside
+raleigh-durham,durham-bulls-athletic-park,Durham Bulls Athletic Park,10000,inside,17,Raleigh Municipal Building,34,Durham City Hall,2,,,inside
+raleigh-durham,first-horizon-stadium,First Horizon Stadium,10000,inside,16,Raleigh Municipal Building,16,Durham City Hall,28,,,inside
+raleigh-durham,cameron-indoor-stadium,Cameron Indoor Stadium,9314,inside,24,Raleigh Municipal Building,42,Durham City Hall,10,,,inside
+raleigh-durham,durham-county-memorial-stadium,Durham County Memorial Stadium,8500,inside,23,Raleigh Municipal Building,41,Durham City Hall,9,,,inside
+raleigh-durham,dorton-arena,J.S. Dorton Arena,7000,inside,18,Raleigh Municipal Building,16,Durham City Hall,31,,,inside
+raleigh-durham,koka-booth-amphitheatre,Koka Booth Amphitheatre,7000,inside,24,Raleigh Municipal Building,22,Durham City Hall,37,,,inside
+raleigh-durham,carmichael-arena,Carmichael Arena,6822,inside,23,Raleigh Municipal Building,41,Durham City Hall,24,,,inside
+raleigh-durham,red-hat-amphitheater-raleigh,Red Hat Amphitheater,6000,inside,24,Raleigh Municipal Building,2,Durham City Hall,36,,,inside
+raleigh-durham,reynolds-coliseum,Reynolds Coliseum,5500,inside,22,Raleigh Municipal Building,7,Durham City Hall,35,,,inside
+pittsburgh,acrisure-stadium,Acrisure Stadium,68400,inside,6,Pittsburgh City-County Building,4,,,,,inside
+pittsburgh,pnc-park,PNC Park,38747,inside,4,Pittsburgh City-County Building,3,,,,,inside
+pittsburgh,pavilion-star-lake,The Pavilion at Star Lake,23000,inside,43,Pittsburgh City-County Building,42,,,,,inside
+pittsburgh,ppg-paints-arena,PPG Paints Arena,19000,inside,2,Pittsburgh City-County Building,2,,,,,inside
+pittsburgh,petersen-events-center,Petersen Events Center,12508,inside,6,Pittsburgh City-County Building,7,,,,,inside
+pittsburgh,mihalik-thompson-stadium,N. Kerr Thompson Stadium,10000,inside,68,Pittsburgh City-County Building,68,,,,,further
+pittsburgh,hepner-bailey-adamson-stadium,Hepner–Bailey Field at Adamson Stadium,6500,inside,55,Pittsburgh City-County Building,54,,,,,inside
+pittsburgh,pennwest-convocation-center,PennWest California Convocation Center,6000,inside,55,Pittsburgh City-County Building,54,,,,,inside
+pittsburgh,stage-ae-outdoor,Stage AE Outdoor Amphitheater,5500,inside,5,Pittsburgh City-County Building,5,,,,,inside
+pittsburgh,fnb-stadium,F.N.B. Stadium,5000,inside,5,Pittsburgh City-County Building,4,,,,,inside
+pittsburgh,fayette-fair-grandstand,Fayette County Fairgrounds grandstand arena,5000,inside,71,Pittsburgh City-County Building,70,,,,,further
+pittsburgh,eqt-park,EQT Park,5000,inside,48,Pittsburgh City-County Building,47,,,,,inside
+portland,providence-park,Providence Park,25218,inside,9,"Portland City Hall, Oregon",6,,,,,inside
+portland,moda-center,Moda Center,20500,inside,6,"Portland City Hall, Oregon",8,,,,,inside
+portland,veterans-memorial-coliseum,Veterans Memorial Coliseum,8600,inside,6,"Portland City Hall, Oregon",7,,,,,inside
+portland,cascades-amphitheater,Cascades Amphitheater,7810,inside,30,"Portland City Hall, Oregon",31,,,,,inside
+portland,hillsboro-stadium,Hillsboro Stadium,7600,inside,30,"Portland City Hall, Oregon",24,,,,,inside
+portland,mcmenamins-edgefield,McMenamins Historic Edgefield Manor,7000,inside,23,"Portland City Hall, Oregon",27,,,,,inside
+san-antonio,alamodome,Alamodome,65427,inside,4,San Antonio City Hall,4,,,,,inside
+san-antonio,frost-bank-center,Frost Bank Center,19000,inside,9,San Antonio City Hall,9,,,,,inside
+san-antonio,freeman-coliseum,Freeman Coliseum,11700,inside,8,San Antonio City Hall,8,,,,,inside
+san-antonio,wolff-stadium,Wolff Stadium,9200,inside,12,San Antonio City Hall,13,,,,,inside
+san-antonio,toyota-field,Toyota Field,13000,inside,19,San Antonio City Hall,20,,,,,inside
+san-antonio,benson-stadium,Benson Stadium,6000,inside,6,San Antonio City Hall,7,,,,,inside
+san-antonio,cowboys-dancehall,Cowboys Dancehall,5772,inside,17,San Antonio City Hall,17,,,,,inside
+san-antonio,whitewater-amphitheater,Whitewater Amphitheater,5600,inside,45,San Antonio City Hall,46,,,,,inside
+san-antonio,rj-music-pavilion,R&J Music Pavilion,5000,inside,26,San Antonio City Hall,25,,,,,inside
+washington-dc,northwest-stadium,Northwest Stadium,64000,inside,21,John A. Wilson Building,23,,,,,inside
+washington-dc,secu-stadium,SECU Stadium,51802,inside,22,John A. Wilson Building,24,,,,,inside
+washington-dc,nationals-park,Nationals Park,41339,inside,6,John A. Wilson Building,7,,,,,inside
+washington-dc,jiffy-lube-live,Jiffy Lube Live,25262,inside,55,John A. Wilson Building,54,,,,,inside
+washington-dc,capital-one-arena,Capital One Arena,20356,inside,0,John A. Wilson Building,3,,,,,inside
+washington-dc,audi-field,Audi Field,20000,inside,7,John A. Wilson Building,7,,,,,inside
+washington-dc,merriweather-post-pavilion,Merriweather Post Pavilion,19319,inside,47,John A. Wilson Building,49,,,,,inside
+washington-dc,dc-armory,DC Armory,10000,inside,9,John A. Wilson Building,10,,,,,inside
+washington-dc,umd-xfinity-center,Xfinity Center,17950,inside,24,John A. Wilson Building,26,,,,,inside
+washington-dc,eaglebank-arena,EagleBank Arena,10000,inside,34,John A. Wilson Building,32,,,,,inside
+washington-dc,prince-georges-stadium,Prince George's Stadium,10000,inside,31,John A. Wilson Building,33,,,,,inside
+washington-dc,greene-stadium,William H. Greene Stadium,7086,inside,6,John A. Wilson Building,7,,,,,inside
+washington-dc,wolf-trap-filene-center,Wolf Trap Filene Center,7028,inside,28,John A. Wilson Building,27,,,,,inside
+washington-dc,the-anthem-dc,The Anthem,6000,inside,4,John A. Wilson Building,4,,,,,inside
+washington-dc,charles-e-smith-center,Charles E. Smith Center,5000,inside,5,John A. Wilson Building,4,,,,,inside
+washington-dc,segra-field,Segra Field,5000,inside,55,John A. Wilson Building,54,,,,,inside
+washington-dc,ludwig-field,Ludwig Field,7000,inside,23,John A. Wilson Building,25,,,,,inside
+washington-dc,george-mason-stadium,George Mason Stadium,5000,inside,36,John A. Wilson Building,34,,,,,inside
+edmonton,rogers-place,Rogers Place,20030,inside,2,Edmonton City Hall,3,,,,,inside
+edmonton,remax-field,RE/MAX Field,9200,inside,6,Edmonton City Hall,6,,,,,inside
+edmonton,rad-torque-raceway,RAD Torque Raceway,8500,inside,35,Edmonton City Hall,34,,,,,inside
+edmonton,clarke-stadium,Clarke Stadium,5000,inside,5,Edmonton City Hall,7,,,,,inside
+ottawa-gatineau,td-place-stadium,TD Place Stadium,24000,inside,10,Ottawa City Hall,7,"Maison du citoyen, Gatineau",10,,,inside
+ottawa-gatineau,arena-at-td-place,The Arena at TD Place,8585,inside,10,Ottawa City Hall,7,"Maison du citoyen, Gatineau",10,,,inside
+ottawa-gatineau,canadian-tire-centre,Canadian Tire Centre,19153,inside,23,Ottawa City Hall,23,"Maison du citoyen, Gatineau",25,,,inside
+ottawa-gatineau,ottawa-stadium,RCGT Park,10278,inside,12,Ottawa City Hall,8,"Maison du citoyen, Gatineau",11,,,inside
+st-louis,dome-at-americas-center,The Dome at America's Center,67277,inside,3,St. Louis City Hall,5,,,,,inside
+st-louis,busch-stadium,Busch Stadium,43769,inside,2,St. Louis City Hall,3,,,,,inside
+st-louis,energizer-park,Energizer Park,22423,inside,2,St. Louis City Hall,3,,,,,inside
+st-louis,enterprise-center,Enterprise Center,18096,inside,2,St. Louis City Hall,2,,,,,inside
+st-louis,hollywood-casino-amphitheatre-stl,Hollywood Casino Amphitheatre,20000,inside,30,St. Louis City Hall,32,,,,,inside
+st-louis,the-muny,The Muny,10700,inside,11,St. Louis City Hall,11,,,,,inside
+st-louis,chaifetz-arena,Chaifetz Arena,10600,inside,4,St. Louis City Hall,5,,,,,inside
+st-louis,family-arena,Family Arena,11522,inside,35,St. Louis City Hall,36,,,,,inside
+st-louis,harlen-c-hunter-stadium,Harlen C. Hunter Stadium,6000,inside,35,St. Louis City Hall,36,,,,,inside
+st-louis,hermann-stadium,Hermann Stadium,6050,inside,5,St. Louis City Hall,6,,,,,inside
+st-louis,arsenal-bg-ballpark,Arsenal BG Ballpark,6000,inside,12,St. Louis City Hall,12,,,,,inside
+salt-lake-city,delta-center,Delta Center,17867,inside,5,Salt Lake City and County Building,5,,,,,inside
+salt-lake-city,rice-eccles-stadium,Rice-Eccles Stadium,51444,inside,10,Salt Lake City and County Building,6,,,,,inside
+salt-lake-city,america-first-field,America First Field,25000,inside,20,Salt Lake City and County Building,20,,,,,inside
+salt-lake-city,utah-first-credit-union-amphitheatre,Utah First Credit Union Amphitheatre,7000,inside,24,Salt Lake City and County Building,26,,,,,inside
+salt-lake-city,jon-m-huntsman-center,Jon M. Huntsman Center,15000,inside,13,Salt Lake City and County Building,9,,,,,inside
+salt-lake-city,maverik-center,Maverik Center,12000,inside,14,Salt Lake City and County Building,16,,,,,inside
+salt-lake-city,days-of-47-arena,Utah State Fairpark Arena,10000,inside,6,Salt Lake City and County Building,10,,,,,inside
+salt-lake-city,ballpark-at-america-first-square,The Ballpark at America First Square,6500,inside,31,Salt Lake City and County Building,33,,,,,inside
+salt-lake-city,conference-center-slc,Conference Center,21000,inside,7,Salt Lake City and County Building,5,,,,,inside
+salt-lake-city,smiths-ballpark,Smith's Ballpark,14511,inside,8,Salt Lake City and County Building,5,,,,,inside
