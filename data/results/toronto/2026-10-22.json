@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-maple-leafs-401892553",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 5
+      },
+      "away": {
+        "name": "Rangers",
+        "score": 4
+      },
+      "attendance": 18872,
+      "capturedAt": "2026-10-23T13:13:27.090Z",
+      "duration": {
+        "minutes": 161,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-ksu-football-401871056",
+      "metroId": "atlanta",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fifth-third-stadium",
+      "homeTeamId": "ksu-football",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 6
+      },
+      "away": {
+        "name": "Liberty Flames",
+        "score": 34
+      },
+      "attendance": 8159,
+      "capturedAt": "2026-10-23T13:13:21.098Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

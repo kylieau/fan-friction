@@ -1,0 +1,2724 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "metroName": "Houston",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-23",
+  "capturedAt": "2026-10-23T13:12:15.701Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-23",
+    "through": "2026-11-06"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 43
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 32
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-23-sa-uhcougars-com-17026",
+      "metroId": "houston",
+      "date": "2026-10-23",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Houston Softball vs. Temple College",
+      "place": {
+        "type": "venue",
+        "venueId": "cougar-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball"
+      },
+      "teams": {
+        "home": "uh-softball",
+        "away": "Temple College",
+        "awayOpponent": "temple-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-23-sa-pvpanthers-com-10852",
+      "metroId": "houston",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Prairie View A&M Women's Volleyball vs. Texas Southern",
+      "place": {
+        "type": "venue",
+        "venueId": "william-j-nicks-building"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-23-sa-tsusports-com-6298",
+      "metroId": "houston",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Texas Southern Women's Basketball vs. Texas A&M International",
+      "place": {
+        "type": "venue",
+        "venueId": "hpe-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-southern-wbb",
+        "away": "Texas A&M International",
+        "awayOpponent": "texas-a-m-international"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-23-tm-G5dIZ_FCBMgTG",
+      "metroId": "houston",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Culture Wars",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Culture Wars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_FCBMgTG",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70E_w",
+      "metroId": "houston",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Don Omar",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175yK0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70E_w",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7J7A0",
+      "metroId": "houston",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sin Bandera",
+      "place": {
+        "type": "venue",
+        "venueId": "smart-financial-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Sin Bandera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J7A0"
+    },
+    {
+      "id": "2026-10-24-sa-uhcougars-com-17115",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Houston Baseball vs. UTA",
+      "place": {
+        "type": "venue",
+        "venueId": "schroeder-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "uh-baseball",
+        "away": "UTA",
+        "awayOpponent": "uta"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-sa-riceowls-com-29145",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Rice Baseball vs. McLennan CC",
+      "place": {
+        "type": "venue",
+        "venueId": "reckling-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rice-baseball",
+        "away": "McLennan CC",
+        "awayOpponent": "mclennan-cc"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-espn-texas-southern-football-401868972",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Texas Southern Tigers vs. Southern",
+      "place": {
+        "type": "venue",
+        "venueId": "shell-energy-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-southern-football",
+        "away": "southern",
+        "awayOpponent": "southern"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 8956,
+        "low": 7000,
+        "high": 10029,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-sa-tsusports-com-6186",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Texas Southern Football vs. Southern University",
+      "place": {
+        "type": "venue",
+        "venueId": "reliant-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-southern-football",
+        "away": "Southern University",
+        "awayOpponent": "southern-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-tm-G5dIZ_8m7xfLx",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Babyface",
+      "officialTitle": "MAJIC UNDER THE STARS FEATURING BABYFACE",
+      "place": {
+        "type": "venue",
+        "venueId": "cynthia-woods-mitchell-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Babyface",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Pd7",
+        "K8vZ9175z97"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_8m7xfLx",
+      "expectedDraw": {
+        "count": 16500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5dIZ_1UcYlhw",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MICO",
+      "officialTitle": "MICO - Running From A Feeling",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MICO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1UcYlhw",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-dynamo-761896",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Dynamo vs. MNUFC",
+      "place": {
+        "type": "venue",
+        "venueId": "shell-energy-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "dynamo",
+        "away": "minnesota-united",
+        "awayOpponent": "minnesota"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17849,
+        "low": 17367,
+        "high": 18785,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5dIZ_65GJqQ7",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Demola",
+      "officialTitle": "DEMOLA LIVE!",
+      "place": {
+        "type": "venue",
+        "venueId": "713-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Demola",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hbP7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_65GJqQ7",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5dIZ_FfZrWKQ",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hET7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_FfZrWKQ",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7-f4S",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Cristian Castro",
+      "place": {
+        "type": "venue",
+        "venueId": "smart-financial-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Cristian Castro",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-f4S"
+    },
+    {
+      "id": "2026-10-25-espn-texans-401873016",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Texans vs. Giants",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "reliant-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texans",
+        "away": "ny-giants",
+        "awayOpponent": "giants"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 71256,
+        "low": 71237,
+        "high": 71284,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-sa-riceowls-com-28862",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Rice Women's Volleyball vs. Tulsa",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-sa-tsusports-com-6238",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Texas Southern Women's Soccer vs. Alcorn State",
+      "place": {
+        "type": "venue",
+        "venueId": "alexander-durley-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-sa-uhcougars-com-16743",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Houston Volleyball vs. Iowa State",
+      "place": {
+        "type": "venue",
+        "venueId": "fertitta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-sa-tsusports-com-6214",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Texas Southern Women's Volleyball vs. Prairie View A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "hpe-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-tm-G5dIZ_1L4Rda4",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "show",
+      "title": "glaive",
+      "officialTitle": "GLAIVE - GOD SAVE THE THREE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "glaive",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1L4Rda4",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5dIZbU3HDnqy",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "cynthia-woods-mitchell-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175jBV",
+        "K8vZ917K5Nf",
+        "K8vZ9173cE7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZbU3HDnqy",
+      "expectedDraw": {
+        "count": 16500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-sa-uhcougars-com-17027",
+      "metroId": "houston",
+      "date": "2026-10-26",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Houston Softball vs. Red-Black Series Game 1",
+      "place": {
+        "type": "venue",
+        "venueId": "cougar-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball"
+      },
+      "teams": {
+        "home": "uh-softball",
+        "away": "Red-Black Series Game 1",
+        "awayOpponent": "red-black-series-game-1"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-26-tm-G5dIZ_G5NAX69",
+      "metroId": "houston",
+      "date": "2026-10-26",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Wage War",
+      "officialTitle": "WAGE WAR - EMERGENCY BROADCAST TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Wage War",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_G5NAX69",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-rockets-401909874",
+      "metroId": "houston",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rockets vs. Hawks",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rockets",
+        "away": "hawks",
+        "awayOpponent": "hawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17947,
+        "low": 16689,
+        "high": 17947,
+        "fromCrowds": true,
+        "games": 65,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 65 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-sa-uhcougars-com-17028",
+      "metroId": "houston",
+      "date": "2026-10-27",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Houston Softball vs. Red-Black Series Game 2",
+      "place": {
+        "type": "venue",
+        "venueId": "cougar-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball"
+      },
+      "teams": {
+        "home": "uh-softball",
+        "away": "Red-Black Series Game 2",
+        "awayOpponent": "red-black-series-game-2"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-27-sa-riceowls-com-29022",
+      "metroId": "houston",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rice Women's Basketball vs. Eastern New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rice-wbb",
+        "away": "Eastern New Mexico",
+        "awayOpponent": "eastern-new-mexico"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 703,
+        "low": 630,
+        "high": 832,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 15 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7x4FS",
+      "metroId": "houston",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x4FS",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-sa-uhcougars-com-17029",
+      "metroId": "houston",
+      "date": "2026-10-28",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Houston Softball vs. Red-Black Series Game 3",
+      "place": {
+        "type": "venue",
+        "venueId": "cougar-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball"
+      },
+      "teams": {
+        "home": "uh-softball",
+        "away": "Red-Black Series Game 3",
+        "awayOpponent": "red-black-series-game-3"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-sa-riceowls-com-28863",
+      "metroId": "houston",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Rice Women's Volleyball vs. Tulane",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-sa-uhcougars-com-17057",
+      "metroId": "houston",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Houston Women's Basketball vs. Eastern New Mexico",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "fertitta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uh-wbb",
+        "away": "Eastern New Mexico",
+        "awayOpponent": "eastern-new-mexico"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-tm-G5dIZ_o2Jnf5A",
+      "metroId": "houston",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "TEN",
+      "officialTitle": "TEN: US SHOWCASE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "TEN",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_o2Jnf5A",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5dIZ_3MEndBZ",
+      "metroId": "houston",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dave Chappelle Karmageddon",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dave Chappelle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_3MEndBZ"
+    },
+    {
+      "id": "2026-10-29-tm-G5dIZ_f6NtBfi",
+      "metroId": "houston",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Chencho Corleone",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Chencho Corleone",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_f6NtBfi",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-riceowls-com-28903",
+      "metroId": "houston",
+      "date": "2026-10-30",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Rice Women's Soccer vs. Charlotte",
+      "place": {
+        "type": "venue",
+        "venueId": "holloway-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-riceowls-com-28864",
+      "metroId": "houston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rice Women's Volleyball vs. South Florida",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-uhcougars-com-16281",
+      "metroId": "houston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Houston Soccer vs. Kansas",
+      "place": {
+        "type": "venue",
+        "venueId": "carl-lewis-international-complex"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-G5dIZ_G2o4cXS",
+      "metroId": "houston",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Alvaro Diaz",
+      "officialTitle": "ALVARO DIAZ - OMAKASE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "713-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Alvaro Diaz",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173JU7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_G2o4cXS",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5dIZ_1p6npLo",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MercyMe",
+      "officialTitle": "MercyMe, Jeremy Camp, Tim Timmons, Sam Wesley",
+      "place": {
+        "type": "venue",
+        "venueId": "cynthia-woods-mitchell-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MercyMe",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175_R0",
+        "K8vZ9175gsf",
+        "K8vZ9173KT0",
+        "K8vZ917qpXV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1p6npLo",
+      "expectedDraw": {
+        "count": 16500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-rockets-401909902",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rockets vs. Thunder",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rockets",
+        "away": "thunder",
+        "awayOpponent": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17947,
+        "low": 17947,
+        "high": 17947,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-texas-southern-football-401868956",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Texas Southern Tigers vs. Grambling",
+      "place": {
+        "type": "venue",
+        "venueId": "shell-energy-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-southern-football",
+        "away": "grambling",
+        "awayOpponent": "grambling"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 8956,
+        "low": 7000,
+        "high": 10029,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-tsusports-com-6187",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Texas Southern Football vs. Grambling State",
+      "place": {
+        "type": "venue",
+        "venueId": "ww-thorne-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-southern-football",
+        "away": "Grambling State",
+        "awayOpponent": "grambling-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-G5dIZ_33ccQFw",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Victoria Monét",
+      "officialTitle": "Victoria Monét: Frequency Of Love Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "713-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Victoria Monét",
+      "act": true,
+      "performerIds": [
+        "K8vZ917fYD7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_33ccQFw",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5dIZ_KdNxpYo",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rewind",
+      "officialTitle": "Rewind: 2000s Halloween Rave",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rewind",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_KdNxpYo",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5dIZ_oSqZJfE",
+      "metroId": "houston",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ye",
+      "officialTitle": "Ye Live in Houston",
+      "place": {
+        "type": "venue",
+        "venueId": "reliant-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Ye",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Oy7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_oSqZJfE",
+      "expectedDraw": {
+        "count": 45600,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-dash-401854038",
+      "metroId": "houston",
+      "date": "2026-11-01",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Dash vs. Thorns",
+      "place": {
+        "type": "venue",
+        "venueId": "shell-energy-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "dash",
+        "away": "thorns",
+        "awayOpponent": "portland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5986,
+        "low": 5434,
+        "high": 6886,
+        "fromCrowds": true,
+        "games": 24,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 24 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5dIZ_aLlIzFX",
+      "metroId": "houston",
+      "date": "2026-11-01",
+      "start": "20:20",
+      "kind": "show",
+      "title": "Morrissey",
+      "place": {
+        "type": "venue",
+        "venueId": "713-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morrissey",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171Fvf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_aLlIzFX",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-uh-wbb-401923478",
+      "metroId": "houston",
+      "date": "2026-11-02",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Houston vs. Hampton",
+      "place": {
+        "type": "venue",
+        "venueId": "fertitta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uh-wbb",
+        "away": "hampton",
+        "awayOpponent": "hampton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1101,
+        "low": 704,
+        "high": 1219,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-rice-mbb-401921093",
+      "metroId": "houston",
+      "date": "2026-11-02",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Rice Owls vs. Dallas Chrstn",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rice-mbb",
+        "away": "dallas-chrstn",
+        "awayOpponent": "dallas-chrstn"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1111,
+        "low": 1050,
+        "high": 1429,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-sa-pvpanthers-com-10900",
+      "metroId": "houston",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Prairie View A&M Men's Basketball vs. Paul Quinn College",
+      "place": {
+        "type": "venue",
+        "venueId": "william-j-nicks-building"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pvamu-mbb",
+        "away": "Paul Quinn College",
+        "awayOpponent": "paul-quinn-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-espn-rockets-401909916",
+      "metroId": "houston",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rockets vs. Celtics",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rockets",
+        "away": "celtics",
+        "awayOpponent": "celtics"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16417,
+        "low": 16148,
+        "high": 18055,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-uh-mbb-401925811",
+      "metroId": "houston",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Houston vs. La Salle",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "fertitta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uh-mbb",
+        "away": "la-salle",
+        "awayOpponent": "la-salle"
+      },
+      "rank": {
+        "home": 10
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 7035,
+        "low": 6934,
+        "high": 7035,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-rice-wbb-401913830",
+      "metroId": "houston",
+      "date": "2026-11-02",
+      "start": "20:25",
+      "kind": "game",
+      "title": "Rice Owls vs. Hou Christian",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rice-wbb",
+        "away": "hou-christian",
+        "awayOpponent": "hou-christian"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 641,
+        "low": 604,
+        "high": 755,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5dIZ_5RPQ73Z",
+      "metroId": "houston",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Julia Jacklin",
+      "officialTitle": "Julia Jacklin: North America Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Julia Jacklin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_5RPQ73Z",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-rockets-401909930",
+      "metroId": "houston",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rockets vs. Timberwolves",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rockets",
+        "away": "timberwolves",
+        "awayOpponent": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16433,
+        "low": 16164,
+        "high": 18073,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-sa-pvpanthers-com-11220",
+      "metroId": "houston",
+      "date": "2026-11-04",
+      "start": null,
+      "kind": "game",
+      "title": "Prairie View A&M Women's Basketball vs. Wiley University",
+      "place": {
+        "type": "venue",
+        "venueId": "william-j-nicks-building"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pvamu-wbb",
+        "away": "Wiley University",
+        "awayOpponent": "wiley-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-espn-uh-wbb-401923479",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Houston vs. Sam Houston",
+      "place": {
+        "type": "venue",
+        "venueId": "fertitta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uh-wbb",
+        "away": "sam-houston",
+        "awayOpponent": "sam-houston"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1101,
+        "low": 704,
+        "high": 1219,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-sa-pvpanthers-com-10901",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Prairie View A&M Men's Basketball vs. College of Biblical Studies",
+      "place": {
+        "type": "venue",
+        "venueId": "william-j-nicks-building"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pvamu-mbb",
+        "away": "College of Biblical Studies",
+        "awayOpponent": "college-of-biblical-studies"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-espn-rice-mbb-401921094",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rice Owls vs. East Texas A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "tudor-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "rice-mbb",
+        "away": "east-texas-a-m",
+        "awayOpponent": "east-texas-a-m"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1196,
+        "low": 1098,
+        "high": 1384,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5dIZ_19QF4KD",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Slow Pulp",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_19QF4KD",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5dIZ_5C_Pbz8",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "John Summit",
+      "officialTitle": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "John Summit",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_pO7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_5C_Pbz8",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5dIZ_53je_pf",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Arcángel",
+      "officialTitle": "Arcángel - La 8va Maravilla World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "713-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Arcángel",
+      "act": true,
+      "performerIds": [
+        "K8vZ917okqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_53je_pf",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-sa-tsusports-com-6217",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Texas Southern Women's Volleyball vs. Florida A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "hpe-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-pvpanthers-com-10856",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Prairie View A&M Women's Volleyball vs. Bethune-Cookman",
+      "place": {
+        "type": "venue",
+        "venueId": "william-j-nicks-building"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-uhcougars-com-16746",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Houston Volleyball vs. TCU",
+      "place": {
+        "type": "venue",
+        "venueId": "fertitta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-G5dIZ_37_wrzj",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "ROA",
+      "officialTitle": "ROA: USA Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-lawn"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "ROA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_37_wrzj",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5dIZ_GCmkQoJ",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bonobo",
+      "officialTitle": "Bonobo: Distance in Static Live North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "white-oak-music-hall-downstairs"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bonobo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_GCmkQoJ",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7OpvE",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Nikki Glaser",
+      "place": {
+        "type": "venue",
+        "venueId": "smart-financial-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Nikki Glaser",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OpvE"
+    },
+    {
+      "id": "2026-11-06-tm-G5dIZbzkdc7Ow",
+      "metroId": "houston",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MANÁ",
+      "officialTitle": "MANÁ: VIVIR SIN AIRE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "MANÁ",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171Kyf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZbzkdc7Ow",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-23-sa-uhcougars-com-17026",
+      "date": "2026-10-23",
+      "start": "16:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-sa-pvpanthers-com-10852",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-sa-tsusports-com-6298",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "Don Omar 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-G5dIZ_FCBMgTG",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70E_w",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "Texas Southern Women's Basketba… (WBB) 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7J7A0",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-uhcougars-com-17115",
+      "date": "2026-10-24",
+      "start": "12:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-riceowls-com-29145",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Texas Southern Football 2.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-texas-southern-football-401868972",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Extreme",
+        "why": "Texas Southern Football 5.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8956,
+        "low": 7000,
+        "high": 10029
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-tsusports-com-6186",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "95° feels-like at a 2:00 pm start, no roof.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dIZ_8m7xfLx",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Texas Southern Football 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dIZ_1UcYlhw",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-dynamo-761896",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Texas Southern Football and Majic Under the Stars Featuring… 5.8 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17849,
+        "low": 17367,
+        "high": 18785
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dIZ_65GJqQ7",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Extreme",
+        "why": "Majic Under the Stars Featuring… 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5dIZ_FfZrWKQ",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Majic Under the Stars Featuring… and MNUFC at Dynamo 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7-f4S",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-texans-401873016",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 71256,
+        "low": 71237,
+        "high": 71284
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-riceowls-com-28862",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-tsusports-com-6238",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-uhcougars-com-16743",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-tsusports-com-6214",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5dIZ_1L4Rda4",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5dIZbU3HDnqy",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Giants at Texans 33 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16500
+      }
+    },
+    {
+      "eventId": "2026-10-26-sa-uhcougars-com-17027",
+      "date": "2026-10-26",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5dIZ_G5NAX69",
+      "date": "2026-10-26",
+      "start": "17:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-rockets-401909874",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17947,
+        "low": 16689,
+        "high": 17947
+      }
+    },
+    {
+      "eventId": "2026-10-27-sa-uhcougars-com-17028",
+      "date": "2026-10-27",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-sa-riceowls-com-29022",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 703,
+        "low": 630,
+        "high": 832
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7x4FS",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-uhcougars-com-17029",
+      "date": "2026-10-28",
+      "start": "15:30",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-riceowls-com-28863",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-uhcougars-com-17057",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Dave Chappelle Karmageddon 2.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5dIZ_o2Jnf5A",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5dIZ_3MEndBZ",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Houston Women's Basketball (WBB · Preseason) 2.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5dIZ_f6NtBfi",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-riceowls-com-28903",
+      "date": "2026-10-30",
+      "start": "12:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-riceowls-com-28864",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-uhcougars-com-16281",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5dIZ_G2o4cXS",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5dIZ_1p6npLo",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Ye Live in Houston 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16500
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-rockets-401909902",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Ye Live in Houston 5.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17947,
+        "low": 17947,
+        "high": 17947
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-texas-southern-football-401868956",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Ye Live in Houston 5.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8956,
+        "low": 7000,
+        "high": 10029
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-tsusports-com-6187",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5dIZ_33ccQFw",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Ye Live in Houston and MercyMe, Jeremy Camp, Tim Timmo… 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5dIZ_KdNxpYo",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5dIZ_oSqZJfE",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "MercyMe, Jeremy Camp, Tim Timmo… and Thunder at Rockets 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 45600
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-dash-401854038",
+      "date": "2026-11-01",
+      "start": "16:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 4:00 pm start.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5986,
+        "low": 5434,
+        "high": 6886
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5dIZ_aLlIzFX",
+      "date": "2026-11-01",
+      "start": "20:20",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Thorns at Dash 1.2 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-uh-wbb-401923478",
+      "date": "2026-11-02",
+      "start": "12:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1101,
+        "low": 704,
+        "high": 1219
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-rice-mbb-401921093",
+      "date": "2026-11-02",
+      "start": "17:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1111,
+        "low": 1050,
+        "high": 1429
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-pvpanthers-com-10900",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-rockets-401909916",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "La Salle at Houston (MBB · Home opener) 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16417,
+        "low": 16148,
+        "high": 18055
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-uh-mbb-401925811",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "Celtics at Rockets 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7035,
+        "low": 6934,
+        "high": 7035
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-rice-wbb-401913830",
+      "date": "2026-11-02",
+      "start": "20:25",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 641,
+        "low": 604,
+        "high": 755
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5dIZ_5RPQ73Z",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-rockets-401909930",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16433,
+        "low": 16164,
+        "high": 18073
+      }
+    },
+    {
+      "eventId": "2026-11-04-sa-pvpanthers-com-11220",
+      "date": "2026-11-04",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-uh-wbb-401923479",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1101,
+        "low": 704,
+        "high": 1219
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-pvpanthers-com-10901",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-rice-mbb-401921094",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1196,
+        "low": 1098,
+        "high": 1384
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5dIZ_19QF4KD",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5dIZ_5C_Pbz8",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Arcángel 1.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5dIZ_53je_pf",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "John Summit 1.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-tsusports-com-6217",
+      "date": "2026-11-06",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-pvpanthers-com-10856",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-uhcougars-com-16746",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5dIZ_37_wrzj",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5dIZ_GCmkQoJ",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7OpvE",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5dIZbzkdc7Ow",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    }
+  ]
+}

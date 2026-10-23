@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-bruins-401892552",
+      "metroId": "boston",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 6
+      },
+      "away": {
+        "name": "Predators",
+        "score": 0
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-10-23T13:13:23.283Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

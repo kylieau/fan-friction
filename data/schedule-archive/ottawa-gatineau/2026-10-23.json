@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "metroName": "Ottawa–Gatineau",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-10-23",
+  "capturedAt": "2026-10-23T13:12:44.191Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-23",
+    "through": "2026-11-06"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 1
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 2
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 0
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-24-espn-ottawa-senators-401892569",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Rangers",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "ny-rangers",
+        "awayOpponent": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15832,
+        "low": 15706,
+        "high": 17126,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-1Ad7Z_kGkm1Ff1t",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Ad7Z_kGkm1Ff1t",
+      "expectedDraw": {
+        "count": 9626,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-24-espn-ottawa-senators-401892569",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15832,
+        "low": 15706,
+        "high": 17126
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-1Ad7Z_kGkm1Ff1t",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9626
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-blues-401892558",
+      "metroId": "st-louis",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 6
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "attendance": 18096,
+      "capturedAt": "2026-10-23T13:13:29.567Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

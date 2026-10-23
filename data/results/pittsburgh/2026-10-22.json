@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-penguins-401892556",
+      "metroId": "pittsburgh",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 4
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 0
+      },
+      "attendance": 14898,
+      "capturedAt": "2026-10-23T13:13:23.753Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

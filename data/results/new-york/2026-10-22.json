@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-devils-401892555",
+      "metroId": "new-york",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 4
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 1
+      },
+      "attendance": 16049,
+      "capturedAt": "2026-10-23T13:13:19.058Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-10-22-espn-islanders-401892557",
+      "metroId": "new-york",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 2
+      },
+      "away": {
+        "name": "Kings",
+        "score": 3
+      },
+      "attendance": 14397,
+      "note": "OT",
+      "capturedAt": "2026-10-23T13:13:19.058Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    }
+  ]
+}

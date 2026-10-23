@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-gophers-hockey-401905008",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 5
+      },
+      "away": {
+        "name": "North Dakota",
+        "score": 3
+      },
+      "capturedAt": "2026-10-23T13:13:27.252Z"
+    }
+  ]
+}

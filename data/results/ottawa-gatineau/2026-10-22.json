@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-ottawa-senators-401892554",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 2
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 6
+      },
+      "attendance": 15469,
+      "capturedAt": "2026-10-23T13:13:28.052Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

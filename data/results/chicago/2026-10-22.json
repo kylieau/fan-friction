@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-bears-401873010",
+      "metroId": "chicago",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "bears",
+      "home": {
+        "name": "Bears",
+        "score": 30
+      },
+      "away": {
+        "name": "Patriots",
+        "score": 24
+      },
+      "attendance": 60520,
+      "capturedAt": "2026-10-23T13:13:21.664Z",
+      "duration": {
+        "minutes": 187,
+        "kind": "estimated"
+      },
+      "startedAt": "20:15"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-fort-lauderdale-united-401878621",
+      "metroId": "miami",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "beyond-bancard-field",
+      "homeTeamId": "fort-lauderdale-united",
+      "home": {
+        "name": "Fort Lauderdale Utd",
+        "score": 0
+      },
+      "away": {
+        "name": "Carolina",
+        "score": 0
+      },
+      "attendance": 766,
+      "capturedAt": "2026-10-23T13:13:24.150Z"
+    }
+  ]
+}

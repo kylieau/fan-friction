@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-07",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "st-louis",
+      "venueId": "city",
+      "date": "2026-11-07",
+      "basis": "forecast",
+      "capturedAt": "2026-10-23T13:09:11.905Z",
+      "feelsLikeHighF": 72.3,
+      "feelsLikeLowF": 58.7,
+      "code": 3,
+      "precipProbability": 22,
+      "precipMm": 0
+    }
+  ]
+}

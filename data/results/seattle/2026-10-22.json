@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-kraken-401892562",
+      "metroId": "seattle",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 5
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 3
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-10-23T13:13:18.753Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

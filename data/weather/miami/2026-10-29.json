@@ -111,6 +111,18 @@
       "code": 51,
       "precipProbability": 43,
       "precipMm": 4.7
+    },
+    {
+      "metroId": "miami",
+      "venueId": "city",
+      "date": "2026-10-29",
+      "basis": "forecast",
+      "capturedAt": "2026-10-23T13:06:37.247Z",
+      "feelsLikeHighF": 83.4,
+      "feelsLikeLowF": 77.1,
+      "code": 53,
+      "precipProbability": 38,
+      "precipMm": 7.2
     }
   ]
 }

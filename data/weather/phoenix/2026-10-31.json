@@ -86,6 +86,18 @@
       "code": 3,
       "precipProbability": 27,
       "precipMm": 0
+    },
+    {
+      "metroId": "phoenix",
+      "venueId": "city",
+      "date": "2026-10-31",
+      "basis": "forecast",
+      "capturedAt": "2026-10-23T13:07:30.658Z",
+      "feelsLikeHighF": 77.8,
+      "feelsLikeLowF": 71.2,
+      "code": 3,
+      "precipProbability": 26,
+      "precipMm": 0
     }
   ]
 }

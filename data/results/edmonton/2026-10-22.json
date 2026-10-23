@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-oilers-401892561",
+      "metroId": "edmonton",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 6
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 5
+      },
+      "attendance": 16420,
+      "note": "SO",
+      "capturedAt": "2026-10-23T13:13:28.349Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

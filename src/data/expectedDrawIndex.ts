@@ -67106,8 +67106,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "atlanta",
     "teamId": "ksu-football",
     "season": 2026,
-    "level": 1.067,
-    "games": 3
+    "level": 1.049,
+    "games": 4
   },
   {
     "metroId": "austin",
@@ -67176,8 +67176,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "chicago",
     "teamId": "bears",
     "season": 2026,
-    "level": 0.999,
-    "games": 3
+    "level": 1.002,
+    "games": 4
   },
   {
     "metroId": "cleveland",
@@ -70548,7 +70548,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "bruins",
     "opponent": "predators",
     "ratio": 1,
-    "games": 3
+    "games": 4
   },
   {
     "metroId": "boston",
@@ -71157,6 +71157,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "bears",
     "opponent": "panthers",
     "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "opponent": "patriots",
+    "ratio": 1.005,
     "games": 2
   },
   {
@@ -76987,8 +76994,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "edmonton",
     "teamId": "oilers",
     "opponent": "hurricanes",
-    "ratio": 1,
-    "games": 3
+    "ratio": 0.977,
+    "games": 4
   },
   {
     "metroId": "edmonton",
@@ -81334,8 +81341,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "miami",
     "teamId": "fort-lauderdale-united",
     "opponent": "carolina",
-    "ratio": 1.152,
-    "games": 2
+    "ratio": 0.991,
+    "games": 3
   },
   {
     "metroId": "miami",
@@ -86276,8 +86283,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "devils",
     "opponent": "ducks",
-    "ratio": 0.97,
-    "games": 3
+    "ratio": 0.977,
+    "games": 4
   },
   {
     "metroId": "new-york",
@@ -86626,8 +86633,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "islanders",
     "opponent": "kings",
-    "ratio": 1.005,
-    "games": 3
+    "ratio": 1,
+    "games": 4
   },
   {
     "metroId": "new-york",
@@ -88537,8 +88544,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "ottawa-gatineau",
     "teamId": "ottawa-senators",
     "opponent": "sharks",
-    "ratio": 1.004,
-    "games": 3
+    "ratio": 0.996,
+    "games": 4
   },
   {
     "metroId": "ottawa-gatineau",
@@ -89202,8 +89209,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "philadelphia",
     "teamId": "sixers",
     "opponent": "cavaliers",
-    "ratio": 1,
-    "games": 4
+    "ratio": 1.013,
+    "games": 5
   },
   {
     "metroId": "philadelphia",
@@ -90756,8 +90763,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "pittsburgh",
     "teamId": "penguins",
     "opponent": "panthers",
-    "ratio": 0.994,
-    "games": 5
+    "ratio": 0.981,
+    "games": 6
   },
   {
     "metroId": "pittsburgh",
@@ -95620,6 +95627,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "seattle",
     "teamId": "kraken",
+    "opponent": "mammoth",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
     "opponent": "maple-leafs",
     "ratio": 1,
     "games": 3
@@ -96538,8 +96552,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "st-louis",
     "teamId": "blues",
     "opponent": "golden-knights",
-    "ratio": 0.996,
-    "games": 5
+    "ratio": 1.006,
+    "games": 6
   },
   {
     "metroId": "st-louis",
@@ -97644,8 +97658,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "toronto",
     "teamId": "maple-leafs",
     "opponent": "rangers",
-    "ratio": 0.998,
-    "games": 5
+    "ratio": 1.002,
+    "games": 6
   },
   {
     "metroId": "toronto",
@@ -98470,8 +98484,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "vancouver",
     "teamId": "vancouver-canucks",
     "opponent": "red-wings",
-    "ratio": 1,
-    "games": 3
+    "ratio": 0.987,
+    "games": 4
   },
   {
     "metroId": "vancouver",

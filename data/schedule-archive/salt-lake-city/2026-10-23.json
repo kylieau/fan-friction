@@ -1,0 +1,1290 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "metroName": "Salt Lake City",
+  "timeZone": "America/Denver",
+  "capturedOn": "2026-10-23",
+  "capturedAt": "2026-10-23T13:12:41.062Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-23",
+    "through": "2026-11-06"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 14
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 23
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 8
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-23-espn-utah-jazz-401909849",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Jazz vs. Pelicans",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "pelicans",
+        "awayOpponent": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-utah-royals-401854028",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Royals vs. Reign",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "utah-royals",
+        "away": "reign",
+        "awayOpponent": "seattle"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A70Opv",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Zoltan Kaszas",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Zoltan Kaszas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Opv"
+    },
+    {
+      "id": "2026-10-24-espn-utah-mammoth-401892575",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Lightning",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "lightning",
+        "awayOpponent": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11131,
+        "low": 11131,
+        "high": 12478,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-real-salt-lake-761898",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Real Salt Lake vs. CITY SC",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "real-salt-lake",
+        "away": "st-louis-city-sc",
+        "awayOpponent": "st-louis"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-utah-utes-football-401856837",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "start": "20:15",
+      "kind": "game",
+      "title": "Utah Utes vs. Houston",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "rice-eccles-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utah-utes-football",
+        "away": "uh-football",
+        "awayOpponent": "houston"
+      },
+      "rank": {
+        "home": 10,
+        "away": 14
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 51125,
+        "low": 50962,
+        "high": 52286,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-sa-utahutes-com-24646",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Utah Volleyball vs. Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-sa-utahutes-com-24938",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Utah Baseball vs. Colorado Mesa",
+      "place": {
+        "type": "venue",
+        "venueId": "utah-first-ballpark"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "utah-baseball",
+        "away": "Colorado Mesa",
+        "awayOpponent": "colorado-mesa"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-espn-utah-jazz-401909861",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Jazz vs. Lakers",
+      "broadcast": "Spectrum Sports Net",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-utah-jazz-401909875",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Jazz vs. Memphis Grizzlies",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-espn-utah-mammoth-401892592",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Wild",
+      "broadcast": "MINNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "wild",
+        "awayOpponent": "wild"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11053,
+        "low": 11053,
+        "high": 11053,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-utah-jazz-401909890",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Jazz vs. Spurs",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "spurs",
+        "awayOpponent": "spurs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAebue",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Relics And Their Humans",
+      "place": {
+        "type": "venue",
+        "venueId": "kingsbury-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Relics And Their Humans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebue",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1AAebud",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Relics And Their Humans",
+      "place": {
+        "type": "venue",
+        "venueId": "kingsbury-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Relics And Their Humans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebud",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vzZ_1BicyxV",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171FDV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1BicyxV",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vzZ_5A8xe-7",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dan + Shay",
+      "officialTitle": "Dan + Shay: The Young Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dan + Shay",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173kl0",
+        "K8vZ917QEF0",
+        "K8vZ917h770"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_5A8xe-7",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAebu7",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Relics And Their Humans",
+      "place": {
+        "type": "venue",
+        "venueId": "kingsbury-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Relics And Their Humans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebu7",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-espn-utah-jazz-401909896",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Jazz vs. Blazers",
+      "broadcast": "KUNP 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "blazers",
+        "awayOpponent": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-utahutes-com-24939",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Utah Baseball vs. Salt Lake Community College",
+      "place": {
+        "type": "venue",
+        "venueId": "utah-first-ballpark"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "utah-baseball",
+        "away": "Salt Lake Community College",
+        "awayOpponent": "salt-lake-community-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A70EfV",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Don Omar",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175yK0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70EfV",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-utah-mbb-401921697",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Long Beach St",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-mbb",
+        "away": "long-beach-st",
+        "awayOpponent": "long-beach-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 6785,
+        "low": 6359,
+        "high": 7209,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7PbZ8",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "BYU Cougars Mens Basketball vs. Ohio State Buckeyes Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "BYU Cougars Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PbZ8"
+    },
+    {
+      "id": "2026-11-03-espn-utah-wbb-401918931",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Utah Utes vs. E Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-wbb",
+        "away": "e-washington",
+        "awayOpponent": "e-washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3129,
+        "low": 2267,
+        "high": 3819,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7x_ag",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "officialTitle": "Teddy Swims w/ Freak Freely",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0",
+        "Z7r9jZ177Kv0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x_ag",
+      "expectedDraw": {
+        "count": 10184,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A70V_v",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mon Laferte",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Mon Laferte",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70V_v",
+      "expectedDraw": {
+        "count": 2468,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1AAv40g",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Sutton Foster",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Sutton Foster",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv40g",
+      "expectedDraw": {
+        "count": 2468,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-utah-mbb-401921698",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-05",
+      "start": null,
+      "kind": "game",
+      "title": "Utah Utes vs. Towson",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-mbb",
+        "away": "towson",
+        "awayOpponent": "towson"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6587,
+        "low": 6265,
+        "high": 6693,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-utah-wbb-401918932",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Colorado St",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-wbb",
+        "away": "colorado-st",
+        "awayOpponent": "colorado-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3243,
+        "low": 2697,
+        "high": 3977,
+        "fromCrowds": true,
+        "games": 28,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 28 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A70U8A",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U8A",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvZfA",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Alex Boye",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Alex Boye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvZfA",
+      "expectedDraw": {
+        "count": 2468,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-23-espn-utah-jazz-401909849",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Reign at Royals 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-utah-royals-401854028",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Pelicans at Jazz (Home opener) 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A70Opv",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-utah-mammoth-401892575",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Houston at Utah Utes 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11131,
+        "low": 11131,
+        "high": 12478
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-real-salt-lake-761898",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Houston at Utah Utes 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-utah-utes-football-401856837",
+      "date": "2026-10-24",
+      "start": "20:15",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "CITY SC at Real Salt Lake 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 51125,
+        "low": 50962,
+        "high": 52286
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-utahutes-com-24646",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-utahutes-com-24938",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-utah-jazz-401909861",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-utah-jazz-401909875",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-utah-mammoth-401892592",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11053,
+        "low": 11053,
+        "high": 11053
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-utah-jazz-401909890",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAebue",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1AAebud",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vzZ_1BicyxV",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vzZ_5A8xe-7",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAebu7",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-utah-jazz-401909896",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18181,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-utahutes-com-24939",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A70EfV",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-utah-mbb-401921697",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "BYU Cougars Mens Basketball 3.3 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6785,
+        "low": 6359,
+        "high": 7209
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7PbZ8",
+      "date": "2026-11-02",
+      "start": null,
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Long Beach St at Utah Utes (MBB · Home opener) 3.3 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-utah-wbb-401918931",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3129,
+        "low": 2267,
+        "high": 3819
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7x_ag",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10184
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A70V_v",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2468
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1AAv40g",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "draw": {
+        "count": 2468
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-utah-mbb-401921698",
+      "date": "2026-11-05",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6587,
+        "low": 6265,
+        "high": 6693
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-utah-wbb-401918932",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3243,
+        "low": 2697,
+        "high": 3977
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A70U8A",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvZfA",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2468
+      }
+    }
+  ]
+}

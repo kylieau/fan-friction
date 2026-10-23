@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-22",
+  "results": [
+    {
+      "eventId": "2026-10-22-espn-dallas-stars-401892559",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 3
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 2
+      },
+      "attendance": 18532,
+      "note": "OT",
+      "capturedAt": "2026-10-23T13:13:22.079Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}
