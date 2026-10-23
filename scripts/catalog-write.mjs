@@ -147,7 +147,9 @@ try {
   if (sgKey) console.log(`${metroId}: SeatGeek ${sg.length} shows Ticketmaster doesn't list (${sgAll.length - sg.length} it does).`);
   if (tmKey) {
     const top = tm.unknownVenues.slice(0, 8).map((v) => `${v.name} (${v.count})`).join(', ');
-    console.log(`${metroId}: Ticketmaster ${tm.events.length} listings kept at known venues, ${tm.unknownVenues.reduce((n, v) => n + v.count, 0)} at rooms the table lacks${top ? `: ${top}` : ''}.`);
+    // The calls this pass spent (Oct 23, 2026): the key allows 5,000 a day across this pass and the archive's, and the
+    // name search for every room without an id grows with the room table.
+    console.log(`${metroId}: Ticketmaster ${tm.events.length} listings kept at known venues, ${tm.unknownVenues.reduce((n, v) => n + v.count, 0)} at rooms the table lacks${top ? `: ${top}` : ''}; ${tm.pages} calls.`);
   }
   // Miscellaneous listings at 5,000+ rooms, with the feed's own categories (Kylie, Oct 16): the material for a feed-based
   // add-on rule. "kept" ones are listed at the room's size; "dropped" ones the word filter caught.
