@@ -1,6 +1,6 @@
 # Further out venue research — Delivery 4: Bay Area through Mexico City
 
-Status: saved Oct 22, 2026, not folded in (Bay Area, Seattle, Toronto, Mexico City); continuation 4 (Montreal onward) is in `further-out-rooms-prompt.md`.
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026 (one room per site, each on the side the drive-time rule puts it; 38 came inside a city, 164 are Further out). Name histories, Ticketmaster names and the near-line and unconfirmed lists are not imported.
 
 > **Delivery 4 · October 22, 2026.** Bay Area, Seattle, Toronto and Mexico City only. **Stopped after Mexico City. Next: Montreal.**
 

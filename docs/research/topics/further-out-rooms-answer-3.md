@@ -1,6 +1,6 @@
 # Further out venue research — Delivery 3: Atlanta through Boston
 
-Status: saved Oct 22, 2026, not folded in (Atlanta, Miami, Phoenix, Boston; deliveries 1 and 2 are in `further-out-rooms-answer.md`); continuation 3 (Bay Area onward) is in `further-out-rooms-prompt.md`.
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026 (one room per site, each on the side the drive-time rule puts it; 38 came inside a city, 164 are Further out). Name histories, Ticketmaster names and the near-line and unconfirmed lists are not imported.
 
 > **Delivery 3 · October 22, 2026.** Atlanta, Miami, Phoenix and Boston only. **Four city sections. Next: Bay Area.**
 

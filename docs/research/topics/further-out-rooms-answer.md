@@ -1,5 +1,7 @@
 # Further out: large event rooms beyond covered cities
 
+Status: closed, folded into `src/data/venues.ts` Oct 23, 2026 (one room per site, each on the side the drive-time rule puts it; 38 came inside a city, 164 are Further out). Name histories, Ticketmaster names and the near-line and unconfirmed lists are not imported.
+
 ## Delivery status
 
 **Research cutoff: October 21, 2026 for this continuation; New York and Chicago retain their October 20 research. Completed city sections: New York, Chicago, Dallas–Fort Worth, Houston, Washington DC and Philadelphia. Stopped after Philadelphia; Atlanta is next.** This file is a partial delivery of the requested city sequence, not a finding that the remaining cities have no qualifying sites. Sources were consulted as live public pages; no archived copies, purchases, registrations, or outreach were used.
