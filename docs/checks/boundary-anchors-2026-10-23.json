@@ -1,0 +1,380 @@
+{
+ "la": [
+  {
+   "q": "Los Angeles City Hall",
+   "lng": -118.24292,
+   "lat": 34.0537,
+   "found": "Los Angeles City Hall, 200, North Spring Street, Civic Center, Downtown, Los Angeles, Los "
+  },
+  {
+   "q": "Long Beach City Hall, Long Beach, California",
+   "lng": -118.19746,
+   "lat": 33.76824,
+   "found": "Long Beach City Hall, 411, West Ocean Boulevard, Long Beach, Los Angeles County, Californi"
+  },
+  {
+   "q": "Santa Ana City Hall, California",
+   "lng": -117.87315,
+   "lat": 33.75002,
+   "found": "Santa Ana City Hall, 20, Civic Center Plaza, Santa Ana, Orange County, California, 92702, "
+  }
+ ],
+ "boston": [
+  {
+   "q": "Boston City Hall",
+   "lng": -71.05798,
+   "lat": 42.36037,
+   "found": "Boston City Hall, 1, Congress Street, Government Center/Faneuil Hall, Downtown, Boston, Su"
+  }
+ ],
+ "chicago": [
+  {
+   "q": "Chicago City Hall",
+   "lng": -87.63195,
+   "lat": 41.88383,
+   "found": "Chicago City Hall, 121, North LaSalle Street, Financial District, Loop, Chicago, South Chi"
+  }
+ ],
+ "columbus": [
+  {
+   "q": "Columbus City Hall, Ohio",
+   "lng": -83.00341,
+   "lat": 39.96258,
+   "found": "Columbus City Hall plaza, Downtown, Columbus, Franklin County, Ohio, United States"
+  }
+ ],
+ "cleveland": [
+  {
+   "q": "Cleveland City Hall",
+   "lng": -81.69365,
+   "lat": 41.50511,
+   "found": "Cleveland City Hall, 601, Lakeside Avenue East, Downtown Cleveland, Cleveland, Cuyahoga Co"
+  }
+ ],
+ "new-york": [
+  {
+   "q": "New York City Hall",
+   "lng": -74.00594,
+   "lat": 40.71274,
+   "found": "New York City Hall, 260, Broadway, Tribeca, Lower Manhattan, Manhattan, New York County, N"
+  }
+ ],
+ "atlanta": [
+  {
+   "q": "Atlanta City Hall",
+   "lng": -84.39078,
+   "lat": 33.74862,
+   "found": "Atlanta City Hall, 55, Trinity Avenue Southwest, South Downtown, Atlanta, Fulton County, G"
+  }
+ ],
+ "bay-area": [
+  {
+   "q": "San Francisco City Hall",
+   "lng": -122.41926,
+   "lat": 37.77929,
+   "found": "San Francisco City Hall, 1, Dr. Carlton B. Goodlett Place, Civic Center, San Francisco, Ca"
+  },
+  {
+   "q": "Oakland City Hall",
+   "lng": -122.27258,
+   "lat": 37.80532,
+   "found": "Oakland City Hall, 1, Frank H. Ogawa Plaza, Downtown, Downtown Oakland, Oakland, Alameda C"
+  },
+  {
+   "q": "San Jose City Hall",
+   "lng": -121.88532,
+   "lat": 37.33803,
+   "found": "San Jos\u00e9 City Hall, 200, East Santa Clara Street, Horace Mann, San Jose, Santa Clara Count"
+  }
+ ],
+ "dallas-fort-worth": [
+  {
+   "q": "Dallas City Hall",
+   "lng": -96.79694,
+   "lat": 32.77627,
+   "found": "Dallas City Hall, 1500, Marilla Street, Downtown PID, Dallas, Dallas County, Texas, 75242,"
+  },
+  {
+   "q": "Fort Worth City Hall",
+   "lng": -97.34348,
+   "lat": 32.75292,
+   "found": "Fort Worth City Hall, 100, Fort Worth Trail, Sundance Square, Fort Worth, Tarrant County, "
+  }
+ ],
+ "montreal": [
+  {
+   "q": "H\u00f4tel de Ville de Montr\u00e9al",
+   "lng": -73.55414,
+   "lat": 45.50884,
+   "found": "H\u00f4tel de Ville de Montr\u00e9al, 275, Rue Notre-Dame Est, Quartier Chinois, Ville-Marie, Montr\u00e9"
+  }
+ ],
+ "mexico-city": [
+  {
+   "q": "Palacio del Ayuntamiento, Ciudad de M\u00e9xico",
+   "lng": -99.13428,
+   "lat": 19.43164,
+   "found": "Antiguo Palacio del Ayuntamiento, 2, Plaza de la Constituci\u00f3n, Centro, Ciudad de M\u00e9xico, C"
+  }
+ ],
+ "milwaukee": [
+  {
+   "q": "Milwaukee City Hall",
+   "lng": -87.90975,
+   "lat": 43.04171,
+   "found": "Milwaukee City Hall, 200, East Wells Street, Historic Financial District, Juneautown, Down"
+  }
+ ],
+ "philadelphia": [
+  {
+   "q": "Philadelphia City Hall",
+   "lng": -75.16299,
+   "lat": 39.9524,
+   "found": "Philadelphia City Hall, 1, South Penn Square, Gayborhood, Center City, Philadelphia, Phila"
+  }
+ ],
+ "phoenix": [
+  {
+   "q": "Phoenix City Hall",
+   "lng": -112.07711,
+   "lat": 33.44879,
+   "found": "Phoenix City Hall, 200, West Washington Street, Warehouse District, Downtown, Central City"
+  }
+ ],
+ "sacramento": [
+  {
+   "q": "Sacramento City Hall",
+   "lng": -121.49332,
+   "lat": 38.5823,
+   "found": "Sacramento City Hall, 915, I Street, Downtown, Sacramento, Sacramento County, California, "
+  }
+ ],
+ "san-diego": [
+  {
+   "q": "San Diego City Hall",
+   "lng": -117.16284,
+   "lat": 32.717,
+   "found": "City Administration Building, 202, C Street, Lower Sweetwater, Chula Vista, San Diego Coun"
+  }
+ ],
+ "seattle": [
+  {
+   "q": "Seattle City Hall",
+   "lng": -122.3301,
+   "lat": 47.60389,
+   "found": "Seattle City Hall, 600, 4th Avenue, First Hill, Seattle, King County, Washington, 98104, U"
+  }
+ ],
+ "tampa": [
+  {
+   "q": "Tampa City Hall",
+   "lng": -82.45724,
+   "lat": 27.94766,
+   "found": "Tampa City Hall, 306, East Jackson Street, Riverside, Harbour Island, Tampa, Hillsborough "
+  },
+  {
+   "q": "St. Petersburg City Hall, Florida",
+   "lng": -82.63986,
+   "lat": 27.77307,
+   "found": "Saint Petersburg City Hall, 2nd Avenue North, Downtown, Saint Petersburg, Pinellas County,"
+  }
+ ],
+ "miami": [
+  {
+   "q": "Stephen P. Clark Government Center (111 NW 1st St)",
+   "lng": -80.196,
+   "lat": 25.7752
+  },
+  {
+   "q": "Fort Lauderdale City Hall",
+   "lng": -80.14328,
+   "lat": 26.12368,
+   "found": "Fort Lauderdale City Hall, 100, North Andrews Avenue, Fort Lauderdale, Broward County, Flo"
+  }
+ ],
+ "nashville": [
+  {
+   "q": "Metro Nashville Courthouse",
+   "lng": -86.77833,
+   "lat": 36.16742,
+   "found": "Metro Nashville Courthouse, James Robertson Parkway, Downtown Nashville, East Nashville, N"
+  }
+ ],
+ "austin": [
+  {
+   "q": "Austin City Hall",
+   "lng": -97.74721,
+   "lat": 30.26481,
+   "found": "Austin City Hall, 301, West 2nd Street, Warehouse District, Austin, Travis County, Texas, "
+  }
+ ],
+ "vancouver": [
+  {
+   "q": "Vancouver City Hall",
+   "lng": -123.11396,
+   "lat": 49.26089,
+   "found": "Vancouver City Hall, 453, West 12th Avenue, Mount Pleasant, Vancouver, Metro Vancouver Reg"
+  }
+ ],
+ "las-vegas": [
+  {
+   "q": "Las Vegas City Hall",
+   "lng": -115.13902,
+   "lat": 36.17245,
+   "found": "Zappos Headquarters, 400, Stewart Avenue, Downtown Las Vegas, Las Vegas, Clark County, Nev"
+  }
+ ],
+ "kansas-city": [
+  {
+   "q": "Kansas City City Hall, Missouri",
+   "lng": -94.57792,
+   "lat": 39.1006,
+   "found": "Kansas City City Hall, 414, East 12th Street, Central Business District KC, Downtown Kansa"
+  }
+ ],
+ "houston": [
+  {
+   "q": "Houston City Hall",
+   "lng": -95.36937,
+   "lat": 29.76018,
+   "found": "Houston City Hall, 901, Bagby Street, Downtown, Houston, Harris County, Texas, 77002, Unit"
+  }
+ ],
+ "indianapolis": [
+  {
+   "q": "Indianapolis City-County Building",
+   "lng": -86.15354,
+   "lat": 39.76797,
+   "found": "City-County Building, 200, East Washington Street, Indianapolis, Center Township, Marion, "
+  }
+ ],
+ "toronto": [
+  {
+   "q": "Toronto City Hall",
+   "lng": -79.38401,
+   "lat": 43.6536,
+   "found": "Toronto City Hall, 100, Queen Street West, Yonge-Bay Corridor, Spadina\u2014Fort York, Toronto,"
+  }
+ ],
+ "minneapolis": [
+  {
+   "q": "Minneapolis City Hall",
+   "lng": -93.26507,
+   "lat": 44.97731,
+   "found": "Minneapolis City Hall, 350, South 5th Street, Downtown West, Gateway District, Central, Mi"
+  },
+  {
+   "q": "Saint Paul City Hall",
+   "lng": -93.09395,
+   "lat": 44.94428,
+   "found": "Saint Paul City Hall, 15, Kellogg Boulevard West, Downtown, Saint Paul, Ramsey County, Min"
+  }
+ ],
+ "detroit": [
+  {
+   "q": "Coleman A. Young Municipal Center (2 Woodward Ave)",
+   "lng": -83.0442,
+   "lat": 42.3297
+  }
+ ],
+ "new-orleans": [
+  {
+   "q": "New Orleans City Hall",
+   "lng": -90.07729,
+   "lat": 29.95213,
+   "found": "New Orleans City Hall, 1300, Perdido Street, Central Business District, Storyville, New Or"
+  }
+ ],
+ "denver": [
+  {
+   "q": "Denver City and County Building",
+   "lng": -104.99073,
+   "lat": 39.7392,
+   "found": "City and County Building Plaza, Civic Center, Denver, Colorado, 80274, United States"
+  }
+ ],
+ "raleigh-durham": [
+  {
+   "q": "Raleigh Municipal Building",
+   "lng": -78.64299,
+   "lat": 35.77873,
+   "found": "Raleigh Municipal Building, 222, West Hargett Street, Warehouse District, Raleigh, Wake Co"
+  },
+  {
+   "q": "Durham City Hall",
+   "lng": -78.89881,
+   "lat": 35.99621,
+   "found": "Durham City Hall, 101, City Hall Plaza, American Tobacco Historic District, Durham, Durham"
+  }
+ ],
+ "pittsburgh": [
+  {
+   "q": "Pittsburgh City-County Building",
+   "lng": -79.99685,
+   "lat": 40.43811,
+   "found": "Pittsburgh City-County Building, 414, Grant Street, Chinatown, Downtown, Pittsburgh, Alleg"
+  }
+ ],
+ "portland": [
+  {
+   "q": "Portland City Hall, Oregon",
+   "lng": -122.67911,
+   "lat": 45.51501,
+   "found": "Portland City Hall, 1220, Southwest 5th Avenue, University District, Downtown, Portland, M"
+  }
+ ],
+ "san-antonio": [
+  {
+   "q": "San Antonio City Hall",
+   "lng": -98.49513,
+   "lat": 29.42458,
+   "found": "San Antonio City Hall, 100, Military Plaza, Downtown, San Antonio, Bexar County, Texas, 78"
+  }
+ ],
+ "washington-dc": [
+  {
+   "q": "John A. Wilson Building",
+   "lng": -77.03134,
+   "lat": 38.89497,
+   "found": "John A. Wilson Building, 1350, Pennsylvania Avenue Northwest, Ward 2, Washington, District"
+  }
+ ],
+ "edmonton": [
+  {
+   "q": "Edmonton City Hall",
+   "lng": -113.49016,
+   "lat": 53.54547,
+   "found": "Edmonton City Hall, 1, 103A Avenue NW, Downtown, Central Core, Edmonton, Alberta, T5J 2R7,"
+  }
+ ],
+ "ottawa-gatineau": [
+  {
+   "q": "Ottawa City Hall",
+   "lng": -75.69027,
+   "lat": 45.4208,
+   "found": "Ottawa City Hall / H\u00f4tel de ville d'Ottawa, 110, Laurier Avenue West, Golden Triangle, Cen"
+  },
+  {
+   "q": "Maison du citoyen, Gatineau",
+   "lng": -75.71196,
+   "lat": 45.42797,
+   "found": "Place de la Maison-du-Citoyen, 94, Hull, Gatineau, Outaouais, Qu\u00e9bec, Canada"
+  }
+ ],
+ "st-louis": [
+  {
+   "q": "St. Louis City Hall",
+   "lng": -90.1994,
+   "lat": 38.62683,
+   "found": "St. Louis City Hall, 1200, Market Street, Downtown West, Saint Louis, Missouri, 63103, Uni"
+  }
+ ],
+ "salt-lake-city": [
+  {
+   "q": "Salt Lake City and County Building",
+   "lng": -111.8868,
+   "lat": 40.75953,
+   "found": "Salt Lake City and County Building, 451, State Street, Central City, Salt Lake City, Salt "
+  }
+ ]
+}
