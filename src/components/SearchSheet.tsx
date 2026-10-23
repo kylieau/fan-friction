@@ -37,7 +37,8 @@ import { longLocalDate } from '../lib/dates';
 import { parseTypedDate } from '../lib/searchDate';
 import { favPath } from '../screens/FavoritesScreen';
 import { FavoriteBadge, favoriteName } from './FavoriteBadge';
-import { favoriteOfficialName } from '../data';
+import { favoriteOfficialName, searchEvents, type CrowdEvent } from '../data';
+import { LogRow } from './LogRow';
 
 /**
  * The one search, the same from every tab (build notes 2, global search): a team,
@@ -101,6 +102,24 @@ export function SearchSheet({
   }, [homeId, trimmed, friends]);
   const shownHits = (hits ?? []).filter((hit) => showAll || !hit.hidden);
   const hiddenHits = (hits ?? []).filter((hit) => hit.hidden).length;
+
+  // Event rows (build 7, §6, Locked: the Log sheet's shared row, one "+" each): the events the words name, nearest
+  // dates first; the crowd size range applies as it does to the date hits.
+  const [events, setEvents] = useState<CrowdEvent[]>([]);
+  useEffect(() => {
+    if (trimmed.length < 2) {
+      setEvents([]);
+      return;
+    }
+    let current = true;
+    const log = getPersonalLog();
+    const range = rangeOn(crowdRangeOf(log), 'lists');
+    const keep = alwaysShownIds(log, friends);
+    searchEvents(homeId, trimmed, 8).then((list) => current && setEvents(list.filter((event) => passesCrowdRange(event, range, keep))));
+    return () => {
+      current = false;
+    };
+  }, [homeId, trimmed, friends]);
 
   useEffect(() => {
     if (!signedIn || trimmed.length < PEOPLE_SEARCH_MIN) {
@@ -245,9 +264,21 @@ export function SearchSheet({
             </span>
           </button>
         )}
-        {trimmed.length >= 2 && hits && hits.length > 0 && (
+        {trimmed.length >= 2 && events.length > 0 && (
           <section className="search-group" aria-label="Events">
             <h3 className="search-group-title">Events</h3>
+            <ul className="log-list card log-event-list">
+              {events.map((event) => (
+                <li key={event.id}>
+                  <LogRow event={event} onOpen={onClose} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        {trimmed.length >= 2 && hits && hits.length > 0 && (
+          <section className="search-group" aria-label="Dates">
+            <h3 className="search-group-title">Dates</h3>
             <ul className="famous-list search-results">
               {shownHits.slice(0, 12).map((hit) => (
                 <li key={`${hit.metroId}-${hit.date}`}>

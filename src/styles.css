@@ -10071,3 +10071,127 @@ a.follow-lead::after {
 .switch:checked::before {
   transform: translateX(20px);
 }
+
+/* The Log an event sheet and its shared event row (build 7, §3.2; mocks 04–07). */
+.log-sheet {
+  max-height: calc(100dvh - 60px);
+  background: var(--bg);
+  gap: 8px;
+}
+
+.log-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.log-sheet-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.log-sheet-context {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.log-sheet-band {
+  margin: 4px -16px 0;
+  padding: 8px 16px;
+  background: var(--chrome);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.log-sheet-add {
+  align-self: center;
+  min-height: 44px;
+  font-weight: 800;
+}
+
+.log-event-list {
+  padding: 0;
+  overflow: hidden;
+}
+
+.log-event-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+
+.log-event-list li:last-child .log-event-row {
+  border-bottom: 0;
+}
+
+.log-event-row.is-logged {
+  background: rgba(0, 90, 156, 0.06);
+}
+
+.log-event-words {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.log-event-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.log-event-meta {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.log-event-meta strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.log-event-add {
+  position: relative;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: none;
+  color: var(--action);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-event-add::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+}
+
+.log-event-mark {
+  flex-shrink: 0;
+  width: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--action);
+}

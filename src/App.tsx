@@ -18,7 +18,8 @@ import { ActivityScreen } from './screens/ActivityScreen';
 import { UpcomingScreen } from './screens/UpcomingScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
-import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, subscribeLogLoaded } from './data';
+import { DEFAULT_METRO, METROS } from './config/metros';
+import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, subscribeLogLoaded, todayIn } from './data';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { getAccount, getMyProfile, linkConfirmedSuggestions, setStubDefault, subscribeAccount } from './data';
 import { levelFor } from './screens/SettingsPrivacyScreen';
@@ -61,12 +62,13 @@ function StubsRedirect() {
 }
 
 function Shell() {
-  const { pathname } = useLocation();
-  // The Log an event sheet (build 7): opened by the tab bar's "+", closed by a tap outside, Escape, or going anywhere.
+  const { pathname, key: locationKey } = useLocation();
+  // The Log an event sheet (build 7): opened by the tab bar's "+", closed by a tap outside, Escape, or going anywhere
+  // (every navigation, even to the page already shown: Codex, stage 2).
   const [logging, setLogging] = useState(false);
   useEffect(() => {
     setLogging(false);
-  }, [pathname]);
+  }, [locationKey]);
   // The first-open picker: on while no home is set, and kept open after home is picked until Done.
   const [firstOpen, setFirstOpen] = useState(() => !getHomeId());
 
@@ -88,6 +90,12 @@ function Shell() {
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   // Then stubs made from an event take its current name, once per log (Kylie, Oct 14).
+  // Warm today's listings for the home city, so the Log sheet's "Happening now" is there on a stadium network (build 7, §3.2).
+  useEffect(() => {
+    const home = getHomeId();
+    if (home) void getCityDate(home, todayIn(METROS[home] ?? DEFAULT_METRO)).catch(() => undefined);
+  }, []);
+
   useEffect(() => {
     void settlePassedPlans(getCityDate, getHomeId())
       .then(() => backfillLegacyCrowds(getCityDate))

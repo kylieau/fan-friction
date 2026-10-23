@@ -267,6 +267,24 @@ export async function getCalendarMonth(metroId: string, month: string): Promise<
  * Nights whose team, artist, or venue matches the query, newest first.
  * Fewer than two letters matches nothing, so an empty box can show Famous nights.
  */
+/**
+ * The events a query names, for the Log an event sheet and search's event rows (build 7, §3.2): every covered city,
+ * home first, further-out rooms included (anything can be logged by hand), past and future, nearest to today first.
+ */
+export async function searchEvents(homeId: string | null, query: string, limit = 12): Promise<CrowdEvent[]> {
+  const q = query.trim();
+  if (q.length < 2) return [];
+  const ids = [...COVERED_METRO_IDS].sort((a, b) => (a === homeId ? -1 : b === homeId ? 1 : 0));
+  const lists = await Promise.all(ids.map((id) => catalog(id, true)));
+  const today = new Date().toLocaleDateString('en-CA');
+  const dist = (event: CrowdEvent) => Math.abs(new Date(event.date).getTime() - new Date(today).getTime());
+  return lists
+    .flat()
+    .filter((event) => matchingNames(event, q))
+    .sort((a, b) => dist(a) - dist(b) || (a.start ?? '').localeCompare(b.start ?? ''))
+    .slice(0, limit);
+}
+
 export async function searchDates(metroId: string, query: string, visible?: (event: CrowdEvent) => boolean, opts: { withFurtherOut?: boolean } = {}): Promise<DateSearchHit[]> {
   const q = query.trim();
   if (q.length < 2) return [];

@@ -4,6 +4,7 @@ import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
 import { CrowdMark, FrictionVerdict, OccasionTag, pageFriction } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
+import { recordOpened } from '../lib/openedEvents';
 import { TypeIcon } from '../components/TypeIcon';
 import { LevelPill } from '../components/LevelPill';
 import { AddToCalendar } from '../components/AddToCalendar';
@@ -327,6 +328,7 @@ export function EventScreen() {
         {logged && <EntryLayer entry={logged} showLevel={false} />}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
+      <RecordOpened event={e} />
 
       {/* This day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page.
           Not on a further-out event (Kylie, Oct 19–20, 2026): it is outside the city's day, so the card would count it
@@ -760,6 +762,14 @@ function MapBack({
  * job began): the event page's header and its "+ Stub it", nothing that needs data the app doesn't have
  * (no read, no crowd, no day card).
  */
+/** Notes the open on this device for the Log sheet's Recent (build 7); a child, so the page's hooks stay in order. */
+function RecordOpened({ event }: { event: CrowdEvent }) {
+  useEffect(() => {
+    recordOpened(event);
+  }, [event.id]);
+  return null;
+}
+
 function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
   const navigate = useNavigate();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);

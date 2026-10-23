@@ -10,9 +10,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 3. Cost row, blue rows, 44 pt seat line, Edit stub | done | `e1f56f3d`, `7a3a3b19` | Codex review 1 after this |
 | 4. Routes and tab bar | done | `2c007029` | Codex review 2 after this |
 | 5. Upcoming | done | `fe90842f` | own screen, plans band, filter sheet, no earlier cue anywhere |
-| 6. Activity | done | (step 6 commit) | Codex review 3 after this |
-| 7. Log an event sheet | next | | |
-| 8. Your stubs page | | | |
+| 6. Activity | done | `f4687f8a` | Codex review 3 after this |
+| 7. Log an event sheet | done | (step 7 commit) | |
+| 8. Your stubs page | next | | |
 | 9. You rebuild | | | |
 | 10. Ranks, Recap | | | |
 | 11. Your year, Spend details | | | |
@@ -72,6 +72,16 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - Managing people (requests, find, following / followers) is no longer in a sheet here; the "Find people" empty state still deep-links to the People section, which step 12 turns into a page section.
 - Screenshots: `.playwright-mcp/b7-activity.png`, `b7-activity-filter.png`, `b7-activity-hidemine.png`.
 
+### Step 7. The Log an event sheet proper
+- `LogSheet.tsx` rebuilt (mock 04): compact search on top; "Today · <date> · <city>" context line; **Happening now · Today** (today's events in the home city from the catalog cache, ranked your plan first, then your Faves' events, then the rest, start order); **Recent** (events you opened on this device in the last week, "Yesterday · You opened it" / "You logged it"); "Not here? Add it yourself" opens the existing New stub content inside the sheet. Nothing today: the band is skipped, as the notes say.
+- `LogRow.tsx`, the one shared row (mock 06, Locked): type icon + lead (the Fave it belongs to, else the city), title, meta with your status word first, and one outlined "+" that opens `StubSheet` on top, or a filled ticket / TV / bookmark mark once logged or planned (no add action). Words open the event page and close the sheet.
+- Search in the sheet (mock 05): `searchEvents` (new, `src/data/index.ts`; every covered city, further-out rooms included, nearest dates first) as `LogRow`s, then teams / artists / venues from `searchFavoriteRecords` with › to their page and the official name.
+- The "opened" store: `src/lib/openedEvents.ts` (`prefs` key `opened-events`, capped at 20, per device); the event page records each open.
+- Global search (`SearchSheet`, Locked §6): an **Events** group of `LogRow`s now sits above the old date hits (renamed **Dates**), the crowd-size range still applied.
+- Shell warms today's home-city listings at open (Lean) and closes the sheet on any navigation (`location.key`, from Codex stage 2).
+- Escape: the Log sheet ignores it while a sheet sits above it (Stub it, the Add card), so only the top sheet closes (checked).
+- Screenshots: `.playwright-mcp/b7-log-sheet.png`, `b7-log-stub.png`, `b7-log-marked.png`, `b7-log-search.png`, `b7-global-search.png`.
+
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
 
@@ -79,6 +89,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 (none yet)
 
 ## Judgment calls
+- **Global search event rows (step 7).** The lock says search's event rows get the shared row, but live search had no event rows: its Events group was one row per *date* opening the map. The safest reading that fits: add an Events group of real event rows (the shared `LogRow`) above the date hits, and keep the date hits as a "Dates" group, so nothing that worked is lost. Kylie can ask for the Dates group to go.
+- **"Change city" on the Log sheet (Lean) is deferred to backlog.** The notes' `openedMetroId()` returns home, not the city Explore is looking at, so there was nothing to reuse; the sheet uses home (the notes' fallback). A picker would be new UI.
+- **Seat and Cost on any Attending plan, not only same-day.** The notes name same-day logging as the use case, not as a gate; knowing your seat at purchase is a fair reason. Easy to narrow later.
 - **Opponents as their own field, not a second `tags` entry.** `entry.tags` also seeds a new person's first favorites (`favoritesFromLog`, `favorites.ts:93`) and drives the "Team or sport" filter; putting the away team there would make opponents into Faves. `opponents` keeps `tags` and `sides` meaning what they did and lets stats read `entryTeams`. "Seen N" (`entryMatches`) will read opponents too in step 9, since the notes say it is the same all-teams count.
 - **Currency (Lean):** the device region's currency, USD when unknown (`deviceCurrency`), stored on the cost so a later locale change cannot alter past amounts. Multi-currency is backlog, as the notes say.
 - **A 0 on one line is allowed** ("parking was free" beside a paid ticket); a cost with no lines and no Free is "not entered".
