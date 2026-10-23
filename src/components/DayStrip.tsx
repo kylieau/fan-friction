@@ -10,8 +10,8 @@ import { ReadTile, type EmptyKind } from './ReadTile';
 /** The row runs at least two weeks back and a month ahead of today; seven cells fit the width, with half a cell peeking at each end. */
 const BACK = 14;
 const AHEAD = 30;
-/** The viewed day sits in the third slot (Kylie, Oct 5). */
-const SLOT = 2;
+/** The viewed day sits in the second slot (Kylie, Oct 22, 2026; it was the third from Oct 5). */
+const SLOT = 1;
 const GAP = 4;
 /** Reads are loaded around the day in view, this many cells each way, as the row scrolls. */
 const LOAD_BEFORE = 10;
@@ -23,7 +23,7 @@ type Read = { rating: number | null; empty?: EmptyKind };
  * The day strip above the map, as a carousel (Kylie, Oct 6): one row of days
  * that scrolls sideways and snaps a cell at a time. Swipe to browse, tap to
  * pick. The viewed day keeps its blue border wherever it scrolls, and glides
- * into the third slot when it changes. Today's number sits in a filled circle,
+ * into the second slot when it changes. Today's number sits in a filled circle,
  * the mark every calendar app uses, so nobody has to know the date. Reads on
  * days ahead sit back a little, since they are forecasts.
  *
@@ -87,7 +87,7 @@ export function DayStrip({ metro, today, date, from, onSearch }: { metro: Metro;
     const cell = strip.children[index] as HTMLElement | undefined;
     const w = cellWidth();
     if (index < 0 || !cell || !w) return;
-    // The viewed cell's own position, less the two cells before it and the half cell that peeks at the edge: the snap
+    // The viewed cell's own position, less the cell before it and the half cell that peeks at the edge: the snap
     // line sits half a cell in from the left edge (CSS scroll-padding), so a cell peeks at both ends.
     strip.scrollTo({ left: Math.max(0, cell.offsetLeft - SLOT * (w + GAP) - w / 2), behavior });
   };
