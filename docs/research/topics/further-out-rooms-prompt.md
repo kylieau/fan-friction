@@ -244,6 +244,8 @@ Stop at a clean break and say where you stopped.
 
 ### Continuation 4 (Oct 22, 2026): from Montreal
 
+**The line is drive time since Oct 23, 2026 (Kylie):** a room is inside a city when it is within a normal, non-event 60-minute drive of the city hall (each city hall, for the Bay Area, Dallas–Fort Worth, Minneapolis–St. Paul, Raleigh–Durham and Ottawa–Gatineau); Further out is beyond that and up to about 3 hours. Rooms the old region names left out but the hour puts inside (Montreal's Saint-Jean-sur-Richelieu and Saint-Hyacinthe, about 40 and 50 minutes) go in a separate section, "Inside under the drive rule, not on file," with the drive and its source, never in the Further out table.
+
 Status: delivery 4 (Bay Area, Seattle, Toronto, Mexico City) is saved as `further-out-rooms-answer-4.md`. Next: Montreal, Vancouver, Detroit, Minneapolis–St. Paul.
 
 ```

@@ -2,6 +2,8 @@
 
 Research answer to the Fan/Friction brief dated October 22, 2026. Research checked October 22, 2026, Pacific time.
 
+Status: closed, built as the drive-time rule (`docs/product/product-decisions.md`, "Where a city ends"; `scripts/further-out-drive.mjs`; downtowns in `src/config/metros.ts`), Oct 23, 2026. Open: one room counting for two cities.
+
 ## 1. The recommended rule
 
 **Count a venue inside a city's boundary when it is within a normal, non-event drive of 60 minutes of its fixed downtown reference point; for an explicitly combined city, use the union of the catchments around its constituent downtowns.** Let neighboring cities' boundaries overlap: a venue can compete for both cities' audiences, even when it belongs to a different municipality, county or statistical metro. Put venues outside that boundary but within approximately two hours in **Further out**, with a stated reference-only tolerance of 15 minutes; anything farther away is **neither**.
