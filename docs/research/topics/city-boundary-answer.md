@@ -2,7 +2,7 @@
 
 Research answer to the Fan/Friction brief dated October 22, 2026. Research checked October 22, 2026, Pacific time.
 
-Status: closed, built as the drive-time rule (`docs/product/product-decisions.md`, "Where a city ends"; `scripts/further-out-drive.mjs`; downtowns in `src/config/metros.ts`), Oct 23, 2026. Open: one room counting for two cities.
+Status: closed, built as the drive-time rule (`docs/product/product-decisions.md`, "Where a city ends"; `scripts/further-out-drive.mjs`; downtowns in `src/config/metros.ts`), Oct 23, 2026. One room counting for two cities: built the same day (six rooms, Austin–San Antonio).
 
 ## 1. The recommended rule
 

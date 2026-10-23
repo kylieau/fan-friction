@@ -40,5 +40,11 @@ export function belongsToCity(event: CrowdEvent, metroId: string): boolean {
   if (VENUES[event.place.venueId]?.furtherOut) return false;
   const metro = VENUES[event.place.venueId]?.metroId;
   if (!metro || !METROS[metro]) return true;
-  return metro === metroId;
+  // A room within an hour of two downtowns counts in both (Kylie, Oct 23, 2026; Texas State's San Marcos rooms).
+  return metro === metroId || Boolean(VENUES[event.place.venueId]?.alsoIn?.includes(metroId));
+}
+
+/** Rooms in other cities that also count in this one (`alsoIn`). */
+export function roomsAlsoIn(metroId: string): string[] {
+  return Object.values(VENUES).filter((v) => v.alsoIn?.includes(metroId)).map((v) => v.id);
 }

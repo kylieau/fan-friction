@@ -7,6 +7,7 @@
 //   node scripts/further-out-drive.mjs --write   write it: set or refresh `furtherOut` in src/data/venues.ts, clear it
 //                                                from rooms the rule puts inside
 //   node scripts/further-out-drive.mjs <metro>   one city
+// It also writes `alsoIn`: the other covered cities a room is within about an hour of (it counts in their days too).
 // Routing: the public OSRM demo server (OpenStreetMap data, no traffic; light non-commercial use, about one request a
 // second, no key), one table request per downtown and 90 rooms. A Further out row's town comes from OpenStreetMap's
 // reverse lookup (Nominatim, one request a second) the first time; after that the stored town is kept.
@@ -101,6 +102,36 @@ for (const metro of Object.values(METROS)) {
     src = src.slice(0, blockStart) + (stored ? block.replace(line, next) : block + next) + src.slice(blockEnd);
   }
 }
+// A room within an hour of another covered city's downtown also counts there (`alsoIn`; Kylie, Oct 23, 2026: "fine with
+// one room counting for two nearby cities assuming the research backs it up"). Only rooms within 110 km in a straight
+// line are routed; a Further out room at home never counts elsewhere by this pass alone.
+const km = ([a, b], [c, d]) => { const r = Math.PI / 180, x = Math.sin(((d - b) * r) / 2) ** 2 + Math.cos(b * r) * Math.cos(d * r) * Math.sin(((c - a) * r) / 2) ** 2; return 12742 * Math.asin(Math.sqrt(x)); };
+const wanted = new Map(Object.values(VENUES).map((v) => [v.id, new Set()]));
+for (const host of Object.values(METROS)) {
+  if (only && host.id !== only) continue;
+  const near = Object.values(VENUES).filter((v) => v.metroId !== host.id && METROS[v.metroId] && host.downtowns.some((p) => km(p, v.location) < 110));
+  if (!near.length) continue;
+  const best = new Array(near.length).fill(null);
+  for (const point of host.downtowns) (await table(point, near)).forEach((m, i) => { if (m != null && (best[i] == null || m < best[i])) best[i] = m; });
+  near.forEach((v, i) => { if (best[i] != null && best[i] <= INSIDE_MINUTES) wanted.get(v.id).add(host.id); });
+}
+for (const venue of Object.values(VENUES)) {
+  const had = venue.alsoIn ?? [];
+  const keep = only ? had.filter((m) => m !== only) : [];
+  const next = [...new Set([...keep, ...wanted.get(venue.id)])].sort();
+  if (next.join() === [...had].sort().join()) continue;
+  changes.push(`${venue.metroId} ${venueNameOn(venue, today)} (${venue.id}): also counts in ${next.length ? next.join(', ') : 'no other city'} (was ${had.length ? had.join(', ') : 'none'})`);
+  if (!write) continue;
+  const opened = [`\n  '${venue.id}': {\n`, `\n  ${venue.id}: {\n`].map((k) => src.indexOf(k)).filter((x) => x >= 0);
+  if (!opened.length) { console.log(`could not find ${venue.id} in venues.ts`); continue; }
+  const blockStart = opened[0];
+  const blockEnd = src.indexOf('\n  },\n', blockStart);
+  const line = /\n    alsoIn: \[[^\]]*\],/;
+  let block = src.slice(blockStart, blockEnd).replace(line, '');
+  if (next.length) block += `\n    alsoIn: [${next.map((m) => `'${m}'`).join(', ')}],`;
+  src = src.slice(0, blockStart) + block + src.slice(blockEnd);
+}
+
 if (write) await writeFile(file, src);
 console.log(changes.join('\n'));
 console.log(`${changes.length} rooms ${write ? 'written' : 'differ (run with --write to apply)'}.`);

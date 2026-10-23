@@ -73,6 +73,12 @@ export interface Venue {
    * drive is computed once per room by scripts/further-out-drive.mjs, always an estimate.
    */
   furtherOut?: { driveMinutes: number; how: 'routed' | 'straight-line'; /** The town on the row ("Ontario"). */ town: string };
+  /**
+   * Other covered cities this room also counts in: it is within about an hour of their downtown too (Kylie, Oct 23,
+   * 2026: "fine with one room counting for two nearby cities assuming the research backs it up"). Its events join those
+   * cities' days and verdicts as well as its own. Written by scripts/further-out-drive.mjs, never by hand.
+   */
+  alsoIn?: string[];
 }
 
 // ---------- Teams ----------

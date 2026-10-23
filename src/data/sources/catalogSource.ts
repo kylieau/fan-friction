@@ -11,6 +11,7 @@ import { supabase } from '../storage/supabaseClient';
 import { espnEvents } from './espnSource';
 import { hockeytechEvents } from './hockeytechSource';
 import { mlbEvents } from './mlbSource';
+import { roomsAlsoIn } from './venueMetro';
 import type { EventSource } from './types';
 
 const FEEDS: EventSource[] = [mlbEvents, espnEvents, hockeytechEvents];
@@ -26,11 +27,14 @@ function catalogFor(metroId: string): Promise<CrowdEvent[] | null> {
     // Rows filed under this city's pass, plus games another city's feed filed here because the room is here
     // (the Lakers' home game in Las Vegas is the Las Vegas day; the row stays under the team's pass so the nightly
     // cleanup of one city never deletes another's).
+    // Plus the rows at another city's rooms that also count here (`alsoIn`, Oct 23, 2026).
+    const shared = roomsAlsoIn(metroId);
+    const filter = [`metro_id.eq.${metroId}`, `data->>metroId.eq.${metroId}`, ...(shared.length ? [`data->place->>venueId.in.(${shared.join(',')})`] : [])].join(',');
     const { data, error } = await allRows<{ data: unknown }>((a, b) =>
       client
         .from('events')
         .select('data')
-        .or(`metro_id.eq.${metroId},data->>metroId.eq.${metroId}`)
+        .or(filter)
         .neq('source_id', 'seed')
         .order('id')
         .range(a, b),

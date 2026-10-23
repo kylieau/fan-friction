@@ -7261,6 +7261,7 @@ export const VENUES: Record<string, Venue> = {
       note: 'Official. Jim Wacker Field. Was Bobcat Stadium until the UFCU naming deal announced May 21, 2024. South-edge room (San Marcos). Source: https://txst.com/UFCUStadium',
     }],
     roof: 'open',
+    alsoIn: ['san-antonio'],
   },
   'q2-stadium': {
     id: 'q2-stadium',
@@ -7354,6 +7355,7 @@ export const VENUES: Record<string, Venue> = {
       note: 'Reported. Expansion added 1,800 seats, rededicated Oct 6, 2018. South-edge room (San Marcos). Source: https://en.wikipedia.org/wiki/Strahan_Arena',
     }],
     roof: 'indoor',
+    alsoIn: ['san-antonio'],
   },
   'heb-center-cedar-park': {
     id: 'heb-center-cedar-park',
@@ -7506,6 +7508,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-97.9517681, 29.8892039],
     capacity: [{ seats: 1000, setup: 'soccer', note: 'Reported (Visit San Marcos). Right at the 1,000 pre-list line. South-edge room. Source: https://www.visitsanmarcos.com/things-to-do/recreation-and-sports/texas-state-university/' }],
     roof: 'open',
+    alsoIn: ['san-antonio'],
   },
   'bobcat-softball-stadium': {
     id: 'bobcat-softball-stadium',
@@ -7514,6 +7517,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-97.9293321, 29.8881256],
     capacity: [{ seats: 1000, note: 'Reported (Visit San Marcos). Right at the 1,000 pre-list line. South-edge room. Source: https://www.visitsanmarcos.com/things-to-do/recreation-and-sports/texas-state-university/' }],
     roof: 'open',
+    alsoIn: ['san-antonio'],
   },
 
   // Phoenix (docs/research/city-builds/phoenix/, Oct 12, 2026). Maricopa County plus Salt River Fields and Firebird.
@@ -12676,6 +12680,7 @@ export const VENUES: Record<string, Venue> = {
       },
     ],
     roof: 'open',
+    alsoIn: ['austin'],
   },
   'rj-music-pavilion': {
     id: 'rj-music-pavilion',
@@ -14797,6 +14802,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-97.9298522, 29.8881983],
     capacity: [{ seats: 2500, setup: 'baseball', note: 'Official (baseball). Texas State, San Marcos. 2,000 seats plus about 500 standing; renamed April 7, 2026. South-edge room. Source: https://txst.com/facilities/irvine-rasmussen-ballpark/5' }],
     roof: 'open',
+    alsoIn: ['san-antonio'],
   },
   'washburne-stadium': {
     id: 'washburne-stadium',
