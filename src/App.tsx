@@ -15,6 +15,7 @@ import { FavoritePage } from './screens/FavoritePage';
 import { StubsScreen } from './screens/StubsScreen';
 import { TagScreen } from './screens/TagScreen';
 import { FollowingScreen } from './screens/FollowingScreen';
+import { UpcomingScreen } from './screens/UpcomingScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
 import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, subscribeLogLoaded } from './data';
@@ -109,7 +110,7 @@ function Shell() {
           <Route path="/home" element={<HomeScreen />} />
           <Route path="/explore" element={<ExploreScreen />} />
           {/* Build 7: Upcoming and Activity are tabs; Your stubs is a page under You. The old addresses redirect. */}
-          <Route path="/upcoming" element={<FollowingScreen segment="faves" />} />
+          <Route path="/upcoming" element={<UpcomingScreen />} />
           <Route path="/activity" element={<FollowingScreen segment="friends" />} />
           <Route path="/you/stubs" element={<StubsScreen />} />
           <Route path="/you/stubs/tag/:tag" element={<TagScreen />} />

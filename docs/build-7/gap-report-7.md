@@ -8,9 +8,9 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 | 1. Groundwork | done | `92b2a35f` | StatCards, FrictionLadder, favoriteOfficialName, Cost type + setters, cost/seats on Plan and carried at settle, opponents on game stubs |
 | 2. Naming | done | `75184b41` | official names in search results, the Faves picker rows, New stub's team list |
 | 3. Cost row, blue rows, 44 pt seat line, Edit stub | done | `e1f56f3d`, `7a3a3b19` | Codex review 1 after this |
-| 4. Routes and tab bar | done | (step 4 commit) | Codex review 2 after this |
-| 5. Upcoming | next | | |
-| 6. Activity | | | Codex review 3 after this |
+| 4. Routes and tab bar | done | `2c007029` | Codex review 2 after this |
+| 5. Upcoming | done | (step 5 commit) | own screen, plans band, filter sheet, no earlier cue anywhere |
+| 6. Activity | next | | Codex review 3 after this |
 | 7. Log an event sheet | | | |
 | 8. Your stubs page | | | |
 | 9. You rebuild | | | |
@@ -54,6 +54,15 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - Bottom padding: `.page` and `.timeline-scroll` get 32 px so the last row clears the raised part.
 - Checked in the browser: all seven old addresses land where listed above; Upcoming lights the Upcoming tab; `/you/stubs` lights You; no FAB on the page.
 
+### Step 5. Upcoming
+- `src/screens/UpcomingScreen.tsx`: its own screen. Header: title, then filter and search together (`.header-actions`). A **Your plans** band (Attending / Watching / Interested, status word leading each row, `FollowRow`, no log button) sits above the today line inside the timeline (`Timeline`'s new `aboveLine` slot, so the list opens on the band and the line together); below, the Faves rows by month as before, the past above by scrolling up. Helper line under the band shows once per device (a lean; it is a one-time explanation, not a permanent caption). No plans: the slim prompt card (mock 09, Locked); plans filtered away: "No plans match the filter."
+- **Filter sheet** (`FilterSheet`, shared frame with Reset / Done): Dates (From / To date inputs, All upcoming / Next 7 days / Next 30 days / This month), Show (Your plans, Faves, one always on; plan chips All / Attending / Watching / Interested), Faves (All Faves, then the checklist by kind, most-seen sorting comes with step 12's comparator), "Manage faves ›" (opens the picker page until step 12 turns it into the Edit favorites sheet). Picks live in sessionStorage like Following's did; the filter button turns solid with a count and a chip row with Clear appears only while filtering.
+- **Measured:** filter button 36 × 36 px, search button 36 × 36 px, both with the −7 px / +7 px `::after` extension (46 px tap). The 44 px `.following-filter` override is gone.
+- **"↑ N earlier" cue deleted** from `Timeline.tsx` (Locked; reverses 435d817). The list anchors on the band or the line; the "↓ Today" pill is unchanged. Its CSS is gone too.
+- **Your stubs** passes no plans and shows nothing under the line (plans are on Upcoming; reverses build 6's rule on purpose, as the notes say).
+- `FollowingScreen` now renders only the Friends side (Activity) until step 6 replaces it. The shared pieces it used (`Picked`, `Check`, `toggleIn`, `subOf`) now live in `FilterSheet.tsx`.
+- Screenshots: `.playwright-mcp/b7-upcoming.png`, `b7-upcoming-filter.png`, `b7-upcoming-filtered.png`.
+
 ## Advisor calls
 1. **Before any code (stage plan).** Asked: is §9's order and my slicing right; anything to settle first. Said: keep §9; open the gap report in commit 1; decide team attribution in groundwork (one home-team tag today, so steps 9–11 can't credit both teams without data); verify the card views don't pass `data` through wholesale before trusting the "cost is private" claim; carry seats and cost in both settle branches; grep the routes rather than trust the a92cf29 list; measure the 36 px filter button and 48 px "+"; the earlier cue is a delete, not a prop; probe Codex at stage 1; pick one currency rule and log it. Did: all of it. Privacy verified in `0026_stub_visibility.sql:116–157`: `entry_cards` and `plan_cards` select named keys (`when`, `venue`, `stamp`, `review`, flags), never `data` itself, so `cost`, `seats` and `opponents` stay owner-only. No SQL needed.
 
@@ -66,7 +75,7 @@ Written as the build goes (Kylie's instruction, Oct 22, 2026: a running progress
 - **A 0 on one line is allowed** ("parking was free" beside a paid ticket); a cost with no lines and no Free is "not entered".
 
 ## Skipped
-(none yet)
+- Plan band rows read "Attending" without the Fave's name after it (mock 08 shows "Attending · UCLA FB"). A plan does not point at a Fave; matching by title would be a guess. Lean: the status word alone.
 
 ## SQL for Kylie
 None. Build 7 needs no migration; the card views already keep `data` private.

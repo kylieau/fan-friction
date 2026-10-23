@@ -6043,23 +6043,6 @@ ul.fav-strip {
   white-space: nowrap;
 }
 
-/* "↑ N earlier" above the today line (Kylie, Oct 19, 2026, option B): a quiet grey line the list opens on, a 44 px tap. */
-.timeline-earlier-cue {
-  display: block;
-  width: 100%;
-  min-height: 44px;
-  margin: 0;
-  padding: 14px 0 0;
-  border: 0;
-  background: none;
-  font: inherit;
-  font-size: 12.5px;
-  font-weight: 700;
-  color: var(--muted);
-  text-align: center;
-  cursor: pointer;
-}
-
 /* The one-line note on an empty side of the line, and the empty-past card above it. */
 .timeline-note {
   padding: 4px 4px 0;
@@ -8207,6 +8190,7 @@ ul.fav-strip {
 }
 
 .round-button::after,
+.following-filter::after,
 .explore-mode-switch button::after,
 .day-nav-step::after,
 .day-nav-today::after,
@@ -9260,10 +9244,10 @@ span.fav-sched-read {
   min-width: 0;
 }
 
+/* Exactly the search button's size (Kylie, Oct 21, 2026: "no bigger than the search icon"); the 44 pt tap area is the
+   shared ::after extension, like every round button. */
 .following-filter {
   position: relative;
-  width: 44px;
-  height: 44px;
   color: var(--dodger);
 }
 
@@ -9929,4 +9913,109 @@ a.follow-lead::after {
   gap: 12px;
   max-height: 70dvh;
   overflow-y: auto;
+}
+
+/* Build 7: the header's filter and search sit together on the title row (Upcoming, Activity, Your stubs). */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* Upcoming's "Your plans" band (build 7, §3.3; mock 08): a dark title band, the plan rows, one helper line. */
+.timeline-above-line {
+  margin-bottom: 4px;
+}
+
+.plans-band-title {
+  margin: 0 -16px;
+  padding: 10px 16px;
+  background: var(--ink);
+  color: var(--card);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.plans-band-list {
+  margin: 0 -16px;
+  background: var(--card);
+}
+
+.plans-band-note {
+  padding: 8px 0 0;
+}
+
+.plans-band-empty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+/* The filter sheets (build 7; mocks 12 and 18). */
+.filter-sheet {
+  max-height: calc(100dvh - 80px);
+}
+
+.filter-sheet-title {
+  margin: 4px 0 0;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.filter-sheet-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.filter-sheet-foot {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.filter-sheet-reset {
+  height: 40px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--chrome);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.filter-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-sheet-link {
+  display: flex;
+  justify-content: space-between;
+  min-height: 44px;
+  align-items: center;
+  color: var(--action);
+  font-weight: 800;
+  text-decoration: none;
 }

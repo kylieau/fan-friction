@@ -6,12 +6,9 @@ import { PeopleIcon, SlidersIcon, StarIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { TitleText } from '../components/TitleText';
 import { Timeline, type TimelineItem } from '../components/Timeline';
-import { FollowRow, LeadIcon, readPath } from '../components/FollowRow';
+import { FollowRow, readPath } from '../components/FollowRow';
 import { FollowingSheet, type FollowingSegment, type Picked } from '../components/FollowingSheet';
-import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import { useArtistGenres } from '../components/useArtistGenres';
-import { favPath } from './FavoritesScreen';
-import { favoriteName } from '../components/FavoriteBadge';
 import {
   canSignIn,
   favoriteDisplayName,
@@ -19,10 +16,8 @@ import {
   favoritesOf,
   followRequests,
   followingFeedWithStatus,
-  gameEventId,
   getAccount,
   getPersonalLog,
-  isFurtherOut,
   isFurtherOutRoom,
   isGameEventId,
   nightKey,
@@ -32,14 +27,12 @@ import {
   subscribeAccount,
   subscribePersonalLog,
   type Entry,
-  type Favorite,
   type FeedItem,
   type FollowRequest,
   type PersonRow,
 } from '../data';
 import { activityGroups, activityOrder, ACTIVITY_WORDS, feedSentence, type ActivityGroups } from '../lib/activity';
 import { addDays, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
-import { favoriteTypeKey } from '../map/typeIcons';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { backFrom, datePath, eventPath } from '../lib/view';
 import { useEdgeFade } from '../lib/useEdgeFade';
@@ -151,11 +144,7 @@ export function FollowingScreen({ segment: routeSegment }: { segment?: Following
           </button>
         </div>
       )}
-      {segment === 'faves' ? (
-        <FavesTimeline favorites={favorites} picked={favFilter} home={home} onClear={clear} />
-      ) : (
-        <FriendsTimeline account={Boolean(account)} picked={friendFilter} people={people} home={home} onClear={clear} />
-      )}
+      <FriendsTimeline account={Boolean(account)} picked={friendFilter} people={people} home={home} onClear={clear} />
       {sheet && (
         <FollowingSheet
           segment={segment}
@@ -207,90 +196,6 @@ function prune(picked: Picked, keys: readonly string[]): Picked {
   if (picked === null) return null;
   const kept = [...picked].filter((k) => keys.includes(k));
   return kept.length === 0 || kept.length === keys.length ? null : new Set(kept);
-}
-
-/** The Faves line: results and past dates above the rule, what is ahead below it, narrowed by the filter. */
-function FavesTimeline({ favorites, picked, home, onClear }: { favorites: readonly Favorite[]; picked: Picked; home: (typeof METROS)[string]; onClear: () => void }) {
-  const { rows, today } = useFavoriteRows(favorites, home, SPAN_DAYS, SPAN_DAYS);
-  const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  useEffect(() => {
-    let current = true;
-    scoresForNights(rows.flatMap((row) => (row.metroId ? [{ metroId: row.metroId, date: row.date }] : []))).then((map) => current && setRatings(map));
-    return () => {
-      current = false;
-    };
-  }, [rows]);
-  const shown = picked === null ? rows : rows.filter((row) => picked.has(favoriteKey(row.fav)));
-  const toItem = (row: ScheduleRow): TimelineItem => ({
-    key: row.key,
-    group: timelineGroup({ sort: row.date, label: '', precision: 'day' }),
-    node: <FaveRow row={row} rating={row.metroId && !(row.event && isFurtherOut(row.event)) ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />,
-  });
-  if (favorites.length === 0) {
-    return (
-      <div className="card empty-card following-empty">
-        <div className="card-title">No Faves yet</div>
-        <p className="following-empty-sub">Follow a team, artist or venue to see their games and shows here.</p>
-        <Link to="/favorites/edit" className="following-empty-button">
-          Add a Fave
-        </Link>
-      </div>
-    );
-  }
-  if (shown.length === 0 && picked !== null) {
-    const names = [...picked].flatMap((key) => {
-      const fav = favorites.find((f) => favoriteKey(f) === key);
-      return fav ? [favoriteDisplayName(fav)] : [];
-    });
-    return (
-      <div className="card empty-card following-empty">
-        <div className="card-title">Nothing for {names.join(', ')} in the last or next {SPAN_DAYS} days.</div>
-        <p className="following-empty-sub">The filter hides everything else.</p>
-        <button type="button" className="following-empty-link" onClick={onClear}>
-          Show all Faves <span aria-hidden>›</span>
-        </button>
-      </div>
-    );
-  }
-  return (
-    <Timeline
-      label="Faves"
-      past={shown.filter((row) => row.date < today).map(toItem)}
-      future={shown.filter((row) => row.date >= today).map(toItem)}
-      todayLabel={dayBandLabel(today, today)}
-      emptyPast={
-        <div className="card empty-card">
-          <div className="card-title">Nothing from your Faves in the last {SPAN_DAYS} days.</div>
-        </div>
-      }
-      emptyFuture={
-        <div className="card empty-card">
-          <div className="card-title">Nothing from your Faves in the next {SPAN_DAYS} days.</div>
-        </div>
-      }
-    />
-  );
-}
-
-/** A Fave's row: the icon and display name lead (a link to its page), the title from its side, time and venue. */
-function FaveRow({ row, rating, home }: { row: ScheduleRow; rating: number | null; home: string }) {
-  const to = row.event ? eventPath(row.event.id, row.event.metroId) : row.link ? eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home) : datePath(row.date, row.metroId ?? home);
-  return (
-    <FollowRow
-      date={row.date}
-      lead={{ icon: <LeadIcon typeKey={favoriteTypeKey(row.fav)} />, text: favoriteDisplayName(row.fav), to: favPath(row.fav), label: favoriteName(row.fav) }}
-      title={row.title}
-      facts={row.facts}
-      to={to}
-      state={row.link ? { game: row.link } : undefined}
-      rating={rating}
-      // A further-out event's tile is plain, with no tap (Kylie, Oct 20, 2026).
-      readTo={row.away || (row.event && isFurtherOut(row.event)) ? null : readPath(row.date, row.metroId, row.event?.id)}
-      away={row.noRead}
-      cityCode={row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null}
-      spoken={`${favoriteName(row.fav)}, ${row.title}, ${shortLocalDate(row.date)}`}
-    />
-  );
 }
 
 /** The Friends line: what the people you follow answered, plans ahead and the last 60 days behind. */

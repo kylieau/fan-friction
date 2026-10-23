@@ -3,22 +3,18 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { SearchButton } from '../components/SearchButton';
-import { PlanRow, StubRow } from '../components/StubRows';
+import { StubRow } from '../components/StubRows';
 import {
   getPersonalLog,
   getSaveWarning,
-  nightKey,
   nightsOf,
   ratingForEntry,
   scoresForNights,
   subscribePersonalLog,
   todayIn,
-  upcomingPlans,
   yourEntries,
   tagSummaries,
   entryTags,
-  eventType,
-  getCityDate,
 } from '../data';
 import { dayBandLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
@@ -58,34 +54,17 @@ export function StubsScreen() {
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   // Today in the home city, like Following's line (Oct 17, 2026): the old Upcoming tab counted from Los Angeles time.
   const today = todayIn(METROS[getHomeId() ?? DEFAULT_METRO.id] ?? DEFAULT_METRO);
-  const plansAhead = useMemo(() => upcomingPlans(today, log), [log, today]);
-
-  // Each upcoming plan's listed event, for its type icon (build 5, item 12): plans store no kind of their own.
-  const [planTypes, setPlanTypes] = useState<Map<string, string>>(new Map());
-  useEffect(() => {
-    let current = true;
-    const linked = plansAhead.filter((plan) => plan.eventId);
-    const dates = [...new Map(linked.map((plan) => [`${plan.metroId}|${plan.date}`, plan])).values()];
-    Promise.all(dates.map((plan) => getCityDate(plan.metroId, plan.date).catch(() => null))).then((days) => {
-      if (!current) return;
-      const types = new Map<string, string>();
-      for (const day of days) for (const event of day?.events ?? []) types.set(event.id, eventType(event).key);
-      setPlanTypes(types);
-    });
-    return () => {
-      current = false;
-    };
-  }, [plansAhead]);
+  // Plans moved to the Upcoming tab (build 7, Kylie, Oct 21, 2026; it reverses build 6's "your own plans stay in Stubs").
 
   useEffect(() => {
     let current = true;
-    scoresForNights([...nightsOf(entries), ...plansAhead.map((plan) => ({ metroId: plan.metroId, date: plan.date }))]).then((map) => {
+    scoresForNights(nightsOf(entries)).then((map) => {
       if (current) setRatings(map);
     });
     return () => {
       current = false;
     };
-  }, [entries, plansAhead]);
+  }, [entries]);
 
   // The past, oldest first, so the line reads down into today (the Explore List's order).
   const past = useMemo(
@@ -102,11 +81,6 @@ export function StubsScreen() {
   );
 
   const pastItems: TimelineItem[] = past.map((entry) => ({ key: entry.id, group: timelineGroup(entry.when), node: <StubRow entry={entry} rating={ratingForEntry(entry, ratings)} /> }));
-  const futureItems: TimelineItem[] = plansAhead.map((plan) => ({
-    key: plan.id,
-    group: timelineGroup({ sort: plan.date, label: '', precision: 'day' }),
-    node: <PlanRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} typeKey={plan.eventId ? planTypes.get(plan.eventId) : undefined} />,
-  }));
 
   return (
     <div className="screen page stubs-page timeline-page">
@@ -179,7 +153,7 @@ export function StubsScreen() {
         <Timeline
           label="Your stubs"
           past={pastItems}
-          future={futureItems}
+          future={[]}
           todayLabel={dayBandLabel(today, today)}
           emptyPast={
             // The decided empty-past copy (Kylie, Oct 16), above the line: no "Stub it" button here, only the way to today.
@@ -192,17 +166,8 @@ export function StubsScreen() {
               </div>
             </div>
           }
-          emptyFuture={
-            // Board M2-02's card (Kylie, Oct 17), under the line.
-            <div className="card empty-card">
-              <div className="card-title">Nothing upcoming yet</div>
-              <div className="empty-actions">
-                <Link to="/explore" className="link-button">
-                  Browse today in Explore ›
-                </Link>
-              </div>
-            </div>
-          }
+          // Plans are on Upcoming (build 7), so nothing sits under the line here.
+          emptyFuture={null}
         />
       </section>
 

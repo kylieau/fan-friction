@@ -15,7 +15,7 @@ export interface TimelineItem {
  * shows twice, before and after it). The list is its own scroller under the page header, so the header never
  * scrolls away on open; a Today pill brings you back when the line is off screen (↓ from the past, ↑ from the
  * future). An empty side carries its own note: the past's above the line, the future's below. Items come in order,
- * oldest first.
+ * oldest first. No "earlier" cue anywhere (Kylie, Oct 22, 2026).
  */
 export function Timeline({
   past,
@@ -25,6 +25,7 @@ export function Timeline({
   emptyFuture,
   label,
   onScrolled,
+  aboveLine,
 }: {
   past: readonly TimelineItem[];
   future: readonly TimelineItem[];
@@ -35,14 +36,16 @@ export function Timeline({
   /** What sits under the line when nothing is ahead. */
   emptyFuture: ReactNode;
   label: string;
-  /** Told when the list has scrolled away from where it opened (the floating button shrinks). */
+  /** Told when the list has scrolled away from where it opened. */
   onScrolled?: (scrolled: boolean) => void;
+  /** What sits right above the today line and opens with it (Upcoming's "Your plans" band, build 7). */
+  aboveLine?: ReactNode;
 }) {
   const scroller = useRef<HTMLDivElement>(null);
   const todayLine = useRef<HTMLDivElement>(null);
-  // The "↑ N earlier" cue above the line (Kylie, Oct 19, 2026: option B; tester-readiness review R8): the list opens on
-  // it, so a person sees that the past is there without scrolling; a tap brings a screen of it into view.
-  const earlierCue = useRef<HTMLButtonElement>(null);
+  // No "↑ N earlier" cue and no Earlier line (Kylie, Oct 22, 2026, Locked; it reverses 435d817): the list opens on the
+  // line (or the band above it) and the past is reached by scrolling up, the "↓ Today" pill bringing you back.
+  const anchorRef = useRef<HTMLDivElement>(null);
   const placed = useRef(false);
   const hadPast = useRef(false);
   const openedAt = useRef(0);
@@ -68,7 +71,7 @@ export function Timeline({
       el.scrollTop = 0;
       return;
     }
-    const anchor = earlierCue.current ?? line;
+    const anchor = anchorRef.current ?? line;
     const need = el.clientHeight - (el.scrollHeight - pad - anchor.offsetTop);
     if (need > pad) {
       setPad(need);
@@ -91,17 +94,9 @@ export function Timeline({
 
   const toToday = () => {
     const el = scroller.current;
-    const anchor = earlierCue.current ?? todayLine.current;
+    const anchor = anchorRef.current ?? todayLine.current;
     if (!el || !anchor) return;
     el.scrollTo({ top: anchor.offsetTop, behavior: 'smooth' });
-  };
-
-  /** A screen of the past comes into view, the cue at the bottom of it; a short past shows whole from the top. */
-  const showEarlier = () => {
-    const el = scroller.current;
-    const cue = earlierCue.current;
-    if (!el || !cue) return;
-    el.scrollTo({ top: Math.max(0, cue.offsetTop - (el.clientHeight - cue.offsetHeight - 8)), behavior: 'smooth' });
   };
 
   const pastGroups = groupItems(past);
@@ -125,10 +120,10 @@ export function Timeline({
             </ul>
           </section>
         ))}
-        {past.length > 0 && (
-          <button ref={earlierCue} type="button" className="timeline-earlier-cue" onClick={showEarlier} aria-label={`${past.length} earlier. Show them`}>
-            <span aria-hidden>↑</span> {past.length} earlier
-          </button>
+        {aboveLine && (
+          <div ref={anchorRef} className="timeline-above-line">
+            {aboveLine}
+          </div>
         )}
         <div ref={todayLine} className="today-line">
           <h3 className="today-line-label">{todayLabel}</h3>
