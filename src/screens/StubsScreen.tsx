@@ -100,10 +100,12 @@ export function StubsScreen() {
   // A favorite's "My Stubs ›" (`?filter=`) and a tag's page (`?tag=`) open the log narrowed to it.
   const wantedTeam = params.get('filter');
   const wantedTag = params.get('tag');
+  const wantedYear = params.get('year');
   useEffect(() => {
     if (wantedTeam) setFilter({ ...readFilter(), team: wantedTeam });
     else if (wantedTag) setFilter({ ...readFilter(), tags: [wantedTag] });
-  }, [wantedTeam, wantedTag]);
+    else if (wantedYear && /^\d{4}$/.test(wantedYear)) setFilter({ ...readFilter(), dates: { preset: 'custom', from: `${wantedYear}-01-01`, to: `${wantedYear}-12-31` } });
+  }, [wantedTeam, wantedTag, wantedYear]);
   const [sheet, setSheet] = useState(false);
   useEffect(() => {
     clearOpenedFromMap();

@@ -10647,3 +10647,279 @@ a.follow-lead::after {
   font-weight: 600;
   color: var(--muted);
 }
+
+/* Ranks and Recap (build 7, §3.8; mocks 44–48). */
+.year-pick-head {
+  margin-left: auto;
+}
+
+.year-word.small {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--action);
+}
+
+.page-sub {
+  margin: -6px 0 0;
+}
+
+.ranks-tabs button {
+  font-size: 13px;
+  padding: 0 4px;
+}
+
+.rank-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: none;
+}
+
+.rank-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.rank-list li:last-child .rank-row {
+  border-bottom: 0;
+}
+
+.rank-pos {
+  width: 28px;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.rank-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rank-label {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.rank-sub {
+  display: flex;
+  gap: 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.rank-sub span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rank-sub svg {
+  width: 13px;
+  height: 13px;
+}
+
+.rank-bar {
+  display: flex;
+  height: 6px;
+  max-width: 180px;
+  border-radius: 3px;
+  background: var(--track);
+  overflow: hidden;
+}
+
+.rank-bar-attended {
+  background: var(--ink);
+}
+
+.rank-bar-watched {
+  background: var(--card);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+
+.rank-total {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.rank-more {
+  align-self: center;
+  min-height: 44px;
+  font-weight: 800;
+}
+
+.recap-hero {
+  background: var(--ink);
+  color: var(--card);
+  padding: 14px 16px;
+}
+
+.recap-kicker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.recap-hero-line {
+  padding: 6px 0 2px;
+}
+
+.recap-hero-sub {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.recap-moment {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+}
+
+.recap-moment-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.recap-right {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.recap-event {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.recap-event-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.recap-event-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.recap-event-sub,
+.recap-note {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.recap-note {
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+}
+
+.recap-crowd {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.recap-crowd-num {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #b98500;
+}
+
+.recap-big-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recap-big {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.recap-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.recap-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 14px;
+  background: var(--chrome);
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.recap-chip svg {
+  width: 13px;
+  height: 13px;
+}
+
+.recap-tag-link {
+  text-decoration: none;
+}
+
+.recap-venues {
+  margin: 0;
+  padding: 0 0 0 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recap-bar {
+  max-width: none;
+  height: 10px;
+}
+
+.recap-bar-words {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.recap-bar-words span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.recap-all {
+  align-self: center;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
