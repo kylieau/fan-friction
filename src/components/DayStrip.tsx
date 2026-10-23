@@ -69,20 +69,27 @@ export function DayStrip({ metro, today, date, from, onSearch }: { metro: Metro;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date, days.length]);
 
-  const cellStep = () => {
+  // A cell's width is fractional (an eighth of the row); the rounded `offsetWidth` drifted the row by three cells over a
+  // year of days (found Oct 22, 2026, once the strip reached back a year), so the real width is used everywhere here.
+  const cellWidth = () => {
     const cell = stripRef.current?.firstElementChild as HTMLElement | null;
-    return cell ? cell.offsetWidth + GAP : 0;
+    return cell ? cell.getBoundingClientRect().width : 0;
+  };
+  const cellStep = () => {
+    const w = cellWidth();
+    return w ? w + GAP : 0;
   };
 
   const scrollTo = (target: string, behavior: ScrollBehavior) => {
     const strip = stripRef.current;
-    const cell = strip?.firstElementChild as HTMLElement | null;
-    if (!strip || !cell) return;
+    if (!strip) return;
     const index = days.indexOf(target);
-    if (index < 0) return;
-    // The snap line sits half a cell in from the left edge (CSS scroll-padding), so
-    // the cell before the window peeks on the left and another on the right.
-    strip.scrollTo({ left: Math.max(0, (index - SLOT) * (cell.offsetWidth + GAP) - cell.offsetWidth / 2), behavior });
+    const cell = strip.children[index] as HTMLElement | undefined;
+    const w = cellWidth();
+    if (index < 0 || !cell || !w) return;
+    // The viewed cell's own position, less the two cells before it and the half cell that peeks at the edge: the snap
+    // line sits half a cell in from the left edge (CSS scroll-padding), so a cell peeks at both ends.
+    strip.scrollTo({ left: Math.max(0, cell.offsetLeft - SLOT * (w + GAP) - w / 2), behavior });
   };
 
   // As the row scrolls, the reads around the cell in the viewed slot load (a short pause after the last move).
