@@ -17,6 +17,9 @@ const AGGREGATOR = 3;
 
 const norm = (s: string | undefined) => (s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
+/** A team's name as a key: "Football Club" is "FC", so a seller's "Los Angeles Football Club" meets "Los Angeles FC". */
+const teamKey = (s: string) => norm(s).replace(/\bfootball club\b/g, 'fc');
+
 /**
  * Every way a team is written (full name, short name, aliases) → its id, so "Chicago Cubs" meets "Cubs". Keyed by
  * id, not short name (B5-04, build 6, item 9d): two clubs can share a nickname (Utah's and Colorado's Mammoth). A
@@ -28,20 +31,20 @@ function teamIdFor(raw: string): string | null {
     byName = new Map();
     for (const team of Object.values(TEAMS)) {
       for (const n of [team.name, team.shortName, ...(team.aliases ?? [])]) {
-        const key = norm(n);
+        const key = teamKey(n);
         const seen = byName.get(key);
         if (seen === undefined) byName.set(key, team.id);
         else if (seen !== team.id) byName.set(key, null);
       }
     }
   }
-  return byName.get(norm(raw)) ?? null;
+  return byName.get(teamKey(raw)) ?? null;
 }
 
 /** One side of a game as a key: the team's id when a feed gave one or a name resolves to one, else the written name. */
 function sideKey(raw: string): string {
   if (TEAMS[raw]) return raw;
-  return teamIdFor(raw) ?? norm(raw);
+  return teamIdFor(raw) ?? teamKey(raw);
 }
 
 /** The two sides of a game as a sorted key: team ids when the feed gave them, else the title's sides. */
@@ -93,4 +96,34 @@ export function mergeDuplicates(events: readonly CrowdEvent[]): CrowdEvent[] {
     out[at] = rank(event) < rank(kept) ? merge(event, kept) : merge(kept, event);
   }
   return out;
+}
+
+/**
+ * Pairs that look like one event listed twice and survived both the one-game rule and the merge: two sources, one
+ * room, one date, starts within 30 minutes, either kind (Oct 22, 2026: LAFC vs. Galaxy and eight college games stayed
+ * doubled because a seller called them football or left them unsegmented). Never drops anything; the nightly log and
+ * the copies check print them so a new spelling shows up the morning it appears. Two different events in one room
+ * that close together are rare; a festival pass and an add-on beside their show are the expected false alarms.
+ */
+export function possibleCopies(events: readonly CrowdEvent[]): [CrowdEvent, CrowdEvent][] {
+  const byRoomDay = new Map<string, CrowdEvent[]>();
+  for (const e of events) {
+    if (e.place.type !== 'venue' || e.sourceId === 'seed') continue;
+    const key = `${e.place.venueId}|${e.date}`;
+    byRoomDay.set(key, [...(byRoomDay.get(key) ?? []), e]);
+  }
+  const pairs: [CrowdEvent, CrowdEvent][] = [];
+  for (const list of byRoomDay.values()) {
+    for (let i = 0; i < list.length; i += 1) {
+      for (let j = i + 1; j < list.length; j += 1) {
+        const [a, b] = [list[i], list[j]];
+        if (a.sourceId === b.sourceId) continue;
+        const ma = minutes(a.start);
+        const mb = minutes(b.start);
+        if (ma != null && mb != null && Math.abs(ma - mb) > 30) continue;
+        pairs.push([a, b]);
+      }
+    }
+  }
+  return pairs;
 }

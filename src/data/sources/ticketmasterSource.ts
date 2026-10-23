@@ -138,7 +138,8 @@ function gameShaped(name: string): boolean {
   return /\S\s+(?:vs\.?|v\.?|@)\s+\S/i.test(name) && !/\bTBD\b/.test(name);
 }
 
-function kindOf(segment: string | undefined, venueId: string, name: string): CrowdEvent['kind'] | null {
+/** Exported for the copies check. */
+export function kindOf(segment: string | undefined, venueId: string, name: string): CrowdEvent['kind'] | null {
   switch (segment) {
     case 'Music':
       return 'show';
@@ -154,7 +155,11 @@ function kindOf(segment: string | undefined, venueId: string, name: string): Cro
       // keeps out what the feeds never had a reason to list: stadium tours, racing days, daily general admission.
       return SPORTS_FROM_TICKETMASTER.has(venueId) || gameShaped(name) ? 'game' : null;
     default:
-      return 'special';
+      // A listing with no segment ("Undefined") that is named like a match and names a sport is a game (Oct 22, 2026:
+      // college games listed this way, "Rice Owls Womens Volleyball vs. Tulsa Golden Hurricane Womens Volleyball", sat
+      // beside the school feed's copy as a special, so the one-game rule never saw them). The sport word keeps out a
+      // party or a show named "X vs Y".
+      return gameShaped(name) && sportOf(name) !== 'other' ? 'game' : 'special';
   }
 }
 

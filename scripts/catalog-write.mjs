@@ -61,6 +61,7 @@ try {
   const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
   const { looseVenueMatches } = await server.ssrLoadModule('/src/data/sources/venueMatch.ts');
   const { dropGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
+  const { mergeDuplicates, possibleCopies } = await server.ssrLoadModule('/src/data/dedupe.ts');
   const { loadSidearmSchedule } = await server.ssrLoadModule('/src/data/sources/sidearmSource.ts');
   const { loadJambaseEvents, readJambaseQuota, JAMBASE_METROS } = await server.ssrLoadModule('/src/data/sources/jambaseSource.ts');
   const { fanEventFrom, fanEventId, secondPersonConfirmations } = await server.ssrLoadModule('/src/data/sources/fanSource.ts');
@@ -205,6 +206,10 @@ try {
   const keptEvents = dropGamesCoveredByFeeds([...ours, ...elsewhere]).filter((e) => !elsewhereIds.has(e.id));
   const copies = dropGamesCoveredByFeeds(ours).length - keptEvents.length;
   if (copies) console.log(`${metroId}: ${copies} seller games dropped as copies of feed games other passes filed here.`);
+  // What still looks doubled after the one-game rule and the app's merge: two sources, one room, one date, starts
+  // within 30 minutes (Oct 22, 2026, LAFC vs. Galaxy). Logged only; a pair here is a new seller spelling to teach.
+  const doubled = possibleCopies(mergeDuplicates(keptEvents));
+  if (doubled.length) console.log(`${metroId}: ${doubled.length} possible copies kept: ${doubled.map(([a, b]) => `${a.date} ${a.place.venueId} "${a.title}" (${a.sourceId}) / "${b.title}" (${b.sourceId})`).join('; ')}`);
   const events = keptEvents.map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds stay. The game feeds
