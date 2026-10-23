@@ -246,7 +246,7 @@ Stop at a clean break and say where you stopped.
 
 **The line is drive time since Oct 23, 2026 (Kylie):** a room is inside a city when it is within a normal, non-event 60-minute drive of the city hall (each city hall, for the Bay Area, Dallas–Fort Worth, Minneapolis–St. Paul, Raleigh–Durham and Ottawa–Gatineau); Further out is beyond that and up to about 3 hours. Rooms the old region names left out but the hour puts inside (Montreal's Saint-Jean-sur-Richelieu and Saint-Hyacinthe, about 40 and 50 minutes) go in a separate section, "Inside under the drive rule, not on file," with the drive and its source, never in the Further out table.
 
-Status: delivery 4 (Bay Area, Seattle, Toronto, Mexico City) is saved as `further-out-rooms-answer-4.md`. Next: Montreal, Vancouver, Detroit, Minneapolis–St. Paul.
+Status: delivery 4 (Bay Area, Seattle, Toronto, Mexico City) is saved as `further-out-rooms-answer-4.md`. Delivery 5 (Montreal, Vancouver, Detroit, Minneapolis–St. Paul) is saved as `further-out-rooms-answer-5.md` (Oct 23).
 
 ```
 Continue the Further out research from Montreal, in the brief's order: Montreal, Vancouver, Detroit, Minneapolis–St. Paul. Same rules, same table, same labels (official / reported / estimated), same "near the line", "shared with another covered city" and "could not confirm" sections per city, and the same downtown drive ranges with their planner sources. Deliver this as Delivery 5, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries.
@@ -316,3 +316,81 @@ Minneapolis–St. Paul (the app's Minneapolis covers the seven-county Met Counci
 Stop at a clean break and say where you stopped.
 ```
 
+### Continuation 5 (Oct 23, 2026): from Denver
+
+Status: delivery 5 is saved as `further-out-rooms-answer-5.md`. Next: Denver, San Diego, Tampa Bay, Columbus.
+
+```
+Continue the Further out research from Denver, in the brief's order: Denver, San Diego, Tampa Bay, Columbus. Deliver this as Delivery 6, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries. Keep everything Delivery 5 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), a reproducible hall-to-room route for every row, the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region names as location only.
+
+City halls (longitude-free summary; use these points): Denver, City and County Building, 1437 Bannock Street (39.7392, -104.9907); San Diego, City Administration Building, 202 C Street (32.7170, -117.1628); Tampa Bay, Tampa City Hall, 315 East Kennedy Boulevard (27.9477, -82.4572), one center only; Columbus, City Hall, 90 West Broad Street (39.9626, -83.0034).
+
+Two things to add to each row, because the app now files rooms from them directly: a recommended capacity as one number with its label (as you have been doing), and a decimal coordinate pair for every room you list, inside or Further out (say what the point represents). Rooms without a usable point slow the import.
+
+The app already has these rooms. Do not list them again; any other room is yours to check by its own hall drive.
+
+Denver. Rooms on file; largest setup on file:
+- Empower Field at Mile High; 85,000
+- Coors Field; 46,891
+- Ball Arena; 21,000
+- Fiddler's Green Amphitheatre; 18,000
+- Centennial Stadium; 12,000
+- Red Rocks Amphitheatre; 9,525
+- Levitt Pavilion Denver; 7,500
+- Magness Arena at the Ritchie Center; 7,200
+- Bellco Theatre; 5,000
+- Fillmore Auditorium, Buell Theatre, Boettcher Concert Hall, Ellie Caulkins Opera House, Hamilton Gymnasium at the Ritchie Center, Peter Barton Stadium, University of Denver Soccer Stadium, Paramount Theatre, Ogden Theatre, Gothic Theatre, DSG Park, Denver Coliseum, Colorado Convention Center (Mile High Ballroom), Mission Ballroom; all under 5,000
+
+San Diego. Rooms on file; largest setup on file:
+- San Diego Stadium (closed, demolished); 70,561
+- Del Mar Fairgrounds; 40,000
+- Petco Park; 39,860
+- Snapdragon Stadium; 35,000
+- Embarcadero Marina Park North; 30,000
+- North Island Credit Union Amphitheatre; 20,500
+- Pechanga Arena; 16,100
+- Waterfront Park; 15,000
+- Viejas Arena; 12,414
+- The Rady Shell at Jacobs Park; 10,000
+- Frontwave Arena; 7,500
+- San Diego Convention Center; 6,500
+- Torero Stadium; 6,000
+- Jenny Craig Pavilion; 5,100
+- LionTree Arena; under 5,000
+(Los Angeles is a covered city: a room within 60 minutes of Los Angeles City Hall belongs to Los Angeles, and Temecula and the Inland Empire rooms already on file are Los Angeles's.)
+
+Tampa Bay. Rooms on file; largest setup on file:
+- Raymond James Stadium; 69,218
+- Tropicana Field; 25,025
+- Benchmark International Arena; 21,500
+- MIDFLORIDA Credit Union Amphitheatre; 20,000
+- George M. Steinbrenner Field; 11,026
+- Yuengling Center; 10,411
+- Florida Strawberry Festival Grandstands; 9,200
+- The BayCare Sound; 9,000
+- BayCare Ballpark; 8,500
+- TD Ballpark; 8,500
+- Al Lang Stadium; 7,227
+- Suncoast Credit Union Field; 5,248
+- Corbett Stadium, Morsani Hall, Ruth Eckerd Hall, The Mahaffey Theater, Jannus Live, USF Softball Stadium, Hard Rock Event Center, Tampa Theatre, Ferguson Hall, The Corral, Tampa Bay Downs; all under 5,000
+
+Columbus. Rooms on file; largest setup on file:
+- Ohio Stadium; 102,780
+- ScottsMiracle-Gro Field; 20,371
+- Nationwide Arena; 20,000
+- Value City Arena at the Jerome Schottenstein Center; 20,000
+- Historic Crew Stadium; 19,968
+- St. John Arena; 13,276
+- Mid-Ohio Sports Car Course (Lexington; already Further out); 12,000
+- WCOL Celeste Center; 10,200
+- Huntington Park; 10,100
+- Jesse Owens Memorial Stadium; 10,000
+- Selby Stadium; 9,100
+- Fortress Obetz; 6,500
+- Battelle Grand; 5,411
+- KEMBA Live!; 5,200
+- Covelli Center, Ohio Theatre, Palace Theatre, Mershon Auditorium, KEMBA Live! Indoor Music Hall, Newport Music Hall, Buckeye Field, Branch Rickey Arena, Midland Theatre, Ohio State Ice Rink, Bill Davis Stadium, Ohio State Lacrosse Stadium; all under 5,000
+(Detroit, Cleveland, Indianapolis and Pittsburgh are covered cities; Delivery 5 already lists the Toledo rooms, so do not repeat them.)
+
+Stop at a clean break and say where you stopped.
+```
