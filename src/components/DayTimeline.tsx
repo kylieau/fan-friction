@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CrowdMark } from './EventTags';
 import { TypeIcon } from './TypeIcon';
-import { atLeastMark, drawSize, eventType, feelsLikeLabel, sizeTier, weatherAt, weatherGlyph, type CrowdEvent, type WeatherRow } from '../data';
+import { atLeastMark, drawSize, eventType, sizeTier, type CrowdEvent } from '../data';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
@@ -14,12 +14,12 @@ import { TitleText } from './TitleText';
  * for all (build 6, item 3; Kylie, Oct 16): the bars show start and running time and let the reader draw
  * the conclusion; no friction color, outline or ring. Gold here is identity, not size. No miles, no helper
  * text. Each row opens the event.
- * With `weather`, an hourly strip sits over the axis (build 5, item 4; board datepage-r3-lean): the city point's
- * glyph and feels-like at each hour tick, read the way the date header reads it. Hidden under two stored hours.
+ * The hourly weather strip that sat over the axis (build 5, item 4) moved to the day page's own weather strip and
+ * card in build 7.1 (M3, Kylie, Oct 23, 2026): weather is out of Local Competition.
  * With fewer than two big events the card says so in one line, so it never looks empty by mistake (Kylie,
  * Oct 16, Q9). Big events that are all untimed still get their "Time TBA" band, alone, with no axis (Q13 lean).
  */
-export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]; weather?: { metroId: string; date: string } }) {
+export function DayTimeline({ events }: { events: readonly CrowdEvent[] }) {
   const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
   const timed = big.filter((e) => e.start);
   // Big events with no start on file (research-loaded past dates, a game with no kickoff set) sit in a "Time TBA" band
@@ -47,25 +47,9 @@ export function DayTimeline({ events, weather }: { events: readonly CrowdEvent[]
   for (let h = Math.ceil(lo); h <= hi; h += 1) ticks.push(h);
   const label = (h: number) => (h % 24 === 0 ? '12a' : h % 24 === 12 ? '12p' : h % 24 < 12 ? `${h % 24}a` : `${(h % 24) - 12}p`);
   const rows = [...timed].sort((a, b) => span(a)[0] - span(b)[0] || (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
-  // Hours past midnight belong to the next day's weather; the strip stops at 11 pm.
-  const hourly = weather
-    ? ticks.filter((h) => h >= 0 && h <= 23).map((h) => [h, weatherAt(weather.metroId, 'city', weather.date, h)] as const).filter((p): p is readonly [number, WeatherRow] => p[1] !== undefined)
-    : [];
 
   return (
     <div className="day-timeline" aria-label="Timeline">
-      {hourly.length >= 2 && (
-        <div className="hourly-strip" aria-label="Weather by hour">
-          {hourly.map(([h, row]) => (
-            <span key={h} style={{ left: pct(h) }} aria-label={`${label(h)} ${feelsLikeLabel(row, weather!.metroId)}`}>
-              <span className="weather-glyph" aria-hidden>
-                {weatherGlyph(row)}
-              </span>
-              <span aria-hidden>{feelsLikeLabel(row, weather!.metroId)}</span>
-            </span>
-          ))}
-        </div>
-      )}
       <div className="axis">
         {ticks.map((h) => (
           <span key={h} style={{ left: pct(h) }}>

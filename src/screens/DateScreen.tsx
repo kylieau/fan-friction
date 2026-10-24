@@ -280,50 +280,8 @@ export function DateScreen() {
       </section>
       {about && <AboutRead saved={saved ?? {}} onClose={() => setAbout(false)} />}
 
-      {(mine.length > 0 || plans.length > 0) && (
-        <section className="you-block" aria-labelledby="your-entry">
-          {/* Section titles sit inside their card, like Local Competition (Kylie, Oct 15). */}
-          <div className="entry-card">
-            <h2 id="your-entry" className="you-heading in-card-title">
-              {ahead ? (plans.length > 0 && plans.every((p) => p.watch) ? 'Watching' : 'Attending') : 'Attended'}
-            </h2>
-            {mine.map((entry) => {
-              const event = events.find((e) => e.id === entry.eventId);
-              return (
-                <div key={entry.id} className="entry">
-                  <span className="entry-title">{entry.title}</span>
-                  <span className="entry-facts">
-                    {[entry.venue, event?.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}
-                    {event && (
-                      <>
-                        {' · '}
-                        <CrowdFigure event={event} />
-                      </>
-                    )}
-                  </span>
-                  {entry.review && <span className="entry-note">{entry.review}</span>}
-                </div>
-              );
-            })}
-            {plans.map((plan) => (
-              <div key={plan.id} className="entry">
-                <span className="entry-title">{plan.title}</span>
-                <span className="entry-facts">{plan.venue ?? ''}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {events.length > 0 && rating && shownRating !== null && (
-        <section className="card local-competition" aria-label="Local Competition">
-          {/* Build 5, item 4 (board datepage-r3-lean): above the lineup, the hourly weather strip over the timeline.
-              No summary line and no read tile: the read is in the card above. */}
-          <h2 className="you-heading">Local Competition</h2>
-          <DayTimeline events={events} weather={{ metroId: metro.id, date }} />
-        </section>
-      )}
-
+      {/* Order since build 7.1 (M1, Kylie, Oct 23, 2026): the verdict, then the lineup (people open a day to see what's
+          on), then Local Competition, then Further Out; the Attended card sits at the bottom (M7). */}
       {events.length > 0 && (
         <section className="you-block" aria-labelledby="that-date">
           {/* The shared Explore row (build 5, item 4), by start time. No per-row "+ Stub it": the event page has it.
@@ -354,6 +312,15 @@ export function DateScreen() {
         </section>
       )}
 
+      {events.length > 0 && rating && shownRating !== null && (
+        <section className="card local-competition" aria-label="Local Competition">
+          {/* Build 5, item 4 (board datepage-r3-lean): the timeline of the day's big crowds. No summary line and no
+              read tile: the read is in the card above. The hourly weather left for its own strip (M3, Oct 23, 2026). */}
+          <h2 className="you-heading">Local Competition</h2>
+          <DayTimeline events={events} />
+        </section>
+      )}
+
       {/* Further out (Kylie, Oct 19–20, 2026): big events within about a 2-hour drive, after the lineup, never in the
           verdict. The lists switch hides them; ones you stubbed or friends are attending always show. */}
       {further.length > 0 && (
@@ -363,6 +330,42 @@ export function DateScreen() {
               Further Out
             </h2>
             <FurtherOutList events={further} variant="date" />
+          </div>
+        </section>
+      )}
+
+      {(mine.length > 0 || plans.length > 0) && (
+        <section className="you-block" aria-labelledby="your-entry">
+          {/* At the bottom, above Share and Compare, with no gold edge (M7, Kylie, Oct 23, 2026: gold is for crowd
+              figures and the Cooked verdict). Section titles sit inside their card, like Local Competition (Oct 15). */}
+          <div className="entry-card">
+            <h2 id="your-entry" className="you-heading in-card-title">
+              {ahead ? (plans.length > 0 && plans.every((p) => p.watch) ? 'Watching' : 'Attending') : 'Attended'}
+            </h2>
+            {mine.map((entry) => {
+              const event = events.find((e) => e.id === entry.eventId);
+              return (
+                <div key={entry.id} className="entry">
+                  <span className="entry-title">{entry.title}</span>
+                  <span className="entry-facts">
+                    {[entry.venue, event?.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}
+                    {event && (
+                      <>
+                        {' · '}
+                        <CrowdFigure event={event} />
+                      </>
+                    )}
+                  </span>
+                  {entry.review && <span className="entry-note">{entry.review}</span>}
+                </div>
+              );
+            })}
+            {plans.map((plan) => (
+              <div key={plan.id} className="entry">
+                <span className="entry-title">{plan.title}</span>
+                <span className="entry-facts">{plan.venue ?? ''}</span>
+              </div>
+            ))}
           </div>
         </section>
       )}
