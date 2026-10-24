@@ -309,13 +309,22 @@ export function UpcomingScreen() {
     setBoxAt(el.scrollTop <= 2 ? 'top' : atEnd ? 'end' : 'middle');
   };
   useLayoutEffect(() => {
-    setListHeight(planList.current ? Math.round(planList.current.getBoundingClientRect().height) : 0);
-    const rows = planList.current ? [...planList.current.children].filter((li) => !li.classList.contains('plans-window-month')) as HTMLElement[] : [];
-    const fourth = rows[PLANS_WINDOW_ROWS];
-    if (fourth) setWindowPx(Math.round(fourth.offsetTop + fourth.offsetHeight / 2));
-    // The box may come back at its top after a filter or a remount: the cues follow where it really is.
-    onBoxScroll();
-  }, [shownPlans.length, windowCapped]);
+    const list = planList.current;
+    const measure = () => {
+      setListHeight(list ? Math.round(list.getBoundingClientRect().height) : 0);
+      const rows = list ? ([...list.children].filter((li) => !li.classList.contains('plans-window-month')) as HTMLElement[]) : [];
+      const fourth = rows[PLANS_WINDOW_ROWS];
+      if (fourth) setWindowPx(Math.round(fourth.offsetTop + fourth.offsetHeight / 2));
+      // The box may come back at its top after a filter or a remount: the cues follow where it really is.
+      onBoxScroll();
+    };
+    measure();
+    // Rows that change height (a month label appearing once the box scrolls, a title loading) measure again (Codex, 11 (c)).
+    if (!list || typeof ResizeObserver === 'undefined') return;
+    const watch = new ResizeObserver(measure);
+    watch.observe(list);
+    return () => watch.disconnect();
+  }, [shownPlans.length, windowCapped, windowScrolls]);
   // The YOUR FAVES band pins at the top of the scroll area once the box is gone, with the month band under it
   // (mock 30): the month bands' sticky offset is the band's measured height, watched for changes.
   const scroller = useRef<HTMLDivElement>(null);

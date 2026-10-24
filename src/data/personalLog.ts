@@ -1341,6 +1341,12 @@ export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot): Entr
   return yourEntries(log).filter((entry) => {
     if (entry.watched || entry.kind !== 'game') return false;
     const sides = entry.sides ?? [];
+    // A program tag decides first: "SDSU MBB" credits the men's team, never the women's (Codex, 11 (c) review).
+    const own = [team.shortName, ...(team.aliases ?? [])].map((n) => n.toLowerCase());
+    const tags = (entry.tags ?? []).map((t) => t.toLowerCase());
+    if (tags.some((t) => own.includes(t))) return true;
+    const programTag = tags.some((t) => Object.values(TEAMS).some((other) => other.id !== team.id && other.metroId === team.metroId && other.shortName.toLowerCase() === t));
+    if (programTag) return false;
     if (sides.includes(team.name)) return true;
     if (!sides.includes(team.shortName)) return false;
     return (entry.sport ?? '').toLowerCase() === sport && (!entry.metroId || !team.metroId || entry.metroId === team.metroId);

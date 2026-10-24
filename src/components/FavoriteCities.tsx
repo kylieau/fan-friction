@@ -52,28 +52,64 @@ export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean
   orderRef.current = order;
   const savedRef = useRef(saved);
   savedRef.current = saved;
+  // One pointer drives a drag: its moves place the row by every row's middle (a fast flick lands where the finger is),
+  // the page scrolls near the screen's edges, and only a drag that moved saves, onto the latest saved order (Codex,
+  // 11 (b) review). A lost pointer, a released button or the window losing focus ends it.
+  const dragPointer = useRef<number | null>(null);
   useEffect(() => {
     if (!dragging) return;
     const id = dragging;
-    const onMoveWin = (ev: PointerEvent) => {
+    const startOrder = orderRef.current.join(',');
+    const scroller = rows.current.get(id)?.closest('.page') as HTMLElement | null;
+    const place = (y: number) => {
       const list = orderRef.current;
-      const at = list.indexOf(id);
-      const above = list[at - 1] ? rows.current.get(list[at - 1])?.getBoundingClientRect() : undefined;
-      const below = list[at + 1] ? rows.current.get(list[at + 1])?.getBoundingClientRect() : undefined;
-      if (above && ev.clientY < above.top + above.height / 2) move(id, at - 1);
-      else if (below && ev.clientY > below.top + below.height / 2) move(id, at + 1);
+      const others = list.filter((other) => other !== id);
+      let to = others.length;
+      for (let k = 0; k < others.length; k++) {
+        const r = rows.current.get(others[k])?.getBoundingClientRect();
+        if (r && y < r.top + r.height / 2) {
+          to = k;
+          break;
+        }
+      }
+      move(id, to);
     };
-    const onUpWin = () => {
+    const end = () => {
+      dragPointer.current = null;
       setDragging(null);
-      if (orderRef.current.join(',') !== savedRef.current.join(',')) reorderFavoriteCities(orderRef.current);
+      const now = orderRef.current;
+      if (now.join(',') === startOrder) return;
+      // Cities saved meanwhile on another device keep their place: only this city's new spot is applied to them.
+      const latest = savedRef.current.filter((c) => c !== id);
+      const after = now[now.indexOf(id) - 1];
+      const at = after ? latest.indexOf(after) + 1 : 0;
+      latest.splice(at < 0 ? latest.length : at, 0, id);
+      reorderFavoriteCities(latest);
+    };
+    const onMoveWin = (ev: PointerEvent) => {
+      if (dragPointer.current !== null && ev.pointerId !== dragPointer.current) return;
+      if (ev.pointerType === 'mouse' && ev.buttons === 0) return end();
+      place(ev.clientY);
+      if (scroller) {
+        const view = scroller.getBoundingClientRect();
+        if (ev.clientY < view.top + 60) scroller.scrollTop -= 12;
+        else if (ev.clientY > view.bottom - 60) scroller.scrollTop += 12;
+      }
+    };
+    const onUpWin = (ev: PointerEvent) => {
+      if (dragPointer.current !== null && ev.pointerId !== dragPointer.current) return;
+      place(ev.clientY);
+      end();
     };
     window.addEventListener('pointermove', onMoveWin);
     window.addEventListener('pointerup', onUpWin);
-    window.addEventListener('pointercancel', onUpWin);
+    window.addEventListener('pointercancel', end);
+    window.addEventListener('blur', end);
     return () => {
       window.removeEventListener('pointermove', onMoveWin);
       window.removeEventListener('pointerup', onUpWin);
-      window.removeEventListener('pointercancel', onUpWin);
+      window.removeEventListener('pointercancel', end);
+      window.removeEventListener('blur', end);
     };
   }, [dragging]);
 
@@ -109,6 +145,7 @@ export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean
               aria-describedby="fav-cities-help"
               onPointerDown={(ev) => {
                 ev.preventDefault();
+                dragPointer.current = ev.pointerId;
                 setDragging(id);
               }}
               onKeyDown={(ev) => {
@@ -125,12 +162,12 @@ export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean
             </button>
             <span className="fav-city-name">{METROS[id].name}</span>
             {i > 0 && (
-              <button type="button" className="sr-only" onClick={() => moveAndSave(id, i - 1)}>
+              <button type="button" className="sr-only" tabIndex={-1} onClick={() => moveAndSave(id, i - 1)}>
                 Move {METROS[id].name} up
               </button>
             )}
             {i < order.length - 1 && (
-              <button type="button" className="sr-only" onClick={() => moveAndSave(id, i + 1)}>
+              <button type="button" className="sr-only" tabIndex={-1} onClick={() => moveAndSave(id, i + 1)}>
                 Move {METROS[id].name} down
               </button>
             )}

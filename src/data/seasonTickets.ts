@@ -108,7 +108,13 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
   let changed = false;
   for (const plan of plans) {
     const mine = plan.season?.teamId === ticket.teamId;
-    if (!mine || plan.date < today) {
+    // A past plan is left alone, unless its game was moved to a later date before the plan settled: then it follows
+    // the game, or the settling would stub the old day and the season would add the new one too (Codex, 11 (c) review).
+    const movedAhead = mine && plan.date < today && (() => {
+      const g = byGameId.get(plan.season!.gameId);
+      return Boolean(g && g.date >= today && seasonPlanEventId(g) !== plan.eventId);
+    })();
+    if (!mine || (plan.date < today && !movedAhead)) {
       next.push(plan);
       continue;
     }
@@ -142,7 +148,10 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
     const twin = next.findIndex((other, j) => j !== i && other.eventId === plan.eventId && !other.season);
     if (twin < 0) continue;
     const own = next[twin];
-    const merged: Plan = !plan.season.edited && (own.seats || own.cost) ? { ...plan, ...(own.seats ? { seats: own.seats } : {}), ...(own.cost ? { cost: own.cost } : {}), season: { ...plan.season, edited: true } } : plan;
+    // Her seat and cost come along only as the kept answer allows them (Codex, 11 (c) review).
+    const seat = !plan.watch && !plan.interested ? own.seats : undefined;
+    const cost = !plan.interested ? own.cost : undefined;
+    const merged: Plan = !plan.season.edited && (seat || cost) ? { ...plan, ...(seat ? { seats: seat } : {}), ...(cost ? { cost } : {}), season: { ...plan.season, edited: true } } : plan;
     next[i] = merged;
     next.splice(twin, 1);
     changed = true;

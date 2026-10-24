@@ -44,9 +44,9 @@ export function AreaSwitcher({
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const favorites = favoriteCitiesOf(log).filter((id) => id !== home);
   const byId = new Map(covered.map((c) => [c.id, c]));
-  // Home, then the favorites in their saved order; the city on screen stays listed while it is there.
+  // Home, then the favorites in their saved order.
   const shown: Metro[] = [...(home && byId.get(home) ? [byId.get(home)!] : []), ...favorites.flatMap((id) => (byId.get(id) ? [byId.get(id)!] : []))];
-  if (!shown.some((c) => c.id === metro.id)) shown.push(metro);
+  // Home and the favorites only (M13, closed; Kylie, Oct 21, 2026); any other city is a search away (Codex, 11 (b) review).
   const typed = query.trim().toLowerCase();
   const found = typed ? covered.filter((c) => metroMatchesSearch(c, typed)) : [];
   // The list closes on a tap outside it or Escape, wherever the switcher sits (Map, List, calendar page).

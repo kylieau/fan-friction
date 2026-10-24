@@ -98,6 +98,12 @@ const interested = applySeasonDefaults({ ...p6[0], interested: true }, ticket);
 ok('defaults give a Watching plan a cost but no seat', !watching.seats && watching.cost);
 ok('defaults give an Interested plan neither', !interested.seats && !interested.cost);
 
+// 6c. Codex 11 (c) review: a game moved after its date passed takes its plan along; a moved Watching plan takes no seat.
+const overdue = reconcileSeasonPlans([{ id: 'plan-2026-10-23-mlb-1', date: '2026-10-23', metroId: 'la', eventId: '2026-10-23-mlb-1', title: 'Giants at Dodgers', season: { teamId: 'dodgers', gameId: 'mlb-dodgers-1' } }], ticket, [game('1', '2026-10-26')], '2026-10-24', 'private');
+ok('an overdue plan whose game moved ahead follows it, one plan', overdue.length === 1 && overdue[0].date === '2026-10-26');
+const watchMoved = reconcileSeasonPlans([{ ...p6[0], watch: true, seats: undefined, cost: undefined }, handMade], ticket, moved, '2026-10-24', 'private');
+ok('a moved Watching plan merges a twin without its seat', !watchMoved.find((p) => p.eventId === '2027-04-09-mlb-1').seats);
+
 // 7. Favorite cities' order (build 7.1, M31): a reorder is a stamped change, so the newer order wins on every device.
 const cA = log([], [], { favoriteCities: ['boston', 'new-york'], favoriteCitiesAt: '2026-10-24T01:00:00Z' });
 const cB = log([], [], { favoriteCities: ['new-york', 'boston'], favoriteCitiesAt: '2026-10-24T02:00:00Z' });

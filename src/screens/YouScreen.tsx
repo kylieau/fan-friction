@@ -301,6 +301,6 @@ function tileWords(fav: Favorite, genre?: string): { name: string; sub: string }
     if (label && long.endsWith(` ${label.words}`)) return { name: long.slice(0, -label.words.length - 1), sub: label.words };
     return { name: long, sub: label?.words ?? titleCaseLabel(team.sport) };
   }
-  return { name: favoriteDisplayName(fav), sub: fav.kind === 'artist' ? genre || 'Artist' : fav.kind === 'venue' ? 'Venue' : 'Festival' };
+  return { name: favoriteDisplayName(fav), sub: fav.kind === 'artist' ? genre || 'Artist' : fav.kind === 'venue' ? 'Venue' : fav.kind === 'team' ? 'Team' : 'Festival' };
 }
 

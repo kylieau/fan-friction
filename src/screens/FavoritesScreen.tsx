@@ -111,7 +111,8 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
       if (entry.kind !== 'game') continue;
       // Both sides of every game she logged (the same credit Your Stubs' team filter uses).
       for (const name of entryTeams(entry)) {
-        const fav = favoriteFor('team', name);
+        // A credited tag can repeat its program code ("UCLA MBB MBB"); one copy finds the team (Codex, 11 (c) review).
+        const fav = favoriteFor('team', name.replace(/\b(\S+)(\s+\1)+$/, '$1'));
         if (!fav.teamId || favorites.some((f) => favoriteKey(f) === favoriteKey(fav))) continue;
         const was = counts.get(fav.teamId);
         counts.set(fav.teamId, { fav, n: (was?.n ?? 0) + 1 });
@@ -189,7 +190,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
     <section className="you-block" aria-label="Results">
       <ul className="log-list">
         {found.map((fav) => (
-          <FavRow key={favoriteKey(fav)} fav={fav} shown={found} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)))} on={isOn(fav)} />
+          <FavRow key={favoriteKey(fav)} fav={fav} shown={found} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)), edit)} on={isOn(fav)} remove={edit && isOn(fav)} />
         ))}
         {!exactMatch && (
           // Placeholder for things the app doesn't know yet: a favorite by name only.
@@ -291,7 +292,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
                           {open && (
                             <ul className="log-list">
                               {teams.map((fav) => (
-                                <FavRow key={favoriteKey(fav)} fav={fav} shown={teams} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)))} on={isOn(fav)} />
+                                <FavRow key={favoriteKey(fav)} fav={fav} shown={teams} sub={subFor(fav, countFor(fav), genres.get(favoriteKey(fav)), edit)} on={isOn(fav)} remove={edit && isOn(fav)} />
                               ))}
                             </ul>
                           )}

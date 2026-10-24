@@ -180,7 +180,9 @@ function teamNameMatches(event: CrowdEvent, fav: Favorite, label: string): boole
   const names = new Set([label, ...(team ? [team.name, team.shortName, ...(team.aliases ?? [])] : [])].map((n) => n.toLowerCase().trim()));
   const title = event.title.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
   const sides = title.split(/\s+(?:at|vs\.?|v\.?|@)\s+/);
-  return sides.some((side) => names.has(side.trim()));
+  // A side may carry a decoration after a dash, a dot or a colon ("Lakers - Neutral site", "Lakers · Preseason").
+  const bare = (side: string) => side.split(/\s+[-–·:|]\s+/)[0].trim();
+  return sides.some((side) => names.has(side.trim()) || names.has(bare(side)));
 }
 
 const teamsOf = (favs: readonly Favorite[]) => favs.flatMap((f) => (f.teamId && TEAMS[f.teamId] ? [TEAMS[f.teamId]] : []));

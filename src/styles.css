@@ -12742,3 +12742,18 @@ a.follow-lead::after {
 .area-menu {
   max-height: min(60vh, 340px);
 }
+
+/* Codex, 11 (c) review: the standalone links keep the weight they had (500); the sheet's search never squeezes; the
+   sheet's Follow is filled, as in mock 64. */
+.recap-all,
+.season-card-link {
+  font-weight: 500;
+}
+.edit-faves-sheet .search-box {
+  flex-shrink: 0;
+}
+.edit-faves-sheet .pick-list .fav-toggle:not(.on) {
+  background: var(--action);
+  color: var(--card);
+  box-shadow: none;
+}
