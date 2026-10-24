@@ -4,7 +4,7 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
 import { AccountBlock } from '../components/AccountBlock';
 import { PeopleIcon } from '../components/Icons';
-import { Timeline, type TimelineItem } from '../components/Timeline';
+import { ListBand } from '../components/ListBand';
 import { FollowRow, readPath } from '../components/FollowRow';
 import { friendStubState } from '../components/FeedRow';
 import { CheckRow, FilterButton, FilterChips, FilterSheet, SheetHeading, prunePicked, readPicked, toggleIn, writePicked, type Picked } from '../components/FilterSheet';
@@ -15,7 +15,6 @@ import {
   getPersonalLog,
   isFurtherOutRoom,
   isManualEntry,
-  isOutsideGamePlan,
   nightKey,
   peopleList,
   ratingForEntry,
@@ -29,7 +28,7 @@ import {
   type Profile,
 } from '../data';
 import { ACTIVITY_WORDS, feedKind, feedSentence, type ActivityKind } from '../lib/activity';
-import { addDays, dayBandLabel, timelineGroup } from '../lib/dates';
+import { addDays, timelineGroup } from '../lib/dates';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { getPref, setPref } from '../lib/prefs';
 import { backFrom, datePath, entryPath, eventPath } from '../lib/view';
@@ -41,7 +40,8 @@ const SPAN_DAYS = 60;
 /** Your own rows carry this profile; nothing about it is ever saved or sent. */
 const YOU: Profile = { id: 'you', handle: null, displayName: 'You', avatarUrl: null, homeMetroId: null };
 
-const KINDS: ActivityKind[] = ['attended', 'attending', 'watching', 'watched', 'interested'];
+/** The filter's chips: Activity looks backward only since build 7.1 (M24), so the plan words are gone. */
+const KINDS: ActivityKind[] = ['attended', 'watched'];
 /** The people line's order, the ladder's: plans first, then what happened. */
 const KIND_ORDER: ActivityKind[] = ['attending', 'watching', 'interested', 'attended', 'watched'];
 const PEOPLE_KEY = 'fan-friction:following-friends-filter';
@@ -49,11 +49,12 @@ const KINDS_KEY = 'fan-friction:activity-kinds-filter';
 
 /**
  * Activity (build 7, §3.4; Kylie, Oct 22, 2026: the Friends side renamed, "it should include the user's own
- * activity"): one line of time of what you and the people you follow answered, one row per event with the people
- * merged on its lead line, You first. Opens on Today; past months sit straight above it (no Earlier line, no cue,
- * Locked); the "↓ Today" pill brings you back. The filter button sits beside search at search's size; its sheet is
- * Hide mine (sticky, per device), People and the activity chips. Signed out, your own local entries show under the
- * sign-in card (Locked). Managing people lives in Profile & Settings › People.
+ * activity"): what you and the people you follow attended or watched, one row per event with the people merged on
+ * its lead line, You first. Since build 7.1 (M24; Kylie, Oct 23, 2026) it looks backward only: a plain list, newest
+ * first, scrolling down into older, with no Today line, no pill and no future rows (friends' plans ahead are
+ * Upcoming's, M22); all of your own stubs show, friends' from the last 60 days. The filter button sits beside search
+ * at search's size; its sheet is Hide mine (sticky, per device), People and the Attended / Watched chips. Signed out,
+ * your own local entries show under the sign-in card (Locked). Managing people lives in Profile & Settings › People.
  */
 export function ActivityScreen() {
   const chipRow = useEdgeFade();
@@ -158,12 +159,9 @@ export function ActivityScreen() {
     setKindsPicked(null);
   };
 
-  const toItem = (item: FollowItem): TimelineItem => ({
-    key: item.key,
-    group: timelineGroup({ sort: item.date, label: '', precision: 'day' }),
-    node: <ActivityRow item={item} rating={ratingFor(item, ratings)} back={back} home={home.id} />,
-  });
-
+  // Newest first, month by month (build 7.1, M24; Kylie, Oct 23, 2026): a plain list scrolling down into older, no
+  // Today line, no pill, no future rows. Friends' upcoming plans live on Upcoming now (M22).
+  const groups = groupByMonth(items);
   const nothingFollowed = account && people !== null && following.length === 0;
   const body =
     items.length === 0 && chips.length > 0 ? (
@@ -173,33 +171,38 @@ export function ActivityScreen() {
           Show everything <span aria-hidden>›</span>
         </button>
       </div>
+    ) : items.length === 0 ? (
+      nothingFollowed ? (
+        <div className="card empty-card following-empty">
+          <div className="card-title">No friends yet</div>
+          <p className="following-empty-sub">Find people to see what they attend, watch, or are interested in.</p>
+          <Link to="/you/settings?find=1#people" className="following-empty-button">
+            Find people
+          </Link>
+        </div>
+      ) : (
+        <div className="card empty-card">
+          <div className="card-title">{account ? `Nothing from you yet, or from the people you follow in the last ${SPAN_DAYS} days.` : 'Nothing stubbed yet.'}</div>
+        </div>
+      )
     ) : (
-      <Timeline
-        label="Activity"
-        past={items.filter((item) => item.date < today).map(toItem)}
-        future={items.filter((item) => item.date >= today).map(toItem)}
-        todayLabel={dayBandLabel(today, today)}
-        emptyPast={
-          <div className="card empty-card">
-            <div className="card-title">{account ? `Nothing from you or the people you follow in the last ${SPAN_DAYS} days.` : `Nothing you logged in the last ${SPAN_DAYS} days.`}</div>
-          </div>
-        }
-        emptyFuture={
-          nothingFollowed ? (
-            <div className="card empty-card following-empty">
-              <div className="card-title">No friends yet</div>
-              <p className="following-empty-sub">Find people to see what they attend, watch, or are interested in.</p>
-              <Link to="/you/settings?find=1#people" className="following-empty-button">
-                Find people
-              </Link>
-            </div>
-          ) : (
-            <div className="card empty-card">
-              <div className="card-title">{account ? 'Nothing coming up from you or the people you follow.' : 'Nothing coming up in your plans.'}</div>
-            </div>
-          )
-        }
-      />
+      <div className="timeline-body">
+        <div className="timeline-scroll activity-list" aria-label="Activity">
+          {groups.map(([group, rows]) => (
+            <section key={group} className="timeline-group" aria-label={group}>
+              <ListBand label={group} />
+              <ul className="log-list">
+                {rows.map((item) => (
+                  <li key={item.key}>
+                    <ActivityRow item={item} rating={ratingFor(item, ratings)} back={back} home={home.id} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+          <p className="you-fine activity-footer">Friends' activity from the last {SPAN_DAYS} days. All of your own stubs show.</p>
+        </div>
+      </div>
     );
 
   return (
@@ -274,28 +277,23 @@ function personName(p: Pick<PersonRow, 'profile'>): string {
   return p.profile.displayName ?? p.profile.handle ?? 'Someone';
 }
 
-/** Your own answers as feed lines: stubs from the last 60 days and every plan ahead (Attending, Watching, Interested). */
+/** Your own answers as feed lines: every past stub, Attended and Watched, with no date limit (M24). Plans are Upcoming's. */
 function ownLines(log: ReturnType<typeof getPersonalLog>, today: string): OwnLine[] {
-  const floor = addDays(today, -SPAN_DAYS);
-  const stubs: OwnLine[] = yourEntries(log)
-    .filter((entry) => entry.when.precision === 'day' && entry.when.sort < today && entry.when.sort >= floor)
+  return yourEntries(log)
+    .filter((entry) => entry.when.precision === 'day' && entry.when.sort < today)
     .map((entry) => ({ kind: 'attended', friend: YOU, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}), ...(isManualEntry(entry) ? { ownId: entry.id } : {}) }));
-  const plans: OwnLine[] = log.plans
-    .filter((plan) => plan.date >= today)
-    .map((plan) => ({
-      kind: 'planning',
-      friend: YOU,
-      title: plan.title,
-      date: plan.date,
-      venue: plan.venue,
-      metroId: plan.metroId,
-      eventId: plan.eventId,
-      ...(plan.watch ? { watched: true } : {}),
-      ...(plan.interested ? { interested: true } : {}),
-      ...(plan.manual && !plan.eventId ? { ownId: plan.id } : {}),
-      ...(isOutsideGamePlan(plan) ? { noRead: true } : {}),
-    }));
-  return [...stubs, ...plans];
+}
+
+/** Rows by their month band, newest first, each band's rows newest first too. */
+function groupByMonth(items: readonly FollowItem[]): [string, FollowItem[]][] {
+  const groups: [string, FollowItem[]][] = [];
+  for (const item of items) {
+    const group = timelineGroup({ sort: item.date, label: '', precision: 'day' });
+    const last = groups[groups.length - 1];
+    if (last && last[0] === group) last[1].push(item);
+    else groups.push([group, [item]]);
+  }
+  return groups;
 }
 
 /** One row on the Activity timeline: an event and everyone's answers on it. */
@@ -318,12 +316,16 @@ interface FollowItem {
 /** Your own lines carry a little more than a friend's: the row's own id and whether it has a read. */
 type OwnLine = FeedItem & { ownId?: string; noRead?: boolean };
 
-/** Lines merged by event, in date order: plans ahead, and what was attended or watched in the last 60 days. You first. */
+/**
+ * Lines merged by event, newest first (M24): what was attended or watched, friends' from the last 60 days and all of
+ * yours; a friend's plan ahead never comes here (it is Upcoming's). You first on a row.
+ */
 function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
   const out = new Map<string, FollowItem>();
   const floor = addDays(today, -SPAN_DAYS);
   for (const line of lines) {
-    if (line.date < floor) continue;
+    if (line.kind === 'planning' || line.date >= today) continue;
+    if (line.friend.id !== YOU.id && line.date < floor) continue;
     const key = line.eventId ?? `${line.metroId ?? ''}|${line.date}|${line.title.toLowerCase()}`;
     const item = out.get(key) ?? { key, title: line.title, date: line.date, venue: line.venue, metroId: line.metroId, eventId: line.eventId, people: [] };
     if (line.friend.id === YOU.id) {
@@ -335,7 +337,12 @@ function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
     if (line.entry && (!item.entry || line.friend.id === YOU.id)) item.entry = line.entry;
     out.set(key, item);
   }
-  return [...out.values()].sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
+  return [...out.values()].sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
+}
+
+/** No verdict pill when nobody on the row attended (build 7.1, M23: Watched never counts). */
+function nobodyAttended(item: FollowItem): boolean {
+  return item.people.every((p) => feedKind(p) === 'watched');
 }
 
 function ratingFor(item: FollowItem, ratings: ReadonlyMap<string, number>): number | null {
@@ -387,6 +394,7 @@ function ActivityRow({ item, rating, back, home }: { item: FollowItem; rating: n
       rating={rating}
       readTo={isFurtherOutRoom(item.metroId, item.venue) ? null : readPath(item.date, item.metroId, item.eventId)}
       cityCode={item.metroId && item.metroId !== home ? METROS[item.metroId]?.code : null}
+      noTile={nobodyAttended(item)}
       spoken={`${item.title}, ${line}`}
     />
   );

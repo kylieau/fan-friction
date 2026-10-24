@@ -11618,3 +11618,28 @@ a.follow-lead::after {
 .day-row-line2 .event-tags + .day-row-weather {
   margin-left: 8px;
 }
+
+/* Activity since build 7.1 (M24): a plain newest-first list with its one footer line. */
+.activity-footer {
+  padding: 4px 4px 0;
+}
+
+/* A fave's row that is also a plan (build 7.1, item 16, option A): the plan's icon, 13px, action blue, after the title. */
+.follow-mark {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  color: var(--dodger);
+  vertical-align: middle;
+}
+.follow-mark svg {
+  width: 13px;
+  height: 13px;
+}
+/* "Friends · Sam R. Attending" under a fave's row (M22). */
+.follow-line {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dodger);
+}
