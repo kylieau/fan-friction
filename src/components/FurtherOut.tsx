@@ -79,14 +79,13 @@ export function driveText(minutes: number): string {
   return rest ? `${h} hr ${rest} min drive` : `${h} hr drive`;
 }
 
-/** "Toyota Arena · Ontario · 1 hr 5 min drive". */
+/** "Acrisure Arena · Palm Desert": the room and its town, no drive (build 7.1, M34; Kylie, Oct 23, 2026). */
 export function furtherOutPlace(event: CrowdEvent): string | null {
   if (event.place.type !== 'venue') return event.place.name;
   const venue = VENUES[event.place.venueId];
   if (!venue) return null;
   const parts = [venueNameOn(venue, event.date)];
   if (venue.furtherOut?.town) parts.push(venue.furtherOut.town);
-  if (venue.furtherOut?.driveMinutes) parts.push(driveText(venue.furtherOut.driveMinutes));
   return parts.join(' · ');
 }
 

@@ -7349,15 +7349,6 @@ ul.fav-strip {
   padding: calc(8px + env(safe-area-inset-top, 0px)) 16px 8px;
 }
 
-.explore-list-band {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: var(--ink2);
-  padding: 0 4px;
-}
-
 .explore-list-scroll {
   position: relative;
   flex: 1;
@@ -7418,6 +7409,8 @@ ul.fav-strip {
 }
 
 .today-pill {
+  /* The Map's Today button's size (build notes 4, V07; build 7.1, M37): 30px visible, 13px type, a light shadow.
+     The 44pt tap area is the invisible ::after extension below, never the drawn size. */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -7425,16 +7418,16 @@ ul.fav-strip {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
-  padding: 0 18px;
+  height: 30px;
+  padding: 0 14px;
   border: 0;
-  border-radius: 22px;
+  border-radius: 15px;
   background: var(--card);
   color: var(--dodger);
   font: inherit;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 800;
-  box-shadow: 0 2px 10px rgba(15, 27, 45, 0.28);
+  box-shadow: 0 1px 6px rgba(15, 27, 45, 0.18);
 }
 
 .today-pill.is-down {
@@ -7443,6 +7436,11 @@ ul.fav-strip {
 
 .today-pill.is-up {
   top: 8px;
+}
+
+/* On the Explore List the pill sits below the pinned day row, not over it (M28; the 28-d board's 48px). */
+.explore-list-body .today-pill.is-up {
+  top: 48px;
 }
 
 /* ---------- Stub tags (build notes 4; mock tags-luggage.png) ---------- */
@@ -8328,11 +8326,6 @@ ul.fav-strip {
   padding-bottom: 0;
 }
 
-.explore-list-band {
-  text-align: center;
-  font-size: 11px;
-}
-
 .explore-list-dayhead {
   padding: 3px 16px;
   min-height: 0;
@@ -9172,6 +9165,16 @@ span.fav-sched-read {
   color: inherit;
   text-decoration: none;
 }
+/* On the Explore List each day's band sticks to the top of the list until the next day's pushes it off (build 7.1,
+   M28; Kylie, Oct 23, 2026), on a solid background so the rows never show through it; its verdict pill rides along. */
+.explore-list-day > .list-band-link {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.explore-list-day > .list-band-link .list-band {
+  background: color-mix(in srgb, var(--ink) 8%, var(--bg));
+}
 /* Inside a page (16 px side padding) the band runs edge to edge, like the Explore List's. */
 .page .list-band {
   margin: 0 -16px;
@@ -9785,7 +9788,8 @@ a.follow-lead::after {
 
 /* Further out (Kylie, Oct 19–20, 2026): the Explore List's small heading over a day's further-out rows. */
 .further-out-head {
-  padding: 8px 16px 0;
+  /* No top padding: the hidden line above keeps the same 6px on both sides (build 7.1, M36). */
+  padding: 0 16px;
 }
 
 /* The Add a game / Add a show card (Oct 21, 2026): the dialog card, sat at the bottom like a sheet. */

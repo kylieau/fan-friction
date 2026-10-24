@@ -19,8 +19,8 @@ import {
   rangeOn,
   splitByRange,
 } from '../data';
-import { addDays, daysBetween } from '../lib/dates';
-import { mondayOf, weekOf } from '../data/cityList';
+import { addDays } from '../lib/dates';
+import { mondayOf } from '../data/cityList';
 import { friendsLine, yourActivity } from '../lib/activity';
 import { getPref } from '../lib/prefs';
 import { datePath, mapPath, useView } from '../lib/view';
@@ -83,19 +83,6 @@ function dayLabel(date: string, today: string): string {
   });
   const lead = date === today ? 'Today' : date === addDays(today, 1) ? 'Tomorrow' : null;
   return lead ? `${lead} · ${base}` : base;
-}
-
-/**
- * The week line over the List (build 5, item 5; Kylie, Oct 14, answers D and D2): every week is a lineup,
- * "This week's lineup", "Next week's lineup", "Last week's lineup", else "Week of Oct 26 · lineup". Shown uppercase.
- */
-function weekWord(monday: string, thisMonday: string): string {
-  const weeks = Math.round(daysBetween(thisMonday, monday) / 7);
-  if (weeks === 0) return "This Week's Lineup";
-  if (weeks === 1) return "Next Week's Lineup";
-  if (weeks === -1) return "Last Week's Lineup";
-  const month = new Date(`${monday}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-  return `Week of ${month} ${Number(monday.slice(8))} · Lineup`;
 }
 
 /**
@@ -451,17 +438,8 @@ export function ExploreListScreen() {
 
   const pickDay = (date: string) => setPending({ date, smooth: true });
 
-  // The band under the calendar: the week at the top of the list and how many rows it has.
-  const calendarMonday = mondayOf(topDate);
-  // Visible rows only (answer A), so the count matches the list; a day's further-out rows count as rows.
-  const weekCount = useMemo(() => {
-    if (!range) return 0;
-    return weekOf(calendarMonday).reduce((sum, date) => {
-      const day = days.find((d) => d.date === date);
-      return sum + (day ? day.events.length + day.further.length : 0);
-    }, 0);
-  }, [days, calendarMonday, range]);
-  const thisMonday = mondayOf(today);
+  // The week band that sat under the calendar ("This Week's Lineup · N Events", build 5, item 5) is gone (build 7.1,
+  // M27; Kylie, Oct 23, 2026): the calendar and the day rows say it.
 
   const toToday = () => {
     // A future deep link may not have loaded today's week yet. Use the same loader and
@@ -481,11 +459,6 @@ export function ExploreListScreen() {
           <ExploreModeSwitch view="list" />
         </ExploreHeader>
         {range && allMondays.length > 0 && <WeekCalendar mondays={allMondays} reads={reads} today={today} range={range} topDate={topDate} onPick={pickDay} onNeed={needWeeks} />}
-        {range && (
-          <div className="explore-list-band">
-            {weekWord(calendarMonday, thisMonday)} · {weekCount} {weekCount === 1 ? 'Event' : 'Events'}
-          </div>
-        )}
       </div>
       <div className="explore-list-body">
         {pill && (
