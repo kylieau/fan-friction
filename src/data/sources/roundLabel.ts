@@ -187,9 +187,9 @@ export function leagueFromPath(path: string): FeedLeague | null {
 
 const COLLEGE_ROUNDS: [RegExp, string][] = [
   [/^first four$/i, 'First Four'],
-  [/^(?:1st|first) round$/i, 'First round'],
-  [/^(?:2nd|second) round$/i, 'Second round'],
-  [/^(?:3rd|third) round$/i, 'Third round'],
+  [/^(?:1st|first) round$/i, 'First Round'],
+  [/^(?:2nd|second) round$/i, 'Second Round'],
+  [/^(?:3rd|third) round$/i, 'Third Round'],
   [/sweet (?:16|sixteen)|regional semifinal/i, 'Sweet 16'],
   [/elite (?:8|eight)|regional final/i, 'Elite Eight'],
   [/final four|national semifinal/i, 'Final Four'],
@@ -205,10 +205,10 @@ const COLLEGE_ROUNDS: [RegExp, string][] = [
  * first two rounds. The NCAA's own names since 2016 are "First Round" and "Second Round"; this is her call, kept on
  * purpose. Other tournaments keep "First round".
  */
-const MARCH_MADNESS: Record<string, string> = { 'First round': 'Round of 64', 'Second round': 'Round of 32' };
+const MARCH_MADNESS: Record<string, string> = { 'First Round': 'Round of 64', 'Second Round': 'Round of 32' };
 
 /** Hockey's NCAA tournament has 16 teams: its regionals are not the Sweet 16 or the Elite Eight. */
-const HOCKEY_REGIONALS: Record<string, string> = { 'Sweet 16': 'Regional semifinal', 'Elite Eight': 'Regional final' };
+const HOCKEY_REGIONALS: Record<string, string> = { 'Sweet 16': 'Regional Semifinal', 'Elite Eight': 'Regional Final' };
 
 /** Every word a college round can read as, so a saved title's label is recognized (eventTitle.ts, readLabel). */
 const COLLEGE_ROUND_WORDS = [...new Set([...COLLEGE_ROUNDS.map(([, w]) => w), ...Object.values(MARCH_MADNESS), ...Object.values(HOCKEY_REGIONALS)])];

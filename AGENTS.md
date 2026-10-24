@@ -62,6 +62,8 @@ screen space explaining patterns they already know: no "this is how others see
 you" banners, no reassurance fine print, no hint text under every control. Put
 utilities (Export, account details, settings) behind a gear, not top and center.
 Follow expert UX patterns, say less.
+- **Title Case on every heading** (Kylie, Oct 23, 2026, build 7.1 M2 and M8): section and band titles, sub-page titles, sheet titles, Settings row labels, back-link labels that name a page, event labels ("Home Opener", "Spring Training", "First Round") and sport names ("Men's Basketball", "Football"). Capitalize every word except short joining words (a, an, the, and, or, of, at, in, on, to, for, vs., per) unless first; keep "&" where the name uses it ("Profile & Settings"). Body copy, helper lines, buttons, placeholders and empty-state sentences stay sentence case.
+- **Oxford comma** (Kylie, Oct 23, 2026, build 7.1 item 14b): every list of three or more in app copy takes it ("Attending, Watching, or Interested"), helpers, share cards and empty states included.
 
 ## How to explain changes
 Keep explanations high-level and conceptual, not code-level. End with

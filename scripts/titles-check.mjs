@@ -29,17 +29,17 @@ try {
     // Labels r3 (Kylie, Oct 15): the short name carries the label inline, in parentheses, outside the 32-character budget.
     ['Long name, label kept', game('Brewers vs. Diamondbacks', { sport: 'baseball', teams: { home: 'brewers', away: 'diamondbacks' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { short: 'Diamondbacks at Brewers (NLCS\u00a0G3)' }],
     ['If necessary, one set of parentheses', game('Dodgers vs. Brewers', { sport: 'baseball', teams: { home: 'dodgers', away: 'brewers' }, stakes: { round: 'NLCS', game: 6, ifNecessary: true }, sourceId: 'mlb' }), { chip: 'Dodgers (NLCS\u00a0G6)', short: 'Brewers at Dodgers (NLCS\u00a0G6, if necessary)' }],
-    ['Home opener', game('Dodgers vs. Giants', { sport: 'baseball', teams: { home: 'dodgers', away: 'giants' }, homeOpener: true, sourceId: 'mlb' }), { chip: 'Dodgers', short: 'Giants at Dodgers (Home opener)' }],
+    ['Home Opener', game('Dodgers vs. Giants', { sport: 'baseball', teams: { home: 'dodgers', away: 'giants' }, homeOpener: true, sourceId: 'mlb' }), { chip: 'Dodgers', short: 'Giants at Dodgers (Home Opener)' }],
     ['Exhibition from the title', game('Galaxy vs. Club América Exhibition', { sport: 'soccer', sourceId: 'ticketmaster' }), { chip: 'Galaxy' }],
     ['N06/N07 Super Bowl', game('Rams vs. Chiefs', { teams: { home: 'rams', away: 'chiefs' }, stakes: { round: 'Super Bowl' }, date: '2027-02-14' }), { full: 'Chiefs vs. Rams (Super Bowl 2027)' }],
     ['N08 Preseason', game('Clippers vs. Nuggets', { sport: 'basketball', teams: { home: 'clippers', away: 'nuggets' }, preseason: true }), { chip: 'Clippers', short: 'Nuggets at Clippers (Preseason)' }],
-    ['Case 1 spring training', game('Reds vs. Cubs', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'reds', away: 'cubs' }, preseason: true, sourceId: 'mlb' }), { short: 'Cubs at Reds (Spring training)', full: 'Cubs at Reds (Spring training, Cactus League)' }],
+    ['Case 1 spring training', game('Reds vs. Cubs', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'reds', away: 'cubs' }, preseason: true, sourceId: 'mlb' }), { short: 'Cubs at Reds (Spring Training)', full: 'Cubs at Reds (Spring Training, Cactus League)' }],
     // Doubleheaders (Kylie, M3-04; build 6, item 10): never a plain "Game N"; the chip keeps DH1.
     ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels (DH1)', short: "A's at Angels (DH1)", full: "A's at Angels (Doubleheader, Game 1)" }],
     // Rank in the title, event page only, when a source filled it (Kylie, M3-08; build 6, item 10).
     // Since build 7.1 (M38) college football carries its label too.
     ['Rank in the full title', game('UCLA vs. USC', { sport: 'football', teams: { home: 'ucla-football', away: 'usc-football' }, rank: { home: 4, away: 17 } }), { short: 'USC at UCLA (FB)', full: '#17 USC at #4 UCLA (Football)' }],
-    ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls (AHL playoffs)', full: 'Reign at Gulls (Calder Cup Playoffs)' }],
+    ['Case 6 AHL Playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls (AHL Playoffs)', full: 'Reign at Gulls (Calder Cup Playoffs)' }],
     ['N10 artist before tour', show('Song Of The Saints Tour with Phil Wickham', { performer: 'Phil Wickham' }), { full: 'Phil Wickham · Song Of The Saints Tour' }],
     ['N28 middle dot', show('Phoebe Bridgers: The Lost Tour', { performer: 'Phoebe Bridgers' }), { short: 'Phoebe Bridgers · The Lost Tour' }],
     // A quoted tour after the act (Oct 20, 2026); quotes elsewhere only lose the spaces inside them.
@@ -69,7 +69,7 @@ try {
   const tm = { ...game('Chicago Cubs vs. Los Angeles Dodgers', { sport: 'baseball', metroId: 'phoenix', sourceId: 'ticketmaster' }), id: 'tm-1' };
   const mlb = { ...game('Cubs vs. Dodgers', { sport: 'baseball', metroId: 'phoenix', teams: { home: 'cubs', away: 'dodgers' }, preseason: true, sourceId: 'mlb' }), id: 'mlb-1' };
   const merged = mergeDuplicates([tm, mlb]);
-  const ok = merged.length === 1 && merged[0].sourceId === 'mlb' && merged[0].mergedFrom?.[0]?.id === 'tm-1' && listTitle(merged[0]) === 'Dodgers at Cubs (Spring training)';
+  const ok = merged.length === 1 && merged[0].sourceId === 'mlb' && merged[0].mergedFrom?.[0]?.id === 'tm-1' && listTitle(merged[0]) === 'Dodgers at Cubs (Spring Training)';
   if (!ok) (failed += 1), console.log(`FAIL step 0 merge: ${merged.length} records, ${merged.map((e) => `${e.sourceId}: ${listTitle(e)}`).join(' / ')}`);
   else console.log(`ok   Step 0 merge: one record, ${listTitle(merged[0])} (from ${merged[0].mergedFrom.map((m) => m.sourceId).join(', ')})`);
   const addOn = { ...other('Brooklyn Nets v. Charlotte Hornets Post-Game Free Throw Opportunity', { sourceId: 'ticketmaster' }), id: 'tm-2' };
@@ -107,7 +107,7 @@ try {
     ['Braves at Dodgers · NLDS Game 1', 'Braves at Dodgers', 'stage', 'NLDS Game\u00a01'],
     ['Brewers at Dodgers · NLCS, Game 3', 'Brewers at Dodgers', 'stage', 'NLCS Game\u00a03'],
     ['Preseason · vs. Nuggets', 'vs. Nuggets', 'low', 'Preseason'],
-    ['Cubs at Reds (Spring training, Cactus League)', 'Cubs at Reds', 'low', 'Spring training, Cactus League'],
+    ['Cubs at Reds (Spring Training, Cactus League)', 'Cubs at Reds', 'low', 'Spring Training, Cactus League'],
     ['Jessie Ware (DJ Set)', 'Jessie Ware (DJ Set)', null, null],
     // Build 7.1, M38: a sport alone is a label too ("Football"), so an older " · Football" tail reads as one.
     ['Wisconsin at UCLA · Football', 'Wisconsin at UCLA', 'sport', 'Football'],

@@ -244,7 +244,7 @@ export function DateScreen() {
               </span>
             </span>
             {locked && (
-              <button type="button" className="read-info" aria-label="About this verdict" onClick={() => setAbout(true)}>
+              <button type="button" className="read-info" aria-label="About This Verdict" onClick={() => setAbout(true)}>
                 i
               </button>
             )}
@@ -331,7 +331,7 @@ export function DateScreen() {
               The title sits inside the card, like Local Competition (Kylie, Oct 15). */}
           <div className="date-lineup-card">
             <h2 id="that-date" className="you-heading in-card-title">
-              {weekdayLong(date)}'s lineup
+              {weekdayLong(date)}'s Lineup
             </h2>
             <ul className="date-list">
             {lineup.shown.map((e) => (
@@ -360,7 +360,7 @@ export function DateScreen() {
         <section className="you-block" aria-labelledby="further-out">
           <div className="date-lineup-card">
             <h2 id="further-out" className="you-heading in-card-title">
-              Further out
+              Further Out
             </h2>
             <FurtherOutList events={further} variant="date" />
           </div>
@@ -433,7 +433,7 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
       <div className="home-card about-read" onClick={(event) => event.stopPropagation()}>
         <div className="about-read-head">
           <h2 id="about-read-title" className="home-title">
-            About this verdict
+            About This Verdict
           </h2>
           <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
             ×

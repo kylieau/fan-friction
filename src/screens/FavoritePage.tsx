@@ -468,7 +468,7 @@ export function FavoritePage() {
 
       <section className="you-block" aria-labelledby="fav-mine">
         <h2 id="fav-mine" className="you-heading">
-          Your events
+          Your Events
         </h2>
         {mine.length === 0 ? (
           <div className="card empty-card">

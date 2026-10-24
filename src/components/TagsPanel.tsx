@@ -62,12 +62,12 @@ export function TagsPanel({
   };
 
   return (
-    <div className="tags-panel" role="group" aria-label="Add tags">
+    <div className="tags-panel" role="group" aria-label="Add Tags">
       <div className="tags-panel-head">
         <button type="button" className="tags-panel-back" onClick={onDone}>
           ‹ Back
         </button>
-        <h2 className="tags-panel-title">Add tags</h2>
+        <h2 className="tags-panel-title">Add Tags</h2>
         <button type="button" className="tags-panel-done" onClick={onDone}>
           Done
         </button>

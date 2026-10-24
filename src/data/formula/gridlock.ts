@@ -641,7 +641,7 @@ export function gridlockWhy(g: DateGridlock, date: string): string {
   const z = g.worst;
   if (!z || z.score < 2) return 'Roads about normal for the venues in play.';
   const names = z.events.map((e) => e.title);
-  const who = names.length <= 2 ? names.join(' and ') : `${names.slice(0, 2).join(', ')} and ${names.length - 2} more`;
+  const who = names.length <= 2 ? names.join(' and ') : `${names.slice(0, 2).join(', ')}, and ${names.length - 2} more`;
   const day = new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' });
   const when = z.events.every((e) => startHour(e) < 14) ? 'afternoon' : 'evening';
   const together = z.events.length > 1 ? 'arriving together' : 'alone';

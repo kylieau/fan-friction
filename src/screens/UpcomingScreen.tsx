@@ -155,8 +155,8 @@ export function UpcomingScreen() {
   });
 
   const band = !filter.plans ? null : shownPlans.length > 0 ? (
-    <section className="plans-band" aria-label="Your plans">
-      <h2 className="plans-band-title">Your plans</h2>
+    <section className="plans-band" aria-label="Your Plans">
+      <h2 className="plans-band-title">Your Plans</h2>
       <ul className="log-list plans-band-list">
         {shownPlans.map((plan) => (
           <li key={plan.id}>
@@ -181,7 +181,7 @@ export function UpcomingScreen() {
       <div className="you-header">
         <h1 className="page-title">Upcoming</h1>
         <span className="header-actions">
-          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter upcoming" />
+          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter Upcoming" />
           <SearchButton />
         </span>
       </div>
@@ -189,7 +189,7 @@ export function UpcomingScreen() {
       {favorites.length === 0 && plans.length === 0 ? (
         <div className="card empty-card following-empty">
           <div className="card-title">No Faves yet</div>
-          <p className="following-empty-sub">Follow a team, artist or venue to see their games and shows here.</p>
+          <p className="following-empty-sub">Follow a team, artist, or venue to see their games and shows here.</p>
           <button type="button" className="following-empty-button" onClick={() => setEditingFaves(true)}>
             Add a Fave
           </button>
@@ -215,7 +215,7 @@ export function UpcomingScreen() {
           }
           emptyFuture={
             <div className="card empty-card">
-              <div className="card-title">{favorites.length === 0 ? 'Follow a team, artist or venue to see what is ahead.' : `Nothing from your Faves in the next ${SPAN_DAYS} days.`}</div>
+              <div className="card-title">{favorites.length === 0 ? 'Follow a team, artist, or venue to see what is ahead.' : `Nothing from your Faves in the next ${SPAN_DAYS} days.`}</div>
               {favorites.length === 0 && (
                 <div className="empty-actions">
                   <button type="button" className="link-button" onClick={() => setEditingFaves(true)}>
@@ -374,7 +374,7 @@ function UpcomingFilterSheet({
   };
   const shownCount = favPicked === null ? favorites.length : [...favPicked].filter((k) => keys.includes(k)).length;
   return (
-    <FilterSheet title="Filter upcoming" onReset={onReset} onClose={onClose}>
+    <FilterSheet title="Filter Upcoming" onReset={onReset} onClose={onClose}>
       <SheetHeading>Dates</SheetHeading>
       <div className="filter-dates">
         <label className="seat-field">
@@ -409,7 +409,7 @@ function UpcomingFilterSheet({
       <SheetHeading>Show</SheetHeading>
       <ul className="log-list card sheet-list">
         {/* One of the two always stays on: unchecking the last one checks the other. */}
-        <CheckRow on={filter.plans} title="Your plans" sub="Attending, Watching and Interested" onToggle={() => onFilter({ ...filter, plans: !filter.plans, faves: filter.plans ? true : filter.faves })} />
+        <CheckRow on={filter.plans} title="Your Plans" sub="Attending, Watching, and Interested" onToggle={() => onFilter({ ...filter, plans: !filter.plans, faves: filter.plans ? true : filter.faves })} />
         <CheckRow on={filter.faves} title="Faves" sub="Games and shows from what you follow" onToggle={() => onFilter({ ...filter, faves: !filter.faves, plans: filter.faves ? true : filter.plans })} />
       </ul>
       {filter.plans && (

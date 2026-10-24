@@ -153,8 +153,8 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Team, artist or venue"
-          aria-label="Find a team, artist or venue"
+          placeholder="Team, artist, or venue"
+          aria-label="Find a team, artist, or venue"
         />
       </label>
       {query && (
@@ -238,7 +238,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
                 Concerts will browse by genre once artists carry one (artist-genres research). */}
             <section className="you-block" aria-labelledby="pick-browse">
               <h2 id="pick-browse" className="you-heading">
-                Browse by league
+                Browse by League
               </h2>
               {browse.map(({ sport, leagues }) => (
                 <div key={sport} className="browse-sport">

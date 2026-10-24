@@ -36,9 +36,9 @@ export function SameTour({ event }: { event: CrowdEvent }) {
   }, [event]);
   if (!rows || rows.length === 0) return null;
   return (
-    <section className="same-tour" aria-label="More dates">
+    <section className="same-tour" aria-label="More Dates">
       {/* One heading for every kind of event (build 5, item 7, C2). */}
-      <h2 className="you-heading">More dates</h2>
+      <h2 className="you-heading">More Dates</h2>
       <div className="same-tour-row" ref={row}>
         {rows.map(({ event: other, rating }) => (
           <Link key={other.id} to={eventRowPath(other)} className="same-tour-cell">

@@ -49,7 +49,7 @@ export function FrictionLadder({ entries, ratings, year }: { entries: Entry[]; r
   const fightText = [fights.steamrolled > 0 ? `Steamrolled ×${fights.steamrolled}` : null, fights.swamped > 0 ? `Swamped ×${fights.swamped}` : null].filter(Boolean).join(', ');
 
   return (
-    <section className="your-year" aria-label="Your year">
+    <section className="your-year" aria-label="Your Year">
       <div className="your-year-head">
         <h2 className="you-heading">{year ? 'Your reads' : scope === 'year' ? thisYear : 'All time'}</h2>
         {!year && (
@@ -71,7 +71,7 @@ export function FrictionLadder({ entries, ratings, year }: { entries: Entry[]; r
           <p className="your-usual your-counts">
             {inScope.length} attended{watchedCount > 0 ? ` · ${watchedCount} watched` : ''}
           </p>
-          <div className="word-row" aria-label="Events by verdict">
+          <div className="word-row" aria-label="Events by Verdict">
             {byWord.map(({ word, count }) => (
               <span key={word} className={`word-pill ${word.toLowerCase()}`}>
                 <strong>{count}</strong> {word}

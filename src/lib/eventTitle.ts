@@ -211,8 +211,8 @@ const ROUNDS: Record<string, RoundWords> = {
   'Conf Final': { chip: 'Conf Final', short: 'Conf Final', full: 'Conference Final' },
   Semis: { chip: 'Semis', short: 'Semifinals', full: 'Semifinals' },
   Semifinals: { chip: 'Semis', short: 'Semifinals', full: 'Semifinals' },
-  '1st Round': { chip: '1st Round', short: 'First round', full: 'First round' },
-  '2nd Round': { chip: '2nd Round', short: 'Second round', full: 'Second round' },
+  '1st Round': { chip: '1st Round', short: 'First Round', full: 'First Round' },
+  '2nd Round': { chip: '2nd Round', short: 'Second Round', full: 'Second Round' },
   'CFP Semi': { chip: 'CFP Semi', short: 'CFP Semifinal', full: 'College Football Playoff Semifinal' },
   CFP: { chip: 'CFP', short: 'CFP', full: 'College Football Playoff' },
   'Title Game': { chip: 'Title Game', short: 'Title Game', full: 'College Football Playoff National Championship', final: true },
@@ -222,19 +222,19 @@ const ROUNDS: Record<string, RoundWords> = {
 /** Minor-league hockey (case 6): each league's own playoff name in the full title; AHL and ECHL are the two given. */
 const CUP_NAMES: Record<string, string> = { AHL: 'Calder Cup Playoffs', ECHL: 'Kelly Cup Playoffs' };
 
-/** The same words for the same round (N05): "Semifinals", "First round", "Second round"; official names kept. */
+/** The same words for the same round (N05): "Semifinals", "First Round", "Second Round"; official names kept. */
 function sameWords(round: string): string {
   return round
     .replace(/\bSemis\b/i, 'Semifinals')
-    .replace(/\b(1st|First) Round\b/i, 'First round')
-    .replace(/\b(2nd|Second) Round\b/i, 'Second round');
+    .replace(/\b(1st|First) Round\b/i, 'First Round')
+    .replace(/\b(2nd|Second) Round\b/i, 'Second Round');
 }
 
 function roundWords(round: string): RoundWords & { minor?: boolean } {
   const known = ROUNDS[round];
   if (known) return known;
   const minor = round.match(/^(\S+) Playoffs$/);
-  if (minor) return { chip: `${minor[1]} playoffs`, short: `${minor[1]} playoffs`, full: CUP_NAMES[minor[1]] ?? `${minor[1]} playoffs`, minor: true };
+  if (minor) return { chip: `${minor[1]} Playoffs`, short: `${minor[1]} Playoffs`, full: CUP_NAMES[minor[1]] ?? `${minor[1]} Playoffs`, minor: true };
   const words = sameWords(round);
   return { chip: round, short: words, full: words };
 }
@@ -347,7 +347,7 @@ function designationOf(event: CrowdEvent): GameParts['designation'] {
   if (!event.preseason) return null;
   if (event.audience.domain === 'sports' && event.audience.sport === 'baseball') {
     const league = springLeague(event);
-    return { chip: 'Spring training', short: 'Spring training', full: league ? `Spring training, ${league}` : 'Spring training', aside: true };
+    return { chip: 'Spring Training', short: 'Spring Training', full: league ? `Spring Training, ${league}` : 'Spring Training', aside: true };
   }
   return { chip: 'Preseason', short: 'Preseason', full: 'Preseason', aside: true };
 }
@@ -362,7 +362,7 @@ export type LabelKind = 'stage' | 'low' | 'occasion' | 'game' | 'sport';
 
 export interface EventLabel {
   kind: LabelKind;
-  /** Own line in lists: "NLCS Game 3", "Preseason", "Home opener". */
+  /** Own line in lists: "NLCS Game 3", "Preseason", "Home Opener". */
   own: string;
   /** Own line on the event page, words spelled out (N03): "NL Championship Series Game 3". */
   full: string;
@@ -419,7 +419,7 @@ function stageLabel(event: CrowdEvent): EventLabel | null {
   if (event.preseason) {
     if (event.audience.sport === 'baseball') {
       const league = springLeague(event);
-      return { kind: 'low', own: 'Spring training', full: league ? `Spring training, ${league}` : 'Spring training', inline: 'Spring training', chip: null, ifNecessary: false };
+      return { kind: 'low', own: 'Spring Training', full: league ? `Spring Training, ${league}` : 'Spring Training', inline: 'Spring Training', chip: null, ifNecessary: false };
     }
     return { kind: 'low', own: 'Preseason', full: 'Preseason', inline: 'Preseason', chip: null, ifNecessary: false };
   }
@@ -428,7 +428,7 @@ function stageLabel(event: CrowdEvent): EventLabel | null {
     const word = low[1][0].toUpperCase() + low[1].slice(1).toLowerCase();
     return { kind: 'low', own: word, full: word, inline: word, chip: null, ifNecessary: false };
   }
-  if (event.homeOpener) return { kind: 'occasion', own: 'Home opener', full: 'Home opener', inline: 'Home opener', chip: null, ifNecessary: false };
+  if (event.homeOpener) return { kind: 'occasion', own: 'Home Opener', full: 'Home Opener', inline: 'Home Opener', chip: null, ifNecessary: false };
   return null;
 }
 
@@ -443,8 +443,8 @@ const ROUND_TEXTS = new Set<string>([
   ...Object.values(ROUNDS).flatMap((r) => [r.chip, r.short, r.full]),
   ...Object.values(CUP_NAMES),
   'Semifinals',
-  'First round',
-  'Second round',
+  'First Round',
+  'Second Round',
 ].map((w) => w.toLowerCase()));
 
 /** What a title string carries after its name, when the tail is a label (and only then). */
@@ -453,6 +453,15 @@ export interface TitleLabel {
   own: string;
   inline: string;
   ifNecessary: boolean;
+}
+
+/** Every event label is Title Case (Kylie, Oct 23, 2026, build 7.1 M8): "Home Opener", "Spring Training, Cactus League". */
+export function titleCaseLabel(text: string): string {
+  const small = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'at', 'in', 'on', 'to', 'for', 'vs.', 'per']);
+  return text
+    .split(/(\s+)/)
+    .map((part, i) => (/^\s+$/.test(part) ? part : i === 0 || !small.has(part.toLowerCase()) ? part.charAt(0).toUpperCase() + part.slice(1).toLowerCase() : part.toLowerCase()))
+    .join('');
 }
 
 /** Is this text a label ("NLCS G3", "Preseason", "If necessary")? For lists of facts that would repeat the label. */
@@ -476,8 +485,9 @@ function readLabel(raw: string): TitleLabel | null {
     const rest = readLabel(paired[2]);
     if (rest) return { ...rest, own: `${pairedSport.words} · ${rest.own}`, inline: `${pairedSport.code} · ${rest.inline}`, ifNecessary: rest.ifNecessary || ifNecessary };
   }
-  if (/^(preseason|spring training(, [a-z]+ league)?|exhibition|friendly|scrimmage|qualifier)$/i.test(core)) return make('low', core, core);
-  if (/^(home opener|season finale)$/i.test(core)) return make('occasion', core, core);
+  // Title Case however the saved title spelled it ("Home opener" from before Oct 24, 2026; build 7.1, M8).
+  if (/^(preseason|spring training(, [a-z]+ league)?|exhibition|friendly|scrimmage|qualifier)$/i.test(core)) return make('low', titleCaseLabel(core), titleCaseLabel(core));
+  if (/^(home opener|season finale)$/i.test(core)) return make('occasion', titleCaseLabel(core), titleCaseLabel(core));
   // A doubleheader in any of its forms, older saved "(Game 1)" included (build 6, item 10).
   const dh = core.match(/^(?:doubleheader,? game|dh|game) ?(\d+)$/i);
   if (dh) return make('game', `Doubleheader Game\u00a0${dh[1]}`, `DH${dh[1]}`);
@@ -905,7 +915,7 @@ function scheduleStageLabel(game: SchedulePick, sport?: string): EventLabel | nu
     };
   }
   if (game.preseason) {
-    const word = sport === 'baseball' ? 'Spring training' : 'Preseason';
+    const word = sport === 'baseball' ? 'Spring Training' : 'Preseason';
     return { kind: 'low', own: word, full: word, inline: word, chip: null, ifNecessary: false };
   }
   return null;

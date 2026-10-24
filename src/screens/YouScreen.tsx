@@ -100,7 +100,7 @@ export function YouScreen() {
     <div className="screen page you-page">
       <div className="you-header">
         {/* The avatar is the only door to Profile & Settings (build 6, item 8; Kylie, Oct 21: "I don't think it's that unusual"). */}
-        <button type="button" className="you-avatar-btn" aria-label="Profile and settings" onClick={() => navigate('/you/settings')}>
+        <button type="button" className="you-avatar-btn" aria-label="Profile & Settings" onClick={() => navigate('/you/settings')}>
           <span className="avatar" aria-hidden>
             {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
           </span>
@@ -144,7 +144,7 @@ export function YouScreen() {
       )}
 
       {/* 3–4. The year card. */}
-      <section className="you-block" aria-label="Your year">
+      <section className="you-block" aria-label="Your Year">
         <div className="you-heading-row year-head">
           <label className="year-pick">
             <select className="year-select" value={year} aria-label="Year" onChange={(ev) => setYear(ev.target.value)}>
@@ -160,7 +160,7 @@ export function YouScreen() {
             </span>
           </label>
           <Link to={`/you/year?year=${encodeURIComponent(year)}`} className="heading-link">
-            Your year ›
+            Your Year ›
           </Link>
         </div>
         <div className="card year-card">
@@ -199,7 +199,7 @@ export function YouScreen() {
       {newest.length > 0 && (
         <section className="you-block" aria-labelledby="stubs-heading">
           <h2 id="stubs-heading" className="you-heading heading-link-row">
-            Your stubs
+            Your Stubs
             <Link to="/you/stubs" className="heading-link">
               See all ›
             </Link>

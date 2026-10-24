@@ -83,7 +83,7 @@ export function PrivacySettings() {
         <span>Change past stubs…</span>
         {done && <span className="settings-value">{done}</span>}
       </button>
-      <p className="you-fine">Make all past stubs Anyone, Friends or Private at once.</p>
+      <p className="you-fine">Make all past stubs Anyone, Friends, or Private at once.</p>
       {note && (
         <p className="you-fine" role="status">
           {note}

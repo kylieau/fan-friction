@@ -230,7 +230,7 @@ export async function updateMyProfile(changes: {
   if (changes.displayName !== undefined) patch.display_name = changes.displayName.trim() || null;
   if (changes.handle !== undefined) {
     const handle = changes.handle.trim().toLowerCase();
-    if (!isValidHandle(handle)) return 'A link is 3 to 32 letters, numbers or dashes, and starts and ends with a letter or number.';
+    if (!isValidHandle(handle)) return 'A link is 3 to 32 letters, numbers, or dashes, and starts and ends with a letter or number.';
     patch.handle = handle;
   }
   if (changes.visibility !== undefined) patch.visibility = changes.visibility;

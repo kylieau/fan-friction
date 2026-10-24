@@ -85,7 +85,7 @@ export function CrowdSizeSettings() {
               max={CROWD_RANGE_TOP}
               step={1000}
               value={min}
-              aria-label="Minimum crowd size"
+              aria-label="Minimum Crowd Size"
               aria-valuetext={min > 0 ? fmt(min) : 'No min'}
               onChange={(e) => apply(Math.round(Number(e.target.value) / STOP) * STOP, max, 'min')}
             />
@@ -95,7 +95,7 @@ export function CrowdSizeSettings() {
               max={CROWD_RANGE_TOP}
               step={1000}
               value={max}
-              aria-label="Maximum crowd size"
+              aria-label="Maximum Crowd Size"
               aria-valuetext={max < CROWD_RANGE_TOP ? fmt(max) : 'No max'}
               onChange={(e) => apply(min, Math.round(Number(e.target.value) / STOP) * STOP, 'max')}
             />
@@ -134,7 +134,7 @@ export function CrowdSizeSettings() {
         <p className="you-fine">Events you've stubbed or friends are attending always show.</p>
       </div>
       <div className="settings">
-        <div className="settings-heading">Unknown size</div>
+        <div className="settings-heading">Unknown Size</div>
         <button
           type="button"
           className="settings-row settings-link"
@@ -155,7 +155,7 @@ export function CrowdSizeSettings() {
         {/* The definition sits behind the same (i) as on the event page (Kylie, Oct 21, 2026: "the same info icon on
             settings as well"); it was a line under the heading from Oct 20. */}
         <div className="settings-heading settings-heading-info">
-          Further out <FurtherOutInfo />
+          Further Out <FurtherOutInfo />
         </div>
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherMapOff} onClick={() => toggle({ furtherMapOff: !saved.furtherMapOff })}>
           <span>Show on the map</span>

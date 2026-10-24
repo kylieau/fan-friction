@@ -33,9 +33,9 @@ export const SPORTS_MORE = [
 
 export const LEVELS: { level: SportsLevel; label: string }[] = [
   { level: 'pro', label: 'Pro' },
-  { level: 'lower', label: 'Minor league' },
+  { level: 'lower', label: 'Minor League' },
   { level: 'college', label: 'College' },
-  { level: 'school', label: 'High school' },
+  { level: 'school', label: 'High School' },
   { level: 'amateur', label: 'Club' },
 ];
 
@@ -103,13 +103,16 @@ export function competitionNamed(name: string): Competition | undefined {
   return COMPETITIONS.find((comp) => comp.name.toLowerCase() === q);
 }
 
-/** "Women's college", "High school", "Pro", "Minor league", "Club". The row's phrase when no competition is named. */
+/**
+ * "Women's College", "High School", "Pro", "Minor League", "Club". The row's phrase when no competition is named.
+ * Title Case like every label (Kylie, Oct 23, 2026, build 7.1 M2 and M8).
+ */
 export function levelPhrase(level: SportsLevel, division?: Division): string {
   const word = LEVELS.find((row) => row.level === level)?.label ?? level;
-  if (level === 'school') return division === 'women' ? "Girls' high school" : division === 'men' ? "Boys' high school" : word;
+  if (level === 'school') return division === 'women' ? "Girls' High School" : division === 'men' ? "Boys' High School" : word;
   // Men's is named whenever women's would be (Kylie, Oct 15, 2026); no division on file keeps the plain word.
-  if (division === 'men') return `Men's ${word.toLowerCase()}`;
-  if (division === 'women') return `Women's ${word.toLowerCase()}`;
-  if (division === 'mixed') return `Mixed ${word.toLowerCase()}`;
+  if (division === 'men') return `Men's ${word}`;
+  if (division === 'women') return `Women's ${word}`;
+  if (division === 'mixed') return `Mixed ${word}`;
   return word;
 }

@@ -49,12 +49,12 @@ export function SpendScreen() {
 
   return (
     <div className="screen page spend-page">
-      <YearHeader title="Spend details" years={years} year={year} sub={span} back={{ to: `/you/year?year=${encodeURIComponent(year)}`, label: 'Your year' }} />
+      <YearHeader title="Spend Details" years={years} year={year} sub={span} back={{ to: `/you/year?year=${encodeURIComponent(year)}`, label: 'Your Year' }} />
       {spend.logged === 0 ? (
         <p className="you-fine">No costs logged{year === 'All time' ? '' : ` in ${year}`} yet. Add a cost on a stub from its Edit stub.</p>
       ) : (
         <>
-          <h2 className="you-heading">By category</h2>
+          <h2 className="you-heading">By Category</h2>
           <div className="card spend-card">
             <div className="spend-total">
               <span className="year-big spend-big">{money(spend.total)}</span>
@@ -82,13 +82,13 @@ export function SpendScreen() {
           </div>
           {venues.length > 0 && (
             <>
-              <h2 className="you-heading">By venue · per visit</h2>
+              <h2 className="you-heading">By Venue · per Visit</h2>
               {groupList(venues, 'visit', 'per visit')}
             </>
           )}
           {teams.length > 0 && (
             <>
-              <h2 className="you-heading">By team</h2>
+              <h2 className="you-heading">By Team</h2>
               {groupList(teams, 'game', 'per game')}
             </>
           )}

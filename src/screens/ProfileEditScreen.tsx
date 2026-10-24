@@ -88,7 +88,7 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
               disabled={!loaded}
             />
           </span>
-          {!handleOk && <span className="field-hint">3 to 32 letters, numbers or dashes.</span>}
+          {!handleOk && <span className="field-hint">3 to 32 letters, numbers, or dashes.</span>}
         </label>
 
         <button type="submit" className="gold-button" disabled={busy || !loaded || !handleOk}>

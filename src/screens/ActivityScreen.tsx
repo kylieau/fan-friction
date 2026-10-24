@@ -188,7 +188,7 @@ export function ActivityScreen() {
           nothingFollowed ? (
             <div className="card empty-card following-empty">
               <div className="card-title">No friends yet</div>
-              <p className="following-empty-sub">Find people to see what they attend, watch or are interested in.</p>
+              <p className="following-empty-sub">Find people to see what they attend, watch, or are interested in.</p>
               <Link to="/you/settings?find=1#people" className="following-empty-button">
                 Find people
               </Link>
@@ -207,7 +207,7 @@ export function ActivityScreen() {
       <div className="you-header">
         <h1 className="page-title">Activity</h1>
         <span className="header-actions">
-          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter activity" />
+          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter Activity" />
           <SearchButton />
         </span>
       </div>
@@ -221,7 +221,7 @@ export function ActivityScreen() {
       )}
       {body}
       {sheet && (
-        <FilterSheet title="Filter activity" onReset={clear} onClose={() => setSheet(false)}>
+        <FilterSheet title="Filter Activity" onReset={clear} onClose={() => setSheet(false)}>
           <div className="card sheet-toggle-card">
             <label className="sheet-toggle">
               <span className="log-main">
@@ -235,7 +235,7 @@ export function ActivityScreen() {
             <>
               <SheetHeading>People</SheetHeading>
               <ul className="log-list card sheet-list">
-                <CheckRow on={peopleFilter === null} title="All people" sub={`All ${following.length} in your feed`} onToggle={() => setPeoplePicked(null)} />
+                <CheckRow on={peopleFilter === null} title="All People" sub={`All ${following.length} in your feed`} onToggle={() => setPeoplePicked(null)} />
               </ul>
               <ul className="log-list card sheet-list">
                 {following.map((p) => {

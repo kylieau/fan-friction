@@ -128,11 +128,11 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Log an event" onClick={onClose}>
+    <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Log an Event" onClick={onClose}>
       <div className="action-sheet log-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         <div className="log-sheet-head">
-          <h2 className="stub-sheet-title">Log an event</h2>
+          <h2 className="stub-sheet-title">Log an Event</h2>
           <button type="button" className="round-button" aria-label="Close" onClick={close}>
             <span aria-hidden>✕</span>
           </button>
@@ -144,7 +144,7 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
             <div className="search-box">
               <label className="search-field">
                 <SearchIcon />
-                <input type="search" value={query} onChange={(ev) => setQuery(ev.target.value)} placeholder="Search a team, artist or venue" aria-label="Search a team, artist or venue" autoFocus />
+                <input type="search" value={query} onChange={(ev) => setQuery(ev.target.value)} placeholder="Search a team, artist, or venue" aria-label="Search a team, artist, or venue" autoFocus />
               </label>
             </div>
             {trimmed.length >= 2 ? (
@@ -187,7 +187,7 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
                 </p>
                 {happening.length > 0 && (
                   <>
-                    <h3 className="log-sheet-band">Happening now · Today</h3>
+                    <h3 className="log-sheet-band">Happening Now · Today</h3>
                     <ul className="log-list card log-event-list">
                       {happening.map((event) => (
                         <li key={event.id}>

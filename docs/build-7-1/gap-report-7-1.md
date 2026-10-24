@@ -10,7 +10,9 @@
 | 2. Pipeline: M16 | done, pushed | `6e5e1a56` | headless chain check passed; the next nightly patches every archived row |
 | 3. Naming: M9, M35b, M38, M20 | done, pushed | `f3f1d776`, archive rewrite `ff70d71b` | code, checks, nightly write-back; the archive rewrite is its own commit |
 | 3. Naming: M21, M32 | done, pushed | `a3185759` | titles-check cases and the report for steps 2–3 |
-| Codex stage 1 | done, pushed | `6ae4e5c5`, docs `(next)` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
+| Kylie's answers (Oct 24, morning) | done | _(step 4 commit)_ | Q1: "whatever is truer" → `M16_KEYS_FROM` back to `2026-10-01`, every archived day's saved verdict files at the next nightly; Q2: bare sport labels stay. |
+| 4. Copy sweep: M2, M8, 14b, AGENTS.md | done, pushed | _(the two commits after `cb6b3be8`)_ | headings, sheet titles, Settings rows, event labels, sport and level phrases in Title Case; ten Oxford commas plus one dynamic list; stubs retitle once more |
+| Codex stage 1 | done, pushed | `6ae4e5c5`, docs `3773857d` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
 
 ## Freeze for steps 2–3 (written before the first edit)
 **In scope:** M17, M16, M9, M35b, M38, M20, M21, M32.
@@ -50,6 +52,19 @@ None yet.
 - The opponent survives the length limit: a bare matchup (no event name, no neutral tail) is never cut to one side or an ellipsis in the row form ("UC Riverside at Cal State Fullerton" takes a second line; chips still drop the away side). Before, "UC Riverside at Cal State Fullerton (MSOC)" rendered as "Cal State Fullerton (MSOC)". Named games keep build 5's order (the event name outlives the away side: "Oklahoma · Red River Showdown"), now guarded by short-form assertions on the N17 and N18 cases (an earlier cut of this change had inverted that order; the advisor caught it before it was pushed).
 - product-decisions.md:243 updated (the Oct 15 exemption is overridden). titles-check gains the M9, M35b, M38, repair, M20 and M21 cases; two existing cases now expect the football label ("USC at UCLA (FB)"; "Wisconsin at UCLA · Football" splits as a label).
 
+### Step 4 freeze (written before the first edit, Oct 24 morning)
+- In scope: M2 (Title Case on every heading, sub-page title, label and sport name), M8 (every event label Title Case), item 14b (Oxford commas), the AGENTS.md copy rules. Shots: `shots/7-1-more/m02-day-oct21-lineup.jpg`, `you-headers-faves.png`; mock `mockups/7-1-more/01-b.png` ("Wednesday's Lineup").
+- Decisions touched: product-decisions.md:239 (labels round 3 casing), :244 (March Madness words), build-notes-5.md:923 ("'s lineup"); Kylie's Compare heading "Your nights, side by side." (Oct 5 lock) is not touched.
+- Must not change: any string that is body copy, a helper line, a button, a placeholder or an empty-state sentence; the Verdict / friction vocabulary (`scoreLabels.ts`); stored data.
+
+### M2, M8, 14b. The copy sweep
+- **Headings and titles (M2):** "{Weekday}'s Lineup" (date page), "About This Verdict", "Further Out" (date page, Explore list, event page, Settings, the (i) card), "Up Against", "This Day", "More Dates", "Your Stubs" (page, timeline, You), "Your Year" (You, page, back label, ladder), "Your Events" (Settings, Compare), "Your Plans" (band and filter row), "Edit Favorites", "Browse by League", "Famous Dates", "On This Date", "Most Seen", "By Month", "By Category", "By Venue · per Visit", "By Team", "Spend Details", "Happening Now · Today", "Log an Event" (the sheet), "New Stub", "Edit Stub" (the form), "Add Tags", "Playoff Games", "Filter Activity / Filter Your Stubs / Filter Upcoming", "All People", "Team or Sport", "Favorite Cities", "Favorite Teams & Artists", "Crowd Size", "Review Queue", "Profile & Settings" (the avatar's label), the Explore week band ("This Week's Lineup", "Week of Oct 26 · Lineup").
+- **Sport and level words:** `levelPhrase` keeps its words capitalized ("Women's College", "Girls' High School"), the level chips read "Minor League" / "High School", and the quick-add type line reads "Women's Water Polo".
+- **Event labels (M8):** "Home Opener", "Spring Training" (and ", Cactus League"), "First Round", "Second Round", "Third Round", "Regional Semifinal", "Regional Final", "{AHL} Playoffs"; a label read back from a saved title is Title Cased on the way (`titleCaseLabel`), so stubs saved as "(Home opener)" read right; `TITLE_VERSION` bumps to `title-case-b71` so every log takes the names once.
+- **Oxford commas (14b):** "Attending, Watching, and Interested"; "a team, artist, or venue" (Upcoming ×2, Favorites placeholder and label, the Log sheet, Calendar and New Stub searches); "attend, watch, or are interested in"; "Anyone, Friends, or Private"; "letters, numbers, or dashes" (×2); "Unopposed, Squeezed, Swamped, or Steamrolled"; "announced, reported, or estimated"; the gridlock line's "{A}, {B}, and N more".
+- **AGENTS.md:** both rules added under the UI copy rule.
+- **Left as is, on purpose:** buttons ("Edit stub", "+ Stub it", "Add to calendar"), placeholders, helper lines and empty states ("No one here", "Not in your log"); `aria-label`s that only name a control; Compare's "Side by side" title (Kylie's Oct 5 wording "Your nights, side by side." is a lock; see Questions); "Neutral site" in a title tail (M33's copy, step 12); the Settings group label "App" (M19 renames it "App & Account" in step 11).
+
 ### M20. No venue in a favorite's title at a neutral site
 - `teamRelativeTitle` reads "vs. {opponent}" at a neutral site with no venue tail; the row's facts line already names the place (team page: "Tue, Oct 13 · T-Mobile Arena").
 
@@ -76,6 +91,7 @@ After-shots are in `docs/build-7-1/shots/after/` (the signed-out test browser at
 - M21 (Upcoming, Dodgers followed): `shots/after/after-m21-upcoming-dodgers.png` beside `shots/7-1-more/uniqlo-field.png` and `dodger-stadium.png`: **matches**: no "UNIQLO" anywhere on the page, 19 rows read "Dodger Stadium".
 - M32: `shots/after/after-m32-home-picker-nyc.png` beside `shots/7-1-more/new-york-switcher.png`: typing "nyc" lists "New York City" alone. This is the first-open "Where's home?" sheet, which uses the same search rule and list; the headless browser kept that sheet open after a city was tapped, so the switcher itself (the shot's screen) was not captured. **For Kylie:** open the switcher, type "nyc" and "new york"; both should list New York City.
 - M16 / M17: no screen to capture yet; the nightly proves them (see "For Kylie to check on a phone").
+- **Step 4 (M2, M8, 14b), measured:** a headless sweep of twelve screens (date page, a school game's page, Upcoming, Activity, Explore list, Compare, You, Your Stubs, Your Year, New Stub, Profile & Settings, a team page) collected every heading, title, band and label element and tested each against the rule (every word capitalized except the short joining words unless first; event titles, count lines, sentences and buttons excluded). Three misses were found and fixed in the same pass (the team page's "Your events", Settings' "Unknown size", the Explore band's "· N events"); the sweep then reported none. After-shots: `shots/after/after-m02-date-lineup-heading.png` ("Saturday's Lineup", beside `shots/7-1-more/m02-day-oct21-lineup.jpg` and the mock's "Wednesday's Lineup": **matches**) and `shots/after/after-m02-settings.png` ("Profile & Settings", "Favorite Cities", "Favorite Teams & Artists", "Crowd Size"; the M19 layout is step 11). "Home Opener" showed on the Oct 21 Warriors at Lakers row in the Explore list (M8).
 
 ## Removed or moved
 - M16: the "Estimated from past schedules." line under a verdict on days from before the archive (date page). Nothing else.
@@ -112,6 +128,7 @@ Found fine: the archive rewrite (titles and audiences only, forecasts byte-ident
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
+- Step 4: `npm run build` and `node scripts/titles-check.mjs` pass with the Title Case labels (the check's own expectations moved with them: "Home Opener", "Spring Training, Cactus League", "AHL Playoffs"); the archive scan lists "Men's Cross Country" and "Women's Volleyball" label lines on the school rows.
 - `node scripts/event-types-check.mjs`, `copies-check.mjs`, `city-build-check.mjs`: pass (copies: 0 possible copies across 40 cities; city build: all passed). Nothing was already failing.
 - M16 chain check (scratch script, both row shapes primed into `catalogCache`): recorded under M16.
 - The titles-check archive scan (`la 2026-10-23`) reports one row losing its visitor in the short name: a Ticketmaster listing titled "San Diego Toreros Mens Basketball at UCLA Bruins Mens Basketball · Exhibition", a named game (the " · Exhibition" tail), so build 5's order applies; not a bare matchup slipping past the new rule. Pre-existing; the seller's title carries program words that only the school feed's rows were cleaned of (the ESPN or Sidearm copy of that game wins by the one-game rule when both list it).
@@ -120,6 +137,7 @@ Found fine: the archive rewrite (titles and audiences only, forecasts byte-ident
 ## Superseded rules updated
 - `docs/product/product-decisions.md:32`: the "Estimated from past schedules." line (M16).
 - `docs/product/product-decisions.md:243`: "Football, baseball, softball and field hockey carry none" (M38).
+- `docs/product/product-decisions.md:239` (labels round 3 casing) and `:244` (March Madness words): Title Case since M8. `AGENTS.md` UI copy rule: the Title Case and Oxford comma rules added.
 
 ## For Kylie to check on a phone
 - After the Oct 24 nightly (about 6 AM Pacific): the next Ticketmaster show at the Hollywood Bowl or the Greek Theatre in the coming days shows the weather card on its event page (M17 / M4).
@@ -134,6 +152,7 @@ _(filled as the build goes)_
 
 ## Questions for Kylie
 1. **M16, pre-fix verdicts.** Built as Locked: only captures from Oct 24 carry their keys, so days before Oct 24 keep showing a recomputed verdict that looks final (the Oct 21 shot stays 6.4, not the saved 5.3). The saved ratings for every day since each city's archive began are sitting in the same files, and the writer re-reads them every night; moving one constant (`M16_KEYS_FROM` in `scripts/catalog-write.mjs`) back to `'2026-10-01'` would file them all at the next run with nothing recomputed. Lean: open it up, since the saved number is the truer one. Your call.
+3. **M2 and Compare's title.** Compare's page title reads "Side by side" and its heading "Your nights, side by side." is your Oct 5 wording (a lock, and a sentence). Title Case would make it "Side by Side". Left as is; say the word and it changes. The sign-in card's "Keep your log safe" and the empty-state card titles ("No Faves yet", "No stubbed events") were read as sentences, not headings, and left in sentence case.
 2. **M38, a feed that names no side.** 357 stored school rows say only "Volleyball" (or "Soccer", "Basketball"). They now read with the sport alone on the label line ("Volleyball"). The alternative was no label on those rows, against "no exceptions". OK as built?
 
 ## Builder's-call decisions

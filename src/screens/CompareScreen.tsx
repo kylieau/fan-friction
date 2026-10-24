@@ -87,8 +87,8 @@ function Picker({ a }: { a: NightKey }) {
       <BackLink to={back} />
       <h1 className="page-title">Compare with…</h1>
       {entries.length > 0 && (
-        <section className="you-block" aria-label="Your events">
-          <h2 className="you-heading">Your events</h2>
+        <section className="you-block" aria-label="Your Events">
+          <h2 className="you-heading">Your Events</h2>
           <ul className="log-list">
             {entries.map((entry) => (
               <li key={entry.id}>
@@ -105,9 +105,9 @@ function Picker({ a }: { a: NightKey }) {
         </section>
       )}
       {famous.length > 0 && (
-        <section className="you-block" aria-label="Famous dates">
+        <section className="you-block" aria-label="Famous Dates">
           {/* "Famous dates" (Kylie, Oct 11, build notes 3, 8.1, item 17). */}
-          <h2 className="you-heading">Famous dates</h2>
+          <h2 className="you-heading">Famous Dates</h2>
           <ul className="log-list">
             {famous.map((r) => (
               <li key={r.date}>

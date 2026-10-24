@@ -196,9 +196,9 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
             <PeoplePanel />,
           )}
         {/* Favorite cities (mock 60): a restyle of the old Home & cities list (home with Change, a minus per city, + Add city). */}
-        {dropdown('cities', 'Favorite cities', null, <FavoriteCitiesSection />)}
+        {dropdown('cities', 'Favorite Cities', null, <FavoriteCitiesSection />)}
         {/* Favorite teams & artists (mocks 61–66): collapsed groups, read-only rows, one small Edit to the one editor. */}
-        {dropdown('faves', 'Favorite teams & artists', favorites.length > 0 ? `${favorites.length}` : null, <FavoritesSection favorites={favorites} onEdit={() => setEditing(true)} />)}
+        {dropdown('faves', 'Favorite Teams & Artists', favorites.length > 0 ? `${favorites.length}` : null, <FavoritesSection favorites={favorites} onEdit={() => setEditing(true)} />)}
         {account && dropdown('profile', 'Profile', handle ? `@${handle}` : null, <ProfileForm />)}
         {account &&
           dropdown(
@@ -247,7 +247,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
           )}
         {dropdown(
           'crowd',
-          'Crowd size',
+          'Crowd Size',
           crowdRangeLabel(crowdRangeOf(log)),
           // Where it applies is the panel's own two switches now (Kylie, Oct 19, 2026).
           <CrowdSizeSettings />,
@@ -277,7 +277,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
           )}
         {dropdown(
           'events',
-          'Your events',
+          'Your Events',
           null,
           <div className="settings">
             <button type="button" className="settings-row settings-link" onClick={download}>
@@ -288,7 +288,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
           </div>,
         )}
         {/* The review queue (Kylie, Oct 21, 2026): an admin account only (migration 0032); hidden for everyone else. */}
-        {admin && dropdown('review', 'Review queue', pendingCount > 0 ? `${pendingCount}` : null, <ReviewQueue />)}
+        {admin && dropdown('review', 'Review Queue', pendingCount > 0 ? `${pendingCount}` : null, <ReviewQueue />)}
         {dropdown(
           'app',
           'App',

@@ -119,10 +119,12 @@ export async function quickAddDefaults(target: Favorite, homeId: string | null, 
     const homeName = [...counts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
     const homeRoom = homeName ? roomNamed(team.metroId ?? metroId, homeName, today) : undefined;
     const sportWord = cap(team.sport);
+    const titleWords = (s: string) => s.replace(/\b[a-z]/g, (c) => c.toUpperCase());
     return {
       title: isCollegeTeam(team) ? teamLongName(team) : team.name,
       kind: 'game',
-      setLine: ['Game', division === 'women' ? `Women's ${team.sport}` : division === 'men' ? `Men's ${team.sport}` : sportWord, cap(level === 'pro' ? 'pro' : level)].join(' · '),
+      // Title Case, like every label ("Women's Water Polo"; build 7.1, M2).
+      setLine: ['Game', division === 'women' ? `Women's ${titleWords(team.sport)}` : division === 'men' ? `Men's ${titleWords(team.sport)}` : titleWords(team.sport), cap(level === 'pro' ? 'pro' : level)].join(' · '),
       sport: sportWord,
       level,
       ...(division ? { division } : {}),

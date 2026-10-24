@@ -178,10 +178,10 @@ export function StubsScreen() {
       <BackLink to="/you" label="You" />
       <div className="you-header">
         <h1 className="page-title">
-          Your stubs {count > 0 && <span className="page-title-count">{count === 1 ? '1 stub' : `${count} stubs`}</span>}
+          Your Stubs {count > 0 && <span className="page-title-count">{count === 1 ? '1 stub' : `${count} stubs`}</span>}
         </h1>
         <span className="header-actions">
-          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter your stubs" />
+          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter Your Stubs" />
           <SearchButton />
         </span>
       </div>
@@ -212,7 +212,7 @@ export function StubsScreen() {
       ) : view === 'list' ? (
         <section className="timeline-page-body">
           <Timeline
-            label="Your stubs"
+            label="Your Stubs"
             past={pastItems}
             future={[]}
             todayLabel={dayBandLabel(today, today)}
@@ -237,7 +237,7 @@ export function StubsScreen() {
         <StubCalendar entries={shown} ratings={ratings} today={today} />
       )}
       {sheet && (
-        <FilterSheet title="Filter your stubs" onReset={clear} onClose={() => setSheet(false)}>
+        <FilterSheet title="Filter Your Stubs" onReset={clear} onClose={() => setSheet(false)}>
           <SheetHeading>Dates</SheetHeading>
           <div className="filter-dates">
             <label className="seat-field">
@@ -296,7 +296,7 @@ export function StubsScreen() {
           </div>
           {teamChoices.length > 0 && (
             <>
-              <SheetHeading>Team or sport</SheetHeading>
+              <SheetHeading>Team or Sport</SheetHeading>
               <div className="pill-row filter-pills" role="group" aria-label="Team or sport">
                 {teamChoices.map((label) => (
                   <button key={label} type="button" className="filter-chip" aria-pressed={filter.team === label} onClick={() => setFilter({ ...filter, team: filter.team === label ? null : label })}>
@@ -381,7 +381,7 @@ function dateLabel(dates: StubsFilter['dates']): string {
 /** Grid (mock 41): light cards three across, newest first: date and the ticket or TV and sport icons beside the read, the title, the venue. */
 function StubGrid({ entries, ratings }: { entries: Entry[]; ratings: ReadonlyMap<string, number> }) {
   return (
-    <ul className="stub-grid" aria-label="Your stubs">
+    <ul className="stub-grid" aria-label="Your Stubs">
       {entries.map((entry) => (
         <li key={entry.id}>
           <Link to={entry.eventId ? eventPath(entry.eventId, entry.metroId ?? DEFAULT_METRO.id) : entryPath(entry.id)} className="stub-card" aria-label={entry.title}>

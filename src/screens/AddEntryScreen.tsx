@@ -118,7 +118,7 @@ export function AddEntryScreen({ embedded = false }: { embedded?: boolean } = {}
   return (
     <div className={embedded ? 'add-page add-embedded' : 'screen page add-page'}>
       {!embedded && <BackLink to="/you/stubs" />}
-      {!embedded && <h1 className="page-title">New stub</h1>}
+      {!embedded && <h1 className="page-title">New Stub</h1>}
       {firstVisit && !embedded && <p className="you-fine">Saved to your Stubs</p>}
 
       {!typing && (
@@ -137,8 +137,8 @@ export function AddEntryScreen({ embedded = false }: { embedded?: boolean } = {}
                 type="search"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder={pick === 'game' ? 'Which team?' : pick === 'show' ? 'Which artist?' : 'Search a team, artist or venue'}
-                aria-label={pick === 'game' ? 'Which team?' : pick === 'show' ? 'Which artist?' : 'Search a team, artist or venue'}
+                placeholder={pick === 'game' ? 'Which team?' : pick === 'show' ? 'Which artist?' : 'Search a team, artist, or venue'}
+                aria-label={pick === 'game' ? 'Which team?' : pick === 'show' ? 'Which artist?' : 'Search a team, artist, or venue'}
                 autoFocus
               />
             </label>

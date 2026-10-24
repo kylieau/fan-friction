@@ -119,7 +119,7 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
   return (
     <form
       className="card entry-layer profile-form"
-      aria-label="Edit stub"
+      aria-label="Edit Stub"
       onSubmit={(event) => {
         event.preventDefault();
         if (dateAhead) return;
@@ -128,7 +128,7 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
         onDone();
       }}
     >
-      <h2 className="entry-form-title">Edit stub</h2>
+      <h2 className="entry-form-title">Edit Stub</h2>
       {manual && (
         <>
           <label className="field">

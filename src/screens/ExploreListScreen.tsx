@@ -91,11 +91,11 @@ function dayLabel(date: string, today: string): string {
  */
 function weekWord(monday: string, thisMonday: string): string {
   const weeks = Math.round(daysBetween(thisMonday, monday) / 7);
-  if (weeks === 0) return "This week's lineup";
-  if (weeks === 1) return "Next week's lineup";
-  if (weeks === -1) return "Last week's lineup";
+  if (weeks === 0) return "This Week's Lineup";
+  if (weeks === 1) return "Next Week's Lineup";
+  if (weeks === -1) return "Last Week's Lineup";
   const month = new Date(`${monday}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-  return `Week of ${month} ${Number(monday.slice(8))} · lineup`;
+  return `Week of ${month} ${Number(monday.slice(8))} · Lineup`;
 }
 
 /**
@@ -483,7 +483,7 @@ export function ExploreListScreen() {
         {range && allMondays.length > 0 && <WeekCalendar mondays={allMondays} reads={reads} today={today} range={range} topDate={topDate} onPick={pickDay} onNeed={needWeeks} />}
         {range && (
           <div className="explore-list-band">
-            {weekWord(calendarMonday, thisMonday)} · {weekCount} {weekCount === 1 ? 'event' : 'events'}
+            {weekWord(calendarMonday, thisMonday)} · {weekCount} {weekCount === 1 ? 'Event' : 'Events'}
           </div>
         )}
       </div>
@@ -543,7 +543,7 @@ export function ExploreListScreen() {
                 if (further.length === 0) return null;
                 return (
                   <>
-                    <div className="settings-heading further-out-head">Further out</div>
+                    <div className="settings-heading further-out-head">Further Out</div>
                     <FurtherOutList events={further} variant="list" />
                   </>
                 );

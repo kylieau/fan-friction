@@ -20,10 +20,10 @@ export function EditFavoritesSheet({ onClose }: { onClose: () => void }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
   return (
-    <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Edit favorites" onClick={onClose}>
+    <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Edit Favorites" onClick={onClose}>
       <div className="action-sheet following-sheet filter-sheet edit-faves-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
-        <h2 className="filter-sheet-title">Edit favorites</h2>
+        <h2 className="filter-sheet-title">Edit Favorites</h2>
         <div className="filter-sheet-body">
           <FavoritesScreen embedded edit />
         </div>

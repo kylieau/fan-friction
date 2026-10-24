@@ -62,7 +62,7 @@ export function YourYearScreen() {
 
   return (
     <div className="screen page your-year-page">
-      <YearHeader title="Your year" years={years} year={year} sub={span} />
+      <YearHeader title="Your Year" years={years} year={year} sub={span} />
       <div className="card year-card">
         <div className="year-hero">
           <span className="year-big">{attended}</span>
@@ -89,8 +89,8 @@ export function YourYearScreen() {
       <FrictionLadder entries={inYear} ratings={ratings} year={year} />
 
       {year !== 'All time' && inYear.length > 0 && (
-        <section className="card by-month" aria-label="By month">
-          <h3 className="count-title">By month</h3>
+        <section className="card by-month" aria-label="By Month">
+          <h3 className="count-title">By Month</h3>
           <div className="by-month-grid" aria-hidden>
             {months.map((m) => (
               <span key={m.month} className="by-month-col">
@@ -111,8 +111,8 @@ export function YourYearScreen() {
       )}
 
       {(teams.length > 0 || venues.length > 0 || tags.length > 0) && (
-        <section className="you-block" aria-label="Most seen">
-          <h2 className="you-heading">Most seen</h2>
+        <section className="you-block" aria-label="Most Seen">
+          <h2 className="you-heading">Most Seen</h2>
           {teams.length > 0 && <TopThree title="Teams" rows={teams.map((t) => ({ label: t.label, count: t.count }))} to={`/you/ranks${q}&tab=teams`} inYear={inYear} kind="team" />}
           {venues.length > 0 && <TopThree title="Venues" rows={venues} to={`/you/ranks${q}&tab=venues`} inYear={inYear} kind="venue" />}
           {tags.length > 0 && <TopThree title="Tags" rows={tags.map((t) => ({ label: t.tag, count: t.count }))} to={`/you/ranks${q}&tab=tags`} inYear={inYear} kind="tag" />}
@@ -154,7 +154,7 @@ export function YourYearScreen() {
             </>
           )}
           <Link to={`/you/spend${q}`} className="spend-details-link">
-            Spend details <span aria-hidden>›</span>
+            Spend Details <span aria-hidden>›</span>
           </Link>
         </div>
       </section>

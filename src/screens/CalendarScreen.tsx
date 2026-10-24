@@ -103,8 +103,8 @@ export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; t
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search a team, artist or venue"
-            aria-label="Search a team, artist or venue"
+            placeholder="Search a team, artist, or venue"
+            aria-label="Search a team, artist, or venue"
           />
         </label>
         {query && (
@@ -172,7 +172,7 @@ export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; t
 
           {onThisDay && (
             <section className="famous">
-              <h2 className="section-title">On this date</h2>
+              <h2 className="section-title">On This Date</h2>
               <ul className="famous-list">
                 <li>
                   <EntryRow
@@ -189,7 +189,7 @@ export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; t
           {SHOW_FAMOUS_DATES && famous && famous.length > 0 && (
             <section className="famous">
               <h2 className="section-title">
-                Famous dates <span className="section-note">Newest first</span>
+                Famous Dates <span className="section-note">Newest first</span>
               </h2>
               <ul className="famous-list">
                 {famous.map((entry) => (

@@ -272,7 +272,7 @@ export function EventScreen() {
         {/* The (i) opens the definition (Kylie, Oct 21, 2026). */}
         {further && (
           <div className="event-further">
-            Further out <FurtherOutInfo />
+            Further Out <FurtherOutInfo />
           </div>
         )}
         {/* A fan-added event (step 2 of the Add a game / Add a show card, Oct 21, 2026): the label stays once confirmed. */}
@@ -334,10 +334,10 @@ export function EventScreen() {
           Not on a further-out event (Kylie, Oct 19–20, 2026): it is outside the city's day, so the card would count it
           as a day of one. */}
       {!further && (
-      <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This day">
+      <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This Day">
         <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
         <span className="this-day-main">
-          <span className="this-day-label">This day</span>
+          <span className="this-day-label">This Day</span>
           <span className="this-day-title">
             {shortLocalDate(date)} · {dayCount} {dayCount === 1 ? 'event' : 'events'}
           </span>
@@ -360,10 +360,10 @@ export function EventScreen() {
       )}
 
       {a && (
-        <section className="card up-against" aria-label="Up against">
+        <section className="card up-against" aria-label="Up Against">
           {/* Up against (build notes 3, 3.3; mock call12-up-against, A): this event's rivals over the floor within an hour,
               each with its venue, start and distance; the whole day is one tap away. The old timeline is gone. */}
-          <div className="up-against-label">Up against</div>
+          <div className="up-against-label">Up Against</div>
           <div className="up-against-line">
             {/* A room under the floor gets no pill (build notes 2); Unopposed shows here and in the Crowd card, with the
                 ring beside the pill (build 6, item 1). */}
@@ -484,7 +484,7 @@ export function EventScreen() {
 
       <WeatherDetail event={e} />
 
-      <p className="source-note">Counts are labeled by kind: announced, reported or estimated. Distances are straight-line.</p>
+      <p className="source-note">Counts are labeled by kind: announced, reported, or estimated. Distances are straight-line.</p>
 
       <ShareCard
         dateLabel={longLocalDate(date)}
@@ -646,7 +646,7 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
           This team's typical announced crowd here on this kind of date, over the last two or three seasons, nudged by how
           the team is drawing this season and how this visitor has drawn here.
         </p>
-        <h2 className="how-sub">Playoff games</h2>
+        <h2 className="how-sub">Playoff Games</h2>
         <p className="home-helper">
           How full this building got at past playoff games in this round, the team's or the league's. With none on file, the
           building itself. The range is a planning range; its low end counts toward friction.

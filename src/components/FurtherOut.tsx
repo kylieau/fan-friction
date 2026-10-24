@@ -56,7 +56,7 @@ function FurtherOutCard({ onClose }: { onClose: () => void }) {
       <div className="home-card about-read further-out-card" onClick={(event) => event.stopPropagation()}>
         <div className="about-read-head">
           <h2 id="further-out-title" className="home-title">
-            Further out
+            Further Out
           </h2>
           <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
             ×

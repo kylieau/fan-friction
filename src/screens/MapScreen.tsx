@@ -451,7 +451,7 @@ export function MapScreen() {
                     sentence that reads each word "by that day's lineup", the four marks as the event page draws them
                     (ring and word), and where each shows. */}
                 <li className="map-key-note map-key-friction">
-                  <span>Each event is Unopposed, Squeezed, Swamped or Steamrolled by that day's lineup.</span>
+                  <span>Each event is Unopposed, Squeezed, Swamped, or Steamrolled by that day's lineup.</span>
                   <span className="map-key-ladder">
                     {FRICTION_LADDER.map((level) => (
                       <FrictionVerdict key={level} level={level} size={12} />
