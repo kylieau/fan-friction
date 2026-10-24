@@ -14,6 +14,18 @@ import type { TeamGame } from './types';
 
 const cache = new Map<string, Promise<TeamGame[] | null>>();
 
+/**
+ * Told each time a team's schedule has loaded (build 7.1, item 15): the personal log listens, so season-ticket plans
+ * follow a moved game and a vanished one is flagged, wherever the schedule was read (team page, Upcoming, app start).
+ */
+const scheduleListeners = new Set<(teamId: string, games: TeamGame[]) => void>();
+export function onTeamSchedule(listener: (teamId: string, games: TeamGame[]) => void): () => void {
+  scheduleListeners.add(listener);
+  return () => {
+    scheduleListeners.delete(listener);
+  };
+}
+
 /** Straight from the feeds. The job calls this; a browser can only reach the MLB half. */
 export async function teamScheduleFromFeeds(teamId: string): Promise<TeamGame[] | null> {
   return (await mlbTeamSchedule(teamId)) ?? (await espnTeamSchedule(teamId)) ?? (await hockeytechTeamSchedule(teamId));
@@ -33,7 +45,10 @@ export function getTeamSchedule(teamId: string): Promise<TeamGame[] | null> {
   if (hit) return hit;
   const p = (async () => (await fromTable(teamId)) ?? (await mlbTeamSchedule(teamId)))().catch(() => null);
   cache.set(teamId, p);
-  p.then((rows) => rows === null && cache.delete(teamId));
+  p.then((rows) => {
+    if (rows === null) cache.delete(teamId);
+    else for (const listener of scheduleListeners) listener(teamId, rows);
+  });
   return p;
 }
 

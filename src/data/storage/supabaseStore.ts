@@ -18,7 +18,7 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
-import { EMPTY_LOG, readCrowdRange, readFavoriteCities, readFavorites, readRemoved, readStamp, readTemperatureUnit } from './localStore';
+import { EMPTY_LOG, readCrowdRange, readFavoriteCities, readFavorites, readRemoved, readStamp, readTemperatureUnit, readSeasonTickets } from './localStore';
 import { notThereYet } from './dbErrors';
 import type { EntryStore, LogDiff } from './types';
 
@@ -60,7 +60,7 @@ interface SettingsRow {
   user_id: string;
   you_order: string;
   hidden_seed_ids: string[];
-  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown; crowdRange?: unknown; crowdRangeAt?: unknown; temperatureUnit?: unknown; temperatureUnitAt?: unknown };
+  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown; crowdRange?: unknown; crowdRangeAt?: unknown; temperatureUnit?: unknown; temperatureUnitAt?: unknown; seasonTickets?: unknown };
 }
 
 interface RemovedRow {
@@ -200,6 +200,7 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         ...(readStamp(settings?.data?.crowdRangeAt) ? { crowdRangeAt: readStamp(settings?.data?.crowdRangeAt) } : {}),
         ...(readTemperatureUnit(settings?.data?.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(settings?.data?.temperatureUnit) } : {}),
         ...(readStamp(settings?.data?.temperatureUnitAt) ? { temperatureUnitAt: readStamp(settings?.data?.temperatureUnitAt) } : {}),
+        ...(readSeasonTickets(settings?.data?.seasonTickets) ? { seasonTickets: readSeasonTickets(settings?.data?.seasonTickets) } : {}),
         removed,
       };
     },
@@ -256,6 +257,7 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
               ...(log.crowdRangeAt ? { crowdRangeAt: log.crowdRangeAt } : {}),
               ...(log.temperatureUnit ? { temperatureUnit: log.temperatureUnit } : {}),
               ...(log.temperatureUnitAt ? { temperatureUnitAt: log.temperatureUnitAt } : {}),
+              ...(log.seasonTickets?.length ? { seasonTickets: log.seasonTickets } : {}),
             },
           }),
         );

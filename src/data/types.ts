@@ -734,6 +734,13 @@ export interface Plan {
   seats?: Seats;
   cost?: Cost;
   /**
+   * A season-ticket game (build 7.1, item 15; Kylie, Oct 23, 2026): the team whose season this is and the feed's own
+   * game id, which stays the same when the game moves date. `edited` once its seat or cost was set for this game
+   * alone (a default change then leaves it be); `gone` once the schedule no longer lists the game (flagged, never
+   * dropped on its own).
+   */
+  season?: { teamId: string; gameId: string; edited?: boolean; gone?: boolean };
+  /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.
    */
@@ -809,11 +816,44 @@ export interface PersonalLog {
   temperatureUnit?: 'F' | 'C';
   /** When the unit last changed (ISO). The newer copy wins, like the crowd range. */
   temperatureUnitAt?: string;
+  /** Season tickets, one record per team (build 7.1, item 15). Saved with the settings; each team's newer copy wins. */
+  seasonTickets?: SeasonTicket[];
   /**
    * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
    * another device cannot put them back; pruned after half a year.
    */
   removed?: Record<string, string>;
+}
+
+/** Why a season game left your plans (build 7.1, item 15, Locked): an optional tag, Sold with an optional amount. */
+export type SeasonRemovalReason = 'sold' | 'gave' | 'skipped';
+
+/**
+ * Season tickets for one team (build 7.1, item 15; Kylie, Oct 23, 2026). The defaults prefill every season game's
+ * seat and cost; Full adds every home game, Partial only the picked ones; a removed game stays listed, greyed, with
+ * its reason. A sale amount is shown on that greyed game alone and never counts in Spend. Kept with `on: false`
+ * after the switch is turned off, so turning it back on starts from the same defaults.
+ */
+export interface SeasonTicket {
+  teamId: string;
+  on: boolean;
+  plan: 'full' | 'partial';
+  seats?: Seats;
+  /** Price per seat, per game: your own ticket only. */
+  ticket?: number;
+  /** Parking per game; lands as a Parking & Transit line. */
+  parking?: number;
+  currency?: string;
+  /** Preseason home games are in by default. */
+  preseason: boolean;
+  /** Partial plan: the feed's game ids she owns. */
+  picked?: string[];
+  /** Games taken out of the plans, by game id, with the optional reason and sale amount, and when. */
+  removed: Record<string, { reason?: SeasonRemovalReason; soldFor?: number; at: string }>;
+  /** Home playoff games answered "Not this one", by game id. */
+  declined?: string[];
+  /** When this record last changed (ISO); the newer copy wins per team. */
+  updatedAt: string;
 }
 
 export type FavoriteKind = 'team' | 'artist' | 'venue' | 'festival';

@@ -4,7 +4,7 @@
 import { APP } from '../../config/app';
 import { METROS } from '../../config/metros';
 import { parseStamp } from '../read';
-import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder } from '../types';
+import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket } from '../types';
 import type { EntryStore } from './types';
 
 const KEY = `${APP.slug}:your-nights`;
@@ -108,6 +108,43 @@ export function readTemperatureUnit(value: unknown): 'F' | 'C' | undefined {
   return value === 'F' || value === 'C' ? value : undefined;
 }
 
+/** Season tickets as saved (build 7.1, item 15): one record per team, each checked piece by piece; anything else is dropped. */
+export function readSeasonTickets(value: unknown): SeasonTicket[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const out: SeasonTicket[] = [];
+  for (const raw of value) {
+    if (!raw || typeof raw !== 'object') continue;
+    const t = raw as Partial<SeasonTicket>;
+    if (typeof t.teamId !== 'string' || (t.plan !== 'full' && t.plan !== 'partial') || typeof t.updatedAt !== 'string') continue;
+    const removed: SeasonTicket['removed'] = {};
+    if (t.removed && typeof t.removed === 'object') {
+      for (const [gameId, r] of Object.entries(t.removed as Record<string, { reason?: unknown; soldFor?: unknown; at?: unknown }>)) {
+        if (!r || typeof r !== 'object' || typeof r.at !== 'string') continue;
+        const reason = r.reason === 'sold' || r.reason === 'gave' || r.reason === 'skipped' ? r.reason : undefined;
+        const soldFor = reason === 'sold' && typeof r.soldFor === 'number' && Number.isFinite(r.soldFor) && r.soldFor >= 0 ? r.soldFor : undefined;
+        removed[gameId] = { ...(reason ? { reason } : {}), ...(soldFor !== undefined ? { soldFor } : {}), at: r.at };
+      }
+    }
+    const money = (n: unknown) => (typeof n === 'number' && Number.isFinite(n) && n >= 0 ? n : undefined);
+    const ids = (list: unknown) => (Array.isArray(list) ? list.filter((x): x is string => typeof x === 'string') : undefined);
+    out.push({
+      teamId: t.teamId,
+      on: t.on === true,
+      plan: t.plan,
+      ...(t.seats && typeof t.seats === 'object' ? { seats: t.seats } : {}),
+      ...(money(t.ticket) !== undefined ? { ticket: money(t.ticket) } : {}),
+      ...(money(t.parking) !== undefined ? { parking: money(t.parking) } : {}),
+      ...(typeof t.currency === 'string' ? { currency: t.currency } : {}),
+      preseason: t.preseason !== false,
+      ...(ids(t.picked) ? { picked: ids(t.picked) } : {}),
+      removed,
+      ...(ids(t.declined) ? { declined: ids(t.declined) } : {}),
+      updatedAt: t.updatedAt,
+    });
+  }
+  return out.length > 0 ? out : undefined;
+}
+
 export function readStamp(value: unknown): string | undefined {
   return typeof value === 'string' && Number.isFinite(Date.parse(value)) ? value : undefined;
 }
@@ -148,6 +185,7 @@ export function readLocalLog(): PersonalLog {
       ...(readStamp(parsed.crowdRangeAt) ? { crowdRangeAt: readStamp(parsed.crowdRangeAt) } : {}),
       ...(readTemperatureUnit(parsed.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(parsed.temperatureUnit) } : {}),
       ...(readStamp(parsed.temperatureUnitAt) ? { temperatureUnitAt: readStamp(parsed.temperatureUnitAt) } : {}),
+      ...(readSeasonTickets(parsed.seasonTickets) ? { seasonTickets: readSeasonTickets(parsed.seasonTickets) } : {}),
       ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {

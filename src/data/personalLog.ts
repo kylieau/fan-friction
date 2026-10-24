@@ -25,7 +25,9 @@ import { drawSize } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
-import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SportsLevel, Stamp, PersonalLog, StubVisibility, YouOrder } from './types';
+import { onTeamSchedule } from './teamSchedule';
+import { applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanFrom } from './seasonTickets';
+import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, SportsLevel, Stamp, PersonalLog, StubVisibility, TeamGame, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -1068,7 +1070,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
   if (kind) {
     const plans = snapshot.plans.filter((plan) => plan.eventId !== event.id);
     if (kind === answer) {
-      commit({ ...snapshot, plans });
+      // Taking a season game out here is a removal like the season page's (no reason), so the season does not add it back.
+      commit({ ...snapshot, plans, seasonTickets: withSeasonRemoval(snapshot, snapshot.plans.find((plan) => plan.eventId === event.id)) });
       return;
     }
   }
@@ -1086,6 +1089,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     // So do a same-day cost and seat (build 7): cost through Attending and Watching, a seat only while Attending.
     ...(before?.cost && answer !== 'interested' ? { cost: before.cost } : {}),
     ...(before?.seats && answer === 'attend' ? { seats: before.seats } : {}),
+    // A season game stays a season game whatever the answer (build 7.1, item 15; Codex would otherwise see it added twice).
+    ...(before?.season ? { season: before.season } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
@@ -1186,7 +1191,144 @@ function carryPlanExtras(plan: Plan, entry: Entry): Entry {
 }
 
 export function removePlan(planId: string) {
-  commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.id !== planId) });
+  commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.id !== planId), seasonTickets: withSeasonRemoval(snapshot, snapshot.plans.find((plan) => plan.id === planId)) });
+}
+
+// ---------- Season tickets (build 7.1, item 15; Kylie, Oct 23, 2026) ----------
+
+/** The team's season-ticket record, on or off. */
+export function seasonTicketOf(teamId: string, log: PersonalLog = snapshot): SeasonTicket | undefined {
+  return log.seasonTickets?.find((ticket) => ticket.teamId === teamId);
+}
+
+function withSeasonTicket(log: PersonalLog, ticket: SeasonTicket): SeasonTicket[] {
+  return [...(log.seasonTickets ?? []).filter((t) => t.teamId !== ticket.teamId), { ...ticket, updatedAt: new Date().toISOString() }];
+}
+
+/** A season plan leaving by any door (the event page, its own page, the season page) is written down, so the season never adds it back. */
+function withSeasonRemoval(log: PersonalLog, plan: Plan | undefined, reason?: SeasonRemovalReason, soldFor?: number): SeasonTicket[] | undefined {
+  if (!plan?.season) return log.seasonTickets;
+  const ticket = seasonTicketOf(plan.season.teamId, log);
+  if (!ticket) return log.seasonTickets;
+  const entry = { ...(reason ? { reason } : {}), ...(reason === 'sold' && typeof soldFor === 'number' ? { soldFor } : {}), at: new Date().toISOString() };
+  return withSeasonTicket(log, { ...ticket, removed: { ...ticket.removed, [plan.season.gameId]: entry } });
+}
+
+function todayFor(teamId: string): string {
+  const metro = METROS[TEAMS[teamId]?.metroId ?? ''] ?? METROS.la;
+  return todayInZone(metro.timeZone, new Date());
+}
+
+/**
+ * Turn the switch on (or change the plan's shape): the record is saved and every wanted game becomes an Attending
+ * plan at once, from the whole schedule, the catalog window notwithstanding.
+ */
+export function startSeasonTickets(teamId: string, games: readonly TeamGame[], setup: Omit<SeasonTicket, 'teamId' | 'on' | 'removed' | 'updatedAt'> & { removed?: SeasonTicket['removed'] }) {
+  const before = seasonTicketOf(teamId);
+  const ticket: SeasonTicket = { ...before, ...setup, teamId, on: true, removed: setup.removed ?? before?.removed ?? {}, updatedAt: new Date().toISOString() };
+  const seasonTickets = withSeasonTicket(snapshot, ticket);
+  commit({ ...snapshot, seasonTickets, plans: reconcileSeasonPlans(snapshot.plans, ticket, games, todayFor(teamId), stubDefault()) });
+}
+
+/** The schedule has loaded (any screen, app start): the team's season plans follow it. Quiet when nothing changed. */
+export function syncSeasonSchedule(teamId: string, games: readonly TeamGame[]) {
+  const ticket = seasonTicketOf(teamId);
+  if (!ticket?.on) return;
+  const plans = reconcileSeasonPlans(snapshot.plans, ticket, games, todayFor(teamId), stubDefault());
+  if (plans.length === snapshot.plans.length && plans.every((plan, i) => plan === snapshot.plans[i])) return;
+  commit({ ...snapshot, plans });
+}
+onTeamSchedule(syncSeasonSchedule);
+
+/**
+ * A default changed (seat, price, parking): saved, then applied to the upcoming season games that were never edited,
+ * or to all of them, as she chose. Past stubs never change.
+ */
+export function updateSeasonDefaults(teamId: string, patch: Partial<Pick<SeasonTicket, 'seats' | 'ticket' | 'parking' | 'currency' | 'preseason' | 'picked'>>, apply: 'unedited' | 'all' | 'none', games?: readonly TeamGame[]) {
+  const before = seasonTicketOf(teamId);
+  if (!before) return;
+  const ticket: SeasonTicket = { ...before, ...patch, updatedAt: new Date().toISOString() };
+  const today = todayFor(teamId);
+  let plans = snapshot.plans.map((plan) => {
+    if (plan.season?.teamId !== teamId || plan.date < today || apply === 'none') return plan;
+    if (apply === 'unedited' && plan.season.edited) return plan;
+    return applySeasonDefaults(plan, ticket);
+  });
+  if (games) plans = reconcileSeasonPlans(plans, ticket, games, today, stubDefault());
+  commit({ ...snapshot, seasonTickets: withSeasonTicket(snapshot, ticket), plans });
+}
+
+/** How many upcoming season plans a default change would touch, for the prompt's two counts. */
+export function seasonEditCounts(teamId: string, log: PersonalLog = snapshot): { upcoming: number; edited: number } {
+  const today = todayFor(teamId);
+  const mine = log.plans.filter((plan) => plan.season?.teamId === teamId && plan.date >= today);
+  return { upcoming: mine.length, edited: mine.filter((plan) => plan.season?.edited).length };
+}
+
+/** One game's seat or cost, this game only (an Edited mark; a default change leaves it be). */
+export function setSeasonGame(planId: string, patch: { seats?: Plan['seats']; cost?: Plan['cost'] }) {
+  commit({ ...snapshot, plans: snapshot.plans.map((plan) => (plan.id === planId && plan.season ? editSeasonPlan(plan, patch) : plan)) });
+}
+
+/** "Reset to default": the game takes the defaults again and loses its Edited mark. */
+export function resetSeasonGame(planId: string) {
+  const plan = snapshot.plans.find((p) => p.id === planId);
+  const ticket = plan?.season ? seasonTicketOf(plan.season.teamId) : undefined;
+  if (!plan || !ticket) return;
+  commit({ ...snapshot, plans: snapshot.plans.map((p) => (p.id === planId ? applySeasonDefaults(p, ticket) : p)) });
+}
+
+/** A season game out of the plans: kept on the season page, greyed, with the optional reason and sale amount. */
+export function removeSeasonGame(planId: string, reason?: SeasonRemovalReason, soldFor?: number) {
+  const plan = snapshot.plans.find((p) => p.id === planId);
+  if (!plan?.season) return;
+  commit({ ...snapshot, plans: snapshot.plans.filter((p) => p.id !== planId), seasonTickets: withSeasonRemoval(snapshot, plan, reason, soldFor) });
+}
+
+/** Re-add a removed game: its plan comes back with the defaults. On a Partial plan it is picked again too. */
+export function readdSeasonGame(teamId: string, game: TeamGame) {
+  const ticket = seasonTicketOf(teamId);
+  if (!ticket) return;
+  const { [game.id]: _dropped, ...removed } = ticket.removed;
+  const next: SeasonTicket = { ...ticket, removed, ...(ticket.plan === 'partial' ? { picked: [...new Set([...(ticket.picked ?? []), game.id])] } : {}), updatedAt: new Date().toISOString() };
+  const plans = snapshot.plans.some((plan) => plan.eventId === (game.eventId ?? `${game.date}-game-${game.id}`)) ? snapshot.plans : [...snapshot.plans, seasonPlanFrom(next, game, stubDefault())];
+  commit({ ...snapshot, seasonTickets: withSeasonTicket(snapshot, next), plans });
+}
+
+/** A home playoff game: "Add as Attending" makes an ordinary plan with the default seat and no price; "Not this one" is remembered. */
+export function answerSeasonPlayoff(teamId: string, game: TeamGame, add: boolean) {
+  const ticket = seasonTicketOf(teamId);
+  if (!ticket) return;
+  if (!add) {
+    commit({ ...snapshot, seasonTickets: withSeasonTicket(snapshot, { ...ticket, declined: [...new Set([...(ticket.declined ?? []), game.id])] }) });
+    return;
+  }
+  const plan = seasonPlanFrom({ ...ticket, ticket: undefined, parking: undefined }, game, stubDefault());
+  const { season: _season, ...ordinary } = plan;
+  if (snapshot.plans.some((p) => p.eventId === ordinary.eventId)) return;
+  commit({ ...snapshot, plans: [...snapshot.plans, ordinary] });
+}
+
+/** Turn the switch off: the upcoming season games leave the plans (greyed ones too); past stubs stay; the defaults are kept for next time. */
+export function stopSeasonTickets(teamId: string) {
+  const ticket = seasonTicketOf(teamId);
+  if (!ticket) return;
+  const today = todayFor(teamId);
+  commit({
+    ...snapshot,
+    seasonTickets: withSeasonTicket(snapshot, { ...ticket, on: false, removed: {}, declined: [] }),
+    plans: snapshot.plans.filter((plan) => !(plan.season?.teamId === teamId && plan.date >= today)),
+  });
+}
+
+/** The counts the turn-off confirmation shows: upcoming season games, and past stubs from this team's games. */
+export function seasonCounts(teamId: string, log: PersonalLog = snapshot): { upcoming: number; stubs: number; removed: number } {
+  const today = todayFor(teamId);
+  const ticket = seasonTicketOf(teamId, log);
+  const upcoming = log.plans.filter((plan) => plan.season?.teamId === teamId && plan.date >= today).length;
+  const team = TEAMS[teamId];
+  const stubs = team ? yourEntries(log).filter((entry) => !entry.watched && entry.kind === 'game' && (entry.sides ?? []).some((side) => side === team.shortName || side === team.name) && entry.inMetro !== false).length : 0;
+  return { upcoming, stubs, removed: Object.keys(ticket?.removed ?? {}).length };
 }
 
 /** Plans still ahead, soonest first. A past plan stays in the backup but leaves Up next. */

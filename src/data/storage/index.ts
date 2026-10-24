@@ -183,6 +183,7 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     before.crowdRangeAt !== after.crowdRangeAt ||
     before.temperatureUnit !== after.temperatureUnit ||
     before.temperatureUnitAt !== after.temperatureUnitAt ||
+    JSON.stringify(before.seasonTickets ?? null) !== JSON.stringify(after.seasonTickets ?? null) ||
     JSON.stringify(before.removed ?? {}) !== JSON.stringify(removed);
   return { entries, plans, settings, log };
 }
@@ -223,8 +224,19 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     ...mergeCities(account, phone),
     ...mergeCrowdRange(account, phone),
     ...mergeTemperatureUnit(account, phone),
+    ...mergeSeasonTickets(account, phone),
     removed,
   };
+}
+
+/** Season tickets (build 7.1, item 15): team by team, the copy changed last wins, so two devices editing two teams keep both. */
+function mergeSeasonTickets(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'seasonTickets'> {
+  const byTeam = new Map((account.seasonTickets ?? []).map((t) => [t.teamId, t]));
+  for (const t of phone.seasonTickets ?? []) {
+    const mine = byTeam.get(t.teamId);
+    if (!mine || t.updatedAt > mine.updatedAt) byTeam.set(t.teamId, t);
+  }
+  return byTeam.size > 0 ? { seasonTickets: [...byTeam.values()] } : {};
 }
 
 /** Temperature Units (build 7.1, M40): the copy changed last wins, as with the crowd range; an unstamped copy yields. */
