@@ -17,7 +17,7 @@ import type {
   MetroDate,
   Stamp,
 } from './types';
-import { cachedCaptureDays, cachedSnapshots } from './catalogCache';
+import { cachedCaptureDays, cachedSnapshots, cachedSnapshotsOn } from './catalogCache';
 import type { ArchiveForecastRow } from './startForecastIndex';
 import { SCHEDULE_SNAPSHOTS, type ScheduleSnapshotSpan } from './scheduleArchiveIndex';
 import { capacityOn, VENUES } from './venues';
@@ -324,6 +324,13 @@ export interface SavedNightRead {
   rating: number;
   /** When the nightly job saved it. */
   capturedAt: string;
+  /** The capture day it came from. */
+  capturedOn: string;
+  /**
+   * The saved event set of that capture for this date (build 7.1, M6): what the verdict was scored from, with each
+   * row's start and expected draw, so the headline and detail read from the saved night, not today's catalog.
+   */
+  rows: ArchiveForecastRow[];
   /** Set when a formula change re-scored the night against the saved schedule. Told in "About this read" (build notes 2, section 1). */
   rescoredOn?: string;
   /** The read before that re-score ("It was 9.1."). Written with `rescoredOn` by the re-score job, which does not exist yet. */
@@ -352,9 +359,13 @@ export function savedNightRead(metroId: string, date: LocalDate, events: readonl
     }
   }
   if (!best || best.read?.rating == null) return null;
+  const chosen = best;
+  const rows = (cachedSnapshotsOn(metroId, date) ?? []).filter((row) => row.capturedOn === chosen.capturedOn);
   return {
     rating: best.read.rating,
     capturedAt: best.capturedAt,
+    capturedOn: best.capturedOn,
+    rows,
     ...(best.rescoredOn ? { rescoredOn: best.rescoredOn } : {}),
     ...(best.rescoredOn && typeof best.previousRating === 'number' ? { previousRating: best.previousRating } : {}),
   };

@@ -34,9 +34,13 @@ import {
   rangeOn,
   splitByRange,
   yourEntries,
+  verdictLines,
+  liveItems,
+  savedItems,
   type CityDate,
   type CrowdEvent,
   type FeedItem,
+  type SavedNightRead,
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
@@ -192,6 +196,9 @@ export function DateScreen() {
   // A settled night shows the read as it was saved, never today's recomputation (3.15).
   const saved = locked ? savedNightRead(metro.id, date, events) : null;
   const shownRating = saved?.rating ?? rating?.rating ?? null;
+  // The lines under the number come from the same set the number came from (M6): the saved night's rows when the
+  // saved verdict shows, else today's events. The sources count is the feeds that listed events in that set.
+  const lines = saved ? verdictLines(savedItems(saved.rows, events), metro.name) : verdictLines(liveItems(events), metro.name);
 
   return (
     <div className="screen page date-page">
@@ -234,14 +241,11 @@ export function DateScreen() {
             </span>
             <span className="read-why">
               {readKind && <span className="read-lab">{readKind}</span>}
-              <span className="read-txt">{rating.headline}</span>
-              {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
-              <span className="read-meta">
-                {/* No internal terms here (C069): the sources count after; no lock time ahead (Kylie, Oct 14). A verdict
-                    never says "Estimated" (Kylie, Oct 23, 2026, build 7.1 M16): a day from before the archive reads
-                    like any other settled day. */}
-                {!ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
-              </span>
+              <span className="read-txt">{lines.headline}</span>
+              {lines.detail ? <span className="read-detail">{lines.detail}</span> : null}
+              {/* No internal terms here (C069); no lock time ahead (Kylie, Oct 14). A verdict never says "Estimated"
+                  (Kylie, Oct 23, 2026, build 7.1 M16): a day from before the archive reads like any other settled day. */}
+              <span className="read-meta">{lines.meta}</span>
             </span>
             {locked && (
               <button type="button" className="read-info" aria-label="About This Verdict" onClick={() => setAbout(true)}>
@@ -278,7 +282,7 @@ export function DateScreen() {
           </>
         )}
       </section>
-      {about && <AboutRead saved={saved ?? {}} onClose={() => setAbout(false)} />}
+      {about && <AboutRead saved={saved} sources={lines.sources} onClose={() => setAbout(false)} />}
 
       {/* Order since build 7.1 (M1, Kylie, Oct 23, 2026): the verdict, then the lineup (people open a day to see what's
           on), then Local Competition, then Further Out; the Attended card sits at the bottom (M7). */}
@@ -429,8 +433,15 @@ function venueOf(e: CrowdEvent): string | null {
 
 /** "52,394 announced · sold out", "sold out", or nothing. Every count keeps its kind. */
 
-/** How a settled read came to be (build notes 2, section 1). Only a redone read adds its second line. */
-function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousRating?: number }; onClose: () => void }) {
+/**
+ * How a settled verdict came to be (build 7.1, M5; Kylie, Oct 23, 2026; the 05-b board): two short paragraphs, no
+ * icons, the counts from the saved verdict. A settled night with nothing saved (from before the archive) gets the one
+ * sentence that is true of it, never "frozen", "saved" or "Estimated" (M16). Only a redone verdict adds its last line.
+ */
+function AboutRead({ saved, sources, onClose }: { saved: SavedNightRead | null; sources: number; onClose: () => void }) {
+  const n = saved?.rows.length ?? 0;
+  const s = saved ? sources : 0;
+  const counts = n > 0 ? `: ${n} ${n === 1 ? 'event' : 'events'}${s > 0 ? ` from ${s} ${s === 1 ? 'source' : 'sources'}` : ''}` : '';
   return (
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="about-read-title" onClick={onClose}>
       <div className="home-card about-read" onClick={(event) => event.stopPropagation()}>
@@ -442,9 +453,10 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
             ×
           </button>
         </div>
-        <p className="about-read-line">Settled the day after the games.</p>
-        {saved.rescoredOn && (
-          <p className="about-read-line">
+        {saved && <p className="about-read-line">Settled the morning after. This verdict is frozen from the last schedule we saved before the day{counts}.</p>}
+        <p className="about-read-line">It weighs each event's expected crowd against the others that overlap it, plus outdoor weather.</p>
+        {saved?.rescoredOn && (
+          <p className="about-read-line about-read-revised">
             Revised {shortLocalDate(saved.rescoredOn)} when we improved the method.{typeof saved.previousRating === 'number' ? ` It was ${formatScore(saved.previousRating)}.` : ''}
           </p>
         )}

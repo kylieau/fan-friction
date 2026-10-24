@@ -153,6 +153,21 @@ export function cachedSnapshots(metroId: string, eventId: string, date: LocalDat
   return snapshots.get(`${metroId}|${eventId}`) ?? [];
 }
 
+/**
+ * Every saved row for one date in a city, across captures: the saved event set a settled verdict was scored from,
+ * whatever the catalog holds today (build 7.1, M6: a night saved with 11 events reads as 11, not today's 15).
+ * Null when that date hasn't been loaded.
+ */
+export function cachedSnapshotsOn(metroId: string, date: LocalDate): ArchiveForecastRow[] | null {
+  if (!isPrimed(metroId, date)) return null;
+  const out: ArchiveForecastRow[] = [];
+  for (const [key, rows] of snapshots) {
+    if (!key.startsWith(`${metroId}|`)) continue;
+    for (const row of rows) if (row.date === date) out.push(row);
+  }
+  return out;
+}
+
 export function cachedExpectedDraws(metroId: string): ExpectedDrawRow[] | null {
   return expectedDraws.get(metroId) ?? null;
 }
