@@ -9476,9 +9476,17 @@ a.follow-lead::after {
 }
 
 .follow-title {
+  display: flex;
+  align-items: center;
+  min-width: 0;
   font-size: 15px;
   font-weight: 800;
   line-height: 1.15;
+}
+
+/* The name alone ellipsizes; the plan mark after it keeps its width (build 7.1, Codex stage 3). */
+.follow-title-text {
+  min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -11640,6 +11648,7 @@ a.follow-lead::after {
 /* A fave's row that is also a plan (build 7.1, item 16, option A): the plan's icon, 13px, action blue, after the title. */
 .follow-mark {
   display: inline-flex;
+  flex: none;
   align-items: center;
   margin-left: 6px;
   color: var(--dodger);
@@ -11750,9 +11759,6 @@ a.follow-lead::after {
   position: sticky;
   top: var(--faves-band-h, 40px);
   z-index: 2;
-}
-.upcoming-month .log-list {
-  margin-top: 8px;
 }
 .upcoming-faves .empty-card {
   margin-top: 10px;

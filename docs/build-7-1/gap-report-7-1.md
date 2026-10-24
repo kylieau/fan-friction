@@ -17,6 +17,7 @@
 | 7. Weeks start on Sunday | done, pushed | `53478d64` | week math checked at month, year and DST edges |
 | 8. Upcoming and Activity: M22, M23, M24, items 1, 3, 5, 10, 11, 16 | done, pushed | `6582d905`, `9eb62251`, `d1db0980`, docs `31db66f3` | window, bands, divider, marks, stubs and Activity measured with made plans |
 | 9. Log sheet, search, Your Stubs, tab bar: items 4, 6, 7, 8, 9, 12, 13, 14 | done | _(this commit)_ | measured on the headless phone; Codex stage 3 fixes follow in their own commit |
+| Codex stage 3 | done | _(this commit)_ | twenty-two findings, twenty accepted (two in part), two not done with reasons (plan reads past the horizon; a shared game identity) |
 | Codex stage 2 | done, pushed | `0552deee` | fourteen findings, thirteen accepted (one in part), one not fixable from the data | strip, card and row markers measured; the saved-night lines checked headless from the archive |
 | Codex stage 1 | done, pushed | `6ae4e5c5`, docs `3773857d` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
 
@@ -230,6 +231,31 @@ Found fine: the archive rewrite (titles and audiences only, forecasts byte-ident
 13. **M3's unknown-end fallback** (the sport's running time instead of the Locked "start plus three hours"; medium). **Accepted:** every window is the start plus three hours, since no listing carries an end; the builder's call is withdrawn and the table row replaced.
 14. **The card's summary sentence is absent** (low). **Not fixable from the data** (no text forecast is stored); it stays in the table and goes to Kylie as a question.
 Found fine: the Sunday week math across month, year and leap edges and under four process time zones; every verdict colour and the past-tile contrast (5.24:1 to 15.86:1); the sticky band's scroll ancestor and the pill's 30px / 44px / 48px; the forecast-only filter, the `before` cutoff, the indoor and missing-venue cases, the strip's one-figure wording, the remount keys; the Oct 21 saved lines; the unit storage and merge; the version-gated retitle; no privacy leak, route or type error.
+
+**Stage 3** (step 8, the diff `0552deee..31db66f3`, Oct 24 about 7:50–8:05 AM Pacific; read-only; it type-checked, ran the storage checks in memory and `git diff --check`; its sandbox could not finish the production build or open a browser, so `npm run build` and the measurements below are this session's). Twenty-two findings, no high:
+1. **Friends' plans vanished without Faves** (the dated list rendered only with `favorites.length > 0`; medium). **Accepted:** the list shows when there are Faves or friends' rows.
+2. **M23 missed other Watched surfaces** (the Stubs grid, Home's feed rows, profile rows, a hand-typed stub's page; medium). **Accepted** through one shared piece: `ratingForEntry` returns no verdict for a Watched stub, so every tile that reads through it follows (the grid, Home, Compare, a tag's page, a team's page, profiles, the hand-typed page's verdict card); Activity's mixed rows fall through to the date's verdict when someone else attended, and the all-watched row keeps its no-tile path.
+3. **A second today cutoff by home's date** lost a plan still current in its own city (medium). **Accepted:** Upcoming keeps the feed's own rule (a plan from its city's today on) and adds none.
+4. **A failed plans read was silent on Upcoming** and reported on Activity, where plans no longer show (medium). **Accepted:** the note moved to Upcoming, under the chips, Activity's dropped.
+5. **Plans could exhaust the feed** (one slice over plans then attended lines; medium). **Accepted:** each half is already cut by its own query, so the pair is no longer cut again; `followingFeed` (Home, the Map, search) keeps its total.
+6. **Plan details depended on the catalog window** (a schedule-only game lost its start even when the fave's loaded schedule had it; medium). **Accepted in part:** a plan's start now comes from the listing, else the fave's schedule game, else the hand-typed time, for the row and its sort. Fetching a plan's event on its own past the 60-day horizon is **not done** (a new read per plan; listed for the cleanup step and stage 4).
+7. **Friends' schedule-only rows could borrow a city verdict** for a game outside the covered cities (medium). **Accepted:** `isOutsideGame` (the same test as your own plans) gives those rows the grey Away tag and no verdict.
+8. **Friends' game links lost their fallback** (medium). **Accepted:** `friendStubState` rides on the row's link as on Activity.
+9. **Overflow cues came from the count** (low). **Accepted:** the box is capped past three plans, and the count, fades and "End of your plans" come on only when the measured rows overrun 240px.
+10. **Stale fades after a remount** (low). **Accepted:** the box's position is read again whenever the plans change.
+11. **Equivalent schedule games can duplicate across the two teams' feeds** (low). **Not done:** it needs a shared game identity across providers (a data-model change); on record for later.
+12. **Item 11's lead read teams only** (low). **Accepted:** a favorite venue linked by id leads too; still never a name match.
+13. **A long title could hide the plan mark** (low). **Accepted:** the name ellipsizes on its own and the mark keeps its width.
+14. **You's Interested count could fall off a one-plan line** (low). **Accepted:** with an Interested count beside it, one plan reads "1 plan" instead of its name.
+15. **Removed Activity kinds survived in session storage** (low). **Accepted:** stored picks are pruned to Attended and Watched.
+16. **Activity's people counts included invisible lines** (low). **Accepted:** counts cover attended and watched lines inside the 60 days.
+17. **"All of your own stubs show" excluded rough dates** (low). **Accepted as wording:** "All of your own dated stubs show." (a month- or year-only stub has no day to sit on in a dated list).
+18. **The helper promised Interested plans become stubs** (low). **Accepted:** "Attending and Watching become stubs in You once they happen."
+19. **Upcoming's month spacing doubled** (an 8px margin on top of the group's 8px gap; low). **Accepted:** the extra margin is gone; measured 8px band-to-list.
+20. **Dead `noRead` fields on Activity** (low). **Accepted:** removed.
+21. **`plansOf`'s comment claimed approval-only** (low). **Accepted:** the comment states the per-plan levels the view applies.
+22. **A band resize outside React could stale the sticky offset** (low). **Accepted:** a `ResizeObserver` on the band keeps the offset current.
+Found fine: plan privacy (the `plan_cards` view and visibility functions, no new path to a Private or Friends plan), a missing `metroId` does not drop a plan, no 60-day upper cutoff on plans, schedule-only rows merge on an exact id, friends' statuses Title Case in the ladder's order, Activity backward-only and newest-first with the friends' floor, the Watched-only no-tile paths, no numeric verdict on a catalog event's stub line, `backDays: 0` with the Today divider and no pill, the box's `max-height: 240px` and normal scroll chaining, coherent sticky offsets, Interested-only You rows, profile Interested flags, Timeline's remaining caller, no unused imports.
 
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).

@@ -138,7 +138,9 @@ export function YouScreen() {
           {/* A count line, not a heading (build 7.1, item 5): "Upcoming · 2 plans · 1 interested"; one plan keeps its name. */}
           <span className="you-upcoming-words">
             <strong>Upcoming</strong>
-            {plans.length === 1 && ` · ${plans[0].title} · ${new Date(`${plans[0].date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' })}`}
+            {/* One plan keeps its name only when nothing else has to fit on the line (Codex, stage 3): with an Interested count beside it the title would push the count off the end. */}
+            {plans.length === 1 && interestedCount === 0 && ` · ${plans[0].title} · ${new Date(`${plans[0].date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' })}`}
+            {plans.length === 1 && interestedCount > 0 && ' · 1 plan'}
             {plans.length > 1 && ` · ${plans.length} plans`}
             {interestedCount > 0 && ` · ${interestedCount} interested`}
           </span>

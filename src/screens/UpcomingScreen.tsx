@@ -10,6 +10,7 @@ import { CheckRow, FAVORITE_KINDS, FilterButton, FilterChips, FilterSheet, Sheet
 import { favPath } from './FavoritesScreen';
 import { EditFavoritesSheet } from '../components/EditFavoritesSheet';
 import { favoriteName } from '../components/FavoriteBadge';
+import { friendStubState } from '../components/FeedRow';
 import {
   favoriteDisplayName,
   favoriteKey,
@@ -19,6 +20,7 @@ import {
   getPersonalLog,
   isFurtherOut,
   isFurtherOutRoom,
+  isOutsideGame,
   isOutsideGamePlan,
   gameEventId,
   nightKey,
@@ -126,24 +128,37 @@ export function UpcomingScreen() {
   // Future only (M22): no past rows, so nothing to reach by scrolling up and no Today pill.
   const { rows, today, events: listed } = useFavoriteRows(favorites, home, SPAN_DAYS, 0);
   const listedById = useMemo(() => new Map(listed.map((e) => [e.id, e])), [listed]);
-  const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || (planStart(a, listedById) ?? '99').localeCompare(planStart(b, listedById) ?? '99') || a.title.localeCompare(b.title)), [log, today, listedById]);
+  // A schedule-only game's start, from the fave's loaded schedule, for plans the catalog window does not hold (Codex, stage 3).
+  const startByGame = useMemo(() => new Map(rows.flatMap((row) => (row.link && row.start ? [[row.link.game.eventId ?? gameEventId(row.link.game), row.start] as const] : []))), [rows]);
+  const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || (planStart(a, listedById, startByGame) ?? '99').localeCompare(planStart(b, listedById, startByGame) ?? '99') || a.title.localeCompare(b.title)), [log, today, listedById, startByGame]);
 
   // Friends' upcoming plans (M22, item 1): what the feed already returns for approved followees, Interested included;
   // the privacy level is applied inside that read, exactly as Activity's was.
+  // The feed already keeps a plan from its own city's today on, so no second cutoff by home's date here (Codex, stage 3).
   const [friendPlans, setFriendPlans] = useState<FeedItem[]>([]);
+  const [friendsNote, setFriendsNote] = useState<string | null>(null);
   useEffect(() => {
     let current = true;
+    setFriendsNote(null);
     if (!account) {
       setFriendPlans([]);
       return;
     }
     followingFeedWithStatus(300)
-      .then((result) => current && setFriendPlans(result.items.filter((line) => line.kind === 'planning' && line.date >= today)))
-      .catch(() => current && setFriendPlans([]));
+      .then((result) => {
+        if (!current) return;
+        setFriendPlans(result.items.filter((line) => line.kind === 'planning'));
+        if (result.plansFailed) setFriendsNote("Couldn't load your friends' plans. Try again later.");
+      })
+      .catch(() => {
+        if (!current) return;
+        setFriendPlans([]);
+        setFriendsNote("Couldn't load your friends' plans. Try again later.");
+      });
     return () => {
       current = false;
     };
-  }, [account?.id, today]);
+  }, [account?.id]);
 
   // The date range the filter asks for; "All upcoming" is no range at all, so the past stays above the line.
   const range = useMemo(() => dateRange(filter.dates, today), [filter.dates, today]);
@@ -232,7 +247,7 @@ export function UpcomingScreen() {
           key: `friends:${line.eventId ?? `${line.metroId}|${line.date}|${line.title}`}`,
           date: line.date,
           start: event?.start ?? null,
-          node: <FriendRow lines={lines} event={event} rating={line.metroId && !isFurtherOutRoom(line.metroId, line.venue) ? (ratings.get(nightKey(line.metroId, line.date)) ?? null) : null} home={home.id} />,
+          node: <FriendRow lines={lines} event={event} rating={line.metroId ? (ratings.get(nightKey(line.metroId, line.date)) ?? null) : null} home={home.id} />,
         };
       })
     : [];
@@ -245,9 +260,13 @@ export function UpcomingScreen() {
     else months.push([group, [item]]);
   }
 
-  // The plans window (item 16): the box scrolls inside itself past three plans; its cues come from where it is.
-  const windowScrolls = shownPlans.length > PLANS_WINDOW_ROWS;
+  // The plans window (item 16): the box is capped past three plans, and the cues (count, fades, end line) come on only
+  // when the rows really overrun the cap, measured, not counted (Codex, stage 3). Where it is comes from its scroll.
+  const windowCapped = shownPlans.length > PLANS_WINDOW_ROWS;
   const box = useRef<HTMLDivElement>(null);
+  const planList = useRef<HTMLUListElement>(null);
+  const [listHeight, setListHeight] = useState(0);
+  const windowScrolls = windowCapped && listHeight > PLANS_WINDOW_PX;
   const [boxAt, setBoxAt] = useState<'top' | 'middle' | 'end'>('top');
   const onBoxScroll = () => {
     const el = box.current;
@@ -255,14 +274,25 @@ export function UpcomingScreen() {
     const atEnd = el.scrollTop + el.clientHeight >= el.scrollHeight - 2;
     setBoxAt(el.scrollTop <= 2 ? 'top' : atEnd ? 'end' : 'middle');
   };
+  useLayoutEffect(() => {
+    setListHeight(planList.current ? Math.round(planList.current.getBoundingClientRect().height) : 0);
+    // The box may come back at its top after a filter or a remount: the cues follow where it really is.
+    onBoxScroll();
+  }, [shownPlans.length, windowCapped]);
   // The YOUR FAVES band pins at the top of the scroll area once the box is gone, with the month band under it
-  // (mock 30): the month bands' sticky offset is the band's measured height.
+  // (mock 30): the month bands' sticky offset is the band's measured height, watched for changes.
   const scroller = useRef<HTMLDivElement>(null);
   const favesBand = useRef<HTMLDivElement>(null);
   useLayoutEffect(() => {
     const el = scroller.current;
     const band = favesBand.current;
-    if (el && band) el.style.setProperty('--faves-band-h', `${Math.round(band.getBoundingClientRect().height)}px`);
+    if (!el || !band) return;
+    const apply = () => el.style.setProperty('--faves-band-h', `${Math.round(band.getBoundingClientRect().height)}px`);
+    apply();
+    if (typeof ResizeObserver === 'undefined') return;
+    const watch = new ResizeObserver(apply);
+    watch.observe(band);
+    return () => watch.disconnect();
   });
 
   const planRows: ReactNode[] = [];
@@ -274,7 +304,7 @@ export function UpcomingScreen() {
     lastMonth = month;
     planRows.push(
       <li key={plan.id}>
-        <PlanBandRow plan={plan} event={plan.eventId ? listedById.get(plan.eventId) : undefined} favorites={favorites} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} home={home.id} />
+        <PlanBandRow plan={plan} event={plan.eventId ? listedById.get(plan.eventId) : undefined} start={planStart(plan, listedById, startByGame)} favorites={favorites} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} home={home.id} />
       </li>,
     );
   }
@@ -307,8 +337,8 @@ export function UpcomingScreen() {
                 </div>
                 {shownPlans.length > 0 ? (
                   <div className={`plans-window-frame${windowScrolls ? ` scrolls at-${boxAt}` : ''}`}>
-                    <div ref={box} className="plans-window" style={windowScrolls ? { maxHeight: PLANS_WINDOW_PX } : undefined} onScroll={windowScrolls ? onBoxScroll : undefined}>
-                      <ul className="log-list plans-band-list">{planRows}</ul>
+                    <div ref={box} className="plans-window" style={windowCapped ? { maxHeight: PLANS_WINDOW_PX } : undefined} onScroll={windowCapped ? onBoxScroll : undefined}>
+                      <ul ref={planList} className="log-list plans-band-list">{planRows}</ul>
                       {windowScrolls && <p className="plans-window-end">End of your plans</p>}
                     </div>
                   </div>
@@ -321,7 +351,7 @@ export function UpcomingScreen() {
                     <span>No upcoming plans. Mark events Attending, Watching, or Interested.</span>
                   </div>
                 )}
-                {plans.length < 3 && plans.length > 0 && <p className="you-fine plans-band-note">Events you marked Attending, Watching, or Interested. They become stubs in You once they happen.</p>}
+                {plans.length < 3 && plans.length > 0 && <p className="you-fine plans-band-note">Events you marked Attending, Watching, or Interested. Attending and Watching become stubs in You once they happen.</p>}
                 {favorites.length === 0 && (
                   <div className="card empty-card following-empty upcoming-add-fave">
                     <div className="card-title">No Faves yet</div>
@@ -337,7 +367,13 @@ export function UpcomingScreen() {
             <div className="today-line upcoming-today">
               <h3 className="today-line-label">{dayBandLabel(today, today)}</h3>
             </div>
-            {filter.faves && favorites.length > 0 && (
+            {friendsNote && (
+              <p className="you-fine" role="status">
+                {friendsNote}
+              </p>
+            )}
+            {/* Friends' rows stand on their own: the dated list shows with no Faves at all when friends have plans (Codex, stage 3). */}
+            {filter.faves && (favorites.length > 0 || friendItems.length > 0) && (
               <section className="upcoming-faves" aria-label="Your Faves">
                 <div ref={favesBand} className="upcoming-faves-band">
                   <ListBand as="h2" label="Your Faves" />
@@ -390,9 +426,9 @@ function planIcon(kind: PlanKind): ReactNode {
   return kind === 'attending' ? <TicketIcon size={13} /> : kind === 'watching' ? <TvIcon /> : <BookmarkIcon size={13} />;
 }
 
-/** A plan's start time: the listing's when the app holds it, else what a hand-typed plan carries. */
-function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>): string | null {
-  return (plan.eventId ? listed.get(plan.eventId)?.start : undefined) ?? plan.manual?.start ?? null;
+/** A plan's start time: the listing's when the app holds it, else the fave's schedule game's, else what a hand-typed plan carries. */
+function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>, byGame: ReadonlyMap<string, string>): string | null {
+  return (plan.eventId ? (listed.get(plan.eventId)?.start ?? byGame.get(plan.eventId)) : undefined) ?? plan.manual?.start ?? null;
 }
 
 /**
@@ -412,6 +448,10 @@ function friendsLineText(lines: readonly FeedItem[]): string {
 function FriendRow({ lines, event, rating, home }: { lines: readonly FeedItem[]; event?: CrowdEvent; rating: number | null; home: string }) {
   const line = lines[0];
   const to = line.eventId && line.metroId ? eventPath(line.eventId, line.metroId) : line.metroId ? datePath(line.date, line.metroId) : undefined;
+  // A friend's schedule-only game at a building outside the covered cities carries no verdict, as your own plan would
+  // (Codex, stage 3); a further-out room's tile is plain.
+  const outside = isOutsideGame(line.eventId, line.metroId, line.venue);
+  const noRead = outside || !line.metroId || isFurtherOutRoom(line.metroId, line.venue);
   const city = line.metroId && line.metroId !== home ? METROS[line.metroId]?.name : null;
   const text = friendsLineText(lines);
   return (
@@ -421,8 +461,10 @@ function FriendRow({ lines, event, rating, home }: { lines: readonly FeedItem[];
       title={event ? listTitle(event) : line.title}
       facts={[event?.start ? clockTime(event.start) : null, line.venue, city].filter(Boolean).join(' · ')}
       to={to}
-      rating={rating}
-      readTo={line.metroId && !isFurtherOutRoom(line.metroId, line.venue) ? readPath(line.date, line.metroId, line.eventId) : null}
+      state={friendStubState(line.eventId, { title: line.title, date: line.date, venue: line.venue, metroId: line.metroId })}
+      rating={noRead ? null : rating}
+      readTo={noRead ? null : readPath(line.date, line.metroId, line.eventId)}
+      away={outside ? 'Away' : undefined}
       cityCode={line.metroId && line.metroId !== home ? METROS[line.metroId]?.code : null}
       spoken={`${text}, ${event ? listTitle(event) : line.title}, ${shortLocalDate(line.date)}`}
     />
@@ -434,14 +476,17 @@ function FriendRow({ lines, event, rating, home }: { lines: readonly FeedItem[];
  * ("Attending · UCLA FB"; item 11, never guessed from the title), then the title, the start time and venue (item 10),
  * the date's read; no log button (Kylie, Oct 22, 2026).
  */
-function PlanBandRow({ plan, event, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; favorites: readonly Favorite[]; rating: number | null; home: string }) {
+function PlanBandRow({ plan, event, start, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
   const kind = planKind(plan);
   const icon = planIcon(kind);
   const to = plan.manual && !plan.eventId ? entryPath(plan.id) : plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId);
   const noRead = isOutsideGamePlan(plan) || isFurtherOutRoom(plan.metroId, plan.venue);
   const city = plan.metroId !== home ? METROS[plan.metroId]?.name : null;
-  const fave = event?.teams ? favorites.find((f) => f.teamId && (f.teamId === event.teams!.home || f.teamId === event.teams!.away)) : undefined;
-  const start = event?.start ?? plan.manual?.start ?? null;
+  // A favorite linked by id: a team on either side, else the venue itself (Codex, stage 3); never a name match.
+  const venueId = event?.place.type === 'venue' ? event.place.venueId : undefined;
+  const fave =
+    (event?.teams ? favorites.find((f) => f.teamId && (f.teamId === event.teams!.home || f.teamId === event.teams!.away)) : undefined) ??
+    (venueId ? favorites.find((f) => f.venueId === venueId) : undefined);
   return (
     <FollowRow
       date={plan.date}

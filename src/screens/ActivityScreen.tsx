@@ -76,7 +76,8 @@ export function ActivityScreen() {
     setPeoplePickedState(next);
     writePicked(PEOPLE_KEY, next);
   };
-  const [kindsPicked, setKindsPickedState] = useState<Picked>(() => readPicked(KINDS_KEY));
+  // A pick saved before build 7.1 may name a plan kind Activity no longer shows: only the kinds still here count (Codex, stage 3).
+  const [kindsPicked, setKindsPickedState] = useState<Picked>(() => prunePicked(readPicked(KINDS_KEY), KINDS));
   const setKindsPicked = (next: Picked) => {
     setKindsPickedState(next);
     writePicked(KINDS_KEY, next);
@@ -98,7 +99,8 @@ export function ActivityScreen() {
   const peopleKeys = following.map((p) => p.profile.id);
   const peopleFilter = useMemo(() => (people === null ? peoplePicked : prunePicked(peoplePicked, peopleKeys)), [peoplePicked, people, peopleKeys.join('|')]);
 
-  // Friends' lines from the account; a failed plans read still brings the attended lines (gap review G2).
+  // Friends' lines from the account; a failed plans read still brings the attended lines (gap review G2), and since
+  // plans moved to Upcoming (M24) that failure is reported there, not here.
   const [feed, setFeed] = useState<FeedItem[]>([]);
   const [feedNote, setFeedNote] = useState<string | null>(null);
   useEffect(() => {
@@ -112,7 +114,6 @@ export function ActivityScreen() {
       .then((result) => {
         if (!current) return;
         setFeed(result.items);
-        if (result.plansFailed) setFeedNote("Couldn't load your friends' plans. Try again later.");
       })
       .catch(() => current && setFeedNote("Couldn't load the people you follow. Try again later."));
     return () => {
@@ -200,7 +201,7 @@ export function ActivityScreen() {
               </ul>
             </section>
           ))}
-          <p className="you-fine activity-footer">Friends' activity from the last {SPAN_DAYS} days. All of your own stubs show.</p>
+          <p className="you-fine activity-footer">Friends' activity from the last {SPAN_DAYS} days. All of your own dated stubs show.</p>
         </div>
       </div>
     );
@@ -242,7 +243,8 @@ export function ActivityScreen() {
               </ul>
               <ul className="log-list card sheet-list">
                 {following.map((p) => {
-                  const count = feed.filter((line) => line.friend.id === p.profile.id).length;
+                  // What this list can show of theirs: attended and watched lines inside the 60 days (Codex, stage 3).
+                  const count = feed.filter((line) => line.friend.id === p.profile.id && line.kind !== 'planning' && line.date < today && line.date >= addDays(today, -SPAN_DAYS)).length;
                   return (
                     <CheckRow
                       key={p.profile.id}
@@ -307,14 +309,12 @@ interface FollowItem {
   people: FeedItem[];
   /** An attended entry behind a past row (yours first), for its read and type icon. */
   entry?: Entry;
-  /** Your own hand-added stub or plan behind the row: it opens its own page. */
+  /** Your own hand-added stub behind the row: it opens its own page. */
   ownId?: string;
-  /** No verdict for this row: your plan for a game outside the covered cities (Codex, stage 3). */
-  noRead?: boolean;
 }
 
-/** Your own lines carry a little more than a friend's: the row's own id and whether it has a read. */
-type OwnLine = FeedItem & { ownId?: string; noRead?: boolean };
+/** Your own lines carry a little more than a friend's: the row's own id. */
+type OwnLine = FeedItem & { ownId?: string };
 
 /**
  * Lines merged by event, newest first (M24): what was attended or watched, friends' from the last 60 days and all of
@@ -332,7 +332,6 @@ function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
       item.people.unshift(line);
       const own = line as OwnLine;
       if (own.ownId) item.ownId = own.ownId;
-      if (own.noRead) item.noRead = true;
     } else item.people.push(line);
     if (line.entry && (!item.entry || line.friend.id === YOU.id)) item.entry = line.entry;
     out.set(key, item);
@@ -346,8 +345,9 @@ function nobodyAttended(item: FollowItem): boolean {
 }
 
 function ratingFor(item: FollowItem, ratings: ReadonlyMap<string, number>): number | null {
-  if (item.noRead) return null;
-  if (item.entry) return ratingForEntry(item.entry, ratings);
+  // An attended stub reads through its own entry; a watched one carries no verdict (M23), so a mixed row where someone
+  // else attended falls through to the date's verdict.
+  if (item.entry && !item.entry.watched) return ratingForEntry(item.entry, ratings);
   if (isFurtherOutRoom(item.metroId, item.venue)) return null;
   return item.metroId ? (ratings.get(nightKey(item.metroId, item.date)) ?? null) : null;
 }

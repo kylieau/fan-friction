@@ -551,12 +551,14 @@ export async function followingFeedWithStatus(limit = 30): Promise<FollowingFeed
     const place = entry.watched && entry.eventId ? places.get(`${userId}|${entry.eventId}`) : undefined;
     return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}), ...(place ? { place } : {}) }];
   });
-  return { items: [...planning, ...attended].slice(0, limit), plansFailed };
+  // Each half is already cut to `limit` by its own query; cutting the pair again would let a long list of plans push
+  // every attended line out (Codex, build 7.1 stage 3). Upcoming reads the plans, Activity the rest.
+  return { items: [...planning, ...attended], plansFailed };
 }
 
-/** The Following feed's lines alone; a failed plans read leaves the plans out (see `followingFeedWithStatus`). */
+/** The Following feed's lines alone, at most `limit` in all; a failed plans read leaves the plans out (see `followingFeedWithStatus`). */
 export async function followingFeed(limit = 30): Promise<FeedItem[]> {
-  return (await followingFeedWithStatus(limit)).items;
+  return (await followingFeedWithStatus(limit)).items.slice(0, limit);
 }
 
 /** The feed's shape before anyone is followed, marked Example. Nothing here is written anywhere. */
@@ -653,7 +655,11 @@ export interface PlanCard {
   interested?: boolean;
 }
 
-/** Someone's plans from today on, soonest first, Interested included (build 7.1, item 1). Empty when they have not approved you. */
+/**
+ * Someone's plans from today on, soonest first, Interested included (build 7.1, item 1). Each plan's own level applies
+ * through the `plan_cards` view: an Anyone plan shows to anyone who can see the profile, a Friends plan to approved
+ * followers only, a Private plan to no one; so an unapproved viewer sees the Anyone plans alone.
+ */
 export async function plansOf(userId: string): Promise<PlanCard[]> {
   const c = supabase();
   if (!c) return [];

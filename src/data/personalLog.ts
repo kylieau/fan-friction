@@ -1259,6 +1259,8 @@ export function logStats(entries: Entry[]): LogStats {
  * scored (C035); the seeded list is the fallback before then.
  */
 export function ratingForEntry(entry: Entry, scores: ReadonlyMap<string, number>): number | null {
+  // A Watched stub carries no verdict anywhere (build 7.1, M23; "Watched never counts"): the crowd was not yours.
+  if (entry.watched) return null;
   // A further-out stub (Kylie, Oct 20, 2026): the city's verdict is about a day the event never counted toward.
   if (isFurtherOutRoom(entry.metroId, entry.venue)) return null;
   const events =

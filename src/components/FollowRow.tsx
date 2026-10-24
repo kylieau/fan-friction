@@ -72,7 +72,10 @@ export function FollowRow({
           </span>
         )}
         <span className="follow-title">
-          <TitleText text={split.name} />
+          {/* The name ellipsizes on its own, so a long title never hides the mark (Codex, stage 3). */}
+          <span className="follow-title-text">
+            <TitleText text={split.name} />
+          </span>
           {mark && <span className="follow-mark">{mark}</span>}
         </span>
         {split.label && <LabelLine label={split.label} />}

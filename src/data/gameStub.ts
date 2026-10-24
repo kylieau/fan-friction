@@ -158,6 +158,11 @@ export function eventFromStub(id: string, row: StubShape): CrowdEvent {
 
 /** A plan made from a schedule game in a building outside its city's catalog: no read belongs to it. */
 export function isOutsideGamePlan(plan: Plan): boolean {
-  if (!isGameEventId(plan.eventId)) return false;
-  return !Object.values(VENUES).some((v) => v.metroId === plan.metroId && venueGoesBy(v, plan.venue ?? ''));
+  return isOutsideGame(plan.eventId, plan.metroId, plan.venue);
+}
+
+/** The same test for any line that names a schedule game (a friend's plan on Upcoming; Codex, build 7.1 stage 3). */
+export function isOutsideGame(eventId: string | undefined, metroId: string | undefined, venue: string | undefined): boolean {
+  if (!isGameEventId(eventId)) return false;
+  return !Object.values(VENUES).some((v) => v.metroId === metroId && venueGoesBy(v, venue ?? ''));
 }
