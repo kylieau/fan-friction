@@ -26,7 +26,6 @@ import {
   isStampLocked,
   drawSize,
   savedNightRead,
-  scheduleCoverage,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
@@ -193,8 +192,6 @@ export function DateScreen() {
   // A settled night shows the read as it was saved, never today's recomputation (3.15).
   const saved = locked ? savedNightRead(metro.id, date, events) : null;
   const shownRating = saved?.rating ?? rating?.rating ?? null;
-  // A night from before the schedule archive began keeps one quiet line.
-  const rebuilt = locked && scheduleCoverage(metro.id, date) === 'reconstructed';
 
   return (
     <div className="screen page date-page">
@@ -240,8 +237,10 @@ export function DateScreen() {
               <span className="read-txt">{rating.headline}</span>
               {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
               <span className="read-meta">
-                {/* No internal terms here (C069): the sources count after; no lock time ahead (Kylie, Oct 14). */}
-                {rebuilt ? 'Estimated from past schedules.' : !ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
+                {/* No internal terms here (C069): the sources count after; no lock time ahead (Kylie, Oct 14). A verdict
+                    never says "Estimated" (Kylie, Oct 23, 2026, build 7.1 M16): a day from before the archive reads
+                    like any other settled day. */}
+                {!ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
               </span>
             </span>
             {locked && (

@@ -258,7 +258,11 @@ try {
   for (const f of await jsonFiles(snapDir)) {
     const parsed = JSON.parse(await readFile(path.join(snapDir, f), 'utf8'));
     for (const row of parsed.forecasts ?? []) {
-      snapshots.push({ metro_id: parsed.metroId, captured_on: parsed.capturedOn, captured_at: parsed.capturedAt, event_id: row.eventId, date: row.date, start: row.start ?? null, data: row });
+      // The app reads only `data` (catalogCache.ts keys it by `metroId|eventId` and takes the capture day and time
+      // from it), and a file's forecast rows carry none of the three: until Oct 24, 2026 (build 7.1, M16) every
+      // saved verdict was filed under "undefined" and a past day showed a recomputed verdict instead of its saved one.
+      // The file's own values go in beside the row; the row's rating is written exactly as it was captured.
+      snapshots.push({ metro_id: parsed.metroId, captured_on: parsed.capturedOn, captured_at: parsed.capturedAt, event_id: row.eventId, date: row.date, start: row.start ?? null, data: { metroId: parsed.metroId, capturedOn: parsed.capturedOn, capturedAt: parsed.capturedAt, ...row } });
     }
   }
   counts.schedule_snapshots = await upsert('schedule_snapshots', snapshots, 'metro_id,captured_on,event_id');
