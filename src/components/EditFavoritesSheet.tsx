@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { FavoritesScreen } from '../screens/FavoritesScreen';
-import { FavoriteBadge, favoriteName } from './FavoriteBadge';
+import { Link } from 'react-router-dom';
+import { FavoritesScreen, favPath } from '../screens/FavoritesScreen';
+import { favoriteName } from './FavoriteBadge';
 import { ChevronDown } from './Icons';
 import { entryMatches, favoriteKey, favoriteOfficialName, getPersonalLog, subscribePersonalLog, yourEntries, type Favorite, type FavoriteKind } from '../data';
 import { FAVORITE_KINDS } from './FilterSheet';
@@ -36,9 +37,10 @@ export function EditFavoritesSheet({ onClose }: { onClose: () => void }) {
 }
 
 /**
- * The Favorite teams & artists section in Profile & Settings (mocks 61–63): collapsible groups (Teams, Artists, Venues,
- * Festivals), each closed with its count and a one-line preview, open rows read-only with a grey "Seen N", most seen
- * first; a small Edit opens the sheet. Official names here (the naming rule); long names wrap.
+ * The Teams & Artists page in Profile & Settings (build 7.1, M19 and M18; mock 07, without its seen counts, Locked,
+ * Kylie, Oct 23, 2026): one card of groups (Teams, Artists, Venues, Festivals), each with its two first names,
+ * "+N more" and a count, opening in place; each open row is a favorite's official name with › to its page. The order
+ * is most seen first (the count only orders the list; it is never shown). One Edit opens the sheet.
  */
 export function FavoritesSection({ favorites, onEdit }: { favorites: readonly Favorite[]; onEdit: () => void }) {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
@@ -53,40 +55,48 @@ export function FavoritesSection({ favorites, onEdit }: { favorites: readonly Fa
   return (
     <div className="settings fav-section">
       <div className="fav-section-head">
-        <span className="you-fine">{favorites.length === 0 ? 'Nothing followed yet.' : 'What you follow. Seen counts every attended and watched stub.'}</span>
-        <button type="button" className="fav-toggle fav-section-edit" onClick={onEdit}>
+        <span className="you-fine">{favorites.length === 0 ? 'Nothing followed yet.' : 'What you follow.'}</span>
+        <button type="button" className="profile-pill fav-section-edit" onClick={onEdit}>
           {favorites.length === 0 ? 'Find faves' : 'Edit'}
         </button>
       </div>
-      {groups.map((g) => (
-        <section key={g.kind} className="fav-group">
-          <button type="button" className="settings-row settings-link fav-group-head" aria-expanded={open === g.kind} onClick={() => setOpen(open === g.kind ? null : g.kind)}>
-            <span className={`settings-section-chevron${open === g.kind ? ' open' : ''}`} aria-hidden>
-              <ChevronDown />
-            </span>
-            <span className="fav-group-words">
-              <span className="fav-group-title">
-                {g.label} · {g.list.length}
-              </span>
-              {open !== g.kind && <span className="you-fine fav-group-preview">{g.list.map(favoriteOfficialName).join(', ')}</span>}
-            </span>
-          </button>
-          {open === g.kind && (
-            <ul className="log-list fav-group-list">
-              {g.list.map((fav) => (
-                <li key={favoriteKey(fav)} className="fav-group-row">
-                  <FavoriteBadge fav={fav} shown={g.list} size="mark" />
-                  <span className="log-main">
-                    <span className="log-title">{favoriteOfficialName(fav)}</span>
-                    <span className="log-facts">Seen {seen.get(favoriteKey(fav)) ?? 0}</span>
+      {groups.length > 0 && (
+        <div className="card settings-group">
+          {groups.map((g) => (
+            <section key={g.kind} className="fav-group">
+              <button type="button" className="settings-row settings-link settings-group-row" aria-expanded={open === g.kind} onClick={() => setOpen(open === g.kind ? null : g.kind)}>
+                <span className="settings-row-words">
+                  <span className="settings-row-title">{g.label}</span>
+                  <span className="summary-row summary-text">
+                    <span className="summary-names">{g.list.slice(0, 2).map(favoriteOfficialName).join(', ')}</span>
+                    {g.list.length > 2 && <span className="summary-more">+{g.list.length - 2} more</span>}
                   </span>
-                  <span className="sr-only">{favoriteName(fav)}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-      ))}
+                </span>
+                <span className="settings-row-side">
+                  <span className="settings-badge">{g.list.length}</span>
+                  <span className={`settings-section-chevron${open === g.kind ? ' open' : ''}`} aria-hidden>
+                    <ChevronDown />
+                  </span>
+                </span>
+              </button>
+              {open === g.kind && (
+                <ul className="settings-disclosure-body fav-group-list">
+                  {g.list.map((fav) => (
+                    <li key={favoriteKey(fav)}>
+                      <Link to={favPath(fav)} className="settings-row settings-link fav-group-row" aria-label={favoriteName(fav)}>
+                        <span className="fav-group-name">{favoriteOfficialName(fav)}</span>
+                        <span className="settings-chevron" aria-hidden>
+                          ›
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

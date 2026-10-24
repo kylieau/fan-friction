@@ -21,7 +21,7 @@ import { tagPath } from '../lib/view';
 import { PlanRow, StubRow } from '../components/StubRows';
 import { TagChip } from '../components/TagChip';
 import { ListBand } from '../components/ListBand';
-import { BackLink } from '../components/BackLink';
+import { PinnedHead } from '../components/PinnedHead';
 
 /**
  * One of your tags (build notes 4, "Stub tags" 4; T02, T07): the tag, "5 stubs · 4 attended · 1 watched",
@@ -77,15 +77,16 @@ export function TagScreen() {
 
   return (
     <div className="screen page tag-page">
-      <BackLink to="/you/stubs" />
-      <div className="tag-page-head">
-        <h1 className="tag-page-title">
-          <TagChip tag={tag} size="sheet" />
-        </h1>
-        <button type="button" className="round-button tag-page-menu" aria-label="More" aria-expanded={menu !== 'closed'} onClick={() => setMenu(menu === 'closed' ? 'open' : 'closed')}>
-          …
-        </button>
-      </div>
+      {/* The pinned head (build 7.1, M30): "‹ Your Stubs", the tag as the title, the menu at the right. */}
+      <PinnedHead
+        back={{ to: '/you/stubs', label: 'Your Stubs' }}
+        title={<TagChip tag={tag} size="sheet" />}
+        actions={
+          <button type="button" className="round-button tag-page-menu" aria-label="More" aria-expanded={menu !== 'closed'} onClick={() => setMenu(menu === 'closed' ? 'open' : 'closed')}>
+            …
+          </button>
+        }
+      />
       {stubs.length > 0 && <p className="you-fine tag-page-summary">{summary}</p>}
 
       {menu === 'open' && (

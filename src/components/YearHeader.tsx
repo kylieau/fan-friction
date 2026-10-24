@@ -1,10 +1,11 @@
 import { useSearchParams } from 'react-router-dom';
-import { BackLink } from './BackLink';
+import { PinnedHead } from './PinnedHead';
 import { ChevronDown } from './Icons';
 
 /**
  * The head the You pages share (Ranks, Recap, Your year, Spend details; build 7): "‹ You", the title, and the year the
- * page covers (`?year=`, this year by default, any year with stubs, or All time), picked in place.
+ * page covers (`?year=`, this year by default, any year with stubs, or All time), picked in place. The back link and
+ * title pin at the top as the page scrolls (build 7.1, M30); the year picker rides at the right of that row.
  */
 export function YearHeader({ title, years, year, sub, back = { to: '/you', label: 'You' } }: { title: string; years: readonly string[]; year: string; sub?: string; back?: { to: string; label: string } }) {
   const [params, setParams] = useSearchParams();
@@ -20,9 +21,10 @@ export function YearHeader({ title, years, year, sub, back = { to: '/you', label
   void params;
   return (
     <>
-      <BackLink to={back.to} label={back.label} />
-      <div className="you-header">
-        <h1 className="page-title">{title}</h1>
+      <PinnedHead
+        back={back}
+        title={title}
+        actions={
         <label className="year-pick year-pick-head">
           <select className="year-select" value={year} aria-label="Year" onChange={(ev) => pick(ev.target.value)}>
             {years.map((y) => (
@@ -36,7 +38,8 @@ export function YearHeader({ title, years, year, sub, back = { to: '/you', label
             {year} <ChevronDown />
           </span>
         </label>
-      </div>
+        }
+      />
       {sub && <p className="you-fine page-sub">{sub}</p>}
     </>
   );

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { BackLink } from '../components/BackLink';
+import { PinnedHead } from '../components/PinnedHead';
 import { DateBox } from '../components/StubRows';
 import { ListBand } from '../components/ListBand';
 import { TitleText } from '../components/TitleText';
@@ -78,8 +78,7 @@ export function SeasonTicketsScreen() {
   if (!team || !ticket) {
     return (
       <div className="screen page">
-        <BackLink to={favPath({ kind: 'team', id })} label={team?.shortName} />
-        <h1 className="page-title">Season Tickets</h1>
+        <PinnedHead back={{ to: favPath({ kind: 'team', id }), label: team?.shortName ?? 'Back' }} title="Season Tickets" />
         <div className="card empty-card">
           <div className="card-title">Season tickets are off for this team.</div>
         </div>
@@ -108,8 +107,7 @@ export function SeasonTicketsScreen() {
 
   return (
     <div className="screen page season-page">
-      <BackLink to={favPath({ kind: 'team', id })} label={team.shortName} />
-      <h1 className="page-title">{picking ? 'Pick Your Games' : 'Season Tickets'}</h1>
+      <PinnedHead back={{ to: favPath({ kind: 'team', id }), label: team.shortName }} title={picking ? 'Pick Your Games' : 'Season Tickets'} />
       <p className="page-sub you-fine season-page-sub">{sub}</p>
 
       {picking ? (

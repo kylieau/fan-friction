@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { SearchButton } from '../components/SearchButton';
-import { BackLink } from '../components/BackLink';
+import { PinnedHead } from '../components/PinnedHead';
 import { StubRow } from '../components/StubRows';
 import { ReadTile } from '../components/ReadTile';
 import { TitleText } from '../components/TitleText';
@@ -112,6 +112,9 @@ export function StubsScreen() {
     });
   }, [wantedTeam, wantedTag, wantedYear]);
   const [sheet, setSheet] = useState(false);
+  // The pinned head's divider (M30): the list reports leaving where it opened; the grid and calendar report their own scroll.
+  const [listScrolled, setListScrolled] = useState(false);
+  useEffect(() => setListScrolled(false), [view]);
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
@@ -178,16 +181,25 @@ export function StubsScreen() {
   const pastItems: TimelineItem[] = shown.map((entry) => ({ key: entry.id, group: timelineGroup(entry.when), node: <StubRow entry={entry} rating={ratingForEntry(entry, ratings)} /> }));
 
   return (
-    <div className="screen page timeline-page stubs-page">
-      <BackLink to="/you" label="You" />
-      <div className="you-header">
-        {/* No count beside the title (build 7.1, item 9). */}
-        <h1 className="page-title">Your Stubs</h1>
-        <span className="header-actions">
-          <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter Your Stubs" />
-          <SearchButton />
-        </span>
-      </div>
+    <div
+      className="screen page timeline-page stubs-page"
+      onScrollCapture={(ev) => {
+        const el = ev.target as HTMLElement;
+        if (view !== 'list' && el.classList?.contains('stub-grid')) setListScrolled(el.scrollTop > 2);
+      }}
+    >
+      {/* No count beside the title (build 7.1, item 9); the head pins with its divider once the list scrolls (M30). */}
+      <PinnedHead
+        back={{ to: '/you', label: 'You' }}
+        title="Your Stubs"
+        scrolled={listScrolled}
+        actions={
+          <>
+            <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter Your Stubs" />
+            <SearchButton />
+          </>
+        }
+      />
       <div className="segmented stubs-views" role="tablist" aria-label="View">
         <button type="button" role="tab" aria-selected={view === 'list'} onClick={() => setView('list')}>
           <ListIcon /> List
@@ -216,6 +228,7 @@ export function StubsScreen() {
         <section className="timeline-page-body">
           <Timeline
             label="Your Stubs"
+            onScrolled={setListScrolled}
             past={pastItems}
             future={[]}
             todayLabel={dayBandLabel(today, today)}

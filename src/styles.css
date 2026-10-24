@@ -11380,21 +11380,6 @@ a.follow-lead::after {
   text-overflow: ellipsis;
 }
 
-.fav-group-list {
-  padding: 0 0 4px 4px;
-}
-
-.fav-group-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
-}
-
-.fav-group-row .log-title {
-  white-space: normal;
-}
-
 .edit-faves-sheet {
   max-height: calc(100dvh - 60px);
 }
@@ -12444,4 +12429,64 @@ a.follow-lead::after {
 }
 .settings-sub-page .settings {
   gap: 6px;
+}
+
+/* Build 7.1, step 11 (a) follow-ups: rows spread their value to the right; group labels in Title Case (the item text
+   and 2-c over 05's capitals); the Teams & Artists page's group summary as text, the "+N more" never cut (M18). */
+.settings-group-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings-group-label {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.summary-text {
+  font-size: 13px;
+  color: var(--ink2);
+}
+.summary-names {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fav-group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 6px;
+}
+.fav-group-row {
+  min-height: 48px;
+  padding: 0 16px;
+}
+.fav-group-name {
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+/* A summary pill cuts its own name with "…" (M18): a block box, so the ellipsis can draw; two pills share the row,
+   neither squeezed below a few letters; "+N more" and the count keep their width. */
+.summary-pill {
+  display: block;
+  flex: 0 1 auto;
+  min-width: 3.5em;
+  max-width: 60%;
+  line-height: 26px;
+}
+.summary-pill svg {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+.summary-pills {
+  flex: 0 1 auto;
+}
+.summary-pill:first-child {
+  flex: none;
+  max-width: 50%;
 }

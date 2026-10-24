@@ -53,7 +53,7 @@ export function isSection(value: string | null): value is SettingsSectionId {
 }
 
 const SUB_TITLES: Record<SubPage, string> = {
-  people: 'Followers',
+  people: 'People',
   faves: 'Teams & Artists',
   cities: 'Favorite Cities',
   profile: 'Edit Profile',
