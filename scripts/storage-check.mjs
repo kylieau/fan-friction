@@ -104,6 +104,16 @@ ok('an overdue plan whose game moved ahead follows it, one plan', overdue.length
 const watchMoved = reconcileSeasonPlans([{ ...p6[0], watch: true, seats: undefined, cost: undefined }, handMade], ticket, moved, '2026-10-24', 'private');
 ok('a moved Watching plan merges a twin without its seat', !watchMoved.find((p) => p.eventId === '2027-04-09-mlb-1').seats);
 
+// 6d. Partial Codex stage 4 findings: a game moved to another past day takes its unsettled plan along; a flagged
+// (vanished) season plan never settles into a stub; programs sharing a short name count only by their own code.
+const pastMove = reconcileSeasonPlans([{ id: 'plan-2026-10-20-mlb-1', date: '2026-10-20', metroId: 'la', eventId: '2026-10-20-mlb-1', title: 'Giants at Dodgers', season: { teamId: 'dodgers', gameId: 'mlb-dodgers-1' } }], ticket, [game('1', '2026-10-22')], '2026-10-24', 'private');
+ok('an unsettled plan whose game moved to another past day follows it', pastMove.length === 1 && pastMove[0].date === '2026-10-22' && pastMove[0].eventId === '2026-10-22-mlb-1');
+const { seasonStubsOf } = await server.ssrLoadModule('/src/data/personalLog.ts');
+const sdsu = (tags, title = 'Utah State at SDSU') => log([{ id: 'e', eventId: 'x', when: { sort: '2026-01-01', label: '', precision: 'day' }, title, tags, sport: 'Basketball', sides: ['SDSU', 'Utah State'], kind: 'game', metroId: 'san-diego' }]);
+ok('a men\'s program tag counts for the men\'s team only', seasonStubsOf('sdsu-mbb', sdsu(['SDSU MBB'])).length === 1 && seasonStubsOf('sdsu-wbb', sdsu(['SDSU MBB'])).length === 0);
+ok('a shared short name with no program sign counts for neither', seasonStubsOf('sdsu-mbb', sdsu([])).length === 0 && seasonStubsOf('sdsu-wbb', sdsu([])).length === 0);
+ok('the title\'s Women\'s label decides when there is no code tag', seasonStubsOf('sdsu-wbb', sdsu([], 'Utah State at SDSU (Women\'s Basketball)')).length === 1);
+
 // 7. Favorite cities' order (build 7.1, M31): a reorder is a stamped change, so the newer order wins on every device.
 const cA = log([], [], { favoriteCities: ['boston', 'new-york'], favoriteCitiesAt: '2026-10-24T01:00:00Z' });
 const cB = log([], [], { favoriteCities: ['new-york', 'boston'], favoriteCitiesAt: '2026-10-24T02:00:00Z' });

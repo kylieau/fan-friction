@@ -110,10 +110,15 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
     const mine = plan.season?.teamId === ticket.teamId;
     // A past plan is left alone, unless its game was moved to a later date before the plan settled: then it follows
     // the game, or the settling would stub the old day and the season would add the new one too (Codex, 11 (c) review).
-    const movedAhead = mine && plan.date < today && (() => {
-      const g = byGameId.get(plan.season!.gameId);
-      return Boolean(g && g.date >= today && seasonPlanEventId(g) !== plan.eventId);
-    })();
+    // A moved game to another past day takes its unsettled plan there too, so settling finds the game where it now is
+    // (partial Codex stage 4 finding; the run stopped before its report).
+    const pastGame = mine && plan.date < today ? byGameId.get(plan.season!.gameId) : undefined;
+    const movedAhead = Boolean(pastGame && pastGame.date >= today && seasonPlanEventId(pastGame) !== plan.eventId);
+    if (pastGame && !movedAhead && seasonPlanEventId(pastGame) !== plan.eventId) {
+      next.push(movePlan(plan, ticket.teamId, pastGame));
+      changed = true;
+      continue;
+    }
     if (!mine || (plan.date < today && !movedAhead)) {
       next.push(plan);
       continue;

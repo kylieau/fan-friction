@@ -88,7 +88,8 @@ export function SeasonTicketsScreen() {
   const counts = seasonCounts(id, log);
   const pastStubs = useMemo(() => [...seasonStubsOf(id, log)].sort((a, b) => a.when.sort.localeCompare(b.when.sort)), [log, id]);
   // Season plans whose game the schedule no longer lists: kept, flagged, and listed here so they can be removed.
-  const gonePlans = useMemo(() => log.plans.filter((plan) => plan.season?.teamId === id && plan.season.gone && plan.date >= today).sort((a, b) => a.date.localeCompare(b.date)), [log, id, today]);
+  // Past ones too: a flagged plan never settles into a stub, so it stays listed here until she removes it.
+  const gonePlans = useMemo(() => log.plans.filter((plan) => plan.season?.teamId === id && plan.season.gone).sort((a, b) => a.date.localeCompare(b.date)), [log, id]);
 
   // Off (or never on): nothing here can add or change a season game (Codex, steps 9–10: the page stayed editable).
   if (!team || !ticket?.on) {

@@ -28,7 +28,7 @@ import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import { onTeamSchedule } from './teamSchedule';
 import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
 import { getTeamSchedule } from './teamSchedule';
-import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, SportsLevel, Stamp, PersonalLog, StubVisibility, TeamGame, YouOrder } from './types';
+import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, SportsLevel, Stamp, PersonalLog, StubVisibility, Team, TeamGame, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -1120,6 +1120,9 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   const added: Entry[] = [];
   const settledIds = new Set<string>();
   for (const plan of passed) {
+    // A season game the schedule no longer lists stays a flagged plan, never a stub: an old listing still in the catalog
+    // must not turn a cancelled game into an Attended one (partial Codex stage 4 finding). She removes it herself.
+    if (plan.season?.gone) continue;
     // Interested never becomes a stub (Kylie, Oct 11): the answer just lapses with the date.
     if (plan.interested) {
       settledIds.add(plan.id);
@@ -1344,13 +1347,27 @@ export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot): Entr
     const sides = entry.sides ?? [];
     // A program tag decides first: "SDSU MBB" credits the men's team, never the women's (Codex, 11 (c) review).
     const own = [team.shortName, ...(team.aliases ?? [])].map((n) => n.toLowerCase());
-    const tags = (entry.tags ?? []).map((t) => t.toLowerCase());
-    if (tags.some((t) => own.includes(t))) return true;
+    // A credited tag can repeat its code ("SDSU MBB MBB"); one copy reads.
+    const tags = (entry.tags ?? []).map((t) => t.toLowerCase().replace(/\b(\S+)(\s+\1)+$/, '$1'));
+    const codeOf = (t: Team) => `${t.shortName} ${t.id.split('-').pop()}`.toLowerCase();
+    const siblings = Object.values(TEAMS).filter((o) => o.id !== team.id && o.metroId === team.metroId && o.shortName === team.shortName && o.sport.toLowerCase() === sport);
+    if (tags.includes(codeOf(team))) return true;
+    if (siblings.some((o) => tags.includes(codeOf(o)))) return false;
+    if (siblings.length === 0 && tags.some((t) => own.includes(t))) return true;
     const programTag = tags.some((t) => Object.values(TEAMS).some((other) => other.id !== team.id && other.metroId === team.metroId && other.shortName.toLowerCase() === t));
     if (programTag) return false;
     if (sides.includes(team.name)) return true;
-    if (!sides.includes(team.shortName)) return false;
-    return (entry.sport ?? '').toLowerCase() === sport && (!entry.metroId || !team.metroId || entry.metroId === team.metroId);
+    if (!sides.includes(team.shortName) && !(team.aliases ?? []).some((a) => sides.includes(a))) return false;
+    if ((entry.sport ?? '').toLowerCase() !== sport || (entry.metroId && team.metroId && entry.metroId !== team.metroId)) return false;
+    // Programs sharing a short name in one city and sport (SDSU's men's and women's basketball): only the program's own
+    // code tag or the title's Men's / Women's label decides; with neither, the stub counts for none (partial Codex stage
+    // 4 finding: an SDSU men's stub counted for the women's team).
+    if (siblings.length === 0) return true;
+    const women = /\bwomen'?s\b/i;
+    const men = /\bmen'?s\b/i;
+    if (women.test(entry.title)) return women.test(team.name);
+    if (men.test(entry.title)) return men.test(team.name) && !women.test(team.name);
+    return false;
   });
 }
 

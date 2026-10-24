@@ -22,6 +22,7 @@
 | 11 (b). M31, M14 | done | _(this commit)_ | the cities page, three reorder paths (drag, Move buttons, arrow keys) measured; 36pt switcher rows on Explore and the Log sheet |
 | 11 (c). M25, M26, item 2 | done | _(this commit)_ | heading links, the e3 tiles and the Edit Favorites sheet measured; built before (b) because (b)'s files were under review |
 | 12. Event page: M33 | done | _(this commit)_ | Lean A + the line on the catalog page; the date line on all three page kinds; measured: line 215, crowd 323, Up Against 532 against the Lean's 221 / 317 / 550 |
+| Codex stage 4 | **incomplete (out of credits)**; partial findings fixed | _(this commit)_ | re-run owed (see Skipped reviews); three stated findings fixed; a substitute review follows |
 | 14. Research prompts (M35) | done | _(this commit)_ | docs only; critiqued once by Codex, ten points taken |
 | Codex reviews: 11 (b), 11 (c) and the fixes | done | _(the second fixes commit)_ | 9 + 10 findings, all accepted; 38 storage checks |
 | Codex reviews: steps 9–10 and 11 (a) | done | _(the fixes commit)_ | 22 + 9 findings, all accepted (one already fixed by (c)); 36 storage checks pass |
@@ -45,7 +46,7 @@
 **Must not change:** any saved verdict (no snapshot `read` is rewritten, no history re-run); crowd-figure labels; the stamp's end-of-day fallback (held by Kylie, Oct 16); pro game titles and labels (a label only for twin clubs); the one-game rule and the add-on filter; the archive's `forecasts` arrays; anything in `private/`.
 
 ## Skipped reviews
-None yet.
+- **Codex stage 4 (steps 9–12, the range `9597e0a7..537480b9`) did not finish:** Codex stopped with "Your workspace is out of credits" (Oct 24, about 10:15 AM Pacific) after reading the diff and passing the type check, the 38 storage assertions and the title checks. **For Kylie: re-run it once the Codex workspace has credits** (the brief is in this session's history; its focus is §7's stage 4 list). Three findings it had begun to state were verified and fixed here (`Codex findings › Stage 4, partial`). Not reached by Codex: the privacy press on the event page's stub line and the card views, the 390pt overflow paths (the builder's own sweep is under Visual checks), the drag-reorder re-check, M33's order, copy and titles, and the mock comparisons. An independent reviewer (a fresh Claude agent, not Codex) covers those below so the build doesn't move on unreviewed; that substitute is not the Codex stage.
 
 ## What shipped per item
 
@@ -426,6 +427,11 @@ Visual: e3 and the heading links match; 64 matches after finding 10.
 7. **The decision note read "Home stays out of the switcher"** (P3). **Accepted:** "Changing home stays out of the switcher."
 8. **21-B's floating row and drop gap weren't built** (P3). **Accepted as a recorded difference** (the table).
 9. **Row density and "Search cities" against 14-c were called matches** (P3). **Accepted as recorded differences** (the table; "Search cities" is item 12's decided wording).
+
+**Stage 4, partial** (Codex ran out of credits before its report; these three were stated in its log, then reproduced and fixed here):
+1. **An unsettled season plan whose game moved to another past day stayed on the old day** (the earlier fix only covered a move to a later date). **Accepted:** it follows the game to the new past day, where settling finds it; storage check added.
+2. **A flagged (vanished) season game could settle into an Attended stub if its old listing stayed in the catalog.** **Accepted:** a flagged season plan never settles; it stays listed under "Not on the Schedule" (past ones too) until she removes it.
+3. **An SDSU men's basketball stub counted toward the women's team** (recurring with the 11 (c) finding 6). Reproduced: SDSU's football, men's and women's basketball all share the short name "SDSU" and the alias "Aztecs". **Accepted:** where programs share a short name in one city and sport, only the program's own code tag ("SDSU MBB", read once even when repeated) or the title's Men's / Women's label decides; with neither, the stub counts for none; three storage checks added (42 now).
 
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
