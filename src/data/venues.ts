@@ -20858,6 +20858,716 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 1000, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
+  // ---- Further out delivery 6 (docs/research/topics/further-out-rooms-answer-6.md: Denver, San Diego, Tampa Bay,
+  // Columbus), folded Oct 23, 2026 the same way as deliveries 1–5. Six count inside a city: Folsom Field, the CU Events
+  // Center and Blue Arena (Loveland, 60 min) for Denver; Joker Marchant Stadium, LECOM Park and the RP Funding Center for
+  // Tampa Bay. Not imported: the rows the research held (the three Tijuana rooms, whose border wait is unmodeled; DeVore
+  // Stadium, Legend Valley and Taft Coliseum, capacity or paid-use holds) and the three already on file (Empire Polo
+  // Club, Indian Wells Stadium 1, Acrisure Arena). ----
+  'tom-benson-hall-of-fame-stadium': {
+    id: 'tom-benson-hall-of-fame-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Tom Benson Hall of Fame Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.398066, 40.819875],
+    capacity: [{ seats: 23000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 76, how: 'routed', town: 'Canton' },
+  },
+  'paul-brown-tiger-stadium': {
+    id: 'paul-brown-tiger-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Paul Brown Tiger Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.499722, 40.793641],
+    capacity: [{ seats: 16884, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 75, how: 'routed', town: 'Massillon' },
+  },
+  'jack-miller-stadium': {
+    id: 'jack-miller-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Jack Miller Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-82.326068, 40.863274],
+    capacity: [{ seats: 5217, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 82, how: 'routed', town: 'Ashland' },
+  },
+  'canton-memorial-civic-center': {
+    id: 'canton-memorial-civic-center',
+    metroId: 'cleveland',
+    names: [{ name: 'Canton Memorial Civic Center' }],
+    // The research's map point; not an entrance.
+    location: [-81.373031, 40.808017],
+    capacity: [{ seats: 5200, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 78, how: 'routed', town: 'Canton' },
+  },
+  'paycor-stadium': {
+    id: 'paycor-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Paycor Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-84.516049, 39.095464],
+    capacity: [{ seats: 65515, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Cincinnati' },
+  },
+  'great-american-ball-park': {
+    id: 'great-american-ball-park',
+    metroId: 'columbus',
+    names: [{ name: 'Great American Ball Park' }],
+    // The research's map point; not an entrance.
+    location: [-84.506623, 39.097248],
+    capacity: [{ seats: 45814, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Cincinnati' },
+  },
+  'carson-field-at-nippert-stadium': {
+    id: 'carson-field-at-nippert-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Carson Field at Nippert Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-84.51623, 39.131121],
+    capacity: [{ seats: 38193, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Cincinnati' },
+  },
+  'joan-c-edwards-stadium': {
+    id: 'joan-c-edwards-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Joan C. Edwards Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-82.421009, 38.424869],
+    capacity: [{ seats: 30475, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 177, how: 'routed', town: 'Huntington' },
+  },
+  'frank-solich-field-at-peden-stadium': {
+    id: 'frank-solich-field-at-peden-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Frank Solich Field at Peden Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-82.103025, 39.321113],
+    capacity: [{ seats: 24000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Athens' },
+  },
+  'eldora-speedway': {
+    id: 'eldora-speedway',
+    metroId: 'columbus',
+    names: [{ name: 'Eldora Speedway' }],
+    // The research's map point; not an entrance.
+    location: [-84.633854, 40.318657],
+    capacity: [{ seats: 22886, setup: 'racing', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 140, how: 'routed', town: 'Rossburg' },
+  },
+  'riverbend-music-center': {
+    id: 'riverbend-music-center',
+    metroId: 'columbus',
+    names: [{ name: 'Riverbend Music Center' }],
+    // The research's map point; not an entrance.
+    location: [-84.41734, 39.053339],
+    capacity: [{ seats: 20500, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'covered',
+    furtherOut: { driveMinutes: 132, how: 'routed', town: 'Anderson Township' },
+  },
+  'heritage-bank-center': {
+    id: 'heritage-bank-center',
+    metroId: 'columbus',
+    names: [{ name: 'Heritage Bank Center' }],
+    // The research's map point; not an entrance.
+    location: [-84.504446, 39.097926],
+    capacity: [{ seats: 17556, setup: 'concert', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Cincinnati' },
+  },
+  'university-of-dayton-arena': {
+    id: 'university-of-dayton-arena',
+    metroId: 'columbus',
+    names: [{ name: 'University of Dayton Arena' }],
+    // The research's map point; not an entrance.
+    location: [-84.199836, 39.735524],
+    capacity: [{ seats: 13407, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 89, how: 'routed', town: 'Dayton' },
+  },
+  'ohio-university-convocation-center': {
+    id: 'ohio-university-convocation-center',
+    metroId: 'columbus',
+    names: [{ name: 'Ohio University Convocation Center' }],
+    // The research's map point; not an entrance.
+    location: [-82.105675, 39.323211],
+    capacity: [{ seats: 13080, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Athens' },
+  },
+  'fifth-third-arena': {
+    id: 'fifth-third-arena',
+    metroId: 'columbus',
+    names: [{ name: 'Fifth Third Arena' }],
+    // The research's map point; not an entrance.
+    location: [-84.514117, 39.131104],
+    capacity: [{ seats: 12012, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Cincinnati' },
+  },
+  'lindner-family-tennis-center': {
+    id: 'lindner-family-tennis-center',
+    metroId: 'columbus',
+    names: [{ name: 'Lindner Family Tennis Center' }],
+    // The research's map point; not an entrance.
+    location: [-84.277151, 39.346673],
+    capacity: [{ seats: 12000, setup: 'tennis', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 99, how: 'routed', town: 'Mason' },
+  },
+  'wright-state-university-nutter-center': {
+    id: 'wright-state-university-nutter-center',
+    metroId: 'columbus',
+    names: [{ name: 'Wright State University Nutter Center' }],
+    // The research's map point; not an entrance.
+    location: [-84.052326, 39.782131],
+    capacity: [{ seats: 11200, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 76, how: 'routed', town: 'Fairborn' },
+  },
+  'welcome-stadium': {
+    id: 'welcome-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Welcome Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-84.198112, 39.736927],
+    capacity: [{ seats: 11000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 87, how: 'routed', town: 'Dayton' },
+  },
+  'cintas-center': {
+    id: 'cintas-center',
+    metroId: 'columbus',
+    names: [{ name: 'Cintas Center' }],
+    // The research's map point; not an entrance.
+    location: [-84.471785, 39.150438],
+    capacity: [{ seats: 10224, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 121, how: 'routed', town: 'Cincinnati' },
+  },
+  'truist-arena': {
+    id: 'truist-arena',
+    metroId: 'columbus',
+    names: [{ name: 'Truist Arena' }],
+    // The research's map point; not an entrance.
+    location: [-84.459105, 39.032013],
+    capacity: [{ seats: 9000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 131, how: 'routed', town: 'Highland Heights' },
+  },
+  'donnell-stadium': {
+    id: 'donnell-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Donnell Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-83.654366, 41.025547],
+    capacity: [{ seats: 7500, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 124, how: 'routed', town: 'Findlay' },
+  },
+  'megacorp-pavilion': {
+    id: 'megacorp-pavilion',
+    metroId: 'columbus',
+    names: [{ name: 'MegaCorp Pavilion' }],
+    // The research's map point; not an entrance.
+    location: [-84.498811, 39.091564],
+    capacity: [{ seats: 7000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Newport' },
+  },
+  'day-air-ballpark': {
+    id: 'day-air-ballpark',
+    metroId: 'columbus',
+    names: [{ name: 'Day Air Ballpark' }],
+    // The research's map point; not an entrance.
+    location: [-84.185222, 39.764265],
+    capacity: [{ seats: 6677, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Dayton' },
+  },
+  'hobart-arena': {
+    id: 'hobart-arena',
+    metroId: 'columbus',
+    names: [{ name: 'Hobart Arena' }],
+    // The research's map point; not an entrance.
+    location: [-84.205096, 40.045883],
+    capacity: [{ seats: 5332, note: 'Estimated, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 93, how: 'routed', town: 'Troy' },
+  },
+  'folsom-field': {
+    id: 'folsom-field',
+    metroId: 'denver',
+    names: [{ name: 'Folsom Field' }],
+    // The research's map point; not an entrance.
+    location: [-105.26607, 40.009335],
+    capacity: [{ seats: 50183, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+  },
+  'falcon-stadium': {
+    id: 'falcon-stadium',
+    metroId: 'denver',
+    names: [{ name: 'Falcon Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-104.84365, 38.997056],
+    capacity: [{ seats: 39441, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 109, how: 'routed', town: 'Colorado Springs' },
+  },
+  'sonny-lubick-field-at-canvas-stadium': {
+    id: 'sonny-lubick-field-at-canvas-stadium',
+    metroId: 'denver',
+    names: [{ name: 'Sonny Lubick Field at Canvas Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-105.088506, 40.569831],
+    capacity: [{ seats: 36500, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 77, how: 'routed', town: 'Fort Collins' },
+  },
+  'jonah-field-at-war-memorial-stadium': {
+    id: 'jonah-field-at-war-memorial-stadium',
+    metroId: 'denver',
+    names: [{ name: 'Jonah Field at War Memorial Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-105.568159, 41.311608],
+    capacity: [{ seats: 25500, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 156, how: 'routed', town: 'Laramie' },
+  },
+  'cheyenne-frontier-days-arena': {
+    id: 'cheyenne-frontier-days-arena',
+    metroId: 'denver',
+    names: [{ name: 'Cheyenne Frontier Days Arena' }],
+    // The research's map point; not an entrance.
+    location: [-104.835729, 41.155473],
+    capacity: [{ seats: 19000, setup: 'rodeo', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 111, how: 'routed', town: 'Cheyenne' },
+  },
+  'weidner-field': {
+    id: 'weidner-field',
+    metroId: 'denver',
+    names: [{ name: 'Weidner Field' }],
+    // The research's map point; not an entrance.
+    location: [-104.828392, 38.826254],
+    capacity: [{ seats: 15000, setup: 'soccer', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Colorado Springs' },
+  },
+  'arena-auditorium': {
+    id: 'arena-auditorium',
+    metroId: 'denver',
+    names: [{ name: 'Arena-Auditorium' }],
+    // The research's map point; not an entrance.
+    location: [-105.569288, 41.313274],
+    capacity: [{ seats: 11612, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 156, how: 'routed', town: 'Laramie' },
+  },
+  'cu-events-center': {
+    id: 'cu-events-center',
+    metroId: 'denver',
+    names: [{ name: 'CU Events Center' }],
+    // The research's map point; not an entrance.
+    location: [-105.260607, 40.004687],
+    capacity: [{ seats: 11064, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'the-broadmoor-world-arena': {
+    id: 'the-broadmoor-world-arena',
+    metroId: 'denver',
+    names: [{ name: 'The Broadmoor World Arena' }],
+    // The research's map point; not an entrance.
+    location: [-104.79424, 38.788242],
+    capacity: [{ seats: 9250, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 88, how: 'routed', town: 'Colorado Springs' },
+  },
+  'greeley-stampede': {
+    id: 'greeley-stampede',
+    metroId: 'denver',
+    names: [{ name: 'Greeley Stampede' }],
+    // The research's map point; not an entrance.
+    location: [-104.701572, 40.439374],
+    capacity: [{ seats: 9000, setup: 'rodeo', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Greeley' },
+  },
+  'nottingham-field': {
+    id: 'nottingham-field',
+    metroId: 'denver',
+    names: [{ name: 'Nottingham Field' }],
+    // The research's map point; not an entrance.
+    location: [-104.705143, 40.403312],
+    capacity: [{ seats: 8533, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 78, how: 'routed', town: 'Greeley' },
+  },
+  'uchealth-park': {
+    id: 'uchealth-park',
+    metroId: 'denver',
+    names: [{ name: 'UCHealth Park' }],
+    // The research's map point; not an entrance.
+    location: [-104.710195, 38.894106],
+    capacity: [{ seats: 8500, setup: 'baseball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Colorado Springs' },
+  },
+  'moby-arena': {
+    id: 'moby-arena',
+    metroId: 'denver',
+    names: [{ name: 'Moby Arena' }],
+    // The research's map point; not an entrance.
+    location: [-105.093217, 40.575684],
+    capacity: [{ seats: 8083, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 80, how: 'routed', town: 'Fort Collins' },
+  },
+  'ford-amphitheater-colorado-springs': {
+    id: 'ford-amphitheater-colorado-springs',
+    metroId: 'denver',
+    names: [{ name: 'Ford Amphitheater' }],
+    // The research's map point; not an entrance.
+    location: [-104.822985, 39.018699],
+    capacity: [{ seats: 8000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 67, how: 'routed', town: 'Colorado Springs' },
+  },
+  'southwest-motors-events-center': {
+    id: 'southwest-motors-events-center',
+    metroId: 'denver',
+    names: [{ name: 'Southwest Motors Events Center' }],
+    // The research's map point; not an entrance.
+    location: [-104.642544, 38.249996],
+    capacity: [{ seats: 7785, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 131, how: 'routed', town: 'Pueblo' },
+  },
+  'blue-arena': {
+    id: 'blue-arena',
+    metroId: 'denver',
+    names: [{ name: 'Blue Arena' }],
+    // The research's map point; not an entrance.
+    location: [-104.989409, 40.444124],
+    capacity: [{ seats: 6800, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'csu-pueblo-thunderbowl': {
+    id: 'csu-pueblo-thunderbowl',
+    metroId: 'denver',
+    names: [{ name: 'CSU Pueblo ThunderBowl' }],
+    // The research's map point; not an entrance.
+    location: [-104.570472, 38.31015],
+    capacity: [{ seats: 6500, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 126, how: 'routed', town: 'Pueblo' },
+  },
+  'clune-arena': {
+    id: 'clune-arena',
+    metroId: 'denver',
+    names: [{ name: 'Clune Arena' }],
+    // The research's map point; not an entrance.
+    location: [-104.883613, 39.014074],
+    capacity: [{ seats: 5858, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 112, how: 'routed', town: 'Colorado Springs' },
+  },
+  'rendezvous-event-center-at-hideaway-park': {
+    id: 'rendezvous-event-center-at-hideaway-park',
+    metroId: 'denver',
+    names: [{ name: 'Rendezvous Event Center at Hideaway Park' }],
+    // The research's map point; not an entrance.
+    location: [-105.784099, 39.920493],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 101, how: 'routed', town: 'Winter Park' },
+  },
+  'tql-stadium': {
+    id: 'tql-stadium',
+    metroId: 'indianapolis',
+    names: [{ name: 'TQL Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-84.522229, 39.111179],
+    capacity: [{ seats: 26000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'covered',
+    furtherOut: { driveMinutes: 124, how: 'routed', town: 'Cincinnati' },
+  },
+  'fred-c-yager-stadium': {
+    id: 'fred-c-yager-stadium',
+    metroId: 'indianapolis',
+    names: [{ name: 'Fred C. Yager Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-84.733086, 39.519415],
+    capacity: [{ seats: 24286, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 123, how: 'routed', town: 'Oxford' },
+  },
+  'millett-hall': {
+    id: 'millett-hall',
+    metroId: 'indianapolis',
+    names: [{ name: 'Millett Hall' }],
+    // The research's map point; not an entrance.
+    location: [-84.734554, 39.517237],
+    capacity: [{ seats: 6400, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 123, how: 'routed', town: 'Oxford' },
+  },
+  'el-nido-de-los-aguilas': {
+    id: 'el-nido-de-los-aguilas',
+    metroId: 'san-diego',
+    names: [{ name: 'El Nido de los Águilas' }],
+    // The research's map point; not an entrance.
+    location: [-115.444321, 32.655792],
+    capacity: [{ seats: 18500, setup: 'baseball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 147, how: 'routed', town: 'Mexicali' },
+  },
+  'plaza-de-toros-calafia': {
+    id: 'plaza-de-toros-calafia',
+    metroId: 'san-diego',
+    names: [{ name: 'Plaza de Toros Calafia' }],
+    // The research's map point; not an entrance.
+    location: [-115.472241, 32.640696],
+    capacity: [{ seats: 11000, setup: 'concert', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 144, how: 'routed', town: 'Mexicali' },
+  },
+  'daytona-international-speedway': {
+    id: 'daytona-international-speedway',
+    metroId: 'tampa',
+    names: [{ name: 'Daytona International Speedway' }],
+    // The research's map point; not an entrance.
+    location: [-81.070319, 29.184007],
+    capacity: [{ seats: 101500, setup: 'racing', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 164, how: 'routed', town: 'Daytona Beach' },
+  },
+  'steve-spurrierflorida-field-at-ben-hill-griffin-stadium': {
+    id: 'steve-spurrierflorida-field-at-ben-hill-griffin-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Steve Spurrier–Florida Field at Ben Hill Griffin Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-82.348767, 29.650037],
+    capacity: [{ seats: 88548, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 150, how: 'routed', town: 'Gainesville' },
+  },
+  'camping-world-stadium': {
+    id: 'camping-world-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Camping World Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.40275, 28.53904],
+    capacity: [{ seats: 60219, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 99, how: 'routed', town: 'Orlando' },
+  },
+  'acrisure-bounce-house': {
+    id: 'acrisure-bounce-house',
+    metroId: 'tampa',
+    names: [{ name: 'Acrisure Bounce House' }],
+    // The research's map point; not an entrance.
+    location: [-81.192675, 28.608145],
+    capacity: [{ seats: 45906, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 122, how: 'routed', town: 'Orlando' },
+  },
+  'inter-co-stadium': {
+    id: 'inter-co-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Inter.co Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.389141, 28.541104],
+    capacity: [{ seats: 24453, setup: 'soccer', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'covered',
+    furtherOut: { driveMinutes: 99, how: 'routed', town: 'Orlando' },
+  },
+  'kia-center': {
+    id: 'kia-center',
+    metroId: 'tampa',
+    names: [{ name: 'Kia Center' }],
+    // The research's map point; not an entrance.
+    location: [-81.383889, 28.539287],
+    capacity: [{ seats: 18478, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 100, how: 'routed', town: 'Orlando' },
+  },
+  'tinker-field': {
+    id: 'tinker-field',
+    metroId: 'tampa',
+    names: [{ name: 'Tinker Field' }],
+    // The research's map point; not an entrance.
+    location: [-81.405295, 28.538222],
+    capacity: [{ seats: 12000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 99, how: 'routed', town: 'Orlando' },
+  },
+  'jetblue-park-at-fenway-south': {
+    id: 'jetblue-park-at-fenway-south',
+    metroId: 'tampa',
+    names: [{ name: 'jetBlue Park at Fenway South' }],
+    // The research's map point; not an entrance.
+    location: [-81.762569, 26.551205],
+    capacity: [{ seats: 11000, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 151, how: 'routed', town: 'Fort Myers' },
+  },
+  'stephen-c-o-connell-center': {
+    id: 'stephen-c-o-connell-center',
+    metroId: 'tampa',
+    names: [{ name: 'Stephen C. O\'Connell Center' }],
+    // The research's map point; not an entrance.
+    location: [-82.351111, 29.649389],
+    capacity: [{ seats: 10500, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 151, how: 'routed', town: 'Gainesville' },
+  },
+  'silver-spurs-arena-at-osceola-heritage-park': {
+    id: 'silver-spurs-arena-at-osceola-heritage-park',
+    metroId: 'tampa',
+    names: [{ name: 'Silver Spurs Arena at Osceola Heritage Park' }],
+    // The research's map point; not an entrance.
+    location: [-81.369013, 28.298969],
+    capacity: [{ seats: 10000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Kissimmee' },
+  },
+  'orlando-amphitheater': {
+    id: 'orlando-amphitheater',
+    metroId: 'tampa',
+    names: [{ name: 'Orlando Amphitheater' }],
+    // The research's map point; not an entrance.
+    location: [-81.439594, 28.556573],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 102, how: 'routed', town: 'Orlando' },
+  },
+  'publix-field-at-joker-marchant-stadium': {
+    id: 'publix-field-at-joker-marchant-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Publix Field at Joker Marchant Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.950767, 28.074622],
+    capacity: [{ seats: 9598, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+  },
+  'addition-financial-arena': {
+    id: 'addition-financial-arena',
+    metroId: 'tampa',
+    names: [{ name: 'Addition Financial Arena' }],
+    // The research's map point; not an entrance.
+    location: [-81.197297, 28.607341],
+    capacity: [{ seats: 9400, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 120, how: 'routed', town: 'Orlando' },
+  },
+  'lecom-park': {
+    id: 'lecom-park',
+    metroId: 'tampa',
+    names: [{ name: 'LECOM Park' }],
+    // The research's map point; not an entrance.
+    location: [-82.570373, 27.485654],
+    capacity: [{ seats: 9000, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+  },
+  'hammond-stadium-at-lee-health-sports-complex': {
+    id: 'hammond-stadium-at-lee-health-sports-complex',
+    metroId: 'tampa',
+    names: [{ name: 'Hammond Stadium at Lee Health Sports Complex' }],
+    // The research's map point; not an entrance.
+    location: [-81.841884, 26.538165],
+    capacity: [{ seats: 8730, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 152, how: 'routed', town: 'Fort Myers' },
+  },
+  'hertz-arena': {
+    id: 'hertz-arena',
+    metroId: 'tampa',
+    names: [{ name: 'Hertz Arena' }],
+    // The research's map point; not an entrance.
+    location: [-81.77884, 26.440457],
+    capacity: [{ seats: 8500, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 160, how: 'routed', town: 'Estero' },
+  },
+  'ed-smith-stadium': {
+    id: 'ed-smith-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Ed Smith Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-82.517045, 27.347665],
+    capacity: [{ seats: 8500, setup: 'baseball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 71, how: 'routed', town: 'Sarasota' },
+  },
+  'george-jenkins-arena-at-rp-funding-center': {
+    id: 'george-jenkins-arena-at-rp-funding-center',
+    metroId: 'tampa',
+    names: [{ name: 'George Jenkins Arena at RP Funding Center' }],
+    // The research's map point; not an entrance.
+    location: [-81.963619, 28.041053],
+    capacity: [{ seats: 8178, note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+  },
+  'ocean-center': {
+    id: 'ocean-center',
+    metroId: 'tampa',
+    names: [{ name: 'Ocean Center' }],
+    // The research's map point; not an entrance.
+    location: [-81.01113, 29.228454],
+    capacity: [{ seats: 7701, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 169, how: 'routed', town: 'Daytona Beach' },
+  },
+  'charlotte-sports-park': {
+    id: 'charlotte-sports-park',
+    metroId: 'tampa',
+    names: [{ name: 'Charlotte Sports Park' }],
+    // The research's map point; not an entrance.
+    location: [-82.181717, 26.999137],
+    capacity: [{ seats: 7500, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 109, how: 'routed', town: 'Port Charlotte' },
+  },
+  'cooltoday-park': {
+    id: 'cooltoday-park',
+    metroId: 'tampa',
+    names: [{ name: 'CoolToday Park' }],
+    // The research's map point; not an entrance.
+    location: [-82.319313, 27.032918],
+    capacity: [{ seats: 7473, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 94, how: 'routed', town: 'North Port' },
+  },
+  'condron-family-ballpark': {
+    id: 'condron-family-ballpark',
+    metroId: 'tampa',
+    names: [{ name: 'Condron Family Ballpark' }],
+    // The research's map point; not an entrance.
+    location: [-82.364162, 29.63664],
+    capacity: [{ seats: 7000, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 146, how: 'routed', town: 'Gainesville' },
+  },
+  'spec-martin-memorial-stadium': {
+    id: 'spec-martin-memorial-stadium',
+    metroId: 'tampa',
+    names: [{ name: 'Spec Martin Memorial Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.299992, 29.020012],
+    capacity: [{ seats: 6000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-6.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 145, how: 'routed', town: 'DeLand' },
+  },
 };
 /**
  * A merged duplicate's old id → the room kept, so catalog rows the nightly wrote under the old id before the merge
