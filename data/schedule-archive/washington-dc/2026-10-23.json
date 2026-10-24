@@ -55,14 +55,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "George Washington Women's Volleyball vs. Fordham",
+      "title": "George Washington vs. Fordham",
       "place": {
         "type": "venue",
         "venueId": "charles-e-smith-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -137,14 +139,15 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Maryland Volleyball vs. Illinois",
+      "title": "Maryland vs. Illinois",
       "place": {
         "type": "venue",
         "venueId": "umd-xfinity-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -234,14 +237,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Maryland Women's Lacrosse vs. Virginia",
+      "title": "Maryland vs. Virginia",
       "place": {
         "type": "venue",
         "venueId": "maryland-field-hockey-lacrosse-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -252,14 +257,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "George Washington Women's Volleyball vs. Fordham",
+      "title": "George Washington vs. Fordham",
       "place": {
         "type": "venue",
         "venueId": "charles-e-smith-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -270,14 +277,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Maryland Women's Basketball vs. North Carolina",
+      "title": "Maryland vs. North Carolina",
       "place": {
         "type": "venue",
         "venueId": "umd-xfinity-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "maryland-wbb",
@@ -303,7 +312,7 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "George Mason Women's Basketball vs. Mount St. Mary's (Md.)",
+      "title": "George Mason vs. Mount St. Mary's (Md.)",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -311,7 +320,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "gmu-wbb",
@@ -384,14 +395,15 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "Maryland Wrestling vs. Red vs Black Scrimmage",
+      "title": "Maryland vs. Red vs Black Scrimmage",
       "place": {
         "type": "venue",
         "venueId": "umd-xfinity-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "wrestling"
+        "sport": "wrestling",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -493,14 +505,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Georgetown Women's Soccer vs. Seton Hall",
+      "title": "Georgetown vs. Seton Hall",
       "place": {
         "type": "venue",
         "venueId": "shaw-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -511,14 +525,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Maryland Men's Soccer vs. Ohio State",
+      "title": "Maryland vs. Ohio State",
       "place": {
         "type": "venue",
         "venueId": "ludwig-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -617,14 +633,16 @@
       "date": "2026-10-25",
       "start": "10:00",
       "kind": "game",
-      "title": "Maryland Women's Lacrosse vs. San Diego State",
+      "title": "Maryland vs. San Diego State",
       "place": {
         "type": "venue",
         "venueId": "maryland-field-hockey-lacrosse-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -635,14 +653,16 @@
       "date": "2026-10-25",
       "start": "11:00",
       "kind": "game",
-      "title": "Howard Men's Soccer vs. New Haven",
+      "title": "Howard vs. New Haven",
       "place": {
         "type": "venue",
         "venueId": "greene-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -653,14 +673,15 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Maryland Volleyball vs. Michigan State",
+      "title": "Maryland vs. Michigan State",
       "place": {
         "type": "venue",
         "venueId": "umd-xfinity-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -671,14 +692,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "George Mason Women's Soccer vs. La Salle University",
+      "title": "George Mason vs. La Salle University",
       "place": {
         "type": "venue",
         "venueId": "george-mason-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -689,14 +712,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Howard Women's Volleyball vs. Morgan State",
+      "title": "Howard vs. Morgan State",
       "place": {
         "type": "venue",
         "venueId": "burr-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -707,14 +732,16 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "George Mason Men's Basketball vs. St. Mary's (Md.)",
+      "title": "George Mason vs. St. Mary's (Md.)",
       "place": {
         "type": "venue",
         "venueId": "eaglebank-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "gmu-mbb",
@@ -740,14 +767,16 @@
       "date": "2026-10-25",
       "start": "15:00",
       "kind": "game",
-      "title": "Maryland Women's Lacrosse vs. Temple",
+      "title": "Maryland vs. Temple",
       "place": {
         "type": "venue",
         "venueId": "maryland-field-hockey-lacrosse-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -779,14 +808,16 @@
       "date": "2026-10-25",
       "start": "16:00",
       "kind": "game",
-      "title": "George Mason Men's Soccer vs. University of Rhode Island",
+      "title": "George Mason vs. University of Rhode Island",
       "place": {
         "type": "venue",
         "venueId": "george-mason-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -984,14 +1015,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "George Washington Women's Volleyball vs. George Mason",
+      "title": "George Washington vs. George Mason",
       "place": {
         "type": "venue",
         "venueId": "charles-e-smith-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1002,14 +1035,16 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Georgetown Women's Soccer vs. Creighton",
+      "title": "Georgetown vs. Creighton",
       "place": {
         "type": "venue",
         "venueId": "shaw-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1106,14 +1141,15 @@
       "date": "2026-10-29",
       "start": null,
       "kind": "game",
-      "title": "Maryland Baseball vs. Fall WS Game 1",
+      "title": "Maryland vs. Fall WS Game 1",
       "place": {
         "type": "venue",
         "venueId": "bob-turtle-smith-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "maryland-baseball",
@@ -1129,14 +1165,15 @@
       "date": "2026-10-30",
       "start": "13:00",
       "kind": "game",
-      "title": "Maryland Field Hockey vs. Iowa",
+      "title": "Maryland vs. Iowa",
       "place": {
         "type": "venue",
         "venueId": "maryland-field-hockey-lacrosse-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1147,14 +1184,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "George Mason Women's Volleyball vs. Dayton",
+      "title": "George Mason vs. Dayton",
       "place": {
         "type": "venue",
         "venueId": "george-mason-rac"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1225,14 +1264,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Georgetown Men's Soccer vs. Creighton",
+      "title": "Georgetown vs. Creighton",
       "place": {
         "type": "venue",
         "venueId": "shaw-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1299,14 +1340,15 @@
       "date": "2026-10-30",
       "start": null,
       "kind": "game",
-      "title": "Maryland Baseball vs. Fall WS Game 2",
+      "title": "Maryland vs. Fall WS Game 2",
       "place": {
         "type": "venue",
         "venueId": "bob-turtle-smith-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "maryland-baseball",
@@ -1356,14 +1398,16 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "George Mason Women's Volleyball vs. Dayton",
+      "title": "George Mason vs. Dayton",
       "place": {
         "type": "venue",
         "venueId": "george-mason-rac"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1479,14 +1523,15 @@
       "date": "2026-10-31",
       "start": null,
       "kind": "game",
-      "title": "Maryland Baseball vs. Fall WS Game 3",
+      "title": "Maryland vs. Fall WS Game 3",
       "place": {
         "type": "venue",
         "venueId": "bob-turtle-smith-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "maryland-baseball",
@@ -1502,14 +1547,16 @@
       "date": "2026-11-01",
       "start": "11:00",
       "kind": "game",
-      "title": "Howard Women's Soccer vs. Chicago State",
+      "title": "Howard vs. Chicago State",
       "place": {
         "type": "venue",
         "venueId": "greene-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1520,14 +1567,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Howard Women's Volleyball vs. Maryland Eastern Shore",
+      "title": "Howard vs. Maryland Eastern Shore",
       "place": {
         "type": "venue",
         "venueId": "burr-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1731,14 +1780,16 @@
       "date": "2026-11-02",
       "start": "17:00",
       "kind": "game",
-      "title": "George Washington Women's Basketball vs. UDC",
+      "title": "George Washington vs. UDC",
       "place": {
         "type": "venue",
         "venueId": "charles-e-smith-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "gw-wbb",
@@ -1823,14 +1874,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "George Mason Women's Basketball vs. Temple",
+      "title": "George Mason vs. Temple",
       "place": {
         "type": "venue",
         "venueId": "eaglebank-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "gmu-wbb",
@@ -1846,14 +1899,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Georgetown Women's Basketball vs. Delaware State",
+      "title": "Georgetown vs. Delaware State",
       "place": {
         "type": "venue",
         "venueId": "mcdonough-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "georgetown-wbb",
@@ -1971,14 +2026,16 @@
       "date": "2026-11-04",
       "start": "19:00",
       "kind": "game",
-      "title": "Maryland Men's Soccer vs. Penn State",
+      "title": "Maryland vs. Penn State",
       "place": {
         "type": "venue",
         "venueId": "ludwig-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2041,14 +2098,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "George Mason Women's Basketball vs. Akron",
+      "title": "George Mason vs. Akron",
       "place": {
         "type": "venue",
         "venueId": "eaglebank-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "gmu-wbb",
@@ -2064,14 +2123,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Georgetown Women's Basketball vs. American",
+      "title": "Georgetown vs. American",
       "place": {
         "type": "venue",
         "venueId": "mcdonough-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "georgetown-wbb",
@@ -2087,14 +2148,15 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Maryland Volleyball vs. USC",
+      "title": "Maryland vs. USC",
       "place": {
         "type": "venue",
         "venueId": "umd-xfinity-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2105,14 +2167,15 @@
       "date": "2026-11-05",
       "start": "19:30",
       "kind": "game",
-      "title": "Howard Football vs. South Carolina State",
+      "title": "Howard vs. South Carolina State",
       "place": {
         "type": "venue",
         "venueId": "greene-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "howard-football",
@@ -2187,14 +2250,16 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "Howard Women's Basketball vs. Elon",
+      "title": "Howard vs. Elon",
       "place": {
         "type": "venue",
         "venueId": "burr-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "howard-wbb",

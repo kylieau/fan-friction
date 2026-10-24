@@ -111,14 +111,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "UNLV Men's Soccer vs. Grand Canyon",
+      "title": "UNLV vs. Grand Canyon",
       "place": {
         "type": "venue",
         "venueId": "peter-johann-memorial-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -263,7 +265,7 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "UNLV Men's Basketball vs. BYU",
+      "title": "UNLV vs. BYU",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -271,7 +273,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "unlv-mbb",
@@ -319,14 +323,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "UNLV Women's Soccer vs. UNR",
+      "title": "UNLV vs. UNR",
       "place": {
         "type": "venue",
         "venueId": "peter-johann-memorial-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -548,14 +554,16 @@
       "date": "2026-10-27",
       "start": "18:30",
       "kind": "game",
-      "title": "UNLV Women's Basketball vs. Cal State LA",
+      "title": "UNLV vs. Cal State LA",
       "place": {
         "type": "venue",
         "venueId": "cox-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "unlv-wbb",
@@ -757,14 +765,16 @@
       "date": "2026-10-29",
       "start": "18:00",
       "kind": "game",
-      "title": "UNLV Women's Volleyball vs. Air Force",
+      "title": "UNLV vs. Air Force",
       "place": {
         "type": "venue",
         "venueId": "cox-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -775,7 +785,7 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "UNLV Men's Basketball vs. Missouri",
+      "title": "UNLV vs. Missouri",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -783,7 +793,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "unlv-mbb",
@@ -1136,14 +1148,16 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "UNLV Women's Volleyball vs. Air Force",
+      "title": "UNLV vs. Air Force",
       "place": {
         "type": "venue",
         "venueId": "cox-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1346,14 +1360,16 @@
       "date": "2026-11-01",
       "start": "18:00",
       "kind": "game",
-      "title": "UNLV Men's Soccer vs. Air Force",
+      "title": "UNLV vs. Air Force",
       "place": {
         "type": "venue",
         "venueId": "peter-johann-memorial-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1591,14 +1607,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "UNLV Women's Soccer vs. Colorado College",
+      "title": "UNLV vs. Colorado College",
       "place": {
         "type": "venue",
         "venueId": "peter-johann-memorial-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1665,14 +1683,16 @@
       "date": "2026-11-06",
       "start": "18:30",
       "kind": "game",
-      "title": "UNLV Women's Basketball vs. UTSA",
+      "title": "UNLV vs. UTSA",
       "place": {
         "type": "venue",
         "venueId": "cox-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "unlv-wbb",
@@ -1720,14 +1740,16 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "UNLV Men's Soccer vs. Utah Tech",
+      "title": "UNLV vs. Utah Tech",
       "place": {
         "type": "venue",
         "venueId": "peter-johann-memorial-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

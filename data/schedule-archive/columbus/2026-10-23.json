@@ -55,14 +55,15 @@
       "date": "2026-10-23",
       "start": "17:00",
       "kind": "game",
-      "title": "Ohio State Softball vs. Danville Community College",
+      "title": "Ohio State vs. Danville Community College",
       "place": {
         "type": "venue",
         "venueId": "buckeye-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -73,14 +74,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Ohio State Women's Ice Hockey vs. Colgate",
+      "title": "Ohio State vs. Colgate",
       "place": {
         "type": "venue",
         "venueId": "ohio-state-ice-rink"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "osu-whockey",
@@ -194,14 +197,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Ohio Wesleyan Field Hockey vs. DePauw",
+      "title": "Ohio Wesleyan vs. DePauw",
       "place": {
         "type": "venue",
         "venueId": "selby-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -212,14 +216,16 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "Ohio State Women's Ice Hockey vs. Colgate",
+      "title": "Ohio State vs. Colgate",
       "place": {
         "type": "venue",
         "venueId": "ohio-state-ice-rink"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "osu-whockey",
@@ -399,14 +405,16 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Ohio State Women's Soccer vs. Illinois",
+      "title": "Ohio State vs. Illinois",
       "place": {
         "type": "venue",
         "venueId": "jesse-owens-memorial-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -417,14 +425,16 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "Ohio State Men's Basketball vs. Butler",
+      "title": "Ohio State vs. Butler",
       "place": {
         "type": "venue",
         "venueId": "value-city-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "osu-mbb",
@@ -506,14 +516,15 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Ohio Wesleyan Volleyball vs. DePauw",
+      "title": "Ohio Wesleyan vs. DePauw",
       "place": {
         "type": "venue",
         "venueId": "branch-rickey-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -608,14 +619,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Ohio State Women's Ice Hockey vs. Bemidji State",
+      "title": "Ohio State vs. Bemidji State",
       "place": {
         "type": "venue",
         "venueId": "ohio-state-ice-rink"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "osu-whockey",
@@ -631,14 +644,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Ohio State Men's Soccer vs. Northwestern University",
+      "title": "Ohio State vs. Northwestern University",
       "place": {
         "type": "venue",
         "venueId": "jesse-owens-memorial-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -737,14 +752,15 @@
       "date": "2026-10-31",
       "start": "11:00",
       "kind": "game",
-      "title": "Ohio Wesleyan Field Hockey vs. Wittenberg",
+      "title": "Ohio Wesleyan vs. Wittenberg",
       "place": {
         "type": "venue",
         "venueId": "selby-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -788,14 +804,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Ohio Wesleyan Football vs. Wabash",
+      "title": "Ohio Wesleyan vs. Wabash",
       "place": {
         "type": "venue",
         "venueId": "selby-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "owu-football",
@@ -811,14 +828,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "Ohio State Women's Ice Hockey vs. Bemidji State",
+      "title": "Ohio State vs. Bemidji State",
       "place": {
         "type": "venue",
         "venueId": "ohio-state-ice-rink"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "osu-whockey",
@@ -982,14 +1001,15 @@
       "date": "2026-11-02",
       "start": null,
       "kind": "game",
-      "title": "Ohio State Softball vs. Scarlet vs. Gray Series",
+      "title": "Ohio State vs. Scarlet vs. Gray Series",
       "place": {
         "type": "venue",
         "venueId": "buckeye-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1291,14 +1311,15 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "Ohio Wesleyan Volleyball vs. Otterbein",
+      "title": "Ohio Wesleyan vs. Otterbein",
       "place": {
         "type": "venue",
         "venueId": "branch-rickey-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"

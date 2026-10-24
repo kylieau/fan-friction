@@ -84,14 +84,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Davis Men's Soccer vs. Utah Tech",
+      "title": "UC Davis vs. Utah Tech",
       "place": {
         "type": "venue",
         "venueId": "aggie-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -242,14 +244,16 @@
       "date": "2026-10-24",
       "start": "11:00",
       "kind": "game",
-      "title": "UC Davis Women's Volleyball vs. Nevada",
+      "title": "UC Davis vs. Nevada",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -284,14 +288,16 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "Sacramento State Women's Soccer vs. CSUN",
+      "title": "Sacramento State vs. CSUN",
       "place": {
         "type": "venue",
         "venueId": "hornet-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -503,14 +509,16 @@
       "date": "2026-10-28",
       "start": "15:00",
       "kind": "game",
-      "title": "Sacramento State Women's Soccer vs. California Baptist",
+      "title": "Sacramento State vs. California Baptist",
       "place": {
         "type": "venue",
         "venueId": "hornet-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -521,14 +529,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Davis Men's Soccer vs. UNLV",
+      "title": "UC Davis vs. UNLV",
       "place": {
         "type": "venue",
         "venueId": "aggie-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -539,14 +549,16 @@
       "date": "2026-10-28",
       "start": "18:30",
       "kind": "game",
-      "title": "Sacramento State Women's Basketball vs. Stanislaus State",
+      "title": "Sacramento State vs. Stanislaus State",
       "place": {
         "type": "venue",
         "venueId": "hornet-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "sac-state-wbb",
@@ -721,14 +733,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Davis Women's Volleyball vs. Hawai'i",
+      "title": "UC Davis vs. Hawai'i",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -949,14 +963,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "Sacramento State Men's Soccer vs. Cal State Fullerton",
+      "title": "Sacramento State vs. Cal State Fullerton",
       "place": {
         "type": "venue",
         "venueId": "hornet-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -967,14 +983,16 @@
       "date": "2026-10-31",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Davis Women's Volleyball vs. Hawai'i",
+      "title": "UC Davis vs. Hawai'i",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1081,14 +1099,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "UC Davis Women's Soccer vs. UTEP",
+      "title": "UC Davis vs. UTEP",
       "place": {
         "type": "venue",
         "venueId": "aggie-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1401,14 +1421,15 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Sacramento State Volleyball vs. UC Irvine",
+      "title": "Sacramento State vs. UC Irvine",
       "place": {
         "type": "venue",
         "venueId": "sac-state-nest"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "teams": {
         "home": "sac-state-volleyball",
@@ -1450,14 +1471,16 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Davis Men's Soccer vs. San Jose State",
+      "title": "UC Davis vs. San Jose State",
       "place": {
         "type": "venue",
         "venueId": "aggie-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

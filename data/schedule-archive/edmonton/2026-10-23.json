@@ -55,14 +55,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Alberta Women's Basketball vs. University of Victoria",
+      "title": "Alberta vs. University of Victoria",
       "place": {
         "type": "venue",
         "venueId": "saville-community-sports-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "ualberta-wbb",
@@ -136,14 +138,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Alberta Men's Hockey vs. University of Manitoba",
+      "title": "Alberta vs. University of Manitoba",
       "place": {
         "type": "venue",
         "venueId": "silent-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "ualberta-hockey",
@@ -207,14 +211,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Alberta Women's Soccer vs. Mount Royal University",
+      "title": "Alberta vs. Mount Royal University",
       "place": {
         "type": "venue",
         "venueId": "foote-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -249,14 +255,16 @@
       "date": "2026-10-24",
       "start": "14:15",
       "kind": "game",
-      "title": "Alberta Men's Soccer vs. University of Saskatchewan",
+      "title": "Alberta vs. University of Saskatchewan",
       "place": {
         "type": "venue",
         "venueId": "foote-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -267,14 +275,16 @@
       "date": "2026-10-24",
       "start": "16:00",
       "kind": "game",
-      "title": "Alberta Women's Basketball vs. University of Victoria",
+      "title": "Alberta vs. University of Victoria",
       "place": {
         "type": "venue",
         "venueId": "saville-community-sports-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "ualberta-wbb",
@@ -323,14 +333,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Alberta Men's Hockey vs. University of Manitoba",
+      "title": "Alberta vs. University of Manitoba",
       "place": {
         "type": "venue",
         "venueId": "silent-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "ualberta-hockey",
@@ -420,14 +432,16 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Alberta Women's Soccer vs. University of Calgary",
+      "title": "Alberta vs. University of Calgary",
       "place": {
         "type": "venue",
         "venueId": "foote-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -438,14 +452,16 @@
       "date": "2026-10-25",
       "start": "14:15",
       "kind": "game",
-      "title": "Alberta Men's Soccer vs. University of Lethbridge",
+      "title": "Alberta vs. University of Lethbridge",
       "place": {
         "type": "venue",
         "venueId": "foote-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -606,14 +622,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Alberta Women's Hockey vs. Mount Royal University",
+      "title": "Alberta vs. Mount Royal University",
       "place": {
         "type": "venue",
         "venueId": "silent-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "ualberta-whockey",
@@ -683,14 +701,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "Alberta Men's Football vs. University of Calgary",
+      "title": "Alberta vs. University of Calgary",
       "place": {
         "type": "venue",
         "venueId": "foote-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -701,14 +721,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Alberta Men's Hockey vs. Mount Royal University",
+      "title": "Alberta vs. Mount Royal University",
       "place": {
         "type": "venue",
         "venueId": "silent-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "ualberta-hockey",
@@ -871,14 +893,16 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "Alberta Women's Volleyball vs. Trinity Western University",
+      "title": "Alberta vs. Trinity Western University",
       "place": {
         "type": "venue",
         "venueId": "saville-community-sports-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -915,14 +939,16 @@
       "date": "2026-11-06",
       "start": "20:00",
       "kind": "game",
-      "title": "Alberta Women's Hockey vs. University of Calgary",
+      "title": "Alberta vs. University of Calgary",
       "place": {
         "type": "venue",
         "venueId": "silent-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "ualberta-whockey",

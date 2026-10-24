@@ -298,14 +298,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Washington Men's Basketball vs. Washington State",
+      "title": "Washington vs. Washington State",
       "place": {
         "type": "venue",
         "venueId": "alaska-airlines-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uw-mbb",
@@ -583,14 +585,16 @@
       "date": "2026-10-30",
       "start": "17:00",
       "kind": "game",
-      "title": "Washington Men's Soccer vs. Maryland",
+      "title": "Washington vs. Maryland",
       "place": {
         "type": "venue",
         "venueId": "husky-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -649,14 +653,16 @@
       "date": "2026-10-30",
       "start": "20:00",
       "kind": "game",
-      "title": "Washington Women's Soccer vs. Oregon",
+      "title": "Washington vs. Oregon",
       "place": {
         "type": "venue",
         "venueId": "husky-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

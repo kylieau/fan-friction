@@ -55,14 +55,15 @@
       "date": "2026-10-22",
       "start": "18:00",
       "kind": "game",
-      "title": "Belmont Volleyball vs. Murray State",
+      "title": "Belmont vs. Murray State",
       "place": {
         "type": "venue",
         "venueId": "curb-event-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -73,14 +74,16 @@
       "date": "2026-10-22",
       "start": "18:00",
       "kind": "game",
-      "title": "Lipscomb Women's Soccer vs. Queens University of Charlotte",
+      "title": "Lipscomb vs. Queens University of Charlotte",
       "place": {
         "type": "venue",
         "venueId": "lipscomb-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -231,14 +234,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Lipscomb Women's Volleyball vs. Florida Gulf Coast",
+      "title": "Lipscomb vs. Florida Gulf Coast",
       "place": {
         "type": "venue",
         "venueId": "allen-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -249,14 +254,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Tennessee State Women's Volleyball vs. Morehead State",
+      "title": "Tennessee State vs. Morehead State",
       "place": {
         "type": "venue",
         "venueId": "kean-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -409,14 +416,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Tennessee State Women's Volleyball vs. Morehead State",
+      "title": "Tennessee State vs. Morehead State",
       "place": {
         "type": "venue",
         "venueId": "kean-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -427,14 +436,16 @@
       "date": "2026-10-24",
       "start": "13:30",
       "kind": "game",
-      "title": "Lipscomb Women's Volleyball vs. Stetson",
+      "title": "Lipscomb vs. Stetson",
       "place": {
         "type": "venue",
         "venueId": "allen-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -663,14 +674,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Lipscomb Women's Soccer vs. University of West Florida",
+      "title": "Lipscomb vs. University of West Florida",
       "place": {
         "type": "venue",
         "venueId": "lipscomb-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1007,7 +1020,7 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Lipscomb Men's Basketball vs. Bryan College",
+      "title": "Lipscomb vs. Bryan College",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -1015,7 +1028,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lipscomb-mbb",
@@ -1319,14 +1334,15 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Belmont Volleyball vs. Drake",
+      "title": "Belmont vs. Drake",
       "place": {
         "type": "venue",
         "venueId": "curb-event-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1337,14 +1353,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Lipscomb Women's Volleyball vs. West Florida",
+      "title": "Lipscomb vs. West Florida",
       "place": {
         "type": "venue",
         "venueId": "allen-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1528,14 +1546,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Belmont Volleyball vs. UIC",
+      "title": "Belmont vs. UIC",
       "place": {
         "type": "venue",
         "venueId": "curb-event-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1546,14 +1565,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Lipscomb Women's Volleyball vs. Queens",
+      "title": "Lipscomb vs. Queens",
       "place": {
         "type": "venue",
         "venueId": "allen-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1564,14 +1585,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Lipscomb Men's Soccer vs. North Florida",
+      "title": "Lipscomb vs. North Florida",
       "place": {
         "type": "venue",
         "venueId": "lipscomb-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

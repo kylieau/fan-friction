@@ -55,14 +55,16 @@
       "date": "2026-10-22",
       "start": "12:00",
       "kind": "game",
-      "title": "Cal Women's Soccer vs. SMU",
+      "title": "Cal vs. SMU",
       "place": {
         "type": "venue",
         "venueId": "edwards-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -73,14 +75,16 @@
       "date": "2026-10-22",
       "start": "18:30",
       "kind": "game",
-      "title": "Saint Mary's Women's Volleyball vs. Denver",
+      "title": "Saint Mary's vs. Denver",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -285,14 +289,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Santa Clara Women's Soccer vs. Saint Mary's",
+      "title": "Santa Clara vs. Saint Mary's",
       "place": {
         "type": "venue",
         "venueId": "stevens-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -303,14 +309,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "San Francisco Women's Soccer vs. Denver",
+      "title": "San Francisco vs. Denver",
       "place": {
         "type": "venue",
         "venueId": "negoesco-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -321,14 +329,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Saint Mary's Women's Volleyball vs. San Diego",
+      "title": "Saint Mary's vs. San Diego",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -339,14 +349,16 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "Cal Men's Soccer vs. SMU",
+      "title": "Cal vs. SMU",
       "place": {
         "type": "venue",
         "venueId": "edwards-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -357,14 +369,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "San Francisco Men's Soccer vs. Seattle U",
+      "title": "San Francisco vs. Seattle U",
       "place": {
         "type": "venue",
         "venueId": "negoesco-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -406,14 +420,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Saint Mary's Men's Soccer vs. LMU",
+      "title": "Saint Mary's vs. LMU",
       "place": {
         "type": "venue",
         "venueId": "saint-marys-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -514,14 +530,16 @@
       "date": "2026-10-26",
       "start": "19:00",
       "kind": "game",
-      "title": "San Francisco Men's Basketball vs. San Francisco State",
+      "title": "San Francisco vs. San Francisco State",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-sobrato-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "usf-dons-mbb",
@@ -666,14 +684,15 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Volleyball vs. Stanford",
+      "title": "Cal vs. Stanford",
       "place": {
         "type": "venue",
         "venueId": "haas-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -811,14 +830,16 @@
       "date": "2026-10-29",
       "start": "15:00",
       "kind": "game",
-      "title": "Cal Women's Soccer vs. Notre Dame",
+      "title": "Cal vs. Notre Dame",
       "place": {
         "type": "venue",
         "venueId": "edwards-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -829,7 +850,7 @@
       "date": "2026-10-29",
       "start": "18:00",
       "kind": "game",
-      "title": "Cal Women's Basketball vs. Vanguard",
+      "title": "Cal vs. Vanguard",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -837,7 +858,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "cal-wbb",
@@ -887,7 +910,7 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Saint Mary's Women's Basketball vs. UC Santa Cruz",
+      "title": "Saint Mary's vs. UC Santa Cruz",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -895,7 +918,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "smc-wbb",
@@ -1060,14 +1085,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Saint Mary's Women's Soccer vs. Seattle U",
+      "title": "Saint Mary's vs. Seattle U",
       "place": {
         "type": "venue",
         "venueId": "saint-marys-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1078,14 +1105,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "San Francisco Women's Soccer vs. Santa Clara",
+      "title": "San Francisco vs. Santa Clara",
       "place": {
         "type": "venue",
         "venueId": "negoesco-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1129,14 +1158,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Saint Mary's Women's Volleyball vs. Pacific",
+      "title": "Saint Mary's vs. Pacific",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1184,14 +1215,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Santa Clara Men's Soccer vs. Denver",
+      "title": "Santa Clara vs. Denver",
       "place": {
         "type": "venue",
         "venueId": "stevens-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1235,14 +1268,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Cal Women's Soccer vs. NC State",
+      "title": "Cal vs. NC State",
       "place": {
         "type": "venue",
         "venueId": "edwards-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1523,14 +1558,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Santa Clara Men's Basketball vs. Towson",
+      "title": "Santa Clara vs. Towson",
       "place": {
         "type": "venue",
         "venueId": "leavey-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "santa-clara-mbb",
@@ -1546,14 +1583,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Mary's Men's Basketball vs. Illinois State",
+      "title": "Saint Mary's vs. Illinois State",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "smc-mbb",
@@ -1569,14 +1608,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "San Francisco Men's Basketball vs. Radford",
+      "title": "San Francisco vs. Radford",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-sobrato-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "usf-dons-mbb",
@@ -1687,14 +1728,16 @@
       "date": "2026-11-04",
       "start": "19:00",
       "kind": "game",
-      "title": "Santa Clara Men's Basketball vs. Milwaukee",
+      "title": "Santa Clara vs. Milwaukee",
       "place": {
         "type": "venue",
         "venueId": "leavey-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "santa-clara-mbb",
@@ -1710,14 +1753,16 @@
       "date": "2026-11-04",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Mary's Men's Basketball vs. North Dakota State",
+      "title": "Saint Mary's vs. North Dakota State",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "smc-mbb",
@@ -1763,14 +1808,16 @@
       "date": "2026-11-05",
       "start": "12:00",
       "kind": "game",
-      "title": "San Francisco Women's Basketball vs. Hawaii",
+      "title": "San Francisco vs. Hawaii",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-sobrato-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "usf-dons-wbb",
@@ -1819,14 +1866,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "San Francisco Women's Volleyball vs. Portland",
+      "title": "San Francisco vs. Portland",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-sobrato-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1837,14 +1886,16 @@
       "date": "2026-11-05",
       "start": "18:30",
       "kind": "game",
-      "title": "Saint Mary's Women's Volleyball vs. Pepperdine",
+      "title": "Saint Mary's vs. Pepperdine",
       "place": {
         "type": "venue",
         "venueId": "university-credit-union-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1889,14 +1940,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Santa Clara Women's Volleyball vs. Seattle",
+      "title": "Santa Clara vs. Seattle",
       "place": {
         "type": "venue",
         "venueId": "leavey-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

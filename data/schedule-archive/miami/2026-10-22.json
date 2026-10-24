@@ -55,14 +55,16 @@
       "date": "2026-10-22",
       "start": "18:00",
       "kind": "game",
-      "title": "FIU Men's Basketball vs. Murray State",
+      "title": "FIU vs. Murray State",
       "place": {
         "type": "venue",
         "venueId": "ocean-bank-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "fiu-mbb",
@@ -545,14 +547,15 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "FIU Volleyball vs. Western Kentucky",
+      "title": "FIU vs. Western Kentucky",
       "place": {
         "type": "venue",
         "venueId": "ocean-bank-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -661,14 +664,15 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "FIU Volleyball vs. Western Kentucky",
+      "title": "FIU vs. Western Kentucky",
       "place": {
         "type": "venue",
         "venueId": "ocean-bank-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -833,14 +837,16 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "FIU Women's Basketball vs. Jacksonville",
+      "title": "FIU vs. Jacksonville",
       "place": {
         "type": "venue",
         "venueId": "ocean-bank-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "fiu-wbb",

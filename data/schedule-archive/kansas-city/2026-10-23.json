@@ -100,14 +100,16 @@
       "date": "2026-10-24",
       "start": "11:30",
       "kind": "game",
-      "title": "Kansas City Men's Basketball vs. Montana State",
+      "title": "Kansas City vs. Montana State",
       "place": {
         "type": "venue",
         "venueId": "municipal-auditorium-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "kc-roos-mbb",
@@ -408,14 +410,16 @@
       "date": "2026-11-02",
       "start": "11:00",
       "kind": "game",
-      "title": "Kansas City Women's Basketball vs. Baker",
+      "title": "Kansas City vs. Baker",
       "place": {
         "type": "venue",
         "venueId": "swinney-recreation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "kc-roos-wbb",
@@ -513,14 +517,15 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Kansas City Volleyball vs. South Dakota",
+      "title": "Kansas City vs. South Dakota",
       "place": {
         "type": "venue",
         "venueId": "swinney-recreation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -557,14 +562,16 @@
       "date": "2026-11-06",
       "start": "17:30",
       "kind": "game",
-      "title": "Kansas City Women's Basketball vs. Wichita State",
+      "title": "Kansas City vs. Wichita State",
       "place": {
         "type": "venue",
         "venueId": "municipal-auditorium-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "kc-roos-wbb",

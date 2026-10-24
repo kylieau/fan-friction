@@ -55,14 +55,15 @@
       "date": "2026-10-23",
       "start": "12:00",
       "kind": "game",
-      "title": "Delaware Volleyball vs. Missouri State",
+      "title": "Delaware vs. Missouri State",
       "place": {
         "type": "venue",
         "venueId": "bob-carpenter-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -73,14 +74,15 @@
       "date": "2026-10-23",
       "start": "17:00",
       "kind": "game",
-      "title": "Delaware Field Hockey vs. UC Davis",
+      "title": "Delaware vs. UC Davis",
       "place": {
         "type": "venue",
         "venueId": "rullo-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -91,14 +93,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Penn Women's Volleyball vs. Princeton",
+      "title": "Penn vs. Princeton",
       "place": {
         "type": "venue",
         "venueId": "the-palestra"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -143,14 +147,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Villanova Women's Volleyball vs. St. John's",
+      "title": "Villanova vs. St. John's",
       "place": {
         "type": "venue",
         "venueId": "jake-nevin-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -287,14 +293,15 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Delaware Volleyball vs. Missouri State",
+      "title": "Delaware vs. Missouri State",
       "place": {
         "type": "venue",
         "venueId": "bob-carpenter-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -305,14 +312,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Villanova Men's Soccer vs. Georgetown University",
+      "title": "Villanova vs. Georgetown University",
       "place": {
         "type": "venue",
         "venueId": "higgins-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -381,14 +390,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Saint Joseph's Men's Soccer vs. Davidson",
+      "title": "Saint Joseph's vs. Davidson",
       "place": {
         "type": "venue",
         "venueId": "sean-sweeney-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -399,14 +410,15 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "Penn Sprint Football vs. Mansfield",
+      "title": "Penn Sprint vs. Mansfield",
       "place": {
         "type": "venue",
         "venueId": "penn-franklin-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -450,14 +462,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Delaware Men's Soccer vs. Oral Roberts",
+      "title": "Delaware vs. Oral Roberts",
       "place": {
         "type": "venue",
         "venueId": "grant-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -468,14 +482,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Villanova Women's Volleyball vs. Seton Hall",
+      "title": "Villanova vs. Seton Hall",
       "place": {
         "type": "venue",
         "venueId": "jake-nevin-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -710,14 +726,16 @@
       "date": "2026-10-24",
       "start": null,
       "kind": "game",
-      "title": "Temple Women's Fencing vs. Coach Nikki Franke Classic",
+      "title": "Temple vs. Coach Nikki Franke Classic",
       "place": {
         "type": "venue",
         "venueId": "liacouras-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "other"
+        "sport": "fencing",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -728,14 +746,16 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Drexel Women's Soccer vs. Hofstra",
+      "title": "Drexel vs. Hofstra",
       "place": {
         "type": "venue",
         "venueId": "vidas-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -746,14 +766,16 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Temple Women's Volleyball vs. UTSA",
+      "title": "Temple vs. UTSA",
       "place": {
         "type": "venue",
         "venueId": "mcgonigle-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -764,14 +786,15 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Delaware Field Hockey vs. Georgetown",
+      "title": "Delaware vs. Georgetown",
       "place": {
         "type": "venue",
         "venueId": "rullo-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -782,14 +805,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Saint Joseph's Women's Soccer vs. Dayton",
+      "title": "Saint Joseph's vs. Dayton",
       "place": {
         "type": "venue",
         "venueId": "sean-sweeney-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -932,7 +957,7 @@
       "date": "2026-10-26",
       "start": "19:00",
       "kind": "game",
-      "title": "Drexel Men's Basketball vs. Penn State",
+      "title": "Drexel vs. Penn State",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -940,7 +965,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "drexel-mbb",
@@ -1050,14 +1077,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Joseph's Men's Soccer vs. Villanova",
+      "title": "Saint Joseph's vs. Villanova",
       "place": {
         "type": "venue",
         "venueId": "sean-sweeney-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1163,14 +1192,16 @@
       "date": "2026-10-28",
       "start": "15:00",
       "kind": "game",
-      "title": "Villanova Women's Soccer vs. DePaul University",
+      "title": "Villanova vs. DePaul University",
       "place": {
         "type": "venue",
         "venueId": "higgins-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1549,14 +1580,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Drexel Men's Soccer vs. Monmouth",
+      "title": "Drexel vs. Monmouth",
       "place": {
         "type": "venue",
         "venueId": "vidas-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1567,14 +1600,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Villanova Men's Soccer vs. University of Akron",
+      "title": "Villanova vs. University of Akron",
       "place": {
         "type": "venue",
         "venueId": "higgins-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1654,14 +1689,15 @@
       "date": "2026-10-31",
       "start": "17:00",
       "kind": "game",
-      "title": "Delaware Field Hockey vs. Towson",
+      "title": "Delaware vs. Towson",
       "place": {
         "type": "venue",
         "venueId": "rullo-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1672,14 +1708,16 @@
       "date": "2026-10-31",
       "start": "18:00",
       "kind": "game",
-      "title": "Delaware Women's Soccer vs. Sam Houston",
+      "title": "Delaware vs. Sam Houston",
       "place": {
         "type": "venue",
         "venueId": "grant-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1819,14 +1857,16 @@
       "date": "2026-11-01",
       "start": "12:00",
       "kind": "game",
-      "title": "Temple Women's Volleyball vs. Tulane",
+      "title": "Temple vs. Tulane",
       "place": {
         "type": "venue",
         "venueId": "mcgonigle-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1972,14 +2012,16 @@
       "date": "2026-11-02",
       "start": "18:00",
       "kind": "game",
-      "title": "Drexel Women's Basketball vs. Marist",
+      "title": "Drexel vs. Marist",
       "place": {
         "type": "venue",
         "venueId": "daskalakis-athletic-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "drexel-wbb",
@@ -2121,14 +2163,16 @@
       "date": "2026-11-03",
       "start": "18:00",
       "kind": "game",
-      "title": "Penn Women's Basketball vs. Swarthmore",
+      "title": "Penn vs. Swarthmore",
       "place": {
         "type": "venue",
         "venueId": "the-palestra"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "penn-wbb",
@@ -2213,14 +2257,16 @@
       "date": "2026-11-04",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Joseph's Men's Basketball vs. Longwood",
+      "title": "Saint Joseph's vs. Longwood",
       "place": {
         "type": "venue",
         "venueId": "hagan-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "sju-mbb",
@@ -2405,14 +2451,15 @@
       "date": "2026-11-06",
       "start": "12:00",
       "kind": "game",
-      "title": "Delaware Field Hockey vs. MPSF Semifinal",
+      "title": "Delaware vs. MPSF Semifinal",
       "place": {
         "type": "venue",
         "venueId": "rullo-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "field hockey",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2423,14 +2470,16 @@
       "date": "2026-11-06",
       "start": "12:00",
       "kind": "game",
-      "title": "Temple Women's Volleyball vs. East Carolina",
+      "title": "Temple vs. East Carolina",
       "place": {
         "type": "venue",
         "venueId": "mcgonigle-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2475,14 +2524,16 @@
       "date": "2026-11-06",
       "start": "17:00",
       "kind": "game",
-      "title": "Villanova Women's Volleyball vs. Marquette",
+      "title": "Villanova vs. Marquette",
       "place": {
         "type": "venue",
         "venueId": "jake-nevin-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2493,14 +2544,15 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "Delaware Ice Hockey vs. Mercyhurst",
+      "title": "Delaware vs. Mercyhurst",
       "place": {
         "type": "venue",
         "venueId": "fred-rust-ice-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college"
       },
       "teams": {
         "home": "delaware-whockey",
@@ -2516,14 +2568,15 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "Delaware Volleyball vs. FIU",
+      "title": "Delaware vs. FIU",
       "place": {
         "type": "venue",
         "venueId": "bob-carpenter-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2534,14 +2587,16 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "Penn Women's Volleyball vs. Harvard",
+      "title": "Penn vs. Harvard",
       "place": {
         "type": "venue",
         "venueId": "the-palestra"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2585,14 +2640,15 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "Penn Sprint Football vs. Chestnut Hill",
+      "title": "Penn Sprint vs. Chestnut Hill",
       "place": {
         "type": "venue",
         "venueId": "penn-franklin-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2708,14 +2764,16 @@
       "date": "2026-11-06",
       "start": null,
       "kind": "game",
-      "title": "Dragon Invitational Men's Tennis vs. Temple",
+      "title": "Dragon Invitational vs. Temple",
       "place": {
         "type": "venue",
         "venueId": "vidas-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "tennis"
+        "sport": "tennis",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

@@ -97,14 +97,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "North Carolina Women's Soccer vs. Stanford",
+      "title": "North Carolina vs. Stanford",
       "place": {
         "type": "venue",
         "venueId": "dorrance-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -115,14 +117,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "NC State Women's Volleyball vs. Wake Forest",
+      "title": "NC State vs. Wake Forest",
       "place": {
         "type": "venue",
         "venueId": "reynolds-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -133,14 +137,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "North Carolina Central Women's Volleyball vs. Delaware State",
+      "title": "North Carolina Central vs. Delaware State",
       "place": {
         "type": "venue",
         "venueId": "mcdougald-mclendon-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -182,14 +188,15 @@
       "date": "2026-10-23",
       "start": "18:30",
       "kind": "game",
-      "title": "Duke Volleyball vs. Stanford",
+      "title": "Duke vs. Stanford",
       "place": {
         "type": "venue",
         "venueId": "cameron-indoor-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -250,14 +257,16 @@
       "date": "2026-10-23",
       "start": "20:00",
       "kind": "game",
-      "title": "Duke Men's Soccer vs. North Carolina",
+      "title": "Duke vs. North Carolina",
       "place": {
         "type": "venue",
         "venueId": "koskinen-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -297,14 +306,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "NC State Men's Basketball vs. Lenoir-Rhyne",
+      "title": "NC State vs. Lenoir-Rhyne",
       "place": {
         "type": "venue",
         "venueId": "lenovo-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "nc-state-mbb",
@@ -330,7 +341,7 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "NC State Women's Basketball vs. UNCW",
+      "title": "NC State vs. UNCW",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -338,7 +349,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "nc-state-wbb",
@@ -354,14 +367,16 @@
       "date": "2026-10-24",
       "start": "17:00",
       "kind": "game",
-      "title": "Duke Women's Soccer vs. NC State",
+      "title": "Duke vs. NC State",
       "place": {
         "type": "venue",
         "venueId": "koskinen-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -372,14 +387,16 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "NC State Men's Soccer vs. Stanford",
+      "title": "NC State vs. Stanford",
       "place": {
         "type": "venue",
         "venueId": "dail-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -480,14 +497,15 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Duke Volleyball vs. Cal",
+      "title": "Duke vs. Cal",
       "place": {
         "type": "venue",
         "venueId": "cameron-indoor-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -498,14 +516,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "North Carolina Central Women's Volleyball vs. Maryland Eastern Shore",
+      "title": "North Carolina Central vs. Maryland Eastern Shore",
       "place": {
         "type": "venue",
         "venueId": "mcdougald-mclendon-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -540,14 +560,16 @@
       "date": "2026-10-27",
       "start": "18:00",
       "kind": "game",
-      "title": "North Carolina Men's Soccer vs. William & Mary",
+      "title": "North Carolina vs. William & Mary",
       "place": {
         "type": "venue",
         "venueId": "dorrance-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -618,14 +640,15 @@
       "date": "2026-10-28",
       "start": "18:30",
       "kind": "game",
-      "title": "NC State Wrestling vs. Wrestle Offs",
+      "title": "NC State vs. Wrestle Offs",
       "place": {
         "type": "venue",
         "venueId": "reynolds-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "wrestling"
+        "sport": "wrestling",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -670,14 +693,16 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "North Carolina Women's Soccer vs. SMU",
+      "title": "North Carolina vs. SMU",
       "place": {
         "type": "venue",
         "venueId": "dorrance-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -688,14 +713,15 @@
       "date": "2026-10-30",
       "start": "18:30",
       "kind": "game",
-      "title": "Duke Volleyball vs. Boston College",
+      "title": "Duke vs. Boston College",
       "place": {
         "type": "venue",
         "venueId": "cameron-indoor-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -706,14 +732,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "North Carolina Men's Soccer vs. NC State",
+      "title": "North Carolina vs. NC State",
       "place": {
         "type": "venue",
         "venueId": "dorrance-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -724,14 +752,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "NC State Women's Volleyball vs. SMU",
+      "title": "NC State vs. SMU",
       "place": {
         "type": "venue",
         "venueId": "reynolds-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -790,14 +820,15 @@
       "date": "2026-10-30",
       "start": null,
       "kind": "game",
-      "title": "North Carolina Central Cross Country vs. MEAC Championships",
+      "title": "North Carolina Central vs. MEAC Championships",
       "place": {
         "type": "venue",
         "venueId": "first-horizon-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "track"
+        "sport": "cross country",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1003,14 +1034,15 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Duke Volleyball vs. Syracuse",
+      "title": "Duke vs. Syracuse",
       "place": {
         "type": "venue",
         "venueId": "cameron-indoor-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1021,14 +1053,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "NC State Women's Volleyball vs. Pitt",
+      "title": "NC State vs. Pitt",
       "place": {
         "type": "venue",
         "venueId": "reynolds-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1404,14 +1438,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "Duke Women's Soccer vs. Virginia",
+      "title": "Duke vs. Virginia",
       "place": {
         "type": "venue",
         "venueId": "koskinen-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

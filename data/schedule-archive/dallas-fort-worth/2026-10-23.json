@@ -372,14 +372,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "UT Arlington Women's Volleyball vs. North Alabama",
+      "title": "UT Arlington vs. North Alabama",
       "place": {
         "type": "venue",
         "venueId": "college-park-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -612,14 +614,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "SMU Men's Basketball vs. Texas A&M",
+      "title": "SMU vs. Texas A&M",
       "place": {
         "type": "venue",
         "venueId": "moody-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "smu-mbb",
@@ -732,7 +736,7 @@
       "date": "2026-10-26",
       "start": "19:00",
       "kind": "game",
-      "title": "North Texas Men's Basketball vs. Northwestern State IExhibition)",
+      "title": "North Texas vs. Northwestern State IExhibition)",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -740,7 +744,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "unt-mbb",
@@ -756,14 +762,16 @@
       "date": "2026-10-27",
       "start": "18:30",
       "kind": "game",
-      "title": "SMU Women's Basketball vs. UNT Dallas",
+      "title": "SMU vs. UNT Dallas",
       "place": {
         "type": "venue",
         "venueId": "moody-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "smu-wbb",
@@ -1200,14 +1208,16 @@
       "date": "2026-10-30",
       "start": "18:30",
       "kind": "game",
-      "title": "SMU Men's Soccer vs. Louisville",
+      "title": "SMU vs. Louisville",
       "place": {
         "type": "venue",
         "venueId": "washburne-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1992,14 +2002,16 @@
       "date": "2026-11-03",
       "start": "18:30",
       "kind": "game",
-      "title": "UT Arlington Women's Basketball vs. Sacramento State",
+      "title": "UT Arlington vs. Sacramento State",
       "place": {
         "type": "venue",
         "venueId": "college-park-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "uta-wbb",
@@ -2159,14 +2171,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "SMU Women's Soccer vs. Pittsburgh",
+      "title": "SMU vs. Pittsburgh",
       "place": {
         "type": "venue",
         "venueId": "washburne-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2177,14 +2191,16 @@
       "date": "2026-11-05",
       "start": "18:30",
       "kind": "game",
-      "title": "UT Arlington Women's Basketball vs. Lamar",
+      "title": "UT Arlington vs. Lamar",
       "place": {
         "type": "venue",
         "venueId": "college-park-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "uta-wbb",
@@ -2298,14 +2314,15 @@
       "date": "2026-11-06",
       "start": "12:00",
       "kind": "game",
-      "title": "SMU Volleyball vs. North Carolina",
+      "title": "SMU vs. North Carolina",
       "place": {
         "type": "venue",
         "venueId": "moody-coliseum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"

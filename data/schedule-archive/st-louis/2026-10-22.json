@@ -156,14 +156,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Lindenwood Women's Volleyball vs. SIUE",
+      "title": "Lindenwood vs. SIUE",
       "place": {
         "type": "venue",
         "venueId": "hyland-performance-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -174,14 +176,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Lindenwood Men's Soccer vs. Eastern Illinois University",
+      "title": "Lindenwood vs. Eastern Illinois University",
       "place": {
         "type": "venue",
         "venueId": "harlen-c-hunter-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -192,14 +196,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Lindenwood Men's Hockey vs. University of Nebraska at Omaha",
+      "title": "Lindenwood vs. University of Nebraska at Omaha",
       "place": {
         "type": "venue",
         "venueId": "centene-community-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lindenwood-mhockey",
@@ -215,14 +221,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Louis Men's Basketball vs. Bradley",
+      "title": "Saint Louis vs. Bradley",
       "place": {
         "type": "venue",
         "venueId": "chaifetz-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "slu-mbb",
@@ -426,14 +434,16 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "SIU Edwardsville Men's Basketball vs. Arkansas State",
+      "title": "SIU Edwardsville vs. Arkansas State",
       "place": {
         "type": "venue",
         "venueId": "siue-vadalabene-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "siue-mbb",
@@ -483,14 +493,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Lindenwood Men's Hockey vs. University of Nebraska at Omaha",
+      "title": "Lindenwood vs. University of Nebraska at Omaha",
       "place": {
         "type": "venue",
         "venueId": "centene-community-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lindenwood-mhockey",
@@ -506,14 +518,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Louis Men's Soccer vs. Loyola Chicago",
+      "title": "Saint Louis vs. Loyola Chicago",
       "place": {
         "type": "venue",
         "venueId": "hermann-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -678,14 +692,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Lindenwood Women's Soccer vs. SIUE",
+      "title": "Lindenwood vs. SIUE",
       "place": {
         "type": "venue",
         "venueId": "harlen-c-hunter-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -722,14 +738,16 @@
       "date": "2026-10-26",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Louis Women's Basketball vs. Bradley University",
+      "title": "Saint Louis vs. Bradley University",
       "place": {
         "type": "venue",
         "venueId": "chaifetz-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "slu-wbb",
@@ -907,14 +925,16 @@
       "date": "2026-10-29",
       "start": "19:15",
       "kind": "game",
-      "title": "Lindenwood Women's Hockey vs. Robert Morris University",
+      "title": "Lindenwood vs. Robert Morris University",
       "place": {
         "type": "venue",
         "venueId": "centene-community-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "lindenwood-whockey",
@@ -977,14 +997,16 @@
       "date": "2026-10-30",
       "start": "12:00",
       "kind": "game",
-      "title": "Lindenwood Women's Hockey vs. Robert Morris University",
+      "title": "Lindenwood vs. Robert Morris University",
       "place": {
         "type": "venue",
         "venueId": "centene-community-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "lindenwood-whockey",
@@ -1145,14 +1167,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Saint Louis Women's Soccer vs. Rhode Island",
+      "title": "Saint Louis vs. Rhode Island",
       "place": {
         "type": "venue",
         "venueId": "hermann-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1163,14 +1187,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Lindenwood Women's Soccer vs. Western Illinois University",
+      "title": "Lindenwood vs. Western Illinois University",
       "place": {
         "type": "venue",
         "venueId": "harlen-c-hunter-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1181,14 +1207,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "SIU Edwardsville Men's Soccer vs. Eastern Illinois",
+      "title": "SIU Edwardsville vs. Eastern Illinois",
       "place": {
         "type": "venue",
         "venueId": "ralph-korte-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1199,14 +1227,16 @@
       "date": "2026-11-02",
       "start": "18:00",
       "kind": "game",
-      "title": "SIU Edwardsville Men's Basketball vs. Eureka College",
+      "title": "SIU Edwardsville vs. Eureka College",
       "place": {
         "type": "venue",
         "venueId": "siue-vadalabene-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "siue-mbb",
@@ -1256,14 +1286,16 @@
       "date": "2026-11-03",
       "start": "18:00",
       "kind": "game",
-      "title": "SIU Edwardsville Women's Basketball vs. Judson",
+      "title": "SIU Edwardsville vs. Judson",
       "place": {
         "type": "venue",
         "venueId": "siue-vadalabene-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "siue-wbb",
@@ -1305,14 +1337,16 @@
       "date": "2026-11-04",
       "start": "18:00",
       "kind": "game",
-      "title": "SIU Edwardsville Men's Basketball vs. Concordia Chicago",
+      "title": "SIU Edwardsville vs. Concordia Chicago",
       "place": {
         "type": "venue",
         "venueId": "siue-vadalabene-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "siue-mbb",
@@ -1354,14 +1388,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "Lindenwood Men's Basketball vs. Central Bible University",
+      "title": "Lindenwood vs. Central Bible University",
       "place": {
         "type": "venue",
         "venueId": "hyland-performance-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lindenwood-mbb",

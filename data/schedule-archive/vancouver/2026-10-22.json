@@ -88,14 +88,16 @@
       "date": "2026-10-23",
       "start": "17:30",
       "kind": "game",
-      "title": "UBC Men's Volleyball vs. University of Calgary",
+      "title": "UBC vs. University of Calgary",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -203,14 +205,16 @@
       "date": "2026-10-24",
       "start": "16:00",
       "kind": "game",
-      "title": "UBC Men's Volleyball vs. University of Calgary",
+      "title": "UBC vs. University of Calgary",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -620,14 +624,16 @@
       "date": "2026-10-29",
       "start": "17:30",
       "kind": "game",
-      "title": "UBC Women's Basketball vs. Trinity Western University",
+      "title": "UBC vs. Trinity Western University",
       "place": {
         "type": "venue",
         "venueId": "war-memorial-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "ubc-wbb",
@@ -643,14 +649,15 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "UBC Football vs. University of Saskatchewan",
+      "title": "UBC vs. University of Saskatchewan",
       "place": {
         "type": "venue",
         "venueId": "thunderbird-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "ubc-football",
@@ -698,14 +705,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "UBC Men's Hockey vs. University of Saskatchewan",
+      "title": "UBC vs. University of Saskatchewan",
       "place": {
         "type": "venue",
         "venueId": "thunderbird-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "ubc-hockey",
@@ -825,14 +834,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "UBC Men's Hockey vs. University of Saskatchewan",
+      "title": "UBC vs. University of Saskatchewan",
       "place": {
         "type": "venue",
         "venueId": "thunderbird-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "ubc-hockey",

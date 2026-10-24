@@ -55,14 +55,16 @@
       "date": "2026-10-22",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas State Women's Soccer vs. Gonzaga",
+      "title": "Texas State vs. Gonzaga",
       "place": {
         "type": "venue",
         "venueId": "bobcat-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -73,14 +75,15 @@
       "date": "2026-10-22",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas State Softball vs. UTSA",
+      "title": "Texas State vs. UTSA",
       "place": {
         "type": "venue",
         "venueId": "bobcat-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "texas-state-softball",
@@ -174,14 +177,15 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Texas State Softball vs. St. Mary's",
+      "title": "Texas State vs. St. Mary's",
       "place": {
         "type": "venue",
         "venueId": "bobcat-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "texas-state-softball",
@@ -554,14 +558,15 @@
       "date": "2026-10-27",
       "start": "18:00",
       "kind": "game",
-      "title": "Texas Softball vs. McLennan CC",
+      "title": "Texas vs. McLennan CC",
       "place": {
         "type": "venue",
         "venueId": "mccombs-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "texas-softball",
@@ -627,14 +632,15 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas Volleyball vs. Georgia",
+      "title": "Texas vs. Georgia",
       "place": {
         "type": "venue",
         "venueId": "gregory-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "teams": {
         "home": "texas-volleyball",
@@ -735,14 +741,15 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas Softball vs. UTSA",
+      "title": "Texas vs. UTSA",
       "place": {
         "type": "venue",
         "venueId": "mccombs-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "texas-softball",
@@ -758,7 +765,7 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas Women's Basketball vs. Eastern New Mexico",
+      "title": "Texas vs. Eastern New Mexico",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -766,7 +773,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "texas-wbb",
@@ -782,7 +791,7 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas State Women's Basketball vs. UTRGV",
+      "title": "Texas State vs. UTRGV",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -790,7 +799,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "texas-state-wbb",
@@ -827,14 +838,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Texas State Women's Soccer vs. Boise State",
+      "title": "Texas State vs. Boise State",
       "place": {
         "type": "venue",
         "venueId": "bobcat-soccer-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -900,14 +913,15 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "Texas State Volleyball vs. Boise State",
+      "title": "Texas State vs. Boise State",
       "place": {
         "type": "venue",
         "venueId": "strahan-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -975,14 +989,15 @@
       "date": "2026-11-01",
       "start": "12:00",
       "kind": "game",
-      "title": "Texas Volleyball vs. Texas A&M",
+      "title": "Texas vs. Texas A&M",
       "place": {
         "type": "venue",
         "venueId": "gregory-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "teams": {
         "home": "texas-volleyball",
@@ -998,14 +1013,15 @@
       "date": "2026-11-01",
       "start": "12:00",
       "kind": "game",
-      "title": "Texas Soccer vs. Auburn",
+      "title": "Texas vs. Auburn",
       "place": {
         "type": "venue",
         "venueId": "myers-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college"
       },
       "teams": {
         "home": "texas-soccer",

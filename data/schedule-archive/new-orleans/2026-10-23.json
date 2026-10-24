@@ -80,14 +80,16 @@
       "date": "2026-10-23",
       "start": "18:30",
       "kind": "game",
-      "title": "Tulane Women's Volleyball vs. Tulsa",
+      "title": "Tulane vs. Tulsa",
       "place": {
         "type": "venue",
         "venueId": "devlin-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -122,14 +124,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "New Orleans Volleyball vs. UTRGV",
+      "title": "New Orleans vs. UTRGV",
       "place": {
         "type": "venue",
         "venueId": "human-performance-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -347,14 +350,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Tulane Women's Volleyball vs. East Carolina",
+      "title": "Tulane vs. East Carolina",
       "place": {
         "type": "venue",
         "venueId": "devlin-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -438,7 +443,7 @@
       "date": "2026-10-27",
       "start": "18:30",
       "kind": "game",
-      "title": "Tulane Women's Basketball vs. Loyola (Exhibition)",
+      "title": "Tulane vs. Loyola (Exhibition)",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -446,7 +451,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "tulane-wbb",
@@ -515,7 +522,7 @@
       "date": "2026-10-28",
       "start": "18:30",
       "kind": "game",
-      "title": "Tulane Men's Basketball vs. Spring Hill College (Ala.)",
+      "title": "Tulane vs. Spring Hill College (Ala.)",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -523,7 +530,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "tulane-mbb",
@@ -1349,14 +1358,15 @@
       "date": "2026-11-05",
       "start": "18:30",
       "kind": "game",
-      "title": "New Orleans Volleyball vs. Southeastern",
+      "title": "New Orleans vs. Southeastern",
       "place": {
         "type": "venue",
         "venueId": "human-performance-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1438,14 +1448,16 @@
       "date": "2026-11-06",
       "start": "18:30",
       "kind": "game",
-      "title": "Tulane Women's Volleyball vs. Memphis",
+      "title": "Tulane vs. Memphis",
       "place": {
         "type": "venue",
         "venueId": "devlin-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

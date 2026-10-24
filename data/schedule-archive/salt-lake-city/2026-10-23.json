@@ -229,14 +229,15 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Utah Volleyball vs. Colorado",
+      "title": "Utah vs. Colorado",
       "place": {
         "type": "venue",
         "venueId": "jon-m-huntsman-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -247,14 +248,15 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Utah Baseball vs. Colorado Mesa",
+      "title": "Utah vs. Colorado Mesa",
       "place": {
         "type": "venue",
         "venueId": "utah-first-ballpark"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "utah-baseball",
@@ -572,14 +574,15 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Utah Baseball vs. Salt Lake Community College",
+      "title": "Utah vs. Salt Lake Community College",
       "place": {
         "type": "venue",
         "venueId": "utah-first-ballpark"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "utah-baseball",

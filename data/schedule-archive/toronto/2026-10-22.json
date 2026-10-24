@@ -141,14 +141,16 @@
       "date": "2026-10-22",
       "start": "19:30",
       "kind": "game",
-      "title": "Toronto Men's Ice Hockey vs. Wilfrid Laurier University",
+      "title": "Toronto vs. Wilfrid Laurier University",
       "place": {
         "type": "venue",
         "venueId": "uoft-varsity-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "varsity-blues-hockey",
@@ -209,14 +211,16 @@
       "date": "2026-10-23",
       "start": "11:15",
       "kind": "game",
-      "title": "TMU Women's Hockey vs. Toronto",
+      "title": "TMU vs. Toronto",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "tmu-whockey",
@@ -232,14 +236,16 @@
       "date": "2026-10-23",
       "start": "17:30",
       "kind": "game",
-      "title": "Toronto Women's Volleyball vs. X-McMaster University",
+      "title": "Toronto vs. X-McMaster University",
       "place": {
         "type": "venue",
         "venueId": "kimel-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -250,14 +256,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "TMU Men's Volleyball vs. York",
+      "title": "TMU vs. York",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -268,14 +276,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Toronto Men's Ice Hockey vs. Toronto Metropolitan University",
+      "title": "Toronto vs. Toronto Metropolitan University",
       "place": {
         "type": "venue",
         "venueId": "uoft-varsity-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "varsity-blues-hockey",
@@ -291,14 +301,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "York Men's Hockey vs. Waterloo Warriors",
+      "title": "York vs. Waterloo Warriors",
       "place": {
         "type": "venue",
         "venueId": "canlan-ice-sports-york"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "york-lions-mhockey",
@@ -429,14 +441,16 @@
       "date": "2026-10-23",
       "start": "20:00",
       "kind": "game",
-      "title": "York Men's Basketball vs. Toronto Varsity Blues",
+      "title": "York vs. Toronto Varsity Blues",
       "place": {
         "type": "venue",
         "venueId": "tait-mckenzie-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "york-lions-mbb",
@@ -549,14 +563,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "York Football vs. Waterloo Warriors",
+      "title": "York vs. Waterloo Warriors",
       "place": {
         "type": "venue",
         "venueId": "york-lions-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "york-lions-football",
@@ -604,14 +619,16 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "Toronto Men's Rugby vs. Wilfrid Laurier University",
+      "title": "Toronto vs. Wilfrid Laurier University",
       "place": {
         "type": "venue",
         "venueId": "uoft-varsity-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "other"
+        "sport": "rugby",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -622,14 +639,16 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "Toronto Women's Basketball vs. Wilfrid Laurier University",
+      "title": "Toronto vs. Wilfrid Laurier University",
       "place": {
         "type": "venue",
         "venueId": "kimel-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "varsity-blues-wbb",
@@ -645,14 +664,16 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "York Women's Basketball vs. Nipissing Lakers",
+      "title": "York vs. Nipissing Lakers",
       "place": {
         "type": "venue",
         "venueId": "tait-mckenzie-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "york-lions-wbb",
@@ -693,14 +714,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "York Men's Hockey vs. Laurier Golden Hawks",
+      "title": "York vs. Laurier Golden Hawks",
       "place": {
         "type": "venue",
         "venueId": "canlan-ice-sports-york"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "york-lions-mhockey",
@@ -798,14 +821,16 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "York Women's Volleyball vs. Trent Excalibur",
+      "title": "York vs. Trent Excalibur",
       "place": {
         "type": "venue",
         "venueId": "tait-mckenzie-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1354,14 +1379,16 @@
       "date": "2026-10-29",
       "start": "18:15",
       "kind": "game",
-      "title": "TMU Men's Hockey vs. Lakehead",
+      "title": "TMU vs. Lakehead",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "tmu-mhockey",
@@ -1429,14 +1456,16 @@
       "date": "2026-10-30",
       "start": "17:00",
       "kind": "game",
-      "title": "TMU Women's Volleyball vs. Lakehead",
+      "title": "TMU vs. Lakehead",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1447,14 +1476,16 @@
       "date": "2026-10-30",
       "start": "17:30",
       "kind": "game",
-      "title": "Toronto Women's Volleyball vs. Royal Military College of Canada",
+      "title": "Toronto vs. Royal Military College of Canada",
       "place": {
         "type": "venue",
         "venueId": "kimel-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1465,14 +1496,16 @@
       "date": "2026-10-30",
       "start": "18:15",
       "kind": "game",
-      "title": "TMU Men's Hockey vs. Lakehead",
+      "title": "TMU vs. Lakehead",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "tmu-mhockey",
@@ -1520,14 +1553,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "York Women's Hockey vs. Ontario Tech Ridgebacks",
+      "title": "York vs. Ontario Tech Ridgebacks",
       "place": {
         "type": "venue",
         "venueId": "canlan-ice-sports-york"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "york-lions-whockey",
@@ -1746,14 +1781,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "TMU Women's Volleyball vs. Lakehead",
+      "title": "TMU vs. Lakehead",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1764,14 +1801,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Toronto Women's Volleyball vs. Royal Military College of Canada",
+      "title": "Toronto vs. Royal Military College of Canada",
       "place": {
         "type": "venue",
         "venueId": "kimel-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1782,14 +1821,16 @@
       "date": "2026-10-31",
       "start": "16:00",
       "kind": "game",
-      "title": "Toronto Men's Ice Hockey vs. University of Guelph",
+      "title": "Toronto vs. University of Guelph",
       "place": {
         "type": "venue",
         "venueId": "uoft-varsity-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "varsity-blues-hockey",
@@ -1805,14 +1846,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "York Women's Hockey vs. Queen's Gaels",
+      "title": "York vs. Queen's Gaels",
       "place": {
         "type": "venue",
         "venueId": "canlan-ice-sports-york"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "york-lions-whockey",
@@ -2024,14 +2067,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Toronto Men's Lacrosse vs. Wilfrid Laurier University",
+      "title": "Toronto vs. Wilfrid Laurier University",
       "place": {
         "type": "venue",
         "venueId": "uoft-varsity-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2310,14 +2355,16 @@
       "date": "2026-11-04",
       "start": "18:00",
       "kind": "game",
-      "title": "Toronto Women's Basketball vs. Toronto Metropolitan University",
+      "title": "Toronto vs. Toronto Metropolitan University",
       "place": {
         "type": "venue",
         "venueId": "kimel-field-house"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "varsity-blues-wbb",
@@ -2468,14 +2515,16 @@
       "date": "2026-11-05",
       "start": "18:15",
       "kind": "game",
-      "title": "TMU Women's Hockey vs. Windsor",
+      "title": "TMU vs. Windsor",
       "place": {
         "type": "venue",
         "venueId": "mattamy-athletic-centre"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "tmu-whockey",

@@ -55,14 +55,15 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Chicago State Volleyball vs. Le Moyne College",
+      "title": "Chicago State vs. Le Moyne College",
       "place": {
         "type": "venue",
         "venueId": "jacoby-dickens-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -73,14 +74,15 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "UIC Volleyball vs. Indiana State",
+      "title": "UIC vs. Indiana State",
       "place": {
         "type": "venue",
         "venueId": "credit-union-1-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -148,7 +150,7 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "DePaul Men's Basketball vs. Notre Dame",
+      "title": "DePaul vs. Notre Dame",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -156,7 +158,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "depaul-mbb",
@@ -259,14 +263,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Chicago State Volleyball vs. Le Moyne College",
+      "title": "Chicago State vs. Le Moyne College",
       "place": {
         "type": "venue",
         "venueId": "jacoby-dickens-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -277,14 +282,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "DePaul Men's Soccer vs. Marquette",
+      "title": "DePaul vs. Marquette",
       "place": {
         "type": "venue",
         "venueId": "wish-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -295,14 +302,16 @@
       "date": "2026-10-24",
       "start": "17:00",
       "kind": "game",
-      "title": "DePaul Women's Volleyball vs. Xavier",
+      "title": "DePaul vs. Xavier",
       "place": {
         "type": "venue",
         "venueId": "mcgrath-phillips-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -380,14 +389,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "UIC Men's Soccer vs. Evansville",
+      "title": "UIC vs. Evansville",
       "place": {
         "type": "venue",
         "venueId": "flames-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -477,14 +488,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "UIC Women's Soccer vs. Northern Iowa",
+      "title": "UIC vs. Northern Iowa",
       "place": {
         "type": "venue",
         "venueId": "flames-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -529,14 +542,16 @@
       "date": "2026-10-25",
       "start": "15:00",
       "kind": "game",
-      "title": "DePaul Women's Volleyball vs. Butler",
+      "title": "DePaul vs. Butler",
       "place": {
         "type": "venue",
         "venueId": "mcgrath-phillips-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -578,7 +593,7 @@
       "date": "2026-10-26",
       "start": "18:00",
       "kind": "game",
-      "title": "Loyola Chicago Men's Basketball vs. Calumet College",
+      "title": "Loyola Chicago vs. Calumet College",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -586,7 +601,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "loyola-chicago-mbb",
@@ -634,14 +651,16 @@
       "date": "2026-10-27",
       "start": "18:30",
       "kind": "game",
-      "title": "Loyola Chicago Women's Basketball vs. Lewis",
+      "title": "Loyola Chicago vs. Lewis",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "loyola-chicago-wbb",
@@ -720,7 +739,7 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "Chicago State Men's Basketball vs. Roosevelt University",
+      "title": "Chicago State vs. Roosevelt University",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -728,7 +747,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "chicago-state-mbb",
@@ -838,14 +859,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Loyola Chicago Women's Volleyball vs. Fordham",
+      "title": "Loyola Chicago vs. Fordham",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -856,14 +879,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "DePaul Women's Volleyball vs. Creighton",
+      "title": "DePaul vs. Creighton",
       "place": {
         "type": "venue",
         "venueId": "mcgrath-phillips-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -934,14 +959,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "DePaul Women's Soccer vs. St. John's",
+      "title": "DePaul vs. St. John's",
       "place": {
         "type": "venue",
         "venueId": "wish-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -952,14 +979,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Loyola Chicago Women's Volleyball vs. Fordham",
+      "title": "Loyola Chicago vs. Fordham",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -970,14 +999,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Chicago State Football vs. University of Fort Lauderdale",
+      "title": "Chicago State vs. University of Fort Lauderdale",
       "place": {
         "type": "venue",
         "venueId": "seatgeek-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1380,14 +1410,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Loyola Chicago Men's Basketball vs. The Citadel",
+      "title": "Loyola Chicago vs. The Citadel",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "loyola-chicago-mbb",
@@ -1471,14 +1503,16 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "Loyola Chicago Women's Basketball vs. Wright State",
+      "title": "Loyola Chicago vs. Wright State",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "loyola-chicago-wbb",
@@ -1494,14 +1528,16 @@
       "date": "2026-11-04",
       "start": "18:00",
       "kind": "game",
-      "title": "UIC Men's Soccer vs. Bowling Green",
+      "title": "UIC vs. Bowling Green",
       "place": {
         "type": "venue",
         "venueId": "flames-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1572,14 +1608,16 @@
       "date": "2026-11-05",
       "start": "13:00",
       "kind": "game",
-      "title": "UIC Women's Soccer vs. Evansville",
+      "title": "UIC vs. Evansville",
       "place": {
         "type": "venue",
         "venueId": "flames-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1590,14 +1628,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "Chicago State Women's Basketball vs. Mississippi Valley State",
+      "title": "Chicago State vs. Mississippi Valley State",
       "place": {
         "type": "venue",
         "venueId": "jones-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "chicago-state-wbb",
@@ -1646,14 +1686,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Loyola Chicago Men's Basketball vs. West Georgia",
+      "title": "Loyola Chicago vs. West Georgia",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "loyola-chicago-mbb",
@@ -1818,14 +1860,15 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "Chicago State Volleyball vs. Mercyhurst University",
+      "title": "Chicago State vs. Mercyhurst University",
       "place": {
         "type": "venue",
         "venueId": "jacoby-dickens-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1836,14 +1879,16 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "Loyola Chicago Women's Volleyball vs. George Mason",
+      "title": "Loyola Chicago vs. George Mason",
       "place": {
         "type": "venue",
         "venueId": "gentile-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

@@ -85,14 +85,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "UC San Diego Women's Volleyball vs. UC Irvine",
+      "title": "UC San Diego vs. UC Irvine",
       "place": {
         "type": "venue",
         "venueId": "liontree-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -213,14 +215,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "San Diego Women's Soccer vs. Portland",
+      "title": "San Diego vs. Portland",
       "place": {
         "type": "venue",
         "venueId": "torero-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -398,14 +402,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "San Diego Men's Basketball vs. Colorado State",
+      "title": "San Diego vs. Colorado State",
       "place": {
         "type": "venue",
         "venueId": "jenny-craig-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "usd-mbb",
@@ -623,14 +629,16 @@
       "date": "2026-10-28",
       "start": "16:00",
       "kind": "game",
-      "title": "San Diego Women's Soccer vs. San Francisco",
+      "title": "San Diego vs. San Francisco",
       "place": {
         "type": "venue",
         "venueId": "torero-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -665,14 +673,16 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "San Diego Women's Volleyball vs. San Francisco",
+      "title": "San Diego vs. San Francisco",
       "place": {
         "type": "venue",
         "venueId": "jenny-craig-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -707,14 +717,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "UC San Diego Women's Volleyball vs. UC Santa Barbara",
+      "title": "UC San Diego vs. UC Santa Barbara",
       "place": {
         "type": "venue",
         "venueId": "liontree-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -841,14 +853,16 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "San Diego Women's Volleyball vs. Santa Clara",
+      "title": "San Diego vs. Santa Clara",
       "place": {
         "type": "venue",
         "venueId": "jenny-craig-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -883,14 +897,15 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "San Diego Football vs. Marist",
+      "title": "San Diego vs. Marist",
       "place": {
         "type": "venue",
         "venueId": "torero-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -956,14 +971,16 @@
       "date": "2026-10-31",
       "start": "17:00",
       "kind": "game",
-      "title": "UC San Diego Women's Volleyball vs. Cal Poly",
+      "title": "UC San Diego vs. Cal Poly",
       "place": {
         "type": "venue",
         "venueId": "liontree-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1096,14 +1113,16 @@
       "date": "2026-11-02",
       "start": "18:00",
       "kind": "game",
-      "title": "UC San Diego Men's Basketball vs. Whittier",
+      "title": "UC San Diego vs. Whittier",
       "place": {
         "type": "venue",
         "venueId": "liontree-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "ucsd-mbb",
@@ -1119,14 +1138,16 @@
       "date": "2026-11-02",
       "start": "18:30",
       "kind": "game",
-      "title": "San Diego Men's Basketball vs. Biola",
+      "title": "San Diego vs. Biola",
       "place": {
         "type": "venue",
         "venueId": "jenny-craig-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "usd-mbb",

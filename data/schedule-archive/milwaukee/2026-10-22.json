@@ -138,14 +138,15 @@
       "date": "2026-10-23",
       "start": "16:00",
       "kind": "game",
-      "title": "Milwaukee Volleyball vs. IU Indy",
+      "title": "Milwaukee vs. IU Indy",
       "place": {
         "type": "venue",
         "venueId": "klotsche-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "teams": {
         "home": "uwm-volleyball",
@@ -320,14 +321,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Marquette Women's Volleyball vs. Butler",
+      "title": "Marquette vs. Butler",
       "place": {
         "type": "venue",
         "venueId": "al-mcguire-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "marquette-volleyball",
@@ -343,14 +346,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Marquette Women's Soccer vs. UConn",
+      "title": "Marquette vs. UConn",
       "place": {
         "type": "venue",
         "venueId": "valley-fields"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -361,14 +366,15 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Milwaukee Volleyball vs. Purdue Fort Wayne",
+      "title": "Milwaukee vs. Purdue Fort Wayne",
       "place": {
         "type": "venue",
         "venueId": "klotsche-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "teams": {
         "home": "uwm-volleyball",
@@ -384,14 +390,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Milwaukee Men's Soccer vs. Purdue Fort Wayne",
+      "title": "Milwaukee vs. Purdue Fort Wayne",
       "place": {
         "type": "venue",
         "venueId": "engelmann-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -576,7 +584,7 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Marquette Men's Basketball vs. Michigan State",
+      "title": "Marquette vs. Michigan State",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -584,7 +592,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "marquette-mbb",
@@ -656,14 +666,16 @@
       "date": "2026-10-25",
       "start": "15:00",
       "kind": "game",
-      "title": "Marquette Women's Volleyball vs. Xavier",
+      "title": "Marquette vs. Xavier",
       "place": {
         "type": "venue",
         "venueId": "al-mcguire-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "marquette-volleyball",
@@ -863,7 +875,7 @@
       "date": "2026-10-28",
       "start": "17:00",
       "kind": "game",
-      "title": "Milwaukee Men's Basketball vs. Luther",
+      "title": "Milwaukee vs. Luther",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -871,7 +883,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uwm-mbb",
@@ -1002,14 +1016,16 @@
       "date": "2026-10-29",
       "start": "18:00",
       "kind": "game",
-      "title": "Marquette Women's Volleyball vs. Creighton",
+      "title": "Marquette vs. Creighton",
       "place": {
         "type": "venue",
         "venueId": "al-mcguire-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "marquette-volleyball",
@@ -1025,7 +1041,7 @@
       "date": "2026-10-29",
       "start": "18:00",
       "kind": "game",
-      "title": "Milwaukee Women's Basketball vs. Benedictine",
+      "title": "Milwaukee vs. Benedictine",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -1033,7 +1049,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "uwm-wbb",
@@ -1270,14 +1288,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Marquette Women's Soccer vs. Villanova",
+      "title": "Marquette vs. Villanova",
       "place": {
         "type": "venue",
         "venueId": "valley-fields"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1288,14 +1308,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Milwaukee Women's Soccer vs. Green Bay",
+      "title": "Milwaukee vs. Green Bay",
       "place": {
         "type": "venue",
         "venueId": "engelmann-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1389,14 +1411,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Marquette Women's Volleyball vs. DePaul",
+      "title": "Marquette vs. DePaul",
       "place": {
         "type": "venue",
         "venueId": "al-mcguire-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "marquette-volleyball",
@@ -1498,14 +1522,16 @@
       "date": "2026-11-03",
       "start": "13:00",
       "kind": "game",
-      "title": "Milwaukee Men's Soccer vs. Green Bay",
+      "title": "Milwaukee vs. Green Bay",
       "place": {
         "type": "venue",
         "venueId": "engelmann-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

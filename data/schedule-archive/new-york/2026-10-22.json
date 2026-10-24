@@ -489,14 +489,16 @@
       "date": "2026-10-23",
       "start": "15:00",
       "kind": "game",
-      "title": "LIU Women's Ice Hockey vs. Delaware",
+      "title": "LIU vs. Delaware",
       "place": {
         "type": "venue",
         "venueId": "northwell-health-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "liu-whockey",
@@ -533,14 +535,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Rutgers Men's Soccer vs. Michigan",
+      "title": "Rutgers vs. Michigan",
       "place": {
         "type": "venue",
         "venueId": "yurcak-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -707,14 +711,16 @@
       "date": "2026-10-23",
       "start": "19:30",
       "kind": "game",
-      "title": "LIU Men's Ice Hockey vs. USA National Team Development Program",
+      "title": "LIU vs. USA National Team Development Program",
       "place": {
         "type": "venue",
         "venueId": "northwell-health-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "liu-mhockey",
@@ -1066,14 +1072,15 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "LIU Football vs. Stonehill",
+      "title": "LIU vs. Stonehill",
       "place": {
         "type": "venue",
         "venueId": "shark-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1084,14 +1091,15 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Rutgers Baseball vs. Monmouth",
+      "title": "Rutgers vs. Monmouth",
       "place": {
         "type": "venue",
         "venueId": "bainton-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1102,14 +1110,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Rutgers Men's Lacrosse vs. Syracuse University",
+      "title": "Rutgers vs. Syracuse University",
       "place": {
         "type": "venue",
         "venueId": "shi-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1120,14 +1130,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Wagner Men's Water Polo vs. Fordham",
+      "title": "Wagner vs. Fordham",
       "place": {
         "type": "venue",
         "venueId": "spiro-sports-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "water polo"
+        "sport": "water polo",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1273,14 +1285,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "LIU Women's Ice Hockey vs. Delaware",
+      "title": "LIU vs. Delaware",
       "place": {
         "type": "venue",
         "venueId": "northwell-health-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "liu-whockey",
@@ -1461,14 +1475,15 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "Columbia Volleyball vs. Cornell",
+      "title": "Columbia vs. Cornell",
       "place": {
         "type": "venue",
         "venueId": "levien-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1479,14 +1494,16 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "Seton Hall Men's Soccer vs. St. John's",
+      "title": "Seton Hall vs. St. John's",
       "place": {
         "type": "venue",
         "venueId": "owen-t-carroll-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1549,14 +1566,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Columbia Men's Soccer vs. Yale",
+      "title": "Columbia vs. Yale",
       "place": {
         "type": "venue",
         "venueId": "commisso-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1567,14 +1586,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Rutgers Women's Volleyball vs. Illinois",
+      "title": "Rutgers vs. Illinois",
       "place": {
         "type": "venue",
         "venueId": "jersey-mikes-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2187,14 +2208,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Stony Brook Women's Soccer vs. Northeastern",
+      "title": "Stony Brook vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "lavalle-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2949,14 +2972,15 @@
       "date": "2026-10-27",
       "start": "17:00",
       "kind": "game",
-      "title": "Iona Volleyball vs. Manhattan",
+      "title": "Iona vs. Manhattan",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2967,14 +2991,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Columbia Men's Soccer vs. Hofstra",
+      "title": "Columbia vs. Hofstra",
       "place": {
         "type": "venue",
         "venueId": "commisso-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2985,14 +3011,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Seton Hall Men's Soccer vs. DePaul",
+      "title": "Seton Hall vs. DePaul",
       "place": {
         "type": "venue",
         "venueId": "owen-t-carroll-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -3362,14 +3390,16 @@
       "date": "2026-10-28",
       "start": "17:00",
       "kind": "game",
-      "title": "Fordham Women's Volleyball vs. Rhode Island",
+      "title": "Fordham vs. Rhode Island",
       "place": {
         "type": "venue",
         "venueId": "rose-hill-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -3380,14 +3410,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "Seton Hall Women's Soccer vs. Marquette",
+      "title": "Seton Hall vs. Marquette",
       "place": {
         "type": "venue",
         "venueId": "owen-t-carroll-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -3783,14 +3815,16 @@
       "date": "2026-10-29",
       "start": "18:31",
       "kind": "game",
-      "title": "Stony Brook Women's Basketball vs. Queens College",
+      "title": "Stony Brook vs. Queens College",
       "place": {
         "type": "venue",
         "venueId": "island-federal-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "stony-brook-wbb",
@@ -3806,14 +3840,16 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "Seton Hall Women's Basketball vs. Jefferson",
+      "title": "Seton Hall vs. Jefferson",
       "place": {
         "type": "venue",
         "venueId": "walsh-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "seton-hall-wbb",
@@ -4254,14 +4290,16 @@
       "date": "2026-10-30",
       "start": "15:00",
       "kind": "game",
-      "title": "LIU Women's Ice Hockey vs. Saint Michael's",
+      "title": "LIU vs. Saint Michael's",
       "place": {
         "type": "venue",
         "venueId": "northwell-health-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "liu-whockey",
@@ -4277,14 +4315,15 @@
       "date": "2026-10-30",
       "start": "17:00",
       "kind": "game",
-      "title": "Iona Volleyball vs. Siena",
+      "title": "Iona vs. Siena",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4295,14 +4334,16 @@
       "date": "2026-10-30",
       "start": "17:00",
       "kind": "game",
-      "title": "LIU Men's Swimming & Diving vs. Saint Peter's University",
+      "title": "LIU vs. Saint Peter's University",
       "place": {
         "type": "venue",
         "venueId": "steinberg-wellness-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "swimming"
+        "sport": "swimming",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4334,14 +4375,16 @@
       "date": "2026-10-30",
       "start": "17:30",
       "kind": "game",
-      "title": "Stony Brook Women's Volleyball vs. UNCW",
+      "title": "Stony Brook vs. UNCW",
       "place": {
         "type": "venue",
         "venueId": "pritchard-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4352,14 +4395,15 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Columbia Volleyball vs. Penn",
+      "title": "Columbia vs. Penn",
       "place": {
         "type": "venue",
         "venueId": "levien-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4370,14 +4414,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "LIU Women's Volleyball vs. Central Connecticut State",
+      "title": "LIU vs. Central Connecticut State",
       "place": {
         "type": "venue",
         "venueId": "steinberg-wellness-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4388,14 +4434,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Stony Brook Men's Soccer vs. Northeastern",
+      "title": "Stony Brook vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "lavalle-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4435,14 +4483,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Rutgers Women's Soccer vs. Maryland",
+      "title": "Rutgers vs. Maryland",
       "place": {
         "type": "venue",
         "venueId": "yurcak-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4453,7 +4503,7 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Rutgers Women's Basketball vs. Caldwell",
+      "title": "Rutgers vs. Caldwell",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -4461,7 +4511,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "rutgers-wbb",
@@ -5234,14 +5286,16 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "Iona Women's Soccer vs. Sacred Heart",
+      "title": "Iona vs. Sacred Heart",
       "place": {
         "type": "venue",
         "venueId": "mazzella-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5276,14 +5330,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "LIU Women's Volleyball vs. Central Connecticut State",
+      "title": "LIU vs. Central Connecticut State",
       "place": {
         "type": "venue",
         "venueId": "steinberg-wellness-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5294,14 +5350,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Seton Hall Women's Soccer vs. Creighton",
+      "title": "Seton Hall vs. Creighton",
       "place": {
         "type": "venue",
         "venueId": "owen-t-carroll-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5312,14 +5370,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Stony Brook Women's Volleyball vs. UNCW",
+      "title": "Stony Brook vs. UNCW",
       "place": {
         "type": "venue",
         "venueId": "pritchard-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5418,14 +5478,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Iona Volleyball vs. Marist",
+      "title": "Iona vs. Marist",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5436,14 +5497,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "LIU Women's Ice Hockey vs. Saint Michael's",
+      "title": "LIU vs. Saint Michael's",
       "place": {
         "type": "venue",
         "venueId": "northwell-health-ice-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "liu-whockey",
@@ -5602,14 +5665,16 @@
       "date": "2026-10-31",
       "start": "17:00",
       "kind": "game",
-      "title": "Fordham Men's Soccer vs. Saint Joseph's University",
+      "title": "Fordham vs. Saint Joseph's University",
       "place": {
         "type": "venue",
         "venueId": "coffey-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5620,14 +5685,15 @@
       "date": "2026-10-31",
       "start": "17:00",
       "kind": "game",
-      "title": "Columbia Volleyball vs. Princeton",
+      "title": "Columbia vs. Princeton",
       "place": {
         "type": "venue",
         "venueId": "levien-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5709,14 +5775,16 @@
       "date": "2026-10-31",
       "start": "18:00",
       "kind": "game",
-      "title": "Columbia Women's Soccer vs. Princeton",
+      "title": "Columbia vs. Princeton",
       "place": {
         "type": "venue",
         "venueId": "commisso-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -6239,14 +6307,15 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Rutgers Baseball vs. Saint Joseph's",
+      "title": "Rutgers vs. Saint Joseph's",
       "place": {
         "type": "venue",
         "venueId": "bainton-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -6257,14 +6326,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Wagner Women's Soccer vs. Le Moyne",
+      "title": "Wagner vs. Le Moyne",
       "place": {
         "type": "venue",
         "venueId": "wagner-college-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -6714,14 +6785,16 @@
       "date": "2026-11-02",
       "start": "11:00",
       "kind": "game",
-      "title": "Columbia Women's Basketball vs. Davidson",
+      "title": "Columbia vs. Davidson",
       "place": {
         "type": "venue",
         "venueId": "levien-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "columbia-wbb",
@@ -6737,14 +6810,16 @@
       "date": "2026-11-02",
       "start": "11:00",
       "kind": "game",
-      "title": "Iona Women's Basketball vs. Dominican",
+      "title": "Iona vs. Dominican",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "iona-wbb",
@@ -6760,14 +6835,16 @@
       "date": "2026-11-02",
       "start": "16:30",
       "kind": "game",
-      "title": "Stony Brook Women's Basketball vs. Molloy",
+      "title": "Stony Brook vs. Molloy",
       "place": {
         "type": "venue",
         "venueId": "island-federal-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "stony-brook-wbb",
@@ -6783,14 +6860,16 @@
       "date": "2026-11-02",
       "start": "18:00",
       "kind": "game",
-      "title": "Fordham Women's Basketball vs. Niagara",
+      "title": "Fordham vs. Niagara",
       "place": {
         "type": "venue",
         "venueId": "rose-hill-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "fordham-wbb",
@@ -6864,14 +6943,16 @@
       "date": "2026-11-02",
       "start": "18:31",
       "kind": "game",
-      "title": "Stony Brook Men's Basketball vs. SUNY Old Westbury",
+      "title": "Stony Brook vs. SUNY Old Westbury",
       "place": {
         "type": "venue",
         "venueId": "island-federal-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "stony-brook-mbb",
@@ -6911,14 +6992,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Columbia Men's Basketball vs. Elon",
+      "title": "Columbia vs. Elon",
       "place": {
         "type": "venue",
         "venueId": "levien-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "columbia-mbb",
@@ -6934,14 +7017,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Iona Men's Basketball vs. Vermont",
+      "title": "Iona vs. Vermont",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "iona-mbb",
@@ -6957,14 +7042,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Wagner Women's Basketball vs. SUNY Cortland",
+      "title": "Wagner vs. SUNY Cortland",
       "place": {
         "type": "venue",
         "venueId": "spiro-sports-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "wagner-wbb",
@@ -7203,14 +7290,16 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "Seton Hall Women's Basketball vs. Mercyhurst",
+      "title": "Seton Hall vs. Mercyhurst",
       "place": {
         "type": "venue",
         "venueId": "walsh-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "seton-hall-wbb",
@@ -7513,14 +7602,16 @@
       "date": "2026-11-04",
       "start": "13:00",
       "kind": "game",
-      "title": "Iona Men's Soccer vs. Manhattan",
+      "title": "Iona vs. Manhattan",
       "place": {
         "type": "venue",
         "venueId": "mazzella-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -8027,14 +8118,16 @@
       "date": "2026-11-05",
       "start": "13:00",
       "kind": "game",
-      "title": "Iona Women's Basketball vs. Stony Brook",
+      "title": "Iona vs. Stony Brook",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "iona-wbb",
@@ -8074,14 +8167,16 @@
       "date": "2026-11-05",
       "start": "17:00",
       "kind": "game",
-      "title": "Fordham Women's Basketball vs. St. Thomas Aquinas",
+      "title": "Fordham vs. St. Thomas Aquinas",
       "place": {
         "type": "venue",
         "venueId": "rose-hill-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "fordham-wbb",
@@ -8157,14 +8252,16 @@
       "date": "2026-11-05",
       "start": "18:30",
       "kind": "game",
-      "title": "Seton Hall Men's Basketball vs. LIU",
+      "title": "Seton Hall vs. LIU",
       "place": {
         "type": "venue",
         "venueId": "walsh-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "seton-hall-mbb",
@@ -8305,14 +8402,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Columbia Men's Basketball vs. SUNY Old Westbury",
+      "title": "Columbia vs. SUNY Old Westbury",
       "place": {
         "type": "venue",
         "venueId": "levien-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "columbia-mbb",
@@ -8328,14 +8427,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Iona Men's Basketball vs. NJIT",
+      "title": "Iona vs. NJIT",
       "place": {
         "type": "venue",
         "venueId": "hynes-athletics-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "iona-mbb",
@@ -8351,14 +8452,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Rutgers Women's Volleyball vs. Michigan",
+      "title": "Rutgers vs. Michigan",
       "place": {
         "type": "venue",
         "venueId": "jersey-mikes-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -8498,14 +8601,16 @@
       "date": "2026-11-05",
       "start": "19:30",
       "kind": "game",
-      "title": "Fordham Men's Basketball vs. Stonehill",
+      "title": "Fordham vs. Stonehill",
       "place": {
         "type": "venue",
         "venueId": "rose-hill-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "fordham-mbb",

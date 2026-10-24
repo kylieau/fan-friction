@@ -160,14 +160,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Portland Volleyball vs. Seattle U",
+      "title": "Portland vs. Seattle U",
       "place": {
         "type": "venue",
         "venueId": "chiles-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -178,14 +179,16 @@
       "date": "2026-10-24",
       "start": "17:00",
       "kind": "game",
-      "title": "Portland State Women's Volleyball vs. Northern Colorado",
+      "title": "Portland State vs. Northern Colorado",
       "place": {
         "type": "venue",
         "venueId": "viking-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -196,14 +199,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Portland Men's Soccer vs. Santa Clara",
+      "title": "Portland vs. Santa Clara",
       "place": {
         "type": "venue",
         "venueId": "merlo-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -276,14 +281,15 @@
       "date": "2026-10-25",
       "start": "12:00",
       "kind": "game",
-      "title": "Portland State Softball vs. Centralia",
+      "title": "Portland State vs. Centralia",
       "place": {
         "type": "venue",
         "venueId": "hillsboro-ballpark"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -323,14 +329,15 @@
       "date": "2026-10-25",
       "start": "14:30",
       "kind": "game",
-      "title": "Portland State Softball vs. Centralia",
+      "title": "Portland State vs. Centralia",
       "place": {
         "type": "venue",
         "venueId": "hillsboro-ballpark"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -398,7 +405,7 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Portland State Women's Basketball vs. Warner Pacific",
+      "title": "Portland State vs. Warner Pacific",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -406,7 +413,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "psu-wbb",
@@ -473,14 +482,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "Portland Women's Soccer vs. Seattle U",
+      "title": "Portland vs. Seattle U",
       "place": {
         "type": "venue",
         "venueId": "merlo-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -578,14 +589,16 @@
       "date": "2026-10-29",
       "start": "13:00",
       "kind": "game",
-      "title": "Portland State Women's Soccer vs. Idaho",
+      "title": "Portland State vs. Idaho",
       "place": {
         "type": "venue",
         "venueId": "hillsboro-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -596,14 +609,15 @@
       "date": "2026-10-29",
       "start": "18:00",
       "kind": "game",
-      "title": "Portland Volleyball vs. Loyola Marymount",
+      "title": "Portland vs. Loyola Marymount",
       "place": {
         "type": "venue",
         "venueId": "chiles-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -648,14 +662,16 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "Portland State Women's Volleyball vs. Eastern Washington",
+      "title": "Portland State vs. Eastern Washington",
       "place": {
         "type": "venue",
         "venueId": "viking-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -808,14 +824,15 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Portland Volleyball vs. Pepperdine",
+      "title": "Portland vs. Pepperdine",
       "place": {
         "type": "venue",
         "venueId": "chiles-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -858,14 +875,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Portland State Women's Volleyball vs. Idaho",
+      "title": "Portland State vs. Idaho",
       "place": {
         "type": "venue",
         "venueId": "viking-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -905,14 +924,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Portland State Women's Soccer vs. Eastern Washington",
+      "title": "Portland State vs. Eastern Washington",
       "place": {
         "type": "venue",
         "venueId": "hillsboro-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -923,14 +944,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Portland Women's Soccer vs. Loyola Marymount",
+      "title": "Portland vs. Loyola Marymount",
       "place": {
         "type": "venue",
         "venueId": "merlo-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1127,14 +1150,16 @@
       "date": "2026-11-02",
       "start": "19:30",
       "kind": "game",
-      "title": "Portland Women's Basketball vs. Willamette",
+      "title": "Portland vs. Willamette",
       "place": {
         "type": "venue",
         "venueId": "chiles-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "up-pilots-wbb",

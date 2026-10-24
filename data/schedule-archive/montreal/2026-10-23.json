@@ -118,14 +118,16 @@
       "date": "2026-10-23",
       "start": "19:30",
       "kind": "game",
-      "title": "McGill Men's Rugby vs. Montréal",
+      "title": "McGill vs. Montréal",
       "place": {
         "type": "venue",
         "venueId": "percival-molson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "other"
+        "sport": "rugby",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -232,14 +234,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "McGill Men's Soccer vs. Montréal",
+      "title": "McGill vs. Montréal",
       "place": {
         "type": "venue",
         "venueId": "percival-molson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -250,14 +254,16 @@
       "date": "2026-10-25",
       "start": "15:30",
       "kind": "game",
-      "title": "McGill Women's Soccer vs. Montréal",
+      "title": "McGill vs. Montréal",
       "place": {
         "type": "venue",
         "venueId": "percival-molson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

@@ -55,14 +55,15 @@
       "date": "2026-10-22",
       "start": "19:00",
       "kind": "game",
-      "title": "Houston Soccer vs. TCU",
+      "title": "Houston vs. TCU",
       "place": {
         "type": "venue",
         "venueId": "carl-lewis-international-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -98,14 +99,15 @@
       "date": "2026-10-23",
       "start": "16:00",
       "kind": "game",
-      "title": "Houston Softball vs. Temple College",
+      "title": "Houston vs. Temple College",
       "place": {
         "type": "venue",
         "venueId": "cougar-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "uh-softball",
@@ -121,14 +123,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Prairie View A&M Women's Volleyball vs. Texas Southern",
+      "title": "Prairie View A&M vs. Texas Southern",
       "place": {
         "type": "venue",
         "venueId": "william-j-nicks-building"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -139,14 +143,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Texas Southern Women's Basketball vs. Texas A&M International",
+      "title": "Texas Southern vs. Texas A&M International",
       "place": {
         "type": "venue",
         "venueId": "hpe-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "texas-southern-wbb",
@@ -236,14 +242,15 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Houston Baseball vs. UTA",
+      "title": "Houston vs. UTA",
       "place": {
         "type": "venue",
         "venueId": "schroeder-park"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "uh-baseball",
@@ -259,14 +266,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Rice Baseball vs. McLennan CC",
+      "title": "Rice vs. McLennan CC",
       "place": {
         "type": "venue",
         "venueId": "reckling-park"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "teams": {
         "home": "rice-baseball",
@@ -315,14 +323,15 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Texas Southern Football vs. Southern University",
+      "title": "Texas Southern vs. Southern University",
       "place": {
         "type": "venue",
         "venueId": "reliant-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "texas-southern-football",
@@ -540,14 +549,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Rice Women's Volleyball vs. Tulsa",
+      "title": "Rice vs. Tulsa",
       "place": {
         "type": "venue",
         "venueId": "tudor-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -558,14 +569,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Texas Southern Women's Soccer vs. Alcorn State",
+      "title": "Texas Southern vs. Alcorn State",
       "place": {
         "type": "venue",
         "venueId": "alexander-durley-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -576,14 +589,15 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Houston Volleyball vs. Iowa State",
+      "title": "Houston vs. Iowa State",
       "place": {
         "type": "venue",
         "venueId": "fertitta-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -618,14 +632,16 @@
       "date": "2026-10-25",
       "start": "17:00",
       "kind": "game",
-      "title": "Texas Southern Women's Volleyball vs. Prairie View A&M",
+      "title": "Texas Southern vs. Prairie View A&M",
       "place": {
         "type": "venue",
         "venueId": "hpe-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -693,14 +709,15 @@
       "date": "2026-10-26",
       "start": "16:00",
       "kind": "game",
-      "title": "Houston Softball vs. Red-Black Series Game 1",
+      "title": "Houston vs. Red-Black Series Game 1",
       "place": {
         "type": "venue",
         "venueId": "cougar-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "uh-softball",
@@ -775,14 +792,15 @@
       "date": "2026-10-27",
       "start": "16:00",
       "kind": "game",
-      "title": "Houston Softball vs. Red-Black Series Game 2",
+      "title": "Houston vs. Red-Black Series Game 2",
       "place": {
         "type": "venue",
         "venueId": "cougar-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "uh-softball",
@@ -798,14 +816,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Rice Women's Basketball vs. Eastern New Mexico",
+      "title": "Rice vs. Eastern New Mexico",
       "place": {
         "type": "venue",
         "venueId": "tudor-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "rice-wbb",
@@ -859,14 +879,15 @@
       "date": "2026-10-28",
       "start": "15:30",
       "kind": "game",
-      "title": "Houston Softball vs. Red-Black Series Game 3",
+      "title": "Houston vs. Red-Black Series Game 3",
       "place": {
         "type": "venue",
         "venueId": "cougar-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "teams": {
         "home": "uh-softball",
@@ -882,14 +903,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "Rice Women's Volleyball vs. Tulane",
+      "title": "Rice vs. Tulane",
       "place": {
         "type": "venue",
         "venueId": "tudor-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -924,7 +947,7 @@
       "date": "2026-10-28",
       "start": "18:30",
       "kind": "game",
-      "title": "Houston Women's Basketball vs. Eastern New Mexico",
+      "title": "Houston vs. Eastern New Mexico",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -932,7 +955,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "uh-wbb",
@@ -1020,14 +1045,16 @@
       "date": "2026-10-30",
       "start": "12:30",
       "kind": "game",
-      "title": "Rice Women's Soccer vs. Charlotte",
+      "title": "Rice vs. Charlotte",
       "place": {
         "type": "venue",
         "venueId": "holloway-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1038,14 +1065,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Rice Women's Volleyball vs. South Florida",
+      "title": "Rice vs. South Florida",
       "place": {
         "type": "venue",
         "venueId": "tudor-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1056,14 +1085,15 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Houston Soccer vs. Kansas",
+      "title": "Houston vs. Kansas",
       "place": {
         "type": "venue",
         "venueId": "carl-lewis-international-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1226,14 +1256,15 @@
       "date": "2026-10-31",
       "start": "19:30",
       "kind": "game",
-      "title": "Texas Southern Football vs. Grambling State",
+      "title": "Texas Southern vs. Grambling State",
       "place": {
         "type": "venue",
         "venueId": "ww-thorne-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "texas-southern-football",
@@ -1462,14 +1493,16 @@
       "date": "2026-11-02",
       "start": "18:00",
       "kind": "game",
-      "title": "Prairie View A&M Men's Basketball vs. Paul Quinn College",
+      "title": "Prairie View A&M vs. Paul Quinn College",
       "place": {
         "type": "venue",
         "venueId": "william-j-nicks-building"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "pvamu-mbb",
@@ -1649,14 +1682,16 @@
       "date": "2026-11-04",
       "start": null,
       "kind": "game",
-      "title": "Prairie View A&M Women's Basketball vs. Wiley University",
+      "title": "Prairie View A&M vs. Wiley University",
       "place": {
         "type": "venue",
         "venueId": "william-j-nicks-building"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "pvamu-wbb",
@@ -1705,14 +1740,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "Prairie View A&M Men's Basketball vs. College of Biblical Studies",
+      "title": "Prairie View A&M vs. College of Biblical Studies",
       "place": {
         "type": "venue",
         "venueId": "william-j-nicks-building"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "pvamu-mbb",

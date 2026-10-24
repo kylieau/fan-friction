@@ -55,14 +55,16 @@
       "date": "2026-10-22",
       "start": "13:00",
       "kind": "game",
-      "title": "Detroit Mercy Women's Soccer vs. Northern Kentucky",
+      "title": "Detroit Mercy vs. Northern Kentucky",
       "place": {
         "type": "venue",
         "venueId": "titan-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -485,14 +487,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Detroit Mercy Women's Soccer vs. Wright State",
+      "title": "Detroit Mercy vs. Wright State",
       "place": {
         "type": "venue",
         "venueId": "titan-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -812,14 +816,16 @@
       "date": "2026-10-30",
       "start": "15:00",
       "kind": "game",
-      "title": "Detroit Mercy Men's Soccer vs. Milwaukee",
+      "title": "Detroit Mercy vs. Milwaukee",
       "place": {
         "type": "venue",
         "venueId": "titan-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -880,14 +886,15 @@
       "date": "2026-10-30",
       "start": "18:30",
       "kind": "game",
-      "title": "Michigan Volleyball vs. Nebraska",
+      "title": "Michigan vs. Nebraska",
       "place": {
         "type": "venue",
         "venueId": "crisler-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -983,14 +990,15 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Michigan Volleyball vs. Indiana",
+      "title": "Michigan vs. Indiana",
       "place": {
         "type": "venue",
         "venueId": "crisler-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1191,14 +1199,16 @@
       "date": "2026-11-02",
       "start": "11:00",
       "kind": "game",
-      "title": "Detroit Mercy Women's Basketball vs. Michigan-Dearborn",
+      "title": "Detroit Mercy vs. Michigan-Dearborn",
       "place": {
         "type": "venue",
         "venueId": "calihan-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "detroit-mercy-wbb",
@@ -1252,14 +1262,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Detroit Mercy Men's Basketball vs. Wayne State",
+      "title": "Detroit Mercy vs. Wayne State",
       "place": {
         "type": "venue",
         "venueId": "calihan-hall"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "detroit-mercy-mbb",

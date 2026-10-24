@@ -55,14 +55,16 @@
       "date": "2026-10-23",
       "start": "16:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Women's Soccer vs. Fresno Pacific",
+      "title": "Cal Poly Pomona vs. Fresno Pacific",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -94,14 +96,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "CSUN Women's Volleyball vs. Cal State Bakersfield",
+      "title": "CSUN vs. Cal State Bakersfield",
       "place": {
         "type": "venue",
         "venueId": "premier-america-credit-union-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -227,14 +231,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Men's Soccer vs. Fresno Pacific",
+      "title": "Cal Poly Pomona vs. Fresno Pacific",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -245,14 +251,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Long Beach State Women's Volleyball vs. Cal State Fullerton",
+      "title": "Long Beach State vs. Cal State Fullerton",
       "place": {
         "type": "venue",
         "venueId": "walter-pyramid"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -811,14 +819,16 @@
       "date": "2026-10-24",
       "start": "09:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Men's Cross Country vs. Cal Poly Pomona Invitational",
+      "title": "Cal Poly Pomona vs. Cal Poly Pomona Invitational",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "track"
+        "sport": "cross country",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -874,14 +884,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Pepperdine Women's Volleyball vs. Santa Clara",
+      "title": "Pepperdine vs. Santa Clara",
       "place": {
         "type": "venue",
         "venueId": "firestone-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -929,14 +941,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "LMU Women's Volleyball vs. San Francisco",
+      "title": "LMU vs. San Francisco",
       "place": {
         "type": "venue",
         "venueId": "gersten-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -947,14 +961,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Cal State Fullerton Women's Volleyball vs. Long Beach State",
+      "title": "Cal State Fullerton vs. Long Beach State",
       "place": {
         "type": "venue",
         "venueId": "titan-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1055,14 +1071,16 @@
       "date": "2026-10-24",
       "start": "16:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Volleyball vs. Caltech",
+      "title": "Cal Lutheran vs. Caltech",
       "place": {
         "type": "venue",
         "venueId": "gilbert-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1073,14 +1091,16 @@
       "date": "2026-10-24",
       "start": "16:00",
       "kind": "game",
-      "title": "Cal State Fullerton Women's Soccer vs. UC San Diego",
+      "title": "Cal State Fullerton vs. UC San Diego",
       "place": {
         "type": "venue",
         "venueId": "titan-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1091,14 +1111,16 @@
       "date": "2026-10-24",
       "start": "17:00",
       "kind": "game",
-      "title": "UC Irvine Women's Volleyball vs. UC San Diego",
+      "title": "UC Irvine vs. UC San Diego",
       "place": {
         "type": "venue",
         "venueId": "bren-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1143,14 +1165,16 @@
       "date": "2026-10-24",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Irvine Men's Soccer vs. UC Santa Barbara",
+      "title": "UC Irvine vs. UC Santa Barbara",
       "place": {
         "type": "venue",
         "venueId": "anteater-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1239,14 +1263,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Soccer vs. Caltech",
+      "title": "Cal Lutheran vs. Caltech",
       "place": {
         "type": "venue",
         "venueId": "william-rolland-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1257,14 +1283,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal State Fullerton Men's Soccer vs. Cal State Bakersfield",
+      "title": "Cal State Fullerton vs. Cal State Bakersfield",
       "place": {
         "type": "venue",
         "venueId": "titan-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1275,14 +1303,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Long Beach State Women's Soccer vs. UC Riverside",
+      "title": "Long Beach State vs. UC Riverside",
       "place": {
         "type": "venue",
         "venueId": "george-allen-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1941,14 +1971,16 @@
       "date": "2026-10-25",
       "start": "11:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Women's Soccer vs. Cal State San Bernardino",
+      "title": "Cal Poly Pomona vs. Cal State San Bernardino",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1983,14 +2015,16 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Men's Soccer vs. Cal State San Bernardino",
+      "title": "Cal Poly Pomona vs. Cal State San Bernardino",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2001,14 +2035,16 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "LMU Men's Basketball vs. UCSB",
+      "title": "LMU vs. UCSB",
       "place": {
         "type": "venue",
         "venueId": "gersten-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lmu-mbb",
@@ -2024,14 +2060,16 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "USC Women's Basketball vs. Cal",
+      "title": "USC vs. Cal",
       "place": {
         "type": "venue",
         "venueId": "galen-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "usc-wbb",
@@ -2670,14 +2708,16 @@
       "date": "2026-10-27",
       "start": "11:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Soccer vs. University of California, Santa Cruz",
+      "title": "Cal Lutheran vs. University of California, Santa Cruz",
       "place": {
         "type": "venue",
         "venueId": "william-rolland-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2722,14 +2762,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Volleyball vs. University of Redlands",
+      "title": "Cal Lutheran vs. University of Redlands",
       "place": {
         "type": "venue",
         "venueId": "gilbert-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2740,14 +2782,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "UC Irvine Men's Basketball vs. Cal State LA",
+      "title": "UC Irvine vs. Cal State LA",
       "place": {
         "type": "venue",
         "venueId": "bren-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uc-irvine-mbb",
@@ -3101,14 +3145,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "LMU Women's Soccer vs. Denver",
+      "title": "LMU vs. Denver",
       "place": {
         "type": "venue",
         "venueId": "sullivan-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -3119,7 +3165,7 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "Pepperdine Women's Basketball vs. Azusa Pacific University",
+      "title": "Pepperdine vs. Azusa Pacific University",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -3127,7 +3173,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "pepperdine-wbb",
@@ -3143,14 +3191,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Irvine Women's Soccer vs. Cal State Fullerton",
+      "title": "UC Irvine vs. Cal State Fullerton",
       "place": {
         "type": "venue",
         "venueId": "anteater-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -3483,14 +3533,15 @@
       "date": "2026-10-29",
       "start": "17:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Volleyball vs. Cal State Dominguez Hills",
+      "title": "Cal Poly Pomona vs. Cal State Dominguez Hills",
       "place": {
         "type": "venue",
         "venueId": "kellogg-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -3610,7 +3661,7 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Lutheran Men's Basketball vs. Westmont College",
+      "title": "Cal Lutheran vs. Westmont College",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -3618,7 +3669,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "cal-lutheran-mbb",
@@ -4129,14 +4182,15 @@
       "date": "2026-10-30",
       "start": "17:00",
       "kind": "game",
-      "title": "Cal State LA Volleyball vs. Cal Poly Humboldt",
+      "title": "Cal State LA vs. Cal Poly Humboldt",
       "place": {
         "type": "venue",
         "venueId": "cal-state-la-university-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4147,14 +4201,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Cal State Fullerton Women's Volleyball vs. CSUN",
+      "title": "Cal State Fullerton vs. CSUN",
       "place": {
         "type": "venue",
         "venueId": "titan-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4165,14 +4221,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "UC Irvine Women's Volleyball vs. Cal Poly",
+      "title": "UC Irvine vs. Cal Poly",
       "place": {
         "type": "venue",
         "venueId": "bren-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4209,14 +4267,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Long Beach State Women's Volleyball vs. Cal State Bakersfield",
+      "title": "Long Beach State vs. Cal State Bakersfield",
       "place": {
         "type": "venue",
         "venueId": "walter-pyramid"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4227,14 +4287,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "USC Women's Volleyball vs. Wisconsin",
+      "title": "USC vs. Wisconsin",
       "place": {
         "type": "venue",
         "venueId": "galen-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "usc-wvb",
@@ -4793,14 +4855,16 @@
       "date": "2026-10-31",
       "start": "11:00",
       "kind": "game",
-      "title": "Azusa Pacific Women's Volleyball vs. Chapman",
+      "title": "Azusa Pacific vs. Chapman",
       "place": {
         "type": "venue",
         "venueId": "felix-event-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4845,14 +4909,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Cal State Fullerton Women's Soccer vs. California Baptist University",
+      "title": "Cal State Fullerton vs. California Baptist University",
       "place": {
         "type": "venue",
         "venueId": "titan-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4863,14 +4929,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Long Beach State Women's Soccer vs. Cal State Bakersfield",
+      "title": "Long Beach State vs. Cal State Bakersfield",
       "place": {
         "type": "venue",
         "venueId": "george-allen-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4951,14 +5019,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Cal Poly Pomona Volleyball vs. Cal Poly Humboldt",
+      "title": "Cal Poly Pomona vs. Cal Poly Humboldt",
       "place": {
         "type": "venue",
         "venueId": "kellogg-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4969,14 +5038,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Cal State Fullerton Women's Volleyball vs. Cal State Bakersfield",
+      "title": "Cal State Fullerton vs. Cal State Bakersfield",
       "place": {
         "type": "venue",
         "venueId": "titan-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -4987,14 +5058,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Cal State LA Volleyball vs. Cal State Dominguez Hills",
+      "title": "Cal State LA vs. Cal State Dominguez Hills",
       "place": {
         "type": "venue",
         "venueId": "cal-state-la-university-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5077,14 +5149,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "Azusa Pacific Women's Volleyball vs. West Coast Baptist",
+      "title": "Azusa Pacific vs. West Coast Baptist",
       "place": {
         "type": "venue",
         "venueId": "felix-event-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5095,14 +5169,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "Long Beach State Women's Volleyball vs. CSUN",
+      "title": "Long Beach State vs. CSUN",
       "place": {
         "type": "venue",
         "venueId": "walter-pyramid"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5175,14 +5251,16 @@
       "date": "2026-10-31",
       "start": "17:00",
       "kind": "game",
-      "title": "UC Irvine Women's Volleyball vs. UC Santa Barbara",
+      "title": "UC Irvine vs. UC Santa Barbara",
       "place": {
         "type": "venue",
         "venueId": "bren-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5218,14 +5296,16 @@
       "date": "2026-10-31",
       "start": "18:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Soccer vs. Pomona-Pitzer Colleges",
+      "title": "Cal Lutheran vs. Pomona-Pitzer Colleges",
       "place": {
         "type": "venue",
         "venueId": "william-rolland-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5236,14 +5316,16 @@
       "date": "2026-10-31",
       "start": "18:00",
       "kind": "game",
-      "title": "LMU Men's Soccer vs. San Francisco",
+      "title": "LMU vs. San Francisco",
       "place": {
         "type": "venue",
         "venueId": "sullivan-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -5773,14 +5855,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "USC Women's Volleyball vs. Minnesota",
+      "title": "USC vs. Minnesota",
       "place": {
         "type": "venue",
         "venueId": "galen-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "usc-wvb",
@@ -6505,14 +6589,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "LMU Women's Basketball vs. Nevada",
+      "title": "LMU vs. Nevada",
       "place": {
         "type": "venue",
         "venueId": "gersten-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "lmu-wbb",
@@ -6668,14 +6754,16 @@
       "date": "2026-11-03",
       "start": "18:00",
       "kind": "game",
-      "title": "CSUN Women's Basketball vs. La Sierra",
+      "title": "CSUN vs. La Sierra",
       "place": {
         "type": "venue",
         "venueId": "premier-america-credit-union-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "csun-wbb",
@@ -6691,14 +6779,16 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Baptist Men's Basketball vs. University of North Florida",
+      "title": "Cal Baptist vs. University of North Florida",
       "place": {
         "type": "venue",
         "venueId": "fowler-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "cal-baptist-mbb",
@@ -6714,14 +6804,16 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Volleyball vs. Occidental College",
+      "title": "Cal Lutheran vs. Occidental College",
       "place": {
         "type": "venue",
         "venueId": "gilbert-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -6732,14 +6824,16 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "UC Irvine Men's Basketball vs. Chapman",
+      "title": "UC Irvine vs. Chapman",
       "place": {
         "type": "venue",
         "venueId": "bren-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uc-irvine-mbb",
@@ -6939,14 +7033,16 @@
       "date": "2026-11-04",
       "start": "19:00",
       "kind": "game",
-      "title": "Cal State Fullerton Women's Basketball vs. Hope International University",
+      "title": "Cal State Fullerton vs. Hope International University",
       "place": {
         "type": "venue",
         "venueId": "titan-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "cal-state-fullerton-wbb",
@@ -6962,14 +7058,16 @@
       "date": "2026-11-04",
       "start": "19:00",
       "kind": "game",
-      "title": "LMU Men's Basketball vs. Queen's University",
+      "title": "LMU vs. Queen's University",
       "place": {
         "type": "venue",
         "venueId": "gersten-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lmu-mbb",
@@ -7237,7 +7335,7 @@
       "date": "2026-11-05",
       "start": "17:00",
       "kind": "game",
-      "title": "Cal Lutheran Women's Basketball vs. The Master's University",
+      "title": "Cal Lutheran vs. The Master's University",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -7245,7 +7343,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "cal-lutheran-wbb",
@@ -7261,14 +7361,16 @@
       "date": "2026-11-05",
       "start": "17:00",
       "kind": "game",
-      "title": "Pepperdine Women's Basketball vs. UC Santa Barbara",
+      "title": "Pepperdine vs. UC Santa Barbara",
       "place": {
         "type": "venue",
         "venueId": "firestone-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "pepperdine-wbb",
@@ -7284,14 +7386,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "CSUN Women's Volleyball vs. California Baptist",
+      "title": "CSUN vs. California Baptist",
       "place": {
         "type": "venue",
         "venueId": "premier-america-credit-union-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -7437,14 +7541,16 @@
       "date": "2026-11-05",
       "start": "19:30",
       "kind": "game",
-      "title": "Pepperdine Men's Basketball vs. La Sierra",
+      "title": "Pepperdine vs. La Sierra",
       "place": {
         "type": "venue",
         "venueId": "firestone-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "pepperdine-mbb",
@@ -7665,14 +7771,16 @@
       "date": "2026-11-05",
       "start": null,
       "kind": "game",
-      "title": "Cal Poly Pomona Women's Soccer vs. CCAA Tournament",
+      "title": "Cal Poly Pomona vs. CCAA Tournament",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -7683,14 +7791,16 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "LMU Men's Soccer vs. Pacific",
+      "title": "LMU vs. Pacific",
       "place": {
         "type": "venue",
         "venueId": "sullivan-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -7735,14 +7845,16 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "LMU Men's Basketball vs. Lincoln University",
+      "title": "LMU vs. Lincoln University",
       "place": {
         "type": "venue",
         "venueId": "gersten-pavilion"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "lmu-mbb",
@@ -8428,14 +8540,16 @@
       "date": "2026-11-06",
       "start": null,
       "kind": "game",
-      "title": "Cal Poly Pomona Men's Soccer vs. CCAA Tournament",
+      "title": "Cal Poly Pomona vs. CCAA Tournament",
       "place": {
         "type": "venue",
         "venueId": "kellogg-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -8446,14 +8560,16 @@
       "date": "2026-11-06",
       "start": null,
       "kind": "game",
-      "title": "USC Men's Volleyball vs. USC Fall Invitational",
+      "title": "USC vs. USC Fall Invitational",
       "place": {
         "type": "venue",
         "venueId": "galen-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

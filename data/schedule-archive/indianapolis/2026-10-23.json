@@ -151,14 +151,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "UIndy Women's Soccer vs. Truman",
+      "title": "UIndy vs. Truman",
       "place": {
         "type": "venue",
         "venueId": "kiesel-field-key-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -169,14 +171,16 @@
       "date": "2026-10-24",
       "start": "12:00",
       "kind": "game",
-      "title": "Butler Women's Basketball vs. Ball State",
+      "title": "Butler vs. Ball State",
       "place": {
         "type": "venue",
         "venueId": "hinkle-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "butler-wbb",
@@ -192,14 +196,16 @@
       "date": "2026-10-24",
       "start": "14:30",
       "kind": "game",
-      "title": "UIndy Men's Soccer vs. Truman",
+      "title": "UIndy vs. Truman",
       "place": {
         "type": "venue",
         "venueId": "kiesel-field-key-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -231,14 +237,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Butler Women's Soccer vs. Villanova",
+      "title": "Butler vs. Villanova",
       "place": {
         "type": "venue",
         "venueId": "sellick-bowl"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -420,7 +428,7 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Butler Women's Basketball vs. Franklin",
+      "title": "Butler vs. Franklin",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -428,7 +436,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "butler-wbb",
@@ -444,14 +454,15 @@
       "date": "2026-10-29",
       "start": "19:00",
       "kind": "game",
-      "title": "IU Indy Volleyball vs. Northern Kentucky",
+      "title": "IU Indy vs. Northern Kentucky",
       "place": {
         "type": "venue",
         "venueId": "james-t-morris-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -488,14 +499,16 @@
       "date": "2026-10-30",
       "start": "14:00",
       "kind": "game",
-      "title": "IU Indy Women's Soccer vs. Northern Illinois",
+      "title": "IU Indy vs. Northern Illinois",
       "place": {
         "type": "venue",
         "venueId": "carroll-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -506,14 +519,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Butler Women's Volleyball vs. St. John's",
+      "title": "Butler vs. St. John's",
       "place": {
         "type": "venue",
         "venueId": "hinkle-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -571,14 +586,15 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "UIndy Football vs. Quincy",
+      "title": "UIndy vs. Quincy",
       "place": {
         "type": "venue",
         "venueId": "kiesel-field-key-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "football"
+        "sport": "football",
+        "level": "college"
       },
       "teams": {
         "home": "uindy-football",
@@ -594,14 +610,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Butler Men's Soccer vs. DePaul",
+      "title": "Butler vs. DePaul",
       "place": {
         "type": "venue",
         "venueId": "sellick-bowl"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -612,14 +630,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Butler Women's Volleyball vs. Seton Hall",
+      "title": "Butler vs. Seton Hall",
       "place": {
         "type": "venue",
         "venueId": "hinkle-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -703,14 +723,16 @@
       "date": "2026-11-01",
       "start": "14:30",
       "kind": "game",
-      "title": "UIndy Men's Soccer vs. GLVC Championship Tournament",
+      "title": "UIndy vs. GLVC Championship Tournament",
       "place": {
         "type": "venue",
         "venueId": "kiesel-field-key-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -817,14 +839,16 @@
       "date": "2026-11-02",
       "start": "11:00",
       "kind": "game",
-      "title": "IU Indy Men's Basketball vs. Miami University (Middletown)",
+      "title": "IU Indy vs. Miami University (Middletown)",
       "place": {
         "type": "venue",
         "venueId": "james-t-morris-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "iu-indy-mbb",
@@ -911,14 +935,16 @@
       "date": "2026-11-03",
       "start": "14:00",
       "kind": "game",
-      "title": "IU Indy Men's Soccer vs. Detroit Mercy",
+      "title": "IU Indy vs. Detroit Mercy",
       "place": {
         "type": "venue",
         "venueId": "carroll-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -929,14 +955,15 @@
       "date": "2026-11-03",
       "start": "19:00",
       "kind": "game",
-      "title": "IU Indy Volleyball vs. Purdue Fort Wayne",
+      "title": "IU Indy vs. Purdue Fort Wayne",
       "place": {
         "type": "venue",
         "venueId": "james-t-morris-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1076,14 +1103,16 @@
       "date": "2026-11-05",
       "start": "18:30",
       "kind": "game",
-      "title": "IU Indy Women's Basketball vs. SIUE",
+      "title": "IU Indy vs. SIUE",
       "place": {
         "type": "venue",
         "venueId": "james-t-morris-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "iu-indy-wbb",
@@ -1151,14 +1180,15 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "IU Indy Volleyball vs. Northern Illinois",
+      "title": "IU Indy vs. Northern Illinois",
       "place": {
         "type": "venue",
         "venueId": "james-t-morris-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1169,14 +1199,16 @@
       "date": "2026-11-06",
       "start": "19:00",
       "kind": "game",
-      "title": "Butler Men's Soccer vs. Xavier",
+      "title": "Butler vs. Xavier",
       "place": {
         "type": "venue",
         "venueId": "sellick-bowl"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

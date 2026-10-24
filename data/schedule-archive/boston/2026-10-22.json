@@ -136,14 +136,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Boston College Women's Hockey vs. Cornell University",
+      "title": "Boston College vs. Cornell University",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bc-whockey",
@@ -193,14 +195,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston College Men's Soccer vs. Pitt",
+      "title": "Boston College vs. Pitt",
       "place": {
         "type": "venue",
         "venueId": "newton-campus-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -211,14 +215,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston University Women's Ice Hockey vs. Yale",
+      "title": "Boston University vs. Yale",
       "place": {
         "type": "venue",
         "venueId": "walter-brown-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bu-whockey",
@@ -234,14 +240,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston University Men's Lacrosse vs. Brown",
+      "title": "Boston University vs. Brown",
       "place": {
         "type": "venue",
         "venueId": "nickerson-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -303,14 +311,16 @@
       "date": "2026-10-23",
       "start": "19:05",
       "kind": "game",
-      "title": "UMass Lowell Men's Ice Hockey vs. #7/9 Providence",
+      "title": "UMass Lowell vs. #7/9 Providence",
       "place": {
         "type": "venue",
         "venueId": "tsongas-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uml-mhockey",
@@ -376,14 +386,16 @@
       "date": "2026-10-24",
       "start": "09:30",
       "kind": "game",
-      "title": "Boston University Men's Lacrosse vs. Alumni Game",
+      "title": "Boston University vs. Alumni Game",
       "place": {
         "type": "venue",
         "venueId": "nickerson-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -394,14 +406,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Northeastern Men's Soccer vs. Hofstra",
+      "title": "Northeastern vs. Hofstra",
       "place": {
         "type": "venue",
         "venueId": "parsons-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -412,14 +426,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Northeastern Women's Volleyball vs. Stony Brook",
+      "title": "Northeastern vs. Stony Brook",
       "place": {
         "type": "venue",
         "venueId": "cabot-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -463,14 +479,16 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "Boston College Women's Hockey vs. Cornell University",
+      "title": "Boston College vs. Cornell University",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bc-whockey",
@@ -545,14 +563,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston University Men's Ice Hockey vs. UConn",
+      "title": "Boston University vs. UConn",
       "place": {
         "type": "venue",
         "venueId": "agganis-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bu-mhockey",
@@ -643,14 +663,16 @@
       "date": "2026-10-24",
       "start": null,
       "kind": "game",
-      "title": "Boston University Women's Ice Hockey vs. Minnesota State/Robert Morris",
+      "title": "Boston University vs. Minnesota State/Robert Morris",
       "place": {
         "type": "venue",
         "venueId": "walter-brown-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bu-whockey",
@@ -666,7 +688,7 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "Boston College Men's Basketball vs. MIT",
+      "title": "Boston College vs. MIT",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -674,7 +696,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bc-mbb",
@@ -690,14 +714,16 @@
       "date": "2026-10-25",
       "start": "14:00",
       "kind": "game",
-      "title": "Northeastern Women's Volleyball vs. Stony Brook",
+      "title": "Northeastern vs. Stony Brook",
       "place": {
         "type": "venue",
         "venueId": "cabot-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -834,14 +860,16 @@
       "date": "2026-10-26",
       "start": "11:00",
       "kind": "game",
-      "title": "Boston College Women's Hockey vs. Mankato",
+      "title": "Boston College vs. Mankato",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bc-whockey",
@@ -970,14 +998,16 @@
       "date": "2026-10-28",
       "start": "15:30",
       "kind": "game",
-      "title": "Boston College Men's Soccer vs. AIC",
+      "title": "Boston College vs. AIC",
       "place": {
         "type": "venue",
         "venueId": "newton-campus-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1208,14 +1238,16 @@
       "date": "2026-10-30",
       "start": "14:00",
       "kind": "game",
-      "title": "Boston College Women's Hockey vs. University of Vermont",
+      "title": "Boston College vs. University of Vermont",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bc-whockey",
@@ -1231,14 +1263,16 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Boston University Women's Ice Hockey vs. Northeastern",
+      "title": "Boston University vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "walter-brown-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bu-whockey",
@@ -1254,14 +1288,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston College Men's Hockey vs. Northeastern",
+      "title": "Boston College vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bc-mhockey",
@@ -1277,14 +1313,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston University Men's Ice Hockey vs. Maine",
+      "title": "Boston University vs. Maine",
       "place": {
         "type": "venue",
         "venueId": "agganis-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bu-mhockey",
@@ -1300,14 +1338,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston University Men's Soccer vs. Lafayette",
+      "title": "Boston University vs. Lafayette",
       "place": {
         "type": "venue",
         "venueId": "nickerson-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1466,14 +1506,16 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Boston University Women's Soccer vs. Lehigh",
+      "title": "Boston University vs. Lehigh",
       "place": {
         "type": "venue",
         "venueId": "nickerson-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1484,14 +1526,16 @@
       "date": "2026-10-31",
       "start": "14:00",
       "kind": "game",
-      "title": "Boston College Women's Hockey vs. University of Vermont",
+      "title": "Boston College vs. University of Vermont",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bc-whockey",
@@ -1507,14 +1551,16 @@
       "date": "2026-10-31",
       "start": "16:00",
       "kind": "game",
-      "title": "Boston University Women's Ice Hockey vs. Northeastern",
+      "title": "Boston University vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "walter-brown-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bu-whockey",
@@ -1530,14 +1576,16 @@
       "date": "2026-10-31",
       "start": "18:00",
       "kind": "game",
-      "title": "Boston University Men's Ice Hockey vs. Maine",
+      "title": "Boston University vs. Maine",
       "place": {
         "type": "venue",
         "venueId": "agganis-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bu-mhockey",
@@ -1553,14 +1601,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston College Men's Hockey vs. Northeastern",
+      "title": "Boston College vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bc-mhockey",
@@ -1696,14 +1746,16 @@
       "date": "2026-11-01",
       "start": "13:00",
       "kind": "game",
-      "title": "Northeastern Women's Soccer vs. Monmouth",
+      "title": "Northeastern vs. Monmouth",
       "place": {
         "type": "venue",
         "venueId": "parsons-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1866,14 +1918,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "UMass Lowell Men's Basketball vs. Rivier",
+      "title": "UMass Lowell vs. Rivier",
       "place": {
         "type": "venue",
         "venueId": "kennedy-family-athletic-complex"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uml-mbb",
@@ -1889,14 +1943,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston University Men's Basketball vs. Northeastern",
+      "title": "Boston University vs. Northeastern",
       "place": {
         "type": "venue",
         "venueId": "case-gym"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bu-mbb",
@@ -1912,14 +1968,16 @@
       "date": "2026-11-02",
       "start": "19:00",
       "kind": "game",
-      "title": "Northeastern Women's Basketball vs. UAlbany",
+      "title": "Northeastern vs. UAlbany",
       "place": {
         "type": "venue",
         "venueId": "cabot-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "northeastern-wbb",
@@ -2134,14 +2192,16 @@
       "date": "2026-11-05",
       "start": "14:00",
       "kind": "game",
-      "title": "Boston College Women's Hockey vs. University of Connecticut",
+      "title": "Boston College vs. University of Connecticut",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "bc-whockey",
@@ -2157,14 +2217,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "Boston College Women's Soccer vs. Stanford",
+      "title": "Boston College vs. Stanford",
       "place": {
         "type": "venue",
         "venueId": "newton-campus-soccer-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2175,14 +2237,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Boston College Men's Hockey vs. Vermont",
+      "title": "Boston College vs. Vermont",
       "place": {
         "type": "venue",
         "venueId": "conte-forum"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "bc-mhockey",

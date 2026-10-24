@@ -283,14 +283,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Cleveland State Women's Soccer vs. Milwaukee",
+      "title": "Cleveland State vs. Milwaukee",
       "place": {
         "type": "venue",
         "venueId": "krenzler-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -467,7 +469,7 @@
       "date": "2026-10-28",
       "start": "19:00",
       "kind": "game",
-      "title": "Cleveland State Women's Basketball vs. Clarion University",
+      "title": "Cleveland State vs. Clarion University",
       "preseason": true,
       "place": {
         "type": "venue",
@@ -475,7 +477,9 @@
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "cleveland-state-wbb",
@@ -516,14 +520,15 @@
       "date": "2026-10-30",
       "start": "18:00",
       "kind": "game",
-      "title": "Cleveland State Volleyball vs. Green Bay",
+      "title": "Cleveland State vs. Green Bay",
       "place": {
         "type": "venue",
         "venueId": "woodling-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -566,14 +571,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Cleveland State Men's Soccer vs. Robert Morris",
+      "title": "Cleveland State vs. Robert Morris",
       "place": {
         "type": "venue",
         "venueId": "krenzler-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -634,14 +641,15 @@
       "date": "2026-10-31",
       "start": "13:00",
       "kind": "game",
-      "title": "Cleveland State Volleyball vs. Green Bay",
+      "title": "Cleveland State vs. Green Bay",
       "place": {
         "type": "venue",
         "venueId": "woodling-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"

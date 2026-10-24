@@ -88,14 +88,16 @@
       "date": "2026-10-22",
       "start": "19:00",
       "kind": "game",
-      "title": "Duquesne Women's Soccer vs. Davidson",
+      "title": "Duquesne vs. Davidson",
       "place": {
         "type": "venue",
         "venueId": "arthur-j-rooney-athletic-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -158,14 +160,16 @@
       "date": "2026-10-23",
       "start": "18:00",
       "kind": "game",
-      "title": "Duquesne Women's Volleyball vs. VCU",
+      "title": "Duquesne vs. VCU",
       "place": {
         "type": "venue",
         "venueId": "upmc-cooper-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -176,14 +180,15 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "Pitt Wrestling vs. Blue vs. Gold",
+      "title": "Pitt vs. Blue vs. Gold",
       "place": {
         "type": "venue",
         "venueId": "victory-heights-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "wrestling"
+        "sport": "wrestling",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -417,14 +422,16 @@
       "date": "2026-10-24",
       "start": "14:00",
       "kind": "game",
-      "title": "Duquesne Women's Volleyball vs. VCU",
+      "title": "Duquesne vs. VCU",
       "place": {
         "type": "venue",
         "venueId": "upmc-cooper-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -554,14 +561,16 @@
       "date": "2026-10-24",
       "start": "19:00",
       "kind": "game",
-      "title": "Duquesne Men's Soccer vs. VCU",
+      "title": "Duquesne vs. VCU",
       "place": {
         "type": "venue",
         "venueId": "arthur-j-rooney-athletic-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -572,14 +581,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Duquesne Women's Soccer vs. Saint Louis",
+      "title": "Duquesne vs. Saint Louis",
       "place": {
         "type": "venue",
         "venueId": "arthur-j-rooney-athletic-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -669,14 +680,16 @@
       "date": "2026-10-25",
       "start": null,
       "kind": "game",
-      "title": "Pitt Women's Lacrosse vs. Pitt Play Day",
+      "title": "Pitt vs. Pitt Play Day",
       "place": {
         "type": "venue",
         "venueId": "fnb-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -719,14 +732,16 @@
       "date": "2026-10-27",
       "start": "17:00",
       "kind": "game",
-      "title": "Duquesne Women's Volleyball vs. Dayton",
+      "title": "Duquesne vs. Dayton",
       "place": {
         "type": "venue",
         "venueId": "upmc-cooper-fieldhouse"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -737,14 +752,16 @@
       "date": "2026-10-27",
       "start": "19:00",
       "kind": "game",
-      "title": "Robert Morris Men's Basketball vs. Canisius",
+      "title": "Robert Morris vs. Canisius",
       "place": {
         "type": "venue",
         "venueId": "upmc-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "robert-morris-mbb",
@@ -875,14 +892,16 @@
       "date": "2026-10-28",
       "start": "18:00",
       "kind": "game",
-      "title": "Robert Morris Women's Basketball vs. St. Bonaventure",
+      "title": "Robert Morris vs. St. Bonaventure",
       "place": {
         "type": "venue",
         "venueId": "upmc-events-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
       },
       "teams": {
         "home": "robert-morris-wbb",
@@ -1075,14 +1094,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Pitt Women's Soccer vs. Wake Forest",
+      "title": "Pitt vs. Wake Forest",
       "place": {
         "type": "venue",
         "venueId": "ambrose-urbanic-field"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1093,14 +1114,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "Robert Morris Men's Hockey vs. Air Force",
+      "title": "Robert Morris vs. Air Force",
       "place": {
         "type": "venue",
         "venueId": "clearview-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "robert-morris-mhockey",
@@ -1274,14 +1297,16 @@
       "date": "2026-10-31",
       "start": "19:00",
       "kind": "game",
-      "title": "Robert Morris Men's Hockey vs. Air Force",
+      "title": "Robert Morris vs. Air Force",
       "place": {
         "type": "venue",
         "venueId": "clearview-arena"
       },
       "audience": {
         "domain": "sports",
-        "sport": "hockey"
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "robert-morris-mhockey",

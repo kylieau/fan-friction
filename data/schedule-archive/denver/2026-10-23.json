@@ -55,14 +55,16 @@
       "date": "2026-10-23",
       "start": "17:00",
       "kind": "game",
-      "title": "Denver Women's Lacrosse vs. Alumnae Game",
+      "title": "Denver vs. Alumnae Game",
       "place": {
         "type": "venue",
         "venueId": "peter-barton-lacrosse-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "lacrosse"
+        "sport": "lacrosse",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -328,14 +330,16 @@
       "date": "2026-10-24",
       "start": "15:00",
       "kind": "game",
-      "title": "Denver Men's Soccer vs. Pacific",
+      "title": "Denver vs. Pacific",
       "place": {
         "type": "venue",
         "venueId": "du-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1042,14 +1046,15 @@
       "date": "2026-10-29",
       "start": "18:00",
       "kind": "game",
-      "title": "Denver Volleyball vs. Santa Clara",
+      "title": "Denver vs. Santa Clara",
       "place": {
         "type": "venue",
         "venueId": "hamilton-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1398,14 +1403,15 @@
       "date": "2026-10-31",
       "start": "12:00",
       "kind": "game",
-      "title": "Denver Volleyball vs. San Francisco",
+      "title": "Denver vs. San Francisco",
       "place": {
         "type": "venue",
         "venueId": "hamilton-gymnasium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -1440,14 +1446,16 @@
       "date": "2026-10-31",
       "start": "15:00",
       "kind": "game",
-      "title": "Denver Women's Soccer vs. Pacific",
+      "title": "Denver vs. Pacific",
       "place": {
         "type": "venue",
         "venueId": "du-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -2504,14 +2512,16 @@
       "date": "2026-11-06",
       "start": "18:00",
       "kind": "game",
-      "title": "Denver Men's Soccer vs. Seattle",
+      "title": "Denver vs. Seattle",
       "place": {
         "type": "venue",
         "venueId": "du-soccer-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"

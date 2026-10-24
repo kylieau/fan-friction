@@ -55,14 +55,16 @@
       "date": "2026-10-22",
       "start": "18:00",
       "kind": "game",
-      "title": "Incarnate Word Women's Volleyball vs. McNeese State University",
+      "title": "Incarnate Word vs. McNeese State University",
       "place": {
         "type": "venue",
         "venueId": "mcdermott-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -179,14 +181,16 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "Incarnate Word Women's Volleyball vs. Nicholls",
+      "title": "Incarnate Word vs. Nicholls",
       "place": {
         "type": "venue",
         "venueId": "mcdermott-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -321,14 +325,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "Incarnate Word Women's Soccer vs. The University of Texas Rio Grande Valley",
+      "title": "Incarnate Word vs. The University of Texas Rio Grande Valley",
       "place": {
         "type": "venue",
         "venueId": "benson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -339,14 +345,16 @@
       "date": "2026-10-25",
       "start": "18:00",
       "kind": "game",
-      "title": "Incarnate Word Men's Soccer vs. Houston Christian University",
+      "title": "Incarnate Word vs. Houston Christian University",
       "place": {
         "type": "venue",
         "venueId": "benson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -670,14 +678,16 @@
       "date": "2026-11-01",
       "start": "11:30",
       "kind": "game",
-      "title": "Incarnate Word Men's Soccer vs. Lindenwood University",
+      "title": "Incarnate Word vs. Lindenwood University",
       "place": {
         "type": "venue",
         "venueId": "benson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -877,14 +887,16 @@
       "date": "2026-11-05",
       "start": "18:00",
       "kind": "game",
-      "title": "Incarnate Word Men's Basketball vs. Chicago State University",
+      "title": "Incarnate Word vs. Chicago State University",
       "place": {
         "type": "venue",
         "venueId": "mcdermott-convocation-center"
       },
       "audience": {
         "domain": "sports",
-        "sport": "basketball"
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
       },
       "teams": {
         "home": "uiw-mbb",
@@ -926,14 +938,16 @@
       "date": "2026-11-05",
       "start": "19:00",
       "kind": "game",
-      "title": "Incarnate Word Women's Soccer vs. Houston Christian University",
+      "title": "Incarnate Word vs. Houston Christian University",
       "place": {
         "type": "venue",
         "venueId": "benson-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"

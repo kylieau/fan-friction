@@ -55,14 +55,16 @@
       "date": "2026-10-22",
       "start": "19:00",
       "kind": "game",
-      "title": "South Florida Women's Soccer vs. Rice",
+      "title": "South Florida vs. Rice",
       "place": {
         "type": "venue",
         "venueId": "corbett-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -129,14 +131,16 @@
       "date": "2026-10-23",
       "start": "19:00",
       "kind": "game",
-      "title": "South Florida Men's Soccer vs. Memphis",
+      "title": "South Florida vs. Memphis",
       "place": {
         "type": "venue",
         "venueId": "corbett-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -198,14 +202,15 @@
       "date": "2026-10-24",
       "start": "13:00",
       "kind": "game",
-      "title": "South Florida Baseball vs. Florida State",
+      "title": "South Florida vs. Florida State",
       "place": {
         "type": "venue",
         "venueId": "baycare-ballpark"
       },
       "audience": {
         "domain": "sports",
-        "sport": "baseball"
+        "sport": "baseball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -313,14 +318,16 @@
       "date": "2026-10-25",
       "start": "13:00",
       "kind": "game",
-      "title": "South Florida Women's Volleyball vs. Memphis",
+      "title": "South Florida vs. Memphis",
       "place": {
         "type": "venue",
         "venueId": "the-corral"
       },
       "audience": {
         "domain": "sports",
-        "sport": "volleyball"
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -672,14 +679,15 @@
       "date": "2026-10-30",
       "start": "12:30",
       "kind": "game",
-      "title": "South Florida Softball vs. Florida Southwestern State",
+      "title": "South Florida vs. Florida Southwestern State",
       "place": {
         "type": "venue",
         "venueId": "usf-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -690,14 +698,16 @@
       "date": "2026-10-30",
       "start": "16:00",
       "kind": "game",
-      "title": "South Florida Men's Soccer vs. Florida College",
+      "title": "South Florida vs. Florida College",
       "place": {
         "type": "venue",
         "venueId": "corbett-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -708,14 +718,16 @@
       "date": "2026-10-30",
       "start": "19:00",
       "kind": "game",
-      "title": "South Florida Women's Soccer vs. UAB",
+      "title": "South Florida vs. UAB",
       "place": {
         "type": "venue",
         "venueId": "corbett-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "soccer"
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
       },
       "crowd": [],
       "sourceId": "sidearm"
@@ -892,14 +904,15 @@
       "date": "2026-11-01",
       "start": "14:00",
       "kind": "game",
-      "title": "South Florida Softball vs. Bethune-Cookman",
+      "title": "South Florida vs. Bethune-Cookman",
       "place": {
         "type": "venue",
         "venueId": "usf-softball-stadium"
       },
       "audience": {
         "domain": "sports",
-        "sport": "softball"
+        "sport": "softball",
+        "level": "college"
       },
       "crowd": [],
       "sourceId": "sidearm"
