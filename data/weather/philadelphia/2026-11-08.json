@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-08",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "philadelphia",
+      "venueId": "city",
+      "date": "2026-11-08",
+      "basis": "forecast",
+      "capturedAt": "2026-10-24T12:32:38.592Z",
+      "feelsLikeHighF": 56.6,
+      "feelsLikeLowF": 44.3,
+      "code": 63,
+      "precipProbability": 23,
+      "precipMm": 11.7
+    }
+  ]
+}

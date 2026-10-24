@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-avalanche-401892565",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 6
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 3
+      },
+      "attendance": 18104,
+      "capturedAt": "2026-10-24T12:47:25.818Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "21:09"
+    },
+    {
+      "eventId": "2026-10-23-espn-du-mhockey-401904864",
+      "metroId": "denver",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 5
+      },
+      "away": {
+        "name": "Boston College",
+        "score": 2
+      },
+      "capturedAt": "2026-10-24T12:47:25.818Z"
+    }
+  ]
+}

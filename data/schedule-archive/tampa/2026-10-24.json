@@ -1,0 +1,2923 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "metroName": "Tampa Bay",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-24",
+  "capturedAt": "2026-10-24T12:44:24.476Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-24",
+    "through": "2026-11-07"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 3
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 8
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 72
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 9
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-24-sa-gousfbulls-com-14758",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "game",
+      "title": "South Florida vs. Florida State",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-ballpark"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7-EoN",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-EoN",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AeFZ_aGkMNOyo1",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "kind": "game",
+      "title": "UCF Knights Football vs BYU - Homecoming",
+      "place": {
+        "type": "venue",
+        "venueId": "acrisure-bounce-house"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "UCF Knights Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_aGkMNOyo1",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1kFOvPFIGACD38y",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Orlando Solar Bears vs. South Carolina Stingrays",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Orlando Solar Bears",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kFOvPFIGACD38y",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-24-tm-vvG1VZ_32booGY",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Florida Everblades vs. Atlanta Gladiators",
+      "place": {
+        "type": "venue",
+        "venueId": "hertz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Florida Everblades",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_32booGY"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7x9GA",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Hip Abduction",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-sound"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Hip Abduction",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178627"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9GA",
+      "expectedDraw": {
+        "count": 9000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAvAqf",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Josh Thomas",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Josh Thomas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvAqf",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAZEFk",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Golden Girls: The Laughs Continue",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Golden Girls: The Laughs Continue",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZEFk"
+    },
+    {
+      "id": "2026-10-24-espn-rowdies-401842305",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rowdies vs. Sporting JAX",
+      "place": {
+        "type": "venue",
+        "venueId": "al-lang-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rowdies",
+        "away": "sporting-jax",
+        "awayOpponent": "sporting-jax"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-tm-1kFOvNOIGAGEwwx",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Orlando City SC v NYCFC - Military Appreciation Night, pres. by Audi",
+      "place": {
+        "type": "venue",
+        "venueId": "inter-co-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Orlando City SC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kFOvNOIGAGEwwx"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7-E8z",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-E8z",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_fxjdz45",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "08:30",
+      "kind": "special",
+      "title": "2026 Peace River Pop Warner Conference Cheer & Dance Competition",
+      "place": {
+        "type": "venue",
+        "venueId": "hertz-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "2026 Peace River Pop Warner Conference Cheer & Dance Competition",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_fxjdz45"
+    },
+    {
+      "id": "2026-10-25-sa-gousfbulls-com-14530",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "South Florida vs. Memphis",
+      "place": {
+        "type": "venue",
+        "venueId": "the-corral"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-E8S",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-E8S",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_omhlA2M",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "kind": "special",
+      "title": "A Star to Remember",
+      "place": {
+        "type": "venue",
+        "venueId": "mahaffey-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Florida Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_omhlA2M",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1AeFZ_eGkS45J4N",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Orlando Pride v Gotham FC - Spooky Season",
+      "place": {
+        "type": "venue",
+        "venueId": "inter-co-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Orlando Pride",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_eGkS45J4N"
+    },
+    {
+      "id": "2026-10-25-tm-1AeFZ_FGkn1Mew3",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917Qs-V",
+        "K8vZ917bKv7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_FGkn1Mew3",
+      "expectedDraw": {
+        "count": 10532,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_opLsz5J",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_opLsz5J",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-EoZ",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-EoZ",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-gA_",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Turnpike Troubadours",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-sound"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Turnpike Troubadours",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uXLV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-gA_",
+      "expectedDraw": {
+        "count": 9000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZEFN",
+      "metroId": "tampa",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dan and Phil",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Dan and Phil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZEFN"
+    },
+    {
+      "id": "2026-10-26-mlb-849804",
+      "broadcast": "FOX",
+      "metroId": "tampa",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Rays vs. Brewers",
+      "stakes": {
+        "round": "WS",
+        "game": 3
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-27-tm-16xZkoKJ9ZA57FCA",
+      "metroId": "tampa",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "CeCe Winans",
+      "officialTitle": "CeCe Winans - COME WORSHIP! Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "addition-financial-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "CeCe Winans",
+      "act": true,
+      "performerIds": [
+        "K8vZ91714R0",
+        "K8vZ917qrYf",
+        "K8vZ917_dqf",
+        "K8vZ917Lpx0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16xZkoKJ9ZA57FCA",
+      "expectedDraw": {
+        "count": 5358,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7JpP8",
+      "metroId": "tampa",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Alice Cooper",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Alice Cooper",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JpP8",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7-w3e",
+      "metroId": "tampa",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w3e",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-10-27-mlb-849803",
+      "broadcast": "FOX",
+      "metroId": "tampa",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Rays vs. Brewers",
+      "stakes": {
+        "round": "WS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-28-tm-1kFOvPFIGACHxo4",
+      "metroId": "tampa",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Orlando Solar Bears vs. Florida Everblades",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Orlando Solar Bears",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kFOvPFIGACHxo4",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7-w3d",
+      "metroId": "tampa",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w3d",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-10-28-mlb-849799",
+      "broadcast": "FOX",
+      "metroId": "tampa",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Rays vs. Brewers",
+      "stakes": {
+        "round": "WS",
+        "game": 5,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "tropicana-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "rays",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-28-tm-vvG1VZ_8uXPNex",
+      "metroId": "tampa",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "yuengling-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174s67"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_8uXPNex",
+      "expectedDraw": {
+        "count": 5934,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1VZ_C1wAE1g",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Monumental Sounds",
+      "place": {
+        "type": "venue",
+        "venueId": "mahaffey-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Florida Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_C1wAE1g",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-29-espn-lightning-401892601",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lightning vs. Winnipeg Jets",
+      "broadcast": "The Spot - MTN",
+      "place": {
+        "type": "venue",
+        "venueId": "benchmark-international-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "lightning",
+        "away": "jets",
+        "awayOpponent": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-29-tm-vvG1VZ_A3CEUsx",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "CeCe Winans",
+      "officialTitle": "CeCe Winans - COME WORSHIP! Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "yuengling-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "CeCe Winans",
+      "act": true,
+      "performerIds": [
+        "K8vZ91714R0",
+        "K8vZ917qrYf",
+        "K8vZ917Lpx0",
+        "K8vZ917_dqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_A3CEUsx",
+      "expectedDraw": {
+        "count": 5934,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vvG1VZ_GwtMh8R",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Dillinger Escape Plan",
+      "officialTitle": "The Dillinger Escape Plan: Final Calculating Infinity Shows",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Dillinger Escape Plan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GwtMh8R",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7-Eo3",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Eo3",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-29-tm-1AxZk3dGkeHa7UV",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hET7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AxZk3dGkeHa7UV",
+      "expectedDraw": {
+        "count": 10532,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-gousfbulls-com-14468",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "16:00",
+      "kind": "game",
+      "title": "South Florida vs. Florida College",
+      "place": {
+        "type": "venue",
+        "venueId": "corbett-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-gousfbulls-com-14764",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "17:30",
+      "kind": "game",
+      "title": "South Florida vs. Florida Southwestern State",
+      "place": {
+        "type": "venue",
+        "venueId": "usf-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-gousfbulls-com-14439",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "South Florida vs. UAB",
+      "place": {
+        "type": "venue",
+        "venueId": "corbett-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-1kFOvPFIGACWxo-",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Orlando Solar Bears vs. Jacksonville Icemen - Boo with the Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Orlando Solar Bears",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kFOvPFIGACWxo-",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-30-tm-1AeFZ_aGkMNxaoK",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "game",
+      "title": "UCF Knights Football vs Baylor - Space Game",
+      "place": {
+        "type": "venue",
+        "venueId": "acrisure-bounce-house"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "UCF Knights Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_aGkMNxaoK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7-Eo9",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Eo9",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1VZ_1r90ICL",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Sonic Live In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "mahaffey-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Sonic Live in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_1r90ICL"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAZtOF",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Hairball",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Hairball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZtOF",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-usf-football-401862816",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "South Florida vs. UAB",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "raymond-james-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "usf-football",
+        "away": "uab",
+        "awayOpponent": "uab"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7-w37",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w37",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7-EoE",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-EoE",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-10-31-tm-1AeFZ_kGkwOQklA",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Chayanne",
+      "officialTitle": "Chayanne - Bailemos Otra Vez Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Chayanne",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171a90"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_kGkwOQklA",
+      "expectedDraw": {
+        "count": 10532,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1VZ_kJvgfqs",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gavin Adcock",
+      "officialTitle": "Gavin Adcock: The Day I Hang It Up Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "hertz-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Gavin Adcock",
+      "act": true,
+      "performerIds": [
+        "K8vZ917jQA7",
+        "K8vZ917QTV0",
+        "K8vZ917rM7f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_kJvgfqs",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AAZtO3",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ghostbusters in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ghostbusters in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZtO3",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1VZ_3DPqRa6",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "start": null,
+      "kind": "show",
+      "title": "Noizu",
+      "officialTitle": "Monster's Ball Featuring NOIZU",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-event-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Noizu",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_3DPqRa6",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vvG1VZ_3BUDa1A",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Tempo Daylife Tampa Bay Presents - RuPaul",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-event-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "RuPaul",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_3BUDa1A"
+    },
+    {
+      "id": "2026-11-01-espn-buccaneers-401873025",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Buccaneers vs. Falcons",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "raymond-james-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "buccaneers",
+        "away": "falcons",
+        "awayOpponent": "falcons"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7-w3A",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w3A",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-11-01-sa-gousfbulls-com-14765",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "game",
+      "title": "South Florida vs. Bethune-Cookman",
+      "place": {
+        "type": "venue",
+        "venueId": "usf-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-vvG1VZ_C1SuM2R",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "special",
+      "title": "John Williams @ 95",
+      "place": {
+        "type": "venue",
+        "venueId": "mahaffey-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Florida Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_C1SuM2R",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-01-tm-1AeFZ_8GkSGINrx",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Orlando Magic vs. Boston Celtics",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Orlando Magic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_8GkSGINrx",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PUjb",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Tampa Bay Sun FC vs. DC Power FC",
+      "place": {
+        "type": "venue",
+        "venueId": "suncoast-credit-union-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Tampa Bay Sun FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PUjb"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7OyAs",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Daniel Sloss",
+      "place": {
+        "type": "venue",
+        "venueId": "tampa-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OyAs"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7-w3k",
+      "metroId": "tampa",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w3k",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-11-02-espn-usf-wbb-401913842",
+      "metroId": "tampa",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "kind": "game",
+      "title": "South Florida vs. Furman",
+      "place": {
+        "type": "venue",
+        "venueId": "yuengling-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "usf-wbb",
+        "away": "furman",
+        "awayOpponent": "furman"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-11-02-espn-usf-mbb-401911374",
+      "metroId": "tampa",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "South Florida vs. Charleston So",
+      "place": {
+        "type": "venue",
+        "venueId": "yuengling-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "usf-mbb",
+        "away": "charleston-so",
+        "awayOpponent": "charleston-so"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-11-02-tm-1AeFZ_3GkBPe3Ny",
+      "metroId": "tampa",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UCF Knights Mens Basketball vs. Florida Gulf Coast University Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "addition-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "UCF Knights Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_3GkBPe3Ny",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-tm-1AeFZ_8GkSGndrE",
+      "metroId": "tampa",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Orlando Magic vs. Washington Wizards",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Orlando Magic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_8GkSGndrE",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-tm-1kFOvPFIGACTeoT",
+      "metroId": "tampa",
+      "date": "2026-11-03",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Orlando Solar Bears vs. Atlanta Gladiators",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Orlando Solar Bears",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kFOvPFIGACTeoT",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-03-tm-16xZkfgObZACeG52",
+      "metroId": "tampa",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "kind": "game",
+      "title": "UCF Knights Womens Basketball vs. Florida A&M Rattlers Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "addition-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "UCF Knights Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16xZkfgObZACeG52",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-espn-lightning-401892635",
+      "metroId": "tampa",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lightning vs. Red Wings",
+      "broadcast": "DSN",
+      "place": {
+        "type": "venue",
+        "venueId": "benchmark-international-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "lightning",
+        "away": "red-wings",
+        "awayOpponent": "red-wings"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7-Eo-",
+      "metroId": "tampa",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Eo-",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7-Eo_",
+      "metroId": "tampa",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Eo_",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG1VZ_CBh66Cw",
+      "metroId": "tampa",
+      "date": "2026-11-05",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "TRIVIUM: CROWN IN THE GRAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_CBh66Cw",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-17FOv0G65wwP47r",
+      "metroId": "tampa",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Motionless In White",
+      "officialTitle": "Motionless In White: The Sweat and Blood Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "kia-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Motionless In White",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u750",
+        "K8vZ917Kvqf",
+        "K8vZ917GciV",
+        "K8vZ917hay7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17FOv0G65wwP47r",
+      "expectedDraw": {
+        "count": 10532,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-lightning-401892650",
+      "metroId": "tampa",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lightning vs. Blackhawks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "benchmark-international-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "lightning",
+        "away": "blackhawks",
+        "awayOpponent": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7-E8w",
+      "metroId": "tampa",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-E8w",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1AxZkuSGkeRv7nM",
+      "metroId": "tampa",
+      "date": "2026-11-06",
+      "start": "13:00",
+      "kind": "show",
+      "title": "EDC Orlando",
+      "place": {
+        "type": "venue",
+        "venueId": "tinker-field"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "EDC Orlando",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pTiV",
+        "K8vZ9178oNf",
+        "K8vZ917KsA0",
+        "K8vZ917G-90",
+        "K8vZ917qEAV",
+        "K8vZ917QzN7",
+        "K8vZ917h7Qf",
+        "K8vZ917hQaf",
+        "K8vZ9179Hz0",
+        "K8vZ9174C6f",
+        "K8vZ917pAB7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AxZkuSGkeRv7nM",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-sa-gousfbulls-com-14766",
+      "metroId": "tampa",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "South Florida vs. Tampa",
+      "place": {
+        "type": "venue",
+        "venueId": "usf-softball-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-vvG1VZ_GwNH1aZ",
+      "metroId": "tampa",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Greensky Bluegrass",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Greensky Bluegrass",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GwNH1aZ",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1AeFZ_3GkBPdx0A",
+      "metroId": "tampa",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UCF Knights Mens Basketball vs. Yale Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "addition-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "UCF Knights Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeFZ_3GkBPdx0A",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7-w36",
+      "metroId": "tampa",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w36",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZtO9",
+      "metroId": "tampa",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Phil Collins Story",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Phil Collins Story",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZtO9",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1AxZkuSGkeRuVlQ",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "show",
+      "title": "EDC Orlando",
+      "place": {
+        "type": "venue",
+        "venueId": "tinker-field"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "EDC Orlando",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pTiV",
+        "K8vZ917qFg7",
+        "K8vZ917_XT7",
+        "K8vZ917K5dV",
+        "K8vZ917j6h7",
+        "K8vZ917h4x0",
+        "K8vZ917QqG7",
+        "K8vZfZ7EEtk",
+        "K8vZ9175H9V",
+        "K8vZ9174cu7",
+        "K8vZ917oa0V",
+        "K8vZ9174iJ0",
+        "K8vZ917GmW0",
+        "K8vZ917qMpf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AxZkuSGkeRuVlQ",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-w3F",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w3F",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1kFOvNOIGAuK3VC",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Orlando City v NE Revolution - Fan Appreciation Night, pres. by Publix",
+      "place": {
+        "type": "venue",
+        "venueId": "inter-co-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Orlando City SC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kFOvNOIGAuK3VC"
+    },
+    {
+      "id": "2026-11-07-tm-vvG1VZbS6peNtB",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Ed Sheeran",
+      "officialTitle": "Ed Sheeran: LOOP Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "raymond-james-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Ed Sheeran",
+      "act": true,
+      "performerIds": [
+        "K8vZ917CAQV",
+        "K8vZ9179PU7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZbS6peNtB",
+      "expectedDraw": {
+        "count": 39454,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1VZ_C1STMKG",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Ginasteras Harp Concerto",
+      "place": {
+        "type": "venue",
+        "venueId": "mahaffey-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Florida Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_C1STMKG",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-Eoo",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hamilton (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "carol-morsani-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Hamilton (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Eoo",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7PtOA",
+      "metroId": "tampa",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mannequin Pussy",
+      "officialTitle": "Mannequin Pu**y w/ Wednesday - Band",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Mannequin Pussy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PtOA",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-24-sa-gousfbulls-com-14758",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "88° feels-like at a 1:00 pm start, no roof.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7-EoN",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AeFZ_aGkMNOyo1",
+      "date": "2026-10-24",
+      "start": "15:30"
+    },
+    {
+      "eventId": "2026-10-24-tm-1kFOvPFIGACD38y",
+      "date": "2026-10-24",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1VZ_32booGY",
+      "date": "2026-10-24",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7x9GA",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Sporting JAX at Rowdies 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAvAqf",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAZEFk",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-rowdies-401842305",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The Hip Abduction 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1kFOvNOIGAGEwwx",
+      "date": "2026-10-24",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7-E8z",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_fxjdz45",
+      "date": "2026-10-25",
+      "start": "08:30"
+    },
+    {
+      "eventId": "2026-10-25-sa-gousfbulls-com-14530",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-E8S",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_omhlA2M",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1AeFZ_eGkS45J4N",
+      "date": "2026-10-25",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-10-25-tm-1AeFZ_FGkn1Mew3",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "draw": {
+        "count": 10532
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_opLsz5J",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-EoZ",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-gA_",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9000
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZEFN",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-26-mlb-849804",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-16xZkoKJ9ZA57FCA",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "draw": {
+        "count": 5358
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7JpP8",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7-w3e",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-mlb-849803",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-1kFOvPFIGACHxo4",
+      "date": "2026-10-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7-w3d",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-mlb-849799",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1VZ_8uXPNex",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5934
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1VZ_C1wAE1g",
+      "date": "2026-10-29",
+      "start": "11:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-lightning-401892601",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "CeCe Winans · COME WORSHIP! Tour 8.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1VZ_A3CEUsx",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Winnipeg Jets at Lightning 8.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5934
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1VZ_GwtMh8R",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7-Eo3",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-1AxZk3dGkeHa7UV",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "draw": {
+        "count": 10532
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-gousfbulls-com-14468",
+      "date": "2026-10-30",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-10-30-sa-gousfbulls-com-14764",
+      "date": "2026-10-30",
+      "start": "17:30"
+    },
+    {
+      "eventId": "2026-10-30-sa-gousfbulls-com-14439",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-1kFOvPFIGACWxo-",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-1AeFZ_aGkMNxaoK",
+      "date": "2026-10-30",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7-Eo9",
+      "date": "2026-10-30",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1VZ_1r90ICL",
+      "date": "2026-10-30",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAZtOF",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-usf-football-401862816",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7-w37",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7-EoE",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1AeFZ_kGkwOQklA",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "draw": {
+        "count": 10532
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1VZ_kJvgfqs",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AAZtO3",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1VZ_3DPqRa6",
+      "date": "2026-10-31",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vvG1VZ_3BUDa1A",
+      "date": "2026-11-01",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-buccaneers-401873025",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7-w3A",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-gousfbulls-com-14765",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vvG1VZ_C1SuM2R",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-1AeFZ_8GkSGINrx",
+      "date": "2026-11-01",
+      "start": "15:30"
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PUjb",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7OyAs",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7-w3k",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-usf-wbb-401913842",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "read": {
+        "rating": 3,
+        "friction": "Heavy",
+        "why": "Charleston So at South Florida (MBB · Home opener) next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-usf-mbb-401911374",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Heavy",
+        "why": "Furman at South Florida (WBB · Home opener) next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-1AeFZ_3GkBPe3Ny",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-1AeFZ_8GkSGndrE",
+      "date": "2026-11-02",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-03-tm-1kFOvPFIGACTeoT",
+      "date": "2026-11-03",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-11-03-tm-16xZkfgObZACeG52",
+      "date": "2026-11-03",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-03-espn-lightning-401892635",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7-Eo-",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7-Eo_",
+      "date": "2026-11-04",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1VZ_CBh66Cw",
+      "date": "2026-11-05",
+      "start": "17:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-17FOv0G65wwP47r",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "draw": {
+        "count": 10532
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-lightning-401892650",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7-E8w",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1AxZkuSGkeRv7nM",
+      "date": "2026-11-06",
+      "start": "13:00",
+      "draw": {
+        "count": 12000
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-gousfbulls-com-14766",
+      "date": "2026-11-06",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1VZ_GwNH1aZ",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1AeFZ_3GkBPdx0A",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7-w36",
+      "date": "2026-11-06",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZtO9",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AxZkuSGkeRuVlQ",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "draw": {
+        "count": 12000
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-w3F",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1kFOvNOIGAuK3VC",
+      "date": "2026-11-07",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1VZbS6peNtB",
+      "date": "2026-11-07",
+      "start": "17:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 39454
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1VZ_C1STMKG",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-Eoo",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7PtOA",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    }
+  ]
+}

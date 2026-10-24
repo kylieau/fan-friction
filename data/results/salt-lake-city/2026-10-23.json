@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-utah-jazz-401909849",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-jazz",
+      "home": {
+        "name": "Jazz",
+        "score": 120
+      },
+      "away": {
+        "name": "Pelicans",
+        "score": 119
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-10-24T12:47:24.034Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "21:43"
+    },
+    {
+      "eventId": "2026-10-23-espn-utah-royals-401854028",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "america-first-field",
+      "homeTeamId": "utah-royals",
+      "home": {
+        "name": "Royals",
+        "score": 0
+      },
+      "away": {
+        "name": "Reign",
+        "score": 0
+      },
+      "attendance": 14149,
+      "capturedAt": "2026-10-24T12:47:24.034Z"
+    }
+  ]
+}

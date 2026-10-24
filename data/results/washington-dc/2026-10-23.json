@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-wizards-401909846",
+      "metroId": "washington-dc",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "wizards",
+      "home": {
+        "name": "Wizards",
+        "score": 102
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 112
+      },
+      "attendance": 18952,
+      "capturedAt": "2026-10-24T12:47:24.630Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

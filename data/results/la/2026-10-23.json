@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-lakers-401909851",
+      "metroId": "la",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 125
+      },
+      "away": {
+        "name": "Clippers",
+        "score": 117
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-10-24T12:47:14.415Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

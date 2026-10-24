@@ -1,0 +1,4158 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "metroName": "Denver",
+  "timeZone": "America/Denver",
+  "capturedOn": "2026-10-24",
+  "capturedAt": "2026-10-24T12:47:04.335Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-24",
+    "through": "2026-11-07"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 16
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 105
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 10
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7xKpa",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "kind": "special",
+      "title": "Congreso de Metanoia",
+      "place": {
+        "type": "venue",
+        "venueId": "denver-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Congreso de Metanoia",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xKpa"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A70JZg",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70JZg",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-24-sa-denverpioneers-com-16061",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Denver vs. Pacific",
+      "place": {
+        "type": "venue",
+        "venueId": "du-soccer-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-espn-denver-summit-fc-401854093",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Summit FC vs. Louisville",
+      "broadcast": "ION",
+      "place": {
+        "type": "venue",
+        "venueId": "centennial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "denver-summit-fc",
+        "away": "louisville",
+        "awayOpponent": "louisville"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12372,
+        "low": 12322,
+        "high": 12372,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAZ8o3",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Jade Cicada",
+      "officialTitle": "Jade Cicada w/ Mickman",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Jade Cicada",
+      "act": true,
+      "performerIds": [
+        "K8vZ917paW0",
+        "Z7r9jZap_d",
+        "Z7r9jZa4jg",
+        "Z7r9jZ1779O9"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ8o3",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-du-mhockey-401904865",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Boston College",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "boston-college",
+        "awayOpponent": "boston-college"
+      },
+      "rank": {
+        "home": 4,
+        "away": 18
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-tm-G5vzZ_Fkkb47U",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Tom Papa: Grateful Bread Tour Special Tapings",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Tom Papa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_Fkkb47U"
+    },
+    {
+      "id": "2026-10-24-espn-nuggets-401909859",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Nuggets vs. Pelicans",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "pelicans",
+        "awayOpponent": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19763,
+        "low": 19735,
+        "high": 19854,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-G5vzZ_6r0S92s",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Shpongle",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Shpongle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_6r0S92s",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-rapids-761897",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rapids vs. Vancouver",
+      "place": {
+        "type": "venue",
+        "venueId": "dicks-sporting-goods-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rapids",
+        "away": "vancouver-whitecaps",
+        "awayOpponent": "vancouver"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15896,
+        "low": 15130,
+        "high": 16393,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A70Eva",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Eva",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A70tPI",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Kettama (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Kettama",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tPI"
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A70Sqb",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sqb",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vzZ_7YHqj28",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Leonid & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Leonid & Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_7YHqj28",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7-0_Y",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Stardew Valley: Symphony of Seasons",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Stardew Valley: Symphony Of Seasons",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-0_Y"
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7PgGN",
+      "metroId": "denver",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Blasting Company plays \"Over The Garden Wall\" (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The Blasting Company",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PgGN"
+    },
+    {
+      "id": "2026-10-26-tm-G5vzZbzAVheD4",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Evanescence",
+      "officialTitle": "Evanescence 2026 World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Evanescence",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175430",
+        "K8vZ917GSg7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZbzAVheD4",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-G5vzZ_5RYtE-2",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dweezil Zappa",
+      "officialTitle": "Dweezil Zappa DZ20: Like Father, Like Son",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dweezil Zappa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_5RYtE-2",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-nuggets-401909876",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Nuggets vs. Warriors",
+      "broadcast": "NBCSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "warriors",
+        "awayOpponent": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19671,
+        "low": 19616,
+        "high": 19840,
+        "fromCrowds": true,
+        "games": 63,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 63 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZ8PF",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rebecca Black",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Rebecca Black",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ8PF",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7-b_w",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Tucker Wetmore",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Tucker Wetmore",
+      "act": true,
+      "performerIds": [
+        "K8vZ917jYYf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-b_w",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7PE_E",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE_E",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vzZ_1XQVIWV",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171FDV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1XQVIWV",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AAvaO6",
+      "metroId": "denver",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Speed w/ God's Hate",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Speed",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvaO6"
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AA70ap",
+      "metroId": "denver",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Basketball vs. Chadron State Eagles Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70ap",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7-0GF",
+      "metroId": "denver",
+      "date": "2026-10-28",
+      "start": "18:45",
+      "kind": "show",
+      "title": "Koe Wetzel",
+      "officialTitle": "Koe Wetzel w/ Wade Bowen",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Koe Wetzel",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pldV",
+        "K8vZ91750Af"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-0GF",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-avalanche-401892598",
+      "metroId": "denver",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Avalanche vs. Devils",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "devils",
+        "awayOpponent": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18040,
+        "low": 18036,
+        "high": 18093,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A70Sq_",
+      "metroId": "denver",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sq_",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A70vqz",
+      "metroId": "denver",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geese",
+      "officialTitle": "GEESE (21+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Geese",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70vqz"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A70SqO",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70SqO",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-29-sa-denverpioneers-com-16087",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Santa Clara",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7O0qF",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Cypress Hill",
+      "officialTitle": "Cypress Hill and Method Man and Redman: Haunted Rocks with De La Soul, Digable Planets, Hieroglyphics, and The Pharcyde",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Cypress Hill",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171580",
+        "K8vZ9171Qif"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7O0qF",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vzZ_1DeZHF3",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dan + Shay",
+      "officialTitle": "Dan + Shay: The Young Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dan + Shay",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173kl0",
+        "K8vZ917QEF0",
+        "K8vZ917h770"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1DeZHF3",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7P3Q4",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Plini",
+      "officialTitle": "Plini (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Plini",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P3Q4",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PE_I",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE_I",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PU0P",
+      "metroId": "denver",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dinosaur Jr.",
+      "officialTitle": "Dinosaur Jr (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Dinosaur Jr.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PU0P",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-espn-du-mhockey-401904866",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Denver vs. Omaha",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "omaha",
+        "awayOpponent": "omaha"
+      },
+      "rank": {
+        "home": 4
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-30-tm-G5vzZ_aLzMG-_",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Fred Armisen: Comedy For Musicians But Everyone Is Welcome",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Fred Armisen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_aLzMG-_"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A70SqP",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70SqP",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7x4Qp",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "show",
+      "title": "deadmau5",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "deadmau5",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GcSf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x4Qp",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vzZ_o3zNqsK",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Loud Luxury",
+      "officialTitle": "Haunted Mansion feat. LOUD LUXURY, BRYCE ALAKAI, MC4D + more!",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Loud Luxury",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_o3zNqsK",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7-3bb",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Matroda",
+      "officialTitle": "Matroda - Ages 16+",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Matroda",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-3bb"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7P-jI",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "SIENNA SPIRO",
+      "officialTitle": "Sienna Spiro (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "SIENNA SPIRO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-jI",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAvt_k",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fly",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Fly",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvt_k",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-denverpioneers-com-16088",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Denver vs. San Francisco",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A70Sq-",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sq-",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-10-31-sa-denverpioneers-com-16034",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Denver vs. Pacific",
+      "place": {
+        "type": "venue",
+        "venueId": "du-soccer-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-espn-du-mhockey-401904867",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Omaha",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "omaha",
+        "awayOpponent": "omaha"
+      },
+      "rank": {
+        "home": 4
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-31-espn-rapids-761923",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rapids vs. Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "dicks-sporting-goods-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "rapids",
+        "away": "chicago-fire",
+        "awayOpponent": "chicago"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15896,
+        "low": 15130,
+        "high": 16393,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7x4Q4",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "show",
+      "title": "deadmau5",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "deadmau5",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GcSf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x4Q4",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-avalanche-401892623",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Avalanche vs. Flames",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "flames",
+        "awayOpponent": "flames"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18131,
+        "low": 18130,
+        "high": 18131,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7Pvuo",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Whethan",
+      "officialTitle": "Whethan (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Whethan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pvuo"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7x9Ad",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shadowgrass",
+      "officialTitle": "ShadowGrass (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Shadowgrass",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9Ad",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7Pfqv",
+      "metroId": "denver",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Julia Jacklin",
+      "officialTitle": "Julia Jacklin (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Julia Jacklin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pfqv",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1AA7Nrf",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "11:00",
+      "kind": "special",
+      "title": "D??a de Muertos Festival / Day of the Dead Festival - \r\n(Ages 18 & Under Free)",
+      "place": {
+        "type": "venue",
+        "venueId": "denver-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Fairs & Festivals"
+      },
+      "performer": "Day of the Dead Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7Nrf"
+    },
+    {
+      "id": "2026-11-01-espn-broncos-401873033",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "14:25",
+      "kind": "game",
+      "title": "Broncos vs. Chiefs",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "empower-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "broncos",
+        "away": "chiefs",
+        "awayOpponent": "chiefs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 76708,
+        "low": 76478,
+        "high": 76927,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A70tjA",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tjA",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vzZ_FUokkC4",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "officialTitle": "Teddy Swims: The UGLY Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0",
+        "K8vZ917GsJ7",
+        "K8vZ917OJSf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_FUokkC4",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A70b3v",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Basement",
+      "officialTitle": "Basement w/ High Vis",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Basement",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70b3v",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1AAZFok",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Orville Peck",
+      "officialTitle": "Orville Peck (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Orville Peck",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFok"
+    },
+    {
+      "id": "2026-11-01-tm-G5vzZ_19Z_cVa",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yandel",
+      "officialTitle": "Yandel - SINFÓNICO",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Yandel",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oID0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_19Z_cVa",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vzZ_kS-YG8l",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mon Laferte",
+      "officialTitle": "Mon Laferte - Femme Fatale Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Mon Laferte",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_kS-YG8l",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A70Iqv",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Everclear",
+      "officialTitle": "Everclear (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Everclear",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Iqv",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5vzZ_52GYqPQ",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot US Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_52GYqPQ",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AA70a9",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Basketball vs. Lindenwood Lions Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70a9",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AA7xk3",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Air Force Academy Falcons Womens Basketball vs. Denver Pioneers Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "clune-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Air Force Academy Falcons Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7xk3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-espn-nuggets-401909918",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Nuggets vs. Blazers",
+      "broadcast": "KUNP 16",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "blazers",
+        "awayOpponent": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19657,
+        "low": 19556,
+        "high": 19816,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5vzZ_uewza1S",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Billy Joel Legacy",
+      "officialTitle": "The Billy Joel Legacy - A Tribute Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "The Billy Joel Legacy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_uewza1S",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A70tCb",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Thee Sinseers",
+      "officialTitle": "Thee Sinseers (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Thee Sinseers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tCb",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7PtJo",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brand New",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Brand New",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PtJo"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AA7AG6",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Mens Basketball vs. Montana State Billings Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7AG6",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAZPuz",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fuerza Regida",
+      "officialTitle": "Fuerza Regida - This Is Our Dream Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Fuerza Regida",
+      "act": true,
+      "performerIds": [
+        "K8vZ9179vO0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZPuz",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5vzZ_5nhWFMO",
+      "metroId": "denver",
+      "date": "2026-11-03",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Knocked Loose",
+      "officialTitle": "Knocked Loose & Denzel Curry",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Knocked Loose",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_5nhWFMO",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7PPGO",
+      "metroId": "denver",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPGO",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1AAv_bN",
+      "metroId": "denver",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Andy Mann & The Eli West Trio - Evening One",
+      "place": {
+        "type": "venue",
+        "venueId": "bellco-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Andy Mann",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv_bN"
+    },
+    {
+      "id": "2026-11-03-tm-G5vzZ_8gzWPfM",
+      "metroId": "denver",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fuerza Regida",
+      "officialTitle": "Fuerza Regida - This Is Our Dream Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Fuerza Regida",
+      "act": true,
+      "performerIds": [
+        "K8vZ9179vO0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_8gzWPfM",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5vzZ_ad_wXhx",
+      "metroId": "denver",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "PJ Morton",
+      "officialTitle": "PJ Morton - Saturday Night Sunday Morning Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "PJ Morton",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_ad_wXhx",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-du-wbb-401923193",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Lindenwood",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "du-wbb",
+        "away": "lindenwood-wbb",
+        "awayOpponent": "lindenwood"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 371,
+        "low": 353,
+        "high": 392,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-nuggets-401909931",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Nuggets vs. Raptors",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "raptors",
+        "awayOpponent": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19657,
+        "low": 19556,
+        "high": 19816,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7PPG9",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPG9",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7PSFY",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Colorado Speaker Series: Stacy Abrams",
+      "place": {
+        "type": "venue",
+        "venueId": "bellco-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Stacey Abrams",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PSFY"
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7xKAS",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Joshua Slone",
+      "officialTitle": "Joshua Slone w/ Jake Minch",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Joshua Slone",
+      "act": true,
+      "performerIds": [
+        "K8vZ917rHFV",
+        "Z7r9jZ177Fpd"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xKAS",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5vzZ_2LkqOX8",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Joy Oladokun",
+      "officialTitle": "Indie 102.3 Presents Joy Oladokun: The Heavy Things Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Joy Oladokun",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_2LkqOX8",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7PPGp",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPGp",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7PPP8",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Volleyball vs. Gonzaga Bulldogs Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Colorado State University Rams Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPP8",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AAZ_ve",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Air Force Academy Falcons Mens Basketball vs. Calumet College Crimson Wave Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "clune-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Air Force Academy Falcons Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ_ve",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-05-espn-avalanche-401892658",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Avalanche vs. Predators",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "predators",
+        "awayOpponent": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18062,
+        "low": 18026,
+        "high": 18082,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7PPGY",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPGY",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AAvxOI",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Alyssa Grace",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Alyssa Grace",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvxOI"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AA7Nrb",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "09:20",
+      "kind": "special",
+      "title": "CHSAA State Gymnastics Championships Day 1",
+      "place": {
+        "type": "venue",
+        "venueId": "denver-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "CHSAA State Gymnastics",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7Nrb",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-sa-denverpioneers-com-16063",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Seattle",
+      "place": {
+        "type": "venue",
+        "venueId": "du-soccer-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-G5vzZ_GxolAJH",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Dabin",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Dabin",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oaYf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_GxolAJH",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AA7AGF",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Mens Basketball vs. Idaho Vandals Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7AGF",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7Px_x",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Px_x",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5vzZ_ARt0CI4",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Grupo Duelo",
+      "officialTitle": "Grupo Duelo - GRAVEDAD TOUR 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Grupo Duelo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_ARt0CI4",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5vzZ_GS52mdO",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Restricted",
+      "officialTitle": "Mutate Presents: Restricted",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Restricted",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_GS52mdO",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZ34p",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mary Droppinz (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Mary Droppinz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ34p"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZvuO",
+      "metroId": "denver",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Houndmouth",
+      "officialTitle": "Houndmouth (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Houndmouth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZvuO"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AA7NOZ",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "11:00",
+      "kind": "special",
+      "title": "CHSAA State Gymnastics Championships Day 2",
+      "place": {
+        "type": "venue",
+        "venueId": "denver-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "CHSAA State Gymnastics",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7NOZ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-sa-denverpioneers-com-16089",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Denver vs. San Diego",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7PIJ7",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Volleyball vs. Boise State Broncos Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Colorado State University Rams Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PIJ7",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AA7xkd",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Air Force Academy Falcons Womens Basketball vs. St. Marys CA Gaels Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "clune-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Air Force Academy Falcons Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7xkd",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70tj7",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tj7",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7Po4V",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "show",
+      "title": "ATLiens",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "ATLiens",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174xq7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Po4V",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-avalanche-401892671",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Avalanche vs. Red Wings",
+      "broadcast": "DSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "red-wings",
+        "awayOpponent": "red-wings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18112,
+        "low": 18089,
+        "high": 18132,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70Sqx",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Beauty And The Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sqx",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZFGb",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Macbeth",
+      "place": {
+        "type": "venue",
+        "venueId": "ellie-caulkins-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Macbeth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFGb",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vzZ_1wyV1lW",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Straight No Chaser",
+      "officialTitle": "Straight No Chaser: Making Spirits Bright Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Straight No Chaser",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1wyV1lW",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vzZ_8MUBoGf",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Ali Wong",
+      "place": {
+        "type": "venue",
+        "venueId": "bellco-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ali Wong",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_8MUBoGf"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7PK4P",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Daniel Donato",
+      "officialTitle": "Daniel Donato's Cosmic Country (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Daniel Donato",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PK4P"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7xvZ7",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Tank and the Bangas",
+      "officialTitle": "Tank and The Bangas (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Tank and the Bangas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xvZ7",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAv7Ag",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Lil Peep Birthday Celebration",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Lil Peep Birthday Celebration",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7Ag"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7xKpa",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A70JZg",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-denverpioneers-com-16061",
+      "date": "2026-10-24",
+      "start": "15:00",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
+      "date": "2026-10-24",
+      "start": "16:30",
+      "read": {
+        "rating": 4.8,
+        "friction": "Heavy",
+        "why": "Vancouver at Rapids 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12372,
+        "low": 12322,
+        "high": 12372
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAZ8o3",
+      "date": "2026-10-24",
+      "start": "17:30",
+      "read": {
+        "rating": 4.8,
+        "friction": "Moderate",
+        "why": "Pelicans at Nuggets (Home opener) and Vancouver at Rapids 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-du-mhockey-401904865",
+      "date": "2026-10-24",
+      "start": "18:00",
+      "read": {
+        "rating": 4.8,
+        "friction": "Heavy",
+        "why": "Pelicans at Nuggets (Home opener) and Vancouver at Rapids 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vzZ_Fkkb47U",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-nuggets-401909859",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 4.8,
+        "friction": "Moderate",
+        "why": "Vancouver at Rapids and Louisville at Summit FC 7.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19763,
+        "low": 19735,
+        "high": 19854
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-G5vzZ_6r0S92s",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-rapids-761897",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 4.8,
+        "friction": "Moderate",
+        "why": "Louisville at Summit FC 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15896,
+        "low": 15130,
+        "high": 16393
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A70Eva",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A70tPI",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 4.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A70Sqb",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vzZ_7YHqj28",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7-0_Y",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7PgGN",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vzZbzAVheD4",
+      "date": "2026-10-26",
+      "start": "18:30",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Warriors at Nuggets 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vzZ_5RYtE-2",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-nuggets-401909876",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Evanescence 2026 World Tour 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19671,
+        "low": 19616,
+        "high": 19840
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZ8PF",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7-b_w",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "The Smashing Pumpkins 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7PE_E",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vzZ_1XQVIWV",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Tucker Wetmore 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AAvaO6",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AA70ap",
+      "date": "2026-10-28",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7-0GF",
+      "date": "2026-10-28",
+      "start": "18:45",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Devils at Avalanche 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-avalanche-401892598",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Koe Wetzel w/ Wade Bowen 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18040,
+        "low": 18036,
+        "high": 18093
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A70Sq_",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A70vqz",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A70SqO",
+      "date": "2026-10-29",
+      "start": "14:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-denverpioneers-com-16087",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7O0qF",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Dan + Shay · The Young Tour 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vzZ_1DeZHF3",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Cypress Hill and Method Man and… 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7P3Q4",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PE_I",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PU0P",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-du-mhockey-401904866",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "friction": "Low",
+        "why": "deadmau5 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vzZ_aLzMG-_",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A70SqP",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7x4Qp",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 7.1,
+        "friction": "Low",
+        "why": "Omaha at Denver (MHKY) 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vzZ_o3zNqsK",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7-3bb",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7P-jI",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAvt_k",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-denverpioneers-com-16088",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A70Sq-",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-denverpioneers-com-16034",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-du-mhockey-401904867",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Heavy",
+        "why": "Flames at Avalanche 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-rapids-761923",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Flames at Avalanche 7.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15896,
+        "low": 15130,
+        "high": 16393
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7x4Q4",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Flames at Avalanche and Fire at Rapids 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-avalanche-401892623",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Omaha at Denver (MHKY) 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18131,
+        "low": 18130,
+        "high": 18131
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7Pvuo",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7x9Ad",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7Pfqv",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1AA7Nrf",
+      "date": "2026-11-01",
+      "start": "11:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-broncos-401873033",
+      "date": "2026-11-01",
+      "start": "14:25",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 76708,
+        "low": 76478,
+        "high": 76927
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A70tjA",
+      "date": "2026-11-01",
+      "start": "18:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vzZ_FUokkC4",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Chiefs at Broncos 0.7 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A70b3v",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1AAZFok",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vzZ_19Z_cVa",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Teddy Swims · The UGLY Tour and Chiefs at Broncos 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vzZ_kS-YG8l",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A70Iqv",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-G5vzZ_52GYqPQ",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AA70a9",
+      "date": "2026-11-02",
+      "start": "17:30"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AA7xk3",
+      "date": "2026-11-02",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-02-espn-nuggets-401909918",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Fuerza Regida 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19657,
+        "low": 19556,
+        "high": 19816
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-G5vzZ_uewza1S",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A70tCb",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7PtJo",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AA7AG6",
+      "date": "2026-11-02",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAZPuz",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Blazers at Nuggets 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5vzZ_5nhWFMO",
+      "date": "2026-11-03",
+      "start": "17:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7PPGO",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1AAv_bN",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5vzZ_8gzWPfM",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5vzZ_ad_wXhx",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-du-wbb-401923193",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 371,
+        "low": 353,
+        "high": 392
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-nuggets-401909931",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Joshua Slone w/ Jake Minch 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19657,
+        "low": 19556,
+        "high": 19816
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7PPG9",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7PSFY",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7xKAS",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 6.3,
+        "friction": "Low",
+        "why": "Raptors at Nuggets 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5vzZ_2LkqOX8",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "read": {
+        "rating": 6.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7PPGp",
+      "date": "2026-11-05",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7PPP8",
+      "date": "2026-11-05",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AAZ_ve",
+      "date": "2026-11-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-05-espn-avalanche-401892658",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18062,
+        "low": 18026,
+        "high": 18082
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7PPGY",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AAvxOI",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AA7Nrb",
+      "date": "2026-11-06",
+      "start": "09:20",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-denverpioneers-com-16063",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vzZ_GxolAJH",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "read": {
+        "rating": 7.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AA7AGF",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7Px_x",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vzZ_ARt0CI4",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vzZ_GS52mdO",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZ34p",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZvuO",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AA7NOZ",
+      "date": "2026-11-07",
+      "start": "11:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-denverpioneers-com-16089",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7PIJ7",
+      "date": "2026-11-07",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AA7xkd",
+      "date": "2026-11-07",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70tj7",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7Po4V",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Red Wings at Avalanche 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-avalanche-401892671",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "ATLiens 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18112,
+        "low": 18089,
+        "high": 18132
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70Sqx",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZFGb",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vzZ_1wyV1lW",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vzZ_8MUBoGf",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7PK4P",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7xvZ7",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAv7Ag",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    }
+  ]
+}

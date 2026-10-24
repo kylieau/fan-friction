@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-blackhawks-401892564",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 1
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 4
+      },
+      "attendance": 19592,
+      "capturedAt": "2026-10-24T12:47:17.115Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    },
+    {
+      "eventId": "2026-10-23-espn-chicago-stars-401854027",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "martin-stadium",
+      "homeTeamId": "chicago-stars",
+      "home": {
+        "name": "Stars",
+        "score": 1
+      },
+      "away": {
+        "name": "Dash",
+        "score": 3
+      },
+      "attendance": 5961,
+      "capturedAt": "2026-10-24T12:47:17.115Z"
+    }
+  ]
+}

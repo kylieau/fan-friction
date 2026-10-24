@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-gophers-hockey-401905009",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 5
+      },
+      "away": {
+        "name": "North Dakota",
+        "score": 3
+      },
+      "capturedAt": "2026-10-24T12:47:23.474Z"
+    },
+    {
+      "eventId": "2026-10-23-espn-st-thomas-hockey-401904659",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-hockey",
+      "home": {
+        "name": "St Thomas",
+        "score": 1
+      },
+      "away": {
+        "name": "Minnesota State",
+        "score": 3
+      },
+      "capturedAt": "2026-10-24T12:47:23.474Z"
+    }
+  ]
+}

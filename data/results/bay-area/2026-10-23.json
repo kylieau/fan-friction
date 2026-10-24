@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-stanford-football-401858272",
+      "metroId": "bay-area",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "stanford-stadium",
+      "homeTeamId": "stanford-football",
+      "home": {
+        "name": "Stanford",
+        "score": 31
+      },
+      "away": {
+        "name": "NC State",
+        "score": 28
+      },
+      "attendance": 13949,
+      "capturedAt": "2026-10-24T12:47:16.839Z",
+      "duration": {
+        "minutes": 206,
+        "kind": "estimated"
+      },
+      "startedAt": "22:35"
+    },
+    {
+      "eventId": "2026-10-23-espn-warriors-401909850",
+      "metroId": "bay-area",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 108
+      },
+      "away": {
+        "name": "Memphis Grizzlies",
+        "score": 111
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-24T12:47:16.839Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "22:13"
+    }
+  ]
+}

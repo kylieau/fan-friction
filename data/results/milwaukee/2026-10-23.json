@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-bucks-401909848",
+      "metroId": "milwaukee",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "bucks",
+      "home": {
+        "name": "Bucks",
+        "score": 125
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 132
+      },
+      "attendance": 16354,
+      "capturedAt": "2026-10-24T12:47:18.123Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "16:15"
+    },
+    {
+      "eventId": "2026-10-23-mlb-849805",
+      "metroId": "milwaukee",
+      "date": "2026-10-23",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "american-family-field",
+      "homeTeamId": "brewers",
+      "home": {
+        "name": "Brewers",
+        "score": 3
+      },
+      "away": {
+        "name": "Rays",
+        "score": 2
+      },
+      "capturedAt": "2026-10-24T12:47:18.360Z",
+      "attendance": 43250,
+      "duration": {
+        "minutes": 189,
+        "kind": "official"
+      },
+      "startedAt": "19:16"
+    }
+  ]
+}

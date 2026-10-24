@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-atlante-401876927",
+      "metroId": "mexico-city",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "atlante",
+      "home": {
+        "name": "Atlante",
+        "score": 0
+      },
+      "away": {
+        "name": "Atl. San Luis",
+        "score": 1
+      },
+      "capturedAt": "2026-10-24T12:47:21.880Z"
+    }
+  ]
+}

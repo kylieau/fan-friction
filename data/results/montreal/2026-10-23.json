@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-ht-laval-rocket-1029182",
+      "metroId": "montreal",
+      "date": "2026-10-23",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 4
+      },
+      "away": {
+        "name": "Hammers",
+        "score": 2
+      },
+      "attendance": 9122,
+      "capturedAt": "2026-10-24T12:47:17.897Z"
+    }
+  ]
+}

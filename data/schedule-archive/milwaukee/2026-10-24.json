@@ -1,0 +1,2936 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "metroName": "Milwaukee",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-24",
+  "capturedAt": "2026-10-24T12:43:41.134Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-24",
+    "through": "2026-11-07"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 3
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 8
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 63
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 21
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-24-sa-gomarquette-com-11202",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Marquette vs. Butler",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "marquette-volleyball",
+        "away": "Butler",
+        "awayOpponent": "butler"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-sa-gomarquette-com-14114",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Marquette vs. UConn",
+      "place": {
+        "type": "venue",
+        "venueId": "valley-fields"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-sa-mkepanthers-com-18633",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Purdue Fort Wayne",
+      "place": {
+        "type": "venue",
+        "venueId": "klotsche-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "uwm-volleyball",
+        "away": "Purdue Fort Wayne",
+        "awayOpponent": "purdue-fort-wayne"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-sa-mkepanthers-com-19122",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Purdue Fort Wayne",
+      "place": {
+        "type": "venue",
+        "venueId": "engelmann-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-24-tm-vvG1jZ_uL85JEF",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Jersey Boys (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uL85JEF",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-24-mlb-849802",
+      "broadcast": "FOX",
+      "starters": {
+        "home": "Logan Henderson",
+        "away": "Drew Rasmussen"
+      },
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Brewers vs. Rays",
+      "stakes": {
+        "round": "WS",
+        "game": 2
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "american-family-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "brewers",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7PtOY",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Milo Rossi - Ages 13+",
+      "place": {
+        "type": "venue",
+        "venueId": "pabst-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Milo Rossi - Ages 13+",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PtOY"
+    },
+    {
+      "id": "2026-10-24-tm-vv17jZ_3GkXWWfCi",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Broadway Bites - Pre Show Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Broadway Bites - Pre Show Dining",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_3GkXWWfCi"
+    },
+    {
+      "id": "2026-10-24-tm-vvG1jZ_uL81kE7",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Jersey Boys (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uL81kE7",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7POfx",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Widespread Panic",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Widespread Panic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7POfx",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2414,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAv7pe",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zoso The Ultimate Led Zeppelin Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Zoso The Ultimate Led Zeppelin Experience",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7pe",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAvSe9",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dylan Scott",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dylan Scott",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvSe9",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-sa-gomarquette-com-14183",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Marquette vs. Michigan State",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "marquette-mbb",
+        "away": "Michigan State",
+        "awayOpponent": "michigan-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-ht-milwaukee-admirals-1029183",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Admirals vs. Wolves",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "milwaukee-admirals",
+        "away": "wolves"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 7180,
+        "low": 5784,
+        "high": 9032,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1jZ_uL8CJEC",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Jersey Boys (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uL8CJEC",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-25-sa-gomarquette-com-11203",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Marquette vs. Xavier",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "marquette-volleyball",
+        "away": "Xavier",
+        "awayOpponent": "xavier"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-tm-vvG1jZ_uL8ukEG",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Jersey Boys (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uL8ukEG",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7POfF",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Widespread Panic",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Widespread Panic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7POfF",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2414,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1AAeZqN",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Twiztid",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Twiztid",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeZqN",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1AAeZqx",
+      "metroId": "milwaukee",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "She Wants Revenge",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "She Wants Revenge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeZqx",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AA70FY",
+      "metroId": "milwaukee",
+      "date": "2026-10-26",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Brewers World Series Watch Party: Game 3",
+      "place": {
+        "type": "venue",
+        "venueId": "american-family-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Brewers Watch Party",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70FY",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-26-espn-bucks-401909872",
+      "metroId": "milwaukee",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Pacers",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "pacers",
+        "awayOpponent": "pacers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17081,
+        "low": 16132,
+        "high": 17081,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 39 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1A7JfrK",
+      "metroId": "milwaukee",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Spite",
+      "officialTitle": "Spite w/ Stick To Your Guns",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Spite",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JfrK",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AA70Fs",
+      "metroId": "milwaukee",
+      "date": "2026-10-27",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Brewers World Series Watch Party: Game 4",
+      "place": {
+        "type": "venue",
+        "venueId": "american-family-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Brewers Watch Party",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70Fs",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AAZy4Y",
+      "metroId": "milwaukee",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Parables Tour with Father Mike Schmitz",
+      "place": {
+        "type": "venue",
+        "venueId": "miller-high-life-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Fr. Mike Schmitz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZy4Y"
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A70_-S",
+      "metroId": "milwaukee",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Old Crow Medicine Show",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Old Crow Medicine Show",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70_-S",
+      "expectedDraw": {
+        "count": 2414,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-sa-mkepanthers-com-19286",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Luther",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "klotsche-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uwm-mbb",
+        "away": "Luther",
+        "awayOpponent": "luther"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-espn-bucks-401909887",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Rockets",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "rockets",
+        "awayOpponent": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17341,
+        "low": 16378,
+        "high": 17341,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 39 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-ht-milwaukee-admirals-1029210",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Admirals vs. Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "milwaukee-admirals",
+        "away": "moose"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4407,
+        "low": 3667,
+        "high": 6596,
+        "fromCrowds": true,
+        "games": 33,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 33 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7PkvA",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Marquette Golden Eagles Womens Volleyball vs. Depaul Blue Demons Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Marquette Golden Eagles Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PkvA",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7-V04",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Blue October",
+      "place": {
+        "type": "venue",
+        "venueId": "pabst-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Blue October",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-V04",
+      "expectedDraw": {
+        "count": 1341,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-sa-gomarquette-com-11205",
+      "metroId": "milwaukee",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Marquette vs. Creighton",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "marquette-volleyball",
+        "away": "Creighton",
+        "awayOpponent": "creighton"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-sa-mkepanthers-com-19278",
+      "metroId": "milwaukee",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Benedictine",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "klotsche-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uwm-wbb",
+        "away": "Benedictine",
+        "awayOpponent": "benedictine"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A700Pv",
+      "metroId": "milwaukee",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shakey Graves",
+      "officialTitle": "Shakey Graves w/ Wild Pink",
+      "place": {
+        "type": "venue",
+        "venueId": "turner-hall-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Shakey Graves",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A700Pv",
+      "expectedDraw": {
+        "count": 987,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7J7fY",
+      "metroId": "milwaukee",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "New Constellations",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "New Constellations",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J7fY",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PEJa",
+      "metroId": "milwaukee",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Røz",
+      "officialTitle": "ROZ",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PEJa",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-mlb-849801",
+      "broadcast": "FOX",
+      "metroId": "milwaukee",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Brewers vs. Rays",
+      "stakes": {
+        "round": "WS",
+        "game": 6,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "american-family-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "brewers",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-30-tm-vvG1jZ_GXLzEf6",
+      "metroId": "milwaukee",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Sugar Skull!",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Sugar Skull!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_GXLzEf6"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A70yPw",
+      "metroId": "milwaukee",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Marquette Golden Eagles Womens Volleyball vs. Creighton Blue Jays Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Marquette Golden Eagles Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70yPw",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAvk8x",
+      "metroId": "milwaukee",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Galantis",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Galantis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvk8x",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAe9q6",
+      "metroId": "milwaukee",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Emo Nite",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Emo Nite",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe9q6",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAeZq0",
+      "metroId": "milwaukee",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "kind": "special",
+      "title": "It's a 2000's Party Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "It's a 2000's Party Halloween",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeZq0"
+    },
+    {
+      "id": "2026-10-31-sa-gomarquette-com-14116",
+      "metroId": "milwaukee",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Marquette vs. Villanova",
+      "place": {
+        "type": "venue",
+        "venueId": "valley-fields"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-mkepanthers-com-19103",
+      "metroId": "milwaukee",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Green Bay",
+      "place": {
+        "type": "venue",
+        "venueId": "engelmann-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-espn-bucks-401909900",
+      "metroId": "milwaukee",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Cavaliers",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "cavaliers",
+        "awayOpponent": "cavaliers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16803,
+        "low": 16803,
+        "high": 16803,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-mlb-849800",
+      "broadcast": "FOX",
+      "metroId": "milwaukee",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Brewers vs. Rays",
+      "stakes": {
+        "round": "WS",
+        "game": 7,
+        "ifNecessary": true
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "american-family-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "brewers",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7J_fw",
+      "metroId": "milwaukee",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Outlander in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Outlander in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J_fw"
+    },
+    {
+      "id": "2026-11-01-sa-gomarquette-com-11204",
+      "metroId": "milwaukee",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Marquette vs. DePaul",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "marquette-volleyball",
+        "away": "DePaul",
+        "awayOpponent": "depaul"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1AAvtZV",
+      "metroId": "milwaukee",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Warren Miller's Days Off",
+      "place": {
+        "type": "venue",
+        "venueId": "pabst-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Documentary"
+      },
+      "performer": "Warren Miller's Days Off",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtZV"
+    },
+    {
+      "id": "2026-11-01-tm-vv17jZ_8GkMHF3Ll",
+      "metroId": "milwaukee",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175T17",
+        "K8vZ917-bbf",
+        "K8vZ917Cz1V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_8GkMHF3Ll",
+      "expectedDraw": {
+        "count": 10260,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-marquette-mbb-401909522",
+      "metroId": "milwaukee",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Marquette vs. Mercyhurst",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-mbb",
+        "away": "mercyhurst",
+        "awayOpponent": "mercyhurst"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 14546,
+        "low": 13857,
+        "high": 15449,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7Pt7b",
+      "metroId": "milwaukee",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Free Throw",
+      "officialTitle": "Free Throw w/ Microwave",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Free Throw",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pt7b",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-sa-mkepanthers-com-19124",
+      "metroId": "milwaukee",
+      "date": "2026-11-03",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Green Bay",
+      "place": {
+        "type": "venue",
+        "venueId": "engelmann-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-03-espn-marquette-wbb-401919074",
+      "metroId": "milwaukee",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Marquette vs. Miss Valley St",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-wbb",
+        "away": "miss-valley-st",
+        "awayOpponent": "miss-valley-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1602,
+        "low": 1346,
+        "high": 1814,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv1A6Zk3FGkdLoUyW",
+      "metroId": "milwaukee",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917Qs-V",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zk3FGkdLoUyW",
+      "expectedDraw": {
+        "count": 10260,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG1jZ_CUwdxsk",
+      "metroId": "milwaukee",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Orville Peck",
+      "officialTitle": "Orville Peck - Man Turned Mule Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "landmark-credit-union-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Orville Peck",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CUwdxsk",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7PP4_",
+      "metroId": "milwaukee",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sleep",
+      "place": {
+        "type": "venue",
+        "venueId": "pabst-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Sleep",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PP4_",
+      "expectedDraw": {
+        "count": 1341,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-sa-gomarquette-com-14177",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Marquette vs. Akron",
+      "place": {
+        "type": "venue",
+        "venueId": "valley-fields"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-mkepanthers-com-18629",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Wright State",
+      "place": {
+        "type": "venue",
+        "venueId": "klotsche-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "uwm-volleyball",
+        "away": "Wright State",
+        "awayOpponent": "wright-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-espn-bucks-401909292",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Raptors",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "raptors",
+        "awayOpponent": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17341,
+        "low": 17341,
+        "high": 17590,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-marquette-mbb-401909523",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Marquette vs. Detroit Mercy",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-mbb",
+        "away": "detroit-mercy-mbb",
+        "awayOpponent": "detroit-mercy"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A70OaF",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Mojo Brookzz",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Mojo Brookzz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70OaF"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7xpv0",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Napoleon Dynamite w/ Jon Heder",
+      "place": {
+        "type": "venue",
+        "venueId": "pabst-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Napoleon Dynamite",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpv0"
+    },
+    {
+      "id": "2026-11-06-tm-vvG1jZ_urXHAs7",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Milwaukee Ballet Presents: Mirror Mirror",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Milwaukee Ballet Presents: Mirror Mirror",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_urXHAs7",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7Pe0N",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Goose",
+      "place": {
+        "type": "venue",
+        "venueId": "miller-high-life-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Goose",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pe0N",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 4079,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7Psx3",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dolly Parton???s Threads: My Songs in Symphony w/ Milwaukee Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "bradley-symphony-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Dolly Parton???s Threads: My Songs in Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Psx3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAeZqP",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Colby Acuff",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Colby Acuff",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeZqP",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvzf3",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Trippie Redd",
+      "officialTitle": "Trippie Redd ??? The Non-Disclosure Agreement Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Trippie Redd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvzf3",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZIj3",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Waterparks",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Waterparks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZIj3",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-mkepanthers-com-18630",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Wright State",
+      "place": {
+        "type": "venue",
+        "venueId": "klotsche-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "uwm-volleyball",
+        "away": "Wright State",
+        "awayOpponent": "wright-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-espn-marquette-wbb-401918909",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Marquette vs. Minnesota",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-wbb",
+        "away": "gophers-wbb",
+        "awayOpponent": "minnesota"
+      },
+      "rank": {
+        "away": 17
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2237,
+        "low": 1951,
+        "high": 3085,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1jZ_urXXPsK",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Milwaukee Ballet Presents: Mirror Mirror",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Milwaukee Ballet Presents: Mirror Mirror",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_urXXPsK",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-ht-milwaukee-admirals-1029273",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Admirals vs. Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "milwaukee-admirals",
+        "away": "wild"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5396,
+        "low": 4672,
+        "high": 5877,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 8 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-gomarquette-com-14117",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Marquette vs. Providence",
+      "place": {
+        "type": "venue",
+        "venueId": "valley-fields"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZbPv",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Joey Diaz - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Joey Diaz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZbPv"
+    },
+    {
+      "id": "2026-11-07-tm-vvG1jZ_urXW4s1",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Milwaukee Ballet Presents: Mirror Mirror",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Milwaukee Ballet Presents: Mirror Mirror",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_urXW4s1",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7Pe0A",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Goose",
+      "place": {
+        "type": "venue",
+        "venueId": "miller-high-life-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Goose",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pe0A",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 4079,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7PsxK",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dolly Parton???s Threads: My Songs in Symphony w/ Milwaukee Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "bradley-symphony-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Dolly Parton???s Threads: My Songs in Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PsxK",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAeeGV",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Maine",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Maine",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeeGV",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv17jZbgGkBxnUFM",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Matt Rife: Stay Golden World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matt Rife",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZbgGkBxnUFM"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-24-sa-gomarquette-com-11202",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-gomarquette-com-14114",
+      "date": "2026-10-24",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-mkepanthers-com-18633",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-sa-mkepanthers-com-19122",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1jZ_uL85JEF",
+      "date": "2026-10-24",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-mlb-849802",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7PtOY",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vv17jZ_3GkXWWfCi",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-vvG1jZ_uL81kE7",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7POfx",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2414
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAv7pe",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAvSe9",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-gomarquette-com-14183",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Wolves at Admirals next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-ht-milwaukee-admirals-1029183",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Michigan State at Marquette (MBB · Preseason) next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7180,
+        "low": 5784,
+        "high": 9032
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1jZ_uL8CJEC",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-sa-gomarquette-com-11203",
+      "date": "2026-10-25",
+      "start": "15:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1jZ_uL8ukEG",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7POfF",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2414
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1AAeZqN",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1AAeZqx",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AA70FY",
+      "date": "2026-10-26",
+      "start": "17:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Pacers at Bucks 3.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-bucks-401909872",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Brewers World Series Watch Part… 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17081,
+        "low": 16132,
+        "high": 17081
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1A7JfrK",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AA70Fs",
+      "date": "2026-10-27",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AAZy4Y",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A70_-S",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2414
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-mkepanthers-com-19286",
+      "date": "2026-10-28",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-bucks-401909887",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17341,
+        "low": 16378,
+        "high": 17341
+      }
+    },
+    {
+      "eventId": "2026-10-28-ht-milwaukee-admirals-1029210",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4407,
+        "low": 3667,
+        "high": 6596
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7PkvA",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7-V04",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1341
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-gomarquette-com-11205",
+      "date": "2026-10-29",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-29-sa-mkepanthers-com-19278",
+      "date": "2026-10-29",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A700Pv",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "draw": {
+        "count": 987
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7J7fY",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PEJa",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-30-mlb-849801",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1jZ_GXLzEf6",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A70yPw",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAvk8x",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAe9q6",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAeZq0",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-gomarquette-com-14116",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-mkepanthers-com-19103",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-bucks-401909900",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16803,
+        "low": 16803,
+        "high": 16803
+      }
+    },
+    {
+      "eventId": "2026-10-31-mlb-849800",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7J_fw",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-gomarquette-com-11204",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1AAvtZV",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv17jZ_8GkMHF3Ll",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10260
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-marquette-mbb-401909522",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14546,
+        "low": 13857,
+        "high": 15449
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7Pt7b",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-03-sa-mkepanthers-com-19124",
+      "date": "2026-11-03",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-marquette-wbb-401919074",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1602,
+        "low": 1346,
+        "high": 1814
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vv1A6Zk3FGkdLoUyW",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10260
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1jZ_CUwdxsk",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7PP4_",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "draw": {
+        "count": 1341
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-gomarquette-com-14177",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-mkepanthers-com-18629",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-bucks-401909292",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17341,
+        "low": 17341,
+        "high": 17590
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-marquette-mbb-401909523",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A70OaF",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7xpv0",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1jZ_urXHAs7",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7Pe0N",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4079
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7Psx3",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAeZqP",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvzf3",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZIj3",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-mkepanthers-com-18630",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-marquette-wbb-401918909",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2237,
+        "low": 1951,
+        "high": 3085
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1jZ_urXXPsK",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-ht-milwaukee-admirals-1029273",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5396,
+        "low": 4672,
+        "high": 5877
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-gomarquette-com-14117",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZbPv",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1jZ_urXW4s1",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7Pe0A",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4079
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7PsxK",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAeeGV",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv17jZbgGkBxnUFM",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-11-08",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-11-08",
+      "basis": "forecast",
+      "capturedAt": "2026-10-24T12:37:51.759Z",
+      "feelsLikeHighF": 60.8,
+      "feelsLikeLowF": 48.5,
+      "code": 0,
+      "precipProbability": 19,
+      "precipMm": 0
+    }
+  ]
+}

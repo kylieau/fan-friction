@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-michigan-mhockey-401905027",
+      "metroId": "detroit",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yost-ice-arena",
+      "homeTeamId": "michigan-mhockey",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 3
+      },
+      "away": {
+        "name": "Western Michigan",
+        "score": 2
+      },
+      "capturedAt": "2026-10-24T12:47:17.697Z"
+    }
+  ]
+}

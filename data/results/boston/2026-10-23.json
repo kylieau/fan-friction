@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-celtics-401909095",
+      "metroId": "boston",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "celtics",
+      "home": {
+        "name": "Celtics",
+        "score": 107
+      },
+      "away": {
+        "name": "Knicks",
+        "score": 103
+      },
+      "attendance": 19156,
+      "capturedAt": "2026-10-24T12:47:18.429Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:13"
+    }
+  ]
+}

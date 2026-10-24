@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-penn-football-401870841",
+      "metroId": "philadelphia",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "penn-franklin-field",
+      "homeTeamId": "penn-football",
+      "home": {
+        "name": "Penn",
+        "score": 24
+      },
+      "away": {
+        "name": "Yale",
+        "score": 21
+      },
+      "attendance": 5531,
+      "capturedAt": "2026-10-24T12:47:18.699Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

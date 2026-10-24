@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-thorns-401854029",
+      "metroId": "portland",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "providence-park",
+      "homeTeamId": "thorns",
+      "home": {
+        "name": "Thorns",
+        "score": 1
+      },
+      "away": {
+        "name": "Courage",
+        "score": 0
+      },
+      "attendance": 20105,
+      "capturedAt": "2026-10-24T12:47:25.098Z"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-08",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-11-08",
+      "basis": "forecast",
+      "capturedAt": "2026-10-24T12:40:43.131Z",
+      "feelsLikeHighF": 67,
+      "feelsLikeLowF": 45.8,
+      "code": 3,
+      "precipProbability": 16,
+      "precipMm": 0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-23",
+  "results": [
+    {
+      "eventId": "2026-10-23-espn-osu-mhockey-401904519",
+      "metroId": "columbus",
+      "date": "2026-10-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mhockey",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 2
+      },
+      "away": {
+        "name": "Augustana (SD)",
+        "score": 3
+      },
+      "note": "OT",
+      "capturedAt": "2026-10-24T12:47:19.845Z"
+    }
+  ]
+}
