@@ -288,7 +288,7 @@ export function FavoritePage() {
                 <Link to={eventRowPath({ ...nextHomeEvent, date: nextHome.date })} className="fav-next-main">
                   <Read rating={readOf(nextHomeEvent, nextHome.date)} size="big" />
                   <span className="log-main">
-                    <span className="log-title"><TitleText text={gameTitle(nextHome)} /></span>
+                    <span className="log-title"><TitleText text={gameTitle(nextHome, team?.id)} /></span>
                     <span className="log-facts">
                       {shortLocalDate(nextHome.date)}
                       {nextHome.start ? ` · ${clockTime(nextHome.start)}` : ''}
@@ -518,8 +518,8 @@ function venueOf(event: CrowdEvent): string {
 
 
 /** The team-relative form belongs to this page alone (Kylie, Oct 11, 2026): "NLCS G3 · vs Brewers", "@ Brewers". */
-function gameTitle(game: TeamGame): string {
-  return teamRelativeTitle(game);
+function gameTitle(game: TeamGame, teamId?: string): string {
+  return teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined, teamId);
 }
 
 /** A schedule or results row: the game, its date and place; the read when the building is covered, else a dash. */
@@ -532,7 +532,7 @@ function GameRow({ game, rating, covered, teamMetroId, teamId, today }: { game: 
   const body = (
     <>
       <span className="log-main">
-        <span className="log-title"><TitleText text={mark ? `${mark} ${teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined)}` : teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined)} /></span>
+        <span className="log-title"><TitleText text={mark ? `${mark} ${teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined, teamId)}` : teamRelativeTitle(game, teamId ? TEAMS[teamId]?.sport : undefined, teamId)} /></span>
         <span className="log-facts">{facts}</span>
       </span>
       {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No verdict: not a covered building">—</span>)}

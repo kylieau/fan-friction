@@ -801,7 +801,7 @@ export async function backfillLegacyCrowds(loadDate: (metroId: string, date: str
 }
 
 /** Bump when the naming rules change, so every log takes the new names once. */
-const TITLE_VERSION = 'opponents-b7'; // Oct 22: build 7 adds the away team to every catalog game, so both teams are credited (labels-r3 ran Oct 15)
+const TITLE_VERSION = 'school-labels-b71'; // Oct 24: build 7.1 retitles school games and labels every college game (opponents-b7 ran Oct 22, labels-r3 Oct 15)
 
 /**
  * Stubs made from an event take that event's current short name (Kylie, Oct 14: old stubs read "NLCS G2 · Dodgers

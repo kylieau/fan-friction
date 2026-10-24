@@ -1,7 +1,7 @@
 import { TEAMS } from '../data/teams';
 import { VENUES, venueNameOn } from '../data/venues';
 import { METROS } from '../config/metros';
-import type { CrowdEvent } from '../data/types';
+import type { CrowdEvent, Team } from '../data/types';
 import { displayName } from '../config/names';
 import { clockTime } from './dates';
 import { isCollegeRoundText } from '../data/sources/roundLabel';
@@ -134,7 +134,7 @@ export function sportLabelOf(event: CrowdEvent): SportLabel | null {
     const named = event.audience.division;
     if (!side && named === 'women') side = school ? 'G' : 'W';
     if (!side && named === 'men') side = school ? 'B' : 'M';
-    if (!side) return { code: sport.code, words: sport.words };
+    if (!side) return bareLabel(sport);
   } else {
     if (sides.length === 0) return null;
     const home = sides[0];
@@ -145,6 +145,28 @@ export function sportLabelOf(event: CrowdEvent): SportLabel | null {
   }
   if (!side) return null;
   return { code: `${side}${sport.code}`, words: `${SIDE_WORDS[side]} ${sport.words}` };
+}
+
+/**
+ * A sport with no side named, as a label: the words, and the bare code inline, unless that code would read as a
+ * sided one ("BVB" is Boys' Volleyball), in which case the words stand inline too ("Beach Volleyball").
+ */
+function bareLabel(sport: { code: string; words: string }): SportLabel {
+  const m = sport.code.match(SPORT_CODE_RE);
+  return { code: m && m[1] ? sport.words : sport.code, words: sport.words };
+}
+
+/**
+ * The sport label a team's own games carry on its schedule (build 7.1, M38: every college and school game, on the
+ * faves rows too): the side from the record, the sideless sports alone; nothing for a pro club.
+ */
+export function teamSportLabel(team: Pick<Team, 'league' | 'sport' | 'name'> | undefined): SportLabel | null {
+  if (!team || !AMATEUR.test(team.league)) return null;
+  const sport = SPORT_CODES[team.sport.toLowerCase()];
+  if (!sport) return null;
+  if (sport.sideless) return { code: sport.code, words: sport.words };
+  const side = sideOf(team as Team);
+  return side ? { code: `${side}${sport.code}`, words: `${SIDE_WORDS[side]} ${sport.words}` } : bareLabel(sport);
 }
 
 /** The squad code for a chip clash (N16): the sport code, or FB for college football. */
@@ -643,18 +665,17 @@ function roundText(p: GameParts, length: Length, compact = false): string | null
 
 /**
  * A game's name in two pieces: the name (matchup, event name, sport label) and the designation (round, game,
- * Preseason, DH), which is never cut. `drop` removes name parts in order: 1 year, 2 event name / sport label (the
- * tag), 3 away team. Rows stop at 2 (build 7.1, M9 and M35b, Oct 24, 2026: the opponent survives the length limit,
- * "UC Riverside at Cal State Fullerton" wraps instead); only a chip drops the away side.
+ * Preseason, DH), which is never cut. `drop` removes name parts in the notes' order: 1 year, 2 away team,
+ * 3 event name / sport label (the tag); the caller truncates last.
  */
 function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = false): { name: string; designation: string[]; aside: string | null } {
   const withYear = drop >= 1 ? { ...p, year: null } : p;
   // Rank in the title on the event page only (Kylie, M3-08, option B; build 6, item 10): "#17 USC at #4 UCLA". Rows
   // and chips never carry it.
   const ranked = (name: string, rank: number | null) => (length === 'full' && rank ? `#${rank} ${name}` : name);
-  const matchup = drop >= 3 ? ranked(withYear.second, withYear.rankSecond) : `${ranked(withYear.first, withYear.rankFirst)} ${withYear.joiner} ${ranked(withYear.second, withYear.rankSecond)}`;
+  const matchup = drop >= 2 ? ranked(withYear.second, withYear.rankSecond) : `${ranked(withYear.first, withYear.rankFirst)} ${withYear.joiner} ${ranked(withYear.second, withYear.rankSecond)}`;
   const tail: string[] = [];
-  if (drop < 2) {
+  if (drop < 3) {
     if (withYear.eventName) tail.push(withYear.eventName);
     else if (withYear.neutralSite && !withYear.round) tail.push('Neutral site');
     if (withYear.sport) tail.push(withYear.sport);
@@ -680,11 +701,18 @@ function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
  */
 function shortGame(p: GameParts): string {
   // The label rides outside the 32-character budget (labels r3: it is its own quiet slot).
+  // A bare matchup is never cut to one side or an ellipsis (build 7.1, M9 and M35b, Oct 24, 2026: the opponent
+  // survives the length limit): "UC Riverside at Cal State Fullerton" keeps both schools and takes a second line,
+  // which the short form allows. A named game keeps build 5's order (the event name outlives the away side:
+  // "Oklahoma · Red River Showdown").
+  const named = Boolean(p.eventName) || (p.neutralSite && !p.round);
+  if (!named) {
+    const whole = gamePieces(p, 'short', 0).name;
+    return whole.length <= SHORT_MAX ? whole : gamePieces(p, 'short', 1).name;
+  }
   let drop = 0;
-  while (drop < 2 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
-  // A matchup is never cut to one side or an ellipsis (build 7.1, M9 and M35b): both schools stay and the row takes a
-  // second line, which the short form allows.
-  return gamePieces(p, 'short', drop).name;
+  while (drop < 3 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
+  return truncate(gamePieces(p, 'short', drop).name, SHORT_MAX);
 }
 
 function renderShow(p: ShowParts, length: 'short' | 'full', drop = 0): string {
@@ -850,8 +878,20 @@ export interface SchedulePick {
   stakes?: { round: string; game?: number; ifNecessary?: boolean };
 }
 
-/** A schedule game's label, the same kinds as an event's (labels r3). `sport` makes baseball's preseason "Spring training". */
-export function scheduleLabelOf(game: SchedulePick, sport?: string): EventLabel | null {
+/**
+ * A schedule game's label, the same kinds as an event's (labels r3). `sport` makes baseball's preseason "Spring
+ * training"; `teamId` names the team whose schedule it is, so a college program's games carry their sport label
+ * ("vs. Michigan St (FB)"; build 7.1, M38), composed with the stage label the way an event's is.
+ */
+export function scheduleLabelOf(game: SchedulePick, sport?: string, teamId?: string): EventLabel | null {
+  const base = scheduleStageLabel(game, sport);
+  const label = teamSportLabel(teamId ? TEAMS[teamId] : undefined);
+  if (!label) return base;
+  if (!base) return { kind: 'sport', own: label.words, full: label.words, inline: label.code, chip: null, ifNecessary: false };
+  return { ...base, own: `${label.words} \u00b7 ${base.own}`, inline: `${label.code} \u00b7 ${base.inline}`, full: `${label.words} \u00b7 ${base.full}` };
+}
+
+function scheduleStageLabel(game: SchedulePick, sport?: string): EventLabel | null {
   if (game.stakes?.round) {
     const words = roundWords(game.stakes.round);
     const g = game.stakes.game && game.stakes.game > 0 ? game.stakes.game : null;
@@ -877,9 +917,9 @@ export function scheduleLabelOf(game: SchedulePick, sport?: string): EventLabel 
  * row's venue line and city tag name the place; build 7.1, M20, Oct 24, 2026, which dropped the " · Melbourne"
  * tail); the label after it in parentheses, which lists show on its own line ("NLCS Game 3").
  */
-export function teamRelativeTitle(game: SchedulePick, sport?: string): string {
+export function teamRelativeTitle(game: SchedulePick, sport?: string, teamId?: string): string {
   const side = game.home || game.neutral ? `vs. ${game.opponent}` : `at ${game.opponent}`;
-  return `${side}${labelSuffix(scheduleLabelOf(game, sport), 'inline')}`;
+  return `${side}${labelSuffix(scheduleLabelOf(game, sport, teamId), 'inline')}`;
 }
 
 /** A round in its chip form: "NLCS G3". */
@@ -889,9 +929,9 @@ export function stakesChip(stakes: { round: string; game?: number }): string {
 }
 
 /** The same game in its canonical form for a list that is not the team's own page: "Dodgers at Brewers (NLCS G6)". */
-export function scheduleGameTitle(us: string, game: SchedulePick, sport?: string): string {
+export function scheduleGameTitle(us: string, game: SchedulePick, sport?: string, teamId?: string): string {
   const name = game.neutral ? (game.home ? `${game.opponent} vs. ${us}` : `${us} vs. ${game.opponent}`) : game.home ? `${game.opponent} at ${us}` : `${us} at ${game.opponent}`;
-  return `${name}${labelSuffix(scheduleLabelOf(game, sport), 'inline')}`;
+  return `${name}${labelSuffix(scheduleLabelOf(game, sport, teamId), 'inline')}`;
 }
 
 /**

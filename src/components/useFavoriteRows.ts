@@ -87,7 +87,7 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
           // The row reads from the Fave's side (Kylie, Oct 19): "vs. Wisconsin", "at Michigan St"; a past game writes
           // its result in first ("W 17–15 at Oregon"), the team page's way.
           const mark = past ? scoreMark(game) : undefined;
-          const side = teamRelativeTitle(game, sport);
+          const side = teamRelativeTitle(game, sport, fav.teamId);
           out.push({
             key,
             fav,

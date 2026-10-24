@@ -211,6 +211,9 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
     // (Cal Baptist "at UCLA" links UCLA's program), so a school on another provider still gets its team link.
     const homeId = read.home ? teamIdFor([school.short, ...school.school], read.program, school.metroId) : teamIdFor([read.opponent], read.program, school.metroId);
     const awayName = read.home ? read.opponent : school.short;
+    // The visitor's record too, when this city has one (Cal Baptist's own program at UCLA), so a favorite gets
+    // credit for its away games (build 7.1, M9; a build 7 review had flagged name-only visitors).
+    const awayId = read.home ? teamIdFor([read.opponent], read.program, school.metroId) : teamIdFor([school.short, ...school.school], read.program, school.metroId);
     // School names only, home first as every feed writes it (the title rules show "Cal Baptist at UCLA"); the
     // program goes on the label line, never in the title (Kylie, Oct 23, 2026, build 7.1 M9).
     const title = read.home ? `${school.short} vs. ${read.opponent}` : `${read.opponent} vs. ${school.short}`;
@@ -226,7 +229,7 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
       ...(read.exhibition ? { preseason: true } : {}),
       place: { type: 'venue', venueId: venue.id },
       audience: audienceOf(read.program),
-      ...(homeId ? { teams: { home: homeId, away: awayName, awayOpponent: awayName.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
+      ...(homeId ? { teams: { home: homeId, away: awayId ?? awayName, awayOpponent: awayName.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
       ...(tm ? { ticketmasterId: tm } : {}),
       crowd: [],
       sourceId: 'sidearm',
@@ -249,16 +252,20 @@ const PROGRAM_IN_TITLE = new RegExp(
  * nothing about a verdict is touched.
  */
 export function repairSidearmRow(event: CrowdEvent): CrowdEvent {
-  if (event.sourceId !== 'sidearm' || event.audience.domain !== 'sports') return event;
+  // A row written since the fix carries its level; it is never read again, so a school whose name ends in a sport
+  // word ("Academy of Football") can't lose a word to a second pass.
+  if (event.sourceId !== 'sidearm' || event.audience.domain !== 'sports' || event.audience.level !== undefined) return event;
   const m = event.title.match(PROGRAM_IN_TITLE);
   if (!m) return event;
   const [, home, program, away] = m;
   const homeId = event.teams?.home ?? teamIdFor([home], program, event.metroId);
+  // The visitor's record where one matches, even on a row that already had the home side (its visitor was text).
+  const awayId = (event.teams?.away && TEAMS[event.teams.away] ? event.teams.away : undefined) ?? teamIdFor([away], program, event.metroId);
   return {
     ...event,
     title: `${home} vs. ${away}`,
     audience: audienceOf(program),
-    ...(homeId && !event.teams ? { teams: { home: homeId, away, awayOpponent: away.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
+    ...(homeId ? { teams: { ...(event.teams ?? {}), home: homeId, away: awayId ?? away, awayOpponent: event.teams?.awayOpponent ?? away.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
   };
 }
 

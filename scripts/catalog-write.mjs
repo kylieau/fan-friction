@@ -19,6 +19,8 @@ const dryRun = process.argv.includes('--dry-run');
 /** The feeds that keep listing a game after its day (with its result), so the pass can tell a dropped game from a past one. */
 const GAME_FEEDS = ['mlb', 'espn', 'hockeytech', 'sidearm'];
 const GAME_FEED_BACK_DAYS = 7;
+/** Snapshot captures from this day on carry their keys in `data` (build 7.1, M16, forward only). */
+const M16_KEYS_FROM = '2026-10-24';
 
 // The client and the key check live in scripts/fan-rows.mjs since Oct 22, 2026 (the archive step reads fan rows too).
 const { db, reason } = serviceDb();
@@ -279,8 +281,10 @@ try {
       // The app reads only `data` (catalogCache.ts keys it by `metroId|eventId` and takes the capture day and time
       // from it), and a file's forecast rows carry none of the three: until Oct 24, 2026 (build 7.1, M16) every
       // saved verdict was filed under "undefined" and a past day showed a recomputed verdict instead of its saved one.
-      // The file's own values go in beside the row; the row's rating is written exactly as it was captured.
-      snapshots.push({ metro_id: parsed.metroId, captured_on: parsed.capturedOn, captured_at: parsed.capturedAt, event_id: row.eventId, date: row.date, start: row.start ?? null, data: { metroId: parsed.metroId, capturedOn: parsed.capturedOn, capturedAt: parsed.capturedAt, ...row } });
+      // The file's own values go in beside the row, for captures from the fix day on (Kylie, Oct 23, 2026, Locked:
+      // forward only, no backfill; the date is one constant if she opens it up). The rating is written as captured.
+      const keyed = parsed.capturedOn >= M16_KEYS_FROM ? { metroId: parsed.metroId, capturedOn: parsed.capturedOn, capturedAt: parsed.capturedAt, ...row } : row;
+      snapshots.push({ metro_id: parsed.metroId, captured_on: parsed.capturedOn, captured_at: parsed.capturedAt, event_id: row.eventId, date: row.date, start: row.start ?? null, data: keyed });
     }
   }
   counts.schedule_snapshots = await upsert('schedule_snapshots', snapshots, 'metro_id,captured_on,event_id');

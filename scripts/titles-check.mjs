@@ -18,9 +18,11 @@ try {
   const { mapTitle, listTitle, fullTitle, scheduleGameTitle, teamRelativeTitle } = await server.ssrLoadModule('/src/lib/eventTitle.ts');
   const cases = [
     // [label, event, {chip, short, full}] — only the lengths the notes give are checked.
-    ['N17 Red River', game('Texas vs. Oklahoma (Red River Showdown)', { neutralSite: true, sourceId: 'seed' }), { full: 'Texas vs. Oklahoma · Red River Showdown' }],
-    ['N17 Florida–Georgia', game('Florida vs. Georgia (neutral site)', { sourceId: 'seed' }), { full: 'Florida vs. Georgia · Neutral site' }],
-    ['N18 East LA Classic', game('East LA Classic (Garfield vs. Roosevelt)', { sourceId: 'seed' }), { full: 'Garfield vs. Roosevelt · East LA Classic' }],
+    // The short forms keep build 5's order for a named game: the event name outlives the away side (guarded since
+    // build 7.1, when bare matchups stopped dropping the away side).
+    ['N17 Red River', game('Texas vs. Oklahoma (Red River Showdown)', { neutralSite: true, sourceId: 'seed' }), { short: 'Oklahoma · Red River Showdown', full: 'Texas vs. Oklahoma · Red River Showdown' }],
+    ['N17 Florida–Georgia', game('Florida vs. Georgia (neutral site)', { sourceId: 'seed' }), { short: 'Georgia · Neutral site', full: 'Florida vs. Georgia · Neutral site' }],
+    ['N18 East LA Classic', game('East LA Classic (Garfield vs. Roosevelt)', { sourceId: 'seed' }), { short: 'Roosevelt · East LA Classic', full: 'Garfield vs. Roosevelt · East LA Classic' }],
     ['N18 Copa Las Vegas', game('Copa Las Vegas: USA vs Mexico', { sport: 'soccer', sourceId: 'ticketmaster' }), { full: 'USA vs. Mexico · Copa Las Vegas' }],
     ['N19 World Series seed', game('World Series Game 1', { sport: 'baseball', teams: { home: 'dodgers', away: 'yankees' }, stakes: { round: 'World Series', game: 1 }, sourceId: 'seed' }), { full: 'Yankees at Dodgers (World Series Game\u00a01)' }],
     ['N03/N04 NLCS', game('Dodgers vs. Brewers', { sport: 'baseball', teams: { home: 'dodgers', away: 'brewers' }, stakes: { round: 'NLCS', game: 3 }, sourceId: 'mlb' }), { chip: 'Dodgers (NLCS\u00a0G3)', short: 'Brewers at Dodgers (NLCS\u00a0G3)', full: 'Brewers at Dodgers (NL Championship Series Game\u00a03)' }],
@@ -163,6 +165,25 @@ try {
   if (repairSidearmRow(fixed) !== fixed || repairSidearmRow(game('Lakers vs. Clippers', { sport: 'basketball' })) === undefined) (failed += 1), console.log('FAIL M9 repair: a repaired or non-school row should pass through as the same object');
   else console.log('ok   M9 repair: a repaired row and a non-school row pass through unchanged');
 
+  // Codex stage 1 (build 7.1): a college program's schedule rows carry the sport label too; a bare beach volleyball
+  // label never reads as Boys' Volleyball; the visitor's record is resolved; a repaired row is never repaired again.
+  const schedFb = teamRelativeTitle({ home: true, opponent: 'Michigan St' }, 'football', 'ucla-football');
+  if (schedFb !== 'vs. Michigan St (FB)') (failed += 1), console.log(`FAIL schedule sport label: ${schedFb}`);
+  const schedPro = teamRelativeTitle({ home: true, opponent: 'Nuggets', preseason: true }, 'basketball', 'clippers');
+  if (schedPro !== 'vs. Nuggets (Preseason)') (failed += 1), console.log(`FAIL schedule pro label: ${schedPro}`);
+  else console.log('ok   Schedule rows: vs. Michigan St (FB) for a college program, pro rows unchanged');
+  const beach = college('UCLA vs. USC', 'beach volleyball');
+  const beachShort = listTitle(beach);
+  const beachSplit = splitTitleLabel(beachShort);
+  if (beachShort !== 'USC at UCLA (Beach Volleyball)' || beachSplit.label?.own !== 'Beach Volleyball') (failed += 1), console.log(`FAIL bare beach volleyball: ${beachShort} → ${JSON.stringify(beachSplit.label)}`);
+  else console.log(`ok   Bare beach volleyball: ${beachShort}, read back as Beach Volleyball`);
+  const withAway = repairSidearmRow(game("UCLA Men's Basketball vs. Cal Baptist", { sport: 'basketball', sourceId: 'sidearm' }));
+  if (withAway.teams?.away !== 'cal-baptist-mbb') (failed += 1), console.log(`FAIL M9 repair visitor record: ${JSON.stringify(withAway.teams)}`);
+  else console.log(`ok   M9 repair: the visitor's record resolved (${withAway.teams.home} vs. ${withAway.teams.away})`);
+  const cleanSchool = college('Academy of Football vs. UCLA', 'football');
+  if (repairSidearmRow(cleanSchool) !== cleanSchool) (failed += 1), console.log('FAIL M9 repair: a row written since the fix was repaired again');
+  else console.log('ok   M9 repair: a row written since the fix (level set) is never read again');
+
   // Build 7.1, M21: a schedule row's venue string reads as the app's own name for the building.
   const { gameVenueName } = await server.ssrLoadModule('/src/data/gameStub.ts');
   const venueCases = [
@@ -170,11 +191,15 @@ try {
     ['United Airlines Field at the Los Angeles Memorial Coliseum', 'LA Memorial Coliseum'],
     ['Staples Center', 'Crypto.com Arena'],
     ['Some Park Nobody Lists', 'Some Park Nobody Lists'],
+    // A name several cities' rooms go by stays the feed's words when the game's city doesn't have it (Codex stage 1).
+    ['The Pavilion', 'The Pavilion'],
   ];
   for (const [raw, want] of venueCases) {
     const got = gameVenueName({ id: 'g', date: '2026-10-04', start: null, home: true, opponent: 'X', venueName: raw }, 'la');
     if (got !== want) (failed += 1), console.log(`FAIL M21 venue name: "${raw}" → "${got}", want "${want}"`);
   }
+  const elsewhere = gameVenueName({ id: 'g', date: '2026-10-04', start: null, home: false, opponent: 'X', venueName: 'Fenway Park' }, 'la');
+  if (elsewhere !== 'Fenway Park') (failed += 1), console.log(`FAIL M21 unique room elsewhere: ${elsewhere}`);
   console.log('ok   M21 venue names: the app\'s own name for a building the feed spells with its sponsor');
 
   // One day of the archive in all three lengths, for a scan.

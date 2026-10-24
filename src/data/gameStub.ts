@@ -61,8 +61,15 @@ function venueOf(game: TeamGame, metroId: string | undefined) {
  * A naming-rights spelling the matcher can't place goes in that room's `aliases`.
  */
 export function gameVenueName(game: TeamGame, metroId?: string): string | undefined {
-  const venue = venueOf(game, metroId ?? game.eventMetroId);
-  return venue ? venueNameOn(venue, game.date) : game.venueName;
+  const name = game.venueName;
+  if (!name) return undefined;
+  // The game's own city first; a room elsewhere only when exactly one room in the catalog goes by the name, so
+  // "The Pavilion" (Villanova, UC Davis, Las Vegas) stays the feed's words rather than becoming a namesake's name.
+  const here = game.eventMetroId ?? metroId;
+  const venue = here ? venueByNameOrPlace(here, name) : undefined;
+  if (venue) return venueNameOn(venue, game.date);
+  const anywhere = Object.values(VENUES).filter((v) => venueGoesBy(v, name));
+  return anywhere.length === 1 ? venueNameOn(anywhere[0], game.date) : name;
 }
 
 /** The home and away team ids, when both are known. */
