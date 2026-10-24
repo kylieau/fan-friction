@@ -4,6 +4,8 @@
 // Needs TICKETMASTER_API_KEY in .env.local or the environment.
 //   node scripts/ticketmaster-venues.mjs            (every venue without ids)
 //   node scripts/ticketmaster-venues.mjs --all      (every venue, re-checked)
+//   node scripts/ticketmaster-venues.mjs --ids=a,b  (only these venue ids: a fresh import, without spending the
+//                                                    daily allowance on rooms the seller does not list)
 // Exact-name matches between 1.5 and 10 km are listed at the end for a hand look and never written.
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -17,6 +19,7 @@ const KEY = process.env.TICKETMASTER_API_KEY ?? env.TICKETMASTER_API_KEY;
 if (!KEY) throw new Error('TICKETMASTER_API_KEY is not set.');
 const all = process.argv.includes('--all');
 const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
+const idFilter = process.argv.find((arg) => arg.startsWith('--ids='))?.slice(6).split(',');
 
 const server = await createServer({ server: { middlewareMode: true }, logLevel: 'error' });
 const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
@@ -51,6 +54,7 @@ const report = [];
 const far = [];
 for (const venue of Object.values(VENUES)) {
   if (metroFilter !== undefined && venue.metroId !== metroFilter) continue;
+  if (idFilter && !idFilter.includes(venue.id)) continue;
   if (!all && venue.ticketmasterIds?.length) continue;
   // A room closed for good is never looked up: the seller's id under that name belongs to its successor (the Downtown
   // Disney House of Blues got the GardenWalk room's id, Oct 17, 2026), and the id match runs before the closed check.

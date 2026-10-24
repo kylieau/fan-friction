@@ -3,7 +3,7 @@
 
 # Research brief: map points for 137 small rooms
 
-Status: open. Written Oct 23, 2026 by Claude Code, at Kylie's request (Oct 23, 2026: "send me the short research for small-room points"). For any research model that can browse.
+Status: closed, answered in `small-rooms-points-answer.md` and folded into `src/data/venues.ts` ("Small rooms, the map-point pass"), Oct 23, 2026. Written Oct 23, 2026 by Claude Code, at Kylie's request (Oct 23, 2026: "send me the short research for small-room points"). For any research model that can browse.
 
 ## What this is for
 Fan/Friction is a personal log of live events. An earlier research series listed these rooms (concert halls, theaters, college gyms and fields, mostly 1,000 to 5,000 seats) but gave no map point, and an OpenStreetMap search could not place them reliably. The app needs one point per room to put it on the map and to match ticket listings to it.
