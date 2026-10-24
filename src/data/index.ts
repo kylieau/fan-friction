@@ -529,7 +529,7 @@ export { spendSummary, spendByVenue, spendByTeam, type SpendSummary, type SpendG
 export { entriesInYear, yearsOf, yearStatPool, teamCounts, cityCounts, longestStreak, type YearStat } from './yearStats';
 export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine, costWords, currencySign } from './costs';
 export { getTeamSchedule, nextTeamGame, onTeamSchedule, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
-export { seasonHomeGames, seasonGameSet, seasonPlayoffGames, seasonPlanEventId, seasonDefaultCost, seasonLabel } from './seasonTickets';
+export { seasonHomeGames, seasonGameSet, seasonPlayoffGames, seasonPlanEventId, seasonDefaultCost, seasonLabel, seatShort } from './seasonTickets';
 export { seasonTicketOf, startSeasonTickets, syncSeasonSchedule, updateSeasonDefaults, seasonEditCounts, setSeasonGame, resetSeasonGame, removeSeasonGame, readdSeasonGame, answerSeasonPlayoff, stopSeasonTickets, seasonCounts } from './personalLog';
 export { espnTeamUrl } from './sources/espnSource';
 export { entryOutcome, hoursAtGames, lengthLine, resultFor, scoreLine } from './results';

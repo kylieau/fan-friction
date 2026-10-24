@@ -11763,3 +11763,374 @@ a.follow-lead::after {
 .upcoming-faves .empty-card {
   margin-top: 10px;
 }
+
+/* ---------- Season tickets (build 7.1, item 15; mocks 02–06, 12-r2–18, 22) ---------- */
+.season-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 10px;
+}
+.season-card-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 10px 14px;
+}
+.season-card-row > svg {
+  flex: none;
+  color: var(--action);
+}
+.season-card-foot {
+  border-top: 1px solid var(--line);
+}
+.season-card-words {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+.season-card-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+.season-card-line {
+  font-size: 14px;
+  font-weight: 700;
+}
+.season-card-sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink2);
+}
+.season-card-link {
+  flex: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.season-card .switch:disabled {
+  opacity: 0.5;
+}
+
+/* The sheets: sections with a Title Case heading and a quiet note at the right. */
+.season-sheet {
+  max-height: calc(100dvh - 60px);
+  overflow-y: auto;
+}
+.season-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.season-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.season-section-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+}
+.season-seat-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.season-money-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.season-money-row .money-field {
+  flex: 0 0 150px;
+}
+.money-field .cost-amount {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.money-field .account-input {
+  width: 100%;
+  min-height: 44px;
+}
+.season-money-note {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  color: var(--ink2);
+}
+.season-helper {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.season-helper .money-field {
+  flex: 1;
+}
+.season-helper .seat-field {
+  flex: 0 0 80px;
+}
+.season-use {
+  flex: none;
+  height: 44px;
+  color: var(--action);
+}
+.season-use:disabled {
+  opacity: 0.5;
+}
+.season-helper-link,
+.season-reset {
+  align-self: flex-start;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--action);
+}
+.season-switch-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.season-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.season-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  font: inherit;
+  color: var(--ink);
+  text-align: left;
+}
+.season-option.on {
+  border-color: var(--action);
+  background: var(--bg);
+}
+.season-option-dot {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  border: 2px solid var(--barOff);
+  border-radius: 50%;
+}
+.season-option.on .season-option-dot {
+  border-color: var(--action);
+  box-shadow: inset 0 0 0 4px var(--card);
+  background: var(--action);
+}
+.season-option-words {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.season-option-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+.season-option-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}
+.season-outline-button {
+  min-height: 48px;
+  border: 1.5px solid var(--action);
+  border-radius: 14px;
+  background: none;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--action);
+}
+
+/* The confirm card in the middle of the screen (16, 18): stacked choices, the quiet one last. */
+.confirm-backdrop {
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.confirm-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.confirm-title {
+  margin: 0;
+  padding: 18px 20px 6px;
+  font-size: 19px;
+  font-weight: 800;
+}
+.confirm-body {
+  padding: 0 20px 12px;
+  font-size: 15px;
+  color: var(--ink2);
+}
+.confirm-body p {
+  margin: 0 0 8px;
+}
+.confirm-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 10px 16px;
+  border: none;
+  border-top: 1px solid var(--line);
+  background: none;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--action);
+}
+.confirm-action.quiet {
+  font-weight: 600;
+  color: var(--ink2);
+}
+.confirm-action-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+/* The season page (06, 13-r2). */
+.season-page-sub {
+  margin: -6px 0 4px;
+}
+.season-defaults {
+  gap: 1px;
+}
+.season-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+}
+.season-value > span[aria-hidden] {
+  color: var(--action);
+}
+.season-past {
+  min-height: 60px;
+}
+.season-month > .list-band {
+  background: color-mix(in srgb, var(--ink) 8%, var(--bg));
+}
+.list-band-right {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+.season-list {
+  margin: 0;
+}
+.season-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 16px;
+  border: none;
+  background: var(--card);
+  font: inherit;
+  color: var(--ink);
+  text-align: left;
+}
+.season-row .log-main {
+  flex: 1;
+  min-width: 0;
+}
+.season-row.off .log-title,
+.season-row.off .stub-date {
+  color: var(--muted);
+}
+.season-row.off .stub-date {
+  border-color: var(--line);
+}
+.season-pre {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--action);
+}
+.season-facts,
+.season-off-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.season-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+.season-chip.outline {
+  background: none;
+  box-shadow: inset 0 0 0 1px var(--barOff);
+}
+.season-readd {
+  flex: none;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1.5px solid var(--action);
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--action);
+}
+.season-check {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  accent-color: var(--action);
+}
+.season-pick-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.season-pick-actions {
+  position: sticky;
+  bottom: 0;
+  padding: 12px 0 4px;
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--bg) 40%);
+}
+.season-foot {
+  margin-top: 8px;
+}
+/* The season page's default rows read as facts, not links (06): ink labels, the chevron in action blue. */
+.season-defaults .settings-row > span:first-child,
+.season-past > span:first-child {
+  color: var(--ink);
+}

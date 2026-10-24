@@ -12,9 +12,9 @@ import { TEAMS } from './teams';
 import { eventFromGame, gameEventId } from './gameStub';
 import { listTitle } from '../lib/eventTitle';
 import { venueNameOn, VENUES } from './venues';
-import { normalizeSeats } from './stubTags';
+import { normalizeSeats, seatsLine } from './stubTags';
 import { normalizeCost } from './costs';
-import type { Cost, Plan, SeasonTicket, StubVisibility, TeamGame } from './types';
+import type { Cost, Plan, SeasonTicket, Seats, StubVisibility, TeamGame } from './types';
 
 /** The season games the switch covers: home, not neutral, not a playoff, preseason when it is included. */
 export function seasonHomeGames(games: readonly TeamGame[], ticket: Pick<SeasonTicket, 'preseason'>): TeamGame[] {
@@ -155,6 +155,14 @@ export function editSeasonPlan(plan: Plan, patch: { seats?: Plan['seats']; cost?
   const cost = 'cost' in patch ? normalizeCost(patch.cost) : plan.cost;
   const { seats: _s, cost: _c, ...rest } = plan;
   return { ...rest, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), season: { ...(plan.season ?? { teamId: '', gameId: '' }), edited: true } };
+}
+
+/** The seat as a row shows it: the section alone ("Sec 48"), the place word for a seatless spot, else the whole line. */
+export function seatShort(seats: Seats | undefined): string {
+  const s = normalizeSeats(seats);
+  if (!s) return '';
+  if (s.spot || !s.section) return seatsLine(s);
+  return /^\d+[A-Za-z]?$/.test(s.section) ? `Sec ${s.section}` : s.section;
 }
 
 /** The season's word for a team page: "2027" from the games' dates, "2026–27" when the season crosses the new year. */

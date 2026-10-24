@@ -61,6 +61,7 @@ import { LastFive } from './FavoritesScreen';
 import { TitleText } from '../components/TitleText';
 import { BackLink } from '../components/BackLink';
 import { QuickAddSheet } from '../components/QuickAddSheet';
+import { SeasonTicketCard } from '../components/SeasonTickets';
 
 /** How many schedule rows show before "See all". */
 const ROWS = 5;
@@ -254,6 +255,8 @@ export function FavoritePage() {
           {following ? '★ Following' : 'Follow'}
         </button>
       </div>
+      {/* Season tickets (build 7.1, item 15): the switch under Follow, on a team's page only. */}
+      {fav.kind === 'team' && team && <SeasonTicketCard team={team} schedule={schedule} />}
       {espn && (
         <a href={espn} target="_blank" rel="noreferrer" className="fav-foot-link fav-foot-out fav-page-espn">
           ESPN ›

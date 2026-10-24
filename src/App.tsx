@@ -12,6 +12,7 @@ import { AddEntryScreen } from './screens/AddEntryScreen';
 import { ManualEntryScreen } from './screens/ManualEntryScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
 import { FavoritePage } from './screens/FavoritePage';
+import { SeasonTicketsScreen } from './screens/SeasonTicketsScreen';
 import { StubsScreen } from './screens/StubsScreen';
 import { TagScreen } from './screens/TagScreen';
 import { ActivityScreen } from './screens/ActivityScreen';
@@ -159,6 +160,7 @@ function Shell() {
           <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/favorites" element={<KeepQuery to="/upcoming" />} />
           <Route path="/favorites/edit" element={<ProfileSettingsScreen editFaves />} />
+          <Route path="/favorites/team/:id/season" element={<SeasonTicketsScreen />} />
           <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
           <Route path="/p/:handle" element={<ProfileScreen />} />
