@@ -10,7 +10,7 @@
 | 2. Pipeline: M16 | done, pushed | `6e5e1a56` | headless chain check passed; the next nightly patches every archived row |
 | 3. Naming: M9, M35b, M38, M20 | done, pushed | `f3f1d776`, archive rewrite `ff70d71b` | code, checks, nightly write-back; the archive rewrite is its own commit |
 | 3. Naming: M21, M32 | done, pushed | `a3185759` | titles-check cases and the report for steps 2–3 |
-| Codex stage 1 | done | the commit after `a3185759` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
+| Codex stage 1 | done, pushed | `6ae4e5c5`, docs `(next)` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
 
 ## Freeze for steps 2–3 (written before the first edit)
 **In scope:** M17, M16, M9, M35b, M38, M20, M21, M32.
@@ -87,12 +87,15 @@ After-shots are in `docs/build-7-1/shots/after/` (the signed-out test browser at
 
 ## Conflicts between the notes and the code
 - The notes say "Stored rows are under `data/schedule-archive/`" for the M9 backfill, but the app reads past days from the Supabase `events` table (`catalogSource.ts`), and the nightly never rewrites a row older than its 7-day floor; `.env.local` holds no service-role key, so a local rewrite of the table was not possible. Resolved with the read-time repair plus the nightly write-back (see M9).
+- Codex stage 1, on record: a title ending in a literal "(BB)" or "(SB)" (a concert's own tail, say) would now be read as a squad tag, since the tag parser has no event context. Neither archive sample held one; worth a glance in the nightly's title scan if one ever appears.
 - §8 says `teamRelativeTitle` adds the venue only at neutral sites; it did (" · {venueName}"), and the shot's row came from `useFavoriteRows.ts`, which builds the same string. One change covered both.
 
 ## Advisor calls
 1. **Before any edit (Oct 24, about 12:45 AM Pacific).** Asked: review the plan for steps 2–3 (M17 env key; M16 writer keys; Sidearm titles with the program moved to the label; sideless sport codes for football, baseball, softball and field hockey; a Sidearm backfill; M20 drop the neutral venue from the title; M21 resolve the feed's venue string at display time with an alias list; M32 rename plus search aliases). It said: store Sidearm titles as "Home vs. Away" like ESPN (a literal "at" title falls to the named branch and loses its label); route the sideless sports through `SPORT_CODES` since every tag regex derives from it; the app reads past days from Supabase `events`, not the archive files, and the nightly never rewrites rows older than its floor, so make the renderer tolerate the old stored shape as well as backfilling, or hand Kylie SQL; M16's data patch reaches every archived row at the next run (nothing recomputed), which is not "forward only" in effect, so record it and reshape the question for Kylie; the weather step also calls JamBase, decide on that key; fix M21 at the three render spots because `team_schedules` rows are already stored; M32 can match the metro code as the "NYC" alias. Did: all of it (details under each item).
 
 2. **After steps 2–3 were pushed (Oct 24, about 1:10 AM Pacific), before calling them done.** It said: the row-form drop-order change reaches named games too (N17 "Red River Showdown", N18 "East LA Classic", the Florida–Georgia neutral case), whose short forms would now drop the event name before the away side, against build 5's order, and those cases assert the full form only, so the check didn't catch it; the report linked after-shots under the git-ignored `.playwright-mcp/`; fill the commit hashes; MEMORY_HANDOFF.md still says the notes haven't landed; `FavoritePage.tsx` still hands the raw feed venue to `loggedRowPath`; the M32 capture was the Where's-home sheet, not the switcher; say in one line why `captured_at: now` on the written-back rows is harmless. Did: the after-shots moved into `docs/build-7-1/shots/after/`; hashes filled; the `captured_at` line added under M9; `loggedRowPath` checked (the venue only feeds `isFurtherOutRoom`, which looks the name up; nothing displays it); the M32 note made honest; the drop-order fix and the short-form assertions done after the Codex findings (below), in one commit; MEMORY_HANDOFF.md rewritten at the stop.
+
+3. **After the Codex fixes were committed (`6ae4e5c5`), before the push and the stop.** It said: the proof instructions for M16 were written before Codex finding 1 and still promised Oct 21 would show 5.3 (it won't; the first day that can show a saved verdict is Oct 24, once it settles), and the M17 check assumed today has a Bowl or Greek show; push before the 6 AM nightly, since the pushed `6e5e1a56` keys every archived row and the forward-only guard was still local; record the `(BB)` / `(SB)` concert-tail risk; confirm the "1 of 334 rows lose the visitor" scan line is a named game; kill the dev server on 3002. Did: all of it (the proof lines corrected here and in MEMORY_HANDOFF.md; the risk under "Conflicts"; the scan line checked; one docs commit, then fetch and push).
 
 ## Codex findings
 **Stage 1** (steps 2–3, run on the diff `33617123..a3185759`, Oct 24 about 1:15–1:25 AM Pacific; read-only; it type-checked and ran the title cases in memory). Seven findings:
@@ -111,6 +114,7 @@ Found fine: the archive rewrite (titles and audiences only, forecasts byte-ident
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
 - `node scripts/event-types-check.mjs`, `copies-check.mjs`, `city-build-check.mjs`: pass (copies: 0 possible copies across 40 cities; city build: all passed). Nothing was already failing.
 - M16 chain check (scratch script, both row shapes primed into `catalogCache`): recorded under M16.
+- The titles-check archive scan (`la 2026-10-23`) reports one row losing its visitor in the short name: a Ticketmaster listing titled "San Diego Toreros Mens Basketball at UCLA Bruins Mens Basketball · Exhibition", a named game (the " · Exhibition" tail), so build 5's order applies; not a bare matchup slipping past the new rule. Pre-existing; the seller's title carries program words that only the school feed's rows were cleaned of (the ESPN or Sidearm copy of that game wins by the one-game rule when both list it).
 - Archive rewrite check: 76 files, 1,212 rows, keys changed = title, audience; forecasts and every other field byte-identical to the previous commit; 0 problems.
 
 ## Superseded rules updated
@@ -118,7 +122,8 @@ Found fine: the archive rewrite (titles and audiences only, forecasts byte-ident
 - `docs/product/product-decisions.md:243`: "Football, baseball, softball and field hockey carry none" (M38).
 
 ## For Kylie to check on a phone
-- After the Oct 24 nightly (about 6 AM Pacific): today's Hollywood Bowl and Greek Theatre event pages show the weather card (M17 / M4), and a settled day such as Wed, Oct 21 shows its saved verdict (5.3 in the shot) with no "Estimated" line (M16).
+- After the Oct 24 nightly (about 6 AM Pacific): the next Ticketmaster show at the Hollywood Bowl or the Greek Theatre in the coming days shows the weather card on its event page (M17 / M4).
+- M16, from about Oct 26: Oct 24 is the first day that can show a saved verdict (it settles 24 hours after its last start), with no "Estimated" line anywhere. Oct 21 stays at the recomputed 6.4, not the shot's saved 5.3, unless she moves `M16_KEYS_FROM` back (question 1).
 - A past school game's page and the Oct 21 lineup read with school names only and the sport on the label line (M9), signed in, on her phone.
 
 ## Research prompts (M35)
