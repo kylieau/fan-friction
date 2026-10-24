@@ -239,7 +239,7 @@ export function ProfileScreen() {
                 >
                   <span className="log-main">
                     <span className="log-title"><TitleText text={plan.title} /></span>
-                    <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name, plan.watch ? 'Watching' : null].filter(Boolean).join(' · ')}</span>
+                    <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name, plan.interested ? 'Interested' : plan.watch ? 'Watching' : null].filter(Boolean).join(' · ')}</span>
                   </span>
                 </Link>
               </li>

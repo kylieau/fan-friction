@@ -25,7 +25,6 @@ export function Timeline({
   emptyFuture,
   label,
   onScrolled,
-  aboveLine,
 }: {
   past: readonly TimelineItem[];
   future: readonly TimelineItem[];
@@ -38,14 +37,12 @@ export function Timeline({
   label: string;
   /** Told when the list has scrolled away from where it opened. */
   onScrolled?: (scrolled: boolean) => void;
-  /** What sits right above the today line and opens with it (Upcoming's "Your plans" band, build 7). */
-  aboveLine?: ReactNode;
 }) {
   const scroller = useRef<HTMLDivElement>(null);
   const todayLine = useRef<HTMLDivElement>(null);
   // No "↑ N earlier" cue and no Earlier line (Kylie, Oct 22, 2026, Locked; it reverses 435d817): the list opens on the
-  // line (or the band above it) and the past is reached by scrolling up, the "↓ Today" pill bringing you back.
-  const anchorRef = useRef<HTMLDivElement>(null);
+  // line and the past is reached by scrolling up, the "↓ Today" pill bringing you back. (Upcoming's band above the
+  // line left with build 7.1, M22: Upcoming is its own page now, and Your Stubs is this component's one user.)
   const placed = useRef(false);
   const hadPast = useRef(false);
   const openedAt = useRef(0);
@@ -72,13 +69,13 @@ export function Timeline({
       return;
     }
     // Nothing ahead and nothing to say about it (Your stubs since build 7): open at the end, the newest rows in view.
-    if (future.length === 0 && !emptyFuture && !aboveLine) {
+    if (future.length === 0 && !emptyFuture) {
       placed.current = true;
       openedAt.current = el.scrollHeight - el.clientHeight;
       el.scrollTop = openedAt.current;
       return;
     }
-    const anchor = anchorRef.current ?? line;
+    const anchor = line;
     const need = el.clientHeight - (el.scrollHeight - pad - anchor.offsetTop);
     if (need > pad) {
       setPad(need);
@@ -128,11 +125,6 @@ export function Timeline({
             </ul>
           </section>
         ))}
-        {aboveLine && (
-          <div ref={anchorRef} className="timeline-above-line">
-            {aboveLine}
-          </div>
-        )}
         <div ref={todayLine} className="today-line">
           <h3 className="today-line-label">{todayLabel}</h3>
         </div>

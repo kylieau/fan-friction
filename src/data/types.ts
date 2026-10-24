@@ -717,8 +717,9 @@ export interface Plan {
   /** Watching?, not Attending? (Kylie, Oct 11): it settles into a watched stub, not an attended one. */
   watch?: boolean;
   /**
-   * Interested?, the third answer (Kylie, Oct 11): no stub when the date passes, never on the feed,
-   * not in Coming up; it shows on the event page and in the Following tab's by-event list.
+   * Interested?, the third answer (Kylie, Oct 11): no stub when the date passes. Since build 7.1 (item 1, M22;
+   * Kylie, Oct 23, 2026) it shows on Upcoming (yours in the plans window, a friend's as a Friends row) and on a
+   * profile's Coming Up, never in Activity. The event page shows it as before.
    */
   interested?: boolean;
   /** A Watching plan's Private / Friends choice and place (build notes 3, 4.7); they carry into the Watched stub. */

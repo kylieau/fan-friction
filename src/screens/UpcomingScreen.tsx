@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
-import { BookmarkIcon, TicketIcon, TvIcon } from '../components/Icons';
-import { Timeline, type TimelineItem } from '../components/Timeline';
+import { BookmarkIcon, PeopleIcon, TicketIcon, TvIcon } from '../components/Icons';
+import { ListBand } from '../components/ListBand';
 import { FollowRow, LeadIcon, readPath } from '../components/FollowRow';
 import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import { useArtistGenres } from '../components/useArtistGenres';
@@ -14,6 +14,8 @@ import {
   favoriteDisplayName,
   favoriteKey,
   favoritesOf,
+  followingFeedWithStatus,
+  getAccount,
   getPersonalLog,
   isFurtherOut,
   isFurtherOutRoom,
@@ -21,15 +23,19 @@ import {
   gameEventId,
   nightKey,
   scoresForNights,
+  subscribeAccount,
   subscribePersonalLog,
+  type CrowdEvent,
   type Favorite,
+  type FeedItem,
   type Plan,
 } from '../data';
-import { addDays, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
+import { addDays, clockTime, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
+import { listTitle } from '../lib/eventTitle';
+import { ACTIVITY_WORDS, feedKind } from '../lib/activity';
 import { favoriteTypeKey } from '../map/typeIcons';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, entryPath, eventPath } from '../lib/view';
-import { getPref, setPref } from '../lib/prefs';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
 /** Both lines of time reach 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
@@ -74,16 +80,26 @@ function planKind(plan: Plan): PlanKind {
 
 const PLAN_WORDS: Record<PlanKind, string> = { attending: 'Attending', watching: 'Watching', interested: 'Interested' };
 
+/** The plans window shows three full rows and half the fourth (item 16, Locked: 3.5 rows at the drawn ~69pt). */
+const PLANS_WINDOW_PX = 240;
+/** The window scrolls inside itself only past this many plans; with fewer the box is as tall as its rows (mock 28). */
+const PLANS_WINDOW_ROWS = 3;
+
 /**
- * Upcoming (build 7, §3.3; Kylie, Oct 21, 2026: "faves should just be renamed to upcoming"; mocks 08–15): what you
- * follow and what you plan, as one line of time. A "Your plans" band sits on top (Attending, Watching, Interested);
- * below it the today line, then the followed teams, artists and venues by month, the past above by scrolling up.
- * The filter button sits beside search at search's size; its sheet is Dates, Show, Faves. Rows carry no log
- * buttons (Kylie, Oct 22): they open the event page, where "+ Stub it" lives.
+ * Upcoming (build 7, §3.3; Kylie, Oct 21, 2026: "faves should just be renamed to upcoming"; mocks 08–15; build 7.1,
+ * M22 and items 1, 3, 5, 10, 11, 16, Kylie, Oct 23, 2026): what you plan and what you follow, future only. Top to
+ * bottom: the YOUR PLANS band (its count when the box scrolls), the plans window (a 240pt box that scrolls inside
+ * itself past three plans, season games included; a swipe that starts outside it moves the page), the helper line
+ * until three plans, the Today divider, then the sticky YOUR FAVES band over the followed teams, artists and venues
+ * by month, with friends' upcoming plans in the same dated list as "Friends · {name} Attending" rows (or a line under
+ * the fave's row for the same event). A fave's game that is also a plan carries the plan's small mark. Nothing from
+ * before today shows (history is You, Your Stubs and Activity). The filter button sits beside search at search's
+ * size; its sheet is Dates, Show, Faves. Rows carry no log buttons (Kylie, Oct 22): they open the event page.
  */
 export function UpcomingScreen() {
   const chipRow = useEdgeFade();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const home = METROS[homeId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO;
   const favorites = useMemo(() => favoritesOf(log), [log]);
@@ -107,8 +123,27 @@ export function UpcomingScreen() {
   const favKeys = favorites.map(favoriteKey);
   const favFilter = useMemo(() => prunePicked(favPicked, favKeys), [favPicked, favKeys.join('|')]);
 
-  const { rows, today } = useFavoriteRows(favorites, home, SPAN_DAYS, SPAN_DAYS);
-  const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title)), [log, today]);
+  // Future only (M22): no past rows, so nothing to reach by scrolling up and no Today pill.
+  const { rows, today, events: listed } = useFavoriteRows(favorites, home, SPAN_DAYS, 0);
+  const listedById = useMemo(() => new Map(listed.map((e) => [e.id, e])), [listed]);
+  const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || (planStart(a, listedById) ?? '99').localeCompare(planStart(b, listedById) ?? '99') || a.title.localeCompare(b.title)), [log, today, listedById]);
+
+  // Friends' upcoming plans (M22, item 1): what the feed already returns for approved followees, Interested included;
+  // the privacy level is applied inside that read, exactly as Activity's was.
+  const [friendPlans, setFriendPlans] = useState<FeedItem[]>([]);
+  useEffect(() => {
+    let current = true;
+    if (!account) {
+      setFriendPlans([]);
+      return;
+    }
+    followingFeedWithStatus(300)
+      .then((result) => current && setFriendPlans(result.items.filter((line) => line.kind === 'planning' && line.date >= today)))
+      .catch(() => current && setFriendPlans([]));
+    return () => {
+      current = false;
+    };
+  }, [account?.id, today]);
 
   // The date range the filter asks for; "All upcoming" is no range at all, so the past stays above the line.
   const range = useMemo(() => dateRange(filter.dates, today), [filter.dates, today]);
@@ -120,13 +155,15 @@ export function UpcomingScreen() {
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   useEffect(() => {
     let current = true;
-    scoresForNights([...shownRows.flatMap((row) => (row.metroId ? [{ metroId: row.metroId, date: row.date }] : [])), ...shownPlans.map((plan) => ({ metroId: plan.metroId, date: plan.date }))]).then(
-      (map) => current && setRatings(map),
-    );
+    scoresForNights([
+      ...shownRows.flatMap((row) => (row.metroId ? [{ metroId: row.metroId, date: row.date }] : [])),
+      ...shownPlans.map((plan) => ({ metroId: plan.metroId, date: plan.date })),
+      ...friendPlans.flatMap((line) => (line.metroId ? [{ metroId: line.metroId, date: line.date }] : [])),
+    ]).then((map) => current && setRatings(map));
     return () => {
       current = false;
     };
-  }, [rows, plans, filter, favFilter]);
+  }, [rows, plans, friendPlans, filter, favFilter]);
 
   // What the filter button counts and the chip row names: one chip per thing picked.
   const chips: { key: string; label: string }[] = [];
@@ -148,33 +185,99 @@ export function UpcomingScreen() {
     setFavPicked(null);
   };
 
-  const toItem = (row: ScheduleRow): TimelineItem => ({
-    key: row.key,
-    group: timelineGroup({ sort: row.date, label: '', precision: 'day' }),
-    node: <FaveRow row={row} rating={row.metroId && !(row.event && isFurtherOut(row.event)) ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null} home={home.id} />,
+  // Which fave rows are also plans (item 16, option A): by the event's id, or the schedule game's.
+  const planByEvent = useMemo(() => new Map(plans.filter((p) => p.eventId).map((p) => [p.eventId as string, p])), [plans]);
+  const rowEventId = (row: ScheduleRow) => row.event?.id ?? (row.link ? (row.link.game.eventId ?? gameEventId(row.link.game)) : undefined);
+
+  // Friends' plans on the same event as a fave's row become its quiet line; the rest are rows of their own (M22).
+  const friendsByEvent = new Map<string, FeedItem[]>();
+  const friendRows: FeedItem[][] = [];
+  const rowEventIds = new Set(shownRows.map(rowEventId).filter(Boolean) as string[]);
+  const byKey = new Map<string, FeedItem[]>();
+  for (const line of friendPlans) {
+    const key = line.eventId ?? `${line.metroId ?? ''}|${line.date}|${line.title.toLowerCase()}`;
+    byKey.set(key, [...(byKey.get(key) ?? []), line]);
+  }
+  for (const [key, lines] of byKey) {
+    if (rowEventIds.has(key)) friendsByEvent.set(key, lines);
+    else friendRows.push(lines);
+  }
+
+  type Dated = { key: string; date: string; start: string | null; node: ReactNode };
+  const faveItems: Dated[] = filter.faves
+    ? shownRows.map((row) => {
+        const id = rowEventId(row);
+        const plan = id ? planByEvent.get(id) : undefined;
+        return {
+          key: row.key,
+          date: row.date,
+          start: row.start,
+          node: (
+            <FaveRow
+              row={row}
+              rating={row.metroId && !(row.event && isFurtherOut(row.event)) ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null}
+              home={home.id}
+              mark={plan ? planIcon(planKind(plan)) : null}
+              line={id && friendsByEvent.has(id) ? friendsLineText(friendsByEvent.get(id)!) : null}
+            />
+          ),
+        };
+      })
+    : [];
+  const friendItems: Dated[] = filter.faves
+    ? friendRows.filter((lines) => inRange(lines[0].date)).map((lines) => {
+        const line = lines[0];
+        const event = line.eventId ? listedById.get(line.eventId) : undefined;
+        return {
+          key: `friends:${line.eventId ?? `${line.metroId}|${line.date}|${line.title}`}`,
+          date: line.date,
+          start: event?.start ?? null,
+          node: <FriendRow lines={lines} event={event} rating={line.metroId && !isFurtherOutRoom(line.metroId, line.venue) ? (ratings.get(nightKey(line.metroId, line.date)) ?? null) : null} home={home.id} />,
+        };
+      })
+    : [];
+  const dated = [...faveItems, ...friendItems].sort((a, b) => a.date.localeCompare(b.date) || (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const months: [string, Dated[]][] = [];
+  for (const item of dated) {
+    const group = timelineGroup({ sort: item.date, label: '', precision: 'day' });
+    const last = months[months.length - 1];
+    if (last && last[0] === group) last[1].push(item);
+    else months.push([group, [item]]);
+  }
+
+  // The plans window (item 16): the box scrolls inside itself past three plans; its cues come from where it is.
+  const windowScrolls = shownPlans.length > PLANS_WINDOW_ROWS;
+  const box = useRef<HTMLDivElement>(null);
+  const [boxAt, setBoxAt] = useState<'top' | 'middle' | 'end'>('top');
+  const onBoxScroll = () => {
+    const el = box.current;
+    if (!el) return;
+    const atEnd = el.scrollTop + el.clientHeight >= el.scrollHeight - 2;
+    setBoxAt(el.scrollTop <= 2 ? 'top' : atEnd ? 'end' : 'middle');
+  };
+  // The YOUR FAVES band pins at the top of the scroll area once the box is gone, with the month band under it
+  // (mock 30): the month bands' sticky offset is the band's measured height.
+  const scroller = useRef<HTMLDivElement>(null);
+  const favesBand = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    const el = scroller.current;
+    const band = favesBand.current;
+    if (el && band) el.style.setProperty('--faves-band-h', `${Math.round(band.getBoundingClientRect().height)}px`);
   });
 
-  const band = !filter.plans ? null : shownPlans.length > 0 ? (
-    <section className="plans-band" aria-label="Your Plans">
-      <h2 className="plans-band-title">Your Plans</h2>
-      <ul className="log-list plans-band-list">
-        {shownPlans.map((plan) => (
-          <li key={plan.id}>
-            <PlanBandRow plan={plan} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} home={home.id} />
-          </li>
-        ))}
-      </ul>
-      <PlansHelper />
-    </section>
-  ) : plans.length > 0 ? (
-    <p className="you-fine plans-band-note">No plans match the filter.</p>
-  ) : (
-    // No plans yet (Kylie, 2026-10-22, Locked; mock 09): one slim prompt in place of the band, so the feature stays findable.
-    <div className="card plans-band-empty">
-      <BookmarkIcon size={16} />
-      <span>No plans yet. Mark events Attending or Interested.</span>
-    </div>
-  );
+  const planRows: ReactNode[] = [];
+  let lastMonth = '';
+  for (const plan of shownPlans) {
+    const month = timelineGroup({ sort: plan.date, label: '', precision: 'day' });
+    // Slim month labels inside the window when the month changes (item 16).
+    if (windowScrolls && lastMonth && month !== lastMonth) planRows.push(<li key={`m:${month}`} className="plans-window-month">{month}</li>);
+    lastMonth = month;
+    planRows.push(
+      <li key={plan.id}>
+        <PlanBandRow plan={plan} event={plan.eventId ? listedById.get(plan.eventId) : undefined} favorites={favorites} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} home={home.id} />
+      </li>,
+    );
+  }
 
   return (
     <div className="screen page timeline-page">
@@ -186,46 +289,79 @@ export function UpcomingScreen() {
         </span>
       </div>
       <FilterChips chips={chips} onDrop={drop} onClear={clear} scrollRef={chipRow} />
-      {favorites.length === 0 && plans.length === 0 ? (
+      {dated.length === 0 && shownPlans.length === 0 && chips.length > 0 ? (
         <div className="card empty-card following-empty">
-          <div className="card-title">No Faves yet</div>
-          <p className="following-empty-sub">Follow a team, artist, or venue to see their games and shows here.</p>
-          <button type="button" className="following-empty-button" onClick={() => setEditingFaves(true)}>
-            Add a Fave
-          </button>
-        </div>
-      ) : shownRows.length === 0 && shownPlans.length === 0 && chips.length > 0 ? (
-        <div className="card empty-card following-empty">
-          <div className="card-title">Nothing matches this filter in the last or next {SPAN_DAYS} days.</div>
+          <div className="card-title">Nothing matches this filter in the next {SPAN_DAYS} days.</div>
           <button type="button" className="following-empty-link" onClick={clear}>
             Show everything <span aria-hidden>›</span>
           </button>
         </div>
       ) : (
-        <Timeline
-          label="Upcoming"
-          past={shownRows.filter((row) => row.date < today).map(toItem)}
-          future={shownRows.filter((row) => row.date >= today).map(toItem)}
-          aboveLine={band}
-          todayLabel={dayBandLabel(today, today)}
-          emptyPast={
-            <div className="card empty-card">
-              <div className="card-title">Nothing from your Faves in the last {SPAN_DAYS} days.</div>
-            </div>
-          }
-          emptyFuture={
-            <div className="card empty-card">
-              <div className="card-title">{favorites.length === 0 ? 'Follow a team, artist, or venue to see what is ahead.' : `Nothing from your Faves in the next ${SPAN_DAYS} days.`}</div>
-              {favorites.length === 0 && (
-                <div className="empty-actions">
-                  <button type="button" className="link-button" onClick={() => setEditingFaves(true)}>
-                    Add a Fave ›
-                  </button>
+        <div className="timeline-body">
+          <div ref={scroller} className="timeline-scroll upcoming-scroll" aria-label="Upcoming">
+            {filter.plans && (
+              <section className="upcoming-plans" aria-label="Your Plans">
+                {/* The 44pt band strip: a full touch target above the box; the count only when the box scrolls (item 16). */}
+                <div className="upcoming-plans-band">
+                  <ListBand as="h2" label={windowScrolls ? `Your Plans · ${shownPlans.length}` : 'Your Plans'} />
                 </div>
-              )}
+                {shownPlans.length > 0 ? (
+                  <div className={`plans-window-frame${windowScrolls ? ` scrolls at-${boxAt}` : ''}`}>
+                    <div ref={box} className="plans-window" style={windowScrolls ? { maxHeight: PLANS_WINDOW_PX } : undefined} onScroll={windowScrolls ? onBoxScroll : undefined}>
+                      <ul className="log-list plans-band-list">{planRows}</ul>
+                      {windowScrolls && <p className="plans-window-end">End of your plans</p>}
+                    </div>
+                  </div>
+                ) : plans.length > 0 ? (
+                  <p className="you-fine plans-band-note">No plans match the filter.</p>
+                ) : (
+                  // The empty line always shows, even with no Faves and no plans (item 3; Kylie, Oct 23, 2026).
+                  <div className="card plans-band-empty">
+                    <BookmarkIcon size={16} />
+                    <span>No upcoming plans. Mark events Attending, Watching, or Interested.</span>
+                  </div>
+                )}
+                {plans.length < 3 && plans.length > 0 && <p className="you-fine plans-band-note">Events you marked Attending, Watching, or Interested. They become stubs in You once they happen.</p>}
+                {favorites.length === 0 && (
+                  <div className="card empty-card following-empty upcoming-add-fave">
+                    <div className="card-title">No Faves yet</div>
+                    <p className="following-empty-sub">Follow a team, artist, or venue to see their games and shows here.</p>
+                    <button type="button" className="following-empty-button" onClick={() => setEditingFaves(true)}>
+                      Add a Fave
+                    </button>
+                  </div>
+                )}
+              </section>
+            )}
+            {/* The Today divider, with room above and below (item 16: about 22pt; a swipe here moves the page). */}
+            <div className="today-line upcoming-today">
+              <h3 className="today-line-label">{dayBandLabel(today, today)}</h3>
             </div>
-          }
-        />
+            {filter.faves && favorites.length > 0 && (
+              <section className="upcoming-faves" aria-label="Your Faves">
+                <div ref={favesBand} className="upcoming-faves-band">
+                  <ListBand as="h2" label="Your Faves" />
+                </div>
+                {months.length === 0 ? (
+                  <div className="card empty-card">
+                    <div className="card-title">Nothing from your Faves in the next {SPAN_DAYS} days.</div>
+                  </div>
+                ) : (
+                  months.map(([group, items]) => (
+                    <section key={group} className="timeline-group upcoming-month" aria-label={group}>
+                      <ListBand label={group} />
+                      <ul className="log-list">
+                        {items.map((item) => (
+                          <li key={item.key}>{item.node}</li>
+                        ))}
+                      </ul>
+                    </section>
+                  ))
+                )}
+              </section>
+            )}
+          </div>
+        </div>
       )}
       {sheet && (
         <UpcomingFilterSheet
@@ -249,29 +385,69 @@ export function UpcomingScreen() {
   );
 }
 
-/** The one-line helper under the band, said once per device (a lean: the band explains itself after that). */
-function PlansHelper() {
-  const [seen] = useState(() => getPref<boolean>('plans-band-seen', false));
-  useEffect(() => {
-    setPref('plans-band-seen', true);
-  }, []);
-  if (seen) return null;
-  return <p className="you-fine plans-band-note">Events you marked Attending or Interested, or plan to watch. They become stubs in You once they happen.</p>;
+/** The plan's icon: ticket for Attending, TV for Watching, bookmark for Interested (the Stub it sheet's own). */
+function planIcon(kind: PlanKind): ReactNode {
+  return kind === 'attending' ? <TicketIcon size={13} /> : kind === 'watching' ? <TvIcon /> : <BookmarkIcon size={13} />;
 }
 
-/** A plan in the band: the status word leads, the title, time and venue, the date's read; no log button (Kylie, Oct 22, 2026). */
-function PlanBandRow({ plan, rating, home }: { plan: Plan; rating: number | null; home: string }) {
+/** A plan's start time: the listing's when the app holds it, else what a hand-typed plan carries. */
+function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>): string | null {
+  return (plan.eventId ? listed.get(plan.eventId)?.start : undefined) ?? plan.manual?.start ?? null;
+}
+
+/**
+ * "Friends · Sam R. Attending", "Friends · Sam R., Jo Attending · Priya Watching" (M22): the people by status, in the
+ * ladder's order, the status words Title Case (Activity's sentences lowercase theirs; this is a label).
+ */
+function friendsLineText(lines: readonly FeedItem[]): string {
+  const order: PlanKind[] = ['attending', 'watching', 'interested'];
+  const parts = order.flatMap((kind) => {
+    const names = lines.filter((line) => feedKind(line) === kind).map((line) => line.friend.displayName ?? line.friend.handle ?? 'Someone');
+    return names.length ? [`${names.join(', ')} ${ACTIVITY_WORDS[kind]}`] : [];
+  });
+  return `Friends · ${parts.join(' · ')}`;
+}
+
+/** A friend's plan with no fave row of its own (M22): the Friends line leads, then the event, its time and venue. */
+function FriendRow({ lines, event, rating, home }: { lines: readonly FeedItem[]; event?: CrowdEvent; rating: number | null; home: string }) {
+  const line = lines[0];
+  const to = line.eventId && line.metroId ? eventPath(line.eventId, line.metroId) : line.metroId ? datePath(line.date, line.metroId) : undefined;
+  const city = line.metroId && line.metroId !== home ? METROS[line.metroId]?.name : null;
+  const text = friendsLineText(lines);
+  return (
+    <FollowRow
+      date={line.date}
+      lead={{ icon: <PeopleIcon size={13} />, text }}
+      title={event ? listTitle(event) : line.title}
+      facts={[event?.start ? clockTime(event.start) : null, line.venue, city].filter(Boolean).join(' · ')}
+      to={to}
+      rating={rating}
+      readTo={line.metroId && !isFurtherOutRoom(line.metroId, line.venue) ? readPath(line.date, line.metroId, line.eventId) : null}
+      cityCode={line.metroId && line.metroId !== home ? METROS[line.metroId]?.code : null}
+      spoken={`${text}, ${event ? listTitle(event) : line.title}, ${shortLocalDate(line.date)}`}
+    />
+  );
+}
+
+/**
+ * A plan in the window: the status leads, with the favorite's short name when the plan's event is a favorite's by id
+ * ("Attending · UCLA FB"; item 11, never guessed from the title), then the title, the start time and venue (item 10),
+ * the date's read; no log button (Kylie, Oct 22, 2026).
+ */
+function PlanBandRow({ plan, event, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; favorites: readonly Favorite[]; rating: number | null; home: string }) {
   const kind = planKind(plan);
-  const icon = kind === 'attending' ? <TicketIcon size={13} /> : kind === 'watching' ? <TvIcon /> : <BookmarkIcon size={13} />;
+  const icon = planIcon(kind);
   const to = plan.manual && !plan.eventId ? entryPath(plan.id) : plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId);
   const noRead = isOutsideGamePlan(plan) || isFurtherOutRoom(plan.metroId, plan.venue);
   const city = plan.metroId !== home ? METROS[plan.metroId]?.name : null;
+  const fave = event?.teams ? favorites.find((f) => f.teamId && (f.teamId === event.teams!.home || f.teamId === event.teams!.away)) : undefined;
+  const start = event?.start ?? plan.manual?.start ?? null;
   return (
     <FollowRow
       date={plan.date}
-      lead={{ icon, text: PLAN_WORDS[kind] }}
+      lead={{ icon, text: fave ? `${PLAN_WORDS[kind]} · ${favoriteDisplayName(fave)}` : PLAN_WORDS[kind] }}
       title={plan.title}
-      facts={[plan.manual?.start, plan.venue, city].filter(Boolean).join(' · ')}
+      facts={[start ? clockTime(start) : null, plan.venue, city].filter(Boolean).join(' · ')}
       to={to}
       rating={noRead ? null : rating}
       readTo={noRead ? null : readPath(plan.date, plan.metroId, plan.eventId)}
@@ -282,8 +458,8 @@ function PlanBandRow({ plan, rating, home }: { plan: Plan; rating: number | null
   );
 }
 
-/** A Fave's row: the icon and display name lead (a link to its page), the title from its side, time and venue. */
-function FaveRow({ row, rating, home }: { row: ScheduleRow; rating: number | null; home: string }) {
+/** A Fave's row: the icon and display name lead (a link to its page), the title from its side, time and venue; a plan mark and a friends line when they apply. */
+function FaveRow({ row, rating, home, mark, line }: { row: ScheduleRow; rating: number | null; home: string; mark?: ReactNode; line?: string | null }) {
   const to = row.event ? eventPath(row.event.id, row.event.metroId) : row.link ? eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home) : datePath(row.date, row.metroId ?? home);
   return (
     <FollowRow
@@ -298,7 +474,9 @@ function FaveRow({ row, rating, home }: { row: ScheduleRow; rating: number | nul
       readTo={row.away || (row.event && isFurtherOut(row.event)) ? null : readPath(row.date, row.metroId, row.event?.id)}
       away={row.noRead}
       cityCode={row.metroId && row.metroId !== home ? METROS[row.metroId]?.code : null}
-      spoken={`${favoriteName(row.fav)}, ${row.title}, ${shortLocalDate(row.date)}`}
+      mark={mark}
+      line={line}
+      spoken={`${favoriteName(row.fav)}, ${row.title}, ${shortLocalDate(row.date)}${mark ? ', in your plans' : ''}`}
     />
   );
 }

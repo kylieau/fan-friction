@@ -34,7 +34,7 @@ export interface ScheduleRow {
  * (the Faves schedule in Settings, 14 days; the Following timeline, 60; build 6, item 7). Teams come from their
  * own schedule, home and away; everyone else from the listings in every covered city.
  */
-export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, aheadDays: number, backDays = 0): { rows: ScheduleRow[]; today: string; horizon: string } {
+export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, aheadDays: number, backDays = 0): { rows: ScheduleRow[]; today: string; horizon: string; /** Every listing loaded for the span, in every covered city, so a plan can find its event (build 7.1, items 10 and 11). */ events: CrowdEvent[] } {
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
   const [schedules, setSchedules] = useState<Map<string, TeamGame[] | null>>(new Map());
   const today = todayIn(home);
@@ -125,7 +125,7 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
     return out.sort((a, b) => (a.date + (a.start ?? '99')).localeCompare(b.date + (b.start ?? '99')));
   }, [favorites, schedules, upcoming, today, horizon, floor]);
 
-  return { rows, today, horizon };
+  return { rows, today, horizon, events: upcoming };
 }
 
 export function venueOf(event: CrowdEvent): string {

@@ -88,7 +88,9 @@ export function YouScreen() {
   const watched = inYear.length - attended;
   const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries).slice(0, 4), [inYear, year, entries]);
 
+  // Attending and Watching are plans; Interested counts beside them (build 7.1, item 5).
   const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today && !plan.interested).sort((a, b) => a.date.localeCompare(b.date)), [log, today]);
+  const interestedCount = useMemo(() => log.plans.filter((plan) => plan.date >= today && plan.interested).length, [log, today]);
   const newest = useMemo(() => [...entries].sort((a, b) => b.when.sort.localeCompare(a.when.sort)).slice(0, 4), [entries]);
   // Faves by most seen, then name (the same order the favorites section and sheet use).
   const seen = useMemo(() => new Map(favorites.map((fav) => [favoriteKey(fav), entries.filter((entry) => entryMatches(entry, fav)).length])), [favorites, entries]);
@@ -130,12 +132,15 @@ export function YouScreen() {
       )}
 
       {/* 1. The only place plans appear on You: one row to the Upcoming tab. */}
-      {plans.length > 0 && (
+      {(plans.length > 0 || interestedCount > 0) && (
         <Link to="/upcoming" className="card you-upcoming-row">
           <CalendarIcon />
+          {/* A count line, not a heading (build 7.1, item 5): "Upcoming · 2 plans · 1 interested"; one plan keeps its name. */}
           <span className="you-upcoming-words">
-            <strong>Upcoming</strong> · {plans.length === 1 ? plans[0].title : `${plans.length} plans`}
-            {plans.length === 1 && ` · ${new Date(`${plans[0].date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' })}`}
+            <strong>Upcoming</strong>
+            {plans.length === 1 && ` · ${plans[0].title} · ${new Date(`${plans[0].date}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' })}`}
+            {plans.length > 1 && ` · ${plans.length} plans`}
+            {interestedCount > 0 && ` · ${interestedCount} interested`}
           </span>
           <span className="add-record-chev" aria-hidden>
             ›

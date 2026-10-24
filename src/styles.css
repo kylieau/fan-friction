@@ -10003,20 +10003,6 @@ a.follow-lead::after {
 }
 
 /* Upcoming's "Your plans" band (build 7, §3.3; mock 08): a dark title band, the plan rows, one helper line. */
-.timeline-above-line {
-  margin-bottom: 4px;
-}
-
-.plans-band-title {
-  margin: 0 -16px;
-  padding: 10px 16px;
-  background: var(--ink);
-  color: var(--card);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
 
 .plans-band-list {
   margin: 0 -16px;
@@ -11642,4 +11628,105 @@ a.follow-lead::after {
   font-size: 12px;
   font-weight: 600;
   color: var(--dodger);
+}
+
+/* ---------- Upcoming since build 7.1 (M22, items 3, 10, 16; the season-tickets boards 28–34) ---------- */
+/* The page scroller holds everything; a swipe that starts anywhere but inside the plans window moves it. */
+.upcoming-scroll {
+  gap: 0;
+}
+/* The YOUR PLANS band strip is a full 44px touch target above the box, in the month bands' light blue (item 10). */
+.upcoming-plans-band .list-band {
+  min-height: 44px;
+}
+/* The window: as tall as its rows up to three plans; past that a 240px box that scrolls inside itself (item 16).
+   Normal scroll chaining, never overscroll-behavior: contain, so a swipe past its end carries on into the page. */
+.plans-window-frame {
+  position: relative;
+  margin: 0 -16px;
+}
+.plans-window {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.plans-window .plans-band-list {
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.plans-window-frame::before,
+.plans-window-frame::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 36px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms;
+  z-index: 1;
+}
+.plans-window-frame::before {
+  top: 0;
+  background: linear-gradient(var(--card), rgba(255, 255, 255, 0));
+}
+.plans-window-frame::after {
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--card));
+}
+/* The cues (item 16): a bottom fade on the cut-off row, a top fade once scrolled; none at all when the box fits. */
+.plans-window-frame.scrolls.at-top::after,
+.plans-window-frame.scrolls.at-middle::before,
+.plans-window-frame.scrolls.at-middle::after,
+.plans-window-frame.scrolls.at-end::before {
+  opacity: 1;
+}
+.plans-window-month {
+  padding: 6px 16px 2px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink2);
+  background: var(--card);
+}
+.plans-window-end {
+  margin: 0;
+  padding: 10px 16px 12px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--card);
+}
+.plans-band-note {
+  padding: 8px 0 0;
+}
+.upcoming-add-fave {
+  margin-top: 10px;
+}
+/* The Today divider sits between the window and YOUR FAVES with room above and below (item 16: 22px, the builder's call). */
+.upcoming-today {
+  padding: 22px 0;
+}
+/* YOUR FAVES pins at the top of the scroll area once the box has gone, and each month band pins under it (mock 30);
+   the band's measured height is the offset. */
+.upcoming-faves-band {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.upcoming-faves-band .list-band,
+.upcoming-month > .list-band {
+  background: color-mix(in srgb, var(--ink) 8%, var(--bg));
+}
+.upcoming-month > .list-band {
+  position: sticky;
+  top: var(--faves-band-h, 40px);
+  z-index: 2;
+}
+.upcoming-month .log-list {
+  margin-top: 8px;
+}
+.upcoming-faves .empty-card {
+  margin-top: 10px;
 }

@@ -460,7 +460,7 @@ export interface FeedItem {
   entry?: Entry;
   /** The friend watched, not attended (8.2); on a planning line, they answered Watching? (Kylie, Oct 11). */
   watched?: boolean;
-  /** They answered Interested? (Kylie, Oct 11): shown on the event page and the by-event list, never the feed. */
+  /** They answered Interested? (Kylie, Oct 11): shown on the event page; since build 7.1 (item 1, M22) on Upcoming and their profile too, never in Activity. */
   interested?: boolean;
   /** Where they're watching, when they shared it with friends (build notes 3, 4.7): "Home" or a place name. */
   place?: string;
@@ -649,16 +649,18 @@ export interface PlanCard {
   venue?: string;
   /** They answered Watching?, not Attending? (Kylie, Oct 11). */
   watch?: boolean;
+  /** They answered Interested? Shown on their profile since build 7.1 (item 1; Kylie, Oct 23, 2026), so the profile and Upcoming agree. */
+  interested?: boolean;
 }
 
-/** Someone's plans from today on, soonest first. Empty when they have not approved you. */
+/** Someone's plans from today on, soonest first, Interested included (build 7.1, item 1). Empty when they have not approved you. */
 export async function plansOf(userId: string): Promise<PlanCard[]> {
   const c = supabase();
   if (!c) return [];
   const { data } = await planCards(c, (q) => q.eq('user_id', userId).gte('date', earliestToday()).order('date', { ascending: true }).limit(20));
   return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean; interested?: boolean } | null }[])
-    .filter((p) => p.date >= todayFor(p.metro_id) && !p.data?.interested)
-    .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined, ...(p.data?.watch ? { watch: true } : {}) }));
+    .filter((p) => p.date >= todayFor(p.metro_id))
+    .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined, ...(p.data?.watch ? { watch: true } : {}), ...(p.data?.interested ? { interested: true } : {}) }));
 }
 
 /** Whether this person follows you (approved). */
