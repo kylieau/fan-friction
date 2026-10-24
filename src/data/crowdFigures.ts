@@ -29,7 +29,7 @@ export interface CrowdFigures {
   final?: number;
 }
 
-/** The figures on a listed event. An estimate reads "~" only in the event page's full number (build 6, item 4). */
+/** The figures on a listed event. No estimate carries a "~" (build 6, item 4; the event page's too since build 7.1, M33). */
 export function crowdFigures(event: CrowdEvent): CrowdFigures {
   const firm = event.crowd.find((f) => f.count != null && f.kind !== 'estimated');
   const announced = event.result?.attendance ?? firm?.count;
@@ -65,7 +65,7 @@ export function entryAtLeastMark(entry: Entry): string {
   return entryCrowd(entry)?.atLeast ? '+' : '';
 }
 
-/** The full figure on the event page: "52,667", "~18,000", "At least 6,667". */
+/** The full figure on the event page: "52,667", "18,000", "At least 6,667". */
 export function crowdFull(shown: CrowdFigureShown, fmt: (n: number) => string): string {
   if (shown.atLeast) return `At least ${fmt(shown.count)}`;
   // No "~" in app copy (build 7.1, M33 and §4): the kind word beside the figure says Estimated.

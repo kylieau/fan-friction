@@ -43,7 +43,10 @@ export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean
   };
   const moveAndSave = (id: string, to: number) => {
     const next = move(id, to);
-    if (next) reorderFavoriteCities(next);
+    if (!next) return;
+    reorderFavoriteCities(next);
+    // React re-inserts the moved row, which drops focus: put it back on the city's handle (keyboard and VoiceOver).
+    requestAnimationFrame(() => rows.current.get(id)?.querySelector<HTMLElement>('.fav-city-handle')?.focus());
   };
 
   // Drag by the handle: the row follows the finger by swapping places as it crosses a neighbour's middle. The moves
@@ -82,8 +85,10 @@ export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean
       // Cities saved meanwhile on another device keep their place: only this city's new spot is applied to them.
       const latest = savedRef.current.filter((c) => c !== id);
       const after = now[now.indexOf(id) - 1];
-      const at = after ? latest.indexOf(after) + 1 : 0;
-      latest.splice(at < 0 ? latest.length : at, 0, id);
+      const found = after ? latest.indexOf(after) : -1;
+      // The city above it gone meanwhile: this one goes to the end rather than the top.
+      const at = !after ? 0 : found < 0 ? latest.length : found + 1;
+      latest.splice(at, 0, id);
       reorderFavoriteCities(latest);
     };
     const onMoveWin = (ev: PointerEvent) => {
@@ -145,6 +150,8 @@ export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean
               aria-describedby="fav-cities-help"
               onPointerDown={(ev) => {
                 ev.preventDefault();
+                // A second finger while one row is held is ignored.
+                if (dragPointer.current !== null) return;
                 dragPointer.current = ev.pointerId;
                 setDragging(id);
               }}

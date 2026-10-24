@@ -46,7 +46,7 @@ async function sendShare(title: string, text: string): Promise<string> {
 }
 
 /**
- * The event page's Share row (build 7.1, M33, Lean; mock 501's footer): "Share This Event" with what it shares under it,
+ * The event page's Share row (build 7.1, M33, Lean; mock 501's footer): "Share this event" with what it shares under it,
  * sending exactly the card's text. The card itself stays for Compare.
  */
 export function ShareRow({ dateLabel, title, line, rating, crowd, sub, icon }: Pick<Props, 'dateLabel' | 'title' | 'line' | 'rating' | 'crowd'> & { sub: string; icon: ReactNode }) {
@@ -55,8 +55,10 @@ export function ShareRow({ dateLabel, title, line, rating, crowd, sub, icon }: P
     <button type="button" className="footer-row" onClick={async () => setNote(await sendShare(title, shareText({ dateLabel, title, line, rating, crowd })))}>
       {icon}
       <span className="footer-row-words">
-        <span className="footer-row-title">Share This Event</span>
-        <span className="footer-row-sub">{note || sub}</span>
+        <span className="footer-row-title">Share this event</span>
+        <span className="footer-row-sub" role="status" aria-live="polite">
+          {note || sub}
+        </span>
       </span>
     </button>
   );

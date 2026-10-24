@@ -44,7 +44,7 @@ import { favPath } from './FavoritesScreen';
 
 /**
  * The Season Tickets page (build 7.1, item 15; mocks 06, 13-r2, 15, 16; Kylie, Oct 23, 2026, Locked): from the team
- * page's "Games & Settings ›". The defaults (seat, price, parking, preseason), the past games' count (stubs in You),
+ * page's "Games & settings ›". The defaults (seat, price, parking, preseason), the past games' count (stubs in You),
  * then the season's upcoming home games by month with each one's seat and price. A removed game stays, greyed, "Not
  * in your plans", with Re-add and its reason ("Sold · $85", shown here alone). A game opens "This Game Only": its
  * seat, price and parking for this game, an Edited mark, Reset to Default, and Remove. Changing a default asks
@@ -145,7 +145,7 @@ export function SeasonTicketsScreen() {
             <button type="button" className="settings-row settings-link settings-group-row" onClick={() => setEditing('seats')}>
               <span>Your Seat</span>
               <span className="settings-value season-value">
-                {seatsLine(ticket.seats) || 'Add'} <span aria-hidden>›</span>
+                <span className="season-value-text">{seatsLine(ticket.seats) || 'Add'}</span> <span aria-hidden>›</span>
               </span>
             </button>
             <button type="button" className="settings-row settings-link settings-group-row" onClick={() => setEditing('ticket')}>
@@ -154,13 +154,13 @@ export function SeasonTicketsScreen() {
                 <span className="season-card-sub">Your ticket only</span>
               </span>
               <span className="settings-value season-value">
-                {typeof ticket.ticket === 'number' ? formatMoney(ticket.ticket, currency) : 'Add'} <span aria-hidden>›</span>
+                <span className="season-value-text">{typeof ticket.ticket === 'number' ? formatMoney(ticket.ticket, currency) : 'Add'}</span> <span aria-hidden>›</span>
               </span>
             </button>
             <button type="button" className="settings-row settings-link settings-group-row" onClick={() => setEditing('parking')}>
               <span>Parking per Game</span>
               <span className="settings-value season-value">
-                {typeof ticket.parking === 'number' && ticket.parking > 0 ? formatMoney(ticket.parking, currency) : 'None'} <span aria-hidden>›</span>
+                <span className="season-value-text">{typeof ticket.parking === 'number' && ticket.parking > 0 ? formatMoney(ticket.parking, currency) : 'None'}</span> <span aria-hidden>›</span>
               </span>
             </button>
             <button type="button" className="settings-row settings-link settings-group-row" role="switch" aria-checked={ticket.preseason} onClick={() => updateSeasonDefaults(id, { preseason: !ticket.preseason }, 'none', schedule ?? undefined)}>

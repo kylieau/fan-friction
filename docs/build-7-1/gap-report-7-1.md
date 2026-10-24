@@ -23,6 +23,8 @@
 | 11 (c). M25, M26, item 2 | done | _(this commit)_ | heading links, the e3 tiles and the Edit Favorites sheet measured; built before (b) because (b)'s files were under review |
 | 12. Event page: M33 | done | _(this commit)_ | Lean A + the line on the catalog page; the date line on all three page kinds; measured: line 215, crowd 323, Up Against 532 against the Lean's 221 / 317 / 550 |
 | 13. Cleanup: M39, M15, doc sync | done | _(this commit)_ | sizes and tap areas measured; the seed script dry-run tested with a made-up export; BACKLOG and product-decisions synced |
+| Substitute reviews (stage 4's gaps) and fixes | done | _(this commit)_ | 14 findings: 11 accepted, 2 rejected with reasons, 1 already recorded |
+| Codex stage 5 | **skipped (out of credits)** | — | re-run owed; a substitute review covers its focus list |
 | Codex stage 4 | **incomplete (out of credits)**; partial findings fixed | _(this commit)_ | re-run owed (see Skipped reviews); three stated findings fixed; a substitute review follows |
 | 14. Research prompts (M35) | done | _(this commit)_ | docs only; critiqued once by Codex, ten points taken |
 | Codex reviews: 11 (b), 11 (c) and the fixes | done | _(the second fixes commit)_ | 9 + 10 findings, all accepted; 38 storage checks |
@@ -48,6 +50,7 @@
 
 ## Skipped reviews
 - **Codex stage 4 (steps 9–12, the range `9597e0a7..537480b9`) did not finish:** Codex stopped with "Your workspace is out of credits" (Oct 24, about 10:15 AM Pacific) after reading the diff and passing the type check, the 38 storage assertions and the title checks. **For Kylie: re-run it once the Codex workspace has credits** (the brief is in this session's history; its focus is §7's stage 4 list). Three findings it had begun to state were verified and fixed here (`Codex findings › Stage 4, partial`). Not reached by Codex: the privacy press on the event page's stub line and the card views, the 390pt overflow paths (the builder's own sweep is under Visual checks), the drag-reorder re-check, M33's order, copy and titles, and the mock comparisons. An independent reviewer (a fresh Claude agent, not Codex) covers those below so the build doesn't move on unreviewed; that substitute is not the Codex stage.
+- **Codex stage 5 (final: step 13, the stage 4 partial fixes, step 14's docs) could not start:** "Your workspace is out of credits" (Oct 24, about 10:45 AM Pacific). **For Kylie: re-run it with stage 4.** An independent reviewer (a fresh Claude agent) covers its focus list (M39's exceptions and tap extensions, the seed script's safety, the stage 4 partial fixes) so the build doesn't end unreviewed; that substitute is not the Codex stage.
 
 ## What shipped per item
 
@@ -227,6 +230,7 @@
 | M33 | the blue share preview card (current page) | a Share This Event row in the footer card, the same text sent | Lean A's footer (501, 504); the preview card stays on Compare | yes |
 | M33 | "years out of titles" | the event page header only; share text and calendar exports keep the year | build 5's three title lengths (full form "Super Bowl 2027") are a decision; the date line carries the year on the page | yes |
 | M33 | 506: "Retractable roof" noted | no roof note | no venue field for a retractable roof (only code comments say so); not invented | no (needs a field) |
+| M33 | 512's Your Stub card on GameOnly pages | the same card (status, seats, cost, review, With, tags) | added after the substitute review | yes |
 | M33 | (not drawn) the story card and Following | after Weather and after This Day | A doesn't place them; kept, not dropped | yes |
 | M31 | 21-B: the dragged row floats over a drop gap | the row lifts with a shadow and swaps places in the list as it passes each neighbour's middle | the same result with no placeholder to keep in step; the card's corners clip nothing in flow | yes |
 | M31 | 20-B's rows about 44pt | favorites 53px (a 44px handle and padding), add rows 48px | the handle's 44pt target sets the height | yes |
@@ -440,6 +444,22 @@ Visual: e3 and the heading links match; 64 matches after finding 10.
 2. **A flagged (vanished) season game could settle into an Attended stub if its old listing stayed in the catalog.** **Accepted:** a flagged season plan never settles; it stays listed under "Not on the Schedule" (past ones too) until she removes it.
 3. **An SDSU men's basketball stub counted toward the women's team** (recurring with the 11 (c) finding 6). Reproduced: SDSU's football, men's and women's basketball all share the short name "SDSU" and the alias "Aztecs". **Accepted:** where programs share a short name in one city and sport, only the program's own code tag ("SDSU MBB", read once even when repeated) or the title's Men's / Women's label decides; with neither, the stub counts for none; three storage checks added (42 now).
 
+**Substitute review for stage 4's unreached areas** (a fresh Claude agent, not Codex; read-only; type check, storage and title checks passing; two browser tests on blank pages). Privacy holds: `logged` and `youRow` are only the viewer's own rows; `entry_cards` and `plan_cards` carry no seats, cost, With or `data`; `plans` and `settings` are owner-only; nothing on a friend's page changed. Fourteen findings:
+1. **Keyboard and VoiceOver reorder lost focus after one move** (medium). **Accepted:** focus returns to the city's handle after each move; measured: two ArrowDowns moved Boston from first to last with focus kept.
+2. **The season page's long default values cut flat and pushed the › out** (medium). **Accepted:** the value text sits in its own span with the ellipsis; measured with "Loge Box MVP Club 112 · Row AA · Seat 101": cut with "…", the › inside the row.
+3. **Summary pills cut names flat** (low–medium). **Rejected (already met):** a later rule makes the pill a block box; measured earlier, "Cal State Fulle…" draws its ellipsis (`after-m19-settings.png`); the reviewer read the earlier inline-flex rule alone.
+4. **A dragged city could land at the top when the city above it vanished on another device** (low). **Accepted:** it goes to the end.
+5. **A second finger mid-drag dropped the first drag** (low). **Accepted:** a second finger is ignored while a row is held.
+6. **The share row's "Copied" note wasn't announced** (low). **Accepted:** `role="status"`.
+7. **The weekday-night rule was broader than a brand** ("The Friday Night Boys" → "The Boys") (low). **Accepted:** wrestling promotions only (WWE, AEW, TNA, ROH, NWA, NJPW); the stub retitle it triggers is limited the same way.
+8. **Further-out pages skip the Your Stub line though their card isn't near the top** (low). **Rejected (the item text):** M33 says short pages, further out included, skip the line; the card stays where A puts it. On record if Kylie wants it.
+9. **GameOnly pages had no Your Stub card**, which mock 512 draws (low). **Accepted:** one shared card for both pages (status, seats, what you paid, the review and With with their editor, tags, "Edit stub").
+10. **Buttons and links in Title Case** ("Edit Stub", "Share This Event", "Compare With…", "Back to the Map") against AGENTS.md's sentence case for buttons (low). **Accepted:** "Edit stub", "Share this event", "Compare with…", "Back to the map", and the season card's "Games & settings ›"; the form's "Edit Stub" heading keeps Title Case.
+11. **The weather card's labels "Feels like" and "Rain chance"** (low). **Accepted:** "Feels Like", "Rain Chance" (labels, M2 and M8).
+12. **"Home only · Add a city" showed when no home was set** (low). **Accepted:** "None yet · Add a city".
+13. **Comments still described "~18,000"** (trivial). **Accepted.**
+14. **No retractable-roof note** (spec vs code). Already recorded (no venue field).
+
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
@@ -461,6 +481,7 @@ Visual: e3 and the heading links match; 64 matches after finding 10.
 
 ## For Kylie to check on a phone
 - The Oct 24 nightly ran with the weather key (every city's weather step fetched; the M9 write-back retitled 6 Los Angeles rows, 6 New York, and a few per city): the next Ticketmaster show at the Hollywood Bowl or the Greek Theatre in the coming days should show the weather card on its event page (M17 / M4).
+- Season tickets and followers (a note, not a defect): turning the switch on adds every home game as a plan at your default level, so approved followers see those games (titles and dates only, as with any plan); the seat, price, parking and sale amounts stay owner-only.
 - The event page signed in (M33): the status chip with your stub's level pill ("Attended · Private ⌄ · Edit"), and the Your Stub card's Status line with the level word.
 - Profile & Settings signed in (M19): the profile card (initial, name, "@handle · N people", Edit, Share), Home City + Change, Privacy › with "New stubs: …"; Followers with faces and the requests badge; Account ⌄ first in App & Account with Temperature Units directly under it; Blocked ⌄ when you've blocked anyone; Review Queue for the admin account.
 - M16, after the Oct 25 nightly (about 5:30 AM Pacific): Wed, Oct 21 shows its saved verdict (5.3 in the shot, not the recomputed 6.4) with no "Estimated" line; every settled day since the archive began reads the same way.

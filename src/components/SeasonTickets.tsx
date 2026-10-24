@@ -27,7 +27,7 @@ import { favPath } from '../screens/FavoritesScreen';
 /**
  * Season tickets on a team page (build 7.1, item 15; Kylie, Oct 23, 2026, Locked; mocks 02, 03, 04, 05, 17, 18, 22):
  * one card under Follow with the switch. Off: one line on what it does. On: "On · N upcoming games · M stubs", the
- * defaults, and "Games & Settings ›" to the season page. Turning it on asks Full Season or Partial Plan (01-r2, B),
+ * defaults, and "Games & settings ›" to the season page. Turning it on asks Full Season or Partial Plan (01-r2, B),
  * then the setup sheet. Turning it off asks once, with the counts. A team with no full schedule (a school read only
  * from its Sidearm calendar) shows the switch disabled with the reason (22; a builder's call).
  */
@@ -68,7 +68,7 @@ export function SeasonTicketCard({ team, schedule }: { team: Team; schedule: Tea
             <span className="season-card-sub">{defaultsLine(ticket)}</span>
           </span>
           <Link to={`${favPath({ kind: 'team', id: team.id })}/season`} className="heading-link season-card-link">
-            Games & Settings ›
+            Games & settings ›
           </Link>
         </div>
       )}

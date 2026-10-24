@@ -9,7 +9,7 @@ import { TypeIcon } from '../components/TypeIcon';
 import { LevelPill } from '../components/LevelPill';
 import { AddToCalendar } from '../components/AddToCalendar';
 import { ActivityLines, StatusLine } from '../components/ActivityLines';
-import { ACTIVITY_WORDS, activityGroups, yourActivity } from '../lib/activity';
+import { ACTIVITY_WORDS, activityGroups, yourActivity, type ActivityKind } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
@@ -58,6 +58,7 @@ import {
   type FeedItem,
   type CityDate,
   type CrowdEvent,
+  type Entry,
 } from '../data';
 import { crowdPoints, showsOnMap } from '../map/crowdPoints';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
@@ -517,37 +518,13 @@ export function EventScreen() {
         </section>
       )}
 
-      {/* Your Stub (M33): the status, seat and what you paid, then the review and With with their own editor; Edit Stub
-          opens the Stub it sheet (tags, seat, cost). Only on your own page: none of this reaches a shared table. */}
-      {logged && you && (
-        <section id="your-stub" className="card your-stub" aria-label="Your Stub">
-          <div className="your-stub-head">
-            <span className="your-stub-label">Your Stub</span>
-            <button type="button" className="link-button your-stub-edit" onClick={() => setSheet(true)}>
-              Edit Stub
-            </button>
-          </div>
-          <FactList
-            facts={[
-              { label: 'Status', value: [ACTIVITY_WORDS[you.kind], level ? LEVEL_WORDS[level] : null].filter(Boolean).join(' · ') },
-              ...(!logged.watched && seatsLine(logged.seats) ? [{ label: 'Seats', value: seatsLine(logged.seats) }] : []),
-              ...(logged.cost && costWords(logged.cost) ? [{ label: 'You Paid', value: costWords(logged.cost)! }] : []),
-            ]}
-          />
-          <EntryLayer entry={logged} showLevel={false} />
-          {(youRow?.userTags ?? []).length > 0 && (
-            <div className="your-stub-tags">
-              {(youRow?.userTags ?? []).map((tag) => (
-                <TagChip key={tag} tag={tag} size="row" onClick={() => navigate(tagPath(tag))} />
-              ))}
-            </div>
-          )}
-        </section>
-      )}
+      {/* Your Stub (M33): only on your own page; none of this reaches a shared table. */}
+      {logged && you && <YourStubCard entry={logged} kind={you.kind} level={level} tags={youRow?.userTags ?? []} onEdit={() => setSheet(true)} />}
 
       {ahead && <SameTour event={e} />}
 
-      {/* The footer card (M33): Share This Event (the same text the card shared), Compare With…, Back to the Map. */}
+      {/* The footer card (M33): Share this event (the same text the card shared), Compare with…, Back to the map; buttons in
+          sentence case (AGENTS.md). */}
       <section className="card footer-card" aria-label="More">
         <ShareRow
           icon={<ShareIcon />}
@@ -562,14 +539,14 @@ export function EventScreen() {
           <Link to={comparePath({ metroId: e.metroId, date, eventId: e.id })} className="footer-row compare-link">
             <CompareIcon />
             <span className="footer-row-words">
-              <span className="footer-row-title">Compare With…</span>
+              <span className="footer-row-title">Compare with…</span>
             </span>
           </Link>
         )}
         <MapBack date={date} metroId={e.metroId} className="footer-row">
           <MapIcon />
           <span className="footer-row-words">
-            <span className="footer-row-title">Back to the Map</span>
+            <span className="footer-row-title">Back to the map</span>
           </span>
         </MapBack>
       </section>
@@ -581,6 +558,40 @@ export function EventScreen() {
 
 /** The stub level's word on the Your Stub card (the pill's own words). */
 const LEVEL_WORDS: Record<'anyone' | 'friends' | 'private', string> = { anyone: 'Anyone', friends: 'Friends', private: 'Private' };
+
+/**
+ * The Your Stub card (build 7.1, M33; mocks 504, 512): the status, seat and what you paid, then the review and With
+ * with their own editor; "Edit stub" opens the Stub it sheet (tags, seat, cost); the tags as chips. The catalog page
+ * and the GameOnly page share it. Only on her own page: nothing here reaches a shared table.
+ */
+function YourStubCard({ entry, kind, level, tags, onEdit }: { entry: Entry; kind: ActivityKind; level: 'anyone' | 'friends' | 'private' | null; tags: readonly string[]; onEdit: () => void }) {
+  const navigate = useNavigate();
+  return (
+    <section id="your-stub" className="card your-stub" aria-label="Your Stub">
+      <div className="your-stub-head">
+        <span className="your-stub-label">Your Stub</span>
+        <button type="button" className="link-button your-stub-edit" onClick={onEdit}>
+          Edit stub
+        </button>
+      </div>
+      <FactList
+        facts={[
+          { label: 'Status', value: [ACTIVITY_WORDS[kind], level ? LEVEL_WORDS[level] : null].filter(Boolean).join(' · ') },
+          ...(!entry.watched && seatsLine(entry.seats) ? [{ label: 'Seats', value: seatsLine(entry.seats) }] : []),
+          ...(entry.cost && costWords(entry.cost) ? [{ label: 'You Paid', value: costWords(entry.cost)! }] : []),
+        ]}
+      />
+      <EntryLayer entry={entry} showLevel={false} />
+      {tags.length > 0 && (
+        <div className="your-stub-tags">
+          {tags.map((tag) => (
+            <TagChip key={tag} tag={tag} size="row" onClick={() => navigate(tagPath(tag))} />
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
 
 /**
  * The evening's story (build notes 4, P4): a short paragraph and its source links, under the crowd, in a
@@ -753,7 +764,7 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
   if (!row) return null;
   const range = weatherRangeForEvent(event);
   const rows: [string, string][] = [
-    ['Feels like', feelsLikeLabel(row, event.metroId)],
+    ['Feels Like', feelsLikeLabel(row, event.metroId)],
     ['Air', degreesFor(row.tempF, event.metroId)],
   ];
   if (range && range.high.feelsLikeF !== range.low.feelsLikeF) {
@@ -762,7 +773,7 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
   if (row.humidity != null) rows.push(['Humidity', `${Math.round(row.humidity)}%`]);
   if (row.windMph != null) rows.push(['Wind', `${Math.round(row.windMph)} mph`]);
   if (row.uvIndex != null) rows.push(['UV', `${Math.round(row.uvIndex)}`]);
-  if (row.precipProbability != null) rows.push(['Rain chance', `${Math.round(row.precipProbability)}%`]);
+  if (row.precipProbability != null) rows.push(['Rain Chance', `${Math.round(row.precipProbability)}%`]);
   else if (row.precipMm != null) rows.push(['Rain', row.precipMm >= 1 ? `${row.precipMm.toFixed(1)} mm` : 'none']);
   return (
     <section className="card weather-card" aria-label="Weather at the venue">
@@ -905,8 +916,9 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
             )}
           </span>
         )}
-        {logged && <EntryLayer entry={logged} showLevel={false} />}
       </div>
+      {/* The Your Stub card here too (M33, mock 512: the GameOnly minimum includes it). */}
+      {logged && you && <YourStubCard entry={logged} kind={you.kind} level={account && youRow ? stubLevel(youRow) : null} tags={youRow?.userTags ?? []} onEdit={() => setSheet(true)} />}
       {sheet && <StubSheet event={event} onClose={() => setSheet(false)} />}
       <RecordOpened event={event} />
     </div>

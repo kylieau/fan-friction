@@ -668,7 +668,8 @@ function showParts(event: CrowdEvent): ShowParts {
  * "… Night Live" keeps its name.
  */
 function withoutWeekdayNight(text: string): string {
-  return text.replace(/^(\S+)\s+(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day\s+Night\s+(?!Live\b)(\S.*)$/i, '$1 $2');
+  // Wrestling promotions only (substitute review: a general rule turned "The Friday Night Boys" into "The Boys").
+  return text.replace(/^(WWE|AEW|TNA|ROH|NWA|NJPW)\s+(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day\s+Night\s+(?!Live\b)(\S.*)$/i, '$1 $2');
 }
 
 function partsOf(raw: CrowdEvent): Parts {

@@ -402,7 +402,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
             <span className="summary-row">
               {!home && cities.length === 0 ? (
                 <span className="summary-empty">
-                  Home only · <span className="summary-link">Add a city</span>
+                  None yet · <span className="summary-link">Add a city</span>
                 </span>
               ) : (
                 <>

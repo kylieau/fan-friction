@@ -12978,3 +12978,22 @@ a.follow-lead::after {
   margin: -6px 0;
   padding: 6px 0;
 }
+
+/* The season page's default values cut their text with "…" and keep the › visible (substitute review): the value
+   shrinks, the label keeps its words. */
+.season-defaults .settings-group-row > span:first-child {
+  flex: none;
+}
+.season-value {
+  min-width: 0;
+  max-width: 60%;
+}
+.season-value-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.season-value > span[aria-hidden] {
+  flex: none;
+}
