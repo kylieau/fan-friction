@@ -32,7 +32,8 @@ const AHEAD_ROWS = 5;
  * moves the list; when the list moves, this scrolls to its week unless a finger was just on it. Three
  * rows and half of the next show, so it reads as scrollable. Plain day numbers on soft squares in the
  * read-box blue ramp (squares, Kylie Oct 13); today ringed; a small bar marks the day at the top of the
- * list; past days and days with no read are plain grey numbers. Cooked takes Brutal's darkest blue.
+ * list. Since build 7.1 (M29; Kylie, Oct 23, 2026) every day wears its verdict color, Cooked in ink with a gold
+ * number, and past days keep the color faded; a legend under the grid names the pairs.
  */
 export function WeekCalendar({
   mondays,
@@ -60,7 +61,7 @@ export function WeekCalendar({
   const leadIndex = Math.max(0, mondays.findIndex((m) => topDate >= m && topDate <= addDays(m, 6)));
   const [firstRow, setFirstRow] = useState(leadIndex);
 
-  const rowHeight = () => (scroller.current?.firstElementChild as HTMLElement | null)?.offsetHeight ?? 43;
+  const rowHeight = () => (scroller.current?.firstElementChild as HTMLElement | null)?.offsetHeight ?? 44;
   const scrollToRow = (index: number, smooth: boolean) => {
     const el = scroller.current;
     if (!el) return;
@@ -166,6 +167,24 @@ export function WeekCalendar({
           ))}
         </div>
       </div>
+      <div className="week-calendar-legend" aria-label="Verdict colors: each pair is today and ahead, then past">
+        {LEGEND.map(([band, word]) => (
+          <span key={band} className="week-legend-item">
+            <span className={`week-legend-swatch band-${band}`} aria-hidden />
+            <span className={`week-legend-swatch is-past band-${band}`} aria-hidden />
+            <span className="week-legend-word">{word}</span>
+          </span>
+        ))}
+        <span className="week-legend-caption">Each pair: Today and Ahead · Past</span>
+      </div>
     </section>
   );
 }
+
+const LEGEND: [ScoreBand, string][] = [
+  ['chill', 'Chill'],
+  ['mild', 'Mild'],
+  ['spicy', 'Spicy'],
+  ['brutal', 'Brutal'],
+  ['cooked', 'Cooked'],
+];

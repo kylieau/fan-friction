@@ -1088,12 +1088,6 @@ button {
   max-width: 48%;
 }
 
-.sheet .chip-friction,
-.selected-row .chip-friction {
-  color: #fff;
-  background: #005a9c;
-  opacity: 1;
-}
 
 .sheet .chip-mark,
 .selected-row .chip-mark {
@@ -1916,15 +1910,6 @@ button {
   padding: 0 6px;
 }
 
-.tag-friction {
-  align-self: flex-start;
-  font-size: 10px;
-  font-weight: 800;
-  color: var(--dodger);
-  background: #e3effa;
-  border-radius: 999px;
-  padding: 1px 7px;
-}
 
 .event-list {
   list-style: none;
@@ -2000,10 +1985,6 @@ button {
   background: var(--track);
 }
 
-.chip-friction {
-  color: var(--ink);
-  background: var(--paleBlue);
-}
 
 /* ---------- Event screen ---------- */
 
@@ -3375,10 +3356,30 @@ button {
   line-height: 1;
 }
 
-.word-pill.brutal,
-.word-pill.cooked {
+/* Each verdict word its own color, the big read tile's (build 7.1, M29, §9; Kylie, Oct 23, 2026, Locked): Cooked is
+   ink with a gold count and word. Every pill wears the read boxes' 1px ring. */
+.word-pill {
+  box-shadow: inset 0 0 0 1px #76869b;
+}
+.word-pill.chill {
+  background: #e4eef6;
+  color: var(--ink);
+}
+.word-pill.mild {
+  background: var(--water);
+  color: var(--ink);
+}
+.word-pill.spicy {
+  background: var(--paleBlue);
+  color: var(--ink);
+}
+.word-pill.brutal {
   background: var(--dodger);
   color: var(--card);
+}
+.word-pill.cooked {
+  background: var(--ink);
+  color: var(--gold);
 }
 
 .your-usual {
@@ -7273,10 +7274,16 @@ ul.fav-strip {
   color: var(--ink);
 }
 
-.week-calendar-day.band-brutal .week-calendar-num,
-.week-calendar-day.band-cooked .week-calendar-num {
+/* One scheme on every verdict surface (build 7.1, M29, §9; Kylie, Oct 23, 2026): Cooked is ink with a gold number,
+   no longer Brutal's blue. */
+.week-calendar-day.band-brutal .week-calendar-num {
   background: var(--dodger);
-  color: #fff;
+  color: var(--card);
+}
+
+.week-calendar-day.band-cooked .week-calendar-num {
+  background: var(--ink);
+  color: var(--gold);
 }
 
 .week-calendar-day.is-today .week-calendar-num {
@@ -7284,9 +7291,13 @@ ul.fav-strip {
   color: var(--ink);
 }
 
-.week-calendar-day.is-today.band-brutal .week-calendar-num,
+.week-calendar-day.is-today.band-brutal .week-calendar-num {
+  color: var(--card);
+  box-shadow: 0 0 0 2px var(--card), 0 0 0 4px var(--dodger);
+}
+
 .week-calendar-day.is-today.band-cooked .week-calendar-num {
-  color: #fff;
+  color: var(--gold);
   box-shadow: 0 0 0 2px var(--card), 0 0 0 4px var(--dodger);
 }
 
@@ -8426,7 +8437,8 @@ ul.fav-strip {
 
 /* The calendar's own scroller: three rows and half of the next, snapping to week rows; squares (Kylie, Oct 13). */
 .week-calendar {
-  --cal-row: 43px;
+  /* 44px since build 7.1 (M29): a full tap row. */
+  --cal-row: 44px;
 }
 
 .week-calendar-viewport {
@@ -8527,13 +8539,75 @@ ul.fav-strip {
   white-space: nowrap;
 }
 
-/* Past days carry their read too, a little quieter than days ahead (Kylie, Oct 14: "past dates are not loaded"). */
-.week-calendar-day.is-past .week-calendar-num {
-  opacity: 0.62;
+/* Past days keep their verdict color, faded (build 7.1, M29; Kylie, Oct 23, 2026; the 29-d board): the fill at 55%
+   with the card and the number at full ink, except past Brutal (ink number, white would fail) and past Cooked (ink
+   mixed 75% with the card, about #4B5462, so its gold number still passes). Supersedes the opacity rule and build
+   notes 4's plain-grey past days. */
+.week-calendar-day.is-past.band-chill .week-calendar-num {
+  background: color-mix(in srgb, #e4eef6 55%, var(--card));
+  color: var(--ink);
 }
 
-.week-calendar-day.is-past:not([class*='band-']) .week-calendar-num {
-  opacity: 1;
+.week-calendar-day.is-past.band-mild .week-calendar-num {
+  background: color-mix(in srgb, var(--water) 55%, var(--card));
+  color: var(--ink);
+}
+
+.week-calendar-day.is-past.band-spicy .week-calendar-num {
+  background: color-mix(in srgb, var(--paleBlue) 55%, var(--card));
+  color: var(--ink);
+}
+
+.week-calendar-day.is-past.band-brutal .week-calendar-num {
+  background: color-mix(in srgb, var(--dodger) 55%, var(--card));
+  color: var(--ink);
+}
+
+.week-calendar-day.is-past.band-cooked .week-calendar-num {
+  background: color-mix(in srgb, var(--ink) 75%, var(--card));
+  color: var(--gold);
+}
+
+/* The legend under the grid (M29): each verdict's full and faded swatch, then its word; the caption names the pair. */
+.week-calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 8px;
+  margin: 8px 4px 0;
+}
+.week-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+.week-legend-item .week-legend-word {
+  margin-left: 2px;
+}
+.week-legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(15, 27, 45, 0.08);
+}
+.week-legend-swatch.band-chill { background: #e4eef6; }
+.week-legend-swatch.band-mild { background: var(--water); }
+.week-legend-swatch.band-spicy { background: var(--paleBlue); }
+.week-legend-swatch.band-brutal { background: var(--dodger); }
+.week-legend-swatch.band-cooked { background: var(--ink); }
+.week-legend-swatch.is-past.band-chill { background: color-mix(in srgb, #e4eef6 55%, var(--card)); }
+.week-legend-swatch.is-past.band-mild { background: color-mix(in srgb, var(--water) 55%, var(--card)); }
+.week-legend-swatch.is-past.band-spicy { background: color-mix(in srgb, var(--paleBlue) 55%, var(--card)); }
+.week-legend-swatch.is-past.band-brutal { background: color-mix(in srgb, var(--dodger) 55%, var(--card)); }
+.week-legend-swatch.is-past.band-cooked { background: color-mix(in srgb, var(--ink) 75%, var(--card)); }
+.week-legend-caption {
+  flex: 1 0 100%;
+  font-size: 11px;
+  color: #4a5568;
 }
 
 /* Date page rows: the badges sit at the right of the line, like every list (Kylie, Oct 14). */
