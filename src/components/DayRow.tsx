@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { drawSize, eventType, VENUES, venueNameOn, type CrowdEvent } from '../data';
+import { drawSize, eventType, VENUES, venueNameOn, type CrowdEvent, type SkyKind } from '../data';
+import { degreesFor } from '../config/metros';
+import { WeatherIcon } from './WeatherIcon';
 import { TypeIcon } from './TypeIcon';
 import { clockTime } from '../lib/dates';
 import { listTitle, spokenTitle, splitTitleLabel } from '../lib/eventTitle';
@@ -28,6 +30,7 @@ export function RowBody({
   line,
   you,
   extra,
+  weather,
 }: {
   event: CrowdEvent;
   /** Every event in this city on this date (not the visible slice): the occasion tag shows only on the day's top level. */
@@ -39,6 +42,12 @@ export function RowBody({
   /** Your own answer on this event, shown as "Attending" with its icon. */
   you?: ActivityKind | null;
   extra?: ReactNode;
+  /**
+   * The day page's outdoor row marker (build 7.1, M3): a plain grey sun, cloud or rain and the peak feels-like at the
+   * venue during the event, right-aligned on the venue line, the same right edge as the friction ring. Indoor rows
+   * and every other list pass nothing.
+   */
+  weather?: { sky: SkyKind; tempF: number } | null;
 }) {
   // The label sits on its own line, a sibling of the title (the title's two-line clamp would hide it), between
   // the title and the venue (labels r3).
@@ -61,6 +70,12 @@ export function RowBody({
         <span className="day-row-line2">
           {venueText && <span className="day-row-venue">{venueText}</span>}
           <DayOccasionTag event={e} day={day} />
+          {weather && (
+            <span className="day-row-weather" aria-label={`Peak ${degreesFor(weather.tempF, e.metroId)} at the venue`}>
+              <WeatherIcon kind={weather.sky} />
+              <span aria-hidden>{degreesFor(weather.tempF, e.metroId)}</span>
+            </span>
+          )}
         </span>
         {you && (
           <span className="day-row-you">

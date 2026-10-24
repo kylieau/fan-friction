@@ -7,6 +7,7 @@ import { ReadTile } from '../components/ReadTile';
 import { ActivityLines } from '../components/ActivityLines';
 import { activityGroups, friendsLine, yourActivity } from '../lib/activity';
 import { DayTimeline } from '../components/DayTimeline';
+import { DayWeather } from '../components/DayWeather';
 import { HiddenLine } from '../components/HiddenLine';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
@@ -37,6 +38,8 @@ import {
   verdictLines,
   liveItems,
   savedItems,
+  outdoorPeaks,
+  stampLocksAt,
   type CityDate,
   type CrowdEvent,
   type FeedItem,
@@ -199,6 +202,10 @@ export function DateScreen() {
   // The lines under the number come from the same set the number came from (M6): the saved night's rows when the
   // saved verdict shows, else today's events. The sources count is the feeds that listed events in that set.
   const lines = saved ? verdictLines(savedItems(saved.rows, events), metro.name) : verdictLines(liveItems(events), metro.name);
+  // Weather on a settled day is the last forecast saved before the lock (Kylie, Oct 5); ahead of it, the latest.
+  const weatherBefore = locked ? (stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone) ?? undefined) : undefined;
+  const peaks = outdoorPeaks(events, weatherBefore);
+  const peakFor = new Map(peaks.map((p) => [p.event.id, p]));
 
   return (
     <div className="screen page date-page">
@@ -284,6 +291,10 @@ export function DateScreen() {
       </section>
       {about && <AboutRead saved={saved} sources={lines.sources} onClose={() => setAbout(false)} />}
 
+      {/* The day's weather (M3, Flow X): a slim strip that opens into the card, between the verdict and the lineup.
+          Keyed by the date so it is collapsed on every visit. */}
+      <DayWeather key={`${metro.id}|${date}`} metroId={metro.id} date={date} peaks={peaks} before={weatherBefore} isToday={date === today} />
+
       {/* Order since build 7.1 (M1, Kylie, Oct 23, 2026): the verdict, then the lineup (people open a day to see what's
           on), then Local Competition, then Further Out; the Attended card sits at the bottom (M7). */}
       {events.length > 0 && (
@@ -306,6 +317,7 @@ export function DateScreen() {
                     venueText={venueOf(e) ?? null}
                     line={lineFor(e)}
                     you={yourActivity(e.id, log)?.kind ?? null}
+                    weather={peakFor.has(e.id) ? { sky: peakFor.get(e.id)!.sky, tempF: peakFor.get(e.id)!.peakF } : null}
                   />
                 </Link>
               </li>
