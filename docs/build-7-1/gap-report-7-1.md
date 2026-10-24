@@ -25,6 +25,7 @@
 | 13. Cleanup: M39, M15, doc sync | done | _(this commit)_ | sizes and tap areas measured; the seed script dry-run tested with a made-up export; BACKLOG and product-decisions synced |
 | Substitute reviews (stage 4's gaps) and fixes | done | _(this commit)_ | 14 findings: 11 accepted, 2 rejected with reasons, 1 already recorded |
 | Codex stage 5 | **skipped (out of credits)** | — | re-run owed; a substitute review covers its focus list |
+| Substitute review for stage 5 and fixes | done | _(this commit)_ | 8 findings, all accepted (one high: the seed script); seed dry run repeated with a planted hand-typed entry; the (i) and the pinned Back measured |
 | Codex stage 4 | **incomplete (out of credits)**; partial findings fixed | _(this commit)_ | re-run owed (see Skipped reviews); three stated findings fixed; a substitute review follows |
 | 14. Research prompts (M35) | done | _(this commit)_ | docs only; critiqued once by Codex, ten points taken |
 | Codex reviews: 11 (b), 11 (c) and the fixes | done | _(the second fixes commit)_ | 9 + 10 findings, all accepted; 38 storage checks |
@@ -212,6 +213,7 @@
 | M9 / M35b | build 5 drop order for rows: year → away team → tag → truncate | a bare matchup over 32 characters keeps both sides and wraps instead of dropping the away side; named games keep build 5's order | the notes' "the opponent survives the title length limit"; the mock draws both schools; the short form allows two lines | yes |
 | M38 | "every college and school game gets a sport label line" / "gendered sports keep Men's / Women's" | a feed that names no side shows the sport alone ("Volleyball") rather than nothing or a guessed side | 357 stored rows say only "Volleyball"; a bare sport names no side, so the men's-and-women's-alike rule holds | yes |
 | M9 | "Backfill the stored rows' titles and team records" | three places: on read, nightly write-back, and the repo's archive files | the app reads past days from Supabase, whose older rows the nightly never rewrote; a read-time repair shows the fix today | yes |
+| M15 | the seed gives A "a believable log" for checking every view | stubs and plans only; no friends' rows and no one else's Activity | those need rows written on other accounts; the older seed keeps B following A | yes, with a second account's seed |
 | M2 | "Title Case on every heading … and every sub-page title" | Compare's title "Side by side" and heading "Your nights, side by side." stay | Kylie's Oct 5 wording, a lock and a sentence (question 3) | yes |
 | M2 | "Title Case on every heading" | the sign-in card's "Keep your log safe" and the empty-state card titles ("No Faves yet", "No stubbed events") stay sentence case | read as sentences, like the empty states the rule exempts | yes |
 | M2 | (the week band) | "This Week's Lineup · 132 Events" | the count word follows the band's case; M27 removes the band in step 6 | yes |
@@ -460,6 +462,16 @@ Visual: e3 and the heading links match; 64 matches after finding 10.
 13. **Comments still described "~18,000"** (trivial). **Accepted.**
 14. **No retractable-roof note** (spec vs code). Already recorded (no venue field).
 
+**Substitute review for stage 5** (a fresh Claude agent, not Codex; read-only; covered step 13, the stage 4 partial fixes and step 14's docs). Eight findings, all accepted:
+1. **The seed script could copy words she typed** (high). A hand-typed stub later linked to a catalog event keeps its `manual-` id and her own title, sides and venue; the script copied those from her row. **Accepted:** hand-typed stubs are left out, and every seeded stub is rebuilt from the catalog's own event the way the app builds one (`stubFromEvent`), so from her row only the event id, date, city and watched flag are read. Proved with a made-up export carrying a planted hand-typed entry: none of its words reach the output.
+2. **The M39 block turned the Verdict card's (i) from absolute to relative**, moving it out of its corner (medium). **Accepted:** the (i) is out of that group; measured 8 px from the top and 10 px from the right of the tile, as its rule says.
+3. **A past season plan flagged while its game was briefly missing stayed flagged once the schedule listed the game again**, so it never settled into her stub (medium). **Accepted:** the flag clears when the schedule lists the same game again (builder's call; question 7). Checked: listed again → flag gone; still missing → flag kept.
+4. **Stop leaves flagged past season plans behind, and the date page counted a flagged game as hers** (low–medium). **Accepted:** stopping a team's season also removes its flagged plans of any date; the date page's Attended card skips flagged plans.
+5. **Seeded stubs lacked the tags and opponents the app gives a stub** (low). **Accepted:** fixed by 1 (the app's own builder supplies them).
+6. **A re-run could seed an event A already holds in a row of its own**, giving two stubs for one event (low). **Accepted:** events A already holds outside `seed-sample-` rows are skipped.
+7. **The pinned head's Back tap area reached below the head over the scrolling page** (low). **Accepted:** it reaches sideways only; measured: it ends 7 px inside the head.
+8. **Small seed and doc gaps** (low): `--size abc` gave NaN; EXAMPLE tags weren't marked; the doc said a dry run "touches nothing" though it reads the catalog, and didn't say a seeded plan can settle into a `mark-` stub a re-run can't replace; M15's friends and Activity gap wasn't in "Not exactly as decided". **Accepted:** `--size` must be a number from 1 to 200 or the run stops; tags start with `example`; the doc says both; the row is added.
+
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
@@ -508,6 +520,7 @@ Step 14, docs only (the drafts stay in `docs/build-7-1/research-prompts/`; nothi
 5. **M3's summary sentence.** The chosen card draws a one-line sky summary ("Mostly sunny, with a passing shower near the coast. Cools to the low 60s after 8 pm."). The app stores no text forecast, and writing one from the numbers would be a guess, so the card has none. OK to leave it out, or should a short rule-based line be drafted for you to approve?
 4. **M6 and the stored wording.** The date page and Compare's share line now read "Biggest draw: …"; the formula's own `why` sentence ("Warriors at Lakers pulls on four other crowds.") is still what the nightly saves into each snapshot row and what the archive scan prints. Nothing on screen shows it any more. Should the nightly's wording change to match (a data change going forward, old rows unchanged), or stay as the formula's own words? Lean: leave it; it is a record, not a screen.
 3. **M2 and Compare's title.** Compare's page title reads "Side by side" and its heading "Your nights, side by side." is your Oct 5 wording (a lock, and a sentence). Title Case would make it "Side by Side". Left as is; say the word and it changes. The sign-in card's "Keep your log safe" and the empty-state card titles ("No Faves yet", "No stubbed events") were read as sentences, not headings, and left in sentence case.
+7. **Season Tickets, a flagged past game that comes back.** If a past game vanished from the schedule for a while (flagged "Not on the Schedule") and the schedule lists the same game again, the flag now clears on its own so the game settles into your Attended stub like any other. The alternative is to keep it flagged until you clear it by hand. Lean: clear it on its own (the schedule is the truth).
 2. **M38, a feed that names no side.** _Answered (Kylie, Oct 24: "keep")._ 357 stored school rows say only "Volleyball" (or "Soccer", "Basketball"); they read with the sport alone on the label line. Recorded in product-decisions.md.
 
 ## Builder's-call decisions
@@ -525,6 +538,8 @@ Step 14, docs only (the drafts stay in `docs/build-7-1/research-prompts/`; nothi
 - M23 on the event page: the only verdict there is the This Day card, which M33 (step 12) handles for Watched pages; nothing to change until then.
 
 - **Item 15, Season Tickets (builder's calls, all recorded here and in the table):** home means home and not neutral; a season plan's removal from any screen is written to the team's removed list; a default change always prompts when upcoming games exist (after the steps 9–10 review); the defaults survive turning the switch off; the playoff card is one at a time (the earliest unanswered home playoff game across season teams); a Partial plan's picker is the season page with checkboxes and a sticky "Save N games"; "Change which games you own ›" reopens it; a Watched or Interested answer on a season game keeps its season mark (so the season does not add it back as Attending), while taking the plan out writes the removal; `seasonCounts`' stub count credits the team by its name on the stub's sides.
+
+- **Season Tickets, a flagged game listed again (substitute review for stage 5):** the `gone` flag on a past season plan clears once the schedule lists the same game again, so it settles into a stub; stopping a team's season removes its flagged plans whatever their date (question 7).
 
 - **M26, the "Seen N" line on the Faves tiles:** dropped. Kylie dropped it from the Edit Favorites sheet and the Teams & Artists page (Oct 23) as the wrong place for that count; the tiles are the same kind of list, and the notes' lean is the same rule. The tiles keep e3's 60pt so the card reads as drawn.
 

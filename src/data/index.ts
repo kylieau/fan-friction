@@ -523,7 +523,7 @@ export type { Cost, CostKind, CostLine } from './types';
 export { hasUnsyncedChanges } from './storage';
 export { suggestEvent, linkConfirmedSuggestions, isReviewAdmin, reviewQueue, setReviewStatus, REVIEW_WINDOW, type ReviewRow } from './suggestions';
 export { quickAddDefaults, saveQuickAdd, roomsIn, type QuickAddDefaults, type QuickAddInput, type QuickAddResult } from './quickAdd';
-export { markPlanSuggested } from './personalLog';
+export { markPlanSuggested, stubFromEvent } from './personalLog';
 export { favoriteSearchNames, searchFavoriteRecords, favoriteOfficialName } from './favorites';
 export { spendSummary, spendByVenue, spendByTeam, type SpendSummary, type SpendGroup } from './spend';
 export { entriesInYear, yearsOf, yearStatPool, teamCounts, cityCounts, longestStreak, type YearStat } from './yearStats';

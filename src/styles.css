@@ -12941,10 +12941,10 @@ a.follow-lead::after {
 }
 /* Back and the (i) buttons: an invisible 44pt tap area; what's drawn stays the same size. */
 .back-link,
-.read-info,
 .info-dot {
   position: relative;
 }
+/* The verdict card's (i) stays absolutely placed in its corner; its extension anchors to it as is. */
 .back-link::after {
   content: '';
   position: absolute;
@@ -12996,4 +12996,10 @@ a.follow-lead::after {
 }
 .season-value > span[aria-hidden] {
   flex: none;
+}
+
+/* The pinned head's Back is already 44pt tall: its extension reaches sideways only, never below the head over the page
+   scrolling under it (substitute review for stage 5). */
+.pinned-back::after {
+  inset: 0 -10px;
 }

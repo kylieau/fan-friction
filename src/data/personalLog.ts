@@ -674,6 +674,11 @@ function withFloor(event: CrowdEvent, entry: Entry): Entry {
   return event.belowFloor ? { ...entry, belowFloor: true } : entry;
 }
 
+/** A stub built from a catalog event alone, the app's own way (the M15 seed rebuilds its sampled stubs with it). */
+export function stubFromEvent(event: CrowdEvent): Entry {
+  return entryFromEvent(event);
+}
+
 function entryFromEvent(event: CrowdEvent): Entry {
   const music = event.audience.domain === 'music' || event.kind === 'show' || event.kind === 'festival';
   if (music) {
@@ -1328,7 +1333,8 @@ export function stopSeasonTickets(teamId: string) {
   commit({
     ...snapshot,
     seasonTickets: withSeasonTicket(snapshot, { ...ticket, on: false, removed: {}, declined: [] }),
-    plans: snapshot.plans.filter((plan) => !(plan.season?.teamId === teamId && plan.date >= today)),
+    // Upcoming season games go, and a flagged one whatever its date, so nothing is left stuck where she can't reach it.
+    plans: snapshot.plans.filter((plan) => !(plan.season?.teamId === teamId && (plan.date >= today || plan.season.gone))),
   });
 }
 

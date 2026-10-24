@@ -31,7 +31,12 @@ const flag = (name) => {
   return at >= 0 ? args[at + 1] : undefined;
 };
 const from = flag('from');
-const size = Math.max(1, Math.min(200, Number(flag('size') ?? 24)));
+const sizeArg = Number(flag('size') ?? 24);
+if (!Number.isFinite(sizeArg) || sizeArg < 1) {
+  console.error('--size must be a number from 1 to 200.');
+  process.exit(1);
+}
+const size = Math.min(200, Math.floor(sizeArg));
 const confirm = args.includes('--confirm');
 const seed = Number(flag('seed') ?? 7);
 // --show prints the rows a dry run would write, so a check can prove nothing of hers travels.
@@ -57,27 +62,17 @@ if (backup?.app !== 'Fan/Friction' || !Array.isArray(backup.entries)) {
   process.exit(1);
 }
 // A catalog event on an exact day, so the stub opens a real event page; hand-typed and rough-dated rows are left out.
-const eligible = backup.entries.filter((e) => e && e.eventId && e.when?.precision === 'day' && typeof e.when.sort === 'string' && e.metroId);
+// A hand-typed stub later linked to an event keeps its manual- id and the words she typed: it is left out too.
+const eligible = backup.entries.filter((e) => e && e.eventId && !String(e.id ?? '').startsWith('manual-') && e.when?.precision === 'day' && typeof e.when.sort === 'string' && e.metroId);
 const sampled = shuffle(eligible).slice(0, size);
 
-/** Only the public facts of the event: everything personal is dropped here, before anything else sees the row. */
-const eventOnly = (e) => ({
-  eventId: String(e.eventId),
-  date: e.when.sort,
-  metroId: String(e.metroId),
-  title: String(e.title ?? ''),
-  venue: e.venue ? String(e.venue) : undefined,
-  kind: e.kind ?? 'game',
-  sport: e.sport ?? '',
-  sides: Array.isArray(e.sides) ? e.sides.map(String) : [],
-  inMetro: e.inMetro !== false,
-  watched: Boolean(e.watched),
-});
+/** From her row only the event's id, its date, its city and whether it was watched; everything else comes from the catalog. */
+const eventOnly = (e) => ({ eventId: String(e.eventId), date: e.when.sort, metroId: String(e.metroId), watched: Boolean(e.watched) });
 
 // ---------- 2. EXAMPLE data around them ----------
 const EXAMPLE_REVIEWS = ['EXAMPLE review: loud from the first minute.', 'EXAMPLE review: long lines at the gate, worth it.', 'EXAMPLE review: great seats, quiet crowd.', 'EXAMPLE review: left early, traffic was rough.'];
 const EXAMPLE_WITH = ['Sam (example)', 'Jo (example)', 'Priya (example)', 'Lee (example)'];
-const EXAMPLE_TAGS = ['example', 'birthday', 'rivalry', 'with-friends', 'rain', 'first-time'];
+const EXAMPLE_TAGS = ['example', 'example-birthday', 'example-rivalry', 'example-friends', 'example-rain', 'example-first'];
 const exampleSeats = () => (rand() < 0.2 ? { spot: pick(['ga', 'floor', 'lawn']) } : { section: String(100 + Math.floor(rand() * 230)), row: pick(['A', 'C', 'F', 'K', 'M', 'R']), seat: String(1 + Math.floor(rand() * 24)) });
 const exampleCost = (watched) =>
   watched
@@ -88,36 +83,37 @@ const exampleCost = (watched) =>
       ? { free: true, lines: [], currency: 'USD' }
       : { lines: [{ kind: 'ticket', amount: 40 + Math.floor(rand() * 200) }, ...(rand() < 0.5 ? [{ kind: 'parking', amount: pick([20, 30, 45]) }] : [])], currency: 'USD' };
 
-const stubs = sampled.map(eventOnly).map((ev, i) => {
+// The catalog's own event for each sampled date; a stub is built from it the app's way (title, sides, tags, opponents,
+// venue), so no word she typed travels. An event the catalog no longer holds is skipped.
+globalThis.localStorage = { getItem: () => null, setItem() {}, removeItem() {} };
+const server = await createServer({ server: { middlewareMode: true }, logLevel: 'error' });
+const { getCityDate, getEventsBetween, todayIn, stubFromEvent } = await server.ssrLoadModule('/src/data/index.ts');
+const { METROS } = await server.ssrLoadModule('/src/config/metros.ts');
+const stubs = [];
+let skipped = 0;
+for (const ev of sampled.map(eventOnly)) {
+  const day = await getCityDate(ev.metroId, ev.date).catch(() => null);
+  const event = day ? [...(day.events ?? []), ...(day.furtherOut ?? [])].find((x) => x.id === ev.eventId) : undefined;
+  if (!event) {
+    skipped += 1;
+    continue;
+  }
   const review = rand() < 0.6 ? pick(EXAMPLE_REVIEWS) : undefined;
   const withWho = rand() < 0.5 ? pick(EXAMPLE_WITH) : undefined;
   const userTags = rand() < 0.5 ? [...new Set([pick(EXAMPLE_TAGS), ...(rand() < 0.3 ? [pick(EXAMPLE_TAGS)] : [])])] : undefined;
   const cost = exampleCost(ev.watched);
-  return {
-    id: `seed-sample-${i + 1}`,
-    eventId: ev.eventId,
-    when: { sort: ev.date, label: ev.date, precision: 'day' },
-    title: ev.title,
-    tags: ev.sides.slice(0, 2),
-    sport: ev.sport,
-    sides: ev.sides,
-    venue: ev.venue,
-    kind: ev.kind,
-    metroId: ev.metroId,
-    inMetro: ev.inMetro,
+  stubs.push({
+    ...stubFromEvent(event),
+    id: `seed-sample-${stubs.length + 1}`,
     ...(ev.watched ? { watched: true } : { seats: exampleSeats() }),
     ...(cost ? { cost } : {}),
     ...(review ? { review } : {}),
     ...(withWho ? { with: withWho } : {}),
     ...(userTags ? { userTags } : {}),
-  };
-});
+  });
+}
 
 // Plans on real upcoming catalog events: Los Angeles first, then a few other cities, a mix of the three answers.
-globalThis.localStorage = { getItem: () => null, setItem() {}, removeItem() {} };
-const server = await createServer({ server: { middlewareMode: true }, logLevel: 'error' });
-const { getEventsBetween, todayIn } = await server.ssrLoadModule('/src/data/index.ts');
-const { METROS } = await server.ssrLoadModule('/src/config/metros.ts');
 const { listTitle } = await server.ssrLoadModule('/src/lib/eventTitle.ts');
 const PLAN_CITIES = ['la', 'new-york', 'chicago', 'seattle'];
 const plans = [];
@@ -147,7 +143,7 @@ for (const metroId of PLAN_CITIES) {
 
 // ---------- 3. Dry-run summary ----------
 const count = (list, test) => list.filter(test).length;
-console.log(`Export: ${backup.entries.length} entries, ${eligible.length} on a catalog event and an exact day.`);
+console.log(`Export: ${backup.entries.length} entries, ${eligible.length} on a catalog event and an exact day (hand-typed ones left out); ${skipped} sampled events no longer in the catalog were skipped.`);
 console.log(`Would write to test account A only (ids "seed-sample-*"; other rows on A are left alone):`);
 console.log(`  ${stubs.length} stubs from her events (events and dates only): ${count(stubs, (s) => !s.watched)} attended, ${count(stubs, (s) => s.watched)} watched`);
 console.log(`    with EXAMPLE seats on ${count(stubs, (s) => s.seats)}, costs on ${count(stubs, (s) => s.cost)}, reviews on ${count(stubs, (s) => s.review)}, who-with on ${count(stubs, (s) => s.with)}, tags on ${count(stubs, (s) => s.userTags)}`);
@@ -173,10 +169,12 @@ if (error) throw new Error(error.message);
 const store = createSupabaseEntryStore(client, () => data.user.id);
 const before = await store.load();
 const ours = (row) => String(row.id).startsWith('seed-sample-');
+// An event A already holds in a row of its own (another seed, an agent's check) is not seeded again.
+const held = new Set([...before.added, ...before.plans].filter((row) => !ours(row) && row.eventId).map((row) => row.eventId));
 const after = {
   ...before,
-  added: [...before.added.filter((row) => !ours(row)), ...stubs],
-  plans: [...before.plans.filter((row) => !ours(row)), ...plans],
+  added: [...before.added.filter((row) => !ours(row)), ...stubs.filter((row) => !held.has(row.eventId))],
+  plans: [...before.plans.filter((row) => !ours(row)), ...plans.filter((row) => !held.has(row.eventId))],
 };
 await store.save(diffLogs(before, after));
 const now = await store.load();

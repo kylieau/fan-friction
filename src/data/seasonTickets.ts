@@ -96,8 +96,9 @@ function movePlan(plan: Plan, teamId: string, game: TeamGame): Plan {
  * Bring a team's season plans in line with its schedule as it stands today: a wanted game with no plan gets one; a
  * plan whose game moved follows it; a plan she already had on the same event (made by hand before the switch) is
  * adopted and keeps her own seat and cost as an edit; a game the schedule has dropped is flagged `gone`; a plan on
- * a game that is no longer in the set (removed, or unpicked on a Partial plan) is taken out. Past plans are never
- * touched. Returns the same list when nothing changed.
+ * a game that is no longer in the set (removed, or unpicked on a Partial plan) is taken out. A past plan is left as is,
+ * except that it follows a moved game and loses its `gone` flag once the schedule lists its game again. Returns the same
+ * list when nothing changed.
  */
 export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicket, games: readonly TeamGame[], today: string, level: StubVisibility): Plan[] {
   if (!ticket.on) return [...plans];
@@ -116,6 +117,14 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
     const movedAhead = Boolean(pastGame && pastGame.date >= today && seasonPlanEventId(pastGame) !== plan.eventId);
     if (pastGame && !movedAhead && seasonPlanEventId(pastGame) !== plan.eventId) {
       next.push(movePlan(plan, ticket.teamId, pastGame));
+      changed = true;
+      continue;
+    }
+    // A past plan flagged while its game was briefly missing from the schedule clears once the schedule lists it again,
+    // so it can settle into her stub (substitute review for stage 5).
+    if (pastGame && plan.season?.gone && seasonPlanEventId(pastGame) === plan.eventId) {
+      const { gone: _gone, ...season } = plan.season;
+      next.push({ ...plan, season });
       changed = true;
       continue;
     }

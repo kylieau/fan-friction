@@ -129,7 +129,8 @@ export function DateScreen() {
     () => yourEntries(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
     [log, date, metro.id],
   );
-  const plans = useMemo(() => log.plans.filter((p) => firmPlan(p) && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
+  // A flagged season game (no longer on the schedule) isn't counted as yours on its day (substitute review for stage 5).
+  const plans = useMemo(() => log.plans.filter((p) => firmPlan(p) && !p.season?.gone && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
   // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
   const dayRange = cityDayRange(metro.id, date);
