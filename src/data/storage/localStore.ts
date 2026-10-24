@@ -103,6 +103,11 @@ export function readCrowdRange(value: unknown): CrowdRange | undefined {
 }
 
 /** The ISO time the starred list last changed, or undefined for a copy that never wrote one. */
+/** The Temperature Units choice, when the saved value is one of the two (build 7.1, M40). */
+export function readTemperatureUnit(value: unknown): 'F' | 'C' | undefined {
+  return value === 'F' || value === 'C' ? value : undefined;
+}
+
 export function readStamp(value: unknown): string | undefined {
   return typeof value === 'string' && Number.isFinite(Date.parse(value)) ? value : undefined;
 }
@@ -141,6 +146,8 @@ export function readLocalLog(): PersonalLog {
       ...(readStamp(parsed.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(parsed.favoriteCitiesAt) } : {}),
       ...(readCrowdRange(parsed.crowdRange) ? { crowdRange: readCrowdRange(parsed.crowdRange) } : {}),
       ...(readStamp(parsed.crowdRangeAt) ? { crowdRangeAt: readStamp(parsed.crowdRangeAt) } : {}),
+      ...(readTemperatureUnit(parsed.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(parsed.temperatureUnit) } : {}),
+      ...(readStamp(parsed.temperatureUnitAt) ? { temperatureUnitAt: readStamp(parsed.temperatureUnitAt) } : {}),
       ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {

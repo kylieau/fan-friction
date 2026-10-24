@@ -802,6 +802,13 @@ export interface PersonalLog {
   /** When the range last changed (ISO). The newer copy wins, like the starred cities. */
   crowdRangeAt?: string;
   /**
+   * Temperature Units (build 7.1, M40; Kylie, Oct 23, 2026): °F or °C for every degree in the app. Absent means no
+   * choice yet, and each city's own rule applies (°C in Canada and Mexico). Saved with the settings.
+   */
+  temperatureUnit?: 'F' | 'C';
+  /** When the unit last changed (ISO). The newer copy wins, like the crowd range. */
+  temperatureUnitAt?: string;
+  /**
    * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
    * another device cannot put them back; pruned after half a year.
    */

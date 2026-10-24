@@ -3,7 +3,7 @@
 // the app no longer ships them to everyone. `hiddenSeedIds` stays for old phone copies.
 // Screens reach this only through src/data/index.ts.
 
-import { METROS } from '../config/metros';
+import { METROS, applyTemperatureUnit, type TemperatureUnit } from '../config/metros';
 import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
@@ -95,7 +95,21 @@ let saveWarning: string | null = null;
 const listeners = new Set<() => void>();
 
 function emit() {
+  // Every degree in the app follows the saved Temperature Units choice (build 7.1, M40); the log is the one place
+  // it is kept, so the unit rule learns it here, on every load and change.
+  applyTemperatureUnit(snapshot.temperatureUnit ?? null);
   listeners.forEach((listener) => listener());
+}
+
+/** The Temperature Units choice, or null when the city's own rule still applies (build 7.1, M40). */
+export function temperatureUnitOf(log: PersonalLog = snapshot): TemperatureUnit | null {
+  return log.temperatureUnit ?? null;
+}
+
+/** Save the Temperature Units choice, stamped so the newest copy wins across devices; null goes back to the city's rule. */
+export function setTemperatureUnit(unit: TemperatureUnit | null) {
+  const { temperatureUnit: _unit, ...rest } = snapshot;
+  commit({ ...rest, ...(unit ? { temperatureUnit: unit } : {}), temperatureUnitAt: new Date().toISOString() });
 }
 
 export function subscribePersonalLog(listener: () => void) {

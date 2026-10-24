@@ -181,6 +181,8 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     before.favoriteCitiesAt !== after.favoriteCitiesAt ||
     JSON.stringify(before.crowdRange ?? null) !== JSON.stringify(after.crowdRange ?? null) ||
     before.crowdRangeAt !== after.crowdRangeAt ||
+    before.temperatureUnit !== after.temperatureUnit ||
+    before.temperatureUnitAt !== after.temperatureUnitAt ||
     JSON.stringify(before.removed ?? {}) !== JSON.stringify(removed);
   return { entries, plans, settings, log };
 }
@@ -220,8 +222,17 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     favorites: mergeFavorites(account.favorites, phone.favorites),
     ...mergeCities(account, phone),
     ...mergeCrowdRange(account, phone),
+    ...mergeTemperatureUnit(account, phone),
     removed,
   };
+}
+
+/** Temperature Units (build 7.1, M40): the copy changed last wins, as with the crowd range; an unstamped copy yields. */
+function mergeTemperatureUnit(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'temperatureUnit' | 'temperatureUnitAt'> {
+  const a = account.temperatureUnitAt ?? '';
+  const b = phone.temperatureUnitAt ?? '';
+  const mine = b > a ? phone : account;
+  return { ...(mine.temperatureUnit ? { temperatureUnit: mine.temperatureUnit } : {}), ...(mine.temperatureUnitAt ? { temperatureUnitAt: mine.temperatureUnitAt } : {}) };
 }
 
 /**

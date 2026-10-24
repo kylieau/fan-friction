@@ -48,10 +48,28 @@ export function metroMatchesSearch(metro: Pick<Metro, 'name' | 'code'>, typed: s
   return q === '' || metro.name.toLowerCase().includes(q) || metro.code.toLowerCase().startsWith(q);
 }
 
-/** Does this city show temperatures in °C? The data and the formula stay in °F; only the words change. */
-export function usesCelsius(metroId: string): boolean {
+/** The city's own rule: °C in Canada and Mexico, °F elsewhere. The default a person sees before they choose. */
+export function metroUsesCelsius(metroId: string): boolean {
   const zone = METROS[metroId]?.timeZone;
   return zone !== undefined && CELSIUS_ZONES.has(zone);
+}
+
+export type TemperatureUnit = 'F' | 'C';
+
+/**
+ * The person's Temperature Units choice (build 7.1, M40; Kylie, Oct 23, 2026), set by the personal log when it loads
+ * or changes so every degree in the app follows it with no signature change here. Null means no choice yet: each
+ * city's own rule applies. The nightly job runs with no log, so its text keeps the city rule.
+ */
+let chosenUnit: TemperatureUnit | null = null;
+export function applyTemperatureUnit(unit: TemperatureUnit | null): void {
+  chosenUnit = unit;
+}
+
+/** Does this city show temperatures in °C? The data and the formula stay in °F; only the words change. */
+export function usesCelsius(metroId: string): boolean {
+  if (chosenUnit) return chosenUnit === 'C';
+  return metroUsesCelsius(metroId);
 }
 
 /** A feels-like or air temperature (given in °F) as the city reads it: "84°" in the US, "29°" in Canada and Mexico. */
