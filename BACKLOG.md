@@ -84,7 +84,8 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ### Build 7.1 follow-ups (Claude Code, Oct 24, 2026; the report is `docs/build-7-1/gap-report-7-1.md`)
 Build 7.1 shipped steps 1–14 on Oct 24 (the notes: `docs/build-7-1/build-notes-7-1.md`). Closed by the notes, nothing to build: **M10** (add-on listings hidden, `addOns.ts`), **M12** (type icons option C and 20k rounding), **M13** (favorite cities on the switcher; reordering shipped as M31). **Season tickets** (item 15) shipped. Left, each with its why in the report:
-- **Codex stage 4 re-run** (steps 9–12): it ran out of credits partway; re-run once the workspace has credits ("Skipped reviews"). Codex stage 5 likewise if it can't run.
+- **Codex stages 4 and 5, re-run** (steps 9–14): stage 4 ran out of credits partway and stage 5 never started; re-run both once the workspace has credits, with the visual reviews (shot against mock) for steps 12 (M33) and 13 (M39), which no Codex run covered ("Skipped reviews"). Substitute Claude reviews covered their focus lists; every finding is fixed or recorded.
+- **Gap-report question 7** (a flagged past season game clearing on its own once listed again): built that way as a builder's call; reverse if Kylie prefers a manual clear.
 - **Plan details past the catalog's 60-day window** on Upcoming (Codex stage 3, finding 6 in part): a plan's start and room for games the window doesn't hold need a read per plan.
 - **One game identity across feeds** (Codex stage 3, finding 11): the same game saved through two teams' schedules can show twice.
 - **A retractable-roof note** on the event page (M33's 506): needs a venue field; today only code comments say "Retractable".
