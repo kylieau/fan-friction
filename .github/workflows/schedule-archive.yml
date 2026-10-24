@@ -57,6 +57,12 @@ jobs:
       - name: Fetch weather
         id: weather
         continue-on-error: true
+        env:
+          # Build 7.1, M17 (Oct 24, 2026): the weather step collects the same listings the schedule step does, so it
+          # needs the sellers' keys too; without them no Ticketmaster show at an outdoor room (the Hollywood Bowl, the
+          # Greek Theatre) got a forecast, and the event page's weather card went missing.
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          JAMBASE_API_KEY: ${{ secrets.JAMBASE_API_KEY }}
         run: |
           metro_args=()
           if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
