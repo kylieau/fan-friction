@@ -12770,7 +12770,7 @@ a.follow-lead::after {
   flex: none;
   color: var(--muted);
 }
-.stub-actions .gold-button {
+.stub-actions .gold-button:not(.small) {
   flex: 1;
 }
 /* The answered state: one bordered chip, the status, the level, Edit. */

@@ -820,7 +820,8 @@ export async function backfillLegacyCrowds(loadDate: (metroId: string, date: str
 }
 
 /** Bump when the naming rules change, so every log takes the new names once. */
-const TITLE_VERSION = 'title-case-b71'; // Oct 24: build 7.1 retitles school games, labels every college game and writes every label in Title Case (opponents-b7 ran Oct 22, labels-r3 Oct 15)
+const TITLE_VERSION = 'weekday-night-b71'; // Oct 24: M33 drops a brand's weekday-night words ("WWE SmackDown")
+// previously 'title-case-b71'; // Oct 24: build 7.1 retitles school games, labels every college game and writes every label in Title Case (opponents-b7 ran Oct 22, labels-r3 Oct 15)
 
 /**
  * Stubs made from an event take that event's current short name (Kylie, Oct 14: old stubs read "NLCS G2 · Dodgers

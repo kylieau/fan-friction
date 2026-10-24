@@ -340,6 +340,14 @@ export function EventScreen() {
             {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
           </span>
         )}
+        {/* A plan's tags (Attending, Watching) show under the chip; a stub's are on the Your Stub card (M33). */}
+        {!logged && (youRow?.userTags ?? []).length > 0 && (
+          <div className="your-stub-tags plan-tags">
+            {(youRow?.userTags ?? []).map((tag) => (
+              <TagChip key={tag} tag={tag} size="row" onClick={() => navigate(tagPath(tag))} />
+            ))}
+          </div>
+        )}
         {/* The Your Stub line (M33, Lean): Attended or Watched on a full catalog page; a plan gets none, nor does a
             further-out page (its card is near the top). A thin stub reads as a prompt. */}
         {logged && !further && (
@@ -548,7 +556,7 @@ export function EventScreen() {
           line={shareLine}
           rating={!watchedPage && day.rating ? day.rating.rating : null}
           crowd={shareCrowd}
-          sub={`Shares ${[shortLocalDate(date), fullTitle(e), shareCrowd ? shareCrowd.toLowerCase().replace(/^at least/, 'at least') : null].filter(Boolean).join(' · ')}`}
+          sub={`Shares ${[shortLocalDate(date), fullTitle(e), shareCrowd ? shareCrowd.toLowerCase() : null].filter(Boolean).join(' · ')}`}
         />
         {logged && (
           <Link to={comparePath({ metroId: e.metroId, date, eventId: e.id })} className="footer-row compare-link">

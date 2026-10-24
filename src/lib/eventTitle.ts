@@ -797,9 +797,12 @@ export function fullTitle(event: CrowdEvent): string {
  * (build 5's three lengths).
  */
 export function headerTitle(event: CrowdEvent): string {
-  return fullTitle(event)
-    .replace(/\s+(?:19|20)\d{2}(?=\)|$)/g, '')
-    .replace(/\s+\(\)$/, '');
+  if (event.titleFixed) return event.title;
+  const p = partsOf(event);
+  if (p.type === 'named') return renderNamed({ ...p, year: null }, 'full');
+  // A game's year is its final's or label's ("Super Bowl 2027"); a show keeps a year that is part of its tour's name.
+  if (p.type === 'game') return fullTitle(event).replace(/\s+(?:19|20)\d{2}(?=\)|$)/g, '');
+  return fullTitle(event);
 }
 
 // ---------- Chips ----------
