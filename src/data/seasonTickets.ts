@@ -45,6 +45,17 @@ export function seasonDefaultCost(ticket: Pick<SeasonTicket, 'ticket' | 'parking
   return normalizeCost(lines.length > 0 ? { lines, ...(ticket.currency ? { currency: ticket.currency } : {}) } : undefined);
 }
 
+/**
+ * The defaults on a plan, as its answer allows (the Stub it sheet's rules): a seat only while Attending, a cost while
+ * Attending or Watching, nothing on Interested (Codex, build 7.1 steps 9–10 review).
+ */
+function withDefaults<T extends Plan>(plan: T, ticket: SeasonTicket, keep: { seats?: boolean; cost?: boolean } = {}): T {
+  const { seats: oldSeats, cost: oldCost, ...rest } = plan;
+  const seats = keep.seats ? oldSeats : plan.watch || plan.interested ? undefined : normalizeSeats(ticket.seats);
+  const cost = keep.cost ? oldCost : plan.interested ? undefined : seasonDefaultCost(ticket);
+  return { ...rest, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}) } as T;
+}
+
 /** What a game's plan shows and where it is, from the schedule row (the event page's own words for the game). */
 function placeOf(teamId: string, game: TeamGame): Pick<Plan, 'date' | 'metroId' | 'eventId' | 'title' | 'venue'> {
   const event = eventFromGame({ teamId, game });
@@ -123,14 +134,27 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
       changed = true;
     } else next.push(plan);
   }
+  // A game that moved onto a day she had already planned by hand: one plan, the season's, keeping her own seat and cost
+  // as this game's edit when the season plan had none (Codex, steps 9–10 review: two plans with one id otherwise).
+  for (let i = next.length - 1; i >= 0; i--) {
+    const plan = next[i];
+    if (plan.season?.teamId !== ticket.teamId) continue;
+    const twin = next.findIndex((other, j) => j !== i && other.eventId === plan.eventId && !other.season);
+    if (twin < 0) continue;
+    const own = next[twin];
+    const merged: Plan = !plan.season.edited && (own.seats || own.cost) ? { ...plan, ...(own.seats ? { seats: own.seats } : {}), ...(own.cost ? { cost: own.cost } : {}), season: { ...plan.season, edited: true } } : plan;
+    next[i] = merged;
+    next.splice(twin, 1);
+    changed = true;
+    if (twin < i) i--;
+  }
   for (const game of wanted) {
     if (seenGames.has(game.id)) continue;
     const eventId = seasonPlanEventId(game);
     const at = next.findIndex((plan) => plan.eventId === eventId);
     if (at >= 0) {
       // Her own plan on this game from before: it joins the season; a seat or cost she typed counts as this game's edit.
-      const own = next[at];
-      next[at] = { ...own, season: { teamId: ticket.teamId, gameId: game.id, ...(own.seats || own.cost ? { edited: true } : {}) }, ...(own.seats ? {} : ticket.seats ? { seats: normalizeSeats(ticket.seats) } : {}), ...(own.cost ? {} : seasonDefaultCost(ticket) ? { cost: seasonDefaultCost(ticket) } : {}) };
+      next[at] = adoptPlan(next[at], ticket, game);
       changed = true;
       continue;
     }
@@ -140,13 +164,16 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
   return changed ? next : [...plans];
 }
 
+/** Her own plan on a season game joins the season; a seat or cost she typed counts as this game's edit. */
+export function adoptPlan(own: Plan, ticket: SeasonTicket, game: TeamGame): Plan {
+  const joined: Plan = { ...own, season: { teamId: ticket.teamId, gameId: game.id, ...(own.seats || own.cost ? { edited: true } : {}) } };
+  return withDefaults(joined, ticket, { seats: Boolean(own.seats), cost: Boolean(own.cost) });
+}
+
 /** The defaults applied again to a season plan (a default changed; "Apply to N unedited" or "Apply to all upcoming"). */
 export function applySeasonDefaults(plan: Plan, ticket: SeasonTicket): Plan {
-  const seats = normalizeSeats(ticket.seats);
-  const cost = seasonDefaultCost(ticket);
-  const { seats: _s, cost: _c, ...rest } = plan;
   const { edited: _e, ...season } = plan.season ?? { teamId: ticket.teamId, gameId: '' };
-  return { ...rest, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), season };
+  return withDefaults({ ...plan, season }, ticket);
 }
 
 /** A season plan's seat or cost set for this game alone: marked edited, so a default change leaves it be. */

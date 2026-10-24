@@ -20,6 +20,7 @@
 | 10. Season Tickets (item 15), three slices | done, pushed | `12cd3be8` (data, reconcile, sync, checks), `e99e2974` (team page, sheets, season page), `7bd717de` (Upcoming tag, seat, playoff card) | walked end to end on the headless phone with the Lakers' 2026–27 schedule: 38 plans made, one edited, one sold, a default changed |
 | 11 (a). Profile & Settings D, M18, M30, M40's row, M11 | done | `afe77b65` (first cut), _(the finishing commit)_ | measured signed out with example faves and cities; 12 old addresses walked; the pinned head on every sub-page; Codex review of (a) follows |
 | 11 (c). M25, M26, item 2 | done | _(this commit)_ | heading links, the e3 tiles and the Edit Favorites sheet measured; built before (b) because (b)'s files were under review |
+| Codex reviews: steps 9–10 and 11 (a) | done | _(the fixes commit)_ | 22 + 9 findings, all accepted (one already fixed by (c)); 36 storage checks pass |
 | Codex stage 3 | done, pushed | `9597e0a7` | twenty-two findings, twenty accepted (two in part), two not done with reasons (plan reads past the horizon; a shared game identity) |
 | Codex stage 2 | done, pushed | `0552deee` | fourteen findings, thirteen accepted (one in part), one not fixable from the data | strip, card and row markers measured; the saved-night lines checked headless from the archive |
 | Codex stage 1 | done, pushed | `6ae4e5c5`, docs `3773857d` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
@@ -200,14 +201,12 @@ None yet.
 | M18 | mock 10 cuts the long second name | the first name stays whole up to half the row; the second takes the cut | a short first name was being cut to "LA Lak" when both shrank together | yes |
 | item 15 | the setup sheet's "Add 84 games" counts the season | counts the home games still ahead | a past preseason game is not a plan to make (the Lakers' two preseason home games were over) | yes |
 | item 15 | 06 draws the defaults' labels in ink | the same (the app's settings rows paint labels blue; the season page overrides) | matches the mock | n/a |
-| item 15 | 16 always asks "Apply to games not yet edited?" | asked only when at least one upcoming game was edited; with none edited the new default applies to every upcoming game at once; with no upcoming game it just saves | the prompt's two buttons would read the same with zero edits | yes |
 | item 15 | 18: "You can turn it back on later" | the team's defaults are kept with the switch off, so turning it back on starts from the same seat and price (the removed and declined lists are cleared) | fewer boxes the second time; a builder's call | yes |
 | item 15 | 20-r2 draws a "−" button on every plan row | no button | plan rows carry no log buttons (Kylie, Oct 22, 2026, Locked) | n/a |
 | item 15 | 15's "Seat · same as your default" | the same words when the game's seat line equals the default's, else "default Sec 48 · Row K · Seat 7" | as drawn | n/a |
 | item 15 | 06 lists past games as a row with a count | "Past Games" with the first and last stub dates and the count, opening Your Stubs filtered on the team | the stubs are the record; a second list here would repeat it | yes |
 | item 15 | (not drawn) a neutral-site "home" game | not a season game | season tickets cover the home building; an international series lists as home in the feed | yes |
 | item 15 | 18: "Removes N upcoming games" | the same; a plan she made by hand on a season game before the switch counts among them, since the season adopted it | one rule for the season's games; the count on the confirm is honest about it | yes |
-| item 15 | (not drawn) a season plan's row height | 73px with the pill and the seat, against the window's ~69 | 240px shows three rows and a third of the fourth rather than half; the cue still reads | yes |
 | item 4 | "Upcoming events sort first, then past ones (newest past first)" | the same order, but past rows keep about a third of the list | with the list cut at 12, a team's future games alone would fill it and the sheet could no longer back-fill a past game | yes |
 | item 6 | "Carry-over to the stub stays as is" | also a Cost row on a hand-typed stub's page | the carried cost had nowhere to show (the stub page had Seat only) | yes |
 | item 8 | "the team filter becomes a dropdown … The sport choices can stay as they are" | one dropdown for teams, the sport chips as before | as written | n/a |
@@ -320,6 +319,44 @@ Found fine: the Sunday week math across month, year and leap edges and under fou
 22. **A band resize outside React could stale the sticky offset** (low). **Accepted:** a `ResizeObserver` on the band keeps the offset current.
 Found fine: plan privacy (the `plan_cards` view and visibility functions, no new path to a Private or Friends plan), a missing `metroId` does not drop a plan, no 60-day upper cutoff on plans, schedule-only rows merge on an exact id, friends' statuses Title Case in the ladder's order, Activity backward-only and newest-first with the friends' floor, the Watched-only no-tile paths, no numeric verdict on a catalog event's stub line, `backDays: 0` with the Today divider and no pill, the box's `max-height: 240px` and normal scroll chaining, coherent sticky offsets, Interested-only You rows, profile Interested flags, Timeline's remaining caller, no unused imports.
 
+**Steps 9–10 review** (the diff `9597e0a7..8966e866`, run Oct 24 about 9:00–9:15 AM Pacific after the model change; read-only; it type-checked and ran the storage check in memory, 29 assertions passing; it could open the after-shots). Twenty-two findings:
+1. **A plain seat or cost edit on a season game was overwritten by "Apply to unedited"** (high). **Accepted:** `setPlanSeats` and `setPlanCost` mark a season plan edited.
+2. **Saving one game dropped a ticket quantity** (high). **Accepted:** the ticket line keeps its `qty`.
+3. **A game moved onto a day with a hand-made plan left two plans with one id** (high). **Accepted:** the reconcile merges them into the season plan, her seat and cost kept as this game's edit; a storage check covers it.
+4. **A vanished game's flagged plan never showed on the season page** (medium). **Accepted:** a "Not on the Schedule" section lists them with Remove.
+5. **Defaults gave a Watching plan a seat and an Interested plan a seat and cost** (medium). **Accepted:** one helper applies the Stub it sheet's rules to defaults and to adoption; storage checks cover both.
+6. **Re-add left a plan made meanwhile outside the season** (medium). **Accepted:** Re-add adopts it, its seat and cost kept.
+7. **The season page stayed editable after the switch was turned off** (medium). **Accepted:** the page shows the off line, and Re-add, the playoff answer and default changes do nothing while off.
+8. **The Partial picker could start empty when the account loaded after it** (medium). **Accepted:** it fills again when the ticket arrives, until she touches it.
+9. **An existing Partial plan couldn't be emptied** (medium). **Accepted:** Save allows zero games when the plan already had some.
+10. **Removed games counted as picked but couldn't come back from the picker** (medium). **Accepted:** the picker starts from the active picks, and picking a game again clears its removal.
+11. **A failed schedule read showed "Loading" forever** (medium). **Accepted:** loading, failed (with Try again) and loaded are separate states.
+12. **A cached schedule never ran the reconcile, and app start didn't either** (medium). **Accepted:** `refreshSeasonTickets` runs at app start and once the account copy is in, before plans settle (the report's "app start" claim was false until now).
+13. **The playoff card took the first team's game, not the earliest** (medium). **Accepted:** the earliest unanswered game across every season team.
+14. **Season stub counts credited namesakes** (medium; recurring with the stage 4 note). **Accepted:** one matcher, `seasonStubsOf` (the full name, or the short name only on the same sport in the team's city), for the count and Past Games.
+15. **A malformed saved seat could crash the seat line** (medium). **Accepted:** saved season seats are read field by field, text only.
+16. **The season switches' tap targets were the 48 × 28 track** (medium). **Accepted:** each switch's row is its label.
+17. **Season rows (73px) broke the 3.5-row window** (medium). **Accepted:** the window measures its rows: three full plan rows and half the fourth, whatever their height or a month label between (measured 262px with a two-line fourth row); this withdraws the step 10 table row that accepted 73px rows.
+18. **A default change skipped the required prompt when nothing was edited** (medium). **Accepted:** the prompt shows whenever upcoming games exist, as item 15 says; this withdraws the step 10 builder's call.
+19. **"What happened?" missed Title Case** (low). **Accepted:** "What Happened?".
+20. **The Log sheet cut rows inside its lists, hiding the reserved past rows** (medium, step 9). **Accepted:** nothing in the sheet's scroll shrinks; measured 17 rows, none cut.
+21. **Search labelled "Mercyhurst Lakers Mens Basketball at Louisville…" an LA Lakers Fave** (medium; recurring, the stage 4 note). **Accepted (in scope: school-feed team records, M9 and M38):** with no team ids, a team favorite matches only when one side of the matchup is the team (its label, short or full name, or an alias), never a pro team on a school game, and the sport when known; measured: the row now leads "Indianapolis" while every real Lakers game keeps "LA Lakers · Fave".
+22. **A long default seat could push the card's link** (medium). **Accepted:** the seat and defaults lines ellipsize.
+Visual notes accepted: the season card's "Games & Settings ›" now reads in accent blue (M25's shared rule); the season page's defaults are one grouped card as in 06. Not new shots: the expanded total helper, the playoff card, the Partial picker and the Sidearm-disabled switch (no data for them in the test log), for Kylie's phone check.
+Found fine: search order, the year form, manual Seat and Cost, the team dropdown, the Log sheet's city switch without `?metro`, the flush "+", ordinary catalog ids, removal bookkeeping, zero extra commits from an unchanged reconcile, no season, seat or cost data in `plan_cards`, `soldFor` never in Spend, the season route's order.
+
+**Step 11 (a) review** (the diff `8966e866..dfdf7803 -- src`; read-only; it type-checked; it opened the after-shots). Nine findings:
+1. **The admin review queue could stay on screen after a sign-out** (P1). **Accepted:** `?page=review` renders only for the signed-in, confirmed admin, and the queue is keyed by the account.
+2. **Your Stubs' calendar scroll never lit the head's divider** (P2). **Accepted:** the calendar's scroller counts too.
+3. **Sub-pages opened at the main page's scroll** (P2). **Accepted:** each sub-page mounts fresh at its top; Back puts the main page where it was.
+4. **Saving a directly opened Edit Profile could leave the app** (P2). **Accepted:** it falls back to Profile & Settings with no app history.
+5. **`?page=faves#account` hid Account** (P2). **Accepted:** an in-place section drops `page=`.
+6. **The Edit Favorites sheet still showed "Seen N"** (P2). **Accepted, already fixed** by step 11 (c) (`4de4f989`).
+7. **An empty Blocked row disappeared** (P3). **Accepted:** signed in, Blocked shows "None" when empty (the summary-row empty states).
+8. **"Profile link" and the first-run picker's "Your teams" were sentence case** (P3). **Accepted:** "Profile Link", "Your Teams".
+9. **A long name or handle could run under Edit and Share** (P2, hypothesis). **Accepted:** both lines ellipsize.
+Visual: 05 differs only where signed in (for Kylie); 2-c matches the unit row; 07-B and 18-D match.
+
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
@@ -369,7 +406,7 @@ _(filled as the build goes)_
 - M22, a friend's plan on an event a fave row already holds: a quiet line under that row rather than a second row.
 - M23 on the event page: the only verdict there is the This Day card, which M33 (step 12) handles for Watched pages; nothing to change until then.
 
-- **Item 15, Season Tickets (builder's calls, all recorded here and in the table):** home means home and not neutral; a season plan's removal from any screen is written to the team's removed list; a default change prompts only when an edited game exists; the defaults survive turning the switch off; the playoff card is one at a time (the earliest unanswered home playoff game across season teams); a Partial plan's picker is the season page with checkboxes and a sticky "Save N games"; "Change which games you own ›" reopens it; a Watched or Interested answer on a season game keeps its season mark (so the season does not add it back as Attending), while taking the plan out writes the removal; `seasonCounts`' stub count credits the team by its name on the stub's sides.
+- **Item 15, Season Tickets (builder's calls, all recorded here and in the table):** home means home and not neutral; a season plan's removal from any screen is written to the team's removed list; a default change always prompts when upcoming games exist (after the steps 9–10 review); the defaults survive turning the switch off; the playoff card is one at a time (the earliest unanswered home playoff game across season teams); a Partial plan's picker is the season page with checkboxes and a sticky "Save N games"; "Change which games you own ›" reopens it; a Watched or Interested answer on a season game keeps its season mark (so the season does not add it back as Attending), while taking the plan out writes the removal; `seasonCounts`' stub count credits the team by its name on the stub's sides.
 
 - **M26, the "Seen N" line on the Faves tiles:** dropped. Kylie dropped it from the Edit Favorites sheet and the Teams & Artists page (Oct 23) as the wrong place for that count; the tiles are the same kind of list, and the notes' lean is the same rule. The tiles keep e3's 60pt so the card reads as drawn.
 

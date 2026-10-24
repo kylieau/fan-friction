@@ -4,7 +4,8 @@
 import { APP } from '../../config/app';
 import { METROS } from '../../config/metros';
 import { parseStamp } from '../read';
-import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket } from '../types';
+import { normalizeSeats } from '../stubTags';
+import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket, Seats } from '../types';
 import type { EntryStore } from './types';
 
 const KEY = `${APP.slug}:your-nights`;
@@ -108,6 +109,15 @@ export function readTemperatureUnit(value: unknown): 'F' | 'C' | undefined {
   return value === 'F' || value === 'C' ? value : undefined;
 }
 
+/** A saved seat, checked field by field: text only, so a malformed copy can never reach the seat line (Codex, steps 9–10). */
+function seatsOf(value: unknown): Seats | undefined {
+  if (!value || typeof value !== 'object') return undefined;
+  const raw = value as Record<string, unknown>;
+  const pick: Seats = {};
+  for (const key of ['section', 'row', 'seat', 'spot'] as const) if (typeof raw[key] === 'string') (pick as Record<string, string>)[key] = raw[key] as string;
+  return normalizeSeats(pick);
+}
+
 /** Season tickets as saved (build 7.1, item 15): one record per team, each checked piece by piece; anything else is dropped. */
 export function readSeasonTickets(value: unknown): SeasonTicket[] | undefined {
   if (!Array.isArray(value)) return undefined;
@@ -131,7 +141,7 @@ export function readSeasonTickets(value: unknown): SeasonTicket[] | undefined {
       teamId: t.teamId,
       on: t.on === true,
       plan: t.plan,
-      ...(t.seats && typeof t.seats === 'object' ? { seats: t.seats } : {}),
+      ...(seatsOf(t.seats) ? { seats: seatsOf(t.seats) } : {}),
       ...(money(t.ticket) !== undefined ? { ticket: money(t.ticket) } : {}),
       ...(money(t.parking) !== undefined ? { parking: money(t.parking) } : {}),
       ...(typeof t.currency === 'string' ? { currency: t.currency } : {}),

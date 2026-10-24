@@ -185,7 +185,7 @@ export function StubsScreen() {
       className="screen page timeline-page stubs-page"
       onScrollCapture={(ev) => {
         const el = ev.target as HTMLElement;
-        if (view !== 'list' && el.classList?.contains('stub-grid')) setListScrolled(el.scrollTop > 2);
+        if (view !== 'list' && (el.classList?.contains('stub-grid') || el.classList?.contains('stub-calendar'))) setListScrolled(el.scrollTop > 2);
       }}
     >
       {/* No count beside the title (build 7.1, item 9); the head pins with its divider once the list scrolls (M30). */}

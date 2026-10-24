@@ -20,6 +20,7 @@ import {
   getAccount,
   getPersonalLog,
   getTeamSchedule,
+  seasonPlanEventId,
   seasonPlayoffGames,
   seatShort,
   TEAMS,
@@ -88,7 +89,7 @@ function planKind(plan: Plan): PlanKind {
 
 const PLAN_WORDS: Record<PlanKind, string> = { attending: 'Attending', watching: 'Watching', interested: 'Interested' };
 
-/** The plans window shows three full rows and half the fourth (item 16, Locked: 3.5 rows at the drawn ~69pt). */
+/** The plans window shows three full rows and half the fourth (item 16, Locked: 3.5 rows at the drawn ~69pt); the start value before the rows are measured. */
 const PLANS_WINDOW_PX = 240;
 /** The window scrolls inside itself only past this many plans; with fewer the box is as tall as its rows (mock 28). */
 const PLANS_WINDOW_ROWS = 3;
@@ -177,14 +178,17 @@ export function UpcomingScreen() {
       current = false;
     };
   }, [seasonTeamIds]);
+  // The earliest unanswered home playoff game across every season team (Codex, steps 9–10: it took the first team's).
   const playoff = useMemo(() => {
+    const open: { teamId: string; game: TeamGame }[] = [];
     for (const ticket of log.seasonTickets ?? []) {
       if (!ticket.on) continue;
-      const games = seasonSchedules.get(ticket.teamId) ?? [];
-      const game = seasonPlayoffGames(games).find((g) => g.date >= today && !(ticket.declined ?? []).includes(g.id) && !log.plans.some((plan) => plan.eventId === (g.eventId ?? `${g.date}-game-${g.id}`)));
-      if (game) return { teamId: ticket.teamId, game };
+      for (const g of seasonPlayoffGames(seasonSchedules.get(ticket.teamId) ?? [])) {
+        if (g.date >= today && !(ticket.declined ?? []).includes(g.id) && !log.plans.some((plan) => plan.eventId === seasonPlanEventId(g))) open.push({ teamId: ticket.teamId, game: g });
+      }
     }
-    return null;
+    open.sort((a, b) => (a.game.date + (a.game.start ?? '99')).localeCompare(b.game.date + (b.game.start ?? '99')));
+    return open[0] ?? null;
   }, [log, seasonSchedules, today]);
 
   // The date range the filter asks for; "All upcoming" is no range at all, so the past stays above the line.
@@ -293,7 +297,10 @@ export function UpcomingScreen() {
   const box = useRef<HTMLDivElement>(null);
   const planList = useRef<HTMLUListElement>(null);
   const [listHeight, setListHeight] = useState(0);
-  const windowScrolls = windowCapped && listHeight > PLANS_WINDOW_PX;
+  // The window is three full plan rows and half the fourth (item 16, Locked: 3.5 rows), measured from the rows
+  // themselves, so a taller season row or a month label inside still leaves half a row showing (Codex, steps 9–10).
+  const [windowPx, setWindowPx] = useState(PLANS_WINDOW_PX);
+  const windowScrolls = windowCapped && listHeight > windowPx;
   const [boxAt, setBoxAt] = useState<'top' | 'middle' | 'end'>('top');
   const onBoxScroll = () => {
     const el = box.current;
@@ -303,6 +310,9 @@ export function UpcomingScreen() {
   };
   useLayoutEffect(() => {
     setListHeight(planList.current ? Math.round(planList.current.getBoundingClientRect().height) : 0);
+    const rows = planList.current ? [...planList.current.children].filter((li) => !li.classList.contains('plans-window-month')) as HTMLElement[] : [];
+    const fourth = rows[PLANS_WINDOW_ROWS];
+    if (fourth) setWindowPx(Math.round(fourth.offsetTop + fourth.offsetHeight / 2));
     // The box may come back at its top after a filter or a remount: the cues follow where it really is.
     onBoxScroll();
   }, [shownPlans.length, windowCapped]);
@@ -383,7 +393,7 @@ export function UpcomingScreen() {
                 </div>
                 {shownPlans.length > 0 ? (
                   <div className={`plans-window-frame${windowScrolls ? ` scrolls at-${boxAt}` : ''}`}>
-                    <div ref={box} className="plans-window" style={windowCapped ? { maxHeight: PLANS_WINDOW_PX } : undefined} onScroll={windowCapped ? onBoxScroll : undefined}>
+                    <div ref={box} className="plans-window" style={windowCapped ? { maxHeight: windowPx } : undefined} onScroll={windowCapped ? onBoxScroll : undefined}>
                       <ul ref={planList} className="log-list plans-band-list">{planRows}</ul>
                       {windowScrolls && <p className="plans-window-end">End of your plans</p>}
                     </div>

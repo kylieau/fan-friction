@@ -46,7 +46,8 @@ export function SeasonTicketCard({ team, schedule }: { team: Team; schedule: Tea
   };
   return (
     <section className="card season-card" aria-label="Season Tickets">
-      <div className="season-card-row">
+      {/* The whole row is the switch's label, so the tap target is the row, not the 48 × 28 track (Codex, steps 9–10). */}
+      <label className="season-card-row season-switch-label">
         <TicketIcon size={18} />
         <span className="season-card-words">
           <span className="season-card-title">Season Tickets</span>
@@ -59,7 +60,7 @@ export function SeasonTicketCard({ team, schedule }: { team: Team; schedule: Tea
           </span>
         </span>
         <input type="checkbox" className="switch" role="switch" aria-label="Season Tickets" checked={on} disabled={!on && !canStart} onChange={toggle} />
-      </div>
+      </label>
       {on && ticket && (
         <div className="season-card-row season-card-foot">
           <span className="season-card-words">
@@ -283,13 +284,13 @@ function SetupSheet({ team, games, plan, ticket, onClose }: { team: Team; games:
           <span className="season-money-note">Lands as a Parking & Transit line on each game.</span>
         </div>
       </div>
-      <div className="season-section season-switch-row">
+      <label className="season-section season-switch-row season-switch-label">
         <span className="season-card-words">
           <span className="season-section-title">Include Preseason</span>
           <span className="season-card-sub">{preSpan}</span>
         </span>
         <input type="checkbox" className="switch" role="switch" aria-label="Include preseason" checked={preseason} disabled={pre.length === 0} onChange={(ev) => setPreseason(ev.target.checked)} />
-      </div>
+      </label>
       <p className="you-fine">Playoff games aren't added. If the {team.shortName} get a home playoff game, we'll ask.</p>
       <button type="button" className="gold-button stub-done" onClick={add}>
         {plan === 'full' ? `Add ${all.length} ${all.length === 1 ? 'game' : 'games'} as Attending` : 'Next: pick your games'}

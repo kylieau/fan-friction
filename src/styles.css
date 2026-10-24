@@ -12605,3 +12605,35 @@ a.follow-lead::after {
   position: absolute;
   inset: -8px;
 }
+
+/* Codex, steps 9–10 review: the Log sheet's lists never shrink inside its scroll (rows were cut and the reserved past
+   rows unreachable); the plans window measures its rows against its own list; the season switches' rows are their
+   labels (a full-row tap target); a long default seat ellipsizes beside "Games & Settings ›". */
+.log-sheet-body > * {
+  flex-shrink: 0;
+}
+.plans-window .plans-band-list {
+  position: relative;
+}
+.season-switch-label {
+  cursor: pointer;
+}
+.season-card-line,
+.season-card-foot .season-card-sub {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* A long name or handle on the profile card cuts with "…" before Edit and Share (Codex, 11 (a) review). */
+.profile-card-who {
+  flex: 1;
+  min-width: 0;
+}
+.profile-card-name,
+.profile-card-who .you-handle {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

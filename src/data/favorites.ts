@@ -150,7 +150,7 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
   switch (fav.kind) {
     case 'team':
       if (fav.teamId && event.teams) return event.teams.home === fav.teamId || event.teams.away === fav.teamId;
-      return event.title.toLowerCase().includes(label);
+      return teamNameMatches(event, fav, label);
     case 'artist': {
       const artist = fav.artistId ? ARTISTS[fav.artistId] : undefined;
       if (artist) return artistMatches(event, artist);
@@ -162,6 +162,25 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
       if (fav.venueId) return event.place.type === 'venue' && event.place.venueId === fav.venueId;
       return event.place.type !== 'venue' && event.place.name.toLowerCase() === label;
   }
+}
+
+/**
+ * A team favorite against an event with no team ids (a school feed's visitor, a hand seed): one side of the matchup
+ * must be the team itself, by its label, short name, full name or an alias, never a word inside another team's name;
+ * never a pro team on a school game; the sport when both are known. "Mercyhurst Lakers Mens Basketball" is not the
+ * LA Lakers (recurring; Codex, build 7.1 steps 9–10 review).
+ */
+function teamNameMatches(event: CrowdEvent, fav: Favorite, label: string): boolean {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  const audience = event.audience as { domain?: string; sport?: string; level?: string } | undefined;
+  if (team) {
+    if (audience?.level === 'college' && !isCollegeTeam(team)) return false;
+    if (audience?.sport && audience.sport.toLowerCase() !== team.sport.toLowerCase()) return false;
+  }
+  const names = new Set([label, ...(team ? [team.name, team.shortName, ...(team.aliases ?? [])] : [])].map((n) => n.toLowerCase().trim()));
+  const title = event.title.toLowerCase().replace(/\s*\([^)]*\)\s*$/, '').trim();
+  const sides = title.split(/\s+(?:at|vs\.?|v\.?|@)\s+/);
+  return sides.some((side) => names.has(side.trim()));
 }
 
 const teamsOf = (favs: readonly Favorite[]) => favs.flatMap((f) => (f.teamId && TEAMS[f.teamId] ? [TEAMS[f.teamId]] : []));

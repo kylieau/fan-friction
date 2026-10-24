@@ -24,7 +24,7 @@ import { SpendScreen } from './screens/SpendScreen';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId } from './lib/homeCity';
 import { DEFAULT_METRO, METROS } from './config/metros';
-import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, subscribeLogLoaded, todayIn } from './data';
+import { backfillLegacyCrowds, getCityDate, lockCrowds, retitleStubs, settlePassedPlans, refreshSeasonTickets, subscribeLogLoaded, todayIn } from './data';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { getAccount, getMyProfile, linkConfirmedSuggestions, setStubDefault, subscribeAccount } from './data';
 import { levelFor } from './screens/SettingsPrivacyScreen';
@@ -123,12 +123,15 @@ function Shell() {
   }, []);
 
   useEffect(() => {
-    void settlePassedPlans(getCityDate, getHomeId())
+    // Season tickets follow their schedules first, so a moved game's plan settles under its new date (build 7.1, item 15).
+    void refreshSeasonTickets()
+      .then(() => settlePassedPlans(getCityDate, getHomeId()))
       .then(() => backfillLegacyCrowds(getCityDate))
       .then(() => lockCrowds(getCityDate))
       .then(() => retitleStubs(getCityDate));
     return subscribeLogLoaded(() =>
-      void settlePassedPlans(getCityDate, getHomeId())
+      void refreshSeasonTickets()
+        .then(() => settlePassedPlans(getCityDate, getHomeId()))
         .then(() => backfillLegacyCrowds(getCityDate))
         .then(() => lockCrowds(getCityDate))
         .then(() => retitleStubs(getCityDate)),

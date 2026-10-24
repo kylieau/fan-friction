@@ -26,7 +26,8 @@ import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import { onTeamSchedule } from './teamSchedule';
-import { applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanFrom } from './seasonTickets';
+import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
+import { getTeamSchedule } from './teamSchedule';
 import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, SportsLevel, Stamp, PersonalLog, StubVisibility, TeamGame, YouOrder } from './types';
 
 export interface CountRow {
@@ -1246,8 +1247,10 @@ onTeamSchedule(syncSeasonSchedule);
  */
 export function updateSeasonDefaults(teamId: string, patch: Partial<Pick<SeasonTicket, 'seats' | 'ticket' | 'parking' | 'currency' | 'preseason' | 'picked'>>, apply: 'unedited' | 'all' | 'none', games?: readonly TeamGame[]) {
   const before = seasonTicketOf(teamId);
-  if (!before) return;
-  const ticket: SeasonTicket = { ...before, ...patch, updatedAt: new Date().toISOString() };
+  if (!before?.on) return;
+  // Games picked again on a Partial plan leave the removed list, so the picker and the plans agree (Codex, steps 9–10).
+  const removed = patch.picked ? Object.fromEntries(Object.entries(before.removed).filter(([gameId]) => !patch.picked!.includes(gameId))) : before.removed;
+  const ticket: SeasonTicket = { ...before, ...patch, removed, updatedAt: new Date().toISOString() };
   const today = todayFor(teamId);
   let plans = snapshot.plans.map((plan) => {
     if (plan.season?.teamId !== teamId || plan.date < today || apply === 'none') return plan;
@@ -1288,17 +1291,21 @@ export function removeSeasonGame(planId: string, reason?: SeasonRemovalReason, s
 /** Re-add a removed game: its plan comes back with the defaults. On a Partial plan it is picked again too. */
 export function readdSeasonGame(teamId: string, game: TeamGame) {
   const ticket = seasonTicketOf(teamId);
-  if (!ticket) return;
+  if (!ticket?.on) return;
   const { [game.id]: _dropped, ...removed } = ticket.removed;
   const next: SeasonTicket = { ...ticket, removed, ...(ticket.plan === 'partial' ? { picked: [...new Set([...(ticket.picked ?? []), game.id])] } : {}), updatedAt: new Date().toISOString() };
-  const plans = snapshot.plans.some((plan) => plan.eventId === (game.eventId ?? `${game.date}-game-${game.id}`)) ? snapshot.plans : [...snapshot.plans, seasonPlanFrom(next, game, stubDefault())];
+  // A plan she made meanwhile on the same game joins the season with its own seat and cost (Codex, steps 9–10 review).
+  const eventId = seasonPlanEventId(game);
+  const plans = snapshot.plans.some((plan) => plan.eventId === eventId)
+    ? snapshot.plans.map((plan) => (plan.eventId === eventId && !plan.season ? adoptPlan(plan, next, game) : plan))
+    : [...snapshot.plans, seasonPlanFrom(next, game, stubDefault())];
   commit({ ...snapshot, seasonTickets: withSeasonTicket(snapshot, next), plans });
 }
 
 /** A home playoff game: "Add as Attending" makes an ordinary plan with the default seat and no price; "Not this one" is remembered. */
 export function answerSeasonPlayoff(teamId: string, game: TeamGame, add: boolean) {
   const ticket = seasonTicketOf(teamId);
-  if (!ticket) return;
+  if (!ticket?.on) return;
   if (!add) {
     commit({ ...snapshot, seasonTickets: withSeasonTicket(snapshot, { ...ticket, declined: [...new Set([...(ticket.declined ?? []), game.id])] }) });
     return;
@@ -1321,14 +1328,43 @@ export function stopSeasonTickets(teamId: string) {
   });
 }
 
+/**
+ * The attended stubs of this team's home games, for the season counts and the season page's Past Games: by the
+ * stub's event when it is a season plan's id or a catalog game naming the team, else by the team's full name, or its
+ * short name only on a game of the same sport in the team's own city (a school's "Lakers" is not the LA Lakers;
+ * Codex, steps 9–10 review). One matcher for both counts.
+ */
+export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot): Entry[] {
+  const team = TEAMS[teamId];
+  if (!team) return [];
+  const sport = team.sport.toLowerCase();
+  return yourEntries(log).filter((entry) => {
+    if (entry.watched || entry.kind !== 'game') return false;
+    const sides = entry.sides ?? [];
+    if (sides.includes(team.name)) return true;
+    if (!sides.includes(team.shortName)) return false;
+    return (entry.sport ?? '').toLowerCase() === sport && (!entry.metroId || !team.metroId || entry.metroId === team.metroId);
+  });
+}
+
 /** The counts the turn-off confirmation shows: upcoming season games, and past stubs from this team's games. */
 export function seasonCounts(teamId: string, log: PersonalLog = snapshot): { upcoming: number; stubs: number; removed: number } {
   const today = todayFor(teamId);
   const ticket = seasonTicketOf(teamId, log);
   const upcoming = log.plans.filter((plan) => plan.season?.teamId === teamId && plan.date >= today).length;
-  const team = TEAMS[teamId];
-  const stubs = team ? yourEntries(log).filter((entry) => !entry.watched && entry.kind === 'game' && (entry.sides ?? []).some((side) => side === team.shortName || side === team.name) && entry.inMetro !== false).length : 0;
-  return { upcoming, stubs, removed: Object.keys(ticket?.removed ?? {}).length };
+  return { upcoming, stubs: seasonStubsOf(teamId, log).length, removed: Object.keys(ticket?.removed ?? {}).length };
+}
+
+/**
+ * Every switched-on season follows its schedule as it stands: at app start and once the account copy is in (a cached
+ * schedule never fires the load hook; Codex, steps 9–10 review).
+ */
+export async function refreshSeasonTickets() {
+  for (const ticket of snapshot.seasonTickets ?? []) {
+    if (!ticket.on) continue;
+    const games = await getTeamSchedule(ticket.teamId).catch(() => null);
+    if (games) syncSeasonSchedule(ticket.teamId, games);
+  }
 }
 
 /** Plans still ahead, soonest first. A past plan stays in the backup but leaves Up next. */
@@ -1459,6 +1495,19 @@ export function toggleFavoriteCity(metroId: string) {
   commit({ ...snapshot, favoriteCities: next, favoriteCitiesAt: new Date().toISOString() });
 }
 
+/**
+ * Favorite cities in her own order (build 7.1, M31): the Favorite Cities page's drag and Move up / Move down. The
+ * order is the city switcher's under Home. Stamped like a star, so the newer order wins when two devices disagree.
+ */
+export function reorderFavoriteCities(ids: readonly string[]) {
+  const current = favoriteCitiesOf(snapshot);
+  const next = ids.filter((id, i) => current.includes(id) && ids.indexOf(id) === i);
+  // Anything the caller left out keeps its place at the end, so a stale list never drops a city.
+  for (const id of current) if (!next.includes(id)) next.push(id);
+  if (next.join() === current.join()) return;
+  commit({ ...snapshot, favoriteCities: next, favoriteCitiesAt: new Date().toISOString() });
+}
+
 /** The crowd size range (build 5, item 6); no range means everything shows. */
 export function crowdRangeOf(log: PersonalLog = snapshot): CrowdRange {
   return log.crowdRange ?? {};
@@ -1559,7 +1608,9 @@ export function setPlanSeats(planId: string, seats: Seats | undefined) {
       if (plan.id !== planId || plan.watch || plan.interested) return plan;
       const { seats: _old, ...rest } = plan;
       void _old;
-      return next ? { ...rest, seats: next } : rest;
+      // A season game's seat set here is this game's own (build 7.1, item 15): a default change leaves it be.
+      const marked = plan.season ? { ...rest, season: { ...plan.season, edited: true } } : rest;
+      return next ? { ...marked, seats: next } : marked;
     }),
   });
 }
@@ -1587,7 +1638,8 @@ export function setPlanCost(planId: string, cost: Cost | undefined) {
       if (plan.id !== planId || plan.interested) return plan;
       const { cost: _old, ...rest } = plan;
       void _old;
-      return next ? { ...rest, cost: next } : rest;
+      const marked = plan.season ? { ...rest, season: { ...plan.season, edited: true } } : rest;
+      return next ? { ...marked, cost: next } : marked;
     }),
   });
 }

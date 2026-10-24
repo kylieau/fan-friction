@@ -232,7 +232,7 @@ export function FavoritesScreen({ embedded = false, edit = false }: { embedded?:
               return (
                 <section key={kind} className="you-block" aria-labelledby={`pick-${kind}`}>
                   <h2 id={`pick-${kind}`} className={edit ? 'pick-group-head' : 'you-heading'}>
-                    {edit ? `${label}s · ${on.length}` : `Your ${label.toLowerCase()}s`}
+                    {edit ? `${label}s · ${on.length}` : `Your ${label}s`}
                   </h2>
                   <ul className={edit ? 'log-list card pick-list' : 'log-list'}>
                     {on.map((fav) => (

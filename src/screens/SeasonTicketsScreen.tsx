@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { PinnedHead } from '../components/PinnedHead';
 import { DateBox } from '../components/StubRows';
@@ -11,6 +11,7 @@ import {
   formatMoney,
   getPersonalLog,
   getTeamSchedule,
+  removePlan,
   removeSeasonGame,
   readdSeasonGame,
   resetSeasonGame,
@@ -20,6 +21,7 @@ import {
   seasonHomeGames,
   seasonLabel,
   seasonPlanEventId,
+  seasonStubsOf,
   seasonTicketOf,
   seatShort,
   seatsLine,
@@ -28,7 +30,6 @@ import {
   TEAMS,
   todayIn,
   updateSeasonDefaults,
-  yourEntries,
   type CostLine,
   type Plan,
   type SeasonRemovalReason,
@@ -55,17 +56,29 @@ export function SeasonTicketsScreen() {
   const team = TEAMS[id];
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const ticket = seasonTicketOf(id, log);
-  const [schedule, setSchedule] = useState<TeamGame[] | null>(null);
+  // undefined while loading; null when no schedule could be read (Codex, steps 9–10: "Loading" never ended).
+  const [schedule, setSchedule] = useState<TeamGame[] | null | undefined>(undefined);
+  const [tries, setTries] = useState(0);
   useEffect(() => {
     let current = true;
-    getTeamSchedule(id).then((games) => current && setSchedule(games));
+    setSchedule(undefined);
+    getTeamSchedule(id)
+      .then((games) => current && setSchedule(games))
+      .catch(() => current && setSchedule(null));
     return () => {
       current = false;
     };
-  }, [id]);
+  }, [id, tries]);
   const today = todayIn(METROS[team?.metroId ?? ''] ?? DEFAULT_METRO);
   const picking = params.get('pick') === '1' && ticket?.plan === 'partial';
-  const [picked, setPicked] = useState<Set<string>>(() => new Set(ticket?.picked ?? []));
+  // The games she owns on a Partial plan, less the ones taken out; filled again when the ticket arrives after the
+  // account loads, until she touches the picker (Codex, steps 9–10 review).
+  const activePicks = (t: typeof ticket) => (t?.picked ?? []).filter((gameId) => !(gameId in (t?.removed ?? {})));
+  const [picked, setPicked] = useState<Set<string>>(() => new Set(activePicks(ticket)));
+  const touched = useRef(false);
+  useEffect(() => {
+    if (!touched.current) setPicked(new Set(activePicks(ticket)));
+  }, [ticket?.updatedAt]);
   const [editing, setEditing] = useState<'seats' | 'ticket' | 'parking' | null>(null);
   const [gameOpen, setGameOpen] = useState<TeamGame | null>(null);
 
@@ -73,9 +86,12 @@ export function SeasonTicketsScreen() {
   const upcoming = useMemo(() => homeGames.filter((game) => game.date >= today), [homeGames, today]);
   const planByEvent = useMemo(() => new Map(log.plans.filter((plan) => plan.season?.teamId === id).map((plan) => [plan.eventId, plan])), [log, id]);
   const counts = seasonCounts(id, log);
-  const pastStubs = useMemo(() => (team ? yourEntries(log).filter((entry) => !entry.watched && entry.kind === 'game' && (entry.sides ?? []).some((side) => side === team.shortName || side === team.name)).sort((a, b) => a.when.sort.localeCompare(b.when.sort)) : []), [log, team]);
+  const pastStubs = useMemo(() => [...seasonStubsOf(id, log)].sort((a, b) => a.when.sort.localeCompare(b.when.sort)), [log, id]);
+  // Season plans whose game the schedule no longer lists: kept, flagged, and listed here so they can be removed.
+  const gonePlans = useMemo(() => log.plans.filter((plan) => plan.season?.teamId === id && plan.season.gone && plan.date >= today).sort((a, b) => a.date.localeCompare(b.date)), [log, id, today]);
 
-  if (!team || !ticket) {
+  // Off (or never on): nothing here can add or change a season game (Codex, steps 9–10: the page stayed editable).
+  if (!team || !ticket?.on) {
     return (
       <div className="screen page">
         <PinnedHead back={{ to: favPath({ kind: 'team', id }), label: team?.shortName ?? 'Back' }} title="Season Tickets" />
@@ -96,6 +112,7 @@ export function SeasonTicketsScreen() {
   const inPlans = (game: TeamGame) => planByEvent.get(seasonPlanEventId(game));
   const currency = ticket.currency ?? 'USD';
   const savePicks = () => {
+    touched.current = false;
     updateSeasonDefaults(id, { picked: [...picked] }, 'none', schedule ?? undefined);
     const next = new URLSearchParams(params);
     next.delete('pick');
@@ -123,14 +140,14 @@ export function SeasonTicketsScreen() {
             <h2 className="you-heading">Defaults</h2>
             <span className="stub-where-optional">prefill every game</span>
           </div>
-          <div className="settings season-defaults">
-            <button type="button" className="settings-row settings-link" onClick={() => setEditing('seats')}>
+          <div className="card settings-group season-defaults">
+            <button type="button" className="settings-row settings-link settings-group-row" onClick={() => setEditing('seats')}>
               <span>Your Seat</span>
               <span className="settings-value season-value">
                 {seatsLine(ticket.seats) || 'Add'} <span aria-hidden>›</span>
               </span>
             </button>
-            <button type="button" className="settings-row settings-link" onClick={() => setEditing('ticket')}>
+            <button type="button" className="settings-row settings-link settings-group-row" onClick={() => setEditing('ticket')}>
               <span className="season-card-words">
                 <span>Price per Seat, per Game</span>
                 <span className="season-card-sub">Your ticket only</span>
@@ -139,13 +156,13 @@ export function SeasonTicketsScreen() {
                 {typeof ticket.ticket === 'number' ? formatMoney(ticket.ticket, currency) : 'Add'} <span aria-hidden>›</span>
               </span>
             </button>
-            <button type="button" className="settings-row settings-link" onClick={() => setEditing('parking')}>
+            <button type="button" className="settings-row settings-link settings-group-row" onClick={() => setEditing('parking')}>
               <span>Parking per Game</span>
               <span className="settings-value season-value">
                 {typeof ticket.parking === 'number' && ticket.parking > 0 ? formatMoney(ticket.parking, currency) : 'None'} <span aria-hidden>›</span>
               </span>
             </button>
-            <button type="button" className="settings-row settings-link" role="switch" aria-checked={ticket.preseason} onClick={() => updateSeasonDefaults(id, { preseason: !ticket.preseason }, 'none', schedule ?? undefined)}>
+            <button type="button" className="settings-row settings-link settings-group-row" role="switch" aria-checked={ticket.preseason} onClick={() => updateSeasonDefaults(id, { preseason: !ticket.preseason }, 'none', schedule ?? undefined)}>
               <span>Preseason</span>
               <span className="settings-value">{ticket.preseason ? 'Included' : 'Not included'}</span>
             </button>
@@ -162,8 +179,15 @@ export function SeasonTicketsScreen() {
         </>
       )}
 
-      {schedule === null ? (
+      {schedule === undefined ? (
         <p className="you-fine">Loading the schedule…</p>
+      ) : schedule === null ? (
+        <div className="card empty-card">
+          <div className="card-title">Couldn't load the schedule.</div>
+          <button type="button" className="following-empty-link" onClick={() => setTries((n) => n + 1)}>
+            Try again <span aria-hidden>›</span>
+          </button>
+        </div>
       ) : months.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">No home games left this season.</div>
@@ -191,7 +215,7 @@ export function SeasonTicketsScreen() {
                             <span className="log-title"><TitleText text={title} /></span>
                             <span className="log-facts">{[game.start ? clockTime(game.start) : null, isWeekend(game.date) ? 'Weekend' : 'Weekday'].filter(Boolean).join(' · ')}</span>
                           </span>
-                          <input type="checkbox" className="season-check" checked={isOn} aria-label={title} onChange={() => setPicked((set) => { const next = new Set(set); if (next.has(game.id)) next.delete(game.id); else next.add(game.id); return next; })} />
+                          <input type="checkbox" className="season-check" checked={isOn} aria-label={title} onChange={() => { touched.current = true; setPicked((set) => { const next = new Set(set); if (next.has(game.id)) next.delete(game.id); else next.add(game.id); return next; }); }} />
                         </label>
                       </li>
                     );
@@ -242,16 +266,41 @@ export function SeasonTicketsScreen() {
           );
         })
       )}
+      {!picking && gonePlans.length > 0 && (
+        <section className="timeline-group season-month" aria-label="Not on the Schedule">
+          <ListBand label="Not on the Schedule" />
+          <ul className="log-list season-list">
+            {gonePlans.map((plan) => (
+              <li key={plan.id}>
+                <div className="season-row off">
+                  <DateBox when={{ sort: plan.date, label: '', precision: 'day' }} />
+                  <span className="log-main">
+                    <span className="log-title"><TitleText text={plan.title} /></span>
+                    <span className="log-facts season-off-line">
+                      <span className="season-chip">Not on the schedule</span>
+                      <span>Moved or cancelled</span>
+                    </span>
+                  </span>
+                  <button type="button" className="season-readd" onClick={() => removePlan(plan.id)}>
+                    Remove
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {!picking && counts.removed > 0 && <p className="you-fine season-foot">Sale amounts never count in Spend. They show only on the greyed game.</p>}
       {picking && (
         <div className="season-pick-actions">
-          <button type="button" className="gold-button stub-done" disabled={picked.size === 0} onClick={savePicks}>
+          {/* An existing plan can be emptied; a new one needs a game (Codex, steps 9–10 review). */}
+          <button type="button" className="gold-button stub-done" disabled={picked.size === 0 && activePicks(ticket).length === 0} onClick={savePicks}>
             Save {picked.size} {picked.size === 1 ? 'game' : 'games'}
           </button>
         </div>
       )}
       {!picking && ticket.plan === 'partial' && (
-        <button type="button" className="link-button season-helper-link" onClick={() => { setPicked(new Set(ticket.picked ?? [])); const next = new URLSearchParams(params); next.set('pick', '1'); setParams(next); }}>
+        <button type="button" className="link-button season-helper-link" onClick={() => { touched.current = false; setPicked(new Set(activePicks(ticket))); const next = new URLSearchParams(params); next.set('pick', '1'); setParams(next); }}>
           Change which games you own ›
         </button>
       )}
@@ -284,12 +333,10 @@ function DefaultSheet({ team, ticket, field, schedule, onClose }: { team: { id: 
   const before = field === 'seats' ? seatsLine(ticket.seats) || 'none' : field === 'ticket' ? (ticket.ticket !== undefined ? formatMoney(ticket.ticket, currency) : 'none') : ticket.parking ? formatMoney(ticket.parking, currency) : 'none';
   const after = field === 'seats' ? seatsLine(seats) || 'none' : field === 'ticket' ? (moneyOf(price) !== undefined ? formatMoney(moneyOf(price)!, currency) : 'none') : moneyOf(parking) !== undefined && moneyOf(parking)! > 0 ? formatMoney(moneyOf(parking)!, currency) : 'none';
   const title = field === 'seats' ? 'Your Seat' : field === 'ticket' ? 'Price per Seat, per Game' : 'Parking per Game';
+  // Item 15's prompt whenever upcoming games exist (Codex, steps 9–10: it was skipped with no edits).
   const save = () => {
     if (counts.upcoming === 0) {
       updateSeasonDefaults(team.id, patch, 'none', schedule);
-      onClose();
-    } else if (counts.edited === 0) {
-      updateSeasonDefaults(team.id, patch, 'all', schedule);
       onClose();
     } else setAsking(true);
   };
@@ -352,7 +399,9 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
     const lines: CostLine[] = [];
     const t = moneyOf(price);
     const p = moneyOf(parking);
-    if (t !== undefined) lines.push({ kind: 'ticket', amount: t });
+    // A quantity she logged (2 × $68) stays with the ticket line (Codex, steps 9–10 review).
+    const oldTicket = plan.cost?.lines.find((line) => line.kind === 'ticket');
+    if (t !== undefined) lines.push({ kind: 'ticket', amount: t, ...(oldTicket?.qty ? { qty: oldTicket.qty } : {}) });
     if (p !== undefined && p > 0) lines.push({ kind: 'parking', amount: p });
     const kept = (plan.cost?.lines ?? []).filter((line) => line.kind !== 'ticket' && line.kind !== 'parking');
     setSeasonGame(plan.id, { seats, cost: lines.length + kept.length > 0 ? { lines: [...lines, ...kept], ...(currency ? { currency } : {}) } : undefined });
@@ -363,7 +412,7 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
     return (
       <SeasonSheet title="Remove This Game?" sub={sub} label="Remove this game" onClose={onClose}>
         <div className="season-section-head">
-          <h3 className="season-section-title">What happened?</h3>
+          <h3 className="season-section-title">What Happened?</h3>
           <span className="stub-where-optional">optional</span>
         </div>
         <div className="pill-row filter-pills" role="group" aria-label="What happened">

@@ -87,6 +87,24 @@ const sm = mergeLogs(sA, sB);
 ok('season tickets merge per team, newer wins', sm.seasonTickets.length === 2 && sm.seasonTickets.find((t) => t.teamId === 'rams').ticket === 120);
 ok('a season-ticket change counts as a settings change', diffLogs(log([]), sA, t0).settings === true);
 
+// 6b. Codex steps 9–10 review: a move onto a hand-made plan leaves one plan; defaults follow the answer.
+const { applySeasonDefaults } = await server.ssrLoadModule('/src/data/seasonTickets.ts');
+const handMade = { id: 'plan-2027-04-09-mlb-1', date: '2027-04-09', metroId: 'la', eventId: '2027-04-09-mlb-1', title: 'Giants at Dodgers', seats: { section: '12' } };
+const p10 = reconcileSeasonPlans([...p6, handMade], ticket, moved, '2026-10-24', 'private');
+ok('a game moved onto a hand-made plan leaves one plan for that event', p10.filter((p) => p.eventId === '2027-04-09-mlb-1').length === 1 && new Set(p10.map((p) => p.id)).size === p10.length);
+ok('that plan keeps her seat as this game\'s edit', p10.find((p) => p.eventId === '2027-04-09-mlb-1').seats.section === '12');
+const watching = applySeasonDefaults({ ...p6[0], watch: true }, ticket);
+const interested = applySeasonDefaults({ ...p6[0], interested: true }, ticket);
+ok('defaults give a Watching plan a cost but no seat', !watching.seats && watching.cost);
+ok('defaults give an Interested plan neither', !interested.seats && !interested.cost);
+
+// 7. Favorite cities' order (build 7.1, M31): a reorder is a stamped change, so the newer order wins on every device.
+const cA = log([], [], { favoriteCities: ['boston', 'new-york'], favoriteCitiesAt: '2026-10-24T01:00:00Z' });
+const cB = log([], [], { favoriteCities: ['new-york', 'boston'], favoriteCitiesAt: '2026-10-24T02:00:00Z' });
+ok('a later reorder on the phone wins over the account', mergeLogs(cA, cB).favoriteCities.join() === 'new-york,boston');
+ok('a later star on the account wins over an older reorder', mergeLogs(log([], [], { favoriteCities: ['boston', 'new-york', 'bay-area'], favoriteCitiesAt: '2026-10-24T03:00:00Z' }), cB).favoriteCities.join() === 'boston,new-york,bay-area');
+ok('a reorder counts as a settings change', diffLogs(cA, { ...cA, favoriteCities: ['new-york', 'boston'], favoriteCitiesAt: '2026-10-24T02:00:00Z' }, t0).settings === true);
+
 await server.close();
 console.log(fails ? `${fails} failed` : 'all passed');
 process.exit(fails ? 1 : 0);

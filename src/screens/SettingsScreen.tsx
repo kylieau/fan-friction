@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { PinnedHead } from '../components/PinnedHead';
+import { hasAppHistory } from '../components/BackLink';
 import { EditFavoritesSheet, FavoritesSection } from '../components/EditFavoritesSheet';
 import { FavoriteCitiesSection } from '../components/FavoriteCities';
 import { AccountBlock, AccountRow } from '../components/AccountBlock';
@@ -97,6 +98,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   const [pendingCount, setPendingCount] = useState(0);
   const [open, setOpen] = useState<Set<SettingsSectionId>>(new Set());
   const panel = useRef<HTMLDivElement>(null);
+  const mainScroll = useRef(0);
 
   // The old addresses (`#privacy`, `?panel=people`, `/you/settings/cities`) become `?page=`, or open a short section in place.
   const wanted = (hash ? hash.slice(1) : params.get('panel')) || null;
@@ -110,6 +112,8 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
       return;
     }
     if (isSection(wanted)) {
+      // An in-place section belongs to the main page, so any `page=` beside it goes (Codex, 11 (a) review).
+      next.delete('page');
       setOpen((set) => new Set([...set, wanted]));
       navigate({ search: next.toString() ? `?${next.toString()}` : '', hash: '' }, { replace: true });
       window.setTimeout(() => panel.current?.querySelector(`[data-section="${wanted}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 80);
@@ -117,6 +121,9 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   }, [wanted]);
   const pageParam = params.get('page');
   const page: SubPage | null = (SUB_PAGES as readonly string[]).includes(pageParam ?? '') ? (pageParam as SubPage) : null;
+  useLayoutEffect(() => {
+    if (!page && panel.current && mainScroll.current) panel.current.scrollTop = mainScroll.current;
+  }, [page]);
 
   useEffect(() => {
     let current = true;
@@ -192,7 +199,9 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   const unit = temperatureUnitOf(log);
   const celsius = usesCelsius(homeId ?? DEFAULT_METRO.id);
 
+  // Where the main page was scrolled, kept while a sub-page is open and put back on Back (Codex, 11 (a) review).
   const goPage = (next: SubPage, extra: Record<string, string> = {}) => {
+    mainScroll.current = panel.current?.scrollTop ?? 0;
     const p = new URLSearchParams();
     p.set('page', next);
     for (const [k, v] of Object.entries(extra)) p.set(k, v);
@@ -200,17 +209,26 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   };
 
   if (page) {
+    // The review queue only for the confirmed admin of the account signed in now (Codex, 11 (a) review, P1).
+    if (page === 'review' && (!account || !admin)) {
+      return (
+        <div key="review" className="screen page settings-page settings-sub-page">
+          <PinnedHead back={{ to: '/you/settings', label: 'Profile & Settings' }} title={SUB_TITLES.review} />
+        </div>
+      );
+    }
     const body: Record<SubPage, ReactNode> = {
       people: <PeoplePanel />,
       faves: <FavoritesSection favorites={favorites} onEdit={() => setEditing(true)} />,
       cities: <FavoriteCitiesSection openHome={params.get('home') === '1'} />,
-      profile: <ProfileForm onSaved={() => navigate(-1)} />,
+      profile: <ProfileForm onSaved={() => (hasAppHistory() ? navigate(-1) : navigate('/you/settings', { replace: true }))} />,
       privacy: <PrivacySettings />,
       crowd: <CrowdSizeSettings />,
-      review: <ReviewQueue />,
+      review: <ReviewQueue key={account?.id ?? 'none'} />,
     };
     return (
-      <div className="screen page settings-page settings-sub-page">
+      // Keyed by page, so each sub-page opens at its top rather than at the main page's scroll.
+      <div key={page} className="screen page settings-page settings-sub-page">
         <PinnedHead back={{ to: '/you/settings', label: 'Profile & Settings' }} title={SUB_TITLES[page]} />
         {editing && <EditFavoritesSheet onClose={() => setEditing(false)} />}
         {body[page]}
@@ -258,7 +276,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   );
 
   return (
-    <div ref={panel} className="screen page settings-page">
+    <div key="main" ref={panel} className="screen page settings-page">
       <PinnedHead back={{ to: '/you', label: 'You' }} title="Profile & Settings" />
       {editing && <EditFavoritesSheet onClose={() => setEditing(false)} />}
 
@@ -452,7 +470,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
                       if (await updateMyProfile({ linkOff: next })) setLinkOff(!next);
                     }}
                   >
-                    <span>Profile link</span>
+                    <span>Profile Link</span>
                     <span className="settings-value">{linkOff ? 'Off' : 'On'}</span>
                   </button>
                 )}
@@ -476,14 +494,18 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
             </span>
           </div>
           {pageRow('crowd', 'Crowd Size', <span className="settings-value">{crowdRangeLabel(crowdRangeOf(log))}</span>)}
+          {/* Blocked shows signed in even when empty, reading "None" (the summary-row empty states, Codex, 11 (a) review). */}
           {account &&
-            blocked.length > 0 &&
             disclosure(
               'blocked',
               'Blocked',
-              <>
-                {blocked[0].displayName ?? (blocked[0].handle ? `@${blocked[0].handle}` : 'Someone')} <span className="settings-badge">{blocked.length}</span>
-              </>,
+              blocked.length === 0 ? (
+                'None'
+              ) : (
+                <>
+                  {blocked[0].displayName ?? (blocked[0].handle ? `@${blocked[0].handle}` : 'Someone')} <span className="settings-badge">{blocked.length}</span>
+                </>
+              ),
               <>
                 {blocked.map((person) => (
                   <button

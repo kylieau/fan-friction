@@ -517,7 +517,7 @@ export {
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
 export { stubDefault, setStubDefault, stubLevel, setStubVisibility, setEntryVisibility, setPastStubsVisibility } from './personalLog';
-export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, temperatureUnitOf, setTemperatureUnit, toggleFavoriteCity, setEntrySeats, setPlanSeats, setEntryCost, setPlanCost, entryTeams, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
+export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, temperatureUnitOf, setTemperatureUnit, toggleFavoriteCity, reorderFavoriteCities, setEntrySeats, setPlanSeats, setEntryCost, setPlanCost, entryTeams, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
 export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
 export type { Cost, CostKind, CostLine } from './types';
 export { hasUnsyncedChanges } from './storage';
@@ -530,7 +530,7 @@ export { entriesInYear, yearsOf, yearStatPool, teamCounts, cityCounts, longestSt
 export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine, costWords, currencySign } from './costs';
 export { getTeamSchedule, nextTeamGame, onTeamSchedule, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
 export { seasonHomeGames, seasonGameSet, seasonPlayoffGames, seasonPlanEventId, seasonDefaultCost, seasonLabel, seatShort } from './seasonTickets';
-export { seasonTicketOf, startSeasonTickets, syncSeasonSchedule, updateSeasonDefaults, seasonEditCounts, setSeasonGame, resetSeasonGame, removeSeasonGame, readdSeasonGame, answerSeasonPlayoff, stopSeasonTickets, seasonCounts } from './personalLog';
+export { seasonTicketOf, startSeasonTickets, syncSeasonSchedule, updateSeasonDefaults, seasonEditCounts, setSeasonGame, resetSeasonGame, removeSeasonGame, readdSeasonGame, answerSeasonPlayoff, stopSeasonTickets, seasonCounts, seasonStubsOf, refreshSeasonTickets } from './personalLog';
 export { espnTeamUrl } from './sources/espnSource';
 export { entryOutcome, hoursAtGames, lengthLine, resultFor, scoreLine } from './results';
 export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, competitionsFor, divisionChoices, levelPhrase } from './competitions';
