@@ -82,17 +82,28 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ## Next
 
+### Build 7.1 follow-ups (Claude Code, Oct 24, 2026; the report is `docs/build-7-1/gap-report-7-1.md`)
+Build 7.1 shipped steps 1–14 on Oct 24 (the notes: `docs/build-7-1/build-notes-7-1.md`). Closed by the notes, nothing to build: **M10** (add-on listings hidden, `addOns.ts`), **M12** (type icons option C and 20k rounding), **M13** (favorite cities on the switcher; reordering shipped as M31). **Season tickets** (item 15) shipped. Left, each with its why in the report:
+- **Codex stage 4 re-run** (steps 9–12): it ran out of credits partway; re-run once the workspace has credits ("Skipped reviews"). Codex stage 5 likewise if it can't run.
+- **Plan details past the catalog's 60-day window** on Upcoming (Codex stage 3, finding 6 in part): a plan's start and room for games the window doesn't hold need a read per plan.
+- **One game identity across feeds** (Codex stage 3, finding 11): the same game saved through two teams' schedules can show twice.
+- **A retractable-roof note** on the event page (M33's 506): needs a venue field; today only code comments say "Retractable".
+- **Kylie's questions 3–6** in the report (Compare's "Side by side" case; the nightly's stored `why` wording; the weather card's summary sentence; the Up Against pill on the event page).
+- **Phone checks signed in** ("For Kylie to check on a phone"): Profile & Settings' card and Followers, the event page's level pill, friends' plans on Upcoming, Activity's friends' lines.
+- **The M15 seed** (`scripts/seed-test-account-sample.mjs`, `docs/reference/test-account-seed.md`): Kylie runs it with her export; agents never do.
+- **Research to run** (M35): `docs/research/topics/arts-fill-rates-prompt.md` and `ncaa-attendance-sources-prompt.md`; nothing is built until the answers come back and she approves.
+
 ### Build 7 follow-ups (Claude Code, Oct 22, 2026, evening; the report is `docs/build-7/gap-report-7.md`)
 Build 7 shipped in twelve steps plus two review-fix commits on Oct 22 (the notes: `docs/build-7/build-notes-7.md`). Deferred, each with its why in the report's "Not built" section:
-- **Change city on the Log sheet** (Lean in the notes): the sheet uses the home city; a picker would be new UI (mock first).
+- ~~**Change city on the Log sheet**~~ **done in build 7.1 (item 13, Oct 24, 2026).**
 - **Opponents outside the catalog**: a school feed's name-only visitor is not credited in Ranks or Seen N; needs team ids in the feed.
 - **Team identity by id**: two teams sharing a short name ("Stars") share one tag; attribution by id is a wider change than build 7.
 - **A shared sheet focus rule**: no sheet traps focus; one rule for all sheets (Stub it, Search, the filters, Log, Edit favorites).
 - **Settings page refresh after an edit** (profile handle, Blocked): a shared profile store so the head updates without a reload.
 - **`searchEvents` performance**: a debounce and a per-session catalog cache for the Log sheet's and search's event rows.
-- **From the notes' §11**: Hide mine saved to the account; Recap share cards; a season-ticket cost feature; trip costs out of venue averages; Recap photos; a Notifications bell; multi-currency; Travel & Stay.
+- **From the notes' §11**: Hide mine saved to the account; Recap share cards; ~~a season-ticket cost feature~~ (shipped as build 7.1's Season Tickets); trip costs out of venue averages; Recap photos; a Notifications bell; multi-currency; Travel & Stay.
 - **Kylie's phone checks** are listed in the report ("For Kylie to check on a phone"): Activity with real friends, the Settings page signed in, same-day logging settling after midnight.
-- **Judgment calls for her to confirm or reverse** (report, "Judgment calls"): global search keeps a Dates group under the new Events rows; Seat and Cost show on any Attending plan, not only same-day; the Your stubs "Team or sport" filter reads both teams; the stub count beside the Your stubs title; the plans band's helper line shows once per device.
+- ~~**Judgment calls for her to confirm or reverse**~~ **settled by build 7.1's Part 1 (Kylie, Oct 23):** Dates stays under Events (item 7); Seat and Cost on any Attending plan (item 6); both teams in the team filter, now a dropdown (item 8); no stub count in the title (item 9); the helper shows until three plans (item 10).
 
 ### Parked and unrendered screens (register, Kylie's ask, Oct 17, 2026)
 Code that ships but no screen reaches, or a screen nothing links to. Keep this list current when a screen is retired, rehomed or relinked; find the first kind with `for f in src/screens/*.tsx src/components/*.tsx; do n=$(basename "$f" .tsx); grep -rqL "/$n'" src || echo "$f"; done` (a file no other file imports).

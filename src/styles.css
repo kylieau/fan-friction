@@ -12926,3 +12926,55 @@ a.follow-lead::after {
   font-size: 13px;
   color: var(--ink2);
 }
+
+/* ---------- Build 7.1, M39: small text and tap targets, with the kept exceptions (§10) ---------- */
+/* Small text raised to 11px where no decision keeps it smaller. Kept (exceptions): the read-box words at 8–9px
+   (.cal-word, .log-score-word, .read-word; product-decisions.md:168), the Away tag at 8px in the read tile's slot and
+   the date-box weekday at 9px (both Locked, Kylie, Oct 23), and the Map's chip text and date strip (.crowd-name,
+   .crowd-meta, .day-cell; the Map's look changes only by a proposal she approves). */
+.cal-num,
+.fav-sched-code,
+.last5-mark,
+.tag-soldout,
+.example-chip {
+  font-size: 11px;
+}
+/* Back and the (i) buttons: an invisible 44pt tap area; what's drawn stays the same size. */
+.back-link,
+.read-info,
+.info-dot {
+  position: relative;
+}
+.back-link::after {
+  content: '';
+  position: absolute;
+  inset: -12px -10px;
+}
+.read-info::after,
+.info-dot::after {
+  content: '';
+  position: absolute;
+  inset: -12px;
+}
+/* Lineup rows: at least 44pt tall for real (stacked rows can't take an invisible extension without overlapping); a row
+   with the weather marker keeps one line, the marker adds no height. */
+.day-row {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+/* "Show" on the hidden line: the whole line is the target, reaching only into its 6px gaps (M36), never over the rows. */
+.hidden-line {
+  position: relative;
+}
+.hidden-line-show {
+  position: static;
+}
+.hidden-line-show::after {
+  inset: -6px 0;
+}
+/* The date page's lineup rows (and Further Out's there): the link takes the row's own vertical padding, so the tap
+   area is the full row height (at least 44pt) while the drawn row stays the same. */
+.date-row > .date-row-main {
+  margin: -6px 0;
+  padding: 6px 0;
+}
