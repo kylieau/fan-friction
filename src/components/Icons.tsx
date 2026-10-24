@@ -146,6 +146,26 @@ export function SearchIcon() {
   );
 }
 
+/** The event header's date line (build 7.1, M33). */
+export function ClockIcon({ size = 15 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <circle cx="12" cy="12" r="9" />
+      <polyline points="12 7 12 12 15.5 14" />
+    </svg>
+  );
+}
+
+/** The event header's venue line (build 7.1, M33). */
+export function PinIcon({ size = 15 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" />
+      <circle cx="12" cy="9.5" r="2.5" />
+    </svg>
+  );
+}
+
 export function ChevronDown() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>

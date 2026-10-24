@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { APP } from '../config/app';
 import { formatScore, scoreLabel, type Friction } from '../config/scoreLabels';
 import { CrowdMark, FrictionPill } from './EventTags';
@@ -22,27 +22,51 @@ interface Props {
 
 // The event's share card (shown on screen; sharing sends text and the link for
 // now, and an image version can come later).
-export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel = 'Share this event', friction = null }: Props) {
-  const [note, setNote] = useState('');
-
+/** The text a share sends: the same words from the card and from the event page's Share row (build 7.1, M33). */
+export function shareText({ dateLabel, title, line, rating, crowd }: Pick<Props, 'dateLabel' | 'title' | 'line' | 'rating' | 'crowd'>): string {
   // One period per sentence, whether or not the reason already ends with one (C029).
   const sentence = (s: string) => (s && !/[.!?]$/.test(s) ? `${s}.` : s);
   // Reads are tenths, never "x/10" (build notes 2, house rules).
-  const text = [`${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}` : ''}.`, sentence(line), sentence(crowd ?? '')].filter(Boolean).join(' ');
+  return [`${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}` : ''}.`, sentence(line), sentence(crowd ?? '')].filter(Boolean).join(' ');
+}
 
-  const share = async () => {
-    const data = { title: `${APP.name}: ${title}`, text, url: window.location.href };
-    try {
-      if (navigator.share) {
-        await navigator.share(data);
-        return;
-      }
-      await navigator.clipboard.writeText(`${text} ${data.url}`);
-      setNote('Copied. Paste it anywhere.');
-    } catch {
-      /* closed the share sheet, or the browser blocked it: nothing to do */
+async function sendShare(title: string, text: string): Promise<string> {
+  const data = { title: `${APP.name}: ${title}`, text, url: window.location.href };
+  try {
+    if (navigator.share) {
+      await navigator.share(data);
+      return '';
     }
-  };
+    await navigator.clipboard.writeText(`${text} ${data.url}`);
+    return 'Copied. Paste it anywhere.';
+  } catch {
+    /* closed the share sheet, or the browser blocked it: nothing to do */
+    return '';
+  }
+}
+
+/**
+ * The event page's Share row (build 7.1, M33, Lean; mock 501's footer): "Share This Event" with what it shares under it,
+ * sending exactly the card's text. The card itself stays for Compare.
+ */
+export function ShareRow({ dateLabel, title, line, rating, crowd, sub, icon }: Pick<Props, 'dateLabel' | 'title' | 'line' | 'rating' | 'crowd'> & { sub: string; icon: ReactNode }) {
+  const [note, setNote] = useState('');
+  return (
+    <button type="button" className="footer-row" onClick={async () => setNote(await sendShare(title, shareText({ dateLabel, title, line, rating, crowd })))}>
+      {icon}
+      <span className="footer-row-words">
+        <span className="footer-row-title">Share This Event</span>
+        <span className="footer-row-sub">{note || sub}</span>
+      </span>
+    </button>
+  );
+}
+
+export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel = 'Share this event', friction = null }: Props) {
+  const [note, setNote] = useState('');
+
+  const text = shareText({ dateLabel, title, line, rating, crowd });
+  const share = async () => setNote(await sendShare(title, text));
 
   return (
     <section className="share-block" aria-label="Share card">

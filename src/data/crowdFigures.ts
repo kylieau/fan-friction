@@ -68,7 +68,8 @@ export function entryAtLeastMark(entry: Entry): string {
 /** The full figure on the event page: "52,667", "~18,000", "At least 6,667". */
 export function crowdFull(shown: CrowdFigureShown, fmt: (n: number) => string): string {
   if (shown.atLeast) return `At least ${fmt(shown.count)}`;
-  return shown.kind === 'estimated' ? `~${fmt(shown.count)}` : fmt(shown.count);
+  // No "~" in app copy (build 7.1, M33 and §4): the kind word beside the figure says Estimated.
+  return fmt(shown.count);
 }
 
 /** The crowd count shown on the map, chip card and sheet total (build 4 §0: Final > Announced > Estimated). */

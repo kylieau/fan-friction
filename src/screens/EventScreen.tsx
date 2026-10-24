@@ -9,7 +9,7 @@ import { TypeIcon } from '../components/TypeIcon';
 import { LevelPill } from '../components/LevelPill';
 import { AddToCalendar } from '../components/AddToCalendar';
 import { ActivityLines, StatusLine } from '../components/ActivityLines';
-import { activityGroups, yourActivity } from '../lib/activity';
+import { ACTIVITY_WORDS, activityGroups, yourActivity } from '../lib/activity';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
@@ -27,6 +27,7 @@ import {
   feelsLikeLabel,
   isOpenAir,
   seatsLine,
+  seatShort,
   costWords,
   storyFor,
   sizeTier,
@@ -62,11 +63,12 @@ import { crowdPoints, showsOnMap } from '../map/crowdPoints';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
-import { ArrowRight } from '../components/Icons';
+import { ArrowRight, ChevronDown, ClockIcon, CompareIcon, MapIcon, PinIcon, ShareIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
-import { ShareCard } from '../components/ShareCard';
-import { clockTime, shortLocalDate } from '../lib/dates';
-import { fullTitle, isLabelText, mapTitle } from '../lib/eventTitle';
+import { ShareRow } from '../components/ShareCard';
+import { TagChip } from '../components/TagChip';
+import { clockTime, dateWithYear, shortLocalDate } from '../lib/dates';
+import { fullTitle, headerTitle, isLabelText, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
 import { comparePath, datePath, openedMetroId, eventPath, tagPath } from '../lib/view';
 import { longLocalDate } from '../lib/dates';
@@ -250,6 +252,19 @@ export function EventScreen() {
   const dayCount = dayEvents.length;
   const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
 
+  // Build 7.1, M33 (Lean: A's order plus the Your Stub line; mocks 501–529): header, action, the line, Crowd, Up
+  // Against, Weather, the story, This Day, Following, Your Stub, More Dates, the footer card. A Watched page carries no
+  // This Day verdict and no verdict in what it shares (M23).
+  const today = todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
+  const watchedPage = you?.kind === 'watched';
+  const logBits = logged
+    ? [!logged.watched ? seatShort(logged.seats) || null : null, logged.cost && costWords(logged.cost) ? costWords(logged.cost) : null, logged.with ? `With ${logged.with}` : null, logged.review ? 'Review' : null].filter((b): b is string => Boolean(b))
+    : [];
+  const level = account && youRow ? stubLevel(youRow) : null;
+  const shareLine = a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : '';
+  const shareCrowd = shown ? `${shown.atLeast ? 'At least ' : ''}${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null;
+  const toStubCard = () => document.getElementById('your-stub')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+
   return (
     <div className="screen page event-page">
       {/* Back to wherever you came from (Faves, a team page, the map, Stubs); a cold open falls back to the date. */}
@@ -258,16 +273,22 @@ export function EventScreen() {
       <header className="event-head">
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(e).key} size={18} className="title-type-icon" />
-          <TitleText text={fullTitle(e)} />
+          <TitleText text={headerTitle(e)} />
         </h1>
-        <div className="event-sub">
-          {me.venueName}
-          {/* A neutral site names its city (build notes 2, event naming). */}
-          {e.neutralSite ? ` · ${(METROS[e.metroId] ?? DEFAULT_METRO).name}` : ''}
-          {/* A further-out event names its town (Kylie, Oct 20, 2026, afternoon); the drive stays on list rows. */}
-          {furtherTown ? ` · ${furtherTown}` : ''}
-          {e.start ? ` · ${clockTime(e.start)}` : ''}
-          {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
+        {/* The date and time line in every header (M33), the year when it isn't this year; the station after it. */}
+        <div className="event-line">
+          <ClockIcon />
+          <span>{[dateWithYear(date, today), e.start ? clockTime(e.start) : null, tv ? `${ahead ? 'On' : 'Was on'} ${tv}` : null].filter(Boolean).join(' · ')}</span>
+        </div>
+        <div className="event-line">
+          <PinIcon />
+          <span>
+            {me.venueName}
+            {/* A neutral site names its city (build notes 2, event naming). */}
+            {e.neutralSite ? ` · ${(METROS[e.metroId] ?? DEFAULT_METRO).name}` : ''}
+            {/* A further-out event names its town (Kylie, Oct 20, 2026, afternoon); the drive stays on list rows. */}
+            {furtherTown ? ` · ${furtherTown}` : ''}
+          </span>
         </div>
         {/* The (i) opens the definition (Kylie, Oct 21, 2026). */}
         {further && (
@@ -277,12 +298,10 @@ export function EventScreen() {
         )}
         {/* A fan-added event (step 2 of the Add a game / Add a show card, Oct 21, 2026): the label stays once confirmed. */}
         {e.sourceId === 'fan' && <div className="event-further">Added by a fan</div>}
-        <FactList facts={eventFacts(e, logged)} />
         {/* No ticket line (build 6, item 12): hidden, not deleted; the .ticket-line style stays for its return. */}
-        {a && (
+        {a && (a.occasion || a.facts.some((f) => !isLabelText(f))) && (
           <div className="chip-row">
-            {/* The occasion tag, always the event's own (build 6, item 2); the friction pill moved to the Crowd and
-                Up against cards (build 6, item 1, Kylie's Q2). */}
+            {/* The occasion tag, always the event's own (build 6, item 2). */}
             <OccasionTag occasion={a.occasion} />
             {/* The round already reads under the title (labels r3); a fact that repeats it is left out. */}
             {a.facts.filter((f) => !isLabelText(f)).map((f) => (
@@ -294,124 +313,51 @@ export function EventScreen() {
         )}
       </header>
 
-      {/* One "+ Stub it" opens one sheet (build notes 3, 4.7); your answer sits under it as a status line. */}
+      {/* The action (M33): "+ Stub it" with Add to Calendar while ahead; once answered, the status chip with the stub's
+          level and Edit, which opens the same sheet. */}
       <div className="event-marks">
-        {/* Add to calendar beside "+ Stub it" while the event is ahead (build 5, item 3, option B): no new row. */}
-        <span className="stub-actions">
-          <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
-            + Stub it
-          </button>
-          {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
-        </span>
-        {you && (
-          <span className="event-status">
-            {/* Signed in, the line carries the stub's level as a pill, before and after the event (build 5, stub privacy;
-                board privacy-r2 4a–4b): "Watching · Anyone ⌄". Signed out it keeps the old Private / Friends word. */}
-            <StatusLine kind={you.kind} share={account && youRow ? undefined : youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} onTag={(tag) => navigate(tagPath(tag))} />
-            {account && youRow && (
-              <>
-                <span aria-hidden>·</span>
-                <LevelPill down value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
-              </>
-            )}
-            {/* Edit the whole stub (tags, seat, cost) whenever you have one (build 7, Locked; Kylie, Oct 21, 2026). A plan
-                while the date is ahead reads "Edit". */}
-            {you.kind !== 'interested' && (
-              <button type="button" className="link-button" onClick={() => setSheet(true)}>
-                {you.kind === 'attended' || you.kind === 'watched' ? 'Edit stub' : 'Edit'}
+        {you ? (
+          <span className="stub-actions">
+            <span className="status-chip">
+              <StatusLine kind={you.kind} share={account && youRow ? undefined : youShare} place={you.place} />
+              {level && (
+                <>
+                  <span aria-hidden>·</span>
+                  <LevelPill down value={level} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
+                </>
+              )}
+              <button type="button" className="link-button status-chip-edit" onClick={() => setSheet(true)}>
+                Edit <ChevronDown />
               </button>
-            )}
+            </span>
+            {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
+          </span>
+        ) : (
+          <span className="stub-actions">
+            <button type="button" className="gold-button" onClick={() => setSheet(true)}>
+              + Stub it
+            </button>
+            {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
           </span>
         )}
-        {logged?.seats && !logged.watched && seatsLine(logged.seats) && <span className="event-seats">{seatsLine(logged.seats)}</span>}
-        {logged?.cost && costWords(logged.cost) && <span className="event-seats">{costWords(logged.cost) === 'Free' ? 'Free ticket' : `You paid ${costWords(logged.cost)}`}</span>}
-        {logged && <EntryLayer entry={logged} showLevel={false} />}
+        {/* The Your Stub line (M33, Lean): Attended or Watched on a full catalog page; a plan gets none, nor does a
+            further-out page (its card is near the top). A thin stub reads as a prompt. */}
+        {logged && !further && (
+          <button type="button" className="stub-line" onClick={toStubCard}>
+            <span className="stub-line-words">
+              <strong>Your Stub</strong>
+              {logBits.length > 0 ? ` · ${logBits.join(' · ')}` : logged.watched ? ' · Add a cost or a review' : ' · Add seats, cost, or a review'}
+            </span>
+            <span className="stub-line-see">See ›</span>
+          </button>
+        )}
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
       <RecordOpened event={e} />
 
-      {/* This day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page.
-          Not on a further-out event (Kylie, Oct 19–20, 2026): it is outside the city's day, so the card would count it
-          as a day of one. */}
-      {!further && (
-      <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This Day">
-        <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
-        <span className="this-day-main">
-          <span className="this-day-label">This Day</span>
-          <span className="this-day-title">
-            {shortLocalDate(date)} · {dayCount} {dayCount === 1 ? 'event' : 'events'}
-          </span>
-          {biggest && <span className="this-day-sub">Biggest: {mapTitle(biggest, day.events)}</span>}
-        </span>
-        <span className="this-day-chevron" aria-hidden>
-          ›
-        </span>
-      </Link>
-      )}
-
-      {friends.length > 0 && (
-        <section className="you-block" aria-labelledby="friends-event">
-          <h2 id="friends-event" className="you-heading">
-            Following
-          </h2>
-          {/* Grouped like the Friends cards (Kylie, Oct 11): "Attending · Sam, Priya", "Watching · Jo at Tom's Bar", "Interested · Lee". */}
-          <ActivityLines groups={activityGroups(friends, null)} />
-        </section>
-      )}
-
-      {a && (
-        <section className="card up-against" aria-label="Up Against">
-          {/* Up against (build notes 3, 3.3; mock call12-up-against, A): this event's rivals over the floor within an hour,
-              each with its venue, start and distance; the whole day is one tap away. The old timeline is gone. */}
-          <div className="up-against-label">Up Against</div>
-          <div className="up-against-line">
-            {/* A room under the floor gets no pill (build notes 2); Unopposed shows here and in the Crowd card, with the
-                ring beside the pill (build 6, item 1). */}
-            {verdict && <FrictionVerdict level={verdict} />}
-            <span className="up-against-count">{rivals.length > 0 ? `${rivals.length} big ${rivals.length === 1 ? 'draw' : 'draws'} within an hour` : a.why}</span>
-          </div>
-          {rivals.length > 0 && (
-            <ul className="rival-list">
-              {rivals.map((r) => {
-                const where = rivalVenue(r);
-                const miles = rivalMiles(r);
-                return (
-                  <li key={r.id}>
-                    <Link to={eventPath(r.id, r.metroId)} className="rival-row">
-                      <span className="rival-dot" aria-hidden />
-                      <span className="rival-main">
-                        <span className="rival-name">
-                          {mapTitle(r, day.events)}
-                          {where ? ` · ${where}` : ''}
-                          {r.start ? ` · ${clockTime(r.start)}` : ''}
-                        </span>
-                        {miles !== null && <span className="rival-dist">{miles < 0.5 ? 'Next door' : `${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi away`}</span>}
-                      </span>
-                      {drawSize(r) ? (
-                        <span className="rival-crowd">
-                          <CrowdMark />
-                          {crowdThousands(drawSize(r)!)}
-                          {atLeastMark(r)}
-                        </span>
-                      ) : null}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-          <Link to={datePath(date, e.metroId, e.id)} className="text-link up-against-link">
-            See the whole day ›
-          </Link>
-          {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
-        </section>
-      )}
-
-      {ahead && <SameTour event={e} />}
-
       {/* The crowd block (build notes 3, D04; mock call11b-crowd-hybrid): the highlighted figure big, in a pale-gold row
           with a gold bar; small rows under it list Announced and Final once they exist. The estimate shows only until
-          an announced count lands. Final > Announced > Estimated. */}
+          an announced count lands. Final > Announced > Estimated. The event's facts sit under it (M33). */}
       <section className="card crowd-block" aria-label="Crowd">
         <div className="crowd-block-label">
           <span className="crowd-block-dot" aria-hidden />
@@ -477,37 +423,156 @@ export function EventScreen() {
           <span className="crowd-kind">— Size unknown</span>
         )}
         {me.soldOut && shown && <span className="tag-soldout">SOLD OUT</span>}
+        {eventFacts(e, logged).length > 0 && (
+          <div className="crowd-facts">
+            <FactList facts={eventFacts(e, logged)} />
+          </div>
+        )}
       </section>
       {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} event={e} seats={me.capacity} />}
 
-      <StorySlot event={e} />
+      <p className="source-note">Counts are labeled by kind: announced, reported, or estimated. Distances are straight-line.</p>
+
+      {a && (
+        <section className="card up-against" aria-label="Up Against">
+          {/* Up against (build notes 3, 3.3; mock call12-up-against, A): this event's rivals over the floor within an hour,
+              each on two lines (M33): the name, then its venue, start and distance; the whole day is one tap away. */}
+          <div className="up-against-label">Up Against</div>
+          <div className="up-against-line">
+            {/* The pill stays here as well as on Crowd (build 6, item 1, Kylie's Q2), though the M33 mock drops it. */}
+            {verdict && <FrictionVerdict level={verdict} />}
+            <span className="up-against-count">{rivals.length > 0 ? `${rivals.length} big ${rivals.length === 1 ? 'draw' : 'draws'} within an hour` : a.why}</span>
+          </div>
+          {rivals.length > 0 && (
+            <ul className="rival-list">
+              {rivals.map((r) => {
+                const where = rivalVenue(r);
+                const miles = rivalMiles(r);
+                const away = miles === null ? null : miles < 0.5 ? 'Next door' : `${miles < 10 ? miles.toFixed(1) : Math.round(miles)} mi away`;
+                return (
+                  <li key={r.id}>
+                    <Link to={eventPath(r.id, r.metroId)} className="rival-row">
+                      <span className="rival-dot" aria-hidden />
+                      <span className="rival-main">
+                        <span className="rival-name">{mapTitle(r, day.events)}</span>
+                        <span className="rival-dist">{[where, r.start ? clockTime(r.start) : null, away].filter(Boolean).join(' · ')}</span>
+                      </span>
+                      {drawSize(r) ? (
+                        <span className="rival-crowd">
+                          <CrowdMark />
+                          {crowdThousands(drawSize(r)!)}
+                          {atLeastMark(r)}
+                        </span>
+                      ) : null}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+          <Link to={datePath(date, e.metroId, e.id)} className="text-link up-against-link">
+            See the whole day ›
+          </Link>
+          {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
+        </section>
+      )}
 
       <WeatherDetail event={e} />
 
-      <p className="source-note">Counts are labeled by kind: announced, reported, or estimated. Distances are straight-line.</p>
+      <StorySlot event={e} />
 
-      <ShareCard
-        dateLabel={longLocalDate(date)}
-        title={fullTitle(e)}
-        line={a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : ''}
-        friction={a?.friction ?? null}
-        rating={day.rating ? day.rating.rating : null}
-        crowd={shown ? `${shown.atLeast ? 'At least ' : ''}${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null}
-      />
-
-      <MapBack date={date} metroId={e.metroId} className="text-link">
-        Back to the map
-      </MapBack>
-
-      {logged && (
-        <Link to={comparePath({ metroId: e.metroId, date, eventId: e.id })} className="text-link compare-link">
-          Compare with…
+      {/* This Day (build notes 3, 4.3): the date's read, how many events, and the biggest draw; opens the date page. Not on
+          a further-out event (Kylie, Oct 19–20, 2026) and not on a Watched page (M23: Watched never counts). */}
+      {!further && !watchedPage && (
+        <Link to={datePath(date, e.metroId, e.id)} className="card this-day" aria-label="This Day">
+          <ReadTile rating={day.rating?.rating ?? null} empty={day.empty} />
+          <span className="this-day-main">
+            <span className="this-day-label">This Day</span>
+            <span className="this-day-title">
+              {shortLocalDate(date)} · {dayCount} {dayCount === 1 ? 'event' : 'events'}
+            </span>
+            {biggest && <span className="this-day-sub">Biggest: {mapTitle(biggest, day.events)}</span>}
+          </span>
+          <span className="this-day-chevron" aria-hidden>
+            ›
+          </span>
         </Link>
       )}
+
+      {friends.length > 0 && (
+        <section className="you-block" aria-labelledby="friends-event">
+          <h2 id="friends-event" className="you-heading">
+            Following
+          </h2>
+          {/* Grouped like the Friends cards (Kylie, Oct 11): "Attending · Sam, Priya", "Watching · Jo at Tom's Bar", "Interested · Lee". */}
+          <ActivityLines groups={activityGroups(friends, null)} />
+        </section>
+      )}
+
+      {/* Your Stub (M33): the status, seat and what you paid, then the review and With with their own editor; Edit Stub
+          opens the Stub it sheet (tags, seat, cost). Only on your own page: none of this reaches a shared table. */}
+      {logged && you && (
+        <section id="your-stub" className="card your-stub" aria-label="Your Stub">
+          <div className="your-stub-head">
+            <span className="your-stub-label">Your Stub</span>
+            <button type="button" className="link-button your-stub-edit" onClick={() => setSheet(true)}>
+              Edit Stub
+            </button>
+          </div>
+          <FactList
+            facts={[
+              { label: 'Status', value: [ACTIVITY_WORDS[you.kind], level ? LEVEL_WORDS[level] : null].filter(Boolean).join(' · ') },
+              ...(!logged.watched && seatsLine(logged.seats) ? [{ label: 'Seats', value: seatsLine(logged.seats) }] : []),
+              ...(logged.cost && costWords(logged.cost) ? [{ label: 'You Paid', value: costWords(logged.cost)! }] : []),
+            ]}
+          />
+          <EntryLayer entry={logged} showLevel={false} />
+          {(youRow?.userTags ?? []).length > 0 && (
+            <div className="your-stub-tags">
+              {(youRow?.userTags ?? []).map((tag) => (
+                <TagChip key={tag} tag={tag} size="row" onClick={() => navigate(tagPath(tag))} />
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
+      {ahead && <SameTour event={e} />}
+
+      {/* The footer card (M33): Share This Event (the same text the card shared), Compare With…, Back to the Map. */}
+      <section className="card footer-card" aria-label="More">
+        <ShareRow
+          icon={<ShareIcon />}
+          dateLabel={longLocalDate(date)}
+          title={fullTitle(e)}
+          line={shareLine}
+          rating={!watchedPage && day.rating ? day.rating.rating : null}
+          crowd={shareCrowd}
+          sub={`Shares ${[shortLocalDate(date), fullTitle(e), shareCrowd ? shareCrowd.toLowerCase().replace(/^at least/, 'at least') : null].filter(Boolean).join(' · ')}`}
+        />
+        {logged && (
+          <Link to={comparePath({ metroId: e.metroId, date, eventId: e.id })} className="footer-row compare-link">
+            <CompareIcon />
+            <span className="footer-row-words">
+              <span className="footer-row-title">Compare With…</span>
+            </span>
+          </Link>
+        )}
+        <MapBack date={date} metroId={e.metroId} className="footer-row">
+          <MapIcon />
+          <span className="footer-row-words">
+            <span className="footer-row-title">Back to the Map</span>
+          </span>
+        </MapBack>
+      </section>
+
       {logged && <RemoveFromLog entry={logged} />}
     </div>
   );
 }
+
+/** The stub level's word on the Your Stub card (the pill's own words). */
+const LEVEL_WORDS: Record<'anyone' | 'friends' | 'private', string> = { anyone: 'Anyone', friends: 'Friends', private: 'Private' };
 
 /**
  * The evening's story (build notes 4, P4): a short paragraph and its source links, under the crowd, in a
@@ -794,9 +859,19 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
         <h1 className="page-title">
           <TypeIcon typeKey={eventType(event).key} size={18} className="title-type-icon" />
           {/* Built from a schedule game, the full name like any event page; rebuilt from a stub, the stub's own name. */}
-          <TitleText text={link ? fullTitle(event) : event.title} />
+          <TitleText text={link ? headerTitle(event) : event.title} />
         </h1>
-        <div className="event-sub">{[venue, event.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}</div>
+        {/* The date line and the venue line, as on every event header (build 7.1, M33). */}
+        <div className="event-line">
+          <ClockIcon />
+          <span>{[dateWithYear(event.date, todayIn(METROS[event.metroId] ?? DEFAULT_METRO)), event.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}</span>
+        </div>
+        {venue && (
+          <div className="event-line">
+            <PinIcon />
+            <span>{venue}</span>
+          </div>
+        )}
         <FactList facts={facts} />
       </header>
       <div className="event-marks">

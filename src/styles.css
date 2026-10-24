@@ -12757,3 +12757,172 @@ a.follow-lead::after {
   color: var(--card);
   box-shadow: none;
 }
+
+/* ---------- The event page (build 7.1, M33, Lean: A + the Your Stub line; mocks 501–529) ---------- */
+.event-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--ink2);
+}
+.event-line svg {
+  flex: none;
+  color: var(--muted);
+}
+.stub-actions .gold-button {
+  flex: 1;
+}
+/* The answered state: one bordered chip, the status, the level, Edit. */
+.status-chip {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  min-height: 48px;
+  padding: 6px 14px;
+  border: 1.5px solid var(--action);
+  border-radius: 14px;
+  background: var(--card);
+}
+.status-chip-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--action);
+}
+.status-chip-edit svg {
+  width: 16px;
+  height: 16px;
+}
+/* The Your Stub line under the chip, linking to the card (Lean). */
+.stub-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 44px;
+  padding: 6px 0 6px 12px;
+  border: none;
+  border-left: 3px solid color-mix(in srgb, var(--action) 35%, var(--bg));
+  background: none;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink2);
+  text-align: left;
+}
+.stub-line-words {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stub-line-words strong {
+  color: var(--ink);
+}
+.stub-line-see {
+  flex: none;
+  font-weight: 700;
+  color: var(--action);
+}
+/* The facts under the crowd figure. */
+.crowd-facts {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+/* Up Against rows on two lines: the name, then venue · time · distance. */
+.rival-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.rival-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.rival-dist {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* The Your Stub card. */
+.your-stub {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  scroll-margin-top: 72px;
+}
+.your-stub-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.your-stub-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+.your-stub-edit {
+  font-weight: 700;
+  color: var(--action);
+}
+.your-stub .entry-layer {
+  padding: 10px 0 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+.your-stub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+/* The footer card: Share This Event, Compare With…, Back to the Map. */
+.footer-card {
+  padding: 4px 16px;
+}
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: var(--action);
+  text-align: left;
+  text-decoration: none;
+}
+.footer-card > * + * {
+  border-top: 1px solid var(--line);
+}
+.footer-row svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+}
+.footer-row-words {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.footer-row-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-row-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}

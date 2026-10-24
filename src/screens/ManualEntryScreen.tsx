@@ -25,7 +25,8 @@ import { StatusLine } from '../components/ActivityLines';
 import { TagChip } from '../components/TagChip';
 import { TagsPanel } from '../components/TagsPanel';
 import { ReadTile } from '../components/ReadTile';
-import { loggedDateLabel } from '../lib/dates';
+import { clockTime, loggedDateLabel } from '../lib/dates';
+import { ClockIcon, PinIcon } from '../components/Icons';
 import { TitleText } from '../components/TitleText';
 import { BackLink } from '../components/BackLink';
 import { SeatsRow } from '../components/SeatsRow';
@@ -57,13 +58,24 @@ function ManualPlanPage({ planId }: { planId: string }) {
   const [asking, setAsking] = useState(false);
   if (!plan) return null;
   const kind = plan.manual?.kind;
-  const sub = [loggedDateLabel({ sort: plan.date, label: '', precision: 'day' }), plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ');
+  // The date line and the venue line, as on every event header (build 7.1, M33).
+  const when = [loggedDateLabel({ sort: plan.date, label: '', precision: 'day' }), plan.manual?.start ? clockTime(plan.manual.start) : null].filter(Boolean).join(' · ');
+  const where = [plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ');
   return (
     <div className="screen page event-page">
       <BackLink to="/you/stubs" />
       <header className="event-head">
         <h1 className="page-title"><TitleText text={plan.title} /></h1>
-        <div className="event-sub">{sub}</div>
+        <div className="event-line">
+          <ClockIcon />
+          <span>{when}</span>
+        </div>
+        {where && (
+          <div className="event-line">
+            <PinIcon />
+            <span>{where}</span>
+          </div>
+        )}
         {/* Sent for review from the Add a game / Add a show card (Kylie, Oct 21, 2026): everyone sees it once confirmed. */}
         {plan.manual?.suggestionId && <div className="event-further">Added by a fan · Pending review</div>}
       </header>
@@ -150,7 +162,8 @@ function ManualEntryPage() {
   const city = entry.metroId ? METROS[entry.metroId]?.name : undefined;
   const exact = entry.when.precision === 'day' && entry.metroId ? { metroId: entry.metroId, date: entry.when.sort } : null;
   const weather = exact ? cityDayRange(exact.metroId, exact.date) : undefined;
-  const sub = [loggedDateLabel(entry.when), entry.venue, city, entry.away ? 'Away' : ''].filter(Boolean).join(' · ');
+  // The date line and the venue line, as on every event header (build 7.1, M33); the day's weather on the date line.
+  const where = [entry.venue, city, entry.away ? 'Away' : ''].filter(Boolean).join(' · ');
 
   return (
     <div className="screen page event-page">
@@ -158,8 +171,10 @@ function ManualEntryPage() {
 
       <header className="event-head">
         <h1 className="page-title"><TitleText text={entry.title} /></h1>
-        <div className="event-sub">
-          {sub}
+        <div className="event-line">
+          <ClockIcon />
+          <span>
+          {loggedDateLabel(entry.when)}
           {weather && (
             <>
               {' · '}
@@ -169,7 +184,14 @@ function ManualEntryPage() {
               {rangeLabel(weather, exact!.metroId)}
             </>
           )}
+          </span>
         </div>
+        {where && (
+          <div className="event-line">
+            <PinIcon />
+            <span>{where}</span>
+          </div>
+        )}
         {entry.suggestionId && <div className="event-further">Added by a fan · Pending review</div>}
         <FactList facts={entryFacts(entry)} />
       </header>

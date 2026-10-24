@@ -15,9 +15,13 @@ const game = (title, extra = {}) => ({ ...base, kind: 'game', title, audience: {
 const show = (title, extra = {}) => ({ ...base, kind: 'show', title, audience: { domain: 'music', genre: 'Rock' }, ...extra });
 const other = (title, extra = {}) => ({ ...base, kind: 'special', title, audience: { domain: 'other', tag: 'Theatre' }, ...extra });
 try {
-  const { mapTitle, listTitle, fullTitle, scheduleGameTitle, teamRelativeTitle } = await server.ssrLoadModule('/src/lib/eventTitle.ts');
+  const { mapTitle, listTitle, fullTitle, headerTitle, scheduleGameTitle, teamRelativeTitle } = await server.ssrLoadModule('/src/lib/eventTitle.ts');
   const cases = [
     // [label, event, {chip, short, full}] — only the lengths the notes give are checked.
+    // Build 7.1, M33: a brand's weekday-night show drops the weekday; "… Night Live" keeps its name.
+    ['M33 WWE weekday', other('WWE Friday Night SmackDown'), { full: 'WWE SmackDown' }],
+    ['M33 WWE as sports', { ...base, kind: 'special', title: 'WWE Friday Night SmackDown', audience: { domain: 'sports', sport: 'wrestling' } }, { full: 'WWE SmackDown' }],
+    ['M33 Night Live kept', other('Saturday Night Live'), { full: 'Saturday Night Live' }],
     // The short forms keep build 5's order for a named game: the event name outlives the away side (guarded since
     // build 7.1, when bare matchups stopped dropping the away side).
     ['N17 Red River', game('Texas vs. Oklahoma (Red River Showdown)', { neutralSite: true, sourceId: 'seed' }), { short: 'Oklahoma · Red River Showdown', full: 'Texas vs. Oklahoma · Red River Showdown' }],
@@ -146,6 +150,16 @@ try {
     ['M38 college softball', college('Texas State vs. UTSA', 'softball'), { short: 'UTSA at Texas State (SB)', full: 'UTSA at Texas State (Softball)' }],
     ['Pro football keeps no label', game('Rams vs. Bills', { teams: { home: 'rams', away: 'Bills' } }), { short: 'Bills at Rams', full: 'Bills at Rams' }],
   ];
+  // Build 7.1, M33: the event page's header drops the year the date line carries; the full form keeps it.
+  for (const [label, event, want] of [
+    ['M33 header Super Bowl', game('Rams vs. Chiefs', { teams: { home: 'rams', away: 'chiefs' }, stakes: { round: 'Super Bowl' }, date: '2027-02-14' }), 'Chiefs vs. Rams (Super Bowl)'],
+    ['M33 header All-Star', game('NBA All-Star Game', { sport: 'basketball', date: '2027-02-14' }), 'NBA All-Star Game'],
+  ]) {
+    const got = headerTitle(event);
+    const pass = got === want;
+    if (!pass) failed++;
+    console.log(`${pass ? 'ok  ' : 'FAIL'} ${label}: ${got}${pass ? '' : ` (want ${want})`}`);
+  }
   for (const [label, event, want] of schoolCases) {
     const got = { short: listTitle(event), full: fullTitle(event) };
     const bad = Object.keys(want).filter((k) => got[k] !== want[k]);

@@ -662,7 +662,17 @@ function showParts(event: CrowdEvent): ShowParts {
   return { type: 'show', name: displayName(name), tour, tags, city, touring };
 }
 
-function partsOf(event: CrowdEvent): Parts {
+/**
+ * A brand's weekday-night show drops the weekday and "Night" (build 7.1, M33; app copy says no "night"), whichever path
+ * the event takes (wrestling is filed as sports): "WWE Friday Night SmackDown" → "WWE SmackDown". A show named
+ * "… Night Live" keeps its name.
+ */
+function withoutWeekdayNight(text: string): string {
+  return text.replace(/^(\S+)\s+(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day\s+Night\s+(?!Live\b)(\S.*)$/i, '$1 $2');
+}
+
+function partsOf(raw: CrowdEvent): Parts {
+  const event = { ...raw, title: withoutWeekdayNight(raw.title), ...(raw.officialTitle ? { officialTitle: withoutWeekdayNight(raw.officialTitle) } : {}) };
   if (event.audience.domain === 'sports' && event.kind !== 'show' && event.kind !== 'festival') return gameParts(event);
   return showParts(event);
 }
@@ -779,6 +789,17 @@ export function fullTitle(event: CrowdEvent): string {
   if (p.type === 'game') return `${renderGame(p, 'full')}${labelSuffix(eventLabel(event), 'full')}`;
   if (p.type === 'show') return renderShow(p, 'full');
   return renderNamed(p, 'full');
+}
+
+/**
+ * The event page's header title (build 7.1, M33): the full title without its year, which the date line under it
+ * carries ("NBA All-Star Game", "Chiefs vs. Rams (Super Bowl)"). Share text and calendar exports keep the full form
+ * (build 5's three lengths).
+ */
+export function headerTitle(event: CrowdEvent): string {
+  return fullTitle(event)
+    .replace(/\s+(?:19|20)\d{2}(?=\)|$)/g, '')
+    .replace(/\s+\(\)$/, '');
 }
 
 // ---------- Chips ----------
