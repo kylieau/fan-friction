@@ -318,7 +318,7 @@ Stop at a clean break and say where you stopped.
 
 ### Continuation 5 (Oct 23, 2026): from Denver
 
-Status: delivery 5 is saved as `further-out-rooms-answer-5.md`. Next: Denver, San Diego, Tampa Bay, Columbus.
+Status: delivery 5 is saved as `further-out-rooms-answer-5.md`. Delivery 6 is saved as `further-out-rooms-answer-6.md` (Oct 23).
 
 ```
 Continue the Further out research from Denver, in the brief's order: Denver, San Diego, Tampa Bay, Columbus. Deliver this as Delivery 6, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries. Keep everything Delivery 5 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), a reproducible hall-to-room route for every row, the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region names as location only.
@@ -391,6 +391,82 @@ Columbus. Rooms on file; largest setup on file:
 - KEMBA Live!; 5,200
 - Covelli Center, Ohio Theatre, Palace Theatre, Mershon Auditorium, KEMBA Live! Indoor Music Hall, Newport Music Hall, Buckeye Field, Branch Rickey Arena, Midland Theatre, Ohio State Ice Rink, Bill Davis Stadium, Ohio State Lacrosse Stadium; all under 5,000
 (Detroit, Cleveland, Indianapolis and Pittsburgh are covered cities; Delivery 5 already lists the Toledo rooms, so do not repeat them.)
+
+Stop at a clean break and say where you stopped.
+```
+
+### Continuation 6 (Oct 23, 2026): from Cleveland
+
+Status: delivery 6 (Denver, San Diego, Tampa Bay, Columbus) is saved as `further-out-rooms-answer-6.md`. Next: Cleveland, Nashville, Austin, Sacramento.
+
+```
+Continue the Further out research from Cleveland, in the brief's order: Cleveland, Nashville, Austin, Sacramento. Deliver this as Delivery 7, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries. Keep everything Delivery 6 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), one recommended capacity per row with its label, a decimal coordinate pair for every room, a reproducible hall-to-room route for every row, the hold markers you used (INNER-BOUNDARY, OUTER-BOUNDARY, CAPACITY, DATA, PROVISIONAL INSIDE), the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region names as location only.
+
+City halls (use these points, latitude first): Cleveland, City Hall, 601 Lakeside Avenue (41.5051, -81.6937); Nashville, Metro Courthouse, 1 Public Square (36.1674, -86.7783); Austin, City Hall, 301 West 2nd Street (30.2648, -97.7472); Sacramento, City Hall, 915 I Street (38.5823, -121.4933).
+
+The app already has these rooms. Do not list them again; any other room is yours to check by its own hall drive.
+
+Cleveland. Rooms on file; largest setup on file:
+- Huntington Bank Field; 67,431
+- Progressive Field; 33,530
+- Rocket Arena; 19,432
+- Wolstein Center; 13,610
+- Public Hall; 10,000
+- Classic Auto Group Park; 7,273
+- Blossom Music Center; 6,051
+- Already Further out: Summit Motorsports Park (Norwalk), Tom Benson Hall of Fame Stadium and Canton Memorial Civic Center (Canton), Paul Brown Tiger Stadium (Massillon), Jack Miller Stadium (Ashland)
+- Jacobs Pavilion at Nautica, KeyBank State Theatre, Woodling Gymnasium, Public Auditorium (Music Hall), Connor Palace, Agora Theatre, Severance Music Center (Mandel Concert Hall), Krenzler Field, House of Blues Cleveland, Ohio Theatre, ForeFront Field; all under 5,000
+(Detroit, Columbus and Pittsburgh are covered cities; Delivery 5 already lists the Toledo rooms, and Delivery 6 the Canton, Massillon, Ashland and Findlay rooms. Akron, Kent and Youngstown are yours to check by their drives.)
+
+Nashville. Rooms on file; largest setup on file:
+- Nissan Stadium; 71,000
+- FirstBank Stadium; 40,350
+- GEODIS Park; 30,000
+- Johnny "Red" Floyd Stadium; 27,303
+- Nashville Superspeedway; 25,000
+- Bridgestone Arena; 20,000
+- Memorial Gymnasium; 14,316
+- Murphy Center; 11,802
+- Gentry Center; 10,500
+- Nashville Municipal Auditorium; 9,700
+- First Horizon Park; 8,500
+- FirstBank Amphitheater; 7,500
+- Ascend Amphitheater; 6,800
+- Curb Event Center; 5,500
+- Allen Arena; 5,028
+- The Pinnacle, The Truth, Grand Ole Opry House, Hawkins Field, Reese Smith Jr. Field, Kean Hall, Andrew Jackson Hall, Ryman Auditorium, Laura Turner Concert Hall, War Memorial Auditorium, Marathon Music Works, Lipscomb Soccer Complex, Brooklyn Bowl Nashville, James K. Polk Theater, Nashville Fairgrounds Speedway; all under 5,000
+
+Austin. Rooms on file; largest setup on file:
+- Darrell K Royal-Texas Memorial Stadium; 100,119
+- UFCU Stadium (San Marcos; also counts for San Antonio); 28,388
+- Q2 Stadium; 20,738
+- Mike A. Myers Stadium; 20,000
+- Moody Center; 16,223
+- Germania Insurance Amphitheater; 14,000
+- Dell Diamond; 11,631
+- Strahan Arena (San Marcos); 10,000
+- H-E-B Center at Cedar Park; 8,700
+- Travis County Exposition Center; 8,400
+- UFCU Disch-Falk Field; 7,211
+- House Park; 6,500
+- Moody Amphitheater at Waterloo Park; 5,000
+- Gregory Gym, Bass Concert Hall, ACL Live at the Moody Theater, Irvine-Rasmussen Ballpark, Michael & Susan Dell Hall, Stubb's Waller Creek Amphitheater, Emo's, Red and Charline McCombs Field, Bobcat Soccer Complex, Bobcat Softball Stadium; all under 5,000
+(San Antonio, Houston and Dallas–Fort Worth are covered cities; Delivery 6's predecessors already list the Waco, College Station and Bryan rooms, so do not repeat them.)
+
+Sacramento. Rooms on file; largest setup on file:
+- Charles C. Hughes Stadium; 25,000
+- Hornet Stadium; 21,195
+- Golden 1 Center; 19,000
+- Toyota Amphitheatre; 18,500
+- Heart Health Park; 14,000
+- Sutter Health Park; 13,416
+- Adventist Health Arena (Stockton); 11,300
+- UC Davis Health Stadium; 10,743
+- Alex G. Spanos Center (Stockton); 6,150
+- University Credit Union Center; 6,003
+- Stockton 99 Speedway; 6,000
+- The Venue at Thunder Valley, All American Speedway, Memorial Auditorium, Dobbins Stadium, Hornet Pavilion, Hard Rock Live, SAFE Credit Union Performing Arts Center, Hornet Field, The Nest, Ace of Spades, Quarry Park Amphitheater, Aggie Soccer Field, Dan Russell Rodeo Arena; all under 5,000
+(The Bay Area is a covered city, measured from the San Francisco, Oakland and San Jose city halls; its Napa, Sonoma and Marin rooms are on file. Stockton's Banner Island Ballpark is also on file for Sacramento.)
 
 Stop at a clean break and say where you stopped.
 ```
