@@ -19,8 +19,12 @@ const dryRun = process.argv.includes('--dry-run');
 /** The feeds that keep listing a game after its day (with its result), so the pass can tell a dropped game from a past one. */
 const GAME_FEEDS = ['mlb', 'espn', 'hockeytech', 'sidearm'];
 const GAME_FEED_BACK_DAYS = 7;
-/** Snapshot captures from this day on carry their keys in `data` (build 7.1, M16, forward only). */
-const M16_KEYS_FROM = '2026-10-24';
+/**
+ * Snapshot captures from this day on carry their keys in `data` (build 7.1, M16). The fix shipped forward-only on
+ * Oct 24, 2026; the same day Kylie opened it to every capture ("I want whatever is truer"), so every day since each
+ * city's archive began shows the verdict saved at the time. Nothing is recomputed.
+ */
+const M16_KEYS_FROM = '2026-10-01';
 
 // The client and the key check live in scripts/fan-rows.mjs since Oct 22, 2026 (the archive step reads fan rows too).
 const { db, reason } = serviceDb();
