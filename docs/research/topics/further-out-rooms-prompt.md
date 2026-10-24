@@ -551,3 +551,63 @@ New Orleans. Rooms on file; largest setup on file:
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 8 (Oct 23, 2026): from Salt Lake City
+
+Status: delivery 8 (Las Vegas, Kansas City, Indianapolis, New Orleans) is saved as `further-out-rooms-answer-8.md`. Next: Salt Lake City, Ottawa–Gatineau, Edmonton, San Antonio. Save the answer as `further-out-rooms-answer-9.md`.
+
+```
+Continue the Further out research from Salt Lake City, in the brief's order: Salt Lake City, Ottawa–Gatineau, Edmonton, San Antonio. Deliver this as Delivery 9, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries. Keep everything Delivery 8 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), one recommended capacity per row with its label, a decimal coordinate pair for every room, a reproducible hall-to-room route for every row, the hold markers you used (INNER-BOUNDARY, OUTER-BOUNDARY, CAPACITY, DATA, PROVISIONAL INSIDE), the alias check against the on-file list before calling a room new, the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region names as location only. For the two Canadian cities, give capacities as published (no unit change needed) and drives in minutes as before; a crossing to the United States is not expected for these two.
+
+City halls (use these points, latitude first): Salt Lake City, City and County Building, 451 South State Street (40.7595, -111.8868); Ottawa–Gatineau has two halls, and a room is inside when it is within the hour of either: Ottawa City Hall, 110 Laurier Avenue West (45.4208, -75.6903), and Gatineau, Maison du citoyen, 25 rue Laurier (45.4280, -75.7120); Edmonton, City Hall, 1 Sir Winston Churchill Square (53.5455, -113.4902); San Antonio, City Hall, 100 Military Plaza (29.4246, -98.4951).
+
+The app already has these rooms. Do not list them again; any other room is yours to check by its own hall drive.
+
+Salt Lake City. Rooms on file; largest setup on file:
+- Rice-Eccles Stadium; 51,444
+- America First Field; 25,000
+- Conference Center; 21,000
+- Delta Center; 17,867
+- Jon M. Huntsman Center; 15,000
+- Smith's Ballpark; 14,511
+- Maverik Center; 12,000
+- Days of '47 Arena; 10,000
+- Utah First Credit Union Amphitheatre; 7,000
+- The Ballpark at America First Square; 6,500
+- Salt Lake Tabernacle, Abravanel Hall, George S. and Dolores Doré Eccles Theater, Kingsbury Hall, Capitol Theatre, Charlie Monfort Field at America First Ballpark; all under 5,000
+(No other covered city is within reach. Provo, Orem, Ogden, Logan, Park City, Heber and Tooele are yours to check by their drives.)
+
+Ottawa–Gatineau. Rooms on file; largest setup on file:
+- TD Place Stadium; 24,000
+- Canadian Tire Centre; 19,153
+- RCGT Park; 10,278
+- The Arena at TD Place; 8,585
+- Already Further out: Cornwall Civic Complex (Cornwall)
+- Slush Puppie Centre, TAAG Park, NAC Southam Hall, Hard Rock LIVE Ottawa, Ravens' Nest, Théâtre de l'Hôtel-Casino Lac-Leamy; all under 5,000
+(Montreal and Toronto are covered cities. Already on file for them: Montreal's own rooms, and as Further out the Trois-Rivières rooms (FestiVoix, Parc portuaire, Amphithéâtre Cogeco), Saint-Tite's Grandes Estrades, Autodrome Drummond, Autodrome Granby and Toronto's Peterborough Memorial Centre. Kingston, Brockville, Pembroke, Smiths Falls, Mont-Tremblant and the Montreal-side rooms past the Ottawa River are yours to check by their drives.)
+
+Edmonton. Rooms on file; largest setup on file:
+- Rogers Place; 20,030
+- RE/MAX Field; 9,200
+- RAD Torque Raceway; 8,500
+- Clarke Stadium; 5,000
+- The Brick Field at Commonwealth Stadium, Edmonton Convention Centre, Century Mile Racetrack and Casino, The Venue; no capacity on file
+- Flair Airlines Hangar, Foote Field, Clare Drake Arena, Northern Alberta Jubilee Auditorium, Saville Community Sports Centre, Servus Place, Silent Ice Center, Winspear Centre, Randy Rosen Rink, Midway Music Hall, Thompson Family Arena at Heavy Metal Place, Edmonton Downtown Community Arena; all under 5,000
+(No other covered city is within reach; Calgary is not a covered city, so its rooms count as Further out for Edmonton if they fall within about three hours. Red Deer, Camrose, Lloydminster, Calgary and the Calgary-area rooms are yours to check by their drives.)
+
+San Antonio. Rooms on file; largest setup on file:
+- Alamodome; 65,427
+- Frost Bank Center; 19,000
+- Toyota Field; 13,000
+- Freeman Coliseum; 11,700
+- Wolff Stadium; 9,200
+- Benson Stadium; 6,000
+- Cowboys Dancehall; 5,772
+- Whitewater Amphitheater; 5,600
+- R&J Music Pavilion; 5,000
+- Real Life Amphitheater, Retama Park; no capacity on file
+- Sunken Garden Theater, The Convo, Floore's Country Store, The Espee, Boeing Center at Tech Port, Laurie Auditorium, Lila Cockrell Theatre, Majestic Theatre, Tobin Center, Alice P. McDermott Convocation Center, Aztec Theatre; all under 5,000
+(Austin, Houston and Dallas–Fort Worth are covered cities. Already on file for them: Austin's own rooms, including San Marcos's UFCU Stadium (which also counts for San Antonio) and Strahan Arena; and as Further out the Waco rooms (McLane Stadium, Ferrell Center, Waco ISD Stadium, Extraco Coliseum, Foster Pavilion, Baylor Ballpark), the College Station and Bryan rooms (Kyle Field, Reed Arena, Olsen Field, Tiger Stadium, Merrill Green Stadium), Brenham's Cub Stadium, and the Bell County and Hill Country rooms from Delivery 7 (Wildcat Stadium, Bulldawg Stadium, Crusader Stadium, Cadence Bank Center, Leo Buckley Stadium, Mustang Stadium). New Braunfels, Seguin, Kerrville, Fredericksburg, Victoria, Corpus Christi, Laredo and Del Rio are yours to check by their drives.)
+
+Stop at a clean break and say where you stopped.
+```
