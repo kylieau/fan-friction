@@ -4,7 +4,11 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
 import { AccountBlock } from '../components/AccountBlock';
 import { StubRow } from '../components/StubRows';
-import { FavoriteBadge, favoriteName } from '../components/FavoriteBadge';
+import { favoriteName } from '../components/FavoriteBadge';
+import { TypeIcon } from '../components/TypeIcon';
+import { useArtistGenres } from '../components/useArtistGenres';
+import { favoriteTypeKey } from '../map/typeIcons';
+import { teamSportLabel, titleCaseLabel } from '../lib/eventTitle';
 import { CalendarIcon, ChevronDown, GlobeIcon, HomeIcon, ListIcon, LockMark, PeopleIcon, StarIcon } from '../components/Icons';
 import {
   entriesInYear,
@@ -25,6 +29,7 @@ import {
   yearsOf,
   yearStatPool,
   yourEntries,
+  TEAMS,
   type Favorite,
 } from '../data';
 import { favPath } from './FavoritesScreen';
@@ -241,29 +246,61 @@ export function YouScreen() {
             </button>
           </div>
         ) : (
-          <FavesStrip faves={faves} seen={seen} />
+          <FavesStrip faves={faves} />
         )}
       </section>
     </div>
   );
 }
 
-function FavesStrip({ faves, seen }: { faves: Favorite[]; seen: ReadonlyMap<string, number> }) {
+/** How many Faves the tiles show before "See all N ›" (M26, e3: the top six). */
+const FAVE_TILES = 6;
+
+/**
+ * The Faves tiles (build 7.1, M26, e3; Kylie, Oct 23, 2026): a white card like the Stubs card holding light #D6E8FA
+ * tiles with a 1px #005A9C border, 60pt tall, two across with 6pt gaps; each tile the type icon and the name, then the
+ * sport (or genre, or kind) on one line each, cut with "…". Most seen first, the top six, then "See all N ›" to the
+ * Teams & Artists page. No "Seen N" line (the builder's call: the same rule as the Edit Favorites sheet, M19).
+ */
+function FavesStrip({ faves }: { faves: Favorite[] }) {
+  const genres = useArtistGenres(faves);
+  const shown = faves.slice(0, FAVE_TILES);
   return (
-    <ul className="faves-strip" aria-label="Faves">
-      {faves.map((fav) => {
-        const n = seen.get(favoriteKey(fav)) ?? 0;
-        return (
-          <li key={favoriteKey(fav)}>
-            <Link to={favPath(fav)} className="faves-strip-item" aria-label={`${favoriteName(fav)}, seen ${n}`}>
-              <FavoriteBadge fav={fav} shown={faves} size="big" />
-              <span className="faves-strip-name">{favoriteDisplayName(fav)}</span>
-              <span className="faves-strip-seen">Seen {n}</span>
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <div className="card faves-card">
+      <ul className="faves-tiles" aria-label="Faves">
+        {shown.map((fav) => {
+          const { name, sub } = tileWords(fav, genres.get(favoriteKey(fav)));
+          return (
+            <li key={favoriteKey(fav)}>
+              <Link to={favPath(fav)} className="faves-tile" aria-label={favoriteName(fav)}>
+                <span className="faves-tile-name">
+                  <TypeIcon typeKey={favoriteTypeKey(fav)} size={14} className="faves-tile-icon" />
+                  <span className="faves-tile-text">{name}</span>
+                </span>
+                <span className="faves-tile-sub">{sub}</span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      {faves.length > FAVE_TILES && (
+        <Link to="/you/settings?page=faves" className="heading-link faves-see-all">
+          See all {faves.length} ›
+        </Link>
+      )}
+    </div>
   );
+}
+
+/** A tile's two lines: a school program reads "UCLA" over "Men's Basketball", a pro team "LA Dodgers" over "Baseball". */
+function tileWords(fav: Favorite, genre?: string): { name: string; sub: string } {
+  const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+  if (team) {
+    const label = teamSportLabel(team);
+    const long = favoriteDisplayName(fav);
+    if (label && long.endsWith(` ${label.words}`)) return { name: long.slice(0, -label.words.length - 1), sub: label.words };
+    return { name: long, sub: label?.words ?? titleCaseLabel(team.sport) };
+  }
+  return { name: favoriteDisplayName(fav), sub: fav.kind === 'artist' ? genre || 'Artist' : fav.kind === 'venue' ? 'Venue' : 'Festival' };
 }
 

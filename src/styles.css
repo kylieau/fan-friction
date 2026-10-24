@@ -5826,18 +5826,26 @@ ul.fav-strip {
 }
 
 /* Section headings are the links on Home (build notes 2, Home section links). */
+/* A heading with its link (build 7.1, M25; mock you/07-headers-fix-closeup): the link at the right of the heading's
+   line, 14px, regular weight, accent blue, 44pt tall. One rule for every heading link: You (Your Year ›, See all ›,
+   Edit ›), Home's headings, Your Year's Top 3 cards. (Recap's standalone link and the season card's keep their weight.) */
 .heading-link-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   min-height: 44px;
   margin: 0;
 }
 
 .heading-link {
   display: inline-flex;
+  flex: none;
   align-items: center;
   min-height: 44px;
-  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--action);
   text-decoration: none;
 }
 
@@ -12489,4 +12497,111 @@ a.follow-lead::after {
 .summary-pill:first-child {
   flex: none;
   max-width: 50%;
+}
+.season-card-link {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* The Faves tiles (build 7.1, M26, e3 with the decided 1px #005A9C border): a white card like the Stubs card, light
+   #D6E8FA tiles 60pt tall, two across with 6pt gaps, each line cut with "…". */
+.faves-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+.faves-tiles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+.faves-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  min-height: 60px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #d6e8fa;
+  box-shadow: inset 0 0 0 1px #005a9c;
+  color: var(--ink);
+  text-decoration: none;
+}
+.faves-tile-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.faves-tile-icon {
+  flex: none;
+  color: var(--action);
+}
+.faves-tile-text,
+.faves-tile-sub {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.faves-tile-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}
+.faves-see-all {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* The Edit Favorites sheet (build 7.1, item 2; mock 64 without seen counts): Your Faves grouped with a count, a grey
+   outline minus on each row, Suggested with Follow, Browse by League collapsed. The outline minus is shared with the
+   Favorite Cities page (M31): 28px drawn, a 44px tap area. */
+.pick-faves-head {
+  margin: 4px 0 -4px;
+}
+.pick-group-head {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink2);
+}
+.pick-list {
+  padding: 0;
+  overflow: hidden;
+}
+.pick-list .fav-li {
+  padding-right: 12px;
+}
+.pick-browse-toggle {
+  border-radius: 14px;
+}
+.outline-remove {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1.5px solid var(--ink2);
+  border-radius: 50%;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink2);
+}
+.outline-remove::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
 }
