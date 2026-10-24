@@ -314,3 +314,7 @@ Each entry: the decision, why, and what was rejected. Provenance per line: "Kyli
 
 ## Build 7, Oct 22, 2026
 Kylie's build 7 locks (tab bar and the center "+", the Log an event sheet, Upcoming and Activity, cost, You and its pages, Profile & Settings, team naming) are in `docs/build-7/build-notes-7.md` §6. What shipped, the judgment calls she can reverse, and what was deferred are in `docs/build-7/gap-report-7.md`.
+
+## Build 7.1, Oct 24, 2026
+- **Saved verdicts are filed for every archived day** (Kylie, Oct 24, 2026: "I want whatever is truer"). The M16 fix shipped forward-only that morning, as the build notes had locked it; the same day she opened it to every capture since each city's archive began, so a settled day shows the verdict saved at the time, never a recomputed one. Nothing is recomputed. (`M16_KEYS_FROM` in `scripts/catalog-write.mjs`.)
+- **A school feed that names no side shows the sport alone** (Kylie, Oct 24, 2026: "keep"). "Volleyball" on the label line, code VB, when the feed says only "Volleyball"; the side is never guessed. Gendered programs keep "Men's / Women's …" (M38).

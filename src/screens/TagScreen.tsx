@@ -159,8 +159,8 @@ export function TagScreen() {
       {total === 0 && menu === 'closed' && <p className="you-fine">No stubs carry this tag.</p>}
 
       {ahead.length > 0 && (
-        <section className="you-block stubs-list" aria-label="Coming up">
-          <ListBand as="h2" label="Coming up" />
+        <section className="you-block stubs-list" aria-label="Coming Up">
+          <ListBand as="h2" label="Coming Up" />
           <ul className="log-list">
             {ahead.map((plan) => (
               <li key={plan.id}>

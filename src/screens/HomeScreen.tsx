@@ -177,7 +177,7 @@ export function HomeScreen() {
             <span className="mini-map-overlay">
               <ReadTile rating={rating} empty={day.empty} />
               <span className="mini-map-text">
-                <span className="mini-map-label">Today's verdict</span>
+                <span className="mini-map-label">Today's Verdict</span>
                 <span className="mini-map-title">
                   {shortLocalDate(today)} · {tonight.length} {tonight.length === 1 ? 'event' : 'events'}
                 </span>
@@ -220,7 +220,7 @@ export function HomeScreen() {
         <section className="you-block" aria-labelledby="coming-heading">
           <h2 id="coming-heading" className="you-heading heading-link-row">
             <Link to="/upcoming" className="heading-link">
-              Your next event ›
+              Your Next Event ›
             </Link>
           </h2>
           <ul className="log-list">
@@ -271,7 +271,7 @@ export function HomeScreen() {
         <section className="you-block" aria-labelledby="favorites-heading">
           <h2 id="favorites-heading" className="you-heading heading-link-row">
             <Link to="/upcoming" className="heading-link">
-              Favorites this week ›
+              Favorites This Week ›
             </Link>
           </h2>
           {/* A sideways row; the last chip is cut so the scroll is obvious (6.4). */}
