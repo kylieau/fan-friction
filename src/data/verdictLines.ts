@@ -38,13 +38,17 @@ export function liveItems(events: readonly CrowdEvent[]): VerdictItem[] {
   return events.map((event) => ({ event, start: event.start, draw: drawSize(event) ?? null, source: event.sourceId ?? null }));
 }
 
+/** The feed an event id names ("2026-10-21-espn-lakers-4019…" → espn), in the catalog's own source names. */
+const ID_TAGS: Record<string, string> = { espn: 'espn', tm: 'ticketmaster', mlb: 'mlb', sa: 'sidearm', ht: 'hockeytech', jb: 'jambase', sg: 'seatgeek' };
+
 /** A saved night's rows as verdict items, each matched to the catalog's event by id when it still exists. */
 export function savedItems(rows: readonly ArchiveForecastRow[], events: readonly CrowdEvent[]): VerdictItem[] {
   const byId = new Map(events.map((e) => [e.id, e]));
   return rows.map((row) => {
     const event = byId.get(row.eventId);
-    // An id reads "{date}-{feed}-…" ("2026-10-21-espn-lakers-4019…"), so the feed survives even when the event has gone.
-    const source = event?.sourceId ?? row.eventId.slice(11).split('-')[0] ?? null;
+    // The feed survives even when the event has gone, read from the id; a seed's own words there name no feed.
+    const tag = /^\d{4}-\d{2}-\d{2}-/.test(row.eventId) ? row.eventId.slice(11).split('-')[0] : '';
+    const source = event?.sourceId ?? ID_TAGS[tag] ?? null;
     return { event, start: row.start ?? event?.start ?? null, draw: row.draw?.count ?? (event ? (drawSize(event) ?? null) : null), source };
   });
 }

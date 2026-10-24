@@ -21,6 +21,13 @@ import {
   yourEntries,
 } from '../data';
 import { ChevronDown } from '../components/Icons';
+import { liveItems, verdictLines } from '../data';
+
+/** The share line's words for a day: the same "Biggest draw" headline the date page shows (build 7.1, M6). */
+function headlineOf(day: CityDate): string {
+  if (!day.rating) return '';
+  return verdictLines(liveItems(day.events), METROS[day.metroId]?.name ?? day.metroId).headline;
+}
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { listTitle } from '../lib/eventTitle';
@@ -226,7 +233,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
       <ShareCard
         dateLabel={`${shortLocalDate(A.key.date)} vs ${shortLocalDate(B.key.date)}`}
         title={`${A.day.rating ? scoreLabel(A.day.rating.rating) : 'No verdict'} vs ${B.day.rating ? scoreLabel(B.day.rating.rating) : 'No verdict'}`}
-        line={`${A.day.rating?.headline ?? ''} · ${B.day.rating?.headline ?? ''}`}
+        line={`${headlineOf(A.day)} · ${headlineOf(B.day)}`}
         rating={null}
         crowd={null}
         buttonLabel="Share these events"

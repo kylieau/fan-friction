@@ -293,7 +293,7 @@ export function DateScreen() {
 
       {/* The day's weather (M3, Flow X): a slim strip that opens into the card, between the verdict and the lineup.
           Keyed by the date so it is collapsed on every visit. */}
-      <DayWeather key={`${metro.id}|${date}`} metroId={metro.id} date={date} peaks={peaks} before={weatherBefore} isToday={date === today} />
+      <DayWeather key={`${metro.id}|${date}`} metroId={metro.id} date={date} peaks={peaks} events={events} before={weatherBefore} isToday={date === today} />
 
       {/* Order since build 7.1 (M1, Kylie, Oct 23, 2026): the verdict, then the lineup (people open a day to see what's
           on), then Local Competition, then Further Out; the Attended card sits at the bottom (M7). */}

@@ -91,6 +91,8 @@ function foldNotes(log: PersonalLog): PersonalLog {
 }
 
 let snapshot: PersonalLog = foldNotes(readSavedLog());
+// The unit rule learns the saved choice on a cold open too, before any listener exists (build 7.1, M40).
+applyTemperatureUnit(snapshot.temperatureUnit ?? null);
 let saveWarning: string | null = null;
 const listeners = new Set<() => void>();
 

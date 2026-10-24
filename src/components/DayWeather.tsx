@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { METROS, degreesFor } from '../config/metros';
-import { cityForecastRange, cityHourly, sunsetLabel, weatherGlyph, VENUES, venueNameOn, type OutdoorPeak } from '../data';
+import { cityForecastRange, cityHourly, sunsetLabel, weatherGlyph, VENUES, venueNameOn, type CrowdEvent, type OutdoorPeak } from '../data';
+import { DayOccasionTag } from './EventTags';
 import { clockTime, weekdayLong } from '../lib/dates';
 import { listTitle, splitTitleLabel } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
@@ -16,7 +17,7 @@ import { WeatherIcon } from './WeatherIcon';
  * one ink for every temperature. Weather is out of Local Competition. The city's sun and moon stay in color (Kylie:
  * they are the city's sky, not a temperature). Every degree follows the Temperature Units rule (M40).
  */
-export function DayWeather({ metroId, date, peaks, before, isToday }: { metroId: string; date: string; peaks: readonly OutdoorPeak[]; before?: Date; isToday: boolean }) {
+export function DayWeather({ metroId, date, peaks, events, before, isToday }: { metroId: string; date: string; peaks: readonly OutdoorPeak[]; /** Every event that day, for the MAJOR tag beside a venue row's temp. */ events: readonly CrowdEvent[]; before?: Date; isToday: boolean }) {
   const [open, setOpen] = useState(false);
   const metro = METROS[metroId];
   const city = metro?.name ?? metroId;
@@ -140,6 +141,7 @@ export function DayWeather({ metroId, date, peaks, before, isToday }: { metroId:
                       {p.event.start ? ` · ${clockTime(p.event.start)}` : ''}
                     </span>
                   </span>
+                  <DayOccasionTag event={p.event} day={events} />
                   <span className="day-weather-venue-temp">
                     <WeatherIcon kind={p.sky} />
                     <strong>{deg(p.peakF)}</strong>
