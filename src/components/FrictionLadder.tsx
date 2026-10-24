@@ -51,7 +51,7 @@ export function FrictionLadder({ entries, ratings, year }: { entries: Entry[]; r
   return (
     <section className="your-year" aria-label="Your Year">
       <div className="your-year-head">
-        <h2 className="you-heading">{year ? 'Your reads' : scope === 'year' ? thisYear : 'All time'}</h2>
+        <h2 className="you-heading">{year ? 'Your Reads' : scope === 'year' ? thisYear : 'All Time'}</h2>
         {!year && (
         <div className="segmented small" role="tablist" aria-label="Span">
           <button type="button" role="tab" aria-selected={scope === 'year'} onClick={() => setScope('year')}>

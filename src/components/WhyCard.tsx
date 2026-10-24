@@ -48,7 +48,7 @@ export function WhyCard({
           <ReadTile rating={rating} size="big" empty={empty} />
           <div className="why-head-text">
             <h2 id="why-title" className="why-title">
-              {rating === null ? 'Why nothing today' : `Why ${formatScore(rating)} today`}
+              {rating === null ? 'Why Nothing Today' : `Why ${formatScore(rating)} Today`}
             </h2>
             <span className="why-sub">
               {/* The crowd icon beside the crowd total (build notes 3, D09). */}

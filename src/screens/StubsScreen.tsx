@@ -501,7 +501,7 @@ function StubCalendar({ entries, ratings, today }: { entries: Entry[]; ratings: 
       )}
       {rough.length > 0 && (
         <section aria-label="No exact date">
-          <h3 className="log-sheet-band">No exact date</h3>
+          <h3 className="log-sheet-band">No Exact Date</h3>
           <ul className="log-list card">
             {[...rough].reverse().map((entry) => (
               <li key={entry.id}>

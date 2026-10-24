@@ -14,7 +14,8 @@
 | 4. Copy sweep: M2, M8, 14b, AGENTS.md | done, pushed | _(the two commits after `cb6b3be8`)_ | headings, sheet titles, Settings rows, event labels, sport and level phrases in Title Case; ten Oxford commas plus one dynamic list; stubs retitle once more |
 | 5. Day page: M40 groundwork, M1 + M7, M5 + M6, M3 | done, pushed | `17ef139f`, `e00f2de7`, `532f8dc8`, `5dfbe333`, follow-up `5defbcac` |
 | 6. Explore: M27, M28, M34, M36, M37; M29 | done | `093bca8a`, `8f9a2f62` | sticky band, pill and calendar measured |
-| 7. Weeks start on Sunday | done | _(next)_ | week math checked at month, year and DST edges | strip, card and row markers measured; the saved-night lines checked headless from the archive |
+| 7. Weeks start on Sunday | done, pushed | `53478d64` | week math checked at month, year and DST edges |
+| Codex stage 2 | done | _(next)_ | fourteen findings, thirteen accepted (one in part), one not fixable from the data | strip, card and row markers measured; the saved-night lines checked headless from the archive |
 | Codex stage 1 | done, pushed | `6ae4e5c5`, docs `3773857d` | seven findings, six accepted in full, one in part (see "Codex findings"); plus the advisor's named-game drop-order guard; `npm run build` and the titles check pass. **Session stopped here for Kylie's look.** |
 
 ## Freeze for steps 2–3 (written before the first edit)
@@ -95,6 +96,11 @@ None yet.
 - **M29:** the week calendar's Cooked tiles are ink with a gold number (today's Cooked keeps the ring); past days keep their verdict colour faded per the 29-d board (fill at 55% with the card, full-ink number; past Brutal takes an ink number; past Cooked fades to 75% ink); the legend row under the grid shows each verdict's full and faded swatch with its word and the caption "Each pair: Today and Ahead · Past"; `--cal-row` is 44px; the Your Year word pills take the five tile colours with the read boxes' 1px #76869b ring (CSS only: `FrictionLadder` already emits `word-pill chill|mild|…`); the zero state stays Open and unbuilt. §9's small items: the Brutal number uses `var(--card)`, and the dead `.chip-friction` / `.tag-friction` rules are deleted (no TSX used them).
 - **Step 7 (its own commit):** `mondayOf` → `weekStartOf` (the Sunday on or before a date), `weekOf(weekStart)`, `getListWeek(metroId, weekStart)`, `WEEKDAYS` S M T W T F S, and every `mondays` name in the Explore List and the calendar → `weekStarts`. The Calendar tab and Your Stubs were already Sunday-first. product-decisions.md records the lock and the colour scheme under Build 7.1.
 
+### Step 8 freeze (written before the first edit, Oct 24; build waits on Codex stage 2)
+- In scope: M22 (Upcoming future-only; friends' upcoming plans as "Friends · {name} Attending" rows; the Today divider stays), M24 (Activity a plain newest-first list, backward only, with the 60-day footer), M23 (no verdict pill where nobody attended: Activity, Your Stubs, the event page's stub lines), item 1 (friends' Interested plans in Upcoming and on their profile), item 3 (the plans band's empty line always shows, "No upcoming plans. Mark events Attending, Watching, or Interested.", the Add a Fave prompt below it), item 5 (You's "Upcoming · 2 plans · 1 interested" count line), item 10 (the helper until 3 plans, the light YOUR PLANS band, the sticky YOUR FAVES band, start times on plan rows), item 11 (the plan row lead "Attending · UCLA FB" when the plan's event is a favorite's by id), item 16 (the 240pt plans window: inner scroll, fades, indicator, count, slim month labels, a swipe outside moves the page, YOUR FAVES pins once the box is gone, option A's 13pt plan mark on repeated faves rows, the 22pt Today divider). Shots: `shots/7-1-more/upcoming-past-above-today.png`, `activity-watched-verdicts.png`, `activity-empty-today.png`, `06-upcoming-no-plans.png`, `02b-upcoming-after-settle.png`, `03-upcoming-helper-gone.png`, `17-you.png`. Mocks: `mockups/7-1-more/22-24-c.png`, `22-24-d.png`, `23-b.png`, `mockups/season-tickets/33-swipe-outside-box-primary-path.png`, `29-plans-window-3-5-rows-board.png`, `28-plans-window-few-plans.png`, `30-faves-sticky-end-state.png`, `32-faves-overlap-closeup.png`, `34-touch-zones-closeup.png`.
+- Decisions touched: build-notes-7 :227, :268, :298 (past results above Today; Activity opens on Today; both reversed by M22 / M24), product-decisions.md:257 and :268 (timelines open the Explore List's way; superseded for Upcoming and Activity), build2-judgment-call-decisions.md:65 ("Watched never counts", applied by M23), the Oct 11 rule that Interested never reaches the feed (item 1 reverses it for Upcoming and profiles; Activity still never shows it).
+- Must not change: each friend's plan privacy level (Upcoming reads exactly what `followingFeedWithStatus` already returns, nothing more); nothing a friend planned is lost (every planning line Activity carried moves to Upcoming); Your Stubs' own order and filters; the Explore List; the event page's layout (M33 is step 12); the "Season" tag and seat on plan rows (season tickets are step 10; the builder's call waits for them).
+
 ### M20. No venue in a favorite's title at a neutral site
 - `teamRelativeTitle` reads "vs. {opponent}" at a neutral site with no venue tail; the row's facts line already names the place (team page: "Tue, Oct 13 · T-Mobile Arena").
 
@@ -117,7 +123,7 @@ None yet.
 | M2 | (the week band) | "This Week's Lineup · 132 Events" | the count word follows the band's case; M27 removes the band in step 6 | yes |
 | M3 | the card draws a one-line sky summary ("Mostly sunny, with a passing shower…") | no summary sentence | the app stores no text forecast, and inventing one would be a guess | no (needs a new data source) |
 | M3 | Sunset tile | shipped, derived from the city's point (the sunrise equation already in `formula/sun.ts`) | one derivation away, no new data | yes |
-| M3 | "If the end time is unknown, use the start time plus 3 hours" | the window runs start through start plus the formula's running time (3 hours for a show, the sport's length for a game) | one definition of an event's end for the day page and the event page | yes |
+| M3 | "If the end time is unknown, use the start time plus 3 hours" | as decided: every window is the start plus three hours (no listing carries an end), hours inside the window only, into the next date past midnight | first shipped with the sport's running time; Codex stage 2 held it to the Locked text | n/a |
 | M3 | hourly view "3p 5p 7p 8p 9p 11p" | from the first outdoor event's hour (or 3 pm) to 11 pm, every other hour when more than seven | the mock's hours were example data; a fixed pick would hide a 9 am game's hours | yes |
 | M3 | Outdoor Venues rows 44.25pt | 44pt minimum, two text lines | the measured rows settle at 44 with the tightened padding | yes |
 | M6 | "7 to 10 pm", "3 sources" (06-c) | "7 to 11 pm", "2 sources" for the real Oct 21 set | computed from the saved rows (the Lakers run to 9:30, My Chemical Romance to 11); the feeds that listed events that night were two | n/a (data) |
@@ -171,6 +177,23 @@ After-shots are in `docs/build-7-1/shots/after/` (the signed-out test browser at
 
 Found fine: the archive rewrite (titles and audiences only, forecasts byte-identical), the nightly repair's pagination, floor and error handling, the M16 keys against every reader, the away-row direction ("at UCLA" stores "UCLA vs. Cal Baptist", renders "Cal Baptist at UCLA"), high-school and twin-club labels, concert parentheses, M20, M32, the workflow key scope, no verdict-facing "Estimated" left, no privacy leak, route or type error.
 
+**Stage 2** (steps 4–7, the diff `cb6b3be8..53478d64`, Oct 24 about 7:20–7:35 AM Pacific; read-only; it type-checked and ran the title and storage checks in memory). Fourteen findings:
+1. **Saved counts inflate after overlapping cache loads** (`cachedSnapshotsOn` returned a row once per window that loaded it; medium). **Accepted:** one copy per capture and event.
+2. **Further Out rows entered the saved set** (30 events for Oct 23 where 28 were the day's; medium). **Accepted:** the day's Further Out ids are left out of the saved set (`verdictLinesForDay`).
+3. **Frozen explanations took today's facts** (a saved row with no start or draw borrowed the catalog's; medium). **Accepted:** saved facts stay frozen; the catalog's event supplies its name and eligibility only.
+4. **"Big crowds" bypassed the eligibility rule** (`drawSize` instead of the small-room and small-draw caps; medium). **Accepted:** rivals use `eventFeedsFriction` when the event is known, the raw floor only for a row whose event has gone.
+5. **Compare's share line ignored saved captures** (medium). **Accepted:** `verdictLinesForDay` picks the saved set on a settled night for the date page and Compare alike.
+6. **Weather peaks read hours outside the window and never after midnight** (medium). **Accepted:** hours inside [start, end) only, read into the next date when the window crosses midnight.
+7. **Festival overlap differed from the formula** (3 hours vs. the formula's 8; medium). **Accepted:** the verdict lines use the formula's own `durationOf`.
+8. **Some temperatures ignored M40** (the event page's "92° feels-like" why line; medium). **Accepted:** `degreesFor`.
+9. **M2 sweep misses** (sixteen lines; low). **Accepted** for the headings among them: "Your Reads", "All Time", "Why 6.3 Today", "Next at Home", "Near Home", "Tour Dates · Elsewhere", "Coming Up", "Default for New Stubs", "Past Stubs", "Change Past Stubs" (a sheet title), "The Evening" / "The Day", "About This Estimate" / "How Estimates Work", "No Exact Date", "Fighting Today", "Pick Your Favorites". **Rejected** for "Add to calendar" (a button, sentence case by the rule).
+10. **Older saved stage labels kept sentence case** ("(First round)", "(AHL playoffs)"; low). **Accepted:** stage labels read back through `titleCaseLabel`, which now keeps capitals and digits as they are (NLCS, G3, 2027).
+11. **One Oxford comma missed** (the privacy screen's helper; low). **Accepted.**
+12. **Hour thinning dropped the final hour** (low). **Accepted:** the last stored hour is always kept.
+13. **M3's unknown-end fallback** (the sport's running time instead of the Locked "start plus three hours"; medium). **Accepted:** every window is the start plus three hours, since no listing carries an end; the builder's call is withdrawn and the table row replaced.
+14. **The card's summary sentence is absent** (low). **Not fixable from the data** (no text forecast is stored); it stays in the table and goes to Kylie as a question.
+Found fine: the Sunday week math across month, year and leap edges and under four process time zones; every verdict colour and the past-tile contrast (5.24:1 to 15.86:1); the sticky band's scroll ancestor and the pill's 30px / 44px / 48px; the forecast-only filter, the `before` cutoff, the indoor and missing-venue cases, the strip's one-figure wording, the remount keys; the Oct 21 saved lines; the unit storage and merge; the version-gated retitle; no privacy leak, route or type error.
+
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
@@ -199,6 +222,7 @@ _(filled as the build goes)_
 
 ## Questions for Kylie
 1. **M16, pre-fix verdicts.** _Answered (Kylie, Oct 24: "I want whatever is truer")._ Every archived day's saved verdict is filed at the Oct 25 nightly (`17c90928`); Oct 21 will read the saved 5.3 with no "Estimated" line.
+5. **M3's summary sentence.** The chosen card draws a one-line sky summary ("Mostly sunny, with a passing shower near the coast. Cools to the low 60s after 8 pm."). The app stores no text forecast, and writing one from the numbers would be a guess, so the card has none. OK to leave it out, or should a short rule-based line be drafted for you to approve?
 4. **M6 and the stored wording.** The date page and Compare's share line now read "Biggest draw: …"; the formula's own `why` sentence ("Warriors at Lakers pulls on four other crowds.") is still what the nightly saves into each snapshot row and what the archive scan prints. Nothing on screen shows it any more. Should the nightly's wording change to match (a data change going forward, old rows unchanged), or stay as the formula's own words? Lean: leave it; it is a record, not a screen.
 3. **M2 and Compare's title.** Compare's page title reads "Side by side" and its heading "Your nights, side by side." is your Oct 5 wording (a lock, and a sentence). Title Case would make it "Side by Side". Left as is; say the word and it changes. The sign-in card's "Keep your log safe" and the empty-state card titles ("No Faves yet", "No stubbed events") were read as sentences, not headings, and left in sentence case.
 2. **M38, a feed that names no side.** _Answered (Kylie, Oct 24: "keep")._ 357 stored school rows say only "Volleyball" (or "Soccer", "Basketball"); they read with the sport alone on the label line. Recorded in product-decisions.md.
@@ -210,7 +234,7 @@ _(filled as the build goes)_
 - M9: the backfill runs in three places (read, nightly write-back, the repo's archive files) because the app reads past days from the table, not the files.
 - M3, pre-app days: no strip and no row markers when only the reanalysis archive has weather (it is labeled estimated by the Oct 5 rule, and the strip would be the one place the word showed).
 - M3, the day header's high and low: unchanged, and it follows the Temperature Units rule like every other degree.
-- M3, the event window: start through the formula's running time (the app's one definition of an end), not a flat three hours for games.
+- M3, the event window: the start plus three hours for every event (the Locked rule for an unknown end; withdrawn builder's call after Codex stage 2).
 - M5, the no-saved sentence: "It weighs each event's expected crowd against the others that overlap it, plus outdoor weather."
 
 ## Season games beyond the catalog window

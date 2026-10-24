@@ -540,7 +540,7 @@ export { EVENT_TYPES, competitionOf, entryType, eventType, genreCasing, typeDef,
 export { wallClockToUtc } from './read';
 export { popupDraw, popupExplainer, type PopupFacts } from './sources/popupSizing';
 export { eventFromGame, eventFromStub, gameEventId, gameRefFromId, gameVenueName, isGameEventId, isOutsideGamePlan, sameGame, stubShapeOf, type GameLink, type StubShape } from './gameStub';
-export { verdictLines, liveItems, savedItems, type VerdictLines } from './verdictLines';
+export { verdictLines, verdictLinesForDay, liveItems, savedItems, type VerdictLines } from './verdictLines';
 export { outdoorPeaks, cityForecastRange, cityHourly, sunsetLabel, skyOf, type OutdoorPeak, type SkyKind } from './dayWeather';
 export { ARTISTS, artistByName, artistMatches, type Artist } from './artists';
 export { genreCategory, artistGenreWord, UNKNOWN_GENRE_WORD } from './genres';

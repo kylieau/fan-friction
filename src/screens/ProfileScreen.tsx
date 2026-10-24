@@ -227,7 +227,7 @@ export function ProfileScreen() {
       {plans.length > 0 && (
         <section className="you-block" aria-labelledby="profile-plans-heading">
           <h2 id="profile-plans-heading" className="you-heading">
-            Coming up
+            Coming Up
           </h2>
           <ul className="log-list">
             {plans.map((plan) => (

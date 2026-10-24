@@ -516,7 +516,7 @@ export function MapScreen() {
         <div className="sheet-body" ref={bodyRef}>
           {selected && rivals.length > 0 && (
             <>
-              <div className="section-title">Fighting today</div>
+              <div className="section-title">Fighting Today</div>
               <ul className="event-list">
                 {rivals.map((e) => (
                   <li key={e.id}>

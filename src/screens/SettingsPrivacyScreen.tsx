@@ -63,7 +63,7 @@ export function PrivacySettings() {
   if (!account) return <p className="you-fine">Sign in to choose who sees your stubs.</p>;
   return (
     <div className="settings">
-      <div className="settings-heading">Default for new stubs</div>
+      <div className="settings-heading">Default for New Stubs</div>
       {ORDER.map((level) => (
         <button key={level} type="button" className="settings-row settings-link" role="radio" aria-checked={value === level} disabled={value === null} onClick={() => void choose(level)}>
           <span>{VISIBILITY_WORDS[level]}</span>
@@ -75,10 +75,10 @@ export function PrivacySettings() {
         </button>
       ))}
       <p className="you-fine">
-        New users start Private. Applies to Attending, Watching and Interested. You can still change any single stub when you stub it, or later from the event
+        New users start Private. Applies to Attending, Watching, and Interested. You can still change any single stub when you stub it, or later from the event
         page.
       </p>
-      <div className="settings-heading">Past stubs</div>
+      <div className="settings-heading">Past Stubs</div>
       <button type="button" className="settings-row settings-link" onClick={() => setBulk(true)}>
         <span>Change past stubs…</span>
         {done && <span className="settings-value">{done}</span>}
@@ -95,7 +95,7 @@ export function PrivacySettings() {
           <div className="action-sheet bulk-sheet" onClick={(ev) => ev.stopPropagation()}>
             <span className="sheet-handle" aria-hidden />
             <h2 id="bulk-title" className="stub-sheet-title">
-              Change past stubs
+              Change Past Stubs
             </h2>
             <p className="stub-sheet-sub">
               Applies to all {pastCount} past {pastCount === 1 ? 'stub' : 'stubs'}. New stubs keep your default ({value ? VISIBILITY_WORDS[value] : 'Private'}).

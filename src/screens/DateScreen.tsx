@@ -35,9 +35,7 @@ import {
   rangeOn,
   splitByRange,
   yourEntries,
-  verdictLines,
-  liveItems,
-  savedItems,
+  verdictLinesForDay,
   outdoorPeaks,
   stampLocksAt,
   type CityDate,
@@ -201,7 +199,7 @@ export function DateScreen() {
   const shownRating = saved?.rating ?? rating?.rating ?? null;
   // The lines under the number come from the same set the number came from (M6): the saved night's rows when the
   // saved verdict shows, else today's events. The sources count is the feeds that listed events in that set.
-  const lines = saved ? verdictLines(savedItems(saved.rows, events), metro.name) : verdictLines(liveItems(events), metro.name);
+  const lines = verdictLinesForDay(day, saved);
   // Weather on a settled day is the last forecast saved before the lock (Kylie, Oct 5); ahead of it, the latest.
   const weatherBefore = locked ? (stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone) ?? undefined) : undefined;
   const peaks = outdoorPeaks(events, weatherBefore);

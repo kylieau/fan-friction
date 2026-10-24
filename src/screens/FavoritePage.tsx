@@ -281,7 +281,7 @@ export function FavoritePage() {
         <>
           <section className="you-block" aria-labelledby="fav-next-home">
             <h2 id="fav-next-home" className="you-heading">
-              {homeVenue ? `Next at ${homeVenue}` : 'Next at home'}
+              {homeVenue ? `Next at ${homeVenue}` : 'Next at Home'}
             </h2>
             {nextHome && nextHomeEvent ? (
               <div className="card fav-next-card">
@@ -353,7 +353,7 @@ export function FavoritePage() {
         <>
           <section className="you-block" aria-labelledby="fav-near">
             <h2 id="fav-near" className="you-heading">
-              Near home
+              Near Home
             </h2>
             {nearHome.length === 0 ? (
               <div className="card empty-card">
@@ -390,7 +390,7 @@ export function FavoritePage() {
           </section>
           <section className="you-block" aria-labelledby="fav-tour">
             <h2 id="fav-tour" className="you-heading">
-              Tour dates · elsewhere
+              Tour Dates · Elsewhere
             </h2>
             {elsewhere.length === 0 ? (
               <div className="card empty-card">

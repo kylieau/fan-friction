@@ -160,10 +160,18 @@ export function cachedSnapshots(metroId: string, eventId: string, date: LocalDat
  */
 export function cachedSnapshotsOn(metroId: string, date: LocalDate): ArchiveForecastRow[] | null {
   if (!isPrimed(metroId, date)) return null;
+  // Overlapping date windows load the same row twice; one copy per capture and event (Codex, stage 2).
+  const seen = new Set<string>();
   const out: ArchiveForecastRow[] = [];
   for (const [key, rows] of snapshots) {
     if (!key.startsWith(`${metroId}|`)) continue;
-    for (const row of rows) if (row.date === date) out.push(row);
+    for (const row of rows) {
+      if (row.date !== date) continue;
+      const id = `${row.capturedOn}|${row.eventId}`;
+      if (seen.has(id)) continue;
+      seen.add(id);
+      out.push(row);
+    }
   }
   return out;
 }

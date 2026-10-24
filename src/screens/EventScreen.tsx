@@ -521,7 +521,7 @@ function StorySlot({ event }: { event: CrowdEvent }) {
   const evening = event.start ? event.start >= '17:00' : false;
   return (
     <section className="card night-story" aria-label={evening ? 'The evening' : 'The day'}>
-      <h2 className="night-story-label">{evening ? 'The evening' : 'The day'}</h2>
+      <h2 className="night-story-label">{evening ? 'The Evening' : 'The Day'}</h2>
       <p className="night-story-text">{story.text}</p>
       {story.links.length > 0 && (
         <p className="night-story-links">
@@ -631,7 +631,7 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="how-title" onClick={onClose}>
       <div className="home-card" onClick={(ev) => ev.stopPropagation()}>
         <h1 id="how-title" className="home-title">
-          {about ? 'About this estimate' : 'How estimates work'}
+          {about ? 'About This Estimate' : 'How Estimates Work'}
         </h1>
         {about && <p className="how-about">{about}</p>}
         {/* Short headed sections (Kylie, Oct 9, C071). */}

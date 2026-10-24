@@ -3,14 +3,17 @@
 //   detail    "4 other big crowds overlap it, 7 to 10 pm."
 //   meta      "11 events in Los Angeles · 3 sources"
 // One function for a live day (today's events) and a settled night (the saved event set the verdict was scored
-// from), so the number shown and the words under it always come from the same set. "Big" is the friction floor
-// (FRICTION_ATTENDEES); "overlap" is the formula's own windows (a start and its rough running time, lib/windows.ts).
+// from), so the number shown and the words under it always come from the same set. "Big" is the app's own
+// eligibility rule (`eventFeedsFriction`: the friction floor after the small-room and small-draw caps); "overlap"
+// is the formula's own windows (a start and its running time by type, `durationOf`, a festival's eight hours).
 
-import { hoursOf, runningHours } from '../lib/windows';
+import { hoursOf } from '../lib/windows';
 import { listTitle, splitTitleLabel } from '../lib/eventTitle';
 import { crowdThousands } from '../map/crowdPoints';
-import { drawSize, FRICTION_ATTENDEES } from './read';
-import type { CrowdEvent, LocalTime } from './types';
+import { METROS } from '../config/metros';
+import { durationOf } from './formula/crowdFight';
+import { asMetroDate, drawSize, eventFeedsFriction, FRICTION_ATTENDEES, isStampLocked, savedNightRead, type SavedNightRead } from './read';
+import type { CityDate, CrowdEvent, LocalTime } from './types';
 import type { ArchiveForecastRow } from './startForecastIndex';
 
 export interface VerdictItem {
@@ -19,7 +22,9 @@ export interface VerdictItem {
   start: LocalTime | null;
   /** The expected crowd, or null when unknown. */
   draw: number | null;
-  /** The feed that listed it ("espn", "tm"); seeds and fan rows are not sources. */
+  /** Big enough to count as a rival: the app's eligibility rule when the event is known, else the raw floor. */
+  big: boolean;
+  /** The feed that listed it ("espn", "ticketmaster"); seeds and fan rows are not sources. */
   source: string | null;
 }
 
@@ -33,31 +38,48 @@ export interface VerdictLines {
 
 const NOT_A_SOURCE = new Set(['seed', 'fan', '']);
 
-/** Today's events as verdict items. */
+/** Today's events as verdict items (the day's own events; Further Out ones never come here). */
 export function liveItems(events: readonly CrowdEvent[]): VerdictItem[] {
-  return events.map((event) => ({ event, start: event.start, draw: drawSize(event) ?? null, source: event.sourceId ?? null }));
+  return events.map((event) => ({ event, start: event.start, draw: drawSize(event) ?? null, big: eventFeedsFriction(event), source: event.sourceId ?? null }));
 }
 
 /** The feed an event id names ("2026-10-21-espn-lakers-4019…" → espn), in the catalog's own source names. */
 const ID_TAGS: Record<string, string> = { espn: 'espn', tm: 'ticketmaster', mlb: 'mlb', sa: 'sidearm', ht: 'hockeytech', jb: 'jambase', sg: 'seatgeek' };
 
-/** A saved night's rows as verdict items, each matched to the catalog's event by id when it still exists. */
-export function savedItems(rows: readonly ArchiveForecastRow[], events: readonly CrowdEvent[]): VerdictItem[] {
+/**
+ * A saved night's rows as verdict items. The saved facts stay frozen (a row saved with no start or no draw keeps
+ * them unknown; Codex, stage 2); the catalog's event supplies only its name and its eligibility. Rows for events
+ * the day scored as Further Out are left out (`exclude`, their ids), as they never counted toward the verdict.
+ */
+export function savedItems(rows: readonly ArchiveForecastRow[], events: readonly CrowdEvent[], exclude: ReadonlySet<string> = new Set()): VerdictItem[] {
   const byId = new Map(events.map((e) => [e.id, e]));
-  return rows.map((row) => {
+  const out: VerdictItem[] = [];
+  for (const row of rows) {
+    if (exclude.has(row.eventId)) continue;
     const event = byId.get(row.eventId);
+    const draw = row.draw?.count ?? null;
     // The feed survives even when the event has gone, read from the id; a seed's own words there name no feed.
     const tag = /^\d{4}-\d{2}-\d{2}-/.test(row.eventId) ? row.eventId.slice(11).split('-')[0] : '';
     const source = event?.sourceId ?? ID_TAGS[tag] ?? null;
-    return { event, start: row.start ?? event?.start ?? null, draw: row.draw?.count ?? (event ? (drawSize(event) ?? null) : null), source };
-  });
+    out.push({ event, start: row.start ?? null, draw, big: event ? eventFeedsFriction(event) : (draw ?? 0) >= FRICTION_ATTENDEES, source });
+  }
+  return out;
 }
 
-/** [start, end) in hours since midnight; null with no start. A row without its event runs the show default. */
+/** The saved set when the day is settled and a verdict was saved, else today's events: what the date page shows. */
+export function verdictLinesForDay(day: CityDate, saved?: SavedNightRead | null): VerdictLines {
+  const city = METROS[day.metroId]?.name ?? day.metroId;
+  const metro = METROS[day.metroId];
+  const chosen = saved === undefined && metro && isStampLocked(asMetroDate(day.metroId, day.date, day.events), metro.timeZone) ? savedNightRead(day.metroId, day.date, day.events) : saved;
+  if (chosen) return verdictLines(savedItems(chosen.rows, day.events, new Set((day.furtherOut ?? []).map((e) => e.id))), city);
+  return verdictLines(liveItems(day.events), city);
+}
+
+/** [start, end) in hours since midnight; null with no start. A row without its event runs the show's three hours. */
 function windowOf(item: VerdictItem): [number, number] | null {
   if (!item.start) return null;
   const from = hoursOf(item.start);
-  return [from, from + (item.event ? runningHours(item.event) : 3)];
+  return [from, from + (item.event ? durationOf(item.event) : 3)];
 }
 
 /** "7 to 10 pm", "11 am to 2 pm", on the hour. */
@@ -72,8 +94,8 @@ function spanWords(from: number, to: number): string {
 }
 
 /**
- * The three lines for a set of items. The biggest draw leads; the rivals are the other items at or over the friction
- * floor whose window overlaps its own; the span runs from the earliest start to the latest end among them.
+ * The three lines for a set of items. The biggest draw leads; the rivals are the other big items whose window
+ * overlaps its own; the span runs from the earliest start to the latest end among them.
  */
 export function verdictLines(items: readonly VerdictItem[], cityName: string): VerdictLines {
   const count = items.length;
@@ -87,7 +109,7 @@ export function verdictLines(items: readonly VerdictItem[], cityName: string): V
   const headline = `Biggest draw: ${name}, ${crowdThousands(biggest.draw as number)}`;
   const window = windowOf(biggest);
   if (!window) return { headline, detail: null, meta, sources };
-  const rivals = sized.filter((it) => it !== biggest && (it.draw as number) >= FRICTION_ATTENDEES && overlaps(windowOf(it), window));
+  const rivals = items.filter((it) => it !== biggest && it.big && overlaps(windowOf(it), window));
   if (rivals.length === 0) return { headline, detail: 'No other big crowd overlaps it.', meta, sources };
   const all = [biggest, ...rivals].map(windowOf).filter((w): w is [number, number] => w !== null);
   const from = Math.min(...all.map((w) => w[0]));

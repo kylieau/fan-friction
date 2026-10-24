@@ -3,8 +3,9 @@
 // twenty degrees hotter than Inglewood). Reads through the Oct 5 rules in ./weather.ts: before a night the latest
 // forecast counts, after the lock the last forecast saved before it, never observed weather. Days with only the
 // reanalysis archive (before the app had forecasts) show nothing here (the builder's call, recorded in the gap report).
+// An event's window is its start plus three hours, the notes' rule for an unknown end (no listing carries an end).
 
-import { hoursOf, runningHours } from '../lib/windows';
+import { hoursOf } from '../lib/windows';
 import { isOpenAir, weatherHourFor, type WeatherDay, type WeatherRow } from './formula/weather';
 import { sunHours } from './formula/sun';
 import { cityDayRange, weatherAt } from './weather';
@@ -32,13 +33,25 @@ export interface OutdoorPeak {
   capturedAt: string;
 }
 
-/** The hours an event's own window covers: its start through its rough end (the formula's running time, 3 hours for a show). */
-function windowHours(event: CrowdEvent): number[] {
-  const start = event.start ? Math.floor(hoursOf(event.start)) : weatherHourFor(event);
-  const end = Math.min(23, Math.ceil((event.start ? hoursOf(event.start) : start) + runningHours(event)));
-  const hours: number[] = [];
-  for (let h = start; h <= end; h += 1) hours.push(h);
-  return hours;
+/** No listing carries an end time, so every window is the start plus three hours (M3, Locked: "use the start time plus 3 hours"). */
+const WINDOW_HOURS = 3;
+
+/**
+ * The hours an event's own window covers, as [date, hour] pairs: every stored hour that falls inside [start, end),
+ * a 6:30 pm show through its 9 pm hour and not its 10 pm one, an 11:30 pm show into the next date's first hours
+ * (Codex, stage 2). No start on file uses the type's usual start hour.
+ */
+function windowHours(event: CrowdEvent): [LocalDate, number][] {
+  const start = event.start ? hoursOf(event.start) : weatherHourFor(event);
+  const end = start + WINDOW_HOURS;
+  const out: [LocalDate, number][] = [];
+  for (let h = Math.floor(start); h < end; h += 1) out.push(h < 24 ? [event.date, h] : [nextDate(event.date), h - 24]);
+  return out;
+}
+
+function nextDate(date: LocalDate): LocalDate {
+  const [y, m, d] = date.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d + 1)).toISOString().slice(0, 10);
 }
 
 /**
@@ -51,7 +64,7 @@ export function outdoorPeaks(events: readonly CrowdEvent[], before?: Date): Outd
     if (event.place.type !== 'venue' || !isOpenAir(event)) continue;
     const venueId = event.place.venueId;
     const rows = windowHours(event)
-      .map((hour) => [hour, weatherAt(event.metroId, venueId, event.date, hour, before)] as const)
+      .map(([date, hour]) => [hour, weatherAt(event.metroId, venueId, date, hour, before)] as const)
       .filter((pair): pair is readonly [number, WeatherRow] => pair[1] !== undefined && pair[1].basis === 'forecast');
     if (rows.length === 0) continue;
     const [hour, peak] = rows.reduce((best, pair) => (pair[1].feelsLikeF > best[1].feelsLikeF ? pair : best));

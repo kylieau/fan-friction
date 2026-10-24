@@ -26,7 +26,8 @@ function kindOf(event: CrowdEvent): string {
   return event.kind === 'festival' || event.kind === 'special' ? event.kind : 'concert';
 }
 
-function durationOf(event: CrowdEvent): number {
+/** The formula's rough running time by type (a festival runs eight hours); the date page's verdict lines use it too. */
+export function durationOf(event: CrowdEvent): number {
   return DURATION[kindOf(event)] ?? 2.5;
 }
 

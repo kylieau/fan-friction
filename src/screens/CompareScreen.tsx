@@ -21,12 +21,12 @@ import {
   yourEntries,
 } from '../data';
 import { ChevronDown } from '../components/Icons';
-import { liveItems, verdictLines } from '../data';
+import { verdictLinesForDay } from '../data';
 
-/** The share line's words for a day: the same "Biggest draw" headline the date page shows (build 7.1, M6). */
+/** The share line's words for a day: the same "Biggest draw" headline the date page shows, from the saved set on a settled night (build 7.1, M6). */
 function headlineOf(day: CityDate): string {
   if (!day.rating) return '';
-  return verdictLines(liveItems(day.events), METROS[day.metroId]?.name ?? day.metroId).headline;
+  return verdictLinesForDay(day).headline;
 }
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';

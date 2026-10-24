@@ -58,7 +58,8 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
   // the row would otherwise crowd the card.
   const firstHour = peaks.length > 0 ? Math.min(...peaks.map((p) => (p.event.start ? Number(p.event.start.slice(0, 2)) : 15))) : 15;
   const shownHours = hourly.filter((row) => row.hour >= Math.min(firstHour, 15));
-  const hours = shownHours.length > 7 ? shownHours.filter((_, i) => i % 2 === 0) : shownHours;
+  // Every other hour when the row would crowd the card, the last stored hour always kept (Codex, stage 2).
+  const hours = shownHours.length > 7 ? shownHours.filter((_, i) => i % 2 === 0 || i === shownHours.length - 1) : shownHours;
   const rain = hourly.length > 0 ? Math.max(...hourly.map((row) => row.precipProbability ?? 0)) : null;
   const windRows = hours.filter((row) => row.windMph != null);
   const wind = windRows.length > 0 ? Math.round(windRows.reduce((sum, row) => sum + (row.windMph ?? 0), 0) / windRows.length) : null;

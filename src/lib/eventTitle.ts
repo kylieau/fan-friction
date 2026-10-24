@@ -455,12 +455,20 @@ export interface TitleLabel {
   ifNecessary: boolean;
 }
 
-/** Every event label is Title Case (Kylie, Oct 23, 2026, build 7.1 M8): "Home Opener", "Spring Training, Cactus League". */
+/**
+ * Every event label is Title Case (Kylie, Oct 23, 2026, build 7.1 M8): "Home Opener", "Spring Training, Cactus League",
+ * "First Round", "AHL Playoffs". A word already in capitals (NLCS, AHL, CFP) or carrying digits (G3, 2027) keeps itself.
+ */
 export function titleCaseLabel(text: string): string {
-  const small = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'at', 'in', 'on', 'to', 'for', 'vs.', 'per']);
+  const small = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'at', 'in', 'on', 'to', 'for', 'vs.', 'per', 'if']);
   return text
     .split(/(\s+)/)
-    .map((part, i) => (/^\s+$/.test(part) ? part : i === 0 || !small.has(part.toLowerCase()) ? part.charAt(0).toUpperCase() + part.slice(1).toLowerCase() : part.toLowerCase()))
+    .map((part, i) => {
+      if (/^\s+$/.test(part)) return part;
+      if (/^[A-Z0-9][A-Z0-9.&-]*$/.test(part) || /\d/.test(part)) return part;
+      if (i > 0 && small.has(part.toLowerCase())) return part.toLowerCase();
+      return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
+    })
     .join('');
 }
 
@@ -494,8 +502,9 @@ function readLabel(raw: string): TitleLabel | null {
   const numbered = core.match(/^(.+?) (?:G|Game )(\d+)$/);
   const stem = (numbered ? numbered[1] : core).replace(/ \d{4}$/, '').toLowerCase();
   if (!ROUND_TEXTS.has(stem) && !/^\S+ playoffs$/.test(stem) && !isCollegeRoundText(stem)) return null;
-  if (!numbered) return make('stage', core, core);
-  return make('stage', `${numbered[1]} Game\u00a0${numbered[2]}`, `${numbered[1]}\u00a0G${numbered[2]}`);
+  // Stage words from an older saved title read in Title Case too ("First Round", "AHL Playoffs"; Codex, stage 2).
+  if (!numbered) return make('stage', titleCaseLabel(core), titleCaseLabel(core));
+  return make('stage', `${titleCaseLabel(numbered[1])} Game\u00a0${numbered[2]}`, `${titleCaseLabel(numbered[1])}\u00a0G${numbered[2]}`);
 }
 
 /**

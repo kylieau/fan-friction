@@ -8,7 +8,7 @@ import { rateDate, occasionFor, crowdFightDetail, type DateRead } from './formul
 import { verdictFromScore, type EventCrowdFight } from './formula/crowdFight';
 import { milesBetween } from '../lib/windows';
 import { VENUES } from './venues';
-import { METROS } from '../config/metros';
+import { METROS, degreesFor } from '../config/metros';
 import { eventConditions } from './formula/weather';
 import { weatherForEvent } from './weather';
 import { drawSize, sizeTier } from './read';
@@ -29,8 +29,9 @@ function eventWhy(row: EventCrowdFight, read: DateRead): string {
   if (cond && condScore > row.score && cond.w > 0) {
     const start = row.event.start ? ` at a ${clock(row.event.start)} start` : '';
     if (cond.cause === 'rain') return `Rain in the forecast${start}.`;
-    if (cond.cause === 'cold') return `${Math.round(cond.row.feelsLikeF)}° feels-like${start}, no roof.`;
-    return `${Math.round(cond.effectiveF)}° feels-like${start}, no roof.`;
+    // Degrees follow the unit rule like every other temperature (M40; Codex, stage 2).
+    if (cond.cause === 'cold') return `${degreesFor(cond.row.feelsLikeF, row.event.metroId)} feels-like${start}, no roof.`;
+    return `${degreesFor(cond.effectiveF, row.event.metroId)} feels-like${start}, no roof.`;
   }
   // An Unopposed event says it from its own side (Kylie, Oct 11, build notes 3, 8.1, item 15).
   if (!top || top.d < 0.03) return 'The biggest event around.';
