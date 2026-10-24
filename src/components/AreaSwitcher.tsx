@@ -20,12 +20,19 @@ export function AreaSwitcher({
   open,
   onOpenChange,
   variant = 'chip',
+  onPick,
 }: {
   metro: Metro;
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  /** "title" is Explore's left-aligned page title (build notes 4, 1.2); "chip" is the centered chip. */
-  variant?: 'chip' | 'title';
+  /**
+   * "title" is Explore's left-aligned page title (build notes 4, 1.2); "chip" is the centered chip; "link" is the
+   * Log sheet's "Change city" (build 7.1, item 13): a text link, the same list and search opening in the flow under
+   * its line, without the Edit favorite cities link.
+   */
+  variant?: 'chip' | 'title' | 'link';
+  /** Told the picked city instead of writing it into the address (the Log sheet's own city). */
+  onPick?: (metroId: string) => void;
 }) {
   const [params, setParams] = useSearchParams();
   const menuId = useId();
@@ -63,10 +70,13 @@ export function AreaSwitcher({
     if (!open) setQuery('');
   }, [open]);
   const pick = (id: string) => {
-    const next = new URLSearchParams(params);
-    if (id === homeId) next.delete('metro');
-    else next.set('metro', id);
-    setParams(next);
+    if (onPick) onPick(id);
+    else {
+      const next = new URLSearchParams(params);
+      if (id === homeId) next.delete('metro');
+      else next.set('metro', id);
+      setParams(next);
+    }
     onOpenChange(false);
   };
   const row = (item: Metro) => (
@@ -78,33 +88,43 @@ export function AreaSwitcher({
     </div>
   );
   return (
-    <div ref={root} className={`area-switcher${variant === 'title' ? ' is-title' : ''}`}>
-      <button
-        type="button"
-        className="area-chip"
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-controls={menuId}
-        aria-label={viewingHome ? `Area, ${metro.name}, Home` : 'Area'}
-        onClick={() => onOpenChange(!open)}
-      >
-        {viewingHome && <HomeMark />}
-        <span className="area-chip-name">{metro.name}</span>
-        <ChevronDown />
-      </button>
+    <div ref={root} className={`area-switcher${variant === 'title' ? ' is-title' : variant === 'link' ? ' is-link' : ''}`}>
+      {variant === 'link' ? (
+        <button type="button" className="link-button area-link" aria-haspopup="listbox" aria-expanded={open} aria-controls={menuId} aria-label={`Change city, now ${metro.name}`} onClick={() => onOpenChange(!open)}>
+          Change city
+        </button>
+      ) : (
+        <button
+          type="button"
+          className="area-chip"
+          aria-haspopup="listbox"
+          aria-expanded={open}
+          aria-controls={menuId}
+          aria-label={viewingHome ? `Area, ${metro.name}, Home` : 'Area'}
+          onClick={() => onOpenChange(!open)}
+        >
+          {viewingHome && <HomeMark />}
+          <span className="area-chip-name">{metro.name}</span>
+          <ChevronDown />
+        </button>
+      )}
       {open && (
         <div className="area-menu" id={menuId} role="listbox" aria-label="Area">
           <div className="search-box area-search">
             <label className="search-field">
               <SearchIcon />
-              <input type="search" value={query} placeholder="Search all cities" aria-label="Search all cities" onChange={(ev) => setQuery(ev.target.value)} />
+              <input type="search" value={query} placeholder="Search cities" aria-label="Search cities" onChange={(ev) => setQuery(ev.target.value)} />
             </label>
           </div>
           {typed ? (found.length > 0 ? found.map(row) : <p className="home-note">No city by that name.</p>) : shown.map(row)}
-          <div className="area-divider" role="separator" />
-          <Link to="/you/settings#cities" className="area-edit-link" onClick={() => onOpenChange(false)}>
-            Edit favorite cities <span aria-hidden>›</span>
-          </Link>
+          {variant !== 'link' && (
+            <>
+              <div className="area-divider" role="separator" />
+              <Link to="/you/settings#cities" className="area-edit-link" onClick={() => onOpenChange(false)}>
+                Edit favorite cities <span aria-hidden>›</span>
+              </Link>
+            </>
+          )}
         </div>
       )}
     </div>

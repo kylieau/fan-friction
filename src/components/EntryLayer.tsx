@@ -11,6 +11,7 @@ import {
   getAccount,
   subscribeAccount,
   setRowTags,
+  setEntryCost,
   setEntrySeats,
   subscribePersonalLog,
   tagSummaries,
@@ -26,6 +27,7 @@ import { FactList } from './FactList';
 import { TagChip } from './TagChip';
 import { TagsPanel } from './TagsPanel';
 import { SeatsRow } from './SeatsRow';
+import { CostRow } from './CostRow';
 import { LevelPill } from './LevelPill';
 
 const LABELS: Record<keyof EntryEdit, string> = {
@@ -94,6 +96,8 @@ export function EntryLayer({ entry, showLevel = true }: { entry: Entry; /** Off 
         </div>
       )}
       {isManualEntry(entry) && !entry.watched && entry.kind !== 'live-broadcast' && <SeatsRow seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
+      {/* A hand-typed stub's cost, so a cost carried over from its plan stays in view (build 7.1, item 6). */}
+      {isManualEntry(entry) && <CostRow cost={entry.cost} watched={Boolean(entry.watched)} onChange={(next) => setEntryCost(entry.id, next)} />}
       <span className="entry-layer-actions">
         <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
           {empty ? 'Add a review, who you went with…' : 'Edit'}

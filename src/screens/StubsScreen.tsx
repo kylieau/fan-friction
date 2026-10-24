@@ -131,15 +131,20 @@ export function StubsScreen() {
     };
   }, [entries]);
 
-  // Team or sport: the chips You's row had (teams and sports logged more than once), now reading both teams of a game.
-  const teamChoices = useMemo(() => {
+  // Team or sport (build 7.1, item 8): every team on your stubs, from the first stub, both sides of a game, most logged
+  // first, picked from a dropdown; the sport chips stay as build 7 had them (sports logged more than once).
+  const ranked = (words: (entry: Entry) => string[], min: number) => {
     const counts = new Map<string, number>();
-    for (const entry of entries) for (const word of wordsOf(entry)) counts.set(word, (counts.get(word) ?? 0) + 1);
+    for (const entry of entries) for (const word of words(entry)) counts.set(word, (counts.get(word) ?? 0) + 1);
     return [...counts.entries()]
-      .filter(([, n]) => n >= 2)
+      .filter(([, n]) => n >= min)
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .map(([label]) => label);
-  }, [entries]);
+  };
+  const teamChoices = useMemo(() => ranked((entry) => entryTeams(entry), 1), [entries]);
+  const sportChoices = useMemo(() => ranked((entry) => wordsOf(entry).filter((w) => !entryTeams(entry).includes(w)), 2), [entries]);
+  // A favorite's "My Stubs ›" can name a team with no stub yet; the dropdown still shows it rather than a blank.
+  const teamOptions = filter.team && !teamChoices.includes(filter.team) && !sportChoices.includes(filter.team) ? [filter.team, ...teamChoices] : teamChoices;
 
   const range = useMemo(() => dateRange(filter.dates, today), [filter.dates, today]);
   const shown = useMemo(
@@ -171,15 +176,13 @@ export function StubsScreen() {
   const clear = () => setFilter(DEFAULT_FILTER);
 
   const pastItems: TimelineItem[] = shown.map((entry) => ({ key: entry.id, group: timelineGroup(entry.when), node: <StubRow entry={entry} rating={ratingForEntry(entry, ratings)} /> }));
-  const count = entries.length;
 
   return (
     <div className="screen page timeline-page stubs-page">
       <BackLink to="/you" label="You" />
       <div className="you-header">
-        <h1 className="page-title">
-          Your Stubs {count > 0 && <span className="page-title-count">{count === 1 ? '1 stub' : `${count} stubs`}</span>}
-        </h1>
+        {/* No count beside the title (build 7.1, item 9). */}
+        <h1 className="page-title">Your Stubs</h1>
         <span className="header-actions">
           <FilterButton count={chips.length} open={sheet} onClick={() => setSheet(true)} label="Filter Your Stubs" />
           <SearchButton />
@@ -294,16 +297,28 @@ export function StubsScreen() {
               </button>
             ))}
           </div>
-          {teamChoices.length > 0 && (
+          {(teamOptions.length > 0 || sportChoices.length > 0) && (
             <>
               <SheetHeading>Team or Sport</SheetHeading>
-              <div className="pill-row filter-pills" role="group" aria-label="Team or sport">
-                {teamChoices.map((label) => (
-                  <button key={label} type="button" className="filter-chip" aria-pressed={filter.team === label} onClick={() => setFilter({ ...filter, team: filter.team === label ? null : label })}>
-                    {label}
-                  </button>
-                ))}
-              </div>
+              {teamOptions.length > 0 && (
+                <select className="account-input filter-select" value={teamOptions.includes(filter.team ?? '') ? filter.team! : ''} aria-label="Team" onChange={(ev) => setFilter({ ...filter, team: ev.target.value || null })}>
+                  <option value="">Any team</option>
+                  {teamOptions.map((label) => (
+                    <option key={label} value={label}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              )}
+              {sportChoices.length > 0 && (
+                <div className="pill-row filter-pills" role="group" aria-label="Sport">
+                  {sportChoices.map((label) => (
+                    <button key={label} type="button" className="filter-chip" aria-pressed={filter.team === label} onClick={() => setFilter({ ...filter, team: filter.team === label ? null : label })}>
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </>
           )}
           {known.length > 0 && (

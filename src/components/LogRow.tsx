@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { eventMatches, eventType, favoriteDisplayName, favoritesOf, getPersonalLog, subscribePersonalLog, VENUES, venueNameOn, todayIn, type CrowdEvent } from '../data';
 import { yourActivity, ACTIVITY_WORDS } from '../lib/activity';
-import { clockTime, shortLocalDate } from '../lib/dates';
+import { clockTime, dateWithYear } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { BookmarkIcon, TicketIcon, TvIcon } from './Icons';
@@ -27,7 +27,8 @@ export function LogRow({ event, lead: leadText, onOpen }: { event: CrowdEvent; /
   const fave = favoritesOf(log).find((fav) => eventMatches(event, fav));
   const lead = leadText ?? (fave ? `${favoriteDisplayName(fave)} · Fave` : metro.name);
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
-  const when = event.date === today ? (event.start ? clockTime(event.start) : 'Today') : `${shortLocalDate(event.date)}${event.start ? ` · ${clockTime(event.start)}` : ''}`;
+  // The year shows when the date is not in this year (build 7.1, item 4): "Mon, Oct 27, 2025".
+  const when = event.date === today ? (event.start ? clockTime(event.start) : 'Today') : `${dateWithYear(event.date, today)}${event.start ? ` · ${clockTime(event.start)}` : ''}`;
   const meta = [you ? ACTIVITY_WORDS[you.kind] : null, when, venue].filter(Boolean);
   let mark: ReactNode = null;
   if (you) mark = you.kind === 'interested' ? <BookmarkIcon size={20} /> : you.kind === 'watching' || you.kind === 'watched' ? <TvIcon /> : <TicketIcon size={22} />;

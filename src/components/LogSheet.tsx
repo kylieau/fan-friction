@@ -24,7 +24,7 @@ import {
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { recentOpened } from '../lib/openedEvents';
 import { addDays, longLocalDate, shortLocalDate } from '../lib/dates';
-import { openedMetroId } from '../lib/view';
+import { AreaSwitcher } from './AreaSwitcher';
 
 /**
  * The Log an event sheet (build 7, §3.2; mock 04; Kylie, Oct 21, 2026), opened by the tab bar's "+". Top to bottom: a
@@ -32,13 +32,16 @@ import { openedMetroId } from '../lib/view';
  * now · Today" (your own plan pinned first, then today's events from your Faves, then the rest of the city's day,
  * a lean from the research), "Recent" (events you opened or logged in the last few days, for back-filling), and
  * "Not here? Add it yourself", the existing hand-typed path. Each row carries one "+" (`LogRow`); opening the sheet
- * never logs anything. Low signal: today's list is the catalog cache the app already keeps.
+ * never logs anything. Low signal: today's list is the catalog cache the app already keeps. "Change city" at the right
+ * of the context line (build 7.1, item 13) is the city switcher's list and search; it moves Happening Now to that
+ * city for this opening of the sheet only, and search keeps covering every city.
  */
 export function LogSheet({ onClose }: { onClose: () => void }) {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
-  // The city on screen when it is not home (Explore's switcher), else home (Lean: no new picker).
-  const cityId = openedMetroId() ?? homeId ?? DEFAULT_METRO.id;
+  // Home when the sheet opens; "Change city" moves it (the sheet's own city, never the address or home).
+  const [cityId, setCityId] = useState(() => homeId ?? DEFAULT_METRO.id);
+  const [areaOpen, setAreaOpen] = useState(false);
   const metro = METROS[cityId] ?? DEFAULT_METRO;
   const today = todayIn(metro);
   const [query, setQuery] = useState('');
@@ -49,16 +52,16 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
   const [hits, setHits] = useState<CrowdEvent[] | null>(null);
   const favorites = useMemo(() => favoritesOf(log), [log]);
 
-  // Escape closes the sheet, unless a sheet above it (Stub it, the Add card) is open: that one takes the key.
+  // Escape closes the sheet, unless a sheet above it (Stub it, the Add card) or the city list is open: that one takes the key.
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
-      if (ev.key !== 'Escape') return;
+      if (ev.key !== 'Escape' || areaOpen) return;
       if (document.querySelectorAll('.sheet-backdrop, .home-backdrop').length > 1) return;
       onClose();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  }, [onClose, areaOpen]);
 
   // Today in this city, from the cache the app already keeps (warmed at open; Workbox serves it offline).
   useEffect(() => {
@@ -182,9 +185,12 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
               </>
             ) : (
               <>
-                <p className="log-sheet-context">
-                  Today · {longLocalDate(today)} · {metro.name}
-                </p>
+                <div className="log-sheet-context-row">
+                  <p className="log-sheet-context">
+                    Today · {longLocalDate(today)} · {metro.name}
+                  </p>
+                  <AreaSwitcher metro={metro} open={areaOpen} onOpenChange={setAreaOpen} variant="link" onPick={setCityId} />
+                </div>
                 {happening.length > 0 && (
                   <>
                     <h3 className="log-sheet-band">Happening Now · Today</h3>

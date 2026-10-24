@@ -5,6 +5,8 @@ import {
   cityDayRange,
   entryFacts,
   removePlan,
+  setPlanCost,
+  setPlanSeats,
   setRowTags,
   tagSummaries,
   getPersonalLog,
@@ -26,6 +28,8 @@ import { ReadTile } from '../components/ReadTile';
 import { loggedDateLabel } from '../lib/dates';
 import { TitleText } from '../components/TitleText';
 import { BackLink } from '../components/BackLink';
+import { SeatsRow } from '../components/SeatsRow';
+import { CostRow } from '../components/CostRow';
 
 /**
  * An event typed in by hand: no catalog event behind it, so no crowd or
@@ -42,7 +46,8 @@ export function ManualEntryScreen() {
 
 /**
  * A plan typed in by hand (an event not in the catalog, still ahead): it has no event page, so this is
- * its page: the title, when and where, your tags, and Remove. It becomes a stub when the date passes.
+ * its page: the title, when and where, your tags, Seat and Cost (build 7.1, item 6: Seat and Cost on an Attending
+ * plan, Cost on a Watching one, the Stub it sheet's rules), and Remove. It becomes a stub when the date passes.
  */
 function ManualPlanPage({ planId }: { planId: string }) {
   const navigate = useNavigate();
@@ -85,6 +90,8 @@ function ManualPlanPage({ planId }: { planId: string }) {
             </button>
           </div>
         )}
+        {!plan.watch && <SeatsRow seats={plan.seats} onChange={(next) => setPlanSeats(plan.id, next)} />}
+        <CostRow cost={plan.cost} watched={Boolean(plan.watch)} onChange={(next) => setPlanCost(plan.id, next)} />
       </section>
       {asking ? (
         <div className="card tag-menu" role="alertdialog" aria-label="Remove plan">

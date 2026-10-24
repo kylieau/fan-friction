@@ -269,20 +269,22 @@ export async function getCalendarMonth(metroId: string, month: string): Promise<
  */
 /**
  * The events a query names, for the Log an event sheet and search's event rows (build 7, §3.2): every covered city,
- * home first, further-out rooms included (anything can be logged by hand), past and future, nearest to today first.
+ * home first, further-out rooms included (anything can be logged by hand), past and future. Upcoming events first,
+ * soonest first, then past ones, newest first (build 7.1, item 4); today counts as upcoming, by home's calendar. Past
+ * rows keep about a third of the list, so a team with a long season ahead still lets you back-fill a game.
  */
 export async function searchEvents(homeId: string | null, query: string, limit = 12): Promise<CrowdEvent[]> {
   const q = query.trim();
   if (q.length < 2) return [];
   const ids = [...COVERED_METRO_IDS].sort((a, b) => (a === homeId ? -1 : b === homeId ? 1 : 0));
   const lists = await Promise.all(ids.map((id) => catalog(id, true)));
-  const today = new Date().toLocaleDateString('en-CA');
-  const dist = (event: CrowdEvent) => Math.abs(new Date(event.date).getTime() - new Date(today).getTime());
-  return lists
-    .flat()
-    .filter((event) => matchingNames(event, q))
-    .sort((a, b) => dist(a) - dist(b) || (a.start ?? '').localeCompare(b.start ?? ''))
-    .slice(0, limit);
+  const today = todayIn(METROS[homeId ?? ''] ?? DEFAULT_METRO);
+  const byStart = (a: CrowdEvent, b: CrowdEvent) => (a.start ?? '').localeCompare(b.start ?? '');
+  const hits = lists.flat().filter((event) => matchingNames(event, q));
+  const ahead = hits.filter((event) => event.date >= today).sort((a, b) => a.date.localeCompare(b.date) || byStart(a, b));
+  const past = hits.filter((event) => event.date < today).sort((a, b) => b.date.localeCompare(a.date) || byStart(a, b));
+  const pastRoom = Math.min(past.length, Math.floor(limit / 3));
+  return [...ahead.slice(0, limit - pastRoom), ...past].slice(0, limit);
 }
 
 export async function searchDates(metroId: string, query: string, visible?: (event: CrowdEvent) => boolean, opts: { withFurtherOut?: boolean } = {}): Promise<DateSearchHit[]> {

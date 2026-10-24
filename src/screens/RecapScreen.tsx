@@ -209,7 +209,7 @@ export function RecapScreen() {
         )}
       {inYear.length > 0 && (
         <Link to={`/you/stubs${year === 'All time' ? '' : `?year=${year}`}`} className="heading-link recap-all">
-          See these {inYear.length} stubs ›
+          See these stubs ›
         </Link>
       )}
     </div>

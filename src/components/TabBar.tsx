@@ -5,7 +5,8 @@ import { CalendarIcon, MapIcon, PeopleIcon, PersonIcon, PlusIcon } from './Icons
 // Build 7's bar (Kylie, Oct 21–22, 2026; mocks 01 and 02): Explore · Upcoming · (+) · Activity · You. The Stubs tab's
 // history lives under You; Following split into Upcoming (what you follow and plan) and Activity (the feed). The
 // center "+" is a button that opens the Log an event sheet, not a destination, so it never reads as selected; it is
-// 48 px, raised about 7 px, unlabeled, and replaces the floating "+ Stub it". Home stays reachable at /home.
+// a 40 px filled circle flush with the other tabs (build 7.1, item 14; it was raised in build 7 and something covered
+// it), unlabeled, and replaces the floating "+ Stub it". Home stays reachable at /home.
 interface Tab {
   to: string;
   label: string;

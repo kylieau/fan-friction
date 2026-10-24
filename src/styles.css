@@ -101,10 +101,11 @@ button {
   font-weight: 700;
 }
 
-/* The center "+" (build 7, Locked; mock 02): a 48 px action-blue circle rising about 7 px above the bar, a thin
-   bar-coloured ring and a soft shadow, no label. A button that opens a sheet, never a selected tab. */
+/* The center "+" (build 7, mock 02; build 7.1, item 14): a 40 px action-blue circle sitting flush in the bar with the
+   other tabs (Kylie: something covered it raised), no ring or shadow, no label; the whole slot (52 px tall) is the tap
+   target. A button that opens a sheet, never a selected tab. */
 .tab-log {
-  justify-content: flex-start;
+  justify-content: center;
   border: 0;
   background: none;
   padding: 0;
@@ -115,15 +116,11 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  margin-top: -13px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--action);
   color: var(--card);
-  box-shadow:
-    0 0 0 3px var(--chrome),
-    0 6px 14px rgba(15, 27, 45, 0.25);
 }
 
 .tab-log-circle svg {
@@ -10075,6 +10072,13 @@ a.follow-lead::after {
   gap: 8px;
 }
 
+/* The Team dropdown in the Your Stubs filter (build 7.1, item 8): the app's form select, a white field on the sheet. */
+.filter-select {
+  width: 100%;
+  margin-bottom: 10px;
+  background: var(--card);
+}
+
 .filter-sheet-link {
   display: flex;
   justify-content: space-between;
@@ -10165,6 +10169,36 @@ a.follow-lead::after {
   font-size: 13px;
   font-weight: 600;
   color: var(--muted);
+}
+
+/* The context line with "Change city" at its right (build 7.1, item 13); the city list opens in the flow under the
+   line, full width, so the sheet's own scroll never clips it. */
+.log-sheet-context-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 12px;
+}
+
+.area-switcher.is-link {
+  display: contents;
+}
+
+.area-link {
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--action);
+}
+
+.area-switcher.is-link .area-menu {
+  position: static;
+  flex-basis: 100%;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 8px;
+  transform: none;
 }
 
 .log-sheet-band {
@@ -10262,13 +10296,6 @@ a.follow-lead::after {
 }
 
 /* Your stubs (build 7, §3.7; mocks 38–43): the count beside the title, the three views, light grid cards, the calendar. */
-.page-title-count {
-  margin-left: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--muted);
-}
-
 .stubs-views button {
   display: inline-flex;
   align-items: center;

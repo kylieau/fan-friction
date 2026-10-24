@@ -27,6 +27,11 @@ export function shortLocalDate(date: string) {
   });
 }
 
+/** "Mon, Oct 27" this year, "Mon, Oct 27, 2025" in any other year (search's event rows, build 7.1, item 4). */
+export function dateWithYear(date: string, today: string) {
+  return date.slice(0, 4) === today.slice(0, 4) ? shortLocalDate(date) : longLocalDate(date);
+}
+
 /**
  * Map header date, comma form. The year is included only when it is not the
  * current year: "Sat, Oct 3" or "Sat, Apr 13, 2024".
