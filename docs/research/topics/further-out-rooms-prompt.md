@@ -451,7 +451,7 @@ Austin. Rooms on file; largest setup on file:
 - House Park; 6,500
 - Moody Amphitheater at Waterloo Park; 5,000
 - Gregory Gym, Bass Concert Hall, ACL Live at the Moody Theater, Irvine-Rasmussen Ballpark, Michael & Susan Dell Hall, Stubb's Waller Creek Amphitheater, Emo's, Red and Charline McCombs Field, Bobcat Soccer Complex, Bobcat Softball Stadium; all under 5,000
-(San Antonio, Houston and Dallas–Fort Worth are covered cities; Delivery 6's predecessors already list the Waco, College Station and Bryan rooms, so do not repeat them.)
+(San Antonio, Houston and Dallas–Fort Worth are covered cities; Delivery 1 already lists the Waco, College Station and Bryan rooms, so do not repeat them.)
 
 Sacramento. Rooms on file; largest setup on file:
 - Charles C. Hughes Stadium; 25,000
