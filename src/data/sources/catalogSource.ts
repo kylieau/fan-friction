@@ -11,6 +11,7 @@ import { supabase } from '../storage/supabaseClient';
 import { espnEvents } from './espnSource';
 import { hockeytechEvents } from './hockeytechSource';
 import { mlbEvents } from './mlbSource';
+import { repairSidearmRow } from './sidearmSource';
 import { roomsAlsoIn } from './venueMetro';
 import type { EventSource } from './types';
 
@@ -40,7 +41,9 @@ function catalogFor(metroId: string): Promise<CrowdEvent[] | null> {
         .range(a, b),
     );
     if (error || !data || data.length === 0) return null;
-    return data.map((row) => withMergedRoom(row.data as CrowdEvent));
+    // A school-feed row saved with the program in its title reads the current way until the nightly job has
+    // rewritten it (build 7.1, M9); a repaired row passes through unchanged.
+    return data.map((row) => repairSidearmRow(withMergedRoom(row.data as CrowdEvent)));
   })().catch(() => null);
   cache.set(metroId, p);
   // A failed read is not kept, so the next look tries the table again.

@@ -10,7 +10,7 @@
 
 import { METROS } from '../../config/metros';
 import { TEAMS, isCollegeTeam, schoolWord, sportWords, storedSchoolWord } from '../teams';
-import type { CrowdEvent, LocalDate } from '../types';
+import type { CrowdEvent, Division, LocalDate } from '../types';
 import { SIDEARM_SCHOOLS, type SidearmSchool } from './sidearmSchools';
 import { venueByNameOrPlace, venueClosedOn } from './venueMatch';
 
@@ -70,15 +70,31 @@ function whenOf(v: Vevent, timeZone: string): { date: LocalDate; time: string | 
   return localParts(`${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:${m[6]}Z`, timeZone);
 }
 
+// The two-word sports before the word they share (field hockey before hockey, beach volleyball before volleyball).
 const SPORTS: [RegExp, string][] = [
+  [/field hockey/i, 'field hockey'], [/beach volleyball/i, 'beach volleyball'], [/cross country/i, 'cross country'],
   [/basketball/i, 'basketball'], [/football/i, 'football'], [/soccer/i, 'soccer'], [/baseball/i, 'baseball'],
   [/softball/i, 'softball'], [/volleyball/i, 'volleyball'], [/hockey/i, 'hockey'], [/lacrosse/i, 'lacrosse'],
   [/tennis/i, 'tennis'], [/water polo/i, 'water polo'], [/wrestling/i, 'wrestling'], [/gymnastics/i, 'gymnastics'],
-  [/track|cross country/i, 'track'], [/swim/i, 'swimming'], [/golf/i, 'golf'], [/rowing|crew/i, 'rowing'],
+  [/track/i, 'track'], [/swim/i, 'swimming'], [/golf/i, 'golf'], [/rowing|crew/i, 'rowing'], [/rugby/i, 'rugby'],
+  [/fencing/i, 'fencing'],
 ];
 function sportOf(summary: string): string {
   for (const [re, sport] of SPORTS) if (re.test(summary)) return sport;
   return 'other';
+}
+
+/** The side a program's words name ("Women's Soccer"); none for a bare "Volleyball", never guessed. */
+function divisionOf(program: string): Division | undefined {
+  if (/^women's\b/i.test(program)) return 'women';
+  if (/^men's\b/i.test(program)) return 'men';
+  return undefined;
+}
+
+/** The facts of a school's game the app keeps: the sport, the level, and the side when the feed named it. */
+function audienceOf(program: string): CrowdEvent['audience'] {
+  const division = divisionOf(program);
+  return { domain: 'sports', sport: sportOf(program), level: 'college', ...(division ? { division } : {}) };
 }
 
 /**
@@ -195,7 +211,9 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
     // (Cal Baptist "at UCLA" links UCLA's program), so a school on another provider still gets its team link.
     const homeId = read.home ? teamIdFor([school.short, ...school.school], read.program, school.metroId) : teamIdFor([read.opponent], read.program, school.metroId);
     const awayName = read.home ? read.opponent : school.short;
-    const title = read.home ? `${school.short} ${read.program} vs. ${read.opponent}` : `${read.opponent} ${read.program} vs. ${school.short}`;
+    // School names only, home first as every feed writes it (the title rules show "Cal Baptist at UCLA"); the
+    // program goes on the label line, never in the title (Kylie, Oct 23, 2026, build 7.1 M9).
+    const title = read.home ? `${school.short} vs. ${read.opponent}` : `${read.opponent} vs. ${school.short}`;
     const gameId = v.uid.match(/vcal_(\d+)/)?.[1] ?? v.uid.replace(/[^a-z0-9]+/gi, '-');
     const tm = v.description.match(/ticketmaster\.com\/[^\s]*\/event\/([A-Z0-9]+)/i)?.[1];
     events.push({
@@ -207,7 +225,7 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
       title,
       ...(read.exhibition ? { preseason: true } : {}),
       place: { type: 'venue', venueId: venue.id },
-      audience: { domain: 'sports', sport: sportOf(read.program) },
+      audience: audienceOf(read.program),
       ...(homeId ? { teams: { home: homeId, away: awayName, awayOpponent: awayName.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
       ...(tm ? { ticketmasterId: tm } : {}),
       crowd: [],
@@ -215,6 +233,33 @@ export async function loadSidearmSchool(school: SidearmSchool, fromDate?: LocalD
     });
   }
   return events;
+}
+
+/** The program words a stored title can carry between the home school and "vs.", the longest first. */
+const PROGRAM_IN_TITLE = new RegExp(
+  "^(.*?)\\s+((?:Men's |Women's )?(?:Beach Volleyball|Field Hockey|Ice Hockey|Water Polo|Cross Country|Track(?: (?:&|and) Field)?|Swimming(?: (?:&|and) Diving)?|Basketball|Football|Soccer|Baseball|Softball|Volleyball|Hockey|Lacrosse|Tennis|Wrestling|Gymnastics|Golf|Rowing|Rugby|Fencing))\\s+vs\\.\\s+(.+)$",
+  'i',
+);
+
+/**
+ * A school-feed row saved before Oct 24, 2026 (build 7.1, M9 and M38), with the program in its title ("UCLA Men's
+ * Basketball vs. Cal Baptist"), read as the rows are written now: school names only, the sport and side on the
+ * audience, and the team record when one matches. Any other row comes back as it is, the same object, so a caller
+ * can tell a repair from a pass. The catalog applies it on read and the nightly job writes it back to past rows;
+ * nothing about a verdict is touched.
+ */
+export function repairSidearmRow(event: CrowdEvent): CrowdEvent {
+  if (event.sourceId !== 'sidearm' || event.audience.domain !== 'sports') return event;
+  const m = event.title.match(PROGRAM_IN_TITLE);
+  if (!m) return event;
+  const [, home, program, away] = m;
+  const homeId = event.teams?.home ?? teamIdFor([home], program, event.metroId);
+  return {
+    ...event,
+    title: `${home} vs. ${away}`,
+    audience: audienceOf(program),
+    ...(homeId && !event.teams ? { teams: { home: homeId, away, awayOpponent: away.toLowerCase().replace(/[^a-z0-9]+/g, '-') } } : {}),
+  };
 }
 
 /**

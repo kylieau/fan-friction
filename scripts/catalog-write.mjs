@@ -62,7 +62,7 @@ try {
   const { looseVenueMatches } = await server.ssrLoadModule('/src/data/sources/venueMatch.ts');
   const { dropGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
   const { mergeDuplicates, possibleCopies } = await server.ssrLoadModule('/src/data/dedupe.ts');
-  const { loadSidearmSchedule } = await server.ssrLoadModule('/src/data/sources/sidearmSource.ts');
+  const { loadSidearmSchedule, repairSidearmRow } = await server.ssrLoadModule('/src/data/sources/sidearmSource.ts');
   const { loadJambaseEvents, readJambaseQuota, JAMBASE_METROS } = await server.ssrLoadModule('/src/data/sources/jambaseSource.ts');
   const { fanEventFrom, fanEventId, secondPersonConfirmations } = await server.ssrLoadModule('/src/data/sources/fanSource.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
@@ -214,6 +214,24 @@ try {
   if (doubled.length) console.log(`${metroId}: ${doubled.length} possible copies kept: ${doubled.map(([a, b]) => `${a.date} ${a.place.venueId} "${a.title}" (${a.sourceId}) / "${b.title}" (${b.sourceId})`).join('; ')}`);
   const events = keptEvents.map(eventRow);
   counts.events = await upsert('events', events, 'id');
+  // Past school-feed rows keep the title the feed was given ("UCLA Men's Basketball vs. Cal Baptist"), and this pass
+  // never rewrites a row older than its floor, so they are repaired here (build 7.1, M9 and M38, Oct 24, 2026): the
+  // title and the team record only; the saved verdicts live in schedule_snapshots and are not touched. A repaired
+  // row no longer matches, so after the first night the pass costs one read.
+  const repaired = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await db.from('events').select('id,data').eq('metro_id', metroId).eq('source_id', 'sidearm').lt('date', floorLocal).order('id').range(from, from + 999);
+    if (error) { console.log(`${metroId}: past school rows not read for the title repair (${error.message}).`); break; }
+    for (const row of data) {
+      const fixed = repairSidearmRow(row.data);
+      if (fixed !== row.data) repaired.push(eventRow(fixed));
+    }
+    if (data.length < 1000) break;
+  }
+  if (repaired.length) {
+    counts.events_retitled = await upsert('events', repaired, 'id');
+    console.log(`${metroId}: ${repaired.length} past school rows retitled (the program moved from the title to the label).`);
+  }
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds stay. The game feeds
   // (MLB, ESPN, HockeyTech) still list last week's games, so their stale rows are cleared from a week back; the
   // sellers drop past listings, so theirs are cleared from today only and past rows stay.

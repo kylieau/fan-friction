@@ -25,8 +25,16 @@ const SHORT_MAX = 32;
 // with a round or other label it is words too ("Women's Basketball · Round of 64"; Kylie, Oct 19, 2026). Inline in
 // parentheses it is always the code ("(WBB · R64)").
 
-/** Code suffix and words per sport. Football, baseball, softball and field hockey carry none: their names differ. */
-const SPORT_CODES: Record<string, { code: string; words: string }> = {
+/**
+ * Code suffix and words per sport. Football, baseball, softball and field hockey carry no side: their names differ,
+ * so a college game of theirs reads "Football" alone, code FB (Kylie, Oct 23, 2026, build 7.1 M38: every college and
+ * school game gets a sport label, Football included; this overrides the Oct 15 exemption).
+ */
+const SPORT_CODES: Record<string, { code: string; words: string; sideless?: true }> = {
+  football: { code: 'FB', words: 'Football', sideless: true },
+  baseball: { code: 'BSB', words: 'Baseball', sideless: true },
+  softball: { code: 'SB', words: 'Softball', sideless: true },
+  'field hockey': { code: 'FH', words: 'Field Hockey', sideless: true },
   basketball: { code: 'BB', words: 'Basketball' },
   volleyball: { code: 'VB', words: 'Volleyball' },
   'beach volleyball': { code: 'BVB', words: 'Beach Volleyball' },
@@ -49,29 +57,38 @@ const SPORT_CODES: Record<string, { code: string; words: string }> = {
 };
 const SIDE_WORDS = { M: "Men's", W: "Women's", B: "Boys'", G: "Girls'" } as const;
 type Side = keyof typeof SIDE_WORDS;
-const SUFFIXES = [...new Set(Object.values(SPORT_CODES).map((s) => s.code))].sort((a, b) => b.length - a.length);
+const byLength = (a: string, b: string) => b.length - a.length;
+const SUFFIXES = [...new Set(Object.values(SPORT_CODES).filter((s) => !s.sideless).map((s) => s.code))].sort(byLength);
+const SIDELESS_CODES = [...new Set(Object.values(SPORT_CODES).filter((s) => s.sideless).map((s) => s.code))].sort(byLength);
 
-/** Every sport code, for reading tags in raw titles ("UCLA WVB") and labels back from saved titles. */
-const SPORT_CODE_RE = new RegExp(`^([MWBG])(${SUFFIXES.join('|')})$`);
+/**
+ * Every sport code, for reading tags in raw titles ("UCLA WVB") and labels back from saved titles: a side letter
+ * and a sport, or a sport alone when the feed named no side ("VB") or the sport has none ("FB").
+ */
+const SPORT_CODE_RE = new RegExp(`^([MWBG]?)(${SUFFIXES.join('|')})$`);
 
 /** Tags that belong after the first name. CFB is stripped from old titles and never written back. */
-const SQUAD_TAG = `FB|CFB|[MWBG](?:${SUFFIXES.join('|')})`;
+const SQUAD_TAG = `CFB|${SIDELESS_CODES.join('|')}|[MWBG]?(?:${SUFFIXES.join('|')})`;
 
 export interface SportLabel {
   code: string;
   words: string;
 }
 
-/** "WBB" → Women's Basketball; null when it isn't a sport code. */
+/** "WBB" → Women's Basketball, "FB" → Football, "VB" → Volleyball; null when it isn't a sport code. */
 function sportFromCode(code: string): SportLabel | null {
+  const sideless = Object.values(SPORT_CODES).find((s) => s.sideless && s.code === code);
+  if (sideless) return { code, words: sideless.words };
   const m = code.match(SPORT_CODE_RE);
   if (!m) return null;
   const words = Object.values(SPORT_CODES).find((s) => s.code === m[2])!.words;
-  return { code, words: `${SIDE_WORDS[m[1] as Side]} ${words}` };
+  return { code, words: m[1] ? `${SIDE_WORDS[m[1] as Side]} ${words}` : words };
 }
 
-/** "Men's Basketball" → MBB; null when it isn't a sport label's words. */
+/** "Men's Basketball" → MBB, "Football" → FB, "Volleyball" → VB; null when it isn't a sport label's words. */
 function sportFromWords(text: string): SportLabel | null {
+  const bare = Object.values(SPORT_CODES).find((s) => s.words.toLowerCase() === text.toLowerCase());
+  if (bare) return { code: bare.code, words: bare.words };
   for (const [side, said] of Object.entries(SIDE_WORDS)) {
     if (!text.toLowerCase().startsWith(`${said.toLowerCase()} `)) continue;
     const rest = text.slice(said.length + 1).toLowerCase();
@@ -97,19 +114,29 @@ function sideOf(team: (typeof TEAM_LIST)[number]): Side | null {
 }
 
 /**
- * A game's sport label, or null. College and school games carry one whenever the side is known. A pro game carries
- * one only when a men's and a women's club share the name (Liga MX and Liga MX Femenil), on both sides alike.
+ * A game's sport label, or null. Every college and school game carries one (Kylie, Oct 23, 2026, build 7.1 M38):
+ * the side from a team record on file, else the side the school's feed named (`audience.division`), else the sport
+ * alone ("Volleyball"); football, baseball, softball and field hockey read alone always. A pro game carries one
+ * only when a men's and a women's club share the name (Liga MX and Liga MX Femenil), on both sides alike.
  */
 export function sportLabelOf(event: CrowdEvent): SportLabel | null {
-  if (event.audience.domain !== 'sports' || !event.teams) return null;
+  if (event.audience.domain !== 'sports') return null;
   const sport = SPORT_CODES[event.audience.sport.toLowerCase()];
   if (!sport) return null;
-  const sides = [TEAMS[event.teams.home], TEAMS[event.teams.away]].filter((t) => t !== undefined);
-  if (sides.length === 0) return null;
+  const sides = event.teams ? [TEAMS[event.teams.home], TEAMS[event.teams.away]].filter((t) => t !== undefined) : [];
+  const level = event.audience.level;
+  const school = level === 'school' || sides.some((t) => /high school|\bschool\b/i.test(t.league));
+  const amateur = school || level === 'college' || sides.some((t) => AMATEUR.test(t.league));
+  if (sport.sideless) return amateur ? { code: sport.code, words: sport.words } : null;
   let side: Side | null = null;
-  if (sides.some((t) => AMATEUR.test(t.league))) {
+  if (amateur) {
     side = sides.map(sideOf).find((x) => x !== null) ?? null;
+    const named = event.audience.division;
+    if (!side && named === 'women') side = school ? 'G' : 'W';
+    if (!side && named === 'men') side = school ? 'B' : 'M';
+    if (!side) return { code: sport.code, words: sport.words };
   } else {
+    if (sides.length === 0) return null;
     const home = sides[0];
     const twin = TEAM_LIST.find((t) => t.id !== home.id && t.sport === home.sport && baseName(t.shortName) === baseName(home.shortName));
     const twinSide = twin ? sideOf(twin) : null;
@@ -616,17 +643,18 @@ function roundText(p: GameParts, length: Length, compact = false): string | null
 
 /**
  * A game's name in two pieces: the name (matchup, event name, sport label) and the designation (round, game,
- * Preseason, DH), which is never cut. `drop` removes name parts in the notes' order: 1 year, 2 away team,
- * 3 event name / sport label (the tag); the caller truncates last.
+ * Preseason, DH), which is never cut. `drop` removes name parts in order: 1 year, 2 event name / sport label (the
+ * tag), 3 away team. Rows stop at 2 (build 7.1, M9 and M35b, Oct 24, 2026: the opponent survives the length limit,
+ * "UC Riverside at Cal State Fullerton" wraps instead); only a chip drops the away side.
  */
 function gamePieces(p: GameParts, length: 'short' | 'full', drop = 0, compact = false): { name: string; designation: string[]; aside: string | null } {
   const withYear = drop >= 1 ? { ...p, year: null } : p;
   // Rank in the title on the event page only (Kylie, M3-08, option B; build 6, item 10): "#17 USC at #4 UCLA". Rows
   // and chips never carry it.
   const ranked = (name: string, rank: number | null) => (length === 'full' && rank ? `#${rank} ${name}` : name);
-  const matchup = drop >= 2 ? ranked(withYear.second, withYear.rankSecond) : `${ranked(withYear.first, withYear.rankFirst)} ${withYear.joiner} ${ranked(withYear.second, withYear.rankSecond)}`;
+  const matchup = drop >= 3 ? ranked(withYear.second, withYear.rankSecond) : `${ranked(withYear.first, withYear.rankFirst)} ${withYear.joiner} ${ranked(withYear.second, withYear.rankSecond)}`;
   const tail: string[] = [];
-  if (drop < 3) {
+  if (drop < 2) {
     if (withYear.eventName) tail.push(withYear.eventName);
     else if (withYear.neutralSite && !withYear.round) tail.push('Neutral site');
     if (withYear.sport) tail.push(withYear.sport);
@@ -653,8 +681,10 @@ function renderGame(p: GameParts, length: 'short' | 'full', drop = 0): string {
 function shortGame(p: GameParts): string {
   // The label rides outside the 32-character budget (labels r3: it is its own quiet slot).
   let drop = 0;
-  while (drop < 3 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
-  return truncate(gamePieces(p, 'short', drop).name, SHORT_MAX);
+  while (drop < 2 && gamePieces(p, 'short', drop).name.length > SHORT_MAX) drop += 1;
+  // A matchup is never cut to one side or an ellipsis (build 7.1, M9 and M35b): both schools stay and the row takes a
+  // second line, which the short form allows.
+  return gamePieces(p, 'short', drop).name;
 }
 
 function renderShow(p: ShowParts, length: 'short' | 'full', drop = 0): string {
@@ -843,11 +873,12 @@ export function scheduleLabelOf(game: SchedulePick, sport?: string): EventLabel 
 
 /**
  * The team-relative form, only on a favorite team's own page (Kylie, Oct 11, 2026): "vs. Padres" at home,
- * "at Brewers" away (labels r3, Kylie, Oct 15: "at", replacing N29's "@"), "vs. 49ers · Melbourne" at a neutral
- * site; the label after it in parentheses, which lists show on its own line ("NLCS Game 3").
+ * "at Brewers" away (labels r3, Kylie, Oct 15: "at", replacing N29's "@"), "vs. 49ers" at a neutral site (the
+ * row's venue line and city tag name the place; build 7.1, M20, Oct 24, 2026, which dropped the " · Melbourne"
+ * tail); the label after it in parentheses, which lists show on its own line ("NLCS Game 3").
  */
 export function teamRelativeTitle(game: SchedulePick, sport?: string): string {
-  const side = game.neutral ? `vs. ${game.opponent}${game.venueName ? ` · ${game.venueName}` : ''}` : game.home ? `vs. ${game.opponent}` : `at ${game.opponent}`;
+  const side = game.home || game.neutral ? `vs. ${game.opponent}` : `at ${game.opponent}`;
   return `${side}${labelSuffix(scheduleLabelOf(game, sport), 'inline')}`;
 }
 

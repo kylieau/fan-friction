@@ -106,7 +106,17 @@ export type EventKind = 'game' | 'show' | 'festival' | 'live-broadcast' | 'speci
  * (see product-decisions.md). Sports carry a sport; shows carry a genre.
  */
 export type Audience =
-  | { domain: 'sports'; sport: string; level?: SportsLevel }
+  | {
+      domain: 'sports';
+      sport: string;
+      level?: SportsLevel;
+      /**
+       * The side a school's feed names for a program with no team record on file ("Women's Soccer"; build 7.1, M9
+       * and M38, Oct 24, 2026). The sport label reads it when neither team is on file. Never guessed: a bare
+       * "Volleyball" in the feed leaves it off.
+       */
+      division?: Division;
+    }
   | { domain: 'music'; genre: string }
   | { domain: 'other'; tag: string };
 
