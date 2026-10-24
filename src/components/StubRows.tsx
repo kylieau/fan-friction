@@ -63,10 +63,13 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
         <StatusLine kind={entry.watched ? 'watched' : 'attended'} share={share} place={place} tags={entry.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
       {/* An entry logged "elsewhere" has no city, so no date page: its tile stays plain, like a rough date (found Oct 19, 2026: it opened the default city's page).
-          A further-out stub's tile is plain too (Kylie, Oct 20, 2026). */}
-      <DateReadLink date={entry.when.precision === 'day' && entry.metroId && !isFurtherOutRoom(entry.metroId, entry.venue) ? entry.when.sort : null} metroId={entry.metroId ?? DEFAULT_METRO.id} eventId={entry.eventId}>
-        <ReadTile rating={rating} />
-      </DateReadLink>
+          A further-out stub's tile is plain too (Kylie, Oct 20, 2026). A Watched stub has no tile at all (build 7.1, M23:
+          "Watched never counts"; no number, no dash). */}
+      {!entry.watched && (
+        <DateReadLink date={entry.when.precision === 'day' && entry.metroId && !isFurtherOutRoom(entry.metroId, entry.venue) ? entry.when.sort : null} metroId={entry.metroId ?? DEFAULT_METRO.id} eventId={entry.eventId}>
+          <ReadTile rating={rating} />
+        </DateReadLink>
+      )}
     </div>
   );
 }

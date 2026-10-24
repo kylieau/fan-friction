@@ -27,6 +27,9 @@ export function FollowRow({
   away,
   cityCode,
   spoken,
+  noTile,
+  mark,
+  line,
 }: {
   date: string;
   /** The blue first line: its icon, its words, and where it goes when it is a link (a Fave's page). */
@@ -44,6 +47,12 @@ export function FollowRow({
   /** The city's code over the read tile when the date is not at home ("MSP"). */
   cityCode?: string | null;
   spoken: string;
+  /** No verdict pill at all (build 7.1, M23: a row nobody attended): no number, no dash, no city code. */
+  noTile?: boolean;
+  /** A small mark after the title (build 7.1, item 16, option A: the plan's icon on a fave's row that is also a plan). */
+  mark?: ReactNode;
+  /** One quiet line under the facts ("Friends · Sam R. Attending"; build 7.1, M22). */
+  line?: string | null;
 }) {
   const split = splitTitleLabel(title);
   return (
@@ -64,11 +73,13 @@ export function FollowRow({
         )}
         <span className="follow-title">
           <TitleText text={split.name} />
+          {mark && <span className="follow-mark">{mark}</span>}
         </span>
         {split.label && <LabelLine label={split.label} />}
         {facts && <span className="follow-facts">{facts}</span>}
+        {line && <span className="follow-line">{line}</span>}
       </span>
-      {away ? (
+      {noTile ? null : away ? (
         <span className="follow-read">
           <span className="away-tag">{away}</span>
         </span>
