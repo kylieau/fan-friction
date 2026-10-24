@@ -12637,3 +12637,108 @@ a.follow-lead::after {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* The Favorite Cities page (build 7.1, M31; mocks 20-B, 21-B): compact regular-weight rows; the ≡ handle and the grey
+   outline minus each a 44pt target; a lifted row while dragged; the add list's blue +. */
+.fav-cities-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fav-city-list,
+.fav-city-add-list {
+  list-style: none;
+  margin: 0;
+}
+.fav-city-home {
+  gap: 12px;
+}
+.fav-city-home .home-mark svg {
+  width: 18px;
+  height: 18px;
+}
+.fav-city-row {
+  min-height: 48px;
+  padding: 4px 12px 4px 4px;
+  gap: 4px;
+  justify-content: flex-start;
+}
+.fav-city-row .fav-city-name {
+  flex: 1;
+}
+.fav-city-name {
+  min-width: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ink);
+}
+.fav-city-home .fav-city-name {
+  font-weight: 700;
+}
+.fav-city-handle {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: none;
+  touch-action: none;
+  cursor: grab;
+}
+.fav-city-grip {
+  width: 18px;
+  height: 12px;
+  background: linear-gradient(var(--muted), var(--muted)) top / 100% 2px no-repeat, linear-gradient(var(--muted), var(--muted)) center / 100% 2px no-repeat, linear-gradient(var(--muted), var(--muted)) bottom / 100% 2px no-repeat;
+}
+.fav-city-row.is-dragging {
+  position: relative;
+  z-index: 1;
+  background: var(--card);
+  box-shadow: 0 6px 16px rgba(15, 27, 45, 0.18);
+}
+.fav-cities-help {
+  margin: -2px 0 4px;
+}
+.fav-city-add-row {
+  min-height: 48px;
+}
+.fav-city-plus {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid var(--action);
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--action);
+}
+
+/* City switcher rows (build 7.1, M14, Locked, Kylie, Oct 23, mock 14-c): 36pt rows, regular-weight names with the
+   current city bold, a slimmer search field, a lighter divider. Kylie's explicit size: it wins over the 44pt rule
+   (stacked rows can't take an invisible extension without overlapping); M39 must not "fix" it. */
+.area-menu button {
+  min-height: 36px;
+  padding: 6px 12px;
+  font-weight: 400;
+}
+.area-menu button[aria-selected='true'] {
+  font-weight: 700;
+}
+.area-search .search-field {
+  min-height: 36px;
+  height: 36px;
+}
+.area-divider {
+  background: color-mix(in srgb, var(--line) 55%, transparent);
+}
+/* With 36pt rows the old five-row cap cut the Edit link; the list now shows whole up to most of the screen (14-c). */
+.area-menu {
+  max-height: min(60vh, 340px);
+}
