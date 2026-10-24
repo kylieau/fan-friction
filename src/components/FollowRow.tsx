@@ -33,7 +33,7 @@ export function FollowRow({
 }: {
   date: string;
   /** The blue first line: its icon, its words, and where it goes when it is a link (a Fave's page). */
-  lead: { icon: ReactNode; text: string; to?: string; label?: string };
+  lead: { icon: ReactNode; text: string; to?: string; label?: string; /** A small grey pill after the words ("Season"; build 7.1, item 15). */ tag?: string };
   title: string;
   facts: string;
   /** Where the words open: the event page, or the date page when the app holds no event; nothing when the row has no city to open. */
@@ -69,6 +69,7 @@ export function FollowRow({
           <span className="follow-lead">
             {lead.icon}
             <span className="follow-lead-text">{lead.text}</span>
+            {lead.tag && <span className="follow-lead-tag">{lead.tag}</span>}
           </span>
         )}
         <span className="follow-title">

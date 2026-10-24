@@ -12,12 +12,17 @@ import { EditFavoritesSheet } from '../components/EditFavoritesSheet';
 import { favoriteName } from '../components/FavoriteBadge';
 import { friendStubState } from '../components/FeedRow';
 import {
+  answerSeasonPlayoff,
   favoriteDisplayName,
   favoriteKey,
   favoritesOf,
   followingFeedWithStatus,
   getAccount,
   getPersonalLog,
+  getTeamSchedule,
+  seasonPlayoffGames,
+  seatShort,
+  TEAMS,
   isFurtherOut,
   isFurtherOutRoom,
   isOutsideGame,
@@ -31,6 +36,7 @@ import {
   type Favorite,
   type FeedItem,
   type Plan,
+  type TeamGame,
 } from '../data';
 import { addDays, clockTime, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
@@ -159,6 +165,27 @@ export function UpcomingScreen() {
       current = false;
     };
   }, [account?.id]);
+
+  // Season tickets (item 15): each season team's schedule, for the home playoff card above Your Plans (20-r2).
+  const seasonTeamIds = (log.seasonTickets ?? []).filter((t) => t.on).map((t) => t.teamId).join(',');
+  const [seasonSchedules, setSeasonSchedules] = useState<Map<string, TeamGame[]>>(new Map());
+  useEffect(() => {
+    let current = true;
+    const ids = seasonTeamIds ? seasonTeamIds.split(',') : [];
+    Promise.all(ids.map(async (teamId) => [teamId, (await getTeamSchedule(teamId)) ?? []] as const)).then((pairs) => current && setSeasonSchedules(new Map(pairs)));
+    return () => {
+      current = false;
+    };
+  }, [seasonTeamIds]);
+  const playoff = useMemo(() => {
+    for (const ticket of log.seasonTickets ?? []) {
+      if (!ticket.on) continue;
+      const games = seasonSchedules.get(ticket.teamId) ?? [];
+      const game = seasonPlayoffGames(games).find((g) => g.date >= today && !(ticket.declined ?? []).includes(g.id) && !log.plans.some((plan) => plan.eventId === (g.eventId ?? `${g.date}-game-${g.id}`)));
+      if (game) return { teamId: ticket.teamId, game };
+    }
+    return null;
+  }, [log, seasonSchedules, today]);
 
   // The date range the filter asks for; "All upcoming" is no range at all, so the past stays above the line.
   const range = useMemo(() => dateRange(filter.dates, today), [filter.dates, today]);
@@ -329,6 +356,25 @@ export function UpcomingScreen() {
       ) : (
         <div className="timeline-body">
           <div ref={scroller} className="timeline-scroll upcoming-scroll" aria-label="Upcoming">
+            {playoff && filter.plans && (
+              <section className="card playoff-card" aria-label="Home playoff game set">
+                <span className="follow-lead playoff-lead">
+                  <TicketIcon size={13} />
+                  <span className="follow-lead-text">Season Tickets · Playoffs</span>
+                </span>
+                <h2 className="playoff-title">Home Playoff Game Set</h2>
+                <p className="playoff-sub">{[`${playoff.game.opponent} at ${TEAMS[playoff.teamId]?.shortName ?? playoff.teamId}`, [playoff.game.stakes?.round, playoff.game.stakes?.game ? `Game ${playoff.game.stakes.game}` : null].filter(Boolean).join(' '), shortLocalDate(playoff.game.date)].filter(Boolean).join(' · ')}</p>
+                <div className="playoff-actions">
+                  <button type="button" className="gold-button small" onClick={() => answerSeasonPlayoff(playoff.teamId, playoff.game, true)}>
+                    Add as Attending
+                  </button>
+                  <button type="button" className="season-outline-button" onClick={() => answerSeasonPlayoff(playoff.teamId, playoff.game, false)}>
+                    Not this one
+                  </button>
+                </div>
+                <p className="you-fine playoff-note">Seat prefilled from your default; no price (playoffs are billed apart).</p>
+              </section>
+            )}
             {filter.plans && (
               <section className="upcoming-plans" aria-label="Your Plans">
                 {/* The 44pt band strip: a full touch target above the box; the count only when the box scrolls (item 16). */}
@@ -490,9 +536,10 @@ function PlanBandRow({ plan, event, start, favorites, rating, home }: { plan: Pl
   return (
     <FollowRow
       date={plan.date}
-      lead={{ icon, text: fave ? `${PLAN_WORDS[kind]} · ${favoriteDisplayName(fave)}` : PLAN_WORDS[kind] }}
+      lead={{ icon, text: fave ? `${PLAN_WORDS[kind]} · ${favoriteDisplayName(fave)}` : PLAN_WORDS[kind], ...(plan.season ? { tag: plan.season.gone ? 'Not on the schedule' : 'Season' } : {}) }}
       title={plan.title}
-      facts={[start ? clockTime(start) : null, plan.venue, city].filter(Boolean).join(' · ')}
+      // A season game's row carries its seat (item 15; 20-r2): "7:10 pm · Dodger Stadium · Sec 48".
+      facts={[start ? clockTime(start) : null, plan.venue, city, plan.season ? seatShort(plan.seats) || null : null].filter(Boolean).join(' · ')}
       to={to}
       rating={noRead ? null : rating}
       readTo={noRead ? null : readPath(plan.date, plan.metroId, plan.eventId)}
