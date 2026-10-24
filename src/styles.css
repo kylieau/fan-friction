@@ -12182,3 +12182,266 @@ a.follow-lead::after {
 .playoff-note {
   margin: 0;
 }
+
+/* ---------- Profile & Settings, direction D (build 7.1, M19, M18, M30, M40; mocks 05, 18, 2-c) ---------- */
+.pinned-head {
+  position: sticky;
+  top: calc(-14px - env(safe-area-inset-top, 0px));
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin: calc(-14px - env(safe-area-inset-top, 0px)) -16px 0;
+  padding: calc(14px + env(safe-area-inset-top, 0px)) 16px 6px;
+  background: var(--bg);
+  border-bottom: 1px solid transparent;
+  transition: box-shadow 160ms ease, border-color 160ms ease;
+}
+.pinned-head.is-scrolled {
+  border-bottom-color: color-mix(in srgb, var(--ink) 14%, var(--bg));
+  box-shadow: 0 4px 12px rgba(15, 27, 45, 0.07);
+}
+.pinned-back {
+  flex: none;
+  min-height: 44px;
+  color: var(--action);
+}
+.pinned-title {
+  flex: 1;
+  min-width: 0;
+  font-size: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.settings-page {
+  gap: 14px;
+}
+.settings-group {
+  padding: 0;
+  overflow: hidden;
+}
+.settings-group-label {
+  margin: 0 0 8px;
+}
+.settings-block-d {
+  display: flex;
+  flex-direction: column;
+}
+.settings-group-row {
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 16px;
+  border-radius: 0;
+  gap: 12px;
+}
+.settings-group > * + *,
+.profile-card-d > .settings-group-row {
+  border-top: 1px solid color-mix(in srgb, var(--ink) 8%, var(--card));
+}
+.settings-row-words {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+.settings-row-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.settings-row-title svg {
+  color: var(--action);
+}
+.settings-row-sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink2);
+}
+.settings-row-side {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 10px;
+  max-width: 55%;
+}
+.settings-chevron {
+  font-size: 22px;
+  line-height: 1;
+  color: var(--action);
+}
+.settings-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 9px;
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+}
+.settings-badge.on {
+  background: var(--action);
+  color: var(--card);
+}
+.settings-disclosure-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0 0 6px;
+  background: color-mix(in srgb, var(--ink) 3%, var(--card));
+}
+.settings-disclosure-body .settings-row {
+  border-radius: 0;
+  background: none;
+}
+.settings-disclosure-body .you-fine {
+  padding: 6px 16px;
+}
+/* The summary row (M18): two names and "+N more", the names cut, the "more" and the count never. */
+.summary-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+.summary-pills {
+  display: flex;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
+}
+.summary-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  max-width: 170px;
+}
+.summary-pill svg {
+  flex: none;
+  color: var(--action);
+}
+.summary-more {
+  flex: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+.summary-empty {
+  font-size: 13px;
+  color: var(--ink2);
+}
+.summary-link {
+  font-weight: 700;
+  color: var(--action);
+}
+.summary-avatars {
+  display: inline-flex;
+}
+.summary-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  font-size: 12px;
+  border: 2px solid var(--card);
+}
+.summary-avatar + .summary-avatar {
+  margin-left: -8px;
+}
+/* The profile card (05). */
+.profile-card-d {
+  padding: 0;
+  overflow: hidden;
+}
+.profile-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+}
+.profile-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 22px;
+}
+.profile-card-name {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+}
+.profile-card-buttons {
+  display: inline-flex;
+  flex: none;
+  gap: 8px;
+}
+.profile-pill {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1.5px solid var(--action);
+  border-radius: 14px;
+  background: none;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--action);
+}
+.profile-card-note {
+  padding: 0 16px 8px;
+}
+.profile-home-value {
+  color: var(--ink);
+  font-size: 15px;
+}
+.profile-change {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--action);
+}
+/* Temperature Units (M40): a 112 × 44 control, two 56 × 44 halves, radius 22, the chosen half dodger blue. */
+.unit-control {
+  display: inline-flex;
+  flex: none;
+  width: 112px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--track);
+  overflow: hidden;
+}
+.unit-control button {
+  width: 56px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background: none;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink2);
+}
+.unit-control button.on {
+  background: var(--dodger);
+  color: var(--card);
+}
+.settings-sub-page .settings {
+  gap: 6px;
+}

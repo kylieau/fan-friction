@@ -11,11 +11,12 @@ import { SearchIcon } from './Icons';
  * location, Kylie, Oct 5), each favorite with a minus, and "+ Add city" with a search. These are what the city
  * switcher shows under Home.
  */
-export function FavoriteCitiesSection() {
+export function FavoriteCitiesSection({ openHome = false }: { openHome?: boolean } = {}) {
   const home = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const favorites = favoriteCitiesOf(log).filter((id) => id !== home && METROS[id]);
-  const [mode, setMode] = useState<'closed' | 'home' | 'add'>('closed');
+  // The profile card's Change opens straight onto the home picker (M11).
+  const [mode, setMode] = useState<'closed' | 'home' | 'add'>(openHome ? 'home' : 'closed');
   const [query, setQuery] = useState('');
   const typed = query.trim().toLowerCase();
   const choices = metrosWithEvents().filter((city) => (mode === 'home' ? city.id !== home : city.id !== home && !favorites.includes(city.id)) && metroMatchesSearch(city, typed));
