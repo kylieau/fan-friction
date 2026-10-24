@@ -151,9 +151,9 @@ async function earliestEventDay(metroId: string, floor: LocalDate, before: Local
     .reduce<LocalDate | null>((min, e) => (min === null || e.date < min ? e.date : min), null);
 }
 
-/** One Monday-to-Sunday week of a city's days, each with its events and read, for the List and its calendar. */
-export async function getListWeek(metroId: string, monday: LocalDate): Promise<CityDate[]> {
-  return Promise.all(weekOf(monday).map((date) => getCityDate(metroId, date)));
+/** One Sunday-to-Saturday week of a city's days, each with its events and read, for the List and its calendar. */
+export async function getListWeek(metroId: string, weekStart: LocalDate): Promise<CityDate[]> {
+  return Promise.all(weekOf(weekStart).map((date) => getCityDate(metroId, date)));
 }
 
 /**

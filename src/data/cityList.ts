@@ -15,19 +15,22 @@ export function firstCaptureDay(metroId: string): LocalDate | null {
   return first;
 }
 
-/** The Monday on or before a date. Weeks run Monday to Sunday (build notes 4, 1.4). */
-export function mondayOf(date: LocalDate): LocalDate {
+/**
+ * The Sunday on or before a date. Weeks run Sunday to Saturday (build 7.1, M29; Kylie, Oct 23, 2026), as the
+ * Calendar tab and Your Stubs already did; this replaced build notes 4's Monday-first weeks (1.4).
+ */
+export function weekStartOf(date: LocalDate): LocalDate {
   const [y, m, d] = date.split('-').map(Number);
   const weekday = new Date(Date.UTC(y, m - 1, d)).getUTCDay(); // 0 = Sunday
-  return addDays(date, -((weekday + 6) % 7));
+  return addDays(date, -weekday);
 }
 
-/** Seven days from a Monday. */
-export function weekOf(monday: LocalDate): LocalDate[] {
-  return Array.from({ length: 7 }, (_, i) => addDays(monday, i));
+/** Seven days from a week's first day (a Sunday). */
+export function weekOf(weekStart: LocalDate): LocalDate[] {
+  return Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
 }
 
-/** Whole weeks from one Monday to another. */
+/** Whole weeks from one week start to another. */
 export function weeksBetween(from: LocalDate, to: LocalDate): number {
   return Math.round(daysBetween(from, to) / 7);
 }

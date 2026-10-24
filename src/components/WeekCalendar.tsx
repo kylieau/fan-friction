@@ -9,7 +9,8 @@ export interface CalendarRead {
   hasEvents: boolean;
 }
 
-const WEEKDAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+// Sunday first (build 7.1, M29; Kylie, Oct 23, 2026), like the Calendar tab and Your Stubs.
+const WEEKDAYS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 const MONTH = (date: string, style: 'long' | 'short') => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { month: style, timeZone: 'UTC' });
 
 /** "October 2026", or "Oct – Nov 2026" when the rows span two months (V05). */
@@ -36,7 +37,7 @@ const AHEAD_ROWS = 5;
  * number, and past days keep the color faded; a legend under the grid names the pairs.
  */
 export function WeekCalendar({
-  mondays,
+  weekStarts,
   reads,
   today,
   range,
@@ -44,8 +45,8 @@ export function WeekCalendar({
   onPick,
   onNeed,
 }: {
-  /** Every week of the city's range, Monday first. */
-  mondays: string[];
+  /** Every week of the city's range, by its first day (a Sunday). */
+  weekStarts: string[];
   reads: ReadonlyMap<string, CalendarRead>;
   today: string;
   range: { from: string; to?: string; through: string };
@@ -53,12 +54,12 @@ export function WeekCalendar({
   topDate: string;
   onPick: (date: string) => void;
   /** The weeks whose reads this calendar wants now (visible and just ahead). */
-  onNeed: (mondays: string[]) => void;
+  onNeed: (weekStarts: string[]) => void;
 }) {
   const scroller = useRef<HTMLDivElement>(null);
   const holdUntil = useRef(0);
   const programmatic = useRef(0);
-  const leadIndex = Math.max(0, mondays.findIndex((m) => topDate >= m && topDate <= addDays(m, 6)));
+  const leadIndex = Math.max(0, weekStarts.findIndex((m) => topDate >= m && topDate <= addDays(m, 6)));
   const [firstRow, setFirstRow] = useState(leadIndex);
 
   const rowHeight = () => (scroller.current?.firstElementChild as HTMLElement | null)?.offsetHeight ?? 44;
@@ -73,13 +74,13 @@ export function WeekCalendar({
   const middleOf = (index: number) => Math.max(0, index - 1);
 
   // First paint and a new city: the list's week in the middle row, no animation.
-  const first = mondays[0];
+  const first = weekStarts[0];
   useEffect(() => {
     scrollToRow(middleOf(leadIndex), false);
     setFirstRow(middleOf(leadIndex));
-    onNeed(mondays.slice(middleOf(leadIndex), middleOf(leadIndex) + AHEAD_ROWS));
+    onNeed(weekStarts.slice(middleOf(leadIndex), middleOf(leadIndex) + AHEAD_ROWS));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [first, mondays.length]);
+  }, [first, weekStarts.length]);
 
   // The list moved to another week: follow it, unless a finger was just on the calendar.
   useEffect(() => {
@@ -117,7 +118,7 @@ export function WeekCalendar({
       scheduleSync();
     }
     setFirstRow((cur) => (cur === index ? cur : index));
-    onNeed(mondays.slice(index, index + AHEAD_ROWS));
+    onNeed(weekStarts.slice(index, index + AHEAD_ROWS));
   };
   const hold = () => {
     holdUntil.current = Date.now() + HOLD_MS;
@@ -125,9 +126,9 @@ export function WeekCalendar({
   };
 
   // The month label follows this calendar's own rows, not the list.
-  const topMonday = mondays[Math.min(firstRow, Math.max(0, mondays.length - 1))] ?? topDate;
-  const lastShown = addDays(mondays[Math.min(firstRow + 2, mondays.length - 1)] ?? topMonday, 6);
-  const label = calendarLabel(topMonday, lastShown);
+  const topWeek = weekStarts[Math.min(firstRow, Math.max(0, weekStarts.length - 1))] ?? topDate;
+  const lastShown = addDays(weekStarts[Math.min(firstRow + 2, weekStarts.length - 1)] ?? topWeek, 6);
+  const label = calendarLabel(topWeek, lastShown);
 
   return (
     <section className="week-calendar" aria-label="Calendar">
@@ -139,9 +140,9 @@ export function WeekCalendar({
       </div>
       <div className="week-calendar-viewport">
         <div className="week-calendar-scroll" ref={scroller} onScroll={onScroll} onWheel={hold} onTouchMove={hold}>
-          {mondays.map((monday) => (
-            <div className="week-calendar-row" key={monday}>
-              {weekOf(monday).map((date) => {
+          {weekStarts.map((weekStart) => (
+            <div className="week-calendar-row" key={weekStart}>
+              {weekOf(weekStart).map((date) => {
                 const read = reads.get(date);
                 const inRange = date >= range.from && date <= range.through;
                 const past = date < today;

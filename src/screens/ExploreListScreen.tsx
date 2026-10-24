@@ -20,7 +20,7 @@ import {
   splitByRange,
 } from '../data';
 import { addDays } from '../lib/dates';
-import { mondayOf } from '../data/cityList';
+import { weekStartOf } from '../data/cityList';
 import { friendsLine, yourActivity } from '../lib/activity';
 import { getPref } from '../lib/prefs';
 import { datePath, mapPath, useView } from '../lib/view';
@@ -186,9 +186,9 @@ export function ExploreListScreen() {
   }, [target]);
 
   const loadWeeks = useCallback(
-    (mondays: string[]) => {
+    (weekStarts: string[]) => {
       const forMetro = metro.id;
-      const need = mondays.filter((m) => !loading.current.has(m));
+      const need = weekStarts.filter((m) => !loading.current.has(m));
       need.forEach((m) => loading.current.add(m));
       return Promise.all(need.map((m) => getListWeek(forMetro, m).then((days) => [m, days] as const))).then((rows) => {
         if (metroRef.current !== forMetro) return;
@@ -206,8 +206,8 @@ export function ExploreListScreen() {
     [metro.id],
   );
 
-  const rangeFirstMonday = range ? mondayOf(range.from) : null;
-  const rangeLastMonday = range ? mondayOf(range.through) : null;
+  const rangeFirstWeek = range ? weekStartOf(range.from) : null;
+  const rangeLastWeek = range ? weekStartOf(range.through) : null;
 
   // A target outside the range (a famous date, say) cannot be shown here: the Map shows any day.
   useEffect(() => {
@@ -226,17 +226,17 @@ export function ExploreListScreen() {
   // The first weeks: from the remembered place, else the target day's week and a few after it.
   useEffect(() => {
     if (!range || target < range.from || target > range.through) return;
-    const anchor = mondayOf(memory.current?.topDate ?? target);
-    const first = rangeFirstMonday && anchor < rangeFirstMonday ? rangeFirstMonday : anchor;
+    const anchor = weekStartOf(memory.current?.topDate ?? target);
+    const first = rangeFirstWeek && anchor < rangeFirstWeek ? rangeFirstWeek : anchor;
     const list: string[] = [];
-    for (let m = first; m <= addDays(mondayOf(target), FIRST_AHEAD * 7) && m <= (rangeLastMonday ?? m); m = addDays(m, 7)) list.push(m);
+    for (let m = first; m <= addDays(weekStartOf(target), FIRST_AHEAD * 7) && m <= (rangeLastWeek ?? m); m = addDays(m, 7)) list.push(m);
     void loadWeeks(list);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [range]);
 
-  const mondays = useMemo(() => [...weeks.keys()].sort(), [weeks]);
-  const firstLoaded = mondays[0];
-  const lastLoaded = mondays[mondays.length - 1];
+  const weekStarts = useMemo(() => [...weeks.keys()].sort(), [weeks]);
+  const firstLoaded = weekStarts[0];
+  const lastLoaded = weekStarts[weekStarts.length - 1];
   firstLoadedRef.current = firstLoaded;
 
   // The crowd size range (build 5, item 6): each band's rows show only what's in range, with its own
@@ -253,8 +253,8 @@ export function ExploreListScreen() {
   const days = useMemo(() => {
     const out: { date: string; day: CityDate; events: CrowdEvent[]; hidden: number; further: CrowdEvent[] }[] = [];
     if (!range) return out;
-    for (const monday of mondays) {
-      for (const day of weeks.get(monday) ?? []) {
+    for (const weekStart of weekStarts) {
+      for (const day of weeks.get(weekStart) ?? []) {
         if (day.date < range.from || day.date > range.through) continue;
         const all = day.events.filter(showsOnMap);
         const further = (day.furtherOut ?? []).filter((e) => !furtherOff || keep.has(e.id));
@@ -266,7 +266,7 @@ export function ExploreListScreen() {
     }
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [weeks, mondays, range, revealed, keep, furtherOff, crowdRange.min, crowdRange.max, crowdRange.showUnknown]);
+  }, [weeks, weekStarts, range, revealed, keep, furtherOff, crowdRange.min, crowdRange.max, crowdRange.showUnknown]);
 
   // Keep the place when earlier weeks are added above: the scroll moves by the height they take.
   useLayoutEffect(() => {
@@ -280,28 +280,28 @@ export function ExploreListScreen() {
   }, [firstLoaded]);
 
   const loadEarlier = useCallback(() => {
-    if (!firstLoaded || !rangeFirstMonday || firstLoaded <= rangeFirstMonday) return;
+    if (!firstLoaded || !rangeFirstWeek || firstLoaded <= rangeFirstWeek) return;
     const el = scroller.current;
     if (el) beforeAdd.current = anchorNow(el);
     const list: string[] = [];
     for (let i = 1; i <= STEP; i++) {
       const m = addDays(firstLoaded, -7 * i);
-      if (m >= rangeFirstMonday) list.push(m);
+      if (m >= rangeFirstWeek) list.push(m);
     }
     void loadWeeks(list);
-  }, [firstLoaded, rangeFirstMonday, loadWeeks]);
+  }, [firstLoaded, rangeFirstWeek, loadWeeks]);
 
   const loadLater = useCallback(
     (through = STEP) => {
-      if (!lastLoaded || !rangeLastMonday || lastLoaded >= rangeLastMonday) return;
+      if (!lastLoaded || !rangeLastWeek || lastLoaded >= rangeLastWeek) return;
       const list: string[] = [];
       for (let i = 1; i <= through; i++) {
         const m = addDays(lastLoaded, 7 * i);
-        if (m <= rangeLastMonday) list.push(m);
+        if (m <= rangeLastWeek) list.push(m);
       }
       void loadWeeks(list);
     },
-    [lastLoaded, rangeLastMonday, loadWeeks],
+    [lastLoaded, rangeLastWeek, loadWeeks],
   );
 
   // Scroll to the pending day once its week is loaded and it has rows; if it has none, to the next day
@@ -313,13 +313,13 @@ export function ExploreListScreen() {
       setPending(null);
       return;
     }
-    const wantMonday = mondayOf(pending.date);
-    if (!weeks.has(wantMonday) || (firstLoaded && wantMonday < firstLoaded) || (lastLoaded && wantMonday > lastLoaded)) {
+    const wantWeek = weekStartOf(pending.date);
+    if (!weeks.has(wantWeek) || (firstLoaded && wantWeek < firstLoaded) || (lastLoaded && wantWeek > lastLoaded)) {
       // Every week between what is loaded and the target, so earlier and later weeks stay in order.
       const list: string[] = [];
-      if (firstLoaded && wantMonday < firstLoaded) for (let m = wantMonday; m < firstLoaded; m = addDays(m, 7)) list.push(m);
-      else if (lastLoaded && wantMonday > lastLoaded) for (let m = addDays(lastLoaded, 7); m <= wantMonday; m = addDays(m, 7)) list.push(m);
-      else list.push(wantMonday);
+      if (firstLoaded && wantWeek < firstLoaded) for (let m = wantWeek; m < firstLoaded; m = addDays(m, 7)) list.push(m);
+      else if (lastLoaded && wantWeek > lastLoaded) for (let m = addDays(lastLoaded, 7); m <= wantWeek; m = addDays(m, 7)) list.push(m);
+      else list.push(wantWeek);
       void loadWeeks(list);
       return;
     }
@@ -334,7 +334,7 @@ export function ExploreListScreen() {
       updatePill(el);
       return;
     }
-    if (rangeLastMonday && lastLoaded && lastLoaded < rangeLastMonday) {
+    if (rangeLastWeek && lastLoaded && lastLoaded < rangeLastWeek) {
       void loadWeeks([addDays(lastLoaded, 7)]);
       return;
     }
@@ -429,12 +429,12 @@ export function ExploreListScreen() {
     }
     return out;
   }, [weeks, calWeeks]);
-  const allMondays = useMemo(() => {
-    if (!rangeFirstMonday || !rangeLastMonday) return [] as string[];
+  const allWeekStarts = useMemo(() => {
+    if (!rangeFirstWeek || !rangeLastWeek) return [] as string[];
     const out: string[] = [];
-    for (let m = rangeFirstMonday; m <= rangeLastMonday; m = addDays(m, 7)) out.push(m);
+    for (let m = rangeFirstWeek; m <= rangeLastWeek; m = addDays(m, 7)) out.push(m);
     return out;
-  }, [rangeFirstMonday, rangeLastMonday]);
+  }, [rangeFirstWeek, rangeLastWeek]);
 
   const pickDay = (date: string) => setPending({ date, smooth: true });
 
@@ -458,7 +458,7 @@ export function ExploreListScreen() {
         <ExploreHeader metro={metro} areaOpen={areaOpen} onAreaOpenChange={setAreaOpen}>
           <ExploreModeSwitch view="list" />
         </ExploreHeader>
-        {range && allMondays.length > 0 && <WeekCalendar mondays={allMondays} reads={reads} today={today} range={range} topDate={topDate} onPick={pickDay} onNeed={needWeeks} />}
+        {range && allWeekStarts.length > 0 && <WeekCalendar weekStarts={allWeekStarts} reads={reads} today={today} range={range} topDate={topDate} onPick={pickDay} onNeed={needWeeks} />}
       </div>
       <div className="explore-list-body">
         {pill && (
