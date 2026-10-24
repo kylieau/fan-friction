@@ -309,7 +309,7 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Los_Angeles',
     center: [-115.172, 36.115],
     // Las Vegas City Hall.
-    downtowns: [[-115.13902, 36.17245]],
+    downtowns: [[-115.1485, 36.16730]],
     zoom: 11,
   },
   // Covered Oct 12, 2026 (docs/research/city-builds/kansas-city/kansas-city-venue-table-answer.md): bi-state Kansas City

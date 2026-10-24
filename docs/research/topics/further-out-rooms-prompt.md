@@ -470,3 +470,84 @@ Sacramento. Rooms on file; largest setup on file:
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 7 (Oct 23, 2026): from Las Vegas
+
+Status: delivery 7 (Cleveland, Nashville, Austin, Sacramento) is saved as `further-out-rooms-answer-7.md`. Next: Las Vegas, Kansas City, Indianapolis, New Orleans. Save the answer as `further-out-rooms-answer-8.md`.
+
+```
+Continue the Further out research from Las Vegas, in the brief's order: Las Vegas, Kansas City, Indianapolis, New Orleans. Deliver this as Delivery 8, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries. Keep everything Delivery 7 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), one recommended capacity per row with its label, a decimal coordinate pair for every room, a reproducible hall-to-room route for every row, the hold markers you used (INNER-BOUNDARY, OUTER-BOUNDARY, CAPACITY, DATA, PROVISIONAL INSIDE), the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region names as location only. One request: before calling a room new, check the on-file list below under other spellings and former names (Delivery 7 listed a stadium already on file under a hyphenated spelling).
+
+City halls (use these points, latitude first): Las Vegas, City Hall, 495 South Main Street (36.1673, -115.1485); Kansas City, City Hall, 414 East 12th Street (39.1006, -94.5779); Indianapolis, City-County Building, 200 East Washington Street (39.7680, -86.1535); New Orleans, City Hall, 1300 Perdido Street (29.9521, -90.0773).
+
+The app already has these rooms. Do not list them again; any other room is yours to check by its own hall drive.
+
+Las Vegas. Rooms on file; largest setup on file:
+- Las Vegas Motor Speedway; 80,000
+- Allegiant Stadium; 65,000
+- T-Mobile Arena; 18,000
+- Thomas & Mack Center; 18,000
+- Sphere; 17,600
+- MGM Grand Garden Arena; 16,800
+- Michelob ULTRA Arena; 12,000
+- Downtown Las Vegas Events Center; 11,000
+- Cashman Field; 10,000
+- Las Vegas Ballpark; 10,000
+- Orleans Arena; 9,500
+- LVMS Dirt Track; 8,200
+- PH Live; 7,000
+- Lee's Family Forum; 5,567
+- LVMS Bullring; 5,400
+- Resorts World Theatre; 5,000
+- Dolby Live, Amphitheater at Craig Ranch Regional Park; no capacity on file
+- South Point Arena, BleauLive Theater, The Pavilion, Peter Johann Memorial Field; all under 5,000
+(Los Angeles is a covered city; its Coachella Valley rooms are on file as Further out: Indian Wells Tennis Garden's Stadiums 1 and 2, Acrisure Arena, McCallum Theatre, Fantasy Springs, Empire Polo Club, The Show. Primm, Laughlin, Mesquite, St. George and Lake Havasu are yours to check by their drives.)
+
+Kansas City. Rooms on file; largest setup on file:
+- Arrowhead Stadium; 76,416
+- Kansas Speedway; 48,000
+- Kauffman Stadium; 37,903
+- Sporting Park; 25,000
+- T-Mobile Center; 19,252
+- Azura Amphitheater; 18,000
+- CPKC Stadium; 11,500
+- Starlight Theatre; 7,739
+- Municipal Auditorium Arena; 7,316
+- Legends Field; 6,537
+- Cable Dahmer Arena; 5,800
+- Hale Arena; 5,000
+- Arvest Bank Theatre at The Midland; no capacity on file
+- Hy-Vee Arena, The Theatre in the Park, Grinders, Uptown Theater, Kansas City Music Hall, Muriel Kauffman Theatre, Helzberg Hall, Swinney Recreation Center, Cohen Community Stage, The Truman, Folly Theater; all under 5,000
+(St. Louis is a covered city. Lawrence, Columbia, Manhattan, Topeka, St. Joseph and Warrensburg are yours to check by their drives.)
+
+Indianapolis. Rooms on file; largest setup on file:
+- Lucas Oil Stadium; 70,000
+- Lucas Oil Raceway at Indianapolis; 30,000
+- Ruoff Music Center; 24,790
+- Gainbridge Fieldhouse; 18,274
+- Victory Field; 14,230
+- Carroll Stadium; 12,111
+- Hinkle Fieldhouse; 9,100
+- Fishers Event Center; 7,500
+- Everwise Amphitheater at White River State Park; 6,000
+- Sellick Bowl; 5,647
+- Key Stadium; 5,500
+- Already Further out: TQL Stadium (Cincinnati); Fred C. Yager Stadium and Millett Hall (Oxford)
+- Indianapolis Motor Speedway, Indiana Farmers Coliseum; no capacity on file
+- James T. Morris Arena, Nicoson Hall, The Arena at Innovation Mile, Old National Centre, Clowes Memorial Hall, Egyptian Room at Old National Centre, Hilbert Circle Theatre, The Palladium, IU Indy Gymnasium; all under 5,000
+(Chicago, Columbus, Detroit, Nashville and St. Louis are covered cities. Already on file as Further out for them: the Cincinnati rooms (Paycor Stadium, Great American Ball Park, Nippert Stadium, Heritage Bank Center, Fifth Third Arena, Cintas Center, Riverbend Music Center, Truist Arena, MegaCorp Pavilion, Lindner Family Tennis Center), the Dayton rooms (UD Arena, Welcome Stadium, Day Air Ballpark, Nutter Center), Eldora Speedway, Hobart Arena, Donnell Stadium (Findlay), Notre Dame Stadium, Compton Family Ice Arena, Four Winds Field, Valparaiso's two, La Porte's grandstand, the Stardust Event Center (Michigan City), Evansville's Ford Center and Bosse Field, and the Owensboro Sportscenter. Bloomington, West Lafayette, Muncie, Terre Haute, Fort Wayne, Louisville and Lexington are yours to check by their drives.)
+
+New Orleans. Rooms on file; largest setup on file:
+- Caesars Superdome; 83,000
+- Benson Field at Yulman Stadium; 30,000
+- Tad Gormley Stadium; 26,500
+- Smoothie King Center; 17,791
+- Fair Grounds Race Course; 10,000
+- Lakefront Arena; 8,785
+- Greer Field at Turchin Stadium; 5,000
+- Orpheum Theater; no capacity on file
+- Pan American Stadium, Fogelman Arena in Devlin Fieldhouse, New Orleans Theater, Pontchartrain Center, Maestri Field at Privateer Park, Saenger Theatre, Alario Sr. Event Center, Mahalia Jackson Theater for the Performing Arts, The Fillmore New Orleans, Human Performance Center, Joy Theater, Civic Theatre, House of Blues New Orleans; all under 5,000
+(Houston is a covered city. Baton Rouge, Hammond, Thibodaux, Lafayette, Biloxi, Gulfport, Hattiesburg and Mobile are yours to check by their drives.)
+
+Stop at a clean break and say where you stopped.
+```

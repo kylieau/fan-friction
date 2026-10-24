@@ -22870,6 +22870,751 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 1714, setup: 'concert', note: 'Official, the research\'s figure. docs/research/city-builds/small-rooms-big-cities-answer-7.md.' }],
     roof: 'indoor',
   },
+  // ---- Further out delivery 7 (docs/research/topics/further-out-rooms-answer-7.md: Cleveland, Nashville, Austin,
+  // Sacramento), folded Oct 23, 2026 the same way as deliveries 1–6. Each room sits on the side the drive-time rule puts
+  // it, filed under its nearest covered city (Youngstown's and Canfield's are Pittsburgh's, Mansfield's Columbus's,
+  // Clarion's Pittsburgh's). Inside a city: Akron's three rooms, Kent's M.A.C. Center (61 min), Parma, Berea, University
+  // Heights and the SPIRE field house for Cleveland; Clarksville's two for Nashville; COTA, Zilker Park, Auditorium
+  // Shores and the school stadiums for Austin. Not imported: the leads the research kept out of its tables, and five
+  // already on file (Mihalik–Thompson Stadium, Finley Stadium, McKenzie Arena, Erlanger Park, Cub Stadium). ----
+  'dix-stadium': {
+    id: 'dix-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Dix Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-81.313675, 41.139027],
+    ticketmasterIds: ['KovZpZAFdtvA'],
+    capacity: [{ seats: 25319, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 65, how: 'routed', town: 'Kent' },
+  },
+  'stambaugh-stadium': {
+    id: 'stambaugh-stadium',
+    metroId: 'pittsburgh',
+    names: [{ name: 'Stambaugh Stadium' }],
+    aliases: ['Beede Field'],
+    // The research's map point; not an entrance.
+    location: [-80.649551, 41.109486],
+    ticketmasterIds: ['KovZ917AG9f'],
+    capacity: [{ seats: 20630, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 85, how: 'routed', town: 'Youngstown' },
+  },
+  'arlin-field': {
+    id: 'arlin-field',
+    metroId: 'columbus',
+    names: [{ name: 'Arlin Field' }],
+    aliases: ['Tyger Stadium'],
+    // The research's map point; not an entrance.
+    location: [-82.550683, 40.764828],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Mansfield' },
+  },
+  'erie-veterans-memorial-stadium': {
+    id: 'erie-veterans-memorial-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Erie Veterans Memorial Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-80.072378, 42.111434],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 122, how: 'routed', town: 'Erie' },
+  },
+  'erie-insurance-arena': {
+    id: 'erie-insurance-arena',
+    metroId: 'cleveland',
+    names: [{ name: 'Erie Insurance Arena' }],
+    // The research's map point; not an entrance.
+    location: [-80.08094, 42.127856],
+    ticketmasterIds: ['KovZpZA7dnnA'],
+    capacity: [{ seats: 9000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 123, how: 'routed', town: 'Erie' },
+  },
+  'covelli-centre': {
+    id: 'covelli-centre',
+    metroId: 'pittsburgh',
+    names: [{ name: 'Covelli Centre' }],
+    // The research's map point; not an entrance.
+    location: [-80.647821, 41.096237],
+    ticketmasterIds: ['KovZpZA6A1nA'],
+    capacity: [{ seats: 7000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 83, how: 'routed', town: 'Youngstown' },
+  },
+  'm-a-c-center': {
+    id: 'm-a-c-center',
+    metroId: 'cleveland',
+    names: [{ name: 'M.A.C. Center' }],
+    aliases: ['Memorial Athletic and Convocation Center'],
+    // The research's map point; not an entrance.
+    location: [-81.344003, 41.148186],
+    capacity: [{ seats: 6327, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'upmc-park': {
+    id: 'upmc-park',
+    metroId: 'cleveland',
+    names: [{ name: 'Jerry Uht Park' }, { name: 'UPMC Park', from: '2016-09-19' }],
+    // The research's map point; not an entrance.
+    location: [-80.080166, 42.127141],
+    ticketmasterIds: ['ZFr9jZkeAa'],
+    capacity: [{ seats: 6300, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 122, how: 'routed', town: 'Erie' },
+  },
+  'canfield-fair-grandstand': {
+    id: 'canfield-fair-grandstand',
+    metroId: 'pittsburgh',
+    names: [{ name: 'Canfield Fair Grandstand' }],
+    // The research's map point; not an entrance.
+    location: [-80.751416, 41.010242],
+    capacity: [{ seats: 6200, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'covered',
+    furtherOut: { driveMinutes: 87, how: 'routed', town: 'Canfield Twp.' },
+  },
+  '717-credit-union-field-at-eastwood': {
+    id: '717-credit-union-field-at-eastwood',
+    metroId: 'cleveland',
+    names: [{ name: 'Eastwood Field' }, { name: '717 Credit Union Field at Eastwood', from: '2026-01-01' }],
+    // The research's map point; not an entrance.
+    location: [-80.754833, 41.218782],
+    ticketmasterIds: ['ZFr9jZd1F6'],
+    capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 91, how: 'routed', town: 'Niles' },
+  },
+  'sox-harrison-stadium': {
+    id: 'sox-harrison-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Sox Harrison Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-80.117309, 41.875419],
+    ticketmasterIds: ['Z7r9jZakGM'],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 119, how: 'routed', town: 'Edinboro' },
+  },
+  'kehres-stadium': {
+    id: 'kehres-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Mount Union Stadium' }, { name: 'Kehres Stadium', from: '2022-06-11' }],
+    // The research's map point; not an entrance.
+    location: [-81.111922, 40.903774],
+    ticketmasterIds: ['Z7r9jZakOJ'],
+    capacity: [{ seats: 5600, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'covered',
+    furtherOut: { driveMinutes: 91, how: 'routed', town: 'Alliance' },
+  },
+  'al-jacks-field-at-memorial-stadium': {
+    id: 'al-jacks-field-at-memorial-stadium',
+    metroId: 'pittsburgh',
+    names: [{ name: 'Al Jacks Field at Memorial Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-79.393858, 41.220244],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 114, how: 'routed', town: 'Clarion' },
+  },
+  'infocision-stadium': {
+    id: 'infocision-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'InfoCision Stadium' }],
+    aliases: ['InfoCision Stadium–Summa Health Field'],
+    // The research's map point; not an entrance.
+    location: [-81.508481, 41.07251],
+    ticketmasterIds: ['KovZpZAaJd6A'],
+    capacity: [{ seats: 27881, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'byers-field': {
+    id: 'byers-field',
+    metroId: 'cleveland',
+    names: [{ name: 'Byers Field' }],
+    aliases: ['Bob Boulton Stadium'],
+    // The research's map point; not an entrance.
+    location: [-81.737023, 41.381888],
+    capacity: [{ seats: 12750, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'george-finnie-stadium': {
+    id: 'george-finnie-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'George Finnie Stadium' }],
+    aliases: ['Tressel Field at George Finnie Stadium'],
+    // The research's map point; not an entrance.
+    location: [-81.847566, 41.373928],
+    capacity: [{ seats: 7800, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'canal-park': {
+    id: 'canal-park',
+    metroId: 'cleveland',
+    names: [{ name: 'Canal Park' }],
+    // The research's map point; not an entrance.
+    location: [-81.522178, 41.078152],
+    capacity: [{ seats: 7630, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'james-a-rhodes-arena': {
+    id: 'james-a-rhodes-arena',
+    metroId: 'cleveland',
+    names: [{ name: 'James A. Rhodes Arena' }],
+    // The research's map point; not an entrance.
+    location: [-81.508645, 41.075894],
+    ticketmasterIds: ['KovZpZAFdEIA'],
+    capacity: [{ seats: 5500, setup: 'basketball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'don-shula-stadium': {
+    id: 'don-shula-stadium',
+    metroId: 'cleveland',
+    names: [{ name: 'Don Shula Stadium' }],
+    aliases: ['Don Shula Stadium at Wasmer Field'],
+    // The research's map point; not an entrance.
+    location: [-81.52528, 41.49028],
+    capacity: [{ seats: 5416, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'vensurehr-field-house': {
+    id: 'vensurehr-field-house',
+    metroId: 'cleveland',
+    names: [{ name: 'VensureHR Field House' }],
+    aliases: ['SPIRE Indoor Track and Field Building'],
+    // The research's map point; not an entrance.
+    location: [-80.9382, 41.77381],
+    capacity: [{ seats: 5000, setup: 'track', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'the-celebration-arena': {
+    id: 'the-celebration-arena',
+    metroId: 'nashville',
+    names: [{ name: 'The Celebration Arena' }],
+    // The research's map point; not an entrance.
+    location: [-86.44749, 35.49035],
+    capacity: [{ seats: 30000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'Shelbyville' },
+  },
+  'houchens-industries-l-t-smith-stadium': {
+    id: 'houchens-industries-l-t-smith-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Houchens Industries–L.T. Smith Stadium' }],
+    aliases: ['L.T. Smith Stadium'],
+    // The research's map point; not an entrance.
+    location: [-86.459332, 36.984792],
+    ticketmasterIds: ['KovZpZAEF7lA'],
+    capacity: [{ seats: 22113, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 78, how: 'routed', town: 'Bowling Green' },
+  },
+  'louis-crews-stadium': {
+    id: 'louis-crews-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Louis Crews Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-86.578509, 34.783607],
+    ticketmasterIds: ['KovZpa3WXe'],
+    capacity: [{ seats: 21000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 135, how: 'routed', town: 'Huntsville' },
+  },
+  'roy-stewart-stadium': {
+    id: 'roy-stewart-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Roy Stewart Stadium' }],
+    aliases: ['Rudolph Family Field at Roy Stewart Stadium'],
+    // The research's map point; not an entrance.
+    location: [-88.317479, 36.621285],
+    ticketmasterIds: ['KovZpZAanneA'],
+    capacity: [{ seats: 16800, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 139, how: 'routed', town: 'Murray' },
+  },
+  'ford-center-evansville': {
+    id: 'ford-center-evansville',
+    metroId: 'nashville',
+    names: [{ name: 'Ford Center' }],
+    // The research's map point; not an entrance.
+    location: [-87.567829, 37.972187],
+    ticketmasterIds: ['KovZpZAEAAlA'],
+    capacity: [{ seats: 11000, note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 172, how: 'routed', town: 'Evansville' },
+  },
+  'bank-independent-stadium': {
+    id: 'bank-independent-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Bank Independent Stadium' }],
+    aliases: ['Bobby Wallace Field at Bank Independent Stadium'],
+    // The research's map point; not an entrance.
+    location: [-87.684389, 34.809167],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 150, how: 'routed', town: 'Florence' },
+  },
+  'hooper-eblen-center': {
+    id: 'hooper-eblen-center',
+    metroId: 'nashville',
+    names: [{ name: 'Hooper Eblen Center' }],
+    // The research's map point; not an entrance.
+    location: [-85.509822, 36.178419],
+    ticketmasterIds: ['KovZpZA7vlEA'],
+    capacity: [{ seats: 9852, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 92, how: 'routed', town: 'Cookeville' },
+  },
+  'propst-arena': {
+    id: 'propst-arena',
+    metroId: 'nashville',
+    names: [{ name: 'Propst Arena' }],
+    aliases: ['Von Braun Center'],
+    // The research's map point; not an entrance.
+    location: [-86.590887, 34.72699],
+    capacity: [{ seats: 9000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 136, how: 'routed', town: 'Huntsville' },
+  },
+  'the-orion-amphitheater': {
+    id: 'the-orion-amphitheater',
+    metroId: 'nashville',
+    names: [{ name: 'The Orion Amphitheater' }],
+    // The research's map point; not an entrance.
+    location: [-86.668404, 34.734054],
+    ticketmasterIds: ['KovZ917AExn'],
+    capacity: [{ seats: 8000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 129, how: 'routed', town: 'Huntsville' },
+  },
+  'e-a-diddle-arena': {
+    id: 'e-a-diddle-arena',
+    metroId: 'nashville',
+    names: [{ name: 'E.A. Diddle Arena' }],
+    // The research's map point; not an entrance.
+    location: [-86.457815, 36.986528],
+    capacity: [{ seats: 7523, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 77, how: 'routed', town: 'Bowling Green' },
+  },
+  'toyota-field-madison': {
+    id: 'toyota-field-madison',
+    metroId: 'nashville',
+    names: [{ name: 'Toyota Field' }],
+    // The research's map point; not an entrance.
+    location: [-86.724604, 34.684126],
+    capacity: [{ seats: 7500, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 136, how: 'routed', town: 'Madison' },
+  },
+  'the-caverns-amphitheater': {
+    id: 'the-caverns-amphitheater',
+    metroId: 'nashville',
+    names: [{ name: 'The Caverns Amphitheater' }],
+    // The research's map point; not an entrance.
+    location: [-85.827191, 35.332719],
+    capacity: [{ seats: 6000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'covered',
+    furtherOut: { driveMinutes: 106, how: 'routed', town: 'Pelham' },
+  },
+  'joe-davis-stadium': {
+    id: 'joe-davis-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Joe Davis Stadium' }],
+    aliases: ['Wicks Family Field at Joe Davis Stadium'],
+    // The research's map point; not an entrance.
+    location: [-86.588739, 34.699818],
+    ticketmasterIds: ['KovZpZA1E17A'],
+    capacity: [{ seats: 6000, setup: 'soccer', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 138, how: 'routed', town: 'Huntsville' },
+  },
+  'the-ballpark-at-jackson': {
+    id: 'the-ballpark-at-jackson',
+    metroId: 'nashville',
+    names: [{ name: 'The Ballpark at Jackson' }],
+    aliases: ['Rockabillys Stadium'],
+    // The research's map point; not an entrance.
+    location: [-88.769303, 35.676192],
+    capacity: [{ seats: 6000, setup: 'baseball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 141, how: 'routed', town: 'Jackson' },
+  },
+  'bosse-field': {
+    id: 'bosse-field',
+    metroId: 'nashville',
+    names: [{ name: 'Bosse Field' }],
+    // The research's map point; not an entrance.
+    location: [-87.562134, 37.992839],
+    ticketmasterIds: ['KovZpZA17IaA'],
+    capacity: [{ seats: 5181, setup: 'baseball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 175, how: 'routed', town: 'Evansville' },
+  },
+  'owensboro-sportscenter': {
+    id: 'owensboro-sportscenter',
+    metroId: 'nashville',
+    names: [{ name: 'Owensboro Sportscenter' }],
+    // The research's map point; not an entrance.
+    location: [-87.126199, 37.762697],
+    ticketmasterIds: ['KovZpZAddaJA'],
+    capacity: [{ seats: 5000, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 151, how: 'routed', town: 'Owensboro' },
+  },
+  'fortera-stadium': {
+    id: 'fortera-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Governors Stadium' }, { name: 'Fortera Stadium', from: '2016-04-23' }],
+    aliases: ['Maynard Family Field at Fortera Stadium'],
+    // The research's map point; not an entrance.
+    location: [-87.352627, 36.53644],
+    ticketmasterIds: ['KovZ917Ac9H'],
+    capacity: [{ seats: 7000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'fandm-bank-arena': {
+    id: 'fandm-bank-arena',
+    metroId: 'nashville',
+    names: [{ name: 'F&M Bank Arena' }],
+    // The research's map point; not an entrance.
+    location: [-87.360094, 36.529171],
+    ticketmasterIds: ['KovZ917At20'],
+    capacity: [{ seats: 6000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'wildcat-stadium-temple': {
+    id: 'wildcat-stadium-temple',
+    metroId: 'austin',
+    names: [{ name: 'Wildcat Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.355037, 31.104675],
+    capacity: [{ seats: 11500, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 75, how: 'routed', town: 'Temple' },
+  },
+  'bulldawg-stadium': {
+    id: 'bulldawg-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Bulldawg Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.881869, 31.116095],
+    capacity: [{ seats: 9059, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 86, how: 'routed', town: 'Copperas Cove' },
+  },
+  'crusader-stadium': {
+    id: 'crusader-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Crusader Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.466847, 31.067206],
+    ticketmasterIds: ['Z7r9jZa7SB'],
+    capacity: [{ seats: 7671, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 71, how: 'routed', town: 'Belton' },
+  },
+  'leo-buckley-stadium': {
+    id: 'leo-buckley-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Leo Buckley Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.694411, 31.109868],
+    capacity: [{ seats: 7600, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 86, how: 'routed', town: 'Killeen' },
+  },
+  'cadence-bank-center': {
+    id: 'cadence-bank-center',
+    metroId: 'austin',
+    names: [{ name: 'Bell County Expo Center' }, { name: 'Cadence Bank Center', from: '2023-01-01' }],
+    aliases: ['Garth Arena'],
+    // The research's map point; not an entrance.
+    location: [-97.480761, 31.029763],
+    ticketmasterIds: ['KovZ917A2pV'],
+    capacity: [{ seats: 7500, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 67, how: 'routed', town: 'Belton' },
+  },
+  'mustang-stadium-marble-falls': {
+    id: 'mustang-stadium-marble-falls',
+    metroId: 'austin',
+    names: [{ name: 'Mustang Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.25204, 30.585948],
+    capacity: [{ seats: 5224, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 72, how: 'routed', town: 'Marble Falls' },
+  },
+  'circuit-of-the-americas': {
+    id: 'circuit-of-the-americas',
+    metroId: 'austin',
+    names: [{ name: 'Circuit of The Americas' }],
+    aliases: ['COTA'],
+    // The research's map point; not an entrance.
+    // The racing circuit; the Germania Insurance Amphitheater on the same grounds is its own room.
+    location: [-97.63662, 30.135631],
+    ticketmasterIds: ['KovZpZAJEF1A'],
+    capacity: [{ seats: 120000, setup: 'racing', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'zilker-park': {
+    id: 'zilker-park',
+    metroId: 'austin',
+    names: [{ name: 'Zilker Park' }],
+    aliases: ['Zilker Metropolitan Park'],
+    // The research's map point; not an entrance.
+    // Festival grounds keep their capacity (Kylie, Oct 23, 2026: the builder's lean): the ACL Festival's daily figure.
+    location: [-97.773578, 30.269406],
+    ticketmasterIds: ['KovZpZAEkItA'],
+    capacity: [{ seats: 75000, setup: 'concert', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'auditorium-shores': {
+    id: 'auditorium-shores',
+    metroId: 'austin',
+    names: [{ name: 'Auditorium Shores' }],
+    aliases: ['Vic Mathias Shores'],
+    // The research's map point; not an entrance.
+    // Festival grounds keep their capacity (Kylie, Oct 23, 2026: the builder's lean): the city's event limit.
+    location: [-97.750867, 30.262582],
+    ticketmasterIds: ['KovZpZA77EFA', 'ZFr9jZddev'],
+    capacity: [{ seats: 15000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'burger-stadium': {
+    id: 'burger-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Burger Stadium' }],
+    aliases: ['Toney Burger Athletic Center'],
+    // The research's map point; not an entrance.
+    location: [-97.809752, 30.230461],
+    capacity: [{ seats: 15000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'birkelbach-field': {
+    id: 'birkelbach-field',
+    metroId: 'austin',
+    names: [{ name: 'Birkelbach Field' }],
+    aliases: ['Georgetown ISD Athletic Complex'],
+    // The research's map point; not an entrance.
+    location: [-97.662402, 30.663153],
+    capacity: [{ seats: 12442, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'kelly-reeves-athletic-complex': {
+    id: 'kelly-reeves-athletic-complex',
+    metroId: 'austin',
+    names: [{ name: 'Kelly Reeves Athletic Complex' }],
+    // The research's map point; not an entrance.
+    location: [-97.774599, 30.492565],
+    ticketmasterIds: ['KovZpZAEFJlA'],
+    capacity: [{ seats: 11000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'a-c-bible-jr-stadium': {
+    id: 'a-c-bible-jr-stadium',
+    metroId: 'austin',
+    names: [{ name: 'A.C. Bible Jr. Stadium' }],
+    aliases: ['Bible Memorial Stadium'],
+    // The research's map point; not an entrance.
+    location: [-97.848691, 30.53662],
+    capacity: [{ seats: 10200, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'john-gupton-stadium': {
+    id: 'john-gupton-stadium',
+    metroId: 'austin',
+    names: [{ name: 'John Gupton Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.791959, 30.515183],
+    capacity: [{ seats: 10200, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'the-pfield': {
+    id: 'the-pfield',
+    metroId: 'austin',
+    names: [{ name: 'The Pfield' }],
+    // The research's map point; not an entrance.
+    location: [-97.634463, 30.448522],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'chaparral-stadium': {
+    id: 'chaparral-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Chaparral Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.813282, 30.277654],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'dragon-stadium': {
+    id: 'dragon-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Dragon Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.695278, 30.507196],
+    capacity: [{ seats: 8800, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'bob-shelton-stadium': {
+    id: 'bob-shelton-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Bob Shelton Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.889092, 30.033676],
+    capacity: [{ seats: 8600, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'nelson-field': {
+    id: 'nelson-field',
+    metroId: 'austin',
+    names: [{ name: 'Nelson Field' }],
+    // The research's map point; not an entrance.
+    location: [-97.688202, 30.324362],
+    capacity: [{ seats: 8200, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'burger-activity-center-arena': {
+    id: 'burger-activity-center-arena',
+    metroId: 'austin',
+    names: [{ name: 'Burger Activity Center Arena' }],
+    aliases: ['Toney Burger Arena'],
+    // The research's map point; not an entrance.
+    // The research gave the stadium's point for the whole Burger complex; the arena is beside it, not surveyed.
+    location: [-97.809752, 30.230461],
+    capacity: [{ seats: 5500, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+  },
+  'tiger-stadium-smithville': {
+    id: 'tiger-stadium-smithville',
+    metroId: 'austin',
+    names: [{ name: 'Tiger Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.164229, 29.995294],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'taylor-stadium': {
+    id: 'taylor-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Taylor Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.428043, 30.547909],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+  },
+  'mackay-stadium': {
+    id: 'mackay-stadium',
+    metroId: 'sacramento',
+    names: [{ name: 'Mackay Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-119.817398, 39.546892],
+    ticketmasterIds: ['KovZpZA1EFIA'],
+    capacity: [{ seats: 27000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 158, how: 'routed', town: 'Reno' },
+  },
+  'lawlor-events-center': {
+    id: 'lawlor-events-center',
+    metroId: 'sacramento',
+    names: [{ name: 'Lawlor Events Center' }],
+    // The research's map point; not an entrance.
+    location: [-119.818301, 39.545074],
+    ticketmasterIds: ['Z6r9jZ1vFe'],
+    capacity: [{ seats: 11200, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 157, how: 'routed', town: 'Reno' },
+  },
+  'greater-nevada-field': {
+    id: 'greater-nevada-field',
+    metroId: 'sacramento',
+    names: [{ name: 'Aces Ballpark' }, { name: 'Greater Nevada Field', from: '2016-01-01' }],
+    // The research's map point; not an entrance.
+    location: [-119.809099, 39.52877],
+    ticketmasterIds: ['KovZ917ANvY'],
+    capacity: [{ seats: 9534, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 156, how: 'routed', town: 'Reno' },
+  },
+  'reno-rodeo-arena': {
+    id: 'reno-rodeo-arena',
+    metroId: 'sacramento',
+    names: [{ name: 'Reno Rodeo Arena' }],
+    aliases: ['Nevada State Fairgrounds', 'Reno-Sparks Livestock Events Center'],
+    // The research's map point; not an entrance.
+    // The research's point for the fairgrounds complex. The indoor Main Arena (6,200) is a separate room, not added.
+    location: [-119.800853, 39.542539],
+    capacity: [{ seats: 9491, setup: 'rodeo', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 157, how: 'routed', town: 'Reno' },
+  },
+  'frank-moore-arena': {
+    id: 'frank-moore-arena',
+    metroId: 'sacramento',
+    names: [{ name: 'Frank Moore Arena' }],
+    aliases: ['Tehama District Fairgrounds'],
+    // The research's map point; not an entrance.
+    location: [-122.202496, 40.189878],
+    capacity: [{ seats: 9000, setup: 'rodeo', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 147, how: 'routed', town: 'Red Bluff' },
+  },
+  'nugget-event-center': {
+    id: 'nugget-event-center',
+    metroId: 'sacramento',
+    names: [{ name: 'Nugget Event Center' }],
+    // The research's map point; not an entrance.
+    location: [-119.7562, 39.535305],
+    ticketmasterIds: ['KovZ917AO_f'],
+    capacity: [{ seats: 8500, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 158, how: 'routed', town: 'Sparks' },
+  },
+  'reno-events-center': {
+    id: 'reno-events-center',
+    metroId: 'sacramento',
+    names: [{ name: 'Reno Events Center' }],
+    // The research's map point; not an entrance.
+    location: [-119.812473, 39.530897],
+    ticketmasterIds: ['KovZpZAa6teA'],
+    capacity: [{ seats: 7000, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 156, how: 'routed', town: 'Reno' },
+  },
+  'lake-tahoe-amphitheatre-at-caesars-republic': {
+    id: 'lake-tahoe-amphitheatre-at-caesars-republic',
+    metroId: 'sacramento',
+    names: [{ name: 'Lake Tahoe Outdoor Arena at Harveys' }, { name: 'Lake Tahoe Amphitheatre at Caesars Republic', from: '2026-07-07' }],
+    // The research's map point; not an entrance.
+    location: [-119.944137, 38.962274],
+    ticketmasterIds: ['KovZpZAEe7EA'],
+    capacity: [{ seats: 7000, setup: 'concert', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 143, how: 'routed', town: 'Stateline' },
+  },
+  'silver-dollar-speedway': {
+    id: 'silver-dollar-speedway',
+    metroId: 'sacramento',
+    names: [{ name: 'Silver Dollar Speedway' }],
+    // The research's map point; not an entrance.
+    location: [-121.809878, 39.716692],
+    capacity: [{ seats: 7000, setup: 'racing', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 107, how: 'routed', town: 'Chico' },
+  },
+  'tahoe-blue-event-center': {
+    id: 'tahoe-blue-event-center',
+    metroId: 'sacramento',
+    names: [{ name: 'Tahoe Blue Event Center' }],
+    // The research's map point; not an entrance.
+    location: [-119.938259, 38.962941],
+    ticketmasterIds: ['KovZ917Ai8b'],
+    capacity: [{ seats: 5200, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-7.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 143, how: 'routed', town: 'Stateline' },
+  },
 };
 /**
  * A merged duplicate's old id → the room kept, so catalog rows the nightly wrote under the old id before the merge
