@@ -1,6 +1,6 @@
 import { useState, useSyncExternalStore } from 'react';
 import { favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
-import { METROS } from '../config/metros';
+import { METROS, metroMatchesSearch } from '../config/metros';
 import { getHomeId, setHomeId, subscribeHome } from '../lib/homeCity';
 import { HomeMark } from './AreaSwitcher';
 import { SearchIcon } from './Icons';
@@ -18,7 +18,7 @@ export function FavoriteCitiesSection() {
   const [mode, setMode] = useState<'closed' | 'home' | 'add'>('closed');
   const [query, setQuery] = useState('');
   const typed = query.trim().toLowerCase();
-  const choices = metrosWithEvents().filter((city) => (mode === 'home' ? city.id !== home : city.id !== home && !favorites.includes(city.id)) && (!typed || city.name.toLowerCase().includes(typed)));
+  const choices = metrosWithEvents().filter((city) => (mode === 'home' ? city.id !== home : city.id !== home && !favorites.includes(city.id)) && metroMatchesSearch(city, typed));
 
   return (
     <div className="settings fav-cities">

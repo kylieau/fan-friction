@@ -33,6 +33,7 @@ import {
   seriesLine,
   subscribeAccount,
   subscribePersonalLog,
+  gameVenueName,
   TEAMS,
   teamRecord,
   todayIn,
@@ -524,7 +525,7 @@ function gameTitle(game: TeamGame): string {
 /** A schedule or results row: the game, its date and place; the read when the building is covered, else a dash. */
 function GameRow({ game, rating, covered, teamMetroId, teamId, today }: { game: TeamGame; rating: number | null; covered: boolean; teamMetroId?: string; teamId?: string; today: string }) {
   const mark = scoreMark(game);
-  const city = game.eventMetroId && game.eventMetroId !== teamMetroId ? METROS[game.eventMetroId]?.name : !game.home || game.neutral ? game.venueName : undefined;
+  const city = game.eventMetroId && game.eventMetroId !== teamMetroId ? METROS[game.eventMetroId]?.name : !game.home || game.neutral ? gameVenueName(game, teamMetroId) : undefined;
   const facts = [shortLocalDate(game.date) + (game.start && !mark ? ` · ${clockTime(game.start)}` : ''), city, game.stakes?.game && mark ? null : null]
     .filter(Boolean)
     .join(' · ');

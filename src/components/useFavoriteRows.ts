@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Metro } from '../config/metros';
-import { eventMatches, getEventsBetween, getTeamSchedule, metrosWithEvents, scoreMark, todayIn, TEAMS, VENUES, venueNameOn, type CrowdEvent, type Favorite, type GameLink, type TeamGame } from '../data';
+import { eventMatches, gameVenueName, getEventsBetween, getTeamSchedule, metrosWithEvents, scoreMark, todayIn, TEAMS, VENUES, venueNameOn, type CrowdEvent, type Favorite, type GameLink, type TeamGame } from '../data';
 import { addDays, clockTime } from '../lib/dates';
 import { listTitle, teamRelativeTitle } from '../lib/eventTitle';
 
@@ -81,8 +81,8 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
           const key = event?.id ?? `${fav.teamId}-${game.id}`;
           if (seen.has(key)) continue;
           seen.add(key);
-          const venue = event ? venueOf(event) : game.venueName;
           const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+          const venue = event ? venueOf(event) : gameVenueName(game, game.eventMetroId ?? team?.metroId);
           const sport = team?.sport;
           // The row reads from the Fave's side (Kylie, Oct 19): "vs. Wisconsin", "at Michigan St"; a past game writes
           // its result in first ("W 17–15 at Oregon"), the team page's way.

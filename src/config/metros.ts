@@ -42,6 +42,12 @@ const CELSIUS_ZONES = new Set([
   'America/Tijuana',
 ]);
 
+/** Whether a city search finds this metro: typed text inside its name, or the start of its code ("nyc", "la"). */
+export function metroMatchesSearch(metro: Pick<Metro, 'name' | 'code'>, typed: string): boolean {
+  const q = typed.trim().toLowerCase();
+  return q === '' || metro.name.toLowerCase().includes(q) || metro.code.toLowerCase().startsWith(q);
+}
+
 /** Does this city show temperatures in °C? The data and the formula stay in °F; only the words change. */
 export function usesCelsius(metroId: string): boolean {
   const zone = METROS[metroId]?.timeZone;
@@ -116,7 +122,9 @@ export const METROS: Record<string, Metro> = {
   // and Elmont on one phone screen. Jones Beach, PNC and Stony Brook sit off the first view.
   'new-york': {
     id: 'new-york', code: 'NYC',
-    name: 'New York',
+    // "New York City" wherever the name shows (Kylie, Oct 23, 2026, build 7.1 M32); the region still covers the
+    // New Jersey and Long Island rooms. "New York" and "NYC" find it in the city searches (name and code).
+    name: 'New York City',
     timeZone: 'America/New_York',
     center: [-73.93, 40.75],
     // New York City Hall.

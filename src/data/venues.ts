@@ -1710,6 +1710,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'dodger-stadium',
     metroId: 'la',
     names: [{ name: 'Dodger Stadium' }],
+    // MLB's feed writes the field's sponsor into the building's name (build 7.1, M21, Oct 24, 2026).
+    aliases: ['UNIQLO Field at Dodger Stadium'],
     location: [-118.24, 34.0739],
     ticketmasterIds: ['KovZpa2W1e'],
     capacity: [{ seats: 56000, setup: 'baseball' }],
@@ -1734,6 +1736,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'coliseum',
     metroId: 'la',
     names: [{ name: 'LA Memorial Coliseum' }],
+    // ESPN's and USC's feeds write the field's sponsor into the building's name (build 7.1, M21, Oct 24, 2026).
+    aliases: ['United Airlines Field at the Los Angeles Memorial Coliseum', 'United Airlines Field at L.A. Memorial Coliseum', 'Los Angeles Memorial Coliseum'],
     location: [-118.2879, 34.0141],
     capacity: [{ seats: 93607, setup: 'football', note: 'Through the 2018 season (reported; USC\'s own pre-renovation figure was 92,348)' },
       { seats: 77500, fromYear: 2019, note: 'From August 2019, after the renovation (USC)' },

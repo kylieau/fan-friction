@@ -7,7 +7,7 @@
 
 import { METROS } from '../config/metros';
 import { TEAMS } from './teams';
-import { VENUES, venueByName, venueGoesBy } from './venues';
+import { VENUES, venueByName, venueGoesBy, venueNameOn } from './venues';
 import { venueByNameOrPlace } from './sources/venueMatch';
 import type { CrowdEvent, Entry, Plan, Team, TeamGame } from './types';
 
@@ -53,6 +53,16 @@ function venueOf(game: TeamGame, metroId: string | undefined) {
     if (here) return here;
   }
   return venueByName(game.venueName);
+}
+
+/**
+ * The room a schedule row names, as the app names it ("Dodger Stadium" for the feed's "UNIQLO Field at Dodger
+ * Stadium"; Kylie, Oct 23, 2026, build 7.1 M21: one name per building, every feed), else the feed's own string.
+ * A naming-rights spelling the matcher can't place goes in that room's `aliases`.
+ */
+export function gameVenueName(game: TeamGame, metroId?: string): string | undefined {
+  const venue = venueOf(game, metroId ?? game.eventMetroId);
+  return venue ? venueNameOn(venue, game.date) : game.venueName;
 }
 
 /** The home and away team ids, when both are known. */

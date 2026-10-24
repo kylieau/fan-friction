@@ -35,7 +35,8 @@ try {
     // Doubleheaders (Kylie, M3-04; build 6, item 10): never a plain "Game N"; the chip keeps DH1.
     ['N09 doubleheader', game("Angels vs. A's", { sport: 'baseball', teams: { home: 'angels', away: 'athletics' }, doubleheader: 1, sourceId: 'mlb' }), { chip: 'Angels (DH1)', short: "A's at Angels (DH1)", full: "A's at Angels (Doubleheader, Game 1)" }],
     // Rank in the title, event page only, when a source filled it (Kylie, M3-08; build 6, item 10).
-    ['Rank in the full title', game('UCLA vs. USC', { sport: 'football', teams: { home: 'ucla-football', away: 'usc-football' }, rank: { home: 4, away: 17 } }), { short: 'USC at UCLA', full: '#17 USC at #4 UCLA' }],
+    // Since build 7.1 (M38) college football carries its label too.
+    ['Rank in the full title', game('UCLA vs. USC', { sport: 'football', teams: { home: 'ucla-football', away: 'usc-football' }, rank: { home: 4, away: 17 } }), { short: 'USC at UCLA (FB)', full: '#17 USC at #4 UCLA (Football)' }],
     ['Case 6 AHL playoffs', game('Gulls vs. Reign', { sport: 'hockey', stakes: { round: 'AHL Playoffs' }, sourceId: 'hockeytech' }), { short: 'Reign at Gulls (AHL playoffs)', full: 'Reign at Gulls (Calder Cup Playoffs)' }],
     ['N10 artist before tour', show('Song Of The Saints Tour with Phil Wickham', { performer: 'Phil Wickham' }), { full: 'Phil Wickham · Song Of The Saints Tour' }],
     ['N28 middle dot', show('Phoebe Bridgers: The Lost Tour', { performer: 'Phoebe Bridgers' }), { short: 'Phoebe Bridgers · The Lost Tour' }],
@@ -106,7 +107,10 @@ try {
     ['Preseason · vs. Nuggets', 'vs. Nuggets', 'low', 'Preseason'],
     ['Cubs at Reds (Spring training, Cactus League)', 'Cubs at Reds', 'low', 'Spring training, Cactus League'],
     ['Jessie Ware (DJ Set)', 'Jessie Ware (DJ Set)', null, null],
-    ['Wisconsin at UCLA · Football', 'Wisconsin at UCLA · Football', null, null],
+    // Build 7.1, M38: a sport alone is a label too ("Football"), so an older " · Football" tail reads as one.
+    ['Wisconsin at UCLA · Football', 'Wisconsin at UCLA', 'sport', 'Football'],
+    ['Cal Baptist at UCLA (MBB · Preseason)', 'Cal Baptist at UCLA', 'low', "Men's Basketball · Preseason"],
+    ['Texas at Georgia (VB)', 'Texas at Georgia', 'sport', 'Volleyball'],
     // An older saved "(Game 1)" reads as the doubleheader it was (build 6, item 10).
     ["Angels at A's (Game\u00a01)", "Angels at A's", 'game', 'Doubleheader Game\u00a01'],
     ["Angels at A's (DH1)", "Angels at A's", 'game', 'Doubleheader Game\u00a01'],
@@ -123,6 +127,55 @@ try {
   const rel = teamRelativeTitle({ home: true, opponent: 'Padres' });
   if (rel !== 'vs. Padres') (failed += 1), console.log(`FAIL team page: ${rel}`);
   else console.log('ok   Team page: vs. Padres, at Brewers (labels r3 replace N29\'s @)');
+  // Build 7.1, M20: a neutral site reads "vs." with no venue in the title; the row's venue line names the place.
+  const relNeutral = teamRelativeTitle({ home: false, neutral: true, opponent: '49ers', venueName: 'Estadio Banorte' });
+  if (relNeutral !== 'vs. 49ers') (failed += 1), console.log(`FAIL team page neutral: ${relNeutral}`);
+  else console.log('ok   Team page neutral: vs. 49ers, no venue in the title (M20)');
+
+  // Build 7.1, M9, M35b and M38: school games are titled with school names only, Away at Home, the sport on the
+  // label line, with or without a team record; football reads "Football" alone; a bare feed program stays bare.
+  const college = (title, sport, extra = {}) => game(title, { sport, sourceId: 'sidearm', audience: { domain: 'sports', sport, level: 'college', ...(extra.division ? { division: extra.division } : {}) }, ...extra });
+  const schoolCases = [
+    ['M9 Cal Baptist at UCLA', college('UCLA vs. Cal Baptist', 'basketball', { division: 'men', preseason: true }), { short: 'Cal Baptist at UCLA (MBB · Preseason)', full: "Cal Baptist at UCLA (Men's Basketball · Preseason)" }],
+    ['M35b Fullerton men\'s soccer', college('Cal State Fullerton vs. UC Riverside', 'soccer', { division: 'men' }), { short: 'UC Riverside at Cal State Fullerton (MSOC)', full: "UC Riverside at Cal State Fullerton (Men's Soccer)" }],
+    ['M38 UC Irvine women\'s volleyball', college('UC Irvine vs. Long Beach St', 'volleyball', { division: 'women' }), { short: 'Long Beach St at UC Irvine (WVB)', full: "Long Beach St at UC Irvine (Women's Volleyball)" }],
+    ['M38 college football with a record', game('UCLA vs. Michigan St', { teams: { home: 'ucla-football', away: 'Michigan St' } }), { short: 'Michigan St at UCLA (FB)', full: 'Michigan St at UCLA (Football)' }],
+    ['M38 bare feed program', college('Texas vs. Georgia', 'volleyball'), { short: 'Georgia at Texas (VB)', full: 'Georgia at Texas (Volleyball)' }],
+    ['M38 college softball', college('Texas State vs. UTSA', 'softball'), { short: 'UTSA at Texas State (SB)', full: 'UTSA at Texas State (Softball)' }],
+    ['Pro football keeps no label', game('Rams vs. Bills', { teams: { home: 'rams', away: 'Bills' } }), { short: 'Bills at Rams', full: 'Bills at Rams' }],
+  ];
+  for (const [label, event, want] of schoolCases) {
+    const got = { short: listTitle(event), full: fullTitle(event) };
+    const bad = Object.keys(want).filter((k) => got[k] !== want[k]);
+    if (bad.length) (failed += 1), console.log(`FAIL ${label}: ${bad.map((k) => `${k} got "${got[k]}", want "${want[k]}"`).join('; ')}`);
+    else console.log(`ok   ${label}: ${got.short} | ${got.full}`);
+  }
+  // The repair of a row saved before M9: program out of the title, onto the audience, the same object when nothing applies.
+  const { repairSidearmRow } = await server.ssrLoadModule('/src/data/sources/sidearmSource.ts');
+  const old = game("UCLA Men's Basketball vs. Cal Baptist", { sport: 'basketball', sourceId: 'sidearm', preseason: true });
+  const fixed = repairSidearmRow(old);
+  const fixedShort = listTitle(fixed);
+  if (fixed.title !== 'UCLA vs. Cal Baptist' || fixed.audience.division !== 'men' || fixed.audience.level !== 'college' || fixedShort !== 'Cal Baptist at UCLA (MBB · Preseason)') (failed += 1), console.log(`FAIL M9 repair: ${JSON.stringify({ title: fixed.title, audience: fixed.audience, short: fixedShort })}`);
+  else console.log(`ok   M9 repair: "${old.title}" → "${fixed.title}", ${fixedShort}`);
+  const bareOld = game('Texas Volleyball vs. Georgia', { sport: 'volleyball', sourceId: 'sidearm' });
+  const bareFixed = repairSidearmRow(bareOld);
+  if (bareFixed.title !== 'Texas vs. Georgia' || bareFixed.audience.division !== undefined) (failed += 1), console.log(`FAIL M9 repair bare: ${JSON.stringify(bareFixed)}`);
+  if (repairSidearmRow(fixed) !== fixed || repairSidearmRow(game('Lakers vs. Clippers', { sport: 'basketball' })) === undefined) (failed += 1), console.log('FAIL M9 repair: a repaired or non-school row should pass through as the same object');
+  else console.log('ok   M9 repair: a repaired row and a non-school row pass through unchanged');
+
+  // Build 7.1, M21: a schedule row's venue string reads as the app's own name for the building.
+  const { gameVenueName } = await server.ssrLoadModule('/src/data/gameStub.ts');
+  const venueCases = [
+    ['UNIQLO Field at Dodger Stadium', 'Dodger Stadium'],
+    ['United Airlines Field at the Los Angeles Memorial Coliseum', 'LA Memorial Coliseum'],
+    ['Staples Center', 'Crypto.com Arena'],
+    ['Some Park Nobody Lists', 'Some Park Nobody Lists'],
+  ];
+  for (const [raw, want] of venueCases) {
+    const got = gameVenueName({ id: 'g', date: '2026-10-04', start: null, home: true, opponent: 'X', venueName: raw }, 'la');
+    if (got !== want) (failed += 1), console.log(`FAIL M21 venue name: "${raw}" → "${got}", want "${want}"`);
+  }
+  console.log('ok   M21 venue names: the app\'s own name for a building the feed spells with its sponsor');
 
   // One day of the archive in all three lengths, for a scan.
   const metro = metroArg ?? 'la';

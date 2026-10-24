@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState, useSyncExternalStore } from 'react'
 import { Link, useSearchParams } from 'react-router-dom';
 import { type Metro } from '../config/metros';
 import { favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog } from '../data';
+import { metroMatchesSearch } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { openedMetroId } from '../lib/view';
 import { ChevronDown, HomeIcon, SearchIcon } from './Icons';
@@ -40,7 +41,7 @@ export function AreaSwitcher({
   const shown: Metro[] = [...(home && byId.get(home) ? [byId.get(home)!] : []), ...favorites.flatMap((id) => (byId.get(id) ? [byId.get(id)!] : []))];
   if (!shown.some((c) => c.id === metro.id)) shown.push(metro);
   const typed = query.trim().toLowerCase();
-  const found = typed ? covered.filter((c) => c.name.toLowerCase().includes(typed)) : [];
+  const found = typed ? covered.filter((c) => metroMatchesSearch(c, typed)) : [];
   // The list closes on a tap outside it or Escape, wherever the switcher sits (Map, List, calendar page).
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {

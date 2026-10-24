@@ -1,5 +1,6 @@
 import { useState, useSyncExternalStore } from 'react';
 import { cityOrder, favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
+import { metroMatchesSearch } from '../config/metros';
 import { getHomeId, setHomeId, subscribeHome } from '../lib/homeCity';
 import { HomeMark } from './AreaSwitcher';
 import { SearchIcon, StarIcon } from './Icons';
@@ -19,7 +20,7 @@ export function CityList({ variant = 'dialog' }: { variant?: 'dialog' | 'page' }
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const starred = favoriteCitiesOf(log);
   const typed = query.trim().toLowerCase();
-  const cities = metrosWithEvents().filter((city) => !typed || city.name.toLowerCase().includes(typed));
+  const cities = metrosWithEvents().filter((city) => metroMatchesSearch(city, typed));
   const { top, pinned, rest } = cityOrder(cities, home, starred);
   const ordered = [...top, ...pinned];
 
