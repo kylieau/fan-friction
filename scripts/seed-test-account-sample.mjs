@@ -32,7 +32,7 @@ const flag = (name) => {
 };
 const from = flag('from');
 const sizeArg = Number(flag('size') ?? 24);
-if (!Number.isFinite(sizeArg) || sizeArg < 1) {
+if (!Number.isFinite(sizeArg) || sizeArg < 1 || sizeArg > 200) {
   console.error('--size must be a number from 1 to 200.');
   process.exit(1);
 }
@@ -100,7 +100,9 @@ for (const ev of sampled.map(eventOnly)) {
   }
   const review = rand() < 0.6 ? pick(EXAMPLE_REVIEWS) : undefined;
   const withWho = rand() < 0.5 ? pick(EXAMPLE_WITH) : undefined;
-  const userTags = rand() < 0.5 ? [...new Set([pick(EXAMPLE_TAGS), ...(rand() < 0.3 ? [pick(EXAMPLE_TAGS)] : [])])] : undefined;
+  // Every generated row carries the `example` tag, so it reads as EXAMPLE on every screen and the tag rides into the
+  // stub when a plan settles (Codex stage 5); some get a second, random EXAMPLE tag.
+  const userTags = [...new Set(['example', ...(rand() < 0.5 ? [pick(EXAMPLE_TAGS)] : [])])];
   const cost = exampleCost(ev.watched);
   stubs.push({
     ...stubFromEvent(event),
@@ -109,7 +111,7 @@ for (const ev of sampled.map(eventOnly)) {
     ...(cost ? { cost } : {}),
     ...(review ? { review } : {}),
     ...(withWho ? { with: withWho } : {}),
-    ...(userTags ? { userTags } : {}),
+    userTags,
   });
 }
 
@@ -136,7 +138,7 @@ for (const metroId of PLAN_CITIES) {
       ...(answer === 'watch' ? { watch: true } : {}),
       ...(answer === 'interested' ? { interested: true } : {}),
       ...(answer === 'attend' && rand() < 0.5 ? { seats: exampleSeats(), cost: exampleCost(false) } : {}),
-      ...(answer !== 'interested' && rand() < 0.3 ? { userTags: [pick(EXAMPLE_TAGS)] } : {}),
+      userTags: [...new Set(['example', ...(answer !== 'interested' && rand() < 0.3 ? [pick(EXAMPLE_TAGS)] : [])])],
     });
   }
 }
@@ -146,7 +148,7 @@ const count = (list, test) => list.filter(test).length;
 console.log(`Export: ${backup.entries.length} entries, ${eligible.length} on a catalog event and an exact day (hand-typed ones left out); ${skipped} sampled events no longer in the catalog were skipped.`);
 console.log(`Would write to test account A only (ids "seed-sample-*"; other rows on A are left alone):`);
 console.log(`  ${stubs.length} stubs from her events (events and dates only): ${count(stubs, (s) => !s.watched)} attended, ${count(stubs, (s) => s.watched)} watched`);
-console.log(`    with EXAMPLE seats on ${count(stubs, (s) => s.seats)}, costs on ${count(stubs, (s) => s.cost)}, reviews on ${count(stubs, (s) => s.review)}, who-with on ${count(stubs, (s) => s.with)}, tags on ${count(stubs, (s) => s.userTags)}`);
+console.log(`    with EXAMPLE seats on ${count(stubs, (s) => s.seats)}, costs on ${count(stubs, (s) => s.cost)}, reviews on ${count(stubs, (s) => s.review)}, who-with on ${count(stubs, (s) => s.with)}, the example tag on every row`);
 console.log(`  ${plans.length} EXAMPLE plans on real upcoming events: ${count(plans, (p) => !p.watch && !p.interested)} attending, ${count(plans, (p) => p.watch)} watching, ${count(plans, (p) => p.interested)} interested`);
 console.log(`  cities: ${[...new Set([...stubs.map((s) => s.metroId), ...plans.map((p) => p.metroId)])].join(', ')}`);
 

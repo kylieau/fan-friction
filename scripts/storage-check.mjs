@@ -114,6 +114,15 @@ ok('a men\'s program tag counts for the men\'s team only', seasonStubsOf('sdsu-m
 ok('a shared short name with no program sign counts for neither', seasonStubsOf('sdsu-mbb', sdsu([])).length === 0 && seasonStubsOf('sdsu-wbb', sdsu([])).length === 0);
 ok('the title\'s Women\'s label decides when there is no code tag', seasonStubsOf('sdsu-wbb', sdsu([], 'Utah State at SDSU (Women\'s Basketball)')).length === 1);
 
+// 6e. Codex stages 4 and 5 (re-run, Oct 24): a game cancelled after its date flags its unsettled plan; a game corrected
+// to an earlier, past day keeps its plan; an empty schedule (a failed read) changes nothing.
+const cancelled = reconcileSeasonPlans([{ id: 'plan-2026-10-23-mlb-1', date: '2026-10-23', metroId: 'la', eventId: '2026-10-23-mlb-1', title: 'Giants at Dodgers', season: { teamId: 'dodgers', gameId: 'mlb-dodgers-1' } }], ticket, [game('2', '2027-04-09')], '2026-10-24', 'private');
+ok('an unsettled plan whose game was cancelled after its date is flagged', cancelled.find((p) => p.season?.gameId === 'mlb-dodgers-1')?.season.gone === true);
+const intoPast = reconcileSeasonPlans([{ id: 'plan-2026-10-26-mlb-1', date: '2026-10-26', metroId: 'la', eventId: '2026-10-26-mlb-1', title: 'Giants at Dodgers', seats: { section: '12' }, season: { teamId: 'dodgers', gameId: 'mlb-dodgers-1', edited: true } }], ticket, [game('1', '2026-10-22')], '2026-10-24', 'private');
+ok('a game corrected to a past day keeps its plan and seat', intoPast.length === 1 && intoPast[0].date === '2026-10-22' && intoPast[0].seats?.section === '12');
+const upcomingOnly = [{ ...p6[0] }];
+ok('an empty schedule leaves every plan unflagged', !reconcileSeasonPlans(upcomingOnly, ticket, [], '2026-10-24', 'private')[0].season.gone);
+
 // 7. Favorite cities' order (build 7.1, M31): a reorder is a stamped change, so the newer order wins on every device.
 const cA = log([], [], { favoriteCities: ['boston', 'new-york'], favoriteCitiesAt: '2026-10-24T01:00:00Z' });
 const cB = log([], [], { favoriteCities: ['new-york', 'boston'], favoriteCitiesAt: '2026-10-24T02:00:00Z' });

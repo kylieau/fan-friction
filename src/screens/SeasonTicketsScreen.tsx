@@ -84,6 +84,9 @@ export function SeasonTicketsScreen() {
 
   const homeGames = useMemo(() => (schedule && ticket ? seasonHomeGames(schedule, ticket) : []), [schedule, ticket]);
   const upcoming = useMemo(() => homeGames.filter((game) => game.date >= today), [homeGames, today]);
+  // Games she took out stay listed after their date, greyed with the reason and sale amount (item 15; Codex stage 4
+  // re-run: they vanished once the date passed). No Re-add: a past game would settle into an Attended stub.
+  const pastRemoved = useMemo(() => (ticket ? homeGames.filter((game) => game.date < today && game.id in ticket.removed) : []), [homeGames, today, ticket]);
   const planByEvent = useMemo(() => new Map(log.plans.filter((plan) => plan.season?.teamId === id).map((plan) => [plan.eventId, plan])), [log, id]);
   const counts = seasonCounts(id, log);
   const pastStubs = useMemo(() => [...seasonStubsOf(id, log)].sort((a, b) => a.when.sort.localeCompare(b.when.sort)), [log, id]);
@@ -291,6 +294,32 @@ export function SeasonTicketsScreen() {
           </ul>
         </section>
       )}
+      {!picking && pastRemoved.length > 0 && (
+        <section className="timeline-group season-month" aria-label="Removed Games">
+          <ListBand label="Removed Games" />
+          <ul className="log-list season-list">
+            {pastRemoved.map((game) => {
+              const removed = ticket.removed[game.id];
+              const event = eventFromGame({ teamId: id, game });
+              const title = event ? listTitle(event) : `${game.opponent} at ${team.shortName}`;
+              return (
+                <li key={game.id}>
+                  <div className="season-row off">
+                    <DateBox when={{ sort: game.date, label: '', precision: 'day' }} />
+                    <span className="log-main">
+                      <span className="log-title"><TitleText text={title} /></span>
+                      <span className="log-facts season-off-line">
+                        {removed?.reason && <span className="season-chip">{removalWord(removed.reason)}{removed.reason === 'sold' && typeof removed.soldFor === 'number' ? ` · ${formatMoney(removed.soldFor, currency)}` : ''}</span>}
+                        <span>Not in your plans</span>
+                      </span>
+                    </span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
       {!picking && counts.removed > 0 && <p className="you-fine season-foot">Sale amounts never count in Spend. They show only on the greyed game.</p>}
       {picking && (
         <div className="season-pick-actions">
@@ -306,7 +335,7 @@ export function SeasonTicketsScreen() {
         </button>
       )}
 
-      {editing && <DefaultSheet team={team} ticket={ticket} field={editing} schedule={schedule ?? []} onClose={() => setEditing(null)} />}
+      {editing && <DefaultSheet team={team} ticket={ticket} field={editing} schedule={schedule ?? undefined} onClose={() => setEditing(null)} />}
       {gameOpen && inPlans(gameOpen) && <GameSheet team={team} ticket={ticket} game={gameOpen} plan={inPlans(gameOpen)!} onClose={() => setGameOpen(null)} onRemoved={() => setGameOpen(null)} />}
     </div>
   );
@@ -323,7 +352,7 @@ function removalWord(reason: SeasonRemovalReason): string {
 }
 
 /** One default's editor; saving asks how far it applies when upcoming games exist (16). */
-function DefaultSheet({ team, ticket, field, schedule, onClose }: { team: { id: string; shortName: string }; ticket: SeasonTicket; field: 'seats' | 'ticket' | 'parking'; schedule: TeamGame[]; onClose: () => void }) {
+function DefaultSheet({ team, ticket, field, schedule, onClose }: { team: { id: string; shortName: string }; ticket: SeasonTicket; field: 'seats' | 'ticket' | 'parking'; /** Absent when the schedule couldn't be read: the defaults save without touching which games are planned. */ schedule?: TeamGame[]; onClose: () => void }) {
   const currency = ticket.currency ?? 'USD';
   const [seats, setSeats] = useState<Seats>(ticket.seats ?? {});
   const [price, setPrice] = useState(ticket.ticket !== undefined ? String(ticket.ticket) : '');
@@ -396,6 +425,10 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
   const defaultParking = defaults?.lines.find((line) => line.kind === 'parking')?.amount;
   const sameSeat = seatsLine(seats) === seatsLine(ticket.seats);
   const edited = Boolean(plan.season?.edited);
+  // The Stub it sheet's rules (item 6): a seat only on an Attending game, a cost on Attending or Watching, neither on
+  // Interested (Codex stage 4 re-run: this sheet let them back in).
+  const canSeat = !plan.watch && !plan.interested;
+  const canCost = !plan.interested;
   const save = () => {
     const lines: CostLine[] = [];
     const t = moneyOf(price);
@@ -405,7 +438,9 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
     if (t !== undefined) lines.push({ kind: 'ticket', amount: t, ...(oldTicket?.qty ? { qty: oldTicket.qty } : {}) });
     if (p !== undefined && p > 0) lines.push({ kind: 'parking', amount: p });
     const kept = (plan.cost?.lines ?? []).filter((line) => line.kind !== 'ticket' && line.kind !== 'parking');
-    setSeasonGame(plan.id, { seats, cost: lines.length + kept.length > 0 ? { lines: [...lines, ...kept], ...(currency ? { currency } : {}) } : undefined });
+    // "Free" stays Free until an amount replaces it (Codex stage 4 re-run: a seat change wiped it).
+    const cost = lines.length + kept.length > 0 ? { lines: [...lines, ...kept], ...(currency ? { currency } : {}) } : plan.cost?.free ? plan.cost : undefined;
+    setSeasonGame(plan.id, { ...(canSeat ? { seats } : {}), ...(canCost ? { cost } : {}) });
     onClose();
   };
   if (removing) {
@@ -450,6 +485,7 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
   }
   return (
     <SeasonSheet title="This Game Only" sub={sub} label="This game only" onClose={onClose}>
+      {canSeat && (
       <div className="season-section">
         <div className="season-section-head">
           <h3 className="season-section-title">Seat</h3>
@@ -457,6 +493,9 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
         </div>
         <SeatFields seats={seats} onChange={setSeats} />
       </div>
+      )}
+      {canCost && (
+      <>
       <div className="season-section">
         <div className="season-section-head">
           <h3 className="season-section-title">Price per Seat</h3>
@@ -490,6 +529,8 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
       <button type="button" className="gold-button stub-done" onClick={save}>
         Save for this game
       </button>
+      </>
+      )}
       <button type="button" className="season-outline-button" onClick={() => setRemoving(true)}>
         Remove this game…
       </button>

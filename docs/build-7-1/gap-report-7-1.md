@@ -1,6 +1,6 @@
 # Build 7.1 · gap report
 
-**Finished (Oct 24, 2026), with Codex stages 4 and 5 and the visual reviews for steps 12–13 owed** (see Skipped reviews). Written as the build went (a running progress log at the top). The spec is [`build-notes-7-1.md`](build-notes-7-1.md); step numbers are its §7 (Builder prompt additions). Built by Claude Code straight on `main` (Fable 5.1 through step 11 (a)'s first cut; Opus 5.5 from there on, with Fable as the advisor and Codex as the reviewer after every item group), one commit per item group, `npm run build` before each. Kylie's stop timing (Oct 24, 2026): build steps 1–3, run Codex stage 1, then stop for her to look.
+**Finished (Oct 24, 2026).** Codex stages 4 and 5 ran in the evening once credits returned; their findings are fixed (see Codex findings). Written as the build went (a running progress log at the top). The spec is [`build-notes-7-1.md`](build-notes-7-1.md); step numbers are its §7 (Builder prompt additions). Built by Claude Code straight on `main` (Fable 5.1 through step 11 (a)'s first cut; Opus 5.5 from there on, with Fable as the advisor and Codex as the reviewer after every item group), one commit per item group, `npm run build` before each. Kylie's stop timing (Oct 24, 2026): build steps 1–3, run Codex stage 1, then stop for her to look.
 
 ## Progress log
 | Step | State | Commit | Notes |
@@ -24,9 +24,9 @@
 | 12. Event page: M33 | done | _(this commit)_ | Lean A + the line on the catalog page; the date line on all three page kinds; measured: line 215, crowd 323, Up Against 532 against the Lean's 221 / 317 / 550 |
 | 13. Cleanup: M39, M15, doc sync | done | _(this commit)_ | sizes and tap areas measured; the seed script dry-run tested with a made-up export; BACKLOG and product-decisions synced |
 | Substitute reviews (stage 4's gaps) and fixes | done | _(this commit)_ | 14 findings: 11 accepted, 2 rejected with reasons, 1 already recorded |
-| Codex stage 5 | **skipped (out of credits)** | — | re-run owed; a substitute review covers its focus list |
+| Codex stage 5 | done (Oct 24 evening, after credits returned) | _(the Codex fixes commit)_ | 6 findings, all accepted |
 | Substitute review for stage 5 and fixes | done | _(this commit)_ | 8 findings, all accepted (one high: the seed script); seed dry run repeated with a planted hand-typed entry; the (i) and the pinned Back measured |
-| Codex stage 4 | **incomplete (out of credits)**; partial findings fixed | _(this commit)_ | re-run owed (see Skipped reviews); three stated findings fixed; a substitute review follows |
+| Codex stage 4 | partial run's findings fixed; **re-run done** (Oct 24 evening) | _(the Codex fixes commit)_ | 6 more findings, all accepted |
 | 14. Research prompts (M35) | done | _(this commit)_ | docs only; critiqued once by Codex, ten points taken |
 | Codex reviews: 11 (b), 11 (c) and the fixes | done | _(the second fixes commit)_ | 9 + 10 findings, all accepted; 38 storage checks |
 | Codex reviews: steps 9–10 and 11 (a) | done | _(the fixes commit)_ | 22 + 9 findings, all accepted (one already fixed by (c)); 36 storage checks pass |
@@ -50,6 +50,7 @@
 **Must not change:** any saved verdict (no snapshot `read` is rewritten, no history re-run); crowd-figure labels; the stamp's end-of-day fallback (held by Kylie, Oct 16); pro game titles and labels (a label only for twin clubs); the one-game rule and the add-on filter; the archive's `forecasts` arrays; anything in `private/`.
 
 ## Skipped reviews
+_Resolved Oct 24 evening: both Codex stages ran once credits returned (findings under Codex findings). Stage 4 opened the after-shots and the named mocks; stage 5 found no M39 after-shots to compare. A fresh 390pt sweep signed in remains for Kylie's phone check._
 - **Codex stage 4 (steps 9–12, the range `9597e0a7..537480b9`) did not finish:** Codex stopped with "Your workspace is out of credits" (Oct 24, about 10:15 AM Pacific) after reading the diff and passing the type check, the 38 storage assertions and the title checks. **For Kylie: re-run it once the Codex workspace has credits** (the brief is in this session's history; its focus is §7's stage 4 list). Three findings it had begun to state were verified and fixed here (`Codex findings › Stage 4, partial`). Not reached by Codex: the privacy press on the event page's stub line and the card views, the 390pt overflow paths (the builder's own sweep is under Visual checks), the drag-reorder re-check, M33's order, copy and titles, and the mock comparisons. An independent reviewer (a fresh Claude agent, not Codex) covers those below so the build doesn't move on unreviewed; that substitute is not the Codex stage.
 - **Codex stage 5 (final: step 13, the stage 4 partial fixes, step 14's docs) could not start:** "Your workspace is out of credits" (Oct 24, about 10:45 AM Pacific). **For Kylie: re-run it with stage 4.** An independent reviewer (a fresh Claude agent) covers its focus list (M39's exceptions and tap extensions, the seed script's safety, the stage 4 partial fixes) so the build doesn't end unreviewed; that substitute is not the Codex stage.
 
@@ -475,6 +476,22 @@ Visual: e3 and the heading links match; 64 matches after finding 10.
 7. **The pinned head's Back tap area reached below the head over the scrolling page** (low). **Accepted:** it reaches sideways only; measured: it ends 7 px inside the head.
 8. **Small seed and doc gaps** (low): `--size abc` gave NaN; EXAMPLE tags weren't marked; the doc said a dry run "touches nothing" though it reads the catalog, and didn't say a seeded plan can settle into a `mark-` stub a re-run can't replace; M15's friends and Activity gap wasn't in "Not exactly as decided". **Accepted:** `--size` must be a number from 1 to 200 or the run stops; tags start with `example`; the doc says both; the row is added.
 
+**Codex stage 4 (re-run, Oct 24 evening; read-only; it opened the after-shots and named mocks).** Six findings, all accepted:
+1. **A game cancelled the day before she opens the app could still settle into an Attended stub** (high, recurring): the past-plan shortcut ran before the missing-game check. **Accepted:** every unsettled plan is checked against the schedule whatever its date and flagged when its game is gone; storage check added.
+2. **Saving a default after a failed schedule load flagged every game** (medium): the page handed an empty list in. **Accepted:** the page passes no schedule then, and an empty schedule never flags anything; storage check added.
+3. **The single-game sheet wiped "Free"** (medium). **Accepted:** Free stays until an amount replaces it.
+4. **The season's game sheet let a seat back onto a Watching game and a seat and cost onto an Interested one** (medium, recurring). **Accepted:** the sheet shows only the fields the answer allows, and the shared setter enforces it.
+5. **A removed game vanished from the season page once its date passed** (medium). **Accepted:** past removed games stay listed under "Removed Games", greyed, with the reason and sale amount; no Re-add there (a past game would settle into an Attended stub).
+6. **A small room's share text carried a friction call the page hides, and mock 515's line was missing** (medium). **Accepted:** the share text includes a friction call only when the page shows one; "Under 5,000: too small for a friction call." sits under the crowd figure as in 515 (a room of unknown size, or a special the floor rule holds back in a bigger room, says nothing). Measured on Amble (Oct 23): the line shows; the share reads "Fri, Oct 23 · Amble · 1,500 estimated".
+
+**Codex stage 5 (Oct 24 evening; read-only).** Six findings, all accepted:
+1. **A game corrected from today or later to an earlier, past day lost its plan, seat and cost** (medium, recurring). **Accepted:** the plan follows its game into the past and settles there; storage check added (45 now).
+2. **Seeded rows weren't all marked EXAMPLE** (medium). **Accepted:** every seeded stub and plan carries the tag `example`, which rides into the stub when a plan settles; dry run: 14 of 14 rows tagged.
+3. **The "How estimates work" (i) reached 42pt, not 44** (low). **Accepted:** both (i) buttons get an explicit 44 × 44 target centred on the dot; measured: a tap 21px from centre in every direction lands, 24px misses.
+4. **`--size 201` was quietly cut to 200** (low, recurring). **Accepted:** anything outside 1–200 stops the run.
+5. **product-decisions.md still told builders to show "~" on the event page** (low). **Accepted:** marked superseded by M33.
+6. **The NCAA prompt said no school-calendar row gets an estimate** (low). **Accepted:** it now says rows whose program and venue match existing history already do, and the research is for the rest.
+
 ## Checks run
 - `npm run build`: passes before each commit (M17, M16, step 3).
 - `node scripts/titles-check.mjs`: all passed after step 3 (two cases updated for M38, eleven added for M9, M35b, M38, M20 and M21, plus the repair's pass-through cases), and again after the Codex stage 1 fixes (short-form assertions on N17 / N18 / Florida–Georgia; schedule-row labels; bare beach volleyball; the visitor's record; the repair guard; the namesake room).
@@ -511,7 +528,7 @@ Step 14, docs only (the drafts stay in `docs/build-7-1/research-prompts/`; nothi
 
 ## Manual steps for Kylie, in order
 1. **No SQL to paste.** Build 7.1 needed no migration (season tickets ride in the settings JSON and ordinary plan rows).
-2. **Re-run Codex stages 4 and 5** (steps 9–14) once the Codex workspace has credits, with the visual reviews for steps 12 and 13 (see "Skipped reviews").
+2. ~~Re-run Codex stages 4 and 5~~ done Oct 24 evening.
 3. **The M15 seed, when you want test account A filled:** export your events (Profile & Settings › Your Events › Export my events) into `private/`, then `node scripts/seed-test-account-sample.mjs --from private/<file>.json --size 24` (a dry run), then the same with `--confirm`. Details in `docs/reference/test-account-seed.md`.
 4. **Run the two M35 research prompts** (`docs/research/topics/arts-fill-rates-prompt.md`, `ncaa-attendance-sources-prompt.md`) and save each answer beside its prompt.
 5. **Phone checks signed in** (the list above), and the questions below.

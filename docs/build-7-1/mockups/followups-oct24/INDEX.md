@@ -3,6 +3,7 @@
 Mocks drawn by Claude Code in the headless phone (390 × 844) with CSS or DOM changes injected into the live app; nothing here is approved. The rows use EXAMPLE plans on real Oct 24 and Oct 18 Los Angeles events.
 
 ## Explore List calendar (the legend is already removed, `59ec513f`)
+Decided (Kylie, Oct 24, 2026): the tiles stay as shipped (C); only the legend went.
 | Frame | What it shows |
 |---|---|
 | `cal-a-plain.png` | A: every tile plain; past numbers grey, today ringed. |

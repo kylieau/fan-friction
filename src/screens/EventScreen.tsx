@@ -262,7 +262,12 @@ export function EventScreen() {
     ? [!logged.watched ? seatShort(logged.seats) || null : null, logged.cost && costWords(logged.cost) ? costWords(logged.cost) : null, logged.with ? `With ${logged.with}` : null, logged.review ? 'Review' : null].filter((b): b is string => Boolean(b))
     : [];
   const level = account && youRow ? stubLevel(youRow) : null;
-  const shareLine = a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : '';
+  // Only a friction call the page itself makes is shared: a small room's raw assessment stays out (Codex stage 4 re-run).
+  const shareLine = a && verdict ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : '';
+  // Mock 515: a room known to be under 5,000 says why there's no friction call. A special the floor rule holds back
+  // in a bigger room, and a room of unknown size, say nothing.
+  const tier = sizeTier(e);
+  const tooSmall = !verdict && !e.belowFloor && (tier === 'prelist' || tier === 'under-prelist');
   const shareCrowd = shown ? `${shown.atLeast ? 'At least ' : ''}${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null;
   const toStubCard = () => document.getElementById('your-stub')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
 
@@ -432,6 +437,7 @@ export function EventScreen() {
           <span className="crowd-kind">— Size unknown</span>
         )}
         {me.soldOut && shown && <span className="tag-soldout">SOLD OUT</span>}
+        {tooSmall && <p className="crowd-small-note">Under 5,000: too small for a friction call.</p>}
         {eventFacts(e, logged).length > 0 && (
           <div className="crowd-facts">
             <FactList facts={eventFacts(e, logged)} />

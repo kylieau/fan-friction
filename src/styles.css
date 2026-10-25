@@ -12912,7 +12912,12 @@ a.follow-lead::after {
 .info-dot::after {
   content: '';
   position: absolute;
-  inset: -12px;
+  /* A 44 × 44 target centred on the dot whatever its size or border (Codex stage 5: 18px + 12px a side fell short). */
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
 }
 /* Lineup rows: at least 44pt tall for real (stacked rows can't take an invisible extension without overlapping); a row
    with the weather marker keeps one line, the marker adds no height. */
@@ -12960,4 +12965,11 @@ a.follow-lead::after {
    scrolling under it (substitute review for stage 5). */
 .pinned-back::after {
   inset: 0 -10px;
+}
+
+/* The Crowd card's line for a room under 5,000 (M33, mock 515; Codex stage 4 re-run). */
+.crowd-small-note {
+  margin: 8px 0 4px;
+  font-size: 12px;
+  color: var(--ink2);
 }

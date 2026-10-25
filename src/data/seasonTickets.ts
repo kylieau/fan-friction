@@ -96,61 +96,52 @@ function movePlan(plan: Plan, teamId: string, game: TeamGame): Plan {
  * Bring a team's season plans in line with its schedule as it stands today: a wanted game with no plan gets one; a
  * plan whose game moved follows it; a plan she already had on the same event (made by hand before the switch) is
  * adopted and keeps her own seat and cost as an edit; a game the schedule has dropped is flagged `gone`; a plan on
- * a game that is no longer in the set (removed, or unpicked on a Partial plan) is taken out. A past plan is left as is,
- * except that it follows a moved game and loses its `gone` flag once the schedule lists its game again. Returns the same
- * list when nothing changed.
+ * a game that is no longer in the set (removed, or unpicked on a Partial plan) is taken out. An unsettled past plan stays
+ * (to settle), but follows a moved game, is flagged when its game is dropped, and loses the flag once the schedule lists
+ * the game again. An empty schedule (a failed read) changes nothing. Returns the same list when nothing changed.
  */
 export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicket, games: readonly TeamGame[], today: string, level: StubVisibility): Plan[] {
   if (!ticket.on) return [...plans];
-  const wanted = seasonGameSet(games, ticket).filter((game) => game.date >= today);
+  // No schedule (a failed read handed in as an empty list) says nothing about which games went: leave every plan be
+  // (Codex stage 4 re-run: saving a default after a failed load flagged every game).
+  if (games.length === 0) return [...plans];
+  const eligible = seasonGameSet(games, ticket);
+  const wanted = eligible.filter((game) => game.date >= today);
   const byGameId = new Map(games.map((game) => [game.id, game]));
   const next: Plan[] = [];
   const seenGames = new Set<string>();
   let changed = false;
   for (const plan of plans) {
-    const mine = plan.season?.teamId === ticket.teamId;
-    // A past plan is left alone, unless its game was moved to a later date before the plan settled: then it follows
-    // the game, or the settling would stub the old day and the season would add the new one too (Codex, 11 (c) review).
-    // A moved game to another past day takes its unsettled plan there too, so settling finds the game where it now is
-    // (partial Codex stage 4 finding; the run stopped before its report).
-    const pastGame = mine && plan.date < today ? byGameId.get(plan.season!.gameId) : undefined;
-    const movedAhead = Boolean(pastGame && pastGame.date >= today && seasonPlanEventId(pastGame) !== plan.eventId);
-    if (pastGame && !movedAhead && seasonPlanEventId(pastGame) !== plan.eventId) {
-      next.push(movePlan(plan, ticket.teamId, pastGame));
-      changed = true;
-      continue;
-    }
-    // A past plan flagged while its game was briefly missing from the schedule clears once the schedule lists it again,
-    // so it can settle into her stub (substitute review for stage 5).
-    if (pastGame && plan.season?.gone && seasonPlanEventId(pastGame) === plan.eventId) {
-      const { gone: _gone, ...season } = plan.season;
-      next.push({ ...plan, season });
-      changed = true;
-      continue;
-    }
-    if (!mine || (plan.date < today && !movedAhead)) {
+    if (plan.season?.teamId !== ticket.teamId) {
       next.push(plan);
       continue;
     }
-    const game = byGameId.get(plan.season!.gameId);
+    const past = plan.date < today;
+    const game = byGameId.get(plan.season.gameId);
     if (!game) {
-      // Not on the schedule any more: flagged, kept, hers to remove.
-      if (!plan.season!.gone) {
-        next.push({ ...plan, season: { ...plan.season!, gone: true } });
+      // Not on the schedule any more: flagged, kept, hers to remove. An unsettled past plan too, so a game cancelled
+      // the day before she opens the app never settles into a stub (Codex stage 4 re-run, recurring).
+      if (!plan.season.gone) {
+        next.push({ ...plan, season: { ...plan.season, gone: true } });
         changed = true;
       } else next.push(plan);
-      seenGames.add(plan.season!.gameId);
       continue;
     }
-    if (!wanted.some((g) => g.id === game.id)) {
-      // Removed, unpicked, or no longer a season home game: out of the plans.
+    if (!past && !eligible.some((g) => g.id === game.id)) {
+      // Removed, unpicked, or no longer a season home game: out of the plans. A past plan stays, to settle.
       changed = true;
       continue;
     }
-    seenGames.add(game.id);
-    const expectedId = seasonPlanEventId(game);
-    if (plan.eventId !== expectedId || plan.date !== game.date || plan.season!.gone) {
+    if (game.date >= today) seenGames.add(game.id);
+    // The plan follows its game wherever it moved, ahead or into the past (a correction to an earlier day keeps the
+    // plan, to settle there: Codex stage 5), and a flag clears once the schedule lists the game again (substitute
+    // review for stage 5).
+    if (plan.eventId !== seasonPlanEventId(game) || plan.date !== game.date) {
       next.push(movePlan(plan, ticket.teamId, game));
+      changed = true;
+    } else if (plan.season.gone) {
+      const { gone: _gone, ...season } = plan.season;
+      next.push({ ...plan, season });
       changed = true;
     } else next.push(plan);
   }
@@ -201,8 +192,9 @@ export function applySeasonDefaults(plan: Plan, ticket: SeasonTicket): Plan {
 
 /** A season plan's seat or cost set for this game alone: marked edited, so a default change leaves it be. */
 export function editSeasonPlan(plan: Plan, patch: { seats?: Plan['seats']; cost?: Plan['cost'] }): Plan {
-  const seats = 'seats' in patch ? normalizeSeats(patch.seats) : plan.seats;
-  const cost = 'cost' in patch ? normalizeCost(patch.cost) : plan.cost;
+  // The answer's own rules hold here too: no seat on Watching or Interested, no cost on Interested (Codex stage 4 re-run).
+  const seats = plan.watch || plan.interested ? undefined : 'seats' in patch ? normalizeSeats(patch.seats) : plan.seats;
+  const cost = plan.interested ? undefined : 'cost' in patch ? normalizeCost(patch.cost) : plan.cost;
   const { seats: _s, cost: _c, ...rest } = plan;
   return { ...rest, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), season: { ...(plan.season ?? { teamId: '', gameId: '' }), edited: true } };
 }

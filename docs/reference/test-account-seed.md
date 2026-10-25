@@ -6,7 +6,7 @@ Locked by Kylie on Oct 23, 2026. A way to give test account A a believable log, 
 
 ## What it writes, and only to test account A
 - **A sample of her events, as events and dates only.** From her "Export my events" file it reads, for each sampled stub, only the catalog event's id, its date, its city and whether it was watched. The stub itself is rebuilt from the catalog's own event (title, venue, kind, sport, the sides), the way the app builds one, so no word she typed travels: no review, who-with, seats, cost, tags, sale amounts, stub level or plans. Hand-typed stubs (including ones later linked to an event), stubs without an exact day, events the catalog no longer holds, and events A already holds in rows of its own are left out.
-- **EXAMPLE data around them**, marked "EXAMPLE" wherever it is text (tags start with `example`): seats, costs (Free on some), reviews, who-with and tags on those stubs; and plans (Attending, Watching, Interested, some with an EXAMPLE seat and cost) on real upcoming catalog events in Los Angeles, New York City, Chicago and Seattle.
+- **EXAMPLE data around them**, marked "EXAMPLE" wherever it is text, and every stub and plan it writes carries the tag `example` (other tags start with `example-`): seats, costs (Free on some), reviews, who-with and tags on those stubs; and plans (Attending, Watching, Interested, some with an EXAMPLE seat and cost) on real upcoming catalog events in Los Angeles, New York City, Chicago and Seattle.
 - **Not written:** friends' rows and other people's Activity (they need rows on other accounts). The older `scripts/seed-test-accounts.mjs` keeps account B following A.
 
 ## How to run it
