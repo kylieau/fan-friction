@@ -8573,48 +8573,6 @@ ul.fav-strip {
   color: var(--gold);
 }
 
-/* The legend under the grid (M29): each verdict's full and faded swatch, then its word; the caption names the pair. */
-.week-calendar-legend {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6px 8px;
-  margin: 8px 4px 0;
-}
-.week-legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--ink2);
-}
-.week-legend-item .week-legend-word {
-  margin-left: 2px;
-}
-.week-legend-swatch {
-  width: 12px;
-  height: 12px;
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 1px rgba(15, 27, 45, 0.08);
-}
-.week-legend-swatch.band-chill { background: #e4eef6; }
-.week-legend-swatch.band-mild { background: var(--water); }
-.week-legend-swatch.band-spicy { background: var(--paleBlue); }
-.week-legend-swatch.band-brutal { background: var(--dodger); }
-.week-legend-swatch.band-cooked { background: var(--ink); }
-.week-legend-swatch.is-past.band-chill { background: color-mix(in srgb, #e4eef6 55%, var(--card)); }
-.week-legend-swatch.is-past.band-mild { background: color-mix(in srgb, var(--water) 55%, var(--card)); }
-.week-legend-swatch.is-past.band-spicy { background: color-mix(in srgb, var(--paleBlue) 55%, var(--card)); }
-.week-legend-swatch.is-past.band-brutal { background: color-mix(in srgb, var(--dodger) 55%, var(--card)); }
-.week-legend-swatch.is-past.band-cooked { background: color-mix(in srgb, var(--ink) 75%, var(--card)); }
-.week-legend-caption {
-  flex: 1 0 100%;
-  font-size: 11px;
-  color: #4a5568;
-}
-
 /* Date page rows: the badges sit at the right of the line, like every list (Kylie, Oct 14). */
 /* Date page: the crowd at the left of the line and the badges at the right of it, on one line. */
 /* The shared row body (Kylie, Oct 14: badges right-justified everywhere): time at the left; line 1 the title and,
