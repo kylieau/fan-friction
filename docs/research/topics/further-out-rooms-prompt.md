@@ -611,3 +611,81 @@ San Antonio. Rooms on file; largest setup on file:
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 9 (Oct 25, 2026): from Portland
+
+Status: delivery 9 (Salt Lake City, Ottawa–Gatineau, Edmonton, San Antonio) is saved as `further-out-rooms-answer-9.md` and folded. Next: Portland, Raleigh–Durham, St. Louis, Pittsburgh; after them, Milwaukee and the Los Angeles extras. Save the answer as `further-out-rooms-answer-10.md`.
+
+```
+Continue the Further out research from Portland, in the brief's order: Portland, Raleigh–Durham, St. Louis, Pittsburgh. Deliver this as Delivery 10, a new file with only these four city sections, its own delivery status and the continuation point; do not repeat earlier deliveries. Keep everything Delivery 9 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), one recommended capacity per row with its label, a decimal coordinate pair for every room, a reproducible hall-to-room route for every row, the hold markers you used (INNER-BOUNDARY, OUTER-BOUNDARY, CAPACITY, DATA, PROVISIONAL INSIDE), the alias check against the on-file list before calling a room new, the separate "complete outer-boundary records" table for rooms past the three-hour screen, the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region and state names as location only. A room within another covered city's hour belongs to that city, not to these four.
+
+City halls (use these points, latitude first): Portland, City Hall, 1221 SW 4th Avenue (45.5150, -122.6791); Raleigh–Durham has two halls, and a room is inside when it is within the hour of either: Raleigh Municipal Building, 222 West Hargett Street (35.7787, -78.6430), and Durham City Hall, 101 City Hall Plaza (35.9962, -78.8988); St. Louis, City Hall, 1200 Market Street (38.6268, -90.1994); Pittsburgh, City-County Building, 414 Grant Street (40.4381, -79.9969).
+
+The app already has these rooms. Do not list them again; any other room is yours to check by its own hall drive.
+
+Portland. Rooms on file; largest setup on file:
+- Providence Park; 25,218
+- Moda Center; 20,500
+- Veterans Memorial Coliseum; 8,600
+- Cascades Amphitheater; 7,810
+- Hillsboro Stadium; 7,600
+- McMenamins Historic Edgefield Manor; 7,000
+- Hillsboro Hops Ballpark; no capacity on file
+- Hillsboro Ballpark, Merlo Field at the Clive Charles Soccer Complex, Earle A. & Virginia H. Chiles Center, Viking Pavilion, Keller Auditorium, Arlene Schnitzer Hall, Roseland Theatre, Crystal Ballroom, Concerts in the Grove; all under 5,000
+(Seattle is a covered city. Its own rooms, the Tacoma rooms among them (Tacoma Dome, Cheney Stadium), belong to Seattle; already Further out for Seattle: Grays Harbor Raceway (Elma), the Kitsap County Fairgrounds rooms (Bremerton), the Ellensburg rooms and The Gorge (George). Salem, Eugene, Corvallis, Bend, Hood River, the Oregon coast, Longview–Kelso, Centralia–Chehalis, Yakima and the Tri-Cities are yours to check by their drives.)
+
+Raleigh–Durham. Rooms on file; largest setup on file:
+- Kenan Stadium; 62,980
+- Carter-Finley Stadium; 56,919
+- Wallace Wade Stadium; 40,004
+- Dean E. Smith Center; 21,750
+- Coastal Credit Union Music Park at Walnut Creek; 20,601
+- Lenovo Center; 20,450
+- O'Kelly-Riddick Stadium; 10,000
+- Durham Bulls Athletic Park; 10,000
+- First Horizon Stadium; 10,000
+- Cameron Indoor Stadium; 9,314
+- Durham County Memorial Stadium; 8,500
+- J.S. Dorton Arena; 7,000
+- Koka Booth Amphitheatre; 7,000
+- Carmichael Arena; 6,822
+- Red Hat Amphitheater; 6,000 (its replacement, one block south and opening in 2027, is on file too, with no capacity yet)
+- Reynolds Coliseum; 5,500
+- Dorrance Field, Nomaco Park; no capacity on file
+- Freeman Field at Koskinen Stadium, McDougald-McLendon Arena, Durham Performing Arts Center, Raleigh Memorial Auditorium, Meymandi Concert Hall, North Main Athletic Complex Stadium, Dail Soccer Field; all under 5,000
+(Washington DC is a covered city. Already Further out for it: the Richmond rooms (Richmond Raceway and its Virginia Credit Union LIVE!, CarMax Park, E. Claiborne Robins Stadium, Stuart C. Siegel Center, Allianz Amphitheater at Riverfront, City Stadium, Innsbrook Pavilion in Glen Allen) and Fredericksburg's Virginia Credit Union Stadium. Charlotte is not a covered city, so its rooms count as Further out for Raleigh–Durham if they fall within about three hours. Greensboro, Winston-Salem, Fayetteville, Greenville, Wilmington, Rocky Mount, Charlotte and southern Virginia are yours to check by their drives.)
+
+St. Louis. Rooms on file; largest setup on file:
+- The Dome at America's Center; 67,277
+- Busch Stadium; 43,769
+- Energizer Park; 22,423
+- Hollywood Casino Amphitheatre; 20,000
+- Enterprise Center; 18,096
+- Family Arena; 11,522
+- The Muny; 10,700
+- Chaifetz Arena; 10,600
+- Hermann Stadium; 6,050
+- Harlen C. Hunter Stadium; 6,000
+- Arsenal BG Ballpark; 6,000
+- World Wide Technology Raceway, St. Louis Music Park; no capacity on file
+- CarShield Field, Fabulous Fox Theatre, First Community Arena at the Vadalabene Center, Ralph Korte Stadium, Stifel Theatre, Hyland Performance Arena, The Factory, America's Center Ferrara Theatre, Centene Community Ice Center; all under 5,000
+(Kansas City, Indianapolis and Nashville are covered cities. Already Further out for them: Kansas City's Columbia rooms (Faurot Field, Mizzou Arena, Hearnes Center) and Sedalia's (Missouri State Fair Grandstand, Mathewson Exhibition Center); Indianapolis's Terre Haute rooms (Indiana State Memorial Stadium, Hulman Center); Nashville's Evansville rooms (Ford Center, Bosse Field), Murray's Roy Stewart Stadium and the Owensboro Sportscenter. Jefferson City, Rolla, Cape Girardeau, Carbondale, Springfield (Illinois), Champaign–Urbana, Bloomington–Normal, Quincy and the Lake of the Ozarks are yours to check by their drives.)
+
+Pittsburgh. Rooms on file; largest setup on file:
+- Acrisure Stadium; 68,400
+- PNC Park; 38,747
+- The Pavilion at Star Lake; 23,000
+- PPG Paints Arena; 19,000
+- Petersen Events Center; 12,508
+- Hepner–Bailey Field at Adamson Stadium; 6,500
+- PennWest California Convocation Center; 6,000
+- Stage AE Outdoor Amphitheater; 5,500
+- F.N.B. Stadium; 5,000
+- EQT Park; 5,000
+- Already Further out: N. Kerr Thompson Stadium and Morrow Field House (Slippery Rock), Fayette County Fairgrounds grandstand arena (Dunbar), Scottish Rite Cathedral (New Castle), Stambaugh Stadium and Covelli Centre (Youngstown), Canfield Fair Grandstand (Canfield Twp.), Al Jacks Field at Memorial Stadium (Clarion)
+- Lernerville Speedway, Reeves Field, Westmoreland Fairgrounds grandstand arena; no capacity on file
+- Citizens Live at The Wylie, Fitzgerald Field House, UPMC Events Center, UPMC Cooper Fieldhouse, Joe Walton Stadium, Benedum Center, Heinz Hall, Stage AE Indoor Music Hall, Rooney Field, Carnegie Music Hall, Roxian Theatre, Byham Theater, Clearview Arena, Victory Heights Arena, Ambrose Urbanic Field; all under 5,000
+(Cleveland, Columbus, Washington DC, Philadelphia and Toronto are covered cities. Cleveland's own rooms, the Akron rooms among them (InfoCision Stadium, James A. Rhodes Arena, Canal Park), Blossom Music Center and Kent's M.A.C. Center, belong to Cleveland. Already Further out for them: Cleveland's Canton rooms (Tom Benson Hall of Fame Stadium, Canton Memorial Civic Center), Massillon's Paul Brown Tiger Stadium, Kent's Dix Stadium, Alliance's Kehres Stadium, Niles's 717 Credit Union Field at Eastwood, Ashland's Jack Miller Stadium, Summit Motorsports Park, Edinboro's Sox Harrison Stadium and the Erie rooms (Erie Veterans Memorial Stadium, Erie Insurance Arena, UPMC Park); Columbus's Athens rooms (Peden Stadium, Ohio University Convocation Center), Mid-Ohio and Mansfield's Arlin Field; Washington DC's Hagerstown Speedway, Frederick's Nymeo Field and York's WellSpan Park; Philadelphia's Hershey and Harrisburg rooms (Hersheypark Stadium, GIANT Center, New Holland Arena, FNB Field); Toronto's Buffalo rooms (Highmark Stadium, KeyBank Center, Sahlen Field). Morgantown, State College, Altoona, Johnstown, Wheeling, Indiana (Pennsylvania), Latrobe, Washington (Pennsylvania) and Steubenville are yours to check by their drives.)
+
+Stop at a clean break and say where you stopped.
+```

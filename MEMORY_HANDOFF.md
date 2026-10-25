@@ -21,7 +21,7 @@ _Last synced: Oct 24, 2026, evening Pacific, Claude Code (Opus 5.5 as builder, F
 2. **Answer questions 3–7** in the gap report.
 3. **Phone checks signed in** (the report's "For Kylie to check on a phone"): the event page's status chip and Your Stub card, the Profile & Settings profile card and Followers row, friends' rows on Upcoming, Oct 21's saved verdict after the Oct 25 nightly, the Hollywood Bowl or Greek Theatre weather card.
 4. **The M15 seed, when she wants test account A filled:** `docs/reference/test-account-seed.md` (dry run first; agents never run its write path or open her export).
-5. **Research to run:** the two M35 prompts (`docs/research/topics/arts-fill-rates-prompt.md`, `ncaa-attendance-sources-prompt.md`) and Further out continuation 8 (`docs/research/topics/further-out-rooms-prompt.md`, saved as `further-out-rooms-answer-9.md`).
+5. **Research to run:** the two M35 prompts (`docs/research/topics/arts-fill-rates-prompt.md`, `ncaa-attendance-sources-prompt.md`) and Further out continuation 9, Portland onward (`docs/research/topics/further-out-rooms-prompt.md`, saved as `further-out-rooms-answer-10.md`; delivery 9 was saved and folded Oct 25).
 
 ## Next
 1. **Ask Kylie for new UX notes and her answers to questions 3–7**, then fold any answer that changes code.

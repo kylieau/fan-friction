@@ -24324,6 +24324,435 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
     furtherOut: { driveMinutes: 161, how: 'routed', town: 'Lafayette' },
   },
+  // ---- Further out delivery 9 (docs/research/topics/further-out-rooms-answer-9.md: Salt Lake City, Ottawa–Gatineau,
+  // Edmonton, San Antonio), folded Oct 25, 2026 the same way as deliveries 1–8: every row of the research's two tables,
+  // each on the side the drive-time rule puts it, filed under its city. Inside a city: Provo's LaVell Edwards Stadium
+  // (55 min), Marriott Center and Smith Fieldhouse, Ogden's and Orem's rooms and Lehi's rodeo grounds for Salt Lake City;
+  // ten school-district stadiums for San Antonio (Hondo's Barry Field at 51 min). Not imported: the held outer-boundary
+  // records (Vernal's Western Park, Calgary's McMahon Stadium, Saddledome and GMC Stadium, Del Rio's Levermann
+  // Stadium), Toyota Rattler Stadium (inside Austin's hour; Austin's to reconcile) and every lead outside the tables. ----
+  'maverik-stadium': {
+    id: 'maverik-stadium',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Merlin Olsen Field at Maverik Stadium' }],
+    aliases: ['Maverik Stadium'],
+    // The research's map point; not an entrance.
+    location: [-111.811670, 41.751937],
+    ticketmasterIds: ['ZFr9jZd6v1'],
+    capacity: [{ seats: 25513, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 103, how: 'routed', town: 'Logan' },
+  },
+  'ute-stampede-arena': {
+    id: 'ute-stampede-arena',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Ute Stampede Arena' }],
+    aliases: ['Juab County Fairgrounds'],
+    // The research's map point; not an entrance.
+    location: [-111.843907, 39.707200],
+    capacity: [{ seats: 12000, setup: 'rodeo', note: 'Reported, the research\'s recommended figure. A 2020 figure the research holds as a provisional historical benchmark (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 94, how: 'routed', town: 'Nephi' },
+  },
+  'dee-glen-smith-spectrum': {
+    id: 'dee-glen-smith-spectrum',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Dee Glen Smith Spectrum' }],
+    // The research's map point; not an entrance.
+    location: [-111.812103, 41.747631],
+    ticketmasterIds: ['KovZpZA1FE6A'],
+    capacity: [{ seats: 10270, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 102, how: 'routed', town: 'Logan' },
+  },
+  'iccu-dome': {
+    id: 'iccu-dome',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Holt Arena' }, { name: 'ICCU Dome', from: '2024-01-01' }],
+    // The research's map point; not an entrance.
+    location: [-112.428559, 42.869986],
+    ticketmasterIds: ['KovZpZA1JAeA'],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 168, how: 'routed', town: 'Pocatello' },
+  },
+  'fiesta-days-rodeo-arena': {
+    id: 'fiesta-days-rodeo-arena',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Fiesta Days Rodeo Arena' }],
+    aliases: ['Spanish Fork Fairgrounds', 'Lance Money Arena'],
+    // The research's map point; not an entrance.
+    location: [-111.653919, 40.102108],
+    capacity: [{ seats: 8400, setup: 'rodeo', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 64, how: 'routed', town: 'Spanish Fork' },
+  },
+  'cache-county-fairgrounds-outdoor-arena': {
+    id: 'cache-county-fairgrounds-outdoor-arena',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Cache County Fairgrounds Outdoor Arena' }],
+    aliases: ['Cache County Fairgrounds'],
+    // The research's map point; not an entrance.
+    location: [-111.845981, 41.721556],
+    capacity: [{ seats: 5000, setup: 'rodeo', note: 'Official, the research\'s recommended figure. About 5,000, at the threshold (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 97, how: 'routed', town: 'Logan' },
+  },
+  'lavell-edwards-stadium': {
+    id: 'lavell-edwards-stadium',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'LaVell Edwards Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-111.654578, 40.257319],
+    ticketmasterIds: ['KovZpaprne'],
+    capacity: [{ seats: 62073, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'marriott-center': {
+    id: 'marriott-center',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Marriott Center' }],
+    // The research's map point; not an entrance.
+    location: [-111.649361, 40.254073],
+    capacity: [{ seats: 17978, setup: 'basketball', note: 'Official, the research\'s recommended figure. The current venue policy; an older page keeps 18,987. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+  },
+  'stewart-stadium': {
+    id: 'stewart-stadium',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Elizabeth Dee Shaw Stewart Stadium' }],
+    aliases: ['Stewart Stadium'],
+    // The research's map point; not an entrance.
+    location: [-111.940068, 41.191897],
+    ticketmasterIds: ['ZFr9jZe6dA'],
+    capacity: [{ seats: 13441, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'dee-events-center': {
+    id: 'dee-events-center',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Dee Events Center' }],
+    // The research's map point; not an entrance.
+    location: [-111.945007, 41.182357],
+    ticketmasterIds: ['Z6r9jZAkAe'],
+    capacity: [{ seats: 11592, setup: 'basketball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+  },
+  'uccu-center': {
+    id: 'uccu-center',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'UCCU Center' }],
+    aliases: ['McKay Events Center'],
+    // The research's map point; not an entrance.
+    location: [-111.717060, 40.278666],
+    ticketmasterIds: ['KovZpZA6kE7A'],
+    capacity: [{ seats: 7000, note: 'Official, the research\'s recommended figure. The owner\'s arena box; its introduction says 8,000 and UVU athletics 8,500. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+  },
+  'lindquist-field': {
+    id: 'lindquist-field',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Lindquist Field' }],
+    // The research's map point; not an entrance.
+    location: [-111.974921, 41.224064],
+    // Exact name 4.9 km from the research's point (Ticketmaster's pin is off); the only Lindquist Field in Ogden.
+    ticketmasterIds: ['ZFr9jZFek6'],
+    capacity: [{ seats: 6700, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'golden-spike-arena': {
+    id: 'golden-spike-arena',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Golden Spike Arena' }],
+    // The research's map point; not an entrance.
+    location: [-111.997780, 41.275560],
+    capacity: [{ seats: 6500, note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+  },
+  'lehi-round-up-rodeo-grounds': {
+    id: 'lehi-round-up-rodeo-grounds',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'Lehi Round-Up Rodeo Grounds' }],
+    // The research's map point; not an entrance.
+    location: [-111.856435, 40.389852],
+    ticketmasterIds: ['Z7r9jZa7JV'],
+    capacity: [{ seats: 6500, setup: 'rodeo', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'smith-fieldhouse': {
+    id: 'smith-fieldhouse',
+    metroId: 'salt-lake-city',
+    names: [{ name: 'George Albert Smith Fieldhouse' }],
+    aliases: ['Smith Fieldhouse'],
+    // The research's map point; not an entrance.
+    location: [-111.654379, 40.247453],
+    capacity: [{ seats: 5000, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+  },
+  'richardson-stadium': {
+    id: 'richardson-stadium',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Richardson Stadium' }],
+    aliases: ['Richardson Memorial Stadium'],
+    // The research's map point; not an entrance.
+    location: [-76.516296, 44.227682],
+    capacity: [{ seats: 8000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 144, how: 'routed', town: 'Kingston' },
+  },
+  'slush-puppie-place': {
+    id: 'slush-puppie-place',
+    metroId: 'ottawa-gatineau',
+    names: [{ name: 'Rogers K-Rock Centre' }, { name: 'Leon\'s Centre', from: '2018-01-01' }, { name: 'Slush Puppie Place', from: '2024-01-01' }],
+    // The research's map point; not an entrance.
+    location: [-76.479661, 44.233384],
+    ticketmasterIds: ['KovZpZA1lJtA'],
+    capacity: [{ seats: 6700, note: 'Official, the research\'s recommended figure. The event figure; the hockey manifest is disputed (5,522 to 5,700). docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 141, how: 'routed', town: 'Kingston' },
+  },
+  'ponoka-stampede-grounds': {
+    id: 'ponoka-stampede-grounds',
+    metroId: 'edmonton',
+    names: [{ name: 'Ponoka Stampede Grandstands' }],
+    aliases: ['Ponoka Stampede Grounds'],
+    // The research's map point; not an entrance.
+    location: [-113.590474, 52.670084],
+    capacity: [{ seats: 8000, setup: 'rodeo', note: 'Reported, the research\'s recommended figure. The 2018 figure, held as a conservative benchmark; a proposed expansion to over 10,000 is unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 84, how: 'routed', town: 'Ponoka' },
+  },
+  'marchant-crane-centrium': {
+    id: 'marchant-crane-centrium',
+    metroId: 'edmonton',
+    names: [{ name: 'ENMAX Centrium' }, { name: 'Peavey Mart Centrium', from: '2021-07-01' }, { name: 'Marchant Crane Centrium', from: '2025-06-05' }],
+    aliases: ['Marchant Crane Centrium at Westerner Park', 'Centrium at Westerner Park'],
+    // The research's map point; not an entrance.
+    location: [-113.805871, 52.228219],
+    ticketmasterIds: ['KovZpZAFFlkA'],
+    capacity: [{ seats: 7819, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 120, how: 'routed', town: 'Red Deer' },
+  },
+  'javelina-stadium': {
+    id: 'javelina-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Javelina Stadium' }],
+    aliases: ['Pepsi Field at Javelina Stadium'],
+    // The research's map point; not an entrance.
+    location: [-97.880062, 27.528869],
+    capacity: [{ seats: 15000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 167, how: 'routed', town: 'Kingsville' },
+  },
+  'buccaneer-stadium': {
+    id: 'buccaneer-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Buccaneer Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-97.423766, 27.794943],
+    capacity: [{ seats: 11000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 147, how: 'routed', town: 'Corpus Christi' },
+  },
+  'victoria-memorial-stadium': {
+    id: 'victoria-memorial-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Memorial Stadium' }],
+    aliases: ['Victoria Memorial Stadium'],
+    // The research's map point; not an entrance.
+    location: [-96.971852, 28.826992],
+    capacity: [{ seats: 10729, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 142, how: 'routed', town: 'Victoria' },
+  },
+  'hilliard-center-arena': {
+    id: 'hilliard-center-arena',
+    metroId: 'san-antonio',
+    names: [{ name: 'American Bank Center Arena' }, { name: 'Hilliard Center Arena', from: '2025-09-01' }],
+    // The research's map point; not an entrance.
+    location: [-97.393495, 27.807305],
+    ticketmasterIds: ['KovZpZA771IA'],
+    capacity: [{ seats: 10323, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 149, how: 'routed', town: 'Corpus Christi' },
+  },
+  'sames-auto-arena': {
+    id: 'sames-auto-arena',
+    metroId: 'san-antonio',
+    names: [{ name: 'Laredo Energy Arena' }, { name: 'Sames Auto Arena', from: '2018-07-17' }],
+    // The research's map point; not an entrance.
+    location: [-99.452579, 27.558306],
+    ticketmasterIds: ['KovZpZAJE7kA'],
+    capacity: [{ seats: 9622, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 165, how: 'routed', town: 'Laredo' },
+  },
+  'bill-johnson-sac-stadium': {
+    id: 'bill-johnson-sac-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Bill Johnson Student Activity Complex' }],
+    aliases: ['Student Activity Complex'],
+    // The research's map point; not an entrance.
+    location: [-99.437428, 27.497918],
+    capacity: [{ seats: 8500, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 172, how: 'routed', town: 'Laredo' },
+  },
+  'shirley-field': {
+    id: 'shirley-field',
+    metroId: 'san-antonio',
+    names: [{ name: 'Shirley Field' }],
+    // The research's map point; not an entrance.
+    location: [-99.512528, 27.507718],
+    capacity: [{ seats: 8000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 163, how: 'routed', town: 'Laredo' },
+  },
+  'cabaniss-stadium': {
+    id: 'cabaniss-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Cabaniss Athletic Complex' }],
+    // Calculated from the sports-complex outline (not the baseball field); not an entrance.
+    location: [-97.431807, 27.704880],
+    capacity: [{ seats: 8000, setup: 'soccer', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 155, how: 'routed', town: 'Corpus Christi' },
+  },
+  'whataburger-field': {
+    id: 'whataburger-field',
+    metroId: 'san-antonio',
+    names: [{ name: 'Whataburger Field' }],
+    // The research's map point; not an entrance.
+    location: [-97.399329, 27.809926],
+    ticketmasterIds: ['KovZpZAJJnkA'],
+    capacity: [{ seats: 7679, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 149, how: 'routed', town: 'Corpus Christi' },
+  },
+  'uni-trade-stadium': {
+    id: 'uni-trade-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Uni-Trade Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-99.454921, 27.554277],
+    capacity: [{ seats: 6000, setup: 'baseball', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 165, how: 'routed', town: 'Laredo' },
+  },
+  'antler-stadium': {
+    id: 'antler-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Antler Stadium' }],
+    aliases: ['Tivy Antler Stadium'],
+    // The research's map point; not an entrance.
+    location: [-99.131980, 30.056771],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 72, how: 'routed', town: 'Kerrville' },
+  },
+  'honey-bowl-stadium': {
+    id: 'honey-bowl-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Honey Bowl Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-99.795432, 29.229134],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 102, how: 'routed', town: 'Uvalde' },
+  },
+  'alamo-stadium': {
+    id: 'alamo-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Alamo Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.479128, 29.462805],
+    capacity: [{ seats: 18500, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'comalander-stadium': {
+    id: 'comalander-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Jerry Comalander Stadium' }],
+    aliases: ['Comalander Stadium'],
+    // The research's map point; not an entrance.
+    location: [-98.467708, 29.548741],
+    capacity: [{ seats: 11000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'heroes-stadium': {
+    id: 'heroes-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Heroes Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.397813, 29.536903],
+    capacity: [{ seats: 11000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'dub-farris-stadium': {
+    id: 'dub-farris-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Dub Farris Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.653532, 29.563438],
+    capacity: [{ seats: 10568, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'unicorn-stadium': {
+    id: 'unicorn-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Unicorn Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.151905, 29.717625],
+    capacity: [{ seats: 10200, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'gustafson-stadium': {
+    id: 'gustafson-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Gustafson Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.625236, 29.452964],
+    capacity: [{ seats: 9800, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'edgewood-veterans-stadium': {
+    id: 'edgewood-veterans-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Edgewood Veterans Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.555908, 29.394062],
+    capacity: [{ seats: 8500, setup: 'football', note: 'Reported, the research\'s recommended figure. A dated 2017 figure; the current paid calendar needs confirming (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'matador-stadium': {
+    id: 'matador-stadium',
+    metroId: 'san-antonio',
+    names: [{ name: 'Matador Stadium' }],
+    aliases: ['Jack Taylor Field'],
+    // The research's map point; not an entrance.
+    location: [-97.944908, 29.578052],
+    capacity: [{ seats: 8210, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'barry-field': {
+    id: 'barry-field',
+    metroId: 'san-antonio',
+    names: [{ name: 'Barry Field' }],
+    // The research's map point; not an entrance.
+    location: [-99.137036, 29.342640],
+    capacity: [{ seats: 5880, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
+  'eagle-stadium-pleasanton': {
+    id: 'eagle-stadium-pleasanton',
+    metroId: 'san-antonio',
+    names: [{ name: 'Eagle Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-98.497079, 28.966526],
+    capacity: [{ seats: 5500, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-9.md.' }],
+    roof: 'open',
+  },
 };
 /**
  * A merged duplicate's old id → the room kept, so catalog rows the nightly wrote under the old id before the merge
