@@ -12969,14 +12969,19 @@ a.follow-lead::after {
   color: var(--ink2);
 }
 
-/* The venue line's right side (Kylie, Oct 24, 2026): your answer's icon, the weather, then the tag, always last; only the
-   line's own 6px gap between them, and the first of them pushed to the right edge. */
-.day-row-line2 > .day-row-you,
-.day-row-line2 > .day-row-weather,
-.day-row-line2 > .event-tags {
+/* The venue line (Kylie, Oct 24, 2026): the venue name, the outdoor weather right after it (no separator), then at the
+   right edge your answer's icon and the tag, always last; only the line's own 6px gap between them. The venue name
+   gives way with "…" first; the weather, icon and tag never shrink. */
+.day-row-line2 > .day-row-venue {
+  flex: 0 1 auto;
+}
+.day-row-line2 > .day-row-weather {
   margin-left: 0;
 }
-.day-row-line2 > .day-row-venue + *,
-.day-row-line2 > :first-child:not(.day-row-venue) {
+.day-row-line2 > .day-row-you,
+.day-row-line2 > .event-tags {
   margin-left: auto;
+}
+.day-row-line2 > .day-row-you + .event-tags {
+  margin-left: 0;
 }

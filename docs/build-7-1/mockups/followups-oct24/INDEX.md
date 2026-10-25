@@ -26,3 +26,4 @@ Built (Kylie, Oct 24, 2026: "Slap the icon before the tag or weather … Tag sho
 | `weather-0-right-built.png` | As built: the weather on the right; on a tagged row (JAY-Z30, MAJOR) it sits left of the tag. |
 | `weather-a-beside-venue.png` | Question: the weather right after the venue name ("Rose Bowl · ☀ 76°"); the right edge holds only your icon and the tag. Not approved. |
 
+Decided (Kylie, Oct 24, 2026): the weather right after the venue name, no separator. Built: `weather-built-beside-venue.png`.

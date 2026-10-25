@@ -18,9 +18,9 @@ import { LabelLine } from './TitleText';
  * The time at the left; line 1 the title and, at the right edge, the crowd figure with the friction ring
  * after it (build 6, item 1); line 2 the venue and, at the same right edge, the occasion tag, shown only on
  * the day's top event(s) (build 6, item 2). A long title never meets the figure, and a long venue gives way
- * to the tag. Your own answer is its icon alone, in link blue, on the last line (the venue line), before the weather and
- * the tag, which always comes last (Kylie, Oct 24, 2026: "leave the icon … place the icon on the last line", then "slap
- * the icon before the tag or weather"; it replaced the word on a line of its own, build 5 item 4). The word rides in the row's spoken label. Friends stay in the activity line.
+ * to the tag. Your own answer is its icon alone, in link blue, on the last line (the venue line), at the right edge before
+ * the tag, which always comes last; the outdoor weather sits right after the venue name (Kylie, Oct 24, 2026; the icon
+ * replaced the word on a line of its own, build 5 item 4). The word rides in the row's spoken label. Friends stay in the activity line.
  */
 export function RowBody({
   event: e,
@@ -45,7 +45,8 @@ export function RowBody({
   extra?: ReactNode;
   /**
    * The day page's outdoor row marker (build 7.1, M3): a plain grey sun, cloud or rain and the peak feels-like at the
-   * venue during the event, right-aligned on the venue line, the same right edge as the friction ring. Indoor rows
+   * venue during the event, right after the venue name with no separator (Kylie, Oct 24, 2026; M3 had it at the right
+   * edge). A long venue name shortens with "…" first; the weather is never cut. Indoor rows
    * and every other list pass nothing.
    */
   weather?: { sky: SkyKind; tempF: number } | null;
@@ -70,17 +71,17 @@ export function RowBody({
         {label && <LabelLine label={label} className="day-row-label" />}
         <span className="day-row-line2">
           {venueText && <span className="day-row-venue">{venueText}</span>}
-          {/* Right of the venue, in this order (Kylie, Oct 24, 2026): your answer's icon, the weather, then the occasion
-              tag, always last; 6px apart. */}
-          {you && (
-            <span className="day-row-you" role="img" aria-label={ACTIVITY_WORDS[you]} title={ACTIVITY_WORDS[you]}>
-              <ActivityIcon kind={you} />
-            </span>
-          )}
+          {/* The weather right after the venue name, no separator; then, at the right edge, your answer's icon and the
+              occasion tag, always last; 6px apart (Kylie, Oct 24, 2026). */}
           {weather && (
             <span className="day-row-weather" aria-label={`Peak ${degreesFor(weather.tempF, e.metroId)} at the venue`}>
               <WeatherIcon kind={weather.sky} />
               <span aria-hidden>{degreesFor(weather.tempF, e.metroId)}</span>
+            </span>
+          )}
+          {you && (
+            <span className="day-row-you" role="img" aria-label={ACTIVITY_WORDS[you]} title={ACTIVITY_WORDS[you]}>
+              <ActivityIcon kind={you} />
             </span>
           )}
           <DayOccasionTag event={e} day={day} />
