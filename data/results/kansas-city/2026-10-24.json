@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-sporting-kc-761899",
+      "metroId": "kansas-city",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sporting-park",
+      "homeTeamId": "sporting-kc",
+      "home": {
+        "name": "Sporting KC",
+        "score": 1
+      },
+      "away": {
+        "name": "Austin FC",
+        "score": 2
+      },
+      "attendance": 13928,
+      "capturedAt": "2026-10-25T13:19:00.539Z"
+    }
+  ]
+}

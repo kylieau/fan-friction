@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-kraken-401892577",
+      "metroId": "seattle",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 1
+      },
+      "away": {
+        "name": "Wild",
+        "score": 5
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-10-25T13:18:54.816Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-flyers-401892566",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 4
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 5
+      },
+      "attendance": 19336,
+      "capturedAt": "2026-10-25T13:18:58.045Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "13:08"
+    },
+    {
+      "eventId": "2026-10-24-espn-philadelphia-union-761894",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "subaru-park",
+      "homeTeamId": "philadelphia-union",
+      "home": {
+        "name": "Union",
+        "score": 1
+      },
+      "away": {
+        "name": "Revolution",
+        "score": 2
+      },
+      "attendance": 18524,
+      "capturedAt": "2026-10-25T13:18:58.045Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-sixers-401909855",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 127
+      },
+      "away": {
+        "name": "Bucks",
+        "score": 116
+      },
+      "attendance": 21003,
+      "capturedAt": "2026-10-25T13:18:58.045Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-10-24-espn-villanova-football-401868035",
+      "metroId": "philadelphia",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "villanova-stadium",
+      "homeTeamId": "villanova-football",
+      "home": {
+        "name": "Villanova",
+        "score": 24
+      },
+      "away": {
+        "name": "Lehigh",
+        "score": 18
+      },
+      "attendance": 5451,
+      "capturedAt": "2026-10-25T13:18:58.045Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "15:31"
+    }
+  ]
+}

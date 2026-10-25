@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-real-salt-lake-761898",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "america-first-field",
+      "homeTeamId": "real-salt-lake",
+      "home": {
+        "name": "Real Salt Lake",
+        "score": 3
+      },
+      "away": {
+        "name": "CITY SC",
+        "score": 0
+      },
+      "attendance": 20614,
+      "capturedAt": "2026-10-25T13:19:01.875Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-utah-mammoth-401892575",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 5
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 4
+      },
+      "attendance": 14111,
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:19:01.875Z",
+      "duration": {
+        "minutes": 171,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    },
+    {
+      "eventId": "2026-10-24-espn-utah-utes-football-401856837",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rice-eccles-stadium",
+      "homeTeamId": "utah-utes-football",
+      "home": {
+        "name": "Utah Utes",
+        "score": 21
+      },
+      "away": {
+        "name": "Houston",
+        "score": 13
+      },
+      "attendance": 51864,
+      "capturedAt": "2026-10-25T13:19:01.875Z",
+      "duration": {
+        "minutes": 205,
+        "kind": "estimated"
+      },
+      "startedAt": "22:27"
+    }
+  ]
+}

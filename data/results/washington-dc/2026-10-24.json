@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-capitals-401892571",
+      "metroId": "washington-dc",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 4
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 3
+      },
+      "attendance": 18347,
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:19:02.531Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-10-24-espn-dc-united-761895",
+      "metroId": "washington-dc",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "dc-united",
+      "home": {
+        "name": "D.C. United",
+        "score": 0
+      },
+      "away": {
+        "name": "Cincinnati",
+        "score": 2
+      },
+      "attendance": 16046,
+      "capturedAt": "2026-10-25T13:19:02.531Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-loudoun-united-401842304",
+      "metroId": "washington-dc",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "segra-field",
+      "homeTeamId": "loudoun-united",
+      "home": {
+        "name": "Loudoun United",
+        "score": 4
+      },
+      "away": {
+        "name": "Brooklyn",
+        "score": 3
+      },
+      "attendance": 2950,
+      "capturedAt": "2026-10-25T13:19:02.531Z"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-mlb-849802",
+      "metroId": "milwaukee",
+      "date": "2026-10-24",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "american-family-field",
+      "homeTeamId": "brewers",
+      "home": {
+        "name": "Brewers",
+        "score": 5
+      },
+      "away": {
+        "name": "Rays",
+        "score": 4
+      },
+      "capturedAt": "2026-10-25T13:18:57.645Z",
+      "attendance": 43245,
+      "duration": {
+        "minutes": 218,
+        "kind": "official"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

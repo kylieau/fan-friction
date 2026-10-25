@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-dynamo-761896",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "dynamo",
+      "home": {
+        "name": "Dynamo",
+        "score": 0
+      },
+      "away": {
+        "name": "MNUFC",
+        "score": 0
+      },
+      "attendance": 17377,
+      "capturedAt": "2026-10-25T13:19:00.693Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-texas-southern-football-401868972",
+      "metroId": "houston",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "texas-southern-football",
+      "home": {
+        "name": "Texas Southern Tigers",
+        "score": 24
+      },
+      "away": {
+        "name": "Southern",
+        "score": 21
+      },
+      "attendance": 21523,
+      "capturedAt": "2026-10-25T13:19:00.693Z"
+    }
+  ]
+}

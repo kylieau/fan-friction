@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-michigan-football-401858496",
+      "metroId": "detroit",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michigan-stadium",
+      "homeTeamId": "michigan-football",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 6
+      },
+      "away": {
+        "name": "Indiana",
+        "score": 13
+      },
+      "attendance": 111276,
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:18:56.878Z",
+      "duration": {
+        "minutes": 204,
+        "kind": "estimated"
+      },
+      "startedAt": "12:08"
+    }
+  ]
+}

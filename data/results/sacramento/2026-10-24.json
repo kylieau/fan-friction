@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-sacramento-republic-401842309",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "heart-health-park",
+      "homeTeamId": "sacramento-republic",
+      "home": {
+        "name": "Republic FC",
+        "score": 3
+      },
+      "away": {
+        "name": "Roots",
+        "score": 2
+      },
+      "attendance": 11569,
+      "capturedAt": "2026-10-25T13:18:59.930Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-uc-davis-football-401868132",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "uc-davis-health-stadium",
+      "homeTeamId": "uc-davis-football",
+      "home": {
+        "name": "UC Davis",
+        "score": 33
+      },
+      "away": {
+        "name": "N Colorado",
+        "score": 6
+      },
+      "attendance": 7841,
+      "capturedAt": "2026-10-25T13:18:59.930Z",
+      "duration": {
+        "minutes": 194,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

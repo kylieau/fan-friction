@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-09",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "phoenix",
+      "venueId": "city",
+      "date": "2026-11-09",
+      "basis": "forecast",
+      "capturedAt": "2026-10-25T13:06:16.863Z",
+      "feelsLikeHighF": 80.8,
+      "feelsLikeLowF": 66.2,
+      "code": 0,
+      "precipProbability": 3,
+      "precipMm": 0
+    }
+  ]
+}

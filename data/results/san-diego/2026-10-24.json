@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-san-diego-fc-761901",
+      "metroId": "san-diego",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "san-diego-fc",
+      "home": {
+        "name": "San Diego FC",
+        "score": 2
+      },
+      "away": {
+        "name": "Sounders",
+        "score": 2
+      },
+      "capturedAt": "2026-10-25T13:18:54.580Z"
+    },
+    {
+      "eventId": "2026-10-24-ht-san-diego-gulls-1029198",
+      "metroId": "san-diego",
+      "date": "2026-10-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "pechanga-arena",
+      "homeTeamId": "san-diego-gulls",
+      "home": {
+        "name": "Gulls",
+        "score": 4
+      },
+      "away": {
+        "name": "Barracuda",
+        "score": 1
+      },
+      "attendance": 7719,
+      "capturedAt": "2026-10-25T13:18:54.581Z"
+    }
+  ]
+}

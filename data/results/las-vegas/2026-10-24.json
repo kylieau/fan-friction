@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-ht-henderson-silver-knights-1029192",
+      "metroId": "las-vegas",
+      "date": "2026-10-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 1
+      },
+      "away": {
+        "name": "Roadrunners",
+        "score": 4
+      },
+      "attendance": 3594,
+      "capturedAt": "2026-10-25T13:19:00.342Z"
+    }
+  ]
+}

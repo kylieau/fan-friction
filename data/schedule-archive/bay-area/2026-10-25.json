@@ -1,0 +1,6194 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "metroName": "Bay Area",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-25",
+  "capturedAt": "2026-10-25T13:14:16.875Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-25",
+    "through": "2026-11-08"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 26
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 138
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 32
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-25-sa-smcgaels-com-12790",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. LMU",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-marys-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_FDGNm3T",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FDGNm3T"
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7PNAY",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAY",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_FDGxr3M",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FDGxr3M"
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_axWv9Ei",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Lucas Zelnick",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-of-fine-arts-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Lucas Zelnick",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_axWv9Ei"
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7PNAs",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAs",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZbS0uA9TW",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173TJf",
+        "K8vZ917_glV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbS0uA9TW",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7x7ov",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Everclear",
+      "place": {
+        "type": "venue",
+        "venueId": "the-mountain-winery"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Everclear",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x7ov",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_6dE8OLN",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Kishi Bashi",
+      "officialTitle": "Kishi Bashi: Sonderlust 10th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Kishi Bashi",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6dE8OLN",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-G5vYZ_o2ail3S",
+      "metroId": "bay-area",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lil Pete",
+      "officialTitle": "Lil Pete: Real Is Back Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Pete",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_o2ail3S",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-espn-valkyries-401918309",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Valkyries vs. Dream",
+      "stakes": {
+        "round": "Finals",
+        "game": 5
+      },
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valkyries",
+        "away": "dream",
+        "awayOpponent": "dream"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-sa-usfdons-com-9082",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Francisco vs. San Francisco State",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "San Francisco State",
+        "awayOpponent": "san-francisco-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-26-tm-G5vYZ_Kd2cK1B",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lil Pete",
+      "officialTitle": "Lil Pete: Real Is Back Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Pete",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_Kd2cK1B",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-G5vYZ_uFp_rvl",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "beabadoobee",
+      "officialTitle": "beabadoobee: The Powerlines Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "beabadoobee",
+      "act": true,
+      "performerIds": [
+        "K8vZ9179Xxf",
+        "K8vZ917Csz7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uFp_rvl",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_GlTz9wI",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Lenny Pearce",
+      "officialTitle": "Lenny Pearce - Toddler Rave World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Lenny Pearce",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GlTz9wI",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7PNAw",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAw",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-27-espn-sharks-401892595",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Sharks vs. Sabres",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "sabres",
+        "awayOpponent": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13839,
+        "low": 11732,
+        "high": 14164,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_5EhIC8T",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers: The Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KN9V",
+        "K8vZ917oh_f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5EhIC8T",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_5IX0y73",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bryson Tiller",
+      "officialTitle": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-pavilion-concord"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Bryson Tiller",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KBFf",
+        "K8vZ917fb2V",
+        "K8vZ917ozIV",
+        "K8vZ917fofV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5IX0y73",
+      "expectedDraw": {
+        "count": 12500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_13KOBrX",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Slow Pulp",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_13KOBrX",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5vYZ_73JO5lB",
+      "metroId": "bay-area",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "W.A.S.P.",
+      "officialTitle": "W.A.S.P. - 1984 TO HEADLESS",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "W.A.S.P.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_73JO5lB",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7PNAS",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAS",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_1h-FNMq",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Be Like Blippi Tour! - Photo Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Be Like Blippi Tour! - Photo Experience",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1h-FNMq"
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_1h65qeR",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Be Like Blippi Tour!",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Blippi Live!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1h65qeR"
+    },
+    {
+      "id": "2026-10-28-sa-calbears-com-38670",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cal vs. Stanford",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_8L82yaZ",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Protocols with Andrew Huberman",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "Dr. Andrew Huberman",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8L82yaZ"
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_a9251k2",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "G-Eazy",
+      "officialTitle": "Logic & G-Eazy: The Endless Summer Tour Part II",
+      "place": {
+        "type": "venue",
+        "venueId": "shoreline-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "G-Eazy",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uAkf",
+        "K8vZ917Cn90"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_a9251k2",
+      "expectedDraw": {
+        "count": 22500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_AllHHol",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "LIVE 105 Presents: Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171zxV",
+        "K8vZ9173ysf",
+        "K8vZ9171nXf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_AllHHol",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7PNAV",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAV",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-28-espn-earthquakes-761917",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Earthquakes vs. Rapids",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "earthquakes",
+        "away": "rapids",
+        "awayOpponent": "colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15304,
+        "low": 13790,
+        "high": 16652,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_GpQJTlc",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers: The Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KN9V",
+        "K8vZ917oh_f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GpQJTlc",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7xd7-",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Foreigner",
+      "place": {
+        "type": "venue",
+        "venueId": "the-mountain-winery"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Foreigner",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xd7-",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_1mcGTKW",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ax and the Hatchetmen",
+      "officialTitle": "Ax and the Hatchetmen: The Late Checkout Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ax and the Hatchetmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1mcGTKW",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5vYZ_CQ8DMUk",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Slow Pulp",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CQ8DMUk",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7PYrb",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mumiy Troll",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Mumiy Troll",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PYrb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAZp7N",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Shyne w/ Barrington Levy",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Shyne",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZp7N"
+    },
+    {
+      "id": "2026-10-29-sa-calbears-com-38760",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Cal vs. Notre Dame",
+      "place": {
+        "type": "venue",
+        "venueId": "edwards-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-sa-calbears-com-39060",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Cal vs. Vanguard",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "Vanguard",
+        "awayOpponent": "vanguard"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-espn-sharks-401892610",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sharks vs. Canucks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "vancouver-canucks",
+        "awayOpponent": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12689,
+        "low": 10757,
+        "high": 12987,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PNAg",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAg",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_ol57hN2",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Grits & Eggs Podcast: Coming Thru America Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-of-fine-arts-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Grits and Eggs Podcast",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ol57hN2"
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_1VmbffL",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Caifanes",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Caifanes",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1VmbffL",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_5K9T5FO",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Chicks",
+      "officialTitle": "THE CHICKS - TAKING THE LONG WAY",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Chicks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5K9T5FO",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3481,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5vYZ_FX4gzvS",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dilated Peoples",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Dilated Peoples",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FX4gzvS",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1AAZaoY",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Bridge City Sinners",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Bridge City Sinners",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZaoY"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1AAZz4f",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "special",
+      "title": "bleood",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "bleood",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZz4f"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAZk-s",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Lost In Dreams Festival",
+      "officialTitle": "Lost In Dreams Block Party - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Lost In Dreams Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZk-s",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-smcgaels-com-12933",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. UC Santa Cruz",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "smc-wbb",
+        "away": "UC Santa Cruz",
+        "awayOpponent": "uc-santa-cruz"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_GtDGUyj",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Bluey's Big Play",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GtDGUyj",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-espn-warriors-401909285",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PIP_",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stanford Cardinal Womens Volleyball vs. California Golden Bears Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Stanford Cardinal Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PIP_"
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_2PevtpN",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Oakland Ballet: Luna Mexicana",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-downtown-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Oakland Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2PevtpN",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PeAS",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Manon w/ San Francisco Opera",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Manon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PeAS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PNAU",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAU",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_2pp1FoO",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rahat Fateh Ali Khan",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Rahat Fateh Ali Khan",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178uNf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2pp1FoO",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_6E75qN1",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shpongle",
+      "officialTitle": "Shpongle - 10/30",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Shpongle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6E75qN1",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_CkR2HOF",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Galactic",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Galactic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CkR2HOF",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_G5-D-Za",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Moenia",
+      "officialTitle": "Moenia + Maria Jose Us Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Moenia",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_G5-D-Za",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_5KbZ5Fl",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "kind": "show",
+      "title": "The Chicks",
+      "officialTitle": "THE CHICKS - TAKING THE LONG WAY",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Chicks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5KbZ5Fl",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3481,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vYZ_F2jtp2r",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Parra for Cuva",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Parra for Cuva",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_F2jtp2r",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAZ8PI",
+      "metroId": "bay-area",
+      "date": "2026-10-30",
+      "start": "22:00",
+      "kind": "special",
+      "title": "Cholos vs. Vampires (21+)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Cholos vs. Vampires",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ8PI"
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_GtDCkyt",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "10:00",
+      "kind": "special",
+      "title": "Bluey's Big Play",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GtDCkyt",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-espn-sharks-401892619",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Sharks vs. Senators",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "ottawa-senators",
+        "awayOpponent": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17418,
+        "low": 17313,
+        "high": 17418,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-sjsu-football-401864529",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "San José St vs. New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "cefcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sjsu-football",
+        "away": "new-mexico",
+        "awayOpponent": "new-mexico"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19527,
+        "low": 18345,
+        "high": 19528,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2024",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-smcgaels-com-12770",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. Seattle U",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-marys-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-usfdons-com-8965",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "San Francisco vs. Santa Clara",
+      "place": {
+        "type": "venue",
+        "venueId": "negoesco-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PNAM",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAM",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-31-espn-earthquakes-761929",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Earthquakes vs. Real Salt Lake",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "earthquakes",
+        "away": "real-salt-lake",
+        "awayOpponent": "salt-lake"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16131,
+        "low": 15311,
+        "high": 17443,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-smcgaels-com-12704",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. Pacific",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_GtD2pyy",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - ASL Performance",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GtD2pyy",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_Kkqnq6U",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Frankenstein (1931)",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-downtown-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Frankenstein",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_Kkqnq6U"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AAZxo3",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "16:00",
+      "kind": "show",
+      "title": "RL Grime",
+      "officialTitle": "Midnight Carnival Block Party ft. RL GRIME - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "RL Grime",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxo3",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-valkyries-401918311",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Valkyries vs. Dream",
+      "stakes": {
+        "round": "Finals",
+        "game": 7,
+        "ifNecessary": true
+      },
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valkyries",
+        "away": "dream",
+        "awayOpponent": "dream"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "planning": true,
+        "basis": "building",
+        "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PNAz",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAz",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-31-sa-santaclarabroncos-com-10937",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Denver",
+      "place": {
+        "type": "venue",
+        "venueId": "stevens-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7Pekv",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Marriage of Figaro w/ San Francisco Opera",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "The Marriage of Figaro",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pekv",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_2i4Cq73",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Aces",
+      "officialTitle": "Introducing The Aces with special guest Gatlin",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Aces",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2i4Cq73",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_6EAVWcY",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shpongle",
+      "officialTitle": "Shpongle - 10/31",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Shpongle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6EAVWcY",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_CkRCHOe",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Galactic",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Galactic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CkRCHOe",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_GKogGHE",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jorge Medina",
+      "officialTitle": "Jorge Medina - Legendario Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Jorge Medina",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GKogGHE",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5vYZ_u2LCDvy",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "YG",
+      "officialTitle": "YG: THE GENTLEMEN'S CLUB TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "YG",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uBN0",
+        "K8vZ917ppSf",
+        "K8vZ9179WlV",
+        "K8vZ917Lvkf",
+        "K8vZ917LF_0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_u2LCDvy",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PV4I",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Medium Build",
+      "officialTitle": "Medium Build w/ The Scratch",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Medium Build",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PV4I",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AAZaoN",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Rocky Horror Picture Show",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Rocky Horror Picture Show",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZaoN"
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_GtD8JBC",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "10:00",
+      "kind": "special",
+      "title": "Bluey's Big Play",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GtD8JBC",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-sa-calbears-com-38761",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Cal vs. NC State",
+      "place": {
+        "type": "venue",
+        "venueId": "edwards-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PNAy",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Oh, Mary! (Touring) - Ages 14+ (No children under 5 allowed.)",
+      "place": {
+        "type": "venue",
+        "venueId": "curran-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Oh, Mary! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNAy",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-01-espn-bay-fc-401854033",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Bay FC vs. Wave",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "bay-fc",
+        "away": "wave",
+        "awayOpponent": "san-diego"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11558,
+        "low": 11343,
+        "high": 12091,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_GtDoUB-",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Bluey's Big Play",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GtDoUB-",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PeA9",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Manon w/ San Francisco Opera",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Manon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PeA9",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_2Peq_br",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Oakland Ballet: Luna Mexicana",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-downtown-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Oakland Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2Peq_br",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_CBrlDk-",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Dog Man - The Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Dog Man The Musical",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CBrlDk-"
+    },
+    {
+      "id": "2026-11-01-espn-warriors-401909905",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Warriors vs. Clippers",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A70OaE",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Musical Box",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "The Musical Box",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70OaE",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PfZb",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pigeons Playing Ping Pong",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Pigeons Playing Ping Pong",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PfZb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_5d9skQu",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Tom Jones",
+      "officialTitle": "Tom Jones: Come Gather Round Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Tom Jones",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5d9skQu",
+      "expectedDraw": {
+        "count": 3481,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_KFJEcR2",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Baby Smoove",
+      "officialTitle": "Baby Smoove Live! - The Purple Heart Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Baby Smoove",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KFJEcR2",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vYZ_uku9zNY",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "José Madero",
+      "officialTitle": "Jose Madero - USA Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "José Madero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_uku9zNY",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-sjsu-mbb-401911469",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "12:00",
+      "kind": "game",
+      "title": "San José St vs. UTSA",
+      "place": {
+        "type": "venue",
+        "venueId": "provident-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sjsu-mbb",
+        "away": "utsa-mbb",
+        "awayOpponent": "utsa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1876,
+        "low": 1849,
+        "high": 1982,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-cal-mbb-401918051",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "kind": "game",
+      "title": "California vs. Adams St",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-mbb",
+        "away": "adams-st",
+        "awayOpponent": "adams-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3143,
+        "low": 3105,
+        "high": 3308,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-sharks-401892632",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Sharks vs. Flames",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "flames",
+        "awayOpponent": "flames"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11437,
+        "low": 11152,
+        "high": 11929,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 13 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-cal-wbb-401903553",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "California vs. Washington St",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "washington-st",
+        "awayOpponent": "washington-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2889,
+        "low": 1132,
+        "high": 4735,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-stanford-mbb-401920716",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stanford vs. E Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-mbb",
+        "away": "e-washington",
+        "awayOpponent": "e-washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2286,
+        "low": 2210,
+        "high": 2293,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-warriors-401909919",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Suns",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "suns",
+        "awayOpponent": "suns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-sa-santaclarabroncos-com-11089",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Towson",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "santa-clara-mbb",
+        "away": "Towson",
+        "awayOpponent": "towson"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-sa-smcgaels-com-12834",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. Illinois State",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "smc-mbb",
+        "away": "Illinois State",
+        "awayOpponent": "illinois-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-sa-usfdons-com-9083",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Francisco vs. Radford",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "Radford",
+        "awayOpponent": "radford"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7PeAI",
+      "metroId": "bay-area",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Marriage of Figaro w/ San Francisco Opera",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "The Marriage of Figaro",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PeAI",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5vYZ_52JFoxZ",
+      "metroId": "bay-area",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Olivia O'Brien",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia O'Brien",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_52JFoxZ",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A70wFs",
+      "metroId": "bay-area",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "XG",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "XG",
+      "act": true,
+      "performerIds": [
+        "K8vZ917jwk7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70wFs",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-cal-mbb-401918052",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "California vs. Radford",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-mbb",
+        "away": "radford",
+        "awayOpponent": "radford"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2503,
+        "low": 2152,
+        "high": 2779,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-stanford-wbb-401915978",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stanford vs. Saint Mary's",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-wbb",
+        "away": "saint-mary-s",
+        "awayOpponent": "saint-mary-s"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2428,
+        "low": 2289,
+        "high": 2499,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-sa-santaclarabroncos-com-11090",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Milwaukee",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "santa-clara-mbb",
+        "away": "Milwaukee",
+        "awayOpponent": "milwaukee"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-04-sa-smcgaels-com-12744",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. North Dakota State",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "smc-mbb",
+        "away": "North Dakota State",
+        "awayOpponent": "north-dakota-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-04-tm-G5vYZ_k9n_zYt",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Josh Garrels",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Josh Garrels",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_k9n_zYt",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5vYZ_8uFAlWq",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ms. Lauryn Hill",
+      "officialTitle": "Ms. Lauryn Hill & Wyclef Jean Celebrating 30 years of Fugees The Score",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre-berkeley"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Ms. Lauryn Hill",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171Q9f",
+        "K8vZ9171b50"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8uFAlWq",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-sa-usfdons-com-9029",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "12:00",
+      "kind": "game",
+      "title": "San Francisco vs. Hawaii",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "usf-dons-wbb",
+        "away": "Hawaii",
+        "awayOpponent": "hawaii"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-espn-cal-wbb-401906063",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "California vs. Long Beach St",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "long-beach-st",
+        "awayOpponent": "long-beach-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2889,
+        "low": 1132,
+        "high": 4735,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-sa-usfdons-com-8923",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "San Francisco vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-sa-smcgaels-com-12705",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Saint Mary's vs. Pepperdine",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-espn-warriors-401909937",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Heat",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "heat",
+        "awayOpponent": "heat"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-sa-santaclarabroncos-com-11030",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Seattle",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-tm-G5vYZ_o9y4oMN",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Moby",
+      "officialTitle": "Moby (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "bill-graham-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Moby",
+      "act": true,
+      "performerIds": [
+        "K8vZ91719O7",
+        "K8vZ917jKuf",
+        "K8vZ917Qbe7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_o9y4oMN",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5vYZ_1MqembE",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "officialTitle": "Don Omar \"The Last King World Tour\"",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Don Omar",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175yK0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1MqembE",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5vYZ_3TCSeIv",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gnarls Barkley",
+      "officialTitle": "Gnarls Barkley: To Whom It Still Concerns Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gnarls Barkley",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_3TCSeIv",
+      "expectedDraw": {
+        "count": 3481,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7x9k7",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Black Angels",
+      "officialTitle": "Black Angels w/ GHOSTWOMAN",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Black Angels",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9k7",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-stanford-mbb-401921727",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stanford vs. Oakland",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-mbb",
+        "away": "oakland",
+        "awayOpponent": "oakland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2299,
+        "low": 1983,
+        "high": 2640,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-sa-usfdons-com-8948",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Francisco vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "negoesco-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-usfdons-com-9084",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Francisco vs. North Dakota State",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "North Dakota State",
+        "awayOpponent": "north-dakota-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7Pkqx",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Plini",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Plini",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pkqx",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7PeAK",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Strauss in  Concert w/ San Francisco Opera",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "San Francisco Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PeAK"
+    },
+    {
+      "id": "2026-11-06-tm-G5vYZ_1LZwizo",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Thee Sinseers",
+      "officialTitle": "Thee Sinseers: Love Stories Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Thee Sinseers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1LZwizo",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5vYZ_kKoOgLV",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bahamas",
+      "officialTitle": "Bahamas - Industrial Sport & Sound",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Bahamas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_kKoOgLV",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5vYZ_kmf8y1D",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mon Laferte",
+      "officialTitle": "Mon Laferte - Femme Fatale Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Mon Laferte",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Kit0",
+        "K8vZ917brhf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_kmf8y1D",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5vYZ_oKkjru5",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Reyez",
+      "officialTitle": "Jessie Reyez: A Little Vengeance Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jessie Reyez",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_oKkjru5",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvvPe",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Lucy Bedroque w/ pinponpanpon",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Lucy Bedroque",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvvPe",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5vYZ_Kdpr72Z",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "20:30",
+      "kind": "special",
+      "title": "Dan and Phil: Hard Launch World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dan and Phil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_Kdpr72Z"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvvqy",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "kind": "special",
+      "title": "HVDES - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "HVDES",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvvqy"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZsO6",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Adriatique",
+      "officialTitle": "Adriatique - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Adriatique",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZsO6",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-usfdons-com-8924",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "San Francisco vs. Seattle U",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-santaclarabroncos-com-10957",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "stevens-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-santaclarabroncos-com-11031",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-smcgaels-com-12771",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. Pepperdine",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-marys-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-smcgaels-com-12706",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. LMU",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-espn-warriors-401909942",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Warriors vs. Magic",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_5VOavXh",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hugel",
+      "officialTitle": "Hugel presents: Make The Girls Dance",
+      "place": {
+        "type": "venue",
+        "venueId": "greek-theatre-berkeley"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Hugel",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bZg0",
+        "K8vZpZA16tkk",
+        "K8vZpZA11ntk",
+        "K8vZpZA16t6k"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5VOavXh",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-santaclarabroncos-com-11091",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Sacramento State",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "santa-clara-mbb",
+        "away": "Sacramento State",
+        "awayOpponent": "sacramento-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_1Wl9AH6",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dan + Shay",
+      "officialTitle": "Dan + Shay: The Young Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "shoreline-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dan + Shay",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173kl0",
+        "K8vZ917QEF0",
+        "K8vZ917h770"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1Wl9AH6",
+      "expectedDraw": {
+        "count": 22500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAvUfg",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Pivot with Kara Swisher and Scott Galloway",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-gate-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Pivot Podcast",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvUfg"
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_26ddNV7",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Moneybagg Yo",
+      "officialTitle": "Bay Area Fest - Moneybagg Yo, DaBaby, G Herbo & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Moneybagg Yo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pvQf",
+        "K8vZ9179BhV",
+        "K8vZ917fk_7",
+        "K8vZ917fB2f",
+        "K8vZpau5-e",
+        "K8vZ9172jF0",
+        "K8vZpZAAJ7Ek",
+        "K8vZpau5le",
+        "K8vZpZAAlvEk",
+        "K8vZpZA6n7dk",
+        "K8vZ917b23f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_26ddNV7",
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_2M8ldQe",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Big Star",
+      "officialTitle": "The Big Star Quintet",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Big Star",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2M8ldQe",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_51O6DrC",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pinhead Gunpowder",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Pinhead Gunpowder",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_51O6DrC",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_6CJuDNy",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "CHELSEA HANDLER: THE HIGH AND MIGHTY TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Chelsea Handler",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6CJuDNy"
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_GC885OL",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Alvaro Diaz",
+      "officialTitle": "ALVARO DIAZ - OMAKASE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Alvaro Diaz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GC885OL",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5vYZ_K55sUmI",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brandi Carlile",
+      "officialTitle": "Brandi Carlile: Burn The Setlist (The All Request Tour)",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brandi Carlile",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_K55sUmI",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAv7az",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Lucy Bedroque w/ pinponpanpon",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Lucy Bedroque",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7az",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-espn-sjsu-football-401864534",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "San José St vs. N Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "cefcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sjsu-football",
+        "away": "n-illinois",
+        "awayOpponent": "n-illinois"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18407,
+        "low": 16729,
+        "high": 20808,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-sf-49ers-401873047",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "13:05",
+      "kind": "game",
+      "title": "49ers vs. Raiders",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "levis-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sf-49ers",
+        "away": "raiders",
+        "awayOpponent": "raiders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 70891,
+        "low": 70709,
+        "high": 70962,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-stanford-wbb-401915979",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Stanford vs. UC Davis",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-wbb",
+        "away": "uc-davis-wbb",
+        "awayOpponent": "uc-davis"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2414,
+        "low": 2398,
+        "high": 3103,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5vYZ_AeKr67a",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Leonid & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-downtown-redwood-city"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Leonid & Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_AeKr67a",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7-6e_",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Leonid & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Leonid & Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-6e_",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5vYZ_1DHczIz",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "LIVE 105 Presents The Smashing Pumpkins: The Rats in a Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171FDV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1DHczIz",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5vYZ_5M56QcE",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Countess Luann",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Variety"
+      },
+      "performer": "Countess Luann",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5M56QcE"
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AAv81e",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Nia Archives",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Nia Archives",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv81e"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-25-sa-smcgaels-com-12790",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_FDGNm3T",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7PNAY",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_FDGxr3M",
+      "date": "2026-10-25",
+      "start": "17:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Doja Cat 40 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_axWv9Ei",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7PNAs",
+      "date": "2026-10-25",
+      "start": "18:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZbS0uA9TW",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Disney On Ice · Find Your Hero 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7x7ov",
+      "date": "2026-10-25",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_6dE8OLN",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-G5vYZ_o2ail3S",
+      "date": "2026-10-25",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-10-26-espn-valkyries-401918309",
+      "date": "2026-10-26",
+      "start": "17:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "beabadoobee 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-26-sa-usfdons-com-9082",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vYZ_Kd2cK1B",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-G5vYZ_uFp_rvl",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Dream at Valkyries (Finals G5) 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_GlTz9wI",
+      "date": "2026-10-27",
+      "start": "18:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7PNAw",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-espn-sharks-401892595",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Bryson Tiller Presents: The Neo… and Phoebe Bridgers · The Lost Tour 43 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13839,
+        "low": 11732,
+        "high": 14164
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_5EhIC8T",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Bryson Tiller Presents: The Neo… and Sabres at Sharks 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_5IX0y73",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Low",
+        "why": "Sabres at Sharks and Phoebe Bridgers · The Lost Tour 43 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12500
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_13KOBrX",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5vYZ_73JO5lB",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7PNAS",
+      "date": "2026-10-28",
+      "start": "13:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_1h-FNMq",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_1h65qeR",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-calbears-com-38670",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_8L82yaZ",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_a9251k2",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Rapids at Earthquakes and LIVE 105 Presents: Gorillaz - T… 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22500
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_AllHHol",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Phoebe Bridgers · The Lost Tour 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7PNAV",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-earthquakes-761917",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Logic & G-Eazy: The Endless Sum… 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15304,
+        "low": 13790,
+        "high": 16652
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_GpQJTlc",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "LIVE 105 Presents: Gorillaz - T… 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7xd7-",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_1mcGTKW",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5vYZ_CQ8DMUk",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7PYrb",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAZp7N",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-calbears-com-38760",
+      "date": "2026-10-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-calbears-com-39060",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Canucks at Sharks 42 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-sharks-401892610",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Vanguard at Cal (WBB · Preseason) 42 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12689,
+        "low": 10757,
+        "high": 12987
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PNAg",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_ol57hN2",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_1VmbffL",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_5K9T5FO",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3481
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5vYZ_FX4gzvS",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1AAZaoY",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1AAZz4f",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAZk-s",
+      "date": "2026-10-30",
+      "start": "17:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-smcgaels-com-12933",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_GtDGUyj",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-espn-warriors-401909285",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Rahat Fateh Ali Khan 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PIP_",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_2PevtpN",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PeAS",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PNAU",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_2pp1FoO",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Lakers at Warriors 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_6E75qN1",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_CkR2HOF",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_G5-D-Za",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_5KbZ5Fl",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3481
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vYZ_F2jtp2r",
+      "date": "2026-10-30",
+      "start": "21:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAZ8PI",
+      "date": "2026-10-30",
+      "start": "22:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_GtDCkyt",
+      "date": "2026-10-31",
+      "start": "10:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-sharks-401892619",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "New Mexico at San José St (FB) and Real Salt Lake at Earthquakes 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17418,
+        "low": 17313,
+        "high": 17418
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-sjsu-football-401864529",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Senators at Sharks and Real Salt Lake at Earthquakes 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19527,
+        "low": 18345,
+        "high": 19528
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-smcgaels-com-12770",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-usfdons-com-8965",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PNAM",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-earthquakes-761929",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "New Mexico at San José St (FB) and Senators at Sharks 3.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16131,
+        "low": 15311,
+        "high": 17443
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-smcgaels-com-12704",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_GtD2pyy",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_Kkqnq6U",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AAZxo3",
+      "date": "2026-10-31",
+      "start": "16:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-valkyries-401918311",
+      "date": "2026-10-31",
+      "start": "17:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PNAz",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-santaclarabroncos-com-10937",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7Pekv",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_2i4Cq73",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_6EAVWcY",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_CkRCHOe",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_GKogGHE",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5vYZ_u2LCDvy",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PV4I",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AAZaoN",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_GtD8JBC",
+      "date": "2026-11-01",
+      "start": "10:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-calbears-com-38761",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PNAy",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-bay-fc-401854033",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Clippers at Warriors 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11558,
+        "low": 11343,
+        "high": 12091
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_GtDoUB-",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PeA9",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_2Peq_br",
+      "date": "2026-11-01",
+      "start": "14:30",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_CBrlDk-",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-warriors-401909905",
+      "date": "2026-11-01",
+      "start": "17:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Wave at Bay FC 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A70OaE",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PfZb",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_5d9skQu",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3481
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_KFJEcR2",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vYZ_uku9zNY",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-sjsu-mbb-401911469",
+      "date": "2026-11-02",
+      "start": "12:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1876,
+        "low": 1849,
+        "high": 1982
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-cal-mbb-401918051",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3143,
+        "low": 3105,
+        "high": 3308
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-sharks-401892632",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Suns at Warriors 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11437,
+        "low": 11152,
+        "high": 11929
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-cal-wbb-401903553",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2889,
+        "low": 1132,
+        "high": 4735
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-stanford-mbb-401920716",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2286,
+        "low": 2210,
+        "high": 2293
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-warriors-401909919",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Flames at Sharks 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-santaclarabroncos-com-11089",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-smcgaels-com-12834",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-usfdons-com-9083",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7PeAI",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5vYZ_52JFoxZ",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A70wFs",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-cal-mbb-401918052",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2503,
+        "low": 2152,
+        "high": 2779
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-stanford-wbb-401915978",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2428,
+        "low": 2289,
+        "high": 2499
+      }
+    },
+    {
+      "eventId": "2026-11-04-sa-santaclarabroncos-com-11090",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-sa-smcgaels-com-12744",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5vYZ_k9n_zYt",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5vYZ_8uFAlWq",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-usfdons-com-9029",
+      "date": "2026-11-05",
+      "start": "12:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-cal-wbb-401906063",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2889,
+        "low": 1132,
+        "high": 4735
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-usfdons-com-8923",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-smcgaels-com-12705",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-warriors-401909937",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Don Omar 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-santaclarabroncos-com-11030",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5vYZ_o9y4oMN",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Heat at Warriors and Don Omar 1.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5vYZ_1MqembE",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Heat at Warriors 40 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5vYZ_3TCSeIv",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3481
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7x9k7",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-stanford-mbb-401921727",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2299,
+        "low": 1983,
+        "high": 2640
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-usfdons-com-8948",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-usfdons-com-9084",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7Pkqx",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7PeAK",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vYZ_1LZwizo",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vYZ_kKoOgLV",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vYZ_kmf8y1D",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vYZ_oKkjru5",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvvPe",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5vYZ_Kdpr72Z",
+      "date": "2026-11-06",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvvqy",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZsO6",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-usfdons-com-8924",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-santaclarabroncos-com-10957",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-santaclarabroncos-com-11031",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-smcgaels-com-12771",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-smcgaels-com-12706",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-warriors-401909942",
+      "date": "2026-11-07",
+      "start": "17:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Dan + Shay · The Young Tour and N Illinois at San José St (FB) 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_5VOavXh",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Dan + Shay · The Young Tour and Magic at Warriors 32 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-santaclarabroncos-com-11091",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_1Wl9AH6",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Magic at Warriors and Bay Area Fest - Moneybagg Yo, D… 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22500
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAvUfg",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_26ddNV7",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Dan + Shay · The Young Tour and Magic at Warriors 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_2M8ldQe",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_51O6DrC",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_6CJuDNy",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_GC885OL",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5vYZ_K55sUmI",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAv7az",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-sjsu-football-401864534",
+      "date": "2026-11-07",
+      "start": null,
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Magic at Warriors 42 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18407,
+        "low": 16729,
+        "high": 20808
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-sf-49ers-401873047",
+      "date": "2026-11-08",
+      "start": "13:05",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 70891,
+        "low": 70709,
+        "high": 70962
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-stanford-wbb-401915979",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2414,
+        "low": 2398,
+        "high": 3103
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5vYZ_AeKr67a",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7-6e_",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5vYZ_1DHczIz",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Raiders at 49ers 6.2 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5vYZ_5M56QcE",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AAv81e",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    }
+  ]
+}

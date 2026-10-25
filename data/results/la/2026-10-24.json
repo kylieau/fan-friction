@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-angel-city-401854030",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bmo-stadium",
+      "homeTeamId": "angel-city",
+      "home": {
+        "name": "Angel City",
+        "score": 2
+      },
+      "away": {
+        "name": "Bay FC",
+        "score": 0
+      },
+      "capturedAt": "2026-10-25T13:18:53.535Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-ucla-football-401858499",
+      "metroId": "la",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rose-bowl",
+      "homeTeamId": "ucla-football",
+      "home": {
+        "name": "UCLA",
+        "score": 28
+      },
+      "away": {
+        "name": "Michigan St",
+        "score": 10
+      },
+      "attendance": 33757,
+      "capturedAt": "2026-10-25T13:18:53.535Z",
+      "duration": {
+        "minutes": 206,
+        "kind": "estimated"
+      },
+      "startedAt": "15:38"
+    }
+  ]
+}

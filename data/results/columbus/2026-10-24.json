@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-blue-jackets-401892572",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 2
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 1
+      },
+      "attendance": 16451,
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:18:58.851Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    },
+    {
+      "eventId": "2026-10-24-espn-columbus-crew-761890",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scottsmiracle-gro-field",
+      "homeTeamId": "columbus-crew",
+      "home": {
+        "name": "Crew",
+        "score": 4
+      },
+      "away": {
+        "name": "Toronto FC",
+        "score": 2
+      },
+      "attendance": 19487,
+      "capturedAt": "2026-10-25T13:18:58.851Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-osu-mhockey-401904520",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mhockey",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 3
+      },
+      "away": {
+        "name": "Augustana (SD)",
+        "score": 4
+      },
+      "capturedAt": "2026-10-25T13:18:58.851Z"
+    }
+  ]
+}

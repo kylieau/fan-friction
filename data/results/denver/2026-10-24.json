@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-denver-summit-fc-401854093",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "centennial-stadium",
+      "homeTeamId": "denver-summit-fc",
+      "home": {
+        "name": "Summit FC",
+        "score": 6
+      },
+      "away": {
+        "name": "Louisville",
+        "score": 1
+      },
+      "attendance": 12372,
+      "capturedAt": "2026-10-25T13:19:03.540Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-du-mhockey-401904865",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 2
+      },
+      "away": {
+        "name": "Boston College",
+        "score": 2
+      },
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:19:03.540Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-nuggets-401909859",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 141
+      },
+      "away": {
+        "name": "Pelicans",
+        "score": 135
+      },
+      "attendance": 19905,
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:19:03.540Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "21:13"
+    },
+    {
+      "eventId": "2026-10-24-espn-rapids-761897",
+      "metroId": "denver",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dicks-sporting-goods-park",
+      "homeTeamId": "rapids",
+      "home": {
+        "name": "Rapids",
+        "score": 1
+      },
+      "away": {
+        "name": "Vancouver",
+        "score": 0
+      },
+      "attendance": 15605,
+      "capturedAt": "2026-10-25T13:19:03.540Z"
+    }
+  ]
+}

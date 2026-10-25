@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-miami-hurricanes-football-401858274",
+      "metroId": "miami",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hard-rock-stadium",
+      "homeTeamId": "miami-hurricanes-football",
+      "home": {
+        "name": "Miami",
+        "score": 52
+      },
+      "away": {
+        "name": "Pitt",
+        "score": 23
+      },
+      "attendance": 65991,
+      "capturedAt": "2026-10-25T13:18:58.676Z",
+      "duration": {
+        "minutes": 217,
+        "kind": "estimated"
+      },
+      "startedAt": "12:06"
+    }
+  ]
+}

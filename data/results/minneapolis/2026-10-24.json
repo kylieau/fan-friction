@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-gophers-football-401858497",
+      "metroId": "minneapolis",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "huntington-bank-stadium",
+      "homeTeamId": "gophers-football",
+      "home": {
+        "name": "Minnesota",
+        "score": 13
+      },
+      "away": {
+        "name": "Iowa",
+        "score": 10
+      },
+      "attendance": 53004,
+      "capturedAt": "2026-10-25T13:19:01.273Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "15:41"
+    }
+  ]
+}

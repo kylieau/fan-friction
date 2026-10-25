@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-tulane-football-401862811",
+      "metroId": "new-orleans",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yulman-stadium",
+      "homeTeamId": "tulane-football",
+      "home": {
+        "name": "Tulane",
+        "score": 19
+      },
+      "away": {
+        "name": "UTSA",
+        "score": 42
+      },
+      "attendance": 19015,
+      "capturedAt": "2026-10-25T13:19:01.687Z",
+      "duration": {
+        "minutes": 209,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

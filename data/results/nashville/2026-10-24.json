@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-tsu-football-401868174",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "tsu-football",
+      "home": {
+        "name": "Tennessee St",
+        "score": 7
+      },
+      "away": {
+        "name": "Charleston So",
+        "score": 20
+      },
+      "attendance": 1401,
+      "capturedAt": "2026-10-25T13:18:59.201Z",
+      "duration": {
+        "minutes": 239,
+        "kind": "estimated"
+      },
+      "startedAt": "15:32"
+    }
+  ]
+}

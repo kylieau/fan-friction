@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-cf-montreal-761903",
+      "metroId": "montreal",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "stade-saputo",
+      "homeTeamId": "cf-montreal",
+      "home": {
+        "name": "CF Montréal",
+        "score": 0
+      },
+      "away": {
+        "name": "Nashville SC",
+        "score": 2
+      },
+      "attendance": 13016,
+      "capturedAt": "2026-10-25T13:18:57.346Z"
+    },
+    {
+      "eventId": "2026-10-24-ht-laval-rocket-1029195",
+      "metroId": "montreal",
+      "date": "2026-10-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 1
+      },
+      "away": {
+        "name": "Hammers",
+        "score": 2
+      },
+      "attendance": 9396,
+      "capturedAt": "2026-10-25T13:18:57.347Z"
+    }
+  ]
+}

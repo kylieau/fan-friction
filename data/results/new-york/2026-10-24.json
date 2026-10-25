@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-columbia-football-401867822",
+      "metroId": "new-york",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wien-stadium",
+      "homeTeamId": "columbia-football",
+      "home": {
+        "name": "Columbia",
+        "score": 18
+      },
+      "away": {
+        "name": "Dartmouth",
+        "score": 38
+      },
+      "attendance": 12932,
+      "capturedAt": "2026-10-25T13:18:55.322Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "13:31"
+    },
+    {
+      "eventId": "2026-10-24-espn-devils-401892567",
+      "metroId": "new-york",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 3
+      },
+      "away": {
+        "name": "Kings",
+        "score": 1
+      },
+      "attendance": 16019,
+      "capturedAt": "2026-10-25T13:18:55.322Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "15:38"
+    },
+    {
+      "eventId": "2026-10-24-espn-fordham-football-401868013",
+      "metroId": "new-york",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "coffey-field",
+      "homeTeamId": "fordham-football",
+      "home": {
+        "name": "Fordham",
+        "score": 17
+      },
+      "away": {
+        "name": "Lafayette",
+        "score": 31
+      },
+      "capturedAt": "2026-10-25T13:18:55.322Z",
+      "duration": {
+        "minutes": 180,
+        "kind": "estimated"
+      },
+      "startedAt": "13:01"
+    },
+    {
+      "eventId": "2026-10-24-espn-red-bulls-761891",
+      "metroId": "new-york",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sports-illustrated-stadium",
+      "homeTeamId": "red-bulls",
+      "home": {
+        "name": "Red Bull NY",
+        "score": 2
+      },
+      "away": {
+        "name": "Inter Miami",
+        "score": 0
+      },
+      "capturedAt": "2026-10-25T13:18:55.322Z"
+    }
+  ]
+}

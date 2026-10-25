@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-oilers-401892574",
+      "metroId": "edmonton",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 2
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 7
+      },
+      "attendance": 18347,
+      "capturedAt": "2026-10-25T13:19:02.353Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

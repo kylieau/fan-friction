@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-timbers-761902",
+      "metroId": "portland",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "providence-park",
+      "homeTeamId": "timbers",
+      "home": {
+        "name": "Timbers",
+        "score": 3
+      },
+      "away": {
+        "name": "Charlotte",
+        "score": 2
+      },
+      "capturedAt": "2026-10-25T13:19:02.976Z"
+    }
+  ]
+}

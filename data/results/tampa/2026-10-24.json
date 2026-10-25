@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-rowdies-401842305",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-lang-stadium",
+      "homeTeamId": "rowdies",
+      "home": {
+        "name": "Rowdies",
+        "score": 2
+      },
+      "away": {
+        "name": "Sporting JAX",
+        "score": 0
+      },
+      "attendance": 5179,
+      "capturedAt": "2026-10-25T13:18:58.536Z"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-asu-football-401856839",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mountain-america-stadium",
+      "homeTeamId": "asu-football",
+      "home": {
+        "name": "Arizona St",
+        "score": 28
+      },
+      "away": {
+        "name": "Kansas St",
+        "score": 17
+      },
+      "attendance": 46388,
+      "capturedAt": "2026-10-25T13:18:59.532Z",
+      "duration": {
+        "minutes": 219,
+        "kind": "estimated"
+      },
+      "startedAt": "15:48"
+    },
+    {
+      "eventId": "2026-10-24-espn-phoenix-rising-401842307",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "phoenix-rising-soccer-stadium",
+      "homeTeamId": "phoenix-rising",
+      "home": {
+        "name": "Rising",
+        "score": 3
+      },
+      "away": {
+        "name": "Lexington",
+        "score": 3
+      },
+      "capturedAt": "2026-10-25T13:18:59.532Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-suns-401909860",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mortgage-matchup-center",
+      "homeTeamId": "suns",
+      "home": {
+        "name": "Suns",
+        "score": 131
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 122
+      },
+      "attendance": 17071,
+      "capturedAt": "2026-10-25T13:18:59.532Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "22:13"
+    }
+  ]
+}

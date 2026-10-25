@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-texas-football-401856732",
+      "metroId": "austin",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dkr-texas-memorial-stadium",
+      "homeTeamId": "texas-football",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 34
+      },
+      "away": {
+        "name": "Ole Miss",
+        "score": 27
+      },
+      "attendance": 104306,
+      "capturedAt": "2026-10-25T13:18:59.381Z",
+      "duration": {
+        "minutes": 227,
+        "kind": "estimated"
+      },
+      "startedAt": "19:46"
+    },
+    {
+      "eventId": "2026-10-24-espn-texas-state-football-401860906",
+      "metroId": "austin",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ufcu-stadium",
+      "homeTeamId": "texas-state-football",
+      "home": {
+        "name": "Texas St",
+        "score": 20
+      },
+      "away": {
+        "name": "Utah State",
+        "score": 17
+      },
+      "attendance": 18587,
+      "capturedAt": "2026-10-25T13:18:59.381Z",
+      "duration": {
+        "minutes": 204,
+        "kind": "estimated"
+      },
+      "startedAt": "19:31"
+    },
+    {
+      "eventId": "2026-10-24-ht-texas-stars-1029199",
+      "metroId": "austin",
+      "date": "2026-10-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 5
+      },
+      "away": {
+        "name": "Reign",
+        "score": 2
+      },
+      "attendance": 6554,
+      "capturedAt": "2026-10-25T13:18:59.381Z"
+    }
+  ]
+}

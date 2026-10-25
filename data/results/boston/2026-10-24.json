@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-bruins-401892568",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 6
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 4
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-10-25T13:18:57.730Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-10-24-espn-harvard-football-401867842",
+      "metroId": "boston",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "harvard-stadium",
+      "homeTeamId": "harvard-football",
+      "home": {
+        "name": "Harvard",
+        "score": 35
+      },
+      "away": {
+        "name": "Princeton",
+        "score": 7
+      },
+      "attendance": 14896,
+      "capturedAt": "2026-10-25T13:18:57.730Z",
+      "duration": {
+        "minutes": 172,
+        "kind": "estimated"
+      },
+      "startedAt": "14:59"
+    }
+  ]
+}

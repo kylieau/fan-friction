@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-atlanta-united-761893",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "atlanta-united",
+      "home": {
+        "name": "Atlanta United",
+        "score": 2
+      },
+      "away": {
+        "name": "Fire",
+        "score": 3
+      },
+      "capturedAt": "2026-10-25T13:18:55.741Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-dream-401918308",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "dream",
+      "home": {
+        "name": "Dream",
+        "score": 62
+      },
+      "away": {
+        "name": "Valkyries",
+        "score": 67
+      },
+      "attendance": 17099,
+      "capturedAt": "2026-10-25T13:18:55.741Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "10:14"
+    },
+    {
+      "eventId": "2026-10-24-espn-gt-football-401858273",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bobby-dodd-stadium",
+      "homeTeamId": "gt-football",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 27
+      },
+      "away": {
+        "name": "Boston College",
+        "score": 49
+      },
+      "attendance": 47239,
+      "capturedAt": "2026-10-25T13:18:55.741Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "15:36"
+    },
+    {
+      "eventId": "2026-10-24-espn-hawks-401909856",
+      "metroId": "atlanta",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 114
+      },
+      "away": {
+        "name": "Rockets",
+        "score": 121
+      },
+      "attendance": 17942,
+      "capturedAt": "2026-10-25T13:18:55.741Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:42"
+    }
+  ]
+}

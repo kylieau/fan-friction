@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-fc-dallas-761900",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-stadium",
+      "homeTeamId": "fc-dallas",
+      "home": {
+        "name": "FC Dallas",
+        "score": 3
+      },
+      "away": {
+        "name": "Earthquakes",
+        "score": 0
+      },
+      "capturedAt": "2026-10-25T13:18:56.571Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-mavericks-401909858",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 106
+      },
+      "away": {
+        "name": "Spurs",
+        "score": 122
+      },
+      "attendance": 19555,
+      "capturedAt": "2026-10-25T13:18:56.571Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "20:12"
+    },
+    {
+      "eventId": "2026-10-24-espn-smu-football-401858270",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gerald-j-ford-stadium",
+      "homeTeamId": "smu-football",
+      "home": {
+        "name": "SMU",
+        "score": 59
+      },
+      "away": {
+        "name": "California",
+        "score": 20
+      },
+      "attendance": 26463,
+      "capturedAt": "2026-10-25T13:18:56.571Z",
+      "duration": {
+        "minutes": 207,
+        "kind": "estimated"
+      },
+      "startedAt": "12:08"
+    },
+    {
+      "eventId": "2026-10-24-espn-tcu-football-401856841",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amon-g-carter-stadium",
+      "homeTeamId": "tcu-football",
+      "home": {
+        "name": "TCU",
+        "score": 20
+      },
+      "away": {
+        "name": "West Virginia",
+        "score": 24
+      },
+      "attendance": 36216,
+      "capturedAt": "2026-10-25T13:18:56.571Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "12:00"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-san-antonio-fc-401842310",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-field",
+      "homeTeamId": "san-antonio-fc",
+      "home": {
+        "name": "SAFC",
+        "score": 2
+      },
+      "away": {
+        "name": "Orange County",
+        "score": 1
+      },
+      "attendance": 6069,
+      "capturedAt": "2026-10-25T13:19:02.811Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-uiw-football-401869138",
+      "metroId": "san-antonio",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benson-stadium",
+      "homeTeamId": "uiw-football",
+      "home": {
+        "name": "Incarnate Word",
+        "score": 38
+      },
+      "away": {
+        "name": "McNeese",
+        "score": 6
+      },
+      "attendance": 2501,
+      "capturedAt": "2026-10-25T13:19:02.811Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

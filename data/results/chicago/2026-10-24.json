@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-bulls-401909857",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 120
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 124
+      },
+      "attendance": 21496,
+      "capturedAt": "2026-10-25T13:18:56.273Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "20:13"
+    },
+    {
+      "eventId": "2026-10-24-espn-northwestern-football-401858498",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ryan-field",
+      "homeTeamId": "northwestern-football",
+      "home": {
+        "name": "Northwestern",
+        "score": 42
+      },
+      "away": {
+        "name": "Rutgers",
+        "score": 14
+      },
+      "attendance": 27156,
+      "capturedAt": "2026-10-25T13:18:56.273Z",
+      "duration": {
+        "minutes": 194,
+        "kind": "estimated"
+      },
+      "startedAt": "12:05"
+    },
+    {
+      "eventId": "2026-10-24-ht-chicago-wolves-1029189",
+      "metroId": "chicago",
+      "date": "2026-10-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "allstate-arena",
+      "homeTeamId": "chicago-wolves",
+      "home": {
+        "name": "Wolves",
+        "score": 4
+      },
+      "away": {
+        "name": "Admirals",
+        "score": 2
+      },
+      "attendance": 6158,
+      "capturedAt": "2026-10-25T13:18:56.275Z"
+    }
+  ]
+}

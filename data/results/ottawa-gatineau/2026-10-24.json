@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-ottawa-senators-401892569",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 7
+      },
+      "away": {
+        "name": "Rangers",
+        "score": 4
+      },
+      "attendance": 15034,
+      "capturedAt": "2026-10-25T13:19:02.114Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

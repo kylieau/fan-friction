@@ -1,0 +1,2702 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "metroName": "Columbus",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-25",
+  "capturedAt": "2026-10-25T13:16:14.901Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-25",
+    "through": "2026-11-08"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 65
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 18
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-25-sa-ohiostatebuckeyes-com-22490",
+      "metroId": "columbus",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Ohio State vs. Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "jesse-owens-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-25-tm-17AOv0G626ZNlWA",
+      "metroId": "columbus",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Volleyball vs. University of Arizona Wildcats Women's Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Cincinnati Bearcats Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G626ZNlWA",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-25-sa-ohiostatebuckeyes-com-22621",
+      "metroId": "columbus",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Ohio State vs. Butler",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "osu-mbb",
+        "away": "Butler",
+        "awayOpponent": "butler"
+      },
+      "ticketmasterId": "0500653ED1E6E02D",
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 15524,
+        "low": 12357,
+        "high": 17684,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-Z7r9jZ1A7J774",
+      "metroId": "columbus",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Machine Girl",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Machine Girl",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J774",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1A7-Vj0",
+      "metroId": "columbus",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Jesse Welles",
+      "officialTitle": "Jesse Welles w/ Hudson Freeman",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jesse Welles",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qvGf",
+        "Z7r9jZ177bve"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Vj0",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-1AvbZ_3GkT6fQrb",
+      "metroId": "columbus",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Mens Basketball vs Oakland University (Exhibition)",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Mens Basketball",
+      "preseason": true,
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_3GkT6fQrb",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-28-sa-battlingbishops-com-10228",
+      "metroId": "columbus",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. DePauw",
+      "place": {
+        "type": "venue",
+        "venueId": "branch-rickey-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-tm-17AOv0G654H_V2a",
+      "metroId": "columbus",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cyclones v. Fuel | $2 Beer + Pucks N Pups",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Cincinnati Cyclones",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G654H_V2a"
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7-Ouk",
+      "metroId": "columbus",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "place": {
+        "type": "venue",
+        "venueId": "megacorp-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hsO7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Ouk",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAZ9fk",
+      "metroId": "columbus",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BEAT",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-theatre-columbus"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "BEAT",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ9fk",
+      "expectedDraw": {
+        "count": 2695,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vv17fZ_aGkMTN2Ij",
+      "metroId": "columbus",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ9178c40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_aGkMTN2Ij",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PVq0",
+      "metroId": "columbus",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Wrecks",
+      "officialTitle": "The Wrecks w/ Worry Club",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Wrecks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PVq0",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-ohiostatebuckeyes-com-22445",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Ohio State vs. Bemidji State",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-state-ice-rink"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "osu-whockey",
+        "away": "Bemidji State",
+        "awayOpponent": "bemidji-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-ohiostatebuckeyes-com-22432",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ohio State vs. Northwestern University",
+      "place": {
+        "type": "venue",
+        "venueId": "jesse-owens-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-vv17fZ_aGkMTNRI-",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ9178c40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_aGkMTNRI-",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A70eob",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Damned",
+      "officialTitle": "The Damned w/ Flamin Groovies",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Damned",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70eob",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7xo8f",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Haunted Fest",
+      "officialTitle": "Haunted Fest Columbus",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Haunted Fest",
+      "act": true,
+      "performerIds": [
+        "Z7r9jZaFw9"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xo8f",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAZNPf",
+      "metroId": "columbus",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Haunted Fest",
+      "place": {
+        "type": "venue",
+        "venueId": "megacorp-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Haunted Fest",
+      "act": true,
+      "performerIds": [
+        "Z7r9jZaFw9"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZNPf",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-battlingbishops-com-10204",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. Wittenberg",
+      "place": {
+        "type": "venue",
+        "venueId": "selby-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "field hockey",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-espn-columbus-crew-761924",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Crew vs. D.C. United",
+      "place": {
+        "type": "venue",
+        "venueId": "scottsmiracle-gro-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "columbus-crew",
+        "away": "dc-united",
+        "awayOpponent": "d-c-united"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19927,
+        "low": 19785,
+        "high": 19952,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-battlingbishops-com-10118",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. Wabash",
+      "place": {
+        "type": "venue",
+        "venueId": "selby-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "teams": {
+        "home": "owu-football",
+        "away": "Wabash",
+        "awayOpponent": "wabash"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-ohiostatebuckeyes-com-22446",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Ohio State vs. Bemidji State",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-state-ice-rink"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "osu-whockey",
+        "away": "Bemidji State",
+        "awayOpponent": "bemidji-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-espn-osu-mhockey-401923146",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan Wolverines",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "michigan-mhockey",
+        "awayOpponent": "michigan"
+      },
+      "rank": {
+        "away": 1
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AAZF84",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Haunted Fest",
+      "place": {
+        "type": "venue",
+        "venueId": "megacorp-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Haunted Fest",
+      "act": true,
+      "performerIds": [
+        "Z7r9jZaFw9"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZF84",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PSab",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Gary Allan",
+      "place": {
+        "type": "venue",
+        "venueId": "hobart-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Gary Allan",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171bnf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PSab",
+      "expectedDraw": {
+        "count": 5332,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7JKuf",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ekoostik Hookah",
+      "officialTitle": "Hookahween featuring Ekoostik Hookah",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ekoostik Hookah",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKuf",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-17AOv0G626Z0DWK",
+      "metroId": "columbus",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Volleyball vs. West Virginia University Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Cincinnati Bearcats Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G626Z0DWK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-01-tm-1ApZkotGkeDUa2w",
+      "metroId": "columbus",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Cincinnati Bengals vs. Tennessee Titans",
+      "place": {
+        "type": "venue",
+        "venueId": "paycor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Cincinnati Bengals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkotGkeDUa2w"
+    },
+    {
+      "id": "2026-11-01-espn-osu-mhockey-401923148",
+      "metroId": "columbus",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan Wolverines",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "michigan-mhockey",
+        "awayOpponent": "michigan"
+      },
+      "rank": {
+        "away": 1
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-02-espn-osu-wbb-401927081",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. UIC",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-wbb",
+        "away": "uic",
+        "awayOpponent": "uic"
+      },
+      "rank": {
+        "home": 18
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 4617,
+        "low": 4574,
+        "high": 4644,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-1ApZk4aGkd5rygA",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wright State Raiders Mens Basketball vs. Air Force Academy Falcons Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "wright-state-university-nutter-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wright State Raiders Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk4aGkd5rygA",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-tm-1AvbZ_KGkBOik1O",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Dayton Flyers Men's Basketball v. NJIT",
+      "place": {
+        "type": "venue",
+        "venueId": "university-of-dayton-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Dayton Flyers Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_KGkBOik1O",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-tm-1kAOvP3bGA1tN4I",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Mens Basketball vs. American University Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAOvP3bGA1tN4I",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7-EqM",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Earl Sweatshirt",
+      "officialTitle": "Earl Sweatshirt w/ MIKE",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Earl Sweatshirt",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172De0",
+        "K8vZ9179M9V",
+        "Z7r9jZ177Oq-",
+        "K8vZ9174M20"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-EqM",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-sa-ohiostatebuckeyes-com-22813",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Ohio State vs. Scarlet vs. Gray Series",
+      "place": {
+        "type": "venue",
+        "venueId": "buckeye-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "softball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAeK8Y",
+      "metroId": "columbus",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Xavier Musketeers Mens Basketball vs. Mount St. Mary's Mountaineers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "cintas-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Xavier Musketeers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeK8Y",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-espn-blue-jackets-401892641",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16356,
+        "low": 15315,
+        "high": 17302,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vvG1fZ_CPGltU_",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGltU_",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1AAZPv6",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Abbie Gamboa w/ Chelsea Plank",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Abbie Gamboa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZPv6"
+    },
+    {
+      "id": "2026-11-04-tm-1ApZk46GkdaBtWF",
+      "metroId": "columbus",
+      "date": "2026-11-04",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Basketball vs. East Texas A&M Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46GkdaBtWF",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG1fZ_GmignUF",
+      "metroId": "columbus",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes Women's Volleyball vs. Purdue Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "osu-covelli-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Ohio State Buckeyes Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_GmignUF"
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1AAZAa7",
+      "metroId": "columbus",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Fortunate Youth",
+      "officialTitle": "Fortunate Youth w/ Kash'd Out",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Fortunate Youth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZAa7",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG1fZ_CPGi_Uh",
+      "metroId": "columbus",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGi_Uh",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-05-espn-osu-wbb-401927082",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. C Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-wbb",
+        "away": "c-michigan",
+        "awayOpponent": "c-michigan"
+      },
+      "rank": {
+        "home": 18
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4617,
+        "low": 4574,
+        "high": 4644,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-blue-jackets-401892655",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Stars",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "dallas-stars",
+        "awayOpponent": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15242,
+        "low": 14272,
+        "high": 16123,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-1kAOvP3bGA1nN4w",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Mens Basketball vs. University of Wisconsin At Green Bay Phoenix Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAOvP3bGA1nN4w",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG1fZ_CPGiyUP",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGiyUP",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A70tC9",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Maine",
+      "officialTitle": "The Maine w/ In Color",
+      "place": {
+        "type": "venue",
+        "venueId": "megacorp-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Maine",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G0yV",
+        "Z7r9jZ177bAa"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tC9",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7x8vs",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Kurt Vile & the Violators",
+      "officialTitle": "Kurt Vile & The Violators w/ Twisted Teens",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Kurt Vile & the Violators",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x8vs",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AAeaot",
+      "metroId": "columbus",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Hunxho",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Hunxho",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeaot"
+    },
+    {
+      "id": "2026-11-06-tm-1ApZk4aGkdFatxw",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Wright State Raiders Women's Basketball vs. Ohio Christian University Trailblazers Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "wright-state-university-nutter-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wright State Raiders Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk4aGkdFatxw"
+    },
+    {
+      "id": "2026-11-06-sa-battlingbishops-com-10231",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. Otterbein",
+      "place": {
+        "type": "venue",
+        "venueId": "branch-rickey-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-17AOv0G654HQV25",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cyclones v. Fuel | Pride Night - Shutout the Hate",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Cincinnati Cyclones",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G654HQV25",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A703fp",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Menzingers",
+      "officialTitle": "The Menzingers w/ Hot Water Music",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Menzingers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A703fp",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1kAOvP3aGA1cPBS",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Wright State Raiders Mens Basketball vs. Florida Atlantic University Owls Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "wright-state-university-nutter-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wright State Raiders Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAOvP3aGA1cPBS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG1fZ_1Lc_ujG",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Jordan Klepper",
+      "place": {
+        "type": "venue",
+        "venueId": "mershon-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jordan Klepper",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1Lc_ujG"
+    },
+    {
+      "id": "2026-11-06-tm-vvG1fZ_CPGc_Ul",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGc_Ul",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-06-espn-osu-mbb-401916314",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Youngstown St",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-mbb",
+        "away": "youngstown-st",
+        "awayOpponent": "youngstown-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 9244,
+        "low": 8693,
+        "high": 10021,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAeK8s",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Xavier Musketeers Mens Basketball vs. Eastern Michigan Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "cintas-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Xavier Musketeers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeK8s",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-17AOv0G6ChQz_GJ",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Dayton Flyers Football v. Valparaiso",
+      "place": {
+        "type": "venue",
+        "venueId": "welcome-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Dayton Flyers Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6ChQz_GJ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-sa-battlingbishops-com-10119",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. Washington (Mo.)",
+      "place": {
+        "type": "venue",
+        "venueId": "selby-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "teams": {
+        "home": "owu-football",
+        "away": "Washington (Mo.)",
+        "awayOpponent": "washington-mo-"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-1ApZk46GkdFn_gp",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Basketball vs. Penn State Lady Lion Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46GkdFn_gp",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_CPGcyUs",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGcyUs",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70V40",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Sesame Street Live! Elmos Got The Moves",
+      "place": {
+        "type": "venue",
+        "venueId": "hobart-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Sesame Street Live! Elmos Got The Moves",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70V40"
+    },
+    {
+      "id": "2026-11-07-tm-17AOv0G654Hh02p",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Cyclones v. Bison | Youth Jersey Giveaway Matinee",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Cincinnati Cyclones",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G654Hh02p",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1AvbZ_KGkBOck1I",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Dayton Flyers Men's Basketball v. Northern Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "university-of-dayton-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Dayton Flyers Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_KGkBOck1I",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_CPGm_UU",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGm_UU",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZY0g",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Andrea Gibson",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "Andrea Gibson",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZY0g"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAvdvZ",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charles Wesley Godwin",
+      "officialTitle": "Charles Wesley Godwin w/ Nicholas Jamerson",
+      "place": {
+        "type": "venue",
+        "venueId": "megacorp-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Charles Wesley Godwin",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b3lf",
+        "Z7r9jZa5Nu"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvdvZ",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-osu-football-401858514",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Oregon",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "osu-football",
+        "away": "oregon",
+        "awayOpponent": "oregon"
+      },
+      "rank": {
+        "home": 3
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 103034,
+        "low": 102012,
+        "high": 103521,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-osu-wbb-401919942",
+      "metroId": "columbus",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Mercyhurst",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-wbb",
+        "away": "mercyhurst",
+        "awayOpponent": "mercyhurst"
+      },
+      "rank": {
+        "home": 18
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7504,
+        "low": 6660,
+        "high": 8455,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG1fZ_CPGmyUz",
+      "metroId": "columbus",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGmyUz",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG1fZ_CPGR_UB",
+      "metroId": "columbus",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Maybe Happy Ending (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Maybe Happy Ending (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_CPGR_UB",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv1kv8v0xbGA57f2-",
+      "metroId": "columbus",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917KV20",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kv8v0xbGA57f2-",
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7P0b0",
+      "metroId": "columbus",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Wage War",
+      "officialTitle": "Wage War w/ Varials",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Wage War",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oVbV",
+        "Z7r9jZaowP",
+        "K8vZ917KuXV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P0b0",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-25-sa-ohiostatebuckeyes-com-22490",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-17AOv0G626ZNlWA",
+      "date": "2026-10-25",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-10-25-sa-ohiostatebuckeyes-com-22621",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15524,
+        "low": 12357,
+        "high": 17684
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-Z7r9jZ1A7J774",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1A7-Vj0",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-1AvbZ_3GkT6fQrb",
+      "date": "2026-10-27",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-28-sa-battlingbishops-com-10228",
+      "date": "2026-10-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-28-tm-17AOv0G654H_V2a",
+      "date": "2026-10-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7-Ouk",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAZ9fk",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "draw": {
+        "count": 2695
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vv17fZ_aGkMTN2Ij",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PVq0",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-ohiostatebuckeyes-com-22445",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-ohiostatebuckeyes-com-22432",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv17fZ_aGkMTNRI-",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Haunted Fest Columbus 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A70eob",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7xo8f",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAZNPf",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-battlingbishops-com-10204",
+      "date": "2026-10-31",
+      "start": "11:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-columbus-crew-761924",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Michigan Wolverines at Ohio State Buckeyes (MHKY) and Wabash at Ohio Wesleyan (FB) 2.7 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19927,
+        "low": 19785,
+        "high": 19952
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-battlingbishops-com-10118",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "D.C. United at Crew and Michigan Wolverines at Ohio State Buckeyes (MHKY) 23 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-ohiostatebuckeyes-com-22446",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-osu-mhockey-401923146",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "D.C. United at Crew and Wabash at Ohio Wesleyan (FB) 2.7 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AAZF84",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PSab",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "draw": {
+        "count": 5332
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7JKuf",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-17AOv0G626Z0DWK",
+      "date": "2026-11-01",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-1ApZkotGkeDUa2w",
+      "date": "2026-11-01",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-01-espn-osu-mhockey-401923148",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-osu-wbb-401927081",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4617,
+        "low": 4574,
+        "high": 4644
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-1ApZk4aGkd5rygA",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-1AvbZ_KGkBOik1O",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-1kAOvP3bGA1tN4I",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7-EqM",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-ohiostatebuckeyes-com-22813",
+      "date": "2026-11-02",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAeK8Y",
+      "date": "2026-11-02",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-03-espn-blue-jackets-401892641",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16356,
+        "low": 15315,
+        "high": 17302
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vvG1fZ_CPGltU_",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1AAZPv6",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-1ApZk46GkdaBtWF",
+      "date": "2026-11-04",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG1fZ_GmignUF",
+      "date": "2026-11-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1AAZAa7",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG1fZ_CPGi_Uh",
+      "date": "2026-11-04",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-05-espn-osu-wbb-401927082",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4617,
+        "low": 4574,
+        "high": 4644
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-blue-jackets-401892655",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15242,
+        "low": 14272,
+        "high": 16123
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-1kAOvP3bGA1nN4w",
+      "date": "2026-11-05",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1fZ_CPGiyUP",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A70tC9",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7x8vs",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AAeaot",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1ApZk4aGkdFatxw",
+      "date": "2026-11-06",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-battlingbishops-com-10231",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-17AOv0G654HQV25",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A703fp",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1kAOvP3aGA1cPBS",
+      "date": "2026-11-06",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1fZ_1Lc_ujG",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1fZ_CPGc_Ul",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-osu-mbb-401916314",
+      "date": "2026-11-06",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9244,
+        "low": 8693,
+        "high": 10021
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAeK8s",
+      "date": "2026-11-06",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-07-tm-17AOv0G6ChQz_GJ",
+      "date": "2026-11-07",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-07-sa-battlingbishops-com-10119",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "Oregon at Ohio State Buckeyes (FB) 21 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1ApZk46GkdFn_gp",
+      "date": "2026-11-07",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_CPGcyUs",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70V40",
+      "date": "2026-11-07",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-17AOv0G654Hh02p",
+      "date": "2026-11-07",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-1AvbZ_KGkBOck1I",
+      "date": "2026-11-07",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_CPGm_UU",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZY0g",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAvdvZ",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-osu-football-401858514",
+      "date": "2026-11-07",
+      "start": null,
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 103034,
+        "low": 102012,
+        "high": 103521
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-osu-wbb-401919942",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Sombr · You Are The Reason Tour 2.8 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7504,
+        "low": 6660,
+        "high": 8455
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG1fZ_CPGmyUz",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG1fZ_CPGR_UB",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv1kv8v0xbGA57f2-",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Wage War w/ Varials next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7P0b0",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Sombr · You Are The Reason Tour next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    }
+  ]
+}

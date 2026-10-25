@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-10-24",
+  "results": [
+    {
+      "eventId": "2026-10-24-espn-duquesne-football-401867931",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "homeTeamId": "duquesne-football",
+      "home": {
+        "name": "Duquesne",
+        "score": 52
+      },
+      "away": {
+        "name": "Wagner",
+        "score": 21
+      },
+      "attendance": 1304,
+      "capturedAt": "2026-10-25T13:18:58.334Z",
+      "duration": {
+        "minutes": 192,
+        "kind": "estimated"
+      },
+      "startedAt": "12:03"
+    },
+    {
+      "eventId": "2026-10-24-espn-penguins-401892570",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 3
+      },
+      "away": {
+        "name": "Predators",
+        "score": 2
+      },
+      "attendance": 18191,
+      "note": "OT",
+      "capturedAt": "2026-10-25T13:18:58.334Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-10-24-espn-riverhounds-401842308",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fnb-stadium",
+      "homeTeamId": "riverhounds",
+      "home": {
+        "name": "Pittsburgh",
+        "score": 2
+      },
+      "away": {
+        "name": "Birmingham",
+        "score": 1
+      },
+      "attendance": 6024,
+      "capturedAt": "2026-10-25T13:18:58.334Z"
+    },
+    {
+      "eventId": "2026-10-24-espn-robert-morris-football-401867921",
+      "metroId": "pittsburgh",
+      "date": "2026-10-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "joe-walton-stadium",
+      "homeTeamId": "robert-morris-football",
+      "home": {
+        "name": "Robert Morris",
+        "score": 28
+      },
+      "away": {
+        "name": "Mercyhurst",
+        "score": 14
+      },
+      "attendance": 1451,
+      "capturedAt": "2026-10-25T13:18:58.334Z",
+      "duration": {
+        "minutes": 198,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}
