@@ -8629,14 +8629,17 @@ ul.fav-strip {
 
 /* Your own answer (build 5, item 4; board datepage-r3-lean): icon and word, link blue, no fill, right-aligned. */
 .day-row-you {
-  align-self: flex-end;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  margin-top: 2px;
-  font-size: 12px;
-  font-weight: 700;
+  flex: 0 0 auto;
+  margin-left: 8px;
   color: var(--dodger);
+}
+/* Your answer's icon at the end of the venue line (Kylie, Oct 24, 2026): pushed to the right edge when nothing else is
+   there, else 8px after the tag or the weather. */
+.day-row-venue + .day-row-you,
+.day-row-line2 > .day-row-you:first-child {
+  margin-left: auto;
 }
 
 /* Rows that are not .day-row (Home, the date page, "Fighting today") carry the same time column. */

@@ -308,7 +308,7 @@ export function DateScreen() {
             <ul className="date-list">
             {lineup.shown.map((e) => (
               <li key={e.id} className={`date-row${e.id === highlight ? ' yours' : ''}`}>
-                <Link to={eventPath(e.id, e.metroId)} className="date-row-main" aria-label={spokenRow(e, venueOf(e) ?? null)}>
+                <Link to={eventPath(e.id, e.metroId)} className="date-row-main" aria-label={spokenRow(e, venueOf(e) ?? null, yourActivity(e.id, log)?.kind ?? null)}>
                   <RowBody
                     event={e}
                     day={events}

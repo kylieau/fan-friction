@@ -11,6 +11,7 @@ Decided (Kylie, Oct 24, 2026): the tiles stay as shipped (C); only the legend we
 | `cal-c-keep.png` | C: as shipped in build 7.1 (M29), minus the legend: past days faded. |
 
 ## Your answer on event rows (Attending, Watching, Interested, Attended)
+Decided (Kylie, Oct 24, 2026): B's icon alone, but on the last line (the venue line), after the tag or weather. Built; shot `rows-built-icon-last-line.png`.
 | Frame | What it shows |
 |---|---|
 | `rows-0-now.png` | Today: the answer always on its own line under the row. |

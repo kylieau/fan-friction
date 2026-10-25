@@ -18,8 +18,9 @@ import { LabelLine } from './TitleText';
  * The time at the left; line 1 the title and, at the right edge, the crowd figure with the friction ring
  * after it (build 6, item 1); line 2 the venue and, at the same right edge, the occasion tag, shown only on
  * the day's top event(s) (build 6, item 2). A long title never meets the figure, and a long venue gives way
- * to the tag. Your own answer is its own right-aligned line under the tag: its icon and word in link blue,
- * no fill (build 5, item 4; board datepage-r3-lean). Friends stay in the activity line.
+ * to the tag. Your own answer is its icon alone, in link blue, at the right end of the last line (the venue line), after
+ * the tag or weather (Kylie, Oct 24, 2026: "leave the icon … place the icon on the last line"; it replaced the word on
+ * a line of its own, build 5 item 4). The word rides in the row's spoken label. Friends stay in the activity line.
  */
 export function RowBody({
   event: e,
@@ -39,7 +40,7 @@ export function RowBody({
   time: string;
   venueText?: string | null;
   line?: string | null;
-  /** Your own answer on this event, shown as "Attending" with its icon. */
+  /** Your own answer on this event, shown as its icon (ticket, TV or bookmark) at the end of the venue line. */
   you?: ActivityKind | null;
   extra?: ReactNode;
   /**
@@ -76,13 +77,12 @@ export function RowBody({
               <span aria-hidden>{degreesFor(weather.tempF, e.metroId)}</span>
             </span>
           )}
+          {you && (
+            <span className="day-row-you" role="img" aria-label={ACTIVITY_WORDS[you]} title={ACTIVITY_WORDS[you]}>
+              <ActivityIcon kind={you} />
+            </span>
+          )}
         </span>
-        {you && (
-          <span className="day-row-you">
-            <ActivityIcon kind={you} />
-            {ACTIVITY_WORDS[you]}
-          </span>
-        )}
         {extra}
         {line && <span className="day-row-activity">{line}</span>}
       </span>
@@ -95,7 +95,7 @@ export function RowBody({
  */
 export function DayRow({ event: e, day, line, you }: { event: CrowdEvent; day: readonly CrowdEvent[]; line: string | null; you?: ActivityKind | null }) {
   return (
-    <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" aria-label={spokenRow(e, sheetVenue(e))} onClick={() => markOpenedFromMap()}>
+    <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" aria-label={spokenRow(e, sheetVenue(e), you)} onClick={() => markOpenedFromMap()}>
       <RowBody event={e} day={day} time={e.start ? clockTime(e.start) : 'TBA'} venueText={sheetVenue(e)} line={line} you={you} />
     </Link>
   );
@@ -105,9 +105,9 @@ export function DayRow({ event: e, day, line, you }: { event: CrowdEvent; day: r
  * The row read as one sentence (labels r3): "Brewers at Dodgers, NLCS Game 3, 7:00 pm, Dodger Stadium, about 55,000,
  * Swamped: other events split this crowd". The friction ring has no tap target, so its words ride here (build 6, item 1).
  */
-export function spokenRow(e: CrowdEvent, venue: string | null): string {
+export function spokenRow(e: CrowdEvent, venue: string | null, you?: ActivityKind | null): string {
   const size = drawSize(e);
-  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size ? `about ${size.toLocaleString('en-US')}` : null, frictionSentence(e)].filter(Boolean).join(', ');
+  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size ? `about ${size.toLocaleString('en-US')}` : null, frictionSentence(e), you ? ACTIVITY_WORDS[you] : null].filter(Boolean).join(', ');
 }
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */
