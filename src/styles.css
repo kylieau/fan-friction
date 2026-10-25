@@ -8635,12 +8635,7 @@ ul.fav-strip {
   margin-left: 8px;
   color: var(--dodger);
 }
-/* Your answer's icon at the end of the venue line (Kylie, Oct 24, 2026): pushed to the right edge when nothing else is
-   there, else 8px after the tag or the weather. */
-.day-row-venue + .day-row-you,
-.day-row-line2 > .day-row-you:first-child {
-  margin-left: auto;
-}
+
 
 /* Rows that are not .day-row (Home, the date page, "Fighting today") carry the same time column. */
 .log-row .day-row-time,
@@ -11590,9 +11585,6 @@ a.follow-lead::after {
 .day-row-weather span {
   color: #3f4b5c;
 }
-.day-row-line2 .event-tags + .day-row-weather {
-  margin-left: 8px;
-}
 
 /* Activity since build 7.1 (M24): a plain newest-first list with its one footer line. */
 .activity-footer {
@@ -12975,4 +12967,16 @@ a.follow-lead::after {
   margin: 8px 0 4px;
   font-size: 12px;
   color: var(--ink2);
+}
+
+/* The venue line's right side (Kylie, Oct 24, 2026): your answer's icon, the weather, then the tag, always last; only the
+   line's own 6px gap between them, and the first of them pushed to the right edge. */
+.day-row-line2 > .day-row-you,
+.day-row-line2 > .day-row-weather,
+.day-row-line2 > .event-tags {
+  margin-left: 0;
+}
+.day-row-line2 > .day-row-venue + *,
+.day-row-line2 > :first-child:not(.day-row-venue) {
+  margin-left: auto;
 }

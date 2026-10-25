@@ -18,3 +18,11 @@ Decided (Kylie, Oct 24, 2026): B's icon alone, but on the last line (the venue l
 | `rows-a-first-free-slot.png` | A (lean): the answer takes the first free right edge under the title: the label line, else the venue line; Bay FC (no label, weather on the venue line) keeps its own line, stacked under the weather. |
 | `rows-a-fallback-tag-and-weather.png` | A's fallback, today's markup: the venue line holds the occasion tag and the weather, so the answer stacks under them. |
 | `rows-b-icon-on-title-line.png` | B: the icon alone on the title line before the crowd figure, no word. |
+
+## Venue line order, and where the weather sits (Oct 24, later)
+Built (Kylie, Oct 24, 2026: "Slap the icon before the tag or weather … Tag should always go last"): your icon, the weather, then the tag, 6px apart (`rows-built-icon-weather-tag.png`, `weather-0-right-built.png`).
+| Frame | What it shows |
+|---|---|
+| `weather-0-right-built.png` | As built: the weather on the right; on a tagged row (JAY-Z30, MAJOR) it sits left of the tag. |
+| `weather-a-beside-venue.png` | Question: the weather right after the venue name ("Rose Bowl · ☀ 76°"); the right edge holds only your icon and the tag. Not approved. |
+
